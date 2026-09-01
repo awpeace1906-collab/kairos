@@ -1,0 +1,23 @@
+{
+  "scheme": "Kairos Teal-Charcoal (original, not Broselow)",
+  "disclaimer": "The color zone is a visual/navigation layer only. It never supplies a dose. Every drug dose and fluid volume is computed live from the exact weight entered (or age-estimated). The zone supplies equipment sizes and a shared visual anchor only. Zone boundaries are tunable design parameters, not clinical constants.",
+  "ageEstimate": {
+    "note": "Fallback only, when a weight is genuinely unmeasurable. Result MUST be shown flagged 'estimated' with a distinct visual treatment. APLS-style bands.",
+    "formulas": [
+      { "ageBandLabel": "0-12 months", "minMonths": 0, "maxMonths": 12, "expression": "(0.5 * ageMonths) + 4" },
+      { "ageBandLabel": "1-5 years", "minMonths": 12, "maxMonths": 72, "expression": "(2 * ageYears) + 8" },
+      { "ageBandLabel": "6-12 years", "minMonths": 72, "maxMonths": 144, "expression": "(3 * ageYears) + 7" }
+    ]
+  },
+  "zones": [
+    { "zone": 1, "color": "Teal",     "weight_min": 3,  "weight_max": 5,  "equipment": { "ettUncuffed": "3.0-3.5", "lma": "1",   "blade": "Miller 0-1",   "defibPads": "Pediatric", "bpCuff": "Neonatal" } },
+    { "zone": 2, "color": "Sky",      "weight_min": 6,  "weight_max": 8,  "equipment": { "ettUncuffed": "3.5-4.0", "lma": "1",   "blade": "Miller 1",     "defibPads": "Pediatric", "bpCuff": "Infant" } },
+    { "zone": 3, "color": "Indigo",   "weight_min": 9,  "weight_max": 11, "equipment": { "ettUncuffed": "4.0-4.5", "lma": "1.5", "blade": "Miller 1",     "defibPads": "Pediatric", "bpCuff": "Infant" } },
+    { "zone": 4, "color": "Violet",   "weight_min": 12, "weight_max": 14, "equipment": { "ettUncuffed": "4.5-5.0", "lma": "2",   "blade": "Miller 1-2",   "defibPads": "Pediatric", "bpCuff": "Child (small)" } },
+    { "zone": 5, "color": "Amber",    "weight_min": 15, "weight_max": 18, "equipment": { "ettUncuffed": "5.0-5.5", "lma": "2",   "blade": "Macintosh 2",  "defibPads": "Pediatric", "bpCuff": "Child" } },
+    { "zone": 6, "color": "Coral",    "weight_min": 19, "weight_max": 23, "equipment": { "ettUncuffed": "5.5-6.0", "lma": "2.5", "blade": "Macintosh 2",  "defibPads": "Pediatric/Adult transition", "bpCuff": "Child" }, "note": "Pediatric/adult defibrillation pad transition. Verify the exact crossover weight against the specific defibrillator model in use." },
+    { "zone": 7, "color": "Slate",    "weight_min": 24, "weight_max": 29, "equipment": { "ettUncuffed": "6.0 (consider cuffed)", "lma": "2.5", "blade": "Macintosh 2", "defibPads": "Adult", "bpCuff": "Child (large)" } },
+    { "zone": 8, "color": "Forest",   "weight_min": 30, "weight_max": 36, "equipment": { "ettUncuffed": "6.0-6.5 cuffed", "lma": "3", "blade": "Macintosh 2-3", "defibPads": "Adult", "bpCuff": "Adult (small)" } },
+    { "zone": 9, "color": "Charcoal", "weight_min": 37, "weight_max": 50, "equipment": { "ettUncuffed": "6.5-7.0 cuffed", "lma": "3", "blade": "Macintosh 3", "defibPads": "Adult", "bpCuff": "Adult" } }
+  ]
+}

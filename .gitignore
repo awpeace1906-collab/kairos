@@ -1,0 +1,18 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Generated content mirrors (source of truth is /content)
+web/content/
+ios/Generated/
+
+# Xcode
+ios/Kairos.xcodeproj/
+ios/*.xcworkspace/
+ios/DerivedData/
+ios/build/
+.DS_Store
+
+# Editor
+.vscode/
+*.swp

@@ -1,0 +1,33 @@
+{
+  "id": "has-bled",
+  "section": "Calculators",
+  "category": "Cardiovascular / Chest Pain / Arrhythmia",
+  "title": "HAS-BLED Score",
+  "aliases": ["bleeding risk atrial fibrillation", "anticoagulation bleeding risk"],
+  "tags": ["bleeding risk", "atrial fibrillation", "anticoagulation", "ED"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Pisters R et al. Chest 2010"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Major bleeding risk on anticoagulation for AF — weigh against CHA₂DS₂-VASc; do not withhold anticoagulation on this alone.",
+  "items": [
+    { "key": "htn", "label": "Uncontrolled hypertension (SBP > 160)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "renal", "label": "Abnormal renal function (dialysis, transplant, Cr > 2.26 mg/dL)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "liver", "label": "Abnormal liver function", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "stroke", "label": "Prior stroke", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "bleeding", "label": "Bleeding history or predisposition", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "inr", "label": "Labile INR (unstable/high, TTR < 60%)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "elderly", "label": "Elderly (age > 65)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "drugs", "label": "Drugs — concomitant antiplatelet / NSAID", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "alcohol", "label": "Alcohol ≥ 8 drinks/week", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 2, "label": "Low bleeding risk", "severity": "low" },
+    { "min": 3, "max": 9, "label": "High bleeding risk — address modifiable factors, closer follow-up; not a contraindication to anticoagulation", "severity": "high" }
+  ]
+}

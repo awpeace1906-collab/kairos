@@ -1,0 +1,35 @@
+{
+  "id": "wells-dvt",
+  "section": "Calculators",
+  "category": "Pulmonary / PE / DVT / Resp Failure",
+  "title": "Wells' Criteria for DVT",
+  "aliases": ["Wells DVT", "DVT pretest probability", "leg swelling risk"],
+  "tags": ["deep vein thrombosis", "leg swelling", "d-dimer", "ED"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Wells PS et al. Lancet 1997; NEJM 2003"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Pretest probability of lower-extremity DVT; the leg counterpart to Wells PE. Drives D-dimer vs. compression ultrasound.",
+  "items": [
+    { "key": "cancer", "label": "Active cancer (treatment within 6 months or palliative)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "immob", "label": "Paralysis, paresis, or recent plaster immobilization of the leg", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "bedridden", "label": "Bedridden > 3 days or major surgery within 12 weeks", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "tenderness", "label": "Localized tenderness along the deep venous system", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "legSwollen", "label": "Entire leg swollen", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "calf", "label": "Calf swelling > 3 cm vs. asymptomatic side", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "pittingEdema", "label": "Pitting edema confined to the symptomatic leg", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "collateral", "label": "Collateral superficial (non-varicose) veins", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "priorDvt", "label": "Previously documented DVT", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "altDx", "label": "Alternative diagnosis at least as likely as DVT", "options": [{ "label": "No", "points": 0 }, { "label": "Yes (subtract 2)", "points": -2 }] }
+  ],
+  "interpretation": [
+    { "min": -2, "max": 0, "label": "Low probability", "risk": "~5%", "disposition": "D-dimer; if negative, DVT excluded", "severity": "low" },
+    { "min": 1, "max": 2, "label": "Moderate probability", "risk": "~17%", "disposition": "High-sensitivity D-dimer or ultrasound", "severity": "moderate" },
+    { "min": 3, "max": 9, "label": "High probability", "risk": "~53%", "disposition": "Compression ultrasound", "severity": "high" }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "wells-pe",
+  "section": "Calculators",
+  "category": "Pulmonary / PE / DVT / Resp Failure",
+  "title": "Wells' Criteria for PE",
+  "aliases": ["Wells PE", "Wells score pulmonary embolism", "PE pretest probability"],
+  "tags": ["pulmonary embolism", "shortness of breath", "pleuritic chest pain", "d-dimer", "ED"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": [
+    "Wells PS et al. Thromb Haemost 2000",
+    "Wells PS et al. Ann Intern Med 2001 (dichotomized)"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry transcribed from Calculator_Logic_Build_Spec.md" }
+  ],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Pretest probability of PE; determines need for D-dimer vs. imaging. Pairs with PERC and age-adjusted D-dimer.",
+  "items": [
+    { "key": "dvtSigns", "label": "Clinical signs/symptoms of DVT", "options": [ { "label": "No", "points": 0 }, { "label": "Yes", "points": 3 } ] },
+    { "key": "peLikely", "label": "PE is the #1 diagnosis, or equally likely", "options": [ { "label": "No", "points": 0 }, { "label": "Yes", "points": 3 } ] },
+    { "key": "hr100", "label": "Heart rate > 100", "options": [ { "label": "No", "points": 0 }, { "label": "Yes", "points": 1.5 } ] },
+    { "key": "immob", "label": "Immobilization ≥ 3 days or surgery in the past 4 weeks", "options": [ { "label": "No", "points": 0 }, { "label": "Yes", "points": 1.5 } ] },
+    { "key": "priorVte", "label": "Prior objectively diagnosed PE or DVT", "options": [ { "label": "No", "points": 0 }, { "label": "Yes", "points": 1.5 } ] },
+    { "key": "hemoptysis", "label": "Hemoptysis", "options": [ { "label": "No", "points": 0 }, { "label": "Yes", "points": 1 } ] },
+    { "key": "malignancy", "label": "Malignancy treated within 6 months or palliative", "options": [ { "label": "No", "points": 0 }, { "label": "Yes", "points": 1 } ] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 1.5, "label": "Low probability (3-tier)", "risk": "~1.3-3%", "severity": "low" },
+    { "min": 2, "max": 6, "label": "Moderate probability (3-tier)", "risk": "~16%", "severity": "moderate" },
+    { "min": 6.5, "max": 12.5, "label": "High probability (3-tier)", "risk": "~40%", "severity": "high" }
+  ],
+  "notes": "Dichotomized (2-tier) reading: ≤ 4 = 'PE unlikely' → D-dimer; > 4 = 'PE likely' → CT pulmonary angiography. The app should show both the 3-tier band and the dichotomized call.",
+  "buildNote": "Standard score. Show both interpretation schemes; do not force one."
+}

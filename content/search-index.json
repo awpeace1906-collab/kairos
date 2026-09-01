@@ -1,0 +1,527 @@
+{
+  "generatedAt": "2026-09-01T00:00:00Z",
+  "entries": [
+    {
+      "id": "asa-physical-status",
+      "title": "ASA Physical Status Classification",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "anesthesia",
+        "perioperative risk",
+        "preop assessment",
+        "OR"
+      ],
+      "keywords": [
+        "ASA class",
+        "ASA PS",
+        "perioperative risk class"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/asa-physical-status"
+    },
+    {
+      "id": "cha2ds2-vasc",
+      "title": "CHA₂DS₂-VASc Score",
+      "section": "Calculators",
+      "category": "Cardiovascular / Chest Pain / Arrhythmia",
+      "tags": [
+        "atrial fibrillation",
+        "stroke risk",
+        "anticoagulation",
+        "ED"
+      ],
+      "keywords": [
+        "chads vasc",
+        "chadsvasc",
+        "CHADSVASC",
+        "AF stroke risk",
+        "atrial fibrillation anticoagulation"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/cardiovascular-chest-pain-arrhythmia/cha2ds2-vasc"
+    },
+    {
+      "id": "qtc",
+      "title": "Corrected QT Interval (QTc)",
+      "section": "Calculators",
+      "category": "Cardiovascular / Chest Pain / Arrhythmia",
+      "tags": [],
+      "keywords": [
+        "QTc",
+        "Bazett",
+        "Fridericia",
+        "QT correction"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/cardiovascular-chest-pain-arrhythmia/qtc"
+    },
+    {
+      "id": "grace-acs",
+      "title": "GRACE ACS Risk / Mortality Calculator",
+      "section": "Calculators",
+      "category": "Cardiovascular / Chest Pain / Arrhythmia",
+      "tags": [],
+      "keywords": [
+        "GRACE",
+        "GRACE 2.0",
+        "ACS mortality"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/cardiovascular-chest-pain-arrhythmia/grace-acs"
+    },
+    {
+      "id": "has-bled",
+      "title": "HAS-BLED Score",
+      "section": "Calculators",
+      "category": "Cardiovascular / Chest Pain / Arrhythmia",
+      "tags": [
+        "bleeding risk",
+        "atrial fibrillation",
+        "anticoagulation",
+        "ED"
+      ],
+      "keywords": [
+        "bleeding risk atrial fibrillation",
+        "anticoagulation bleeding risk"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/cardiovascular-chest-pain-arrhythmia/has-bled"
+    },
+    {
+      "id": "heart-score",
+      "title": "HEART Score for Major Cardiac Events",
+      "section": "Calculators",
+      "category": "Cardiovascular / Chest Pain / Arrhythmia",
+      "tags": [
+        "chest pain",
+        "ACS",
+        "risk stratification",
+        "ED",
+        "troponin",
+        "admit or discharge"
+      ],
+      "keywords": [
+        "HEART",
+        "HEART pathway",
+        "MACE risk"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/cardiovascular-chest-pain-arrhythmia/heart-score"
+    },
+    {
+      "id": "killip-classification",
+      "title": "Killip Classification",
+      "section": "Calculators",
+      "category": "Cardiovascular / Chest Pain / Arrhythmia",
+      "tags": [],
+      "keywords": [
+        "Killip",
+        "Killip class"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/cardiovascular-chest-pain-arrhythmia/killip-classification"
+    },
+    {
+      "id": "timi-nstemi",
+      "title": "TIMI Risk Score (UA/NSTEMI)",
+      "section": "Calculators",
+      "category": "Cardiovascular / Chest Pain / Arrhythmia",
+      "tags": [
+        "chest pain",
+        "ACS",
+        "NSTEMI",
+        "unstable angina",
+        "risk stratification",
+        "ED"
+      ],
+      "keywords": [
+        "TIMI",
+        "unstable angina risk",
+        "NSTEMI risk"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/cardiovascular-chest-pain-arrhythmia/timi-nstemi"
+    },
+    {
+      "id": "anion-gap",
+      "title": "Anion Gap",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [],
+      "keywords": [
+        "AG",
+        "serum anion gap",
+        "delta gap"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/anion-gap"
+    },
+    {
+      "id": "corrected-calcium",
+      "title": "Corrected Calcium in Hypoalbuminemia",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "calcium",
+        "hypocalcemia",
+        "hypoalbuminemia",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "albumin corrected calcium",
+        "adjusted calcium"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/corrected-calcium"
+    },
+    {
+      "id": "abcd2",
+      "title": "ABCD² Score for TIA",
+      "section": "Calculators",
+      "category": "Neuro / Stroke / Head Injury",
+      "tags": [
+        "TIA",
+        "transient ischemic attack",
+        "stroke risk",
+        "ED"
+      ],
+      "keywords": [
+        "ABCD2",
+        "TIA stroke risk"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/neuro-stroke-head-injury/abcd2"
+    },
+    {
+      "id": "gcs",
+      "title": "Glasgow Coma Scale (GCS)",
+      "section": "Calculators",
+      "category": "Neuro / Stroke / Head Injury",
+      "tags": [
+        "level of consciousness",
+        "head injury",
+        "intubation threshold",
+        "trauma",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "GCS",
+        "coma scale",
+        "consciousness level"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/neuro-stroke-head-injury/gcs"
+    },
+    {
+      "id": "hunt-hess",
+      "title": "Hunt-Hess Classification",
+      "section": "Calculators",
+      "category": "Neuro / Stroke / Head Injury",
+      "tags": [
+        "subarachnoid hemorrhage",
+        "SAH",
+        "grading",
+        "prognosis",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "Hunt Hess",
+        "SAH grading",
+        "subarachnoid hemorrhage grade"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/neuro-stroke-head-injury/hunt-hess"
+    },
+    {
+      "id": "nihss",
+      "title": "NIH Stroke Scale (NIHSS)",
+      "section": "Calculators",
+      "category": "Neuro / Stroke / Head Injury",
+      "tags": [
+        "stroke",
+        "severity",
+        "thrombolytic",
+        "thrombectomy",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "NIHSS",
+        "stroke severity",
+        "stroke scale"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/neuro-stroke-head-injury/nihss"
+    },
+    {
+      "id": "curb-65",
+      "title": "CURB-65",
+      "section": "Calculators",
+      "category": "Pulmonary / PE / DVT / Resp Failure",
+      "tags": [
+        "pneumonia",
+        "CAP",
+        "severity",
+        "admit or discharge",
+        "ED"
+      ],
+      "keywords": [
+        "pneumonia severity",
+        "CAP severity",
+        "CURB65"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/pulmonary-pe-dvt-resp-failure/curb-65"
+    },
+    {
+      "id": "perc-rule",
+      "title": "PERC Rule for PE",
+      "section": "Calculators",
+      "category": "Pulmonary / PE / DVT / Resp Failure",
+      "tags": [
+        "pulmonary embolism",
+        "rule out",
+        "d-dimer",
+        "low risk",
+        "ED"
+      ],
+      "keywords": [
+        "PE rule-out criteria",
+        "pulmonary embolism rule out"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/pulmonary-pe-dvt-resp-failure/perc-rule"
+    },
+    {
+      "id": "rox-index",
+      "title": "ROX Index",
+      "section": "Calculators",
+      "category": "Pulmonary / PE / DVT / Resp Failure",
+      "tags": [
+        "HFNC",
+        "high flow",
+        "intubation",
+        "respiratory failure",
+        "ICU"
+      ],
+      "keywords": [
+        "HFNC failure",
+        "high flow nasal cannula prediction"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/pulmonary-pe-dvt-resp-failure/rox-index"
+    },
+    {
+      "id": "wells-dvt",
+      "title": "Wells' Criteria for DVT",
+      "section": "Calculators",
+      "category": "Pulmonary / PE / DVT / Resp Failure",
+      "tags": [
+        "deep vein thrombosis",
+        "leg swelling",
+        "d-dimer",
+        "ED"
+      ],
+      "keywords": [
+        "Wells DVT",
+        "DVT pretest probability",
+        "leg swelling risk"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/pulmonary-pe-dvt-resp-failure/wells-dvt"
+    },
+    {
+      "id": "wells-pe",
+      "title": "Wells' Criteria for PE",
+      "section": "Calculators",
+      "category": "Pulmonary / PE / DVT / Resp Failure",
+      "tags": [
+        "pulmonary embolism",
+        "shortness of breath",
+        "pleuritic chest pain",
+        "d-dimer",
+        "ED"
+      ],
+      "keywords": [
+        "Wells PE",
+        "Wells score pulmonary embolism",
+        "PE pretest probability"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/pulmonary-pe-dvt-resp-failure/wells-pe"
+    },
+    {
+      "id": "lrinec",
+      "title": "LRINEC Score",
+      "section": "Calculators",
+      "category": "Sepsis / Infectious Disease",
+      "tags": [
+        "necrotizing fasciitis",
+        "cellulitis",
+        "soft tissue infection",
+        "can't miss",
+        "ED"
+      ],
+      "keywords": [
+        "necrotizing fasciitis score",
+        "nec fasc"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/sepsis-infectious-disease/lrinec"
+    },
+    {
+      "id": "qsofa",
+      "title": "qSOFA",
+      "section": "Calculators",
+      "category": "Sepsis / Infectious Disease",
+      "tags": [
+        "sepsis",
+        "deterioration",
+        "screening",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "quick SOFA",
+        "sepsis screen"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/sepsis-infectious-disease/qsofa"
+    },
+    {
+      "id": "osmolal-gap",
+      "title": "Osmolal Gap",
+      "section": "Calculators",
+      "category": "Toxicology / Withdrawal",
+      "tags": [
+        "toxic alcohol",
+        "methanol",
+        "ethylene glycol",
+        "poisoning",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "osmolar gap",
+        "toxic alcohol screen"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/toxicology-withdrawal/osmolal-gap"
+    },
+    {
+      "id": "nexus-cspine",
+      "title": "NEXUS Criteria (C-Spine)",
+      "section": "Calculators",
+      "category": "Trauma",
+      "tags": [
+        "c-spine",
+        "cervical spine",
+        "trauma",
+        "imaging",
+        "rule out",
+        "ED"
+      ],
+      "keywords": [
+        "NEXUS",
+        "cervical spine clearance",
+        "c-collar clearance"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/trauma/nexus-cspine"
+    },
+    {
+      "id": "shock-index",
+      "title": "Shock Index",
+      "section": "Calculators",
+      "category": "Trauma",
+      "tags": [
+        "hemorrhage",
+        "occult shock",
+        "trauma",
+        "transfusion",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "SI",
+        "occult shock",
+        "HR over SBP"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/trauma/shock-index"
+    },
+    {
+      "id": "peds-epinephrine-arrest",
+      "title": "Epinephrine — Pediatric Cardiac Arrest",
+      "section": "Drug & Dosing Cards",
+      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "tags": [],
+      "keywords": [
+        "epi",
+        "adrenaline",
+        "peds code dose"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-epinephrine-arrest"
+    },
+    {
+      "id": "peds-glasgow-coma-scale",
+      "title": "Pediatric Glasgow Coma Scale",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [],
+      "keywords": [
+        "peds GCS",
+        "pGCS",
+        "children's coma scale"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-glasgow-coma-scale"
+    },
+    {
+      "id": "laceration-repair",
+      "title": "Laceration Repair Guide",
+      "section": "Procedures",
+      "category": "Wound & Fracture Care",
+      "tags": [],
+      "keywords": [
+        "suture",
+        "wound closure",
+        "laceration"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/wound-fracture-care/laceration-repair"
+    },
+    {
+      "id": "anticoagulation-reversal",
+      "title": "Anticoagulation Reversal Reference",
+      "section": "Reference Library",
+      "category": "Anticoagulation & Labs",
+      "tags": [
+        "bleeding",
+        "reversal agent",
+        "PCC",
+        "andexanet",
+        "idarucizumab",
+        "vitamin K",
+        "life-threatening hemorrhage"
+      ],
+      "keywords": [
+        "4F-PCC",
+        "Kcentra",
+        "Praxbind",
+        "AndexXa",
+        "anticoag reversal",
+        "factor Xa reversal",
+        "warfarin reversal",
+        "DOAC reversal"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/anticoagulation-labs/anticoagulation-reversal"
+    }
+  ]
+}

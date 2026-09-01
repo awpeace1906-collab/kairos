@@ -1,0 +1,21 @@
+{
+  "name": "kairos-content-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Solo-maintainer content pipeline for Kairos: validate, build search index + manifest, staleness tripwire.",
+  "bin": {
+    "kairos-content": "./cli.mjs"
+  },
+  "scripts": {
+    "validate": "node validate.mjs",
+    "build": "node build.mjs",
+    "build-search-index": "node build-search-index.mjs",
+    "build-manifest": "node build-manifest.mjs",
+    "check-staleness": "node check-staleness.mjs",
+    "ci": "npm run validate && npm run build && npm run check-staleness"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1"
+  }
+}

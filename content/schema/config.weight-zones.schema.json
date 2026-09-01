@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kairos.app/schema/config.weight-zones.schema.json",
+  "title": "Kairos weight-zone config",
+  "description": "Dual_Mode_Weight_Zone_Spec.md. Equipment sizes and a visual anchor ONLY. A zone never supplies a drug dose or fluid volume.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["scheme", "disclaimer", "zones", "ageEstimate"],
+  "properties": {
+    "scheme": { "type": "string", "const": "Kairos Teal-Charcoal (original, not Broselow)" },
+    "disclaimer": { "type": "string" },
+    "ageEstimate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["formulas", "note"],
+      "properties": {
+        "note": { "type": "string" },
+        "formulas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["ageBandLabel", "minMonths", "maxMonths", "expression"],
+            "properties": {
+              "ageBandLabel": { "type": "string" },
+              "minMonths": { "type": "number" },
+              "maxMonths": { "type": "number" },
+              "expression": { "type": "string", "description": "APLS-style estimate over 'ageMonths' or 'ageYears'." }
+            }
+          }
+        }
+      }
+    },
+    "zones": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["zone", "color", "weight_min", "weight_max", "equipment"],
+        "properties": {
+          "zone": { "type": "integer", "minimum": 1 },
+          "color": { "type": "string" },
+          "weight_min": { "type": "number" },
+          "weight_max": { "type": "number" },
+          "equipment": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "ettUncuffed": { "type": "string" },
+              "lma": { "type": "string" },
+              "blade": { "type": "string" },
+              "defibPads": { "type": "string" },
+              "bpCuff": { "type": "string" }
+            }
+          },
+          "note": { "type": "string" }
+        }
+      }
+    }
+  }
+}

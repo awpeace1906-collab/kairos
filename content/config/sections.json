@@ -1,0 +1,83 @@
+{
+  "sections": [
+    {
+      "id": "procedures",
+      "title": "Procedures",
+      "order": 1,
+      "contentType": "procedure",
+      "coreQuestion": "I'm about to do a hands-on intervention — walk me through it.",
+      "icon": "hand.raised",
+      "themeToken": "section.procedures",
+      "categories": [
+        { "id": "wound-fracture-care", "title": "Wound & Fracture Care" },
+        { "id": "regional-anesthesia-ultrasound", "title": "Regional Anesthesia & Ultrasound" },
+        { "id": "airway-sedation-workflows", "title": "Airway & Sedation Workflows" }
+      ]
+    },
+    {
+      "id": "calculators",
+      "title": "Calculators",
+      "order": 2,
+      "contentType": "calculator",
+      "coreQuestion": "I need a validated score/risk tool right now.",
+      "icon": "function",
+      "themeToken": "section.calculators",
+      "categories": [
+        { "id": "cardiovascular", "title": "Cardiovascular / Chest Pain / Arrhythmia" },
+        { "id": "pulmonary", "title": "Pulmonary / PE / DVT / Resp Failure" },
+        { "id": "neuro", "title": "Neuro / Stroke / Head Injury" },
+        { "id": "trauma", "title": "Trauma" },
+        { "id": "sepsis-id", "title": "Sepsis / Infectious Disease" },
+        { "id": "gi-renal-metabolic", "title": "GI / Renal / Metabolic" },
+        { "id": "tox-withdrawal", "title": "Toxicology / Withdrawal" },
+        { "id": "early-warning-resus", "title": "Early Warning / Resuscitation" },
+        { "id": "icu-critical-care", "title": "ICU / Critical Care" },
+        { "id": "anesthesia-airway-or", "title": "Anesthesia / Airway / OR" },
+        { "id": "ob-newborn", "title": "Obstetric / Newborn (ED & OR crossover)" }
+      ]
+    },
+    {
+      "id": "drug-dosing",
+      "title": "Drug & Dosing Cards",
+      "order": 3,
+      "contentType": "drug-card",
+      "coreQuestion": "What's the dose/volume/conversion for this patient, right now?",
+      "icon": "pills",
+      "themeToken": "section.drugDosing",
+      "categories": [
+        { "id": "anescalc-core", "title": "Existing Core (AnesCalc)" },
+        { "id": "resus-dosing", "title": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)" },
+        { "id": "dosing-fluid-math", "title": "Dosing & Fluid Math" }
+      ]
+    },
+    {
+      "id": "reference-library",
+      "title": "Reference Library",
+      "order": 4,
+      "contentType": "reference",
+      "coreQuestion": "I need to read/browse background knowledge on a topic.",
+      "icon": "books.vertical",
+      "themeToken": "section.reference",
+      "categories": [
+        { "id": "resus-airway", "title": "Resuscitation & Airway" },
+        { "id": "cardiac-ecg", "title": "Cardiac / ECG" },
+        { "id": "anticoag-labs", "title": "Anticoagulation & Labs" },
+        { "id": "id-immunization", "title": "Infectious Disease & Immunization" },
+        { "id": "ebm", "title": "Evidence-Based Medicine" }
+      ]
+    },
+    {
+      "id": "peds-module",
+      "title": "Peds Module",
+      "order": 5,
+      "contentType": "peds-tool",
+      "coreQuestion": "This patient is a kid — give me the pediatric-specific version of everything above.",
+      "icon": "figure.child",
+      "themeToken": "section.peds",
+      "categories": [
+        { "id": "peds-resus-decision", "title": "Peds Resuscitation & Decision Support" },
+        { "id": "peds-dosing-refs", "title": "Peds Dosing References" }
+      ]
+    }
+  ]
+}

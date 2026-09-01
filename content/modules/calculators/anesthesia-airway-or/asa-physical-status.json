@@ -1,0 +1,29 @@
+{
+  "id": "asa-physical-status",
+  "section": "Calculators",
+  "category": "Anesthesia / Airway / OR",
+  "title": "ASA Physical Status Classification",
+  "aliases": ["ASA class", "ASA PS", "perioperative risk class"],
+  "tags": ["anesthesia", "perioperative risk", "preop assessment", "OR"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["ASA Physical Status Classification System (2020 update)"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }],
+  "engine": "classification",
+  "settings": ["OR", "Anesthesia"],
+  "purpose": "Universal shorthand for baseline perioperative risk; drives every anesthesia plan. Append \"E\" for emergency procedures.",
+  "tiers": [
+    { "label": "ASA I", "description": "A normal healthy patient (non-smoker, no or minimal alcohol use)" },
+    { "label": "ASA II", "description": "Mild systemic disease without substantive functional limitation (e.g. current smoker, well-controlled HTN or DM, obesity 30 ≤ BMI < 40, pregnancy)" },
+    { "label": "ASA III", "description": "Severe systemic disease with substantive functional limitation (e.g. poorly controlled DM/HTN, COPD, BMI ≥ 40, active hepatitis, pacemaker, ESRD on dialysis, MI/CVA/TIA > 3 months ago)" },
+    { "label": "ASA IV", "description": "Severe systemic disease that is a constant threat to life (e.g. recent < 3 months MI/CVA/TIA, ongoing cardiac ischemia, severe valve dysfunction, sepsis, DIC, ESRD not on scheduled dialysis)" },
+    { "label": "ASA V", "description": "A moribund patient not expected to survive without the operation (e.g. ruptured AAA, massive trauma, intracranial bleed with mass effect)" },
+    { "label": "ASA VI", "description": "A declared brain-dead patient whose organs are being removed for donation" }
+  ],
+  "interpretation": [
+    { "label": "Assign the class from overall systemic disease burden and functional status", "detail": "The classification is a subjective clinical assessment, not a point score. Add \"E\" (e.g. ASA IIIE) for emergency cases.", "severity": "info" }
+  ]
+}

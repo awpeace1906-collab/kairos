@@ -1,0 +1,33 @@
+{
+  "id": "perc-rule",
+  "section": "Calculators",
+  "category": "Pulmonary / PE / DVT / Resp Failure",
+  "title": "PERC Rule for PE",
+  "aliases": ["PE rule-out criteria", "pulmonary embolism rule out"],
+  "tags": ["pulmonary embolism", "rule out", "d-dimer", "low risk", "ED"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Kline JA et al. J Thromb Haemost 2004; 2008"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "In a patient already judged LOW pretest probability, rules out PE with no testing when all 8 criteria are absent.",
+  "notes": "Only apply when your gestalt pretest probability is already low (< 15%). A score of 0 means PERC-negative; any positive criterion means PERC cannot be used to rule out — proceed to D-dimer or imaging per Wells.",
+  "items": [
+    { "key": "age", "label": "Age ≥ 50", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "hr", "label": "Heart rate ≥ 100", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "spo2", "label": "SpO₂ < 95% on room air", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "legSwelling", "label": "Unilateral leg swelling", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "hemoptysis", "label": "Hemoptysis", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "surgery", "label": "Recent surgery or trauma (hospitalized within 4 weeks)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "priorVte", "label": "Prior PE or DVT", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "hormone", "label": "Hormone use (OCP, HRT, estrogen)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "PERC-negative — PE excluded", "risk": "< 2% — no further testing in a low-pretest-probability patient", "severity": "low" },
+    { "min": 1, "max": 8, "label": "PERC-positive — cannot rule out PE by PERC", "disposition": "Proceed to age-adjusted D-dimer or imaging per Wells/YEARS", "severity": "moderate" }
+  ]
+}

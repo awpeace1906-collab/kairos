@@ -1,0 +1,28 @@
+{
+  "id": "hunt-hess",
+  "section": "Calculators",
+  "category": "Neuro / Stroke / Head Injury",
+  "title": "Hunt-Hess Classification",
+  "aliases": ["Hunt Hess", "SAH grading", "subarachnoid hemorrhage grade"],
+  "tags": ["subarachnoid hemorrhage", "SAH", "grading", "prognosis", "ED", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Hunt WE, Hess RM. J Neurosurg 1968"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }],
+  "engine": "classification",
+  "settings": ["ED", "ICU"],
+  "purpose": "Severity grading of aneurysmal subarachnoid hemorrhage — prognosis and triage for neurosurgical intervention.",
+  "tiers": [
+    { "label": "Grade I", "description": "Asymptomatic, or mild headache and slight nuchal rigidity", "mortality": "~1-5%" },
+    { "label": "Grade II", "description": "Moderate-to-severe headache, nuchal rigidity, no deficit other than cranial nerve palsy", "mortality": "~5-10%" },
+    { "label": "Grade III", "description": "Drowsiness, confusion, or mild focal deficit", "mortality": "~15-20%" },
+    { "label": "Grade IV", "description": "Stupor, moderate-to-severe hemiparesis, early decerebrate rigidity", "mortality": "~30-40%" },
+    { "label": "Grade V", "description": "Deep coma, decerebrate posturing, moribund appearance", "mortality": "~50-80%" }
+  ],
+  "interpretation": [
+    { "label": "Higher grade → higher perioperative mortality and worse outcome", "detail": "Grades I-III are generally candidates for early aneurysm securing; IV-V are individualized.", "severity": "info" }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "timi-nstemi",
+  "section": "Calculators",
+  "category": "Cardiovascular / Chest Pain / Arrhythmia",
+  "title": "TIMI Risk Score (UA/NSTEMI)",
+  "aliases": ["TIMI", "unstable angina risk", "NSTEMI risk"],
+  "tags": ["chest pain", "ACS", "NSTEMI", "unstable angina", "risk stratification", "ED"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Antman EM et al. JAMA 2000"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "14-day risk of death, MI, or urgent revascularization in UA/NSTEMI; informs an early invasive strategy.",
+  "items": [
+    { "key": "age", "label": "Age ≥ 65", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "riskFactors", "label": "≥ 3 CAD risk factors (HTN, hyperlipidemia, DM, smoking, family hx)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "knownCad", "label": "Known CAD (prior stenosis ≥ 50%)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "asa", "label": "Aspirin use in the prior 7 days", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "angina", "label": "Severe angina (≥ 2 episodes in 24 h)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "stDeviation", "label": "ST deviation ≥ 0.5 mm on ECG", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "marker", "label": "Positive cardiac marker", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 1, "label": "Low risk", "risk": "~5% 14-day event rate", "severity": "low" },
+    { "min": 2, "max": 4, "label": "Intermediate risk", "risk": "~8-20%", "severity": "moderate" },
+    { "min": 5, "max": 7, "label": "High risk", "risk": "~26-41% — early invasive strategy", "severity": "high" }
+  ]
+}

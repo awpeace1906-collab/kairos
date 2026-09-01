@@ -1,0 +1,32 @@
+{
+  "id": "rox-index",
+  "section": "Calculators",
+  "category": "Pulmonary / PE / DVT / Resp Failure",
+  "title": "ROX Index",
+  "aliases": ["HFNC failure", "high flow nasal cannula prediction"],
+  "tags": ["HFNC", "high flow", "intubation", "respiratory failure", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Roca O et al. Am J Respir Crit Care Med 2019"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }],
+  "engine": "formula",
+  "settings": ["ICU"],
+  "purpose": "Predicts high-flow nasal cannula success vs. need for intubation. Measure at 2, 6, and 12 hours on HFNC.",
+  "inputs": [
+    { "key": "spo2", "label": "SpO₂", "type": "number", "unit": "%", "min": 40, "max": 100 },
+    { "key": "fio2", "label": "FiO₂ (as a fraction, e.g. 0.5)", "type": "number", "min": 0.21, "max": 1 },
+    { "key": "rr", "label": "Respiratory rate", "type": "number", "unit": "breaths/min", "min": 4, "max": 80 }
+  ],
+  "formulas": [
+    { "key": "rox", "label": "ROX index", "expression": "(spo2 / fio2) / rr", "precision": 2 }
+  ],
+  "interpretation": [
+    { "forKey": "rox", "min": 4.88, "max": 1000, "label": "≥ 4.88 — HFNC success likely; continue and reassess", "severity": "low" },
+    { "forKey": "rox", "min": 3.85, "max": 4.879, "label": "3.85-4.87 — indeterminate; recheck in 1-2 h, close monitoring", "severity": "moderate" },
+    { "forKey": "rox", "min": 0, "max": 3.849, "label": "< 3.85 — high risk of HFNC failure; prepare for intubation", "severity": "high" }
+  ],
+  "notes": "Enter FiO₂ as a decimal fraction (0.21-1.0), not a percentage. Thresholds are best validated at the 12-hour timepoint."
+}

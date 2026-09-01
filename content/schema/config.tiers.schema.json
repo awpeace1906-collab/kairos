@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kairos.app/schema/config.tiers.schema.json",
+  "title": "Kairos review-tier config",
+  "description": "Review cadence by tier (README_Build_Package.md). Drives tools/check-staleness.mjs.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["tiers"],
+  "properties": {
+    "tiers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["tier", "label", "cadenceDays", "examples"],
+        "properties": {
+          "tier": { "$ref": "common.schema.json#/$defs/reviewTier" },
+          "label": { "type": "string" },
+          "cadenceDays": {
+            "oneOf": [
+              { "type": "integer", "minimum": 1 },
+              { "type": "null", "description": "No scheduled review." }
+            ]
+          },
+          "tripwire": { "type": "boolean", "description": "Whether check-staleness.mjs fails the build for an overdue item in this tier." },
+          "examples": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

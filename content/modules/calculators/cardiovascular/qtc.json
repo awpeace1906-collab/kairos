@@ -1,0 +1,39 @@
+{
+  "id": "qtc",
+  "section": "Calculators",
+  "category": "Cardiovascular / Chest Pain / Arrhythmia",
+  "title": "Corrected QT Interval (QTc)",
+  "aliases": ["QTc", "Bazett", "Fridericia", "QT correction"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": [
+    "Bazett HC. Heart 1920",
+    "Fridericia LS. Acta Med Scand 1920",
+    "AHA/ACCF/HRS 2009 recommendations for standardization of the ECG"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry transcribed from Calculator_Logic_Build_Spec.md" }
+  ],
+  "engine": "formula",
+  "settings": ["ED", "ICU", "OR"],
+  "purpose": "Checked before/after any QT-prolonging drug (ondansetron, droperidol, haloperidol, methadone, antipsychotics) — directly changes med choice.",
+  "inputs": [
+    { "key": "qt", "label": "Measured QT interval", "type": "number", "unit": "ms", "min": 200, "max": 800 },
+    { "key": "hr", "label": "Heart rate", "type": "number", "unit": "bpm", "min": 20, "max": 250 }
+  ],
+  "formulas": [
+    { "key": "rr", "label": "RR interval", "expression": "60 / hr", "unit": "s", "precision": 3 },
+    { "key": "bazett", "label": "QTc (Bazett)", "expression": "qt / sqrt(60 / hr)", "unit": "ms", "precision": 0 },
+    { "key": "fridericia", "label": "QTc (Fridericia)", "expression": "qt / cbrt(60 / hr)", "unit": "ms", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "bazett", "min": 0, "max": 439, "label": "Normal (men < 440 ms)", "severity": "info" },
+    { "forKey": "bazett", "min": 440, "max": 499, "label": "Borderline / prolonged — review QT-prolonging meds and electrolytes", "severity": "moderate" },
+    { "forKey": "bazett", "min": 500, "max": 800, "label": "Markedly prolonged — high torsades risk; avoid adding QT-prolonging drugs", "severity": "high" }
+  ],
+  "notes": "Normal threshold is < 440 ms (men) / < 460 ms (women). Fridericia is more accurate at extremes of heart rate; prefer it for HR < 60 or > 100.",
+  "buildNote": "Formula engine. Fridericia uses a cube root — verify the app's expression evaluator supports cbrt()."
+}

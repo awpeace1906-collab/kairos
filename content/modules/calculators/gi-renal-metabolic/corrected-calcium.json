@@ -1,0 +1,30 @@
+{
+  "id": "corrected-calcium",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "Corrected Calcium in Hypoalbuminemia",
+  "aliases": ["albumin corrected calcium", "adjusted calcium"],
+  "tags": ["calcium", "hypocalcemia", "hypoalbuminemia", "ED", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "review_tier": "stable",
+  "sources": ["Payne RB et al. Br Med J 1973"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry. Stable formula — no scheduled review." }],
+  "engine": "formula",
+  "settings": ["ED", "ICU"],
+  "purpose": "Estimates true calcium status when albumin is low — avoids missing or over-calling hypocalcemia. Ionized calcium is the definitive test when available.",
+  "inputs": [
+    { "key": "calcium", "label": "Measured total calcium", "type": "number", "unit": "mg/dL", "min": 3, "max": 18 },
+    { "key": "albumin", "label": "Serum albumin", "type": "number", "unit": "g/dL", "min": 0.5, "max": 6 }
+  ],
+  "formulas": [
+    { "key": "corrected", "label": "Corrected calcium", "expression": "calcium + 0.8 * (4 - albumin)", "unit": "mg/dL", "precision": 1 }
+  ],
+  "interpretation": [
+    { "forKey": "corrected", "min": 0, "max": 8.4, "label": "< 8.5 mg/dL — corrected hypocalcemia", "severity": "moderate" },
+    { "forKey": "corrected", "min": 8.5, "max": 10.5, "label": "8.5-10.5 mg/dL — corrected calcium within normal range", "severity": "info" },
+    { "forKey": "corrected", "min": 10.6, "max": 18, "label": "> 10.5 mg/dL — corrected hypercalcemia", "severity": "moderate" }
+  ],
+  "notes": "Adds 0.8 mg/dL per 1 g/dL the albumin is below 4.0. The correction is an approximation and performs poorly in critical illness — obtain an ionized calcium when the result would change management."
+}

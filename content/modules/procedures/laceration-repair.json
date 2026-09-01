@@ -1,0 +1,57 @@
+{
+  "id": "laceration-repair",
+  "section": "Procedures",
+  "category": "Wound & Fracture Care",
+  "title": "Laceration Repair Guide",
+  "aliases": ["suture", "wound closure", "laceration"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["AAFP", "Merck Manual", "StatPearls — cross-checked per README_Build_Package.md"],
+  "flags": ["stub"],
+  "changelog": [
+    { "version": 1, "date": "2026-08-31", "change": "Skeleton only. Full screen-by-screen branch logic is a build-package TODO (README 'Not yet written')." }
+  ],
+  "purpose": "Body-region wound assessment → suture material/size and technique selection → aftercare + generated procedure note.",
+  "outputType": "decision-tree",
+  "crossLinks": ["la-max-dosing"],
+  "entryPrompt": "Where is the wound?",
+  "nodes": [
+    {
+      "id": "region",
+      "type": "question",
+      "prompt": "Select body region",
+      "choices": [
+        { "label": "Face", "next": "face-params" },
+        { "label": "Scalp", "next": "scalp-params" },
+        { "label": "Trunk / extremity", "next": "trunk-params" }
+      ]
+    },
+    {
+      "id": "face-params",
+      "type": "recommendation",
+      "body": "Suture size 6-0 (5-0 acceptable). Non-absorbable monofilament, or absorbable in children to avoid a removal visit. Removal 3-5 days. Primary closure window < 12-24 h. Irrigate 50-100 mL/cm."
+    },
+    {
+      "id": "scalp-params",
+      "type": "recommendation",
+      "body": "Suture size 3-0 / 4-0; blue monofilament recommended for visibility. Staples acceptable (contraindicated on face/neck/hands/feet). Removal 7-10 days. Primary closure window < 12-24 h."
+    },
+    {
+      "id": "trunk-params",
+      "type": "recommendation",
+      "body": "Suture size 3-0 / 4-0. Removal 6-10 days (trunk), 10-14 days over joints. Primary closure window < 6-8 h. Consider deep dermal sutures for tension."
+    }
+  ],
+  "checklist": [
+    "Neurovascular and tendon exam documented before anesthesia",
+    "Local anesthetic max dose calculated — see cross-linked LA max dosing card",
+    "Irrigation 50-100 mL per cm of wound length",
+    "Tetanus status addressed",
+    "Wound-age cutoff for primary closure checked for this region"
+  ],
+  "noteTemplate": "PROCEDURE: Laceration repair, {{region}}. Wound {{length}} cm. Anesthesia: {{anesthetic}} {{anestheticVolume}} mL. Irrigation with {{irrigationVolume}} mL NS. Closure: {{sutureCount}} × {{sutureSize}} {{technique}}. Neurovascular exam intact pre- and post-procedure. Aftercare and return precautions given. Suture removal in {{removalDays}} days.",
+  "buildNote": "This is a stub. The full region → pattern → technique → aftercare branch tree (and the Fractures/Nerve Block/POCUS trees) must be storyboarded screen-by-screen before implementation. Do not copy Suture.app's text or media — original content only."
+}

@@ -1,0 +1,51 @@
+{
+  "id": "anticoagulation-reversal",
+  "section": "Reference Library",
+  "category": "Anticoagulation & Labs",
+  "title": "Anticoagulation Reversal Reference",
+  "aliases": ["anticoag reversal", "factor Xa reversal", "warfarin reversal", "DOAC reversal"],
+  "tags": ["bleeding", "reversal agent", "PCC", "andexanet", "idarucizumab", "vitamin K", "life-threatening hemorrhage"],
+  "keywords": ["4F-PCC", "Kcentra", "Praxbind", "AndexXa"],
+  "contentType": "reference",
+  "content_version": 3,
+  "last_reviewed": "2026-08-30",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["PMC13110298", "Bekka et al. Br J Clin Pharmacol 2025"],
+  "changelog": [
+    { "version": 3, "date": "2026-08-30", "change": "Removed andexanet alfa as primary US recommendation following Dec 22 2025 US market withdrawal; 4F-PCC now primary for US practice." },
+    { "version": 2, "date": "2026-06-15", "change": "Added idarucizumab split-dose detail." },
+    { "version": 1, "date": "2026-05-01", "change": "Initial entry." }
+  ],
+  "summary": "Reversal agents by anticoagulant class. This record is the reference implementation of the Content Update Architecture — the andexanet correction was a JSON edit + version bump, not an App Store resubmission.",
+  "body": [
+    { "type": "callout", "tone": "warning", "text": "Andexanet alfa was voluntarily withdrawn from the US market on 2026-12-22 (thromboembolic safety concerns) — corrected here as content_version 3. It remains available in the EU/Canada; a non-US build should branch on region." },
+    { "type": "heading", "level": 2, "text": "Vitamin K antagonist (warfarin)" },
+    { "type": "list", "items": [
+      "4-factor PCC, dosed by INR and weight, for life-threatening bleeding or urgent surgery",
+      "Vitamin K 10 mg IV over 30 minutes — the single correct dose/route for emergent reversal (co-administer with PCC; PCC effect is transient)",
+      "FFP only if PCC unavailable"
+    ] },
+    { "type": "heading", "level": 2, "text": "Direct thrombin inhibitor (dabigatran)" },
+    { "type": "list", "items": [
+      "Idarucizumab 5 g IV, given as two 2.5 g infusions",
+      "Consider hemodialysis (dabigatran is dialyzable) if idarucizumab unavailable"
+    ] },
+    { "type": "heading", "level": 2, "text": "Factor Xa inhibitors (apixaban, rivaroxaban, edoxaban)" },
+    { "type": "list", "items": [
+      "US practice: 4-factor PCC 50 units/kg (or per institutional protocol) — current practical default",
+      "Andexanet alfa: no longer available in the US as of 2026-12-22; still an option in the EU/Canada",
+      "Activated charcoal if last dose within 2-4 hours"
+    ] },
+    { "type": "table",
+      "columns": ["Anticoagulant", "US primary reversal", "Key dose"],
+      "rows": [
+        ["Warfarin", "4F-PCC + vitamin K", "Vitamin K 10 mg IV over 30 min"],
+        ["Dabigatran", "Idarucizumab", "5 g IV as 2 × 2.5 g"],
+        ["Apixaban / rivaroxaban / edoxaban", "4F-PCC", "50 units/kg or per protocol"]
+      ]
+    }
+  ],
+  "related": ["heart-score"],
+  "buildNote": "Tier 1, tripwire-eligible. Keep next_review_due current. The 'flag as outdated' affordance should route here first."
+}

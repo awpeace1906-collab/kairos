@@ -1,0 +1,31 @@
+{
+  "id": "lrinec",
+  "section": "Calculators",
+  "category": "Sepsis / Infectious Disease",
+  "title": "LRINEC Score",
+  "aliases": ["necrotizing fasciitis score", "nec fasc"],
+  "tags": ["necrotizing fasciitis", "cellulitis", "soft tissue infection", "can't miss", "ED"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Wong CH et al. Crit Care Med 2004"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Flags necrotizing fasciitis vs. cellulitis when the exam is ambiguous. A low score does NOT rule it out — clinical suspicion governs.",
+  "items": [
+    { "key": "crp", "label": "CRP (mg/L)", "options": [{ "label": "< 150", "points": 0 }, { "label": "≥ 150", "points": 4 }] },
+    { "key": "wbc", "label": "WBC (/mm³)", "options": [{ "label": "< 15,000", "points": 0 }, { "label": "15,000-25,000", "points": 1 }, { "label": "> 25,000", "points": 2 }] },
+    { "key": "hgb", "label": "Hemoglobin (g/dL)", "options": [{ "label": "> 13.5", "points": 0 }, { "label": "11-13.5", "points": 1 }, { "label": "< 11", "points": 2 }] },
+    { "key": "sodium", "label": "Sodium (mmol/L)", "options": [{ "label": "≥ 135", "points": 0 }, { "label": "< 135", "points": 2 }] },
+    { "key": "creatinine", "label": "Creatinine (mg/dL)", "options": [{ "label": "≤ 1.6", "points": 0 }, { "label": "> 1.6", "points": 2 }] },
+    { "key": "glucose", "label": "Glucose (mg/dL)", "options": [{ "label": "≤ 180", "points": 0 }, { "label": "> 180", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 5, "label": "Low risk (< 50% probability)", "detail": "Does NOT exclude necrotizing fasciitis — if the exam concerns you, surgical consultation regardless of score.", "severity": "moderate" },
+    { "min": 6, "max": 7, "label": "Intermediate risk (50-75%)", "disposition": "Urgent surgical consultation and imaging", "severity": "high" },
+    { "min": 8, "max": 13, "label": "High risk (> 75%)", "disposition": "Emergent surgical exploration", "severity": "critical" }
+  ]
+}

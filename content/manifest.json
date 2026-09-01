@@ -1,0 +1,256 @@
+{
+  "generatedAt": "2026-09-01T00:00:00Z",
+  "schemaVersion": 1,
+  "contentBaseHint": "https://content.kairos.example/v1/",
+  "modules": {
+    "calculators/anesthesia-airway-or/asa-physical-status": {
+      "content_version": 1,
+      "hash": "02e214de96d19a86",
+      "path": "modules/calculators/anesthesia-airway-or/asa-physical-status.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/cardiovascular/cha2ds2-vasc": {
+      "content_version": 1,
+      "hash": "1d832961e8faf4c0",
+      "path": "modules/calculators/cardiovascular/cha2ds2-vasc.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/cardiovascular/grace-acs": {
+      "content_version": 1,
+      "hash": "1cd68726f0adb5bb",
+      "path": "modules/calculators/cardiovascular/grace-acs.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/cardiovascular/has-bled": {
+      "content_version": 1,
+      "hash": "224a16780f370c3b",
+      "path": "modules/calculators/cardiovascular/has-bled.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/cardiovascular/heart-score": {
+      "content_version": 1,
+      "hash": "b13021fbe7ba1c12",
+      "path": "modules/calculators/cardiovascular/heart-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/cardiovascular/killip-classification": {
+      "content_version": 1,
+      "hash": "40cf374a35032418",
+      "path": "modules/calculators/cardiovascular/killip-classification.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/cardiovascular/qtc": {
+      "content_version": 1,
+      "hash": "4481039815dfcd67",
+      "path": "modules/calculators/cardiovascular/qtc.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/cardiovascular/timi-nstemi": {
+      "content_version": 1,
+      "hash": "b4e72a6554687e02",
+      "path": "modules/calculators/cardiovascular/timi-nstemi.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/gi-renal-metabolic/anion-gap": {
+      "content_version": 1,
+      "hash": "e880b515d6688479",
+      "path": "modules/calculators/gi-renal-metabolic/anion-gap.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": "stable"
+    },
+    "calculators/gi-renal-metabolic/corrected-calcium": {
+      "content_version": 1,
+      "hash": "04124931f64a67ba",
+      "path": "modules/calculators/gi-renal-metabolic/corrected-calcium.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": "stable"
+    },
+    "calculators/neuro/abcd2": {
+      "content_version": 1,
+      "hash": "01fe129ec15fa88f",
+      "path": "modules/calculators/neuro/abcd2.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/neuro/gcs": {
+      "content_version": 1,
+      "hash": "e4e34d10acfd3167",
+      "path": "modules/calculators/neuro/gcs.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/neuro/hunt-hess": {
+      "content_version": 1,
+      "hash": "94168809ce48d790",
+      "path": "modules/calculators/neuro/hunt-hess.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/neuro/nihss": {
+      "content_version": 1,
+      "hash": "a5377dab2d2f593b",
+      "path": "modules/calculators/neuro/nihss.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/pulmonary/curb-65": {
+      "content_version": 1,
+      "hash": "6ce413bcf84f244b",
+      "path": "modules/calculators/pulmonary/curb-65.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/pulmonary/perc-rule": {
+      "content_version": 1,
+      "hash": "315f1d41028f5841",
+      "path": "modules/calculators/pulmonary/perc-rule.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/pulmonary/rox-index": {
+      "content_version": 1,
+      "hash": "ec57a3b0754a3398",
+      "path": "modules/calculators/pulmonary/rox-index.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/pulmonary/wells-dvt": {
+      "content_version": 1,
+      "hash": "df3fe114cb87d125",
+      "path": "modules/calculators/pulmonary/wells-dvt.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/pulmonary/wells-pe": {
+      "content_version": 1,
+      "hash": "117c262b65a1bbe7",
+      "path": "modules/calculators/pulmonary/wells-pe.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/sepsis-id/lrinec": {
+      "content_version": 1,
+      "hash": "361df66a99b3e5f2",
+      "path": "modules/calculators/sepsis-id/lrinec.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/sepsis-id/qsofa": {
+      "content_version": 1,
+      "hash": "1349d45a54382755",
+      "path": "modules/calculators/sepsis-id/qsofa.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/tox-withdrawal/osmolal-gap": {
+      "content_version": 1,
+      "hash": "aec472c5e604a4b2",
+      "path": "modules/calculators/tox-withdrawal/osmolal-gap.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": "stable"
+    },
+    "calculators/trauma/nexus-cspine": {
+      "content_version": 1,
+      "hash": "bff0da09cfcb0576",
+      "path": "modules/calculators/trauma/nexus-cspine.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "calculators/trauma/shock-index": {
+      "content_version": 1,
+      "hash": "f63c3710b95a1645",
+      "path": "modules/calculators/trauma/shock-index.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "drug-dosing/peds-epinephrine-arrest": {
+      "content_version": 1,
+      "hash": "15a9ab68606b1451",
+      "path": "modules/drug-dosing/peds-epinephrine-arrest.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "peds-module/peds-glasgow-coma-scale": {
+      "content_version": 1,
+      "hash": "607c848aaa650d3e",
+      "path": "modules/peds-module/peds-glasgow-coma-scale.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "procedures/laceration-repair": {
+      "content_version": 1,
+      "hash": "be4bae432c1c3e42",
+      "path": "modules/procedures/laceration-repair.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "reference-library/anticoagulation-reversal": {
+      "content_version": 3,
+      "hash": "cb2e650622895813",
+      "path": "modules/reference-library/anticoagulation-reversal.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    }
+  }
+}

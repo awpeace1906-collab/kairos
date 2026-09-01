@@ -1,0 +1,30 @@
+{
+  "id": "nexus-cspine",
+  "section": "Calculators",
+  "category": "Trauma",
+  "title": "NEXUS Criteria (C-Spine)",
+  "aliases": ["NEXUS", "cervical spine clearance", "c-collar clearance"],
+  "tags": ["c-spine", "cervical spine", "trauma", "imaging", "rule out", "ED"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Hoffman JR et al. NEJM 2000"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Clears the cervical spine clinically without imaging when all 5 criteria are absent.",
+  "notes": "Imaging can be deferred only if ALL five are absent (score 0). Any positive criterion → image per local protocol.",
+  "items": [
+    { "key": "midline", "label": "Midline cervical spine tenderness", "options": [{ "label": "Absent", "points": 0 }, { "label": "Present", "points": 1 }] },
+    { "key": "deficit", "label": "Focal neurologic deficit", "options": [{ "label": "Absent", "points": 0 }, { "label": "Present", "points": 1 }] },
+    { "key": "alertness", "label": "Altered level of alertness", "options": [{ "label": "Absent", "points": 0 }, { "label": "Present", "points": 1 }] },
+    { "key": "intoxication", "label": "Evidence of intoxication", "options": [{ "label": "Absent", "points": 0 }, { "label": "Present", "points": 1 }] },
+    { "key": "distracting", "label": "Distracting painful injury", "options": [{ "label": "Absent", "points": 0 }, { "label": "Present", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "All criteria absent — c-spine imaging not required", "severity": "low" },
+    { "min": 1, "max": 5, "label": "≥ 1 criterion present — imaging indicated", "disposition": "CT cervical spine (or plain films per protocol)", "severity": "moderate" }
+  ]
+}

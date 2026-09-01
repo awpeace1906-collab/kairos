@@ -1,0 +1,48 @@
+{
+  "id": "nihss",
+  "section": "Calculators",
+  "category": "Neuro / Stroke / Head Injury",
+  "title": "NIH Stroke Scale (NIHSS)",
+  "aliases": ["NIHSS", "stroke severity", "stroke scale"],
+  "tags": ["stroke", "severity", "thrombolytic", "thrombectomy", "ED", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Brott T et al. Stroke 1989", "NIH Stroke Scale (official)"],
+  "flags": ["needs-primary-source"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Item score ranges only, per the deliberate scope decision in Calculator_Logic_Build_Spec.md." }],
+  "engine": "formula",
+  "settings": ["ED", "ICU"],
+  "purpose": "Standardized stroke severity — drives thrombolytic/thrombectomy eligibility and serial monitoring. Enter the item scores a trained examiner has already determined.",
+  "notes": "Per the build spec's deliberate scope decision, the per-point behavioral criteria (what separates a 1 from a 2 on each item) are NOT encoded here — that is certified-examiner territory. This tool sums the item scores you enter.",
+  "inputs": [
+    { "key": "loc",   "label": "1a. Level of consciousness (0-3)", "type": "integer", "min": 0, "max": 3 },
+    { "key": "locQ",  "label": "1b. LOC questions (0-2)", "type": "integer", "min": 0, "max": 2 },
+    { "key": "locC",  "label": "1c. LOC commands (0-2)", "type": "integer", "min": 0, "max": 2 },
+    { "key": "gaze",  "label": "2. Best gaze (0-2)", "type": "integer", "min": 0, "max": 2 },
+    { "key": "visual","label": "3. Visual fields (0-3)", "type": "integer", "min": 0, "max": 3 },
+    { "key": "facial","label": "4. Facial palsy (0-3)", "type": "integer", "min": 0, "max": 3 },
+    { "key": "armL",  "label": "5a. Motor arm — left (0-4)", "type": "integer", "min": 0, "max": 4 },
+    { "key": "armR",  "label": "5b. Motor arm — right (0-4)", "type": "integer", "min": 0, "max": 4 },
+    { "key": "legL",  "label": "6a. Motor leg — left (0-4)", "type": "integer", "min": 0, "max": 4 },
+    { "key": "legR",  "label": "6b. Motor leg — right (0-4)", "type": "integer", "min": 0, "max": 4 },
+    { "key": "ataxia","label": "7. Limb ataxia (0-2)", "type": "integer", "min": 0, "max": 2 },
+    { "key": "sensory","label": "8. Sensory (0-2)", "type": "integer", "min": 0, "max": 2 },
+    { "key": "language","label": "9. Best language (0-3)", "type": "integer", "min": 0, "max": 3 },
+    { "key": "dysarthria","label": "10. Dysarthria (0-2)", "type": "integer", "min": 0, "max": 2 },
+    { "key": "extinction","label": "11. Extinction / inattention (0-2)", "type": "integer", "min": 0, "max": 2 }
+  ],
+  "formulas": [
+    { "key": "total", "label": "NIHSS total", "expression": "loc+locQ+locC+gaze+visual+facial+armL+armR+legL+legR+ataxia+sensory+language+dysarthria+extinction", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "total", "min": 0, "max": 0, "label": "0 — no stroke symptoms", "severity": "info" },
+    { "forKey": "total", "min": 1, "max": 4, "label": "1-4 — minor stroke", "severity": "low" },
+    { "forKey": "total", "min": 5, "max": 15, "label": "5-15 — moderate stroke", "severity": "moderate" },
+    { "forKey": "total", "min": 16, "max": 20, "label": "16-20 — moderate-to-severe stroke", "severity": "high" },
+    { "forKey": "total", "min": 21, "max": 42, "label": "21-42 — severe stroke", "severity": "critical" }
+  ],
+  "buildNote": "Severity cut-points vary by source (build spec notes an alternate <5 / 5-14 / 15-24 scheme). One stratification is used here; cite it in the UI. All 15 items must be entered for the total to display."
+}

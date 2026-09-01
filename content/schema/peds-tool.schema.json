@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kairos.app/schema/peds-tool.schema.json",
+  "title": "Kairos peds module tool",
+  "description": "Pediatric-specific tool. Often composes other modules rather than duplicating their numbers.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/recordMeta" },
+    { "$ref": "common.schema.json#/$defs/tieredReviewRequired" }
+  ],
+  "unevaluatedProperties": false,
+  "required": ["kind", "purpose"],
+  "properties": {
+    "id": true, "section": true, "category": true, "title": true, "aliases": true, "tags": true, "keywords": true,
+    "contentType": { "const": "peds-tool" },
+    "content_version": true, "last_reviewed": true, "next_review_due": true,
+    "review_tier": true, "sources": true, "changelog": true, "flags": true, "route": true,
+
+    "kind": { "type": "string", "enum": ["decision-tree", "calculator", "dosing", "reference"] },
+    "purpose": { "type": "string", "minLength": 10 },
+    "ageRange": { "type": "string" },
+    "sourceOfTruth": {
+      "type": "array",
+      "description": "IDs of the Calculators / Drug & Dosing modules this tool defers to for actual numbers.",
+      "items": { "$ref": "common.schema.json#/$defs/id" }
+    },
+    "embeddedCalculator": { "$ref": "calculator.schema.json" },
+    "body": { "type": "array", "items": { "type": "object" } },
+    "buildNote": { "type": "string" }
+  }
+}

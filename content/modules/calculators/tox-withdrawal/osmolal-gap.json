@@ -1,0 +1,33 @@
+{
+  "id": "osmolal-gap",
+  "section": "Calculators",
+  "category": "Toxicology / Withdrawal",
+  "title": "Osmolal Gap",
+  "aliases": ["osmolar gap", "toxic alcohol screen"],
+  "tags": ["toxic alcohol", "methanol", "ethylene glycol", "poisoning", "ED", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "review_tier": "stable",
+  "sources": ["Standard toxicology; Krasowski MD et al. BMC Clin Pathol 2012"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry. Stable formula." }],
+  "engine": "formula",
+  "settings": ["ED", "ICU"],
+  "purpose": "Flags a toxic-alcohol ingestion (methanol, ethylene glycol) before confirmatory levels result.",
+  "inputs": [
+    { "key": "measuredOsm", "label": "Measured serum osmolality", "type": "number", "unit": "mOsm/kg", "min": 250, "max": 400 },
+    { "key": "na", "label": "Sodium", "type": "number", "unit": "mmol/L", "min": 100, "max": 180 },
+    { "key": "glucose", "label": "Glucose", "type": "number", "unit": "mg/dL", "min": 20, "max": 1500 },
+    { "key": "bun", "label": "BUN", "type": "number", "unit": "mg/dL", "min": 2, "max": 200 },
+    { "key": "ethanol", "label": "Ethanol level (0 if none)", "type": "number", "unit": "mg/dL", "min": 0, "max": 600 }
+  ],
+  "formulas": [
+    { "key": "calcOsm", "label": "Calculated osmolality", "expression": "2 * na + (glucose / 18) + (bun / 2.8) + (ethanol / 3.7)", "unit": "mOsm/kg", "precision": 0 },
+    { "key": "gap", "label": "Osmolal gap", "expression": "measuredOsm - (2 * na + (glucose / 18) + (bun / 2.8) + (ethanol / 3.7))", "unit": "mOsm/kg", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "gap", "min": -100, "max": 10, "label": "≤ 10 — normal; does not exclude toxic alcohol, especially late after ingestion", "severity": "info" },
+    { "forKey": "gap", "min": 11, "max": 1000, "label": "> 10 — elevated; consider methanol / ethylene glycol / isopropanol, and other causes (DKA, lactic acidosis, renal failure, mannitol)", "severity": "high" }
+  ],
+  "notes": "A normal gap does not rule out toxic alcohol once the parent alcohol has been metabolised to its acid — pair with the anion gap and clinical timeline. Some references use 1.86 × Na and a −9 constant; the simpler 2 × Na form is used here."
+}

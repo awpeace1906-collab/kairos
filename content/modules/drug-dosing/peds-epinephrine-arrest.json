@@ -1,0 +1,51 @@
+{
+  "id": "peds-epinephrine-arrest",
+  "section": "Drug & Dosing Cards",
+  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "title": "Epinephrine — Pediatric Cardiac Arrest",
+  "aliases": ["epi", "adrenaline", "peds code dose"],
+  "contentType": "drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["AHA 2025 PALS algorithm"],
+  "changelog": [
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry aligned with Drug_Dosing_Peds_Weight_Based_Spec.md as the single source of truth." }
+  ],
+  "purpose": "IV/IO epinephrine dosing for pediatric cardiac arrest. Dose is computed live from the exact weight; the color zone supplies equipment sizes only, never this number.",
+  "population": "peds",
+  "weightBasis": "actual",
+  "doses": [
+    {
+      "indication": "Pulseless arrest (asystole / PEA / VF / pVT after shocks)",
+      "route": "IV / IO",
+      "rule": {
+        "perKg": 0.01,
+        "unit": "mg",
+        "maxDose": 1,
+        "maxDoseUnit": "mg",
+        "concentration": "0.1 mg/mL (1:10,000)",
+        "mlPerUnit": 10,
+        "repeat": "Every 3-5 minutes during arrest"
+      },
+      "notes": "0.01 mg/kg = 0.1 mL/kg of 0.1 mg/mL. Single-dose cap 1 mg."
+    },
+    {
+      "indication": "Endotracheal (only if no IV/IO access)",
+      "route": "ETT",
+      "rule": {
+        "perKg": 0.1,
+        "unit": "mg",
+        "maxDose": 2.5,
+        "maxDoseUnit": "mg",
+        "concentration": "1 mg/mL (1:1,000)",
+        "mlPerUnit": 1,
+        "repeat": "Every 3-5 minutes; establish IV/IO access as priority"
+      },
+      "notes": "ETT dose is 10× the IV/IO dose. Follow with 5 mL flush and 5 assisted breaths."
+    }
+  ],
+  "contraindications": [],
+  "buildNote": "Worked example of the dual-mode rule: the engine renders zone/equipment from weight-zones.json but every mg and mL here is computed from the entered weight. Cross-check against First 5 Minutes and PedsGuide before finalizing the full dataset (Tier 4)."
+}

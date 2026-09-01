@@ -1,0 +1,49 @@
+{
+  "tiers": [
+    {
+      "tier": 1,
+      "label": "Accuracy-critical (patient-safety relevant)",
+      "cadenceDays": 90,
+      "tripwire": true,
+      "examples": [
+        "Drug doses and reversal agents",
+        "Diagnostic thresholds",
+        "Guideline-dependent algorithms (ACLS/PALS, peds resus dosing, STEMI criteria)"
+      ]
+    },
+    {
+      "tier": 2,
+      "label": "Licensing / IP sensitive",
+      "cadenceDays": 180,
+      "tripwire": false,
+      "examples": [
+        "Nerve block / POCUS content (original text/diagrams only)",
+        "ECG library (original annotated tracings)",
+        "AHA algorithm cards (built from public-domain science, not AHA diagrams)"
+      ]
+    },
+    {
+      "tier": 3,
+      "label": "Sourcing / content-freshness dependent",
+      "cadenceDays": 90,
+      "tripwire": true,
+      "examples": [
+        "Empiric antibiotic guide (needs local antibiogram)",
+        "Vaccine schedule",
+        "Landmark trials library"
+      ]
+    },
+    {
+      "tier": "stable",
+      "label": "Stable reference — no scheduled review",
+      "cadenceDays": null,
+      "tripwire": false,
+      "examples": [
+        "Validated calculator formulas (anion gap, Cockcroft-Gault)",
+        "Unit conversions",
+        "ETT sizing formula",
+        "Anatomy"
+      ]
+    }
+  ]
+}

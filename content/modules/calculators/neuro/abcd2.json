@@ -1,0 +1,39 @@
+{
+  "id": "abcd2",
+  "section": "Calculators",
+  "category": "Neuro / Stroke / Head Injury",
+  "title": "ABCD² Score for TIA",
+  "aliases": ["ABCD2", "TIA stroke risk"],
+  "tags": ["TIA", "transient ischemic attack", "stroke risk", "ED"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Johnston SC et al. Lancet 2007"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Short-term stroke risk after TIA — admit vs. rapid outpatient workup.",
+  "items": [
+    { "key": "age", "label": "Age ≥ 60", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "bp", "label": "BP ≥ 140/90 at first assessment", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "clinical", "label": "Clinical features", "options": [
+      { "label": "Other symptoms", "points": 0 },
+      { "label": "Speech disturbance without weakness", "points": 1 },
+      { "label": "Unilateral weakness", "points": 2 }
+    ] },
+    { "key": "duration", "label": "Symptom duration", "options": [
+      { "label": "< 10 min", "points": 0 },
+      { "label": "10-59 min", "points": 1 },
+      { "label": "≥ 60 min", "points": 2 }
+    ] },
+    { "key": "diabetes", "label": "Diabetes", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 3, "label": "Low risk", "risk": "2-day stroke risk ~1%", "severity": "low" },
+    { "min": 4, "max": 5, "label": "Moderate risk", "risk": "~4%", "severity": "moderate" },
+    { "min": 6, "max": 7, "label": "High risk", "risk": "~8%", "disposition": "Admission / expedited workup and imaging", "severity": "high" }
+  ],
+  "notes": "Many stroke services now admit or urgently work up all TIAs regardless of ABCD² — use per local pathway."
+}

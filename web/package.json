@@ -1,0 +1,13 @@
+{
+  "name": "kairos-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Kairos PWA shell — offline-capable, reads the shared content/ JSON.",
+  "scripts": {
+    "sync": "node ../tools/build.mjs && node ../tools/sync-content.mjs",
+    "predev": "npm run sync",
+    "dev": "node server.mjs",
+    "start": "node server.mjs"
+  }
+}

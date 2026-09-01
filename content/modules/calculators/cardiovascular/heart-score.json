@@ -1,0 +1,76 @@
+{
+  "id": "heart-score",
+  "section": "Calculators",
+  "category": "Cardiovascular / Chest Pain / Arrhythmia",
+  "title": "HEART Score for Major Cardiac Events",
+  "aliases": ["HEART", "HEART pathway", "MACE risk"],
+  "tags": ["chest pain", "ACS", "risk stratification", "ED", "troponin", "admit or discharge"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": [
+    "Six AJ et al. Neth Heart J 2008 (original derivation)",
+    "Mahler SA et al. Circ Cardiovasc Qual Outcomes 2015 (HEART Pathway RCT)"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry transcribed from Calculator_Logic_Build_Spec.md" }
+  ],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Risk-stratifies undifferentiated chest pain for 6-week major adverse cardiac events (MACE); drives admit vs. discharge.",
+  "items": [
+    {
+      "key": "history",
+      "label": "History",
+      "options": [
+        { "label": "Slightly suspicious", "points": 0 },
+        { "label": "Moderately suspicious", "points": 1 },
+        { "label": "Highly suspicious", "points": 2 }
+      ]
+    },
+    {
+      "key": "ecg",
+      "label": "ECG",
+      "options": [
+        { "label": "Normal", "points": 0 },
+        { "label": "Nonspecific repolarization change", "points": 1 },
+        { "label": "Significant ST deviation", "points": 2 }
+      ]
+    },
+    {
+      "key": "age",
+      "label": "Age",
+      "options": [
+        { "label": "< 45", "points": 0 },
+        { "label": "45-64", "points": 1 },
+        { "label": "≥ 65", "points": 2 }
+      ]
+    },
+    {
+      "key": "riskFactors",
+      "label": "Risk factors (HTN, hyperlipidemia, DM, obesity, smoking, family hx, atherosclerotic disease)",
+      "options": [
+        { "label": "No known risk factors", "points": 0 },
+        { "label": "1-2 risk factors", "points": 1 },
+        { "label": "≥ 3 risk factors, or known atherosclerotic disease", "points": 2 }
+      ]
+    },
+    {
+      "key": "troponin",
+      "label": "Initial troponin",
+      "options": [
+        { "label": "≤ normal limit", "points": 0 },
+        { "label": "1-3× normal limit", "points": 1 },
+        { "label": "> 3× normal limit", "points": 2 }
+      ]
+    }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 3, "label": "Low risk", "risk": "~1-2% 6-week MACE", "disposition": "Consider discharge with outpatient follow-up", "severity": "low" },
+    { "min": 4, "max": 6, "label": "Moderate risk", "risk": "~12-17% 6-week MACE", "disposition": "Observation / serial troponin / further testing", "severity": "moderate" },
+    { "min": 7, "max": 10, "label": "High risk", "risk": "~50-65% 6-week MACE", "disposition": "Early invasive management", "severity": "high" }
+  ],
+  "buildNote": "Standard, stable score. Second-source check against MDCalc before go-live per Calculator_Logic_Build_Spec.md."
+}

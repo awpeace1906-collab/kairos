@@ -1,0 +1,34 @@
+{
+  "id": "anion-gap",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "Anion Gap",
+  "aliases": ["AG", "serum anion gap", "delta gap"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "review_tier": "stable",
+  "sources": ["Standard clinical chemistry; Emmett M, Narins RG. Medicine (Baltimore) 1977"],
+  "changelog": [
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry. Stable formula — no scheduled review." }
+  ],
+  "engine": "formula",
+  "settings": ["ED", "ICU"],
+  "purpose": "First step in any metabolic acidosis workup. Albumin-correct when albumin is low.",
+  "inputs": [
+    { "key": "na", "label": "Sodium", "type": "number", "unit": "mmol/L", "min": 100, "max": 180 },
+    { "key": "cl", "label": "Chloride", "type": "number", "unit": "mmol/L", "min": 60, "max": 140 },
+    { "key": "hco3", "label": "Bicarbonate", "type": "number", "unit": "mmol/L", "min": 2, "max": 50 },
+    { "key": "albumin", "label": "Albumin (optional, for correction)", "type": "number", "unit": "g/dL", "min": 0, "max": 6 }
+  ],
+  "formulas": [
+    { "key": "ag", "label": "Anion gap", "expression": "na - (cl + hco3)", "unit": "mmol/L", "precision": 0 },
+    { "key": "agCorrected", "label": "Albumin-corrected anion gap", "expression": "(na - (cl + hco3)) + 2.5 * (4 - albumin)", "unit": "mmol/L", "precision": 1 }
+  ],
+  "interpretation": [
+    { "forKey": "ag", "min": -20, "max": 11, "label": "Normal anion gap (≈ 6-11 mmol/L, K+ not included)", "severity": "info" },
+    { "forKey": "ag", "min": 12, "max": 200, "label": "High anion gap metabolic acidosis — pursue GOLD-MARK / MUDPILES differential", "severity": "moderate" }
+  ],
+  "notes": "Reference range assumes K+ is not included in the calculation. Correction adds ~2.5 mmol/L per 1 g/dL the albumin is below 4.",
+  "buildNote": "Stable math — review_tier 'stable', so the staleness tripwire ignores it. Leave albumin blank to suppress the corrected result in the UI."
+}

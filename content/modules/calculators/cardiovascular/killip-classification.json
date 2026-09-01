@@ -1,0 +1,28 @@
+{
+  "id": "killip-classification",
+  "section": "Calculators",
+  "category": "Cardiovascular / Chest Pain / Arrhythmia",
+  "title": "Killip Classification",
+  "aliases": ["Killip", "Killip class"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Killip T, Kimball JT. Am J Cardiol 1967"],
+  "changelog": [
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry transcribed from Calculator_Logic_Build_Spec.md" }
+  ],
+  "engine": "classification",
+  "settings": ["ED", "ICU"],
+  "purpose": "Quick bedside heart-failure severity / mortality estimate in acute MI. Also an input to GRACE.",
+  "tiers": [
+    { "label": "Class I", "description": "No clinical signs of heart failure", "mortality": "Lowest" },
+    { "label": "Class II", "description": "Rales / crackles, S3 gallop, or elevated JVP", "mortality": "Intermediate" },
+    { "label": "Class III", "description": "Frank acute pulmonary edema", "mortality": "High" },
+    { "label": "Class IV", "description": "Cardiogenic shock", "mortality": "Highest" }
+  ],
+  "interpretation": [
+    { "label": "Mortality rises monotonically by class", "detail": "Use as a triage and prognosis anchor; feeds the GRACE model.", "severity": "info" }
+  ]
+}

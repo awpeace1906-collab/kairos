@@ -1,0 +1,34 @@
+{
+  "id": "cha2ds2-vasc",
+  "section": "Calculators",
+  "category": "Cardiovascular / Chest Pain / Arrhythmia",
+  "title": "CHA₂DS₂-VASc Score",
+  "aliases": ["CHADSVASC", "AF stroke risk", "atrial fibrillation anticoagulation"],
+  "tags": ["atrial fibrillation", "stroke risk", "anticoagulation", "ED"],
+  "keywords": ["chads vasc", "chadsvasc"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Lip GYH et al. Chest 2010", "ESC 2020 AF guidelines"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Stroke risk in non-valvular atrial fibrillation; drives the anticoagulation decision at the bedside.",
+  "items": [
+    { "key": "chf", "label": "Congestive heart failure / LV dysfunction", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "htn", "label": "Hypertension", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "age", "label": "Age", "options": [{ "label": "< 65", "points": 0 }, { "label": "65-74", "points": 1 }, { "label": "≥ 75", "points": 2 }] },
+    { "key": "dm", "label": "Diabetes mellitus", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "stroke", "label": "Prior stroke / TIA / thromboembolism", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "vascular", "label": "Vascular disease (prior MI, PAD, aortic plaque)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "sex", "label": "Sex category female", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "Men score 0 — low risk", "risk": "~0.2%/yr", "disposition": "No antithrombotic therapy", "severity": "low" },
+    { "min": 1, "max": 1, "label": "Score 1", "risk": "~0.6%/yr", "disposition": "Men: consider anticoagulation. Women (sex-only point): no therapy.", "severity": "moderate" },
+    { "min": 2, "max": 9, "label": "Score ≥ 2", "risk": "≥ 2.2%/yr, rising with score", "disposition": "Oral anticoagulation recommended (weigh against HAS-BLED)", "severity": "high" }
+  ],
+  "buildNote": "Cross-link to has-bled. Women with a score of 1 from the sex point alone are treated as low risk — reflect that in the UI copy."
+}

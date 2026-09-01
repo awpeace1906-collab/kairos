@@ -1,0 +1,42 @@
+{
+  "id": "grace-acs",
+  "section": "Calculators",
+  "category": "Cardiovascular / Chest Pain / Arrhythmia",
+  "title": "GRACE ACS Risk / Mortality Calculator",
+  "aliases": ["GRACE", "GRACE 2.0", "ACS mortality"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": [
+    "Fox KAA et al. BMJ 2006 (GRACE)",
+    "ESC 2023 NSTE-ACS guidelines",
+    "ACC/AHA 2025 ACS guideline"
+  ],
+  "flags": ["verify-coefficients", "needs-primary-source"],
+  "changelog": [
+    { "version": 1, "date": "2026-08-31", "change": "Structure + cutoff only; math is proprietary. Per Calculator_Logic_Build_Spec.md." }
+  ],
+  "engine": "external",
+  "settings": ["ED", "ICU"],
+  "purpose": "In-hospital and 1-3 year mortality in ACS; risk-adjusts disposition and timing to catheterization.",
+  "inputs": [
+    { "key": "age", "label": "Age", "type": "integer", "unit": "years" },
+    { "key": "hr", "label": "Heart rate", "type": "integer", "unit": "bpm" },
+    { "key": "sbp", "label": "Systolic BP", "type": "integer", "unit": "mmHg" },
+    { "key": "creatinine", "label": "Creatinine", "type": "number", "unit": "mg/dL" },
+    { "key": "killip", "label": "Killip class", "type": "select", "options": [
+      { "label": "I", "value": 1 }, { "label": "II", "value": 2 }, { "label": "III", "value": 3 }, { "label": "IV", "value": 4 }
+    ] },
+    { "key": "arrest", "label": "Cardiac arrest at admission", "type": "boolean" },
+    { "key": "stDeviation", "label": "ST-segment deviation", "type": "boolean" },
+    { "key": "elevatedMarkers", "label": "Elevated cardiac markers", "type": "boolean" }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 108, "label": "Low risk", "risk": "In-hospital mortality < 1%", "severity": "low" },
+    { "min": 109, "max": 140, "label": "Intermediate risk", "risk": "In-hospital mortality 1-3%", "severity": "moderate" },
+    { "min": 141, "max": 372, "label": "High risk", "risk": "In-hospital mortality > 3%; ESC 2023 / ACC-AHA 2025 support an early invasive strategy at score > 140", "severity": "high" }
+  ],
+  "buildNote": "GRACE 2.0 is a proprietary non-linear model with no published closed-form equation. Do NOT hand-derive coefficients. Options: (1) license the official calculator logic from gracescore.org, or (2) approximate from published nomogram risk bands and label the result as an approximation in the UI. Confirmed cutoff: score > 140 = high risk. engine='external' renders the input structure and cutoff only until one of those paths is chosen."
+}
