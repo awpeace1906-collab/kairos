@@ -1,7 +1,14 @@
 <svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kairos">
-  <rect width="512" height="512" rx="112" fill="#0f1720"/>
-  <!-- converging caret: two strokes meeting at a decisive point -->
-  <path d="M150 132 L150 190 L246 256 L150 322 L150 380 L338 256 Z" fill="#4bb3a7"/>
-  <!-- the critical point -->
-  <circle cx="372" cy="256" r="26" fill="#e8eef4"/>
+  <defs>
+    <linearGradient id="k" x1="256" y1="78" x2="256" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F4AD53"/>
+      <stop offset=".42" stop-color="#EB8A38"/>
+      <stop offset=".72" stop-color="#C6521C"/>
+      <stop offset="1" stop-color="#8E2810"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#0F0B16"/>
+  <path d="M261 394 A152 152 0 1 1 379 331 L342 442 L314 362" fill="none" stroke="url(#k)" stroke-width="26" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="314" cy="362" r="30" fill="#F0913C" opacity=".16"/>
+  <circle cx="314" cy="362" r="13" fill="#FFD3A6"/>
 </svg>

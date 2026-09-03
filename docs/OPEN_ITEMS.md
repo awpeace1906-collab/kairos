@@ -335,6 +335,18 @@ Last updated: 2026-09-01
     nodes before region selection.
   - Nerve-block and POCUS guides stay `reference`-style block menus (they're
     catalogues, not decisions) — a lower-value conversion if ever wanted.
+- 2026-09-03 — **App icon LOCKED.** The "broken ring" mark: an open ring reading
+  clockwise (6→9→12→3), broken at the lower right, a decisive strike driving a
+  bright struck point into the mouth of the gap; one continuous top-to-strike
+  gradient (warm amber → deep oxblood); ground `#0F0B16`. Masters on the Desktop
+  working folder (`kairos-ring-refined.svg` + `-mono.svg`). Wired in:
+  `web/public/icons/icon.svg` (replaced the teal placeholder) + `icon-mono.svg`
+  + PNGs (1024 / 512 / 192 / apple-touch 180) generated via a browser-canvas
+  render; `web/manifest.webmanifest` + `web/index.html` updated (theme-color
+  `#0F0B16`). iOS: `ios/Sources/Assets.xcassets/AppIcon.appiconset/` (single
+  1024 PNG, modern Xcode auto-scales) + `ASSETCATALOG_COMPILER_APPICON_NAME` in
+  `project.yml`. The full rationale + size ladders are in the "Kairos Icon Study"
+  artifact.
 
 ---
 
