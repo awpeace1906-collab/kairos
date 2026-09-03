@@ -3995,14 +3995,19 @@
         "fracture",
         "splint",
         "immobilization",
+        "reduction",
         "neurovascular check",
         "compartment syndrome",
+        "Salter-Harris",
         "ED"
       ],
       "keywords": [
         "splint selection",
         "splinting",
-        "fracture immobilization"
+        "fracture immobilization",
+        "fracture reduction",
+        "Salter-Harris",
+        "buckle fracture"
       ],
       "contentType": "procedure",
       "route": "/procedures/wound-fracture-care/fracture-splinting-guide"

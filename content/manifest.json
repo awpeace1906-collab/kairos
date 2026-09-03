@@ -1598,17 +1598,17 @@
       "next_review_due": "2026-12-02"
     },
     "procedures/fracture-splinting-guide": {
-      "content_version": 1,
-      "hash": "0c52c3e27aaf1ea8",
+      "content_version": 2,
+      "hash": "31d7b13b16b1b2a5",
       "path": "modules/procedures/fracture-splinting-guide.json",
       "contentType": "procedure",
       "section": "Procedures",
       "review_tier": 1,
-      "next_review_due": "2026-12-01"
+      "next_review_due": "2026-12-03"
     },
     "procedures/laceration-repair": {
-      "content_version": 2,
-      "hash": "72e4b6ae036f3112",
+      "content_version": 3,
+      "hash": "198549f1798eefb6",
       "path": "modules/procedures/laceration-repair.json",
       "contentType": "procedure",
       "section": "Procedures",

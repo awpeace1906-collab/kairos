@@ -316,10 +316,25 @@ Last updated: 2026-09-01
   by scenario, weight-based dose ranges), `peds-drip-concentrations` (standard
   concentration vs rule-of-6, common-infusion table, rate conversion — companion
   to the `peds-drip-rate` calculator). +4 modules.
-  **Still open (task 3): Procedures decision-tree branch logic** — suture
-  technique nodes, fracture-pattern branches, nerve-block and POCUS trees. This
-  needs a storyboarding pass (each tree's actual branches) and possibly a new
-  content shape; deferred rather than rushed.
+- 2026-09-03 — **Procedures decision-trees deepened.** Turned out the infra
+  already existed end-to-end: `procedure.schema.json` has the `nodes` graph
+  (`question`/`step`/`recommendation`/`warning` + `choices[].next`), and both
+  `web/src/views/content.js` (`treeWalker`) and `ios/.../ContentDetailView.swift`
+  (`ProcedureWalker`) render it interactively (breadcrumbs, jump-back, Start-over).
+  `laceration-repair` and `fracture-splinting-guide` were already trees, one level
+  deep. No schema/renderer change — just authored depth:
+  - **`fracture-splinting-guide` v2** — 11 flat nodes → 60. Per region a
+    displacement/pattern triage (splint as-is / reduce / emergent ortho), named
+    fractures (scaphoid, boxer's, Jones, Lisfranc, Monteggia/Galeazzi,
+    supracondylar, knee dislocation), a paediatric branch (buckle / greenstick /
+    plastic / Salter-Harris / toddler's / NAT), and shared `gate-emergent` /
+    `compartment` / `emergent` / `reduce-generic` nodes.
+  - **`laceration-repair` v3** — added an upstream triage layer: a special-features
+    gate (bite / gross contamination / delayed presentation / crush) and a
+    deep-structures gate (tendon / nerve / joint / arterial) routing to their own
+    nodes before region selection.
+  - Nerve-block and POCUS guides stay `reference`-style block menus (they're
+    catalogues, not decisions) — a lower-value conversion if ever wanted.
 
 ---
 

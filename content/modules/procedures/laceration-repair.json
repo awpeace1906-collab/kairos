@@ -3,43 +3,256 @@
   "section": "Procedures",
   "category": "Wound & Fracture Care",
   "title": "Laceration Repair Guide",
-  "aliases": ["suture", "wound closure", "laceration", "suture size selection"],
-  "tags": ["laceration", "suture", "wound closure", "primary closure", "suture removal", "ED"],
+  "aliases": [
+    "suture",
+    "wound closure",
+    "laceration",
+    "suture size selection"
+  ],
+  "tags": [
+    "laceration",
+    "suture",
+    "wound closure",
+    "primary closure",
+    "suture removal",
+    "ED"
+  ],
   "contentType": "procedure",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-01",
   "next_review_due": "2026-12-01",
   "review_tier": 1,
-  "sources": ["AAFP — Essentials of Skin Laceration Repair", "Merck Manual Professional Edition", "StatPearls"],
-  "changelog": [
-    { "version": 2, "date": "2026-09-01", "change": "Expanded to a full region decision tree with material/technique/removal recommendations and a pediatric branch; added irrigation and wound-age reference." },
-    { "version": 1, "date": "2026-08-31", "change": "Skeleton only." }
+  "sources": [
+    "AAFP — Essentials of Skin Laceration Repair",
+    "Merck Manual Professional Edition",
+    "StatPearls"
   ],
-  "purpose": "Body-region wound assessment → suture material/size and technique selection → aftercare + a generated procedure note.",
+  "changelog": [
+    {
+      "version": 3,
+      "date": "2026-09-03",
+      "change": "Added an upstream triage layer — a special-features gate (bite / gross contamination / delayed presentation / crush) and a structures gate (tendon / nerve / joint / arterial bleeding) that route to their own nodes before region selection."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-01",
+      "change": "Expanded to a full region decision tree with material/technique/removal recommendations and a pediatric branch; added irrigation and wound-age reference."
+    },
+    {
+      "version": 1,
+      "date": "2026-08-31",
+      "change": "Skeleton only."
+    }
+  ],
+  "purpose": "Special-features + deep-structures triage → body-region wound assessment → suture material/size and technique selection → aftercare + a generated procedure note.",
   "outputType": "decision-tree",
-  "crossLinks": ["la-max-dosing", "last-lipid-rescue"],
-  "entryPrompt": "Where is the wound?",
+  "crossLinks": [
+    "la-max-dosing",
+    "last-lipid-rescue"
+  ],
+  "entryPrompt": "Any bite, gross contamination, delayed presentation, or deep-structure involvement — or straight to the region?",
   "nodes": [
-    { "id": "start", "type": "question", "prompt": "Select body region", "choices": [
-      { "label": "Scalp", "next": "scalp" },
-      { "label": "Face (general)", "next": "face" },
-      { "label": "Lip / intraoral", "next": "lip" },
-      { "label": "Ear", "next": "ear" },
-      { "label": "Trunk", "next": "trunk" },
-      { "label": "Extremity (non-joint)", "next": "extremity" },
-      { "label": "Over a joint / high-tension", "next": "joint" },
-      { "label": "Hand", "next": "hand" },
-      { "label": "Eyelid / lid margin", "next": "eyelid" }
-    ] },
-    { "id": "scalp", "type": "recommendation", "body": "3-0 / 4-0 non-absorbable (or staples; 3-0/4-0 absorbable for galea). Simple interrupted, staples, or hair-apposition. Blue-coloured suture recommended for visibility against hair. Removal 7-10 days. Primary-closure window < 12-24 h (well-vascularised)." },
-    { "id": "face", "type": "recommendation", "body": "5-0 / 6-0 fine non-absorbable; tissue adhesive if < 2 cm, low-tension, dry edges. Simple interrupted. Removal 3-5 days (consider alternate sutures at day 3, rest at day 5 to reduce cross-hatching). Low threshold for plastics referral. Primary-closure window < 12-24 h." },
-    { "id": "lip", "type": "recommendation", "body": "Align the vermillion border FIRST, before any other suture — malalignment is the most common cosmetic failure. 4-0 / 5-0 absorbable (chromic / vicryl) for mucosa; 6-0 non-absorbable for skin. Absorbable mucosal sutures need no removal." },
-    { "id": "ear", "type": "recommendation", "body": "5-0 / 6-0 non-absorbable. Avoid cartilage-piercing sutures where possible; pressure dressing afterwards. Removal 5-7 days. Drain any auricular hematoma to prevent cauliflower ear." },
-    { "id": "trunk", "type": "recommendation", "body": "3-0 / 4-0 non-absorbable. Simple interrupted, or running for long low-tension wounds. Consider a deep dermal absorbable layer under tension. Staples are a good option here (not on face/neck/hands/feet). Removal 6-10 days. Primary-closure window < 6-8 h." },
-    { "id": "extremity", "type": "recommendation", "body": "4-0 / 5-0 non-absorbable. Simple interrupted, or vertical mattress if eversion is needed. Removal 10-14 days. Primary-closure window < 6-8 h." },
-    { "id": "joint", "type": "recommendation", "body": "3-0 / 4-0 plus a deep dermal absorbable layer. Vertical or horizontal mattress. Removal 14 days. Splint in the position of function if the wound crosses a joint." },
-    { "id": "hand", "type": "recommendation", "body": "5-0 non-absorbable, simple interrupted. Removal 10-14 days. Examine and DOCUMENT tendon and digital-nerve function before AND after repair. Staples not recommended." },
-    { "id": "eyelid", "type": "warning", "body": "Do NOT repair lid-margin or lacrimal-system lacerations in the ED — consult ophthalmology." }
+    {
+      "id": "start",
+      "type": "question",
+      "prompt": "Start here",
+      "choices": [
+        {
+          "label": "First — bite / gross contamination / delayed presentation / crush",
+          "next": "q-features"
+        },
+        {
+          "label": "First — check for tendon / nerve / joint / arterial involvement",
+          "next": "q-structures"
+        },
+        {
+          "label": "Neither — select body region",
+          "next": "region"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "type": "question",
+      "prompt": "Select body region",
+      "choices": [
+        {
+          "label": "Scalp",
+          "next": "scalp"
+        },
+        {
+          "label": "Face (general)",
+          "next": "face"
+        },
+        {
+          "label": "Lip / intraoral",
+          "next": "lip"
+        },
+        {
+          "label": "Ear",
+          "next": "ear"
+        },
+        {
+          "label": "Trunk",
+          "next": "trunk"
+        },
+        {
+          "label": "Extremity (non-joint)",
+          "next": "extremity"
+        },
+        {
+          "label": "Over a joint / high-tension",
+          "next": "joint"
+        },
+        {
+          "label": "Hand",
+          "next": "hand"
+        },
+        {
+          "label": "Eyelid / lid margin",
+          "next": "eyelid"
+        }
+      ]
+    },
+    {
+      "id": "scalp",
+      "type": "recommendation",
+      "body": "3-0 / 4-0 non-absorbable (or staples; 3-0/4-0 absorbable for galea). Simple interrupted, staples, or hair-apposition. Blue-coloured suture recommended for visibility against hair. Removal 7-10 days. Primary-closure window < 12-24 h (well-vascularised)."
+    },
+    {
+      "id": "face",
+      "type": "recommendation",
+      "body": "5-0 / 6-0 fine non-absorbable; tissue adhesive if < 2 cm, low-tension, dry edges. Simple interrupted. Removal 3-5 days (consider alternate sutures at day 3, rest at day 5 to reduce cross-hatching). Low threshold for plastics referral. Primary-closure window < 12-24 h."
+    },
+    {
+      "id": "lip",
+      "type": "recommendation",
+      "body": "Align the vermillion border FIRST, before any other suture — malalignment is the most common cosmetic failure. 4-0 / 5-0 absorbable (chromic / vicryl) for mucosa; 6-0 non-absorbable for skin. Absorbable mucosal sutures need no removal."
+    },
+    {
+      "id": "ear",
+      "type": "recommendation",
+      "body": "5-0 / 6-0 non-absorbable. Avoid cartilage-piercing sutures where possible; pressure dressing afterwards. Removal 5-7 days. Drain any auricular hematoma to prevent cauliflower ear."
+    },
+    {
+      "id": "trunk",
+      "type": "recommendation",
+      "body": "3-0 / 4-0 non-absorbable. Simple interrupted, or running for long low-tension wounds. Consider a deep dermal absorbable layer under tension. Staples are a good option here (not on face/neck/hands/feet). Removal 6-10 days. Primary-closure window < 6-8 h."
+    },
+    {
+      "id": "extremity",
+      "type": "recommendation",
+      "body": "4-0 / 5-0 non-absorbable. Simple interrupted, or vertical mattress if eversion is needed. Removal 10-14 days. Primary-closure window < 6-8 h."
+    },
+    {
+      "id": "joint",
+      "type": "recommendation",
+      "body": "3-0 / 4-0 plus a deep dermal absorbable layer. Vertical or horizontal mattress. Removal 14 days. Splint in the position of function if the wound crosses a joint."
+    },
+    {
+      "id": "hand",
+      "type": "recommendation",
+      "body": "5-0 non-absorbable, simple interrupted. Removal 10-14 days. Examine and DOCUMENT tendon and digital-nerve function before AND after repair. Staples not recommended."
+    },
+    {
+      "id": "eyelid",
+      "type": "warning",
+      "body": "Do NOT repair lid-margin or lacrimal-system lacerations in the ED — consult ophthalmology."
+    },
+    {
+      "id": "q-features",
+      "type": "question",
+      "prompt": "Which feature?",
+      "choices": [
+        {
+          "label": "Mammalian bite",
+          "next": "f-bite"
+        },
+        {
+          "label": "Gross contamination / retained debris / soil or farm injury",
+          "next": "f-contam"
+        },
+        {
+          "label": "Delayed presentation (beyond the primary-closure window)",
+          "next": "f-delayed"
+        },
+        {
+          "label": "Crush / stellate / devitalised edges",
+          "next": "f-crush"
+        },
+        {
+          "label": "None of these — continue to region",
+          "next": "region"
+        }
+      ]
+    },
+    {
+      "id": "f-bite",
+      "type": "recommendation",
+      "body": "Copious irrigation. Do NOT primarily close a bite on the hand, foot, or a puncture, or one presenting > 12–24 h old, or a cat bite (deep puncture, high infection rate) — leave open or delayed primary closure. A low-tension facial dog bite < 12 h may be closed after thorough irrigation for cosmesis. Antibiotic prophylaxis: amoxicillin-clavulanate 5–7 days (covers Pasteurella and anaerobes) for hand/foot/face bites, deep punctures, cat/human bites, immunocompromise, or asplenia. Tetanus. Rabies risk assessment for wild/unprovoked bites. Human 'fight bite' over the MCP → hand surgery, do not close."
+    },
+    {
+      "id": "f-contam",
+      "type": "step",
+      "body": "Irrigate with 50–100 mL of normal saline (or potable tap water) per cm of wound under pressure until visibly clean; explore for and remove foreign material (imaging — plain film or US — for glass, metal, gravel). Debride devitalised tissue. If it cannot be adequately cleaned, delay closure (pack, review at 72–96 h for delayed primary closure). Consider prophylactic antibiotics for a heavily contaminated wound. Tetanus per status; for a tetanus-prone wound in an under-immunised patient, add tetanus immunoglobulin."
+    },
+    {
+      "id": "f-delayed",
+      "type": "recommendation",
+      "body": "Primary-closure windows: ~6–8 h for trunk/extremity, up to ~12–24 h for the well-vascularised face and scalp; a clean wound in a healthy patient can sometimes be closed a little later with informed consent. Beyond the window: cleanse, debride, and either leave to heal by secondary intention (small wounds) or pack and arrange DELAYED PRIMARY CLOSURE at 72–96 h. Do not primarily close an old, contaminated, or bite wound to 'tidy it up'."
+    },
+    {
+      "id": "f-crush",
+      "type": "step",
+      "body": "Crush and stellate wounds have devitalised, poorly perfused edges — conservative sharp debridement back to bleeding tissue before closure, minimal tension, and consider a deep dermal layer to offload the skin. Higher infection and dehiscence risk — warn the patient, closer follow-up, lower threshold for antibiotics. Rule out an underlying fracture or compartment injury with the mechanism."
+    },
+    {
+      "id": "q-structures",
+      "type": "question",
+      "prompt": "What is involved? (examine and DOCUMENT before anaesthesia)",
+      "choices": [
+        {
+          "label": "Possible tendon injury (weakness, altered resting posture, pain on resisted movement, visible tendon)",
+          "next": "s-tendon"
+        },
+        {
+          "label": "Possible nerve injury (sensory deficit distal to the wound, weakness)",
+          "next": "s-nerve"
+        },
+        {
+          "label": "Over or near a joint / possible joint-space violation",
+          "next": "s-joint"
+        },
+        {
+          "label": "Arterial bleeding / expanding haematoma / distal ischaemia",
+          "next": "s-arterial"
+        },
+        {
+          "label": "None — structures intact, continue to region",
+          "next": "region"
+        }
+      ]
+    },
+    {
+      "id": "s-tendon",
+      "type": "warning",
+      "body": "Examine through the full range of motion (a partial laceration can be missed at rest) and against resistance; inspect the wound base with the joint moved through its arc. A confirmed or suspected tendon laceration → refer to hand / orthopaedics / plastics. Extensor tendon injuries in zones amenable to it may be repaired in the ED by a trained operator; flexor tendon injuries go to the OR. Splint in the position that offloads the tendon, close the skin, antibiotics if grossly contaminated, and arrange prompt follow-up."
+    },
+    {
+      "id": "s-nerve",
+      "type": "warning",
+      "body": "Test two-point discrimination and sensation in the specific nerve's territory BEFORE local anaesthetic. A digital-nerve or named-nerve deficit → refer for microsurgical repair (ideally within days). Close the skin, document the exact deficit, and do not obscure the injury with a buried suture near the nerve. A pure neurapraxia from stretch may recover — but that is a diagnosis of exclusion after specialist review."
+    },
+    {
+      "id": "s-joint",
+      "type": "step",
+      "body": "Determine whether the joint capsule is breached — the saline load test (inject sterile saline ± fluorescein into the joint away from the wound and watch for extravasation) or CT for larger joints. A traumatic arthrotomy needs OR washout and IV antibiotics. If the capsule is intact: irrigate, close, splint in the position of function, and re-examine. Any laceration over the MCP from a closed-fist injury is a fight bite until proven otherwise."
+    },
+    {
+      "id": "s-arterial",
+      "type": "warning",
+      "body": "Direct pressure first; a tourniquet proximally if pressure fails. Do NOT blindly clamp in the depths of a wound (nerve injury). A named-vessel laceration, an expanding haematoma, a bruit, or any hard sign of vascular injury → vascular / hand surgery and imaging. Small distal bleeders in a well-perfused hand can be controlled with pressure, elevation, and a figure-of-eight or horizontal mattress suture — confirm the digit stays perfused."
+    }
   ],
   "checklist": [
     "Neurovascular and tendon exam documented before anesthesia",
