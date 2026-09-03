@@ -1,0 +1,195 @@
+{
+  "id": "mews",
+  "section": "Calculators",
+  "category": "Early Warning / Resuscitation",
+  "title": "Modified Early Warning Score (MEWS)",
+  "aliases": [
+    "MEWS",
+    "early warning score",
+    "ward deterioration score",
+    "rapid response trigger"
+  ],
+  "tags": [
+    "early warning",
+    "deterioration",
+    "rapid response",
+    "ward",
+    "triage"
+  ],
+  "keywords": [
+    "systolic BP",
+    "heart rate",
+    "respiratory rate",
+    "temperature",
+    "AVPU level of consciousness",
+    "escalate MEWS >= 5"
+  ],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": [
+    "Subbe CP et al. QJM 2001; widely adopted ward track-and-trigger tool (NEWS2 is the successor)"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx."
+    }
+  ],
+  "engine": "additive",
+  "settings": [
+    "ED",
+    "ICU"
+  ],
+  "purpose": "Aggregate track-and-trigger score from five bedside vitals to flag the deteriorating ward patient. NEWS2 has largely replaced it (adds SpO2, supplemental O2, and a hypercapnic scale) — use NEWS2 where your institution has adopted it.",
+  "items": [
+    {
+      "key": "sbp",
+      "label": "Systolic BP (mmHg)",
+      "options": [
+        {
+          "label": "≤ 70",
+          "points": 3
+        },
+        {
+          "label": "71–80",
+          "points": 2
+        },
+        {
+          "label": "81–100",
+          "points": 1
+        },
+        {
+          "label": "101–199",
+          "points": 0
+        },
+        {
+          "label": "≥ 200",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "key": "hr",
+      "label": "Heart rate (/min)",
+      "options": [
+        {
+          "label": "< 40",
+          "points": 2
+        },
+        {
+          "label": "40–50",
+          "points": 1
+        },
+        {
+          "label": "51–100",
+          "points": 0
+        },
+        {
+          "label": "101–110",
+          "points": 1
+        },
+        {
+          "label": "111–129",
+          "points": 2
+        },
+        {
+          "label": "≥ 130",
+          "points": 3
+        }
+      ]
+    },
+    {
+      "key": "rr",
+      "label": "Respiratory rate (/min)",
+      "options": [
+        {
+          "label": "< 9",
+          "points": 2
+        },
+        {
+          "label": "9–14",
+          "points": 0
+        },
+        {
+          "label": "15–20",
+          "points": 1
+        },
+        {
+          "label": "21–29",
+          "points": 2
+        },
+        {
+          "label": "≥ 30",
+          "points": 3
+        }
+      ]
+    },
+    {
+      "key": "temp",
+      "label": "Temperature (°C)",
+      "options": [
+        {
+          "label": "< 35",
+          "points": 2
+        },
+        {
+          "label": "35–38.4",
+          "points": 0
+        },
+        {
+          "label": "≥ 38.5",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "key": "avpu",
+      "label": "Level of consciousness (AVPU)",
+      "options": [
+        {
+          "label": "Alert",
+          "points": 0
+        },
+        {
+          "label": "Reacting to Voice",
+          "points": 1
+        },
+        {
+          "label": "Reacting to Pain",
+          "points": 2
+        },
+        {
+          "label": "Unresponsive",
+          "points": 3
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 0,
+      "max": 2,
+      "label": "Low — routine monitoring per ward protocol",
+      "severity": "low"
+    },
+    {
+      "min": 3,
+      "max": 4,
+      "label": "Intermediate — increase observation frequency, inform the nurse in charge / primary team, consider a medical review",
+      "severity": "moderate"
+    },
+    {
+      "min": 5,
+      "max": 14,
+      "label": "High — urgent medical review; activate the rapid response / critical care outreach team. MEWS ≥ 5 is associated with a marked rise in ICU admission and death. A single parameter scoring 3 also warrants escalation",
+      "disposition": "Activate rapid response",
+      "severity": "high"
+    }
+  ],
+  "notes": "Trend matters more than a single value — a rising MEWS over consecutive sets of vitals predicts deterioration even below the trigger threshold. Do not let a 'normal' MEWS override clinical concern. Thresholds vary by institution (some escalate at ≥ 4).",
+  "buildNote": "Additive, 5 vitals. Bands per common ward protocols."
+}

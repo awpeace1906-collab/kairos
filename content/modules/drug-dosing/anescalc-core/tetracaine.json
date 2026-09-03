@@ -1,0 +1,48 @@
+{
+  "id": "tetracaine",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Local Anesthetics",
+  "title": "Tetracaine",
+  "aliases": [
+    "Pontocaine"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "local",
+    "tetracaine"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Pontocaine",
+  "drugClass": "local",
+  "drugClassLabel": "Local Anesthetic",
+  "mechanism": "Long-acting ester LA. High lipid solubility and potency — most potent ester LA. Metabolized by plasma cholinesterase (slower than chloroprocaine). Primary use: spinal anesthesia.",
+  "onset": "Spinal: 3–5 min",
+  "duration": "Spinal isobaric/hyperbaric: 2–4h (significantly longer than lidocaine spinal)",
+  "dosing": "Spinal (primary use): 0.5% isobaric or 0.5–1% hyperbaric (with dextrose). Dose: 6–20 mg. Ophthalmology: 0.5% topical drops.",
+  "cautions": [
+    "High systemic toxicity if absorbed — NOT for infiltration or nerve blocks",
+    "Ester LA — contraindicated with PABA or aminobenzoic acid allergy",
+    "Largely replaced by bupivacaine in the US for most spinal applications"
+  ],
+  "pearls": [
+    "Classic teaching drug for spinal anesthesia history — traditional gold standard before bupivacaine",
+    "Still used at some institutions for prolonged urological procedures",
+    "Ophthalmologic 0.5% drops for corneal analgesia in procedural ophthalmology",
+    "Epinephrine 0.2 mg added prolongs spinal duration ~30–45 min"
+  ]
+}

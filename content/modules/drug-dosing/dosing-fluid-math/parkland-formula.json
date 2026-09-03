@@ -1,0 +1,32 @@
+{
+  "id": "parkland-formula",
+  "section": "Drug & Dosing Cards",
+  "category": "Dosing & Fluid Math",
+  "title": "Parkland Formula for Burns",
+  "aliases": ["burn fluid resuscitation", "Parkland", "TBSA fluids"],
+  "tags": ["burns", "fluid resuscitation", "TBSA", "trauma", "ED", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Baxter CR, Shires T. Ann N Y Acad Sci 1968", "ABA guidelines"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3." }],
+  "engine": "formula",
+  "settings": ["ED", "ICU"],
+  "purpose": "First-24-hour crystalloid volume for burn resuscitation. Give half in the first 8 hours from the time of the burn, the rest over the next 16 hours. Titrate to urine output.",
+  "inputs": [
+    { "key": "tbsa", "label": "% total body surface area burned (2nd degree and deeper)", "type": "number", "unit": "%", "min": 1, "max": 100 },
+    { "key": "weight", "label": "Weight", "type": "number", "unit": "kg", "min": 3, "max": 250 }
+  ],
+  "formulas": [
+    { "key": "total24", "label": "Total in first 24 h (lactated Ringer's)", "expression": "4 * tbsa * weight", "unit": "mL", "precision": 0 },
+    { "key": "first8", "label": "First 8 h (from time of burn)", "expression": "2 * tbsa * weight", "unit": "mL", "precision": 0 },
+    { "key": "rate8", "label": "Rate for the first 8 h", "expression": "(2 * tbsa * weight) / 8", "unit": "mL/h", "precision": 0 },
+    { "key": "rate16", "label": "Rate for the next 16 h", "expression": "(2 * tbsa * weight) / 16", "unit": "mL/h", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "total24", "label": "This is a starting estimate only — titrate to a urine output of 0.5 mL/kg/h (adults) or 1 mL/kg/h (children < 30 kg).", "severity": "info" }
+  ],
+  "notes": "Clock starts at the time of the burn, not arrival — subtract elapsed time when setting the first-8-hour rate. Modified Brooke (2 mL/kg/%TBSA) is an alternative lower-volume strategy some centres prefer."
+}

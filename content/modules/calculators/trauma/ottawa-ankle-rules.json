@@ -1,0 +1,34 @@
+{
+  "id": "ottawa-ankle-rules",
+  "section": "Calculators",
+  "category": "Trauma",
+  "title": "Ottawa Ankle & Foot Rules",
+  "aliases": ["Ottawa ankle rule", "ankle x-ray decision", "foot x-ray decision", "malleolar zone", "midfoot zone"],
+  "tags": ["ankle injury", "foot injury", "sprain", "imaging decision", "x-ray", "ED"],
+  "keywords": ["posterior edge lateral malleolus", "navicular", "base of 5th metatarsal", "bear weight 4 steps"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Stiell IG et al. Ann Emerg Med 1992; JAMA 1993 (validation) — sensitivity ~ 98–100% for clinically significant fractures"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Rules out the need for ankle and foot X-rays after acute blunt injury. Apply to patients ≥ 18 y (validated to age 2 for the ankle rule); unreliable with intoxication, distracting injury, diminished sensation, or > 10 days since injury.",
+  "items": [
+    { "key": "malleolarPain", "label": "Pain in the malleolar zone", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "latMalleolus", "label": "Bony tenderness at the posterior edge / tip of the LATERAL malleolus (distal 6 cm)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "medMalleolus", "label": "Bony tenderness at the posterior edge / tip of the MEDIAL malleolus (distal 6 cm)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "midfootPain", "label": "Pain in the midfoot zone", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "navicular", "label": "Bony tenderness at the navicular", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "base5thMT", "label": "Bony tenderness at the base of the 5th metatarsal", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "cannotBearWeight", "label": "Unable to bear weight (4 steps) both immediately AND in the ED", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "No X-ray needed — no malleolar or midfoot pain, no bony tenderness at the named points, and able to bear weight", "severity": "low" },
+    { "min": 1, "max": 7, "label": "Imaging indicated — ANKLE series if malleolar-zone pain + tenderness at either malleolus or unable to bear weight; FOOT series if midfoot-zone pain + navicular or base-of-5th-MT tenderness or unable to bear weight", "disposition": "Ankle and/or foot X-ray per the zone", "severity": "moderate" }
+  ],
+  "notes": "'Malleolar zone' and 'midfoot zone' are the anatomical triggers; a positive point in a zone only mandates the corresponding series. Bear-weight = transfer weight twice onto each leg, regardless of limping.",
+  "buildNote": "Rule, not a graded score — any positive point → the relevant film."
+}

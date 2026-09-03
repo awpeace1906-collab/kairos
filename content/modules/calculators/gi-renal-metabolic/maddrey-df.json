@@ -1,0 +1,31 @@
+{
+  "id": "maddrey-df",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "Maddrey's Discriminant Function",
+  "aliases": ["mDF", "discriminant function", "alcoholic hepatitis steroids"],
+  "tags": ["alcoholic hepatitis", "corticosteroid decision", "prothrombin time", "bilirubin", "ED", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Maddrey WC et al. Gastroenterology 1978", "Carithers RL et al. Ann Intern Med 1989"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry from Calculator_Logic_Build_Spec.md." }],
+  "engine": "formula",
+  "settings": ["ED", "ICU"],
+  "purpose": "Determines whether severe alcoholic hepatitis warrants corticosteroid therapy. DF ≥ 32 = severe.",
+  "inputs": [
+    { "key": "patientPT", "label": "Patient prothrombin time", "type": "number", "unit": "s", "min": 8, "max": 60 },
+    { "key": "controlPT", "label": "Control (lab reference) prothrombin time", "type": "number", "unit": "s", "min": 8, "max": 20 },
+    { "key": "bilirubin", "label": "Total bilirubin", "type": "number", "unit": "mg/dL", "min": 0.2, "max": 60 }
+  ],
+  "formulas": [
+    { "key": "df", "label": "Discriminant function", "expression": "4.6 * (patientPT - controlPT) + bilirubin", "precision": 1 }
+  ],
+  "interpretation": [
+    { "forKey": "df", "min": -100, "max": 31.9, "label": "< 32 — not severe by mDF", "detail": "Corticosteroids generally not indicated; supportive care, nutrition, alcohol cessation. Consider MELD as an alternative severity index.", "severity": "moderate" },
+    { "forKey": "df", "min": 32, "max": 1000, "label": "≥ 32 — severe alcoholic hepatitis", "disposition": "Consider prednisolone 40 mg/day if no contraindication (active GI bleed, uncontrolled sepsis, HBV, AKI); reassess response with the Lille score at day 7", "severity": "high" }
+  ],
+  "notes": "Use the same units (seconds) for both PT values. If only INR is available, mDF is less reliable — MELD or MELD-Na is the better severity tool in that case."
+}

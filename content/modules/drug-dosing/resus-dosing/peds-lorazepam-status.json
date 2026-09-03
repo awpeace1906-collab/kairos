@@ -1,0 +1,27 @@
+{
+  "id": "peds-lorazepam-status",
+  "section": "Drug & Dosing Cards",
+  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "title": "Lorazepam — Pediatric Status Epilepticus",
+  "aliases": ["peds lorazepam", "Ativan seizure dose", "first-line status epilepticus"],
+  "tags": ["status epilepticus", "seizure", "benzodiazepine", "first line", "peds"],
+  "contentType": "drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Drug_Dosing_Peds_Weight_Based_Spec.md (cross-checked vs Stanford & Riley Children's pathways)"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry." }],
+  "purpose": "First-line IV benzodiazepine for pediatric status epilepticus when IV access is available.",
+  "population": "peds",
+  "weightBasis": "actual",
+  "doses": [
+    {
+      "indication": "Status epilepticus (IV access present)",
+      "route": "IV",
+      "rule": { "perKg": 0.1, "unit": "mg", "maxDose": 4, "maxDoseUnit": "mg", "repeat": "May repeat once after 5 minutes if the seizure persists" },
+      "notes": "If no IV access: IM/IN midazolam is the preferred first agent — see the midazolam card."
+    }
+  ],
+  "buildNote": "Part of the status-epilepticus set (lorazepam, midazolam, diazepam rectal, then fosphenytoin/levetiracetam/valproate, phenobarbital for neonates). Cross-link them."
+}

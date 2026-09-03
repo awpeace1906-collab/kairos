@@ -1,0 +1,79 @@
+{
+  "id": "pocus-guide",
+  "section": "Procedures",
+  "category": "Regional Anesthesia & Ultrasound",
+  "title": "POCUS Guide",
+  "aliases": ["point of care ultrasound", "bedside ultrasound", "FoCUS", "FAST exam", "RUSH", "lung ultrasound", "IVC ultrasound"],
+  "tags": ["POCUS", "ultrasound", "FoCUS", "FAST", "lung ultrasound", "IVC", "RUSH", "shock", "DVT", "ED", "ICU"],
+  "contentType": "reference",
+  "content_version": 2,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 2,
+  "sources": [
+    "Critical Vector — POCUS Master Guide (original content, 18 sections)",
+    "SCCM 2024 critical-care ultrasound recommendations",
+    "2025 lung-ultrasound pneumothorax algorithm"
+  ],
+  "changelog": [
+    { "version": 2, "date": "2026-09-01", "change": "Rewritten from the Critical Vector POCUS Master Guide — exam-by-exam diagnostic anchors for FoCUS, lung, eFAST, IVC, RUSH shock, DVT, and procedural guidance. Cleared the placeholder/licensing flags." },
+    { "version": 1, "date": "2026-09-01", "change": "Initial stub — probe/exam table only." }
+  ],
+  "summary": "Probe and view selection by clinical question, with the diagnostic anchors for each focused exam. Answers focused binary questions — not a substitute for a comprehensive study.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Probe selection" },
+    { "type": "list", "items": [
+      "Phased array (1-5 MHz) — cardiac, and any deep window through rib spaces.",
+      "Curvilinear (2-5 MHz) — abdominal, eFAST, IVC, lung (deep), aorta.",
+      "Linear (7-15 MHz) — vascular access, DVT, lung sliding / pneumothorax, soft tissue, ocular, nerve.",
+      "Rule: use the highest frequency that still penetrates to the target — resolution degrades with depth."
+    ] },
+    { "type": "heading", "level": 2, "text": "Focused cardiac (FoCUS)" },
+    { "type": "list", "items": [
+      "Views: parasternal long (PLAX), parasternal short, apical 4-chamber (A4C), subcostal 4-chamber (SC4C) + IVC.",
+      "EF gestalt — visual: normal / mildly reduced / moderately reduced / severely reduced. EPSS (E-point septal separation) > 7 mm suggests a reduced EF; > 13 mm is markedly reduced.",
+      "RV assessment — RV:LV end-diastolic diameter > 1 (apical) or a D-shaped septum = RV pressure/volume overload; with hypotension + this pattern, think acute PE. McConnell's sign (RV free-wall akinesis with apical sparing) is specific for acute PE.",
+      "Pericardial effusion — anechoic stripe that tracks circumferentially and moves with the heart (vs. pleural effusion, which sits posterior to the descending aorta on PLAX).",
+      "Tamponade — physiology, not size: diastolic RV collapse, systolic RA collapse, a plethoric non-collapsing IVC, and respirophasic mitral/tricuspid inflow variation."
+    ] },
+    { "type": "heading", "level": 2, "text": "IVC & volume status" },
+    { "type": "text", "text": "Subcostal long axis, measure ~2 cm from the RA junction. A small, > 50% collapsing IVC suggests low filling pressure / fluid tolerance; a plethoric, non-collapsing IVC suggests high right-sided pressure (tamponade, RV failure, tension physiology, volume overload). IVC is one data point — integrate with the lung and cardiac exams; it does not predict fluid responsiveness on its own." },
+    { "type": "heading", "level": 2, "text": "Lung ultrasound" },
+    { "type": "list", "items": [
+      "Normal: lung sliding present + A-lines (horizontal reverberation) + ≤ 2 B-lines per zone.",
+      "Pneumothorax: absent lung sliding + absent B-lines + a 'lung point' (the transition where sliding reappears) is pathognomonic. M-mode 'barcode/stratosphere' sign replaces the 'seashore' sign. Absent sliding alone is not enough (bullae, prior pleurodesis, mainstem intubation, ARDS).",
+      "Cardiogenic pulmonary edema: bilateral, gravity-dependent B-lines (≥ 3 per zone), smooth pleural line, often with effusions.",
+      "Consolidation: tissue-like ('hepatization') lung with air bronchograms; ± shred sign at the border.",
+      "Pleural effusion: anechoic space above the diaphragm, spine sign (vertebrae visible above the diaphragm), plankton/swirling in exudates.",
+      "BLUE protocol: A-profile + DVT → PE; A-profile, no DVT, lung point → pneumothorax; B-profile → pulmonary edema; A/B or C profile with fever → pneumonia."
+    ] },
+    { "type": "heading", "level": 2, "text": "eFAST / trauma" },
+    { "type": "list", "items": [
+      "Views: RUQ (Morrison's / hepatorenal), LUQ (splenorenal + subphrenic), pelvis (retrovesical / pouch of Douglas), subxiphoid cardiac; extended = bilateral anterior lung for pneumothorax.",
+      "Positive = anechoic free fluid in a dependent recess. RUQ is the most sensitive single view for hemoperitoneum. A negative eFAST does not exclude injury — repeat it, or go to CT if stable.",
+      "Pericardial fluid + hypotension after penetrating trauma → OR / pericardiotomy, not a drain."
+    ] },
+    { "type": "heading", "level": 2, "text": "RUSH — shock differentiation" },
+    { "type": "table",
+      "columns": ["Shock type", "Pump", "Tank", "Pipes"],
+      "rows": [
+        ["Hypovolemic / hemorrhagic", "Hyperdynamic, small chambers", "Flat IVC, A-lines, + free fluid (eFAST) or AAA", "Normal / collapsed"],
+        ["Cardiogenic", "Poor EF, dilated chambers", "Plethoric IVC, B-lines, pleural effusions", "Normal"],
+        ["Obstructive (tamponade / PE / tension PTX)", "Effusion with collapse / RV strain / hyperdynamic small LV", "Plethoric IVC; absent lung sliding (tension PTX)", "Normal; DVT may be present"],
+        ["Distributive (sepsis)", "Hyperdynamic early (poor late)", "Normal-to-flat IVC, ± B-lines from ARDS", "Peritoneal / pleural source; normal pipes"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "DVT — 2-point (3-point) compression" },
+    { "type": "text", "text": "Linear probe, transverse. Compress the common femoral vein (at and just below the saphenofemoral junction) and the popliteal vein (popliteal fossa); some protocols add the femoral vein along the adductor canal. Full coaptation of the vein walls = no DVT at that level. Non-compressible = acute DVT. Do not use colour/spectral Doppler as the primary test — compression is the standard." },
+    { "type": "heading", "level": 2, "text": "Procedural guidance" },
+    { "type": "list", "items": [
+      "Central line — short-axis for the initial survey (vein medial/compressible, artery lateral/pulsatile/non-compressible), then long-axis or dynamic-needle-tip tracking for the puncture; confirm the wire in the vein before dilating.",
+      "Arterial line / difficult IV — long-axis, shallow angle, walk the tip to the anterior wall.",
+      "Thoracentesis / paracentesis — mark the largest pocket with the patient in the position they'll be tapped in; identify the diaphragm, liver/spleen, and bowel to avoid.",
+      "Pericardiocentesis — apical or subxiphoid, whichever is closest to the skin with no lung/liver in the path; agitated-saline confirmation.",
+      "LP — mark the midline and the interspace, measure skin-to-ligamentum depth (helpful in obesity).",
+      "Airway — bilateral lung sliding + no gastric 'double-tract' sign after intubation supports tracheal placement; identify the cricothyroid membrane pre-emptively in a predicted difficult airway."
+    ] }
+  ],
+  "buildNote": "Content condensed from the CV POCUS Master Guide (18 sections). Advanced cardiac (VTI/CO, valve gradients), OB (IUP/ectopic/FHR), diaphragm/VIDD, ocular, and MSK sections from the full guide are candidates for their own sub-modules. Original annotated image library still to be produced (Tier 2)."
+}

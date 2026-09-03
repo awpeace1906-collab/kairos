@@ -1,0 +1,184 @@
+{
+  "id": "neonatal-seizures",
+  "section": "Peds Module",
+  "category": "Neonatology",
+  "title": "Neonatal Seizures",
+  "aliases": [
+    "neonatal seizure workup",
+    "jitteriness vs seizure",
+    "phenobarbital neonate",
+    "Volpe classification",
+    "pyridoxine-dependent epilepsy",
+    "electro-clinical dissociation"
+  ],
+  "tags": [
+    "neonatal",
+    "seizure",
+    "phenobarbital",
+    "levetiracetam",
+    "EEG",
+    "aEEG",
+    "HIE",
+    "metabolic",
+    "Peds",
+    "NICU"
+  ],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — Neonatology Pocket Guide: Neonatal Seizures",
+    "Pressler RM et al. ILAE Neonatal Seizure Task Force classification. Epilepsia 2021;62(3):615-628"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — jitteriness vs seizure, Volpe types, the etiology list (correct metabolic causes first), and the treatment ladder (phenobarbital → fosphenytoin / levetiracetam → pyridoxine trial)."
+    }
+  ],
+  "kind": "reference",
+  "purpose": "Most neonatal seizures are subtle or focal (generalised tonic-clonic is rare — immature cortex). Correct glucose, calcium, and magnesium first, in parallel with an antiseizure drug if seizures are ongoing. Confirm with EEG / aEEG where available — clinical suspicion is unreliable in both directions.",
+  "ageRange": "Newborn",
+  "sourceOfTruth": [],
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Jitteriness vs seizure"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Feature",
+        "Jitteriness",
+        "Seizure"
+      ],
+      "rows": [
+        [
+          "Eye movements",
+          "Normal",
+          "May be abnormal — staring, blinking, tonic deviation"
+        ],
+        [
+          "Response to gentle restraint",
+          "Stops when the limb is held / flexed",
+          "Continues despite restraint"
+        ],
+        [
+          "Movement quality",
+          "Fine, rhythmic tremor",
+          "Coarser; may have autonomic change (apnoea, tachycardia, BP swings)"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Volpe seizure types"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Subtle — most common overall: ocular movements, oral-buccal-lingual (chewing / sucking), cycling limb movements, apnoea with tachycardia. Often NOT time-locked to EEG.",
+        "Clonic (focal / multifocal) — rhythmic jerking of one limb or one side; more often EEG-correlated than subtle.",
+        "Tonic (focal / generalised) — sustained posturing; focal tonic more often EEG-correlated.",
+        "Myoclonic — brief jerks; generalised myoclonus can be a poor prognostic sign and overlaps with severe encephalopathy."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "Electro-clinical dissociation is well documented in neonates: some visible events have no EEG correlate (brainstem release phenomena), and many electrographic seizures have no clinical sign — especially after an antiseizure drug is given. Continuous EEG / aEEG is the reference standard; treat confirmed electrographic seizures even without a visible correlate."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Etiology (commonest first) — the workup"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Cause",
+        "Key clue"
+      ],
+      "rows": [
+        [
+          "Hypoxic-ischaemic encephalopathy",
+          "Most common overall; onset in the first 24 h after a perinatal hypoxic event; frequent but brief seizures"
+        ],
+        [
+          "Intracranial haemorrhage",
+          "Term: subarachnoid after traumatic / macrosomic delivery, usually good prognosis. Preterm: IVH after day 3, generalised tonic, worse prognosis"
+        ],
+        [
+          "CNS infection",
+          "Meningitis / encephalitis — consider if well at birth then deteriorates, or seizures beyond the first few days"
+        ],
+        [
+          "Acute metabolic",
+          "Hypoglycaemia, hypocalcaemia, hypomagnesaemia — CHECK AND CORRECT THESE FIRST in any neonatal seizure"
+        ],
+        [
+          "Inborn error of metabolism",
+          "Initially well, deteriorates day 2–3+; resembles late-onset sepsis without a clear source"
+        ],
+        [
+          "Cerebral malformation",
+          "Refractory from the first days; MRI"
+        ],
+        [
+          "Pyridoxine-dependent epilepsy",
+          "Rare (ALDH7A1); refractory seizures responding to a pyridoxine trial"
+        ],
+        [
+          "Benign familial neonatal seizures",
+          "Positive family history, self-limited, otherwise well"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Treatment ladder"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Line",
+        "Drug & dose",
+        "Notes"
+      ],
+      "rows": [
+        [
+          "Always first",
+          "Correct glucose, calcium, magnesium",
+          "In parallel with — not instead of — an antiseizure drug if seizures are ongoing"
+        ],
+        [
+          "1st-line",
+          "Phenobarbital: load 20 mg/kg IV (may repeat in increments to a max total load ~40 mg/kg); maintenance 3–5 mg/kg/day",
+          "Standard of care in most current protocols despite preclinical neuroapoptosis concerns"
+        ],
+        [
+          "2nd-line",
+          "(Fos)phenytoin: load 20 mg PE/kg IV; maintenance 3–5 mg/kg/day",
+          "Cardiac monitoring during the load; narrow therapeutic window"
+        ],
+        [
+          "Increasingly used earlier",
+          "Levetiracetam: load 20–40 mg/kg IV; maintenance 10–80 mg/kg/day",
+          "Favourable safety profile — moving earlier in some protocols; practice varies by institution"
+        ],
+        [
+          "Refractory / diagnostic trial",
+          "Pyridoxine 100 mg IV single dose (with EEG monitoring if possible)",
+          "For suspected pyridoxine-dependent epilepsy or truly refractory seizures of unclear cause"
+        ]
+      ]
+    }
+  ],
+  "buildNote": "Tier 1. Doses are standard neonatal ranges. The 'check glucose/Ca/Mg first' rule is the single highest-yield bedside point.  Related: neonatal-hie-cooling, infant-of-diabetic-mother, neonatal-jaundice, peds-midazolam-status."
+}

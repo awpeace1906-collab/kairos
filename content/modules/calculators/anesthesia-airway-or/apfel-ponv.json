@@ -1,0 +1,31 @@
+{
+  "id": "apfel-ponv",
+  "section": "Calculators",
+  "category": "Anesthesia / Airway / OR",
+  "title": "Apfel Score for PONV",
+  "aliases": ["postoperative nausea vomiting risk", "PONV score", "Apfel"],
+  "tags": ["PONV", "postoperative nausea", "antiemetic prophylaxis", "OR"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Apfel CC et al. Anesthesiology 1999"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry from Calculator_Logic_Build_Spec.md." }],
+  "engine": "additive",
+  "settings": ["OR", "Anesthesia"],
+  "purpose": "Predicts postoperative nausea and vomiting risk; each risk factor roughly adds one antiemetic intervention to the prophylaxis plan.",
+  "items": [
+    { "key": "female", "label": "Female sex", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "nonsmoker", "label": "Non-smoker", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "history", "label": "History of PONV or motion sickness", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "opioids", "label": "Anticipated postoperative opioid use", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "~10% risk", "severity": "low" },
+    { "min": 1, "max": 1, "label": "~20% risk", "severity": "low" },
+    { "min": 2, "max": 2, "label": "~40% risk", "disposition": "2 prophylactic interventions", "severity": "moderate" },
+    { "min": 3, "max": 3, "label": "~60% risk", "disposition": "≥ 2-3 interventions + TIVA / opioid-sparing", "severity": "high" },
+    { "min": 4, "max": 4, "label": "~80% risk", "disposition": "Multimodal prophylaxis + TIVA", "severity": "high" }
+  ]
+}

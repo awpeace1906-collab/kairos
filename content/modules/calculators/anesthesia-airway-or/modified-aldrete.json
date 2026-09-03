@@ -1,0 +1,50 @@
+{
+  "id": "modified-aldrete",
+  "section": "Calculators",
+  "category": "Anesthesia / Airway / OR",
+  "title": "Modified Aldrete Score",
+  "aliases": ["Aldrete", "PACU discharge score", "recovery score"],
+  "tags": ["PACU", "post-anesthesia recovery", "discharge readiness", "procedural sedation", "OR"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Aldrete JA. J Clin Anesth 1995"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry from Calculator_Logic_Build_Spec.md." }],
+  "engine": "additive",
+  "settings": ["OR", "Anesthesia"],
+  "purpose": "The bedside tool used to clear a patient from PACU / procedural-sedation recovery.",
+  "items": [
+    { "key": "activity", "label": "Activity — moves extremities on command", "options": [
+      { "label": "No movement", "points": 0 },
+      { "label": "Moves 2 extremities", "points": 1 },
+      { "label": "Moves 4 extremities", "points": 2 }
+    ] },
+    { "key": "respiration", "label": "Respiration", "options": [
+      { "label": "Apneic / obstructed", "points": 0 },
+      { "label": "Dyspnea, shallow or limited breathing", "points": 1 },
+      { "label": "Breathes deeply and coughs freely", "points": 2 }
+    ] },
+    { "key": "circulation", "label": "Circulation — BP vs. pre-anesthetic baseline", "options": [
+      { "label": "BP ± > 50 mmHg of baseline", "points": 0 },
+      { "label": "BP ± 20-50 mmHg of baseline", "points": 1 },
+      { "label": "BP ± < 20 mmHg of baseline", "points": 2 }
+    ] },
+    { "key": "consciousness", "label": "Consciousness", "options": [
+      { "label": "Not responding", "points": 0 },
+      { "label": "Arousable on calling", "points": 1 },
+      { "label": "Fully awake", "points": 2 }
+    ] },
+    { "key": "spo2", "label": "Oxygen saturation", "options": [
+      { "label": "SpO₂ < 90% even with supplemental O₂", "points": 0 },
+      { "label": "Needs supplemental O₂ to keep SpO₂ > 90%", "points": 1 },
+      { "label": "SpO₂ > 92% on room air", "points": 2 }
+    ] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 8, "label": "Not yet ready for discharge", "disposition": "Continue recovery monitoring; re-score at intervals.", "severity": "moderate" },
+    { "min": 9, "max": 10, "label": "Generally fit for PACU / recovery discharge", "detail": "Some institutions accept ≥ 8. Also confirm pain control, absence of active bleeding, and a responsible-adult escort.", "severity": "low" }
+  ],
+  "buildNote": "Orchestrated by the Procedural Sedation Workflow (recovery step)."
+}

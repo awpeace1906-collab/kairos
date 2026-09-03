@@ -1,0 +1,32 @@
+{
+  "id": "ottawa-knee-rule",
+  "section": "Calculators",
+  "category": "Trauma",
+  "title": "Ottawa Knee Rule",
+  "aliases": ["knee x-ray decision", "acute knee injury imaging"],
+  "tags": ["knee injury", "imaging decision", "x-ray", "ED"],
+  "keywords": ["isolated patellar tenderness", "fibular head", "flex 90 degrees", "bear weight 4 steps"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Stiell IG et al. Ann Emerg Med 1995; JAMA 1997 (validation) — sensitivity ~ 98–100% for clinically significant fractures"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Rules out the need for a knee X-ray after acute blunt injury. Less well validated < 18 y; unreliable with intoxication, an uncooperative exam, or a distracting injury.",
+  "items": [
+    { "key": "age55", "label": "Age ≥ 55", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "patellarTender", "label": "Isolated tenderness of the patella (no other bony tenderness)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "fibularHead", "label": "Tenderness at the head of the fibula", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "cannotFlex90", "label": "Unable to flex the knee to 90°", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "cannotBearWeight", "label": "Unable to bear weight (4 steps) both immediately AND in the ED", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "No knee X-ray needed", "severity": "low" },
+    { "min": 1, "max": 5, "label": "Knee X-ray indicated (AP + lateral ± sunrise/tunnel)", "disposition": "Knee series", "severity": "moderate" }
+  ],
+  "notes": "Bear-weight = transfer weight twice onto each leg (4 steps), able to limp. 'Isolated' patellar tenderness means no tenderness anywhere else on the knee.",
+  "buildNote": "Rule — any positive criterion → film."
+}

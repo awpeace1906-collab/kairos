@@ -1,0 +1,33 @@
+{
+  "id": "steroid-conversion",
+  "section": "Drug & Dosing Cards",
+  "category": "Dosing & Fluid Math",
+  "title": "Steroid Equivalent Dosing",
+  "aliases": ["steroid conversion", "corticosteroid equivalence", "glucocorticoid conversion", "stress dose steroids"],
+  "tags": ["corticosteroid", "prednisone", "dexamethasone", "hydrocortisone", "taper", "stress dose"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Standard endocrinology references; UpToDate glucocorticoid equivalency"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3 — modelled as a reference table rather than a formula calculator." }],
+  "summary": "Approximate equipotent (anti-inflammatory) glucocorticoid doses. Mineralocorticoid activity and duration of action differ and are not captured by dose equivalence alone.",
+  "body": [
+    { "type": "table",
+      "columns": ["Glucocorticoid", "Equivalent dose (mg)", "Relative anti-inflammatory potency", "Duration"],
+      "rows": [
+        ["Hydrocortisone (cortisol)", "20", "1", "Short (8-12 h)"],
+        ["Cortisone", "25", "0.8", "Short (8-12 h)"],
+        ["Prednisone", "5", "4", "Intermediate (12-36 h)"],
+        ["Prednisolone", "5", "4", "Intermediate (12-36 h)"],
+        ["Methylprednisolone", "4", "5", "Intermediate (12-36 h)"],
+        ["Triamcinolone", "4", "5", "Intermediate (12-36 h)"],
+        ["Dexamethasone", "0.75", "25-30", "Long (36-72 h)"]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "Equivalence covers anti-inflammatory potency only. Hydrocortisone and cortisone have substantial mineralocorticoid activity; dexamethasone has essentially none. When replacing a physiologic (adrenal-insufficiency) regimen, account for mineralocorticoid need separately (e.g. fludrocortisone)." },
+    { "type": "text", "text": "Worked example: prednisone 40 mg ≈ methylprednisolone 32 mg ≈ dexamethasone 6 mg ≈ hydrocortisone 160 mg." }
+  ],
+  "buildNote": "Kept as a static reference table — a bare mg-ratio 'calculator' invites unsafe use across agents with different mineralocorticoid activity and half-life. If a calculator is added later, force an explicit agent-pair selection and surface the duration/mineralocorticoid caveat inline."
+}

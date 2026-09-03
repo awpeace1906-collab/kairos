@@ -1,0 +1,48 @@
+{
+  "id": "hydromorphone",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Opioids",
+  "title": "Hydromorphone",
+  "aliases": [
+    "Dilaudid"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "opioid",
+    "hydromorphone"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Dilaudid",
+  "tallManLetters": "HYDROmorphone",
+  "drugClass": "opioid",
+  "drugClassLabel": "Opioid",
+  "mechanism": "Semisynthetic full μ-opioid agonist (morphine derivative). ~5–8.5× more potent than morphine. Mechanism analogous to morphine. No histamine release — advantage over morphine.",
+  "onset": "IV 5–10 min",
+  "duration": "IV 3–4h",
+  "dosing": "IV: 0.015 mg/kg; titrate 0.2–0.4 mg increments\nPCA: 0.2 mg bolus, 6–10 min lockout\nEpidural: 0.5–1.5 mg lumbar\nOral: 2–4 mg q4h (PO:IV ratio ~5:1)",
+  "cautions": [
+    "AEs: Respiratory depression, H3G-mediated neuroexcitatory effects (myoclonus, agitation, cognitive impairment) in renal failure",
+    "CI: Significant respiratory depression; acute asthma without resuscitative equipment; GI obstruction; hypersensitivity",
+    "Precautions: H3G (hydromorphone-3-glucuronide) accumulates in renal impairment — switch to alternative in ESRD; high potency — dose carefully; H3G neuroexcitatory toxicity does NOT respond to naloxone"
+  ],
+  "pearls": [
+    "~5× more potent PO, ~8.5× IV vs. morphine. No histamine release — preferred in morphine-intolerant patients. PO:IV ratio ~5:1.",
+    "H3G does NOT respond to naloxone — neuroexcitatory toxicity requires supportive care (not reversible with opioid antagonist)."
+  ],
+  "reversal": "Naloxone 1–10 mcg/kg IV (does NOT reverse H3G toxicity)"
+}

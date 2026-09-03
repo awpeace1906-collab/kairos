@@ -1,0 +1,51 @@
+{
+  "id": "methylene-blue",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Methylene Blue",
+  "title": "Methylene Blue",
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "methylene-blue",
+    "methylene",
+    "blue"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "drugClass": "methylene-blue",
+  "drugClassLabel": "Methylene Blue",
+  "mechanism": "Phenothiazine dye. Principal anesthesia/critical care mechanisms: (1) Guanylate cyclase inhibitor — blocks NO-mediated vasodilation → reverses distributive shock unresponsive to catecholamines. (2) Electron carrier in methemoglobin reduction — donates electrons via NADPH-methemoglobin reductase, converting met-Hgb Fe³⁺ → Fe²⁺. (3) MAO-A inhibitor at high doses — serotonin syndrome risk. (4) Mitochondrial electron chain support in cyanide/CO poisoning.",
+  "onset": "Vasopressor: 1–2 min IV. MetHgb reversal: 15–30 min IV.",
+  "duration": "Vasopressor: 30–60 min (may repeat). MetHgb reversal: 60–120 min; repeat if met-Hgb rebounds.",
+  "dosing": "VASOPLEGIC SHOCK (cardiac surgery / catecholamine-refractory): 1–2 mg/kg IV over 15–20 min; may repeat q30–60 min (max 7 mg/kg/day). Continuous infusion (off-label): 0.25–2 mg/kg/hr.\n\nMETHEMOGLOBINEMIA (symptomatic >30% or >20% with sx): 1–2 mg/kg IV over 5–15 min. Repeat 1 mg/kg in 30–60 min if met-Hgb persists. Max single course 7 mg/kg. Available as 10 mg/mL (1%) solution.\n\nANAPHYLAXIS (refractory, adjunct to epinephrine): 1–2 mg/kg IV over 20 min.\n\nINTRAOPERATIVE MAPPING / SENTINEL NODE: 1% solution, 5 mL local intradermal injection (subcutaneous, not IV for this indication).\n\nPARATHYROID LOCALIZATION (intraoperative): 5 mg/kg IV over 20 min before incision — tissues stain blue-green; parathyroid remains unstained (differential uptake).\n\nCYANIDE POISONING (adjunct to hydroxocobalamin): 1–2 mg/kg IV; electron donor role in cyanide-impaired mitochondrial chain.\n\nIFOSFAMIDE ENCEPHALOPATHY: 50 mg IV q6h until resolution (weight-independent fixed dosing per published protocols).",
+  "cautions": [
+    "Serotonin syndrome — ABSOLUTE CONTRAINDICATION with SSRIs, SNRIs, MAOIs, linezolid, tramadol, fentanyl (at high doses), meperidine. Potentially fatal. Screen ALL patients.",
+    "G6PD deficiency — methylene blue REQUIRES NADPH; in G6PD deficiency it WORSENS methemoglobinemia and causes hemolysis. Contraindicated for MetHgb treatment in G6PD deficiency.",
+    "Pulse oximetry interference — absorbs at 668 nm; SpO₂ reads falsely LOW (~65–85%) for 1–2 min after IV dose; confirm with co-oximetry ABG.",
+    "Blue-green discoloration — urine, skin, mucous membranes; warn patient/team; interferes with colorimetric assays and BIS monitor values.",
+    "High doses (>7 mg/kg total) → paradoxical methemoglobinemia from direct oxidation of Hgb; stay within dosing limits.",
+    "Pulmonary vasoconstriction reported — use with caution in pulmonary HTN; can worsen RV afterload."
+  ],
+  "pearls": [
+    "Vasoplegic syndrome post-CPB: MB is first-line adjunct after norepinephrine ≥0.25 mcg/kg/min fails — targets the NO/cGMP pathway upstream of catecholamines.",
+    "PROPHYLACTIC MB before CPB (1 mg/kg): RCT evidence shows reduced vasoplegic syndrome incidence and vasopressor requirements post-bypass.",
+    "MetHgb reversal: response within 30 min — if no improvement, check G6PD status; repeat dose or consider exchange transfusion.",
+    "SEROTONIN TOXICITY RISK is the most dangerous perioperative concern — review ALL serotonergic medications preoperatively.",
+    "Co-oximetry ABG is mandatory for MetHgb monitoring — standard pulse oximetry is unreliable during and after MB infusion.",
+    "Ifosfamide encephalopathy: MB reverses encephalopathy within hours (reversal of chloroacetaldehyde-induced mitochondrial dysfunction)."
+  ],
+  "reversal": "None specific"
+}

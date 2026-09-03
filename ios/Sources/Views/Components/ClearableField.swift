@@ -9,6 +9,7 @@ struct ClearableField: View {
     let label: String
     let unit: String?
     var keyboard: UIKeyboardType = .decimalPad
+    var fieldID: String? = nil
     @Binding var text: String
     @FocusState private var focused: Bool
 
@@ -24,6 +25,7 @@ struct ClearableField: View {
                 TextField("", text: $text)
                     .keyboardType(keyboard)
                     .focused($focused)
+                    .accessibilityIdentifier(fieldID ?? "field-\(label)")
                     .toolbar {
                         ToolbarItemGroup(placement: .keyboard) {
                             Spacer()

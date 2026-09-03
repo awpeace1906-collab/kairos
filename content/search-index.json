@@ -1,6 +1,53 @@
 {
-  "generatedAt": "2026-09-01T00:00:00Z",
+  "generatedAt": "2026-09-03T00:00:00Z",
   "entries": [
+    {
+      "id": "apfel-ponv",
+      "title": "Apfel Score for PONV",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "PONV",
+        "postoperative nausea",
+        "antiemetic prophylaxis",
+        "OR"
+      ],
+      "keywords": [
+        "postoperative nausea vomiting risk",
+        "PONV score",
+        "Apfel"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/apfel-ponv"
+    },
+    {
+      "id": "ariscat",
+      "title": "ARISCAT Score (Postoperative Pulmonary Complications)",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "perioperative",
+        "pulmonary complications",
+        "risk stratification",
+        "preoperative",
+        "OR"
+      ],
+      "keywords": [
+        "age",
+        "preoperative SpO2",
+        "respiratory infection last month",
+        "preoperative anemia",
+        "surgical incision site",
+        "duration of surgery",
+        "emergency surgery",
+        "ARISCAT",
+        "PPC risk",
+        "postoperative pulmonary complication score",
+        "Canet score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/ariscat"
+    },
     {
       "id": "asa-physical-status",
       "title": "ASA Physical Status Classification",
@@ -19,6 +66,268 @@
       ],
       "contentType": "calculator",
       "route": "/calculators/anesthesia-airway-or/asa-physical-status"
+    },
+    {
+      "id": "caprini-vte",
+      "title": "Caprini Score (Surgical VTE Risk)",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "VTE prophylaxis",
+        "DVT",
+        "PE",
+        "perioperative",
+        "surgical",
+        "OR"
+      ],
+      "keywords": [
+        "age",
+        "surgery type",
+        "BMI >= 25",
+        "prior VTE",
+        "thrombophilia",
+        "malignancy",
+        "central venous access",
+        "immobility",
+        "LMWH prophylaxis",
+        "extended prophylaxis",
+        "Caprini",
+        "surgical VTE risk",
+        "perioperative DVT prophylaxis",
+        "2005 Caprini"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/caprini-vte"
+    },
+    {
+      "id": "cormack-lehane",
+      "title": "Cormack-Lehane Classification",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "laryngoscopy",
+        "glottic view",
+        "intubation documentation",
+        "difficult airway",
+        "OR"
+      ],
+      "keywords": [
+        "laryngoscopy grade",
+        "glottic view grade",
+        "CL grade"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/cormack-lehane"
+    },
+    {
+      "id": "el-ganzouri",
+      "title": "El-Ganzouri Risk Index (Difficult Airway)",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "airway assessment",
+        "difficult intubation",
+        "preoperative",
+        "OR",
+        "anesthesia"
+      ],
+      "keywords": [
+        "mouth opening",
+        "thyromental distance",
+        "Mallampati",
+        "neck movement",
+        "ability to prognath",
+        "weight",
+        "history of difficult intubation",
+        "EGRI",
+        "El-Ganzouri",
+        "simplified airway risk index",
+        "SARI",
+        "difficult intubation score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/el-ganzouri"
+    },
+    {
+      "id": "lemon-airway",
+      "title": "LEMON — Difficult Airway Assessment",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "difficult airway",
+        "intubation",
+        "RSI",
+        "airway assessment",
+        "ED",
+        "OR"
+      ],
+      "keywords": [
+        "LEMON law",
+        "difficult airway",
+        "pre-intubation airway check"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/lemon-airway"
+    },
+    {
+      "id": "mallampati",
+      "title": "Mallampati Score",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "difficult airway",
+        "airway assessment",
+        "intubation",
+        "preop",
+        "OR"
+      ],
+      "keywords": [
+        "Mallampati class",
+        "modified Mallampati",
+        "oropharyngeal view"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/mallampati"
+    },
+    {
+      "id": "modified-aldrete",
+      "title": "Modified Aldrete Score",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "PACU",
+        "post-anesthesia recovery",
+        "discharge readiness",
+        "procedural sedation",
+        "OR"
+      ],
+      "keywords": [
+        "Aldrete",
+        "PACU discharge score",
+        "recovery score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/modified-aldrete"
+    },
+    {
+      "id": "rcri",
+      "title": "Revised Cardiac Risk Index (RCRI)",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "perioperative",
+        "cardiac risk",
+        "noncardiac surgery",
+        "preop",
+        "OR"
+      ],
+      "keywords": [
+        "Lee index",
+        "RCRI",
+        "perioperative cardiac risk"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/rcri"
+    },
+    {
+      "id": "stop-bang",
+      "title": "STOP-BANG Score",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "OSA",
+        "obstructive sleep apnea",
+        "preop screening",
+        "perioperative airway",
+        "OR"
+      ],
+      "keywords": [
+        "STOP BANG",
+        "OSA screen",
+        "obstructive sleep apnea risk"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/stop-bang"
+    },
+    {
+      "id": "surgical-apgar",
+      "title": "Surgical Apgar Score",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "perioperative",
+        "intraoperative",
+        "risk stratification",
+        "postoperative complications",
+        "OR"
+      ],
+      "keywords": [
+        "estimated blood loss",
+        "lowest mean arterial pressure",
+        "lowest heart rate",
+        "postoperative disposition",
+        "intraoperative course",
+        "SAS",
+        "surgical Apgar",
+        "intraoperative risk score",
+        "postoperative complication score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/surgical-apgar"
+    },
+    {
+      "id": "brugada-vt",
+      "title": "Brugada Criteria for VT vs SVT with Aberrancy",
+      "section": "Calculators",
+      "category": "Cardiovascular / Chest Pain / Arrhythmia",
+      "tags": [
+        "wide complex tachycardia",
+        "ventricular tachycardia",
+        "ECG",
+        "ED",
+        "arrhythmia"
+      ],
+      "keywords": [
+        "absence of RS in precordial leads",
+        "RS interval > 100 ms",
+        "AV dissociation",
+        "morphology criteria V1 V2 V6",
+        "assume VT",
+        "Brugada algorithm",
+        "wide complex tachycardia",
+        "VT vs SVT",
+        "WCT differentiation"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/cardiovascular-chest-pain-arrhythmia/brugada-vt"
+    },
+    {
+      "id": "canadian-syncope-risk-score",
+      "title": "Canadian Syncope Risk Score",
+      "section": "Calculators",
+      "category": "Cardiovascular / Chest Pain / Arrhythmia",
+      "tags": [
+        "syncope",
+        "disposition",
+        "risk stratification",
+        "troponin",
+        "ECG",
+        "ED"
+      ],
+      "keywords": [
+        "vasovagal predisposition",
+        "heart disease history",
+        "QRS axis",
+        "QRS duration > 130 ms",
+        "corrected QT > 480",
+        "troponin above 99th percentile",
+        "CSRS",
+        "syncope risk",
+        "syncope disposition",
+        "30-day serious outcome syncope"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/cardiovascular-chest-pain-arrhythmia/canadian-syncope-risk-score"
     },
     {
       "id": "cha2ds2-vasc",
@@ -123,6 +432,34 @@
       "route": "/calculators/cardiovascular-chest-pain-arrhythmia/killip-classification"
     },
     {
+      "id": "modified-sgarbossa",
+      "title": "Modified Sgarbossa Criteria",
+      "section": "Calculators",
+      "category": "Cardiovascular / Chest Pain / Arrhythmia",
+      "tags": [
+        "STEMI",
+        "LBBB",
+        "ventricular paced rhythm",
+        "OMI",
+        "ECG",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "concordant ST elevation >= 1 mm",
+        "concordant ST depression V1-V3",
+        "ST/S ratio <= -0.25",
+        "proportionally excessive discordance",
+        "Sgarbossa",
+        "Smith-modified Sgarbossa",
+        "STEMI in LBBB",
+        "STEMI in paced rhythm",
+        "OMI in LBBB"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/cardiovascular-chest-pain-arrhythmia/modified-sgarbossa"
+    },
+    {
       "id": "timi-nstemi",
       "title": "TIMI Risk Score (UA/NSTEMI)",
       "section": "Calculators",
@@ -144,6 +481,101 @@
       "route": "/calculators/cardiovascular-chest-pain-arrhythmia/timi-nstemi"
     },
     {
+      "id": "mews",
+      "title": "Modified Early Warning Score (MEWS)",
+      "section": "Calculators",
+      "category": "Early Warning / Resuscitation",
+      "tags": [
+        "early warning",
+        "deterioration",
+        "rapid response",
+        "ward",
+        "triage"
+      ],
+      "keywords": [
+        "systolic BP",
+        "heart rate",
+        "respiratory rate",
+        "temperature",
+        "AVPU level of consciousness",
+        "escalate MEWS >= 5",
+        "MEWS",
+        "early warning score",
+        "ward deterioration score",
+        "rapid response trigger"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/early-warning-resuscitation/mews"
+    },
+    {
+      "id": "news2",
+      "title": "NEWS2 (National Early Warning Score)",
+      "section": "Calculators",
+      "category": "Early Warning / Resuscitation",
+      "tags": [
+        "early warning",
+        "deterioration",
+        "rapid response",
+        "sepsis screen",
+        "ward",
+        "ED"
+      ],
+      "keywords": [
+        "respiratory rate",
+        "SpO2 scale 1 vs scale 2",
+        "supplemental oxygen",
+        "temperature",
+        "systolic BP",
+        "heart rate",
+        "consciousness ACVPU",
+        "score >= 7 emergency",
+        "NEWS2",
+        "national early warning score",
+        "deterioration score",
+        "track and trigger"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/early-warning-resuscitation/news2"
+    },
+    {
+      "id": "aims65",
+      "title": "AIMS65 Score",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "GI bleed",
+        "upper GI hemorrhage",
+        "mortality",
+        "risk stratification",
+        "ED"
+      ],
+      "keywords": [
+        "AIMS65",
+        "upper GI bleed mortality"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/aims65"
+    },
+    {
+      "id": "alvarado",
+      "title": "Alvarado Score",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "appendicitis",
+        "abdominal pain",
+        "RLQ pain",
+        "imaging decision",
+        "ED"
+      ],
+      "keywords": [
+        "MANTRELS",
+        "appendicitis score adult"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/alvarado"
+    },
+    {
       "id": "anion-gap",
       "title": "Anion Gap",
       "section": "Calculators",
@@ -156,6 +588,24 @@
       ],
       "contentType": "calculator",
       "route": "/calculators/gi-renal-metabolic/anion-gap"
+    },
+    {
+      "id": "bisap",
+      "title": "BISAP Score",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "pancreatitis",
+        "severity",
+        "mortality",
+        "ED"
+      ],
+      "keywords": [
+        "bedside index severity acute pancreatitis",
+        "BISAP"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/bisap"
     },
     {
       "id": "corrected-calcium",
@@ -177,6 +627,433 @@
       "route": "/calculators/gi-renal-metabolic/corrected-calcium"
     },
     {
+      "id": "corrected-sodium-hyperglycemia",
+      "title": "Corrected Sodium for Hyperglycemia",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "hyponatremia",
+        "hyperglycemia",
+        "DKA",
+        "HHS",
+        "sodium",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "Hillier corrected sodium",
+        "DKA sodium correction",
+        "true sodium"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/corrected-sodium-hyperglycemia"
+    },
+    {
+      "id": "glasgow-blatchford",
+      "title": "Glasgow-Blatchford Bleeding Score",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "upper GI bleed",
+        "hematemesis",
+        "melena",
+        "endoscopy",
+        "disposition",
+        "ED"
+      ],
+      "keywords": [
+        "BUN",
+        "hemoglobin",
+        "systolic BP",
+        "melena",
+        "syncope",
+        "GBS 0-1 discharge",
+        "GBS",
+        "upper GI bleed risk",
+        "GI bleed discharge",
+        "pre-endoscopy bleeding score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/glasgow-blatchford"
+    },
+    {
+      "id": "maddrey-df",
+      "title": "Maddrey's Discriminant Function",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "alcoholic hepatitis",
+        "corticosteroid decision",
+        "prothrombin time",
+        "bilirubin",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "mDF",
+        "discriminant function",
+        "alcoholic hepatitis steroids"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/maddrey-df"
+    },
+    {
+      "id": "meld-na",
+      "title": "MELD-Na Score",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "cirrhosis",
+        "liver disease",
+        "transplant",
+        "perioperative risk",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "MELD sodium",
+        "MELD-Na",
+        "liver disease severity",
+        "transplant priority"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/meld-na"
+    },
+    {
+      "id": "ranson",
+      "title": "Ranson's Criteria (Acute Pancreatitis)",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "acute pancreatitis",
+        "severity",
+        "mortality",
+        "ICU",
+        "ED"
+      ],
+      "keywords": [
+        "age",
+        "WBC",
+        "glucose",
+        "AST",
+        "LDH",
+        "calcium",
+        "hematocrit drop",
+        "BUN rise",
+        "base deficit",
+        "fluid sequestration",
+        "PaO2",
+        "Ranson",
+        "Ranson score",
+        "pancreatitis severity",
+        "pancreatitis mortality"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/ranson"
+    },
+    {
+      "id": "refeeding-risk",
+      "title": "Refeeding Syndrome Risk (NICE Criteria)",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "refeeding syndrome",
+        "nutrition",
+        "electrolytes",
+        "phosphate",
+        "ICU"
+      ],
+      "keywords": [
+        "BMI",
+        "unintentional weight loss",
+        "little or no nutritional intake",
+        "low potassium magnesium phosphate",
+        "alcohol",
+        "insulin diuretics chemotherapy",
+        "thiamine before feeding",
+        "refeeding syndrome",
+        "NICE refeeding",
+        "refeeding risk stratification"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/refeeding-risk"
+    },
+    {
+      "id": "rockall",
+      "title": "Rockall Score (Upper GI Bleed)",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "upper GI bleed",
+        "rebleeding",
+        "mortality",
+        "endoscopy",
+        "ED",
+        "risk stratification"
+      ],
+      "keywords": [
+        "age",
+        "shock",
+        "comorbidity",
+        "endoscopic diagnosis",
+        "stigmata of recent hemorrhage",
+        "pre-endoscopy Rockall",
+        "full Rockall",
+        "Rockall",
+        "post-endoscopy rebleeding risk",
+        "UGIB mortality score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/rockall"
+    },
+    {
+      "id": "four-ts-hit",
+      "title": "4Ts Score for HIT",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "HIT",
+        "heparin",
+        "thrombocytopenia",
+        "anticoagulation",
+        "ICU"
+      ],
+      "keywords": [
+        "4T score",
+        "heparin-induced thrombocytopenia probability",
+        "HIT pretest"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/four-ts-hit"
+    },
+    {
+      "id": "ards-berlin",
+      "title": "ARDS — Berlin Definition",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "ARDS",
+        "mechanical ventilation",
+        "hypoxemia",
+        "ICU",
+        "lung-protective ventilation"
+      ],
+      "keywords": [
+        "timing within 1 week",
+        "bilateral opacities",
+        "not fully explained by cardiac failure",
+        "PaO2/FiO2 with PEEP >= 5",
+        "mild moderate severe ARDS",
+        "Berlin ARDS",
+        "ARDS severity",
+        "acute respiratory distress syndrome definition",
+        "P/F ratio ARDS"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/ards-berlin"
+    },
+    {
+      "id": "cam-icu",
+      "title": "CAM-ICU (Delirium Assessment)",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "delirium",
+        "ICU",
+        "PADIS",
+        "mechanical ventilation",
+        "sedation"
+      ],
+      "keywords": [
+        "acute change in mental status",
+        "inattention",
+        "letters attention test",
+        "altered level of consciousness",
+        "disorganized thinking",
+        "RASS",
+        "delirium positive",
+        "CAM-ICU",
+        "confusion assessment method ICU",
+        "ICU delirium screen"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/cam-icu"
+    },
+    {
+      "id": "cpot",
+      "title": "CPOT (Critical-Care Pain Observation Tool)",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "pain assessment",
+        "sedation",
+        "analgesia",
+        "ICU",
+        "PADIS",
+        "mechanical ventilation"
+      ],
+      "keywords": [
+        "facial expression",
+        "body movements",
+        "muscle tension",
+        "ventilator compliance",
+        "vocalization",
+        "CPOT > 2 significant pain",
+        "CPOT",
+        "pain score intubated",
+        "nonverbal pain assessment",
+        "behavioral pain scale alternative"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/cpot"
+    },
+    {
+      "id": "harris-benedict",
+      "title": "Harris-Benedict Energy Expenditure",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "nutrition",
+        "energy expenditure",
+        "ICU",
+        "enteral feeding",
+        "caloric target"
+      ],
+      "keywords": [
+        "Harris-Benedict",
+        "basal energy expenditure",
+        "BEE",
+        "resting energy expenditure",
+        "caloric requirement"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/harris-benedict"
+    },
+    {
+      "id": "improve-bleed",
+      "title": "IMPROVE Bleeding Risk Score",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "VTE prophylaxis",
+        "bleeding risk",
+        "medical inpatient",
+        "anticoagulation",
+        "ICU"
+      ],
+      "keywords": [
+        "active gastroduodenal ulcer",
+        "bleeding in 3 months",
+        "platelet count",
+        "age",
+        "hepatic failure",
+        "renal failure",
+        "ICU admission",
+        "central venous catheter",
+        "rheumatic disease",
+        "male sex",
+        "IMPROVE bleed",
+        "medical inpatient bleeding risk",
+        "VTE prophylaxis bleeding risk",
+        "IMPROVE bleeding"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/improve-bleed"
+    },
+    {
+      "id": "padua-prediction-score",
+      "title": "Padua Prediction Score",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "VTE",
+        "DVT prophylaxis",
+        "medical inpatient",
+        "thromboprophylaxis",
+        "ICU"
+      ],
+      "keywords": [
+        "Padua VTE",
+        "medical patient VTE risk"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/padua-prediction-score"
+    },
+    {
+      "id": "pf-ratio",
+      "title": "PaO₂ / FiO₂ (P/F) Ratio",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "ARDS",
+        "oxygenation",
+        "hypoxemia",
+        "mechanical ventilation",
+        "Berlin criteria",
+        "ICU"
+      ],
+      "keywords": [
+        "PaO2 divided by FiO2",
+        "mild 200-300",
+        "moderate 100-200",
+        "severe < 100",
+        "PEEP >= 5",
+        "S/F ratio",
+        "PF ratio",
+        "Horowitz index",
+        "oxygenation index",
+        "ARDS severity"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/pf-ratio"
+    },
+    {
+      "id": "rsbi",
+      "title": "Rapid Shallow Breathing Index (RSBI)",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "weaning",
+        "extubation",
+        "spontaneous breathing trial",
+        "mechanical ventilation",
+        "ICU"
+      ],
+      "keywords": [
+        "respiratory rate over tidal volume",
+        "RSBI < 105",
+        "measured during a T-piece or low PS trial",
+        "not a standalone extubation order",
+        "RSBI",
+        "Tobin index",
+        "f/Vt",
+        "extubation readiness",
+        "weaning predictor"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/rsbi"
+    },
+    {
+      "id": "rass",
+      "title": "RASS (Richmond Agitation-Sedation Scale)",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "sedation",
+        "agitation",
+        "ventilator",
+        "ICU",
+        "delirium screen"
+      ],
+      "keywords": [
+        "Richmond agitation sedation scale",
+        "sedation depth",
+        "sedation target"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/rass"
+    },
+    {
       "id": "abcd2",
       "title": "ABCD² Score for TIA",
       "section": "Calculators",
@@ -193,6 +1070,63 @@
       ],
       "contentType": "calculator",
       "route": "/calculators/neuro-stroke-head-injury/abcd2"
+    },
+    {
+      "id": "canadian-ct-head",
+      "title": "Canadian CT Head Rule",
+      "section": "Calculators",
+      "category": "Neuro / Stroke / Head Injury",
+      "tags": [
+        "head injury",
+        "CT head",
+        "clinical decision rule",
+        "ED",
+        "rule-out"
+      ],
+      "keywords": [
+        "GCS < 15 at 2 hours",
+        "suspected open or depressed skull fracture",
+        "signs of basal skull fracture",
+        "vomiting >= 2 episodes",
+        "age >= 65",
+        "amnesia before impact >= 30 min",
+        "dangerous mechanism",
+        "CCHR",
+        "Canadian CT head rule",
+        "minor head injury CT",
+        "head CT decision rule"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/neuro-stroke-head-injury/canadian-ct-head"
+    },
+    {
+      "id": "four-score",
+      "title": "FOUR Score (Coma Scale)",
+      "section": "Calculators",
+      "category": "Neuro / Stroke / Head Injury",
+      "tags": [
+        "coma",
+        "consciousness",
+        "brainstem",
+        "ICU",
+        "neurocritical care",
+        "prognosis"
+      ],
+      "keywords": [
+        "eye response",
+        "motor response",
+        "brainstem reflexes",
+        "respiration pattern",
+        "intubated patient GCS",
+        "locked-in",
+        "vegetative",
+        "FOUR score",
+        "Full Outline of UnResponsiveness",
+        "coma scale intubated",
+        "GCS alternative"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/neuro-stroke-head-injury/four-score"
     },
     {
       "id": "gcs",
@@ -237,6 +1171,32 @@
       "route": "/calculators/neuro-stroke-head-injury/hunt-hess"
     },
     {
+      "id": "ich-score",
+      "title": "ICH Score",
+      "section": "Calculators",
+      "category": "Neuro / Stroke / Head Injury",
+      "tags": [
+        "intracerebral hemorrhage",
+        "stroke",
+        "prognosis",
+        "goals of care",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "GCS",
+        "ICH volume 30 mL",
+        "intraventricular extension",
+        "infratentorial origin",
+        "age 80",
+        "intracerebral hemorrhage score",
+        "Hemphill ICH score",
+        "ICH 30-day mortality"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/neuro-stroke-head-injury/ich-score"
+    },
+    {
       "id": "nihss",
       "title": "NIH Stroke Scale (NIHSS)",
       "section": "Calculators",
@@ -256,6 +1216,58 @@
       ],
       "contentType": "calculator",
       "route": "/calculators/neuro-stroke-head-injury/nihss"
+    },
+    {
+      "id": "ottawa-sah-rule",
+      "title": "Ottawa SAH Rule",
+      "section": "Calculators",
+      "category": "Neuro / Stroke / Head Injury",
+      "tags": [
+        "subarachnoid hemorrhage",
+        "headache",
+        "clinical decision rule",
+        "ED",
+        "rule-out"
+      ],
+      "keywords": [
+        "age >= 40",
+        "neck pain or stiffness",
+        "witnessed loss of consciousness",
+        "onset during exertion",
+        "thunderclap headache",
+        "limited neck flexion",
+        "Ottawa subarachnoid hemorrhage rule",
+        "SAH rule out",
+        "thunderclap headache rule"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/neuro-stroke-head-injury/ottawa-sah-rule"
+    },
+    {
+      "id": "bode-index",
+      "title": "BODE Index (COPD Prognosis)",
+      "section": "Calculators",
+      "category": "Pulmonary / PE / DVT / Resp Failure",
+      "tags": [
+        "COPD",
+        "prognosis",
+        "mortality",
+        "pulmonary rehabilitation",
+        "lung transplant referral"
+      ],
+      "keywords": [
+        "BMI",
+        "FEV1 percent predicted",
+        "mMRC dyspnea scale",
+        "6-minute walk distance",
+        "COPD 4-year survival",
+        "BODE",
+        "COPD mortality index",
+        "BODE score",
+        "COPD prognosis"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/pulmonary-pe-dvt-resp-failure/bode-index"
     },
     {
       "id": "curb-65",
@@ -297,6 +1309,66 @@
       "route": "/calculators/pulmonary-pe-dvt-resp-failure/perc-rule"
     },
     {
+      "id": "pesi",
+      "title": "PESI (Pulmonary Embolism Severity Index)",
+      "section": "Calculators",
+      "category": "Pulmonary / PE / DVT / Resp Failure",
+      "tags": [
+        "pulmonary embolism",
+        "risk stratification",
+        "prognosis",
+        "disposition",
+        "ED"
+      ],
+      "keywords": [
+        "age",
+        "male sex",
+        "cancer",
+        "heart failure",
+        "chronic lung disease",
+        "pulse >= 110",
+        "systolic BP < 100",
+        "respiratory rate >= 30",
+        "temperature < 36",
+        "altered mental status",
+        "oxygen saturation < 90",
+        "PESI",
+        "pulmonary embolism severity index",
+        "PE 30-day mortality",
+        "PE prognosis full"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/pulmonary-pe-dvt-resp-failure/pesi"
+    },
+    {
+      "id": "revised-geneva",
+      "title": "Revised Geneva Score for PE",
+      "section": "Calculators",
+      "category": "Pulmonary / PE / DVT / Resp Failure",
+      "tags": [
+        "pulmonary embolism",
+        "pretest probability",
+        "d-dimer",
+        "ED"
+      ],
+      "keywords": [
+        "age > 65",
+        "previous DVT or PE",
+        "surgery or fracture within 1 month",
+        "active malignancy",
+        "unilateral limb pain",
+        "hemoptysis",
+        "heart rate",
+        "pain on deep venous palpation",
+        "Geneva score",
+        "revised Geneva",
+        "PE pretest probability",
+        "objective PE score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/pulmonary-pe-dvt-resp-failure/revised-geneva"
+    },
+    {
       "id": "rox-index",
       "title": "ROX Index",
       "section": "Calculators",
@@ -314,6 +1386,34 @@
       ],
       "contentType": "calculator",
       "route": "/calculators/pulmonary-pe-dvt-resp-failure/rox-index"
+    },
+    {
+      "id": "spesi",
+      "title": "Simplified PESI (sPESI)",
+      "section": "Calculators",
+      "category": "Pulmonary / PE / DVT / Resp Failure",
+      "tags": [
+        "pulmonary embolism",
+        "risk stratification",
+        "prognosis",
+        "disposition",
+        "ED"
+      ],
+      "keywords": [
+        "age > 80",
+        "cancer",
+        "chronic cardiopulmonary disease",
+        "heart rate >= 110",
+        "SBP < 100",
+        "SaO2 < 90",
+        "PE home treatment",
+        "sPESI",
+        "simplified pulmonary embolism severity index",
+        "PE 30-day mortality",
+        "PE outpatient eligibility"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/pulmonary-pe-dvt-resp-failure/spesi"
     },
     {
       "id": "wells-dvt",
@@ -355,6 +1455,91 @@
       "route": "/calculators/pulmonary-pe-dvt-resp-failure/wells-pe"
     },
     {
+      "id": "years-pe",
+      "title": "YEARS Algorithm for PE",
+      "section": "Calculators",
+      "category": "Pulmonary / PE / DVT / Resp Failure",
+      "tags": [
+        "pulmonary embolism",
+        "d-dimer",
+        "diagnostic pathway",
+        "ED",
+        "pregnancy"
+      ],
+      "keywords": [
+        "clinical signs of DVT",
+        "hemoptysis",
+        "PE most likely diagnosis",
+        "d-dimer 500",
+        "d-dimer 1000",
+        "avoid CTPA",
+        "YEARS",
+        "YEARS criteria",
+        "PE D-dimer algorithm",
+        "simplified PE workup"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/pulmonary-pe-dvt-resp-failure/years-pe"
+    },
+    {
+      "id": "apache-ii",
+      "title": "APACHE II Score",
+      "section": "Calculators",
+      "category": "Sepsis / Infectious Disease",
+      "tags": [
+        "ICU",
+        "mortality",
+        "severity of illness",
+        "prognosis",
+        "critical care"
+      ],
+      "keywords": [
+        "acute physiology score",
+        "age points",
+        "chronic health points",
+        "temperature",
+        "MAP",
+        "heart rate",
+        "respiratory rate",
+        "oxygenation",
+        "arterial pH",
+        "sodium",
+        "potassium",
+        "creatinine",
+        "hematocrit",
+        "WBC",
+        "GCS",
+        "worst value in first 24 hours",
+        "APACHE II",
+        "acute physiology and chronic health evaluation",
+        "ICU mortality score",
+        "ICU severity of illness"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/sepsis-infectious-disease/apache-ii"
+    },
+    {
+      "id": "centor-mcisaac",
+      "title": "Centor Score / McIsaac Modification",
+      "section": "Calculators",
+      "category": "Sepsis / Infectious Disease",
+      "tags": [
+        "pharyngitis",
+        "strep throat",
+        "GAS",
+        "antibiotics",
+        "rapid strep test",
+        "ED"
+      ],
+      "keywords": [
+        "Centor criteria",
+        "strep pharyngitis score",
+        "sore throat score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/sepsis-infectious-disease/centor-mcisaac"
+    },
+    {
       "id": "lrinec",
       "title": "LRINEC Score",
       "section": "Calculators",
@@ -372,6 +1557,47 @@
       ],
       "contentType": "calculator",
       "route": "/calculators/sepsis-infectious-disease/lrinec"
+    },
+    {
+      "id": "psi-port",
+      "title": "Pneumonia Severity Index (PSI / PORT)",
+      "section": "Calculators",
+      "category": "Sepsis / Infectious Disease",
+      "tags": [
+        "community-acquired pneumonia",
+        "risk stratification",
+        "disposition",
+        "mortality",
+        "ED"
+      ],
+      "keywords": [
+        "age",
+        "nursing home resident",
+        "neoplastic disease",
+        "liver disease",
+        "heart failure",
+        "cerebrovascular disease",
+        "renal disease",
+        "altered mental status",
+        "respiratory rate >= 30",
+        "systolic BP < 90",
+        "temperature",
+        "pulse >= 125",
+        "pH < 7.35",
+        "BUN",
+        "sodium",
+        "glucose",
+        "hematocrit < 30",
+        "PaO2 < 60",
+        "pleural effusion",
+        "PSI",
+        "PORT score",
+        "pneumonia severity index",
+        "CAP admission decision",
+        "Fine score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/sepsis-infectious-disease/psi-port"
     },
     {
       "id": "qsofa",
@@ -393,6 +1619,148 @@
       "route": "/calculators/sepsis-infectious-disease/qsofa"
     },
     {
+      "id": "sirs",
+      "title": "SIRS Criteria",
+      "section": "Calculators",
+      "category": "Sepsis / Infectious Disease",
+      "tags": [
+        "sepsis",
+        "systemic inflammation",
+        "rapid response",
+        "screening",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "systemic inflammatory response syndrome",
+        "SIRS score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/sepsis-infectious-disease/sirs"
+    },
+    {
+      "id": "sofa-score",
+      "title": "SOFA Score",
+      "section": "Calculators",
+      "category": "Sepsis / Infectious Disease",
+      "tags": [
+        "sepsis",
+        "organ dysfunction",
+        "ICU",
+        "Sepsis-3",
+        "mortality"
+      ],
+      "keywords": [
+        "PaO2/FiO2",
+        "platelets",
+        "bilirubin",
+        "MAP vasopressors",
+        "GCS",
+        "creatinine urine output",
+        "delta SOFA >= 2",
+        "Sequential Organ Failure Assessment",
+        "organ dysfunction score",
+        "sepsis-3 SOFA"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/sepsis-infectious-disease/sofa-score"
+    },
+    {
+      "id": "ciwa-ar",
+      "title": "CIWA-Ar (Alcohol Withdrawal)",
+      "section": "Calculators",
+      "category": "Toxicology / Withdrawal",
+      "tags": [
+        "alcohol withdrawal",
+        "benzodiazepine",
+        "symptom-triggered dosing",
+        "delirium tremens",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "nausea vomiting",
+        "tremor",
+        "paroxysmal sweats",
+        "anxiety",
+        "agitation",
+        "tactile auditory visual disturbances",
+        "headache",
+        "orientation",
+        "score >= 8 medicate",
+        "CIWA",
+        "alcohol withdrawal assessment",
+        "symptom-triggered benzodiazepine",
+        "AWS score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/toxicology-withdrawal/ciwa-ar"
+    },
+    {
+      "id": "cows",
+      "title": "COWS (Clinical Opiate Withdrawal Scale)",
+      "section": "Calculators",
+      "category": "Toxicology / Withdrawal",
+      "tags": [
+        "opioid withdrawal",
+        "buprenorphine",
+        "induction",
+        "OUD",
+        "ED"
+      ],
+      "keywords": [
+        "resting pulse",
+        "sweating",
+        "restlessness",
+        "pupil size",
+        "bone or joint aches",
+        "runny nose",
+        "GI upset",
+        "tremor",
+        "yawning",
+        "anxiety",
+        "gooseflesh",
+        "COWS >= 8-12 for buprenorphine",
+        "COWS",
+        "opioid withdrawal scale",
+        "buprenorphine induction timing",
+        "opiate withdrawal severity"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/toxicology-withdrawal/cows"
+    },
+    {
+      "id": "hunter-serotonin",
+      "title": "Hunter Serotonin Toxicity Criteria",
+      "section": "Calculators",
+      "category": "Toxicology / Withdrawal",
+      "tags": [
+        "serotonin syndrome",
+        "toxicology",
+        "clonus",
+        "hyperthermia",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "spontaneous clonus",
+        "inducible clonus",
+        "ocular clonus",
+        "agitation",
+        "diaphoresis",
+        "tremor",
+        "hyperreflexia",
+        "hypertonia",
+        "temperature > 38",
+        "Hunter criteria",
+        "serotonin syndrome",
+        "serotonin toxicity",
+        "SS diagnosis"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/toxicology-withdrawal/hunter-serotonin"
+    },
+    {
       "id": "osmolal-gap",
       "title": "Osmolal Gap",
       "section": "Calculators",
@@ -411,6 +1779,174 @@
       ],
       "contentType": "calculator",
       "route": "/calculators/toxicology-withdrawal/osmolal-gap"
+    },
+    {
+      "id": "salicylate-toxicity",
+      "title": "Salicylate Toxicity — Level & Management",
+      "section": "Calculators",
+      "category": "Toxicology / Withdrawal",
+      "tags": [
+        "salicylate",
+        "aspirin",
+        "overdose",
+        "toxicology",
+        "hemodialysis",
+        "urinary alkalinization",
+        "ED"
+      ],
+      "keywords": [
+        "salicylate level",
+        "hours post ingestion",
+        "acute vs chronic",
+        "hemodialysis criteria",
+        "serum bicarbonate",
+        "arterial pH",
+        "tinnitus",
+        "mixed acid-base",
+        "salicylate toxicity",
+        "aspirin overdose",
+        "Done nomogram",
+        "ASA poisoning",
+        "salicylism"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/toxicology-withdrawal/salicylate-toxicity"
+    },
+    {
+      "id": "abc-score-mtp",
+      "title": "ABC Score for Massive Transfusion",
+      "section": "Calculators",
+      "category": "Trauma",
+      "tags": [
+        "trauma",
+        "massive transfusion",
+        "hemorrhage",
+        "MTP",
+        "ED",
+        "resuscitation"
+      ],
+      "keywords": [
+        "penetrating mechanism",
+        "systolic BP <= 90",
+        "heart rate >= 120",
+        "positive FAST",
+        "activate massive transfusion",
+        "ABC score",
+        "Assessment of Blood Consumption",
+        "massive transfusion protocol trigger",
+        "MTP activation"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/trauma/abc-score-mtp"
+    },
+    {
+      "id": "canadian-cspine",
+      "title": "Canadian C-Spine Rule",
+      "section": "Calculators",
+      "category": "Trauma",
+      "tags": [
+        "cervical spine",
+        "c-spine clearance",
+        "clinical decision rule",
+        "trauma",
+        "ED",
+        "rule-out"
+      ],
+      "keywords": [
+        "age >= 65",
+        "dangerous mechanism",
+        "paresthesias in extremities",
+        "simple rear-end MVC",
+        "sitting position in ED",
+        "ambulatory at any time",
+        "delayed onset neck pain",
+        "absence of midline tenderness",
+        "able to rotate neck 45 degrees",
+        "CCR",
+        "Canadian cervical spine rule",
+        "c-spine clearance",
+        "cervical spine imaging rule"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/trauma/canadian-cspine"
+    },
+    {
+      "id": "injury-severity-score",
+      "title": "Injury Severity Score (ISS)",
+      "section": "Calculators",
+      "category": "Trauma",
+      "tags": [
+        "trauma",
+        "anatomic injury",
+        "severity",
+        "registry",
+        "prognosis"
+      ],
+      "keywords": [
+        "Abbreviated Injury Scale",
+        "six body regions",
+        "three worst regions",
+        "sum of squares",
+        "ISS >= 16 major trauma",
+        "ISS",
+        "injury severity score",
+        "trauma anatomic score",
+        "AIS-based severity"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/trauma/injury-severity-score"
+    },
+    {
+      "id": "modified-shock-index",
+      "title": "Modified Shock Index (MSI)",
+      "section": "Calculators",
+      "category": "Trauma",
+      "tags": [
+        "hemorrhage",
+        "occult shock",
+        "sepsis",
+        "trauma",
+        "GI bleed",
+        "post-intubation hypotension",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "MSI",
+        "mean arterial pressure",
+        "compensated shock",
+        "HR over MAP",
+        "shock index MAP"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/trauma/modified-shock-index"
+    },
+    {
+      "id": "nexus-chest-ct",
+      "title": "NEXUS Chest CT Decision Instrument",
+      "section": "Calculators",
+      "category": "Trauma",
+      "tags": [
+        "blunt trauma",
+        "chest imaging",
+        "clinical decision rule",
+        "ED",
+        "rule-out"
+      ],
+      "keywords": [
+        "abnormal chest x-ray",
+        "distracting injury",
+        "chest wall tenderness",
+        "sternal tenderness",
+        "thoracic spine tenderness",
+        "scapular tenderness",
+        "rapid deceleration",
+        "NEXUS chest CT",
+        "blunt chest trauma imaging",
+        "chest CT vs chest x-ray trauma"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/trauma/nexus-chest-ct"
     },
     {
       "id": "nexus-cspine",
@@ -434,6 +1970,114 @@
       "route": "/calculators/trauma/nexus-cspine"
     },
     {
+      "id": "ottawa-ankle-rules",
+      "title": "Ottawa Ankle & Foot Rules",
+      "section": "Calculators",
+      "category": "Trauma",
+      "tags": [
+        "ankle injury",
+        "foot injury",
+        "sprain",
+        "imaging decision",
+        "x-ray",
+        "ED"
+      ],
+      "keywords": [
+        "posterior edge lateral malleolus",
+        "navicular",
+        "base of 5th metatarsal",
+        "bear weight 4 steps",
+        "Ottawa ankle rule",
+        "ankle x-ray decision",
+        "foot x-ray decision",
+        "malleolar zone",
+        "midfoot zone"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/trauma/ottawa-ankle-rules"
+    },
+    {
+      "id": "ottawa-knee-rule",
+      "title": "Ottawa Knee Rule",
+      "section": "Calculators",
+      "category": "Trauma",
+      "tags": [
+        "knee injury",
+        "imaging decision",
+        "x-ray",
+        "ED"
+      ],
+      "keywords": [
+        "isolated patellar tenderness",
+        "fibular head",
+        "flex 90 degrees",
+        "bear weight 4 steps",
+        "knee x-ray decision",
+        "acute knee injury imaging"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/trauma/ottawa-knee-rule"
+    },
+    {
+      "id": "pecarn-head",
+      "title": "PECARN Pediatric Head Injury Rule",
+      "section": "Calculators",
+      "category": "Trauma",
+      "tags": [
+        "pediatric",
+        "head injury",
+        "CT head",
+        "clinical decision rule",
+        "ED",
+        "rule-out"
+      ],
+      "keywords": [
+        "GCS <= 14",
+        "altered mental status",
+        "palpable skull fracture",
+        "signs of basilar skull fracture",
+        "loss of consciousness",
+        "vomiting",
+        "severe mechanism",
+        "severe headache",
+        "scalp hematoma occipital parietal temporal",
+        "not acting normally per parent",
+        "clinically important traumatic brain injury",
+        "PECARN head",
+        "pediatric head CT rule",
+        "ciTBI rule",
+        "kids head injury CT"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/trauma/pecarn-head"
+    },
+    {
+      "id": "revised-trauma-score",
+      "title": "Revised Trauma Score (RTS)",
+      "section": "Calculators",
+      "category": "Trauma",
+      "tags": [
+        "trauma",
+        "triage",
+        "prognosis",
+        "prehospital",
+        "ED"
+      ],
+      "keywords": [
+        "Glasgow Coma Scale",
+        "systolic blood pressure",
+        "respiratory rate",
+        "trauma triage tool",
+        "T-RTS",
+        "RTS",
+        "revised trauma score",
+        "trauma triage score",
+        "triage RTS"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/trauma/revised-trauma-score"
+    },
+    {
       "id": "shock-index",
       "title": "Shock Index",
       "section": "Calculators",
@@ -455,6 +2099,1232 @@
       "route": "/calculators/trauma/shock-index"
     },
     {
+      "id": "atropine",
+      "title": "Atropine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Anticholinergics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "anticholinergic",
+        "atropine"
+      ],
+      "keywords": [
+        "AtroPen (auto-injector)"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-anticholinergics/atropine"
+    },
+    {
+      "id": "glycopyrrolate",
+      "title": "Glycopyrrolate",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Anticholinergics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "anticholinergic",
+        "glycopyrrolate"
+      ],
+      "keywords": [
+        "Robinul"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-anticholinergics/glycopyrrolate"
+    },
+    {
+      "id": "4-factor-pcc-kcentra",
+      "title": "4-Factor PCC (Kcentra)",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "anticoagulant",
+        "factor",
+        "pcc",
+        "kcentra"
+      ],
+      "keywords": [
+        "Kcentra / Beriplex / Octaplex"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/4-factor-pcc-kcentra"
+    },
+    {
+      "id": "aminocaproic-acid-amicar",
+      "title": "Aminocaproic Acid (Amicar)",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "anticoagulant",
+        "aminocaproic",
+        "acid",
+        "amicar"
+      ],
+      "keywords": [
+        "Amicar"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/aminocaproic-acid-amicar"
+    },
+    {
+      "id": "andexanet-alfa-ondexxya",
+      "title": "Andexanet Alfa (Ondexxya)",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "anticoagulant",
+        "andexanet",
+        "alfa",
+        "ondexxya"
+      ],
+      "keywords": [
+        "Ondexxya"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/andexanet-alfa-ondexxya"
+    },
+    {
+      "id": "desmopressin-ddavp",
+      "title": "Desmopressin (DDAVP)",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "anticoagulant",
+        "desmopressin",
+        "ddavp"
+      ],
+      "keywords": [
+        "DDAVP / Stimate"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/desmopressin-ddavp"
+    },
+    {
+      "id": "enoxaparin-lmwh",
+      "title": "Enoxaparin (LMWH)",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "anticoagulant",
+        "enoxaparin",
+        "lmwh"
+      ],
+      "keywords": [
+        "Lovenox"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/enoxaparin-lmwh"
+    },
+    {
+      "id": "heparin-unfractionated",
+      "title": "Heparin (Unfractionated)",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "anticoagulant",
+        "heparin",
+        "unfractionated"
+      ],
+      "keywords": [
+        "Heparin Sodium"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/heparin-unfractionated"
+    },
+    {
+      "id": "idarucizumab-praxbind",
+      "title": "Idarucizumab (Praxbind)",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "anticoagulant",
+        "idarucizumab",
+        "praxbind"
+      ],
+      "keywords": [
+        "Praxbind"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/idarucizumab-praxbind"
+    },
+    {
+      "id": "protamine-sulfate",
+      "title": "Protamine Sulfate",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "anticoagulant",
+        "protamine",
+        "sulfate"
+      ],
+      "keywords": [
+        "Protamine Sulfate"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/protamine-sulfate"
+    },
+    {
+      "id": "tranexamic-acid-txa",
+      "title": "Tranexamic Acid (TXA)",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "anticoagulant",
+        "tranexamic",
+        "acid",
+        "txa"
+      ],
+      "keywords": [
+        "Cyklokapron / Lysteda"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/tranexamic-acid-txa"
+    },
+    {
+      "id": "droperidol",
+      "title": "Droperidol",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Antiemetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "antiemetic",
+        "droperidol"
+      ],
+      "keywords": [
+        "Inapsine"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-antiemetics/droperidol"
+    },
+    {
+      "id": "ondansetron",
+      "title": "Ondansetron",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Antiemetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "antiemetic",
+        "ondansetron"
+      ],
+      "keywords": [
+        "Zofran"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-antiemetics/ondansetron"
+    },
+    {
+      "id": "midazolam",
+      "title": "Midazolam",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Benzodiazepines",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "benzodiazepine",
+        "midazolam"
+      ],
+      "keywords": [
+        "Versed"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-benzodiazepines/midazolam"
+    },
+    {
+      "id": "dantrolene",
+      "title": "Dantrolene",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Emergency Drugs",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "emergency",
+        "dantrolene"
+      ],
+      "keywords": [
+        "Ryanodex / Dantrium"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-emergency-drugs/dantrolene"
+    },
+    {
+      "id": "famotidine",
+      "title": "Famotidine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — GI / Aspiration Prophylaxis",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "gi",
+        "famotidine"
+      ],
+      "keywords": [
+        "Pepcid"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-gi-aspiration-prophylaxis/famotidine"
+    },
+    {
+      "id": "dexmedetomidine",
+      "title": "Dexmedetomidine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Induction Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "induction",
+        "dexmedetomidine"
+      ],
+      "keywords": [
+        "Precedex"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-induction-agents/dexmedetomidine"
+    },
+    {
+      "id": "etomidate",
+      "title": "Etomidate",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Induction Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "induction",
+        "etomidate"
+      ],
+      "keywords": [
+        "Amidate"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-induction-agents/etomidate"
+    },
+    {
+      "id": "ketamine",
+      "title": "Ketamine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Induction Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "induction",
+        "ketamine"
+      ],
+      "keywords": [
+        "Ketalar"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-induction-agents/ketamine"
+    },
+    {
+      "id": "propofol",
+      "title": "Propofol",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Induction Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "induction",
+        "propofol"
+      ],
+      "keywords": [
+        "Diprivan"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-induction-agents/propofol"
+    },
+    {
+      "id": "bupivacaine",
+      "title": "Bupivacaine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "bupivacaine"
+      ],
+      "keywords": [
+        "Marcaine / Sensorcaine"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-local-anesthetics/bupivacaine"
+    },
+    {
+      "id": "bupivacaine-hyperbaric-0-5",
+      "title": "Bupivacaine Hyperbaric 0.5%",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "bupivacaine",
+        "hyperbaric"
+      ],
+      "keywords": [
+        "Marcaine Heavy"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-local-anesthetics/bupivacaine-hyperbaric-0-5"
+    },
+    {
+      "id": "chloroprocaine-nesacaine",
+      "title": "Chloroprocaine (NESACAINE)",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "chloroprocaine",
+        "nesacaine"
+      ],
+      "keywords": [
+        "Nesacaine"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-local-anesthetics/chloroprocaine-nesacaine"
+    },
+    {
+      "id": "cocaine-4-10",
+      "title": "Cocaine 4–10%",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "cocaine",
+        "10"
+      ],
+      "keywords": [
+        "(Topical solution)"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-local-anesthetics/cocaine-4-10"
+    },
+    {
+      "id": "lidocaine",
+      "title": "Lidocaine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "lidocaine"
+      ],
+      "keywords": [
+        "Xylocaine"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-local-anesthetics/lidocaine"
+    },
+    {
+      "id": "lidocaine-with-epinephrine",
+      "title": "Lidocaine with Epinephrine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "lidocaine",
+        "with",
+        "epinephrine"
+      ],
+      "keywords": [
+        "Xylocaine with Epi"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-local-anesthetics/lidocaine-with-epinephrine"
+    },
+    {
+      "id": "liposomal-bupivacaine-exparel",
+      "title": "Liposomal Bupivacaine (Exparel)",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "liposomal",
+        "bupivacaine",
+        "exparel"
+      ],
+      "keywords": [
+        "Exparel"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-local-anesthetics/liposomal-bupivacaine-exparel"
+    },
+    {
+      "id": "mepivacaine",
+      "title": "Mepivacaine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "mepivacaine"
+      ],
+      "keywords": [
+        "Carbocaine / Polocaine"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-local-anesthetics/mepivacaine"
+    },
+    {
+      "id": "ropivacaine",
+      "title": "Ropivacaine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "ropivacaine"
+      ],
+      "keywords": [
+        "Naropin"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-local-anesthetics/ropivacaine"
+    },
+    {
+      "id": "ropivacaine-epidural-nerve-block",
+      "title": "Ropivacaine (Epidural/Nerve Block)",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "ropivacaine",
+        "epidural",
+        "nerve",
+        "block"
+      ],
+      "keywords": [
+        "Naropin"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-local-anesthetics/ropivacaine-epidural-nerve-block"
+    },
+    {
+      "id": "tetracaine",
+      "title": "Tetracaine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "tetracaine"
+      ],
+      "keywords": [
+        "Pontocaine"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-local-anesthetics/tetracaine"
+    },
+    {
+      "id": "methylene-blue",
+      "title": "Methylene Blue",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Methylene Blue",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "methylene-blue",
+        "methylene",
+        "blue"
+      ],
+      "keywords": [],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-methylene-blue/methylene-blue"
+    },
+    {
+      "id": "cisatracurium",
+      "title": "Cisatracurium",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Neuromuscular Blockers",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "nmb",
+        "cisatracurium"
+      ],
+      "keywords": [
+        "Nimbex"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-neuromuscular-blockers/cisatracurium"
+    },
+    {
+      "id": "rocuronium",
+      "title": "Rocuronium",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Neuromuscular Blockers",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "nmb",
+        "rocuronium"
+      ],
+      "keywords": [
+        "Zemuron"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-neuromuscular-blockers/rocuronium"
+    },
+    {
+      "id": "succinylcholine",
+      "title": "Succinylcholine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Neuromuscular Blockers",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "nmb",
+        "succinylcholine"
+      ],
+      "keywords": [
+        "Anectine / Quelicin"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-neuromuscular-blockers/succinylcholine"
+    },
+    {
+      "id": "vecuronium",
+      "title": "Vecuronium",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Neuromuscular Blockers",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "nmb",
+        "vecuronium"
+      ],
+      "keywords": [
+        "Norcuron"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-neuromuscular-blockers/vecuronium"
+    },
+    {
+      "id": "fentanyl",
+      "title": "Fentanyl",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Opioids",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "opioid",
+        "fentanyl"
+      ],
+      "keywords": [
+        "Sublimaze"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-opioids/fentanyl"
+    },
+    {
+      "id": "hydromorphone",
+      "title": "Hydromorphone",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Opioids",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "opioid",
+        "hydromorphone"
+      ],
+      "keywords": [
+        "Dilaudid"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-opioids/hydromorphone"
+    },
+    {
+      "id": "meperidine",
+      "title": "Meperidine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Opioids",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "opioid",
+        "meperidine"
+      ],
+      "keywords": [
+        "Demerol"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-opioids/meperidine"
+    },
+    {
+      "id": "methadone",
+      "title": "Methadone",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Opioids",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "opioid",
+        "methadone"
+      ],
+      "keywords": [
+        "Dolophine / Methadose"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-opioids/methadone"
+    },
+    {
+      "id": "morphine",
+      "title": "Morphine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Opioids",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "opioid",
+        "morphine"
+      ],
+      "keywords": [
+        "Duramorph (neuraxial)"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-opioids/morphine"
+    },
+    {
+      "id": "remifentanil",
+      "title": "Remifentanil",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Opioids",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "opioid",
+        "remifentanil"
+      ],
+      "keywords": [
+        "Ultiva"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-opioids/remifentanil"
+    },
+    {
+      "id": "flumazenil",
+      "title": "Flumazenil",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Reversal Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "reversal",
+        "flumazenil"
+      ],
+      "keywords": [
+        "Romazicon"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-reversal-agents/flumazenil"
+    },
+    {
+      "id": "naloxone",
+      "title": "Naloxone",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Reversal Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "reversal",
+        "naloxone"
+      ],
+      "keywords": [
+        "Narcan"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-reversal-agents/naloxone"
+    },
+    {
+      "id": "neostigmine",
+      "title": "Neostigmine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Reversal Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "reversal",
+        "neostigmine"
+      ],
+      "keywords": [
+        "Prostigmin / Bloxiverz"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-reversal-agents/neostigmine"
+    },
+    {
+      "id": "sugammadex",
+      "title": "Sugammadex",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Reversal Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "reversal",
+        "sugammadex"
+      ],
+      "keywords": [
+        "Bridion"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-reversal-agents/sugammadex"
+    },
+    {
+      "id": "ephedrine",
+      "title": "Ephedrine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Vasopressors",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "vasopressor",
+        "ephedrine"
+      ],
+      "keywords": [
+        "(Generic)"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-vasopressors/ephedrine"
+    },
+    {
+      "id": "epinephrine",
+      "title": "Epinephrine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Vasopressors",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "vasopressor",
+        "epinephrine"
+      ],
+      "keywords": [
+        "Adrenalin / EpiPen"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-vasopressors/epinephrine"
+    },
+    {
+      "id": "norepinephrine",
+      "title": "Norepinephrine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Vasopressors",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "vasopressor",
+        "norepinephrine"
+      ],
+      "keywords": [
+        "Levophed"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-vasopressors/norepinephrine"
+    },
+    {
+      "id": "phenylephrine",
+      "title": "Phenylephrine",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Vasopressors",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "vasopressor",
+        "phenylephrine"
+      ],
+      "keywords": [
+        "Neosynephrine"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-vasopressors/phenylephrine"
+    },
+    {
+      "id": "vasopressin",
+      "title": "Vasopressin",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Vasopressors",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "vasopressor",
+        "vasopressin"
+      ],
+      "keywords": [
+        "Pitressin / Vasostrict"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-vasopressors/vasopressin"
+    },
+    {
+      "id": "desflurane",
+      "title": "Desflurane",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Volatile Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "volatile",
+        "desflurane"
+      ],
+      "keywords": [
+        "Suprane"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-volatile-anesthetics/desflurane"
+    },
+    {
+      "id": "isoflurane",
+      "title": "Isoflurane",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Volatile Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "volatile",
+        "isoflurane"
+      ],
+      "keywords": [
+        "Forane"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-volatile-anesthetics/isoflurane"
+    },
+    {
+      "id": "nitrous-oxide",
+      "title": "Nitrous Oxide",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Volatile Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "volatile",
+        "nitrous",
+        "oxide"
+      ],
+      "keywords": [
+        "N₂O"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-volatile-anesthetics/nitrous-oxide"
+    },
+    {
+      "id": "sevoflurane",
+      "title": "Sevoflurane",
+      "section": "Drug & Dosing Cards",
+      "category": "AnesCalc — Volatile Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "volatile",
+        "sevoflurane"
+      ],
+      "keywords": [
+        "Ultane / Sojourn"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/anescalc-volatile-anesthetics/sevoflurane"
+    },
+    {
+      "id": "apap-nac-dosing",
+      "title": "Acetaminophen Overdose / NAC Dosing",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "acetaminophen",
+        "paracetamol",
+        "overdose",
+        "NAC",
+        "poisoning",
+        "ED"
+      ],
+      "keywords": [
+        "APAP overdose",
+        "Rumack-Matthew",
+        "N-acetylcysteine",
+        "paracetamol toxicity",
+        "150 line"
+      ],
+      "contentType": "calculator",
+      "route": "/drug-dosing/dosing-fluid-math/apap-nac-dosing"
+    },
+    {
+      "id": "adjusted-body-weight",
+      "title": "Adjusted / Lean Body Weight",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "obesity",
+        "drug dosing",
+        "induction agents",
+        "paralytics",
+        "OR",
+        "ICU"
+      ],
+      "keywords": [
+        "AdjBW",
+        "adjusted body weight",
+        "lean body weight",
+        "Janmahasatian",
+        "obesity dosing"
+      ],
+      "contentType": "calculator",
+      "route": "/drug-dosing/dosing-fluid-math/adjusted-body-weight"
+    },
+    {
+      "id": "cockcroft-gault",
+      "title": "Cockcroft-Gault Creatinine Clearance",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "renal dosing",
+        "creatinine clearance",
+        "kidney function",
+        "drug adjustment",
+        "ICU"
+      ],
+      "keywords": [
+        "CrCl",
+        "creatinine clearance",
+        "renal dosing"
+      ],
+      "contentType": "calculator",
+      "route": "/drug-dosing/dosing-fluid-math/cockcroft-gault"
+    },
+    {
+      "id": "free-water-deficit",
+      "title": "Free Water Deficit",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "hypernatremia",
+        "sodium correction",
+        "free water",
+        "ICU"
+      ],
+      "keywords": [
+        "hypernatremia correction",
+        "water deficit"
+      ],
+      "contentType": "calculator",
+      "route": "/drug-dosing/dosing-fluid-math/free-water-deficit"
+    },
+    {
+      "id": "ideal-body-weight",
+      "title": "Ideal Body Weight (Devine)",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "ideal body weight",
+        "tidal volume",
+        "lung protective ventilation",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "IBW",
+        "Devine formula",
+        "lung protective tidal volume weight"
+      ],
+      "contentType": "calculator",
+      "route": "/drug-dosing/dosing-fluid-math/ideal-body-weight"
+    },
+    {
+      "id": "holliday-segar-maintenance-fluids",
+      "title": "Maintenance Fluids (Holliday-Segar)",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "maintenance fluids",
+        "4-2-1",
+        "pediatric",
+        "IV fluids",
+        "peds"
+      ],
+      "keywords": [
+        "4-2-1 rule",
+        "maintenance IV fluids",
+        "pediatric maintenance rate"
+      ],
+      "contentType": "calculator",
+      "route": "/drug-dosing/dosing-fluid-math/holliday-segar-maintenance-fluids"
+    },
+    {
+      "id": "parkland-formula",
+      "title": "Parkland Formula for Burns",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "burns",
+        "fluid resuscitation",
+        "TBSA",
+        "trauma",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "burn fluid resuscitation",
+        "Parkland",
+        "TBSA fluids"
+      ],
+      "contentType": "calculator",
+      "route": "/drug-dosing/dosing-fluid-math/parkland-formula"
+    },
+    {
+      "id": "steroid-conversion",
+      "title": "Steroid Equivalent Dosing",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "corticosteroid",
+        "prednisone",
+        "dexamethasone",
+        "hydrocortisone",
+        "taper",
+        "stress dose"
+      ],
+      "keywords": [
+        "steroid conversion",
+        "corticosteroid equivalence",
+        "glucocorticoid conversion",
+        "stress dose steroids"
+      ],
+      "contentType": "reference",
+      "route": "/drug-dosing/dosing-fluid-math/steroid-conversion"
+    },
+    {
+      "id": "vasoactive-inotropic-score",
+      "title": "Vasoactive-Inotropic Score (VIS)",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "shock",
+        "vasopressors",
+        "inotropes",
+        "ICU",
+        "trend"
+      ],
+      "keywords": [
+        "VIS",
+        "pressor score",
+        "inotrope score"
+      ],
+      "contentType": "calculator",
+      "route": "/drug-dosing/dosing-fluid-math/vasoactive-inotropic-score"
+    },
+    {
+      "id": "peds-drip-rate",
+      "title": "Weight-Based Infusion Rate (peds drips)",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "infusion",
+        "drip",
+        "vasopressor",
+        "sedation infusion",
+        "peds",
+        "ICU"
+      ],
+      "keywords": [
+        "drip rate",
+        "infusion rate calculator",
+        "mcg/kg/min to mL/hr",
+        "pressor drip"
+      ],
+      "contentType": "calculator",
+      "route": "/drug-dosing/dosing-fluid-math/peds-drip-rate"
+    },
+    {
+      "id": "peds-adenosine-svt",
+      "title": "Adenosine — Pediatric Stable SVT",
+      "section": "Drug & Dosing Cards",
+      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "tags": [
+        "SVT",
+        "supraventricular tachycardia",
+        "narrow complex",
+        "peds",
+        "PALS"
+      ],
+      "keywords": [
+        "peds adenosine",
+        "SVT dose"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-adenosine-svt"
+    },
+    {
+      "id": "peds-amiodarone-arrest",
+      "title": "Amiodarone — Pediatric VF / Pulseless VT",
+      "section": "Drug & Dosing Cards",
+      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "tags": [
+        "VF",
+        "pulseless VT",
+        "cardiac arrest",
+        "antiarrhythmic",
+        "peds",
+        "PALS"
+      ],
+      "keywords": [
+        "peds amiodarone",
+        "shock-refractory VF dose"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-amiodarone-arrest"
+    },
+    {
+      "id": "peds-atropine-bradycardia",
+      "title": "Atropine — Pediatric (bradycardia / RSI premedication)",
+      "section": "Drug & Dosing Cards",
+      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "tags": [
+        "bradycardia",
+        "vagal",
+        "AV block",
+        "RSI premedication",
+        "peds",
+        "PALS"
+      ],
+      "keywords": [
+        "peds atropine",
+        "vagal bradycardia dose"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-atropine-bradycardia"
+    },
+    {
       "id": "peds-epinephrine-arrest",
       "title": "Epinephrine — Pediatric Cardiac Arrest",
       "section": "Drug & Dosing Cards",
@@ -467,6 +3337,387 @@
       ],
       "contentType": "drug-card",
       "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-epinephrine-arrest"
+    },
+    {
+      "id": "peds-ketamine-rsi",
+      "title": "Ketamine — Pediatric RSI Induction",
+      "section": "Drug & Dosing Cards",
+      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "tags": [
+        "RSI",
+        "rapid sequence intubation",
+        "induction",
+        "shock",
+        "reactive airway",
+        "peds"
+      ],
+      "keywords": [
+        "peds ketamine",
+        "RSI induction agent",
+        "ketamine intubation dose"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-ketamine-rsi"
+    },
+    {
+      "id": "peds-lorazepam-status",
+      "title": "Lorazepam — Pediatric Status Epilepticus",
+      "section": "Drug & Dosing Cards",
+      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "tags": [
+        "status epilepticus",
+        "seizure",
+        "benzodiazepine",
+        "first line",
+        "peds"
+      ],
+      "keywords": [
+        "peds lorazepam",
+        "Ativan seizure dose",
+        "first-line status epilepticus"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-lorazepam-status"
+    },
+    {
+      "id": "peds-midazolam-status",
+      "title": "Midazolam — Pediatric Status Epilepticus",
+      "section": "Drug & Dosing Cards",
+      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "tags": [
+        "status epilepticus",
+        "seizure",
+        "benzodiazepine",
+        "no IV access",
+        "peds"
+      ],
+      "keywords": [
+        "peds midazolam",
+        "Versed seizure dose",
+        "IM midazolam seizure"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-midazolam-status"
+    },
+    {
+      "id": "peds-rocuronium-rsi",
+      "title": "Rocuronium — Pediatric RSI Paralysis",
+      "section": "Drug & Dosing Cards",
+      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "tags": [
+        "RSI",
+        "rapid sequence intubation",
+        "paralytic",
+        "neuromuscular blockade",
+        "peds"
+      ],
+      "keywords": [
+        "peds rocuronium",
+        "RSI paralytic",
+        "non-depolarizing paralytic"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-rocuronium-rsi"
+    },
+    {
+      "id": "apgar-score",
+      "title": "APGAR Score",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "neonatal",
+        "APGAR",
+        "delivery room",
+        "newborn assessment",
+        "OB",
+        "Peds"
+      ],
+      "keywords": [
+        "Apgar",
+        "newborn Apgar",
+        "1 and 5 minute Apgar",
+        "delivery room scoring"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/apgar-score"
+    },
+    {
+      "id": "infant-of-diabetic-mother",
+      "title": "Infant of a Diabetic Mother",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "neonatal",
+        "IDM",
+        "hypoglycemia",
+        "macrosomia",
+        "hypocalcemia",
+        "polycythemia",
+        "hypertrophic cardiomyopathy",
+        "Peds",
+        "OB",
+        "NICU"
+      ],
+      "keywords": [
+        "IDM",
+        "neonatal hypoglycemia",
+        "macrosomia diabetic",
+        "infant diabetic mother complications",
+        "neonatal glucose threshold"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/infant-of-diabetic-mother"
+    },
+    {
+      "id": "neonatal-hie-cooling",
+      "title": "Neonatal HIE & Therapeutic Hypothermia",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "neonatal",
+        "HIE",
+        "hypoxic-ischemic encephalopathy",
+        "therapeutic hypothermia",
+        "Sarnat",
+        "cooling",
+        "birth asphyxia",
+        "Peds",
+        "OB",
+        "NICU"
+      ],
+      "keywords": [
+        "hypoxic-ischemic encephalopathy",
+        "perinatal asphyxia",
+        "Sarnat staging",
+        "neonatal cooling",
+        "therapeutic hypothermia newborn",
+        "whole-body cooling",
+        "TOBY NICHD CoolCap"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/neonatal-hie-cooling"
+    },
+    {
+      "id": "neonatal-jaundice",
+      "title": "Neonatal Jaundice (AAP 2022)",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "neonatal",
+        "jaundice",
+        "hyperbilirubinemia",
+        "phototherapy",
+        "exchange transfusion",
+        "kernicterus",
+        "biliary atresia",
+        "AAP 2022",
+        "Peds",
+        "OB"
+      ],
+      "keywords": [
+        "neonatal hyperbilirubinemia",
+        "phototherapy threshold",
+        "Bhutani nomogram",
+        "kernicterus",
+        "exchange transfusion neonate",
+        "breast milk jaundice",
+        "escalation of care bilirubin"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/neonatal-jaundice"
+    },
+    {
+      "id": "neonatal-seizures",
+      "title": "Neonatal Seizures",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "neonatal",
+        "seizure",
+        "phenobarbital",
+        "levetiracetam",
+        "EEG",
+        "aEEG",
+        "HIE",
+        "metabolic",
+        "Peds",
+        "NICU"
+      ],
+      "keywords": [
+        "neonatal seizure workup",
+        "jitteriness vs seizure",
+        "phenobarbital neonate",
+        "Volpe classification",
+        "pyridoxine-dependent epilepsy",
+        "electro-clinical dissociation"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/neonatal-seizures"
+    },
+    {
+      "id": "nrp-algorithm",
+      "title": "NRP — Neonatal Resuscitation",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "neonatal",
+        "resuscitation",
+        "delivery room",
+        "PPV",
+        "chest compressions",
+        "epinephrine",
+        "NRP",
+        "OB",
+        "Peds",
+        "ED"
+      ],
+      "keywords": [
+        "neonatal resuscitation program",
+        "delivery room resuscitation",
+        "newborn PPV",
+        "MR SOPA",
+        "3:1 compressions",
+        "neonatal epinephrine dose"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/nrp-algorithm"
+    },
+    {
+      "id": "neonatal-rds",
+      "title": "Respiratory Distress Syndrome (RDS)",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "neonatal",
+        "RDS",
+        "surfactant",
+        "prematurity",
+        "antenatal steroids",
+        "CPAP",
+        "ground-glass",
+        "NICU"
+      ],
+      "keywords": [
+        "hyaline membrane disease",
+        "surfactant deficiency",
+        "antenatal corticosteroids",
+        "preterm respiratory distress",
+        "INSURE"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/neonatal-rds"
+    },
+    {
+      "id": "newborn-routine-care",
+      "title": "Routine Newborn Care & Normal Findings",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "neonatal",
+        "routine care",
+        "vitamin K",
+        "eye prophylaxis",
+        "newborn exam",
+        "discharge",
+        "normal variants",
+        "OB",
+        "Peds"
+      ],
+      "keywords": [
+        "vitamin K newborn",
+        "eye prophylaxis erythromycin",
+        "newborn exam timeline",
+        "discharge checklist newborn",
+        "normal newborn variants",
+        "newborn vitals"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/newborn-routine-care"
+    },
+    {
+      "id": "brue-pathway",
+      "title": "BRUE Pathway",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "BRUE",
+        "infant",
+        "apnea",
+        "cyanosis",
+        "risk stratification",
+        "disposition"
+      ],
+      "keywords": [
+        "brief resolved unexplained event",
+        "ALTE",
+        "apparent life-threatening event"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/brue-pathway"
+    },
+    {
+      "id": "infant-cpr-parameters",
+      "title": "Infant & Child CPR Parameters (2025 PALS)",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "CPR",
+        "compressions",
+        "infant",
+        "choking",
+        "FBAO",
+        "PALS",
+        "2025"
+      ],
+      "keywords": [
+        "peds CPR",
+        "infant compressions",
+        "PALS parameters",
+        "infant choking"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/infant-cpr-parameters"
+    },
+    {
+      "id": "pediatric-appendicitis-score",
+      "title": "Pediatric Appendicitis Score (PAS)",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "appendicitis",
+        "abdominal pain",
+        "RLQ pain",
+        "peds",
+        "imaging decision"
+      ],
+      "keywords": [
+        "PAS",
+        "peds appendicitis",
+        "Samuel score"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/pediatric-appendicitis-score"
+    },
+    {
+      "id": "peds-dka-management",
+      "title": "Pediatric DKA Management",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "DKA",
+        "diabetic ketoacidosis",
+        "insulin infusion",
+        "cerebral edema",
+        "potassium",
+        "peds"
+      ],
+      "keywords": [
+        "peds DKA",
+        "pediatric diabetic ketoacidosis",
+        "DKA insulin fluids"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-dka-management"
     },
     {
       "id": "peds-glasgow-coma-scale",
@@ -483,15 +3734,221 @@
       "route": "/peds-module/peds-resuscitation-decision-support/peds-glasgow-coma-scale"
     },
     {
+      "id": "airway-management-flow",
+      "title": "Airway Management Flow",
+      "section": "Procedures",
+      "category": "Airway & Sedation Workflows",
+      "tags": [
+        "airway",
+        "intubation",
+        "RSI",
+        "difficult airway",
+        "cricothyrotomy",
+        "ED",
+        "OR"
+      ],
+      "keywords": [
+        "intubation workflow",
+        "difficult airway algorithm",
+        "plan A B C D",
+        "CICO"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/airway-sedation-workflows/airway-management-flow"
+    },
+    {
+      "id": "awake-intubation",
+      "title": "Awake Intubation (ICU)",
+      "section": "Procedures",
+      "category": "Airway & Sedation Workflows",
+      "tags": [
+        "awake intubation",
+        "difficult airway",
+        "physiologically difficult airway",
+        "topicalisation",
+        "dexmedetomidine",
+        "ICU",
+        "anesthesia"
+      ],
+      "keywords": [
+        "INTUBE study",
+        "9 mg/kg lean body weight lidocaine",
+        "spray-as-you-go",
+        "glycopyrrolate",
+        "HFNC",
+        "DAS",
+        "awake fibreoptic intubation",
+        "AFOI",
+        "awake videolaryngoscopy",
+        "topicalisation airway",
+        "tube before sleep"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/airway-sedation-workflows/awake-intubation"
+    },
+    {
+      "id": "procedural-sedation-workflow",
+      "title": "Procedural Sedation Workflow",
+      "section": "Procedures",
+      "category": "Airway & Sedation Workflows",
+      "tags": [
+        "procedural sedation",
+        "PSA",
+        "capnography",
+        "Aldrete",
+        "reversal agents",
+        "ED"
+      ],
+      "keywords": [
+        "conscious sedation",
+        "moderate sedation",
+        "PSA",
+        "sedation checklist"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/airway-sedation-workflows/procedural-sedation-workflow"
+    },
+    {
+      "id": "last-lipid-rescue",
+      "title": "LAST — Recognition & Lipid Rescue",
+      "section": "Procedures",
+      "category": "Regional Anesthesia & Ultrasound",
+      "tags": [
+        "LAST",
+        "local anesthetic toxicity",
+        "lipid emulsion",
+        "nerve block complication",
+        "ED",
+        "OR"
+      ],
+      "keywords": [
+        "local anesthetic systemic toxicity",
+        "lipid emulsion",
+        "Intralipid",
+        "bupivacaine toxicity"
+      ],
+      "contentType": "reference",
+      "route": "/procedures/regional-anesthesia-ultrasound/last-lipid-rescue"
+    },
+    {
+      "id": "nerve-block-guide",
+      "title": "Nerve Block Guide",
+      "section": "Procedures",
+      "category": "Regional Anesthesia & Ultrasound",
+      "tags": [
+        "nerve block",
+        "regional anesthesia",
+        "ultrasound guided",
+        "LAST",
+        "local anesthetic",
+        "fascia iliaca",
+        "ED",
+        "OR"
+      ],
+      "keywords": [
+        "regional anesthesia",
+        "peripheral nerve block",
+        "US-guided nerve block",
+        "fascia iliaca block",
+        "digital block"
+      ],
+      "contentType": "reference",
+      "route": "/procedures/regional-anesthesia-ultrasound/nerve-block-guide"
+    },
+    {
+      "id": "neuraxial-anticoagulation",
+      "title": "Neuraxial / Deep Blocks on Anticoagulants (ASRA 5th ed)",
+      "section": "Procedures",
+      "category": "Regional Anesthesia & Ultrasound",
+      "tags": [
+        "ASRA",
+        "neuraxial",
+        "epidural",
+        "spinal",
+        "anticoagulation",
+        "DOAC",
+        "hold times",
+        "spinal hematoma",
+        "OR"
+      ],
+      "keywords": [
+        "ASRA anticoagulation",
+        "neuraxial hold times",
+        "spinal epidural anticoagulation",
+        "DOAC stop times block"
+      ],
+      "contentType": "reference",
+      "route": "/procedures/regional-anesthesia-ultrasound/neuraxial-anticoagulation"
+    },
+    {
+      "id": "pocus-guide",
+      "title": "POCUS Guide",
+      "section": "Procedures",
+      "category": "Regional Anesthesia & Ultrasound",
+      "tags": [
+        "POCUS",
+        "ultrasound",
+        "FoCUS",
+        "FAST",
+        "lung ultrasound",
+        "IVC",
+        "RUSH",
+        "shock",
+        "DVT",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "point of care ultrasound",
+        "bedside ultrasound",
+        "FoCUS",
+        "FAST exam",
+        "RUSH",
+        "lung ultrasound",
+        "IVC ultrasound"
+      ],
+      "contentType": "reference",
+      "route": "/procedures/regional-anesthesia-ultrasound/pocus-guide"
+    },
+    {
+      "id": "fracture-splinting-guide",
+      "title": "Fracture / Splinting Guide",
+      "section": "Procedures",
+      "category": "Wound & Fracture Care",
+      "tags": [
+        "fracture",
+        "splint",
+        "immobilization",
+        "neurovascular check",
+        "compartment syndrome",
+        "ED"
+      ],
+      "keywords": [
+        "splint selection",
+        "splinting",
+        "fracture immobilization"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/wound-fracture-care/fracture-splinting-guide"
+    },
+    {
       "id": "laceration-repair",
       "title": "Laceration Repair Guide",
       "section": "Procedures",
       "category": "Wound & Fracture Care",
-      "tags": [],
+      "tags": [
+        "laceration",
+        "suture",
+        "wound closure",
+        "primary closure",
+        "suture removal",
+        "ED"
+      ],
       "keywords": [
         "suture",
         "wound closure",
-        "laceration"
+        "laceration",
+        "suture size selection"
       ],
       "contentType": "procedure",
       "route": "/procedures/wound-fracture-care/laceration-repair"
@@ -508,20 +3965,2005 @@
         "andexanet",
         "idarucizumab",
         "vitamin K",
-        "life-threatening hemorrhage"
+        "protamine",
+        "TEG",
+        "ROTEM",
+        "life-threatening hemorrhage",
+        "ED",
+        "ICU"
       ],
       "keywords": [
         "4F-PCC",
         "Kcentra",
         "Praxbind",
         "AndexXa",
+        "Ondexxya",
+        "DDAVP",
         "anticoag reversal",
         "factor Xa reversal",
         "warfarin reversal",
-        "DOAC reversal"
+        "DOAC reversal",
+        "bleeding reversal",
+        "protamine"
       ],
       "contentType": "reference",
       "route": "/reference-library/anticoagulation-labs/anticoagulation-reversal"
+    },
+    {
+      "id": "blood-products",
+      "title": "Blood Products Reference",
+      "section": "Reference Library",
+      "category": "Anticoagulation & Labs",
+      "tags": [
+        "transfusion",
+        "blood products",
+        "PRBC",
+        "platelets",
+        "FFP",
+        "cryoprecipitate",
+        "PCC",
+        "whole blood",
+        "fibrinogen",
+        "massive transfusion",
+        "hemorrhage",
+        "ED",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "AABB 2023",
+        "AABB ICTMG 2025 platelet",
+        "CRYOSTAT-2",
+        "FIBTEM",
+        "30-minute rule",
+        "TACO",
+        "1:1:1",
+        "PRBC platelets FFP cryo",
+        "transfusion thresholds",
+        "AABB restrictive transfusion",
+        "cryoprecipitate dose",
+        "prothrombin complex concentrate",
+        "whole blood LTOWB",
+        "fibrinogen concentrate vs cryo"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/anticoagulation-labs/blood-products"
+    },
+    {
+      "id": "lab-interpretation",
+      "title": "Lab Interpretation",
+      "section": "Reference Library",
+      "category": "Anticoagulation & Labs",
+      "tags": [
+        "labs",
+        "electrolytes",
+        "potassium replacement",
+        "magnesium",
+        "phosphate",
+        "CBC",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "electrolyte replacement",
+        "CBC patterns",
+        "critical values",
+        "micro quick reference"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/anticoagulation-labs/lab-interpretation"
+    },
+    {
+      "id": "teg-rotem-interpretation",
+      "title": "TEG / ROTEM Interpretation",
+      "section": "Reference Library",
+      "category": "Anticoagulation & Labs",
+      "tags": [
+        "TEG",
+        "ROTEM",
+        "viscoelastic testing",
+        "coagulopathy",
+        "massive transfusion",
+        "hyperfibrinolysis",
+        "platelet mapping",
+        "goal-directed transfusion",
+        "trauma",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "R time",
+        "K time",
+        "alpha angle",
+        "MA",
+        "LY30",
+        "CFF-MA",
+        "CK CKH CRT",
+        "MCF A10",
+        "APTEM",
+        "reptilase",
+        "TEG-PM",
+        "thromboelastography",
+        "viscoelastic testing",
+        "TEG 5000 vs TEG 6s",
+        "ROTEM assays",
+        "FIBTEM EXTEM INTEM",
+        "platelet mapping",
+        "goal-directed transfusion"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/anticoagulation-labs/teg-rotem-interpretation"
+    },
+    {
+      "id": "twelve-lead-stemi-criteria",
+      "title": "12-Lead: STEMI Criteria & Localization",
+      "section": "Reference Library",
+      "category": "Cardiac / ECG",
+      "tags": [
+        "STEMI",
+        "ST elevation",
+        "12-lead",
+        "MI localization",
+        "IABP",
+        "ED",
+        "ICU",
+        "UDMI"
+      ],
+      "keywords": [
+        "STEMI criteria",
+        "ST elevation thresholds",
+        "Fifth Universal Definition",
+        "Fourth Universal Definition",
+        "IABP timing"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/cardiac-ecg/twelve-lead-stemi-criteria"
+    },
+    {
+      "id": "acute-ischemic-stroke",
+      "title": "Acute Ischemic Stroke — Time-Based Algorithm",
+      "section": "Reference Library",
+      "category": "Cardiac / ECG",
+      "tags": [
+        "stroke",
+        "ischemic stroke",
+        "thrombolysis",
+        "alteplase",
+        "tenecteplase",
+        "thrombectomy",
+        "NIHSS",
+        "ICH",
+        "blood pressure",
+        "ED",
+        "neurology"
+      ],
+      "keywords": [
+        "1.9 million neurons/min",
+        "alteplase 0.9 mg/kg max 90",
+        "BP < 185/110 before tPA",
+        "permissive HTN 220/120",
+        "large vessel occlusion",
+        "24-hour window DAWN",
+        "ICH SBP target",
+        "ischemic stroke thrombolysis",
+        "tPA alteplase dose",
+        "thrombectomy LVO",
+        "stroke BP targets",
+        "tPA contraindications",
+        "ICH management",
+        "DAWN DEFUSE-3"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/cardiac-ecg/acute-ischemic-stroke"
+    },
+    {
+      "id": "acute-pe-guideline-2026",
+      "title": "Acute PE — 2026 AHA/ACC Guideline",
+      "section": "Reference Library",
+      "category": "Cardiac / ECG",
+      "tags": [
+        "pulmonary embolism",
+        "PE",
+        "risk stratification",
+        "PESI",
+        "sPESI",
+        "Hestia",
+        "catheter-directed lysis",
+        "thrombectomy",
+        "VA-ECMO",
+        "anticoagulation",
+        "RV failure",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "Acute PE Clinical Categories",
+        "normotensive shock",
+        "RV/LV ratio",
+        "PEERLESS",
+        "RENOVE",
+        "API-CAT",
+        "half-dose DOAC extended phase",
+        "CTEPD",
+        "R modifier",
+        "pulmonary embolism guideline 2026",
+        "PE clinical categories A-E",
+        "normotensive shock PE",
+        "PE severity taxonomy",
+        "PERT",
+        "PE advanced therapy",
+        "massive submassive PE replacement"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/cardiac-ecg/acute-pe-guideline-2026"
+    },
+    {
+      "id": "albumin-furosemide-push-pull",
+      "title": "Albumin + Furosemide (Push/Pull)",
+      "section": "Reference Library",
+      "category": "Cardiac / ECG",
+      "tags": [
+        "diuresis",
+        "edema",
+        "hypoalbuminemia",
+        "diuretic resistance",
+        "ADHF",
+        "cardiorenal",
+        "albumin",
+        "furosemide",
+        "ICU"
+      ],
+      "keywords": [
+        "revised Starling",
+        "glycocalyx",
+        "lymphatic outflow",
+        "25% vs 5% albumin",
+        "Chalikias 2026",
+        "VExUS",
+        "P/F ratio",
+        "push pull diuresis",
+        "25% albumin lasix",
+        "hyperoncotic albumin diuretic",
+        "diuretic resistance albumin",
+        "cardiorenal congestion albumin"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/cardiac-ecg/albumin-furosemide-push-pull"
+    },
+    {
+      "id": "beta-blocker-selectivity",
+      "title": "Beta-Blocker Receptor Selectivity",
+      "section": "Reference Library",
+      "category": "Cardiac / ECG",
+      "tags": [
+        "beta blocker",
+        "pharmacology",
+        "cardioselective",
+        "carvedilol",
+        "labetalol",
+        "sotalol",
+        "nebivolol",
+        "propranolol",
+        "overdose",
+        "membrane-stabilizing activity"
+      ],
+      "keywords": [
+        "B1",
+        "B2",
+        "alpha-1",
+        "membrane stabilizing activity",
+        "MSA",
+        "class III antiarrhythmic",
+        "QT prolongation",
+        "bronchospasm",
+        "beta blocker chart",
+        "cardioselective beta blockers",
+        "metoprolol vs carvedilol",
+        "labetalol receptors",
+        "sotalol class III",
+        "nebivolol nitric oxide"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/cardiac-ecg/beta-blocker-selectivity"
+    },
+    {
+      "id": "ecg-library",
+      "title": "ECG Library — Key Patterns",
+      "section": "Reference Library",
+      "category": "Cardiac / ECG",
+      "tags": [
+        "ECG",
+        "STEMI equivalent",
+        "OMI",
+        "De Winter",
+        "Wellens",
+        "posterior MI",
+        "aVR",
+        "Sgarbossa",
+        "Brugada",
+        "hyperkalemia",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "De Winter",
+        "Wellens",
+        "Brugada",
+        "hyperkalemia ECG",
+        "WPW",
+        "STEMI equivalents",
+        "OMI",
+        "occlusion MI"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/cardiac-ecg/ecg-library"
+    },
+    {
+      "id": "heart-failure-continuum",
+      "title": "Heart Failure — Chronic to Acute",
+      "section": "Reference Library",
+      "category": "Cardiac / ECG",
+      "tags": [
+        "heart failure",
+        "cardiomyopathy",
+        "HFpEF",
+        "HFrEF",
+        "cardiogenic shock",
+        "SCAI",
+        "mechanical circulatory support",
+        "Impella",
+        "VA-ECMO",
+        "amyloidosis",
+        "GDMT",
+        "cardiology",
+        "ICU"
+      ],
+      "keywords": [
+        "DCM",
+        "HCM",
+        "ARVC",
+        "ATTR-CM",
+        "takotsubo",
+        "PPCM",
+        "mavacamten",
+        "tafamidis",
+        "EMPEROR-Preserved",
+        "DELIVER",
+        "FINEARTS-HF",
+        "STEP-HFpEF",
+        "DanGer Shock",
+        "H2FPEF",
+        "cardiomyopathy phenotypes",
+        "HFpEF treatment",
+        "SGLT2i HFpEF",
+        "finerenone FINEARTS",
+        "cardiogenic shock DanGer Shock",
+        "Impella CP AMI-CS",
+        "SCAI shock stages",
+        "cardiac amyloidosis",
+        "peripartum cardiomyopathy"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/cardiac-ecg/heart-failure-continuum"
+    },
+    {
+      "id": "aki-staging-rrt",
+      "title": "AKI Staging & Renal Replacement Therapy",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "AKI",
+        "acute kidney injury",
+        "KDIGO",
+        "dialysis",
+        "RRT",
+        "CRRT",
+        "nephrotoxins",
+        "hyperkalemia",
+        "uremia",
+        "ICU"
+      ],
+      "keywords": [
+        "creatinine 1.5x baseline",
+        "urine output < 0.5 mL/kg/h",
+        "AEIOU",
+        "effluent 20-25 mL/kg/hr",
+        "regional citrate",
+        "avoid NSAIDs contrast aminoglycosides",
+        "KDIGO AKI staging",
+        "acute kidney injury stages",
+        "RRT indications",
+        "AEIOU dialysis",
+        "CRRT settings",
+        "CVVHDF dose",
+        "regional citrate anticoagulation"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/aki-staging-rrt"
+    },
+    {
+      "id": "contrast-associated-aki",
+      "title": "Contrast-Associated AKI — Prevention",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "contrast",
+        "AKI",
+        "nephropathy",
+        "prevention",
+        "hydration",
+        "PCI",
+        "CT contrast",
+        "cardiology",
+        "nephrology",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "Mehran risk score",
+        "PRESERVE",
+        "AMACING",
+        "POSEIDON",
+        "N-acetylcysteine",
+        "sodium bicarbonate",
+        "MACD",
+        "iso-osmolar contrast",
+        "RenalGuard",
+        "CI-AKI",
+        "contrast-induced nephropathy",
+        "CIN prevention",
+        "Mehran score",
+        "LVEDP-guided hydration",
+        "POSEIDON protocol",
+        "maximum acceptable contrast dose"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/contrast-associated-aki"
+    },
+    {
+      "id": "ecmo-support",
+      "title": "ECMO & Advanced Circulatory Support",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "ECMO",
+        "VA-ECMO",
+        "VV-ECMO",
+        "cardiogenic shock",
+        "ARDS",
+        "mechanical circulatory support",
+        "cannulation",
+        "ICU"
+      ],
+      "keywords": [
+        "differential hypoxia",
+        "North-South syndrome",
+        "distal perfusion cannula",
+        "SAVE score",
+        "ECMO-CS",
+        "ECLS-SHOCK",
+        "EOLIA",
+        "ELSO",
+        "VA-ECMO",
+        "VV-ECMO",
+        "extracorporeal membrane oxygenation",
+        "ECLS",
+        "Harlequin syndrome",
+        "LV venting ECMO",
+        "ECMO weaning"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/ecmo-support"
+    },
+    {
+      "id": "hyperkalemia-management",
+      "title": "Hyperkalemia — Emergency Management",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "hyperkalemia",
+        "electrolytes",
+        "ECG",
+        "calcium",
+        "insulin",
+        "dialysis",
+        "BRASH",
+        "AKI",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "K+ > 6.5",
+        "calcium gluconate 1-3 g",
+        "regular insulin 10 units + D50",
+        "albuterol 10-20 mg neb",
+        "patiromer",
+        "sodium zirconium cyclosilicate",
+        "furosemide only if urine output",
+        "hyperkalemia treatment",
+        "peaked T waves",
+        "calcium gluconate hyperkalemia",
+        "insulin dextrose potassium",
+        "BRASH syndrome",
+        "stabilize shift eliminate",
+        "sine wave ECG"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/hyperkalemia-management"
+    },
+    {
+      "id": "icu-workflow",
+      "title": "ICU Workflow — Admission, Rounding, Signout",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "ICU workflow",
+        "admission orders",
+        "rounding",
+        "handoff",
+        "I-PASS",
+        "ABCDEF bundle",
+        "checklist",
+        "VTE prophylaxis",
+        "stress ulcer prophylaxis",
+        "ICU"
+      ],
+      "keywords": [
+        "FAST HUGS BID",
+        "REVISE trial",
+        "NICE-SUGAR",
+        "SAT SBT",
+        "CAM-ICU",
+        "Watcher",
+        "IF/THEN contingency",
+        "read-back",
+        "ICU admission checklist",
+        "pre-rounding",
+        "I-PASS handoff",
+        "ABCDEF bundle",
+        "liberation bundle",
+        "ICU signout"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/icu-workflow"
+    },
+    {
+      "id": "padis-bundle",
+      "title": "PADIS Bundle & RASS",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "PADIS",
+        "sedation",
+        "analgesia",
+        "delirium",
+        "RASS",
+        "CAM-ICU",
+        "ABCDEF",
+        "ICU",
+        "immobility",
+        "sleep"
+      ],
+      "keywords": [
+        "RASS -1 to 0",
+        "analgesia first",
+        "daily SAT",
+        "CAM-ICU negative",
+        "dexmedetomidine light sedation MV",
+        "anxiety 6th domain",
+        "avoid benzodiazepines",
+        "pain agitation delirium immobility sleep",
+        "RASS scale",
+        "CAM-ICU",
+        "CPOT",
+        "ICU sedation target",
+        "analgesia-first sedation",
+        "dexmedetomidine over propofol",
+        "SAT SBT"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/padis-bundle"
+    },
+    {
+      "id": "icp-tbi-management",
+      "title": "Raised ICP & TBI Management",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "ICP",
+        "raised intracranial pressure",
+        "TBI",
+        "traumatic brain injury",
+        "CPP",
+        "hyperosmolar therapy",
+        "mannitol",
+        "hypertonic saline",
+        "herniation",
+        "ICU",
+        "neurocritical care"
+      ],
+      "keywords": [
+        "ICP > 22",
+        "CPP 60-70",
+        "MAP >= 80",
+        "PaCO2 35-45",
+        "mannitol 0.25-1 g/kg",
+        "HTS 3% 250 mL",
+        "23.4% saline 30 mL",
+        "Lund vs CPP",
+        "decompressive craniectomy",
+        "intracranial pressure",
+        "TBI targets",
+        "CPP goal",
+        "hyperosmolar therapy dosing",
+        "ICP tiered management",
+        "cerebral perfusion pressure",
+        "herniation treatment"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/icp-tbi-management"
+    },
+    {
+      "id": "sodium-disorders",
+      "title": "Sodium Disorders — Hypo- & Hypernatremia",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "hyponatremia",
+        "hypernatremia",
+        "electrolytes",
+        "hypertonic saline",
+        "SIADH",
+        "diabetes insipidus",
+        "ODS",
+        "seizure",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "3% NaCl 100-150 mL over 20 min",
+        "+5 mEq/L in 1 h",
+        "max 10-12 mEq/L/24h",
+        "8 mEq/L/24h high ODS risk",
+        "DDAVP 1-2 mcg + D5W",
+        "urine osm > 100",
+        "free water deficit formula",
+        "hyponatremia management",
+        "hypertonic saline bolus",
+        "ODS prevention",
+        "osmotic demyelination",
+        "DDAVP clamp",
+        "SIADH criteria",
+        "hypernatremia correction",
+        "free water deficit",
+        "ICU sodium drift"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/sodium-disorders"
+    },
+    {
+      "id": "toxidromes-and-overdoses",
+      "title": "Toxidromes & High-Yield Overdoses",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "toxicology",
+        "toxidrome",
+        "overdose",
+        "poisoning",
+        "acetaminophen",
+        "TCA",
+        "organophosphate",
+        "sympathomimetic",
+        "serotonin syndrome",
+        "NMS",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "mydriasis miosis",
+        "hot dry flushed",
+        "wet SLUDGE",
+        "physostigmine",
+        "atropine titrate to dry",
+        "QRS > 100 ms",
+        "R wave aVR > 3 mm",
+        "NAC 150/50/100",
+        "high-dose insulin euglycemia",
+        "toxidrome recognition",
+        "anticholinergic cholinergic sympathomimetic",
+        "SLUDGE DUMBELS",
+        "acetaminophen NAC protocol",
+        "TCA overdose bicarbonate",
+        "beta-blocker CCB overdose",
+        "serotonin syndrome vs NMS"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/toxidromes-and-overdoses"
+    },
+    {
+      "id": "empiric-antibiotics-cap",
+      "title": "Empiric Antibiotics — Community-Acquired Pneumonia",
+      "section": "Reference Library",
+      "category": "Infectious Disease & Immunization",
+      "tags": [
+        "antibiotics",
+        "CAP",
+        "pneumonia",
+        "empiric therapy",
+        "IDSA",
+        "ATS",
+        "ED"
+      ],
+      "keywords": [
+        "CAP antibiotics",
+        "pneumonia empiric therapy",
+        "empiric abx CAP"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/infectious-disease-immunization/empiric-antibiotics-cap"
+    },
+    {
+      "id": "empiric-antibiotics-ed-icu",
+      "title": "Empiric Antibiotics — ED / ICU Syndromes",
+      "section": "Reference Library",
+      "category": "Infectious Disease & Immunization",
+      "tags": [
+        "antibiotics",
+        "empiric therapy",
+        "sepsis",
+        "HAP",
+        "VAP",
+        "meningitis",
+        "endocarditis",
+        "intra-abdominal",
+        "necrotizing fasciitis",
+        "febrile neutropenia",
+        "IDSA",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "urosepsis",
+        "CLABSI",
+        "toxic shock",
+        "diabetic foot",
+        "candidemia",
+        "mucormycosis",
+        "PJP",
+        "meningococcemia",
+        "Rocky Mountain spotted fever",
+        "bioterrorism",
+        "empiric abx ICU",
+        "sepsis empiric antibiotics",
+        "HAP VAP antibiotics",
+        "meningitis empiric therapy",
+        "necrotizing fasciitis antibiotics",
+        "febrile neutropenia antibiotics"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/infectious-disease-immunization/empiric-antibiotics-ed-icu"
+    },
+    {
+      "id": "empiric-antibiotics-outpatient",
+      "title": "Empiric Antibiotics — Outpatient & Floor Syndromes",
+      "section": "Reference Library",
+      "category": "Infectious Disease & Immunization",
+      "tags": [
+        "antibiotics",
+        "empiric therapy",
+        "pharyngitis",
+        "UTI",
+        "cystitis",
+        "pyelonephritis",
+        "cellulitis",
+        "otitis media",
+        "sinusitis",
+        "Lyme",
+        "C. difficile",
+        "H. pylori",
+        "STI",
+        "antifungal",
+        "antiviral",
+        "outpatient"
+      ],
+      "keywords": [
+        "Centor",
+        "CURB-65",
+        "erythema migrans",
+        "nitrofurantoin",
+        "benzathine penicillin",
+        "valacyclovir",
+        "oseltamivir",
+        "cryptococcal meningitis",
+        "histoplasmosis",
+        "coccidioidomycosis",
+        "board infections",
+        "outpatient antibiotics",
+        "empiric abx floor",
+        "pharyngitis antibiotics",
+        "cystitis antibiotics",
+        "cellulitis antibiotics",
+        "Lyme doxycycline",
+        "C diff treatment",
+        "STI empiric therapy"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/infectious-disease-immunization/empiric-antibiotics-outpatient"
+    },
+    {
+      "id": "obstetric-delivery-emergencies",
+      "title": "Delivery Emergencies — Shoulder Dystocia, Cord Prolapse, Abruption",
+      "section": "Reference Library",
+      "category": "Obstetric Emergencies",
+      "tags": [
+        "shoulder dystocia",
+        "cord prolapse",
+        "placental abruption",
+        "HELPERR",
+        "McRoberts",
+        "obstetric emergency",
+        "intrapartum",
+        "OB",
+        "ED"
+      ],
+      "keywords": [
+        "McRoberts + suprapubic pressure",
+        "NOT fundal pressure",
+        "deliver posterior arm",
+        "Gaskin all-fours",
+        "elevate the presenting part",
+        "knee-chest",
+        "fill bladder 500-750 mL",
+        "woody rigid uterus",
+        "shoulder dystocia",
+        "HELPERR",
+        "McRoberts maneuver",
+        "umbilical cord prolapse",
+        "placental abruption",
+        "Gaskin maneuver",
+        "Zavanelli"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-emergencies/obstetric-delivery-emergencies"
+    },
+    {
+      "id": "emergency-drugs-pregnancy",
+      "title": "Emergency Drugs in Pregnancy",
+      "section": "Reference Library",
+      "category": "Obstetric Emergencies",
+      "tags": [
+        "pregnancy",
+        "obstetric emergency",
+        "eclampsia",
+        "preeclampsia",
+        "postpartum hemorrhage",
+        "hypertensive emergency",
+        "anaphylaxis",
+        "RSI",
+        "anticoagulation",
+        "toxicology",
+        "antibiotics",
+        "ED",
+        "OB",
+        "ICU"
+      ],
+      "keywords": [
+        "magnesium sulfate loading 4-6 g",
+        "labetalol 20 mg",
+        "hydralazine 5-10 mg",
+        "IR nifedipine 10 mg",
+        "oxytocin",
+        "TXA 1 g",
+        "methylergonovine",
+        "carboprost",
+        "LMWH",
+        "left uterine displacement",
+        "PLLR",
+        "pregnancy drug safety",
+        "eclampsia magnesium",
+        "severe hypertension pregnancy",
+        "postpartum hemorrhage uterotonics",
+        "obstetric RSI",
+        "anticoagulation pregnancy",
+        "antidotes pregnancy",
+        "antibiotics pregnancy trimester"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-emergencies/emergency-drugs-pregnancy"
+    },
+    {
+      "id": "efm-fetal-heart-rate",
+      "title": "Fetal Heart Rate Monitoring (NICHD)",
+      "section": "Reference Library",
+      "category": "Obstetric Emergencies",
+      "tags": [
+        "EFM",
+        "fetal heart rate",
+        "CTG",
+        "NICHD",
+        "decelerations",
+        "variability",
+        "intrauterine resuscitation",
+        "intrapartum",
+        "OB"
+      ],
+      "keywords": [
+        "baseline 110-160",
+        "moderate variability 6-25",
+        "Category III sinusoidal",
+        "absent variability + recurrent late decels",
+        "early = head compression",
+        "late = uteroplacental insufficiency",
+        "variable = cord compression",
+        "scalp stim acceleration = pH >= 7.20",
+        "EFM",
+        "electronic fetal monitoring",
+        "NICHD category I II III",
+        "late decelerations",
+        "variable decelerations",
+        "intrauterine resuscitation",
+        "fetal scalp stimulation"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-emergencies/efm-fetal-heart-rate"
+    },
+    {
+      "id": "maternal-cardiac-arrest",
+      "title": "Maternal Cardiac Arrest",
+      "section": "Reference Library",
+      "category": "Obstetric Emergencies",
+      "tags": [
+        "maternal cardiac arrest",
+        "resuscitation",
+        "ACLS",
+        "pregnancy",
+        "resuscitative cesarean",
+        "left uterine displacement",
+        "amniotic fluid embolism",
+        "OB",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "manage the mother first",
+        "manual LUD not tilt",
+        "IV/IO above the diaphragm",
+        "remove fetal monitors",
+        "RCD within 4-5 min",
+        "autotransfusion 500 mL",
+        "fundus at or above umbilicus",
+        "MCA",
+        "BAACC TO LIFE",
+        "resuscitative cesarean delivery",
+        "perimortem cesarean",
+        "left uterine displacement",
+        "CPR in pregnancy",
+        "OBLS"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-emergencies/maternal-cardiac-arrest"
+    },
+    {
+      "id": "csection-analgesia-prospect",
+      "title": "Post-Caesarean Analgesia (PROSPECT 2026)",
+      "section": "Reference Library",
+      "category": "Obstetric Emergencies",
+      "tags": [
+        "obstetric anesthesia",
+        "caesarean",
+        "post-operative analgesia",
+        "intrathecal morphine",
+        "fascial plane block",
+        "multimodal analgesia",
+        "dexamethasone",
+        "OB",
+        "anesthesia"
+      ],
+      "keywords": [
+        "intrathecal morphine 50-100 mcg",
+        "diamorphine 300 mcg",
+        "scheduled paracetamol NSAID",
+        "dexamethasone 8-10 mg",
+        "TAP QL block",
+        "Joel-Cohen",
+        "PROSPECT Working Group",
+        "cesarean section pain management",
+        "PROSPECT c-section",
+        "intrathecal morphine dose",
+        "TAP block cesarean",
+        "post-caesarean multimodal analgesia"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-emergencies/csection-analgesia-prospect"
+    },
+    {
+      "id": "postpartum-hemorrhage",
+      "title": "Postpartum Hemorrhage",
+      "section": "Reference Library",
+      "category": "Obstetric Emergencies",
+      "tags": [
+        "postpartum hemorrhage",
+        "PPH",
+        "uterine atony",
+        "oxytocin",
+        "tranexamic acid",
+        "methylergonovine",
+        "carboprost",
+        "balloon tamponade",
+        "massive transfusion",
+        "OB",
+        "ED"
+      ],
+      "keywords": [
+        "cumulative blood loss >= 1000 mL",
+        "oxytocin 20-40 U/L",
+        "TXA 1 g within 3 h",
+        "misoprostol 600-1000 mcg",
+        "methylergonovine avoid if hypertensive",
+        "carboprost avoid in asthma",
+        "Bakri balloon",
+        "PPH",
+        "PPH staging",
+        "four Ts",
+        "uterine atony",
+        "uterotonic ladder",
+        "obstetric massive transfusion",
+        "WOMAN trial"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-emergencies/postpartum-hemorrhage"
+    },
+    {
+      "id": "preeclampsia-eclampsia-hellp",
+      "title": "Preeclampsia / Eclampsia / HELLP",
+      "section": "Reference Library",
+      "category": "Obstetric Emergencies",
+      "tags": [
+        "preeclampsia",
+        "eclampsia",
+        "HELLP",
+        "hypertensive emergency",
+        "magnesium sulfate",
+        "labetalol",
+        "hydralazine",
+        "seizure prophylaxis",
+        "OB",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "SBP >= 160 treat within 15-60 min",
+        "labetalol 20-40-80",
+        "hydralazine 5-10 mg",
+        "magnesium 6 g load 1-2 g/hr",
+        "therapeutic 4-7 mEq/L",
+        "calcium gluconate 1 g antidote",
+        "deliver >= 34 weeks HELLP",
+        "preeclampsia severe features",
+        "eclampsia magnesium protocol",
+        "HELLP syndrome",
+        "severe hypertension pregnancy",
+        "magnesium sulfate seizure prophylaxis",
+        "Tennessee criteria"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-emergencies/preeclampsia-eclampsia-hellp"
+    },
+    {
+      "id": "mac-values",
+      "title": "MAC Values & Volatile Agents",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "MAC",
+        "volatile anesthetic",
+        "sevoflurane",
+        "isoflurane",
+        "desflurane",
+        "nitrous oxide",
+        "anesthesia depth",
+        "OR"
+      ],
+      "keywords": [
+        "sevoflurane 2.0",
+        "isoflurane 1.2",
+        "desflurane 6.0",
+        "N2O 105%",
+        "MAC awake 0.3",
+        "MAC BAR 1.3-1.5",
+        "MAC decreases ~6% per decade",
+        "additive MAC",
+        "minimum alveolar concentration",
+        "MAC sevoflurane isoflurane desflurane",
+        "MAC awake",
+        "MAC BAR",
+        "age-adjusted MAC",
+        "desflurane phase-out"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/mac-values"
+    },
+    {
+      "id": "malignant-hyperthermia",
+      "title": "Malignant Hyperthermia — Crisis Protocol",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "malignant hyperthermia",
+        "dantrolene",
+        "anesthesia crisis",
+        "volatile anesthetic",
+        "succinylcholine",
+        "hyperkalemia",
+        "rhabdomyolysis",
+        "OR",
+        "anesthesia",
+        "ICU"
+      ],
+      "keywords": [
+        "EtCO2 first sign",
+        "dantrolene 2.5 mg/kg repeat",
+        "max 10 mg/kg",
+        "1 mg/kg q4-6h x 24 h",
+        "MHAUS 1-800-644-9737",
+        "stop volatiles switch to TIVA",
+        "recrudescence ~20% median 9 h",
+        "MH crisis",
+        "dantrolene protocol",
+        "MHAUS hotline",
+        "masseter spasm",
+        "rising EtCO2 OR",
+        "Ryanodex",
+        "MH recrudescence",
+        "RYR1"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/malignant-hyperthermia"
+    },
+    {
+      "id": "neuraxial-anesthesia",
+      "title": "Neuraxial Anesthesia — Spinal & Epidural",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "neuraxial",
+        "spinal anesthesia",
+        "epidural",
+        "bupivacaine",
+        "spinal hypotension",
+        "phenylephrine",
+        "norepinephrine",
+        "total spinal",
+        "PDPH",
+        "obstetric anesthesia",
+        "OR"
+      ],
+      "keywords": [
+        "bupivacaine 0.5% 8-15 mg",
+        "hyperbaric bupiv 10-12 mg C/S",
+        "intrathecal morphine 100-300 mcg",
+        "co-load not pre-load",
+        "phenylephrine 50-200 mcg",
+        "norepinephrine first-line OB",
+        "epidural top-up 2% lidocaine + epi + bicarb",
+        "epidural blood patch 15-20 mL",
+        "spinal anesthesia agents",
+        "spinal hypotension",
+        "epidural dosing",
+        "high spinal total spinal",
+        "cesarean spinal mix",
+        "PDPH epidural blood patch",
+        "neuraxial contraindications",
+        "urgent C-section epidural top-up"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/neuraxial-anesthesia"
+    },
+    {
+      "id": "neuromuscular-blockade-reversal",
+      "title": "Neuromuscular Blockade — Reversal & Monitoring",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "neuromuscular blockade",
+        "reversal",
+        "sugammadex",
+        "neostigmine",
+        "rocuronium",
+        "cisatracurium",
+        "train-of-four",
+        "residual paralysis",
+        "anesthesia",
+        "OR",
+        "PACU"
+      ],
+      "keywords": [
+        "sugammadex 2 mg/kg moderate",
+        "4 mg/kg deep PTC 1-2",
+        "16 mg/kg immediate",
+        "neostigmine 15-40 mcg/kg minimal only",
+        "glycopyrrolate 0.01 mg/kg",
+        "TOF >= 0.9 quantitative before extubation",
+        "cisatracurium neostigmine only",
+        "NMB reversal",
+        "sugammadex dose",
+        "neostigmine dose",
+        "train-of-four",
+        "TOF ratio 0.9",
+        "residual paralysis",
+        "PTC post-tetanic count",
+        "quantitative TOF monitoring"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/neuromuscular-blockade-reversal"
+    },
+    {
+      "id": "perioperative-glycemic-management",
+      "title": "Perioperative Hyperglycemia",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "hyperglycemia",
+        "perioperative",
+        "glucose control",
+        "insulin",
+        "SGLT2 inhibitor",
+        "GLP-1 agonist",
+        "euglycemic DKA",
+        "anesthesia",
+        "OR"
+      ],
+      "keywords": [
+        "100-180 mg/dL",
+        "treat above 180",
+        "euglycemic DKA",
+        "sulfonylurea hold",
+        "50-80% basal",
+        "ADA Standards of Care 2026",
+        "undiagnosed diabetes",
+        "periop glucose target",
+        "stress hyperglycemia surgery",
+        "SGLT2 hold surgery",
+        "GLP-1 hold anesthesia",
+        "basal insulin day of surgery",
+        "diabetes meds perioperative"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/perioperative-glycemic-management"
+    },
+    {
+      "id": "preanesthesia-checklist",
+      "title": "Pre-Anesthesia Checklist & Fasting",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "pre-anesthesia",
+        "checklist",
+        "MSMAID",
+        "NPO",
+        "fasting",
+        "aspiration",
+        "GLP-1 agonist",
+        "gastric ultrasound",
+        "OR"
+      ],
+      "keywords": [
+        "clear liquids 2 h",
+        "breast milk 4 h",
+        "formula 6 h",
+        "light meal 6 h",
+        "fatty meal 8 h",
+        "GLP-1 hold 1 day / 1 week",
+        "gastric POCUS",
+        "carb drink up to 2 h",
+        "MSMAID",
+        "pre-induction checklist",
+        "NPO guidelines ASA 2023",
+        "fasting guidelines",
+        "GLP-1 hold anesthesia",
+        "carbohydrate loading",
+        "machine check"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/preanesthesia-checklist"
+    },
+    {
+      "id": "sedation-analgesia-agents",
+      "title": "Sedation & Analgesia Agents",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "sedation",
+        "analgesia",
+        "ketamine",
+        "propofol",
+        "dexmedetomidine",
+        "remimazolam",
+        "PRIS",
+        "procedural sedation",
+        "ICU sedation",
+        "TIVA",
+        "anesthesia",
+        "ED",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "sub-dissociative ketamine 0.1-0.3 mg/kg",
+        "propofol 1-2.5 mg/kg",
+        "PRIS metabolic acidosis",
+        "SPICE III NNH 43",
+        "remimazolam flumazenil reversal",
+        "ketamine ICP myth",
+        "ciprofol",
+        "ketamine dosing",
+        "propofol dosing",
+        "PRIS",
+        "propofol infusion syndrome",
+        "dexmedetomidine SPICE III",
+        "remimazolam Byfavo",
+        "procedural sedation agents",
+        "ICU sedation agents"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/sedation-analgesia-agents"
+    },
+    {
+      "id": "abg-interpretation",
+      "title": "ABG Interpretation",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "acid base",
+        "blood gas",
+        "compensation",
+        "anion gap",
+        "A-a gradient",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "acid-base",
+        "arterial blood gas",
+        "Winter's formula",
+        "A-a gradient"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/abg-interpretation"
+    },
+    {
+      "id": "acls-adult-cardiac-arrest",
+      "title": "Adult Cardiac Arrest — Algorithm Card (2025)",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "cardiac arrest",
+        "ACLS",
+        "CPR",
+        "defibrillation",
+        "epinephrine",
+        "reversible causes",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "ACLS",
+        "cardiac arrest algorithm",
+        "VF pVT",
+        "PEA asystole",
+        "H's and T's"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/acls-adult-cardiac-arrest"
+    },
+    {
+      "id": "antidotes-reversal-agents",
+      "title": "Antidotes & Reversal Agents",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "antidote",
+        "toxicology",
+        "overdose",
+        "reversal",
+        "poisoning",
+        "envenomation",
+        "malignant hyperthermia",
+        "LAST",
+        "beta-blocker overdose",
+        "calcium channel blocker overdose",
+        "serotonin syndrome",
+        "NMS",
+        "ED",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "HIE therapy",
+        "sodium bicarbonate QRS",
+        "cyproheptadine",
+        "bromocriptine",
+        "pralidoxime",
+        "physostigmine",
+        "deferoxamine",
+        "pyridoxine INH",
+        "leucovorin",
+        "octreotide sulfonylurea",
+        "hydroxocobalamin cyanide",
+        "BabyBIG",
+        "antidote reference",
+        "toxicology antidotes",
+        "reversal agents",
+        "sugammadex naloxone flumazenil",
+        "high-dose insulin euglycemia",
+        "lipid emulsion LAST",
+        "dantrolene",
+        "digoxin Fab",
+        "NAC acetaminophen",
+        "fomepizole",
+        "CroFab"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/antidotes-reversal-agents"
+    },
+    {
+      "id": "decision-rules-cspine-ct-head",
+      "title": "C-Spine & CT Head Decision Rules",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "NEXUS",
+        "Canadian C-Spine Rule",
+        "Canadian CT Head Rule",
+        "New Orleans Criteria",
+        "trauma",
+        "cervical spine",
+        "head injury",
+        "imaging",
+        "clinical decision rule",
+        "ED"
+      ],
+      "keywords": [
+        "c-spine clearance",
+        "minor head injury",
+        "clinically important brain injury",
+        "neurosurgical intervention",
+        "range of motion 45 degrees",
+        "basal skull fracture",
+        "NEXUS vs Canadian C-Spine",
+        "CCR",
+        "Canadian CT Head Rule",
+        "CCHR",
+        "New Orleans Criteria",
+        "NOC",
+        "cervical spine clearance rules",
+        "minor head injury CT rules"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/decision-rules-cspine-ct-head"
+    },
+    {
+      "id": "capnography",
+      "title": "Capnography — Waveform Interpretation",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "capnography",
+        "EtCO2",
+        "airway",
+        "ventilation",
+        "cardiac arrest",
+        "procedural sedation",
+        "TBI",
+        "ROSC",
+        "ED",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "phase III plateau",
+        "a-ET gradient",
+        "shark fin",
+        "curare cleft",
+        "cardiogenic oscillations",
+        "rebreathing",
+        "ILCOR",
+        "EtCO2",
+        "end-tidal CO2",
+        "capnogram",
+        "shark fin waveform",
+        "ETCO2 in cardiac arrest"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/capnography"
+    },
+    {
+      "id": "hyperosmolar-therapy",
+      "title": "Hyperosmolar Therapy — HTS vs Mannitol",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "ICP",
+        "raised intracranial pressure",
+        "hypertonic saline",
+        "mannitol",
+        "cerebral edema",
+        "TBI",
+        "herniation",
+        "neurocritical care",
+        "ICU"
+      ],
+      "keywords": [
+        "reflection coefficient",
+        "osmotic gradient",
+        "obligate diuresis",
+        "serum osmolality 320",
+        "serum sodium 160",
+        "rebound ICP",
+        "CPP",
+        "hypertonic saline vs mannitol",
+        "ICP hyperosmolar",
+        "23.4% saline",
+        "mannitol dosing ICP",
+        "cerebral edema osmotherapy"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/hyperosmolar-therapy"
+    },
+    {
+      "id": "iv-fluids",
+      "title": "IV Fluids & Volume Resuscitation",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "IV fluids",
+        "crystalloid",
+        "colloid",
+        "resuscitation",
+        "normal saline",
+        "lactated Ringer's",
+        "Plasma-Lyte",
+        "albumin",
+        "hypertonic saline",
+        "massive transfusion",
+        "trauma",
+        "sepsis",
+        "TBI",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "hyperchloremic acidosis",
+        "HES CHEST 6S",
+        "Bickell 1994",
+        "PROPPR 1:1:1",
+        "PAMPer",
+        "COMBAT",
+        "RePHILL",
+        "8 mEq/L/24h",
+        "CS-LTOWB",
+        "TCCC 21-01",
+        "crystalloid composition",
+        "balanced vs saline",
+        "normal saline vs LR",
+        "Plasma-Lyte",
+        "permissive hypotension",
+        "PROPPR ratio",
+        "prehospital plasma",
+        "which fluid for sepsis vs TBI"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/iv-fluids"
+    },
+    {
+      "id": "erc-2025-pediatric-life-support",
+      "title": "Pediatric Resuscitation — 2025 ERC Changes",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "pediatric",
+        "resuscitation",
+        "cardiac arrest",
+        "ERC",
+        "PALS",
+        "defibrillation",
+        "fluid bolus",
+        "septic shock",
+        "TXA",
+        "TBI",
+        "ED",
+        "PICU"
+      ],
+      "keywords": [
+        "4 J/kg",
+        "8 J/kg refractory",
+        "10 mL/kg to 500 mL adolescent",
+        "ideal body weight resuscitation drugs",
+        "diastolic BP > 25/30 mmHg CPR",
+        "hydrocortisone 1-2 mg/kg",
+        "TXA 15-20 mg/kg",
+        "ERC 2025 PLS",
+        "pediatric life support 2025",
+        "peds arrest update",
+        "peds fluid bolus cap",
+        "peds defibrillation energy",
+        "peds IBW dosing"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/erc-2025-pediatric-life-support"
+    },
+    {
+      "id": "peripheral-iv-vasopressors",
+      "title": "Peripheral IV Vasopressors — How Risky, Really?",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "vasopressors",
+        "peripheral IV",
+        "central line",
+        "extravasation",
+        "septic shock",
+        "midline",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "peripheral pressors",
+        "PIV vasopressor safety",
+        "norepinephrine peripheral line",
+        "central line first"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/peripheral-iv-vasopressors"
+    },
+    {
+      "id": "rsi-seven-ps",
+      "title": "RSI — the 7 P's, Drugs & Post-Intubation",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "RSI",
+        "intubation",
+        "airway",
+        "ketamine",
+        "etomidate",
+        "succinylcholine",
+        "rocuronium",
+        "LEMON",
+        "post-intubation",
+        "ED",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "preoxygenate 3 min",
+        "ketamine 1.5-2 mg/kg",
+        "etomidate 0.3 mg/kg",
+        "succinylcholine 1.5 mg/kg",
+        "rocuronium 1.2 mg/kg",
+        "sugammadex 16 mg/kg",
+        "ear-to-sternal-notch",
+        "tube tip 3-5 cm above carina",
+        "rapid sequence intubation",
+        "7 Ps",
+        "induction agent selection",
+        "succinylcholine vs rocuronium",
+        "LEMON",
+        "post-intubation ventilator settings",
+        "post-intubation hypotension"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/rsi-seven-ps"
+    },
+    {
+      "id": "septic-shock-resuscitation",
+      "title": "Septic Shock — Resuscitation Targets",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "sepsis",
+        "septic shock",
+        "resuscitation",
+        "vasopressor",
+        "fluid responsiveness",
+        "capillary refill",
+        "lactate",
+        "MAP target",
+        "hydrocortisone",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "norepinephrine",
+        "vasopressin 0.03",
+        "angiotensin II",
+        "passive leg raise",
+        "pulse pressure variation",
+        "CRT-PHR",
+        "phenotype",
+        "venous congestion",
+        "SSC 2021",
+        "sepsis resuscitation",
+        "MAP target sepsis",
+        "capillary refill time target",
+        "lactate clearance",
+        "fluid responsiveness sepsis",
+        "vasopressor sequence septic shock",
+        "CRT-guided resuscitation",
+        "de-resuscitation"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/septic-shock-resuscitation"
+    },
+    {
+      "id": "shock-classification",
+      "title": "Shock Classification & Bedside Diagnosis",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "shock",
+        "hemodynamics",
+        "cardiogenic shock",
+        "septic shock",
+        "obstructive shock",
+        "hypovolemic shock",
+        "SCAI",
+        "POCUS",
+        "resuscitation",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "CO",
+        "SVR",
+        "CVP",
+        "PCWP",
+        "SCAI SHOCK stage",
+        "Beck's triad",
+        "McConnell's sign",
+        "D-sign",
+        "capillary refill",
+        "mixed shock",
+        "types of shock",
+        "hypovolemic cardiogenic obstructive distributive",
+        "SCAI shock stages",
+        "shock field guide",
+        "RUSH exam shock"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/shock-classification"
+    },
+    {
+      "id": "status-epilepticus-adult",
+      "title": "Status Epilepticus — Adult Treatment Ladder",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "status epilepticus",
+        "seizure",
+        "benzodiazepine",
+        "levetiracetam",
+        "fosphenytoin",
+        "valproate",
+        "propofol",
+        "midazolam",
+        "pentobarbital",
+        "ED",
+        "ICU",
+        "neurology"
+      ],
+      "keywords": [
+        "seizure > 5 min",
+        "lorazepam 0.1 mg/kg",
+        "midazolam 10 mg IM",
+        "levetiracetam 60 mg/kg",
+        "fosphenytoin 20 PE/kg",
+        "valproate 40 mg/kg",
+        "ESETT equivalent",
+        "burst suppression",
+        "convulsive status epilepticus",
+        "SE treatment",
+        "ESETT",
+        "refractory status epilepticus",
+        "super-refractory status",
+        "benzodiazepine then levetiracetam",
+        "midazolam infusion seizure"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/status-epilepticus-adult"
+    },
+    {
+      "id": "physiologically-difficult-airway",
+      "title": "The Physiologically Difficult Airway",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "airway",
+        "intubation",
+        "RSI",
+        "peri-intubation arrest",
+        "preoxygenation",
+        "shock",
+        "acidosis",
+        "RV failure",
+        "ketamine",
+        "etomidate",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "PREOXI",
+        "FELLOW",
+        "PrePARE",
+        "PREPARE II",
+        "RSI trial",
+        "shock index",
+        "modified shock index",
+        "push-dose pressor",
+        "shunt physiology",
+        "minute ventilation match",
+        "resuscitate before you intubate",
+        "peri-intubation arrest",
+        "hypotensive airway",
+        "hypoxemic airway",
+        "acidotic airway",
+        "RV failure airway",
+        "induction matrix",
+        "DSI delayed sequence intubation"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/physiologically-difficult-airway"
+    },
+    {
+      "id": "trauma-primary-survey",
+      "title": "Trauma — Primary Survey, Hemorrhagic Shock & MTP",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "trauma",
+        "ATLS",
+        "primary survey",
+        "hemorrhagic shock",
+        "massive transfusion",
+        "TXA",
+        "permissive hypotension",
+        "TBI",
+        "eFAST",
+        "ED"
+      ],
+      "keywords": [
+        "intubate if GCS <= 8",
+        "needle decompression 2nd ICS",
+        "permissive hypotension SBP 80-90",
+        "MTP >= 3 units in 1 h",
+        "TXA 1 g within 3 h",
+        "calcium after 4 units",
+        "seashore vs barcode sign",
+        "ATLS primary survey",
+        "ABCDE trauma",
+        "hemorrhagic shock class",
+        "massive transfusion protocol",
+        "MTP 1:1:1",
+        "permissive hypotension trauma",
+        "eFAST",
+        "TBI targets"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/trauma-primary-survey"
+    },
+    {
+      "id": "pressor-inotrope-reference",
+      "title": "Vasopressors & Inotropes Reference",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "vasopressor",
+        "inotrope",
+        "norepinephrine",
+        "epinephrine",
+        "vasopressin",
+        "dobutamine",
+        "milrinone",
+        "phenylephrine",
+        "angiotensin II",
+        "methylene blue",
+        "hydroxocobalamin",
+        "vasoplegia",
+        "shock",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "mcg/kg/min",
+        "infusion rate formula",
+        "inodilator",
+        "inopressor",
+        "Cyanokit",
+        "NO-cGMP",
+        "Surviving Sepsis 2021",
+        "peripheral vasopressor",
+        "pressor reference",
+        "vasoactive infusion mixing",
+        "norepinephrine drip rate",
+        "inopressor table",
+        "refractory vasoplegia rescue",
+        "methylene blue vasoplegia",
+        "angiotensin II shock"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/pressor-inotrope-reference"
+    },
+    {
+      "id": "ventilator-management",
+      "title": "Ventilator Management",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "ventilator",
+        "ARDS",
+        "lung protective",
+        "driving pressure",
+        "high peak pressure",
+        "PEEP FiO2",
+        "status asthmaticus",
+        "weaning",
+        "VAP",
+        "ICU"
+      ],
+      "keywords": [
+        "vent settings",
+        "mechanical ventilation",
+        "ARDSnet",
+        "DOPE",
+        "driving pressure",
+        "status asthmaticus vent",
+        "weaning",
+        "cuff leak"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/ventilator-management"
+    },
+    {
+      "id": "ventilator-modes",
+      "title": "Ventilator Modes",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "mechanical ventilation",
+        "ventilator modes",
+        "volume control",
+        "pressure control",
+        "APRV",
+        "NAVA",
+        "PAV+",
+        "ASV",
+        "SIMV",
+        "PSV",
+        "ICU"
+      ],
+      "keywords": [
+        "what is guaranteed",
+        "who is in control",
+        "how does the breath end",
+        "AutoFlow APVcmv PCV-VG",
+        "Phigh Plow Thigh Tlow",
+        "Edi catheter",
+        "PROMIZING",
+        "Otis equation",
+        "VC vs PC",
+        "PRVC",
+        "APRV",
+        "NAVA",
+        "PAV+",
+        "ASV",
+        "SIMV",
+        "pressure support",
+        "adaptive ventilation",
+        "cross-manufacturer mode names"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/ventilator-modes"
     }
   ]
 }

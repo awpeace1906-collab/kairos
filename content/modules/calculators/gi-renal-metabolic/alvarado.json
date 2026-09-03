@@ -1,0 +1,33 @@
+{
+  "id": "alvarado",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "Alvarado Score",
+  "aliases": ["MANTRELS", "appendicitis score adult"],
+  "tags": ["appendicitis", "abdominal pain", "RLQ pain", "imaging decision", "ED"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Alvarado A. Ann Emerg Med 1986"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry — the adult-derived score. For children use PAS or pARC in the Peds Module." }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Bedside probability of acute appendicitis in adults; supports the imaging / surgical-consult decision. Adult-derived — for pediatric patients use PAS or pARC instead.",
+  "items": [
+    { "key": "migration", "label": "Migration of pain to the RLQ", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "anorexia", "label": "Anorexia", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "nausea", "label": "Nausea / vomiting", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "tenderness", "label": "RLQ tenderness", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "rebound", "label": "Rebound tenderness", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "fever", "label": "Elevated temperature > 37.3 °C", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "leukocytosis", "label": "Leukocytosis > 10,000 /mm³", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "leftShift", "label": "Left shift / neutrophilia", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 4, "label": "Appendicitis unlikely", "disposition": "Observation and serial exams; imaging if suspicion persists", "severity": "low" },
+    { "min": 5, "max": 6, "label": "Equivocal", "disposition": "Imaging (CT in adults) or a period of observation", "severity": "moderate" },
+    { "min": 7, "max": 10, "label": "High probability", "disposition": "Surgical consultation; imaging often still obtained to confirm", "severity": "high" }
+  ]
+}

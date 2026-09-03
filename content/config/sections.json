@@ -45,7 +45,20 @@
       "icon": "pills",
       "themeToken": "section.drugDosing",
       "categories": [
-        { "id": "anescalc-core", "title": "Existing Core (AnesCalc)" },
+        { "id": "anescalc-induction", "title": "AnesCalc — Induction Agents" },
+        { "id": "anescalc-benzodiazepine", "title": "AnesCalc — Benzodiazepines" },
+        { "id": "anescalc-volatile", "title": "AnesCalc — Volatile Anesthetics" },
+        { "id": "anescalc-nmb", "title": "AnesCalc — Neuromuscular Blockers" },
+        { "id": "anescalc-opioid", "title": "AnesCalc — Opioids" },
+        { "id": "anescalc-local", "title": "AnesCalc — Local Anesthetics" },
+        { "id": "anescalc-vasopressor", "title": "AnesCalc — Vasopressors" },
+        { "id": "anescalc-reversal", "title": "AnesCalc — Reversal Agents" },
+        { "id": "anescalc-anticholinergic", "title": "AnesCalc — Anticholinergics" },
+        { "id": "anescalc-antiemetic", "title": "AnesCalc — Antiemetics" },
+        { "id": "anescalc-gi", "title": "AnesCalc — GI / Aspiration Prophylaxis" },
+        { "id": "anescalc-emergency", "title": "AnesCalc — Emergency Drugs" },
+        { "id": "anescalc-methylene-blue", "title": "AnesCalc — Methylene Blue" },
+        { "id": "anescalc-anticoagulant", "title": "AnesCalc — Anticoagulants / Hemostatics" },
         { "id": "resus-dosing", "title": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)" },
         { "id": "dosing-fluid-math", "title": "Dosing & Fluid Math" }
       ]
@@ -61,6 +74,9 @@
       "categories": [
         { "id": "resus-airway", "title": "Resuscitation & Airway" },
         { "id": "cardiac-ecg", "title": "Cardiac / ECG" },
+        { "id": "critical-care", "title": "Critical Care" },
+        { "id": "perioperative", "title": "Perioperative & Anesthesia" },
+        { "id": "obstetric", "title": "Obstetric Emergencies" },
         { "id": "anticoag-labs", "title": "Anticoagulation & Labs" },
         { "id": "id-immunization", "title": "Infectious Disease & Immunization" },
         { "id": "ebm", "title": "Evidence-Based Medicine" }
@@ -76,7 +92,8 @@
       "themeToken": "section.peds",
       "categories": [
         { "id": "peds-resus-decision", "title": "Peds Resuscitation & Decision Support" },
-        { "id": "peds-dosing-refs", "title": "Peds Dosing References" }
+        { "id": "peds-dosing-refs", "title": "Peds Dosing References" },
+        { "id": "neonatology", "title": "Neonatology" }
       ]
     }
   ]

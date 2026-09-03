@@ -1,0 +1,48 @@
+{
+  "id": "glycopyrrolate",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Anticholinergics",
+  "title": "Glycopyrrolate",
+  "aliases": [
+    "Robinul"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "anticholinergic",
+    "glycopyrrolate"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Robinul",
+  "tallManLetters": "glycoPYRRolate",
+  "drugClass": "anticholinergic",
+  "drugClassLabel": "Anticholinergic",
+  "mechanism": "Quaternary ammonium competitive muscarinic antagonist. Does NOT cross the blood-brain barrier — no CNS effects. Preferred for neostigmine pairing (slower onset matches neostigmine kinetics).",
+  "onset": "IV 1 min; IM 15–30 min",
+  "duration": "2–4h (longer than atropine)",
+  "dosing": "With neostigmine: 0.01 mg/kg IV (MAX 1 mg) simultaneously\nAnti-sialagogue (pre-ketamine): 0.005–0.01 mg/kg IV\nBradycardia treatment: 0.1–0.2 mg IV PRN adult\nPeds anti-sialagogue: 0.005 mg/kg IV (MAX 0.2 mg)",
+  "cautions": [
+    "AEs: Tachycardia (avoid in AF or tachyarrhythmia), urinary retention, constipation, secretion drying, blurred vision",
+    "CI: Hypersensitivity; glaucoma; obstructive uropathy; GI obstruction; GI motility disorders; bleeding GI ulcer; myasthenia gravis; unstable cardiovascular status in acute hemorrhage",
+    "Precautions: Renal impairment — reduced excretion; prostatic hypertrophy; hepatic disease; autonomic neuropathy; geriatric patients (preferred over atropine — no CNS effects)"
+  ],
+  "pearls": [
+    "PREFERRED anticholinergic for neostigmine pairing — slower onset matches neostigmine; less tachycardia than atropine; no BBB crossing → no CNS effects.",
+    "Anti-sialagogue for ketamine — give IV 5 min before or IM 15–20 min before ketamine administration."
+  ],
+  "reversal": "Physostigmine for severe anticholinergic toxicity"
+}

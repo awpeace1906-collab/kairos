@@ -1,0 +1,31 @@
+{
+  "id": "brugada-vt",
+  "section": "Calculators",
+  "category": "Cardiovascular / Chest Pain / Arrhythmia",
+  "title": "Brugada Criteria for VT vs SVT with Aberrancy",
+  "aliases": ["Brugada algorithm", "wide complex tachycardia", "VT vs SVT", "WCT differentiation"],
+  "tags": ["wide complex tachycardia", "ventricular tachycardia", "ECG", "ED", "arrhythmia"],
+  "keywords": ["absence of RS in precordial leads", "RS interval > 100 ms", "AV dissociation", "morphology criteria V1 V2 V6", "assume VT"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Brugada P et al. Circulation 1991"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ED", "ICU"],
+  "purpose": "A four-step sequential rule to distinguish ventricular tachycardia from SVT with aberrant conduction in a regular wide-complex tachycardia. Work through the steps in order — a 'yes' at ANY step means VT and you stop. Only if all four are 'no' is SVT with aberrancy favoured.",
+  "items": [
+    { "key": "noRS", "label": "Step 1 — Absence of an RS complex in ALL precordial leads (V1–V6)?", "options": [{ "label": "No — an RS is present somewhere", "points": 0 }, { "label": "Yes → VT (stop)", "points": 1 }] },
+    { "key": "rsInterval", "label": "Step 2 — In any precordial lead with an RS, is the R-to-S-nadir interval > 100 ms?", "options": [{ "label": "No", "points": 0 }, { "label": "Yes → VT (stop)", "points": 1 }] },
+    { "key": "avDissoc", "label": "Step 3 — Is there AV dissociation (more QRS than P, capture or fusion beats)?", "options": [{ "label": "No / cannot tell", "points": 0 }, { "label": "Yes → VT (stop)", "points": 1 }] },
+    { "key": "morphology", "label": "Step 4 — Morphology criteria for VT present in BOTH V1–V2 and V6? (RBBB pattern: V1 monophasic R / qR / broad R; V6 R:S < 1 or QS. LBBB pattern: V1–V2 broad R > 30 ms, slurred/notched S downstroke, > 60 ms to S nadir; V6 any Q wave)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes → VT", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "All four steps negative — SVT with aberrant conduction is favoured. Still treat cautiously; if there is ANY doubt or haemodynamic compromise, manage as VT. Adenosine may be used diagnostically/therapeutically only if the rhythm is regular and monomorphic and VT is thought unlikely", "severity": "moderate" },
+    { "min": 1, "max": 4, "label": "One or more steps positive — VENTRICULAR TACHYCARDIA. If unstable: synchronised cardioversion. If stable: amiodarone (or procainamide, which is first-line in the guidelines for stable monomorphic VT) and prepare for cardioversion. Do NOT give AV-nodal blockers (verapamil, diltiazem, adenosine bolus as 'treatment') — they can precipitate collapse", "disposition": "Treat as VT", "severity": "high" }
+  ],
+  "notes": "Default assumption in any wide-complex tachycardia, especially with age > 35 or known structural heart disease / prior MI, is VT — the Brugada algorithm's specificity for SVT is imperfect (later studies show lower accuracy than the original 1991 paper). Other clues favouring VT: QRS > 160 ms, extreme axis (−90° to ±180°), precordial concordance, a QRS in aVR starting with a tall R (Vereckei aVR criterion), history of CAD/CHF.",
+  "buildNote": "Sequential rule — any positive step → VT; the point sum is a helper, not a graded risk."
+}

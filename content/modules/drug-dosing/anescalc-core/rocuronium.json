@@ -1,0 +1,48 @@
+{
+  "id": "rocuronium",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Neuromuscular Blockers",
+  "title": "Rocuronium",
+  "aliases": [
+    "Zemuron"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "nmb",
+    "rocuronium"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Zemuron",
+  "tallManLetters": "ROCUronium",
+  "drugClass": "nmb",
+  "drugClassLabel": "NMB",
+  "mechanism": "Aminosteroid non-depolarizing NMB. Competitive ACh antagonist at nicotinic NMJ receptors. Modified structure provides faster onset than vecuronium without cardiovascular side effects.",
+  "onset": "0.6 mg/kg: ~90 sec; 1.2 mg/kg: ~60 sec",
+  "duration": "0.6 mg/kg: 30–60 min; 1.2 mg/kg: 60–90 min (dose-dependent, hepatically prolonged)",
+  "dosing": "Standard intubation: 0.6 mg/kg IV\nRSI equivalent: 1.2–1.3 mg/kg IV (~60 sec onset)\nMaintenance bolus: 0.1–0.2 mg/kg\nMaintenance infusion: 5–12 mcg/kg/min",
+  "cautions": [
+    "AEs: Most common NMB implicated in anaphylaxis (IgE-mediated); transient hypotension/hypertension; tachycardia; residual paralysis → postop pulmonary complications",
+    "CI: Hypersensitivity (including rocuronium-sugammadex complex hypersensitivity)",
+    "Precautions: Duration extended by volatile anesthetics, aminoglycosides, magnesium, hypothermia; hepatic dysfunction prolongs duration; always confirm TOF ratio >0.9 before extubation"
+  ],
+  "pearls": [
+    "Most commonly used NMB in modern anesthesia. At 1.2 mg/kg: onset comparable to succinylcholine — preferred when succinylcholine contraindicated + sugammadex available.",
+    "Sugammadex completely reverses even profound rocuronium block. NOT reversed by neostigmine at deep block levels."
+  ],
+  "reversal": "Sugammadex 2 mg/kg (TOF ≥T2), 4 mg/kg (deep/PTC 1–2), 16 mg/kg (immediate post-RSI reversal)"
+}

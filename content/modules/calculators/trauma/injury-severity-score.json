@@ -1,0 +1,35 @@
+{
+  "id": "injury-severity-score",
+  "section": "Calculators",
+  "category": "Trauma",
+  "title": "Injury Severity Score (ISS)",
+  "aliases": ["ISS", "injury severity score", "trauma anatomic score", "AIS-based severity"],
+  "tags": ["trauma", "anatomic injury", "severity", "registry", "prognosis"],
+  "keywords": ["Abbreviated Injury Scale", "six body regions", "three worst regions", "sum of squares", "ISS >= 16 major trauma"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Baker SP et al. J Trauma 1974; AAAM Abbreviated Injury Scale"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "formula",
+  "settings": ["ED"],
+  "purpose": "An anatomic trauma severity score: take the highest Abbreviated Injury Scale (AIS, 1–6) grade in each of the three most severely injured body regions, square each, and sum. Range 3–75. Primarily a registry / benchmarking and research tool (feeds TRISS) — it is calculated after injuries are catalogued, not a bedside triage instrument.",
+  "inputs": [
+    { "key": "ais1", "label": "Highest AIS in the worst-injured region (1 minor · 2 moderate · 3 serious · 4 severe · 5 critical · 6 unsurvivable)", "type": "number", "min": 0, "max": 6 },
+    { "key": "ais2", "label": "Highest AIS in the second worst-injured region", "type": "number", "min": 0, "max": 6 },
+    { "key": "ais3", "label": "Highest AIS in the third worst-injured region", "type": "number", "min": 0, "max": 6 }
+  ],
+  "formulas": [
+    { "key": "iss", "label": "Injury Severity Score", "expression": "ais1^2 + ais2^2 + ais3^2", "unit": "points", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "iss", "min": 0, "max": 8, "label": "Minor trauma (ISS 1–8) — low mortality; injuries typically managed without critical care", "severity": "low" },
+    { "forKey": "iss", "min": 9, "max": 15, "label": "Moderate trauma (ISS 9–15) — admission usual; mortality still low but rising", "severity": "moderate" },
+    { "forKey": "iss", "min": 16, "max": 24, "label": "Major / severe trauma (ISS ≥ 16) — the conventional 'major trauma' threshold; substantial mortality and complication risk. Trauma-centre care, trauma team, ICU consideration", "severity": "high" },
+    { "forKey": "iss", "min": 25, "max": 75, "label": "Profound / critical trauma (ISS ≥ 25) — high mortality; damage-control resuscitation and surgery, ICU", "severity": "high" }
+  ],
+  "notes": "The six AIS body regions: head/neck, face, chest, abdomen/pelvic contents, extremities/pelvic girdle, external/skin. If ANY region scores AIS 6, ISS is automatically set to 75. Only ONE injury per region counts (the highest) — ISS therefore under-represents multiple injuries within the same region; the New ISS (NISS = sum of squares of the three worst injuries regardless of region) corrects this and predicts mortality better. Use T-RTS / mechanism / physiology for actual field and ED triage.",
+  "buildNote": "Formula engine — sum of squares of three AIS grades. Any AIS 6 → ISS 75 (note only; not auto-applied by the expression)."
+}

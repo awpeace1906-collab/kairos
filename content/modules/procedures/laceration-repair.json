@@ -3,55 +3,53 @@
   "section": "Procedures",
   "category": "Wound & Fracture Care",
   "title": "Laceration Repair Guide",
-  "aliases": ["suture", "wound closure", "laceration"],
+  "aliases": ["suture", "wound closure", "laceration", "suture size selection"],
+  "tags": ["laceration", "suture", "wound closure", "primary closure", "suture removal", "ED"],
   "contentType": "procedure",
-  "content_version": 1,
-  "last_reviewed": "2026-08-31",
-  "next_review_due": "2026-11-30",
+  "content_version": 2,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
   "review_tier": 1,
-  "sources": ["AAFP", "Merck Manual", "StatPearls — cross-checked per README_Build_Package.md"],
-  "flags": ["stub"],
+  "sources": ["AAFP — Essentials of Skin Laceration Repair", "Merck Manual Professional Edition", "StatPearls"],
   "changelog": [
-    { "version": 1, "date": "2026-08-31", "change": "Skeleton only. Full screen-by-screen branch logic is a build-package TODO (README 'Not yet written')." }
+    { "version": 2, "date": "2026-09-01", "change": "Expanded to a full region decision tree with material/technique/removal recommendations and a pediatric branch; added irrigation and wound-age reference." },
+    { "version": 1, "date": "2026-08-31", "change": "Skeleton only." }
   ],
-  "purpose": "Body-region wound assessment → suture material/size and technique selection → aftercare + generated procedure note.",
+  "purpose": "Body-region wound assessment → suture material/size and technique selection → aftercare + a generated procedure note.",
   "outputType": "decision-tree",
-  "crossLinks": ["la-max-dosing"],
+  "crossLinks": ["la-max-dosing", "last-lipid-rescue"],
   "entryPrompt": "Where is the wound?",
   "nodes": [
-    {
-      "id": "region",
-      "type": "question",
-      "prompt": "Select body region",
-      "choices": [
-        { "label": "Face", "next": "face-params" },
-        { "label": "Scalp", "next": "scalp-params" },
-        { "label": "Trunk / extremity", "next": "trunk-params" }
-      ]
-    },
-    {
-      "id": "face-params",
-      "type": "recommendation",
-      "body": "Suture size 6-0 (5-0 acceptable). Non-absorbable monofilament, or absorbable in children to avoid a removal visit. Removal 3-5 days. Primary closure window < 12-24 h. Irrigate 50-100 mL/cm."
-    },
-    {
-      "id": "scalp-params",
-      "type": "recommendation",
-      "body": "Suture size 3-0 / 4-0; blue monofilament recommended for visibility. Staples acceptable (contraindicated on face/neck/hands/feet). Removal 7-10 days. Primary closure window < 12-24 h."
-    },
-    {
-      "id": "trunk-params",
-      "type": "recommendation",
-      "body": "Suture size 3-0 / 4-0. Removal 6-10 days (trunk), 10-14 days over joints. Primary closure window < 6-8 h. Consider deep dermal sutures for tension."
-    }
+    { "id": "start", "type": "question", "prompt": "Select body region", "choices": [
+      { "label": "Scalp", "next": "scalp" },
+      { "label": "Face (general)", "next": "face" },
+      { "label": "Lip / intraoral", "next": "lip" },
+      { "label": "Ear", "next": "ear" },
+      { "label": "Trunk", "next": "trunk" },
+      { "label": "Extremity (non-joint)", "next": "extremity" },
+      { "label": "Over a joint / high-tension", "next": "joint" },
+      { "label": "Hand", "next": "hand" },
+      { "label": "Eyelid / lid margin", "next": "eyelid" }
+    ] },
+    { "id": "scalp", "type": "recommendation", "body": "3-0 / 4-0 non-absorbable (or staples; 3-0/4-0 absorbable for galea). Simple interrupted, staples, or hair-apposition. Blue-coloured suture recommended for visibility against hair. Removal 7-10 days. Primary-closure window < 12-24 h (well-vascularised)." },
+    { "id": "face", "type": "recommendation", "body": "5-0 / 6-0 fine non-absorbable; tissue adhesive if < 2 cm, low-tension, dry edges. Simple interrupted. Removal 3-5 days (consider alternate sutures at day 3, rest at day 5 to reduce cross-hatching). Low threshold for plastics referral. Primary-closure window < 12-24 h." },
+    { "id": "lip", "type": "recommendation", "body": "Align the vermillion border FIRST, before any other suture — malalignment is the most common cosmetic failure. 4-0 / 5-0 absorbable (chromic / vicryl) for mucosa; 6-0 non-absorbable for skin. Absorbable mucosal sutures need no removal." },
+    { "id": "ear", "type": "recommendation", "body": "5-0 / 6-0 non-absorbable. Avoid cartilage-piercing sutures where possible; pressure dressing afterwards. Removal 5-7 days. Drain any auricular hematoma to prevent cauliflower ear." },
+    { "id": "trunk", "type": "recommendation", "body": "3-0 / 4-0 non-absorbable. Simple interrupted, or running for long low-tension wounds. Consider a deep dermal absorbable layer under tension. Staples are a good option here (not on face/neck/hands/feet). Removal 6-10 days. Primary-closure window < 6-8 h." },
+    { "id": "extremity", "type": "recommendation", "body": "4-0 / 5-0 non-absorbable. Simple interrupted, or vertical mattress if eversion is needed. Removal 10-14 days. Primary-closure window < 6-8 h." },
+    { "id": "joint", "type": "recommendation", "body": "3-0 / 4-0 plus a deep dermal absorbable layer. Vertical or horizontal mattress. Removal 14 days. Splint in the position of function if the wound crosses a joint." },
+    { "id": "hand", "type": "recommendation", "body": "5-0 non-absorbable, simple interrupted. Removal 10-14 days. Examine and DOCUMENT tendon and digital-nerve function before AND after repair. Staples not recommended." },
+    { "id": "eyelid", "type": "warning", "body": "Do NOT repair lid-margin or lacrimal-system lacerations in the ED — consult ophthalmology." }
   ],
   "checklist": [
     "Neurovascular and tendon exam documented before anesthesia",
-    "Local anesthetic max dose calculated — see cross-linked LA max dosing card",
-    "Irrigation 50-100 mL per cm of wound length",
+    "Local anesthetic max dose calculated — see the cross-linked LA max dosing card",
+    "Irrigation 50-100 mL of normal saline per cm of wound length",
+    "Wound-age cutoff for primary closure checked for this region (< 6-8 h general; < 12-24 h face/scalp)",
     "Tetanus status addressed",
-    "Wound-age cutoff for primary closure checked for this region"
+    "Antibiotic prophylaxis considered (bite, joint-space, gross contamination, immunocompromise, delayed > 18-24 h)",
+    "Pediatric patient: prefer absorbable sutures (fast-absorbing gut / vicryl rapide) to avoid a removal visit"
   ],
-  "noteTemplate": "PROCEDURE: Laceration repair, {{region}}. Wound {{length}} cm. Anesthesia: {{anesthetic}} {{anestheticVolume}} mL. Irrigation with {{irrigationVolume}} mL NS. Closure: {{sutureCount}} × {{sutureSize}} {{technique}}. Neurovascular exam intact pre- and post-procedure. Aftercare and return precautions given. Suture removal in {{removalDays}} days.",
-  "buildNote": "This is a stub. The full region → pattern → technique → aftercare branch tree (and the Fractures/Nerve Block/POCUS trees) must be storyboarded screen-by-screen before implementation. Do not copy Suture.app's text or media — original content only."
+  "noteTemplate": "PROCEDURE: Laceration repair, {{region}}. Wound {{length}} cm, {{depth}}. Time since injury {{woundAge}} h. Neurovascular/tendon exam intact pre- and post-procedure. Anesthesia: {{anesthetic}} {{anestheticVolume}} mL, aspiration negative. Irrigation with {{irrigationVolume}} mL NS. Closure: {{sutureCount}} × {{sutureSize}} {{sutureType}}, {{technique}}. Hemostasis achieved. Dressing applied. Tetanus {{tetanus}}. Aftercare and return precautions given. Suture removal in {{removalDays}} days.",
+  "buildNote": "Fracture, Nerve Block, and POCUS full trees still need their own storyboarding pass. LA max dosing and LAST both cross-link out — do not restate them here (single source of truth)."
 }

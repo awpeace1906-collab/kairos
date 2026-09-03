@@ -1,0 +1,56 @@
+{
+  "id": "acute-ischemic-stroke",
+  "section": "Reference Library",
+  "category": "Cardiac / ECG",
+  "title": "Acute Ischemic Stroke — Time-Based Algorithm",
+  "aliases": ["ischemic stroke thrombolysis", "tPA alteplase dose", "thrombectomy LVO", "stroke BP targets", "tPA contraindications", "ICH management", "DAWN DEFUSE-3"],
+  "tags": ["stroke", "ischemic stroke", "thrombolysis", "alteplase", "tenecteplase", "thrombectomy", "NIHSS", "ICH", "blood pressure", "ED", "neurology"],
+  "keywords": ["1.9 million neurons/min", "alteplase 0.9 mg/kg max 90", "BP < 185/110 before tPA", "permissive HTN 220/120", "large vessel occlusion", "24-hour window DAWN", "ICH SBP target"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — EM Pocket Guide: Stroke / TIA (AHA 2023)",
+    "AHA/ASA Guideline for the Early Management of Acute Ischemic Stroke (2019, 2023 update); DAWN, DEFUSE-3"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — the time-anchored workup, IV thrombolysis dosing + BP targets + contraindications, the thrombectomy window, and ICH management targets." }],
+  "summary": "Time = brain (~1.9 million neurons/min in a large-vessel occlusion). Non-contrast CT first to exclude haemorrhage. IV thrombolysis within 4.5 h if eligible (BP must be < 185/110 first). CT angiography for LVO → thrombectomy, up to 24 h with perfusion-imaging selection.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "The clock" },
+    { "type": "list", "items": [
+      "0–25 min: NIHSS, fingerstick glucose, INR / anti-Xa if on anticoagulation, ECG, weight → STAT non-contrast head CT. Do not delay CT for labs unless anticoagulation is known/suspected.",
+      "25–45 min (if eligible): IV thrombolysis — alteplase 0.9 mg/kg (max 90 mg), 10% as a bolus over 1 min, the rest over 60 min — for onset (or last-known-well) within 4.5 h. Tenecteplase 0.25 mg/kg single bolus is an accepted alternative, especially before thrombectomy.",
+      "0–24 h, large-vessel occlusion: CT angiography → mechanical thrombectomy. Standard window 0–6 h; extend to 24 h with DAWN / DEFUSE-3 perfusion-mismatch criteria.",
+      "Wake-up / unknown onset: MRI DWI-FLAIR mismatch (or CT perfusion) can still select some patients for thrombolysis (see the HOPE trial for the 4.5–24 h perfusion-selected question)."
+    ] },
+    { "type": "heading", "level": 2, "text": "Blood pressure" },
+    { "type": "list", "items": [
+      "Before thrombolysis: must be < 185 / 110 — treat with labetalol 10–20 mg IV or a nicardipine / clevidipine infusion. If it can't be brought and held below that safely, thrombolysis is contraindicated.",
+      "After thrombolysis: keep < 180 / 105 for 24 h.",
+      "No thrombolysis (permissive hypertension): allow up to 220 / 120 unless another indication to treat (aortic dissection, ACS, acute HF, hypertensive encephalopathy) — over-aggressive lowering extends the infarct."
+    ] },
+    { "type": "heading", "level": 2, "text": "Thrombolysis contraindications (abbreviated)" },
+    { "type": "list", "items": [
+      "Absolute: haemorrhage on CT; prior ICH; serious head trauma / intracranial surgery / ischemic stroke within 3 months; active internal bleeding; platelets < 100k; INR > 1.7 or elevated PT; therapeutic LMWH within 24 h; a direct thrombin or factor-Xa inhibitor within 48 h (unless coagulation tests are normal); BP that stays > 185 / 110 despite treatment; blood glucose < 50 not corrected; suspected infective endocarditis / aortic dissection.",
+      "Extended-window (3–4.5 h) additional relative contraindications: age > 80, NIHSS > 25, any anticoagulant use (any dose / INR), a history of BOTH prior stroke AND diabetes.",
+      "The list is guideline-specific and evolving — check the current AHA/ASA table and involve the stroke team; many former absolute contraindications are now relative."
+    ] },
+    { "type": "heading", "level": 2, "text": "Intracerebral haemorrhage (if the CT shows blood)" },
+    { "type": "table",
+      "columns": ["Parameter", "Target / action"],
+      "rows": [
+        ["Blood pressure (first hours)", "SBP to ~ 140 mmHg (acceptable range often 130–150) — rapid, smooth lowering; avoid dropping below 130"],
+        ["Glucose", "140–180 mg/dL"],
+        ["Temperature", "Normothermia 36–37.5 °C"],
+        ["Warfarin reversal", "4F-PCC 25–50 U/kg + vitamin K 10 mg IV slow; target INR < 1.4"],
+        ["Dabigatran reversal", "Idarucizumab 5 g IV (2 × 2.5 g)"],
+        ["Factor-Xa inhibitor reversal", "4F-PCC 25–50 U/kg (andexanet withdrawn from the US market 2025-12) — see the anticoagulation-reversal module"],
+        ["Raised ICP / herniation", "Head of bed 30°, head midline; mannitol 0.5–1 g/kg or hypertonic saline; brief hyperventilation only if actively herniating; neurosurgery for a posterior-fossa bleed, hydrocephalus, or a large lobar/deep bleed"]
+      ]
+    }
+  ],
+  "related": ["anticoagulation-reversal", "acute-pe-guideline-2026", "hyperosmolar-therapy", "twelve-lead-stemi-criteria", "nihss"],
+  "buildNote": "Tier 1 (currency-sensitive). NIHSS calculator already exists. The HOPE trial (perfusion-selected alteplase 4.5–24 h) content was previously in ebm-study-audits — its actionable point (tissue over time) is noted here; a dedicated late-window pathway is a possible expansion."
+}

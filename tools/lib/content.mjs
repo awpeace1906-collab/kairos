@@ -15,6 +15,7 @@ export const SCHEMA_FOR_TYPE = {
   calculator: "calculator.schema.json",
   procedure: "procedure.schema.json",
   "drug-card": "drug-card.schema.json",
+  "anesthesia-drug-card": "anesthesia-drug-card.schema.json",
   reference: "reference.schema.json",
   "peds-tool": "peds-tool.schema.json",
 };

@@ -1,0 +1,52 @@
+{
+  "id": "ich-score",
+  "section": "Calculators",
+  "category": "Neuro / Stroke / Head Injury",
+  "title": "ICH Score",
+  "aliases": ["intracerebral hemorrhage score", "Hemphill ICH score", "ICH 30-day mortality"],
+  "tags": ["intracerebral hemorrhage", "stroke", "prognosis", "goals of care", "ED", "ICU"],
+  "keywords": ["GCS", "ICH volume 30 mL", "intraventricular extension", "infratentorial origin", "age 80"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Hemphill JC et al. Stroke 2001"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ED", "ICU"],
+  "purpose": "30-day mortality estimate after spontaneous intracerebral haemorrhage — a common anchor for the early goals-of-care conversation. It is a prognostic aid, not a treatment-limitation rule; early aggressive care (and deferring DNR decisions ≥ 24–48 h) improves outcomes independent of the score.",
+  "items": [
+    { "key": "gcs", "label": "Glasgow Coma Scale on presentation", "options": [
+      { "label": "13–15", "points": 0 },
+      { "label": "5–12", "points": 1 },
+      { "label": "3–4", "points": 2 }
+    ] },
+    { "key": "volume", "label": "ICH volume on initial CT (ABC/2 method)", "options": [
+      { "label": "< 30 mL", "points": 0 },
+      { "label": "≥ 30 mL", "points": 1 }
+    ] },
+    { "key": "ivh", "label": "Intraventricular haemorrhage present", "options": [
+      { "label": "No", "points": 0 },
+      { "label": "Yes", "points": 1 }
+    ] },
+    { "key": "infratentorial", "label": "Infratentorial origin (brainstem / cerebellum)", "options": [
+      { "label": "No", "points": 0 },
+      { "label": "Yes", "points": 1 }
+    ] },
+    { "key": "age80", "label": "Age ≥ 80", "options": [
+      { "label": "No", "points": 0 },
+      { "label": "Yes", "points": 1 }
+    ] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "0 — 30-day mortality ~ 0%", "severity": "low" },
+    { "min": 1, "max": 1, "label": "1 — ~ 13%", "severity": "moderate" },
+    { "min": 2, "max": 2, "label": "2 — ~ 26%", "severity": "moderate" },
+    { "min": 3, "max": 3, "label": "3 — ~ 72%", "severity": "high" },
+    { "min": 4, "max": 4, "label": "4 — ~ 97%", "severity": "high" },
+    { "min": 5, "max": 6, "label": "5–6 — ~ 100%", "severity": "high" }
+  ],
+  "notes": "ICH volume by ABC/2: A = largest diameter on the slice with the biggest clot, B = diameter perpendicular to A, C = number of 10-mm slices with clot (weighted for partial slices), then A×B×C/2 in mL. Mortality figures are from the original single-centre derivation.",
+  "buildNote": "Additive, score 0–6. An ABC/2 volume helper is a natural companion."
+}

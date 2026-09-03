@@ -1,0 +1,41 @@
+{
+  "id": "free-water-deficit",
+  "section": "Drug & Dosing Cards",
+  "category": "Dosing & Fluid Math",
+  "title": "Free Water Deficit",
+  "aliases": ["hypernatremia correction", "water deficit"],
+  "tags": ["hypernatremia", "sodium correction", "free water", "ICU"],
+  "contentType": "calculator",
+  "content_version": 2,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "Rose BD, Post TW. Clinical Physiology of Acid-Base and Electrolyte Disorders, 5th ed.",
+    "Adrogué HJ, Madias NE. N Engl J Med 2000;342:1493-9 (rate-of-correction guidance)"
+  ],
+  "changelog": [
+    { "version": 2, "date": "2026-09-01", "change": "Tier 1 verification: TBW-fraction map and deficit formula confirmed. Primary citation changed to the standard textbook form (the deficit equation is not the headline equation of the Adrogué-Madias paper, which gives Δ[Na] per litre of infusate)." },
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3." }
+  ],
+  "engine": "formula",
+  "settings": ["ICU"],
+  "purpose": "Water needed to correct hypernatremia. Correct slowly — no more than 8-10 mEq/L per 24 h to avoid osmotic demyelination.",
+  "inputs": [
+    { "key": "weight", "label": "Weight", "type": "number", "unit": "kg", "min": 3, "max": 250 },
+    { "key": "currentNa", "label": "Current sodium", "type": "number", "unit": "mmol/L", "min": 145, "max": 200 },
+    { "key": "sex", "label": "Total body water fraction", "type": "select", "options": [
+      { "label": "Adult male (0.6)", "value": 0 },
+      { "label": "Adult female / elderly male (0.5)", "value": 1 },
+      { "label": "Elderly female (0.45)", "value": 1.5 }
+    ] }
+  ],
+  "formulas": [
+    { "key": "tbw", "label": "Total body water", "expression": "(0.6 - 0.1 * sex) * weight", "unit": "L", "precision": 1 },
+    { "key": "deficit", "label": "Free water deficit", "expression": "(0.6 - 0.1 * sex) * weight * ((currentNa / 140) - 1)", "unit": "L", "precision": 1 }
+  ],
+  "interpretation": [
+    { "forKey": "deficit", "label": "Replace this volume plus ongoing losses. Recheck sodium every 4-6 h; target a fall of ≤ 8-10 mmol/L per 24 h.", "severity": "info" }
+  ],
+  "notes": "The select value maps to the TBW fraction: 0.6 / 0.5 / 0.45. This estimates the water deficit only — it does not account for ongoing insensible or urinary losses."
+}

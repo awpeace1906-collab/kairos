@@ -10,9 +10,11 @@ export function renderContent(mod, route, store) {
     case "reference":
       return renderReference(mod);
     case "procedure":
-      return renderProcedure(mod);
+      return renderProcedure(mod, route);
     case "drug-card":
       return renderDrugCard(mod, route, store);
+    case "anesthesia-drug-card":
+      return renderAnesthesiaDrugCard(mod);
     case "peds-tool":
       return renderPedsTool(mod, route, store);
     default:
@@ -33,8 +35,9 @@ function shell(mod, ...body) {
   );
 }
 
-function renderReference(mod) {
-  const blocks = (mod.body || []).map((b) => {
+/** Shared renderer for the `body` block array used by reference and peds-tool modules. */
+export function renderBlocks(body) {
+  return (body || []).map((b) => {
     switch (b.type) {
       case "heading":
         return el(`h${b.level || 2}`, {}, b.text);
@@ -59,26 +62,118 @@ function renderReference(mod) {
         return null;
     }
   });
-  return shell(mod, el("div", { class: "prose" }, ...blocks));
 }
 
-function renderProcedure(mod) {
+function renderReference(mod) {
+  return shell(mod, el("div", { class: "prose" }, ...renderBlocks(mod.body)));
+}
+
+/** AnesCalc-origin anesthesia drug card — prose reference, no live math. */
+function renderAnesthesiaDrugCard(mod) {
+  const field = (label, value) =>
+    value ? el("div", { class: "adc-field" }, el("span", { class: "adc-label" }, label), el("span", {}, value)) : null;
+  const list = (label, items) =>
+    items?.length ? el("div", {}, el("h3", {}, label), el("ul", {}, items.map((i) => el("li", {}, i)))) : null;
+
+  return el(
+    "section",
+    { class: "content anesthesia-drug-card" },
+    el("h1", {}, mod.title),
+    el("p", { class: "adc-sub" },
+      mod.tallManLetters ? el("strong", { class: "tall-man" }, mod.tallManLetters) : mod.title,
+      mod.brandName ? el("span", { class: "muted" }, ` · ${mod.brandName}`) : null,
+      el("span", { class: "muted" }, ` · ${mod.drugClassLabel}`)),
+    el("p", { class: "purpose" }, mod.mechanism),
+    el("div", { class: "adc-grid" },
+      field("Onset", mod.onset),
+      field("Duration", mod.duration),
+      mod.reversal ? field("Reversal", mod.reversal) : null),
+    el("div", {}, el("h3", {}, "Dosing"), el("pre", { class: "adc-dosing" }, mod.dosing)),
+    list("Cautions", mod.cautions),
+    list("Pearls", mod.pearls),
+    lastVerified(mod)
+  );
+}
+
+function renderProcedure(mod, route) {
+  const isTree = mod.outputType === "decision-tree" && (mod.nodes || []).length > 0;
   return shell(
     mod,
     el("p", { class: "settings" }, `${mod.outputType}${mod.flags?.includes("stub") ? " · stub" : ""}`),
-    mod.entryPrompt ? el("p", { class: "entry-prompt" }, mod.entryPrompt) : null,
-    mod.nodes?.length
-      ? el("ol", { class: "nodes" }, mod.nodes.map((n) =>
-          el("li", { class: `node ${n.type}` },
-            n.prompt ? el("strong", {}, n.prompt) : null,
-            n.body ? el("p", {}, n.body) : null,
-            n.choices?.length ? el("ul", {}, n.choices.map((c) => el("li", {}, `${c.label} → ${c.next}`))) : null)
-        ))
-      : null,
+    !isTree && mod.entryPrompt ? el("p", { class: "entry-prompt" }, mod.entryPrompt) : null,
+    isTree ? treeWalker(mod) : workflowList(mod),
     mod.checklist?.length ? el("div", {}, el("h3", {}, "Checklist"), el("ul", { class: "checklist" }, mod.checklist.map((c) => el("li", {}, el("label", {}, el("input", { type: "checkbox" }), " ", c))))) : null,
-    mod.noteTemplate ? el("div", {}, el("h3", {}, "Procedure note template"), el("pre", { class: "note-template" }, mod.noteTemplate)) : null,
-    mod.crossLinks?.length ? el("p", { class: "muted" }, "Pulls dosing from: " + mod.crossLinks.join(", ")) : null
+    mod.noteTemplate ? noteTemplateForm(mod, route) : null,
+    mod.crossLinks?.length ? el("p", { class: "muted" }, "Orchestrates: " + mod.crossLinks.join(", ")) : null
   );
+}
+
+function workflowList(mod) {
+  if (!mod.nodes?.length) return null;
+  return el("ol", { class: "nodes" }, mod.nodes.map((n) =>
+    el("li", { class: `node ${n.type}` },
+      n.prompt ? el("strong", {}, n.prompt) : null,
+      n.body ? el("p", {}, n.body) : null)
+  ));
+}
+
+/** Interactive walk of a decision-tree procedure. */
+function treeWalker(mod) {
+  const byId = Object.fromEntries(mod.nodes.map((n) => [n.id, n]));
+  const startId = byId.start ? "start" : (mod.nodes.find((n) => n.type === "question") || mod.nodes[0]).id;
+  const container = el("div", { class: "tree-walker" });
+  let path = [startId];
+
+  function render() {
+    const node = byId[path[path.length - 1]];
+    const crumbs = el("div", { class: "tree-crumbs" }, path.map((id, i) => {
+      const n = byId[id];
+      const label = n.prompt || n.body?.slice(0, 24) || id;
+      return el("span", {}, i > 0 ? " › " : "", i < path.length - 1
+        ? el("a", { href: "#", onClick: (e) => { e.preventDefault(); path = path.slice(0, i + 1); render(); } }, label)
+        : label);
+    }));
+    const bodyEls = [
+      node.prompt ? el("h3", {}, node.prompt) : null,
+      node.body ? el("p", { class: `node ${node.type}` }, node.body) : null,
+    ];
+    if (node.choices?.length) {
+      bodyEls.push(el("div", { class: "opts" }, node.choices.map((c) =>
+        el("button", { type: "button", class: "opt", onClick: () => { path = [...path, c.next]; render(); } }, c.label)
+      )));
+    } else {
+      bodyEls.push(el("p", { class: "muted" }, "End of this branch."));
+    }
+    const nav = el("div", { class: "toolbar" },
+      path.length > 1 ? el("button", { type: "button", class: "clear-all", onClick: () => { path = path.slice(0, -1); render(); } }, "‹ Back") : null,
+      path.length > 1 ? el("button", { type: "button", class: "clear-all", onClick: () => { path = [startId]; render(); } }, "Start over") : null
+    );
+    container.replaceChildren(crumbs, ...bodyEls.filter(Boolean), nav);
+  }
+  render();
+  return container;
+}
+
+/** Fill {{placeholders}} in the note template from a small form. */
+function noteTemplateForm(mod, route) {
+  const keys = [...new Set([...mod.noteTemplate.matchAll(/\{\{(\w+)\}\}/g)].map((m) => m[1]))];
+  const saved = session.get(route);
+  const state = { ...(saved.note || {}) };
+  const out = el("pre", { class: "note-template" });
+  function fill() {
+    session.patch(route, { note: state });
+    out.textContent = mod.noteTemplate.replace(/\{\{(\w+)\}\}/g, (_, k) => state[k] || `{{${k}}}`);
+  }
+  const grid = el("div", { class: "field-grid" }, keys.map((k) =>
+    el("label", { class: "field" },
+      el("span", { class: "field-label" }, k),
+      el("span", { class: "field-input" }, el("input", {
+        type: "text", value: state[k] || "",
+        onInput: (e) => { state[k] = e.target.value; fill(); },
+      })))
+  ));
+  fill();
+  return el("div", {}, el("h3", {}, "Procedure note"), grid, out);
 }
 
 function renderDrugCard(mod, route, store) {
@@ -118,9 +213,14 @@ function renderDrugCard(mod, route, store) {
           { class: "dose-row" },
           el("div", { class: "dose-ind" }, d.indication, el("span", { class: "muted" }, ` · ${d.route}`)),
           el("div", { class: "dose-amt" },
-            el("strong", {}, `${dose.amount} ${dose.unit}`),
-            dose.volumeMl != null ? el("span", {}, ` = ${dose.volumeMl} mL${dose.concentration ? ` (${dose.concentration})` : ""}`) : null,
-            dose.capped ? el("span", { class: "flag" }, " max-dose cap") : null),
+            el("strong", {}, dose.amountHigh != null && dose.amountHigh !== dose.amount
+              ? `${dose.amount}–${dose.amountHigh} ${dose.unit}`
+              : `${dose.amount} ${dose.unit}`),
+            dose.volumeMl != null ? el("span", {}, dose.volumeMlHigh != null && dose.volumeMlHigh !== dose.volumeMl
+              ? ` = ${dose.volumeMl}–${dose.volumeMlHigh} mL${dose.concentration ? ` (${dose.concentration})` : ""}`
+              : ` = ${dose.volumeMl} mL${dose.concentration ? ` (${dose.concentration})` : ""}`) : null,
+            dose.capped ? el("span", { class: "flag" }, " max-dose cap") : null,
+            dose.floored ? el("span", { class: "flag" }, " min-dose floor") : null),
           dose.repeat ? el("div", { class: "muted" }, dose.repeat) : null,
           d.notes ? el("div", { class: "muted" }, d.notes) : null
         );
@@ -157,6 +257,7 @@ function renderPedsTool(mod, route, store) {
   return shell(
     mod,
     el("p", { class: "settings" }, `${mod.kind}${mod.ageRange ? " · " + mod.ageRange : ""}`),
-    mod.sourceOfTruth?.length ? el("p", { class: "muted" }, "Defers to: " + mod.sourceOfTruth.join(", ")) : null
+    mod.sourceOfTruth?.length ? el("p", { class: "muted" }, "Defers to: " + mod.sourceOfTruth.join(", ")) : null,
+    mod.body?.length ? el("div", { class: "prose" }, ...renderBlocks(mod.body)) : null
   );
 }

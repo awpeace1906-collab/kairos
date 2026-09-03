@@ -1,0 +1,52 @@
+{
+  "id": "glasgow-blatchford",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "Glasgow-Blatchford Bleeding Score",
+  "aliases": ["GBS", "upper GI bleed risk", "GI bleed discharge", "pre-endoscopy bleeding score"],
+  "tags": ["upper GI bleed", "hematemesis", "melena", "endoscopy", "disposition", "ED"],
+  "keywords": ["BUN", "hemoglobin", "systolic BP", "melena", "syncope", "GBS 0-1 discharge"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 1,
+  "sources": ["Blatchford O et al. Lancet 2000; NICE / ACG upper-GI-bleed guidance (GBS ≤ 1 → consider outpatient management)"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Pre-endoscopy risk stratification for acute upper GI bleeding — identifies who is low-risk enough for outpatient management vs. who needs admission and urgent endoscopy. Uses only clinical data and labs (no endoscopy findings).",
+  "items": [
+    { "key": "bun", "label": "Blood urea nitrogen (mg/dL)", "options": [
+      { "label": "< 18.2", "points": 0 },
+      { "label": "18.2–22.3", "points": 2 },
+      { "label": "22.4–28", "points": 3 },
+      { "label": "28.1–70", "points": 4 },
+      { "label": "> 70", "points": 6 }
+    ] },
+    { "key": "hgb", "label": "Haemoglobin (g/dL)", "options": [
+      { "label": "Man ≥ 13 / Woman ≥ 12", "points": 0 },
+      { "label": "Man 12–12.9 / Woman 10–11.9", "points": 1 },
+      { "label": "Man 10–11.9", "points": 3 },
+      { "label": "< 10 (either sex)", "points": 6 }
+    ] },
+    { "key": "sbp", "label": "Systolic blood pressure (mmHg)", "options": [
+      { "label": "≥ 110", "points": 0 },
+      { "label": "100–109", "points": 1 },
+      { "label": "90–99", "points": 2 },
+      { "label": "< 90", "points": 3 }
+    ] },
+    { "key": "pulse100", "label": "Pulse ≥ 100/min", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "melena", "label": "Melaena present", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "syncope", "label": "Syncope (presentation)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "liver", "label": "Hepatic disease (history or clinical/lab evidence)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "cardiac", "label": "Cardiac failure (history or clinical/echo evidence)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 1, "label": "Low risk — very low need for transfusion, endoscopic intervention, or death. Consider outpatient management with early outpatient endoscopy", "severity": "low" },
+    { "min": 2, "max": 5, "label": "Intermediate risk — admit, resuscitate, endoscopy within 24 h", "severity": "moderate" },
+    { "min": 6, "max": 23, "label": "High risk — active resuscitation, blood products as needed, urgent endoscopy; a score ≥ 12 predicts the highest need for intervention", "severity": "high" }
+  ],
+  "notes": "GBS 0 (or ≤ 1 in some protocols) is the threshold for considering discharge without inpatient endoscopy in a haemodynamically stable patient with no other reason to admit. The score does not incorporate anticoagulant use — factor that in separately.",
+  "buildNote": "Additive with graded lab bands. Score range 0–23."
+}

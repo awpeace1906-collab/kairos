@@ -1,0 +1,48 @@
+{
+  "id": "phenylephrine",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Vasopressors",
+  "title": "Phenylephrine",
+  "aliases": [
+    "Neosynephrine"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "vasopressor",
+    "phenylephrine"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Neosynephrine",
+  "tallManLetters": "PHENYLEPHrine",
+  "drugClass": "vasopressor",
+  "drugClassLabel": "Vasopressor",
+  "mechanism": "Selective synthetic α₁ agonist → vasoconstriction (↑SVR, ↑MAP). No β activity → reflex bradycardia common via baroreceptors. No direct inotropy or chronotropy.",
+  "onset": "~1 min",
+  "duration": "10–15 min (bolus)",
+  "dosing": "Bolus (intraop/spinal hypotension): 50–200 mcg IV\nInfusion: 0.25–1 mcg/kg/min (or 25–100 mcg/min)\nObstetric spinal prophylaxis: 0.5–1 mcg/kg/min prophylactic infusion",
+  "cautions": [
+    "AEs: Reflex bradycardia (↑SVR with ↔/↑MAP → reflex ↓HR), reflex ↓CO with high doses, hypertension (overdose)",
+    "CI: Bradycardia; severe hypovolemia; hypothyroidism (extreme sensitivity)",
+    "Precautions: Pure vasoconstriction — may ↓CO if cardiac output is HR-dependent; preferred over ephedrine for C/S spinal hypotension (less fetal acidosis); treat reflex bradycardia with atropine or epinephrine"
+  ],
+  "pearls": [
+    "First-line for spinal hypotension in obstetrics per 2017 ASA/SOAP consensus — less fetal umbilical artery acidosis than ephedrine. No β-activity — does NOT treat bradycardia.",
+    "Pure α₁ — avoid as sole vasopressor if low cardiac output is the etiology of hypotension. Combination phenylephrine/vasopressin infusion increasingly used in OR."
+  ],
+  "reversal": "Dose reduction; atropine for reflex bradycardia"
+}

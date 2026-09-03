@@ -1,0 +1,48 @@
+{
+  "id": "midazolam",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Benzodiazepines",
+  "title": "Midazolam",
+  "aliases": [
+    "Versed"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "benzodiazepine",
+    "midazolam"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Versed",
+  "tallManLetters": "midaZOLAM",
+  "drugClass": "benzodiazepine",
+  "drugClassLabel": "Benzodiazepine",
+  "mechanism": "Positive allosteric GABA-A modulator (benzodiazepine binding site) — augments endogenous GABA activity; does not directly activate the receptor. Anxiolysis, sedation, amnesia, anticonvulsant.",
+  "onset": "IV 2–3 min; IM 5–15 min; IN 5–10 min; PO 15–30 min",
+  "duration": "IV 45–60 min",
+  "dosing": "Premedication adult: 0.5 mg/kg IV (MAX 10 mg)\nPremedication peds: 0.5 mg/kg PO (MAX 15 mg)\nSedation: 0.02 mg/kg IV (MAX 5 mg); titrate 1–2 mg q2–3 min\nInduction adjunct: 0.05–0.1 mg/kg IV\nAnticonvulsant: 0.1 mg/kg IV (MAX 10 mg)\nICU infusion: 0.02–0.1 mg/kg/hr",
+  "cautions": [
+    "AEs: Respiratory depression, apnea, hypotension, paradoxical agitation (peds), retrograde amnesia, nystagmus",
+    "CI: Acute narrow-angle glaucoma; hypersensitivity; premature infants; intrathecal/epidural administration",
+    "Precautions: Synergistic respiratory depression with opioids — dose reduce both; paradoxical reactions (peds); withdrawal with chronic use; ↑ICP; pediatric neurotoxicity"
+  ],
+  "pearls": [
+    "Reliable amnesia — dose BEFORE painful or distressing procedures. Duration of flumazenil < duration of midazolam — resedation possible.",
+    "Does NOT reverse non-BZD hypnotics (propofol, ketamine, barbiturates). Hepatic CYP3A4 metabolism — impaired in hepatic/renal failure."
+  ],
+  "reversal": "Flumazenil 0.2 mg IV q1 min (MAX 1 mg)"
+}

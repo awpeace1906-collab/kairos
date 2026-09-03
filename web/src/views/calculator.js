@@ -32,6 +32,23 @@ export function renderCalculator(mod, route) {
   } else if (mod.engine === "formula" || mod.engine === "external") {
     const grid = el("div", { class: "field-grid" });
     for (const inp of mod.inputs || []) {
+      if (inp.type === "select") {
+        const sel = el(
+          "select",
+          {
+            onChange: (e) => {
+              state.inputs[inp.key] = e.target.value;
+              recompute();
+            },
+          },
+          el("option", { value: "" }, "—"),
+          (inp.options || []).map((o) =>
+            el("option", { value: String(o.value), selected: String(state.inputs[inp.key]) === String(o.value) }, o.label)
+          )
+        );
+        grid.append(el("label", { class: "field" }, el("span", { class: "field-label" }, inp.label), el("span", { class: "field-input" }, sel)));
+        continue;
+      }
       grid.append(
         clearableField({
           id: `f-${inp.key}`,
@@ -72,6 +89,7 @@ export function renderCalculator(mod, route) {
       state.items = {};
       state.inputs = {};
       container.querySelectorAll("input").forEach((i) => (i.value = ""));
+      container.querySelectorAll("select").forEach((s) => (s.selectedIndex = 0));
       container.querySelectorAll(".opt.selected").forEach((b) => b.classList.remove("selected"));
       recompute();
     })),

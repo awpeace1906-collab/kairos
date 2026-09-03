@@ -1,0 +1,37 @@
+{
+  "id": "canadian-syncope-risk-score",
+  "section": "Calculators",
+  "category": "Cardiovascular / Chest Pain / Arrhythmia",
+  "title": "Canadian Syncope Risk Score",
+  "aliases": ["CSRS", "syncope risk", "syncope disposition", "30-day serious outcome syncope"],
+  "tags": ["syncope", "disposition", "risk stratification", "troponin", "ECG", "ED"],
+  "keywords": ["vasovagal predisposition", "heart disease history", "QRS axis", "QRS duration > 130 ms", "corrected QT > 480", "troponin above 99th percentile"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 1,
+  "sources": ["Thiruganasambandamoorthy V et al. CMAJ 2016; JAMA Intern Med 2020 (validation)"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "30-day risk of a serious adverse event after an ED visit for syncope (once the initial workup is negative). Applies to adults ≥ 16 y with syncope and no serious condition already identified. Do NOT apply if the cause is already established or a serious outcome is already present.",
+  "items": [
+    { "key": "vasovagal", "label": "Predisposition to vasovagal symptoms (triggered by warm/crowded place, prolonged standing, fear/emotion/pain)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": -1 }] },
+    { "key": "heartDisease", "label": "History of heart disease (CAD, atrial fibrillation/flutter, CHF, valvular disease)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "sbpRange", "label": "Any systolic BP reading < 90 or > 180 mmHg in the ED", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "troponin", "label": "Troponin > the 99th-percentile URL", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "abnQrsAxis", "label": "Abnormal QRS axis (< −30° or > 100°)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "wideQrs", "label": "QRS duration > 130 ms", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "longQtc", "label": "Corrected QT interval > 480 ms", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "edDiagnosis", "label": "ED diagnosis of the syncope cause", "options": [{ "label": "Vasovagal syncope", "points": -2 }, { "label": "Cardiac syncope", "points": 2 }, { "label": "Neither / not classified", "points": 0 }] }
+  ],
+  "interpretation": [
+    { "min": -3, "max": -1, "label": "Very low risk — 30-day serious outcome ~ 0.4–0.7%", "disposition": "Discharge; no cardiac monitoring required", "severity": "low" },
+    { "min": 0, "max": 0, "label": "Low risk — ~ 1.9%", "disposition": "Discharge reasonable; consider brief observation", "severity": "low" },
+    { "min": 1, "max": 3, "label": "Medium risk — ~ 8.1% (score 1) rising to ~ 12–20%", "disposition": "15-day outpatient cardiac monitoring; shared decision on brief admission", "severity": "moderate" },
+    { "min": 4, "max": 11, "label": "High / very high risk — ~ 25% (score 4) to > 50% (score ≥ 6)", "disposition": "Admit / prolonged monitoring; cardiology involvement", "severity": "high" }
+  ],
+  "notes": "Serious adverse events tracked: death, arrhythmia, MI, structural heart disease, aortic dissection, PE, severe haemorrhage, subarachnoid haemorrhage, and any procedural intervention for the cause. The score does not replace judgement for a clearly high-risk presentation.",
+  "buildNote": "Score range −3 to +11. The ED-diagnosis item is mutually exclusive (a select input)."
+}

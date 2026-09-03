@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kairos.app/schema/anesthesia-drug-card.schema.json",
+  "title": "Kairos anesthesia drug card (AnesCalc-origin)",
+  "description": "A text reference card for an anesthesia / perioperative drug. Imported from AnesCalc v2's DrugCard model — NOT a per-kg calculator (that is drug-card.schema.json). Prose fields, no live math.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/recordMeta" },
+    { "$ref": "common.schema.json#/$defs/tieredReviewRequired" }
+  ],
+  "unevaluatedProperties": false,
+  "required": ["drugClass", "mechanism", "onset", "duration", "dosing", "cautions", "pearls"],
+  "properties": {
+    "id": true, "section": true, "category": true, "title": true, "aliases": true, "tags": true, "keywords": true,
+    "contentType": { "const": "anesthesia-drug-card" },
+    "content_version": true, "last_reviewed": true, "next_review_due": true,
+    "review_tier": true, "sources": true, "changelog": true, "flags": true, "route": true,
+
+    "brandName": { "type": "string" },
+    "tallManLetters": {
+      "type": "string",
+      "description": "ISMP tall-man styling for look-alike/sound-alike safety, e.g. \"PROPofol\", \"midaZOLAM\"."
+    },
+    "drugClass": {
+      "type": "string",
+      "description": "AnesCalc DrugCategory. Drives grouping and colour.",
+      "enum": [
+        "induction", "benzodiazepine", "volatile", "nmb", "opioid", "local",
+        "vasopressor", "reversal", "anticholinergic", "antiemetic", "gi",
+        "emergency", "methylene-blue", "anticoagulant"
+      ]
+    },
+    "drugClassLabel": { "type": "string" },
+    "mechanism": { "type": "string", "minLength": 10 },
+    "onset": { "type": "string" },
+    "duration": { "type": "string" },
+    "dosing": {
+      "type": "string",
+      "description": "Multi-line dosing text (newline-separated indications). Rendered as a block."
+    },
+    "cautions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" },
+      "description": "Adverse effects / contraindications / precautions. Often prefixed 'AEs:' / 'CI:' / 'Precautions:'."
+    },
+    "pearls": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "reversal": { "type": "string" },
+    "buildNote": { "type": "string" }
+  }
+}

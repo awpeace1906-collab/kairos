@@ -1,0 +1,48 @@
+{
+  "id": "vasopressin",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Vasopressors",
+  "title": "Vasopressin",
+  "aliases": [
+    "Pitressin / Vasostrict"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "vasopressor",
+    "vasopressin"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Pitressin / Vasostrict",
+  "tallManLetters": "VASOpressin",
+  "drugClass": "vasopressor",
+  "drugClassLabel": "Vasopressor",
+  "mechanism": "Antidiuretic hormone (AVP) analog. V₁ receptor agonism → vascular smooth muscle contraction (↑SVR) via catecholamine-independent mechanism. V₂: renal collecting duct water reabsorption.",
+  "onset": "~1 min (IV)",
+  "duration": "Infusion-dependent; t½ ~10–35 min",
+  "dosing": "Septic shock adjunct: 0.03–0.04 units/min fixed (do NOT titrate as primary vasopressor)\nVariceal hemorrhage: 0.2–0.4 units/min infusion\nCardiac arrest (historical): 40 units IV × 1 (removed from 2020 ACLS guidelines)",
+  "cautions": [
+    "AEs: Digital ischemia, mesenteric ischemia, coronary vasospasm (high doses), hyponatremia (V₂/ADH effect), skin/mucosal blanching, headache",
+    "CI: Hypersensitivity; no firm contraindication in shock",
+    "Precautions: Fixed dose for septic shock — not titrated like catecholamines; mesenteric ischemia risk — monitor GI signs; catecholamine-sparing (VASST trial 2008)"
+  ],
+  "pearls": [
+    "SSC 2021: vasopressin as second-line add-on at 0.03 units/min when norepinephrine ≥25–50 mcg/min. Fixed dose — acts as a catecholamine-sparing agent.",
+    "VASST 2008: vasopressin + NE vs. NE alone — no overall mortality difference but ↓mortality in less severe sepsis. Catecholamine-independent mechanism valuable in vasoplegic states."
+  ],
+  "reversal": "None specific; dose reduction"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "fentanyl",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Opioids",
+  "title": "Fentanyl",
+  "aliases": [
+    "Sublimaze"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "opioid",
+    "fentanyl"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Sublimaze",
+  "tallManLetters": "FENTanyl",
+  "drugClass": "opioid",
+  "drugClassLabel": "Opioid",
+  "mechanism": "Synthetic μ-opioid receptor agonist. ~100× more potent than morphine. Highly lipophilic — rapid CNS penetration. Context-sensitive half-time increases significantly with prolonged infusion.",
+  "onset": "IV 1–2 min; IT 5–10 min; IN 5–15 min",
+  "duration": "IV 30–60 min (single dose); CSHT increases markedly with infusions >2h",
+  "dosing": "Induction adjunct: 1–3 mcg/kg IV (slow push)\nIntraoperative infusion: 1–3 mcg/kg/hr\nIntrathecal: 10–25 mcg\nEpidural: 50–100 mcg\nIN procedural sedation: 1.5–2 mcg/kg",
+  "cautions": [
+    "AEs: Respiratory depression, chest wall rigidity (high/rapid dose), bradycardia, N/V, pruritus (neuraxial), CSHT increases with prolonged infusion",
+    "CI: Significant respiratory depression in unmonitored setting; acute/severe asthma without resuscitation equipment; GI obstruction; hypersensitivity",
+    "Precautions: Serotonin syndrome with MAOIs/serotonergic agents; ↑ICP via CO₂ retention; CYP3A4 inhibitors ↑ effect; hepatic impairment; dose ↓ in elderly/cachectic"
+  ],
+  "pearls": [
+    "Workhorse of intraoperative analgesia — no histamine release unlike morphine. 100× more potent than morphine IV.",
+    "Chest wall rigidity with rapid high-dose push — treat with NMB. Fentanyl patch NOT for acute pain (not an OR drug)."
+  ],
+  "reversal": "Naloxone 1 mcg/kg IV q2–3 min (partial); 10 mcg/kg (full reversal)"
+}

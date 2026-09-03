@@ -1,0 +1,28 @@
+{
+  "id": "cormack-lehane",
+  "section": "Calculators",
+  "category": "Anesthesia / Airway / OR",
+  "title": "Cormack-Lehane Classification",
+  "aliases": ["laryngoscopy grade", "glottic view grade", "CL grade"],
+  "tags": ["laryngoscopy", "glottic view", "intubation documentation", "difficult airway", "OR"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Cormack RS, Lehane J. Anaesthesia 1984", "Yentis & Lee 1998 (2a/2b split)"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry — the modified 5-grade scheme. Cross-linked from the Airway Management Flow." }],
+  "engine": "classification",
+  "settings": ["OR", "Anesthesia"],
+  "purpose": "Standardised language for the laryngoscopic view actually obtained — for documentation and handoff, not prediction.",
+  "tiers": [
+    { "label": "Grade 1", "description": "Full view of the glottis" },
+    { "label": "Grade 2a", "description": "Partial view of the glottis" },
+    { "label": "Grade 2b", "description": "Only the posterior glottis / arytenoids visible" },
+    { "label": "Grade 3", "description": "Only the epiglottis seen, no glottis" },
+    { "label": "Grade 4", "description": "Neither glottis nor epiglottis visible" }
+  ],
+  "interpretation": [
+    { "label": "Grades 2b-4 correspond to increasing intubation difficulty", "detail": "Record alongside the number of attempts, devices used, tube size and depth. Grade 3-4 warrants a note of the successful rescue technique.", "severity": "info" }
+  ]
+}

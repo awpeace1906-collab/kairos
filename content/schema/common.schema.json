@@ -14,7 +14,7 @@
     },
     "contentType": {
       "type": "string",
-      "enum": ["calculator", "procedure", "drug-card", "reference", "peds-tool"]
+      "enum": ["calculator", "procedure", "drug-card", "anesthesia-drug-card", "reference", "peds-tool"]
     },
     "isoDate": {
       "type": "string",

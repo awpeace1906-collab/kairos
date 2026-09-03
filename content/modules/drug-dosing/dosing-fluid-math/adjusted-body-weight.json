@@ -1,0 +1,43 @@
+{
+  "id": "adjusted-body-weight",
+  "section": "Drug & Dosing Cards",
+  "category": "Dosing & Fluid Math",
+  "title": "Adjusted / Lean Body Weight",
+  "aliases": ["AdjBW", "adjusted body weight", "lean body weight", "Janmahasatian", "obesity dosing"],
+  "tags": ["obesity", "drug dosing", "induction agents", "paralytics", "OR", "ICU"],
+  "contentType": "calculator",
+  "content_version": 2,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "Janmahasatian S et al. Clin Pharmacokinet 2005;44:1051-65 (PMID 16176118)",
+    "Devine BJ. Drug Intell Clin Pharm 1974",
+    "MDCalc — Ideal Body Weight / Adjusted Body Weight"
+  ],
+  "changelog": [
+    { "version": 2, "date": "2026-09-01", "change": "Tier 1 verification: Janmahasatian LBW coefficients (6680/216 male, 8780/244 female) confirmed against the 2005 primary paper, Evidencio, and MDCalc. Removed the verify-coefficients flag." },
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3." }
+  ],
+  "engine": "formula",
+  "settings": ["OR", "ICU", "Anesthesia"],
+  "purpose": "Drug dosing in obesity. Recommendation: use Adjusted Body Weight for routine dosing; reserve the Janmahasatian lean body weight for edge cases (very short or very obese patients).",
+  "inputs": [
+    { "key": "heightIn", "label": "Height", "type": "number", "unit": "inches", "min": 48, "max": 84 },
+    { "key": "actualWeight", "label": "Actual weight", "type": "number", "unit": "kg", "min": 20, "max": 300 },
+    { "key": "heightM", "label": "Height", "type": "number", "unit": "m", "min": 1.2, "max": 2.2 },
+    { "key": "sex", "label": "Sex", "type": "select", "options": [{ "label": "Male", "value": 0 }, { "label": "Female", "value": 1 }] }
+  ],
+  "formulas": [
+    { "key": "ibw", "label": "Ideal body weight (Devine)", "expression": "50 - 4.5 * sex + 2.3 * (heightIn - 60)", "unit": "kg", "precision": 1 },
+    { "key": "adjbw", "label": "Adjusted body weight", "expression": "(50 - 4.5 * sex + 2.3 * (heightIn - 60)) + 0.4 * (actualWeight - (50 - 4.5 * sex + 2.3 * (heightIn - 60)))", "unit": "kg", "precision": 1 },
+    { "key": "bmi", "label": "BMI", "expression": "actualWeight / (heightM ^ 2)", "unit": "kg/m²", "precision": 1 },
+    { "key": "lbwMale", "label": "Lean body weight — male (Janmahasatian)", "expression": "(9270 * actualWeight) / (6680 + 216 * (actualWeight / (heightM ^ 2)))", "unit": "kg", "precision": 1 },
+    { "key": "lbwFemale", "label": "Lean body weight — female (Janmahasatian)", "expression": "(9270 * actualWeight) / (8780 + 244 * (actualWeight / (heightM ^ 2)))", "unit": "kg", "precision": 1 }
+  ],
+  "interpretation": [
+    { "forKey": "adjbw", "label": "Adjusted BW = IBW + 0.4 × (actual − IBW). Use for routine drug dosing in obesity.", "severity": "info" }
+  ],
+  "notes": "Enter height twice (inches for Devine IBW, metres for BMI). Read the Janmahasatian LBW row matching the patient's sex.",
+  "buildNote": "Coefficients verified 2026-09-01 (Janmahasatian 2005, Evidencio, MDCalc). A production build should collapse the two LBW rows into one using the sex select rather than showing both."
+}

@@ -1,0 +1,48 @@
+{
+  "id": "vecuronium",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Neuromuscular Blockers",
+  "title": "Vecuronium",
+  "aliases": [
+    "Norcuron"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "nmb",
+    "vecuronium"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Norcuron",
+  "tallManLetters": "VECUronium",
+  "drugClass": "nmb",
+  "drugClassLabel": "NMB",
+  "mechanism": "Aminosteroid non-depolarizing NMB. Competitive ACh antagonist at nicotinic NMJ receptors. Intermediate duration; no cardiovascular side effects or histamine release at clinical doses.",
+  "onset": "3–5 min",
+  "duration": "25–40 min (prolonged in renal/hepatic failure)",
+  "dosing": "Intubation: 0.1 mg/kg IV\nMaintenance: 0.01–0.015 mg/kg q20–30 min\nInfusion: 1–2 mcg/kg/min",
+  "cautions": [
+    "AEs: Prolonged block in renal/hepatic failure; ICU myopathy (neuromyopathy of critical illness) with prolonged infusion; residual block",
+    "CI: Hypersensitivity",
+    "Precautions: Active metabolite 3-OH vecuronium (80% potency) accumulates in renal failure → prolonged weakness; duration extended by volatiles, aminoglycosides, magnesium, hypothermia; TOF monitoring mandatory"
+  ],
+  "pearls": [
+    "No cardiovascular effects — no histamine release, no vagolysis at clinical doses. Largely displaced by rocuronium in modern practice.",
+    "ICU use associated with ICU myopathy — avoid prolonged infusions. Sugammadex preferred reversal over neostigmine."
+  ],
+  "reversal": "Sugammadex (preferred); Neostigmine 0.07 mg/kg (MAX 5 mg) — only at TOF ≥T4"
+}

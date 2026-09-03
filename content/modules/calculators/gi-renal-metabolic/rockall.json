@@ -1,0 +1,33 @@
+{
+  "id": "rockall",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "Rockall Score (Upper GI Bleed)",
+  "aliases": ["Rockall", "post-endoscopy rebleeding risk", "UGIB mortality score"],
+  "tags": ["upper GI bleed", "rebleeding", "mortality", "endoscopy", "ED", "risk stratification"],
+  "keywords": ["age", "shock", "comorbidity", "endoscopic diagnosis", "stigmata of recent hemorrhage", "pre-endoscopy Rockall", "full Rockall"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Rockall TA et al. Gut 1996; NICE NG12 acute UGIB guidance"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ED", "ICU"],
+  "purpose": "Predicts mortality and rebleeding after an acute upper GI bleed. The first three items give the PRE-endoscopy (clinical) Rockall; adding the last two gives the FULL (post-endoscopy) Rockall. Use Glasgow-Blatchford for the pre-endoscopy decision about who can go home — Rockall's strength is post-endoscopy prognosis.",
+  "items": [
+    { "key": "age", "label": "Age", "options": [{ "label": "< 60", "points": 0 }, { "label": "60–79", "points": 1 }, { "label": "≥ 80", "points": 2 }] },
+    { "key": "shock", "label": "Shock", "options": [{ "label": "No shock — SBP ≥ 100, HR < 100", "points": 0 }, { "label": "Tachycardia — SBP ≥ 100, HR ≥ 100", "points": 1 }, { "label": "Hypotension — SBP < 100", "points": 2 }] },
+    { "key": "comorbidity", "label": "Comorbidity", "options": [{ "label": "No major comorbidity", "points": 0 }, { "label": "Cardiac failure, ischaemic heart disease, or any major comorbidity", "points": 2 }, { "label": "Renal failure, liver failure, or disseminated malignancy", "points": 3 }] },
+    { "key": "diagnosis", "label": "Endoscopic diagnosis", "options": [{ "label": "Mallory-Weiss tear or no lesion identified, and no stigmata of recent haemorrhage", "points": 0 }, { "label": "All other diagnoses", "points": 1 }, { "label": "Malignancy of the upper GI tract", "points": 2 }] },
+    { "key": "stigmata", "label": "Major stigmata of recent haemorrhage", "options": [{ "label": "None, or dark spot only", "points": 0 }, { "label": "Blood in the upper GI tract, adherent clot, visible or spurting vessel", "points": 2 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 2, "label": "Low risk — full Rockall ≤ 2 predicts rebleeding ~ 5% and mortality ~ 0–1%. A pre-endoscopy (clinical) Rockall of 0 with a Glasgow-Blatchford of 0 supports outpatient management", "severity": "low" },
+    { "min": 3, "max": 5, "label": "Intermediate risk — rebleeding ~ 11–24%, mortality ~ 3–11%. Admit; inpatient endoscopy within 24 h, monitored bed if unstable", "severity": "moderate" },
+    { "min": 6, "max": 11, "label": "High risk — rebleeding ~ 33–41%, mortality ~ 17–41%. Urgent endoscopy, ICU / HDU, aggressive resuscitation and transfusion, early surgical / IR involvement for uncontrolled bleeding", "severity": "high" }
+  ],
+  "notes": "Pre-endoscopy Rockall uses only age + shock + comorbidity (max 7). Do not use Rockall to select patients for discharge without endoscopy — that is the Glasgow-Blatchford score's role (GBS 0–1 = candidate for outpatient management). Give a PPI infusion for high-risk stigmata; resuscitate to a restrictive Hb target ~ 7 g/dL unless active massive bleeding or cardiovascular disease.",
+  "buildNote": "Additive. Pre-endoscopy = first 3 items (max 7); full = all 5 (max 11)."
+}

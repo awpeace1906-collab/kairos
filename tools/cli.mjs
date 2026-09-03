@@ -7,10 +7,12 @@ const map = {
   "search-index": "./build-search-index.mjs",
   manifest: "./build-manifest.mjs",
   "check-staleness": "./check-staleness.mjs",
+  test: "./test.mjs",
+  deploy: "./deploy.mjs",
   sync: "./sync-content.mjs",
 };
 if (cmd === "ci") {
-  for (const step of ["./validate.mjs", "./build.mjs", "./check-staleness.mjs"]) {
+  for (const step of ["./validate.mjs", "./build.mjs", "./test.mjs", "./check-staleness.mjs"]) {
     await import(step);
   }
 } else if (map[cmd]) {

@@ -1,0 +1,53 @@
+{
+  "id": "maternal-cardiac-arrest",
+  "section": "Reference Library",
+  "category": "Obstetric Emergencies",
+  "title": "Maternal Cardiac Arrest",
+  "aliases": ["MCA", "BAACC TO LIFE", "resuscitative cesarean delivery", "perimortem cesarean", "left uterine displacement", "CPR in pregnancy", "OBLS"],
+  "tags": ["maternal cardiac arrest", "resuscitation", "ACLS", "pregnancy", "resuscitative cesarean", "left uterine displacement", "amniotic fluid embolism", "OB", "ED", "ICU"],
+  "keywords": ["manage the mother first", "manual LUD not tilt", "IV/IO above the diaphragm", "remove fetal monitors", "RCD within 4-5 min", "autotransfusion 500 mL", "fundus at or above umbilicus"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — OB Pocket Guide: Maternal Cardiac Arrest (BAACC TO LIFE)",
+    "AHA Obstetric Life Support (OBLS) 2024; AHA ACLS 2025 refresh"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — the BAACC TO LIFE differential, CPR modifications for pregnancy (manual LUD, IV above the diaphragm, remove fetal monitors), and resuscitative cesarean delivery timing." }],
+  "summary": "Two patients — manage the MOTHER first; do not monitor or resuscitate the fetus during the arrest, and remove the fetal monitors. From 20 weeks (fundus at/above the umbilicus): continuous manual left uterine displacement, IV/IO access ABOVE the diaphragm, and prepare for a resuscitative cesarean delivery to be done AT the arrest site within 4–5 minutes.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Differential — BAACC TO LIFE" },
+    { "type": "list", "items": [
+      "B — Bleeding / haemorrhage (PPH, abruption, uterine rupture)",
+      "A — Anaesthesia complications (high spinal, local-anaesthetic systemic toxicity)",
+      "A — Acute cardiopulmonary (PE, MI, cardiomyopathy, ARDS, amniotic fluid embolism)",
+      "C — Cardiac arrhythmia / electrolyte (hyperkalaemia, DKA, hypokalaemia)",
+      "C — Cerebrovascular / CNS (stroke, eclampsia, seizure)",
+      "T — Trauma / toxins / overdose (magnesium toxicity, opioids)",
+      "O — Other obstetric (amniotic fluid embolism, uterine inversion, sepsis)",
+      "L — Labelling (check every reproductive-age female for pregnancy)",
+      "I — Ions / glucose (DKA, hypo-/hyperglycaemia)",
+      "F — Fever / sepsis (Group A Strep — can kill in 2–8 h)",
+      "E — Emergency hypertension / eclampsia"
+    ] },
+    { "type": "heading", "level": 2, "text": "CPR modifications (≥ 20 wk or fundus at/above the umbilicus)" },
+    { "type": "table",
+      "columns": ["Modification", "Detail"],
+      "rows": [
+        ["Left uterine displacement (LUD)", "CONTINUOUS, do not stop. From the patient's RIGHT: push the uterus left and up. From the LEFT: pull the uterus left and up. Start as soon as the fundus is at/above the umbilicus. Do NOT use lateral tilt / wedging — that's obsolete. The gravid uterus cuts venous return 25–30%."],
+        ["Chest compressions", "Same hand placement (lower half of the sternum), rate 100–120/min, depth ≥ 2 in. Large / dense breasts: rotate the hand slightly toward the patient's shoulder, heel perpendicular to the sternum."],
+        ["IV / IO access", "ALWAYS above the diaphragm — aortocaval compression makes below-diaphragm access unreliable. IO: proximal humerus preferred."],
+        ["Defibrillation", "Anterolateral or anteroposterior pads — NOT on breast tissue. Remove fetal monitors before the shock (theoretical arcing). Energy doses unchanged."],
+        ["Medications", "Standard ACLS doses — do NOT alter or withhold epinephrine or amiodarone. 100% O2 via BVM. If on a magnesium infusion: stop it and give calcium gluconate 1 g IV."],
+        ["POCUS", "Only to confirm pregnancy (femur length ≥ 30 mm or BPD ≥ 45 mm ≈ ≥ 20 wk), NOT fetal heartbeat. Must not impede CPR or extend a pulse check beyond 10 s."]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Resuscitative cesarean delivery (RCD)" },
+    { "type": "callout", "tone": "danger", "text": "If there is no ROSC by ~4 minutes of a witnessed maternal arrest with a fundus at/above the umbilicus, START the RCD so delivery is complete by ~5 minutes. Do it AT the arrest site — do NOT transport to an OR. RCD relieves aortocaval compression → autotransfusion of ~500 mL → > 50% chance of maternal ROSC; it is a maternal resuscitation manoeuvre first, a fetal one second. Continue CPR throughout. Vertical skin + uterine incision is fastest; minimal instruments; skip prep." },
+    { "type": "text", "text": "Postpartum arrest and amniotic fluid embolism: consider AFE with sudden cardiovascular collapse + hypoxia + DIC in labour or immediately postpartum — supportive resuscitation, aggressive DIC correction (the 'A-OK' regimen — atropine, ondansetron, ketorolac — is described but unproven), early ECMO. Group A Strep sepsis in the peripartum period is fulminant — broad-spectrum antibiotics + clindamycin within the hour." }
+  ],
+  "related": ["emergency-drugs-pregnancy", "postpartum-hemorrhage", "acls-adult-cardiac-arrest", "preeclampsia-eclampsia-hellp", "last-lipid-rescue"],
+  "buildNote": "Tier 1. OBLS 2024 / AHA 2025. Cross-links the pregnancy emergency-drugs and PPH modules."
+}

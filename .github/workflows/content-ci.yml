@@ -23,6 +23,9 @@ jobs:
       - name: Validate schemas + invariants
         working-directory: tools
         run: npm run validate
+      - name: Engine + content regression tests
+        working-directory: tools
+        run: npm test
       - name: Rebuild derived files and check they were committed
         working-directory: tools
         run: |

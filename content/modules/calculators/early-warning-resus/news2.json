@@ -1,0 +1,69 @@
+{
+  "id": "news2",
+  "section": "Calculators",
+  "category": "Early Warning / Resuscitation",
+  "title": "NEWS2 (National Early Warning Score)",
+  "aliases": ["NEWS2", "national early warning score", "deterioration score", "track and trigger"],
+  "tags": ["early warning", "deterioration", "rapid response", "sepsis screen", "ward", "ED"],
+  "keywords": ["respiratory rate", "SpO2 scale 1 vs scale 2", "supplemental oxygen", "temperature", "systolic BP", "heart rate", "consciousness ACVPU", "score >= 7 emergency"],
+  "contentType": "calculator",
+  "content_version": 2,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 1,
+  "sources": ["Royal College of Physicians. National Early Warning Score (NEWS) 2, 2017"],
+  "changelog": [
+    { "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx. SpO2 Scale 1 (default) implemented; Scale 2 (target 88–92%, e.g. hypercapnic COPD) noted." },
+    { "version": 2, "date": "2026-09-02", "change": "Fixed temperature band — 35.1–36.0 °C scores 1 point (was incorrectly grouped with ≥ 39.1 at 2)." }
+  ],
+  "engine": "additive",
+  "settings": ["ED", "ICU"],
+  "purpose": "A single aggregate physiology score to detect and trigger a response to clinical deterioration on the ward or in the ED. A score of ≥ 5 warrants an urgent review; ≥ 7, or 3 in any single parameter, triggers an emergency response.",
+  "items": [
+    { "key": "rr", "label": "Respiratory rate (breaths/min)", "options": [
+      { "label": "12–20", "points": 0 },
+      { "label": "9–11", "points": 1 },
+      { "label": "21–24", "points": 2 },
+      { "label": "≤ 8 or ≥ 25", "points": 3 }
+    ] },
+    { "key": "spo2", "label": "SpO₂ — Scale 1 (usual target ≥ 96%)", "options": [
+      { "label": "≥ 96", "points": 0 },
+      { "label": "94–95", "points": 1 },
+      { "label": "92–93", "points": 2 },
+      { "label": "≤ 91", "points": 3 }
+    ] },
+    { "key": "airO2", "label": "Supplemental oxygen", "options": [
+      { "label": "Room air", "points": 0 },
+      { "label": "Any supplemental O₂", "points": 2 }
+    ] },
+    { "key": "temp", "label": "Temperature (°C)", "options": [
+      { "label": "36.1–38.0", "points": 0 },
+      { "label": "35.1–36.0 or 38.1–39.0", "points": 1 },
+      { "label": "≥ 39.1", "points": 2 },
+      { "label": "≤ 35.0", "points": 3 }
+    ] },
+    { "key": "sbp", "label": "Systolic BP (mmHg)", "options": [
+      { "label": "111–219", "points": 0 },
+      { "label": "101–110", "points": 1 },
+      { "label": "91–100", "points": 2 },
+      { "label": "≤ 90 or ≥ 220", "points": 3 }
+    ] },
+    { "key": "hr", "label": "Heart rate (beats/min)", "options": [
+      { "label": "51–90", "points": 0 },
+      { "label": "41–50 or 91–110", "points": 1 },
+      { "label": "111–130", "points": 2 },
+      { "label": "≤ 40 or ≥ 131", "points": 3 }
+    ] },
+    { "key": "consciousness", "label": "Consciousness (ACVPU)", "options": [
+      { "label": "Alert", "points": 0 },
+      { "label": "New confusion, or responds to Voice / Pain / Unresponsive", "points": 3 }
+    ] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 4, "label": "Low — routine monitoring (min 12-hourly); a single parameter scoring 3 → escalate to a nurse-in-charge and increase to min 4–6-hourly obs", "severity": "low" },
+    { "min": 5, "max": 6, "label": "Medium — urgent review by a clinician competent to assess the acutely ill; min hourly obs; consider higher level of care", "severity": "moderate" },
+    { "min": 7, "max": 20, "label": "High — emergency assessment by a critical-care-capable team; continuous monitoring; transfer to a higher level of care", "severity": "high" }
+  ],
+  "notes": "SpO₂ Scale 2 is used only for patients with an agreed target range of 88–92% (e.g. hypercapnic chronic respiratory failure) — its scoring bands differ and it should be prescribed by a senior clinician. Any single parameter scoring 3 is itself a trigger regardless of the total.",
+  "buildNote": "Scale 1 implemented. A Scale-2 toggle and an ACVPU sub-key are future refinements. Score range 0–20."
+}

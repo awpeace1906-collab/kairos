@@ -1,0 +1,52 @@
+{
+  "id": "postpartum-hemorrhage",
+  "section": "Reference Library",
+  "category": "Obstetric Emergencies",
+  "title": "Postpartum Hemorrhage",
+  "aliases": ["PPH", "PPH staging", "four Ts", "uterine atony", "uterotonic ladder", "Bakri balloon", "obstetric massive transfusion", "WOMAN trial"],
+  "tags": ["postpartum hemorrhage", "PPH", "uterine atony", "oxytocin", "tranexamic acid", "methylergonovine", "carboprost", "balloon tamponade", "massive transfusion", "OB", "ED"],
+  "keywords": ["cumulative blood loss >= 1000 mL", "oxytocin 20-40 U/L", "TXA 1 g within 3 h", "misoprostol 600-1000 mcg", "methylergonovine avoid if hypertensive", "carboprost avoid in asthma", "Bakri balloon"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — OB Pocket Guide: Postpartum Hemorrhage (ACOG 2023)",
+    "ACOG Practice Bulletin 183 / reaffirmed; WOMAN trial (TXA, Lancet 2017); FIGO PPH guidance"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — the staged response, the 4 Ts, the uterotonic ladder with doses and contraindications, TXA, and balloon tamponade." }],
+  "summary": "PPH = cumulative blood loss ≥ 1000 mL, OR any blood loss with signs of hypovolaemia, within 24 h of delivery. Leading cause of maternal mortality worldwide. Work the 4 Ts — Tone (80%), Trauma, Tissue, Thrombin — while escalating the staged response.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Staged response" },
+    { "type": "table",
+      "columns": ["Stage", "Threshold", "Actions"],
+      "rows": [
+        ["1", "500–999 mL (or ongoing)", "Alert the team; fundal massage; oxytocin infusion; bimanual uterine compression PRN; assess tone and inspect for lacerations; IV access, T&S"],
+        ["2", "≥ 1000 mL or unstable", "Add a SECOND uterotonic + TXA 1 g IV; 2× large-bore IV; STAT CBC / coags / fibrinogen / cross-match; consider transfusion; escalate to OB / anaesthesia; tranexamic acid within 3 h"],
+        ["3", "≥ 1500 mL or MTP trigger", "Activate the obstetric MTP (1:1:1); intrauterine balloon tamponade; OR / interventional radiology (uterine artery embolisation, B-Lynch, uterine artery ligation, hysterectomy); ICU"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "4 Ts — find the cause" },
+    { "type": "list", "items": [
+      "Tone (80%) — uterine atony: fundal massage, bimanual compression, empty the bladder, uterotonics.",
+      "Trauma (10%) — cervical / vaginal / perineal lacerations, haematoma, uterine rupture or inversion: inspect and repair; reduce an inversion immediately (uterine relaxant then replace).",
+      "Tissue (9%) — retained placenta or products: manual removal, curettage; check the placenta is complete.",
+      "Thrombin (1%) — coagulopathy (DIC, dilutional, inherited, anticoagulant): FFP, cryoprecipitate / fibrinogen, platelets, TXA; treat the underlying trigger (abruption, AFE, sepsis, prolonged PPH)."
+    ] },
+    { "type": "heading", "level": 2, "text": "Uterotonic ladder" },
+    { "type": "table",
+      "columns": ["Agent", "Dose", "Key notes"],
+      "rows": [
+        ["Oxytocin (1st-line)", "20–40 units per litre at 250–500 mL/hr, OR 10 units IM", "NEVER a rapid IV bolus (hypotension, arrhythmia, arrest). Infusion is standard."],
+        ["Tranexamic acid", "1 g IV over 10 min, within 3 h of delivery; repeat 1 g if still bleeding at 30 min", "WOMAN trial: reduces death from bleeding. Giving it after 3 h is not beneficial."],
+        ["Methylergonovine", "0.2 mg IM, may repeat q2–4 h", "CONTRAINDICATED in hypertension / preeclampsia (hypertensive crisis, stroke). Avoid IV."],
+        ["Carboprost (15-methyl PGF2α, Hemabate)", "0.25 mg IM q15 min, max 8 doses", "CONTRAINDICATED in asthma (bronchospasm). Also causes vomiting / diarrhoea / fever."],
+        ["Misoprostol (2nd-line)", "600–1000 mcg PR / SL / buccal", "Use where oxytocin is unavailable or as an adjunct. Shivering and pyrexia are common."]
+      ]
+    },
+    { "type": "callout", "tone": "info", "text": "Ask 'asthma or hypertension?' BEFORE reaching for the second-line uterotonic — methylergonovine and carboprost are contraindicated in exactly those two conditions. Intrauterine balloon tamponade (Bakri or a Foley) controls > 80% of PPH unresponsive to uterotonics, confirms the uterus as the source, and buys time before surgery — use it early. Manual aortic compression is a bridge in extremis." }
+  ],
+  "related": ["emergency-drugs-pregnancy", "maternal-cardiac-arrest", "blood-products", "trauma-primary-survey", "anticoagulation-reversal"],
+  "buildNote": "Tier 1. Complements emergency-drugs-pregnancy (the same uterotonic doses in a drug-first layout). B-Lynch / uterine compression sutures and REBOA in PPH are surgical detail."
+}

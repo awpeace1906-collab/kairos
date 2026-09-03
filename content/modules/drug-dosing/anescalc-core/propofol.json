@@ -1,0 +1,48 @@
+{
+  "id": "propofol",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Induction Agents",
+  "title": "Propofol",
+  "aliases": [
+    "Diprivan"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "induction",
+    "propofol"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Diprivan",
+  "tallManLetters": "PROPofol",
+  "drugClass": "induction",
+  "drugClassLabel": "Induction",
+  "mechanism": "Positive allosteric GABA-A modulator; slows receptor dissociation. Rapid redistribution from CNS. Antiemetic properties at sub-hypnotic doses.",
+  "onset": "~40 sec (IV)",
+  "duration": "5–10 min (single dose); context-sensitive with infusion",
+  "dosing": "Induction (ASA I–II): 1–2.5 mg/kg IV\nInduction (elderly/ASA III–IV): 1 mg/kg IV\nTIVA maintenance: 6–12 mg/kg/hr\nMAC sedation: 25–75 mcg/kg/min\nSub-anesthetic antiemetic: 10–20 mcg/kg/min",
+  "cautions": [
+    "AEs: Hypotension, apnea, bradycardia, pain on injection, PRIS (prolonged high-dose infusion >48h), hypertriglyceridemia, green urine (benign)",
+    "CI: Hypersensitivity to egg or soy products (contains 10% soybean oil, 1.2% egg phosphatide)",
+    "Precautions: Microbial contamination risk — strict aseptic technique; cardiac depression in elderly/hemodynamically compromised; pediatric neurotoxicity (long exposures); PRIS in ICU settings"
+  ],
+  "pearls": [
+    "Gold standard for TIVA — predictable kinetics. Antiemetic dose is sub-anesthetic and does not reliably provide sedation.",
+    "Oil/water emulsion — do NOT mix with other drugs in same syringe. Context-sensitive half-time increases markedly with prolonged infusion."
+  ],
+  "reversal": "None (supportive)"
+}

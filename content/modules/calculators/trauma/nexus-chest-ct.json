@@ -1,0 +1,165 @@
+{
+  "id": "nexus-chest-ct",
+  "section": "Calculators",
+  "category": "Trauma",
+  "title": "NEXUS Chest CT Decision Instrument",
+  "aliases": [
+    "NEXUS chest CT",
+    "blunt chest trauma imaging",
+    "chest CT vs chest x-ray trauma"
+  ],
+  "tags": [
+    "blunt trauma",
+    "chest imaging",
+    "clinical decision rule",
+    "ED",
+    "rule-out"
+  ],
+  "keywords": [
+    "abnormal chest x-ray",
+    "distracting injury",
+    "chest wall tenderness",
+    "sternal tenderness",
+    "thoracic spine tenderness",
+    "scapular tenderness",
+    "rapid deceleration"
+  ],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": [
+    "Rodriguez RM et al. PLoS Med 2015 (NEXUS Chest CT); JAMA Surg 2015"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx."
+    }
+  ],
+  "engine": "additive",
+  "settings": [
+    "ED"
+  ],
+  "purpose": "In blunt trauma patients ≥ 14 years imaged within 6 hours of injury, identifies who can safely skip chest CT. If ALL seven criteria are absent, clinically major thoracic injury is effectively excluded.",
+  "items": [
+    {
+      "key": "abnlCxr",
+      "label": "Abnormal chest X-ray (any thoracic injury or widened mediastinum)",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "distracting",
+      "label": "Distracting painful injury",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "chestWall",
+      "label": "Chest wall tenderness",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "sternal",
+      "label": "Sternal tenderness",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "tspine",
+      "label": "Thoracic spine tenderness",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "scapular",
+      "label": "Scapular tenderness",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "rapidDecel",
+      "label": "Rapid deceleration mechanism (fall > 20 ft / 6 m, or MVC > 40 mph / 64 kph with sudden deceleration)",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 0,
+      "max": 0,
+      "label": "No criteria — very low risk. Chest CT can be safely omitted (sensitivity ~ 99% for major injury; ~ 95% for minor injury)",
+      "disposition": "CT not required",
+      "severity": "low"
+    },
+    {
+      "min": 1,
+      "max": 7,
+      "label": "≥ 1 criterion — not low risk. Chest CT is reasonable, especially if an abnormal CXR or a high-risk mechanism is present. Use the CXR result and clinical judgement to choose CT vs. CXR-only",
+      "disposition": "Consider chest CT",
+      "severity": "moderate"
+    }
+  ],
+  "notes": "Two versions exist: NEXUS Chest (CXR decision, uses a similar list) and NEXUS Chest CT (this one). 'Major' injury = aortic/great-vessel injury, rupture of a bronchus/diaphragm/oesophagus, haemopneumothorax needing a tube, ≥ 3 rib fractures, pulmonary contusion, sternal fracture with associated injury. The rule reduces CT use by ~ 25–37% depending on setting.",
+  "buildNote": "Rule — any positive criterion → not low-risk."
+}

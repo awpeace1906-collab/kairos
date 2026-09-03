@@ -1,0 +1,49 @@
+{
+  "id": "chloroprocaine-nesacaine",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Local Anesthetics",
+  "title": "Chloroprocaine (NESACAINE)",
+  "aliases": [
+    "Nesacaine"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "local",
+    "chloroprocaine",
+    "nesacaine"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Nesacaine",
+  "drugClass": "local",
+  "drugClassLabel": "Local Anesthetic",
+  "mechanism": "Ester LA hydrolyzed rapidly by plasma cholinesterase (t½ ~25 sec) — lowest systemic toxicity of all clinical LAs. Minimal placental transfer — ideal for OB epidural extension.",
+  "onset": "Rapid — epidural onset 5–10 min. Infiltration: 2–5 min.",
+  "duration": "Very short — 30–60 min epidural. 30–45 min infiltration.",
+  "dosing": "Epidural extension for C-section: 3% chloroprocaine 15–20 mL (fastest epidural LA onset). Epidural test dose: 3 mL 3%. NOT recommended for spinal without preservative-free formulation.",
+  "cautions": [
+    "Preservative (bisulfite/EDTA) formulations: historical neurotoxicity — use preservative-free for neuraxial",
+    "Antagonizes epidural opioids — receptor competition; wait 30+ min before neuraxial opioid after chloroprocaine epidural",
+    "Tachyphylaxis develops faster than with other LAs",
+    "EDTA-containing formulations may cause hypocalcemia (chelation)"
+  ],
+  "pearls": [
+    "Drug of choice for urgent epidural extension in OB — fastest onset of any epidural LA (5–10 min to T4)",
+    "Minimal placental transfer — ideal when rapid fetal delivery required",
+    "After chloroprocaine epidural, wait ≥30 min before epidural opioid due to receptor antagonism"
+  ]
+}

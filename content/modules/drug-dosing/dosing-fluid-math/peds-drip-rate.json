@@ -1,0 +1,29 @@
+{
+  "id": "peds-drip-rate",
+  "section": "Drug & Dosing Cards",
+  "category": "Dosing & Fluid Math",
+  "title": "Weight-Based Infusion Rate (peds drips)",
+  "aliases": ["drip rate", "infusion rate calculator", "mcg/kg/min to mL/hr", "pressor drip"],
+  "tags": ["infusion", "drip", "vasopressor", "sedation infusion", "peds", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "review_tier": "stable",
+  "sources": ["Drug_Dosing_Peds_Weight_Based_Spec.md — one reusable formula"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry — generic weight-based infusion formula, drug-agnostic." }],
+  "engine": "formula",
+  "settings": ["ICU"],
+  "purpose": "Converts an ordered weight-based dose to a pump rate for any continuous infusion (dopamine, dobutamine, epinephrine, norepinephrine, fentanyl, midazolam …). Enter the bag concentration for the specific drug.",
+  "inputs": [
+    { "key": "dose", "label": "Ordered dose", "type": "number", "unit": "mcg/kg/min", "min": 0.001, "max": 100 },
+    { "key": "weight", "label": "Weight", "type": "number", "unit": "kg", "min": 1, "max": 120 },
+    { "key": "concentration", "label": "Bag concentration", "type": "number", "unit": "mcg/mL", "min": 1, "max": 100000 }
+  ],
+  "formulas": [
+    { "key": "rate", "label": "Infusion rate", "expression": "(dose * weight * 60) / concentration", "unit": "mL/h", "precision": 2 }
+  ],
+  "interpretation": [
+    { "forKey": "rate", "label": "Rate (mL/h) = dose (mcg/kg/min) × weight (kg) × 60 ÷ concentration (mcg/mL). Double-check the concentration units — mg/mL must be converted to mcg/mL (× 1000).", "severity": "info" }
+  ],
+  "notes": "For a dose ordered in mcg/kg/h or units/kg/h, adjust the ×60 factor accordingly. This is the single reusable engine behind every weight-based drip — a production build should add a per-drug concentration picker on top."
+}

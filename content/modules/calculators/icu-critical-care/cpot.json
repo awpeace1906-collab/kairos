@@ -1,0 +1,138 @@
+{
+  "id": "cpot",
+  "section": "Calculators",
+  "category": "ICU / Critical Care",
+  "title": "CPOT (Critical-Care Pain Observation Tool)",
+  "aliases": [
+    "CPOT",
+    "pain score intubated",
+    "nonverbal pain assessment",
+    "behavioral pain scale alternative"
+  ],
+  "tags": [
+    "pain assessment",
+    "sedation",
+    "analgesia",
+    "ICU",
+    "PADIS",
+    "mechanical ventilation"
+  ],
+  "keywords": [
+    "facial expression",
+    "body movements",
+    "muscle tension",
+    "ventilator compliance",
+    "vocalization",
+    "CPOT > 2 significant pain"
+  ],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": [
+    "Gélinas C et al. Am J Crit Care 2006; SCCM PADIS 2018 guideline (recommended tool)"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx."
+    }
+  ],
+  "engine": "additive",
+  "settings": [
+    "ICU"
+  ],
+  "purpose": "Observational pain assessment for critically ill adults unable to self-report. Four domains, 0–2 each (total 0–8). Use alongside RASS (arousal), not instead of it. A score > 2 indicates significant pain and should drive analgesia titration.",
+  "items": [
+    {
+      "key": "face",
+      "label": "Facial expression",
+      "options": [
+        {
+          "label": "Relaxed, neutral (0)",
+          "points": 0
+        },
+        {
+          "label": "Tense — brow lowering, orbit tightening, levator contraction (1)",
+          "points": 1
+        },
+        {
+          "label": "Grimacing — all of the above plus eyelids tightly closed (2)",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "key": "movements",
+      "label": "Body movements",
+      "options": [
+        {
+          "label": "Absence of movements / normal position (0)",
+          "points": 0
+        },
+        {
+          "label": "Protection — slow cautious movements, touching/rubbing the pain site (1)",
+          "points": 1
+        },
+        {
+          "label": "Restlessness — pulling at tubes, attempting to sit up, thrashing, not following commands (2)",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "key": "muscleTone",
+      "label": "Muscle tension (passive flexion/extension of the arm)",
+      "options": [
+        {
+          "label": "Relaxed, no resistance (0)",
+          "points": 0
+        },
+        {
+          "label": "Tense, rigid — resistance to passive movement (1)",
+          "points": 1
+        },
+        {
+          "label": "Very tense or rigid — strong resistance, unable to complete (2)",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "key": "ventOrVoice",
+      "label": "Compliance with the ventilator (intubated) OR vocalisation (extubated)",
+      "options": [
+        {
+          "label": "Tolerating ventilator / speaking in a normal tone or silent (0)",
+          "points": 0
+        },
+        {
+          "label": "Coughing but tolerating / sighing, moaning (1)",
+          "points": 1
+        },
+        {
+          "label": "Fighting the ventilator, alarms frequently triggered / crying out, sobbing (2)",
+          "points": 2
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 0,
+      "max": 2,
+      "label": "Acceptable — minimal or no pain behaviours. Maintain current analgesia; reassess per protocol and before/after procedures",
+      "severity": "low"
+    },
+    {
+      "min": 3,
+      "max": 8,
+      "label": "Significant pain — give an analgesic bolus and up-titrate the infusion; treat procedural pain pre-emptively. Reassess in 15–30 min. Rule out a new surgical / ischaemic / compartment cause if the score jumps",
+      "severity": "high"
+    }
+  ],
+  "notes": "Analgesia-first / analgosedation: treat pain before deepening sedation. Validated in medical, surgical, and trauma ICU patients; less reliable in brain injury and deep neuromuscular blockade (behaviours are abolished — use physiologic trend and assume pain during noxious care). Pair with a daily target, RASS, and a delirium screen (CAM-ICU / ICDSC).",
+  "buildNote": "Additive, 4 domains × 0–2. Range 0–8. Threshold > 2."
+}

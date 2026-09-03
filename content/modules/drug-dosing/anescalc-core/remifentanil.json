@@ -1,0 +1,48 @@
+{
+  "id": "remifentanil",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Opioids",
+  "title": "Remifentanil",
+  "aliases": [
+    "Ultiva"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "opioid",
+    "remifentanil"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Ultiva",
+  "tallManLetters": "remifeNTAnil",
+  "drugClass": "opioid",
+  "drugClassLabel": "Opioid",
+  "mechanism": "Ultra-short-acting synthetic μ-opioid agonist. Ester linkage cleaved by nonspecific blood/tissue esterases — context-insensitive half-time ~3–4 min regardless of infusion duration.",
+  "onset": "~1 min",
+  "duration": "3–5 min (context-insensitive — constant regardless of infusion length)",
+  "dosing": "TIVA infusion: 0.05–0.3 mcg/kg/min (use LBW in obese)\nBolus for laryngoscopy: 0.5–1 mcg/kg\nNeurosurgery/neuromonitoring: 0.1–0.4 mcg/kg/min\nICU analgesia: 0.05–0.2 mcg/kg/min",
+  "cautions": [
+    "AEs: Profound respiratory depression/apnea, bradycardia, hypotension, skeletal muscle rigidity (dose-related), OIH with prolonged high-dose infusion",
+    "CI: Epidural/intrathecal use (glycine diluent is neurotoxic); hypersensitivity",
+    "Precautions: NO residual analgesia after stopping — MUST bridge with alternative analgesic before emergence; OIH risk with prolonged high-dose; do NOT administer through same IV line as blood products"
+  ],
+  "pearls": [
+    "Only opioid with truly context-insensitive half-time — ideal for neuroanesthesia and cases requiring rapid, precise titration.",
+    "Analgesic cliff at end of case — plan bridge analgesia (LA infiltration, ketorolac, acetaminophen, longer-acting opioid) BEFORE stopping infusion."
+  ],
+  "reversal": "Naloxone (abrupt reversal causes acute pain crisis — avoid unless emergency); supportive care"
+}

@@ -75,6 +75,7 @@ h3 { margin: 18px 0 6px; }
 .field-label .unit { color: var(--muted); }
 .field-input { position: relative; display: flex; align-items: center; }
 .field-input input { flex: 1; padding: 10px 34px 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); color: var(--text); font-size: 1rem; }
+.field-input select { flex: 1; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); color: var(--text); font-size: 1rem; }
 .clear-field { position: absolute; right: 6px; width: 22px; height: 22px; border-radius: 999px; border: none; background: var(--line); color: var(--text); cursor: pointer; font-size: .7rem; line-height: 1; }
 .toolbar { margin: 14px 0; }
 .clear-all { padding: 8px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); color: var(--text); cursor: pointer; }
@@ -126,6 +127,20 @@ h3 { margin: 18px 0 6px; }
 .home-footer { text-align: center; margin-top: 24px; font-size: .85rem; }
 .about h2 { font-size: 1.05rem; margin-top: 18px; }
 
+.adc-sub { color: var(--muted); margin: -4px 0 10px; }
+.tall-man { letter-spacing: .02em; }
+.adc-grid { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 10px 0; }
+.adc-field { font-size: .9rem; }
+.adc-label { color: var(--muted); margin-right: 6px; text-transform: uppercase; font-size: .72rem; letter-spacing: .06em; }
+.adc-dosing { white-space: pre-wrap; background: var(--surface-2); padding: 10px 12px; border-radius: 8px; font-size: .9rem; }
+.anesthesia-drug-card h3 { margin: 16px 0 4px; }
+
 .nodes .node { margin: 8px 0; }
+.nodes .node.warning strong, .node.warning { color: var(--sev-high); }
+.tree-walker { border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin: 10px 0; background: var(--surface-2); }
+.tree-crumbs { font-size: .8rem; color: var(--muted); margin-bottom: 8px; }
+.tree-crumbs a { color: var(--accent); }
+.tree-walker .node.recommendation { border-left: 3px solid var(--sev-low); padding-left: 10px; }
+.tree-walker .node.warning { border-left: 3px solid var(--sev-high); padding-left: 10px; }
 .checklist { list-style: none; padding: 0; }
 .note-template { white-space: pre-wrap; background: var(--surface-2); padding: 10px; border-radius: 8px; font-size: .82rem; }

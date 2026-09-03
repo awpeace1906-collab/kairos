@@ -1,0 +1,48 @@
+{
+  "id": "lidocaine",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Local Anesthetics",
+  "title": "Lidocaine",
+  "aliases": [
+    "Xylocaine"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "local",
+    "lidocaine"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Xylocaine",
+  "tallManLetters": "LIDOcaine",
+  "drugClass": "local",
+  "drugClassLabel": "Local Anesthetic",
+  "mechanism": "Amide LA with intermediate duration. Na⁺ channel blockade — FAST dissociation (lower cardiotoxicity than bupivacaine). Also Class IB antiarrhythmic. Versatile: topical, infiltration, neuraxial, IV adjunct.",
+  "onset": "Fast (low pKa 7.9 — more free base at physiologic pH). Infiltration 2–5 min; epidural 10–15 min",
+  "duration": "Infiltration: 45–90 min (plain), 2–4h (with epi). Epidural: 60–90 min. IV systemic: short",
+  "dosing": "Infiltration MAX: 4.5 mg/kg plain (300 mg); 7 mg/kg with epi (500 mg)\nIV regional (Bier block): 3 mg/kg (0.5% solution)\nEpidural: 1.5–2%; 15–20 mL\nTopical airway: 4% nebulized or atomized; 4 mg/kg max\nIV adjunct infusion (opioid-sparing): 1–2 mg/kg/hr\nLaryngoscopy blunting: 1.5 mg/kg IV 90 sec before",
+  "cautions": [
+    "AEs: LAST (CNS: perioral numbness → tinnitus → visual disturbance → seizures → cardiovascular collapse), TNS with IT use (esp. lithotomy position), cauda equina (repeated intrathecal), methemoglobinemia (high-dose topical)",
+    "CI: Hypersensitivity; Wolff-Parkinson-White with AF (antiarrhythmic use); Stokes-Adams syndrome",
+    "Precautions: TNS risk with IT (largely replaced by bupivacaine for spinal requiring mobility); reduce dose in hepatic failure/low CO; significant systemic absorption from topical airway application"
+  ],
+  "pearls": [
+    "The workhorse LA — used topically, infiltration, epidural, spinal, IV adjunct, and antiarrhythmic. Fast Na⁺ channel dissociation = lower cardiotoxicity than bupivacaine.",
+    "IV lidocaine infusion (1–2 mg/kg/hr) shows opioid-sparing, anti-inflammatory, and prokinetic effects — popular in enhanced recovery protocols. Alkalinization (NaHCO₃ 1 mEq per 10 mL) speeds epidural onset 2–3 min."
+  ],
+  "reversal": "Intralipid 20% 1.5 mL/kg IV for LAST"
+}

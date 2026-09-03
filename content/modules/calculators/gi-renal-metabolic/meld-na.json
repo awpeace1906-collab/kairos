@@ -1,0 +1,40 @@
+{
+  "id": "meld-na",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "MELD-Na Score",
+  "aliases": ["MELD sodium", "MELD-Na", "liver disease severity", "transplant priority"],
+  "tags": ["cirrhosis", "liver disease", "transplant", "perioperative risk", "ED", "ICU"],
+  "contentType": "calculator",
+  "content_version": 2,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Kim WR et al. NEJM 2008;359:1018-26", "OPTN policy (MELD-Na, 2016)", "MDCalc — MELD Na (UNOS/OPTN)"],
+  "changelog": [
+    { "version": 2, "date": "2026-09-01", "change": "Tier 1 verification: coefficients 3.78/11.2/9.57/6.43 confirmed as the OPTN 2016 form (0.957/0.378/1.120/0.643) ×10; lab floors/caps and Na bounds verified. Removed verify-coefficients flag. Known deviation (Na term applied always, no 6-40 clamp) kept in the build note." },
+    { "version": 1, "date": "2026-09-01", "change": "Initial entry — formula transcribed from Calculator_Logic_Build_Spec.md." }
+  ],
+  "engine": "formula",
+  "settings": ["ED", "ICU", "OR"],
+  "purpose": "Liver disease severity — 90-day mortality estimate, transplant allocation priority, and perioperative risk in cirrhosis.",
+  "notes": "Cap rules baked into the formula: bilirubin, INR, and creatinine each floored at 1.0; creatinine also capped at 4.0 (use 4.0 if on dialysis ≥ 2× in the past week). Sodium bounded to 125-137 before the correction. Enter raw lab values.",
+  "inputs": [
+    { "key": "bilirubin", "label": "Total bilirubin", "type": "number", "unit": "mg/dL", "min": 0.1, "max": 60 },
+    { "key": "inr", "label": "INR", "type": "number", "min": 0.8, "max": 15 },
+    { "key": "creatinine", "label": "Creatinine (use 4.0 if on dialysis)", "type": "number", "unit": "mg/dL", "min": 0.1, "max": 15 },
+    { "key": "na", "label": "Sodium", "type": "number", "unit": "mmol/L", "min": 110, "max": 160 }
+  ],
+  "formulas": [
+    { "key": "meld", "label": "MELD (pre-sodium)", "expression": "3.78 * ln(max(bilirubin, 1)) + 11.2 * ln(max(inr, 1)) + 9.57 * ln(min(max(creatinine, 1), 4)) + 6.43", "precision": 0 },
+    { "key": "meldna", "label": "MELD-Na", "expression": "(3.78 * ln(max(bilirubin, 1)) + 11.2 * ln(max(inr, 1)) + 9.57 * ln(min(max(creatinine, 1), 4)) + 6.43) + 1.32 * (137 - min(max(na, 125), 137)) - (0.033 * (3.78 * ln(max(bilirubin, 1)) + 11.2 * ln(max(inr, 1)) + 9.57 * ln(min(max(creatinine, 1), 4)) + 6.43) * (137 - min(max(na, 125), 137)))", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "meldna", "min": -100, "max": 9, "label": "≤ 9 — ~1.9% 90-day mortality", "severity": "low" },
+    { "forKey": "meldna", "min": 10, "max": 19, "label": "10-19 — ~6% 90-day mortality", "severity": "moderate" },
+    { "forKey": "meldna", "min": 20, "max": 29, "label": "20-29 — ~20% 90-day mortality", "severity": "high" },
+    { "forKey": "meldna", "min": 30, "max": 39, "label": "30-39 — ~53% 90-day mortality", "severity": "critical" },
+    { "forKey": "meldna", "min": 40, "max": 1000, "label": "≥ 40 — ~70%+ 90-day mortality (score capped at 40 for allocation)", "severity": "critical" }
+  ],
+  "buildNote": "The MELD sub-expression is inlined twice because the formula engine evaluates each formula against inputs only, not against other formula results. Verify the whole thing against MDCalc / OPTN before go-live (flag: verify-coefficients). Some implementations skip the sodium correction when MELD ≤ 11."
+}

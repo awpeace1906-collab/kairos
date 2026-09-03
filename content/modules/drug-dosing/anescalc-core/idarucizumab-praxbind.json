@@ -1,0 +1,53 @@
+{
+  "id": "idarucizumab-praxbind",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Anticoagulants / Hemostatics",
+  "title": "Idarucizumab (Praxbind)",
+  "aliases": [
+    "Praxbind"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "anticoagulant",
+    "idarucizumab",
+    "praxbind"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Praxbind",
+  "drugClass": "anticoagulant",
+  "drugClassLabel": "Anticoagulant / Hemostatic",
+  "mechanism": "Humanized monoclonal antibody fragment (Fab) against dabigatran. Binds dabigatran and its active metabolites with 350× higher affinity than thrombin → immediate neutralization of anticoagulant effect. Does NOT affect other anticoagulants, coagulation factors, or platelets. Not a reversal agent for any drug except dabigatran.",
+  "onset": "Immediate (within minutes of IV administration)",
+  "duration": "Sustained for ~24h with standard 5 g dose. If dabigatran re-distributes from tissues (dialysis patients, high plasma dabigatran concentration), repeat dosing may be required",
+  "dosing": "STANDARD DOSE: 5 g IV (2 × 2.5 g vials given consecutively).\n\nADMINISTRATION: Each 2.5 g/50 mL vial given IV push or infusion over 5–10 min. Two vials administered one after the other (total infusion ~10–15 min). No dilution required. Dedicated IV line only.\n\nRE-DOSING: Additional 5 g may be given if:\n- Clinically relevant bleeding recurs AND\n- Dabigatran levels remain elevated OR coagulation parameters (aPTT, TT, ECT) remain elevated\n\nPEDIATRIC: Not established; limited case reports.\n\nDIALYSIS CONSIDERATION: Dabigatran is dialyzable (low protein binding) — hemodialysis removes ~60–70% in 4h and is an alternative if idarucizumab unavailable.",
+  "cautions": [
+    "THROMBOEMBOLIC RISK: Reversal of anticoagulation restores thrombotic risk. In RE-VERSE AD trial: 6.8% thrombotic event rate at 30 days (largely in patients not restarted on anticoagulation). Resume dabigatran or alternative anticoagulation as soon as hemostasis permits (typically 24h).",
+    "HEREDITARY FRUCTOSE INTOLERANCE: Contains sorbitol excipient — contraindicated in hereditary fructose intolerance (rare genetic condition). Check product insert.",
+    "MONITORING: Standard aPTT will normalize; diluted thrombin time (dTT) or ecarin clotting time (ECT) are most specific for dabigatran concentration if available. Thrombin time (TT) qualitatively sensitive — if TT is normal, dabigatran levels are negligible.",
+    "DOES NOT REVERSE: Apixaban, rivaroxaban, edoxaban, betrixaban (use andexanet alfa), warfarin (use 4F-PCC + VitK), or UFH/LMWH (use protamine). Dabigatran-specific ONLY.",
+    "COST: ~$3,500–4,000 per dose (5 g); significantly less expensive than andexanet alfa."
+  ],
+  "pearls": [
+    "ONLY FDA-APPROVED REVERSAL AGENT for dabigatran. RE-VERSE AD trial (N=503): 98% normalized diluted TT/ECT within minutes; 82% intraoperative hemostasis rated excellent/good; 81% clinical hemostasis in bleeding group.",
+    "FASTEST REVERSAL AVAILABLE — within minutes, no preparation beyond drawing up vials. Ideal for: emergency surgery, life-threatening bleeding (ICH, GI, trauma), urgent procedures requiring hemostasis in patients on dabigatran.",
+    "DABIGATRAN UNIQUE PROPERTY: Unlike Xa inhibitors, dabigatran is ~35% protein-bound and renally cleared → dialyzable. Hemodialysis removes ~60–70% in 4h. Consider if idarucizumab unavailable, patient already on dialysis, or if re-elevation of dabigatran levels is anticipated (e.g., overdose).",
+    "WHEN TO SUSPECT DABIGATRAN ON BOARD: Elevated aPTT + elevated thrombin time (TT) with normal reptilase time → highly suggestive. TT is an extremely sensitive (qualitative) test for dabigatran — a completely normal TT essentially excludes clinically relevant dabigatran levels.",
+    "RESTART ANTICOAGULATION DECISION: After emergent reversal, restart anticoagulation 24–72h post-reversal when hemostasis is secure. Failure to restart is a significant safety issue — these patients (often AF with high CHA₂DS₂-VASc scores) have high thrombotic risk."
+  ],
+  "reversal": "No reversal needed — idarucizumab effect wanes naturally; dabigatran can be restarted when hemostasis secure"
+}

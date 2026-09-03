@@ -29,6 +29,7 @@ enum ReviewTier: Codable, Equatable {
 enum ContentType: String, Codable {
     case calculator, procedure, reference
     case drugCard = "drug-card"
+    case anesthesiaDrugCard = "anesthesia-drug-card"
     case pedsTool = "peds-tool"
 }
 
@@ -36,6 +37,25 @@ struct ChangelogEntry: Codable, Hashable {
     let version: Int
     let date: String
     let change: String
+}
+
+/// A JSON scalar of unknown type (used for calculator select-option values).
+enum CodableValue: Codable, Hashable {
+    case string(String), number(Double), bool(Bool)
+    init(from decoder: Decoder) throws {
+        let c = try decoder.singleValueContainer()
+        if let b = try? c.decode(Bool.self) { self = .bool(b); return }
+        if let n = try? c.decode(Double.self) { self = .number(n); return }
+        self = .string(try c.decode(String.self))
+    }
+    func encode(to encoder: Encoder) throws {}
+    var stringValue: String {
+        switch self {
+        case .string(let s): return s
+        case .number(let n): return n == n.rounded() ? String(Int(n)) : String(n)
+        case .bool(let b): return b ? "1" : "0"
+        }
+    }
 }
 
 // MARK: - Config
@@ -167,6 +187,13 @@ struct Calculator: Codable {
         let unit: String?
         let min: Double?
         let max: Double?
+        let options: [SelectOption]?
+    }
+    struct SelectOption: Codable, Identifiable, Hashable {
+        var id: String { label }
+        let label: String
+        let value: CodableValue
+        var valueString: String { value.stringValue }
     }
     struct Item: Codable, Identifiable, Hashable {
         var id: String { key }
@@ -245,14 +272,16 @@ struct DrugCard: Codable {
     }
     struct Rule: Codable, Hashable {
         let perKg: Double
+        let perKgHigh: Double?
         let unit: String?
         let maxDose: Double?
+        let minDose: Double?
         let maxDoseUnit: String?
         let concentration: String?
         let mlPerUnit: Double?
         let repeatText: String?
         enum CodingKeys: String, CodingKey {
-            case perKg, unit, maxDose, maxDoseUnit, concentration, mlPerUnit
+            case perKg, perKgHigh, unit, maxDose, minDose, maxDoseUnit, concentration, mlPerUnit
             case repeatText = "repeat"
         }
     }
@@ -271,6 +300,43 @@ struct DrugCard: Codable {
     func encode(to encoder: Encoder) throws {}
     private enum CodingKeys: String, CodingKey {
         case purpose, population, weightBasis, doses, contraindications, reversal, buildNote
+    }
+}
+
+// MARK: - Anesthesia drug card (AnesCalc-origin)
+
+struct AnesthesiaDrugCard: Codable {
+    let meta: RecordMeta
+    let brandName: String?
+    let tallManLetters: String?
+    let drugClass: String
+    let drugClassLabel: String
+    let mechanism: String
+    let onset: String
+    let duration: String
+    let dosing: String
+    let cautions: [String]
+    let pearls: [String]
+    let reversal: String?
+
+    init(from decoder: Decoder) throws {
+        meta = try RecordMeta(from: decoder)
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        brandName = try c.decodeIfPresent(String.self, forKey: .brandName)
+        tallManLetters = try c.decodeIfPresent(String.self, forKey: .tallManLetters)
+        drugClass = try c.decode(String.self, forKey: .drugClass)
+        drugClassLabel = try c.decode(String.self, forKey: .drugClassLabel)
+        mechanism = try c.decode(String.self, forKey: .mechanism)
+        onset = try c.decode(String.self, forKey: .onset)
+        duration = try c.decode(String.self, forKey: .duration)
+        dosing = try c.decode(String.self, forKey: .dosing)
+        cautions = try c.decode([String].self, forKey: .cautions)
+        pearls = try c.decode([String].self, forKey: .pearls)
+        reversal = try c.decodeIfPresent(String.self, forKey: .reversal)
+    }
+    func encode(to encoder: Encoder) throws {}
+    private enum CodingKeys: String, CodingKey {
+        case brandName, tallManLetters, drugClass, drugClassLabel, mechanism, onset, duration, dosing, cautions, pearls, reversal
     }
 }
 
@@ -360,6 +426,7 @@ struct PedsTool: Codable {
     let ageRange: String?
     let sourceOfTruth: [String]?
     let embeddedCalculator: Calculator?
+    let body: [ReferenceDoc.Block]?
     let buildNote: String?
 
     init(from decoder: Decoder) throws {
@@ -370,11 +437,12 @@ struct PedsTool: Codable {
         ageRange = try c.decodeIfPresent(String.self, forKey: .ageRange)
         sourceOfTruth = try c.decodeIfPresent([String].self, forKey: .sourceOfTruth)
         embeddedCalculator = try c.decodeIfPresent(Calculator.self, forKey: .embeddedCalculator)
+        body = try c.decodeIfPresent([ReferenceDoc.Block].self, forKey: .body)
         buildNote = try c.decodeIfPresent(String.self, forKey: .buildNote)
     }
     func encode(to encoder: Encoder) throws {}
     private enum CodingKeys: String, CodingKey {
-        case kind, purpose, ageRange, sourceOfTruth, embeddedCalculator, buildNote
+        case kind, purpose, ageRange, sourceOfTruth, embeddedCalculator, body, buildNote
     }
 }
 

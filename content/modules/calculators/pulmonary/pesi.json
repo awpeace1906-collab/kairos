@@ -1,0 +1,44 @@
+{
+  "id": "pesi",
+  "section": "Calculators",
+  "category": "Pulmonary / PE / DVT / Resp Failure",
+  "title": "PESI (Pulmonary Embolism Severity Index)",
+  "aliases": ["PESI", "pulmonary embolism severity index", "PE 30-day mortality", "PE prognosis full"],
+  "tags": ["pulmonary embolism", "risk stratification", "prognosis", "disposition", "ED"],
+  "keywords": ["age", "male sex", "cancer", "heart failure", "chronic lung disease", "pulse >= 110", "systolic BP < 100", "respiratory rate >= 30", "temperature < 36", "altered mental status", "oxygen saturation < 90"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Aujesky D et al. Am J Respir Crit Care Med 2005; ESC 2019 Acute PE guideline"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx. Original (non-simplified) PESI." }],
+  "engine": "formula",
+  "settings": ["ED", "ICU"],
+  "purpose": "Predicts 30-day mortality after acute PE across five risk classes. Classes I–II identify low-risk patients who may be eligible for outpatient or early-discharge management. The score is the patient's age in years plus the weighted points below.",
+  "inputs": [
+    { "key": "age", "label": "Age", "type": "number", "unit": "years", "min": 18, "max": 110 },
+    { "key": "male", "label": "Male sex", "type": "select", "options": [{ "label": "No", "value": 0 }, { "label": "Yes", "value": 10 }] },
+    { "key": "cancer", "label": "History of cancer", "type": "select", "options": [{ "label": "No", "value": 0 }, { "label": "Yes", "value": 30 }] },
+    { "key": "hf", "label": "History of heart failure", "type": "select", "options": [{ "label": "No", "value": 0 }, { "label": "Yes", "value": 10 }] },
+    { "key": "lung", "label": "History of chronic lung disease", "type": "select", "options": [{ "label": "No", "value": 0 }, { "label": "Yes", "value": 10 }] },
+    { "key": "pulse110", "label": "Pulse ≥ 110/min", "type": "select", "options": [{ "label": "No", "value": 0 }, { "label": "Yes", "value": 20 }] },
+    { "key": "sbp100", "label": "Systolic BP < 100 mmHg", "type": "select", "options": [{ "label": "No", "value": 0 }, { "label": "Yes", "value": 30 }] },
+    { "key": "rr30", "label": "Respiratory rate ≥ 30/min", "type": "select", "options": [{ "label": "No", "value": 0 }, { "label": "Yes", "value": 20 }] },
+    { "key": "temp36", "label": "Temperature < 36 °C", "type": "select", "options": [{ "label": "No", "value": 0 }, { "label": "Yes", "value": 20 }] },
+    { "key": "ams", "label": "Altered mental status (disorientation, lethargy, stupor, coma)", "type": "select", "options": [{ "label": "No", "value": 0 }, { "label": "Yes", "value": 60 }] },
+    { "key": "sao2", "label": "O2 saturation < 90% (with or without supplemental O2)", "type": "select", "options": [{ "label": "No", "value": 0 }, { "label": "Yes", "value": 20 }] }
+  ],
+  "formulas": [
+    { "key": "pesi", "label": "PESI score", "expression": "age + male + cancer + hf + lung + pulse110 + sbp100 + rr30 + temp36 + ams + sao2", "unit": "points", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "pesi", "min": 0, "max": 65, "label": "Class I (≤ 65) — very low risk, 30-day mortality 0–1.6%. Candidate for outpatient management if nothing else requires admission (see Hestia criteria)", "severity": "low" },
+    { "forKey": "pesi", "min": 66, "max": 85, "label": "Class II (66–85) — low risk, 30-day mortality 1.7–3.5%. Candidate for early discharge", "severity": "low" },
+    { "forKey": "pesi", "min": 86, "max": 105, "label": "Class III (86–105) — intermediate risk, 30-day mortality 3.2–7.1%. Admit; assess RV function and troponin", "severity": "moderate" },
+    { "forKey": "pesi", "min": 106, "max": 125, "label": "Class IV (106–125) — high risk, 30-day mortality 4.0–11.4%. Admit to a monitored bed", "severity": "high" },
+    { "forKey": "pesi", "min": 126, "max": 400, "label": "Class V (> 125) — very high risk, 30-day mortality 10.0–24.5%. Monitored / ICU bed; watch for deterioration requiring rescue reperfusion", "severity": "high" }
+  ],
+  "notes": "Classes I–II ≈ sPESI 0. PESI does not by itself indicate thrombolysis — a normotensive PE with RV dysfunction plus a positive troponin is 'intermediate-high' and needs monitoring for haemodynamic decompensation, not upfront lysis. A haemodynamically unstable PE is high-risk regardless of PESI.",
+  "buildNote": "Formula engine — total = age (years) + weighted select points. Five prognostic classes."
+}

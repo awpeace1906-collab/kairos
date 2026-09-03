@@ -1,0 +1,48 @@
+{
+  "id": "famotidine",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — GI / Aspiration Prophylaxis",
+  "title": "Famotidine",
+  "aliases": [
+    "Pepcid"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "gi",
+    "famotidine"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Pepcid",
+  "tallManLetters": "FAMOTIdine",
+  "drugClass": "gi",
+  "drugClassLabel": "GI / Aspiration",
+  "mechanism": "Competitive H₂ receptor antagonist at gastric parietal cells → ↓gastric acid secretion (↓volume + ↑pH). Does NOT reduce residual gastric volume already present at time of administration.",
+  "onset": "IV 30 min; PO 60 min",
+  "duration": "10–12h (significantly longer than ranitidine — preferred H₂ antagonist after ranitidine market withdrawal)",
+  "dosing": "Aspiration prophylaxis IV: 20 mg IV 30–60 min before induction\nAspiration prophylaxis PO: 20–40 mg PO night before + morning of surgery\nPediatric: 0.5 mg/kg IV (MAX 20 mg)\nGERD/PUD: 20–40 mg PO BID",
+  "cautions": [
+    "AEs: Headache, dizziness, constipation/diarrhea; QTc prolongation (rare, dose-dependent); thrombocytopenia (rare); CNS effects in renal failure (delirium, hallucinations — accumulation of active metabolite)",
+    "CI: Hypersensitivity to H₂ antagonists",
+    "Precautions: Renal impairment — accumulates; does NOT reliably reduce residual gastric volume (only raises pH); less potent acid suppression than PPIs but faster IV onset; does not substitute for RSI technique in high-aspiration-risk patients"
+  ],
+  "pearls": [
+    "Preferred H₂ antagonist for aspiration prophylaxis after ranitidine market withdrawal (NDMA contamination). Raises gastric pH above 2.5 — reduces aspiration pneumonitis severity (Mendelson threshold).",
+    "For full-stomach cases: combine with non-particulate antacid (sodium citrate 30 mL PO) for immediate pH neutralization; famotidine provides sustained effect. PPIs (pantoprazole IV) are more potent but slower onset."
+  ],
+  "reversal": "None"
+}

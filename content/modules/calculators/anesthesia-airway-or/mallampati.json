@@ -1,0 +1,27 @@
+{
+  "id": "mallampati",
+  "section": "Calculators",
+  "category": "Anesthesia / Airway / OR",
+  "title": "Mallampati Score",
+  "aliases": ["Mallampati class", "modified Mallampati", "oropharyngeal view"],
+  "tags": ["difficult airway", "airway assessment", "intubation", "preop", "OR"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Mallampati SR et al. Can Anaesth Soc J 1985", "Samsoon & Young 1987 (modification)"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry from Calculator_Logic_Build_Spec.md." }],
+  "engine": "classification",
+  "settings": ["OR", "Anesthesia"],
+  "purpose": "One component of the airway exam — the oropharyngeal view on maximal mouth opening with the tongue protruded (patient seated, not phonating). Class ≥ 3 predicts a harder laryngoscopy.",
+  "tiers": [
+    { "label": "Class I", "description": "Soft palate, uvula, fauces, and tonsillar pillars all visible" },
+    { "label": "Class II", "description": "Soft palate, uvula, and fauces visible (pillars not)" },
+    { "label": "Class III", "description": "Soft palate and base of the uvula visible" },
+    { "label": "Class IV", "description": "Only the hard palate visible" }
+  ],
+  "interpretation": [
+    { "label": "Class III-IV is associated with an increased risk of difficult direct laryngoscopy", "detail": "Poor sensitivity/specificity in isolation — combine with thyromental distance, mouth opening, neck mobility (e.g. LEMON or El-Ganzouri).", "severity": "info" }
+  ]
+}

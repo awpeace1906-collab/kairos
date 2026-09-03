@@ -1,0 +1,48 @@
+{
+  "id": "ketamine",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Induction Agents",
+  "title": "Ketamine",
+  "aliases": [
+    "Ketalar"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "induction",
+    "ketamine"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Ketalar",
+  "tallManLetters": "KETamine",
+  "drugClass": "induction",
+  "drugClassLabel": "Induction",
+  "mechanism": "Non-competitive NMDA receptor antagonist → dissociative anesthesia. Also activates σ, opioid, and muscarinic receptors. Sympathomimetic via indirect catecholamine release. Bronchodilator via β-adrenergic pathway.",
+  "onset": "IV ~30 sec; IM 3–4 min; IN 5–10 min",
+  "duration": "IV 10–15 min; IM 15–25 min",
+  "dosing": "Induction (IV): 1–2 mg/kg\nInduction (IM): 4–6 mg/kg\nTIVA adjunct infusion: 0.1–0.5 mg/kg/hr\nSub-dissociative analgesia bolus: 0.1–0.5 mg/kg IV\nSub-dissociative infusion (OIH-sparing): 0.15 mg/kg/hr\nPediatric intranasal: 3–5 mg/kg",
+  "cautions": [
+    "AEs: Hypertension, tachycardia, emergence reactions/hallucinations (~12%), ↑ICP, ↑IOP, ↑secretions, nystagmus; laryngeal reflexes preserved but NOT protective",
+    "CI: Conditions where ↑BP is hazardous — uncontrolled severe HTN, acute CAD (relative); hypersensitivity",
+    "Precautions: Pair with glycopyrrolate to reduce secretions; midazolam or dark quiet room reduces emergence reactions; OIH with prolonged high-dose infusion; pediatric neurotoxicity; GU complications with chronic use"
+  ],
+  "pearls": [
+    "Drug of choice for hemodynamically unstable induction (trauma, sepsis, hypovolemia). Bronchodilator — preferred in reactive airway disease.",
+    "NMDA antagonism reduces opioid consumption and may prevent OIH. Laryngeal reflexes maintained but NOT protective — aspiration risk persists."
+  ],
+  "reversal": "None (supportive)"
+}

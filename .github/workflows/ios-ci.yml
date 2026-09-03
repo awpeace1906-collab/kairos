@@ -1,0 +1,27 @@
+name: ios-ci
+
+on:
+  push:
+    paths: ["ios/**", "content/**", ".github/workflows/ios-ci.yml"]
+  pull_request:
+    paths: ["ios/**", "content/**"]
+
+jobs:
+  build-and-test:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install XcodeGen
+        run: brew install xcodegen
+      - name: Generate the Xcode project
+        working-directory: ios
+        run: xcodegen generate
+      - name: Build + run engine tests
+        working-directory: ios
+        run: |
+          xcodebuild test \
+            -project Kairos.xcodeproj -scheme Kairos \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 15' \
+            -resultBundlePath TestResults.xcresult \
+            CODE_SIGNING_ALLOWED=NO

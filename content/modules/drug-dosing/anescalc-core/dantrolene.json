@@ -1,0 +1,50 @@
+{
+  "id": "dantrolene",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Emergency Drugs",
+  "title": "Dantrolene",
+  "aliases": [
+    "Ryanodex / Dantrium"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "emergency",
+    "dantrolene"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Ryanodex / Dantrium",
+  "drugClass": "emergency",
+  "drugClassLabel": "Emergency",
+  "mechanism": "Ryanodine receptor (RyR1) antagonist. Inhibits Ca²⁺ release from sarcoplasmic reticulum — directly halts the uncontrolled hypermetabolic cascade of malignant hyperthermia (MH).",
+  "onset": "Within minutes of IV administration",
+  "duration": "Sustained — repeat dosing required in most MH crises; 24–48h maintenance",
+  "dosing": "Initial: 2.5 mg/kg IV rapid bolus. Repeat q5 min as needed. Typical total: 5–10 mg/kg; MAX documented: 30 mg/kg. Each 20 mg vial reconstitutes in 60 mL sterile water. Maintenance: 1 mg/kg q6h for 24–48h to prevent recurrence.",
+  "cautions": [
+    "Each 20 mg vial requires 60 mL sterile water — assign dedicated reconstitution team IMMEDIATELY",
+    "Muscle weakness during/after — monitor respiratory function",
+    "Hepatotoxicity with prolonged oral use (not acute IV)",
+    "Calcium channel blockers + dantrolene = risk of hyperkalemia and cardiovascular collapse"
+  ],
+  "pearls": [
+    "ONLY definitive MH treatment — give IMMEDIATELY on clinical suspicion; do NOT wait for confirmation",
+    "MH Hotline (US): 1-800-644-9737 (24/7 expert consultation)",
+    "Trigger removal: stop ALL volatile anesthetics, stop succinylcholine, hyperventilate with 100% O₂ at 10 L/min",
+    "Concurrent: active cooling, treat hyperkalemia, treat dysrhythmias, correct acidosis, maintain UO >1 mL/kg/hr",
+    "Also used for neuroleptic malignant syndrome (NMS) and serotonin syndrome with rigidity"
+  ]
+}

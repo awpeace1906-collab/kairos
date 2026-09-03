@@ -1,0 +1,53 @@
+{
+  "id": "fracture-splinting-guide",
+  "section": "Procedures",
+  "category": "Wound & Fracture Care",
+  "title": "Fracture / Splinting Guide",
+  "aliases": ["splint selection", "splinting", "fracture immobilization"],
+  "tags": ["fracture", "splint", "immobilization", "neurovascular check", "compartment syndrome", "ED"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["StatPearls — Splinting", "Roberts and Hedges' Clinical Procedures", "AAOS"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry — region → splint type / position / neurovascular check / red flags." }],
+  "purpose": "Bone/region selector → splint type, position, the neurovascular check that matters for that region, and the red flags that mean emergent ortho.",
+  "outputType": "decision-tree",
+  "crossLinks": ["laceration-repair"],
+  "entryPrompt": "Which region?",
+  "nodes": [
+    { "id": "start", "type": "question", "prompt": "Select the injured region", "choices": [
+      { "label": "Finger", "next": "finger" },
+      { "label": "Hand / wrist", "next": "wrist" },
+      { "label": "Forearm", "next": "forearm" },
+      { "label": "Elbow", "next": "elbow" },
+      { "label": "Humerus", "next": "humerus" },
+      { "label": "Toe", "next": "toe" },
+      { "label": "Foot / ankle", "next": "ankle" },
+      { "label": "Tib-fib", "next": "tibfib" },
+      { "label": "Knee", "next": "knee" },
+      { "label": "Femur", "next": "femur" }
+    ] },
+    { "id": "finger", "type": "recommendation", "body": "Buddy tape or aluminium splint, position of function. Check: digital capillary refill, 2-point discrimination. Red flags → ortho: rotational deformity, open fracture." },
+    { "id": "wrist", "type": "recommendation", "body": "Sugar-tong or volar/dorsal splint. Wrist 20-30° extension, MCP 70-90° flexion, IP extension. Check: median / ulnar / radial nerve function. Red flag: compartment syndrome signs." },
+    { "id": "forearm", "type": "recommendation", "body": "Sugar-tong splint. Elbow 90°, forearm neutral. Check: radial pulse, median / ulnar / radial nerve. Red flags: open fracture, neurovascular compromise." },
+    { "id": "elbow", "type": "recommendation", "body": "Posterior long-arm splint at 90° flexion. Check: radial pulse, median / ulnar / radial nerve. Red flag: brachial artery injury — high suspicion in supracondylar fractures." },
+    { "id": "humerus", "type": "recommendation", "body": "Coaptation splint or sugar-tong, arm adducted, elbow 90°. Check: radial nerve (wrist drop). Red flag: radial nerve palsy — common with midshaft fractures." },
+    { "id": "toe", "type": "recommendation", "body": "Buddy tape, neutral. Check: capillary refill. Red flag: open fracture." },
+    { "id": "ankle", "type": "recommendation", "body": "Posterior splint ± stirrup, neutral / 90°. Check: dorsalis pedis and posterior tibial pulses. Red flags: compartment syndrome, dislocation." },
+    { "id": "tibfib", "type": "recommendation", "body": "Long-leg posterior splint, knee slight flexion, ankle neutral. Check: distal pulses, compartment exam. Red flag: compartment syndrome — high index of suspicion." },
+    { "id": "knee", "type": "recommendation", "body": "Knee immobiliser, full extension or slight flexion. Check: popliteal pulse, peroneal nerve (foot drop). Red flag: vascular injury with knee dislocation — needs a vascular workup even if reduced." },
+    { "id": "femur", "type": "recommendation", "body": "Traction splint as a prehospital / ED bridge, traction applied. Check: femoral and distal pulses. Red flag: high-energy mechanism — assess for associated injuries." }
+  ],
+  "checklist": [
+    "Neurovascular status assessed and DOCUMENTED before any manipulation",
+    "Adequate analgesia / procedural sedation before reduction attempts",
+    "Splint applied with adequate padding — avoid acute circumferential casting (swelling risk)",
+    "Neurovascular status re-checked and re-DOCUMENTED after splinting",
+    "Discharge: RICE, elevation above heart level, return precautions (numbness, worsening pain, colour change, fever)",
+    "Ortho follow-up ~ 5-7 days for most closed fractures; sooner for intra-articular or displaced"
+  ],
+  "noteTemplate": "PROCEDURE: Splint application, {{region}}, for {{injury}}. Pre-splint neurovascular exam: {{nvPre}}. Analgesia: {{analgesia}}. {{splintType}} applied, {{position}}, well padded, no circumferential constriction. Post-splint neurovascular exam: {{nvPost}} — unchanged. Discharge instructions and return precautions given. Ortho follow-up arranged in {{followupDays}} days.",
+  "buildNote": "Built alongside the Laceration Repair guide (same decision-tree pattern). Reduction technique detail and pediatric-specific patterns (e.g. buckle vs. Salter-Harris) are a follow-up content pass."
+}

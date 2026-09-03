@@ -1,0 +1,55 @@
+{
+  "id": "protamine-sulfate",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Anticoagulants / Hemostatics",
+  "title": "Protamine Sulfate",
+  "aliases": [
+    "Protamine Sulfate"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "anticoagulant",
+    "protamine",
+    "sulfate"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Protamine Sulfate",
+  "tallManLetters": "PROTamine",
+  "drugClass": "anticoagulant",
+  "drugClassLabel": "Anticoagulant / Hemostatic",
+  "mechanism": "Highly basic (cationic) polypeptide derived from salmon sperm. Forms stable electrostatic complex with strongly acidic (anionic) heparin → biologically inactive salt complex, rapidly cleared. Completely reverses UFH anticoagulation. Partially reverses LMWH (reverses ~60% of anti-IIa activity; anti-Xa activity incompletely neutralized). At excess doses, paradoxical anticoagulant effect via platelet inhibition and fibrinogenolysis.",
+  "onset": "5 min (IV)",
+  "duration": "2h. Heparin rebound may occur at 2–4h post-CPB as tissue-bound heparin is released — re-check ACT and redose if necessary",
+  "dosing": "POST-CPB REVERSAL (standard): 1–1.3 mg protamine per 100 units UFH administered during bypass. Administer SLOWLY over 10 min (max 50 mg/min infusion rate).\n\nEXAMPLE: Patient received 30,000 units UFH for CPB → administer 300–390 mg protamine (total dose).\n\nTITRATION BY ACT: Give calculated dose; recheck ACT at 5 min. Residual ACT elevation → supplemental protamine 25–50 mg IV. Target: ACT within 10% of pre-heparin baseline.\n\nEXCESS UFH REVERSAL (non-CPB): 1 mg per 100 units UFH estimated REMAINING (account for heparin already metabolized based on t½ ~90 min). Maximum recommended single dose: 50 mg.\n\nLMWH REVERSAL: 1 mg protamine per 1 mg enoxaparin (or per 100 anti-Xa units) administered within 8h. Repeat 0.5 mg per 1 mg enoxaparin if needed. Expect incomplete anti-Xa reversal (~60%).\n\nINFUSION RATE: Give over 10 min — administer NO FASTER than 5 mg/min (50 mg/10 min). Rapid administration → severe hypotension.",
+  "cautions": [
+    "ANAPHYLAXIS / ANAPHYLACTOID REACTIONS (1–2% incidence): Complement activation → pulmonary vasoconstriction, systemic hypotension, bronchoconstriction, cardiovascular collapse. Risk factors: (1) Previous protamine exposure (prior cardiac surgery, catheterization), (2) NPH insulin use (contains protamine — cross-reactive antibodies), (3) Fish/salmon allergy, (4) Vasectomy (anti-protamine antibodies from sperm exposure). Pre-treat high-risk patients: diphenhydramine 25–50 mg + hydrocortisone 100 mg IV before protamine.",
+    "PULMONARY VASOCONSTRICTION (complement-mediated): Seen especially with rapid administration. Manifests as acute ↑PA pressures, ↑RV afterload, RV failure post-CPB. Give SLOWLY and via LEFT atrium (if available) to reduce pulmonary concentration.",
+    "RAPID ADMINISTRATION HYPOTENSION: Histamine release + direct vasodilation → severe hypotension. Administer at ≤5 mg/min (10-min infusion). Have vasopressors ready.",
+    "PARADOXICAL ANTICOAGULATION (excess protamine): At >5–10 mg/kg or excessive free protamine → inhibits platelet function (GPIIb/IIIa interference) and causes anticoagulant effect. More is NOT better — dose precisely.",
+    "HEPARIN REBOUND: Heparin sequestered in tissues during CPB released over 2–4 hours → delayed re-anticoagulation despite adequate initial reversal. Monitor ACT at 1–2h post-reversal; redose 25–50 mg protamine as needed.",
+    "CI: Hypersensitivity to protamine or fish. Use with extreme caution in known NPH insulin users or previous protamine reactions."
+  ],
+  "pearls": [
+    "CPB reversal dosing: Calculate total heparin administered (initial + supplemental doses) and give 1–1.3 mg/100 units. Verify by ACT within 5 min — supplement as needed. ACT NOT returning to baseline despite repeated protamine → consider heparin resistance, insufficient reversal, or excessive protamine paradox.",
+    "HIGH-RISK PATIENTS: Consider left atrial administration if available to reduce pulmonary exposure. Pre-medicate with diphenhydramine + steroids. Have epinephrine drawn and ready at bedside.",
+    "HEPARIN REBOUND is clinically important post-CPB — a patient with good hemostasis in the OR who bleeds in the ICU may simply need additional protamine (check ACT first before empirically giving blood products).",
+    "LMWH reversal is INCOMPLETE — protamine reverses anti-IIa but only ~60% of anti-Xa activity of LMWH. Residual anti-Xa effect persists. For life-threatening bleeding on LMWH, consider andexanet alfa (if available) or rFVIIa.",
+    "POINT-OF-CARE TESTING: TEG/ROTEM can help distinguish heparin rebound (elevated R-time or CT corrected by heparinase channel) from surgical bleeding, thrombocytopenia, or factor deficiency — guides targeted therapy."
+  ],
+  "reversal": "No antidote for protamine excess; supportive care, heparin can partially re-anticoagulate if paradoxical anticoagulation occurs"
+}

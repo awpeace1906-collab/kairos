@@ -1,0 +1,34 @@
+{
+  "id": "salicylate-toxicity",
+  "section": "Calculators",
+  "category": "Toxicology / Withdrawal",
+  "title": "Salicylate Toxicity — Level & Management",
+  "aliases": ["salicylate toxicity", "aspirin overdose", "Done nomogram", "ASA poisoning", "salicylism"],
+  "tags": ["salicylate", "aspirin", "overdose", "toxicology", "hemodialysis", "urinary alkalinization", "ED"],
+  "keywords": ["salicylate level", "hours post ingestion", "acute vs chronic", "hemodialysis criteria", "serum bicarbonate", "arterial pH", "tinnitus", "mixed acid-base"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Done AK. Pediatrics 1960 (nomogram — now discredited); EXTRIP 2015 salicylate recommendations; AACT/ACMT guidance"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx. The Done nomogram is NOT used; management is level + clinical + acid-base + serial trend." }],
+  "engine": "formula",
+  "settings": ["ED"],
+  "purpose": "Frames an acute salicylate level against management thresholds. NOTE: the Done nomogram is unreliable (invalid with chronic use, enteric-coated or sustained-release product, ongoing absorption, acidaemia, or renal failure) and is NOT recommended — decisions rest on the clinical picture, acid–base status, and SERIAL levels every 2 h until clearly falling.",
+  "inputs": [
+    { "key": "level", "label": "Serum salicylate level", "type": "number", "unit": "mg/dL", "min": 0, "max": 150 },
+    { "key": "hours", "label": "Hours since ingestion (context only — do not use to 'rule out')", "type": "number", "unit": "h", "min": 0, "max": 48 }
+  ],
+  "formulas": [
+    { "key": "levelMgL", "label": "Level in mg/L", "expression": "level * 10", "unit": "mg/L", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "level", "min": 0, "max": 29.9, "label": "< 30 mg/dL — therapeutic to mildly elevated (therapeutic 10–20). If symptomatic or the history suggests a large or enteric-coated ingestion, repeat the level in 2 h before excluding toxicity; a single early level can rise substantially", "severity": "low" },
+    { "forKey": "level", "min": 30, "max": 49.9, "label": "30–50 mg/dL — mild toxicity (tinnitus, nausea, tachypnoea, primary respiratory alkalosis with a metabolic acidosis). Start IV fluids for volume/losses, give glucose-containing fluid (neuroglycopenia occurs with normal serum glucose), begin serum + urine alkalinisation (sodium bicarbonate infusion, target urine pH 7.5–8), replace potassium (alkalinisation fails if hypokalaemic), repeat level q2h", "severity": "moderate" },
+    { "forKey": "level", "min": 50, "max": 79.9, "label": "50–80 mg/dL — moderate to severe toxicity. Aggressive alkalinisation and K repletion; treat hyperthermia; get a blood gas and lactate. Consult toxicology and nephrology early. Haemodialysis if: altered mental status, cerebral or pulmonary oedema, renal failure, level rising despite alkalinisation, or pH ≤ 7.20", "disposition": "Toxicology + nephrology; prepare for HD", "severity": "high" },
+    { "forKey": "level", "min": 80, "max": 200, "label": "≥ 80 mg/dL (acute) — HAEMODIALYSIS indicated regardless of symptoms (EXTRIP: ≥ 90 mg/dL, or ≥ 80 with impaired kidney function). Also dialyse for any altered mental status, ARDS/pulmonary oedema needing oxygen, or a pH ≤ 7.20. Continue alkalinisation and never allow the pH to fall — if intubation is unavoidable, match the pre-intubation minute ventilation and give bicarbonate, or sudden death can follow", "disposition": "Haemodialysis", "severity": "high" }
+  ],
+  "notes": "CHRONIC toxicity (elderly, therapeutic-intent overuse) is more dangerous at any given level — significant toxicity and a dialysis indication can occur at 40–60 mg/dL. Do NOT be reassured by a 'normal-range' single level with a suggestive story (metabolic acidosis + respiratory alkalosis, anion gap, tinnitus). Avoid intubation if at all possible; if required, pre-oxygenate, use bicarbonate, and set a high minute ventilation to preserve respiratory compensation. Activated charcoal if within ~1–2 h or an enteric-coated/large ingestion; consider multi-dose charcoal for a rising level.",
+  "buildNote": "Formula engine — level echoed with a mg/L conversion; Done nomogram deliberately not implemented. Bands reflect EXTRIP 2015 + standard management thresholds for ACUTE ingestion."
+}

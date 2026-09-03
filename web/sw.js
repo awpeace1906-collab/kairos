@@ -9,6 +9,7 @@ const SHELL = [
   "./index.html",
   "./styles.css",
   "./manifest.webmanifest",
+  "./public/icons/icon.svg",
   "./src/main.js",
   "./src/components.js",
   "./src/lib/contentStore.js",
@@ -32,7 +33,18 @@ const SHELL = [
 
 self.addEventListener("install", (e) => {
   e.waitUntil(
-    caches.open(SHELL_CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())
+    (async () => {
+      const cache = await caches.open(SHELL_CACHE);
+      await cache.addAll(SHELL);
+      // Precache every content module listed in the manifest, so a first-ever
+      // offline visit to any item still works (not just the app shell).
+      try {
+        const manifest = await (await fetch("./content/manifest.json", { cache: "no-cache" })).json();
+        const paths = Object.values(manifest.modules).map((m) => "./content/" + m.path);
+        await Promise.allSettled(paths.map((p) => cache.add(p)));
+      } catch { /* offline at install time — the shell is still cached */ }
+      await self.skipWaiting();
+    })()
   );
 });
 

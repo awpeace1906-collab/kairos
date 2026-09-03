@@ -22,6 +22,7 @@ struct SectionView: View {
                         Section("\(cat.title) (\(cat.items.count))") {
                             ForEach(cat.items) { item in
                                 NavigationLink(item.title, value: Route.content(item.route))
+                                    .accessibilityIdentifier("row-\(item.itemID)")
                             }
                         }
                     }

@@ -1,0 +1,45 @@
+{
+  "id": "four-ts-hit",
+  "section": "Calculators",
+  "category": "ICU / Critical Care",
+  "title": "4Ts Score for HIT",
+  "aliases": ["4T score", "heparin-induced thrombocytopenia probability", "HIT pretest"],
+  "tags": ["HIT", "heparin", "thrombocytopenia", "anticoagulation", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Lo GK et al. J Thromb Haemost 2006", "ASH 2018 HIT guideline"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry from Calculator_Logic_Build_Spec.md." }],
+  "engine": "additive",
+  "settings": ["ICU"],
+  "purpose": "Pretest probability of heparin-induced thrombocytopenia — a low score effectively rules HIT out and avoids unnecessary non-heparin anticoagulation.",
+  "items": [
+    { "key": "thrombocytopenia", "label": "Thrombocytopenia (fall and nadir)", "options": [
+      { "label": "Fall < 30% or nadir < 10", "points": 0 },
+      { "label": "Fall 30-50% or nadir 10-19", "points": 1 },
+      { "label": "Fall > 50% AND nadir ≥ 20, no surgery in prior 3 days", "points": 2 }
+    ] },
+    { "key": "timing", "label": "Timing of the platelet fall", "options": [
+      { "label": "< 4 days, no recent heparin exposure", "points": 0 },
+      { "label": "Consistent but unclear (missing counts), or fall after day 10, or fall ≤ 1 day with heparin in past 30-100 days", "points": 1 },
+      { "label": "Clear onset days 5-10, or ≤ 1 day with heparin exposure in the past 30 days", "points": 2 }
+    ] },
+    { "key": "thrombosis", "label": "Thrombosis or other sequelae", "options": [
+      { "label": "None", "points": 0 },
+      { "label": "Progressive/recurrent thrombosis, non-necrotising skin lesions, or suspected thrombosis not proven", "points": 1 },
+      { "label": "New confirmed thrombosis, skin necrosis, or acute systemic reaction after IV heparin bolus", "points": 2 }
+    ] },
+    { "key": "otherCauses", "label": "Other cause of thrombocytopenia", "options": [
+      { "label": "Definite other cause present", "points": 0 },
+      { "label": "Possible other cause", "points": 1 },
+      { "label": "No other apparent cause", "points": 2 }
+    ] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 3, "label": "Low probability", "detail": "HIT effectively excluded (NPV ~99%) — continue heparin, no HIT workup needed.", "severity": "low" },
+    { "min": 4, "max": 5, "label": "Intermediate probability", "disposition": "Stop heparin, start a non-heparin anticoagulant, send a HIT immunoassay ± functional assay", "severity": "moderate" },
+    { "min": 6, "max": 8, "label": "High probability", "disposition": "Stop all heparin, non-heparin anticoagulation, confirmatory testing; hematology involvement", "severity": "high" }
+  ]
+}

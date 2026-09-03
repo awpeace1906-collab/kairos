@@ -1,0 +1,33 @@
+{
+  "id": "pecarn-head",
+  "section": "Calculators",
+  "category": "Trauma",
+  "title": "PECARN Pediatric Head Injury Rule",
+  "aliases": ["PECARN head", "pediatric head CT rule", "ciTBI rule", "kids head injury CT"],
+  "tags": ["pediatric", "head injury", "CT head", "clinical decision rule", "ED", "rule-out"],
+  "keywords": ["GCS <= 14", "altered mental status", "palpable skull fracture", "signs of basilar skull fracture", "loss of consciousness", "vomiting", "severe mechanism", "severe headache", "scalp hematoma occipital parietal temporal", "not acting normally per parent", "clinically important traumatic brain injury"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Kuppermann N et al. Lancet 2009 (PECARN); validated PECARN 2019 (PREDICT/pooled)"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Identifies children < 18 years with minor blunt head trauma (GCS 14–15) who are at very low risk of clinically important traumatic brain injury (ciTBI) and can safely skip a CT. Apply the AGE-SPECIFIC logic in the interpretation — the point count here is a helper for the number of predictors present. Use within 24 h of injury.",
+  "items": [
+    { "key": "gcsAms", "label": "EITHER AGE — GCS ≤ 14, OR other signs of altered mental status (agitation, somnolence, repetitive questioning, slow response), OR (age < 2) palpable skull fracture / (age ≥ 2) any sign of basilar skull fracture", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 5 }] },
+    { "key": "loc", "label": "Age < 2: LOC ≥ 5 seconds  ·  Age ≥ 2: any history of LOC", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "hematoma_or_vomiting", "label": "Age < 2: non-frontal (occipital / parietal / temporal) scalp haematoma  ·  Age ≥ 2: history of vomiting", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "mechanism", "label": "EITHER AGE — Severe mechanism: MVC with ejection / rollover / fatality, pedestrian or unhelmeted cyclist struck, fall > 0.9 m if < 2 y (> 1.5 m if ≥ 2 y), or head struck by a high-impact object", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "behavior_or_headache", "label": "Age < 2: not acting normally per the parent  ·  Age ≥ 2: severe headache", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "No predictors — ciTBI risk ≈ 0.02% (age < 2) / 0.05% (age ≥ 2). CT NOT recommended. Discharge with head-injury advice", "disposition": "CT not recommended", "severity": "low" },
+    { "min": 1, "max": 4, "label": "Intermediate — one or more of the minor predictors (LOC, non-frontal haematoma or vomiting, severe mechanism, behaviour change or severe headache) but NO GCS ≤ 14 / AMS / skull-fracture sign. ciTBI risk ≈ 0.9%. Either OBSERVE for 4–6 h or CT, using shared decision-making — favour observation for a single isolated finding, an improving child, parental preference, and age ≥ 3 months; favour CT for multiple findings, worsening symptoms, or age < 3 months", "disposition": "Observe vs CT (shared decision)", "severity": "moderate" },
+    { "min": 5, "max": 20, "label": "High risk — GCS ≤ 14, altered mental status, OR (age < 2) palpable skull fracture / (age ≥ 2) signs of basilar skull fracture. ciTBI risk ≈ 4.3–4.4%. CT head IS recommended", "disposition": "CT head recommended", "severity": "high" }
+  ],
+  "notes": "ciTBI = death, neurosurgery, intubation > 24 h for the head injury, or hospital admission ≥ 2 nights with TBI on CT. PECARN does NOT apply to trivial mechanisms (ground-level falls, walking/running into stationary objects with no signs/symptoms other than scalp abrasion), penetrating trauma, known brain tumours, pre-existing neuro disorders, or suspected non-accidental trauma — use clinical judgement / lower the imaging threshold for those. Isolated frontal scalp haematoma in an otherwise well child ≥ 3 months is low-risk. Observation before CT roughly halves CT use without missing ciTBI.",
+  "buildNote": "Age-specific decision tree — the high-risk item is weighted 5 to force the 'CT recommended' band; minor predictors are 1 each for the intermediate band."
+}

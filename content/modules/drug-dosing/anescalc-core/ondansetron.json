@@ -1,0 +1,48 @@
+{
+  "id": "ondansetron",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Antiemetics",
+  "title": "Ondansetron",
+  "aliases": [
+    "Zofran"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "antiemetic",
+    "ondansetron"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Zofran",
+  "tallManLetters": "ondanSETRON",
+  "drugClass": "antiemetic",
+  "drugClassLabel": "Antiemetic",
+  "mechanism": "5-HT₃ serotonin receptor antagonist. Blocks 5-HT₃ receptors on vagal afferents in GI tract and at the chemoreceptor trigger zone (CTZ). Does not affect dopamine receptors.",
+  "onset": "IV 5–15 min",
+  "duration": "4–6h",
+  "dosing": "Adult PONV prophylaxis: 4 mg IV at end of case\nPeds PONV prophylaxis: 0.1 mg/kg IV at end of case (MAX 4 mg)\nPONV rescue: 1 mg IV\nOral preop: 8 mg PO",
+  "cautions": [
+    "AEs: Headache, QTc prolongation (dose-dependent), constipation, serotonin syndrome (with serotonergic agents), mild LFT elevations",
+    "CI: Hypersensitivity; concomitant apomorphine; congenital long QT syndrome",
+    "Precautions: QTc monitoring in high-risk patients; serotonin syndrome risk with MAOIs/serotonergics; hepatic impairment ↓ clearance; phenylketonuria (ODT tablet contains phenylalanine)"
+  ],
+  "pearls": [
+    "First-line PONV prophylaxis per SAMBA/ASPIRE guidelines. 4 mg IV at END of case = optimal timing. PONV rescue dose is 1 mg, not a full 4 mg repeat.",
+    "Class effect with other 5-HT₃ antagonists. Palonosetron has longer duration — may be preferred in high-risk PONV patients."
+  ],
+  "reversal": "None"
+}

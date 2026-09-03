@@ -80,10 +80,11 @@ identical for every user.
 
 1. Edit the module JSON. Add a `changelog` entry. Bump `content_version`.
 2. `cd tools && npm run ci` — validates schema, checks the version bump, rebuilds
-   `search-index.json` + `manifest.json`, runs the staleness check.
-3. Commit. A deploy step (not in this scaffold) rsyncs `content/` to
-   `CONTENT_BASE_URL`. Every app instance picks it up on next connectivity. No App
-   Store round trip because no binary changed.
+   `search-index.json` + `manifest.json`, runs the engine tests + staleness check.
+3. Commit. `npm run deploy` assembles `tools/dist/` and it's published to the
+   static host (`.github/workflows/content-deploy.yml` does this for GitHub Pages
+   on push to `main`). Every app instance picks it up on next connectivity. No
+   App Store round trip because no binary changed. Full guide: `docs/DEPLOY.md`.
 
 ## 5. Search & home-screen TOC (`Search_TOC_Design_Spec.md`)
 

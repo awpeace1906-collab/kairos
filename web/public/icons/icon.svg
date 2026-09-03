@@ -1,0 +1,7 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kairos">
+  <rect width="512" height="512" rx="112" fill="#0f1720"/>
+  <!-- converging caret: two strokes meeting at a decisive point -->
+  <path d="M150 132 L150 190 L246 256 L150 322 L150 380 L338 256 Z" fill="#4bb3a7"/>
+  <!-- the critical point -->
+  <circle cx="372" cy="256" r="26" fill="#e8eef4"/>
+</svg>

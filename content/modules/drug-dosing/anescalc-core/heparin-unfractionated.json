@@ -1,0 +1,55 @@
+{
+  "id": "heparin-unfractionated",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Anticoagulants / Hemostatics",
+  "title": "Heparin (Unfractionated)",
+  "aliases": [
+    "Heparin Sodium"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "anticoagulant",
+    "heparin",
+    "unfractionated"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Heparin Sodium",
+  "tallManLetters": "HEParin",
+  "drugClass": "anticoagulant",
+  "drugClassLabel": "Anticoagulant / Hemostatic",
+  "mechanism": "Indirect thrombin inhibitor. Binds antithrombin III (AT-III) → conformational change → accelerates AT-III inactivation of thrombin (IIa), Xa, IXa, XIa, XIIa (1000×). Does NOT directly dissolve existing clots. Chain-length dependent: long chains inhibit both IIa and Xa; short chains (LMWH) preferentially inhibit Xa.",
+  "onset": "IV: Immediate. SQ: 1–2h",
+  "duration": "IV: t½ ~60–90 min (dose-dependent, nonlinear). SQ prophylaxis: 8–12h effective duration",
+  "dosing": "CARDIAC SURGERY (CPB): 300–400 units/kg IV bolus; target ACT ≥480 sec (some centers >400 sec). Supplemental heparin 5,000–10,000 units for ACT <400 sec. Dose from cardiology/perfusionist protocol.\n\nVASCULAR SURGERY (non-CPB): 100–150 units/kg IV bolus; target ACT 250–300 sec.\n\nVTE TREATMENT (DVT/PE): 80 units/kg IV bolus, then 18 units/kg/hr infusion. Titrate to aPTT 60–100 sec (institutional nomogram). Weight-based dosing per Raschke nomogram reduces time to therapeutic anticoagulation.\n\nVTE PROPHYLAXIS (SQ): 5,000 units SQ q8–12h. High-risk: 7,500 units SQ q8h or LMWH preferred.\n\nARTERIAL LINE FLUSH: 1–2 units/mL flush solution (heparin lock).\n\nHEPARIN DRIP TITRATION (Raschke nomogram):\naPTT <35 sec → 80 units/kg bolus + ↑rate 4 units/kg/hr\naPTT 35–45 sec → 40 units/kg bolus + ↑rate 2 units/kg/hr\naPTT 46–70 sec → No change\naPTT 71–90 sec → ↓rate 2 units/kg/hr\naPTT >90 sec → Hold 1h, ↓rate 3 units/kg/hr",
+  "cautions": [
+    "HIT Type II (Heparin-Induced Thrombocytopenia): Immune-mediated (anti-PF4/heparin antibody → platelet activation → PARADOXICAL THROMBOSIS). Onset day 5–14 after first exposure. Suspect if platelet count ↓>50% from baseline or <100K. STOP ALL HEPARIN immediately — switch to argatroban or bivalirudin. Risk: ~1–3% with UFH, <0.2% with LMWH.",
+    "Bleeding: Most common dose-related adverse effect. Risk factors: aPTT >100 sec, age >70, concurrent antiplatelet agents, renal failure, prior GI bleed.",
+    "Heparin resistance: AT-III deficiency (inherited or acquired — sepsis, cirrhosis, DIC, extended heparin use), elevated Factor VIII, high acute-phase proteins. Treatment: FFP (contains AT-III) or AT-III concentrate.",
+    "CI: Active major bleeding, HIT (any type), hypersensitivity. Use caution: thrombocytopenia, recent surgery, uncontrolled HTN.",
+    "Hyperkalemia: Heparin inhibits aldosterone secretion (zona glomerulosa suppression) — monitor K⁺ with prolonged use. Clinically significant primarily in renal failure.",
+    "Osteoporosis: Risk with >3 months continuous use (activates osteoclasts). Prefer LMWH for extended anticoagulation."
+  ],
+  "pearls": [
+    "MONITOR — ACT for high-dose (CPB, vascular); aPTT for therapeutic anticoagulation. ACT >480 sec required for CPB (lower ACT risks clotting in circuit). Goal-directed dosing reduces both thrombotic and bleeding complications.",
+    "HIT TYPE II is the most dangerous complication — thrombosis (not just thrombocytopenia) is the threat. Never restart heparin in confirmed HIT; alternative anticoagulants (argatroban, bivalirudin) required.",
+    "REVERSAL: Protamine sulfate 1 mg per 100 units UFH administered (see Protamine card). Full reversal requires knowledge of dose administered and time elapsed (t½ ~90 min).",
+    "Heparin resistance: First evaluate for AT-III deficiency. FFP 2 units or AT-III concentrate corrects most cases. Document resistance — cardiac surgery perfusionist must know.",
+    "LMWH (enoxaparin, dalteparin) has more predictable pharmacokinetics, does not require aPTT monitoring, and lower HIT risk — preferred for most outpatient therapeutic anticoagulation and VTE prophylaxis."
+  ],
+  "reversal": "Protamine sulfate 1 mg per 100 units UFH; fresh frozen plasma for AT-III supplementation"
+}

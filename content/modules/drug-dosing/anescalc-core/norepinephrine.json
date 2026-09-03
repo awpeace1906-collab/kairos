@@ -1,0 +1,48 @@
+{
+  "id": "norepinephrine",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Vasopressors",
+  "title": "Norepinephrine",
+  "aliases": [
+    "Levophed"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "vasopressor",
+    "norepinephrine"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Levophed",
+  "tallManLetters": "norEPINEPHrine",
+  "drugClass": "vasopressor",
+  "drugClassLabel": "Vasopressor",
+  "mechanism": "Endogenous catecholamine — potent α₁/α₂ vasoconstriction (↑SVR, ↑MAP) + β₁ inotropy. Minimal β₂ activity (unlike epinephrine). No ↑HR at normal doses (reflex bradycardia common).",
+  "onset": "~1–2 min",
+  "duration": "Infusion-dependent; offset ~1–2 min after stopping",
+  "dosing": "Vasopressor infusion: 0.01–3 mcg/kg/min (titrate to MAP ≥65 mmHg; higher doses in refractory septic shock)",
+  "cautions": [
+    "AEs: Hypertension (overdose), reflex bradycardia, tissue ischemia (extravasation/peripheral), arrhythmias, reduced renal/mesenteric perfusion at very high doses",
+    "CI: Hypovolemia as sole therapy (correct volume first); hypersensitivity; peripheral vasoconstriction in non-occlusive mesenteric ischemia",
+    "Precautions: Central access preferred (extravasation → tissue necrosis); peripheral IV acceptable for up to 4h per updated evidence (Loubani et al.); monitor UO/renal perfusion"
+  ],
+  "pearls": [
+    "Gold standard vasopressor for septic shock (Surviving Sepsis Campaign 2021). Superior to dopamine in reducing arrhythmias and mortality in septic shock (De Backer NEJM 2010).",
+    "Peripheral administration acceptable short-term per contemporary evidence. Correct hypovolemia first — vasopressors do not substitute for volume."
+  ],
+  "reversal": "Phentolamine for extravasation; dose reduction for overdose"
+}

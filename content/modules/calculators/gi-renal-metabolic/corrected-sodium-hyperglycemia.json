@@ -1,0 +1,30 @@
+{
+  "id": "corrected-sodium-hyperglycemia",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "Corrected Sodium for Hyperglycemia",
+  "aliases": ["Hillier corrected sodium", "DKA sodium correction", "true sodium"],
+  "tags": ["hyponatremia", "hyperglycemia", "DKA", "HHS", "sodium", "ED", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "review_tier": "stable",
+  "sources": ["Hillier TA et al. Am J Med 1999", "Katz MA. NEJM 1973"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry. Ships Hillier (2.4) per the build-spec recommendation." }],
+  "engine": "formula",
+  "settings": ["ED", "ICU"],
+  "purpose": "True sodium in the setting of hyperglycemia (DKA / HHS) — hyperglycemia pulls water intravascularly and dilutes measured sodium.",
+  "inputs": [
+    { "key": "measuredNa", "label": "Measured sodium", "type": "number", "unit": "mmol/L", "min": 100, "max": 180 },
+    { "key": "glucose", "label": "Glucose", "type": "number", "unit": "mg/dL", "min": 100, "max": 2000 }
+  ],
+  "formulas": [
+    { "key": "correctedNa", "label": "Corrected sodium (Hillier, 2.4)", "expression": "measuredNa + 2.4 * ((glucose - 100) / 100)", "unit": "mmol/L", "precision": 1 }
+  ],
+  "interpretation": [
+    { "forKey": "correctedNa", "min": 0, "max": 134.9, "label": "Corrected hyponatremia — a true free-water excess persists after glucose is accounted for", "severity": "moderate" },
+    { "forKey": "correctedNa", "min": 135, "max": 145, "label": "Corrected sodium normal", "severity": "info" },
+    { "forKey": "correctedNa", "min": 145.1, "max": 200, "label": "Corrected hypernatremia — significant free-water deficit; anticipate a rise in measured Na as glucose falls with treatment", "severity": "moderate" }
+  ],
+  "notes": "This app ships the Hillier constant (2.4), which is empirically derived and more accurate at the high glucose levels where this calculation matters. The older Katz constant (1.6) is a theoretical estimate — not offered here to avoid inconsistent results."
+}

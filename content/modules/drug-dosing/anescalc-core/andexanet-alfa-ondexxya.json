@@ -1,0 +1,55 @@
+{
+  "id": "andexanet-alfa-ondexxya",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Anticoagulants / Hemostatics",
+  "title": "Andexanet Alfa (Ondexxya)",
+  "aliases": [
+    "Ondexxya"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "anticoagulant",
+    "andexanet",
+    "alfa",
+    "ondexxya"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Ondexxya",
+  "drugClass": "anticoagulant",
+  "drugClassLabel": "Anticoagulant / Hemostatic",
+  "mechanism": "Recombinant modified human Factor Xa decoy molecule — lacks catalytic activity. Binds Factor Xa inhibitors (apixaban, rivaroxaban, enoxaparin) with high affinity, sequestering them and preventing binding to native FXa. Does NOT directly promote clotting; restores endogenous FXa activity by removing inhibitor. Rapidly reduces anti-Xa activity by 80–90% within minutes of administration.",
+  "onset": "Anti-Xa activity reduction within 2 min of IV administration",
+  "duration": "Reversal maintained during infusion; anti-Xa activity may re-elevate within 2h after completion (drug redistribution from tissue). Bleeding control typically maintained beyond plasma anti-Xa re-elevation.",
+  "dosing": "APIXABAN or RIVAROXABAN REVERSAL (life-threatening or uncontrolled bleeding):\n\nLOW-DOSE REGIMEN (apixaban ≤5 mg within 8h; rivaroxaban ≤10 mg within 8h):\n400 mg IV bolus (30 mg/min) THEN 480 mg IV infusion over 2h (4 mg/min)\n\nHIGH-DOSE REGIMEN (apixaban >5 mg or timing unknown; rivaroxaban >10 mg or timing unknown):\n800 mg IV bolus (30 mg/min) THEN 960 mg IV infusion over 2h (8 mg/min)\n\nENOXAPARIN (off-label — FDA-approved for FXa inhibitors only; used off-label for LMWH):\nSame dosing regimens used off-label; evidence extrapolated from anti-Xa activity reduction studies\n\nBETRIXABAN/EDOXABAN: FDA-approved indication — use high-dose regimen.\n\nADMINISTRATION NOTES: Must be reconstituted; administer with dedicated IV line. Do NOT administer other drugs in same line.",
+  "cautions": [
+    "THROMBOEMBOLIC EVENTS: 10–15% rate of thrombosis (DVT, PE, MI, stroke) in ANNEXA-4 trial — driven largely by underlying patient comorbidities and reversal of anticoagulation in high-risk population. Resume anticoagulation as soon as safely feasible after hemostasis.",
+    "ANTI-Xa REBOUND: Anti-FXa activity may re-elevate 2–18h post-infusion as andexanet alfa is cleared faster than apixaban/rivaroxaban. Monitor anti-Xa levels; resuming anticoagulation is typically more effective than re-dosing andexanet alfa.",
+    "COST: One of the most expensive drugs in hospital formulary (~$25,000–50,000 per course). Most institutions have restricted use criteria requiring clinical pharmacy/hematology approval.",
+    "DOES NOT REVERSE: Dabigatran (DTI — use idarucizumab), warfarin (use 4F-PCC + VitK), or UFH/LMWH heparin (use protamine; LMWH partially reversed by protamine — andexanet off-label for LMWH).",
+    "LABORATORY: Standard anti-Xa assays may be unreliable during andexanet alfa infusion (andexanet alfa cross-reacts with some assays). Use HEMO ScreenTM or thrombin generation assay if available; clinical monitoring of bleeding is primary endpoint.",
+    "PREGNANCY / PEDIATRIC: Not studied; no data available."
+  ],
+  "pearls": [
+    "ONLY FDA-APPROVED SPECIFIC REVERSAL AGENT for apixaban and rivaroxaban (Factor Xa inhibitors). ANNEXA-4 trial: 82% excellent/good hemostatic efficacy at 12h in patients with acute major bleeding on apixaban or rivaroxaban.",
+    "DOSE SELECTION TIP: 'High dose' is for patients who took a recent high dose of rivaroxaban (>10 mg) or apixaban (>5 mg) OR timing of last dose is unknown. When in doubt → use high-dose regimen.",
+    "RESUME ANTICOAGULATION EARLY: Andexanet alfa reversal is a bridge, not permanent. Once hemostasis is confirmed (typically 12–24h), restart anticoagulation. The thrombotic risk from the underlying condition (AF, VTE) persists. Document plan at time of reversal.",
+    "4F-PCC vs. ANDEXANET ALFA for FXa inhibitor reversal: PCC (off-label, $1,000–4,000) vs. andexanet alfa (on-label, ~$25,000–50,000). Many institutions use PCC as first-line due to cost and formulary access, reserving andexanet alfa for patients where PCC fails or is contraindicated.",
+    "DOES NOT REQUIRE BLOOD TYPING — no plasma components; no transfusion reaction risk. Reconstitution takes ~15 min — plan ahead; do not delay other supportive care while preparing."
+  ],
+  "reversal": "No reversal agent; thrombosis risk managed by resuming anticoagulation"
+}

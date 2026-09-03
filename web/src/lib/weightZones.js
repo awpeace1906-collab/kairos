@@ -35,21 +35,32 @@ export function estimateWeight(cfg, { ageMonths, ageYears }) {
  */
 export function doseFromRule(rule, weightKg) {
   if (!Number.isFinite(weightKg)) return null;
-  let mg = rule.perKg * weightKg;
-  let capped = false;
-  if (rule.maxDose != null && mg > rule.maxDose) {
-    mg = rule.maxDose;
-    capped = true;
-  }
+
+  const clamp = (perKg) => {
+    let mg = perKg * weightKg;
+    let capped = false;
+    let floored = false;
+    if (rule.maxDose != null && mg > rule.maxDose) { mg = rule.maxDose; capped = true; }
+    if (rule.minDose != null && mg < rule.minDose) { mg = rule.minDose; floored = true; }
+    return { mg, capped, floored };
+  };
+
+  const lo = clamp(rule.perKg);
+  const hi = rule.perKgHigh != null ? clamp(rule.perKgHigh) : null;
+
   const out = {
-    amount: round(mg, 3),
+    amount: round(lo.mg, 3),
+    amountHigh: hi ? round(hi.mg, 3) : null,
     unit: rule.unit || "mg",
-    capped,
+    capped: lo.capped || (hi ? hi.capped : false),
+    floored: lo.floored,
     perKg: rule.perKg,
+    perKgHigh: rule.perKgHigh ?? null,
     weightKg,
   };
   if (rule.mlPerUnit != null) {
-    out.volumeMl = round(mg * rule.mlPerUnit, 2);
+    out.volumeMl = round(lo.mg * rule.mlPerUnit, 2);
+    out.volumeMlHigh = hi ? round(hi.mg * rule.mlPerUnit, 2) : null;
     out.concentration = rule.concentration;
   }
   if (rule.repeat) out.repeat = rule.repeat;

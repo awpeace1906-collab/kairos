@@ -1,0 +1,48 @@
+{
+  "id": "bupivacaine-hyperbaric-0-5",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Local Anesthetics",
+  "title": "Bupivacaine Hyperbaric 0.5%",
+  "aliases": [
+    "Marcaine Heavy"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "local",
+    "bupivacaine",
+    "hyperbaric"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Marcaine Heavy",
+  "drugClass": "local",
+  "drugClassLabel": "Local Anesthetic",
+  "mechanism": "Bupivacaine 0.5% + 8% dextrose — specific gravity ~1.023, heavier than CSF (~1.003). Block spread influenced by patient position and table tilt (baricity-driven migration in CSF).",
+  "onset": "3–5 min spinal",
+  "duration": "Spinal 1.5–2.5h (shorter than isobaric due to CSF dilution)",
+  "dosing": "Spinal C-section: 1.4–1.6 mL (10.5–12 mg) + fentanyl 15–25 mcg + morphine 100–200 mcg. Spinal lower extremity: 0.5–1.5 mL (3.75–11.25 mg). Saddle block: 0.5 mL seated.",
+  "cautions": [
+    "High spinal risk if head-down (Trendelenburg) used immediately after injection — can cause apnea and cardiac arrest",
+    "Hypotension predictable with T4 spinal for OB — prepare vasopressors before injection",
+    "Delayed respiratory depression risk if IT morphine added — monitor 12–24h"
+  ],
+  "pearls": [
+    "Workhorse for spinal anesthesia in the US — most common drug used for C-section spinal",
+    "Baricity matters: early repositioning after injection affects block spread and symmetry",
+    "IT morphine 100–200 mcg provides 12–24h post-C-section analgesia"
+  ]
+}

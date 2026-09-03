@@ -1,0 +1,32 @@
+{
+  "id": "rsbi",
+  "section": "Calculators",
+  "category": "ICU / Critical Care",
+  "title": "Rapid Shallow Breathing Index (RSBI)",
+  "aliases": ["RSBI", "Tobin index", "f/Vt", "extubation readiness", "weaning predictor"],
+  "tags": ["weaning", "extubation", "spontaneous breathing trial", "mechanical ventilation", "ICU"],
+  "keywords": ["respiratory rate over tidal volume", "RSBI < 105", "measured during a T-piece or low PS trial", "not a standalone extubation order"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Yang KL, Tobin MJ. NEJM 1991"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "formula",
+  "settings": ["ICU"],
+  "purpose": "The most-used bedside predictor of weaning success — the ratio of respiratory rate to tidal volume during a brief period of spontaneous breathing (T-piece or PS 0–5 / PEEP 0–5). One data point that supports, but does not replace, a passed spontaneous breathing trial.",
+  "inputs": [
+    { "key": "rr", "label": "Respiratory rate during spontaneous breathing", "type": "number", "unit": "breaths/min", "min": 4, "max": 80 },
+    { "key": "vt", "label": "Tidal volume (spontaneous)", "type": "number", "unit": "mL", "min": 50, "max": 1200 }
+  ],
+  "formulas": [
+    { "key": "rsbi", "label": "RSBI (f / Vt)", "expression": "rr / (vt / 1000)", "unit": "breaths/min/L", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "rsbi", "min": 0, "max": 104.9, "label": "< 105 — favourable; supports proceeding to a spontaneous breathing trial / extubation if the other criteria are met", "severity": "low" },
+    { "forKey": "rsbi", "min": 105, "max": 9999, "label": "≥ 105 — substantially higher weaning-failure risk. Reassess the cause of respiratory failure, sedation, secretions, fluid balance, and cardiac function before another attempt", "severity": "moderate" }
+  ],
+  "notes": "Measure after ~1 min of spontaneous breathing on minimal support. Integrate with: a passed SBT (the primary test), secretion burden, cough strength, cuff-leak, mental status, and overall trajectory. RSBI performs less well in women, small patients, and with a small ETT (resistance inflates the rate).",
+  "buildNote": "Formula engine — Vt is entered in mL and divided by 1000 for the L in the denominator."
+}

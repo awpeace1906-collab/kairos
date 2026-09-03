@@ -1,0 +1,32 @@
+{
+  "id": "surgical-apgar",
+  "section": "Calculators",
+  "category": "Anesthesia / Airway / OR",
+  "title": "Surgical Apgar Score",
+  "aliases": ["SAS", "surgical Apgar", "intraoperative risk score", "postoperative complication score"],
+  "tags": ["perioperative", "intraoperative", "risk stratification", "postoperative complications", "OR"],
+  "keywords": ["estimated blood loss", "lowest mean arterial pressure", "lowest heart rate", "postoperative disposition", "intraoperative course"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Gawande AA et al. J Am Coll Surg 2007; Regenbogen SE et al. (validation) Ann Surg 2009"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["OR", "Anesthesia"],
+  "purpose": "A 10-point score calculated from three intraoperative parameters at the end of general / abdominal surgery, predicting 30-day major complications and death. Uses data the anaesthetic record already contains.",
+  "items": [
+    { "key": "ebl", "label": "Estimated blood loss (mL)", "options": [{ "label": "> 1000", "points": 0 }, { "label": "601–1000", "points": 1 }, { "label": "101–600", "points": 2 }, { "label": "≤ 100", "points": 3 }] },
+    { "key": "lowestMap", "label": "Lowest mean arterial pressure (mmHg)", "options": [{ "label": "< 40", "points": 0 }, { "label": "40–54", "points": 1 }, { "label": "55–69", "points": 2 }, { "label": "≥ 70", "points": 3 }] },
+    { "key": "lowestHr", "label": "Lowest heart rate (/min)", "options": [{ "label": "> 85 (or any pathologic bradyarrhythmia incl. asystole / VF requiring CPR)", "points": 0 }, { "label": "76–85", "points": 1 }, { "label": "66–75", "points": 2 }, { "label": "56–65", "points": 3 }, { "label": "≤ 55", "points": 4 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 4, "label": "High risk — 30-day major complication / death rate ~ 55% at 0–2 and ~ 16% at 3–4. Strongly consider ICU / step-down admission, closer nursing, and a lower threshold for early re-evaluation", "disposition": "Consider ICU / step-down", "severity": "high" },
+    { "min": 5, "max": 6, "label": "Intermediate risk — complication rate ~ 8%. Ward with enhanced vigilance; use clinical context and procedure to decide monitored bed", "severity": "moderate" },
+    { "min": 7, "max": 8, "label": "Low risk — complication rate ~ 4%. Routine postoperative care", "severity": "low" },
+    { "min": 9, "max": 10, "label": "Very low risk — complication rate ~ 4% or less; consider suitability for early discharge pathways", "severity": "low" }
+  ],
+  "notes": "The lowest HR item can exceed 3 points (≤ 55 = 4), so the maximum is 10. Score at the end of the operation. It reflects intraoperative course, not baseline risk — combine with a preoperative index (RCRI, NSQIP, ASA class) for the full picture. A low score should change disposition and handoff, not just documentation.",
+  "buildNote": "Additive, 3 intraoperative parameters. Range 0–10."
+}

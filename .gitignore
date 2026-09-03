@@ -5,6 +5,7 @@ npm-debug.log*
 # Generated content mirrors (source of truth is /content)
 web/content/
 ios/Generated/
+tools/dist/
 
 # Xcode
 ios/Kairos.xcodeproj/

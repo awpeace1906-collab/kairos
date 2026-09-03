@@ -1,0 +1,122 @@
+{
+  "id": "abc-score-mtp",
+  "section": "Calculators",
+  "category": "Trauma",
+  "title": "ABC Score for Massive Transfusion",
+  "aliases": [
+    "ABC score",
+    "Assessment of Blood Consumption",
+    "massive transfusion protocol trigger",
+    "MTP activation"
+  ],
+  "tags": [
+    "trauma",
+    "massive transfusion",
+    "hemorrhage",
+    "MTP",
+    "ED",
+    "resuscitation"
+  ],
+  "keywords": [
+    "penetrating mechanism",
+    "systolic BP <= 90",
+    "heart rate >= 120",
+    "positive FAST",
+    "activate massive transfusion"
+  ],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": [
+    "Nunez TC et al. J Trauma 2009; Cotton BA et al. J Trauma 2010 (validation)"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx."
+    }
+  ],
+  "engine": "additive",
+  "settings": [
+    "ED"
+  ],
+  "purpose": "A 4-item bedside score (no labs) to predict the need for massive transfusion after trauma and trigger early MTP activation. Score ≥ 2 is the activation threshold.",
+  "items": [
+    {
+      "key": "penetrating",
+      "label": "Penetrating mechanism",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "sbp90",
+      "label": "Systolic BP ≤ 90 mmHg (on ED arrival)",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "hr120",
+      "label": "Heart rate ≥ 120/min (on ED arrival)",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "fast",
+      "label": "Positive FAST (free fluid)",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 0,
+      "max": 1,
+      "label": "Low likelihood of massive transfusion — MTP activation not mandated by the score; continue standard resuscitation and reassess (sensitivity for MT is lost below 2)",
+      "severity": "moderate"
+    },
+    {
+      "min": 2,
+      "max": 4,
+      "label": "Activate the massive transfusion protocol — give balanced product (1:1:1 RBC:FFP:platelets), tranexamic acid within 3 h of injury, calcium, and control the bleeding source. Sensitivity ~ 75–90%, specificity ~ 67–86% for needing MT",
+      "disposition": "Activate MTP",
+      "severity": "high"
+    }
+  ],
+  "notes": "ABC ≥ 2 is a trigger, not a ceiling — clinical gestalt, ongoing haemorrhage, or a rising shock index should activate MTP even at a score of 0–1. Recheck as data change (a delayed positive FAST or a falling BP moves the score). Alternatives / adjuncts: shock index > 0.9–1.0, the Revised Assessment of Bleeding and Transfusion (RABT) score which adds pelvic fracture, and lactate / base deficit once available.",
+  "buildNote": "Additive, 4 items × 1 point. Threshold ≥ 2 activates MTP."
+}

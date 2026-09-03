@@ -1,0 +1,29 @@
+{
+  "id": "peds-rocuronium-rsi",
+  "section": "Drug & Dosing Cards",
+  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "title": "Rocuronium — Pediatric RSI Paralysis",
+  "aliases": ["peds rocuronium", "RSI paralytic", "non-depolarizing paralytic"],
+  "tags": ["RSI", "rapid sequence intubation", "paralytic", "neuromuscular blockade", "peds"],
+  "contentType": "drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Drug_Dosing_Peds_Weight_Based_Spec.md"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry." }],
+  "purpose": "Non-depolarizing paralytic for RSI. Default when succinylcholine is contraindicated; reversible with sugammadec.",
+  "population": "peds",
+  "weightBasis": "actual",
+  "doses": [
+    {
+      "indication": "RSI paralysis",
+      "route": "IV / IO",
+      "rule": { "perKg": 1, "perKgHigh": 1.2, "unit": "mg" },
+      "notes": "Onset ~45-60 s at RSI dose, duration 30-60 min. No fasciculations, no hyperkalemia risk."
+    }
+  ],
+  "contraindications": ["Known rocuronium / vecuronium anaphylaxis"],
+  "reversal": "Sugammadex 16 mg/kg for immediate reversal of an RSI dose.",
+  "buildNote": "Succinylcholine (1-2 mg/kg IV, max 150 mg) is the faster-onset/shorter-duration alternative — contraindicated with hyperkalemia risk, myopathy, or MH history. Add that card and cross-link."
+}

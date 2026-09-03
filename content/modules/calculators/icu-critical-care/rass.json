@@ -1,0 +1,33 @@
+{
+  "id": "rass",
+  "section": "Calculators",
+  "category": "ICU / Critical Care",
+  "title": "RASS (Richmond Agitation-Sedation Scale)",
+  "aliases": ["Richmond agitation sedation scale", "sedation depth", "sedation target"],
+  "tags": ["sedation", "agitation", "ventilator", "ICU", "delirium screen"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Sessler CN et al. Am J Respir Crit Care Med 2002"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry from Calculator_Logic_Build_Spec.md." }],
+  "engine": "classification",
+  "settings": ["ICU"],
+  "purpose": "Titrates sedation in real time on ventilated / critically ill patients. Also the arousal gate for CAM-ICU (delirium screen requires RASS ≥ -3).",
+  "tiers": [
+    { "label": "+4 Combative", "description": "Overtly combative or violent; immediate danger to staff" },
+    { "label": "+3 Very agitated", "description": "Pulls at or removes tubes/catheters; aggressive" },
+    { "label": "+2 Agitated", "description": "Frequent non-purposeful movement; fights the ventilator" },
+    { "label": "+1 Restless", "description": "Anxious or apprehensive but movements not aggressive/vigorous" },
+    { "label": "0 Alert and calm", "description": "" },
+    { "label": "-1 Drowsy", "description": "Not fully alert but sustained (> 10 s) awakening, eye contact, to voice" },
+    { "label": "-2 Light sedation", "description": "Briefly (< 10 s) awakens with eye contact to voice" },
+    { "label": "-3 Moderate sedation", "description": "Movement or eye opening to voice but no eye contact" },
+    { "label": "-4 Deep sedation", "description": "No response to voice; movement or eye opening to physical stimulation" },
+    { "label": "-5 Unarousable", "description": "No response to voice or physical stimulation" }
+  ],
+  "interpretation": [
+    { "label": "Typical target for a comfortable ventilated patient is 0 to -2; deeper only for a specific indication (severe ARDS, refractory intracranial hypertension, neuromuscular blockade).", "severity": "info" }
+  ]
+}

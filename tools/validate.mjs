@@ -51,7 +51,17 @@ for (const mod of mods) {
     fail(where, `unknown contentType "${json.contentType}"`);
     continue;
   }
-  validateAgainst(schemaFile, json, where);
+
+  // Decouple a peds-tool's embeddedCalculator: validate it on its own against the
+  // calculator schema, then validate the wrapper without it. Nesting two
+  // `unevaluatedProperties: false` schemas via $ref is an ajv performance cliff.
+  if (json.contentType === "peds-tool" && json.embeddedCalculator) {
+    validateAgainst("calculator.schema.json", json.embeddedCalculator, `${where} › embeddedCalculator`);
+    const { embeddedCalculator, ...rest } = json;
+    validateAgainst(schemaFile, rest, where);
+  } else {
+    validateAgainst(schemaFile, json, where);
+  }
 
   // filename == id
   if (json.id && basename(mod.key) !== json.id) {

@@ -1,0 +1,48 @@
+{
+  "id": "ropivacaine",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Local Anesthetics",
+  "title": "Ropivacaine",
+  "aliases": [
+    "Naropin"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "local",
+    "ropivacaine"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Naropin",
+  "tallManLetters": "ROPivacaine",
+  "drugClass": "local",
+  "drugClassLabel": "Local Anesthetic",
+  "mechanism": "Pure S-enantiomer amide LA — same mechanism as bupivacaine but stereoselective cardiac Na⁺ channel binding produces less cardiotoxicity. Intrinsic vasoconstriction (less systemic absorption than lidocaine without epi).",
+  "onset": "Intermediate — epidural 15–20 min; peripheral block 15–30 min",
+  "duration": "Epidural 4–6h; peripheral block 8–12h (concentration-dependent)",
+  "dosing": "Epidural analgesia: 0.1–0.2%; labor: 0.1% with opioid\nPeripheral nerve block: 0.2–0.5%; MAX 3 mg/kg (MAX ~250 mg)\nLocal infiltration: 0.2–0.5%",
+  "cautions": [
+    "AEs: LAST (less cardiotoxic than bupivacaine but not risk-free), CNS toxicity, hypotension, motor block",
+    "CI: Hypersensitivity; IV administration",
+    "Precautions: Still can cause LAST — Intralipid must be available; less motor block than bupivacaine at equivalent doses (S-enantiomer selectivity); preferred over bupivacaine for high-volume nerve blocks"
+  ],
+  "pearls": [
+    "Superior cardiac safety vs. bupivacaine — preferred for high-volume nerve blocks (truncal, TAP, pecs). Provides differential sensory > motor block — preferred for labor epidurals.",
+    "Intrinsic vasoconstriction: longer duration than lidocaine without needing epinephrine. Still requires LAST preparedness."
+  ],
+  "reversal": "Intralipid 20% 1.5 mL/kg IV for LAST"
+}

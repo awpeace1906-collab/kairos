@@ -1,0 +1,48 @@
+{
+  "id": "flumazenil",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Reversal Agents",
+  "title": "Flumazenil",
+  "aliases": [
+    "Romazicon"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "reversal",
+    "flumazenil"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Romazicon",
+  "tallManLetters": "fluMAZenil",
+  "drugClass": "reversal",
+  "drugClassLabel": "Reversal",
+  "mechanism": "Competitive benzodiazepine receptor antagonist at GABA-A BZD binding site → reverses BZD sedation, anxiolysis, and amnesia. Does NOT reverse non-BZD hypnotics.",
+  "onset": "1–2 min",
+  "duration": "30–60 min (SHORTER than most BZDs — resedation very likely)",
+  "dosing": "Standard adult: 0.2 mg IV q1 min (MAX 1 mg total)\nPediatric: 0.01 mg/kg IV q1 min (MAX 0.05 mg/kg or 1 mg)\nResedation prevention infusion: 0.1–0.5 mg/hr",
+  "cautions": [
+    "AEs: Acute BZD withdrawal in chronic users (tachycardia, hypertension, SEIZURES); resedation (common — duration shorter than most BZDs); anxiety, agitation",
+    "CI: Seizure disorders controlled by BZDs; patients on BZDs for seizure prophylaxis; hypersensitivity",
+    "Precautions: Lowers seizure threshold; resedation common — monitor 60–120 min after administration; does NOT reverse propofol, ketamine, barbiturates, or alcohol"
+  ],
+  "pearls": [
+    "Does NOT reverse propofol, ketamine, or barbiturate sedation — a common and dangerous misunderstanding.",
+    "ASTM orange + white stripe antagonist label. BZD-dependent patients: reversal precipitates acute withdrawal seizures — use extreme caution. Infusion often needed for long-acting BZDs."
+  ],
+  "reversal": "N/A — is itself the reversal agent"
+}

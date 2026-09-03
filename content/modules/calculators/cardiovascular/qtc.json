@@ -5,16 +5,17 @@
   "title": "Corrected QT Interval (QTc)",
   "aliases": ["QTc", "Bazett", "Fridericia", "QT correction"],
   "contentType": "calculator",
-  "content_version": 1,
-  "last_reviewed": "2026-08-31",
-  "next_review_due": "2026-11-30",
+  "content_version": 2,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
   "review_tier": 1,
   "sources": [
-    "Bazett HC. Heart 1920",
-    "Fridericia LS. Acta Med Scand 1920",
-    "AHA/ACCF/HRS 2009 recommendations for standardization of the ECG"
+    "Bazett HC. Heart 1920;7:353-70",
+    "Fridericia LS. Acta Med Scand 1920;53:469-86",
+    "Rautaharju PM et al. AHA/ACCF/HRS. Circulation 2009;119:e241-50"
   ],
   "changelog": [
+    { "version": 2, "date": "2026-09-01", "change": "Tier 1 verification: formulas confirmed. Added a Fridericia interpretation band set; borderline band now starts at 450 ms (men) per AHA/ACCF/HRS 2009." },
     { "version": 1, "date": "2026-08-31", "change": "Initial entry transcribed from Calculator_Logic_Build_Spec.md" }
   ],
   "engine": "formula",
@@ -30,10 +31,13 @@
     { "key": "fridericia", "label": "QTc (Fridericia)", "expression": "qt / cbrt(60 / hr)", "unit": "ms", "precision": 0 }
   ],
   "interpretation": [
-    { "forKey": "bazett", "min": 0, "max": 439, "label": "Normal (men < 440 ms)", "severity": "info" },
-    { "forKey": "bazett", "min": 440, "max": 499, "label": "Borderline / prolonged — review QT-prolonging meds and electrolytes", "severity": "moderate" },
-    { "forKey": "bazett", "min": 500, "max": 800, "label": "Markedly prolonged — high torsades risk; avoid adding QT-prolonging drugs", "severity": "high" }
+    { "forKey": "bazett", "min": 0, "max": 449, "label": "Normal (men < 450 ms / women < 460 ms)", "severity": "info" },
+    { "forKey": "bazett", "min": 450, "max": 499, "label": "Prolonged — review QT-prolonging meds, correct K⁺ / Mg²⁺ / Ca²⁺", "severity": "moderate" },
+    { "forKey": "bazett", "min": 500, "max": 800, "label": "Markedly prolonged — high torsades risk; avoid adding QT-prolonging drugs", "severity": "high" },
+    { "forKey": "fridericia", "min": 0, "max": 449, "label": "Normal (men < 450 ms / women < 460 ms)", "severity": "info" },
+    { "forKey": "fridericia", "min": 450, "max": 499, "label": "Prolonged — review QT-prolonging meds and electrolytes", "severity": "moderate" },
+    { "forKey": "fridericia", "min": 500, "max": 800, "label": "Markedly prolonged — high torsades risk", "severity": "high" }
   ],
-  "notes": "Normal threshold is < 440 ms (men) / < 460 ms (women). Fridericia is more accurate at extremes of heart rate; prefer it for HR < 60 or > 100.",
+  "notes": "AHA/ACCF/HRS 2009: 'prolonged' ≥ 450 ms (men) / ≥ 460 ms (women); 'markedly abnormal' ≥ 500 ms. Fridericia is more accurate at extremes of heart rate — prefer it for HR < 60 or > 100. Bazett over-corrects at high HR and under-corrects at low HR.",
   "buildNote": "Formula engine. Fridericia uses a cube root — verify the app's expression evaluator supports cbrt()."
 }

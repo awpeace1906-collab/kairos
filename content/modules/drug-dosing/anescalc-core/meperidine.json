@@ -1,0 +1,48 @@
+{
+  "id": "meperidine",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Opioids",
+  "title": "Meperidine",
+  "aliases": [
+    "Demerol"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "opioid",
+    "meperidine"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Demerol",
+  "tallManLetters": "mePERIdine",
+  "drugClass": "opioid",
+  "drugClassLabel": "Opioid",
+  "mechanism": "Synthetic μ-opioid agonist + κ-agonist (antishivering) + serotonin reuptake inhibition + Na⁺ channel block (local anesthetic activity). Structurally related to local anesthetics.",
+  "onset": "IV 1–5 min; IM 10–15 min",
+  "duration": "2–4h",
+  "dosing": "Acute pain (adult): PO/IM 50–150 mg q3–4h\nAcute pain (peds): 1.1–1.76 mg/kg IM/SC q3–4h (MAX 100 mg per dose)\nPreop: IM 50–100 mg adult; 1.1–2.2 mg/kg peds (30–90 min prior)\nPostop shivering: 25 mg IV; repeat PRN\nIntrathecal adjuvant: 0.05–0.5 mg/kg single dose",
+  "cautions": [
+    "AEs: Normeperidine neurotoxicity (tremor → myoclonus → seizures — NOT reversed by naloxone), serotonin syndrome (with MAOIs/serotonergics), respiratory depression, histamine release",
+    "CI: MAOI use or within 14 days; significant respiratory depression; GI obstruction; hypersensitivity",
+    "Precautions: Normeperidine accumulates with repeat dosing or renal impairment — limit to single-dose or short course; seizure risk NOT reversed by naloxone (may worsen); ISMP high-alert medication"
+  ],
+  "pearls": [
+    "The ONLY opioid with reliable antishivering properties (κ-receptor, 25 mg IV). Structurally related to LAs — Na⁺ channel block useful for IT adjuvant.",
+    "Largely fallen out of favor for pain management due to normeperidine toxicity; still used for postop shivering and IT adjuvant. Normeperidine t½ = 15–30h — accumulates with repeat dosing."
+  ],
+  "reversal": "Naloxone for respiratory depression ONLY — does NOT reverse normeperidine neurotoxicity"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "peds-dka-management",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Pediatric DKA Management",
+  "aliases": ["peds DKA", "pediatric diabetic ketoacidosis", "DKA insulin fluids"],
+  "tags": ["DKA", "diabetic ketoacidosis", "insulin infusion", "cerebral edema", "potassium", "peds"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": [
+    "BSPED DKA Guideline (ISPAD-aligned)",
+    "ISPAD Clinical Practice Consensus Guidelines 2022"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Peds_Module_Content_Spec.md — confirmed K+ thresholds and the < 5 y insulin-rate refinement." }],
+  "kind": "reference",
+  "purpose": "Weight-based fluid and insulin protocol for pediatric DKA, with the cerebral-edema-driven safeguards that distinguish it from adult protocols.",
+  "ageRange": "Children and adolescents",
+  "sourceOfTruth": ["holliday-segar-maintenance-fluids"],
+  "body": [
+    { "type": "heading", "level": 2, "text": "Fluids" },
+    { "type": "list", "items": [
+      "If in shock: 10-20 mL/kg isotonic (NS or LR) bolus over 1-2 hours; reassess after each bolus",
+      "Be deliberately cautious with rate and total volume — rapid correction is a cerebral-edema risk in pediatric DKA",
+      "After initial resuscitation, replace the estimated deficit evenly over 24-48 hours plus maintenance"
+    ] },
+    { "type": "heading", "level": 2, "text": "Insulin" },
+    { "type": "list", "items": [
+      "Continuous infusion 0.05-0.1 units/kg/h, started AFTER the initial fluid bolus",
+      "NO insulin bolus — bolus dosing is specifically avoided in pediatric DKA (cerebral edema risk)",
+      "Children < 5 years: use the lower end, 0.05 units/kg/h, to reduce subsequent hypoglycemia",
+      "Add dextrose to fluids once glucose falls to ~250-300 mg/dL; do not stop the insulin infusion to treat hypoglycemia — add/increase dextrose instead"
+    ] },
+    { "type": "heading", "level": 2, "text": "Potassium (BSPED / ISPAD-aligned thresholds)" },
+    { "type": "table",
+      "columns": ["Admission K+", "Action"],
+      "rows": [
+        ["< 3.0 mmol/L", "DEFER insulin until K+ rises above 3.0 — hypokalemia takes priority over acidosis"],
+        ["Within normal range", "Add potassium to maintenance fluids once urine output is confirmed"],
+        ["> ~5.5 mmol/L (above ULN)", "Do NOT add potassium to fluids until the patient has passed urine or K+ has normalized"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Cerebral edema — the time-critical complication" },
+    { "type": "callout", "tone": "danger", "text": "Watch for headache, altered mental status, and a Cushing's-triad pattern (bradycardia + hypertension). If suspected, treat emergently with mannitol or hypertonic saline and do not wait for imaging." }
+  ],
+  "buildNote": "Cross-links to the Holliday-Segar maintenance-fluid calculator for the maintenance component. A production build could add a deficit-replacement calculator (% dehydration × weight)."
+}

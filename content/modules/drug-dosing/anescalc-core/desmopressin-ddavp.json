@@ -1,0 +1,55 @@
+{
+  "id": "desmopressin-ddavp",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Anticoagulants / Hemostatics",
+  "title": "Desmopressin (DDAVP)",
+  "aliases": [
+    "DDAVP / Stimate"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "anticoagulant",
+    "desmopressin",
+    "ddavp"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "DDAVP / Stimate",
+  "tallManLetters": "desMOPRESSin",
+  "drugClass": "anticoagulant",
+  "drugClassLabel": "Anticoagulant / Hemostatic",
+  "mechanism": "Synthetic analogue of arginine vasopressin (AVP). V2 receptor agonism on vascular endothelium → releases stored von Willebrand factor (vWF) and Factor VIII from Weibel-Palade bodies → enhances platelet adhesion (GPIb–vWF interaction) and secondary hemostasis. Also increases platelet surface expression of GPIb and αIIbβ3. Antidiuretic effect via V2 in renal collecting duct → water reabsorption (used for central DI, enuresis). No direct vasopressor activity at hemostatic doses.",
+  "onset": "Hemostatic: peak effect 30–90 min after IV infusion. Antidiuretic: 1–2h (IN); 15–30 min (IV)",
+  "duration": "Hemostatic: 6–12h (single dose). TACHYPHYLAXIS develops with repeat dosing — second dose within 24h yields ~30–50% reduced response; third dose minimal effect (vWF stores depleted; 24h required for resynthesis)",
+  "dosing": "HEMOSTASIS (VWD Type 1, platelet dysfunction, uremic bleeding, aspirin/NSAID effect, cardiac surgery):\nIV: 0.3 mcg/kg diluted in 50 mL NS, infuse over 15–30 min. Standard adult dose: 15–20 mcg IV (approximately 0.3 mcg/kg for 50–70 kg patient).\nIntranasal (Stimate 1.5 mg/mL): <50 kg → 150 mcg (1 spray); ≥50 kg → 300 mcg (1 spray each nostril).\nSQ: 0.3 mcg/kg (same dose as IV; slower onset).\n\nHEMOPHILIA A (mild-moderate, Factor VIII >5%):\n0.3 mcg/kg IV over 15–30 min. Repeat dosing q12–24h (tachyphylaxis limits). For procedures: administer 30–60 min before.\n\nCENTRAL DIABETES INSIPIDUS (perioperative polyuria):\nIV/SQ: 1–2 mcg per dose, q12h (total 2–4 mcg/day). Titrate to urine output. MUCH lower dose than hemostatic — do NOT confuse.\nIntranasal: 10–40 mcg q8–12h.\nOral (chronic management): 0.1–1.2 mg/day divided.\n\nNOCTURNAL ENURESIS: 0.2–0.4 mg PO at bedtime.\n\nREPEAT DOSING NOTE: 24h minimum between hemostatic doses to allow vWF replenishment. Tachyphylaxis is predictable — plan for alternative hemostatic agents (TXA, FFP, cryo) if second dose needed acutely.",
+  "cautions": [
+    "HYPONATREMIA (dilutional): Most significant perioperative risk. DDAVP V2 → water retention → ↓serum Na⁺. Risk highest with: free water loading, pediatric patients, elderly, postoperative period (↑ADH state), multiple doses. Monitor serum Na⁺ with repeat dosing. Restrict free water intake after administration. Severe hyponatremia → seizures.",
+    "TACHYPHYLAXIS: Rapid depletion of vWF/FVIII stores with repeat dosing. Second dose <24h → significantly blunted response. Third dose → minimal effect. Plan hemostatic strategy accordingly — transition to factor concentrates or antifibrinolytics for ongoing needs.",
+    "TYPE IIB VWD — ABSOLUTE CONTRAINDICATION: DDAVP releases abnormal vWF in type IIB → binds platelets with abnormally high affinity → platelet clumping → worsening thrombocytopenia. Can precipitate severe thrombocytopenia.",
+    "CARDIOVASCULAR: Mild hypotension, facial flushing, reflex tachycardia during infusion (especially if given rapidly). Rare: thrombotic events (arterial/venous) — use caution in patients with known thrombophilia or active thrombotic disease.",
+    "RENAL IMPAIRMENT (severe, CrCl <10): V2 antidiuretic effect unpredictable; risk of profound hyponatremia.",
+    "CI: Type IIB or platelet-type VWD; hemodynamically unstable patients (hypotension risk); hypersensitivity to desmopressin."
+  ],
+  "pearls": [
+    "HEMOSTATIC INDICATIONS — perioperative: VWD type 1 (most responsive), acquired platelet dysfunction (uremia, aspirin/NSAID use, cardiac surgery CPB-related platelet dysfunction), mild Hemophilia A. Less effective for type 2A/2B VWD and type 3 (severe deficiency).",
+    "CARDIAC SURGERY: DDAVP 0.3 mcg/kg reduces postoperative bleeding in patients with aspirin use or CPB-induced platelet dysfunction. Often combined with TXA (antifibrinolytic) for synergistic hemostasis. Evidence for routine use is mixed — target to platelet dysfunction identified on TEG/ROTEM.",
+    "TACHYPHYLAXIS STRATEGY: First dose is most effective. For planned procedures with anticipated ongoing hemostatic need, give first dose then PLAN for alternative agents (cryo for vWF replenishment, FVIII concentrate for Hemophilia A). Stagger doses ≥24h if repeat DDAVP is used.",
+    "HYPONATREMIA PREVENTION: Fluid restrict to maintenance or less for 24h after DDAVP administration. Check baseline Na⁺ before dosing in elderly or at-risk patients. Pediatric patients are especially vulnerable.",
+    "INTRANASAL vs. IV: Stimate (1.5 mg/mL) is the hemostatic intranasal formulation — do NOT substitute with DDAVP nasal spray (0.1 mg/mL, used for enuresis) — 15× concentration difference. Confirm correct concentration before use."
+  ],
+  "reversal": "No specific antidote; hyponatremia treated with fluid restriction ± 3% NaCl if severe"
+}

@@ -28,6 +28,8 @@ struct CalculatorView: View {
             }
 
             resultView
+                .accessibilityElement(children: .contain)
+                .accessibilityIdentifier("calc-result")
 
             if let notes = calc.notes {
                 Text(notes).font(.footnote).foregroundStyle(.secondary)
@@ -83,6 +85,7 @@ struct CalculatorView: View {
                                    in: RoundedRectangle(cornerRadius: 8))
                     }
                     .buttonStyle(.plain)
+                    .accessibilityIdentifier("opt-\(item.key)-\(idx)")
                 }
             }
         }
@@ -90,14 +93,30 @@ struct CalculatorView: View {
 
     private var formulaInputs: some View {
         ForEach(calc.inputs ?? []) { input in
-            ClearableField(
-                label: input.label,
-                unit: input.unit,
-                text: Binding(
-                    get: { inputs[input.key] ?? "" },
-                    set: { inputs[input.key] = $0; session.set(route, input.key, $0) }
+            if input.type == "select", let options = input.options {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(input.label).font(.subheadline)
+                    Picker(input.label, selection: Binding(
+                        get: { inputs[input.key] ?? "" },
+                        set: { inputs[input.key] = $0; session.set(route, input.key, $0) }
+                    )) {
+                        Text("—").tag("")
+                        ForEach(options) { opt in
+                            Text(opt.label).tag(opt.valueString)
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                }
+            } else {
+                ClearableField(
+                    label: input.label,
+                    unit: input.unit,
+                    text: Binding(
+                        get: { inputs[input.key] ?? "" },
+                        set: { inputs[input.key] = $0; session.set(route, input.key, $0) }
+                    )
                 )
-            )
+            }
         }
     }
 

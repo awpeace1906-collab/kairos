@@ -1,0 +1,48 @@
+{
+  "id": "succinylcholine",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Neuromuscular Blockers",
+  "title": "Succinylcholine",
+  "aliases": [
+    "Anectine / Quelicin"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "nmb",
+    "succinylcholine"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Anectine / Quelicin",
+  "tallManLetters": "SUCCINYLcholine",
+  "drugClass": "nmb",
+  "drugClassLabel": "NMB",
+  "mechanism": "Depolarizing NMB — structural ACh analog binds nicotinic NMJ receptor causing sustained depolarization (Phase I block). Fasciculations reflect initial unsynchronized depolarization. Metabolized by plasma (pseudo)cholinesterase.",
+  "onset": "IV ~45–60 sec; IM 3–4 min",
+  "duration": "IV ~10–12 min (plasma cholinesterase-dependent); prolonged in pseudocholinesterase deficiency",
+  "dosing": "RSI adult: 1.5 mg/kg IV\nRSI peds: 2 mg/kg IV (↑ volume of distribution)\nIM emergency (peds): 4 mg/kg (MAX 150 mg total, regardless of weight)\nDefasciculation (pretreatment): non-depolarizing NMB at 10% of intubating dose, 3 min before",
+  "cautions": [
+    "AEs: Hyperkalemia (CRITICAL: burns >48h, crush injury, denervation, prolonged immobility, UMN lesion), bradycardia (peds repeat dosing), ↑ICP, ↑IOP, ↑intragastric pressure, fasciculations, myalgia, MH susceptibility, cardiac arrest",
+    "CI: Life-threatening hyperkalemia risk (burns >48h after injury, crush, denervation, prolonged immobility, UMN lesion); skeletal muscle myopathies; known/suspected MH; pseudocholinesterase deficiency (relative); hypersensitivity",
+    "Precautions: Normal K⁺ rises ~0.5 mEq/L (safe in healthy patients); dibucaine number identifies pseudocholinesterase deficiency; defasciculation does not eliminate ↑K⁺; peds — consider rocuronium + sugammadex if unknown myopathy"
+  ],
+  "pearls": [
+    "Fastest onset NMB — gold standard for RSI when can't-intubate/can't-ventilate scenario is feared and succinylcholine not contraindicated.",
+    "HIGH-ALERT medication — ASTM fluorescent red label. Dibucaine number: normal >70; heterozygous ~60; homozygous ~20 (prolonged block). Rocuronium 1.2 mg/kg + sugammadex 16 mg/kg is a validated alternative when contraindicated."
+  ],
+  "reversal": "No pharmacologic reversal. Supportive. Dantrolene for MH. FFP for pseudocholinesterase deficiency."
+}

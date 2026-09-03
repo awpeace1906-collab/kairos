@@ -1,0 +1,48 @@
+{
+  "id": "sugammadex",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Reversal Agents",
+  "title": "Sugammadex",
+  "aliases": [
+    "Bridion"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "reversal",
+    "sugammadex"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Bridion",
+  "tallManLetters": "sugaMMAdex",
+  "drugClass": "reversal",
+  "drugClassLabel": "Reversal",
+  "mechanism": "Modified γ-cyclodextrin. Forms tight 1:1 encapsulation complex with rocuronium or vecuronium, removing them from the NMJ. No anticholinergic or cholinergic effects — works independently of AChE.",
+  "onset": "3–5 min (routine); ~3 min (high dose 16 mg/kg)",
+  "duration": "Sustained — complex is renally excreted intact",
+  "dosing": "Routine reversal (TOF ≥T2): 2 mg/kg IV\nDeep block (T1 or PTC 1–2): 4 mg/kg IV\nImmediate reversal after RSI-dose rocuronium 1.2 mg/kg: 16 mg/kg IV\nAll doses based on actual body weight",
+  "cautions": [
+    "AEs: Hypersensitivity/anaphylaxis (rare but serious); progesterone-based contraceptive interference (advise alternative for 7 days post-dose); bradycardia (rare)",
+    "CI: Hypersensitivity (severe cases including anaphylaxis reported)",
+    "Precautions: Severe renal impairment — complex accumulates; only reverses aminosteroid NMBs (rocuronium, vecuronium) — NO efficacy vs. cisatracurium or succinylcholine; re-intubation within 24h — rocuronium still works (may need higher dose)"
+  ],
+  "pearls": [
+    "Game-changer for NMB reversal — reverses even profound block in 3–5 min. Confirm TOF ratio >0.9 after reversal.",
+    "ASTM white-stripe reversal label. Female patients — advise barrier contraception for 7 days (progesterone binding). 16 mg/kg reverses 1.2 mg/kg rocuronium within 3 min of administration."
+  ],
+  "reversal": "N/A — is itself the reversal agent"
+}

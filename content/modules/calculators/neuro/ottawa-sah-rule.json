@@ -1,0 +1,150 @@
+{
+  "id": "ottawa-sah-rule",
+  "section": "Calculators",
+  "category": "Neuro / Stroke / Head Injury",
+  "title": "Ottawa SAH Rule",
+  "aliases": [
+    "Ottawa subarachnoid hemorrhage rule",
+    "SAH rule out",
+    "thunderclap headache rule"
+  ],
+  "tags": [
+    "subarachnoid hemorrhage",
+    "headache",
+    "clinical decision rule",
+    "ED",
+    "rule-out"
+  ],
+  "keywords": [
+    "age >= 40",
+    "neck pain or stiffness",
+    "witnessed loss of consciousness",
+    "onset during exertion",
+    "thunderclap headache",
+    "limited neck flexion"
+  ],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": [
+    "Perry JJ et al. JAMA 2013; Perry JJ et al. (2017 prospective validation) CMAJ"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx."
+    }
+  ],
+  "engine": "additive",
+  "settings": [
+    "ED"
+  ],
+  "purpose": "Rules OUT subarachnoid haemorrhage in alert (GCS 15) patients ≥ 15 years with a new, non-traumatic headache that reached maximum intensity within 1 hour. Highly sensitive (≈ 100%), low specificity — a screening rule, not a diagnostic one.",
+  "items": [
+    {
+      "key": "age40",
+      "label": "Age ≥ 40 years",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "neck",
+      "label": "Neck pain or stiffness (by complaint)",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "loc",
+      "label": "Witnessed loss of consciousness",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "exertion",
+      "label": "Onset during exertion",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "thunderclap",
+      "label": "Thunderclap headache (instantly peaking pain)",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "key": "neckFlexion",
+      "label": "Limited neck flexion on examination (unable to touch chin to chest or within 3 cm in patients ≥ 15 y)",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 0,
+      "max": 0,
+      "label": "No criteria met — SAH effectively excluded; no further investigation for SAH required on the basis of this rule",
+      "disposition": "SAH ruled out",
+      "severity": "low"
+    },
+    {
+      "min": 1,
+      "max": 6,
+      "label": "≥ 1 criterion present — cannot exclude SAH. Investigate: non-contrast CT head; if > 6 h from onset or CT non-diagnostic, LP (xanthochromia / RBC) or CT angiography per local pathway",
+      "disposition": "Investigate for SAH",
+      "severity": "moderate"
+    }
+  ],
+  "notes": "Apply ONLY to: age ≥ 15, GCS 15, new severe atraumatic headache peaking within 1 h. EXCLUDES patients with new neuro deficit, prior aneurysm / SAH / brain tumour, or ≥ 3 similar headaches over > 6 months (established recurrent headache disorder). A non-contrast CT within 6 h of onset, read by a qualified radiologist, is itself ~ 100% sensitive for SAH and may stand alone.",
+  "buildNote": "Rule — any positive criterion mandates workup; the count is not a graded risk."
+}

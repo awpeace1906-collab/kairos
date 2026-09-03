@@ -1,0 +1,48 @@
+{
+  "id": "ephedrine",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Vasopressors",
+  "title": "Ephedrine",
+  "aliases": [
+    "(Generic)"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "vasopressor",
+    "ephedrine"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "(Generic)",
+  "tallManLetters": "ePHEDrine",
+  "drugClass": "vasopressor",
+  "drugClassLabel": "Vasopressor",
+  "mechanism": "Non-catecholamine sympathomimetic — indirect (stimulates NE release from sympathetic terminals) + direct mild α/β agonism. ↑HR, ↑BP, ↑CO. Does NOT deplete catecholamines with acute use.",
+  "onset": "IV 1–2 min; IM 5–10 min",
+  "duration": "30–60 min",
+  "dosing": "IV bolus: 5–25 mg (titrate; start 5–10 mg)\nIM preemptive (before spinal): 25–50 mg",
+  "cautions": [
+    "AEs: Tachycardia (direct β₁ + indirect NE release), hypertension (overdose), fetal tachycardia + umbilical artery acidosis (vs. phenylephrine in OB), tachyphylaxis with repeat dosing (NE store depletion)",
+    "CI: Hyperthyroidism; severe hypertension; MAOI use; hypersensitivity",
+    "Precautions: Tachyphylaxis with repeat dosing — NE stores deplete; MAOIs → hypertensive crisis; OB setting — associated with more fetal acidosis than phenylephrine"
+  ],
+  "pearls": [
+    "Preferred over phenylephrine when bradycardia accompanies hypotension (β₁ effect maintains HR and CO). Mixed α/β — useful in anesthetic-induced vasoplegia WITH myocardial depression.",
+    "Tachyphylaxis more prominent than direct agonists — switch to epinephrine or norepinephrine if repeated boluses are losing effect."
+  ],
+  "reversal": "Phentolamine for severe hypertension"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "sofa-score",
+  "section": "Calculators",
+  "category": "Sepsis / Infectious Disease",
+  "title": "SOFA Score",
+  "aliases": ["Sequential Organ Failure Assessment", "organ dysfunction score", "sepsis-3 SOFA"],
+  "tags": ["sepsis", "organ dysfunction", "ICU", "Sepsis-3", "mortality"],
+  "keywords": ["PaO2/FiO2", "platelets", "bilirubin", "MAP vasopressors", "GCS", "creatinine urine output", "delta SOFA >= 2"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 1,
+  "sources": ["Vincent JL et al. Intensive Care Med 1996; Singer M et al. Sepsis-3, JAMA 2016 (an acute rise in SOFA ≥ 2 in suspected infection defines sepsis)"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ICU"],
+  "purpose": "Quantifies the severity of organ dysfunction across six systems (0–4 each, total 0–24). In suspected infection, an acute increase of ≥ 2 points from baseline is the Sepsis-3 definition of sepsis. Trended daily, a rising SOFA predicts mortality.",
+  "items": [
+    { "key": "resp", "label": "Respiration — PaO₂/FiO₂ (mmHg); * = with respiratory support", "options": [
+      { "label": "≥ 400", "points": 0 },
+      { "label": "< 400", "points": 1 },
+      { "label": "< 300", "points": 2 },
+      { "label": "< 200 *", "points": 3 },
+      { "label": "< 100 *", "points": 4 }
+    ] },
+    { "key": "coag", "label": "Coagulation — platelets (×10³/µL)", "options": [
+      { "label": "≥ 150", "points": 0 },
+      { "label": "< 150", "points": 1 },
+      { "label": "< 100", "points": 2 },
+      { "label": "< 50", "points": 3 },
+      { "label": "< 20", "points": 4 }
+    ] },
+    { "key": "liver", "label": "Liver — bilirubin (mg/dL)", "options": [
+      { "label": "< 1.2", "points": 0 },
+      { "label": "1.2–1.9", "points": 1 },
+      { "label": "2.0–5.9", "points": 2 },
+      { "label": "6.0–11.9", "points": 3 },
+      { "label": "≥ 12.0", "points": 4 }
+    ] },
+    { "key": "cardio", "label": "Cardiovascular — MAP / vasopressors (doses in mcg/kg/min)", "options": [
+      { "label": "MAP ≥ 70", "points": 0 },
+      { "label": "MAP < 70", "points": 1 },
+      { "label": "Dopamine < 5 or any dobutamine", "points": 2 },
+      { "label": "Dopamine 5.1–15, or epi/norepi ≤ 0.1", "points": 3 },
+      { "label": "Dopamine > 15, or epi/norepi > 0.1", "points": 4 }
+    ] },
+    { "key": "cns", "label": "CNS — Glasgow Coma Scale", "options": [
+      { "label": "15", "points": 0 },
+      { "label": "13–14", "points": 1 },
+      { "label": "10–12", "points": 2 },
+      { "label": "6–9", "points": 3 },
+      { "label": "< 6", "points": 4 }
+    ] },
+    { "key": "renal", "label": "Renal — creatinine (mg/dL) or urine output", "options": [
+      { "label": "< 1.2", "points": 0 },
+      { "label": "1.2–1.9", "points": 1 },
+      { "label": "2.0–3.4", "points": 2 },
+      { "label": "3.5–4.9, or UO < 500 mL/day", "points": 3 },
+      { "label": "≥ 5.0, or UO < 200 mL/day", "points": 4 }
+    ] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 6, "label": "Low organ dysfunction — mortality roughly < 10%", "severity": "low" },
+    { "min": 7, "max": 9, "label": "Moderate — mortality ~ 15–20%", "severity": "moderate" },
+    { "min": 10, "max": 12, "label": "High — mortality ~ 40–50%", "severity": "high" },
+    { "min": 13, "max": 24, "label": "Very high — mortality > 50–80%", "severity": "high" }
+  ],
+  "notes": "Sepsis-3: suspected/documented infection + an acute rise in total SOFA ≥ 2 (assume baseline 0 if the pre-morbid organ function is unknown) = sepsis. Septic shock = vasopressor-dependent MAP ≥ 65 + lactate > 2 mmol/L despite adequate fluid. Absolute mortality figures above are indicative, not calibrated to a specific cohort.",
+  "buildNote": "Additive, 6 domains 0–4 each. qSOFA is the separate bedside screen; this is the full ICU score."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "cows",
+  "section": "Calculators",
+  "category": "Toxicology / Withdrawal",
+  "title": "COWS (Clinical Opiate Withdrawal Scale)",
+  "aliases": ["COWS", "opioid withdrawal scale", "buprenorphine induction timing", "opiate withdrawal severity"],
+  "tags": ["opioid withdrawal", "buprenorphine", "induction", "OUD", "ED"],
+  "keywords": ["resting pulse", "sweating", "restlessness", "pupil size", "bone or joint aches", "runny nose", "GI upset", "tremor", "yawning", "anxiety", "gooseflesh", "COWS >= 8-12 for buprenorphine"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 1,
+  "sources": ["Wesson DR, Ling W. J Psychoactive Drugs 2003; ASAM / SAMHSA buprenorphine induction guidance"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Objectifies opioid withdrawal severity (11 items, total 0–48). Its main use is timing buprenorphine induction — enough withdrawal must be present (typically COWS ≥ 8, many protocols ≥ 12) so that buprenorphine does not precipitate withdrawal.",
+  "items": [
+    { "key": "pulse", "label": "Resting pulse rate (after 1 min sitting)", "options": [{ "label": "≤ 80", "points": 0 }, { "label": "81–100", "points": 1 }, { "label": "101–120", "points": 2 }, { "label": "> 120", "points": 4 }] },
+    { "key": "sweating", "label": "Sweating (past 30 min, not from room temperature / activity)", "options": [{ "label": "No report of chills or flushing", "points": 0 }, { "label": "Subjective chills or flushing", "points": 1 }, { "label": "Flushed or observable moistness on face", "points": 2 }, { "label": "Beads of sweat on brow or face", "points": 3 }, { "label": "Sweat streaming off face", "points": 4 }] },
+    { "key": "restlessness", "label": "Restlessness (during assessment)", "options": [{ "label": "Able to sit still", "points": 0 }, { "label": "Reports difficulty sitting still, but able to", "points": 1 }, { "label": "Frequent shifting or extraneous limb movements", "points": 3 }, { "label": "Unable to sit still for more than a few seconds", "points": 5 }] },
+    { "key": "pupil", "label": "Pupil size", "options": [{ "label": "Pinned or normal for room light", "points": 0 }, { "label": "Possibly larger than normal for room light", "points": 1 }, { "label": "Moderately dilated", "points": 2 }, { "label": "So dilated that only the rim of the iris is visible", "points": 5 }] },
+    { "key": "aches", "label": "Bone or joint aches (if withdrawal is the cause)", "options": [{ "label": "Not present", "points": 0 }, { "label": "Mild diffuse discomfort", "points": 1 }, { "label": "Severe diffuse aching of joints / muscles", "points": 2 }, { "label": "Rubbing joints or muscles, unable to sit still from discomfort", "points": 4 }] },
+    { "key": "rhinorrhea", "label": "Runny nose or tearing (not from cold / allergies)", "options": [{ "label": "Not present", "points": 0 }, { "label": "Nasal stuffiness or unusually moist eyes", "points": 1 }, { "label": "Nose running or tearing", "points": 2 }, { "label": "Nose constantly running or tears streaming", "points": 4 }] },
+    { "key": "gi", "label": "GI upset (past 30 min)", "options": [{ "label": "No GI symptoms", "points": 0 }, { "label": "Stomach cramps", "points": 1 }, { "label": "Nausea or loose stool", "points": 2 }, { "label": "Vomiting or diarrhoea", "points": 3 }, { "label": "Multiple episodes of vomiting / diarrhoea", "points": 5 }] },
+    { "key": "tremor", "label": "Tremor (observation of outstretched hands)", "options": [{ "label": "No tremor", "points": 0 }, { "label": "Tremor felt but not observed", "points": 1 }, { "label": "Slight tremor observable", "points": 2 }, { "label": "Gross tremor or muscle twitching", "points": 4 }] },
+    { "key": "yawning", "label": "Yawning (during assessment)", "options": [{ "label": "None", "points": 0 }, { "label": "Yawning once or twice", "points": 1 }, { "label": "Yawning ≥ 3 times", "points": 2 }, { "label": "Yawning several times per minute", "points": 4 }] },
+    { "key": "anxiety", "label": "Anxiety or irritability", "options": [{ "label": "None", "points": 0 }, { "label": "Patient reports increasing irritability or anxiousness", "points": 1 }, { "label": "Obviously irritable or anxious", "points": 2 }, { "label": "So irritable / anxious that participation is difficult", "points": 4 }] },
+    { "key": "gooseflesh", "label": "Gooseflesh skin", "options": [{ "label": "Skin smooth", "points": 0 }, { "label": "Piloerection can be felt or hairs standing up on the arms", "points": 3 }, { "label": "Prominent piloerection", "points": 5 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 4, "label": "No / minimal withdrawal", "severity": "low" },
+    { "min": 5, "max": 12, "label": "Mild withdrawal — generally too early for a first buprenorphine dose in a standard protocol (some ED protocols start at ≥ 8)", "severity": "moderate" },
+    { "min": 13, "max": 24, "label": "Moderate withdrawal — appropriate to begin buprenorphine induction (e.g. 4–8 mg SL, then reassess)", "severity": "moderate" },
+    { "min": 25, "max": 36, "label": "Moderately severe withdrawal — buprenorphine induction; higher first dose reasonable", "severity": "high" },
+    { "min": 37, "max": 48, "label": "Severe withdrawal", "severity": "high" }
+  ],
+  "notes": "Precipitated withdrawal risk is highest with methadone or a fentanyl-heavy supply (fentanyl body stores). 'High-dose' or 'macro-dose' buprenorphine induction and low-dose (Bernese) micro-induction are alternatives when the standard approach is difficult — use a local protocol. Treat symptoms symptomatically in the meantime (clonidine, ondansetron, loperamide, an NSAID).",
+  "buildNote": "Additive, 11 items. Score range 0–48."
+}

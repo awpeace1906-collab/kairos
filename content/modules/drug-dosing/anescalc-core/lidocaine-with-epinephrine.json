@@ -1,0 +1,50 @@
+{
+  "id": "lidocaine-with-epinephrine",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Local Anesthetics",
+  "title": "Lidocaine with Epinephrine",
+  "aliases": [
+    "Xylocaine with Epi"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "local",
+    "lidocaine",
+    "with",
+    "epinephrine"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Xylocaine with Epi",
+  "drugClass": "local",
+  "drugClassLabel": "Local Anesthetic",
+  "mechanism": "Lidocaine + epinephrine (typically 1:100,000 = 10 mcg/mL or 1:200,000 = 5 mcg/mL). Epinephrine causes local vasoconstriction: reduces systemic LA absorption, prolongs block duration, and serves as intravascular injection marker.",
+  "onset": "Similar to plain but slightly faster due to reduced washout",
+  "duration": "Infiltration: 2–4 hours (2× plain). Epidural: 90–120 min.",
+  "dosing": "Max dose: 7 mg/kg lidocaine with epi (500 mg absolute max). Standard: 1% or 2% lido + 1:100,000 epi. Test dose: 3 mL of 1.5% lido + 1:200,000 epi (45 mg lido + 15 mcg epi).",
+  "cautions": [
+    "Do NOT use in end-artery territories: digits, penis, nose, ear tip — ischemic necrosis risk",
+    "Avoid in patients on non-selective beta-blockers — unopposed alpha → hypertension",
+    "Cardiac arrhythmias from systemic epi absorption — most problematic under volatile anesthesia",
+    "Intravascular injection of epi component → tachycardia/hypertension — monitor as test dose response"
+  ],
+  "pearls": [
+    "Epinephrine test dose: IV injection marker — HR increase >20 bpm within 60s suggests intravascular placement",
+    "Extends infiltration duration 2–4× vs. plain lidocaine",
+    "Alkalinization: add 1 mL of 8.4% NaHCO₃ per 10 mL of lido/epi to shorten onset by 2–3 min"
+  ]
+}

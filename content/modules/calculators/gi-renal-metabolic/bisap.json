@@ -1,0 +1,29 @@
+{
+  "id": "bisap",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "BISAP Score",
+  "aliases": ["bedside index severity acute pancreatitis", "BISAP"],
+  "tags": ["pancreatitis", "severity", "mortality", "ED"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Wu BU et al. Gut 2008"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry from Calculator_Logic_Build_Spec.md." }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Acute pancreatitis mortality risk usable within the first 24 hours — faster than Ranson's (which needs 48-hour labs). Uses SIRS as a sub-component.",
+  "items": [
+    { "key": "bun", "label": "BUN > 25 mg/dL", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "mental", "label": "Impaired mental status", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "sirs", "label": "SIRS ≥ 2 criteria (see the SIRS calculator)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "age", "label": "Age > 60", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "effusion", "label": "Pleural effusion on imaging", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 2, "label": "Lower risk", "risk": "Mortality < 2%", "severity": "low" },
+    { "min": 3, "max": 5, "label": "Higher risk", "risk": "Mortality substantially higher (~ 5-20%, rising with score)", "disposition": "Consider ICU-level care; aggressive early fluid resuscitation and close monitoring", "severity": "high" }
+  ]
+}

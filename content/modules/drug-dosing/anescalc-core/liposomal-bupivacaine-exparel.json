@@ -1,0 +1,50 @@
+{
+  "id": "liposomal-bupivacaine-exparel",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Local Anesthetics",
+  "title": "Liposomal Bupivacaine (Exparel)",
+  "aliases": [
+    "Exparel"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "local",
+    "liposomal",
+    "bupivacaine",
+    "exparel"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Exparel",
+  "drugClass": "local",
+  "drugClassLabel": "Local Anesthetic",
+  "mechanism": "Bupivacaine encapsulated in multivesicular DepoFoam lipid particles. Slow, sustained release over 72h as lipid layers erode. Provides prolonged local tissue analgesia.",
+  "onset": "Initial release within 30 min; sustained release 24–72h",
+  "duration": "Up to 72h (local infiltration); 24–48h (some nerve block indications)",
+  "dosing": "Infiltration: 266 mg (20 mL) diluted with up to 280 mL NS. Interscalene: 133 mg (10 mL) diluted. TAP block: 266 mg (20 mL). NOT for spinal or epidural. Do NOT mix with bupivacaine HCl — accelerates release.",
+  "cautions": [
+    "High cost — justify with anticipated analgesic benefit vs. multimodal alternatives",
+    "NOT for neuraxial (intrathecal/epidural) — not approved, potentially neurotoxic",
+    "Same LAST toxicity profile as bupivacaine — monitor accordingly",
+    "Do NOT add epinephrine (increases release rate, reduces duration)"
+  ],
+  "pearls": [
+    "Best evidence for infiltration analgesia in hip arthroplasty, bunionectomy, hemorrhoidectomy, C-section wound infiltration",
+    "TAP block application popular for abdominal surgery opioid-sparing — no catheter required",
+    "Insurance/cost often limit use — ensure prior authorization in elective settings"
+  ]
+}

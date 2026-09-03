@@ -124,6 +124,7 @@ struct HomeView: View {
                         }
                     }
                 }
+                .accessibilityIdentifier("section-tile-\(s.id)")
             }
         }
     }

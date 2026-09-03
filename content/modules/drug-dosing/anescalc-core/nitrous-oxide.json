@@ -1,0 +1,49 @@
+{
+  "id": "nitrous-oxide",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Volatile Anesthetics",
+  "title": "Nitrous Oxide",
+  "aliases": [
+    "N₂O"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "volatile",
+    "nitrous",
+    "oxide"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "N₂O",
+  "tallManLetters": "nitrous OXIDE",
+  "drugClass": "volatile",
+  "drugClassLabel": "Volatile",
+  "mechanism": "Inorganic gaseous anesthetic. Non-competitive NMDA antagonist; minimal GABA-A effect; endogenous opioid release (midbrain). Oil/gas λ ~1.4 — inherently weak anesthetic (MAC 104% at 40 yr).",
+  "onset": "Very rapid — blood/gas λ = 0.47",
+  "duration": "Rapid offset; diffusion hypoxia risk on emergence (give 100% O₂ for 5 min)",
+  "dosing": "Co-induction adjunct: 50–70% with O₂ + volatile\nGA adjunct (MAC-sparing): 50–70% with O₂\nLabor analgesia: 50% N₂O / 50% O₂\nProcedural sedation: 25–50% with O₂",
+  "cautions": [
+    "AEs: PONV (↑ vs. air), diffusion hypoxia on emergence, expansion of gas-containing spaces, inactivates vitamin B12/methionine synthase (prolonged use)",
+    "CI: Pneumothorax, bowel obstruction, pneumocephalus, middle ear surgery, vitamin B12 deficiency, prolonged use (homocystinuria risk)",
+    "Precautions: MAC = 104% at age 40 — cannot produce surgical anesthesia at 1 atm alone; second gas effect accelerates uptake of co-administered volatile; PONV risk — avoid in high-risk patients"
+  ],
+  "pearls": [
+    "Halves MAC of volatile agent when combined 50:50. Classic teaching: NOT safe in any closed gas space (pneumothorax, ileus, pneumocephalus).",
+    "Diffusion hypoxia on emergence — always administer 100% O₂ for ≥5 min when discontinuing N₂O."
+  ],
+  "reversal": "100% O₂ for diffusion hypoxia"
+}

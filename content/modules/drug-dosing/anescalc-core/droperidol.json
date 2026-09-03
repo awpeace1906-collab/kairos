@@ -1,0 +1,48 @@
+{
+  "id": "droperidol",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Antiemetics",
+  "title": "Droperidol",
+  "aliases": [
+    "Inapsine"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "antiemetic",
+    "droperidol"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Inapsine",
+  "tallManLetters": "DROPeridol",
+  "drugClass": "antiemetic",
+  "drugClassLabel": "Antiemetic",
+  "mechanism": "Butyrophenone D₂ dopamine receptor antagonist at the chemoreceptor trigger zone (CTZ) → antiemetic. Also α₁ blockade → vasodilation/hypotension.",
+  "onset": "3–10 min",
+  "duration": "3–6h",
+  "dosing": "Adult PONV prophylaxis: 0.625–1.25 mg IV at end of case\nPeds PONV prophylaxis: 0.01–0.015 mg/kg IV (MAX 1.25 mg)\nPONV rescue: 0.625 mg IV",
+  "cautions": [
+    "AEs: QTc prolongation (FDA BLACK BOX WARNING — 12-lead ECG monitoring required), extrapyramidal symptoms (dystonia, akathisia), neuroleptic malignant syndrome (rare), hypotension",
+    "CI: Hypersensitivity; known/suspected QT prolongation; Parkinson's disease; pheochromocytoma",
+    "Precautions: Black Box for QTc — controversial at low antiemetic doses (risk comparable to ondansetron 4 mg); Class I/III antiarrhythmics; hypokalemia/hypomagnesemia; age >65; NMS monitoring"
+  ],
+  "pearls": [
+    "Highly effective at low antiemetic doses (0.625 mg) despite the 2001 FDA Black Box (which is widely considered excessive for antiemetic dosing by experts).",
+    "Combined with ondansetron for multimodal PONV prophylaxis in high-risk patients. Still considered a standard component of PONV prevention protocols at many institutions."
+  ],
+  "reversal": "Diphenhydramine or benztropine for EPS; supportive for NMS"
+}

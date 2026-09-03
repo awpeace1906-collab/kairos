@@ -1,0 +1,34 @@
+{
+  "id": "canadian-ct-head",
+  "section": "Calculators",
+  "category": "Neuro / Stroke / Head Injury",
+  "title": "Canadian CT Head Rule",
+  "aliases": ["CCHR", "Canadian CT head rule", "minor head injury CT", "head CT decision rule"],
+  "tags": ["head injury", "CT head", "clinical decision rule", "ED", "rule-out"],
+  "keywords": ["GCS < 15 at 2 hours", "suspected open or depressed skull fracture", "signs of basal skull fracture", "vomiting >= 2 episodes", "age >= 65", "amnesia before impact >= 30 min", "dangerous mechanism"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Stiell IG et al. Lancet 2001; Stiell IG et al. JAMA 2005 (validation)"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Identifies which adults with minor head injury (witnessed LOC, amnesia, or disorientation AND a GCS of 13–15) need a CT head. It is 100% sensitive for neurosurgically important injury and ~98–100% sensitive for any clinically important injury. Any positive item = CT.",
+  "items": [
+    { "key": "gcs2h", "label": "HIGH RISK — GCS < 15 at 2 hours after injury", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "openDepressed", "label": "HIGH RISK — Suspected open or depressed skull fracture", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "basalFx", "label": "HIGH RISK — Any sign of basal skull fracture (haemotympanum, raccoon eyes, CSF oto/rhinorrhoea, Battle's sign)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "vomiting", "label": "HIGH RISK — Vomiting ≥ 2 episodes", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "age65", "label": "HIGH RISK — Age ≥ 65 years", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "amnesia", "label": "MEDIUM RISK — Retrograde amnesia to the event ≥ 30 minutes", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "mechanism", "label": "MEDIUM RISK — Dangerous mechanism (pedestrian struck, occupant ejected, fall from > 3 ft / 5 stairs)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "No criteria — CT head not required by the rule. Observe, give head-injury discharge advice, and use clinical judgement (the rule was NOT derived for patients on anticoagulants — image them regardless)", "disposition": "CT not required", "severity": "low" },
+    { "min": 1, "max": 7, "label": "≥ 1 criterion — obtain a non-contrast CT head. A HIGH-RISK criterion predicts need for neurosurgical intervention; a MEDIUM-RISK criterion predicts a clinically important brain injury on CT", "disposition": "CT head", "severity": "moderate" }
+  ],
+  "notes": "Inclusion: blunt head trauma with witnessed LOC, definite amnesia, or witnessed disorientation, AND initial GCS 13–15, AND injury within 24 h. EXCLUSIONS (rule does not apply — use judgement / image): age < 16, anticoagulation or bleeding disorder, seizure after injury, GCS < 13, no LOC/amnesia/disorientation, obvious penetrating trauma or depressed fracture, acute focal neuro deficit, unstable vitals, pregnancy. Compared with the New Orleans Criteria, CCHR is more specific (fewer CTs) at equal sensitivity for important injury.",
+  "buildNote": "Rule — any positive item mandates CT; the count is not a graded risk."
+}

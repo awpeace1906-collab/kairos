@@ -20,6 +20,20 @@ struct AboutView: View {
 
                 Text("Most of what’s genuinely useful at the bedside is scattered across a dozen or more single-purpose apps — one for suture technique, another for peds resuscitation dosing, another for a handful of calculators. Finding the right one costs time. Kairos puts that content in one place, organized around how a shift actually runs across the ED, ICU, and OR — not around which developer happened to build which tool first.")
 
+                Text("The mark").font(.title3.bold()).padding(.top, 6)
+
+                Text("The Kairos icon is a broken ring — not a closed circle. A closed circle would read as completeness or ordinary clock-time; leaving it open at one point is the whole idea. This isn’t *chronos*, time as an unbroken loop, but *kairos* — the one place in that loop where the boundary gives way and something can happen.")
+
+                Text("**The ring** is the passage of ordinary time — the routine of a shift: steady, circular, mostly unremarkable. It’s amber rather than a cooler colour because this is lived, active time, not a countdown.")
+
+                Text("**The gap** is the subject of the icon. Not damage, not an error — a deliberate opening. In the myth, Kairos is bald but for a single forelock: graspable only in the instant he is in front of you, gone the moment he has passed. The gap is that idea drawn geometrically — a window that exists, briefly, and then doesn’t.")
+
+                Text("**The coral spike bridging the gap** is the decisive act: the intervention, the diagnosis made in time, the dose given at the right second. It sits inside the opening, not floating apart — the mark only resolves as a completed circuit, action fused to opportunity. Warm red against the amber gives it urgency without becoming an alarm; this is a reference tool, not a crash-cart siren.")
+
+                Text("**The bright dot at the tip** is the point of contact — a struck match, a closed switch. It is the one high-saturation element in the mark, so the eye lands there first: that point is the moment the name refers to.")
+
+                Text("At a glance it reads simply as a spark breaking through a ring — a moment of ignition. If you know the Greek, there is a second layer underneath.")
+
                 Text("Kairos v0.1.0").font(.footnote).foregroundStyle(.secondary).padding(.top, 8)
             }
             .padding()

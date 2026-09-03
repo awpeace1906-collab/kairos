@@ -6,12 +6,15 @@
   "aliases": ["Wells DVT", "DVT pretest probability", "leg swelling risk"],
   "tags": ["deep vein thrombosis", "leg swelling", "d-dimer", "ED"],
   "contentType": "calculator",
-  "content_version": 1,
-  "last_reviewed": "2026-08-31",
-  "next_review_due": "2026-11-30",
+  "content_version": 2,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
   "review_tier": 1,
-  "sources": ["Wells PS et al. Lancet 1997; NEJM 2003"],
-  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }],
+  "sources": ["Wells PS et al. Lancet 1997;350:1795-8", "Wells PS et al. NEJM 2003;349:1227-35"],
+  "changelog": [
+    { "version": 2, "date": "2026-09-01", "change": "Tier 1 verification: item weights and 3-tier bands confirmed. Added the modified 2-tier reading (≤ 1 'DVT unlikely' → D-dimer; ≥ 2 'DVT likely' → ultrasound)." },
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }
+  ],
   "engine": "additive",
   "settings": ["ED"],
   "purpose": "Pretest probability of lower-extremity DVT; the leg counterpart to Wells PE. Drives D-dimer vs. compression ultrasound.",
@@ -28,8 +31,9 @@
     { "key": "altDx", "label": "Alternative diagnosis at least as likely as DVT", "options": [{ "label": "No", "points": 0 }, { "label": "Yes (subtract 2)", "points": -2 }] }
   ],
   "interpretation": [
-    { "min": -2, "max": 0, "label": "Low probability", "risk": "~5%", "disposition": "D-dimer; if negative, DVT excluded", "severity": "low" },
-    { "min": 1, "max": 2, "label": "Moderate probability", "risk": "~17%", "disposition": "High-sensitivity D-dimer or ultrasound", "severity": "moderate" },
-    { "min": 3, "max": 9, "label": "High probability", "risk": "~53%", "disposition": "Compression ultrasound", "severity": "high" }
-  ]
+    { "min": -2, "max": 0, "label": "Low probability (3-tier)", "risk": "~5%", "disposition": "D-dimer; if negative, DVT excluded", "severity": "low" },
+    { "min": 1, "max": 2, "label": "Moderate probability (3-tier)", "risk": "~17%", "disposition": "High-sensitivity D-dimer or ultrasound", "severity": "moderate" },
+    { "min": 3, "max": 9, "label": "High probability (3-tier)", "risk": "~53%", "disposition": "Compression ultrasound", "severity": "high" }
+  ],
+  "notes": "Modified 2-tier reading: ≤ 1 = 'DVT unlikely' → high-sensitivity D-dimer (negative rules out); ≥ 2 = 'DVT likely' → proximal compression ultrasound. The app should show both the 3-tier band and the dichotomized call."
 }

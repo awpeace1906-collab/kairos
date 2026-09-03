@@ -1,0 +1,82 @@
+{
+  "id": "sedation-analgesia-agents",
+  "section": "Reference Library",
+  "category": "Perioperative & Anesthesia",
+  "title": "Sedation & Analgesia Agents",
+  "aliases": ["ketamine dosing", "propofol dosing", "PRIS", "propofol infusion syndrome", "dexmedetomidine SPICE III", "remimazolam Byfavo", "ciprofol", "procedural sedation agents", "ICU sedation agents"],
+  "tags": ["sedation", "analgesia", "ketamine", "propofol", "dexmedetomidine", "remimazolam", "PRIS", "procedural sedation", "ICU sedation", "TIVA", "anesthesia", "ED", "ICU", "OR"],
+  "keywords": ["sub-dissociative ketamine 0.1-0.3 mg/kg", "propofol 1-2.5 mg/kg", "PRIS metabolic acidosis", "SPICE III NNH 43", "remimazolam flumazenil reversal", "ketamine ICP myth", "ciprofol"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — Ketamine & Propofol Clinical Pharmacology (+ PRIS, ciprofol)",
+    "Critical Vector — Remimazolam pocket reference (FDA / Byfavo label + Japan/Korea regimens)",
+    "SPICE III (Shehabi Y et al. NEJM 2019) — dexmedetomidine as primary early sedative",
+    "Green SM et al. ED ketamine clinical practice guideline; RSI trial (ketamine vs etomidate, NEJM Dec 2025)"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — management-oriented agent reference: ketamine, propofol (+ PRIS + ciprofol), dexmedetomidine (SPICE III), remimazolam. Dose ranges, hemodynamics, indication/caution, reversal." }],
+  "summary": "Dose, hemodynamic profile, and the one decision that matters for each agent. Ketamine preserves drive and (indirectly) BP but is not hemodynamically free in true shock. Propofol drops BP 25–40% on induction and carries PRIS risk on prolonged infusion. Dexmedetomidine can't sedate an agitated patient alone. Remimazolam is US-labelled for short procedural sedation only — and is reversible.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Ketamine — doses by indication" },
+    { "type": "table",
+      "columns": ["Indication", "Dose"],
+      "rows": [
+        ["Induction (GA)", "0.5–2 mg/kg IV · 4–6 mg/kg IM"],
+        ["RSI / procedural sedation", "1–2 mg/kg IV over 60 s · 4–6 mg/kg IM"],
+        ["Sub-dissociative analgesia", "0.1–0.3 mg/kg IV over 15 min — pain relief without full dissociation"],
+        ["Multimodal / opioid-sparing", "0.15–0.5 mg/kg IV at induction — cuts postop opioid use ~33%"],
+        ["ICU adjunct sedation", "0.1–0.5 mg/kg/hr infusion alongside standard analgosedation"],
+        ["Antidepressant infusion", "0.5 mg/kg IV over 40 min — effect within hours, lasting 3–12 days"]
+      ]
+    },
+    { "type": "list", "items": [
+      "Hemodynamics: indirect sympathomimetic (↑ BP, HR, CO) with a direct myocardial depressant effect UNMASKED in catecholamine-depleted shock. RSI trial: CV collapse 22% (ketamine) vs 17% (etomidate); sepsis subgroup 31% vs 21%; no mortality difference — optimise vasopressors before pushing it.",
+      "Respiratory drive largely preserved (apnoea only with large rapid boluses); bronchodilator — dual benefit in bronchospasm. Hypersalivation → glycopyrrolate 0.005 mg/kg or atropine 0.01 mg/kg.",
+      "Cataleptic state does NOT reliably protect the airway against aspiration.",
+      "Myths corrected: ketamine does NOT raise ICP in sedated/ventilated patients (the old contraindication traces to 1970s obstructive-hydrocephalus case series — obstructive hydrocephalus is the only surviving CNS contraindication). Open-globe injury is NOT a contraindication (no meaningful IOP rise at clinical doses).",
+      "Real contraindications: conditions where a BP surge is hazardous (aortic dissection, uncontrolled hypertension, acute MI as sole agent, aneurysm); prior hypersensitivity. Cautions: thyrotoxicosis, ischaemic heart disease as sole agent, active psychosis / prior severe emergence reaction.",
+      "Chronic recreational use: ketamine uropathy (bladder fibrosis, hydronephrosis) in ~25% of long-term users after > 1 year — only intervention is cessation. Not on a standard UDS."
+    ] },
+
+    { "type": "heading", "level": 2, "text": "Propofol — doses & profile" },
+    { "type": "table",
+      "columns": ["Indication", "Dose"],
+      "rows": [
+        ["Induction (GA)", "1–2.5 mg/kg IV (reduce with age — elderly/ASA III–IV ~1 mg/kg, roughly half)"],
+        ["Maintenance (GA / TIVA)", "50–150 mcg/kg/min (+ opioid/N2O); TIVA 100–200 mcg/kg/min"],
+        ["Sedation", "25–75 mcg/kg/min (amnesia reliable above ~30 mcg/kg/min)"],
+        ["Antiemetic", "10–20 mg IV q5–10 min, or 10 mcg/kg/min infusion"]
+      ]
+    },
+    { "type": "list", "items": [
+      "Hemodynamics: arterial BP falls 25–40% on induction (mostly vasodilation + some myocardial depression); HR largely unchanged (baroreflex blunted). Effect-site lag ~7 min — hypotension DEEPENS after loss of consciousness. Worse in elderly, ASA III–IV, hypovolaemia, and with opioids.",
+      "Respiratory: apnoea in 25–30% after an induction dose. Bronchodilator. Reduce ICP 30–50% but also drops CPP — in head injury keep to mild–moderate sedation (~25–75 mcg/kg/min).",
+      "Reach for it: rapid clear-headed induction with antiemetic recovery, TIVA / TCI, ICU sedation with fast wake-up for neuro checks, status epilepticus (potent anticonvulsant), raised ICP.",
+      "Caution / avoid: hemodynamically fragile / critically ill (independent risk factor for peri-intubation collapse — prefer ketamine or etomidate); pain on injection (large vein, add lidocaine); prolonged/high-dose infusion (hypertriglyceridaemia, pancreatitis, PRIS)."
+    ] },
+    { "type": "heading", "level": 3, "text": "Propofol infusion syndrome (PRIS)" },
+    { "type": "callout", "tone": "danger", "text": "PRIS = metabolic acidosis + cardiac dysfunction PLUS at least one of rhabdomyolysis, hypertriglyceridaemia, or renal failure. Mortality > 30–50% once established. Can occur BELOW the quoted dose thresholds. Risk: infusion > 48 h (median onset ~125 h), dose > 4–5 mg/kg/hr (> 83 mcg/kg/min), critical illness, concurrent vasopressors / corticosteroids, children, low-carbohydrate states. First and most reliable signal: unexplained worsening metabolic acidosis. Also: new dysrhythmia, RBBB, Brugada-like ST elevation V1–V3, bradycardia → AV block; rhabdomyolysis, tea-coloured urine. Management: (1) STOP propofol — the only definitive step; switch to midazolam / dexmedetomidine / ketamine / volatile. (2) Supportive — fluids, pressors/inotropes, RRT for AKI, treat hyperkalaemia, continuous cardiac monitoring. (3) Bicarbonate for severe acidosis; early ECMO for refractory cardiogenic collapse." },
+    { "type": "text", "text": "Ciprofol (HSK3486): a cyclopropyl propofol analog — effective dose ~1/4–1/5 of propofol (induction 0.35–0.4 mg/kg), a significantly SMALLER hemodynamic drop (max MAP fall < 20%), much less injection pain, fewer airway interventions. Same pharmacologic family — all PRIS-risk and dosing principles apply by extension; dedicated ciprofol PRIS data does not yet exist at scale." },
+
+    { "type": "heading", "level": 2, "text": "Dexmedetomidine" },
+    { "type": "list", "items": [
+      "Load 1 mcg/kg over 10 min, then 0.2–0.7 mcg/kg/hr. Anxiolysis + analgesia-sparing + antisialagogue with minimal respiratory depression — its niche is a cooperative, arousable sedation (awake intubation, light ICU sedation, opioid-sparing).",
+      "SPICE III (n=3,904 ventilated ICU adults, dexmedetomidine as PRIMARY early sedative vs usual care): 90-day mortality identical (29.1% vs 29.1%). It could NOT do the job alone — 64.7% still needed supplemental propofol. Modest wins: +1 day free of coma/delirium and +1 ventilator-free day at 28 days (both unadjusted for multiplicity — hypothesis-generating).",
+      "The cost: NNH 43 for a serious adverse event — serious bradycardia, hypotension, and prolonged sinus arrest all significantly elevated. Put that number next to the '+1 day' headline. Age flipped the result — younger patients did worse, older patients better.",
+      "Bottom line: an adjunct / light-sedation agent, not a stand-alone sedative for a genuinely agitated ventilated patient; watch the heart rate."
+    ] },
+
+    { "type": "heading", "level": 2, "text": "Remimazolam (Byfavo)" },
+    { "type": "list", "items": [
+      "Ultra-short-acting benzodiazepine, metabolised by tissue esterases (not liver/kidney) to an inactive metabolite — short context-sensitive half-time, predictable fast recovery even after longer infusions. Less hypotension than propofol.",
+      "US FDA label: procedural sedation for procedures ≤ 30 min ONLY. Standard adult 5 mg IV over 1 min, then 2.5 mg IV over 15 s no sooner than q2 min. ASA III/IV or frail/elderly: 2.5–5 mg initial, 1.25–2.5 mg supplemental.",
+      "GA induction/maintenance (6–12 mg/kg/hr until LOC, then 1–2 mg/kg/hr) and ICU sedation are OFF-LABEL in the US (from Japan/Korea approvals).",
+      "Reversible with FLUMAZENIL — a genuine safety advantage over propofol. Watch for re-sedation after reversal. Severe hepatic impairment still slows clearance somewhat despite the esterase pathway."
+    ] }
+  ],
+  "related": ["physiologically-difficult-airway", "awake-intubation", "procedural-sedation-workflow", "peds-ketamine-rsi", "capnography"],
+  "buildNote": "Tier 1. Etomidate and the volatile agents are covered in the AnesCalc anesthesia-drug-card set. `CV_ketamine-drip-pcc..html` (ketamine PCA / drip protocols) could extend the ketamine section."
+}

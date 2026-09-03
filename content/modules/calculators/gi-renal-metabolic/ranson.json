@@ -1,0 +1,40 @@
+{
+  "id": "ranson",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "Ranson's Criteria (Acute Pancreatitis)",
+  "aliases": ["Ranson", "Ranson score", "pancreatitis severity", "pancreatitis mortality"],
+  "tags": ["acute pancreatitis", "severity", "mortality", "ICU", "ED"],
+  "keywords": ["age", "WBC", "glucose", "AST", "LDH", "calcium", "hematocrit drop", "BUN rise", "base deficit", "fluid sequestration", "PaO2"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Ranson JH et al. Surg Gynecol Obstet 1974; ACG 2013 acute pancreatitis guideline"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx. Non-gallstone (original) criteria." }],
+  "engine": "additive",
+  "settings": ["ED", "ICU"],
+  "purpose": "Predicts mortality in acute pancreatitis. Five criteria are assessed at admission and six more at 48 hours — the score is only complete at 48 h, which is its main practical limitation. BISAP or the APACHE II / persistent SIRS are more useful early. Use Ranson as a 48-h severity checkpoint.",
+  "items": [
+    { "key": "ageAdm", "label": "ADMISSION — Age > 55 years", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "wbcAdm", "label": "ADMISSION — WBC > 16 ×10⁹/L", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "glucoseAdm", "label": "ADMISSION — Glucose > 200 mg/dL (11.1 mmol/L)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "astAdm", "label": "ADMISSION — AST > 250 U/L", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "ldhAdm", "label": "ADMISSION — LDH > 350 U/L", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "hctDrop", "label": "48 HOURS — Haematocrit fall > 10 percentage points", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "bunRise", "label": "48 HOURS — BUN rise > 5 mg/dL (1.8 mmol/L) despite fluids", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "calcium", "label": "48 HOURS — Serum calcium < 8 mg/dL (2.0 mmol/L)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "pao2", "label": "48 HOURS — PaO2 < 60 mmHg", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "baseDeficit", "label": "48 HOURS — Base deficit > 4 mEq/L", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "fluidSeq", "label": "48 HOURS — Fluid sequestration > 6 L", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 2, "label": "Mortality ~ 0–3%. Predicted mild course — ward care, aggressive early goal-directed crystalloid, early enteral feeding as tolerated, analgesia, treat the cause", "severity": "low" },
+    { "min": 3, "max": 4, "label": "Mortality ~ 15%. Predicted severe pancreatitis — HDU/ICU-level monitoring, meticulous fluid resuscitation with frequent reassessment, watch for organ failure and local complications", "severity": "high" },
+    { "min": 5, "max": 6, "label": "Mortality ~ 40%. Severe — ICU, organ support, early involvement of a pancreatitis / surgical team; CT with contrast at 72–96 h if not improving", "severity": "high" },
+    { "min": 7, "max": 11, "label": "Mortality ~ 100% in the original series. Critical illness — full organ support, goals-of-care discussion", "severity": "high" }
+  ],
+  "notes": "Gallstone-pancreatitis cutoffs differ (age > 70, WBC > 18, glucose > 220, AST > 250, LDH > 400; 48-h: Hct fall > 10, BUN rise > 2, Ca < 8, base deficit > 5, fluid sequestration > 4 L; no PaO2). Persistent organ failure beyond 48 h (Revised Atlanta 'moderately severe / severe') is the modern determinant of outcome — do not wait for a Ranson score to escalate a deteriorating patient.",
+  "buildNote": "Additive, 11 criteria × 1 point (5 admission + 6 at 48 h). Original non-gallstone thresholds."
+}

@@ -1,0 +1,33 @@
+{
+  "id": "bode-index",
+  "section": "Calculators",
+  "category": "Pulmonary / PE / DVT / Resp Failure",
+  "title": "BODE Index (COPD Prognosis)",
+  "aliases": ["BODE", "COPD mortality index", "BODE score", "COPD prognosis"],
+  "tags": ["COPD", "prognosis", "mortality", "pulmonary rehabilitation", "lung transplant referral"],
+  "keywords": ["BMI", "FEV1 percent predicted", "mMRC dyspnea scale", "6-minute walk distance", "COPD 4-year survival"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Celli BR et al. NEJM 2004"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ICU"],
+  "purpose": "A multidimensional index (Body-mass index, airflow Obstruction, Dyspnoea, Exercise capacity) that predicts all-cause and respiratory mortality in COPD better than FEV1 alone. Used to time pulmonary rehabilitation, escalate therapy, and trigger lung transplant / palliative-care referral discussions. This is an outpatient/chronic-care tool — not for acute exacerbation triage.",
+  "items": [
+    { "key": "fev1", "label": "FEV1 (% predicted, post-bronchodilator)", "options": [{ "label": "≥ 65%", "points": 0 }, { "label": "50–64%", "points": 1 }, { "label": "36–49%", "points": 2 }, { "label": "≤ 35%", "points": 3 }] },
+    { "key": "sixMwd", "label": "6-minute walk distance", "options": [{ "label": "≥ 350 m", "points": 0 }, { "label": "250–349 m", "points": 1 }, { "label": "150–249 m", "points": 2 }, { "label": "≤ 149 m", "points": 3 }] },
+    { "key": "mmrc", "label": "mMRC dyspnoea scale", "options": [{ "label": "0–1 — breathless on strenuous exertion / hurrying", "points": 0 }, { "label": "2 — walks slower than peers, or stops for breath walking at own pace", "points": 1 }, { "label": "3 — stops for breath after ~100 m or a few minutes on the level", "points": 2 }, { "label": "4 — too breathless to leave the house / breathless dressing", "points": 3 }] },
+    { "key": "bmi", "label": "Body mass index", "options": [{ "label": "> 21 kg/m²", "points": 0 }, { "label": "≤ 21 kg/m²", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 2, "label": "Quartile 1 — approx. 80% 4-year survival. Optimise inhaler therapy, smoking cessation, vaccination, pulmonary rehab", "severity": "low" },
+    { "min": 3, "max": 4, "label": "Quartile 2 — approx. 67% 4-year survival. Ensure pulmonary rehab, review for LAMA/LABA/ICS escalation, treat comorbidities, assess for hypoxaemia (ambulatory + resting)", "severity": "moderate" },
+    { "min": 5, "max": 6, "label": "Quartile 3 — approx. 57% 4-year survival. Consider referral for advanced therapies (lung volume reduction, transplant evaluation if criteria met), advance-care planning", "severity": "high" },
+    { "min": 7, "max": 10, "label": "Quartile 4 — approx. 18% 4-year survival. Transplant evaluation if a candidate; integrate palliative care, discuss goals of care and NIV preferences, opioids for refractory dyspnoea", "severity": "high" }
+  ],
+  "notes": "A BODE rise after an exacerbation predicts worse outcome. The updated BODE (uses exacerbation frequency) and the ADO index (Age, Dyspnoea, Obstruction) are alternatives when a 6-minute walk is not feasible. GOLD ABE grouping guides pharmacotherapy; BODE guides prognosis and referral.",
+  "buildNote": "Additive, 4 domains. Range 0–10, grouped into survival quartiles."
+}

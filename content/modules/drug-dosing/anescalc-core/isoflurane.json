@@ -1,0 +1,48 @@
+{
+  "id": "isoflurane",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Volatile Anesthetics",
+  "title": "Isoflurane",
+  "aliases": [
+    "Forane"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "volatile",
+    "isoflurane"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Forane",
+  "tallManLetters": "ISOFlurane",
+  "drugClass": "volatile",
+  "drugClassLabel": "Volatile",
+  "mechanism": "Halogenated methyl ethyl ether. Enhances GABA-A inhibition; inhibits NMDA receptors. Intermediate blood/gas partition coefficient (1.43) → slower onset/offset than sevoflurane.",
+  "onset": "Slower than sevoflurane — blood/gas λ = 1.43",
+  "duration": "Slower offset vs. sevoflurane/desflurane",
+  "dosing": "MAC (~40 yr): ~1.2%\nMAC-awake: ~0.4%\nTypical maintenance: 1.0–2.0% in air/O₂",
+  "cautions": [
+    "AEs: Pungent odor (airway irritant — not for mask induction), hypotension, arrhythmias, MH, QT prolongation, coronary steal (theoretical)",
+    "CI: Known/suspected MH; hypersensitivity; prior halogenated anesthetic-induced hepatitis",
+    "Precautions: Perioperative hyperkalemia; hepatic reactions (rare); ↑blood loss in uterine procedures; pediatric neurotoxicity"
+  ],
+  "pearls": [
+    "Lower cost than sevoflurane/desflurane — economical for long cases where emergence speed is less critical.",
+    "Coronary steal phenomenon — largely theoretical at clinical doses but controversial in severe fixed-stenosis CAD. Not used for induction (pungent)."
+  ],
+  "reversal": "Dantrolene 2.5 mg/kg IV if MH triggered"
+}

@@ -1,0 +1,176 @@
+{
+  "id": "nrp-algorithm",
+  "section": "Peds Module",
+  "category": "Neonatology",
+  "title": "NRP — Neonatal Resuscitation",
+  "aliases": [
+    "neonatal resuscitation program",
+    "delivery room resuscitation",
+    "newborn PPV",
+    "MR SOPA",
+    "3:1 compressions",
+    "neonatal epinephrine dose"
+  ],
+  "tags": [
+    "neonatal",
+    "resuscitation",
+    "delivery room",
+    "PPV",
+    "chest compressions",
+    "epinephrine",
+    "NRP",
+    "OB",
+    "Peds",
+    "ED"
+  ],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — Neonatology Pocket Guide: NRP Algorithm (ABCD)",
+    "AHA/AAP Neonatal Resuscitation Program, 8th ed (2021) / ILCOR 2020 (Wyckoff MH et al. Circulation 2020;142:S185-S221)"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — the NRP 2021 delivery-room sequence: the three questions, initial steps, the HR-triggered escalation (PPV → compressions → epinephrine), doses, and the failure-to-respond checklist."
+    }
+  ],
+  "kind": "reference",
+  "purpose": "The delivery-room resuscitation sequence. Heart rate is the single best indicator of response — reassess it after every intervention. Acrocyanosis alone is a normal transitional finding, not a trigger.",
+  "ageRange": "Newborn (delivery room; out-of-hospital up to 24 h of life)",
+  "sourceOfTruth": [],
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Three questions at birth"
+    },
+    {
+      "type": "text",
+      "text": "Term gestation? Good tone? Breathing or crying? — YES to all → routine care (warm, dry, skin-to-skin, ongoing evaluation on mother). NO to any → begin warming / drying / stimulation and proceed down the algorithm."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Initial steps (first ~30 s)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Radiant warmer (after cord management per the delayed-cord-clamping protocol). Preterm < 32 wk: plastic wrap / bag, hat, thermal mattress — target axillary 36.5–37.5 °C.",
+        "Position supine, neck neutral / slightly extended (shoulder roll if needed).",
+        "Suction ONLY if the airway is obstructed or PPV is needed — routine suctioning is no longer recommended, even with meconium.",
+        "Dry and stimulate (rub the back, flick the soles); remove wet linen.",
+        "Pulse oximeter on the RIGHT hand/wrist (pre-ductal); ECG leads for the most reliable HR."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Escalation — driven by heart rate"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "If, after the previous step…",
+        "Do"
+      ],
+      "rows": [
+        [
+          "Apnoeic / gasping, OR HR < 100",
+          "Positive-pressure ventilation (PPV) 40–60 breaths/min, starting at 21% O2 for ≥ 35 wk (21–30% for < 35 wk). The rise in HR is the primary measure of effective PPV."
+        ],
+        [
+          "HR not rising / chest not moving after PPV",
+          "MR SOPA corrective steps: Mask readjust · Reposition airway · Suction mouth then nose · Open mouth · increase Pressure · Alternative airway (ETT or LMA)."
+        ],
+        [
+          "HR < 60 despite ≥ 30 s of effective PPV (chest moving, preferably via an advanced airway)",
+          "Start chest compressions + increase FiO2 to 100%. Two-thumb encircling technique. Ratio 3:1 (90 compressions + 30 breaths = 120 events/min). Depth ~1/3 of the AP chest diameter. Reassess HR every 60 s."
+        ],
+        [
+          "HR < 60 despite 60 s of coordinated compressions + PPV",
+          "Epinephrine (see below) + a volume expander if blood loss / hypovolaemia is suspected. Give epinephrine while continuing compressions and ventilation."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Medications"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Drug",
+        "Dose",
+        "Notes"
+      ],
+      "rows": [
+        [
+          "Epinephrine (1:10,000 = 0.1 mg/mL)",
+          "0.01–0.03 mg/kg IV / UVC (preferred). If no IV access yet: 0.05–0.1 mg/kg via ETT",
+          "Repeat q3–5 min if HR remains < 60. Prefer the IV/UVC route as soon as it's available."
+        ],
+        [
+          "Volume expander",
+          "10 mL/kg NS or O-negative PRBC IV over 5–10 min",
+          "For suspected blood loss / hypovolaemia with a poor response to resuscitation. Can repeat."
+        ],
+        [
+          "Dextrose 10%",
+          "2 mL/kg IV if hypoglycaemic post-resuscitation",
+          "Check glucose once stabilised — especially IDM / preterm / SGA."
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "If there's no improvement despite adequate ventilation AND compressions, actively look for: hypovolaemia, pneumothorax, a congenital anomaly (e.g. diaphragmatic hernia — do not bag-mask, intubate + place an OG tube), and correctable technical problems (mask seal, tube position/patency, equipment) BEFORE escalating drug doses. Acrocyanosis with a pink trunk is normal."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pre-ductal SpO2 targets (right hand)"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Time after birth",
+        "Target SpO2"
+      ],
+      "rows": [
+        [
+          "1 min",
+          "60–65%"
+        ],
+        [
+          "2 min",
+          "65–70%"
+        ],
+        [
+          "3 min",
+          "70–75%"
+        ],
+        [
+          "4 min",
+          "75–80%"
+        ],
+        [
+          "5 min",
+          "80–85%"
+        ],
+        [
+          "10 min",
+          "85–95%"
+        ]
+      ]
+    }
+  ],
+  "buildNote": "Tier 1. HR thresholds (100 / 60) are standard NRP and were filled in where the source extraction dropped them. Equipment checklist and the New Ballard Score are separate additions. An APGAR calculator is a natural companion (additive, 0–10).  Related: erc-2025-pediatric-life-support, neonatal-hie-cooling, infant-of-diabetic-mother, infant-cpr-parameters, peds-glasgow-coma-scale."
+}

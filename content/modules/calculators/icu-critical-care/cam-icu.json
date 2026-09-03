@@ -1,0 +1,31 @@
+{
+  "id": "cam-icu",
+  "section": "Calculators",
+  "category": "ICU / Critical Care",
+  "title": "CAM-ICU (Delirium Assessment)",
+  "aliases": ["CAM-ICU", "confusion assessment method ICU", "ICU delirium screen"],
+  "tags": ["delirium", "ICU", "PADIS", "mechanical ventilation", "sedation"],
+  "keywords": ["acute change in mental status", "inattention", "letters attention test", "altered level of consciousness", "disorganized thinking", "RASS", "delirium positive"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Ely EW et al. JAMA 2001; SCCM PADIS 2018 guideline"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ICU"],
+  "purpose": "A structured bedside screen for delirium in the ICU patient, usable in the intubated / non-verbal. First check arousal with RASS: if RASS is −4 or −5 the patient is unarousable — CAM-ICU cannot be completed, recheck later. Otherwise assess the four features below.",
+  "items": [
+    { "key": "feature1", "label": "Feature 1 — Acute onset OR fluctuating course of mental status (vs. baseline, or fluctuation in the last 24 h by RASS/GCS/prior CAM-ICU)", "options": [{ "label": "Absent", "points": 0 }, { "label": "Present", "points": 1 }] },
+    { "key": "feature2", "label": "Feature 2 — Inattention: Letters ('SAVEAHAART' — squeeze on A) or Pictures; ≥ 3 errors = present", "options": [{ "label": "< 3 errors — absent", "points": 0 }, { "label": "≥ 3 errors — present", "points": 1 }] },
+    { "key": "feature3", "label": "Feature 3 — Altered level of consciousness: current RASS anything other than 0 (calm and alert)", "options": [{ "label": "RASS = 0 — absent", "points": 0 }, { "label": "RASS ≠ 0 — present", "points": 1 }] },
+    { "key": "feature4", "label": "Feature 4 — Disorganised thinking: 4 yes/no questions + a 2-step command; ≥ 2 errors = present (only assessed if Feature 3 is absent)", "options": [{ "label": "< 2 errors / not required — absent", "points": 0 }, { "label": "≥ 2 errors — present", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 1, "label": "CAM-ICU NEGATIVE — delirium not detected at this assessment (requires Feature 1 AND Feature 2, plus either Feature 3 or Feature 4). Continue routine screening at least once per shift and with any mental-status change", "severity": "low" },
+    { "min": 2, "max": 4, "label": "Check the rule: CAM-ICU is POSITIVE only if Feature 1 + Feature 2 are both present AND (Feature 3 OR Feature 4) is present. If so → DELIRIUM. Act on it: search for causes (sepsis, hypoxia, hypercapnia, metabolic, drugs — esp. benzodiazepines and anticholinergics, withdrawal, pain, urinary retention), stop/minimise deliriogenic drugs, target light sedation, mobilise, restore day–night cycle, reorient, ensure glasses/hearing aids. Antipsychotics do not shorten delirium — reserve for dangerous agitation", "disposition": "Treat delirium — non-pharmacologic bundle first", "severity": "high" }
+  ],
+  "notes": "The point tally here is a helper only — apply the diagnostic rule: (1 AND 2) AND (3 OR 4). The ICDSC is an alternative 8-item screen (≥ 4 = delirium). CAM-ICU does not grade severity or distinguish hypoactive (the common, easily-missed, worse-prognosis form) from hyperactive. Pair with the ABCDEF bundle.",
+  "buildNote": "Diagnostic rule (1 AND 2) AND (3 OR 4); additive sum is a helper, not the diagnosis."
+}

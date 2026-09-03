@@ -1,0 +1,30 @@
+{
+  "id": "years-pe",
+  "section": "Calculators",
+  "category": "Pulmonary / PE / DVT / Resp Failure",
+  "title": "YEARS Algorithm for PE",
+  "aliases": ["YEARS", "YEARS criteria", "PE D-dimer algorithm", "simplified PE workup"],
+  "tags": ["pulmonary embolism", "d-dimer", "diagnostic pathway", "ED", "pregnancy"],
+  "keywords": ["clinical signs of DVT", "hemoptysis", "PE most likely diagnosis", "d-dimer 500", "d-dimer 1000", "avoid CTPA"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["van der Hulle T et al. Lancet 2017 (YEARS study); van der Pol LM et al. NEJM 2019 (Pregnancy-Adapted YEARS)"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "A simplified diagnostic pathway that uses a variable D-dimer threshold to safely reduce CT pulmonary angiography. Count the three YEARS items, then apply the D-dimer cutoff: 0 items → cutoff 1000 ng/mL; ≥ 1 item → cutoff 500 ng/mL.",
+  "items": [
+    { "key": "dvtSigns", "label": "Clinical signs of DVT (unilateral leg swelling / pain on palpation)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "hemoptysis", "label": "Haemoptysis", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "peMostLikely", "label": "PE is the most likely diagnosis (clinical gestalt — is PE at least as likely as any alternative?)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "Zero YEARS items → use D-dimer cutoff 1000 ng/mL. D-dimer < 1000 → PE excluded, NO CT. D-dimer ≥ 1000 → CT pulmonary angiography", "severity": "low" },
+    { "min": 1, "max": 3, "label": "≥ 1 YEARS item → use D-dimer cutoff 500 ng/mL. D-dimer < 500 → PE excluded, NO CT. D-dimer ≥ 500 → CT pulmonary angiography", "severity": "moderate" }
+  ],
+  "notes": "YEARS was validated without age-adjustment — do not stack age-adjusted D-dimer on top. Pregnancy-Adapted YEARS adds: if clinical signs of DVT, do compression ultrasound first (a positive US confirms VTE and stops the workup). Overall YEARS cut CTPA use by ~14% vs. Wells + fixed D-dimer with a 3-month VTE failure rate of 0.43%. Do not use in haemodynamic instability (that patient goes straight to imaging / bedside echo).",
+  "buildNote": "Algorithm — item count selects the D-dimer threshold, it is not a summed risk score."
+}

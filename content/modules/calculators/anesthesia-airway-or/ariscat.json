@@ -1,0 +1,35 @@
+{
+  "id": "ariscat",
+  "section": "Calculators",
+  "category": "Anesthesia / Airway / OR",
+  "title": "ARISCAT Score (Postoperative Pulmonary Complications)",
+  "aliases": ["ARISCAT", "PPC risk", "postoperative pulmonary complication score", "Canet score"],
+  "tags": ["perioperative", "pulmonary complications", "risk stratification", "preoperative", "OR"],
+  "keywords": ["age", "preoperative SpO2", "respiratory infection last month", "preoperative anemia", "surgical incision site", "duration of surgery", "emergency surgery"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Canet J et al. Anesthesiology 2010 (ARISCAT); PERISCOPE external validation, Eur J Anaesthesiol 2014"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["OR", "Anesthesia"],
+  "purpose": "Predicts the risk of in-hospital postoperative pulmonary complications (respiratory failure, infection, effusion, atelectasis, pneumothorax, bronchospasm, aspiration pneumonitis) after surgery under general or regional anaesthesia.",
+  "items": [
+    { "key": "age", "label": "Age (years)", "options": [{ "label": "≤ 50", "points": 0 }, { "label": "51–80", "points": 3 }, { "label": "> 80", "points": 16 }] },
+    { "key": "spo2", "label": "Preoperative SpO2 (room air, supine)", "options": [{ "label": "≥ 96%", "points": 0 }, { "label": "91–95%", "points": 8 }, { "label": "≤ 90%", "points": 24 }] },
+    { "key": "respInfection", "label": "Respiratory infection in the last month (fever + antibiotics)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 17 }] },
+    { "key": "anemia", "label": "Preoperative anaemia (Hb ≤ 10 g/dL)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 11 }] },
+    { "key": "incision", "label": "Surgical incision", "options": [{ "label": "Peripheral", "points": 0 }, { "label": "Upper abdominal", "points": 15 }, { "label": "Intrathoracic", "points": 24 }] },
+    { "key": "duration", "label": "Duration of surgery", "options": [{ "label": "< 2 h", "points": 0 }, { "label": "2–3 h", "points": 16 }, { "label": "> 3 h", "points": 23 }] },
+    { "key": "emergency", "label": "Emergency procedure", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 8 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 25, "label": "Low risk — PPC incidence ~ 1.6%. Routine care; standard lung-protective ventilation and early mobilisation", "severity": "low" },
+    { "min": 26, "max": 44, "label": "Intermediate risk — PPC incidence ~ 13%. Optimise: treat infection / anaemia pre-op, incentive spirometry, lung-protective ventilation (VT 6–8 mL/kg PBW, PEEP, recruitment), regional analgesia, postoperative CPAP/physiotherapy, consider monitored bed", "severity": "moderate" },
+    { "min": 45, "max": 123, "label": "High risk — PPC incidence ~ 42%. Aggressive optimisation and risk–benefit discussion; strong indication for step-down/ICU, protective ventilation, minimising surgical duration, and a structured respiratory care bundle", "severity": "high" }
+  ],
+  "notes": "SpO2 and incision site carry the most weight — a hypoxaemic patient for a thoracotomy is high-risk almost regardless of the other items. Pair with functional status, an ASA class, and (for cardiac risk) the RCRI. ARISCAT informs consent, anaesthetic technique, ventilation strategy, and disposition — not cancellation by itself.",
+  "buildNote": "Additive, 7 items with weighted points. Range 0–123."
+}

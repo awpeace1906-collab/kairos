@@ -1,0 +1,33 @@
+{
+  "id": "cockcroft-gault",
+  "section": "Drug & Dosing Cards",
+  "category": "Dosing & Fluid Math",
+  "title": "Cockcroft-Gault Creatinine Clearance",
+  "aliases": ["CrCl", "creatinine clearance", "renal dosing"],
+  "tags": ["renal dosing", "creatinine clearance", "kidney function", "drug adjustment", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "review_tier": "stable",
+  "sources": ["Cockcroft DW, Gault MH. Nephron 1976"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3." }],
+  "engine": "formula",
+  "settings": ["ICU"],
+  "purpose": "Estimates creatinine clearance for renal drug dosing — most drug package inserts and dose-adjustment tables use Cockcroft-Gault, not eGFR.",
+  "inputs": [
+    { "key": "age", "label": "Age", "type": "number", "unit": "years", "min": 12, "max": 110 },
+    { "key": "weight", "label": "Weight", "type": "number", "unit": "kg", "min": 20, "max": 300 },
+    { "key": "creatinine", "label": "Serum creatinine", "type": "number", "unit": "mg/dL", "min": 0.2, "max": 15 },
+    { "key": "sex", "label": "Sex", "type": "select", "options": [{ "label": "Male", "value": 0 }, { "label": "Female", "value": 1 }] }
+  ],
+  "formulas": [
+    { "key": "crcl", "label": "Creatinine clearance", "expression": "((140 - age) * weight * (1 - 0.15 * sex)) / (72 * creatinine)", "unit": "mL/min", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "crcl", "min": 0, "max": 14.9, "label": "< 15 — kidney failure; many drugs contraindicated or need major adjustment", "severity": "high" },
+    { "forKey": "crcl", "min": 15, "max": 29.9, "label": "15-29 — severe reduction", "severity": "moderate" },
+    { "forKey": "crcl", "min": 30, "max": 59.9, "label": "30-59 — moderate reduction; check each renally-cleared drug", "severity": "moderate" },
+    { "forKey": "crcl", "min": 60, "max": 1000, "label": "≥ 60 — mild or no reduction", "severity": "low" }
+  ],
+  "notes": "Consider using adjusted or ideal body weight instead of actual weight in obese patients. In unstable renal function the estimate lags true clearance."
+}

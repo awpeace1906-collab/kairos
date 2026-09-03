@@ -1,0 +1,41 @@
+{
+  "id": "modified-shock-index",
+  "section": "Calculators",
+  "category": "Trauma",
+  "title": "Modified Shock Index (MSI)",
+  "aliases": ["MSI", "HR over MAP", "shock index MAP"],
+  "tags": ["hemorrhage", "occult shock", "sepsis", "trauma", "GI bleed", "post-intubation hypotension", "ED", "ICU"],
+  "keywords": ["MSI", "mean arterial pressure", "compensated shock"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — Modified Shock Index (MSI): Hemodynamic Risk Assessment Beyond Blood Pressure Alone",
+    "Liu YC et al. World J Emerg Med 2012;3(2):114-117",
+    "Kimura A, Tanaka N. Am J Emerg Med 2020;38(11):2466-2470 (post-intubation hypotension / arrest)",
+    "Singh A et al. Crit Care 2023 (SI vs MSI in trauma and sepsis)"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV Modified Shock Index guide. MSI = HR / MAP; captures the compensating patient whose SBP still looks normal." }],
+  "engine": "formula",
+  "settings": ["ED", "ICU"],
+  "purpose": "Flag hemodynamic compromise that systolic BP alone misses — MAP folds in the diastolic component that falls first in early hemorrhagic, septic, and distributive shock.",
+  "notes": "MSI = HR ÷ MAP. Use a measured MAP from the monitor (arterial line or NIBP) when available rather than one calculated from a single cuff reading. Interpret as a trend — a rising MSI is more concerning than a single elevated value. Not validated as a standalone treatment trigger; does not replace lactate or perfusion assessment. MSI < 0.7 is not inherently reassuring (severe hypertension or bradycardia). Reported cutoffs vary by population (e.g. ~1.28 in a Sepsis-3 cohort); this module uses the CV guide's 1.3 / 1.7 bands.",
+  "inputs": [
+    { "key": "hr", "label": "Heart rate", "type": "number", "unit": "bpm", "min": 20, "max": 250 },
+    { "key": "sbp", "label": "Systolic BP", "type": "number", "unit": "mmHg", "min": 40, "max": 260 },
+    { "key": "dbp", "label": "Diastolic BP", "type": "number", "unit": "mmHg", "min": 20, "max": 180 }
+  ],
+  "formulas": [
+    { "key": "map", "label": "MAP (estimated)", "expression": "(sbp + 2 * dbp) / 3", "unit": "mmHg", "precision": 0 },
+    { "key": "msi", "label": "Modified shock index", "expression": "hr / ((sbp + 2 * dbp) / 3)", "precision": 2 }
+  ],
+  "interpretation": [
+    { "forKey": "msi", "min": 0, "max": 0.69, "label": "< 0.7 — low; seen in severe hypertension or bradycardia. Not inherently reassuring — interpret with clinical context.", "severity": "moderate" },
+    { "forKey": "msi", "min": 0.7, "max": 1.29, "label": "0.7–1.3 — normal hemodynamic state.", "severity": "low" },
+    { "forKey": "msi", "min": 1.3, "max": 1.69, "label": "> 1.3 — elevated; significant hemodynamic compromise. Closer monitoring, look for a source.", "severity": "moderate" },
+    { "forKey": "msi", "min": 1.7, "max": 20, "label": "≥ 1.7 — high risk; associated with shock, ICU admission, and in-hospital mortality (Liu et al.). Urgent assessment and resuscitation.", "severity": "high" }
+  ],
+  "buildNote": "Companion to shock-index (HR/SBP). Both live under Calculators / Trauma. Cross-links: qsofa, sirs, shock-index, shock-classification reference."
+}

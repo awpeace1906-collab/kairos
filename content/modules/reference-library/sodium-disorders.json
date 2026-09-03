@@ -1,0 +1,62 @@
+{
+  "id": "sodium-disorders",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Sodium Disorders — Hypo- & Hypernatremia",
+  "aliases": ["hyponatremia management", "hypertonic saline bolus", "ODS prevention", "osmotic demyelination", "DDAVP clamp", "SIADH criteria", "hypernatremia correction", "free water deficit", "ICU sodium drift"],
+  "tags": ["hyponatremia", "hypernatremia", "electrolytes", "hypertonic saline", "SIADH", "diabetes insipidus", "ODS", "seizure", "ED", "ICU"],
+  "keywords": ["3% NaCl 100-150 mL over 20 min", "+5 mEq/L in 1 h", "max 10-12 mEq/L/24h", "8 mEq/L/24h high ODS risk", "DDAVP 1-2 mcg + D5W", "urine osm > 100", "free water deficit formula"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — EM Pocket Guide: Sodium Disorders",
+    "ESC/ESE/ERBP hyponatremia guidance (2014, 2023 update); standard ICU electrolyte management"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — hyponatremia severity-based management with 3% NaCl dosing, ODS-prevention correction limits + the DDAVP/D5W rescue, SIADH criteria, hypernatremia classification, the free-water-deficit formula, and ICU sodium drift." }],
+  "summary": "In symptomatic hyponatraemia give 3% NaCl 100–150 mL IV over ~20 min (repeat ×2), targeting +4–6 mEq/L in the first hour to stop the emergency — then STOP and go slow. Overcorrection is the dangerous complication: re-lower with DDAVP + D5W if you exceed 8–10 mEq/L in 24 h.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Hyponatremia — severity-based management" },
+    { "type": "table",
+      "columns": ["Severity", "Na⁺ / symptoms", "Treatment"],
+      "rows": [
+        ["Mild", "125–134 mEq/L; asymptomatic or mild nausea", "Treat the underlying cause; fluid-restrict to 500–1000 mL/day if SIADH"],
+        ["Moderate", "120–124; headache, confusion, vomiting", "3% NaCl 100–150 mL IV over 20 min; may repeat ×2; target +4–6 mEq/L over the first hour"],
+        ["Severe / symptomatic (seizure, coma, obtundation)", "any Na⁺ with severe CNS signs", "3% NaCl 150 mL IV bolus; repeat ×2 PRN until symptoms resolve; then STOP the rapid correction"]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "Seizure in hyponatraemia: give 3% NaCl 150 mL IV bolus immediately regardless of the baseline Na⁺ — correct until the seizure stops, then slow down aggressively." },
+    { "type": "heading", "level": 3, "text": "ODS prevention — maximum correction rates" },
+    { "type": "list", "items": [
+      "≤ 8 mEq/L in any 24 h (some sources allow 10–12 in average-risk patients; 8 is the safer default). ≤ 18 mEq/L cumulative over 48 h.",
+      "Lower ceiling — ≤ 8 mEq/L/24 h — in high ODS risk: chronic hyponatraemia, alcohol use, malnutrition, hypokalaemia, advanced liver disease, hypokalaemic states.",
+      "Overcorrected (> 8–10 mEq/L in 24 h): re-lower with DDAVP 1–2 mcg IV + D5W IV. Relowering is SAFE if done promptly.",
+      "Osmotic demyelination (ODS / central pontine myelinolysis) manifests 2–6 days AFTER the overcorrection — dysarthria, dysphagia, flaccid then spastic quadriparesis, 'locked-in'. Prevention is the only effective strategy."
+    ] },
+    { "type": "heading", "level": 3, "text": "SIADH — diagnostic criteria" },
+    { "type": "list", "items": [
+      "True hypotonic hyponatraemia (serum osmolality low).",
+      "Urine osmolality > 100 mOsm/kg (inappropriately concentrated).",
+      "Urine Na⁺ > 40 mEq/L (renal salt wasting) on a normal salt/water intake.",
+      "Clinically euvolaemic (no oedema, no orthostasis).",
+      "Normal thyroid, adrenal, and renal function; no recent diuretic."
+    ] },
+    { "type": "text", "text": "Beer potomania / 'tea-and-toast' hyponatraemia: severe hyponatraemia with a VERY LOW urine osmolality (< 100) — low solute intake limits free-water excretion. It corrects fast once solute is given, so it's a high ODS-risk scenario — anticipate autocorrection and be ready with DDAVP." },
+
+    { "type": "heading", "level": 2, "text": "Hypernatremia — classification & correction" },
+    { "type": "table",
+      "columns": ["Type", "Cause & treatment"],
+      "rows": [
+        ["Hypovolaemic", "GI losses, diuretics, insensible losses — ISOTONIC saline first to restore perfusion, then switch to D5W or 0.45% NaCl once haemodynamically stable"],
+        ["Euvolaemic", "Central DI (lack of ADH) or nephrogenic DI (ADH resistance) — D5W or 0.45% NaCl; DDAVP 1–4 mcg IV/SC q12–24 h for central DI"],
+        ["Hypervolaemic", "Iatrogenic (NaHCO₃ infusion, hypertonic-saline overuse) — D5W + furosemide to excrete the free-water-poor volume"]
+      ]
+    },
+    { "type": "text", "text": "Free water deficit (L) = 0.6 × TBW(kg) × [(Na⁺ / 140) − 1] (use 0.5 for women/elderly). Replace over 48–72 h; maximum rate of Na⁺ decline 0.5 mEq/L/hr (≤ 10–12/24 h) — faster risks cerebral oedema. Add ongoing and insensible losses to the deficit." },
+    { "type": "callout", "tone": "info", "text": "'ICU sodium drift': hypernatraemia develops insidiously in intubated patients from inadequate free water in tube feeds, hyperosmolar IV fluids, or excess insensible losses. A daily free-water balance review prevents it." }
+  ],
+  "related": ["hyperosmolar-therapy", "iv-fluids", "corrected-sodium-hyperglycemia", "free-water-deficit", "icu-workflow"],
+  "buildNote": "Tier 1 — previously a gap. Cross-links the existing corrected-sodium and free-water-deficit calculators. A rapid hypertonic-saline dosing calculator (mL of 3% for a target ΔNa) is a natural companion."
+}

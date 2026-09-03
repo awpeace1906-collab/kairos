@@ -1,0 +1,35 @@
+{
+  "id": "apap-nac-dosing",
+  "section": "Drug & Dosing Cards",
+  "category": "Dosing & Fluid Math",
+  "title": "Acetaminophen Overdose / NAC Dosing",
+  "aliases": ["APAP overdose", "Rumack-Matthew", "N-acetylcysteine", "paracetamol toxicity", "150 line"],
+  "tags": ["acetaminophen", "paracetamol", "overdose", "NAC", "poisoning", "ED"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Rumack BH, Matthew H. Pediatrics 1975", "Prescott LF. 1979 (21-h IV protocol)"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3. Treatment-line approximation." }],
+  "engine": "formula",
+  "settings": ["ED", "ICU"],
+  "purpose": "Plots a serum acetaminophen level against time since a SINGLE acute ingestion relative to the US 150 mcg/mL treatment line, and gives the 21-hour IV NAC regimen weight-based doses.",
+  "inputs": [
+    { "key": "apapLevel", "label": "Serum acetaminophen level", "type": "number", "unit": "mcg/mL", "min": 0, "max": 1000 },
+    { "key": "hours", "label": "Hours since ingestion (≥ 4)", "type": "number", "unit": "h", "min": 4, "max": 24 },
+    { "key": "weight", "label": "Weight", "type": "number", "unit": "kg", "min": 3, "max": 200 }
+  ],
+  "formulas": [
+    { "key": "treatmentLine", "label": "Treatment line at this hour", "expression": "150 * 2 ^ (-(hours - 4) / 4)", "unit": "mcg/mL", "precision": 1 },
+    { "key": "margin", "label": "Level minus treatment line", "expression": "apapLevel - 150 * 2 ^ (-(hours - 4) / 4)", "unit": "mcg/mL", "precision": 1 },
+    { "key": "nacLoad", "label": "NAC load — 150 mg/kg over 60 min", "expression": "150 * weight", "unit": "mg", "precision": 0 },
+    { "key": "nacSecond", "label": "NAC 2nd bag — 50 mg/kg over 4 h", "expression": "50 * weight", "unit": "mg", "precision": 0 },
+    { "key": "nacThird", "label": "NAC 3rd bag — 100 mg/kg over 16 h", "expression": "100 * weight", "unit": "mg", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "margin", "min": 0, "max": 100000, "label": "At or above the treatment line — start NAC", "disposition": "Begin the 21-hour IV NAC protocol (loading dose above); consult toxicology", "severity": "high" },
+    { "forKey": "margin", "min": -100000, "max": -0.01, "label": "Below the treatment line — NAC not indicated by the nomogram for a single acute ingestion", "detail": "Only valid if the ingestion time is known, single, and acute, and the level was drawn ≥ 4 h post-ingestion.", "severity": "low" }
+  ],
+  "buildNote": "Treatment line is approximated as 150 × 2^(−(h−4)/4) (halves every 4 h from 150 at 4 h). Not valid for unknown-time, staggered/chronic, or > 24 h presentations — those use different criteria. A production build should render the actual semi-log nomogram plot alongside this."
+}

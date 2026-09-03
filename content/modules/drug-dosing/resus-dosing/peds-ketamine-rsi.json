@@ -1,0 +1,31 @@
+{
+  "id": "peds-ketamine-rsi",
+  "section": "Drug & Dosing Cards",
+  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "title": "Ketamine — Pediatric RSI Induction",
+  "aliases": ["peds ketamine", "RSI induction agent", "ketamine intubation dose"],
+  "tags": ["RSI", "rapid sequence intubation", "induction", "shock", "reactive airway", "peds"],
+  "contentType": "drug-card",
+  "content_version": 2,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Drug_Dosing_Peds_Weight_Based_Spec.md", "Green SM et al. Ann Emerg Med 2011;57:449-61"],
+  "changelog": [
+    { "version": 2, "date": "2026-09-01", "change": "Tier 1 verification: 1-2 mg/kg IV induction confirmed. Widened the IM note to 3-5 mg/kg to match common dissociative-dose references." },
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry." }
+  ],
+  "purpose": "RSI induction agent. Preferred in shock and reactive airway disease (bronchodilator, haemodynamically supportive). Specifically preferred over etomidate in septic shock — etomidate causes adrenal suppression.",
+  "population": "peds",
+  "weightBasis": "actual",
+  "doses": [
+    {
+      "indication": "RSI induction",
+      "route": "IV / IO",
+      "rule": { "perKg": 1, "perKgHigh": 2, "unit": "mg" },
+      "notes": "Onset ~1 min, duration ~10-15 min. IM route 3-5 mg/kg (dissociative dose) when there is no IV access."
+    }
+  ],
+  "contraindications": ["Known or suspected increased ICP is a relative caution (evidence now largely reassuring)", "Age < 3 months (laryngospasm risk)"],
+  "buildNote": "Pair with the rocuronium / succinylcholine paralytic cards and the atropine premedication card as an RSI set."
+}

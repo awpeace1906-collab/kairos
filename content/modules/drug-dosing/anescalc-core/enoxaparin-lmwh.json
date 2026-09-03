@@ -1,0 +1,55 @@
+{
+  "id": "enoxaparin-lmwh",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Anticoagulants / Hemostatics",
+  "title": "Enoxaparin (LMWH)",
+  "aliases": [
+    "Lovenox"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "anticoagulant",
+    "enoxaparin",
+    "lmwh"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Lovenox",
+  "tallManLetters": "enoXAParin",
+  "drugClass": "anticoagulant",
+  "drugClassLabel": "Anticoagulant / Hemostatic",
+  "mechanism": "Low molecular weight heparin (LMWH). Selectively binds AT-III → preferential Factor Xa inhibition (~3:1 anti-Xa:anti-IIa ratio, vs. 1:1 for UFH). Shorter polysaccharide chains cannot bridge thrombin and AT-III simultaneously → minimal direct thrombin (IIa) inhibition. More predictable pharmacokinetics than UFH: dose-independent clearance, less protein binding, longer half-life (~4.5h). No reliable monitoring required for most patients (fixed weight-based dosing).",
+  "onset": "SQ: 3–5h (anti-Xa peak). IV: immediate (off-label use)",
+  "duration": "t½ ~4.5h (therapeutic SQ); renal clearance — significantly prolonged in CrCl <30 mL/min",
+  "dosing": "VTE PROPHYLAXIS (surgical patients):\nStandard risk: 40 mg SQ daily (start 12h before or 12–24h post-op)\nHigh risk / bariatric: 40 mg SQ q12h or weight-based 0.5 mg/kg SQ q12h\nHip/knee arthroplasty: 30 mg SQ q12h or 40 mg SQ daily\n\nVTE TREATMENT (DVT/PE):\n1 mg/kg SQ q12h (anti-Xa target 0.6–1.0 IU/mL at 4h post-dose)\nOR 1.5 mg/kg SQ daily (less studied for PE; anti-Xa target 1.0–2.0 IU/mL)\nBMI >40 or weight >150 kg: Consider anti-Xa monitoring; cap at 144 mg dose\n\nACS (NSTEMI/UA — with or without PCI):\n1 mg/kg SQ q12h; IV bolus 0.3 mg/kg may be given before PCI if last SQ dose >8h prior\n\nBRIDGING (perioperative):\nTherapeutic: 1 mg/kg SQ q12h; hold last dose 24h before surgery\nProphylactic bridge: 40 mg SQ daily; hold last dose 12h before surgery\n\nRENAL DOSING (CrCl <30 mL/min):\nProphylactic: 30 mg SQ daily\nTherapeutic: 1 mg/kg SQ daily (NOT q12h)\nAvoid if CrCl <15 mL/min or on dialysis — UFH preferred",
+  "cautions": [
+    "RENAL ACCUMULATION: Enoxaparin is renally cleared — dose-reduce significantly in CrCl <30 mL/min. Anti-Xa monitoring mandatory for renal impairment. Risk of severe bleeding with accumulation.",
+    "HIT: Lower risk than UFH (~0.1–0.2%) but CROSS-REACTS with HIT antibodies — do NOT use enoxaparin in confirmed or suspected HIT. Switch to argatroban or fondaparinux.",
+    "EPIDURAL/SPINAL HEMATOMA (neuraxial anesthesia): ASRA guidelines — wait 12h after prophylactic dose, 24h after therapeutic dose before neuraxial procedure. After neuraxial, wait 12h before resuming prophylactic dose, 24h before therapeutic. High risk — follow ASRA guidelines strictly.",
+    "REVERSAL INCOMPLETE: Protamine neutralizes ~60% of anti-IIa activity; anti-Xa activity only ~60% reversed. For life-threatening bleeding, consider andexanet alfa (FDA-approved for LMWH reversal).",
+    "PREGNANCY: Enoxaparin does NOT cross placenta — preferred anticoagulant in pregnancy for VTE treatment and prevention. Monitor anti-Xa levels throughout pregnancy (volume of distribution changes).",
+    "WEIGHT EXTREMES: <45 kg → accumulation; >100 kg → subtherapeutic with standard dosing. Monitor anti-Xa in these patients."
+  ],
+  "pearls": [
+    "PERIOPERATIVE BRIDGING — key timing: Therapeutic enoxaparin → last dose 24h before surgery; resume 24–48h post-op (after hemostasis confirmed). Prophylactic → last dose 12h before; resume 12–24h post-op. Always individualize for bleeding vs. thrombotic risk.",
+    "ANTI-XA MONITORING: Not routinely needed for standard weight patients. Indicated for: renal impairment (CrCl <30), extremes of weight (<45 kg or >100 kg), pregnancy. Peak anti-Xa drawn 4h after SQ dose. Therapeutic target: q12h dosing → 0.6–1.0 IU/mL; daily dosing → 1.0–2.0 IU/mL.",
+    "NEURAXIAL TIMING (ASRA 2018): Prophylactic enoxaparin: 12h hold before / 12h after catheter removal. Therapeutic: 24h hold before / 24h after removal. These are MINIMUM intervals — increase for renal impairment or epidural catheter in situ.",
+    "PREGNANCY VTE TREATMENT: Preferred over UFH (no teratogenicity, more predictable dosing). Dose requirements typically increase during pregnancy due to ↑renal clearance and ↑volume of distribution — anti-Xa monitoring recommended each trimester.",
+    "FONDAPARINUX (Arixtra) is a pure anti-Xa agent with NO protamine reversal — for HIT patients requiring anticoagulation who cannot use argatroban. Shorter t½ than enoxaparin; renally cleared."
+  ],
+  "reversal": "Protamine 1 mg per 1 mg enoxaparin (60% reversal); andexanet alfa for life-threatening bleeding"
+}

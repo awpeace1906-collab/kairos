@@ -1,0 +1,35 @@
+{
+  "id": "padua-prediction-score",
+  "section": "Calculators",
+  "category": "ICU / Critical Care",
+  "title": "Padua Prediction Score",
+  "aliases": ["Padua VTE", "medical patient VTE risk"],
+  "tags": ["VTE", "DVT prophylaxis", "medical inpatient", "thromboprophylaxis", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Barbar S et al. J Thromb Haemost 2010"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry from Calculator_Logic_Build_Spec.md." }],
+  "engine": "additive",
+  "settings": ["ICU"],
+  "purpose": "VTE risk in hospitalised medical (non-surgical) patients — the medical counterpart to Caprini. Weigh against IMPROVE bleeding risk before starting pharmacologic prophylaxis.",
+  "items": [
+    { "key": "cancer", "label": "Active cancer", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 3 }] },
+    { "key": "priorVte", "label": "Previous VTE (excluding superficial vein thrombosis)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 3 }] },
+    { "key": "mobility", "label": "Reduced mobility (bedrest ≥ 3 days)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 3 }] },
+    { "key": "thrombophilia", "label": "Known thrombophilic condition", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 3 }] },
+    { "key": "trauma", "label": "Recent (≤ 1 month) trauma or surgery", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "age", "label": "Age ≥ 70", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "cardioresp", "label": "Heart and/or respiratory failure", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "miStroke", "label": "Acute MI or ischemic stroke", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "infection", "label": "Acute infection or rheumatologic disorder", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "obesity", "label": "Obesity (BMI ≥ 30)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "hormonal", "label": "Ongoing hormonal treatment", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 3, "label": "Low risk", "disposition": "Pharmacologic prophylaxis generally not indicated; mobilise", "severity": "low" },
+    { "min": 4, "max": 20, "label": "High risk", "disposition": "Pharmacologic thromboprophylaxis unless contraindicated (check IMPROVE bleeding risk)", "severity": "high" }
+  ]
+}

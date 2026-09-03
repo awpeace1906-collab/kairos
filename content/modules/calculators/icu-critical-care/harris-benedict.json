@@ -1,0 +1,121 @@
+{
+  "id": "harris-benedict",
+  "section": "Calculators",
+  "category": "ICU / Critical Care",
+  "title": "Harris-Benedict Energy Expenditure",
+  "aliases": [
+    "Harris-Benedict",
+    "basal energy expenditure",
+    "BEE",
+    "resting energy expenditure",
+    "caloric requirement"
+  ],
+  "tags": [
+    "nutrition",
+    "energy expenditure",
+    "ICU",
+    "enteral feeding",
+    "caloric target"
+  ],
+  "contentType": "calculator",
+  "content_version": 2,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": [
+    "Harris JA, Benedict FG. PNAS 1918 (original equation); ASPEN/SCCM 2016 critical care nutrition guideline"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-02",
+      "change": "Switched to the original 1918 Harris-Benedict coefficients per Calculator_Logic_Build_Spec.md (matches MDCalc); prior draft used the Roza-Shizgal 1984 revision."
+    }
+  ],
+  "engine": "formula",
+  "settings": [
+    "ICU"
+  ],
+  "purpose": "Estimates basal energy expenditure (kcal/day) to set an initial nutrition target when indirect calorimetry is unavailable. Multiply by an activity/stress factor for total energy expenditure. Predictive equations are imprecise in critical illness — reassess against weight trend, nitrogen balance, and tolerance.",
+  "inputs": [
+    {
+      "key": "sex",
+      "label": "Sex",
+      "type": "select",
+      "options": [
+        {
+          "label": "Male",
+          "value": 0
+        },
+        {
+          "label": "Female",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "key": "weight",
+      "label": "Weight",
+      "type": "number",
+      "unit": "kg",
+      "min": 30,
+      "max": 300
+    },
+    {
+      "key": "height",
+      "label": "Height",
+      "type": "number",
+      "unit": "cm",
+      "min": 120,
+      "max": 220
+    },
+    {
+      "key": "age",
+      "label": "Age",
+      "type": "number",
+      "unit": "years",
+      "min": 15,
+      "max": 110
+    },
+    {
+      "key": "stress",
+      "label": "Activity / stress factor",
+      "type": "number",
+      "unit": "×",
+      "min": 1,
+      "max": 2
+    }
+  ],
+  "formulas": [
+    {
+      "key": "bee",
+      "label": "Basal energy expenditure",
+      "expression": "(1 - sex) * (66.5 + 13.75 * weight + 5.003 * height - 6.775 * age) + sex * (655.1 + 9.563 * weight + 1.850 * height - 4.676 * age)",
+      "unit": "kcal/day",
+      "precision": 0
+    },
+    {
+      "key": "tee",
+      "label": "Estimated total energy expenditure (BEE × factor)",
+      "expression": "((1 - sex) * (66.5 + 13.75 * weight + 5.003 * height - 6.775 * age) + sex * (655.1 + 9.563 * weight + 1.850 * height - 4.676 * age)) * stress",
+      "unit": "kcal/day",
+      "precision": 0
+    }
+  ],
+  "interpretation": [
+    {
+      "forKey": "tee",
+      "min": 0,
+      "max": 100000,
+      "label": "Use as a STARTING target only. ASPEN/SCCM: 25–30 kcal/kg/day and 1.2–2.0 g/kg/day protein for most critically ill adults; consider trophic feeding early in ARDS. Avoid overfeeding (hyperglycaemia, hepatic steatosis, raised CO2, refeeding). Titrate to calorimetry, weight, and metabolic tolerance",
+      "severity": "low"
+    }
+  ],
+  "notes": "Common stress factors: minor surgery ~1.2, sepsis / major trauma ~1.3–1.5, major burns up to ~1.5–2.0; add ~1.1–1.2 for fever per °C above normal. In obesity (BMI ≥ 30) use hypocaloric high-protein feeding (11–14 kcal/kg actual or 22–25 kcal/kg ideal body weight). Screen for refeeding risk before starting in the malnourished.",
+  "buildNote": "Formula engine. Original 1918 Harris-Benedict coefficients (men 66.5 + 13.75·W + 5.003·H − 6.775·A; women 655.1 + 9.563·W + 1.850·H − 4.676·A). sex select folds the male/female equation."
+}

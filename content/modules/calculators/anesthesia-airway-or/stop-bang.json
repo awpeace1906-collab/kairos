@@ -1,0 +1,33 @@
+{
+  "id": "stop-bang",
+  "section": "Calculators",
+  "category": "Anesthesia / Airway / OR",
+  "title": "STOP-BANG Score",
+  "aliases": ["STOP BANG", "OSA screen", "obstructive sleep apnea risk"],
+  "tags": ["OSA", "obstructive sleep apnea", "preop screening", "perioperative airway", "OR"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Chung F et al. Anesthesiology 2008", "Chung F et al. Br J Anaesth 2012"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry from Calculator_Logic_Build_Spec.md." }],
+  "engine": "additive",
+  "settings": ["OR", "Anesthesia"],
+  "purpose": "Screens for undiagnosed obstructive sleep apnea before a procedure; changes the airway, monitoring, and disposition plan.",
+  "items": [
+    { "key": "snoring", "label": "Snoring loudly (louder than talking / heard through a closed door)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "tired", "label": "Tired / fatigued / sleepy during the daytime", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "observed", "label": "Observed to stop breathing / choke / gasp during sleep", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "pressure", "label": "High blood pressure (treated or untreated)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "bmi", "label": "BMI > 35 kg/m²", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "age", "label": "Age > 50", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "neck", "label": "Neck circumference > 40 cm (15.75 in)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "gender", "label": "Male", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 2, "label": "Low risk of moderate-to-severe OSA", "severity": "low" },
+    { "min": 3, "max": 4, "label": "Intermediate risk", "detail": "Higher risk if ≥ 2 of S/T/O/P plus male sex, BMI > 35, or neck > 40 cm.", "severity": "moderate" },
+    { "min": 5, "max": 8, "label": "High risk of moderate-to-severe OSA", "disposition": "Plan for a difficult airway, extended post-op monitoring, opioid-sparing analgesia, and CPAP availability; consider sleep-medicine referral.", "severity": "high" }
+  ]
+}

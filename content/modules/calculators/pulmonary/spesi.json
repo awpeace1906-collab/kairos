@@ -1,0 +1,33 @@
+{
+  "id": "spesi",
+  "section": "Calculators",
+  "category": "Pulmonary / PE / DVT / Resp Failure",
+  "title": "Simplified PESI (sPESI)",
+  "aliases": ["sPESI", "simplified pulmonary embolism severity index", "PE 30-day mortality", "PE outpatient eligibility"],
+  "tags": ["pulmonary embolism", "risk stratification", "prognosis", "disposition", "ED"],
+  "keywords": ["age > 80", "cancer", "chronic cardiopulmonary disease", "heart rate >= 110", "SBP < 100", "SaO2 < 90", "PE home treatment"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Jiménez D et al. Arch Intern Med 2010; ESC 2019 Acute PE guideline"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ED", "ICU"],
+  "purpose": "Predicts 30-day mortality after acute PE and identifies low-risk patients potentially eligible for early discharge / outpatient treatment. Each factor is 1 point; any point ≥ 1 = not low-risk.",
+  "items": [
+    { "key": "age80", "label": "Age > 80", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "cancer", "label": "History of cancer", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "cardiopulm", "label": "Chronic cardiopulmonary disease (chronic heart failure OR chronic lung disease)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "hr110", "label": "Heart rate ≥ 110/min", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "sbp100", "label": "Systolic BP < 100 mmHg", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "sao2", "label": "Arterial oxygen saturation < 90% (with or without supplemental O2)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "Low risk — 30-day mortality ~ 1.0%. Consider early discharge / outpatient anticoagulation if no RV dysfunction, no positive troponin, adequate home support, and follow-up secured (see Hestia criteria)", "disposition": "Consider outpatient management", "severity": "low" },
+    { "min": 1, "max": 6, "label": "Not low risk — 30-day mortality ~ 10.9%. Admit. If haemodynamically stable, assess RV function (echo / CT) and troponin to separate intermediate-low from intermediate-high (the latter needs monitoring for rescue reperfusion)", "disposition": "Admit", "severity": "high" }
+  ],
+  "notes": "sPESI does not itself decide thrombolysis — it separates low-risk from everyone else. A haemodynamically unstable PE is high-risk by definition regardless of score. Pair with the Hestia criteria (which include bleeding risk, renal/hepatic failure, pregnancy, social factors) for the actual home-treatment decision.",
+  "buildNote": "Additive, 6 items × 1 point. Threshold 0 vs ≥ 1."
+}

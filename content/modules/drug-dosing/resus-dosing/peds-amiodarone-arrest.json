@@ -1,0 +1,31 @@
+{
+  "id": "peds-amiodarone-arrest",
+  "section": "Drug & Dosing Cards",
+  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "title": "Amiodarone — Pediatric VF / Pulseless VT",
+  "aliases": ["peds amiodarone", "shock-refractory VF dose"],
+  "tags": ["VF", "pulseless VT", "cardiac arrest", "antiarrhythmic", "peds", "PALS"],
+  "contentType": "drug-card",
+  "content_version": 2,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["AHA PALS cardiac arrest algorithm (2020/2025)", "ACLSMedicalTraining PALS drug reference"],
+  "flags": ["verify-against-mdcalc"],
+  "changelog": [
+    { "version": 2, "date": "2026-09-01", "change": "Reverted to the standard PALS dose (5 mg/kg, max 300 mg for ALL doses, repeat up to 2×). The build-package draft's '150 mg subsequent cap' could not be confirmed against current sources and would underdose a repeat in a child ≥ 30 kg — removed." },
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry." }
+  ],
+  "purpose": "Shock-refractory VF / pulseless VT during pediatric cardiac arrest.",
+  "population": "peds",
+  "weightBasis": "actual",
+  "doses": [
+    {
+      "indication": "VF / pulseless VT (after ≥ 3 shocks + epinephrine)",
+      "route": "IV / IO bolus",
+      "rule": { "perKg": 5, "unit": "mg", "maxDose": 300, "maxDoseUnit": "mg", "repeat": "May repeat 5 mg/kg up to 2 more times (3 doses total) for refractory VF/pVT" },
+      "notes": "Rapid bolus in arrest (unlike the slow infusion used for a perfusing rhythm). Lidocaine 1 mg/kg IV/IO is the accepted alternative."
+    }
+  ],
+  "buildNote": "Standard PALS: 5 mg/kg, max single dose 300 mg, may repeat twice. If the maintainer has the actual 2025 PALS PDF and it specifies a different subsequent-dose cap, add it back as a second `doses` row (that's how a per-attempt difference is encoded — the engine has no attempt counter)."
+}

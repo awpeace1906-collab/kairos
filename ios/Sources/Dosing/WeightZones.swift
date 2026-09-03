@@ -7,9 +7,12 @@ struct EstimatedWeight { let weightKg: Double; let band: String; let estimated =
 
 struct DoseComputation {
     let amount: Double
+    let amountHigh: Double?
     let unit: String
     let capped: Bool
+    let floored: Bool
     let volumeMl: Double?
+    let volumeMlHigh: Double?
     let concentration: String?
     let repeatText: String?
 }
@@ -38,15 +41,27 @@ enum WeightZones {
     /// Live per-kg dose from a drug-card rule. The zone is never consulted here.
     static func dose(from rule: DrugCard.Rule, weightKg: Double) -> DoseComputation? {
         guard weightKg.isFinite else { return nil }
-        var mg = rule.perKg * weightKg
-        var capped = false
-        if let cap = rule.maxDose, mg > cap { mg = cap; capped = true }
-        let volume = rule.mlPerUnit.map { ((mg * $0) * 100).rounded() / 100 }
+
+        func clamp(_ perKg: Double) -> (mg: Double, capped: Bool, floored: Bool) {
+            var mg = perKg * weightKg
+            var capped = false, floored = false
+            if let cap = rule.maxDose, mg > cap { mg = cap; capped = true }
+            if let floor = rule.minDose, mg < floor { mg = floor; floored = true }
+            return (mg, capped, floored)
+        }
+        let lo = clamp(rule.perKg)
+        let hi = rule.perKgHigh.map(clamp)
+
+        let round3 = { (v: Double) in (v * 1000).rounded() / 1000 }
+        let round2 = { (v: Double) in (v * 100).rounded() / 100 }
         return DoseComputation(
-            amount: (mg * 1000).rounded() / 1000,
+            amount: round3(lo.mg),
+            amountHigh: hi.map { round3($0.mg) },
             unit: rule.unit ?? "mg",
-            capped: capped,
-            volumeMl: volume,
+            capped: lo.capped || (hi?.capped ?? false),
+            floored: lo.floored,
+            volumeMl: rule.mlPerUnit.map { round2(lo.mg * $0) },
+            volumeMlHigh: (rule.mlPerUnit != nil && hi != nil) ? round2(hi!.mg * rule.mlPerUnit!) : nil,
             concentration: rule.concentration,
             repeatText: rule.repeatText
         )

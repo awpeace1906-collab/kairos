@@ -1,0 +1,48 @@
+{
+  "id": "cisatracurium",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Neuromuscular Blockers",
+  "title": "Cisatracurium",
+  "aliases": [
+    "Nimbex"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "nmb",
+    "cisatracurium"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Nimbex",
+  "tallManLetters": "cisATRacurium",
+  "drugClass": "nmb",
+  "drugClassLabel": "NMB",
+  "mechanism": "Benzylisoquinolinium non-depolarizing NMB. Competitive cholinergic antagonist at NMJ. Hofmann elimination — spontaneous, organ-independent degradation (temperature and pH dependent).",
+  "onset": "~3–5 min",
+  "duration": "~45–60 min",
+  "dosing": "Intubation: 0.15–0.2 mg/kg IV\nMaintenance bolus: 0.03 mg/kg q20 min\nMaintenance infusion: 1–3 mcg/kg/min",
+  "cautions": [
+    "AEs: Minimal histamine release at clinical doses; laudanosine CNS stimulation with high doses/prolonged infusion; residual block",
+    "CI: Hypersensitivity; 10 mL multidose vials contraindicated in <1 month or low birth-weight infants (benzyl alcohol preservative)",
+    "Precautions: Laudanosine accumulates with prolonged high-dose infusion; Hofmann elimination slows in hypothermia or acidosis; does NOT respond to sugammadex"
+  ],
+  "pearls": [
+    "Drug of choice in severe hepatic/renal failure — organ-independent metabolism. Preferred ICU NMB for ARDS (ACURASYS trial).",
+    "Does NOT respond to sugammadex — plan reversal with neostigmine accordingly. Benzylisoquinolinium class — not an aminosteroid."
+  ],
+  "reversal": "Neostigmine 0.07 mg/kg (MAX 5 mg) at TOF ≥T4 — NO sugammadex efficacy"
+}

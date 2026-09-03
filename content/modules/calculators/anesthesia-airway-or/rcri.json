@@ -1,0 +1,36 @@
+{
+  "id": "rcri",
+  "section": "Calculators",
+  "category": "Anesthesia / Airway / OR",
+  "title": "Revised Cardiac Risk Index (RCRI)",
+  "aliases": ["Lee index", "RCRI", "perioperative cardiac risk"],
+  "tags": ["perioperative", "cardiac risk", "noncardiac surgery", "preop", "OR"],
+  "contentType": "calculator",
+  "content_version": 2,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Lee TH et al. Circulation 1999;100:1043-9 (PMID 10477528)", "Duceppe E et al. CCS. Can J Cardiol 2017;33:17-32"],
+  "changelog": [
+    { "version": 2, "date": "2026-09-01", "change": "Tier 1 verification: replaced the unsourced Class III (~2.4%) / IV (~5.4%+) risk figures with the Lee 1999 validation-cohort rates (0.4 / 0.9 / 6.6 / 11%). Score logic and class boundaries were confirmed correct." },
+    { "version": 1, "date": "2026-09-01", "change": "Initial entry from Calculator_Logic_Build_Spec.md." }
+  ],
+  "engine": "additive",
+  "settings": ["OR", "Anesthesia"],
+  "purpose": "Perioperative risk of major cardiac events (MI, pulmonary edema, VF/arrest, complete heart block) for noncardiac surgery; informs the need for further workup and monitoring.",
+  "items": [
+    { "key": "surgery", "label": "High-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "ihd", "label": "History of ischemic heart disease", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "chf", "label": "History of congestive heart failure", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "cva", "label": "History of cerebrovascular disease (stroke or TIA)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "dm", "label": "Insulin-dependent diabetes", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "cr", "label": "Creatinine > 2.0 mg/dL", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "Class I", "risk": "~0.4% 30-day major cardiac event (Lee 1999 validation cohort)", "severity": "low" },
+    { "min": 1, "max": 1, "label": "Class II", "risk": "~0.9%", "severity": "low" },
+    { "min": 2, "max": 2, "label": "Class III", "risk": "~6.6%", "severity": "moderate" },
+    { "min": 3, "max": 6, "label": "Class IV", "risk": "~11% (contemporary cohorts cite up to 15%)", "disposition": "Functional-capacity assessment, consider biomarkers (BNP/troponin) and cardiology input before elective surgery", "severity": "high" }
+  ],
+  "notes": "Risk figures are the Lee 1999 derivation/validation rates for death, MI, pulmonary edema, VF/arrest, or complete heart block within 30 days. Contemporary nationwide cohorts run somewhat lower for classes I-II (~0.2 / 1.0%) and similar-to-higher for III-IV (~4 / 8% up to 10 / 15%)."
+}

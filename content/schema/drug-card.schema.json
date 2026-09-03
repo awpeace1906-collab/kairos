@@ -38,8 +38,10 @@
             "required": ["perKg"],
             "properties": {
               "perKg": { "type": "number", "description": "mg/kg (or unit/kg) per dose." },
+              "perKgHigh": { "type": "number", "description": "Upper bound when the dose is a per-kg range (perKg is the lower bound)." },
               "unit": { "type": "string", "default": "mg" },
               "maxDose": { "type": "number", "description": "Absolute per-dose cap." },
+              "minDose": { "type": "number", "description": "Absolute per-dose floor (e.g. atropine 0.1 mg to avoid paradoxical bradycardia)." },
               "maxDoseUnit": { "type": "string" },
               "concentration": { "type": "string", "description": "e.g. '1:10,000 = 0.1 mg/mL' for a volume readout." },
               "mlPerUnit": { "type": "number" },

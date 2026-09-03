@@ -1,0 +1,37 @@
+{
+  "id": "csection-analgesia-prospect",
+  "section": "Reference Library",
+  "category": "Obstetric Emergencies",
+  "title": "Post-Caesarean Analgesia (PROSPECT 2026)",
+  "aliases": ["cesarean section pain management", "PROSPECT c-section", "intrathecal morphine dose", "TAP block cesarean", "post-caesarean multimodal analgesia"],
+  "tags": ["obstetric anesthesia", "caesarean", "post-operative analgesia", "intrathecal morphine", "fascial plane block", "multimodal analgesia", "dexamethasone", "OB", "anesthesia"],
+  "keywords": ["intrathecal morphine 50-100 mcg", "diamorphine 300 mcg", "scheduled paracetamol NSAID", "dexamethasone 8-10 mg", "TAP QL block", "Joel-Cohen", "PROSPECT Working Group"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — Cesarean Section Analgesia: The 2026 PROSPECT Update",
+    "Crowe G, Atterton B, Roofthooft E, et al; PROSPECT Working Group (ESRA). Pain management after elective caesarean section under neuraxial anaesthesia — updated SR and PROSPECT recommendations. Anaesthesia 2026;81:819-839"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — the 2026 PROSPECT six-domain recommendation for post-caesarean analgesia under neuraxial anaesthesia." }],
+  "summary": "Three load-bearing pillars: (1) a single neuraxial long-acting opioid, (2) scheduled — not as-needed — paracetamol + NSAID, (3) a single IV dexamethasone dose after delivery. Everything else is an addition. Oral opioids are the rescue backstop, not a routine component.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Six-domain recommendation (elective caesarean under neuraxial anaesthesia)" },
+    { "type": "table",
+      "columns": ["Domain", "Recommendation"],
+      "rows": [
+        ["Neuraxial opioid (the backbone)", "Intrathecal morphine 50–100 mcg OR diamorphine up to 300 mcg. Epidural alternative 2–3 mg morphine if a catheter is in place. A single preoperative dose gives many hours of analgesia without the systemic opioid burden."],
+        ["Local / regional alternative", "If intrathecal morphine was NOT used: wound infiltration or a fascial plane block (TAP, transversalis fascia, QL, ilioinguinal/iliohypogastric) intraoperatively after delivery. None is superior to the others — the abdominal wall just needs covering by one mechanism."],
+        ["Systemic analgesia", "Scheduled paracetamol AND NSAIDs, started peri- or intraoperatively, continued postoperatively — not rescue dosing. Two non-opioid mechanisms established before the neuraxial opioid wears off."],
+        ["IV dexamethasone", "Single dose 8–10 mg IV after delivery — independent analgesic contribution plus antiemetic benefit in a high-PONV population."],
+        ["Surgical technique", "Joel-Cohen incision (not Pfannenstiel), non-closure of the peritoneum, abdominal binder — incision and closure choices measurably change the pain trajectory before any drug."],
+        ["Adjuncts / rescue", "TENS as an adjunct. Oral opioids reserved for breakthrough pain or when the preferred regional techniques can't be used — the backstop, not a fourth pillar."]
+      ]
+    },
+    { "type": "callout", "tone": "info", "text": "Operating principles: default to intrathecal morphine/diamorphine whenever neuraxial anaesthesia is the primary technique; schedule paracetamol + NSAID from the start (don't wait for the patient to ask); give the single dexamethasone dose after delivery; if intrathecal morphine isn't in the plan, default to a fascial plane block or wound infiltration rather than leaning harder on systemic opioids; treat surgical technique as part of the analgesic plan." }
+  ],
+  "related": ["emergency-drugs-pregnancy", "neuraxial-anticoagulation", "nerve-block-guide", "last-lipid-rescue"],
+  "buildNote": "Tier 3, ~6-month review. Elective-caesarean-specific; emergency caesarean under GA and the failed-block scenario are separate."
+}

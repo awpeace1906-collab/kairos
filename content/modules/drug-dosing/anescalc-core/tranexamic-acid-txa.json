@@ -1,0 +1,56 @@
+{
+  "id": "tranexamic-acid-txa",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Anticoagulants / Hemostatics",
+  "title": "Tranexamic Acid (TXA)",
+  "aliases": [
+    "Cyklokapron / Lysteda"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "anticoagulant",
+    "tranexamic",
+    "acid",
+    "txa"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Cyklokapron / Lysteda",
+  "tallManLetters": "TRANEXamic acid",
+  "drugClass": "anticoagulant",
+  "drugClassLabel": "Anticoagulant / Hemostatic",
+  "mechanism": "Synthetic lysine analogue — competitive inhibitor of plasminogen activation. Blocks lysine-binding sites on plasminogen and plasmin, preventing attachment to fibrin → inhibits fibrinolysis. Does NOT promote clotting; preserves clot integrity by preventing premature fibrin degradation. 6–10× more potent than aminocaproic acid.",
+  "onset": "IV: within minutes. Oral: ~3h peak",
+  "duration": "t½ ~3h. Active drug excreted renally; duration of antifibrinolytic effect outlasts serum concentration",
+  "dosing": "CARDIAC SURGERY (on-pump CPB): 10–30 mg/kg IV load before incision (or before sternotomy), then 1–2 mg/kg/hr infusion throughout CPB. Some protocols add 1–2 mg/kg into pump prime. (High-dose: 30/16/2 mg/kg load/infusion/prime has strongest evidence for blood conservation.)\n\nMAJOR ORTHOPEDIC (hip/knee arthroplasty): 1–2 g IV before tourniquet inflation (or incision). Topical: 1.5–3 g in 100 mL NS applied to wound cavity before closure; may combine IV + topical.\n\nTRAUMA / MASSIVE HEMORRHAGE: CRASH-2 protocol — 1 g IV over 10 min within 3h of injury, then 1 g IV over 8h. Benefit attenuated after 3h; harmful if given >3h post-injury.\n\nOBSTETRICS (PPH prevention/treatment): 1 g IV over 10 min after delivery (WHO 2017 recommendation). Repeat 1 g if bleeding continues after 30 min or restarts within 24h.\n\nNEUROSURGERY / SPINE: 1 g IV load, 100–200 mg/hr infusion intraoperatively.\n\nPEDIATRIC: 10–50 mg/kg IV over 15 min (dose varies widely by center/protocol; cardiac surgery typically 50–100 mg/kg load).\n\nRENAL DOSING:\nCrCl 10–50 mL/min → reduce to 50% of dose\nCrCl <10 mL/min → reduce to 25% of dose or avoid",
+  "cautions": [
+    "SEIZURES: Dose-dependent neurotoxicity — TXA crosses blood-brain barrier and acts as GABA-A and glycine receptor antagonist. Risk highest with high doses (cardiac surgery), direct intrathecal/intracerebroventricular exposure, renal failure (accumulation), and in neonates. Seizures typically occur within hours of cardiac surgery. Use seizure precautions with high-dose protocols.",
+    "THROMBOEMBOLIC EVENTS: TXA is PRO-thrombotic in the right context. Contraindicated in: active intravascular clotting (DIC with clotting phase), subarachnoid hemorrhage from ruptured aneurysm (unless awaiting surgery), and in patients with history of VTE without adequate anticoagulation. Not independently associated with MI/PE at clinical doses based on large RCTs (ATACAS, CRASH-2).",
+    "RENAL ACCUMULATION: Renally excreted; dose-reduce in renal impairment. Accumulation → elevated drug levels → seizure risk.",
+    "CI: Active thromboembolic disease; DIC with clotting predominance; hypersensitivity; ureteral bleeding from upper tract lesions (may cause ureteral obstruction from clot).",
+    "INTRATHECAL EXPOSURE (inadvertent): Extremely seizurogenic — TXA must NEVER be placed in syringes alongside neuraxial drugs. Label clearly; use in separate syringes/IV lines only. Multiple reported catastrophic errors."
+  ],
+  "pearls": [
+    "STRONGEST perioperative antifibrinolytic — robust RCT evidence for blood conservation in cardiac, orthopedic, trauma, and obstetric settings. Meta-analyses consistently show 30–40% reduction in transfusion requirement.",
+    "CARDIAC SURGERY — ATACAS trial (2017, N=4,631): TXA reduced transfusion by ~35% with no increase in thromboembolic events vs. placebo. Seizure rate ~0.7% (vs. 0.1% placebo) — mainly with high-dose protocols.",
+    "TRAUMA — CRASH-2 trial (N=20,211): 1g bolus + 1g over 8h within 3h of injury reduced all-cause mortality (14.5% vs 16.0%). TIME IS CRITICAL — benefit lost after 3h; harmful effect if given late.",
+    "TOPICAL APPLICATION (orthopedics): 1.5–3 g in NS poured/soaked into wound → equivalent blood loss reduction to IV, with minimal systemic absorption and no systemic thrombotic risk. Ideal for patients with thromboembolic history.",
+    "SEIZURE PREVENTION: Avoid pump prime concentrations >~0.5 mmol/L. In high-risk patients (renal failure, elderly, high-dose protocols), consider EEG monitoring; treat TXA-induced seizures with benzodiazepines (not phenytoin — less effective for GABA-mechanism seizures).",
+    "LABEL ALL SYRINGES CLEARLY — the most catastrophic TXA errors have been inadvertent intrathecal injection (mistaken for bupivacaine or saline). Strict preparation protocols mandatory."
+  ],
+  "reversal": "No specific antidote; hemodialysis can remove TXA; seizures treated with benzodiazepines"
+}

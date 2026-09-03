@@ -1,0 +1,62 @@
+{
+  "id": "beta-blocker-selectivity",
+  "section": "Reference Library",
+  "category": "Cardiac / ECG",
+  "title": "Beta-Blocker Receptor Selectivity",
+  "aliases": ["beta blocker chart", "cardioselective beta blockers", "metoprolol vs carvedilol", "labetalol receptors", "sotalol class III", "nebivolol nitric oxide"],
+  "tags": ["beta blocker", "pharmacology", "cardioselective", "carvedilol", "labetalol", "sotalol", "nebivolol", "propranolol", "overdose", "membrane-stabilizing activity"],
+  "keywords": ["B1", "B2", "alpha-1", "membrane stabilizing activity", "MSA", "class III antiarrhythmic", "QT prolongation", "bronchospasm"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — Beta Blocker Receptor-Selectivity Cheat Sheet, checked against pharmacology (verified)",
+    "Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. — adrenergic receptor pharmacology",
+    "Goldfrank's Toxicologic Emergencies — beta-blocker overdose / membrane-stabilizing activity",
+    "Sotalol FDA prescribing information — class III mechanism and QT monitoring"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV receptor-selectivity chart audit, with the dose-dependence caveats it flags." }
+  ],
+  "summary": "Which receptors each beta-blocker actually hits, why each blockade produces its effect, and the three places a one-grid chart oversimplifies (selectivity is dose-dependent; the Na⁺ and K⁺ columns are the overdose / arrhythmia stories).",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Receptor activity by agent" },
+    { "type": "table",
+      "columns": ["Agent", "β1", "β2", "α1", "Na⁺ (MSA)", "K⁺", "NO↑"],
+      "rows": [
+        ["Metoprolol", "✓", "", "", "", "", ""],
+        ["Atenolol", "✓", "", "", "", "", ""],
+        ["Bisoprolol", "✓", "", "", "", "", ""],
+        ["Propranolol", "✓", "✓", "", "✓", "", ""],
+        ["Nadolol", "✓", "✓", "", "", "", ""],
+        ["Sotalol", "✓", "✓", "", "", "✓", ""],
+        ["Carvedilol", "✓", "✓", "✓", "mild", "", ""],
+        ["Labetalol", "✓", "✓", "✓", "mild", "", ""],
+        ["Nebivolol", "✓", "", "", "", "", "✓↑"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Why each blockade does what it does" },
+    { "type": "table",
+      "columns": ["Blocked", "Effect and mechanism"],
+      "rows": [
+        ["β1", "Dominant cardiac subtype — blocking it lowers cAMP-driven calcium influx in the SA node, AV node, and myocardium: slower rate, weaker contraction, slower conduction."],
+        ["β2", "Mediates bronchial and skeletal-muscle vascular smooth-muscle relaxation — blockade removes that relaxation, hence bronchospasm risk in reactive airway disease and blunting of the adrenergic warning signs of hypoglycemia."],
+        ["α1", "Blockade removes peripheral arterial/venous vasoconstriction, dropping afterload directly — the extra BP-lowering effect of carvedilol and labetalol beyond β1 blockade alone."],
+        ["Na⁺ (membrane-stabilizing activity)", "High-dose fast-sodium-channel blockade slows phase-0 depolarization and widens the QRS. Clinically it matters most in overdose — propranolol's combined β1 + Na⁺ blockade makes it disproportionately dangerous vs cardioselective agents."],
+        ["K⁺", "Sotalol's potassium-channel blockade is its defining class III antiarrhythmic property — it prolongs QT (therapeutic for reentrant arrhythmias, but the mechanism behind its dose-dependent torsades risk). This is why sotalol is dosed and monitored differently from other beta-blockers."],
+        ["NO↑", "Nebivolol stimulates endothelial nitric oxide release, producing vasodilation independent of beta blockade — the basis of its comparatively neutral hemodynamic and metabolic profile."]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Where the one-page chart oversimplifies" },
+    { "type": "list", "items": [
+      "'Cardioselective' is dose-dependent, not absolute. Metoprolol, atenolol, and bisoprolol are β1-selective at typical doses, but selectivity narrows and disappears at higher doses — a 'cardioselective' agent can still provoke bronchospasm in a severe asthmatic at high enough dosing.",
+      "Nebivolol's NO-release advantage is most prominent where β1 selectivity holds; at higher doses selectivity is lost and the NO benefit is correspondingly less distinct.",
+      "Carvedilol and labetalol's α1 effect is genuinely mild (correctly not a full checkmark) but clinically real — the reason both are reasonable when you want beta blockade plus some afterload reduction without a dedicated alpha blocker's orthostatic risk."
+    ] },
+    { "type": "callout", "tone": "info", "text": "For the toxicology of beta-blocker overdose (MSA-driven QRS widening, propranolol lipophilicity/CNS toxicity, high-dose insulin euglycemic therapy, glucagon, lipid emulsion), see the dedicated overdose reference." }
+  ],
+  "related": ["qtc", "acls-adult-cardiac-arrest", "antidotes-reversal-agents"],
+  "buildNote": "Tier 3, low churn — annual review is enough (mechanistic pharmacology). A beta-blocker / calcium-channel-blocker overdose management module is the natural follow-on referenced in the closing callout."
+}

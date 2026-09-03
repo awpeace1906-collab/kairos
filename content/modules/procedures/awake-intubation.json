@@ -1,0 +1,46 @@
+{
+  "id": "awake-intubation",
+  "section": "Procedures",
+  "category": "Airway & Sedation Workflows",
+  "title": "Awake Intubation (ICU)",
+  "aliases": ["awake fibreoptic intubation", "AFOI", "awake videolaryngoscopy", "topicalisation airway", "tube before sleep"],
+  "tags": ["awake intubation", "difficult airway", "physiologically difficult airway", "topicalisation", "dexmedetomidine", "ICU", "anesthesia"],
+  "keywords": ["INTUBE study", "9 mg/kg lean body weight lidocaine", "spray-as-you-go", "glycopyrrolate", "HFNC", "DAS"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — Awake Intubation in the ICU (verified vs primary literature)",
+    "Russotto V et al. INTUBE study. JAMA 2021 (45.2% major peri-intubation adverse event)",
+    "Difficult Airway Society — topical local anaesthetic ceiling 9 mg/kg lean body weight",
+    "Propensity-matched ICU awake vs VL vs DL study (adverse events 2.2% vs 22% vs 47%)"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV awake-intubation guide. Who stays awake, when not to, topicalisation ceiling, 'just enough' sedation, the 7-step recipe, and DSI as the fallback." }],
+  "purpose": "Keep the sickest patients breathing through the intubation. Awake intubation preserves spontaneous ventilation, sympathetic tone, and airway reflexes — it buys time instead of racing a desaturation clock. The tube goes in BEFORE the patient goes to sleep.",
+  "outputType": "workflow",
+  "crossLinks": ["physiologically-difficult-airway", "airway-management-flow", "capnography", "lemon-airway", "cormack-lehane"],
+  "nodes": [
+    { "id": "decide", "type": "step", "prompt": "1. Decide — is this patient too sick for RSI?", "body": "RSI does three things at once: removes sympathetic tone (induction), eliminates spontaneous ventilation (paralytic), and switches to positive pressure (drops preload). Stay awake when the patient can't absorb even one: predicted difficult airway + difficult rescue; severe hypoxaemia (can't tolerate apnoea); shock / haemodynamic instability (can't tolerate induction); severe metabolic acidosis (compensatory tachypnoea is keeping them alive); right heart failure (positive pressure is a disaster). See the Physiologically Difficult Airway reference." },
+    { "id": "notawake", "type": "warning", "prompt": "When NOT to intubate awake", "body": "Uncooperative / combative patient who can't tolerate topicalisation → use DSI instead. True crash airway or cardiac arrest → no time, secure it now. Active vomiting / massive haematemesis → need paralysis + suction speed, not slow topicalisation. Local-anaesthetic allergy → no topicalisation, no awake intubation. Operator inexperience without backup → a poorly done awake intubation is worse than a well-executed RSI." },
+    { "id": "prepare", "type": "step", "prompt": "2. Prepare", "body": "Glycopyrrolate 0.2 mg IV to dry secretions (lets lidocaine stick instead of washing off). Suction on. Backup plan verbalised (SGA, surgical airway kit open). Flexible bronchoscope or a hyperangulated-blade videolaryngoscope — VL is a legitimate alternative, not a downgrade; the best device is the one in skilled hands." },
+    { "id": "topicalise", "type": "step", "prompt": "3. Topicalise — this is where it succeeds or fails", "body": "Atomiser: 4% lidocaine to the oropharynx and hypopharynx. Nebuliser: 4% lidocaine 4–5 mL over 10–15 min if time allows. Spray-as-you-go: lidocaine through the scope's working channel onto the cords. Ceiling: 9 mg/kg LEAN body weight for topical airway use (DAS) — mucosal absorption is incomplete so plasma levels stay well below toxic at this dose." },
+    { "id": "sedate", "type": "step", "prompt": "4. Sedate — 'just enough': calm, cooperative, spontaneously breathing (NOT asleep)", "body": "Dexmedetomidine — anxiolysis, antisialagogue, minimal respiratory depression; less hypoxaemia than remifentanil (RR 2.47). Load 1 mcg/kg over 10 min, then 0.2–0.7 mcg/kg/hr; watch for bradycardia. Alternatives: remifentanil (great cough suppression, watch for apnoea + chest-wall rigidity), ketamine (dissociation with preserved reflexes, useful in the combative patient). If the patient stops breathing you've turned this into an RSI — with a mouth full of lidocaine and no paralytic on board." },
+    { "id": "oxygenate", "type": "step", "prompt": "5. Oxygenate", "body": "High-flow nasal cannula at 40–60 L/min throughout the procedure." },
+    { "id": "intubate", "type": "step", "prompt": "6. Intubate", "body": "Scope or VL. Confirm placement with waveform capnography (see the Capnography reference)." },
+    { "id": "induce", "type": "step", "prompt": "7. THEN induce", "body": "Give induction / sedation only AFTER the tube is confirmed. The tube goes in before the patient goes to sleep." },
+    { "id": "dsi", "type": "step", "prompt": "Fallback — delayed sequence intubation (DSI)", "body": "For the agitated / intolerant patient who can't cooperate with topicalisation: a dissociative dose of ketamine (~0.3 mg/kg reported for the apnoea-free window) to allow effective preoxygenation, then proceed. DSI is a preoxygenation strategy, not a separate induction technique." }
+  ],
+  "checklist": [
+    "Decision documented: physiologically or anatomically too high-risk for RSI",
+    "No contraindication to an awake approach (cooperative, not crashing, no LA allergy, operator competent + backup present)",
+    "Glycopyrrolate given; suction, SGA, and surgical airway kit at the bedside",
+    "Topical lidocaine total kept ≤ 9 mg/kg lean body weight",
+    "Sedation titrated to calm-and-breathing, not asleep",
+    "HFNC running throughout",
+    "Tube confirmed with waveform capnography BEFORE induction"
+  ],
+  "noteTemplate": "AWAKE INTUBATION, indication {{indication}} (too high-risk for RSI: {{risk}}). Glycopyrrolate 0.2 mg IV. Topicalisation: 4% lidocaine {{topical}} (total {{lidocaineDose}} mg, < 9 mg/kg LBW). Sedation: {{sedation}} titrated to spontaneous ventilation. HFNC {{flow}} L/min. Device: {{device}}. First-pass {{firstPass}}. Tube confirmed by EtCO2, {{tubeDepth}} cm at the lip. Induction given after confirmation. Complications: {{complications}}.",
+  "buildNote": "Tier 1. Cross-links physiologically-difficult-airway (the who-stays-awake logic), airway-management-flow, capnography, LEMON, Cormack-Lehane."
+}

@@ -1,0 +1,34 @@
+{
+  "id": "peds-atropine-bradycardia",
+  "section": "Drug & Dosing Cards",
+  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "title": "Atropine — Pediatric (bradycardia / RSI premedication)",
+  "aliases": ["peds atropine", "vagal bradycardia dose"],
+  "tags": ["bradycardia", "vagal", "AV block", "RSI premedication", "peds", "PALS"],
+  "contentType": "drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["AHA 2025 PALS", "Drug_Dosing_Peds_Weight_Based_Spec.md"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry — includes the 0.1 mg minimum-dose floor and revised RSI-premedication indication." }],
+  "purpose": "Symptomatic bradycardia from vagal tone or primary AV block. NOT routine for PEA/asystole. RSI premedication is now narrowly indicated: children < 1 year undergoing direct laryngoscopy, independent of paralytic choice.",
+  "population": "peds",
+  "weightBasis": "actual",
+  "doses": [
+    {
+      "indication": "Symptomatic bradycardia (vagal / AV block), or RSI premedication in an infant < 1 year for direct laryngoscopy",
+      "route": "IV / IO",
+      "rule": {
+        "perKg": 0.02,
+        "unit": "mg",
+        "minDose": 0.1,
+        "maxDose": 0.5,
+        "maxDoseUnit": "mg",
+        "repeat": "May repeat once. Max single dose 0.5 mg (child) / 1 mg (adolescent)."
+      },
+      "notes": "Minimum single dose 0.1 mg — smaller doses can cause paradoxical bradycardia. Not indicated for PEA/asystole."
+    }
+  ],
+  "buildNote": "Demonstrates minDose flooring. Adolescent single-dose cap (1 mg) differs from the child cap (0.5 mg) — the rule uses the child cap; note the adolescent value in copy."
+}

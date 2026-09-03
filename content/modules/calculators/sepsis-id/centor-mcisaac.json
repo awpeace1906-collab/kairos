@@ -1,0 +1,35 @@
+{
+  "id": "centor-mcisaac",
+  "section": "Calculators",
+  "category": "Sepsis / Infectious Disease",
+  "title": "Centor Score / McIsaac Modification",
+  "aliases": ["Centor criteria", "strep pharyngitis score", "sore throat score"],
+  "tags": ["pharyngitis", "strep throat", "GAS", "antibiotics", "rapid strep test", "ED"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["Centor RM et al. Med Decis Making 1981", "McIsaac WJ et al. CMAJ 1998"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry — includes the McIsaac age adjustment (a −1 option)." }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Probability of group A strep pharyngitis; guides rapid antigen testing vs. empiric antibiotics vs. neither.",
+  "items": [
+    { "key": "exudate", "label": "Tonsillar exudate or swelling", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "nodes", "label": "Tender/swollen anterior cervical lymph nodes", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "fever", "label": "Fever > 38 °C (by history or measured)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "cough", "label": "Cough", "options": [{ "label": "Present", "points": 0 }, { "label": "Absent", "points": 1 }] },
+    { "key": "age", "label": "Age (McIsaac adjustment)", "options": [
+      { "label": "3-14 years", "points": 1 },
+      { "label": "15-44 years", "points": 0 },
+      { "label": "≥ 45 years", "points": -1 }
+    ] }
+  ],
+  "interpretation": [
+    { "min": -1, "max": 1, "label": "Low probability (~1-10%)", "disposition": "No testing or antibiotics", "severity": "low" },
+    { "min": 2, "max": 3, "label": "Intermediate (~11-35%)", "disposition": "Rapid antigen test ± culture; treat if positive", "severity": "moderate" },
+    { "min": 4, "max": 5, "label": "High (~50%+)", "disposition": "Rapid test; empiric antibiotics reasonable while awaiting result per local practice", "severity": "high" }
+  ],
+  "notes": "Not for age < 3 (strep pharyngitis rare, rheumatic fever risk low) or immunocompromised patients."
+}

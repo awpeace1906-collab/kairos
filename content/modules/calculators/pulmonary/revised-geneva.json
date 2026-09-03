@@ -1,0 +1,36 @@
+{
+  "id": "revised-geneva",
+  "section": "Calculators",
+  "category": "Pulmonary / PE / DVT / Resp Failure",
+  "title": "Revised Geneva Score for PE",
+  "aliases": ["Geneva score", "revised Geneva", "PE pretest probability", "objective PE score"],
+  "tags": ["pulmonary embolism", "pretest probability", "d-dimer", "ED"],
+  "keywords": ["age > 65", "previous DVT or PE", "surgery or fracture within 1 month", "active malignancy", "unilateral limb pain", "hemoptysis", "heart rate", "pain on deep venous palpation"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["Le Gal G et al. Ann Intern Med 2006; simplified revised Geneva (Klok FA et al. Arch Intern Med 2008)"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx. Standard (non-simplified) point weights." }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Pretest probability of PE using only objective, reproducible variables (no 'PE is the leading diagnosis' gestalt item) — useful when clinician experience varies or for documentation. Drives the D-dimer vs. CT decision.",
+  "items": [
+    { "key": "age65", "label": "Age > 65", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "priorVte", "label": "Previous DVT or PE", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 3 }] },
+    { "key": "surgeryFracture", "label": "Surgery (general anaesthesia) or lower-limb fracture within 1 month", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "malignancy", "label": "Active malignancy (solid or haematologic, current or cured < 1 year)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "unilatLimbPain", "label": "Unilateral lower-limb pain", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 3 }] },
+    { "key": "hemoptysis", "label": "Haemoptysis", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "hr", "label": "Heart rate", "options": [{ "label": "< 75", "points": 0 }, { "label": "75–94", "points": 3 }, { "label": "≥ 95", "points": 5 }] },
+    { "key": "legTenderness", "label": "Pain on lower-limb deep venous palpation AND unilateral oedema", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 4 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 3, "label": "Low probability (~ 8% PE prevalence) — proceed to D-dimer (age-adjusted); a negative D-dimer rules out PE", "severity": "low" },
+    { "min": 4, "max": 10, "label": "Intermediate probability (~ 29%) — D-dimer; negative rules out, positive → CT pulmonary angiography", "severity": "moderate" },
+    { "min": 11, "max": 25, "label": "High probability (~ 74%) — go straight to CT pulmonary angiography; a negative D-dimer does NOT rule out PE here", "severity": "high" }
+  ],
+  "notes": "Two-tier reading: ≤ 5 = 'PE unlikely' → D-dimer; ≥ 6 = 'PE likely' → imaging. The SIMPLIFIED revised Geneva scores every item 1 point (heart rate 75–94 = 1, ≥ 95 = 2) with a 0–2 / ≥ 3 (or ≤ 1 / ≥ 2) cutoff — validated as equivalent. Pair with PERC / YEARS as appropriate.",
+  "buildNote": "Standard weights implemented; a simplified toggle is a refinement."
+}

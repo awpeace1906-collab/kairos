@@ -25,7 +25,11 @@
       "items": { "$ref": "common.schema.json#/$defs/id" }
     },
     "embeddedCalculator": { "$ref": "calculator.schema.json" },
-    "body": { "type": "array", "items": { "type": "object" } },
+    "body": {
+      "type": "array",
+      "description": "Ordered content blocks, same shape as a reference module's body.",
+      "items": { "$ref": "reference.schema.json#/properties/body/items" }
+    },
     "buildNote": { "type": "string" }
   }
 }

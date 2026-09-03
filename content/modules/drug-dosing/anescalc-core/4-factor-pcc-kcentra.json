@@ -1,0 +1,54 @@
+{
+  "id": "4-factor-pcc-kcentra",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Anticoagulants / Hemostatics",
+  "title": "4-Factor PCC (Kcentra)",
+  "aliases": [
+    "Kcentra / Beriplex / Octaplex"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "anticoagulant",
+    "factor",
+    "pcc",
+    "kcentra"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Kcentra / Beriplex / Octaplex",
+  "drugClass": "anticoagulant",
+  "drugClassLabel": "Anticoagulant / Hemostatic",
+  "mechanism": "Prothrombin Complex Concentrate (4-Factor): pooled human plasma-derived concentrate of clotting factors II, VII, IX, and X (vitamin K-dependent factors), plus Proteins C and S. Directly replaces vitamin K-dependent factors depleted by warfarin or factor Xa inhibitors. Provides immediate coagulation factor restoration without large volume load. Activated 4F-PCC (FEIBA) contains activated Factor VII and is used specifically for inhibitor bypassing in hemophilia.",
+  "onset": "5–15 min (INR reversal begins within minutes)",
+  "duration": "Factor half-lives vary: FIX ~24h, FX ~40h, FII ~60h, FVII ~4–6h (FVII is shortest — may need repeat dosing for warfarin)",
+  "dosing": "WARFARIN REVERSAL (urgent/emergent — e.g., life-threatening bleeding, urgent surgery):\nINR 2–3.9 → 25 units/kg (max 2,500 units)\nINR 4–6 → 35 units/kg (max 3,500 units)\nINR >6 → 50 units/kg (max 5,000 units)\nALWAYS give with Vitamin K 10 mg IV concurrently (PCC effect lasts only hours; VitK replenishes endogenous production). Target: INR <1.5 within 30 min.\n\nFACTOR Xa INHIBITOR REVERSAL (apixaban, rivaroxaban — off-label use):\n25–50 units/kg IV (literature supports; andexanet alfa is FDA-approved alternative)\nMost institutions use 25–50 units/kg for urgent reversal when andexanet alfa unavailable\n\nPEDIATRIC: Same weight-based dosing; unit doses vary by product\n\nADMINISTRATION: Max infusion rate 8–12 mL/min. Typically administered over 15–30 min. Do NOT mix with other IV medications.\n\n3-FACTOR PCC (factors II, IX, X only — no FVII; e.g., Profilnine):\nLess preferred for warfarin reversal due to FVII omission — FVII deficiency is primary driver of warfarin-related INR elevation.",
+  "cautions": [
+    "THROMBOEMBOLISM: Contains concentrated procoagulant factors — risk of DVT, PE, MI, stroke (particularly in patients with pre-existing thrombotic risk or DIC). Use lowest effective dose. Avoid in active thrombosis unless life-threatening bleeding.",
+    "HEPARIN-INDUCED THROMBOCYTOPENIA: Some 4F-PCC formulations contain heparin as stabilizer — contraindicated in HIT. Check product insert (Kcentra does contain heparin).",
+    "ALWAYS CO-ADMINISTER VITAMIN K for warfarin reversal: PCC factors are consumed within hours; without concurrent VitK (10 mg IV), INR will re-elevate as PCC factors are metabolized. VitK takes 6–24h to restore endogenous synthesis.",
+    "DIC CONTRAINDICATION: Do not use in disseminated intravascular coagulation — adding concentrated factors to an already dysregulated coagulation cascade can worsen DIC and thrombotic complications.",
+    "Volume advantage vs. FFP: 4F-PCC delivers equivalent factor replacement in ~25 mL vs. 4–6 units FFP (~1,000 mL). Critical advantage in volume-sensitive patients (CHF, severe renal failure, pediatric)."
+  ],
+  "pearls": [
+    "WARFARIN REVERSAL — FOUR-Rs: Kcentra (4F-PCC) is now preferred over FFP for urgent warfarin reversal based on ANNEXA-4 and earlier PCC vs FFP RCTs. Faster INR correction (15–30 min vs. 12–24h for VitK alone; 2–6h for FFP), less volume, no blood type required, no viral transmission risk.",
+    "FACTOR Xa INHIBITOR (rivaroxaban/apixaban) — OFF-LABEL but widely used: PCC 25–50 units/kg is the de facto standard when andexanet alfa is unavailable (cost, formulary) or for immediate reversal. Evidence comes from healthy volunteer studies and observational data — not as robust as andexanet alfa trial (ANNEXA-4).",
+    "FEIBA (Factor Eight Inhibitor Bypassing Activity — activated PCC): Contains activated FVII; used specifically for bleeding in hemophilia A/B WITH inhibitors (antibodies neutralizing FVIII or FIX). NOT interchangeable with Kcentra. Different dosing and indications.",
+    "MONITORING POST-ADMINISTRATION: Repeat INR 30 min and 6h post-infusion. If INR re-rises >1.5 after initial correction, consider repeat dosing or evaluation for continued VitK deficiency (especially if VitK not given).",
+    "COST AND ACCESS: Kcentra is expensive (~$1,000–4,000 per dose) but readily available and rapidly administered. Andexanet alfa (Xa reversal) is substantially more expensive (~$25,000–50,000/course). Institutional protocols should define when each agent is appropriate."
+  ],
+  "reversal": "No reversal — if thrombosis from PCC occurs, anticoagulate appropriately"
+}

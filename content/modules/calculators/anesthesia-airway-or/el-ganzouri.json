@@ -1,0 +1,34 @@
+{
+  "id": "el-ganzouri",
+  "section": "Calculators",
+  "category": "Anesthesia / Airway / OR",
+  "title": "El-Ganzouri Risk Index (Difficult Airway)",
+  "aliases": ["EGRI", "El-Ganzouri", "simplified airway risk index", "SARI", "difficult intubation score"],
+  "tags": ["airway assessment", "difficult intubation", "preoperative", "OR", "anesthesia"],
+  "keywords": ["mouth opening", "thyromental distance", "Mallampati", "neck movement", "ability to prognath", "weight", "history of difficult intubation"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["el-Ganzouri AR et al. Anesth Analg 1996; simplified airway risk index (SARI)"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["OR", "Anesthesia"],
+  "purpose": "A weighted seven-factor preoperative score for predicting difficult laryngoscopy / intubation. A score ≥ 4 predicts difficulty and should trigger an explicit difficult-airway plan (awake technique, videolaryngoscopy first, senior help, equipment at hand).",
+  "items": [
+    { "key": "mouthOpening", "label": "Mouth opening (inter-incisor distance)", "options": [{ "label": "≥ 4 cm", "points": 0 }, { "label": "< 4 cm", "points": 1 }] },
+    { "key": "tmd", "label": "Thyromental distance", "options": [{ "label": "> 6.5 cm", "points": 0 }, { "label": "6.0–6.5 cm", "points": 1 }, { "label": "< 6.0 cm", "points": 2 }] },
+    { "key": "mallampati", "label": "Modified Mallampati class", "options": [{ "label": "I", "points": 0 }, { "label": "II", "points": 1 }, { "label": "III", "points": 2 }, { "label": "IV", "points": 2 }] },
+    { "key": "neckMovement", "label": "Neck movement (range of head/neck extension)", "options": [{ "label": "> 90°", "points": 0 }, { "label": "80–90°", "points": 1 }, { "label": "< 80°", "points": 2 }] },
+    { "key": "prognath", "label": "Ability to prognath (advance lower incisors past upper)", "options": [{ "label": "Yes", "points": 0 }, { "label": "No", "points": 1 }] },
+    { "key": "weight", "label": "Body weight", "options": [{ "label": "< 90 kg", "points": 0 }, { "label": "90–110 kg", "points": 1 }, { "label": "> 110 kg", "points": 2 }] },
+    { "key": "priorDifficult", "label": "History of difficult intubation", "options": [{ "label": "None", "points": 0 }, { "label": "Questionable", "points": 1 }, { "label": "Definite", "points": 2 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 3, "label": "Lower predicted risk of difficult laryngoscopy — proceed with a standard induction plan, but keep a rescue strategy and videolaryngoscope available (no score rules out difficulty)", "severity": "low" },
+    { "min": 4, "max": 12, "label": "Predicted difficult airway — formulate an explicit plan: consider an awake / videolaryngoscopy-first approach, ensure a skilled assistant and difficult-airway cart, optimise position and preoxygenation, and have a surgical-airway plan (front-of-neck access) briefed", "disposition": "Difficult-airway plan", "severity": "high" }
+  ],
+  "notes": "The index misses several important predictors — limited neck extension from a collar/fixed flexion deformity, airway masses/radiation, beard, oedema, blood/secretions, and the physiologically difficult airway (hypoxaemia, hypotension, acidosis). Bedside gestalt plus this score, not the score alone. Videolaryngoscopy reduces but does not eliminate the failure rate in high scorers.",
+  "buildNote": "Additive, 7 weighted items. Threshold ≥ 4 predicts difficulty."
+}

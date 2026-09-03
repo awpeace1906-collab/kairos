@@ -1,0 +1,61 @@
+{
+  "id": "ecg-library",
+  "section": "Reference Library",
+  "category": "Cardiac / ECG",
+  "title": "ECG Library — Key Patterns",
+  "aliases": ["De Winter", "Wellens", "Brugada", "hyperkalemia ECG", "WPW", "STEMI equivalents", "OMI", "occlusion MI"],
+  "tags": ["ECG", "STEMI equivalent", "OMI", "De Winter", "Wellens", "posterior MI", "aVR", "Sgarbossa", "Brugada", "hyperkalemia", "ED", "ICU"],
+  "contentType": "reference",
+  "content_version": 2,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2027-03-01",
+  "review_tier": 2,
+  "sources": [
+    "Critical Vector — STEMI Equivalents (original content, OMI paradigm)",
+    "Meyers HP et al. J Emerg Med 2021 (OMI vs NOMI)",
+    "de Winter RJ et al. NEJM 2008; de Zwaan C et al. Am Heart J 1982 (Wellens)",
+    "Smith SW et al. Ann Emerg Med 2012; Meyers HP et al. Am Heart J 2015 (Modified Sgarbossa)",
+    "ACC Expert Consensus on ECG Diagnosis of Acute Coronary Occlusion MI. JACC 2022"
+  ],
+  "flags": [],
+  "changelog": [
+    { "version": 2, "date": "2026-09-01", "change": "Rewritten from the Critical Vector STEMI Equivalents guide — all 8 OMI patterns (De Winter, Wellens A/B, posterior, Smith-modified Sgarbossa, aVR/LMCA, hyperacute T, tombstone/shark-fin, RV MI) with actions. Kept Brugada / hyperK / WPW / TdP / digoxin. Cleared the licensing flag (CV original content)." },
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry — diagnostic criteria as text." }
+  ],
+  "summary": "The occlusion-MI (OMI) paradigm: only ~60% of true coronary occlusions meet classic STEMI criteria. These 8 patterns identify the rest — fully occluded arteries with little or no ST elevation on the standard 12-lead. Plus other high-yield ECGs.",
+  "body": [
+    { "type": "callout", "tone": "danger", "text": "Missing an OMI pattern is missing the cath window. When the pattern fits and the history fits, activate the cath lab — do not order a stress test and do not 'trend' serial troponins into an occlusion." },
+    { "type": "heading", "level": 2, "text": "8 STEMI equivalents (OMI patterns)" },
+    { "type": "table",
+      "columns": ["Pattern", "Criteria", "Artery", "Action"],
+      "rows": [
+        ["De Winter T-waves", "Upsloping ST depression ≥ 1 mm at the J-point in V1-V6 + tall, symmetric, peaked T waves. Static — never evolves to classic STE.", "Proximal LAD (~2% of LAD occlusions)", "Emergent cath"],
+        ["Wellens — Type A", "Biphasic T waves in V2-V3, in a PAIN-FREE window. ~25%.", "Critical proximal LAD stenosis", "Urgent PCI — NO stress test"],
+        ["Wellens — Type B", "Deep symmetric T-wave inversion V2-V3, ST < 1 mm, no Q waves, pain-free. ~75%. Pseudo-normalisation with returning pain = re-occlusion.", "Critical proximal LAD stenosis", "Urgent PCI — NO stress test"],
+        ["Posterior MI", "Horizontal ST depression ≥ 1 mm V1-V4 (mirror), tall R wave ≥ 0.04 s and R/S ≥ 1 in V1-V2. Confirm with posterior leads V7-V9 STE ≥ 0.5 mm.", "RCA or LCx", "Cath — get posterior leads"],
+        ["Smith-modified Sgarbossa (LBBB / V-paced)", "ANY of: concordant STE ≥ 1 mm (5 pts); concordant ST depression ≥ 1 mm V1-V3 (3 pts); ST/S ratio ≤ -0.25 (excessively discordant STE, Smith modification, Sn ~91%).", "Any occlusion masked by a wide QRS", "Any 1 criterion = emergent cath"],
+        ["aVR ST elevation", "STE ≥ 1 mm in aVR (and/or aVR > V1) + diffuse ST depression ≥ 1 mm in ≥ 6 leads (I, II, V4-V6). ST depression maximal in II → LM/LAD; in III → RCA.", "Left main or 3-vessel disease", "Cath + consider MCS / IABP"],
+        ["Hyperacute T-waves", "Tall, broad, asymmetric T waves disproportionate to the QRS (T amplitude > 50% of the R wave in the same lead). Earliest ECG sign — precedes STE by minutes.", "Any territory", "Serial ECG q10 min + cardiology STAT"],
+        ["Tombstone / shark-fin", "QRS merges with the ST segment and T wave into a single monophasic arch. Massive infarct; cardiogenic-shock risk.", "Massive proximal LAD (or proximal RCA)", "Cath + MCS / Impella consideration pre-PCI"],
+        ["Right ventricular MI", "STE ≥ 1 mm in V4R (get right-sided leads). Inferior STEMI with STE in III > II.", "Proximal RCA", "Cath + IV fluids + ZERO nitrates / diuretics (preload-dependent)"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Brugada — only Type 1 is diagnostic" },
+    { "type": "table",
+      "columns": ["Type", "Morphology", "Diagnostic?"],
+      "rows": [
+        ["Type 1", "Coved ST elevation ≥ 2 mm in V1-V3, followed by a negative T wave, little/no isoelectric separation", "YES — the only diagnostic pattern"],
+        ["Type 2", "Saddleback, J-wave ≥ 2 mm, ST stays ≥ 1 mm above baseline", "No — warrants a sodium-channel-blocker challenge"],
+        ["Type 3", "< 1 mm ST elevation, coved or saddleback", "No — least specific"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Other high-yield patterns" },
+    { "type": "list", "items": [
+      "Hyperkalemia progression: peaked T waves → PR prolongation / P-wave flattening → QRS widening → sine wave → asystole/VF.",
+      "WPW: delta wave + short PR (+ wide QRS). Avoid AV-nodal blockers in pre-excited AF.",
+      "Torsades de pointes: polymorphic VT on a prolonged QT — treat with IV magnesium, correct K⁺/Mg²⁺, overdrive pacing / isoproterenol for the bradycardia-dependent form.",
+      "Digoxin effect (down-sloping 'scooped' ST, the 'Salvador Dalí moustache') vs. digoxin toxicity (almost any arrhythmia — classically bidirectional VT, PAT with block; worse with hypokalemia/hypomagnesemia)."
+    ] }
+  ],
+  "buildNote": "Content is Critical Vector original (STEMI Equivalents guide). Original annotated tracings still to be produced — do not source ECGRef's images."
+}

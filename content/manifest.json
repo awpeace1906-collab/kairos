@@ -1,8 +1,26 @@
 {
-  "generatedAt": "2026-09-01T00:00:00Z",
+  "generatedAt": "2026-09-03T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
+    "calculators/anesthesia-airway-or/apfel-ponv": {
+      "content_version": 1,
+      "hash": "047cd6bc1bba2725",
+      "path": "modules/calculators/anesthesia-airway-or/apfel-ponv.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/anesthesia-airway-or/ariscat": {
+      "content_version": 1,
+      "hash": "449a4e19bd16e3b0",
+      "path": "modules/calculators/anesthesia-airway-or/ariscat.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
     "calculators/anesthesia-airway-or/asa-physical-status": {
       "content_version": 1,
       "hash": "02e214de96d19a86",
@@ -11,6 +29,105 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2026-11-30"
+    },
+    "calculators/anesthesia-airway-or/caprini-vte": {
+      "content_version": 2,
+      "hash": "ccde10d26c55b5c2",
+      "path": "modules/calculators/anesthesia-airway-or/caprini-vte.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/anesthesia-airway-or/cormack-lehane": {
+      "content_version": 1,
+      "hash": "4ee0895b9442f1a7",
+      "path": "modules/calculators/anesthesia-airway-or/cormack-lehane.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/anesthesia-airway-or/el-ganzouri": {
+      "content_version": 1,
+      "hash": "cf68696fb740a102",
+      "path": "modules/calculators/anesthesia-airway-or/el-ganzouri.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/anesthesia-airway-or/lemon-airway": {
+      "content_version": 1,
+      "hash": "f93ac8d4ddaab963",
+      "path": "modules/calculators/anesthesia-airway-or/lemon-airway.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/anesthesia-airway-or/mallampati": {
+      "content_version": 1,
+      "hash": "5b33061f1bfe77de",
+      "path": "modules/calculators/anesthesia-airway-or/mallampati.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/anesthesia-airway-or/modified-aldrete": {
+      "content_version": 1,
+      "hash": "691f6830b2824ee7",
+      "path": "modules/calculators/anesthesia-airway-or/modified-aldrete.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/anesthesia-airway-or/rcri": {
+      "content_version": 2,
+      "hash": "d6d200f167fb7a4b",
+      "path": "modules/calculators/anesthesia-airway-or/rcri.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/anesthesia-airway-or/stop-bang": {
+      "content_version": 1,
+      "hash": "3123b1030225ec72",
+      "path": "modules/calculators/anesthesia-airway-or/stop-bang.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/anesthesia-airway-or/surgical-apgar": {
+      "content_version": 1,
+      "hash": "ba6d9b76846f1538",
+      "path": "modules/calculators/anesthesia-airway-or/surgical-apgar.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/cardiovascular/brugada-vt": {
+      "content_version": 1,
+      "hash": "d4639edc38476173",
+      "path": "modules/calculators/cardiovascular/brugada-vt.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/cardiovascular/canadian-syncope-risk-score": {
+      "content_version": 1,
+      "hash": "b767ecf6cb5333e8",
+      "path": "modules/calculators/cardiovascular/canadian-syncope-risk-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-03-02"
     },
     "calculators/cardiovascular/cha2ds2-vasc": {
       "content_version": 1,
@@ -40,13 +157,13 @@
       "next_review_due": "2026-11-30"
     },
     "calculators/cardiovascular/heart-score": {
-      "content_version": 1,
-      "hash": "b13021fbe7ba1c12",
+      "content_version": 2,
+      "hash": "9bb4798460707ab0",
       "path": "modules/calculators/cardiovascular/heart-score.json",
       "contentType": "calculator",
       "section": "Calculators",
       "review_tier": 1,
-      "next_review_due": "2026-11-30"
+      "next_review_due": "2026-12-01"
     },
     "calculators/cardiovascular/killip-classification": {
       "content_version": 1,
@@ -57,14 +174,23 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
-    "calculators/cardiovascular/qtc": {
+    "calculators/cardiovascular/modified-sgarbossa": {
       "content_version": 1,
-      "hash": "4481039815dfcd67",
+      "hash": "bbea3f9533c4390e",
+      "path": "modules/calculators/cardiovascular/modified-sgarbossa.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/cardiovascular/qtc": {
+      "content_version": 2,
+      "hash": "167e30de6e95f9bd",
       "path": "modules/calculators/cardiovascular/qtc.json",
       "contentType": "calculator",
       "section": "Calculators",
       "review_tier": 1,
-      "next_review_due": "2026-11-30"
+      "next_review_due": "2026-12-01"
     },
     "calculators/cardiovascular/timi-nstemi": {
       "content_version": 1,
@@ -75,6 +201,42 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "calculators/early-warning-resus/mews": {
+      "content_version": 1,
+      "hash": "7e875da20eab77aa",
+      "path": "modules/calculators/early-warning-resus/mews.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/early-warning-resus/news2": {
+      "content_version": 2,
+      "hash": "c05674160c9b3653",
+      "path": "modules/calculators/early-warning-resus/news2.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-03-02"
+    },
+    "calculators/gi-renal-metabolic/aims65": {
+      "content_version": 1,
+      "hash": "2edf86720b0a7a0b",
+      "path": "modules/calculators/gi-renal-metabolic/aims65.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/gi-renal-metabolic/alvarado": {
+      "content_version": 1,
+      "hash": "8212cffcb04abe83",
+      "path": "modules/calculators/gi-renal-metabolic/alvarado.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
     "calculators/gi-renal-metabolic/anion-gap": {
       "content_version": 1,
       "hash": "e880b515d6688479",
@@ -82,6 +244,15 @@
       "contentType": "calculator",
       "section": "Calculators",
       "review_tier": "stable"
+    },
+    "calculators/gi-renal-metabolic/bisap": {
+      "content_version": 1,
+      "hash": "ef0ed27c80998767",
+      "path": "modules/calculators/gi-renal-metabolic/bisap.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
     },
     "calculators/gi-renal-metabolic/corrected-calcium": {
       "content_version": 1,
@@ -91,6 +262,158 @@
       "section": "Calculators",
       "review_tier": "stable"
     },
+    "calculators/gi-renal-metabolic/corrected-sodium-hyperglycemia": {
+      "content_version": 1,
+      "hash": "45c30dd2419a282b",
+      "path": "modules/calculators/gi-renal-metabolic/corrected-sodium-hyperglycemia.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": "stable"
+    },
+    "calculators/gi-renal-metabolic/glasgow-blatchford": {
+      "content_version": 1,
+      "hash": "a8752c095ace5c35",
+      "path": "modules/calculators/gi-renal-metabolic/glasgow-blatchford.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-03-02"
+    },
+    "calculators/gi-renal-metabolic/maddrey-df": {
+      "content_version": 1,
+      "hash": "b417b0b94933e587",
+      "path": "modules/calculators/gi-renal-metabolic/maddrey-df.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/gi-renal-metabolic/meld-na": {
+      "content_version": 2,
+      "hash": "d57f0fbb65962b85",
+      "path": "modules/calculators/gi-renal-metabolic/meld-na.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/gi-renal-metabolic/ranson": {
+      "content_version": 1,
+      "hash": "c79eb4ef846cbdca",
+      "path": "modules/calculators/gi-renal-metabolic/ranson.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/gi-renal-metabolic/refeeding-risk": {
+      "content_version": 1,
+      "hash": "0075a8076ad4bb64",
+      "path": "modules/calculators/gi-renal-metabolic/refeeding-risk.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/gi-renal-metabolic/rockall": {
+      "content_version": 1,
+      "hash": "3d5698eab8e18287",
+      "path": "modules/calculators/gi-renal-metabolic/rockall.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/icu-critical-care/ards-berlin": {
+      "content_version": 1,
+      "hash": "ec55b8f5877cc041",
+      "path": "modules/calculators/icu-critical-care/ards-berlin.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/icu-critical-care/cam-icu": {
+      "content_version": 1,
+      "hash": "9917ee20cdf6a1f0",
+      "path": "modules/calculators/icu-critical-care/cam-icu.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/icu-critical-care/cpot": {
+      "content_version": 1,
+      "hash": "6372ccbe98c6c390",
+      "path": "modules/calculators/icu-critical-care/cpot.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/icu-critical-care/four-ts-hit": {
+      "content_version": 1,
+      "hash": "1c3d5cd5b3329a76",
+      "path": "modules/calculators/icu-critical-care/four-ts-hit.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/icu-critical-care/harris-benedict": {
+      "content_version": 2,
+      "hash": "7c79cf07d06967e9",
+      "path": "modules/calculators/icu-critical-care/harris-benedict.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/icu-critical-care/improve-bleed": {
+      "content_version": 1,
+      "hash": "895647a4fb47e4d9",
+      "path": "modules/calculators/icu-critical-care/improve-bleed.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/icu-critical-care/padua-prediction-score": {
+      "content_version": 1,
+      "hash": "38f61bc25d3b362b",
+      "path": "modules/calculators/icu-critical-care/padua-prediction-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/icu-critical-care/pf-ratio": {
+      "content_version": 1,
+      "hash": "26a3c3def28f9887",
+      "path": "modules/calculators/icu-critical-care/pf-ratio.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/icu-critical-care/rass": {
+      "content_version": 1,
+      "hash": "d87dfa7f31e58941",
+      "path": "modules/calculators/icu-critical-care/rass.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/icu-critical-care/rsbi": {
+      "content_version": 1,
+      "hash": "28530f23998c48ea",
+      "path": "modules/calculators/icu-critical-care/rsbi.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
     "calculators/neuro/abcd2": {
       "content_version": 1,
       "hash": "01fe129ec15fa88f",
@@ -99,6 +422,24 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2026-11-30"
+    },
+    "calculators/neuro/canadian-ct-head": {
+      "content_version": 1,
+      "hash": "255c807448eab871",
+      "path": "modules/calculators/neuro/canadian-ct-head.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/neuro/four-score": {
+      "content_version": 1,
+      "hash": "53752a1096016c80",
+      "path": "modules/calculators/neuro/four-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
     },
     "calculators/neuro/gcs": {
       "content_version": 1,
@@ -118,6 +459,15 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "calculators/neuro/ich-score": {
+      "content_version": 1,
+      "hash": "4031eb0363029150",
+      "path": "modules/calculators/neuro/ich-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
     "calculators/neuro/nihss": {
       "content_version": 1,
       "hash": "a5377dab2d2f593b",
@@ -126,6 +476,24 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2026-11-30"
+    },
+    "calculators/neuro/ottawa-sah-rule": {
+      "content_version": 1,
+      "hash": "e1ab4d1c9c98ce86",
+      "path": "modules/calculators/neuro/ottawa-sah-rule.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/pulmonary/bode-index": {
+      "content_version": 1,
+      "hash": "fd609a9716a068e2",
+      "path": "modules/calculators/pulmonary/bode-index.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
     },
     "calculators/pulmonary/curb-65": {
       "content_version": 1,
@@ -145,6 +513,24 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "calculators/pulmonary/pesi": {
+      "content_version": 1,
+      "hash": "1a8a1892138cd394",
+      "path": "modules/calculators/pulmonary/pesi.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/pulmonary/revised-geneva": {
+      "content_version": 1,
+      "hash": "0b1557d08b14748c",
+      "path": "modules/calculators/pulmonary/revised-geneva.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
     "calculators/pulmonary/rox-index": {
       "content_version": 1,
       "hash": "ec57a3b0754a3398",
@@ -154,14 +540,23 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
-    "calculators/pulmonary/wells-dvt": {
+    "calculators/pulmonary/spesi": {
       "content_version": 1,
-      "hash": "df3fe114cb87d125",
+      "hash": "a19927a159a8d2f9",
+      "path": "modules/calculators/pulmonary/spesi.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/pulmonary/wells-dvt": {
+      "content_version": 2,
+      "hash": "8ac1b1dbefc0200a",
       "path": "modules/calculators/pulmonary/wells-dvt.json",
       "contentType": "calculator",
       "section": "Calculators",
       "review_tier": 1,
-      "next_review_due": "2026-11-30"
+      "next_review_due": "2026-12-01"
     },
     "calculators/pulmonary/wells-pe": {
       "content_version": 1,
@@ -172,6 +567,33 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "calculators/pulmonary/years-pe": {
+      "content_version": 1,
+      "hash": "68174bf0374fb4f3",
+      "path": "modules/calculators/pulmonary/years-pe.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/sepsis-id/apache-ii": {
+      "content_version": 1,
+      "hash": "0f28c6c7479d12cf",
+      "path": "modules/calculators/sepsis-id/apache-ii.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/sepsis-id/centor-mcisaac": {
+      "content_version": 1,
+      "hash": "f68a80a307dda214",
+      "path": "modules/calculators/sepsis-id/centor-mcisaac.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
     "calculators/sepsis-id/lrinec": {
       "content_version": 1,
       "hash": "361df66a99b3e5f2",
@@ -180,6 +602,15 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2026-11-30"
+    },
+    "calculators/sepsis-id/psi-port": {
+      "content_version": 1,
+      "hash": "d6147f430e9bffe9",
+      "path": "modules/calculators/sepsis-id/psi-port.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
     },
     "calculators/sepsis-id/qsofa": {
       "content_version": 1,
@@ -190,6 +621,51 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "calculators/sepsis-id/sirs": {
+      "content_version": 1,
+      "hash": "44722407fa214feb",
+      "path": "modules/calculators/sepsis-id/sirs.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "calculators/sepsis-id/sofa-score": {
+      "content_version": 1,
+      "hash": "d2d768a13efcb2a6",
+      "path": "modules/calculators/sepsis-id/sofa-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-03-02"
+    },
+    "calculators/tox-withdrawal/ciwa-ar": {
+      "content_version": 1,
+      "hash": "ba897e871c305b94",
+      "path": "modules/calculators/tox-withdrawal/ciwa-ar.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-03-02"
+    },
+    "calculators/tox-withdrawal/cows": {
+      "content_version": 1,
+      "hash": "4298f26732329a62",
+      "path": "modules/calculators/tox-withdrawal/cows.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-03-02"
+    },
+    "calculators/tox-withdrawal/hunter-serotonin": {
+      "content_version": 1,
+      "hash": "560a9de8842eec73",
+      "path": "modules/calculators/tox-withdrawal/hunter-serotonin.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
     "calculators/tox-withdrawal/osmolal-gap": {
       "content_version": 1,
       "hash": "aec472c5e604a4b2",
@@ -197,6 +673,60 @@
       "contentType": "calculator",
       "section": "Calculators",
       "review_tier": "stable"
+    },
+    "calculators/tox-withdrawal/salicylate-toxicity": {
+      "content_version": 1,
+      "hash": "0a2fcbda9ccac53d",
+      "path": "modules/calculators/tox-withdrawal/salicylate-toxicity.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/trauma/abc-score-mtp": {
+      "content_version": 1,
+      "hash": "c502eebdd595a71f",
+      "path": "modules/calculators/trauma/abc-score-mtp.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/trauma/canadian-cspine": {
+      "content_version": 1,
+      "hash": "fbaeb678b5479f76",
+      "path": "modules/calculators/trauma/canadian-cspine.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/trauma/injury-severity-score": {
+      "content_version": 1,
+      "hash": "162e4d6207ba8334",
+      "path": "modules/calculators/trauma/injury-severity-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/trauma/modified-shock-index": {
+      "content_version": 1,
+      "hash": "125b75eb88a2c182",
+      "path": "modules/calculators/trauma/modified-shock-index.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "calculators/trauma/nexus-chest-ct": {
+      "content_version": 1,
+      "hash": "87dc8d860a2258b9",
+      "path": "modules/calculators/trauma/nexus-chest-ct.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
     },
     "calculators/trauma/nexus-cspine": {
       "content_version": 1,
@@ -207,12 +737,629 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "calculators/trauma/ottawa-ankle-rules": {
+      "content_version": 1,
+      "hash": "c796eb137033d788",
+      "path": "modules/calculators/trauma/ottawa-ankle-rules.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/trauma/ottawa-knee-rule": {
+      "content_version": 1,
+      "hash": "3859e98760961bbd",
+      "path": "modules/calculators/trauma/ottawa-knee-rule.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/trauma/pecarn-head": {
+      "content_version": 1,
+      "hash": "e0146dd45073dada",
+      "path": "modules/calculators/trauma/pecarn-head.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
+    "calculators/trauma/revised-trauma-score": {
+      "content_version": 1,
+      "hash": "853071d49cfe6918",
+      "path": "modules/calculators/trauma/revised-trauma-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
     "calculators/trauma/shock-index": {
       "content_version": 1,
       "hash": "f63c3710b95a1645",
       "path": "modules/calculators/trauma/shock-index.json",
       "contentType": "calculator",
       "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "drug-dosing/anescalc-core/4-factor-pcc-kcentra": {
+      "content_version": 1,
+      "hash": "ee7d067b0f3a185c",
+      "path": "modules/drug-dosing/anescalc-core/4-factor-pcc-kcentra.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/aminocaproic-acid-amicar": {
+      "content_version": 1,
+      "hash": "62084b8ac4ae36de",
+      "path": "modules/drug-dosing/anescalc-core/aminocaproic-acid-amicar.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/andexanet-alfa-ondexxya": {
+      "content_version": 1,
+      "hash": "29a15421cf9df814",
+      "path": "modules/drug-dosing/anescalc-core/andexanet-alfa-ondexxya.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/atropine": {
+      "content_version": 1,
+      "hash": "ae70406a9c3eb9f2",
+      "path": "modules/drug-dosing/anescalc-core/atropine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/bupivacaine": {
+      "content_version": 1,
+      "hash": "6c586ad102845062",
+      "path": "modules/drug-dosing/anescalc-core/bupivacaine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/bupivacaine-hyperbaric-0-5": {
+      "content_version": 1,
+      "hash": "e034f7c32a6a7b8b",
+      "path": "modules/drug-dosing/anescalc-core/bupivacaine-hyperbaric-0-5.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/chloroprocaine-nesacaine": {
+      "content_version": 1,
+      "hash": "a088eb59e90f1691",
+      "path": "modules/drug-dosing/anescalc-core/chloroprocaine-nesacaine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/cisatracurium": {
+      "content_version": 1,
+      "hash": "3df4db6ddc4902f0",
+      "path": "modules/drug-dosing/anescalc-core/cisatracurium.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/cocaine-4-10": {
+      "content_version": 1,
+      "hash": "3007128177eddc9f",
+      "path": "modules/drug-dosing/anescalc-core/cocaine-4-10.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/dantrolene": {
+      "content_version": 1,
+      "hash": "6b6d4b3f20044f80",
+      "path": "modules/drug-dosing/anescalc-core/dantrolene.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/desflurane": {
+      "content_version": 1,
+      "hash": "c53062d2fdc65e98",
+      "path": "modules/drug-dosing/anescalc-core/desflurane.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/desmopressin-ddavp": {
+      "content_version": 1,
+      "hash": "eab8f2d3367a0d0e",
+      "path": "modules/drug-dosing/anescalc-core/desmopressin-ddavp.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/dexmedetomidine": {
+      "content_version": 1,
+      "hash": "5ff0c4f452abb2ea",
+      "path": "modules/drug-dosing/anescalc-core/dexmedetomidine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/droperidol": {
+      "content_version": 1,
+      "hash": "368242a753a1c0e0",
+      "path": "modules/drug-dosing/anescalc-core/droperidol.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/enoxaparin-lmwh": {
+      "content_version": 1,
+      "hash": "daa9faf3cd60b251",
+      "path": "modules/drug-dosing/anescalc-core/enoxaparin-lmwh.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/ephedrine": {
+      "content_version": 1,
+      "hash": "c201c158848592ab",
+      "path": "modules/drug-dosing/anescalc-core/ephedrine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/epinephrine": {
+      "content_version": 1,
+      "hash": "056bebbc26144092",
+      "path": "modules/drug-dosing/anescalc-core/epinephrine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/etomidate": {
+      "content_version": 1,
+      "hash": "46d882600fd145b8",
+      "path": "modules/drug-dosing/anescalc-core/etomidate.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/famotidine": {
+      "content_version": 1,
+      "hash": "93385a11d3f9f397",
+      "path": "modules/drug-dosing/anescalc-core/famotidine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/fentanyl": {
+      "content_version": 1,
+      "hash": "e615786ee12828b5",
+      "path": "modules/drug-dosing/anescalc-core/fentanyl.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/flumazenil": {
+      "content_version": 1,
+      "hash": "0ed13ef4397f23e3",
+      "path": "modules/drug-dosing/anescalc-core/flumazenil.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/glycopyrrolate": {
+      "content_version": 1,
+      "hash": "372ac40a6ce712d8",
+      "path": "modules/drug-dosing/anescalc-core/glycopyrrolate.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/heparin-unfractionated": {
+      "content_version": 1,
+      "hash": "1bc6a84f6260f25d",
+      "path": "modules/drug-dosing/anescalc-core/heparin-unfractionated.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/hydromorphone": {
+      "content_version": 1,
+      "hash": "7edd0b2bbd26326c",
+      "path": "modules/drug-dosing/anescalc-core/hydromorphone.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/idarucizumab-praxbind": {
+      "content_version": 1,
+      "hash": "77ec2becacfb9a02",
+      "path": "modules/drug-dosing/anescalc-core/idarucizumab-praxbind.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/isoflurane": {
+      "content_version": 1,
+      "hash": "194d7bbf68628a54",
+      "path": "modules/drug-dosing/anescalc-core/isoflurane.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/ketamine": {
+      "content_version": 1,
+      "hash": "83fbb033f4b2c0a0",
+      "path": "modules/drug-dosing/anescalc-core/ketamine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/lidocaine": {
+      "content_version": 1,
+      "hash": "09a59b4a4088471a",
+      "path": "modules/drug-dosing/anescalc-core/lidocaine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/lidocaine-with-epinephrine": {
+      "content_version": 1,
+      "hash": "5182dc29a36a3996",
+      "path": "modules/drug-dosing/anescalc-core/lidocaine-with-epinephrine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/liposomal-bupivacaine-exparel": {
+      "content_version": 1,
+      "hash": "be04b7212a5ac8b5",
+      "path": "modules/drug-dosing/anescalc-core/liposomal-bupivacaine-exparel.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/meperidine": {
+      "content_version": 1,
+      "hash": "1616e95d3175d503",
+      "path": "modules/drug-dosing/anescalc-core/meperidine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/mepivacaine": {
+      "content_version": 1,
+      "hash": "9b8ca83423ca9685",
+      "path": "modules/drug-dosing/anescalc-core/mepivacaine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/methadone": {
+      "content_version": 1,
+      "hash": "d6eed48b4b66f257",
+      "path": "modules/drug-dosing/anescalc-core/methadone.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/methylene-blue": {
+      "content_version": 1,
+      "hash": "dde58f0a77b3b2da",
+      "path": "modules/drug-dosing/anescalc-core/methylene-blue.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/midazolam": {
+      "content_version": 1,
+      "hash": "2829c9e589e45171",
+      "path": "modules/drug-dosing/anescalc-core/midazolam.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/morphine": {
+      "content_version": 1,
+      "hash": "ae9b8e7a093c21c1",
+      "path": "modules/drug-dosing/anescalc-core/morphine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/naloxone": {
+      "content_version": 1,
+      "hash": "9fc7fc42586e25fa",
+      "path": "modules/drug-dosing/anescalc-core/naloxone.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/neostigmine": {
+      "content_version": 1,
+      "hash": "ffce33295f68e71a",
+      "path": "modules/drug-dosing/anescalc-core/neostigmine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/nitrous-oxide": {
+      "content_version": 1,
+      "hash": "f6019b1aa0b9090e",
+      "path": "modules/drug-dosing/anescalc-core/nitrous-oxide.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/norepinephrine": {
+      "content_version": 1,
+      "hash": "01160aff6d937393",
+      "path": "modules/drug-dosing/anescalc-core/norepinephrine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/ondansetron": {
+      "content_version": 1,
+      "hash": "f1ebe21bd3934890",
+      "path": "modules/drug-dosing/anescalc-core/ondansetron.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/phenylephrine": {
+      "content_version": 1,
+      "hash": "24893b258f55d885",
+      "path": "modules/drug-dosing/anescalc-core/phenylephrine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/propofol": {
+      "content_version": 1,
+      "hash": "d30472cf48744de1",
+      "path": "modules/drug-dosing/anescalc-core/propofol.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/protamine-sulfate": {
+      "content_version": 1,
+      "hash": "dcf6af8b392758f8",
+      "path": "modules/drug-dosing/anescalc-core/protamine-sulfate.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/remifentanil": {
+      "content_version": 1,
+      "hash": "362afe93529c756f",
+      "path": "modules/drug-dosing/anescalc-core/remifentanil.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/rocuronium": {
+      "content_version": 1,
+      "hash": "8ae859838d4fed89",
+      "path": "modules/drug-dosing/anescalc-core/rocuronium.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/ropivacaine": {
+      "content_version": 1,
+      "hash": "dfbc2b6ffd7bf796",
+      "path": "modules/drug-dosing/anescalc-core/ropivacaine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/ropivacaine-epidural-nerve-block": {
+      "content_version": 1,
+      "hash": "010d7ab1d1845fb5",
+      "path": "modules/drug-dosing/anescalc-core/ropivacaine-epidural-nerve-block.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/sevoflurane": {
+      "content_version": 1,
+      "hash": "a50caff23c865d5a",
+      "path": "modules/drug-dosing/anescalc-core/sevoflurane.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/succinylcholine": {
+      "content_version": 1,
+      "hash": "960c15485a5cdd52",
+      "path": "modules/drug-dosing/anescalc-core/succinylcholine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/sugammadex": {
+      "content_version": 1,
+      "hash": "418db55f072a7538",
+      "path": "modules/drug-dosing/anescalc-core/sugammadex.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/tetracaine": {
+      "content_version": 1,
+      "hash": "ec493b769d6d0035",
+      "path": "modules/drug-dosing/anescalc-core/tetracaine.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/tranexamic-acid-txa": {
+      "content_version": 1,
+      "hash": "1ef07e2a4ab6b02f",
+      "path": "modules/drug-dosing/anescalc-core/tranexamic-acid-txa.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/vasopressin": {
+      "content_version": 1,
+      "hash": "0e2418eef4158ed4",
+      "path": "modules/drug-dosing/anescalc-core/vasopressin.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/anescalc-core/vecuronium": {
+      "content_version": 1,
+      "hash": "22d00d75566250be",
+      "path": "modules/drug-dosing/anescalc-core/vecuronium.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/dosing-fluid-math/adjusted-body-weight": {
+      "content_version": 2,
+      "hash": "606dbc8145817fa1",
+      "path": "modules/drug-dosing/dosing-fluid-math/adjusted-body-weight.json",
+      "contentType": "calculator",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/dosing-fluid-math/apap-nac-dosing": {
+      "content_version": 1,
+      "hash": "a44159dd13794993",
+      "path": "modules/drug-dosing/dosing-fluid-math/apap-nac-dosing.json",
+      "contentType": "calculator",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "drug-dosing/dosing-fluid-math/cockcroft-gault": {
+      "content_version": 1,
+      "hash": "679af7612a5db2e0",
+      "path": "modules/drug-dosing/dosing-fluid-math/cockcroft-gault.json",
+      "contentType": "calculator",
+      "section": "Drug & Dosing Cards",
+      "review_tier": "stable"
+    },
+    "drug-dosing/dosing-fluid-math/free-water-deficit": {
+      "content_version": 2,
+      "hash": "96fd67d977325fd1",
+      "path": "modules/drug-dosing/dosing-fluid-math/free-water-deficit.json",
+      "contentType": "calculator",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/dosing-fluid-math/holliday-segar-maintenance-fluids": {
+      "content_version": 2,
+      "hash": "5b274223cc529982",
+      "path": "modules/drug-dosing/dosing-fluid-math/holliday-segar-maintenance-fluids.json",
+      "contentType": "calculator",
+      "section": "Drug & Dosing Cards",
+      "review_tier": "stable"
+    },
+    "drug-dosing/dosing-fluid-math/ideal-body-weight": {
+      "content_version": 1,
+      "hash": "381243041ef6f986",
+      "path": "modules/drug-dosing/dosing-fluid-math/ideal-body-weight.json",
+      "contentType": "calculator",
+      "section": "Drug & Dosing Cards",
+      "review_tier": "stable"
+    },
+    "drug-dosing/dosing-fluid-math/parkland-formula": {
+      "content_version": 1,
+      "hash": "738d3a0df20fc738",
+      "path": "modules/drug-dosing/dosing-fluid-math/parkland-formula.json",
+      "contentType": "calculator",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "drug-dosing/dosing-fluid-math/peds-drip-rate": {
+      "content_version": 1,
+      "hash": "8dc3bb11b6120d00",
+      "path": "modules/drug-dosing/dosing-fluid-math/peds-drip-rate.json",
+      "contentType": "calculator",
+      "section": "Drug & Dosing Cards",
+      "review_tier": "stable"
+    },
+    "drug-dosing/dosing-fluid-math/steroid-conversion": {
+      "content_version": 1,
+      "hash": "02a5b2cbac8d19d8",
+      "path": "modules/drug-dosing/dosing-fluid-math/steroid-conversion.json",
+      "contentType": "reference",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "drug-dosing/dosing-fluid-math/vasoactive-inotropic-score": {
+      "content_version": 1,
+      "hash": "f223c7501e2f98c2",
+      "path": "modules/drug-dosing/dosing-fluid-math/vasoactive-inotropic-score.json",
+      "contentType": "calculator",
+      "section": "Drug & Dosing Cards",
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
@@ -225,6 +1372,177 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "drug-dosing/resus-dosing/peds-adenosine-svt": {
+      "content_version": 1,
+      "hash": "bfcedf6fa5e8cffe",
+      "path": "modules/drug-dosing/resus-dosing/peds-adenosine-svt.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "drug-dosing/resus-dosing/peds-amiodarone-arrest": {
+      "content_version": 2,
+      "hash": "e4b931b8be7eafd0",
+      "path": "modules/drug-dosing/resus-dosing/peds-amiodarone-arrest.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/resus-dosing/peds-atropine-bradycardia": {
+      "content_version": 1,
+      "hash": "957c0c97360f3355",
+      "path": "modules/drug-dosing/resus-dosing/peds-atropine-bradycardia.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "drug-dosing/resus-dosing/peds-ketamine-rsi": {
+      "content_version": 2,
+      "hash": "b5611dd1edbba21a",
+      "path": "modules/drug-dosing/resus-dosing/peds-ketamine-rsi.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/resus-dosing/peds-lorazepam-status": {
+      "content_version": 1,
+      "hash": "6af9e619449bd001",
+      "path": "modules/drug-dosing/resus-dosing/peds-lorazepam-status.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "drug-dosing/resus-dosing/peds-midazolam-status": {
+      "content_version": 3,
+      "hash": "659718e6d5fe21fd",
+      "path": "modules/drug-dosing/resus-dosing/peds-midazolam-status.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "drug-dosing/resus-dosing/peds-rocuronium-rsi": {
+      "content_version": 1,
+      "hash": "d9702ad7fc52cf31",
+      "path": "modules/drug-dosing/resus-dosing/peds-rocuronium-rsi.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "peds-module/apgar-score": {
+      "content_version": 1,
+      "hash": "5eb79fd7617fb8d4",
+      "path": "modules/peds-module/apgar-score.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "peds-module/brue-pathway": {
+      "content_version": 1,
+      "hash": "4f8f74431e5456a7",
+      "path": "modules/peds-module/brue-pathway.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "peds-module/infant-cpr-parameters": {
+      "content_version": 1,
+      "hash": "6b02057e5d414b57",
+      "path": "modules/peds-module/infant-cpr-parameters.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "peds-module/infant-of-diabetic-mother": {
+      "content_version": 1,
+      "hash": "5049b4895ee975fc",
+      "path": "modules/peds-module/infant-of-diabetic-mother.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "peds-module/neonatal-hie-cooling": {
+      "content_version": 1,
+      "hash": "d5f158fd7b232b28",
+      "path": "modules/peds-module/neonatal-hie-cooling.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "peds-module/neonatal-jaundice": {
+      "content_version": 1,
+      "hash": "15de62672113d7aa",
+      "path": "modules/peds-module/neonatal-jaundice.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "peds-module/neonatal-rds": {
+      "content_version": 1,
+      "hash": "8786b90b6071c368",
+      "path": "modules/peds-module/neonatal-rds.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-03-02"
+    },
+    "peds-module/neonatal-seizures": {
+      "content_version": 1,
+      "hash": "1ce7a9a4650ac039",
+      "path": "modules/peds-module/neonatal-seizures.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "peds-module/newborn-routine-care": {
+      "content_version": 1,
+      "hash": "4794653356e03a41",
+      "path": "modules/peds-module/newborn-routine-care.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 3,
+      "next_review_due": "2027-03-02"
+    },
+    "peds-module/nrp-algorithm": {
+      "content_version": 1,
+      "hash": "9f183ade7c9dc266",
+      "path": "modules/peds-module/nrp-algorithm.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "peds-module/pediatric-appendicitis-score": {
+      "content_version": 2,
+      "hash": "983a9d7760661d0b",
+      "path": "modules/peds-module/pediatric-appendicitis-score.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "peds-module/peds-dka-management": {
+      "content_version": 1,
+      "hash": "3e387015290b4294",
+      "path": "modules/peds-module/peds-dka-management.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
     "peds-module/peds-glasgow-coma-scale": {
       "content_version": 1,
       "hash": "607c848aaa650d3e",
@@ -234,23 +1552,580 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
-    "procedures/laceration-repair": {
+    "procedures/airway-management-flow": {
+      "content_version": 2,
+      "hash": "8f03d7fa82e26bea",
+      "path": "modules/procedures/airway-management-flow.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "procedures/awake-intubation": {
       "content_version": 1,
-      "hash": "be4bae432c1c3e42",
+      "hash": "54ea6998d2e29cac",
+      "path": "modules/procedures/awake-intubation.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "procedures/fracture-splinting-guide": {
+      "content_version": 1,
+      "hash": "0c52c3e27aaf1ea8",
+      "path": "modules/procedures/fracture-splinting-guide.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "procedures/laceration-repair": {
+      "content_version": 2,
+      "hash": "72e4b6ae036f3112",
       "path": "modules/procedures/laceration-repair.json",
       "contentType": "procedure",
       "section": "Procedures",
       "review_tier": 1,
-      "next_review_due": "2026-11-30"
+      "next_review_due": "2026-12-01"
+    },
+    "procedures/last-lipid-rescue": {
+      "content_version": 2,
+      "hash": "eae4da01847ac03b",
+      "path": "modules/procedures/last-lipid-rescue.json",
+      "contentType": "reference",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "procedures/nerve-block-guide": {
+      "content_version": 2,
+      "hash": "90251f5f1b497782",
+      "path": "modules/procedures/nerve-block-guide.json",
+      "contentType": "reference",
+      "section": "Procedures",
+      "review_tier": 2,
+      "next_review_due": "2026-12-01"
+    },
+    "procedures/neuraxial-anticoagulation": {
+      "content_version": 1,
+      "hash": "fa41ec9757de5671",
+      "path": "modules/procedures/neuraxial-anticoagulation.json",
+      "contentType": "reference",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "procedures/pocus-guide": {
+      "content_version": 2,
+      "hash": "62a4ff94c5c0bda4",
+      "path": "modules/procedures/pocus-guide.json",
+      "contentType": "reference",
+      "section": "Procedures",
+      "review_tier": 2,
+      "next_review_due": "2026-12-01"
+    },
+    "procedures/procedural-sedation-workflow": {
+      "content_version": 1,
+      "hash": "cea726ee25414879",
+      "path": "modules/procedures/procedural-sedation-workflow.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "reference-library/abg-interpretation": {
+      "content_version": 2,
+      "hash": "78d373fdf1e0baba",
+      "path": "modules/reference-library/abg-interpretation.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": "stable"
+    },
+    "reference-library/acls-adult-cardiac-arrest": {
+      "content_version": 2,
+      "hash": "fa1b55f64de76fab",
+      "path": "modules/reference-library/acls-adult-cardiac-arrest.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/acute-ischemic-stroke": {
+      "content_version": 1,
+      "hash": "63de28ca68e9ab6a",
+      "path": "modules/reference-library/acute-ischemic-stroke.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/acute-pe-guideline-2026": {
+      "content_version": 1,
+      "hash": "2012eedd3c807723",
+      "path": "modules/reference-library/acute-pe-guideline-2026.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/aki-staging-rrt": {
+      "content_version": 1,
+      "hash": "75ba3b4b3edf7340",
+      "path": "modules/reference-library/aki-staging-rrt.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-03-02"
+    },
+    "reference-library/albumin-furosemide-push-pull": {
+      "content_version": 1,
+      "hash": "5f56cd7b8df26675",
+      "path": "modules/reference-library/albumin-furosemide-push-pull.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-03-02"
     },
     "reference-library/anticoagulation-reversal": {
-      "content_version": 3,
-      "hash": "cb2e650622895813",
+      "content_version": 5,
+      "hash": "f026d5f411aa6f3c",
       "path": "modules/reference-library/anticoagulation-reversal.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/antidotes-reversal-agents": {
+      "content_version": 1,
+      "hash": "eb6296bc01a4a171",
+      "path": "modules/reference-library/antidotes-reversal-agents.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/beta-blocker-selectivity": {
+      "content_version": 1,
+      "hash": "5f5ba7ae451a0ab5",
+      "path": "modules/reference-library/beta-blocker-selectivity.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-09-02"
+    },
+    "reference-library/blood-products": {
+      "content_version": 1,
+      "hash": "d4ba7828f196fe84",
+      "path": "modules/reference-library/blood-products.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/capnography": {
+      "content_version": 1,
+      "hash": "d7aa67e49d59686c",
+      "path": "modules/reference-library/capnography.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/contrast-associated-aki": {
+      "content_version": 1,
+      "hash": "ed050d8066281a1e",
+      "path": "modules/reference-library/contrast-associated-aki.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-02"
+    },
+    "reference-library/csection-analgesia-prospect": {
+      "content_version": 1,
+      "hash": "3e98a9c1d11e9b43",
+      "path": "modules/reference-library/csection-analgesia-prospect.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-03-02"
+    },
+    "reference-library/decision-rules-cspine-ct-head": {
+      "content_version": 1,
+      "hash": "d0c54f0162f95c90",
+      "path": "modules/reference-library/decision-rules-cspine-ct-head.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-03-02"
+    },
+    "reference-library/ecg-library": {
+      "content_version": 2,
+      "hash": "af957d155db644f9",
+      "path": "modules/reference-library/ecg-library.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-01"
+    },
+    "reference-library/ecmo-support": {
+      "content_version": 1,
+      "hash": "ef7a3cbb06fb2067",
+      "path": "modules/reference-library/ecmo-support.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/efm-fetal-heart-rate": {
+      "content_version": 1,
+      "hash": "f0fffe97b664ab10",
+      "path": "modules/reference-library/efm-fetal-heart-rate.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-03-02"
+    },
+    "reference-library/emergency-drugs-pregnancy": {
+      "content_version": 1,
+      "hash": "c8d0cb373f20d128",
+      "path": "modules/reference-library/emergency-drugs-pregnancy.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/empiric-antibiotics-cap": {
+      "content_version": 1,
+      "hash": "6e04ceb9ceb0fd20",
+      "path": "modules/reference-library/empiric-antibiotics-cap.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
       "next_review_due": "2026-11-30"
+    },
+    "reference-library/empiric-antibiotics-ed-icu": {
+      "content_version": 1,
+      "hash": "c9e671a44fb06038",
+      "path": "modules/reference-library/empiric-antibiotics-ed-icu.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/empiric-antibiotics-outpatient": {
+      "content_version": 1,
+      "hash": "183d5409e168aa1c",
+      "path": "modules/reference-library/empiric-antibiotics-outpatient.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/erc-2025-pediatric-life-support": {
+      "content_version": 1,
+      "hash": "933ff0253654e099",
+      "path": "modules/reference-library/erc-2025-pediatric-life-support.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/heart-failure-continuum": {
+      "content_version": 1,
+      "hash": "b299092adf7c1181",
+      "path": "modules/reference-library/heart-failure-continuum.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/hyperkalemia-management": {
+      "content_version": 1,
+      "hash": "6af405551f065d51",
+      "path": "modules/reference-library/hyperkalemia-management.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/hyperosmolar-therapy": {
+      "content_version": 1,
+      "hash": "6ef897df594a723b",
+      "path": "modules/reference-library/hyperosmolar-therapy.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-03-02"
+    },
+    "reference-library/icp-tbi-management": {
+      "content_version": 1,
+      "hash": "97860e00662f8f54",
+      "path": "modules/reference-library/icp-tbi-management.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/icu-workflow": {
+      "content_version": 1,
+      "hash": "ec9ab14156a62db0",
+      "path": "modules/reference-library/icu-workflow.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/iv-fluids": {
+      "content_version": 2,
+      "hash": "f3dbde99ad8989ec",
+      "path": "modules/reference-library/iv-fluids.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-03-02"
+    },
+    "reference-library/lab-interpretation": {
+      "content_version": 1,
+      "hash": "0727d9eb32395748",
+      "path": "modules/reference-library/lab-interpretation.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
+    "reference-library/mac-values": {
+      "content_version": 1,
+      "hash": "9ef07fcdddcea156",
+      "path": "modules/reference-library/mac-values.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-09-02"
+    },
+    "reference-library/malignant-hyperthermia": {
+      "content_version": 1,
+      "hash": "4c9e65aaaf7d8446",
+      "path": "modules/reference-library/malignant-hyperthermia.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/maternal-cardiac-arrest": {
+      "content_version": 1,
+      "hash": "2386f2510fa492aa",
+      "path": "modules/reference-library/maternal-cardiac-arrest.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/neuraxial-anesthesia": {
+      "content_version": 1,
+      "hash": "e70158cb123ee908",
+      "path": "modules/reference-library/neuraxial-anesthesia.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-02"
+    },
+    "reference-library/neuromuscular-blockade-reversal": {
+      "content_version": 1,
+      "hash": "ebee2e893fc42cb4",
+      "path": "modules/reference-library/neuromuscular-blockade-reversal.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/obstetric-delivery-emergencies": {
+      "content_version": 1,
+      "hash": "dc00692cbf9d3532",
+      "path": "modules/reference-library/obstetric-delivery-emergencies.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-02"
+    },
+    "reference-library/padis-bundle": {
+      "content_version": 1,
+      "hash": "d85e339532106f3e",
+      "path": "modules/reference-library/padis-bundle.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/perioperative-glycemic-management": {
+      "content_version": 1,
+      "hash": "161882cfaab7d472",
+      "path": "modules/reference-library/perioperative-glycemic-management.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-03-02"
+    },
+    "reference-library/peripheral-iv-vasopressors": {
+      "content_version": 1,
+      "hash": "8afdde5725e9eded",
+      "path": "modules/reference-library/peripheral-iv-vasopressors.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/physiologically-difficult-airway": {
+      "content_version": 2,
+      "hash": "a46da6cd70679f48",
+      "path": "modules/reference-library/physiologically-difficult-airway.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/postpartum-hemorrhage": {
+      "content_version": 1,
+      "hash": "b4c90ed7e9c3f083",
+      "path": "modules/reference-library/postpartum-hemorrhage.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/preanesthesia-checklist": {
+      "content_version": 1,
+      "hash": "05f0463a90088b19",
+      "path": "modules/reference-library/preanesthesia-checklist.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-03-02"
+    },
+    "reference-library/preeclampsia-eclampsia-hellp": {
+      "content_version": 1,
+      "hash": "8281b137ae42f047",
+      "path": "modules/reference-library/preeclampsia-eclampsia-hellp.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/pressor-inotrope-reference": {
+      "content_version": 1,
+      "hash": "c534827746d2824c",
+      "path": "modules/reference-library/pressor-inotrope-reference.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/rsi-seven-ps": {
+      "content_version": 1,
+      "hash": "10ed3774498c20bd",
+      "path": "modules/reference-library/rsi-seven-ps.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/sedation-analgesia-agents": {
+      "content_version": 1,
+      "hash": "264587b76993ca1e",
+      "path": "modules/reference-library/sedation-analgesia-agents.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/septic-shock-resuscitation": {
+      "content_version": 1,
+      "hash": "30eb136b884bdde7",
+      "path": "modules/reference-library/septic-shock-resuscitation.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/shock-classification": {
+      "content_version": 1,
+      "hash": "f09d8c89f4ce2d91",
+      "path": "modules/reference-library/shock-classification.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/sodium-disorders": {
+      "content_version": 1,
+      "hash": "d2c9f98032649f4d",
+      "path": "modules/reference-library/sodium-disorders.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/status-epilepticus-adult": {
+      "content_version": 1,
+      "hash": "934293792659ae30",
+      "path": "modules/reference-library/status-epilepticus-adult.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/teg-rotem-interpretation": {
+      "content_version": 1,
+      "hash": "abb56e8eb178aaff",
+      "path": "modules/reference-library/teg-rotem-interpretation.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-03-02"
+    },
+    "reference-library/toxidromes-and-overdoses": {
+      "content_version": 1,
+      "hash": "ff47e2d8ae1ff074",
+      "path": "modules/reference-library/toxidromes-and-overdoses.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/trauma-primary-survey": {
+      "content_version": 1,
+      "hash": "214723e201034ae4",
+      "path": "modules/reference-library/trauma-primary-survey.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/twelve-lead-stemi-criteria": {
+      "content_version": 2,
+      "hash": "f0ccb804ff9ddcf3",
+      "path": "modules/reference-library/twelve-lead-stemi-criteria.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-01"
+    },
+    "reference-library/ventilator-management": {
+      "content_version": 3,
+      "hash": "5b4be8b8dc136736",
+      "path": "modules/reference-library/ventilator-management.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-02"
+    },
+    "reference-library/ventilator-modes": {
+      "content_version": 1,
+      "hash": "b2172b62304e52eb",
+      "path": "modules/reference-library/ventilator-modes.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-03-02"
     }
   }
 }

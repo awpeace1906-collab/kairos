@@ -1,0 +1,30 @@
+{
+  "id": "ideal-body-weight",
+  "section": "Drug & Dosing Cards",
+  "category": "Dosing & Fluid Math",
+  "title": "Ideal Body Weight (Devine)",
+  "aliases": ["IBW", "Devine formula", "lung protective tidal volume weight"],
+  "tags": ["ideal body weight", "tidal volume", "lung protective ventilation", "ICU", "OR"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "review_tier": "stable",
+  "sources": ["Devine BJ. Drug Intell Clin Pharm 1974", "ARDSNet"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3." }],
+  "engine": "formula",
+  "settings": ["ICU", "OR"],
+  "purpose": "Sets lung-protective tidal-volume targets (6 mL/kg IBW) independent of actual body weight; also the basis for adjusted body weight.",
+  "inputs": [
+    { "key": "heightIn", "label": "Height", "type": "number", "unit": "inches", "min": 48, "max": 84 },
+    { "key": "sex", "label": "Sex", "type": "select", "options": [{ "label": "Male", "value": 0 }, { "label": "Female", "value": 1 }] }
+  ],
+  "formulas": [
+    { "key": "ibw", "label": "Ideal body weight", "expression": "50 - 4.5 * sex + 2.3 * (heightIn - 60)", "unit": "kg", "precision": 1 },
+    { "key": "tv6", "label": "Tidal volume at 6 mL/kg", "expression": "6 * (50 - 4.5 * sex + 2.3 * (heightIn - 60))", "unit": "mL", "precision": 0 },
+    { "key": "tv8", "label": "Tidal volume at 8 mL/kg", "expression": "8 * (50 - 4.5 * sex + 2.3 * (heightIn - 60))", "unit": "mL", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "ibw", "label": "Use IBW (not actual weight) for tidal-volume targets and as the base for adjusted body weight", "severity": "info" }
+  ],
+  "notes": "Devine formula. For heights < 60 inches, IBW decreases below the base value. Enter height in inches."
+}

@@ -21,6 +21,22 @@ xcodebuild -project Kairos.xcodeproj -scheme Kairos \
   build CODE_SIGNING_ALLOWED=NO
 ```
 
+## Tests
+
+`ios/Tests/EngineTests.swift` (target `KairosTests`) mirrors `tools/test.mjs` —
+the same cases against `Expression` / `CalculatorEngine` / `WeightZones` /
+`SearchIndex`, so the Swift ports are proven equivalent to the web engines
+(Bazett 462, Fridericia 440, zone gap → 4, dose min/max/range clamps, …).
+
+```bash
+xcodebuild test -project Kairos.xcodeproj -scheme Kairos \
+  -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15' \
+  CODE_SIGNING_ALLOWED=NO
+```
+
+CI: `.github/workflows/ios-ci.yml` runs `xcodegen generate` + `xcodebuild test`
+on a macOS runner.
+
 ## How it's wired
 
 | Piece | File |

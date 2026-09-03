@@ -1,0 +1,48 @@
+{
+  "id": "atropine",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Anticholinergics",
+  "title": "Atropine",
+  "aliases": [
+    "AtroPen (auto-injector)"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "anticholinergic",
+    "atropine"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "AtroPen (auto-injector)",
+  "tallManLetters": "ATROPine",
+  "drugClass": "anticholinergic",
+  "drugClassLabel": "Anticholinergic",
+  "mechanism": "Non-selective competitive muscarinic antagonist (M1, M2, M3). Tertiary amine — crosses the blood-brain barrier (CNS effects possible at high doses). Preferred for sinus bradycardia (fastest IV onset).",
+  "onset": "IV 1–2 min; IM 5–15 min",
+  "duration": "2–3h",
+  "dosing": "Adult bradycardia: 0.5–1 mg IV (MAX 3 mg total)\nPeds bradycardia: 0.02 mg/kg IV (MIN 0.1 mg, MAX 0.5 mg)\nPre-induction anti-sialagogue: 0.01 mg/kg IV or 0.02 mg/kg IM\nWith neostigmine: 0.02 mg/kg IV\nACLS: 1 mg IV q3–5 min (MAX 3 mg)",
+  "cautions": [
+    "AEs: Tachycardia (avoid in AMI, HOCM, tachyarrhythmia), urinary retention, constipation, CNS toxicity at high doses (confusion, hallucinations, hyperthermia — crosses BBB), blurred vision, dry mouth",
+    "CI: Hypersensitivity; narrow-angle glaucoma; obstructive uropathy; pyloric stenosis; BPH (relative)",
+    "Precautions: Paradoxical bradycardia with sub-threshold doses — DO NOT give <0.1 mg (peds) or <0.5 mg (adults); may precipitate acute glaucoma; use glycopyrrolate preferentially for neostigmine pairing"
+  ],
+  "pearls": [
+    "Crosses BBB → CNS toxicity ('atropine psychosis') at high doses. Preferred over glycopyrrolate for sinus node bradycardia (faster onset IV) and ACLS.",
+    "Paradoxical bradycardia occurs with sub-minimum doses (central vagal stimulation) — dose thresholds are absolute minimums, not suggestions."
+  ],
+  "reversal": "Physostigmine for severe atropine toxicity"
+}

@@ -1,0 +1,184 @@
+{
+  "id": "four-score",
+  "section": "Calculators",
+  "category": "Neuro / Stroke / Head Injury",
+  "title": "FOUR Score (Coma Scale)",
+  "aliases": [
+    "FOUR score",
+    "Full Outline of UnResponsiveness",
+    "coma scale intubated",
+    "GCS alternative"
+  ],
+  "tags": [
+    "coma",
+    "consciousness",
+    "brainstem",
+    "ICU",
+    "neurocritical care",
+    "prognosis"
+  ],
+  "keywords": [
+    "eye response",
+    "motor response",
+    "brainstem reflexes",
+    "respiration pattern",
+    "intubated patient GCS",
+    "locked-in",
+    "vegetative"
+  ],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": [
+    "Wijdicks EFM et al. Ann Neurol 2005; validated in ICU and ED cohorts"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx."
+    }
+  ],
+  "engine": "additive",
+  "settings": [
+    "ICU",
+    "ED"
+  ],
+  "purpose": "Grades consciousness across four domains (Eye, Motor, Brainstem, Respiration), each 0–4. Unlike GCS it needs no verbal component, so it works in intubated patients, and it captures brainstem reflexes and breathing pattern — detecting locked-in syndrome, herniation, and brain death progression that GCS misses.",
+  "items": [
+    {
+      "key": "eye",
+      "label": "Eye response",
+      "options": [
+        {
+          "label": "4 — eyelids open or opened, tracking, or blinking to command",
+          "points": 4
+        },
+        {
+          "label": "3 — eyelids open but not tracking",
+          "points": 3
+        },
+        {
+          "label": "2 — eyelids closed, open to loud voice",
+          "points": 2
+        },
+        {
+          "label": "1 — eyelids closed, open to pain",
+          "points": 1
+        },
+        {
+          "label": "0 — eyelids remain closed with pain",
+          "points": 0
+        }
+      ]
+    },
+    {
+      "key": "motor",
+      "label": "Motor response",
+      "options": [
+        {
+          "label": "4 — thumbs-up, fist, or peace sign to command",
+          "points": 4
+        },
+        {
+          "label": "3 — localising to pain",
+          "points": 3
+        },
+        {
+          "label": "2 — flexion response to pain",
+          "points": 2
+        },
+        {
+          "label": "1 — extension response to pain",
+          "points": 1
+        },
+        {
+          "label": "0 — no response to pain, or generalised myoclonus status",
+          "points": 0
+        }
+      ]
+    },
+    {
+      "key": "brainstem",
+      "label": "Brainstem reflexes",
+      "options": [
+        {
+          "label": "4 — pupil and corneal reflexes present",
+          "points": 4
+        },
+        {
+          "label": "3 — one pupil wide and fixed",
+          "points": 3
+        },
+        {
+          "label": "2 — pupil OR corneal reflex absent",
+          "points": 2
+        },
+        {
+          "label": "1 — pupil AND corneal reflexes absent",
+          "points": 1
+        },
+        {
+          "label": "0 — absent pupil, corneal, AND cough reflex",
+          "points": 0
+        }
+      ]
+    },
+    {
+      "key": "respiration",
+      "label": "Respiration",
+      "options": [
+        {
+          "label": "4 — not intubated, regular breathing pattern",
+          "points": 4
+        },
+        {
+          "label": "3 — not intubated, Cheyne-Stokes breathing",
+          "points": 3
+        },
+        {
+          "label": "2 — not intubated, irregular breathing",
+          "points": 2
+        },
+        {
+          "label": "1 — breathes above ventilator rate",
+          "points": 1
+        },
+        {
+          "label": "0 — breathes at ventilator rate or apnoea",
+          "points": 0
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 0,
+      "max": 0,
+      "label": "FOUR 0 — all domains absent; findings compatible with brain death (does not replace a formal brain-death examination)",
+      "severity": "high"
+    },
+    {
+      "min": 1,
+      "max": 8,
+      "label": "Severe impairment — high in-hospital mortality; a low Brainstem or Respiration sub-score is an independent poor prognostic sign",
+      "severity": "high"
+    },
+    {
+      "min": 9,
+      "max": 15,
+      "label": "Moderate impairment — serial scoring to trend; a falling Eye or Brainstem sub-score should prompt urgent reassessment for herniation",
+      "severity": "moderate"
+    },
+    {
+      "min": 16,
+      "max": 16,
+      "label": "FOUR 16 — fully responsive across all domains",
+      "severity": "low"
+    }
+  ],
+  "notes": "Score the BEST response for Eye and Motor. A patient with E4 M0 B4 R4 may have locked-in syndrome — look for vertical eye movements / blink-to-command. Test one brainstem reflex battery consistently. FOUR predicts in-hospital mortality and poor outcome at least as well as GCS and better in intubated patients.",
+  "buildNote": "Additive, 4 domains × 0–4. Range 0–16."
+}

@@ -29,26 +29,30 @@ struct DrugCardView: View {
             Text("\(card.population ?? "both") · weight basis: \(card.weightBasis ?? "actual")")
                 .font(.caption).foregroundStyle(.secondary)
 
-            ClearableField(label: "Exact weight", unit: "kg", text: Binding(
+            ClearableField(label: "Exact weight", unit: "kg", fieldID: "drug-weight", text: Binding(
                 get: { weightText }, set: { weightText = $0; session.set(route, "weight", $0) }))
-            ClearableField(label: "Age (fallback estimate only)", unit: "years", text: Binding(
+            ClearableField(label: "Age (fallback estimate only)", unit: "years", fieldID: "drug-age", text: Binding(
                 get: { ageText }, set: { ageText = $0; session.set(route, "age", $0) }))
 
             ClearFieldsButton {
                 weightText = ""; ageText = ""; session.clearScreen(route)
             }
 
-            if let cfg = content.weightZones, let rw = resolvedWeight,
-               let zone = WeightZones.zone(for: rw.kg, in: cfg) {
-                zoneBar(zone, rw)
-                ForEach(card.doses) { dose in
-                    doseRow(dose, weightKg: rw.kg)
+            Group {
+                if let cfg = content.weightZones, let rw = resolvedWeight,
+                   let zone = WeightZones.zone(for: rw.kg, in: cfg) {
+                    zoneBar(zone, rw)
+                    ForEach(card.doses) { dose in
+                        doseRow(dose, weightKg: rw.kg)
+                    }
+                    Text(cfg.disclaimer).font(.caption2).foregroundStyle(.secondary)
+                } else {
+                    Text("Enter an exact weight (preferred) or an age to estimate.")
+                        .foregroundStyle(.secondary)
                 }
-                Text(cfg.disclaimer).font(.caption2).foregroundStyle(.secondary)
-            } else {
-                Text("Enter an exact weight (preferred) or an age to estimate.")
-                    .foregroundStyle(.secondary)
             }
+            .accessibilityElement(children: .contain)
+            .accessibilityIdentifier("dose-output")
 
             if let c = card.contraindications, !c.isEmpty {
                 Text("Contraindications: \(c.joined(separator: "; "))").font(.callout)
@@ -88,11 +92,20 @@ struct DrugCardView: View {
                 + Text(" · \(dose.route)").font(.caption).foregroundColor(.secondary)
             if let d {
                 HStack(spacing: 4) {
-                    Text("\(fmt(d.amount)) \(d.unit)").bold()
+                    if let hi = d.amountHigh, hi != d.amount {
+                        Text("\(fmt(d.amount))–\(fmt(hi)) \(d.unit)").bold()
+                    } else {
+                        Text("\(fmt(d.amount)) \(d.unit)").bold()
+                    }
                     if let v = d.volumeMl {
-                        Text("= \(fmt(v)) mL\(d.concentration.map { " (\($0))" } ?? "")")
+                        if let vh = d.volumeMlHigh, vh != v {
+                            Text("= \(fmt(v))–\(fmt(vh)) mL\(d.concentration.map { " (\($0))" } ?? "")")
+                        } else {
+                            Text("= \(fmt(v)) mL\(d.concentration.map { " (\($0))" } ?? "")")
+                        }
                     }
                     if d.capped { Text("max-dose cap").font(.caption2).foregroundStyle(.orange) }
+                    if d.floored { Text("min-dose floor").font(.caption2).foregroundStyle(.orange) }
                 }
                 if let rep = d.repeatText { Text(rep).font(.caption).foregroundStyle(.secondary) }
             }

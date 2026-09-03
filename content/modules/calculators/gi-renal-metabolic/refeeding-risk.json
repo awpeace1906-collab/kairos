@@ -1,0 +1,33 @@
+{
+  "id": "refeeding-risk",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "Refeeding Syndrome Risk (NICE Criteria)",
+  "aliases": ["refeeding syndrome", "NICE refeeding", "refeeding risk stratification"],
+  "tags": ["refeeding syndrome", "nutrition", "electrolytes", "phosphate", "ICU"],
+  "keywords": ["BMI", "unintentional weight loss", "little or no nutritional intake", "low potassium magnesium phosphate", "alcohol", "insulin diuretics chemotherapy", "thiamine before feeding"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["NICE CG32 Nutrition support for adults (2006, updated); BAPEN refeeding guidance"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ICU"],
+  "purpose": "Stratifies the risk of refeeding syndrome before starting nutrition support, so calorie delivery and electrolyte replacement can be paced. 'Major' criteria alone define risk; count 'minor' criteria (need two).",
+  "items": [
+    { "key": "bmi", "label": "BMI", "options": [{ "label": "> 20 kg/m²", "points": 0 }, { "label": "16–20 kg/m² (minor)", "points": 1 }, { "label": "< 16 kg/m² (MAJOR)", "points": 3 }] },
+    { "key": "weightLoss", "label": "Unintentional weight loss recently", "options": [{ "label": "None / minimal", "points": 0 }, { "label": "> 5% in 3 months (minor)", "points": 1 }, { "label": "> 15% in 3–6 months (MAJOR)", "points": 3 }] },
+    { "key": "starvation", "label": "Little or no nutritional intake", "options": [{ "label": "None", "points": 0 }, { "label": "> 5 days (minor)", "points": 1 }, { "label": "> 10 days (MAJOR)", "points": 3 }] },
+    { "key": "lowElectrolytes", "label": "Low potassium, phosphate, or magnesium BEFORE feeding", "options": [{ "label": "Normal", "points": 0 }, { "label": "Low (MAJOR)", "points": 3 }] },
+    { "key": "history", "label": "History of alcohol misuse, or drugs — insulin, chemotherapy, antacids, diuretics (minor)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "Low risk — start nutrition support normally; still monitor electrolytes in the first days", "severity": "low" },
+    { "min": 1, "max": 2, "label": "Check against the rule: 2 or more MINOR criteria = at risk. If at risk — start feeding at 10 kcal/kg/day (up over 4–7 days), give thiamine 200–300 mg + a vitamin B co-strong / multivitamin BEFORE and during the first 10 days, replace K/PO4/Mg proactively, monitor daily", "severity": "moderate" },
+    { "min": 3, "max": 13, "label": "High risk — one MAJOR criterion (BMI < 16, weight loss > 15%, > 10 days negligible intake, or pre-feed low K/PO4/Mg) OR two minor. Start at 5–10 kcal/kg/day, thiamine before feeding, aggressive electrolyte replacement, cardiac monitoring if severe (BMI < 14 or > 15 days starvation → start ~5 kcal/kg/day). Do NOT correct electrolytes fully before starting — replace as you feed", "disposition": "Slow calorie escalation + thiamine + electrolytes", "severity": "high" }
+  ],
+  "notes": "Refeeding syndrome is driven by an insulin surge on carbohydrate delivery pulling phosphate, potassium, and magnesium intracellularly — causing arrhythmia, heart failure, rhabdomyolysis, seizures, and respiratory failure, typically in the first 72 h. Thiamine repletion prevents Wernicke's precipitated by the same carbohydrate load. Falling phosphate after feeding starts is the earliest lab marker.",
+  "buildNote": "NICE criteria — 1 major OR 2 minor = at risk; points are a helper."
+}

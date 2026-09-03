@@ -1,0 +1,48 @@
+{
+  "id": "methadone",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Opioids",
+  "title": "Methadone",
+  "aliases": [
+    "Dolophine / Methadose"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "opioid",
+    "methadone"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Dolophine / Methadose",
+  "tallManLetters": "METHadone",
+  "drugClass": "opioid",
+  "drugClassLabel": "Opioid",
+  "mechanism": "Full μ-opioid agonist + NMDA receptor antagonist (↓opioid tolerance) + SNRI activity (neuropathic analgesia). Uniquely active at multiple receptor classes — favored for complex pain states.",
+  "onset": "PO 30–60 min",
+  "duration": "24–36h (long t½; peak respiratory depression occurs LATER and LONGER than analgesia)",
+  "dosing": "OUD maintenance: Initial 20–30 mg PO daily (MAX 40 mg day 1); titrate 5–10 mg q3–5 days; maintenance ≥80 mg (≥100 mg for fentanyl users)\nChronic pain (opioid-naive): 2.5 mg q8h; titrate ≤5 mg/day q5–7 days\nOpioid rotation: Use 75–90% less than calculated equianalgesic dose",
+  "cautions": [
+    "AEs: QTc prolongation (23% incidence), respiratory depression (delayed peak), serotonin syndrome, severe hypotension, OIH, adrenal insufficiency",
+    "CI: Significant respiratory depression; acute asthma; GI obstruction; hypersensitivity",
+    "Precautions: Incomplete cross-tolerance — start LOW when converting from other opioids; QTc monitoring (baseline ECG + serial); extensive CYP450 interactions; NOWS risk; benzodiazepine combination high-risk; titrate no more frequently than q5–7 days"
+  ],
+  "pearls": [
+    "NMDA antagonism makes it uniquely valuable for neuropathic pain and OIH prevention. QTc risk is real — baseline and serial ECGs with high doses or combination therapy.",
+    "Long t½ makes titration challenging — respiratory depression peak occurs AFTER analgesic peak. Titration interval ≥5–7 days."
+  ],
+  "reversal": "Naloxone (titrate carefully — short duration vs. methadone; repeat dosing or infusion required)"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "cocaine-4-10",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Local Anesthetics",
+  "title": "Cocaine 4–10%",
+  "aliases": [
+    "(Topical solution)"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "local",
+    "cocaine",
+    "10"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "(Topical solution)",
+  "drugClass": "local",
+  "drugClassLabel": "Local Anesthetic",
+  "mechanism": "Naturally occurring ester LA. Dual mechanism: Na⁺ channel blockade (LA analgesia) + catecholamine reuptake inhibition (sympathomimetic vasoconstriction). Only LA with intrinsic vasoconstrictive properties.",
+  "onset": "Topical nasal/airway: 2–5 min",
+  "duration": "30–60 min topical",
+  "dosing": "Topical ONLY: 4% solution for ENT/nasal (MAX 3 mg/kg, absolute max 200 mg). Soaked pledgets or spray. NOT for infiltration, epidural, or spinal.",
+  "cautions": [
+    "Potent CNS stimulant — tachycardia, hypertension, dysrhythmias",
+    "ABSOLUTE CI: MAOIs — hypertensive crisis",
+    "CI: CAD, severe HTN, hyperthyroidism",
+    "Schedule II — strict institutional controls; urine drug screen positive after clinical use"
+  ],
+  "pearls": [
+    "Irreplaceable in ENT: only LA with intrinsic vasoconstriction — simultaneous analgesia and bloodless surgical field",
+    "Alternative: oxymetazoline (vasoconstriction) + lidocaine (analgesia) as two separate agents",
+    "Document clinical use in chart — urine screen will be positive for benzoylecgonine"
+  ]
+}

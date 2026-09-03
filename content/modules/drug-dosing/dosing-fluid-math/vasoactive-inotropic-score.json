@@ -1,0 +1,35 @@
+{
+  "id": "vasoactive-inotropic-score",
+  "section": "Drug & Dosing Cards",
+  "category": "Dosing & Fluid Math",
+  "title": "Vasoactive-Inotropic Score (VIS)",
+  "aliases": ["VIS", "pressor score", "inotrope score"],
+  "tags": ["shock", "vasopressors", "inotropes", "ICU", "trend"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Gaies MG et al. Pediatr Crit Care Med 2010", "Koponen T et al. Br J Anaesth 2019"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3." }],
+  "engine": "formula",
+  "settings": ["ICU"],
+  "purpose": "Single number summarising total vasoactive/inotrope support — for shift-to-shift comparison. Trend it; a single value is not diagnostic.",
+  "inputs": [
+    { "key": "dopamine", "label": "Dopamine", "type": "number", "unit": "mcg/kg/min", "min": 0, "max": 50 },
+    { "key": "dobutamine", "label": "Dobutamine", "type": "number", "unit": "mcg/kg/min", "min": 0, "max": 50 },
+    { "key": "epinephrine", "label": "Epinephrine", "type": "number", "unit": "mcg/kg/min", "min": 0, "max": 5 },
+    { "key": "norepinephrine", "label": "Norepinephrine", "type": "number", "unit": "mcg/kg/min", "min": 0, "max": 5 },
+    { "key": "milrinone", "label": "Milrinone", "type": "number", "unit": "mcg/kg/min", "min": 0, "max": 2 },
+    { "key": "vasopressin", "label": "Vasopressin", "type": "number", "unit": "units/kg/min", "min": 0, "max": 0.01 }
+  ],
+  "formulas": [
+    { "key": "vis", "label": "Vasoactive-Inotropic Score", "expression": "dopamine + dobutamine + 100 * epinephrine + 100 * norepinephrine + 10 * milrinone + 10000 * vasopressin", "precision": 1 }
+  ],
+  "interpretation": [
+    { "forKey": "vis", "min": 0, "max": 15, "label": "Low support", "severity": "low" },
+    { "forKey": "vis", "min": 15.1, "max": 30, "label": "Moderate support", "severity": "moderate" },
+    { "forKey": "vis", "min": 30.1, "max": 1000, "label": "High support — high-VIS is associated with worse outcomes in the validation cohorts", "severity": "high" }
+  ],
+  "notes": "Enter 0 for agents not running. Some published versions add phenylephrine (×100) and use norepinephrine ×100 — the coefficient set here follows the common adult adaptation. Bands are approximate and cohort-dependent."
+}

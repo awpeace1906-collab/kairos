@@ -1,0 +1,50 @@
+{
+  "id": "ropivacaine-epidural-nerve-block",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Local Anesthetics",
+  "title": "Ropivacaine (Epidural/Nerve Block)",
+  "aliases": [
+    "Naropin"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "local",
+    "ropivacaine",
+    "epidural",
+    "nerve",
+    "block"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Naropin",
+  "drugClass": "local",
+  "drugClassLabel": "Local Anesthetic",
+  "mechanism": "Pure S-enantiomer amide LA. Preferential sensory > motor block — ideal for epidural analgesia and continuous nerve block catheters. Better cardiac safety profile than bupivacaine.",
+  "onset": "Epidural: 15–20 min. Peripheral nerve block: 15–30 min.",
+  "duration": "Epidural: 3–5h. Peripheral nerve block: 6–12h.",
+  "dosing": "Max dose: 3 mg/kg (225 mg). Epidural: 0.1–0.2% for analgesia; 0.5–1% for surgical block. Peripheral nerve block: 0.375–0.75%. Thoracic epidural infusion: 0.2% at 5–10 mL/hr.",
+  "cautions": [
+    "Still cardiotoxic in overdose — less so than bupivacaine but LAST remains a risk",
+    "Intrinsic vasoconstriction means epinephrine provides less additional benefit vs. lidocaine",
+    "Slower onset than lidocaine — plan block timing accordingly"
+  ],
+  "pearls": [
+    "Preferred for continuous nerve block catheters — less motor block than bupivacaine at equivalent sensory dose",
+    "Thoracic epidurals: preserves respiratory muscle function better than equipotent bupivacaine",
+    "0.2% provides differential sensory > motor block ideal for postop epidural infusions"
+  ]
+}

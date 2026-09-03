@@ -23,7 +23,7 @@ for (const mod of mods) {
 const out = {
   generatedAt: iso() + "T00:00:00Z",
   schemaVersion: 1,
-  contentBaseHint: "https://content.kairos.example/v1/",
+  contentBaseHint: process.env.CONTENT_BASE_URL || "https://content.kairos.example/v1/",
   modules: Object.fromEntries(Object.keys(modules).sort().map((k) => [k, modules[k]])),
 };
 

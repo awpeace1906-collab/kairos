@@ -1,0 +1,154 @@
+{
+  "id": "revised-trauma-score",
+  "section": "Calculators",
+  "category": "Trauma",
+  "title": "Revised Trauma Score (RTS)",
+  "aliases": [
+    "RTS",
+    "revised trauma score",
+    "trauma triage score",
+    "triage RTS"
+  ],
+  "tags": [
+    "trauma",
+    "triage",
+    "prognosis",
+    "prehospital",
+    "ED"
+  ],
+  "keywords": [
+    "Glasgow Coma Scale",
+    "systolic blood pressure",
+    "respiratory rate",
+    "trauma triage tool",
+    "T-RTS"
+  ],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": [
+    "Champion HR et al. J Trauma 1989"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx. Triage RTS (coded-value sum, unweighted)."
+    }
+  ],
+  "engine": "additive",
+  "settings": [
+    "ED"
+  ],
+  "purpose": "Physiologic trauma severity score from three coded parameters (GCS, systolic BP, respiratory rate), each 0–4. This is the Triage-RTS (T-RTS) — the simple unweighted sum used at the bedside / in the field. A T-RTS ≤ 11 identifies a patient who should be taken to a trauma centre.",
+  "items": [
+    {
+      "key": "gcs",
+      "label": "Glasgow Coma Scale",
+      "options": [
+        {
+          "label": "13–15",
+          "points": 4
+        },
+        {
+          "label": "9–12",
+          "points": 3
+        },
+        {
+          "label": "6–8",
+          "points": 2
+        },
+        {
+          "label": "4–5",
+          "points": 1
+        },
+        {
+          "label": "3",
+          "points": 0
+        }
+      ]
+    },
+    {
+      "key": "sbp",
+      "label": "Systolic blood pressure (mmHg)",
+      "options": [
+        {
+          "label": "> 89",
+          "points": 4
+        },
+        {
+          "label": "76–89",
+          "points": 3
+        },
+        {
+          "label": "50–75",
+          "points": 2
+        },
+        {
+          "label": "1–49",
+          "points": 1
+        },
+        {
+          "label": "0 (no pulse)",
+          "points": 0
+        }
+      ]
+    },
+    {
+      "key": "rr",
+      "label": "Respiratory rate (/min)",
+      "options": [
+        {
+          "label": "10–29",
+          "points": 4
+        },
+        {
+          "label": "> 29",
+          "points": 3
+        },
+        {
+          "label": "6–9",
+          "points": 2
+        },
+        {
+          "label": "1–5",
+          "points": 1
+        },
+        {
+          "label": "0 (apnoea)",
+          "points": 0
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    {
+      "min": 0,
+      "max": 3,
+      "label": "Extremely severe physiologic derangement — very high mortality. Maximal resuscitation, immediate trauma team, damage-control approach",
+      "severity": "high"
+    },
+    {
+      "min": 4,
+      "max": 10,
+      "label": "Severe — trauma-centre care, trauma team activation, early imaging and definitive haemorrhage control",
+      "severity": "high"
+    },
+    {
+      "min": 11,
+      "max": 11,
+      "label": "T-RTS 11 — triage threshold. Transport to / manage at a trauma centre; do not undertriage",
+      "severity": "moderate"
+    },
+    {
+      "min": 12,
+      "max": 12,
+      "label": "T-RTS 12 — normal physiology at this snapshot. Does NOT exclude serious injury (normal vitals are common early in significant trauma) — full secondary survey, serial reassessment, imaging per mechanism",
+      "severity": "moderate"
+    }
+  ],
+  "notes": "The prognostic RTS uses weighted coefficients (0.9368·GCS_c + 0.7326·SBP_c + 0.2908·RR_c, range 0–7.84) and feeds the TRISS methodology for survival probability — that is a registry/audit tool, not a bedside one. Use T-RTS for triage only; it is a snapshot and must be repeated. Intubation/sedation invalidates the GCS and RR components.",
+  "buildNote": "Triage-RTS: unweighted sum of three coded values, range 0–12. Prognostic weighted RTS noted in text."
+}

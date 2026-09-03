@@ -1,0 +1,66 @@
+{
+  "id": "albumin-furosemide-push-pull",
+  "section": "Reference Library",
+  "category": "Cardiac / ECG",
+  "title": "Albumin + Furosemide (Push/Pull)",
+  "aliases": ["push pull diuresis", "25% albumin lasix", "hyperoncotic albumin diuretic", "diuretic resistance albumin", "cardiorenal congestion albumin"],
+  "tags": ["diuresis", "edema", "hypoalbuminemia", "diuretic resistance", "ADHF", "cardiorenal", "albumin", "furosemide", "ICU"],
+  "keywords": ["revised Starling", "glycocalyx", "lymphatic outflow", "25% vs 5% albumin", "Chalikias 2026", "VExUS", "P/F ratio"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — Push/Pull: Albumin & Furosemide (physiology deep dive + content audit)",
+    "Lee TH et al. Albumin + furosemide meta-analysis. PLOS One 2021 (13 studies, 422 pts)",
+    "Chalikias G et al. Furosemide ± albumin in ADHF with hepatic dysfunction (RCT). Am Heart J 2026",
+    "Itagaki Y et al. Albumin + diuretic in ventilated hypoalbuminemic patients (meta-analysis). 2022",
+    "Levick JR, Michel CC. Microvascular fluid exchange and the revised Starling principle. Cardiovasc Res 2010"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV push/pull deep dive. When it works, which bottle, dose, timing, and when it's a waste." }],
+  "summary": "A rescue for the congested, diuretic-resistant, hypoalbuminaemic patient — NOT a license to over-resuscitate and clean up later. It works by turning down capillary filtration (raised plasma oncotic pressure) while the lymphatics keep draining — not by 'sucking' fluid back. Effect is modest, real, and concentrated in a narrow population.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "When to reach for it" },
+    { "type": "list", "items": [
+      "Serum albumin < 2.5 g/dL — the subgroup that shows benefit in every positive meta-analysis.",
+      "ADHF with hepatic dysfunction, or significant cardiorenal congestion (the population of the 2026 Chalikias RCT).",
+      "Diuretic resistance after maxing the loop dose and adding a thiazide.",
+      "Ventilated hypoalbuminaemic patient where improving the P/F ratio is the immediate target (Itagaki 2022: ~3× more likely to improve oxygenation, fewer hypotensive episodes — no mortality benefit)."
+    ] },
+    { "type": "heading", "level": 2, "text": "Probably a waste" },
+    { "type": "list", "items": [
+      "Active sepsis with brisk capillary leak — proteases shred the glycocalyx, albumin crosses into the interstitium, the oncotic gradient collapses, and infused albumin largely becomes expensive interstitial fluid.",
+      "Albumin > 2.5 g/dL — minimal pharmacokinetic payoff; the 'albumin as a ride for protein-bound furosemide' argument only applies at the low end (< 2 g/dL).",
+      "Under-dosing (< 30 g total albumin) — below where the meta-analytic benefit appeared.",
+      "Nephrotic syndrome — infused albumin is substantially lost in the urine.",
+      "As a substitute for treating why the patient is congested."
+    ] },
+    { "type": "heading", "level": 2, "text": "How to give it" },
+    { "type": "table",
+      "columns": ["Element", "Do"],
+      "rows": [
+        ["Bottle", "25% (hyperoncotic) — this is the push/pull bottle (100 mL expands plasma volume ~350–500 mL by recruiting interstitial fluid). Save 5% for cirrhosis indications (large-volume paracentesis, SBP prophylaxis, HRS) — 5% here is filling the bathtub when the goal is draining it."],
+        ["Timing", "Give the furosemide within 30–60 min of the albumin. Albumin plasma half-life is only 6–10 h (faster in critical illness) — the urine-output effect is significant at ~8 h and gone by 24 h. Unlinked orders hours apart miss the window."],
+        ["Loop dose", "Max the loop first (and add a thiazide) — push/pull is added on top of a maxed regimen, not instead of it."],
+        ["Monitor", "Urine output over the first 12 h, sodium, creatinine, and for pulmonary/venous congestion. Effect is filtration-limited — expect a slow drain, not a bolus diuresis."]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Mechanism (why the old 'suction' pitch is wrong)" },
+    { "type": "list", "items": [
+      "Revised Starling (Levick & Michel 2010): there is no meaningful venous oncotic 'suck-back' — filtration dominates along the whole capillary. The lymphatics, not the veins, return filtered fluid.",
+      "The glycocalyx is the real semipermeable barrier; the oncotic gradient that matters is plasma vs the thin protein-free subglycocalyx space, not plasma vs the bulk interstitium.",
+      "25% albumin raises plasma oncotic pressure → less fluid filters out; the lymphatics keep draining at their existing rate → the swollen tissue slowly dries out. Turn down the faucet while the drain keeps running.",
+      "In heart failure, high central venous pressure raises the pressure the thoracic duct empties against — a lymphatic-outflow problem layered on top of raised filtration, not purely a 'low albumin' problem."
+    ] },
+    { "type": "heading", "level": 2, "text": "Best evidence" },
+    { "type": "list", "items": [
+      "Lee 2021 meta-analysis (13 studies, 422 pts): albumin + furosemide beat furosemide alone by +31 mL/hr urine and +1.8 mEq/hr sodium — effect concentrated where albumin < 2.5 g/dL, cumulative furosemide > 30 g, renal impairment present, measured within 12 h.",
+      "Chalikias 2026 (RCT, ADHF + hepatic dysfunction, n = 241): furosemide + albumin — better symptom relief (P < .001), less worsening renal function (25% vs 38%), smaller creatinine rise (0.07 vs 0.18 mg/dL), ~1 day shorter stay.",
+      "MIMIC-IV septic-hypoalbuminaemia cohort: lower in-hospital mortality with albumin + loop diuretic (25.5% vs 36.5%) — hypothesis-generating observational data, not proof."
+    ] },
+    { "type": "callout", "tone": "info", "text": "Prevention beats rescue: resuscitate only patients who are both fluid-responsive AND fluid-tolerant, and reach for pressors/inotropes when the heart says yes but the venous system says no (VExUS-guided). That produces fewer congested, intravascularly-dry patients who later need this maneuver." }
+  ],
+  "related": ["iv-fluids", "heart-failure-continuum", "blood-products", "septic-shock-resuscitation"],
+  "buildNote": "Tier 3. A VExUS / venous-congestion assessment module is the natural companion (referenced in the closing callout and in septic-shock-resuscitation)."
+}

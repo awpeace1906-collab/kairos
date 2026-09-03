@@ -1,0 +1,48 @@
+{
+  "id": "desflurane",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Volatile Anesthetics",
+  "title": "Desflurane",
+  "aliases": [
+    "Suprane"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "volatile",
+    "desflurane"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Suprane",
+  "tallManLetters": "DESFlurane",
+  "drugClass": "volatile",
+  "drugClassLabel": "Volatile",
+  "mechanism": "Halogenated methyl ethyl ether. Ultra-low blood/gas partition coefficient (0.42) → fastest onset/offset of all clinical volatiles. Requires heated, pressurized vaporizer (BP = 22.8°C).",
+  "onset": "Very rapid — blood/gas λ = 0.42",
+  "duration": "Fastest offset of clinical volatiles; true context-insensitive half-time",
+  "dosing": "MAC (~40 yr): ~6.0–7.3%\nTypical maintenance: 4–8% in air/O₂\nNOT for inhalation induction — severe airway irritant",
+  "cautions": [
+    "AEs: Airway irritation (cough, laryngospasm — NOT for mask induction), sympathetic stimulation at >1.5 MAC (↑HR, ↑BP), pungent odor, MH susceptibility",
+    "CI: Known/suspected MH; hypersensitivity; mask induction",
+    "Precautions: Requires HEATED, PRESSURIZED vaporizer (BP 22.8°C — would vaporize at room temperature in standard vaporizer); high global warming potential — many programs phasing out"
+  ],
+  "pearls": [
+    "Fastest emergence after long cases (>4h) — context-insensitive half-time stays predictable regardless of infusion duration.",
+    "Minimal hepatic metabolism (<0.02%) — lowest of all volatiles; ideal in hepatic disease. Environmental impact significant — GWP ~2500× CO₂."
+  ],
+  "reversal": "Dantrolene 2.5 mg/kg IV if MH triggered"
+}

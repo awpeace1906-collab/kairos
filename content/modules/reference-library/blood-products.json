@@ -1,0 +1,65 @@
+{
+  "id": "blood-products",
+  "section": "Reference Library",
+  "category": "Anticoagulation & Labs",
+  "title": "Blood Products Reference",
+  "aliases": ["PRBC platelets FFP cryo", "transfusion thresholds", "AABB restrictive transfusion", "cryoprecipitate dose", "prothrombin complex concentrate", "whole blood LTOWB", "fibrinogen concentrate vs cryo"],
+  "tags": ["transfusion", "blood products", "PRBC", "platelets", "FFP", "cryoprecipitate", "PCC", "whole blood", "fibrinogen", "massive transfusion", "hemorrhage", "ED", "ICU", "OR"],
+  "keywords": ["AABB 2023", "AABB ICTMG 2025 platelet", "CRYOSTAT-2", "FIBTEM", "30-minute rule", "TACO", "1:1:1"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — 6 Blood Products You Must Know Cold (verified vs AABB 2023 RBC + 2025 AABB/ICTMG platelet guidelines)",
+    "Carson JL et al. Red Blood Cell Transfusion: 2023 AABB International Guidelines. JAMA 2023;330(19):1892-1902",
+    "Metcalf RA et al. Platelet Transfusion: 2025 AABB & ICTMG Guidelines. JAMA 2025;334(7):606-617",
+    "Critical Vector — Fibrinogen Concentrate vs Cryoprecipitate; CRYOSTAT-2, JAMA 2023 (n=1,604)"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV blood-products guide + the fibrinogen-concentrate-vs-cryoprecipitate decision guide. AABB thresholds verified exact." }],
+  "summary": "Indication, constituents, effect, and the clock on each of the six core products, plus the fibrinogen-concentrate-vs-cryoprecipitate decision. AABB restrictive RBC thresholds: 7 g/dL general, 7.5 cardiac surgery, 8 orthopedic surgery / known CVD. Platelet thresholds (2025 AABB/ICTMG): 10 prophylaxis, 50 major surgery, 100 neuro/posterior-eye.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "The six products" },
+    { "type": "table",
+      "columns": ["Product", "Indication", "Contains / effect", "Clock & storage"],
+      "rows": [
+        ["Packed red cells (PRBC)", "Symptomatic anemia. Transfuse below Hb 7 g/dL (general), 7.5 (cardiac surgery), 8 (orthopedic surgery or known CVD)", "Red cells in preservative; no platelets, no clotting factors. 1 unit → Hb ~ +1 g/dL, Hct ~ +3%", "Start within 30 min of issue, complete within 4 h; store 1–6 °C. ABO + Rh compatible, cross-matched."],
+        ["Platelets", "Prophylaxis below 10 ×10⁹/L if non-bleeding (hypoproliferative — chemo, allo-SCT). Procedures: below 50 for major non-neuraxial surgery, below 100 for neurosurgery / posterior-eye", "1 adult pool or apheresis unit → count ~ +30–50 ×10⁹/L", "20–24 °C with continuous agitation, NOT refrigerated; 5-day shelf life (7 if pathogen-reduced); transfuse over 30–60 min. Do NOT give for cardiac bypass or spontaneous ICH without active bleeding."],
+        ["Fresh frozen plasma (FFP)", "Bleeding with multiple factor deficiency (massive transfusion, DIC, liver disease); TTP plasma exchange", "All coagulation factors ~ 1 IU/mL incl. labile V and VIII. Dose 10–15 mL/kg → factor levels ~ +20%", "Once thawed, use within 24 h at 1–6 °C. ABO-compatible (opposite convention to red cells). NOT first-line for warfarin reversal if PCC is available."],
+        ["Cryoprecipitate", "Fibrinogen < 1.5 g/L with bleeding (DIC, massive transfusion); < 2 g/L in obstetric hemorrhage", "Fibrinogen, factor VIII, factor XIII, vWF, fibronectin. Per unit ≥ 150 mg fibrinogen + ≥ 80 IU factor VIII; a 10-unit adult pool → fibrinogen ~ +1 g/L", "Once thawed, use within 6 h (4 h if open-pooled), room temperature, not refrigerated. NOT for warfarin reversal. It is a fibrinogen concentrate, not 'concentrated plasma'."],
+        ["Whole blood (LTOWB)", "Trauma / massive hemorrhage resuscitation", "Red cells + plasma + cold-stored platelets together; group O, low anti-A/anti-B titer; ~ 500 mL, leukoreduced with a platelet-sparing filter", "Start within 30 min of issue, complete within 4 h; store 1–6 °C; 21-day (CPD) / 35-day (CPDA-1) shelf life. Cold-stored platelet function falls after ~ 14 days though red cells + plasma stay usable."],
+        ["Prothrombin complex concentrate (4F-PCC)", "Urgent warfarin reversal with major bleeding, or before emergency surgery", "Factors II, VII, IX, X + proteins C and S. Dose 25–50 IU/kg, INR-based; ALWAYS co-give IV vitamin K. Corrects INR within ~ 10–30 min", "Plasma-derived factor concentrate, not a cellular component — low volume, minimal TACO risk vs FFP. Main risk is thrombosis. 3-factor PCC lacks factor VII and is not equivalent for warfarin reversal."]
+      ]
+    },
+    { "type": "callout", "tone": "info", "text": "The 80 ×10⁹/L platelet figure for neuraxial / epidural procedures is a long-standing anesthesia-specific convention — distinct from the 2025 AABB/ICTMG hematology threshold of 20 ×10⁹/L for a diagnostic lumbar puncture. They answer different questions (one-off LP vs an indwelling epidural catheter), so they don't match when looked up side by side." },
+
+    { "type": "heading", "level": 2, "text": "Time & temperature" },
+    { "type": "list", "items": [
+      "The clock starts the moment a unit leaves controlled storage.",
+      "The 30-minute rule: a unit out of controlled storage for more than 30 minutes usually cannot return to stock.",
+      "Right product, right patient, right dose, right time, right documentation — two-person bedside check, every time."
+    ] },
+
+    { "type": "heading", "level": 2, "text": "Fibrinogen: concentrate vs cryoprecipitate" },
+    { "type": "text", "text": "Fibrinogen (Factor I) is the substrate for the fibrin clot and the first coagulation factor to fall critically low in massive, trauma, and obstetric hemorrhage. Target 1.5–2.0 g/L during active bleeding (a level ~ 2.3 g/L is associated with the lowest mortality). FFP alone cannot correct severe hypofibrinogenemia without unacceptable volume. Viscoelastic trigger: ROTEM FIBTEM A5 < 8 mm or A10 < 10 mm (or the TEG functional-fibrinogen equivalent)." },
+    { "type": "table",
+      "columns": ["", "Fibrinogen concentrate (FC)", "Cryoprecipitate"],
+      "rows": [
+        ["Dosing", "Standardized ~ 1 g/vial; usual dose 3–6 g", "Variable fibrinogen per unit/pool; 10–20 units (0.5–1 L) raise fibrinogen ~ 0.6–1.2 g/L"],
+        ["Volume", "Low — ~ 50 mL/vial", "Large — greater volume-overload risk"],
+        ["Logistics", "Reconstitution needed; no ABO testing; may not be on formulary", "Widely available; 20–30 min thaw (unless a pre-thawed protocol exists); multi-donor exposure"],
+        ["Extras", "Fibrinogen only", "Also contains factor VIII, vWF, factor XIII, fibronectin"],
+        ["Cost", "Higher acquisition cost in most systems", "Lower direct cost"]
+      ]
+    },
+    { "type": "list", "items": [
+      "Choose FC when rapid correction is needed and it's on formulary, precise weight-based dosing is required, ABO type is unknown with expected delays, or the patient is volume-sensitive (heart / renal failure).",
+      "Choose cryo when FC is unavailable or off-formulary, cost is a constraint, additional factor deficiencies (vWF, FVIII, FXIII) are suspected, or a pre-thawed cryo protocol removes the thaw delay.",
+      "CRYOSTAT-2 (JAMA 2023, n = 1,604 trauma): empiric early cryoprecipitate vs standard care — no 28-day mortality difference (25.3% vs 26.1%). Empiric early cryo in unselected trauma does not improve survival.",
+      "Curry SR/MA (Br J Anaesth 2022): evidence sparse and high risk of bias; insufficient to establish clear superiority of either product. Fibrinogen is the first to fall and the first to replace — the product matters less than the speed."
+    ] }
+  ],
+  "related": ["anticoagulation-reversal", "teg-rotem-interpretation", "septic-shock-resuscitation", "meld-na", "shock-classification"],
+  "buildNote": "Tier 3. Pairs with anticoagulation-reversal and the new teg-rotem-interpretation module. `early-calcium-minimal-transfusion.html` (calcium in massive transfusion / the 'lethal diamond') is a further section to add here or as its own module. Feeds a future ABC-score / massive-transfusion-protocol module."
+}

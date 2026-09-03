@@ -1,0 +1,48 @@
+{
+  "id": "malignant-hyperthermia",
+  "section": "Reference Library",
+  "category": "Perioperative & Anesthesia",
+  "title": "Malignant Hyperthermia — Crisis Protocol",
+  "aliases": ["MH crisis", "dantrolene protocol", "MHAUS hotline", "masseter spasm", "rising EtCO2 OR", "Ryanodex", "MH recrudescence", "RYR1"],
+  "tags": ["malignant hyperthermia", "dantrolene", "anesthesia crisis", "volatile anesthetic", "succinylcholine", "hyperkalemia", "rhabdomyolysis", "OR", "anesthesia", "ICU"],
+  "keywords": ["EtCO2 first sign", "dantrolene 2.5 mg/kg repeat", "max 10 mg/kg", "1 mg/kg q4-6h x 24 h", "MHAUS 1-800-644-9737", "stop volatiles switch to TIVA", "recrudescence ~20% median 9 h"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — Anesthesia Reference: Malignant Hyperthermia",
+    "MHAUS / EMHG 2024 dantrolene dosing update; MHAUS emergency protocol"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — trigger agents, early signs, and the MHAUS crisis sequence: dantrolene, stop triggers / switch to TIVA, active cooling, treat the metabolic consequences, 24-h ICU for recrudescence." }],
+  "summary": "A hypermetabolic crisis of skeletal muscle triggered by volatile anaesthetics and succinylcholine in a susceptible patient (RYR1 / CACNA1S). A rising EtCO₂ despite adequate ventilation is the earliest reliable sign. Call the MHAUS hotline (US): 1-800-644-9737. Give dantrolene immediately and do not stop looking for it.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Triggers" },
+    { "type": "list", "items": [
+      "TRIGGER: all volatile agents (sevoflurane, isoflurane, desflurane, halothane) and succinylcholine.",
+      "SAFE: propofol, ketamine, etomidate, opioids, benzodiazepines, non-depolarising NMBs, nitrous oxide, local anaesthetics, dexmedetomidine."
+    ] },
+    { "type": "heading", "level": 2, "text": "Early signs" },
+    { "type": "list", "items": [
+      "Unexplained rising EtCO₂ despite increasing minute ventilation — the first reliable sign.",
+      "Masseter spasm after succinylcholine, then generalised rigidity.",
+      "Tachycardia, tachypnoea, then a rapid temperature rise (> 1 °C per 5 min) — fever is often LATE.",
+      "Mixed metabolic + respiratory acidosis, hyperkalaemia, myoglobinuria, later rhabdomyolysis and DIC."
+    ] },
+    { "type": "heading", "level": 2, "text": "Crisis management" },
+    { "type": "table",
+      "columns": ["Step", "Action"],
+      "rows": [
+        ["1 — Dantrolene NOW", "2.5 mg/kg IV rapid bolus → repeat the FULL 2.5 mg/kg q5 min PRN (MHAUS/EMHG 2024 — not 1 mg/kg) until EtCO₂, HR, rigidity, and temperature respond. Usual max ~10 mg/kg (up to 20 mg/kg if refractory — reconsider the diagnosis beyond that). Ryanodex 250 mg/vial reconstitutes far faster than the older 20 mg/vial dantrolene."],
+        ["2 — Stop all triggers", "Stop the volatile. Switch to TIVA (propofol ± opioid). Hyperventilate with 100% O₂ at ≥ 10 L/min. Get help; assign someone to mix dantrolene (each 20 mg vial needs 60 mL sterile water). Change the circuit and CO₂ absorber when time allows (do not delay dantrolene for this)."],
+        ["3 — Active cooling", "Ice to the groin / axillae / neck, cold IV fluids, gastric / bladder / peritoneal lavage with cold saline, cool open cavities. STOP cooling at 38.5 °C (overshoot to hypothermia)."],
+        ["4 — Treat the metabolic consequences", "Bicarbonate for acidosis (guided by ABG). Hyperkalaemia: calcium, insulin + dextrose, albuterol (see the hyperkalaemia module). Amiodarone for ventricular arrhythmias — AVOID calcium-channel blockers with dantrolene (hyperkalaemia, cardiovascular collapse). Maintain urine output > 1–2 mL/kg/hr; alkalinise the urine for rhabdomyolysis."],
+        ["5 — ICU ≥ 24 h", "Dantrolene 1 mg/kg IV q4–6 h for ≥ 24 h (bolus preferred over infusion — allows reassessment). Recrudescence occurs in ~20%, a median of ~9 h after the initial crisis — watch for returning rigidity, rising EtCO₂, rising CK. Monitor CK, BMP, coags, and urine q6–8 h; CK peaks at 12–24 h. Refer the patient AND family for RYR1 genetic testing / caffeine-halothane contracture testing."]
+      ]
+    },
+    { "type": "callout", "tone": "info", "text": "Masseter spasm alone after succinylcholine, with no other signs, is not automatically MH — but it warrants stopping triggers, watching EtCO₂ / CK closely, and a low threshold to treat. A known-susceptible patient for elective surgery: use a vapour-free (flushed / activated-charcoal-filtered) machine and TIVA — dantrolene prophylaxis is NOT recommended, just immediately available." }
+  ],
+  "related": ["antidotes-reversal-agents", "hyperkalemia-management", "sedation-analgesia-agents", "capnography", "neuromuscular-blockade-reversal"],
+  "buildNote": "Tier 1 crisis reference. The antidotes module carries a shorter dantrolene entry; this is the full OR protocol. A dantrolene reconstitution / dose calculator is a natural companion."
+}

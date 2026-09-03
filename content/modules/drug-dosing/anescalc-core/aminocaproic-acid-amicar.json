@@ -1,0 +1,54 @@
+{
+  "id": "aminocaproic-acid-amicar",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Anticoagulants / Hemostatics",
+  "title": "Aminocaproic Acid (Amicar)",
+  "aliases": [
+    "Amicar"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "anticoagulant",
+    "aminocaproic",
+    "acid",
+    "amicar"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Amicar",
+  "tallManLetters": "aminoCAPROic acid",
+  "drugClass": "anticoagulant",
+  "drugClassLabel": "Anticoagulant / Hemostatic",
+  "mechanism": "Synthetic lysine analogue antifibrinolytic — same mechanism as TXA (plasminogen lysine-binding site inhibitor → inhibits fibrinolysis). 6–10× less potent than TXA on a mg-per-mg basis, requiring higher doses. May also inhibit plasmin directly at very high concentrations.",
+  "onset": "IV: 15–30 min",
+  "duration": "t½ ~2h (shorter than TXA); continuous infusion maintains effect",
+  "dosing": "CARDIAC SURGERY: 5–10 g IV load over 30 min before incision, then 1–2.5 g/hr infusion during CPB. Some protocols add 5 g to pump prime.\n\nGENERAL SURGICAL HEMOSTASIS: 4–5 g IV over 1h, then 1 g/hr for 8h (or until bleeding controlled). Total dose typically ≤24 g/24h.\n\nHEMATOLOGIC BLEEDING (ITP, hemophilia adjunct): 4 g IV/PO, then 1 g/hr. Oral: 5 g loading dose PO, then 1 g/hr.\n\nDENTAL PROCEDURES (hemophilia): 75 mg/kg PO q6h starting the day before and continuing 5–7 days post-procedure.\n\nRENAL DOSING: Reduce dose proportionally in renal impairment (renally excreted; accumulates).",
+  "cautions": [
+    "UPPER URINARY TRACT BLEEDING: Contraindicated — antifibrinolytic action can cause ureteral clot obstruction → obstructive uropathy/hydronephrosis.",
+    "THROMBOEMBOLIC RISK: Same theoretical risk as TXA; contraindicated in active DIC with clotting predominance and active intravascular coagulation.",
+    "MYOPATHY / RHABDOMYOLYSIS: Rare but serious complication with prolonged high-dose use (>4 weeks). Monitor CK with extended courses.",
+    "CI: Hematuria of upper urinary origin; active intravascular coagulation; hypersensitivity.",
+    "GENERALLY PREFERRED OVER TXA for: situations where lower potency is desirable; some institutions' cost-driven protocols (less expensive than TXA per gram, though higher dose needed)."
+  ],
+  "pearls": [
+    "Functionally equivalent to TXA but less potent — requires 6–10× higher dose for equivalent antifibrinolytic effect. TXA is preferred in most current cardiac and trauma protocols due to more favorable dose size and stronger evidence base.",
+    "Useful in hemophilia management as adjunct (prevents fibrinolysis of formed clots while Factor replacement promotes clot formation). Oral formulation available for outpatient dental management.",
+    "LOWER SEIZURE RISK than TXA — fewer reports of neurotoxicity, likely due to less CNS penetration at equivalent antifibrinolytic concentrations. May be preferred in patients with seizure history or neurological vulnerability.",
+    "Available as oral formulation — an advantage for outpatient management of hemostatic disorders and post-procedure hemostasis in hemophilia patients."
+  ],
+  "reversal": "No specific antidote; discontinue infusion for bleeding complications"
+}

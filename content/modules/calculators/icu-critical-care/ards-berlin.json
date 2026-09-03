@@ -1,0 +1,33 @@
+{
+  "id": "ards-berlin",
+  "section": "Calculators",
+  "category": "ICU / Critical Care",
+  "title": "ARDS — Berlin Definition",
+  "aliases": ["Berlin ARDS", "ARDS severity", "acute respiratory distress syndrome definition", "P/F ratio ARDS"],
+  "tags": ["ARDS", "mechanical ventilation", "hypoxemia", "ICU", "lung-protective ventilation"],
+  "keywords": ["timing within 1 week", "bilateral opacities", "not fully explained by cardiac failure", "PaO2/FiO2 with PEEP >= 5", "mild moderate severe ARDS"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-09-02",
+  "review_tier": 1,
+  "sources": ["ARDS Definition Task Force. JAMA 2012 (Berlin Definition); 2023 global definition update noted"],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "engine": "additive",
+  "settings": ["ICU"],
+  "purpose": "Confirms the diagnosis of ARDS and grades severity by PaO2/FiO2. All four criteria (timing, imaging, origin of oedema, oxygenation on PEEP ≥ 5) must be met. Severity band drives the escalation ladder.",
+  "items": [
+    { "key": "timing", "label": "Timing — within 1 week of a known clinical insult or new/worsening respiratory symptoms", "options": [{ "label": "No / longer", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "imaging", "label": "Chest imaging — bilateral opacities not fully explained by effusions, lobar/lung collapse, or nodules", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "origin", "label": "Origin of oedema — respiratory failure not fully explained by cardiac failure or fluid overload (objective assessment e.g. echo if no risk factor present)", "options": [{ "label": "No — cardiogenic", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "oxygenation", "label": "Oxygenation — PaO2/FiO2 with PEEP or CPAP ≥ 5 cmH2O", "options": [{ "label": "> 300 mmHg — not ARDS", "points": 0 }, { "label": "201–300 mmHg — MILD", "points": 1 }, { "label": "101–200 mmHg — MODERATE", "points": 2 }, { "label": "≤ 100 mmHg — SEVERE", "points": 3 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 3, "label": "Criteria incomplete — if timing, imaging, or origin is not met, this is not ARDS by the Berlin definition. Reassess the missing element (e.g. echo for cardiogenic oedema); a P/F > 300 on PEEP ≥ 5 also excludes it", "severity": "moderate" },
+    { "min": 4, "max": 4, "label": "MILD ARDS (P/F 201–300) — mortality ~ 27%. Lung-protective ventilation: VT 6 mL/kg PBW (4–8), Pplat ≤ 30, driving pressure < 15, adequate PEEP, conservative fluids, treat the cause. Consider HFNC/NIV only with close monitoring", "severity": "high" },
+    { "min": 5, "max": 5, "label": "MODERATE ARDS (P/F 101–200) — mortality ~ 32%. As above PLUS higher PEEP strategy, early prone positioning ≥ 16 h/day if P/F < 150, neuromuscular blockade for ventilator dyssynchrony/high drive, target SpO2 88–95%", "severity": "high" },
+    { "min": 6, "max": 6, "label": "SEVERE ARDS (P/F ≤ 100) — mortality ~ 45%. Prone positioning, NMB, high PEEP; consider recruitment cautiously (avoid routine aggressive RM — ART trial harm). Refer for VV-ECMO early (EOLIA criteria: P/F < 80 or pH < 7.25 with PaCO2 ≥ 60 for > 6 h despite optimisation)", "disposition": "Prone; consider ECMO referral", "severity": "high" }
+  ],
+  "notes": "Use PBW from height, not actual weight. The 2023 global definition broadens ARDS to include HFNC ≥ 30 L/min and SpO2/FiO2 ratios (≤ 315) and permits diagnosis without invasive ventilation and with ultrasound imaging — check which definition your unit / study uses. P/F varies with FiO2 and PEEP — recheck after a standardised ventilator setting.",
+  "buildNote": "All of timing+imaging+origin required (3 pts) plus an oxygenation band; total 4=mild, 5=moderate, 6=severe."
+}

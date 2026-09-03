@@ -1,0 +1,48 @@
+{
+  "id": "etomidate",
+  "section": "Drug & Dosing Cards",
+  "category": "AnesCalc — Induction Agents",
+  "title": "Etomidate",
+  "aliases": [
+    "Amidate"
+  ],
+  "tags": [
+    "anesthesia",
+    "perioperative",
+    "induction",
+    "etomidate"
+  ],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-01",
+      "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    }
+  ],
+  "brandName": "Amidate",
+  "tallManLetters": "etomiDATE",
+  "drugClass": "induction",
+  "drugClassLabel": "Induction",
+  "mechanism": "Carboxylated imidazole; positive allosteric GABA-A modulator (β2/β3 subunit selective). Minimal cardiovascular effects — no histamine or catecholamine release.",
+  "onset": "~60 sec",
+  "duration": "3–5 min",
+  "dosing": "Induction (ASA I–II): 0.2–0.3 mg/kg IV\nInduction (elderly/ASA III–IV / hemodynamically compromised): 0.15–0.2 mg/kg IV",
+  "cautions": [
+    "AEs: Myoclonus (~30%), venous pain on injection, adrenocortical suppression (6–12h), N/V, laryngospasm",
+    "CI: Hypersensitivity; avoid in <10 yo or obstetrics per labeling",
+    "Precautions: Single-dose only — adrenocortical suppression is a class effect; caution in sepsis (blunted stress response); hepatic impairment prolongs effect; does NOT provide analgesia"
+  ],
+  "pearls": [
+    "Hemodynamic stability hallmark — drug of choice for cardiac-compromised induction (severe LV dysfunction, AS, cardiac tamponade).",
+    "NOT preferred for RSI in septic patients — cortisol suppression worsens hemodynamics in septic shock."
+  ],
+  "reversal": "None (supportive)"
+}
