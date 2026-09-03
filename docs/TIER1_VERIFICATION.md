@@ -553,3 +553,98 @@ UDMI, presented ESC Munich 2026-08-30, *Eur Heart J* 2026;ehag101 /
   sex-specific 99th-percentile URL. Scoring unchanged.
 - No other module's *logic* is affected — troponin-band scores (HEART, TIMI) just
   inherit the new reference limit.
+
+---
+
+# Batch 6 / 6b sweep — the xlsx calculators (2026-09-03)
+
+Verification pass over the ~45 calculators added from `ED_ICU_OR_Calculators.xlsx`,
+cross-checked against `build_package/Calculator_Logic_Build_Spec.md` (itself a
+research pass vs MDCalc/derivation papers) and primary sources. Emoji per the
+legend at the top of this file.
+
+## ✏️ Corrected this pass
+
+### ✏️ harris-benedict — coefficients
+- Was built with the Roza-Shizgal 1984 revision (`88.362 + 13.397·W …`). Spec and
+  MDCalc use the **original 1918** equation. Switched to
+  men `66.5 + 13.75·W + 5.003·H − 6.775·A`, women `655.1 + 9.563·W + 1.850·H − 4.676·A`. v2.
+
+### ✏️ news2 — temperature band
+- `35.1–36.0 °C` was grouped with `≥ 39.1` at **2 points**; the RCP NEWS2 chart
+  scores `35.1–36.0` at **1 point**. Split into `35.1–36.0 or 38.1–39.0 = 1`,
+  `≥ 39.1 = 2`. v2.
+
+### ✏️ apache-ii — GCS item
+- Was banded (`GCS 6–8 → 8 pts`). APACHE points = `15 − actual GCS` exactly.
+  Rebuilt as 13 per-value options (GCS 15→0 … GCS 3→12). All 12 APS variable
+  bands, age points, and chronic-health points re-checked against the Knaus 1985
+  table (via Merck Manual adaptation) — **all correct**.
+
+### ✏️ caprini-vte — checklist + tiers
+- Was an abbreviated ~12-item set with non-standard "count each" groupings and a
+  0–1 / 2 / 3–4 / ≥5 scheme labelled very-low/low/moderate/high.
+- Rebuilt to the **full 2005 checklist** (24 item rows incl. all 1/2/3/5-point
+  factors) and the spec's **0–1 low / 2 moderate / 3–4 high / ≥5 highest** tier
+  labels with the 2013-model prophylaxis text. v2.
+
+### ✏️ psi-port — age term not summed
+- Additive engine, but the `age` term ("age in years, −10 for women") was an
+  option worth **0 points** → age contributed nothing to the score. Converted to
+  the **formula engine** (like PESI): `psi = age − 10·sex + Σ weighted selects`.
+  All 17 weighted point values re-verified against the spec — unchanged and
+  correct. Class bands + mortality ranges aligned to Fine 1997 (I–II ≤70,
+  III 71–90, IV 91–130, V >130). v2.
+
+### ✏️ improve-bleed — age weight
+- `age 40–84` was **1**; the Decousus 2011 model weights it **1.5**. Corrected.
+  All other weights (GD ulcer 4.5, recent bleed 4, plt <50k 4, age ≥85 3.5,
+  hepatic failure 2.5, severe renal 2.5, ICU 2.5, CVC 2, rheumatic 2, cancer 2,
+  male 1, moderate renal 1) confirmed. Threshold ≥7 confirmed. v2.
+
+### ✏️ ciwa-ar — severe band
+- Severe band started at **≥16**; standard CIWA-Ar cut-point is **≥15**. Moved to
+  `[0–8] / [9–14] / [15–67]`. 10 items × correct max (9×7 + orientation 4 = 67)
+  confirmed. v2.
+
+### ✏️ refeeding-risk — minor thresholds + banding
+- `bmi` minor was `16–20` (should be NICE `< 18.5`); `weightLoss` minor was
+  `> 5% in 3 months` (should be `> 10% in 3–6 months`). Fixed.
+- Banding let a **single** minor criterion read as "at risk". Re-banded
+  `[0–1] not at risk / [2] at risk (2 minor) / [3+] high (≥1 major or ≥3 minor)`,
+  consistent with the NICE "1 major OR ≥2 minor" rule. v2.
+
+## ✅ Confirmed as-is (spec + primary source)
+
+- **Ottawa Knee Rule** — 5 factors, any positive → X-ray. Exact match (Stiell 1997).
+- **Ottawa SAH Rule** — 6 factors, any positive → workup. Exact (Perry 2013).
+- **YEARS** — 3 items; 0 → D-dimer 1000, ≥1 → 500. Exact (van der Hulle 2017).
+- **Modified Sgarbossa** — concordant STE ≥1 / concordant STD V1–V3 / ST-S ratio
+  ≤ −0.25; any positive. Exact (Smith 2012).
+- **Brugada VT** — 4 sequential steps, any → VT. Exact (Brugada 1991).
+- **Hunter serotonin** — 5 decision pathways, any → toxicity. Exact (Dunkley 2003).
+- **CAM-ICU** — (Feat 1 AND Feat 2) AND (Feat 3 OR Feat 4). Rule in interpretation
+  text; additive sum is a helper only. Correct (Ely 2001).
+- **MEWS** — SBP/HR/RR/temp/AVPU bands match Subbe 2001; escalate ≥5.
+- **CPOT** — 4 domains × 0–2, total 0–8, treat if > 2. Exact (Gélinas 2006).
+- **ARDS Berlin** — 3 mandatory criteria (3 pts) + P/F band; totals 4/5/6 =
+  mild/moderate/severe. P/F boundaries match Berlin (200 → moderate, 100 → severe).
+- **SOFA, ICH, Canadian Syncope, Revised Geneva (original weights), Rockall,
+  Ranson, COWS, Revised Trauma Score (T-RTS), FOUR, ABC/MTP, sPESI, PESI, BODE,
+  ARISCAT, Surgical Apgar, El-Ganzouri, Canadian CT Head (CCHR), Canadian C-Spine
+  (CCR), PECARN, Glasgow-Blatchford, ISS, RSBI, P/F ratio, salicylate-toxicity**
+  — point values / formulas / bands all match the spec and cited sources.
+
+## ⚠️ Known modelling limitations (not defects)
+
+- **Ottawa Ankle Rules** — the rule is conjunctive (zone pain AND a bony-tenderness
+  or weight-bearing finding). The additive engine flags any single positive input
+  as "imaging indicated", which over-triages a lone "malleolar pain" entry. The
+  interpretation text states the real conjunctive logic, and over-triage is the
+  safe direction for a rule-*out* tool. Left as-is; a conjunctive engine would be
+  the only true fix.
+- **PECARN / Canadian rules / Sgarbossa / Brugada** — same pattern: additive sum
+  is a helper, the branching logic lives in the interpretation text (weighted
+  "high-risk" items force the correct band).
+
+Pipeline after fixes: pending (validate/build/test/sync).

@@ -1,0 +1,62 @@
+{
+  "id": "acute-dyspnea-niv",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Acute Dyspnea — POCUS & NIV",
+  "aliases": ["acute dyspnea", "BLUE protocol", "lung ultrasound dyspnea", "NIV settings", "BiPAP CPAP HFNC", "COPD exacerbation bundle", "flash pulmonary edema"],
+  "tags": ["dyspnea", "lung ultrasound", "non-invasive ventilation", "BiPAP", "HFNC", "COPD", "pulmonary edema", "ED", "critical care"],
+  "keywords": ["B-lines cardiogenic edema", "A-lines lung sliding COPD asthma PE", "absent lung sliding pneumothorax lung point", "plethoric IVC RV>LV massive PE", "CPAP EPAP 5-10", "BiPAP IPAP 10-15 EPAP 4-8", "HFNC 40-60 L/min", "ROX index 4.88", "NIV failure reassess at 1 hour", "P-SILI tidal volume 9 mL/kg"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2026-12-03",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — EM Pocket Guide: Acute Dyspnea / NIV (BLUE Protocol; ATS 2024)",
+    "Lichtenstein D. BLUE protocol, Chest 2008; FLORALI (NEJM 2015); 3CPO trial; Surviving Sepsis 2026 (HFNC)"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — POCUS pattern → diagnosis → first move table, NIV/HFNC start settings, COPD bundle, and the NIV-failure / early-intubation pearls." }],
+  "summary": "Lung POCUS at the bedside, done alongside O2 and IV access, sorts undifferentiated dyspnea faster than a chest X-ray (~94% sensitive for cardiogenic oedema). NIV failure that then needs emergent RSI carries higher mortality than an elective early intubation — reassess at 1 hour and do not 'NIV and wait'.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "POCUS pattern → diagnosis → first move" },
+    { "type": "table",
+      "columns": ["POCUS pattern", "Likely diagnosis", "First move"],
+      "rows": [
+        ["Bilateral B-lines (≥ 3/zone, ≥ 2 zones each side)", "Cardiogenic pulmonary oedema or ARDS", "BiPAP (IPAP 10–15 / EPAP 5–8) + furosemide 40–80 mg IV; echo for LVEF; BNP/NT-proBNP"],
+        ["Bilateral A-lines + lung sliding present", "COPD exacerbation, asthma, or PE", "COPD: bronchodilators + BiPAP · Asthma: SABA nebs + Mg 2 g IV · PE: Wells/PERC → CTPA"],
+        ["Absent lung sliding (unilateral anterior)", "Pneumothorax (ipsilateral)", "Lung point confirms (100% specific); needle decompression if unstable, then chest tube"],
+        ["Unilateral B-lines or consolidation", "Pneumonia or pulmonary contusion", "Antibiotics; low intubation threshold if bilateral; worsening hypoxia on HFNC → prepare for RSI"],
+        ["A-lines + plethoric IVC + RV > LV (A4C)", "Massive PE / obstructive shock", "Anticoagulate; if haemodynamic compromise → systemic thrombolysis (alteplase 100 mg/2 h, or 0.6 mg/kg over 15 min in arrest)"],
+        ["A-lines + anechoic pleural space", "Pleural effusion", "Diagnostic thoracentesis if > 10 mm; apply Light's criteria"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "NIV start settings" },
+    { "type": "table",
+      "columns": ["Parameter", "CPAP", "BiPAP (S/T)"],
+      "rows": [
+        ["EPAP / PEEP", "5–10 cmH2O", "4–8 cmH2O"],
+        ["IPAP", "N/A (single fixed pressure)", "10–15 cmH2O (net pressure support = IPAP − EPAP, target 8–12)"],
+        ["FiO2", "Titrate to SpO2 94–99%", "Titrate to SpO2 94–99%"],
+        ["Best indication", "Flash pulmonary oedema, OSA", "COPD exacerbation, hypercapnic failure, post-extubation"],
+        ["Backup rate (S/T)", "N/A", "10–12 breaths/min"]
+      ]
+    },
+    { "type": "heading", "level": 3, "text": "HFNC" },
+    { "type": "list", "items": [
+      "Flow: start 40–60 L/min, titrate to comfort and SpO2.",
+      "FiO2: start 0.6–0.8; wean below 0.5 within 1–2 h if improving.",
+      "ROX index = (SpO2/FiO2) / RR — < 4.88 at 12 h predicts a high HFNC failure risk; prepare for intubation.",
+      "Surviving Sepsis 2026: HFNC preferred over conventional O2 AND over NIV for acute hypoxaemic respiratory failure (conditional)."
+    ] },
+    { "type": "heading", "level": 2, "text": "COPD exacerbation — EM bundle" },
+    { "type": "list", "items": [
+      "Bronchodilators: salbutamol 2.5 mg + ipratropium 0.5 mg neb q20 min ×3.",
+      "BiPAP: IPAP 10–15 / EPAP 4–8; reduces intubation by ~50% and reduces mortality — first-line over intubation if the patient is cooperative.",
+      "Corticosteroids: methylprednisolone 125 mg IV once, then prednisone 40 mg PO ×5 days (REDUCE trial — non-inferior to 14 days).",
+      "Magnesium sulfate 2 g IV over 20 min (adjunct; stronger evidence in asthma).",
+      "Antibiotics if ≥ 2 Anthonisen criteria (↑ dyspnoea + ↑ sputum volume + ↑ purulence).",
+      "Heliox 70:30 as an adjunct in severe refractory bronchospasm."
+    ] },
+    { "type": "callout", "tone": "warning", "text": "NIV failure signs — worsening RR, SpO2, or mentation after 1 h; spontaneous tidal volume > 9 mL/kg IBW (P-SILI risk); inability to protect the airway; haemodynamic deterioration → intubate early, not late. In a COPD patient: pH < 7.30 and not improving at 1 h = intubate. Consider CO poisoning (SpO2 falsely normal), and tension pneumothorax in a ventilated patient with sudden desaturation + collapse (decompress before the CXR)." }
+  ]
+}

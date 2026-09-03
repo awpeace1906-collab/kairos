@@ -3,35 +3,234 @@
   "section": "Calculators",
   "category": "ICU / Critical Care",
   "title": "IMPROVE Bleeding Risk Score",
-  "aliases": ["IMPROVE bleed", "medical inpatient bleeding risk", "VTE prophylaxis bleeding risk", "IMPROVE bleeding"],
-  "tags": ["VTE prophylaxis", "bleeding risk", "medical inpatient", "anticoagulation", "ICU"],
-  "keywords": ["active gastroduodenal ulcer", "bleeding in 3 months", "platelet count", "age", "hepatic failure", "renal failure", "ICU admission", "central venous catheter", "rheumatic disease", "male sex"],
+  "aliases": [
+    "IMPROVE bleed",
+    "medical inpatient bleeding risk",
+    "VTE prophylaxis bleeding risk",
+    "IMPROVE bleeding"
+  ],
+  "tags": [
+    "VTE prophylaxis",
+    "bleeding risk",
+    "medical inpatient",
+    "anticoagulation",
+    "ICU"
+  ],
+  "keywords": [
+    "active gastroduodenal ulcer",
+    "bleeding in 3 months",
+    "platelet count",
+    "age",
+    "hepatic failure",
+    "renal failure",
+    "ICU admission",
+    "central venous catheter",
+    "rheumatic disease",
+    "male sex"
+  ],
   "contentType": "calculator",
-  "content_version": 1,
-  "last_reviewed": "2026-09-02",
+  "content_version": 2,
+  "last_reviewed": "2026-09-03",
   "next_review_due": "2027-09-02",
   "review_tier": 1,
-  "sources": ["Decousus H et al. Chest 2011 (IMPROVE); ASH 2018 VTE prophylaxis guideline"],
-  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "sources": [
+    "Decousus H et al. Chest 2011 (IMPROVE); ASH 2018 VTE prophylaxis guideline"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-03",
+      "change": "Corrected age 40–84 weight to 1.5 (was 1) per the Decousus 2011 IMPROVE bleeding model."
+    }
+  ],
   "engine": "additive",
-  "settings": ["ICU"],
+  "settings": [
+    "ICU"
+  ],
   "purpose": "Estimates in-hospital major and clinically relevant bleeding risk in acutely ill MEDICAL inpatients. Pair with a VTE risk score (Padua / IMPROVE VTE): a score ≥ 7 (or key single risk factors) marks the patient in whom pharmacologic prophylaxis may do more harm than good — use mechanical prophylaxis instead.",
   "items": [
-    { "key": "gastroduodenalUlcer", "label": "Active gastroduodenal ulcer", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 4.5 }] },
-    { "key": "priorBleed", "label": "Bleeding in the 3 months before admission", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 4 }] },
-    { "key": "platelets", "label": "Platelet count < 50 ×10⁹/L", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 4 }] },
-    { "key": "age", "label": "Age", "options": [{ "label": "< 40", "points": 0 }, { "label": "40–84", "points": 1 }, { "label": "≥ 85", "points": 3.5 }] },
-    { "key": "hepaticFailure", "label": "Hepatic failure (INR > 1.5)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2.5 }] },
-    { "key": "renalFailure", "label": "Renal function", "options": [{ "label": "GFR ≥ 60 (mL/min/m²)", "points": 0 }, { "label": "GFR 30–59 — moderate", "points": 1 }, { "label": "GFR < 30 — severe", "points": 2.5 }] },
-    { "key": "icu", "label": "ICU or CCU admission", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2.5 }] },
-    { "key": "cvc", "label": "Central venous catheter", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
-    { "key": "rheumatic", "label": "Active rheumatic disease", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
-    { "key": "cancer", "label": "Active cancer", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
-    { "key": "male", "label": "Male sex", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+    {
+      "key": "gastroduodenalUlcer",
+      "label": "Active gastroduodenal ulcer",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 4.5
+        }
+      ]
+    },
+    {
+      "key": "priorBleed",
+      "label": "Bleeding in the 3 months before admission",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 4
+        }
+      ]
+    },
+    {
+      "key": "platelets",
+      "label": "Platelet count < 50 ×10⁹/L",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 4
+        }
+      ]
+    },
+    {
+      "key": "age",
+      "label": "Age",
+      "options": [
+        {
+          "label": "< 40",
+          "points": 0
+        },
+        {
+          "label": "40–84",
+          "points": 1.5
+        },
+        {
+          "label": "≥ 85",
+          "points": 3.5
+        }
+      ]
+    },
+    {
+      "key": "hepaticFailure",
+      "label": "Hepatic failure (INR > 1.5)",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 2.5
+        }
+      ]
+    },
+    {
+      "key": "renalFailure",
+      "label": "Renal function",
+      "options": [
+        {
+          "label": "GFR ≥ 60 (mL/min/m²)",
+          "points": 0
+        },
+        {
+          "label": "GFR 30–59 — moderate",
+          "points": 1
+        },
+        {
+          "label": "GFR < 30 — severe",
+          "points": 2.5
+        }
+      ]
+    },
+    {
+      "key": "icu",
+      "label": "ICU or CCU admission",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 2.5
+        }
+      ]
+    },
+    {
+      "key": "cvc",
+      "label": "Central venous catheter",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "key": "rheumatic",
+      "label": "Active rheumatic disease",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "key": "cancer",
+      "label": "Active cancer",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "key": "male",
+      "label": "Male sex",
+      "options": [
+        {
+          "label": "No",
+          "points": 0
+        },
+        {
+          "label": "Yes",
+          "points": 1
+        }
+      ]
+    }
   ],
   "interpretation": [
-    { "min": 0, "max": 6.5, "label": "Not increased bleeding risk (< 7) — major bleeding risk ~ 0.4%, any clinically relevant bleeding ~ 1%. Pharmacologic VTE prophylaxis is appropriate if VTE risk warrants it", "severity": "low" },
-    { "min": 7, "max": 40, "label": "Increased bleeding risk (≥ 7) — major bleeding ~ 4%+, clinically relevant bleeding ~ 8%+. Prefer MECHANICAL prophylaxis (IPC); reassess for pharmacologic prophylaxis once the bleeding risk resolves", "disposition": "Mechanical prophylaxis preferred", "severity": "high" }
+    {
+      "min": 0,
+      "max": 6.5,
+      "label": "Not increased bleeding risk (< 7) — major bleeding risk ~ 0.4%, any clinically relevant bleeding ~ 1%. Pharmacologic VTE prophylaxis is appropriate if VTE risk warrants it",
+      "severity": "low"
+    },
+    {
+      "min": 7,
+      "max": 40,
+      "label": "Increased bleeding risk (≥ 7) — major bleeding ~ 4%+, clinically relevant bleeding ~ 8%+. Prefer MECHANICAL prophylaxis (IPC); reassess for pharmacologic prophylaxis once the bleeding risk resolves",
+      "disposition": "Mechanical prophylaxis preferred",
+      "severity": "high"
+    }
   ],
   "notes": "Points include half-values (e.g. active GD ulcer 4.5) — do not round the inputs. Any of active GD ulcer, recent bleeding, or platelets < 50 alone is a strong contraindication to pharmacologic prophylaxis regardless of total. The IMPROVE VTE companion score (different weights) sits on the other side of this decision.",
   "buildNote": "Additive with fractional weights. Threshold ≥ 7."

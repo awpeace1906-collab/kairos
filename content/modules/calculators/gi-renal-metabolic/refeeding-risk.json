@@ -7,27 +7,30 @@
   "tags": ["refeeding syndrome", "nutrition", "electrolytes", "phosphate", "ICU"],
   "keywords": ["BMI", "unintentional weight loss", "little or no nutritional intake", "low potassium magnesium phosphate", "alcohol", "insulin diuretics chemotherapy", "thiamine before feeding"],
   "contentType": "calculator",
-  "content_version": 1,
-  "last_reviewed": "2026-09-02",
-  "next_review_due": "2027-09-02",
+  "content_version": 2,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2027-09-03",
   "review_tier": 1,
   "sources": ["NICE CG32 Nutrition support for adults (2006, updated); BAPEN refeeding guidance"],
-  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "changelog": [
+    { "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." },
+    { "version": 2, "date": "2026-09-03", "change": "Corrected minor thresholds to NICE — BMI < 18.5 (was 16–20) and weight loss > 10% in 3–6 months (was > 5% in 3 months); re-banded so a single minor criterion is not 'at risk' ([0–1] low, [2] at risk, [3+] high)." }
+  ],
   "engine": "additive",
   "settings": ["ICU"],
-  "purpose": "Stratifies the risk of refeeding syndrome before starting nutrition support, so calorie delivery and electrolyte replacement can be paced. 'Major' criteria alone define risk; count 'minor' criteria (need two).",
+  "purpose": "Stratifies the risk of refeeding syndrome before starting nutrition support, so calorie delivery and electrolyte replacement can be paced. NICE rule: ANY one MAJOR criterion, OR TWO OR MORE minor criteria, = at risk.",
   "items": [
-    { "key": "bmi", "label": "BMI", "options": [{ "label": "> 20 kg/m²", "points": 0 }, { "label": "16–20 kg/m² (minor)", "points": 1 }, { "label": "< 16 kg/m² (MAJOR)", "points": 3 }] },
-    { "key": "weightLoss", "label": "Unintentional weight loss recently", "options": [{ "label": "None / minimal", "points": 0 }, { "label": "> 5% in 3 months (minor)", "points": 1 }, { "label": "> 15% in 3–6 months (MAJOR)", "points": 3 }] },
+    { "key": "bmi", "label": "BMI", "options": [{ "label": "≥ 18.5 kg/m²", "points": 0 }, { "label": "16–18.4 kg/m² (minor)", "points": 1 }, { "label": "< 16 kg/m² (MAJOR)", "points": 3 }] },
+    { "key": "weightLoss", "label": "Unintentional weight loss", "options": [{ "label": "None / minimal", "points": 0 }, { "label": "> 10% within 3–6 months (minor)", "points": 1 }, { "label": "> 15% within 3–6 months (MAJOR)", "points": 3 }] },
     { "key": "starvation", "label": "Little or no nutritional intake", "options": [{ "label": "None", "points": 0 }, { "label": "> 5 days (minor)", "points": 1 }, { "label": "> 10 days (MAJOR)", "points": 3 }] },
     { "key": "lowElectrolytes", "label": "Low potassium, phosphate, or magnesium BEFORE feeding", "options": [{ "label": "Normal", "points": 0 }, { "label": "Low (MAJOR)", "points": 3 }] },
-    { "key": "history", "label": "History of alcohol misuse, or drugs — insulin, chemotherapy, antacids, diuretics (minor)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+    { "key": "history", "label": "History of alcohol misuse, or drugs — insulin, chemotherapy, antacids, or diuretics (minor)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
   ],
   "interpretation": [
-    { "min": 0, "max": 0, "label": "Low risk — start nutrition support normally; still monitor electrolytes in the first days", "severity": "low" },
-    { "min": 1, "max": 2, "label": "Check against the rule: 2 or more MINOR criteria = at risk. If at risk — start feeding at 10 kcal/kg/day (up over 4–7 days), give thiamine 200–300 mg + a vitamin B co-strong / multivitamin BEFORE and during the first 10 days, replace K/PO4/Mg proactively, monitor daily", "severity": "moderate" },
-    { "min": 3, "max": 13, "label": "High risk — one MAJOR criterion (BMI < 16, weight loss > 15%, > 10 days negligible intake, or pre-feed low K/PO4/Mg) OR two minor. Start at 5–10 kcal/kg/day, thiamine before feeding, aggressive electrolyte replacement, cardiac monitoring if severe (BMI < 14 or > 15 days starvation → start ~5 kcal/kg/day). Do NOT correct electrolytes fully before starting — replace as you feed", "disposition": "Slow calorie escalation + thiamine + electrolytes", "severity": "high" }
+    { "min": 0, "max": 1, "label": "Not at risk by the NICE rule (no major criterion; fewer than 2 minor). Start nutrition support normally; still check K / PO4 / Mg over the first few days", "severity": "low" },
+    { "min": 2, "max": 2, "label": "At risk — 2 minor criteria. Start feeding at ~10 kcal/kg/day (increase to target over 4–7 days), give thiamine 200–300 mg + vitamin B co strong / a multivitamin BEFORE feeding and for the first 10 days, replace K / PO4 / Mg proactively, monitor electrolytes at least daily", "disposition": "Cautious calorie escalation + thiamine + electrolytes", "severity": "moderate" },
+    { "min": 3, "max": 13, "label": "High risk — ≥ 1 MAJOR criterion (BMI < 16, weight loss > 15% in 3–6 months, > 10 days negligible intake, or pre-feed low K / PO4 / Mg), or ≥ 3 minor. Start at 5–10 kcal/kg/day; if extremely high risk (BMI < 14, or negligible intake > 15 days) start at ~5 kcal/kg/day with cardiac monitoring. Thiamine before feeding, aggressive electrolyte replacement as you feed — do NOT fully correct electrolytes before starting", "disposition": "Slow calorie escalation + thiamine + electrolytes", "severity": "high" }
   ],
   "notes": "Refeeding syndrome is driven by an insulin surge on carbohydrate delivery pulling phosphate, potassium, and magnesium intracellularly — causing arrhythmia, heart failure, rhabdomyolysis, seizures, and respiratory failure, typically in the first 72 h. Thiamine repletion prevents Wernicke's precipitated by the same carbohydrate load. Falling phosphate after feeding starts is the earliest lab marker.",
-  "buildNote": "NICE criteria — 1 major OR 2 minor = at risk; points are a helper."
+  "buildNote": "NICE criteria, additive helper. minor = 1 pt, major = 3 pts. Bands: 0–1 not at risk, 2 at risk (2 minor), ≥3 high (≥1 major or ≥3 minor)."
 }

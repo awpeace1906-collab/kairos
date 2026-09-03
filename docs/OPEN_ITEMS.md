@@ -291,6 +291,35 @@ Last updated: 2026-09-01
   checklist + the 0–1 / 2 / 3–4 / ≥5 four-tier scheme, v2. Spot-checked ARISCAT,
   Surgical Apgar, BODE, sPESI, Revised Geneva, Rockall, Ranson, COWS, RTS, SOFA,
   ICH, Canadian Syncope, El-Ganzouri against the spec — all correct.
+- 2026-09-03 — **Tier-1 verification pass on the batch-6/6b calculators** (full
+  log in `docs/TIER1_VERIFICATION.md`). 4 more defects fixed: `psi-port` converted
+  to the formula engine (the age term was contributing 0 in the additive build);
+  `improve-bleed` age 40–84 weight 1 → 1.5 (Decousus 2011); `ciwa-ar` severe band
+  ≥16 → ≥15; `refeeding-risk` minor thresholds corrected to NICE (BMI < 18.5,
+  weight loss > 10%/3–6 mo) and re-banded so a lone minor ≠ "at risk". ~30 other
+  new calcs confirmed correct against the spec + primary sources.
+- 2026-09-03 — **Content tails — OB/GYN, EM, anesthesia.** Reference-library
+  `obstetric` category renamed **Obstetric & Gynecologic** (7 existing modules
+  recategorised). New: `ectopic-pregnancy`, `ovarian-torsion`,
+  `pid-tubo-ovarian-abscess`, `abnormal-uterine-bleeding`, `contraception-methods`
+  (from the OB pocket guide); `anaphylaxis`, `acute-dyspnea-niv`,
+  `altered-mental-status` (EM pocket guide); `surgical-antibiotic-prophylaxis`,
+  `anesthesia-pocus`, `drug-concentration-math` (Anesthesia Reference). +11 modules.
+  Remaining pocket-guide tails: OB labor-progression / induction / preterm /
+  Bartholin; anesthesia neuraxial-US already folded into `anesthesia-pocus`;
+  EM post-intubation / CO poisoning cards.
+- 2026-09-03 — **Task 3 content.** `childhood-immunization-schedule` (CDC/ACIP
+  2025 routine 0–18 y schedule + catch-up principles; review_tier 3, needs an
+  annual refresh check). Peds Module screens: `pedi-tape-weight-zones` (readable
+  9-zone equipment table + weight-estimate formulae + rules of thumb, over
+  `weight-zones.json`), `peds-rsi-decision-card` (7-P sequence, agent selection
+  by scenario, weight-based dose ranges), `peds-drip-concentrations` (standard
+  concentration vs rule-of-6, common-infusion table, rate conversion — companion
+  to the `peds-drip-rate` calculator). +4 modules.
+  **Still open (task 3): Procedures decision-tree branch logic** — suture
+  technique nodes, fracture-pattern branches, nerve-block and POCUS trees. This
+  needs a storyboarding pass (each tree's actual branches) and possibly a new
+  content shape; deferred rather than rushed.
 
 ---
 

@@ -1,0 +1,45 @@
+{
+  "id": "contraception-methods",
+  "section": "Reference Library",
+  "category": "Obstetric & Gynecologic",
+  "title": "Contraception — Methods & Emergency Contraception",
+  "aliases": ["contraception", "birth control", "emergency contraception", "Plan B", "ella ulipristal", "LARC", "CDC MEC"],
+  "tags": ["contraception", "emergency contraception", "LARC", "IUD", "implant", "GYN", "OB", "outpatient"],
+  "keywords": ["Nexplanon implant 3 years", "LNG-IUD 5-8 years", "copper IUD 10-12 years most effective EC", "depo-provera BMD", "combined OCP DVT MEC 3-4 smokers 35", "progestin-only pill breastfeeding", "levonorgestrel EC <= 72h BMI", "ulipristal 72-120h"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2026-12-03",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — OB Pocket Guide: Contraception (CDC MEC 2024)",
+    "US Medical Eligibility Criteria for Contraceptive Use, CDC 2024"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — method efficacy table with key counselling points, plus emergency contraception options and timing." }],
+  "summary": "LARC methods (implant, IUDs) are the most effective and are MEC category 1 for most conditions. The copper IUD is the most effective emergency contraception if placed within 5 days. Ulipristal outperforms levonorgestrel in the 72–120 h window; both lose efficacy at higher body weight.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Methods" },
+    { "type": "table",
+      "columns": ["Method", "Typical use", "Perfect use", "Key points"],
+      "rows": [
+        ["Implant (Nexplanon)", "< 1%", "< 1%", "3 years; subdermal progestin rod; amenorrhoea common; MEC 1 for most conditions"],
+        ["LNG-IUD (Mirena / Liletta)", "< 1%", "< 1%", "5–8 years; reduces bleeding; also treats heavy menstrual bleeding; can insert any time in the cycle"],
+        ["Copper IUD (Paragard)", "< 1%", "< 1%", "10–12 years; non-hormonal; the most effective EC if placed ≤ 5 days after unprotected sex"],
+        ["Depot medroxyprogesterone (Depo-Provera)", "4%", "< 1%", "150 mg IM q12 weeks; reversible ↓ BMD with prolonged use; delayed return of fertility (9–18 months)"],
+        ["Combined OCP", "7%", "< 1%", "Daily; VTE risk from oestrogen; MEC 3–4 in smokers ≥ 35 y; 24/4 or 21/7 formulations"],
+        ["Progestin-only pill", "7%", "< 1%", "Safe with breastfeeding, hypertension, smoking, migraine with aura; strict timing (norethindrone ± 3 h)"],
+        ["Male condom", "13%", "2%", "The only method giving STI protection; pair with a hormonal method for dual efficacy"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Emergency contraception" },
+    { "type": "table",
+      "columns": ["Option", "Dose / timing", "Notes"],
+      "rows": [
+        ["Copper IUD", "Place ≤ 5 days after unprotected sex", "Most effective EC; also gives ongoing contraception"],
+        ["Levonorgestrel (Plan B)", "1.5 mg PO as soon as possible; best ≤ 72 h, works up to 120 h", "Reduced efficacy at higher body weight (≳ 70–75 kg / BMI ≥ 26); OTC"],
+        ["Ulipristal acetate (ella)", "30 mg PO; effective 72–120 h", "Better than levonorgestrel in the 72–120 h window; also less weight-limited; prescription required"]
+      ]
+    },
+    { "type": "callout", "tone": "info", "text": "Quick-start any method the same day if pregnancy can be reasonably excluded; use a backup method for 7 days (2 days for the progestin-only pill). After ulipristal, delay starting a hormonal method for 5 days (it competes at the progesterone receptor)." }
+  ]
+}

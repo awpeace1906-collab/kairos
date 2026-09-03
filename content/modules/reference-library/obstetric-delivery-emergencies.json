@@ -1,11 +1,38 @@
 {
   "id": "obstetric-delivery-emergencies",
   "section": "Reference Library",
-  "category": "Obstetric Emergencies",
+  "category": "Obstetric & Gynecologic",
   "title": "Delivery Emergencies — Shoulder Dystocia, Cord Prolapse, Abruption",
-  "aliases": ["shoulder dystocia", "HELPERR", "McRoberts maneuver", "umbilical cord prolapse", "placental abruption", "Gaskin maneuver", "Zavanelli"],
-  "tags": ["shoulder dystocia", "cord prolapse", "placental abruption", "HELPERR", "McRoberts", "obstetric emergency", "intrapartum", "OB", "ED"],
-  "keywords": ["McRoberts + suprapubic pressure", "NOT fundal pressure", "deliver posterior arm", "Gaskin all-fours", "elevate the presenting part", "knee-chest", "fill bladder 500-750 mL", "woody rigid uterus"],
+  "aliases": [
+    "shoulder dystocia",
+    "HELPERR",
+    "McRoberts maneuver",
+    "umbilical cord prolapse",
+    "placental abruption",
+    "Gaskin maneuver",
+    "Zavanelli"
+  ],
+  "tags": [
+    "shoulder dystocia",
+    "cord prolapse",
+    "placental abruption",
+    "HELPERR",
+    "McRoberts",
+    "obstetric emergency",
+    "intrapartum",
+    "OB",
+    "ED"
+  ],
+  "keywords": [
+    "McRoberts + suprapubic pressure",
+    "NOT fundal pressure",
+    "deliver posterior arm",
+    "Gaskin all-fours",
+    "elevate the presenting part",
+    "knee-chest",
+    "fill bladder 500-750 mL",
+    "woody rigid uterus"
+  ],
   "contentType": "reference",
   "content_version": 1,
   "last_reviewed": "2026-09-02",
@@ -14,42 +41,81 @@
   "sources": [
     "Critical Vector — OB Pocket Guide: Shoulder Dystocia / Cord Prolapse / Placental Abruption (ACOG 2023)"
   ],
-  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — the HELPERR sequence for shoulder dystocia, the cord-prolapse steps, and placental abruption recognition + management." }],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — the HELPERR sequence for shoulder dystocia, the cord-prolapse steps, and placental abruption recognition + management."
+    }
+  ],
   "summary": "Shoulder dystocia: call for help, McRoberts + suprapubic (NOT fundal) pressure first, then internal rotation / deliver the posterior arm / all-fours. Cord prolapse: elevate the presenting part continuously and go to an emergent caesarean — do not replace the cord. Abruption: painful bleeding + a rigid tender uterus + fetal distress ± DIC.",
   "body": [
-    { "type": "heading", "level": 2, "text": "Shoulder dystocia — HELPERR" },
-    { "type": "callout", "tone": "danger", "text": "Time-critical — aim to deliver within ~5 minutes of recognition (rising risk of hypoxic injury and brachial plexus injury). Note the time. Do NOT apply fundal pressure and do NOT apply excessive downward traction on the head." },
-    { "type": "list", "items": [
-      "H — Help: call additional OB, NICU / paediatrics, and anaesthesia NOW.",
-      "E — Evaluate for episiotomy: only if needed for room to perform internal manoeuvres (it does not relieve a bony impaction).",
-      "L — Legs: McRoberts — hyperflex the maternal thighs onto the abdomen (flattens the lumbar lordosis, rotates the symphysis). Resolves ~40% alone.",
-      "P — suprapubic Pressure: continuous or rocking, directed downward and laterally onto the fetal anterior shoulder — NOT fundal pressure.",
-      "E — Enter (internal rotation): Rubin II (pressure on the posterior aspect of the anterior shoulder → adduction), then add Woods screw (rotate the posterior shoulder anteriorly) or reverse Woods screw.",
-      "R — Remove the posterior arm: sweep it across the fetal chest and deliver the hand / forearm (highly effective).",
-      "R — Roll: the Gaskin all-fours manoeuvre (mother onto hands and knees), then reattempt delivery of the posterior (now uppermost) shoulder.",
-      "Last resort: deliberate clavicle fracture; Zavanelli manoeuvre (cephalic replacement → caesarean); symphysiotomy."
-    ] },
-
-    { "type": "heading", "level": 2, "text": "Umbilical cord prolapse" },
-    { "type": "callout", "tone": "danger", "text": "The moment it's recognised (palpable pulsating cord, or a fetal bradycardia after membrane rupture), the decision-to-delivery clock is running." },
-    { "type": "list", "items": [
-      "1. Call for help; activate the obstetric emergency / OR.",
-      "2. Manually elevate the presenting part off the cord with a gloved hand, and KEEP it there continuously (into the OR).",
-      "3. Position: knee-chest or steep Trendelenburg.",
-      "4. Fill the bladder with 500–750 mL of saline (if time allows) to elevate the presenting part and reduce cord compression.",
-      "5. Emergent caesarean delivery (a rapid instrumental vaginal delivery only if the cervix is fully dilated and the head is low).",
-      "Do NOT try to replace the cord into the uterus. Keep an exposed cord warm and moist with saline-soaked gauze; handle it minimally (spasm). Stop oxytocin; a tocolytic (terbutaline) can be given as a bridge."
-    ] },
-
-    { "type": "heading", "level": 2, "text": "Placental abruption" },
-    { "type": "list", "items": [
-      "Painful vaginal bleeding (in ~80%; 10–20% is concealed — the bleeding is retroplacental and the visible loss underestimates it). A 'woody', rigid, tender uterus with high-frequency low-amplitude contractions. Fetal heart-rate abnormalities. DIC in severe cases (abruption is the commonest obstetric cause).",
-      "Risk factors: hypertension / preeclampsia, abdominal trauma, cocaine, smoking, prior abruption, PPROM, polyhydramnios with rapid decompression.",
-      "Minor and stable, remote from term: continuous monitoring, antenatal corticosteroids if < 34 weeks, anti-D if Rh-negative — deliver for maternal or fetal instability.",
-      "Major abruption: immediate delivery (caesarean unless delivery is imminent), activate the MTP, replace fibrinogen aggressively (target > 150–200 mg/dL — cryoprecipitate / concentrate), and correct the DIC. Expect a Couvelaire uterus and atony — have uterotonics ready.",
-      "Rh-negative: send a Kleihauer-Betke and dose anti-D (RhoGAM) accordingly."
-    ] }
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Shoulder dystocia — HELPERR"
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "Time-critical — aim to deliver within ~5 minutes of recognition (rising risk of hypoxic injury and brachial plexus injury). Note the time. Do NOT apply fundal pressure and do NOT apply excessive downward traction on the head."
+    },
+    {
+      "type": "list",
+      "items": [
+        "H — Help: call additional OB, NICU / paediatrics, and anaesthesia NOW.",
+        "E — Evaluate for episiotomy: only if needed for room to perform internal manoeuvres (it does not relieve a bony impaction).",
+        "L — Legs: McRoberts — hyperflex the maternal thighs onto the abdomen (flattens the lumbar lordosis, rotates the symphysis). Resolves ~40% alone.",
+        "P — suprapubic Pressure: continuous or rocking, directed downward and laterally onto the fetal anterior shoulder — NOT fundal pressure.",
+        "E — Enter (internal rotation): Rubin II (pressure on the posterior aspect of the anterior shoulder → adduction), then add Woods screw (rotate the posterior shoulder anteriorly) or reverse Woods screw.",
+        "R — Remove the posterior arm: sweep it across the fetal chest and deliver the hand / forearm (highly effective).",
+        "R — Roll: the Gaskin all-fours manoeuvre (mother onto hands and knees), then reattempt delivery of the posterior (now uppermost) shoulder.",
+        "Last resort: deliberate clavicle fracture; Zavanelli manoeuvre (cephalic replacement → caesarean); symphysiotomy."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Umbilical cord prolapse"
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "The moment it's recognised (palpable pulsating cord, or a fetal bradycardia after membrane rupture), the decision-to-delivery clock is running."
+    },
+    {
+      "type": "list",
+      "items": [
+        "1. Call for help; activate the obstetric emergency / OR.",
+        "2. Manually elevate the presenting part off the cord with a gloved hand, and KEEP it there continuously (into the OR).",
+        "3. Position: knee-chest or steep Trendelenburg.",
+        "4. Fill the bladder with 500–750 mL of saline (if time allows) to elevate the presenting part and reduce cord compression.",
+        "5. Emergent caesarean delivery (a rapid instrumental vaginal delivery only if the cervix is fully dilated and the head is low).",
+        "Do NOT try to replace the cord into the uterus. Keep an exposed cord warm and moist with saline-soaked gauze; handle it minimally (spasm). Stop oxytocin; a tocolytic (terbutaline) can be given as a bridge."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Placental abruption"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Painful vaginal bleeding (in ~80%; 10–20% is concealed — the bleeding is retroplacental and the visible loss underestimates it). A 'woody', rigid, tender uterus with high-frequency low-amplitude contractions. Fetal heart-rate abnormalities. DIC in severe cases (abruption is the commonest obstetric cause).",
+        "Risk factors: hypertension / preeclampsia, abdominal trauma, cocaine, smoking, prior abruption, PPROM, polyhydramnios with rapid decompression.",
+        "Minor and stable, remote from term: continuous monitoring, antenatal corticosteroids if < 34 weeks, anti-D if Rh-negative — deliver for maternal or fetal instability.",
+        "Major abruption: immediate delivery (caesarean unless delivery is imminent), activate the MTP, replace fibrinogen aggressively (target > 150–200 mg/dL — cryoprecipitate / concentrate), and correct the DIC. Expect a Couvelaire uterus and atony — have uterotonics ready.",
+        "Rh-negative: send a Kleihauer-Betke and dose anti-D (RhoGAM) accordingly."
+      ]
+    }
   ],
-  "related": ["postpartum-hemorrhage", "maternal-cardiac-arrest", "emergency-drugs-pregnancy", "efm-fetal-heart-rate", "blood-products"],
+  "related": [
+    "postpartum-hemorrhage",
+    "maternal-cardiac-arrest",
+    "emergency-drugs-pregnancy",
+    "efm-fetal-heart-rate",
+    "blood-products"
+  ],
   "buildNote": "Tier 1. Uterine inversion and uterine rupture are further intrapartum emergencies to add. Vacuum / forceps criteria are separate."
 }

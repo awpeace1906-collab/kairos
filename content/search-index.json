@@ -3734,6 +3734,82 @@
       "route": "/peds-module/peds-resuscitation-decision-support/peds-glasgow-coma-scale"
     },
     {
+      "id": "peds-drip-concentrations",
+      "title": "Pediatric Infusion Concentrations",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "infusions",
+        "vasoactive",
+        "sedation",
+        "pediatric",
+        "rule of 6",
+        "standard concentrations",
+        "PICU"
+      ],
+      "keywords": [
+        "peds drips",
+        "rule of 6",
+        "standard concentration infusions",
+        "pediatric vasoactive infusions",
+        "mcg/kg/min to mL/hr"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-drip-concentrations"
+    },
+    {
+      "id": "peds-rsi-decision-card",
+      "title": "Pediatric RSI — Decision & Dosing Card",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "RSI",
+        "pediatric airway",
+        "induction",
+        "ketamine",
+        "rocuronium",
+        "succinylcholine",
+        "atropine",
+        "PALS",
+        "ED"
+      ],
+      "keywords": [
+        "peds RSI",
+        "pediatric rapid sequence intubation",
+        "peds induction agent choice",
+        "peds paralytic dose",
+        "atropine premedication infant"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-rsi-decision-card"
+    },
+    {
+      "id": "pedi-tape-weight-zones",
+      "title": "Weight Zones & Equipment Sizing",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "weight zone",
+        "equipment sizing",
+        "ETT",
+        "LMA",
+        "laryngoscope blade",
+        "defibrillator pads",
+        "resuscitation",
+        "PALS"
+      ],
+      "keywords": [
+        "Pedi Tape",
+        "Broselow zone",
+        "length-based tape",
+        "pediatric equipment sizing",
+        "ETT size by weight",
+        "color zone"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/pedi-tape-weight-zones"
+    },
+    {
       "id": "airway-management-flow",
       "title": "Airway Management Flow",
       "section": "Procedures",
@@ -4682,6 +4758,43 @@
       "route": "/reference-library/critical-care/toxidromes-and-overdoses"
     },
     {
+      "id": "childhood-immunization-schedule",
+      "title": "Childhood & Adolescent Immunization Schedule",
+      "section": "Reference Library",
+      "category": "Infectious Disease & Immunization",
+      "tags": [
+        "immunization",
+        "vaccines",
+        "pediatrics",
+        "ACIP",
+        "CDC",
+        "preventive care",
+        "primary care"
+      ],
+      "keywords": [
+        "HepB birth dose",
+        "DTaP IPV Hib PCV rotavirus 2 4 6 months",
+        "MMR varicella 12-15 months",
+        "HepA 12-23 months",
+        "DTaP 5th dose 4-6 years",
+        "Tdap HPV MenACWY 11-12 years",
+        "MenACWY booster 16",
+        "MenB 16-23 shared decision",
+        "influenza annually >= 6 months",
+        "nirsevimab RSV",
+        "minimum intervals catch-up",
+        "vaccine schedule",
+        "CDC immunization schedule",
+        "ACIP schedule",
+        "childhood vaccines",
+        "catch-up vaccination",
+        "adolescent vaccines",
+        "HPV Tdap MenACWY"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/infectious-disease-immunization/childhood-immunization-schedule"
+    },
+    {
       "id": "empiric-antibiotics-cap",
       "title": "Empiric Antibiotics — Community-Acquired Pneumonia",
       "section": "Reference Library",
@@ -4792,10 +4905,77 @@
       "route": "/reference-library/infectious-disease-immunization/empiric-antibiotics-outpatient"
     },
     {
+      "id": "abnormal-uterine-bleeding",
+      "title": "Abnormal Uterine Bleeding (PALM-COEIN)",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "abnormal uterine bleeding",
+        "heavy menstrual bleeding",
+        "PALM-COEIN",
+        "GYN",
+        "ED",
+        "OB",
+        "endometrial biopsy"
+      ],
+      "keywords": [
+        "polyp adenomyosis leiomyoma malignancy",
+        "coagulopathy ovulatory endometrial iatrogenic",
+        "acute HMB combined OCP taper",
+        "conjugated estrogen 25 mg IV q4-6h",
+        "LNG-IUD maintenance",
+        "endometrial biopsy age >= 45",
+        "tranexamic acid",
+        "AUB",
+        "PALM-COEIN",
+        "heavy menstrual bleeding",
+        "menorrhagia",
+        "acute AUB management",
+        "dysfunctional uterine bleeding"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/abnormal-uterine-bleeding"
+    },
+    {
+      "id": "contraception-methods",
+      "title": "Contraception — Methods & Emergency Contraception",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "contraception",
+        "emergency contraception",
+        "LARC",
+        "IUD",
+        "implant",
+        "GYN",
+        "OB",
+        "outpatient"
+      ],
+      "keywords": [
+        "Nexplanon implant 3 years",
+        "LNG-IUD 5-8 years",
+        "copper IUD 10-12 years most effective EC",
+        "depo-provera BMD",
+        "combined OCP DVT MEC 3-4 smokers 35",
+        "progestin-only pill breastfeeding",
+        "levonorgestrel EC <= 72h BMI",
+        "ulipristal 72-120h",
+        "contraception",
+        "birth control",
+        "emergency contraception",
+        "Plan B",
+        "ella ulipristal",
+        "LARC",
+        "CDC MEC"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/contraception-methods"
+    },
+    {
       "id": "obstetric-delivery-emergencies",
       "title": "Delivery Emergencies — Shoulder Dystocia, Cord Prolapse, Abruption",
       "section": "Reference Library",
-      "category": "Obstetric Emergencies",
+      "category": "Obstetric & Gynecologic",
       "tags": [
         "shoulder dystocia",
         "cord prolapse",
@@ -4825,13 +5005,47 @@
         "Zavanelli"
       ],
       "contentType": "reference",
-      "route": "/reference-library/obstetric-emergencies/obstetric-delivery-emergencies"
+      "route": "/reference-library/obstetric-gynecologic/obstetric-delivery-emergencies"
+    },
+    {
+      "id": "ectopic-pregnancy",
+      "title": "Ectopic Pregnancy",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "ectopic pregnancy",
+        "methotrexate",
+        "beta-hCG",
+        "transvaginal ultrasound",
+        "GYN emergency",
+        "ED",
+        "OB"
+      ],
+      "keywords": [
+        "no IUP on TVUS",
+        "discriminatory zone 1500-3000",
+        "beta-hCG rise 53% in 48h",
+        "methotrexate 50 mg/m2",
+        "day 4 and 7 hCG",
+        "15% fall",
+        "salpingectomy vs salpingostomy",
+        "RhoGAM 300 mcg",
+        "ruptured ectopic OR",
+        "ectopic",
+        "tubal pregnancy",
+        "methotrexate ectopic",
+        "ruptured ectopic",
+        "pregnancy of unknown location",
+        "discriminatory zone"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/ectopic-pregnancy"
     },
     {
       "id": "emergency-drugs-pregnancy",
       "title": "Emergency Drugs in Pregnancy",
       "section": "Reference Library",
-      "category": "Obstetric Emergencies",
+      "category": "Obstetric & Gynecologic",
       "tags": [
         "pregnancy",
         "obstetric emergency",
@@ -4870,13 +5084,13 @@
         "antibiotics pregnancy trimester"
       ],
       "contentType": "reference",
-      "route": "/reference-library/obstetric-emergencies/emergency-drugs-pregnancy"
+      "route": "/reference-library/obstetric-gynecologic/emergency-drugs-pregnancy"
     },
     {
       "id": "efm-fetal-heart-rate",
       "title": "Fetal Heart Rate Monitoring (NICHD)",
       "section": "Reference Library",
-      "category": "Obstetric Emergencies",
+      "category": "Obstetric & Gynecologic",
       "tags": [
         "EFM",
         "fetal heart rate",
@@ -4906,13 +5120,13 @@
         "fetal scalp stimulation"
       ],
       "contentType": "reference",
-      "route": "/reference-library/obstetric-emergencies/efm-fetal-heart-rate"
+      "route": "/reference-library/obstetric-gynecologic/efm-fetal-heart-rate"
     },
     {
       "id": "maternal-cardiac-arrest",
       "title": "Maternal Cardiac Arrest",
       "section": "Reference Library",
-      "category": "Obstetric Emergencies",
+      "category": "Obstetric & Gynecologic",
       "tags": [
         "maternal cardiac arrest",
         "resuscitation",
@@ -4942,13 +5156,77 @@
         "OBLS"
       ],
       "contentType": "reference",
-      "route": "/reference-library/obstetric-emergencies/maternal-cardiac-arrest"
+      "route": "/reference-library/obstetric-gynecologic/maternal-cardiac-arrest"
+    },
+    {
+      "id": "ovarian-torsion",
+      "title": "Ovarian Torsion",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "ovarian torsion",
+        "pelvic pain",
+        "GYN emergency",
+        "ultrasound doppler",
+        "ED",
+        "OB"
+      ],
+      "keywords": [
+        "acute unilateral pelvic pain",
+        "nausea vomiting 70%",
+        "ovarian cyst >= 5 cm",
+        "string of pearls",
+        "absent doppler flow sensitivity 60-74%",
+        "normal doppler does not exclude",
+        "detorsion even if discoloured",
+        "oophoropexy",
+        "6-8 hour window",
+        "adnexal torsion",
+        "ovarian torsion doppler",
+        "string of pearls ovary",
+        "detorsion"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/ovarian-torsion"
+    },
+    {
+      "id": "pid-tubo-ovarian-abscess",
+      "title": "PID & Tubo-ovarian Abscess",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "pelvic inflammatory disease",
+        "tubo-ovarian abscess",
+        "ceftriaxone doxycycline metronidazole",
+        "GYN",
+        "ED",
+        "OB",
+        "infectious disease"
+      ],
+      "keywords": [
+        "uterine adnexal cervical motion tenderness",
+        "empiric treatment low threshold",
+        "ceftriaxone 500 mg IM",
+        "doxycycline 100 mg BID 14 days",
+        "metronidazole 500 mg BID",
+        "cefoxitin 2 g q6h",
+        "TOA drainage >= 8 cm",
+        "72 hour reassessment",
+        "pelvic inflammatory disease",
+        "PID",
+        "TOA",
+        "tubo-ovarian abscess",
+        "cervical motion tenderness",
+        "salpingitis"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/pid-tubo-ovarian-abscess"
     },
     {
       "id": "csection-analgesia-prospect",
       "title": "Post-Caesarean Analgesia (PROSPECT 2026)",
       "section": "Reference Library",
-      "category": "Obstetric Emergencies",
+      "category": "Obstetric & Gynecologic",
       "tags": [
         "obstetric anesthesia",
         "caesarean",
@@ -4975,13 +5253,13 @@
         "post-caesarean multimodal analgesia"
       ],
       "contentType": "reference",
-      "route": "/reference-library/obstetric-emergencies/csection-analgesia-prospect"
+      "route": "/reference-library/obstetric-gynecologic/csection-analgesia-prospect"
     },
     {
       "id": "postpartum-hemorrhage",
       "title": "Postpartum Hemorrhage",
       "section": "Reference Library",
-      "category": "Obstetric Emergencies",
+      "category": "Obstetric & Gynecologic",
       "tags": [
         "postpartum hemorrhage",
         "PPH",
@@ -5012,13 +5290,13 @@
         "WOMAN trial"
       ],
       "contentType": "reference",
-      "route": "/reference-library/obstetric-emergencies/postpartum-hemorrhage"
+      "route": "/reference-library/obstetric-gynecologic/postpartum-hemorrhage"
     },
     {
       "id": "preeclampsia-eclampsia-hellp",
       "title": "Preeclampsia / Eclampsia / HELLP",
       "section": "Reference Library",
-      "category": "Obstetric Emergencies",
+      "category": "Obstetric & Gynecologic",
       "tags": [
         "preeclampsia",
         "eclampsia",
@@ -5048,7 +5326,77 @@
         "Tennessee criteria"
       ],
       "contentType": "reference",
-      "route": "/reference-library/obstetric-emergencies/preeclampsia-eclampsia-hellp"
+      "route": "/reference-library/obstetric-gynecologic/preeclampsia-eclampsia-hellp"
+    },
+    {
+      "id": "anesthesia-pocus",
+      "title": "Anesthesia POCUS — Cardiac, Airway, Lung, Vascular, Neuraxial",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "POCUS",
+        "focused echo",
+        "gastric ultrasound",
+        "airway ultrasound",
+        "lung ultrasound",
+        "vascular access",
+        "neuraxial ultrasound",
+        "OR",
+        "anesthesia"
+      ],
+      "keywords": [
+        "PLAX PSAX A4C subxiphoid IVC",
+        "5 views golden spiral",
+        "intraoperative hypotension differential",
+        "IVC < 1.5 cm collapsing hypovolemia",
+        "cricothyroid membrane mark before induction",
+        "tracheal ring sign vs snow globe",
+        "gastric antral CSA grade 0 1 2",
+        "barcode sign pneumothorax",
+        "neuraxial pre-scan obese scoliosis",
+        "perioperative POCUS",
+        "cardiac ultrasound golden spiral",
+        "gastric ultrasound aspiration risk",
+        "airway ultrasound cricothyroid membrane",
+        "lung ultrasound OR",
+        "neuraxial ultrasound prescan",
+        "IVC collapsibility"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/anesthesia-pocus"
+    },
+    {
+      "id": "drug-concentration-math",
+      "title": "Drug Concentration Math",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "drug concentration",
+        "dosing math",
+        "local anesthetic",
+        "epinephrine",
+        "OR",
+        "anesthesia",
+        "ED"
+      ],
+      "keywords": [
+        "% x 10 = mg/mL",
+        "1% = 10 mg/mL",
+        "0.25% bupivacaine 2.5 mg/mL",
+        "2% lidocaine 20 mg/mL",
+        "1:1000 epi = 1 mg/mL",
+        "1:10000 epi = 0.1 mg/mL",
+        "1:200000 epi = 5 mcg/mL",
+        "ratio strength grams per mL",
+        "percent to mg/mL",
+        "concentration conversion",
+        "epinephrine dilutions",
+        "1:1000 1:10000 1:200000",
+        "local anesthetic concentration",
+        "ratio strength"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/drug-concentration-math"
     },
     {
       "id": "mac-values",
@@ -5310,6 +5658,39 @@
       "route": "/reference-library/perioperative-anesthesia/sedation-analgesia-agents"
     },
     {
+      "id": "surgical-antibiotic-prophylaxis",
+      "title": "Surgical Antibiotic Prophylaxis",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "surgical prophylaxis",
+        "antibiotics",
+        "SSI prevention",
+        "perioperative",
+        "OR",
+        "anesthesia"
+      ],
+      "keywords": [
+        "within 60 min of incision",
+        "120 min for vancomycin fluoroquinolone",
+        "cefazolin 2 g 3 g if >= 120 kg",
+        "redose q4h or EBL > 1500 mL",
+        "discontinue within 24 h",
+        "cardiac 48 h",
+        "vancomycin AUC 400-600",
+        "penicillin allergy alternative",
+        "procedure-specific selection",
+        "surgical prophylaxis",
+        "pre-incision antibiotics",
+        "cefazolin 2 g",
+        "SCIP antibiotics",
+        "perioperative antibiotic redosing",
+        "SSI prevention"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/surgical-antibiotic-prophylaxis"
+    },
+    {
       "id": "abg-interpretation",
       "title": "ABG Interpretation",
       "section": "Reference Library",
@@ -5331,6 +5712,44 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/resuscitation-airway/abg-interpretation"
+    },
+    {
+      "id": "acute-dyspnea-niv",
+      "title": "Acute Dyspnea — POCUS & NIV",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "dyspnea",
+        "lung ultrasound",
+        "non-invasive ventilation",
+        "BiPAP",
+        "HFNC",
+        "COPD",
+        "pulmonary edema",
+        "ED",
+        "critical care"
+      ],
+      "keywords": [
+        "B-lines cardiogenic edema",
+        "A-lines lung sliding COPD asthma PE",
+        "absent lung sliding pneumothorax lung point",
+        "plethoric IVC RV>LV massive PE",
+        "CPAP EPAP 5-10",
+        "BiPAP IPAP 10-15 EPAP 4-8",
+        "HFNC 40-60 L/min",
+        "ROX index 4.88",
+        "NIV failure reassess at 1 hour",
+        "P-SILI tidal volume 9 mL/kg",
+        "acute dyspnea",
+        "BLUE protocol",
+        "lung ultrasound dyspnea",
+        "NIV settings",
+        "BiPAP CPAP HFNC",
+        "COPD exacerbation bundle",
+        "flash pulmonary edema"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/acute-dyspnea-niv"
     },
     {
       "id": "acls-adult-cardiac-arrest",
@@ -5356,6 +5775,74 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/resuscitation-airway/acls-adult-cardiac-arrest"
+    },
+    {
+      "id": "altered-mental-status",
+      "title": "Altered Mental Status (AEIOU-TIPS)",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "altered mental status",
+        "encephalopathy",
+        "thiamine",
+        "hypoglycemia",
+        "Wernicke",
+        "ED",
+        "neurology"
+      ],
+      "keywords": [
+        "fingerstick glucose first",
+        "thiamine 100 mg IV before glucose",
+        "AEIOU-TIPS differential",
+        "Wernicke triad only 16%",
+        "hepatic encephalopathy asterixis lactulose",
+        "hypertensive encephalopathy lower MAP 20-25%",
+        "non-convulsive status EEG",
+        "SAH LP after negative CT",
+        "meningitis antibiotics before CT",
+        "elderly SDH from minor fall",
+        "altered mental status",
+        "AMS",
+        "AEIOU-TIPS",
+        "encephalopathy workup",
+        "coma differential",
+        "delirium ED"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/altered-mental-status"
+    },
+    {
+      "id": "anaphylaxis",
+      "title": "Anaphylaxis",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "anaphylaxis",
+        "epinephrine",
+        "shock",
+        "airway",
+        "allergy",
+        "ED"
+      ],
+      "keywords": [
+        "epinephrine 0.3-0.5 mg IM 1:1000 lateral thigh",
+        "repeat q5-15 min",
+        "no contraindication",
+        "antihistamines do not treat anaphylaxis",
+        "IV fluids 1-2 L",
+        "epinephrine infusion 0.05-0.5 mcg/kg/min",
+        "glucagon 1 mg beta-blocker",
+        "observe 4-8 h biphasic",
+        "discharge with auto-injector",
+        "anaphylaxis",
+        "anaphylactic shock",
+        "epinephrine IM",
+        "biphasic anaphylaxis",
+        "refractory anaphylaxis",
+        "epinephrine infusion glucagon"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/anaphylaxis"
     },
     {
       "id": "antidotes-reversal-agents",

@@ -3,35 +3,446 @@
   "section": "Calculators",
   "category": "Toxicology / Withdrawal",
   "title": "CIWA-Ar (Alcohol Withdrawal)",
-  "aliases": ["CIWA", "alcohol withdrawal assessment", "symptom-triggered benzodiazepine", "AWS score"],
-  "tags": ["alcohol withdrawal", "benzodiazepine", "symptom-triggered dosing", "delirium tremens", "ED", "ICU"],
-  "keywords": ["nausea vomiting", "tremor", "paroxysmal sweats", "anxiety", "agitation", "tactile auditory visual disturbances", "headache", "orientation", "score >= 8 medicate"],
+  "aliases": [
+    "CIWA",
+    "alcohol withdrawal assessment",
+    "symptom-triggered benzodiazepine",
+    "AWS score"
+  ],
+  "tags": [
+    "alcohol withdrawal",
+    "benzodiazepine",
+    "symptom-triggered dosing",
+    "delirium tremens",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "nausea vomiting",
+    "tremor",
+    "paroxysmal sweats",
+    "anxiety",
+    "agitation",
+    "tactile auditory visual disturbances",
+    "headache",
+    "orientation",
+    "score >= 8 medicate"
+  ],
   "contentType": "calculator",
-  "content_version": 1,
-  "last_reviewed": "2026-09-02",
+  "content_version": 2,
+  "last_reviewed": "2026-09-03",
   "next_review_due": "2027-03-02",
   "review_tier": 1,
-  "sources": ["Sullivan JT et al. Br J Addict 1989; ASAM alcohol withdrawal management guideline"],
-  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
+  "sources": [
+    "Sullivan JT et al. Br J Addict 1989; ASAM alcohol withdrawal management guideline"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-03",
+      "change": "Severe band starts at ≥15 (was ≥16) to match the standard CIWA-Ar cut-point."
+    }
+  ],
   "engine": "additive",
-  "settings": ["ED", "ICU"],
+  "settings": [
+    "ED",
+    "ICU"
+  ],
   "purpose": "Objectifies alcohol withdrawal severity to drive symptom-triggered benzodiazepine dosing (10 items, 0–7 each except orientation 0–4; total 0–67). Requires a patient who can communicate — NOT valid in an intubated, delirious, or non-verbal patient (use RASS / a fixed-dose or phenobarbital protocol instead).",
   "items": [
-    { "key": "nausea", "label": "Nausea / vomiting", "options": [{ "label": "0 — none", "points": 0 }, { "label": "1", "points": 1 }, { "label": "2", "points": 2 }, { "label": "3", "points": 3 }, { "label": "4 — intermittent with dry heaves", "points": 4 }, { "label": "5", "points": 5 }, { "label": "6", "points": 6 }, { "label": "7 — constant nausea, frequent vomiting", "points": 7 }] },
-    { "key": "tremor", "label": "Tremor (arms extended, fingers spread)", "options": [{ "label": "0 — none", "points": 0 }, { "label": "1 — not visible, felt fingertip to fingertip", "points": 1 }, { "label": "2", "points": 2 }, { "label": "3", "points": 3 }, { "label": "4 — moderate with arms extended", "points": 4 }, { "label": "5", "points": 5 }, { "label": "6", "points": 6 }, { "label": "7 — severe, even with arms not extended", "points": 7 }] },
-    { "key": "sweats", "label": "Paroxysmal sweats", "options": [{ "label": "0 — none", "points": 0 }, { "label": "1 — barely perceptible, palms moist", "points": 1 }, { "label": "2", "points": 2 }, { "label": "3", "points": 3 }, { "label": "4 — beads of sweat on forehead", "points": 4 }, { "label": "5", "points": 5 }, { "label": "6", "points": 6 }, { "label": "7 — drenching sweats", "points": 7 }] },
-    { "key": "anxiety", "label": "Anxiety", "options": [{ "label": "0 — none, at ease", "points": 0 }, { "label": "1 — mildly anxious", "points": 1 }, { "label": "2", "points": 2 }, { "label": "3", "points": 3 }, { "label": "4 — moderately anxious / guarded", "points": 4 }, { "label": "5", "points": 5 }, { "label": "6", "points": 6 }, { "label": "7 — acute panic state", "points": 7 }] },
-    { "key": "agitation", "label": "Agitation", "options": [{ "label": "0 — normal activity", "points": 0 }, { "label": "1 — somewhat more than normal", "points": 1 }, { "label": "2", "points": 2 }, { "label": "3", "points": 3 }, { "label": "4 — moderately fidgety and restless", "points": 4 }, { "label": "5", "points": 5 }, { "label": "6", "points": 6 }, { "label": "7 — paces or thrashes about constantly", "points": 7 }] },
-    { "key": "tactile", "label": "Tactile disturbances (itching, pins & needles, burning, numbness, bugs on skin)", "options": [{ "label": "0 — none", "points": 0 }, { "label": "1 — very mild", "points": 1 }, { "label": "2 — mild", "points": 2 }, { "label": "3 — moderate", "points": 3 }, { "label": "4 — moderately severe hallucinations", "points": 4 }, { "label": "5 — severe hallucinations", "points": 5 }, { "label": "6 — extremely severe hallucinations", "points": 6 }, { "label": "7 — continuous hallucinations", "points": 7 }] },
-    { "key": "auditory", "label": "Auditory disturbances (harsh sounds, voices, frightening sounds)", "options": [{ "label": "0 — none", "points": 0 }, { "label": "1 — very mild harshness", "points": 1 }, { "label": "2 — mild", "points": 2 }, { "label": "3 — moderate", "points": 3 }, { "label": "4 — moderately severe hallucinations", "points": 4 }, { "label": "5 — severe hallucinations", "points": 5 }, { "label": "6 — extremely severe", "points": 6 }, { "label": "7 — continuous hallucinations", "points": 7 }] },
-    { "key": "visual", "label": "Visual disturbances (light sensitivity, seeing things)", "options": [{ "label": "0 — none", "points": 0 }, { "label": "1 — very mild sensitivity", "points": 1 }, { "label": "2 — mild", "points": 2 }, { "label": "3 — moderate", "points": 3 }, { "label": "4 — moderately severe hallucinations", "points": 4 }, { "label": "5 — severe hallucinations", "points": 5 }, { "label": "6 — extremely severe", "points": 6 }, { "label": "7 — continuous hallucinations", "points": 7 }] },
-    { "key": "headache", "label": "Headache / fullness in the head", "options": [{ "label": "0 — none", "points": 0 }, { "label": "1 — very mild", "points": 1 }, { "label": "2 — mild", "points": 2 }, { "label": "3 — moderate", "points": 3 }, { "label": "4 — moderately severe", "points": 4 }, { "label": "5 — severe", "points": 5 }, { "label": "6 — very severe", "points": 6 }, { "label": "7 — extremely severe", "points": 7 }] },
-    { "key": "orientation", "label": "Orientation and clouding of sensorium", "options": [{ "label": "0 — oriented, can do serial additions", "points": 0 }, { "label": "1 — cannot do serial additions / uncertain of the date", "points": 1 }, { "label": "2 — disoriented to date by no more than 2 days", "points": 2 }, { "label": "3 — disoriented to date by > 2 days", "points": 3 }, { "label": "4 — disoriented to place and/or person", "points": 4 }] }
+    {
+      "key": "nausea",
+      "label": "Nausea / vomiting",
+      "options": [
+        {
+          "label": "0 — none",
+          "points": 0
+        },
+        {
+          "label": "1",
+          "points": 1
+        },
+        {
+          "label": "2",
+          "points": 2
+        },
+        {
+          "label": "3",
+          "points": 3
+        },
+        {
+          "label": "4 — intermittent with dry heaves",
+          "points": 4
+        },
+        {
+          "label": "5",
+          "points": 5
+        },
+        {
+          "label": "6",
+          "points": 6
+        },
+        {
+          "label": "7 — constant nausea, frequent vomiting",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "key": "tremor",
+      "label": "Tremor (arms extended, fingers spread)",
+      "options": [
+        {
+          "label": "0 — none",
+          "points": 0
+        },
+        {
+          "label": "1 — not visible, felt fingertip to fingertip",
+          "points": 1
+        },
+        {
+          "label": "2",
+          "points": 2
+        },
+        {
+          "label": "3",
+          "points": 3
+        },
+        {
+          "label": "4 — moderate with arms extended",
+          "points": 4
+        },
+        {
+          "label": "5",
+          "points": 5
+        },
+        {
+          "label": "6",
+          "points": 6
+        },
+        {
+          "label": "7 — severe, even with arms not extended",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "key": "sweats",
+      "label": "Paroxysmal sweats",
+      "options": [
+        {
+          "label": "0 — none",
+          "points": 0
+        },
+        {
+          "label": "1 — barely perceptible, palms moist",
+          "points": 1
+        },
+        {
+          "label": "2",
+          "points": 2
+        },
+        {
+          "label": "3",
+          "points": 3
+        },
+        {
+          "label": "4 — beads of sweat on forehead",
+          "points": 4
+        },
+        {
+          "label": "5",
+          "points": 5
+        },
+        {
+          "label": "6",
+          "points": 6
+        },
+        {
+          "label": "7 — drenching sweats",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "key": "anxiety",
+      "label": "Anxiety",
+      "options": [
+        {
+          "label": "0 — none, at ease",
+          "points": 0
+        },
+        {
+          "label": "1 — mildly anxious",
+          "points": 1
+        },
+        {
+          "label": "2",
+          "points": 2
+        },
+        {
+          "label": "3",
+          "points": 3
+        },
+        {
+          "label": "4 — moderately anxious / guarded",
+          "points": 4
+        },
+        {
+          "label": "5",
+          "points": 5
+        },
+        {
+          "label": "6",
+          "points": 6
+        },
+        {
+          "label": "7 — acute panic state",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "key": "agitation",
+      "label": "Agitation",
+      "options": [
+        {
+          "label": "0 — normal activity",
+          "points": 0
+        },
+        {
+          "label": "1 — somewhat more than normal",
+          "points": 1
+        },
+        {
+          "label": "2",
+          "points": 2
+        },
+        {
+          "label": "3",
+          "points": 3
+        },
+        {
+          "label": "4 — moderately fidgety and restless",
+          "points": 4
+        },
+        {
+          "label": "5",
+          "points": 5
+        },
+        {
+          "label": "6",
+          "points": 6
+        },
+        {
+          "label": "7 — paces or thrashes about constantly",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "key": "tactile",
+      "label": "Tactile disturbances (itching, pins & needles, burning, numbness, bugs on skin)",
+      "options": [
+        {
+          "label": "0 — none",
+          "points": 0
+        },
+        {
+          "label": "1 — very mild",
+          "points": 1
+        },
+        {
+          "label": "2 — mild",
+          "points": 2
+        },
+        {
+          "label": "3 — moderate",
+          "points": 3
+        },
+        {
+          "label": "4 — moderately severe hallucinations",
+          "points": 4
+        },
+        {
+          "label": "5 — severe hallucinations",
+          "points": 5
+        },
+        {
+          "label": "6 — extremely severe hallucinations",
+          "points": 6
+        },
+        {
+          "label": "7 — continuous hallucinations",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "key": "auditory",
+      "label": "Auditory disturbances (harsh sounds, voices, frightening sounds)",
+      "options": [
+        {
+          "label": "0 — none",
+          "points": 0
+        },
+        {
+          "label": "1 — very mild harshness",
+          "points": 1
+        },
+        {
+          "label": "2 — mild",
+          "points": 2
+        },
+        {
+          "label": "3 — moderate",
+          "points": 3
+        },
+        {
+          "label": "4 — moderately severe hallucinations",
+          "points": 4
+        },
+        {
+          "label": "5 — severe hallucinations",
+          "points": 5
+        },
+        {
+          "label": "6 — extremely severe",
+          "points": 6
+        },
+        {
+          "label": "7 — continuous hallucinations",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "key": "visual",
+      "label": "Visual disturbances (light sensitivity, seeing things)",
+      "options": [
+        {
+          "label": "0 — none",
+          "points": 0
+        },
+        {
+          "label": "1 — very mild sensitivity",
+          "points": 1
+        },
+        {
+          "label": "2 — mild",
+          "points": 2
+        },
+        {
+          "label": "3 — moderate",
+          "points": 3
+        },
+        {
+          "label": "4 — moderately severe hallucinations",
+          "points": 4
+        },
+        {
+          "label": "5 — severe hallucinations",
+          "points": 5
+        },
+        {
+          "label": "6 — extremely severe",
+          "points": 6
+        },
+        {
+          "label": "7 — continuous hallucinations",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "key": "headache",
+      "label": "Headache / fullness in the head",
+      "options": [
+        {
+          "label": "0 — none",
+          "points": 0
+        },
+        {
+          "label": "1 — very mild",
+          "points": 1
+        },
+        {
+          "label": "2 — mild",
+          "points": 2
+        },
+        {
+          "label": "3 — moderate",
+          "points": 3
+        },
+        {
+          "label": "4 — moderately severe",
+          "points": 4
+        },
+        {
+          "label": "5 — severe",
+          "points": 5
+        },
+        {
+          "label": "6 — very severe",
+          "points": 6
+        },
+        {
+          "label": "7 — extremely severe",
+          "points": 7
+        }
+      ]
+    },
+    {
+      "key": "orientation",
+      "label": "Orientation and clouding of sensorium",
+      "options": [
+        {
+          "label": "0 — oriented, can do serial additions",
+          "points": 0
+        },
+        {
+          "label": "1 — cannot do serial additions / uncertain of the date",
+          "points": 1
+        },
+        {
+          "label": "2 — disoriented to date by no more than 2 days",
+          "points": 2
+        },
+        {
+          "label": "3 — disoriented to date by > 2 days",
+          "points": 3
+        },
+        {
+          "label": "4 — disoriented to place and/or person",
+          "points": 4
+        }
+      ]
+    }
   ],
   "interpretation": [
-    { "min": 0, "max": 8, "label": "Minimal / mild withdrawal — reassess q4–8 h; generally no medication needed", "severity": "low" },
-    { "min": 9, "max": 15, "label": "Moderate withdrawal — give a benzodiazepine dose (e.g. diazepam 10–20 mg or lorazepam 2–4 mg), reassess in 1 h", "severity": "moderate" },
-    { "min": 16, "max": 67, "label": "Severe withdrawal — high risk of seizures / delirium tremens. Aggressive benzodiazepine loading (consider phenobarbital), frequent reassessment, monitored bed / ICU", "severity": "high" }
+    {
+      "min": 0,
+      "max": 8,
+      "label": "Minimal / mild withdrawal — reassess q4–8 h; generally no medication needed",
+      "severity": "low"
+    },
+    {
+      "min": 9,
+      "max": 14,
+      "label": "Moderate withdrawal — give a benzodiazepine dose (e.g. diazepam 10–20 mg or lorazepam 2–4 mg), reassess in 1 h",
+      "severity": "moderate"
+    },
+    {
+      "min": 15,
+      "max": 67,
+      "label": "Severe withdrawal — high risk of seizures / delirium tremens. Aggressive benzodiazepine loading (consider phenobarbital), frequent reassessment, monitored bed / ICU",
+      "severity": "high"
+    }
   ],
   "notes": "Common thresholds: medicate at ≥ 8–10, reassess q1h until < 8–10 for 8 h then space out. CIWA does NOT capture autonomic instability well — a patient with a normal-ish score but tachycardia, hypertension, and fever may still be decompensating. Give thiamine before glucose; replace magnesium, potassium, phosphate.",
   "buildNote": "Additive, 10 items. Score range 0–67."

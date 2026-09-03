@@ -307,13 +307,13 @@
       "next_review_due": "2027-09-02"
     },
     "calculators/gi-renal-metabolic/refeeding-risk": {
-      "content_version": 1,
-      "hash": "0075a8076ad4bb64",
+      "content_version": 2,
+      "hash": "eaa599a7917de7e5",
       "path": "modules/calculators/gi-renal-metabolic/refeeding-risk.json",
       "contentType": "calculator",
       "section": "Calculators",
       "review_tier": 1,
-      "next_review_due": "2027-09-02"
+      "next_review_due": "2027-09-03"
     },
     "calculators/gi-renal-metabolic/rockall": {
       "content_version": 1,
@@ -370,8 +370,8 @@
       "next_review_due": "2027-09-02"
     },
     "calculators/icu-critical-care/improve-bleed": {
-      "content_version": 1,
-      "hash": "895647a4fb47e4d9",
+      "content_version": 2,
+      "hash": "04650fe140f301ec",
       "path": "modules/calculators/icu-critical-care/improve-bleed.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -604,13 +604,13 @@
       "next_review_due": "2026-11-30"
     },
     "calculators/sepsis-id/psi-port": {
-      "content_version": 1,
-      "hash": "d6147f430e9bffe9",
+      "content_version": 2,
+      "hash": "ad97001c05f9072e",
       "path": "modules/calculators/sepsis-id/psi-port.json",
       "contentType": "calculator",
       "section": "Calculators",
       "review_tier": 1,
-      "next_review_due": "2027-09-02"
+      "next_review_due": "2027-09-03"
     },
     "calculators/sepsis-id/qsofa": {
       "content_version": 1,
@@ -640,8 +640,8 @@
       "next_review_due": "2027-03-02"
     },
     "calculators/tox-withdrawal/ciwa-ar": {
-      "content_version": 1,
-      "hash": "ba897e871c305b94",
+      "content_version": 2,
+      "hash": "85b73096c0b744bc",
       "path": "modules/calculators/tox-withdrawal/ciwa-ar.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -1525,6 +1525,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "peds-module/pedi-tape-weight-zones": {
+      "content_version": 1,
+      "hash": "69bd38eb675a475d",
+      "path": "modules/peds-module/pedi-tape-weight-zones.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
+    },
     "peds-module/pediatric-appendicitis-score": {
       "content_version": 2,
       "hash": "983a9d7760661d0b",
@@ -1543,6 +1552,15 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "peds-module/peds-drip-concentrations": {
+      "content_version": 1,
+      "hash": "9b6d51b7e3fa894a",
+      "path": "modules/peds-module/peds-drip-concentrations.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
+    },
     "peds-module/peds-glasgow-coma-scale": {
       "content_version": 1,
       "hash": "607c848aaa650d3e",
@@ -1551,6 +1569,15 @@
       "section": "Peds Module",
       "review_tier": 1,
       "next_review_due": "2026-11-30"
+    },
+    "peds-module/peds-rsi-decision-card": {
+      "content_version": 1,
+      "hash": "1e1886d33c9eeb05",
+      "path": "modules/peds-module/peds-rsi-decision-card.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
     },
     "procedures/airway-management-flow": {
       "content_version": 2,
@@ -1641,6 +1668,15 @@
       "section": "Reference Library",
       "review_tier": "stable"
     },
+    "reference-library/abnormal-uterine-bleeding": {
+      "content_version": 1,
+      "hash": "53b98c0df1af122d",
+      "path": "modules/reference-library/abnormal-uterine-bleeding.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-03"
+    },
     "reference-library/acls-adult-cardiac-arrest": {
       "content_version": 2,
       "hash": "fa1b55f64de76fab",
@@ -1649,6 +1685,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-12-02"
+    },
+    "reference-library/acute-dyspnea-niv": {
+      "content_version": 1,
+      "hash": "7f8d5a2cb0c3c517",
+      "path": "modules/reference-library/acute-dyspnea-niv.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-03"
     },
     "reference-library/acute-ischemic-stroke": {
       "content_version": 1,
@@ -1685,6 +1730,33 @@
       "section": "Reference Library",
       "review_tier": 3,
       "next_review_due": "2027-03-02"
+    },
+    "reference-library/altered-mental-status": {
+      "content_version": 1,
+      "hash": "3c16982b18f67f51",
+      "path": "modules/reference-library/altered-mental-status.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-03"
+    },
+    "reference-library/anaphylaxis": {
+      "content_version": 1,
+      "hash": "e3bab1be6bbe452a",
+      "path": "modules/reference-library/anaphylaxis.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-03"
+    },
+    "reference-library/anesthesia-pocus": {
+      "content_version": 1,
+      "hash": "e24fec420ac6aacb",
+      "path": "modules/reference-library/anesthesia-pocus.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
     },
     "reference-library/anticoagulation-reversal": {
       "content_version": 5,
@@ -1731,6 +1803,24 @@
       "review_tier": 3,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/childhood-immunization-schedule": {
+      "content_version": 1,
+      "hash": "810fa2cee62177ce",
+      "path": "modules/reference-library/childhood-immunization-schedule.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-01-03"
+    },
+    "reference-library/contraception-methods": {
+      "content_version": 1,
+      "hash": "3e0242af4ffb67a6",
+      "path": "modules/reference-library/contraception-methods.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-03"
+    },
     "reference-library/contrast-associated-aki": {
       "content_version": 1,
       "hash": "ed050d8066281a1e",
@@ -1742,7 +1832,7 @@
     },
     "reference-library/csection-analgesia-prospect": {
       "content_version": 1,
-      "hash": "3e98a9c1d11e9b43",
+      "hash": "221bef6c19a87026",
       "path": "modules/reference-library/csection-analgesia-prospect.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1757,6 +1847,15 @@
       "section": "Reference Library",
       "review_tier": 3,
       "next_review_due": "2027-03-02"
+    },
+    "reference-library/drug-concentration-math": {
+      "content_version": 1,
+      "hash": "d967bfed8d938e41",
+      "path": "modules/reference-library/drug-concentration-math.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
     },
     "reference-library/ecg-library": {
       "content_version": 2,
@@ -1776,9 +1875,18 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/ectopic-pregnancy": {
+      "content_version": 1,
+      "hash": "a976ea9c8c51dd60",
+      "path": "modules/reference-library/ectopic-pregnancy.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-03"
+    },
     "reference-library/efm-fetal-heart-rate": {
       "content_version": 1,
-      "hash": "f0fffe97b664ab10",
+      "hash": "904e5063a8de002b",
       "path": "modules/reference-library/efm-fetal-heart-rate.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1787,7 +1895,7 @@
     },
     "reference-library/emergency-drugs-pregnancy": {
       "content_version": 1,
-      "hash": "c8d0cb373f20d128",
+      "hash": "e5e4f9378de9eb81",
       "path": "modules/reference-library/emergency-drugs-pregnancy.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1913,7 +2021,7 @@
     },
     "reference-library/maternal-cardiac-arrest": {
       "content_version": 1,
-      "hash": "2386f2510fa492aa",
+      "hash": "c73e5f674face6f4",
       "path": "modules/reference-library/maternal-cardiac-arrest.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1940,12 +2048,21 @@
     },
     "reference-library/obstetric-delivery-emergencies": {
       "content_version": 1,
-      "hash": "dc00692cbf9d3532",
+      "hash": "42e1211c4f0433f9",
       "path": "modules/reference-library/obstetric-delivery-emergencies.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2027-03-02"
+    },
+    "reference-library/ovarian-torsion": {
+      "content_version": 1,
+      "hash": "e11d97e171d6fa88",
+      "path": "modules/reference-library/ovarian-torsion.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-03"
     },
     "reference-library/padis-bundle": {
       "content_version": 1,
@@ -1983,9 +2100,18 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/pid-tubo-ovarian-abscess": {
+      "content_version": 1,
+      "hash": "a07dd04c9ce221d0",
+      "path": "modules/reference-library/pid-tubo-ovarian-abscess.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-03"
+    },
     "reference-library/postpartum-hemorrhage": {
       "content_version": 1,
-      "hash": "b4c90ed7e9c3f083",
+      "hash": "e70ebd1570396e8b",
       "path": "modules/reference-library/postpartum-hemorrhage.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2003,7 +2129,7 @@
     },
     "reference-library/preeclampsia-eclampsia-hellp": {
       "content_version": 1,
-      "hash": "8281b137ae42f047",
+      "hash": "c6bb25ab56cb2ead",
       "path": "modules/reference-library/preeclampsia-eclampsia-hellp.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2072,6 +2198,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-12-02"
+    },
+    "reference-library/surgical-antibiotic-prophylaxis": {
+      "content_version": 1,
+      "hash": "d07e1d06431b6600",
+      "path": "modules/reference-library/surgical-antibiotic-prophylaxis.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
     },
     "reference-library/teg-rotem-interpretation": {
       "content_version": 1,
