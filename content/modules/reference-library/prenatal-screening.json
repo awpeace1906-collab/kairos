@@ -1,0 +1,35 @@
+{
+  "id": "prenatal-screening",
+  "section": "Reference Library",
+  "category": "Obstetric & Gynecologic",
+  "title": "Prenatal Screening Schedule",
+  "aliases": ["prenatal labs", "aneuploidy screening", "cell-free DNA", "quad screen", "GBS swab", "anatomy ultrasound", "1-hour glucose challenge"],
+  "tags": ["prenatal care", "aneuploidy screening", "cfDNA", "GBS", "glucose challenge", "OB", "primary care"],
+  "keywords": ["first visit blood type Rh CBC rubella HBsAg HIV RPR", "10-13 weeks NT PAPP-A free beta-hCG cfDNA", "aspirin before 16 weeks preeclampsia screen", "15-20 weeks quad screen anatomy scan 18-22", "24-28 weeks 1-hr GCT 50 g RhoGAM", "35-37 weeks GBS vaginal-rectal swab", "elevated AFP neural tube defect"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2027-06-03",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — OB Pocket Guide: Prenatal Screening (ACOG 2024)",
+    "ACOG prenatal care and screening guidance"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — visit-by-visit screening table. Review against the current-year ACOG schedule before use." }],
+  "summary": "A visit-by-visit schedule of routine prenatal screening. Cell-free DNA is the most sensitive aneuploidy screen but is still a screen — a positive result needs diagnostic testing (CVS or amniocentesis). Start aspirin before 16 weeks if the preeclampsia screen or history warrants it.",
+  "body": [
+    { "type": "callout", "tone": "info", "text": "This is a reference snapshot. Screening recommendations, cfDNA indications, and GDM cut-offs vary by institution and change over time — confirm against your current-year local protocol." },
+    { "type": "table",
+      "columns": ["Timing", "Tests", "Notes"],
+      "rows": [
+        ["First visit", "Blood type / Rh + antibody screen, CBC, rubella IgG, hepatitis B surface antigen, HIV, RPR/VDRL, gonorrhoea & chlamydia, hepatitis C, varicella IgG, urinalysis + culture, Pap if due", "TSH if symptomatic or high-risk; TB testing if risk; early 1-h GCT if BMI ≥ 25 with risk factors"],
+        ["10–13 weeks", "Combined first-trimester screen (nuchal translucency + PAPP-A + free β-hCG); OR cell-free DNA (preferred by many for aneuploidy — screens T21, T18, T13, sex-chromosome aneuploidies)", "Offer diagnostic testing (CVS 10–13 wk, amniocentesis ≥ 15 wk) after a positive screen or for a structural anomaly"],
+        ["11–16 weeks", "Preeclampsia risk assessment (history ± MAP, uterine-artery Doppler, PAPP-A/PlGF)", "High risk → aspirin 81–150 mg/day started before 16 weeks"],
+        ["15–20 weeks", "Quad screen (AFP, hCG, uE3, inhibin A) if no cfDNA; MSAFP alone for neural-tube defects", "Elevated AFP: neural-tube defect, abdominal-wall defect, multiple gestation, or wrong dates"],
+        ["18–22 weeks", "Detailed fetal anatomy ultrasound", "Cervical length if a preterm-birth risk factor"],
+        ["24–28 weeks", "1-h 50 g glucose challenge (→ 3-h GTT if ≥ 140, some use ≥ 130); repeat CBC; Rh-negative unsensitised → anti-D at 28 wk (RhoGAM 300 mcg)", ""],
+        ["35–37 weeks", "GBS vaginal–rectal swab; confirm fetal presentation", "GBS-positive (or bacteriuria this pregnancy, or a prior GBS-affected infant) → intrapartum penicillin G"]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "hs-troponin-chest-pain",
+  "section": "Reference Library",
+  "category": "Cardiac / ECG",
+  "title": "hs-Troponin 0/1-h Chest Pain Pathway",
+  "aliases": ["high-sensitivity troponin", "hs-cTn 0/1h algorithm", "ESC rapid rule-out", "NSTEMI rule-in rule-out", "ACS management bundle", "ticagrelor prasugrel loading"],
+  "tags": ["chest pain", "high-sensitivity troponin", "NSTEMI", "ACS", "rule-out pathway", "ED"],
+  "keywords": ["hs-cTnI < 5 ng/L rule out delta < 4", ">= 52 ng/L rule in", "delta >= 6 ng/L at 1h rule in", "5-51 observe zone serial at 3h", "symptom onset >= 2 h HEART <= 3 no ischemic ECG", "aspirin 324 mg chewed", "ticagrelor 180 mg", "UFH 60 units/kg", "oxygen only if SpO2 < 90", "avoid morphine NSTEMI", "avoid nitro RV infarct PDE5"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2027-03-03",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — EM Pocket Guide: Chest Pain / hs-cTn Algorithm (ESC 2023, AHA 2025)",
+    "ESC 2023 ACS guideline; 2025 ACC/AHA ACS guideline; PLATO; DETO2X-AMI"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — the 0/1-h hs-cTnI rule-out/rule-in table with the mandatory discharge caveats, plus the ACS management bundle. STEMI-equivalent ECG patterns are in twelve-lead-stemi-criteria." }],
+  "summary": "The 0/1-hour high-sensitivity troponin algorithm safely rules NSTEMI in or out in an hour — but only with BOTH samples, an assay it was validated for, symptom onset ≥ 2 hours ago, a low clinical risk score, and no ischaemic ECG change. Thresholds are assay-specific: the values below are hs-cTnI (Abbott ARCHITECT) — confirm your local assay.",
+  "body": [
+    { "type": "callout", "tone": "warning", "text": "Not for standard (non-high-sensitivity) troponin. Not a substitute for the ECG — a STEMI or STEMI-equivalent goes to the cath lab regardless of troponin (see twelve-lead-stemi-criteria)." },
+    { "type": "heading", "level": 2, "text": "0/1-h hs-cTnI algorithm (Abbott ARCHITECT)" },
+    { "type": "table",
+      "columns": ["0-h value", "1-h change (Δ)", "Result"],
+      "rows": [
+        ["< 5 ng/L", "(single sample, if onset > 3 h)", "RULE OUT — < 1% 30-day MACE"],
+        ["< 12 ng/L", "Δ < 3 ng/L", "RULE OUT — NSTEMI excluded"],
+        ["≥ 52 ng/L", "any", "RULE IN — NSTEMI confirmed; admit + cardiology"],
+        ["any 0-h value", "Δ ≥ 6 ng/L", "RULE IN — NSTEMI regardless of the absolute value"],
+        ["5–51 ng/L", "Δ 3–5 ng/L (observe zone)", "OBSERVE — repeat troponin at 3 h; add a clinical risk score and re-examine the ECG"]
+      ]
+    },
+    { "type": "heading", "level": 3, "text": "Do NOT discharge on a rule-out unless ALL of:" },
+    { "type": "list", "items": [
+      "Symptom onset ≥ 2–3 h before the first sample (early presenters can have a falsely low initial value).",
+      "A low clinical risk score (e.g. HEART ≤ 3).",
+      "No new ischaemic ECG change (ST depression ≥ 0.5 mm, de Winter, Wellens, new LBBB).",
+      "No high-risk feature: ongoing rest pain > 20 min, exertional syncope, haemodynamic instability, new heart failure, a dynamic troponin in the observe zone."
+    ] },
+    { "type": "heading", "level": 2, "text": "ACS management bundle" },
+    { "type": "list", "items": [
+      "Aspirin 324 mg PO chewed (non-enteric) on suspicion — only true allergy or active haemorrhage contraindicates.",
+      "P2Y12 inhibitor: ticagrelor 180 mg (preferred; PLATO). Prasugrel 60 mg only if PCI is planned and no prior stroke/TIA, age < 75, weight ≥ 60 kg. Practice on ED pre-treatment before known coronary anatomy varies — often given while a STEMI transfer is in progress, less so for NSTEMI going to next-day angiography.",
+      "Anticoagulation: unfractionated heparin 60 units/kg IV bolus (max 4000) then 12 units/kg/h (max 1000/h); or enoxaparin; bivalirudin for HIT.",
+      "Oxygen ONLY if SpO₂ < 90% — hyperoxia increases infarct size in normoxic patients (DETO2X-AMI, AVOID). Target 94–98%.",
+      "Nitroglycerin SL 0.4 mg q5min ×3 for ongoing pain; IV for hypertensive emergency or flash pulmonary oedema. AVOID in a right-ventricular infarct (JVD + hypotension + clear lungs — preload-dependent) and within 24–48 h of a phosphodiesterase-5 inhibitor.",
+      "Avoid morphine in NSTEMI — it delays P2Y12 absorption and is associated with worse outcomes (CRUSADE). Use fentanyl 25–50 mcg IV if analgesia is needed.",
+      "On oral anticoagulation (e.g. AF): after PCI, drop the aspirin early and use dual therapy (anticoagulant + clopidogrel) — less bleeding, similar ischaemic protection (AUGUSTUS, ENTRUST-AF PCI)."
+    ] }
+  ]
+}

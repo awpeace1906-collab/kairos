@@ -1,0 +1,63 @@
+{
+  "id": "neonatal-growth-parameters",
+  "section": "Peds Module",
+  "category": "Neonatology",
+  "title": "Growth Parameters — Weight, Length, Head Circumference",
+  "aliases": ["weight gain trajectory", "double birth weight", "head circumference growth", "failure to thrive", "crossing percentiles", "growth chart red flags"],
+  "tags": ["growth", "weight gain", "head circumference", "failure to thrive", "well-child", "neonatology"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2027-09-03",
+  "review_tier": 1,
+  "sources": ["Critical Vector — Neonatology Pocket Guide: Growth Parameters", "WHO growth standards (0–2 y); CDC growth charts (> 2 y)"],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — expected trajectories for weight / length / head circumference, the growth-disorder differential by parameter, and the red flags." }],
+  "kind": "reference",
+  "purpose": "Expected growth trajectories and the thresholds that should prompt evaluation. Plot on a standardised chart and judge the TREND over time, not a single point — use the same chart consistently for a given child.",
+  "ageRange": "Birth to ~2 years (WHO); older children use CDC charts",
+  "sourceOfTruth": ["pedi-tape-weight-zones"],
+  "body": [
+    { "type": "heading", "level": 2, "text": "Weight" },
+    { "type": "table",
+      "columns": ["Age", "Expected gain", "Landmark"],
+      "rows": [
+        ["First 3–10 days", "Lose up to 7–10% of birth weight (physiologic)", "Regain birth weight by ~ 10–14 days"],
+        ["1–4 months", "~ 20–30 g/day (~ 0.6–0.9 kg/month)", "Double birth weight by ~ 4–5 months"],
+        ["5–8 months", "~ 15–20 g/day", ""],
+        ["9–12 months", "~ 10 g/day", "Triple birth weight by 1 year; quadruple by ~ 2 years"]
+      ]
+    },
+    { "type": "text", "text": "The doubling/tripling rules are teaching approximations, not a percentile standard — plot on the WHO chart for the actual assessment." },
+    { "type": "heading", "level": 2, "text": "Length / height" },
+    { "type": "list", "items": [
+      "Birth ~ 50 cm; 1 year ~ 75 cm (1.5× birth length); 4 years ~ 100 cm (2× birth length).",
+      "After age 4: ~ 5–6 cm/year until puberty, then a peak-puberty spurt of ~ 8–12 cm/year."
+    ] },
+    { "type": "heading", "level": 2, "text": "Head circumference" },
+    { "type": "table",
+      "columns": ["Age", "Value / rate"],
+      "rows": [
+        ["Birth", "33–37 cm (mean ~ 35)"],
+        ["0–3 months", "+ ~ 2 cm/month"],
+        ["4–6 months", "+ ~ 1 cm/month"],
+        ["7–12 months", "+ ~ 0.5 cm/month"],
+        ["1 year", "~ 47 cm"],
+        ["2 years", "~ 49 cm"]
+      ]
+    },
+    { "type": "text", "text": "Brain growth is fastest in the first 2 years then slows sharply — HC is not a 'doubling' parameter. Plot on an HC-for-age chart." },
+    { "type": "heading", "level": 2, "text": "Differential by parameter" },
+    { "type": "table",
+      "columns": ["Pattern", "Consider"],
+      "rows": [
+        ["Poor weight gain / failure to thrive", "Inadequate intake / malnutrition, IUGR, chronic GI/renal/cardiac/pulmonary disease, syndromic (Down, Turner), hypothyroidism, malignancy, psychosocial deprivation"],
+        ["Excess weight gain", "Overnutrition; Cushing; hypothyroidism; Prader-Willi"],
+        ["Short stature", "Familial; constitutional delay; Turner, achondroplasia; GH deficiency, hypothyroidism; chronic disease"],
+        ["Microcephaly", "Genetic; congenital (TORCH) infection; perinatal hypoxic injury; malnutrition; craniosynostosis"],
+        ["Macrocephaly", "Hydrocephalus; benign familial macrocephaly; tumour; metabolic storage disease; subdural collection"]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "Red flags: crossing down ≥ 2 major percentile lines; height < 3rd or > 97th percentile; no weight gain (or weight loss) over an interval where gain is expected; falling growth velocity; growth failure with developmental delay or signs of systemic disease." }
+  ],
+  "buildNote": "Trajectories per classical paediatric teaching; plotting standard is WHO 0–2 y / CDC > 2 y."
+}

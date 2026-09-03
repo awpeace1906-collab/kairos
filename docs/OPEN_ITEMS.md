@@ -347,6 +347,24 @@ Last updated: 2026-09-01
   1024 PNG, modern Xcode auto-scales) + `ASSETCATALOG_COMPILER_APPICON_NAME` in
   `project.yml`. The full rationale + size ladders are in the "Kairos Icon Study"
   artifact.
+- 2026-09-03 — **Pocket-guide tails batch (+21 modules).**
+  - OB (`Obstetric & Gynecologic`): `labor-progression` (Zhang curve + Bishop),
+    `induction-augmentation`, `preterm-labor`, `chronic-htn-gdm-pregnancy` (CHAP era),
+    `prenatal-screening`, `fetal-surveillance` (BPP + Doppler),
+    `bartholin-vulvar-emergencies`.
+  - Vent (`Resuscitation & Airway` / `ICU`): `status-asthmaticus-ventilation`,
+    `copd-invasive-ventilation`, `peep-fio2-ladder` (both ARDSNet ladders),
+    `advanced-ards-ventilation` (APRV / recruitment / intraop PEEP).
+  - EM: `post-intubation-management`, `hemorrhagic-shock-mtp` (ATLS class + MTP),
+    `efast-exam` (+ RUSH), `hs-troponin-chest-pain` (0/1-h algorithm + ACS bundle),
+    `trauma-team-activation` (+ CDC field triage).
+  - Neonatology (Peds Module): `neonatal-growth-parameters`,
+    `infant-development-feeding`, `prematurity-complications`,
+    `sga-lga-birth-injury`, `inborn-errors-metabolism`.
+  - Still-open seams: Neo `chromosomal` / `inheritance` / `devdelay`; Vent's ~30
+    deep mode-specific subsections (NAVA, PAV+, ASV, cross-manufacturer) —
+    specialist, low bedside yield. Anesthesia reference guide never parsed
+    (different HTML format) — its POCUS / drug-conc / abx sections were pulled by hand.
 
 ---
 

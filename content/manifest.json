@@ -1453,6 +1453,15 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "peds-module/inborn-errors-metabolism": {
+      "content_version": 1,
+      "hash": "fcb5ef54391e6493",
+      "path": "modules/peds-module/inborn-errors-metabolism.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
+    },
     "peds-module/infant-cpr-parameters": {
       "content_version": 1,
       "hash": "6b02057e5d414b57",
@@ -1462,6 +1471,15 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "peds-module/infant-development-feeding": {
+      "content_version": 1,
+      "hash": "e2d868780c39e0ce",
+      "path": "modules/peds-module/infant-development-feeding.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
+    },
     "peds-module/infant-of-diabetic-mother": {
       "content_version": 1,
       "hash": "5049b4895ee975fc",
@@ -1470,6 +1488,15 @@
       "section": "Peds Module",
       "review_tier": 1,
       "next_review_due": "2026-12-02"
+    },
+    "peds-module/neonatal-growth-parameters": {
+      "content_version": 1,
+      "hash": "ee84d4dd7ad6f9c0",
+      "path": "modules/peds-module/neonatal-growth-parameters.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
     },
     "peds-module/neonatal-hie-cooling": {
       "content_version": 1,
@@ -1578,6 +1605,24 @@
       "section": "Peds Module",
       "review_tier": 1,
       "next_review_due": "2027-03-03"
+    },
+    "peds-module/prematurity-complications": {
+      "content_version": 1,
+      "hash": "e66c733b5637a419",
+      "path": "modules/peds-module/prematurity-complications.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
+    },
+    "peds-module/sga-lga-birth-injury": {
+      "content_version": 1,
+      "hash": "791e1f0ee98538b3",
+      "path": "modules/peds-module/sga-lga-birth-injury.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
     },
     "procedures/airway-management-flow": {
       "content_version": 2,
@@ -1713,6 +1758,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/advanced-ards-ventilation": {
+      "content_version": 1,
+      "hash": "6dc5c39b29c7e54b",
+      "path": "modules/reference-library/advanced-ards-ventilation.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
+    },
     "reference-library/aki-staging-rrt": {
       "content_version": 1,
       "hash": "75ba3b4b3edf7340",
@@ -1776,6 +1830,15 @@
       "review_tier": 3,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/bartholin-vulvar-emergencies": {
+      "content_version": 1,
+      "hash": "9b8a874c2e127dd1",
+      "path": "modules/reference-library/bartholin-vulvar-emergencies.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
+    },
     "reference-library/beta-blocker-selectivity": {
       "content_version": 1,
       "hash": "5f5ba7ae451a0ab5",
@@ -1812,6 +1875,15 @@
       "review_tier": 3,
       "next_review_due": "2027-01-03"
     },
+    "reference-library/chronic-htn-gdm-pregnancy": {
+      "content_version": 1,
+      "hash": "e13a245825735947",
+      "path": "modules/reference-library/chronic-htn-gdm-pregnancy.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
+    },
     "reference-library/contraception-methods": {
       "content_version": 1,
       "hash": "3e0242af4ffb67a6",
@@ -1829,6 +1901,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2027-03-02"
+    },
+    "reference-library/copd-invasive-ventilation": {
+      "content_version": 1,
+      "hash": "824768afdcca729f",
+      "path": "modules/reference-library/copd-invasive-ventilation.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
     },
     "reference-library/csection-analgesia-prospect": {
       "content_version": 1,
@@ -1884,6 +1965,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-03"
     },
+    "reference-library/efast-exam": {
+      "content_version": 1,
+      "hash": "d8a9fc94a642463c",
+      "path": "modules/reference-library/efast-exam.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
+    },
     "reference-library/efm-fetal-heart-rate": {
       "content_version": 1,
       "hash": "904e5063a8de002b",
@@ -1938,6 +2028,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/fetal-surveillance": {
+      "content_version": 1,
+      "hash": "382a16d5b715887e",
+      "path": "modules/reference-library/fetal-surveillance.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
+    },
     "reference-library/heart-failure-continuum": {
       "content_version": 1,
       "hash": "b299092adf7c1181",
@@ -1946,6 +2045,24 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-12-02"
+    },
+    "reference-library/hemorrhagic-shock-mtp": {
+      "content_version": 1,
+      "hash": "c36d90531d5d94ed",
+      "path": "modules/reference-library/hemorrhagic-shock-mtp.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
+    },
+    "reference-library/hs-troponin-chest-pain": {
+      "content_version": 1,
+      "hash": "b3472d05c68b1c1c",
+      "path": "modules/reference-library/hs-troponin-chest-pain.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
     },
     "reference-library/hyperkalemia-management": {
       "content_version": 1,
@@ -1983,6 +2100,15 @@
       "review_tier": 3,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/induction-augmentation": {
+      "content_version": 1,
+      "hash": "1094961b4e61e0df",
+      "path": "modules/reference-library/induction-augmentation.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
+    },
     "reference-library/iv-fluids": {
       "content_version": 2,
       "hash": "f3dbde99ad8989ec",
@@ -2000,6 +2126,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-11-30"
+    },
+    "reference-library/labor-progression": {
+      "content_version": 1,
+      "hash": "6ef08b3affb04fe3",
+      "path": "modules/reference-library/labor-progression.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
     },
     "reference-library/mac-values": {
       "content_version": 1,
@@ -2073,6 +2208,15 @@
       "review_tier": 3,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/peep-fio2-ladder": {
+      "content_version": 1,
+      "hash": "2359cee4e712e2a1",
+      "path": "modules/reference-library/peep-fio2-ladder.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
+    },
     "reference-library/perioperative-glycemic-management": {
       "content_version": 1,
       "hash": "161882cfaab7d472",
@@ -2109,6 +2253,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-03"
     },
+    "reference-library/post-intubation-management": {
+      "content_version": 1,
+      "hash": "708467bf7e03aa43",
+      "path": "modules/reference-library/post-intubation-management.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
+    },
     "reference-library/postpartum-hemorrhage": {
       "content_version": 1,
       "hash": "e70ebd1570396e8b",
@@ -2136,6 +2289,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/prenatal-screening": {
+      "content_version": 1,
+      "hash": "57c6c10ab96c63d3",
+      "path": "modules/reference-library/prenatal-screening.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 3,
+      "next_review_due": "2027-06-03"
+    },
     "reference-library/pressor-inotrope-reference": {
       "content_version": 1,
       "hash": "c534827746d2824c",
@@ -2144,6 +2306,15 @@
       "section": "Reference Library",
       "review_tier": 3,
       "next_review_due": "2026-12-02"
+    },
+    "reference-library/preterm-labor": {
+      "content_version": 1,
+      "hash": "1706bde62c9173dd",
+      "path": "modules/reference-library/preterm-labor.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
     },
     "reference-library/rsi-seven-ps": {
       "content_version": 1,
@@ -2190,6 +2361,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/status-asthmaticus-ventilation": {
+      "content_version": 1,
+      "hash": "c3fce7b4fc49be4a",
+      "path": "modules/reference-library/status-asthmaticus-ventilation.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-03"
+    },
     "reference-library/status-epilepticus-adult": {
       "content_version": 1,
       "hash": "934293792659ae30",
@@ -2234,6 +2414,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-12-02"
+    },
+    "reference-library/trauma-team-activation": {
+      "content_version": 1,
+      "hash": "28a4dcfb63d43914",
+      "path": "modules/reference-library/trauma-team-activation.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
     },
     "reference-library/twelve-lead-stemi-criteria": {
       "content_version": 2,

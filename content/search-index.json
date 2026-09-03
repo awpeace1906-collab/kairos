@@ -3442,6 +3442,83 @@
       "route": "/peds-module/neonatology/apgar-score"
     },
     {
+      "id": "infant-development-feeding",
+      "title": "Developmental Milestones & Infant Feeding",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "development",
+        "milestones",
+        "infant feeding",
+        "weaning",
+        "complementary feeding",
+        "well-child",
+        "neonatology"
+      ],
+      "keywords": [
+        "developmental milestones",
+        "CDC AAP 2022 milestones",
+        "classical milestones 50th percentile",
+        "infant feeding schedule",
+        "complementary feeding",
+        "early allergen introduction",
+        "foods to avoid first year"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/infant-development-feeding"
+    },
+    {
+      "id": "neonatal-growth-parameters",
+      "title": "Growth Parameters — Weight, Length, Head Circumference",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "growth",
+        "weight gain",
+        "head circumference",
+        "failure to thrive",
+        "well-child",
+        "neonatology"
+      ],
+      "keywords": [
+        "weight gain trajectory",
+        "double birth weight",
+        "head circumference growth",
+        "failure to thrive",
+        "crossing percentiles",
+        "growth chart red flags"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/neonatal-growth-parameters"
+    },
+    {
+      "id": "inborn-errors-metabolism",
+      "title": "Inborn Errors of Metabolism — Recognition & Workup",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "inborn errors of metabolism",
+        "hyperammonemia",
+        "metabolic acidosis",
+        "newborn screening",
+        "sepsis mimic",
+        "neonatology"
+      ],
+      "keywords": [
+        "IEM",
+        "metabolic crisis newborn",
+        "hyperammonemia",
+        "urea cycle disorder",
+        "organic acidemia",
+        "galactosemia",
+        "maple syrup urine disease",
+        "sepsis mimic",
+        "newborn screening"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/inborn-errors-metabolism"
+    },
+    {
       "id": "infant-of-diabetic-mother",
       "title": "Infant of a Diabetic Mother",
       "section": "Peds Module",
@@ -3583,6 +3660,32 @@
       "route": "/peds-module/neonatology/nrp-algorithm"
     },
     {
+      "id": "prematurity-complications",
+      "title": "Prematurity — Classification & Complications by System",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "prematurity",
+        "low birth weight",
+        "NICU",
+        "RDS",
+        "IVH",
+        "NEC",
+        "retinopathy of prematurity",
+        "neonatology"
+      ],
+      "keywords": [
+        "preterm classification",
+        "low birth weight VLBW ELBW",
+        "extremely preterm",
+        "problems of prematurity",
+        "New Ballard Score",
+        "NICU discharge criteria"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/prematurity-complications"
+    },
+    {
       "id": "neonatal-rds",
       "title": "Respiratory Distress Syndrome (RDS)",
       "section": "Peds Module",
@@ -3633,6 +3736,36 @@
       ],
       "contentType": "peds-tool",
       "route": "/peds-module/neonatology/newborn-routine-care"
+    },
+    {
+      "id": "sga-lga-birth-injury",
+      "title": "SGA / LGA & Birth Injury",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "SGA",
+        "IUGR",
+        "LGA",
+        "macrosomia",
+        "birth injury",
+        "brachial plexus palsy",
+        "subgaleal hemorrhage",
+        "neonatology"
+      ],
+      "keywords": [
+        "small for gestational age",
+        "IUGR FGR",
+        "symmetric asymmetric growth restriction",
+        "large for gestational age macrosomia",
+        "caput succedaneum",
+        "cephalhematoma",
+        "subgaleal hemorrhage",
+        "Erb palsy",
+        "Klumpke palsy",
+        "brachial plexus injury"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/sga-lga-birth-injury"
     },
     {
       "id": "brue-pathway",
@@ -4428,6 +4561,41 @@
       "route": "/reference-library/cardiac-ecg/heart-failure-continuum"
     },
     {
+      "id": "hs-troponin-chest-pain",
+      "title": "hs-Troponin 0/1-h Chest Pain Pathway",
+      "section": "Reference Library",
+      "category": "Cardiac / ECG",
+      "tags": [
+        "chest pain",
+        "high-sensitivity troponin",
+        "NSTEMI",
+        "ACS",
+        "rule-out pathway",
+        "ED"
+      ],
+      "keywords": [
+        "hs-cTnI < 5 ng/L rule out delta < 4",
+        ">= 52 ng/L rule in",
+        "delta >= 6 ng/L at 1h rule in",
+        "5-51 observe zone serial at 3h",
+        "symptom onset >= 2 h HEART <= 3 no ischemic ECG",
+        "aspirin 324 mg chewed",
+        "ticagrelor 180 mg",
+        "UFH 60 units/kg",
+        "oxygen only if SpO2 < 90",
+        "avoid morphine NSTEMI",
+        "avoid nitro RV infarct PDE5",
+        "high-sensitivity troponin",
+        "hs-cTn 0/1h algorithm",
+        "ESC rapid rule-out",
+        "NSTEMI rule-in rule-out",
+        "ACS management bundle",
+        "ticagrelor prasugrel loading"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/cardiac-ecg/hs-troponin-chest-pain"
+    },
+    {
       "id": "aki-staging-rrt",
       "title": "AKI Staging & Renal Replacement Therapy",
       "section": "Reference Library",
@@ -4763,6 +4931,37 @@
       "route": "/reference-library/critical-care/toxidromes-and-overdoses"
     },
     {
+      "id": "advanced-ards-ventilation",
+      "title": "Beyond Lung-Protective: APRV, Recruitment, Intraoperative PEEP",
+      "section": "Reference Library",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "ARDS",
+        "APRV",
+        "recruitment maneuver",
+        "PEEP titration",
+        "intraoperative ventilation",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "APRV Phigh Plow Thigh Tlow",
+        "Tlow terminate at 50-75% peak expiratory flow",
+        "Plow 0 does not mean zero PEEP",
+        "ART trial harm PEEP 45 peak 60",
+        "staircase recruitment cap 40-50",
+        "decremental PEEP trial",
+        "IMPROVE low tidal volume PROVHILO no benefit high PEEP RM",
+        "APRV setup",
+        "airway pressure release ventilation",
+        "BiVent",
+        "recruitment maneuver ART trial",
+        "intraoperative protective ventilation IMPROVE PROVHILO"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/icu-critical-care/advanced-ards-ventilation"
+    },
+    {
       "id": "childhood-immunization-schedule",
       "title": "Childhood & Adolescent Immunization Schedule",
       "section": "Reference Library",
@@ -4940,6 +5139,106 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/obstetric-gynecologic/abnormal-uterine-bleeding"
+    },
+    {
+      "id": "fetal-surveillance",
+      "title": "Antenatal Fetal Surveillance",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "antenatal testing",
+        "biophysical profile",
+        "Doppler",
+        "fetal growth restriction",
+        "oligohydramnios",
+        "OB"
+      ],
+      "keywords": [
+        "BPP 5 components NST breathing movement tone AFV",
+        "BPP 8-10 normal 6 equivocal <= 4 abnormal",
+        "AFI <= 5 oligohydramnios deliver >= 36 weeks",
+        "umbilical artery S/D ratio < 3 after 30 weeks",
+        "absent end-diastolic flow deliver >= 34 weeks",
+        "reversed end-diastolic flow deliver ASAP",
+        "FGR EFW < 10th percentile",
+        "severe FGR EFW < 3rd percentile",
+        "biophysical profile",
+        "BPP",
+        "modified BPP",
+        "umbilical artery Doppler",
+        "NST",
+        "amniotic fluid index",
+        "FGR monitoring",
+        "absent end-diastolic flow"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/fetal-surveillance"
+    },
+    {
+      "id": "bartholin-vulvar-emergencies",
+      "title": "Bartholin Abscess & Vulvar Emergencies",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "Bartholin abscess",
+        "Word catheter",
+        "vulvar hematoma",
+        "obstetric laceration",
+        "GYN",
+        "ED",
+        "OB"
+      ],
+      "keywords": [
+        "unilateral labial swelling 4 or 8 o'clock",
+        "I&D plus Word catheter 4-6 weeks",
+        "marsupialization for recurrence",
+        "biopsy wall if age >= 40 carcinoma",
+        "expanding vulvar hematoma > 5 cm to OR",
+        "identify apex of laceration first",
+        "4th degree repair rectal mucosa IAS EAS",
+        "Bartholin abscess",
+        "Word catheter",
+        "marsupialization",
+        "vulvar hematoma",
+        "postpartum vulvar hematoma",
+        "vaginal laceration repair",
+        "fourth-degree laceration"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/bartholin-vulvar-emergencies"
+    },
+    {
+      "id": "chronic-htn-gdm-pregnancy",
+      "title": "Chronic Hypertension & GDM in Pregnancy",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "chronic hypertension",
+        "gestational diabetes",
+        "aspirin prophylaxis",
+        "labetalol nifedipine methyldopa",
+        "OB",
+        "prenatal care"
+      ],
+      "keywords": [
+        "CHAP trial treat mild chronic HTN target < 140/90",
+        "labetalol nifedipine XL methyldopa",
+        "avoid ACEI ARB spironolactone",
+        "aspirin 81-150 mg before 16 weeks",
+        "GDM 1-hr 50 g GCT >= 140",
+        "3-hr GTT Carpenter-Coustan 95 180 155 140",
+        "GDM targets fasting < 95 1-hr < 140 2-hr < 120",
+        "diet-controlled deliver 40-41 weeks insulin 39-40 weeks",
+        "chronic hypertension pregnancy",
+        "CHAP trial",
+        "gestational diabetes",
+        "GDM",
+        "pregnancy BP target",
+        "aspirin preeclampsia prophylaxis",
+        "GDM glucose targets"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/chronic-htn-gdm-pregnancy"
     },
     {
       "id": "contraception-methods",
@@ -5126,6 +5425,72 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/obstetric-gynecologic/efm-fetal-heart-rate"
+    },
+    {
+      "id": "induction-augmentation",
+      "title": "Induction & Augmentation of Labor",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "induction of labor",
+        "cervical ripening",
+        "oxytocin",
+        "misoprostol",
+        "OB",
+        "L&D"
+      ],
+      "keywords": [
+        "misoprostol 25 mcg PV q3-6h",
+        "50 mcg PO q4h",
+        "dinoprostone 10 mg insert 12h",
+        "Foley 30-60 mL transcervical",
+        "oxytocin 0.5-2 mU/min titrate",
+        "tachysystole > 5 contractions per 10 min",
+        "no misoprostol with prior uterine surgery",
+        "ARRIVE 39 weeks elective",
+        "labor induction",
+        "cervical ripening",
+        "misoprostol induction",
+        "Cervidil dinoprostone",
+        "Foley balloon induction",
+        "oxytocin augmentation",
+        "ARRIVE trial",
+        "tachysystole"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/induction-augmentation"
+    },
+    {
+      "id": "labor-progression",
+      "title": "Labor Progression & Bishop Score",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "labor",
+        "labor dystocia",
+        "cesarean prevention",
+        "Bishop score",
+        "OB",
+        "L&D"
+      ],
+      "keywords": [
+        "active phase 6 cm not 4",
+        "0.5 cm/hr",
+        "active phase arrest 4 h adequate contractions 6 h inadequate",
+        "second stage 3 h nullip 4 h with epidural",
+        "latent phase arrest is not an indication for cesarean",
+        "Bishop >= 8 favourable",
+        "Bishop < 6 ripen first",
+        "labor curve",
+        "Zhang curve",
+        "active phase arrest",
+        "arrest of dilation",
+        "second stage arrest",
+        "Bishop score",
+        "prevention of primary cesarean"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/labor-progression"
     },
     {
       "id": "maternal-cardiac-arrest",
@@ -5332,6 +5697,75 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/obstetric-gynecologic/preeclampsia-eclampsia-hellp"
+    },
+    {
+      "id": "prenatal-screening",
+      "title": "Prenatal Screening Schedule",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "prenatal care",
+        "aneuploidy screening",
+        "cfDNA",
+        "GBS",
+        "glucose challenge",
+        "OB",
+        "primary care"
+      ],
+      "keywords": [
+        "first visit blood type Rh CBC rubella HBsAg HIV RPR",
+        "10-13 weeks NT PAPP-A free beta-hCG cfDNA",
+        "aspirin before 16 weeks preeclampsia screen",
+        "15-20 weeks quad screen anatomy scan 18-22",
+        "24-28 weeks 1-hr GCT 50 g RhoGAM",
+        "35-37 weeks GBS vaginal-rectal swab",
+        "elevated AFP neural tube defect",
+        "prenatal labs",
+        "aneuploidy screening",
+        "cell-free DNA",
+        "quad screen",
+        "GBS swab",
+        "anatomy ultrasound",
+        "1-hour glucose challenge"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/prenatal-screening"
+    },
+    {
+      "id": "preterm-labor",
+      "title": "Preterm Labor",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "preterm labor",
+        "antenatal steroids",
+        "magnesium sulfate",
+        "tocolysis",
+        "GBS prophylaxis",
+        "OB",
+        "L&D"
+      ],
+      "keywords": [
+        "contractions >= 4 per 20 min",
+        "cervical length < 20 mm TVUS",
+        "betamethasone 12 mg IM q24h x2",
+        "23-34 weeks steroids",
+        "late preterm 34-36 weeks steroids",
+        "magnesium 4-6 g load 1-2 g/hr < 32 weeks neuroprotection BEAM",
+        "tocolysis 48 hours only nifedipine indomethacin",
+        "GBS penicillin",
+        "17-OHP caproate weekly",
+        "PTL",
+        "threatened preterm labor",
+        "antenatal corticosteroids",
+        "betamethasone",
+        "magnesium neuroprotection",
+        "tocolysis",
+        "preterm birth prevention",
+        "vaginal progesterone"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/preterm-labor"
     },
     {
       "id": "anesthesia-pocus",
@@ -5971,6 +6405,75 @@
       "route": "/reference-library/resuscitation-airway/capnography"
     },
     {
+      "id": "efast-exam",
+      "title": "eFAST & the RUSH Exam",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "eFAST",
+        "POCUS",
+        "trauma",
+        "shock",
+        "pneumothorax",
+        "pericardial effusion",
+        "ED"
+      ],
+      "keywords": [
+        "6 views RUQ subxiphoid LUQ pelvis right lung left lung",
+        "free fluid unstable emergent surgery",
+        "free fluid stable CT",
+        "lung point 100% specific for pneumothorax",
+        "barcode sign M-mode",
+        "RUSH pump tank pipes",
+        "IVC < 1.5 cm collapsing hypovolaemia",
+        "negative eFAST does not exclude solid organ injury",
+        "eFAST",
+        "FAST exam",
+        "extended FAST",
+        "Morrison's pouch",
+        "RUSH protocol",
+        "undifferentiated shock ultrasound",
+        "IVC collapsibility"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/efast-exam"
+    },
+    {
+      "id": "hemorrhagic-shock-mtp",
+      "title": "Hemorrhagic Shock & Massive Transfusion",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "hemorrhagic shock",
+        "massive transfusion",
+        "trauma",
+        "tranexamic acid",
+        "damage control resuscitation",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "class I-IV blood loss HR BP mental status",
+        "activate MTP >= 3 units in 1 hr or >= 10 in 24 hr",
+        "pRBC FFP platelets 1:1:1",
+        "TXA 1 g within 3 h then 1 g over 8 h",
+        "calcium chloride 1 g after every 4 units",
+        "fibrinogen > 200 cryoprecipitate",
+        "platelets >= 50k >= 100k if TBI",
+        "permissive hypotension SBP 80-90 except TBI MAP >= 80",
+        "ATLS hemorrhage class",
+        "massive transfusion protocol",
+        "MTP",
+        "1:1:1 transfusion",
+        "PROPPR",
+        "TXA CRASH-2",
+        "permissive hypotension",
+        "calcium in massive transfusion"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/hemorrhagic-shock-mtp"
+    },
+    {
       "id": "hyperosmolar-therapy",
       "title": "Hyperosmolar Therapy — HTS vs Mannitol",
       "section": "Reference Library",
@@ -6002,6 +6505,35 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/resuscitation-airway/hyperosmolar-therapy"
+    },
+    {
+      "id": "copd-invasive-ventilation",
+      "title": "Invasive Ventilation in COPD",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "COPD",
+        "mechanical ventilation",
+        "auto-PEEP",
+        "permissive hypercapnia",
+        "obstructive physiology",
+        "ICU"
+      ],
+      "keywords": [
+        "ventilate to the patient's own chronic baseline not PaCO2 40",
+        "match extrinsic PEEP to 70-85% of intrinsic auto-PEEP",
+        "eases triggering work",
+        "avoid post-hypercapnic alkalosis",
+        "prioritise expiratory time",
+        "watch flow-volume waveform return to baseline",
+        "COPD ventilator settings",
+        "AECOPD intubated",
+        "permissive hypercapnia COPD",
+        "matching extrinsic PEEP to auto-PEEP",
+        "post-hypercapnic alkalosis"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/copd-invasive-ventilation"
     },
     {
       "id": "iv-fluids",
@@ -6086,6 +6618,34 @@
       "route": "/reference-library/resuscitation-airway/erc-2025-pediatric-life-support"
     },
     {
+      "id": "peep-fio2-ladder",
+      "title": "PEEP / FiO₂ Ladders (ARDSNet)",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "ARDS",
+        "PEEP",
+        "FiO2",
+        "mechanical ventilation",
+        "lung-protective ventilation",
+        "ICU"
+      ],
+      "keywords": [
+        "oxygenation target PaO2 55-80 SpO2 88-95",
+        "lower-PEEP higher-FiO2 ladder",
+        "higher-PEEP lower-FiO2 ladder ALVEOLI LOVS",
+        "not interchangeable mid-course",
+        "move up the ladder together",
+        "ARDSNet PEEP table",
+        "lower PEEP higher FiO2",
+        "higher PEEP lower FiO2",
+        "PEEP titration ARDS",
+        "oxygenation goal SpO2 88-95"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/peep-fio2-ladder"
+    },
+    {
       "id": "peripheral-iv-vasopressors",
       "title": "Peripheral IV Vasopressors — How Risky, Really?",
       "section": "Reference Library",
@@ -6108,6 +6668,38 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/resuscitation-airway/peripheral-iv-vasopressors"
+    },
+    {
+      "id": "post-intubation-management",
+      "title": "Post-Intubation Management",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "post-intubation",
+        "mechanical ventilation",
+        "sedation",
+        "capnography",
+        "airway",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "AC/VC VT 6-8 mL/kg IBW rate 12-16",
+        "FiO2 1.0 wean to SpO2 94-99",
+        "PEEP 5",
+        "I:E 1:2 or 1:3-4 for obstructive",
+        "waveform capnography gold standard",
+        "tube tip 3-5 cm above carina",
+        "propofol dexmedetomidine fentanyl",
+        "post-intubation hypotension reduce PEEP exclude tension PTX treat hypovolaemia mainstem",
+        "after RSI",
+        "initial ventilator settings ED",
+        "post-intubation hypotension",
+        "confirm tube placement",
+        "post-intubation sedation"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/post-intubation-management"
     },
     {
       "id": "rsi-seven-ps",
@@ -6345,6 +6937,37 @@
       "route": "/reference-library/resuscitation-airway/trauma-primary-survey"
     },
     {
+      "id": "trauma-team-activation",
+      "title": "Trauma Team Activation & Field Triage",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "trauma activation",
+        "field triage",
+        "geriatric trauma",
+        "prehospital",
+        "trauma system",
+        "ED"
+      ],
+      "keywords": [
+        "level 1 SBP < 90 GCS < 9 penetrating torso tourniquet",
+        "level 2 flail chest 2 long bone fractures ejection fall > 20 ft",
+        "level 3 age > 65 rollover screened",
+        "undertriage < 5% overtriage < 50%",
+        "age >= 65 SBP < 110 is instability not 90",
+        "anticoagulated minor head injury",
+        "peds SBP 70 + 2 x age",
+        "trauma activation criteria",
+        "full vs modified trauma team",
+        "ACS-COT criteria",
+        "CDC field triage guidelines",
+        "geriatric trauma triage",
+        "undertriage overtriage"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/trauma-team-activation"
+    },
+    {
       "id": "pressor-inotrope-reference",
       "title": "Vasopressors & Inotropes Reference",
       "section": "Reference Library",
@@ -6385,6 +7008,39 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/resuscitation-airway/pressor-inotrope-reference"
+    },
+    {
+      "id": "status-asthmaticus-ventilation",
+      "title": "Ventilating Status Asthmaticus",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "status asthmaticus",
+        "mechanical ventilation",
+        "permissive hypercapnia",
+        "auto-PEEP",
+        "obstructive physiology",
+        "ICU",
+        "ED"
+      ],
+      "keywords": [
+        "minimise minute ventilation not airway pressure",
+        "VT 5-8 mL/kg RR 10-14",
+        "high inspiratory flow 60-100 L/min",
+        "tolerate pH > 7.2",
+        "watch expiratory flow return to zero",
+        "plateau pressure surrogate not PIP",
+        "expiratory hold auto-PEEP",
+        "sedation paralysis to prevent fighting hypoventilation",
+        "status asthmaticus vent",
+        "near-fatal asthma ventilation",
+        "permissive hypercapnia asthma",
+        "controlled hypoventilation",
+        "auto-PEEP asthma",
+        "dynamic hyperinflation"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/status-asthmaticus-ventilation"
     },
     {
       "id": "ventilator-management",

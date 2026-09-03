@@ -1,0 +1,47 @@
+{
+  "id": "developmental-delay-evaluation",
+  "section": "Peds Module",
+  "category": "Neonatology",
+  "title": "Developmental Delay — Red Flags & Evaluation",
+  "aliases": ["developmental red flags", "global developmental delay", "developmental regression", "normal developmental variants", "toe walking", "developmental screening"],
+  "tags": ["developmental delay", "developmental surveillance", "regression", "cerebral palsy", "well-child", "neonatology"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2027-09-03",
+  "review_tier": 1,
+  "sources": ["Critical Vector — Neonatology Pocket Guide: Developmental Delay Evaluation", "AAP developmental surveillance and screening guidance (2020)"],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — hard red flags, common normal variants, and the stepwise evaluation." }],
+  "kind": "reference",
+  "purpose": "Separate the hard red flags (which prompt evaluation whichever milestone framework you use) from the common normal variants, then run the four-step work-up. Loss of previously acquired skills is ALWAYS abnormal.",
+  "ageRange": "Infant to school age",
+  "sourceOfTruth": ["infant-development-feeding"],
+  "body": [
+    { "type": "callout", "tone": "danger", "text": "Regression — loss of a previously acquired skill at any age — is always abnormal and needs prompt neurology/genetics/metabolic evaluation (consider a neurodegenerative or metabolic disorder, epileptic encephalopathy, or autism with regression)." },
+    { "type": "heading", "level": 2, "text": "Red flags (evaluate regardless of milestone framework)" },
+    { "type": "list", "items": [
+      "Head lag persisting at 4 months.",
+      "Not sitting without support by 9 months.",
+      "No hand-to-hand transfer of objects by 12 months.",
+      "Abnormal grasp (raking, not pincer) by 15 months.",
+      "Not walking independently by 18 months.",
+      "Loss of any previously acquired skill, at any age.",
+      "Nystagmus at any age; persistent hand preference before 12–18 months (suggests a contralateral hemiparesis)."
+    ] },
+    { "type": "heading", "level": 2, "text": "Generally normal variants" },
+    { "type": "list", "items": [
+      "Intermittent strabismus until ~ 4 months (persistent beyond 4 months → ophthalmology).",
+      "Toe walking up to ~ 3 years, if passively correctable and there are no other neurological signs.",
+      "Established hand preference after 24 months.",
+      "Developmental (physiologic) speech disfluency up to ~ 4 years."
+    ] },
+    { "type": "heading", "level": 2, "text": "Stepwise evaluation" },
+    { "type": "list", "items": [
+      "1. Confirm the delay — structured history, full examination, and a formal standardised screening tool (ASQ-3, M-CHAT for autism) — not a milestone checklist alone.",
+      "2. Define the affected domain(s) — isolated (one domain, e.g. motor only) vs global (≥ 2 domains). Global delay raises the priority of cerebral palsy, hypothyroidism, a genetic syndrome, or a metabolic disorder.",
+      "3. Search for a cause — review the newborn metabolic screen and growth chart, formal vision and hearing testing; then, guided by the picture: chromosomal microarray + Fragile X, targeted metabolic labs, thyroid function, creatine kinase (for a boy with motor delay — Duchenne), and MRI brain for global delay, microcephaly/macrocephaly, focal findings, seizures, or regression.",
+      "4. Manage in parallel with the work-up — refer to early-intervention services immediately (do not wait for a diagnosis), start targeted PT/OT/speech therapy, and arrange educational support."
+    ] }
+  ],
+  "buildNote": "Red flags + normal variants + the 4-step work-up; screening tools named, not milestone checklists."
+}
