@@ -7,9 +7,9 @@
   "tags": ["contrast", "AKI", "nephropathy", "prevention", "hydration", "PCI", "CT contrast", "cardiology", "nephrology", "ED", "ICU"],
   "keywords": ["Mehran risk score", "PRESERVE", "AMACING", "POSEIDON", "N-acetylcysteine", "sodium bicarbonate", "MACD", "iso-osmolar contrast", "RenalGuard"],
   "contentType": "reference",
-  "content_version": 1,
-  "last_reviewed": "2026-09-02",
-  "next_review_due": "2027-03-02",
+  "content_version": 2,
+  "last_reviewed": "2026-09-04",
+  "next_review_due": "2027-03-04",
   "review_tier": 1,
   "sources": [
     "Critical Vector — CI-AKI Prevention (verified vs PRESERVE, AMACING, POSEIDON, Mehran risk score)",
@@ -17,7 +17,10 @@
     "PRESERVE (Weisbord SD et al. NEJM 2018;n=5,177); AMACING (Nijssen EC et al. Lancet 2017;n=660); POSEIDON (Brar SS et al. Lancet 2014;n=396)",
     "Cigarroa RG et al. Maximum acceptable contrast dose (MACD) formula"
   ],
-  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV CI-AKI guide. Mehran score, the three trials, standard + LVEDP-guided hydration, drugs that work / don't, and the corrected MACD formula." }],
+  "changelog": [
+    { "version": 2, "date": "2026-09-04", "change": "Cross-linked the new mehran-ci-akin-score calculator (the score was described in prose here; now it also exists as an interactive calculator)." },
+    { "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV CI-AKI guide. Mehran score, the three trials, standard + LVEDP-guided hydration, drugs that work / don't, and the corrected MACD formula." }
+  ],
   "summary": "IV isotonic saline is the ONLY proven intervention. N-acetylcysteine and bicarbonate-over-saline do not work (PRESERVE). Risk-stratify before the case (Mehran + contrast-volume-to-limit ratio), hydrate, minimise contrast, use iso-osmolar agent, avoid unmatched forced diuresis.",
   "body": [
     { "type": "heading", "level": 2, "text": "Definition & who's at risk" },
@@ -79,6 +82,6 @@
       "7. Recheck creatinine at 48–72 h in at-risk patients before assuming they're in the clear."
     ] }
   ],
-  "related": ["iv-fluids", "septic-shock-resuscitation", "meld-na", "anion-gap"],
+  "related": ["mehran-ci-akin-score", "iv-fluids", "septic-shock-resuscitation", "meld-na", "anion-gap"],
   "buildNote": "Tier 1. The Mehran risk score is an additive-calculator candidate (integer weights + published risk bands). Rule 6 (metformin) is added from standard practice, not the CV source."
 }

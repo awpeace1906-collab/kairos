@@ -5,17 +5,22 @@
   "title": "Hemorrhagic Shock & Massive Transfusion",
   "aliases": ["ATLS hemorrhage class", "massive transfusion protocol", "MTP", "1:1:1 transfusion", "PROPPR", "TXA CRASH-2", "permissive hypotension", "calcium in massive transfusion"],
   "tags": ["hemorrhagic shock", "massive transfusion", "trauma", "tranexamic acid", "damage control resuscitation", "ED", "ICU"],
-  "keywords": ["class I-IV blood loss HR BP mental status", "activate MTP >= 3 units in 1 hr or >= 10 in 24 hr", "pRBC FFP platelets 1:1:1", "TXA 1 g within 3 h then 1 g over 8 h", "calcium chloride 1 g after every 4 units", "fibrinogen > 200 cryoprecipitate", "platelets >= 50k >= 100k if TBI", "permissive hypotension SBP 80-90 except TBI MAP >= 80"],
+  "keywords": ["class I-IV blood loss HR BP mental status", "activate MTP >= 3 units in 1 hr or >= 10 in 24 hr", "pRBC FFP platelets 1:1:1", "TXA 1 g within 3 h then 1 g over 8 h", "calcium chloride 1 g after every 4 units", "fibrinogen > 200 cryoprecipitate", "platelets >= 50k >= 100k if TBI", "permissive hypotension SBP 80-90 except TBI MAP >= 80", "freeze-dried plasma room temperature EZPLAZ", "balanced crystalloid sepsis vs saline TBI"],
   "contentType": "reference",
-  "content_version": 1,
-  "last_reviewed": "2026-09-03",
-  "next_review_due": "2027-03-03",
+  "content_version": 2,
+  "last_reviewed": "2026-09-04",
+  "next_review_due": "2027-03-04",
   "review_tier": 1,
   "sources": [
     "Critical Vector — EM Pocket Guide: Hemorrhagic Shock / MTP (ATLS 11th 2024)",
-    "PROPPR (JAMA 2015); CRASH-2 (Lancet 2010); ATLS 11th edition"
+    "Critical Vector — Maintaining Volemic Status in Hemorrhagic Shock (permissive hypotension, ratios, crystalloid choice, freeze-dried plasma; verified vs FDA.gov + primary trials, July 2026)",
+    "PROPPR (JAMA 2015); CRASH-2 (Lancet 2010); Bickell NEJM 1994; ATLS 11th edition",
+    "FDA — first freeze-dried plasma product licensed in the U.S. (Ezplaz), July 29 2026"
   ],
-  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — ATLS hemorrhage class table, MTP activation + ratio + adjuncts + targets, permissive hypotension." }],
+  "changelog": [
+    { "version": 2, "date": "2026-09-04", "change": "Added a 'when blood isn't available / austere settings' section — freeze-dried plasma (room-temperature, plasma-only, not a red-cell substitute) and crystalloid choice by population (balanced for sepsis; saline favoured in isolated TBI)." },
+    { "version": 1, "date": "2026-09-03", "change": "Initial entry — ATLS hemorrhage class table, MTP activation + ratio + adjuncts + targets, permissive hypotension." }
+  ],
   "summary": "Give balanced product early (1:1:1), tranexamic acid within 3 hours of injury, and calcium after every few units — citrate chelates calcium and hypocalcaemia is a killer. Permissive hypotension (SBP 80–90) until surgical control, EXCEPT in TBI where you keep MAP ≥ 80.",
   "body": [
     { "type": "heading", "level": 2, "text": "ATLS hemorrhage classes" },
@@ -43,6 +48,14 @@
         ["Reverse & prevent", "Reverse anticoagulants (PCC for warfarin/DOACs, idarucizumab for dabigatran); keep the patient warm (> 36 °C); correct acidosis — the lethal triad"]
       ]
     },
-    { "type": "text", "text": "Stop the bleeding: direct pressure, wound packing, a windlass tourniquet for a limb, a pelvic binder for an unstable pelvis, and early transfer to the operating room or interventional radiology. Viscoelastic testing (TEG/ROTEM) guides targeted component therapy where available." }
-  ]
+    { "type": "text", "text": "Stop the bleeding: direct pressure, wound packing, a windlass tourniquet for a limb, a pelvic binder for an unstable pelvis, and early transfer to the operating room or interventional radiology. Viscoelastic testing (TEG/ROTEM) guides targeted component therapy where available." },
+    { "type": "heading", "level": 2, "text": "When blood isn't available yet — austere / prehospital" },
+    { "type": "list", "items": [
+      "Freeze-dried (lyophilised) plasma — room-temperature stable, no cold chain or thaw, reconstitutes in ~1 min; supplied as group AB or group A low-titre anti-B so it can be given before the recipient's type is known. First US-licensed product (Ezplaz) July 2026; long-standing NATO/French-military use. It is plasma ONLY — it restores clotting factors and volume but NOT oxygen-carrying capacity, so it complements red cells / whole blood, it does not replace them.",
+      "Crystalloid choice is population-specific, not universal: balanced solutions (Hartmann's, Plasma-Lyte) are the sepsis-driven default and reduce mortality vs saline there; in isolated traumatic brain injury, saline (and starch) outperformed balanced fluids and albumin — the opposite direction — so reach for 0.9% saline when TBI dominates. Albumin is specifically avoided in TBI (SAFE).",
+      "Whichever fluid: small aliquots titrated to a radial pulse / mentation (or SBP > 90 with TBI), warmed, and only as a bridge to blood products and haemorrhage control — crystalloid-heavy resuscitation drives dilutional coagulopathy, hypothermia and acidosis."
+    ] },
+    { "type": "text", "text": "Whether prehospital plasma of any kind improves survival is genuinely contested (PAMPer positive; COMBAT and RePHILL negative) — the benefit, where real, concentrates in transport times over ~20 minutes. Treat it as reasonable in long-transport / resource-limited settings, not as established for every profile." }
+  ],
+  "related": ["blood-products", "iv-fluids", "teg-rotem-interpretation", "trauma-team-activation", "efast-exam"]
 }
