@@ -1,7 +1,7 @@
 {
   "id": "ketamine",
   "section": "Drug & Dosing Cards",
-  "category": "AnesCalc — Induction Agents",
+  "category": "Induction & Sedation Agents",
   "title": "Ketamine",
   "aliases": [
     "Ketalar"
@@ -13,14 +13,21 @@
     "ketamine"
   ],
   "contentType": "anesthesia-drug-card",
-  "content_version": 1,
-  "last_reviewed": "2026-09-01",
-  "next_review_due": "2026-12-01",
+  "content_version": 2,
+  "last_reviewed": "2026-09-04",
+  "next_review_due": "2027-03-04",
   "review_tier": 1,
   "sources": [
-    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01",
+    "Pamplin J, Fisher AD, Penny A, et al. Analgesia and Sedation Management During Prolonged Field Care. Joint Trauma System CPG ID: 61. 1 April 2017",
+    "Remley M, Loos P, Riesberg J, et al. Prolonged Casualty Care Guidelines. Joint Trauma System CPG ID: 91. 21 Dec 2021, rapid update June 2023"
   ],
   "changelog": [
+    {
+      "version": 2,
+      "date": "2026-09-04",
+      "change": "Added the prolonged sedation infusion (JTS PCC protocol): loading dose, starting rate, mix concentration, titration step, and the one-drug-per-bag / RASS-monitoring cautions."
+    },
     {
       "version": 1,
       "date": "2026-09-01",
@@ -34,15 +41,17 @@
   "mechanism": "Non-competitive NMDA receptor antagonist → dissociative anesthesia. Also activates σ, opioid, and muscarinic receptors. Sympathomimetic via indirect catecholamine release. Bronchodilator via β-adrenergic pathway.",
   "onset": "IV ~30 sec; IM 3–4 min; IN 5–10 min",
   "duration": "IV 10–15 min; IM 15–25 min",
-  "dosing": "Induction (IV): 1–2 mg/kg\nInduction (IM): 4–6 mg/kg\nTIVA adjunct infusion: 0.1–0.5 mg/kg/hr\nSub-dissociative analgesia bolus: 0.1–0.5 mg/kg IV\nSub-dissociative infusion (OIH-sparing): 0.15 mg/kg/hr\nPediatric intranasal: 3–5 mg/kg",
+  "dosing": "Induction (IV): 1–2 mg/kg\nInduction (IM): 4–6 mg/kg\nTIVA adjunct infusion: 0.1–0.5 mg/kg/hr\nSub-dissociative analgesia bolus: 0.1–0.5 mg/kg IV\nSub-dissociative infusion (OIH-sparing): 0.15 mg/kg/hr\nPediatric intranasal: 3–5 mg/kg\nProlonged sedation infusion (mechanically ventilated / prolonged casualty care, JTS CPG 61): load 1 mg/kg IV/IO over 60 sec, then start 1.5 mg/kg/hr (25 mcg/kg/min). Mix 750 mg in 250 mL NS (3 mg/mL) — dial-flow rate at the starting dose ≈ weight (kg) ÷ 2, in mL/hr. Titrate ±0.25 mg/kg/hr at a time, reassessing before each step.",
   "cautions": [
     "AEs: Hypertension, tachycardia, emergence reactions/hallucinations (~12%), ↑ICP, ↑IOP, ↑secretions, nystagmus; laryngeal reflexes preserved but NOT protective",
     "CI: Conditions where ↑BP is hazardous — uncontrolled severe HTN, acute CAD (relative); hypersensitivity",
-    "Precautions: Pair with glycopyrrolate to reduce secretions; midazolam or dark quiet room reduces emergence reactions; OIH with prolonged high-dose infusion; pediatric neurotoxicity; GU complications with chronic use"
+    "Precautions: Pair with glycopyrrolate to reduce secretions; midazolam or dark quiet room reduces emergence reactions; OIH with prolonged high-dose infusion; pediatric neurotoxicity; GU complications with chronic use",
+    "On a prolonged sedation infusion: run ketamine alone — don't mix a second drug into the same bag (the in-solution interaction isn't well studied). If sedation stays inadequate on ketamine alone, get a critical-care consult before starting a second infusion; use opioid or midazolam PUSH doses, not a second drip, to smooth peaks and troughs. Respiratory depression becomes more likely above 1 mg/kg given quickly by fast IV/IO push."
   ],
   "pearls": [
     "Drug of choice for hemodynamically unstable induction (trauma, sepsis, hypovolemia). Bronchodilator — preferred in reactive airway disease.",
-    "NMDA antagonism reduces opioid consumption and may prevent OIH. Laryngeal reflexes maintained but NOT protective — aspiration risk persists."
+    "NMDA antagonism reduces opioid consumption and may prevent OIH. Laryngeal reflexes maintained but NOT protective — aspiration risk persists.",
+    "On an infusion, reassess sedation depth on a clinical scale (e.g. RASS) at regular intervals rather than relying on vitals alone; add capnography to standard monitoring (BP cuff, pulse oximeter, auscultation) if available."
   ],
   "reversal": "None (supportive)"
 }
