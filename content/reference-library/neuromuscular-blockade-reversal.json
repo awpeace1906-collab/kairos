@@ -1,0 +1,61 @@
+{
+  "id": "neuromuscular-blockade-reversal",
+  "section": "Reference Library",
+  "category": "Perioperative & Anesthesia",
+  "title": "Neuromuscular Blockade — Reversal & Monitoring",
+  "aliases": ["NMB reversal", "sugammadex dose", "neostigmine dose", "train-of-four", "TOF ratio 0.9", "residual paralysis", "PTC post-tetanic count", "quantitative TOF monitoring"],
+  "tags": ["neuromuscular blockade", "reversal", "sugammadex", "neostigmine", "rocuronium", "cisatracurium", "train-of-four", "residual paralysis", "anesthesia", "OR", "PACU"],
+  "keywords": ["sugammadex 2 mg/kg moderate", "4 mg/kg deep PTC 1-2", "16 mg/kg immediate", "neostigmine 15-40 mcg/kg minimal only", "glycopyrrolate 0.01 mg/kg", "TOF >= 0.9 quantitative before extubation", "cisatracurium neostigmine only"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — Anesthesia Reference: TOF Depth Classification + Reversal Dosing + NMB Duration (ASA 2023)",
+    "ASA 2023 Practice Guidelines for Monitoring and Antagonism of Neuromuscular Blockade"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — TOF-depth-based reversal choice and dosing, the NMB duration table, factors prolonging block, and the ASA 2023 quantitative-monitoring standard." }],
+  "summary": "Confirm a TOF ratio ≥ 0.9 on a QUANTITATIVE monitor before extubation — visual / tactile assessment cannot detect residual fade above a TOF count of 4. Sugammadex reverses aminosteroids (rocuronium, vecuronium) at any depth; neostigmine only works from a shallow / minimal block and never on a deep one.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Reversal by depth of block" },
+    { "type": "table",
+      "columns": ["Depth", "Objective marker", "Reversal"],
+      "rows": [
+        ["Deep", "TOF count 0, post-tetanic count (PTC) 1–2", "Sugammadex 4 mg/kg IV (roc/vec). Neostigmine CANNOT reverse a deep block. After roc 1.2 mg/kg RSI needing immediate reversal: sugammadex 16 mg/kg"],
+        ["Moderate", "TOF count 1–3", "Sugammadex 2 mg/kg IV (roc/vec). Neostigmine NOT recommended at this depth"],
+        ["Shallow", "TOF count 4 with visible fade", "Sugammadex 2 mg/kg (recommended). Neostigmine 15–40 mcg/kg is an acceptable alternative ONLY with quantitative confirmation that TOF ≥ 0.4 first"],
+        ["Minimal", "TOF ratio 0.4–0.9 (fade only detectable quantitatively)", "Sugammadex 2 mg/kg (preferred), OR neostigmine 15–40 mcg/kg + glycopyrrolate 0.01 mg/kg"],
+        ["Adequate recovery", "TOF ratio ≥ 0.9 (quantitative)", "No pharmacologic reversal needed — safe to extubate"]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "Cisatracurium and atracurium (benzylisoquinoliniums): sugammadex does NOT reverse them — use neostigmine 40–70 mcg/kg + glycopyrrolate (they also undergo Hofmann elimination). Sugammadex has no effect on succinylcholine either. Giving neostigmine when the patient is already fully recovered (TOF ≥ 0.9) can cause paradoxical weakness — don't reverse a block that isn't there." },
+    { "type": "heading", "level": 2, "text": "Reversal dosing quick reference" },
+    { "type": "table",
+      "columns": ["Agent", "Dose", "Time to TOF ≥ 0.9 / notes"],
+      "rows": [
+        ["Sugammadex — moderate (TOF 2+)", "2 mg/kg IV", "~2–3 min. Roc / vec only"],
+        ["Sugammadex — deep (PTC 1–2)", "4 mg/kg IV", "~3–5 min"],
+        ["Sugammadex — immediate / emergent", "16 mg/kg IV", "~3 min after roc 1.2 mg/kg — a CICO 'wake the patient' option"],
+        ["Neostigmine — minimal block only", "15–40 mcg/kg IV (max 5 mg)", "10–15+ min. ALWAYS pair with glycopyrrolate 0.01 mg/kg (ratio ~ 0.2 mg glyco : 1 mg neo) or atropine 0.02 mg/kg"],
+        ["Sugammadex caveats", "—", "Encapsulates aminosteroids only. Re-curarisation is rare but monitor ≥ 30 min. Renal failure → the complex accumulates (still generally preferred over cis + neostigmine, per 2024 data). Can bind hormonal contraceptives — advise a backup method for 7 days"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "NMB duration & what prolongs it" },
+    { "type": "table",
+      "columns": ["Drug", "Class", "Intubating dose", "Clinical duration"],
+      "rows": [
+        ["Succinylcholine", "Depolarising", "1.5 mg/kg", "6–10 min (spontaneous — pseudocholinesterase)"],
+        ["Rocuronium (RSI)", "Aminosteroid", "1.2 mg/kg", "60–90 min"],
+        ["Rocuronium (standard)", "Aminosteroid", "0.6 mg/kg", "30–45 min"],
+        ["Vecuronium", "Aminosteroid", "0.1 mg/kg", "25–40 min"],
+        ["Cisatracurium", "Benzylisoquinolinium", "0.15–0.2 mg/kg", "40–60 min (Hofmann — organ-independent)"],
+        ["Atracurium", "Benzylisoquinolinium", "0.5 mg/kg", "25–35 min"]
+      ]
+    },
+    { "type": "text", "text": "Prolongs the block: hypothermia, hypermagnesaemia (obstetrics!), acidosis, aminoglycoside antibiotics, volatile anaesthetics (potentiate), hepatic failure (aminosteroids), renal failure (vecuronium, pancuronium), and pseudocholinesterase deficiency (succinylcholine → phase-II / prolonged apnoea → support ventilation until spontaneous recovery; sugammadex does not help)." },
+    { "type": "callout", "tone": "info", "text": "ASA 2023 monitoring standard: use a QUANTITATIVE monitor (acceleromyography or EMG) at the adductor pollicis (ulnar nerve); calibrate before induction; confirm TOF ratio ≥ 0.9 before extubation. Qualitative visual / tactile assessment of fade is unreliable above a TOF count of 4 and is NOT an acceptable sole extubation criterion." }
+  ],
+  "related": ["rsi-seven-ps", "malignant-hyperthermia", "sedation-analgesia-agents", "antidotes-reversal-agents", "airway-management-flow"],
+  "buildNote": "Tier 1 — a genuine gap. The antidotes module has a shorter sugammadex/neostigmine entry; this is the anesthesia-depth-based version."
+}

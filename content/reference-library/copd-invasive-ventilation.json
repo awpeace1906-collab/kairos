@@ -1,0 +1,34 @@
+{
+  "id": "copd-invasive-ventilation",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Invasive Ventilation in COPD",
+  "aliases": ["COPD ventilator settings", "AECOPD intubated", "permissive hypercapnia COPD", "matching extrinsic PEEP to auto-PEEP", "post-hypercapnic alkalosis"],
+  "tags": ["COPD", "mechanical ventilation", "auto-PEEP", "permissive hypercapnia", "obstructive physiology", "ICU"],
+  "keywords": ["ventilate to the patient's own chronic baseline not PaCO2 40", "match extrinsic PEEP to 70-85% of intrinsic auto-PEEP", "eases triggering work", "avoid post-hypercapnic alkalosis", "prioritise expiratory time", "watch flow-volume waveform return to baseline"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2027-03-03",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — Vent Pocket Guide: Invasive Ventilation in COPD",
+    "Standard critical-care references on obstructive-lung ventilation"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — the two key moves (ventilate to baseline PaCO2, match extrinsic PEEP to auto-PEEP) and the monitoring emphasis." }],
+  "summary": "Obstructive physiology like status asthmaticus, but the TARGET is different: return the PaCO2 toward the patient's own chronic compensated baseline, not to 40. And — counter-intuitively — adding a modest amount of extrinsic PEEP eases the work of triggering without meaningfully worsening hyperinflation.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Two key moves" },
+    { "type": "list", "items": [
+      "Permissive hypercapnia to the patient's OWN baseline. A chronic PaCO2 of 55–65 with a compensated pH does not need to be ventilated to 40 — pushing to 'normal' causes a post-hypercapnic metabolic alkalosis (the retained bicarbonate is now unopposed), which impairs weaning and can cause seizures and arrhythmia. Set the minute ventilation to restore the usual pH, not a textbook CO2.",
+      "Match extrinsic PEEP to ~ 70–85% of the measured intrinsic (auto-) PEEP. This raises the alveolar pressure the patient must overcome to trigger a breath closer to the circuit pressure, reducing triggering work and missed triggers — without significantly adding to end-expiratory volume. Measure auto-PEEP with an expiratory hold and re-check after each change."
+    ] },
+    { "type": "heading", "level": 2, "text": "Settings" },
+    { "type": "list", "items": [
+      "Tidal volume 6–8 mL/kg PBW; rate low enough to allow full exhalation (start ~ 12–16, titrate down if auto-PEEP rises).",
+      "High inspiratory flow / short inspiratory time to lengthen expiratory time; I:E ≥ 1:3–1:4.",
+      "Bronchodilators, steroids, and treat the trigger (infection, heart failure, PE). Extubate to NIV early — a planned extubation to BiPAP in a hypercapnic COPD patient reduces re-intubation and mortality."
+    ] },
+    { "type": "callout", "tone": "info", "text": "Monitoring is the same as status asthmaticus — watch the flow–volume waveform for failure to return to baseline before the next breath, and prioritise expiratory time over chasing a normal blood gas. A hypotensive, hyperinflated COPD patient is managed the same way: disconnect, let them exhale, fluid, lower the rate." }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "lab-interpretation",
+  "section": "Reference Library",
+  "category": "Anticoagulation & Labs",
+  "title": "Lab Interpretation",
+  "aliases": ["electrolyte replacement", "CBC patterns", "critical values", "micro quick reference"],
+  "tags": ["labs", "electrolytes", "potassium replacement", "magnesium", "phosphate", "CBC", "ED", "ICU"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": ["Standard laboratory medicine; LabRef (model, not source)"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry — electrolyte replacement dosing needs review-tier 1." }],
+  "summary": "Common lab patterns, a micro quick-reference, and electrolyte replacement guidance.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "CBC patterns" },
+    { "type": "list", "items": [
+      "Leukocytosis with left shift → bacterial infection / stress demargination",
+      "Cytopenias → marrow suppression, sequestration, consumption, dilution",
+      "Anemia — work up by MCV: microcytic (iron deficiency, thalassemia, chronic disease), normocytic (acute blood loss, hemolysis, early chronic disease), macrocytic (B12/folate, alcohol, hypothyroid, MDS)"
+    ] },
+    { "type": "heading", "level": 2, "text": "Microbiology quick-reference" },
+    { "type": "text", "text": "Gram stain morphology → likely organism → empiric coverage CLASS (not specific drugs/doses — those live in the Empiric Antibiotic Guide and must reflect your antibiogram). Gram-positive cocci in clusters → Staphylococcus; in chains → Streptococcus / Enterococcus. Gram-negative rods → Enterobacterales / Pseudomonas. Gram-negative diplococci → Neisseria." },
+    { "type": "heading", "level": 2, "text": "Electrolyte replacement (adult, normal renal function)" },
+    { "type": "table",
+      "columns": ["Electrolyte", "Guidance"],
+      "rows": [
+        ["Potassium", "~10 mEq IV raises serum K⁺ by ~0.1 mEq/L. Peripheral infusion ≤ 10 mEq/h (max ~20 mEq/h central, on a monitor). Replace magnesium concurrently — you can't fix K⁺ while Mg²⁺ is low."],
+        ["Magnesium", "1-2 g IV MgSO₄ over 1-2 h for mild-moderate deficiency; 2 g over 15 min for torsades or severe symptomatic hypomagnesemia."],
+        ["Phosphate", "0.08-0.16 mmol/kg (≈ 15-30 mmol) IV over 4-6 h for moderate hypophosphatemia; recheck and re-dose. Watch for hypocalcemia and renal impairment."]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "All infusion-rate limits assume normal renal function and continuous monitoring for the higher rates. Halve replacement in renal impairment and recheck sooner." }
+  ]
+}

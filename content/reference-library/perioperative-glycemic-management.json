@@ -1,0 +1,45 @@
+{
+  "id": "perioperative-glycemic-management",
+  "section": "Reference Library",
+  "category": "Perioperative & Anesthesia",
+  "title": "Perioperative Hyperglycemia",
+  "aliases": ["periop glucose target", "stress hyperglycemia surgery", "SGLT2 hold surgery", "GLP-1 hold anesthesia", "basal insulin day of surgery", "diabetes meds perioperative"],
+  "tags": ["hyperglycemia", "perioperative", "glucose control", "insulin", "SGLT2 inhibitor", "GLP-1 agonist", "euglycemic DKA", "anesthesia", "OR"],
+  "keywords": ["100-180 mg/dL", "treat above 180", "euglycemic DKA", "sulfonylurea hold", "50-80% basal", "ADA Standards of Care 2026", "undiagnosed diabetes"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — Perioperative Hyperglycemia",
+    "ADA. Diabetes Care in the Hospital: Standards of Care in Diabetes 2026. Diabetes Care 2026;49(Suppl 1):S339-S351",
+    "Raiten JM et al. Perioperative management of SGLT2 inhibitors. J Cardiothorac Vasc Anesth 2024;38:57-66",
+    "Multisociety Clinical Practice Guidance for Safe Use of GLP-1 RAs in the Perioperative Period. Clin Gastroenterol Hepatol 2024"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV perioperative hyperglycemia guide. Targets, treatment threshold, and the medication-hold table incl. the reversed 2024 GLP-1 guidance." }],
+  "summary": "Target 100–180 mg/dL; treat sustained values > 180. Tighter than ~80–180 has no clear outcome advantage and a real hypoglycemia cost. Screen everyone — ~1/3 of hospital hyperglycemia occurs with no prior diabetes diagnosis, and that group carries the higher mortality signal. Frame it as physiologic stability, not glycemic perfection.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Targets" },
+    { "type": "list", "items": [
+      "Target range 100–180 mg/dL (ADA Standards of Care). Trigger treatment for sustained values > 180, not the first isolated elevated reading.",
+      "Do not chase tighter control in the OR — goals stricter than ~80–180 have not shown an outcome advantage and add hypoglycemia risk.",
+      "Hyperglycemia is part of the mechanism doing the damage — impaired neutrophil function and phagocytosis, osmotic diuresis with volume shifts, electrolyte derangement, and endothelial injury all track with the glycemic excursion."
+    ] },
+    { "type": "heading", "level": 2, "text": "Medication plan going into surgery" },
+    { "type": "table",
+      "columns": ["Class", "Plan", "Why"],
+      "rows": [
+        ["Sulfonylureas", "Hold the day of surgery", "Hypoglycemia risk while fasting"],
+        ["Meglitinides", "Hold the day of surgery", "Hypoglycemia risk while fasting"],
+        ["Prandial (bolus) insulin", "Hold or adjust if NPO", "Individualize to intake and measured glucose"],
+        ["Basal insulin", "Continue at 50–80% of the usual dose", "Balances ketosis prevention against hypoglycemia"],
+        ["SGLT2 inhibitors", "Hold 3–4 days preoperatively", "Euglycemic DKA risk — FDA and multispecialty guidance"],
+        ["GLP-1 receptor agonists", "Individualize — most patients can continue", "The 2023 ASA blanket-hold recommendation was reversed in late 2024; current multisociety guidance favors continuation for most, with attention to residual gastric contents / aspiration risk"]
+      ]
+    },
+    { "type": "callout", "tone": "info", "text": "The undiagnosed-diabetes group matters: an elevated glucose with no chronic adaptation behind it reflects a more acute, less-buffered physiologic insult — screen everyone perioperatively, not just known diabetics." }
+  ],
+  "related": ["icu-workflow", "peds-dka-management", "anion-gap", "corrected-sodium-hyperglycemia"],
+  "buildNote": "Tier 3. Companion to a future inpatient insulin-titration / DKA-in-adults module. `dex_polyuria_guide.html` (dexmedetomidine-associated polyuria) and `CV_Perioperative_Hyperglycemia`'s ICU counterpart could extend this."
+}

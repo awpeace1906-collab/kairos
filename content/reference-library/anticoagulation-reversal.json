@@ -1,0 +1,90 @@
+{
+  "id": "anticoagulation-reversal",
+  "section": "Reference Library",
+  "category": "Anticoagulation & Labs",
+  "title": "Anticoagulation Reversal Reference",
+  "aliases": ["anticoag reversal", "factor Xa reversal", "warfarin reversal", "DOAC reversal", "bleeding reversal", "4F-PCC", "protamine"],
+  "tags": ["bleeding", "reversal agent", "PCC", "andexanet", "idarucizumab", "vitamin K", "protamine", "TEG", "ROTEM", "life-threatening hemorrhage", "ED", "ICU"],
+  "keywords": ["4F-PCC", "Kcentra", "Praxbind", "AndexXa", "Ondexxya", "DDAVP"],
+  "contentType": "reference",
+  "content_version": 5,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — Bleeding, Reversal & Antiplatelet Decisions (v3, verified against FDA / NEJM / Lancet / JAMA / JACC)",
+    "PMC13110298; Bekka et al. Br J Clin Pharmacol 2025",
+    "Reference_Library_Content_Spec.md"
+  ],
+  "changelog": [
+    { "version": 5, "date": "2026-09-02", "change": "Rewritten from the CV Bleeding/Reversal guide: major-bleeding definition, cause classification, cascade map, weight/INR-based 4F-PCC dosing (25-50 U/kg), DOAC table with the Dec 2025 US andexanet withdrawal, TEG/ROTEM interpretation, the bedside algorithm, and the pitfalls (4F-PCC thrombosis, vit K overshoot, reflex platelets in antiplatelet ICH)." },
+    { "version": 4, "date": "2026-09-01", "change": "Added unfractionated heparin (protamine) and LMWH rows; added the periprocedural bridging pointer." },
+    { "version": 3, "date": "2026-08-30", "change": "Removed andexanet alfa as primary US recommendation following the Dec 22 2025 US market withdrawal; 4F-PCC now primary." },
+    { "version": 2, "date": "2026-06-15", "change": "Added idarucizumab split-dose detail." },
+    { "version": 1, "date": "2026-05-01", "change": "Initial entry." }
+  ],
+  "summary": "Reversal once bleeding starts. Andexanet alfa (Andexxa) is no longer available in the US as of 2026-12-22 — 4F-PCC / aPCC is the only US reversal path for apixaban, rivaroxaban, and edoxaban.",
+  "body": [
+    { "type": "callout", "tone": "warning", "text": "Andexanet alfa was voluntarily withdrawn from the US market on 2026-12-22 (postmarketing thromboembolic signal). It remains available outside the US (EU conditional approval; marketed as Ondexxya in the UK / Japan). A non-US build should branch on region." },
+    { "type": "heading", "level": 2, "text": "Is this major bleeding?" },
+    { "type": "text", "text": "Major bleeding = fatal; OR a critical site (intracranial, intraspinal, pericardial, retroperitoneal, intra-articular, intramuscular with compartment syndrome); OR a Hgb drop ≥ 2 g/dL; OR ≥ 2 units transfused. It's this threshold, not the visible volume, that triggers reversal. Then ask: (1) haemodynamically unstable? (2) cause — drug, dilution, consumption, or structural? (3) specific antidote available, or only supportive / nonspecific reversal?" },
+    { "type": "table",
+      "columns": ["Cause category", "Examples"],
+      "rows": [
+        ["Anticoagulant", "Warfarin, DOACs, heparin / LMWH"],
+        ["Antiplatelet", "Aspirin, P2Y12 inhibitors"],
+        ["Consumptive", "DIC, massive transfusion, sepsis"],
+        ["Factor deficiency", "Liver disease, hemophilia, vitamin K deficiency"],
+        ["Structural", "Trauma, ulcer, aneurysm, post-procedural"]
+      ]
+    },
+    { "type": "text", "text": "Where the drugs hit: warfarin blocks synthesis of II/VII/IX/X · dabigatran = direct thrombin (IIa) inhibitor · rivaroxaban/apixaban/edoxaban = direct factor Xa inhibitors · heparin/LMWH potentiate antithrombin (IIa + Xa) · aspirin = irreversible platelet COX-1 · P2Y12 inhibitors block ADP-mediated platelet activation." },
+    { "type": "heading", "level": 2, "text": "Warfarin / VKA" },
+    { "type": "list", "items": [
+      "4F-PCC, weight- and INR-based, 25-50 U/kg IV (fixed-dose protocols commonly ~1,500 IU). Preferred over 3F-PCC and FFP — corrects INR in minutes, lower volume.",
+      "PLUS vitamin K 5-10 mg IV over ~30 min — mandatory, not optional (factor VII in PCC has a ~6 h half-life; vitamin K sustains the reversal as PCC wears off).",
+      "Target INR < 1.5. Recheck INR q6-8h for 24-48 h; some patients need a repeat vitamin K dose."
+    ] },
+    { "type": "heading", "level": 2, "text": "DOACs (current US)" },
+    { "type": "table",
+      "columns": ["Drug", "US reversal", "Dose"],
+      "rows": [
+        ["Dabigatran", "Idarucizumab (Praxbind)", "5 g IV as two 2.5 g aliquots (repeat 5 g if bleeding persists with lab evidence of effect). Dabigatran is also dialyzable."],
+        ["Apixaban / rivaroxaban", "4F-PCC or aPCC", "25-50 U/kg IV — now the default; no FDA-approved specific antidote remains on the US market"],
+        ["Edoxaban", "4F-PCC or aPCC", "25-50 U/kg IV, off-label"]
+      ]
+    },
+    { "type": "text", "text": "Activated charcoal if the last DOAC dose was within 2-4 h. PT/aPTT do not rule out a DOAC effect." },
+    { "type": "heading", "level": 2, "text": "Heparins & antiplatelets" },
+    { "type": "list", "items": [
+      "Unfractionated heparin: protamine sulfate 1 mg per 100 units given in the last 2-3 h (max ~50 mg; slow IV — hypotension / anaphylactoid reaction with rapid push).",
+      "LMWH (enoxaparin): protamine ~60% effective — 1 mg per 1 mg of enoxaparin if within 8 h.",
+      "Antiplatelet-associated life-threatening bleeding with a recent dose: platelet transfusion 1 unit; DDAVP 0.3 mcg/kg IV improves platelet adhesion (useful in uremia / aspirin effect).",
+      "Do NOT reflexively transfuse platelets in antiplatelet-associated ICH — the intuitive move, and the wrong one (PATCH trial: harm signal)."
+    ] },
+    { "type": "heading", "level": 2, "text": "TEG / ROTEM — treat the deficit the trace shows" },
+    { "type": "table",
+      "columns": ["TEG", "ROTEM", "Reflects", "If abnormal, give"],
+      "rows": [
+        ["R", "CT", "Clotting factors", "FFP (or PCC)"],
+        ["K / Angle", "CFT / Angle", "Fibrinogen", "Cryoprecipitate / fibrinogen concentrate"],
+        ["MA", "MCF", "Platelet function / clot strength", "Platelets ± DDAVP"],
+        ["LY30", "LI30 / ML", "Fibrinolysis", "TXA / aminocaproic acid"]
+      ]
+    },
+    { "type": "text", "text": "Typical adult TEG: R 5-10 min, K 1-3 min, angle 53-72°, MA 50-70 mm, LY30 < 3% (use your lab's range)." },
+    { "type": "heading", "level": 2, "text": "Bedside algorithm" },
+    { "type": "list", "items": [
+      "1. Unstable? → activate massive transfusion, call for help.",
+      "2. Identify the agent and last-dose time; choose a specific antidote if one is still available.",
+      "3. Send TEG/ROTEM + PT/INR, aPTT, fibrinogen, platelets.",
+      "4. Treat the specific deficit the trace shows — not a blind shotgun of products.",
+      "5. Reassess the trace and labs after each intervention."
+    ] },
+    { "type": "callout", "tone": "danger", "text": "Pitfalls: 4F-PCC carries a real prothrombotic signal — restart anticoagulation as soon as safely possible (this postmarketing signal is what pulled andexanet from the US market). Vitamin K > 10 mg can make re-warfarinization difficult for days. Protamine → hypotension / anaphylactoid reaction, infuse slowly. The old andexanet 'interferes with heparin monitoring' warning no longer applies in the US — remove it from order sets." },
+    { "type": "heading", "level": 2, "text": "Periprocedural bridging" },
+    { "type": "text", "text": "Weigh the thrombotic risk of the underlying condition against the bleeding risk of the planned procedure — pulls conceptually from Caprini / Padua / IMPROVE in Calculators. For neuraxial and deep blocks, the timing thresholds are stricter and different — see the neuraxial-anticoagulation module." }
+  ],
+  "related": ["heart-score", "cha2ds2-vasc", "has-bled", "neuraxial-anticoagulation", "four-ts-hit"],
+  "buildNote": "Tier 1, tripwire-eligible — keep next_review_due current (this content changed twice in 2026 already). CV guide Part II (antiplatelet decisions: STEMI/PCI loading, NSTE-ACS, stroke DAPT, perioperative DAPT, CYP2C19) is a separate module to build."
+}

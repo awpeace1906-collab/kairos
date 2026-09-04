@@ -1,0 +1,87 @@
+{
+  "id": "iv-fluids",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "IV Fluids & Volume Resuscitation",
+  "aliases": ["crystalloid composition", "balanced vs saline", "normal saline vs LR", "Plasma-Lyte", "permissive hypotension", "PROPPR ratio", "prehospital plasma", "which fluid for sepsis vs TBI"],
+  "tags": ["IV fluids", "crystalloid", "colloid", "resuscitation", "normal saline", "lactated Ringer's", "Plasma-Lyte", "albumin", "hypertonic saline", "massive transfusion", "trauma", "sepsis", "TBI", "ED", "ICU"],
+  "keywords": ["hyperchloremic acidosis", "HES CHEST 6S", "Bickell 1994", "PROPPR 1:1:1", "PAMPer", "COMBAT", "RePHILL", "8 mEq/L/24h", "CS-LTOWB", "TCCC 21-01"],
+  "contentType": "reference",
+  "content_version": 2,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — IV Fluids & Volume Resuscitation (verified vs fluid-composition references, CHEST/6S, PROPPR, Bickell, PAMPer/COMBAT/RePHILL, TCCC)",
+    "CHEST (Myburgh JA et al. NEJM 2012;367:1901-1911); 6S (Perner A et al. NEJM 2012;367:124-134)",
+    "Bickell WH et al. NEJM 1994;331:1105-1109; PROPPR (Holcomb JB et al. JAMA 2015;313:471-482)",
+    "PAMPer (NEJM 2018); COMBAT (2018); RePHILL (Lancet Haematol 2022); sequential network meta-analysis of resuscitation fluids, Crit Care 2020"
+  ],
+  "changelog": [
+    { "version": 2, "date": "2026-09-02", "change": "Added Ezplaz — the first FDA-licensed US freeze-dried plasma (July 2026) — from the volemic-status-resuscitation guide." },
+    { "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV IV fluids guide: composition table, population-specific fluid choice, permissive hypotension, blood-product ratios, the contradictory prehospital-plasma record, and the traps." }
+  ],
+  "summary": "Match the fluid to the patient AND the setting. Balanced crystalloid is a sepsis-shaped default that does NOT transfer to TBI (saline wins there). D5W and half-normal are not resuscitation fluids. HES is avoided. Permissive hypotension outside TBI until hemorrhage is controlled.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Composition (mEq/L unless noted)" },
+    { "type": "table",
+      "columns": ["Fluid", "Na", "K", "Ca", "Cl", "Buffer", "Tonicity"],
+      "rows": [
+        ["Normal saline 0.9%", "154", "0", "0", "154", "none", "Isotonic"],
+        ["Ringer's lactate", "130", "4", "3", "109", "lactate 28", "Mildly hypotonic"],
+        ["Plasma-Lyte", "140", "5", "0", "98", "acetate 27, gluconate 23", "Isotonic"],
+        ["5% dextrose", "0", "0", "0", "0", "none", "Isotonic in bag, hypotonic in vivo"],
+        ["Half-normal saline 0.45%", "77", "0", "0", "77", "none", "Hypotonic"],
+        ["Hypertonic saline 3%", "513", "0", "0", "513", "none", "Hypertonic"],
+        ["Albumin 5%", "~130–160*", "0", "0", "~130–160*", "none", "Iso-oncotic"]
+      ]
+    },
+    { "type": "text", "text": "*Albumin electrolyte content varies by manufacturer/carrier — check the product label. Normal saline is not 'normal': its chloride (154) sits far above plasma (~100–106); large-volume harm is dose-dependent, from the chloride load causing a non-anion-gap metabolic acidosis. LR's potassium is NOT a reason to withhold it in hyperkalemia. Plasma-Lyte is calcium-free (runs with blood) and buffers via acetate metabolized in muscle, so it needs no liver." },
+
+    { "type": "heading", "level": 2, "text": "Best use / avoid" },
+    { "type": "table",
+      "columns": ["Fluid", "Best-use setting", "Avoid / contraindication"],
+      "rows": [
+        ["Normal saline", "TBI / raised ICP resuscitation; diluent for blood products; metabolic alkalosis; hypercalcemia", "Large-volume resuscitation (hyperchloremic acidosis); pre-existing hyperchloremia"],
+        ["Ringer's lactate", "General trauma/surgical resuscitation, burns, GI-loss replacement", "Head injury; same line as blood (Ca/citrate); severe hepatic failure (can't metabolize lactate)"],
+        ["Plasma-Lyte", "Resuscitation when a calcium-free / blood-compatible fluid is needed; hepatic or renal transplant", "None absolute — cost / formulary access is the practical limiter"],
+        ["5% dextrose", "Free-water deficit, hypernatremia correction, hypoglycemia, drug vehicle", "Resuscitation for volume/hemorrhage; cerebral edema; worsens hyponatremia"],
+        ["Half-normal saline", "Maintenance fluid; gradual free-water replacement", "ANY acute resuscitation indication; raised ICP"],
+        ["Hypertonic saline 3%", "Symptomatic hyponatremia; refractory raised ICP", "Correction faster than 8 mEq/L/24h in at-risk patients (ODS); routine resuscitation; volume overload"],
+        ["Albumin", "Large-volume paracentesis, SBP prophylaxis, hepatorenal syndrome", "Routine resuscitation (no outcome benefit over crystalloid); TBI (worse outcomes vs saline)"]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "Fluid choice is population-specific" },
+    { "type": "callout", "tone": "info", "text": "2020 sequential network meta-analysis: the 'best' fluid reverses by population. In SEPSIS, balanced crystalloids reduced mortality more than saline (OR 0.84) and HES (OR 0.81). In TRAUMATIC BRAIN INJURY that flips — saline and starch achieved lower mortality than albumin and balanced crystalloids, saline significantly outperforming albumin (OR 0.55). 'Always use balanced crystalloid' is a sepsis-shaped default; in TBI, saline's higher effective tonicity matters more than a balanced solution's acid-base profile." },
+
+    { "type": "heading", "level": 2, "text": "Permissive hypotension" },
+    { "type": "text", "text": "Bickell 1994 (n=598, penetrating torso trauma, prehospital SBP ≤ 90): delayed resuscitation (fluid withheld until operative control) had higher survival to discharge (70% vs 62%, p=0.04). Theory: aggressive crystalloid before hemorrhage control 'pops the clot' and drives dilutional coagulopathy, anemia, and hypothermia. Founding-trial limits: single-center, penetrating torso only, crystalloid (pre-dates blood-ratio evidence), and BP was actually similar between groups. Current practice: target SBP ~80–90 or MAP ~50 in pure hemorrhagic shock (EAST) until hemorrhage is controlled — with a carve-out for concurrent TBI, where a higher SBP target is needed." },
+
+    { "type": "heading", "level": 2, "text": "Blood-product ratios" },
+    { "type": "text", "text": "PROPPR (JAMA 2015): 1:1:1 vs 1:1:2 plasma:platelets:RBC — NO significant difference in 24-h or 30-day mortality, though more 1:1:1 patients achieved hemostasis and fewer died of exsanguination in the first 24 h. Balanced-ratio transfusion is widely adopted despite the negative primary endpoint, built substantially on observational data with real survivorship bias (you have to survive long enough to receive the later components). An earlier RCT (Nascimento 2013) trended toward HIGHER mortality with the balanced ratio." },
+
+    { "type": "heading", "level": 2, "text": "Prehospital plasma — a genuinely contradictory record" },
+    { "type": "table",
+      "columns": ["Trial", "Design", "Result"],
+      "rows": [
+        ["PAMPer (NEJM 2018)", "Cluster-RCT, air-medical, 2 U thawed plasma vs standard", "Positive — reduced 30-day mortality"],
+        ["COMBAT (2018)", "2 U thawed AB plasma vs crystalloid, ground EMS", "Negative — stopped early for futility; groups imbalanced (plasma arm sicker)"],
+        ["RePHILL (Lancet Haematol 2022)", "UK phase 3, PRBC + lyophilized plasma vs saline", "Negative on both primary outcomes (survival, lactate clearance); stopped early (COVID)"]
+      ]
+    },
+    { "type": "text", "text": "RePHILL is the trial that actually tested LYOPHILIZED plasma prehospital and was negative on both primary outcomes. A post hoc PAMPer+COMBAT pooling found the benefit concentrated in transport times > 20 min — the effect, where real, may be time/distance-dependent rather than universal. TCCC 21-01 (2021) designates cold-stored low-titer group O whole blood as the preferred resuscitation fluid for hemorrhagic shock and removed crystalloids from the recommended options; freeze-dried plasma is the room-temperature-stable fallback where the cold chain can't be maintained." },
+    { "type": "callout", "tone": "info", "text": "Ezplaz (Vascular Solutions / Teleflex) — the first FDA-licensed freeze-dried plasma in the US (July 29 2026). Room-temperature stable, no thaw, reconstitutes in ~1 min with the included sterile water, plastic packaging. Supplied as group AB and group A low-titer anti-B (selected to be safe across likely recipient types before the recipient's blood type is known — not 'give without regard to ABO'). Licensed for adults needing plasma when other plasma products are not available: active bleeding, massive transfusion, some bleeding patients on warfarin." },
+
+    { "type": "heading", "level": 2, "text": "The traps" },
+    { "type": "list", "items": [
+      "Starch (HES): avoid — kidney injury and mortality signal confirmed in CHEST and 6S.",
+      "D5W for 'dehydration': drops sodium — mostly free water once metabolized, the wrong fix for volume depletion.",
+      "Balanced fluid in head injury: use saline instead — the mild hypotonicity of LR / Plasma-Lyte can worsen cerebral edema.",
+      "Hypotonic fluid to resuscitate: won't fill the tank — distributes out of the vascular space too quickly.",
+      "Warm the fluid: TCCC targets 38 °C, ATLS 39 °C. A single 2 L room-temperature bolus drops core temp only ~0.3 °C — active warming is about the cumulative multi-liter scenario and cold-ambient-equilibrated bags."
+    ] }
+  ],
+  "related": ["hyperosmolar-therapy", "blood-products", "shock-classification", "holliday-segar-maintenance-fluids", "free-water-deficit"],
+  "buildNote": "Tier 3. `volemic_status_resuscitation.html` (fluid-responsiveness assessment — passive leg raise, IVC, dynamic indices, de-resuscitation) is a companion still to convert. Cross-links to the maintenance-fluid and free-water-deficit calculators."
+}

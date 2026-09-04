@@ -1,0 +1,39 @@
+{
+  "id": "anaphylaxis",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Anaphylaxis",
+  "aliases": ["anaphylaxis", "anaphylactic shock", "epinephrine IM", "biphasic anaphylaxis", "refractory anaphylaxis", "epinephrine infusion glucagon"],
+  "tags": ["anaphylaxis", "epinephrine", "shock", "airway", "allergy", "ED"],
+  "keywords": ["epinephrine 0.3-0.5 mg IM 1:1000 lateral thigh", "repeat q5-15 min", "no contraindication", "antihistamines do not treat anaphylaxis", "IV fluids 1-2 L", "epinephrine infusion 0.05-0.5 mcg/kg/min", "glucagon 1 mg beta-blocker", "observe 4-8 h biphasic", "discharge with auto-injector"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2026-12-03",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — EM Pocket Guide: Anaphylaxis (ACAAI 2024)",
+    "Joint Task Force Anaphylaxis Practice Parameter 2023 update"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — diagnostic criteria, the numbered treatment sequence, refractory management, and observation/disposition." }],
+  "summary": "Epinephrine IM is always first-line and has no contraindication in anaphylaxis — every minute of delay increases mortality. Antihistamines and steroids do NOT treat anaphylaxis; they are adjuncts only. Give epinephrine on clinical suspicion, before the picture is complete.",
+  "body": [
+    { "type": "callout", "tone": "danger", "text": "Do not give an antihistamine first and 'watch'. Epinephrine 0.3–0.5 mg IM in the lateral thigh, repeated every 5–15 min as needed, is the treatment." },
+    { "type": "heading", "level": 2, "text": "Diagnosis — any one criterion" },
+    { "type": "list", "items": [
+      "Acute skin/mucosal involvement PLUS respiratory compromise, OR hypotension, OR end-organ dysfunction.",
+      "Two or more body systems involved after likely allergen exposure (skin, respiratory, cardiovascular, GI, CNS).",
+      "Hypotension alone after a known allergen exposure."
+    ] },
+    { "type": "heading", "level": 2, "text": "Treatment" },
+    { "type": "list", "items": [
+      "1 — Epinephrine 0.3–0.5 mg IM (1:1000) into the lateral thigh; repeat q5–15 min as needed. No contraindication.",
+      "2 — Supine (or left lateral if vomiting / pregnant) with legs raised; high-flow O2; two large-bore IVs; 1–2 L crystalloid for hypotension.",
+      "3 — Diphenhydramine 25–50 mg IV — adjunct only, never a substitute for epinephrine (± an H2 blocker).",
+      "4 — Methylprednisolone 125 mg IV — aimed at biphasic-reaction prevention; not an acute treatment and evidence is weak.",
+      "5 — Refractory: epinephrine infusion 0.05–0.5 mcg/kg/min; add glucagon 1 mg IV if the patient is on a beta-blocker.",
+      "6 — Observe ≥ 4–8 h; 24 h if severe or high biphasic risk. Discharge with two epinephrine auto-injectors, an action plan, and allergy follow-up."
+    ] },
+    { "type": "callout", "tone": "warning", "text": "Refractory hypotension or stridor despite IM epinephrine → start the infusion early and prepare for a difficult airway (angioedema). Persistent bronchospasm: nebulised salbutamol. Persistent upper-airway oedema: nebulised epinephrine and early intubation by the most experienced operator." }
+  ]
+}

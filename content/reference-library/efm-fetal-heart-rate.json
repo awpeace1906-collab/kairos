@@ -1,0 +1,145 @@
+{
+  "id": "efm-fetal-heart-rate",
+  "section": "Reference Library",
+  "category": "Obstetric & Gynecologic",
+  "title": "Fetal Heart Rate Monitoring (NICHD)",
+  "aliases": [
+    "EFM",
+    "electronic fetal monitoring",
+    "NICHD category I II III",
+    "late decelerations",
+    "variable decelerations",
+    "intrauterine resuscitation",
+    "fetal scalp stimulation"
+  ],
+  "tags": [
+    "EFM",
+    "fetal heart rate",
+    "CTG",
+    "NICHD",
+    "decelerations",
+    "variability",
+    "intrauterine resuscitation",
+    "intrapartum",
+    "OB"
+  ],
+  "keywords": [
+    "baseline 110-160",
+    "moderate variability 6-25",
+    "Category III sinusoidal",
+    "absent variability + recurrent late decels",
+    "early = head compression",
+    "late = uteroplacental insufficiency",
+    "variable = cord compression",
+    "scalp stim acceleration = pH >= 7.20"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — OB Pocket Guide: EFM / Fetal Heart Rate (NICHD 2023)",
+    "NICHD / ACOG three-tier fetal heart rate interpretation system"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — the NICHD three-category system, deceleration types and their mechanism, and the intrauterine-resuscitation steps."
+    }
+  ],
+  "summary": "Category I = normal, no action. Category III = abnormal (sinusoidal, OR absent variability with recurrent late/variable decelerations or bradycardia) → intrauterine resuscitation while expediting delivery. Category II (everything in between) → evaluate and take corrective measures, reassess.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "NICHD categories"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Category",
+        "Definition",
+        "Action"
+      ],
+      "rows": [
+        [
+          "I — Normal",
+          "ALL of: baseline 110–160, moderate variability (6–25 bpm), NO late or variable decelerations. Early decelerations and accelerations may be present or absent",
+          "No action; routine monitoring"
+        ],
+        [
+          "II — Indeterminate",
+          "Any tracing not I or III — e.g. tachycardia, bradycardia with retained variability, minimal variability, absent variability without recurrent decelerations, recurrent variables with minimal/moderate variability, a prolonged deceleration 2–10 min",
+          "Evaluate and take corrective measures (intrauterine resuscitation); reassess. Persistent / worsening Category II near delivery is a reason to expedite"
+        ],
+        [
+          "III — Abnormal",
+          "Sinusoidal pattern, OR absent baseline variability WITH any of: recurrent late decelerations, recurrent variable decelerations, or bradycardia",
+          "Expedite delivery; intrauterine resuscitation while preparing. Associated with abnormal fetal acid-base status"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Deceleration types"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Type",
+        "Timing / shape",
+        "Mechanism / significance"
+      ],
+      "rows": [
+        [
+          "Early",
+          "Gradual onset; nadir coincides with the contraction peak; mirrors the contraction",
+          "Fetal head compression — BENIGN"
+        ],
+        [
+          "Late",
+          "Gradual onset; nadir AFTER the contraction peak; returns to baseline after the contraction ends",
+          "Uteroplacental insufficiency — significant; recurrent late decels drive management"
+        ],
+        [
+          "Variable",
+          "ABRUPT onset and offset (< 30 s to nadir); ≥ 15 bpm drop for ≥ 15 s; variable shape and timing",
+          "Umbilical cord compression — significance depends on depth, duration, and the retained variability"
+        ],
+        [
+          "Prolonged",
+          "≥ 15 bpm below baseline for ≥ 2 min but < 10 min",
+          "Any cause of acute hypoxia — cord prolapse, abruption, uterine tachysystole, maternal hypotension, rapid descent"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Intrauterine resuscitation (Category II–III)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "1. Reposition — left or right lateral decubitus; knee-chest if cord prolapse.",
+        "2. O2 10 L/min via non-rebreather (evidence is weak; brief use is reasonable).",
+        "3. IV fluid bolus 500 mL LR — especially for maternal hypotension or tachysystole.",
+        "4. STOP oxytocin and/or remove prostaglandin (dinoprostone) immediately.",
+        "5. Treat maternal hypotension — ephedrine 5–10 mg IV or phenylephrine 50–100 mcg IV; a tocolytic (terbutaline 0.25 mg SC) for tachysystole.",
+        "6. Fetal scalp stimulation — an acceleration of ≥ 15 bpm for ≥ 15 s predicts a scalp pH ≥ 7.20 (a reassuring response).",
+        "7. Amnioinfusion for recurrent variable decelerations from cord compression.",
+        "If the tracing does not recover promptly → move to delivery."
+      ]
+    }
+  ],
+  "related": [
+    "obstetric-delivery-emergencies",
+    "emergency-drugs-pregnancy",
+    "maternal-cardiac-arrest",
+    "preeclampsia-eclampsia-hellp"
+  ],
+  "buildNote": "Tier 3. Fetal scalp blood sampling and the STAN (ST-analysis) adjunct are further detail. Category II management algorithms (e.g. the Clark algorithm) could be an expansion."
+}

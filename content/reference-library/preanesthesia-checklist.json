@@ -1,0 +1,50 @@
+{
+  "id": "preanesthesia-checklist",
+  "section": "Reference Library",
+  "category": "Perioperative & Anesthesia",
+  "title": "Pre-Anesthesia Checklist & Fasting",
+  "aliases": ["MSMAID", "pre-induction checklist", "NPO guidelines ASA 2023", "fasting guidelines", "GLP-1 hold anesthesia", "carbohydrate loading", "machine check"],
+  "tags": ["pre-anesthesia", "checklist", "MSMAID", "NPO", "fasting", "aspiration", "GLP-1 agonist", "gastric ultrasound", "OR"],
+  "keywords": ["clear liquids 2 h", "breast milk 4 h", "formula 6 h", "light meal 6 h", "fatty meal 8 h", "GLP-1 hold 1 day / 1 week", "gastric POCUS", "carb drink up to 2 h"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — Anesthesia Reference: Pre-Induction Checklist (MSMAID) + NPO Guidelines",
+    "Gelb AW et al. WHO-WFSA International Standards for a Safe Practice of Anesthesia. Anesthesiology 2018; ASA 2023 fasting guidelines; SPAQI 2025 GLP-1 update"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — the MSMAID pre-induction check and the ASA 2023 fasting intervals, including the GLP-1 agonist and carbohydrate-loading guidance." }],
+  "summary": "MSMAID before every induction: Machine · Suction · Monitors · Airway · IV · Drugs. ASA 2023 fasting: clear liquids 2 h, breast milk 4 h, formula 6 h, light meal 6 h, fatty/full meal 8 h. GI symptoms on a GLP-1 agonist → treat as a full stomach regardless of the fast.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "MSMAID" },
+    { "type": "table",
+      "columns": ["", "Check"],
+      "rows": [
+        ["M — Machine", "Full anaesthesia-machine check (APSF protocol). Backup ventilation (self-inflating bag) + an O₂ source confirmed accessible."],
+        ["S — Suction", "Functional, within reach, Yankauer attached."],
+        ["M — Monitors", "SpO₂, NIBP, ECG, EtCO₂, temperature as standard. Adjuncts per case: arterial line, processed-EEG, and a QUANTITATIVE neuromuscular monitor (strongly recommended, ASA 2023) — calibrate before induction."],
+        ["A — Airway", "Primary AND backup plan confirmed. Mask, ETT / LMA, video + direct laryngoscope, bougie, stylet, tape. Optimise position (sniffing / ramp)."],
+        ["I — IV access", "Adequate gauge / number / flow confirmed; lines flushed and labelled."],
+        ["D — Drugs", "Induction agents drawn and labelled (ASTM colour code). Emergency drugs accessible: epinephrine, atropine, succinylcholine, a vasopressor (phenylephrine / ephedrine), and lipid emulsion if a block is planned. Know who to call for help."]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "ASA 2023 fasting intervals (elective, healthy patient)" },
+    { "type": "table",
+      "columns": ["Intake", "Minimum fast", "Notes"],
+      "rows": [
+        ["Clear liquids", "2 h", "Water, pulp-free juice, black coffee, clear tea, carbonated drinks. Carbohydrate-containing clear drinks (maltodextrin, sports drinks) are included — reduce hunger/thirst, no added aspiration risk"],
+        ["Breast milk", "4 h", "Infants"],
+        ["Infant formula", "6 h", ""],
+        ["Non-human milk / light meal", "6 h", "Toast + a clear liquid = a light meal"],
+        ["Full / fatty meal", "8 h", "May need longer — clinical judgement"],
+        ["Chewing gum", "No hold", "ASA 2023 — no increased aspiration risk; ask the patient to spit it out and not swallow excess saliva"]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "GLP-1 receptor agonists (semaglutide, tirzepatide, liraglutide) slow gastric emptying. ASA 2023: hold a daily agent for 1 day, a weekly agent for 1 week, before an elective procedure, plus standard fasting. SPAQI 2025 update: if the patient has ANY GI symptoms (nausea, vomiting, bloating, abdominal distension), treat as a full stomach regardless of the hold or fast — consider gastric POCUS pre-op, and use RSI / awake technique / regional as appropriate. Holding the drug does not by itself remove the aspiration risk, and stopping it can worsen glycaemic control — individualise with endocrinology." },
+    { "type": "text", "text": "Carbohydrate loading (ASA 2023, ERAS-endorsed): a clear carbohydrate drink (~50 g CHO) up to 2 h pre-op reduces insulin resistance, PONV, and anxiety — appropriate for elective non-diabetic adults." }
+  ],
+  "related": ["mac-values", "perioperative-glycemic-management", "rsi-seven-ps", "sedation-analgesia-agents", "procedural-sedation-workflow"],
+  "buildNote": "Tier 3, low churn. MSMAID could also be a Procedures workflow node. The full WHO surgical safety checklist (sign-in / time-out / sign-out) is a separate module."
+}

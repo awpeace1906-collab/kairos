@@ -1,0 +1,52 @@
+{
+  "id": "bartholin-vulvar-emergencies",
+  "section": "Reference Library",
+  "category": "Obstetric & Gynecologic",
+  "title": "Bartholin Abscess & Vulvar Emergencies",
+  "aliases": ["Bartholin abscess", "Word catheter", "marsupialization", "vulvar hematoma", "postpartum vulvar hematoma", "vaginal laceration repair", "fourth-degree laceration"],
+  "tags": ["Bartholin abscess", "Word catheter", "vulvar hematoma", "obstetric laceration", "GYN", "ED", "OB"],
+  "keywords": ["unilateral labial swelling 4 or 8 o'clock", "I&D plus Word catheter 4-6 weeks", "marsupialization for recurrence", "biopsy wall if age >= 40 carcinoma", "expanding vulvar hematoma > 5 cm to OR", "identify apex of laceration first", "4th degree repair rectal mucosa IAS EAS"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2027-03-03",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — OB Pocket Guide: Bartholin Abscess & Vulvar Emergencies (ACOG 2022)",
+    "ACOG / StatPearls on Bartholin gland cyst and abscess; obstetric laceration repair"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — Bartholin abscess (Word catheter vs marsupialisation, biopsy indication), postpartum vulvar haematoma, and layered laceration repair including the fourth-degree sequence." }],
+  "summary": "Drain a Bartholin abscess AND place a Word catheter — simple incision and drainage alone recurs. Send the cyst wall for pathology in any patient ≥ 40 (Bartholin gland carcinoma). An expanding postpartum vulvar haematoma goes to the operating room.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Bartholin gland abscess" },
+    { "type": "list", "items": [
+      "Unilateral, tender, fluctuant labial swelling at the 4 or 8 o'clock position of the introitus; a non-tender swelling without inflammation is a cyst, not an abscess.",
+      "Fever or spreading erythema suggests cellulitis or an abscess extending beyond the gland."
+    ] },
+    { "type": "table",
+      "columns": ["Option", "Detail"],
+      "rows": [
+        ["Word catheter (first-line)", "Stab incision on the mucosal (inner) surface; drain; insert the catheter and inflate the balloon with 2–3 mL saline. Leave 4–6 weeks for a re-epithelialised tract"],
+        ["Marsupialisation", "Sew the cyst-wall edges to the skin edges to create a permanent opening — preferred for recurrent abscesses"],
+        ["Simple I&D alone", "High recurrence — only if a Word catheter is unavailable"],
+        ["Antibiotics", "Not needed for an uncomplicated drained abscess. Add for cellulitis, immunocompromise, pregnancy, or SSTI risk; cover gonorrhoea/chlamydia + anaerobes if an STI is likely"],
+        ["Biopsy", "Age ≥ 40 — send the cyst wall for histology (Bartholin gland carcinoma risk)"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Postpartum vulvar / vaginal haematoma" },
+    { "type": "list", "items": [
+      "A rapidly expanding, exquisitely painful perineal or vulvar mass after delivery.",
+      "Infralevator (vulvar) — most common; supralevator — extends into the broad ligament, harder to detect, larger blood loss.",
+      "Small (< 5 cm), stable: ice, analgesia, close observation.",
+      "Expanding, or > 5 cm: operating room for evacuation, haemostasis (figure-of-eight sutures), and a drain. Interventional radiology for a supralevator haematoma or ongoing arterial bleeding.",
+      "Resuscitate and transfuse to the clinical picture — the visible haematoma underestimates the loss."
+    ] },
+    { "type": "heading", "level": 2, "text": "Vaginal laceration repair" },
+    { "type": "list", "items": [
+      "Identify the APEX of the laceration before starting — it may require examination under anaesthesia; a suture placed below the true apex leaves a bleeding vessel.",
+      "Repair in layers with a delayed-absorbable suture; ensure haemostasis.",
+      "Fourth-degree sequence: rectal mucosa (fine absorbable, submucosal) → internal anal sphincter → external anal sphincter (end-to-end or overlapping) → anal-sphincter-complex fascia → vaginal mucosa → perineal muscle → perineal skin.",
+      "Perform a rectal exam after the repair to confirm no suture has passed through the rectal mucosa. Single-dose antibiotics (e.g. a second-generation cephalosporin) reduce wound complications after a third/fourth-degree tear."
+    ] }
+  ]
+}

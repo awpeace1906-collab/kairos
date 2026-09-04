@@ -1,0 +1,49 @@
+{
+  "id": "altered-mental-status",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Altered Mental Status (AEIOU-TIPS)",
+  "aliases": ["altered mental status", "AMS", "AEIOU-TIPS", "encephalopathy workup", "coma differential", "delirium ED"],
+  "tags": ["altered mental status", "encephalopathy", "thiamine", "hypoglycemia", "Wernicke", "ED", "neurology"],
+  "keywords": ["fingerstick glucose first", "thiamine 100 mg IV before glucose", "AEIOU-TIPS differential", "Wernicke triad only 16%", "hepatic encephalopathy asterixis lactulose", "hypertensive encephalopathy lower MAP 20-25%", "non-convulsive status EEG", "SAH LP after negative CT", "meningitis antibiotics before CT", "elderly SDH from minor fall"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2026-12-03",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — EM Pocket Guide: Altered Mental Status",
+    "Standard EM references (AEIOU-TIPS mnemonic); ACEP clinical policy on altered mental status"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — first moves, the AEIOU-TIPS differential with workup, and the can't-miss conditions table + pearls." }],
+  "summary": "First move is always a fingerstick glucose. In anyone malnourished, alcohol-dependent, or where there is any doubt, give thiamine 100 mg IV BEFORE glucose. Never assume 'psychiatric' or 'baseline' — organic causes are missed daily in patients labelled frequent fliers.",
+  "body": [
+    { "type": "callout", "tone": "danger", "text": "Fingerstick glucose first. If malnourished / alcohol-dependent / uncertain: thiamine 100 mg IV before dextrose — a glucose load in a thiamine-depleted patient can precipitate Wernicke's." },
+    { "type": "heading", "level": 2, "text": "AEIOU-TIPS" },
+    { "type": "table",
+      "columns": ["", "Key causes", "Workup / pearl"],
+      "rows": [
+        ["A — Alcohol", "Intoxication; Wernicke's; withdrawal", "Level, thiamine, LFTs; tremor + tachycardia = withdrawal; seizure risk peaks 24–48 h"],
+        ["E — Epilepsy / Endocrine", "Postictal; non-convulsive SE; glucose extremes; thyroid storm; myxoedema; Addisonian crisis", "Glucose; TSH/T4; cortisol; EEG if postictal not clearing by 30 min"],
+        ["I — Insulin / Ingestion", "Hypoglycaemia; benzos, opioids, TCAs, salicylates; toxidromes", "Glucose; paracetamol + salicylate levels; carboxyhaemoglobin"],
+        ["O — Oxygen", "Hypoxia; hypercarbia; CO; cyanide", "ABG + CO-oximetry; SpO2 unreliable with CO; high-flow O2 now"],
+        ["U — Uraemia", "Renal failure; hepatic encephalopathy (asterixis, ↑ NH3)", "BMP; ammonia; LFTs; lactulose"],
+        ["T — Trauma / Temp", "TBI; ICH; subdural (delayed in the elderly after a minor fall); hypo/hyperthermia", "Non-contrast head CT; rectal temp"],
+        ["I — Infection", "Meningitis; encephalitis; septic encephalopathy; abscess; UTI in the elderly", "LP if no focal deficit / papilloedema; empiric antibiotics BEFORE CT if bacterial meningitis is likely"],
+        ["P — Psychiatric", "Psychosis; catatonia; conversion", "Diagnosis of exclusion — rule out organic causes first"],
+        ["S — Stroke / Structural", "Ischaemic stroke (esp. posterior); ICH; SAH (thunderclap); CNS mass", "Head CT; CTA if LVO concern; LP if CT negative + thunderclap headache"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Can't-miss conditions" },
+    { "type": "table",
+      "columns": ["Condition", "Distinguishing feature", "Treatment pearl"],
+      "rows": [
+        ["Wernicke's encephalopathy", "Full triad (confusion + ophthalmoplegia + ataxia) present in only ~16% — needs high suspicion", "Thiamine 500 mg IV q8h ×3 days, before glucose; risk: alcohol, malnutrition, hyperemesis, GI surgery, TPN"],
+        ["Hepatic encephalopathy", "Asterixis; fetor hepaticus; identifiable precipitant (bleed, infection, constipation, meds)", "Lactulose 30 mL q1–2h until a bowel movement; rifaximin for maintenance; treat the precipitant"],
+        ["Hypertensive encephalopathy", "SBP usually > 220; headache + confusion + visual change; PRES on MRI", "Labetalol or nicardipine IV; lower MAP by 20–25% over the first hour — avoid rapid normalisation"],
+        ["Non-convulsive status epilepticus", "Persistent AMS after an apparent seizure; subtle eye deviation, facial twitching, automatisms", "EEG is diagnostic; treat per the SE ladder; LP for encephalitis if febrile"]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "Minimum workup for undifferentiated AMS: glucose + BMP + CBC + UA + tox screen + non-contrast head CT. Elderly: subdural from a forgotten fall, UTI-triggered delirium, polypharmacy (anticholinergics, benzos, opioids, digoxin). SAH: CT sensitivity falls from ~98% within 6 h to ~85% at 24 h — LP any thunderclap headache with a negative CT. Meningitis: do not delay antibiotics for a CT unless there is a focal deficit, papilloedema, seizure, or immunocompromise." }
+  ]
+}

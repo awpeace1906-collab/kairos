@@ -1,0 +1,84 @@
+{
+  "id": "ventilator-modes",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Ventilator Modes",
+  "aliases": ["VC vs PC", "PRVC", "APRV", "NAVA", "PAV+", "ASV", "SIMV", "pressure support", "adaptive ventilation", "cross-manufacturer mode names"],
+  "tags": ["mechanical ventilation", "ventilator modes", "volume control", "pressure control", "APRV", "NAVA", "PAV+", "ASV", "SIMV", "PSV", "ICU"],
+  "keywords": ["what is guaranteed", "who is in control", "how does the breath end", "AutoFlow APVcmv PCV-VG", "Phigh Plow Thigh Tlow", "Edi catheter", "PROMIZING", "Otis equation"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — Ventilator Pocket Guide: Modes / Advanced Modes",
+    "Owens W. The Ventilator Book, 3rd ed",
+    "PROMIZING (Bosma KJ et al. NEJM 2025 — PAV+ vs PSV); NAVA meta-analysis (7 RCTs, 693 pts, 2021); APRV/BiVent meta-analysis (9 studies, 1,921 pts, 2026)"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the vent pocket guide: the three questions every mode answers, VC-vs-PC, the SIMV problem, the cross-manufacturer name table, and the adaptive/proportional modes with their trial evidence." }],
+  "summary": "Translate the mode name on the screen into physiology before you touch a setting. Every mode is a set of answers to three questions: what does the vent guarantee (volume / pressure / hybrid), who's in control (vent / patient / shared), and how does the breath end (time / flow / volume cycled). The mode matters far less than low VT, low Pplat, and appropriate PEEP.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "The three questions" },
+    { "type": "list", "items": [
+      "What does the vent guarantee? Volume, pressure, or a hybrid — never truly both at once; one is always controlled, the other dependent.",
+      "Who's in control? Ventilator (mandatory), patient (spontaneous / assisted), or shared.",
+      "How does the breath end (cycle)? Time-cycled, flow-cycled, or volume-cycled."
+    ] },
+    { "type": "heading", "level": 2, "text": "The core modes" },
+    { "type": "table",
+      "columns": ["Mode", "What's guaranteed / how it behaves"],
+      "rows": [
+        ["Volume control (VC)", "Set tidal volume is guaranteed; airway pressure varies with compliance and resistance. Consistent VT; barotrauma risk if compliance falls."],
+        ["Pressure control (PC)", "Set inspiratory pressure is guaranteed; VT varies with mechanics. Caps peak pressure; hypoventilation risk if compliance worsens."],
+        ["Adaptive / dual-target (PRVC etc.)", "A pressure-controlled breath that auto-adjusts pressure breath-to-breath to hit a target VT. Called PRVC, AC-VC+, AutoFlow, APVcmv, PCV-VG, POVAc by manufacturer."],
+        ["SIMV", "Set mandatory breaths with spontaneous breaths permitted between. Largely supplanted by assist-control + pressure support (see below)."],
+        ["Pressure support (PSV)", "Every breath patient-triggered and pressure-limited, no backup rate. Comfortable and physiologic; unsafe without a reliable respiratory drive."],
+        ["Biphasic / APRV", "Two alternating pressure levels (Phigh / Plow) with spontaneous breathing throughout — preserves spontaneous ventilation and V/Q matching in ARDS."]
+      ]
+    },
+    { "type": "callout", "tone": "info", "text": "VC vs PC is a non-debate: no RCT has shown a mortality difference; Cochrane found no difference in barotrauma, ventilator duration, or ICU stay. A PC-SV vs VC-AC ARDS comparison found no mortality difference (PC used less sedation). Protect the lung with the settings — low VT, Pplat < 30, appropriate PEEP — not the mode." },
+    { "type": "callout", "tone": "warning", "text": "SIMV — the mode that won't die: between mandatory breaths the patient does ALL the work on unsupported spontaneous breaths unless PS is added, which can exhaust a sick patient and prolong weaning. A propensity-matched analysis (SIMV+PS vs assist-control, n=1,578) found no mortality difference and no measurable advantage. A structured SBT protocol does the weaning job more directly." },
+
+    { "type": "heading", "level": 2, "text": "Cross-manufacturer name table" },
+    { "type": "table",
+      "columns": ["Concept", "Hamilton", "Dräger", "Maquet", "GE"],
+      "rows": [
+        ["Volume A/C", "(S)CMV / A-C", "IPPV", "AC/VC", "VCV"],
+        ["Pressure A/C", "P-CMV", "BIPAP (mimicking)", "AC-PC", "PCV"],
+        ["Pressure support", "SPONT / P.Supp", "CPAP / PSV", "Pressure support", "CPAP / PSV"],
+        ["Adaptive A/C (PRVC)", "APVcmv", "AutoFlow", "AC-VC+", "POVAc"],
+        ["Biphasic / APRV", "DuoPAP / APRV", "BIPAP / APRV", "BiVent", "BiLevel"]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "APRV — the four parameters" },
+    { "type": "table",
+      "columns": ["Parameter", "Typical setting"],
+      "rows": [
+        ["Phigh", "Pplat from the prior conventional mode, not exceeding 30 cmH2O"],
+        ["Plow", "Commonly 0 cmH2O — this does NOT create zero PEEP; the release is too brief for full emptying, so meaningful intrinsic PEEP persists. Raising Plow above 0 unpredictably raises both intrinsic PEEP and delivered VT."],
+        ["Thigh", "4–6 s with reasonably preserved lungs; longer Thigh improves oxygenation"],
+        ["Tlow", "Most consequential, least standardised — commonly terminate the release at 50–75% of peak expiratory flow, targeting 10–14 releases/min"]
+      ]
+    },
+    { "type": "list", "items": [
+      "Hypoxaemia → ↑ Phigh and/or ↑ Thigh (and FiO2).",
+      "Hypercapnia → shorten Thigh (more releases), or lighten sedation to allow more spontaneous breathing (central to how APRV works). The brief Tlow release is the only point CO2 clears in bulk — very stiff lungs / high CO2 production make short release times hard to manage.",
+      "2026 meta-analysis (9 studies, 1,921 pts): APRV/BiVent improved oxygenation and increased ventilator-free days vs conventional ventilation — no mortality benefit. Treat any one centre's protocol as one implementation among several (TCAV personalises Tlow to the patient's flow curve — promising, unproven in large RCTs)."
+    ] },
+
+    { "type": "heading", "level": 2, "text": "Proportional / adaptive modes" },
+    { "type": "table",
+      "columns": ["Mode", "How it works", "Evidence / caveat"],
+      "rows": [
+        ["PRVC / VC+ (AutoFlow, APVcmv, PCV-VG)", "You set a target VT; the vent delivers pressure-controlled breaths, adjusting pressure breath-to-breath to hit it (decelerating flow + volume guarantee)", "17-study meta-analysis: lower peak pressures, better compliance vs pure VC in the OR (no ICU mortality data). Catch: a large spontaneous breath reads as improved compliance → the vent decreases support → potential under-support during high demand."],
+        ["NAVA (Edi catheter, Maquet/Getinge)", "A specialised NG catheter senses diaphragm electrical activity (Edi); the vent delivers pressure proportional to it. PIP = NAVA level × (Edi max − Edi min) + PEEP", "Best patient-ventilator synchrony of any mode (triggers off neural effort). Meta-analysis (7 RCTs, 693 pts): weaning success OR 1.93, MV duration −2.63 days, mortality OR 0.58. Needs the expensive proprietary catheter. Watch the Edi trend: falling as you raise the NAVA level = appropriate unloading."],
+        ["PAV+ (Puritan Bennett/Medtronic)", "Measures compliance/resistance in real time (brief occlusions ~q10–15 breaths), then amplifies the patient's own effort by a set % (70% gain = vent does 70% of the work)", "PROMIZING (NEJM 2025, n=573): NO significant difference vs PSV in time to liberation, reintubation, VFDs, or 90-day mortality; less sedation (not prespecified). Clinicians frequently switched to PSV out of unfamiliarity. Works as designed, doesn't beat PSV when weaning is already protocolised."],
+        ["ASV / IntelliVent-ASV (Hamilton)", "Enter weight + target % minute ventilation; the vent uses the Otis equation to pick the VT/RR minimising calculated work of breathing. IntelliVent also auto-adjusts FiO2 and PEEP from SpO2/EtCO2", "Shorter MV duration and lower peak pressures vs SIMV (pooled meta-analysis); no clear difference vs PSV for weaning. 'Black box' feel; Otis assumptions break down in complex ARDS."]
+      ]
+    }
+  ],
+  "related": ["ventilator-management", "capnography", "physiologically-difficult-airway", "icu-workflow"],
+  "buildNote": "Tier 3. Companion to ventilator-management (settings, ARDS, weaning, troubleshooting). Ventilator loops / waveforms and asynchrony patterns from the same pocket guide will expand ventilator-management to v3."
+}

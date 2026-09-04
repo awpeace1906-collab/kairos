@@ -1,0 +1,96 @@
+{
+  "id": "anesthesia-pocus",
+  "section": "Reference Library",
+  "category": "Perioperative & Anesthesia",
+  "title": "Anesthesia POCUS — Cardiac, Airway, Lung, Vascular, Neuraxial",
+  "aliases": ["perioperative POCUS", "cardiac ultrasound golden spiral", "gastric ultrasound aspiration risk", "airway ultrasound cricothyroid membrane", "lung ultrasound OR", "neuraxial ultrasound prescan", "IVC collapsibility"],
+  "tags": ["POCUS", "focused echo", "gastric ultrasound", "airway ultrasound", "lung ultrasound", "vascular access", "neuraxial ultrasound", "OR", "anesthesia"],
+  "keywords": ["PLAX PSAX A4C subxiphoid IVC", "5 views golden spiral", "intraoperative hypotension differential", "IVC < 1.5 cm collapsing hypovolemia", "cricothyroid membrane mark before induction", "tracheal ring sign vs snow globe", "gastric antral CSA grade 0 1 2", "barcode sign pneumothorax", "neuraxial pre-scan obese scoliosis"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2027-03-03",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — Anesthesia Reference: POCUS (ASE 2022, SCA 2023, DAS 2015, ASA 2022, ASRA 2023)"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — cardiac 5-view sequence + hypotension differential + IVC table, airway US (CTM mark, ETT confirmation, gastric grading), lung US OR context, vascular access, neuraxial pre-scan." }],
+  "summary": "Five focused domains that change the anesthetic plan at the bedside: cardiac (induction agent choice, the intraoperative hypotension differential), gastric (aspiration risk before induction), airway (mark the cricothyroid membrane before a predicted difficult airway), lung (mainstem vs pneumothorax), and neuraxial (pre-scan the difficult back).",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Cardiac — the 5-view sequence" },
+    { "type": "table",
+      "columns": ["#", "View", "Probe", "Look for"],
+      "rows": [
+        ["1", "Parasternal long (PLAX)", "3rd–4th ICS left sternal border, marker → right shoulder", "LVOT, mitral valve, aortic root, pericardium"],
+        ["2", "Parasternal short (PSAX)", "Same spot, rotate 90° clockwise", "Papillary level: D-sign (RV pressure/volume overload), RV size"],
+        ["3", "Apical 4-chamber (A4C)", "5th ICS midclavicular, marker → left shoulder", "EF, RV:LV ratio, valves, LVOT VTI"],
+        ["4", "Subxiphoid (SC4C)", "Probe flat, aim at left shoulder", "Pericardial effusion, tamponade"],
+        ["5", "IVC / fluid status", "Rotate 90° from view 4, sagittal", "< 1.5 cm and collapsing = hypovolaemia"]
+      ]
+    },
+    { "type": "heading", "level": 3, "text": "Pre-induction" },
+    { "type": "list", "items": [
+      "LVEF by eyeball: good > 55% / moderate 30–55% / poor < 30% (EPSS > 8 mm suggests reduced EF) — guides induction agent and dose.",
+      "Regional wall motion abnormality: document pre-op; may change the plan.",
+      "Pericardial effusion with RV diastolic + RA systolic collapse + IVC plethora = tamponade physiology — a strong caution against neuraxial if haemodynamically significant."
+    ] },
+    { "type": "heading", "level": 3, "text": "Intraoperative hypotension differential" },
+    { "type": "table",
+      "columns": ["Pattern", "Echo findings", "Treat"],
+      "rows": [
+        ["Hypovolaemia", "Hyperdynamic LV, walls kissing in systole, flat/collapsing IVC < 1.5 cm", "Volume"],
+        ["Vasodilation / distributive", "Hyperdynamic LV, flat IVC", "Norepinephrine / phenylephrine"],
+        ["Cardiogenic", "Poor EF, dilated LV, plethoric IVC > 2.5 cm, B-lines", "Inotrope; reduce volatile agent"],
+        ["Obstructive", "RV strain (D-sign, McConnell), effusion + RV collapse, or absent lung sliding", "Treat the cause (PE, tamponade, pneumothorax)"]
+      ]
+    },
+    { "type": "table",
+      "columns": ["IVC diameter", "Collapsibility", "Interpretation"],
+      "rows": [
+        ["< 1.5 cm", "> 50%", "Hypovolaemia — volume responsive"],
+        ["1.5–2.5 cm", "> 50%", "Borderline / likely responsive"],
+        ["1.5–2.5 cm", "< 50%", "Euvolaemic"],
+        ["> 2.5 cm", "< 50%", "Elevated RAP / volume overload"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Airway ultrasound" },
+    { "type": "list", "items": [
+      "Cricothyroid membrane: linear probe transverse, midline; slide caudally from the thyroid cartilage — the CTM is a hyperechoic flat line between thyroid and cricoid. Skin-mark it before induction in any predicted or known difficult airway (critical for scalpel-bougie FONA).",
+      "ETT confirmation — tracheal ring sign: transverse at the suprasternal notch, a single ring = tracheal, two rings ('snow globe') = oesophageal. More sensitive than capnography in low-flow states.",
+      "Post-intubation: bilateral anterior lung sliding = bilateral ventilation; unilateral = mainstem → withdraw 1–2 cm."
+    ] },
+    { "type": "heading", "level": 3, "text": "Gastric ultrasound (pre-induction aspiration risk)" },
+    { "type": "list", "items": [
+      "Subcostal antral view, right lateral decubitus or supine, curvilinear probe.",
+      "Grade 0 — empty in both positions (antral CSA < 340 mm²) → standard induction.",
+      "Grade 1 — clear fluid in the right-lateral position only → consider a modified RSI.",
+      "Grade 2 — solid content, or clear fluid in both positions → RSI or awake technique."
+    ] },
+    { "type": "heading", "level": 2, "text": "Lung ultrasound — OR context" },
+    { "type": "table",
+      "columns": ["Finding", "Suggests", "Action"],
+      "rows": [
+        ["Bilateral sliding + A-lines", "Normal ventilation", "Continue"],
+        ["Absent sliding (unilateral)", "Mainstem ETT or pneumothorax", "Withdraw ETT 1–2 cm, or decompress"],
+        ["Bilateral B-lines", "Pulmonary oedema", "Diuresis, reduce fluids, increase PEEP"],
+        ["Barcode / stratosphere sign (M-mode)", "Pneumothorax confirmed", "Decompress; find the lung point to localise"],
+        ["Absent sliding after CVC", "Iatrogenic pneumothorax", "Chest tube vs needle per haemodynamics"],
+        ["One-lung ventilation check", "DLT / bronchial blocker position", "Absent sliding on the operative side, present on the ventilated side — more reliable than auscultation in a noisy OR"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Vascular access" },
+    { "type": "list", "items": [
+      "Internal jugular: short-axis; IJ is lateral to the carotid and compressible; confirm the wire is in the vein before dilation.",
+      "Subclavian / axillary: infraclavicular, in-plane long-axis; axillary vein medial to the artery; real-time guidance reduces pneumothorax vs landmark.",
+      "Radial artery: long-axis improves first-pass success, especially in the vasoconstricted / hypotensive patient.",
+      "Femoral: CFV is medial to the CFA at the inguinal crease; stay above the femoral bifurcation."
+    ] },
+    { "type": "heading", "level": 2, "text": "Neuraxial ultrasound (pre-procedure scan)" },
+    { "type": "list", "items": [
+      "Paramedian sagittal oblique (curvilinear, lateral to midline, cephalad tilt): identify the laminae ('saw-tooth') and the ligamentum flavum–dura complex; count levels from the sacrum cephalad.",
+      "Transverse interlaminar (midline, between spinous processes): measure skin-to-LFD-complex depth = expected Tuohy depth (typically 4–8 cm; varies widely).",
+      "Tuffier's line ≈ L4; ultrasound is markedly more accurate than palpation for level identification in the obese, scoliotic, or previously instrumented spine.",
+      "An OB epidural pre-scan reduces needle passes and complications — mark the optimal interspace before positioning, highest value at BMI > 35, scoliosis, or prior spinal instrumentation."
+    ] }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "capnography",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Capnography — Waveform Interpretation",
+  "aliases": ["EtCO2", "end-tidal CO2", "capnogram", "shark fin waveform", "curare cleft", "ETCO2 in cardiac arrest"],
+  "tags": ["capnography", "EtCO2", "airway", "ventilation", "cardiac arrest", "procedural sedation", "TBI", "ROSC", "ED", "ICU", "OR"],
+  "keywords": ["phase III plateau", "a-ET gradient", "shark fin", "curare cleft", "cardiogenic oscillations", "rebreathing", "ILCOR"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — Capnography pocket reference (v1, verified against Resuscitation, ILCOR, primary EM/critical-care literature, July 2026)",
+    "ILCOR 2020 consensus on science — EtCO2 during CPR",
+    "Resuscitation — pooled observational data on EtCO2 and ROSC"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV capnography pocket reference: normal waveform phases, abnormal patterns, arrest prognostication caveats, setting-specific targets." }],
+  "summary": "The waveform, not just the number. EtCO2 is a ventilation, perfusion, and metabolism monitor at once — a sudden change can mean any of the three shifted, which is why the shape matters as much as the value. Normal adult EtCO2 35–45 mmHg; PaCO2 exceeds EtCO2 by 2–5 mmHg (the a-ET gradient), widening with dead space (PE, severe COPD).",
+  "body": [
+    { "type": "heading", "level": 2, "text": "The normal waveform (4 phases per breath)" },
+    { "type": "table",
+      "columns": ["Phase", "What's happening"],
+      "rows": [
+        ["0 — baseline", "Inspiration; CO2 reads zero on a functioning circuit."],
+        ["I — dead space", "Start of exhalation; CO2-free gas from the conducting airways is expelled first."],
+        ["II — alveolar upstroke", "CO2-rich alveolar gas mixes with dead-space gas — the steep rise."],
+        ["III — alveolar plateau", "Relatively uniform alveolar gas exhaled; EtCO2 is read at the very end of this phase, closest to alveolar (and arterial) CO2."]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "Abnormal patterns that change management" },
+    { "type": "table",
+      "columns": ["Pattern", "Appearance", "Cause"],
+      "rows": [
+        ["Obstructive ('shark fin')", "Upsloping phase II, no clean plateau, scooped phase III", "Bronchospasm — asthma, COPD, partial ETT obstruction / kink"],
+        ["Hypoventilation", "Elevated EtCO2 (> 45), normal shape", "Sedation, opioids, hypothermia, rebreathing, deliberately permissive settings"],
+        ["Hyperventilation", "Decreased EtCO2 (< 30), normal shape", "Pain, anxiety, sepsis, pregnancy, compensation for metabolic acidosis"],
+        ["Curare cleft", "Small notch / dip mid-phase III", "Spontaneous respiratory effort breaking through incomplete paralysis — a real-time paralysis-depth signal"],
+        ["Cardiogenic oscillations", "Regular small ripples on the plateau", "Mechanical transmission of cardiac contraction to the airway — usually a reassuring sign of adequate cardiac output"],
+        ["Rebreathing", "Baseline doesn't return to zero", "Exhausted CO2 absorber, absorber not attached, low fresh gas flow, circuit leak"],
+        ["Sudden fall to near-zero", "Abrupt loss of waveform", "Esophageal intubation, disconnection, main-bronchus intubation, or — never forget — cardiac arrest"]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "A flat capnography line does not automatically mean esophageal intubation. If the tube was confirmed correctly placed moments earlier, an abrupt flatline is circulatory arrest until proven otherwise. Chest compressions restore some waveform even in a correctly placed tube, so a flat line during ongoing CPR is a different problem from a flat line right after intubation." },
+
+    { "type": "heading", "level": 2, "text": "Capnography in cardiac arrest" },
+    { "type": "text", "text": "During CPR, EtCO2 primarily marks pulmonary blood flow — a breath-by-breath readout of compression quality and cardiac output, arguably its highest-yield use in resuscitation." },
+    { "type": "table",
+      "columns": ["Finding", "Evidence"],
+      "rows": [
+        ["EtCO2 < 10 mmHg after 20 min of CPR", "Associated with as low as ~0.5% likelihood of ROSC across pooled observational data."],
+        ["ILCOR 2020 consensus", "EtCO2 ≥ 20 mmHg after 20 min of CPR may predict survival to discharge — a weak recommendation, moderate-quality evidence, NOT a hard cutoff to stop or continue on alone."],
+        ["Trend over threshold", "Trending EtCO2 carries more prognostic weight than any single value, given confounders (epinephrine dosing, airway type, compression quality)."],
+        ["Abrupt rise during CPR", "One of the most reliable non-invasive signals that ROSC has just occurred — often visible before a pulse check confirms it."]
+      ]
+    },
+    { "type": "text", "text": "Confirmed CO2 detection after intubation remains the single most specific bedside method to confirm tracheal (vs esophageal) placement during CPR — that role is settled; the prognostic-threshold role is still being refined." },
+
+    { "type": "heading", "level": 2, "text": "Targets by setting" },
+    { "type": "list", "items": [
+      "Traumatic brain injury: target EtCO2 35–40 mmHg. Avoid hyperventilation except brief, deliberate use for acute herniation with Cushing's reflex — over-ventilation vasoconstricts and worsens ischemia in an injured brain.",
+      "Post-ROSC: target EtCO2 35–45 mmHg — avoid both hyper- and hypoventilation while cerebral autoregulation is impaired.",
+      "Sepsis / DKA / compensatory tachypnea: match the ventilator to the patient's own respiratory drive rather than 'normalizing' a compensatory low PaCO2 — a compensated metabolic acidosis needs that low PaCO2 maintained, not corrected.",
+      "Procedural sedation: capnography detects hypoventilation before hypoxemia — often the earliest warning, arriving before the pulse oximeter changes, especially with supplemental O2 running.",
+      "Bagging without capnography is ventilating blind — the waveform (or its absence) is the fastest confirmation of both airway position and ventilation adequacy."
+    ] }
+  ],
+  "related": ["abg-interpretation", "acls-adult-cardiac-arrest", "ventilator-management", "airway-management-flow", "procedural-sedation-workflow"],
+  "buildNote": "Tier 3. Feeds procedural-sedation-workflow and airway-management-flow (waveform confirmation step). An annotated waveform graphic (media) is a later add — text patterns are complete."
+}

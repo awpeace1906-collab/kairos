@@ -1,0 +1,117 @@
+{
+  "id": "shock-classification",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Shock Classification & Bedside Diagnosis",
+  "aliases": ["types of shock", "hypovolemic cardiogenic obstructive distributive", "SCAI shock stages", "shock field guide", "mixed shock", "RUSH exam shock"],
+  "tags": ["shock", "hemodynamics", "cardiogenic shock", "septic shock", "obstructive shock", "hypovolemic shock", "SCAI", "POCUS", "resuscitation", "ED", "ICU"],
+  "keywords": ["CO", "SVR", "CVP", "PCWP", "SCAI SHOCK stage", "Beck's triad", "McConnell's sign", "D-sign", "capillary refill", "mixed shock"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — Shock Classification, Hemodynamics, and Bedside Diagnosis: A Clinical Field Guide",
+    "Vincent JL, De Backer D. Circulatory shock. NEJM 2013;369:1726-1734",
+    "Naidu SS et al. SCAI SHOCK Stage Classification Expert Consensus Update. J Soc Cardiovasc Angiogr Interv 2022;1:100008",
+    "Jentzer JC et al. SCAI staging validation (Mayo Clinic cardiac ICU cohort, n=10,004)"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV shock field guide: four-type hemodynamic table, SCAI stages, the 60-second bedside algorithm, POCUS accuracy, mixed shock." }],
+  "summary": "Shock is tissue hypoperfusion, not hypotension. Identify the broken part fast — tank (hypovolemic), pump (cardiogenic), blocked flow (obstructive), or wide pipes (distributive) — then fix it specifically. The first three are low-CO / high-SVR states; distributive is the low-SVR state.",
+  "body": [
+    { "type": "text", "text": "Shock = acute circulatory failure where oxygen delivery is insufficient for cellular metabolic demand. Hypotension is common but not required; tissue hypoperfusion is the defining event." },
+
+    { "type": "heading", "level": 2, "text": "The four types" },
+    { "type": "table",
+      "columns": ["Type", "Broken part", "CO", "SVR", "CVP", "PCWP", "Core concept"],
+      "rows": [
+        ["Hypovolemic", "Tank empty", "↓", "↑", "↓", "↓", "Low preload drops CO; compensatory vasoconstriction"],
+        ["Cardiogenic", "Pump failing", "↓", "↑", "↑", "↑", "CI ≤ 2.2; backup pressure into the lungs"],
+        ["Obstructive", "Flow blocked", "↓", "↑", "↑", "variable", "Mechanical barrier to filling or outflow"],
+        ["Distributive", "Pipes too wide", "usually ↑ early", "↓", "↓", "variable", "Pathologic vasodilation; high CO early, can drop later"]
+      ]
+    },
+    { "type": "callout", "tone": "info", "text": "Distributive shock usually runs a high CO early; sepsis-related myocardial depression can drop CO later (~40% of septic shock has demonstrable cardiac dysfunction). The first three types are low-CO states; distributive is the low-SVR state." },
+
+    { "type": "heading", "level": 2, "text": "Hypovolemic — the tank is empty" },
+    { "type": "text", "text": "Signature: CO ↓, CVP ↓, PCWP ↓, SVR ↑, HR ↑. Hemorrhagic (trauma, GI bleed, ruptured AAA, postpartum hemorrhage — ATLS Class I–IV, up to 40% volume loss before frank hypotension) or non-hemorrhagic (DKA, vomiting/diarrhea, burns, third-spacing, pancreatitis, bowel obstruction) — same hemodynamic picture, no blood loss. Echo: small hyperdynamic LV, kissing walls at end-systole, flat IVC (< 2 cm, > 50% collapse). Treat with volume (blood if hemorrhagic, crystalloid if not), fix the source; permissive hypotension in uncontrolled hemorrhage until surgical control." },
+
+    { "type": "heading", "level": 2, "text": "Cardiogenic — the pump is failing" },
+    { "type": "text", "text": "Signature: CI ≤ 2.2, PCWP > 15–18, SVR ↑, CVP ↑. LV failure (AMI — especially anterior STEMI — decompensated HF, myocarditis, takotsubo): cold extremities, pulmonary edema, elevated JVP, S3. RV failure (RV infarct, massive PE, pulmonary HTN crisis): elevated JVP, clear lungs, worse with nitrates or diuresis. Mechanical (acute MR from papillary muscle rupture, acute VSD, free-wall rupture): a new murmur + collapse is a surgical emergency. Arrhythmic (VT/VF, complete heart block, very rapid SVT): fix the rhythm first." },
+    { "type": "heading", "level": 3, "text": "SCAI SHOCK stages (A → E)" },
+    { "type": "table",
+      "columns": ["Stage", "Defining criteria", "Mayo cohort mortality"],
+      "rows": [
+        ["A — At risk", "No signs/symptoms of CS but at risk (large AMI, prior HF). Normal hemodynamics, lactate ≤ 2, warm, clear mentation.", "3.0%"],
+        ["B — Beginning", "Relative hypotension or tachycardia without hypoperfusion. Filling pressures may be up. Critical window — highest progression risk within 24 h.", "7.1%"],
+        ["C — Classic", "Hypoperfusion requiring pharmacologic or mechanical support. Lactate > 2. Cold extremities, altered mentation, rising creatinine.", "12.4%"],
+        ["D — Deteriorating", "Failure of initial support — requires TIME spent in Stage C first. Rising lactate and/or escalating vasopressor / MCS need.", "40.4%"],
+        ["E — Extremis", "Lactate > 8. Profound hypotension despite maximal support. Actual or impending collapse, arrest in progress.", "67.0%"]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "The cardiac-arrest modifier (subscript A, e.g. C-A, E-A) means arrest with coma — worse outcome at ANY stage. A common error is assuming every post-arrest patient is automatically Stage E; conflating prior arrest with refractory shock hides reversible cardiogenic shock behind irreversible anoxic injury. Stage D requires time spent failing an adequate trial of support, not just worse numbers at one moment; a catastrophic event can jump a patient straight to E. Most stage changes happen in the first 24 h — reassess constantly." },
+
+    { "type": "heading", "level": 2, "text": "Obstructive — something is blocking flow" },
+    { "type": "text", "text": "Signature: CO ↓, CVP ↑, PCWP variable. Vasopressors are a bridge; definitive treatment removes the obstruction." },
+    { "type": "table",
+      "columns": ["Etiology", "Recognition and treatment"],
+      "rows": [
+        ["Cardiac tamponade", "Pericardial fluid compresses chambers → impaired diastolic filling. Beck's triad (hypotension, muffled sounds, JVD), pulsus paradoxus > 10 mmHg. Treat: pericardiocentesis."],
+        ["Tension pneumothorax", "Mediastinal shift impairs venous return. Absent breath sounds, tracheal deviation, distended neck veins. Clinical diagnosis — decompress immediately (needle 2nd ICS MCL or 4th/5th ICS AAL), then chest tube."],
+        ["Massive PE", "Clot burden → RV outflow obstruction and acute RV failure. RV dilation, D-sign, McConnell's sign. Clot-directed treatment: thrombolysis, catheter-directed therapy, or surgical embolectomy."]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "Distributive — the pipes are too wide" },
+    { "type": "text", "text": "Signature: CO usually ↑, SVR ↓, CVP ↓ early, PCWP variable." },
+    { "type": "table",
+      "columns": ["Etiology", "Detail"],
+      "rows": [
+        ["Septic (≈ 62% of all ICU shock)", "Dysregulated host response → massive vasodilation, capillary leak. Sepsis-3: suspected infection + SOFA ≥ 2; septic shock = vasopressor-dependent MAP ≥ 65 + lactate > 2. Early: warm, flushed, bounding. Late: can turn cold; ~40% have cardiac dysfunction."],
+        ["Anaphylactic", "IgE-mediated histamine release → vasodilation + bronchospasm. IM epinephrine 0.3–0.5 mg (1:1000) is the first and only essential treatment; antihistamines and steroids are adjuncts."],
+        ["Neurogenic", "SCI above T6 → loss of sympathetic tone. Triad: hypotension + bradycardia + warm skin. Norepinephrine or phenylephrine; atropine for symptomatic bradycardia."],
+        ["Other", "Post-bypass vasoplegia, adrenal crisis, pancreatitis, capillary leak syndrome, myxedema coma."]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "The 60-second bedside algorithm" },
+    { "type": "list", "items": [
+      "Touch the patient. Warm → distributive. Cold → cardiogenic, hypovolemic, or obstructive.",
+      "Look at the neck veins. Flat → hypovolemic or early distributive. Distended → cardiogenic, obstructive, or late distributive.",
+      "Listen to the lungs. Wet (B-lines/crackles) → cardiogenic LV failure. Clear + JVD → RV failure, tamponade, PE, or neurogenic.",
+      "Grab the ultrasound. LV function? RV dilation? Pericardial effusion? IVC size and collapsibility? Free fluid?",
+      "Ask: is this mixed? If the hemodynamics don't fit one box, or the patient isn't responding, it's probably more than one box."
+    ] },
+    { "type": "table",
+      "columns": ["Shock type", "POCUS sens", "POCUS spec", "Key echo findings"],
+      "rows": [
+        ["Hypovolemic", "90%", "95%", "Small LV, flat/collapsing IVC, kissing walls"],
+        ["Cardiogenic", "95%", "98%", "Depressed LV/RV, wall-motion abnormalities, dilated IVC, B-lines"],
+        ["Obstructive", "94%", "99%", "RA/RV collapse (tamponade); RV dilation, D-sign (PE)"],
+        ["Distributive", "78%", "97%", "Hyperdynamic LV, normal/small IVC"],
+        ["PE (specific)", "92%", "99%", "RV dilation, D-sign, McConnell's sign"],
+        ["Tamponade", "100%", "100%", "RA/RV diastolic collapse, IVC plethora, swinging heart"]
+      ]
+    },
+    { "type": "text", "text": "POCUS diagnostic accuracy by shock type — systematic review / meta-analysis, n = 1,132, 12 studies." },
+
+    { "type": "heading", "level": 2, "text": "Mixed shock — the rule, not the exception, in sick patients" },
+    { "type": "text", "text": "Mixed shock is the second most common shock type in contemporary cardiac ICUs. When hemodynamics don't fit one box, get the echo and consider a PA catheter." },
+    { "type": "table",
+      "columns": ["Combination", "Detail"],
+      "rows": [
+        ["Sepsis + myocardial depression", "Distributive + cardiogenic. ~40% of septic shock has cardiac dysfunction; the initial high CO can mask it."],
+        ["AMI + inflammatory vasodilation", "Cardiogenic + distributive — the 'warm and wet' CS phenotype: SIRS from myocardial necrosis lowers SVR despite LV failure."],
+        ["Trauma + tension pneumothorax", "Hypovolemic + obstructive — two independent mechanisms stacking, each needing its own treatment."],
+        ["Post-cardiac arrest", "Primary mixed: myocardial stunning (cardiogenic) + vasoplegia (distributive). Needs both vasopressors and inotropes."]
+      ]
+    },
+    { "type": "callout", "tone": "info", "text": "Cardiogenic-vasodilatory shock = cardiogenic + inappropriate vasodilation; vasodilatory-cardiogenic = vasodilatory + myocardial dysfunction; primary mixed shock has simultaneous onset (post-arrest). Both CO and SVR have to be addressed regardless of which label fits best. Shock is physiology, not a diagnosis — identify the broken part, fix it specifically, reassess constantly." },
+
+    { "type": "heading", "level": 2, "text": "2026 note — penetrating tamponade without thoracotomy" },
+    { "type": "text", "text": "A 2026 single-center case series (25 consecutive patients, penetrating cardiac tamponade, resource-limited high-volume trauma center) used ultrasound-guided pericardiocentesis via a 16G dialysis catheter + 1 g intrapericardial tranexamic acid + a pericardial drain for 48 h with serial echo: 96% survival to discharge (24/25), thoracotomy avoided in 100%, 8% recurrence (2 patients, managed without thoracotomy). Rationale for intrapericardial TXA: pericardial blood is a strong local fibrinolytic stimulus, and instilled TXA is theorized to stabilize clot at the source after drainage without the systemic bleeding tradeoff of IV dosing. Caveat: an extreme-environment case series — it does not replace thoracotomy where surgical capability exists; it documents what is possible when it does not." }
+  ],
+  "related": ["shock-index", "modified-shock-index", "vasoactive-inotropic-score", "peripheral-iv-vasopressors", "septic-shock-resuscitation"],
+  "buildNote": "Tier 3. Hemodynamic-signature table and the bedside algorithm are the core; SCAI staging cross-references cardiogenic-shock content. Feeds the future RUSH-exam POCUS section and a pressor-selection reference (CV_Vasopressors_Inotropes.html)."
+}

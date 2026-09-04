@@ -1,0 +1,252 @@
+{
+  "id": "emergency-drugs-pregnancy",
+  "section": "Reference Library",
+  "category": "Obstetric & Gynecologic",
+  "title": "Emergency Drugs in Pregnancy",
+  "aliases": [
+    "pregnancy drug safety",
+    "eclampsia magnesium",
+    "severe hypertension pregnancy",
+    "postpartum hemorrhage uterotonics",
+    "obstetric RSI",
+    "anticoagulation pregnancy",
+    "antidotes pregnancy",
+    "antibiotics pregnancy trimester"
+  ],
+  "tags": [
+    "pregnancy",
+    "obstetric emergency",
+    "eclampsia",
+    "preeclampsia",
+    "postpartum hemorrhage",
+    "hypertensive emergency",
+    "anaphylaxis",
+    "RSI",
+    "anticoagulation",
+    "toxicology",
+    "antibiotics",
+    "ED",
+    "OB",
+    "ICU"
+  ],
+  "keywords": [
+    "magnesium sulfate loading 4-6 g",
+    "labetalol 20 mg",
+    "hydralazine 5-10 mg",
+    "IR nifedipine 10 mg",
+    "oxytocin",
+    "TXA 1 g",
+    "methylergonovine",
+    "carboprost",
+    "LMWH",
+    "left uterine displacement",
+    "PLLR"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — Emergency Drugs in Pregnancy (10 scenarios; legacy FDA letters reproduced for cross-reference against Micromedex / Lexicomp / Briggs)",
+    "ACOG Committee Opinion 692 — acute-onset severe hypertension in pregnancy/postpartum",
+    "Enriquez AD et al. Arrhythmias during pregnancy (JACC-EP consensus tiers, 2021)",
+    "PROSPECT c-section analgesia (see the separate module); WHO PPH uterotonics + TXA; ASCIA anaphylaxis-in-pregnancy"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — converted from the CV Emergency Drugs in Pregnancy reference. Organized by what you're treating; the governing principle is that maternal stabilisation IS fetal stabilisation."
+    }
+  ],
+  "summary": "Maternal haemodynamic stability is fetal stability — don't undertreat a genuine maternal emergency out of fetal-risk hesitancy. Every 'avoid' tier here still carries an 'unless life-threatening' escape clause. Position matters: manual left uterine displacement / left lateral tilt at ≥ 20 weeks during any resuscitation.",
+  "body": [
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "The FDA A/B/C/D/X letter system was retired in 2015 (replaced by the PLLR narrative summary) because clinicians read the letters as a linear safety grade they were never built to be — a 'C' can mean 'no data' just as easily as 'a worrying animal signal'. Legacy letters persist in Micromedex / Lexicomp / Briggs for older generic drugs and are noted below only for that cross-reference."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Seizure / eclampsia"
+    },
+    {
+      "type": "list",
+      "items": [
+        "First-line is MAGNESIUM SULFATE, not a benzodiazepine — the one emergency scenario where the 'obvious' anticonvulsant is the wrong first move. Load 4–6 g IV over 15–20 min, then 1–2 g/hr infusion. Superior to phenytoin AND benzodiazepines for preventing recurrent eclamptic seizures.",
+        "Monitor deep tendon reflexes, respiratory rate, urine output (loss of reflexes precedes respiratory depression). Antidote for Mg toxicity: calcium gluconate 1 g IV.",
+        "Second-line if Mg fails / contraindicated (e.g. myasthenia): lorazepam 4 mg IV or diazepam 5–10 mg IV. Then levetiracetam 60 mg/kg IV (max 4,500 mg), then fosphenytoin 20 mg PE/kg for refractory."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hypertensive emergency (SBP ≥ 160 or DBP ≥ 110 — treat within 30–60 min)"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Agent",
+        "Dose",
+        "Note"
+      ],
+      "rows": [
+        [
+          "IV labetalol",
+          "20 mg → 40 mg at 10 min → 80 mg at 10 min (max single) → repeat to cumulative 300 mg",
+          "Avoid in asthma / heart failure / bradycardia. Neonatal bradycardia if near delivery."
+        ],
+        [
+          "IV hydralazine",
+          "5–10 mg IV, repeat in 20 min",
+          "Higher risk of maternal hypotension than labetalol/nifedipine — have fluids and fetal monitoring ready."
+        ],
+        [
+          "Oral IR nifedipine",
+          "10 mg PO, then 20 mg at 20 min if still elevated",
+          "Preferred when no IV access. Extended-release is maintenance ONLY, never acute. The Mg + CCB neuromuscular-blockade concern was not borne out in large reviews — but monitor."
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "ACOG: any of the three first-line agents is appropriate — choose on access and comorbidity, not superiority. Don't over-lower BP — placental autoregulation in severe preeclampsia is not well established and a fast drop can cause fetal distress. Methyldopa is maintenance only (onset too slow for emergencies)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Anaphylaxis"
+    },
+    {
+      "type": "text",
+      "text": "Management is essentially identical to the non-pregnant patient. Epinephrine 0.3–0.5 mg IM (1:1000) mid-outer thigh, repeat q5–15 min — do NOT withhold or under-dose over uterine/placental vasoconstriction concern; untreated hypoxia and hypotension are a far greater fetal threat. The ONE pregnancy-specific move: manual left uterine displacement / full left lateral tilt at ≥ 20 weeks to relieve aortocaval compression. Antihistamines and steroids treat the tail, not the airway or BP."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Postpartum haemorrhage"
+    },
+    {
+      "type": "list",
+      "items": [
+        "First-line: oxytocin continuous IV infusion (half-life < 10 min — needs an infusion, not a single bolus; watch for hyponatraemia with high-dose prolonged infusions) + tranexamic acid 1 g IV when blood loss > 500 mL (vaginal) / > 1,000 mL (caesarean) and bleeding persists — reduces PPH mortality.",
+        "Second-line — ASK 'asthma or hypertension?' BEFORE reaching: methylergonovine 0.2 mg IM (contraindicated in hypertension / preeclampsia — hypertensive/stroke risk; avoid IV) OR carboprost (15-methyl PGF2α) 0.25 mg IM (contraindicated in asthma — bronchospasm).",
+        "Misoprostol as a caution-tier adjunct."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "RSI / sedation / analgesia"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Succinylcholine 1–1.5 mg/kg (still ~86–90% of obstetric RSI; decreased plasma cholinesterase in pregnancy can prolong it somewhat) OR rocuronium 0.6–1.2 mg/kg (favoured generally, sugammadex for rescue — though sugammadex pregnancy data is limited).",
+        "Propofol ~1–2 mg/kg standard induction. Fentanyl standard dose but opioid clearance rises 60–70% in pregnancy, so the effect may be shorter than expected.",
+        "Ketamine: can increase uterine tone at higher doses — reasonable when haemodynamically unstable (haemorrhage, sepsis); discuss timing with obstetrics if delivery isn't imminent.",
+        "Left uterine displacement during and after induction prevents the aortocaval hypotension that gets blamed on the drug."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Antiemetics / hyperemesis"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Oral first-line: pyridoxine + doxylamine (useless once vomiting prevents absorption).",
+        "IV escalation: ondansetron 4–8 mg (large Danish registry — no increased major-defect / stillbirth / preterm risk; a small cleft-palate signal the authors attributed to chance — reasonable first IV agent with a shared-decision note), metoclopramide 10 mg (EMA 5-day limit — extrapyramidal risk), then promethazine / prochlorperazine (higher dystonia risk).",
+        "Give THIAMINE before/with dextrose-containing fluids in a malnourished hyperemesis patient (Wernicke prevention), plus fluid resuscitation."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Anticoagulation (VTE / PE)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "LMWH — weight-based therapeutic dosing; does not cross the placenta — first-line for treatment and prophylaxis throughout pregnancy.",
+        "Unfractionated heparin — preferred when rapid reversibility matters (peripartum, planned delivery, urgent procedure); frequent aPTT monitoring.",
+        "Warfarin — AVOID for routine VTE/PE (embryopathy, esp. first trimester). Remains preferred for MECHANICAL HEART VALVES (lowest maternal valve-thrombosis risk) — often first-trimester LMWH then back to warfarin, individualised.",
+        "DOACs — NOT recommended (placental transfer, insufficient data). A patient on a DOAC who turns out to be pregnant is a bridge-to-LMWH conversation, not 'continue and monitor'."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Toxicology antidotes"
+    },
+    {
+      "type": "text",
+      "text": "Governing principle: treat the mother as you would any patient — maternal stabilisation is fetal stabilisation. Give without hesitation: naloxone (titrate to respiration; may precipitate maternal ± neonatal withdrawal, but untreated hypoxia is worse), N-acetylcysteine (protective for the fetus too — fetal hepatotoxicity mirrors maternal), activated charcoal, 100% O2 for CO. Fomepizole preferred over ethanol for toxic alcohols. Physostigmine / flumazenil — the usual (non-pregnancy) contraindications apply; pregnancy adds none. See the Antidotes & Reversal Agents module for full dosing."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Antibiotics — several flip category by trimester"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Class",
+        "Status",
+        "Note"
+      ],
+      "rows": [
+        [
+          "Penicillins, cephalosporins, clindamycin, azithromycin",
+          "Safe — first-line backbone",
+          "Ceftriaxone: caution at term (theoretical neonatal kernicterus from bilirubin displacement)"
+        ],
+        [
+          "Metronidazole, vancomycin (2nd/3rd tri), erythromycin (not estolate)",
+          "Moderately safe",
+          ""
+        ],
+        [
+          "Nitrofurantoin",
+          "Safe 2nd/3rd trimester — AVOID 1st tri (cleft-lip signal) and at term (neonatal haemolysis)",
+          "Check gestational age before reflex prescribing"
+        ],
+        [
+          "Trimethoprim",
+          "AVOID 1st trimester (folate antagonist); safe after",
+          ""
+        ],
+        [
+          "Tetracyclines",
+          "Avoid throughout (fetal bone/teeth staining)",
+          ""
+        ],
+        [
+          "Fluoroquinolones, aminoglycosides, sulfonamides near delivery",
+          "Avoid unless no alternative for a serious infection",
+          "Aminoglycosides acceptable for severe infection"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Arrhythmias"
+    },
+    {
+      "type": "text",
+      "text": "Safe: adenosine (6 mg → 12 mg, identical to non-pregnant; negligible fetal exposure), digoxin (levels run falsely high late in pregnancy — treat the rhythm), lidocaine, sotalol. Moderately safe: propranolol, metoprolol, labetalol, verapamil, procainamide, flecainide. AVOID (unless maternal life-threatening and refractory to everything else): amiodarone (fetal hypothyroidism, growth restriction, prematurity), dronedarone, dofetilide. Don't undertreat a genuine maternal arrhythmia — every 'avoid' still has the life-threatening escape clause."
+    }
+  ],
+  "related": [
+    "csection-analgesia-prospect",
+    "antidotes-reversal-agents",
+    "anticoagulation-reversal",
+    "empiric-antibiotics-outpatient",
+    "peds-midazolam-status"
+  ],
+  "buildNote": "Tier 1. Large scenario reference. A magnesium-toxicity / preeclampsia-severe-features management module and a dedicated PPH massive-transfusion pathway are natural companions."
+}

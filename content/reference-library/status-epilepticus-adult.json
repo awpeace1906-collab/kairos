@@ -1,0 +1,44 @@
+{
+  "id": "status-epilepticus-adult",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Status Epilepticus — Adult Treatment Ladder",
+  "aliases": ["convulsive status epilepticus", "SE treatment", "ESETT", "refractory status epilepticus", "super-refractory status", "benzodiazepine then levetiracetam", "midazolam infusion seizure"],
+  "tags": ["status epilepticus", "seizure", "benzodiazepine", "levetiracetam", "fosphenytoin", "valproate", "propofol", "midazolam", "pentobarbital", "ED", "ICU", "neurology"],
+  "keywords": ["seizure > 5 min", "lorazepam 0.1 mg/kg", "midazolam 10 mg IM", "levetiracetam 60 mg/kg", "fosphenytoin 20 PE/kg", "valproate 40 mg/kg", "ESETT equivalent", "burst suppression"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — EM Pocket Guide: Status Epilepticus",
+    "Kapur J et al. ESETT (levetiracetam vs fosphenytoin vs valproate). NEJM 2019",
+    "Glauser T et al. AES status epilepticus guideline. Epilepsy Curr 2016"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — the time-anchored ladder: benzodiazepine → second-line ASM (ESETT: LEV / fosphenytoin / valproate all equivalent) → anaesthetic infusion → super-refractory options. Doses inline." }],
+  "summary": "SE = a seizure lasting > 5 min, or ≥ 2 seizures without recovery of consciousness between. Treat immediately — neuronal injury accrues after ~30 min, and benzodiazepines get less effective the longer you wait (GABA-A receptors internalise). Give a FULL benzodiazepine dose, then a full second-line agent, then intubate for an infusion.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "The ladder" },
+    { "type": "table",
+      "columns": ["Phase", "First-line", "Dose", "Alternative"],
+      "rows": [
+        ["Phase 1 (0–5 min)", "Lorazepam IV", "0.1 mg/kg IV (max 4 mg per dose), may repeat once at 5 min", "No IV access: midazolam 10 mg IM/IN, or diazepam 20 mg PR. Under-dosing the benzo is the commonest early error"],
+        ["Phase 2 (5–20 min)", "Levetiracetam IV", "60 mg/kg IV (max 4500 mg)", "Fosphenytoin 20 PE/kg IV, OR valproate 40 mg/kg IV — ESETT 2019: all three roughly EQUIVALENT (~45–50% seizure cessation). Pick on comorbidity: avoid valproate in hepatic disease / pregnancy; fosphenytoin has infusion hypotension / bradycardia and is pro-arrhythmic"],
+        ["Refractory SE (> 20–30 min, failed 2 agents)", "Intubate + anaesthetic infusion", "Propofol 1–2 mg/kg bolus → 1–15 mg/kg/hr, OR midazolam 0.2 mg/kg bolus → 0.05–2 mg/kg/hr", "Titrate to seizure cessation, then to burst-suppression on continuous EEG. Watch for PRIS with prolonged high-dose propofol"],
+        ["Super-refractory SE (> 24 h, or recurs on weaning the infusion)", "Pentobarbital", "5 mg/kg load → 1–5 mg/kg/hr (burst-suppression on EEG)", "Ketamine 1–1.5 mg/kg → 1–5 mg/kg/hr as an adjunct / alternative (NMDA antagonism — useful as GABA responsiveness fails). Consider ketogenic diet, immunotherapy, magnesium/pyridoxine trials"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "In parallel with the drugs" },
+    { "type": "list", "items": [
+      "Check glucose immediately — give D50 (+ thiamine 100 mg IV if malnourished / alcohol) for hypoglycaemia.",
+      "Basic labs incl. sodium, calcium, magnesium; antiseizure-drug levels if on maintenance therapy; toxicology screen.",
+      "For a refractory or first unprovoked seizure: CT head, then LP if meningitis / encephalitis is possible; start empiric aciclovir ± antibiotics if febrile.",
+      "In an eclamptic / peripartum patient: magnesium sulfate is first-line (see the pregnancy emergency-drugs module), not a benzodiazepine.",
+      "Isoniazid overdose seizure that won't respond to benzos: pyridoxine (gram-for-gram with the ingestion, or 5 g empiric).",
+      "Continuous EEG once an infusion is running — up to ~20% of comatose SE patients have ongoing NON-convulsive seizures after the visible activity stops."
+    ] }
+  ],
+  "related": ["peds-midazolam-status", "peds-ketamine-rsi", "rsi-seven-ps", "emergency-drugs-pregnancy", "antidotes-reversal-agents"],
+  "buildNote": "Tier 1 — adult SE was a gap (peds status is covered in peds-midazolam-status). Non-convulsive SE and the Salzburg EEG criteria are a possible expansion."
+}

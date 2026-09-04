@@ -1,0 +1,98 @@
+{
+  "id": "acute-pe-guideline-2026",
+  "section": "Reference Library",
+  "category": "Cardiac / ECG",
+  "title": "Acute PE — 2026 AHA/ACC Guideline",
+  "aliases": ["pulmonary embolism guideline 2026", "PE clinical categories A-E", "normotensive shock PE", "PE severity taxonomy", "PERT", "PE advanced therapy", "massive submassive PE replacement"],
+  "tags": ["pulmonary embolism", "PE", "risk stratification", "PESI", "sPESI", "Hestia", "catheter-directed lysis", "thrombectomy", "VA-ECMO", "anticoagulation", "RV failure", "ED", "ICU"],
+  "keywords": ["Acute PE Clinical Categories", "normotensive shock", "RV/LV ratio", "PEERLESS", "RENOVE", "API-CAT", "half-dose DOAC extended phase", "CTEPD", "R modifier"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — 2026 AHA/ACC Acute PE Guideline journal-club cheat sheet",
+    "Creager MA, Barnes GD, Giri J, et al. 2026 AHA/ACC/ACCP/ACEP/CHEST/SCAI/SHM/SIR/SVM/SVN Guideline for the Evaluation and Management of Acute Pulmonary Embolism in Adults. Circulation 2026;153:e977–e1051. doi:10.1161/CIR.0000000000001415"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV cheat sheet of the 2026 multi-society Acute PE guideline. New A–E clinical categories replace massive/submassive; half-dose DOAC extended phase; RV/LV ratio reporting Class 1; normotensive shock (D2)." }],
+  "summary": "The 2026 multi-society guideline scrapped 'massive / submassive / low risk' (and the ESC four-tier scheme) for AHA/ACC Acute PE Clinical Categories A–E, each with subcategories, plus an optional 'R' modifier for respiratory failure. Diagnosis is largely unchanged; the new ideas are the taxonomy, 'normotensive shock' (D2), and half-dose DOAC for the extended phase.",
+  "body": [
+    { "type": "callout", "tone": "info", "text": "Journal-club summary of a 75-page guideline, not a substitute for the source text — verify class/level ratings before clinical application. The A–E taxonomy has not been prospectively validated (the writing committee's own top evidence gap), and many advanced-therapy recommendations remain C-LD or B-NR." },
+
+    { "type": "heading", "level": 2, "text": "The new severity taxonomy — Categories A–E" },
+    { "type": "table",
+      "columns": ["Category", "Name", "Definition"],
+      "rows": [
+        ["A", "Subclinical", "Incidental, asymptomatic — found on a CT ordered for something else (e.g. cancer staging)."],
+        ["B", "Low severity", "Symptomatic but PESI ≤ 85 / sPESI 0 / Hestia negative. B1 = subsegmental clot, B2 = more proximal."],
+        ["C", "Elevated severity", "C1 normal RV + biomarkers · C2 one abnormal · C3 both abnormal."],
+        ["D", "Incipient failure", "D1 transient hypotension · D2 = 'normotensive shock' — hypoperfusing quietly with a normal BP."],
+        ["E", "Cardiopulmonary failure", "E1 shock with a pulse, on pressors · E2 refractory shock or arrest."]
+      ]
+    },
+    { "type": "text", "text": "Add 'R' for hypoxemia, tachypnea, or an oxygen requirement (e.g. C3R, D2R). The taxonomy maps onto the treatment algorithm in the guideline's Figure 3 — the single most useful chart in the document." },
+
+    { "type": "heading", "level": 2, "text": "Diagnosis — little changed" },
+    { "type": "list", "items": [
+      "Wells / Geneva / PERC + age-adjusted D-dimer + YEARS still drive imaging decisions — no change.",
+      "CTPA still beats V/Q for confirming the diagnosis.",
+      "Upgrade: reporting a NUMERICAL RV/LV ratio off CTPA is now Class 1 — the subjective eyeball assessment is out.",
+      "Echo still cannot diagnose PE — strictly for risk stratification once PE is confirmed."
+    ] },
+
+    { "type": "heading", "level": 2, "text": "Risk stratification" },
+    { "type": "list", "items": [
+      "PESI / sPESI / Hestia are good at finding who is SAFE to send home (Class 1 for Category A/B). No score reliably predicts who is about to crash — stated plainly in the guideline.",
+      "Troponin + BNP + lactate: Class 1 for anyone Category C or higher.",
+      "RV imaging: Class 1 for Categories C–D."
+    ] },
+
+    { "type": "heading", "level": 2, "text": "Management by category" },
+    { "type": "table",
+      "columns": ["Category", "Approach"],
+      "rows": [
+        ["A / B", "Outpatient territory — send home, start a DOAC."],
+        ["C", "Admit and work up — LMWH initiation, biomarkers + RV imaging. PERT consult is reasonable."],
+        ["D", "Advanced therapy enters the conversation. Vasopressors (norepinephrine first-line) for D2. Look for the 'normotensive shock' pattern before it declares itself."],
+        ["E", "Full advanced-therapy conversation. PERT is Class 1. VA-ECMO for E2. Systemic lysis / catheter-directed lysis / mechanical thrombectomy / surgical embolectomy all reasonable at E1."]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "Advanced therapy (guideline Table 7)" },
+    { "type": "table",
+      "columns": ["PE Category", "Systemic lysis", "Catheter lysis (CDL)", "Mechanical thrombectomy (MT)", "Surgical embolectomy"],
+      "rows": [
+        ["A–C1", "3 — Harm", "3 — No benefit", "3 — No benefit", "3 — No benefit"],
+        ["C2", "3 — Harm", "2b — unclear", "2b — unclear", "3 — No benefit"],
+        ["C3", "2b — unclear", "2b — unclear", "2b — unclear", "3 — No benefit"],
+        ["D1–D2", "2b — may consider", "2b — may consider", "2b — may consider", "2b — unclear"],
+        ["E1", "2a", "2a", "2a", "2a"],
+        ["E2", "2a", "N/A", "N/A", "3 — No benefit"]
+      ]
+    },
+    { "type": "text", "text": "The C2–D2 zone is exactly the population enrolled in PEERLESS, which found no mortality or bleeding difference between catheter-directed lysis and mechanical thrombectomy (more bailout to alternate therapy in the CDL arm). Surgery without mechanical support at E2 is now Class 3 — no benefit." },
+
+    { "type": "heading", "level": 2, "text": "Anticoagulation highlights" },
+    { "type": "list", "items": [
+      "LMWH over UFH for initial parenteral therapy (Class 1).",
+      "DOAC over VKA for most patients (Class 1) — EXCEPT antiphospholipid syndrome, where VKA is preferred (arterial thrombosis risk with DOACs).",
+      "Brain tumors: DOAC now PREFERRED over LMWH to reduce ICH risk — a flip from older teaching.",
+      "Pregnancy: LMWH / UFH only. DOACs and warfarin are Class 3 — harm.",
+      "Extended-phase anticoagulation for unprovoked PE: continue indefinitely. NEW — half-dose DOAC (apixaban 2.5 mg BID or rivaroxaban 10 mg daily) is Class 1 for the extended phase, cutting bleeding without losing efficacy (RENOVE, API-CAT).",
+      "IVC filters: retrievable over permanent, pull as soon as safe. Placing one in a patient already therapeutically anticoagulated is Class 3 — harm."
+    ] },
+
+    { "type": "heading", "level": 2, "text": "Sedation & intubation in RV failure" },
+    { "type": "callout", "tone": "danger", "text": "Anything that blunts sympathetic tone — induction agents, positive-pressure ventilation — can trigger arrest in a compensated PE patient. Deep sedation and mechanical ventilation are Class 3 — harm — unless clinically necessary; if unavoidable, have pressors, inotropes, and/or ECMO ready at the bedside first." },
+
+    { "type": "heading", "level": 2, "text": "CTEPD follow-up" },
+    { "type": "list", "items": [
+      "Ask about dyspnea at every visit for a year.",
+      "Workup requires TTE + a perfusion scan + CPET — no single test rules it out.",
+      "Routine repeat CTPA to check clot resolution is explicitly called out as NOT useful."
+    ] }
+  ],
+  "related": ["wells-pe", "perc-rule", "anticoagulation-reversal", "pressor-inotrope-reference", "shock-classification"],
+  "buildNote": "Tier 1 (currency-sensitive — 2026 guideline). sPESI / Hestia are additive-calculator candidates to build so the Category B definition cross-links to a working tool. The RV-failure sedation callout could also be surfaced from airway-management-flow."
+}

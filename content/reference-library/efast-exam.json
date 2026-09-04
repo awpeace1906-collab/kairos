@@ -1,0 +1,71 @@
+{
+  "id": "efast-exam",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "eFAST & the RUSH Exam",
+  "aliases": ["eFAST", "FAST exam", "extended FAST", "Morrison's pouch", "RUSH protocol", "undifferentiated shock ultrasound", "IVC collapsibility"],
+  "tags": ["eFAST", "POCUS", "trauma", "shock", "pneumothorax", "pericardial effusion", "ED"],
+  "keywords": ["6 views RUQ subxiphoid LUQ pelvis right lung left lung", "free fluid unstable emergent surgery", "free fluid stable CT", "lung point 100% specific for pneumothorax", "barcode sign M-mode", "RUSH pump tank pipes", "IVC < 1.5 cm collapsing hypovolaemia", "negative eFAST does not exclude solid organ injury"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2027-09-03",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — EM Pocket Guide: eFAST (ACEP 2023)",
+    "ACEP ultrasound guidelines; Perera P et al. RUSH exam"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — the 6 eFAST views + positive-exam actions, and the RUSH pump/tank/pipes framework with the shock-pattern table and IVC interpretation." }],
+  "summary": "eFAST answers one question fast: is there free fluid (peritoneal, pericardial, pleural) or a pneumothorax? A positive eFAST in an unstable patient goes to the operating room, not the CT scanner. A negative eFAST does NOT exclude solid-organ injury — CT remains standard for the stable patient with a concerning mechanism.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "The 6 views" },
+    { "type": "table",
+      "columns": ["#", "View", "Probe", "Looking for"],
+      "rows": [
+        ["1", "RUQ — Morrison's pouch (hepatorenal)", "Right mid-axillary line, ~10th ICS; also fan above the diaphragm", "Free fluid; haemothorax"],
+        ["2", "Subxiphoid cardiac", "Probe flat, aimed at the left shoulder", "Pericardial effusion / tamponade"],
+        ["3", "LUQ — splenorenal (Koller's pouch)", "Posterior mid-axillary line, 8th–9th ICS; fan above the diaphragm", "Free fluid; haemothorax (harder view than RUQ)"],
+        ["4", "Pelvis / suprapubic", "Sagittal + transverse, bladder as the window", "Free fluid in the rectovesical pouch (♂) or pouch of Douglas (♀)"],
+        ["5", "Right lung", "2nd–4th ICS midclavicular line, anterior", "Lung sliding vs barcode sign (M-mode: seashore = sliding, barcode = pneumothorax)"],
+        ["6", "Left lung", "Mirror of the right", "As above — always bilateral for pneumothorax"]
+      ]
+    },
+    { "type": "text", "text": "Sensitivity for free fluid ~ 75–88%; for pneumothorax ~ 49–99% (operator- and study-dependent). A lung point (the transition between sliding and no sliding) is 100% specific for pneumothorax; absent sliding alone is not." },
+    { "type": "heading", "level": 3, "text": "Acting on a positive eFAST" },
+    { "type": "table",
+      "columns": ["Finding + state", "Action"],
+      "rows": [
+        ["Free fluid + haemodynamically unstable", "Emergent laparotomy — do not delay for CT; activate trauma surgery"],
+        ["Free fluid + stable", "CT abdomen/pelvis with contrast to characterise the injury"],
+        ["Pericardial effusion + tamponade physiology", "Pericardiocentesis (US-guided) as a bridge to the operating room / thoracotomy"],
+        ["Absent lung sliding + lung point", "Needle decompression / finger thoracostomy, then a chest tube"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "RUSH — undifferentiated shock (Pump · Tank · Pipes)" },
+    { "type": "list", "items": [
+      "PUMP: parasternal/subxiphoid — eyeball LVEF, RV:LV ratio (> 1 = strain), pericardial effusion.",
+      "TANK: IVC + lungs — collapsed IVC = empty tank (hypovolaemia); plethoric IVC = full (cardiogenic / obstructive); bilateral B-lines = wet.",
+      "PIPES: aorta (measure for AAA) + femoral/popliteal compression for DVT."
+    ] },
+    { "type": "table",
+      "columns": ["Shock type", "Cardiac", "IVC", "Lungs", "Clue"],
+      "rows": [
+        ["Hypovolaemic / haemorrhagic", "Hyperdynamic, kissing walls", "Flat, collapsing", "A-lines", "Free fluid, AAA, ectopic"],
+        ["Cardiogenic", "Poor EF, dilated LV", "Plethoric", "Bilateral B-lines", "Effusion possible"],
+        ["Obstructive — PE", "RV strain, D-sign, McConnell", "Plethoric", "A-lines ± peripheral wedge", "DVT on leg compression"],
+        ["Obstructive — tamponade", "Effusion + RV diastolic collapse", "Plethoric", "A-lines", "Swinging heart"],
+        ["Distributive / septic", "Hyperdynamic (early)", "Small but variable", "A-lines", "Source on scan"]
+      ]
+    },
+    { "type": "table",
+      "columns": ["IVC diameter", "Collapse on sniff", "Interpretation"],
+      "rows": [
+        ["< 1.5 cm", "> 50%", "Hypovolaemia — volume responsive"],
+        ["1.5–2.5 cm", "> 50%", "Borderline / likely responsive"],
+        ["1.5–2.5 cm", "< 50%", "Euvolaemic — less predictable"],
+        ["> 2.5 cm", "< 50%", "Elevated RAP / hypervolaemia — unlikely to respond"]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "Mechanical ventilation, high PEEP, and raised intra-abdominal pressure all reduce the reliability of IVC collapsibility — use it with the clinical picture and a passive leg raise / fluid challenge, not alone." }
+  ]
+}

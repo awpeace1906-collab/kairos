@@ -1,0 +1,121 @@
+{
+  "id": "antidotes-reversal-agents",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Antidotes & Reversal Agents",
+  "aliases": ["antidote reference", "toxicology antidotes", "reversal agents", "sugammadex naloxone flumazenil", "high-dose insulin euglycemia", "lipid emulsion LAST", "dantrolene", "digoxin Fab", "NAC acetaminophen", "fomepizole", "CroFab"],
+  "tags": ["antidote", "toxicology", "overdose", "reversal", "poisoning", "envenomation", "malignant hyperthermia", "LAST", "beta-blocker overdose", "calcium channel blocker overdose", "serotonin syndrome", "NMS", "ED", "ICU", "OR"],
+  "keywords": ["HIE therapy", "sodium bicarbonate QRS", "cyproheptadine", "bromocriptine", "pralidoxime", "physostigmine", "deferoxamine", "pyridoxine INH", "leucovorin", "octreotide sulfonylurea", "hydroxocobalamin cyanide", "BabyBIG"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — Antidotes & Reversal Agents pocket reference (v7, verified against FDA / NEJM / MHAUS / ASRA / ACEP / AAP / poison-center references, July 2026)",
+    "ASRA 2020 LAST checklist",
+    "MHAUS malignant hyperthermia protocol",
+    "Consult a medical toxicologist / regional poison center for any real poisoning"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV antidotes pocket reference: anaphylaxis/shock, sedation/opioid/NMB reversal, poison-induced cardiogenic shock ladder, toxidrome rescue, anesthesia emergencies, antidote-by-substance, chelation & metabolic rescue, envenomation. Adult doses in-line; selected peds doses called out." }],
+  "summary": "Every antidote that changes an outcome — indication, adult dose, one pearl. An antidote reverses a mechanism, not a patient: ask (1) is reversal actually indicated or is supportive care enough, (2) does reversing create a new problem, (3) how long does the antidote last vs the drug it reverses. That third question causes the 3am bounce-back. Anticoagulant reversal lives in the separate anticoagulation-reversal module.",
+  "body": [
+    { "type": "callout", "tone": "warning", "text": "Doses here are for reasoning and rapid recall, not a substitute for a poison-center or toxicology consult on a live case. Most antidotes need ongoing monitoring for recurrence, rebound, or a second wave of toxicity as the antidote clears faster than the poison." },
+
+    { "type": "heading", "level": 2, "text": "Anaphylaxis & refractory shock" },
+    { "type": "list", "items": [
+      "Epinephrine (anaphylaxis): 0.3–0.5 mg IM (1 mg/mL) anterolateral thigh, repeat q5–15 min; start an IV infusion for refractory disease rather than stacking IM doses. IM, not SC. Antihistamines / steroids treat itch and the late phase — not the airway or the BP; don't let them delay epinephrine. Peds: 0.01 mg/kg IM (max ~0.3–0.5 mg); auto-injector 0.15 mg for 15–30 kg, 0.3 mg for > 30 kg — prefer a weight-based manual dose under 15 kg.",
+      "Glucagon: the rescue for anaphylaxis not responding to epinephrine in a patient on chronic beta-blocker therapy (beta-blockade blunts epinephrine's effect). Bolus then infusion."
+    ] },
+
+    { "type": "heading", "level": 2, "text": "Sedation & opioid reversal" },
+    { "type": "table",
+      "columns": ["Agent", "Reverses", "Adult dose", "Pearl"],
+      "rows": [
+        ["Naloxone", "Opioid respiratory depression", "0.04–0.4 mg IV, titrate to breathing (not full waking)", "Short half-life — watch for re-narcotization; infusion for long-acting opioids. In dependence, full reversal IS the adverse event (precipitated withdrawal). Peds ≤ 5 y / 20 kg: 0.1 mg/kg/dose."],
+        ["Flumazenil", "Benzodiazepine sedation", "0.2 mg IV, repeat to max ~1 mg", "NOT reflexive in undifferentiated overdose. Antagonizes the benzo's own anticonvulsant effect — unmasks seizures from co-ingested proconvulsants (TCAs: found in 42% of flumazenil-seizure cases). Avoid in chronic benzo use, seizure history, mixed/unknown ingestion."]
+      ]
+    },
+    { "type": "text", "text": "Naloxone is low-risk and reasonable to trial; flumazenil is not." },
+
+    { "type": "heading", "level": 2, "text": "Neuromuscular blockade reversal" },
+    { "type": "table",
+      "columns": ["Agent", "Reverses", "Dose", "Pearl"],
+      "rows": [
+        ["Sugammadex", "Rocuronium / vecuronium ONLY (not atracurium / cisatracurium)", "2 mg/kg moderate block · 4 mg/kg deep block · 16 mg/kg immediate reversal post-intubation", "Restored TOF ≥ 0.9 within 5 min in 98% vs 11% with neostigmine (deep block). Same mg/kg in peds (studied to birth). Keep monitoring after redosing."],
+        ["Neostigmine + glycopyrrolate", "Non-depolarizing blockers via acetylcholinesterase inhibition", "Neostigmine 50 mcg/kg (max 5 mg) + glycopyrrolate 10 mcg/kg", "Only works once spontaneous recovery has reached T2 — useless in deep block. Check TOF before choosing the agent, not after extubation."]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "Poison-induced cardiogenic shock — an escalating ladder" },
+    { "type": "text", "text": "Beta-blocker, calcium-channel-blocker, and sodium-channel-blocker (TCA and related) overdoses converge on bradycardia + hypotension + a dying myocardium and share an antidote ladder rather than one fix." },
+    { "type": "table",
+      "columns": ["Agent", "Indication", "Adult dose", "Pearl"],
+      "rows": [
+        ["Sodium bicarbonate", "QRS widening from Na-channel blockade (TCA, also citalopram, cocaine, flecainide, diphenhydramine, hydroxychloroquine)", "1 mEq/kg IV bolus (0.5–3), then infusion to target pH 7.50–7.55", "Treat the QRS, not the acidosis — give it for QRS widening even without acidemia; stop once the QRS narrows. Peds < 2 y: use dilute 4.2% solution."],
+        ["Calcium (gluconate or chloride)", "CCB toxicity, hyperkalemia, magnesium toxicity", "Chloride ≈ 3× elemental calcium of equal-volume gluconate but more caustic — give centrally. Peds: gluconate 60–100 mg/kg/dose", "For hyperkalemia, calcium stabilizes the membrane but doesn't shift K⁺ — add albuterol + insulin/dextrose."],
+        ["Glucagon", "Beta-blocker overdose (± CCB co-ingestion)", "Bolus then infusion. Peds 0.05–0.15 mg/kg IV over 1–2 min", "Drives cAMP through a separate G-protein pathway — works with the receptor fully occupied. Chronically under-dosed and under-lasting; won't carry a severe overdose alone."],
+        ["High-dose insulin / euglycemia (HIE)", "Refractory BB or CCB shock", "Regular insulin ~1 U/kg bolus, then 0.5–1 U/kg/h (higher in refractory cases) + concentrated dextrose (≥ 20%) + frequent glucose/K⁺ checks", "Increasingly FIRST-LINE at tox-experienced centers, not a last resort — the old 'glucagon, then calcium, then maybe insulin' undersells how early HIE should start. Watch for delayed hypoglycemia after weaning."]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "Toxidrome rescue agents" },
+    { "type": "text", "text": "Serotonin syndrome develops over hours with hyperreflexia, clonus, tremor (neuromuscular hyperactivity); NMS develops over days with rigidity and sluggish reflexes (hypoactivity)." },
+    { "type": "table",
+      "columns": ["Agent", "For", "Adult dose", "Pearl"],
+      "rows": [
+        ["Cyproheptadine", "Serotonin syndrome not controlled by drug cessation + benzos + supportive care", "12 mg PO/NG load, then 2 mg q2h to response (~32 mg/day). Tablet only — crush for NG", "Adjunct, not a substitute for stopping the serotonergic agents. Evidence inconclusive."],
+        ["Bromocriptine", "NMS, moderate-to-severe, usually with dantrolene", "2.5 mg NG/PO q6–8h, uptitrate. Enteral only — no IV", "Untreated NMS mortality ~21% → ~8% with dantrolene or bromocriptine alone; combination trends better. Prothrombotic (VTE prophylaxis)."],
+        ["Benztropine or diphenhydramine", "Acute dystonic reaction (antipsychotics, metoclopramide, prochlorperazine) — minutes, not days", "Benztropine 1–2 mg IV/IM, or diphenhydramine 25–50 mg IV/IM. Peds: diphenhydramine 1 mg/kg (max 50 mg)", "Restores dopamine–ACh balance. Don't confuse a dystonic reaction (alert, frightened, posturing) with NMS (days, fever, rigidity, altered consciousness)."]
+      ]
+    },
+    { "type": "text", "text": "Dantrolene is also used off-label in NMS (see below)." },
+
+    { "type": "heading", "level": 2, "text": "Anesthesia-specific emergencies" },
+    { "type": "table",
+      "columns": ["Agent", "For", "Dose", "Pearl"],
+      "rows": [
+        ["Dantrolene", "Malignant hyperthermia (+ stop triggers, 100% O2, active cooling)", "2.5 mg/kg IV push q5–10 min to ~10 mg/kg (some need 20); maintenance 1 mg/kg q4–6h ≥ 24 h. Identical mg/kg at all ages (MHAUS)", "Recrudescence in ~20%, median 8.7 h, 80% by 16 h — keep watching. Reconstitution is slow; call for hands early and know where it's stocked."],
+        ["Lipid emulsion 20% (Intralipid)", "Local anesthetic systemic toxicity (LAST)", "< 70 kg: 1.5 mL/kg bolus over 2–3 min → 0.25 mL/kg/min. > 70 kg: 100 mL bolus → 250 mL over 15–20 min. Repeat bolus / double infusion if unstable. Max ~12 mL/kg", "ASRA 2020: benzodiazepines (not propofol) for LAST seizures; for arrest reduce epinephrine to < 1 mcg/kg boluses, avoid vasopressin / CCB / beta-blockers / other local anesthetics."]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "Antidote by substance" },
+    { "type": "table",
+      "columns": ["Substance", "Antidote", "Adult dose / notes"],
+      "rows": [
+        ["Organophosphate / carbamate", "Atropine + pralidoxime", "Atropine in doubling doses until secretions dry (atropinize to clear lungs, not to dilated pupils); pralidoxime per weight protocol before the enzyme ages. Peds atropine 0.02–0.05 mg/kg — the 0.1 mg minimum does NOT apply here."],
+        ["Anticholinergic toxidrome (TCA, antihistamine, jimsonweed)", "Physostigmine", "0.5–1 mg IV/IM over 5–10 min, may repeat. AVOID if TCA cardiotoxicity (wide QRS) — can precipitate seizures / asystole. Reserve for clear anticholinergic delirium without conduction abnormality."],
+        ["Acetaminophen", "N-acetylcysteine (NAC)", "Weight-based PO or 3-bag IV protocol, guided by the Rumack-Matthew nomogram (level ≥ 4 h post-ingestion). ~100% hepatoprotective if started < 8 h; still helps after 24 h or in established failure. Start empirically if timing unknown or > 8 h."],
+        ["Digoxin", "Digoxin-specific Fab (DigiFab)", "By ingested amount or steady-state level. Thresholds: acute ≥ 10 mg or level ≥ 10 ng/mL; chronic toxicity with instability, refractory bradyarrhythmia, or K⁺ > 5.0–5.5. Treat the rhythm and the K⁺, not the post-Fab level (unreliable for days)."],
+        ["Iron", "Deferoxamine", "~15 mg/kg/hr infusion; consider at serum iron ≥ 350 mcg/dL with symptoms or ≥ 500 regardless. Watch for hypotension (free iron is a vasodilator). Disproportionately a toddler ingestion."],
+        ["Lead", "Succimer (DMSA); dimercaprol + CaNa2EDTA for severe/encephalopathy", "Succimer 10 mg/kg q8h ×5 d then q12h ×14 d for BLL > 45 (child) / > 80 (adult). Encephalopathy: dimercaprol FIRST, then CaEDTA 4 h later (EDTA before dimercaprol can mobilize lead INTO the brain). Note: dimercaprol no longer manufactured in the US since 2023 — succimer or CaEDTA monotherapy + tox consult."],
+        ["Isoniazid seizures (benzo-refractory)", "Pyridoxine (vitamin B6)", "Gram-for-gram with the ingestion if known; up to 5 g IV empiric. INH starves GABA synthesis, so benzos underperform until pyridoxine restores the substrate."],
+        ["Methotrexate", "Leucovorin (folinic acid)", "15 mg (or 10 mg/m²) IV/PO q6h, start as soon as toxicity is recognized; escalate to glucarpidase for severe toxicity with renal dysfunction. The longer MTX sits intracellularly, the harder to rescue."],
+        ["Valproate (hyperammonemia / hepatotoxicity)", "L-carnitine", "IV load + infusion (optimal dose unsettled; IV preferred — oral bioavailability 14–18%). Valproate depletes carnitine needed for the fatty-acid metabolism that keeps ammonia detox running."],
+        ["Sulfonylurea overdose", "Octreotide", "~1 mcg/kg SC/IV q6h alongside dextrose. Suppresses endogenous insulin, breaking the dextrose→insulin→hypoglycemia cycle. NOT for exogenous insulin overdose (sustained dextrose is the mainstay there)."],
+        ["Methemoglobinemia", "Methylene blue", "1–2 mg/kg IV over 5 min, repeat in 1 h if MetHb > 30%. AVOID in G6PD deficiency (fails and worsens hemolysis); MAO-A inhibitor → serotonin syndrome risk on SSRIs. Infant Heinz-body hemolysis reported at doses as low as 4 mg/kg."],
+        ["Carbon monoxide", "100% normobaric O2 ± HBOT", "Non-rebreather immediately (cuts CO half-life ~4–6 h → ~1 h), continue until COHb ~3% and ≥ 6 h. HBOT is genuinely contested (Weaver 2002 favored it; Scheinkestel 1999 did not) — consider for LOC, COHb > 25%, pregnancy, or neuro/cardiac findings; don't delay stabilization hunting for a chamber."],
+        ["Cyanide", "Hydroxocobalamin", "5 g IV (peds 70 mg/kg, max 5 g). Think of it in enclosed-space smoke inhalation with unexplained lactic acidosis. Avoid nitrite-based kits in smoke inhalation (adds MetHb to a CO-loaded patient)."],
+        ["Methanol / ethylene glycol", "Fomepizole", "15 mg/kg load, then 10 mg/kg q12h ×4, then 15 mg/kg q12h until levels clear (adjust around dialysis). Blocks alcohol dehydrogenase before toxic metabolites form. Adverse events 12% vs 57% with ethanol — first-line where stocked."]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "Envenomation & biological toxins" },
+    { "type": "callout", "tone": "info", "text": "Antivenom is dosed to neutralize a venom load, not scaled to patient size — a small child gets the same vial count as an adult with a comparable bite." },
+    { "type": "table",
+      "columns": ["Antivenom", "For", "Dose", "Pearl"],
+      "rows": [
+        ["CroFab (Crotalidae Polyvalent Immune Fab)", "North American pit viper (rattlesnake, copperhead, cottonmouth)", "~4 vials copperhead, 6–12 rattlesnake, up to 12-vial initial max; repeat to control per protocol", "NOT one-and-done. Recurrent / delayed coagulopathy is common, mostly in patients who missed maintenance dosing — recheck coagulation for days before any procedure or discharge."],
+        ["Latrodectus antivenom", "Black widow, severe systemic symptoms not controlled by calcium + benzos + opioids", "Typically 1 vial, equine-derived", "Latrodectism is painful but rarely fatal; equine antivenom carries real anaphylaxis / serum-sickness risk — reserve for severe or refractory cases."],
+        ["Anascorp (Centruroides Immune F(ab')2)", "Scorpion envenomation with cranial-nerve / neuromuscular signs (Arizona bark scorpion)", "3 vials IV over 10 min, then 1 vial q30–60 min if symptoms persist", "Mean time to resolution ~1.4 h. The country-of-origin protocol uses 1 vial with watchful waiting at comparable outcomes — expect a toxicologist to push toward a lower starting dose."],
+        ["Botulinum antitoxin (heptavalent) / BabyBIG", "Foodborne, wound, adult intestinal botulism / infant botulism (< 1 y)", "Via CDC or state health department (adult); BabyBIG 50 mg/kg IV via the California Infant Botulism Treatment Program (infant, any state)", "Neutralizes only circulating unbound toxin — halts progression, does not reverse established paralysis. Treat on clinical suspicion; don't request heptavalent for a suspected infant case."]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "Anticoagulant reversal" },
+    { "type": "text", "text": "Protamine (heparin / LMWH), vitamin K + 4F-PCC (warfarin), idarucizumab (dabigatran), the post-2025 factor Xa inhibitor reversal picture, TEG/ROTEM interpretation, and the PATCH data on antiplatelet ICH all live in the anticoagulation-reversal module — not duplicated here so both stay accurate as guidance changes. Pediatric anticoagulant reversal is a separate lookup — don't extrapolate adult fixed-dose regimens onto a child." }
+  ],
+  "related": ["anticoagulation-reversal", "last-lipid-rescue", "pressor-inotrope-reference", "ecg-library", "osmolal-gap"],
+  "buildNote": "Tier 3. Large source (13 sections, pediatric dosing throughout) — this module keeps adult doses in-line and calls out the peds doses that are clinically distinct (naloxone, epi, bicarb dilution, atropine no-floor, methylene blue infant Heinz body). A dedicated peds-antidotes card and a beta-blocker/CCB-overdose decision workflow are natural follow-ons. Methylene blue also still owed as an anescalc-core drug card."
+}

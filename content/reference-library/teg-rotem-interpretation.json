@@ -1,0 +1,118 @@
+{
+  "id": "teg-rotem-interpretation",
+  "section": "Reference Library",
+  "category": "Anticoagulation & Labs",
+  "title": "TEG / ROTEM Interpretation",
+  "aliases": ["thromboelastography", "viscoelastic testing", "TEG 5000 vs TEG 6s", "ROTEM assays", "FIBTEM EXTEM INTEM", "platelet mapping", "goal-directed transfusion"],
+  "tags": ["TEG", "ROTEM", "viscoelastic testing", "coagulopathy", "massive transfusion", "hyperfibrinolysis", "platelet mapping", "goal-directed transfusion", "trauma", "ICU", "OR"],
+  "keywords": ["R time", "K time", "alpha angle", "MA", "LY30", "CFF-MA", "CK CKH CRT", "MCF A10", "APTEM", "reptilase", "TEG-PM"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — TEG Interpretation: A Complete Teaching Guide (TEG 5000 + TEG 6s + ROTEM crosswalk)",
+    "Whiting D, DiNardo JA. TEG and ROTEM: technology and clinical applications. Am J Hematol 2014;89(2):228-232",
+    "Einersen PM et al. Rapid TEG thresholds for goal-directed resuscitation. J Trauma Acute Care Surg 2017;82(1):114-119",
+    "Robson JL et al. Correlation between TEG 5000 and TEG 6s during liver transplant. Anaesth Intensive Care 2019;47(2):124-131"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV TEG teaching guide: raw tracing, TEG 5000 parameters, TEG 6s channels, platelet mapping, the 5000↔6s↔ROTEM crosswalk, goal-directed framework, tracing-by-shape, pitfalls, special populations." }],
+  "summary": "Viscoelastic testing measures the physical strength of a clot as it forms, matures, and breaks down in whole blood — enabling product-specific, goal-directed transfusion instead of empiric 1:1:1 ratios. Treat the parameter that is actually abnormal.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "The raw tracing" },
+    { "type": "text", "text": "Every parameter is a labeled point on one spindle-shaped curve: R = time to initial clot formation · K = time to a fixed early amplitude · α (alpha angle) = slope of the widening curve · MA = peak width, i.e. clot strength · LY30 = amplitude lost 30 min after MA." },
+
+    { "type": "heading", "level": 2, "text": "TEG 5000 — the classic five (single kaolin-activated channel)" },
+    { "type": "table",
+      "columns": ["Parameter", "Definition", "Normal", "Reflects", "Treat with"],
+      "rows": [
+        ["R time", "Sample run → initial fibrin (1–2 mm amplitude)", "5–10 min", "Coagulation factor activity", "FFP; PCC if severe / urgent"],
+        ["K time", "End of R → 20 mm amplitude", "1–3 min", "Fibrinogen (thrombin burst / early cross-linking)", "Cryoprecipitate"],
+        ["Alpha angle", "Slope of the widening tracing — speed of fibrin accumulation", "53–72°", "Fibrinogen AND platelet contribution together", "Cryoprecipitate ± platelets"],
+        ["MA (max amplitude)", "Widest point — ultimate clot strength", "50–70 mm", "Platelet number and function (dominant driver)", "Platelets; DDAVP for qualitative dysfunction"],
+        ["LY30", "% amplitude reduction 30 min after MA", "0–8%", "Excess fibrinolysis", "TXA or aminocaproic acid"]
+      ]
+    },
+    { "type": "callout", "tone": "info", "text": "Trauma-specific thresholds refine these: R time beyond ~ 2× normal predicts massive-transfusion need, and LY30 > 3% in the injured patient (a lower bar than the general reference range) identifies clinically significant hyperfibrinolysis warranting an antifibrinolytic. Myth: alpha angle is NOT a pure fibrinogen measure — on the TEG 5000 alone, isolated fibrinogen deficiency cannot be cleanly separated from platelet dysfunction. That gap is what the TEG 6s functional-fibrinogen channel closes." },
+
+    { "type": "heading", "level": 2, "text": "TEG 6s — four channels from one draw" },
+    { "type": "table",
+      "columns": ["Channel", "Activator", "Key parameter(s)", "Isolates"],
+      "rows": [
+        ["CK (Citrated Kaolin)", "Kaolin — the TEG 5000 analog", "R, LY30", "Global factor activity; baseline hyperfibrinolysis screen"],
+        ["CRT (Citrated RapidTEG)", "Kaolin + tissue factor", "MA, faster R", "Rapid overall clot strength when time is critical (massive transfusion)"],
+        ["CKH (Citrated Kaolin + Heparinase)", "Kaolin + heparinase", "R", "True factor status with heparin effect removed — compare CK-R vs CKH-R to detect heparin"],
+        ["CFF (Citrated Functional Fibrinogen)", "Kaolin + tissue factor + a GPIIb/IIIa platelet inhibitor", "MA (fibrinogen-only)", "Isolated fibrinogen contribution — MA correlates directly with Clauss fibrinogen"]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "Platelet mapping (TEG-PM) — antiplatelet drug effect" },
+    { "type": "text", "text": "Standard channels fully activate platelets, so routine MA cannot see aspirin or P2Y12 effect. TEG-PM adds heparinized channels that isolate platelet contribution by agonist. % inhibition = 100 − [(MA_agonist − MA_Fibrin) ÷ (MA_Thrombin − MA_Fibrin) × 100]." },
+    { "type": "table",
+      "columns": ["Channel", "MA represents"],
+      "rows": [
+        ["MA Thrombin (standard kaolin)", "100% baseline platelet contribution"],
+        ["MA Fibrin (heparin + Activator F / reptilase)", "0% platelet contribution — fibrin-only clot"],
+        ["MA AA (+ arachidonic acid)", "COX-1 / thromboxane pathway — aspirin effect"],
+        ["MA ADP (+ ADP)", "P2Y12 receptor — clopidogrel / prasugrel / ticagrelor effect"]
+      ]
+    },
+    { "type": "text", "text": "Use: perioperative antiplatelet management before neuraxial anesthesia or urgent surgery, identifying clopidogrel non-responders after PCI, guiding platelet transfusion when reversing DAPT for an urgent bleed or ICH." },
+
+    { "type": "heading", "level": 2, "text": "Crosswalk — TEG 5000 ↔ TEG 6s ↔ ROTEM" },
+    { "type": "table",
+      "columns": ["Clinical question", "TEG 5000", "TEG 6s", "ROTEM"],
+      "rows": [
+        ["Clotting factors adequate?", "R time", "CK-R", "INTEM CT / CFT"],
+        ["Heparin present?", "Separate heparinase channel needed", "CK-R vs CKH-R", "HEPTEM vs INTEM CT"],
+        ["Fibrinogen low?", "K time / alpha angle (platelet-confounded)", "CFF-MA (more specific)", "FIBTEM MCF or A10 (platelets blocked with cytochalasin D)"],
+        ["Overall clot strength?", "MA", "CRT-MA (fastest) or CK-MA", "EXTEM / INTEM MCF (A10 as early surrogate)"],
+        ["Hyperfibrinolysis?", "LY30", "CK-LY30", "EXTEM ML / LI30; APTEM confirms (adds aprotinin)"]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "Numerical values are NOT interchangeable between platforms — head-to-head comparison in liver transplant found considerable inter-device variability. Trend a patient on one platform; do not convert a TEG 5000 result to a TEG 6s or ROTEM threshold. APTEM is the one ROTEM assay with no TEG analog: if adding an antifibrinolytic normalizes an abnormal EXTEM, that confirms hyperfibrinolysis and supports giving TXA." },
+
+    { "type": "heading", "level": 2, "text": "Goal-directed transfusion" },
+    { "type": "table",
+      "columns": ["Abnormal parameter", "Deficiency", "Treat with"],
+      "rows": [
+        ["R / CK-R prolonged (heparin excluded)", "Coagulation factors", "FFP, or PCC if rapid correction needed"],
+        ["CK-R prolonged but CKH-R normal", "Heparin effect, not factor deficiency", "Protamine (patient-specific) rather than more factor product"],
+        ["K prolonged / alpha low / CFF-MA low", "Fibrinogen", "Cryoprecipitate, or fibrinogen concentrate where available"],
+        ["MA / CRT-MA / CK-MA low (fibrinogen adequate)", "Platelet number or function", "Platelets; DDAVP for qualitative defects"],
+        ["LY30 / CK-LY30 elevated", "Hyperfibrinolysis", "TXA or aminocaproic acid — NOT more factor or platelet product"]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "Reading the tracing by shape" },
+    { "type": "table",
+      "columns": ["Appearance", "Likely interpretation"],
+      "rows": [
+        ["Long flat line before any widening", "Prolonged R — factor deficiency or heparin effect"],
+        ["Narrow, slow-widening spindle", "Low alpha / prolonged K — fibrinogen deficiency (confirm with CFF)"],
+        ["Short, narrow spindle overall", "Low MA — thrombocytopenia or platelet dysfunction"],
+        ["Wide spindle that narrows sharply after the peak", "Elevated LY30 — hyperfibrinolysis"],
+        ["Wide spindle, slow to narrow, persists over time", "Hypercoagulable state — consider VTE prophylaxis escalation"]
+      ]
+    },
+
+    { "type": "heading", "level": 2, "text": "Pitfalls & pre-analytical limits" },
+    { "type": "list", "items": [
+      "Line/catheter contamination: a heparin flush in the draw falsely prolongs R — discard the first several mL or use a discrete venipuncture.",
+      "Sample run outside the validated window: citrate rest-time drift changes R and K — follow the lab's rest-then-run protocol (~ 30 min citrate rest).",
+      "Testing at 37 °C in a hypothermic patient masks coagulopathy that is real at the patient's actual temperature.",
+      "Anemia / low hematocrit paradoxically inflates MA and lowers alpha angle independent of true platelet or fibrinogen status — interpret MA against the concurrent Hct.",
+      "Standard MA cannot distinguish 'too few platelets' from 'platelets present but not working' — correlate with the count or add platelet mapping."
+    ] },
+
+    { "type": "heading", "level": 2, "text": "Special populations" },
+    { "type": "list", "items": [
+      "Pregnancy: a physiologic hypercoagulable state — shorter R, steeper alpha, higher MA than non-pregnant ranges. In postpartum hemorrhage, fibrinogen is the first to fall and the strongest single predictor of progression — trend CFF-MA / FIBTEM rather than waiting on standard coags.",
+      "Cirrhosis: INR and platelet count overstate bleeding risk (they ignore the parallel loss of protein C/S and elevated vWF that rebalance hemostasis at a lower set point). TEG/ROTEM reflect this and reduce unnecessary pre-procedure FFP — but neither reliably captures the qualitative platelet defects or portal-hypertension hyperfibrinolysis of advanced disease.",
+      "Pediatric / neonatal: developmental hemostasis shifts normal ranges with age — use age-specific reference ranges, not adult cutoffs."
+    ] }
+  ],
+  "related": ["anticoagulation-reversal", "blood-products", "neuraxial-anticoagulation", "septic-shock-resuscitation"],
+  "buildNote": "Tier 3, ~6-month review (technology + threshold refinements). Deeper than the TEG/ROTEM table in anticoagulation-reversal — that module's table can link here. An annotated tracing graphic (media) is a later add."
+}

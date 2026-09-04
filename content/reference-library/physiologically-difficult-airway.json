@@ -1,0 +1,97 @@
+{
+  "id": "physiologically-difficult-airway",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "The Physiologically Difficult Airway",
+  "aliases": ["resuscitate before you intubate", "peri-intubation arrest", "hypotensive airway", "hypoxemic airway", "acidotic airway", "RV failure airway", "induction matrix", "DSI delayed sequence intubation"],
+  "tags": ["airway", "intubation", "RSI", "peri-intubation arrest", "preoxygenation", "shock", "acidosis", "RV failure", "ketamine", "etomidate", "ED", "ICU"],
+  "keywords": ["PREOXI", "FELLOW", "PrePARE", "PREPARE II", "RSI trial", "shock index", "modified shock index", "push-dose pressor", "shunt physiology", "minute ventilation match"],
+  "contentType": "reference",
+  "content_version": 3,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2026-12-03",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — The Physiologically Difficult Airway (checks the anesthesianotes/KarthikMD airway carousel against trial data)",
+    "PREOXI (Casey JD et al. NEJM 2024;390:1949-1961); FELLOW (Semler MW et al. AJRCCM 2016)",
+    "PrePARE (Janz DR et al. Lancet Respir Med 2019); PREPARE II (Russell DW et al. JAMA 2022;328:270-279)",
+    "RSI trial — ketamine vs etomidate (Casey JD, Semler MW et al. NEJM, Dec 9 2025) + companion meta-analysis Crit Care Med 2025",
+    "Preoxygenation reserve: Farmery AD, Roe PG. Br J Anaesth 1996;76:284-291; Benumof JL et al. Anesthesiology 1997;87:979-982"
+  ],
+  "changelog": [
+    { "version": 3, "date": "2026-09-03", "change": "Folded in the CV Difficult Airway Physiology guide: INTUBE-study scale figures, the five stacking phases of peri-intubation collapse, and the induction-agent hemodynamic-profile table. Cross-linked the new anatomically-difficult-airway module." },
+    { "version": 2, "date": "2026-09-02", "change": "Added the preoxygenation-reserve section (Farmery & Roe desaturation times by patient type + succinylcholine recovery timeline) as an actionable bedside item." },
+    { "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV physiologically-difficult-airway deep dive. Four deadly profiles + the evidence-corrected induction matrix (incl. the Dec 2025 RSI trial)." }
+  ],
+  "summary": "Anatomy predicts whether you see the cords. Physiology decides whether the patient survives the apneic pause and the drugs. Four physiologic states kill patients with grade-1 views: hypoxemia, hypotension, metabolic acidosis, and RV failure. Resuscitate before you intubate.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "The scale of the problem — INTUBE" },
+    { "type": "text", "text": "INTUBE (n=2,964, 197 sites, 29 countries) put numbers on emergency ICU intubation: cardiovascular instability in 42.6%, severe hypoxaemia (SpO2 < 80%) in 9.3%, and cardiac arrest within 30 min in 3.1%. Peri-intubation cardiovascular collapse carried an adjusted OR of 2.47 (95% CI 1.72-3.55) for ICU death. Emergency intubation is a haemodynamic intervention, not just a mechanical one — prepare the physiology before you prepare the airway." },
+    { "type": "heading", "level": 3, "text": "Why \"stable\" is misleading — the catecholamine surge" },
+    { "type": "text", "text": "Critically ill patients hold apparent stability through an endogenous sympathetic surge (tachycardia, vasoconstriction, raised myocardial O2 demand). That is compensation, not reserve. Induction agents abolish the drive within seconds — abrupt SVR loss, falling CO, organ hypoperfusion: \"adrenergic collapse\". A high HR or elevated BP in a sick patient signals fragility that needs optimisation, not stability that permits immediate intubation. Vasopressors first, induction second." },
+    { "type": "heading", "level": 3, "text": "Five stacking phases — each compounds the last" },
+    { "type": "list", "items": [
+      "Pre-induction adrenergic dependence — sympathetic surge is the only thing holding up BP and CO; remove it and collapse follows.",
+      "Induction-agent sympatholysis — SVR drops and CO falls within seconds of the drug.",
+      "Apnoea and desaturation — hypoxaemia → myocardial ischaemia → reduced contractility, arrhythmia.",
+      "Transition to positive-pressure ventilation — raised intrathoracic pressure cuts venous return, preload and CO.",
+      "Post-intubation sedation — ongoing vasodilation and sympatholysis, cumulative on all of the above."
+    ] },
+    { "type": "heading", "level": 3, "text": "Induction agents — haemodynamic profile" },
+    { "type": "table",
+      "columns": ["Agent", "CO", "SVR", "MAP", "HR", "Key consideration"],
+      "rows": [
+        ["Propofol", "↓↓", "↓↓", "↓↓", "↓ / →", "Direct vasodilation + myocardial depression — avoid in haemodynamic compromise"],
+        ["Ketamine", "↑", "→ / ↑", "→ / ↑", "↑", "Sympathomimetic, preserves BP; raises myocardial O2 demand; no mortality edge and MORE CV collapse vs etomidate in the 2025 RSI trial"],
+        ["Etomidate", "→", "→", "→", "→", "Most haemodynamically neutral; transient (~24 h) adrenal suppression; preferred when collapse risk is highest"],
+        ["Midazolam", "↓", "↓", "↓", "↓ / →", "Significant vasodilation, delirium risk — not preferred for RSI"],
+        ["Remimazolam", "→", "↓ / →", "↓ / →", "→", "Titratable; limited ICU outcome data"]
+      ]
+    },
+    { "type": "text", "text": "INTUBE component definition of CV instability (for reference): SBP < 65 at any point, SBP < 90 for > 30 min, new or escalating vasopressor, or a fluid bolus > 15 mL/kg." },
+
+    { "type": "heading", "level": 2, "text": "Preoxygenation reserve — how much apnea time you're buying" },
+    { "type": "text", "text": "At an alveolar O2 fraction of 0.87 (thorough preoxygenation), a healthy 70 kg adult takes ~9.9 min of apnea to fall to 60% SaO2; on room air (FAO2 0.13) the same patient hits 60% at 2.8 min. That gap is the case for full, not partial, preoxygenation. Desaturation speed, fastest to slowest: obese 127 kg adult > 10 kg child > moderately ill adult > healthy adult (children: high metabolic rate relative to FRC; obese: raised O2 consumption + mechanically reduced FRC; illness: reduced FRC and/or increased shunt). Succinylcholine 1 mg/kg paralysis lasts ~6.8 min to 10% twitch recovery, 8.5 min to 50%, 10.2 min to 90% — longer than the safe apnea window in a healthy adult, so 'the patient will just wake up and breathe' is not a valid failed-airway backup plan." },
+
+    { "type": "heading", "level": 2, "text": "The hypoxemic airway" },
+    { "type": "list", "items": [
+      "Shunt physiology (pneumonia, ARDS, cardiogenic edema) — blood through unventilated lung — does not respond to supplemental O2 the way V/Q mismatch does, so patients look stable on high-flow O2 then crater within seconds of losing respiratory effort.",
+      "Preoxygenation: PREOXI (n=1,301) — severe hypoxemia (SpO2 < 85%) in 9.1% with NIV vs 18.5% with an O2 mask. NIV or a tight BVM with PEEP, not a nonrebreather alone, when SpO2 won't climb toward 95%.",
+      "Apneic oxygenation: low-risk and reasonable to leave running, but FELLOW found no difference in lowest SpO2 when preoxygenation was already adequate — the benefit signal came from OR / prehospital series, not NIV-preoxygenated ICU patients.",
+      "Delayed sequence intubation (DSI): dissociative-dose ketamine to allow effective preoxygenation in an agitated/intolerant patient before paralysis. It's a preoxygenation strategy, not a separate induction technique."
+    ] },
+
+    { "type": "heading", "level": 2, "text": "The hypotensive airway" },
+    { "type": "list", "items": [
+      "Positive pressure + induction agents remove sympathetic drive and venous return at the same moment; an already-failing circulation has nothing left to compensate with.",
+      "Shock index (HR/SBP): trends higher in peri-intubation arrest but weaker than a hard cutoff (NEAR: mean 0.97 in arrest cases vs 0.83 controls). Modified shock index (HR/MAP) ≥ 1.3 and reverse shock index < 1 associate more strongly. Treat SI > 0.8 as a flag to look harder, not a decision threshold.",
+      "Fluid does not fix this: PrePARE (2019) and PREPARE II (2022, JAMA, n=337) both found a routine 500 mL crystalloid bolus before intubation did NOT reduce cardiovascular collapse. Push-dose pressor on the pole and vasopressor readiness before induction — not a reflex bolus.",
+      "Induction agent (2025): the RSI trial (NEJM Dec 9 2025, n=2,365, 14 US EDs/ICUs) — ketamine showed NO mortality advantage over etomidate and MORE cardiovascular collapse during intubation (companion meta-analysis RR 1.29 for hemodynamic instability with ketamine). Neither agent is safe in shock; dose reduction + pressor readiness matter more than the drug choice. The 'ketamine is uniformly more cardiostable' claim does not hold."
+    ] },
+
+    { "type": "heading", "level": 2, "text": "The acidotic airway" },
+    { "type": "text", "text": "DKA, severe lactic acidosis, and salicylate toxicity share one mechanism: a falling pH held up entirely by a high minute ventilation blowing off CO2. The moment a paralytic stops that ventilation, CO2 rises uncontested, pH falls further, and the patient can arrest from acidemia alone — independent of oxygenation. Salicylate poisoning is the most dramatic: apnea can precipitate collapse within minutes as unbound salicylate redistributes into the CNS with falling pH." },
+    { "type": "callout", "tone": "danger", "text": "Match the ventilator to the patient's own pre-intubation minute ventilation and respiratory rate immediately after tube placement — not a default 12–16. Under-ventilating a compensating acidotic patient recreates the exact physiology that just killed the last one. Ketamine is favored here for preserving spontaneous respiratory drive through the induction window, buying time to correct pH." },
+
+    { "type": "heading", "level": 2, "text": "The RV-failure airway" },
+    { "type": "list", "items": [
+      "Pulmonary hypertension, massive PE, and RV infarct produce a thin, pressure-sensitive RV near its afterload limit. Positive pressure drops preload and can raise PVR in the same breath; hypoxia, hypercapnia, and acidosis each independently vasoconstrict the pulmonary bed.",
+      "Pressor selection is NOT interchangeable: phenylephrine (pure α1) raises PVR along with SVR — worsening RV afterload when the RV can least afford it. Norepinephrine raises MAP and RV coronary perfusion pressure with less pulmonary vasoconstriction — the favored first agent in acute cor pulmonale. Low-dose vasopressin raises SVR via V1 with a neutral-to-favorable pulmonary effect — a reasonable adjunct.",
+      "The death spiral is self-reinforcing: positive pressure + induction drop preload and MAP → RV coronary perfusion falls below the elevated RV wall tension → RV ischemia drops contractility → transient hypoxia/hypercapnia adds a PVR spike. Break it by treating preload, contractility, and PVR simultaneously, not sequentially."
+    ] },
+
+    { "type": "heading", "level": 2, "text": "Induction matrix (evidence-corrected)" },
+    { "type": "table",
+      "columns": ["Profile", "Induction approach", "Key move", "Evidence caveat"],
+      "rows": [
+        ["Hypoxemia", "Ketamine (DSI when preoxygenation is limited by agitation)", "NIV or tight BVM + PEEP preoxygenation to SpO2 ≥ 95% before pushing drugs", "ApOx via nasal cannula is low-risk but adds little once NIV preoxygenation is adequate (FELLOW)"],
+        ["Hypotension", "Reduced-dose ketamine or etomidate", "Pressor ready before induction; resuscitate with pressor, not reflex fluid", "Routine fluid bolus does not reduce collapse (PrePARE, PREPARE II); ketamine no longer the clearly 'safer' agent (RSI trial 2025)"],
+        ["Metabolic acidosis", "Ketamine", "Set post-intubation ventilator rate to the patient's pre-intubation minute ventilation", "Under-ventilation, not the drug choice, is the lethal error"],
+        ["RV failure", "Ketamine or etomidate, low airway-pressure technique", "Norepinephrine ± vasopressin before induction; avoid phenylephrine; avoid hypoxia / hypercapnia / acidosis", "Phenylephrine's α1 effect extends to the pulmonary bed and raises RV afterload"]
+      ]
+    },
+    { "type": "text", "text": "Rocuronium 1.2 mg/kg for first-pass success holds across all four profiles and is well supported independent of hemodynamic status. Dose reduction and pressor readiness belong to the induction agent regardless of which one is chosen — no agent is hemodynamically free in true shock." }
+  ],
+  "related": ["anatomically-difficult-airway", "airway-management-flow", "macocha-score", "modified-shock-index", "shock-index", "capnography", "pressor-inotrope-reference", "ventilator-management"],
+  "buildNote": "Tier 1 (currency — RSI trial Dec 2025, PREOXI/PREPARE II, INTUBE). Cross-linked from airway-management-flow. v3 folded in CV_Difficult_Airway_Physiology.html (INTUBE figures, five stacking phases, agent haemodynamic table); the anatomic/procedural failed-airway drill lives in the sibling anatomically-difficult-airway module."
+}

@@ -1,0 +1,191 @@
+{
+  "id": "preeclampsia-eclampsia-hellp",
+  "section": "Reference Library",
+  "category": "Obstetric & Gynecologic",
+  "title": "Preeclampsia / Eclampsia / HELLP",
+  "aliases": [
+    "preeclampsia severe features",
+    "eclampsia magnesium protocol",
+    "HELLP syndrome",
+    "severe hypertension pregnancy",
+    "magnesium sulfate seizure prophylaxis",
+    "Tennessee criteria"
+  ],
+  "tags": [
+    "preeclampsia",
+    "eclampsia",
+    "HELLP",
+    "hypertensive emergency",
+    "magnesium sulfate",
+    "labetalol",
+    "hydralazine",
+    "seizure prophylaxis",
+    "OB",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "SBP >= 160 treat within 15-60 min",
+    "labetalol 20-40-80",
+    "hydralazine 5-10 mg",
+    "magnesium 6 g load 1-2 g/hr",
+    "therapeutic 4-7 mEq/L",
+    "calcium gluconate 1 g antidote",
+    "deliver >= 34 weeks HELLP"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Critical Vector — OB Pocket Guide: Preeclampsia / Eclampsia / HELLP (ACOG 2024)",
+    "ACOG Practice Bulletin on gestational hypertension and preeclampsia; AHA OBLS 2024; Tennessee HELLP criteria (Sibai)"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-02",
+      "change": "Initial entry — diagnostic criteria + severe features, the severe-hypertension treatment table, the full magnesium protocol (loading / maintenance / monitoring / antidote), and HELLP with delivery timing."
+    }
+  ],
+  "summary": "Severe-range BP (SBP ≥ 160 or DBP ≥ 110, sustained) must be treated within 15–60 minutes to prevent haemorrhagic stroke — target 140–155 / 90–105. Magnesium sulfate is for seizure prophylaxis and treatment, NOT for blood pressure. Definitive treatment is delivery.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Diagnosis (≥ 20 weeks, previously normotensive)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "SBP ≥ 140 OR DBP ≥ 90 on two occasions ≥ 4 h apart, PLUS proteinuria (≥ 300 mg/24 h, P:Cr ≥ 0.3, or dipstick ≥ 2+),",
+        "OR — without proteinuria — any of: thrombocytopenia, renal insufficiency, transaminitis, pulmonary oedema, new headache, or visual disturbance."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Severe features (any one)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "SBP ≥ 160 or DBP ≥ 110 (sustained on two readings ≥ 4 h apart, or once if antihypertensive already started).",
+        "Platelets < 100,000.",
+        "Creatinine > 1.1 mg/dL or doubling of baseline.",
+        "AST/ALT > 2× ULN, ± RUQ / epigastric pain (suggests HELLP).",
+        "Pulmonary oedema.",
+        "New headache unresponsive to medication, or visual disturbance."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Severe hypertension — treat within 15–60 min"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Drug",
+        "Dose",
+        "Notes"
+      ],
+      "rows": [
+        [
+          "Labetalol IV",
+          "20 → 40 → 80 mg q10 min (max 300 mg cumulative)",
+          "Onset ~5 min. Avoid in asthma / severe bradycardia / decompensated HF"
+        ],
+        [
+          "Hydralazine IV",
+          "5–10 mg IV q20 min, max ~20 mg",
+          "Onset 10–20 min; more maternal hypotension — have fluids + fetal monitoring ready"
+        ],
+        [
+          "Nifedipine PO (immediate-release)",
+          "10–20 mg PO q20 min, max 50 mg/hr",
+          "Preferred when no IV access. Compatible with magnesium (the old neuromuscular-blockade concern wasn't borne out)"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Target 140–155 / 90–105 mmHg — avoid over-correction (uteroplacental insufficiency, fetal distress)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Magnesium sulfate protocol"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "",
+        "Dose / value"
+      ],
+      "rows": [
+        [
+          "Loading (eclampsia)",
+          "6 g IV over 15–20 min (OBLS); 4–6 g if for prophylaxis only"
+        ],
+        [
+          "Maintenance",
+          "1–2 g/hr IV infusion"
+        ],
+        [
+          "Therapeutic level",
+          "4–7 mEq/L (4.8–8.4 mg/dL)"
+        ],
+        [
+          "Monitoring",
+          "Hourly: deep tendon reflexes (absent → STOP), respiratory rate (≥ 12/min), urine output (≥ 25 mL/hr)"
+        ],
+        [
+          "Toxicity",
+          "Loss of DTRs ~ 7–10 mEq/L (stop the infusion); respiratory depression ~ 12–15 mEq/L; cardiac arrest higher"
+        ],
+        [
+          "Antidote",
+          "Calcium gluconate 1 g IV over 3 min"
+        ],
+        [
+          "Duration",
+          "Continue for 24 h after delivery OR after the last seizure"
+        ],
+        [
+          "Renal impairment",
+          "Give the load, then reduce or hold the maintenance and follow levels — magnesium is renally cleared"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Eclamptic seizure: most are self-limited — protect the airway, left lateral, O2, and give / continue magnesium (a bolus of 2–4 g IV over 5 min for a breakthrough seizure on the infusion). Magnesium is superior to phenytoin AND benzodiazepines for eclampsia. Persistent seizures despite magnesium → a benzodiazepine, then levetiracetam / fosphenytoin, and reconsider the differential (intracranial haemorrhage, PRES, other)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "HELLP syndrome"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Tennessee criteria — Haemolysis (LDH > 600 U/L, schistocytes, bilirubin > 1.2 mg/dL) + Elevated Liver enzymes (AST/ALT > 2× ULN) + Low Platelets (< 100,000). 'Partial' HELLP has one or two of the three.",
+        "Can occur with only mildly elevated BP or none. RUQ / epigastric pain, nausea, malaise. Watch for hepatic haematoma / rupture, abruption, DIC, AKI.",
+        "Delivery: promptly after maternal stabilisation if ≥ 34 weeks, or at any gestation if maternal or fetal condition is deteriorating (DIC, hepatic infarct/haematoma, abruption, non-reassuring fetal status, uncontrollable severe hypertension).",
+        "< 34 weeks and stable: a short course of antenatal corticosteroids + magnesium, then deliver. Steroids improve fetal lung maturity — the transient platelet bump is not a reason to delay delivery when indicated.",
+        "Platelet transfusion: for platelets < 20,000, or < 50,000 with active bleeding or before a caesarean."
+      ]
+    }
+  ],
+  "related": [
+    "emergency-drugs-pregnancy",
+    "maternal-cardiac-arrest",
+    "postpartum-hemorrhage",
+    "status-epilepticus-adult",
+    "sodium-disorders"
+  ],
+  "buildNote": "Tier 1. ACOG / OBLS 2024. Complements emergency-drugs-pregnancy. PRES and the differential for a postpartum seizure could be an expansion."
+}
