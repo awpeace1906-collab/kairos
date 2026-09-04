@@ -1,0 +1,55 @@
+{
+  "id": "pedi-tape-weight-zones",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Weight Zones & Equipment Sizing",
+  "aliases": ["Pedi Tape", "Broselow zone", "length-based tape", "pediatric equipment sizing", "ETT size by weight", "color zone"],
+  "tags": ["weight zone", "equipment sizing", "ETT", "LMA", "laryngoscope blade", "defibrillator pads", "resuscitation", "PALS"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2027-03-03",
+  "review_tier": 1,
+  "sources": ["Kairos weight-zones.json (Teal–Charcoal 9-zone scheme)", "APLS weight-estimation formulae", "2025 PALS"],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — readable presentation of the 9-zone equipment table, the age→weight fallback formulae, and the ETT-size / vitals rules of thumb." }],
+  "kind": "reference",
+  "purpose": "A visual/navigation anchor that maps a child's weight to equipment sizes. The colour zone NEVER supplies a drug dose — every dose and fluid volume is computed live from the exact weight (or an age estimate). The zone gives equipment sizes and a shared colour only.",
+  "ageRange": "Neonate to ~50 kg (roughly term birth to 12–14 years)",
+  "sourceOfTruth": ["peds-epinephrine-arrest", "holliday-segar-maintenance-fluids", "peds-drip-rate"],
+  "body": [
+    { "type": "callout", "tone": "warning", "text": "Weigh the child if at all possible. Use an age estimate only when a weight is genuinely unmeasurable, and flag the result as 'estimated'. Zone boundaries are design parameters, not clinical constants — confirm the defibrillator pad crossover against the specific device in use." },
+    { "type": "heading", "level": 2, "text": "Zones — equipment" },
+    { "type": "table",
+      "columns": ["Zone / colour", "Weight", "ETT (uncuffed)", "LMA", "Blade", "Defib pads", "BP cuff"],
+      "rows": [
+        ["1 · Teal", "3–5 kg", "3.0–3.5", "1", "Miller 0–1", "Paediatric", "Neonatal"],
+        ["2 · Sky", "6–8 kg", "3.5–4.0", "1", "Miller 1", "Paediatric", "Infant"],
+        ["3 · Indigo", "9–11 kg", "4.0–4.5", "1.5", "Miller 1", "Paediatric", "Infant"],
+        ["4 · Violet", "12–14 kg", "4.5–5.0", "2", "Miller 1–2", "Paediatric", "Child (small)"],
+        ["5 · Amber", "15–18 kg", "5.0–5.5", "2", "Macintosh 2", "Paediatric", "Child"],
+        ["6 · Coral", "19–23 kg", "5.5–6.0", "2.5", "Macintosh 2", "Paed/adult transition", "Child"],
+        ["7 · Slate", "24–29 kg", "6.0 (consider cuffed)", "2.5", "Macintosh 2", "Adult", "Child (large)"],
+        ["8 · Forest", "30–36 kg", "6.0–6.5 cuffed", "3", "Macintosh 2–3", "Adult", "Adult (small)"],
+        ["9 · Charcoal", "37–50 kg", "6.5–7.0 cuffed", "3", "Macintosh 3", "Adult", "Adult"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Weight estimate (fallback only)" },
+    { "type": "table",
+      "columns": ["Age band", "Estimated weight (kg)"],
+      "rows": [
+        ["0–12 months", "(0.5 × age in months) + 4"],
+        ["1–5 years", "(2 × age in years) + 8"],
+        ["6–12 years", "(3 × age in years) + 7"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Rules of thumb" },
+    { "type": "list", "items": [
+      "Uncuffed ETT size = (age/4) + 4; cuffed = (age/4) + 3.5. Depth (cm at lip) ≈ ETT size × 3, or (age/2) + 12.",
+      "Cuffed tubes are now preferred beyond the neonatal period (keep cuff pressure < 20–25 cmH2O).",
+      "Lowest acceptable SBP ≈ 70 + (2 × age in years) for ages 1–10; < 70 in neonates/infants is hypotension.",
+      "Defibrillation 2 J/kg first shock, 4 J/kg subsequent (up to the adult dose). Synchronised cardioversion 0.5–1 J/kg, then 2 J/kg.",
+      "Fluid bolus 10–20 mL/kg isotonic crystalloid, reassess after each; 10 mL/kg in DKA, cardiogenic, or neonates."
+    ] }
+  ],
+  "buildNote": "Presentation layer over content/config/weight-zones.json. Doses always come from the live weight, never from the zone."
+}

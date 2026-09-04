@@ -1,0 +1,67 @@
+{
+  "id": "newborn-routine-care",
+  "section": "Peds Module",
+  "category": "Neonatology",
+  "title": "Routine Newborn Care & Normal Findings",
+  "aliases": ["vitamin K newborn", "eye prophylaxis erythromycin", "newborn exam timeline", "discharge checklist newborn", "normal newborn variants", "newborn vitals"],
+  "tags": ["neonatal", "routine care", "vitamin K", "eye prophylaxis", "newborn exam", "discharge", "normal variants", "OB", "Peds"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2027-03-02",
+  "review_tier": 3,
+  "sources": [
+    "Critical Vector — Neonatology Pocket Guide: Assessment, Exam Timeline & Routine Care",
+    "AAP / Bright Futures newborn care; AAP 2022 hyperbilirubinemia (pre-discharge bilirubin risk assessment)"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — normal vitals, the routine-care order, the three exams, normal findings not to mistake for pathology, and the pre-discharge checklist." }],
+  "kind": "reference",
+  "purpose": "Normal term-newborn parameters, the routine-care sequence, and the findings that are normal variants — so a benign finding doesn't trigger an unnecessary workup and a real one isn't missed.",
+  "ageRange": "Term newborn (37–42 weeks)",
+  "sourceOfTruth": [],
+  "body": [
+    { "type": "heading", "level": 2, "text": "Normal term-newborn parameters" },
+    { "type": "table",
+      "columns": ["Parameter", "Normal range"],
+      "rows": [
+        ["Heart rate", "110–160 bpm"],
+        ["Respiratory rate", "30–60 / min"],
+        ["Temperature (axillary)", "36.5–37.5 °C"],
+        ["Blood pressure", "~60–70 / 31–45 mmHg (varies with GA / weight)"],
+        ["Birth weight", "2500–4000 g (avg ~3.3 kg)"],
+        ["Length", "48–53 cm"],
+        ["Head circumference", "33–37 cm"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Routine care (in order)" },
+    { "type": "list", "items": [
+      "Dry, remove wet linen, skin-to-skin or warmer.",
+      "Early breastfeeding; 8–12 feeds / 24 h on demand.",
+      "Vitamin K₁ 0.5–1 mg IM within 6 h of birth — prevents vitamin K deficiency bleeding.",
+      "Eye prophylaxis: erythromycin 0.5% ophthalmic ointment (gonococcal ophthalmia).",
+      "Umbilical cord care: keep clean and dry.",
+      "Glucose monitoring in at-risk infants (IDM, SGA / LGA, preterm, symptomatic).",
+      "Monitor output: first void by 24 h, first meconium by 48 h."
+    ] },
+    { "type": "heading", "level": 2, "text": "The three newborn examinations" },
+    { "type": "table",
+      "columns": ["Exam", "Timing", "Focus"],
+      "rows": [
+        ["1st", "Delivery room", "Apgar, gestational age, anomalies / birth injury"],
+        ["2nd", "Day 3–4", "Complete systematic — jaundice, seizures, vomiting, cyanosis"],
+        ["3rd", "Before discharge", "Metabolic screen, vaccinations, hearing screen, red reflex"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Normal — do NOT mistake for pathology" },
+    { "type": "text", "text": "Skull moulding · breast hypertrophy (maternal hormone withdrawal) · vaginal bleeding / mucoid discharge in girls (pseudomenses, first week) · liver edge palpable 1–2 cm below the costal margin · palpable spleen tip · meconium in the first stool · erythema toxicum · milia · Epstein pearls." },
+    { "type": "heading", "level": 2, "text": "Before discharge" },
+    { "type": "list", "items": [
+      "Newborn metabolic (bloodspot) screening.",
+      "Vaccinations per schedule (at minimum the Hep B birth dose).",
+      "Newborn hearing screening.",
+      "Document the red reflex (rules out cataract, retinoblastoma).",
+      "Pre-discharge bilirubin risk assessment (AAP 2022 — TSB/TcB plotted on the hour-specific nomogram)."
+    ] }
+  ],
+  "buildNote": "Tier 3, low churn. Related: apgar-score, neonatal-jaundice, nrp-algorithm."
+}

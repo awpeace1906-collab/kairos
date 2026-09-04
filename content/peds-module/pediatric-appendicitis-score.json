@@ -1,0 +1,85 @@
+{
+  "id": "pediatric-appendicitis-score",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Pediatric Appendicitis Score (PAS)",
+  "aliases": ["PAS", "peds appendicitis", "Samuel score"],
+  "tags": ["appendicitis", "abdominal pain", "RLQ pain", "peds", "imaging decision"],
+  "contentType": "peds-tool",
+  "content_version": 2,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": [
+    "Samuel M. J Pediatr Surg 2002",
+    "Critical Vector — Pediatric Appendicitis: Three Scores, One Diagnosis (Alvarado vs PAS vs pARC)",
+    "Kharbanda AB et al. pARC derivation/validation. Pediatrics 2018;141(4):e20172699",
+    "Cotton DM et al. pARC community-ED validation. Ann Emerg Med 2019;74(4):471-480"
+  ],
+  "changelog": [
+    { "version": 2, "date": "2026-09-02", "change": "Added the three-score comparison (Alvarado / PAS / pARC), the head-to-head AUC + decisiveness data (49% vs 23%), and sharpened per-tool pitfalls from the CV audit." },
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry — PAS filed in Peds Module nav per Peds_Module_Content_Spec.md." }
+  ],
+  "kind": "calculator",
+  "purpose": "Fast ED risk stratification for appendicitis in children when clinical suspicion is already present. A LOW score does not reliably rule appendicitis out — do not treat it as reassurance.",
+  "ageRange": "Children (~3-18 y)",
+  "sourceOfTruth": [],
+  "body": [
+    { "type": "heading", "level": 2, "text": "Three scores, three jobs — not interchangeable" },
+    { "type": "table",
+      "columns": ["Tool", "Structure", "Best suited for"],
+      "rows": [
+        ["Alvarado (MANTRELS)", "8 items, 0–10 points (adult-derived, applied to kids by convention)", "Low-tech primary-care / outpatient settings with limited labs"],
+        ["PAS (this tool)", "8 pediatric-focused items, 0–10 points", "Fast ED confirmation when clinical suspicion is already high"],
+        ["pARC (Pediatric Appendicitis Risk Calculator)", "7-variable logistic regression → continuous % risk (NOT a point score)", "The most individualized estimate; best for guiding the actual imaging decision in kids ≥ 5"]
+      ]
+    },
+    { "type": "text", "text": "pARC's variables: sex, age, duration of pain, guarding, pain migration, maximal RLQ tenderness, and absolute neutrophil count (ANC) — ANC specifically, which is what separates it from both Alvarado and PAS." },
+    { "type": "heading", "level": 3, "text": "Performance (pARC vs PAS, AUC)" },
+    { "type": "table",
+      "columns": ["Study", "Setting", "pARC AUC", "PAS AUC"],
+      "rows": [
+        ["Kharbanda 2018 (derivation/validation)", "9 academic pediatric EDs", "0.85 (0.83–0.87)", "0.77 (0.75–0.80)"],
+        ["Cotton 2019 (independent validation)", "11 community EDs", "0.89 (0.87–0.92)", "0.80 (0.77–0.82)"]
+      ]
+    },
+    { "type": "callout", "tone": "info", "text": "The number to remember: 49% vs 23%. In the pARC validation cohort, pARC confidently classified nearly half of patients into a clearly low-risk (< 15%) or clearly high-risk (≥ 85%) category — where clinicians can act on the number directly. A comparably confident PAS cutoff (< 3 or > 8) captured only 23%. pARC's advantage is even larger in real-world community-ED data than in the original derivation." },
+    { "type": "heading", "level": 2, "text": "Per-tool pitfalls" },
+    { "type": "list", "items": [
+      "Alvarado: heavily weighted toward WBC (nonspecific) — over-diagnoses in non-appendiceal inflammatory conditions. More accurate at the score extremes than in the equivocal mid-range.",
+      "PAS: a score < 4 does NOT reliably exclude appendicitis — do not treat it as reassurance. The cough/hop/percussion item is unreliable in young or uncooperative children. Not a sole decision tool in known GI disease, pregnancy, or prior abdominal surgery.",
+      "pARC: validated only in children ≥ 5 y with < 96 h of pain — below that age appendicitis is rare and atypical, and the tool isn't built for it. Requires ANC as an input, not available at every point of care."
+    ] }
+  ],
+  "embeddedCalculator": {
+    "id": "pediatric-appendicitis-score-calc",
+    "section": "Peds Module",
+    "category": "Peds Resuscitation & Decision Support",
+    "title": "Pediatric Appendicitis Score",
+    "contentType": "calculator",
+    "content_version": 1,
+    "review_tier": 1,
+    "last_reviewed": "2026-08-31",
+    "next_review_due": "2026-11-30",
+    "sources": ["Samuel M. J Pediatr Surg 2002"],
+    "engine": "additive",
+    "purpose": "10-point clinical + lab score for pediatric appendicitis.",
+    "items": [
+      { "key": "migration", "label": "Migration of pain to the RLQ", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+      { "key": "anorexia", "label": "Anorexia", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+      { "key": "nausea", "label": "Nausea or vomiting", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+      { "key": "tenderness", "label": "RLQ tenderness on palpation", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+      { "key": "coughHop", "label": "Pain with cough / percussion / hopping", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+      { "key": "fever", "label": "Fever ≥ 38.0 °C", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+      { "key": "leukocytosis", "label": "WBC ≥ 10,000 /mm³", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+      { "key": "leftShift", "label": "Neutrophilia (ANC ≥ 7,500 /mm³ or ≥ 75% neutrophils)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+    ],
+    "interpretation": [
+      { "min": 0, "max": 3, "label": "Low probability", "detail": "Appendicitis unlikely but NOT excluded — consider observation and serial exams; imaging if suspicion persists.", "severity": "low" },
+      { "min": 4, "max": 6, "label": "Equivocal", "disposition": "Ultrasound (first line in children) ± serial exam; consider surgical consultation", "severity": "moderate" },
+      { "min": 7, "max": 10, "label": "High probability", "disposition": "Surgical consultation; imaging often still obtained to confirm", "severity": "high" }
+    ],
+    "buildNote": "Cough/hop/percussion findings are unreliable in young or uncooperative children. For the most individualized estimate in kids ≥ 5, prefer pARC (needs ANC)."
+  },
+  "buildNote": "PAS, Alvarado, and pARC are NOT interchangeable — PAS for fast ED confirmation, Alvarado for low-tech/outpatient, pARC for the individualized imaging decision in kids ≥ 5. Surface that distinction in the UI."
+}

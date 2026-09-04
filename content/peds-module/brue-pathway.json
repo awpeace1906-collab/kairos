@@ -1,0 +1,39 @@
+{
+  "id": "brue-pathway",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "BRUE Pathway",
+  "aliases": ["brief resolved unexplained event", "ALTE", "apparent life-threatening event"],
+  "tags": ["BRUE", "infant", "apnea", "cyanosis", "risk stratification", "disposition"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-08-31",
+  "next_review_due": "2026-11-30",
+  "review_tier": 1,
+  "sources": [
+    "AAP 2016 Clinical Practice Guideline (Tieder JS et al. Pediatrics 2016;137(5):e20160590)",
+    "Brooks AF et al. Pediatrics 2019;144(2):e20184101 (higher-risk framework)"
+  ],
+  "flags": ["needs-primary-source"],
+  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry — lower-risk pathway matches AAP 2016 exactly; higher-risk side is a stub pending the 2019 framework." }],
+  "kind": "decision-tree",
+  "purpose": "Classify an infant event as a BRUE, then stratify lower- vs higher-risk to guide testing and disposition.",
+  "ageRange": "Infants < 1 year",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Step 1 — Is it a BRUE?" },
+    { "type": "text", "text": "An episode in an infant < 1 year, lasting < 1 minute (typically 20-30 s), with ≥ 1 of: cyanosis or pallor; absent, decreased, or irregular breathing; marked change in tone (hyper- or hypotonia); altered responsiveness — AND no explanation found after a full history and exam. If there is an explanation (e.g. GERD, choking, infection), it is not a BRUE — work up the cause." },
+    { "type": "heading", "level": 2, "text": "Step 2 — Lower-risk (ALL must be true)" },
+    { "type": "list", "items": [
+      "Age > 60 days",
+      "Gestational age ≥ 32 weeks AND corrected gestational age ≥ 45 weeks",
+      "No CPR by a trained medical provider",
+      "Event lasted < 1 minute",
+      "First event (no prior BRUE)",
+      "No concerning history or physical exam findings"
+    ] },
+    { "type": "callout", "tone": "info", "text": "Lower-risk: brief monitoring (continuous pulse oximetry + serial observation), parental education on BRUE and CPR, shared decision-making. Do NOT routinely obtain labs, imaging, admission, or home monitors. May consider a 12-lead ECG and pertussis testing." },
+    { "type": "heading", "level": 2, "text": "Higher-risk (fails any lower-risk criterion)" },
+    { "type": "callout", "tone": "warning", "text": "STUB. The 2016 AAP guideline does not cover the higher-risk infant. Build this branch from Brooks AF et al. Pediatrics 2019;144(2):e20184101 — a tiered framework — rather than improvising. Default until then: admission with workup guided by the specific concerning features present." }
+  ],
+  "buildNote": "Lower-risk pathway is safe to build now. Higher-risk branch needs the 2019 paper (listed in docs/OPEN_ITEMS.md)."
+}
