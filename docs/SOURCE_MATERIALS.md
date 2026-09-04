@@ -117,7 +117,7 @@ placeholder `#4bb3a7` collides with AnesCalc's "Deep Teal" theme — change it).
 
 | File | Feeds | Notes |
 |---|---|---|
-| `POCUS_Nerve_Block_Reference.html` (52 KB) | `pocus-guide`, `nerve-block-guide` | "POCUS-Guided Nerve Block — Procedural Reference". Original CV content → replaces the Tier-2 placeholder text. |
+| `POCUS_Nerve_Block_Reference.html` (52 KB) | `pocus-guide`, `nerve-block-guide` | "POCUS-Guided Nerve Block — Procedural Reference". Original CV content → replaces the Tier-2 placeholder text. 🟢 **DONE 2026-09-04** — re-supplied and used to close the "still open: nerve-block as an interactive tree" item: new `pocus-nerve-block-checklist` procedure (workflow outputType, 6-node sequential run-through + a tickable 10-rule safety checklist), built from the guide's Part II step-by-step sequence. `nerve-block-guide` → v3, cross-linked. Dosing tables + the full LAST algorithm deliberately NOT restated (already the single source of truth in `nerve-block-guide` / `last-lipid-rescue`). |
 | `CV Guides/POCUS_Master_Guide.html` (7.4 MB) | `pocus-guide` (all exams) | Full POCUS guide, EM/CC/anesthesia. Large — has embedded images; extract text + decide on media. |
 | `CV Guides/asra_neuraxial_guide.html` (16 KB) | new `neuraxial-anticoagulation` ref + `nerve-block-guide` | ASRA 5th ed neuraxial-block-on-anticoagulants: DOAC stop/restart times, heparin, antiplatelets, warfarin. |
 | `CV Guides/sutures-tying-guide.html` (287 KB) | `laceration-repair` (technique nodes) | Suture/knot-tying technique — deepens the laceration decision tree. |
@@ -185,10 +185,10 @@ buildNote asked for. Still needs the **local antibiogram** for drug/dose specifi
 | File | Feeds |
 |---|---|
 | `CV Guides/physiologically-difficult-airway.html` | 🟢 **DONE 2026-09-02** → new `physiologically-difficult-airway` ref (4 deadly profiles + evidence-corrected induction matrix, incl. RSI trial Dec 2025); `airway-management-flow` v2 cross-links it + adds a physiologic-optimisation step. |
-| `CV Guides/difficult_airway.html` + `CV_Difficult_Airway_Physiology.html` | anatomically difficult airway → new ref, still to convert |
+| `CV Guides/difficult_airway.html` + `CV_Difficult_Airway_Physiology.html` | 🟢 **DONE 2026-09-03** → new `anatomically-difficult-airway` ref (DAS 2025 Plans A-D, the Vortex, scalpel-bougie-tube eFONA, human factors, team brief) + new `macocha-score` calculator; `CV_Difficult_Airway_Physiology.html` folded into `physiologically-difficult-airway` v3 (INTUBE figures, 5 stacking phases, agent haemodynamic table). |
 | `CV Guides/awake_intubation_guide.html` | 🟢 **DONE 2026-09-02** → new `awake-intubation` procedure (workflow: decide → contraindications → prepare → topicalise ≤ 9 mg/kg LBW → 'just enough' sedation → HFNC → intubate → THEN induce; DSI fallback). |
 | `CV Guides/refractory_vf_dsed.html` | 🟢 **DONE 2026-09-02** → `acls-adult-cardiac-arrest` v2 refractory-VF section (vector change vs DSED, DOSE-VF results + honest caveats, sequential-not-simultaneous). |
-| `CV Guides/code_blue_guide.html` + `pediatric_code_blue_guide.html` | still to convert — cross-check `acls-adult-cardiac-arrest` + a peds arrest card |
+| `CV Guides/code_blue_guide.html` + `pediatric_code_blue_guide.html` | 🟢 **DONE 2026-09-04** → new `code-leadership-run-the-room` ref (role assignment, closed-loop, CPR-quality targets, epi timing, calcium/bicarb not-routine, refractory-VF move); `acls-adult-cardiac-arrest` → v3 (matching calcium COCA / bicarb BIHCA lines); new `peds-cardiac-arrest` peds-tool (PALS 1-2-4 numbers card). |
 | `CV Guides/bis_monitoring.html` | new `bis-monitoring` ref (sedation workflow) |
 
 ---
@@ -202,7 +202,9 @@ buildNote asked for. Still needs the **local antibiogram** for drug/dose specifi
 | `CV Guides/uw_em_drug_guide.html` (54 KB) | adult ED drug reference — new cards or cross-check |
 | `CV Guides/emergency-drugs-pregnancy.html` (49 KB) | new `ob-emergency-drugs` ref (OB/Newborn section) |
 | `CV Guides/rocuronium_dosing.html` | `peds-rocuronium-rsi` cross-check |
-| `The_Critical_Vector_HTML_Library/CV_Ketamine_Clinical_Pharmacology.html` + `CV_ketamine-drip-pcc.html` + `CV Guides/spice-iii-dexmedetomidine.html` + `remimazolam_guide.html` | sedation drug refs / AnesCalc cards |
+| `The_Critical_Vector_HTML_Library/CV_ketamine-drip-pcc..html` | 🟢 **DONE 2026-09-04** → folded into the `ketamine` AnesCalc drug card v2 (JTS prolonged-casualty-care sedation infusion: load, starting rate, 3 mg/mL mix, titration step, one-drug-per-bag caution). The rate-conversion tables (mL/hr, drop-count) were left as prose math rather than a live calculator — candidate for a small infusion-rate calculator later. |
+| `The_Critical_Vector_HTML_Library/CV_Ketamine_Clinical_Pharmacology.html` + `CV Guides/spice-iii-dexmedetomidine.html` + `remimazolam_guide.html` | sedation drug refs / AnesCalc cards |
+| `CV Guides/dex_polyuria_guide.html` | 🟢 **DONE 2026-09-04** → folded into the `dexmedetomidine` AnesCalc drug card v2 (polyuria / DI-mimic caution: 3-pathway AVP-AQP2 mechanism, recognition, exclusion list, management). |
 
 ---
 
@@ -216,8 +218,12 @@ buildNote asked for. Still needs the **local antibiogram** for drug/dose specifi
 | `CV Guides/iv_fluids_guide.html` | 🟢 **DONE 2026-09-02** → new `iv-fluids` ref (7-fluid composition + best-use table, sepsis-vs-TBI population choice, permissive hypotension, PROPPR, contradictory prehospital-plasma record, the traps). |
 | `CV Guides/volemic_status_resuscitation.html` | 🟢 **DONE 2026-09-02** → Ezplaz (first FDA-licensed US freeze-dried plasma, July 2026) folded into `iv-fluids` v2. Rest is a near-dup of `iv_fluids_guide`. |
 | `CV Guides/push-pull-albumin-furosemide.html` | 🟢 **DONE 2026-09-02** → new `albumin-furosemide-push-pull` ref (when it works / is a waste, 25% vs 5%, 30–60 min timing, revised-Starling mechanism, Chalikias 2026). |
-| `CV Guides/volemic_status_resuscitation.html` (VExUS / fluid-responsiveness part) | still to convert — VExUS / de-resuscitation module |
+| `CV Guides/volemic_status_resuscitation.html` (residual) | 🟢 **DONE 2026-09-04** — the guide is hemorrhagic-shock fluid strategy, not VExUS (that row was mislabelled). Fully covered: `iv-fluids` v2 (Ezplaz + prehospital-plasma record) + `hemorrhagic-shock-mtp` v2 (austere / no-blood-available section: freeze-dried plasma ≠ red cells, crystalloid by population). A true VExUS / venous-congestion module is still worth building from other sources. |
 | `CV Guides/hypertonic_saline_vs_mannitol.html` | 🟢 **DONE 2026-09-02** → new `hyperosmolar-therapy` ref (mechanism, acute-window evidence, dosing, safety hard-stops, volume-status bedside decision). |
+| `CV Guides/ci_aki_prevention_guide.html` | 🟢 **DONE 2026-09-02** (reference: `contrast-associated-aki`, tracking row missing until now) + 🟢 **DONE 2026-09-04** → new `mehran-ci-akin-score` calculator (the Mehran score existed only as prose/table in the reference; now also an interactive calculator, cross-linked both ways). |
+| `The_Critical_Vector_HTML_Library/CV_Drug_Interactions_Reference.html` | 🟢 **DONE 2026-09-04** → new `drug-interactions-high-yield` ref (9 mechanism/risk/fix pairs, 3 antibiotic-specific toxicities, QT-prolonging drug-class quick list). |
+| `The_Critical_Vector_HTML_Library/CV_Austere_Disaster_Medicine.html` (Part Three) | 🟢 **DONE 2026-09-04** → new `crush-syndrome` ref (entrapment physiology, 2-hour tourniquet/isolation threshold, hyperkalaemia treatment ladder, goal-directed fluid resuscitation, austere renal-replacement bridging). Parts One/Two still open — see "New content types" below. |
+| *(tracking cleanup)* `CV_ICU_Workflow_Admission_Rounding_Signout.html`, `CV_ECMO_Advanced_Circulatory_Support.html`, `CV_Perioperative_Hyperglycemia.html`, `CV_Cesarean_Section_Pain_Management_PROSPECT.html` | Discovered 2026-09-04 to already be **fully converted** (`icu-workflow`, `ecmo-support`, `perioperative-glycemic-management`, `csection-analgesia-prospect`) — these rows were simply never added when the conversions happened. No content gap; documentation-only fix. |
 | `CV Guides/biostatistics-for-clinicians.html` | new `ebm` / biostats ref |
 
 ### `~/Desktop/CV Resources/Extremis/build_package/ED_ICU_OR_Calculators.xlsx` — the calculator spec
@@ -247,8 +253,19 @@ interactive New Orleans Criteria. The Done nomogram is deliberately not built �
   could seed a "quick reference" view or the home-screen cheat sheet.
 - **`mnemonics_guide.html`, `perls_map.html`** — cross-cutting; could be a
   Reference Library "pearls & mnemonics" module.
-- **`ballistics_blast_manual`, `CV_Austere_Disaster_Medicine`** — out of current
-  scope (no Procedures/Reference home yet); park.
+- **`CV_Austere_Disaster_Medicine`** — Reference Library now has an obvious home
+  (Resuscitation & Airway, same as hemorrhagic-shock-mtp/trauma-team-activation).
+  Part Three (Crush Syndrome) converted 2026-09-04 → new `crush-syndrome`. Parts
+  One/Two (hazmat scene management/toxidromes, white-phosphorus/incendiary
+  casualties) still to convert — general toxidrome recognition already lives in
+  `toxidromes-and-overdoses`, but scene management and incendiary-injury care
+  are genuinely uncovered.
+- **`ballistics_blast_manual_v6_lightmode.html` (84 KB)** and
+  **`intoxicating-substances-reference.html` (154 KB, 12 classes / 39
+  substances)** — both large, high-value, and out of scope for a single batch;
+  each needs its own dedicated conversion pass (ballistics likely splits into
+  several Trauma reference modules; the substances reference likely splits by
+  drug class). Next big-ticket content projects.
 
 ---
 

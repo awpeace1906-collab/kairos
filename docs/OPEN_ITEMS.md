@@ -394,6 +394,164 @@ Last updated: 2026-09-01
   (2-min timeout on a ~2s script) and the dev server's `predev` sync. Static
   checks pass (CSS braces balanced, `node --check` on home.js). Eyeball with
   `npm --prefix web run dev` from a healthy terminal.
+  - **Palette VERIFIED live** later the same session (disk I/O eased enough to run
+    `web/server.mjs`): parchment `rgb(242,241,237)` ground, ember `#C6521C`
+    selected-chip with white text, all 5 section tiles carrying their `--sec-*`
+    tint left-borders, IBM Plex Sans stack active, dark-mode charcoal parity.
+    Committed + pushed as `fa00db3`. Remote added: `github.com/awpeace1906-collab/kairos`.
+  - **CI on first push (fa00db3):** `content-deploy` **build** job green (deploy
+    bundle builds with the new palette). `content-deploy` **deploy** job red —
+    GitHub Pages needs a paid plan for private repos; hosting decision parked
+    (options: make repo public / GH Pro / Cloudflare Pages / defer). `ios-ci` red
+    — **pre-existing**, unrelated: XcodeGen (latest via brew) emits Xcode-16
+    project format, `macos-14` runner has Xcode 15.4. Fix staged in
+    `.github/workflows/ios-ci.yml` (→ `macos-15`, sim `iPhone 16`, `checkout@v5`),
+    not yet committed. `content-ci` was still running (slow `npm install`).
+- 2026-09-03 — **Airway content (+2 → 279 modules).** Converted the last flagged
+  CV airway guides. New: `anatomically-difficult-airway` (reference — DAS 2025
+  Plans A-D, MACOCHA anticipation, CAFG 3-attempt rule, the Vortex, scalpel-
+  bougie-tube eFONA steps, human factors, team-brief script, cheat sheet — the
+  procedural/failed-airway half, sibling to `physiologically-difficult-airway`);
+  `macocha-score` (calculator, additive, 7 factors 0-12, ICU difficult-intubation
+  predictor, ≥3 threshold). Bumped `physiologically-difficult-airway` → v3:
+  folded in `CV_Difficult_Airway_Physiology.html` (INTUBE scale figures 42.6% CV
+  instability / 3.1% arrest / adjusted OR 2.47 for ICU death; the five stacking
+  phases; the induction-agent haemodynamic-profile table). `validate.mjs` on the
+  degraded VM took ~7 min/run — first run flagged one stray `related` key on the
+  calculator (calculator schema is `unevaluatedProperties:false`); removed it,
+  folded that context into `notes`. Re-validate + build + test pending (bg run
+  still churning / to run from a healthy terminal).
+- 2026-09-04 — **Arrest content (+2 → 281 modules).** Converted the last three
+  flagged CV guides (`code_blue_guide.html`, `pediatric_code_blue_guide.html`,
+  `volemic_status_resuscitation.html`). New: `code-leadership-run-the-room`
+  (reference, Resus & Airway — role-assignment script, closed-loop comms,
+  CPR-quality targets, epi timing, calcium COCA / bicarbonate BIHCA-2026
+  "leave it in the drawer", refractory-VF A-P vector move, H&T as the leader's
+  diagnostic job); `peds-cardiac-arrest` (peds-tool — PALS 1-2-4 numbers card:
+  arrest/peri-arrest doses, defib & cardioversion energies, CPR mechanics,
+  quick card by scenario). Bumped `acls-adult-cardiac-arrest` → v3 (a "Drugs
+  that are NOT routine" section: calcium/bicarbonate/vasopressin/high-dose epi;
+  + `related` links). Bumped `hemorrhagic-shock-mtp` → v2 (austere /
+  no-blood-available: freeze-dried plasma is plasma-only ≠ red cells;
+  crystalloid choice by population — balanced for sepsis, saline for isolated
+  TBI). `volemic_status_resuscitation.html` was mislabelled in SOURCE_MATERIALS
+  as a VExUS source — it's hemorrhagic-shock fluid strategy, already covered by
+  `iv-fluids` v2; that row is corrected. A genuine VExUS / venous-congestion /
+  de-resuscitation module is still worth building from other sources.
+  Pipeline: same degraded-VM problem — `validate.mjs` stopped completing at all
+  (>9 min, no output). New files JSON-parse clean and match sibling schema
+  shapes; run `validate && build && test` from a healthy terminal to confirm
+  281/0/0 and regenerate manifest/search-index.
+- 2026-09-04 — **Drug-dosing category cleanup (14 → 10 perioperative categories)
+  + Sources Pass 1 + medical/legal disclaimer.**
+  - Dropped the "AnesCalc — " prefix everywhere and merged the four singleton
+    categories: Induction Agents + Benzodiazepines → **Induction & Sedation
+    Agents**; Reversal Agents + Anticholinergics → **Reversal & Anticholinergic
+    Agents**; Antiemetics + GI/Aspiration Prophylaxis → **Antiemetics &
+    Aspiration Prophylaxis**; Emergency Drugs + Methylene Blue → **Crisis /
+    Rescue Drugs**. Vasopressors → "Vasopressors & Inotropes", Anticoagulants →
+    "Anticoagulants & Hemostatics" (renamed, not merged). Applied to
+    `content/config/sections.json` and all 55 `drug-dosing/anescalc-core/*.json`
+    modules' `category` field (dry-run confirmed 55/55 mapped, 0 unmapped).
+    `tools/import-anescalc.mjs`'s `CATEGORY` map updated to match so a re-run
+    doesn't regress it. The other 2 drug-dosing categories (resus-dosing,
+    dosing-fluid-math) are untouched — 12 categories total in the section.
+  - **Sources Pass 1**: every content page now shows an always-visible numbered
+    "Sources" list at the bottom (was calculator-only, and collapsed) — added
+    to the shared web renderer (`content.js` `shell()` + `renderAnesthesiaDrugCard`,
+    `calculator.js`) via a new `sourcesBlock()` in `components.js`, and to iOS
+    via a new `SourcesBlock` view (`Components/ClearableField.swift`) wired into
+    `ReferenceBody`/`ProcedureBody`/`PedsToolBody`/`AnesthesiaDrugCardBody`/
+    `DrugCardView`/`CalculatorView`.
+  - **New global Sources page** next to About: `tools/build-sources-index.mjs`
+    (added to `build.mjs` + `sync-content.mjs`) aggregates every module's
+    `sources[]`, de-dupes, buckets into 5 groups (Guidelines · Trials ·
+    Cohort/registry/reviews · Reference texts · Other), and emits
+    `content/sources-index.json` — **453 unique sources across 281 modules**.
+    Web: `#/sources` route + `views/sources.js`, linked from the home footer
+    next to "About Kairos"; `ContentStore` loads it (empty-array fallback if
+    missing, so an old cached bundle can't break the app). iOS: `Route.sources`
+    + `SourcesView.swift`, a toolbar icon next to the ℹ️ About one;
+    `ContentStore.swift` loads it with `try?` (non-fatal if absent). Added
+    `sources-index.json` + `views/sources.js` to `web/sw.js`'s precache list
+    and bumped `SHELL_CACHE` to v2 (an offline-cached shell would otherwise
+    never pick up the new page).
+    This is Pass 1 (raw free-text strings, grouped by keyword heuristics) —
+    a structured `citations.json` registry (real authors/journal/year/DOI
+    fields, resolved by key) is the planned Pass 2; inline superscript
+    citations in body text are Pass 3.
+  - **Medical & legal disclaimer** added to both About pages (web `about.js`,
+    iOS `AboutView.swift`) — standard "reference/educational aid, not medical
+    advice, verify independently, no liability" language — with a short
+    pointer + link from the Sources page. There was previously no app-wide
+    disclaimer (only the narrow zone-vs-dose one in `weight-zones.json`).
+  - Pipeline: ran clean on this batch — `validate.mjs` **281/0/0**,
+    `build-sources-index.mjs` **453/281** (see above), full
+    `validate && build && test && sync-content` kicked off in the background
+    to confirm end-to-end after all of the above.
+- 2026-09-04 — **Content sweep of the full CV-guide inventory (+3 modules →
+  284; +2 drug-card version bumps).** Cross-referenced all ~88 CV Guides /
+  Critical Vector HTML Library files against `SOURCE_MATERIALS.md`; most
+  "not mentioned" hits turned out to be **already converted but never logged**
+  (`icu-workflow`, `ecmo-support`, `perioperative-glycemic-management`,
+  `csection-analgesia-prospect` — tracking rows added, no content gap). Real
+  gaps found and closed:
+  - New `mehran-ci-akin-score` calculator (additive, 7 factors incl. a
+    bucketed contrast-volume select) — the Mehran score existed only as a
+    prose table inside `contrast-associated-aki` (→ v2, cross-linked both
+    ways).
+  - New `drug-interactions-high-yield` reference (Critical Care) — 9
+    mechanism/risk/fix pairs (methotrexate+NSAIDs, digoxin+amiodarone,
+    clopidogrel+omeprazole, etc.) + 3 antibiotic-specific toxicities
+    (fluoroquinolone tendinopathy, linezolid neuropathy, daptomycin
+    myopathy) + a QT-prolonging drug-class quick list.
+  - New `crush-syndrome` reference (Resuscitation & Airway) — entrapment
+    ischaemia/reperfusion physiology, the 2-hour tourniquet/isolation
+    threshold, the hyperkalaemia treatment ladder, goal-directed fluid
+    resuscitation (200–300 mL/hr UOP target), austere renal-replacement
+    bridging. Converted from Part Three of `CV_Austere_Disaster_Medicine.html`
+    — Parts One/Two (hazmat scene management, incendiary/white-phosphorus
+    casualties) are still open.
+  - `dexmedetomidine` drug card → v2: added the polyuria / diabetes-insipidus
+    mimic caution (3-pathway AVP-AQP2 mechanism, recognition, exclusion list,
+    management) from a dedicated CV guide.
+  - `ketamine` drug card → v2: added the JTS prolonged-casualty-care sedation
+    infusion (load 1 mg/kg, start 1.5 mg/kg/hr / 25 mcg/kg/min, 3 mg/mL mix,
+    ±0.25 mg/kg/hr titration) + one-drug-per-bag / RASS-monitoring cautions.
+  **Deliberately deferred** (flagged in SOURCE_MATERIALS.md as the next
+  big-ticket content projects, too large for one pass): `ballistics_blast_manual_v6_lightmode.html`
+  (84 KB trauma/ballistics manual) and `intoxicating-substances-reference.html`
+  (154 KB, 12 classes / 39 substances) — each needs its own dedicated
+  conversion session, likely splitting into several modules. Also skipped as
+  out of scope or low-yield: the two `CV_badge-buddy-*` cross-specialty pocket
+  references (mostly duplicate of content already built, and reach outside
+  ED/ICU/OR/Peds into Psych/Family Med/IM), `CV_Mitochondrial_VA_Hypersensitivity.html`
+  (real but very niche), and three pure trial-summary pages
+  (`colcot_guide.html`, `magnesium_lactate_summary.html`,
+  `snapp_trial_summary.html`) per the standing management-content-not-trial-
+  summaries direction.
+  Pipeline: validate/build/test/sync all green (see above run).
+- 2026-09-04 — **Nerve-block interactive checklist (+1 → 285 modules).** User
+  re-supplied `POCUS_Nerve_Block_Reference.html` (the same source behind the
+  existing `nerve-block-guide` reference) specifically to close the
+  long-standing "still open: nerve-block as an interactive tree" item. New
+  `pocus-nerve-block-checklist` procedure (`outputType: "workflow"`) — a
+  6-node sequential bedside run-through (pre-procedure → US setup → sterile
+  setup → needle insertion → injection → post-procedure monitoring) plus a
+  `warning` node for the LAST emergency A-H sequence (applies at any point)
+  and a tickable 10-rule safety `checklist[]`. Deliberately DRY: LA dosing
+  tables and the full LAST pharmacology/management algorithm stay the single
+  source of truth in `nerve-block-guide` / `last-lipid-rescue` and are only
+  cross-linked, not restated. `nerve-block-guide` → v3 (cross-linked back).
+  Caught and fixed the same defect as `macocha-score` earlier this session —
+  calculator schema is `unevaluatedProperties:false`, so `mehran-ci-akin-score`
+  couldn't carry a `related` array; moved the cross-links into `notes` prose.
+  Pipeline re-run after the fix: validate/build/test/sync all green.
+  **Remaining nerve-block/POCUS interactive-tree work**: individual block
+  technique (digital, wrist, popliteal, brachial-plexus approaches) could each
+  become their own procedure sub-module later (flagged in `nerve-block-guide`'s
+  buildNote); the general POCUS exam guide (`pocus-guide`) is still a static
+  reference, not a decision tree — a separate, larger conversion if wanted.
 
 ---
 
