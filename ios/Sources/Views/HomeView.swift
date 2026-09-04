@@ -33,9 +33,16 @@ struct HomeView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink(value: Route.sources) {
+                    Image(systemName: "text.book.closed")
+                }
+                .accessibilityLabel("Sources")
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink(value: Route.about) {
                     Image(systemName: "info.circle")
                 }
+                .accessibilityLabel("About")
             }
         }
         .safeAreaInset(edge: .top) {

@@ -17,6 +17,7 @@ final class ContentStore: ObservableObject {
 
     @Published private(set) var sections: [AppSection] = []
     @Published private(set) var searchIndex = SearchIndex(entries: [])
+    @Published private(set) var sourcesIndex: SourcesIndexFile?
     @Published private(set) var weightZones: WeightZonesConfig?
     @Published private(set) var tiers: [TiersConfig.Tier] = []
     @Published private(set) var manifest: Manifest?
@@ -49,6 +50,9 @@ final class ContentStore: ObservableObject {
             loadError = "Bundled content failed to load: \(error)"
             print("[content] \(loadError!)")
         }
+        // Non-fatal: an older bundled content/ tree (pre-2026-09-04) won't have this
+        // file yet. The Sources page just shows nothing rather than failing the app.
+        sourcesIndex = try? bundled("sources-index.json")
         Task { await checkForUpdates() }
     }
 

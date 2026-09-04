@@ -80,3 +80,23 @@ struct LastVerified: View {
         return f.string(from: d)
     }
 }
+
+/// Numbered, always-visible list of the primary sources for this screen's material.
+/// Pass 1 renders the raw `sources[]` strings; a structured citation registry
+/// replaces the free text in a later pass. Mirrors web `sourcesBlock()`.
+struct SourcesBlock: View {
+    let meta: RecordMeta
+    var body: some View {
+        if let sources = meta.sources, !sources.isEmpty {
+            VStack(alignment: .leading, spacing: 4) {
+                Divider()
+                Text("SOURCES").font(.caption2).foregroundStyle(.secondary).tracking(0.6)
+                ForEach(Array(sources.enumerated()), id: \.offset) { i, s in
+                    Text("\(i + 1). \(s)").font(.footnote)
+                }
+                NavigationLink(value: Route.sources) { Text("All sources ›").font(.caption) }
+            }
+            .padding(.top, 4)
+        }
+    }
+}

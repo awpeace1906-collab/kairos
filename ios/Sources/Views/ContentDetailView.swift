@@ -82,6 +82,7 @@ struct ReferenceBody: View {
             }
             BlockList(blocks: doc.body)
             BuildNote(text: doc.buildNote)
+            SourcesBlock(meta: doc.meta)
         }
     }
 }
@@ -170,6 +171,7 @@ struct ProcedureBody: View {
                 Text("Orchestrates: \(x.joined(separator: ", "))").font(.footnote).foregroundStyle(.secondary)
             }
             BuildNote(text: proc.buildNote)
+            SourcesBlock(meta: proc.meta)
         }
     }
 }
@@ -245,6 +247,7 @@ struct PedsToolBody: View {
                 BlockList(blocks: body)
             }
             BuildNote(text: tool.buildNote)
+            if tool.embeddedCalculator == nil { SourcesBlock(meta: tool.meta) }
         }
     }
 }
@@ -275,6 +278,7 @@ struct AnesthesiaDrugCardBody: View {
             }
             group("Cautions") { bullets(card.cautions) }
             group("Pearls") { bullets(card.pearls) }
+            SourcesBlock(meta: card.meta)
         }
     }
 

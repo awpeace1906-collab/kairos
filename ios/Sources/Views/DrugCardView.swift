@@ -59,6 +59,7 @@ struct DrugCardView: View {
             }
             if let r = card.reversal { Text("Reversal: \(r)").font(.callout) }
             BuildNote(text: card.buildNote)
+            SourcesBlock(meta: card.meta)
         }
         .task {
             let saved = session.fields(route)
