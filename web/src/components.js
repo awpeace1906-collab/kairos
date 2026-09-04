@@ -83,3 +83,17 @@ export function lastVerified(mod) {
 export function severityClass(sev) {
   return sev ? `sev-${sev}` : "";
 }
+
+/** Numbered, always-visible list of the primary sources for this page's material.
+    Pass 1 renders the raw `sources[]` strings; a structured citation registry
+    (content/config/citations.json) replaces the free text in a later pass. */
+export function sourcesBlock(mod) {
+  if (!mod.sources?.length) return null;
+  return el(
+    "section",
+    { class: "sources-block" },
+    el("h2", {}, "Sources"),
+    el("ol", {}, mod.sources.map((s) => el("li", {}, s))),
+    el("p", { class: "sources-all" }, el("a", { href: "#/sources" }, "All sources ›"))
+  );
+}

@@ -137,8 +137,22 @@ h3 { margin: 18px 0 6px; }
 .flags { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
 .flag { font-size: .72rem; background: color-mix(in srgb, var(--sev-moderate) 25%, transparent); color: var(--text); border-radius: 6px; padding: 2px 6px; }
 .build-note { margin-top: 14px; font-size: .88rem; color: var(--muted); }
-.sources { margin-top: 10px; font-size: .85rem; }
 .last-verified { margin-top: 14px; font-size: .8rem; color: var(--muted); }
+
+/* per-page Sources block (always visible, numbered) */
+.sources-block { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); }
+.sources-block h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 6px; }
+.sources-block ol { margin: 0; padding-left: 20px; font-size: .85rem; color: var(--text); }
+.sources-block li { margin: 3px 0; }
+.sources-all { margin: 6px 0 0; font-size: .8rem; }
+
+/* global Sources page (Settings -> Sources) */
+.sources-page h2 { font-size: .95rem; margin: 20px 0 8px; }
+.sources-ol { margin: 0; padding-left: 20px; }
+.sources-ol li { margin: 0 0 10px; }
+.src-text { font-size: .92rem; }
+.src-usedby { font-size: .78rem; color: var(--muted); margin-top: 2px; }
+.src-usedby a { color: var(--accent); }
 .notes { font-size: .9rem; color: var(--muted); }
 
 /* reference prose */

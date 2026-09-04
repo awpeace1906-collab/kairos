@@ -1,4 +1,4 @@
-import { el, mount, clearableField, clearFieldsButton, lastVerified, severityClass } from "../components.js";
+import { el, mount, clearableField, clearFieldsButton, lastVerified, severityClass, sourcesBlock } from "../components.js";
 import { runCalculator } from "../lib/calcEngine.js";
 import { session } from "../lib/session.js";
 
@@ -96,7 +96,7 @@ export function renderCalculator(mod, route) {
     resultBox,
     mod.notes ? el("p", { class: "notes" }, mod.notes) : null,
     mod.buildNote ? el("details", { class: "build-note" }, el("summary", {}, "Build note"), el("p", {}, mod.buildNote)) : null,
-    sourcesList(mod),
+    sourcesBlock(mod),
     lastVerified(mod)
   );
 
@@ -166,10 +166,6 @@ function resultView(mod, r) {
 function flagsBanner(mod) {
   if (!mod.flags?.length) return null;
   return el("p", { class: "flags" }, mod.flags.map((f) => el("span", { class: "flag" }, f)));
-}
-function sourcesList(mod) {
-  if (!mod.sources?.length) return null;
-  return el("details", { class: "sources" }, el("summary", {}, "Sources"), el("ul", {}, mod.sources.map((s) => el("li", {}, s))));
 }
 function fmtPts(p) {
   return (p > 0 ? "+" : "") + p;

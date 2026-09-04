@@ -10,21 +10,24 @@ import { CONTENT_DIR } from "./lib/content.mjs";
 const SRC = process.argv[2] || "/tmp/anescalc_json";
 const DEST = join(CONTENT_DIR, "modules", "drug-dosing", "anescalc-core");
 
+// Drug-class -> Kairos menu category. These are Kairos's own perioperative
+// categories (the "AnesCalc — " prefix was dropped and singletons merged
+// 2026-09-04); keep in sync with content/config/sections.json.
 const CATEGORY = {
-  induction: "AnesCalc — Induction Agents",
-  benzodiazepine: "AnesCalc — Benzodiazepines",
-  volatile: "AnesCalc — Volatile Anesthetics",
-  nmb: "AnesCalc — Neuromuscular Blockers",
-  opioid: "AnesCalc — Opioids",
-  local: "AnesCalc — Local Anesthetics",
-  vasopressor: "AnesCalc — Vasopressors",
-  reversal: "AnesCalc — Reversal Agents",
-  anticholinergic: "AnesCalc — Anticholinergics",
-  antiemetic: "AnesCalc — Antiemetics",
-  gi: "AnesCalc — GI / Aspiration Prophylaxis",
-  emergency: "AnesCalc — Emergency Drugs",
-  "methylene-blue": "AnesCalc — Methylene Blue",
-  anticoagulant: "AnesCalc — Anticoagulants / Hemostatics",
+  induction: "Induction & Sedation Agents",
+  benzodiazepine: "Induction & Sedation Agents",
+  volatile: "Volatile Anesthetics",
+  nmb: "Neuromuscular Blockers",
+  opioid: "Opioids",
+  local: "Local Anesthetics",
+  vasopressor: "Vasopressors & Inotropes",
+  reversal: "Reversal & Anticholinergic Agents",
+  anticholinergic: "Reversal & Anticholinergic Agents",
+  antiemetic: "Antiemetics & Aspiration Prophylaxis",
+  gi: "Antiemetics & Aspiration Prophylaxis",
+  emergency: "Crisis / Rescue Drugs",
+  "methylene-blue": "Crisis / Rescue Drugs",
+  anticoagulant: "Anticoagulants & Hemostatics",
 };
 
 await rm(DEST, { recursive: true, force: true });

@@ -4,6 +4,7 @@ import { renderHome } from "./views/home.js";
 import { renderSection } from "./views/section.js";
 import { renderContent } from "./views/content.js";
 import { renderAbout } from "./views/about.js";
+import { renderSources } from "./views/sources.js";
 import { el } from "./components.js";
 
 const app = document.getElementById("app");
@@ -16,6 +17,8 @@ const router = createRouter(async (route) => {
       app.replaceChildren(renderHome(store, router));
     } else if (route === "/about") {
       app.replaceChildren(el("div", { class: "detail" }, el("a", { href: "#/", class: "back" }, "‹ Home"), renderAbout()));
+    } else if (route === "/sources") {
+      app.replaceChildren(el("div", { class: "detail" }, el("a", { href: "#/", class: "back" }, "‹ Home"), renderSources(store)));
     } else if (route.startsWith("/section/")) {
       app.replaceChildren(renderSection(route.slice("/section/".length), store));
     } else {

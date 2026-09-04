@@ -1,4 +1,4 @@
-import { el, mount, clearableField, lastVerified } from "../components.js";
+import { el, mount, clearableField, lastVerified, sourcesBlock } from "../components.js";
 import { renderCalculator } from "./calculator.js";
 import { zoneForWeight, doseFromRule, estimateWeight } from "../lib/weightZones.js";
 import { session } from "../lib/session.js";
@@ -31,6 +31,7 @@ function shell(mod, ...body) {
     mod.purpose ? el("p", { class: "purpose" }, mod.purpose) : null,
     ...body,
     mod.buildNote ? el("details", { class: "build-note" }, el("summary", {}, "Build note"), el("p", {}, mod.buildNote)) : null,
+    sourcesBlock(mod),
     lastVerified(mod)
   );
 }
@@ -91,6 +92,7 @@ function renderAnesthesiaDrugCard(mod) {
     el("div", {}, el("h3", {}, "Dosing"), el("pre", { class: "adc-dosing" }, mod.dosing)),
     list("Cautions", mod.cautions),
     list("Pearls", mod.pearls),
+    sourcesBlock(mod),
     lastVerified(mod)
   );
 }

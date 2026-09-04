@@ -1,3 +1,4 @@
-// Regenerate both derived files. Run after any content change.
+// Regenerate the derived files. Run after any content change.
 import "./build-search-index.mjs";
+import "./build-sources-index.mjs";
 import "./build-manifest.mjs";

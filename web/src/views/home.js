@@ -123,7 +123,10 @@ export function renderHome(store, router) {
     results,
     toc,
     tiles,
-    el("p", { class: "home-footer" }, el("a", { href: "#/about" }, "About Kairos"))
+    el("p", { class: "home-footer" },
+      el("a", { href: "#/about" }, "About Kairos"),
+      " · ",
+      el("a", { href: "#/sources" }, "Sources"))
   );
 }
 
