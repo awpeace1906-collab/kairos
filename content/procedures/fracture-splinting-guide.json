@@ -1,0 +1,184 @@
+{
+  "id": "fracture-splinting-guide",
+  "section": "Procedures",
+  "category": "Wound & Fracture Care",
+  "title": "Fracture / Splinting Guide",
+  "aliases": ["splint selection", "splinting", "fracture immobilization", "fracture reduction", "Salter-Harris", "buckle fracture"],
+  "tags": ["fracture", "splint", "immobilization", "reduction", "neurovascular check", "compartment syndrome", "Salter-Harris", "ED"],
+  "contentType": "procedure",
+  "content_version": 2,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2026-12-03",
+  "review_tier": 1,
+  "sources": ["StatPearls — Splinting; Salter-Harris Fractures", "Roberts and Hedges' Clinical Procedures", "AAOS / OrthoBullets"],
+  "changelog": [
+    { "version": 2, "date": "2026-09-03", "change": "Deepened to a 2-level tree — per region a displacement/pattern triage (splint as-is vs reduce vs emergent ortho), key named fractures (scaphoid, boxer's, Jones, Lisfranc, supracondylar), a shared compartment-syndrome and emergent-ortho node, and a pediatric-pattern branch (buckle / Salter-Harris / plastic deformation)." },
+    { "version": 1, "date": "2026-09-01", "change": "Initial entry — region → splint type / position / neurovascular check / red flags." }
+  ],
+  "purpose": "Region → pattern triage → splint type + position + the neurovascular check that matters, or a reduction / emergent-ortho branch. Includes the common named fractures and paediatric patterns.",
+  "outputType": "decision-tree",
+  "crossLinks": ["laceration-repair", "procedural-sedation-workflow"],
+  "entryPrompt": "Which region — or is this a paediatric growth-plate pattern?",
+  "nodes": [
+    { "id": "start", "type": "question", "prompt": "Select the injured region", "choices": [
+      { "label": "⚠ Screen for an emergent pattern first", "next": "gate-emergent" },
+      { "label": "Finger / thumb", "next": "q-finger" },
+      { "label": "Hand / metacarpal", "next": "q-hand" },
+      { "label": "Wrist / distal radius", "next": "q-wrist" },
+      { "label": "Forearm (radius / ulna shaft)", "next": "q-forearm" },
+      { "label": "Elbow", "next": "q-elbow" },
+      { "label": "Humerus", "next": "q-humerus" },
+      { "label": "Toe", "next": "toe" },
+      { "label": "Foot (midfoot / metatarsal)", "next": "q-foot" },
+      { "label": "Ankle", "next": "q-ankle" },
+      { "label": "Tib-fib shaft", "next": "q-tibfib" },
+      { "label": "Knee / patella", "next": "q-knee" },
+      { "label": "Femur", "next": "femur" },
+      { "label": "Paediatric growth-plate pattern", "next": "q-peds" }
+    ] },
+
+    { "id": "gate-emergent", "type": "question", "prompt": "First — any of: open fracture, hard sign of vascular injury (absent pulse, expanding haematoma, bruit), progressive neuro deficit, gross deformity / dislocation, or compartment-syndrome signs?", "choices": [
+      { "label": "Yes — one or more present", "next": "emergent" },
+      { "label": "No — closed, neurovascularly intact", "next": "start" }
+    ] },
+    { "id": "emergent", "type": "warning", "body": "EMERGENT orthopaedics (± vascular / trauma). Open fracture: photograph, remove gross debris, saline-moist sterile dressing, IV antibiotics within 1 h (cefazolin 2 g; add gentamicin for gross contamination, penicillin for farm/soil), tetanus, splint in position of deformity, do NOT irrigate vigorously in the ED. Dislocation with deficit: reduce now. Hard vascular sign: vascular surgery + CT angiogram, do not wait." },
+    { "id": "compartment", "type": "warning", "body": "Compartment syndrome — pain out of proportion, pain on passive stretch, tense compartment, paraesthesia (pulselessness is late). Remove all circumferential dressing/cast, keep the limb at heart level (not elevated), analgesia, and get compartment pressures + emergent fasciotomy. ΔP (diastolic − compartment pressure) < 30 mmHg is diagnostic. Highest risk: tib-fib, forearm, high-energy, crush, reperfusion." },
+    { "id": "reduce-generic", "type": "step", "body": "Closed reduction: adequate analgesia first (haematoma block, regional block, or procedural sedation — see the linked workflow). Recreate the mechanism, apply longitudinal traction, then reverse the deformity. Re-check and DOCUMENT neurovascular status before and after. Post-reduction film in the splint. Acceptable alignment varies by bone and age — if not achieved in 1–2 attempts, splint and refer for definitive management." },
+
+    { "id": "q-finger", "type": "question", "prompt": "Finger — which pattern?", "choices": [
+      { "label": "Non-displaced phalanx fracture", "next": "finger" },
+      { "label": "Rotational deformity, or displaced / angulated", "next": "finger-reduce" },
+      { "label": "Volar-plate / avulsion at PIP", "next": "finger-volar" },
+      { "label": "Mallet (extensor avulsion, DIP droop)", "next": "mallet" },
+      { "label": "Bennett / Rolando (thumb base, intra-articular)", "next": "bennett" }
+    ] },
+    { "id": "finger", "type": "recommendation", "body": "Buddy tape or aluminium U-splint in the position of function (MCP 70–90°, IP slight flexion). Check digital capillary refill and 2-point discrimination. Follow-up 1 week; early motion for stable non-displaced fractures." },
+    { "id": "finger-reduce", "type": "step", "body": "ANY rotational deformity needs reduction — check by looking at nail-plate alignment and that all fingertips point to the scaphoid on flexion. Digital block, reduce, buddy-tape or gutter splint, post-reduction film. Refer hand/ortho if unstable, intra-articular > 1–2 mm step-off, or > 10° angulation in the fingers (more angulation tolerated at the 4th–5th MC neck).", "choices": [{ "label": "Closed reduction — general steps", "next": "reduce-generic" }] },
+    { "id": "finger-volar", "type": "recommendation", "body": "Dorsal blocking splint with the PIP in ~20–30° flexion; early protected motion. Refer hand if > 30–40% of the articular surface is involved or the joint subluxates (may need surgery)." },
+    { "id": "mallet", "type": "recommendation", "body": "DIP extension splint (Stack or moulded) CONTINUOUSLY for 6–8 weeks, then night splinting 2–4 weeks — the DIP must not be allowed to flex at any point. Refer hand if there is a large bony fragment (> 30–50% articular) or volar subluxation of the distal phalanx." },
+    { "id": "bennett", "type": "warning", "body": "Bennett (2-part) and Rolando (comminuted) fractures of the thumb-metacarpal base are intra-articular and unstable — thumb spica splint and refer hand surgery; most need percutaneous pinning or ORIF." },
+
+    { "id": "q-hand", "type": "question", "prompt": "Metacarpal — which?", "choices": [
+      { "label": "5th MC neck (boxer's)", "next": "boxer" },
+      { "label": "2nd–4th MC shaft / neck", "next": "mc-shaft" },
+      { "label": "1st MC (thumb) base", "next": "bennett" },
+      { "label": "Any with a 'fight bite' laceration over the MCP", "next": "fight-bite" }
+    ] },
+    { "id": "boxer", "type": "recommendation", "body": "5th MC neck: up to ~40° apex-dorsal angulation is acceptable (little finger); reduce (Jahss manoeuvre) if more, or if there is rotational deformity or a pseudoclawing extensor lag. Ulnar gutter splint, MCP 70–90° flexion, IP extension, for 3–4 weeks. Always check for rotation." },
+    { "id": "mc-shaft", "type": "recommendation", "body": "Acceptable angulation decreases radially: ~10–20° for the 2nd–3rd, ~30–40° for the 4th–5th. Radial or ulnar gutter (or a hand-based splint), MCP 70–90°. Reduce and refer if angulation exceeds this, any rotation, > 5 mm shortening, or multiple MC fractures." },
+    { "id": "fight-bite", "type": "warning", "body": "'Fight bite' — a laceration over the MCP from a tooth. Assume joint-space and extensor-tendon involvement. Do NOT close primarily. Explore in the OR / with hand surgery, IV amoxicillin-clavulanate (or ampicillin-sulbactam), tetanus, splint. High infection and septic-arthritis risk." },
+
+    { "id": "q-wrist", "type": "question", "prompt": "Wrist — which pattern?", "choices": [
+      { "label": "Non-/minimally-displaced distal radius", "next": "wrist" },
+      { "label": "Displaced / dorsally angulated distal radius (Colles-type)", "next": "wrist-reduce" },
+      { "label": "Snuffbox tenderness, normal X-ray (?scaphoid)", "next": "scaphoid" },
+      { "label": "FOOSH with wrist pain, ?carpal / perilunate", "next": "perilunate" }
+    ] },
+    { "id": "wrist", "type": "recommendation", "body": "Volar (or sugar-tong if unstable) splint. Wrist ~20° extension, slight ulnar deviation, MCPs free. Check median (esp. — acute carpal tunnel), ulnar and radial nerve function, and finger flexion/extension. Ortho follow-up ~1 week; repeat film at 1–2 weeks to check for late displacement." },
+    { "id": "wrist-reduce", "type": "step", "body": "Reduce (haematoma block or sedation): traction, exaggerate the deformity, then translate the distal fragment volarly and correct radial shortening/tilt. Sugar-tong splint. Post-reduction film. Acceptable: radial length within ~2–3 mm, dorsal tilt ≤ ~5–10°, intra-articular step ≤ 2 mm — otherwise refer for fixation. Recheck the median nerve after reduction.", "choices": [{ "label": "Closed reduction — general steps", "next": "reduce-generic" }] },
+    { "id": "scaphoid", "type": "recommendation", "body": "Snuffbox / scaphoid-tubercle tenderness with a normal X-ray = presumed scaphoid fracture. Thumb spica splint, ortho follow-up 10–14 days with repeat imaging (or MRI/CT earlier). Missed scaphoid fractures go on to non-union and avascular necrosis — immobilise and refer even when the film is clean." },
+    { "id": "perilunate", "type": "warning", "body": "Perilunate / lunate dislocation is frequently missed. Check the lateral wrist film for the 'spilled teacup' (lunate) and disrupted Gilula's arcs on the PA. Emergent hand-surgery reduction — high rate of median-nerve injury and long-term dysfunction if delayed." },
+
+    { "id": "q-forearm", "type": "question", "prompt": "Forearm shaft — which?", "choices": [
+      { "label": "Isolated ulna, non-displaced (nightstick)", "next": "nightstick" },
+      { "label": "Both-bone forearm, or any displacement / angulation", "next": "forearm-reduce" },
+      { "label": "Proximal ulna fracture + radial-head dislocation (Monteggia)", "next": "monteggia" },
+      { "label": "Distal radius fracture + DRUJ disruption (Galeazzi)", "next": "galeazzi" }
+    ] },
+    { "id": "nightstick", "type": "recommendation", "body": "Isolated non-displaced ulnar shaft (< 50% displacement, < 10° angulation): functional forearm brace or a well-moulded sugar-tong / long-arm splint, forearm neutral, elbow 90°. Check the radial, median and ulnar nerves and the radial pulse. Ortho follow-up 1 week." },
+    { "id": "forearm-reduce", "type": "step", "body": "Adult both-bone and displaced forearm shaft fractures are unstable — nearly all need ORIF. Provisional closed reduction for gross deformity/neurovascular compromise, long-arm splint at 90° with the forearm in neutral rotation, and urgent ortho referral. In children these are often managed closed with reduction + casting." },
+    { "id": "monteggia", "type": "warning", "body": "Monteggia — proximal ulna fracture WITH radial-head dislocation. Always draw a radiocapitellar line on every elbow/forearm film: it should bisect the capitellum in every view. Missed radial-head dislocation is a classic and disabling error. Long-arm splint and urgent ortho — adults need ORIF." },
+    { "id": "galeazzi", "type": "warning", "body": "Galeazzi — distal-third radius fracture WITH distal radioulnar joint (DRUJ) disruption. Look for widened DRUJ, radial shortening, ulnar styloid fracture, or a prominent ulnar head. 'Fracture of necessity' in adults — ORIF. Long-arm splint, forearm supinated, urgent ortho." },
+
+    { "id": "q-elbow", "type": "question", "prompt": "Elbow — which?", "choices": [
+      { "label": "Adult radial-head fracture, non-displaced", "next": "radial-head" },
+      { "label": "Olecranon fracture", "next": "olecranon" },
+      { "label": "Paediatric supracondylar humerus", "next": "supracondylar" },
+      { "label": "Elbow dislocation (reduced or unreduced)", "next": "elbow-disloc" },
+      { "label": "Effusion / fat pad, no visible fracture", "next": "fat-pad" }
+    ] },
+    { "id": "radial-head", "type": "recommendation", "body": "Non-displaced / minimally-displaced (Mason I) radial-head fracture: sling or a long-arm posterior splint at 90° for comfort, then EARLY range of motion within a few days to prevent stiffness. Aspiration of the haematoma + local anaesthetic can improve early motion. Ortho follow-up 1 week. Displaced or mechanical block → ortho." },
+    { "id": "olecranon", "type": "recommendation", "body": "Posterior long-arm splint at 45–90° flexion. Check ulnar nerve function and the integrity of active elbow extension (a displaced fracture disrupts the triceps mechanism → needs fixation). Displacement > 2 mm or extensor lag → ortho for tension-band or plate fixation." },
+    { "id": "supracondylar", "type": "warning", "body": "Paediatric supracondylar humerus — assess and document the anterior interosseous nerve (OK sign), radial nerve, ulnar nerve, and the radial pulse / hand perfusion. Gartland I (non-displaced): long-arm posterior splint at 60–90°, ortho follow-up. Gartland II–III, any pulseless / poorly perfused hand, or a nerve deficit: EMERGENT ortho for closed reduction and pinning. A pulseless but well-perfused (pink) hand still goes urgently to theatre." },
+    { "id": "elbow-disloc", "type": "step", "body": "Reduce a posterior elbow dislocation promptly (procedural sedation): traction–countertraction with the elbow slightly flexed, correct medial/lateral translation, then flex. Confirm a concentric reduction on film and re-examine the ulnar and median nerves and the brachial artery. Splint at 90° in a posterior long-arm splint; early protected motion by ~1 week to avoid stiffness. Recurrent instability, an associated fracture, or a non-concentric reduction → ortho." },
+    { "id": "fat-pad", "type": "recommendation", "body": "A posterior fat-pad sign (or a large anterior 'sail' sign) with no visible fracture means an occult intra-articular fracture — radial head in adults, supracondylar in children. Treat as a non-displaced fracture: long-arm posterior splint / sling, ortho follow-up 7–10 days with repeat films." },
+
+    { "id": "q-humerus", "type": "question", "prompt": "Humerus — which?", "choices": [
+      { "label": "Midshaft, acceptable alignment", "next": "humerus" },
+      { "label": "Proximal humerus (surgical neck)", "next": "prox-humerus" },
+      { "label": "With wrist drop (radial nerve palsy)", "next": "humerus-radial" }
+    ] },
+    { "id": "humerus", "type": "recommendation", "body": "Midshaft: coaptation (U-slab) splint or a sugar-tong for the arm, then transition to a functional (Sarmiento) brace at ~1 week. Acceptable: < 20° anterior angulation, < 30° varus/valgus, < 3 cm shortening — most heal well non-operatively. Arm adducted, elbow 90°. Ortho follow-up 1 week." },
+    { "id": "prox-humerus", "type": "recommendation", "body": "Most (1-part / minimally displaced Neer) are treated with a sling and early pendulum exercises at 7–14 days. Check axillary-nerve sensation over the deltoid. Refer ortho for displacement > 1 cm or angulation > 45°, greater-tuberosity displacement > 5 mm, fracture-dislocation, or a head-split." },
+    { "id": "humerus-radial", "type": "warning", "body": "Radial-nerve palsy (wrist drop, loss of finger/thumb extension, dorsal first-web-space sensory loss) complicates ~10–18% of midshaft fractures — most are neurapraxia and recover over 3–4 months. A NEW deficit appearing after reduction/manipulation, or an open fracture, is an indication for surgical exploration. Splint, cock-up wrist splint for the drop, and ortho referral." },
+
+    { "id": "toe", "type": "recommendation", "body": "Buddy tape to the adjacent toe, hard-soled shoe, neutral. Check capillary refill. Reduce an angulated or rotated fracture (digital block). Great-toe fractures and any intra-articular or displaced fracture → podiatry/ortho follow-up. Open (often from a nailbed laceration) → antibiotics + tetanus." },
+
+    { "id": "q-foot", "type": "question", "prompt": "Foot — which?", "choices": [
+      { "label": "5th metatarsal — tuberosity avulsion (dancer's / pseudo-Jones)", "next": "pseudojones" },
+      { "label": "5th metatarsal — proximal diaphysis (true Jones)", "next": "jones" },
+      { "label": "Metatarsal shaft (2nd–4th)", "next": "mt-shaft" },
+      { "label": "Midfoot pain / can't bear weight, ?Lisfranc", "next": "lisfranc" }
+    ] },
+    { "id": "pseudojones", "type": "recommendation", "body": "Tuberosity avulsion (zone 1): good blood supply, heals well. Hard-soled shoe or walking boot, weight-bear as tolerated, 4–6 weeks. Follow-up podiatry/ortho. Only large intra-articular (> 30%) or widely displaced fragments need referral for possible fixation." },
+    { "id": "jones", "type": "warning", "body": "True Jones fracture (zone 2, metaphyseal-diaphyseal junction): watershed blood supply → high non-union rate. Non-weight-bearing in a short-leg cast / boot for 6–8 weeks, ortho follow-up. Many active patients (and any zone-3 proximal-diaphyseal stress fracture) are offered early intramedullary screw fixation." },
+    { "id": "mt-shaft", "type": "recommendation", "body": "Isolated 2nd–4th MT shaft, minimally displaced: walking boot / hard-soled shoe, weight-bear as tolerated, 4–6 weeks. Refer for > 3–4 mm translation or > 10° dorsoplantar angulation (alters weight distribution), or multiple adjacent MT fractures." },
+    { "id": "lisfranc", "type": "warning", "body": "Lisfranc (tarsometatarsal) injury — plantar-medial ecchymosis, midfoot swelling, pain on midfoot pronation/abduction, inability to bear weight. Look for a fleck sign (avulsion between 1st and 2nd MT bases) and > 2 mm diastasis on a weight-bearing AP; get weight-bearing or CT imaging if the initial films are normal but suspicion is high. Non-weight-bearing splint and urgent ortho — a missed Lisfranc is a limb with chronic pain and arthritis." },
+
+    { "id": "q-ankle", "type": "question", "prompt": "Ankle — which pattern?", "choices": [
+      { "label": "Isolated non-displaced malleolar fracture, stable", "next": "ankle" },
+      { "label": "Bimalleolar / trimalleolar, or talar shift on mortise view", "next": "ankle-unstable" },
+      { "label": "Fracture-dislocation (deformed, dusky foot)", "next": "ankle-disloc" }
+    ] },
+    { "id": "ankle", "type": "recommendation", "body": "Isolated non-displaced lateral (Weber A / low B) malleolus with a congruent mortise and no medial tenderness: walking boot or a well-moulded posterior + stirrup splint, ankle at 90° neutral, weight-bear as tolerated, ortho follow-up ~1 week. Check dorsalis pedis and posterior tibial pulses and sensation." },
+    { "id": "ankle-unstable", "type": "warning", "body": "Bimalleolar, trimalleolar, any talar shift / widened medial clear space, or a Weber C (syndesmotic) pattern = unstable → ORIF. Non-weight-bearing posterior + stirrup splint at 90°, elevate, ortho referral (within days). Watch the skin over a tented medial malleolus." },
+    { "id": "ankle-disloc", "type": "step", "body": "Reduce a deformed / dislocated ankle BEFORE imaging if the skin is tented or the foot is dusky (do not wait for X-ray). Procedural sedation, traction on the heel and foot with counter-traction on the calf, recreate then reverse the deformity. Splint at 90°, re-check pulses and skin, then image. Emergent ortho." },
+
+    { "id": "q-tibfib", "type": "question", "prompt": "Tib-fib shaft — assessment", "choices": [
+      { "label": "Closed, aligned, neurovascularly intact", "next": "tibfib" },
+      { "label": "Open, displaced, or any compartment concern", "next": "compartment" }
+    ] },
+    { "id": "tibfib", "type": "recommendation", "body": "Long-leg posterior splint (± AP slabs), knee 5–15° flexion, ankle 90°. Generous padding, NO circumferential cast acutely. Check the deep peroneal nerve (first web-space sensation, foot/toe dorsiflexion) and distal pulses, and do a baseline compartment exam. Admit or urgent ortho — many tibial shaft fractures need an IM nail, and this is the highest-risk site for compartment syndrome (serial exams)." },
+
+    { "id": "q-knee", "type": "question", "prompt": "Knee — which?", "choices": [
+      { "label": "Patella fracture, extensor mechanism intact", "next": "patella" },
+      { "label": "Patella fracture, cannot straight-leg-raise (extensor disruption)", "next": "patella-disrupt" },
+      { "label": "Tibial plateau fracture", "next": "plateau" },
+      { "label": "Knee dislocation (documented or spontaneously reduced)", "next": "knee-disloc" }
+    ] },
+    { "id": "patella", "type": "recommendation", "body": "Non-displaced (< 2–3 mm step, < 3 mm fragment separation) with an intact extensor mechanism: knee immobiliser in extension, weight-bear as tolerated with crutches, ortho follow-up ~1 week, early quad sets. Check for an open injury (the patella is subcutaneous)." },
+    { "id": "patella-disrupt", "type": "warning", "body": "Inability to perform a straight-leg raise or a palpable defect = extensor-mechanism disruption (displaced patella fracture, or patellar/quadriceps tendon rupture) → operative repair. Knee immobiliser in extension, non-weight-bearing, ortho referral within days." },
+    { "id": "plateau", "type": "warning", "body": "Tibial plateau fracture: knee immobiliser or long-leg splint, NON-weight-bearing, elevate. High-energy patterns — do a careful compartment exam and check the popliteal vessels and peroneal nerve. Most need CT for surgical planning; displaced / depressed (> 2–3 mm articular step, or condylar widening) → ORIF. Suspect an occult fracture with a lipohaemarthrosis on X-ray." },
+    { "id": "knee-disloc", "type": "warning", "body": "Knee dislocation is a vascular emergency even when it has spontaneously reduced. Popliteal artery injury in ~20–30%. Reduce immediately if still dislocated, then: ABIs on BOTH legs (< 0.9 → CT angiogram / vascular surgery), serial pulse and compartment checks, immobilise at 20° flexion, admit. A normal pulse does NOT exclude an intimal injury." },
+
+    { "id": "femur", "type": "recommendation", "body": "Femoral SHAFT fracture: a traction splint (Hare / Sager / CT-6) is the prehospital and ED bridge for a mid-shaft fracture with no associated pelvic, knee, or open injury — it controls bleeding (1–1.5 L into the thigh) and pain. Analgesia, check femoral and distal pulses and the sciatic/peroneal nerve, screen for the high-energy associated injuries (pelvis, hip, ipsilateral femoral neck — a classic miss). Femoral NECK / intertrochanteric fracture (older patient, shortened + externally rotated leg): NO traction splint — a pillow/blanket for comfort, analgesia (consider a fascia-iliaca block), admit for fixation, and check for the medical cause of the fall." },
+
+    { "id": "q-peds", "type": "question", "prompt": "Paediatric pattern", "choices": [
+      { "label": "Buckle / torus (one cortex buckled, e.g. distal radius)", "next": "peds-buckle" },
+      { "label": "Greenstick (one cortex broken, the other bent)", "next": "peds-greenstick" },
+      { "label": "Plastic (bowing) deformation, no cortical break", "next": "peds-plastic" },
+      { "label": "Physeal / Salter-Harris fracture", "next": "peds-sh" },
+      { "label": "Toddler's fracture (spiral distal tibia, will not weight-bear)", "next": "peds-toddler" },
+      { "label": "Any red flag for non-accidental trauma", "next": "peds-naT" }
+    ] },
+    { "id": "peds-buckle", "type": "recommendation", "body": "Torus / buckle fracture — inherently stable. A removable wrist/volar splint (or a soft brace) for 3–4 weeks, no reduction, and no routine repeat X-ray or ortho visit needed for a classic distal-radius buckle — primary-care or virtual follow-up is sufficient. Return if pain persists past 4 weeks." },
+    { "id": "peds-greenstick", "type": "step", "body": "Greenstick: if angulation exceeds the age-acceptable limit (more remodelling potential the younger the child and the closer to the physis, in the plane of joint motion), reduce — often by completing the fracture — then a well-moulded long-arm cast/splint. Minimal angulation: immobilise and refer. Repeat film at 1 week for loss of position.", "choices": [{ "label": "Closed reduction — general steps", "next": "reduce-generic" }] },
+    { "id": "peds-plastic", "type": "recommendation", "body": "Plastic (bowing) deformation — the bone is bent without a discrete fracture line, commonly the ulna or fibula alongside a fracture of the paired bone. Significant bowing (> ~20°, or a cosmetic/functional deformity, or blocking forearm rotation) needs reduction under sedation; otherwise immobilise and refer. It does not remodel as reliably as a true fracture." },
+    { "id": "peds-sh", "type": "recommendation", "body": "Salter-Harris — 'SALTR': I Slipped (through physis; X-ray may be normal — tender physis = treat as SH-I), II Above (into metaphysis; commonest), III Lower (into epiphysis/joint), IV Through (metaphysis + physis + epiphysis), V cRush (axial compression; worst prognosis, often diagnosed late). Splint I–II and refer; III–V are intra-articular or high-risk for growth arrest → prompt ortho, often ORIF. Always document neurovascular status and counsel families about the growth-disturbance risk." },
+    { "id": "peds-toddler", "type": "recommendation", "body": "Toddler's fracture — non-displaced spiral fracture of the distal tibia in a 9-month to 3-year-old who suddenly will not bear weight; the initial X-ray is often normal (repeat at 1–2 weeks shows periosteal reaction). Long-leg or a controlled-ankle walking boot for 3–4 weeks. If the history is inconsistent or there are other injuries, evaluate for non-accidental trauma." },
+
+    { "id": "peds-naT", "type": "warning", "body": "Consider non-accidental trauma in any child with: a fracture in a non-ambulatory infant, a history inconsistent with the injury or the developmental stage, delayed presentation, multiple fractures of different ages, or classic patterns (classic metaphyseal 'corner/bucket-handle' lesions, posterior rib fractures, scapular/sternal/spinous-process fractures). Follow local safeguarding pathways and get a skeletal survey." }
+  ],
+  "checklist": [
+    "Neurovascular status assessed and DOCUMENTED before any manipulation",
+    "Screened for the emergent patterns (open, vascular hard sign, compartment syndrome, dislocation, progressive deficit)",
+    "Adequate analgesia / haematoma block / procedural sedation before any reduction attempt",
+    "Splint applied with generous padding — no acute circumferential casting",
+    "Neurovascular status re-checked and re-DOCUMENTED after splinting / reduction",
+    "Post-reduction film obtained in the splint where a reduction was performed",
+    "Paediatric: growth-plate involvement identified; non-accidental trauma considered where the history does not fit",
+    "Discharge: elevation, return precautions (increasing pain, numbness, colour change, tight cast), ortho follow-up timeframe given"
+  ],
+  "noteTemplate": "PROCEDURE: {{procedure}} for {{region}} {{pattern}}. Pre-intervention neurovascular exam: {{nvPre}}. Emergent patterns screened and absent. Analgesia: {{analgesia}}. {{reductionDetail}} {{splintType}} applied, {{position}}, well padded, no circumferential constriction. Post-intervention neurovascular exam: {{nvPost}} — unchanged. {{postReductionFilm}} Discharge instructions and return precautions given. Ortho follow-up arranged in {{followupDays}} days.",
+  "buildNote": "v2 — 2-level tree using the existing procedure.nodes structure (interactive walker already renders it on web + iOS). `gate-emergent`, `compartment`, and `emergent` are shared nodes referenced from multiple branches. Reduction technique is generic (`reduce-generic`) plus bone-specific acceptable-alignment thresholds in each leaf. Nerve Block and POCUS guides remain reference-style menus — converting them to node trees is a separate, lower-value pass."
+}

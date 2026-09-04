@@ -1,0 +1,41 @@
+{
+  "id": "airway-management-flow",
+  "section": "Procedures",
+  "category": "Airway & Sedation Workflows",
+  "title": "Airway Management Flow",
+  "aliases": ["intubation workflow", "difficult airway algorithm", "plan A B C D", "CICO"],
+  "tags": ["airway", "intubation", "RSI", "difficult airway", "cricothyrotomy", "ED", "OR"],
+  "contentType": "procedure",
+  "content_version": 2,
+  "last_reviewed": "2026-09-02",
+  "next_review_due": "2026-12-02",
+  "review_tier": 1,
+  "sources": ["DAS / Vortex approach (conceptual)", "Procedures_Content_Spec.md", "Critical Vector — Physiologically Difficult Airway (PREOXI, PREPARE II, RSI trial 2025)"],
+  "changelog": [
+    { "version": 2, "date": "2026-09-02", "change": "Added a physiologic-optimisation step (four deadly profiles) and NIV/PEEP preoxygenation per PREOXI; cross-linked the new physiologically-difficult-airway reference + modified-shock-index + capnography." },
+    { "version": 1, "date": "2026-09-01", "change": "Initial entry — workflow that orchestrates existing Calculators and Drug & Dosing content." }
+  ],
+  "purpose": "A workflow wrapper that orchestrates existing calculators and drug cards into a pre-intubation → Plan A/B/C/D → confirmation sequence. Not new clinical content.",
+  "outputType": "workflow",
+  "crossLinks": ["lemon-airway", "stop-bang", "asa-physical-status", "cormack-lehane", "physiologically-difficult-airway", "modified-shock-index", "capnography", "peds-ketamine-rsi", "peds-rocuronium-rsi", "peds-atropine-bradycardia"],
+  "nodes": [
+    { "id": "s1", "type": "step", "prompt": "1. Pre-intubation assessment", "body": "Run LEMON (and STOP-BANG / ASA class in an elective or procedural context). Identify a difficult airway BEFORE committing. Prepare a double set-up (surgical airway kit open) if LEMON flags multiple features." },
+    { "id": "s1b", "type": "step", "prompt": "1b. Physiologic optimisation", "body": "Anatomy predicts the view; physiology decides survival. Screen for the four deadly profiles — hypoxemia (shunt), hypotension (SI > 0.8 / MSI ≥ 1.3), metabolic acidosis (compensating minute ventilation), RV failure — and resuscitate them BEFORE induction. Pressor on the pole, not a reflex fluid bolus. See the Physiologically Difficult Airway reference." },
+    { "id": "s2", "type": "step", "prompt": "2. Pre-oxygenation", "body": "NIV or a tight-fitting BVM with PEEP (not a nonrebreather alone) if SpO2 won't climb toward 95% — PREOXI. 3 min or 8 vital-capacity breaths. Apneic oxygenation via nasal cannula at 15 L/min through induction and laryngoscopy (low-risk; adds little once NIV preoxygenation is adequate)." },
+    { "id": "s3", "type": "step", "prompt": "3. Plan A — first attempt", "body": "Direct or video laryngoscopy with your standard induction agent + paralytic (see the Drug & Dosing cards). Optimise position (ear-to-sternal-notch), external laryngeal manipulation, bougie ready." },
+    { "id": "s4", "type": "step", "prompt": "4. Plan B — failed first attempt", "body": "Change one thing: alternate blade or a video device, add a bougie, reposition, second operator. Limit to a small number of attempts — each attempt worsens oedema and desaturation." },
+    { "id": "s5", "type": "step", "prompt": "5. Plan C — can't intubate, can oxygenate", "body": "Insert a supraglottic airway (LMA) as rescue oxygenation. Reassess: wake the patient if feasible, or proceed to a definitive airway with the most experienced operator." },
+    { "id": "s6", "type": "warning", "prompt": "6. Plan D — can't intubate, CAN'T oxygenate (CICO)", "body": "Declare it out loud. Proceed immediately to a surgical airway / scalpel-bougie cricothyrotomy. Do not keep re-attempting laryngoscopy." },
+    { "id": "s7", "type": "step", "prompt": "7. Post-intubation confirmation", "body": "Waveform capnography (gold standard) + bilateral breath sounds + no epigastric sounds. CXR for depth. Secure the tube, set the ventilator, start post-intubation sedation/analgesia." },
+    { "id": "s8", "type": "step", "prompt": "8. Documentation", "body": "Record the Cormack-Lehane grade obtained, number of attempts, devices used, tube size and depth at the lip, cuff pressure, and any complications." }
+  ],
+  "checklist": [
+    "Difficult-airway assessment done (LEMON) and backup plan verbalised",
+    "Suction, two working laryngoscopes, bougie, SGA, and a surgical airway kit at the bedside",
+    "Pre-oxygenation ≥ 3 min; apneic oxygenation running",
+    "Induction + paralytic drawn up and dosed (see Drug & Dosing)",
+    "Capnography connected before the first attempt",
+    "Post-intubation sedation/analgesia ordered"
+  ],
+  "buildNote": "Depends on LEMON, STOP-BANG, ASA, Cormack-Lehane (Calculators) and the RSI drug cards (Drug & Dosing). Cormack-Lehane is not yet a built module — cross-link will resolve once it is."
+}

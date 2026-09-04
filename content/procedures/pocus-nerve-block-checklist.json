@@ -1,0 +1,49 @@
+{
+  "id": "pocus-nerve-block-checklist",
+  "section": "Procedures",
+  "category": "Regional Anesthesia & Ultrasound",
+  "title": "POCUS Nerve Block — Sequential Checklist",
+  "aliases": ["nerve block checklist", "ultrasound-guided nerve block steps", "regional block run-through", "peripheral nerve block procedure steps", "IP OOP needle checklist"],
+  "tags": ["nerve block", "regional anesthesia", "POCUS", "ultrasound-guided", "LAST", "procedure checklist", "ED", "OR", "anesthesia"],
+  "keywords": ["hydrodissection tip confirmation", "aspirate 3-5 seconds before every injection", "2-3 mL aliquots pause 15-30 seconds", "donut sign perineural spread", "nerve swelling on US stop intraneural", "epinephrine test dose HR rise 20 bpm", "IV access before needle", "intralipid at bedside before first mL", "LAST emergency sequence A through H"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-04",
+  "next_review_due": "2026-12-04",
+  "review_tier": 1,
+  "sources": [
+    "ASRA Practice Advisory on Local Anesthetic Systemic Toxicity (2023)",
+    "Neal JM, et al. Reg Anesth Pain Med. 2023 (ASRA LAST advisory)",
+    "ACEP Ultrasound Guidelines; SOAP Regional Anesthesia Guidelines",
+    "POCUS-Guided Nerve Block — Procedural Reference (uploaded reference, Part II: sequential action checklist)"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-04", "change": "Initial entry — the sequential, tick-through version of the nerve-block-guide framework (47-step run-through condensed into a 6-stage node walk + a tickable safety-rule checklist), for use during an actual procedure rather than as background reading. Companion to nerve-block-guide (framework/rationale) and last-lipid-rescue (full LAST detail) — dosing tables and the full LAST algorithm are not restated here." }
+  ],
+  "outputType": "workflow",
+  "purpose": "A step-through run-through for an ultrasound-guided peripheral nerve block, from pre-procedure timeout to post-injection monitoring — the sequential-checklist companion to the nerve-block-guide framework. Use it as a pre-procedure rehearsal or a bedside tick-through, not as the place to look up dosing or the LAST algorithm (those live in their own modules).",
+  "entryPrompt": "Walk the six stages in order. The LAST emergency sequence applies at ANY point — jump to it immediately if suspected, regardless of which stage you're in.",
+  "nodes": [
+    { "id": "pre", "type": "step", "prompt": "1. Pre-procedure", "body": "Confirm indication and target nerve(s); review weight, LA-class allergies, anticoagulation status, pre-existing neuropathy in the distribution. Calculate the maximum allowable dose in mg (weight-based) before drawing anything up. Confirm IV access is patent — obtain it first if not. Obtain and document consent (LAST, nerve injury, hematoma, infection, block-specific risks). Confirm Intralipid 20% is physically present BEFORE injecting anything. Confirm at bedside: airway equipment, BVM, O₂, epinephrine, benzodiazepine. Apply monitoring (SpO₂, continuous ECG, NIBP q2-3min). Position the patient. Run a formal timeout (identity, procedure, site, allergies, consent, emergency equipment)." },
+    { "id": "us-setup", "type": "step", "prompt": "2. Ultrasound setup", "body": "Select the transducer: high-frequency linear (10-15 MHz) for superficial targets (< 4 cm); low-frequency curvilinear (2-5 MHz) for deep targets (> 4-5 cm). Non-sterile survey scan: identify the target nerve and adjacent vessels, activate colour Doppler over the planned trajectory, confirm nerve identity in both long and short axis (honeycomb fascicular pattern in short axis — tendons attach to muscle, nerves don't). Optimise depth, gain, focus zone, and anisotropy tilt before committing. Decide in-plane vs out-of-plane (in-plane preferred) and mark the skin entry point." },
+    { "id": "sterile", "type": "step", "prompt": "3. Sterile setup", "body": "Open sterile supplies to the field. Hand hygiene, sterile gloves. Prep skin with chlorhexidine-gluconate in concentric circles from the centre out; let it fully dry (pooled chlorhexidine carried into tissue is a real risk). Sterile transducer cover with sterile gel inside it; sterile gel on the patient's skin. Draw up the local anaesthetic — verify agent, concentration, and volume against the pre-calculated dose, and label the syringe. Draw a separate 2-3 mL saline or D5W syringe for hydrodissection." },
+    { "id": "needle", "type": "step", "prompt": "4. Needle insertion & positioning", "body": "Re-image with the sterile cover on — confirm the nerve and a vessel-free trajectory. Raise a 1% lidocaine skin wheal (0.5-1 mL) at the entry point. Insert and advance slowly, tracking the tip continuously — do NOT advance if the tip is not visible; tilt or slide the probe until it reappears. If paresthesia occurs on advancement, withdraw 1-2 mm; never inject at a position that caused paresthesia. Once the tip is in the target zone, pause and confirm with hydrodissection (0.5-2 mL saline/D5W): correct spread separates the nerve from surrounding fascia; if fluid disappears without visible spread, reposition and repeat." },
+    { "id": "injection", "type": "step", "prompt": "5. Injection", "body": "Aspirate 3-5 seconds — any blood return means withdraw and replan (negative aspiration does NOT exclude intravascular placement, up to 2% false-negative). If using epinephrine, give a 3 mL test dose and watch the ECG for 60 s for a HR rise > 20 bpm (unreliable on beta-blockade). Inject in 2-3 mL aliquots, aspirating between each, pausing 15-30 s between aliquots for early toxicity signs to appear; total injection time ≥ 60-90 s regardless of volume. Watch the US image continuously: correct perineural spread is a hypoechoic 'donut' around the nerve; nerve swelling on the image is intraneural injection — STOP immediately. High resistance (target < 15 psi) also means stop and reposition. If spread is unilateral or incomplete, withdraw partially, redirect to the opposite aspect, re-confirm tip position, and continue — don't compensate with more volume." },
+    { "id": "post", "type": "step", "prompt": "6. Post-procedure monitoring & assessment", "body": "Maintain continuous monitoring for at least 30 minutes after injection — LAST can be delayed up to 30 min with perineural absorption. Reassess every 5 minutes for CNS symptoms (perioral numbness, metallic taste, tinnitus, visual change, confusion) and haemodynamic/respiratory change. Assess block onset at 10, 20, and 30 minutes: sensory (cold, pinprick, light touch) and motor, compared to the documented baseline. No sensory change by 30 minutes = likely block failure — reassess with US before proceeding with the primary procedure. Document the full procedure note and counsel the patient (expected duration, limb protection / fall precautions, return precautions)." },
+    { "id": "last-emergency", "type": "warning", "prompt": "LAST suspected — at ANY point in the procedure", "body": "Stop injecting immediately. Call for help — announce \"possible LAST.\" Secure the airway, 100% O₂ (hypoxia accelerates toxicity). Treat seizures: midazolam 2-5 mg IV or lorazepam 2 mg IV — avoid propofol as primary seizure management. Intralipid 20%: bolus 1.5 mL/kg ideal body weight over 2-3 min, then infuse 0.25 mL/kg/min (double to 0.5 mL/kg/min if instability persists); repeat the bolus once at 5 min if no improvement; max ~12 mL/kg in the first 30 min. If cardiac arrest: CPR with REDUCED epinephrine (10-100 mcg boluses) — avoid vasopressin, calcium-channel blockers, beta-blockers, propofol. Cardiac recovery from bupivacaine toxicity can take 60+ minutes — consider ECMO early if available. Transfer to a monitored setting for a minimum 4-6 hours post-resolution (redistribution recurrence risk). Full detail: see the LAST — Recognition & Lipid Rescue reference." }
+  ],
+  "checklist": [
+    "IV access confirmed before the needle goes in — always",
+    "Intralipid 20% physically present at the bedside before the first mL — always",
+    "Total mg dose calculated, not just volume, against the weight-based ceiling",
+    "Needle tip visualised before every advance — never advance blind",
+    "Aspirating 3-5 s before every injection and after every reposition",
+    "Injecting in 2-3 mL aliquots with a pause between each",
+    "Injection pressure low and easy — stopped and repositioned if resistance was high",
+    "No nerve swelling seen on ultrasound during injection",
+    "No paresthesia, burning, or unusual sensation reported by the patient during injection",
+    "Continuous monitoring planned for the full 30 minutes post-injection"
+  ],
+  "crossLinks": ["nerve-block-guide", "last-lipid-rescue", "lidocaine", "bupivacaine", "ropivacaine", "mepivacaine"],
+  "buildNote": "workflow outputType (no branching choices — a strict sequential run-through). Deliberately DRY: LA dosing tables, the full LAST pharmacology/management algorithm, and the block-by-block index all stay in nerve-block-guide and last-lipid-rescue rather than being restated here; this module is the tick-through action sequence only. The checklist[] renders as real checkboxes (a pre-procedure/post-procedure safety confirmation), separate from the six workflow nodes."
+}

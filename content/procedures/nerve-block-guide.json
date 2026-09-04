@@ -1,0 +1,71 @@
+{
+  "id": "nerve-block-guide",
+  "section": "Procedures",
+  "category": "Regional Anesthesia & Ultrasound",
+  "title": "Nerve Block Guide",
+  "aliases": ["regional anesthesia", "peripheral nerve block", "US-guided nerve block", "fascia iliaca block", "digital block"],
+  "tags": ["nerve block", "regional anesthesia", "ultrasound guided", "LAST", "local anesthetic", "fascia iliaca", "ED", "OR"],
+  "contentType": "reference",
+  "content_version": 3,
+  "last_reviewed": "2026-09-04",
+  "next_review_due": "2027-03-04",
+  "review_tier": 2,
+  "sources": [
+    "Neal JM et al. ASRA Practice Advisory on Local Anesthetic Systemic Toxicity. Reg Anesth Pain Med 2023",
+    "ACEP Ultrasound Guidelines; SOAP Regional Anesthesia Guidelines",
+    "Critical Vector — POCUS-Guided Nerve Block Procedural Reference (original content)"
+  ],
+  "changelog": [
+    { "version": 3, "date": "2026-09-04", "change": "Cross-linked the new pocus-nerve-block-checklist procedure — the same framework as a sequential, tick-through bedside run-through rather than background reading." },
+    { "version": 2, "date": "2026-09-01", "change": "Rewritten from the Critical Vector POCUS-guided nerve block reference: 6-phase procedural framework, LA dosing table with maxima, LAST surveillance + ASRA 2023 management, 10 safety rules. Cleared the placeholder/needs-primary-source flags." },
+    { "version": 1, "date": "2026-09-01", "change": "Initial stub — block index table only." }
+  ],
+  "summary": "Procedural framework for ultrasound-guided peripheral nerve blocks. LA max dosing and the LAST/lipid-rescue protocol are the single source of truth in their own modules — cross-linked, not restated.",
+  "body": [
+    { "type": "callout", "tone": "danger", "text": "Ten safety rules: (1) IV access before the needle goes in — always. (2) 20% lipid emulsion physically at the bedside before the first mL. (3) Calculate the total mg dose, not just volume. (4) A negative aspiration does NOT exclude intravascular placement (false-negative up to 2%). (5) Inject 2-3 mL aliquots, aspirate between each. (6) Never inject without a confirmed needle-tip position. (7) High injection resistance → stop and reposition. (8) Nerve swelling on US during injection → STOP (intraneural). (9) Paresthesia on injection → stop and reposition. (10) Monitor 30 minutes post-injection — LAST can be delayed." },
+    { "type": "heading", "level": 2, "text": "Local anesthetic selection (calculate the mg dose)" },
+    { "type": "table",
+      "columns": ["Agent", "Conc.", "Onset", "Duration (plain)", "Max dose (plain / with epi)"],
+      "rows": [
+        ["Lidocaine", "1-1.5%", "5-15 min", "1-2 h", "4.5 mg/kg / 7 mg/kg"],
+        ["Mepivacaine", "1-1.5%", "5-15 min", "2-3 h", "4.5 mg/kg / 7 mg/kg"],
+        ["Bupivacaine", "0.25-0.5%", "15-30 min", "6-18 h", "2.5 mg/kg / 3 mg/kg"],
+        ["Ropivacaine", "0.2-0.5%", "15-25 min", "5-15 h", "3 mg/kg / max 200-250 mg"],
+        ["Levobupivacaine", "0.25-0.5%", "15-30 min", "6-18 h", "2.5 mg/kg / 3 mg/kg"]
+      ]
+    },
+    { "type": "list", "items": [
+      "Dexamethasone 4-8 mg perineural extends the block ~4-8 h (an equivalent IV dose may do the same).",
+      "Epinephrine 1:200,000 (5 mcg/mL) prolongs the block, cuts vascular uptake, and acts as an intravascular marker — a test-dose HR rise > 20 bpm within 60 s suggests IV injection (unreliable with β-blockade or baseline tachycardia).",
+      "Dexmedetomidine 0.5-1 mcg/kg perineural — emerging duration extension, not universally adopted."
+    ] },
+    { "type": "heading", "level": 2, "text": "Six-phase procedural framework" },
+    { "type": "list", "items": [
+      "1. PRE-PROCEDURE — indication + consent (LAST, nerve injury, hematoma, infection, block failure; + pneumothorax for interscalene/supraclavicular, phrenic palsy for C3-C5). Absolute CI: refusal, infection over the site, LA-class allergy. Relative: coagulopathy/anticoagulation (use ASRA thresholds — see neuraxial-anticoagulation), pre-existing neuropathy in the distribution, contralateral phrenic palsy. Document baseline motor/sensory. IV access confirmed. Lipid emulsion + airway kit + reduced-dose epi at the bedside.",
+      "2. US SETUP — high-frequency linear (< 4 cm targets), low-frequency curvilinear (> 4-5 cm). Systematic survey scan with colour Doppler (never skip). Confirm nerve identity by tracing proximally/distally — honeycomb fascicular pattern in short axis. Optimise depth/gain/focus/anisotropy tilt before the needle.",
+      "3. STERILE TECHNIQUE — chlorhexidine (fully dry), sterile probe cover with gel inside, sterile drape. Continuous catheter → maximal barrier. Skin wheal 0.5-1 mL 1% lidocaine. 21-22 G echogenic needle; length = target depth + approach angle.",
+      "4. NEEDLE INSERTION — in-plane preferred (whole shaft + tip visible). Never advance if the tip is not visible. Confirm tip with hydrodissection (0.5-2 mL D5W — better echogenicity, non-neurotoxic); fluid should open the correct plane and separate nerve from fascia.",
+      "5. INJECTION — aspirate 3-5 s before every aliquot. Inject 2-3 mL aliquots, pause 15-30 s each, total ≥ 60-90 s. Target pressure < 15 psi. STOP for paresthesia, high resistance, or nerve swelling on US. Correct spread = hypoechoic 'donut' around the nerve in short axis. Reposition for partial spread rather than adding volume.",
+      "6. POST-PROCEDURE — monitor SpO₂/ECG/NIBP ≥ 30 min. Assess block onset (cold, pinprick, light touch, motor) at 5-min intervals vs baseline; onset 10-25 min for long-acting agents. Document agent/conc/volume/total mg, adjuvants, aspiration results, US spread, onset checks, symptoms. Limb protection + fall precautions (any lower-extremity block) + return precautions."
+    ] },
+    { "type": "heading", "level": 2, "text": "LAST — recognition & management (ASRA 2023)" },
+    { "type": "text", "text": "Full protocol: see the last-lipid-rescue module. In brief: STOP injecting · call for help ('possible LAST') · 100% O₂, secure airway (hypoxia accelerates toxicity) · seizures → benzodiazepine, avoid seizure-dose propofol · 20% lipid emulsion 1.5 mL/kg IBW bolus over 2-3 min, then 0.25 mL/kg/min (→ 0.5 if unstable), repeat bolus at 5 min, max ~12 mL/kg · arrest → CPR with REDUCED epi (10-100 mcg boluses), avoid vasopressin/CCB/β-blocker/propofol · prolonged resus (bupivacaine 60+ min), consider ECMO early · ICU ≥ 4-6 h (recurrence from redistribution). Bupivacaine is the most cardiotoxic ('fast in, slow out')." },
+    { "type": "heading", "level": 2, "text": "Block index" },
+    { "type": "table",
+      "columns": ["Block", "Indication", "Approach", "Local anesthetic", "Key complications"],
+      "rows": [
+        ["Digital block", "Finger/toe laceration, nail-bed procedure", "Transthecal or dorsal web-space", "Plain LA, small volume", "Digital ischemia (rare), intraneural injection"],
+        ["Wrist block", "Hand anesthesia", "Median, ulnar, radial individually at the wrist", "Small volume per nerve", "Intraneural injection"],
+        ["Hematoma block", "Distal radius fracture reduction", "Into the fracture hematoma, sterile", "Small volume plain LA", "Infection if sterility breached"],
+        ["Facial (supraorbital / infraorbital / mental)", "Facial laceration without distorting edges", "Landmark, at the respective foramen", "Small volume", "Bruising, incomplete block"],
+        ["Fascia iliaca", "Hip fracture analgesia (landmark-friendly)", "Line ASIS → pubic tubercle in thirds; puncture 2-3 cm distal to the medial-2/3 : lateral-1/3 junction; two pops (fascia lata, then fascia iliaca)", "20-40 mL dilute LA adult; peds 0.8 mL/kg diluted", "LAST"],
+        ["Femoral", "Hip/femur fracture analgesia", "US, lateral to the femoral artery", "Moderate-large volume", "Intravascular injection, LAST"],
+        ["Intercostal", "Rib fracture analgesia", "Below the rib at the angle", "Moderate volume/level — cumulative dose adds up", "Pneumothorax, LAST"],
+        ["Popliteal / saphenous", "Lower leg / foot analgesia", "US, posterior knee", "Moderate volume", "Nerve injury, LAST"],
+        ["Interscalene / supraclavicular / axillary", "Shoulder / arm surgical anesthesia", "US-guided, mainly OR/anesthesia", "Variable", "Phrenic paresis (interscalene), pneumothorax (supraclavicular), LAST"]
+      ]
+    }
+  ],
+  "related": ["pocus-nerve-block-checklist", "last-lipid-rescue", "neuraxial-anticoagulation"],
+  "buildNote": "Content is Critical Vector original. LA max dosing cross-links to Drug & Dosing; LAST cross-links to last-lipid-rescue — do not restate either. Individual block sonoanatomy/technique detail (digital, wrist, popliteal, brachial plexus) can each become its own procedure sub-module later."
+}

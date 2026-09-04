@@ -1,0 +1,35 @@
+{
+  "id": "procedural-sedation-workflow",
+  "section": "Procedures",
+  "category": "Airway & Sedation Workflows",
+  "title": "Procedural Sedation Workflow",
+  "aliases": ["conscious sedation", "moderate sedation", "PSA", "sedation checklist"],
+  "tags": ["procedural sedation", "PSA", "capnography", "Aldrete", "reversal agents", "ED"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": ["ACEP procedural sedation policy (conceptual)", "Procedures_Content_Spec.md"],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry — orchestrates ASA class, STOP-BANG, and Modified Aldrete." }],
+  "purpose": "A pre → during → recovery sequence that pulls the relevant risk screens and the discharge score from Calculators.",
+  "outputType": "workflow",
+  "crossLinks": ["asa-physical-status", "stop-bang", "modified-aldrete"],
+  "nodes": [
+    { "id": "pre", "type": "step", "prompt": "Pre-procedure", "body": "Informed consent. Baseline vitals. ASA class + STOP-BANG screen (see Calculators) — a high STOP-BANG or ASA ≥ III changes airway readiness and disposition. NPO status: usually not a hard stop for an emergent procedure — document the risk/benefit discussion. Confirm a functioning IV." },
+    { "id": "setup", "type": "step", "prompt": "Set-up before the first drug", "body": "Continuous pulse oximetry + capnography + BP cycling. Suction on, oxygen on, bag-valve-mask and airway adjuncts at the bedside. Reversal agents drawn or immediately available: naloxone (opioids), flumazenil (benzodiazepines). A second provider dedicated to monitoring." },
+    { "id": "during", "type": "step", "prompt": "During", "body": "Titrate to the target depth (minimal / moderate / deep). Watch the capnography waveform for early hypoventilation before the SpO₂ falls. Treat apnea with stimulation → jaw thrust → BVM; reserve reversal for genuine oversedation, not routine wake-up." },
+    { "id": "recovery", "type": "step", "prompt": "Recovery & discharge", "body": "Monitor until the patient returns to baseline. Modified Aldrete ≥ 9 (see Calculators) before discharge. Pain controlled, no active bleeding, tolerating oral intake, back to baseline mentation and ambulation. Written discharge instructions. Require a responsible-adult escort — no driving for the rest of the day." }
+  ],
+  "checklist": [
+    "Consent obtained and documented",
+    "ASA class and STOP-BANG recorded",
+    "Capnography + SpO₂ + BP monitoring in place before the first drug",
+    "Suction, O₂, BVM, airway adjuncts, and reversal agents at the bedside",
+    "Dedicated monitoring provider assigned",
+    "Modified Aldrete ≥ 9 documented before discharge",
+    "Responsible-adult escort confirmed; written instructions given"
+  ],
+  "noteTemplate": "PROCEDURAL SEDATION for {{procedure}}. ASA {{asa}}, STOP-BANG {{stopbang}}. Consent obtained. Pre-sedation vitals {{preVitals}}. Monitoring: continuous SpO₂, EtCO₂, BP. Agent(s): {{agents}}. Target depth: {{depth}}. Course: {{course}}. Complications: {{complications}}. Recovery uneventful; Modified Aldrete {{aldrete}} at discharge. Discharged with a responsible adult; written instructions given.",
+  "buildNote": "Depends on ASA (built), STOP-BANG (built), Modified Aldrete (built)."
+}

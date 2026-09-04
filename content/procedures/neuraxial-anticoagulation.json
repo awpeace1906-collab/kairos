@@ -1,0 +1,71 @@
+{
+  "id": "neuraxial-anticoagulation",
+  "section": "Procedures",
+  "category": "Regional Anesthesia & Ultrasound",
+  "title": "Neuraxial / Deep Blocks on Anticoagulants (ASRA 5th ed)",
+  "aliases": ["ASRA anticoagulation", "neuraxial hold times", "spinal epidural anticoagulation", "DOAC stop times block"],
+  "tags": ["ASRA", "neuraxial", "epidural", "spinal", "anticoagulation", "DOAC", "hold times", "spinal hematoma", "OR"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "Kopp SL, Vandermeulen E, McBane RD, et al. Regional Anesthesia in the Patient Receiving Antithrombotic or Thrombolytic Therapy, 5th Edition. ASRA Pain Medicine, 2025",
+    "Critical Vector — Neuraxial Blocks & Blood Thinners (verified against the ASRA 5th ed)"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry from the CV ASRA 5th-edition summary (stop/restart times verified against the published guideline)." }],
+  "summary": "ASRA 5th-edition (2025) stop-before and restart-after times for neuraxial and DEEP plexus / deep peripheral blocks. Spinal hematoma is rare but catastrophic in a fixed closed space — ASRA stays deliberately antihemorrhagic: the goal is full hemostasis, not a convenient compromise.",
+  "body": [
+    { "type": "callout", "tone": "warning", "text": "Deep plexus and deep peripheral blocks (lumbar plexus, deep paravertebral, proximal sciatic) follow the SAME rules as neuraxial. Aspirin or NSAIDs alone → no restriction, proceed. Most DOAC-specific advice is grade 2C ('we suggest') — judgment still matters." },
+    { "type": "heading", "level": 2, "text": "What changed in the 5th edition" },
+    { "type": "list", "items": [
+      "'Low dose' / 'high dose' replace 'prophylactic' / 'therapeutic'.",
+      "A drug LEVEL can clear a block on its own: DOAC < 30 ng/mL, or anti-Xa activity ≤ 0.1 IU/mL — acceptable regardless of time elapsed. PT and aPTT do NOT rule out a DOAC effect — wrong tests.",
+      "Ticagrelor is now 5 days (was 5-7).",
+      "Reversal agents (andexanet, idarucizumab, PCC) are explicitly NOT for enabling a block in routine patients."
+    ] },
+    { "type": "heading", "level": 2, "text": "DOACs — stop before the block" },
+    { "type": "table",
+      "columns": ["Drug", "High dose", "Low dose"],
+      "rows": [
+        ["Apixaban", "72 h", "36 h"],
+        ["Rivaroxaban", "72 h", "24 h (30 h if CrCl < 30)"],
+        ["Edoxaban", "72 h", "no approved low dose"],
+        ["Dabigatran", "72 h (120 h if CrCl 30-49)", "48 h"]
+      ]
+    },
+    { "type": "text", "text": "Dabigatran with CrCl < 30: avoid unless a level confirms < 30 ng/mL — renal function drives dabigatran timing more than any other DOAC. Restart low dose ~6 h post-procedure; restart high dose at ≥ 24 h (48-72 h after high-bleed-risk surgery). For high-dose DOAC, remove the catheter 24 h BEFORE the next dose, not after." },
+    { "type": "heading", "level": 2, "text": "Heparins" },
+    { "type": "list", "items": [
+      "UFH IV: stop 4-6 h + confirm normal coags before the block; resume IV heparin no sooner than 1 h after needle placement.",
+      "UFH low-dose SC (5,000 U): 4-6 h or a normal aPTT. High-dose SC: 12 h (≤ 20,000 U/day) or 24 h (> 20,000 U/day) + normal aPTT.",
+      "LMWH low (prophylactic) dose: 12 h before. High (therapeutic) dose: 24 h before. Restart prophylaxis ≥ 4 h after catheter removal; therapeutic at 24 h (48-72 h after high-bleed surgery). CrCl < 30 → double the wait times.",
+      "On any heparin > 4 days → check platelets first (HIT risk rises with exposure duration)."
+    ] },
+    { "type": "heading", "level": 2, "text": "Antiplatelets — stop before the block" },
+    { "type": "table",
+      "columns": ["Agent", "Stop time"],
+      "rows": [
+        ["Aspirin / NSAIDs", "No wait — proceed"],
+        ["Clopidogrel", "5-7 days"],
+        ["Prasugrel", "7-10 days"],
+        ["Ticagrelor", "5 days"],
+        ["Cangrelor", "3 hours"],
+        ["Cilostazol", "2 days"],
+        ["GP IIb/IIIa — eptifibatide, tirofiban", "4-8 hours"],
+        ["GP IIb/IIIa — abciximab", "24-48 hours"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Warfarin, fondaparinux, thrombolytics" },
+    { "type": "list", "items": [
+      "Warfarin: stop ≥ 5 days with a normalised INR; remove the catheter once INR < 1.5.",
+      "Fondaparinux low dose (2.5 mg): 36-42 h (58 h if CrCl 30-50; avoid if < 30). High dose (5-10 mg): 70 h (younger) / 105 h (elderly).",
+      "Thrombolytics: avoid the needle for ≥ 48 h and confirm normal clotting including fibrinogen.",
+      "Herbal supplements (garlic, ginkgo, ginseng): no need to stop."
+    ] },
+    { "type": "callout", "tone": "info", "text": "Numbers to remember: high-dose apixaban/rivaroxaban/edoxaban 72 h · high-dose dabigatran 72 h (120 h if CrCl 30-49) · any DOAC level < 30 ng/mL or anti-Xa ≤ 0.1 IU/mL clears the block · warfarin 5+ days & INR < 1.5 · UFH IV 4-6 h + normal coags · LMWH high dose 24 h · clopidogrel/ticagrelor/prasugrel 5-7 / 5 / 7-10 days." }
+  ],
+  "related": ["nerve-block-guide", "anticoagulation-reversal"],
+  "buildNote": "Verified against the ASRA 5th ed. The source carousel had 11 slides; slides 10-11 (not provided) may add detail. Cross-links to anticoagulation-reversal (which covers emergent reversal, a different question)."
+}

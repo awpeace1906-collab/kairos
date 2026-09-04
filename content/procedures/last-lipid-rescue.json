@@ -1,0 +1,51 @@
+{
+  "id": "last-lipid-rescue",
+  "section": "Procedures",
+  "category": "Regional Anesthesia & Ultrasound",
+  "title": "LAST — Recognition & Lipid Rescue",
+  "aliases": ["local anesthetic systemic toxicity", "lipid emulsion", "Intralipid", "bupivacaine toxicity"],
+  "tags": ["LAST", "local anesthetic toxicity", "lipid emulsion", "nerve block complication", "ED", "OR"],
+  "contentType": "reference",
+  "content_version": 2,
+  "last_reviewed": "2026-09-01",
+  "next_review_due": "2026-12-01",
+  "review_tier": 1,
+  "sources": [
+    "Neal JM et al. ASRA Practice Advisory on Local Anesthetic Systemic Toxicity. Reg Anesth Pain Med 2023",
+    "Critical Vector — POCUS-Guided Nerve Block Procedural Reference"
+  ],
+  "changelog": [
+    { "version": 2, "date": "2026-09-01", "change": "Source updated to the ASRA 2023 practice advisory (dosing unchanged: 1.5 mL/kg IBW bolus, 0.25 → 0.5 mL/kg/min infusion, ~12 mL/kg max); confirmed against the CV nerve-block reference." },
+    { "version": 1, "date": "2026-09-01", "change": "Initial entry — shared component referenced from every nerve-block module." }
+  ],
+  "summary": "The one shared LAST reference, callable from every nerve-block entry. Recognition + the 20% lipid emulsion protocol.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Recognise it" },
+    { "type": "list", "items": [
+      "CNS first: perioral numbness, metallic taste, tinnitus, agitation, confusion → seizure → coma",
+      "Then cardiovascular: hypertension/tachycardia → bradycardia, conduction block, ventricular arrhythmia, asystole",
+      "Onset is usually within minutes of injection but can be delayed up to ~60 min",
+      "Have a high index of suspicion after any large-volume or multi-level block (e.g. intercostals), or an unintended intravascular injection"
+    ] },
+    { "type": "heading", "level": 2, "text": "Immediate management" },
+    { "type": "list", "items": [
+      "Stop injecting. Call for help and the LAST rescue kit.",
+      "Airway: 100% oxygen, ventilate — hypoxia and acidosis worsen toxicity",
+      "Seizures: benzodiazepine first-line; avoid large doses of propofol in a haemodynamically unstable patient",
+      "ACLS with modifications: REDUCE the epinephrine dose to ≤ 1 mcg/kg boluses; AVOID vasopressin, calcium-channel blockers, beta-blockers, and local anesthetics (lidocaine, procainamide)"
+    ] },
+    { "type": "heading", "level": 2, "text": "20% lipid emulsion (Intralipid)" },
+    { "type": "table",
+      "columns": ["Step", "Dose"],
+      "rows": [
+        ["Bolus", "1.5 mL/kg lean body weight IV over ~1 min (≈ 100 mL in a 70 kg adult)"],
+        ["Infusion", "0.25 mL/kg/min (≈ 18 mL/min / ~1000 mL/h in a 70 kg adult)"],
+        ["Persistent instability", "Re-bolus once or twice and double the infusion to 0.5 mL/kg/min"],
+        ["Upper limit", "≈ 12 mL/kg total"],
+        ["Continue", "For at least 10-15 min after haemodynamic stability is restored"]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "Propofol is NOT a substitute for lipid emulsion — its lipid content is far too low and its cardiodepressant effect is harmful here. Consider early cardiopulmonary bypass / ECMO for refractory arrest." }
+  ],
+  "buildNote": "Cross-linked from every nerve-block entry (and the laceration guide's LA cross-link). Keep as the single source of truth for LAST."
+}
