@@ -1,0 +1,57 @@
+{
+  "id": "mehran-ci-akin-score",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "Mehran Score — Contrast-Induced AKI Risk (PCI)",
+  "aliases": ["Mehran score", "contrast-induced nephropathy risk", "CI-AKI risk score", "contrast nephropathy PCI", "CIN risk"],
+  "tags": ["contrast-induced AKI", "CI-AKI", "nephropathy", "PCI", "cardiac catheterization", "renal", "cardiology"],
+  "keywords": ["hypotension IABP CHF age anemia diabetes contrast volume creatinine eGFR", "score under 5 7.5%", "6-10 14.0%", "11-15 26.1%", "16 or more 57.3%", "Mehran 2004 JACC"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-04",
+  "next_review_due": "2027-03-04",
+  "review_tier": 1,
+  "sources": [
+    "Mehran R, Aymong ED, Nikolsky E, et al. A Simple Risk Score for Prediction of Contrast-Induced Nephropathy After Percutaneous Coronary Intervention. J Am Coll Cardiol. 2004;44(7):1393-1399."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-04", "change": "Initial entry — the derivation-cohort points and risk categories, as an interactive calculator (the score itself was already described in prose in contrast-associated-aki)." }
+  ],
+  "engine": "additive",
+  "settings": ["OR", "ICU"],
+  "purpose": "Predicts the risk of contrast-induced AKI before a PCI — takes about 90 seconds. Score before the case, not after: it changes how much contrast you're willing to use and whether to push for a hydration protocol and IVUS-first strategy.",
+  "items": [
+    { "key": "hypotension", "label": "Hypotension (SBP < 80 for ≥ 1 h, or requiring pressors/IABP within 24 h)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 5 }] },
+    { "key": "iabp", "label": "Intra-aortic balloon pump", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 5 }] },
+    { "key": "chf", "label": "Congestive heart failure (NYHA III–IV, or pulmonary edema)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 5 }] },
+    { "key": "age", "label": "Age > 75 years", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 4 }] },
+    { "key": "anemia", "label": "Anemia (Hct < 39% men / < 36% women)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 3 }] },
+    { "key": "diabetes", "label": "Diabetes mellitus", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 3 }] },
+    { "key": "contrastVolume", "label": "Contrast volume (planned or given)", "options": [
+      { "label": "< 100 mL", "points": 0 },
+      { "label": "100–199 mL", "points": 1 },
+      { "label": "200–299 mL", "points": 2 },
+      { "label": "300–399 mL", "points": 3 },
+      { "label": "400–499 mL", "points": 4 },
+      { "label": "500–599 mL", "points": 5 },
+      { "label": "600–699 mL", "points": 6 },
+      { "label": "700–799 mL", "points": 7 },
+      { "label": "≥ 800 mL", "points": 8 }
+    ] },
+    { "key": "renal", "label": "Baseline renal function", "options": [
+      { "label": "Normal (eGFR ≥ 60 and creatinine ≤ 1.5 mg/dL)", "points": 0 },
+      { "label": "eGFR 40–60 mL/min", "points": 2 },
+      { "label": "Creatinine > 1.5 mg/dL (use if eGFR unavailable)", "points": 4 },
+      { "label": "eGFR 20–40 mL/min", "points": 4 },
+      { "label": "eGFR < 20 mL/min", "points": 6 }
+    ] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 5, "label": "Low risk — ~7.5% CI-AKI", "detail": "Standard periprocedural hydration is reasonable. Still minimise contrast volume and check the contrast-to-MACD ratio.", "severity": "low" },
+    { "min": 6, "max": 10, "label": "Moderate risk — ~14.0% CI-AKI", "detail": "Prioritise IV isotonic saline hydration (LVEDP-guided where available), minimise contrast, and consider a high-dose statin if not already on one.", "severity": "moderate" },
+    { "min": 11, "max": 15, "label": "High risk — ~26.1% CI-AKI", "detail": "LVEDP-guided hydration protocol, IVUS-first to cut contrast volume, keep the contrast/MACD ratio under 1.0, hold metformin after the case if eGFR < 30–45.", "severity": "high" },
+    { "min": 16, "max": 100, "label": "Very high risk — ~57.3% CI-AKI", "detail": "Maximal contrast minimisation, LVEDP-guided hydration, nephrology involvement, and an explicit conversation about deferring the procedure or staging it if clinically possible.", "severity": "critical" }
+  ],
+  "notes": "Renal function is scored one way, not added twice — use the creatinine option only if eGFR isn't available. Derived and validated in PCI patients; applies less cleanly to non-PCI contrast studies (e.g. a straightforward CT), where the underlying risk factors still matter but the point weights weren't derived for that setting. Related: Contrast-Associated AKI — Prevention (hydration protocol, MACD, drug evidence), AKI Staging & Renal Replacement Therapy.",
+  "buildNote": "Additive engine. Contrast volume (continuous, +1/100 mL) modelled as a bucketed select since the engine scores discrete options — matches the source's own point table exactly at each 100 mL boundary. Companion to the contrast-associated-aki reference module, which already carries the full prevention protocol (hydration, MACD, drug evidence)."
+}
