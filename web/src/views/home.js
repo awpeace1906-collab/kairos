@@ -106,7 +106,7 @@ export function renderHome(store, router) {
     store.sections.map((s) =>
       el(
         "a",
-        { class: "tile", href: `#/section/${s.id}` },
+        { class: "tile", href: `#/section/${s.id}`, "data-section": s.id },
         el("span", { class: "tile-icon" }, (SECTION_META[s.id] || {}).icon || "•"),
         el("span", { class: "tile-title" }, s.title),
         el("span", { class: "tile-q" }, s.coreQuestion)

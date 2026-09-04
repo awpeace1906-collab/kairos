@@ -1,0 +1,42 @@
+{
+  "id": "allowable-blood-loss",
+  "section": "Calculators",
+  "category": "Anesthesia / Airway / OR",
+  "title": "Estimated Blood Volume & Maximum Allowable Blood Loss",
+  "aliases": ["MABL", "ABL", "allowable blood loss", "estimated blood volume", "EBV", "transfusion trigger volume", "Gross formula"],
+  "tags": ["blood loss", "transfusion", "estimated blood volume", "perioperative", "OR", "anesthesia", "pediatric"],
+  "keywords": ["EBV weight-based mL/kg by age", "premature 95 term 85 infant 80 child 75 adult male 70 female 65", "ABL = EBV x (Hi - Hf) / Hi", "maximum allowable blood loss before transfusion", "haematocrit target"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2027-09-03",
+  "review_tier": 1,
+  "sources": ["Gross JB. Anesthesiology 1983 (estimation of allowable blood loss); Miller's Anesthesia — blood-volume estimates by age"],
+  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — weight-based EBV by patient type and the simple ABL formula." }],
+  "engine": "formula",
+  "settings": ["OR", "Anesthesia"],
+  "purpose": "Estimates the circulating blood volume and the volume of blood that can be lost before the haematocrit falls to the lowest acceptable value — a planning number for when to have product ready and when to transfuse. It is an estimate: reassess against the actual haemodynamics, ongoing loss rate, and a measured haematocrit.",
+  "inputs": [
+    { "key": "weight", "label": "Weight", "type": "number", "unit": "kg", "min": 0.5, "max": 250 },
+    { "key": "ebvPerKg", "label": "Patient type (blood volume per kg)", "type": "select", "options": [
+      { "label": "Premature neonate — 95 mL/kg", "value": 95 },
+      { "label": "Term neonate — 85 mL/kg", "value": 85 },
+      { "label": "Infant (1–12 months) — 80 mL/kg", "value": 80 },
+      { "label": "Child (1–12 years) — 75 mL/kg", "value": 75 },
+      { "label": "Adult man — 70 mL/kg", "value": 70 },
+      { "label": "Adult woman — 65 mL/kg", "value": 65 }
+    ] },
+    { "key": "hctInitial", "label": "Initial haematocrit", "type": "number", "unit": "%", "min": 15, "max": 65 },
+    { "key": "hctTarget", "label": "Lowest acceptable haematocrit", "type": "number", "unit": "%", "min": 15, "max": 40 }
+  ],
+  "formulas": [
+    { "key": "ebv", "label": "Estimated blood volume", "expression": "weight * ebvPerKg", "unit": "mL", "precision": 0 },
+    { "key": "abl", "label": "Maximum allowable blood loss", "expression": "(weight * ebvPerKg) * (hctInitial - hctTarget) / hctInitial", "unit": "mL", "precision": 0 },
+    { "key": "ablPerKg", "label": "ABL per kg", "expression": "(weight * ebvPerKg) * (hctInitial - hctTarget) / hctInitial / weight", "unit": "mL/kg", "precision": 1 }
+  ],
+  "interpretation": [
+    { "forKey": "abl", "min": 0, "max": 1000000, "label": "Have blood products checked and available before loss approaches this volume. As loss nears the ABL, send a haematocrit and start replacing red cells; a restrictive trigger (Hb ~ 7 g/dL, or ~ 8 in active cardiac disease) is appropriate for most stable patients. This estimate assumes iso-volaemic replacement with crystalloid/colloid; brisk or ongoing loss, coagulopathy, or a poor cardiac reserve all move the transfusion point earlier.", "severity": "moderate" }
+  ],
+  "notes": "The simple formula ABL = EBV × (Hi − Hf) / Hi slightly overestimates; the Gross correction uses the average of the initial and final haematocrit in the denominator. Convert haemoglobin to haematocrit as roughly Hct ≈ 3 × Hb. In children, a small absolute loss is a large fraction of the EBV — weigh sponges and suction and communicate loss early.",
+  "buildNote": "Formula engine. EBV per kg is a select; ABL uses the simple Gross formula."
+}

@@ -4,6 +4,49 @@ Kairos must read as visually distinct from **AnesCalc** and **CRISIS** (its two
 companion apps). This file captures the reference palettes so a Kairos scheme can
 be proposed that collides with neither.
 
+## DECISION — 2026-09-03: Option A, "Ink & Ember on Parchment"
+
+Light-first, warm-neutral ground, ember accent used sparingly (one decisive
+element per screen — the result, the recommendation, the active branch). This is
+the icon's own logic: a calm field with one struck point. Reads as neither
+companion (AnesCalc = navy + gold on dark; CRISIS = teal-on-black serif) and
+makes the locked ember app icon read as deliberate.
+
+Applied in `web/styles.css` `:root` (light) + `@media (prefers-color-scheme:
+dark)`, `web/index.html` theme-color, and `ios/Sources/App/Theme.swift`.
+
+| Token | Light | Dark | Role |
+|---|---|---|---|
+| `--bg` | `#F2F1ED` | `#1A1A1E` | parchment ground / warm charcoal |
+| `--surface` | `#FBFAF8` | `#242329` | cards |
+| `--surface-2` | `#F0EEE7` | `#201F25` | insets, option rows |
+| `--text` | `#1C1A24` | `#E9E7E1` | ink |
+| `--muted` | `#6B6862` | `#9B978F` | secondary text |
+| `--line` | `#E3E1DB` | `#34323B` | hairlines |
+| `--accent` | `#C6521C` | `#E5843F` | ember — sparing highlight |
+| `--accent-deep` | `#8E2810` | `#C6521C` | pressed / visited |
+| `--sev-low` | `#3F7A4E` | `#4E9A63` | severity: low |
+| `--sev-moderate` | `#C6521C` | `#E5843F` | severity: moderate (= ember, double duty) |
+| `--sev-high` | `#B4322A` | `#D9564A` | severity: high |
+| `--sev-critical` | `#8A2020` | `#C24438` | severity: critical |
+
+Section tints (muted, low-chroma — distinguishable without a colour wheel):
+`procedures #5B6B7A` slate · `calculators #4A4754` graphite · `drug-dosing
+#B5602E` terracotta · `reference-library #6E6A4E` drab · `peds-module #8A5A6B`
+plum-rose. (Dark: lift each ~15% L.)
+
+Type: `--font-sans` prefers **IBM Plex Sans**, `--font-mono` prefers **IBM Plex
+Mono**, both falling back to the system stack until self-hosted woff2 files land
+(follow-up). No serif (that's CRISIS); no per-section colour theming beyond the
+tint above.
+
+Fallback if the ink-forward build feels austere: deep indigo `#3D3A9E` accent,
+ember demoted to a warm secondary on the result readout. Same parchment ground.
+
+Swatch comparison artifact: <https://claude.ai/code/artifact/fff174d0-6d38-40cd-a05d-5c5526cbc60c>
+
+---
+
 ## AnesCalc v2 (from `AnesthesiaCalc/Utilities/ThemeManager.swift`)
 
 7 selectable themes; **default is `astmColors`**. System accent asset = `#1B3A6B`
@@ -57,7 +100,11 @@ purple semantic accent set, serif body + Syne display.
 - **Near-black `#0a0e14` ground + serif body** — CRISIS's signature.
 - **Navy `#1B3A6B`/`#1C2B3A` ground + system sans + ASTM drug colours** — AnesCalc.
 
-## Proposed Kairos direction (for review — not yet applied)
+## Proposed Kairos direction (SUPERSEDED by the 2026-09-03 decision above)
+
+> Kept for the record. This section recommended cobalt-indigo; the call went to
+> the ember accent (Option A) so the palette reconciles with the shipped app
+> icon. The light-first / geometric-sans / non-teal framing below still holds.
 
 The niche left open: **light-first, geometric-sans, single cool non-teal accent.**
 

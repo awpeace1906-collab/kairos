@@ -3,6 +3,15 @@
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
+    "calculators/anesthesia-airway-or/allowable-blood-loss": {
+      "content_version": 1,
+      "hash": "ad4af935e95125c4",
+      "path": "modules/calculators/anesthesia-airway-or/allowable-blood-loss.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
+    },
     "calculators/anesthesia-airway-or/apfel-ponv": {
       "content_version": 1,
       "hash": "047cd6bc1bba2725",
@@ -1453,6 +1462,24 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "peds-module/chromosomal-disorders": {
+      "content_version": 1,
+      "hash": "3c205adbe88a1199",
+      "path": "modules/peds-module/chromosomal-disorders.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
+    },
+    "peds-module/developmental-delay-evaluation": {
+      "content_version": 1,
+      "hash": "aa2717bbc220a4e8",
+      "path": "modules/peds-module/developmental-delay-evaluation.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
+    },
     "peds-module/inborn-errors-metabolism": {
       "content_version": 1,
       "hash": "fcb5ef54391e6493",
@@ -1488,6 +1515,15 @@
       "section": "Peds Module",
       "review_tier": 1,
       "next_review_due": "2026-12-02"
+    },
+    "peds-module/inheritance-patterns": {
+      "content_version": 1,
+      "hash": "106299c5a3fb4f9c",
+      "path": "modules/peds-module/inheritance-patterns.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-09-03"
     },
     "peds-module/neonatal-growth-parameters": {
       "content_version": 1,

@@ -1,24 +1,53 @@
-/* Placeholder palette. The real color/font scheme is an open Tier 5 decision
-   (must be visually distinct from AnesCalc and CRISIS). Tokens only here. */
+/* Kairos Tier 5 palette — "Ink & Ember on Parchment" (decided 2026-09-03).
+   Light-first, warm-neutral ground, ember accent used sparingly. Distinct from
+   AnesCalc (navy + gold) and CRISIS (near-black + teal + serif). Tokens only.
+   Font stack prefers IBM Plex Sans/Mono; self-hosted woff2 is a follow-up, so
+   the stack falls back to the system sans until those files land. */
 :root {
-  --bg: #0f1720;
-  --surface: #17212b;
-  --surface-2: #1f2b38;
-  --text: #e8eef4;
-  --muted: #93a3b3;
-  --line: #2b3a49;
-  --accent: #4bb3a7;
-  --sev-low: #2f9e5f;
-  --sev-moderate: #c98a2b;
-  --sev-high: #cf4b4b;
-  --sev-critical: #b0203f;
+  --bg: #f2f1ed;
+  --surface: #fbfaf8;
+  --surface-2: #f0eee7;
+  --text: #1c1a24;
+  --muted: #6b6862;
+  --line: #e3e1db;
+  --accent: #c6521c;
+  --accent-deep: #8e2810;
+  --sev-low: #3f7a4e;
+  --sev-moderate: #c6521c;
+  --sev-high: #b4322a;
+  --sev-critical: #8a2020;
+  /* section tints — muted, low-chroma; distinguishable without a colour wheel */
+  --sec-procedures: #5b6b7a;
+  --sec-calculators: #4a4754;
+  --sec-drug-dosing: #b5602e;
+  --sec-reference-library: #6e6a4e;
+  --sec-peds-module: #8a5a6b;
   --radius: 12px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  font-family: var(--font-sans);
+  color-scheme: light;
 }
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    --bg: #f4f6f8; --surface: #fff; --surface-2: #eef2f5; --text: #16212c;
-    --muted: #5c6b7a; --line: #d8e0e6;
+    --bg: #1a1a1e;
+    --surface: #242329;
+    --surface-2: #201f25;
+    --text: #e9e7e1;
+    --muted: #9b978f;
+    --line: #34323b;
+    --accent: #e5843f;
+    --accent-deep: #c6521c;
+    --sev-low: #4e9a63;
+    --sev-moderate: #e5843f;
+    --sev-high: #d9564a;
+    --sev-critical: #c24438;
+    --sec-procedures: #7e8e9d;
+    --sec-calculators: #6c6879;
+    --sec-drug-dosing: #d0824f;
+    --sec-reference-library: #9a9578;
+    --sec-peds-module: #b27e90;
+    color-scheme: dark;
   }
 }
 * { box-sizing: border-box; }
@@ -45,7 +74,7 @@ h3 { margin: 18px 0 6px; }
   border: 1px solid var(--line); background: var(--surface); color: var(--muted);
   border-radius: 999px; padding: 5px 12px; font-size: .8rem; cursor: pointer;
 }
-.chip.selected { background: var(--accent); color: #04110f; border-color: var(--accent); }
+.chip.selected { background: var(--accent); color: #fff; border-color: var(--accent); }
 
 .results { display: grid; gap: 14px; }
 .result-section { font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 4px; }
@@ -60,7 +89,12 @@ h3 { margin: 18px 0 6px; }
 .toc-cat li { padding: 5px 12px; }
 
 .section-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 18px; }
-.tile { display: flex; flex-direction: column; gap: 4px; padding: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.tile { display: flex; flex-direction: column; gap: 4px; padding: 14px; background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--line); border-radius: var(--radius); }
+.tile[data-section="procedures"] { border-left-color: var(--sec-procedures); }
+.tile[data-section="calculators"] { border-left-color: var(--sec-calculators); }
+.tile[data-section="drug-dosing"] { border-left-color: var(--sec-drug-dosing); }
+.tile[data-section="reference-library"] { border-left-color: var(--sec-reference-library); }
+.tile[data-section="peds-module"] { border-left-color: var(--sec-peds-module); }
 .tile-icon { font-size: 1.4rem; }
 .tile-title { font-weight: 600; color: var(--text); }
 .tile-q { font-size: .78rem; color: var(--muted); }

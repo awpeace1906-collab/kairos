@@ -149,6 +149,37 @@
       "route": "/calculators/anesthesia-airway-or/el-ganzouri"
     },
     {
+      "id": "allowable-blood-loss",
+      "title": "Estimated Blood Volume & Maximum Allowable Blood Loss",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "blood loss",
+        "transfusion",
+        "estimated blood volume",
+        "perioperative",
+        "OR",
+        "anesthesia",
+        "pediatric"
+      ],
+      "keywords": [
+        "EBV weight-based mL/kg by age",
+        "premature 95 term 85 infant 80 child 75 adult male 70 female 65",
+        "ABL = EBV x (Hi - Hf) / Hi",
+        "maximum allowable blood loss before transfusion",
+        "haematocrit target",
+        "MABL",
+        "ABL",
+        "allowable blood loss",
+        "estimated blood volume",
+        "EBV",
+        "transfusion trigger volume",
+        "Gross formula"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/allowable-blood-loss"
+    },
+    {
       "id": "lemon-airway",
       "title": "LEMON — Difficult Airway Assessment",
       "section": "Calculators",
@@ -3442,6 +3473,57 @@
       "route": "/peds-module/neonatology/apgar-score"
     },
     {
+      "id": "chromosomal-disorders",
+      "title": "Chromosomal Disorders",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "chromosomal disorder",
+        "trisomy",
+        "Down syndrome",
+        "Turner syndrome",
+        "genetics",
+        "neonatology",
+        "dysmorphology"
+      ],
+      "keywords": [
+        "Down syndrome trisomy 21",
+        "Patau trisomy 13",
+        "Edwards trisomy 18",
+        "Turner syndrome 45X",
+        "Klinefelter 47XXY",
+        "Fragile X",
+        "aneuploidy",
+        "karyotype"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/chromosomal-disorders"
+    },
+    {
+      "id": "developmental-delay-evaluation",
+      "title": "Developmental Delay — Red Flags & Evaluation",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "developmental delay",
+        "developmental surveillance",
+        "regression",
+        "cerebral palsy",
+        "well-child",
+        "neonatology"
+      ],
+      "keywords": [
+        "developmental red flags",
+        "global developmental delay",
+        "developmental regression",
+        "normal developmental variants",
+        "toe walking",
+        "developmental screening"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/developmental-delay-evaluation"
+    },
+    {
       "id": "infant-development-feeding",
       "title": "Developmental Milestones & Infant Feeding",
       "section": "Peds Module",
@@ -3544,6 +3626,32 @@
       ],
       "contentType": "peds-tool",
       "route": "/peds-module/neonatology/infant-of-diabetic-mother"
+    },
+    {
+      "id": "inheritance-patterns",
+      "title": "Modes of Inheritance & Imprinting Syndromes",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "inheritance",
+        "genetics",
+        "recurrence risk",
+        "imprinting",
+        "microdeletion syndrome",
+        "neonatology"
+      ],
+      "keywords": [
+        "autosomal dominant recessive",
+        "X-linked inheritance",
+        "recurrence risk",
+        "genomic imprinting",
+        "Prader-Willi Angelman",
+        "Beckwith-Wiedemann",
+        "Williams syndrome",
+        "Noonan syndrome"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/inheritance-patterns"
     },
     {
       "id": "neonatal-hie-cooling",

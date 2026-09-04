@@ -361,10 +361,39 @@ Last updated: 2026-09-01
   - Neonatology (Peds Module): `neonatal-growth-parameters`,
     `infant-development-feeding`, `prematurity-complications`,
     `sga-lga-birth-injury`, `inborn-errors-metabolism`.
-  - Still-open seams: Neo `chromosomal` / `inheritance` / `devdelay`; Vent's ~30
-    deep mode-specific subsections (NAVA, PAV+, ASV, cross-manufacturer) —
-    specialist, low bedside yield. Anesthesia reference guide never parsed
-    (different HTML format) — its POCUS / drug-conc / abx sections were pulled by hand.
+  - Then +4: `chromosomal-disorders`, `inheritance-patterns`,
+    `developmental-delay-evaluation` (Neonatology), `allowable-blood-loss`
+    (EBV + MABL calculator, Anesthesia/OR). **277 modules.**
+  - **Content build now substantially complete.** Remaining seams are low-yield:
+    Vent's ~30 deep mode-specific subsections (NAVA, PAV+, ASV, cross-manufacturer)
+    — specialist; calculator refinements (NISS/TRISS, interactive New Orleans
+    CT-head rule, Caprini-2013 40-item); nerve-block / POCUS as interactive trees
+    (currently reference menus — a design call). Anesthesia reference guide never
+    parsed with the pocket-guide extractor (different `<h2>`-section HTML) — its
+    useful sections were pulled by hand.
+  - **Git note:** the VM's disk I/O degraded hard this session — `git add` /
+    `git commit` hung for minutes with a 0-byte `.git/index.lock`. Drill: kill the
+    stuck process, `rm -f .git/index.lock`, retry. 580+ unpacked loose objects;
+    a `git gc` did not complete cleanly. Worth a manual `git gc` from a terminal.
+- 2026-09-03 — **Tier 5 palette DECIDED — "Ink & Ember on Parchment" (Option A).**
+  Light-first parchment ground (`#F2F1ED` / dark `#1A1A1E`), ember accent
+  (`#C6521C`, sparing — one decisive element per screen), reconciling the palette
+  with the shipped ember app icon. Reads as neither companion (AnesCalc navy+gold,
+  CRISIS teal-on-black serif). Applied: `web/styles.css` `:root` + dark `@media`
+  (flipped to light-first; added `--accent-deep`, 5 `--sec-*` section tints,
+  `--font-sans`/`--font-mono`), `web/src/views/home.js` (tiles emit `data-section`
+  → tint left-border), `web/index.html` (theme-aware `theme-color`),
+  `ios/Sources/App/Theme.swift` (section + severity colours to the Option A
+  hexes; added `Theme.accent`). Full token table + swatch-artifact link in
+  `docs/PALETTES.md`; the old cobalt-indigo proposal there is marked superseded.
+  Follow-ups: self-host **IBM Plex Sans/Mono** woff2 (stack falls back to system
+  until then); wire `--sec-*` tints into section headers / detail views beyond
+  the home tiles; iOS dark-mode colour set via asset catalog; recolour
+  `weight-zones.json` off the old Teal→Charcoal scheme.
+  **Not verified live** — the same disk I/O failure blocked `tools/build.mjs`
+  (2-min timeout on a ~2s script) and the dev server's `predev` sync. Static
+  checks pass (CSS braces balanced, `node --check` on home.js). Eyeball with
+  `npm --prefix web run dev` from a healthy terminal.
 
 ---
 
@@ -428,12 +457,13 @@ Last updated: 2026-09-01
   switch, force-quit).
 
 ### Design decisions open
-- [ ] **Tier 5 — colour/font scheme.** Both reference palettes now captured
-  (`docs/PALETTES.md`). Proposed Kairos direction there: light-first, single
-  geometric sans, cobalt-indigo accent (no teal — both apps use it; no gold —
-  AnesCalc's). Needs: your sign-off on the direction → a swatch artifact → swap
-  the tokens in `web/styles.css` `:root` + `ios/.../Theme.swift` + the section
-  token map + the placeholder app icon colour + `weight-zones.json` zone colours.
+- [x] **Tier 5 — colour/font scheme.** DECIDED 2026-09-03: **"Ink & Ember on
+  Parchment" (Option A)** — light-first parchment ground, ember accent used
+  sparingly, reconciled with the shipped app icon. Full token table in
+  `docs/PALETTES.md`; swap applied to `web/styles.css`, `web/src/views/home.js`,
+  `web/index.html`, `ios/.../Theme.swift`. Open sub-items: self-host IBM Plex
+  woff2; wire `--sec-*` tints beyond the home tiles; iOS dark-mode asset-catalog
+  colours; recolour `weight-zones.json`. (See the 2026-09-03 progress-log entry.)
 - [ ] **App icon — PARKED, revisit.** Current `web/public/icons/icon.svg` is a
   converging-caret placeholder. Explored a "pulse spike hitting a point" family
   (scratchpad `pulse-a/b/c.svg`: full ECG trace / single bold spike / flatline
