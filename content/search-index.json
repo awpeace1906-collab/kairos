@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T00:00:00Z",
+  "generatedAt": "2026-09-04T00:00:00Z",
   "entries": [
     {
       "id": "apfel-ponv",
@@ -199,6 +199,38 @@
       ],
       "contentType": "calculator",
       "route": "/calculators/anesthesia-airway-or/lemon-airway"
+    },
+    {
+      "id": "macocha-score",
+      "title": "MACOCHA Score — Difficult Intubation in the ICU",
+      "section": "Calculators",
+      "category": "Anesthesia / Airway / OR",
+      "tags": [
+        "difficult airway",
+        "intubation",
+        "RSI",
+        "ICU",
+        "airway assessment",
+        "MACOCHA",
+        "first-pass success"
+      ],
+      "keywords": [
+        "Mallampati III IV 5 points",
+        "OSA 2 points",
+        "reduced cervical spine mobility",
+        "mouth opening under 3 cm",
+        "coma GCS under 8",
+        "hypoxaemia SpO2 under 80",
+        "non-anaesthesiologist operator",
+        "score 3 or more predicts difficult intubation",
+        "De Jong 2013",
+        "MACOCHA",
+        "difficult airway ICU",
+        "difficult intubation prediction",
+        "critically ill airway assessment"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/anesthesia-airway-or/macocha-score"
     },
     {
       "id": "mallampati",
@@ -727,6 +759,36 @@
       ],
       "contentType": "calculator",
       "route": "/calculators/gi-renal-metabolic/maddrey-df"
+    },
+    {
+      "id": "mehran-ci-akin-score",
+      "title": "Mehran Score — Contrast-Induced AKI Risk (PCI)",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "contrast-induced AKI",
+        "CI-AKI",
+        "nephropathy",
+        "PCI",
+        "cardiac catheterization",
+        "renal",
+        "cardiology"
+      ],
+      "keywords": [
+        "hypotension IABP CHF age anemia diabetes contrast volume creatinine eGFR",
+        "score under 5 7.5%",
+        "6-10 14.0%",
+        "11-15 26.1%",
+        "16 or more 57.3%",
+        "Mehran 2004 JACC",
+        "Mehran score",
+        "contrast-induced nephropathy risk",
+        "CI-AKI risk score",
+        "contrast nephropathy PCI",
+        "CIN risk"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/mehran-ci-akin-score"
     },
     {
       "id": "meld-na",
@@ -2130,44 +2192,10 @@
       "route": "/calculators/trauma/shock-index"
     },
     {
-      "id": "atropine",
-      "title": "Atropine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Anticholinergics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "anticholinergic",
-        "atropine"
-      ],
-      "keywords": [
-        "AtroPen (auto-injector)"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-anticholinergics/atropine"
-    },
-    {
-      "id": "glycopyrrolate",
-      "title": "Glycopyrrolate",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Anticholinergics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "anticholinergic",
-        "glycopyrrolate"
-      ],
-      "keywords": [
-        "Robinul"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-anticholinergics/glycopyrrolate"
-    },
-    {
       "id": "4-factor-pcc-kcentra",
       "title": "4-Factor PCC (Kcentra)",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "category": "Anticoagulants & Hemostatics",
       "tags": [
         "anesthesia",
         "perioperative",
@@ -2180,13 +2208,13 @@
         "Kcentra / Beriplex / Octaplex"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/4-factor-pcc-kcentra"
+      "route": "/drug-dosing/anticoagulants-hemostatics/4-factor-pcc-kcentra"
     },
     {
       "id": "aminocaproic-acid-amicar",
       "title": "Aminocaproic Acid (Amicar)",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "category": "Anticoagulants & Hemostatics",
       "tags": [
         "anesthesia",
         "perioperative",
@@ -2199,13 +2227,13 @@
         "Amicar"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/aminocaproic-acid-amicar"
+      "route": "/drug-dosing/anticoagulants-hemostatics/aminocaproic-acid-amicar"
     },
     {
       "id": "andexanet-alfa-ondexxya",
       "title": "Andexanet Alfa (Ondexxya)",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "category": "Anticoagulants & Hemostatics",
       "tags": [
         "anesthesia",
         "perioperative",
@@ -2218,13 +2246,13 @@
         "Ondexxya"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/andexanet-alfa-ondexxya"
+      "route": "/drug-dosing/anticoagulants-hemostatics/andexanet-alfa-ondexxya"
     },
     {
       "id": "desmopressin-ddavp",
       "title": "Desmopressin (DDAVP)",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "category": "Anticoagulants & Hemostatics",
       "tags": [
         "anesthesia",
         "perioperative",
@@ -2236,13 +2264,13 @@
         "DDAVP / Stimate"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/desmopressin-ddavp"
+      "route": "/drug-dosing/anticoagulants-hemostatics/desmopressin-ddavp"
     },
     {
       "id": "enoxaparin-lmwh",
       "title": "Enoxaparin (LMWH)",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "category": "Anticoagulants & Hemostatics",
       "tags": [
         "anesthesia",
         "perioperative",
@@ -2254,13 +2282,13 @@
         "Lovenox"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/enoxaparin-lmwh"
+      "route": "/drug-dosing/anticoagulants-hemostatics/enoxaparin-lmwh"
     },
     {
       "id": "heparin-unfractionated",
       "title": "Heparin (Unfractionated)",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "category": "Anticoagulants & Hemostatics",
       "tags": [
         "anesthesia",
         "perioperative",
@@ -2272,13 +2300,13 @@
         "Heparin Sodium"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/heparin-unfractionated"
+      "route": "/drug-dosing/anticoagulants-hemostatics/heparin-unfractionated"
     },
     {
       "id": "idarucizumab-praxbind",
       "title": "Idarucizumab (Praxbind)",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "category": "Anticoagulants & Hemostatics",
       "tags": [
         "anesthesia",
         "perioperative",
@@ -2290,13 +2318,13 @@
         "Praxbind"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/idarucizumab-praxbind"
+      "route": "/drug-dosing/anticoagulants-hemostatics/idarucizumab-praxbind"
     },
     {
       "id": "protamine-sulfate",
       "title": "Protamine Sulfate",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "category": "Anticoagulants & Hemostatics",
       "tags": [
         "anesthesia",
         "perioperative",
@@ -2308,13 +2336,13 @@
         "Protamine Sulfate"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/protamine-sulfate"
+      "route": "/drug-dosing/anticoagulants-hemostatics/protamine-sulfate"
     },
     {
       "id": "tranexamic-acid-txa",
       "title": "Tranexamic Acid (TXA)",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Anticoagulants / Hemostatics",
+      "category": "Anticoagulants & Hemostatics",
       "tags": [
         "anesthesia",
         "perioperative",
@@ -2327,13 +2355,13 @@
         "Cyklokapron / Lysteda"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-anticoagulants-hemostatics/tranexamic-acid-txa"
+      "route": "/drug-dosing/anticoagulants-hemostatics/tranexamic-acid-txa"
     },
     {
       "id": "droperidol",
       "title": "Droperidol",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Antiemetics",
+      "category": "Antiemetics & Aspiration Prophylaxis",
       "tags": [
         "anesthesia",
         "perioperative",
@@ -2344,64 +2372,13 @@
         "Inapsine"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-antiemetics/droperidol"
-    },
-    {
-      "id": "ondansetron",
-      "title": "Ondansetron",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Antiemetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "antiemetic",
-        "ondansetron"
-      ],
-      "keywords": [
-        "Zofran"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-antiemetics/ondansetron"
-    },
-    {
-      "id": "midazolam",
-      "title": "Midazolam",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Benzodiazepines",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "benzodiazepine",
-        "midazolam"
-      ],
-      "keywords": [
-        "Versed"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-benzodiazepines/midazolam"
-    },
-    {
-      "id": "dantrolene",
-      "title": "Dantrolene",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Emergency Drugs",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "emergency",
-        "dantrolene"
-      ],
-      "keywords": [
-        "Ryanodex / Dantrium"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-emergency-drugs/dantrolene"
+      "route": "/drug-dosing/antiemetics-aspiration-prophylaxis/droperidol"
     },
     {
       "id": "famotidine",
       "title": "Famotidine",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — GI / Aspiration Prophylaxis",
+      "category": "Antiemetics & Aspiration Prophylaxis",
       "tags": [
         "anesthesia",
         "perioperative",
@@ -2412,278 +2389,47 @@
         "Pepcid"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-gi-aspiration-prophylaxis/famotidine"
+      "route": "/drug-dosing/antiemetics-aspiration-prophylaxis/famotidine"
     },
     {
-      "id": "dexmedetomidine",
-      "title": "Dexmedetomidine",
+      "id": "ondansetron",
+      "title": "Ondansetron",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Induction Agents",
+      "category": "Antiemetics & Aspiration Prophylaxis",
       "tags": [
         "anesthesia",
         "perioperative",
-        "induction",
-        "dexmedetomidine"
+        "antiemetic",
+        "ondansetron"
       ],
       "keywords": [
-        "Precedex"
+        "Zofran"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-induction-agents/dexmedetomidine"
+      "route": "/drug-dosing/antiemetics-aspiration-prophylaxis/ondansetron"
     },
     {
-      "id": "etomidate",
-      "title": "Etomidate",
+      "id": "dantrolene",
+      "title": "Dantrolene",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Induction Agents",
+      "category": "Crisis / Rescue Drugs",
       "tags": [
         "anesthesia",
         "perioperative",
-        "induction",
-        "etomidate"
+        "emergency",
+        "dantrolene"
       ],
       "keywords": [
-        "Amidate"
+        "Ryanodex / Dantrium"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-induction-agents/etomidate"
-    },
-    {
-      "id": "ketamine",
-      "title": "Ketamine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Induction Agents",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "induction",
-        "ketamine"
-      ],
-      "keywords": [
-        "Ketalar"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-induction-agents/ketamine"
-    },
-    {
-      "id": "propofol",
-      "title": "Propofol",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Induction Agents",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "induction",
-        "propofol"
-      ],
-      "keywords": [
-        "Diprivan"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-induction-agents/propofol"
-    },
-    {
-      "id": "bupivacaine",
-      "title": "Bupivacaine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Local Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "local",
-        "bupivacaine"
-      ],
-      "keywords": [
-        "Marcaine / Sensorcaine"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-local-anesthetics/bupivacaine"
-    },
-    {
-      "id": "bupivacaine-hyperbaric-0-5",
-      "title": "Bupivacaine Hyperbaric 0.5%",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Local Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "local",
-        "bupivacaine",
-        "hyperbaric"
-      ],
-      "keywords": [
-        "Marcaine Heavy"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-local-anesthetics/bupivacaine-hyperbaric-0-5"
-    },
-    {
-      "id": "chloroprocaine-nesacaine",
-      "title": "Chloroprocaine (NESACAINE)",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Local Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "local",
-        "chloroprocaine",
-        "nesacaine"
-      ],
-      "keywords": [
-        "Nesacaine"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-local-anesthetics/chloroprocaine-nesacaine"
-    },
-    {
-      "id": "cocaine-4-10",
-      "title": "Cocaine 4–10%",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Local Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "local",
-        "cocaine",
-        "10"
-      ],
-      "keywords": [
-        "(Topical solution)"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-local-anesthetics/cocaine-4-10"
-    },
-    {
-      "id": "lidocaine",
-      "title": "Lidocaine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Local Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "local",
-        "lidocaine"
-      ],
-      "keywords": [
-        "Xylocaine"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-local-anesthetics/lidocaine"
-    },
-    {
-      "id": "lidocaine-with-epinephrine",
-      "title": "Lidocaine with Epinephrine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Local Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "local",
-        "lidocaine",
-        "with",
-        "epinephrine"
-      ],
-      "keywords": [
-        "Xylocaine with Epi"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-local-anesthetics/lidocaine-with-epinephrine"
-    },
-    {
-      "id": "liposomal-bupivacaine-exparel",
-      "title": "Liposomal Bupivacaine (Exparel)",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Local Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "local",
-        "liposomal",
-        "bupivacaine",
-        "exparel"
-      ],
-      "keywords": [
-        "Exparel"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-local-anesthetics/liposomal-bupivacaine-exparel"
-    },
-    {
-      "id": "mepivacaine",
-      "title": "Mepivacaine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Local Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "local",
-        "mepivacaine"
-      ],
-      "keywords": [
-        "Carbocaine / Polocaine"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-local-anesthetics/mepivacaine"
-    },
-    {
-      "id": "ropivacaine",
-      "title": "Ropivacaine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Local Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "local",
-        "ropivacaine"
-      ],
-      "keywords": [
-        "Naropin"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-local-anesthetics/ropivacaine"
-    },
-    {
-      "id": "ropivacaine-epidural-nerve-block",
-      "title": "Ropivacaine (Epidural/Nerve Block)",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Local Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "local",
-        "ropivacaine",
-        "epidural",
-        "nerve",
-        "block"
-      ],
-      "keywords": [
-        "Naropin"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-local-anesthetics/ropivacaine-epidural-nerve-block"
-    },
-    {
-      "id": "tetracaine",
-      "title": "Tetracaine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Local Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "local",
-        "tetracaine"
-      ],
-      "keywords": [
-        "Pontocaine"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-local-anesthetics/tetracaine"
+      "route": "/drug-dosing/crisis-rescue-drugs/dantrolene"
     },
     {
       "id": "methylene-blue",
       "title": "Methylene Blue",
       "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Methylene Blue",
+      "category": "Crisis / Rescue Drugs",
       "tags": [
         "anesthesia",
         "perioperative",
@@ -2693,399 +2439,7 @@
       ],
       "keywords": [],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-methylene-blue/methylene-blue"
-    },
-    {
-      "id": "cisatracurium",
-      "title": "Cisatracurium",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Neuromuscular Blockers",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "nmb",
-        "cisatracurium"
-      ],
-      "keywords": [
-        "Nimbex"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-neuromuscular-blockers/cisatracurium"
-    },
-    {
-      "id": "rocuronium",
-      "title": "Rocuronium",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Neuromuscular Blockers",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "nmb",
-        "rocuronium"
-      ],
-      "keywords": [
-        "Zemuron"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-neuromuscular-blockers/rocuronium"
-    },
-    {
-      "id": "succinylcholine",
-      "title": "Succinylcholine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Neuromuscular Blockers",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "nmb",
-        "succinylcholine"
-      ],
-      "keywords": [
-        "Anectine / Quelicin"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-neuromuscular-blockers/succinylcholine"
-    },
-    {
-      "id": "vecuronium",
-      "title": "Vecuronium",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Neuromuscular Blockers",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "nmb",
-        "vecuronium"
-      ],
-      "keywords": [
-        "Norcuron"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-neuromuscular-blockers/vecuronium"
-    },
-    {
-      "id": "fentanyl",
-      "title": "Fentanyl",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Opioids",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "opioid",
-        "fentanyl"
-      ],
-      "keywords": [
-        "Sublimaze"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-opioids/fentanyl"
-    },
-    {
-      "id": "hydromorphone",
-      "title": "Hydromorphone",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Opioids",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "opioid",
-        "hydromorphone"
-      ],
-      "keywords": [
-        "Dilaudid"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-opioids/hydromorphone"
-    },
-    {
-      "id": "meperidine",
-      "title": "Meperidine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Opioids",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "opioid",
-        "meperidine"
-      ],
-      "keywords": [
-        "Demerol"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-opioids/meperidine"
-    },
-    {
-      "id": "methadone",
-      "title": "Methadone",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Opioids",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "opioid",
-        "methadone"
-      ],
-      "keywords": [
-        "Dolophine / Methadose"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-opioids/methadone"
-    },
-    {
-      "id": "morphine",
-      "title": "Morphine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Opioids",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "opioid",
-        "morphine"
-      ],
-      "keywords": [
-        "Duramorph (neuraxial)"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-opioids/morphine"
-    },
-    {
-      "id": "remifentanil",
-      "title": "Remifentanil",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Opioids",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "opioid",
-        "remifentanil"
-      ],
-      "keywords": [
-        "Ultiva"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-opioids/remifentanil"
-    },
-    {
-      "id": "flumazenil",
-      "title": "Flumazenil",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Reversal Agents",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "reversal",
-        "flumazenil"
-      ],
-      "keywords": [
-        "Romazicon"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-reversal-agents/flumazenil"
-    },
-    {
-      "id": "naloxone",
-      "title": "Naloxone",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Reversal Agents",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "reversal",
-        "naloxone"
-      ],
-      "keywords": [
-        "Narcan"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-reversal-agents/naloxone"
-    },
-    {
-      "id": "neostigmine",
-      "title": "Neostigmine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Reversal Agents",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "reversal",
-        "neostigmine"
-      ],
-      "keywords": [
-        "Prostigmin / Bloxiverz"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-reversal-agents/neostigmine"
-    },
-    {
-      "id": "sugammadex",
-      "title": "Sugammadex",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Reversal Agents",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "reversal",
-        "sugammadex"
-      ],
-      "keywords": [
-        "Bridion"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-reversal-agents/sugammadex"
-    },
-    {
-      "id": "ephedrine",
-      "title": "Ephedrine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Vasopressors",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "vasopressor",
-        "ephedrine"
-      ],
-      "keywords": [
-        "(Generic)"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-vasopressors/ephedrine"
-    },
-    {
-      "id": "epinephrine",
-      "title": "Epinephrine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Vasopressors",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "vasopressor",
-        "epinephrine"
-      ],
-      "keywords": [
-        "Adrenalin / EpiPen"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-vasopressors/epinephrine"
-    },
-    {
-      "id": "norepinephrine",
-      "title": "Norepinephrine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Vasopressors",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "vasopressor",
-        "norepinephrine"
-      ],
-      "keywords": [
-        "Levophed"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-vasopressors/norepinephrine"
-    },
-    {
-      "id": "phenylephrine",
-      "title": "Phenylephrine",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Vasopressors",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "vasopressor",
-        "phenylephrine"
-      ],
-      "keywords": [
-        "Neosynephrine"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-vasopressors/phenylephrine"
-    },
-    {
-      "id": "vasopressin",
-      "title": "Vasopressin",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Vasopressors",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "vasopressor",
-        "vasopressin"
-      ],
-      "keywords": [
-        "Pitressin / Vasostrict"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-vasopressors/vasopressin"
-    },
-    {
-      "id": "desflurane",
-      "title": "Desflurane",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Volatile Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "volatile",
-        "desflurane"
-      ],
-      "keywords": [
-        "Suprane"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-volatile-anesthetics/desflurane"
-    },
-    {
-      "id": "isoflurane",
-      "title": "Isoflurane",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Volatile Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "volatile",
-        "isoflurane"
-      ],
-      "keywords": [
-        "Forane"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-volatile-anesthetics/isoflurane"
-    },
-    {
-      "id": "nitrous-oxide",
-      "title": "Nitrous Oxide",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Volatile Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "volatile",
-        "nitrous",
-        "oxide"
-      ],
-      "keywords": [
-        "N₂O"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-volatile-anesthetics/nitrous-oxide"
-    },
-    {
-      "id": "sevoflurane",
-      "title": "Sevoflurane",
-      "section": "Drug & Dosing Cards",
-      "category": "AnesCalc — Volatile Anesthetics",
-      "tags": [
-        "anesthesia",
-        "perioperative",
-        "volatile",
-        "sevoflurane"
-      ],
-      "keywords": [
-        "Ultane / Sojourn"
-      ],
-      "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anescalc-volatile-anesthetics/sevoflurane"
+      "route": "/drug-dosing/crisis-rescue-drugs/methylene-blue"
     },
     {
       "id": "apap-nac-dosing",
@@ -3295,6 +2649,714 @@
       ],
       "contentType": "calculator",
       "route": "/drug-dosing/dosing-fluid-math/peds-drip-rate"
+    },
+    {
+      "id": "dexmedetomidine",
+      "title": "Dexmedetomidine",
+      "section": "Drug & Dosing Cards",
+      "category": "Induction & Sedation Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "induction",
+        "dexmedetomidine"
+      ],
+      "keywords": [
+        "Precedex"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/induction-sedation-agents/dexmedetomidine"
+    },
+    {
+      "id": "etomidate",
+      "title": "Etomidate",
+      "section": "Drug & Dosing Cards",
+      "category": "Induction & Sedation Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "induction",
+        "etomidate"
+      ],
+      "keywords": [
+        "Amidate"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/induction-sedation-agents/etomidate"
+    },
+    {
+      "id": "ketamine",
+      "title": "Ketamine",
+      "section": "Drug & Dosing Cards",
+      "category": "Induction & Sedation Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "induction",
+        "ketamine"
+      ],
+      "keywords": [
+        "Ketalar"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/induction-sedation-agents/ketamine"
+    },
+    {
+      "id": "midazolam",
+      "title": "Midazolam",
+      "section": "Drug & Dosing Cards",
+      "category": "Induction & Sedation Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "benzodiazepine",
+        "midazolam"
+      ],
+      "keywords": [
+        "Versed"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/induction-sedation-agents/midazolam"
+    },
+    {
+      "id": "propofol",
+      "title": "Propofol",
+      "section": "Drug & Dosing Cards",
+      "category": "Induction & Sedation Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "induction",
+        "propofol"
+      ],
+      "keywords": [
+        "Diprivan"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/induction-sedation-agents/propofol"
+    },
+    {
+      "id": "bupivacaine",
+      "title": "Bupivacaine",
+      "section": "Drug & Dosing Cards",
+      "category": "Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "bupivacaine"
+      ],
+      "keywords": [
+        "Marcaine / Sensorcaine"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/local-anesthetics/bupivacaine"
+    },
+    {
+      "id": "bupivacaine-hyperbaric-0-5",
+      "title": "Bupivacaine Hyperbaric 0.5%",
+      "section": "Drug & Dosing Cards",
+      "category": "Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "bupivacaine",
+        "hyperbaric"
+      ],
+      "keywords": [
+        "Marcaine Heavy"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/local-anesthetics/bupivacaine-hyperbaric-0-5"
+    },
+    {
+      "id": "chloroprocaine-nesacaine",
+      "title": "Chloroprocaine (NESACAINE)",
+      "section": "Drug & Dosing Cards",
+      "category": "Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "chloroprocaine",
+        "nesacaine"
+      ],
+      "keywords": [
+        "Nesacaine"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/local-anesthetics/chloroprocaine-nesacaine"
+    },
+    {
+      "id": "cocaine-4-10",
+      "title": "Cocaine 4–10%",
+      "section": "Drug & Dosing Cards",
+      "category": "Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "cocaine",
+        "10"
+      ],
+      "keywords": [
+        "(Topical solution)"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/local-anesthetics/cocaine-4-10"
+    },
+    {
+      "id": "lidocaine",
+      "title": "Lidocaine",
+      "section": "Drug & Dosing Cards",
+      "category": "Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "lidocaine"
+      ],
+      "keywords": [
+        "Xylocaine"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/local-anesthetics/lidocaine"
+    },
+    {
+      "id": "lidocaine-with-epinephrine",
+      "title": "Lidocaine with Epinephrine",
+      "section": "Drug & Dosing Cards",
+      "category": "Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "lidocaine",
+        "with",
+        "epinephrine"
+      ],
+      "keywords": [
+        "Xylocaine with Epi"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/local-anesthetics/lidocaine-with-epinephrine"
+    },
+    {
+      "id": "liposomal-bupivacaine-exparel",
+      "title": "Liposomal Bupivacaine (Exparel)",
+      "section": "Drug & Dosing Cards",
+      "category": "Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "liposomal",
+        "bupivacaine",
+        "exparel"
+      ],
+      "keywords": [
+        "Exparel"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/local-anesthetics/liposomal-bupivacaine-exparel"
+    },
+    {
+      "id": "mepivacaine",
+      "title": "Mepivacaine",
+      "section": "Drug & Dosing Cards",
+      "category": "Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "mepivacaine"
+      ],
+      "keywords": [
+        "Carbocaine / Polocaine"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/local-anesthetics/mepivacaine"
+    },
+    {
+      "id": "ropivacaine",
+      "title": "Ropivacaine",
+      "section": "Drug & Dosing Cards",
+      "category": "Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "ropivacaine"
+      ],
+      "keywords": [
+        "Naropin"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/local-anesthetics/ropivacaine"
+    },
+    {
+      "id": "ropivacaine-epidural-nerve-block",
+      "title": "Ropivacaine (Epidural/Nerve Block)",
+      "section": "Drug & Dosing Cards",
+      "category": "Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "ropivacaine",
+        "epidural",
+        "nerve",
+        "block"
+      ],
+      "keywords": [
+        "Naropin"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/local-anesthetics/ropivacaine-epidural-nerve-block"
+    },
+    {
+      "id": "tetracaine",
+      "title": "Tetracaine",
+      "section": "Drug & Dosing Cards",
+      "category": "Local Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "local",
+        "tetracaine"
+      ],
+      "keywords": [
+        "Pontocaine"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/local-anesthetics/tetracaine"
+    },
+    {
+      "id": "cisatracurium",
+      "title": "Cisatracurium",
+      "section": "Drug & Dosing Cards",
+      "category": "Neuromuscular Blockers",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "nmb",
+        "cisatracurium"
+      ],
+      "keywords": [
+        "Nimbex"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/neuromuscular-blockers/cisatracurium"
+    },
+    {
+      "id": "rocuronium",
+      "title": "Rocuronium",
+      "section": "Drug & Dosing Cards",
+      "category": "Neuromuscular Blockers",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "nmb",
+        "rocuronium"
+      ],
+      "keywords": [
+        "Zemuron"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/neuromuscular-blockers/rocuronium"
+    },
+    {
+      "id": "succinylcholine",
+      "title": "Succinylcholine",
+      "section": "Drug & Dosing Cards",
+      "category": "Neuromuscular Blockers",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "nmb",
+        "succinylcholine"
+      ],
+      "keywords": [
+        "Anectine / Quelicin"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/neuromuscular-blockers/succinylcholine"
+    },
+    {
+      "id": "vecuronium",
+      "title": "Vecuronium",
+      "section": "Drug & Dosing Cards",
+      "category": "Neuromuscular Blockers",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "nmb",
+        "vecuronium"
+      ],
+      "keywords": [
+        "Norcuron"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/neuromuscular-blockers/vecuronium"
+    },
+    {
+      "id": "fentanyl",
+      "title": "Fentanyl",
+      "section": "Drug & Dosing Cards",
+      "category": "Opioids",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "opioid",
+        "fentanyl"
+      ],
+      "keywords": [
+        "Sublimaze"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/opioids/fentanyl"
+    },
+    {
+      "id": "hydromorphone",
+      "title": "Hydromorphone",
+      "section": "Drug & Dosing Cards",
+      "category": "Opioids",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "opioid",
+        "hydromorphone"
+      ],
+      "keywords": [
+        "Dilaudid"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/opioids/hydromorphone"
+    },
+    {
+      "id": "meperidine",
+      "title": "Meperidine",
+      "section": "Drug & Dosing Cards",
+      "category": "Opioids",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "opioid",
+        "meperidine"
+      ],
+      "keywords": [
+        "Demerol"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/opioids/meperidine"
+    },
+    {
+      "id": "methadone",
+      "title": "Methadone",
+      "section": "Drug & Dosing Cards",
+      "category": "Opioids",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "opioid",
+        "methadone"
+      ],
+      "keywords": [
+        "Dolophine / Methadose"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/opioids/methadone"
+    },
+    {
+      "id": "morphine",
+      "title": "Morphine",
+      "section": "Drug & Dosing Cards",
+      "category": "Opioids",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "opioid",
+        "morphine"
+      ],
+      "keywords": [
+        "Duramorph (neuraxial)"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/opioids/morphine"
+    },
+    {
+      "id": "remifentanil",
+      "title": "Remifentanil",
+      "section": "Drug & Dosing Cards",
+      "category": "Opioids",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "opioid",
+        "remifentanil"
+      ],
+      "keywords": [
+        "Ultiva"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/opioids/remifentanil"
+    },
+    {
+      "id": "atropine",
+      "title": "Atropine",
+      "section": "Drug & Dosing Cards",
+      "category": "Reversal & Anticholinergic Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "anticholinergic",
+        "atropine"
+      ],
+      "keywords": [
+        "AtroPen (auto-injector)"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/reversal-anticholinergic-agents/atropine"
+    },
+    {
+      "id": "flumazenil",
+      "title": "Flumazenil",
+      "section": "Drug & Dosing Cards",
+      "category": "Reversal & Anticholinergic Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "reversal",
+        "flumazenil"
+      ],
+      "keywords": [
+        "Romazicon"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/reversal-anticholinergic-agents/flumazenil"
+    },
+    {
+      "id": "glycopyrrolate",
+      "title": "Glycopyrrolate",
+      "section": "Drug & Dosing Cards",
+      "category": "Reversal & Anticholinergic Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "anticholinergic",
+        "glycopyrrolate"
+      ],
+      "keywords": [
+        "Robinul"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/reversal-anticholinergic-agents/glycopyrrolate"
+    },
+    {
+      "id": "naloxone",
+      "title": "Naloxone",
+      "section": "Drug & Dosing Cards",
+      "category": "Reversal & Anticholinergic Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "reversal",
+        "naloxone"
+      ],
+      "keywords": [
+        "Narcan"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/reversal-anticholinergic-agents/naloxone"
+    },
+    {
+      "id": "neostigmine",
+      "title": "Neostigmine",
+      "section": "Drug & Dosing Cards",
+      "category": "Reversal & Anticholinergic Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "reversal",
+        "neostigmine"
+      ],
+      "keywords": [
+        "Prostigmin / Bloxiverz"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/reversal-anticholinergic-agents/neostigmine"
+    },
+    {
+      "id": "sugammadex",
+      "title": "Sugammadex",
+      "section": "Drug & Dosing Cards",
+      "category": "Reversal & Anticholinergic Agents",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "reversal",
+        "sugammadex"
+      ],
+      "keywords": [
+        "Bridion"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/reversal-anticholinergic-agents/sugammadex"
+    },
+    {
+      "id": "ephedrine",
+      "title": "Ephedrine",
+      "section": "Drug & Dosing Cards",
+      "category": "Vasopressors & Inotropes",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "vasopressor",
+        "ephedrine"
+      ],
+      "keywords": [
+        "(Generic)"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/vasopressors-inotropes/ephedrine"
+    },
+    {
+      "id": "epinephrine",
+      "title": "Epinephrine",
+      "section": "Drug & Dosing Cards",
+      "category": "Vasopressors & Inotropes",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "vasopressor",
+        "epinephrine"
+      ],
+      "keywords": [
+        "Adrenalin / EpiPen"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/vasopressors-inotropes/epinephrine"
+    },
+    {
+      "id": "norepinephrine",
+      "title": "Norepinephrine",
+      "section": "Drug & Dosing Cards",
+      "category": "Vasopressors & Inotropes",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "vasopressor",
+        "norepinephrine"
+      ],
+      "keywords": [
+        "Levophed"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/vasopressors-inotropes/norepinephrine"
+    },
+    {
+      "id": "phenylephrine",
+      "title": "Phenylephrine",
+      "section": "Drug & Dosing Cards",
+      "category": "Vasopressors & Inotropes",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "vasopressor",
+        "phenylephrine"
+      ],
+      "keywords": [
+        "Neosynephrine"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/vasopressors-inotropes/phenylephrine"
+    },
+    {
+      "id": "vasopressin",
+      "title": "Vasopressin",
+      "section": "Drug & Dosing Cards",
+      "category": "Vasopressors & Inotropes",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "vasopressor",
+        "vasopressin"
+      ],
+      "keywords": [
+        "Pitressin / Vasostrict"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/vasopressors-inotropes/vasopressin"
+    },
+    {
+      "id": "desflurane",
+      "title": "Desflurane",
+      "section": "Drug & Dosing Cards",
+      "category": "Volatile Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "volatile",
+        "desflurane"
+      ],
+      "keywords": [
+        "Suprane"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/volatile-anesthetics/desflurane"
+    },
+    {
+      "id": "isoflurane",
+      "title": "Isoflurane",
+      "section": "Drug & Dosing Cards",
+      "category": "Volatile Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "volatile",
+        "isoflurane"
+      ],
+      "keywords": [
+        "Forane"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/volatile-anesthetics/isoflurane"
+    },
+    {
+      "id": "nitrous-oxide",
+      "title": "Nitrous Oxide",
+      "section": "Drug & Dosing Cards",
+      "category": "Volatile Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "volatile",
+        "nitrous",
+        "oxide"
+      ],
+      "keywords": [
+        "N₂O"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/volatile-anesthetics/nitrous-oxide"
+    },
+    {
+      "id": "sevoflurane",
+      "title": "Sevoflurane",
+      "section": "Drug & Dosing Cards",
+      "category": "Volatile Anesthetics",
+      "tags": [
+        "anesthesia",
+        "perioperative",
+        "volatile",
+        "sevoflurane"
+      ],
+      "keywords": [
+        "Ultane / Sojourn"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/volatile-anesthetics/sevoflurane"
     },
     {
       "id": "peds-adenosine-svt",
@@ -3940,6 +4002,37 @@
       "route": "/peds-module/peds-resuscitation-decision-support/pediatric-appendicitis-score"
     },
     {
+      "id": "peds-cardiac-arrest",
+      "title": "Pediatric Cardiac Arrest — Numbers Card (PALS)",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "PALS",
+        "pediatric cardiac arrest",
+        "code blue",
+        "defibrillation",
+        "cardioversion",
+        "epinephrine",
+        "amiodarone",
+        "adenosine",
+        "CPR",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "PALS arrest doses",
+        "pediatric code blue",
+        "peds ACLS numbers",
+        "1-2-4 rule",
+        "peds defibrillation energy",
+        "peds epinephrine arrest dose",
+        "peds cardioversion",
+        "peds adenosine dose"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-cardiac-arrest"
+    },
+    {
       "id": "peds-dka-management",
       "title": "Pediatric DKA Management",
       "section": "Peds Module",
@@ -4226,6 +4319,41 @@
       ],
       "contentType": "reference",
       "route": "/procedures/regional-anesthesia-ultrasound/pocus-guide"
+    },
+    {
+      "id": "pocus-nerve-block-checklist",
+      "title": "POCUS Nerve Block — Sequential Checklist",
+      "section": "Procedures",
+      "category": "Regional Anesthesia & Ultrasound",
+      "tags": [
+        "nerve block",
+        "regional anesthesia",
+        "POCUS",
+        "ultrasound-guided",
+        "LAST",
+        "procedure checklist",
+        "ED",
+        "OR",
+        "anesthesia"
+      ],
+      "keywords": [
+        "hydrodissection tip confirmation",
+        "aspirate 3-5 seconds before every injection",
+        "2-3 mL aliquots pause 15-30 seconds",
+        "donut sign perineural spread",
+        "nerve swelling on US stop intraneural",
+        "epinephrine test dose HR rise 20 bpm",
+        "IV access before needle",
+        "intralipid at bedside before first mL",
+        "LAST emergency sequence A through H",
+        "nerve block checklist",
+        "ultrasound-guided nerve block steps",
+        "regional block run-through",
+        "peripheral nerve block procedure steps",
+        "IP OOP needle checklist"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/regional-anesthesia-ultrasound/pocus-nerve-block-checklist"
     },
     {
       "id": "fracture-splinting-guide",
@@ -4776,6 +4904,47 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/critical-care/contrast-associated-aki"
+    },
+    {
+      "id": "drug-interactions-high-yield",
+      "title": "Drug Interactions — Nine High-Yield Pairs",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "drug interactions",
+        "pharmacology",
+        "QT prolongation",
+        "serotonin syndrome",
+        "antibiotic toxicity",
+        "medication safety",
+        "ED",
+        "ICU",
+        "ward"
+      ],
+      "keywords": [
+        "methotrexate NSAID renal clearance",
+        "digoxin amiodarone P-glycoprotein reduce dose 30-50",
+        "azithromycin QT prolongation",
+        "ACE inhibitor spironolactone hyperkalemia",
+        "ciprofloxacin warfarin INR CYP1A2",
+        "linezolid SSRI MAO inhibitor serotonin syndrome",
+        "clopidogrel omeprazole CYP2C19 use pantoprazole",
+        "tramadol SSRI serotonin syndrome seizure threshold",
+        "statin clarithromycin CYP3A4 rhabdomyolysis",
+        "fluoroquinolone tendon rupture",
+        "linezolid peripheral neuropathy",
+        "daptomycin myopathy CK",
+        "high-yield drug interactions",
+        "drug-drug interactions",
+        "clopidogrel omeprazole",
+        "digoxin amiodarone",
+        "statin clarithromycin",
+        "linezolid SSRI serotonin syndrome",
+        "fluoroquinolone tendinopathy",
+        "QT-prolonging drug list"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/drug-interactions-high-yield"
     },
     {
       "id": "ecmo-support",
@@ -6513,6 +6682,46 @@
       "route": "/reference-library/resuscitation-airway/capnography"
     },
     {
+      "id": "crush-syndrome",
+      "title": "Crush Syndrome — Entrapment, Extrication & Hyperkalemia",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "crush syndrome",
+        "rhabdomyolysis",
+        "hyperkalemia",
+        "trauma",
+        "prolonged field care",
+        "extrication",
+        "tourniquet",
+        "AKI",
+        "ED",
+        "ICU",
+        "prehospital"
+      ],
+      "keywords": [
+        "ischemia reperfusion myoglobin potassium creatine kinase",
+        "third-spacing crushed limb hidden hypovolemia",
+        "tourniquet threshold 2 hours before extrication",
+        "peaked T waves widened QRS sine wave",
+        "calcium chloride first fastest membrane stabilization",
+        "insulin dextrose albuterol bicarbonate shift potassium",
+        "goal urine output 200-300 mL per hour",
+        "MARCH algorithm massive hemorrhage airway respiration circulation hypothermia",
+        "Bywaters 1941 Blitz",
+        "improvised peritoneal dialysis",
+        "crush injury",
+        "traumatic rhabdomyolysis",
+        "entrapment syndrome",
+        "reperfusion hyperkalemia",
+        "extrication resuscitation",
+        "Bywaters syndrome",
+        "prolonged field care crush"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/crush-syndrome"
+    },
+    {
       "id": "efast-exam",
       "title": "eFAST & the RUSH Exam",
       "section": "Reference Library",
@@ -6569,6 +6778,8 @@
         "fibrinogen > 200 cryoprecipitate",
         "platelets >= 50k >= 100k if TBI",
         "permissive hypotension SBP 80-90 except TBI MAP >= 80",
+        "freeze-dried plasma room temperature EZPLAZ",
+        "balanced crystalloid sepsis vs saline TBI",
         "ATLS hemorrhage class",
         "massive transfusion protocol",
         "MTP",
@@ -6849,6 +7060,48 @@
       "route": "/reference-library/resuscitation-airway/rsi-seven-ps"
     },
     {
+      "id": "code-leadership-run-the-room",
+      "title": "Running the Code — Team Leadership",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "cardiac arrest",
+        "resuscitation",
+        "team leadership",
+        "crisis resource management",
+        "closed-loop communication",
+        "CPR quality",
+        "code blue",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "I am leading this code",
+        "leader does not do compressions",
+        "assign roles eye contact name task",
+        "order readback given",
+        "chest compression fraction 60 aim 80",
+        "swap compressors every 2 minutes",
+        "depth declines at 90 seconds",
+        "epinephrine early PEA asystole",
+        "PARAMEDIC2 benefit converges at 20 minutes",
+        "calcium COCA not routine",
+        "bicarbonate BIHCA no benefit",
+        "anterior-posterior pad vector refractory VF",
+        "POCUS during pulse checks",
+        "code leader",
+        "run the room",
+        "resuscitation leadership",
+        "pit crew CPR",
+        "closed-loop communication",
+        "code team roles",
+        "IHCA team dynamics",
+        "who does what in a code"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/code-leadership-run-the-room"
+    },
+    {
       "id": "septic-shock-resuscitation",
       "title": "Septic Shock — Resuscitation Targets",
       "section": "Reference Library",
@@ -6964,6 +7217,56 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/resuscitation-airway/status-epilepticus-adult"
+    },
+    {
+      "id": "anatomically-difficult-airway",
+      "title": "The Difficult Airway — DAS 2025 & the Failed-Airway Drill",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "airway",
+        "intubation",
+        "failed airway",
+        "difficult airway",
+        "cricothyrotomy",
+        "eFONA",
+        "supraglottic airway",
+        "video laryngoscopy",
+        "human factors",
+        "ED",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "DAS 2025 four plans",
+        "SGA is now Plan B ahead of face mask",
+        "maximise first attempt success",
+        "DEVICE trial 85.1 vs 70.8 first pass",
+        "MACOCHA score",
+        "CAFG 3-attempt rule",
+        "scalpel bougie tube",
+        "vertical skin incision cricothyroid membrane",
+        "declare CICO out loud",
+        "Vortex green zone three lifelines",
+        "perseveration",
+        "NAP4",
+        "team brief before intubation",
+        "difficult airway",
+        "failed airway",
+        "failed intubation",
+        "DAS 2025",
+        "can't intubate can't oxygenate",
+        "CICO",
+        "CICV",
+        "eFONA",
+        "FONA",
+        "cricothyrotomy",
+        "the Vortex",
+        "3-attempt rule",
+        "Plan A Plan B Plan C Plan D"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/anatomically-difficult-airway"
     },
     {
       "id": "physiologically-difficult-airway",
