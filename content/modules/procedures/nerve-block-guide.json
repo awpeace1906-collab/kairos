@@ -6,9 +6,9 @@
   "aliases": ["regional anesthesia", "peripheral nerve block", "US-guided nerve block", "fascia iliaca block", "digital block"],
   "tags": ["nerve block", "regional anesthesia", "ultrasound guided", "LAST", "local anesthetic", "fascia iliaca", "ED", "OR"],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-01",
-  "next_review_due": "2026-12-01",
+  "content_version": 3,
+  "last_reviewed": "2026-09-04",
+  "next_review_due": "2027-03-04",
   "review_tier": 2,
   "sources": [
     "Neal JM et al. ASRA Practice Advisory on Local Anesthetic Systemic Toxicity. Reg Anesth Pain Med 2023",
@@ -16,6 +16,7 @@
     "Critical Vector — POCUS-Guided Nerve Block Procedural Reference (original content)"
   ],
   "changelog": [
+    { "version": 3, "date": "2026-09-04", "change": "Cross-linked the new pocus-nerve-block-checklist procedure — the same framework as a sequential, tick-through bedside run-through rather than background reading." },
     { "version": 2, "date": "2026-09-01", "change": "Rewritten from the Critical Vector POCUS-guided nerve block reference: 6-phase procedural framework, LA dosing table with maxima, LAST surveillance + ASRA 2023 management, 10 safety rules. Cleared the placeholder/needs-primary-source flags." },
     { "version": 1, "date": "2026-09-01", "change": "Initial stub — block index table only." }
   ],
@@ -65,6 +66,6 @@
       ]
     }
   ],
-  "related": ["last-lipid-rescue", "neuraxial-anticoagulation"],
+  "related": ["pocus-nerve-block-checklist", "last-lipid-rescue", "neuraxial-anticoagulation"],
   "buildNote": "Content is Critical Vector original. LA max dosing cross-links to Drug & Dosing; LAST cross-links to last-lipid-rescue — do not restate either. Individual block sonoanatomy/technique detail (digital, wrist, popliteal, brachial plexus) can each become its own procedure sub-module later."
 }
