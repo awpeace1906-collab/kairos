@@ -1,0 +1,76 @@
+{
+  "id": "peds-cardiac-arrest",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Pediatric Cardiac Arrest — Numbers Card (PALS)",
+  "aliases": ["PALS arrest doses", "pediatric code blue", "peds ACLS numbers", "1-2-4 rule", "peds defibrillation energy", "peds epinephrine arrest dose", "peds cardioversion", "peds adenosine dose"],
+  "tags": ["PALS", "pediatric cardiac arrest", "code blue", "defibrillation", "cardioversion", "epinephrine", "amiodarone", "adenosine", "CPR", "ED", "ICU"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-04",
+  "next_review_due": "2027-03-04",
+  "review_tier": 1,
+  "sources": [
+    "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
+    "Critical Vector — Pediatric Code Blue (numbers card, every dose cross-checked vs current PALS, July 2026)",
+    "Pediatric Drug Dose Chart, Queen's University Department of Anesthesiology, 2021 (dextrose, magnesium, lidocaine cross-reference)",
+    "AHA / American Red Cross CPR tempo guidance (100–120/min)"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-04", "change": "Initial entry — the PALS 'numbers to remember' card: 1-2-4 rule, metabolic-emergency doses, CPR mechanics, and the bradycardia/SVT/shockable/unstable-tachycardia quick card. Converted from the CV Pediatric Code Blue guide." }
+  ],
+  "kind": "reference",
+  "purpose": "The recall-level numbers for a paediatric resuscitation — arrest and peri-arrest drug doses, defibrillation and cardioversion energies, and CPR mechanics — in one card. Every dose is weight-based; compute from the measured or length-tape weight and respect the adult-equivalent single-dose caps. Full per-drug detail and infusions are on the linked drug cards.",
+  "ageRange": "Term neonate (post-resuscitation) to adolescent",
+  "sourceOfTruth": ["peds-epinephrine-arrest", "peds-amiodarone-arrest", "pedi-tape-weight-zones", "infant-cpr-parameters"],
+  "body": [
+    { "type": "heading", "level": 2, "text": "The 1-2-4 rule" },
+    { "type": "table",
+      "columns": ["Dose", "Drug / therapy", "Cap / note"],
+      "rows": [
+        ["0.01 mg/kg", "Epinephrine IV/IO (0.1 mL/kg of 1:10,000)", "max 1 mg per dose; repeat q3–5 min"],
+        ["0.02 mg/kg", "Atropine IV/IO", "min none in current PALS; 0.1–0.5 mg per dose; may repeat once"],
+        ["0.1 mg/kg", "Adenosine IV/IO — 1st dose", "max 6 mg; rapid push + flush"],
+        ["0.2 mg/kg", "Adenosine IV/IO — 2nd dose", "max 12 mg"],
+        ["1 mg/kg", "Lidocaine IV/IO", "alternative to amiodarone for VF/pVT"],
+        ["1 J/kg", "Synchronized cardioversion", "PALS range 0.5–1 J/kg first attempt, then double"],
+        ["2 J/kg", "Defibrillation — 1st shock", ""],
+        ["4 J/kg", "Defibrillation — subsequent shocks", "up to 10 J/kg or the adult dose"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Metabolic / special-situation doses" },
+    { "type": "table",
+      "columns": ["Dose", "Drug", "Indication"],
+      "rows": [
+        ["0.5 g/kg", "Dextrose (5 mL/kg D10, or 2 mL/kg D25)", "documented hypoglycaemia"],
+        ["5 mg/kg", "Amiodarone IV/IO", "VF / pulseless VT (may repeat up to 15 mg/kg, max 300 mg per dose)"],
+        ["25–50 mg/kg", "Magnesium sulfate IV/IO", "Torsades or severe bronchospasm; over 15–30 min; max 2 g"],
+        ["20 mg/kg", "Calcium chloride 10% IV/IO", "hyperkalaemia, hypocalcaemia, hypermagnesaemia, CCB overdose — central line preferred"],
+        ["60 mg/kg", "Calcium gluconate 10% IV/IO", "same indications; safer peripherally (max ~3 g)"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "CPR mechanics" },
+    { "type": "list", "items": [
+      "Compression rate 100–120/min. Depth: ⅓ of the AP chest diameter (~4 cm infant, ~5 cm child).",
+      "Infant technique: two-thumb encircling (two rescuers) or two fingers / heel of one hand — the old two-finger-only wording is gone.",
+      "Compression : ventilation 30:2 single rescuer, 15:2 with two rescuers; once an advanced airway is in, ventilate 1 breath every 2–3 s (~20–30/min) with continuous compressions.",
+      "Swap compressors every 2 minutes. Any 100–120 BPM song works as a metronome (Stayin' Alive ~104, Dancing Queen ~101, Uptown Funk ~115).",
+      "Pulse/rhythm check every 2 minutes; keep pauses < 10 s."
+    ] },
+    { "type": "heading", "level": 2, "text": "Quick card by scenario" },
+    { "type": "table",
+      "columns": ["Scenario", "Numbers"],
+      "rows": [
+        ["Bradycardia with poor perfusion", "CPR if HR < 60 despite oxygenation/ventilation → epinephrine 0.01 mg/kg; atropine 0.02 mg/kg for vagal / AV block"],
+        ["SVT, stable", "Vagal manoeuvres → adenosine 0.1 then 0.2 mg/kg rapid push"],
+        ["SVT / VT, unstable (poor perfusion)", "Synchronized cardioversion 0.5–1 J/kg, double if repeated"],
+        ["Shockable arrest (VF / pVT)", "Defib 2 → 4 J/kg; epinephrine 0.01 mg/kg q3–5 min; amiodarone 5 mg/kg or lidocaine 1 mg/kg after the 3rd shock"],
+        ["Non-shockable arrest (PEA / asystole)", "CPR + epinephrine 0.01 mg/kg early, q3–5 min; hunt the Hs & Ts (add Hypoglycaemia for children)"],
+        ["Torsades / severe bronchospasm", "Magnesium sulfate 25–50 mg/kg (max 2 g)"],
+        ["Hyperkalaemia", "Calcium chloride 20 mg/kg or calcium gluconate 60 mg/kg; then shift (insulin/dextrose, salbutamol, bicarbonate)"]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "Every number here is per-kg — get a weight before the arithmetic (measured, parent-reported, or the length tape / weight zone). Watch the single-dose ceilings: epinephrine 1 mg, atropine 0.5 mg, adenosine 6 then 12 mg, amiodarone 300 mg, magnesium 2 g." }
+  ],
+  "buildNote": "peds-tool, kind reference (no keywords/related per schema). Numbers card converted from CV Pediatric Code Blue; cross-checked against 2025 PALS. Cardioversion and magnesium stated as the PALS ranges rather than the rounded single values used in the source. Infusions and full per-drug detail live on the resus drug cards."
+}
