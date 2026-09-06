@@ -14,20 +14,24 @@ const CACHE_NAME = "kairos-content-v1";
 export class ContentStore {
   #manifest = null;
   #searchIndex = null;
+  #sourcesIndex = null;
   #sections = null;
   #weightZones = null;
   #tiers = null;
+  #settings = null;
   #moduleCache = new Map();
 
   async init() {
     // 1. Always load what we can from the bundled/cached copy first.
-    [this.#manifest, this.#searchIndex, this.#sections, this.#weightZones, this.#tiers] =
+    [this.#manifest, this.#searchIndex, this.#sourcesIndex, this.#sections, this.#weightZones, this.#tiers, this.#settings] =
       await Promise.all([
         this.#getJSON("manifest.json"),
         this.#getJSON("search-index.json"),
+        this.#getJSON("sources-index.json").catch(() => ({ items: [], groupOrder: [] })),
         this.#getJSON("config/sections.json"),
         this.#getJSON("config/weight-zones.json"),
         this.#getJSON("config/tiers.json"),
+        this.#getJSON("config/settings.json").catch(() => ({ settings: [] })),
       ]);
     // 2. Kick the update check without blocking startup.
     this.#checkForUpdates().catch((e) => console.info("[content] update check skipped:", e.message));
@@ -36,6 +40,8 @@ export class ContentStore {
 
   get sections() { return this.#sections.sections; }
   get searchEntries() { return this.#searchIndex.entries; }
+  get sourcesIndex() { return this.#sourcesIndex; }
+  get careSettings() { return this.#settings?.settings ?? []; }
   get weightZones() { return this.#weightZones; }
   get tiers() { return this.#tiers.tiers; }
   get manifest() { return this.#manifest; }

@@ -3,22 +3,38 @@ import SwiftUI
 // Kairos Tier 5 palette — "Ink & Ember on Parchment" (decided 2026-09-03).
 // Light-first warm-neutral ground with an ember accent, distinct from AnesCalc
 // (navy + gold) and CRISIS (near-black + teal + serif). Values mirror
-// web/styles.css. These are the light-mode tints; a dark-mode variant set via
-// asset-catalog colours is a follow-up. Centralised here so a later swap is one file.
+// web/styles.css. Colours resolve through Assets.xcassets colour sets
+// (AccentEmber, Section*, Severity*) so dark mode picks up the lifted dark
+// variant automatically — no manual colorScheme branching needed here.
 
 enum Theme {
-    // Ember accent (#C6521C) — used sparingly, on the one decisive element per screen.
-    static let accent = Color(red: 0.776, green: 0.322, blue: 0.110)
+    // Ember accent (#C6521C light / #E5843F dark) — used sparingly, on the one
+    // decisive element per screen.
+    static let accent = Color("AccentEmber", bundle: .main)
 
     /// Muted, low-chroma section tints (see --sec-* in web/styles.css).
     static func sectionColor(_ sectionID: String) -> Color {
         switch sectionID {
-        case "procedures":        return Color(red: 0.357, green: 0.420, blue: 0.478) // #5B6B7A slate
-        case "calculators":       return Color(red: 0.290, green: 0.278, blue: 0.329) // #4A4754 graphite
-        case "drug-dosing":       return Color(red: 0.710, green: 0.376, blue: 0.180) // #B5602E terracotta
-        case "reference-library": return Color(red: 0.431, green: 0.416, blue: 0.306) // #6E6A4E drab
-        case "peds-module":       return Color(red: 0.541, green: 0.353, blue: 0.420) // #8A5A6B plum-rose
+        case "procedures":        return Color("SectionProcedures", bundle: .main)   // #5B6B7A slate
+        case "calculators":       return Color("SectionCalculators", bundle: .main)  // #4A4754 graphite
+        case "drug-dosing":       return Color("SectionDrugDosing", bundle: .main)   // #B5602E terracotta
+        case "reference-library": return Color("SectionReference", bundle: .main)    // #6E6A4E drab
+        case "peds-module":       return Color("SectionPeds", bundle: .main)         // #8A5A6B plum-rose
         default:                  return accent
+        }
+    }
+
+    /// Same tints as sectionColor(_:), keyed by the human title carried on a
+    /// module/search-entry (RecordMeta.section, e.g. "Drug & Dosing Cards")
+    /// rather than the section id — for views that only have the title on hand.
+    static func sectionColor(forTitle title: String) -> Color {
+        switch title {
+        case "Procedures":         return sectionColor("procedures")
+        case "Calculators":        return sectionColor("calculators")
+        case "Drug & Dosing Cards": return sectionColor("drug-dosing")
+        case "Reference Library":  return sectionColor("reference-library")
+        case "Peds Module":        return sectionColor("peds-module")
+        default:                   return accent
         }
     }
 
@@ -35,12 +51,30 @@ enum Theme {
 
     static func severityColor(_ severity: String?) -> Color {
         switch severity {
-        case "low":       return Color(red: 0.247, green: 0.478, blue: 0.306) // #3F7A4E
-        case "moderate":  return Color(red: 0.776, green: 0.322, blue: 0.110) // #C6521C (= ember)
-        case "high":      return Color(red: 0.706, green: 0.196, blue: 0.165) // #B4322A
-        case "critical":  return Color(red: 0.541, green: 0.125, blue: 0.125) // #8A2020
+        case "low":       return Color("SeverityLow", bundle: .main)      // #3F7A4E
+        case "moderate":  return accent                                  // #C6521C (= ember)
+        case "high":      return Color("SeverityHigh", bundle: .main)     // #B4322A
+        case "critical":  return Color("SeverityCritical", bundle: .main) // #8A2020
         default:          return .secondary
         }
+    }
+}
+
+extension Color {
+    /// Parses a "#RRGGBB" string (as used throughout content/, e.g. weight-zones.json
+    /// colorHex). Falls back to .secondary on a malformed string rather than crashing.
+    init(hex: String) {
+        var s = hex.trimmingCharacters(in: .whitespacesAndNewlines)
+        if s.hasPrefix("#") { s.removeFirst() }
+        guard s.count == 6, let v = UInt32(s, radix: 16) else {
+            self = .secondary
+            return
+        }
+        self.init(
+            red: Double((v >> 16) & 0xFF) / 255,
+            green: Double((v >> 8) & 0xFF) / 255,
+            blue: Double(v & 0xFF) / 255
+        )
     }
 }
 

@@ -35,11 +35,7 @@ struct CalculatorView: View {
                 Text(notes).font(.footnote).foregroundStyle(.secondary)
             }
             BuildNote(text: calc.buildNote)
-            if let sources = calc.meta.sources, !sources.isEmpty {
-                DisclosureGroup("Sources") {
-                    ForEach(sources, id: \.self) { Text($0).font(.footnote) }
-                }.font(.footnote)
-            }
+            SourcesBlock(meta: calc.meta)
         }
         .task {
             // restore session state

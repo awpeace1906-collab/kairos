@@ -101,6 +101,7 @@ h3 { margin: 18px 0 6px; }
 
 /* content */
 .content { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
+.content[style*="--tint"] { border-top: 3px solid var(--tint); }
 .purpose { color: var(--muted); margin: 4px 0 12px; }
 .settings { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
 .field-grid { display: grid; gap: 10px; margin: 12px 0; }
@@ -137,8 +138,29 @@ h3 { margin: 18px 0 6px; }
 .flags { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
 .flag { font-size: .72rem; background: color-mix(in srgb, var(--sev-moderate) 25%, transparent); color: var(--text); border-radius: 6px; padding: 2px 6px; }
 .build-note { margin-top: 14px; font-size: .88rem; color: var(--muted); }
-.sources { margin-top: 10px; font-size: .85rem; }
 .last-verified { margin-top: 14px; font-size: .8rem; color: var(--muted); }
+
+/* Reference Library standard template framing */
+.why-matters, .takeaway { margin: 4px 0 14px; padding: 10px 12px; border-radius: 10px; background: var(--surface-2); border-left: 3px solid var(--accent); }
+.takeaway { margin: 16px 0 4px; }
+.why-matters h4, .takeaway h4 { margin: 0 0 4px; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.why-matters p, .takeaway p { margin: 0; }
+.takeaway p { font-weight: 500; }
+
+/* per-page Sources block (always visible, numbered) */
+.sources-block { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); }
+.sources-block h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 6px; }
+.sources-block ol { margin: 0; padding-left: 20px; font-size: .85rem; color: var(--text); }
+.sources-block li { margin: 3px 0; }
+.sources-all { margin: 6px 0 0; font-size: .8rem; }
+
+/* global Sources page (Settings -> Sources) */
+.sources-page h2 { font-size: .95rem; margin: 20px 0 8px; }
+.sources-ol { margin: 0; padding-left: 20px; }
+.sources-ol li { margin: 0 0 10px; }
+.src-text { font-size: .92rem; }
+.src-usedby { font-size: .78rem; color: var(--muted); margin-top: 2px; }
+.src-usedby a { color: var(--accent); }
 .notes { font-size: .9rem; color: var(--muted); }
 
 /* reference prose */
@@ -152,7 +174,8 @@ h3 { margin: 18px 0 6px; }
 
 /* drug card / zones */
 .zone-bar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 10px 0; font-size: .85rem; }
-.zone-chip { padding: 4px 10px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--accent); }
+.zone-chip { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--line); }
+.zone-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; flex: none; box-shadow: inset 0 0 0 1px rgba(0,0,0,.15); }
 .zone-equip { color: var(--muted); }
 .dose-row { padding: 10px 0; border-bottom: 1px solid var(--line); }
 .dose-amt strong { font-size: 1.15rem; }

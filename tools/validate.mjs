@@ -30,6 +30,7 @@ function validateAgainst(schemaFile, data, where) {
 validateAgainst("config.sections.schema.json", await loadConfig("sections.json"), "config/sections.json");
 validateAgainst("config.weight-zones.schema.json", await loadConfig("weight-zones.json"), "config/weight-zones.json");
 validateAgainst("config.tiers.schema.json", await loadConfig("tiers.json"), "config/tiers.json");
+validateAgainst("config.settings.schema.json", await loadConfig("settings.json"), "config/settings.json");
 
 const sectionsCfg = await loadConfig("sections.json");
 const knownCategories = new Set(

@@ -1,4 +1,4 @@
-import { el } from "../components.js";
+import { el, tintStyleForSection } from "../components.js";
 import { makeSearch } from "../lib/search.js";
 
 /** A single section: its own search bar (the flat index pre-filtered) + category list. */
@@ -41,7 +41,7 @@ export function renderSection(sectionId, store) {
   render("");
   return el(
     "section",
-    { class: "content section-view" },
+    { class: "content section-view", style: tintStyleForSection(section.title) },
     el("a", { href: "#/", class: "back" }, "‹ Home"),
     el("h1", {}, section.title),
     el("p", { class: "purpose" }, section.coreQuestion),

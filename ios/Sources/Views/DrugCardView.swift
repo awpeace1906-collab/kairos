@@ -13,6 +13,7 @@ struct DrugCardView: View {
 
     @State private var weightText = ""
     @State private var ageText = ""
+    @State private var obeseOverride = false
 
     private var resolvedWeight: (kg: Double, estimated: Bool, band: String?)? {
         if let w = Double(weightText), w.isFinite { return (w, false, nil) }
@@ -21,6 +22,15 @@ struct DrugCardView: View {
             return (est.weightKg, true, est.band)
         }
         return nil
+    }
+
+    /// Obese-child check (Drug_Dosing_Peds_Weight_Based_Spec): needs an actual
+    /// weight AND an age, and only acts when this drug opts in via obeseWeightBasis.
+    private var obesity: WeightZones.ObesityCheck? {
+        guard card.obeseWeightBasis != nil,
+              let actual = Double(weightText), let age = Double(ageText),
+              let cfg = content.weightZones else { return nil }
+        return WeightZones.obesityCheck(actualKg: actual, ageYears: age, in: cfg)
     }
 
     var body: some View {
@@ -42,8 +52,10 @@ struct DrugCardView: View {
                 if let cfg = content.weightZones, let rw = resolvedWeight,
                    let zone = WeightZones.zone(for: rw.kg, in: cfg) {
                     zoneBar(zone, rw)
+                    obeseCallout()
+                    let dosingKg = dosingWeight(fallback: rw.kg)
                     ForEach(card.doses) { dose in
-                        doseRow(dose, weightKg: rw.kg)
+                        doseRow(dose, weightKg: dosingKg)
                     }
                     Text(cfg.disclaimer).font(.caption2).foregroundStyle(.secondary)
                 } else {
@@ -59,6 +71,7 @@ struct DrugCardView: View {
             }
             if let r = card.reversal { Text("Reversal: \(r)").font(.callout) }
             BuildNote(text: card.buildNote)
+            SourcesBlock(meta: card.meta)
         }
         .task {
             let saved = session.fields(route)
@@ -67,12 +80,51 @@ struct DrugCardView: View {
         }
     }
 
+    /// The weight the per-kg dose is computed from: ideal body weight when the
+    /// obesity flag fires for an "ideal" drug and the user hasn't overridden.
+    private func dosingWeight(fallback: Double) -> Double {
+        if let ob = obesity, ob.flagged, card.obeseWeightBasis == "ideal", !obeseOverride {
+            return ob.ibwKg
+        }
+        return fallback
+    }
+
+    @ViewBuilder private func obeseCallout() -> some View {
+        if let ob = obesity, ob.flagged {
+            if card.obeseWeightBasis == "ideal" {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text("Obesity flag — dosing from ideal body weight")
+                        .font(.subheadline.bold())
+                    Text("Entered weight \(fmt(ob.actualKg)) kg is ~\(ob.pctOver)% above the age-expected weight (\(fmt(ob.ibwKg)) kg). This drug is hydrophilic — actual-weight dosing risks overdose. Doses below use \(obeseOverride ? "actual weight (\(fmt(ob.actualKg)) kg)" : "\(fmt(ob.ibwKg)) kg").")
+                        .font(.footnote)
+                    Button(obeseOverride ? "Use ideal body weight" : "Use actual weight instead") {
+                        obeseOverride.toggle()
+                    }
+                    .font(.footnote).buttonStyle(.bordered)
+                }
+                .padding(10)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(Color.orange.opacity(0.15), in: RoundedRectangle(cornerRadius: 10))
+                .overlay(alignment: .leading) { Rectangle().fill(Color.orange).frame(width: 4) }
+            } else if card.obeseWeightBasis == "actual" {
+                Text("Entered weight is ~\(ob.pctOver)% above the age-expected weight, but this drug is dosed by total (actual) body weight even in obesity — no adjustment.")
+                    .font(.footnote).foregroundStyle(.secondary)
+            }
+        }
+    }
+
     private func zoneBar(_ zone: WeightZonesConfig.Zone, _ rw: (kg: Double, estimated: Bool, band: String?)) -> some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack {
-                Text("Zone \(zone.zone) · \(zone.color)")
+                HStack(spacing: 6) {
+                    if let hex = zone.colorHex {
+                        Circle().fill(Color(hex: hex)).frame(width: 9, height: 9)
+                            .overlay(Circle().stroke(.black.opacity(0.15), lineWidth: 1))
+                    }
+                    Text("Zone \(zone.zone) · \(zone.color)")
+                }
                     .padding(.horizontal, 10).padding(.vertical, 4)
-                    .overlay(Capsule().stroke(Color.accentColor))
+                    .overlay(Capsule().stroke(Color(.separator)))
                 if rw.estimated {
                     // estimated weight gets a distinct visual treatment (spec §2)
                     Text("\(fmt(rw.kg)) kg (estimated)").italic().foregroundStyle(.orange)

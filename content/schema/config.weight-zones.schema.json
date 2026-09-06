@@ -7,8 +7,9 @@
   "additionalProperties": false,
   "required": ["scheme", "disclaimer", "zones", "ageEstimate"],
   "properties": {
-    "scheme": { "type": "string", "const": "Kairos Teal-Charcoal (original, not Broselow)" },
+    "scheme": { "type": "string", "const": "Kairos Dove-Umber (original, not Broselow)" },
     "disclaimer": { "type": "string" },
+    "obesityFlagRatio": { "type": "number", "description": "Actual-weight / age-expected-weight ratio above which a peds patient is flagged obese for per-drug IBW dosing (Drug_Dosing_Peds_Weight_Based_Spec.md, ERC 2025)." },
     "ageEstimate": {
       "type": "object",
       "additionalProperties": false,
@@ -41,6 +42,7 @@
         "properties": {
           "zone": { "type": "integer", "minimum": 1 },
           "color": { "type": "string" },
+          "colorHex": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
           "weight_min": { "type": "number" },
           "weight_max": { "type": "number" },
           "equipment": {

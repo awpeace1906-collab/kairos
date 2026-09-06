@@ -83,3 +83,35 @@ export function lastVerified(mod) {
 export function severityClass(sev) {
   return sev ? `sev-${sev}` : "";
 }
+
+/** mod.section is the human title ("Procedures", "Drug & Dosing Cards", ...);
+    map it to the matching --sec-* token from styles.css so every content page
+    (not just the home tiles) carries its section's tint as a top border. */
+const SECTION_TINT_VAR = {
+  "Procedures": "--sec-procedures",
+  "Calculators": "--sec-calculators",
+  "Drug & Dosing Cards": "--sec-drug-dosing",
+  "Reference Library": "--sec-reference-library",
+  "Peds Module": "--sec-peds-module",
+};
+export function tintStyle(mod) {
+  return tintStyleForSection(mod.section);
+}
+export function tintStyleForSection(sectionTitle) {
+  const v = SECTION_TINT_VAR[sectionTitle];
+  return v ? `--tint: var(${v})` : null;
+}
+
+/** Numbered, always-visible list of the primary sources for this page's material.
+    Pass 1 renders the raw `sources[]` strings; a structured citation registry
+    (content/config/citations.json) replaces the free text in a later pass. */
+export function sourcesBlock(mod) {
+  if (!mod.sources?.length) return null;
+  return el(
+    "section",
+    { class: "sources-block" },
+    el("h2", {}, "Sources"),
+    el("ol", {}, mod.sources.map((s) => el("li", {}, s))),
+    el("p", { class: "sources-all" }, el("a", { href: "#/sources" }, "All sources ›"))
+  );
+}

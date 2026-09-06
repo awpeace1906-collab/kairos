@@ -8,9 +8,11 @@ on:
 
 jobs:
   build-and-test:
-    runs-on: macos-14
+    # macos-15 ships Xcode 16, which XcodeGen (latest, via brew) now targets —
+    # it emits objectVersion 77, unreadable by the Xcode 15.4 on macos-14.
+    runs-on: macos-15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Install XcodeGen
         run: brew install xcodegen
       - name: Generate the Xcode project
@@ -22,6 +24,6 @@ jobs:
           xcodebuild test \
             -project Kairos.xcodeproj -scheme Kairos \
             -sdk iphonesimulator \
-            -destination 'platform=iOS Simulator,name=iPhone 15' \
+            -destination 'platform=iOS Simulator,name=iPhone 16' \
             -resultBundlePath TestResults.xcresult \
             CODE_SIGNING_ALLOWED=NO

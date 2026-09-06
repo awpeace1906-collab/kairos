@@ -88,60 +88,44 @@
       "themeToken": "section.drugDosing",
       "categories": [
         {
-          "id": "anescalc-induction",
-          "title": "AnesCalc — Induction Agents"
+          "id": "periop-induction-sedation",
+          "title": "Induction & Sedation Agents"
         },
         {
-          "id": "anescalc-benzodiazepine",
-          "title": "AnesCalc — Benzodiazepines"
+          "id": "periop-volatile",
+          "title": "Volatile Anesthetics"
         },
         {
-          "id": "anescalc-volatile",
-          "title": "AnesCalc — Volatile Anesthetics"
+          "id": "periop-nmb",
+          "title": "Neuromuscular Blockers"
         },
         {
-          "id": "anescalc-nmb",
-          "title": "AnesCalc — Neuromuscular Blockers"
+          "id": "periop-reversal",
+          "title": "Reversal & Anticholinergic Agents"
         },
         {
-          "id": "anescalc-opioid",
-          "title": "AnesCalc — Opioids"
+          "id": "periop-opioid",
+          "title": "Opioids"
         },
         {
-          "id": "anescalc-local",
-          "title": "AnesCalc — Local Anesthetics"
+          "id": "periop-local",
+          "title": "Local Anesthetics"
         },
         {
-          "id": "anescalc-vasopressor",
-          "title": "AnesCalc — Vasopressors"
+          "id": "periop-vasopressor",
+          "title": "Vasopressors & Inotropes"
         },
         {
-          "id": "anescalc-reversal",
-          "title": "AnesCalc — Reversal Agents"
+          "id": "periop-antiemetic",
+          "title": "Antiemetics & Aspiration Prophylaxis"
         },
         {
-          "id": "anescalc-anticholinergic",
-          "title": "AnesCalc — Anticholinergics"
+          "id": "periop-crisis",
+          "title": "Crisis / Rescue Drugs"
         },
         {
-          "id": "anescalc-antiemetic",
-          "title": "AnesCalc — Antiemetics"
-        },
-        {
-          "id": "anescalc-gi",
-          "title": "AnesCalc — GI / Aspiration Prophylaxis"
-        },
-        {
-          "id": "anescalc-emergency",
-          "title": "AnesCalc — Emergency Drugs"
-        },
-        {
-          "id": "anescalc-methylene-blue",
-          "title": "AnesCalc — Methylene Blue"
-        },
-        {
-          "id": "anescalc-anticoagulant",
-          "title": "AnesCalc — Anticoagulants / Hemostatics"
+          "id": "periop-anticoagulant",
+          "title": "Anticoagulants & Hemostatics"
         },
         {
           "id": "resus-dosing",

@@ -69,7 +69,8 @@ final class KairosUITests: XCTestCase {
         let hr = app.textFields["field-Heart rate"].firstMatch
         hr.tap(); hr.typeText("80")
         // dismiss the keyboard so the result row is on screen
-        if app.buttons["Done"].exists { app.buttons["Done"].tap() }
+        let done = app.buttons["Done"].firstMatch
+        if done.exists { done.tap() }
 
         // Bazett(400, 80) ≈ 462 ms.
         XCTAssertTrue(text(containing: "462").waitForExistence(timeout: 5))
@@ -79,16 +80,26 @@ final class KairosUITests: XCTestCase {
     /// dose + the zone bar render (the dual-mode rule).
     func testDrugCardDualModeFlow() {
         openSection("drug-dosing")
+        // "Weight/Age-Based Resuscitation Dosing" now sits below the 10 merged
+        // perioperative categories (2026-09-04 category cleanup), so the row
+        // needs the same scroll-and-retry openSection() uses for home tiles.
         let epiRow = app.buttons["row-peds-epinephrine-arrest"].firstMatch
+        var tries = 0
+        while !epiRow.exists && tries < 15 {
+            app.swipeUp()
+            tries += 1
+        }
         XCTAssertTrue(epiRow.waitForExistence(timeout: 5))
         epiRow.tap()
 
         let weight = app.textFields["drug-weight"].firstMatch
         XCTAssertTrue(weight.waitForExistence(timeout: 5))
         weight.tap(); weight.typeText("14.3")
-        if app.buttons["Done"].exists { app.buttons["Done"].tap() }
+        let done = app.buttons["Done"].firstMatch
+        if done.exists { done.tap() }
 
-        // 14.3 kg × 0.01 mg/kg = 0.143 mg, Zone 4 (Violet).
+        // 14.3 kg × 0.01 mg/kg = 0.143 mg, Zone 4 (Denim, since the 2026-09-04
+        // weight-zone recolour — Dove-Umber, not Broselow).
         XCTAssertTrue(text(containing: "0.143").waitForExistence(timeout: 5))
         XCTAssertTrue(text(containing: "Zone 4").exists)
     }
@@ -100,6 +111,12 @@ final class KairosUITests: XCTestCase {
         let lacRow = app.buttons["row-laceration-repair"].firstMatch
         XCTAssertTrue(lacRow.waitForExistence(timeout: 5))
         lacRow.tap()
+
+        // v3 added an upstream triage question, so "start" no longer leads
+        // straight to "Hand" — go via "Neither — select body region" first.
+        let regionChoice = app.buttons["tree-choice-region"].firstMatch
+        XCTAssertTrue(regionChoice.waitForExistence(timeout: 5))
+        regionChoice.tap()
 
         let handChoice = app.buttons["tree-choice-hand"].firstMatch
         XCTAssertTrue(handChoice.waitForExistence(timeout: 5))

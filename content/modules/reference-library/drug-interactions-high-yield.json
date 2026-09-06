@@ -1,0 +1,64 @@
+{
+  "id": "drug-interactions-high-yield",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Drug Interactions — Nine High-Yield Pairs",
+  "aliases": ["high-yield drug interactions", "drug-drug interactions", "clopidogrel omeprazole", "digoxin amiodarone", "statin clarithromycin", "linezolid SSRI serotonin syndrome", "fluoroquinolone tendinopathy", "QT-prolonging drug list"],
+  "tags": ["drug interactions", "pharmacology", "QT prolongation", "serotonin syndrome", "antibiotic toxicity", "medication safety", "ED", "ICU", "ward"],
+  "keywords": ["methotrexate NSAID renal clearance", "digoxin amiodarone P-glycoprotein reduce dose 30-50", "azithromycin QT prolongation", "ACE inhibitor spironolactone hyperkalemia", "ciprofloxacin warfarin INR CYP1A2", "linezolid SSRI MAO inhibitor serotonin syndrome", "clopidogrel omeprazole CYP2C19 use pantoprazole", "tramadol SSRI serotonin syndrome seizure threshold", "statin clarithromycin CYP3A4 rhabdomyolysis", "fluoroquinolone tendon rupture", "linezolid peripheral neuropathy", "daptomycin myopathy CK"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-04",
+  "next_review_due": "2027-03-04",
+  "review_tier": 2,
+  "sources": [
+    "Bourre-Tessier J, Haraoui B. Methotrexate Drug Interactions in the Treatment of Rheumatoid Arthritis: A Systematic Review. J Rheumatol. 2010;37(7):1416-1421",
+    "Lanoxin (digoxin) prescribing information — amiodarone co-administration data",
+    "PLAVIX (clopidogrel) prescribing information; FDA Public Health Advisory on clopidogrel-omeprazole co-administration, 2009-2010 label revision",
+    "Williams RJ, et al. The effect of ciprofloxacin on tendon, paratenon, and capsular fibroblast metabolism. Am J Sports Med. 2000;28(3):364-369",
+    "van der Linden PD, et al. Fluoroquinolones and risk of Achilles tendon disorders: case-control study. BMJ. 2002;324(7349):1306-1307",
+    "Critical Vector — Drug Interactions Nobody Teaches You"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-04", "change": "Initial entry — the nine high-yield interaction pairs plus antibiotic-specific idiosyncratic toxicity (fluoroquinolones, linezolid, daptomycin) and a QT-prolonging drug-class quick list." }
+  ],
+  "summary": "Nine interaction pairs that are easy to miss because neither drug is obviously dangerous alone — mechanism, the actual risk, and the bedside fix for each. Plus three antibiotic toxicities that surface after the patient has already left the visit where the prescription was written.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Nine high-yield pairs" },
+    { "type": "table",
+      "columns": ["Pair", "Mechanism", "Risk / fix"],
+      "rows": [
+        ["Methotrexate + NSAIDs", "NSAIDs reduce renal tubular secretion of methotrexate, raising serum levels.", "Risk scales with MTX dose — high-dose oncologic regimens are most dangerous. Caution even at low rheumatologic doses; avoid unsupervised OTC NSAID use."],
+        ["Digoxin + Amiodarone", "Amiodarone inhibits P-glycoprotein efflux and renal tubular clearance of digoxin.", "PO digoxin levels rise ~70%, IV ~17%. Check level before starting amiodarone; reduce digoxin dose 30-50% (PO) or 15-30% (IV)."],
+        ["Azithromycin + QT-prolonging drugs", "Additive QT prolongation with other QT-prolonging agents.", "Check baseline QTc before adding; avoid stacking a second QT-prolonging agent in at-risk patients (hypokalaemia, structural heart disease)."],
+        ["ACE inhibitors + Spironolactone", "Both retain potassium via independent mechanisms — reduced aldosterone signalling plus direct aldosterone antagonism.", "In CKD or HF, hyperkalaemia can stop the heart. Check potassium at 1-2 weeks after starting, and again thereafter — not a one-time check."],
+        ["Ciprofloxacin + Warfarin", "Ciprofloxacin inhibits CYP1A2, which clears R-warfarin, causing unpredictable INR elevation.", "Check INR early after starting, adjust as needed. Nitrofurantoin is a safer UTI alternative in a warfarin patient when clinically appropriate."],
+        ["Linezolid + SSRIs", "Linezolid is a reversible MAO inhibitor; combined with an SSRI it raises serotonin syndrome risk.", "Incidence is low but consequence is not. Check the medication list before starting linezolid in any patient on an SSRI or SNRI."],
+        ["Clopidogrel + Omeprazole", "Omeprazole inhibits CYP2C19, the enzyme required to convert clopidogrel to its active antiplatelet metabolite.", "Reduces the active metabolite by ~46% and platelet inhibition by ~30-47%. Dosing 12 h apart does NOT fix this — the inhibition isn't timing-dependent. Use pantoprazole instead."],
+        ["SSRIs + Tramadol", "Both raise synaptic serotonin — SSRI via reuptake inhibition, tramadol via reuptake inhibition plus weak mu-opioid activity.", "Additive serotonergic effect (serotonin syndrome risk), plus tramadol independently lowers seizure threshold. Use caution combining with any serotonergic therapy."],
+        ["Statins + Clarithromycin", "Clarithromycin inhibits CYP3A4, the primary metabolic pathway for simvastatin and lovastatin, raising statin levels.", "Rhabdomyolysis risk with simvastatin/lovastatin plus a strong CYP3A4 inhibitor. Hold the statin during the antibiotic course, or switch to pravastatin/rosuvastatin (not CYP3A4-dependent)."]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Antibiotic toxicity — the other side of stewardship" },
+    { "type": "text", "text": "Several antibiotics carry dose-independent or idiosyncratic toxicity that's easy to miss because it develops after the patient has already left the visit where the prescription was written." },
+    { "type": "table",
+      "columns": ["Drug", "Toxicity", "What to know"],
+      "rows": [
+        ["Fluoroquinolones", "Tendinopathy and rupture", "Direct toxic effect on tendon fibroblasts. Achilles tendinopathy OR 4.3, rupture OR 2.0 vs non-users (UK database, 6.4M patients). Amplified by age > 60, concurrent corticosteroids, renal transplant. Onset hours to weeks (average 6-10 days) and can occur after stopping. Stop the drug and rest the tendon at first symptom."],
+        ["Linezolid", "Peripheral neuropathy", "Mitochondrial protein-synthesis inhibition impairs Schwann-cell function with prolonged exposure. Strongly duration-dependent (typically after weeks). Numbness/pain concentrate in the feet; may be only partially reversible. Avoid courses beyond 28 days when possible."],
+        ["Daptomycin", "Myopathy", "A membrane-level effect on myocytes parallels its antibacterial mechanism. Concurrent statin therapy compounds the risk — consider holding the statin during the course. Baseline CK, then weekly during therapy; discontinue if CK rises significantly with myalgia, or exceeds roughly 10× ULN regardless of symptoms."]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Quick reference — QT-prolonging drug classes" },
+    { "type": "list", "items": [
+      "Antimicrobials: macrolides (azithromycin, erythromycin), fluoroquinolones, antifungal azoles",
+      "Antiarrhythmics: amiodarone, sotalol, dofetilide, procainamide, quinidine",
+      "Antipsychotics: haloperidol, ziprasidone, quetiapine (dose-dependent)",
+      "Antiemetics: ondansetron, droperidol",
+      "Other: methadone, certain antidepressants (citalopram at higher doses)"
+    ] },
+    { "type": "callout", "tone": "warning", "text": "Stacking two or more agents from this list multiplies risk beyond any single agent's individual QTc effect — reconcile the FULL medication list, not just the newest addition, before prescribing any QT-prolonging antimicrobial." }
+  ],
+  "related": ["acls-adult-cardiac-arrest", "twelve-lead-stemi-criteria", "toxidromes-and-overdoses", "empiric-antibiotics-ed-icu"],
+  "buildNote": "Review tier 2 (drug-interaction mechanisms/effect sizes, not an acute-management algorithm — reasonable to re-check less urgently than Tier 1 content). Not exhaustive — the nine pairs and three antibiotic toxicities that are most often missed, not a full interaction-checker."
+}

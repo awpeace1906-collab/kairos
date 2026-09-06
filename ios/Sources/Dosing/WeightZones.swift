@@ -38,6 +38,25 @@ enum WeightZones {
         return EstimatedWeight(weightKg: (v * 10).rounded() / 10, band: band.ageBandLabel)
     }
 
+    /// Ideal body weight proxy for a child — the APLS age-expected weight (no
+    /// height is collected). Same number as estimateWeight, named as IBW.
+    static func idealBodyWeight(ageYears: Double, in cfg: WeightZonesConfig) -> Double? {
+        estimateWeight(ageYears: ageYears, in: cfg)?.weightKg
+    }
+
+    struct ObesityCheck { let ibwKg: Double; let actualKg: Double; let pctOver: Int; let flagged: Bool }
+
+    /// Obese-child check for the drug-card flow (Drug_Dosing_Peds_Weight_Based_Spec).
+    /// Needs both an actual weight and an age; nil if either is missing or the
+    /// ratio isn't configured.
+    static func obesityCheck(actualKg: Double, ageYears: Double, in cfg: WeightZonesConfig) -> ObesityCheck? {
+        guard let ratio = cfg.obesityFlagRatio, actualKg.isFinite,
+              let ibw = idealBodyWeight(ageYears: ageYears, in: cfg), ibw > 0 else { return nil }
+        let over = actualKg / ibw
+        return ObesityCheck(ibwKg: ibw, actualKg: actualKg,
+                            pctOver: Int(((over - 1) * 100).rounded()), flagged: over > ratio)
+    }
+
     /// Live per-kg dose from a drug-card rule. The zone is never consulted here.
     static func dose(from rule: DrugCard.Rule, weightKg: Double) -> DoseComputation? {
         guard weightKg.isFinite else { return nil }

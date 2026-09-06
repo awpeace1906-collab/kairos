@@ -32,6 +32,7 @@ enum Route: Hashable {
     case section(String)   // section id
     case content(String)   // search-index route
     case about
+    case sources
 }
 
 struct RootView: View {
@@ -59,6 +60,7 @@ struct RootView: View {
                 case .section(let id):    SectionView(sectionID: id)
                 case .content(let r):     ContentDetailView(route: r)
                 case .about:              AboutView()
+                case .sources:            SourcesView()
                 }
             }
         }

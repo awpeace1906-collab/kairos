@@ -3,18 +3,43 @@
   "section": "Drug & Dosing Cards",
   "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
   "title": "Atropine — Pediatric (bradycardia / RSI premedication)",
-  "aliases": ["peds atropine", "vagal bradycardia dose"],
-  "tags": ["bradycardia", "vagal", "AV block", "RSI premedication", "peds", "PALS"],
+  "aliases": [
+    "peds atropine",
+    "vagal bradycardia dose"
+  ],
+  "tags": [
+    "bradycardia",
+    "vagal",
+    "AV block",
+    "RSI premedication",
+    "peds",
+    "PALS"
+  ],
   "contentType": "drug-card",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-08-31",
   "next_review_due": "2026-11-30",
   "review_tier": 1,
-  "sources": ["AHA 2025 PALS", "Drug_Dosing_Peds_Weight_Based_Spec.md"],
-  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry — includes the 0.1 mg minimum-dose floor and revised RSI-premedication indication." }],
+  "sources": [
+    "AHA 2025 PALS",
+    "Drug_Dosing_Peds_Weight_Based_Spec.md"
+  ],
+  "changelog": [
+    {
+      "version": 2,
+      "date": "2026-09-05",
+      "change": "Added obeseWeightBasis: ideal — hydrophilic resus drug, dose from ideal (age-expected) body weight in an obese child (ERC 2025 / Drug_Dosing_Peds_Weight_Based_Spec)."
+    },
+    {
+      "version": 1,
+      "date": "2026-08-31",
+      "change": "Initial entry — includes the 0.1 mg minimum-dose floor and revised RSI-premedication indication."
+    }
+  ],
   "purpose": "Symptomatic bradycardia from vagal tone or primary AV block. NOT routine for PEA/asystole. RSI premedication is now narrowly indicated: children < 1 year undergoing direct laryngoscopy, independent of paralytic choice.",
   "population": "peds",
   "weightBasis": "actual",
+  "obeseWeightBasis": "ideal",
   "doses": [
     {
       "indication": "Symptomatic bradycardia (vagal / AV block), or RSI premedication in an infant < 1 year for direct laryngoscopy",

@@ -7,9 +7,9 @@
   "tags": ["airway", "intubation", "RSI", "peri-intubation arrest", "preoxygenation", "shock", "acidosis", "RV failure", "ketamine", "etomidate", "ED", "ICU"],
   "keywords": ["PREOXI", "FELLOW", "PrePARE", "PREPARE II", "RSI trial", "shock index", "modified shock index", "push-dose pressor", "shunt physiology", "minute ventilation match"],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-02",
-  "next_review_due": "2026-12-02",
+  "content_version": 3,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2026-12-03",
   "review_tier": 1,
   "sources": [
     "Critical Vector — The Physiologically Difficult Airway (checks the anesthesianotes/KarthikMD airway carousel against trial data)",
@@ -19,11 +19,37 @@
     "Preoxygenation reserve: Farmery AD, Roe PG. Br J Anaesth 1996;76:284-291; Benumof JL et al. Anesthesiology 1997;87:979-982"
   ],
   "changelog": [
+    { "version": 3, "date": "2026-09-03", "change": "Folded in the CV Difficult Airway Physiology guide: INTUBE-study scale figures, the five stacking phases of peri-intubation collapse, and the induction-agent hemodynamic-profile table. Cross-linked the new anatomically-difficult-airway module." },
     { "version": 2, "date": "2026-09-02", "change": "Added the preoxygenation-reserve section (Farmery & Roe desaturation times by patient type + succinylcholine recovery timeline) as an actionable bedside item." },
     { "version": 1, "date": "2026-09-02", "change": "Initial entry — converted from the CV physiologically-difficult-airway deep dive. Four deadly profiles + the evidence-corrected induction matrix (incl. the Dec 2025 RSI trial)." }
   ],
   "summary": "Anatomy predicts whether you see the cords. Physiology decides whether the patient survives the apneic pause and the drugs. Four physiologic states kill patients with grade-1 views: hypoxemia, hypotension, metabolic acidosis, and RV failure. Resuscitate before you intubate.",
   "body": [
+    { "type": "heading", "level": 2, "text": "The scale of the problem — INTUBE" },
+    { "type": "text", "text": "INTUBE (n=2,964, 197 sites, 29 countries) put numbers on emergency ICU intubation: cardiovascular instability in 42.6%, severe hypoxaemia (SpO2 < 80%) in 9.3%, and cardiac arrest within 30 min in 3.1%. Peri-intubation cardiovascular collapse carried an adjusted OR of 2.47 (95% CI 1.72-3.55) for ICU death. Emergency intubation is a haemodynamic intervention, not just a mechanical one — prepare the physiology before you prepare the airway." },
+    { "type": "heading", "level": 3, "text": "Why \"stable\" is misleading — the catecholamine surge" },
+    { "type": "text", "text": "Critically ill patients hold apparent stability through an endogenous sympathetic surge (tachycardia, vasoconstriction, raised myocardial O2 demand). That is compensation, not reserve. Induction agents abolish the drive within seconds — abrupt SVR loss, falling CO, organ hypoperfusion: \"adrenergic collapse\". A high HR or elevated BP in a sick patient signals fragility that needs optimisation, not stability that permits immediate intubation. Vasopressors first, induction second." },
+    { "type": "heading", "level": 3, "text": "Five stacking phases — each compounds the last" },
+    { "type": "list", "items": [
+      "Pre-induction adrenergic dependence — sympathetic surge is the only thing holding up BP and CO; remove it and collapse follows.",
+      "Induction-agent sympatholysis — SVR drops and CO falls within seconds of the drug.",
+      "Apnoea and desaturation — hypoxaemia → myocardial ischaemia → reduced contractility, arrhythmia.",
+      "Transition to positive-pressure ventilation — raised intrathoracic pressure cuts venous return, preload and CO.",
+      "Post-intubation sedation — ongoing vasodilation and sympatholysis, cumulative on all of the above."
+    ] },
+    { "type": "heading", "level": 3, "text": "Induction agents — haemodynamic profile" },
+    { "type": "table",
+      "columns": ["Agent", "CO", "SVR", "MAP", "HR", "Key consideration"],
+      "rows": [
+        ["Propofol", "↓↓", "↓↓", "↓↓", "↓ / →", "Direct vasodilation + myocardial depression — avoid in haemodynamic compromise"],
+        ["Ketamine", "↑", "→ / ↑", "→ / ↑", "↑", "Sympathomimetic, preserves BP; raises myocardial O2 demand; no mortality edge and MORE CV collapse vs etomidate in the 2025 RSI trial"],
+        ["Etomidate", "→", "→", "→", "→", "Most haemodynamically neutral; transient (~24 h) adrenal suppression; preferred when collapse risk is highest"],
+        ["Midazolam", "↓", "↓", "↓", "↓ / →", "Significant vasodilation, delirium risk — not preferred for RSI"],
+        ["Remimazolam", "→", "↓ / →", "↓ / →", "→", "Titratable; limited ICU outcome data"]
+      ]
+    },
+    { "type": "text", "text": "INTUBE component definition of CV instability (for reference): SBP < 65 at any point, SBP < 90 for > 30 min, new or escalating vasopressor, or a fluid bolus > 15 mL/kg." },
+
     { "type": "heading", "level": 2, "text": "Preoxygenation reserve — how much apnea time you're buying" },
     { "type": "text", "text": "At an alveolar O2 fraction of 0.87 (thorough preoxygenation), a healthy 70 kg adult takes ~9.9 min of apnea to fall to 60% SaO2; on room air (FAO2 0.13) the same patient hits 60% at 2.8 min. That gap is the case for full, not partial, preoxygenation. Desaturation speed, fastest to slowest: obese 127 kg adult > 10 kg child > moderately ill adult > healthy adult (children: high metabolic rate relative to FRC; obese: raised O2 consumption + mechanically reduced FRC; illness: reduced FRC and/or increased shunt). Succinylcholine 1 mg/kg paralysis lasts ~6.8 min to 10% twitch recovery, 8.5 min to 50%, 10.2 min to 90% — longer than the safe apnea window in a healthy adult, so 'the patient will just wake up and breathe' is not a valid failed-airway backup plan." },
 
@@ -66,6 +92,6 @@
     },
     { "type": "text", "text": "Rocuronium 1.2 mg/kg for first-pass success holds across all four profiles and is well supported independent of hemodynamic status. Dose reduction and pressor readiness belong to the induction agent regardless of which one is chosen — no agent is hemodynamically free in true shock." }
   ],
-  "related": ["airway-management-flow", "modified-shock-index", "shock-index", "capnography", "pressor-inotrope-reference", "ventilator-management"],
-  "buildNote": "Tier 1 (currency — RSI trial Dec 2025, PREOXI/PREPARE II). Cross-linked from airway-management-flow (the workflow can add a 'physiologic optimisation' node pointing here). Anatomically difficult airway (difficult_airway.html + CV_Difficult_Airway_Physiology.html) is a separate reference still to build."
+  "related": ["anatomically-difficult-airway", "airway-management-flow", "macocha-score", "modified-shock-index", "shock-index", "capnography", "pressor-inotrope-reference", "ventilator-management"],
+  "buildNote": "Tier 1 (currency — RSI trial Dec 2025, PREOXI/PREPARE II, INTUBE). Cross-linked from airway-management-flow. v3 folded in CV_Difficult_Airway_Physiology.html (INTUBE figures, five stacking phases, agent haemodynamic table); the anatomic/procedural failed-airway drill lives in the sibling anatomically-difficult-airway module."
 }

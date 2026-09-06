@@ -1,7 +1,7 @@
 {
   "id": "dexmedetomidine",
   "section": "Drug & Dosing Cards",
-  "category": "AnesCalc — Induction Agents",
+  "category": "Induction & Sedation Agents",
   "title": "Dexmedetomidine",
   "aliases": [
     "Precedex"
@@ -13,14 +13,22 @@
     "dexmedetomidine"
   ],
   "contentType": "anesthesia-drug-card",
-  "content_version": 1,
-  "last_reviewed": "2026-09-01",
-  "next_review_due": "2026-12-01",
+  "content_version": 2,
+  "last_reviewed": "2026-09-04",
+  "next_review_due": "2027-03-04",
   "review_tier": 1,
   "sources": [
-    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01",
+    "Probable Dexmedetomidine Induced Diabetes Insipidus: A Case Review. 2021. PMID 34670426",
+    "Uddin S, et al. Dexmedetomidine Induced Polyuria in the Intensive Care Unit. Case Reports in Critical Care. 2021. doi:10.1155/2021/8850116",
+    "A nephrogenic mechanism underlies dexmedetomidine-induced polyuria: a case report. ScienceDirect, 2023 (three-mechanism model)"
   ],
   "changelog": [
+    {
+      "version": 2,
+      "date": "2026-09-04",
+      "change": "Added the polyuria / diabetes-insipidus-mimic caution (3-pathway AVP-AQP2 mechanism, recognition, and management) from the CV Dexmedetomidine & Polyuria guide."
+    },
     {
       "version": 1,
       "date": "2026-09-01",
@@ -38,7 +46,8 @@
   "cautions": [
     "AEs: Bradycardia (including sinus arrest), hypotension, transient hypertension (rapid bolus), dry mouth, nausea",
     "CI: No absolute contraindications per FDA",
-    "Precautions: Avoid in 2nd/3rd degree AV block, uncompensated heart failure; continuous monitoring required; tolerance/tachyphylaxis with prolonged infusion; NOT interchangeable with clonidine"
+    "Precautions: Avoid in 2nd/3rd degree AV block, uncompensated heart failure; continuous monitoring required; tolerance/tachyphylaxis with prolonged infusion; NOT interchangeable with clonidine",
+    "Polyuria / DI mimic: can cause a lot of dilute urine (>3 mL/kg/hr, osmolality <250-300 mOsm/kg) via a 3-pathway hit on the AVP-AQP2 axis (central AVP suppression, direct renal AQP2 effect, imidazoline-receptor salt/water loss). Reported after a single loading dose and at rates as low as 0.2 mcg/kg/hr — not just high-dose/prolonged infusions. The tell is timing: starts with the infusion, resolves within hours of stopping it. Untreated, sodium climbs while potassium can fall sharply — the electrolyte shift, not the urine volume, is what kills (a published case: Na 156, K < 1.8, Torsades). Confirm with UOP/Na/osmolality/glucose, rule out osmotic diuresis, diuretics, true central/nephrogenic DI, and post-obstructive diuresis, then stop or reduce the infusion and replace electrolytes gently — DDAVP is rarely needed."
   ],
   "pearls": [
     "Produces cooperative sedation — patient rousable and NOT apneic. Ideal for awake fiber-optic intubation or procedures requiring patient cooperation.",

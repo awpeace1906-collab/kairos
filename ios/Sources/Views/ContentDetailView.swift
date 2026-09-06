@@ -32,18 +32,23 @@ struct ContentDetailView: View {
                 ContentUnavailableViewCompat(text: error)
             } else if let loaded {
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 16) {
-                        switch loaded {
-                        case .calculator(let c): CalculatorView(calc: c, route: route)
-                        case .reference(let r):  ReferenceBody(doc: r)
-                        case .procedure(let p):  ProcedureBody(proc: p)
-                        case .drugCard(let d):   DrugCardView(card: d, route: route)
-                        case .anesthesiaDrugCard(let a): AnesthesiaDrugCardBody(card: a)
-                        case .pedsTool(let t):   PedsToolBody(tool: t, route: route)
+                    VStack(alignment: .leading, spacing: 0) {
+                        Rectangle()
+                            .fill(Theme.sectionColor(forTitle: loaded.meta.section))
+                            .frame(maxWidth: .infinity, minHeight: 3, maxHeight: 3)
+                        VStack(alignment: .leading, spacing: 16) {
+                            switch loaded {
+                            case .calculator(let c): CalculatorView(calc: c, route: route)
+                            case .reference(let r):  ReferenceBody(doc: r)
+                            case .procedure(let p):  ProcedureBody(proc: p)
+                            case .drugCard(let d):   DrugCardView(card: d, route: route)
+                            case .anesthesiaDrugCard(let a): AnesthesiaDrugCardBody(card: a)
+                            case .pedsTool(let t):   PedsToolBody(tool: t, route: route)
+                            }
+                            LastVerified(meta: loaded.meta)
                         }
-                        LastVerified(meta: loaded.meta)
+                        .padding()
                     }
-                    .padding()
                 }
             } else {
                 ProgressView()
@@ -80,9 +85,27 @@ struct ReferenceBody: View {
             if let summary = doc.summary {
                 Text(summary).foregroundStyle(.secondary)
             }
+            if let why = doc.whyThisMatters {
+                framedNote("WHY THIS MATTERS", why)
+            }
             BlockList(blocks: doc.body)
+            if let take = doc.clinicalTakeaway {
+                framedNote("CLINICAL TAKEAWAY", take, emphasized: true)
+            }
             BuildNote(text: doc.buildNote)
+            SourcesBlock(meta: doc.meta)
         }
+    }
+
+    @ViewBuilder private func framedNote(_ label: String, _ text: String, emphasized: Bool = false) -> some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(label).font(.caption2).foregroundStyle(.secondary).tracking(0.6)
+            Text(text).font(.callout).fontWeight(emphasized ? .medium : .regular)
+        }
+        .padding(10)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 10))
+        .overlay(alignment: .leading) { Rectangle().fill(Theme.accent).frame(width: 3) }
     }
 }
 
@@ -170,6 +193,7 @@ struct ProcedureBody: View {
                 Text("Orchestrates: \(x.joined(separator: ", "))").font(.footnote).foregroundStyle(.secondary)
             }
             BuildNote(text: proc.buildNote)
+            SourcesBlock(meta: proc.meta)
         }
     }
 }
@@ -245,6 +269,7 @@ struct PedsToolBody: View {
                 BlockList(blocks: body)
             }
             BuildNote(text: tool.buildNote)
+            if tool.embeddedCalculator == nil { SourcesBlock(meta: tool.meta) }
         }
     }
 }
@@ -275,6 +300,7 @@ struct AnesthesiaDrugCardBody: View {
             }
             group("Cautions") { bullets(card.cautions) }
             group("Pearls") { bullets(card.pearls) }
+            SourcesBlock(meta: card.meta)
         }
     }
 

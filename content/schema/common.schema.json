@@ -73,6 +73,11 @@
           "items": { "type": "string" },
           "description": "Abbreviations, alternate names, common misspellings ('GBS' for Glasgow-Blatchford)."
         },
+        "settingEmphasis": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "description": "Care-setting ids (from config/settings.json) this module is most relevant to, most-relevant first. Drives render-time reordering when a setting lens is active. Absent = neutral (never reordered). A LENS, not a fork — never duplicate a module per setting."
+        },
         "contentType": { "$ref": "common.schema.json#/$defs/contentType" },
         "content_version": { "type": "integer", "minimum": 1 },
         "last_reviewed": { "$ref": "common.schema.json#/$defs/isoDate" },

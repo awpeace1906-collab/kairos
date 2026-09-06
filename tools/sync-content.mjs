@@ -8,7 +8,7 @@ import { ROOT, CONTENT_DIR } from "./lib/content.mjs";
 const dest = join(ROOT, "..", "web", "content");
 await rm(dest, { recursive: true, force: true });
 await mkdir(dest, { recursive: true });
-for (const name of ["schema", "config", "modules", "manifest.json", "search-index.json"]) {
+for (const name of ["schema", "config", "modules", "manifest.json", "search-index.json", "sources-index.json"]) {
   await cp(join(CONTENT_DIR, name), join(dest, name), { recursive: true }).catch((e) => {
     if (e.code !== "ENOENT") throw e;
     console.warn(`! skipped ${name} (not found — run 'npm run build' first)`);

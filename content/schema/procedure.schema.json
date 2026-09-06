@@ -10,7 +10,7 @@
   "unevaluatedProperties": false,
   "required": ["outputType", "purpose"],
   "properties": {
-    "id": true, "section": true, "category": true, "title": true, "aliases": true, "tags": true, "keywords": true,
+    "id": true, "section": true, "category": true, "title": true, "aliases": true, "tags": true, "keywords": true, "settingEmphasis": true,
     "contentType": { "const": "procedure" },
     "content_version": true, "last_reviewed": true, "next_review_due": true,
     "review_tier": true, "sources": true, "changelog": true, "flags": true, "route": true,

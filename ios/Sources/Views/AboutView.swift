@@ -34,6 +34,11 @@ struct AboutView: View {
 
                 Text("At a glance it reads simply as a spark breaking through a ring — a moment of ignition. If you know the Greek, there is a second layer underneath.")
 
+                Text("Medical & legal disclaimer").font(.title3.bold()).padding(.top, 6)
+
+                Text("Kairos is a clinical reference and calculation aid for licensed healthcare professionals. It is provided for informational and educational purposes only and does not constitute medical advice. It does not replace clinical judgment, your institution's protocols, a medication's package insert / prescribing information, or consultation with a qualified clinician or pharmacist. Independently verify every dose, threshold, and recommendation — especially in high-acuity, pediatric, renal/hepatic-impairment, or pregnancy contexts — before acting on it. Content is checked against the sources listed on each page as of its last-verified date, but medicine changes; a citation does not guarantee the information is current. The authors and maintainers of Kairos assume no liability for clinical outcomes resulting from its use.")
+                    .font(.footnote).foregroundStyle(.secondary)
+
                 Text("Kairos v0.1.0").font(.footnote).foregroundStyle(.secondary).padding(.top, 8)
             }
             .padding()

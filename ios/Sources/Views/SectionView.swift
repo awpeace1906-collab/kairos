@@ -29,6 +29,7 @@ struct SectionView: View {
                 }
                 .navigationTitle(section.title)
                 .searchable(text: $query, prompt: "Search \(section.title)…")
+                .tint(Theme.sectionColor(sectionID))
             } else {
                 Text("Unknown section").foregroundStyle(.secondary)
             }

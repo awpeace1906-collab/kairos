@@ -1,0 +1,9 @@
+{
+  "note": "Where the user is working right now — a LENS, not a fork. Selecting a setting reorders/emphasizes content at render time; it never duplicates a module per setting. Ordered along the resuscitation continuum. A per-module optional `settingEmphasis` array (setting ids, most-relevant first) drives the reordering; absent = neutral.",
+  "settings": [
+    { "id": "prehospital", "label": "Prehospital / Flight", "order": 1 },
+    { "id": "ed", "label": "Emergency Dept", "order": 2 },
+    { "id": "or", "label": "OR / Anesthesia", "order": 3 },
+    { "id": "icu", "label": "ICU / Critical Care", "order": 4 }
+  ]
+}

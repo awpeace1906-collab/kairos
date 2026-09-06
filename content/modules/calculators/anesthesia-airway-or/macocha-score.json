@@ -1,0 +1,40 @@
+{
+  "id": "macocha-score",
+  "section": "Calculators",
+  "category": "Anesthesia / Airway / OR",
+  "title": "MACOCHA Score — Difficult Intubation in the ICU",
+  "aliases": ["MACOCHA", "difficult airway ICU", "difficult intubation prediction", "critically ill airway assessment"],
+  "tags": ["difficult airway", "intubation", "RSI", "ICU", "airway assessment", "MACOCHA", "first-pass success"],
+  "keywords": ["Mallampati III IV 5 points", "OSA 2 points", "reduced cervical spine mobility", "mouth opening under 3 cm", "coma GCS under 8", "hypoxaemia SpO2 under 80", "non-anaesthesiologist operator", "score 3 or more predicts difficult intubation", "De Jong 2013"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-03",
+  "next_review_due": "2026-12-03",
+  "review_tier": 1,
+  "sources": [
+    "De Jong A, Molinari N, Terzi N, et al. Early identification of patients at risk for difficult intubation in the intensive care unit: development and validation of the MACOCHA score. Am J Respir Crit Care Med 2013;187:832-839",
+    "De Jong A, et al. Difficult intubation in the ICU — external validation and refinement. Intensive Care Med 2018"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-03", "change": "Initial entry — the ICU-specific difficult-intubation predictor (7 factors, 0-12), converted from the CV Difficult Airway guide." }
+  ],
+  "engine": "additive",
+  "settings": ["ED", "ICU", "OR"],
+  "purpose": "Predicts difficult tracheal intubation in critically ill patients before induction. Built and validated in the ICU population (not the OR), where difficult intubation carries a far higher rate of severe hypoxaemia and cardiac arrest. Use it to decide, before you push the drugs, whether to bring the most experienced operator, a double set-up, or an awake technique.",
+  "items": [
+    { "key": "mallampati", "label": "Mallampati class III or IV", "options": [{ "label": "No (I-II)", "points": 0 }, { "label": "Yes (III-IV)", "points": 5 }] },
+    { "key": "osa", "label": "Obstructive sleep apnoea syndrome", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "cspine", "label": "Reduced mobility of the cervical spine", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "mouth", "label": "Limited mouth opening (< 3 cm)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "coma", "label": "Coma (GCS < 8)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "hypoxaemia", "label": "Severe hypoxaemia (SpO₂ < 80%)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "operator", "label": "Operator is not an anaesthesiologist", "options": [{ "label": "No — anaesthesiologist / airway specialist", "points": 0 }, { "label": "Yes — non-anaesthesiologist", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 2, "label": "Lower predicted risk of difficult intubation", "detail": "Below the validated threshold. Still run a pre-intubation team brief, optimise positioning and pre-oxygenation, and keep a bougie and a supraglottic rescue at the bedside — 29% of ICU difficult airways in the ID-ACCT cohort were not identifiable in advance.", "severity": "low" },
+    { "min": 3, "max": 5, "label": "Difficult intubation predicted (score ≥ 3)", "detail": "At/above the derivation threshold (sensitivity ~73%, specificity ~89%). Most experienced operator on the first attempt, video laryngoscopy first-line, bougie/stylet loaded, second-generation SGA and a cricothyrotomy kit physically present. Verbalise the plan A→B→C→D out loud before induction. If CICO risk is also high, consider an awake technique.", "severity": "high" },
+    { "min": 6, "max": 12, "label": "High predicted risk of difficult intubation", "detail": "Treat as an anticipated difficult airway. Double set-up (surgical airway marked and prepped), airway expert / ENT or surgery on standby or in the room, awake flexible-scope or awake video-laryngoscopy intubation if oxygenation and cooperation allow. Do not proceed with a single-operator asleep attempt.", "severity": "high" }
+  ],
+  "notes": "MACOCHA components spell the mnemonic: Mallampati III/IV, Apnoea (OSA), Cervical spine mobility reduced, Opening of mouth < 3 cm, Coma, Hypoxaemia, Anaesthesiologist absent. The first three factors are patient-related, the next two pathology-related, the last two operator/context-related. A score ≥ 3 was the derivation cut-off; risk rises continuously with the score, so 6+ is meaningfully worse than 3. Related: LEMON airway assessment, The Difficult Airway (DAS 2025), The Physiologically Difficult Airway, Airway Management Flow.",
+  "buildNote": "Additive engine, straightforward. Bands: <3 low, 3-5 and 6-12 both 'high' severity but with escalating action text (there is no separate published 'moderate' band — ≥3 is the single validated threshold)."
+}

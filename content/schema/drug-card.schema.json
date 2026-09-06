@@ -10,7 +10,7 @@
   "unevaluatedProperties": false,
   "required": ["purpose", "doses"],
   "properties": {
-    "id": true, "section": true, "category": true, "title": true, "aliases": true, "tags": true, "keywords": true,
+    "id": true, "section": true, "category": true, "title": true, "aliases": true, "tags": true, "keywords": true, "settingEmphasis": true,
     "contentType": { "const": "drug-card" },
     "content_version": true, "last_reviewed": true, "next_review_due": true,
     "review_tier": true, "sources": true, "changelog": true, "flags": true, "route": true,
@@ -21,6 +21,11 @@
       "type": "string",
       "enum": ["actual", "ideal", "adjusted", "lean"],
       "description": "Which body weight the per-kg rule uses. Doses are ALWAYS computed live from the exact value — never read from a zone."
+    },
+    "obeseWeightBasis": {
+      "type": "string",
+      "enum": ["ideal", "actual"],
+      "description": "Per-drug obesity rule (Drug_Dosing_Peds_Weight_Based_Spec.md / ERC 2025). Absent = no obesity handling for this drug. 'ideal' = when a peds patient's actual weight is > obesityFlagRatio × age-expected weight, default the dose to ideal body weight (age-expected) with an override to actual. 'actual' = an informational note that this drug is dosed by total body weight even in obesity (e.g. succinylcholine)."
     },
     "doses": {
       "type": "array",

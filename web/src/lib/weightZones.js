@@ -30,6 +30,36 @@ export function estimateWeight(cfg, { ageMonths, ageYears }) {
 }
 
 /**
+ * Ideal body weight proxy for a child — the APLS age-expected weight (no height
+ * is collected, so age-for-50th-percentile weight is the best available IBW).
+ * Same formula as estimateWeight but semantically "IBW", not "estimated actual".
+ */
+export function idealBodyWeight(cfg, ageInput) {
+  const est = estimateWeight(cfg, ageInput);
+  return est ? est.weightKg : null;
+}
+
+/**
+ * Obesity check for the drug-card weight-entry flow (Drug_Dosing_Peds_Weight_Based_Spec).
+ * Needs BOTH an actual weight and an age. Returns null when either is missing or
+ * the ratio is not configured.
+ */
+export function obesityCheck(cfg, actualKg, ageInput) {
+  const ratio = cfg.obesityFlagRatio;
+  if (!ratio || !Number.isFinite(actualKg)) return null;
+  const ibwKg = idealBodyWeight(cfg, ageInput);
+  if (ibwKg == null || ibwKg <= 0) return null;
+  const overRatio = actualKg / ibwKg;
+  return {
+    ibwKg,
+    actualKg,
+    overRatio,
+    pctOver: Math.round((overRatio - 1) * 100),
+    flagged: overRatio > ratio,
+  };
+}
+
+/**
  * Live per-kg dose from a drug-card `rule`. `weightKg` is the exact entered (or
  * estimated) weight — the zone is never consulted for this number.
  */

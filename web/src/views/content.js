@@ -1,6 +1,6 @@
-import { el, mount, clearableField, lastVerified } from "../components.js";
+import { el, mount, clearableField, lastVerified, sourcesBlock, tintStyle } from "../components.js";
 import { renderCalculator } from "./calculator.js";
-import { zoneForWeight, doseFromRule, estimateWeight } from "../lib/weightZones.js";
+import { zoneForWeight, doseFromRule, estimateWeight, obesityCheck } from "../lib/weightZones.js";
 import { session } from "../lib/session.js";
 
 export function renderContent(mod, route, store) {
@@ -25,12 +25,13 @@ export function renderContent(mod, route, store) {
 function shell(mod, ...body) {
   return el(
     "section",
-    { class: `content ${mod.contentType}` },
+    { class: `content ${mod.contentType}`, style: tintStyle(mod) },
     el("h1", {}, mod.title),
     mod.summary ? el("p", { class: "purpose" }, mod.summary) : null,
     mod.purpose ? el("p", { class: "purpose" }, mod.purpose) : null,
     ...body,
     mod.buildNote ? el("details", { class: "build-note" }, el("summary", {}, "Build note"), el("p", {}, mod.buildNote)) : null,
+    sourcesBlock(mod),
     lastVerified(mod)
   );
 }
@@ -65,7 +66,12 @@ export function renderBlocks(body) {
 }
 
 function renderReference(mod) {
-  return shell(mod, el("div", { class: "prose" }, ...renderBlocks(mod.body)));
+  return shell(
+    mod,
+    mod.whyThisMatters ? el("div", { class: "why-matters" }, el("h4", {}, "Why this matters"), el("p", {}, mod.whyThisMatters)) : null,
+    el("div", { class: "prose" }, ...renderBlocks(mod.body)),
+    mod.clinicalTakeaway ? el("div", { class: "takeaway" }, el("h4", {}, "Clinical takeaway"), el("p", {}, mod.clinicalTakeaway)) : null
+  );
 }
 
 /** AnesCalc-origin anesthesia drug card — prose reference, no live math. */
@@ -77,7 +83,7 @@ function renderAnesthesiaDrugCard(mod) {
 
   return el(
     "section",
-    { class: "content anesthesia-drug-card" },
+    { class: "content anesthesia-drug-card", style: tintStyle(mod) },
     el("h1", {}, mod.title),
     el("p", { class: "adc-sub" },
       mod.tallManLetters ? el("strong", { class: "tall-man" }, mod.tallManLetters) : mod.title,
@@ -91,6 +97,7 @@ function renderAnesthesiaDrugCard(mod) {
     el("div", {}, el("h3", {}, "Dosing"), el("pre", { class: "adc-dosing" }, mod.dosing)),
     list("Cautions", mod.cautions),
     list("Pearls", mod.pearls),
+    sourcesBlock(mod),
     lastVerified(mod)
   );
 }
@@ -178,14 +185,15 @@ function noteTemplateForm(mod, route) {
 
 function renderDrugCard(mod, route, store) {
   const saved = session.get(route);
-  const state = { weight: saved.weight ?? "", ageYears: saved.ageYears ?? "" };
+  const state = { weight: saved.weight ?? "", ageYears: saved.ageYears ?? "", obeseOverride: saved.obeseOverride ?? false };
   const out = el("div", { class: "dose-output" });
   const zoneBar = el("div", { class: "zone-bar" });
   const cfg = store.weightZones;
 
   function recompute() {
     session.patch(route, state);
-    let weightKg = parseFloat(state.weight);
+    const actualKg = parseFloat(state.weight);
+    let weightKg = actualKg;
     let estimated = false;
     if (!Number.isFinite(weightKg) && state.ageYears !== "") {
       const est = estimateWeight(cfg, { ageYears: parseFloat(state.ageYears) });
@@ -199,15 +207,39 @@ function renderDrugCard(mod, route, store) {
       out.replaceChildren(el("p", { class: "muted" }, "Enter an exact weight (preferred) or an age to estimate."));
       return;
     }
+
+    // Obese-child IBW check (Drug_Dosing_Peds_Weight_Based_Spec.md). Needs an
+    // actual weight AND an age; only acts when this drug opts in via obeseWeightBasis.
+    const ob = (mod.obeseWeightBasis && state.ageYears !== "")
+      ? obesityCheck(cfg, actualKg, { ageYears: parseFloat(state.ageYears) })
+      : null;
+    let dosingKg = weightKg;
+    let obeseNote = null;
+    if (ob?.flagged && mod.obeseWeightBasis === "ideal") {
+      dosingKg = state.obeseOverride ? actualKg : ob.ibwKg;
+      obeseNote = el("div", { class: "callout warning" },
+        el("strong", {}, "Obesity flag — dosing from ideal body weight. "),
+        `Entered weight ${actualKg} kg is ~${ob.pctOver}% above the age-expected weight (${ob.ibwKg} kg). This drug is hydrophilic — actual-weight dosing risks overdose. Doses below use ${state.obeseOverride ? `actual weight (${actualKg} kg)` : `${ob.ibwKg} kg`}. `,
+        el("button", { type: "button", class: "clear-all",
+          onClick: () => { state.obeseOverride = !state.obeseOverride; recompute(); } },
+          state.obeseOverride ? "Use ideal body weight" : "Use actual weight instead"));
+    } else if (ob?.flagged && mod.obeseWeightBasis === "actual") {
+      obeseNote = el("div", { class: "callout info" },
+        `Entered weight is ~${ob.pctOver}% above the age-expected weight, but this drug is dosed by total (actual) body weight even in obesity — no adjustment.`);
+    }
+
     const zone = zoneForWeight(cfg, weightKg);
     zoneBar.replaceChildren(
-      el("span", { class: "zone-chip", dataset: { color: zone.color } }, `Zone ${zone.zone} · ${zone.color}`),
+      el("span", { class: "zone-chip" },
+        zone.colorHex ? el("i", { class: "zone-dot", style: `background:${zone.colorHex}` }) : null,
+        `Zone ${zone.zone} · ${zone.color}`),
       el("span", { class: "zone-weight" }, `${weightKg} kg${estimated ? " (estimated)" : ""}`),
       el("span", { class: "zone-equip" }, `ETT ${zone.equipment.ettUncuffed} · LMA ${zone.equipment.lma} · ${zone.equipment.blade}`)
     );
-    out.replaceChildren(
+    out.replaceChildren(...[
+      obeseNote,
       ...mod.doses.map((d) => {
-        const dose = doseFromRule(d.rule, weightKg);
+        const dose = doseFromRule(d.rule, dosingKg);
         return el(
           "div",
           { class: "dose-row" },
@@ -226,7 +258,7 @@ function renderDrugCard(mod, route, store) {
         );
       }),
       el("p", { class: "disclaimer" }, cfg.disclaimer)
-    );
+    ].filter(Boolean));
   }
 
   const view = shell(
