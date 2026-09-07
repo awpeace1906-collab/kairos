@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Anticoagulants & Hemostatics",
   "title": "Andexanet Alfa (Ondexxya)",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Ondexxya"
   ],

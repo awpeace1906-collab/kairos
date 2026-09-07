@@ -5,10 +5,24 @@ import SwiftUI
 // refresh mechanism, so it lives in the app shell.
 
 struct AboutView: View {
+    @EnvironmentObject private var content: ContentStore
+    @AppStorage("kairos.careSetting") private var careSetting = ""
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
                 Text("About Kairos").font(.largeTitle.bold())
+
+                if !content.careSettings.isEmpty {
+                    Text("Care setting").font(.title3.bold()).padding(.top, 4)
+                    Text("Tune the app to where you're working now. It reorders and emphasizes — it never hides content or changes a dose.")
+                        .font(.footnote).foregroundStyle(.secondary)
+                    Picker("Care setting", selection: $careSetting) {
+                        Text("Any").tag("")
+                        ForEach(content.careSettings) { s in Text(s.label).tag(s.id) }
+                    }
+                    .pickerStyle(.menu)
+                }
 
                 Text("Pronounced *KY-ros*, rhyming with “sky” — not “Kay-ros.”")
 

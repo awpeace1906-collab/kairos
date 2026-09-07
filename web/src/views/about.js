@@ -1,14 +1,38 @@
 import { el } from "../components.js";
+import { prefs, CARE_SETTING_KEY, activeCareSetting } from "../lib/prefs.js";
 
 // Settings -> App Information -> "About Kairos". Literal static copy from
 // README_Build_Package.md (Tier 5). Not content-as-data — it never needs a
 // refresh mechanism, so it lives in the app shell, not in content/.
 
-export function renderAbout() {
+function careSettingPicker(store) {
+  const opts = (store?.careSettings || []).slice().sort((a, b) => a.order - b.order);
+  if (!opts.length) return null;
+  let active = activeCareSetting();
+  const row = el("div", { class: "chips setting-chips" });
+  function chip(id, label) {
+    const b = el("button", { type: "button", class: `chip${active === id ? " selected" : ""}`,
+      onClick: () => {
+        active = id;
+        prefs.set(CARE_SETTING_KEY, id);
+        row.querySelectorAll(".chip").forEach((c) => c.classList.remove("selected"));
+        b.classList.add("selected");
+      } }, label);
+    return b;
+  }
+  row.append(chip(null, "Any"), ...opts.map((o) => chip(o.id, o.label)));
+  return el("div", {},
+    el("h2", {}, "Care setting"),
+    el("p", {}, "Tune the app to where you're working now. It reorders and emphasizes — it never hides content or changes a dose."),
+    row);
+}
+
+export function renderAbout(store) {
   return el(
     "section",
     { class: "content prose about" },
     el("h1", {}, "About Kairos"),
+    careSettingPicker(store),
     el("p", {}, el("strong", {}, "Pronounced "), el("em", {}, "KY-ros"), ", rhyming with “sky” — not “Kay-ros.”"),
     el(
       "p",

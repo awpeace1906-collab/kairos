@@ -6,7 +6,10 @@ import SwiftUI
 struct SectionView: View {
     let sectionID: String
     @EnvironmentObject private var content: ContentStore
+    @AppStorage("kairos.careSetting") private var careSetting = ""
     @State private var query = ""
+
+    private var lens: String? { careSetting.isEmpty ? nil : careSetting }
 
     private var section: AppSection? { content.sections.first { $0.id == sectionID } }
 
@@ -39,9 +42,12 @@ struct SectionView: View {
     private func categories(_ section: AppSection) -> [SearchIndex.TOCCategory] {
         let pool: [SearchEntry] = query.isEmpty
             ? content.searchIndex.entries.filter { $0.section == section.title }
-            : content.searchIndex.search(query, section: section.title)
+            : content.searchIndex.search(query, section: section.title, setting: lens)
         return section.categories.compactMap { cat in
-            let items = pool.filter { $0.category == cat.title }.sorted { $0.title < $1.title }
+            let items = pool.filter { $0.category == cat.title }.sorted { a, b in
+                let ea = careEmphasisRank(a, lens), eb = careEmphasisRank(b, lens)
+                return ea != eb ? ea < eb : a.title < b.title
+            }
             return items.isEmpty ? nil : SearchIndex.TOCCategory(id: cat.id, title: cat.title, items: items)
         }
     }

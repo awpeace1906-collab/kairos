@@ -16,7 +16,7 @@ const router = createRouter(async (route) => {
     if (route === "/" || route === "") {
       app.replaceChildren(renderHome(store, router));
     } else if (route === "/about") {
-      app.replaceChildren(el("div", { class: "detail" }, el("a", { href: "#/", class: "back" }, "‹ Home"), renderAbout()));
+      app.replaceChildren(el("div", { class: "detail" }, el("a", { href: "#/", class: "back" }, "‹ Home"), renderAbout(store)));
     } else if (route === "/sources") {
       app.replaceChildren(el("div", { class: "detail" }, el("a", { href: "#/", class: "back" }, "‹ Home"), renderSources(store)));
     } else if (route.startsWith("/section/")) {

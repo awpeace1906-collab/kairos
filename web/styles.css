@@ -75,6 +75,8 @@ h3 { margin: 18px 0 6px; }
   border-radius: 999px; padding: 5px 12px; font-size: .8rem; cursor: pointer;
 }
 .chip.selected { background: var(--accent); color: #fff; border-color: var(--accent); }
+.setting-chips { align-items: center; margin: -4px 0 12px; }
+.setting-chips .setting-label { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-right: 2px; }
 
 .results { display: grid; gap: 14px; }
 .result-section { font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 4px; }

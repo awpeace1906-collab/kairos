@@ -1,8 +1,9 @@
 // One flat index, substring match, ranked title > tags > keywords
 // (Search_TOC_Design_Spec.md). Per-section search = this, pre-filtered by section.
+import { emphasisRank } from "./settingLens.js";
 
 export function makeSearch(entries) {
-  return function search(query, { section = null } = {}) {
+  return function search(query, { section = null, setting = null } = {}) {
     const q = query.trim().toLowerCase();
     const pool = section ? entries.filter((e) => e.section === section) : entries;
     if (!q) return [];
@@ -11,7 +12,11 @@ export function makeSearch(entries) {
       const rank = matchRank(e, q);
       if (rank > 0) scored.push({ entry: e, rank });
     }
-    scored.sort((a, b) => b.rank - a.rank || a.entry.title.localeCompare(b.entry.title));
+    // match quality first; then the care-setting lens; then title.
+    scored.sort((a, b) =>
+      b.rank - a.rank ||
+      emphasisRank(a.entry, setting) - emphasisRank(b.entry, setting) ||
+      a.entry.title.localeCompare(b.entry.title));
     return scored.map((s) => s.entry);
   };
 }
@@ -27,8 +32,9 @@ function matchRank(e, q) {
   return 0;
 }
 
-/** Section -> Category -> Item tree for the empty-state TOC. */
-export function buildTOC(entries, sectionsConfig) {
+/** Section -> Category -> Item tree for the empty-state TOC. When a care-setting
+    is active, emphasised items sort to the top of their category. */
+export function buildTOC(entries, sectionsConfig, setting = null) {
   return sectionsConfig.sections.map((section) => {
     const inSection = entries.filter((e) => e.section === section.title);
     return {
@@ -41,7 +47,9 @@ export function buildTOC(entries, sectionsConfig) {
           title: cat.title,
           items: inSection
             .filter((e) => e.category === cat.title)
-            .sort((a, b) => a.title.localeCompare(b.title)),
+            .sort((a, b) =>
+              emphasisRank(a, setting) - emphasisRank(b, setting) ||
+              a.title.localeCompare(b.title)),
         }))
         .filter((c) => c.items.length > 0),
     };

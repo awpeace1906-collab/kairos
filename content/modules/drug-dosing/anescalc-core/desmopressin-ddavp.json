@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Anticoagulants & Hemostatics",
   "title": "Desmopressin (DDAVP)",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "DDAVP / Stimate"
   ],

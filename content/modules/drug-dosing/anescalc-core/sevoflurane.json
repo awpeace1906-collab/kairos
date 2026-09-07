@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Volatile Anesthetics",
   "title": "Sevoflurane",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Ultane / Sojourn"
   ],

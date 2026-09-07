@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Local Anesthetics",
   "title": "Bupivacaine",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Marcaine / Sensorcaine"
   ],

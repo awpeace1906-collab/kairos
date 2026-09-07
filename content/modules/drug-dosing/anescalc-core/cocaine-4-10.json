@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Local Anesthetics",
   "title": "Cocaine 4–10%",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "(Topical solution)"
   ],

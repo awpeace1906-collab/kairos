@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Opioids",
   "title": "Fentanyl",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Sublimaze"
   ],

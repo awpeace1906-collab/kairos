@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Crisis / Rescue Drugs",
   "title": "Methylene Blue",
+  "settingEmphasis": [
+    "or"
+  ],
   "tags": [
     "anesthesia",
     "perioperative",

@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Local Anesthetics",
   "title": "Liposomal Bupivacaine (Exparel)",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Exparel"
   ],

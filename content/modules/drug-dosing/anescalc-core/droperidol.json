@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Antiemetics & Aspiration Prophylaxis",
   "title": "Droperidol",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Inapsine"
   ],

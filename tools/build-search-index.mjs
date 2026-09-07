@@ -17,6 +17,7 @@ const entries = mods.map((mod) => {
     keywords: dedupe([...(j.keywords || []), ...(j.aliases || [])]),
     contentType: j.contentType,
     route: routeFor(mod),
+    ...(Array.isArray(j.settingEmphasis) && j.settingEmphasis.length ? { settingEmphasis: j.settingEmphasis } : {}),
   };
 });
 

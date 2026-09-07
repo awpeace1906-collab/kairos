@@ -1,5 +1,7 @@
 import { el, tintStyleForSection } from "../components.js";
 import { makeSearch } from "../lib/search.js";
+import { emphasisRank } from "../lib/settingLens.js";
+import { activeCareSetting } from "../lib/prefs.js";
 
 /** A single section: its own search bar (the flat index pre-filtered) + category list. */
 export function renderSection(sectionId, store) {
@@ -9,6 +11,7 @@ export function renderSection(sectionId, store) {
   const search = makeSearch(store.searchEntries);
   const entries = store.searchEntries.filter((e) => e.section === section.title);
   const list = el("div", { class: "section-list" });
+  const setting = activeCareSetting();
 
   const input = el("input", {
     type: "search",
@@ -18,7 +21,7 @@ export function renderSection(sectionId, store) {
   });
 
   function render(q) {
-    const pool = q ? search(q, { section: section.title }) : entries;
+    const pool = q ? search(q, { section: section.title, setting }) : entries;
     const byCat = {};
     for (const e of pool) (byCat[e.category] ||= []).push(e);
     list.replaceChildren(
@@ -29,7 +32,8 @@ export function renderSection(sectionId, store) {
             "details",
             { class: "toc-cat", open: !!q },
             el("summary", {}, `${c.title} (${byCat[c.title].length})`),
-            el("ul", {}, byCat[c.title].sort((a, b) => a.title.localeCompare(b.title)).map((it) =>
+            el("ul", {}, byCat[c.title].sort((a, b) =>
+              emphasisRank(a, setting) - emphasisRank(b, setting) || a.title.localeCompare(b.title)).map((it) =>
               el("li", {}, el("a", { href: `#${it.route}` }, it.title))
             ))
           )

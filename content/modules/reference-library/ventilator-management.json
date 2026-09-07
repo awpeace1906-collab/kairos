@@ -3,6 +3,9 @@
   "section": "Reference Library",
   "category": "Resuscitation & Airway",
   "title": "Ventilator Management",
+  "settingEmphasis": [
+    "icu"
+  ],
   "aliases": [
     "vent settings",
     "mechanical ventilation",

@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Volatile Anesthetics",
   "title": "Nitrous Oxide",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "N₂O"
   ],

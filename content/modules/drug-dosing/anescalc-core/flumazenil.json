@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Reversal & Anticholinergic Agents",
   "title": "Flumazenil",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Romazicon"
   ],

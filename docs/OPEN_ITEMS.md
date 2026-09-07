@@ -621,6 +621,28 @@ Last updated: 2026-09-01
   - Per instruction, left parked: GitHub Pages hosting, the (now green-building)
     `ios-ci` — its 3 UI-test failures were diagnosed and fixed earlier today —
     and `REMOTE_BASE` wiring.
+- 2026-09-07 — **Care-setting lens — UI built + seeded (`DIRECTIONS_FORWARD` §1).**
+  - New `web/src/lib/prefs.js` (durable localStorage prefs, distinct from the
+    cleared-on-closeout `session`) + `web/src/lib/settingLens.js`
+    (`emphasisRank` / `applyLens` — stable reorder, never filters).
+  - `build-search-index.mjs` now carries `settingEmphasis` into each entry;
+    `search-index.schema.json` updated.
+  - Wired the lens into `makeSearch` (secondary sort after match quality),
+    `buildTOC`, and `section.js`'s category lists. Selector chips on the home
+    screen (Any / Prehospital / ED / OR / ICU) + a menu picker in About; both
+    persist via `prefs`. iOS mirror: `SettingsConfig` model, `careEmphasisRank`,
+    `SearchIndex.search`/`.toc` take a `setting`, `@AppStorage("kairos.careSetting")`
+    in Home/Section, a `.menu` Picker in AboutView, `ContentStore.careSettings`
+    loaded non-fatally.
+  - **Seeded `settingEmphasis` on 103 modules** — 48 hand-picked
+    (airway/RSI → all settings; crush/trauma → prehospital/ed; vent/ICU-workflow
+    → icu; anesthesia refs → or; ED syndromes → ed) + all 55 anescalc-core
+    drug cards → `["or"]`. Added WITHOUT a `content_version` bump (navigation
+    metadata, not clinical content; the manifest hash still changes so clients
+    resync). The remaining ~180 modules can be tagged incrementally.
+  - Verified live: clicking the ICU chip persists to localStorage and reorders
+    the Reference Library › Critical Care list ICU-first; About picker round-trips.
+  - Pipeline: validate 285/0/0, test 231/0, synced.
 
 ---
 

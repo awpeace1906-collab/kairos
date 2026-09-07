@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Anticoagulants & Hemostatics",
   "title": "Tranexamic Acid (TXA)",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Cyklokapron / Lysteda"
   ],

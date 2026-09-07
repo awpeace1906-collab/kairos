@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Anticoagulants & Hemostatics",
   "title": "Idarucizumab (Praxbind)",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Praxbind"
   ],

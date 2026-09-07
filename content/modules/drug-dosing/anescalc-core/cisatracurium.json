@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Neuromuscular Blockers",
   "title": "Cisatracurium",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Nimbex"
   ],

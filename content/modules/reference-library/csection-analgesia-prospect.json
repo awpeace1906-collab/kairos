@@ -3,6 +3,9 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Post-Caesarean Analgesia (PROSPECT 2026)",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "cesarean section pain management",
     "PROSPECT c-section",

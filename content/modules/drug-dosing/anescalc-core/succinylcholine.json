@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Neuromuscular Blockers",
   "title": "Succinylcholine",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Anectine / Quelicin"
   ],

@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Local Anesthetics",
   "title": "Chloroprocaine (NESACAINE)",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Nesacaine"
   ],

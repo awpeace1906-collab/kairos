@@ -811,7 +811,7 @@
     },
     "drug-dosing/anescalc-core/4-factor-pcc-kcentra": {
       "content_version": 1,
-      "hash": "dea86f39aa3ba8aa",
+      "hash": "989cb0aa5b66015b",
       "path": "modules/drug-dosing/anescalc-core/4-factor-pcc-kcentra.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -820,7 +820,7 @@
     },
     "drug-dosing/anescalc-core/aminocaproic-acid-amicar": {
       "content_version": 1,
-      "hash": "f2d31aa29c93feba",
+      "hash": "8b120b0a42b23fe0",
       "path": "modules/drug-dosing/anescalc-core/aminocaproic-acid-amicar.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -829,7 +829,7 @@
     },
     "drug-dosing/anescalc-core/andexanet-alfa-ondexxya": {
       "content_version": 1,
-      "hash": "69c8b6a2eeaca6b0",
+      "hash": "1b5cf59a16cd48a8",
       "path": "modules/drug-dosing/anescalc-core/andexanet-alfa-ondexxya.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -838,7 +838,7 @@
     },
     "drug-dosing/anescalc-core/atropine": {
       "content_version": 1,
-      "hash": "150d9d64583d2e39",
+      "hash": "19cfacd07175596e",
       "path": "modules/drug-dosing/anescalc-core/atropine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -847,7 +847,7 @@
     },
     "drug-dosing/anescalc-core/bupivacaine": {
       "content_version": 1,
-      "hash": "a0cf889ba2279ef1",
+      "hash": "34cb83c6ec56c3e8",
       "path": "modules/drug-dosing/anescalc-core/bupivacaine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -856,7 +856,7 @@
     },
     "drug-dosing/anescalc-core/bupivacaine-hyperbaric-0-5": {
       "content_version": 1,
-      "hash": "9292392935500e95",
+      "hash": "a1202079723ce67f",
       "path": "modules/drug-dosing/anescalc-core/bupivacaine-hyperbaric-0-5.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -865,7 +865,7 @@
     },
     "drug-dosing/anescalc-core/chloroprocaine-nesacaine": {
       "content_version": 1,
-      "hash": "49454386d10dd25c",
+      "hash": "a0a93f419ed8e2f4",
       "path": "modules/drug-dosing/anescalc-core/chloroprocaine-nesacaine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -874,7 +874,7 @@
     },
     "drug-dosing/anescalc-core/cisatracurium": {
       "content_version": 1,
-      "hash": "2849316e6eead824",
+      "hash": "072ba1e4f364b743",
       "path": "modules/drug-dosing/anescalc-core/cisatracurium.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -883,7 +883,7 @@
     },
     "drug-dosing/anescalc-core/cocaine-4-10": {
       "content_version": 1,
-      "hash": "b0185e0a2ea66b3b",
+      "hash": "c80b9165a964145b",
       "path": "modules/drug-dosing/anescalc-core/cocaine-4-10.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -892,7 +892,7 @@
     },
     "drug-dosing/anescalc-core/dantrolene": {
       "content_version": 1,
-      "hash": "1082629d263860ec",
+      "hash": "6589dfd3b1929882",
       "path": "modules/drug-dosing/anescalc-core/dantrolene.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -901,7 +901,7 @@
     },
     "drug-dosing/anescalc-core/desflurane": {
       "content_version": 1,
-      "hash": "10aa088024f51330",
+      "hash": "bdf0fc71665a6d70",
       "path": "modules/drug-dosing/anescalc-core/desflurane.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -910,7 +910,7 @@
     },
     "drug-dosing/anescalc-core/desmopressin-ddavp": {
       "content_version": 1,
-      "hash": "654a717059b08c97",
+      "hash": "ea0113c203bc1493",
       "path": "modules/drug-dosing/anescalc-core/desmopressin-ddavp.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -919,7 +919,7 @@
     },
     "drug-dosing/anescalc-core/dexmedetomidine": {
       "content_version": 2,
-      "hash": "93c5ffa9766451c9",
+      "hash": "6ec0f987ebdff9a3",
       "path": "modules/drug-dosing/anescalc-core/dexmedetomidine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -928,7 +928,7 @@
     },
     "drug-dosing/anescalc-core/droperidol": {
       "content_version": 1,
-      "hash": "6940dfe52f2fe870",
+      "hash": "d7b18e5fc03c7853",
       "path": "modules/drug-dosing/anescalc-core/droperidol.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -937,7 +937,7 @@
     },
     "drug-dosing/anescalc-core/enoxaparin-lmwh": {
       "content_version": 1,
-      "hash": "162ba136db0bee08",
+      "hash": "e145fb97f08aefde",
       "path": "modules/drug-dosing/anescalc-core/enoxaparin-lmwh.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -946,7 +946,7 @@
     },
     "drug-dosing/anescalc-core/ephedrine": {
       "content_version": 1,
-      "hash": "e46e68dee9ccde6c",
+      "hash": "526563a699436575",
       "path": "modules/drug-dosing/anescalc-core/ephedrine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -955,7 +955,7 @@
     },
     "drug-dosing/anescalc-core/epinephrine": {
       "content_version": 1,
-      "hash": "48ddba0401758f36",
+      "hash": "17604d12a1f2253d",
       "path": "modules/drug-dosing/anescalc-core/epinephrine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -964,7 +964,7 @@
     },
     "drug-dosing/anescalc-core/etomidate": {
       "content_version": 1,
-      "hash": "d289568a876ee84e",
+      "hash": "6b8b3fe34d93af84",
       "path": "modules/drug-dosing/anescalc-core/etomidate.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -973,7 +973,7 @@
     },
     "drug-dosing/anescalc-core/famotidine": {
       "content_version": 1,
-      "hash": "9f7c9f37279b85f1",
+      "hash": "3ea03039de089c25",
       "path": "modules/drug-dosing/anescalc-core/famotidine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -982,7 +982,7 @@
     },
     "drug-dosing/anescalc-core/fentanyl": {
       "content_version": 1,
-      "hash": "778ef574a472b518",
+      "hash": "710e48a808a16b1d",
       "path": "modules/drug-dosing/anescalc-core/fentanyl.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -991,7 +991,7 @@
     },
     "drug-dosing/anescalc-core/flumazenil": {
       "content_version": 1,
-      "hash": "396ae3438f564cf8",
+      "hash": "c41131a3c9dbae0d",
       "path": "modules/drug-dosing/anescalc-core/flumazenil.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1000,7 +1000,7 @@
     },
     "drug-dosing/anescalc-core/glycopyrrolate": {
       "content_version": 1,
-      "hash": "7a03070b7cc5632b",
+      "hash": "31a18de8c2d47d92",
       "path": "modules/drug-dosing/anescalc-core/glycopyrrolate.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1009,7 +1009,7 @@
     },
     "drug-dosing/anescalc-core/heparin-unfractionated": {
       "content_version": 1,
-      "hash": "718d2ca97c4d0e5d",
+      "hash": "a9d16834e866952b",
       "path": "modules/drug-dosing/anescalc-core/heparin-unfractionated.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1018,7 +1018,7 @@
     },
     "drug-dosing/anescalc-core/hydromorphone": {
       "content_version": 1,
-      "hash": "9059ae9cf205b111",
+      "hash": "cf0cf936e126fbbe",
       "path": "modules/drug-dosing/anescalc-core/hydromorphone.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1027,7 +1027,7 @@
     },
     "drug-dosing/anescalc-core/idarucizumab-praxbind": {
       "content_version": 1,
-      "hash": "640df41759524210",
+      "hash": "478c797771188355",
       "path": "modules/drug-dosing/anescalc-core/idarucizumab-praxbind.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1036,7 +1036,7 @@
     },
     "drug-dosing/anescalc-core/isoflurane": {
       "content_version": 1,
-      "hash": "a6d871d6502aef3d",
+      "hash": "cac2c65f02018df1",
       "path": "modules/drug-dosing/anescalc-core/isoflurane.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1045,7 +1045,7 @@
     },
     "drug-dosing/anescalc-core/ketamine": {
       "content_version": 2,
-      "hash": "2a967d1c9c4f593e",
+      "hash": "2efe7721814a46e1",
       "path": "modules/drug-dosing/anescalc-core/ketamine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1054,7 +1054,7 @@
     },
     "drug-dosing/anescalc-core/lidocaine": {
       "content_version": 1,
-      "hash": "6bcd6b875fec71e4",
+      "hash": "cc04518b3d8d873a",
       "path": "modules/drug-dosing/anescalc-core/lidocaine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1063,7 +1063,7 @@
     },
     "drug-dosing/anescalc-core/lidocaine-with-epinephrine": {
       "content_version": 1,
-      "hash": "78febc484d9a7881",
+      "hash": "1cc509fb7c20d4c2",
       "path": "modules/drug-dosing/anescalc-core/lidocaine-with-epinephrine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1072,7 +1072,7 @@
     },
     "drug-dosing/anescalc-core/liposomal-bupivacaine-exparel": {
       "content_version": 1,
-      "hash": "4fa7174be134b0d9",
+      "hash": "0b455545724b5de7",
       "path": "modules/drug-dosing/anescalc-core/liposomal-bupivacaine-exparel.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1081,7 +1081,7 @@
     },
     "drug-dosing/anescalc-core/meperidine": {
       "content_version": 1,
-      "hash": "afb37f904191bc1b",
+      "hash": "c5abc90aa1f0d18b",
       "path": "modules/drug-dosing/anescalc-core/meperidine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1090,7 +1090,7 @@
     },
     "drug-dosing/anescalc-core/mepivacaine": {
       "content_version": 1,
-      "hash": "8d53a6563a13438b",
+      "hash": "e4b622c8dfbf7dcf",
       "path": "modules/drug-dosing/anescalc-core/mepivacaine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1099,7 +1099,7 @@
     },
     "drug-dosing/anescalc-core/methadone": {
       "content_version": 1,
-      "hash": "d7141fc5a65c7af8",
+      "hash": "ec9634e195adb1f7",
       "path": "modules/drug-dosing/anescalc-core/methadone.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1108,7 +1108,7 @@
     },
     "drug-dosing/anescalc-core/methylene-blue": {
       "content_version": 1,
-      "hash": "1b581fb6190226fe",
+      "hash": "74be305bd6021012",
       "path": "modules/drug-dosing/anescalc-core/methylene-blue.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1117,7 +1117,7 @@
     },
     "drug-dosing/anescalc-core/midazolam": {
       "content_version": 1,
-      "hash": "56724d764c5fbdcc",
+      "hash": "f387c376b36c78d9",
       "path": "modules/drug-dosing/anescalc-core/midazolam.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1126,7 +1126,7 @@
     },
     "drug-dosing/anescalc-core/morphine": {
       "content_version": 1,
-      "hash": "b1922eba0d340dc4",
+      "hash": "5e3cb7c71790c706",
       "path": "modules/drug-dosing/anescalc-core/morphine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1135,7 +1135,7 @@
     },
     "drug-dosing/anescalc-core/naloxone": {
       "content_version": 1,
-      "hash": "fc6e1941f35edadd",
+      "hash": "b9678c40502f16c4",
       "path": "modules/drug-dosing/anescalc-core/naloxone.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1144,7 +1144,7 @@
     },
     "drug-dosing/anescalc-core/neostigmine": {
       "content_version": 1,
-      "hash": "5dbf047917b7914f",
+      "hash": "f2fe37dea27a1b61",
       "path": "modules/drug-dosing/anescalc-core/neostigmine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1153,7 +1153,7 @@
     },
     "drug-dosing/anescalc-core/nitrous-oxide": {
       "content_version": 1,
-      "hash": "c9bfe29bc0f8b489",
+      "hash": "1f984ebf8c90b50d",
       "path": "modules/drug-dosing/anescalc-core/nitrous-oxide.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1162,7 +1162,7 @@
     },
     "drug-dosing/anescalc-core/norepinephrine": {
       "content_version": 1,
-      "hash": "9c2d86d921ec6564",
+      "hash": "b35992bc9abe9b8a",
       "path": "modules/drug-dosing/anescalc-core/norepinephrine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1171,7 +1171,7 @@
     },
     "drug-dosing/anescalc-core/ondansetron": {
       "content_version": 1,
-      "hash": "6c925012e8731a56",
+      "hash": "fd451d5d1c65f858",
       "path": "modules/drug-dosing/anescalc-core/ondansetron.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1180,7 +1180,7 @@
     },
     "drug-dosing/anescalc-core/phenylephrine": {
       "content_version": 1,
-      "hash": "c5da86157d667938",
+      "hash": "d0ebfa4c0606335b",
       "path": "modules/drug-dosing/anescalc-core/phenylephrine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1189,7 +1189,7 @@
     },
     "drug-dosing/anescalc-core/propofol": {
       "content_version": 1,
-      "hash": "54bdd17e924f771e",
+      "hash": "eb8ffbef455df3c5",
       "path": "modules/drug-dosing/anescalc-core/propofol.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1198,7 +1198,7 @@
     },
     "drug-dosing/anescalc-core/protamine-sulfate": {
       "content_version": 1,
-      "hash": "e51b5f4c3d7037ba",
+      "hash": "f0ad2825ce72c4fb",
       "path": "modules/drug-dosing/anescalc-core/protamine-sulfate.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1207,7 +1207,7 @@
     },
     "drug-dosing/anescalc-core/remifentanil": {
       "content_version": 1,
-      "hash": "5ee30c6114410265",
+      "hash": "3e2074294b382257",
       "path": "modules/drug-dosing/anescalc-core/remifentanil.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1216,7 +1216,7 @@
     },
     "drug-dosing/anescalc-core/rocuronium": {
       "content_version": 1,
-      "hash": "0c5da876585dc8bd",
+      "hash": "6ef65026bed8a667",
       "path": "modules/drug-dosing/anescalc-core/rocuronium.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1225,7 +1225,7 @@
     },
     "drug-dosing/anescalc-core/ropivacaine": {
       "content_version": 1,
-      "hash": "46f7dd3f7dd3454b",
+      "hash": "8d203413d5590b79",
       "path": "modules/drug-dosing/anescalc-core/ropivacaine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1234,7 +1234,7 @@
     },
     "drug-dosing/anescalc-core/ropivacaine-epidural-nerve-block": {
       "content_version": 1,
-      "hash": "d53916b7d57333e3",
+      "hash": "7d84e9e290902dfe",
       "path": "modules/drug-dosing/anescalc-core/ropivacaine-epidural-nerve-block.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1243,7 +1243,7 @@
     },
     "drug-dosing/anescalc-core/sevoflurane": {
       "content_version": 1,
-      "hash": "c0a377c522124b37",
+      "hash": "d199463c59e899f7",
       "path": "modules/drug-dosing/anescalc-core/sevoflurane.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1252,7 +1252,7 @@
     },
     "drug-dosing/anescalc-core/succinylcholine": {
       "content_version": 1,
-      "hash": "1013d725349035d5",
+      "hash": "ab9d94a840634226",
       "path": "modules/drug-dosing/anescalc-core/succinylcholine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1261,7 +1261,7 @@
     },
     "drug-dosing/anescalc-core/sugammadex": {
       "content_version": 1,
-      "hash": "2ed7befd91e75996",
+      "hash": "321669549b6cd113",
       "path": "modules/drug-dosing/anescalc-core/sugammadex.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1270,7 +1270,7 @@
     },
     "drug-dosing/anescalc-core/tetracaine": {
       "content_version": 1,
-      "hash": "3139c54cfb355832",
+      "hash": "9449c24f2b8fcb0c",
       "path": "modules/drug-dosing/anescalc-core/tetracaine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1279,7 +1279,7 @@
     },
     "drug-dosing/anescalc-core/tranexamic-acid-txa": {
       "content_version": 1,
-      "hash": "027adc269ad6ff2a",
+      "hash": "812c346be90e9a65",
       "path": "modules/drug-dosing/anescalc-core/tranexamic-acid-txa.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1288,7 +1288,7 @@
     },
     "drug-dosing/anescalc-core/vasopressin": {
       "content_version": 1,
-      "hash": "ee8ef160384942bc",
+      "hash": "a4829c786a76d7d7",
       "path": "modules/drug-dosing/anescalc-core/vasopressin.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1297,7 +1297,7 @@
     },
     "drug-dosing/anescalc-core/vecuronium": {
       "content_version": 1,
-      "hash": "2345e53c1640d3a0",
+      "hash": "ac78da776bc49522",
       "path": "modules/drug-dosing/anescalc-core/vecuronium.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1689,7 +1689,7 @@
     },
     "procedures/airway-management-flow": {
       "content_version": 2,
-      "hash": "8f03d7fa82e26bea",
+      "hash": "0c57cdd6798fd9a6",
       "path": "modules/procedures/airway-management-flow.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -1743,7 +1743,7 @@
     },
     "procedures/neuraxial-anticoagulation": {
       "content_version": 1,
-      "hash": "fa41ec9757de5671",
+      "hash": "23d749eb8144ccff",
       "path": "modules/procedures/neuraxial-anticoagulation.json",
       "contentType": "reference",
       "section": "Procedures",
@@ -1796,7 +1796,7 @@
     },
     "reference-library/acls-adult-cardiac-arrest": {
       "content_version": 3,
-      "hash": "29a18723df3771f1",
+      "hash": "071b4b0f82129f07",
       "path": "modules/reference-library/acls-adult-cardiac-arrest.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1805,7 +1805,7 @@
     },
     "reference-library/acute-dyspnea-niv": {
       "content_version": 1,
-      "hash": "7f8d5a2cb0c3c517",
+      "hash": "65ab22c2ed26c966",
       "path": "modules/reference-library/acute-dyspnea-niv.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1814,7 +1814,7 @@
     },
     "reference-library/acute-ischemic-stroke": {
       "content_version": 1,
-      "hash": "63de28ca68e9ab6a",
+      "hash": "1be22b1e01dcd3d7",
       "path": "modules/reference-library/acute-ischemic-stroke.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1832,7 +1832,7 @@
     },
     "reference-library/advanced-ards-ventilation": {
       "content_version": 1,
-      "hash": "6dc5c39b29c7e54b",
+      "hash": "b1c4b459a3657d9b",
       "path": "modules/reference-library/advanced-ards-ventilation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1841,7 +1841,7 @@
     },
     "reference-library/aki-staging-rrt": {
       "content_version": 1,
-      "hash": "75ba3b4b3edf7340",
+      "hash": "a2e79415eb9e101e",
       "path": "modules/reference-library/aki-staging-rrt.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1859,7 +1859,7 @@
     },
     "reference-library/altered-mental-status": {
       "content_version": 1,
-      "hash": "3c16982b18f67f51",
+      "hash": "064a4736978ebcbc",
       "path": "modules/reference-library/altered-mental-status.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1868,7 +1868,7 @@
     },
     "reference-library/anaphylaxis": {
       "content_version": 1,
-      "hash": "e3bab1be6bbe452a",
+      "hash": "9535209eda58e3f5",
       "path": "modules/reference-library/anaphylaxis.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1877,7 +1877,7 @@
     },
     "reference-library/anatomically-difficult-airway": {
       "content_version": 1,
-      "hash": "9ea02915771974a0",
+      "hash": "c134ad2f7ba17c88",
       "path": "modules/reference-library/anatomically-difficult-airway.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1886,7 +1886,7 @@
     },
     "reference-library/anesthesia-pocus": {
       "content_version": 1,
-      "hash": "e24fec420ac6aacb",
+      "hash": "a712cb816ebb73d4",
       "path": "modules/reference-library/anesthesia-pocus.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1895,7 +1895,7 @@
     },
     "reference-library/anticoagulation-reversal": {
       "content_version": 5,
-      "hash": "f026d5f411aa6f3c",
+      "hash": "48a9170cd558dc22",
       "path": "modules/reference-library/anticoagulation-reversal.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1967,7 +1967,7 @@
     },
     "reference-library/code-leadership-run-the-room": {
       "content_version": 1,
-      "hash": "0f5cbe6b5c3cecc3",
+      "hash": "a273fe90d958ddfb",
       "path": "modules/reference-library/code-leadership-run-the-room.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1985,7 +1985,7 @@
     },
     "reference-library/contrast-associated-aki": {
       "content_version": 2,
-      "hash": "3f1279feb1584d7d",
+      "hash": "2f2902ce7b677209",
       "path": "modules/reference-library/contrast-associated-aki.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1994,7 +1994,7 @@
     },
     "reference-library/copd-invasive-ventilation": {
       "content_version": 1,
-      "hash": "824768afdcca729f",
+      "hash": "70ed41525ad35102",
       "path": "modules/reference-library/copd-invasive-ventilation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2003,7 +2003,7 @@
     },
     "reference-library/crush-syndrome": {
       "content_version": 1,
-      "hash": "3cbed17ae3aa87a3",
+      "hash": "ee26adf4def10b7b",
       "path": "modules/reference-library/crush-syndrome.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2012,7 +2012,7 @@
     },
     "reference-library/csection-analgesia-prospect": {
       "content_version": 1,
-      "hash": "221bef6c19a87026",
+      "hash": "8f53d80298214912",
       "path": "modules/reference-library/csection-analgesia-prospect.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2030,7 +2030,7 @@
     },
     "reference-library/drug-concentration-math": {
       "content_version": 1,
-      "hash": "d967bfed8d938e41",
+      "hash": "141f9262ef63a15a",
       "path": "modules/reference-library/drug-concentration-math.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2057,7 +2057,7 @@
     },
     "reference-library/ecmo-support": {
       "content_version": 1,
-      "hash": "ef7a3cbb06fb2067",
+      "hash": "f1d1dcea7ba92a3e",
       "path": "modules/reference-library/ecmo-support.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2066,7 +2066,7 @@
     },
     "reference-library/ectopic-pregnancy": {
       "content_version": 1,
-      "hash": "a976ea9c8c51dd60",
+      "hash": "2d7b5c8fc7554af4",
       "path": "modules/reference-library/ectopic-pregnancy.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2075,7 +2075,7 @@
     },
     "reference-library/efast-exam": {
       "content_version": 1,
-      "hash": "d8a9fc94a642463c",
+      "hash": "1c577b10614ad290",
       "path": "modules/reference-library/efast-exam.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2156,7 +2156,7 @@
     },
     "reference-library/hemorrhagic-shock-mtp": {
       "content_version": 2,
-      "hash": "d16f54a898b0071b",
+      "hash": "7eeaa8b169fcfec5",
       "path": "modules/reference-library/hemorrhagic-shock-mtp.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2165,7 +2165,7 @@
     },
     "reference-library/hs-troponin-chest-pain": {
       "content_version": 1,
-      "hash": "b3472d05c68b1c1c",
+      "hash": "b234b6129ddb6471",
       "path": "modules/reference-library/hs-troponin-chest-pain.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2174,7 +2174,7 @@
     },
     "reference-library/hyperkalemia-management": {
       "content_version": 1,
-      "hash": "6af405551f065d51",
+      "hash": "cfddd7a24d40790d",
       "path": "modules/reference-library/hyperkalemia-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2183,7 +2183,7 @@
     },
     "reference-library/hyperosmolar-therapy": {
       "content_version": 1,
-      "hash": "6ef897df594a723b",
+      "hash": "e65cf269f11eac88",
       "path": "modules/reference-library/hyperosmolar-therapy.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2201,7 +2201,7 @@
     },
     "reference-library/icu-workflow": {
       "content_version": 1,
-      "hash": "ec9ab14156a62db0",
+      "hash": "de6c787057a1e90d",
       "path": "modules/reference-library/icu-workflow.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2246,7 +2246,7 @@
     },
     "reference-library/mac-values": {
       "content_version": 1,
-      "hash": "9ef07fcdddcea156",
+      "hash": "ad9d87b13ae1fdfb",
       "path": "modules/reference-library/mac-values.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2255,7 +2255,7 @@
     },
     "reference-library/malignant-hyperthermia": {
       "content_version": 1,
-      "hash": "4c9e65aaaf7d8446",
+      "hash": "428c3f8e891cf375",
       "path": "modules/reference-library/malignant-hyperthermia.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2273,7 +2273,7 @@
     },
     "reference-library/neuraxial-anesthesia": {
       "content_version": 1,
-      "hash": "e70158cb123ee908",
+      "hash": "1f797b917e1d68c8",
       "path": "modules/reference-library/neuraxial-anesthesia.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2300,7 +2300,7 @@
     },
     "reference-library/ovarian-torsion": {
       "content_version": 1,
-      "hash": "e11d97e171d6fa88",
+      "hash": "158c6dcfd1eaba01",
       "path": "modules/reference-library/ovarian-torsion.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2309,7 +2309,7 @@
     },
     "reference-library/padis-bundle": {
       "content_version": 1,
-      "hash": "d85e339532106f3e",
+      "hash": "ee9f0cc692d74cc9",
       "path": "modules/reference-library/padis-bundle.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2318,7 +2318,7 @@
     },
     "reference-library/peep-fio2-ladder": {
       "content_version": 1,
-      "hash": "2359cee4e712e2a1",
+      "hash": "d3b5539487a53e92",
       "path": "modules/reference-library/peep-fio2-ladder.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2327,7 +2327,7 @@
     },
     "reference-library/perioperative-glycemic-management": {
       "content_version": 1,
-      "hash": "161882cfaab7d472",
+      "hash": "a4e954c10e68165b",
       "path": "modules/reference-library/perioperative-glycemic-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2345,7 +2345,7 @@
     },
     "reference-library/physiologically-difficult-airway": {
       "content_version": 3,
-      "hash": "9964d377dcec0e6a",
+      "hash": "13dd6e130dc5a152",
       "path": "modules/reference-library/physiologically-difficult-airway.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2363,7 +2363,7 @@
     },
     "reference-library/post-intubation-management": {
       "content_version": 1,
-      "hash": "708467bf7e03aa43",
+      "hash": "ddd2bffe4b68e2aa",
       "path": "modules/reference-library/post-intubation-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2381,7 +2381,7 @@
     },
     "reference-library/preanesthesia-checklist": {
       "content_version": 1,
-      "hash": "05f0463a90088b19",
+      "hash": "b04311a8976830a1",
       "path": "modules/reference-library/preanesthesia-checklist.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2426,7 +2426,7 @@
     },
     "reference-library/rsi-seven-ps": {
       "content_version": 1,
-      "hash": "10ed3774498c20bd",
+      "hash": "a5431b9fa119a48d",
       "path": "modules/reference-library/rsi-seven-ps.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2444,7 +2444,7 @@
     },
     "reference-library/septic-shock-resuscitation": {
       "content_version": 1,
-      "hash": "30eb136b884bdde7",
+      "hash": "4f470a5c1b0037ab",
       "path": "modules/reference-library/septic-shock-resuscitation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2462,7 +2462,7 @@
     },
     "reference-library/sodium-disorders": {
       "content_version": 1,
-      "hash": "d2c9f98032649f4d",
+      "hash": "74cd369383ffdee7",
       "path": "modules/reference-library/sodium-disorders.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2471,7 +2471,7 @@
     },
     "reference-library/status-asthmaticus-ventilation": {
       "content_version": 1,
-      "hash": "c3fce7b4fc49be4a",
+      "hash": "a5cd4aa7d8e9918e",
       "path": "modules/reference-library/status-asthmaticus-ventilation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2480,7 +2480,7 @@
     },
     "reference-library/status-epilepticus-adult": {
       "content_version": 1,
-      "hash": "934293792659ae30",
+      "hash": "f3a145f2b7d92ac0",
       "path": "modules/reference-library/status-epilepticus-adult.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2489,7 +2489,7 @@
     },
     "reference-library/surgical-antibiotic-prophylaxis": {
       "content_version": 1,
-      "hash": "d07e1d06431b6600",
+      "hash": "8722ddc92e49fb4d",
       "path": "modules/reference-library/surgical-antibiotic-prophylaxis.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2507,7 +2507,7 @@
     },
     "reference-library/toxidromes-and-overdoses": {
       "content_version": 1,
-      "hash": "ff47e2d8ae1ff074",
+      "hash": "1a9e7c4a318a96a2",
       "path": "modules/reference-library/toxidromes-and-overdoses.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2516,7 +2516,7 @@
     },
     "reference-library/trauma-primary-survey": {
       "content_version": 1,
-      "hash": "214723e201034ae4",
+      "hash": "60cf9fbbc1540819",
       "path": "modules/reference-library/trauma-primary-survey.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2525,7 +2525,7 @@
     },
     "reference-library/trauma-team-activation": {
       "content_version": 1,
-      "hash": "28a4dcfb63d43914",
+      "hash": "29ad88063e500182",
       "path": "modules/reference-library/trauma-team-activation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2534,7 +2534,7 @@
     },
     "reference-library/twelve-lead-stemi-criteria": {
       "content_version": 2,
-      "hash": "f0ccb804ff9ddcf3",
+      "hash": "cb98d1c3eb187e48",
       "path": "modules/reference-library/twelve-lead-stemi-criteria.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2543,7 +2543,7 @@
     },
     "reference-library/ventilator-management": {
       "content_version": 3,
-      "hash": "5b4be8b8dc136736",
+      "hash": "37a0f08f482f34cb",
       "path": "modules/reference-library/ventilator-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2552,7 +2552,7 @@
     },
     "reference-library/ventilator-modes": {
       "content_version": 1,
-      "hash": "b2172b62304e52eb",
+      "hash": "6753b1afa014d6e1",
       "path": "modules/reference-library/ventilator-modes.json",
       "contentType": "reference",
       "section": "Reference Library",

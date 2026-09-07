@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Local Anesthetics",
   "title": "Bupivacaine Hyperbaric 0.5%",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Marcaine Heavy"
   ],

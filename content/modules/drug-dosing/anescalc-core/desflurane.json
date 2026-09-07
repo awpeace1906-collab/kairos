@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Volatile Anesthetics",
   "title": "Desflurane",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Suprane"
   ],

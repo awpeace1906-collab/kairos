@@ -1,5 +1,7 @@
 import { el } from "../components.js";
 import { makeSearch, buildTOC } from "../lib/search.js";
+import { applyLens } from "../lib/settingLens.js";
+import { prefs, CARE_SETTING_KEY, activeCareSetting } from "../lib/prefs.js";
 
 const SECTION_META = {
   procedures: { icon: "🩹" },
@@ -13,6 +15,7 @@ export function renderHome(store, router) {
   const search = makeSearch(store.searchEntries);
   const results = el("div", { class: "results" });
   const toc = el("div", { class: "toc" });
+  let setting = activeCareSetting();
 
   const input = el("input", {
     type: "search",
@@ -39,6 +42,34 @@ export function renderHome(store, router) {
     update();
   }
 
+  // Care-setting lens selector (DIRECTIONS_FORWARD §1). A lens, not a fork —
+  // it reorders, never filters.
+  const settingChips = (store.careSettings || []).length
+    ? el(
+        "div",
+        { class: "chips setting-chips" },
+        el("span", { class: "setting-label" }, "Setting"),
+        settingChip(null, "Any"),
+        ...store.careSettings.slice().sort((a, b) => a.order - b.order).map((s) => settingChip(s.id, s.label))
+      )
+    : null;
+
+  function settingChip(id, label) {
+    const btn = el(
+      "button",
+      { type: "button", class: `chip${setting === id ? " selected" : ""}`, onClick: () => {
+        setting = id;
+        prefs.set(CARE_SETTING_KEY, id);
+        settingChips.querySelectorAll(".chip").forEach((c) => c.classList.remove("selected"));
+        btn.classList.add("selected");
+        renderTOC();
+        update();
+      } },
+      label
+    );
+    return btn;
+  }
+
   function update() {
     const q = input.value.trim();
     if (!q) {
@@ -47,7 +78,7 @@ export function renderHome(store, router) {
       return;
     }
     toc.hidden = true;
-    const hits = search(q, { section: sectionFilter });
+    const hits = search(q, { section: sectionFilter, setting });
     if (!hits.length) {
       results.replaceChildren(el("p", { class: "muted" }, `No matches for “${q}”.`));
       return;
@@ -62,7 +93,7 @@ export function renderHome(store, router) {
           el(
             "ul",
             {},
-            items.map((it) =>
+            applyLens(items, setting).map((it) =>
               el(
                 "li",
                 {},
@@ -81,24 +112,27 @@ export function renderHome(store, router) {
   }
 
   // Empty-state: collapsible Section -> Category -> Item tree
-  for (const section of buildTOC(store.searchEntries, { sections: store.sections })) {
-    const meta = SECTION_META[section.id] || {};
-    toc.append(
-      el(
-        "details",
-        { class: "toc-section" },
-        el("summary", {}, `${meta.icon || "•"} ${section.title} (${section.count})`),
-        section.categories.map((cat) =>
-          el(
-            "details",
-            { class: "toc-cat" },
-            el("summary", {}, `${cat.title} (${cat.items.length})`),
-            el("ul", {}, cat.items.map((it) => el("li", {}, el("a", { href: `#${it.route}` }, it.title))))
+  function renderTOC() {
+    toc.replaceChildren(
+      ...buildTOC(store.searchEntries, { sections: store.sections }, setting).map((section) => {
+        const meta = SECTION_META[section.id] || {};
+        return el(
+          "details",
+          { class: "toc-section" },
+          el("summary", {}, `${meta.icon || "•"} ${section.title} (${section.count})`),
+          section.categories.map((cat) =>
+            el(
+              "details",
+              { class: "toc-cat" },
+              el("summary", {}, `${cat.title} (${cat.items.length})`),
+              el("ul", {}, cat.items.map((it) => el("li", {}, el("a", { href: `#${it.route}` }, it.title))))
+            )
           )
-        )
-      )
+        );
+      })
     );
   }
+  renderTOC();
 
   const tiles = el(
     "div",
@@ -120,6 +154,7 @@ export function renderHome(store, router) {
     el("div", { class: "brand" }, el("h1", {}, "Kairos"), el("p", {}, "the critical moment")),
     el("div", { class: "searchbar" }, input),
     chips,
+    settingChips,
     results,
     toc,
     tiles,

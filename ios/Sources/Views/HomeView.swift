@@ -2,11 +2,14 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject private var content: ContentStore
+    @AppStorage("kairos.careSetting") private var careSetting = ""
     @State private var query = ""
     @State private var sectionFilter: String? = nil
 
+    private var lens: String? { careSetting.isEmpty ? nil : careSetting }
+
     private var results: [SearchEntry] {
-        content.searchIndex.search(query, section: sectionFilter)
+        content.searchIndex.search(query, section: sectionFilter, setting: lens)
     }
 
     var body: some View {
@@ -97,7 +100,7 @@ struct HomeView: View {
     // MARK: empty-state Section -> Category -> Item tree
 
     private var emptyStateTOC: some View {
-        ForEach(content.searchIndex.toc(sections: content.sections)) { toc in
+        ForEach(content.searchIndex.toc(sections: content.sections, setting: lens)) { toc in
             Section {
                 DisclosureGroup {
                     ForEach(toc.categories) { cat in

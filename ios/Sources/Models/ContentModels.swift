@@ -130,11 +130,29 @@ struct SearchEntry: Codable, Identifiable, Hashable {
     let keywords: [String]?
     let contentType: ContentType
     let route: String
+    let settingEmphasis: [String]?
 
     enum CodingKeys: String, CodingKey {
         case itemID = "id"
-        case title, section, category, tags, keywords, contentType, route
+        case title, section, category, tags, keywords, contentType, route, settingEmphasis
     }
+}
+
+/// content/config/settings.json — the four care settings the app can be lensed to.
+struct SettingsConfig: Codable {
+    let settings: [CareSetting]
+    struct CareSetting: Codable, Identifiable, Hashable {
+        let id: String
+        let label: String
+        let order: Int
+    }
+}
+
+/// Emphasis rank for the care-setting lens (DIRECTIONS_FORWARD §1). Lower = more
+/// relevant; Int.max = this setting isn't listed (entry keeps its default place).
+func careEmphasisRank(_ entry: SearchEntry, _ setting: String?) -> Int {
+    guard let setting, let arr = entry.settingEmphasis, let i = arr.firstIndex(of: setting) else { return .max }
+    return i
 }
 
 /// content/sources-index.json — the complete, de-duplicated bibliography for the

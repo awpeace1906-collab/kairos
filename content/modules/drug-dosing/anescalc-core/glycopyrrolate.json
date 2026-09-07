@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Reversal & Anticholinergic Agents",
   "title": "Glycopyrrolate",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Robinul"
   ],

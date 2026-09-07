@@ -22,7 +22,8 @@
           "tags": { "type": "array", "items": { "type": "string" } },
           "keywords": { "type": "array", "items": { "type": "string" } },
           "contentType": { "$ref": "common.schema.json#/$defs/contentType" },
-          "route": { "type": "string" }
+          "route": { "type": "string" },
+          "settingEmphasis": { "type": "array", "items": { "type": "string" } }
         }
       }
     }

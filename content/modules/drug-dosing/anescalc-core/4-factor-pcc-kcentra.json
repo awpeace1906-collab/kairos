@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Anticoagulants & Hemostatics",
   "title": "4-Factor PCC (Kcentra)",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Kcentra / Beriplex / Octaplex"
   ],

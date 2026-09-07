@@ -2208,7 +2208,10 @@
         "Kcentra / Beriplex / Octaplex"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anticoagulants-hemostatics/4-factor-pcc-kcentra"
+      "route": "/drug-dosing/anticoagulants-hemostatics/4-factor-pcc-kcentra",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "aminocaproic-acid-amicar",
@@ -2227,7 +2230,10 @@
         "Amicar"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anticoagulants-hemostatics/aminocaproic-acid-amicar"
+      "route": "/drug-dosing/anticoagulants-hemostatics/aminocaproic-acid-amicar",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "andexanet-alfa-ondexxya",
@@ -2246,7 +2252,10 @@
         "Ondexxya"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anticoagulants-hemostatics/andexanet-alfa-ondexxya"
+      "route": "/drug-dosing/anticoagulants-hemostatics/andexanet-alfa-ondexxya",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "desmopressin-ddavp",
@@ -2264,7 +2273,10 @@
         "DDAVP / Stimate"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anticoagulants-hemostatics/desmopressin-ddavp"
+      "route": "/drug-dosing/anticoagulants-hemostatics/desmopressin-ddavp",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "enoxaparin-lmwh",
@@ -2282,7 +2294,10 @@
         "Lovenox"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anticoagulants-hemostatics/enoxaparin-lmwh"
+      "route": "/drug-dosing/anticoagulants-hemostatics/enoxaparin-lmwh",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "heparin-unfractionated",
@@ -2300,7 +2315,10 @@
         "Heparin Sodium"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anticoagulants-hemostatics/heparin-unfractionated"
+      "route": "/drug-dosing/anticoagulants-hemostatics/heparin-unfractionated",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "idarucizumab-praxbind",
@@ -2318,7 +2336,10 @@
         "Praxbind"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anticoagulants-hemostatics/idarucizumab-praxbind"
+      "route": "/drug-dosing/anticoagulants-hemostatics/idarucizumab-praxbind",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "protamine-sulfate",
@@ -2336,7 +2357,10 @@
         "Protamine Sulfate"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anticoagulants-hemostatics/protamine-sulfate"
+      "route": "/drug-dosing/anticoagulants-hemostatics/protamine-sulfate",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "tranexamic-acid-txa",
@@ -2355,7 +2379,10 @@
         "Cyklokapron / Lysteda"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/anticoagulants-hemostatics/tranexamic-acid-txa"
+      "route": "/drug-dosing/anticoagulants-hemostatics/tranexamic-acid-txa",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "droperidol",
@@ -2372,7 +2399,10 @@
         "Inapsine"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/antiemetics-aspiration-prophylaxis/droperidol"
+      "route": "/drug-dosing/antiemetics-aspiration-prophylaxis/droperidol",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "famotidine",
@@ -2389,7 +2419,10 @@
         "Pepcid"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/antiemetics-aspiration-prophylaxis/famotidine"
+      "route": "/drug-dosing/antiemetics-aspiration-prophylaxis/famotidine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "ondansetron",
@@ -2406,7 +2439,10 @@
         "Zofran"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/antiemetics-aspiration-prophylaxis/ondansetron"
+      "route": "/drug-dosing/antiemetics-aspiration-prophylaxis/ondansetron",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "dantrolene",
@@ -2423,7 +2459,10 @@
         "Ryanodex / Dantrium"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/crisis-rescue-drugs/dantrolene"
+      "route": "/drug-dosing/crisis-rescue-drugs/dantrolene",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "methylene-blue",
@@ -2439,7 +2478,10 @@
       ],
       "keywords": [],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/crisis-rescue-drugs/methylene-blue"
+      "route": "/drug-dosing/crisis-rescue-drugs/methylene-blue",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "apap-nac-dosing",
@@ -2665,7 +2707,10 @@
         "Precedex"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/induction-sedation-agents/dexmedetomidine"
+      "route": "/drug-dosing/induction-sedation-agents/dexmedetomidine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "etomidate",
@@ -2682,7 +2727,10 @@
         "Amidate"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/induction-sedation-agents/etomidate"
+      "route": "/drug-dosing/induction-sedation-agents/etomidate",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "ketamine",
@@ -2699,7 +2747,10 @@
         "Ketalar"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/induction-sedation-agents/ketamine"
+      "route": "/drug-dosing/induction-sedation-agents/ketamine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "midazolam",
@@ -2716,7 +2767,10 @@
         "Versed"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/induction-sedation-agents/midazolam"
+      "route": "/drug-dosing/induction-sedation-agents/midazolam",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "propofol",
@@ -2733,7 +2787,10 @@
         "Diprivan"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/induction-sedation-agents/propofol"
+      "route": "/drug-dosing/induction-sedation-agents/propofol",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "bupivacaine",
@@ -2750,7 +2807,10 @@
         "Marcaine / Sensorcaine"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/local-anesthetics/bupivacaine"
+      "route": "/drug-dosing/local-anesthetics/bupivacaine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "bupivacaine-hyperbaric-0-5",
@@ -2768,7 +2828,10 @@
         "Marcaine Heavy"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/local-anesthetics/bupivacaine-hyperbaric-0-5"
+      "route": "/drug-dosing/local-anesthetics/bupivacaine-hyperbaric-0-5",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "chloroprocaine-nesacaine",
@@ -2786,7 +2849,10 @@
         "Nesacaine"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/local-anesthetics/chloroprocaine-nesacaine"
+      "route": "/drug-dosing/local-anesthetics/chloroprocaine-nesacaine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "cocaine-4-10",
@@ -2804,7 +2870,10 @@
         "(Topical solution)"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/local-anesthetics/cocaine-4-10"
+      "route": "/drug-dosing/local-anesthetics/cocaine-4-10",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "lidocaine",
@@ -2821,7 +2890,10 @@
         "Xylocaine"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/local-anesthetics/lidocaine"
+      "route": "/drug-dosing/local-anesthetics/lidocaine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "lidocaine-with-epinephrine",
@@ -2840,7 +2912,10 @@
         "Xylocaine with Epi"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/local-anesthetics/lidocaine-with-epinephrine"
+      "route": "/drug-dosing/local-anesthetics/lidocaine-with-epinephrine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "liposomal-bupivacaine-exparel",
@@ -2859,7 +2934,10 @@
         "Exparel"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/local-anesthetics/liposomal-bupivacaine-exparel"
+      "route": "/drug-dosing/local-anesthetics/liposomal-bupivacaine-exparel",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "mepivacaine",
@@ -2876,7 +2954,10 @@
         "Carbocaine / Polocaine"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/local-anesthetics/mepivacaine"
+      "route": "/drug-dosing/local-anesthetics/mepivacaine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "ropivacaine",
@@ -2893,7 +2974,10 @@
         "Naropin"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/local-anesthetics/ropivacaine"
+      "route": "/drug-dosing/local-anesthetics/ropivacaine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "ropivacaine-epidural-nerve-block",
@@ -2913,7 +2997,10 @@
         "Naropin"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/local-anesthetics/ropivacaine-epidural-nerve-block"
+      "route": "/drug-dosing/local-anesthetics/ropivacaine-epidural-nerve-block",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "tetracaine",
@@ -2930,7 +3017,10 @@
         "Pontocaine"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/local-anesthetics/tetracaine"
+      "route": "/drug-dosing/local-anesthetics/tetracaine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "cisatracurium",
@@ -2947,7 +3037,10 @@
         "Nimbex"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/neuromuscular-blockers/cisatracurium"
+      "route": "/drug-dosing/neuromuscular-blockers/cisatracurium",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "rocuronium",
@@ -2964,7 +3057,10 @@
         "Zemuron"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/neuromuscular-blockers/rocuronium"
+      "route": "/drug-dosing/neuromuscular-blockers/rocuronium",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "succinylcholine",
@@ -2981,7 +3077,10 @@
         "Anectine / Quelicin"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/neuromuscular-blockers/succinylcholine"
+      "route": "/drug-dosing/neuromuscular-blockers/succinylcholine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "vecuronium",
@@ -2998,7 +3097,10 @@
         "Norcuron"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/neuromuscular-blockers/vecuronium"
+      "route": "/drug-dosing/neuromuscular-blockers/vecuronium",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "fentanyl",
@@ -3015,7 +3117,10 @@
         "Sublimaze"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/opioids/fentanyl"
+      "route": "/drug-dosing/opioids/fentanyl",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "hydromorphone",
@@ -3032,7 +3137,10 @@
         "Dilaudid"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/opioids/hydromorphone"
+      "route": "/drug-dosing/opioids/hydromorphone",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "meperidine",
@@ -3049,7 +3157,10 @@
         "Demerol"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/opioids/meperidine"
+      "route": "/drug-dosing/opioids/meperidine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "methadone",
@@ -3066,7 +3177,10 @@
         "Dolophine / Methadose"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/opioids/methadone"
+      "route": "/drug-dosing/opioids/methadone",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "morphine",
@@ -3083,7 +3197,10 @@
         "Duramorph (neuraxial)"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/opioids/morphine"
+      "route": "/drug-dosing/opioids/morphine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "remifentanil",
@@ -3100,7 +3217,10 @@
         "Ultiva"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/opioids/remifentanil"
+      "route": "/drug-dosing/opioids/remifentanil",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "atropine",
@@ -3117,7 +3237,10 @@
         "AtroPen (auto-injector)"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/reversal-anticholinergic-agents/atropine"
+      "route": "/drug-dosing/reversal-anticholinergic-agents/atropine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "flumazenil",
@@ -3134,7 +3257,10 @@
         "Romazicon"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/reversal-anticholinergic-agents/flumazenil"
+      "route": "/drug-dosing/reversal-anticholinergic-agents/flumazenil",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "glycopyrrolate",
@@ -3151,7 +3277,10 @@
         "Robinul"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/reversal-anticholinergic-agents/glycopyrrolate"
+      "route": "/drug-dosing/reversal-anticholinergic-agents/glycopyrrolate",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "naloxone",
@@ -3168,7 +3297,10 @@
         "Narcan"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/reversal-anticholinergic-agents/naloxone"
+      "route": "/drug-dosing/reversal-anticholinergic-agents/naloxone",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "neostigmine",
@@ -3185,7 +3317,10 @@
         "Prostigmin / Bloxiverz"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/reversal-anticholinergic-agents/neostigmine"
+      "route": "/drug-dosing/reversal-anticholinergic-agents/neostigmine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "sugammadex",
@@ -3202,7 +3337,10 @@
         "Bridion"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/reversal-anticholinergic-agents/sugammadex"
+      "route": "/drug-dosing/reversal-anticholinergic-agents/sugammadex",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "ephedrine",
@@ -3219,7 +3357,10 @@
         "(Generic)"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/vasopressors-inotropes/ephedrine"
+      "route": "/drug-dosing/vasopressors-inotropes/ephedrine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "epinephrine",
@@ -3236,7 +3377,10 @@
         "Adrenalin / EpiPen"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/vasopressors-inotropes/epinephrine"
+      "route": "/drug-dosing/vasopressors-inotropes/epinephrine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "norepinephrine",
@@ -3253,7 +3397,10 @@
         "Levophed"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/vasopressors-inotropes/norepinephrine"
+      "route": "/drug-dosing/vasopressors-inotropes/norepinephrine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "phenylephrine",
@@ -3270,7 +3417,10 @@
         "Neosynephrine"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/vasopressors-inotropes/phenylephrine"
+      "route": "/drug-dosing/vasopressors-inotropes/phenylephrine",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "vasopressin",
@@ -3287,7 +3437,10 @@
         "Pitressin / Vasostrict"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/vasopressors-inotropes/vasopressin"
+      "route": "/drug-dosing/vasopressors-inotropes/vasopressin",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "desflurane",
@@ -3304,7 +3457,10 @@
         "Suprane"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/volatile-anesthetics/desflurane"
+      "route": "/drug-dosing/volatile-anesthetics/desflurane",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "isoflurane",
@@ -3321,7 +3477,10 @@
         "Forane"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/volatile-anesthetics/isoflurane"
+      "route": "/drug-dosing/volatile-anesthetics/isoflurane",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "nitrous-oxide",
@@ -3339,7 +3498,10 @@
         "N₂O"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/volatile-anesthetics/nitrous-oxide"
+      "route": "/drug-dosing/volatile-anesthetics/nitrous-oxide",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "sevoflurane",
@@ -3356,7 +3518,10 @@
         "Ultane / Sojourn"
       ],
       "contentType": "anesthesia-drug-card",
-      "route": "/drug-dosing/volatile-anesthetics/sevoflurane"
+      "route": "/drug-dosing/volatile-anesthetics/sevoflurane",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "peds-adenosine-svt",
@@ -4164,7 +4329,13 @@
         "CICO"
       ],
       "contentType": "procedure",
-      "route": "/procedures/airway-sedation-workflows/airway-management-flow"
+      "route": "/procedures/airway-sedation-workflows/airway-management-flow",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or",
+        "prehospital"
+      ]
     },
     {
       "id": "awake-intubation",
@@ -4288,7 +4459,10 @@
         "DOAC stop times block"
       ],
       "contentType": "reference",
-      "route": "/procedures/regional-anesthesia-ultrasound/neuraxial-anticoagulation"
+      "route": "/procedures/regional-anesthesia-ultrasound/neuraxial-anticoagulation",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "pocus-guide",
@@ -4437,7 +4611,12 @@
         "protamine"
       ],
       "contentType": "reference",
-      "route": "/reference-library/anticoagulation-labs/anticoagulation-reversal"
+      "route": "/reference-library/anticoagulation-labs/anticoagulation-reversal",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or"
+      ]
     },
     {
       "id": "blood-products",
@@ -4567,7 +4746,11 @@
         "IABP timing"
       ],
       "contentType": "reference",
-      "route": "/reference-library/cardiac-ecg/twelve-lead-stemi-criteria"
+      "route": "/reference-library/cardiac-ecg/twelve-lead-stemi-criteria",
+      "settingEmphasis": [
+        "ed",
+        "prehospital"
+      ]
     },
     {
       "id": "acute-ischemic-stroke",
@@ -4604,7 +4787,11 @@
         "DAWN DEFUSE-3"
       ],
       "contentType": "reference",
-      "route": "/reference-library/cardiac-ecg/acute-ischemic-stroke"
+      "route": "/reference-library/cardiac-ecg/acute-ischemic-stroke",
+      "settingEmphasis": [
+        "ed",
+        "prehospital"
+      ]
     },
     {
       "id": "acute-pe-guideline-2026",
@@ -4829,7 +5016,10 @@
         "ticagrelor prasugrel loading"
       ],
       "contentType": "reference",
-      "route": "/reference-library/cardiac-ecg/hs-troponin-chest-pain"
+      "route": "/reference-library/cardiac-ecg/hs-troponin-chest-pain",
+      "settingEmphasis": [
+        "ed"
+      ]
     },
     {
       "id": "aki-staging-rrt",
@@ -4864,7 +5054,10 @@
         "regional citrate anticoagulation"
       ],
       "contentType": "reference",
-      "route": "/reference-library/critical-care/aki-staging-rrt"
+      "route": "/reference-library/critical-care/aki-staging-rrt",
+      "settingEmphasis": [
+        "icu"
+      ]
     },
     {
       "id": "contrast-associated-aki",
@@ -4903,7 +5096,11 @@
         "maximum acceptable contrast dose"
       ],
       "contentType": "reference",
-      "route": "/reference-library/critical-care/contrast-associated-aki"
+      "route": "/reference-library/critical-care/contrast-associated-aki",
+      "settingEmphasis": [
+        "or",
+        "icu"
+      ]
     },
     {
       "id": "drug-interactions-high-yield",
@@ -4979,7 +5176,10 @@
         "ECMO weaning"
       ],
       "contentType": "reference",
-      "route": "/reference-library/critical-care/ecmo-support"
+      "route": "/reference-library/critical-care/ecmo-support",
+      "settingEmphasis": [
+        "icu"
+      ]
     },
     {
       "id": "hyperkalemia-management",
@@ -5015,7 +5215,11 @@
         "sine wave ECG"
       ],
       "contentType": "reference",
-      "route": "/reference-library/critical-care/hyperkalemia-management"
+      "route": "/reference-library/critical-care/hyperkalemia-management",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
     },
     {
       "id": "icu-workflow",
@@ -5051,7 +5255,10 @@
         "ICU signout"
       ],
       "contentType": "reference",
-      "route": "/reference-library/critical-care/icu-workflow"
+      "route": "/reference-library/critical-care/icu-workflow",
+      "settingEmphasis": [
+        "icu"
+      ]
     },
     {
       "id": "padis-bundle",
@@ -5088,7 +5295,10 @@
         "SAT SBT"
       ],
       "contentType": "reference",
-      "route": "/reference-library/critical-care/padis-bundle"
+      "route": "/reference-library/critical-care/padis-bundle",
+      "settingEmphasis": [
+        "icu"
+      ]
     },
     {
       "id": "icp-tbi-management",
@@ -5165,7 +5375,11 @@
         "ICU sodium drift"
       ],
       "contentType": "reference",
-      "route": "/reference-library/critical-care/sodium-disorders"
+      "route": "/reference-library/critical-care/sodium-disorders",
+      "settingEmphasis": [
+        "icu",
+        "ed"
+      ]
     },
     {
       "id": "toxidromes-and-overdoses",
@@ -5205,7 +5419,11 @@
         "serotonin syndrome vs NMS"
       ],
       "contentType": "reference",
-      "route": "/reference-library/critical-care/toxidromes-and-overdoses"
+      "route": "/reference-library/critical-care/toxidromes-and-overdoses",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
     },
     {
       "id": "advanced-ards-ventilation",
@@ -5236,7 +5454,10 @@
         "intraoperative protective ventilation IMPROVE PROVHILO"
       ],
       "contentType": "reference",
-      "route": "/reference-library/icu-critical-care/advanced-ards-ventilation"
+      "route": "/reference-library/icu-critical-care/advanced-ards-ventilation",
+      "settingEmphasis": [
+        "icu"
+      ]
     },
     {
       "id": "childhood-immunization-schedule",
@@ -5620,7 +5841,10 @@
         "discriminatory zone"
       ],
       "contentType": "reference",
-      "route": "/reference-library/obstetric-gynecologic/ectopic-pregnancy"
+      "route": "/reference-library/obstetric-gynecologic/ectopic-pregnancy",
+      "settingEmphasis": [
+        "ed"
+      ]
     },
     {
       "id": "emergency-drugs-pregnancy",
@@ -5834,7 +6058,10 @@
         "detorsion"
       ],
       "contentType": "reference",
-      "route": "/reference-library/obstetric-gynecologic/ovarian-torsion"
+      "route": "/reference-library/obstetric-gynecologic/ovarian-torsion",
+      "settingEmphasis": [
+        "ed"
+      ]
     },
     {
       "id": "pid-tubo-ovarian-abscess",
@@ -5900,7 +6127,10 @@
         "post-caesarean multimodal analgesia"
       ],
       "contentType": "reference",
-      "route": "/reference-library/obstetric-gynecologic/csection-analgesia-prospect"
+      "route": "/reference-library/obstetric-gynecologic/csection-analgesia-prospect",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "postpartum-hemorrhage",
@@ -6079,7 +6309,10 @@
         "IVC collapsibility"
       ],
       "contentType": "reference",
-      "route": "/reference-library/perioperative-anesthesia/anesthesia-pocus"
+      "route": "/reference-library/perioperative-anesthesia/anesthesia-pocus",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "drug-concentration-math",
@@ -6112,7 +6345,11 @@
         "ratio strength"
       ],
       "contentType": "reference",
-      "route": "/reference-library/perioperative-anesthesia/drug-concentration-math"
+      "route": "/reference-library/perioperative-anesthesia/drug-concentration-math",
+      "settingEmphasis": [
+        "or",
+        "icu"
+      ]
     },
     {
       "id": "mac-values",
@@ -6146,7 +6383,10 @@
         "desflurane phase-out"
       ],
       "contentType": "reference",
-      "route": "/reference-library/perioperative-anesthesia/mac-values"
+      "route": "/reference-library/perioperative-anesthesia/mac-values",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "malignant-hyperthermia",
@@ -6183,7 +6423,10 @@
         "RYR1"
       ],
       "contentType": "reference",
-      "route": "/reference-library/perioperative-anesthesia/malignant-hyperthermia"
+      "route": "/reference-library/perioperative-anesthesia/malignant-hyperthermia",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "neuraxial-anesthesia",
@@ -6222,7 +6465,10 @@
         "urgent C-section epidural top-up"
       ],
       "contentType": "reference",
-      "route": "/reference-library/perioperative-anesthesia/neuraxial-anesthesia"
+      "route": "/reference-library/perioperative-anesthesia/neuraxial-anesthesia",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "neuromuscular-blockade-reversal",
@@ -6294,7 +6540,11 @@
         "diabetes meds perioperative"
       ],
       "contentType": "reference",
-      "route": "/reference-library/perioperative-anesthesia/perioperative-glycemic-management"
+      "route": "/reference-library/perioperative-anesthesia/perioperative-glycemic-management",
+      "settingEmphasis": [
+        "or",
+        "icu"
+      ]
     },
     {
       "id": "preanesthesia-checklist",
@@ -6330,7 +6580,10 @@
         "machine check"
       ],
       "contentType": "reference",
-      "route": "/reference-library/perioperative-anesthesia/preanesthesia-checklist"
+      "route": "/reference-library/perioperative-anesthesia/preanesthesia-checklist",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "sedation-analgesia-agents",
@@ -6404,7 +6657,10 @@
         "SSI prevention"
       ],
       "contentType": "reference",
-      "route": "/reference-library/perioperative-anesthesia/surgical-antibiotic-prophylaxis"
+      "route": "/reference-library/perioperative-anesthesia/surgical-antibiotic-prophylaxis",
+      "settingEmphasis": [
+        "or"
+      ]
     },
     {
       "id": "abg-interpretation",
@@ -6465,7 +6721,11 @@
         "flash pulmonary edema"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/acute-dyspnea-niv"
+      "route": "/reference-library/resuscitation-airway/acute-dyspnea-niv",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
     },
     {
       "id": "acls-adult-cardiac-arrest",
@@ -6490,7 +6750,12 @@
         "H's and T's"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/acls-adult-cardiac-arrest"
+      "route": "/reference-library/resuscitation-airway/acls-adult-cardiac-arrest",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
+      ]
     },
     {
       "id": "altered-mental-status",
@@ -6525,7 +6790,10 @@
         "delirium ED"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/altered-mental-status"
+      "route": "/reference-library/resuscitation-airway/altered-mental-status",
+      "settingEmphasis": [
+        "ed"
+      ]
     },
     {
       "id": "anaphylaxis",
@@ -6558,7 +6826,11 @@
         "epinephrine infusion glucagon"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/anaphylaxis"
+      "route": "/reference-library/resuscitation-airway/anaphylaxis",
+      "settingEmphasis": [
+        "ed",
+        "prehospital"
+      ]
     },
     {
       "id": "antidotes-reversal-agents",
@@ -6719,7 +6991,12 @@
         "prolonged field care crush"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/crush-syndrome"
+      "route": "/reference-library/resuscitation-airway/crush-syndrome",
+      "settingEmphasis": [
+        "prehospital",
+        "ed",
+        "icu"
+      ]
     },
     {
       "id": "efast-exam",
@@ -6753,7 +7030,11 @@
         "IVC collapsibility"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/efast-exam"
+      "route": "/reference-library/resuscitation-airway/efast-exam",
+      "settingEmphasis": [
+        "ed",
+        "prehospital"
+      ]
     },
     {
       "id": "hemorrhagic-shock-mtp",
@@ -6790,7 +7071,13 @@
         "calcium in massive transfusion"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/hemorrhagic-shock-mtp"
+      "route": "/reference-library/resuscitation-airway/hemorrhagic-shock-mtp",
+      "settingEmphasis": [
+        "ed",
+        "prehospital",
+        "or",
+        "icu"
+      ]
     },
     {
       "id": "hyperosmolar-therapy",
@@ -6823,7 +7110,11 @@
         "cerebral edema osmotherapy"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/hyperosmolar-therapy"
+      "route": "/reference-library/resuscitation-airway/hyperosmolar-therapy",
+      "settingEmphasis": [
+        "icu",
+        "ed"
+      ]
     },
     {
       "id": "copd-invasive-ventilation",
@@ -6852,7 +7143,11 @@
         "post-hypercapnic alkalosis"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/copd-invasive-ventilation"
+      "route": "/reference-library/resuscitation-airway/copd-invasive-ventilation",
+      "settingEmphasis": [
+        "icu",
+        "ed"
+      ]
     },
     {
       "id": "iv-fluids",
@@ -6962,7 +7257,10 @@
         "oxygenation goal SpO2 88-95"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/peep-fio2-ladder"
+      "route": "/reference-library/resuscitation-airway/peep-fio2-ladder",
+      "settingEmphasis": [
+        "icu"
+      ]
     },
     {
       "id": "peripheral-iv-vasopressors",
@@ -7018,7 +7316,12 @@
         "post-intubation sedation"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/post-intubation-management"
+      "route": "/reference-library/resuscitation-airway/post-intubation-management",
+      "settingEmphasis": [
+        "icu",
+        "ed",
+        "or"
+      ]
     },
     {
       "id": "rsi-seven-ps",
@@ -7057,7 +7360,13 @@
         "post-intubation hypotension"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/rsi-seven-ps"
+      "route": "/reference-library/resuscitation-airway/rsi-seven-ps",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or",
+        "prehospital"
+      ]
     },
     {
       "id": "code-leadership-run-the-room",
@@ -7099,7 +7408,11 @@
         "who does what in a code"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/code-leadership-run-the-room"
+      "route": "/reference-library/resuscitation-airway/code-leadership-run-the-room",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
     },
     {
       "id": "septic-shock-resuscitation",
@@ -7139,7 +7452,11 @@
         "de-resuscitation"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/septic-shock-resuscitation"
+      "route": "/reference-library/resuscitation-airway/septic-shock-resuscitation",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
     },
     {
       "id": "shock-classification",
@@ -7216,7 +7533,11 @@
         "midazolam infusion seizure"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/status-epilepticus-adult"
+      "route": "/reference-library/resuscitation-airway/status-epilepticus-adult",
+      "settingEmphasis": [
+        "ed",
+        "prehospital"
+      ]
     },
     {
       "id": "anatomically-difficult-airway",
@@ -7266,7 +7587,12 @@
         "Plan A Plan B Plan C Plan D"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/anatomically-difficult-airway"
+      "route": "/reference-library/resuscitation-airway/anatomically-difficult-airway",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or"
+      ]
     },
     {
       "id": "physiologically-difficult-airway",
@@ -7308,7 +7634,12 @@
         "DSI delayed sequence intubation"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/physiologically-difficult-airway"
+      "route": "/reference-library/resuscitation-airway/physiologically-difficult-airway",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or"
+      ]
     },
     {
       "id": "trauma-primary-survey",
@@ -7345,7 +7676,11 @@
         "TBI targets"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/trauma-primary-survey"
+      "route": "/reference-library/resuscitation-airway/trauma-primary-survey",
+      "settingEmphasis": [
+        "prehospital",
+        "ed"
+      ]
     },
     {
       "id": "trauma-team-activation",
@@ -7376,7 +7711,11 @@
         "undertriage overtriage"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/trauma-team-activation"
+      "route": "/reference-library/resuscitation-airway/trauma-team-activation",
+      "settingEmphasis": [
+        "ed",
+        "prehospital"
+      ]
     },
     {
       "id": "pressor-inotrope-reference",
@@ -7451,7 +7790,11 @@
         "dynamic hyperinflation"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/status-asthmaticus-ventilation"
+      "route": "/reference-library/resuscitation-airway/status-asthmaticus-ventilation",
+      "settingEmphasis": [
+        "icu",
+        "ed"
+      ]
     },
     {
       "id": "ventilator-management",
@@ -7481,7 +7824,10 @@
         "cuff leak"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/ventilator-management"
+      "route": "/reference-library/resuscitation-airway/ventilator-management",
+      "settingEmphasis": [
+        "icu"
+      ]
     },
     {
       "id": "ventilator-modes",
@@ -7522,7 +7868,11 @@
         "cross-manufacturer mode names"
       ],
       "contentType": "reference",
-      "route": "/reference-library/resuscitation-airway/ventilator-modes"
+      "route": "/reference-library/resuscitation-airway/ventilator-modes",
+      "settingEmphasis": [
+        "icu",
+        "or"
+      ]
     }
   ]
 }

@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Local Anesthetics",
   "title": "Lidocaine with Epinephrine",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Xylocaine with Epi"
   ],

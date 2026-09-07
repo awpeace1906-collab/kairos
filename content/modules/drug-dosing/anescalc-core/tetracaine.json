@@ -3,6 +3,9 @@
   "section": "Drug & Dosing Cards",
   "category": "Local Anesthetics",
   "title": "Tetracaine",
+  "settingEmphasis": [
+    "or"
+  ],
   "aliases": [
     "Pontocaine"
   ],
