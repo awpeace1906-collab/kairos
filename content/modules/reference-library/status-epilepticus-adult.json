@@ -41,7 +41,7 @@
     "burst suppression"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -52,12 +52,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the time-anchored ladder: benzodiazepine → second-line ASM (ESETT: LEV / fosphenytoin / valproate all equivalent) → anaesthetic infusion → super-refractory options. Doses inline."
     }
   ],
   "summary": "SE = a seizure lasting > 5 min, or ≥ 2 seizures without recovery of consciousness between. Treat immediately — neuronal injury accrues after ~30 min, and benzodiazepines get less effective the longer you wait (GABA-A receptors internalise). Give a FULL benzodiazepine dose, then a full second-line agent, then intubate for an infusion.",
+  "whyThisMatters": "Every minute in status epilepticus makes it harder to stop: GABA-A receptors internalise, so benzodiazepines lose potency, and neuronal injury accrues after roughly 30 minutes. The commonest error is an underdosed first benzodiazepine, which wastes the window when it would have worked.",
+  "clinicalTakeaway": "Give a FULL first-line benzodiazepine dose (lorazepam 0.1 mg/kg IV, or IM midazolam with no line), then a full second-line agent (levetiracetam, fosphenytoin, or valproate) without waiting, then intubate for a continuous infusion. Check glucose and treat the cause in parallel.",
   "body": [
     {
       "type": "heading",

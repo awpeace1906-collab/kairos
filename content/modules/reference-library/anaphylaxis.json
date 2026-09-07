@@ -35,7 +35,7 @@
     "discharge with auto-injector"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2026-12-03",
   "review_tier": 1,
@@ -45,12 +45,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — diagnostic criteria, the numbered treatment sequence, refractory management, and observation/disposition."
     }
   ],
   "summary": "Epinephrine IM is always first-line and has no contraindication in anaphylaxis — every minute of delay increases mortality. Antihistamines and steroids do NOT treat anaphylaxis; they are adjuncts only. Give epinephrine on clinical suspicion, before the picture is complete.",
+  "whyThisMatters": "The one drug that treats anaphylaxis is the one most often delayed. Deaths correlate with time-to-epinephrine and with substituting antihistamines or steroids — which do nothing for the airway or the circulation — for it.",
+  "clinicalTakeaway": "Give epinephrine 0.5 mg IM (1:1,000, anterolateral thigh) on clinical suspicion, before the picture is complete, and repeat every 5–15 minutes as needed. Position the patient supine, give high-flow oxygen and IV fluids, and start an epinephrine infusion if refractory. Antihistamines and steroids are adjuncts only.",
   "body": [
     {
       "type": "callout",

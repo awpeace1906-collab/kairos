@@ -38,7 +38,7 @@
     "furosemide only if urine output"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -48,12 +48,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the ECG-progression table, the stabilise → shift → eliminate ladder with doses and onset times, BRASH syndrome, and the bicarbonate / calcium-salt caveats."
     }
   ],
   "summary": "Treat empirically the moment there are ECG changes — do NOT wait for the repeat lab. K⁺ > 6.5 with ECG changes is immediately life-threatening. The sequence is STABILISE the membrane (calcium — buys 30–60 min, does NOT lower K⁺) → SHIFT K⁺ intracellularly (insulin + dextrose, albuterol) → ELIMINATE it (GI binder, diuresis, dialysis).",
+  "whyThisMatters": "Hyperkalaemia can go from an abnormal lab to a sine-wave arrest in minutes, and the ECG — not the number — is the trigger to act. Waiting for a repeat potassium before treating a patient who already has ECG changes is a recognised, avoidable death.",
+  "clinicalTakeaway": "At the first ECG change, give calcium immediately to stabilise the membrane (it buys 30–60 min and does not lower K⁺). Then shift K⁺ with insulin plus dextrose and nebulised albuterol, and eliminate it with a GI binder, diuresis, or dialysis. Recheck glucose after the insulin.",
   "body": [
     {
       "type": "heading",

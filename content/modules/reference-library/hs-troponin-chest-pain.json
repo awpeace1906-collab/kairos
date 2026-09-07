@@ -36,7 +36,7 @@
     "avoid nitro RV infarct PDE5"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2027-03-03",
   "review_tier": 1,
@@ -46,12 +46,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — the 0/1-h hs-cTnI rule-out/rule-in table with the mandatory discharge caveats, plus the ACS management bundle. STEMI-equivalent ECG patterns are in twelve-lead-stemi-criteria."
     }
   ],
   "summary": "The 0/1-hour high-sensitivity troponin algorithm safely rules NSTEMI in or out in an hour — but only with BOTH samples, an assay it was validated for, symptom onset ≥ 2 hours ago, a low clinical risk score, and no ischaemic ECG change. Thresholds are assay-specific: the values below are hs-cTnI (Abbott ARCHITECT) — confirm your local assay.",
+  "whyThisMatters": "The 0/1-hour algorithm is fast and safe — but only inside its validation envelope. Applied to the wrong assay, a single draw, an early presenter, or a patient with an ischaemic ECG or a high risk score, a “rule-out” becomes a missed MI sent home.",
+  "clinicalTakeaway": "Use both draws on the assay the algorithm was validated for, with symptom onset ≥ 2 hours, a low clinical risk score, and a non-ischaemic ECG — otherwise the pathway does not apply. Rule-out is not discharge on its own; pair it with the ACS management bundle and shared decision-making.",
   "body": [
     {
       "type": "callout",

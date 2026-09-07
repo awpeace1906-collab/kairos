@@ -41,7 +41,7 @@
     "balanced crystalloid sepsis vs saline TBI"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-04",
   "next_review_due": "2027-03-04",
   "review_tier": 1,
@@ -52,6 +52,11 @@
     "FDA — first freeze-dried plasma product licensed in the U.S. (Ezplaz), July 29 2026"
   ],
   "changelog": [
+    {
+      "version": 3,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
     {
       "version": 2,
       "date": "2026-09-04",
@@ -64,6 +69,8 @@
     }
   ],
   "summary": "Give balanced product early (1:1:1), tranexamic acid within 3 hours of injury, and calcium after every few units — citrate chelates calcium and hypocalcaemia is a killer. Permissive hypotension (SBP 80–90) until surgical control, EXCEPT in TBI where you keep MAP ≥ 80.",
+  "whyThisMatters": "Trauma haemorrhage kills fast and kills through the lethal triad — hypothermia, acidosis, coagulopathy — which crystalloid resuscitation actively worsens. The interventions that change survival (balanced product, early TXA, calcium) all have narrow windows measured from injury, not from arrival.",
+  "clinicalTakeaway": "Activate the MTP early and transfuse 1:1:1; give tranexamic acid within 3 hours of injury; replace calcium after every few units. Hold to permissive hypotension (SBP 80–90) until surgical control — except in TBI, where MAP stays ≥ 80. Keep the patient warm.",
   "body": [
     {
       "type": "heading",

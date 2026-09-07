@@ -42,7 +42,7 @@
     "high-dose insulin euglycemia"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -52,12 +52,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the toxidrome recognition table + serotonin-syndrome/NMS, and the highest-yield specific-overdose regimens (APAP, TCA, BB/CCB, sympathomimetic, salicylate). Full antidote dosing lives in the antidotes-reversal-agents module."
     }
   ],
   "summary": "Read the vitals + pupils + skin together to name the toxidrome, then treat the mechanism. Anticholinergic = hot/dry/flushed, mydriasis, tachycardia. Cholinergic = wet (SLUDGE), miosis, bradycardia. Sympathomimetic = diaphoretic, mydriasis, tachy-hypertensive. Opioid = pinpoint pupils + hypoventilation.",
+  "whyThisMatters": "Poisonings present as a physiology, not a history — reading the vitals, pupils and skin together names the toxidrome and points at the antidote before any level returns, and the classic misses (a rising anion gap, a widening QRS, a delayed acetaminophen curve) declare themselves early if you look.",
+  "clinicalTakeaway": "Pattern the vitals + pupils + skin to name the toxidrome, then treat the mechanism: supportive care or physostigmine for anticholinergic, atropine + pralidoxime for cholinergic, benzodiazepines for sympathomimetic, naloxone for opioid. Get an acetaminophen level, an ECG for QRS width, and a salicylate level on anyone with an unexplained acid–base disturbance.",
   "body": [
     {
       "type": "heading",

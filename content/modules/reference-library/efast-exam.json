@@ -36,7 +36,7 @@
     "negative eFAST does not exclude solid organ injury"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2027-09-03",
   "review_tier": 1,
@@ -46,12 +46,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — the 6 eFAST views + positive-exam actions, and the RUSH pump/tank/pipes framework with the shock-pattern table and IVC interpretation."
     }
   ],
   "summary": "eFAST answers one question fast: is there free fluid (peritoneal, pericardial, pleural) or a pneumothorax? A positive eFAST in an unstable patient goes to the operating room, not the CT scanner. A negative eFAST does NOT exclude solid-organ injury — CT remains standard for the stable patient with a concerning mechanism.",
+  "whyThisMatters": "eFAST is a decision tool, not a survey: a positive scan in an unstable patient changes the destination from the CT scanner to the operating room, and its main danger is over-reading a negative — it does not exclude solid-organ or retroperitoneal injury.",
+  "clinicalTakeaway": "Scan the six windows for free fluid and pneumothorax. Unstable plus a positive eFAST goes to the operating room now. A negative eFAST in a stable patient with a concerning mechanism still gets a CT. Repeat the scan if the patient changes.",
   "body": [
     {
       "type": "heading",

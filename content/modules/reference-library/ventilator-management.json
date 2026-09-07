@@ -29,7 +29,7 @@
     "ICU"
   ],
   "contentType": "reference",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -42,6 +42,11 @@
     "Critical Vector — Mechanical Ventilation (full guide, original content)"
   ],
   "changelog": [
+    {
+      "version": 4,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
     {
       "version": 3,
       "date": "2026-09-02",
@@ -59,6 +64,8 @@
     }
   ],
   "summary": "Initial settings, pressure terms and waveform troubleshooting, the ARDSNet protocol + PEEP/FiO2 ladder, the distinct status-asthmaticus strategy, weaning, and VAP prevention.",
+  "whyThisMatters": "Bad initial settings and slow reactions to alarms cause harm that is entirely preventable — over-large tidal volumes injure the lung within hours, and the crashing ventilated patient dies while the team debates the alarm instead of disconnecting and bagging. The right setup and the right troubleshooting reflex are the difference between a bridge and barotrauma.",
+  "clinicalTakeaway": "Start lung-protective (6 mL/kg predicted body weight, plateau ≤ 30) unless the physiology is obstructive. When a ventilated patient crashes, disconnect and hand-bag while you run DOPES/DOTTS — displacement, obstruction, pneumothorax, equipment, stacked breaths. Check the plateau, not the peak, when pressures climb.",
   "body": [
     {
       "type": "heading",

@@ -39,7 +39,7 @@
     "seashore vs barcode sign"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -49,12 +49,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — ABCDE with the immediate life-threats, hemorrhagic shock classification, the MTP (ratio, TXA, calcium, targets), TBI initial targets, and eFAST windows."
     }
   ],
   "summary": "ABCDE, addressing each life-threat as it's found. Control external haemorrhage first (direct pressure → tourniquet → wound packing). Permissive hypotension (SBP 80–90) until surgical control — EXCEPT in TBI, where you protect cerebral perfusion (MAP ≥ 80). Give blood in a 1:1:1 ratio and TXA within 3 hours.",
+  "whyThisMatters": "The primary survey exists so that no life-threat is missed while attention narrows onto the obvious injury — and the resuscitation choices (permissive hypotension, balanced product, TXA, the TBI exception) all have to be made in the first minutes, before the picture is complete.",
+  "clinicalTakeaway": "Work ABCDE, fixing each life-threat as you find it, and control external haemorrhage first (pressure → tourniquet → packing). Hold to permissive hypotension (SBP 80–90) until surgical control, except in TBI where MAP stays ≥ 80. Transfuse 1:1:1 and give TXA within 3 hours.",
   "body": [
     {
       "type": "heading",

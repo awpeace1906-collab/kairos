@@ -44,7 +44,7 @@
     "POCUS during pulse checks"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-04",
   "next_review_due": "2026-12-04",
   "review_tier": 1,
@@ -58,12 +58,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-04",
       "change": "Initial entry — the non-algorithm half of running an arrest: claiming leadership, role assignment, closed-loop comms, CPR-quality targets, epinephrine timing, the calcium/bicarbonate 'leave it in the drawer' evidence, and the refractory-VF practical move. Companion to the Adult Cardiac Arrest algorithm card."
     }
   ],
   "summary": "The single biggest determinant of survival is CPR quality, not the drugs. The leader's job is to stand at the foot of the bed and think — not do compressions, not push meds — while assigning every task by name and diagnosing why the patient arrested. Calm is competence; if an order wasn't repeated back, it wasn't heard.",
+  "whyThisMatters": "Two codes with the same rhythm and the same drugs have very different outcomes depending on whether one person is standing back and thinking. Chaos at the bedside — unassigned tasks, orders no one repeats back, compressions that pause for every intervention — is the failure mode, and it is a leadership problem, not a knowledge problem.",
+  "clinicalTakeaway": "Stand at the foot of the bed and lead — don't do compressions or push drugs. Assign every task by name with eye contact, demand closed-loop read-backs, protect compression quality above all else, and spend your attention on why this patient arrested (the H's and T's).",
   "body": [
     {
       "type": "heading",

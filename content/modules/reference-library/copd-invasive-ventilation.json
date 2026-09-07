@@ -31,7 +31,7 @@
     "watch flow-volume waveform return to baseline"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2027-03-03",
   "review_tier": 1,
@@ -41,12 +41,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — the two key moves (ventilate to baseline PaCO2, match extrinsic PEEP to auto-PEEP) and the monitoring emphasis."
     }
   ],
   "summary": "Obstructive physiology like status asthmaticus, but the TARGET is different: return the PaCO2 toward the patient's own chronic compensated baseline, not to 40. And — counter-intuitively — adding a modest amount of extrinsic PEEP eases the work of triggering without meaningfully worsening hyperinflation.",
+  "whyThisMatters": "The COPD patient on a ventilator has obstructive physiology like asthma but a different endpoint — driving the PaCO₂ to 40 strips their chronic buffering and makes weaning harder — and the one counter-intuitive move, adding extrinsic PEEP, is the one most often withheld.",
+  "clinicalTakeaway": "Target the PaCO₂ back toward the patient's own compensated baseline, not 40. Add a modest extrinsic PEEP (around 5, or roughly 80% of measured auto-PEEP) to ease triggering without worsening hyperinflation. Use a long expiratory time and watch for auto-PEEP.",
   "body": [
     {
       "type": "heading",

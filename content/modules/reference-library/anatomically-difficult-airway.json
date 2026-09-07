@@ -53,7 +53,7 @@
     "team brief before intubation"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2026-12-03",
   "review_tier": 1,
@@ -69,12 +69,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — converted from the CV Difficult Airway guide. The anatomically/procedurally difficult airway and the failed-airway algorithm (DAS 2025 Plans A-D, the Vortex, eFONA technique, human factors). Companion to the physiologically-difficult-airway module."
     }
   ],
   "summary": "Once Plan A fails, the outcome depends on which of three states you are in — tube in, or failed-but-oxygenating, or can't-intubate-can't-oxygenate — not on trying the same thing harder. DAS 2025 keeps a linear A→B→C→D structure and, new for 2025, puts the supraglottic airway ahead of face mask as Plan B. The lethal errors are behavioural: perseveration on a failed technique, not saying the words 'this is a CICO emergency', and reluctance to cut.",
+  "whyThisMatters": "When Plan A fails, outcome is decided in the next 60 seconds by which of three states you're in — and by whether the team can say the words and act. NAP4 showed the deaths cluster not around lack of skill but around perseveration on a failed technique and a delayed or omitted surgical airway.",
+  "clinicalTakeaway": "Cap intubation attempts at three, each meaningfully different, then move to a second-generation supraglottic airway. If you cannot oxygenate by SGA or face mask, declare “this is a CICO emergency” out loud, confirm paralysis, and go to scalpel-bougie-tube without further delay. Brief the A→B→C→D plan aloud before every intubation.",
   "body": [
     {
       "type": "heading",

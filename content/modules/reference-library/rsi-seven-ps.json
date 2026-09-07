@@ -43,7 +43,7 @@
     "tube tip 3-5 cm above carina"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -53,12 +53,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the 7 P's, induction-agent and NMB selection tables with doses, LEMON, CICO, and the post-intubation settings + hypotension checklist."
     }
   ],
   "summary": "Preparation · Preoxygenation · Pretreatment (optional) · Paralysis & induction · Positioning · Placement with confirmation · Post-intubation care. Push the induction agent and paralytic together (no fasciculation wait). Confirm with waveform capnography every time. For the physiologically fragile patient, see the physiologically-difficult-airway reference first.",
+  "whyThisMatters": "RSI is the highest-risk routine procedure in acute care: the minutes around the tube are when hypoxia, hypotension, and a failed first attempt turn a stable patient into an arrest. A missed step in preparation or preoxygenation cannot be recovered once the paralytic is in.",
+  "clinicalTakeaway": "Work the 7 P's in order, push the induction agent and paralytic together with no fasciculation wait, and confirm placement with waveform capnography every time. If the patient is physiologically fragile — hypoxaemic, hypotensive, acidotic, or in RV failure — optimise that first (see the physiologically-difficult-airway reference) before you induce.",
   "body": [
     {
       "type": "heading",

@@ -39,7 +39,7 @@
     "ICH SBP target"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -49,12 +49,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the time-anchored workup, IV thrombolysis dosing + BP targets + contraindications, the thrombectomy window, and ICH management targets."
     }
   ],
   "summary": "Time = brain (~1.9 million neurons/min in a large-vessel occlusion). Non-contrast CT first to exclude haemorrhage. IV thrombolysis within 4.5 h if eligible (BP must be < 185/110 first). CT angiography for LVO → thrombectomy, up to 24 h with perfusion-imaging selection.",
+  "whyThisMatters": "Large-vessel occlusion destroys around 1.9 million neurons a minute, so every step of the workup is a race — and the two irreversible errors are giving thrombolysis into an unrecognised haemorrhage, or missing an LVO that a thrombectomy could still reopen up to 24 hours out.",
+  "clinicalTakeaway": "Non-contrast CT first to exclude blood. If eligible, give IV thrombolysis within 4.5 hours — but get the BP below 185/110 first. Get CT angiography on anyone with a plausible LVO and move them toward thrombectomy, using perfusion imaging to select out to 24 hours.",
   "body": [
     {
       "type": "heading",

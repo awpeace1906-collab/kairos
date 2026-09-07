@@ -38,7 +38,7 @@
     "recrudescence ~20% median 9 h"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -48,12 +48,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — trigger agents, early signs, and the MHAUS crisis sequence: dantrolene, stop triggers / switch to TIVA, active cooling, treat the metabolic consequences, 24-h ICU for recrudescence."
     }
   ],
   "summary": "A hypermetabolic crisis of skeletal muscle triggered by volatile anaesthetics and succinylcholine in a susceptible patient (RYR1 / CACNA1S). A rising EtCO₂ despite adequate ventilation is the earliest reliable sign. Call the MHAUS hotline (US): 1-800-644-9737. Give dantrolene immediately and do not stop looking for it.",
+  "whyThisMatters": "MH is rare, fast, and lethal if the trigger is not recognised — and the earliest reliable sign, a rising EtCO₂ despite adequate ventilation, is easy to attribute to something else. Delay to dantrolene is the modifiable determinant of death.",
+  "clinicalTakeaway": "Stop all volatile agent and succinylcholine, hyperventilate with 100% O₂ on a clean circuit, and give dantrolene 2.5 mg/kg IV immediately, repeating until the hypermetabolism breaks. Call the MHAUS hotline (US 1-800-644-9737), treat hyperkalaemia and acidosis, and cool actively. Keep looking for it even if the picture is atypical.",
   "body": [
     {
       "type": "heading",

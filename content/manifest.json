@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T00:00:00Z",
+  "generatedAt": "2026-09-07T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
@@ -1795,8 +1795,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/acls-adult-cardiac-arrest": {
-      "content_version": 3,
-      "hash": "071b4b0f82129f07",
+      "content_version": 4,
+      "hash": "42df734d368990e6",
       "path": "modules/reference-library/acls-adult-cardiac-arrest.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1804,8 +1804,8 @@
       "next_review_due": "2026-12-04"
     },
     "reference-library/acute-dyspnea-niv": {
-      "content_version": 1,
-      "hash": "65ab22c2ed26c966",
+      "content_version": 2,
+      "hash": "6587dbb62aac5707",
       "path": "modules/reference-library/acute-dyspnea-niv.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1813,8 +1813,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/acute-ischemic-stroke": {
-      "content_version": 1,
-      "hash": "1be22b1e01dcd3d7",
+      "content_version": 2,
+      "hash": "0cbed98efcc65ff1",
       "path": "modules/reference-library/acute-ischemic-stroke.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1831,8 +1831,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/advanced-ards-ventilation": {
-      "content_version": 1,
-      "hash": "b1c4b459a3657d9b",
+      "content_version": 2,
+      "hash": "6f29f5acfd65a499",
       "path": "modules/reference-library/advanced-ards-ventilation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1858,8 +1858,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/altered-mental-status": {
-      "content_version": 1,
-      "hash": "064a4736978ebcbc",
+      "content_version": 2,
+      "hash": "357ca91e2b6285a0",
       "path": "modules/reference-library/altered-mental-status.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1867,8 +1867,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/anaphylaxis": {
-      "content_version": 1,
-      "hash": "9535209eda58e3f5",
+      "content_version": 2,
+      "hash": "02eed4b4eb7770e3",
       "path": "modules/reference-library/anaphylaxis.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1876,8 +1876,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/anatomically-difficult-airway": {
-      "content_version": 1,
-      "hash": "c134ad2f7ba17c88",
+      "content_version": 2,
+      "hash": "800002041049f9a7",
       "path": "modules/reference-library/anatomically-difficult-airway.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1894,8 +1894,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/anticoagulation-reversal": {
-      "content_version": 5,
-      "hash": "48a9170cd558dc22",
+      "content_version": 6,
+      "hash": "c09b3db0ee960370",
       "path": "modules/reference-library/anticoagulation-reversal.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1966,8 +1966,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/code-leadership-run-the-room": {
-      "content_version": 1,
-      "hash": "a273fe90d958ddfb",
+      "content_version": 2,
+      "hash": "d2b8913010a63ff1",
       "path": "modules/reference-library/code-leadership-run-the-room.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1993,8 +1993,8 @@
       "next_review_due": "2027-03-04"
     },
     "reference-library/copd-invasive-ventilation": {
-      "content_version": 1,
-      "hash": "70ed41525ad35102",
+      "content_version": 2,
+      "hash": "cf40bc716a72962e",
       "path": "modules/reference-library/copd-invasive-ventilation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2002,8 +2002,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/crush-syndrome": {
-      "content_version": 1,
-      "hash": "ee26adf4def10b7b",
+      "content_version": 2,
+      "hash": "c2ecc8ec9825f0a7",
       "path": "modules/reference-library/crush-syndrome.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2074,8 +2074,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/efast-exam": {
-      "content_version": 1,
-      "hash": "1c577b10614ad290",
+      "content_version": 2,
+      "hash": "cef91f710ca6f767",
       "path": "modules/reference-library/efast-exam.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2155,8 +2155,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/hemorrhagic-shock-mtp": {
-      "content_version": 2,
-      "hash": "7eeaa8b169fcfec5",
+      "content_version": 3,
+      "hash": "d2c10af69a09b310",
       "path": "modules/reference-library/hemorrhagic-shock-mtp.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2164,8 +2164,8 @@
       "next_review_due": "2027-03-04"
     },
     "reference-library/hs-troponin-chest-pain": {
-      "content_version": 1,
-      "hash": "b234b6129ddb6471",
+      "content_version": 2,
+      "hash": "c117577335ea41f2",
       "path": "modules/reference-library/hs-troponin-chest-pain.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2173,8 +2173,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/hyperkalemia-management": {
-      "content_version": 1,
-      "hash": "cfddd7a24d40790d",
+      "content_version": 2,
+      "hash": "83f6f3d72943a5d4",
       "path": "modules/reference-library/hyperkalemia-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2191,8 +2191,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/icp-tbi-management": {
-      "content_version": 1,
-      "hash": "97860e00662f8f54",
+      "content_version": 2,
+      "hash": "7854e22eb500d7c4",
       "path": "modules/reference-library/icp-tbi-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2254,8 +2254,8 @@
       "next_review_due": "2027-09-02"
     },
     "reference-library/malignant-hyperthermia": {
-      "content_version": 1,
-      "hash": "428c3f8e891cf375",
+      "content_version": 2,
+      "hash": "33ffa771aaf0c1dd",
       "path": "modules/reference-library/malignant-hyperthermia.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2281,8 +2281,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/neuromuscular-blockade-reversal": {
-      "content_version": 1,
-      "hash": "ebee2e893fc42cb4",
+      "content_version": 2,
+      "hash": "9e50d9201bd0508e",
       "path": "modules/reference-library/neuromuscular-blockade-reversal.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2317,8 +2317,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/peep-fio2-ladder": {
-      "content_version": 1,
-      "hash": "d3b5539487a53e92",
+      "content_version": 2,
+      "hash": "5e411e355ea1f057",
       "path": "modules/reference-library/peep-fio2-ladder.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2344,8 +2344,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/physiologically-difficult-airway": {
-      "content_version": 3,
-      "hash": "13dd6e130dc5a152",
+      "content_version": 4,
+      "hash": "b6084b633e386549",
       "path": "modules/reference-library/physiologically-difficult-airway.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2362,8 +2362,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/post-intubation-management": {
-      "content_version": 1,
-      "hash": "ddd2bffe4b68e2aa",
+      "content_version": 2,
+      "hash": "bbc364336fa31224",
       "path": "modules/reference-library/post-intubation-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2425,8 +2425,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/rsi-seven-ps": {
-      "content_version": 1,
-      "hash": "a5431b9fa119a48d",
+      "content_version": 2,
+      "hash": "d59fa1d3fe37fa1f",
       "path": "modules/reference-library/rsi-seven-ps.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2443,8 +2443,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/septic-shock-resuscitation": {
-      "content_version": 1,
-      "hash": "4f470a5c1b0037ab",
+      "content_version": 2,
+      "hash": "d2de2b37a5e35f44",
       "path": "modules/reference-library/septic-shock-resuscitation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2461,8 +2461,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/sodium-disorders": {
-      "content_version": 1,
-      "hash": "74cd369383ffdee7",
+      "content_version": 2,
+      "hash": "aee8a1cacd21200d",
       "path": "modules/reference-library/sodium-disorders.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2470,8 +2470,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/status-asthmaticus-ventilation": {
-      "content_version": 1,
-      "hash": "a5cd4aa7d8e9918e",
+      "content_version": 2,
+      "hash": "d9419963b39d4d68",
       "path": "modules/reference-library/status-asthmaticus-ventilation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2479,8 +2479,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/status-epilepticus-adult": {
-      "content_version": 1,
-      "hash": "f3a145f2b7d92ac0",
+      "content_version": 2,
+      "hash": "eb20371d1c2a7a91",
       "path": "modules/reference-library/status-epilepticus-adult.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2506,8 +2506,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/toxidromes-and-overdoses": {
-      "content_version": 1,
-      "hash": "1a9e7c4a318a96a2",
+      "content_version": 2,
+      "hash": "a7dca4015c3ffcb1",
       "path": "modules/reference-library/toxidromes-and-overdoses.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2515,8 +2515,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/trauma-primary-survey": {
-      "content_version": 1,
-      "hash": "60cf9fbbc1540819",
+      "content_version": 2,
+      "hash": "e604f4cb0229870b",
       "path": "modules/reference-library/trauma-primary-survey.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2524,8 +2524,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/trauma-team-activation": {
-      "content_version": 1,
-      "hash": "29ad88063e500182",
+      "content_version": 2,
+      "hash": "3f93495a4bb807f4",
       "path": "modules/reference-library/trauma-team-activation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2533,8 +2533,8 @@
       "next_review_due": "2027-09-03"
     },
     "reference-library/twelve-lead-stemi-criteria": {
-      "content_version": 2,
-      "hash": "cb98d1c3eb187e48",
+      "content_version": 3,
+      "hash": "a1fdeb4e7d72201b",
       "path": "modules/reference-library/twelve-lead-stemi-criteria.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2542,8 +2542,8 @@
       "next_review_due": "2026-12-01"
     },
     "reference-library/ventilator-management": {
-      "content_version": 3,
-      "hash": "37a0f08f482f34cb",
+      "content_version": 4,
+      "hash": "ad04ae555e0aca14",
       "path": "modules/reference-library/ventilator-management.json",
       "contentType": "reference",
       "section": "Reference Library",

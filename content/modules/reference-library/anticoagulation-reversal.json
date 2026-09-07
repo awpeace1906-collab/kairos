@@ -40,7 +40,7 @@
     "DDAVP"
   ],
   "contentType": "reference",
-  "content_version": 5,
+  "content_version": 6,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -50,6 +50,11 @@
     "Reference_Library_Content_Spec.md"
   ],
   "changelog": [
+    {
+      "version": 6,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
     {
       "version": 5,
       "date": "2026-09-02",
@@ -77,6 +82,8 @@
     }
   ],
   "summary": "Reversal once bleeding starts. Andexanet alfa (Andexxa) is no longer available in the US as of 2026-12-22 — 4F-PCC / aPCC is the only US reversal path for apixaban, rivaroxaban, and edoxaban.",
+  "whyThisMatters": "A bleeding anticoagulated patient is a race between the haematoma and the reversal agent, and the right agent depends entirely on which drug and how major the bleed is — get it wrong and you either under-treat a fatal bleed or cause needless thrombosis. The US landscape shifted in late 2026: andexanet alfa is off the market, so 4F-PCC / aPCC is now the only US reversal path for the factor-Xa DOACs.",
+  "clinicalTakeaway": "First decide whether this is major bleeding (critical site, haemodynamic instability, or a ≥ 2 g/dL haemoglobin drop) — only then reverse. Warfarin: 4F-PCC plus IV vitamin K. Dabigatran: idarucizumab. Apixaban / rivaroxaban / edoxaban: 4F-PCC. Give tranexamic acid and correct calcium alongside, and let the TEG/ROTEM trace target the specific deficit.",
   "body": [
     {
       "type": "callout",

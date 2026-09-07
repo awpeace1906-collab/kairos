@@ -42,7 +42,7 @@
     "SSC 2021"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -54,12 +54,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — bedside resuscitation targets and titration sequence for septic shock, distilled from SSC 2021 + the ANDROMEDA-SHOCK line + the 25-year conceptual review. Management-oriented (what to titrate to what), not a trial summary."
     }
   ],
   "summary": "Antibiotics + source control within the hour. Resuscitate to perfusion, not to a single number: MAP ≥ 65, CRT normalising, lactate clearing, mentation and urine output improving, falling pressor requirement. After the initial bolus, test fluid responsiveness before every further bolus.",
+  "whyThisMatters": "Septic shock kills through time and under-resuscitation: every hour antibiotics are delayed raises mortality, and the commonest bedside error is chasing one number — a MAP, a CVP, a lactate — instead of the patient's actual perfusion. The opposite error is just as lethal: pouring fluid into a patient who has stopped responding to it. Recognition and antibiotics belong to the ED; haemodynamic titration and de-resuscitation continue in the ICU.",
+  "clinicalTakeaway": "Antibiotics and source control within the first hour. Then resuscitate to perfusion, not to one dial — MAP ≥ 65 with a normalising capillary refill, clearing lactate, improving mentation and urine output, and a falling pressor requirement. After the first bolus, prove fluid responsiveness before every further bolus, and stop when the patient stops responding.",
   "body": [
     {
       "type": "heading",

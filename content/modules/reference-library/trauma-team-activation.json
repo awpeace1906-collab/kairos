@@ -33,7 +33,7 @@
     "peds SBP 70 + 2 x age"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2027-09-03",
   "review_tier": 1,
@@ -43,12 +43,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — 3-tier activation framework, CDC high/moderate-risk field triage, geriatric and paediatric adjustments, undertriage/overtriage targets."
     }
   ],
   "summary": "Undertriage is the dangerous error — when in doubt, activate up. In the patient ≥ 65, an SBP < 110 (not 90) already signals physiologic instability, and anticoagulation makes a minor mechanism dangerous. Children compensate until they crash — treat the mechanism and anatomy as the primary drivers.",
+  "whyThisMatters": "Undertriage — sending a sick patient to a lower-tier response — is the error that kills, and the traps are predictable: the older patient whose 'normal' BP is already shock, the anticoagulated patient with a trivial mechanism, and the child who compensates until they arrest.",
+  "clinicalTakeaway": "When in doubt, activate up. Treat SBP < 110 as instability in anyone ≥ 65, take anticoagulation plus any mechanism seriously, and judge children on mechanism and anatomy rather than their misleadingly normal vital signs.",
   "body": [
     {
       "type": "heading",

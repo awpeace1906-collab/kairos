@@ -29,7 +29,7 @@
     "move up the ladder together"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2027-09-03",
   "review_tier": 1,
@@ -39,12 +39,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — both ARDSNet ladders and the oxygenation goal."
     }
   ],
   "summary": "Titrate PEEP and FiO₂ together off a fixed ladder to reach the oxygenation goal (PaO₂ 55–80 mmHg / SpO₂ 88–95%). Two ladders exist — a lower-PEEP and a higher-PEEP version. Pick one and stay on it; they are not interchangeable mid-course without recalculating from the current FiO₂.",
+  "whyThisMatters": "PEEP and FiO₂ have to move together against a fixed ladder — freelancing either one, or switching ladders mid-course without recalculating, is how oxygenation targets get chased with escalating harm.",
+  "clinicalTakeaway": "Pick one ladder (lower-PEEP or higher-PEEP) and stay on it. Titrate PEEP and FiO₂ as a pair to PaO₂ 55–80 / SpO₂ 88–95%. If you must switch ladders, recalculate from the current FiO₂ — they are not interchangeable step-for-step.",
   "body": [
     {
       "type": "heading",

@@ -26,7 +26,7 @@
     "ICU"
   ],
   "contentType": "reference",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-04",
   "next_review_due": "2026-12-04",
   "review_tier": 1,
@@ -39,6 +39,11 @@
     "licensing-sensitive"
   ],
   "changelog": [
+    {
+      "version": 4,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
     {
       "version": 3,
       "date": "2026-09-04",
@@ -56,6 +61,8 @@
     }
   ],
   "summary": "Original algorithm card describing the same clinical steps as AHA ACLS (2025 refresh). Not AHA's copyrighted expression — see build note.",
+  "whyThisMatters": "Arrest survival is decided by the quality and continuity of chest compressions and by whether someone finds the reversible cause — not by which drug goes in when. Under pressure, teams drift into long pulse checks, interrupted compressions, and reflex calcium or bicarbonate that the trials have not supported.",
+  "clinicalTakeaway": "Push hard and fast, minimise every interruption, and rotate compressors every 2 minutes. Shock VF/pVT immediately and give epinephrine early in non-shockable rhythms. Work the H's and T's every cycle — the save is usually in the diagnosis, not the drug box.",
   "body": [
     {
       "type": "heading",

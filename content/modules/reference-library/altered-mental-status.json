@@ -36,7 +36,7 @@
     "elderly SDH from minor fall"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2026-12-03",
   "review_tier": 1,
@@ -46,12 +46,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — first moves, the AEIOU-TIPS differential with workup, and the can't-miss conditions table + pearls."
     }
   ],
   "summary": "First move is always a fingerstick glucose. In anyone malnourished, alcohol-dependent, or where there is any doubt, give thiamine 100 mg IV BEFORE glucose. Never assume 'psychiatric' or 'baseline' — organic causes are missed daily in patients labelled frequent fliers.",
+  "whyThisMatters": "AMS gets anchored on 'psychiatric' or 'baseline' more than almost any other presentation, and organic causes — hypoglycaemia, hypoxia, sepsis, non-convulsive status, a bleed — are missed daily in patients labelled frequent fliers. The reversible ones are time-critical.",
+  "clinicalTakeaway": "Fingerstick glucose first, every time. Give thiamine 100 mg IV before glucose in anyone malnourished or alcohol-dependent, or where there is doubt. Then work AEIOU-TIPS deliberately, and image or get an EEG rather than assuming a known baseline.",
   "body": [
     {
       "type": "callout",

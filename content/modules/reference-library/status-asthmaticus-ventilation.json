@@ -35,7 +35,7 @@
     "sedation paralysis to prevent fighting hypoventilation"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2027-03-03",
   "review_tier": 1,
@@ -45,12 +45,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — the controlled-hypoventilation strategy, initial settings, the monitoring triad, and the sedation/paralysis point."
     }
   ],
   "summary": "This is NOT ARDS ventilation. The lung is not stiff — it is obstructed. The goal is to MINIMISE minute ventilation so an obstructed lung has time to fully exhale, accepting a high PaCO2 and a low pH. High peak pressures from airway resistance are tolerable; the plateau pressure is what matters.",
+  "whyThisMatters": "Ventilating severe asthma with ARDS logic — normal minute ventilation, low tolerated pressures — causes breath-stacking, dynamic hyperinflation, and PEA arrest. The obstructed lung needs time to exhale, not a normal PaCO₂.",
+  "clinicalTakeaway": "Deliberately minimise minute ventilation: low rate, long expiratory time, and accept a high PaCO₂ and low pH (permissive hypercapnia). Watch the plateau pressure, not the peak — high peak from airway resistance is fine. If the patient decompensates, disconnect and allow a full passive exhalation.",
   "body": [
     {
       "type": "callout",

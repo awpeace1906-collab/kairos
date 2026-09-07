@@ -43,7 +43,7 @@
     "improvised peritoneal dialysis"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-04",
   "next_review_due": "2026-12-04",
   "review_tier": 1,
@@ -55,12 +55,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-04",
       "change": "Initial entry — converted from the CV Austere & Disaster Medicine guide's crush-syndrome section: entrapment physiology, the 2-hour tourniquet/isolation threshold, the hyperkalemia treatment ladder, goal-directed fluid resuscitation, and austere renal-replacement bridging."
     }
   ],
   "summary": "Crush syndrome is won or lost before the limb is ever freed. A trapped limb sequesters liters of volume and a lethal potassium load behind an intact barrier; releasing the crushing force without preparation can convert a stable entrapped patient into a cardiac arrest within minutes. Resuscitate before you decompress, isolate when you cannot resuscitate, and treat the potassium as already lethal.",
+  "whyThisMatters": "The danger in crush injury is not the crushed limb — it is the moment of release, when litres of sequestered volume and a lethal potassium load hit the central circulation at once and can arrest a patient who looked stable while trapped. This is a prehospital decision that determines whether the patient survives the transport.",
+  "clinicalTakeaway": "Start IV crystalloid before the crushing force is released — the single highest-yield intervention. Treat the ECG as hyperkalaemia at extrication (calcium first, even pre-emptively for a long entrapment). Target a urine output of 200–300 mL/hr to flush myoglobin; consider a proximal tourniquet if entrapment exceeds 2 hours and you cannot resuscitate and monitor.",
   "body": [
     {
       "type": "heading",

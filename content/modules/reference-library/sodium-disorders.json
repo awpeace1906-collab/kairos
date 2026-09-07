@@ -40,7 +40,7 @@
     "free water deficit formula"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -50,12 +50,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — hyponatremia severity-based management with 3% NaCl dosing, ODS-prevention correction limits + the DDAVP/D5W rescue, SIADH criteria, hypernatremia classification, the free-water-deficit formula, and ICU sodium drift."
     }
   ],
   "summary": "In symptomatic hyponatraemia give 3% NaCl 100–150 mL IV over ~20 min (repeat ×2), targeting +4–6 mEq/L in the first hour to stop the emergency — then STOP and go slow. Overcorrection is the dangerous complication: re-lower with DDAVP + D5W if you exceed 8–10 mEq/L in 24 h.",
+  "whyThisMatters": "In sodium disorders the treatment is more dangerous than the derangement: too-fast correction of chronic hyponatraemia causes osmotic demyelination, an often-irreversible catastrophe, while under-treating a seizing patient wastes the window when hypertonic saline works.",
+  "clinicalTakeaway": "For symptomatic hyponatraemia, give 3% NaCl 100–150 mL over ~20 min (repeat up to ×2) to raise Na⁺ 4–6 mEq/L and stop the emergency — then STOP. Cap correction at 8 mEq/L in 24 h; if you overshoot, re-lower with DDAVP + D5W. For hypernatraemia, replace the free-water deficit slowly (≤ 10–12 mEq/L/day).",
   "body": [
     {
       "type": "heading",

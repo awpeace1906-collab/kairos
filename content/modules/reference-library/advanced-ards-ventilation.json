@@ -33,7 +33,7 @@
     "IMPROVE low tidal volume PROVHILO no benefit high PEEP RM"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2027-09-03",
   "review_tier": 1,
@@ -43,12 +43,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — APRV four-parameter setup + titration, judicious recruitment technique + decremental PEEP trial, and the OR protective-ventilation evidence."
     }
   ],
   "summary": "Three related topics past the standard lung-protective bundle. APRV setup varies more across centres than any other mode. Aggressive maximal recruitment (ART: PEEP 45, peak 60) caused harm — a moderate staircase manoeuvre plus a decremental PEEP trial is a different thing. In the routine surgical patient, low tidal volume does the work; added PEEP/recruitment mostly adds haemodynamic cost.",
+  "whyThisMatters": "The interventions past the lung-protective bundle are where enthusiasm outran evidence: maximal recruitment (ART) killed patients, APRV is set up differently at every centre, and routine intraoperative PEEP mostly buys haemodynamic cost for no benefit. Knowing where the line is matters more than knowing the manoeuvres.",
+  "clinicalTakeaway": "In established ARDS, low tidal volume and a titrated PEEP do the work; reserve a moderate staircase recruitment plus a decremental PEEP trial for refractory hypoxaemia, and avoid the ART-style maximal manoeuvre. Use APRV only if the team runs it routinely. In the routine surgical patient, low tidal volume is enough — don't add PEEP or recruitment reflexively.",
   "body": [
     {
       "type": "heading",

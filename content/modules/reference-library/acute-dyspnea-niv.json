@@ -40,7 +40,7 @@
     "P-SILI tidal volume 9 mL/kg"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2026-12-03",
   "review_tier": 1,
@@ -50,12 +50,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — POCUS pattern → diagnosis → first move table, NIV/HFNC start settings, COPD bundle, and the NIV-failure / early-intubation pearls."
     }
   ],
   "summary": "Lung POCUS at the bedside, done alongside O2 and IV access, sorts undifferentiated dyspnea faster than a chest X-ray (~94% sensitive for cardiogenic oedema). NIV failure that then needs emergent RSI carries higher mortality than an elective early intubation — reassess at 1 hour and do not 'NIV and wait'.",
+  "whyThisMatters": "Bedside lung ultrasound sorts undifferentiated dyspnoea faster and more accurately than a portable chest film — and the costliest error is 'NIV and wait': a trial that fails and then needs a crash intubation carries higher mortality than an earlier controlled one.",
+  "clinicalTakeaway": "Scan the lungs while oxygen and access go on — the pattern points to the diagnosis and the first drug. Start NIV early for cardiogenic oedema and COPD, but set a hard reassessment at 1 hour; if it is not clearly working, intubate electively rather than emergently.",
   "body": [
     {
       "type": "heading",

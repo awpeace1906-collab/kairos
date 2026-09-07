@@ -35,7 +35,7 @@
     "post-intubation hypotension reduce PEEP exclude tension PTX treat hypovolaemia mainstem"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2027-03-03",
   "review_tier": 1,
@@ -44,12 +44,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — initial vent settings, confirm/secure/stabilise checklist, analgosedation, and the post-intubation hypotension differential."
     }
   ],
   "summary": "The five minutes after the tube goes in kill people. Set lung-protective ventilation, confirm placement with waveform capnography and a film, start analgesia-first sedation, and immediately work the post-intubation hypotension differential (PEEP, tension pneumothorax, hypovolaemia, mainstem, the induction agent).",
+  "whyThisMatters": "The tube going in is not the end of the airway emergency — the first five minutes after are when lung-protective settings get skipped, sedation gets stacked before analgesia, and post-intubation hypotension gets treated with fluid instead of its actual cause.",
+  "clinicalTakeaway": "Set lung-protective ventilation immediately, confirm with waveform capnography and a film, and start analgesia-first sedation. If the BP drops, run the differential fast — PEEP, tension pneumothorax, hypovolaemia, mainstem intubation, the induction agent — and treat the one you find.",
   "body": [
     {
       "type": "heading",
