@@ -35,7 +35,7 @@
     "CPP"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-03-02",
   "review_tier": 3,
@@ -47,12 +47,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — converted from the CV HTS-vs-mannitol guide. Mechanism, the acute-window evidence nuance, dosing, safety hard-stops, and the volume-status-driven bedside decision."
     }
   ],
   "summary": "Both agents lower ICP by pulling free water across an intact blood-brain barrier. The clinically useful question is not which is better but which is safer for the patient's volume status, renal function, and sodium trajectory. Mannitol causes obligate diuresis (depletes volume); hypertonic saline expands volume.",
+  "whyThisMatters": "HTS and mannitol lower ICP by the same mechanism, so the choice is not 'which is better' — it is which is safer for this patient's volume status, kidneys, and sodium trajectory. Mannitol depletes volume by obligate diuresis; getting that backwards can crash a hypovolaemic patient.",
+  "clinicalTakeaway": "Decide by which way this patient's volume status needs to move: hypertonic saline for the hypovolaemic or hypotensive patient (it expands volume); mannitol when the patient is euvolaemic/hypervolaemic with good renal function. Respect the sodium and osmolar-gap hard-stops, and don't bolus mannitol into hypotension or renal failure.",
   "body": [
     {
       "type": "callout",

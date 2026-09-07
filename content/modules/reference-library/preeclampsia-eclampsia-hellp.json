@@ -34,7 +34,7 @@
     "deliver >= 34 weeks HELLP"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -44,12 +44,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — diagnostic criteria + severe features, the severe-hypertension treatment table, the full magnesium protocol (loading / maintenance / monitoring / antidote), and HELLP with delivery timing."
     }
   ],
   "summary": "Severe-range BP (SBP ≥ 160 or DBP ≥ 110, sustained) must be treated within 15–60 minutes to prevent haemorrhagic stroke — target 140–155 / 90–105. Magnesium sulfate is for seizure prophylaxis and treatment, NOT for blood pressure. Definitive treatment is delivery.",
+  "whyThisMatters": "Two separate emergencies get conflated: the severe-range blood pressure that causes maternal stroke within the hour if untreated, and the seizure risk that magnesium — not antihypertensives — prevents. Using one drug for the other job is a recognised error.",
+  "clinicalTakeaway": "Treat sustained SBP ≥ 160 or DBP ≥ 110 within 15–60 minutes (labetalol, hydralazine, or oral nifedipine) to a target of 140–155 / 90–105. Give magnesium sulfate for seizure prophylaxis and treatment — it is not a blood-pressure drug. Definitive treatment is delivery.",
   "body": [
     {
       "type": "heading",

@@ -34,7 +34,7 @@
     "woody rigid uterus"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-03-02",
   "review_tier": 1,
@@ -43,12 +43,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the HELPERR sequence for shoulder dystocia, the cord-prolapse steps, and placental abruption recognition + management."
     }
   ],
   "summary": "Shoulder dystocia: call for help, McRoberts + suprapubic (NOT fundal) pressure first, then internal rotation / deliver the posterior arm / all-fours. Cord prolapse: elevate the presenting part continuously and go to an emergent caesarean — do not replace the cord. Abruption: painful bleeding + a rigid tender uterus + fetal distress ± DIC.",
+  "whyThisMatters": "Shoulder dystocia, cord prolapse and abruption each have one wrong move that makes them worse — fundal pressure, replacing the cord, delaying delivery — and each is a scripted, time-critical drill where hesitation costs the baby.",
+  "clinicalTakeaway": "Shoulder dystocia: McRoberts + suprapubic (never fundal) pressure, then internal rotation / posterior arm / all-fours. Cord prolapse: elevate the presenting part continuously and go to an emergent caesarean — do not replace the cord. Abruption: painful bleeding + rigid tender uterus + fetal distress — deliver, and anticipate DIC.",
   "body": [
     {
       "type": "heading",

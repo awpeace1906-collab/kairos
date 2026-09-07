@@ -38,7 +38,7 @@
     "neuraxial pre-scan obese scoliosis"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2027-03-03",
   "review_tier": 1,
@@ -47,12 +47,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — cardiac 5-view sequence + hypotension differential + IVC table, airway US (CTM mark, ETT confirmation, gastric grading), lung US OR context, vascular access, neuraxial pre-scan."
     }
   ],
   "summary": "Five focused domains that change the anesthetic plan at the bedside: cardiac (induction agent choice, the intraoperative hypotension differential), gastric (aspiration risk before induction), airway (mark the cricothyroid membrane before a predicted difficult airway), lung (mainstem vs pneumothorax), and neuraxial (pre-scan the difficult back).",
+  "whyThisMatters": "A 60-second focused scan before induction changes the anaesthetic more often than any lab: it picks the induction agent, flags the full stomach, marks the cricothyroid membrane while there is still time, and pre-reads the difficult back — each a decision that is much worse to make after induction.",
+  "clinicalTakeaway": "Scan the five domains that change the plan: cardiac (agent choice, the hypotension differential), gastric (aspiration risk), airway (mark the cricothyroid membrane in a predicted difficult airway), lung (mainstem vs pneumothorax), and neuraxial (pre-scan the difficult back). Do it before you push drugs.",
   "body": [
     {
       "type": "heading",

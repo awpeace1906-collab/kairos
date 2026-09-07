@@ -1778,16 +1778,16 @@
       "next_review_due": "2026-12-01"
     },
     "reference-library/abg-interpretation": {
-      "content_version": 2,
-      "hash": "78d373fdf1e0baba",
+      "content_version": 3,
+      "hash": "9b67b98cd2f9e589",
       "path": "modules/reference-library/abg-interpretation.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": "stable"
     },
     "reference-library/abnormal-uterine-bleeding": {
-      "content_version": 1,
-      "hash": "53b98c0df1af122d",
+      "content_version": 2,
+      "hash": "d727d5ffd7199394",
       "path": "modules/reference-library/abnormal-uterine-bleeding.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1822,8 +1822,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/acute-pe-guideline-2026": {
-      "content_version": 1,
-      "hash": "2012eedd3c807723",
+      "content_version": 2,
+      "hash": "3e079e720ed61d72",
       "path": "modules/reference-library/acute-pe-guideline-2026.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1840,8 +1840,8 @@
       "next_review_due": "2027-09-03"
     },
     "reference-library/aki-staging-rrt": {
-      "content_version": 1,
-      "hash": "a2e79415eb9e101e",
+      "content_version": 2,
+      "hash": "6e752d56729bd077",
       "path": "modules/reference-library/aki-staging-rrt.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1849,8 +1849,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/albumin-furosemide-push-pull": {
-      "content_version": 1,
-      "hash": "5f56cd7b8df26675",
+      "content_version": 2,
+      "hash": "4f4dc813c5998110",
       "path": "modules/reference-library/albumin-furosemide-push-pull.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1885,8 +1885,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/anesthesia-pocus": {
-      "content_version": 1,
-      "hash": "a712cb816ebb73d4",
+      "content_version": 2,
+      "hash": "b3e19d419f35267f",
       "path": "modules/reference-library/anesthesia-pocus.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1903,8 +1903,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/antidotes-reversal-agents": {
-      "content_version": 1,
-      "hash": "eb6296bc01a4a171",
+      "content_version": 2,
+      "hash": "b03ca851c0f6a598",
       "path": "modules/reference-library/antidotes-reversal-agents.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1912,8 +1912,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/bartholin-vulvar-emergencies": {
-      "content_version": 1,
-      "hash": "9b8a874c2e127dd1",
+      "content_version": 2,
+      "hash": "3f9235c192d21a00",
       "path": "modules/reference-library/bartholin-vulvar-emergencies.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1921,8 +1921,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/beta-blocker-selectivity": {
-      "content_version": 1,
-      "hash": "5f5ba7ae451a0ab5",
+      "content_version": 2,
+      "hash": "bef28fc70d66c40f",
       "path": "modules/reference-library/beta-blocker-selectivity.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1930,8 +1930,8 @@
       "next_review_due": "2027-09-02"
     },
     "reference-library/blood-products": {
-      "content_version": 1,
-      "hash": "d4ba7828f196fe84",
+      "content_version": 2,
+      "hash": "41db77154da0ac1a",
       "path": "modules/reference-library/blood-products.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1939,8 +1939,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/capnography": {
-      "content_version": 1,
-      "hash": "d7aa67e49d59686c",
+      "content_version": 2,
+      "hash": "90b04f0ebd32a198",
       "path": "modules/reference-library/capnography.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1948,8 +1948,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/childhood-immunization-schedule": {
-      "content_version": 1,
-      "hash": "810fa2cee62177ce",
+      "content_version": 2,
+      "hash": "cdf7e66395d4a9aa",
       "path": "modules/reference-library/childhood-immunization-schedule.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1957,8 +1957,8 @@
       "next_review_due": "2027-01-03"
     },
     "reference-library/chronic-htn-gdm-pregnancy": {
-      "content_version": 1,
-      "hash": "e13a245825735947",
+      "content_version": 2,
+      "hash": "ca1020959ac5d489",
       "path": "modules/reference-library/chronic-htn-gdm-pregnancy.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1975,8 +1975,8 @@
       "next_review_due": "2026-12-04"
     },
     "reference-library/contraception-methods": {
-      "content_version": 1,
-      "hash": "3e0242af4ffb67a6",
+      "content_version": 2,
+      "hash": "29ad07612b90541b",
       "path": "modules/reference-library/contraception-methods.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1984,8 +1984,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/contrast-associated-aki": {
-      "content_version": 2,
-      "hash": "2f2902ce7b677209",
+      "content_version": 3,
+      "hash": "b1c6be1731e2ff08",
       "path": "modules/reference-library/contrast-associated-aki.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2011,8 +2011,8 @@
       "next_review_due": "2026-12-04"
     },
     "reference-library/csection-analgesia-prospect": {
-      "content_version": 1,
-      "hash": "8f53d80298214912",
+      "content_version": 2,
+      "hash": "5f487dfdb52c3f03",
       "path": "modules/reference-library/csection-analgesia-prospect.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2020,8 +2020,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/decision-rules-cspine-ct-head": {
-      "content_version": 1,
-      "hash": "d0c54f0162f95c90",
+      "content_version": 2,
+      "hash": "a13486c79c819f1c",
       "path": "modules/reference-library/decision-rules-cspine-ct-head.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2029,8 +2029,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/drug-concentration-math": {
-      "content_version": 1,
-      "hash": "141f9262ef63a15a",
+      "content_version": 2,
+      "hash": "8627ba01939ca8ef",
       "path": "modules/reference-library/drug-concentration-math.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2038,8 +2038,8 @@
       "next_review_due": "2027-09-03"
     },
     "reference-library/drug-interactions-high-yield": {
-      "content_version": 1,
-      "hash": "c6049d29aa67fd63",
+      "content_version": 2,
+      "hash": "6717d70fea0ed940",
       "path": "modules/reference-library/drug-interactions-high-yield.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2047,8 +2047,8 @@
       "next_review_due": "2027-03-04"
     },
     "reference-library/ecg-library": {
-      "content_version": 2,
-      "hash": "af957d155db644f9",
+      "content_version": 3,
+      "hash": "efd7ac8383494e1d",
       "path": "modules/reference-library/ecg-library.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2056,8 +2056,8 @@
       "next_review_due": "2027-03-01"
     },
     "reference-library/ecmo-support": {
-      "content_version": 1,
-      "hash": "f1d1dcea7ba92a3e",
+      "content_version": 2,
+      "hash": "3b34834b89f7fa72",
       "path": "modules/reference-library/ecmo-support.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2065,8 +2065,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/ectopic-pregnancy": {
-      "content_version": 1,
-      "hash": "2d7b5c8fc7554af4",
+      "content_version": 2,
+      "hash": "ce4fb5ec9ca5b622",
       "path": "modules/reference-library/ectopic-pregnancy.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2083,8 +2083,8 @@
       "next_review_due": "2027-09-03"
     },
     "reference-library/efm-fetal-heart-rate": {
-      "content_version": 1,
-      "hash": "904e5063a8de002b",
+      "content_version": 2,
+      "hash": "6703ca40d81c809a",
       "path": "modules/reference-library/efm-fetal-heart-rate.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2092,8 +2092,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/emergency-drugs-pregnancy": {
-      "content_version": 1,
-      "hash": "e5e4f9378de9eb81",
+      "content_version": 2,
+      "hash": "80f4ed70fcdf741a",
       "path": "modules/reference-library/emergency-drugs-pregnancy.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2101,8 +2101,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/empiric-antibiotics-cap": {
-      "content_version": 1,
-      "hash": "6e04ceb9ceb0fd20",
+      "content_version": 2,
+      "hash": "23dd33e33fc4c30d",
       "path": "modules/reference-library/empiric-antibiotics-cap.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2110,8 +2110,8 @@
       "next_review_due": "2026-11-30"
     },
     "reference-library/empiric-antibiotics-ed-icu": {
-      "content_version": 1,
-      "hash": "c9e671a44fb06038",
+      "content_version": 2,
+      "hash": "dac84642f7eeee15",
       "path": "modules/reference-library/empiric-antibiotics-ed-icu.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2119,8 +2119,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/empiric-antibiotics-outpatient": {
-      "content_version": 1,
-      "hash": "183d5409e168aa1c",
+      "content_version": 2,
+      "hash": "b98715dd9cabefe2",
       "path": "modules/reference-library/empiric-antibiotics-outpatient.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2128,8 +2128,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/erc-2025-pediatric-life-support": {
-      "content_version": 1,
-      "hash": "933ff0253654e099",
+      "content_version": 2,
+      "hash": "500bb9f07c14479c",
       "path": "modules/reference-library/erc-2025-pediatric-life-support.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2137,8 +2137,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/fetal-surveillance": {
-      "content_version": 1,
-      "hash": "382a16d5b715887e",
+      "content_version": 2,
+      "hash": "697030653d9037f3",
       "path": "modules/reference-library/fetal-surveillance.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2146,8 +2146,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/heart-failure-continuum": {
-      "content_version": 1,
-      "hash": "b299092adf7c1181",
+      "content_version": 2,
+      "hash": "4c78d181bcd299a1",
       "path": "modules/reference-library/heart-failure-continuum.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2182,8 +2182,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/hyperosmolar-therapy": {
-      "content_version": 1,
-      "hash": "e65cf269f11eac88",
+      "content_version": 2,
+      "hash": "a20df98c44ad9e03",
       "path": "modules/reference-library/hyperosmolar-therapy.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2200,8 +2200,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/icu-workflow": {
-      "content_version": 1,
-      "hash": "de6c787057a1e90d",
+      "content_version": 2,
+      "hash": "7d87922f097e26bc",
       "path": "modules/reference-library/icu-workflow.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2209,8 +2209,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/induction-augmentation": {
-      "content_version": 1,
-      "hash": "1094961b4e61e0df",
+      "content_version": 2,
+      "hash": "fbbd0b2e1538c2d2",
       "path": "modules/reference-library/induction-augmentation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2218,8 +2218,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/iv-fluids": {
-      "content_version": 2,
-      "hash": "f3dbde99ad8989ec",
+      "content_version": 3,
+      "hash": "16eec25699710d41",
       "path": "modules/reference-library/iv-fluids.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2227,8 +2227,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/lab-interpretation": {
-      "content_version": 1,
-      "hash": "0727d9eb32395748",
+      "content_version": 2,
+      "hash": "b6bc16194d709c5d",
       "path": "modules/reference-library/lab-interpretation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2236,8 +2236,8 @@
       "next_review_due": "2026-11-30"
     },
     "reference-library/labor-progression": {
-      "content_version": 1,
-      "hash": "6ef08b3affb04fe3",
+      "content_version": 2,
+      "hash": "2c168c6c22e3f8e5",
       "path": "modules/reference-library/labor-progression.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2245,8 +2245,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/mac-values": {
-      "content_version": 1,
-      "hash": "ad9d87b13ae1fdfb",
+      "content_version": 2,
+      "hash": "2dc7e2be773ac3ee",
       "path": "modules/reference-library/mac-values.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2263,8 +2263,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/maternal-cardiac-arrest": {
-      "content_version": 1,
-      "hash": "c73e5f674face6f4",
+      "content_version": 2,
+      "hash": "18fcf79d303f0eb3",
       "path": "modules/reference-library/maternal-cardiac-arrest.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2272,8 +2272,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/neuraxial-anesthesia": {
-      "content_version": 1,
-      "hash": "1f797b917e1d68c8",
+      "content_version": 2,
+      "hash": "6834ff60fea4b3b6",
       "path": "modules/reference-library/neuraxial-anesthesia.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2290,8 +2290,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/obstetric-delivery-emergencies": {
-      "content_version": 1,
-      "hash": "42e1211c4f0433f9",
+      "content_version": 2,
+      "hash": "ce859ae0975bd0cd",
       "path": "modules/reference-library/obstetric-delivery-emergencies.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2299,8 +2299,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/ovarian-torsion": {
-      "content_version": 1,
-      "hash": "158c6dcfd1eaba01",
+      "content_version": 2,
+      "hash": "3940c9ec9778b4ec",
       "path": "modules/reference-library/ovarian-torsion.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2308,8 +2308,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/padis-bundle": {
-      "content_version": 1,
-      "hash": "ee9f0cc692d74cc9",
+      "content_version": 2,
+      "hash": "d70075f0feaefa95",
       "path": "modules/reference-library/padis-bundle.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2326,8 +2326,8 @@
       "next_review_due": "2027-09-03"
     },
     "reference-library/perioperative-glycemic-management": {
-      "content_version": 1,
-      "hash": "a4e954c10e68165b",
+      "content_version": 2,
+      "hash": "389d8554778d1d1a",
       "path": "modules/reference-library/perioperative-glycemic-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2335,8 +2335,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/peripheral-iv-vasopressors": {
-      "content_version": 1,
-      "hash": "8afdde5725e9eded",
+      "content_version": 2,
+      "hash": "3a6e15a13a4fe831",
       "path": "modules/reference-library/peripheral-iv-vasopressors.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2353,8 +2353,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/pid-tubo-ovarian-abscess": {
-      "content_version": 1,
-      "hash": "a07dd04c9ce221d0",
+      "content_version": 2,
+      "hash": "6f1e0be388d88847",
       "path": "modules/reference-library/pid-tubo-ovarian-abscess.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2371,8 +2371,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/postpartum-hemorrhage": {
-      "content_version": 1,
-      "hash": "e70ebd1570396e8b",
+      "content_version": 2,
+      "hash": "9334a70858740420",
       "path": "modules/reference-library/postpartum-hemorrhage.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2380,8 +2380,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/preanesthesia-checklist": {
-      "content_version": 1,
-      "hash": "b04311a8976830a1",
+      "content_version": 2,
+      "hash": "75562de82b8d750d",
       "path": "modules/reference-library/preanesthesia-checklist.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2389,8 +2389,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/preeclampsia-eclampsia-hellp": {
-      "content_version": 1,
-      "hash": "c6bb25ab56cb2ead",
+      "content_version": 2,
+      "hash": "59205bfd6d35dcc2",
       "path": "modules/reference-library/preeclampsia-eclampsia-hellp.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2398,8 +2398,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/prenatal-screening": {
-      "content_version": 1,
-      "hash": "57c6c10ab96c63d3",
+      "content_version": 2,
+      "hash": "216da03ed38339f7",
       "path": "modules/reference-library/prenatal-screening.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2407,8 +2407,8 @@
       "next_review_due": "2027-06-03"
     },
     "reference-library/pressor-inotrope-reference": {
-      "content_version": 1,
-      "hash": "c534827746d2824c",
+      "content_version": 2,
+      "hash": "48ad3dc556e67bed",
       "path": "modules/reference-library/pressor-inotrope-reference.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2416,8 +2416,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/preterm-labor": {
-      "content_version": 1,
-      "hash": "1706bde62c9173dd",
+      "content_version": 2,
+      "hash": "401c676cb93c2046",
       "path": "modules/reference-library/preterm-labor.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2434,8 +2434,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/sedation-analgesia-agents": {
-      "content_version": 1,
-      "hash": "264587b76993ca1e",
+      "content_version": 2,
+      "hash": "b319ccb3ac9f50c4",
       "path": "modules/reference-library/sedation-analgesia-agents.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2452,8 +2452,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/shock-classification": {
-      "content_version": 1,
-      "hash": "f09d8c89f4ce2d91",
+      "content_version": 2,
+      "hash": "2170cd4b49b1f691",
       "path": "modules/reference-library/shock-classification.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2488,8 +2488,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/surgical-antibiotic-prophylaxis": {
-      "content_version": 1,
-      "hash": "8722ddc92e49fb4d",
+      "content_version": 2,
+      "hash": "f46965d1ec6863e0",
       "path": "modules/reference-library/surgical-antibiotic-prophylaxis.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2497,8 +2497,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/teg-rotem-interpretation": {
-      "content_version": 1,
-      "hash": "abb56e8eb178aaff",
+      "content_version": 2,
+      "hash": "fc93563ad129bd41",
       "path": "modules/reference-library/teg-rotem-interpretation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2551,8 +2551,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/ventilator-modes": {
-      "content_version": 1,
-      "hash": "6753b1afa014d6e1",
+      "content_version": 2,
+      "hash": "1e0523abe3a1269e",
       "path": "modules/reference-library/ventilator-modes.json",
       "contentType": "reference",
       "section": "Reference Library",

@@ -35,7 +35,7 @@
     "ruptured ectopic OR"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2026-12-03",
   "review_tier": 1,
@@ -45,12 +45,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — β-hCG / discriminatory-zone interpretation, single-dose methotrexate eligibility + monitoring, surgical indications, ruptured-ectopic protocol."
     }
   ],
   "summary": "Any β-hCG-positive patient with no intrauterine pregnancy on transvaginal ultrasound has an ectopic until proven otherwise. A ruptured ectopic is an immediate surgical emergency — do not delay theatre for further imaging or a methotrexate workup.",
+  "whyThisMatters": "Ectopic is the leading cause of first-trimester maternal death, and it kills through delay — waiting for a repeat β-hCG or a methotrexate workup while a tube is rupturing. The default assumption has to be pessimistic.",
+  "clinicalTakeaway": "A β-hCG-positive patient with no intrauterine pregnancy on transvaginal ultrasound has an ectopic until proven otherwise. Any instability, or a rupture, goes straight to theatre — no further imaging, no methotrexate workup. Reserve single-dose methotrexate for the stable patient who meets every eligibility criterion.",
   "body": [
     {
       "type": "heading",

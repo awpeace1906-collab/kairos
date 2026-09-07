@@ -38,7 +38,7 @@
     "read-back"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 3,
@@ -50,12 +50,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — converted from the CV ICU workflow guide: FAST HUGS BID admission checklist, the 5-step pre-round, and the I-PASS signout framework."
     }
   ],
   "summary": "Every ICU shift is three structural moments — build the plan (admission), prepare to defend it (pre-round), hand it off (signout). The quality of the signout is downstream of the quality of the admission orders. FAST HUGS BID on admission; I-PASS at handoff.",
+  "whyThisMatters": "The quality of a signout is set hours earlier by the quality of the admission orders — a shift that skips a structured admission and pre-round hands off a plan nobody can defend, and things get missed in the gap.",
+  "clinicalTakeaway": "Run FAST HUGS BID on every ICU admission for the first orders, pre-round in five steps in under ten minutes per patient, and hand off with I-PASS. Treat the three moments as one continuous workflow, not three skills.",
   "body": [
     {
       "type": "heading",

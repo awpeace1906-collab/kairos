@@ -37,7 +37,7 @@
     "carb drink up to 2 h"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-03-02",
   "review_tier": 3,
@@ -47,12 +47,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the MSMAID pre-induction check and the ASA 2023 fasting intervals, including the GLP-1 agonist and carbohydrate-loading guidance."
     }
   ],
   "summary": "MSMAID before every induction: Machine · Suction · Monitors · Airway · IV · Drugs. ASA 2023 fasting: clear liquids 2 h, breast milk 4 h, formula 6 h, light meal 6 h, fatty/full meal 8 h. GI symptoms on a GLP-1 agonist → treat as a full stomach regardless of the fast.",
+  "whyThisMatters": "The pre-induction misses that cause harm are the mundane ones — no working suction, no backup airway, an unrecognised full stomach — and MSMAID plus the current fasting rules exist so none of them depend on memory under time pressure.",
+  "clinicalTakeaway": "Run MSMAID before every induction: Machine, Suction, Monitors, Airway, IV, Drugs. Apply the ASA 2023 fasting intervals (clear liquids 2 h, breast milk 4 h, formula 6 h, light meal 6 h, fatty/full meal 8 h). Treat a patient with GI symptoms on a GLP-1 agonist as a full stomach regardless of the fast.",
   "body": [
     {
       "type": "heading",

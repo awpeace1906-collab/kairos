@@ -35,7 +35,7 @@
     "ratio strength grams per mL"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2027-09-03",
   "review_tier": 1,
@@ -44,12 +44,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — percent-to-mg/mL rule, common local anaesthetic concentrations, and the epinephrine ratio-strength conversions."
     }
   ],
   "summary": "Percent concentration × 10 = mg/mL (1% = 10 mg/mL). Ratio strength is grams per total mL: 1:1000 = 1 g in 1000 mL = 1 mg/mL; each further 10-fold dilution divides the concentration by 10.",
+  "whyThisMatters": "Concentration errors are dosing errors: mixing up percent, ratio strength, and mg/mL is a recognised route to a 10-fold overdose, and it happens under time pressure with adrenaline, lidocaine, and infusions.",
+  "clinicalTakeaway": "Percent × 10 = mg/mL (1% = 10 mg/mL). Ratio strength is grams per total mL: 1:1000 = 1 mg/mL, and each further 10-fold dilution divides the concentration by 10 (1:10,000 = 0.1 mg/mL). Convert to mg/mL before you calculate a dose.",
   "body": [
     {
       "type": "heading",

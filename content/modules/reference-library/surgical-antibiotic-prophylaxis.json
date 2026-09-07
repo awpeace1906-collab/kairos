@@ -34,7 +34,7 @@
     "procedure-specific selection"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2027-03-03",
   "review_tier": 1,
@@ -44,12 +44,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — general principles, agent dosing + redose intervals table, and procedure-specific selection with penicillin-allergy alternatives."
     }
   ],
   "summary": "Give within 60 minutes of incision (120 minutes for vancomycin or a fluoroquinolone). Redose intraoperatively at 1–2× the drug's half-life, or after > 1500 mL blood loss. Stop within 24 hours postoperatively (48 hours for cardiac surgery). A single dose is adequate for most procedures.",
+  "whyThisMatters": "Surgical prophylaxis fails in two predictable ways — given too late (or not redosed through a long or bloody case) so tissue levels are inadequate at the moment of contamination, and continued too long afterward, which drives resistance and C. difficile without reducing infection.",
+  "clinicalTakeaway": "Give within 60 minutes of incision (120 for vancomycin or a fluoroquinolone). Redose at 1–2 half-lives or after > 1500 mL blood loss. Stop within 24 hours postoperatively (48 for cardiac). One dose is enough for most procedures.",
   "body": [
     {
       "type": "heading",

@@ -19,13 +19,18 @@
     "ICU"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-08-31",
   "review_tier": "stable",
   "sources": [
     "Standard acid-base physiology; Critical (consolidated)"
   ],
   "changelog": [
+    {
+      "version": 3,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
     {
       "version": 2,
       "date": "2026-09-02",
@@ -38,6 +43,8 @@
     }
   ],
   "summary": "A stepwise method with the compensation formulas and two oxygenation tools.",
+  "whyThisMatters": "ABG misreads happen when the reader jumps to the obvious abnormality and skips the compensation check — missing a second, hidden acid–base disorder — or treats the PaO₂ without computing the A-a gradient that says whether the lung or the ventilation is the problem.",
+  "clinicalTakeaway": "Work the steps in order: pH, then the primary disorder, then the expected compensation (does the measured value match the formula? if not, there is a second disorder), then the anion gap and delta-delta, then the A-a gradient for the oxygenation problem.",
   "body": [
     {
       "type": "heading",

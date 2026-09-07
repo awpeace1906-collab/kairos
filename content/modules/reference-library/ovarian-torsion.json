@@ -32,7 +32,7 @@
     "6-8 hour window"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2026-12-03",
   "review_tier": 1,
@@ -42,12 +42,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — presentation, ultrasound findings + the Doppler caveat, and the diagnostic/surgical steps table."
     }
   ],
   "summary": "A time-critical surgical emergency. A normal Doppler does NOT rule it out — clinical suspicion drives the decision to operate. Do not withhold analgesia pending the diagnosis. Detorse even a blue-black ovary; reserve oophorectomy for confirmed necrosis.",
+  "whyThisMatters": "Torsion is an ovary-losing emergency where the classic trap is trusting a normal Doppler — arterial flow can persist in a torsed ovary — and where analgesia and the operating room are both delayed 'pending the diagnosis'.",
+  "clinicalTakeaway": "Clinical suspicion drives the laparoscopy, not the Doppler. Don't withhold analgesia. Detorse even a blue-black ovary and reassess; reserve oophorectomy for frank necrosis.",
   "body": [
     {
       "type": "callout",

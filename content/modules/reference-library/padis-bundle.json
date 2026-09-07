@@ -38,7 +38,7 @@
     "avoid benzodiazepines"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 3,
@@ -48,12 +48,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the PADIS domains + tools + targets, the RASS scale, and the ICU sedative/analgesic quick-reference. 2025 update: dexmedetomidine over propofol for light sedation in ventilated adults; Anxiety added as a 6th domain."
     }
   ],
   "summary": "Analgesia FIRST — treat pain before titrating sedation. Target RASS −1 to 0 for most ventilated patients. Assess each domain with a validated tool every shift. Avoid benzodiazepines (delirium). PADIS 2025: dexmedetomidine is suggested over propofol for light sedation in ventilated adults, and anxiety is a new sixth domain (non-pharmacologic strategies first).",
+  "whyThisMatters": "ICU sedation goes wrong when it is titrated before pain is treated, aimed too deep, or run on benzodiazepines — each drives delirium, ventilator days, and long-term cognitive harm. PADIS is a bundle precisely because the domains interact.",
+  "clinicalTakeaway": "Analgesia first — treat pain before touching sedation. Target RASS −1 to 0 for most ventilated patients, assess each PADIS domain with a validated tool every shift, and avoid benzodiazepines; PADIS 2025 suggests dexmedetomidine over propofol for light sedation.",
   "body": [
     {
       "type": "heading",

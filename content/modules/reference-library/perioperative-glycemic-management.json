@@ -36,7 +36,7 @@
     "undiagnosed diabetes"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-03-02",
   "review_tier": 3,
@@ -48,12 +48,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — converted from the CV perioperative hyperglycemia guide. Targets, treatment threshold, and the medication-hold table incl. the reversed 2024 GLP-1 guidance."
     }
   ],
   "summary": "Target 100–180 mg/dL; treat sustained values > 180. Tighter than ~80–180 has no clear outcome advantage and a real hypoglycemia cost. Screen everyone — ~1/3 of hospital hyperglycemia occurs with no prior diabetes diagnosis, and that group carries the higher mortality signal. Frame it as physiologic stability, not glycemic perfection.",
+  "whyThisMatters": "Perioperative hyperglycaemia is under-recognised — a third of it occurs in patients with no diabetes diagnosis, and that group carries the higher mortality — and over-corrected: tighter than ~80–180 buys no outcome benefit and real hypoglycaemia risk.",
+  "clinicalTakeaway": "Screen every surgical patient. Target 100–180 mg/dL and treat sustained values > 180; don't chase tighter. Adjust the pre-op medication plan (hold or reduce oral agents and correction insulin, continue basal) and treat this as a stress response, not just diabetes.",
   "body": [
     {
       "type": "heading",

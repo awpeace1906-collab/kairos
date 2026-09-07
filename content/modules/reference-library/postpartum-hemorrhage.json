@@ -36,7 +36,7 @@
     "Bakri balloon"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -46,12 +46,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the staged response, the 4 Ts, the uterotonic ladder with doses and contraindications, TXA, and balloon tamponade."
     }
   ],
   "summary": "PPH = cumulative blood loss ≥ 1000 mL, OR any blood loss with signs of hypovolaemia, within 24 h of delivery. Leading cause of maternal mortality worldwide. Work the 4 Ts — Tone (80%), Trauma, Tissue, Thrombin — while escalating the staged response.",
+  "whyThisMatters": "PPH is the leading cause of maternal death worldwide and it kills fast — the failure mode is a slow, unstaged response to blood loss that is underestimated because it is cumulative and partly concealed. Uterine atony causes 80%.",
+  "clinicalTakeaway": "Recognise PPH at ≥ 1000 mL cumulative loss, or any loss with hypovolaemia signs. Run the staged response and work the 4 Ts — Tone, Trauma, Tissue, Thrombin — in parallel: fundal massage and the uterotonic ladder first, TXA within 3 hours, and escalate to tamponade, embolisation, or laparotomy without waiting.",
   "body": [
     {
       "type": "heading",

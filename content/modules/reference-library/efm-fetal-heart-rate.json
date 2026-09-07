@@ -34,7 +34,7 @@
     "scalp stim acceleration = pH >= 7.20"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-03-02",
   "review_tier": 3,
@@ -44,12 +44,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the NICHD three-category system, deceleration types and their mechanism, and the intrauterine-resuscitation steps."
     }
   ],
   "summary": "Category I = normal, no action. Category III = abnormal (sinusoidal, OR absent variability with recurrent late/variable decelerations or bradycardia) → intrauterine resuscitation while expediting delivery. Category II (everything in between) → evaluate and take corrective measures, reassess.",
+  "whyThisMatters": "The NICHD three-category system is only useful if Category II — which is most tracings — triggers active evaluation and correction rather than watchful waiting, and if Category III is recognised as the drop-everything emergency it is.",
+  "clinicalTakeaway": "Category I: no action. Category III (sinusoidal, or absent variability with recurrent late/variable decelerations or bradycardia): start intrauterine resuscitation and expedite delivery. Category II: evaluate the cause and take corrective measures (reposition, fluids, stop oxytocin, O₂, treat hypotension), then reassess.",
   "body": [
     {
       "type": "heading",

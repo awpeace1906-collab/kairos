@@ -43,7 +43,7 @@
     "PLLR"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -55,12 +55,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — converted from the CV Emergency Drugs in Pregnancy reference. Organized by what you're treating; the governing principle is that maternal stabilisation IS fetal stabilisation."
     }
   ],
   "summary": "Maternal haemodynamic stability is fetal stability — don't undertreat a genuine maternal emergency out of fetal-risk hesitancy. Every 'avoid' tier here still carries an 'unless life-threatening' escape clause. Position matters: manual left uterine displacement / left lateral tilt at ≥ 20 weeks during any resuscitation.",
+  "whyThisMatters": "The recurring error in the pregnant emergency is under-treating the mother out of fetal-risk hesitancy — but maternal stability IS fetal stability, and almost every drug 'avoid' has a life-threatening-emergency exception. Positioning is a drug in itself here.",
+  "clinicalTakeaway": "Treat the maternal emergency as you would in any adult — every 'avoid' tier carries an 'unless life-threatening' escape. From 20 weeks, apply continuous manual left uterine displacement (or left lateral tilt) during any resuscitation. Treat severe-range BP within 30–60 minutes.",
   "body": [
     {
       "type": "callout",

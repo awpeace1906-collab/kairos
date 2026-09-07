@@ -37,7 +37,7 @@
     "ELSO"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -49,12 +49,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — converted from the CV ECMO guide: circuit, cannulation strategies, indications/contraindications, SAVE risk classes, the ECMO-CS/ECLS-SHOCK 'now vs if-and-when' question, weaning readiness and failure predictors."
     }
   ],
   "summary": "VA-ECMO replaces both the heart and the lung (drains venous blood, oxygenates it, returns it under arterial pressure). VV-ECMO supports gas exchange only — the native heart still does the circulating. Overall adult VA-ECMO survival to discharge is ~41% but varies enormously by indication.",
+  "whyThisMatters": "The ECMO decision is really two decisions — which mode (is the heart failing, or just the lungs?) and whether to cannulate now or hold — and both are made better by knowing the survival-by-indication data and the pre-cannulation risk score before the phone call, not during it.",
+  "clinicalTakeaway": "Match the mode to the failure: VA-ECMO when the heart (± lungs) is failing, VV-ECMO for isolated gas-exchange failure with an intact circulation. Use the indication and the SAVE score to set expectations before cannulating, and decide 'now' vs 'if-and-when' explicitly. Anticipate the LV-distension, limb-ischaemia, and bleeding complications from the start.",
   "body": [
     {
       "type": "heading",

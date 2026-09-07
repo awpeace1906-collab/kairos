@@ -643,6 +643,23 @@ Last updated: 2026-09-01
   - Verified live: clicking the ICU chip persists to localStorage and reorders
     the Reference Library › Critical Care list ICU-first; About picker round-trips.
   - Pipeline: validate 285/0/0, test 231/0, synced.
+- 2026-09-07 — **Reference Library standard template — FULL BACKFILL DONE (87/87).**
+  Every reference-library module now carries `whyThisMatters` (clinical stakes /
+  the classic error / prehospital→ED→OR→ICU continuum framing where it fits,
+  upstream of `summary`) + `clinicalTakeaway` (the one action). Done in 6
+  batches (`scratchpad/reftemplate_batch{1-6}.py`), grounded in each module's
+  own summary + headings, `content_version` bumped + changelog entry on each.
+  All 58 Tier-1 first, then the 29 Tier-2/3/stable. Renders as framed
+  "WHY THIS MATTERS" / "CLINICAL TAKEAWAY" blocks — web `.why-matters`/`.takeaway`
+  between summary and body, iOS `framedNote`; verified live (septic-shock).
+  Pipeline: validate 285/0/0, test 231/0, synced.
+  - Note: a stale service worker on `localhost:4737` served old JS during
+    verification — needed a query-string cache-bust; not a code issue.
+  - **DIRECTIONS_FORWARD §1 is now complete** (care-setting lens shipped
+    2026-09-07; reference template + full backfill done). The specialization
+    angle — reframing `whyThisMatters`/`clinicalTakeaway` around the resus
+    continuum where a topic genuinely shifts prehospital → ED → OR → ICU — was
+    applied where it fit and left off the static references where it didn't.
 
 ---
 

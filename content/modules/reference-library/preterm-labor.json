@@ -3,11 +3,38 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Preterm Labor",
-  "aliases": ["PTL", "threatened preterm labor", "antenatal corticosteroids", "betamethasone", "magnesium neuroprotection", "tocolysis", "preterm birth prevention", "vaginal progesterone"],
-  "tags": ["preterm labor", "antenatal steroids", "magnesium sulfate", "tocolysis", "GBS prophylaxis", "OB", "L&D"],
-  "keywords": ["contractions >= 4 per 20 min", "cervical length < 20 mm TVUS", "betamethasone 12 mg IM q24h x2", "23-34 weeks steroids", "late preterm 34-36 weeks steroids", "magnesium 4-6 g load 1-2 g/hr < 32 weeks neuroprotection BEAM", "tocolysis 48 hours only nifedipine indomethacin", "GBS penicillin", "17-OHP caproate weekly"],
+  "aliases": [
+    "PTL",
+    "threatened preterm labor",
+    "antenatal corticosteroids",
+    "betamethasone",
+    "magnesium neuroprotection",
+    "tocolysis",
+    "preterm birth prevention",
+    "vaginal progesterone"
+  ],
+  "tags": [
+    "preterm labor",
+    "antenatal steroids",
+    "magnesium sulfate",
+    "tocolysis",
+    "GBS prophylaxis",
+    "OB",
+    "L&D"
+  ],
+  "keywords": [
+    "contractions >= 4 per 20 min",
+    "cervical length < 20 mm TVUS",
+    "betamethasone 12 mg IM q24h x2",
+    "23-34 weeks steroids",
+    "late preterm 34-36 weeks steroids",
+    "magnesium 4-6 g load 1-2 g/hr < 32 weeks neuroprotection BEAM",
+    "tocolysis 48 hours only nifedipine indomethacin",
+    "GBS penicillin",
+    "17-OHP caproate weekly"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2027-03-03",
   "review_tier": 1,
@@ -15,26 +42,79 @@
     "Critical Vector — OB Pocket Guide: Preterm Labor (ACOG 2023)",
     "ACOG Practice Bulletins on preterm labor and antenatal corticosteroid therapy; BEAM trial (Rouse 2008)"
   ],
-  "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — diagnosis, the intervention-by-gestational-age table (steroids, magnesium neuroprotection, tocolysis, GBS, progesterone)." }],
+  "changelog": [
+    {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
+      "version": 1,
+      "date": "2026-09-03",
+      "change": "Initial entry — diagnosis, the intervention-by-gestational-age table (steroids, magnesium neuroprotection, tocolysis, GBS, progesterone)."
+    }
+  ],
   "summary": "The tocolytic buys 48 hours — its only job is to let a course of antenatal steroids take effect and allow transfer to a centre with a NICU. Give magnesium for fetal neuroprotection below 32 weeks. There is no role for maintenance tocolysis.",
+  "whyThisMatters": "Tocolysis gets over-asked to do too much — its only job is to buy about 48 hours for steroids and transfer; there is no benefit to maintenance tocolysis, and the neuroprotection window for magnesium is easy to miss.",
+  "clinicalTakeaway": "Use a tocolytic only to gain 48 hours for a course of antenatal corticosteroids and transfer to a NICU centre — no maintenance tocolysis. Give magnesium sulfate for fetal neuroprotection below 32 weeks. Add group B strep prophylaxis if delivery looks imminent.",
   "body": [
-    { "type": "heading", "level": 2, "text": "Diagnosis (20–36+6 weeks)" },
-    { "type": "list", "items": [
-      "Regular uterine contractions (≥ 4 in 20 min, or ≥ 8 in 1 h), PLUS",
-      "Cervical change: ≥ 80% effacement OR dilation > 1 cm; OR a cervical length < 20 mm on transvaginal ultrasound.",
-      "Fetal fibronectin has a high negative predictive value — a negative test with a cervical length 20–30 mm makes preterm delivery within 7–14 days unlikely."
-    ] },
-    { "type": "heading", "level": 2, "text": "Management by gestational age" },
-    { "type": "table",
-      "columns": ["Intervention", "Gestational age", "Detail"],
-      "rows": [
-        ["Betamethasone", "23+0 – 34+6 wk (and 34–36+6 wk, late preterm)", "12 mg IM q24h ×2. A single rescue course if > 14 days since the first and delivery is again likely before 34 wk. (Dexamethasone 6 mg IM q12h ×4 is an alternative.)"],
-        ["Magnesium sulfate (neuroprotection)", "< 32 wk", "4–6 g IV load, then 1–2 g/h. Reduces cerebral palsy (BEAM). Continue until delivery or ~12–24 h"],
-        ["Tocolysis (48 h only)", "< 34 wk", "Goal is the steroid window. Nifedipine first-line; indomethacin < 32 wk (watch ductal constriction / oligohydramnios if > 48 h). NO maintenance tocolysis"],
-        ["GBS prophylaxis", "Any true preterm labor", "Treat as GBS-positive if status unknown and < 37 wk — penicillin G (cefazolin if low-risk penicillin allergy; clindamycin only if susceptible / vancomycin otherwise)"],
-        ["Progesterone (prevention, not acute)", "16–36 wk, singleton + prior spontaneous preterm birth", "Vaginal progesterone 200 mg nightly if a short cervix; 17-OHP caproate 250 mg IM weekly (note the reduced regulatory support after the PROLONG trial)"]
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Diagnosis (20–36+6 weeks)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Regular uterine contractions (≥ 4 in 20 min, or ≥ 8 in 1 h), PLUS",
+        "Cervical change: ≥ 80% effacement OR dilation > 1 cm; OR a cervical length < 20 mm on transvaginal ultrasound.",
+        "Fetal fibronectin has a high negative predictive value — a negative test with a cervical length 20–30 mm makes preterm delivery within 7–14 days unlikely."
       ]
     },
-    { "type": "callout", "tone": "warning", "text": "Rule out and treat the drivers: intra-amniotic infection (fever, uterine tenderness, fetal tachycardia → deliver, do not tocolyse), abruption, and preterm prelabour rupture of membranes. Do not tocolyse against non-reassuring fetal status, significant bleeding, severe preeclampsia, or chorioamnionitis." }
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Management by gestational age"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Intervention",
+        "Gestational age",
+        "Detail"
+      ],
+      "rows": [
+        [
+          "Betamethasone",
+          "23+0 – 34+6 wk (and 34–36+6 wk, late preterm)",
+          "12 mg IM q24h ×2. A single rescue course if > 14 days since the first and delivery is again likely before 34 wk. (Dexamethasone 6 mg IM q12h ×4 is an alternative.)"
+        ],
+        [
+          "Magnesium sulfate (neuroprotection)",
+          "< 32 wk",
+          "4–6 g IV load, then 1–2 g/h. Reduces cerebral palsy (BEAM). Continue until delivery or ~12–24 h"
+        ],
+        [
+          "Tocolysis (48 h only)",
+          "< 34 wk",
+          "Goal is the steroid window. Nifedipine first-line; indomethacin < 32 wk (watch ductal constriction / oligohydramnios if > 48 h). NO maintenance tocolysis"
+        ],
+        [
+          "GBS prophylaxis",
+          "Any true preterm labor",
+          "Treat as GBS-positive if status unknown and < 37 wk — penicillin G (cefazolin if low-risk penicillin allergy; clindamycin only if susceptible / vancomycin otherwise)"
+        ],
+        [
+          "Progesterone (prevention, not acute)",
+          "16–36 wk, singleton + prior spontaneous preterm birth",
+          "Vaginal progesterone 200 mg nightly if a short cervix; 17-OHP caproate 250 mg IM weekly (note the reduced regulatory support after the PROLONG trial)"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Rule out and treat the drivers: intra-amniotic infection (fever, uterine tenderness, fetal tachycardia → deliver, do not tocolyse), abruption, and preterm prelabour rupture of membranes. Do not tocolyse against non-reassuring fetal status, significant bleeding, severe preeclampsia, or chorioamnionitis."
+    }
   ]
 }

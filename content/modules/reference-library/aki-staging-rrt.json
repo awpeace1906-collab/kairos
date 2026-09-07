@@ -36,7 +36,7 @@
     "avoid NSAIDs contrast aminoglycosides"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-03-02",
   "review_tier": 3,
@@ -46,12 +46,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — KDIGO staging, the nephrotoxin list, the AEIOU emergent-RRT indications, and default CRRT settings."
     }
   ],
   "summary": "Stage AKI on whichever is worse — creatinine or urine output. Stop nephrotoxins, optimise volume and perfusion, and dose-adjust drugs. Start RRT emergently for the AEIOU indications; timing of RRT for AKI without an emergent indication is not improved by starting early (STARRT-AKI, AKIKI).",
+  "whyThisMatters": "AKI staging drives nothing if you only look at creatinine — urine output often stages higher and earlier — and the timing of non-emergent RRT has been settled: starting early does not help (STARRT-AKI), so the decision hinges on whether an emergent indication is present.",
+  "clinicalTakeaway": "Stage on the worse of creatinine or urine output. Stop nephrotoxins, fix volume and perfusion, and renally dose-adjust every drug. Start RRT now for an AEIOU indication (refractory acidosis, electrolytes, intoxication, overload, uraemia); otherwise there is no benefit to starting before one appears.",
   "body": [
     {
       "type": "heading",

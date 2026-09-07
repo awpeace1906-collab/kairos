@@ -34,7 +34,7 @@
     "PROSPECT Working Group"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-03-02",
   "review_tier": 3,
@@ -44,12 +44,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the 2026 PROSPECT six-domain recommendation for post-caesarean analgesia under neuraxial anaesthesia."
     }
   ],
   "summary": "Three load-bearing pillars: (1) a single neuraxial long-acting opioid, (2) scheduled — not as-needed — paracetamol + NSAID, (3) a single IV dexamethasone dose after delivery. Everything else is an addition. Oral opioids are the rescue backstop, not a routine component.",
+  "whyThisMatters": "Post-caesarean analgesia fails when it is built on as-needed opioids instead of a scheduled multimodal base — the PROSPECT framework is three load-bearing pillars, and dropping any one of them is where the pain scores climb.",
+  "clinicalTakeaway": "Give a single neuraxial long-acting opioid, scheduled (not PRN) paracetamol plus an NSAID, and one IV dexamethasone dose after delivery. Oral opioids are the rescue backstop, not a routine component.",
   "body": [
     {
       "type": "heading",

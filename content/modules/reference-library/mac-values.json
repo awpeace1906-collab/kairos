@@ -35,7 +35,7 @@
     "additive MAC"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-09-02",
   "review_tier": 3,
@@ -45,12 +45,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — MAC of the volatile agents (adult and > 60 y), MAC-awake / MAC-BAR, age adjustment, additivity, and the desflurane phase-out."
     }
   ],
   "summary": "1 MAC = the alveolar concentration that prevents movement to a surgical incision in 50% of patients. MAC is additive (0.5 MAC sevoflurane + 0.5 MAC N₂O ≈ 1 MAC). It falls ~6% per decade of age and with opioids, benzodiazepines, alpha-2 agonists, hypothermia, hyponatraemia, pregnancy, and acute alcohol; it rises with chronic alcohol, stimulants, and hyperthermia.",
+  "whyThisMatters": "MAC is additive and shifts with age and co-administered drugs by amounts large enough to cause awareness or over-dose if you dial in a fixed number — a 6%-per-decade fall, plus opioids, benzodiazepines, and hypothermia all pulling it down.",
+  "clinicalTakeaway": "1 MAC prevents movement in 50%; aim for about 1.2–1.3 MAC of the combined agents (they add). Reduce the target ~6% per decade over 40, and further for opioids, benzodiazepines, alpha-2 agonists, hypothermia, and pregnancy. Confirm with an end-tidal agent monitor, not the vaporiser dial.",
   "body": [
     {
       "type": "heading",

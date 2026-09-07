@@ -43,7 +43,7 @@
     "Otis equation"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-03-02",
   "review_tier": 3,
@@ -54,12 +54,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — converted from the vent pocket guide: the three questions every mode answers, VC-vs-PC, the SIMV problem, the cross-manufacturer name table, and the adaptive/proportional modes with their trial evidence."
     }
   ],
   "summary": "Translate the mode name on the screen into physiology before you touch a setting. Every mode is a set of answers to three questions: what does the vent guarantee (volume / pressure / hybrid), who's in control (vent / patient / shared), and how does the breath end (time / flow / volume cycled). The mode matters far less than low VT, low Pplat, and appropriate PEEP.",
+  "whyThisMatters": "The mode name on the screen means different things on different ventilators, and touching a setting before translating the name into physiology — what is guaranteed, who is in control, how the breath cycles — is how a mode change makes the patient worse.",
+  "clinicalTakeaway": "Decode every mode by three questions: what does the ventilator guarantee (volume, pressure, hybrid), who controls the breath (ventilator, patient, shared), and how does the breath end (time, flow, or volume cycled). Use the cross-manufacturer name table before you assume a mode does what its label suggests.",
   "body": [
     {
       "type": "heading",

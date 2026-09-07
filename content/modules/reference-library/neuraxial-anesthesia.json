@@ -40,7 +40,7 @@
     "epidural blood patch 15-20 mL"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-03-02",
   "review_tier": 1,
@@ -50,12 +50,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — contraindications, spinal agent + adjunct doses (incl. the standard C/S mix), spinal-hypotension prevention/treatment (norepinephrine now first-line in OB), epidural levels + the urgent-C/S top-up, high/total spinal management, and PDPH."
     }
   ],
   "summary": "Spinal hypotension: CO-load (not pre-load) 500–1000 mL at block placement and start a prophylactic vasopressor infusion — norepinephrine 0.05–0.1 mcg/kg/min is now first-line for obstetric spinal (better HR maintenance than phenylephrine). Anticoagulant hold times before a neuraxial or deep block live in the neuraxial-anticoagulation module.",
+  "whyThisMatters": "Spinal hypotension is predictable and preventable, and the prevention has shifted — a co-load plus a prophylactic norepinephrine infusion, not a pre-load plus reactive phenylephrine boluses — while the rare catastrophes (high/total spinal, epidural haematoma on an anticoagulated patient) turn on timing and recognition.",
+  "clinicalTakeaway": "Co-load 500–1000 mL at block placement and start a prophylactic vasopressor infusion — norepinephrine 0.05–0.1 mcg/kg/min is first-line for obstetric spinal. Screen for the contraindications, check anticoagulant hold times (see the neuraxial-anticoagulation module), and recognise a rising block early.",
   "body": [
     {
       "type": "heading",

@@ -34,7 +34,7 @@
     "fundus at or above umbilicus"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -44,12 +44,19 @@
   ],
   "changelog": [
     {
+      "version": 2,
+      "date": "2026-09-07",
+      "change": "Added whyThisMatters + clinicalTakeaway (standard Reference Library template, DIRECTIONS_FORWARD §1)."
+    },
+    {
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the BAACC TO LIFE differential, CPR modifications for pregnancy (manual LUD, IV above the diaphragm, remove fetal monitors), and resuscitative cesarean delivery timing."
     }
   ],
   "summary": "Two patients — manage the MOTHER first; do not monitor or resuscitate the fetus during the arrest, and remove the fetal monitors. From 20 weeks (fundus at/above the umbilicus): continuous manual left uterine displacement, IV/IO access ABOVE the diaphragm, and prepare for a resuscitative cesarean delivery to be done AT the arrest site within 4–5 minutes.",
+  "whyThisMatters": "Maternal arrest is two patients, and the fatal instinct is to split attention onto the fetus during the arrest. From 20 weeks the aortocaval compression and the resuscitative-hysterotomy window make this a distinct algorithm with a hard clock.",
+  "clinicalTakeaway": "Resuscitate the mother — remove the fetal monitors, don't monitor the fetus during the arrest. From 20 weeks (fundus at/above the umbilicus): continuous manual left uterine displacement, IV/IO access above the diaphragm, and start a resuscitative caesarean AT the bedside by 4–5 minutes if there is no ROSC. Work BAACC TO LIFE for the cause.",
   "body": [
     {
       "type": "heading",
