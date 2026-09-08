@@ -134,6 +134,55 @@
       }
     },
 
+    "plot": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Optional 2-D plot rendered alongside the result (e.g. a treatment nomogram). Curve expressions use the free variable `x`; the plotted point is taken from the inputs named by x.key / y.key.",
+      "required": ["kind", "x", "y", "curves"],
+      "properties": {
+        "kind": { "type": "string", "enum": ["semilogy"] },
+        "caption": { "type": "string" },
+        "x": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["key", "label", "min", "max"],
+          "properties": {
+            "key": { "type": "string" },
+            "label": { "type": "string" },
+            "min": { "type": "number" },
+            "max": { "type": "number" },
+            "unit": { "type": "string" }
+          }
+        },
+        "y": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["key", "label", "min", "max"],
+          "properties": {
+            "key": { "type": "string" },
+            "label": { "type": "string" },
+            "min": { "type": "number", "exclusiveMinimum": 0 },
+            "max": { "type": "number" },
+            "unit": { "type": "string" }
+          }
+        },
+        "curves": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["label", "expression"],
+            "properties": {
+              "label": { "type": "string" },
+              "expression": { "type": "string" },
+              "tone": { "type": "string", "enum": ["accent", "muted", "danger"] }
+            }
+          }
+        }
+      }
+    },
+
     "buildNote": {
       "type": "string",
       "description": "Guidance for whoever finalizes this — verification tasks, licensing, source-of-truth pointers."

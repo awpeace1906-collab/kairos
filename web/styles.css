@@ -76,6 +76,8 @@
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
+/* form controls don't inherit type by default — keep them in IBM Plex, not Arial */
+input, button, select, textarea { font: inherit; color: inherit; }
 body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.5; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
 .app { max-width: 720px; margin: 0 auto; padding: 20px calc(16px + env(safe-area-inset-right)) 72px calc(16px + env(safe-area-inset-left)); }
 a { color: var(--accent); text-decoration: none; }
@@ -192,14 +194,16 @@ h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
 .purpose { color: var(--muted); margin: 4px 0 14px; font-size: .95rem; }
 .settings { font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
 .field-grid { display: grid; gap: 10px; margin: 12px 0; }
-.field { display: flex; flex-direction: column; gap: 4px; }
-.field-label { font-size: .9rem; }
+.field { display: flex; flex-direction: column; gap: 5px; }
+.field-label { font-family: var(--font-mono); font-size: .78rem; color: var(--muted); }
 .field-label .unit { color: var(--muted); }
 .field-input { position: relative; display: flex; align-items: center; }
-.field-input input { flex: 1; padding: 10px 34px 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); color: var(--text); font-size: 1rem; }
-.field-input select { flex: 1; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); color: var(--text); font-size: 1rem; }
+.field-input input, .field-input select { flex: 1; min-height: 44px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); color: var(--text); font-size: 1rem; }
+.field-input input { padding: 10px 34px 10px 12px; }
+.field-input select { padding: 10px 12px; }
+.field-input input:focus, .field-input select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 16%, transparent); }
 .clear-field { position: absolute; right: 6px; width: 22px; height: 22px; border-radius: 999px; border: none; background: var(--line); color: var(--text); cursor: pointer; font-size: .7rem; line-height: 1; }
-.toolbar { margin: 14px 0; }
+.toolbar { margin: 14px 0; display: flex; justify-content: flex-end; }
 .clear-all { padding: 8px 14px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface-2); color: var(--text); cursor: pointer; }
 
 .item { border: 1px solid var(--line); border-radius: 10px; margin: 10px 0; padding: 8px 10px; }
@@ -224,16 +228,29 @@ h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
 .formula-result .flabel { flex: 1; min-width: 60%; color: var(--muted); font-size: .9rem; }
 .formula-result strong { font-size: 1.15rem; }
 
+.plot-box { margin-top: 14px; }
+.nomogram { margin: 0; }
+.nomogram svg { width: 100%; height: auto; display: block; border-radius: var(--radius); }
+.nomogram .nom-tick { fill: var(--muted); font-family: var(--font-mono); font-size: 10px; font-variant-numeric: tabular-nums; }
+.nomogram .nom-axis { fill: var(--muted); font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.04em; text-transform: uppercase; }
+.nomogram .nom-curve { fill: var(--sev-high); font-family: var(--font-mono); font-size: 10px; }
+.nomogram figcaption { margin-top: 6px; font-size: .82rem; color: var(--muted); font-family: var(--font-mono); }
+
 .flags { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
 .flag { font-size: .72rem; background: color-mix(in srgb, var(--sev-moderate) 25%, transparent); color: var(--text); border-radius: 6px; padding: 2px 6px; }
 .build-note { margin-top: 14px; font-size: .88rem; color: var(--muted); }
 .last-verified { margin-top: 14px; font-size: .8rem; color: var(--muted); }
 
 /* Reference Library standard template framing */
-.why-matters, .takeaway { margin: 4px 0 14px; padding: 10px 12px; border-radius: 10px; background: var(--surface-2); border-left: 3px solid var(--accent); }
-.takeaway { margin: 16px 0 4px; }
-.why-matters h4, .takeaway h4 { margin: 0 0 4px; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.why-matters, .takeaway { margin: 4px 0 14px; padding: 10px 12px; border-radius: 10px; }
+.why-matters h4, .takeaway h4 { margin: 0 0 4px; font-family: var(--font-mono); font-size: .72rem; font-weight: 500; text-transform: uppercase; letter-spacing: .06em; }
 .why-matters p, .takeaway p { margin: 0; }
+/* context / background — quiet: hairline rule, no ember */
+.why-matters { background: color-mix(in srgb, var(--muted) 6%, var(--surface)); border-left: 2px solid var(--line); }
+.why-matters h4 { color: var(--muted); }
+/* the punchline — the one struck point on the page */
+.takeaway { margin: 16px 0 4px; background: color-mix(in srgb, var(--accent) 9%, var(--surface)); border-left: 3px solid var(--accent); }
+.takeaway h4 { color: var(--accent); }
 .takeaway p { font-weight: 500; }
 
 /* per-page Sources block (always visible, numbered) */
@@ -263,7 +280,13 @@ h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
 .callout.warning { border-color: var(--sev-moderate); }
 .table-wrap { overflow-x: auto; }
 .prose table { border-collapse: collapse; width: 100%; font-size: .9rem; }
-.prose th, .prose td { border: 1px solid var(--line); padding: 6px 8px; text-align: left; }
+.prose th, .prose td { border: 1px solid var(--line); padding: 7px 9px; text-align: left; vertical-align: top; }
+.prose thead th, .prose tr:first-child th {
+  font-family: var(--font-mono); font-weight: 500;
+  font-size: .72rem; text-transform: uppercase; letter-spacing: .04em;
+  color: var(--muted); background: var(--surface-2);
+}
+.prose tbody tr:nth-child(even) td { background: color-mix(in srgb, var(--muted) 4%, transparent); }
 
 /* drug card / zones */
 .zone-bar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 10px 0; font-size: .85rem; }

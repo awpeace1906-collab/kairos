@@ -17,6 +17,12 @@ targets:
     platform: iOS
     sources:
       - path: Sources
+      # Bundled UI fonts (IBM Plex Sans/Mono TTFs). Kept OUT of Sources/ — a
+      # binary blob inside a Swift source glob is fragile across toolchains —
+      # and copied in explicitly as resources. Registered at launch by
+      # KairosApp.registerBundledFonts() via Bundle.main.url(forResource:).
+      - path: Resources/Fonts
+        buildPhase: resources
       # Offline fallback: the canonical content tree, shipped inside the app as a
       # FOLDER REFERENCE (type: folder) so the bundle preserves the directory
       # structure (Content/config/sections.json, Content/modules/...).

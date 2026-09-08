@@ -729,8 +729,8 @@
       "review_tier": "stable"
     },
     "calculators/tox-withdrawal/salicylate-toxicity": {
-      "content_version": 1,
-      "hash": "2aa7f5681f946400",
+      "content_version": 2,
+      "hash": "69c541490de4149a",
       "path": "modules/calculators/tox-withdrawal/salicylate-toxicity.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -1350,13 +1350,13 @@
       "next_review_due": "2026-12-01"
     },
     "drug-dosing/dosing-fluid-math/apap-nac-dosing": {
-      "content_version": 1,
-      "hash": "e77d9c192e8a2b7b",
+      "content_version": 2,
+      "hash": "24e7669e976a8866",
       "path": "modules/drug-dosing/dosing-fluid-math/apap-nac-dosing.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
       "review_tier": 1,
-      "next_review_due": "2026-11-30"
+      "next_review_due": "2026-12-08"
     },
     "drug-dosing/dosing-fluid-math/cockcroft-gault": {
       "content_version": 1,

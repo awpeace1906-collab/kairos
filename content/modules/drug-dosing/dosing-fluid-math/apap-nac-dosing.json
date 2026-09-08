@@ -7,12 +7,15 @@
   "aliases": ["APAP overdose", "Rumack-Matthew", "N-acetylcysteine", "paracetamol toxicity", "150 line"],
   "tags": ["acetaminophen", "paracetamol", "overdose", "NAC", "poisoning", "ED"],
   "contentType": "calculator",
-  "content_version": 1,
-  "last_reviewed": "2026-08-31",
-  "next_review_due": "2026-11-30",
+  "content_version": 2,
+  "last_reviewed": "2026-09-08",
+  "next_review_due": "2026-12-08",
   "review_tier": 1,
   "sources": ["Rumack BH, Matthew H. Pediatrics 1975", "Prescott LF. 1979 (21-h IV protocol)"],
-  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3. Treatment-line approximation." }],
+  "changelog": [
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3. Treatment-line approximation." },
+    { "version": 2, "date": "2026-09-08", "change": "Added the rendered semi-log Rumack-Matthew nomogram (150 treatment line + plotted point from the entered level and time)." }
+  ],
   "engine": "formula",
   "settings": ["ED", "ICU"],
   "purpose": "Plots a serum acetaminophen level against time since a SINGLE acute ingestion relative to the US 150 mcg/mL treatment line, and gives the 21-hour IV NAC regimen weight-based doses.",
@@ -32,5 +35,14 @@
     { "forKey": "margin", "min": 0, "max": 100000, "label": "At or above the treatment line — start NAC", "disposition": "Begin the 21-hour IV NAC protocol (loading dose above); consult toxicology", "severity": "high" },
     { "forKey": "margin", "min": -100000, "max": -0.01, "label": "Below the treatment line — NAC not indicated by the nomogram for a single acute ingestion", "detail": "Only valid if the ingestion time is known, single, and acute, and the level was drawn ≥ 4 h post-ingestion.", "severity": "low" }
   ],
-  "buildNote": "Treatment line is approximated as 150 × 2^(−(h−4)/4) (halves every 4 h from 150 at 4 h). Not valid for unknown-time, staggered/chronic, or > 24 h presentations — those use different criteria. A production build should render the actual semi-log nomogram plot alongside this."
+  "plot": {
+    "kind": "semilogy",
+    "caption": "Rumack-Matthew nomogram (US 150 line)",
+    "x": { "key": "hours", "label": "Hours since ingestion", "min": 4, "max": 24, "unit": "h" },
+    "y": { "key": "apapLevel", "label": "Serum acetaminophen", "min": 10, "max": 1000, "unit": "mcg/mL" },
+    "curves": [
+      { "label": "Treatment line", "expression": "150 * 2 ^ (-(x - 4) / 4)", "tone": "danger" }
+    ]
+  },
+  "buildNote": "Treatment line is 150 × 2^(−(h−4)/4) — the semi-log Rumack-Matthew line, which halves every 4 h from 150 mcg/mL at 4 h. The plot renders this line with the entered level/time as a plotted point. Not valid for unknown-time, staggered/chronic, or > 24 h presentations — those use different criteria."
 }
