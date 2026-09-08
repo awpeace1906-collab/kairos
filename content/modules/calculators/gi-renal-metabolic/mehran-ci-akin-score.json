@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "GI / Renal / Metabolic",
   "title": "Mehran Score — Contrast-Induced AKI Risk (PCI)",
+  "settingEmphasis": ["icu", "ed"],
   "aliases": ["Mehran score", "contrast-induced nephropathy risk", "CI-AKI risk score", "contrast nephropathy PCI", "CIN risk"],
   "tags": ["contrast-induced AKI", "CI-AKI", "nephropathy", "PCI", "cardiac catheterization", "renal", "cardiology"],
   "keywords": ["hypotension IABP CHF age anemia diabetes contrast volume creatinine eGFR", "score under 5 7.5%", "6-10 14.0%", "11-15 26.1%", "16 or more 57.3%", "Mehran 2004 JACC"],

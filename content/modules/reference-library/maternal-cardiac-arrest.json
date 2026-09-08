@@ -3,6 +3,11 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Maternal Cardiac Arrest",
+  "settingEmphasis": [
+    "ed",
+    "or",
+    "icu"
+  ],
   "aliases": [
     "MCA",
     "BAACC TO LIFE",

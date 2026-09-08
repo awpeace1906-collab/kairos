@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Trauma",
   "title": "Canadian C-Spine Rule",
+  "settingEmphasis": ["ed", "prehospital"],
   "aliases": ["CCR", "Canadian cervical spine rule", "c-spine clearance", "cervical spine imaging rule"],
   "tags": ["cervical spine", "c-spine clearance", "clinical decision rule", "trauma", "ED", "rule-out"],
   "keywords": ["age >= 65", "dangerous mechanism", "paresthesias in extremities", "simple rear-end MVC", "sitting position in ED", "ambulatory at any time", "delayed onset neck pain", "absence of midline tenderness", "able to rotate neck 45 degrees"],

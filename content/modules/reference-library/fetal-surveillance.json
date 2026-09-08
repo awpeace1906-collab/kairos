@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Antenatal Fetal Surveillance",
+  "settingEmphasis": [
+    "or",
+    "ed"
+  ],
   "aliases": [
     "biophysical profile",
     "BPP",

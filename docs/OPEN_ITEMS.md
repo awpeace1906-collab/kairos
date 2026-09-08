@@ -6,9 +6,29 @@ Living tracker. Two lists:
    or original content, existing Critical Vector / AnesCalc assets) before the
    affected content can be finalized.
 
-Last updated: 2026-09-01
+Last updated: 2026-09-07
+
+## ▶ NEXT SESSION — start here (2026-09-07)
+State: pipeline green (285/0/0, tests 231/0). `settingEmphasis` now on **285/285**
+modules — the care-setting lens is fully seeded. Uncommitted: 182 modules +
+manifest/search-index/sources-index (nav metadata; no `content_version` bumps).
+DIRECTIONS_FORWARD §1 fully shipped (care-setting lens + reference template + 87/87).
+Priority order for the next block:
+1. **Real content gaps** — VExUS / venous-congestion / de-resuscitation module;
+   the big unconverted CV guides (ballistics/blast, the 153 KB intoxicating-substances
+   reference, CV_Austere hazmat/toxidrome); higher-risk BRUE pathway stub.
+2. **Small decisions** — "Flag as outdated" mailto stub → real destination;
+   NIHSS band citation; PAS/pARC section placement; pre-arrival zone-reference-card flow.
+3. Parked per instruction: GitHub Pages hosting, REMOTE_BASE wiring.
 
 ## Progress log
+- 2026-09-07 — **`settingEmphasis` tagging completed: 285/285 modules.** Tagged the
+  remaining 182 (Calculators 90, Peds Module 25, Procedures 8, Drug&Dosing 18,
+  Reference Library 41) by clinical care setting, most-relevant-first over
+  `prehospital / ed / or / icu`. Surgical single-line insert after each `title` —
+  no `content_version` bump, no changelog (nav metadata; manifest hash still
+  changes so clients resync). validate 285/0/0, test 231/0. The care-setting lens
+  now has data for every module in every section.
 - 2026-08-31 — Scaffold: content pipeline + PWA + SwiftUI shells, 10 modules.
 - 2026-08-31 — +14 calculators (25 total), About/Settings screen both clients,
   `select` input support (web `<select>`, iOS segmented `Picker`).

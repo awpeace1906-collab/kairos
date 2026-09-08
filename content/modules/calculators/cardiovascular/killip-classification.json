@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Cardiovascular / Chest Pain / Arrhythmia",
   "title": "Killip Classification",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["Killip", "Killip class"],
   "contentType": "calculator",
   "content_version": 1,

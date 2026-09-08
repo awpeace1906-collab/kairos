@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "Revised Cardiac Risk Index (RCRI)",
+  "settingEmphasis": ["or"],
   "aliases": ["Lee index", "RCRI", "perioperative cardiac risk"],
   "tags": ["perioperative", "cardiac risk", "noncardiac surgery", "preop", "OR"],
   "contentType": "calculator",

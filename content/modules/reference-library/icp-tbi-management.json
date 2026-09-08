@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "Raised ICP & TBI Management",
+  "settingEmphasis": [
+    "icu",
+    "ed"
+  ],
   "aliases": [
     "intracranial pressure",
     "TBI targets",

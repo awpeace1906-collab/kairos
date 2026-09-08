@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Neuro / Stroke / Head Injury",
   "title": "ABCD² Score for TIA",
+  "settingEmphasis": ["ed"],
   "aliases": ["ABCD2", "TIA stroke risk"],
   "tags": ["TIA", "transient ischemic attack", "stroke risk", "ED"],
   "contentType": "calculator",

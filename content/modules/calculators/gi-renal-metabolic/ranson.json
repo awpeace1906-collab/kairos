@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "GI / Renal / Metabolic",
   "title": "Ranson's Criteria (Acute Pancreatitis)",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["Ranson", "Ranson score", "pancreatitis severity", "pancreatitis mortality"],
   "tags": ["acute pancreatitis", "severity", "mortality", "ICU", "ED"],
   "keywords": ["age", "WBC", "glucose", "AST", "LDH", "calcium", "hematocrit drop", "BUN rise", "base deficit", "fluid sequestration", "PaO2"],

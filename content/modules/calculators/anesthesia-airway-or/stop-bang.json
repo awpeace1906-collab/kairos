@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "STOP-BANG Score",
+  "settingEmphasis": ["or", "ed"],
   "aliases": ["STOP BANG", "OSA screen", "obstructive sleep apnea risk"],
   "tags": ["OSA", "obstructive sleep apnea", "preop screening", "perioperative airway", "OR"],
   "contentType": "calculator",

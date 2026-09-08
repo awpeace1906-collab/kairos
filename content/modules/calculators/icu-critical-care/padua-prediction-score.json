@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "ICU / Critical Care",
   "title": "Padua Prediction Score",
+  "settingEmphasis": ["icu", "ed"],
   "aliases": ["Padua VTE", "medical patient VTE risk"],
   "tags": ["VTE", "DVT prophylaxis", "medical inpatient", "thromboprophylaxis", "ICU"],
   "contentType": "calculator",

@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Sepsis / Infectious Disease",
   "title": "SIRS Criteria",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["systemic inflammatory response syndrome", "SIRS score"],
   "tags": ["sepsis", "systemic inflammation", "rapid response", "screening", "ED", "ICU"],
   "contentType": "calculator",

@@ -3,6 +3,7 @@
   "section": "Drug & Dosing Cards",
   "category": "Dosing & Fluid Math",
   "title": "Adjusted / Lean Body Weight",
+  "settingEmphasis": ["icu", "ed", "or"],
   "aliases": ["AdjBW", "adjusted body weight", "lean body weight", "Janmahasatian", "obesity dosing"],
   "tags": ["obesity", "drug dosing", "induction agents", "paralytics", "OR", "ICU"],
   "contentType": "calculator",

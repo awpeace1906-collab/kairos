@@ -3,6 +3,7 @@
   "section": "Procedures",
   "category": "Regional Anesthesia & Ultrasound",
   "title": "POCUS Guide",
+  "settingEmphasis": ["ed", "icu", "or"],
   "aliases": ["point of care ultrasound", "bedside ultrasound", "FoCUS", "FAST exam", "RUSH", "lung ultrasound", "IVC ultrasound"],
   "tags": ["POCUS", "ultrasound", "FoCUS", "FAST", "lung ultrasound", "IVC", "RUSH", "shock", "DVT", "ED", "ICU"],
   "contentType": "reference",

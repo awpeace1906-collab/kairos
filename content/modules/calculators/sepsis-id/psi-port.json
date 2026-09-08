@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Sepsis / Infectious Disease",
   "title": "Pneumonia Severity Index (PSI / PORT)",
+  "settingEmphasis": ["ed"],
   "aliases": ["PSI", "PORT score", "pneumonia severity index", "CAP admission decision", "Fine score"],
   "tags": ["community-acquired pneumonia", "risk stratification", "disposition", "mortality", "ED"],
   "keywords": ["age", "nursing home resident", "neoplastic disease", "liver disease", "heart failure", "cerebrovascular disease", "renal disease", "altered mental status", "respiratory rate >= 30", "systolic BP < 90", "temperature", "pulse >= 125", "pH < 7.35", "BUN", "sodium", "glucose", "hematocrit < 30", "PaO2 < 60", "pleural effusion"],

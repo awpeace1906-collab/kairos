@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Anticoagulation & Labs",
   "title": "Lab Interpretation",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
   "aliases": [
     "electrolyte replacement",
     "CBC patterns",

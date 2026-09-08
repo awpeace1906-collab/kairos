@@ -3,6 +3,10 @@
   "section": "Calculators",
   "category": "Early Warning / Resuscitation",
   "title": "Modified Early Warning Score (MEWS)",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
   "aliases": [
     "MEWS",
     "early warning score",

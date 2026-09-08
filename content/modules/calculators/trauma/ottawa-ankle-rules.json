@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Trauma",
   "title": "Ottawa Ankle & Foot Rules",
+  "settingEmphasis": ["ed"],
   "aliases": ["Ottawa ankle rule", "ankle x-ray decision", "foot x-ray decision", "malleolar zone", "midfoot zone"],
   "tags": ["ankle injury", "foot injury", "sprain", "imaging decision", "x-ray", "ED"],
   "keywords": ["posterior edge lateral malleolus", "navicular", "base of 5th metatarsal", "bear weight 4 steps"],

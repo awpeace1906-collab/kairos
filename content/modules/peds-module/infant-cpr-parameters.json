@@ -3,6 +3,7 @@
   "section": "Peds Module",
   "category": "Peds Resuscitation & Decision Support",
   "title": "Infant & Child CPR Parameters (2025 PALS)",
+  "settingEmphasis": ["ed", "prehospital", "icu"],
   "aliases": ["peds CPR", "infant compressions", "PALS parameters", "infant choking"],
   "tags": ["CPR", "compressions", "infant", "choking", "FBAO", "PALS", "2025"],
   "contentType": "peds-tool",

@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "GI / Renal / Metabolic",
   "title": "MELD-Na Score",
+  "settingEmphasis": ["icu", "ed"],
   "aliases": ["MELD sodium", "MELD-Na", "liver disease severity", "transplant priority"],
   "tags": ["cirrhosis", "liver disease", "transplant", "perioperative risk", "ED", "ICU"],
   "contentType": "calculator",

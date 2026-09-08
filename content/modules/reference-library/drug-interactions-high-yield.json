@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "Drug Interactions — Nine High-Yield Pairs",
+  "settingEmphasis": [
+    "icu",
+    "ed"
+  ],
   "aliases": [
     "high-yield drug interactions",
     "drug-drug interactions",

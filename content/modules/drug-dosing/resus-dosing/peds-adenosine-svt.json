@@ -3,6 +3,10 @@
   "section": "Drug & Dosing Cards",
   "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
   "title": "Adenosine — Pediatric Stable SVT",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
   "aliases": [
     "peds adenosine",
     "SVT dose"

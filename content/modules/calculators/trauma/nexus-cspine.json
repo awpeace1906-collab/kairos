@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Trauma",
   "title": "NEXUS Criteria (C-Spine)",
+  "settingEmphasis": ["ed", "prehospital"],
   "aliases": ["NEXUS", "cervical spine clearance", "c-collar clearance"],
   "tags": ["c-spine", "cervical spine", "trauma", "imaging", "rule out", "ED"],
   "contentType": "calculator",

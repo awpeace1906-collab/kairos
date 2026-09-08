@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Pulmonary / PE / DVT / Resp Failure",
   "title": "Wells' Criteria for PE",
+  "settingEmphasis": ["ed"],
   "aliases": ["Wells PE", "Wells score pulmonary embolism", "PE pretest probability"],
   "tags": ["pulmonary embolism", "shortness of breath", "pleuritic chest pain", "d-dimer", "ED"],
   "contentType": "calculator",

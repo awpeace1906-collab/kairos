@@ -3,6 +3,7 @@
   "section": "Peds Module",
   "category": "Neonatology",
   "title": "Respiratory Distress Syndrome (RDS)",
+  "settingEmphasis": ["icu"],
   "aliases": ["hyaline membrane disease", "surfactant deficiency", "antenatal corticosteroids", "preterm respiratory distress", "INSURE"],
   "tags": ["neonatal", "RDS", "surfactant", "prematurity", "antenatal steroids", "CPAP", "ground-glass", "NICU"],
   "contentType": "peds-tool",

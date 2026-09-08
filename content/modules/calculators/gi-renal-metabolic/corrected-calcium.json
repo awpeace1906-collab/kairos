@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "GI / Renal / Metabolic",
   "title": "Corrected Calcium in Hypoalbuminemia",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["albumin corrected calcium", "adjusted calcium"],
   "tags": ["calcium", "hypocalcemia", "hypoalbuminemia", "ED", "ICU"],
   "contentType": "calculator",

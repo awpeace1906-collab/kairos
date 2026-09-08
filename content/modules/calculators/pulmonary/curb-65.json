@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Pulmonary / PE / DVT / Resp Failure",
   "title": "CURB-65",
+  "settingEmphasis": ["ed"],
   "aliases": ["pneumonia severity", "CAP severity", "CURB65"],
   "tags": ["pneumonia", "CAP", "severity", "admit or discharge", "ED"],
   "contentType": "calculator",

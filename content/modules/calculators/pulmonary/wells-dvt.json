@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Pulmonary / PE / DVT / Resp Failure",
   "title": "Wells' Criteria for DVT",
+  "settingEmphasis": ["ed"],
   "aliases": ["Wells DVT", "DVT pretest probability", "leg swelling risk"],
   "tags": ["deep vein thrombosis", "leg swelling", "d-dimer", "ED"],
   "contentType": "calculator",

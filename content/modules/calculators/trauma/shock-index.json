@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Trauma",
   "title": "Shock Index",
+  "settingEmphasis": ["ed", "prehospital"],
   "aliases": ["SI", "occult shock", "HR over SBP"],
   "tags": ["hemorrhage", "occult shock", "trauma", "transfusion", "ED", "ICU"],
   "contentType": "calculator",

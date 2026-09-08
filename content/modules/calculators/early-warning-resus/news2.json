@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Early Warning / Resuscitation",
   "title": "NEWS2 (National Early Warning Score)",
+  "settingEmphasis": ["ed", "icu", "prehospital"],
   "aliases": ["NEWS2", "national early warning score", "deterioration score", "track and trigger"],
   "tags": ["early warning", "deterioration", "rapid response", "sepsis screen", "ward", "ED"],
   "keywords": ["respiratory rate", "SpO2 scale 1 vs scale 2", "supplemental oxygen", "temperature", "systolic BP", "heart rate", "consciousness ACVPU", "score >= 7 emergency"],

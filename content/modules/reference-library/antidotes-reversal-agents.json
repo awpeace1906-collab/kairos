@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Resuscitation & Airway",
   "title": "Antidotes & Reversal Agents",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
   "aliases": [
     "antidote reference",
     "toxicology antidotes",

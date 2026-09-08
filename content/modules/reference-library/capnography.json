@@ -3,6 +3,12 @@
   "section": "Reference Library",
   "category": "Resuscitation & Airway",
   "title": "Capnography — Waveform Interpretation",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "or",
+    "prehospital"
+  ],
   "aliases": [
     "EtCO2",
     "end-tidal CO2",

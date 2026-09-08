@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Emergency Drugs in Pregnancy",
+  "settingEmphasis": [
+    "ed",
+    "or"
+  ],
   "aliases": [
     "pregnancy drug safety",
     "eclampsia magnesium",

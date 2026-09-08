@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Pulmonary / PE / DVT / Resp Failure",
   "title": "Revised Geneva Score for PE",
+  "settingEmphasis": ["ed"],
   "aliases": ["Geneva score", "revised Geneva", "PE pretest probability", "objective PE score"],
   "tags": ["pulmonary embolism", "pretest probability", "d-dimer", "ED"],
   "keywords": ["age > 65", "previous DVT or PE", "surgery or fracture within 1 month", "active malignancy", "unilateral limb pain", "hemoptysis", "heart rate", "pain on deep venous palpation"],

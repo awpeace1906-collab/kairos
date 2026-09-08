@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "Surgical Apgar Score",
+  "settingEmphasis": ["or"],
   "aliases": ["SAS", "surgical Apgar", "intraoperative risk score", "postoperative complication score"],
   "tags": ["perioperative", "intraoperative", "risk stratification", "postoperative complications", "OR"],
   "keywords": ["estimated blood loss", "lowest mean arterial pressure", "lowest heart rate", "postoperative disposition", "intraoperative course"],

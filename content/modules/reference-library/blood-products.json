@@ -3,6 +3,11 @@
   "section": "Reference Library",
   "category": "Anticoagulation & Labs",
   "title": "Blood Products Reference",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "or"
+  ],
   "aliases": [
     "PRBC platelets FFP cryo",
     "transfusion thresholds",

@@ -3,6 +3,7 @@
   "section": "Peds Module",
   "category": "Neonatology",
   "title": "Neonatal Seizures",
+  "settingEmphasis": ["icu", "ed"],
   "aliases": [
     "neonatal seizure workup",
     "jitteriness vs seizure",

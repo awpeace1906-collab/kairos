@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Perioperative & Anesthesia",
   "title": "Neuromuscular Blockade — Reversal & Monitoring",
+  "settingEmphasis": [
+    "or",
+    "icu"
+  ],
   "aliases": [
     "NMB reversal",
     "sugammadex dose",

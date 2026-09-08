@@ -3,6 +3,7 @@
   "section": "Drug & Dosing Cards",
   "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
   "title": "Midazolam — Pediatric Status Epilepticus",
+  "settingEmphasis": ["ed", "icu", "prehospital"],
   "aliases": ["peds midazolam", "Versed seizure dose", "IM midazolam seizure"],
   "tags": ["status epilepticus", "seizure", "benzodiazepine", "no IV access", "peds"],
   "contentType": "drug-card",

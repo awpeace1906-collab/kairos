@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Cardiovascular / Chest Pain / Arrhythmia",
   "title": "GRACE ACS Risk / Mortality Calculator",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["GRACE", "GRACE 2.0", "ACS mortality"],
   "contentType": "calculator",
   "content_version": 1,

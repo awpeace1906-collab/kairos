@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Sepsis / Infectious Disease",
   "title": "LRINEC Score",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["necrotizing fasciitis score", "nec fasc"],
   "tags": ["necrotizing fasciitis", "cellulitis", "soft tissue infection", "can't miss", "ED"],
   "contentType": "calculator",

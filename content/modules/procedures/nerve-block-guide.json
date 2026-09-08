@@ -3,6 +3,7 @@
   "section": "Procedures",
   "category": "Regional Anesthesia & Ultrasound",
   "title": "Nerve Block Guide",
+  "settingEmphasis": ["or", "ed"],
   "aliases": ["regional anesthesia", "peripheral nerve block", "US-guided nerve block", "fascia iliaca block", "digital block"],
   "tags": ["nerve block", "regional anesthesia", "ultrasound guided", "LAST", "local anesthetic", "fascia iliaca", "ED", "OR"],
   "contentType": "reference",

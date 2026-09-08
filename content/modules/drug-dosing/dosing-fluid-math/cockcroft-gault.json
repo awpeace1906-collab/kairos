@@ -3,6 +3,7 @@
   "section": "Drug & Dosing Cards",
   "category": "Dosing & Fluid Math",
   "title": "Cockcroft-Gault Creatinine Clearance",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["CrCl", "creatinine clearance", "renal dosing"],
   "tags": ["renal dosing", "creatinine clearance", "kidney function", "drug adjustment", "ICU"],
   "contentType": "calculator",

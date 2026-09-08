@@ -3,6 +3,10 @@
   "section": "Calculators",
   "category": "Trauma",
   "title": "ABC Score for Massive Transfusion",
+  "settingEmphasis": [
+    "ed",
+    "prehospital"
+  ],
   "aliases": [
     "ABC score",
     "Assessment of Blood Consumption",

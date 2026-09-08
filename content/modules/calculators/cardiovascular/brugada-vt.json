@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Cardiovascular / Chest Pain / Arrhythmia",
   "title": "Brugada Criteria for VT vs SVT with Aberrancy",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["Brugada algorithm", "wide complex tachycardia", "VT vs SVT", "WCT differentiation"],
   "tags": ["wide complex tachycardia", "ventricular tachycardia", "ECG", "ED", "arrhythmia"],
   "keywords": ["absence of RS in precordial leads", "RS interval > 100 ms", "AV dissociation", "morphology criteria V1 V2 V6", "assume VT"],

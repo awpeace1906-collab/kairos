@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "MACOCHA Score — Difficult Intubation in the ICU",
+  "settingEmphasis": ["icu", "ed"],
   "aliases": ["MACOCHA", "difficult airway ICU", "difficult intubation prediction", "critically ill airway assessment"],
   "tags": ["difficult airway", "intubation", "RSI", "ICU", "airway assessment", "MACOCHA", "first-pass success"],
   "keywords": ["Mallampati III IV 5 points", "OSA 2 points", "reduced cervical spine mobility", "mouth opening under 3 cm", "coma GCS under 8", "hypoxaemia SpO2 under 80", "non-anaesthesiologist operator", "score 3 or more predicts difficult intubation", "De Jong 2013"],

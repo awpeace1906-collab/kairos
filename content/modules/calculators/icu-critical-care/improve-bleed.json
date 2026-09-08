@@ -3,6 +3,10 @@
   "section": "Calculators",
   "category": "ICU / Critical Care",
   "title": "IMPROVE Bleeding Risk Score",
+  "settingEmphasis": [
+    "icu",
+    "ed"
+  ],
   "aliases": [
     "IMPROVE bleed",
     "medical inpatient bleeding risk",

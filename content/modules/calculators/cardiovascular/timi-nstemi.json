@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Cardiovascular / Chest Pain / Arrhythmia",
   "title": "TIMI Risk Score (UA/NSTEMI)",
+  "settingEmphasis": ["ed"],
   "aliases": ["TIMI", "unstable angina risk", "NSTEMI risk"],
   "tags": ["chest pain", "ACS", "NSTEMI", "unstable angina", "risk stratification", "ED"],
   "contentType": "calculator",

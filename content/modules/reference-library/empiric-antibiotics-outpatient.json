@@ -3,6 +3,9 @@
   "section": "Reference Library",
   "category": "Infectious Disease & Immunization",
   "title": "Empiric Antibiotics — Outpatient & Floor Syndromes",
+  "settingEmphasis": [
+    "ed"
+  ],
   "aliases": [
     "board infections",
     "outpatient antibiotics",

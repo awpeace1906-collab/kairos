@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Resuscitation & Airway",
   "title": "C-Spine & CT Head Decision Rules",
+  "settingEmphasis": [
+    "ed",
+    "prehospital"
+  ],
   "aliases": [
     "NEXUS vs Canadian C-Spine",
     "CCR",

@@ -3,6 +3,9 @@
   "section": "Reference Library",
   "category": "Cardiac / ECG",
   "title": "Albumin + Furosemide (Push/Pull)",
+  "settingEmphasis": [
+    "icu"
+  ],
   "aliases": [
     "push pull diuresis",
     "25% albumin lasix",

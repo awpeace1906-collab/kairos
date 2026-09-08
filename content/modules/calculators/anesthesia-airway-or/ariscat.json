@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "ARISCAT Score (Postoperative Pulmonary Complications)",
+  "settingEmphasis": ["or"],
   "aliases": ["ARISCAT", "PPC risk", "postoperative pulmonary complication score", "Canet score"],
   "tags": ["perioperative", "pulmonary complications", "risk stratification", "preoperative", "OR"],
   "keywords": ["age", "preoperative SpO2", "respiratory infection last month", "preoperative anemia", "surgical incision site", "duration of surgery", "emergency surgery"],

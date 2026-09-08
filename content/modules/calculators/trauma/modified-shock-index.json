@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Trauma",
   "title": "Modified Shock Index (MSI)",
+  "settingEmphasis": ["ed", "prehospital"],
   "aliases": ["MSI", "HR over MAP", "shock index MAP"],
   "tags": ["hemorrhage", "occult shock", "sepsis", "trauma", "GI bleed", "post-intubation hypotension", "ED", "ICU"],
   "keywords": ["MSI", "mean arterial pressure", "compensated shock"],

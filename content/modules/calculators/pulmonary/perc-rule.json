@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Pulmonary / PE / DVT / Resp Failure",
   "title": "PERC Rule for PE",
+  "settingEmphasis": ["ed"],
   "aliases": ["PE rule-out criteria", "pulmonary embolism rule out"],
   "tags": ["pulmonary embolism", "rule out", "d-dimer", "low risk", "ED"],
   "contentType": "calculator",

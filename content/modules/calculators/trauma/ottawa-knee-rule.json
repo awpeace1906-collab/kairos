@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Trauma",
   "title": "Ottawa Knee Rule",
+  "settingEmphasis": ["ed"],
   "aliases": ["knee x-ray decision", "acute knee injury imaging"],
   "tags": ["knee injury", "imaging decision", "x-ray", "ED"],
   "keywords": ["isolated patellar tenderness", "fibular head", "flex 90 degrees", "bear weight 4 steps"],

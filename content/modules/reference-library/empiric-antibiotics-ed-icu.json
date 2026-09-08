@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Infectious Disease & Immunization",
   "title": "Empiric Antibiotics — ED / ICU Syndromes",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
   "aliases": [
     "empiric abx ICU",
     "sepsis empiric antibiotics",

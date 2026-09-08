@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Toxicology / Withdrawal",
   "title": "Salicylate Toxicity — Level & Management",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["salicylate toxicity", "aspirin overdose", "Done nomogram", "ASA poisoning", "salicylism"],
   "tags": ["salicylate", "aspirin", "overdose", "toxicology", "hemodialysis", "urinary alkalinization", "ED"],
   "keywords": ["salicylate level", "hours post ingestion", "acute vs chronic", "hemodialysis criteria", "serum bicarbonate", "arterial pH", "tinnitus", "mixed acid-base"],

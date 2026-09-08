@@ -3,6 +3,11 @@
   "section": "Drug & Dosing Cards",
   "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
   "title": "Amiodarone — Pediatric VF / Pulseless VT",
+  "settingEmphasis": [
+    "ed",
+    "prehospital",
+    "icu"
+  ],
   "aliases": [
     "peds amiodarone",
     "shock-refractory VF dose"

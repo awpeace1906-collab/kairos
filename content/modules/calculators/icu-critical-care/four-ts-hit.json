@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "ICU / Critical Care",
   "title": "4Ts Score for HIT",
+  "settingEmphasis": ["icu", "ed"],
   "aliases": ["4T score", "heparin-induced thrombocytopenia probability", "HIT pretest"],
   "tags": ["HIT", "heparin", "thrombocytopenia", "anticoagulation", "ICU"],
   "contentType": "calculator",

@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "Mallampati Score",
+  "settingEmphasis": ["or", "ed"],
   "aliases": ["Mallampati class", "modified Mallampati", "oropharyngeal view"],
   "tags": ["difficult airway", "airway assessment", "intubation", "preop", "OR"],
   "contentType": "calculator",

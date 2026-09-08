@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "Estimated Blood Volume & Maximum Allowable Blood Loss",
+  "settingEmphasis": ["or", "icu"],
   "aliases": ["MABL", "ABL", "allowable blood loss", "estimated blood volume", "EBV", "transfusion trigger volume", "Gross formula"],
   "tags": ["blood loss", "transfusion", "estimated blood volume", "perioperative", "OR", "anesthesia", "pediatric"],
   "keywords": ["EBV weight-based mL/kg by age", "premature 95 term 85 infant 80 child 75 adult male 70 female 65", "ABL = EBV x (Hi - Hf) / Hi", "maximum allowable blood loss before transfusion", "haematocrit target"],

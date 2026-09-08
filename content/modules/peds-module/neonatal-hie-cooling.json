@@ -3,6 +3,7 @@
   "section": "Peds Module",
   "category": "Neonatology",
   "title": "Neonatal HIE & Therapeutic Hypothermia",
+  "settingEmphasis": ["icu"],
   "aliases": [
     "hypoxic-ischemic encephalopathy",
     "perinatal asphyxia",

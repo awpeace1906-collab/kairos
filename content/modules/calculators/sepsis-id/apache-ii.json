@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Sepsis / Infectious Disease",
   "title": "APACHE II Score",
+  "settingEmphasis": ["icu"],
   "aliases": ["APACHE II", "acute physiology and chronic health evaluation", "ICU mortality score", "ICU severity of illness"],
   "tags": ["ICU", "mortality", "severity of illness", "prognosis", "critical care"],
   "keywords": ["acute physiology score", "age points", "chronic health points", "temperature", "MAP", "heart rate", "respiratory rate", "oxygenation", "arterial pH", "sodium", "potassium", "creatinine", "hematocrit", "WBC", "GCS", "worst value in first 24 hours"],

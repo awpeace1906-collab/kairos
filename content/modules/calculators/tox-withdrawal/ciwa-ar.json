@@ -3,6 +3,10 @@
   "section": "Calculators",
   "category": "Toxicology / Withdrawal",
   "title": "CIWA-Ar (Alcohol Withdrawal)",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
   "aliases": [
     "CIWA",
     "alcohol withdrawal assessment",

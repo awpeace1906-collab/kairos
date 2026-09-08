@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Sepsis / Infectious Disease",
   "title": "SOFA Score",
+  "settingEmphasis": ["icu", "ed"],
   "aliases": ["Sequential Organ Failure Assessment", "organ dysfunction score", "sepsis-3 SOFA"],
   "tags": ["sepsis", "organ dysfunction", "ICU", "Sepsis-3", "mortality"],
   "keywords": ["PaO2/FiO2", "platelets", "bilirubin", "MAP vasopressors", "GCS", "creatinine urine output", "delta SOFA >= 2"],

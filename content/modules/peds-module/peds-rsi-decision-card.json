@@ -3,6 +3,7 @@
   "section": "Peds Module",
   "category": "Peds Resuscitation & Decision Support",
   "title": "Pediatric RSI — Decision & Dosing Card",
+  "settingEmphasis": ["ed", "icu", "prehospital"],
   "aliases": ["peds RSI", "pediatric rapid sequence intubation", "peds induction agent choice", "peds paralytic dose", "atropine premedication infant"],
   "tags": ["RSI", "pediatric airway", "induction", "ketamine", "rocuronium", "succinylcholine", "atropine", "PALS", "ED"],
   "contentType": "peds-tool",

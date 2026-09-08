@@ -3,6 +3,7 @@
   "section": "Drug & Dosing Cards",
   "category": "Dosing & Fluid Math",
   "title": "Acetaminophen Overdose / NAC Dosing",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["APAP overdose", "Rumack-Matthew", "N-acetylcysteine", "paracetamol toxicity", "150 line"],
   "tags": ["acetaminophen", "paracetamol", "overdose", "NAC", "poisoning", "ED"],
   "contentType": "calculator",

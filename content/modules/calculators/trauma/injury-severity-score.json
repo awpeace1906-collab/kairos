@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Trauma",
   "title": "Injury Severity Score (ISS)",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["ISS", "injury severity score", "trauma anatomic score", "AIS-based severity"],
   "tags": ["trauma", "anatomic injury", "severity", "registry", "prognosis"],
   "keywords": ["Abbreviated Injury Scale", "six body regions", "three worst regions", "sum of squares", "ISS >= 16 major trauma"],

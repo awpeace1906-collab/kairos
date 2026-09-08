@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Sepsis / Infectious Disease",
   "title": "Centor Score / McIsaac Modification",
+  "settingEmphasis": ["ed"],
   "aliases": ["Centor criteria", "strep pharyngitis score", "sore throat score"],
   "tags": ["pharyngitis", "strep throat", "GAS", "antibiotics", "rapid strep test", "ED"],
   "contentType": "calculator",

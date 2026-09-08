@@ -3,6 +3,7 @@
   "section": "Peds Module",
   "category": "Peds Resuscitation & Decision Support",
   "title": "Pediatric Appendicitis Score (PAS)",
+  "settingEmphasis": ["ed"],
   "aliases": ["PAS", "peds appendicitis", "Samuel score"],
   "tags": ["appendicitis", "abdominal pain", "RLQ pain", "peds", "imaging decision"],
   "contentType": "peds-tool",

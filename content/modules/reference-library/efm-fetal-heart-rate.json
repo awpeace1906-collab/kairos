@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Fetal Heart Rate Monitoring (NICHD)",
+  "settingEmphasis": [
+    "or",
+    "ed"
+  ],
   "aliases": [
     "EFM",
     "electronic fetal monitoring",

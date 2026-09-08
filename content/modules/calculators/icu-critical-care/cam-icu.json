@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "ICU / Critical Care",
   "title": "CAM-ICU (Delirium Assessment)",
+  "settingEmphasis": ["icu"],
   "aliases": ["CAM-ICU", "confusion assessment method ICU", "ICU delirium screen"],
   "tags": ["delirium", "ICU", "PADIS", "mechanical ventilation", "sedation"],
   "keywords": ["acute change in mental status", "inattention", "letters attention test", "altered level of consciousness", "disorganized thinking", "RASS", "delirium positive"],

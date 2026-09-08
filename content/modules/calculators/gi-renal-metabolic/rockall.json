@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "GI / Renal / Metabolic",
   "title": "Rockall Score (Upper GI Bleed)",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["Rockall", "post-endoscopy rebleeding risk", "UGIB mortality score"],
   "tags": ["upper GI bleed", "rebleeding", "mortality", "endoscopy", "ED", "risk stratification"],
   "keywords": ["age", "shock", "comorbidity", "endoscopic diagnosis", "stigmata of recent hemorrhage", "pre-endoscopy Rockall", "full Rockall"],

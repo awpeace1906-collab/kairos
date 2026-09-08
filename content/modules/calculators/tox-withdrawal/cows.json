@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Toxicology / Withdrawal",
   "title": "COWS (Clinical Opiate Withdrawal Scale)",
+  "settingEmphasis": ["ed"],
   "aliases": ["COWS", "opioid withdrawal scale", "buprenorphine induction timing", "opiate withdrawal severity"],
   "tags": ["opioid withdrawal", "buprenorphine", "induction", "OUD", "ED"],
   "keywords": ["resting pulse", "sweating", "restlessness", "pupil size", "bone or joint aches", "runny nose", "GI upset", "tremor", "yawning", "anxiety", "gooseflesh", "COWS >= 8-12 for buprenorphine"],

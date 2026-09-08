@@ -3,6 +3,7 @@
   "section": "Drug & Dosing Cards",
   "category": "Dosing & Fluid Math",
   "title": "Free Water Deficit",
+  "settingEmphasis": ["icu", "ed"],
   "aliases": ["hypernatremia correction", "water deficit"],
   "tags": ["hypernatremia", "sodium correction", "free water", "ICU"],
   "contentType": "calculator",

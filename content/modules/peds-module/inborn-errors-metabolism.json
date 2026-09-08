@@ -3,6 +3,7 @@
   "section": "Peds Module",
   "category": "Neonatology",
   "title": "Inborn Errors of Metabolism — Recognition & Workup",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["IEM", "metabolic crisis newborn", "hyperammonemia", "urea cycle disorder", "organic acidemia", "galactosemia", "maple syrup urine disease", "sepsis mimic", "newborn screening"],
   "tags": ["inborn errors of metabolism", "hyperammonemia", "metabolic acidosis", "newborn screening", "sepsis mimic", "neonatology"],
   "contentType": "peds-tool",

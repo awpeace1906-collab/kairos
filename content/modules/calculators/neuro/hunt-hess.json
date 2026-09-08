@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Neuro / Stroke / Head Injury",
   "title": "Hunt-Hess Classification",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["Hunt Hess", "SAH grading", "subarachnoid hemorrhage grade"],
   "tags": ["subarachnoid hemorrhage", "SAH", "grading", "prognosis", "ED", "ICU"],
   "contentType": "calculator",

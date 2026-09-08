@@ -3,6 +3,9 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Abnormal Uterine Bleeding (PALM-COEIN)",
+  "settingEmphasis": [
+    "ed"
+  ],
   "aliases": [
     "AUB",
     "PALM-COEIN",

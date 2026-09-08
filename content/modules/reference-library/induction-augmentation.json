@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Induction & Augmentation of Labor",
+  "settingEmphasis": [
+    "or",
+    "ed"
+  ],
   "aliases": [
     "labor induction",
     "cervical ripening",

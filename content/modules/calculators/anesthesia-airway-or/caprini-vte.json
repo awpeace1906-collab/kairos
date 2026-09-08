@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "Caprini Score (Surgical VTE Risk)",
+  "settingEmphasis": ["or", "icu"],
   "aliases": ["Caprini", "surgical VTE risk", "perioperative DVT prophylaxis", "2005 Caprini"],
   "tags": ["VTE prophylaxis", "DVT", "PE", "perioperative", "surgical", "OR"],
   "keywords": ["age", "surgery type", "BMI >= 25", "prior VTE", "thrombophilia", "malignancy", "central venous access", "immobility", "LMWH prophylaxis", "extended prophylaxis"],

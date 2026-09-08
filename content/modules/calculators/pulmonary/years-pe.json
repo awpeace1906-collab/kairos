@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Pulmonary / PE / DVT / Resp Failure",
   "title": "YEARS Algorithm for PE",
+  "settingEmphasis": ["ed"],
   "aliases": ["YEARS", "YEARS criteria", "PE D-dimer algorithm", "simplified PE workup"],
   "tags": ["pulmonary embolism", "d-dimer", "diagnostic pathway", "ED", "pregnancy"],
   "keywords": ["clinical signs of DVT", "hemoptysis", "PE most likely diagnosis", "d-dimer 500", "d-dimer 1000", "avoid CTPA"],

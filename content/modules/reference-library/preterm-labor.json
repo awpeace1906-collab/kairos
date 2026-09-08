@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Preterm Labor",
+  "settingEmphasis": [
+    "or",
+    "ed"
+  ],
   "aliases": [
     "PTL",
     "threatened preterm labor",

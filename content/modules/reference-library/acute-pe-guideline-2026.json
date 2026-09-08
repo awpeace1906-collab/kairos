@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Cardiac / ECG",
   "title": "Acute PE — 2026 AHA/ACC Guideline",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
   "aliases": [
     "pulmonary embolism guideline 2026",
     "PE clinical categories A-E",

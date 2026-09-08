@@ -3,6 +3,7 @@
   "section": "Drug & Dosing Cards",
   "category": "Dosing & Fluid Math",
   "title": "Ideal Body Weight (Devine)",
+  "settingEmphasis": ["icu", "ed", "or"],
   "aliases": ["IBW", "Devine formula", "lung protective tidal volume weight"],
   "tags": ["ideal body weight", "tidal volume", "lung protective ventilation", "ICU", "OR"],
   "contentType": "calculator",

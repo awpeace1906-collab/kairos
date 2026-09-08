@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "Cormack-Lehane Classification",
+  "settingEmphasis": ["or", "ed", "icu"],
   "aliases": ["laryngoscopy grade", "glottic view grade", "CL grade"],
   "tags": ["laryngoscopy", "glottic view", "intubation documentation", "difficult airway", "OR"],
   "contentType": "calculator",

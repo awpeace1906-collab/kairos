@@ -3,6 +3,9 @@
   "section": "Reference Library",
   "category": "Infectious Disease & Immunization",
   "title": "Childhood & Adolescent Immunization Schedule",
+  "settingEmphasis": [
+    "ed"
+  ],
   "aliases": [
     "vaccine schedule",
     "CDC immunization schedule",

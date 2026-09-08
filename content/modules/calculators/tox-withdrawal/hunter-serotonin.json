@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Toxicology / Withdrawal",
   "title": "Hunter Serotonin Toxicity Criteria",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["Hunter criteria", "serotonin syndrome", "serotonin toxicity", "SS diagnosis"],
   "tags": ["serotonin syndrome", "toxicology", "clonus", "hyperthermia", "ED", "ICU"],
   "keywords": ["spontaneous clonus", "inducible clonus", "ocular clonus", "agitation", "diaphoresis", "tremor", "hyperreflexia", "hypertonia", "temperature > 38"],

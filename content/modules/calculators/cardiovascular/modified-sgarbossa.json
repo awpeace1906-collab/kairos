@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Cardiovascular / Chest Pain / Arrhythmia",
   "title": "Modified Sgarbossa Criteria",
+  "settingEmphasis": ["ed", "prehospital"],
   "aliases": ["Sgarbossa", "Smith-modified Sgarbossa", "STEMI in LBBB", "STEMI in paced rhythm", "OMI in LBBB"],
   "tags": ["STEMI", "LBBB", "ventricular paced rhythm", "OMI", "ECG", "ED", "ICU"],
   "keywords": ["concordant ST elevation >= 1 mm", "concordant ST depression V1-V3", "ST/S ratio <= -0.25", "proportionally excessive discordance"],

@@ -3,6 +3,10 @@
   "section": "Calculators",
   "category": "Neuro / Stroke / Head Injury",
   "title": "FOUR Score (Coma Scale)",
+  "settingEmphasis": [
+    "icu",
+    "ed"
+  ],
   "aliases": [
     "FOUR score",
     "Full Outline of UnResponsiveness",

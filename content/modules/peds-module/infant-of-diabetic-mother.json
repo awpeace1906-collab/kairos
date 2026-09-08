@@ -3,6 +3,7 @@
   "section": "Peds Module",
   "category": "Neonatology",
   "title": "Infant of a Diabetic Mother",
+  "settingEmphasis": ["icu"],
   "aliases": [
     "IDM",
     "neonatal hypoglycemia",

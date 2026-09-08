@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Pulmonary / PE / DVT / Resp Failure",
   "title": "BODE Index (COPD Prognosis)",
+  "settingEmphasis": ["ed"],
   "aliases": ["BODE", "COPD mortality index", "BODE score", "COPD prognosis"],
   "tags": ["COPD", "prognosis", "mortality", "pulmonary rehabilitation", "lung transplant referral"],
   "keywords": ["BMI", "FEV1 percent predicted", "mMRC dyspnea scale", "6-minute walk distance", "COPD 4-year survival"],

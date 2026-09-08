@@ -3,6 +3,11 @@
   "section": "Reference Library",
   "category": "Resuscitation & Airway",
   "title": "Pediatric Resuscitation — 2025 ERC Changes",
+  "settingEmphasis": [
+    "ed",
+    "prehospital",
+    "icu"
+  ],
   "aliases": [
     "ERC 2025 PLS",
     "pediatric life support 2025",

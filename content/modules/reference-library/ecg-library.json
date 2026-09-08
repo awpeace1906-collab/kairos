@@ -3,6 +3,11 @@
   "section": "Reference Library",
   "category": "Cardiac / ECG",
   "title": "ECG Library — Key Patterns",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
   "aliases": [
     "De Winter",
     "Wellens",

@@ -3,6 +3,11 @@
   "section": "Drug & Dosing Cards",
   "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
   "title": "Atropine — Pediatric (bradycardia / RSI premedication)",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
   "aliases": [
     "peds atropine",
     "vagal bradycardia dose"

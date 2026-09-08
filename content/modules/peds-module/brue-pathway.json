@@ -3,6 +3,7 @@
   "section": "Peds Module",
   "category": "Peds Resuscitation & Decision Support",
   "title": "BRUE Pathway",
+  "settingEmphasis": ["ed"],
   "aliases": ["brief resolved unexplained event", "ALTE", "apparent life-threatening event"],
   "tags": ["BRUE", "infant", "apnea", "cyanosis", "risk stratification", "disposition"],
   "contentType": "peds-tool",

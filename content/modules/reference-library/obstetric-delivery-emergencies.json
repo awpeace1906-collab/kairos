@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Delivery Emergencies — Shoulder Dystocia, Cord Prolapse, Abruption",
+  "settingEmphasis": [
+    "or",
+    "ed"
+  ],
   "aliases": [
     "shoulder dystocia",
     "HELPERR",

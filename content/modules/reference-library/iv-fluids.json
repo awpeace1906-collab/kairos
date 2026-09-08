@@ -3,6 +3,11 @@
   "section": "Reference Library",
   "category": "Resuscitation & Airway",
   "title": "IV Fluids & Volume Resuscitation",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
   "aliases": [
     "crystalloid composition",
     "balanced vs saline",

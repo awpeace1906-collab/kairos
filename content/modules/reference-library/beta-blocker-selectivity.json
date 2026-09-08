@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Cardiac / ECG",
   "title": "Beta-Blocker Receptor Selectivity",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
   "aliases": [
     "beta blocker chart",
     "cardioselective beta blockers",

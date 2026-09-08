@@ -3,6 +3,9 @@
   "section": "Calculators",
   "category": "ICU / Critical Care",
   "title": "CPOT (Critical-Care Pain Observation Tool)",
+  "settingEmphasis": [
+    "icu"
+  ],
   "aliases": [
     "CPOT",
     "pain score intubated",

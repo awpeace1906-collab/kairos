@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "ICU / Critical Care",
   "title": "RASS (Richmond Agitation-Sedation Scale)",
+  "settingEmphasis": ["icu", "ed", "or"],
   "aliases": ["Richmond agitation sedation scale", "sedation depth", "sedation target"],
   "tags": ["sedation", "agitation", "ventilator", "ICU", "delirium screen"],
   "contentType": "calculator",

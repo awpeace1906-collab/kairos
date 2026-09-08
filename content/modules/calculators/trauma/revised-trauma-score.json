@@ -3,6 +3,10 @@
   "section": "Calculators",
   "category": "Trauma",
   "title": "Revised Trauma Score (RTS)",
+  "settingEmphasis": [
+    "prehospital",
+    "ed"
+  ],
   "aliases": [
     "RTS",
     "revised trauma score",

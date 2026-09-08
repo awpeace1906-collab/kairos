@@ -3,6 +3,9 @@
   "section": "Calculators",
   "category": "Neuro / Stroke / Head Injury",
   "title": "Ottawa SAH Rule",
+  "settingEmphasis": [
+    "ed"
+  ],
   "aliases": [
     "Ottawa subarachnoid hemorrhage rule",
     "SAH rule out",

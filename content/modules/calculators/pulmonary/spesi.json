@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Pulmonary / PE / DVT / Resp Failure",
   "title": "Simplified PESI (sPESI)",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["sPESI", "simplified pulmonary embolism severity index", "PE 30-day mortality", "PE outpatient eligibility"],
   "tags": ["pulmonary embolism", "risk stratification", "prognosis", "disposition", "ED"],
   "keywords": ["age > 80", "cancer", "chronic cardiopulmonary disease", "heart rate >= 110", "SBP < 100", "SaO2 < 90", "PE home treatment"],

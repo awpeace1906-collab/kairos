@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "Modified Aldrete Score",
+  "settingEmphasis": ["or"],
   "aliases": ["Aldrete", "PACU discharge score", "recovery score"],
   "tags": ["PACU", "post-anesthesia recovery", "discharge readiness", "procedural sedation", "OR"],
   "contentType": "calculator",

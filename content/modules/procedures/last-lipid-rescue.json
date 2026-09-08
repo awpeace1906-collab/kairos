@@ -3,6 +3,7 @@
   "section": "Procedures",
   "category": "Regional Anesthesia & Ultrasound",
   "title": "LAST — Recognition & Lipid Rescue",
+  "settingEmphasis": ["or", "ed", "icu"],
   "aliases": ["local anesthetic systemic toxicity", "lipid emulsion", "Intralipid", "bupivacaine toxicity"],
   "tags": ["LAST", "local anesthetic toxicity", "lipid emulsion", "nerve block complication", "ED", "OR"],
   "contentType": "reference",

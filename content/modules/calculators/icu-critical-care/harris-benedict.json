@@ -3,6 +3,9 @@
   "section": "Calculators",
   "category": "ICU / Critical Care",
   "title": "Harris-Benedict Energy Expenditure",
+  "settingEmphasis": [
+    "icu"
+  ],
   "aliases": [
     "Harris-Benedict",
     "basal energy expenditure",

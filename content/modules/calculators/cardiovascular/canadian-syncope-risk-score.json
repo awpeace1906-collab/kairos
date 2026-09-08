@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Cardiovascular / Chest Pain / Arrhythmia",
   "title": "Canadian Syncope Risk Score",
+  "settingEmphasis": ["ed"],
   "aliases": ["CSRS", "syncope risk", "syncope disposition", "30-day serious outcome syncope"],
   "tags": ["syncope", "disposition", "risk stratification", "troponin", "ECG", "ED"],
   "keywords": ["vasovagal predisposition", "heart disease history", "QRS axis", "QRS duration > 130 ms", "corrected QT > 480", "troponin above 99th percentile"],

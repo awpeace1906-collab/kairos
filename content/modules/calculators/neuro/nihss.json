@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Neuro / Stroke / Head Injury",
   "title": "NIH Stroke Scale (NIHSS)",
+  "settingEmphasis": ["ed", "prehospital", "icu"],
   "aliases": ["NIHSS", "stroke severity", "stroke scale"],
   "tags": ["stroke", "severity", "thrombolytic", "thrombectomy", "ED", "ICU"],
   "contentType": "calculator",

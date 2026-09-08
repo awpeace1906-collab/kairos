@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "GI / Renal / Metabolic",
   "title": "Anion Gap",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["AG", "serum anion gap", "delta gap"],
   "contentType": "calculator",
   "content_version": 1,

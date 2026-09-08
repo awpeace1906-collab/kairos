@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "ICU / Critical Care",
   "title": "Rapid Shallow Breathing Index (RSBI)",
+  "settingEmphasis": ["icu"],
   "aliases": ["RSBI", "Tobin index", "f/Vt", "extubation readiness", "weaning predictor"],
   "tags": ["weaning", "extubation", "spontaneous breathing trial", "mechanical ventilation", "ICU"],
   "keywords": ["respiratory rate over tidal volume", "RSBI < 105", "measured during a T-piece or low PS trial", "not a standalone extubation order"],

@@ -3,6 +3,7 @@
   "section": "Drug & Dosing Cards",
   "category": "Dosing & Fluid Math",
   "title": "Parkland Formula for Burns",
+  "settingEmphasis": ["ed", "prehospital", "icu"],
   "aliases": ["burn fluid resuscitation", "Parkland", "TBSA fluids"],
   "tags": ["burns", "fluid resuscitation", "TBSA", "trauma", "ED", "ICU"],
   "contentType": "calculator",

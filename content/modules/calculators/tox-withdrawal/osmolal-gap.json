@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Toxicology / Withdrawal",
   "title": "Osmolal Gap",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["osmolar gap", "toxic alcohol screen"],
   "tags": ["toxic alcohol", "methanol", "ethylene glycol", "poisoning", "ED", "ICU"],
   "contentType": "calculator",

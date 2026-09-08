@@ -3,6 +3,11 @@
   "section": "Drug & Dosing Cards",
   "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
   "title": "Epinephrine — Pediatric Cardiac Arrest",
+  "settingEmphasis": [
+    "ed",
+    "prehospital",
+    "icu"
+  ],
   "aliases": [
     "epi",
     "adrenaline",

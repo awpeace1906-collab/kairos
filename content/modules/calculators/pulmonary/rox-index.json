@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Pulmonary / PE / DVT / Resp Failure",
   "title": "ROX Index",
+  "settingEmphasis": ["icu", "ed"],
   "aliases": ["HFNC failure", "high flow nasal cannula prediction"],
   "tags": ["HFNC", "high flow", "intubation", "respiratory failure", "ICU"],
   "contentType": "calculator",

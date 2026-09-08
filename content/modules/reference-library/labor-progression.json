@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Labor Progression & Bishop Score",
+  "settingEmphasis": [
+    "or",
+    "ed"
+  ],
   "aliases": [
     "labor curve",
     "Zhang curve",

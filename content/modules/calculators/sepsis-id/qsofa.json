@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Sepsis / Infectious Disease",
   "title": "qSOFA",
+  "settingEmphasis": ["ed", "prehospital"],
   "aliases": ["quick SOFA", "sepsis screen"],
   "tags": ["sepsis", "deterioration", "screening", "ED", "ICU"],
   "contentType": "calculator",

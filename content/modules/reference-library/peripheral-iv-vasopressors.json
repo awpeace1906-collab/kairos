@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Resuscitation & Airway",
   "title": "Peripheral IV Vasopressors — How Risky, Really?",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
   "aliases": [
     "peripheral pressors",
     "PIV vasopressor safety",

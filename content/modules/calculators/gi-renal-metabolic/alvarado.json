@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "GI / Renal / Metabolic",
   "title": "Alvarado Score",
+  "settingEmphasis": ["ed"],
   "aliases": ["MANTRELS", "appendicitis score adult"],
   "tags": ["appendicitis", "abdominal pain", "RLQ pain", "imaging decision", "ED"],
   "contentType": "calculator",

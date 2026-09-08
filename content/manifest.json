@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-07T00:00:00Z",
+  "generatedAt": "2026-09-08T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
     "calculators/anesthesia-airway-or/allowable-blood-loss": {
       "content_version": 1,
-      "hash": "ad4af935e95125c4",
+      "hash": "863fcd9c6271bed0",
       "path": "modules/calculators/anesthesia-airway-or/allowable-blood-loss.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -14,7 +14,7 @@
     },
     "calculators/anesthesia-airway-or/apfel-ponv": {
       "content_version": 1,
-      "hash": "047cd6bc1bba2725",
+      "hash": "54f8aa8b72508356",
       "path": "modules/calculators/anesthesia-airway-or/apfel-ponv.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -23,7 +23,7 @@
     },
     "calculators/anesthesia-airway-or/ariscat": {
       "content_version": 1,
-      "hash": "449a4e19bd16e3b0",
+      "hash": "72ee81d4a8612527",
       "path": "modules/calculators/anesthesia-airway-or/ariscat.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -32,7 +32,7 @@
     },
     "calculators/anesthesia-airway-or/asa-physical-status": {
       "content_version": 1,
-      "hash": "02e214de96d19a86",
+      "hash": "ab2bcb61de3880ef",
       "path": "modules/calculators/anesthesia-airway-or/asa-physical-status.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -41,7 +41,7 @@
     },
     "calculators/anesthesia-airway-or/caprini-vte": {
       "content_version": 2,
-      "hash": "ccde10d26c55b5c2",
+      "hash": "caa461d11467c404",
       "path": "modules/calculators/anesthesia-airway-or/caprini-vte.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -50,7 +50,7 @@
     },
     "calculators/anesthesia-airway-or/cormack-lehane": {
       "content_version": 1,
-      "hash": "4ee0895b9442f1a7",
+      "hash": "2adbb58cce2e7247",
       "path": "modules/calculators/anesthesia-airway-or/cormack-lehane.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -59,7 +59,7 @@
     },
     "calculators/anesthesia-airway-or/el-ganzouri": {
       "content_version": 1,
-      "hash": "cf68696fb740a102",
+      "hash": "de1977d6c894ea74",
       "path": "modules/calculators/anesthesia-airway-or/el-ganzouri.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -68,7 +68,7 @@
     },
     "calculators/anesthesia-airway-or/lemon-airway": {
       "content_version": 1,
-      "hash": "f93ac8d4ddaab963",
+      "hash": "6659a6308b34d693",
       "path": "modules/calculators/anesthesia-airway-or/lemon-airway.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -77,7 +77,7 @@
     },
     "calculators/anesthesia-airway-or/macocha-score": {
       "content_version": 1,
-      "hash": "a2734fcd5713fae1",
+      "hash": "6b355bcb08de39f3",
       "path": "modules/calculators/anesthesia-airway-or/macocha-score.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -86,7 +86,7 @@
     },
     "calculators/anesthesia-airway-or/mallampati": {
       "content_version": 1,
-      "hash": "5b33061f1bfe77de",
+      "hash": "21c2b9d6d91382b7",
       "path": "modules/calculators/anesthesia-airway-or/mallampati.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -95,7 +95,7 @@
     },
     "calculators/anesthesia-airway-or/modified-aldrete": {
       "content_version": 1,
-      "hash": "691f6830b2824ee7",
+      "hash": "ff9c747dd68107c1",
       "path": "modules/calculators/anesthesia-airway-or/modified-aldrete.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -104,7 +104,7 @@
     },
     "calculators/anesthesia-airway-or/rcri": {
       "content_version": 2,
-      "hash": "d6d200f167fb7a4b",
+      "hash": "64dcfc46da00cc9b",
       "path": "modules/calculators/anesthesia-airway-or/rcri.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -113,7 +113,7 @@
     },
     "calculators/anesthesia-airway-or/stop-bang": {
       "content_version": 1,
-      "hash": "3123b1030225ec72",
+      "hash": "e8458bd4c234c5fd",
       "path": "modules/calculators/anesthesia-airway-or/stop-bang.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -122,7 +122,7 @@
     },
     "calculators/anesthesia-airway-or/surgical-apgar": {
       "content_version": 1,
-      "hash": "ba6d9b76846f1538",
+      "hash": "87c50a687ef100d4",
       "path": "modules/calculators/anesthesia-airway-or/surgical-apgar.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -131,7 +131,7 @@
     },
     "calculators/cardiovascular/brugada-vt": {
       "content_version": 1,
-      "hash": "d4639edc38476173",
+      "hash": "bbe9e4ecf0ff76d1",
       "path": "modules/calculators/cardiovascular/brugada-vt.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -140,7 +140,7 @@
     },
     "calculators/cardiovascular/canadian-syncope-risk-score": {
       "content_version": 1,
-      "hash": "b767ecf6cb5333e8",
+      "hash": "3bbf24cf671dc0fa",
       "path": "modules/calculators/cardiovascular/canadian-syncope-risk-score.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -149,7 +149,7 @@
     },
     "calculators/cardiovascular/cha2ds2-vasc": {
       "content_version": 1,
-      "hash": "1d832961e8faf4c0",
+      "hash": "6c5481922e38c708",
       "path": "modules/calculators/cardiovascular/cha2ds2-vasc.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -158,7 +158,7 @@
     },
     "calculators/cardiovascular/grace-acs": {
       "content_version": 1,
-      "hash": "1cd68726f0adb5bb",
+      "hash": "8ecf2cdce997b429",
       "path": "modules/calculators/cardiovascular/grace-acs.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -167,7 +167,7 @@
     },
     "calculators/cardiovascular/has-bled": {
       "content_version": 1,
-      "hash": "224a16780f370c3b",
+      "hash": "77c43f18b1f7f538",
       "path": "modules/calculators/cardiovascular/has-bled.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -176,7 +176,7 @@
     },
     "calculators/cardiovascular/heart-score": {
       "content_version": 2,
-      "hash": "9bb4798460707ab0",
+      "hash": "89b293bd69705483",
       "path": "modules/calculators/cardiovascular/heart-score.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -185,7 +185,7 @@
     },
     "calculators/cardiovascular/killip-classification": {
       "content_version": 1,
-      "hash": "40cf374a35032418",
+      "hash": "eb3851eaf4db59e4",
       "path": "modules/calculators/cardiovascular/killip-classification.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -194,7 +194,7 @@
     },
     "calculators/cardiovascular/modified-sgarbossa": {
       "content_version": 1,
-      "hash": "bbea3f9533c4390e",
+      "hash": "f1cd416755b35c0f",
       "path": "modules/calculators/cardiovascular/modified-sgarbossa.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -203,7 +203,7 @@
     },
     "calculators/cardiovascular/qtc": {
       "content_version": 2,
-      "hash": "167e30de6e95f9bd",
+      "hash": "3d602e22e58211ae",
       "path": "modules/calculators/cardiovascular/qtc.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -212,7 +212,7 @@
     },
     "calculators/cardiovascular/timi-nstemi": {
       "content_version": 1,
-      "hash": "b4e72a6554687e02",
+      "hash": "4312a94794d89949",
       "path": "modules/calculators/cardiovascular/timi-nstemi.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -221,7 +221,7 @@
     },
     "calculators/early-warning-resus/mews": {
       "content_version": 1,
-      "hash": "7e875da20eab77aa",
+      "hash": "8ce955c77f8dd89b",
       "path": "modules/calculators/early-warning-resus/mews.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -230,7 +230,7 @@
     },
     "calculators/early-warning-resus/news2": {
       "content_version": 2,
-      "hash": "c05674160c9b3653",
+      "hash": "1ac6dd79de8d1163",
       "path": "modules/calculators/early-warning-resus/news2.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -239,7 +239,7 @@
     },
     "calculators/gi-renal-metabolic/aims65": {
       "content_version": 1,
-      "hash": "2edf86720b0a7a0b",
+      "hash": "cb0c7436ae73097b",
       "path": "modules/calculators/gi-renal-metabolic/aims65.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -248,7 +248,7 @@
     },
     "calculators/gi-renal-metabolic/alvarado": {
       "content_version": 1,
-      "hash": "8212cffcb04abe83",
+      "hash": "5ebe09f92da29f61",
       "path": "modules/calculators/gi-renal-metabolic/alvarado.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -257,7 +257,7 @@
     },
     "calculators/gi-renal-metabolic/anion-gap": {
       "content_version": 1,
-      "hash": "e880b515d6688479",
+      "hash": "255ca97cd1490b6a",
       "path": "modules/calculators/gi-renal-metabolic/anion-gap.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -265,7 +265,7 @@
     },
     "calculators/gi-renal-metabolic/bisap": {
       "content_version": 1,
-      "hash": "ef0ed27c80998767",
+      "hash": "2f06b08065449b93",
       "path": "modules/calculators/gi-renal-metabolic/bisap.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -274,7 +274,7 @@
     },
     "calculators/gi-renal-metabolic/corrected-calcium": {
       "content_version": 1,
-      "hash": "04124931f64a67ba",
+      "hash": "3830d4dd3b9f060a",
       "path": "modules/calculators/gi-renal-metabolic/corrected-calcium.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -282,7 +282,7 @@
     },
     "calculators/gi-renal-metabolic/corrected-sodium-hyperglycemia": {
       "content_version": 1,
-      "hash": "45c30dd2419a282b",
+      "hash": "97e29cd8f0bef6e5",
       "path": "modules/calculators/gi-renal-metabolic/corrected-sodium-hyperglycemia.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -290,7 +290,7 @@
     },
     "calculators/gi-renal-metabolic/glasgow-blatchford": {
       "content_version": 1,
-      "hash": "a8752c095ace5c35",
+      "hash": "538cbb35a3754e4f",
       "path": "modules/calculators/gi-renal-metabolic/glasgow-blatchford.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -299,7 +299,7 @@
     },
     "calculators/gi-renal-metabolic/maddrey-df": {
       "content_version": 1,
-      "hash": "b417b0b94933e587",
+      "hash": "d52c3ecf214de179",
       "path": "modules/calculators/gi-renal-metabolic/maddrey-df.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -308,7 +308,7 @@
     },
     "calculators/gi-renal-metabolic/mehran-ci-akin-score": {
       "content_version": 1,
-      "hash": "213651e3e9a07199",
+      "hash": "09dd4f97a8eabe47",
       "path": "modules/calculators/gi-renal-metabolic/mehran-ci-akin-score.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -317,7 +317,7 @@
     },
     "calculators/gi-renal-metabolic/meld-na": {
       "content_version": 2,
-      "hash": "d57f0fbb65962b85",
+      "hash": "a86178f2749b172d",
       "path": "modules/calculators/gi-renal-metabolic/meld-na.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -326,7 +326,7 @@
     },
     "calculators/gi-renal-metabolic/ranson": {
       "content_version": 1,
-      "hash": "c79eb4ef846cbdca",
+      "hash": "ae43781cc5d292e8",
       "path": "modules/calculators/gi-renal-metabolic/ranson.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -335,7 +335,7 @@
     },
     "calculators/gi-renal-metabolic/refeeding-risk": {
       "content_version": 2,
-      "hash": "eaa599a7917de7e5",
+      "hash": "42572210a1d26cfe",
       "path": "modules/calculators/gi-renal-metabolic/refeeding-risk.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -344,7 +344,7 @@
     },
     "calculators/gi-renal-metabolic/rockall": {
       "content_version": 1,
-      "hash": "3d5698eab8e18287",
+      "hash": "8ba5327fff0689aa",
       "path": "modules/calculators/gi-renal-metabolic/rockall.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -353,7 +353,7 @@
     },
     "calculators/icu-critical-care/ards-berlin": {
       "content_version": 1,
-      "hash": "ec55b8f5877cc041",
+      "hash": "c953b613597e8ce0",
       "path": "modules/calculators/icu-critical-care/ards-berlin.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -362,7 +362,7 @@
     },
     "calculators/icu-critical-care/cam-icu": {
       "content_version": 1,
-      "hash": "9917ee20cdf6a1f0",
+      "hash": "0bed6d5dcf199785",
       "path": "modules/calculators/icu-critical-care/cam-icu.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -371,7 +371,7 @@
     },
     "calculators/icu-critical-care/cpot": {
       "content_version": 1,
-      "hash": "6372ccbe98c6c390",
+      "hash": "5b91a20f835bf0ca",
       "path": "modules/calculators/icu-critical-care/cpot.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -380,7 +380,7 @@
     },
     "calculators/icu-critical-care/four-ts-hit": {
       "content_version": 1,
-      "hash": "1c3d5cd5b3329a76",
+      "hash": "3bbece1c7588646c",
       "path": "modules/calculators/icu-critical-care/four-ts-hit.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -389,7 +389,7 @@
     },
     "calculators/icu-critical-care/harris-benedict": {
       "content_version": 2,
-      "hash": "7c79cf07d06967e9",
+      "hash": "89879acfa15d6045",
       "path": "modules/calculators/icu-critical-care/harris-benedict.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -398,7 +398,7 @@
     },
     "calculators/icu-critical-care/improve-bleed": {
       "content_version": 2,
-      "hash": "04650fe140f301ec",
+      "hash": "4166b1af600e4a4e",
       "path": "modules/calculators/icu-critical-care/improve-bleed.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -407,7 +407,7 @@
     },
     "calculators/icu-critical-care/padua-prediction-score": {
       "content_version": 1,
-      "hash": "38f61bc25d3b362b",
+      "hash": "f9b53486ba4f3380",
       "path": "modules/calculators/icu-critical-care/padua-prediction-score.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -416,7 +416,7 @@
     },
     "calculators/icu-critical-care/pf-ratio": {
       "content_version": 1,
-      "hash": "26a3c3def28f9887",
+      "hash": "a825bba5ccfa2308",
       "path": "modules/calculators/icu-critical-care/pf-ratio.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -425,7 +425,7 @@
     },
     "calculators/icu-critical-care/rass": {
       "content_version": 1,
-      "hash": "d87dfa7f31e58941",
+      "hash": "dd37e0fc5c96dc35",
       "path": "modules/calculators/icu-critical-care/rass.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -434,7 +434,7 @@
     },
     "calculators/icu-critical-care/rsbi": {
       "content_version": 1,
-      "hash": "28530f23998c48ea",
+      "hash": "d9d37dd2165f3a36",
       "path": "modules/calculators/icu-critical-care/rsbi.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -443,7 +443,7 @@
     },
     "calculators/neuro/abcd2": {
       "content_version": 1,
-      "hash": "01fe129ec15fa88f",
+      "hash": "6a63f70cb6d2c680",
       "path": "modules/calculators/neuro/abcd2.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -452,7 +452,7 @@
     },
     "calculators/neuro/canadian-ct-head": {
       "content_version": 1,
-      "hash": "255c807448eab871",
+      "hash": "0fe8c02177cb2de6",
       "path": "modules/calculators/neuro/canadian-ct-head.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -461,7 +461,7 @@
     },
     "calculators/neuro/four-score": {
       "content_version": 1,
-      "hash": "53752a1096016c80",
+      "hash": "8b00465f7f88cb0b",
       "path": "modules/calculators/neuro/four-score.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -470,7 +470,7 @@
     },
     "calculators/neuro/gcs": {
       "content_version": 1,
-      "hash": "e4e34d10acfd3167",
+      "hash": "594c4cc5e4029271",
       "path": "modules/calculators/neuro/gcs.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -479,7 +479,7 @@
     },
     "calculators/neuro/hunt-hess": {
       "content_version": 1,
-      "hash": "94168809ce48d790",
+      "hash": "0a94e30112b8fc8d",
       "path": "modules/calculators/neuro/hunt-hess.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -488,7 +488,7 @@
     },
     "calculators/neuro/ich-score": {
       "content_version": 1,
-      "hash": "4031eb0363029150",
+      "hash": "10be6f5bb801ef4b",
       "path": "modules/calculators/neuro/ich-score.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -497,7 +497,7 @@
     },
     "calculators/neuro/nihss": {
       "content_version": 1,
-      "hash": "a5377dab2d2f593b",
+      "hash": "280e8d33d3d9d194",
       "path": "modules/calculators/neuro/nihss.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -506,7 +506,7 @@
     },
     "calculators/neuro/ottawa-sah-rule": {
       "content_version": 1,
-      "hash": "e1ab4d1c9c98ce86",
+      "hash": "c2e539236adc0d69",
       "path": "modules/calculators/neuro/ottawa-sah-rule.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -515,7 +515,7 @@
     },
     "calculators/pulmonary/bode-index": {
       "content_version": 1,
-      "hash": "fd609a9716a068e2",
+      "hash": "41491070a161d2f5",
       "path": "modules/calculators/pulmonary/bode-index.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -524,7 +524,7 @@
     },
     "calculators/pulmonary/curb-65": {
       "content_version": 1,
-      "hash": "6ce413bcf84f244b",
+      "hash": "9461320649ec9a3d",
       "path": "modules/calculators/pulmonary/curb-65.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -533,7 +533,7 @@
     },
     "calculators/pulmonary/perc-rule": {
       "content_version": 1,
-      "hash": "315f1d41028f5841",
+      "hash": "06d4cdeeb5e66d8a",
       "path": "modules/calculators/pulmonary/perc-rule.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -542,7 +542,7 @@
     },
     "calculators/pulmonary/pesi": {
       "content_version": 1,
-      "hash": "1a8a1892138cd394",
+      "hash": "1e07ea9348ebb26f",
       "path": "modules/calculators/pulmonary/pesi.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -551,7 +551,7 @@
     },
     "calculators/pulmonary/revised-geneva": {
       "content_version": 1,
-      "hash": "0b1557d08b14748c",
+      "hash": "fcde990f59753ae3",
       "path": "modules/calculators/pulmonary/revised-geneva.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -560,7 +560,7 @@
     },
     "calculators/pulmonary/rox-index": {
       "content_version": 1,
-      "hash": "ec57a3b0754a3398",
+      "hash": "4d38c0590cd18f40",
       "path": "modules/calculators/pulmonary/rox-index.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -569,7 +569,7 @@
     },
     "calculators/pulmonary/spesi": {
       "content_version": 1,
-      "hash": "a19927a159a8d2f9",
+      "hash": "30515cf067303573",
       "path": "modules/calculators/pulmonary/spesi.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -578,7 +578,7 @@
     },
     "calculators/pulmonary/wells-dvt": {
       "content_version": 2,
-      "hash": "8ac1b1dbefc0200a",
+      "hash": "f34134cf84478f0d",
       "path": "modules/calculators/pulmonary/wells-dvt.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -587,7 +587,7 @@
     },
     "calculators/pulmonary/wells-pe": {
       "content_version": 1,
-      "hash": "117c262b65a1bbe7",
+      "hash": "466f693ee146409b",
       "path": "modules/calculators/pulmonary/wells-pe.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -596,7 +596,7 @@
     },
     "calculators/pulmonary/years-pe": {
       "content_version": 1,
-      "hash": "68174bf0374fb4f3",
+      "hash": "934ba7725342c8ed",
       "path": "modules/calculators/pulmonary/years-pe.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -605,7 +605,7 @@
     },
     "calculators/sepsis-id/apache-ii": {
       "content_version": 1,
-      "hash": "0f28c6c7479d12cf",
+      "hash": "0c3e2de1500686ad",
       "path": "modules/calculators/sepsis-id/apache-ii.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -614,7 +614,7 @@
     },
     "calculators/sepsis-id/centor-mcisaac": {
       "content_version": 1,
-      "hash": "f68a80a307dda214",
+      "hash": "b130097c80c3d346",
       "path": "modules/calculators/sepsis-id/centor-mcisaac.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -623,7 +623,7 @@
     },
     "calculators/sepsis-id/lrinec": {
       "content_version": 1,
-      "hash": "361df66a99b3e5f2",
+      "hash": "e1bbe98f4c08b29a",
       "path": "modules/calculators/sepsis-id/lrinec.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -632,7 +632,7 @@
     },
     "calculators/sepsis-id/psi-port": {
       "content_version": 2,
-      "hash": "ad97001c05f9072e",
+      "hash": "e24f3f8896dc57b1",
       "path": "modules/calculators/sepsis-id/psi-port.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -641,7 +641,7 @@
     },
     "calculators/sepsis-id/qsofa": {
       "content_version": 1,
-      "hash": "1349d45a54382755",
+      "hash": "4bbaed15342050ce",
       "path": "modules/calculators/sepsis-id/qsofa.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -650,7 +650,7 @@
     },
     "calculators/sepsis-id/sirs": {
       "content_version": 1,
-      "hash": "44722407fa214feb",
+      "hash": "8ada007cae26d9fb",
       "path": "modules/calculators/sepsis-id/sirs.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -659,7 +659,7 @@
     },
     "calculators/sepsis-id/sofa-score": {
       "content_version": 1,
-      "hash": "d2d768a13efcb2a6",
+      "hash": "4010c61bbfbe8f9c",
       "path": "modules/calculators/sepsis-id/sofa-score.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -668,7 +668,7 @@
     },
     "calculators/tox-withdrawal/ciwa-ar": {
       "content_version": 2,
-      "hash": "85b73096c0b744bc",
+      "hash": "178a753f8b268e90",
       "path": "modules/calculators/tox-withdrawal/ciwa-ar.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -677,7 +677,7 @@
     },
     "calculators/tox-withdrawal/cows": {
       "content_version": 1,
-      "hash": "4298f26732329a62",
+      "hash": "532a55958159f4ca",
       "path": "modules/calculators/tox-withdrawal/cows.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -686,7 +686,7 @@
     },
     "calculators/tox-withdrawal/hunter-serotonin": {
       "content_version": 1,
-      "hash": "560a9de8842eec73",
+      "hash": "cad9c36baa796161",
       "path": "modules/calculators/tox-withdrawal/hunter-serotonin.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -695,7 +695,7 @@
     },
     "calculators/tox-withdrawal/osmolal-gap": {
       "content_version": 1,
-      "hash": "aec472c5e604a4b2",
+      "hash": "28922d41bcbbde64",
       "path": "modules/calculators/tox-withdrawal/osmolal-gap.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -703,7 +703,7 @@
     },
     "calculators/tox-withdrawal/salicylate-toxicity": {
       "content_version": 1,
-      "hash": "0a2fcbda9ccac53d",
+      "hash": "2aa7f5681f946400",
       "path": "modules/calculators/tox-withdrawal/salicylate-toxicity.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -712,7 +712,7 @@
     },
     "calculators/trauma/abc-score-mtp": {
       "content_version": 1,
-      "hash": "c502eebdd595a71f",
+      "hash": "a26dab00a38366ea",
       "path": "modules/calculators/trauma/abc-score-mtp.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -721,7 +721,7 @@
     },
     "calculators/trauma/canadian-cspine": {
       "content_version": 1,
-      "hash": "fbaeb678b5479f76",
+      "hash": "c75c9bbc1ec3eb48",
       "path": "modules/calculators/trauma/canadian-cspine.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -730,7 +730,7 @@
     },
     "calculators/trauma/injury-severity-score": {
       "content_version": 1,
-      "hash": "162e4d6207ba8334",
+      "hash": "6a130dc56353539f",
       "path": "modules/calculators/trauma/injury-severity-score.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -739,7 +739,7 @@
     },
     "calculators/trauma/modified-shock-index": {
       "content_version": 1,
-      "hash": "125b75eb88a2c182",
+      "hash": "88411774c9686fd9",
       "path": "modules/calculators/trauma/modified-shock-index.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -748,7 +748,7 @@
     },
     "calculators/trauma/nexus-chest-ct": {
       "content_version": 1,
-      "hash": "87dc8d860a2258b9",
+      "hash": "4d9fce600c3ef996",
       "path": "modules/calculators/trauma/nexus-chest-ct.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -757,7 +757,7 @@
     },
     "calculators/trauma/nexus-cspine": {
       "content_version": 1,
-      "hash": "bff0da09cfcb0576",
+      "hash": "b88003833c764ff9",
       "path": "modules/calculators/trauma/nexus-cspine.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -766,7 +766,7 @@
     },
     "calculators/trauma/ottawa-ankle-rules": {
       "content_version": 1,
-      "hash": "c796eb137033d788",
+      "hash": "58cf7dd75b941efe",
       "path": "modules/calculators/trauma/ottawa-ankle-rules.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -775,7 +775,7 @@
     },
     "calculators/trauma/ottawa-knee-rule": {
       "content_version": 1,
-      "hash": "3859e98760961bbd",
+      "hash": "80b9ae3184914a30",
       "path": "modules/calculators/trauma/ottawa-knee-rule.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -784,7 +784,7 @@
     },
     "calculators/trauma/pecarn-head": {
       "content_version": 1,
-      "hash": "e0146dd45073dada",
+      "hash": "5b910d12e7d62c1c",
       "path": "modules/calculators/trauma/pecarn-head.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -793,7 +793,7 @@
     },
     "calculators/trauma/revised-trauma-score": {
       "content_version": 1,
-      "hash": "853071d49cfe6918",
+      "hash": "14f72ec9fe0e1390",
       "path": "modules/calculators/trauma/revised-trauma-score.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -802,7 +802,7 @@
     },
     "calculators/trauma/shock-index": {
       "content_version": 1,
-      "hash": "f63c3710b95a1645",
+      "hash": "b4b651257ae9ffa0",
       "path": "modules/calculators/trauma/shock-index.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -1306,7 +1306,7 @@
     },
     "drug-dosing/dosing-fluid-math/adjusted-body-weight": {
       "content_version": 2,
-      "hash": "606dbc8145817fa1",
+      "hash": "d843d74a72c16504",
       "path": "modules/drug-dosing/dosing-fluid-math/adjusted-body-weight.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
@@ -1315,7 +1315,7 @@
     },
     "drug-dosing/dosing-fluid-math/apap-nac-dosing": {
       "content_version": 1,
-      "hash": "a44159dd13794993",
+      "hash": "e77d9c192e8a2b7b",
       "path": "modules/drug-dosing/dosing-fluid-math/apap-nac-dosing.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
@@ -1324,7 +1324,7 @@
     },
     "drug-dosing/dosing-fluid-math/cockcroft-gault": {
       "content_version": 1,
-      "hash": "679af7612a5db2e0",
+      "hash": "e80c8e6b5d4e2cf3",
       "path": "modules/drug-dosing/dosing-fluid-math/cockcroft-gault.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
@@ -1332,7 +1332,7 @@
     },
     "drug-dosing/dosing-fluid-math/free-water-deficit": {
       "content_version": 2,
-      "hash": "96fd67d977325fd1",
+      "hash": "cdc0f36a8280867b",
       "path": "modules/drug-dosing/dosing-fluid-math/free-water-deficit.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
@@ -1341,7 +1341,7 @@
     },
     "drug-dosing/dosing-fluid-math/holliday-segar-maintenance-fluids": {
       "content_version": 2,
-      "hash": "5b274223cc529982",
+      "hash": "da5c2cce55d00ba8",
       "path": "modules/drug-dosing/dosing-fluid-math/holliday-segar-maintenance-fluids.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
@@ -1349,7 +1349,7 @@
     },
     "drug-dosing/dosing-fluid-math/ideal-body-weight": {
       "content_version": 1,
-      "hash": "381243041ef6f986",
+      "hash": "63ca7a7f0b49e8d1",
       "path": "modules/drug-dosing/dosing-fluid-math/ideal-body-weight.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
@@ -1357,7 +1357,7 @@
     },
     "drug-dosing/dosing-fluid-math/parkland-formula": {
       "content_version": 1,
-      "hash": "738d3a0df20fc738",
+      "hash": "4cc334f9d36c6ab8",
       "path": "modules/drug-dosing/dosing-fluid-math/parkland-formula.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
@@ -1366,7 +1366,7 @@
     },
     "drug-dosing/dosing-fluid-math/peds-drip-rate": {
       "content_version": 1,
-      "hash": "8dc3bb11b6120d00",
+      "hash": "639871ff591f7360",
       "path": "modules/drug-dosing/dosing-fluid-math/peds-drip-rate.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
@@ -1374,7 +1374,7 @@
     },
     "drug-dosing/dosing-fluid-math/steroid-conversion": {
       "content_version": 1,
-      "hash": "02a5b2cbac8d19d8",
+      "hash": "207886320fcb60d5",
       "path": "modules/drug-dosing/dosing-fluid-math/steroid-conversion.json",
       "contentType": "reference",
       "section": "Drug & Dosing Cards",
@@ -1383,7 +1383,7 @@
     },
     "drug-dosing/dosing-fluid-math/vasoactive-inotropic-score": {
       "content_version": 1,
-      "hash": "f223c7501e2f98c2",
+      "hash": "2e6004ca6939934f",
       "path": "modules/drug-dosing/dosing-fluid-math/vasoactive-inotropic-score.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
@@ -1392,7 +1392,7 @@
     },
     "drug-dosing/peds-epinephrine-arrest": {
       "content_version": 2,
-      "hash": "c6270551ef323dd6",
+      "hash": "5e078545356837a6",
       "path": "modules/drug-dosing/peds-epinephrine-arrest.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1401,7 +1401,7 @@
     },
     "drug-dosing/resus-dosing/peds-adenosine-svt": {
       "content_version": 2,
-      "hash": "02af77d0799bb4e9",
+      "hash": "1fe2b79793d5faca",
       "path": "modules/drug-dosing/resus-dosing/peds-adenosine-svt.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1410,7 +1410,7 @@
     },
     "drug-dosing/resus-dosing/peds-amiodarone-arrest": {
       "content_version": 3,
-      "hash": "f7a7a602019caeb3",
+      "hash": "af732ba25d909559",
       "path": "modules/drug-dosing/resus-dosing/peds-amiodarone-arrest.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1419,7 +1419,7 @@
     },
     "drug-dosing/resus-dosing/peds-atropine-bradycardia": {
       "content_version": 2,
-      "hash": "79a97d67107d1e11",
+      "hash": "9cae5ceafd3a5631",
       "path": "modules/drug-dosing/resus-dosing/peds-atropine-bradycardia.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1428,7 +1428,7 @@
     },
     "drug-dosing/resus-dosing/peds-ketamine-rsi": {
       "content_version": 2,
-      "hash": "b5611dd1edbba21a",
+      "hash": "20e764c13333193f",
       "path": "modules/drug-dosing/resus-dosing/peds-ketamine-rsi.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1437,7 +1437,7 @@
     },
     "drug-dosing/resus-dosing/peds-lorazepam-status": {
       "content_version": 1,
-      "hash": "6af9e619449bd001",
+      "hash": "b3b4f45709ed7afd",
       "path": "modules/drug-dosing/resus-dosing/peds-lorazepam-status.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1446,7 +1446,7 @@
     },
     "drug-dosing/resus-dosing/peds-midazolam-status": {
       "content_version": 3,
-      "hash": "659718e6d5fe21fd",
+      "hash": "fdb4b74f5636dbe2",
       "path": "modules/drug-dosing/resus-dosing/peds-midazolam-status.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1455,7 +1455,7 @@
     },
     "drug-dosing/resus-dosing/peds-rocuronium-rsi": {
       "content_version": 1,
-      "hash": "d9702ad7fc52cf31",
+      "hash": "400fb1f434f87dd4",
       "path": "modules/drug-dosing/resus-dosing/peds-rocuronium-rsi.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1464,7 +1464,7 @@
     },
     "peds-module/apgar-score": {
       "content_version": 1,
-      "hash": "5eb79fd7617fb8d4",
+      "hash": "43d968d4c51ebd4b",
       "path": "modules/peds-module/apgar-score.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1473,7 +1473,7 @@
     },
     "peds-module/brue-pathway": {
       "content_version": 1,
-      "hash": "4f8f74431e5456a7",
+      "hash": "7273c36d3bcadc32",
       "path": "modules/peds-module/brue-pathway.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1482,7 +1482,7 @@
     },
     "peds-module/chromosomal-disorders": {
       "content_version": 1,
-      "hash": "3c205adbe88a1199",
+      "hash": "f25d6440c4110693",
       "path": "modules/peds-module/chromosomal-disorders.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1491,7 +1491,7 @@
     },
     "peds-module/developmental-delay-evaluation": {
       "content_version": 1,
-      "hash": "aa2717bbc220a4e8",
+      "hash": "6deec98fcdacc00c",
       "path": "modules/peds-module/developmental-delay-evaluation.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1500,7 +1500,7 @@
     },
     "peds-module/inborn-errors-metabolism": {
       "content_version": 1,
-      "hash": "fcb5ef54391e6493",
+      "hash": "841b80f5b1dd8ecf",
       "path": "modules/peds-module/inborn-errors-metabolism.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1509,7 +1509,7 @@
     },
     "peds-module/infant-cpr-parameters": {
       "content_version": 1,
-      "hash": "6b02057e5d414b57",
+      "hash": "8276f9bd68eb8c1b",
       "path": "modules/peds-module/infant-cpr-parameters.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1518,7 +1518,7 @@
     },
     "peds-module/infant-development-feeding": {
       "content_version": 1,
-      "hash": "e2d868780c39e0ce",
+      "hash": "75781b544dfb4d34",
       "path": "modules/peds-module/infant-development-feeding.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1527,7 +1527,7 @@
     },
     "peds-module/infant-of-diabetic-mother": {
       "content_version": 1,
-      "hash": "5049b4895ee975fc",
+      "hash": "99e5133e1a6d9ca1",
       "path": "modules/peds-module/infant-of-diabetic-mother.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1536,7 +1536,7 @@
     },
     "peds-module/inheritance-patterns": {
       "content_version": 1,
-      "hash": "106299c5a3fb4f9c",
+      "hash": "99540d654513cced",
       "path": "modules/peds-module/inheritance-patterns.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1545,7 +1545,7 @@
     },
     "peds-module/neonatal-growth-parameters": {
       "content_version": 1,
-      "hash": "ee84d4dd7ad6f9c0",
+      "hash": "c3baf04a87d4c963",
       "path": "modules/peds-module/neonatal-growth-parameters.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1554,7 +1554,7 @@
     },
     "peds-module/neonatal-hie-cooling": {
       "content_version": 1,
-      "hash": "d5f158fd7b232b28",
+      "hash": "e6b4ea2a3e2aacd4",
       "path": "modules/peds-module/neonatal-hie-cooling.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1563,7 +1563,7 @@
     },
     "peds-module/neonatal-jaundice": {
       "content_version": 1,
-      "hash": "15de62672113d7aa",
+      "hash": "b25339342ff77dd1",
       "path": "modules/peds-module/neonatal-jaundice.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1572,7 +1572,7 @@
     },
     "peds-module/neonatal-rds": {
       "content_version": 1,
-      "hash": "8786b90b6071c368",
+      "hash": "f3ce41f07b8c72c3",
       "path": "modules/peds-module/neonatal-rds.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1581,7 +1581,7 @@
     },
     "peds-module/neonatal-seizures": {
       "content_version": 1,
-      "hash": "1ce7a9a4650ac039",
+      "hash": "ac75907111720907",
       "path": "modules/peds-module/neonatal-seizures.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1590,7 +1590,7 @@
     },
     "peds-module/newborn-routine-care": {
       "content_version": 1,
-      "hash": "4794653356e03a41",
+      "hash": "87507fbc5e6ed00b",
       "path": "modules/peds-module/newborn-routine-care.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1599,7 +1599,7 @@
     },
     "peds-module/nrp-algorithm": {
       "content_version": 1,
-      "hash": "9f183ade7c9dc266",
+      "hash": "5d5d6d9046948a60",
       "path": "modules/peds-module/nrp-algorithm.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1608,7 +1608,7 @@
     },
     "peds-module/pedi-tape-weight-zones": {
       "content_version": 1,
-      "hash": "69bd38eb675a475d",
+      "hash": "40917fbd336aa5e1",
       "path": "modules/peds-module/pedi-tape-weight-zones.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1617,7 +1617,7 @@
     },
     "peds-module/pediatric-appendicitis-score": {
       "content_version": 2,
-      "hash": "983a9d7760661d0b",
+      "hash": "4ec896492ae56fb5",
       "path": "modules/peds-module/pediatric-appendicitis-score.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1626,7 +1626,7 @@
     },
     "peds-module/peds-cardiac-arrest": {
       "content_version": 1,
-      "hash": "5c8e37a709e7f126",
+      "hash": "99a1ab99066f6a99",
       "path": "modules/peds-module/peds-cardiac-arrest.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1635,7 +1635,7 @@
     },
     "peds-module/peds-dka-management": {
       "content_version": 1,
-      "hash": "3e387015290b4294",
+      "hash": "bbe34b7dfc764da4",
       "path": "modules/peds-module/peds-dka-management.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1644,7 +1644,7 @@
     },
     "peds-module/peds-drip-concentrations": {
       "content_version": 1,
-      "hash": "9b6d51b7e3fa894a",
+      "hash": "73430d47e7ee1d3d",
       "path": "modules/peds-module/peds-drip-concentrations.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1653,7 +1653,7 @@
     },
     "peds-module/peds-glasgow-coma-scale": {
       "content_version": 1,
-      "hash": "607c848aaa650d3e",
+      "hash": "3f4c453bd307ceea",
       "path": "modules/peds-module/peds-glasgow-coma-scale.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1662,7 +1662,7 @@
     },
     "peds-module/peds-rsi-decision-card": {
       "content_version": 1,
-      "hash": "1e1886d33c9eeb05",
+      "hash": "10b74d1bd8ada730",
       "path": "modules/peds-module/peds-rsi-decision-card.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1671,7 +1671,7 @@
     },
     "peds-module/prematurity-complications": {
       "content_version": 1,
-      "hash": "e66c733b5637a419",
+      "hash": "486f7d2282527fe1",
       "path": "modules/peds-module/prematurity-complications.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1680,7 +1680,7 @@
     },
     "peds-module/sga-lga-birth-injury": {
       "content_version": 1,
-      "hash": "791e1f0ee98538b3",
+      "hash": "cf05c36d748e180e",
       "path": "modules/peds-module/sga-lga-birth-injury.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1698,7 +1698,7 @@
     },
     "procedures/awake-intubation": {
       "content_version": 1,
-      "hash": "54ea6998d2e29cac",
+      "hash": "adb3d7541d6c0c93",
       "path": "modules/procedures/awake-intubation.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -1707,7 +1707,7 @@
     },
     "procedures/fracture-splinting-guide": {
       "content_version": 2,
-      "hash": "31d7b13b16b1b2a5",
+      "hash": "2ed9c905e4ebd76d",
       "path": "modules/procedures/fracture-splinting-guide.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -1716,7 +1716,7 @@
     },
     "procedures/laceration-repair": {
       "content_version": 3,
-      "hash": "198549f1798eefb6",
+      "hash": "5830c7bf51d6acf0",
       "path": "modules/procedures/laceration-repair.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -1725,7 +1725,7 @@
     },
     "procedures/last-lipid-rescue": {
       "content_version": 2,
-      "hash": "eae4da01847ac03b",
+      "hash": "c741d37220825102",
       "path": "modules/procedures/last-lipid-rescue.json",
       "contentType": "reference",
       "section": "Procedures",
@@ -1734,7 +1734,7 @@
     },
     "procedures/nerve-block-guide": {
       "content_version": 3,
-      "hash": "68b7094be4651db3",
+      "hash": "600b36e3905acb0e",
       "path": "modules/procedures/nerve-block-guide.json",
       "contentType": "reference",
       "section": "Procedures",
@@ -1752,7 +1752,7 @@
     },
     "procedures/pocus-guide": {
       "content_version": 2,
-      "hash": "62a4ff94c5c0bda4",
+      "hash": "2e5ac15a8d0bd4a2",
       "path": "modules/procedures/pocus-guide.json",
       "contentType": "reference",
       "section": "Procedures",
@@ -1761,7 +1761,7 @@
     },
     "procedures/pocus-nerve-block-checklist": {
       "content_version": 1,
-      "hash": "92388ca842f248f8",
+      "hash": "906e18d81f070e68",
       "path": "modules/procedures/pocus-nerve-block-checklist.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -1770,7 +1770,7 @@
     },
     "procedures/procedural-sedation-workflow": {
       "content_version": 1,
-      "hash": "cea726ee25414879",
+      "hash": "d15676aafa5b6212",
       "path": "modules/procedures/procedural-sedation-workflow.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -1779,7 +1779,7 @@
     },
     "reference-library/abg-interpretation": {
       "content_version": 3,
-      "hash": "9b67b98cd2f9e589",
+      "hash": "9ed39b88c6ce4c18",
       "path": "modules/reference-library/abg-interpretation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1787,7 +1787,7 @@
     },
     "reference-library/abnormal-uterine-bleeding": {
       "content_version": 2,
-      "hash": "d727d5ffd7199394",
+      "hash": "a5888a5c67967b0a",
       "path": "modules/reference-library/abnormal-uterine-bleeding.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1823,7 +1823,7 @@
     },
     "reference-library/acute-pe-guideline-2026": {
       "content_version": 2,
-      "hash": "3e079e720ed61d72",
+      "hash": "9dffabf017150533",
       "path": "modules/reference-library/acute-pe-guideline-2026.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1850,7 +1850,7 @@
     },
     "reference-library/albumin-furosemide-push-pull": {
       "content_version": 2,
-      "hash": "4f4dc813c5998110",
+      "hash": "3d00124d69dce153",
       "path": "modules/reference-library/albumin-furosemide-push-pull.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1904,7 +1904,7 @@
     },
     "reference-library/antidotes-reversal-agents": {
       "content_version": 2,
-      "hash": "b03ca851c0f6a598",
+      "hash": "526163a2592fab16",
       "path": "modules/reference-library/antidotes-reversal-agents.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1913,7 +1913,7 @@
     },
     "reference-library/bartholin-vulvar-emergencies": {
       "content_version": 2,
-      "hash": "3f9235c192d21a00",
+      "hash": "278ea2ed18aaf6e6",
       "path": "modules/reference-library/bartholin-vulvar-emergencies.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1922,7 +1922,7 @@
     },
     "reference-library/beta-blocker-selectivity": {
       "content_version": 2,
-      "hash": "bef28fc70d66c40f",
+      "hash": "dd5ef441f2d8f79e",
       "path": "modules/reference-library/beta-blocker-selectivity.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1931,7 +1931,7 @@
     },
     "reference-library/blood-products": {
       "content_version": 2,
-      "hash": "41db77154da0ac1a",
+      "hash": "80b59ec820fc01fa",
       "path": "modules/reference-library/blood-products.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1940,7 +1940,7 @@
     },
     "reference-library/capnography": {
       "content_version": 2,
-      "hash": "90b04f0ebd32a198",
+      "hash": "23620f9837bdeff6",
       "path": "modules/reference-library/capnography.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1949,7 +1949,7 @@
     },
     "reference-library/childhood-immunization-schedule": {
       "content_version": 2,
-      "hash": "cdf7e66395d4a9aa",
+      "hash": "a253613e5433b8c0",
       "path": "modules/reference-library/childhood-immunization-schedule.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1958,7 +1958,7 @@
     },
     "reference-library/chronic-htn-gdm-pregnancy": {
       "content_version": 2,
-      "hash": "ca1020959ac5d489",
+      "hash": "0e7b1cc5a47ea4c5",
       "path": "modules/reference-library/chronic-htn-gdm-pregnancy.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -1976,7 +1976,7 @@
     },
     "reference-library/contraception-methods": {
       "content_version": 2,
-      "hash": "29ad07612b90541b",
+      "hash": "2d038f36491b7bcb",
       "path": "modules/reference-library/contraception-methods.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2021,7 +2021,7 @@
     },
     "reference-library/decision-rules-cspine-ct-head": {
       "content_version": 2,
-      "hash": "a13486c79c819f1c",
+      "hash": "934da42ee128335e",
       "path": "modules/reference-library/decision-rules-cspine-ct-head.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2039,7 +2039,7 @@
     },
     "reference-library/drug-interactions-high-yield": {
       "content_version": 2,
-      "hash": "6717d70fea0ed940",
+      "hash": "854b127a451cb4e8",
       "path": "modules/reference-library/drug-interactions-high-yield.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2048,7 +2048,7 @@
     },
     "reference-library/ecg-library": {
       "content_version": 3,
-      "hash": "efd7ac8383494e1d",
+      "hash": "5e803c58c24d6290",
       "path": "modules/reference-library/ecg-library.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2084,7 +2084,7 @@
     },
     "reference-library/efm-fetal-heart-rate": {
       "content_version": 2,
-      "hash": "6703ca40d81c809a",
+      "hash": "dcb6603367fddf81",
       "path": "modules/reference-library/efm-fetal-heart-rate.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2093,7 +2093,7 @@
     },
     "reference-library/emergency-drugs-pregnancy": {
       "content_version": 2,
-      "hash": "80f4ed70fcdf741a",
+      "hash": "e9aebcd8fdf8c2e5",
       "path": "modules/reference-library/emergency-drugs-pregnancy.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2102,7 +2102,7 @@
     },
     "reference-library/empiric-antibiotics-cap": {
       "content_version": 2,
-      "hash": "23dd33e33fc4c30d",
+      "hash": "115ad6c09bc0b5de",
       "path": "modules/reference-library/empiric-antibiotics-cap.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2111,7 +2111,7 @@
     },
     "reference-library/empiric-antibiotics-ed-icu": {
       "content_version": 2,
-      "hash": "dac84642f7eeee15",
+      "hash": "51deb738f76b8c24",
       "path": "modules/reference-library/empiric-antibiotics-ed-icu.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2120,7 +2120,7 @@
     },
     "reference-library/empiric-antibiotics-outpatient": {
       "content_version": 2,
-      "hash": "b98715dd9cabefe2",
+      "hash": "11e69b0dc80c840f",
       "path": "modules/reference-library/empiric-antibiotics-outpatient.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2129,7 +2129,7 @@
     },
     "reference-library/erc-2025-pediatric-life-support": {
       "content_version": 2,
-      "hash": "500bb9f07c14479c",
+      "hash": "01f7c0eff4dc52cc",
       "path": "modules/reference-library/erc-2025-pediatric-life-support.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2138,7 +2138,7 @@
     },
     "reference-library/fetal-surveillance": {
       "content_version": 2,
-      "hash": "697030653d9037f3",
+      "hash": "51ee798023969a4c",
       "path": "modules/reference-library/fetal-surveillance.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2147,7 +2147,7 @@
     },
     "reference-library/heart-failure-continuum": {
       "content_version": 2,
-      "hash": "4c78d181bcd299a1",
+      "hash": "5f2ccc9c96a7bfdf",
       "path": "modules/reference-library/heart-failure-continuum.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2192,7 +2192,7 @@
     },
     "reference-library/icp-tbi-management": {
       "content_version": 2,
-      "hash": "7854e22eb500d7c4",
+      "hash": "e718604a0863d603",
       "path": "modules/reference-library/icp-tbi-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2210,7 +2210,7 @@
     },
     "reference-library/induction-augmentation": {
       "content_version": 2,
-      "hash": "fbbd0b2e1538c2d2",
+      "hash": "389b155fb6e92bbe",
       "path": "modules/reference-library/induction-augmentation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2219,7 +2219,7 @@
     },
     "reference-library/iv-fluids": {
       "content_version": 3,
-      "hash": "16eec25699710d41",
+      "hash": "c24ca97bb27fcc74",
       "path": "modules/reference-library/iv-fluids.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2228,7 +2228,7 @@
     },
     "reference-library/lab-interpretation": {
       "content_version": 2,
-      "hash": "b6bc16194d709c5d",
+      "hash": "6d6798220c31e955",
       "path": "modules/reference-library/lab-interpretation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2237,7 +2237,7 @@
     },
     "reference-library/labor-progression": {
       "content_version": 2,
-      "hash": "2c168c6c22e3f8e5",
+      "hash": "cb49657f858d8140",
       "path": "modules/reference-library/labor-progression.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2264,7 +2264,7 @@
     },
     "reference-library/maternal-cardiac-arrest": {
       "content_version": 2,
-      "hash": "18fcf79d303f0eb3",
+      "hash": "7a485a1ee11b1bd5",
       "path": "modules/reference-library/maternal-cardiac-arrest.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2282,7 +2282,7 @@
     },
     "reference-library/neuromuscular-blockade-reversal": {
       "content_version": 2,
-      "hash": "9e50d9201bd0508e",
+      "hash": "2a2a6f5f1fff92a7",
       "path": "modules/reference-library/neuromuscular-blockade-reversal.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2291,7 +2291,7 @@
     },
     "reference-library/obstetric-delivery-emergencies": {
       "content_version": 2,
-      "hash": "ce859ae0975bd0cd",
+      "hash": "b6a1eb48c695783d",
       "path": "modules/reference-library/obstetric-delivery-emergencies.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2336,7 +2336,7 @@
     },
     "reference-library/peripheral-iv-vasopressors": {
       "content_version": 2,
-      "hash": "3a6e15a13a4fe831",
+      "hash": "373c30f1b9e9e8c1",
       "path": "modules/reference-library/peripheral-iv-vasopressors.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2354,7 +2354,7 @@
     },
     "reference-library/pid-tubo-ovarian-abscess": {
       "content_version": 2,
-      "hash": "6f1e0be388d88847",
+      "hash": "97e51554853fbf56",
       "path": "modules/reference-library/pid-tubo-ovarian-abscess.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2372,7 +2372,7 @@
     },
     "reference-library/postpartum-hemorrhage": {
       "content_version": 2,
-      "hash": "9334a70858740420",
+      "hash": "ec1d5d835a886ac8",
       "path": "modules/reference-library/postpartum-hemorrhage.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2390,7 +2390,7 @@
     },
     "reference-library/preeclampsia-eclampsia-hellp": {
       "content_version": 2,
-      "hash": "59205bfd6d35dcc2",
+      "hash": "0882b98337c99df0",
       "path": "modules/reference-library/preeclampsia-eclampsia-hellp.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2399,7 +2399,7 @@
     },
     "reference-library/prenatal-screening": {
       "content_version": 2,
-      "hash": "216da03ed38339f7",
+      "hash": "a31212cfbd05e540",
       "path": "modules/reference-library/prenatal-screening.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2408,7 +2408,7 @@
     },
     "reference-library/pressor-inotrope-reference": {
       "content_version": 2,
-      "hash": "48ad3dc556e67bed",
+      "hash": "beae6dcb212dbc2d",
       "path": "modules/reference-library/pressor-inotrope-reference.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2417,7 +2417,7 @@
     },
     "reference-library/preterm-labor": {
       "content_version": 2,
-      "hash": "401c676cb93c2046",
+      "hash": "58ce787bbf72199b",
       "path": "modules/reference-library/preterm-labor.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2435,7 +2435,7 @@
     },
     "reference-library/sedation-analgesia-agents": {
       "content_version": 2,
-      "hash": "b319ccb3ac9f50c4",
+      "hash": "e70339ea9e700aa5",
       "path": "modules/reference-library/sedation-analgesia-agents.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2453,7 +2453,7 @@
     },
     "reference-library/shock-classification": {
       "content_version": 2,
-      "hash": "2170cd4b49b1f691",
+      "hash": "369094ad84730865",
       "path": "modules/reference-library/shock-classification.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2498,7 +2498,7 @@
     },
     "reference-library/teg-rotem-interpretation": {
       "content_version": 2,
-      "hash": "fc93563ad129bd41",
+      "hash": "8f6bfd15959b3149",
       "path": "modules/reference-library/teg-rotem-interpretation.json",
       "contentType": "reference",
       "section": "Reference Library",

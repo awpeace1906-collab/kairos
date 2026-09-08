@@ -3,6 +3,7 @@
   "section": "Peds Module",
   "category": "Neonatology",
   "title": "Growth Parameters — Weight, Length, Head Circumference",
+  "settingEmphasis": ["icu"],
   "aliases": ["weight gain trajectory", "double birth weight", "head circumference growth", "failure to thrive", "crossing percentiles", "growth chart red flags"],
   "tags": ["growth", "weight gain", "head circumference", "failure to thrive", "well-child", "neonatology"],
   "contentType": "peds-tool",

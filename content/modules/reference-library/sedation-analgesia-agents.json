@@ -3,6 +3,11 @@
   "section": "Reference Library",
   "category": "Perioperative & Anesthesia",
   "title": "Sedation & Analgesia Agents",
+  "settingEmphasis": [
+    "icu",
+    "ed",
+    "or"
+  ],
   "aliases": [
     "ketamine dosing",
     "propofol dosing",

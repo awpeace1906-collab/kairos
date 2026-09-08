@@ -3,6 +3,7 @@
   "section": "Peds Module",
   "category": "Peds Resuscitation & Decision Support",
   "title": "Pediatric Cardiac Arrest — Numbers Card (PALS)",
+  "settingEmphasis": ["ed", "prehospital", "icu"],
   "aliases": ["PALS arrest doses", "pediatric code blue", "peds ACLS numbers", "1-2-4 rule", "peds defibrillation energy", "peds epinephrine arrest dose", "peds cardioversion", "peds adenosine dose"],
   "tags": ["PALS", "pediatric cardiac arrest", "code blue", "defibrillation", "cardioversion", "epinephrine", "amiodarone", "adenosine", "CPR", "ED", "ICU"],
   "contentType": "peds-tool",

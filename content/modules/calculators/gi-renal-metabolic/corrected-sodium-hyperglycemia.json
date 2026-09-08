@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "GI / Renal / Metabolic",
   "title": "Corrected Sodium for Hyperglycemia",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["Hillier corrected sodium", "DKA sodium correction", "true sodium"],
   "tags": ["hyponatremia", "hyperglycemia", "DKA", "HHS", "sodium", "ED", "ICU"],
   "contentType": "calculator",

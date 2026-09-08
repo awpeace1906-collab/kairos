@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Infectious Disease & Immunization",
   "title": "Empiric Antibiotics — Community-Acquired Pneumonia",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
   "aliases": [
     "CAP antibiotics",
     "pneumonia empiric therapy",

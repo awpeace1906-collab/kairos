@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "GI / Renal / Metabolic",
   "title": "Refeeding Syndrome Risk (NICE Criteria)",
+  "settingEmphasis": ["icu", "ed"],
   "aliases": ["refeeding syndrome", "NICE refeeding", "refeeding risk stratification"],
   "tags": ["refeeding syndrome", "nutrition", "electrolytes", "phosphate", "ICU"],
   "keywords": ["BMI", "unintentional weight loss", "little or no nutritional intake", "low potassium magnesium phosphate", "alcohol", "insulin diuretics chemotherapy", "thiamine before feeding"],

@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "GI / Renal / Metabolic",
   "title": "Maddrey's Discriminant Function",
+  "settingEmphasis": ["icu", "ed"],
   "aliases": ["mDF", "discriminant function", "alcoholic hepatitis steroids"],
   "tags": ["alcoholic hepatitis", "corticosteroid decision", "prothrombin time", "bilirubin", "ED", "ICU"],
   "contentType": "calculator",

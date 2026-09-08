@@ -3,6 +3,11 @@
   "section": "Reference Library",
   "category": "Resuscitation & Airway",
   "title": "Shock Classification & Bedside Diagnosis",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
   "aliases": [
     "types of shock",
     "hypovolemic cardiogenic obstructive distributive",

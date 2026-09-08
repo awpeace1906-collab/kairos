@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "ICU / Critical Care",
   "title": "PaO₂ / FiO₂ (P/F) Ratio",
+  "settingEmphasis": ["icu", "ed"],
   "aliases": ["PF ratio", "Horowitz index", "oxygenation index", "ARDS severity"],
   "tags": ["ARDS", "oxygenation", "hypoxemia", "mechanical ventilation", "Berlin criteria", "ICU"],
   "keywords": ["PaO2 divided by FiO2", "mild 200-300", "moderate 100-200", "severe < 100", "PEEP >= 5", "S/F ratio"],

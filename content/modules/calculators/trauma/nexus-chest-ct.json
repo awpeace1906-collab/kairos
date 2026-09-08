@@ -3,6 +3,9 @@
   "section": "Calculators",
   "category": "Trauma",
   "title": "NEXUS Chest CT Decision Instrument",
+  "settingEmphasis": [
+    "ed"
+  ],
   "aliases": [
     "NEXUS chest CT",
     "blunt chest trauma imaging",

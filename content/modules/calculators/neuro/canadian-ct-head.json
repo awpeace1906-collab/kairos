@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Neuro / Stroke / Head Injury",
   "title": "Canadian CT Head Rule",
+  "settingEmphasis": ["ed", "prehospital"],
   "aliases": ["CCHR", "Canadian CT head rule", "minor head injury CT", "head CT decision rule"],
   "tags": ["head injury", "CT head", "clinical decision rule", "ED", "rule-out"],
   "keywords": ["GCS < 15 at 2 hours", "suspected open or depressed skull fracture", "signs of basal skull fracture", "vomiting >= 2 episodes", "age >= 65", "amnesia before impact >= 30 min", "dangerous mechanism"],

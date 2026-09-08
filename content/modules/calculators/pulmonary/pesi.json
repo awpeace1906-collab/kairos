@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Pulmonary / PE / DVT / Resp Failure",
   "title": "PESI (Pulmonary Embolism Severity Index)",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["PESI", "pulmonary embolism severity index", "PE 30-day mortality", "PE prognosis full"],
   "tags": ["pulmonary embolism", "risk stratification", "prognosis", "disposition", "ED"],
   "keywords": ["age", "male sex", "cancer", "heart failure", "chronic lung disease", "pulse >= 110", "systolic BP < 100", "respiratory rate >= 30", "temperature < 36", "altered mental status", "oxygen saturation < 90"],

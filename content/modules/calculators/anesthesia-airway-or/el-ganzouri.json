@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "El-Ganzouri Risk Index (Difficult Airway)",
+  "settingEmphasis": ["or"],
   "aliases": ["EGRI", "El-Ganzouri", "simplified airway risk index", "SARI", "difficult intubation score"],
   "tags": ["airway assessment", "difficult intubation", "preoperative", "OR", "anesthesia"],
   "keywords": ["mouth opening", "thyromental distance", "Mallampati", "neck movement", "ability to prognath", "weight", "history of difficult intubation"],

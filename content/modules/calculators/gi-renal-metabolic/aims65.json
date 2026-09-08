@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "GI / Renal / Metabolic",
   "title": "AIMS65 Score",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["AIMS65", "upper GI bleed mortality"],
   "tags": ["GI bleed", "upper GI hemorrhage", "mortality", "risk stratification", "ED"],
   "contentType": "calculator",

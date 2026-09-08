@@ -3,6 +3,7 @@
   "section": "Peds Module",
   "category": "Neonatology",
   "title": "Routine Newborn Care & Normal Findings",
+  "settingEmphasis": ["icu"],
   "aliases": ["vitamin K newborn", "eye prophylaxis erythromycin", "newborn exam timeline", "discharge checklist newborn", "normal newborn variants", "newborn vitals"],
   "tags": ["neonatal", "routine care", "vitamin K", "eye prophylaxis", "newborn exam", "discharge", "normal variants", "OB", "Peds"],
   "contentType": "peds-tool",

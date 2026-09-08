@@ -3,6 +3,7 @@
   "section": "Peds Module",
   "category": "Neonatology",
   "title": "APGAR Score",
+  "settingEmphasis": ["icu", "or"],
   "aliases": ["Apgar", "newborn Apgar", "1 and 5 minute Apgar", "delivery room scoring"],
   "tags": ["neonatal", "APGAR", "delivery room", "newborn assessment", "OB", "Peds"],
   "contentType": "peds-tool",

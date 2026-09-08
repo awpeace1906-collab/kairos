@@ -3,6 +3,7 @@
   "section": "Procedures",
   "category": "Wound & Fracture Care",
   "title": "Fracture / Splinting Guide",
+  "settingEmphasis": ["ed", "prehospital"],
   "aliases": ["splint selection", "splinting", "fracture immobilization", "fracture reduction", "Salter-Harris", "buckle fracture"],
   "tags": ["fracture", "splint", "immobilization", "reduction", "neurovascular check", "compartment syndrome", "Salter-Harris", "ED"],
   "contentType": "procedure",

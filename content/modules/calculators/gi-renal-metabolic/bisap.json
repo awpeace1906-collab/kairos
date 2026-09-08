@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "GI / Renal / Metabolic",
   "title": "BISAP Score",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["bedside index severity acute pancreatitis", "BISAP"],
   "tags": ["pancreatitis", "severity", "mortality", "ED"],
   "contentType": "calculator",

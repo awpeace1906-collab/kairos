@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Neuro / Stroke / Head Injury",
   "title": "ICH Score",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["intracerebral hemorrhage score", "Hemphill ICH score", "ICH 30-day mortality"],
   "tags": ["intracerebral hemorrhage", "stroke", "prognosis", "goals of care", "ED", "ICU"],
   "keywords": ["GCS", "ICH volume 30 mL", "intraventricular extension", "infratentorial origin", "age 80"],

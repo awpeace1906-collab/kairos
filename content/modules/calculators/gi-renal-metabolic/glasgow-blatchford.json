@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "GI / Renal / Metabolic",
   "title": "Glasgow-Blatchford Bleeding Score",
+  "settingEmphasis": ["ed"],
   "aliases": ["GBS", "upper GI bleed risk", "GI bleed discharge", "pre-endoscopy bleeding score"],
   "tags": ["upper GI bleed", "hematemesis", "melena", "endoscopy", "disposition", "ED"],
   "keywords": ["BUN", "hemoglobin", "systolic BP", "melena", "syncope", "GBS 0-1 discharge"],

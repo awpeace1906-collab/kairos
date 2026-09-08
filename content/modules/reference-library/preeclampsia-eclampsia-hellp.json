@@ -3,6 +3,11 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Preeclampsia / Eclampsia / HELLP",
+  "settingEmphasis": [
+    "ed",
+    "or",
+    "icu"
+  ],
   "aliases": [
     "preeclampsia severe features",
     "eclampsia magnesium protocol",

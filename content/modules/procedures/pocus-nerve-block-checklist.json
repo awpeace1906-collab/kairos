@@ -3,6 +3,7 @@
   "section": "Procedures",
   "category": "Regional Anesthesia & Ultrasound",
   "title": "POCUS Nerve Block — Sequential Checklist",
+  "settingEmphasis": ["or", "ed"],
   "aliases": ["nerve block checklist", "ultrasound-guided nerve block steps", "regional block run-through", "peripheral nerve block procedure steps", "IP OOP needle checklist"],
   "tags": ["nerve block", "regional anesthesia", "POCUS", "ultrasound-guided", "LAST", "procedure checklist", "ED", "OR", "anesthesia"],
   "keywords": ["hydrodissection tip confirmation", "aspirate 3-5 seconds before every injection", "2-3 mL aliquots pause 15-30 seconds", "donut sign perineural spread", "nerve swelling on US stop intraneural", "epinephrine test dose HR rise 20 bpm", "IV access before needle", "intralipid at bedside before first mL", "LAST emergency sequence A through H"],

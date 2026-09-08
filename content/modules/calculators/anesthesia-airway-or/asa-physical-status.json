@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "ASA Physical Status Classification",
+  "settingEmphasis": ["or"],
   "aliases": ["ASA class", "ASA PS", "perioperative risk class"],
   "tags": ["anesthesia", "perioperative risk", "preop assessment", "OR"],
   "contentType": "calculator",

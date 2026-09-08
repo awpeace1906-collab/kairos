@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Cardiovascular / Chest Pain / Arrhythmia",
   "title": "HAS-BLED Score",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["bleeding risk atrial fibrillation", "anticoagulation bleeding risk"],
   "tags": ["bleeding risk", "atrial fibrillation", "anticoagulation", "ED"],
   "contentType": "calculator",

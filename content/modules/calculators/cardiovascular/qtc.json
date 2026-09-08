@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Cardiovascular / Chest Pain / Arrhythmia",
   "title": "Corrected QT Interval (QTc)",
+  "settingEmphasis": ["ed", "icu", "or"],
   "aliases": ["QTc", "Bazett", "Fridericia", "QT correction"],
   "contentType": "calculator",
   "content_version": 2,

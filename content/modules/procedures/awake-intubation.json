@@ -3,6 +3,7 @@
   "section": "Procedures",
   "category": "Airway & Sedation Workflows",
   "title": "Awake Intubation (ICU)",
+  "settingEmphasis": ["icu", "or", "ed"],
   "aliases": ["awake fibreoptic intubation", "AFOI", "awake videolaryngoscopy", "topicalisation airway", "tube before sleep"],
   "tags": ["awake intubation", "difficult airway", "physiologically difficult airway", "topicalisation", "dexmedetomidine", "ICU", "anesthesia"],
   "keywords": ["INTUBE study", "9 mg/kg lean body weight lidocaine", "spray-as-you-go", "glycopyrrolate", "HFNC", "DAS"],

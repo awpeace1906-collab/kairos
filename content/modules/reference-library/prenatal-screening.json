@@ -3,6 +3,9 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Prenatal Screening Schedule",
+  "settingEmphasis": [
+    "ed"
+  ],
   "aliases": [
     "prenatal labs",
     "aneuploidy screening",

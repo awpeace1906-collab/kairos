@@ -3,6 +3,7 @@
   "section": "Procedures",
   "category": "Airway & Sedation Workflows",
   "title": "Procedural Sedation Workflow",
+  "settingEmphasis": ["ed", "icu", "or"],
   "aliases": ["conscious sedation", "moderate sedation", "PSA", "sedation checklist"],
   "tags": ["procedural sedation", "PSA", "capnography", "Aldrete", "reversal agents", "ED"],
   "contentType": "procedure",

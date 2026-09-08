@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Cardiovascular / Chest Pain / Arrhythmia",
   "title": "CHA₂DS₂-VASc Score",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["CHADSVASC", "AF stroke risk", "atrial fibrillation anticoagulation"],
   "tags": ["atrial fibrillation", "stroke risk", "anticoagulation", "ED"],
   "keywords": ["chads vasc", "chadsvasc"],

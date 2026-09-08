@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Cardiac / ECG",
   "title": "Heart Failure — Chronic to Acute",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
   "aliases": [
     "cardiomyopathy phenotypes",
     "HFpEF treatment",

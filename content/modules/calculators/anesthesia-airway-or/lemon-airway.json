@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "LEMON — Difficult Airway Assessment",
+  "settingEmphasis": ["ed", "prehospital", "icu", "or"],
   "aliases": ["LEMON law", "difficult airway", "pre-intubation airway check"],
   "tags": ["difficult airway", "intubation", "RSI", "airway assessment", "ED", "OR"],
   "contentType": "calculator",

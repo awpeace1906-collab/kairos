@@ -3,6 +3,7 @@
   "section": "Drug & Dosing Cards",
   "category": "Dosing & Fluid Math",
   "title": "Maintenance Fluids (Holliday-Segar)",
+  "settingEmphasis": ["ed", "icu"],
   "aliases": ["4-2-1 rule", "maintenance IV fluids", "pediatric maintenance rate"],
   "tags": ["maintenance fluids", "4-2-1", "pediatric", "IV fluids", "peds"],
   "contentType": "calculator",

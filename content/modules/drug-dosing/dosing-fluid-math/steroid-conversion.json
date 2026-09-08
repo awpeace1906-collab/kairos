@@ -3,6 +3,7 @@
   "section": "Drug & Dosing Cards",
   "category": "Dosing & Fluid Math",
   "title": "Steroid Equivalent Dosing",
+  "settingEmphasis": ["icu", "ed", "or"],
   "aliases": ["steroid conversion", "corticosteroid equivalence", "glucocorticoid conversion", "stress dose steroids"],
   "tags": ["corticosteroid", "prednisone", "dexamethasone", "hydrocortisone", "taper", "stress dose"],
   "contentType": "reference",

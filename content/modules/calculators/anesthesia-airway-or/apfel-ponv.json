@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Anesthesia / Airway / OR",
   "title": "Apfel Score for PONV",
+  "settingEmphasis": ["or"],
   "aliases": ["postoperative nausea vomiting risk", "PONV score", "Apfel"],
   "tags": ["PONV", "postoperative nausea", "antiemetic prophylaxis", "OR"],
   "contentType": "calculator",

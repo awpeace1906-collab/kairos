@@ -3,6 +3,11 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Postpartum Hemorrhage",
+  "settingEmphasis": [
+    "or",
+    "ed",
+    "icu"
+  ],
   "aliases": [
     "PPH",
     "PPH staging",

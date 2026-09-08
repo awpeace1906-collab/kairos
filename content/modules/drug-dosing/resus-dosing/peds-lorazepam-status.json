@@ -3,6 +3,7 @@
   "section": "Drug & Dosing Cards",
   "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
   "title": "Lorazepam — Pediatric Status Epilepticus",
+  "settingEmphasis": ["ed", "icu", "prehospital"],
   "aliases": ["peds lorazepam", "Ativan seizure dose", "first-line status epilepticus"],
   "tags": ["status epilepticus", "seizure", "benzodiazepine", "first line", "peds"],
   "contentType": "drug-card",

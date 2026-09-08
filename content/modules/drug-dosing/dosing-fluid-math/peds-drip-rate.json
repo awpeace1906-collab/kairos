@@ -3,6 +3,7 @@
   "section": "Drug & Dosing Cards",
   "category": "Dosing & Fluid Math",
   "title": "Weight-Based Infusion Rate (peds drips)",
+  "settingEmphasis": ["icu", "ed"],
   "aliases": ["drip rate", "infusion rate calculator", "mcg/kg/min to mL/hr", "pressor drip"],
   "tags": ["infusion", "drip", "vasopressor", "sedation infusion", "peds", "ICU"],
   "contentType": "calculator",

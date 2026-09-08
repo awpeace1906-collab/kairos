@@ -3,6 +3,11 @@
   "section": "Reference Library",
   "category": "Anticoagulation & Labs",
   "title": "TEG / ROTEM Interpretation",
+  "settingEmphasis": [
+    "or",
+    "icu",
+    "ed"
+  ],
   "aliases": [
     "thromboelastography",
     "viscoelastic testing",

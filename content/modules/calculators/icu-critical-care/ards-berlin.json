@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "ICU / Critical Care",
   "title": "ARDS — Berlin Definition",
+  "settingEmphasis": ["icu"],
   "aliases": ["Berlin ARDS", "ARDS severity", "acute respiratory distress syndrome definition", "P/F ratio ARDS"],
   "tags": ["ARDS", "mechanical ventilation", "hypoxemia", "ICU", "lung-protective ventilation"],
   "keywords": ["timing within 1 week", "bilateral opacities", "not fully explained by cardiac failure", "PaO2/FiO2 with PEEP >= 5", "mild moderate severe ARDS"],

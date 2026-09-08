@@ -3,6 +3,7 @@
   "section": "Drug & Dosing Cards",
   "category": "Dosing & Fluid Math",
   "title": "Vasoactive-Inotropic Score (VIS)",
+  "settingEmphasis": ["icu"],
   "aliases": ["VIS", "pressor score", "inotrope score"],
   "tags": ["shock", "vasopressors", "inotropes", "ICU", "trend"],
   "contentType": "calculator",

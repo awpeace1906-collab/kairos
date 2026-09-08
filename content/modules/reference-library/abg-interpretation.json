@@ -3,6 +3,10 @@
   "section": "Reference Library",
   "category": "Resuscitation & Airway",
   "title": "ABG Interpretation",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
   "aliases": [
     "acid-base",
     "arterial blood gas",

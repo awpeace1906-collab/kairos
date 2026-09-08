@@ -3,6 +3,7 @@
   "section": "Calculators",
   "category": "Neuro / Stroke / Head Injury",
   "title": "Glasgow Coma Scale (GCS)",
+  "settingEmphasis": ["ed", "prehospital", "icu", "or"],
   "aliases": ["GCS", "coma scale", "consciousness level"],
   "tags": ["level of consciousness", "head injury", "intubation threshold", "trauma", "ED", "ICU"],
   "contentType": "calculator",
