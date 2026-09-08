@@ -1,0 +1,52 @@
+{
+  "id": "mangled-extremity-severity-score",
+  "section": "Calculators",
+  "category": "Trauma",
+  "title": "Mangled Extremity Severity Score (MESS)",
+  "settingEmphasis": ["ed", "or", "prehospital"],
+  "aliases": ["MESS", "mangled extremity score", "limb salvage vs amputation score"],
+  "tags": ["trauma", "extremity", "vascular injury", "amputation", "limb salvage", "ED", "OR"],
+  "keywords": ["skeletal soft tissue injury energy", "limb ischemia duration 6 hours doubled", "shock normotensive persistent hypotension", "age under 30 30 to 50 over 50", "score 7 or higher amputation", "ballistic blast crush"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-09-07",
+  "review_tier": 2,
+  "sources": ["Johansen K, et al. Objective criteria accurately predict amputation following lower extremity trauma. J Trauma. 1990;30(5):568-572", "Bosse MJ, et al. A prospective evaluation of the lower-extremity injury-severity scores (LEAP study). J Bone Joint Surg Am. 2001;83(1):3-14", "Kauvar DS, et al. Utility of the Mangled Extremity Severity Score in predicting amputation in military lower extremity arterial injury. Ann Vasc Surg. 2018"],
+  "changelog": [{ "version": 1, "date": "2026-09-07", "change": "Initial entry — the 4-component MESS; interactive companion to the mangled-extremity section of the penetrating-regional-trauma reference." }],
+  "engine": "additive",
+  "settings": ["ED", "OR"],
+  "purpose": "Scores a severely injured lower (or upper) extremity across four axes to inform the salvage-versus-amputation discussion. Its predictive value is stronger for identifying salvageable limbs (a low score) than for mandating amputation (a high score) — treat it as one input, not a decision.",
+  "items": [
+    { "key": "skeletalSoftTissue", "label": "Skeletal / soft-tissue injury", "options": [
+      { "label": "Low energy — stab, simple closed fracture, small-calibre GSW", "points": 1 },
+      { "label": "Medium energy — open or multiple fractures, dislocation", "points": 2 },
+      { "label": "High energy — shotgun (close range), high-velocity GSW, crush", "points": 3 },
+      { "label": "Very high energy — the above plus gross contamination, soft-tissue avulsion", "points": 4 }
+    ] },
+    { "key": "limbIschemia", "label": "Limb ischemia (double the points if ischemia time > 6 hours — options below already reflect this)", "options": [
+      { "label": "Reduced pulse but normal perfusion — ≤ 6 h", "points": 1 },
+      { "label": "Reduced pulse but normal perfusion — > 6 h", "points": 2 },
+      { "label": "Pulseless, paraesthesias, diminished capillary refill — ≤ 6 h", "points": 2 },
+      { "label": "Pulseless, paraesthesias, diminished capillary refill — > 6 h", "points": 4 },
+      { "label": "Cool, paralyzed, insensate, numb — ≤ 6 h", "points": 3 },
+      { "label": "Cool, paralyzed, insensate, numb — > 6 h", "points": 6 }
+    ] },
+    { "key": "shock", "label": "Shock", "options": [
+      { "label": "Systolic BP always > 90 mmHg", "points": 0 },
+      { "label": "Transient hypotension", "points": 1 },
+      { "label": "Persistent hypotension", "points": 2 }
+    ] },
+    { "key": "age", "label": "Age", "options": [
+      { "label": "< 30 years", "points": 0 },
+      { "label": "30-50 years", "points": 1 },
+      { "label": "> 50 years", "points": 2 }
+    ] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 6, "label": "MESS < 7 — historically associated with a salvageable limb. Low scores are the more reliable end of the score; proceed with limb-salvage assessment (vascular, orthopaedic, plastics) and revascularization if indicated", "disposition": "Salvage pathway", "severity": "low" },
+    { "min": 7, "max": 14, "label": "MESS ≥ 7 — the commonly cited amputation-associated threshold, but multiple validation studies (including LEAP and combat-casualty data) show only modest sensitivity and specificity here. Do NOT use as an automatic indication for amputation — weigh mechanism, ischemia time, associated injuries, contamination, patient factors, and reconstructive resources with the surgical team", "disposition": "Individualized surgical decision", "severity": "high" }
+  ],
+  "notes": "Original derivation was retrospective in lower-extremity trauma (Johansen 1990). The prospective LEAP study found MESS (and the other limb-injury scores) did not reliably predict which limbs were ultimately amputated or which salvaged limbs did well functionally — a low score predicting salvage held up better than a high score predicting amputation. Blast, crush, and ballistic mechanisms, polytrauma, and massive-transfusion requirement independently raise amputation rates regardless of the MESS. Warm ischemia beyond ~6 h markedly worsens salvage odds — the ischemia component is doubled for that reason (already built into the options here). Not validated in children.",
+  "buildNote": "Tier 2 — score components/thresholds are settled but their predictive limits are well documented; framed here as decision support, not a rule. Interactive companion to the mangled-extremity section of `penetrating-regional-trauma`. Ischemia > 6 h doubling is baked into the option list rather than a separate multiplier (additive engine)."
+}

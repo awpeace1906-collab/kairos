@@ -1,0 +1,35 @@
+{
+  "id": "new-orleans-criteria",
+  "section": "Calculators",
+  "category": "Neuro / Stroke / Head Injury",
+  "title": "New Orleans Criteria (CT Head)",
+  "settingEmphasis": ["ed", "prehospital"],
+  "aliases": ["NOC", "New Orleans Criteria", "minor head injury CT", "head CT decision rule"],
+  "tags": ["head injury", "CT head", "clinical decision rule", "ED", "rule-out"],
+  "keywords": ["headache", "vomiting", "age over 60", "drug or alcohol intoxication", "persistent anterograde amnesia short-term memory deficit", "visible trauma above the clavicle", "seizure", "GCS 15 minor head injury"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-09-07",
+  "review_tier": 1,
+  "sources": ["Haydel MJ, et al. Indications for computed tomography in patients with minor head injury. N Engl J Med. 2000;343(2):100-105", "Stiell IG, et al. Comparison of the Canadian CT Head Rule and the New Orleans Criteria in patients with minor head injury. JAMA. 2005;294(12):1511-1518"],
+  "changelog": [{ "version": 1, "date": "2026-09-07", "change": "Initial entry — the 7-item New Orleans Criteria; companion to the Canadian CT Head Rule calculator (per the decision-rules-cspine-ct-head reference build note)." }],
+  "engine": "additive",
+  "settings": ["ED"],
+  "purpose": "Identifies which adults with minor head injury (blunt trauma, LOC, and a GCS of 15) need a non-contrast CT head. Highly sensitive (~99-100%) for injury on CT but low specificity — it drives more scans than the Canadian CT Head Rule at similar sensitivity. Any positive item = CT.",
+  "items": [
+    { "key": "headache", "label": "Headache", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "vomiting", "label": "Vomiting (any)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "age60", "label": "Age > 60 years", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "intoxication", "label": "Drug or alcohol intoxication", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "amnesia", "label": "Persistent anterograde amnesia (short-term memory deficit)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "clavicleTrauma", "label": "Visible trauma above the clavicle", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "seizure", "label": "Seizure (witnessed or suspected, after the injury)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "No criteria — CT head not required by the rule in a GCS-15 patient with an otherwise normal exam. Observe and give head-injury discharge advice; the rule was not derived for anticoagulated patients — image them regardless", "disposition": "CT not required", "severity": "low" },
+    { "min": 1, "max": 7, "label": "≥ 1 criterion — obtain a non-contrast CT head", "disposition": "CT head", "severity": "moderate" }
+  ],
+  "notes": "Inclusion: blunt head trauma within 24 h, witnessed loss of consciousness, and GCS 15 at assessment with a normal neurologic exam. Applies only to GCS 15 — a lower GCS gets imaged regardless. Head-to-head (Stiell, JAMA 2005): NOC and the Canadian CT Head Rule are both ~100% sensitive for clinically important injury, but CCHR is markedly more specific (fewer unnecessary CTs) — pick one rule per patient and apply every criterion. Neither rule was derived for patients on anticoagulants/antiplatelets or with a bleeding disorder.",
+  "buildNote": "Rule — any positive item mandates CT; the count is not a graded risk. Companion to `canadian-ct-head`; both cross-linked from `decision-rules-cspine-ct-head`."
+}

@@ -7,17 +7,23 @@
   "aliases": ["NIHSS", "stroke severity", "stroke scale"],
   "tags": ["stroke", "severity", "thrombolytic", "thrombectomy", "ED", "ICU"],
   "contentType": "calculator",
-  "content_version": 1,
-  "last_reviewed": "2026-08-31",
-  "next_review_due": "2026-11-30",
+  "content_version": 2,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
   "review_tier": 1,
-  "sources": ["Brott T et al. Stroke 1989", "NIH Stroke Scale (official)"],
-  "flags": ["needs-primary-source"],
-  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Item score ranges only, per the deliberate scope decision in Calculator_Logic_Build_Spec.md." }],
+  "sources": [
+    "Brott T, Adams HP Jr, Olinger CP, et al. Measurements of acute cerebral infarction: a clinical examination scale. Stroke. 1989;20(7):864-870",
+    "NIH Stroke Scale, National Institute of Neurological Disorders and Stroke (NINDS) — training, certification, and scoring materials",
+    "Adams HP Jr, Davis PH, Leira EC, et al. Baseline NIH Stroke Scale score strongly predicts outcome after stroke: a report of the TOAST trial. Neurology. 1999;53(1):126-131 (score-to-outcome relationship)"
+  ],
+  "changelog": [
+    { "version": 2, "date": "2026-09-07", "change": "Expanded sources with the full Brott 1989 citation, the NINDS scale materials, and Adams 1999 (TOAST) for the score-to-outcome relationship; named the severity-band scheme and its alternate in notes; removed the needs-primary-source flag." },
+    { "version": 1, "date": "2026-08-31", "change": "Item score ranges only, per the deliberate scope decision in Calculator_Logic_Build_Spec.md." }
+  ],
   "engine": "formula",
   "settings": ["ED", "ICU"],
   "purpose": "Standardized stroke severity — drives thrombolytic/thrombectomy eligibility and serial monitoring. Enter the item scores a trained examiner has already determined.",
-  "notes": "Per the build spec's deliberate scope decision, the per-point behavioral criteria (what separates a 1 from a 2 on each item) are NOT encoded here — that is certified-examiner territory. This tool sums the item scores you enter.",
+  "notes": "Per the build spec's deliberate scope decision, the per-point behavioral criteria (what separates a 1 from a 2 on each item) are NOT encoded here — that is certified-examiner territory. This tool sums the item scores you enter. Severity bands shown (0 none / 1-4 minor / 5-15 moderate / 16-20 moderate-severe / 21-42 severe) follow the NINDS NIH Stroke Scale descriptors used in the scale's training materials; an alternate common scheme is < 5 / 5-14 / 15-24 / > 24. Bands are for communication and trending — thrombolytic and thrombectomy decisions use the specific trial criteria and clinical context, not a cut-point. Higher baseline score predicts worse outcome (Adams 1999): roughly ≤ 6 favours a good outcome and ≥ 16 a high probability of death or severe disability.",
   "inputs": [
     { "key": "loc",   "label": "1a. Level of consciousness (0-3)", "type": "integer", "min": 0, "max": 3 },
     { "key": "locQ",  "label": "1b. LOC questions (0-2)", "type": "integer", "min": 0, "max": 2 },

@@ -1,5 +1,7 @@
 // Small DOM helpers + the Tier 6 UI affordances.
 
+import { flagOutdatedURL } from "./lib/appConfig.js";
+
 export function el(tag, props = {}, ...children) {
   const node = document.createElement(tag);
   for (const [k, v] of Object.entries(props)) {
@@ -65,18 +67,18 @@ export function clearFieldsButton(onClick) {
   return el("button", { type: "button", class: "clear-all", onClick }, "Clear fields");
 }
 
-/** "Last verified" line + human-sourced staleness channel (Content Update spec §3). */
+/** "Last verified" line + human-sourced staleness channel (Content Update spec §3).
+    "Flag as outdated" opens a prefilled GitHub issue on the content repo. */
 export function lastVerified(mod) {
   if (!mod.last_reviewed) return null;
   const d = new Date(mod.last_reviewed + "T00:00:00Z");
   const stamp = d.toLocaleDateString(undefined, { month: "short", year: "numeric" });
-  const subject = encodeURIComponent(`Kairos content flag: ${mod.id} (v${mod.content_version})`);
   return el(
     "p",
     { class: "last-verified" },
     `Last verified ${stamp}`,
     " · ",
-    el("a", { href: `mailto:content@kairos.example?subject=${subject}` }, "Flag as outdated")
+    el("a", { href: flagOutdatedURL(mod), target: "_blank", rel: "noopener" }, "Flag as outdated")
   );
 }
 

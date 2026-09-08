@@ -65,9 +65,10 @@ struct LastVerified: View {
         if let reviewed = meta.lastReviewed, let date = Self.month(reviewed) {
             HStack(spacing: 6) {
                 Text("Last verified \(date)")
-                Text("·")
-                Link("Flag as outdated",
-                     destination: URL(string: "mailto:content@kairos.example?subject=Kairos%20content%20flag:%20\(meta.id)%20(v\(meta.contentVersion))")!)
+                if let url = AppConfig.flagOutdatedURL(meta) {
+                    Text("·")
+                    Link("Flag as outdated", destination: url)
+                }
             }
             .font(.footnote)
             .foregroundStyle(.secondary)

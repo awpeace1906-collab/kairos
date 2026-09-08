@@ -284,6 +284,9 @@ function renderPedsTool(mod, route, store) {
     const node = renderCalculator({ ...mod.embeddedCalculator, title: mod.title }, route);
     const intro = mount(el("div"), el("p", { class: "purpose" }, mod.purpose), mod.ageRange ? el("p", { class: "settings" }, mod.ageRange) : null);
     node.prepend(...intro.childNodes);
+    // A peds-tool may carry an explanatory body alongside its calculator
+    // (matches the iOS PedsToolBody behaviour).
+    if (mod.body?.length) node.append(el("div", { class: "prose" }, ...renderBlocks(mod.body)));
     return node;
   }
   return shell(

@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 543,
+  "count": 589,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -18,6 +18,18 @@
           "title": "Pediatric Cardiac Arrest — Numbers Card (PALS)",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/peds-cardiac-arrest"
+        }
+      ]
+    },
+    {
+      "text": "2025 PALS — Pediatric Cardiac Arrest; Bradycardia and Tachycardia with a Pulse (AHA-aligned)",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "peds-pre-arrival-card",
+          "title": "Peds Pre-Arrival Card — One Weight, Every Number",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-pre-arrival-card"
         }
       ]
     },
@@ -594,6 +606,18 @@
           "title": "PID & Tubo-ovarian Abscess",
           "section": "Reference Library",
           "route": "/reference-library/obstetric-gynecologic/pid-tubo-ovarian-abscess"
+        }
+      ]
+    },
+    {
+      "text": "CHEMM / ATSDR Medical Management Guidelines — Sulfur Mustard (Agent H/HD/HT); Lewisite (L); Phosgene Oxime (CX)",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "vesicant-toxicity",
+          "title": "Vesicants — Sulfur Mustard, Lewisite, Phosgene Oxime",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/vesicant-toxicity"
         }
       ]
     },
@@ -1226,6 +1250,18 @@
       "group": "Guidelines & consensus statements",
       "usedBy": [
         {
+          "id": "tox-cardiac-meds",
+          "title": "Cardiovascular Drug Toxicity — Digoxin, Beta-Blocker, CCB, Clonidine",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-cardiac-meds"
+        },
+        {
+          "id": "digoxin-immune-fab-dosing",
+          "title": "Digoxin Immune Fab (DigiFab) — Vial Dosing",
+          "section": "Calculators",
+          "route": "/calculators/toxicology-withdrawal/digoxin-immune-fab-dosing"
+        },
+        {
           "id": "tox-stimulants",
           "title": "Stimulant Toxicity — Cocaine, Amphetamines, MDMA, Cathinones",
           "section": "Reference Library",
@@ -1354,6 +1390,18 @@
       ]
     },
     {
+      "text": "Rebmann T, et al. / DoD Chemical Casualty Care guidelines — atropine titration to secretions, pralidoxime infusion, midazolam for seizures",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "nerve-agent-toxicity",
+          "title": "Nerve Agents & Organophosphates — Cholinergic Crisis",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/nerve-agent-toxicity"
+        }
+      ]
+    },
+    {
       "text": "Remley M, Loos P, Riesberg J, et al. Prolonged Casualty Care Guidelines. Joint Trauma System CPG ID: 91. 21 Dec 2021, rapid update June 2023",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1398,6 +1446,18 @@
           "title": "PADIS Bundle & RASS",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/padis-bundle"
+        }
+      ]
+    },
+    {
+      "text": "St-Onge M, et al. Experts Consensus Recommendations for the Management of Calcium Channel Blocker Poisoning in Adults. Crit Care Med. 2017;45(3):e306-e315",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "tox-cardiac-meds",
+          "title": "Cardiovascular Drug Toxicity — Digoxin, Beta-Blocker, CCB, Clonidine",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-cardiac-meds"
         }
       ]
     },
@@ -1494,6 +1554,18 @@
           "title": "Labor Progression & Bishop Score",
           "section": "Reference Library",
           "route": "/reference-library/obstetric-gynecologic/labor-progression"
+        }
+      ]
+    },
+    {
+      "text": "Adams HP Jr, Davis PH, Leira EC, et al. Baseline NIH Stroke Scale score strongly predicts outcome after stroke: a report of the TOAST trial. Neurology. 1999;53(1):126-131 (score-to-outcome relationship)",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "nihss",
+          "title": "NIH Stroke Scale (NIHSS)",
+          "section": "Calculators",
+          "route": "/calculators/neuro-stroke-head-injury/nihss"
         }
       ]
     },
@@ -1770,6 +1842,24 @@
           "title": "The Difficult Airway — DAS 2025 & the Failed-Airway Drill",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/anatomically-difficult-airway"
+        }
+      ]
+    },
+    {
+      "text": "Eddleston M, et al. Management of acute organophosphorus pesticide poisoning. Lancet. 2008;371(9612):597-607",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "nerve-agent-antidote-dosing",
+          "title": "Nerve Agent / Organophosphate — Antidote Dosing",
+          "section": "Calculators",
+          "route": "/calculators/toxicology-withdrawal/nerve-agent-antidote-dosing"
+        },
+        {
+          "id": "nerve-agent-toxicity",
+          "title": "Nerve Agents & Organophosphates — Cholinergic Crisis",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/nerve-agent-toxicity"
         }
       ]
     },
@@ -2274,6 +2364,18 @@
           "title": "Canadian CT Head Rule",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/canadian-ct-head"
+        }
+      ]
+    },
+    {
+      "text": "Stiell IG, et al. Comparison of the Canadian CT Head Rule and the New Orleans Criteria in patients with minor head injury. JAMA. 2005;294(12):1511-1518",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "new-orleans-criteria",
+          "title": "New Orleans Criteria (CT Head)",
+          "section": "Calculators",
+          "route": "/calculators/neuro-stroke-head-injury/new-orleans-criteria"
         }
       ]
     },
@@ -3736,7 +3838,7 @@
       ]
     },
     {
-      "text": "Alvarado A. Ann Emerg Med 1986",
+      "text": "Alvarado A. A practical score for the early diagnosis of acute appendicitis. Ann Emerg Med. 1986;15(5):557-564",
       "group": "Other primary sources",
       "usedBy": [
         {
@@ -3744,6 +3846,18 @@
           "title": "Alvarado Score",
           "section": "Calculators",
           "route": "/calculators/gi-renal-metabolic/alvarado"
+        }
+      ]
+    },
+    {
+      "text": "American College of Medical Toxicology position statement on the use of intravenous lipid emulsion (ILE)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-cardiac-meds",
+          "title": "Cardiovascular Drug Toxicity — Digoxin, Beta-Blocker, CCB, Clonidine",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-cardiac-meds"
         }
       ]
     },
@@ -3776,6 +3890,12 @@
       "group": "Other primary sources",
       "usedBy": [
         {
+          "id": "peds-pre-arrival-card",
+          "title": "Peds Pre-Arrival Card — One Weight, Every Number",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-pre-arrival-card"
+        },
+        {
           "id": "pedi-tape-weight-zones",
           "title": "Weight Zones & Equipment Sizing",
           "section": "Peds Module",
@@ -3792,6 +3912,18 @@
           "title": "Ideal Body Weight (Devine)",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/dosing-fluid-math/ideal-body-weight"
+        }
+      ]
+    },
+    {
+      "text": "Ash-Bernal R, Wise R, Wright SM. Acquired methemoglobinemia: a retrospective series of 138 cases at 2 teaching hospitals. Medicine (Baltimore). 2004;83(5):265-273",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "methemoglobinemia",
+          "title": "Methemoglobinemia — Recognition & Methylene Blue",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/methemoglobinemia"
         }
       ]
     },
@@ -3916,6 +4048,18 @@
       ]
     },
     {
+      "text": "Berman BD. Neuroleptic Malignant Syndrome: A Review for Neurohospitalists. Neurohospitalist. 2011;1(1):41-47",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-psych-meds",
+          "title": "Psychiatric Drug Toxicity — Lithium, Antipsychotics/NMS, SSRIs, Bupropion",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-psych-meds"
+        }
+      ]
+    },
+    {
       "text": "Bissell BD, et al. Impact of protocolized diuresis for de-resuscitation in the intensive care unit. Crit Care. 2020;24:70",
       "group": "Other primary sources",
       "usedBy": [
@@ -3940,19 +4084,31 @@
       ]
     },
     {
-      "text": "Brooks AF et al. Pediatrics 2019;144(2):e20184101 (higher-risk framework)",
+      "text": "Bosse MJ, et al. A prospective evaluation of the lower-extremity injury-severity scores (LEAP study). J Bone Joint Surg Am. 2001;83(1):3-14",
       "group": "Other primary sources",
       "usedBy": [
         {
-          "id": "brue-pathway",
-          "title": "BRUE Pathway",
-          "section": "Peds Module",
-          "route": "/peds-module/peds-resuscitation-decision-support/brue-pathway"
+          "id": "mangled-extremity-severity-score",
+          "title": "Mangled Extremity Severity Score (MESS)",
+          "section": "Calculators",
+          "route": "/calculators/trauma/mangled-extremity-severity-score"
         }
       ]
     },
     {
-      "text": "Brott T et al. Stroke 1989",
+      "text": "Boyer EW, Shannon M. The Serotonin Syndrome. N Engl J Med. 2005;352(11):1112-1120 (Hunter Criteria)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-psych-meds",
+          "title": "Psychiatric Drug Toxicity — Lithium, Antipsychotics/NMS, SSRIs, Bupropion",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-psych-meds"
+        }
+      ]
+    },
+    {
+      "text": "Brott T, Adams HP Jr, Olinger CP, et al. Measurements of acute cerebral infarction: a clinical examination scale. Stroke. 1989;20(7):864-870",
       "group": "Other primary sources",
       "usedBy": [
         {
@@ -4096,6 +4252,30 @@
       ]
     },
     {
+      "text": "Chan BS, Buckley NA. Digoxin-specific antibody fragments in the treatment of digoxin toxicity. Clin Toxicol. 2014;52(8):824-836",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "digoxin-immune-fab-dosing",
+          "title": "Digoxin Immune Fab (DigiFab) — Vial Dosing",
+          "section": "Calculators",
+          "route": "/calculators/toxicology-withdrawal/digoxin-immune-fab-dosing"
+        }
+      ]
+    },
+    {
+      "text": "Chan BS, et al. Clinical outcomes from early use of digoxin-specific antibodies versus observation in chronic digoxin poisoning (ATOM-1). Clin Toxicol. 2016",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-cardiac-meds",
+          "title": "Cardiovascular Drug Toxicity — Digoxin, Beta-Blocker, CCB, Clonidine",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-cardiac-meds"
+        }
+      ]
+    },
+    {
       "text": "CHEMM (Chemical Hazards Emergency Medical Management), US DHHS — Choking/Lung/Pulmonary Agents Toxidrome; chemm.hhs.gov",
       "group": "Other primary sources",
       "usedBy": [
@@ -4104,6 +4284,24 @@
           "title": "Hazmat Scene Management & Chemical Toxidromes",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/hazmat-scene-toxidromes"
+        }
+      ]
+    },
+    {
+      "text": "CHEMM (Chemical Hazards Emergency Medical Management), US DHHS — Nerve Agents; chemm.hhs.gov",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "nerve-agent-antidote-dosing",
+          "title": "Nerve Agent / Organophosphate — Antidote Dosing",
+          "section": "Calculators",
+          "route": "/calculators/toxicology-withdrawal/nerve-agent-antidote-dosing"
+        },
+        {
+          "id": "nerve-agent-toxicity",
+          "title": "Nerve Agents & Organophosphates — Cholinergic Crisis",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/nerve-agent-toxicity"
         }
       ]
     },
@@ -4188,6 +4386,18 @@
           "title": "Cormack-Lehane Classification",
           "section": "Calculators",
           "route": "/calculators/anesthesia-airway-or/cormack-lehane"
+        }
+      ]
+    },
+    {
+      "text": "Cortazzo JA, Lichtman AD. Methemoglobinemia: a review and recommendations for management. J Cardiothorac Vasc Anesth. 2014;28(4):1043-1047",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "methemoglobinemia",
+          "title": "Methemoglobinemia — Recognition & Methylene Blue",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/methemoglobinemia"
         }
       ]
     },
@@ -4816,6 +5026,18 @@
       ]
     },
     {
+      "text": "Decker BS, et al. EXTRIP Workgroup Recommendations on the Use of Extracorporeal Treatments in Lithium Poisoning. Clin J Am Soc Nephrol. 2015;10(5):875-887",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-psych-meds",
+          "title": "Psychiatric Drug Toxicity — Lithium, Antipsychotics/NMS, SSRIs, Bupropion",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-psych-meds"
+        }
+      ]
+    },
+    {
       "text": "Devine BJ. Drug Intell Clin Pharm 1974",
       "group": "Other primary sources",
       "usedBy": [
@@ -4834,6 +5056,18 @@
       ]
     },
     {
+      "text": "DiCarlo AL, et al. Cytokine therapy for the acute radiation syndrome (nplate/romiplostim, filgrastim, sargramostim FDA approvals for hematopoietic ARS)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acute-radiation-syndrome",
+          "title": "Acute Radiation Syndrome & Radiological Casualties",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/acute-radiation-syndrome"
+        }
+      ]
+    },
+    {
       "text": "Difficult Airway Society — topical local anaesthetic ceiling 9 mg/kg lean body weight",
       "group": "Other primary sources",
       "usedBy": [
@@ -4842,6 +5076,18 @@
           "title": "Awake Intubation (ICU)",
           "section": "Procedures",
           "route": "/procedures/airway-sedation-workflows/awake-intubation"
+        }
+      ]
+    },
+    {
+      "text": "DigiFab (digoxin immune Fab) prescribing information",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "digoxin-immune-fab-dosing",
+          "title": "Digoxin Immune Fab (DigiFab) — Vial Dosing",
+          "section": "Calculators",
+          "route": "/calculators/toxicology-withdrawal/digoxin-immune-fab-dosing"
         }
       ]
     },
@@ -5020,6 +5266,18 @@
       ]
     },
     {
+      "text": "EXTRIP workgroup — digoxin (dialysis not recommended; Fab is definitive)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-cardiac-meds",
+          "title": "Cardiovascular Drug Toxicity — Digoxin, Beta-Blocker, CCB, Clonidine",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-cardiac-meds"
+        }
+      ]
+    },
+    {
       "text": "Fatal Outcome of Status Epilepticus, Hyperthermia, Rhabdomyolysis After 25I-NBOMe Ingestion. Neurology, 2014",
       "group": "Other primary sources",
       "usedBy": [
@@ -5040,6 +5298,18 @@
           "title": "Hemorrhagic Shock & Massive Transfusion",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/hemorrhagic-shock-mtp"
+        }
+      ]
+    },
+    {
+      "text": "FDA Drug Safety Communication: benzocaine and methemoglobinemia (2018)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "methemoglobinemia",
+          "title": "Methemoglobinemia — Recognition & Methylene Blue",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/methemoglobinemia"
         }
       ]
     },
@@ -5128,6 +5398,90 @@
       ]
     },
     {
+      "text": "Goldfrank's Toxicologic Emergencies, 11th ed. — Cardioactive Steroids; Antidotes in Depth: Digoxin-Specific Antibody Fragments",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "digoxin-immune-fab-dosing",
+          "title": "Digoxin Immune Fab (DigiFab) — Vial Dosing",
+          "section": "Calculators",
+          "route": "/calculators/toxicology-withdrawal/digoxin-immune-fab-dosing"
+        }
+      ]
+    },
+    {
+      "text": "Goldfrank's Toxicologic Emergencies, 11th ed. — Cardioactive Steroids; β-Adrenergic Antagonists; Calcium Channel Blockers; Clonidine and Related Imidazolines",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-cardiac-meds",
+          "title": "Cardiovascular Drug Toxicity — Digoxin, Beta-Blocker, CCB, Clonidine",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-cardiac-meds"
+        }
+      ]
+    },
+    {
+      "text": "Goldfrank's Toxicologic Emergencies, 11th ed. — Insecticides; Chemical Weapons",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "nerve-agent-antidote-dosing",
+          "title": "Nerve Agent / Organophosphate — Antidote Dosing",
+          "section": "Calculators",
+          "route": "/calculators/toxicology-withdrawal/nerve-agent-antidote-dosing"
+        }
+      ]
+    },
+    {
+      "text": "Goldfrank's Toxicologic Emergencies, 11th ed. — Insecticides: Organic Phosphorus Compounds and Carbamates; Chemical Weapons",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "nerve-agent-toxicity",
+          "title": "Nerve Agents & Organophosphates — Cholinergic Crisis",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/nerve-agent-toxicity"
+        }
+      ]
+    },
+    {
+      "text": "Goldfrank's Toxicologic Emergencies, 11th ed. — Lithium; Antipsychotics; Serotonin Reuptake Inhibitors and Atypical Antidepressants",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-psych-meds",
+          "title": "Psychiatric Drug Toxicity — Lithium, Antipsychotics/NMS, SSRIs, Bupropion",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-psych-meds"
+        }
+      ]
+    },
+    {
+      "text": "Goldfrank's Toxicologic Emergencies, 11th ed. — Methemoglobin Inducers; Methylene Blue and Cimetidine",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "methemoglobinemia",
+          "title": "Methemoglobinemia — Recognition & Methylene Blue",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/methemoglobinemia"
+        }
+      ]
+    },
+    {
+      "text": "Goldfrank's Toxicologic Emergencies, 11th ed. — Vesicants",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "vesicant-toxicity",
+          "title": "Vesicants — Sulfur Mustard, Lewisite, Phosgene Oxime",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/vesicant-toxicity"
+        }
+      ]
+    },
+    {
       "text": "Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. — adrenergic receptor pharmacology",
       "group": "Other primary sources",
       "usedBy": [
@@ -5136,6 +5490,18 @@
           "title": "Beta-Blocker Receptor Selectivity",
           "section": "Reference Library",
           "route": "/reference-library/cardiac-ecg/beta-blocker-selectivity"
+        }
+      ]
+    },
+    {
+      "text": "Graham JS, Schoneboom BA. Historical perspective on effects and treatment of sulfur mustard injuries. Chem Biol Interact. 2013;206(3):512-522",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "vesicant-toxicity",
+          "title": "Vesicants — Sulfur Mustard, Lewisite, Phosgene Oxime",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/vesicant-toxicity"
         }
       ]
     },
@@ -5160,6 +5526,18 @@
           "title": "Hyperosmolar Therapy — HTS vs Mannitol",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/hyperosmolar-therapy"
+        }
+      ]
+    },
+    {
+      "text": "Haydel MJ, et al. Indications for computed tomography in patients with minor head injury. N Engl J Med. 2000;343(2):100-105",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "new-orleans-criteria",
+          "title": "New Orleans Criteria (CT Head)",
+          "section": "Calculators",
+          "route": "/calculators/neuro-stroke-head-injury/new-orleans-criteria"
         }
       ]
     },
@@ -5260,6 +5638,18 @@
       ]
     },
     {
+      "text": "Isbister GK, et al. Relative toxicity of selective serotonin reuptake inhibitors (SSRIs) in overdose. J Toxicol Clin Toxicol. 2004 (citalopram / QT signal)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-psych-meds",
+          "title": "Psychiatric Drug Toxicity — Lithium, Antipsychotics/NMS, SSRIs, Bupropion",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-psych-meds"
+        }
+      ]
+    },
+    {
       "text": "Janmahasatian S et al. Clin Pharmacokinet 2005;44:1051-65 (PMID 16176118)",
       "group": "Other primary sources",
       "usedBy": [
@@ -5268,6 +5658,18 @@
           "title": "Adjusted / Lean Body Weight",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/dosing-fluid-math/adjusted-body-weight"
+        }
+      ]
+    },
+    {
+      "text": "Johansen K, et al. Objective criteria accurately predict amputation following lower extremity trauma. J Trauma. 1990;30(5):568-572",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "mangled-extremity-severity-score",
+          "title": "Mangled Extremity Severity Score (MESS)",
+          "section": "Calculators",
+          "route": "/calculators/trauma/mangled-extremity-severity-score"
         }
       ]
     },
@@ -5296,7 +5698,19 @@
       ]
     },
     {
-      "text": "Kairos weight-zones.json (Teal–Charcoal 9-zone scheme)",
+      "text": "Kairos peds-cardiac-arrest numbers card (every dose cross-checked vs current PALS)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-pre-arrival-card",
+          "title": "Peds Pre-Arrival Card — One Weight, Every Number",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-pre-arrival-card"
+        }
+      ]
+    },
+    {
+      "text": "Kairos weight-zones.json (Dove-Umber 9-zone scheme)",
       "group": "Other primary sources",
       "usedBy": [
         {
@@ -5304,6 +5718,30 @@
           "title": "Weight Zones & Equipment Sizing",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/pedi-tape-weight-zones"
+        }
+      ]
+    },
+    {
+      "text": "Kairos weight-zones.json (Dove-Umber 9-zone scheme) and the resus drug cards it defers to",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-pre-arrival-card",
+          "title": "Peds Pre-Arrival Card — One Weight, Every Number",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-pre-arrival-card"
+        }
+      ]
+    },
+    {
+      "text": "Kauvar DS, et al. Utility of the Mangled Extremity Severity Score in predicting amputation in military lower extremity arterial injury. Ann Vasc Surg. 2018",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "mangled-extremity-severity-score",
+          "title": "Mangled Extremity Severity Score (MESS)",
+          "section": "Calculators",
+          "route": "/calculators/trauma/mangled-extremity-severity-score"
         }
       ]
     },
@@ -5316,6 +5754,18 @@
           "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/penetrating-regional-trauma"
+        }
+      ]
+    },
+    {
+      "text": "Kehe K, Szinicz L. Medical aspects of sulphur mustard poisoning. Toxicology. 2005;214(3):198-209",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "vesicant-toxicity",
+          "title": "Vesicants — Sulfur Mustard, Lewisite, Phosgene Oxime",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/vesicant-toxicity"
         }
       ]
     },
@@ -5680,6 +6130,18 @@
       ]
     },
     {
+      "text": "Merritt JL 2nd, Quinonez RA, Bonkowsky JL, et al. A Framework for Evaluation of the Higher-Risk Infant After a Brief Resolved Unexplained Event. Pediatrics. 2019;144(2):e20184101",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "brue-pathway",
+          "title": "BRUE Pathway",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/brue-pathway"
+        }
+      ]
+    },
+    {
       "text": "Meyers HP et al. J Emerg Med 2021 (OMI vs NOMI)",
       "group": "Other primary sources",
       "usedBy": [
@@ -5800,6 +6262,18 @@
       ]
     },
     {
+      "text": "NCRP Report No. 165 — Responding to a Radiological or Nuclear Terrorism Incident",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acute-radiation-syndrome",
+          "title": "Acute Radiation Syndrome & Radiological Casualties",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/acute-radiation-syndrome"
+        }
+      ]
+    },
+    {
       "text": "Neal JM et al. ASRA Practice Advisory on Local Anesthetic Systemic Toxicity. Reg Anesth Pain Med 2023",
       "group": "Other primary sources",
       "usedBy": [
@@ -5830,6 +6304,18 @@
       ]
     },
     {
+      "text": "Newmark J. Nerve agents. Neurologist. 2007;13(1):20-32 (autoinjector regimens, seizure management)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "nerve-agent-toxicity",
+          "title": "Nerve Agents & Organophosphates — Cholinergic Crisis",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/nerve-agent-toxicity"
+        }
+      ]
+    },
+    {
       "text": "NFPA 472 / 1072. Standard for Competence of Responders to Hazardous Materials / WMD Incidents",
       "group": "Other primary sources",
       "usedBy": [
@@ -5842,7 +6328,7 @@
       ]
     },
     {
-      "text": "NIH Stroke Scale (official)",
+      "text": "NIH Stroke Scale, National Institute of Neurological Disorders and Stroke (NINDS) — training, certification, and scoring materials",
       "group": "Other primary sources",
       "usedBy": [
         {
@@ -5850,6 +6336,18 @@
           "title": "NIH Stroke Scale (NIHSS)",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/nihss"
+        }
+      ]
+    },
+    {
+      "text": "Oak Ridge Radiation Emergency Assistance Center / Training Site (REAC/TS) — The Medical Aspects of Radiation Incidents",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acute-radiation-syndrome",
+          "title": "Acute Radiation Syndrome & Radiological Casualties",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/acute-radiation-syndrome"
         }
       ]
     },
@@ -6126,6 +6624,18 @@
           "title": "Stimulant Toxicity — Cocaine, Amphetamines, MDMA, Cathinones",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-stimulants"
+        }
+      ]
+    },
+    {
+      "text": "Radiation Emergency Medical Management (REMM), US DHHS/ASPR — remm.hhs.gov (ARS triage, biodosimetry, decorporation)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acute-radiation-syndrome",
+          "title": "Acute Radiation Syndrome & Radiological Casualties",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/acute-radiation-syndrome"
         }
       ]
     },
@@ -6442,6 +6952,18 @@
       ]
     },
     {
+      "text": "Skold A, Cosco DL, Klein R. Methemoglobinemia: pathogenesis, diagnosis, and management. South Med J. 2011;104(11):757-761",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "methemoglobinemia",
+          "title": "Methemoglobinemia — Recognition & Methylene Blue",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/methemoglobinemia"
+        }
+      ]
+    },
+    {
       "text": "Smith SW et al. Ann Emerg Med 2012; Meyers HP et al. Am Heart J 2015 (Modified Sgarbossa)",
       "group": "Other primary sources",
       "usedBy": [
@@ -6598,6 +7120,18 @@
       ]
     },
     {
+      "text": "Starr P, et al. Incidence and onset of delayed seizures after overdoses of extended-release bupropion. Clin Toxicol. 2009",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-psych-meds",
+          "title": "Psychiatric Drug Toxicity — Lithium, Antipsychotics/NMS, SSRIs, Bupropion",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-psych-meds"
+        }
+      ]
+    },
+    {
       "text": "StatPearls",
       "group": "Other primary sources",
       "usedBy": [
@@ -6670,6 +7204,18 @@
       ]
     },
     {
+      "text": "Tieder JS, et al. Diagnostic yield of evaluation and CIED/observation for lower-risk BRUE (secondary analyses, 2018-2021)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "brue-pathway",
+          "title": "BRUE Pathway",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/brue-pathway"
+        }
+      ]
+    },
+    {
       "text": "Toluene Toxicity. Medscape/emedicine, 2025; Possible Biological Mechanisms of Sudden Sniffing Death Syndrome",
       "group": "Other primary sources",
       "usedBy": [
@@ -6730,6 +7276,30 @@
       ]
     },
     {
+      "text": "USAMRICD Medical Management of Chemical Casualties Handbook",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "nerve-agent-antidote-dosing",
+          "title": "Nerve Agent / Organophosphate — Antidote Dosing",
+          "section": "Calculators",
+          "route": "/calculators/toxicology-withdrawal/nerve-agent-antidote-dosing"
+        }
+      ]
+    },
+    {
+      "text": "USAMRICD Medical Management of Chemical Casualties Handbook — vesicant decontamination, ocular and pulmonary care, marrow support",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "vesicant-toxicity",
+          "title": "Vesicants — Sulfur Mustard, Lewisite, Phosgene Oxime",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/vesicant-toxicity"
+        }
+      ]
+    },
+    {
       "text": "van der Linden PD, et al. Fluoroquinolones and risk of Achilles tendon disorders: case-control study. BMJ. 2002;324(7349):1306-1307",
       "group": "Other primary sources",
       "usedBy": [
@@ -6762,6 +7332,18 @@
           "title": "White Phosphorus & Incendiary Casualties",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/incendiary-chemical-burns"
+        }
+      ]
+    },
+    {
+      "text": "Waselenko JK, et al. Medical management of the acute radiation syndrome: recommendations of the Strategic National Stockpile Radiation Working Group. Ann Intern Med. 2004;140(12):1037-1051",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acute-radiation-syndrome",
+          "title": "Acute Radiation Syndrome & Radiological Casualties",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/acute-radiation-syndrome"
         }
       ]
     },

@@ -7,16 +7,19 @@
   "aliases": ["brief resolved unexplained event", "ALTE", "apparent life-threatening event"],
   "tags": ["BRUE", "infant", "apnea", "cyanosis", "risk stratification", "disposition"],
   "contentType": "peds-tool",
-  "content_version": 1,
-  "last_reviewed": "2026-08-31",
-  "next_review_due": "2026-11-30",
+  "content_version": 2,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
   "review_tier": 1,
   "sources": [
     "AAP 2016 Clinical Practice Guideline (Tieder JS et al. Pediatrics 2016;137(5):e20160590)",
-    "Brooks AF et al. Pediatrics 2019;144(2):e20184101 (higher-risk framework)"
+    "Merritt JL 2nd, Quinonez RA, Bonkowsky JL, et al. A Framework for Evaluation of the Higher-Risk Infant After a Brief Resolved Unexplained Event. Pediatrics. 2019;144(2):e20184101",
+    "Tieder JS, et al. Diagnostic yield of evaluation and CIED/observation for lower-risk BRUE (secondary analyses, 2018-2021)"
   ],
-  "flags": ["needs-primary-source"],
-  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry — lower-risk pathway matches AAP 2016 exactly; higher-risk side is a stub pending the 2019 framework." }],
+  "changelog": [
+    { "version": 2, "date": "2026-09-07", "change": "Built out the higher-risk branch — the risk-elevating features, a targeted feature-matched evaluation (12-lead ECG for all; pertussis, feeding/swallow, non-accidental-trauma workup, EEG, and neuroimaging each gated by specific findings), a not-recommended-routinely list, and a disposition guide — synthesized from the 2019 higher-risk framework (Merritt et al.) plus AAP 2016. Removed the stub callout and needs-primary-source flag. Still guidance, not a validated decision rule." },
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry — lower-risk pathway matches AAP 2016 exactly; higher-risk side is a stub pending the 2019 framework." }
+  ],
   "kind": "decision-tree",
   "purpose": "Classify an infant event as a BRUE, then stratify lower- vs higher-risk to guide testing and disposition.",
   "ageRange": "Infants < 1 year",
@@ -34,7 +37,27 @@
     ] },
     { "type": "callout", "tone": "info", "text": "Lower-risk: brief monitoring (continuous pulse oximetry + serial observation), parental education on BRUE and CPR, shared decision-making. Do NOT routinely obtain labs, imaging, admission, or home monitors. May consider a 12-lead ECG and pertussis testing." },
     { "type": "heading", "level": 2, "text": "Higher-risk (fails any lower-risk criterion)" },
-    { "type": "callout", "tone": "warning", "text": "STUB. The 2016 AAP guideline does not cover the higher-risk infant. Build this branch from Brooks AF et al. Pediatrics 2019;144(2):e20184101 — a tiered framework — rather than improvising. Default until then: admission with workup guided by the specific concerning features present." }
+    { "type": "text", "text": "There is no validated higher-risk pathway. The 2016 AAP guideline explicitly does not cover these infants; the 2019 framework (Merritt et al.) is expert consensus. Approach: weight the risk-elevating features, do a TARGETED evaluation matched to what is actually concerning, and use shared decision-making about brief admission — not a reflexive shotgun workup." },
+    { "type": "heading", "level": 3, "text": "Features that raise concern" },
+    { "type": "list", "items": [
+      "Age < 2 months",
+      "History of prematurity — gestational age < 32 weeks, or corrected age < 45 weeks",
+      "More than one event, or events clustered in a short period",
+      "Event lasted ≥ 1 minute, or required vigorous stimulation or CPR by a trained provider",
+      "Concerning history — family history of sudden unexplained death < 35 years, a prior BRUE/ALTE, a social or safety concern or possible maltreatment, a possible toxic exposure, a clear feeding or positional trigger",
+      "Any abnormal physical exam — focal neurologic finding, bruising or other injury, dysmorphism, a pathologic murmur, respiratory distress, or abnormal vital signs"
+    ] },
+    { "type": "heading", "level": 3, "text": "Targeted evaluation — match the test to the feature" },
+    { "type": "table", "columns": ["Feature present", "Reasonable evaluation"], "rows": [
+      ["Any higher-risk infant", "12-lead ECG (long QT, WPW, cardiomyopathy). Consider a brief period of continuous cardiorespiratory + pulse-oximetry monitoring (observation unit or short admission), especially if age < 2 months, recurrent, or CPR was given."],
+      ["Color change / apnea + sick contact or incomplete pertussis vaccination", "Pertussis PCR; consider a respiratory viral panel (RSV)."],
+      ["Choking, gagging, arching, or a clear feeding association", "Feeding / swallowing evaluation. Do NOT routinely start acid suppression or obtain an upper GI series for presumed reflux."],
+      ["Abnormal neuro exam, abnormal movements, or a clinically suspected seizure", "EEG (only if a seizure is genuinely suspected — not routine). Neuroimaging (non-contrast head CT if acute concern, otherwise MRI) if the exam is focal or events recur."],
+      ["Bruising, other injury, retinal findings, inconsistent history, or social concern", "Non-accidental-trauma workup: neuroimaging, skeletal survey, ophthalmology, and child-protection involvement. This is the diagnosis not to miss."],
+      ["Toxic exposure suspected (medications in the home, illicit substances)", "Targeted toxicology / urine drug screen; involve poison control."]
+    ] },
+    { "type": "callout", "tone": "info", "text": "NOT recommended routinely (low yield, drive them by a specific finding only): CBC, electrolytes/glucose/bicarbonate, blood gas, ammonia, lactate, urine organic acids and other metabolic studies, chest radiograph, echocardiography, polysomnography, home apnea monitors, and empiric anti-reflux therapy." },
+    { "type": "callout", "tone": "warning", "text": "Disposition: for a higher-risk infant, a brief hospitalization (typically ≤ 24 h) with continuous cardiorespiratory monitoring is reasonable — most strongly for age < 2 months, recurrent or clustered events, or an event that required CPR. Use shared decision-making, arrange caregiver CPR training, and ensure close follow-up. Escalate to a full workup and admission whenever the exam is abnormal or events recur in the department." }
   ],
-  "buildNote": "Lower-risk pathway is safe to build now. Higher-risk branch needs the 2019 paper (listed in docs/OPEN_ITEMS.md)."
+  "buildNote": "Higher-risk branch built 2026-09-07 from the 2019 framework (Merritt et al.) + AAP 2016 — it is expert consensus, not a validated rule, and is framed that way in the module. The lower-risk pathway still matches AAP 2016 exactly. An interactive lower-risk criteria checklist (all-must-be-true → lower-risk) is a natural follow-on."
 }

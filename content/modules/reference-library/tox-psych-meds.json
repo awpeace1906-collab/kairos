@@ -1,0 +1,174 @@
+{
+  "id": "tox-psych-meds",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Psychiatric Drug Toxicity — Lithium, Antipsychotics/NMS, SSRIs, Bupropion",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "lithium toxicity dialysis",
+    "acute vs chronic lithium",
+    "neuroleptic malignant syndrome",
+    "NMS vs serotonin syndrome",
+    "SSRI SNRI overdose serotonin syndrome",
+    "bupropion seizure wide QRS",
+    "SILENT lithium neurotoxicity"
+  ],
+  "tags": [
+    "toxicology",
+    "psychiatric drugs",
+    "lithium",
+    "antipsychotics",
+    "NMS",
+    "serotonin syndrome",
+    "bupropion",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "lithium narrow therapeutic index tremor ataxia clonus encephalopathy",
+    "acute lithium GI predominant chronic lithium neurotoxic lower level worse",
+    "lithium hemodialysis level 4 or 2.5 with severe symptoms or renal failure rebound",
+    "SILENT syndrome persistent cerebellar lithium",
+    "neuroleptic malignant syndrome lead-pipe rigidity hyporeflexia bradykinesia days CK",
+    "NMS vs serotonin syndrome onset reflexes clonus timeline",
+    "dantrolene bromocriptine NMS benzodiazepines cooling",
+    "SSRI SNRI low lethality citalopram escitalopram QT seizure",
+    "bupropion dose-dependent seizure delayed wide QRS gap junction not sodium channel XL",
+    "cyproheptadine serotonin syndrome"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Goldfrank's Toxicologic Emergencies, 11th ed. — Lithium; Antipsychotics; Serotonin Reuptake Inhibitors and Atypical Antidepressants",
+    "Decker BS, et al. EXTRIP Workgroup Recommendations on the Use of Extracorporeal Treatments in Lithium Poisoning. Clin J Am Soc Nephrol. 2015;10(5):875-887",
+    "Boyer EW, Shannon M. The Serotonin Syndrome. N Engl J Med. 2005;352(11):1112-1120 (Hunter Criteria)",
+    "Berman BD. Neuroleptic Malignant Syndrome: A Review for Neurohospitalists. Neurohospitalist. 2011;1(1):41-47",
+    "Isbister GK, et al. Relative toxicity of selective serotonin reuptake inhibitors (SSRIs) in overdose. J Toxicol Clin Toxicol. 2004 (citalopram / QT signal)",
+    "Starr P, et al. Incidence and onset of delayed seizures after overdoses of extended-release bupropion. Clin Toxicol. 2009"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — lithium (acute vs chronic, dialysis criteria, SILENT), antipsychotic toxicity and neuroleptic malignant syndrome (with the NMS-vs-serotonin-syndrome contrast), SSRI/SNRI overdose and serotonin syndrome, and bupropion (delayed seizures, non-sodium-channel QRS widening). Lateral expansion flagged by the CV Intoxicating Substances Reference."
+    }
+  ],
+  "summary": "Lithium's danger is its narrow window and that a lower level can be sicker (chronic) than a higher one (acute) — and it is one of the few ingestions where dialysis is genuinely indicated. Antipsychotic toxicity is mostly supportive, but neuroleptic malignant syndrome must be separated from serotonin syndrome. Most SSRI overdoses are benign; the exceptions are QT (citalopram) and bupropion (delayed seizures).",
+  "whyThisMatters": "Two look-alike hyperthermic rigidity syndromes — NMS and serotonin syndrome — need opposite mental framing (dopamine blockade building over days vs serotonin excess over hours), and getting the wrong one delays the right treatment. Lithium is repeatedly under-dialyzed because the level looks 'not that high' in a chronically toxic patient who is actually encephalopathic. And bupropion is the antidepressant that still kills, through seizures that can arrive many hours after a reassuring initial presentation, especially with the XL formulation.",
+  "clinicalTakeaway": "Lithium: distinguish acute (GI-predominant, higher level tolerated) from chronic (neurotoxic — tremor, ataxia, clonus, confusion — at a lower level), give aggressive isotonic fluids, stop the lithium and any ACE-I/ARB/NSAID/thiazide, and consult nephrology for hemodialysis if the level is > 4 mEq/L, or > 2.5 with severe symptoms or renal failure, or the patient can't clear it — expect rebound and recheck levels. NMS vs serotonin syndrome: NMS is lead-pipe rigidity with hyporeflexia and bradykinesia evolving over days on a dopamine antagonist; serotonin syndrome is lower-limb-predominant clonus and hyperreflexia over hours on a serotonergic agent. Both: stop the drug, benzodiazepines, aggressive cooling; add cyproheptadine for serotonin syndrome, dantrolene ± bromocriptine for severe NMS. SSRI/SNRI overdose: usually supportive; get an ECG for citalopram/escitalopram (QT) and watch for serotonin syndrome with co-ingestants. Bupropion: cardiac monitoring and an extended observation window (up to 24 h for XL) for delayed seizures — treat seizures with benzodiazepines, a wide QRS with supportive care (bicarbonate is largely ineffective — the mechanism is gap-junction, not sodium-channel).",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Lithium"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Narrow therapeutic index (target ~0.6-1.2 mEq/L). Toxicity: fine then coarse tremor, hyperreflexia, ataxia, dysarthria, myoclonus/clonus, confusion progressing to encephalopathy, seizures, and coma; nephrogenic diabetes insipidus and a nephrotic-range or tubular renal picture with chronic use; T-wave flattening and, rarely, sinus node dysfunction.",
+        "Acute overdose (no prior use): GI symptoms predominate early (nausea, vomiting, diarrhea), neurotoxicity is delayed as lithium distributes into the CNS, and a relatively high serum level can be tolerated. Chronic toxicity (on maintenance, precipitated by dehydration, renal impairment, or an interacting drug — thiazide, ACE-I/ARB, NSAID): neurotoxic at a much lower level, and the level correlates poorly with severity. Acute-on-chronic is the worst of both.",
+        "Management: stop lithium and the interacting drugs; restore volume with isotonic saline (corrects the prerenal component and enhances renal clearance — lithium is handled like sodium in the proximal tubule). There is no antidote and no useful GI binder (activated charcoal does not bind lithium; consider whole-bowel irrigation for a large sustained-release ingestion). Sodium polystyrene sulfonate lowers levels but causes hypokalemia and is not standard.",
+        "Hemodialysis is the definitive therapy for severe poisoning — EXTRIP recommends it for a level > 4.0 mEq/L, or > 2.5 with a decreased level of consciousness, seizures, or life-threatening dysrhythmia, or when renal function or hemodynamics preclude clearance. Anticipate rebound as lithium redistributes out of cells: recheck the level 6-12 h after dialysis and be prepared to repeat.",
+        "SILENT (Syndrome of Irreversible Lithium-Effectuated NeuroToxicity): persistent cerebellar dysfunction and other neurologic deficits lasting > 2 months after lithium is cleared — the reason not to sit on a chronically toxic, encephalopathic patient waiting for the level to drift down."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Antipsychotics and neuroleptic malignant syndrome"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Overdose (typical and atypical): sedation, miosis or mydriasis, tachycardia, orthostatic hypotension (alpha blockade), anticholinergic features, QT prolongation (worst with thioridazine, ziprasidone, IV haloperidol, high-dose quetiapine), lowered seizure threshold, and dystonic reactions. Quetiapine overdose is notable for profound sedation and tachycardia; a large ingestion can need airway support. Management is supportive — benzodiazepines for agitation/seizures, IV fluids and a vasopressor for hypotension, magnesium and QT surveillance, and an anticholinergic (benztropine, diphenhydramine) for acute dystonia.",
+        "Neuroleptic malignant syndrome (NMS): an idiosyncratic reaction to dopamine-antagonist exposure (or dopaminergic withdrawal), not a dose-dependent overdose. Tetrad: 'lead-pipe' rigidity, hyperthermia, autonomic instability, and altered mental status, with a markedly elevated CK, leukocytosis, and evolution over 1-3 days. Reflexes are normal or decreased; bradykinesia, not clonus.",
+        "Treatment: stop the offending agent (or restart dopaminergic therapy if NMS followed withdrawal), aggressive cooling, IV fluids and CK/renal monitoring for rhabdomyolysis, benzodiazepines. For moderate-severe disease: dantrolene (skeletal-muscle uncoupling) and/or bromocriptine or amantadine (dopaminergic). Supportive ICU care; benzodiazepines and supportive care alone suffice for milder cases."
+      ]
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Feature",
+        "Neuroleptic malignant syndrome",
+        "Serotonin syndrome"
+      ],
+      "rows": [
+        [
+          "Trigger",
+          "Dopamine antagonist (or dopaminergic withdrawal)",
+          "Serotonergic agent(s), often a recent dose increase or a new interacting drug"
+        ],
+        [
+          "Onset",
+          "Days (1-3), sometimes up to 1-2 weeks",
+          "Hours (< 24 h, often < 6)"
+        ],
+        [
+          "Neuromuscular",
+          "Generalized 'lead-pipe' rigidity, bradykinesia, hyporeflexia",
+          "Clonus (inducible, spontaneous, ocular), hyperreflexia, tremor — lower-limb predominant"
+        ],
+        [
+          "Mental status",
+          "Stupor, mutism, coma",
+          "Agitation, hypervigilance, delirium"
+        ],
+        [
+          "Resolution",
+          "Slow (days to > 1 week) after the drug is stopped",
+          "Usually 24-72 h with drug cessation and supportive care"
+        ],
+        [
+          "Specific therapy",
+          "Dantrolene ± bromocriptine / amantadine",
+          "Cyproheptadine; benzodiazepines"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "SSRIs, SNRIs, and serotonin syndrome"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Isolated SSRI/SNRI overdose has low lethality — expected findings are mild sedation, tremor, nausea, tachycardia, and (uncommonly) seizures. The exceptions: citalopram and escitalopram cause dose-dependent QT prolongation with a real torsades risk in large ingestions (get an ECG and monitor); venlafaxine (SNRI) is the most seizure-prone and has caused takotsubo and cardiotoxicity in massive overdose.",
+        "Serotonin syndrome is a clinical diagnosis (Hunter Criteria): a serotonergic agent plus spontaneous clonus, or inducible/ocular clonus with agitation or diaphoresis, or tremor with hyperreflexia, or hypertonia with temperature > 38 °C and clonus. It is usually a drug-drug interaction (SSRI + MAOI, + tramadol, + linezolid, + triptan, + dextromethorphan, + St John's wort) rather than an isolated SSRI overdose.",
+        "Treatment: stop all serotonergic drugs, benzodiazepines for agitation and to blunt hyperthermia, aggressive external cooling for temperature > 38.5-40 °C (intubate and paralyze with a non-depolarizing agent for severe hyperthermia — do not use antipyretics), and cyproheptadine (12 mg PO/NG initial, then 2 mg q2h, up to ~32 mg/24 h) for cases not settling with benzodiazepines. Most resolve within 24-72 h."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bupropion"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The antidepressant that still causes serious overdose morbidity. Dose-dependent seizures — often a single generalized seizure but sometimes recurrent — and sinus tachycardia, agitation, tremor, and hallucinations.",
+        "Timing is the trap: with immediate-release, seizures usually occur within ~8 h; with the sustained- and extended-release (SR / XL) formulations, seizure onset can be delayed up to 24 h, well after an initially reassuring presentation. Observe a significant XL ingestion on a monitor for a full 24 h.",
+        "QRS widening occurs in large overdoses but is mediated by cardiac gap-junction (connexin) uncoupling, not fast sodium-channel blockade — so sodium bicarbonate is largely ineffective, unlike in TCA overdose. Management is supportive: benzodiazepines for seizures (load with a benzodiazepine after the first seizure given the recurrence risk), IV fluids, cardiac monitoring. Activated charcoal if early with a protected airway; IV lipid emulsion has been used as rescue in cardiovascular collapse."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Two timing traps in this group: a chronically lithium-toxic patient can be encephalopathic at a level that looks unremarkable — treat the patient and the trajectory, not the number, and get nephrology involved early. And a bupropion XL overdose can seize many hours after a calm arrival — the monitored observation window is 24 hours, not the usual 6."
+    }
+  ],
+  "related": [
+    "toxidromes-and-overdoses",
+    "tox-cardiac-meds",
+    "hunter-serotonin",
+    "status-epilepticus-adult",
+    "tox-stimulants"
+  ],
+  "buildNote": "Tier 2 (EXTRIP lithium criteria and NMS/serotonin-syndrome management are stable; recheck citalopram QT thresholds and bupropion observation guidance periodically). Fills the psych-drug gap the CV Intoxicating Substances Reference flagged. The Hunter Criteria also drive the `hunter-serotonin` calculator (cross-linked). TCA overdose stays in `toxidromes-and-overdoses` (its sodium-channel section) — pointer only here."
+}

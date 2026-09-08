@@ -135,18 +135,44 @@ struct BlockList: View {
                 .background(calloutColor(b.tone).opacity(0.15), in: RoundedRectangle(cornerRadius: 10))
                 .overlay(alignment: .leading) { Rectangle().fill(calloutColor(b.tone)).frame(width: 4) }
         case "table":
-            ScrollView(.horizontal, showsIndicators: false) {
-                Grid(alignment: .leading, horizontalSpacing: 12, verticalSpacing: 6) {
-                    if let cols = b.columns {
-                        GridRow { ForEach(cols, id: \.self) { Text($0).bold() } }
-                    }
-                    ForEach(Array((b.rows ?? []).enumerated()), id: \.offset) { _, row in
-                        GridRow { ForEach(row, id: \.self) { Text($0) } }
-                    }
-                }
-            }
+            tableView(columns: b.columns ?? [], rows: b.rows ?? [])
         default:
             EmptyView()
+        }
+    }
+
+    /// Wrapping, fixed-column-width table inside a horizontal scroll. Cells wrap
+    /// rather than stretch to one line; column width scales down with column
+    /// count so 5-6 column tables stay legible on a phone.
+    @ViewBuilder private func tableView(columns: [String], rows: [[String]]) -> some View {
+        let colCount = max(columns.count, rows.map(\.count).max() ?? 1)
+        let colWidth: CGFloat = max(116, min(210, 640 / CGFloat(max(colCount, 1))))
+
+        ScrollView(.horizontal, showsIndicators: true) {
+            VStack(alignment: .leading, spacing: 0) {
+                if !columns.isEmpty {
+                    HStack(alignment: .top, spacing: 12) {
+                        ForEach(Array(columns.enumerated()), id: \.offset) { _, c in
+                            Text(c).font(.subheadline.bold())
+                                .frame(width: colWidth, alignment: .topLeading)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                    }
+                    .padding(.vertical, 6)
+                    Divider()
+                }
+                ForEach(Array(rows.enumerated()), id: \.offset) { idx, row in
+                    HStack(alignment: .top, spacing: 12) {
+                        ForEach(Array(row.enumerated()), id: \.offset) { _, cell in
+                            Text(cell).font(.callout)
+                                .frame(width: colWidth, alignment: .topLeading)
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
+                    }
+                    .padding(.vertical, 6)
+                    if idx < rows.count - 1 { Divider().opacity(0.4) }
+                }
+            }
         }
     }
 

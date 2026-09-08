@@ -1500,6 +1500,39 @@
       ]
     },
     {
+      "id": "new-orleans-criteria",
+      "title": "New Orleans Criteria (CT Head)",
+      "section": "Calculators",
+      "category": "Neuro / Stroke / Head Injury",
+      "tags": [
+        "head injury",
+        "CT head",
+        "clinical decision rule",
+        "ED",
+        "rule-out"
+      ],
+      "keywords": [
+        "headache",
+        "vomiting",
+        "age over 60",
+        "drug or alcohol intoxication",
+        "persistent anterograde amnesia short-term memory deficit",
+        "visible trauma above the clavicle",
+        "seizure",
+        "GCS 15 minor head injury",
+        "NOC",
+        "New Orleans Criteria",
+        "minor head injury CT",
+        "head CT decision rule"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/neuro-stroke-head-injury/new-orleans-criteria",
+      "settingEmphasis": [
+        "ed",
+        "prehospital"
+      ]
+    },
+    {
       "id": "nihss",
       "title": "NIH Stroke Scale (NIHSS)",
       "section": "Calculators",
@@ -2106,6 +2139,37 @@
       ]
     },
     {
+      "id": "digoxin-immune-fab-dosing",
+      "title": "Digoxin Immune Fab (DigiFab) — Vial Dosing",
+      "section": "Calculators",
+      "category": "Toxicology / Withdrawal",
+      "tags": [
+        "digoxin",
+        "toxicology",
+        "antidote",
+        "digoxin immune Fab",
+        "cardiac glycoside",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "vials = serum digoxin ng/mL times weight kg divided by 100",
+        "vials = mg ingested times 0.8 divided by 0.5",
+        "empiric acute 10 to 20 vials chronic 3 to 6 vials",
+        "each 40 mg vial binds 0.5 mg digoxin",
+        "digibind dose",
+        "digoxin antibody vials",
+        "DigiFab calculator",
+        "cardiac glycoside antidote dose"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/toxicology-withdrawal/digoxin-immune-fab-dosing",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "hunter-serotonin",
       "title": "Hunter Serotonin Toxicity Criteria",
       "section": "Calculators",
@@ -2136,6 +2200,40 @@
       "contentType": "calculator",
       "route": "/calculators/toxicology-withdrawal/hunter-serotonin",
       "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "nerve-agent-antidote-dosing",
+      "title": "Nerve Agent / Organophosphate — Antidote Dosing",
+      "section": "Calculators",
+      "category": "Toxicology / Withdrawal",
+      "tags": [
+        "nerve agent",
+        "organophosphate",
+        "atropine",
+        "pralidoxime",
+        "midazolam",
+        "CBRN",
+        "toxicology",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "atropine 0.05 mg/kg initial double to secretions",
+        "pralidoxime 30 mg/kg load max 2 g infusion 8 mg/kg/h",
+        "midazolam 0.2 mg/kg IM seizure",
+        "titrate to drying of secretions not pupils",
+        "atropine dose organophosphate",
+        "pralidoxime 2-PAM dose",
+        "nerve agent antidote calculator",
+        "cholinergic crisis dosing"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/toxicology-withdrawal/nerve-agent-antidote-dosing",
+      "settingEmphasis": [
+        "prehospital",
         "ed",
         "icu"
       ]
@@ -2294,6 +2392,39 @@
       "settingEmphasis": [
         "ed",
         "icu"
+      ]
+    },
+    {
+      "id": "mangled-extremity-severity-score",
+      "title": "Mangled Extremity Severity Score (MESS)",
+      "section": "Calculators",
+      "category": "Trauma",
+      "tags": [
+        "trauma",
+        "extremity",
+        "vascular injury",
+        "amputation",
+        "limb salvage",
+        "ED",
+        "OR"
+      ],
+      "keywords": [
+        "skeletal soft tissue injury energy",
+        "limb ischemia duration 6 hours doubled",
+        "shock normotensive persistent hypotension",
+        "age under 30 30 to 50 over 50",
+        "score 7 or higher amputation",
+        "ballistic blast crush",
+        "MESS",
+        "mangled extremity score",
+        "limb salvage vs amputation score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/trauma/mangled-extremity-severity-score",
+      "settingEmphasis": [
+        "ed",
+        "or",
+        "prehospital"
       ]
     },
     {
@@ -4788,6 +4919,42 @@
       ]
     },
     {
+      "id": "peds-pre-arrival-card",
+      "title": "Peds Pre-Arrival Card — One Weight, Every Number",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "PALS",
+        "pediatric resuscitation",
+        "pre-arrival",
+        "weight-based dosing",
+        "defibrillation",
+        "cardioversion",
+        "epinephrine",
+        "fluid bolus",
+        "prehospital",
+        "ED"
+      ],
+      "keywords": [
+        "enter weight once get epinephrine adenosine amiodarone atropine calcium dextrose",
+        "defibrillation 2 J/kg cardioversion 1 J/kg fluid bolus 20 mL/kg",
+        "age to weight estimate APLS",
+        "ETT size age over 4 plus 4",
+        "pre-arrival",
+        "peds resus card",
+        "kids coming in",
+        "weight-based resus doses",
+        "peds crash card",
+        "pediatric pre-hospital notification"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-pre-arrival-card",
+      "settingEmphasis": [
+        "prehospital",
+        "ed"
+      ]
+    },
+    {
       "id": "pedi-tape-weight-zones",
       "title": "Weight Zones & Equipment Sizing",
       "section": "Peds Module",
@@ -5680,6 +5847,47 @@
       ]
     },
     {
+      "id": "tox-cardiac-meds",
+      "title": "Cardiovascular Drug Toxicity — Digoxin, Beta-Blocker, CCB, Clonidine",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "toxicology",
+        "cardiovascular drugs",
+        "digoxin",
+        "beta-blocker",
+        "calcium-channel blocker",
+        "clonidine",
+        "bradycardia",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "digoxin Fab indications potassium 5 dysrhythmia acute 10 mg chronic level",
+        "yellow-green vision bidirectional VT regularized AF digoxin",
+        "avoid calcium in digoxin stone heart controversy",
+        "beta-blocker glucagon propranolol sodium channel QRS lipophilic CNS",
+        "calcium channel blocker verapamil diltiazem preserved sensorium hyperglycemia",
+        "high-dose insulin euglycemia therapy 1 unit/kg bolus then infusion titrate",
+        "lipid emulsion 20 percent 1.5 mL/kg bolus lipophilic drug",
+        "clonidine imidazoline miosis bradycardia apnea opioid-like naloxone variable",
+        "refractory shock vasopressors pacing ECMO calcium glucagon atropine",
+        "digoxin toxicity DigiFab",
+        "cardiac glycoside poisoning",
+        "beta-blocker overdose glucagon",
+        "calcium channel blocker overdose HIET",
+        "high-dose insulin euglycemia",
+        "clonidine overdose central alpha-2",
+        "lipid emulsion cardiotoxicity"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/tox-cardiac-meds",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "contrast-associated-aki",
       "title": "Contrast-Associated AKI — Prevention",
       "section": "Reference Library",
@@ -5928,6 +6136,46 @@
       ]
     },
     {
+      "id": "methemoglobinemia",
+      "title": "Methemoglobinemia — Recognition & Methylene Blue",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "toxicology",
+        "methemoglobinemia",
+        "methylene blue",
+        "hypoxia",
+        "co-oximetry",
+        "G6PD",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "ferrous ferric iron oxidation cannot bind oxygen left-shift functional anemia",
+        "dapsone benzocaine topical anesthetic nitrites nitrates aniline rasburicase primaquine well water",
+        "pulse oximetry reads toward 85 percent saturation gap co-oximetry chocolate brown",
+        "methylene blue 1 to 2 mg/kg IV over 5 minutes repeat 1 hour max 7 mg/kg",
+        "G6PD deficiency methylene blue ineffective hemolysis ascorbic acid alternative",
+        "methylene blue MAOI serotonin syndrome contraindication",
+        "dapsone long half-life recurrent methemoglobinemia multidose charcoal MB infusion",
+        "exchange transfusion hyperbaric oxygen refractory severe",
+        "methemoglobin",
+        "methylene blue antidote",
+        "saturation gap",
+        "chocolate brown blood",
+        "dapsone methemoglobinemia",
+        "benzocaine methemoglobinemia",
+        "co-oximetry",
+        "cyanosis unresponsive to oxygen"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/methemoglobinemia",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "tox-opioids",
       "title": "Opioid Toxicity — Heroin, Fentanyl, Methadone, Buprenorphine",
       "section": "Reference Library",
@@ -6009,6 +6257,48 @@
       "contentType": "reference",
       "route": "/reference-library/critical-care/padis-bundle",
       "settingEmphasis": [
+        "icu"
+      ]
+    },
+    {
+      "id": "tox-psych-meds",
+      "title": "Psychiatric Drug Toxicity — Lithium, Antipsychotics/NMS, SSRIs, Bupropion",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "toxicology",
+        "psychiatric drugs",
+        "lithium",
+        "antipsychotics",
+        "NMS",
+        "serotonin syndrome",
+        "bupropion",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "lithium narrow therapeutic index tremor ataxia clonus encephalopathy",
+        "acute lithium GI predominant chronic lithium neurotoxic lower level worse",
+        "lithium hemodialysis level 4 or 2.5 with severe symptoms or renal failure rebound",
+        "SILENT syndrome persistent cerebellar lithium",
+        "neuroleptic malignant syndrome lead-pipe rigidity hyporeflexia bradykinesia days CK",
+        "NMS vs serotonin syndrome onset reflexes clonus timeline",
+        "dantrolene bromocriptine NMS benzodiazepines cooling",
+        "SSRI SNRI low lethality citalopram escitalopram QT seizure",
+        "bupropion dose-dependent seizure delayed wide QRS gap junction not sodium channel XL",
+        "cyproheptadine serotonin syndrome",
+        "lithium toxicity dialysis",
+        "acute vs chronic lithium",
+        "neuroleptic malignant syndrome",
+        "NMS vs serotonin syndrome",
+        "SSRI SNRI overdose serotonin syndrome",
+        "bupropion seizure wide QRS",
+        "SILENT lithium neurotoxicity"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/tox-psych-meds",
+      "settingEmphasis": [
+        "ed",
         "icu"
       ]
     },
@@ -7708,6 +7998,51 @@
       ]
     },
     {
+      "id": "acute-radiation-syndrome",
+      "title": "Acute Radiation Syndrome & Radiological Casualties",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "radiation",
+        "ARS",
+        "CBRN",
+        "decontamination",
+        "decorporation",
+        "bone marrow suppression",
+        "disaster medicine",
+        "prehospital",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "whole-body dose Gray Sievert ARS threshold 0.7 Gy symptomatic over 1 Gy",
+        "time to vomiting predicts dose under 1 hour severe over 4 hours mild",
+        "absolute lymphocyte count 24 to 48 hours Andrews curve depletion kinetics",
+        "hematopoietic 1 to 6 Gy pancytopenia nadir day 20 to 30 G-CSF filgrastim",
+        "gastrointestinal 6 to 10 Gy mucosal denudation diarrhea sepsis high mortality",
+        "neurovascular over 10 Gy refractory hypotension cerebral edema fatal",
+        "external contamination remove clothing 90 percent life-threatening injury before decon",
+        "potassium iodide radioiodine Prussian blue cesium thallium Ca-DTPA Zn-DTPA plutonium americium",
+        "combined injury radiation trauma surgery within 48 hours or delay to day 45",
+        "REMM REAC/TS dicentric assay cytogenetic biodosimetry",
+        "ARS",
+        "radiation sickness",
+        "radiological dispersal device dirty bomb",
+        "internal contamination decorporation",
+        "Prussian blue DTPA potassium iodide",
+        "time to emesis biodosimetry",
+        "hematopoietic GI neurovascular subsyndrome",
+        "cutaneous radiation injury"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/acute-radiation-syndrome",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
+      ]
+    },
+    {
       "id": "acls-adult-cardiac-arrest",
       "title": "Adult Cardiac Arrest — Algorithm Card (2025)",
       "section": "Reference Library",
@@ -8281,6 +8616,50 @@
         "ed",
         "icu",
         "prehospital"
+      ]
+    },
+    {
+      "id": "nerve-agent-toxicity",
+      "title": "Nerve Agents & Organophosphates — Cholinergic Crisis",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "nerve agent",
+        "organophosphate",
+        "cholinergic",
+        "atropine",
+        "pralidoxime",
+        "CBRN",
+        "toxicology",
+        "prehospital",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "acetylcholinesterase inhibition muscarinic nicotinic CNS cholinergic crisis",
+        "SLUDGE DUMBELS salivation lacrimation bronchorrhea bronchospasm miosis bradycardia",
+        "nicotinic fasciculations weakness paralysis tachycardia hypertension",
+        "atropine 2 mg double every 3 to 5 minutes endpoint drying secretions ventilation not pupils",
+        "pralidoxime 2-PAM 1 to 2 g load then infusion before aging soman ages 2 to 6 minutes",
+        "benzodiazepine midazolam seizure prophylaxis IM autoinjector",
+        "decontamination remove clothing RSDL soap water avoid bleach skin",
+        "DuoDote ATNAA MARK I autoinjector pediatric atropine dosing",
+        "intermediate syndrome OPIDN carbamate reversible",
+        "organophosphate poisoning",
+        "nerve agent sarin VX",
+        "cholinergic toxidrome",
+        "atropine pralidoxime 2-PAM",
+        "SLUDGE DUMBELS",
+        "DuoDote ATNAA autoinjector",
+        "acetylcholinesterase aging",
+        "carbamate poisoning"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/nerve-agent-toxicity",
+      "settingEmphasis": [
+        "prehospital",
+        "ed",
+        "icu"
       ]
     },
     {
@@ -9023,6 +9402,48 @@
       "settingEmphasis": [
         "icu",
         "or"
+      ]
+    },
+    {
+      "id": "vesicant-toxicity",
+      "title": "Vesicants — Sulfur Mustard, Lewisite, Phosgene Oxime",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "vesicant",
+        "sulfur mustard",
+        "lewisite",
+        "phosgene oxime",
+        "chemical weapon",
+        "CBRN",
+        "burns",
+        "prehospital",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "sulfur mustard alkylating delayed onset hours no antidote decon within 2 minutes RSDL",
+        "mustard ocular most sensitive keratitis blindness respiratory pseudomembrane airway sloughing",
+        "mustard bone marrow suppression leukopenia nadir day 7 to 10 sepsis filgrastim",
+        "mustard burn fluid resuscitation less than thermal do not over-resuscitate",
+        "lewisite immediate pain arsenical systemic arsenic capillary leak lewisite shock",
+        "lewisite antidote dimercaprol BAL IM DMSA DMPS",
+        "phosgene oxime immediate intense pain urticant wheal necrosis no antidote",
+        "no eye patching topical antibiotic mydriatic vaseline lids",
+        "blister agent",
+        "sulfur mustard HD",
+        "nitrogen mustard",
+        "lewisite BAL dimercaprol",
+        "phosgene oxime CX",
+        "mustard bone marrow suppression",
+        "chemical burn vesicant"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/vesicant-toxicity",
+      "settingEmphasis": [
+        "prehospital",
+        "ed",
+        "icu"
       ]
     },
     {

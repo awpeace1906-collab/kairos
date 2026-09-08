@@ -1,0 +1,125 @@
+{
+  "id": "vesicant-toxicity",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Vesicants — Sulfur Mustard, Lewisite, Phosgene Oxime",
+  "settingEmphasis": [
+    "prehospital",
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "blister agent",
+    "sulfur mustard HD",
+    "nitrogen mustard",
+    "lewisite BAL dimercaprol",
+    "phosgene oxime CX",
+    "mustard bone marrow suppression",
+    "chemical burn vesicant"
+  ],
+  "tags": [
+    "vesicant",
+    "sulfur mustard",
+    "lewisite",
+    "phosgene oxime",
+    "chemical weapon",
+    "CBRN",
+    "burns",
+    "prehospital",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "sulfur mustard alkylating delayed onset hours no antidote decon within 2 minutes RSDL",
+    "mustard ocular most sensitive keratitis blindness respiratory pseudomembrane airway sloughing",
+    "mustard bone marrow suppression leukopenia nadir day 7 to 10 sepsis filgrastim",
+    "mustard burn fluid resuscitation less than thermal do not over-resuscitate",
+    "lewisite immediate pain arsenical systemic arsenic capillary leak lewisite shock",
+    "lewisite antidote dimercaprol BAL IM DMSA DMPS",
+    "phosgene oxime immediate intense pain urticant wheal necrosis no antidote",
+    "no eye patching topical antibiotic mydriatic vaseline lids"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Goldfrank's Toxicologic Emergencies, 11th ed. — Vesicants",
+    "CHEMM / ATSDR Medical Management Guidelines — Sulfur Mustard (Agent H/HD/HT); Lewisite (L); Phosgene Oxime (CX)",
+    "Kehe K, Szinicz L. Medical aspects of sulphur mustard poisoning. Toxicology. 2005;214(3):198-209",
+    "Graham JS, Schoneboom BA. Historical perspective on effects and treatment of sulfur mustard injuries. Chem Biol Interact. 2013;206(3):512-522",
+    "USAMRICD Medical Management of Chemical Casualties Handbook — vesicant decontamination, ocular and pulmonary care, marrow support"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — sulfur/nitrogen mustard (delayed alkylating injury, marrow suppression), lewisite (immediate pain, systemic arsenic, dimercaprol), and phosgene oxime (immediate urticant necrosis). Expands the vesicant line in `incendiary-chemical-burns` and the preview in `hazmat-scene-toxidromes`."
+    }
+  ],
+  "summary": "Blister agents that injure skin, eyes, and airway. Sulfur mustard is a delayed alkylating injury with no antidote — decontamination within the first 2 minutes is the only thing that changes outcome, and the late killer is bone-marrow suppression. Lewisite hurts immediately, causes systemic arsenic toxicity, and has an antidote (dimercaprol). Phosgene oxime causes immediate, intense pain and rapid tissue necrosis.",
+  "whyThisMatters": "With mustard, the injury is set in the first minutes but does not show for hours, so a casualty who feels well is triaged low and decontaminated late — after the alkylation is already done. The management errors that follow are treating it like a thermal burn (over-resuscitating with fluid), patching the eyes (promotes adhesions), and missing the marrow nadir a week later when neutropenic sepsis is what actually kills. Lewisite is the opposite trap — immediate pain that is easy to recognize but easy to under-treat systemically.",
+  "clinicalTakeaway": "Decontamination is the treatment for all three — remove clothing and use RSDL or soap and water; for mustard it must be within ~2 minutes to limit injury, but decontaminate regardless of delay to protect staff. Sulfur mustard: no antidote — supportive burn care with LESS fluid than a thermal burn of the same size, meticulous wound and ocular care (irrigate, topical antibiotic and mydriatic, petrolatum to lid margins, do NOT patch), airway management for laryngeal/tracheobronchial injury, and CBC monitoring with G-CSF and reverse isolation for the day 7-14 leukopenic nadir. Lewisite: same decon plus dimercaprol (BAL) IM for systemic toxicity or large exposure, and treat the capillary-leak \"lewisite shock\" with fluids. Phosgene oxime: decon, aggressive analgesia, and supportive wound/airway care — no antidote.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sulfur and nitrogen mustard (HD / H / HT; HN)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Mechanism: a bifunctional alkylating agent — cross-links DNA, depletes glutathione, and triggers inflammation and apoptosis in rapidly dividing cells (basal epidermis, corneal epithelium, airway mucosa, bone marrow, GI crypts).",
+        "Onset is DELAYED: asymptomatic latent period of 2-24 h (shorter with higher dose, heat, humidity, and in moist body areas — axilla, groin, perineum). A garlic/mustard/horseradish odor may be noted at exposure.",
+        "Skin: erythema then large, dome-shaped bullae with a rim of erythema; the blister fluid is not itself vesicant. Deep partial-thickness pattern; heals slowly with dyspigmentation.",
+        "Eyes (most sensitive organ): lacrimation, blepharospasm, photophobia, conjunctivitis, corneal erosion and edema; severe exposure causes delayed corneal scarring/neovascularization and permanent visual loss.",
+        "Airway: hoarseness, cough, and a fibrinous pseudomembrane with mucosal sloughing that can obstruct proximal airways; lower-airway injury → bronchitis, ARDS, secondary bacterial pneumonia (the usual pulmonary cause of death).",
+        "Systemic: bone-marrow suppression — leukopenia beginning ~day 3, nadir ~day 7-14, with thrombocytopenia and anemia; neutropenic sepsis is the classic late killer. Also nausea/vomiting, and at high dose GI mucosal injury.",
+        "Management (no antidote): decontaminate immediately (RSDL or soap and water; the 2-minute window limits injury but decon still protects staff at any time). Burn-type care but resuscitate with LESS fluid than an equivalent thermal burn — mustard burns are less fluid-avid and over-resuscitation causes harm; titrate to urine output. Wound care as for partial-thickness burns, watch for infection. Eyes: copious irrigation, topical antibiotic, topical mydriatic/cycloplegic for comfort and to prevent synechiae, petrolatum to lid margins to prevent adhesions, and do NOT patch. Airway: humidified oxygen, bronchodilators, early intubation for laryngeal edema or pseudomembrane; bronchoscopy to clear casts. Marrow: serial CBC, G-CSF (filgrastim) for significant neutropenia, reverse isolation, transfusion support; consider stem-cell support for near-lethal exposures. Analgesia is often substantial."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Lewisite (L) and mustard-lewisite mixture (HL)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "An organoarsenical vesicant. Unlike mustard, it causes IMMEDIATE pain and irritation on contact (seconds to minutes) — useful for recognition and early self-decon.",
+        "Skin and eye injury resemble mustard but develop faster; grey blanched skin at contact points progresses to bullae and deeper necrosis.",
+        "Systemic arsenic toxicity from absorption: increased capillary permeability with third-spacing and hypotension (\"lewisite shock\"), hepatic and renal injury, and hemolysis; pulmonary edema from inhalation.",
+        "Antidote: dimercaprol (British Anti-Lewisite, BAL) IM chelates the arsenic — indicated for systemic effects, large cutaneous exposure, or significant inhalation; dimercaprol skin/eye ointments exist but are largely unavailable. Oral succimer (DMSA) or DMPS are alternatives/adjuncts for arsenic burden. Treat lewisite shock with aggressive isotonic fluids and pressors as needed.",
+        "Decontamination and supportive wound/ocular/airway care otherwise parallel mustard (but there is no significant delayed marrow suppression)."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Phosgene oxime (CX)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "An urticant / corrosive agent (not a true blister agent — it does not form fluid-filled vesicles). Causes IMMEDIATE, severe pain on contact.",
+        "Skin: blanching with an erythematous ring within seconds, a wheal within ~30 minutes (urticaria-like), then a brown-black eschar and necrosis over days; injury can be full-thickness and slow to heal.",
+        "Eyes and airway are highly sensitive — intense irritation, lacrimation, and pulmonary edema with inhalation.",
+        "No antidote. Immediate decontamination (it penetrates fast, so decon has a very short useful window), aggressive analgesia, and supportive wound care, ocular irrigation, and airway/pulmonary support as for the other agents."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Timing tells the agent apart at the bedside: mustard is painless for hours then blisters; lewisite and phosgene oxime hurt immediately on contact. All three: decontaminate now, do not patch chemically injured eyes, and for mustard specifically, resist the reflex to give thermal-burn fluid volumes and remember the marrow nadir a week out."
+    }
+  ],
+  "related": [
+    "incendiary-chemical-burns",
+    "hazmat-scene-toxidromes",
+    "nerve-agent-toxicity",
+    "parkland-formula",
+    "toxidromes-and-overdoses"
+  ],
+  "buildNote": "Tier 2 (vesicant supportive-care doctrine is stable; marrow-support and stem-cell guidance for near-lethal mustard exposure evolves — recheck). Expands the vesicant row in `incendiary-chemical-burns` and the preview in `hazmat-scene-toxidromes`. Radiological/acute-radiation-syndrome remains a separate, dedicated build (dosimetry, ARS phases, cytokine/decorporation therapy) — not folded in here."
+}

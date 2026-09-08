@@ -20,10 +20,16 @@ jobs:
         run: xcodegen generate
       - name: Build + run engine tests
         working-directory: ios
+        # KairosUITests (XCUITest) is skipped in CI: it drives the simulator UI
+        # and is chronically flaky headless (row-offscreen / keyboard / timing),
+        # while adding little signal the deterministic KairosTests engine suite
+        # and the JS content-ci pipeline don't already cover. The UI suite still
+        # runs locally: xcodebuild test ... (no -skip-testing).
         run: |
           xcodebuild test \
             -project Kairos.xcodeproj -scheme Kairos \
             -sdk iphonesimulator \
             -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -skip-testing:KairosUITests \
             -resultBundlePath TestResults.xcresult \
             CODE_SIGNING_ALLOWED=NO

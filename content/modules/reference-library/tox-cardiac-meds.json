@@ -1,0 +1,145 @@
+{
+  "id": "tox-cardiac-meds",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Cardiovascular Drug Toxicity — Digoxin, Beta-Blocker, CCB, Clonidine",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "digoxin toxicity DigiFab",
+    "cardiac glycoside poisoning",
+    "beta-blocker overdose glucagon",
+    "calcium channel blocker overdose HIET",
+    "high-dose insulin euglycemia",
+    "clonidine overdose central alpha-2",
+    "lipid emulsion cardiotoxicity"
+  ],
+  "tags": [
+    "toxicology",
+    "cardiovascular drugs",
+    "digoxin",
+    "beta-blocker",
+    "calcium-channel blocker",
+    "clonidine",
+    "bradycardia",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "digoxin Fab indications potassium 5 dysrhythmia acute 10 mg chronic level",
+    "yellow-green vision bidirectional VT regularized AF digoxin",
+    "avoid calcium in digoxin stone heart controversy",
+    "beta-blocker glucagon propranolol sodium channel QRS lipophilic CNS",
+    "calcium channel blocker verapamil diltiazem preserved sensorium hyperglycemia",
+    "high-dose insulin euglycemia therapy 1 unit/kg bolus then infusion titrate",
+    "lipid emulsion 20 percent 1.5 mL/kg bolus lipophilic drug",
+    "clonidine imidazoline miosis bradycardia apnea opioid-like naloxone variable",
+    "refractory shock vasopressors pacing ECMO calcium glucagon atropine"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Goldfrank's Toxicologic Emergencies, 11th ed. — Cardioactive Steroids; β-Adrenergic Antagonists; Calcium Channel Blockers; Clonidine and Related Imidazolines",
+    "Lavonas EJ, et al. 2023 AHA Focused Update on Management of Cardiac Arrest / Life-Threatening Toxicity Due to Poisoning. Circulation. 2023;148(16):e149-e184",
+    "St-Onge M, et al. Experts Consensus Recommendations for the Management of Calcium Channel Blocker Poisoning in Adults. Crit Care Med. 2017;45(3):e306-e315",
+    "Chan BS, et al. Clinical outcomes from early use of digoxin-specific antibodies versus observation in chronic digoxin poisoning (ATOM-1). Clin Toxicol. 2016",
+    "American College of Medical Toxicology position statement on the use of intravenous lipid emulsion (ILE)",
+    "EXTRIP workgroup — digoxin (dialysis not recommended; Fab is definitive)"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — digoxin / cardiac glycoside, beta-blocker, calcium-channel-blocker, and clonidine / central alpha-2 agonist poisoning, with the antidote decisions (digoxin-Fab, glucagon, high-dose insulin euglycemia, lipid emulsion) and the refractory-shock ladder. Complements the quick recognition table in `toxidromes-and-overdoses`."
+    }
+  ],
+  "summary": "Four ways a cardiac drug kills, and the antidote decision for each: digoxin (immune Fab, gated by potassium and dysrhythmia), beta-blocker (glucagon, then high-dose insulin), calcium-channel blocker (high-dose insulin euglycemia is the workhorse; preserved sensorium and hyperglycemia are the tells), and clonidine (largely supportive, opioid-like picture). Lipid emulsion and mechanical support are the shared rescue tier.",
+  "whyThisMatters": "These overdoses present as undifferentiated bradycardia and shock, and the treatments diverge sharply — calcium is antidotal in CCB poisoning but relatively contraindicated in digoxin toxicity; glucagon helps beta-blocker but not CCB much; and the single highest-yield intervention for severe CCB or beta-blocker shock, high-dose insulin euglycemia, is still underused and started too late. Naming which drug you are treating, and reaching for the right antidote early, is the difference between a titratable ICU course and refractory arrest.",
+  "clinicalTakeaway": "For any toxicologic bradycardia + hypotension: atropine, fluids, and calcium as first moves while you identify the agent. Digoxin — give digoxin-specific antibody (Fab) for a potassium > 5 mEq/L, a life-threatening dysrhythmia, or a known massive acute ingestion; avoid IV calcium if you can. Beta-blocker — glucagon bolus + infusion, then high-dose insulin euglycemia therapy (HIET) and vasopressors; consider lipid emulsion for a lipophilic agent (propranolol) with a wide QRS. Calcium-channel blocker — calcium salts plus HIET early (1 unit/kg regular insulin bolus, then 0.5-1 unit/kg/h titrated up, with dextrose and close glucose/potassium monitoring); vasopressors, then transvenous pacing or ECMO for refractory shock. Clonidine — supportive care, atropine for bradycardia, vasopressors for hypotension; a naloxone trial is reasonable but response is inconsistent.",
+  "body": [
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "The rapid recognition table (toxidrome → vitals → key treatment) and the TCA / beta-blocker / CCB one-liners live in `toxidromes-and-overdoses`. This module is the deeper cut on the four cardiac-drug poisonings and their antidotes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Digoxin / cardiac glycosides"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Mechanism: Na/K-ATPase inhibition → raised intracellular sodium then calcium (inotropy, but also delayed afterdepolarizations and dysrhythmia) plus increased vagal tone. Also foxglove, oleander, lily-of-the-valley, toad venom (bufadienolides).",
+        "Acute: nausea/vomiting, hyperkalemia (the best acute severity marker — a K > 5.0-5.5 predicts mortality), bradydysrhythmias and heightened automaticity. Chronic (elderly, renal impairment, drug interactions, hypokalemia/hypomagnesemia): GI upset, visual changes (yellow-green halos, xanthopsia), confusion, and dysrhythmias at near-therapeutic levels.",
+        "Suggestive rhythms: any dysrhythmia with increased automaticity + impaired conduction — classically bidirectional VT, atrial tachycardia with block, regularized (junctional) rhythm in a patient with known AF, frequent PVCs.",
+        "Digoxin-specific antibody (Fab) — the definitive treatment. Indications: potassium > 5 mEq/L in acute toxicity; any life-threatening dysrhythmia or hemodynamic instability; known ingestion of a massive dose (roughly > 10 mg adult, > 4 mg child) or a steady-state level > 15 ng/mL (or > 10 with symptoms). Empiric dosing: 10-20 vials for acute unknown, 3-6 vials titrated for chronic toxicity. The measured digoxin level is uninterpretable after Fab is given.",
+        "Manage hyperkalemia with Fab; insulin/dextrose and bicarbonate are adjuncts. IV calcium in digoxin toxicity is traditionally avoided (the \"stone heart\" concern) — the evidence for real harm is weak, but with Fab available there is little reason to give it. Dialysis does not remove digoxin (large volume of distribution) — Fab is the answer.",
+        "Atropine and temporary pacing for symptomatic bradycardia as a bridge; lidocaine or phenytoin for ventricular dysrhythmias if Fab is delayed."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Beta-blocker overdose"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Mechanism: beta-adrenergic antagonism → bradycardia, decreased contractility, hypotension. Agent matters: propranolol adds sodium-channel blockade (wide QRS, seizures, TCA-like) and high lipophilicity (CNS depression); sotalol adds potassium-channel blockade (QT prolongation, torsades); pindolol/acebutolol have partial agonism and can present with tachycardia/hypertension.",
+        "Hypoglycemia is more typical of beta-blocker than CCB toxicity (blunted glycogenolysis); mental status is often depressed, especially with lipophilic agents.",
+        "Treatment ladder: IV fluids and atropine first. Glucagon 3-10 mg IV bolus (bypasses the beta-receptor to raise cAMP), repeat and run an infusion at the effective bolus dose per hour — pre-treat with an antiemetic, vomiting is near-universal. Add high-dose insulin euglycemia therapy (HIET) and a vasopressor (norepinephrine or epinephrine) for persistent shock.",
+        "Propranolol with a wide QRS: sodium bicarbonate boluses. Sotalol with QT prolongation / torsades: magnesium, overdrive pacing, correct potassium, avoid other QT agents.",
+        "IV lipid emulsion is a reasonable rescue for a lipophilic beta-blocker (propranolol) in refractory arrest or periarrest. Transvenous pacing, an intra-aortic balloon pump, or VA-ECMO for shock refractory to the above."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Calcium-channel blocker overdose"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Mechanism: L-type calcium-channel blockade. Non-dihydropyridines (verapamil, diltiazem) cause the classic bradycardia + hypotension + AV block. Dihydropyridines (amlodipine, nifedipine) cause vasodilatory distributive shock with a reflex tachycardia, though selectivity is lost in large overdoses.",
+        "The tells that point to CCB over beta-blocker: relatively preserved mental status despite profound shock, and hyperglycemia (calcium-channel blockade impairs pancreatic insulin release) — the degree of hyperglycemia tracks severity.",
+        "Calcium salts: calcium chloride 10-20 mL of 10% (or calcium gluconate 30-60 mL of 10%) IV, repeat; effect is often partial and transient but worth doing early. Monitor ionized calcium.",
+        "High-dose insulin euglycemia therapy (HIET) is the workhorse for significant CCB (and beta-blocker) shock — it is a positive inotrope in this setting and improves survival in the observational and animal literature. Regular insulin 1 unit/kg IV bolus, then 0.5-1 unit/kg/h, titrate up to 10 unit/kg/h as needed. Give dextrose (D50 bolus if glucose < 250, then a D10-D25 infusion) and monitor glucose q30 min initially then hourly, and potassium q1-2 h (expect it to fall — replace to keep K ~2.8-3.2). Effect takes 15-60 min, so start early and bridge with pressors.",
+        "Vasopressors (norepinephrine ± epinephrine, add vasopressin for vasoplegia), atropine and transvenous pacing for bradycardia, IV lipid emulsion as rescue for lipophilic agents (verapamil, amlodipine), and VA-ECMO for refractory cardiogenic shock — early cannulation planning improves outcomes.",
+        "Whole-bowel irrigation for a large ingestion of a sustained-release preparation with a protected airway; expect a delayed, prolonged course with SR products (peak effect 12-24 h)."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Clonidine and central alpha-2 agonists"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Agents: clonidine (including patches — a swallowed patch is a massive dose), guanfacine, tizanidine, dexmedetomidine, and the imidazoline decongestants (tetrahydrozoline, oxymetazoline, naphazoline — common pediatric \"one sip\" ingestions).",
+        "Picture: an opioid-like toxidrome — CNS depression, miosis, bradycardia, hypotension, and respiratory depression / apnea (especially in children) — sometimes with transient early hypertension from peripheral alpha stimulation before central sympatholysis dominates.",
+        "Management is largely supportive: airway support/observation, IV fluids and atropine for bradycardia, vasopressors for persistent hypotension. Most pediatric ingestions resolve with observation over 4-24 h.",
+        "A naloxone trial (higher doses, e.g. 2-10 mg) is reasonable given the opioid-like picture and occasional responders, but the response is inconsistent — do not rely on it or withhold supportive care waiting for it."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "The one antidote crossover to keep straight: calcium is antidotal in calcium-channel-blocker poisoning but is the agent traditionally avoided in digoxin toxicity. When the bradycardic, hypotensive patient's drug history is unknown, get a digoxin level and a potassium before committing to IV calcium, and start HIET early rather than late for suspected CCB or beta-blocker shock."
+    }
+  ],
+  "related": [
+    "toxidromes-and-overdoses",
+    "tox-psych-meds",
+    "pressor-inotrope-reference",
+    "hyperkalemia-management",
+    "antidotes-reversal-agents"
+  ],
+  "buildNote": "Tier 2 (antidote practice is stable; HIET dosing ranges and ECMO thresholds are refined periodically — recheck). Fills the CV-drug gap the CV Intoxicating Substances Reference flagged for lateral expansion. Deliberately overlaps `toxidromes-and-overdoses` only at the pointer level. A standalone HIET dosing/monitoring card and a digoxin-Fab dose calculator are natural follow-ons."
+}

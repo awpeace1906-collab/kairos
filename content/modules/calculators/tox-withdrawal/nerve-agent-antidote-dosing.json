@@ -1,0 +1,41 @@
+{
+  "id": "nerve-agent-antidote-dosing",
+  "section": "Calculators",
+  "category": "Toxicology / Withdrawal",
+  "title": "Nerve Agent / Organophosphate — Antidote Dosing",
+  "settingEmphasis": ["prehospital", "ed", "icu"],
+  "aliases": ["atropine dose organophosphate", "pralidoxime 2-PAM dose", "nerve agent antidote calculator", "cholinergic crisis dosing"],
+  "tags": ["nerve agent", "organophosphate", "atropine", "pralidoxime", "midazolam", "CBRN", "toxicology", "ED", "ICU"],
+  "keywords": ["atropine 0.05 mg/kg initial double to secretions", "pralidoxime 30 mg/kg load max 2 g infusion 8 mg/kg/h", "midazolam 0.2 mg/kg IM seizure", "titrate to drying of secretions not pupils"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Goldfrank's Toxicologic Emergencies, 11th ed. — Insecticides; Chemical Weapons",
+    "CHEMM (Chemical Hazards Emergency Medical Management), US DHHS — Nerve Agents; chemm.hhs.gov",
+    "Eddleston M, et al. Management of acute organophosphorus pesticide poisoning. Lancet. 2008;371(9612):597-607",
+    "USAMRICD Medical Management of Chemical Casualties Handbook"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-07", "change": "Initial entry — weight-based starting doses for atropine, pralidoxime (load + infusion), and midazolam; companion to the nerve-agent-toxicity reference." }],
+  "engine": "formula",
+  "settings": ["ED", "ICU"],
+  "purpose": "Weight-based STARTING doses for a cholinergic crisis. Atropine is then re-dosed by DOUBLING every 3-5 minutes until secretions dry and ventilation is easy — the endpoint is the airway, not the pupils or heart rate. Adults in severe poisoning typically start at a flat 2-6 mg of atropine regardless of the per-kg figure.",
+  "inputs": [
+    { "key": "weight", "label": "Weight", "type": "number", "unit": "kg", "min": 3, "max": 150 }
+  ],
+  "formulas": [
+    { "key": "atropineInitial", "label": "Atropine — initial IV/IM dose (moderate-severe)", "expression": "max(min(0.05 * weight, 6), 0.1)", "unit": "mg", "precision": 2 },
+    { "key": "atropineDoubled", "label": "Atropine — next dose if secretions persist (double)", "expression": "max(min(0.1 * weight, 12), 0.2)", "unit": "mg", "precision": 2 },
+    { "key": "pralidoximeLoad", "label": "Pralidoxime (2-PAM) — loading dose IV over 15-30 min", "expression": "min(30 * weight, 2000)", "unit": "mg", "precision": 0 },
+    { "key": "pralidoximeInfusion", "label": "Pralidoxime — continuous infusion rate", "expression": "min(8 * weight, 650)", "unit": "mg/h", "precision": 0 },
+    { "key": "midazolam", "label": "Midazolam — IM for seizures / severe-poisoning prophylaxis", "expression": "min(0.2 * weight, 10)", "unit": "mg", "precision": 1 }
+  ],
+  "interpretation": [
+    { "forKey": "atropineInitial", "label": "Re-dose atropine by DOUBLING every 3-5 min until secretions dry, wheeze clears, and ventilation is easy. Total requirement is commonly 10-40 mg in the first hours and can reach hundreds; follow with a maintenance infusion at 10-20% of the loading total per hour. Do not titrate to mydriasis or heart rate.", "severity": "high" },
+    { "forKey": "pralidoximeLoad", "label": "Give pralidoxime as early as possible (before the enzyme ages — often futile for soman/GD). Infuse the load, do not push — rapid administration causes hypertension and, rarely, arrest. Autoinjectors (DuoDote / ATNAA) pair 2.1 mg atropine + 600 mg pralidoxime per dose for field use.", "severity": "info" }
+  ],
+  "notes": "Starting doses only. Adults in severe cholinergic crisis usually get a flat atropine start of 2-6 mg IV rather than the exact per-kg figure. Avoid succinylcholine (metabolized by cholinesterase — prolonged paralysis); use rocuronium. Watch survivors for the intermediate syndrome (24-96 h) and OP-induced delayed neuropathy (1-3 weeks). See the `nerve-agent-toxicity` reference for the full picture; confirm pediatric autoinjector thresholds and infusion rates against a current CHEMM/DoD reference at point of care.",
+  "buildNote": "Formula engine with min()/max() caps — no conditional logic, so adult flat-dose ranges are stated in prose rather than branched. Companion to `nerve-agent-toxicity`."
+}

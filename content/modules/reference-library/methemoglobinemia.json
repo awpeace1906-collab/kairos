@@ -1,0 +1,143 @@
+{
+  "id": "methemoglobinemia",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Methemoglobinemia — Recognition & Methylene Blue",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "methemoglobin",
+    "methylene blue antidote",
+    "saturation gap",
+    "chocolate brown blood",
+    "dapsone methemoglobinemia",
+    "benzocaine methemoglobinemia",
+    "co-oximetry",
+    "cyanosis unresponsive to oxygen"
+  ],
+  "tags": [
+    "toxicology",
+    "methemoglobinemia",
+    "methylene blue",
+    "hypoxia",
+    "co-oximetry",
+    "G6PD",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "ferrous ferric iron oxidation cannot bind oxygen left-shift functional anemia",
+    "dapsone benzocaine topical anesthetic nitrites nitrates aniline rasburicase primaquine well water",
+    "pulse oximetry reads toward 85 percent saturation gap co-oximetry chocolate brown",
+    "methylene blue 1 to 2 mg/kg IV over 5 minutes repeat 1 hour max 7 mg/kg",
+    "G6PD deficiency methylene blue ineffective hemolysis ascorbic acid alternative",
+    "methylene blue MAOI serotonin syndrome contraindication",
+    "dapsone long half-life recurrent methemoglobinemia multidose charcoal MB infusion",
+    "exchange transfusion hyperbaric oxygen refractory severe"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Goldfrank's Toxicologic Emergencies, 11th ed. — Methemoglobin Inducers; Methylene Blue and Cimetidine",
+    "Skold A, Cosco DL, Klein R. Methemoglobinemia: pathogenesis, diagnosis, and management. South Med J. 2011;104(11):757-761",
+    "Cortazzo JA, Lichtman AD. Methemoglobinemia: a review and recommendations for management. J Cardiothorac Vasc Anesth. 2014;28(4):1043-1047",
+    "FDA Drug Safety Communication: benzocaine and methemoglobinemia (2018)",
+    "Ash-Bernal R, Wise R, Wright SM. Acquired methemoglobinemia: a retrospective series of 138 cases at 2 teaching hospitals. Medicine (Baltimore). 2004;83(5):265-273"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — the drug/chemical causes, the saturation-gap presentation, co-oximetry diagnosis, and methylene blue dosing with its G6PD and MAOI caveats. Referenced from the nitrites section of `tox-cannabinoids-inhalants` and the asphyxiant section of `hazmat-scene-toxidromes`."
+    }
+  ],
+  "summary": "An oxidizing drug or chemical converts hemoglobin iron from ferrous to ferric, which cannot carry oxygen and left-shifts the remaining hemoglobin — so the patient is cyanotic and hypoxic with a normal PaO2. Pulse oximetry drifts toward ~85% and stops tracking; the diagnosis is co-oximetry and the antidote is methylene blue, unless the patient is G6PD-deficient.",
+  "whyThisMatters": "Methemoglobinemia is missed because the numbers do not line up the way hypoxia usually does: the patient looks blue and desaturated, the supplemental oxygen does nothing, the arterial blood is dark brown, and yet the calculated saturation on a standard gas is normal. Recognizing the saturation gap and sending a co-oximetry panel is the whole diagnosis, and methylene blue reverses it in minutes — but given to the wrong patient (G6PD deficiency, or on a serotonergic agent) it does harm.",
+  "clinicalTakeaway": "Suspect methemoglobinemia when cyanosis and low SpO2 do not correct with oxygen, the SpO2 sits near 85% regardless of clinical state (the \"saturation gap\" against a normal PaO2), or the blood is chocolate-brown. Confirm with co-oximetry — a standard ABG's calculated saturation will not show it. Treat symptomatic patients or a methemoglobin level above ~20-30% (lower if anemic, ischemic, or acidotic) with methylene blue 1-2 mg/kg IV over 5 minutes, repeatable once at 1 hour (cumulative max ~7 mg/kg). Do NOT give methylene blue if the patient is G6PD-deficient (ineffective and causes hemolysis) or on a serotonergic drug (MAOI-like, serotonin-syndrome risk) — use ascorbic acid, exchange transfusion, or hyperbaric oxygen instead. For dapsone, expect rebound and plan multidose activated charcoal plus repeat or infused methylene blue.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Mechanism"
+    },
+    {
+      "type": "text",
+      "text": "Hemoglobin carries oxygen only with its iron in the ferrous (Fe2+) state. Oxidizing agents push iron to the ferric (Fe3+) state — methemoglobin — which cannot bind oxygen and also raises the oxygen affinity of the remaining ferrous hemes, left-shifting the dissociation curve. The result is a functional anemia plus impaired offloading: tissue hypoxia at a normal PaO2. The red cell normally reduces methemoglobin back via NADH-cytochrome b5 reductase (and a minor NADPH pathway that methylene blue exploits); toxicity occurs when the oxidative load outpaces this, or in congenital enzyme deficiency."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Common causes"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Category",
+        "Agents"
+      ],
+      "rows": [
+        [
+          "Drugs",
+          "Dapsone (and its long half-life → recurrent methemoglobinemia), benzocaine and other topical/spray local anesthetics (teething gels, endoscopy/TEE sprays), prilocaine (EMLA in infants), phenazopyridine, primaquine, sulfonamides, rasburicase, nitroglycerin/nitroprusside (high dose), inhaled nitric oxide"
+        ],
+        [
+          "Chemicals / environmental",
+          "Nitrites and nitrates (amyl/butyl nitrite \"poppers\", sodium nitrite, contaminated well water in infants — \"blue baby\"), aniline dyes, naphthalene (mothballs), aromatic amines, industrial oxidants"
+        ],
+        [
+          "Host factors that lower the threshold",
+          "Congenital cytochrome b5 reductase deficiency, hemoglobin M, G6PD deficiency (both predisposes and blocks the methylene blue pathway), young infants (immature reductase), concurrent anemia or acidosis"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recognition and diagnosis"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Cyanosis and low SpO2 that do not improve with supplemental oxygen; the degree of cyanosis is out of proportion to how well the patient looks (10-15% methemoglobin already causes visible cyanosis).",
+        "Saturation gap: the pulse-oximeter reading trends toward ~85% and becomes unreliable (methemoglobin absorbs at both 660 and 940 nm), while the calculated saturation on a routine arterial blood gas — derived from a normal PaO2 — reads normal. A gap between the two is the clue.",
+        "Chocolate-brown arterial blood that does not turn red on exposure to air or 100% oxygen.",
+        "Confirm with CO-oximetry (a multi-wavelength co-oximeter directly measures the methemoglobin fraction). A standard ABG does not — its saturation is calculated, not measured.",
+        "Symptom severity by level (roughly, in a non-anemic adult): < 15% often asymptomatic; 15-30% cyanosis, headache; 30-50% dyspnea, weakness, tachycardia, confusion; 50-70% dysrhythmia, acidosis, seizure, coma; > 70% often fatal. Anemia, ischemic heart or lung disease, and acidosis shift the whole scale down."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Treatment"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Stop and remove the offending agent; give high-flow oxygen (maximizes the dissolved-oxygen contribution and the normal hemoglobin's carriage). Asymptomatic patients with a level below ~20% and a removed exposure often just need observation.",
+        "Methylene blue is first-line for symptomatic patients or a level above ~20-30% (lower threshold if anemic, acidotic, or with cardiopulmonary disease): 1-2 mg/kg IV over 5 minutes, flush the line. Response (cyanosis resolves, level falls) is usually within 30-60 minutes; repeat one dose at 1 hour if needed, and keep the cumulative dose under ~7 mg/kg — methylene blue is itself an oxidant at high dose and can paradoxically induce methemoglobinemia and hemolysis.",
+        "Methylene blue will not work and is harmful in G6PD deficiency: it depends on NADPH from G6PD to be reduced to the active leucomethylene blue, and it precipitates acute hemolysis in these patients. Test or check history when feasible, but do not delay treatment of a crashing patient — just be prepared for it to fail.",
+        "Methylene blue is a potent MAO inhibitor: it is contraindicated (or used only with serotonin-syndrome precautions) in patients on serotonergic drugs (SSRIs, SNRIs, MAOIs, TCAs, some opioids).",
+        "Alternatives when methylene blue is contraindicated or ineffective: high-dose ascorbic acid (slow — a fallback, mainly for congenital disease or G6PD deficiency), exchange transfusion, and hyperbaric oxygen for severe, refractory, life-threatening cases.",
+        "Dapsone: the long half-life (and an active metabolite) causes methemoglobinemia that recurs for days — plan multidose activated charcoal to interrupt enterohepatic recirculation, and repeat methylene blue doses or a low-rate infusion with serial levels; cimetidine reduces dapsone's methemoglobin-forming metabolism as an adjunct."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Two traps: a normal-looking pulse-oximeter number does not exclude methemoglobinemia — if the clinical cyanosis does not match the monitor, send a co-oximetry gas. And before pushing methylene blue, ask about G6PD deficiency and serotonergic medications — in those patients it is the wrong drug."
+    }
+  ],
+  "related": [
+    "tox-cannabinoids-inhalants",
+    "hazmat-scene-toxidromes",
+    "toxidromes-and-overdoses",
+    "antidotes-reversal-agents",
+    "abg-interpretation"
+  ],
+  "buildNote": "Tier 2 (antidote practice and level thresholds are stable; benzocaine/teething-gel regulatory context updates periodically — recheck). Fills the standalone-methemoglobinemia gap flagged in `tox-cannabinoids-inhalants`. Sulfhemoglobinemia (does not respond to methylene blue) is a brief differential worth a future line."
+}

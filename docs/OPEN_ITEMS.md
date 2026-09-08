@@ -9,25 +9,85 @@ Living tracker. Two lists:
 Last updated: 2026-09-07
 
 ## ▶ NEXT SESSION — start here (2026-09-07)
-State: pipeline green (285/0/0, tests 231/0). `settingEmphasis` now on **285/285**
-modules — the care-setting lens is fully seeded. Uncommitted: 182 modules +
-manifest/search-index/sources-index (nav metadata; no `content_version` bumps).
-DIRECTIONS_FORWARD §1 fully shipped (care-setting lens + reference template + 87/87).
-Priority order for the next block:
-1. **Real content gaps** — remaining smaller items: higher-risk BRUE pathway stub;
-   the tox lateral-expansion list (TCA/SSRI/SNRI, lithium, digoxin, antipsychotics);
-   standalone methemoglobinemia + MESS-calculator + interactive neck/CCR/CCHR
-   follow-ons flagged in the new modules. *(DONE 2026-09-07: VExUS /
-   venous-congestion / de-resuscitation; CV_Austere Parts One & Two →
-   `hazmat-scene-toxidromes` + `incendiary-chemical-burns`; ballistics/blast manual
-   → `wound-ballistics` + `blast-injury` + `penetrating-regional-trauma`;
-   intoxicating-substances reference → 6 `tox-*` modules. All three big-ticket CV
-   guides are now fully converted.)*
-2. **Small decisions** — "Flag as outdated" mailto stub → real destination;
-   NIHSS band citation; PAS/pARC section placement; pre-arrival zone-reference-card flow.
-3. Parked per instruction: GitHub Pages hosting, REMOTE_BASE wiring.
+State: **301 modules**, pipeline green (301/0, tests 235/0). iOS builds + runs;
+`ios-ci` root cause fixed (SearchEntry init) and now green. Care-setting lens
+fully seeded (all modules). DIRECTIONS_FORWARD §1 fully shipped.
+Remaining open items:
+1. **pARC computing tool** — blocked on the verified Kharbanda 2018 logistic
+   coefficients (the CV guide + `pediatric-appendicitis-score` document the
+   variables and bands but not the β values; MDCalc has the formula). Do NOT
+   fabricate coefficients. The descriptive comparison is already complete.
+2. **Peds Module: section or lens?** — architectural call (see the pre-arrival /
+   PAS work). If it becomes a true lens, the peds calculators move to their
+   clinical sections + get peds tags. Own session.
+3. **Home-screen pinned shortcut** — deferred as a small separate UX task (needs a
+   new pinned-link element in both clients). For now `peds-pre-arrival-card` is
+   surfaced via prehospital-first `settingEmphasis` + strong aliases, which the
+   care-setting lens floats up.
+4. Follow-on calculator/table ideas noted in module buildNotes: KI age-dosing
+   table, DTPA/Prussian-blue dosing card, interactive lower-risk BRUE checklist,
+   HIET dosing card.
+5. Parked per instruction: GitHub Pages hosting, REMOTE_BASE wiring.
+DONE 2026-09-07 (across the block): VExUS/de-resuscitation; CV_Austere Parts One
+& Two; ballistics/blast manual → 3 modules; intoxicating-substances → 6 `tox-*`
+modules; tox lateral expansion → `tox-cardiac-meds` + `tox-psych-meds`;
+`new-orleans-criteria` + `mangled-extremity-severity-score` calculators; iOS
+table renderer polish; ios-ci compile fix; `methemoglobinemia`,
+`nerve-agent-toxicity`, `vesicant-toxicity` references; BRUE higher-risk branch
+built out (v2); NIHSS severity-band citation (v2).
 
 ## Progress log
+- 2026-09-07 — **"Needs-input" batch (+1 → 308 total).** (1) "Flag as outdated"
+  now opens a prefilled GitHub issue (`awpeace1906-collab/kairos`,
+  labels content,needs-review, module id/version/dates/client in the body) —
+  new `web/src/lib/appConfig.js` + `ios/Sources/App/AppConfig.swift` (repo slug in
+  one place each); web `sw.js` → v5. (2) `alvarado` v2 — explicit pediatric
+  cross-reference (PAS/pARC) as a notes line; PAS module already covers all three
+  scores. pARC computing tool deferred (needs verified coefficients). (3) New
+  `peds-pre-arrival-card` peds-tool: embedded formula calc — one weight in, ~20
+  resus numbers out (epi/adenosine/amio/atropine/Ca/dextrose/Mg/naloxone,
+  defib+cardiovert J, fluid boluses, Holliday-Segar rate via piecewise min/max) —
+  plus a body with the age→weight table, equipment-by-zone table, and age-based
+  rules. Web `renderPedsTool` now renders `body` alongside an embedded calc
+  (matches iOS `PedsToolBody`). Fixed the stale Teal–Charcoal zone names in
+  `pedi-tape-weight-zones` → Dove-Umber (v2). validate 308/0, test 244/0, web
+  verified live, iOS BUILD SUCCEEDED.
+- 2026-09-07 — **Deferred batch (+3 → 307 total).** `acute-radiation-syndrome`
+  reference (exposure types, time-to-emesis + lymphocyte-kinetics triage, the 3
+  ARS subsyndromes, cutaneous radiation injury, external vs internal
+  contamination + isotope-specific decorporation table [KI / Prussian blue /
+  DTPA / bicarbonate], combined injury 48 h surgical window) — completes the
+  CBRN set. `nerve-agent-antidote-dosing` calculator (weight-based atropine,
+  pralidoxime load + infusion, midazolam; min()/max() caps) and
+  `digoxin-immune-fab-dosing` calculator (vials from level+weight, from ingested
+  mg, ceil-rounded + raw; empiric figures + indications in notes). validate
+  307/0, test 244/0. `severity` enum on calc interpretation is
+  info/low/moderate/high/critical (no "warning").
+- 2026-09-07 — **Low-priority batch (+3 → 304 total).** New references:
+  `methemoglobinemia` (causes, saturation gap, co-oximetry, methylene blue with
+  G6PD + MAOI caveats, dapsone rebound), `nerve-agent-toxicity` (cholinergic
+  crisis, atropine-to-secretions, pralidoxime + aging, midazolam, autoinjectors,
+  intermediate syndrome), `vesicant-toxicity` (sulfur mustard delayed alkylating
+  injury + marrow nadir, lewisite + dimercaprol, phosgene oxime). `brue-pathway`
+  → v2: higher-risk branch built from the 2019 framework (Merritt et al.) —
+  risk-elevating features, feature-matched targeted evaluation table,
+  not-recommended-routinely list, disposition guide; stub + needs-primary-source
+  flag removed. `nihss` → v2: full Brott 1989 + NINDS + Adams 1999 (TOAST)
+  citations, severity-band scheme named with its alternate, needs-primary-source
+  flag removed. Radiological/ARS still deferred (dedicated build). validate
+  304/0, test 235/0.
+- 2026-09-07 — **iOS port + Add-list batch (+4 → 301 total).** Root-caused the
+  recurring `ios-ci` failure: `EngineTests.swift` never compiled since `22dbe04`
+  (`SearchEntry` gained a non-defaulted `settingEmphasis`; the 3 test literals
+  weren't updated) — fixed with an explicit `SearchEntry` memberwise init
+  (`settingEmphasis: [String]? = nil`); `ios-ci.yml` now `-skip-testing:KairosUITests`
+  (flaky headless). Verified the 12 new reference modules render on-device (bundled
+  folder ref, no Swift changes). Then: `tox-cardiac-meds` (digoxin/BB/CCB/clonidine
+  + antidotes) and `tox-psych-meds` (lithium/NMS-vs-serotonin/SSRI/bupropion) —
+  the tox lateral expansion; `new-orleans-criteria` + `mangled-extremity-severity-score`
+  calculators (CCR/CCHR/NEXUS already existed); iOS `BlockList` table renderer
+  reworked to wrapping fixed-width columns (was one-line-per-cell). validate 301/0,
+  test 235/0, iOS BUILD SUCCEEDED.
 - 2026-09-07 — **Ballistics/blast manual + intoxicating-substances reference
   converted (+9 → 297 total).** `ballistics_blast_manual_v6` → `wound-ballistics`,
   `blast-injury`, `penetrating-regional-trauma` (Resus & Airway). 154 KB

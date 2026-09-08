@@ -1,0 +1,153 @@
+{
+  "id": "nerve-agent-toxicity",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Nerve Agents & Organophosphates — Cholinergic Crisis",
+  "settingEmphasis": [
+    "prehospital",
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "organophosphate poisoning",
+    "nerve agent sarin VX",
+    "cholinergic toxidrome",
+    "atropine pralidoxime 2-PAM",
+    "SLUDGE DUMBELS",
+    "DuoDote ATNAA autoinjector",
+    "acetylcholinesterase aging",
+    "carbamate poisoning"
+  ],
+  "tags": [
+    "nerve agent",
+    "organophosphate",
+    "cholinergic",
+    "atropine",
+    "pralidoxime",
+    "CBRN",
+    "toxicology",
+    "prehospital",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "acetylcholinesterase inhibition muscarinic nicotinic CNS cholinergic crisis",
+    "SLUDGE DUMBELS salivation lacrimation bronchorrhea bronchospasm miosis bradycardia",
+    "nicotinic fasciculations weakness paralysis tachycardia hypertension",
+    "atropine 2 mg double every 3 to 5 minutes endpoint drying secretions ventilation not pupils",
+    "pralidoxime 2-PAM 1 to 2 g load then infusion before aging soman ages 2 to 6 minutes",
+    "benzodiazepine midazolam seizure prophylaxis IM autoinjector",
+    "decontamination remove clothing RSDL soap water avoid bleach skin",
+    "DuoDote ATNAA MARK I autoinjector pediatric atropine dosing",
+    "intermediate syndrome OPIDN carbamate reversible"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Goldfrank's Toxicologic Emergencies, 11th ed. — Insecticides: Organic Phosphorus Compounds and Carbamates; Chemical Weapons",
+    "CHEMM (Chemical Hazards Emergency Medical Management), US DHHS — Nerve Agents; chemm.hhs.gov",
+    "Eddleston M, et al. Management of acute organophosphorus pesticide poisoning. Lancet. 2008;371(9612):597-607",
+    "Newmark J. Nerve agents. Neurologist. 2007;13(1):20-32 (autoinjector regimens, seizure management)",
+    "Rebmann T, et al. / DoD Chemical Casualty Care guidelines — atropine titration to secretions, pralidoxime infusion, midazolam for seizures"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — the cholinergic crisis (muscarinic + nicotinic + CNS), decontamination, and the atropine / pralidoxime / benzodiazepine regimen. Expands the nerve-agent preview in `hazmat-scene-toxidromes`."
+    }
+  ],
+  "summary": "Organophosphate pesticides and military nerve agents (sarin, VX, Novichok) all inhibit acetylcholinesterase, flooding synapses with acetylcholine — a cholinergic crisis with muscarinic secretions and bradycardia, nicotinic weakness and paralysis, and CNS seizures. The antidote pair is atropine (titrated to drying of secretions, not to pupils or heart rate) plus pralidoxime, given before the enzyme \"ages,\" with a benzodiazepine for seizures.",
+  "whyThisMatters": "Death is from airway secretions, bronchospasm, and respiratory-muscle paralysis, and the single most important intervention — atropine — is chronically under-dosed because clinicians titrate to the pupils or heart rate instead of to the airway. Nerve agents also age fast (soman in minutes), which changes whether pralidoxime is still worth giving, and a contaminated casualty who reaches the resus bay undecontaminated poisons the team.",
+  "clinicalTakeaway": "Decontaminate first (remove all clothing, copious water or RSDL) — providers work in PPE. Then: atropine 2 mg IV/IM (0.05 mg/kg in children), doubling the dose every 3-5 minutes until secretions dry and ventilation is easy — the endpoint is a clear chest and dry airway, NOT mydriasis or tachycardia, and the total can reach tens to hundreds of milligrams. Give pralidoxime 1-2 g IV over 15-30 minutes (or the autoinjector), then an infusion (~500 mg/h, or 8 mg/kg/h) — it reverses the nicotinic weakness atropine cannot touch, but only before aging (often futile for soman). Treat or pre-empt seizures with a benzodiazepine — midazolam IM is first-line and is in the military autoinjector. Support the airway aggressively; avoid succinylcholine (prolonged block). Watch survivors for the intermediate syndrome (proximal/respiratory weakness 24-96 h later) and, weeks out, OP-induced delayed neuropathy.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Mechanism and agents"
+    },
+    {
+      "type": "list",
+      "items": [
+        "All bind and inhibit acetylcholinesterase → acetylcholine accumulates at muscarinic (exocrine glands, smooth muscle, heart), nicotinic (skeletal neuromuscular junction, autonomic ganglia), and CNS synapses.",
+        "Agents: organophosphate insecticides (parathion, malathion, chlorpyrifos — the global mass-poisoning problem, often deliberate self-poisoning); G-series nerve agents (GA tabun, GB sarin, GD soman, GF cyclosarin — volatile, vapor hazard); V-series (VX — oily, persistent, percutaneous); Novichok (A-series — highly potent, persistent).",
+        "Aging: the inhibited enzyme undergoes an irreversible conformational change after which oximes cannot reactivate it. Aging half-times vary enormously — soman ~2-6 minutes, sarin ~3-5 hours, VX ~48 hours, tabun ~13 hours, many pesticides ~24-48 hours. This is why pralidoxime must be early and is often not worthwhile for soman.",
+        "Carbamates (aldicarb, physostigmine, pyridostigmine) cause the same cholinergic syndrome but the inhibition is spontaneously reversible within ~24-48 h and does not age — atropine is the mainstay and pralidoxime is often unnecessary (and traditionally avoided in pure carbaryl poisoning, though this caution is debated)."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The cholinergic toxidrome"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Receptor class",
+        "Findings"
+      ],
+      "rows": [
+        [
+          "Muscarinic (DUMBELS / SLUDGE)",
+          "Defecation, Urination, Miosis, Bradycardia + Bronchorrhea + Bronchospasm, Emesis, Lacrimation, Salivation. Also sweating. Bronchorrhea and bronchospasm are the killers"
+        ],
+        [
+          "Nicotinic (\"days of the week\" — MTWtHF)",
+          "Mydriasis, Tachycardia, Weakness, Hypertension, Fasciculations. Progresses to flaccid paralysis including the diaphragm"
+        ],
+        [
+          "CNS",
+          "Anxiety, agitation, confusion, seizures, coma, central apnea"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Pupils may be small (muscarinic) or, with heavy nicotinic/ganglionic effect, mid-size or large — do not use pupil size to gauge adequacy of atropine. Diagnosis is clinical; red-cell (or plasma) cholinesterase activity confirms and trends but does not guide acute dosing."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Decontamination"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Providers in appropriate PPE. Remove ALL clothing (removes the majority of contaminant), then copious water, or the Reactive Skin Decontamination Lotion (RSDL) for agent on skin. Soap and water is acceptable; avoid hypochlorite (bleach) on skin and wounds.",
+        "Vapor exposure with no liquid on skin or clothing needs little dermal decon once the patient is in fresh air; liquid VX or pesticide requires thorough decon before the cold zone.",
+        "Ocular exposure: prolonged irrigation. Gastric decon for ingestion is low-yield and risks aspiration into an already wet airway — generally not done."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Antidotes and supportive care"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Atropine — competitively blocks muscarinic effects (not nicotinic). 2 mg IV/IM in adults (0.05 mg/kg children, min 0.1 mg), DOUBLE the dose every 3-5 minutes until the endpoint: dry secretions, clear chest, easy ventilation, SpO2 recovering. Heart rate > 80 and clear lungs is a reasonable target; do not chase mydriasis. Severe poisoning routinely needs 10-40 mg in the first hours and occasionally hundreds; run a maintenance infusion (10-20% of the loading total per hour) titrated to secretions. Glycopyrrolate is an alternative for the peripheral secretions if atropine supply is short.",
+        "Pralidoxime (2-PAM) — reactivates acetylcholinesterase, reversing the nicotinic weakness and reducing atropine requirements. 1-2 g (25-50 mg/kg) IV over 15-30 minutes, then a continuous infusion (~500 mg/h adult, or 8 mg/kg/h) for 24 h or until clinically improved and off atropine. Give as early as possible (before aging); still reasonable for pesticides presenting late. Rapid IV push causes hypertension and, rarely, cardiac arrest — infuse it. Autoinjectors (DuoDote / ATNAA / MARK I) pair 2.1 mg atropine with 600 mg pralidoxime per dose for field use.",
+        "Benzodiazepine — for seizures and as prophylaxis in severe poisoning (nerve-agent seizures cause rapid neuronal injury). Midazolam 10 mg IM (or IV/IN) is first-line and is the current military autoinjector (replacing diazepam); repeat as needed. Standard antiepileptics are second-line.",
+        "Airway and ventilation — early intubation for the wet airway, bronchospasm, or paralysis; expect copious secretions and high suction needs. AVOID succinylcholine (metabolized by the same cholinesterase — prolonged paralysis); use rocuronium, and expect an altered dose-response with non-depolarizers too.",
+        "Later complications: the intermediate syndrome — proximal limb, neck-flexor, cranial-nerve and respiratory-muscle weakness appearing 24-96 h after apparent recovery, lasting days to weeks, requiring ventilatory support (not oxime-responsive). OP-induced delayed neuropathy (OPIDN) — a distal sensorimotor polyneuropathy 1-3 weeks out with certain agents."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "The recurring fatal error is under-atropinization. Titrate to the airway — dry secretions and easy ventilation — not to the pupils or the heart rate, and do not stop escalating while the chest is still wet. In a mass-casualty vapor release, undressing the casualty and moving them to fresh air is itself a major intervention."
+    }
+  ],
+  "related": [
+    "hazmat-scene-toxidromes",
+    "vesicant-toxicity",
+    "toxidromes-and-overdoses",
+    "status-epilepticus-adult",
+    "rsi-seven-ps"
+  ],
+  "buildNote": "Tier 2 (the atropine/pralidoxime/midazolam regimen is stable; midazolam-over-diazepam and pralidoxime-infusion practice are current — recheck). Expands the nerve-agent preview in `hazmat-scene-toxidromes`. Pediatric autoinjector thresholds and exact infusion rates should be confirmed against a current CHEMM/DoD reference at point of care. A weight-based atropine/2-PAM dosing calculator is a natural follow-on."
+}

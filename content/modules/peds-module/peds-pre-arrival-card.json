@@ -1,0 +1,108 @@
+{
+  "id": "peds-pre-arrival-card",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Peds Pre-Arrival Card — One Weight, Every Number",
+  "settingEmphasis": ["prehospital", "ed"],
+  "aliases": ["pre-arrival", "peds resus card", "kids coming in", "weight-based resus doses", "peds crash card", "pediatric pre-hospital notification"],
+  "tags": ["PALS", "pediatric resuscitation", "pre-arrival", "weight-based dosing", "defibrillation", "cardioversion", "epinephrine", "fluid bolus", "prehospital", "ED"],
+  "keywords": ["enter weight once get epinephrine adenosine amiodarone atropine calcium dextrose", "defibrillation 2 J/kg cardioversion 1 J/kg fluid bolus 20 mL/kg", "age to weight estimate APLS", "ETT size age over 4 plus 4"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 1,
+  "sources": [
+    "2025 PALS — Pediatric Cardiac Arrest; Bradycardia and Tachycardia with a Pulse (AHA-aligned)",
+    "Kairos weight-zones.json (Dove-Umber 9-zone scheme) and the resus drug cards it defers to",
+    "APLS weight-estimation formulae",
+    "Kairos peds-cardiac-arrest numbers card (every dose cross-checked vs current PALS)"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-07", "change": "Initial entry — an interactive companion to peds-cardiac-arrest and pedi-tape-weight-zones: enter one weight (or an age estimate) and every weight-based resus number is pre-computed for the pre-arrival window. Equipment sizing and age-based rules (ETT, SBP floor) stay in the body." }
+  ],
+  "kind": "calculator",
+  "purpose": "Enter the child's weight ONCE, before they arrive, and read every weight-based resuscitation number pre-computed — so there is no arithmetic during the resuscitation. Doses are live from the exact weight; the caps and the equipment/age rules are below.",
+  "ageRange": "Term neonate (post-resuscitation) to adolescent (~3-50 kg)",
+  "sourceOfTruth": ["peds-cardiac-arrest", "pedi-tape-weight-zones", "peds-epinephrine-arrest", "peds-amiodarone-arrest", "peds-adenosine-svt", "holliday-segar-maintenance-fluids"],
+  "embeddedCalculator": {
+    "id": "peds-pre-arrival-card-calc",
+    "section": "Peds Module",
+    "category": "Peds Resuscitation & Decision Support",
+    "title": "Peds Pre-Arrival Card",
+    "contentType": "calculator",
+    "content_version": 1,
+    "review_tier": 1,
+    "last_reviewed": "2026-09-07",
+    "next_review_due": "2027-03-07",
+    "sources": ["2025 PALS", "Kairos peds-cardiac-arrest numbers card"],
+    "engine": "formula",
+    "purpose": "Weight-based pediatric resuscitation numbers, all at once.",
+    "inputs": [
+      { "key": "weight", "label": "Weight (measured, parent-reported, or length-tape)", "type": "number", "unit": "kg", "min": 3, "max": 50 }
+    ],
+    "formulas": [
+      { "key": "epiArrestMg", "label": "Epinephrine — arrest, IV/IO", "expression": "min(0.01 * weight, 1)", "unit": "mg", "precision": 3 },
+      { "key": "epiArrestML", "label": "Epinephrine — arrest, volume of 0.1 mg/mL (1:10,000)", "expression": "min(0.1 * weight, 10)", "unit": "mL", "precision": 2 },
+      { "key": "epiAnaphylaxisMg", "label": "Epinephrine — anaphylaxis, IM", "expression": "min(0.01 * weight, 0.5)", "unit": "mg", "precision": 3 },
+      { "key": "epiAnaphylaxisML", "label": "Epinephrine — anaphylaxis, volume of 1 mg/mL (1:1,000) IM", "expression": "min(0.01 * weight, 0.5)", "unit": "mL", "precision": 2 },
+      { "key": "fluidBolus20", "label": "Isotonic crystalloid bolus — 20 mL/kg", "expression": "20 * weight", "unit": "mL", "precision": 0 },
+      { "key": "fluidBolus10", "label": "Crystalloid bolus — 10 mL/kg (DKA, cardiogenic, neonate, trauma)", "expression": "10 * weight", "unit": "mL", "precision": 0 },
+      { "key": "defibFirst", "label": "Defibrillation — 1st shock (2 J/kg)", "expression": "2 * weight", "unit": "J", "precision": 0 },
+      { "key": "defibNext", "label": "Defibrillation — subsequent shocks (4 J/kg, up to 10 J/kg / adult dose)", "expression": "4 * weight", "unit": "J", "precision": 0 },
+      { "key": "cardioversionFirst", "label": "Synchronized cardioversion — 1st (0.5-1 J/kg; value shown = 1 J/kg)", "expression": "1 * weight", "unit": "J", "precision": 0 },
+      { "key": "cardioversionNext", "label": "Synchronized cardioversion — subsequent (2 J/kg)", "expression": "2 * weight", "unit": "J", "precision": 0 },
+      { "key": "adenosine1", "label": "Adenosine — 1st dose IV/IO rapid push (0.1 mg/kg)", "expression": "min(0.1 * weight, 6)", "unit": "mg", "precision": 2 },
+      { "key": "adenosine2", "label": "Adenosine — 2nd dose (0.2 mg/kg)", "expression": "min(0.2 * weight, 12)", "unit": "mg", "precision": 2 },
+      { "key": "amiodarone", "label": "Amiodarone — VF / pulseless VT (5 mg/kg IV/IO bolus)", "expression": "min(5 * weight, 300)", "unit": "mg", "precision": 0 },
+      { "key": "atropine", "label": "Atropine — bradycardia / RSI (0.02 mg/kg)", "expression": "max(min(0.02 * weight, 1), 0.1)", "unit": "mg", "precision": 2 },
+      { "key": "dextroseD10", "label": "Dextrose — hypoglycemia, D10 at 5 mL/kg (= 0.5 g/kg)", "expression": "5 * weight", "unit": "mL", "precision": 0 },
+      { "key": "calciumChloride", "label": "Calcium chloride 10% — 20 mg/kg (0.2 mL/kg), central line preferred", "expression": "min(0.2 * weight, 10)", "unit": "mL", "precision": 2 },
+      { "key": "calciumGluconate", "label": "Calcium gluconate 10% — 60 mg/kg (0.6 mL/kg), peripheral-safe", "expression": "min(0.6 * weight, 30)", "unit": "mL", "precision": 2 },
+      { "key": "magnesium", "label": "Magnesium sulfate — torsades / severe bronchospasm (40 mg/kg, over 15-30 min)", "expression": "min(40 * weight, 2000)", "unit": "mg", "precision": 0 },
+      { "key": "naloxone", "label": "Naloxone — full reversal (0.1 mg/kg); titrate 0.001-0.01 mg/kg if spontaneous respirations", "expression": "min(0.1 * weight, 2)", "unit": "mg", "precision": 2 },
+      { "key": "maintenanceRate", "label": "Maintenance fluid rate (Holliday-Segar \"4-2-1\", mL/h)", "expression": "min(weight, 10) * 4 + min(max(weight - 10, 0), 10) * 2 + max(weight - 20, 0) * 1", "unit": "mL/h", "precision": 0 }
+    ],
+    "interpretation": [
+      { "forKey": "epiArrestMg", "label": "Single-dose ceilings: epinephrine 1 mg, atropine 0.5 mg (child) / 1 mg (adolescent), adenosine 6 then 12 mg, amiodarone 300 mg, magnesium 2 g, naloxone 2 mg. Epinephrine repeats q3-5 min in arrest.", "severity": "high" },
+      { "forKey": "defibFirst", "label": "Cap subsequent defibrillation at 10 J/kg or the adult dose, whichever is lower. Cardioversion: PALS first-attempt range is 0.5-1 J/kg — the figure shown is the 1 J/kg end; drop to 0.5 J/kg for a first attempt in a stable-ish rhythm, then double.", "severity": "moderate" }
+    ],
+    "notes": "This is the weight-derived arithmetic only. It is not a resuscitation algorithm — see `peds-cardiac-arrest` for the scenario cards (bradycardia, SVT, shockable/non-shockable arrest, torsades, hyperkalaemia) and the CPR mechanics, and the individual resus drug cards for infusions and full detail. Weigh the child if at all possible; use an age estimate only when a weight is genuinely unmeasurable.",
+    "buildNote": "Formula engine, min()/max() caps. Holliday-Segar rate is expressed with piecewise min/max since the engine has no conditional. Cardioversion 1st-dose shown at the 1 J/kg end of the PALS 0.5-1 range (stated in interpretation)."
+  },
+  "body": [
+    { "type": "heading", "level": 2, "text": "Age → weight estimate (only if a weight is unmeasurable)" },
+    { "type": "table",
+      "columns": ["Age band", "Estimated weight (kg)"],
+      "rows": [
+        ["0-12 months", "(0.5 × age in months) + 4"],
+        ["1-5 years", "(2 × age in years) + 8"],
+        ["6-12 years", "(3 × age in years) + 7"]
+      ]
+    },
+    { "type": "callout", "tone": "warning", "text": "An age-estimated weight must be treated as approximate — re-dose off a measured weight as soon as one is available, and flag the estimate to the team." },
+    { "type": "heading", "level": 2, "text": "Equipment by weight zone" },
+    { "type": "table",
+      "columns": ["Zone · colour", "Weight", "ETT (uncuffed)", "LMA", "Blade", "Defib pads", "BP cuff"],
+      "rows": [
+        ["1 · Dove", "3-5 kg", "3.0-3.5", "1", "Miller 0-1", "Pediatric", "Neonatal"],
+        ["2 · Rose", "6-8 kg", "3.5-4.0", "1", "Miller 1", "Pediatric", "Infant"],
+        ["3 · Plum", "9-11 kg", "4.0-4.5", "1.5", "Miller 1", "Pediatric", "Infant"],
+        ["4 · Denim", "12-14 kg", "4.5-5.0", "2", "Miller 1-2", "Pediatric", "Child (small)"],
+        ["5 · Olive", "15-18 kg", "5.0-5.5", "2", "Macintosh 2", "Pediatric", "Child"],
+        ["6 · Rust", "19-23 kg", "5.5-6.0", "2.5", "Macintosh 2", "Ped/adult transition", "Child"],
+        ["7 · Pine", "24-29 kg", "6.0 (consider cuffed)", "2.5", "Macintosh 2", "Adult", "Child (large)"],
+        ["8 · Scarlet", "30-36 kg", "6.0-6.5 cuffed", "3", "Macintosh 2-3", "Adult", "Adult (small)"],
+        ["9 · Umber", "37-50 kg", "6.5-7.0 cuffed", "3", "Macintosh 3", "Adult", "Adult"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Age-based rules the weight can't give you" },
+    { "type": "list", "items": [
+      "ETT size: uncuffed = (age/4) + 4; cuffed = (age/4) + 3.5. Depth at lip ≈ ETT size × 3, or (age/2) + 12. Cuffed tubes are preferred beyond the neonatal period (cuff pressure < 20-25 cmH2O).",
+      "Lowest acceptable systolic BP ≈ 70 + (2 × age in years) for ages 1-10; < 70 mmHg is hypotension in a neonate or infant.",
+      "Defibrillation pad size / placement and the ped-to-adult crossover depend on the specific device — verify against the unit in use (the Rust zone is the nominal transition)."
+    ] },
+    { "type": "callout", "tone": "info", "text": "For the resuscitation itself — the scenario-by-scenario numbers and CPR mechanics — use `peds-cardiac-arrest`. For equipment detail and the age-estimate rationale, `pedi-tape-weight-zones`. This card exists to get the arithmetic done before the patient is in the room." }
+  ],
+  "buildNote": "peds-tool with an embedded formula calculator + an explanatory body (web renderPedsTool now renders the body alongside the calc, matching iOS PedsToolBody). Equipment table mirrors the current Dove-Umber weight-zones.json. Cross-links peds-cardiac-arrest (recall card) and pedi-tape-weight-zones (equipment). settingEmphasis prehospital-first so the care-setting lens floats it up for en-route crews."
+}

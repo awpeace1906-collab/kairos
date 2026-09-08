@@ -247,13 +247,13 @@
       "next_review_due": "2026-12-01"
     },
     "calculators/gi-renal-metabolic/alvarado": {
-      "content_version": 1,
-      "hash": "5ebe09f92da29f61",
+      "content_version": 2,
+      "hash": "649204ed66ea60f0",
       "path": "modules/calculators/gi-renal-metabolic/alvarado.json",
       "contentType": "calculator",
       "section": "Calculators",
       "review_tier": 1,
-      "next_review_due": "2026-12-01"
+      "next_review_due": "2027-03-07"
     },
     "calculators/gi-renal-metabolic/anion-gap": {
       "content_version": 1,
@@ -495,14 +495,23 @@
       "review_tier": 1,
       "next_review_due": "2027-09-02"
     },
-    "calculators/neuro/nihss": {
+    "calculators/neuro/new-orleans-criteria": {
       "content_version": 1,
-      "hash": "280e8d33d3d9d194",
+      "hash": "78eb3650772dc0d1",
+      "path": "modules/calculators/neuro/new-orleans-criteria.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-07"
+    },
+    "calculators/neuro/nihss": {
+      "content_version": 2,
+      "hash": "b50c1f58552fd82b",
       "path": "modules/calculators/neuro/nihss.json",
       "contentType": "calculator",
       "section": "Calculators",
       "review_tier": 1,
-      "next_review_due": "2026-11-30"
+      "next_review_due": "2027-03-07"
     },
     "calculators/neuro/ottawa-sah-rule": {
       "content_version": 1,
@@ -684,6 +693,15 @@
       "review_tier": 1,
       "next_review_due": "2027-03-02"
     },
+    "calculators/tox-withdrawal/digoxin-immune-fab-dosing": {
+      "content_version": 1,
+      "hash": "ebb4b53ee8da1a2c",
+      "path": "modules/calculators/tox-withdrawal/digoxin-immune-fab-dosing.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
     "calculators/tox-withdrawal/hunter-serotonin": {
       "content_version": 1,
       "hash": "cad9c36baa796161",
@@ -692,6 +710,15 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2027-09-02"
+    },
+    "calculators/tox-withdrawal/nerve-agent-antidote-dosing": {
+      "content_version": 1,
+      "hash": "9963ec714629c0d5",
+      "path": "modules/calculators/tox-withdrawal/nerve-agent-antidote-dosing.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
     },
     "calculators/tox-withdrawal/osmolal-gap": {
       "content_version": 1,
@@ -736,6 +763,15 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2027-09-02"
+    },
+    "calculators/trauma/mangled-extremity-severity-score": {
+      "content_version": 1,
+      "hash": "e83daeabe51863eb",
+      "path": "modules/calculators/trauma/mangled-extremity-severity-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 2,
+      "next_review_due": "2027-09-07"
     },
     "calculators/trauma/modified-shock-index": {
       "content_version": 1,
@@ -1472,13 +1508,13 @@
       "next_review_due": "2026-12-02"
     },
     "peds-module/brue-pathway": {
-      "content_version": 1,
-      "hash": "7273c36d3bcadc32",
+      "content_version": 2,
+      "hash": "7c5f2a0eaad201de",
       "path": "modules/peds-module/brue-pathway.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
       "review_tier": 1,
-      "next_review_due": "2026-11-30"
+      "next_review_due": "2027-03-07"
     },
     "peds-module/chromosomal-disorders": {
       "content_version": 1,
@@ -1607,13 +1643,13 @@
       "next_review_due": "2026-12-02"
     },
     "peds-module/pedi-tape-weight-zones": {
-      "content_version": 1,
-      "hash": "40917fbd336aa5e1",
+      "content_version": 2,
+      "hash": "83b0870fdbb828f3",
       "path": "modules/peds-module/pedi-tape-weight-zones.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
       "review_tier": 1,
-      "next_review_due": "2027-03-03"
+      "next_review_due": "2027-03-07"
     },
     "peds-module/pediatric-appendicitis-score": {
       "content_version": 2,
@@ -1659,6 +1695,15 @@
       "section": "Peds Module",
       "review_tier": 1,
       "next_review_due": "2026-11-30"
+    },
+    "peds-module/peds-pre-arrival-card": {
+      "content_version": 1,
+      "hash": "4655e73009a343b2",
+      "path": "modules/peds-module/peds-pre-arrival-card.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-03-07"
     },
     "peds-module/peds-rsi-decision-card": {
       "content_version": 1,
@@ -1829,6 +1874,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-12-02"
+    },
+    "reference-library/acute-radiation-syndrome": {
+      "content_version": 1,
+      "hash": "72a466ede3145616",
+      "path": "modules/reference-library/acute-radiation-syndrome.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
     },
     "reference-library/advanced-ards-ventilation": {
       "content_version": 2,
@@ -2298,6 +2352,24 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/methemoglobinemia": {
+      "content_version": 1,
+      "hash": "37c7c7ab64ecf0fb",
+      "path": "modules/reference-library/methemoglobinemia.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
+    "reference-library/nerve-agent-toxicity": {
+      "content_version": 1,
+      "hash": "3c808f6b19b10faf",
+      "path": "modules/reference-library/nerve-agent-toxicity.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
     "reference-library/neuraxial-anesthesia": {
       "content_version": 2,
       "hash": "6834ff60fea4b3b6",
@@ -2559,6 +2631,15 @@
       "review_tier": 2,
       "next_review_due": "2027-03-07"
     },
+    "reference-library/tox-cardiac-meds": {
+      "content_version": 1,
+      "hash": "cfaa1ea5a23732c9",
+      "path": "modules/reference-library/tox-cardiac-meds.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
     "reference-library/tox-dissociatives-hallucinogens": {
       "content_version": 1,
       "hash": "072785674b6da9c1",
@@ -2572,6 +2653,15 @@
       "content_version": 1,
       "hash": "8ef3db196c21f76f",
       "path": "modules/reference-library/tox-opioids.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
+    "reference-library/tox-psych-meds": {
+      "content_version": 1,
+      "hash": "38ac84cf102ac7a1",
+      "path": "modules/reference-library/tox-psych-meds.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": 2,
@@ -2657,6 +2747,15 @@
       "section": "Reference Library",
       "review_tier": 3,
       "next_review_due": "2027-03-02"
+    },
+    "reference-library/vesicant-toxicity": {
+      "content_version": 1,
+      "hash": "ab869f157ead1059",
+      "path": "modules/reference-library/vesicant-toxicity.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
     },
     "reference-library/wound-ballistics": {
       "content_version": 1,

@@ -1,0 +1,41 @@
+{
+  "id": "digoxin-immune-fab-dosing",
+  "section": "Calculators",
+  "category": "Toxicology / Withdrawal",
+  "title": "Digoxin Immune Fab (DigiFab) — Vial Dosing",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["digibind dose", "digoxin antibody vials", "DigiFab calculator", "cardiac glycoside antidote dose"],
+  "tags": ["digoxin", "toxicology", "antidote", "digoxin immune Fab", "cardiac glycoside", "ED", "ICU"],
+  "keywords": ["vials = serum digoxin ng/mL times weight kg divided by 100", "vials = mg ingested times 0.8 divided by 0.5", "empiric acute 10 to 20 vials chronic 3 to 6 vials", "each 40 mg vial binds 0.5 mg digoxin"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "DigiFab (digoxin immune Fab) prescribing information",
+    "Goldfrank's Toxicologic Emergencies, 11th ed. — Cardioactive Steroids; Antidotes in Depth: Digoxin-Specific Antibody Fragments",
+    "Lavonas EJ, et al. 2023 AHA Focused Update on Management of Cardiac Arrest / Life-Threatening Toxicity Due to Poisoning. Circulation. 2023;148(16):e149-e184",
+    "Chan BS, Buckley NA. Digoxin-specific antibody fragments in the treatment of digoxin toxicity. Clin Toxicol. 2014;52(8):824-836"
+  ],
+  "changelog": [{ "version": 1, "date": "2026-09-07", "change": "Initial entry — vial estimates from a steady-state serum digoxin level, from a known ingested amount, or empiric; companion to the digoxin section of tox-cardiac-meds." }],
+  "engine": "formula",
+  "settings": ["ED", "ICU"],
+  "purpose": "Estimates the number of digoxin immune Fab (DigiFab) vials. Fill in whichever you have — a steady-state serum digoxin concentration (drawn ≥ 6 h post-dose) with weight, OR the total amount ingested. If neither is known, use the empiric figures in the notes. Each 40 mg vial binds ~0.5 mg of digoxin.",
+  "inputs": [
+    { "key": "weight", "label": "Weight", "type": "number", "unit": "kg", "min": 3, "max": 200 },
+    { "key": "level", "label": "Serum digoxin concentration (steady state, ≥ 6 h post-dose)", "type": "number", "unit": "ng/mL", "min": 0.5, "max": 50 },
+    { "key": "ingestedMg", "label": "Total digoxin ingested (if known)", "type": "number", "unit": "mg", "min": 0.25, "max": 50 }
+  ],
+  "formulas": [
+    { "key": "vialsFromLevel", "label": "Vials — from serum level + weight (already rounded up)", "expression": "ceil((level * weight) / 100)", "unit": "vials", "precision": 0 },
+    { "key": "vialsFromLevelRaw", "label": "  …unrounded basis", "expression": "(level * weight) / 100", "unit": "vials", "precision": 2 },
+    { "key": "vialsFromIngestion", "label": "Vials — from amount ingested (already rounded up)", "expression": "ceil((ingestedMg * 0.8) / 0.5)", "unit": "vials", "precision": 0 },
+    { "key": "vialsFromIngestionRaw", "label": "  …unrounded basis", "expression": "(ingestedMg * 0.8) / 0.5", "unit": "vials", "precision": 2 }
+  ],
+  "interpretation": [
+    { "forKey": "vialsFromLevel", "label": "Reconstitute and give IV over ~30 min (bolus if peri-arrest). After Fab, total serum digoxin levels are UNINTERPRETABLE for days (the assay measures bound + free) — dose by clinical response, not a repeat level.", "severity": "high" }
+  ],
+  "notes": "Empiric dosing when neither a reliable level nor ingested amount is available: acute overdose in an adult or child — 10-20 vials (start 10, repeat if incomplete response); chronic toxicity in an adult — 3-6 vials; chronic toxicity in a child — 1-2 vials and titrate. INDICATIONS for Fab (not this calculator's output): potassium > 5 mEq/L in acute toxicity, any life-threatening dysrhythmia or haemodynamic instability, acute ingestion > 10 mg (adult) or > 4 mg (child), or steady-state level > 15 ng/mL (or > 10 with symptoms). Also effective for digitoxin and plant/animal cardiac glycosides (oleander, toad venom) though more vials may be needed. Treat hyperkalaemia WITH Fab; IV calcium is traditionally avoided in digoxin toxicity. Dialysis does not remove digoxin. See `tox-cardiac-meds`.",
+  "buildNote": "Formula engine — the two estimate methods are independent formulas that each appear only once their inputs are filled (weight+level, or ingestedMg); each shows a ceil()-rounded whole-vial figure plus the unrounded basis. Empiric figures and the indications for giving Fab live in notes, not as computed outputs."
+}

@@ -136,6 +136,22 @@ struct SearchEntry: Codable, Identifiable, Hashable {
         case itemID = "id"
         case title, section, category, tags, keywords, contentType, route, settingEmphasis
     }
+
+    // Explicit memberwise init so `settingEmphasis` (a render-time nav lens, often
+    // absent) can default to nil — keeps older call sites and tests compiling.
+    init(itemID: String, title: String, section: String, category: String,
+         tags: [String]? = nil, keywords: [String]? = nil, contentType: ContentType,
+         route: String, settingEmphasis: [String]? = nil) {
+        self.itemID = itemID
+        self.title = title
+        self.section = section
+        self.category = category
+        self.tags = tags
+        self.keywords = keywords
+        self.contentType = contentType
+        self.route = route
+        self.settingEmphasis = settingEmphasis
+    }
 }
 
 /// content/config/settings.json — the four care settings the app can be lensed to.

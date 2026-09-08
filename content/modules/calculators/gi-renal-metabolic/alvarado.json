@@ -7,12 +7,15 @@
   "aliases": ["MANTRELS", "appendicitis score adult"],
   "tags": ["appendicitis", "abdominal pain", "RLQ pain", "imaging decision", "ED"],
   "contentType": "calculator",
-  "content_version": 1,
-  "last_reviewed": "2026-09-01",
-  "next_review_due": "2026-12-01",
+  "content_version": 2,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
   "review_tier": 1,
-  "sources": ["Alvarado A. Ann Emerg Med 1986"],
-  "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry — the adult-derived score. For children use PAS or pARC in the Peds Module." }],
+  "sources": ["Alvarado A. A practical score for the early diagnosis of acute appendicitis. Ann Emerg Med. 1986;15(5):557-564"],
+  "changelog": [
+    { "version": 2, "date": "2026-09-07", "change": "Added an explicit pediatric cross-reference (PAS / pARC in the Peds Module) as a notes line; expanded the source citation." },
+    { "version": 1, "date": "2026-09-01", "change": "Initial entry — the adult-derived score. For children use PAS or pARC in the Peds Module." }
+  ],
   "engine": "additive",
   "settings": ["ED"],
   "purpose": "Bedside probability of acute appendicitis in adults; supports the imaging / surgical-consult decision. Adult-derived — for pediatric patients use PAS or pARC instead.",
@@ -30,5 +33,7 @@
     { "min": 0, "max": 4, "label": "Appendicitis unlikely", "disposition": "Observation and serial exams; imaging if suspicion persists", "severity": "low" },
     { "min": 5, "max": 6, "label": "Equivocal", "disposition": "Imaging (CT in adults) or a period of observation", "severity": "moderate" },
     { "min": 7, "max": 10, "label": "High probability", "disposition": "Surgical consultation; imaging often still obtained to confirm", "severity": "high" }
-  ]
+  ],
+  "notes": "Adult-derived (Alvarado 1986). For children, use the Pediatric Appendicitis Score (PAS) — or, in a child ≥ 5 years with < 96 h of pain where an absolute neutrophil count is available, the Pediatric Appendicitis Risk Calculator (pARC), which is more decision-actionable. Both are in the Peds Module under Pediatric Appendicitis Score, which also compares all three tools. Alvarado is weighted heavily toward WBC and performs best at the score extremes, less so in the equivocal 5-6 range.",
+  "buildNote": "Cross-links to `pediatric-appendicitis-score` (Peds Module) live in prose — the calculator schema's unevaluatedProperties:false rejects a `related` array."
 }
