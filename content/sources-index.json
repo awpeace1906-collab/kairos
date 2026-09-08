@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 472,
+  "count": 478,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -3736,6 +3736,30 @@
       ]
     },
     {
+      "text": "Beaubien-Souligny W, et al. Quantifying systemic congestion with point-of-care ultrasound: development of the Venous Excess Ultrasound (VExUS) grading system. Ultrasound J. 2020;12:16",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "venous-congestion-deresuscitation",
+          "title": "Venous Congestion, VExUS & De-resuscitation",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/venous-congestion-deresuscitation"
+        }
+      ]
+    },
+    {
+      "text": "Bissell BD, et al. Impact of protocolized diuresis for de-resuscitation in the intensive care unit. Crit Care. 2020;24:70",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "venous-congestion-deresuscitation",
+          "title": "Venous Congestion, VExUS & De-resuscitation",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/venous-congestion-deresuscitation"
+        }
+      ]
+    },
+    {
       "text": "Boles J et al. Eur Respir J 2007;29:1033 (weaning classification)",
       "group": "Other primary sources",
       "usedBy": [
@@ -5020,6 +5044,18 @@
       ]
     },
     {
+      "text": "Malbrain MLNG, et al. Principles of fluid management and stewardship in septic shock: it is time to consider the four D's and the four phases of fluid therapy. Ann Intensive Care. 2018;8:66",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "venous-congestion-deresuscitation",
+          "title": "Venous Congestion, VExUS & De-resuscitation",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/venous-congestion-deresuscitation"
+        }
+      ]
+    },
+    {
       "text": "Mallampati SR et al. Can Anaesth Soc J 1985",
       "group": "Other primary sources",
       "usedBy": [
@@ -5116,6 +5152,18 @@
       ]
     },
     {
+      "text": "Meyhoff TS, et al. Restriction of intravenous fluid in ICU patients with septic shock (CLASSIC). N Engl J Med. 2022;386:2459-2470",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "venous-congestion-deresuscitation",
+          "title": "Venous Congestion, VExUS & De-resuscitation",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/venous-congestion-deresuscitation"
+        }
+      ]
+    },
+    {
       "text": "MHAUS / EMHG 2024 dantrolene dosing update; MHAUS emergency protocol",
       "group": "Other primary sources",
       "usedBy": [
@@ -5160,6 +5208,18 @@
           "title": "Perioperative Hyperglycemia",
           "section": "Reference Library",
           "route": "/reference-library/perioperative-anesthesia/perioperative-glycemic-management"
+        }
+      ]
+    },
+    {
+      "text": "National Heart, Lung, and Blood Institute ARDS Clinical Trials Network. Comparison of two fluid-management strategies in acute lung injury (FACTT). N Engl J Med. 2006;354:2564-2575",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "venous-congestion-deresuscitation",
+          "title": "Venous Congestion, VExUS & De-resuscitation",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/venous-congestion-deresuscitation"
         }
       ]
     },
@@ -5526,6 +5586,18 @@
           "title": "ROX Index",
           "section": "Calculators",
           "route": "/calculators/pulmonary-pe-dvt-resp-failure/rox-index"
+        }
+      ]
+    },
+    {
+      "text": "Rola P, et al. Clinical applications of the Venous Excess Ultrasound (VExUS) score: conceptual review and case series. Ultrasound J. 2021;13:32",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "venous-congestion-deresuscitation",
+          "title": "Venous Congestion, VExUS & De-resuscitation",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/venous-congestion-deresuscitation"
         }
       ]
     },

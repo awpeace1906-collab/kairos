@@ -1,0 +1,236 @@
+{
+  "id": "venous-congestion-deresuscitation",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Venous Congestion, VExUS & De-resuscitation",
+  "settingEmphasis": [
+    "icu",
+    "ed"
+  ],
+  "aliases": [
+    "VExUS",
+    "venous excess ultrasound",
+    "congestive nephropathy",
+    "cardiorenal syndrome fluid",
+    "de-resuscitation",
+    "fluid de-escalation",
+    "fluid overload ICU",
+    "ROSE fluid phases",
+    "fluid stewardship"
+  ],
+  "tags": [
+    "VExUS",
+    "venous congestion",
+    "fluid balance",
+    "de-resuscitation",
+    "POCUS",
+    "AKI",
+    "cardiorenal",
+    "diuresis",
+    "ICU",
+    "critical care"
+  ],
+  "keywords": [
+    "hepatic vein Doppler S D reversal",
+    "portal vein pulsatility fraction 50%",
+    "intrarenal venous Doppler monophasic biphasic",
+    "IVC 2 cm plethora",
+    "VExUS grade 3 AKI",
+    "Beaubien-Souligny cardiac surgery",
+    "ROSE resuscitation optimization stabilization evacuation",
+    "positive fluid balance mortality sepsis ARDS",
+    "conservative fluid FACTT ventilator-free days",
+    "CLASSIC restrictive fluid septic shock",
+    "furosemide infusion diuretic resistance",
+    "renal perfusion pressure MAP minus CVP"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Beaubien-Souligny W, et al. Quantifying systemic congestion with point-of-care ultrasound: development of the Venous Excess Ultrasound (VExUS) grading system. Ultrasound J. 2020;12:16",
+    "Rola P, et al. Clinical applications of the Venous Excess Ultrasound (VExUS) score: conceptual review and case series. Ultrasound J. 2021;13:32",
+    "Malbrain MLNG, et al. Principles of fluid management and stewardship in septic shock: it is time to consider the four D's and the four phases of fluid therapy. Ann Intensive Care. 2018;8:66",
+    "National Heart, Lung, and Blood Institute ARDS Clinical Trials Network. Comparison of two fluid-management strategies in acute lung injury (FACTT). N Engl J Med. 2006;354:2564-2575",
+    "Meyhoff TS, et al. Restriction of intravenous fluid in ICU patients with septic shock (CLASSIC). N Engl J Med. 2022;386:2459-2470",
+    "Bissell BD, et al. Impact of protocolized diuresis for de-resuscitation in the intensive care unit. Crit Care. 2020;24:70"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — venous congestion physiology, the VExUS grading system (waveforms + grades + confounders), the ROSE four-phase fluid model, and a bedside de-resuscitation approach with its evidence base."
+    }
+  ],
+  "summary": "Once shock has resolved, a large positive fluid balance is its own injury — congestive nephropathy, hepatopathy, gut and lung edema. VExUS grades the congestion with three Doppler waveforms behind a dilated IVC; de-resuscitation (the 'E' of ROSE) is the protocolized removal of that fluid once the patient no longer needs it.",
+  "whyThisMatters": "Fluid given in the first hours of shock saves lives; the same fluid still on board days later, after perfusion has been restored, independently predicts death in sepsis and ARDS. The resuscitation phase and the de-resuscitation phase are opposite tasks, and the transition between them is routinely missed — the patient stays net-positive on maintenance fluids, drug diluents and nutrition while nobody owns the fluid balance. VExUS gives an objective read on whether the venous side is congested; de-resuscitation is the deliberate correction.",
+  "clinicalTakeaway": "Track a running fluid balance on every ICU patient and name which fluid phase they are in. Once shock has resolved — off or weaning vasopressors, lactate cleared, perfusion adequate — set a negative daily balance target and diurese to it, using VExUS grade 2-3 or a plethoric IVC as supporting evidence of congestion. Stop escalating diuresis the moment perfusion suffers (rising lactate, falling output, hypernatremia): over-diuresis is real harm, not a lesser evil.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The physiology — congestion is not just \"too much fluid\""
+    },
+    {
+      "type": "text",
+      "text": "Organs are perfused by a pressure gradient, not by inflow alone. Renal perfusion pressure ≈ MAP − central venous (renal vein) pressure, so a rising CVP lowers perfusion pressure exactly as a falling MAP does. Sustained venous hypertension transmits backward into the renal capsule (a non-distensible envelope), the hepatic sinusoids, the gut wall and the dural sinuses — producing congestive nephropathy (the venous limb of cardiorenal syndrome), congestive hepatopathy, gut edema with impaired absorption, and reduced cerebral venous drainage. In decompensated heart failure, venous congestion tracks with worsening renal function better than cardiac index does."
+    },
+    {
+      "type": "text",
+      "text": "The corollary: after the resuscitation phase, a persistent positive cumulative fluid balance is independently associated with mortality in sepsis and ARDS, with more ventilator days, more AKI and more delirium — a dose-response relationship, not just a marker of sicker patients."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "VExUS — grading systemic venous congestion"
+    },
+    {
+      "type": "text",
+      "text": "VExUS combines the IVC diameter with pulsed-wave Doppler of three veins. The IVC is the gate: if it is < 2 cm, congestion is graded 0 regardless of the waveforms. If it is ≥ 2 cm (plethoric), the hepatic, portal and intrarenal venous waveforms are each classified normal / mild / severe."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Vein",
+        "Normal",
+        "Mild abnormality",
+        "Severe abnormality"
+      ],
+      "rows": [
+        [
+          "Hepatic vein",
+          "S wave larger than D wave; both below baseline (flow toward the heart)",
+          "S wave smaller than D wave, still antegrade",
+          "S-wave reversal (systolic flow away from the heart)"
+        ],
+        [
+          "Portal vein",
+          "Continuous, monophasic; pulsatility fraction < 30%",
+          "Pulsatility fraction 30-49%",
+          "Pulsatility fraction ≥ 50%, up to to-and-fro / reversed flow"
+        ],
+        [
+          "Intrarenal vein",
+          "Continuous venous flow throughout the cardiac cycle",
+          "Discontinuous, biphasic (separate systolic and diastolic components)",
+          "Discontinuous, monophasic (diastolic-only component)"
+        ]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Grade 0 — no congestion: IVC < 2 cm, or IVC ≥ 2 cm with all three waveforms normal.",
+        "Grade 1 — mild: IVC ≥ 2 cm plus only mild abnormalities in any vein.",
+        "Grade 2 — moderate: IVC ≥ 2 cm plus exactly one severe waveform abnormality.",
+        "Grade 3 — severe: IVC ≥ 2 cm plus two or three severe waveform abnormalities.",
+        "In the original post-cardiac-surgery cohort, Grade 3 predicted subsequent AKI (hazard ratio ≈ 3.7); Grades 0-1 were reassuring. Serial VExUS can be used to track decongestion — the waveforms normalise as venous pressure falls."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Confounders that break the waveforms: portal vein pulsatility is a false positive in thin, young, or high-output patients; hepatic vein tracings are distorted by isolated RV dysfunction, severe tricuspid regurgitation, arrhythmia and positive-pressure ventilation; intrarenal Doppler needs a usable kidney window and is unreliable in advanced CKD. VExUS is not validated in cirrhosis (portal hypertension), isolated right heart failure, or atrial fibrillation. Treat it as one input alongside the CVP trend, exam, cardiac POCUS and fluid balance — not a standalone trigger, and not yet shown in a randomised trial to improve patient outcomes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The four phases of fluid therapy (ROSE)"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Phase",
+        "Clinical state",
+        "Fluid strategy"
+      ],
+      "rows": [
+        [
+          "Resuscitation",
+          "Minutes-hours: shock, life-threatening hypoperfusion",
+          "Rapid boluses to restore perfusion; err toward giving fluid"
+        ],
+        [
+          "Optimization",
+          "Hours: unstable but no longer crashing",
+          "Cautious, titrated fluid only if fluid-responsive and perfusion still inadequate; reassess after each aliquot"
+        ],
+        [
+          "Stabilization",
+          "Days: stable, no shock",
+          "Maintenance and replacement only; aim for neutral or slightly negative daily balance; minimise creep"
+        ],
+        [
+          "Evacuation / de-escalation",
+          "Days-weeks: recovering, fluid-overloaded",
+          "Active removal of accumulated fluid — protocolised diuresis ± ultrafiltration; target a negative balance"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Malbrain's \"four D's\" run alongside the phases: the right Drug (crystalloid choice), Dose, Duration, and De-escalation — stopping fluids is as deliberate a decision as starting them."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "De-resuscitation at the bedside"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Gate check first: only de-resuscitate once shock has resolved — vasopressors off or clearly weaning, lactate cleared, extremities warm, urine output and mentation adequate. A patient still in the resuscitation or optimization phase should not be diuresed.",
+        "Own the balance: chart a running cumulative balance, weigh daily, and set an explicit target (e.g. −0.5 to −2 L/day, or a weight target).",
+        "Cut the inputs: stop maintenance fluids, switch to enteral free water, concentrate vasoactive and antibiotic infusions, review diluent volumes and blood-product load.",
+        "Diurese: loop diuretic by intermittent bolus or continuous infusion (DOSE trial: no outcome difference between the two, so choose by practicality). For diuretic resistance, add sequential nephron blockade — a thiazide (metolazone or IV chlorothiazide), acetazolamide (ADVOR: improved decongestion in acute HF), or hypertonic saline plus high-dose furosemide in selected patients. Add albumin only if hypoalbuminaemic and diuretic-resistant.",
+        "Ultrafiltration is for true diuretic failure or refractory oliguria, not first-line (CARRESS-HF favoured stepped pharmacologic care).",
+        "Reassess against a stop rule: rising lactate, falling cardiac output or stroke-volume variation climbing, new hypotension, acute rise in creatinine, hypernatraemia or a worsening metabolic alkalosis all mean back off."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "Over-diuresis causes intravascular depletion, low output, prerenal AKI and hypoperfusion — you can convert a congested-but-perfusing patient into a dry, shocked one. The goal is euvolaemia, not the most negative balance achievable. Congestion and hypoperfusion can coexist; decongest the venous side while defending MAP and perfusion, and stop when either endpoint is met."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Using VExUS to guide de-resuscitation"
+    },
+    {
+      "type": "list",
+      "items": [
+        "As a trigger: a plethoric IVC with VExUS Grade 2-3 in a patient with AKI or a stalled wean supports that congestion is contributing and that decongestion is reasonable to attempt.",
+        "As a monitor: repeat VExUS every 12-24 h through active diuresis — improving grade (portal pulsatility falling, hepatic S wave recovering, renal Doppler becoming continuous) is objective evidence the strategy is working.",
+        "As a brake interpretation aid: if the VExUS grade has normalised but the patient is still oliguric, the problem is no longer venous congestion — reassess for hypoperfusion, intrinsic AKI or obstruction rather than pushing more diuretic.",
+        "Caveat: VExUS-guided management has not yet been shown in a randomised trial to change mortality or renal recovery. It refines the assessment; it does not replace the fluid-balance chart, the perfusion exam, or clinical judgement about the phase the patient is in."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Evidence base"
+    },
+    {
+      "type": "list",
+      "items": [
+        "FACTT (NEJM 2006, ARDS): a conservative fluid strategy gave more ventilator-free and ICU-free days than a liberal strategy, with no increase in shock or dialysis and no mortality difference — the foundational trial for keeping recovering patients dry.",
+        "CLASSIC (NEJM 2022) and CLOVERS (NEJM 2023): in septic shock, a restrictive IV-fluid strategy did not reduce mortality versus liberal fluids, but did not harm — restriction is safe, benefit is on secondary endpoints.",
+        "Protocolised de-resuscitation cohorts (e.g. Bissell 2020, RADAR-2): associated with more ventilator-free days and faster fluid-balance correction; a mortality benefit is not established.",
+        "VExUS: Beaubien-Souligny 2020 derived the score and linked Grade 3 to post-cardiac-surgery AKI; subsequent case series and small studies support it as a congestion measure, with mixed performance outside cardiac surgery and RCTs of VExUS-guided care still pending.",
+        "ADVOR (NEJM 2022) and DOSE (NEJM 2011): acetazolamide add-on improves decongestion in acute HF; bolus vs infusion furosemide is a wash — informs the diuretic tactics above."
+      ]
+    }
+  ],
+  "related": [
+    "iv-fluids",
+    "shock-classification",
+    "aki-staging-rrt",
+    "albumin-furosemide-push-pull",
+    "heart-failure-continuum",
+    "pocus-guide"
+  ],
+  "buildNote": "Tier 2 (physiology + an emerging tool; evidence evolving — recheck when VExUS-guided RCTs report). Doppler grade definitions per the original VExUS publication; confounder list per Rola 2021. No single CV source guide — assembled from primary literature. Natural follow-ons: a dedicated diuretic-resistance / sequential nephron blockade card, and a cardiorenal syndrome type map."
+}

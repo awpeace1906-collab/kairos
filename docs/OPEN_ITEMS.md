@@ -14,14 +14,23 @@ modules — the care-setting lens is fully seeded. Uncommitted: 182 modules +
 manifest/search-index/sources-index (nav metadata; no `content_version` bumps).
 DIRECTIONS_FORWARD §1 fully shipped (care-setting lens + reference template + 87/87).
 Priority order for the next block:
-1. **Real content gaps** — VExUS / venous-congestion / de-resuscitation module;
-   the big unconverted CV guides (ballistics/blast, the 153 KB intoxicating-substances
-   reference, CV_Austere hazmat/toxidrome); higher-risk BRUE pathway stub.
+1. **Real content gaps** — the big unconverted CV guides (ballistics/blast, the
+   153 KB intoxicating-substances reference, CV_Austere hazmat/toxidrome);
+   higher-risk BRUE pathway stub. *(VExUS / venous-congestion / de-resuscitation
+   module — DONE 2026-09-07.)*
 2. **Small decisions** — "Flag as outdated" mailto stub → real destination;
    NIHSS band citation; PAS/pARC section placement; pre-arrival zone-reference-card flow.
 3. Parked per instruction: GitHub Pages hosting, REMOTE_BASE wiring.
 
 ## Progress log
+- 2026-09-07 — **New reference module: `venous-congestion-deresuscitation`** (Critical
+  Care, **286 total**). Venous congestion physiology (renal perfusion pressure =
+  MAP − CVP), the full VExUS grading system (IVC gate + hepatic/portal/intrarenal
+  Doppler normal/mild/severe table + Grades 0-3 + confounder callout), the ROSE
+  four-phase fluid model, a bedside de-resuscitation protocol with an over-diuresis
+  stop rule, VExUS-to-guide-diuresis integration, and the evidence base (FACTT,
+  CLASSIC/CLOVERS, ADVOR/DOSE, Beaubien-Souligny). Tier 2. Standard template
+  (whyThisMatters + clinicalTakeaway). validate 286/0, test 231/0.
 - 2026-09-07 — **`settingEmphasis` tagging completed: 285/285 modules.** Tagged the
   remaining 182 (Calculators 90, Peds Module 25, Procedures 8, Drug&Dosing 18,
   Reference Library 41) by clinical care setting, most-relevant-first over

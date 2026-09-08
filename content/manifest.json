@@ -2541,6 +2541,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-01"
     },
+    "reference-library/venous-congestion-deresuscitation": {
+      "content_version": 1,
+      "hash": "7c015f1e9a427643",
+      "path": "modules/reference-library/venous-congestion-deresuscitation.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
     "reference-library/ventilator-management": {
       "content_version": 4,
       "hash": "ad04ae555e0aca14",

@@ -6012,6 +6012,53 @@
       ]
     },
     {
+      "id": "venous-congestion-deresuscitation",
+      "title": "Venous Congestion, VExUS & De-resuscitation",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "VExUS",
+        "venous congestion",
+        "fluid balance",
+        "de-resuscitation",
+        "POCUS",
+        "AKI",
+        "cardiorenal",
+        "diuresis",
+        "ICU",
+        "critical care"
+      ],
+      "keywords": [
+        "hepatic vein Doppler S D reversal",
+        "portal vein pulsatility fraction 50%",
+        "intrarenal venous Doppler monophasic biphasic",
+        "IVC 2 cm plethora",
+        "VExUS grade 3 AKI",
+        "Beaubien-Souligny cardiac surgery",
+        "ROSE resuscitation optimization stabilization evacuation",
+        "positive fluid balance mortality sepsis ARDS",
+        "conservative fluid FACTT ventilator-free days",
+        "CLASSIC restrictive fluid septic shock",
+        "furosemide infusion diuretic resistance",
+        "renal perfusion pressure MAP minus CVP",
+        "VExUS",
+        "venous excess ultrasound",
+        "congestive nephropathy",
+        "cardiorenal syndrome fluid",
+        "de-resuscitation",
+        "fluid de-escalation",
+        "fluid overload ICU",
+        "ROSE fluid phases",
+        "fluid stewardship"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/venous-congestion-deresuscitation",
+      "settingEmphasis": [
+        "icu",
+        "ed"
+      ]
+    },
+    {
       "id": "advanced-ards-ventilation",
       "title": "Beyond Lung-Protective: APRV, Recruitment, Intraoperative PEEP",
       "section": "Reference Library",
