@@ -99,7 +99,7 @@ struct ReferenceBody: View {
 
     @ViewBuilder private func framedNote(_ label: String, _ text: String, emphasized: Bool = false) -> some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(label).font(.caption2).foregroundStyle(.secondary).tracking(0.6)
+            Text(label).font(Theme.mono(11)).foregroundStyle(.secondary).tracking(0.8)
             Text(text).font(.callout).fontWeight(emphasized ? .medium : .regular)
         }
         .padding(10)
@@ -121,7 +121,7 @@ struct BlockList: View {
     @ViewBuilder private func block(_ b: ReferenceDoc.Block) -> some View {
         switch b.type {
         case "heading":
-            Text(b.text ?? "").font(b.level == 2 ? .title3.bold() : .headline)
+            Text(b.text ?? "").font(Theme.display(b.level == 2 ? 19 : 16))
         case "text":
             Text(b.text ?? "")
         case "list":

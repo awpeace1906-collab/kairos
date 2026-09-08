@@ -4757,6 +4757,37 @@
       ]
     },
     {
+      "id": "pediatric-appendicitis-risk-calculator",
+      "title": "Pediatric Appendicitis Risk Calculator (pARC)",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "appendicitis",
+        "abdominal pain",
+        "RLQ pain",
+        "peds",
+        "imaging decision",
+        "risk model",
+        "ANC"
+      ],
+      "keywords": [
+        "seven variable logistic regression continuous percent risk",
+        "absolute neutrophil count square root transform",
+        "age sex duration guarding migration maximal RLQ tenderness pain with walking",
+        "seven risk categories 5 15 25 50 75 85 percent",
+        "children 5 to 18 years under 96 hours pain",
+        "pARC",
+        "appendicitis risk calculator",
+        "Kharbanda calculator",
+        "continuous appendicitis risk"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/pediatric-appendicitis-risk-calculator",
+      "settingEmphasis": [
+        "ed"
+      ]
+    },
+    {
       "id": "pediatric-appendicitis-score",
       "title": "Pediatric Appendicitis Score (PAS)",
       "section": "Peds Module",

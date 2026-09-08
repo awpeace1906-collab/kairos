@@ -37,6 +37,20 @@ table renderer polish; ios-ci compile fix; `methemoglobinemia`,
 built out (v2); NIHSS severity-band citation (v2).
 
 ## Progress log
+- 2026-09-08 — **pARC tool + home-screen design pass.** pARC is now interactive:
+  `pediatric-appendicitis-risk-calculator` (peds-tool + embedded formula calc)
+  built from the published Kharbanda 2018 coefficients (found in the NCT02633735
+  SAP / Appy-CDS Manual of Operations coefficient table) — age/sex as one
+  pre-resolved select, ANC term `min(1.77·√ANC, 6.62)` (= the paper's piecewise
+  rule), 7 risk bands. Verified live (high-risk case → 85.6%). `alvarado` v2 +
+  PAS v3 cross-link it. **Home redesign (web + iOS):** removed the duplicate
+  section list (the collapsible TOC) — one list, the section cards with the
+  core-question descriptions; **IBM Plex Sans + Mono bundled** (self-hosted TTFs
+  in `web/public/fonts/` + `ios/Sources/Fonts/`; SW → v6 precache; iOS registers
+  at launch) so type matches PALETTES.md; masthead with the ember "struck point"
+  tick; section cards carry their `--sec-*` tint as a left rule + mark + faint
+  wash; numbers/labels in Plex Mono; web filter chips only show while searching.
+  `Theme.display/sans/mono` helpers added on iOS. **309 modules** (pARC +1).
 - 2026-09-07 — **"Needs-input" batch (+1 → 308 total).** (1) "Flag as outdated"
   now opens a prefilled GitHub issue (`awpeace1906-collab/kairos`,
   labels content,needs-review, module id/version/dates/client in the body) —

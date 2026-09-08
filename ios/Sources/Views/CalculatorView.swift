@@ -101,7 +101,9 @@ struct CalculatorView: View {
                             Text(opt.label).tag(opt.valueString)
                         }
                     }
-                    .pickerStyle(.segmented)
+                    // Menu (not segmented): formula selects can carry wide sets
+                    // with long labels — e.g. pARC's 6 age/sex groups.
+                    .pickerStyle(.menu)
                 }
             } else {
                 ClearableField(

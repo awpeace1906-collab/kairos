@@ -15,16 +15,18 @@ struct HomeView: View {
     var body: some View {
         List {
             Section {
-                VStack(spacing: 2) {
-                    Text("Kairos").font(.system(size: 34, weight: .semibold))
-                    Text("the critical moment").font(.callout).italic().foregroundStyle(.secondary)
+                HStack(spacing: 9) {
+                    Text("Kairos").font(Theme.display(27))
+                    RoundedRectangle(cornerRadius: 2).fill(Theme.accent).frame(width: 8, height: 8)
+                    Text("the critical moment")
+                        .font(Theme.mono(12)).tracking(0.4).foregroundStyle(.secondary)
+                    Spacer()
                 }
-                .frame(maxWidth: .infinity)
                 .listRowSeparator(.hidden)
+                .listRowInsets(EdgeInsets(top: 6, leading: 20, bottom: 10, trailing: 20))
             }
 
             if query.isEmpty {
-                emptyStateTOC
                 sectionTiles
             } else {
                 searchResults
@@ -97,46 +99,38 @@ struct HomeView: View {
         .buttonStyle(.plain)
     }
 
-    // MARK: empty-state Section -> Category -> Item tree
-
-    private var emptyStateTOC: some View {
-        ForEach(content.searchIndex.toc(sections: content.sections, setting: lens)) { toc in
-            Section {
-                DisclosureGroup {
-                    ForEach(toc.categories) { cat in
-                        DisclosureGroup {
-                            ForEach(cat.items) { item in
-                                NavigationLink(item.title, value: Route.content(item.route))
-                            }
-                        } label: {
-                            Text("\(cat.title) (\(cat.items.count))").font(.subheadline)
-                        }
-                    }
-                } label: {
-                    Label("\(toc.title) (\(toc.count))", systemImage: Theme.sectionSymbol(toc.id))
-                        .font(.headline)
-                }
-            }
-        }
-    }
+    // MARK: the one list of sections, with the core-question descriptions
 
     private var sectionTiles: some View {
-        Section("Jump to a section") {
+        Section {
             ForEach(content.sections) { s in
                 NavigationLink(value: Route.section(s.id)) {
-                    HStack {
-                        Image(systemName: Theme.sectionSymbol(s.id))
-                            .foregroundStyle(Theme.sectionColor(s.id))
-                            .frame(width: 28)
+                    HStack(spacing: 13) {
+                        RoundedRectangle(cornerRadius: 5)
+                            .fill(Theme.sectionColor(s.id))
+                            .frame(width: 20, height: 20)
                         VStack(alignment: .leading, spacing: 2) {
-                            Text(s.title)
+                            HStack(alignment: .firstTextBaseline) {
+                                Text(s.title).font(.system(.body, weight: .semibold))
+                                Spacer()
+                                Text("\(sectionCount(s.title))")
+                                    .font(Theme.mono(12)).foregroundStyle(.secondary)
+                            }
                             Text(s.coreQuestion).font(.caption).foregroundStyle(.secondary)
                         }
                     }
+                    .padding(.vertical, 4)
                 }
+                .listRowBackground(Theme.sectionColor(s.id).opacity(0.06))
                 .accessibilityIdentifier("section-tile-\(s.id)")
             }
+        } header: {
+            Text("Browse").font(Theme.mono(11)).tracking(1).textCase(.uppercase)
         }
+    }
+
+    private func sectionCount(_ title: String) -> Int {
+        content.searchIndex.entries.lazy.filter { $0.section == title }.count
     }
 
     private func groupedBySection(_ entries: [SearchEntry]) -> [(String, [SearchEntry])] {

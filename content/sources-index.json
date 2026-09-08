@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 589,
+  "count": 592,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -2560,6 +2560,18 @@
       ]
     },
     {
+      "text": "Cotton DM, Vinson DR, Vazquez-Benitez G, et al. Validation of the Pediatric Appendicitis Risk Calculator (pARC) in a Community Emergency Department Setting. Ann Emerg Med. 2019;74(4):471-480",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "pediatric-appendicitis-risk-calculator",
+          "title": "Pediatric Appendicitis Risk Calculator (pARC)",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/pediatric-appendicitis-risk-calculator"
+        }
+      ]
+    },
+    {
       "text": "Critical Vector — NEXUS, Canadian C-Spine, CT Head & New Orleans Rules (verified against derivation/validation studies, July 2026)",
       "group": "Cohort, registry & systematic reviews",
       "usedBy": [
@@ -2676,6 +2688,18 @@
           "title": "Pediatric Appendicitis Score (PAS)",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/pediatric-appendicitis-score"
+        }
+      ]
+    },
+    {
+      "text": "Kharbanda AB, Vazquez-Benitez G, Ballard DW, et al. Development and Validation of a Novel Pediatric Appendicitis Risk Calculator (pARC). Pediatrics. 2018;141(4):e20172699",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "pediatric-appendicitis-risk-calculator",
+          "title": "Pediatric Appendicitis Risk Calculator (pARC)",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/pediatric-appendicitis-risk-calculator"
         }
       ]
     },
@@ -3900,6 +3924,18 @@
           "title": "Weight Zones & Equipment Sizing",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/pedi-tape-weight-zones"
+        }
+      ]
+    },
+    {
+      "text": "Appy-CDS Manual of Operations v19 (Feb 2018) / Statistical Analysis Plan for NCT02633735 — Table: pARC risk score equation from logistic regression analysis (intercept and beta coefficients reproduced here)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pediatric-appendicitis-risk-calculator",
+          "title": "Pediatric Appendicitis Risk Calculator (pARC)",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/pediatric-appendicitis-risk-calculator"
         }
       ]
     },

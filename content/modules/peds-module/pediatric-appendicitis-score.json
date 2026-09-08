@@ -7,9 +7,9 @@
   "aliases": ["PAS", "peds appendicitis", "Samuel score"],
   "tags": ["appendicitis", "abdominal pain", "RLQ pain", "peds", "imaging decision"],
   "contentType": "peds-tool",
-  "content_version": 2,
-  "last_reviewed": "2026-09-02",
-  "next_review_due": "2026-12-02",
+  "content_version": 3,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
   "review_tier": 1,
   "sources": [
     "Samuel M. J Pediatr Surg 2002",
@@ -18,13 +18,14 @@
     "Cotton DM et al. pARC community-ED validation. Ann Emerg Med 2019;74(4):471-480"
   ],
   "changelog": [
+    { "version": 3, "date": "2026-09-07", "change": "pARC is now an interactive calculator (`pediatric-appendicitis-risk-calculator`) — added it to sourceOfTruth and a pointer in the body; the descriptive comparison stays here." },
     { "version": 2, "date": "2026-09-02", "change": "Added the three-score comparison (Alvarado / PAS / pARC), the head-to-head AUC + decisiveness data (49% vs 23%), and sharpened per-tool pitfalls from the CV audit." },
     { "version": 1, "date": "2026-08-31", "change": "Initial entry — PAS filed in Peds Module nav per Peds_Module_Content_Spec.md." }
   ],
   "kind": "calculator",
   "purpose": "Fast ED risk stratification for appendicitis in children when clinical suspicion is already present. A LOW score does not reliably rule appendicitis out — do not treat it as reassurance.",
   "ageRange": "Children (~3-18 y)",
-  "sourceOfTruth": [],
+  "sourceOfTruth": ["pediatric-appendicitis-risk-calculator"],
   "body": [
     { "type": "heading", "level": 2, "text": "Three scores, three jobs — not interchangeable" },
     { "type": "table",
@@ -32,7 +33,7 @@
       "rows": [
         ["Alvarado (MANTRELS)", "8 items, 0–10 points (adult-derived, applied to kids by convention)", "Low-tech primary-care / outpatient settings with limited labs"],
         ["PAS (this tool)", "8 pediatric-focused items, 0–10 points", "Fast ED confirmation when clinical suspicion is already high"],
-        ["pARC (Pediatric Appendicitis Risk Calculator)", "7-variable logistic regression → continuous % risk (NOT a point score)", "The most individualized estimate; best for guiding the actual imaging decision in kids ≥ 5"]
+        ["pARC (Pediatric Appendicitis Risk Calculator) — now a live tool in this module", "7-variable logistic regression → continuous % risk (NOT a point score)", "The most individualized estimate; best for guiding the actual imaging decision in kids ≥ 5"]
       ]
     },
     { "type": "text", "text": "pARC's variables: sex, age, duration of pain, guarding, pain migration, maximal RLQ tenderness, and absolute neutrophil count (ANC) — ANC specifically, which is what separates it from both Alvarado and PAS." },

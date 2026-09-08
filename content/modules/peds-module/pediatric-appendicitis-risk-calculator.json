@@ -1,0 +1,118 @@
+{
+  "id": "pediatric-appendicitis-risk-calculator",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Pediatric Appendicitis Risk Calculator (pARC)",
+  "settingEmphasis": ["ed"],
+  "aliases": ["pARC", "appendicitis risk calculator", "Kharbanda calculator", "continuous appendicitis risk"],
+  "tags": ["appendicitis", "abdominal pain", "RLQ pain", "peds", "imaging decision", "risk model", "ANC"],
+  "keywords": ["seven variable logistic regression continuous percent risk", "absolute neutrophil count square root transform", "age sex duration guarding migration maximal RLQ tenderness pain with walking", "seven risk categories 5 15 25 50 75 85 percent", "children 5 to 18 years under 96 hours pain"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 1,
+  "sources": [
+    "Kharbanda AB, Vazquez-Benitez G, Ballard DW, et al. Development and Validation of a Novel Pediatric Appendicitis Risk Calculator (pARC). Pediatrics. 2018;141(4):e20172699",
+    "Appy-CDS Manual of Operations v19 (Feb 2018) / Statistical Analysis Plan for NCT02633735 — Table: pARC risk score equation from logistic regression analysis (intercept and beta coefficients reproduced here)",
+    "Cotton DM, Vinson DR, Vazquez-Benitez G, et al. Validation of the Pediatric Appendicitis Risk Calculator (pARC) in a Community Emergency Department Setting. Ann Emerg Med. 2019;74(4):471-480"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-07", "change": "Initial entry — the pARC logistic model built as an interactive calculator from the published coefficients (Kharbanda 2018 / NCT02633735 SAP). Age/sex group is a single pre-resolved select; the ANC term uses min(1.77·√ANC, 6.62), which is identical to the paper's piecewise definition since 1.77·√14 = 6.62." }
+  ],
+  "kind": "calculator",
+  "purpose": "Continuous, individualized probability of appendicitis in a child 5-18 years with < 96 h of pain. Unlike Alvarado and PAS this is a regression model, not a point score — it outputs a percent risk and is the most decision-actionable of the three for the imaging decision when an absolute neutrophil count is available.",
+  "ageRange": "Children 5-18 years, pain < 96 h (not validated outside this range)",
+  "sourceOfTruth": ["pediatric-appendicitis-score"],
+  "embeddedCalculator": {
+    "id": "pediatric-appendicitis-risk-calculator-calc",
+    "section": "Peds Module",
+    "category": "Peds Resuscitation & Decision Support",
+    "title": "Pediatric Appendicitis Risk Calculator (pARC)",
+    "contentType": "calculator",
+    "content_version": 1,
+    "review_tier": 1,
+    "last_reviewed": "2026-09-07",
+    "next_review_due": "2027-03-07",
+    "sources": ["Kharbanda AB et al. Pediatrics. 2018;141(4):e20172699", "Appy-CDS Manual of Operations v19 / NCT02633735 SAP (coefficient table)"],
+    "engine": "formula",
+    "purpose": "pARC logistic regression → percent probability of appendicitis.",
+    "inputs": [
+      { "key": "ageSex", "label": "Age & sex group", "type": "select", "options": [
+        { "label": "Female 5-7.9 y", "value": 0.38 },
+        { "label": "Female 8-11.9 y", "value": -0.72 },
+        { "label": "Female 12 y and older", "value": 0 },
+        { "label": "Male 5-7.9 y", "value": 0.61 },
+        { "label": "Male 8-13.9 y", "value": 0.56 },
+        { "label": "Male 14 y and older", "value": 1.28 }
+      ] },
+      { "key": "duration", "label": "Duration of pain", "type": "select", "options": [
+        { "label": "< 24 h", "value": 0 },
+        { "label": "24 to < 48 h", "value": 0.47 },
+        { "label": "48 to 96 h", "value": 0.10 }
+      ] },
+      { "key": "walking", "label": "Pain with walking / jumping / coughing", "type": "select", "options": [
+        { "label": "No", "value": 0 },
+        { "label": "Yes", "value": 1.05 }
+      ] },
+      { "key": "migration", "label": "History of pain migration to the RLQ", "type": "select", "options": [
+        { "label": "No", "value": 0 },
+        { "label": "Yes", "value": 0.46 }
+      ] },
+      { "key": "tenderness", "label": "Maximal tenderness in the RLQ", "type": "select", "options": [
+        { "label": "No", "value": 0 },
+        { "label": "Yes", "value": 1.14 }
+      ] },
+      { "key": "guarding", "label": "Abdominal guarding", "type": "select", "options": [
+        { "label": "No", "value": 0 },
+        { "label": "Yes", "value": 0.67 }
+      ] },
+      { "key": "anc", "label": "Absolute neutrophil count", "type": "number", "unit": "×10³/µL", "min": 0, "max": 40 }
+    ],
+    "formulas": [
+      { "key": "risk", "label": "pARC — probability of appendicitis", "expression": "100 / (1 + exp(-(-8.7 + ageSex + duration + walking + migration + tenderness + guarding + min(1.77 * sqrt(anc), 6.62))))", "unit": "%", "precision": 1 }
+    ],
+    "interpretation": [
+      { "forKey": "risk", "min": 0, "max": 4.9, "label": "< 5% — very low risk. Appendicitis very unlikely; discharge with return precautions and follow-up is generally reasonable without imaging.", "severity": "low" },
+      { "forKey": "risk", "min": 5, "max": 14.9, "label": "5-14% — low risk. Consider observation and serial exams over imaging; ultrasound if suspicion persists.", "severity": "low" },
+      { "forKey": "risk", "min": 15, "max": 24.9, "label": "15-24% — low-intermediate risk. Ultrasound first-line; observation / repeat exam an alternative.", "severity": "moderate" },
+      { "forKey": "risk", "min": 25, "max": 49.9, "label": "25-49% — intermediate risk. Ultrasound; surgical involvement as indicated by the study and course.", "severity": "moderate" },
+      { "forKey": "risk", "min": 50, "max": 74.9, "label": "50-74% — high-intermediate risk. Ultrasound and surgical consultation; CT or MRI if ultrasound is non-diagnostic.", "severity": "high" },
+      { "forKey": "risk", "min": 75, "max": 84.9, "label": "75-84% — high risk (validation cohort: ~2.6% negative-pathology rate). Surgical consultation; imaging often still obtained to confirm.", "severity": "high" },
+      { "forKey": "risk", "min": 85, "max": 100, "label": "≥ 85% — highest risk (validation cohort: ~1.2% negative-pathology rate, ~99.7% specificity). Surgical consultation; some centres proceed without further imaging.", "severity": "critical" }
+    ],
+    "notes": "Model: z = -8.7 + (age/sex term) + (duration term) + 1.05·walking + 0.46·migration + 1.14·RLQ-tenderness + 0.67·guarding + min(1.77·√ANC, 6.62); probability = 100 ÷ (1 + e^−z). ANC in ×10³/µL (= ×10⁹/L). If only WBC is available: ANC ≈ (−0.8783 + 1.1008·√WBC)² (WBC in ×10³/µL); if neither, the derivation used ANC = 7. The min(…, 6.62) cap is exactly the paper's piecewise rule because 1.77·√14 = 6.62. Coefficients are from the Kharbanda 2018 / NCT02633735 SAP coefficient table; the female age-8 band upper bound is taken as 12 y from the model's reference group (\"Male 14-18 / Female 12-18\"). Cross-check MDCalc for borderline values. NOT validated below 5 y or beyond 96 h of pain, or in pregnancy, IBD, prior abdominal surgery, or cystic fibrosis.",
+    "buildNote": "Formula engine. Age/sex is one pre-resolved select (each option's value = male-main 1.28 + age-main ± the male×[5-7.9] interaction −1.05, per the SAP table). ANC piecewise encoded as min(1.77·√ANC, 6.62). Seven risk bands per the paper's clinically actionable categories."
+  },
+  "body": [
+    { "type": "callout", "tone": "info", "text": "pARC is a regression model, not a point score. Enter the seven inputs and read the percent risk. It needs an absolute neutrophil count — if you only have a WBC, the ANC imputation is in the notes. Validated only for children 5-18 years with < 96 h of pain." },
+    { "type": "heading", "level": 2, "text": "How pARC compares" },
+    { "type": "table",
+      "columns": ["Tool", "Structure", "Best for"],
+      "rows": [
+        ["Alvarado (MANTRELS)", "8 items, 0-10 (adult-derived)", "Low-tech / outpatient settings with limited labs"],
+        ["PAS", "8 pediatric items, 0-10", "Fast ED first-pass when suspicion is already high"],
+        ["pARC (this tool)", "7-variable logistic regression → % risk", "The individualized imaging decision in kids ≥ 5 when an ANC is available"]
+      ]
+    },
+    { "type": "text", "text": "In the validation cohort pARC confidently classified nearly half of patients as clearly low-risk (< 15%) or clearly high-risk (≥ 85%), versus ~23% for a comparably confident PAS cutoff (< 3 or > 8). AUC 0.85 (Kharbanda 2018) to 0.89 (Cotton 2019, community EDs)." },
+    { "type": "heading", "level": 2, "text": "The model" },
+    { "type": "table",
+      "columns": ["Term", "Beta"],
+      "rows": [
+        ["Intercept", "−8.7"],
+        ["Female 5-7.9 y / 8-11.9 y / ≥12 y", "+0.38 / −0.72 / 0"],
+        ["Male 5-7.9 y / 8-13.9 y / ≥14 y", "+0.61 / +0.56 / +1.28"],
+        ["Duration <24 h / 24-<48 h / 48-96 h", "0 / +0.47 / +0.10"],
+        ["Pain with walking", "+1.05"],
+        ["Migration of pain to RLQ", "+0.46"],
+        ["Maximal tenderness in RLQ", "+1.14"],
+        ["Abdominal guarding", "+0.67"],
+        ["ANC (×10³/µL)", "+1.77·√ANC, capped at +6.62 (= the ANC ≥ 14 constant)"]
+      ]
+    },
+    { "type": "text", "text": "probability (%) = 100 ÷ (1 + e^−z), where z is the sum of the applicable terms." },
+    { "type": "callout", "tone": "warning", "text": "A low pARC does not rule appendicitis out in a child whose exam is worsening — it is one input. Do not apply it below 5 years (appendicitis is rarer and more atypical there) or beyond 96 h of pain, or in pregnancy, IBD, prior abdominal surgery, or cystic fibrosis. For the point-score alternative see the Pediatric Appendicitis Score." }
+  ],
+  "buildNote": "peds-tool with an embedded formula calculator (+ explanatory body — web renderPedsTool now renders both). Coefficients reproduced from the Kharbanda 2018 model as published in the NCT02633735 SAP coefficient table. One interpretive assumption is documented: the female age band upper bound of 12 y (from the model's reference group). Companion to `pediatric-appendicitis-score`; `alvarado` cross-links both."
+}

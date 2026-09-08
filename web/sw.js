@@ -3,13 +3,20 @@
 // spec, fallback #4). OTA content updates land in a separate runtime cache managed
 // by ContentStore; this SW just guarantees the shell and the bundled baseline.
 
-const SHELL_CACHE = "kairos-shell-v5";
+const SHELL_CACHE = "kairos-shell-v6";
 const SHELL = [
   "./",
   "./index.html",
   "./styles.css",
   "./manifest.webmanifest",
   "./public/icons/icon.svg",
+  "./public/fonts/IBMPlexSans-Regular.ttf",
+  "./public/fonts/IBMPlexSans-Medium.ttf",
+  "./public/fonts/IBMPlexSans-SemiBold.ttf",
+  "./public/fonts/IBMPlexSans-Bold.ttf",
+  "./public/fonts/IBMPlexMono-Regular.ttf",
+  "./public/fonts/IBMPlexMono-Medium.ttf",
+  "./public/fonts/IBMPlexMono-SemiBold.ttf",
   "./src/main.js",
   "./src/components.js",
   "./src/lib/contentStore.js",

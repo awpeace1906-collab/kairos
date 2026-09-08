@@ -49,6 +49,14 @@ enum Theme {
         }
     }
 
+    // MARK: type — IBM Plex Sans (UI) + IBM Plex Mono (numbers, labels).
+    // Mirrors web --font-sans / --font-mono. TTFs in ios/Sources/Fonts/ are
+    // registered at launch (KairosApp.registerBundledFonts). PostScript names
+    // are IBM Plex's abbreviated forms (…-SmBld, …-Medm).
+    static func display(_ size: CGFloat) -> Font { .custom("IBMPlexSans-SmBld", size: size) }
+    static func sans(_ size: CGFloat) -> Font { .custom("IBMPlexSans", size: size) }
+    static func mono(_ size: CGFloat) -> Font { .custom("IBMPlexMono", size: size) }
+
     static func severityColor(_ severity: String?) -> Color {
         switch severity {
         case "low":       return Color("SeverityLow", bundle: .main)      // #3F7A4E

@@ -1651,14 +1651,23 @@
       "review_tier": 1,
       "next_review_due": "2027-03-07"
     },
+    "peds-module/pediatric-appendicitis-risk-calculator": {
+      "content_version": 1,
+      "hash": "aefacd91a4eb99fe",
+      "path": "modules/peds-module/pediatric-appendicitis-risk-calculator.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-03-07"
+    },
     "peds-module/pediatric-appendicitis-score": {
-      "content_version": 2,
-      "hash": "4ec896492ae56fb5",
+      "content_version": 3,
+      "hash": "659c25702e8a4ca7",
       "path": "modules/peds-module/pediatric-appendicitis-score.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
       "review_tier": 1,
-      "next_review_due": "2026-12-02"
+      "next_review_due": "2027-03-07"
     },
     "peds-module/peds-cardiac-arrest": {
       "content_version": 1,

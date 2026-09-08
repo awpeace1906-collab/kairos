@@ -1,4 +1,5 @@
 import SwiftUI
+import CoreText
 
 @main
 struct KairosApp: App {
@@ -7,6 +8,22 @@ struct KairosApp: App {
     @Environment(\.scenePhase) private var scenePhase
     @AppStorage("kairos.onboarding.seen") private var onboardingSeen = false
     @State private var showOnboarding = false
+
+    init() { Self.registerBundledFonts() }
+
+    /// IBM Plex Sans + Mono ship as TTFs under Sources/Fonts/. Registering them
+    /// at process start (rather than via UIAppFonts) keeps project.yml's
+    /// generated Info.plist untouched.
+    private static func registerBundledFonts() {
+        let faces = [
+            "IBMPlexSans-Regular", "IBMPlexSans-Medium", "IBMPlexSans-SemiBold", "IBMPlexSans-Bold",
+            "IBMPlexMono-Regular", "IBMPlexMono-Medium", "IBMPlexMono-SemiBold",
+        ]
+        for name in faces {
+            guard let url = Bundle.main.url(forResource: name, withExtension: "ttf") else { continue }
+            CTFontManagerRegisterFontsForURL(url as CFURL, .process, nil)
+        }
+    }
 
     var body: some Scene {
         WindowGroup {
@@ -64,6 +81,9 @@ struct RootView: View {
                 }
             }
         }
+        // Body copy in IBM Plex Sans; views that need SF for a system control
+        // set their own .font() and win the cascade.
+        .font(Theme.sans(17))
     }
 }
 
