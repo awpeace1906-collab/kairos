@@ -1,0 +1,284 @@
+{
+  "id": "wound-ballistics",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
+  "settingEmphasis": [
+    "ed",
+    "prehospital",
+    "or"
+  ],
+  "aliases": [
+    "gunshot wound ballistics",
+    "permanent temporary cavity",
+    "bullet yaw tumble fragmentation",
+    "caliber wound profile",
+    "forensic range of fire",
+    "behind armor blunt trauma",
+    "retained bullet fragment",
+    "MRI retained ballistic fragment"
+  ],
+  "tags": [
+    "wound ballistics",
+    "gunshot wound",
+    "penetrating trauma",
+    "forensics",
+    "body armor",
+    "damage control surgery",
+    "trauma",
+    "ED",
+    "OR"
+  ],
+  "keywords": [
+    "kinetic energy half m v squared velocity dominates",
+    "crush permanent cavity stretch temporary cavity",
+    "yaw tumble point of maximum yaw energy transfer",
+    "fragmentation velocity threshold 2000 2200 fps cannelure",
+    "ballistic gelatin 10 percent FBI protocol calibration",
+    "hydrostatic shock Fackler Courtney debate",
+    "sectional density penetration ballistic coefficient drag",
+    "FMJ hollow point soft point military ball convention",
+    "abrasion collar soot stippling tattooing contact wound",
+    "behind armor blunt trauma BABT rib fracture pulmonary contusion",
+    "retained fragment removal indications lead toxicity spinal T12 L4",
+    "damage control surgery lethal triad abbreviated laparotomy"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Critical Vector — Wound Ballistics & Blast Injury Manual v6, Sections 1-6, 15-16",
+    "Fackler ML. Wound ballistics: a review of common misconceptions. JAMA. 1988; and US Army Wound Ballistics Laboratory gelatin / live-tissue testing",
+    "Rotman et al. Ballistic Injury Imaging: The Basics. (retained fragment + trajectory reconstruction)",
+    "WikEM — Wound Ballistics; Denver Health / Denver Health trauma conference terminal ballistics course material",
+    "AAST Critical Care Committee. Antibiotic prophylaxis in injury: clinical consensus document. PMC11149135",
+    "Marino et al. Magnetic Resonance Imaging of Patients With Retained Ballistic Projectiles. J Magn Reson Imaging. 2026; mriquestions.com MR Safety Bullets"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — converted from CV Wound Ballistics & Blast Injury Manual: wounding physics (crush vs stretch, yaw, fragmentation), caliber/construction profiles, tissue-specific patterns, forensic range-of-fire, behind-armor blunt trauma, retained-fragment workup, and antibiotic/damage-control principles."
+    }
+  ],
+  "summary": "Wounding reduces to two mechanisms — tissue crush (permanent cavity) and tissue stretch (temporary cavity) — and velocity, bullet construction, and yaw predict severity far better than caliber. Plus what the entrance wound tells you about range of fire, why an intact vest doesn't exclude internal injury, and when a retained fragment actually has to come out.",
+  "whyThisMatters": "The visible wound is a floor on the injury present, not a ceiling. Reasoning from mechanism and energy — how fast the round was going, how it was built, where along the track it dumped its energy — is what drives the search for occult injury, the debridement margins the surgeon needs, and the decision to image a normal-looking vessel next to a high-energy track. Getting the mental model right changes the workup before any imaging is back.",
+  "clinicalTakeaway": "Build the differential from mechanism: high-velocity rifle wounds carry temporary-cavity and fragmentation injury well beyond the visible track, especially in dense organs (liver, spleen, brain) and hollow viscera; handgun wounds are mostly permanent-crush. Examine and image for injury outside the obvious track, photograph and diagram discharge findings before cleaning (soot washes off, stippling does not), treat a reported armor hit as blunt trauma of unclear mechanism, and leave most retained fragments in place — remove only for progressive deficit, referable sepsis, lead toxicity, or an intracanal spinal fragment (T12-L4) with incomplete injury.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What actually wounds tissue"
+    },
+    {
+      "type": "text",
+      "text": "Wounding capacity begins with kinetic energy (KE = ½mv²) and velocity dominates — doubling mass doubles energy, doubling velocity quadruples it. What matters clinically is how much energy is deposited along the wound track, not muzzle energy. Wounding reduces to two physical mechanisms: crush (the permanent cavity, tissue destroyed by direct contact and the crushing stress field — this defines debridement margins) and stretch (the temporary cavity, radial displacement from transferred energy, collapsing back within 5-10 ms)."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Yaw / tumble: tissue is ~800× denser than air; gyroscopic stability is overwhelmed on impact. Most rifle bullets yaw within the first few centimeters; the point of maximum yaw — not the entry point — is usually where the temporary cavity peaks.",
+        "Fragmentation multiplies the permanent cavity — multiple divergent tracks from one entry, the most tissue destruction per unit of retained energy. It needs a velocity threshold (~2,000-2,200 fps); the same round can fragment at close range and produce a simple through-and-through at distance.",
+        "Deformation (hollow/soft point expansion) increases the permanent cavity 4-6× over a non-deforming bullet of the same caliber.",
+        "Stretch injures only tissue whose elastic limit it exceeds: elastic low-density tissue (lung, skeletal muscle) recoils with little lasting injury; dense encapsulated organs (liver, spleen, kidney, brain) fracture or burst; fluid/gas-distended hollow viscera can rupture at a distance like a hydraulic ram."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "The hydrostatic-shock debate (can a pressure wave injure tissue it never touches?) is genuinely unresolved — Fackler argued no, the Courtneys argue yes for high-energy rifle rounds. It does not change acute management: the same thorough exam for occult injury near a high-energy track applies either way. Most cited cavitation/penetration numbers come from 10% ordnance gelatin (the FBI protocol), which bounds plausible wounding behaviour rather than predicting any one patient's wound."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Caliber and construction profiles"
+    },
+    {
+      "type": "text",
+      "text": "Caliber alone predicts little; velocity, construction, and barrel length matter more than bore diameter. Figures are order-of-magnitude for common factory loads."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Cartridge class",
+        "Typical muzzle energy",
+        "Wounding pattern"
+      ],
+      "rows": [
+        [
+          "Common handgun (.38 Spl, 9 mm, .40, .45 ACP)",
+          "~200-500 ft-lb",
+          "Permanent crush track ± bullet expansion; minimal to no reliable temporary cavitation; often exits before completing a yaw cycle"
+        ],
+        [
+          ".357 Magnum",
+          "~535-550 ft-lb",
+          "Handgun-class profile but notably more permanent-cavity disruption at the top of the class"
+        ],
+        [
+          "5.56×45 NATO (intermediate rifle)",
+          "~1,150-1,300 ft-lb",
+          "Rapid yaw (often 7-12 cm), frequent fragmentation at the cannelure, large forward temporary cavity; fragmentation unreliable past ~150-200 yd"
+        ],
+        [
+          "7.62×39 (AK pattern)",
+          "~1,400-1,550 ft-lb",
+          "Later yaw onset, deeper permanent track, less fragmentation than 5.56 (heavier, more robust bullet)"
+        ],
+        [
+          "5.45×39 (AK-74)",
+          "~1,000-1,050 ft-lb",
+          "Reliably yaws with two temporary-cavity peaks (~100 mm, ~350 mm); the FMJ bullet usually stays intact despite its \"poison bullet\" reputation"
+        ],
+        [
+          ".308 Win / 7.62×51 NATO (full power)",
+          "~2,600-2,750 ft-lb",
+          "High retained energy at range; large temporary cavity with blunt extension into surrounding tissue planes"
+        ],
+        [
+          "12-gauge buckshot / slug",
+          "~40-55 ft-lb/pellet; ~2,400-2,700 ft-lb slug",
+          "Buckshot: multiple simultaneous crush tracks at close range. Slug: massive permanent cavity, limited penetration depth"
+        ]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Construction: FMJ resists deformation — narrow track, relies on yaw/velocity, may exit with retained energy (military ball, by international convention against expanding projectiles). Expanding (hollow/soft point) — wider, shorter track near entry, energy dumped early. Fragmenting — multiple divergent tracks.",
+        "Barrel length is a third variable: a 5.56 round that fragments reliably from a 14.5-20″ barrel can leave a 10-11″ short-barreled rifle already below the fragmentation threshold. Cartridge + range alone does not fully predict a wound."
+      ]
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Tissue / organ",
+        "Response to cavitation",
+        "Clinical note"
+      ],
+      "rows": [
+        [
+          "Skeletal muscle",
+          "Tolerates large temporary cavities with modest lasting injury",
+          "Debride only clearly non-viable tissue; visible damage overstates true injury"
+        ],
+        [
+          "Lung",
+          "Air-filled, elastic — absorbs stretch well; cavitation-resistant to GSW",
+          "But exquisitely sensitive to blast overpressure (see blast-injury)"
+        ],
+        [
+          "Liver, spleen, kidney",
+          "Dense, encapsulated — fracture/burst beyond the visible track",
+          "Solid-organ injury may extend well past the permanent track"
+        ],
+        [
+          "Bone",
+          "Brittle — fragments into secondary missiles",
+          "Expect a wound pattern more complex than the primary track over a long bone"
+        ],
+        [
+          "Bowel / hollow viscera",
+          "Fluid/gas reservoir — bursts distant from direct contact",
+          "Perforation may be remote from the entry-exit line; mandates a full bowel run at laparotomy"
+        ],
+        [
+          "Blood vessels",
+          "Elastic — pushed aside, then delayed thrombosis or false aneurysm",
+          "A normal-appearing vessel adjacent to a high-energy track still warrants imaging"
+        ],
+        [
+          "CNS",
+          "Rigid vault, no room for stretch — a small cavity can be immediately fatal",
+          "Intracranial temporary cavitation causes diffuse injury beyond the track"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Forensic range of fire"
+    },
+    {
+      "type": "text",
+      "text": "Range of fire is read from discharge effects around the entrance wound, and carries clinical value — contact and near-contact wounds add gas-injection and thermal injury that distant wounds do not."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Range",
+        "Approx. distance",
+        "Skin findings"
+      ],
+      "rows": [
+        [
+          "Contact",
+          "Muzzle on skin",
+          "Soot + seared charred margin; stellate tearing over bone from gas injection; possible muzzle imprint (can mimic an exit wound)"
+        ],
+        [
+          "Close",
+          "< ~30 cm",
+          "Abrasion collar + soot + stippling. Soot is water-soluble — photograph before cleaning"
+        ],
+        [
+          "Intermediate",
+          "~30-90 cm (handgun; further for rifle)",
+          "Abrasion collar + stippling (tattooing), no soot. Stippling is embedded and cannot be washed off"
+        ],
+        [
+          "Distant / indeterminate",
+          "Beyond stippling range",
+          "Abrasion collar only"
+        ]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Entrance wounds almost always show an abrasion collar; asymmetry points toward the muzzle direction. Wound size bears no reliable relationship to caliber.",
+        "Exit wounds are typically irregular, often larger, and lack an abrasion collar or discharge residue.",
+        "Photograph and diagram discharge findings before cleaning — soot is removable, stippling is not."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Body armor and behind-armor blunt trauma (BABT)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Armor that stops penetration does not stop all kinetic energy. BABT comes from rapid rear-face deformation transmitting a stress wave plus shear deformation of the body wall beneath an intact vest.",
+        "Reported injuries: rib fracture, pulmonary contusion, rarely direct cardiac injury. Systematic review found no confirmed BABT fatalities from properly rated soft armor, though severe case reports exist.",
+        "An intact vest with no penetration does not exclude significant intrathoracic or intra-abdominal injury — treat a reported high-energy hit on worn armor as blunt trauma of unclear mechanism. BABT is also a proposed thoracic transmission pathway for remote brain injury."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Imaging, retained fragments, and surgical principles"
+    },
+    {
+      "type": "list",
+      "items": [
+        "CT trajectory reconstruction: plot entry, retained fragments, and exit; a nonlinear or discontinuous track signals yaw, ricochet off bone, or fragmentation — search specifically for secondary bone/bullet fragments along a plausible deflected path.",
+        "e-FAST is the fastest bedside screen for hemoperitoneum, hemothorax, pneumothorax; a negative study does not exclude retroperitoneal, bowel, or delayed injury in a concerning mechanism.",
+        "Retained fragments — the reflex to remove every one is outdated. Established removal indications: progressive neurologic deterioration, sepsis referable to the fragment, lead toxicity, and (spinal) an intracanal fragment roughly T12-L4 with incomplete neurologic injury. Most others can be left in place.",
+        "MRI with retained fragments: long-standing blanket avoidance is being revised — most bullets/shot are non-ferromagnetic or too small for clinically significant RF heating, and composition can often be identified on prior CT/X-ray (or dual-energy CT). Known ferromagnetic fragments (some BBs, steel-core rounds) still warrant case-by-case radiology consult.",
+        "Tetanus: address immunization status in all penetrating ballistic/blast wounds regardless of appearance. Antibiotics for isolated low-velocity soft-tissue GSW: evidence inconclusive — decide on tissue destruction, contamination, time, location, velocity (a bullet is not sterilized by firing). Viscus involvement (bowel track): broad-spectrum coverage ~48-72 h once contamination is controlled.",
+        "Damage control surgery: in the acidotic, coagulopathic, hypothermic patient the goal shifts from definitive repair to abbreviated surgery — control hemorrhage, control contamination, pack, temporarily close, resuscitate in the ICU, planned re-look. Definitive repair in a patient still in the lethal triad is a recognized way to lose a salvageable patient on the table."
+      ]
+    }
+  ],
+  "related": [
+    "blast-injury",
+    "penetrating-regional-trauma",
+    "hemorrhagic-shock-mtp",
+    "trauma-primary-survey",
+    "efast-exam"
+  ],
+  "buildNote": "Tier 2 (physics/forensics are stable; retained-fragment MRI safety and antibiotic guidance are evolving — recheck). Converted from CV Wound Ballistics & Blast Injury Manual Sections 1-6, 15-16. Sections 7-9 → `penetrating-regional-trauma`; Sections 10-14, 19, 21 → `blast-injury`; MARCH / DCR / CBRN cross-linked, not duplicated. Not a targeting or weapons-design reference — wounding mechanics only, from open clinical/forensic/military-medical literature."
+}

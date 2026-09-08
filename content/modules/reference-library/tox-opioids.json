@@ -1,0 +1,143 @@
+{
+  "id": "tox-opioids",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Opioid Toxicity — Heroin, Fentanyl, Methadone, Buprenorphine",
+  "settingEmphasis": [
+    "ed",
+    "prehospital",
+    "icu"
+  ],
+  "aliases": [
+    "opioid toxidrome",
+    "naloxone dosing",
+    "fentanyl overdose",
+    "wooden chest syndrome",
+    "methadone QT torsades",
+    "buprenorphine precipitated withdrawal",
+    "tramadol seizure serotonin",
+    "loperamide cardiotoxicity"
+  ],
+  "tags": [
+    "toxicology",
+    "opioids",
+    "naloxone",
+    "fentanyl",
+    "methadone",
+    "buprenorphine",
+    "respiratory depression",
+    "ED",
+    "prehospital",
+    "ICU"
+  ],
+  "keywords": [
+    "miosis respiratory depression CNS depression hyporeflexia",
+    "naloxone 0.04 0.4 mg titrate to respiration not arousal observe 6 12 hours",
+    "naloxone infusion two thirds effective bolus per hour recurrent resedation",
+    "fentanyl chest wall rigidity wooden chest neuromuscular blockade intubation",
+    "carfentanil nitazenes standard naloxone still effective",
+    "methadone hERG QT prolongation torsades magnesium half life 8 59 hours",
+    "buprenorphine partial agonist ceiling precipitated withdrawal give more buprenorphine",
+    "tramadol seizure SNRI serotonin syndrome naloxone incomplete",
+    "loperamide hERG sodium channel QRS widening torsades bicarbonate",
+    "heroin noncardiogenic pulmonary edema 6-MAM take-home naloxone buprenorphine pathway"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Critical Vector — Intoxicating Substances Reference, Opioids class (4 entries)",
+    "Opioid Toxicity; Naloxone. StatPearls NBK551554 / NBK441910; WikEM Opioid Toxicity, 2026",
+    "Opioid Overdose Management: Guidelines and Antidote Advances. European Society of Medicine, 2025",
+    "Moss MJ, Warrick BJ, Nelson LS, et al. ACMT/AACT Position Statement: Preventing Occupational Fentanyl Exposure. Clin Toxicol. 2018;56(4):297-300",
+    "Buprenorphine/Naloxone Toxicity. Medscape/emedicine, 2025; Case reports on buprenorphine-precipitated fentanyl withdrawal, PMC 2023",
+    "Cardiac Arrhythmia Secondary to Loperamide Abuse and Toxicity. PMC, 2020"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — converted from CV Intoxicating Substances Reference: the shared mu-opioid toxidrome, naloxone principles, and per-agent features for heroin, fentanyl and analogs, methadone and buprenorphine, and tramadol and loperamide."
+    }
+  ],
+  "summary": "The mu-opioid toxidrome — miosis, respiratory depression, CNS depression — is remarkably consistent across the class; what differs is potency, receptor kinetics, half-life, and the non-opioid mechanisms layered on top (serotonergic for tramadol, hERG/sodium-channel for methadone and loperamide). Support ventilation first, titrate naloxone to breathing not arousal, and plan for re-sedation.",
+  "whyThisMatters": "Opioid overdose is the archetypal reversible prehospital and ED death, but the reversal has traps: over-reversal buys vomiting, aspiration, and a combative dependent patient; under-observation misses re-sedation when naloxone's 30-80 minute half-life is outlasted by the opioid; and the atypical agents (methadone QT, loperamide cardiotoxicity, tramadol seizures, fentanyl wooden chest) each need a step naloxone alone does not provide.",
+  "clinicalTakeaway": "Bag-valve-mask ventilate first — do not wait on the antidote. Give naloxone 0.04-0.4 mg IV/IM/IN titrated to adequate respiration, not full arousal, and observe 6-12 hours after reversal. Recurrent re-sedation → naloxone infusion (~two-thirds of the effective bolus per hour). Standard naloxone doses work for fentanyl analogs in the overwhelming majority — plan for repeat dosing and infusions, not bigger single boluses. Get an ECG in any opioid-toxic patient with a plausible methadone or loperamide history (QT/QRS), treat tramadol seizures with benzodiazepines, manage fentanyl wooden-chest with paralysis and intubation, and offer take-home naloxone plus a buprenorphine/OUD pathway to every patient before discharge.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The shared toxidrome and naloxone principles"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Toxidrome: miosis, reduced respiratory rate and depth, CNS depression, hyporeflexia. Pinpoint pupils + depressed respiration + depressed consciousness that reverse promptly with naloxone is as close to bedside-diagnostic as toxicology offers.",
+        "Ventilate first (BVM) while preparing naloxone. Naloxone 0.04-0.4 mg IV/IM/IN, titrate to respiration (goal: breathing, not arousal — over-reversal in a dependent patient causes vomiting, aspiration, agitation).",
+        "Observe 6-12 h post-reversal (naloxone t½ 30-80 min vs longer opioid duration). Recurrent re-sedation despite boluses → naloxone infusion, typically ~2/3 of the effective bolus dose per hour.",
+        "Noncardiogenic pulmonary edema (\"heroin lung\") shortly after use: supportive oxygenation/ventilation, not diuretics.",
+        "Before discharge: offer take-home naloxone and a buprenorphine / OUD-treatment pathway to every patient with OUD regardless of stated interest."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Agent-specific features"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Agent",
+        "Distinguishing feature",
+        "Management specifics"
+      ],
+      "rows": [
+        [
+          "Heroin",
+          "Prodrug → 6-MAM (heroin-specific urine marker, detectable only hours) → morphine. Track marks, skin-popping scars; noncardiogenic pulmonary edema is a recognized complication",
+          "Standard naloxone titration; observe 6-12 h. NCPE → oxygen/ventilation support, not diuretics"
+        ],
+        [
+          "Fentanyl & analogs (carfentanil, nitazenes)",
+          "50-100× morphine (carfentanil ~10,000×). Rapid-onset apnea WITHOUT the gradual sedation curve, often in supply-linked clusters. Chest-wall rigidity (\"wooden chest\") after rapid high-dose exposure can prevent BVM ventilation",
+          "Standard naloxone doses ARE effective — but more patients need an infusion than a single bolus. Wooden chest unresponsive to naloxone → neuromuscular blockade + intubation (reversal is too slow for an obstructed airway). Fentanyl test strips as discharge counseling"
+        ],
+        [
+          "Methadone",
+          "Full mu agonist + NMDA antagonism + hERG K-channel blockade → QT prolongation and torsades disproportionate to opioid effect. Half-life 8-59 h, accumulates — overdose more dangerous and prolonged than single-dose potency suggests",
+          "Naloxone titrated to respiration, usually much higher cumulative doses + an infusion. Get an ECG for QTc. Torsades → magnesium, overdrive pacing / isoproterenol, correct electrolytes, avoid other QT-prolonging agents. IV buprenorphine is an emerging alternative for methadone-induced respiratory depression"
+        ],
+        [
+          "Buprenorphine",
+          "High-affinity partial mu agonist with a respiratory-depression ceiling — safer as monotherapy, but precipitates withdrawal by displacing full agonists (heroin, fentanyl, methadone). Long duration (24+ h). Ceiling is lost when combined with other CNS depressants",
+          "Precipitated withdrawal in a patient on full agonists: supportive care, and — counterintuitively — continued or escalated buprenorphine dosing resolves it faster than stopping. The instinct to stop the causative drug is backwards"
+        ],
+        [
+          "Tramadol",
+          "Weak mu agonist whose analgesia depends on SNRI activity — causes seizures and serotonin syndrome independent of any co-ingestant. Seizures in an otherwise mild opioid toxidrome point directly at tramadol",
+          "Benzodiazepines for seizures; naloxone helps the opioid component but NOT the SNRI-mediated seizure/serotonin risk. Serotonin syndrome → benzodiazepines, cyproheptadine if refractory, stop all serotonergic co-meds"
+        ],
+        [
+          "Loperamide",
+          "Peripherally restricted at therapeutic dose; grossly supratherapeutic misuse (>100 mg/day, hundreds of tablets) saturates P-glycoprotein → CNS entry + hERG K-channel and sodium-channel blockade — a dual-channel cardiotoxicity unique among opioids here. QRS widening + QT prolongation + torsades/VT in someone using an antidiarrheal at absurd doses is the signature",
+          "Continuous cardiac monitoring, correct K/Mg. Sodium bicarbonate for QRS widening; magnesium and overdrive pacing for torsades. Treat as a sodium-channel-blocker / QT-prolonging overdose. Ask about dose, not just drug name"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "Do not over-anchor on \"naloxone won't work on fentanyl\" — it does, at standard doses, in the overwhelming majority of cases. The real practice shift is infrastructure: plan for repeat dosing and infusions. And titrate to respiration, not wakefulness."
+    }
+  ],
+  "related": [
+    "toxidromes-and-overdoses",
+    "cows",
+    "tox-stimulants",
+    "tox-sedative-hypnotics",
+    "hunter-serotonin"
+  ],
+  "buildNote": "Tier 2 (naloxone dosing and the fentanyl-supply picture evolve; IV buprenorphine for respiratory depression is emerging — recheck). Converted from CV Intoxicating Substances Reference, Opioids class. Detailed buprenorphine initiation / low-dose induction for OUD is a separate module TBD. Kratom (opioid-adjacent) is covered in `tox-alcohols-anticholinergics-other`."
+}

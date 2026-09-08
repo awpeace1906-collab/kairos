@@ -1,0 +1,136 @@
+{
+  "id": "tox-dissociatives-hallucinogens",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Dissociative & Hallucinogen Toxicity — Ketamine, PCP, DXM, N2O, LSD, NBOMe",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
+  "aliases": [
+    "PCP toxicity",
+    "ketamine intoxication",
+    "vertical nystagmus dissociative",
+    "dextromethorphan robotripping",
+    "nitrous oxide B12 subacute combined degeneration",
+    "LSD bad trip talk-down",
+    "NBOMe N-bomb toxicity",
+    "serotonin toxicity hallucinogen"
+  ],
+  "tags": [
+    "toxicology",
+    "dissociatives",
+    "hallucinogens",
+    "ketamine",
+    "PCP",
+    "nitrous oxide",
+    "NBOMe",
+    "psychedelics",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "NMDA antagonist dissociation catatonia vertical rotary nystagmus",
+    "PCP violent agitation emergence reaction ketamine cystitis",
+    "dextromethorphan NMDA serotonin reuptake serotonin syndrome plateaus",
+    "nitrous oxide oxidizes B12 cobalt functional deficiency subacute combined degeneration normal serum B12",
+    "empiric high-dose IV B12 nitrous myelopathy normal MRI does not exclude",
+    "classic psychedelic 5-HT2A low acute toxicity talk-down benzodiazepines",
+    "NBOMe sold as acid seizures hyperthermia rhabdomyolysis severe hypertension fatalities",
+    "toxic leukoencephalopathy NBOMe status epilepticus"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Critical Vector — Intoxicating Substances Reference, Dissociatives + Hallucinogens classes (4 entries)",
+    "Ketamine and Phencyclidine (PCP). Merck Manual Professional Edition, 2026",
+    "Recreational Nitrous Oxide-Induced Subacute Combined Degeneration. PMC, 2021; Clinical-Radiological Dissociation in Nitrous Oxide-Induced SCD. PMC, 2020",
+    "Serotonergic Psychedelics: A Comparative Review. ScienceDirect, 2024",
+    "NBOMe Toxicity and Fatalities: A Review of the Literature. Tower Health, 2021",
+    "Fatal Outcome of Status Epilepticus, Hyperthermia, Rhabdomyolysis After 25I-NBOMe Ingestion. Neurology, 2014"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — converted from CV Intoxicating Substances Reference: NMDA-antagonist dissociatives (ketamine/PCP, DXM, nitrous oxide) and serotonergic hallucinogens (classic psychedelics vs NBOMe designer analogs)."
+    }
+  ],
+  "summary": "Two families that overlap in street use but not in danger. NMDA-antagonist dissociatives produce vertical/rotary nystagmus, dissociation, and (PCP especially) violent agitation; nitrous oxide's real hazard is a functional B12 deficiency causing subacute combined degeneration. Classic psychedelics (LSD, psilocybin, mescaline) have a near-zero direct-toxicity record — but NBOMe compounds sold as \"acid\" are a genuine toxicologic emergency.",
+  "whyThisMatters": "The clinical failure modes are opposite ends of a spectrum: treating a self-limited classic-psychedelic panic reaction as a medical emergency, versus treating an NBOMe or synthetic-cathinone presentation as \"just a bad trip\" when it is a stimulant-hallucinogen hybrid that has killed patients despite aggressive care. And nitrous-oxide myelopathy is missed for weeks because the serum B12 is often normal and the drug is invisible to tox screens.",
+  "clinicalTakeaway": "Check for vertical or rotary nystagmus — it is the fastest bedside clue to the dissociative class. Manage dissociative agitation and emergence reactions with a quiet low-stimulation environment plus benzodiazepines. For classic psychedelics, a calm room and reassurance (\"talk-down\") outperforms medication for most presentations; escalate to benzodiazepines only for agitation that does not settle, and reconsider the substance (NBOMe, adulterant) or an unmasked psychiatric illness if the course is severe or prolonged. Treat a \"bad acid trip\" with seizures, hyperthermia, severe hypertension, and rhabdomyolysis as NBOMe until proven otherwise — aggressive benzodiazepines, cooling, IV fluids. Start empiric high-dose IV B12 for suspected nitrous-oxide subacute combined degeneration without waiting for a level or MRI.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Dissociatives (NMDA antagonists)"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Agent",
+        "Distinguishing feature",
+        "Management"
+      ],
+      "rows": [
+        [
+          "Ketamine & PCP",
+          "Vertical or rotary nystagmus + dissociative/catatonic state (most other intoxications give horizontal nystagmus if any). PCP: prominent, prolonged, violent, unpredictable agitation (added dopaminergic/sigma activity). Emergence reaction — bizarre behavior/psychosis specifically during recovery. Chronic ketamine → ulcerative cystitis (dysuria, frequency, hematuria)",
+          "Quiet, low-stimulation environment; benzodiazepines for agitation or significant emergence phenomena. Supportive care for hypertension/tachycardia (usually self-limited). Severe refractory agitation → antipsychotics or, rarely, airway control. Evaluate a chronic ketamine user with dysuria/hematuria for ketamine cystitis, not routine UTI"
+        ],
+        [
+          "Dextromethorphan (DXM)",
+          "NMDA antagonist (morphinan, negligible mu activity at misuse doses) + serotonin reuptake inhibition → real serotonin-syndrome risk, especially with MAOIs/SSRIs. Dose-dependent dissociative \"plateaus\"",
+          "Supportive care, benzodiazepines for agitation. Screen for serotonin syndrome with co-ingested SSRIs/MAOIs → benzodiazepines, cyproheptadine if refractory, stop serotonergic co-meds"
+        ],
+        [
+          "Nitrous oxide (N2O)",
+          "Weak NMDA antagonist / GABA-A modulator, rapid on/off. Real hazard: irreversibly oxidizes the cobalt in vitamin B12 → functional B12 deficiency. Subacute combined degeneration (ascending paresthesias, gait ataxia, absent reflexes over days-weeks) in a young person with a NORMAL-to-borderline serum B12. Not on tox screens. Closed-space use → asphyxiation risk",
+          "Acute: remove from exposure, supportive observation, assess for hypoxia. Suspected SCD → empiric high-dose IV B12 without waiting for confirmatory testing (irreversible injury risk with delay); MRI spine may show cord signal change but a normal MRI does not exclude it"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hallucinogens (5-HT2A agonists)"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Agent",
+        "Distinguishing feature",
+        "Management"
+      ],
+      "rows": [
+        [
+          "LSD, psilocybin, mescaline (classic psychedelics)",
+          "Low acute medical toxicity — no documented LSD fatality from direct pharmacologic toxicity. Most ED visits are acute anxiety/panic (\"bad trip\"), trauma from impaired judgment, or unmasked psychiatric illness. True serotonin toxicity uncommon alone (reported with LSD + serotonergic antidepressants)",
+          "\"Talk-down\" in a calm, low-stimulation environment is first-line and resolves most presentations without medication. Benzodiazepines for agitation/anxiety unresponsive to reassurance. Screen for trauma and co-ingestants — abnormal vitals are rarely from the psychedelic itself. Prolonged psychosis → psych evaluation, consider an alternative diagnosis or a misrepresented substance"
+        ],
+        [
+          "NBOMe (25I-, 25C-NBOMe, \"N-bomb\", \"smiles\")",
+          "Full 5-HT2A agonist with far greater affinity than LSD; sold on blotter AS LSD. Stimulant-heavy toxidrome: tachycardia (~62%), hypertension (~52%), hallucinations (~81%), agitation, seizures, hyperthermia, rhabdomyolysis, and death (9 fatalities in a 42-case review). A patient who believes they took \"acid\" but has seizures, hyperthermia, severe hypertension, and rhabdomyolysis almost certainly did not — this is essentially diagnostic of NBOMe. Toxic leukoencephalopathy on imaging in severe survivors",
+          "Aggressive benzodiazepines for agitation, seizures, hypertension/tachycardia — a stimulant-hallucinogen hybrid, not a \"wait it out\" bad trip. Active cooling; IV fluids for rhabdomyolysis. Treat any suspected NBOMe presentation as a serious toxicologic emergency from the outset — status epilepticus, severe hyperthermia, and multi-organ failure have been fatal despite aggressive care"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "A normal serum B12 does not rule out nitrous-oxide cord disease — it is functional cobalamin activity, not the serum level, that is impaired. Treat the clinical syndrome and start B12 while workup is pending. Separately: \"bad acid trip\" with seizures and hyperthermia is a red flag, not a description — real LSD essentially never does this."
+    }
+  ],
+  "related": [
+    "toxidromes-and-overdoses",
+    "hunter-serotonin",
+    "tox-stimulants",
+    "tox-sedative-hypnotics",
+    "status-epilepticus-adult"
+  ],
+  "buildNote": "Tier 2 (dissociative management is stable; recreational nitrous-oxide myelopathy and NBOMe epidemiology are active literature — recheck). Converted from CV Intoxicating Substances Reference, Dissociatives + Hallucinogens classes. Ketamine as a therapeutic agent (procedural sedation, RSI, analgesia) is covered separately in the AnesCalc drug card and procedures."
+}

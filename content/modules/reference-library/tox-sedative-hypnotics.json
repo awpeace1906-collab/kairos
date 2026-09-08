@@ -1,0 +1,114 @@
+{
+  "id": "tox-sedative-hypnotics",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Sedative-Hypnotic Toxicity — Benzodiazepines, Barbiturates, GHB",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
+  "aliases": [
+    "benzodiazepine overdose",
+    "flumazenil contraindications",
+    "barbiturate overdose",
+    "Z-drug overdose",
+    "GHB coma",
+    "GHB withdrawal",
+    "phenobarbital urinary alkalinization"
+  ],
+  "tags": [
+    "toxicology",
+    "sedative-hypnotics",
+    "benzodiazepines",
+    "barbiturates",
+    "GHB",
+    "flumazenil",
+    "withdrawal",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "GABA-A positive allosteric modulator ceiling effect respiratory depression",
+    "benzodiazepine isolated overdose safe co-ingestant drives fatalities",
+    "flumazenil relatively contraindicated mixed overdose chronic use seizure QRS NNH 50",
+    "barbiturate no ceiling effect channel duration cardiogenic shock lethal",
+    "phenobarbital urinary alkalinization multi-dose activated charcoal enterohepatic hemodialysis",
+    "GHB GABA-B agonist half life 27 30 minutes abrupt coma abrupt awakening",
+    "GHB not detected routine screen bradycardia atropine",
+    "GHB withdrawal life-threatening high-dose benzodiazepines baclofen barbiturate thiopental"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Critical Vector — Intoxicating Substances Reference, Sedative-Hypnotics class (3 entries)",
+    "Sedative-Hypnotic Drug Overdose. AMBOSS, 2025",
+    "Flumazenil in Benzodiazepine Overdose. CMAJ. 2016;188(17-18):e537 (meta-analysis, NNH ~50)",
+    "Gamma-Hydroxybutyrate Toxicity. StatPearls NBK430781; Medscape/emedicine",
+    "Acute Toxicity and Withdrawal Syndromes Related to GHB and Its Analogues. PubMed, 2011",
+    "Vos CF, et al. Successful Treatment of Severe, Treatment-Resistant GHB Withdrawal Through Thiopental-Coma. J Addict Med. 2021"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — converted from CV Intoxicating Substances Reference: benzodiazepines (and the flumazenil caveat), barbiturates and Z-drugs, and GHB/GBL/1,4-butanediol including its distinct withdrawal emergency."
+    }
+  ],
+  "summary": "A shared CNS-depressant toxidrome over agents with sharply different safety margins. Isolated benzodiazepine or Z-drug overdose is one of the safer ingestions in toxicology (a respiratory-depression ceiling); isolated barbiturate overdose is genuinely lethal (no ceiling). GHB is defined by its kinetics — abrupt coma, abrupt awakening — and its withdrawal is a separate, life-threatening emergency.",
+  "whyThisMatters": "The mental model that \"sedatives are basically safe\" is true for benzodiazepines and Z-drugs alone and dangerously false for barbiturates and for any sedative co-ingested with alcohol or opioids — which is most real overdoses. Two specific traps: reaching for flumazenil in a mixed or chronic-use overdose (where the antidote causes more harm than the drug), and mistaking GHB withdrawal for a milder cousin of alcohol withdrawal when it is faster in onset and just as lethal.",
+  "clinicalTakeaway": "Supportive care — airway positioning, monitoring, and intubation for genuine airway compromise — covers the large majority. Deep coma, hyperreflexia/clonus, or cardiovascular instability in a supposed isolated benzodiazepine overdose means look for a co-ingestant, not severe benzodiazepine toxicity. Reserve flumazenil for isolated, benzodiazepine-naive, iatrogenic reversal and call poison control first. Treat isolated barbiturate overdose as potentially lethal — ventilatory and vasopressor support, and for phenobarbital urinary alkalinization plus multi-dose activated charcoal (hemodialysis if refractory). Recognize the abrupt-coma / abrupt-awakening GHB pattern, and treat GHB withdrawal aggressively with high-dose benzodiazepines, escalating faster than an alcohol-withdrawal protocol.",
+  "body": [
+    {
+      "type": "table",
+      "columns": [
+        "Agent",
+        "Mechanism / toxidrome",
+        "Management"
+      ],
+      "rows": [
+        [
+          "Benzodiazepines",
+          "GABA-A positive allosteric modulator (increases channel opening frequency) — a respiratory-depression ceiling as monotherapy. Isolated overdose: sedation, ataxia, slurred speech, rarely more. Co-ingestion (alcohol, opioids) removes the safety margin and drives most fatal benzodiazepine-involved deaths",
+          "Supportive care suffices for most. GI decontamination not routine (aspiration risk). Flumazenil is RELATIVELY CONTRAINDICATED in unknown/mixed overdose, chronic use, seizure history, or QRS prolongation — precipitates seizures and life-threatening withdrawal; meta-analysis found more serious adverse events than placebo (NNH ~50). Reserve for isolated, benzo-naive, iatrogenic reversal; consult poison control. Intubate for true airway compromise (usually a co-ingestant)"
+        ],
+        [
+          "Barbiturates",
+          "Increase GABA-A channel-opening DURATION and directly activate the channel at high dose — NO ceiling effect, narrow therapeutic index. Dose-dependent progression: sedation → respiratory failure → hypotension → cardiogenic shock; potentially fatal in isolated ingestion",
+          "Airway/ventilatory support, vasopressors for cardiogenic shock. For phenobarbital specifically: urinary alkalinization + multi-dose activated charcoal (enterohepatic recirculation, pH-dependent renal clearance). Extracorporeal removal (hemodialysis/hemoperfusion) for massive refractory toxicity"
+        ],
+        [
+          "Z-drugs (zolpidem, zaleplon, eszopiclone)",
+          "Selective alpha-1 GABA-A subunit — behave like low-toxicity benzodiazepines as monotherapy; coma / respiratory depression / cardiovascular instability rare alone",
+          "Supportive care. Flumazenil may be cautiously considered for isolated Z-drug overdose (cross-reacts at the benzodiazepine site) with the same seizure/withdrawal caveats — no effect on barbiturates (separate receptor site)"
+        ],
+        [
+          "GHB / GBL / 1,4-butanediol",
+          "GABA-B agonist at exogenous concentrations (GBL and 1,4-BD are prodrugs). Very short half-life (~27-30 min) → narrow, unpredictable dose-response. Signature: abrupt-onset coma with rapid spontaneous recovery — deeply unresponsive one hour, abruptly awake and trying to self-extubate the next. Not detected on routine screens",
+          "Supportive care, no antidote; airway support / ventilation for severe intoxication. Bradycardia → atropine; hypotension → IV fluids. Because of the abrupt-awakening pattern, sedation is often unnecessary during ventilation — plan for sudden extubation attempts"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "GHB withdrawal is a distinct, life-threatening emergency (unlike acute GHB intoxication). It can progress within hours of last use to severe agitation, autonomic instability, and delirium resembling severe alcohol withdrawal — but faster in onset and needing benzodiazepine dosing that goes higher and faster than alcohol-withdrawal protocols. Refractory cases have used barbiturates, baclofen, propofol, dexmedetomidine, or thiopental-induced burst-suppression coma."
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Reach for flumazenil far less often than intuition suggests. In real-world mixed overdoses — which is most of them — the antidote causes more harm than the drug it is reversing."
+    }
+  ],
+  "related": [
+    "toxidromes-and-overdoses",
+    "ciwa-ar",
+    "tox-opioids",
+    "tox-dissociatives-hallucinogens",
+    "status-epilepticus-adult"
+  ],
+  "buildNote": "Tier 2 (management is stable; flumazenil evidence and GHB-withdrawal protocols evolve slowly — recheck). Converted from CV Intoxicating Substances Reference, Sedative-Hypnotics class. GHB withdrawal could support a dedicated withdrawal-management module alongside alcohol withdrawal."
+}

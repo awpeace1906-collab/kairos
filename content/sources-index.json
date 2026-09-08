@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 489,
+  "count": 543,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -54,6 +54,18 @@
           "title": "Respiratory Distress Syndrome (RDS)",
           "section": "Peds Module",
           "route": "/peds-module/neonatology/neonatal-rds"
+        }
+      ]
+    },
+    {
+      "text": "AAST Critical Care Committee. Antibiotic prophylaxis in injury: clinical consensus document. PMC11149135",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "wound-ballistics",
+          "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/wound-ballistics"
         }
       ]
     },
@@ -898,6 +910,18 @@
       ]
     },
     {
+      "text": "EAST Practice Management Guideline — Penetrating Zone II Neck Trauma; NCBI Bookshelf Neck Trauma (StatPearls)",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "penetrating-regional-trauma",
+          "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/penetrating-regional-trauma"
+        }
+      ]
+    },
+    {
       "text": "Ely EW et al. JAMA 2001; SCCM PADIS 2018 guideline",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1198,6 +1222,18 @@
       ]
     },
     {
+      "text": "Lavonas EJ, et al. 2023 AHA Focused Update on Management of Cardiac Arrest / Life-Threatening Toxicity Due to Poisoning. Circulation. 2023;148(16):e149-e184",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "tox-stimulants",
+          "title": "Stimulant Toxicity — Cocaine, Amphetamines, MDMA, Cathinones",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-stimulants"
+        }
+      ]
+    },
+    {
       "text": "Lichtenstein D. BLUE protocol, Chest 2008; FLORALI (NEJM 2015); 3CPO trial; Surviving Sepsis 2026 (HFNC)",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1278,6 +1314,18 @@
           "title": "Fetal Heart Rate Monitoring (NICHD)",
           "section": "Reference Library",
           "route": "/reference-library/obstetric-gynecologic/efm-fetal-heart-rate"
+        }
+      ]
+    },
+    {
+      "text": "Opioid Overdose Management: Guidelines and Antidote Advances. European Society of Medicine, 2025",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "tox-opioids",
+          "title": "Opioid Toxicity — Heroin, Fentanyl, Methadone, Buprenorphine",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-opioids"
         }
       ]
     },
@@ -1734,6 +1782,18 @@
           "title": "Heart Failure — Chronic to Acute",
           "section": "Reference Library",
           "route": "/reference-library/cardiac-ecg/heart-failure-continuum"
+        }
+      ]
+    },
+    {
+      "text": "Fackler ML. Wound ballistics: a review of common misconceptions. JAMA. 1988; and US Army Wound Ballistics Laboratory gelatin / live-tissue testing",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "wound-ballistics",
+          "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/wound-ballistics"
         }
       ]
     },
@@ -2434,6 +2494,18 @@
       ]
     },
     {
+      "text": "Flumazenil in Benzodiazepine Overdose. CMAJ. 2016;188(17-18):e537 (meta-analysis, NNH ~50)",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "tox-sedative-hypnotics",
+          "title": "Sedative-Hypnotic Toxicity — Benzodiazepines, Barbiturates, GHB",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-sedative-hypnotics"
+        }
+      ]
+    },
+    {
       "text": "Gawande AA et al. J Am Coll Surg 2007; Regenbogen SE et al. (validation) Ann Surg 2009",
       "group": "Cohort, registry & systematic reviews",
       "usedBy": [
@@ -2550,6 +2622,18 @@
           "title": "HEART Score for Major Cardiac Events",
           "section": "Calculators",
           "route": "/calculators/cardiovascular-chest-pain-arrhythmia/heart-score"
+        }
+      ]
+    },
+    {
+      "text": "Toxicity of Synthetic Cannabinoids in K2/Spice: A Systematic Review. PMC, 2023",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "tox-cannabinoids-inhalants",
+          "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-cannabinoids-inhalants"
         }
       ]
     },
@@ -2886,6 +2970,18 @@
           "title": "Vecuronium",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/neuromuscular-blockers/vecuronium"
+        }
+      ]
+    },
+    {
+      "text": "ATLS (10th ed.) — tension pneumothorax and pericardial tamponade management",
+      "group": "Reference texts & drug libraries",
+      "usedBy": [
+        {
+          "id": "penetrating-regional-trauma",
+          "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/penetrating-regional-trauma"
         }
       ]
     },
@@ -3568,6 +3664,18 @@
       ]
     },
     {
+      "text": "Acute Toxicity and Withdrawal Syndromes Related to GHB and Its Analogues. PubMed, 2011",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-sedative-hypnotics",
+          "title": "Sedative-Hypnotic Toxicity — Benzodiazepines, Barbiturates, GHB",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-sedative-hypnotics"
+        }
+      ]
+    },
+    {
       "text": "ADA. Diabetes Care in the Hospital: Standards of Care in Diabetes 2026. Diabetes Care 2026;49(Suppl 1):S339-S351",
       "group": "Other primary sources",
       "usedBy": [
@@ -3636,6 +3744,18 @@
           "title": "Alvarado Score",
           "section": "Calculators",
           "route": "/calculators/gi-renal-metabolic/alvarado"
+        }
+      ]
+    },
+    {
+      "text": "Anticholinergic Intoxication. EMCrit/IBCC, 2025; Physostigmine in Anticholinergic Poisoning: An Old Antidote with Resurgence. PMC, 2020",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-alcohols-anticholinergics-other",
+          "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-alcohols-anticholinergics-other"
         }
       ]
     },
@@ -3720,6 +3840,18 @@
           "title": "White Phosphorus & Incendiary Casualties",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/incendiary-chemical-burns"
+        }
+      ]
+    },
+    {
+      "text": "Axelsson et al. Underwater Blast Injury: A Review of Standards; SCUBADOC Diving Medicine Online, Underwater Blast Injuries",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "blast-injury",
+          "title": "Blast Injury — Taxonomy, Primary Blast & Blast TBI",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/blast-injury"
         }
       ]
     },
@@ -3844,6 +3976,18 @@
       ]
     },
     {
+      "text": "Buprenorphine/Naloxone Toxicity. Medscape/emedicine, 2025; Case reports on buprenorphine-precipitated fentanyl withdrawal, PMC 2023",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-opioids",
+          "title": "Opioid Toxicity — Heroin, Fentanyl, Methadone, Buprenorphine",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-opioids"
+        }
+      ]
+    },
+    {
       "text": "Bywaters EG, Beall D. Crush injuries with impairment of renal function. Br Med J. 1941;1(4185):427-432",
       "group": "Other primary sources",
       "usedBy": [
@@ -3876,6 +4020,18 @@
           "title": "Caprini Score (Surgical VTE Risk)",
           "section": "Calculators",
           "route": "/calculators/anesthesia-airway-or/caprini-vte"
+        }
+      ]
+    },
+    {
+      "text": "Cardiac Arrhythmia Secondary to Loperamide Abuse and Toxicity. PMC, 2020",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-opioids",
+          "title": "Opioid Toxicity — Heroin, Fentanyl, Methadone, Buprenorphine",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-opioids"
         }
       ]
     },
@@ -4032,6 +4188,18 @@
           "title": "Cormack-Lehane Classification",
           "section": "Calculators",
           "route": "/calculators/anesthesia-airway-or/cormack-lehane"
+        }
+      ]
+    },
+    {
+      "text": "Courtney & Courtney. The Complexity of Biomechanics Causing Primary Blast Induced TBI. Front Neurol. 2015; Rosenfeld et al. Neurological Effects of Blast Injury",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "blast-injury",
+          "title": "Blast Injury — Taxonomy, Primary Blast & Blast TBI",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/blast-injury"
         }
       ]
     },
@@ -4276,6 +4444,78 @@
       ]
     },
     {
+      "text": "Critical Vector — Intoxicating Substances Reference, Cannabinoids + Inhalants classes (3 entries)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-cannabinoids-inhalants",
+          "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-cannabinoids-inhalants"
+        }
+      ]
+    },
+    {
+      "text": "Critical Vector — Intoxicating Substances Reference, Dissociatives + Hallucinogens classes (4 entries)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-dissociatives-hallucinogens",
+          "title": "Dissociative & Hallucinogen Toxicity — Ketamine, PCP, DXM, N2O, LSD, NBOMe",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-dissociatives-hallucinogens"
+        }
+      ]
+    },
+    {
+      "text": "Critical Vector — Intoxicating Substances Reference, Opioids class (4 entries)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-opioids",
+          "title": "Opioid Toxicity — Heroin, Fentanyl, Methadone, Buprenorphine",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-opioids"
+        }
+      ]
+    },
+    {
+      "text": "Critical Vector — Intoxicating Substances Reference, Sedative-Hypnotics class (3 entries)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-sedative-hypnotics",
+          "title": "Sedative-Hypnotic Toxicity — Benzodiazepines, Barbiturates, GHB",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-sedative-hypnotics"
+        }
+      ]
+    },
+    {
+      "text": "Critical Vector — Intoxicating Substances Reference, Stimulants class (7 substances)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-stimulants",
+          "title": "Stimulant Toxicity — Cocaine, Amphetamines, MDMA, Cathinones",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-stimulants"
+        }
+      ]
+    },
+    {
+      "text": "Critical Vector — Intoxicating Substances Reference: Alcohol & Toxic Alcohols, Anticholinergics, Nicotine, Kratom, Anabolic-Androgenic Steroids (6 entries)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-alcohols-anticholinergics-other",
+          "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-alcohols-anticholinergics-other"
+        }
+      ]
+    },
+    {
       "text": "Critical Vector — IV Fluids & Volume Resuscitation (verified vs fluid-composition references, CHEST/6S, PROPPR, Bickell, PAMPer/COMBAT/RePHILL, TCCC)",
       "group": "Other primary sources",
       "usedBy": [
@@ -4516,6 +4756,42 @@
       ]
     },
     {
+      "text": "Critical Vector — Wound Ballistics & Blast Injury Manual v6, Sections 1-6, 15-16",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "wound-ballistics",
+          "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/wound-ballistics"
+        }
+      ]
+    },
+    {
+      "text": "Critical Vector — Wound Ballistics & Blast Injury Manual v6, Sections 10-14, 19, 21",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "blast-injury",
+          "title": "Blast Injury — Taxonomy, Primary Blast & Blast TBI",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/blast-injury"
+        }
+      ]
+    },
+    {
+      "text": "Critical Vector — Wound Ballistics & Blast Injury Manual v6, Sections 7-9",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "penetrating-regional-trauma",
+          "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/penetrating-regional-trauma"
+        }
+      ]
+    },
+    {
       "text": "Crowe G, Atterton B, Roofthooft E, et al; PROSPECT Working Group (ESRA). Pain management after elective caesarean section under neuraxial anaesthesia — updated SR and PROSPECT recommendations. Anaesthesia 2026;81:819-839",
       "group": "Other primary sources",
       "usedBy": [
@@ -4578,6 +4854,18 @@
           "title": "Pediatric Resuscitation — 2025 ERC Changes",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/erc-2025-pediatric-life-support"
+        }
+      ]
+    },
+    {
+      "text": "DoD Directive 6025.21E blast injury taxonomy, summarized in Blast Injury Research Coordinating Office reference; Kim & Nguyen, Blast Injuries: A Review",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "blast-injury",
+          "title": "Blast Injury — Taxonomy, Primary Blast & Blast TBI",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/blast-injury"
         }
       ]
     },
@@ -4672,6 +4960,18 @@
       ]
     },
     {
+      "text": "EAST Landmark Papers — Mangled Extremity (Bosse et al.; Helfet et al.)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "penetrating-regional-trauma",
+          "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/penetrating-regional-trauma"
+        }
+      ]
+    },
+    {
       "text": "Einersen PM et al. Rapid TEG thresholds for goal-directed resuscitation. J Trauma Acute Care Surg 2017;82(1):114-119",
       "group": "Other primary sources",
       "usedBy": [
@@ -4708,6 +5008,30 @@
       ]
     },
     {
+      "text": "Ethylene Glycol Toxicity. StatPearls NBK537009, 2022; Diagnostics — Toxic Alcohols. Taming the SRU, 2019",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-alcohols-anticholinergics-other",
+          "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-alcohols-anticholinergics-other"
+        }
+      ]
+    },
+    {
+      "text": "Fatal Outcome of Status Epilepticus, Hyperthermia, Rhabdomyolysis After 25I-NBOMe Ingestion. Neurology, 2014",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-dissociatives-hallucinogens",
+          "title": "Dissociative & Hallucinogen Toxicity — Ketamine, PCP, DXM, N2O, LSD, NBOMe",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-dissociatives-hallucinogens"
+        }
+      ]
+    },
+    {
       "text": "FDA — first freeze-dried plasma product licensed in the U.S. (Ezplaz), July 29 2026",
       "group": "Other primary sources",
       "usedBy": [
@@ -4728,6 +5052,18 @@
           "title": "HEART Score for Major Cardiac Events",
           "section": "Calculators",
           "route": "/calculators/cardiovascular-chest-pain-arrhythmia/heart-score"
+        }
+      ]
+    },
+    {
+      "text": "Fomepizole for Ethylene Glycol and Methanol Poisoning. N Engl J Med, 2009; EXTRIP toxic-alcohol recommendations",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-alcohols-anticholinergics-other",
+          "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-alcohols-anticholinergics-other"
         }
       ]
     },
@@ -4764,6 +5100,18 @@
           "title": "Vasoactive-Inotropic Score (VIS)",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/dosing-fluid-math/vasoactive-inotropic-score"
+        }
+      ]
+    },
+    {
+      "text": "Gamma-Hydroxybutyrate Toxicity. StatPearls NBK430781; Medscape/emedicine",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-sedative-hypnotics",
+          "title": "Sedative-Hypnotic Toxicity — Benzodiazepines, Barbiturates, GHB",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-sedative-hypnotics"
         }
       ]
     },
@@ -4864,6 +5212,18 @@
       ]
     },
     {
+      "text": "Hopkinson-Cranz cube-root scaling law (ScienceDirect Topics, Scaled Distance overview)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "blast-injury",
+          "title": "Blast Injury — Taxonomy, Primary Blast & Blast TBI",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/blast-injury"
+        }
+      ]
+    },
+    {
       "text": "Hunt WE, Hess RM. J Neurosurg 1968",
       "group": "Other primary sources",
       "usedBy": [
@@ -4948,6 +5308,42 @@
       ]
     },
     {
+      "text": "Kauvar et al. Utility of the Mangled Extremity Severity Score in Predicting Amputation in Military Lower Extremity Arterial Injury. Ann Vasc Surg",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "penetrating-regional-trauma",
+          "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/penetrating-regional-trauma"
+        }
+      ]
+    },
+    {
+      "text": "Kelkar AH, et al. An Outbreak of Synthetic Cannabinoid-Associated Coagulopathy in Illinois. N Engl J Med. 2018",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-cannabinoids-inhalants",
+          "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-cannabinoids-inhalants"
+        }
+      ]
+    },
+    {
+      "text": "Ketamine and Phencyclidine (PCP). Merck Manual Professional Edition, 2026",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-dissociatives-hallucinogens",
+          "title": "Dissociative & Hallucinogen Toxicity — Ketamine, PCP, DXM, N2O, LSD, NBOMe",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-dissociatives-hallucinogens"
+        }
+      ]
+    },
+    {
       "text": "Killip T, Kimball JT. Am J Cardiol 1967",
       "group": "Other primary sources",
       "usedBy": [
@@ -5016,6 +5412,18 @@
           "title": "Neuraxial / Deep Blocks on Anticoagulants (ASRA 5th ed)",
           "section": "Procedures",
           "route": "/procedures/regional-anesthesia-ultrasound/neuraxial-anticoagulation"
+        }
+      ]
+    },
+    {
+      "text": "Kratom (Mitragyna speciosa): Friend or Foe? Psychiatrist.com, 2023; Kratom Toxicity. WikEM, 2026; Anabolic Androgenic Steroid-Induced Hepatotoxicity. ScienceDirect, 2016",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-alcohols-anticholinergics-other",
+          "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-alcohols-anticholinergics-other"
         }
       ]
     },
@@ -5092,6 +5500,18 @@
       ]
     },
     {
+      "text": "LITFL — REBOA in resuscitation; Journal of Trauma Injury, Case Series of Zone III REBOA in Traumatic Shock",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "penetrating-regional-trauma",
+          "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/penetrating-regional-trauma"
+        }
+      ]
+    },
+    {
       "text": "Liu YC et al. World J Emerg Med 2012;3(2):114-117",
       "group": "Other primary sources",
       "usedBy": [
@@ -5160,6 +5580,30 @@
           "title": "Mallampati Score",
           "section": "Calculators",
           "route": "/calculators/anesthesia-airway-or/mallampati"
+        }
+      ]
+    },
+    {
+      "text": "Managing Intoxications with Nicotine-Containing E-Liquids. Taylor & Francis, 2022",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-alcohols-anticholinergics-other",
+          "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-alcohols-anticholinergics-other"
+        }
+      ]
+    },
+    {
+      "text": "Marino et al. Magnetic Resonance Imaging of Patients With Retained Ballistic Projectiles. J Magn Reson Imaging. 2026; mriquestions.com MR Safety Bullets",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "wound-ballistics",
+          "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/wound-ballistics"
         }
       ]
     },
@@ -5296,6 +5740,18 @@
       ]
     },
     {
+      "text": "Moss MJ, Warrick BJ, Nelson LS, et al. ACMT/AACT Position Statement: Preventing Occupational Fentanyl Exposure. Clin Toxicol. 2018;56(4):297-300",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-opioids",
+          "title": "Opioid Toxicity — Heroin, Fentanyl, Methadone, Buprenorphine",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-opioids"
+        }
+      ]
+    },
+    {
       "text": "Multisociety Clinical Practice Guidance for Safe Use of GLP-1 RAs in the Perioperative Period. Clin Gastroenterol Hepatol 2024",
       "group": "Other primary sources",
       "usedBy": [
@@ -5308,6 +5764,18 @@
       ]
     },
     {
+      "text": "Murray A, Traylor J. Caffeine Toxicity. StatPearls NBK532910, 2025",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-stimulants",
+          "title": "Stimulant Toxicity — Cocaine, Amphetamines, MDMA, Cathinones",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-stimulants"
+        }
+      ]
+    },
+    {
       "text": "National Heart, Lung, and Blood Institute ARDS Clinical Trials Network. Comparison of two fluid-management strategies in acute lung injury (FACTT). N Engl J Med. 2006;354:2564-2575",
       "group": "Other primary sources",
       "usedBy": [
@@ -5316,6 +5784,18 @@
           "title": "Venous Congestion, VExUS & De-resuscitation",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/venous-congestion-deresuscitation"
+        }
+      ]
+    },
+    {
+      "text": "NBOMe Toxicity and Fatalities: A Review of the Literature. Tower Health, 2021",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-dissociatives-hallucinogens",
+          "title": "Dissociative & Hallucinogen Toxicity — Ketamine, PCP, DXM, N2O, LSD, NBOMe",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-dissociatives-hallucinogens"
         }
       ]
     },
@@ -5370,6 +5850,18 @@
           "title": "NIH Stroke Scale (NIHSS)",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/nihss"
+        }
+      ]
+    },
+    {
+      "text": "Opioid Toxicity; Naloxone. StatPearls NBK551554 / NBK441910; WikEM Opioid Toxicity, 2026",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-opioids",
+          "title": "Opioid Toxicity — Heroin, Fentanyl, Methadone, Buprenorphine",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-opioids"
         }
       ]
     },
@@ -5626,6 +6118,18 @@
       ]
     },
     {
+      "text": "Prosser JM, Nelson LS. The Toxicology of Bath Salts: A Review of Synthetic Cathinones. J Med Toxicol. 2012;8(1):33-42",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-stimulants",
+          "title": "Stimulant Toxicity — Cocaine, Amphetamines, MDMA, Cathinones",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-stimulants"
+        }
+      ]
+    },
+    {
       "text": "Rady MY et al. Am J Emerg Med 1994",
       "group": "Other primary sources",
       "usedBy": [
@@ -5650,6 +6154,18 @@
       ]
     },
     {
+      "text": "Recreational Nitrous Oxide-Induced Subacute Combined Degeneration. PMC, 2021; Clinical-Radiological Dissociation in Nitrous Oxide-Induced SCD. PMC, 2020",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-dissociatives-hallucinogens",
+          "title": "Dissociative & Hallucinogen Toxicity — Ketamine, PCP, DXM, N2O, LSD, NBOMe",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-dissociatives-hallucinogens"
+        }
+      ]
+    },
+    {
       "text": "Reed MJ et al. Emerg Med J 2005",
       "group": "Other primary sources",
       "usedBy": [
@@ -5670,6 +6186,18 @@
           "title": "Anticoagulation Reversal Reference",
           "section": "Reference Library",
           "route": "/reference-library/anticoagulation-labs/anticoagulation-reversal"
+        }
+      ]
+    },
+    {
+      "text": "Richards JR, Laurin EG. Methamphetamine Toxicity; Sympathomimetic Toxicity. StatPearls",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-stimulants",
+          "title": "Stimulant Toxicity — Cocaine, Amphetamines, MDMA, Cathinones",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-stimulants"
         }
       ]
     },
@@ -5730,6 +6258,30 @@
           "title": "Free Water Deficit",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/dosing-fluid-math/free-water-deficit"
+        }
+      ]
+    },
+    {
+      "text": "Rosenbaum C, Boyer EW. MDMA (Ecstasy) Toxicity. StatPearls NBK538482, 2024",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-stimulants",
+          "title": "Stimulant Toxicity — Cocaine, Amphetamines, MDMA, Cathinones",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-stimulants"
+        }
+      ]
+    },
+    {
+      "text": "Rotman et al. Ballistic Injury Imaging: The Basics. (retained fragment + trajectory reconstruction)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "wound-ballistics",
+          "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/wound-ballistics"
         }
       ]
     },
@@ -5830,6 +6382,30 @@
       ]
     },
     {
+      "text": "Sedative-Hypnotic Drug Overdose. AMBOSS, 2025",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-sedative-hypnotics",
+          "title": "Sedative-Hypnotic Toxicity — Benzodiazepines, Barbiturates, GHB",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-sedative-hypnotics"
+        }
+      ]
+    },
+    {
+      "text": "Serotonergic Psychedelics: A Comparative Review. ScienceDirect, 2024",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-dissociatives-hallucinogens",
+          "title": "Dissociative & Hallucinogen Toxicity — Ketamine, PCP, DXM, N2O, LSD, NBOMe",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-dissociatives-hallucinogens"
+        }
+      ]
+    },
+    {
       "text": "Sessler CN et al. Am J Respir Crit Care Med 2002",
       "group": "Other primary sources",
       "usedBy": [
@@ -5838,6 +6414,18 @@
           "title": "RASS (Richmond Agitation-Sedation Scale)",
           "section": "Calculators",
           "route": "/calculators/icu-critical-care/rass"
+        }
+      ]
+    },
+    {
+      "text": "Severe Methemoglobinemia Secondary to Isobutyl Nitrite Toxicity. PMC, 2021",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-cannabinoids-inhalants",
+          "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-cannabinoids-inhalants"
         }
       ]
     },
@@ -5862,6 +6450,18 @@
           "title": "ECG Library — Key Patterns",
           "section": "Reference Library",
           "route": "/reference-library/cardiac-ecg/ecg-library"
+        }
+      ]
+    },
+    {
+      "text": "Sorensen CJ, et al. Cannabinoid Hyperemesis Syndrome: Diagnosis, Pathophysiology, and Treatment. J Med Toxicol. 2017;13:71-87",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-cannabinoids-inhalants",
+          "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-cannabinoids-inhalants"
         }
       ]
     },
@@ -6070,6 +6670,18 @@
       ]
     },
     {
+      "text": "Toluene Toxicity. Medscape/emedicine, 2025; Possible Biological Mechanisms of Sudden Sniffing Death Syndrome",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-cannabinoids-inhalants",
+          "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-cannabinoids-inhalants"
+        }
+      ]
+    },
+    {
       "text": "Toolis M, et al. Airway management practice in Australian and New Zealand ICUs, 2026 survey (n=211)",
       "group": "Other primary sources",
       "usedBy": [
@@ -6078,6 +6690,18 @@
           "title": "The Difficult Airway — DAS 2025 & the Failed-Airway Drill",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/anatomically-difficult-airway"
+        }
+      ]
+    },
+    {
+      "text": "Turkish Journal of Emergency Medicine. Pediatric blast injuries: distinguishing features and unique challenges. 2026; ACEP Pediatric Blast Injury fact sheet",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "blast-injury",
+          "title": "Blast Injury — Taxonomy, Primary Blast & Blast TBI",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/blast-injury"
         }
       ]
     },
@@ -6114,6 +6738,18 @@
           "title": "Drug Interactions — Nine High-Yield Pairs",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/drug-interactions-high-yield"
+        }
+      ]
+    },
+    {
+      "text": "Vos CF, et al. Successful Treatment of Severe, Treatment-Resistant GHB Withdrawal Through Thiopental-Coma. J Addict Med. 2021",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tox-sedative-hypnotics",
+          "title": "Sedative-Hypnotic Toxicity — Benzodiazepines, Barbiturates, GHB",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-sedative-hypnotics"
         }
       ]
     },
@@ -6198,6 +6834,18 @@
           "title": "FOUR Score (Coma Scale)",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/four-score"
+        }
+      ]
+    },
+    {
+      "text": "WikEM — Wound Ballistics; Denver Health / Denver Health trauma conference terminal ballistics course material",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "wound-ballistics",
+          "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/wound-ballistics"
         }
       ]
     },

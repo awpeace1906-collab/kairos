@@ -1,0 +1,227 @@
+{
+  "id": "penetrating-regional-trauma",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
+  "settingEmphasis": [
+    "ed",
+    "or",
+    "prehospital"
+  ],
+  "aliases": [
+    "penetrating neck trauma zones",
+    "neck trauma hard soft signs",
+    "no zone approach CTA neck",
+    "tension pneumothorax tamponade",
+    "REBOA zones",
+    "mangled extremity severity score",
+    "MESS amputation",
+    "vascular injury extremity"
+  ],
+  "tags": [
+    "penetrating trauma",
+    "neck trauma",
+    "thoracic trauma",
+    "REBOA",
+    "mangled extremity",
+    "vascular injury",
+    "trauma",
+    "ED",
+    "OR"
+  ],
+  "keywords": [
+    "neck zone I II III cricoid mandible angle skull base",
+    "platysma violation CT angiography 90 100 percent sensitivity",
+    "hard signs shock pulsatile bleeding expanding hematoma bruit thrill",
+    "soft signs stable hematoma hemoptysis dysphonia subcutaneous air",
+    "tension pneumothorax needle finger decompression Beck triad tamponade",
+    "cardiac box resuscitative thoracotomy pericardiocentesis",
+    "REBOA zone I subclavian celiac zone III renal bifurcation zone II avoid",
+    "MESS skeletal soft tissue ischemia shock age score 7",
+    "blast crush polytrauma massive transfusion higher amputation"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Critical Vector — Wound Ballistics & Blast Injury Manual v6, Sections 7-9",
+    "EAST Practice Management Guideline — Penetrating Zone II Neck Trauma; NCBI Bookshelf Neck Trauma (StatPearls)",
+    "LITFL — REBOA in resuscitation; Journal of Trauma Injury, Case Series of Zone III REBOA in Traumatic Shock",
+    "Kauvar et al. Utility of the Mangled Extremity Severity Score in Predicting Amputation in Military Lower Extremity Arterial Injury. Ann Vasc Surg",
+    "EAST Landmark Papers — Mangled Extremity (Bosse et al.; Helfet et al.)",
+    "ATLS (10th ed.) — tension pneumothorax and pericardial tamponade management"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — converted from CV Wound Ballistics & Blast Injury Manual: penetrating neck zones + hard/soft signs, thoracic obstructive-shock lesions + REBOA zone selection, and the mangled-extremity / MESS decision."
+    }
+  ],
+  "summary": "Region decides the differential. The neck packs airway, vascular, and aerodigestive structures into a small space — hard signs go straight to the OR, soft signs get CT angiography. The chest has two immediately treatable causes of obstructive shock that should not wait for imaging. The mangled extremity forces the salvage-versus-amputation question before full imaging, and MESS is better at identifying salvageable limbs than at mandating amputation.",
+  "whyThisMatters": "A small entry wound over the neck or chest can carry a large, time-critical differential, and the decisions that matter — operate now versus image, decompress versus wait, salvage versus amputate — are made in the first minutes on physical findings, before CT. Knowing which findings force which action is what keeps a survivable injury survivable.",
+  "clinicalTakeaway": "Neck: hard signs (shock, pulsatile bleeding or expanding hematoma, bruit/thrill, pulse deficit with neuro change) mandate immediate operative exploration — do not delay for imaging; soft signs or platysma violation in a stable patient get CT angiography, with a low threshold for esophagoscopy/bronchoscopy since CTA is less reliable for aerodigestive injury. Chest: treat tension pneumothorax and tamponade as clinical diagnoses in the unstable patient — needle/finger decompression, and for a cardiac-box wound with shock, resuscitative thoracotomy. Extremity: use MESS to support salvage in a low-scoring limb rather than to mandate amputation on a high score; blast/crush mechanism, polytrauma, and massive transfusion independently raise amputation rates.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Penetrating neck trauma"
+    },
+    {
+      "type": "text",
+      "text": "The neck concentrates airway, vascular, and aerodigestive structures with minimal protection. It is historically divided into three zones to guide surgical versus selective management, though a track can cross zones and the \"no zone\" approach (CTA-driven regardless of zone) has gained favor at many centers."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Zone",
+        "Boundaries",
+        "Management implication"
+      ],
+      "rows": [
+        [
+          "Zone I",
+          "Clavicles / thoracic inlet to cricoid cartilage",
+          "High risk of occult vascular or thoracic injury; may need sternotomy or thoracic surgical involvement; endovascular options considered early"
+        ],
+        [
+          "Zone II",
+          "Cricoid cartilage to angle of the mandible",
+          "Most accessible surgically; historically explored directly, though CTA has reduced negative explorations here too"
+        ],
+        [
+          "Zone III",
+          "Angle of the mandible to skull base",
+          "High risk of occult vascular injury; surgically difficult — endovascular management often preferred"
+        ]
+      ]
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Sign category",
+        "Findings",
+        "Action"
+      ],
+      "rows": [
+        [
+          "Hard signs",
+          "Shock; pulsatile bleeding or expanding hematoma; audible bruit / palpable thrill; pulse loss with a stable or evolving neurologic deficit",
+          "Immediate operative exploration or urgent definitive intervention — do not delay for imaging"
+        ],
+        [
+          "Soft signs",
+          "Stable non-expanding hematoma; minor hemoptysis or hematemesis; dysphonia or dysphagia; subcutaneous or mediastinal air; bleeding at the scene",
+          "CT angiography (or duplex) in the stable patient rather than immediate exploration"
+        ]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Platysma violation raises the likelihood of deep-structure injury and generally warrants workup even without hard or soft signs.",
+        "CTA sensitivity for major vascular injury is ~90-100% and is the default screen in stable patients with soft signs or proximity findings.",
+        "Physical exam is highly sensitive for vascular injury but less reliable for aerodigestive injury — keep a low threshold for esophagoscopy, esophagography, or bronchoscopy when aerodigestive injury is suspected despite a negative CTA."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Thoracic trauma"
+    },
+    {
+      "type": "text",
+      "text": "Two immediately treatable causes of obstructive shock from penetrating (and sometimes blunt) chest trauma — both clinical diagnoses that should not wait for imaging in an unstable patient."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Tension pneumothorax: hypotension, absent/decreased unilateral breath sounds, distended neck veins, often tracheal deviation away from the affected side. Treatment: immediate needle or finger decompression, then tube thoracostomy.",
+        "Pericardial tamponade (penetrating cardiac wound): hypotension, distended neck veins, muffled heart sounds (Beck's triad, often incomplete). In a penetrating chest wound with cardiac-box involvement and shock, resuscitative thoracotomy or emergent pericardiocentesis / sternotomy may be the only interventions fast enough to matter."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "REBOA zone selection"
+    },
+    {
+      "type": "text",
+      "text": "Resuscitative endovascular balloon occlusion of the aorta is a bridge to definitive hemostasis for non-compressible torso or junctional hemorrhage — preserving cerebral and cardiac perfusion while surgical or interventional control is arranged."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Zone",
+        "Anatomic boundary",
+        "Indication"
+      ],
+      "rows": [
+        [
+          "Zone I",
+          "Descending thoracic aorta — left subclavian to celiac artery",
+          "Suspected intra-abdominal or thoracic hemorrhage, profound shock, or impending collapse; preserves brain and heart perfusion at the cost of increased LV afterload"
+        ],
+        [
+          "Zone II",
+          "Paravisceral aorta — celiac to lowest renal artery",
+          "Avoided — severe visceral / renal ischemia risk with no compensating benefit over Zone I or III"
+        ],
+        [
+          "Zone III",
+          "Infrarenal aorta — lowest renal artery to bifurcation",
+          "Pelvic fracture or junctional femoral / groin hemorrhage without suspected thoraco-abdominal injury; more modest hemodynamic effect than Zone I"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Mangled extremity and vascular injury"
+    },
+    {
+      "type": "text",
+      "text": "Ballistic and blast trauma to an extremity raises the salvage-versus-amputation question early, often before full imaging. The Mangled Extremity Severity Score (MESS) is the most widely applied bedside tool, though its predictive value is better established for identifying salvageable limbs (low score) than for mandating amputation on a high score."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "MESS component",
+        "Scoring concept"
+      ],
+      "rows": [
+        [
+          "Skeletal / soft-tissue injury",
+          "Graded 1-4 from low energy (stab, simple fracture) to high energy or mass-casualty crush/blast with gross contamination"
+        ],
+        [
+          "Limb ischemia",
+          "Graded 1-3 (doubled if ischemia duration > 6 h), from a pulse-reduced but perfused limb to a pulseless, cool, paralyzed, insensate limb"
+        ],
+        [
+          "Shock",
+          "Graded 0-2 from normotensive to persistent field or arrival hypotension"
+        ],
+        [
+          "Age",
+          "Graded 0-2, increasing with age given lower physiologic reserve"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "A MESS of 7 or higher is the most commonly cited amputation-associated cutoff, but multiple validation studies (including combat casualty data) show only modest sensitivity for this threshold and caution against using it as an automatic indication. The decision remains clinical — weighing mechanism, ischemia time, associated injuries, and reconstructive resources. Blast and crush mechanisms, polytrauma, and massive-transfusion requirement are independently associated with higher amputation rates even where MESS performs imperfectly as a predictor."
+    }
+  ],
+  "related": [
+    "wound-ballistics",
+    "blast-injury",
+    "hemorrhagic-shock-mtp",
+    "efast-exam",
+    "trauma-primary-survey"
+  ],
+  "buildNote": "Tier 2 (neck 'no-zone' practice and REBOA indications are still evolving; MESS validation is settled but debated — recheck). Converted from CV Wound Ballistics & Blast Injury Manual Sections 7-9. Tension pneumothorax / tamponade kept brief here — standard ATLS teaching, expand into a dedicated obstructive-shock or thoracostomy procedure module if wanted. A standalone interactive MESS calculator is a natural follow-on."
+}

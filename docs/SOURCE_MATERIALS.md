@@ -261,13 +261,21 @@ interactive New Orleans Criteria. The Done nomogram is deliberately not built �
   sequence, critical errors). All three in Reference Library / Resuscitation &
   Airway, cross-linked. Nerve-agent + vesicant + radiological toxidromes are
   previews in Part One — dedicated expansions remain a follow-on.
-- **`ballistics_blast_manual_v6_lightmode.html` (84 KB)** and
-  **`intoxicating-substances-reference.html` (154 KB, 12 classes / 39
-  substances)** — both large, high-value, and out of scope for a single batch;
-  each needs its own dedicated conversion pass (ballistics likely splits into
-  several Trauma reference modules; the substances reference likely splits by
-  drug class). Next big-ticket content projects — **still open** (CV_Austere is
-  now cleared).
+- **`ballistics_blast_manual_v6_lightmode.html` (84 KB)** — 🟢 **CONVERTED
+  2026-09-07** → 3 Reference Library / Resuscitation & Airway modules:
+  `wound-ballistics` (physics, caliber/construction, tissue patterns, forensic
+  range-of-fire, BABT, retained-fragment workup, DCS), `blast-injury` (5-mechanism
+  taxonomy, overpressure physics, primary blast, blast TBI, underwater, pediatric),
+  `penetrating-regional-trauma` (neck zones + hard/soft signs, thoracic
+  obstructive-shock lesions + REBOA zones, mangled extremity + MESS). MARCH / DCR /
+  CBRN cross-linked to existing modules, not duplicated.
+- **`intoxicating-substances-reference.html` (154 KB, 12 classes / 39
+  substances)** — 🟢 **CONVERTED 2026-09-07** → 6 Reference Library / Critical Care
+  modules: `tox-stimulants`, `tox-opioids`, `tox-sedative-hypnotics`,
+  `tox-dissociatives-hallucinogens`, `tox-cannabinoids-inhalants`,
+  `tox-alcohols-anticholinergics-other`. Class overview + per-agent
+  distinguishing-feature / management table for each. Not-yet-covered per the
+  source: TCA/SSRI/SNRI, lithium, digoxin, antipsychotics, unprocessed khat.
 
 ---
 

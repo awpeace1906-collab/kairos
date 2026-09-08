@@ -1,0 +1,141 @@
+{
+  "id": "tox-stimulants",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Stimulant Toxicity — Cocaine, Amphetamines, MDMA, Cathinones",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
+  "aliases": [
+    "sympathomimetic toxidrome",
+    "cocaine toxicity",
+    "methamphetamine toxicity",
+    "MDMA ecstasy toxicity",
+    "bath salts synthetic cathinones",
+    "amphetamine overdose",
+    "caffeine toxicity",
+    "excited delirium stimulant"
+  ],
+  "tags": [
+    "toxicology",
+    "stimulants",
+    "sympathomimetic",
+    "cocaine",
+    "methamphetamine",
+    "MDMA",
+    "cathinones",
+    "hyperthermia",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "tachycardia hypertension hyperthermia mydriasis diaphoresis agitation",
+    "benzodiazepines first line stimulant agitation seizure prophylaxis",
+    "cocaine sodium channel blockade wide QRS bicarbonate avoid unopposed beta-blockade",
+    "levamisole adulterated cocaine retiform purpura ear necrosis ANCA",
+    "methamphetamine long half life prolonged agitation meth mouth formication",
+    "MDMA hyperthermia hyponatremia ADH clonus serotonin syndrome dantrolene",
+    "synthetic cathinone negative immunoassay agitated psychosis olanzapine",
+    "caffeine hypokalemia esmolol lipid emulsion hemodialysis",
+    "active cooling excited delirium ketamine dexmedetomidine rhabdomyolysis"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Critical Vector — Intoxicating Substances Reference, Stimulants class (7 substances)",
+    "Lavonas EJ, et al. 2023 AHA Focused Update on Management of Cardiac Arrest / Life-Threatening Toxicity Due to Poisoning. Circulation. 2023;148(16):e149-e184",
+    "Richards JR, Laurin EG. Methamphetamine Toxicity; Sympathomimetic Toxicity. StatPearls",
+    "Rosenbaum C, Boyer EW. MDMA (Ecstasy) Toxicity. StatPearls NBK538482, 2024",
+    "Prosser JM, Nelson LS. The Toxicology of Bath Salts: A Review of Synthetic Cathinones. J Med Toxicol. 2012;8(1):33-42",
+    "Murray A, Traylor J. Caffeine Toxicity. StatPearls NBK532910, 2025"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — converted from CV Intoxicating Substances Reference: the shared sympathomimetic toxidrome plus per-agent distinguishing features and management for cocaine, amphetamine/dextroamphetamine, methamphetamine, MDMA/MDA, synthetic cathinones, methylphenidate, and caffeine."
+    }
+  ],
+  "summary": "One shared sympathomimetic toxidrome — tachycardia, hypertension, hyperthermia, mydriasis, diaphoresis, agitation — with benzodiazepines and active cooling as the common core of management. What differs by agent: cocaine's sodium-channel cardiotoxicity, methamphetamine's long half-life, MDMA's paired hyperthermia-and-hyponatremia, the cathinones' immunoassay-negative agitated psychosis, and caffeine (the one where beta-blockade is not a trap).",
+  "whyThisMatters": "Stimulant toxicity is a large and rising share of ED and prehospital agitation, hyperthermia, and chest pain, and the mistakes are agent-specific: giving an unopposed beta-blocker in cocaine toxicity, over- or under-hydrating an MDMA patient without checking the sodium, discharging a methamphetamine patient expecting a cocaine-length course, or anchoring on a negative tox screen in a floridly psychotic young patient who took a synthetic cathinone the assay cannot see.",
+  "clinicalTakeaway": "Treat the shared adrenergic driver first: benzodiazepines titrated to effect for agitation, hypertension, tachycardia, and seizure prophylaxis, plus active external cooling for hyperthermia (antipyretics do not work). Then apply the agent-specific move — sodium bicarbonate for a wide QRS (cocaine, high-dose stimulants); check serum sodium in any altered or seizing MDMA patient; treat suspected synthetic-cathinone psychosis on clinical grounds with benzodiazepine + antipsychotic; and remember caffeine tachydysrhythmia takes esmolol, not the cocaine 'avoid beta-blockade' rule. Aggressive fluids and early cooling prevent the rhabdomyolysis-DIC-AKI cascade rather than treating it after the fact.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The shared sympathomimetic toxidrome"
+    },
+    {
+      "type": "text",
+      "text": "Stimulants raise synaptic monoamine tone (dopamine, norepinephrine, ± serotonin) and produce a common picture: tachycardia, hypertension, hyperthermia, mydriasis, diaphoresis, and agitation. Route, transporter pharmacology, and the co-released neurotransmitter burden determine which complications dominate. Common management core: benzodiazepines first-line (addresses the shared adrenergic driver — agitation, hypertension, tachycardia, seizure prophylaxis), active external cooling for hyperthermia (treat as excited-delirium physiology, not infectious fever — antipyretics are not indicated), and aggressive IV fluids with early cooling to pre-empt rhabdomyolysis, DIC, and AKI. Refractory agitation / excited delirium → ketamine with airway readiness, then dexmedetomidine for ICU maintenance. Wide QRS or ventricular dysrhythmia → sodium bicarbonate; avoid lidocaine and class Ia/Ic antiarrhythmics."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Agent-specific features"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Agent",
+        "Distinguishing feature / pitfall",
+        "Management specifics beyond the shared core"
+      ],
+      "rows": [
+        [
+          "Cocaine",
+          "Class Ic-like sodium-channel blocker — wide-complex dysrhythmia mimics TCA overdose, pro-convulsant. Coronary vasospasm; treat chest pain as possible ACS. Levamisole adulterant (up to 70-80% of US supply): retiform purpura of ears/cheeks/nose + neutropenia + dual p-/c-ANCA = essentially diagnostic. Half-life ~1 h; benzoylecgonine on UDS 2-4 days",
+          "Bicarbonate for wide QRS. Nitroglycerin / calcium-channel blocker for vasospasm; aspirin. AVOID unopposed beta-blockade acutely — if rate control needed, labetalol per AHA/ACC after benzodiazepines + vasodilator. Consider aortic dissection / cardiomyopathy for cocaine chest pain once ACS excluded"
+        ],
+        [
+          "Amphetamine / dextroamphetamine",
+          "Transporter-reversal releaser. No exam finding distinguishes it from methamphetamine — the clue is context (prescribed ADHD med, crushed/insufflated tablet, adolescent diversion). Half-life 10-13 h, pH-dependent renal elimination",
+          "Supportive, benzodiazepine-centered; no specific antidote. Activated charcoal if early after a large protected-airway oral ingestion. Bicarbonate if QRS widening"
+        ],
+        [
+          "Methamphetamine",
+          "More lipophilic, longer half-life (6-15 h, commonly 11-12) than cocaine — agitation and psychosis are prolonged and resource-intensive. Chronic stigmata: \"meth mouth\" (cementoenamel-junction caries, blackened crumbling teeth, xerostomia, bruxism) + formication excoriations on face/forearms/legs",
+          "Benzodiazepine doses often higher (tolerance). Active cooling, IV fluids for rhabdomyolysis risk. Plan disposition/staffing for an 8-hour course, not a cocaine-length one. Whole-bowel irrigation can be considered for body packers"
+        ],
+        [
+          "MDMA / MDA",
+          "Potent serotonin releaser + ADH release → free-water retention. The two dominant killers are hyperthermia and hyponatremia, not cardiac events. Near-universal bruxism/trismus. Hyperthermia + hyponatremia together is distinctive; inducible clonus confirms serotonin toxicity",
+          "Check serum sodium in any altered or seizing MDMA patient BEFORE deciding on fluids. Hyponatremic seizure → 100 mL 3% saline, correct ≤ 6-8 mEq/L/24 h. Ice-water immersion for T > 40 °C; dantrolene has case support > 40-42 °C. Cyproheptadine for benzo-refractory serotonin features"
+        ],
+        [
+          "Synthetic cathinones (\"bath salts\", MDPV, mephedrone, alpha-PVP/flakka)",
+          "Structurally heterogeneous — no single toxidrome; skewed toward severe, prolonged agitated psychosis out of proportion to cardiovascular findings. Routine immunoassays do NOT detect them — a negative screen in a floridly psychotic young patient raises suspicion, not lowers it",
+          "Treat the syndrome, not a lab. Benzodiazepines + antipsychotic (e.g. olanzapine) titrated aggressively. Aggressive cooling; IV fluids for rhabdo-associated AKI. Low threshold to admit; plan early for airway if sedation requirements climb"
+        ],
+        [
+          "Methylphenidate",
+          "Pure reuptake inhibitor — overdose is clinically indistinguishable from amphetamine. Crushed ER tablet can dump a full day's dose; OROS \"ghost tablet\" can appear intact in stool (normal PK, not unabsorbed drug). IV/insufflation misuse → filler microembolization",
+          "Supportive, benzodiazepine-centered, mirrors amphetamine. Charcoal for large recent oral ingestion. Embolic phenomena or multi-organ dysfunction from IV misuse → ICU workup"
+        ],
+        [
+          "Caffeine",
+          "Adenosine A1/A2A antagonist (+ PDE inhibition, catecholamine release at toxic dose). Marked hypokalemia out of proportion to GI losses (catecholamine-driven intracellular shift — over-correction risks rebound hyperkalemia). Lethal serum level ~80-100 μg/mL; LD50 ~150-200 mg/kg (~10-14 g). 1 tsp powder ≈ 2,700 mg",
+          "Esmolol is first-line for tachydysrhythmia — beta-blockade is NOT a trap here (no unopposed-alpha problem). IV fluids, correct hypokalemia carefully, benzodiazepines for seizures. Supralethal ingestion → lipid emulsion + hemodialysis (case reports); early nephrology/tox consult. Psych eval before discharge for intentional overdose"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Believe a positive cocaine UDS (benzoylecgonine has essentially no cross-reactant) but do not anchor on it — the route of use predicts the complication, so always ask how the patient uses. Conversely, a negative standard screen does not exclude synthetic cathinones or many designer stimulants. Once acute intoxication resolves, do not reflexively withhold a guideline-indicated beta-blocker (HFrEF, prior MI) on the basis of remote cocaine history alone."
+    }
+  ],
+  "related": [
+    "toxidromes-and-overdoses",
+    "hunter-serotonin",
+    "tox-opioids",
+    "tox-cannabinoids-inhalants",
+    "corrected-sodium-hyperglycemia"
+  ],
+  "buildNote": "Tier 2 (management is stable; adulterant epidemiology — levamisole, drug-supply contamination — shifts, recheck). Converted from CV Intoxicating Substances Reference, Stimulants class. A dedicated excited-delirium / agitation-sedation workflow and a hyperthermia-cooling procedure are natural follow-ons."
+}

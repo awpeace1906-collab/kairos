@@ -5638,6 +5638,48 @@
       ]
     },
     {
+      "id": "tox-cannabinoids-inhalants",
+      "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "toxicology",
+        "cannabinoids",
+        "inhalants",
+        "synthetic cannabinoids",
+        "methemoglobinemia",
+        "cannabinoid hyperemesis",
+        "solvents",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "THC partial CB1 agonist concentrate 70 90 percent edible delayed onset re-dosing",
+        "cannabinoid hyperemesis syndrome cyclical vomiting hot shower capsaicin cream",
+        "synthetic cannabinoid full CB1 agonist seizures psychosis immunoassay negative",
+        "brodifacoum superwarfarin contamination unexplained coagulopathy vitamin K1 weeks months",
+        "volatile solvent toluene myocardial catecholamine sensitization ventricular fibrillation",
+        "sudden sniffing death startle catecholamine surge avoid epinephrine beta-blockade",
+        "alkyl nitrite methemoglobinemia cyanosis unresponsive to oxygen chocolate brown blood",
+        "methylene blue 1 2 mg/kg co-oximetry G6PD deficiency hemolysis",
+        "cannabinoid hyperemesis syndrome",
+        "synthetic cannabinoid K2 spice",
+        "brodifacoum synthetic cannabinoid coagulopathy",
+        "volatile solvent huffing",
+        "sudden sniffing death",
+        "amyl nitrite poppers methemoglobinemia",
+        "methylene blue",
+        "pediatric edible ingestion"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/tox-cannabinoids-inhalants",
+      "settingEmphasis": [
+        "ed",
+        "prehospital",
+        "icu"
+      ]
+    },
+    {
       "id": "contrast-associated-aki",
       "title": "Contrast-Associated AKI — Prevention",
       "section": "Reference Library",
@@ -5678,6 +5720,49 @@
       "settingEmphasis": [
         "or",
         "icu"
+      ]
+    },
+    {
+      "id": "tox-dissociatives-hallucinogens",
+      "title": "Dissociative & Hallucinogen Toxicity — Ketamine, PCP, DXM, N2O, LSD, NBOMe",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "toxicology",
+        "dissociatives",
+        "hallucinogens",
+        "ketamine",
+        "PCP",
+        "nitrous oxide",
+        "NBOMe",
+        "psychedelics",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "NMDA antagonist dissociation catatonia vertical rotary nystagmus",
+        "PCP violent agitation emergence reaction ketamine cystitis",
+        "dextromethorphan NMDA serotonin reuptake serotonin syndrome plateaus",
+        "nitrous oxide oxidizes B12 cobalt functional deficiency subacute combined degeneration normal serum B12",
+        "empiric high-dose IV B12 nitrous myelopathy normal MRI does not exclude",
+        "classic psychedelic 5-HT2A low acute toxicity talk-down benzodiazepines",
+        "NBOMe sold as acid seizures hyperthermia rhabdomyolysis severe hypertension fatalities",
+        "toxic leukoencephalopathy NBOMe status epilepticus",
+        "PCP toxicity",
+        "ketamine intoxication",
+        "vertical nystagmus dissociative",
+        "dextromethorphan robotripping",
+        "nitrous oxide B12 subacute combined degeneration",
+        "LSD bad trip talk-down",
+        "NBOMe N-bomb toxicity",
+        "serotonin toxicity hallucinogen"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/tox-dissociatives-hallucinogens",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
       ]
     },
     {
@@ -5843,6 +5928,51 @@
       ]
     },
     {
+      "id": "tox-opioids",
+      "title": "Opioid Toxicity — Heroin, Fentanyl, Methadone, Buprenorphine",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "toxicology",
+        "opioids",
+        "naloxone",
+        "fentanyl",
+        "methadone",
+        "buprenorphine",
+        "respiratory depression",
+        "ED",
+        "prehospital",
+        "ICU"
+      ],
+      "keywords": [
+        "miosis respiratory depression CNS depression hyporeflexia",
+        "naloxone 0.04 0.4 mg titrate to respiration not arousal observe 6 12 hours",
+        "naloxone infusion two thirds effective bolus per hour recurrent resedation",
+        "fentanyl chest wall rigidity wooden chest neuromuscular blockade intubation",
+        "carfentanil nitazenes standard naloxone still effective",
+        "methadone hERG QT prolongation torsades magnesium half life 8 59 hours",
+        "buprenorphine partial agonist ceiling precipitated withdrawal give more buprenorphine",
+        "tramadol seizure SNRI serotonin syndrome naloxone incomplete",
+        "loperamide hERG sodium channel QRS widening torsades bicarbonate",
+        "heroin noncardiogenic pulmonary edema 6-MAM take-home naloxone buprenorphine pathway",
+        "opioid toxidrome",
+        "naloxone dosing",
+        "fentanyl overdose",
+        "wooden chest syndrome",
+        "methadone QT torsades",
+        "buprenorphine precipitated withdrawal",
+        "tramadol seizure serotonin",
+        "loperamide cardiotoxicity"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/tox-opioids",
+      "settingEmphasis": [
+        "ed",
+        "prehospital",
+        "icu"
+      ]
+    },
+    {
       "id": "padis-bundle",
       "title": "PADIS Bundle & RASS",
       "section": "Reference Library",
@@ -5926,6 +6056,47 @@
       ]
     },
     {
+      "id": "tox-sedative-hypnotics",
+      "title": "Sedative-Hypnotic Toxicity — Benzodiazepines, Barbiturates, GHB",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "toxicology",
+        "sedative-hypnotics",
+        "benzodiazepines",
+        "barbiturates",
+        "GHB",
+        "flumazenil",
+        "withdrawal",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "GABA-A positive allosteric modulator ceiling effect respiratory depression",
+        "benzodiazepine isolated overdose safe co-ingestant drives fatalities",
+        "flumazenil relatively contraindicated mixed overdose chronic use seizure QRS NNH 50",
+        "barbiturate no ceiling effect channel duration cardiogenic shock lethal",
+        "phenobarbital urinary alkalinization multi-dose activated charcoal enterohepatic hemodialysis",
+        "GHB GABA-B agonist half life 27 30 minutes abrupt coma abrupt awakening",
+        "GHB not detected routine screen bradycardia atropine",
+        "GHB withdrawal life-threatening high-dose benzodiazepines baclofen barbiturate thiopental",
+        "benzodiazepine overdose",
+        "flumazenil contraindications",
+        "barbiturate overdose",
+        "Z-drug overdose",
+        "GHB coma",
+        "GHB withdrawal",
+        "phenobarbital urinary alkalinization"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/tox-sedative-hypnotics",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
+      ]
+    },
+    {
       "id": "sodium-disorders",
       "title": "Sodium Disorders — Hypo- & Hypernatremia",
       "section": "Reference Library",
@@ -5965,6 +6136,94 @@
       "settingEmphasis": [
         "icu",
         "ed"
+      ]
+    },
+    {
+      "id": "tox-stimulants",
+      "title": "Stimulant Toxicity — Cocaine, Amphetamines, MDMA, Cathinones",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "toxicology",
+        "stimulants",
+        "sympathomimetic",
+        "cocaine",
+        "methamphetamine",
+        "MDMA",
+        "cathinones",
+        "hyperthermia",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "tachycardia hypertension hyperthermia mydriasis diaphoresis agitation",
+        "benzodiazepines first line stimulant agitation seizure prophylaxis",
+        "cocaine sodium channel blockade wide QRS bicarbonate avoid unopposed beta-blockade",
+        "levamisole adulterated cocaine retiform purpura ear necrosis ANCA",
+        "methamphetamine long half life prolonged agitation meth mouth formication",
+        "MDMA hyperthermia hyponatremia ADH clonus serotonin syndrome dantrolene",
+        "synthetic cathinone negative immunoassay agitated psychosis olanzapine",
+        "caffeine hypokalemia esmolol lipid emulsion hemodialysis",
+        "active cooling excited delirium ketamine dexmedetomidine rhabdomyolysis",
+        "sympathomimetic toxidrome",
+        "cocaine toxicity",
+        "methamphetamine toxicity",
+        "MDMA ecstasy toxicity",
+        "bath salts synthetic cathinones",
+        "amphetamine overdose",
+        "caffeine toxicity",
+        "excited delirium stimulant"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/tox-stimulants",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
+      ]
+    },
+    {
+      "id": "tox-alcohols-anticholinergics-other",
+      "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "toxicology",
+        "toxic alcohols",
+        "anticholinergic",
+        "alcohol withdrawal",
+        "nicotine",
+        "kratom",
+        "anabolic steroids",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "ethanol GABA-A NMDA withdrawal tremulousness seizure hallucinosis delirium tremens timeline",
+        "thiamine before glucose Wernicke 500 mg q8h CIWA-Ar phenobarbital",
+        "methanol formic acid optic neurotoxicity snowstorm vision ethylene glycol calcium oxalate AKI",
+        "fomepizole empiric osmolar gap 25 pH 7.3 oxalate crystals hemodialysis EXTRIP",
+        "anticholinergic hot blind mad red dry full mnemonic mumbling picking delirium",
+        "diphenhydramine sodium channel blockade wide QRS bicarbonate physostigmine contraindicated mixed",
+        "nicotine e-liquid biphasic stimulatory then depressor phase atropine observe both phases",
+        "kratom partial mu agonist naloxone cholestatic hepatotoxicity COWS false-negative opioid screen",
+        "anabolic steroid 17-alpha-alkylated hepatotoxicity peliosis hepatis polycythemia LVH sudden cardiac death",
+        "methanol ethylene glycol fomepizole",
+        "osmolar gap anion gap acidosis",
+        "alcohol withdrawal delirium tremens",
+        "Wernicke encephalopathy thiamine",
+        "anticholinergic toxidrome physostigmine",
+        "diphenhydramine sodium channel QRS",
+        "nicotine e-liquid biphasic toxicity",
+        "kratom mitragynine hepatotoxicity",
+        "anabolic androgenic steroid peliosis hepatis"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/tox-alcohols-anticholinergics-other",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
       ]
     },
     {
@@ -7608,6 +7867,52 @@
       ]
     },
     {
+      "id": "blast-injury",
+      "title": "Blast Injury — Taxonomy, Primary Blast & Blast TBI",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "blast injury",
+        "explosion",
+        "primary blast",
+        "blast lung",
+        "TBI",
+        "mass casualty",
+        "prehospital",
+        "trauma",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "DoD blast taxonomy primary through quinary",
+        "overpressure air-tissue interface spalling implosion inertial shear",
+        "Hopkinson-Cranz cube root scaling scaled distance standoff",
+        "blast lung butterfly perihilar infiltrate delayed deterioration",
+        "arterial air embolism focal deficit left lateral head down",
+        "tympanic membrane rupture sentinel finding",
+        "blast bowel delayed perforation serial exam admission",
+        "blast TBI transcranial thoracic CSF cavitation mechanisms",
+        "confined space blast higher primary injury open air fragmentation",
+        "underwater blast colon barotrauma bradycardia apnea drowning",
+        "pediatric blast higher head chest abdomen primary blast rates",
+        "primary secondary tertiary quaternary quinary blast",
+        "blast lung",
+        "blast overpressure",
+        "blast bowel",
+        "arterial air embolism blast",
+        "blast traumatic brain injury",
+        "underwater blast injury",
+        "tympanic membrane rupture blast"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/blast-injury",
+      "settingEmphasis": [
+        "prehospital",
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "decision-rules-cspine-ct-head",
       "title": "C-Spine & CT Head Decision Rules",
       "section": "Reference Library",
@@ -8049,6 +8354,49 @@
       "route": "/reference-library/resuscitation-airway/peep-fio2-ladder",
       "settingEmphasis": [
         "icu"
+      ]
+    },
+    {
+      "id": "penetrating-regional-trauma",
+      "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "penetrating trauma",
+        "neck trauma",
+        "thoracic trauma",
+        "REBOA",
+        "mangled extremity",
+        "vascular injury",
+        "trauma",
+        "ED",
+        "OR"
+      ],
+      "keywords": [
+        "neck zone I II III cricoid mandible angle skull base",
+        "platysma violation CT angiography 90 100 percent sensitivity",
+        "hard signs shock pulsatile bleeding expanding hematoma bruit thrill",
+        "soft signs stable hematoma hemoptysis dysphonia subcutaneous air",
+        "tension pneumothorax needle finger decompression Beck triad tamponade",
+        "cardiac box resuscitative thoracotomy pericardiocentesis",
+        "REBOA zone I subclavian celiac zone III renal bifurcation zone II avoid",
+        "MESS skeletal soft tissue ischemia shock age score 7",
+        "blast crush polytrauma massive transfusion higher amputation",
+        "penetrating neck trauma zones",
+        "neck trauma hard soft signs",
+        "no zone approach CTA neck",
+        "tension pneumothorax tamponade",
+        "REBOA zones",
+        "mangled extremity severity score",
+        "MESS amputation",
+        "vascular injury extremity"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/penetrating-regional-trauma",
+      "settingEmphasis": [
+        "ed",
+        "or",
+        "prehospital"
       ]
     },
     {
@@ -8719,6 +9067,52 @@
       "settingEmphasis": [
         "prehospital",
         "ed"
+      ]
+    },
+    {
+      "id": "wound-ballistics",
+      "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "wound ballistics",
+        "gunshot wound",
+        "penetrating trauma",
+        "forensics",
+        "body armor",
+        "damage control surgery",
+        "trauma",
+        "ED",
+        "OR"
+      ],
+      "keywords": [
+        "kinetic energy half m v squared velocity dominates",
+        "crush permanent cavity stretch temporary cavity",
+        "yaw tumble point of maximum yaw energy transfer",
+        "fragmentation velocity threshold 2000 2200 fps cannelure",
+        "ballistic gelatin 10 percent FBI protocol calibration",
+        "hydrostatic shock Fackler Courtney debate",
+        "sectional density penetration ballistic coefficient drag",
+        "FMJ hollow point soft point military ball convention",
+        "abrasion collar soot stippling tattooing contact wound",
+        "behind armor blunt trauma BABT rib fracture pulmonary contusion",
+        "retained fragment removal indications lead toxicity spinal T12 L4",
+        "damage control surgery lethal triad abbreviated laparotomy",
+        "gunshot wound ballistics",
+        "permanent temporary cavity",
+        "bullet yaw tumble fragmentation",
+        "caliber wound profile",
+        "forensic range of fire",
+        "behind armor blunt trauma",
+        "retained bullet fragment",
+        "MRI retained ballistic fragment"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/wound-ballistics",
+      "settingEmphasis": [
+        "ed",
+        "prehospital",
+        "or"
       ]
     }
   ]

@@ -1,0 +1,231 @@
+{
+  "id": "blast-injury",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Blast Injury — Taxonomy, Primary Blast & Blast TBI",
+  "settingEmphasis": [
+    "prehospital",
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "primary secondary tertiary quaternary quinary blast",
+    "blast lung",
+    "blast overpressure",
+    "blast bowel",
+    "arterial air embolism blast",
+    "blast traumatic brain injury",
+    "underwater blast injury",
+    "tympanic membrane rupture blast"
+  ],
+  "tags": [
+    "blast injury",
+    "explosion",
+    "primary blast",
+    "blast lung",
+    "TBI",
+    "mass casualty",
+    "prehospital",
+    "trauma",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "DoD blast taxonomy primary through quinary",
+    "overpressure air-tissue interface spalling implosion inertial shear",
+    "Hopkinson-Cranz cube root scaling scaled distance standoff",
+    "blast lung butterfly perihilar infiltrate delayed deterioration",
+    "arterial air embolism focal deficit left lateral head down",
+    "tympanic membrane rupture sentinel finding",
+    "blast bowel delayed perforation serial exam admission",
+    "blast TBI transcranial thoracic CSF cavitation mechanisms",
+    "confined space blast higher primary injury open air fragmentation",
+    "underwater blast colon barotrauma bradycardia apnea drowning",
+    "pediatric blast higher head chest abdomen primary blast rates"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Critical Vector — Wound Ballistics & Blast Injury Manual v6, Sections 10-14, 19, 21",
+    "DoD Directive 6025.21E blast injury taxonomy, summarized in Blast Injury Research Coordinating Office reference; Kim & Nguyen, Blast Injuries: A Review",
+    "Courtney & Courtney. The Complexity of Biomechanics Causing Primary Blast Induced TBI. Front Neurol. 2015; Rosenfeld et al. Neurological Effects of Blast Injury",
+    "Axelsson et al. Underwater Blast Injury: A Review of Standards; SCUBADOC Diving Medicine Online, Underwater Blast Injuries",
+    "Turkish Journal of Emergency Medicine. Pediatric blast injuries: distinguishing features and unique challenges. 2026; ACEP Pediatric Blast Injury fact sheet",
+    "Hopkinson-Cranz cube-root scaling law (ScienceDirect Topics, Scaled Distance overview)"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — converted from CV Wound Ballistics & Blast Injury Manual: the five-mechanism blast taxonomy, overpressure physics, primary blast pathophysiology (blast lung, air embolism, TM, blast bowel), blast TBI mechanisms, combined injury patterns, underwater blast, and pediatric considerations."
+    }
+  ],
+  "summary": "Explosive injury is one casualty with up to five simultaneous mechanisms — primary (overpressure), secondary (fragments, the commonest killer), tertiary (thrown body), quaternary (burns, crush, toxic), quinary (device contaminants). Primary blast targets air-filled organs: lung, ear, bowel. The obvious injury must not close the differential for an occult primary one.",
+  "whyThisMatters": "Overpressure falls off far faster with distance than intuition expects (cube-root scaling), so casualties nearest the seat of the blast carry a disproportionate primary-injury burden — and primary blast lung, blast bowel, and blast TBI can all present with a deceptively normal early exam and declare themselves hours later. A blast casualty screened only for the dramatic fragment wounds and long-bone fractures is a blast casualty whose blast lung is found on the ward.",
+  "clinicalTakeaway": "Every blast casualty gets the same primary-injury screen regardless of how dramatic the secondary/tertiary injuries look: lungs (blast lung — observe after any close-range blast with respiratory symptoms), ears (TM rupture as a sentinel finding), abdomen (blast bowel — admit and serially examine after blast exposure with abdominal symptoms), and neuro (focal deficit → suspect arterial air embolism; position left-lateral head-down with high-flow oxygen). A normal head CT does not exclude blast TBI — that diagnosis is clinical, from mechanism and symptom trajectory.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Mechanism taxonomy"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Mechanism",
+        "Cause",
+        "Characteristic injuries"
+      ],
+      "rows": [
+        [
+          "Primary",
+          "Direct interaction of the overpressure wave with the body, concentrated at air-tissue interfaces",
+          "TM rupture, blast lung, bowel perforation, arterial air embolism, globe rupture"
+        ],
+        [
+          "Secondary",
+          "Energized fragments, casing shrapnel, environmental debris propelled by the blast",
+          "Penetrating and blunt trauma from projectiles — the most common cause of blast-related death overall"
+        ],
+        [
+          "Tertiary",
+          "Displacement of the whole body by blast wind, then impact",
+          "Blunt trauma, traumatic amputation, closed head injury, fractures"
+        ],
+        [
+          "Quaternary",
+          "All other direct effects — thermal, toxic, crush",
+          "Burns, inhalation injury, crush syndrome, exacerbation of chronic disease"
+        ],
+        [
+          "Quinary",
+          "Post-detonation contaminants added to or released by the device",
+          "Toxic, chemical, radiologic, or biological contamination superimposed on the blast wound"
+        ]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "A single casualty commonly sustains more than one mechanism at once, and the environment shifts which dominates.",
+        "Open-air detonations disperse the pressure wave quickly → proportionally more secondary fragmentation injury.",
+        "Confined-space / vehicle detonations trap and reflect the overpressure wave → higher proportion of primary blast lung and bowel injury.",
+        "Structural collapse adds heavy quaternary crush injury and delayed extraction."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Overpressure physics"
+    },
+    {
+      "type": "text",
+      "text": "A high-explosive detonation produces a shock front that outruns local sound speed, a brief negative-pressure phase, then a return to ambient. Peak overpressure falls off steeply, not linearly, with distance — the Hopkinson-Cranz (cube-root) scaling law: scaled distance = standoff ÷ cube root of charge mass. Because it is a cube root, a tenfold increase in charge mass needs only ~2.15× the standoff to reach equivalent overpressure. Clinically: injury severity falls off far faster with distance than expected, modest increases in standoff produce large reductions in primary blast risk, and mass-casualty distribution is not random — patients closest to the seat carry a disproportionate share of primary injury."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Primary blast pathophysiology"
+    },
+    {
+      "type": "text",
+      "text": "The wave interacts most violently at interfaces between tissues of very different density — air-filled or air-adjacent organs bear the brunt. Three named mechanisms: spalling (a stress wave tears the far side of a denser medium at a density boundary), implosion (compressed gas pockets collapse and rebound), and inertial shear (adjacent tissues of different density accelerate differently and tear at their junction)."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Injury",
+        "Features",
+        "Disposition point"
+      ],
+      "rows": [
+        [
+          "Blast lung",
+          "Pathognomonic primary injury and leading cause of immediate blast death among initial survivors. Alveolar hemorrhage, pneumothorax, alveolar-capillary disruption. Classic film: bilateral perihilar butterfly infiltrate within hours",
+          "A deceptively normal initial exam can deteriorate over minutes to hours — observe after any close-range blast with respiratory symptoms"
+        ],
+        [
+          "Arterial air embolism",
+          "Alveolar-venous disruption lets air reach the left heart and systemic circulation → sudden focal neurologic deficit, MI, or mesenteric ischemia with no direct injury to the organ",
+          "Suspect in any blast patient with new focal neuro or cardiac findings; left-lateral head-down positioning, high-flow oxygen, arrange transfer"
+        ],
+        [
+          "Tympanic membrane rupture",
+          "Occurs at overpressures far below the lung/bowel threshold",
+          "A sentinel finding for meaningful exposure — but its absence does not exclude other primary injury"
+        ],
+        [
+          "Blast bowel",
+          "Mucosal/submucosal hemorrhage, perforation, mesenteric injury; can present with a delay of hours",
+          "A benign early abdominal exam does not exclude a perforation that declares over the next day — admit and serially examine after blast exposure with abdominal symptoms"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Blast traumatic brain injury"
+    },
+    {
+      "type": "text",
+      "text": "Blast-induced TBI has been the most common brain injury among survivors of recent conflicts, but the physical mechanism connecting an overpressure wave to neuronal injury is still contested. Three non-exclusive candidates: direct transcranial transmission (the transient crosses the skull and propagates through parenchyma), thoracic/vascular transmission (a transient enters via the great vessels or a vagally mediated thoracic reflex and reaches the brain through the vascular tree — also implicated in BABT), and CSF cavitation (formation and violent collapse of microbubbles in CSF and brain vasculature — a debated hypothesis)."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Mild-to-moderate blast TBI presents like concussion from any mechanism: transient LOC or altered mentation, then post-concussive syndrome (headache, cognitive disruption, irritability, anxiety, fatigue) that can persist well beyond the acute period.",
+        "Diffusion-tensor MRI in symptomatic patients shows diffuse axonal injury signatures. A normal head CT does not exclude the pattern — the diagnosis is clinical, based on mechanism and symptom trajectory."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Combined injury patterns"
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "An IED casualty commonly presents with overlapping primary blast lung or TM rupture, secondary fragment wounds with their own cavitation physics, tertiary blunt trauma from being thrown, and quaternary burns or crush — all at once. Do not let an obvious injury close the differential for a co-occurring primary blast injury with no external sign yet. A casualty with no penetrating chest wound can still carry a significant primary-pattern thoracic injury from behind-armor blunt trauma; an intact vest should not lower suspicion."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Underwater blast"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Water is ~800× denser and far less compressible than air: the shock wave travels faster, propagates further with less attenuation, and couples into the body far more efficiently. A charge that is a modest air blast at a given range can be lethal underwater at the same range.",
+        "Injury is almost exclusively primary (fragments and blast wind lose relevance submerged). Intestinal barotrauma, particularly to the colon, is more common than with air blast; pulmonary injury remains prominent (alveolar hemorrhage, air embolism, a vagally mediated bradycardia/apnea reflex in animal models). The ear is the single most sensitive organ, as in air.",
+        "Unique hazard with no air-blast analog: disorientation and vestibular disruption sufficient to prevent airway protection — converting a primary blast injury into a drowning risk. Any diver recovered after a nearby underwater detonation needs the primary-injury screen (lung, ear, bowel) plus assessment for aspiration and hypoxic injury."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pediatric considerations"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Head: larger head-to-body ratio, thinner skull, less myelinated brain — head injuries more common and more severe; a child can sustain significant TBI without LOC. Triage to further evaluation any child with altered behavior, irritability, or excessive sleepiness after a blast even if initially alert.",
+        "Chest: compliant cartilaginous rib cage transmits force to lung and heart with less fracture — significant contusion with few or no rib fractures.",
+        "Abdomen: thinner wall, proportionally larger less-protected liver and spleen — more prone to significant injury at forces a thicker adult wall would attenuate.",
+        "Primary blast: ocular trauma, TM rupture, and blast lung occur at higher rates in children at comparable exposure.",
+        "Global physiology: smaller absolute blood volume — a given loss is a larger fraction; children compensate with tachycardia and vasoconstriction longer before hypotension, so a normal blood pressure can be falsely reassuring in compensated shock. They also become hypothermic faster (higher surface-to-mass ratio), compounding coagulopathy.",
+        "Apply the same MARCH and damage-control-resuscitation framework as adults, but read vitals against pediatric norms, keep a lower threshold for occult head/chest/abdominal injury, and prioritize active warming."
+      ]
+    }
+  ],
+  "related": [
+    "wound-ballistics",
+    "penetrating-regional-trauma",
+    "trauma-primary-survey",
+    "icp-tbi-management",
+    "hazmat-scene-toxidromes"
+  ],
+  "buildNote": "Tier 2 (blast pathophysiology is stable; blast-TBI mechanism and pediatric blast literature are active — recheck). Converted from CV Wound Ballistics & Blast Injury Manual Sections 10-14, 19, 21. CBRN mass-casualty framework (Section 20) is covered by `hazmat-scene-toxidromes` + `crush-syndrome`; MARCH/DCR by `trauma-primary-survey` / `hemorrhagic-shock-mtp`. Omits charge-specific coefficients and yield estimation (engineering/munitions-safety, outside clinical scope)."
+}

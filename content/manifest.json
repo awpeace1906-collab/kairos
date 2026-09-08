@@ -1929,6 +1929,15 @@
       "review_tier": 3,
       "next_review_due": "2027-09-02"
     },
+    "reference-library/blast-injury": {
+      "content_version": 1,
+      "hash": "21da3bbd1fc4c3da",
+      "path": "modules/reference-library/blast-injury.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
     "reference-library/blood-products": {
       "content_version": 2,
       "hash": "80b59ec820fc01fa",
@@ -2343,6 +2352,15 @@
       "review_tier": 1,
       "next_review_due": "2027-09-03"
     },
+    "reference-library/penetrating-regional-trauma": {
+      "content_version": 1,
+      "hash": "de3e24f99b7df0f3",
+      "path": "modules/reference-library/penetrating-regional-trauma.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
     "reference-library/perioperative-glycemic-management": {
       "content_version": 2,
       "hash": "389d8554778d1d1a",
@@ -2523,6 +2541,60 @@
       "review_tier": 3,
       "next_review_due": "2027-03-02"
     },
+    "reference-library/tox-alcohols-anticholinergics-other": {
+      "content_version": 1,
+      "hash": "88ad98d2f1475f29",
+      "path": "modules/reference-library/tox-alcohols-anticholinergics-other.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
+    "reference-library/tox-cannabinoids-inhalants": {
+      "content_version": 1,
+      "hash": "a056a6eaa8a5edd4",
+      "path": "modules/reference-library/tox-cannabinoids-inhalants.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
+    "reference-library/tox-dissociatives-hallucinogens": {
+      "content_version": 1,
+      "hash": "072785674b6da9c1",
+      "path": "modules/reference-library/tox-dissociatives-hallucinogens.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
+    "reference-library/tox-opioids": {
+      "content_version": 1,
+      "hash": "8ef3db196c21f76f",
+      "path": "modules/reference-library/tox-opioids.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
+    "reference-library/tox-sedative-hypnotics": {
+      "content_version": 1,
+      "hash": "f9423b1db733573a",
+      "path": "modules/reference-library/tox-sedative-hypnotics.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
+    "reference-library/tox-stimulants": {
+      "content_version": 1,
+      "hash": "24766cacaf4eaf98",
+      "path": "modules/reference-library/tox-stimulants.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
     "reference-library/toxidromes-and-overdoses": {
       "content_version": 2,
       "hash": "a7dca4015c3ffcb1",
@@ -2585,6 +2657,15 @@
       "section": "Reference Library",
       "review_tier": 3,
       "next_review_due": "2027-03-02"
+    },
+    "reference-library/wound-ballistics": {
+      "content_version": 1,
+      "hash": "a79cf46a703f7d3c",
+      "path": "modules/reference-library/wound-ballistics.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
     }
   }
 }

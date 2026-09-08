@@ -1,0 +1,130 @@
+{
+  "id": "tox-cannabinoids-inhalants",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
+  "settingEmphasis": [
+    "ed",
+    "prehospital",
+    "icu"
+  ],
+  "aliases": [
+    "cannabinoid hyperemesis syndrome",
+    "synthetic cannabinoid K2 spice",
+    "brodifacoum synthetic cannabinoid coagulopathy",
+    "volatile solvent huffing",
+    "sudden sniffing death",
+    "amyl nitrite poppers methemoglobinemia",
+    "methylene blue",
+    "pediatric edible ingestion"
+  ],
+  "tags": [
+    "toxicology",
+    "cannabinoids",
+    "inhalants",
+    "synthetic cannabinoids",
+    "methemoglobinemia",
+    "cannabinoid hyperemesis",
+    "solvents",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "THC partial CB1 agonist concentrate 70 90 percent edible delayed onset re-dosing",
+    "cannabinoid hyperemesis syndrome cyclical vomiting hot shower capsaicin cream",
+    "synthetic cannabinoid full CB1 agonist seizures psychosis immunoassay negative",
+    "brodifacoum superwarfarin contamination unexplained coagulopathy vitamin K1 weeks months",
+    "volatile solvent toluene myocardial catecholamine sensitization ventricular fibrillation",
+    "sudden sniffing death startle catecholamine surge avoid epinephrine beta-blockade",
+    "alkyl nitrite methemoglobinemia cyanosis unresponsive to oxygen chocolate brown blood",
+    "methylene blue 1 2 mg/kg co-oximetry G6PD deficiency hemolysis"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Critical Vector — Intoxicating Substances Reference, Cannabinoids + Inhalants classes (3 entries)",
+    "Sorensen CJ, et al. Cannabinoid Hyperemesis Syndrome: Diagnosis, Pathophysiology, and Treatment. J Med Toxicol. 2017;13:71-87",
+    "Toxicity of Synthetic Cannabinoids in K2/Spice: A Systematic Review. PMC, 2023",
+    "Kelkar AH, et al. An Outbreak of Synthetic Cannabinoid-Associated Coagulopathy in Illinois. N Engl J Med. 2018",
+    "Toluene Toxicity. Medscape/emedicine, 2025; Possible Biological Mechanisms of Sudden Sniffing Death Syndrome",
+    "Severe Methemoglobinemia Secondary to Isobutyl Nitrite Toxicity. PMC, 2021"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — converted from CV Intoxicating Substances Reference: cannabis/THC (including cannabinoid hyperemesis), synthetic cannabinoids (including brodifacoum contamination), and volatile solvents / alkyl nitrites (sudden sniffing death, methemoglobinemia)."
+    }
+  ],
+  "summary": "A legal low-acute-toxicity plant product and a family of synthetic analogs that are neither. Cannabis's distinctive emergencies are cannabinoid hyperemesis and prolonged pediatric edible ingestions; synthetic cannabinoids add seizures, psychosis, and — from adulteration — a superwarfarin coagulopathy. Inhalants are grouped by route: solvents sensitize the myocardium (\"sudden sniffing death\"), nitrites cause methemoglobinemia.",
+  "whyThisMatters": "Each of these has a signature that is missed when the drug isn't asked about directly. Cannabinoid hyperemesis takes years and an expensive workup to diagnose because marijuana is \"an antiemetic.\" Unexplained bleeding in a synthetic-cannabinoid user is a public-health outbreak pattern (brodifacoum), not a coincidence. And a pulse oximeter that reads normal on a visibly cyanotic patient is methemoglobinemia until a co-oximetry gas says otherwise.",
+  "clinicalTakeaway": "Ask specifically about cannabis, \"fake weed,\" and inhalant use — the standard cannabinoid immunoassay misses most synthetic cannabinoids, and none of these agents is volunteered as \"a drug.\" Cyclical vomiting plus compulsive hot showers in a heavy cannabis user is cannabinoid hyperemesis (topical capsaicin, supportive antiemetics, cessation counseling). Check coagulation studies in any synthetic-cannabinoid user with bleeding — brodifacoum coagulopathy needs weeks-to-months of vitamin K1, not a single dose. In solvent abuse, avoid catecholamine stimuli and epinephrine (myocardial sensitization → VF). Trust the cyanotic patient over a normal SpO2 — send a co-oximetry gas and give methylene blue 1-2 mg/kg for symptomatic methemoglobinemia (check G6PD when feasible).",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cannabinoids"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Agent",
+        "Distinguishing feature",
+        "Management"
+      ],
+      "rows": [
+        [
+          "Cannabis / THC",
+          "Partial CB1 agonist. Concentrates (dabs, vape carts) reach 70-90% THC vs 10-25% in flower. Edibles: delayed, unpredictable onset (30-90+ min) → accidental re-dosing, severe presentations in naive users and children. Cannabinoid hyperemesis syndrome — cyclical severe vomiting in a chronic heavy user, relieved by compulsive hot showers/baths (the hot-water-seeking behavior is itself a diagnostic clue)",
+          "Acute intoxication/anxiety: reassurance, low-stimulation environment, benzodiazepines for severe agitation. Hyperemesis: topical capsaicin cream to the abdomen (reasonable first-line adjunct), supportive antiemetics, IV fluids, cessation counseling (the only definitive treatment); haloperidol or benzodiazepines as adjuncts if refractory. Pediatric edible ingestion with CNS depression: supportive airway management and prolonged observation given delayed absorption"
+        ],
+        [
+          "Synthetic cannabinoids (K2, Spice, \"fake weed\"; JWH-018, AB-CHMINACA)",
+          "Full CB1 agonists, higher affinity than THC → greater toxicity, longer duration, much higher seizure/psychosis rate. Tachycardia and seizures most common; standard cannabinoid immunoassays do NOT detect most of them. Unexplained coagulopathy with bleeding (hematuria, epistaxis, GI bleed, disproportionate bruising) = brodifacoum (superwarfarin rodenticide) contamination — a 2018 multistate outbreak",
+          "Benzodiazepines for agitation/seizures; supportive care otherwise. Check INR/PT in any synthetic-cannabinoid user with bleeding, even minor. Confirmed/suspected brodifacoum: high-dose oral ± IV vitamin K1, plus 4-factor PCC and/or FFP for active severe bleeding — then weeks-to-months of oral vitamin K1 with INR monitoring (extremely long half-life), not a one-time reversal"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Inhalants"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Agent",
+        "Mechanism / signature",
+        "Management"
+      ],
+      "rows": [
+        [
+          "Volatile solvents (toluene, butane, propane; \"huffing\", \"bagging\")",
+          "Nonspecific CNS depression (like an inhaled anesthetic) — but the dangerous property is myocardial sensitization to circulating catecholamines → substrate for sudden fatal VF. \"Sudden sniffing death\": VF cardiac arrest during/just after a session in a healthy young person, often precipitated by a catecholamine surge (being startled and running). Chronic use → metabolic/renal tubular acidosis, hepatic/renal impairment",
+          "Remove from exposure, supportive oxygen, continuous cardiac monitoring; AVOID catecholamine-driven stimuli (exertion, fright). Ventricular dysrhythmia from sensitized myocardium: avoid epinephrine/catecholamines if possible; beta-blockade has been used to blunt the sensitized response in refractory cases"
+        ],
+        [
+          "Alkyl nitrites (isobutyl/amyl nitrite, \"poppers\")",
+          "Potent oxidizers — convert hemoglobin Fe2+ → Fe3+ (methemoglobin, cannot carry oxygen). Headache, syncope, and the hallmark: cyanosis and hypoxemia that does NOT correct with supplemental oxygen. Pulse oximetry reads falsely normal-ish; arterial blood is chocolate-brown",
+          "Send a co-oximetry panel (standard ABG/pulse ox will not reliably detect it). Symptomatic methemoglobinemia: methylene blue 1-2 mg/kg IV over several minutes, repeatable — check for G6PD deficiency first when feasible (methylene blue can cause hemolysis in G6PD deficiency)"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "A normal-looking pulse-oximeter reading does not clear methemoglobinemia — if the clinical cyanosis does not match the monitor, trust the patient and send a co-oximetry gas. And \"fake weed\" with unexplained bleeding is an outbreak pattern: think brodifacoum, expect a long vitamin K taper."
+    }
+  ],
+  "related": [
+    "toxidromes-and-overdoses",
+    "tox-stimulants",
+    "tox-dissociatives-hallucinogens",
+    "anticoagulation-reversal",
+    "blood-products"
+  ],
+  "buildNote": "Tier 2 (cannabinoid hyperemesis treatment and synthetic-cannabinoid adulterant outbreaks are active literature — recheck). Converted from CV Intoxicating Substances Reference, Cannabinoids + Inhalants classes. A standalone methemoglobinemia reference (drug causes, dapsone, benzocaine, co-oximetry, methylene blue vs ascorbate) is a natural follow-on."
+}

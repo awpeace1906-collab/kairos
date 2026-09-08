@@ -1,0 +1,147 @@
+{
+  "id": "tox-alcohols-anticholinergics-other",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
+  "aliases": [
+    "methanol ethylene glycol fomepizole",
+    "osmolar gap anion gap acidosis",
+    "alcohol withdrawal delirium tremens",
+    "Wernicke encephalopathy thiamine",
+    "anticholinergic toxidrome physostigmine",
+    "diphenhydramine sodium channel QRS",
+    "nicotine e-liquid biphasic toxicity",
+    "kratom mitragynine hepatotoxicity",
+    "anabolic androgenic steroid peliosis hepatis"
+  ],
+  "tags": [
+    "toxicology",
+    "toxic alcohols",
+    "anticholinergic",
+    "alcohol withdrawal",
+    "nicotine",
+    "kratom",
+    "anabolic steroids",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "ethanol GABA-A NMDA withdrawal tremulousness seizure hallucinosis delirium tremens timeline",
+    "thiamine before glucose Wernicke 500 mg q8h CIWA-Ar phenobarbital",
+    "methanol formic acid optic neurotoxicity snowstorm vision ethylene glycol calcium oxalate AKI",
+    "fomepizole empiric osmolar gap 25 pH 7.3 oxalate crystals hemodialysis EXTRIP",
+    "anticholinergic hot blind mad red dry full mnemonic mumbling picking delirium",
+    "diphenhydramine sodium channel blockade wide QRS bicarbonate physostigmine contraindicated mixed",
+    "nicotine e-liquid biphasic stimulatory then depressor phase atropine observe both phases",
+    "kratom partial mu agonist naloxone cholestatic hepatotoxicity COWS false-negative opioid screen",
+    "anabolic steroid 17-alpha-alkylated hepatotoxicity peliosis hepatis polycythemia LVH sudden cardiac death"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Critical Vector — Intoxicating Substances Reference: Alcohol & Toxic Alcohols, Anticholinergics, Nicotine, Kratom, Anabolic-Androgenic Steroids (6 entries)",
+    "Fomepizole for Ethylene Glycol and Methanol Poisoning. N Engl J Med, 2009; EXTRIP toxic-alcohol recommendations",
+    "Ethylene Glycol Toxicity. StatPearls NBK537009, 2022; Diagnostics — Toxic Alcohols. Taming the SRU, 2019",
+    "Anticholinergic Intoxication. EMCrit/IBCC, 2025; Physostigmine in Anticholinergic Poisoning: An Old Antidote with Resurgence. PMC, 2020",
+    "Managing Intoxications with Nicotine-Containing E-Liquids. Taylor & Francis, 2022",
+    "Kratom (Mitragyna speciosa): Friend or Foe? Psychiatrist.com, 2023; Kratom Toxicity. WikEM, 2026; Anabolic Androgenic Steroid-Induced Hepatotoxicity. ScienceDirect, 2016"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — converted from CV Intoxicating Substances Reference: ethanol (and withdrawal), methanol/ethylene glycol, anticholinergics (diphenhydramine/Datura), nicotine and e-liquid, kratom, and anabolic-androgenic steroids."
+    }
+  ],
+  "summary": "A grab-bag of high-consequence toxicities that share no receptor. Ethanol's emergency is usually the withdrawal that hasn't started yet; toxic alcohols kill via their metabolites, not the parent, so treat the gap before the level returns. Anticholinergic delirium has a distinctive whole-constellation picture — but diphenhydramine, the commonest cause, is also a sodium-channel blocker. Nicotine e-liquid toxicity is biphasic; kratom is opioid-like but invisible to the opioid screen; anabolic steroids are a chronic-organ-toxicity problem, not an overdose.",
+  "whyThisMatters": "Each of these has a decision that must be made before a confirmatory result exists: start fomepizole on an osmolar-plus-anion-gap picture rather than waiting days for a send-out level; give thiamine before glucose; recognize that the settled-down nicotine patient may be entering the more dangerous depressor phase; and know that physostigmine — the antidote taught for the anticholinergic toxidrome — is often the wrong move for diphenhydramine specifically.",
+  "clinicalTakeaway": "Toxic alcohols: any unexplained high-anion-gap metabolic acidosis with an elevated osmolar gap gets empiric fomepizole now (criteria: osmolar gap > 25, pH < 7.3, or oxalate crystals), plus hemodialysis for severe acidosis, visual symptoms, renal impairment, or very high levels. Ethanol: give thiamine before or with glucose; screen for withdrawal on every alcohol-involved visit (last drink, daily intake) and use CIWA-Ar-guided symptom-triggered benzodiazepines. Anticholinergics: benzodiazepines and evaporative cooling first-line; get an ECG for every diphenhydramine ingestion and treat a wide QRS with bicarbonate — reserve physostigmine for pure antimuscarinic poisoning with toxicology guidance. Nicotine e-liquid: monitor through both phases, do not discharge after the stimulatory phase settles. Kratom: a negative opioid screen does not exclude it. Anabolic steroids: ask directly about supplement/injectable use in any young patient with unexplained cardiomyopathy, hepatic lesions, or polycythemia.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Alcohol and toxic alcohols"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Agent",
+        "Distinguishing feature",
+        "Management"
+      ],
+      "rows": [
+        [
+          "Ethanol",
+          "GABA-A potentiation + NMDA inhibition — the dual mechanism explains withdrawal severity. Tolerance shifts the dose-response curve. Withdrawal timeline: tremulousness 6-12 h, withdrawal seizures 12-48 h, alcoholic hallucinosis (clear sensorium) 12-24 h, delirium tremens 2-7 days (3-5% of hospitalized withdrawal patients, meaningful mortality if missed)",
+          "Acute: airway protection, IV fluids, glucose for hypoglycemia, and thiamine BEFORE or with glucose (not after). Withdrawal: CIWA-Ar-guided symptom-triggered benzodiazepines titrated to comfortable sedation. Wernicke (nystagmus, ataxia, confusion): high-dose IV thiamine 500 mg q8h × 72 h. Benzo-refractory DT: phenobarbital"
+        ],
+        [
+          "Methanol",
+          "Nontoxic parent; alcohol dehydrogenase → formaldehyde → formic acid, directly toxic to the optic nerve/retina. Ethanol-like inebriation, then a latent period, then severe high-anion-gap acidosis. Distinguishing late feature: \"snowstorm\"/blurred vision progressing to blindness; fundoscopy shows optic disc hyperemia/edema",
+          "Empiric fomepizole (competitive ADH inhibitor) for suspected ingestion meeting criteria (osmolar gap > 25, pH < 7.3, or oxalate crystals) — do not wait for the send-out level. Hemodialysis for severe acidosis, visual symptoms, or very high levels (EXTRIP standard). If no fomepizole: IV ethanol as a bridge, serum-level-guided"
+        ],
+        [
+          "Ethylene glycol",
+          "ADH → glycolic acid (drives the acidosis) → oxalic acid → calcium oxalate crystals in renal tubules → AKI. Envelope/needle-shaped urine crystals + hypocalcemia + elevated anion gap with a low/absent blood alcohol is close to diagnostic; fluorescent antifreeze dye under Wood's lamp is a supporting clue",
+          "As for methanol — empiric fomepizole, hemodialysis for severe acidosis or renal impairment. Sodium bicarbonate for severe systemic acidosis, but do NOT alkalinize the urine as a goal — it promotes calcium oxalate precipitation and worsens renal injury"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Anticholinergics, nicotine, kratom, anabolic steroids"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Agent",
+        "Distinguishing feature",
+        "Management"
+      ],
+      "rows": [
+        [
+          "Diphenhydramine & Datura (jimsonweed)",
+          "Antimuscarinic toxidrome: hot as a hare, blind as a bat, mad as a hatter (mumbling, \"picking\" delirium; Lilliputian hallucinations), red as a beet, dry as a bone, full as a flask — plus tachycardia, decreased bowel sounds. The full constellation together is distinctive. Diphenhydramine ALSO blocks sodium channels at high dose → QRS widening, TCA-like cardiotoxicity (atropine/scopolamine do not)",
+          "Benzodiazepines for agitation/seizures; evaporative cooling. Activated charcoal within ~1 h (anticholinergic-delayed gastric emptying extends the window). ECG + QRS monitoring for every diphenhydramine ingestion — wide QRS → sodium bicarbonate. Physostigmine can reverse pure antimuscarinic delirium and avoid intubation, but is contraindicated / needs toxicology guidance with a sodium-channel blocker (diphenhydramine) or mixed agent — benzodiazepines are the default for undifferentiated cases"
+        ],
+        [
+          "Nicotine & e-liquid",
+          "Nicotinic ACh receptor agonist at ganglia + NMJ → biphasic toxicity: early stimulatory phase (nausea, hypertension, tachycardia, tremor, seizures) then a later depressor phase (hypotension, bradycardia, weakness, CNS/respiratory depression) as ganglionic transmission is blocked. E-liquid 20-60+ mg/mL; ingested dose correlates poorly with severity — treat any pediatric e-liquid ingestion as potentially serious",
+          "Supportive care; monitor through BOTH phases — do not discharge after the stimulatory phase settles. Atropine for symptomatic bradycardia / muscarinic excess in the depressor phase; vasopressors for hypotension. Respiratory failure from depolarizing neuromuscular blockade → ventilatory support until it resolves. Benzodiazepines for seizures"
+        ],
+        [
+          "Kratom (mitragynine, 7-hydroxymitragynine)",
+          "Partial mu agonist (G-protein-biased) + alpha-2 and serotonergic activity — stimulant at low dose, opioid at high dose. Concentrated extracts (7-OH-mitragynine ~10× affinity) drive toxicity: respiratory depression, seizures, rarely cardiac arrest (mostly polydrug). Cholestatic hepatotoxicity (bilirubin sometimes > 20 mg/dL) over 1-8 weeks, usually reversible. NOT on standard opioid immunoassays",
+          "Naloxone can reverse kratom respiratory depression (mu mechanism) though less predictably. Supportive care, benzodiazepines for seizures. Ask specifically about kratom/herbal supplements — a negative opioid screen does not rule it out. Withdrawal resembles mild-moderate opioid withdrawal — score/manage with COWS. Hepatotoxicity: supportive, usually reversible with abstinence"
+        ],
+        [
+          "Anabolic-androgenic steroids",
+          "NOT an acute-overdose toxidrome — chronic organ toxicity and sudden cardiac events. 17-alpha-alkylated oral agents: disproportionate hepatotoxicity, cholestatic jaundice, peliosis hepatis (blood-filled hepatic cysts, can rupture), hepatic adenoma/carcinoma. Cardiovascular: LVH, diastolic dysfunction, low HDL, prothrombotic state, sudden cardiac death in young athletes. Renal: FSGS, CKD. Young muscular patient with polycythemia + unexplained LVH + gynecomastia points to chronic AAS use",
+          "Presentations are chronic-complication-driven (chest pain/arrhythmia, abdominal pain, incidental finding). Ask directly and non-judgmentally about supplement/injectable use in any young patient with unexplained cardiomyopathy, hepatic lesions, or marked polycythemia (AAS are often undeclared in OTC \"supplements\"). Peliosis hepatis with hemorrhage → surgical/IR emergency (support, urgent imaging, embolization/surgery). Ventricular arrhythmia → standard ACLS + cardiology workup once stable"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Do not wait for the send-out toxic-alcohol level to start treatment — an elevated osmolar gap plus anion-gap acidosis in the right context is enough to start fomepizole today. And with alcohol: the emergency is often not the intoxicated patient in front of you, it is the withdrawal that hasn't started — ask about last drink and daily intake on every alcohol-involved visit."
+    }
+  ],
+  "related": [
+    "toxidromes-and-overdoses",
+    "osmolal-gap",
+    "anion-gap",
+    "ciwa-ar",
+    "cows"
+  ],
+  "buildNote": "Tier 2 (fomepizole/EXTRIP guidance and physostigmine's resurgence are settled but periodically updated; kratom regulation and literature are moving — recheck). Converted from CV Intoxicating Substances Reference: Alcohol & Toxic Alcohols, Anticholinergics, Nicotine, Kratom, Anabolic-Androgenic Steroids. This is the catch-all module for the reference's smaller single-substance classes; alcohol withdrawal has fuller coverage via `ciwa-ar`. Not-yet-covered per the source: TCA/SSRI/SNRI, lithium, digoxin (salicylates and acetaminophen already have their own modules)."
+}
