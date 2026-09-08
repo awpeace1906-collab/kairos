@@ -31,12 +31,16 @@ struct ContentDetailView: View {
             if let error {
                 ContentUnavailableViewCompat(text: error)
             } else if let loaded {
+                let tint = Theme.sectionColor(forTitle: loaded.meta.section)
                 ScrollView {
                     VStack(alignment: .leading, spacing: 0) {
                         Rectangle()
-                            .fill(Theme.sectionColor(forTitle: loaded.meta.section))
+                            .fill(tint)
                             .frame(maxWidth: .infinity, minHeight: 3, maxHeight: 3)
                         VStack(alignment: .leading, spacing: 16) {
+                            Text(loaded.meta.section.uppercased())
+                                .font(Theme.mono(11)).tracking(1.2)
+                                .foregroundStyle(tint)
                             switch loaded {
                             case .calculator(let c): CalculatorView(calc: c, route: route)
                             case .reference(let r):  ReferenceBody(doc: r)
@@ -50,10 +54,12 @@ struct ContentDetailView: View {
                         .padding()
                     }
                 }
+                .transition(.opacity)
             } else {
                 ProgressView()
             }
         }
+        .animation(.easeOut(duration: 0.18), value: loaded == nil)
         .navigationTitle(loaded?.meta.title ?? "")
         .navigationBarTitleDisplayMode(.inline)
         .task(id: route) { await load() }
@@ -80,6 +86,8 @@ struct ContentDetailView: View {
 
 struct ReferenceBody: View {
     let doc: ReferenceDoc
+    private var tint: Color { Theme.sectionColor(forTitle: doc.meta.section) }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             if let summary = doc.summary {
@@ -88,7 +96,7 @@ struct ReferenceBody: View {
             if let why = doc.whyThisMatters {
                 framedNote("WHY THIS MATTERS", why)
             }
-            BlockList(blocks: doc.body)
+            BlockList(blocks: doc.body, sectionTint: tint)
             if let take = doc.clinicalTakeaway {
                 framedNote("CLINICAL TAKEAWAY", take, emphasized: true)
             }
@@ -97,31 +105,53 @@ struct ReferenceBody: View {
         }
     }
 
+    // WHY THIS MATTERS is quiet context; CLINICAL TAKEAWAY is the one struck
+    // point — ember bar, ember label, ember-tinted ground. Mirrors web.
     @ViewBuilder private func framedNote(_ label: String, _ text: String, emphasized: Bool = false) -> some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text(label).font(Theme.mono(11)).foregroundStyle(.secondary).tracking(0.8)
+            Text(label).font(Theme.mono(11)).tracking(0.8)
+                .foregroundStyle(emphasized ? Theme.accent : Color.secondary)
             Text(text).font(.callout).fontWeight(emphasized ? .medium : .regular)
         }
         .padding(10)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 10))
-        .overlay(alignment: .leading) { Rectangle().fill(Theme.accent).frame(width: 3) }
+        .background(
+            emphasized ? Theme.accent.opacity(0.10) : Color(.tertiarySystemBackground),
+            in: RoundedRectangle(cornerRadius: 10)
+        )
+        .overlay(alignment: .leading) {
+            Rectangle().fill(emphasized ? Theme.accent : Color(.separator))
+                .frame(width: emphasized ? 3 : 2)
+        }
     }
 }
 
 /// Shared renderer for the `body` block array (reference + peds-tool modules).
 struct BlockList: View {
     let blocks: [ReferenceDoc.Block]
+    var sectionTint: Color = .accentColor
     var body: some View {
-        ForEach(Array(blocks.enumerated()), id: \.offset) { _, b in
-            block(b)
+        ForEach(Array(blocks.enumerated()), id: \.offset) { i, b in
+            block(b, isFirst: i == 0)
         }
     }
 
-    @ViewBuilder private func block(_ b: ReferenceDoc.Block) -> some View {
+    @ViewBuilder private func block(_ b: ReferenceDoc.Block, isFirst: Bool) -> some View {
         switch b.type {
         case "heading":
-            Text(b.text ?? "").font(Theme.display(b.level == 2 ? 19 : 16))
+            if b.level == 2 {
+                VStack(alignment: .leading, spacing: 7) {
+                    if !isFirst { Divider() }
+                    HStack(alignment: .firstTextBaseline, spacing: 8) {
+                        RoundedRectangle(cornerRadius: 1.5).fill(sectionTint)
+                            .frame(width: 3, height: 15)
+                        Text(b.text ?? "").font(Theme.display(19))
+                    }
+                }
+                .padding(.top, isFirst ? 0 : 10)
+            } else {
+                Text(b.text ?? "").font(Theme.display(16))
+            }
         case "text":
             Text(b.text ?? "")
         case "list":
@@ -153,7 +183,8 @@ struct BlockList: View {
                 if !columns.isEmpty {
                     HStack(alignment: .top, spacing: 12) {
                         ForEach(Array(columns.enumerated()), id: \.offset) { _, c in
-                            Text(c).font(.subheadline.bold())
+                            Text(c.uppercased()).font(Theme.mono(11)).tracking(0.4)
+                                .foregroundStyle(.secondary)
                                 .frame(width: colWidth, alignment: .topLeading)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
@@ -292,7 +323,7 @@ struct PedsToolBody: View {
                 Text("Defers to: \(src.joined(separator: ", "))").font(.footnote).foregroundStyle(.secondary)
             }
             if let body = tool.body, !body.isEmpty {
-                BlockList(blocks: body)
+                BlockList(blocks: body, sectionTint: Theme.sectionColor(forTitle: tool.meta.section))
             }
             BuildNote(text: tool.buildNote)
             if tool.embeddedCalculator == nil { SourcesBlock(meta: tool.meta) }

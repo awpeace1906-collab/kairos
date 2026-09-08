@@ -140,6 +140,7 @@ export function renderHome(store, router) {
     { class: "home" },
     el("div", { class: "brand" }, el("h1", {}, "Kairos"), el("p", {}, "the critical moment")),
     el("div", { class: "searchbar" }, input),
+    el("p", { class: "home-hint" }, "Pick a section on the left, or search everything above."),
     settingChips,
     chips,
     results,
