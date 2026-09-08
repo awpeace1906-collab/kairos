@@ -2145,6 +2145,15 @@
       "review_tier": 1,
       "next_review_due": "2027-03-03"
     },
+    "reference-library/hazmat-scene-toxidromes": {
+      "content_version": 1,
+      "hash": "66718f052a6a9f1e",
+      "path": "modules/reference-library/hazmat-scene-toxidromes.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
+    },
     "reference-library/heart-failure-continuum": {
       "content_version": 2,
       "hash": "5f2ccc9c96a7bfdf",
@@ -2207,6 +2216,15 @@
       "section": "Reference Library",
       "review_tier": 3,
       "next_review_due": "2026-12-02"
+    },
+    "reference-library/incendiary-chemical-burns": {
+      "content_version": 1,
+      "hash": "7d04cfa53733dfcc",
+      "path": "modules/reference-library/incendiary-chemical-burns.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-07"
     },
     "reference-library/induction-augmentation": {
       "content_version": 2,

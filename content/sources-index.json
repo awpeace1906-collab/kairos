@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 478,
+  "count": 489,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -474,6 +474,30 @@
           "title": "Trauma — Primary Survey, Hemorrhagic Shock & MTP",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/trauma-primary-survey"
+        }
+      ]
+    },
+    {
+      "text": "ATSDR Medical Management Guidelines: Phosgene; Sulfur Mustard Agent H/HD. CDC, updated 2023",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "hazmat-scene-toxidromes",
+          "title": "Hazmat Scene Management & Chemical Toxidromes",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/hazmat-scene-toxidromes"
+        }
+      ]
+    },
+    {
+      "text": "ATSDR Medical Management Guidelines: Sulfur Mustard Agent H/HD, Agent HT. CDC, updated 2023",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "incendiary-chemical-burns",
+          "title": "White Phosphorus & Incendiary Casualties",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/incendiary-chemical-burns"
         }
       ]
     },
@@ -3688,6 +3712,18 @@
       ]
     },
     {
+      "text": "Aviv U, Kornhaber R, Harats M, Haik J. The burning issue of white phosphorus: a case report and review of the literature. Disaster Mil Med. 2017;3:6",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "incendiary-chemical-burns",
+          "title": "White Phosphorus & Incendiary Casualties",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/incendiary-chemical-burns"
+        }
+      ]
+    },
+    {
       "text": "Baker SP et al. J Trauma 1974; AAAM Abbreviated Injury Scale",
       "group": "Other primary sources",
       "usedBy": [
@@ -3856,6 +3892,18 @@
       ]
     },
     {
+      "text": "CCW Protocol III on Incendiary Weapons, 1980",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "incendiary-chemical-burns",
+          "title": "White Phosphorus & Incendiary Casualties",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/incendiary-chemical-burns"
+        }
+      ]
+    },
+    {
       "text": "CDC/ACIP Recommended Child and Adolescent Immunization Schedule, United States, 2025",
       "group": "Other primary sources",
       "usedBy": [
@@ -3888,6 +3936,18 @@
           "title": "Revised Trauma Score (RTS)",
           "section": "Calculators",
           "route": "/calculators/trauma/revised-trauma-score"
+        }
+      ]
+    },
+    {
+      "text": "CHEMM (Chemical Hazards Emergency Medical Management), US DHHS — Choking/Lung/Pulmonary Agents Toxidrome; chemm.hhs.gov",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "hazmat-scene-toxidromes",
+          "title": "Hazmat Scene Management & Chemical Toxidromes",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/hazmat-scene-toxidromes"
         }
       ]
     },
@@ -4036,6 +4096,18 @@
       ]
     },
     {
+      "text": "Critical Vector — Austere & Disaster Medicine, Part One: Hazmat Scene Management & Toxidromes",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "hazmat-scene-toxidromes",
+          "title": "Hazmat Scene Management & Chemical Toxidromes",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/hazmat-scene-toxidromes"
+        }
+      ]
+    },
+    {
       "text": "Critical Vector — Austere & Disaster Medicine, Part Three: Crush Syndrome",
       "group": "Other primary sources",
       "usedBy": [
@@ -4044,6 +4116,18 @@
           "title": "Crush Syndrome — Entrapment, Extrication & Hyperkalemia",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/crush-syndrome"
+        }
+      ]
+    },
+    {
+      "text": "Critical Vector — Austere & Disaster Medicine, Part Two: White Phosphorus & Incendiary Casualties",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "incendiary-chemical-burns",
+          "title": "White Phosphorus & Incendiary Casualties",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/incendiary-chemical-burns"
         }
       ]
     },
@@ -4440,6 +4524,18 @@
           "title": "Post-Caesarean Analgesia (PROSPECT 2026)",
           "section": "Reference Library",
           "route": "/reference-library/obstetric-gynecologic/csection-analgesia-prospect"
+        }
+      ]
+    },
+    {
+      "text": "Davis KG. Acute management of white phosphorus burn. Mil Med. 2002;167(1):83-84",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "incendiary-chemical-burns",
+          "title": "White Phosphorus & Incendiary Casualties",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/incendiary-chemical-burns"
         }
       ]
     },
@@ -5254,6 +5350,18 @@
       ]
     },
     {
+      "text": "NFPA 472 / 1072. Standard for Competence of Responders to Hazardous Materials / WMD Incidents",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "hazmat-scene-toxidromes",
+          "title": "Hazmat Scene Management & Chemical Toxidromes",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/hazmat-scene-toxidromes"
+        }
+      ]
+    },
+    {
       "text": "NIH Stroke Scale (official)",
       "group": "Other primary sources",
       "usedBy": [
@@ -5274,6 +5382,18 @@
           "title": "MELD-Na Score",
           "section": "Calculators",
           "route": "/calculators/gi-renal-metabolic/meld-na"
+        }
+      ]
+    },
+    {
+      "text": "OSHA. Hazardous Waste Operations and Emergency Response Standard, 29 CFR 1910.120 (HAZWOPER)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "hazmat-scene-toxidromes",
+          "title": "Hazmat Scene Management & Chemical Toxidromes",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/hazmat-scene-toxidromes"
         }
       ]
     },
@@ -5994,6 +6114,18 @@
           "title": "Drug Interactions — Nine High-Yield Pairs",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/drug-interactions-high-yield"
+        }
+      ]
+    },
+    {
+      "text": "Wang M, Bai Y, Zhang X, Zhang J, Kang A. White phosphorus munitions: pathophysiology, clinical management, and multidisciplinary perspectives. Front Public Health. 2025;13:1632840",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "incendiary-chemical-burns",
+          "title": "White Phosphorus & Incendiary Casualties",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/incendiary-chemical-burns"
         }
       ]
     },

@@ -253,19 +253,21 @@ interactive New Orleans Criteria. The Done nomogram is deliberately not built �
   could seed a "quick reference" view or the home-screen cheat sheet.
 - **`mnemonics_guide.html`, `perls_map.html`** — cross-cutting; could be a
   Reference Library "pearls & mnemonics" module.
-- **`CV_Austere_Disaster_Medicine`** — Reference Library now has an obvious home
-  (Resuscitation & Airway, same as hemorrhagic-shock-mtp/trauma-team-activation).
-  Part Three (Crush Syndrome) converted 2026-09-04 → new `crush-syndrome`. Parts
-  One/Two (hazmat scene management/toxidromes, white-phosphorus/incendiary
-  casualties) still to convert — general toxidrome recognition already lives in
-  `toxidromes-and-overdoses`, but scene management and incendiary-injury care
-  are genuinely uncovered.
+- **`CV_Austere_Disaster_Medicine`** — 🟢 **FULLY CONVERTED.** Part Three (Crush
+  Syndrome) → `crush-syndrome` (2026-09-04). Part One → `hazmat-scene-toxidromes`
+  (2026-09-07: scene zones, HAZWOPER tiers, decon flow, pulmonary-irritant /
+  asphyxiant / cholinergic toxidromes). Part Two → `incendiary-chemical-burns`
+  (2026-09-07: WP pathophysiology, comparative incendiary-agent table, prehospital
+  sequence, critical errors). All three in Reference Library / Resuscitation &
+  Airway, cross-linked. Nerve-agent + vesicant + radiological toxidromes are
+  previews in Part One — dedicated expansions remain a follow-on.
 - **`ballistics_blast_manual_v6_lightmode.html` (84 KB)** and
   **`intoxicating-substances-reference.html` (154 KB, 12 classes / 39
   substances)** — both large, high-value, and out of scope for a single batch;
   each needs its own dedicated conversion pass (ballistics likely splits into
   several Trauma reference modules; the substances reference likely splits by
-  drug class). Next big-ticket content projects.
+  drug class). Next big-ticket content projects — **still open** (CV_Austere is
+  now cleared).
 
 ---
 

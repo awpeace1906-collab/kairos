@@ -7772,6 +7772,50 @@
       ]
     },
     {
+      "id": "hazmat-scene-toxidromes",
+      "title": "Hazmat Scene Management & Chemical Toxidromes",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "hazmat",
+        "CBRN",
+        "decontamination",
+        "toxidrome",
+        "chemical exposure",
+        "mass casualty",
+        "prehospital",
+        "disaster medicine",
+        "ED"
+      ],
+      "keywords": [
+        "hot zone warm zone cold zone upwind uphill",
+        "DOT placard NFPA 704 UN number ERG",
+        "awareness operations technician HAZWOPER 1910.120",
+        "emergency decon technical decon clothing removal",
+        "chlorine ammonia water-soluble immediate irritation",
+        "phosgene delayed pulmonary edema 48 hours no antidote",
+        "simple asphyxiant chemical asphyxiant cyanide CO hydrogen sulfide",
+        "hydroxocobalamin sodium thiosulfate cyanide antidote",
+        "organophosphate sarin VX acetylcholinesterase",
+        "atropine pralidoxime aging miosis secretions seizures",
+        "hazmat zones hot warm cold",
+        "decontamination corridor",
+        "HAZWOPER training levels",
+        "pulmonary irritant agents",
+        "chlorine ammonia phosgene",
+        "asphyxiant agents",
+        "nerve agent toxidrome",
+        "SLUDGE DUMBELS",
+        "CBRN scene"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/hazmat-scene-toxidromes",
+      "settingEmphasis": [
+        "prehospital",
+        "ed"
+      ]
+    },
+    {
       "id": "hemorrhagic-shock-mtp",
       "title": "Hemorrhagic Shock & Massive Transfusion",
       "section": "Reference Library",
@@ -8631,6 +8675,50 @@
       "settingEmphasis": [
         "icu",
         "or"
+      ]
+    },
+    {
+      "id": "incendiary-chemical-burns",
+      "title": "White Phosphorus & Incendiary Casualties",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "white phosphorus",
+        "incendiary",
+        "chemical burn",
+        "burns",
+        "hypocalcemia",
+        "disaster medicine",
+        "prehospital",
+        "trauma",
+        "ED"
+      ],
+      "keywords": [
+        "white phosphorus ignites 34C burns 800C garlic odor",
+        "particles glow green darkness deny oxygen do not extinguish",
+        "phosphoric acid hypocalcemia hyperphosphatemia QT prolongation",
+        "fatal less than 10 percent BSA systemic absorption",
+        "napalm smother foam not water",
+        "thermite sand dry powder steam explosion",
+        "magnesium mineral oil burns in water",
+        "sulfur mustard soap water 2 minutes leukopenia day 9",
+        "lewisite BAL dimercaprol arsenic",
+        "copper sulfate abandoned hemolysis hepatotoxicity",
+        "forceps particle removal continuous irrigation moist dressing",
+        "ionized calcium ECG within one hour calcium gluconate",
+        "white phosphorus burn",
+        "WP munition injury",
+        "incendiary weapon casualty",
+        "napalm burn management",
+        "thermite magnesium burn",
+        "phosphorescent particle glow",
+        "hypocalcemia phosphorus burn"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/incendiary-chemical-burns",
+      "settingEmphasis": [
+        "prehospital",
+        "ed"
       ]
     }
   ]

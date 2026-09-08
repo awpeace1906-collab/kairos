@@ -14,15 +14,27 @@ modules — the care-setting lens is fully seeded. Uncommitted: 182 modules +
 manifest/search-index/sources-index (nav metadata; no `content_version` bumps).
 DIRECTIONS_FORWARD §1 fully shipped (care-setting lens + reference template + 87/87).
 Priority order for the next block:
-1. **Real content gaps** — the big unconverted CV guides (ballistics/blast, the
-   153 KB intoxicating-substances reference, CV_Austere hazmat/toxidrome);
-   higher-risk BRUE pathway stub. *(VExUS / venous-congestion / de-resuscitation
-   module — DONE 2026-09-07.)*
+1. **Real content gaps** — the two remaining big unconverted CV guides:
+   `ballistics_blast_manual_v6` (→ several Trauma reference modules) and the
+   153 KB `intoxicating-substances-reference` (→ split by drug class). Plus the
+   higher-risk BRUE pathway stub. *(DONE 2026-09-07: VExUS / venous-congestion /
+   de-resuscitation module; CV_Austere Parts One & Two → `hazmat-scene-toxidromes`
+   + `incendiary-chemical-burns` — CV_Austere now fully converted.)*
 2. **Small decisions** — "Flag as outdated" mailto stub → real destination;
    NIHSS band citation; PAS/pARC section placement; pre-arrival zone-reference-card flow.
 3. Parked per instruction: GitHub Pages hosting, REMOTE_BASE wiring.
 
 ## Progress log
+- 2026-09-07 — **CV_Austere Disaster Medicine fully converted (+2 → 288 total).**
+  Part One → `hazmat-scene-toxidromes` (Resus & Airway): hot/warm/cold zones,
+  identification tools, HAZWOPER responder tiers, decon + patient flow,
+  pulmonary-irritant (chlorine/ammonia/phosgene) / asphyxiant / cholinergic
+  toxidromes. Part Two → `incendiary-chemical-burns`: white-phosphorus
+  pathophysiology (self-sustaining combustion, phosphoric-acid hypocalcemia,
+  fatal < 10% BSA), 6-agent comparative table (WP/napalm/thermite/magnesium/
+  sulfur mustard/lewisite), 5-step prehospital sequence, critical-errors danger
+  callout. Both Tier 2, standard template, cross-linked with `crush-syndrome`
+  (Part Three, done earlier). validate 288/0, test 231/0.
 - 2026-09-07 — **New reference module: `venous-congestion-deresuscitation`** (Critical
   Care, **286 total**). Venous congestion physiology (renal perfusion pressure =
   MAP − CVP), the full VExUS grading system (IVC gate + hepatic/portal/intrarenal

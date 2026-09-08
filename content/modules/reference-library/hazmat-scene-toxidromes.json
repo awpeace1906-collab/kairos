@@ -1,0 +1,246 @@
+{
+  "id": "hazmat-scene-toxidromes",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Hazmat Scene Management & Chemical Toxidromes",
+  "settingEmphasis": [
+    "prehospital",
+    "ed"
+  ],
+  "aliases": [
+    "hazmat zones hot warm cold",
+    "decontamination corridor",
+    "HAZWOPER training levels",
+    "pulmonary irritant agents",
+    "chlorine ammonia phosgene",
+    "asphyxiant agents",
+    "nerve agent toxidrome",
+    "SLUDGE DUMBELS",
+    "CBRN scene"
+  ],
+  "tags": [
+    "hazmat",
+    "CBRN",
+    "decontamination",
+    "toxidrome",
+    "chemical exposure",
+    "mass casualty",
+    "prehospital",
+    "disaster medicine",
+    "ED"
+  ],
+  "keywords": [
+    "hot zone warm zone cold zone upwind uphill",
+    "DOT placard NFPA 704 UN number ERG",
+    "awareness operations technician HAZWOPER 1910.120",
+    "emergency decon technical decon clothing removal",
+    "chlorine ammonia water-soluble immediate irritation",
+    "phosgene delayed pulmonary edema 48 hours no antidote",
+    "simple asphyxiant chemical asphyxiant cyanide CO hydrogen sulfide",
+    "hydroxocobalamin sodium thiosulfate cyanide antidote",
+    "organophosphate sarin VX acetylcholinesterase",
+    "atropine pralidoxime aging miosis secretions seizures"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Critical Vector — Austere & Disaster Medicine, Part One: Hazmat Scene Management & Toxidromes",
+    "CHEMM (Chemical Hazards Emergency Medical Management), US DHHS — Choking/Lung/Pulmonary Agents Toxidrome; chemm.hhs.gov",
+    "ATSDR Medical Management Guidelines: Phosgene; Sulfur Mustard Agent H/HD. CDC, updated 2023",
+    "OSHA. Hazardous Waste Operations and Emergency Response Standard, 29 CFR 1910.120 (HAZWOPER)",
+    "NFPA 472 / 1072. Standard for Competence of Responders to Hazardous Materials / WMD Incidents"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — converted from CV Austere & Disaster Medicine Part One: scene zones, identification tools, responder training tiers, decontamination flow, and the pulmonary-irritant / asphyxiant / nerve-agent toxidromes."
+    }
+  ],
+  "summary": "The operating picture for a chemical release: three zones, four responder tiers, a decontamination corridor that protects everyone downstream of it, and the three toxidrome families a medical provider actually has to tell apart — irritant gas, asphyxiant, and cholinergic.",
+  "whyThisMatters": "A contaminated patient who reaches your resus bay undecontaminated turns one casualty into a contaminated department. The scene structure and decon corridor exist to stop that, and they only work if the medical team understands where its boundary is. On the clinical side, the agent that kills late — phosgene, with pulmonary edema up to 48 hours out — looks tolerable at first contact, so recognition and a disposition rule matter more than any antidote.",
+  "clinicalTakeaway": "Medical providers work in the cold zone, upwind and uphill; only decontaminated patients cross into it, and clothing removal alone clears most contamination. Sort the exposure into one of three toxidromes: water-soluble irritants (chlorine, ammonia) announce themselves and are supportive-care only; phosgene is deceptively mild early — observe any exposure for the full 48-hour delayed-edema window; chemical asphyxiants (cyanide, CO, H2S) impair oxygen use at the cell and cyanide has a specific antidote (hydroxocobalamin ± sodium thiosulfate). Copious secretions, miosis, and seizures mark a cholinergic/nerve-agent exposure — atropine plus pralidoxime.",
+  "body": [
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "Foundational scene reference. The cholinergic/nerve-agent, vesicant, and radiological sections are previews here — full antidote protocols and agent-specific decontamination belong in dedicated expansions."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Scene structure — zones and identification"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Zone",
+        "What it is",
+        "Who works there"
+      ],
+      "rows": [
+        [
+          "Hot zone",
+          "Contaminated area immediately around the source",
+          "Hazmat-technician training + appropriate PPE only. Medical providers without this do not enter."
+        ],
+        [
+          "Warm zone",
+          "Decontamination corridor between hot and cold zones",
+          "Operations-level responders — defensive actions and emergency decon"
+        ],
+        [
+          "Cold zone",
+          "Clean area upwind and uphill of the release",
+          "Command, triage, and stabilized patient care. Only decontaminated patients enter."
+        ]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Identification tools: DOT placards (diamond, hazard class + 4-digit UN ID number); NFPA 704 fixed-facility placards (red = flammability, blue = health, yellow = reactivity, white = special hazard); shipping documents; the Emergency Response Guidebook (ERG).",
+        "Position the cold zone upwind and uphill of the release — a wind shift is a scene-safety event."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Responder training levels"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Level",
+        "Scope"
+      ],
+      "rows": [
+        [
+          "Awareness",
+          "Recognize a release, isolate the area, deny entry, notify authority. No hands-on mitigation."
+        ],
+        [
+          "Operations",
+          "Defensive actions only — exclusion zones, basic containment, emergency decontamination. Does not approach the source."
+        ],
+        [
+          "Technician",
+          "Offensive, hands-on actions to stop the release, including hot-zone entry for product control and confinement."
+        ],
+        [
+          "HAZWOPER (OSHA 1910.120)",
+          "The regulatory standard underlying these tiers for emergency response and waste-site operations."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Decontamination and patient flow"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Emergency decon: rapid gross decontamination (copious water irrigation, clothing removal) in the warm zone for severely symptomatic patients before formal technical decon is feasible.",
+        "Technical decon: structured multi-step process for less acute exposures, ideally capturing runoff.",
+        "Clothing removal alone removes the majority of contamination in most exposures — double-bag clothing and personal items separately.",
+        "Self-decontamination: ambulatory patients can be directed through self-decon with clear pictorial, multilingual instructions, preserving responder capacity for non-ambulatory casualties.",
+        "Cold-zone arrival: only decontaminated patients move forward. This boundary is what protects the rest of the medical response from secondary contamination."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Choking / pulmonary irritant agents"
+    },
+    {
+      "type": "text",
+      "text": "Spans industrial chemicals (chlorine, ammonia) and historical warfare agents (phosgene). Water solubility sets the clinical signature: highly soluble agents announce themselves at once; poorly soluble agents do not."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Agent",
+        "Behaviour",
+        "Clinical signature"
+      ],
+      "rows": [
+        [
+          "Chlorine / ammonia",
+          "Water-soluble",
+          "Immediate, intense mucous-membrane and upper-airway irritation; pungent odor even at low concentration — the chemical announces itself"
+        ],
+        [
+          "Phosgene",
+          "Poorly water-soluble",
+          "Mild, deceptively tolerable initial irritation; severe pulmonary edema delayed up to 48 hours after exposure"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "No antidote exists for phosgene or chlorine — treatment is entirely supportive (remove from exposure, oxygen, nebulized bronchodilators, corticosteroids, lung-protective ventilation if ARDS develops). Any phosgene-exposed patient needs observation for the full delayed-edema window even if asymptomatic at presentation — early discharge can miss the lethal phase."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Asphyxiant / knockdown agents"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Class",
+        "Agents",
+        "Mechanism"
+      ],
+      "rows": [
+        [
+          "Simple asphyxiants",
+          "CO2, helium, propane, methane, nitrogen",
+          "Displace oxygen from the breathing environment; no independent toxicity"
+        ],
+        [
+          "Chemical asphyxiants",
+          "Cyanide, carbon monoxide, hydrogen sulfide",
+          "Impair oxygen utilization at the cellular level even with adequate ambient oxygen"
+        ]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Management: remove from the environment immediately, give 100% oxygen.",
+        "Cyanide has specific antidotes — hydroxocobalamin, sodium thiosulfate — where chemical asphyxiation is confirmed or strongly suspected."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cholinergic / nerve agents — preview"
+    },
+    {
+      "type": "text",
+      "text": "Organophosphate pesticides and military nerve agents (sarin, VX) share one mechanism: acetylcholinesterase inhibition, producing a cholinergic toxidrome distinct from irritant-gas exposure. Full dosing and decontamination specifics are reserved for a dedicated expansion."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Quick recognition — SLUDGE / DUMBELS: salivation, lacrimation, urination, defecation, GI upset, emesis; and defecation, urination, miosis, bradycardia/bronchorrhea, emesis, lacrimation, salivation.",
+        "Distinguishing feature: miosis, copious secretions, and seizures separate this toxidrome from the irritant-gas pattern.",
+        "First-line antidote: atropine (muscarinic blockade) plus pralidoxime (reactivates acetylcholinesterase if given before aging)."
+      ]
+    }
+  ],
+  "related": [
+    "toxidromes-and-overdoses",
+    "antidotes-reversal-agents",
+    "crush-syndrome",
+    "incendiary-chemical-burns",
+    "trauma-team-activation"
+  ],
+  "buildNote": "Tier 2 (scene doctrine + toxidrome recognition; stable references — HAZWOPER, CHEMM, ATSDR — but review alongside the nerve-agent expansion). Converted from CV Austere & Disaster Medicine Part One. Nerve-agent, vesicant, and radiological toxidromes are previews — each is a natural dedicated follow-on. Part Two (incendiary casualties) → `incendiary-chemical-burns`; Part Three (crush syndrome) → `crush-syndrome`."
+}

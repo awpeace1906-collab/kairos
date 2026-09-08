@@ -1,0 +1,171 @@
+{
+  "id": "incendiary-chemical-burns",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "White Phosphorus & Incendiary Casualties",
+  "settingEmphasis": [
+    "prehospital",
+    "ed"
+  ],
+  "aliases": [
+    "white phosphorus burn",
+    "WP munition injury",
+    "incendiary weapon casualty",
+    "napalm burn management",
+    "thermite magnesium burn",
+    "phosphorescent particle glow",
+    "hypocalcemia phosphorus burn"
+  ],
+  "tags": [
+    "white phosphorus",
+    "incendiary",
+    "chemical burn",
+    "burns",
+    "hypocalcemia",
+    "disaster medicine",
+    "prehospital",
+    "trauma",
+    "ED"
+  ],
+  "keywords": [
+    "white phosphorus ignites 34C burns 800C garlic odor",
+    "particles glow green darkness deny oxygen do not extinguish",
+    "phosphoric acid hypocalcemia hyperphosphatemia QT prolongation",
+    "fatal less than 10 percent BSA systemic absorption",
+    "napalm smother foam not water",
+    "thermite sand dry powder steam explosion",
+    "magnesium mineral oil burns in water",
+    "sulfur mustard soap water 2 minutes leukopenia day 9",
+    "lewisite BAL dimercaprol arsenic",
+    "copper sulfate abandoned hemolysis hepatotoxicity",
+    "forceps particle removal continuous irrigation moist dressing",
+    "ionized calcium ECG within one hour calcium gluconate"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-07",
+  "next_review_due": "2027-03-07",
+  "review_tier": 2,
+  "sources": [
+    "Critical Vector — Austere & Disaster Medicine, Part Two: White Phosphorus & Incendiary Casualties",
+    "Wang M, Bai Y, Zhang X, Zhang J, Kang A. White phosphorus munitions: pathophysiology, clinical management, and multidisciplinary perspectives. Front Public Health. 2025;13:1632840",
+    "Aviv U, Kornhaber R, Harats M, Haik J. The burning issue of white phosphorus: a case report and review of the literature. Disaster Mil Med. 2017;3:6",
+    "Davis KG. Acute management of white phosphorus burn. Mil Med. 2002;167(1):83-84",
+    "ATSDR Medical Management Guidelines: Sulfur Mustard Agent H/HD, Agent HT. CDC, updated 2023",
+    "CCW Protocol III on Incendiary Weapons, 1980"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-07",
+      "change": "Initial entry — converted from CV Austere & Disaster Medicine Part Two: white-phosphorus pathophysiology, comparative incendiary-agent table, prehospital management sequence, and the critical errors to avoid."
+    }
+  ],
+  "summary": "White phosphorus is an incendiary munition, not a classic chemical agent, and its injuries are categorically unlike thermal burns — embedded particles keep burning in tissue, phosphoric acid drives hypocalcemia within the hour, and systemic absorption is fatal under 10% BSA. The management is deny oxygen, remove particles, keep the wound wet, and monitor calcium.",
+  "whyThisMatters": "Incendiary agents are encountered in current conflicts regardless of legal status, and the field intervention decides the outcome — recognition of white phosphorus, and not treating it like a thermal or napalm burn, is the single most critical step. The mistakes are lethal and specific: extinguishing WP the way you would smother napalm, letting the wound dry in transport, debriding in bright light, or assuming a small burn is safe when systemic absorption can kill under 10% BSA.",
+  "clinicalTakeaway": "Suspect white phosphorus from a garlic odor, bright yellow-white flame, white smoke, and particles that glow green in a darkened room. Remove all clothing, pick out visible particles with forceps (never bare hands) into water, and irrigate or immerse continuously — you are denying oxygen, not extinguishing a fire. Cover with saline-soaked or hydrogel dressings and keep them wet through transport. Get an ECG and ionized calcium early: hypocalcemia and QT prolongation can appear within one hour; give IV calcium for symptomatic hypocalcemia. Never use copper sulfate, and never apply the napalm smother protocol to WP.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "White phosphorus — agent overview"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Physical: solid, chalk-like, waxy. Ignites spontaneously in air at 34 °C, burns at ~800 °C locally with a bright yellow-white flame. Highly lipid-soluble — penetrates deeply through subcutaneous fat.",
+        "Smell: garlic-like odor, easily confused with sulfur mustard. Distinguish by combustion — WP ignites immediately with visible flame and particles glow green in darkness; sulfur mustard has delayed onset and no immediate combustion.",
+        "Self-sustaining combustion: embedded particles keep burning as long as oxygen is available. Do NOT extinguish — deny oxygen instead. Particles phosphoresce green — dim the room to locate them.",
+        "Dual mechanism: thermal injury from direct burning plus chemical injury from phosphoric acid formed during combustion. Deep full-thickness necrotic wounds that heal far more slowly than pure thermal burns.",
+        "Systemic toxicity: phosphoric acid consumes calcium during neutralization → hypocalcemia within hours, hyperphosphatemia, QT prolongation, arrhythmias, hepatotoxicity, nephrotoxicity. Fatal at less than 10% BSA from systemic absorption."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Comparative incendiary-agent analysis"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Agent",
+        "Burn temp",
+        "Extinguish / control",
+        "Systemic toxicity",
+        "Key decontamination"
+      ],
+      "rows": [
+        [
+          "White phosphorus",
+          "~800 °C local",
+          "Water / oxygen denial",
+          "Hypocalcemia, hepatotoxicity, arrhythmia; fatal < 10% BSA",
+          "Remove particles; continuous water irrigation; moist dressings"
+        ],
+        [
+          "Napalm",
+          "~1,000 °C",
+          "Smother / foam — NOT water",
+          "Minimal: CO / HCN only",
+          "Do not use water — smother, remove clothing, cool once fire is out"
+        ],
+        [
+          "Thermite (TH / TH3)",
+          "~2,500 °C",
+          "Sand / dry powder; never water",
+          "Minimal systemic; main danger is heat depth",
+          "Do not use water (steam-explosion risk). Sand."
+        ],
+        [
+          "Magnesium",
+          "~2,000 °C",
+          "Nothing — burns in water too",
+          "Minimal; large exposure may cause hypermagnesemia",
+          "Cover with mineral OIL (water accelerates burning)"
+        ],
+        [
+          "Sulfur mustard (HD / H)",
+          "N/A (no combustion)",
+          "N/A",
+          "Bone-marrow suppression (leukopenia nadir ~day 9), pulmonary edema",
+          "Soap and water within 2 min ideal; RSDL. No antidote."
+        ],
+        [
+          "Lewisite",
+          "N/A",
+          "N/A",
+          "Systemic arsenic toxicity — cardiac, pulmonary",
+          "Decontaminate immediately. BAL (dimercaprol) 2.5 mg/kg IM."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "White phosphorus — prehospital management sequence"
+    },
+    {
+      "type": "list",
+      "items": [
+        "1. Scene safety — identify by garlic odor, bright yellow flame, white smoke, glowing particles. Avoid WP smoke (phosphorus pentoxide forms a phosphoric-acid aerosol → chemical pneumonitis). Remove all clothing immediately — burning particles on fabric reignite.",
+        "2. Particle removal — use forceps or tools, never bare hands. Dim the environment so particles glow green; remove all visible particles into a water container. Do not let particles dry — they reignite.",
+        "3. Continuous irrigation — immerse or continuously irrigate with cold water or saline. High-pressure syringe irrigation dislodges embedded particles. Water denies oxygen and cools thermal damage. Do not stop until all particles are out and the wound is covered.",
+        "4. Moist dressing — saline-soaked gauze or hydrogel; keep moist throughout transport. Covered, moist wounds will not reignite. Mineral oil is an acceptable alternative where water is limited.",
+        "5. Systemic monitoring — ECG for QT prolongation from hypocalcemia (can develop within one hour). Labs: ionized calcium, phosphate, LFTs, BMP, CBC, coags. IV calcium gluconate for symptomatic hypocalcemia. ICU-level monitoring for significant exposure."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "Critical errors to avoid: do NOT use copper sulfate (historically used to identify WP particles; abandoned — causes fatal hemolysis and hepatotoxicity). Do NOT let the wound dry in transport — dry WP reignites on air contact. Do NOT debride in bright light — the phosphorescent glow is what confirms particle location. Do NOT assume a small burn area is safe — systemic absorption can be fatal under 10% BSA. Do NOT use the napalm protocol (smothering) for WP — these are opposite approaches."
+    }
+  ],
+  "related": [
+    "hazmat-scene-toxidromes",
+    "crush-syndrome",
+    "hemorrhagic-shock-mtp",
+    "parkland-formula",
+    "toxidromes-and-overdoses"
+  ],
+  "buildNote": "Tier 2 (incendiary-injury doctrine; stable but review with the vesicant/nerve-agent expansions). Converted from CV Austere & Disaster Medicine Part Two. Sulfur mustard and lewisite appear only in the comparative table here — a dedicated vesicant reference is a natural follow-on. Part One → `hazmat-scene-toxidromes`; Part Three → `crush-syndrome`."
+}
