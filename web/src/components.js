@@ -1,6 +1,23 @@
 // Small DOM helpers + the Tier 6 UI affordances.
 
 import { flagOutdatedURL } from "./lib/appConfig.js";
+import { isPinned, togglePin } from "./lib/prefs.js";
+
+/** A pin / unpin toggle for a module's detail view. Reflects state on click. */
+export function pinButton(mod, store) {
+  const curated = store.curatedPinIds;
+  const render = (on) => {
+    btn.className = "pin-btn" + (on ? " on" : "");
+    btn.textContent = on ? "★ Pinned" : "☆ Pin";
+    btn.setAttribute("aria-pressed", String(on));
+  };
+  const btn = el("button", {
+    type: "button",
+    onClick: () => render(togglePin(mod.id, curated)),
+  });
+  render(isPinned(mod.id, curated));
+  return btn;
+}
 
 export function el(tag, props = {}, ...children) {
   const node = document.createElement(tag);

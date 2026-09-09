@@ -12,14 +12,18 @@ import Foundation
 @MainActor
 final class ContentStore: ObservableObject {
 
-    /// Set to the CDN base that serves the versioned content/ tree to enable OTA updates.
-    static let remoteBase: URL? = nil
+    /// The static host that serves the versioned content/ tree (deploy.yml →
+    /// GitHub Pages). The app renders from its bundled copy first, then polls
+    /// this for modules whose content_version increased and swaps them in — no
+    /// App Store submission. Set to nil to pin to the bundled content only.
+    static let remoteBase: URL? = URL(string: "https://awpeace1906-collab.github.io/kairos/content/")
 
     @Published private(set) var sections: [AppSection] = []
     @Published private(set) var searchIndex = SearchIndex(entries: [])
     @Published private(set) var sourcesIndex: SourcesIndexFile?
     @Published private(set) var careSettings: [SettingsConfig.CareSetting] = []
-    @Published private(set) var pinned: [PinnedShortcut] = []
+    /// Curated default pin ids + their config labels/blurbs (config/pinned.json).
+    @Published private(set) var pinnedConfig: [PinnedConfig.Entry] = []
     @Published private(set) var weightZones: WeightZonesConfig?
     @Published private(set) var tiers: [TiersConfig.Tier] = []
     @Published private(set) var manifest: Manifest?
@@ -56,7 +60,7 @@ final class ContentStore: ObservableObject {
         // file yet. The Sources page just shows nothing rather than failing the app.
         sourcesIndex = try? bundled("sources-index.json")
         careSettings = ((try? bundled("config/settings.json")) as SettingsConfig?)?.settings.sorted { $0.order < $1.order } ?? []
-        pinned = resolvePinned(((try? bundled("config/pinned.json")) as PinnedConfig?)?.pinned ?? [])
+        pinnedConfig = ((try? bundled("config/pinned.json")) as PinnedConfig?)?.pinned ?? []
         Task { await checkForUpdates() }
     }
 
@@ -64,12 +68,17 @@ final class ContentStore: ObservableObject {
         searchIndex.entries.first { $0.route == route }
     }
 
-    /// Resolve config/pinned.json ids against the search index → display models.
-    private func resolvePinned(_ raw: [PinnedConfig.Entry]) -> [PinnedShortcut] {
+    var curatedPinIds: [String] { pinnedConfig.map(\.id) }
+
+    /// Resolve an ordered id list → home-screen cards. Curated entries keep their
+    /// config label/blurb; user-added ones fall back to the module title / category.
+    func resolvePins(_ ids: [String]) -> [PinnedShortcut] {
         let byID = Dictionary(uniqueKeysWithValues: searchIndex.entries.map { ($0.itemID, $0) })
-        return raw.compactMap { p in
-            guard let e = byID[p.id] else { return nil }
-            return PinnedShortcut(label: p.label, blurb: p.blurb ?? e.title, route: e.route)
+        let curated = Dictionary(uniqueKeysWithValues: pinnedConfig.map { ($0.id, $0) })
+        return ids.compactMap { id in
+            guard let e = byID[id] else { return nil }
+            let c = curated[id]
+            return PinnedShortcut(label: c?.label ?? e.title, blurb: c?.blurb ?? e.category, route: e.route)
         }
     }
 

@@ -1,7 +1,7 @@
 import { el } from "../components.js";
 import { makeSearch } from "../lib/search.js";
 import { applyLens, applyPedsLens } from "../lib/settingLens.js";
-import { prefs, CARE_SETTING_KEY, activeCareSetting, PEDS_LENS_KEY, activePedsLens } from "../lib/prefs.js";
+import { prefs, CARE_SETTING_KEY, activeCareSetting, PEDS_LENS_KEY, activePedsLens, pinnedIds } from "../lib/prefs.js";
 
 export function renderHome(store, router) {
   const search = makeSearch(store.searchEntries);
@@ -110,8 +110,8 @@ export function renderHome(store, router) {
     tiles
   );
 
-  // Curated one-tap shortcuts (config/pinned.json).
-  const pins = store.pinned;
+  // One-tap shortcuts — the user's pins, or the curated defaults until they customize.
+  const pins = store.resolvePins(pinnedIds(store.curatedPinIds));
   const pinned = pins.length
     ? el(
         "div",

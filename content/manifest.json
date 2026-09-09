@@ -1698,7 +1698,7 @@
     },
     "peds-module/peds-dka-management": {
       "content_version": 1,
-      "hash": "255bde5d94743fad",
+      "hash": "2b04f9aa9e5529df",
       "path": "modules/peds-module/peds-dka-management.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2117,6 +2117,15 @@
       "section": "Reference Library",
       "review_tier": 3,
       "next_review_due": "2027-03-02"
+    },
+    "reference-library/dka-hhs-adult-management": {
+      "content_version": 1,
+      "hash": "ec57a214ea1010e8",
+      "path": "modules/reference-library/dka-hhs-adult-management.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-08"
     },
     "reference-library/drug-concentration-math": {
       "content_version": 2,

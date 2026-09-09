@@ -20,19 +20,28 @@ renders on **both** clients (calculator `plot` schema + web SVG + iOS `Canvas`
 `NomogramView`).
 
 Remaining open items:
-1. Parked per instruction: GitHub Pages hosting, REMOTE_BASE wiring.
-2. Follow-on content still parked (own sessions): a dedicated adult DKA pathway
-   (so `peds-dka-management` has an adult counterpart to cross-list beside), and
-   more `crossListIn` placements as adult/peds pairs surface.
+1. **GitHub Pages — repo-owner one-time setup** (code is done, waiting on the
+   two clicks): Settings → Pages → Source = "GitHub Actions"; and add repo
+   Variable `CONTENT_BASE_URL` = `https://awpeace1906-collab.github.io/kairos/content/`.
+   Then push → `deploy.yml` publishes the PWA at `…/kairos/` and the content
+   tree at `…/kairos/content/`. iOS `remoteBase` is already pointed there.
+2. More `crossListIn` placements as adult/peds pairs surface; the antibiogram
+   worksheet still needs the user's local data.
 
-DONE 2026-09-08 (peds session): the Peds section-vs-lens question is resolved and
-shipped — Peds Module stays a browsable section, `audience` (`peds`/`neonate`)
-tags 41 modules, `crossListIn` cross-lists 6 peds tools into their adult clinical
-sections (appendicitis scores → Calc/GI, peds-GCS → Calc/Neuro, apgar → Calc/OB,
-nrp + peds-cardiac-arrest → RefLib/Resus), and a "Peds" lens toggle (home +
-per-section, persisted) floats peds rows to the top of any list. Plus the
-home-screen **Pinned** strip (`config/pinned.json` → curated one-tap cards),
-seeded with the peds pre-arrival card + the adult arrest algorithm.
+DONE 2026-09-08: **Deploy is wired for real.** `tools/deploy.mjs` now assembles
+one bundle — the PWA shell + `/content/` — and `deploy.yml` (was
+`content-deploy.yml`) publishes it to Pages on any push to main. iOS
+`ContentStore.remoteBase` = the Pages content URL (OTA live once Pages is on;
+degrades to bundled content until then). Web stays same-origin. Verified the
+assembled `dist/` renders both at `/` and at a `/kairos/` subpath.
+Also DONE: **pin/unpin UI** — `☆/★` button on every module (web detail bar / iOS
+nav toolbar), stored in `prefs.pins` / `@AppStorage("kairos.pins")`, seeded from
+the curated `config/pinned.json` on first edit; the home Pinned strip reflects
+it. **`dka-hhs-adult-management`** reference (adult DKA/HHS — the K-before-insulin
+sequence) with `peds-dka-management` cross-listed beside it in RefLib/Critical
+Care. The Peds section-vs-lens question was resolved + shipped earlier today
+(Peds Module stays a section; `audience` tags 41 modules; `crossListIn` on 7;
+a persisted "Peds" lens toggle floats peds rows).
 
 DONE 2026-09-08 (across the block): pARC interactive calculator (verified
 coefficients); home redesign + IBM Plex bundled both clients; Rumack-Matthew
@@ -44,6 +53,29 @@ Prussian blue + bicarbonate, one module), `high-dose-insulin-euglycemia-dosing`
 calculator, `brue-lower-risk-criteria` peds-tool checklist.
 
 ## Progress log
+- 2026-09-08 — **Pin/unpin UI · adult DKA module · deploy wired for real (+1 → 313).**
+  *Pins:* `prefs.js` `PINS_KEY` (id array; `null` = use curated) + `pinnedIds` /
+  `isPinned` / `togglePin`; `ios/Sources/App/Pins.swift` (`@AppStorage` string,
+  `""` = curated, `"-"` = empty). A `☆ Pin` / `★ Pinned` button on the web
+  detail bar and a `pin` / `pin.fill` nav-toolbar button on iOS; the home Pinned
+  strip resolves the effective list (`store.resolvePins` / `content.resolvePins`).
+  Config `pinned` label/blurb wins for curated ids; user-added ids fall back to
+  the module title / category. *Content:* `dka-hhs-adult-management` (Reference
+  Library / Critical Care, Tier 2) — adult DKA & HHS: diagnostic + severity
+  tables, the fluids → potassium → insulin sequence (with the K⁺ decision table),
+  adjuncts, euglycemic DKA / SGLT2, resolution + IV→SC transition. Sources
+  Kitabchi 2009 / Umpierrez 2024 ADA-EASD consensus / ADA 2025 / JBDS 2023.
+  `peds-dka-management` gets `crossListIn` → RefLib/Critical Care to sit beside
+  it. *Deploy:* `tools/deploy.mjs` rewritten to assemble ONE bundle — PWA shell
+  (`web/` minus dev files) at `/` + the content subset at `/content/`;
+  `content-deploy.yml` → `deploy.yml`, triggers on any push to main.
+  `ContentStore.remoteBase` (iOS) set to
+  `https://awpeace1906-collab.github.io/kairos/content/`; web `REMOTE_BASE` stays
+  `null` (same-origin, SW stale-while-revalidate). manifest.webmanifest colours
+  updated off the old `#0F0B16`. Verified `dist/` renders standalone at `/` and
+  at a `/kairos/` subpath. validate 313/0, test 252/0, iOS BUILD SUCCEEDED.
+  Remaining: repo owner flips Pages Source → "GitHub Actions" + adds the
+  `CONTENT_BASE_URL` repo Variable (see DEPLOY.md).
 - 2026-09-08 — **Peds lens + cross-listing + home-screen Pinned strip.**
   Resolved the Peds Module section-vs-lens question by doing both. New schema:
   `audience` (`adult`/`peds`/`neonate`) and `crossListIn` (`[{section, category}]`)

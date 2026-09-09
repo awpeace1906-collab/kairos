@@ -7,7 +7,11 @@
 // load with no connectivity still works. Mirrors ios/Sources/Content/ContentStore.swift.
 
 const BUNDLED_BASE = new URL("../../content/", import.meta.url).href; // shipped with the app shell
-const REMOTE_BASE = null; // set to the CDN base (e.g. "https://content.kairos.example/v1/") to enable OTA updates
+// The deployed PWA serves its content tree at same-origin ./content/, and the
+// service worker refreshes it stale-while-revalidate — so the web build needs no
+// separate remote. Only set this to a cross-origin URL if the content moves off
+// the app's own host. (iOS uses ContentStore.remoteBase for exactly this.)
+const REMOTE_BASE = null;
 const LS_MANIFEST = "kairos.manifest.v1";
 const CACHE_NAME = "kairos-content-v1";
 
@@ -44,13 +48,20 @@ export class ContentStore {
   get searchEntries() { return this.#searchIndex.entries; }
   get sourcesIndex() { return this.#sourcesIndex; }
   get careSettings() { return this.#settings?.settings ?? []; }
-  /** Curated home-screen shortcuts, resolved to {label, blurb, route, title}. */
-  get pinned() {
+  /** The curated default pin ids from config/pinned.json. */
+  get curatedPinIds() { return (this.#pinned?.pinned ?? []).map((p) => p.id); }
+  /** Resolve an id list to home-screen cards {id, label, blurb, route}. Curated
+      entries keep their config label/blurb; user-added ones fall back to the
+      module's own title / category. */
+  resolvePins(ids) {
     const byId = new Map(this.searchEntries.map((e) => [e.id, e]));
-    return (this.#pinned?.pinned ?? [])
-      .map((p) => {
-        const e = byId.get(p.id);
-        return e ? { label: p.label, blurb: p.blurb, route: e.route, title: e.title } : null;
+    const curated = new Map((this.#pinned?.pinned ?? []).map((p) => [p.id, p]));
+    return (ids ?? [])
+      .map((id) => {
+        const e = byId.get(id);
+        if (!e) return null;
+        const c = curated.get(id);
+        return { id, label: c?.label ?? e.title, blurb: c?.blurb ?? e.category, route: e.route };
       })
       .filter(Boolean);
   }

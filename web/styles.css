@@ -133,8 +133,17 @@ h1 { font-size: 1.4rem; margin: 0 0 8px; letter-spacing: -0.01em; text-wrap: bal
 h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
 .muted { color: var(--muted); }
 .loading { padding: 40px 0; text-align: center; }
-.back { display: inline-block; margin-bottom: 14px; font-size: .82rem; font-family: var(--font-mono); color: var(--muted); }
+.back { display: inline-block; font-size: .82rem; font-family: var(--font-mono); color: var(--muted); }
 .back:hover { color: var(--accent); }
+.detail-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.pin-btn {
+  font-family: var(--font-mono); font-size: .74rem; cursor: pointer;
+  border: 1px solid var(--line); border-radius: 999px; padding: 4px 11px;
+  background: var(--surface); color: var(--muted);
+  transition: border-color .12s ease, color .12s ease, background .12s ease;
+}
+.pin-btn:hover { border-color: var(--muted); color: var(--text); }
+.pin-btn.on { border-color: var(--accent); color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--surface)); }
 
 /* numbers read as instrument output, not prose */
 .score strong, .formula-result strong, .dose-amt strong, .tile-count,

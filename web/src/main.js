@@ -5,7 +5,7 @@ import { renderSection } from "./views/section.js";
 import { renderContent } from "./views/content.js";
 import { renderAbout } from "./views/about.js";
 import { renderSources } from "./views/sources.js";
-import { el } from "./components.js";
+import { el, pinButton } from "./components.js";
 
 const app = document.getElementById("app");
 const rail = document.getElementById("nav-rail");
@@ -27,7 +27,17 @@ const router = createRouter(async (route) => {
     } else {
       const mod = await store.moduleByRoute(route);
       app.replaceChildren(
-        el("div", { class: "detail" }, el("a", { href: "#/", class: "back" }, "‹ Home"), renderContent(mod, route, store))
+        el(
+          "div",
+          { class: "detail" },
+          el(
+            "div",
+            { class: "detail-bar" },
+            el("a", { href: "#/", class: "back" }, "‹ Home"),
+            pinButton(mod, store)
+          ),
+          renderContent(mod, route, store)
+        )
       );
     }
   } catch (err) {

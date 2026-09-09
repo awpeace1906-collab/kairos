@@ -41,3 +41,27 @@ export const PEDS_LENS_KEY = "pedsLens";
 export function activePedsLens() {
   return prefs.get(PEDS_LENS_KEY, false) === true;
 }
+
+/** Home-screen pins. Stored as an array of module ids once the user customizes;
+    until then `null` = "use the curated defaults from config/pinned.json". */
+export const PINS_KEY = "pins";
+const MAX_PINS = 8;
+
+/** Effective pinned id list — the user's list if they've customized, else curated. */
+export function pinnedIds(curatedIds = []) {
+  const v = prefs.get(PINS_KEY, null);
+  return Array.isArray(v) ? v : curatedIds.slice();
+}
+export function isPinned(id, curatedIds = []) {
+  return pinnedIds(curatedIds).includes(id);
+}
+/** Toggle `id`; returns the new pinned state (true = now pinned). */
+export function togglePin(id, curatedIds = []) {
+  const cur = pinnedIds(curatedIds);
+  const i = cur.indexOf(id);
+  let next;
+  if (i === -1) next = [...cur, id].slice(-MAX_PINS);
+  else next = cur.filter((x) => x !== id);
+  prefs.set(PINS_KEY, next);
+  return next.includes(id);
+}

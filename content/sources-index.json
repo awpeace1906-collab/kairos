@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 604,
+  "count": 608,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -1554,6 +1554,18 @@
           "title": "Chronic Hypertension & GDM in Pregnancy",
           "section": "Reference Library",
           "route": "/reference-library/obstetric-gynecologic/chronic-htn-gdm-pregnancy"
+        }
+      ]
+    },
+    {
+      "text": "Umpierrez GE, Davis GM, ElSayed NA, et al. Hyperglycaemic crises in adults with diabetes: a consensus report (ADA/EASD/AACE/JBDS/DTS). Diabetologia. 2024;67(8):1455-1479",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "dka-hhs-adult-management",
+          "title": "DKA & HHS — Adult Management",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/dka-hhs-adult-management"
         }
       ]
     },
@@ -3910,6 +3922,18 @@
       ]
     },
     {
+      "text": "American Diabetes Association. Standards of Care in Diabetes — 2025. Diabetes Care. 2025;48(Suppl 1)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "dka-hhs-adult-management",
+          "title": "DKA & HHS — Adult Management",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/dka-hhs-adult-management"
+        }
+      ]
+    },
+    {
       "text": "Anticholinergic Intoxication. EMCrit/IBCC, 2025; Physostigmine in Anticholinergic Poisoning: An Old Antidote with Resurgence. PMC, 2020",
       "group": "Other primary sources",
       "usedBy": [
@@ -5770,6 +5794,18 @@
       ]
     },
     {
+      "text": "Joint British Diabetes Societies for Inpatient Care. The Management of Diabetic Ketoacidosis in Adults (updated 2023)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "dka-hhs-adult-management",
+          "title": "DKA & HHS — Adult Management",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/dka-hhs-adult-management"
+        }
+      ]
+    },
+    {
       "text": "Joint Task Force Anaphylaxis Practice Parameter 2023 update",
       "group": "Other primary sources",
       "usedBy": [
@@ -5910,6 +5946,18 @@
           "title": "Modified Shock Index (MSI)",
           "section": "Calculators",
           "route": "/calculators/trauma/modified-shock-index"
+        }
+      ]
+    },
+    {
+      "text": "Kitabchi AE, Umpierrez GE, Miles JM, Fisher JN. Hyperglycemic crises in adult patients with diabetes. Diabetes Care. 2009;32(7):1335-1343",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "dka-hhs-adult-management",
+          "title": "DKA & HHS — Adult Management",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/dka-hhs-adult-management"
         }
       ]
     },

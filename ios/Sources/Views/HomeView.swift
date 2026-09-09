@@ -4,7 +4,12 @@ struct HomeView: View {
     @EnvironmentObject private var content: ContentStore
     @AppStorage("kairos.careSetting") private var careSetting = ""
     @AppStorage("kairos.pedsLens") private var pedsLens = false
+    @AppStorage(Pins.key) private var pinsRaw = ""
     @State private var query = ""
+
+    private var pins: [PinnedShortcut] {
+        content.resolvePins(Pins.ids(raw: pinsRaw, curated: content.curatedPinIds))
+    }
     @State private var sectionFilter: String? = nil
 
     private var lens: String? { careSetting.isEmpty ? nil : careSetting }
@@ -37,7 +42,7 @@ struct HomeView: View {
                 .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 6, trailing: 20))
 
             if query.isEmpty {
-                if !content.pinned.isEmpty { pinnedShortcuts }
+                if !pins.isEmpty { pinnedShortcuts }
                 sectionTiles
             } else {
                 searchResults
@@ -114,7 +119,7 @@ struct HomeView: View {
 
     private var pinnedShortcuts: some View {
         Section {
-            ForEach(content.pinned) { p in
+            ForEach(pins) { p in
                 NavigationLink(value: Route.content(p.route)) {
                     VStack(alignment: .leading, spacing: 2) {
                         Text(p.label).font(Theme.semibold(16, relativeTo: .body))

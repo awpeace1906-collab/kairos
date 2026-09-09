@@ -3,6 +3,7 @@ import SwiftUI
 struct ContentDetailView: View {
     let route: String
     @EnvironmentObject private var content: ContentStore
+    @AppStorage(Pins.key) private var pinsRaw = ""
     @State private var loaded: Loaded?
     @State private var error: String?
 
@@ -62,6 +63,20 @@ struct ContentDetailView: View {
         .animation(.easeOut(duration: 0.18), value: loaded == nil)
         .navigationTitle(loaded?.meta.title ?? "")
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            if let id = loaded?.meta.id {
+                let on = Pins.isPinned(id, raw: pinsRaw, curated: content.curatedPinIds)
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        pinsRaw = Pins.toggled(id, raw: pinsRaw, curated: content.curatedPinIds)
+                    } label: {
+                        Image(systemName: on ? "pin.fill" : "pin")
+                    }
+                    .accessibilityLabel(on ? "Unpin" : "Pin to home")
+                    .tint(on ? Theme.accent : nil)
+                }
+            }
+        }
         .task(id: route) { await load() }
     }
 

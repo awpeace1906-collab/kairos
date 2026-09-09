@@ -5070,6 +5070,12 @@
       ],
       "audience": [
         "peds"
+      ],
+      "crossListIn": [
+        {
+          "section": "Reference Library",
+          "category": "Critical Care"
+        }
       ]
     },
     {
@@ -6224,6 +6230,49 @@
         "ed",
         "icu",
         "prehospital"
+      ]
+    },
+    {
+      "id": "dka-hhs-adult-management",
+      "title": "DKA & HHS — Adult Management",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "DKA",
+        "HHS",
+        "diabetic ketoacidosis",
+        "hyperglycemia",
+        "potassium",
+        "insulin infusion",
+        "ICU",
+        "ED",
+        "endocrine emergency"
+      ],
+      "keywords": [
+        "glucose over 250 pH under 7.3 bicarbonate under 18 ketones anion gap over 12",
+        "0.9 percent saline 15 to 20 mL per kg first hour then 250 to 500 per hour",
+        "potassium hold insulin if under 3.3 add 20 to 30 mEq per liter keep 4 to 5",
+        "regular insulin 0.1 unit per kg bolus then 0.1 unit per kg per hour or 0.14 no bolus",
+        "add dextrose when glucose under 200 to 250 do not stop insulin until gap closed",
+        "HHS effective osmolality over 320 minimal ketosis conservative insulin 0.05 unit per kg per hour",
+        "SGLT2 inhibitor euglycemic ketoacidosis steroids antipsychotics precipitant",
+        "resolution glucose under 200 and two of bicarbonate 15 pH 7.3 anion gap 12 overlap subcutaneous insulin",
+        "diabetic ketoacidosis adult",
+        "hyperosmolar hyperglycemic state",
+        "HHS",
+        "hyperglycemic crisis",
+        "euglycemic DKA",
+        "insulin drip protocol",
+        "anion gap closure"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/dka-hhs-adult-management",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ],
+      "audience": [
+        "adult"
       ]
     },
     {

@@ -1,0 +1,135 @@
+{
+  "id": "dka-hhs-adult-management",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "DKA & HHS — Adult Management",
+  "settingEmphasis": ["ed", "icu"],
+  "audience": ["adult"],
+  "aliases": [
+    "diabetic ketoacidosis adult",
+    "hyperosmolar hyperglycemic state",
+    "HHS",
+    "hyperglycemic crisis",
+    "euglycemic DKA",
+    "insulin drip protocol",
+    "anion gap closure"
+  ],
+  "tags": ["DKA", "HHS", "diabetic ketoacidosis", "hyperglycemia", "potassium", "insulin infusion", "ICU", "ED", "endocrine emergency"],
+  "keywords": [
+    "glucose over 250 pH under 7.3 bicarbonate under 18 ketones anion gap over 12",
+    "0.9 percent saline 15 to 20 mL per kg first hour then 250 to 500 per hour",
+    "potassium hold insulin if under 3.3 add 20 to 30 mEq per liter keep 4 to 5",
+    "regular insulin 0.1 unit per kg bolus then 0.1 unit per kg per hour or 0.14 no bolus",
+    "add dextrose when glucose under 200 to 250 do not stop insulin until gap closed",
+    "HHS effective osmolality over 320 minimal ketosis conservative insulin 0.05 unit per kg per hour",
+    "SGLT2 inhibitor euglycemic ketoacidosis steroids antipsychotics precipitant",
+    "resolution glucose under 200 and two of bicarbonate 15 pH 7.3 anion gap 12 overlap subcutaneous insulin"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-08",
+  "next_review_due": "2027-03-08",
+  "review_tier": 2,
+  "sources": [
+    "Kitabchi AE, Umpierrez GE, Miles JM, Fisher JN. Hyperglycemic crises in adult patients with diabetes. Diabetes Care. 2009;32(7):1335-1343",
+    "Umpierrez GE, Davis GM, ElSayed NA, et al. Hyperglycaemic crises in adults with diabetes: a consensus report (ADA/EASD/AACE/JBDS/DTS). Diabetologia. 2024;67(8):1455-1479",
+    "American Diabetes Association. Standards of Care in Diabetes — 2025. Diabetes Care. 2025;48(Suppl 1)",
+    "Joint British Diabetes Societies for Inpatient Care. The Management of Diabetic Ketoacidosis in Adults (updated 2023)"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-08", "change": "Initial entry — adult DKA/HHS diagnostic criteria, severity grading, the fluid / potassium / insulin sequence, adjuncts (bicarbonate, phosphate), euglycemic DKA, resolution and IV-to-SC transition. Adult counterpart to peds-dka-management (cross-linked)." }
+  ],
+  "summary": "Fluids first, then potassium, then insulin — in that order. DKA is an insulin-deficiency + ketoacid problem (fix the gap); HHS is a profound free-water deficit with little ketosis (fluid does most of the work, insulin is gentler). The number that kills is potassium: check it before the first unit of insulin, and never run insulin with a K < 3.3 mEq/L.",
+  "whyThisMatters": "Both present as sick, dry, hyperglycaemic patients, and the reflex — a big insulin bolus — is exactly wrong until you have a potassium and a litre of saline running. Insulin drives K intracellularly; a normal or low serum K at presentation is already a large total-body deficit, and pushing insulin into it causes the arrhythmia that turns a treatable metabolic emergency into an arrest. The other trap is stopping too early: normalising the glucose is not the endpoint — the anion gap (DKA) or the osmolality and mental status (HHS) are.",
+  "clinicalTakeaway": "Start 0.9% saline ~15-20 mL/kg (about 1 L) in the first hour while the labs run. Check potassium immediately: K < 3.3 → hold insulin and replace K 10-20 mEq/h until ≥ 3.3; K 3.3-5.2 → add 20-30 mEq K to each litre and keep it 4-5; K > 5.2 → insulin without added K, recheck in 2 h. Then regular insulin 0.1 unit/kg/h IV (a 0.1 unit/kg bolus is optional; skip it and use 0.14 unit/kg/h if you prefer). Add dextrose to the fluids once glucose falls below ~200 mg/dL (DKA) or ~250-300 (HHS) and keep the insulin running until the anion gap has closed / β-hydroxybutyrate < 0.6 mmol/L — then overlap subcutaneous insulin by 1-2 h before stopping the drip. Give bicarbonate only for a pH < 6.9. Always look for and treat the precipitant.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Diagnostic criteria" },
+    {
+      "type": "table",
+      "columns": ["", "DKA", "HHS"],
+      "rows": [
+        ["Plasma glucose", "> 250 mg/dL (may be < 250 — euglycemic DKA, esp. SGLT2 inhibitor, pregnancy, poor intake, alcohol)", "> 600 mg/dL"],
+        ["Arterial / venous pH", "< 7.3", "> 7.3"],
+        ["Serum bicarbonate", "< 18 mEq/L", "> 18 mEq/L"],
+        ["Ketones", "β-hydroxybutyrate ≥ 3.0 mmol/L, or ketonuria ≥ 2+", "Absent or minimal (trace)"],
+        ["Anion gap", "> 10-12 mEq/L (elevated)", "Variable, usually normal"],
+        ["Effective osmolality", "Variable", "> 320 mOsm/kg  [2·(Na) + glucose/18]"],
+        ["Mental status", "Alert → drowsy", "Drowsy → stupor / coma (correlates with osmolality)"]
+      ]
+    },
+    { "type": "callout", "tone": "info", "text": "Overlap is common — up to a third of hyperglycaemic crises are mixed DKA + HHS. Treat the acidosis as DKA and the osmolar/volume deficit as HHS. Use a POC β-hydroxybutyrate if available; urine ketones (acetoacetate) lag and can paradoxically rise as the patient improves." },
+    { "type": "heading", "level": 2, "text": "DKA severity" },
+    {
+      "type": "table",
+      "columns": ["", "Mild", "Moderate", "Severe"],
+      "rows": [
+        ["Venous pH", "7.25-7.30", "7.00-7.24", "< 7.00"],
+        ["Bicarbonate (mEq/L)", "15-18", "10 to < 15", "< 10"],
+        ["Mental status", "Alert", "Alert / drowsy", "Stupor / coma"]
+      ]
+    },
+    { "type": "text", "text": "Severe DKA, HHS, haemodynamic instability, a depressed conscious level, or a difficult airway → ICU / high-dependency care. JBDS markers of severity also include β-hydroxybutyrate > 6 mmol/L, GCS < 12, SpO₂ < 92%, SBP < 90, pulse > 100 or < 60, and a potassium < 3.5 on admission." },
+    { "type": "heading", "level": 2, "text": "1 — Fluids" },
+    {
+      "type": "list",
+      "items": [
+        "Isotonic crystalloid: 0.9% sodium chloride (balanced solutions such as Plasma-Lyte / Ringer's lactate are a reasonable alternative and may close the gap slightly faster with less hyperchloraemia).",
+        "First hour: ~15-20 mL/kg (roughly 1 L in an average adult), faster and repeated for shock.",
+        "Then ~250-500 mL/h, titrated to volume status, urine output, and the corrected sodium. Switch to 0.45% NaCl if the corrected Na is normal or high; stay on 0.9% if it is low.",
+        "Total deficit is large — DKA ~100 mL/kg (~6 L), HHS ~100-220 mL/kg (~8-10 L). Replace over ~24 h in DKA and more slowly in HHS to avoid dropping the osmolality faster than ~3 mOsm/kg/h.",
+        "Add dextrose (D5W, or D10W if the glucose is falling fast) to the running fluid once glucose < ~200 mg/dL in DKA or < ~250-300 mg/dL in HHS, so the insulin can keep clearing ketones without hypoglycaemia."
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "2 — Potassium (before insulin)" },
+    {
+      "type": "table",
+      "columns": ["Serum K⁺ (mEq/L)", "Action"],
+      "rows": [
+        ["< 3.3", "HOLD insulin. Give 10-20 mEq/h IV potassium (with cardiac monitoring) until K ≥ 3.3, then start insulin."],
+        ["3.3 - 5.2", "Start insulin AND add 20-30 mEq K⁺ to each litre of fluid; target serum K⁺ 4-5. Recheck every 2-4 h."],
+        ["> 5.2 (and adequate urine output)", "Start insulin, no potassium yet. Recheck K⁺ in 2 h and add it once it falls below 5.2."]
+      ]
+    },
+    { "type": "text", "text": "Every DKA/HHS patient has a whole-body potassium deficit (typically 3-5 mEq/kg) even when the serum level is normal or high — insulin, fluids, and correction of acidosis all drive K⁺ back into cells. Anticipate the fall. Replace phosphate only if PO₄ < 1 mg/dL with cardiac dysfunction, respiratory depression, or haemolytic anaemia (then some of the K⁺ can be given as potassium phosphate); routine phosphate repletion has no benefit and risks hypocalcaemia." },
+    { "type": "heading", "level": 2, "text": "3 — Insulin" },
+    {
+      "type": "list",
+      "items": [
+        "Regular (short-acting) insulin by IV infusion. Either: 0.1 unit/kg IV bolus then 0.1 unit/kg/h; or no bolus and 0.14 unit/kg/h — equivalent outcomes.",
+        "Aim for a glucose fall of 50-75 mg/dL/h. If it has not dropped by ≥ 10% (or ~50 mg/dL) in the first hour, re-bolus 0.1 unit/kg or double the infusion — after confirming fluids are actually running.",
+        "Once dextrose is added, keep the insulin at ~0.05-0.1 unit/kg/h and titrate the dextrose (and rate) to hold glucose ~150-200 mg/dL (DKA) / ~250-300 (HHS) while the gap closes.",
+        "HHS: insulin is an adjunct — start lower (~0.05 unit/kg/h) or even fluid-only initially; the glucose falls with rehydration alone and an aggressive drip drops the osmolality too fast.",
+        "Subcutaneous rapid-acting insulin every 1-2 h is an option for MILD, uncomplicated DKA on a ward with close monitoring — not for moderate/severe DKA or HHS.",
+        "Do NOT stop the infusion when the glucose normalises. Continue until DKA has resolved, then overlap a long-acting SC insulin dose and wait 1-2 h before discontinuing the drip (no overlap = rebound ketoacidosis). Continue the patient's usual basal insulin throughout if they were already on it."
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Adjuncts" },
+    {
+      "type": "list",
+      "items": [
+        "Bicarbonate: only for pH < 6.9 — 100 mmol NaHCO₃ in 400 mL water with 20 mEq KCl over 2 h, repeat until pH ≥ 7.0. No proven benefit at pH ≥ 6.9 and it worsens hypokalaemia and CSF acidosis.",
+        "VTE prophylaxis: pharmacologic unless contraindicated (HHS in particular is highly prothrombotic).",
+        "Identify and treat the precipitant: infection (the commonest — culture and consider empiric antibiotics if febrile/toxic), missed insulin or pump failure, new-onset diabetes, acute MI or stroke, pancreatitis, pregnancy, and drugs — corticosteroids, SGLT2 inhibitors (euglycemic DKA), atypical antipsychotics, sympathomimetics, high-dose thiazides.",
+        "Hold SGLT2 inhibitors; they can sustain ketogenesis for days after the last dose, so continue the insulin + dextrose infusion longer and confirm ketone clearance by β-hydroxybutyrate, not glucose."
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Monitoring" },
+    { "type": "list", "items": [
+      "Bedside glucose hourly.",
+      "Venous blood gas / electrolytes / anion gap (and β-hydroxybutyrate if available) at 2 h, then every 2-4 h until the gap has closed.",
+      "Continuous cardiac monitoring while replacing potassium.",
+      "Hourly fluid balance; watch for fluid overload (elderly, cardiac/renal disease) and, in the young, for cerebral oedema (headache, falling GCS, bradycardia + hypertension — far more common in children; see peds-dka-management)."
+    ] },
+    { "type": "heading", "level": 2, "text": "Resolution & transition" },
+    {
+      "type": "list",
+      "items": [
+        "DKA resolved: glucose < 200 mg/dL AND two of — bicarbonate ≥ 15 mEq/L, venous pH > 7.3, anion gap ≤ 12 mEq/L. (β-hydroxybutyrate < 0.6 mmol/L is the cleanest single marker where available.)",
+        "HHS resolved: effective osmolality normalising, normal mental status, and adequate urine output — this takes longer, often 24-48 h.",
+        "Transition: when the patient is eating and DKA has resolved, give the first SC dose (their home regimen, or ~0.5-0.6 unit/kg/day insulin-naïve, split basal/bolus) and continue the IV infusion for another 1-2 h. An endocrine / diabetes team review before discharge reduces readmission."
+      ]
+    }
+  ],
+  "related": ["peds-dka-management", "hyperkalemia-management", "iv-fluids"],
+  "buildNote": "Tier 2 — the fluid/potassium/insulin doctrine is stable; the euglycemic-DKA / SGLT2 guidance and the move toward balanced crystalloids and POC ketones are the parts to re-check (2024 ADA/EASD/AACE consensus). Adult counterpart to peds-dka-management, which is cross-listed into Reference Library / Critical Care to sit beside this. Numeric ranges are order-of-magnitude starting points, not a substitute for a local DKA/HHS protocol."
+}

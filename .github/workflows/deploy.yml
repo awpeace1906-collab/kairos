@@ -1,13 +1,14 @@
-name: content-deploy
+name: deploy
 
-# Publishes the versioned content bundle to GitHub Pages after content-ci passes.
-# Swap this job for an S3 sync / Cloudflare Pages step to use a different host —
-# only the "Upload / deploy" steps change; `npm run deploy` stays the same.
+# Publishes the whole app to GitHub Pages: the PWA shell at / and the versioned
+# content tree at /content/ (what the iOS app polls for OTA updates).
+# `npm run deploy` assembles tools/dist/; only the upload step is host-specific —
+# swap it for an S3 sync / Cloudflare Pages step to use a different host.
 
 on:
   push:
     branches: [main]
-    paths: ["content/**", "tools/**"]
+    paths: ["content/**", "web/**", "tools/**", ".github/workflows/deploy.yml"]
   workflow_dispatch:
 
 permissions:
@@ -16,7 +17,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: content-deploy
+  group: deploy
   cancel-in-progress: true
 
 jobs:
@@ -32,9 +33,9 @@ jobs:
       - name: Validate + assemble dist/
         working-directory: tools
         env:
-          # The public URL the clients will fetch from. For GitHub Pages this is
-          # https://<owner>.github.io/<repo>/ — set it in repo Settings > Pages,
-          # or override here.
+          # The public URL clients fetch content from — for GitHub Pages this is
+          # https://<owner>.github.io/<repo>/content/ . Set CONTENT_BASE_URL as a
+          # repo Variable (Settings > Secrets and variables > Actions > Variables).
           CONTENT_BASE_URL: ${{ vars.CONTENT_BASE_URL }}
         run: npm run deploy
       - uses: actions/upload-pages-artifact@v3

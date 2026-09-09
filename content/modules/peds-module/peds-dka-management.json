@@ -5,6 +5,7 @@
   "title": "Pediatric DKA Management",
   "settingEmphasis": ["ed", "icu"],
   "audience": ["peds"],
+  "crossListIn": [{ "section": "Reference Library", "category": "Critical Care" }],
   "aliases": ["peds DKA", "pediatric diabetic ketoacidosis", "DKA insulin fluids"],
   "tags": ["DKA", "diabetic ketoacidosis", "insulin infusion", "cerebral edema", "potassium", "peds"],
   "contentType": "peds-tool",
@@ -47,5 +48,5 @@
     { "type": "heading", "level": 2, "text": "Cerebral edema — the time-critical complication" },
     { "type": "callout", "tone": "danger", "text": "Watch for headache, altered mental status, and a Cushing's-triad pattern (bradycardia + hypertension). If suspected, treat emergently with mannitol or hypertonic saline and do not wait for imaging." }
   ],
-  "buildNote": "Cross-links to the Holliday-Segar maintenance-fluid calculator for the maintenance component. A production build could add a deficit-replacement calculator (% dehydration × weight)."
+  "buildNote": "Cross-links to the Holliday-Segar maintenance-fluid calculator for the maintenance component. A production build could add a deficit-replacement calculator (% dehydration × weight). The adult counterpart is `dka-hhs-adult-management`; this module is cross-listed into Reference Library / Critical Care to sit beside it."
 }
