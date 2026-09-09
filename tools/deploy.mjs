@@ -37,6 +37,9 @@ for (const name of ["manifest.json", "search-index.json", "sources-index.json", 
   await cp(join(CONTENT_DIR, name), join(DIST, "content", name), { recursive: true });
 }
 
+// Serve the tree verbatim — no Jekyll (it would drop src/ and _-prefixed paths).
+await writeFile(join(DIST, ".nojekyll"), "");
+
 // Deploy metadata — handy for cache busting / rollback.
 const files = await walkCount(DIST);
 await writeFile(
