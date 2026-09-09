@@ -3,13 +3,18 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject private var content: ContentStore
     @AppStorage("kairos.careSetting") private var careSetting = ""
+    @AppStorage("kairos.pedsLens") private var pedsLens = false
     @State private var query = ""
     @State private var sectionFilter: String? = nil
 
     private var lens: String? { careSetting.isEmpty ? nil : careSetting }
 
     private var results: [SearchEntry] {
-        content.searchIndex.search(query, section: sectionFilter, setting: lens)
+        let hits = content.searchIndex.search(query, section: sectionFilter, setting: lens)
+        guard pedsLens else { return hits }
+        return hits.enumerated()
+            .sorted { ($0.element.isPeds ? 0 : 1, $0.offset) < ($1.element.isPeds ? 0 : 1, $1.offset) }
+            .map(\.element)
     }
 
     var body: some View {
@@ -26,7 +31,13 @@ struct HomeView: View {
                 .listRowInsets(EdgeInsets(top: 6, leading: 20, bottom: 10, trailing: 20))
             }
 
+            Toggle("Peds lens", isOn: $pedsLens)
+                .font(Theme.subheadline)
+                .listRowSeparator(.hidden)
+                .listRowInsets(EdgeInsets(top: 0, leading: 20, bottom: 6, trailing: 20))
+
             if query.isEmpty {
+                if !content.pinned.isEmpty { pinnedShortcuts }
                 sectionTiles
             } else {
                 searchResults
@@ -97,6 +108,25 @@ struct HomeView: View {
                 .foregroundStyle(isOn ? .white : .primary)
         }
         .buttonStyle(.plain)
+    }
+
+    // MARK: pinned shortcuts (config/pinned.json)
+
+    private var pinnedShortcuts: some View {
+        Section {
+            ForEach(content.pinned) { p in
+                NavigationLink(value: Route.content(p.route)) {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text(p.label).font(Theme.semibold(16, relativeTo: .body))
+                        Text(p.blurb).font(Theme.mono(12)).foregroundStyle(.secondary)
+                    }
+                    .padding(.vertical, 3)
+                }
+                .listRowBackground(Theme.accent.opacity(0.08))
+            }
+        } header: {
+            Text("Pinned").font(Theme.mono(11)).tracking(1).textCase(.uppercase)
+        }
     }
 
     // MARK: the one list of sections, with the core-question descriptions

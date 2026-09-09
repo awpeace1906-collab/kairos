@@ -4,6 +4,7 @@
   "category": "Neonatology",
   "title": "Infant of a Diabetic Mother",
   "settingEmphasis": ["icu"],
+  "audience": ["neonate"],
   "aliases": [
     "IDM",
     "neonatal hypoglycemia",

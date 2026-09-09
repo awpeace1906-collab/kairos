@@ -4,6 +4,7 @@
   "category": "Neonatology",
   "title": "Prematurity — Classification & Complications by System",
   "settingEmphasis": ["icu"],
+  "audience": ["neonate"],
   "aliases": ["preterm classification", "low birth weight VLBW ELBW", "extremely preterm", "problems of prematurity", "New Ballard Score", "NICU discharge criteria"],
   "tags": ["prematurity", "low birth weight", "NICU", "RDS", "IVH", "NEC", "retinopathy of prematurity", "neonatology"],
   "contentType": "peds-tool",

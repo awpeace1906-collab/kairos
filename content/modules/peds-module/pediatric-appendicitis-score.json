@@ -4,6 +4,8 @@
   "category": "Peds Resuscitation & Decision Support",
   "title": "Pediatric Appendicitis Score (PAS)",
   "settingEmphasis": ["ed"],
+  "audience": ["peds"],
+  "crossListIn": [{"section": "Calculators", "category": "GI / Renal / Metabolic"}],
   "aliases": ["PAS", "peds appendicitis", "Samuel score"],
   "tags": ["appendicitis", "abdominal pain", "RLQ pain", "peds", "imaging decision"],
   "contentType": "peds-tool",

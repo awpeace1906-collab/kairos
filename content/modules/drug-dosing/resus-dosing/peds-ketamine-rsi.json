@@ -4,6 +4,7 @@
   "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
   "title": "Ketamine — Pediatric RSI Induction",
   "settingEmphasis": ["ed", "icu", "prehospital"],
+  "audience": ["peds"],
   "aliases": ["peds ketamine", "RSI induction agent", "ketamine intubation dose"],
   "tags": ["RSI", "rapid sequence intubation", "induction", "shock", "reactive airway", "peds"],
   "contentType": "drug-card",

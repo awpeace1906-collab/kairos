@@ -31,10 +31,16 @@ validateAgainst("config.sections.schema.json", await loadConfig("sections.json")
 validateAgainst("config.weight-zones.schema.json", await loadConfig("weight-zones.json"), "config/weight-zones.json");
 validateAgainst("config.tiers.schema.json", await loadConfig("tiers.json"), "config/tiers.json");
 validateAgainst("config.settings.schema.json", await loadConfig("settings.json"), "config/settings.json");
+const pinnedCfg = await loadConfig("pinned.json").catch(() => null);
+if (pinnedCfg) validateAgainst("config.pinned.schema.json", pinnedCfg, "config/pinned.json");
 
 const sectionsCfg = await loadConfig("sections.json");
 const knownCategories = new Set(
   sectionsCfg.sections.flatMap((s) => s.categories.map((c) => c.title))
+);
+// { "Section Title" -> Set(category titles) } for crossListIn validation
+const catsBySection = new Map(
+  sectionsCfg.sections.map((s) => [s.title, new Set(s.categories.map((c) => c.title))])
 );
 
 // ---- modules --------------------------------------------------------------
@@ -85,6 +91,14 @@ for (const mod of mods) {
     warn(where, `category "${json.category}" is not listed in config/sections.json`);
   }
 
+  // crossListIn targets must be real {section, category} pairs, and not the home section
+  for (const x of json.crossListIn || []) {
+    const cats = catsBySection.get(x.section);
+    if (!cats) fail(where, `crossListIn section "${x.section}" is not a known section`);
+    else if (!cats.has(x.category)) fail(where, `crossListIn "${x.section}" has no category "${x.category}"`);
+    if (x.section === json.section) fail(where, `crossListIn repeats the module's own section "${x.section}" — that's its home, not a cross-list`);
+  }
+
   // content_version bump discipline
   if (Array.isArray(json.changelog) && json.changelog.length > 0) {
     const latest = Math.max(...json.changelog.map((c) => c.version));
@@ -106,6 +120,11 @@ for (const mod of mods) {
   if (json.review_tier === undefined) {
     warn(where, "no review_tier — set one (1/2/3 or \"stable\") so the staleness tripwire knows what to do");
   }
+}
+
+// pinned shortcuts must point at real modules
+for (const p of pinnedCfg?.pinned || []) {
+  if (!seenIds.has(p.id)) fail("config/pinned.json", `pinned id "${p.id}" is not a module`);
 }
 
 // ---- report -------------------------------------------------------------

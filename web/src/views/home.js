@@ -1,12 +1,13 @@
 import { el } from "../components.js";
 import { makeSearch } from "../lib/search.js";
-import { applyLens } from "../lib/settingLens.js";
-import { prefs, CARE_SETTING_KEY, activeCareSetting } from "../lib/prefs.js";
+import { applyLens, applyPedsLens } from "../lib/settingLens.js";
+import { prefs, CARE_SETTING_KEY, activeCareSetting, PEDS_LENS_KEY, activePedsLens } from "../lib/prefs.js";
 
 export function renderHome(store, router) {
   const search = makeSearch(store.searchEntries);
   const results = el("div", { class: "results" });
   let setting = activeCareSetting();
+  let peds = activePedsLens();
 
   // per-section item counts for the tile badges
   const countBySection = {};
@@ -37,6 +38,24 @@ export function renderHome(store, router) {
     update();
   }
 
+  // Peds lens — orthogonal boolean toggle, sits alongside the care-setting lens.
+  const pedsToggle = el(
+    "button",
+    {
+      type: "button",
+      class: "chip peds-toggle" + (peds ? " selected" : ""),
+      "aria-pressed": String(peds),
+      onClick: () => {
+        peds = !peds;
+        prefs.set(PEDS_LENS_KEY, peds);
+        pedsToggle.classList.toggle("selected", peds);
+        pedsToggle.setAttribute("aria-pressed", String(peds));
+        update();
+      },
+    },
+    "Peds"
+  );
+
   // Care-setting lens selector — a lens, not a fork: it reorders, never filters.
   const settingChips = (store.careSettings || []).length
     ? el(
@@ -44,9 +63,11 @@ export function renderHome(store, router) {
         { class: "chips setting-chips" },
         el("span", { class: "setting-label" }, "Setting"),
         settingChip(null, "Any"),
-        ...store.careSettings.slice().sort((a, b) => a.order - b.order).map((s) => settingChip(s.id, s.label))
+        ...store.careSettings.slice().sort((a, b) => a.order - b.order).map((s) => settingChip(s.id, s.label)),
+        el("span", { class: "lens-sep", "aria-hidden": "true" }),
+        pedsToggle
       )
-    : null;
+    : el("div", { class: "chips setting-chips" }, el("span", { class: "setting-label" }, "Lens"), pedsToggle);
 
   function settingChip(id, label) {
     const btn = el(
@@ -89,6 +110,28 @@ export function renderHome(store, router) {
     tiles
   );
 
+  // Curated one-tap shortcuts (config/pinned.json).
+  const pins = store.pinned;
+  const pinned = pins.length
+    ? el(
+        "div",
+        { class: "pinned" },
+        el("p", { class: "section-tiles-label pinned-label" }, "Pinned"),
+        el(
+          "div",
+          { class: "pin-cards" },
+          pins.map((p) =>
+            el(
+              "a",
+              { class: "pin-card", href: `#${p.route}` },
+              el("span", { class: "pin-label" }, p.label),
+              el("span", { class: "pin-blurb" }, p.blurb || p.title)
+            )
+          )
+        )
+      )
+    : null;
+
   function update() {
     const q = input.value.trim();
     if (!q) {
@@ -96,11 +139,13 @@ export function renderHome(store, router) {
       results.hidden = true;
       chips.hidden = true;
       browse.hidden = false;
+      if (pinned) pinned.hidden = false;
       return;
     }
     results.hidden = false;
     chips.hidden = false;
     browse.hidden = true;
+    if (pinned) pinned.hidden = true;
     const hits = search(q, { section: sectionFilter, setting });
     if (!hits.length) {
       results.replaceChildren(el("p", { class: "muted" }, `No matches for “${q}”.`));
@@ -116,7 +161,7 @@ export function renderHome(store, router) {
           el(
             "ul",
             {},
-            applyLens(items, setting).map((it) =>
+            applyPedsLens(applyLens(items, setting), peds).map((it) =>
               el(
                 "li",
                 {},
@@ -144,6 +189,7 @@ export function renderHome(store, router) {
     settingChips,
     chips,
     results,
+    pinned,
     browse,
     el(
       "p",

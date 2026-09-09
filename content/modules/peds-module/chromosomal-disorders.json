@@ -4,6 +4,7 @@
   "category": "Neonatology",
   "title": "Chromosomal Disorders",
   "settingEmphasis": ["icu"],
+  "audience": ["neonate"],
   "aliases": ["Down syndrome trisomy 21", "Patau trisomy 13", "Edwards trisomy 18", "Turner syndrome 45X", "Klinefelter 47XXY", "Fragile X", "aneuploidy", "karyotype"],
   "tags": ["chromosomal disorder", "trisomy", "Down syndrome", "Turner syndrome", "genetics", "neonatology", "dysmorphology"],
   "contentType": "peds-tool",

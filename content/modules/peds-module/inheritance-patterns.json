@@ -4,6 +4,7 @@
   "category": "Neonatology",
   "title": "Modes of Inheritance & Imprinting Syndromes",
   "settingEmphasis": ["icu"],
+  "audience": ["neonate"],
   "aliases": ["autosomal dominant recessive", "X-linked inheritance", "recurrence risk", "genomic imprinting", "Prader-Willi Angelman", "Beckwith-Wiedemann", "Williams syndrome", "Noonan syndrome"],
   "tags": ["inheritance", "genetics", "recurrence risk", "imprinting", "microdeletion syndrome", "neonatology"],
   "contentType": "peds-tool",

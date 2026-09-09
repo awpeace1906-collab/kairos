@@ -8,6 +8,7 @@
     "prehospital",
     "icu"
   ],
+  "audience": ["peds"],
   "aliases": [
     "ERC 2025 PLS",
     "pediatric life support 2025",

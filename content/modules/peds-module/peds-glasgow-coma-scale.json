@@ -4,6 +4,8 @@
   "category": "Peds Resuscitation & Decision Support",
   "title": "Pediatric Glasgow Coma Scale",
   "settingEmphasis": ["ed", "prehospital", "icu"],
+  "audience": ["peds"],
+  "crossListIn": [{"section": "Calculators", "category": "Neuro / Stroke / Head Injury"}],
   "aliases": ["peds GCS", "pGCS", "children's coma scale"],
   "contentType": "peds-tool",
   "content_version": 1,

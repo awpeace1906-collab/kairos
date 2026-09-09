@@ -3,7 +3,7 @@
 // spec, fallback #4). OTA content updates land in a separate runtime cache managed
 // by ContentStore; this SW just guarantees the shell and the bundled baseline.
 
-const SHELL_CACHE = "kairos-shell-v7";
+const SHELL_CACHE = "kairos-shell-v8";
 const SHELL = [
   "./",
   "./index.html",
@@ -42,6 +42,7 @@ const SHELL = [
   "./content/config/weight-zones.json",
   "./content/config/tiers.json",
   "./content/config/settings.json",
+  "./content/config/pinned.json",
 ];
 
 self.addEventListener("install", (e) => {

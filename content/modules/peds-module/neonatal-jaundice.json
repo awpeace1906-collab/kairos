@@ -4,6 +4,7 @@
   "category": "Neonatology",
   "title": "Neonatal Jaundice (AAP 2022)",
   "settingEmphasis": ["ed", "icu"],
+  "audience": ["neonate"],
   "aliases": [
     "neonatal hyperbilirubinemia",
     "phototherapy threshold",

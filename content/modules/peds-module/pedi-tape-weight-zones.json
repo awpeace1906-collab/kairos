@@ -4,6 +4,7 @@
   "category": "Peds Resuscitation & Decision Support",
   "title": "Weight Zones & Equipment Sizing",
   "settingEmphasis": ["ed", "prehospital"],
+  "audience": ["peds"],
   "aliases": ["Pedi Tape", "Broselow zone", "length-based tape", "pediatric equipment sizing", "ETT size by weight", "color zone"],
   "tags": ["weight zone", "equipment sizing", "ETT", "LMA", "laryngoscope blade", "defibrillator pads", "resuscitation", "PALS"],
   "contentType": "peds-tool",

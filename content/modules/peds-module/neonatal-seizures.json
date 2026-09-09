@@ -4,6 +4,7 @@
   "category": "Neonatology",
   "title": "Neonatal Seizures",
   "settingEmphasis": ["icu", "ed"],
+  "audience": ["neonate"],
   "aliases": [
     "neonatal seizure workup",
     "jitteriness vs seizure",

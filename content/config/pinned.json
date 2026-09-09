@@ -1,0 +1,7 @@
+{
+  "$comment": "Curated home-screen shortcuts — the few things you want one tap away in a resus. id must match a module; label/blurb are display-only. Order is display order.",
+  "pinned": [
+    { "id": "peds-pre-arrival-card", "label": "Pre-arrival — Peds", "blurb": "One weight in, every resus number out" },
+    { "id": "acls-adult-cardiac-arrest", "label": "Adult Cardiac Arrest", "blurb": "ACLS algorithm card (2025)" }
+  ]
+}

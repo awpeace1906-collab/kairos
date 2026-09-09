@@ -4,6 +4,7 @@
   "category": "Trauma",
   "title": "PECARN Pediatric Head Injury Rule",
   "settingEmphasis": ["ed"],
+  "audience": ["peds"],
   "aliases": ["PECARN head", "pediatric head CT rule", "ciTBI rule", "kids head injury CT"],
   "tags": ["pediatric", "head injury", "CT head", "clinical decision rule", "ED", "rule-out"],
   "keywords": ["GCS <= 14", "altered mental status", "palpable skull fracture", "signs of basilar skull fracture", "loss of consciousness", "vomiting", "severe mechanism", "severe headache", "scalp hematoma occipital parietal temporal", "not acting normally per parent", "clinically important traumatic brain injury"],

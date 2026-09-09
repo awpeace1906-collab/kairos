@@ -131,17 +131,39 @@ struct SearchEntry: Codable, Identifiable, Hashable {
     let contentType: ContentType
     let route: String
     let settingEmphasis: [String]?
+    let audience: [String]?
+    let crossListIn: [CrossListPlacement]?
+
+    struct CrossListPlacement: Codable, Hashable {
+        let section: String
+        let category: String
+    }
+
+    /// True when this module is for the paediatric / neonatal population.
+    var isPeds: Bool {
+        (audience?.contains("peds") ?? false) || (audience?.contains("neonate") ?? false) || section == "Peds Module"
+    }
+    /// The category to file this entry under when browsing `inSection` (its own,
+    /// or the matching crossListIn placement).
+    func category(inSection s: String) -> String {
+        section == s ? category : (crossListIn?.first { $0.section == s }?.category ?? category)
+    }
+    func appears(inSection s: String) -> Bool {
+        section == s || (crossListIn?.contains { $0.section == s } ?? false)
+    }
 
     enum CodingKeys: String, CodingKey {
         case itemID = "id"
-        case title, section, category, tags, keywords, contentType, route, settingEmphasis
+        case title, section, category, tags, keywords, contentType, route, settingEmphasis, audience, crossListIn
     }
 
-    // Explicit memberwise init so `settingEmphasis` (a render-time nav lens, often
-    // absent) can default to nil — keeps older call sites and tests compiling.
+    // Explicit memberwise init so the optional nav-lens fields (`settingEmphasis`,
+    // `audience`, `crossListIn` — often absent) default to nil — keeps older call
+    // sites and tests compiling.
     init(itemID: String, title: String, section: String, category: String,
          tags: [String]? = nil, keywords: [String]? = nil, contentType: ContentType,
-         route: String, settingEmphasis: [String]? = nil) {
+         route: String, settingEmphasis: [String]? = nil,
+         audience: [String]? = nil, crossListIn: [CrossListPlacement]? = nil) {
         self.itemID = itemID
         self.title = title
         self.section = section
@@ -151,7 +173,21 @@ struct SearchEntry: Codable, Identifiable, Hashable {
         self.contentType = contentType
         self.route = route
         self.settingEmphasis = settingEmphasis
+        self.audience = audience
+        self.crossListIn = crossListIn
     }
+}
+
+/// content/config/pinned.json — curated home-screen shortcuts.
+struct PinnedConfig: Codable {
+    let pinned: [Entry]
+    struct Entry: Codable { let id: String; let label: String; let blurb: String? }
+}
+struct PinnedShortcut: Identifiable, Hashable {
+    var id: String { route }
+    let label: String
+    let blurb: String
+    let route: String
 }
 
 /// content/config/settings.json — the four care settings the app can be lensed to.

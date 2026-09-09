@@ -8,6 +8,7 @@
     "prehospital",
     "icu"
   ],
+  "audience": ["peds"],
   "aliases": [
     "peds amiodarone",
     "shock-refractory VF dose"

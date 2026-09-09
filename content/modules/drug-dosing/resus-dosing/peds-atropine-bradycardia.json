@@ -8,6 +8,7 @@
     "icu",
     "prehospital"
   ],
+  "audience": ["peds"],
   "aliases": [
     "peds atropine",
     "vagal bradycardia dose"

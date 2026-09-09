@@ -2636,6 +2636,9 @@
       "route": "/calculators/trauma/pecarn-head",
       "settingEmphasis": [
         "ed"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -3133,6 +3136,10 @@
       "settingEmphasis": [
         "ed",
         "icu"
+      ],
+      "audience": [
+        "adult",
+        "peds"
       ]
     },
     {
@@ -3235,6 +3242,9 @@
       "settingEmphasis": [
         "icu",
         "ed"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -4089,6 +4099,9 @@
       "settingEmphasis": [
         "ed",
         "icu"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -4114,6 +4127,9 @@
         "ed",
         "prehospital",
         "icu"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -4139,6 +4155,9 @@
         "ed",
         "icu",
         "prehospital"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -4158,6 +4177,9 @@
         "ed",
         "prehospital",
         "icu"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -4184,6 +4206,9 @@
         "ed",
         "icu",
         "prehospital"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -4209,6 +4234,9 @@
         "ed",
         "icu",
         "prehospital"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -4234,6 +4262,9 @@
         "ed",
         "icu",
         "prehospital"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -4259,6 +4290,9 @@
         "ed",
         "icu",
         "prehospital"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -4285,6 +4319,15 @@
       "settingEmphasis": [
         "icu",
         "or"
+      ],
+      "audience": [
+        "neonate"
+      ],
+      "crossListIn": [
+        {
+          "section": "Calculators",
+          "category": "Obstetric / Newborn (ED & OR crossover)"
+        }
       ]
     },
     {
@@ -4315,6 +4358,9 @@
       "route": "/peds-module/neonatology/chromosomal-disorders",
       "settingEmphasis": [
         "icu"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4342,6 +4388,9 @@
       "route": "/peds-module/neonatology/developmental-delay-evaluation",
       "settingEmphasis": [
         "ed"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4371,6 +4420,9 @@
       "route": "/peds-module/neonatology/infant-development-feeding",
       "settingEmphasis": [
         "ed"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4398,6 +4450,9 @@
       "route": "/peds-module/neonatology/neonatal-growth-parameters",
       "settingEmphasis": [
         "icu"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4429,6 +4484,9 @@
       "settingEmphasis": [
         "ed",
         "icu"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4459,6 +4517,9 @@
       "route": "/peds-module/neonatology/infant-of-diabetic-mother",
       "settingEmphasis": [
         "icu"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4488,6 +4549,9 @@
       "route": "/peds-module/neonatology/inheritance-patterns",
       "settingEmphasis": [
         "icu"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4520,6 +4584,9 @@
       "route": "/peds-module/neonatology/neonatal-hie-cooling",
       "settingEmphasis": [
         "icu"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4553,6 +4620,9 @@
       "settingEmphasis": [
         "ed",
         "icu"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4585,6 +4655,9 @@
       "settingEmphasis": [
         "icu",
         "ed"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4617,6 +4690,15 @@
       "settingEmphasis": [
         "or",
         "icu"
+      ],
+      "audience": [
+        "neonate"
+      ],
+      "crossListIn": [
+        {
+          "section": "Reference Library",
+          "category": "Obstetric & Gynecologic"
+        }
       ]
     },
     {
@@ -4646,6 +4728,9 @@
       "route": "/peds-module/neonatology/prematurity-complications",
       "settingEmphasis": [
         "icu"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4674,6 +4759,9 @@
       "route": "/peds-module/neonatology/neonatal-rds",
       "settingEmphasis": [
         "icu"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4704,6 +4792,9 @@
       "route": "/peds-module/neonatology/newborn-routine-care",
       "settingEmphasis": [
         "icu"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4738,6 +4829,9 @@
       "settingEmphasis": [
         "icu",
         "or"
+      ],
+      "audience": [
+        "neonate"
       ]
     },
     {
@@ -4770,6 +4864,9 @@
       "route": "/peds-module/peds-resuscitation-decision-support/brue-lower-risk-criteria",
       "settingEmphasis": [
         "ed"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -4794,6 +4891,9 @@
       "route": "/peds-module/peds-resuscitation-decision-support/brue-pathway",
       "settingEmphasis": [
         "ed"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -4822,6 +4922,9 @@
         "ed",
         "prehospital",
         "icu"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -4853,6 +4956,15 @@
       "route": "/peds-module/peds-resuscitation-decision-support/pediatric-appendicitis-risk-calculator",
       "settingEmphasis": [
         "ed"
+      ],
+      "audience": [
+        "peds"
+      ],
+      "crossListIn": [
+        {
+          "section": "Calculators",
+          "category": "GI / Renal / Metabolic"
+        }
       ]
     },
     {
@@ -4876,6 +4988,15 @@
       "route": "/peds-module/peds-resuscitation-decision-support/pediatric-appendicitis-score",
       "settingEmphasis": [
         "ed"
+      ],
+      "audience": [
+        "peds"
+      ],
+      "crossListIn": [
+        {
+          "section": "Calculators",
+          "category": "GI / Renal / Metabolic"
+        }
       ]
     },
     {
@@ -4912,6 +5033,15 @@
         "ed",
         "prehospital",
         "icu"
+      ],
+      "audience": [
+        "peds"
+      ],
+      "crossListIn": [
+        {
+          "section": "Reference Library",
+          "category": "Resuscitation & Airway"
+        }
       ]
     },
     {
@@ -4937,6 +5067,9 @@
       "settingEmphasis": [
         "ed",
         "icu"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -4956,6 +5089,15 @@
         "ed",
         "prehospital",
         "icu"
+      ],
+      "audience": [
+        "peds"
+      ],
+      "crossListIn": [
+        {
+          "section": "Calculators",
+          "category": "Neuro / Stroke / Head Injury"
+        }
       ]
     },
     {
@@ -4984,6 +5126,9 @@
       "settingEmphasis": [
         "icu",
         "ed"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -5015,6 +5160,9 @@
         "ed",
         "icu",
         "prehospital"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -5051,6 +5199,9 @@
       "settingEmphasis": [
         "prehospital",
         "ed"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -5081,6 +5232,9 @@
       "settingEmphasis": [
         "ed",
         "prehospital"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -6778,6 +6932,9 @@
       "route": "/reference-library/infectious-disease-immunization/childhood-immunization-schedule",
       "settingEmphasis": [
         "ed"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -8801,6 +8958,9 @@
         "ed",
         "prehospital",
         "icu"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {

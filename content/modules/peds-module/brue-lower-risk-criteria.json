@@ -4,6 +4,7 @@
   "category": "Peds Resuscitation & Decision Support",
   "title": "BRUE — Lower-Risk Criteria Checklist",
   "settingEmphasis": ["ed"],
+  "audience": ["peds"],
   "aliases": ["BRUE lower risk", "brief resolved unexplained event", "ALTE successor", "BRUE criteria", "lower-risk BRUE checklist"],
   "tags": ["BRUE", "peds", "infant", "apnea", "decision rule", "ED", "disposition"],
   "keywords": [

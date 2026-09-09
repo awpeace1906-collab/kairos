@@ -78,6 +78,25 @@
           "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
           "description": "Care-setting ids (from config/settings.json) this module is most relevant to, most-relevant first. Drives render-time reordering when a setting lens is active. Absent = neutral (never reordered). A LENS, not a fork — never duplicate a module per setting."
         },
+        "audience": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["adult", "peds", "neonate"] },
+          "uniqueItems": true,
+          "description": "Patient population(s) this module is for. Absent = adult (the default clinical context). The peds lens floats modules whose audience includes 'peds' or 'neonate' to the top of any list; it never hides anything."
+        },
+        "crossListIn": {
+          "type": "array",
+          "description": "Additional {section, category} placements. The module's own section/category is its home; each entry here makes it ALSO appear when browsing that section (flagged as cross-listed). For a peds tool that belongs beside its adult counterpart — e.g. the pediatric appendicitis scores under Calculators / GI. Not a move, not a duplicate: one module, one route.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["section", "category"],
+            "properties": {
+              "section": { "$ref": "common.schema.json#/$defs/section" },
+              "category": { "type": "string", "minLength": 2 }
+            }
+          }
+        },
         "contentType": { "$ref": "common.schema.json#/$defs/contentType" },
         "content_version": { "type": "integer", "minimum": 1 },
         "last_reviewed": { "$ref": "common.schema.json#/$defs/isoDate" },

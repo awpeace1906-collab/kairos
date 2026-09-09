@@ -4,6 +4,7 @@
   "category": "Neonatology",
   "title": "Neonatal HIE & Therapeutic Hypothermia",
   "settingEmphasis": ["icu"],
+  "audience": ["neonate"],
   "aliases": [
     "hypoxic-ischemic encephalopathy",
     "perinatal asphyxia",

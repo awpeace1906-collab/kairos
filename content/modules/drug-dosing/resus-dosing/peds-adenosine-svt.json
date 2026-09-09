@@ -7,6 +7,7 @@
     "ed",
     "icu"
   ],
+  "audience": ["peds"],
   "aliases": [
     "peds adenosine",
     "SVT dose"

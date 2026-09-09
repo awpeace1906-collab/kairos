@@ -829,7 +829,7 @@
     },
     "calculators/trauma/pecarn-head": {
       "content_version": 1,
-      "hash": "5b910d12e7d62c1c",
+      "hash": "9e35e19bbd539daa",
       "path": "modules/calculators/trauma/pecarn-head.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -1386,7 +1386,7 @@
     },
     "drug-dosing/dosing-fluid-math/holliday-segar-maintenance-fluids": {
       "content_version": 2,
-      "hash": "da5c2cce55d00ba8",
+      "hash": "b8712c0b7c844521",
       "path": "modules/drug-dosing/dosing-fluid-math/holliday-segar-maintenance-fluids.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
@@ -1411,7 +1411,7 @@
     },
     "drug-dosing/dosing-fluid-math/peds-drip-rate": {
       "content_version": 1,
-      "hash": "639871ff591f7360",
+      "hash": "926894690691b3b2",
       "path": "modules/drug-dosing/dosing-fluid-math/peds-drip-rate.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
@@ -1437,7 +1437,7 @@
     },
     "drug-dosing/peds-epinephrine-arrest": {
       "content_version": 2,
-      "hash": "5e078545356837a6",
+      "hash": "cbe694ed6223675b",
       "path": "modules/drug-dosing/peds-epinephrine-arrest.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1446,7 +1446,7 @@
     },
     "drug-dosing/resus-dosing/peds-adenosine-svt": {
       "content_version": 2,
-      "hash": "1fe2b79793d5faca",
+      "hash": "47940a95ca95835a",
       "path": "modules/drug-dosing/resus-dosing/peds-adenosine-svt.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1455,7 +1455,7 @@
     },
     "drug-dosing/resus-dosing/peds-amiodarone-arrest": {
       "content_version": 3,
-      "hash": "af732ba25d909559",
+      "hash": "5e17bf074d7ce7f9",
       "path": "modules/drug-dosing/resus-dosing/peds-amiodarone-arrest.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1464,7 +1464,7 @@
     },
     "drug-dosing/resus-dosing/peds-atropine-bradycardia": {
       "content_version": 2,
-      "hash": "9cae5ceafd3a5631",
+      "hash": "55309e7e000cec7b",
       "path": "modules/drug-dosing/resus-dosing/peds-atropine-bradycardia.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1473,7 +1473,7 @@
     },
     "drug-dosing/resus-dosing/peds-ketamine-rsi": {
       "content_version": 2,
-      "hash": "20e764c13333193f",
+      "hash": "a4509c15eae6abc6",
       "path": "modules/drug-dosing/resus-dosing/peds-ketamine-rsi.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1482,7 +1482,7 @@
     },
     "drug-dosing/resus-dosing/peds-lorazepam-status": {
       "content_version": 1,
-      "hash": "b3b4f45709ed7afd",
+      "hash": "c096771a50b48e59",
       "path": "modules/drug-dosing/resus-dosing/peds-lorazepam-status.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1491,7 +1491,7 @@
     },
     "drug-dosing/resus-dosing/peds-midazolam-status": {
       "content_version": 3,
-      "hash": "fdb4b74f5636dbe2",
+      "hash": "7a2d1f9bf9911934",
       "path": "modules/drug-dosing/resus-dosing/peds-midazolam-status.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1500,7 +1500,7 @@
     },
     "drug-dosing/resus-dosing/peds-rocuronium-rsi": {
       "content_version": 1,
-      "hash": "400fb1f434f87dd4",
+      "hash": "db65dd090bbf8c6c",
       "path": "modules/drug-dosing/resus-dosing/peds-rocuronium-rsi.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1509,7 +1509,7 @@
     },
     "peds-module/apgar-score": {
       "content_version": 1,
-      "hash": "43d968d4c51ebd4b",
+      "hash": "80ca19ee1e8a7fd1",
       "path": "modules/peds-module/apgar-score.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1518,7 +1518,7 @@
     },
     "peds-module/brue-lower-risk-criteria": {
       "content_version": 1,
-      "hash": "4a3b0cd362ae7cdb",
+      "hash": "3f3c5fc21fba3274",
       "path": "modules/peds-module/brue-lower-risk-criteria.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1527,7 +1527,7 @@
     },
     "peds-module/brue-pathway": {
       "content_version": 2,
-      "hash": "e4ba967190c10b4c",
+      "hash": "38d6e527f9124c7c",
       "path": "modules/peds-module/brue-pathway.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1536,7 +1536,7 @@
     },
     "peds-module/chromosomal-disorders": {
       "content_version": 1,
-      "hash": "f25d6440c4110693",
+      "hash": "7d49782d80f60734",
       "path": "modules/peds-module/chromosomal-disorders.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1545,7 +1545,7 @@
     },
     "peds-module/developmental-delay-evaluation": {
       "content_version": 1,
-      "hash": "6deec98fcdacc00c",
+      "hash": "ea9d00eaf26acf7a",
       "path": "modules/peds-module/developmental-delay-evaluation.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1554,7 +1554,7 @@
     },
     "peds-module/inborn-errors-metabolism": {
       "content_version": 1,
-      "hash": "841b80f5b1dd8ecf",
+      "hash": "f277d80a2836cd81",
       "path": "modules/peds-module/inborn-errors-metabolism.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1563,7 +1563,7 @@
     },
     "peds-module/infant-cpr-parameters": {
       "content_version": 1,
-      "hash": "8276f9bd68eb8c1b",
+      "hash": "d9b0fcf8a0a88bf0",
       "path": "modules/peds-module/infant-cpr-parameters.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1572,7 +1572,7 @@
     },
     "peds-module/infant-development-feeding": {
       "content_version": 1,
-      "hash": "75781b544dfb4d34",
+      "hash": "52ab8b05c846f164",
       "path": "modules/peds-module/infant-development-feeding.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1581,7 +1581,7 @@
     },
     "peds-module/infant-of-diabetic-mother": {
       "content_version": 1,
-      "hash": "99e5133e1a6d9ca1",
+      "hash": "cf03b9906b0cc218",
       "path": "modules/peds-module/infant-of-diabetic-mother.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1590,7 +1590,7 @@
     },
     "peds-module/inheritance-patterns": {
       "content_version": 1,
-      "hash": "99540d654513cced",
+      "hash": "128a2932f67ee072",
       "path": "modules/peds-module/inheritance-patterns.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1599,7 +1599,7 @@
     },
     "peds-module/neonatal-growth-parameters": {
       "content_version": 1,
-      "hash": "c3baf04a87d4c963",
+      "hash": "cd86f7530fa599e8",
       "path": "modules/peds-module/neonatal-growth-parameters.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1608,7 +1608,7 @@
     },
     "peds-module/neonatal-hie-cooling": {
       "content_version": 1,
-      "hash": "e6b4ea2a3e2aacd4",
+      "hash": "b118c3a9e0047574",
       "path": "modules/peds-module/neonatal-hie-cooling.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1617,7 +1617,7 @@
     },
     "peds-module/neonatal-jaundice": {
       "content_version": 1,
-      "hash": "b25339342ff77dd1",
+      "hash": "492f462ec2cffb20",
       "path": "modules/peds-module/neonatal-jaundice.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1626,7 +1626,7 @@
     },
     "peds-module/neonatal-rds": {
       "content_version": 1,
-      "hash": "f3ce41f07b8c72c3",
+      "hash": "210d3a5aa4f592b0",
       "path": "modules/peds-module/neonatal-rds.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1635,7 +1635,7 @@
     },
     "peds-module/neonatal-seizures": {
       "content_version": 1,
-      "hash": "ac75907111720907",
+      "hash": "4f1f560ede2f009e",
       "path": "modules/peds-module/neonatal-seizures.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1644,7 +1644,7 @@
     },
     "peds-module/newborn-routine-care": {
       "content_version": 1,
-      "hash": "87507fbc5e6ed00b",
+      "hash": "b0a35db39da7534c",
       "path": "modules/peds-module/newborn-routine-care.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1653,7 +1653,7 @@
     },
     "peds-module/nrp-algorithm": {
       "content_version": 1,
-      "hash": "5d5d6d9046948a60",
+      "hash": "429ddd9b97a3705e",
       "path": "modules/peds-module/nrp-algorithm.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1662,7 +1662,7 @@
     },
     "peds-module/pedi-tape-weight-zones": {
       "content_version": 2,
-      "hash": "83b0870fdbb828f3",
+      "hash": "23c8b769e9af5539",
       "path": "modules/peds-module/pedi-tape-weight-zones.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1671,7 +1671,7 @@
     },
     "peds-module/pediatric-appendicitis-risk-calculator": {
       "content_version": 1,
-      "hash": "aefacd91a4eb99fe",
+      "hash": "4757cfbf4d16ba03",
       "path": "modules/peds-module/pediatric-appendicitis-risk-calculator.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1680,7 +1680,7 @@
     },
     "peds-module/pediatric-appendicitis-score": {
       "content_version": 3,
-      "hash": "659c25702e8a4ca7",
+      "hash": "0952a5efa5693c95",
       "path": "modules/peds-module/pediatric-appendicitis-score.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1689,7 +1689,7 @@
     },
     "peds-module/peds-cardiac-arrest": {
       "content_version": 1,
-      "hash": "99a1ab99066f6a99",
+      "hash": "91a3cb5e285aace6",
       "path": "modules/peds-module/peds-cardiac-arrest.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1698,7 +1698,7 @@
     },
     "peds-module/peds-dka-management": {
       "content_version": 1,
-      "hash": "bbe34b7dfc764da4",
+      "hash": "255bde5d94743fad",
       "path": "modules/peds-module/peds-dka-management.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1707,7 +1707,7 @@
     },
     "peds-module/peds-drip-concentrations": {
       "content_version": 1,
-      "hash": "73430d47e7ee1d3d",
+      "hash": "59353c811222f122",
       "path": "modules/peds-module/peds-drip-concentrations.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1716,7 +1716,7 @@
     },
     "peds-module/peds-glasgow-coma-scale": {
       "content_version": 1,
-      "hash": "3f4c453bd307ceea",
+      "hash": "3dcfd15722cb06a3",
       "path": "modules/peds-module/peds-glasgow-coma-scale.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1725,7 +1725,7 @@
     },
     "peds-module/peds-pre-arrival-card": {
       "content_version": 1,
-      "hash": "4655e73009a343b2",
+      "hash": "d3125a43afb60502",
       "path": "modules/peds-module/peds-pre-arrival-card.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1734,7 +1734,7 @@
     },
     "peds-module/peds-rsi-decision-card": {
       "content_version": 1,
-      "hash": "10b74d1bd8ada730",
+      "hash": "d78c19b563e20e74",
       "path": "modules/peds-module/peds-rsi-decision-card.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1743,7 +1743,7 @@
     },
     "peds-module/prematurity-complications": {
       "content_version": 1,
-      "hash": "486f7d2282527fe1",
+      "hash": "6da3f41e8b9b8ef9",
       "path": "modules/peds-module/prematurity-complications.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1752,7 +1752,7 @@
     },
     "peds-module/sga-lga-birth-injury": {
       "content_version": 1,
-      "hash": "cf05c36d748e180e",
+      "hash": "29a59bd1ca73c573",
       "path": "modules/peds-module/sga-lga-birth-injury.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2039,7 +2039,7 @@
     },
     "reference-library/childhood-immunization-schedule": {
       "content_version": 2,
-      "hash": "a253613e5433b8c0",
+      "hash": "6ac3e276bf87cf17",
       "path": "modules/reference-library/childhood-immunization-schedule.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2219,7 +2219,7 @@
     },
     "reference-library/erc-2025-pediatric-life-support": {
       "content_version": 2,
-      "hash": "01f7c0eff4dc52cc",
+      "hash": "6278f4c0afd9b72a",
       "path": "modules/reference-library/erc-2025-pediatric-life-support.json",
       "contentType": "reference",
       "section": "Reference Library",

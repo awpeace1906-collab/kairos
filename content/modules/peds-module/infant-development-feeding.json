@@ -4,6 +4,7 @@
   "category": "Neonatology",
   "title": "Developmental Milestones & Infant Feeding",
   "settingEmphasis": ["ed"],
+  "audience": ["neonate"],
   "aliases": ["developmental milestones", "CDC AAP 2022 milestones", "classical milestones 50th percentile", "infant feeding schedule", "complementary feeding", "early allergen introduction", "foods to avoid first year"],
   "tags": ["development", "milestones", "infant feeding", "weaning", "complementary feeding", "well-child", "neonatology"],
   "contentType": "peds-tool",

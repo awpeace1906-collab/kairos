@@ -18,6 +18,8 @@ const entries = mods.map((mod) => {
     contentType: j.contentType,
     route: routeFor(mod),
     ...(Array.isArray(j.settingEmphasis) && j.settingEmphasis.length ? { settingEmphasis: j.settingEmphasis } : {}),
+    ...(Array.isArray(j.audience) && j.audience.length ? { audience: j.audience } : {}),
+    ...(Array.isArray(j.crossListIn) && j.crossListIn.length ? { crossListIn: j.crossListIn } : {}),
   };
 });
 

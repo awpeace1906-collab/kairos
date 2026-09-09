@@ -19,6 +19,7 @@ final class ContentStore: ObservableObject {
     @Published private(set) var searchIndex = SearchIndex(entries: [])
     @Published private(set) var sourcesIndex: SourcesIndexFile?
     @Published private(set) var careSettings: [SettingsConfig.CareSetting] = []
+    @Published private(set) var pinned: [PinnedShortcut] = []
     @Published private(set) var weightZones: WeightZonesConfig?
     @Published private(set) var tiers: [TiersConfig.Tier] = []
     @Published private(set) var manifest: Manifest?
@@ -55,11 +56,21 @@ final class ContentStore: ObservableObject {
         // file yet. The Sources page just shows nothing rather than failing the app.
         sourcesIndex = try? bundled("sources-index.json")
         careSettings = ((try? bundled("config/settings.json")) as SettingsConfig?)?.settings.sorted { $0.order < $1.order } ?? []
+        pinned = resolvePinned(((try? bundled("config/pinned.json")) as PinnedConfig?)?.pinned ?? [])
         Task { await checkForUpdates() }
     }
 
     func entry(forRoute route: String) -> SearchEntry? {
         searchIndex.entries.first { $0.route == route }
+    }
+
+    /// Resolve config/pinned.json ids against the search index → display models.
+    private func resolvePinned(_ raw: [PinnedConfig.Entry]) -> [PinnedShortcut] {
+        let byID = Dictionary(uniqueKeysWithValues: searchIndex.entries.map { ($0.itemID, $0) })
+        return raw.compactMap { p in
+            guard let e = byID[p.id] else { return nil }
+            return PinnedShortcut(label: p.label, blurb: p.blurb ?? e.title, route: e.route)
+        }
     }
 
     /// Loads a module by search-index route, decoding to the concrete type.

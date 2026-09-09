@@ -4,6 +4,7 @@
   "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
   "title": "Rocuronium — Pediatric RSI Paralysis",
   "settingEmphasis": ["ed", "icu", "prehospital"],
+  "audience": ["peds"],
   "aliases": ["peds rocuronium", "RSI paralytic", "non-depolarizing paralytic"],
   "tags": ["RSI", "rapid sequence intubation", "paralytic", "neuromuscular blockade", "peds"],
   "contentType": "drug-card",

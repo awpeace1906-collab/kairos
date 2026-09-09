@@ -4,6 +4,8 @@
   "category": "Neonatology",
   "title": "APGAR Score",
   "settingEmphasis": ["icu", "or"],
+  "audience": ["neonate"],
+  "crossListIn": [{"section": "Calculators", "category": "Obstetric / Newborn (ED & OR crossover)"}],
   "aliases": ["Apgar", "newborn Apgar", "1 and 5 minute Apgar", "delivery room scoring"],
   "tags": ["neonatal", "APGAR", "delivery room", "newborn assessment", "OB", "Peds"],
   "contentType": "peds-tool",

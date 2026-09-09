@@ -4,6 +4,8 @@
   "category": "Neonatology",
   "title": "NRP — Neonatal Resuscitation",
   "settingEmphasis": ["or", "icu"],
+  "audience": ["neonate"],
+  "crossListIn": [{"section": "Reference Library", "category": "Obstetric & Gynecologic"}],
   "aliases": [
     "neonatal resuscitation program",
     "delivery room resuscitation",

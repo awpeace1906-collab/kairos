@@ -20,19 +20,19 @@ renders on **both** clients (calculator `plot` schema + web SVG + iOS `Canvas`
 `NomogramView`).
 
 Remaining open items:
-1. **Peds Module: section or lens?** — the one real architectural call left.
-   RECOMMENDATION (2026-09-08): keep Peds Module as a **section** for browsing,
-   but ALSO make "peds" a care-setting-style lens: tag every peds-relevant
-   module (`audience: "peds"` or a `peds` entry in `settingEmphasis`-like
-   metadata) so a "Peds" toggle on any clinical section floats the peds
-   variants up, and the peds calculators keep a home in their clinical section
-   too (cross-listed, not moved). Rationale + migration in the 2026-09-08 log
-   entry below. Still its own session — touches nav metadata on ~30 modules and
-   a lens control in both clients.
-2. **Home-screen pinned shortcut** — deferred; needs a new pinned-link element
-   in both clients. `peds-pre-arrival-card` is still surfaced via
-   prehospital-first `settingEmphasis` + aliases.
-3. Parked per instruction: GitHub Pages hosting, REMOTE_BASE wiring.
+1. Parked per instruction: GitHub Pages hosting, REMOTE_BASE wiring.
+2. Follow-on content still parked (own sessions): a dedicated adult DKA pathway
+   (so `peds-dka-management` has an adult counterpart to cross-list beside), and
+   more `crossListIn` placements as adult/peds pairs surface.
+
+DONE 2026-09-08 (peds session): the Peds section-vs-lens question is resolved and
+shipped — Peds Module stays a browsable section, `audience` (`peds`/`neonate`)
+tags 41 modules, `crossListIn` cross-lists 6 peds tools into their adult clinical
+sections (appendicitis scores → Calc/GI, peds-GCS → Calc/Neuro, apgar → Calc/OB,
+nrp + peds-cardiac-arrest → RefLib/Resus), and a "Peds" lens toggle (home +
+per-section, persisted) floats peds rows to the top of any list. Plus the
+home-screen **Pinned** strip (`config/pinned.json` → curated one-tap cards),
+seeded with the peds pre-arrival card + the adult arrest algorithm.
 
 DONE 2026-09-08 (across the block): pARC interactive calculator (verified
 coefficients); home redesign + IBM Plex bundled both clients; Rumack-Matthew
@@ -44,6 +44,29 @@ Prussian blue + bicarbonate, one module), `high-dose-insulin-euglycemia-dosing`
 calculator, `brue-lower-risk-criteria` peds-tool checklist.
 
 ## Progress log
+- 2026-09-08 — **Peds lens + cross-listing + home-screen Pinned strip.**
+  Resolved the Peds Module section-vs-lens question by doing both. New schema:
+  `audience` (`adult`/`peds`/`neonate`) and `crossListIn` (`[{section, category}]`)
+  on `common.schema.json` recordMeta (nav metadata — no `content_version` bump,
+  like `settingEmphasis`). Tagged **41 modules** with `audience` (28 peds-module
+  + `erc-2025-pediatric-life-support`, `childhood-immunization-schedule`,
+  `pecarn-head`, the 9 `peds-*` drug cards, `holliday-segar` as adult+peds).
+  **Cross-listed 6** peds tools into their adult clinical section:
+  `pediatric-appendicitis-score` + `-risk-calculator` → Calculators/GI,
+  `peds-glasgow-coma-scale` → Calculators/Neuro, `apgar-score` →
+  Calculators/OB-Newborn, `nrp-algorithm` → RefLib/OB-Gyn, `peds-cardiac-arrest`
+  → RefLib/Resus. Build carries `audience`/`crossListIn` into `search-index.json`.
+  Web: `settingLens.js` `isPeds()` + `applyPedsLens()`; `prefs.js` `PEDS_LENS_KEY`;
+  `home.js` + `section.js` get a "Peds" toggle (persisted) + cross-listed rows
+  show a `peds` badge; section pool = own modules ∪ cross-listed. iOS:
+  `SearchEntry.audience`/`crossListIn`/`isPeds`/`appears(inSection:)`; a "Peds
+  lens" `Toggle` on `HomeView` + `SectionView` (shown only where a section has
+  peds content). **Home-screen Pinned strip**: new `config/pinned.json` (+
+  `config.pinned.schema.json`, validated + id-checked), loaded by both
+  ContentStores, rendered as ember-tinted one-tap cards above Browse — seeded
+  with `peds-pre-arrival-card` + `acls-adult-cardiac-arrest`. `settingEmphasis`
+  passthrough added to all 6 contentType schemas. sw.js → v8. validate 312/0,
+  test 252/0, iOS BUILD SUCCEEDED + 10/10.
 - 2026-09-08 — **Loose ends + backlog (+3 → 312 total).** *iOS nomogram:* added
   the `plot` field to the iOS `Calculator` model and a SwiftUI `Canvas`
   `NomogramView` (semi-log-Y, 1-2-5 decade grid, curve sampled from

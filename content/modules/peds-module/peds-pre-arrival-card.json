@@ -4,6 +4,7 @@
   "category": "Peds Resuscitation & Decision Support",
   "title": "Peds Pre-Arrival Card — One Weight, Every Number",
   "settingEmphasis": ["prehospital", "ed"],
+  "audience": ["peds"],
   "aliases": ["pre-arrival", "peds resus card", "kids coming in", "weight-based resus doses", "peds crash card", "pediatric pre-hospital notification"],
   "tags": ["PALS", "pediatric resuscitation", "pre-arrival", "weight-based dosing", "defibrillation", "cardioversion", "epinephrine", "fluid bolus", "prehospital", "ED"],
   "keywords": ["enter weight once get epinephrine adenosine amiodarone atropine calcium dextrose", "defibrillation 2 J/kg cardioversion 1 J/kg fluid bolus 20 mL/kg", "age to weight estimate APLS", "ETT size age over 4 plus 4"],

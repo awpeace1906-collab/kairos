@@ -4,6 +4,7 @@
   "category": "Peds Resuscitation & Decision Support",
   "title": "Pediatric DKA Management",
   "settingEmphasis": ["ed", "icu"],
+  "audience": ["peds"],
   "aliases": ["peds DKA", "pediatric diabetic ketoacidosis", "DKA insulin fluids"],
   "tags": ["DKA", "diabetic ketoacidosis", "insulin infusion", "cerebral edema", "potassium", "peds"],
   "contentType": "peds-tool",

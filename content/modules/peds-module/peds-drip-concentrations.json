@@ -4,6 +4,7 @@
   "category": "Peds Resuscitation & Decision Support",
   "title": "Pediatric Infusion Concentrations",
   "settingEmphasis": ["icu", "ed"],
+  "audience": ["peds"],
   "aliases": ["peds drips", "rule of 6", "standard concentration infusions", "pediatric vasoactive infusions", "mcg/kg/min to mL/hr"],
   "tags": ["infusions", "vasoactive", "sedation", "pediatric", "rule of 6", "standard concentrations", "PICU"],
   "contentType": "peds-tool",

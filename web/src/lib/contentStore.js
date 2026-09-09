@@ -19,11 +19,12 @@ export class ContentStore {
   #weightZones = null;
   #tiers = null;
   #settings = null;
+  #pinned = null;
   #moduleCache = new Map();
 
   async init() {
     // 1. Always load what we can from the bundled/cached copy first.
-    [this.#manifest, this.#searchIndex, this.#sourcesIndex, this.#sections, this.#weightZones, this.#tiers, this.#settings] =
+    [this.#manifest, this.#searchIndex, this.#sourcesIndex, this.#sections, this.#weightZones, this.#tiers, this.#settings, this.#pinned] =
       await Promise.all([
         this.#getJSON("manifest.json"),
         this.#getJSON("search-index.json"),
@@ -32,6 +33,7 @@ export class ContentStore {
         this.#getJSON("config/weight-zones.json"),
         this.#getJSON("config/tiers.json"),
         this.#getJSON("config/settings.json").catch(() => ({ settings: [] })),
+        this.#getJSON("config/pinned.json").catch(() => ({ pinned: [] })),
       ]);
     // 2. Kick the update check without blocking startup.
     this.#checkForUpdates().catch((e) => console.info("[content] update check skipped:", e.message));
@@ -42,6 +44,16 @@ export class ContentStore {
   get searchEntries() { return this.#searchIndex.entries; }
   get sourcesIndex() { return this.#sourcesIndex; }
   get careSettings() { return this.#settings?.settings ?? []; }
+  /** Curated home-screen shortcuts, resolved to {label, blurb, route, title}. */
+  get pinned() {
+    const byId = new Map(this.searchEntries.map((e) => [e.id, e]));
+    return (this.#pinned?.pinned ?? [])
+      .map((p) => {
+        const e = byId.get(p.id);
+        return e ? { label: p.label, blurb: p.blurb, route: e.route, title: e.title } : null;
+      })
+      .filter(Boolean);
+  }
   get weightZones() { return this.#weightZones; }
   get tiers() { return this.#tiers.tiers; }
   get manifest() { return this.#manifest; }

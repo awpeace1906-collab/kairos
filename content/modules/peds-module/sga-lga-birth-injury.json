@@ -4,6 +4,7 @@
   "category": "Neonatology",
   "title": "SGA / LGA & Birth Injury",
   "settingEmphasis": ["icu", "or"],
+  "audience": ["neonate"],
   "aliases": ["small for gestational age", "IUGR FGR", "symmetric asymmetric growth restriction", "large for gestational age macrosomia", "caput succedaneum", "cephalhematoma", "subgaleal hemorrhage", "Erb palsy", "Klumpke palsy", "brachial plexus injury"],
   "tags": ["SGA", "IUGR", "LGA", "macrosomia", "birth injury", "brachial plexus palsy", "subgaleal hemorrhage", "neonatology"],
   "contentType": "peds-tool",
