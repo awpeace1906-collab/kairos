@@ -141,5 +141,5 @@
     "hyperkalemia-management",
     "antidotes-reversal-agents"
   ],
-  "buildNote": "Tier 2 (antidote practice is stable; HIET dosing ranges and ECMO thresholds are refined periodically — recheck). Fills the CV-drug gap the CV Intoxicating Substances Reference flagged for lateral expansion. Deliberately overlaps `toxidromes-and-overdoses` only at the pointer level. A standalone HIET dosing/monitoring card and a digoxin-Fab dose calculator are natural follow-ons."
+  "buildNote": "Tier 2 (antidote practice is stable; HIET dosing ranges and ECMO thresholds are refined periodically — recheck). Fills the CV-drug gap the CV Intoxicating Substances Reference flagged for lateral expansion. Deliberately overlaps `toxidromes-and-overdoses` only at the pointer level. Weight-based HIET dosing is in `high-dose-insulin-euglycemia-dosing`; digoxin-Fab dosing in `digoxin-immune-fab-dosing`."
 }

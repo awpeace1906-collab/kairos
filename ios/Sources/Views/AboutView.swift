@@ -11,12 +11,12 @@ struct AboutView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
-                Text("About Kairos").font(.largeTitle.bold())
+                Text("About Kairos").font(Theme.display(32, relativeTo: .largeTitle))
 
                 if !content.careSettings.isEmpty {
-                    Text("Care setting").font(.title3.bold()).padding(.top, 4)
+                    Text("Care setting").font(Theme.title3).padding(.top, 4)
                     Text("Tune the app to where you're working now. It reorders and emphasizes — it never hides content or changes a dose.")
-                        .font(.footnote).foregroundStyle(.secondary)
+                        .font(Theme.footnote).foregroundStyle(.secondary)
                     Picker("Care setting", selection: $careSetting) {
                         Text("Any").tag("")
                         ForEach(content.careSettings) { s in Text(s.label).tag(s.id) }
@@ -30,11 +30,11 @@ struct AboutView: View {
 
                 Text("Kairos brings together the calculators, procedure guides, drug-dosing tools, and reference material you need across the ED, ICU, and OR into one companion tool — alongside AnesCalc and CRISIS, not in place of either.")
 
-                Text("Why Kairos exists").font(.title3.bold()).padding(.top, 6)
+                Text("Why Kairos exists").font(Theme.title3).padding(.top, 6)
 
                 Text("Most of what’s genuinely useful at the bedside is scattered across a dozen or more single-purpose apps — one for suture technique, another for peds resuscitation dosing, another for a handful of calculators. Finding the right one costs time. Kairos puts that content in one place, organized around how a shift actually runs across the ED, ICU, and OR — not around which developer happened to build which tool first.")
 
-                Text("The mark").font(.title3.bold()).padding(.top, 6)
+                Text("The mark").font(Theme.title3).padding(.top, 6)
 
                 Text("The Kairos icon is a broken ring — not a closed circle. A closed circle would read as completeness or ordinary clock-time; leaving it open at one point is the whole idea. This isn’t *chronos*, time as an unbroken loop, but *kairos* — the one place in that loop where the boundary gives way and something can happen.")
 
@@ -48,12 +48,12 @@ struct AboutView: View {
 
                 Text("At a glance it reads simply as a spark breaking through a ring — a moment of ignition. If you know the Greek, there is a second layer underneath.")
 
-                Text("Medical & legal disclaimer").font(.title3.bold()).padding(.top, 6)
+                Text("Medical & legal disclaimer").font(Theme.title3).padding(.top, 6)
 
                 Text("Kairos is a clinical reference and calculation aid for licensed healthcare professionals. It is provided for informational and educational purposes only and does not constitute medical advice. It does not replace clinical judgment, your institution's protocols, a medication's package insert / prescribing information, or consultation with a qualified clinician or pharmacist. Independently verify every dose, threshold, and recommendation — especially in high-acuity, pediatric, renal/hepatic-impairment, or pregnancy contexts — before acting on it. Content is checked against the sources listed on each page as of its last-verified date, but medicine changes; a citation does not guarantee the information is current. The authors and maintainers of Kairos assume no liability for clinical outcomes resulting from its use.")
-                    .font(.footnote).foregroundStyle(.secondary)
+                    .font(Theme.footnote).foregroundStyle(.secondary)
 
-                Text("Kairos v0.1.0").font(.footnote).foregroundStyle(.secondary).padding(.top, 8)
+                Text("Kairos v0.1.0").font(Theme.footnote).foregroundStyle(.secondary).padding(.top, 8)
             }
             .padding()
         }

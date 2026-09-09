@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T00:00:00Z",
+  "generatedAt": "2026-09-09T00:00:00Z",
   "entries": [
     {
       "id": "apfel-ponv",
@@ -2164,6 +2164,42 @@
       ],
       "contentType": "calculator",
       "route": "/calculators/toxicology-withdrawal/digoxin-immune-fab-dosing",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "high-dose-insulin-euglycemia-dosing",
+      "title": "High-Dose Insulin Euglycemia Therapy (HIET) — Dosing",
+      "section": "Calculators",
+      "category": "Toxicology / Withdrawal",
+      "tags": [
+        "HIET",
+        "calcium channel blocker",
+        "beta-blocker",
+        "toxicology",
+        "insulin",
+        "dextrose",
+        "ICU",
+        "ED",
+        "cardiogenic shock"
+      ],
+      "keywords": [
+        "regular insulin 1 unit per kg IV bolus then 0.5 to 1 unit per kg per hour infusion titrate to 10",
+        "dextrose 0.5 g per kg bolus if glucose under 250 then infusion",
+        "hypokalemia expected keep potassium 2.5 to 2.8 do not aggressively replace",
+        "onset 15 to 45 minutes inotropy not chronotropy monitor glucose",
+        "calcium channel blocker beta blocker poisoning cardiogenic shock",
+        "HIET",
+        "HIE",
+        "hyperinsulinemia euglycemia",
+        "high dose insulin CCB overdose",
+        "insulin beta blocker overdose",
+        "high dose insulin euglycemic therapy"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/toxicology-withdrawal/high-dose-insulin-euglycemia-dosing",
       "settingEmphasis": [
         "ed",
         "icu"
@@ -4702,6 +4738,38 @@
       "settingEmphasis": [
         "icu",
         "or"
+      ]
+    },
+    {
+      "id": "brue-lower-risk-criteria",
+      "title": "BRUE — Lower-Risk Criteria Checklist",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "BRUE",
+        "peds",
+        "infant",
+        "apnea",
+        "decision rule",
+        "ED",
+        "disposition"
+      ],
+      "keywords": [
+        "age over 60 days gestational age 32 weeks postconceptional 45 weeks",
+        "no CPR by trained provider event under 1 minute first event",
+        "no concerning history no concerning physical exam findings",
+        "lower risk BRUE observation pulse oximetry ECG pertussis shared decision making",
+        "higher risk BRUE any criterion not met",
+        "BRUE lower risk",
+        "brief resolved unexplained event",
+        "ALTE successor",
+        "BRUE criteria",
+        "lower-risk BRUE checklist"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/brue-lower-risk-criteria",
+      "settingEmphasis": [
+        "ed"
       ]
     },
     {
@@ -8872,6 +8940,46 @@
         "icu",
         "ed",
         "or"
+      ]
+    },
+    {
+      "id": "radiation-decorporation-dosing",
+      "title": "Radiation — Thyroid Blocking & Decorporation Dosing",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "radiation",
+        "CBRN",
+        "internal contamination",
+        "decorporation",
+        "potassium iodide",
+        "Prussian blue",
+        "DTPA",
+        "dosing",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "potassium iodide age based dose 130 65 32 16 mg predicted thyroid exposure",
+        "Prussian blue insoluble ferric hexacyanoferrate 3 g TID adults 1 g TID children cesium thallium",
+        "calcium zinc DTPA 1 g IV adults 14 mg per kg children transuranics plutonium americium",
+        "sodium bicarbonate urine alkalinization uranium",
+        "REAC/TS REMM strategic national stockpile isotope specific agent",
+        "potassium iodide dose",
+        "KI thyroid blocking",
+        "Prussian blue dose",
+        "Radiogardase",
+        "Ca-DTPA Zn-DTPA dose",
+        "pentetate calcium zinc trisodium",
+        "internal contamination decorporation",
+        "radioiodine cesium plutonium americium"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/radiation-decorporation-dosing",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
       ]
     },
     {

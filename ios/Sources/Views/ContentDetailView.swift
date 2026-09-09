@@ -111,7 +111,7 @@ struct ReferenceBody: View {
         VStack(alignment: .leading, spacing: 4) {
             Text(label).font(Theme.mono(11)).tracking(0.8)
                 .foregroundStyle(emphasized ? Theme.accent : Color.secondary)
-            Text(text).font(.callout).fontWeight(emphasized ? .medium : .regular)
+            Text(text).font(Theme.callout).fontWeight(emphasized ? .medium : .regular)
         }
         .padding(10)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -195,7 +195,7 @@ struct BlockList: View {
                 ForEach(Array(rows.enumerated()), id: \.offset) { idx, row in
                     HStack(alignment: .top, spacing: 12) {
                         ForEach(Array(row.enumerated()), id: \.offset) { _, cell in
-                            Text(cell).font(.callout)
+                            Text(cell).font(Theme.callout)
                                 .frame(width: colWidth, alignment: .topLeading)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
@@ -222,8 +222,8 @@ struct ProcedureBody: View {
         VStack(alignment: .leading, spacing: 12) {
             Text(proc.purpose).foregroundStyle(.secondary)
             Text(proc.outputType.uppercased() + (proc.meta.flags?.contains("stub") == true ? " · STUB" : ""))
-                .font(.caption).foregroundStyle(.secondary)
-            if let prompt = proc.entryPrompt { Text(prompt).font(.headline) }
+                .font(Theme.caption).foregroundStyle(.secondary)
+            if let prompt = proc.entryPrompt { Text(prompt).font(Theme.headline) }
 
             if isTree {
                 ProcedureWalker(nodes: proc.nodes ?? [])
@@ -238,16 +238,16 @@ struct ProcedureBody: View {
             }
 
             if let checklist = proc.checklist, !checklist.isEmpty {
-                Text("Checklist").font(.headline)
+                Text("Checklist").font(Theme.headline)
                 ForEach(checklist, id: \.self) { Text("☐ \($0)") }
             }
             if let tmpl = proc.noteTemplate {
-                Text("Procedure note template").font(.headline)
-                Text(tmpl).font(.footnote.monospaced())
+                Text("Procedure note template").font(Theme.headline)
+                Text(tmpl).font(Theme.mono(13))
                     .padding(10).background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 8))
             }
             if let x = proc.crossLinks, !x.isEmpty {
-                Text("Orchestrates: \(x.joined(separator: ", "))").font(.footnote).foregroundStyle(.secondary)
+                Text("Orchestrates: \(x.joined(separator: ", "))").font(Theme.footnote).foregroundStyle(.secondary)
             }
             BuildNote(text: proc.buildNote)
             SourcesBlock(meta: proc.meta)
@@ -267,10 +267,10 @@ struct ProcedureWalker: View {
         VStack(alignment: .leading, spacing: 10) {
             if path.count > 1 {
                 Text(path.compactMap { byId[$0]?.prompt ?? byId[$0]?.body?.prefix(20).description }.joined(separator: " › "))
-                    .font(.caption2).foregroundStyle(.secondary)
+                    .font(Theme.caption2).foregroundStyle(.secondary)
             }
             if let node = current {
-                if let p = node.prompt { Text(p).font(.headline) }
+                if let p = node.prompt { Text(p).font(Theme.headline) }
                 if let b = node.body {
                     Text(b)
                         .padding(10)
@@ -291,7 +291,7 @@ struct ProcedureWalker: View {
                         .accessibilityIdentifier("tree-choice-\(c.next)")
                     }
                 } else {
-                    Text("End of this branch.").font(.footnote).foregroundStyle(.secondary)
+                    Text("End of this branch.").font(Theme.footnote).foregroundStyle(.secondary)
                         .accessibilityIdentifier("tree-end")
                 }
             }
@@ -316,11 +316,11 @@ struct PedsToolBody: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             Text(tool.purpose).foregroundStyle(.secondary)
-            if let age = tool.ageRange { Text(age).font(.caption).foregroundStyle(.secondary) }
+            if let age = tool.ageRange { Text(age).font(Theme.caption).foregroundStyle(.secondary) }
             if let embedded = tool.embeddedCalculator {
                 CalculatorView(calc: embedded, route: route)
             } else if let src = tool.sourceOfTruth, !src.isEmpty {
-                Text("Defers to: \(src.joined(separator: ", "))").font(.footnote).foregroundStyle(.secondary)
+                Text("Defers to: \(src.joined(separator: ", "))").font(Theme.footnote).foregroundStyle(.secondary)
             }
             if let body = tool.body, !body.isEmpty {
                 BlockList(blocks: body, sectionTint: Theme.sectionColor(forTitle: tool.meta.section))
@@ -338,10 +338,10 @@ struct AnesthesiaDrugCardBody: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack(spacing: 6) {
-                Text(card.tallManLetters ?? card.meta.title).font(.headline)
+                Text(card.tallManLetters ?? card.meta.title).font(Theme.headline)
                 if let b = card.brandName { Text("· \(b)").foregroundStyle(.secondary) }
             }
-            Text(card.drugClassLabel).font(.caption).foregroundStyle(.secondary)
+            Text(card.drugClassLabel).font(Theme.caption).foregroundStyle(.secondary)
             Text(card.mechanism).foregroundStyle(.secondary)
 
             HStack(spacing: 20) {
@@ -351,7 +351,7 @@ struct AnesthesiaDrugCardBody: View {
             if let r = card.reversal { labeled("Reversal", r) }
 
             group("Dosing") {
-                Text(card.dosing).font(.footnote.monospaced())
+                Text(card.dosing).font(Theme.mono(13))
                     .padding(10).frame(maxWidth: .infinity, alignment: .leading)
                     .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 8))
             }
@@ -363,17 +363,17 @@ struct AnesthesiaDrugCardBody: View {
 
     private func labeled(_ label: String, _ value: String) -> some View {
         VStack(alignment: .leading, spacing: 2) {
-            Text(label.uppercased()).font(.caption2).foregroundStyle(.secondary)
-            Text(value).font(.callout)
+            Text(label.uppercased()).font(Theme.caption2).foregroundStyle(.secondary)
+            Text(value).font(Theme.callout)
         }
     }
     @ViewBuilder private func group<C: View>(_ title: String, @ViewBuilder _ content: () -> C) -> some View {
-        Text(title).font(.headline).padding(.top, 4)
+        Text(title).font(Theme.headline).padding(.top, 4)
         content()
     }
     private func bullets(_ items: [String]) -> some View {
         VStack(alignment: .leading, spacing: 6) {
-            ForEach(items, id: \.self) { Text("• \($0)").font(.callout) }
+            ForEach(items, id: \.self) { Text("• \($0)").font(Theme.callout) }
         }
     }
 }
@@ -383,9 +383,9 @@ struct BuildNote: View {
     var body: some View {
         if let text {
             DisclosureGroup("Build note") {
-                Text(text).font(.footnote).foregroundStyle(.secondary)
+                Text(text).font(Theme.footnote).foregroundStyle(.secondary)
             }
-            .font(.footnote)
+            .font(Theme.footnote)
         }
     }
 }

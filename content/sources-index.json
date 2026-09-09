@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T00:00:00Z",
+  "generatedAt": "2026-09-09T00:00:00Z",
   "groupOrder": [
     "Guidelines & consensus statements",
     "Randomized trials & major studies",
@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 592,
+  "count": 604,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -1450,6 +1450,18 @@
       ]
     },
     {
+      "text": "St-Onge M, Anseeuw K, Cantrell FL, et al. Experts Consensus Recommendations for the Management of Calcium Channel Blocker Poisoning in Adults. Crit Care Med. 2017;45(3):e306-e315",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "high-dose-insulin-euglycemia-dosing",
+          "title": "High-Dose Insulin Euglycemia Therapy (HIET) — Dosing",
+          "section": "Calculators",
+          "route": "/calculators/toxicology-withdrawal/high-dose-insulin-euglycemia-dosing"
+        }
+      ]
+    },
+    {
       "text": "St-Onge M, et al. Experts Consensus Recommendations for the Management of Calcium Channel Blocker Poisoning in Adults. Crit Care Med. 2017;45(3):e306-e315",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1542,6 +1554,18 @@
           "title": "Chronic Hypertension & GDM in Pregnancy",
           "section": "Reference Library",
           "route": "/reference-library/obstetric-gynecologic/chronic-htn-gdm-pregnancy"
+        }
+      ]
+    },
+    {
+      "text": "WHO. Iodine thyroid blocking: guidelines for use in planning for and responding to radiological and nuclear emergencies. 2017",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "radiation-decorporation-dosing",
+          "title": "Radiation — Thyroid Blocking & Decorporation Dosing",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/radiation-decorporation-dosing"
         }
       ]
     },
@@ -5278,6 +5302,18 @@
       ]
     },
     {
+      "text": "Engebretsen KM, Kaczmarek KM, Morgan J, Holger JS. High-dose insulin therapy in beta-blocker and calcium channel-blocker poisoning. Clin Toxicol (Phila). 2011;49(4):277-283",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "high-dose-insulin-euglycemia-dosing",
+          "title": "High-Dose Insulin Euglycemia Therapy (HIET) — Dosing",
+          "section": "Calculators",
+          "route": "/calculators/toxicology-withdrawal/high-dose-insulin-euglycemia-dosing"
+        }
+      ]
+    },
+    {
       "text": "ESC/ESE/ERBP hyponatremia guidance (2014, 2023 update); standard ICU electrolyte management",
       "group": "Other primary sources",
       "usedBy": [
@@ -5346,6 +5382,18 @@
           "title": "Methemoglobinemia — Recognition & Methylene Blue",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/methemoglobinemia"
+        }
+      ]
+    },
+    {
+      "text": "FDA. Guidance: Potassium Iodide as a Thyroid Blocking Agent in Radiation Emergencies. CDER, December 2001",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "radiation-decorporation-dosing",
+          "title": "Radiation — Thyroid Blocking & Decorporation Dosing",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/radiation-decorporation-dosing"
         }
       ]
     },
@@ -5430,6 +5478,18 @@
           "title": "Beta-Blocker Receptor Selectivity",
           "section": "Reference Library",
           "route": "/reference-library/cardiac-ecg/beta-blocker-selectivity"
+        }
+      ]
+    },
+    {
+      "text": "Goldfrank's Toxicologic Emergencies, 11th ed. — Antidotes in Depth: High-Dose Insulin",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "high-dose-insulin-euglycemia-dosing",
+          "title": "High-Dose Insulin Euglycemia Therapy (HIET) — Dosing",
+          "section": "Calculators",
+          "route": "/calculators/toxicology-withdrawal/high-dose-insulin-euglycemia-dosing"
         }
       ]
     },
@@ -5914,6 +5974,18 @@
       ]
     },
     {
+      "text": "Krenz JR, Kaakeh Y. An Overview of Hyperinsulinemic-Euglycemic Therapy in Calcium Channel Blocker and Beta-blocker Overdose. Pharmacotherapy. 2018;38(11):1130-1142",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "high-dose-insulin-euglycemia-dosing",
+          "title": "High-Dose Insulin Euglycemia Therapy (HIET) — Dosing",
+          "section": "Calculators",
+          "route": "/calculators/toxicology-withdrawal/high-dose-insulin-euglycemia-dosing"
+        }
+      ]
+    },
+    {
       "text": "Lanoxin (digoxin) prescribing information — amiodarone co-administration data",
       "group": "Other primary sources",
       "usedBy": [
@@ -6170,6 +6242,12 @@
       "group": "Other primary sources",
       "usedBy": [
         {
+          "id": "brue-lower-risk-criteria",
+          "title": "BRUE — Lower-Risk Criteria Checklist",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/brue-lower-risk-criteria"
+        },
+        {
           "id": "brue-pathway",
           "title": "BRUE Pathway",
           "section": "Peds Module",
@@ -6294,6 +6372,18 @@
           "title": "Dissociative & Hallucinogen Toxicity — Ketamine, PCP, DXM, N2O, LSD, NBOMe",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-dissociatives-hallucinogens"
+        }
+      ]
+    },
+    {
+      "text": "NCRP Report No. 161: Management of Persons Contaminated with Radionuclides. 2008",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "radiation-decorporation-dosing",
+          "title": "Radiation — Thyroid Blocking & Decorporation Dosing",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/radiation-decorporation-dosing"
         }
       ]
     },
@@ -6514,6 +6604,18 @@
       ]
     },
     {
+      "text": "Pentetate calcium trisodium / pentetate zinc trisodium injection US prescribing information (hameln pharmaceuticals)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "radiation-decorporation-dosing",
+          "title": "Radiation — Thyroid Blocking & Decorporation Dosing",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/radiation-decorporation-dosing"
+        }
+      ]
+    },
+    {
       "text": "Pisters R et al. Chest 2010",
       "group": "Other primary sources",
       "usedBy": [
@@ -6676,6 +6778,30 @@
       ]
     },
     {
+      "text": "Radiation Emergency Medical Management (REMM), US HHS — decorporation, DTPA, Prussian blue, KI; remm.hhs.gov",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "radiation-decorporation-dosing",
+          "title": "Radiation — Thyroid Blocking & Decorporation Dosing",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/radiation-decorporation-dosing"
+        }
+      ]
+    },
+    {
+      "text": "Radiogardase (insoluble Prussian blue) US prescribing information, Heyl",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "radiation-decorporation-dosing",
+          "title": "Radiation — Thyroid Blocking & Decorporation Dosing",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/radiation-decorporation-dosing"
+        }
+      ]
+    },
+    {
       "text": "Rady MY et al. Am J Emerg Med 1994",
       "group": "Other primary sources",
       "usedBy": [
@@ -6696,6 +6822,18 @@
           "title": "Perioperative Hyperglycemia",
           "section": "Reference Library",
           "route": "/reference-library/perioperative-anesthesia/perioperative-glycemic-management"
+        }
+      ]
+    },
+    {
+      "text": "REAC/TS (Radiation Emergency Assistance Center/Training Site), Oak Ridge — 24/7 consult +1-865-576-1005",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "radiation-decorporation-dosing",
+          "title": "Radiation — Thyroid Blocking & Decorporation Dosing",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/radiation-decorporation-dosing"
         }
       ]
     },
@@ -7236,6 +7374,18 @@
           "title": "12-Lead: STEMI Criteria & Localization",
           "section": "Reference Library",
           "route": "/reference-library/cardiac-ecg/twelve-lead-stemi-criteria"
+        }
+      ]
+    },
+    {
+      "text": "Tieder JS, Bonkowsky JL, Etzel RA, et al. Brief Resolved Unexplained Events (Formerly Apparent Life-Threatening Events) and Evaluation of Lower-Risk Infants. Pediatrics. 2016;137(5):e20160590",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "brue-lower-risk-criteria",
+          "title": "BRUE — Lower-Risk Criteria Checklist",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/brue-lower-risk-criteria"
         }
       ]
     },

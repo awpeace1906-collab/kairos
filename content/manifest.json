@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T00:00:00Z",
+  "generatedAt": "2026-09-09T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
@@ -701,6 +701,15 @@
       "section": "Calculators",
       "review_tier": 2,
       "next_review_due": "2027-03-07"
+    },
+    "calculators/tox-withdrawal/high-dose-insulin-euglycemia-dosing": {
+      "content_version": 1,
+      "hash": "24ec126bc9223695",
+      "path": "modules/calculators/tox-withdrawal/high-dose-insulin-euglycemia-dosing.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 2,
+      "next_review_due": "2027-03-08"
     },
     "calculators/tox-withdrawal/hunter-serotonin": {
       "content_version": 1,
@@ -1507,9 +1516,18 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "peds-module/brue-lower-risk-criteria": {
+      "content_version": 1,
+      "hash": "4a3b0cd362ae7cdb",
+      "path": "modules/peds-module/brue-lower-risk-criteria.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2027-09-08"
+    },
     "peds-module/brue-pathway": {
       "content_version": 2,
-      "hash": "7c5f2a0eaad201de",
+      "hash": "e4ba967190c10b4c",
       "path": "modules/peds-module/brue-pathway.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1886,7 +1904,7 @@
     },
     "reference-library/acute-radiation-syndrome": {
       "content_version": 1,
-      "hash": "72a466ede3145616",
+      "hash": "537d33ba4c5fd110",
       "path": "modules/reference-library/acute-radiation-syndrome.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2541,6 +2559,15 @@
       "review_tier": 1,
       "next_review_due": "2027-03-03"
     },
+    "reference-library/radiation-decorporation-dosing": {
+      "content_version": 1,
+      "hash": "5acbc3e6160af90f",
+      "path": "modules/reference-library/radiation-decorporation-dosing.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-08"
+    },
     "reference-library/rsi-seven-ps": {
       "content_version": 2,
       "hash": "d59fa1d3fe37fa1f",
@@ -2642,7 +2669,7 @@
     },
     "reference-library/tox-cardiac-meds": {
       "content_version": 1,
-      "hash": "cfaa1ea5a23732c9",
+      "hash": "f41630d3869b0355",
       "path": "modules/reference-library/tox-cardiac-meds.json",
       "contentType": "reference",
       "section": "Reference Library",

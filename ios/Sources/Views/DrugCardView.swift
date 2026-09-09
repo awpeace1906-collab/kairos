@@ -37,7 +37,7 @@ struct DrugCardView: View {
         VStack(alignment: .leading, spacing: 14) {
             Text(card.purpose).foregroundStyle(.secondary)
             Text("\(card.population ?? "both") · weight basis: \(card.weightBasis ?? "actual")")
-                .font(.caption).foregroundStyle(.secondary)
+                .font(Theme.caption).foregroundStyle(.secondary)
 
             ClearableField(label: "Exact weight", unit: "kg", fieldID: "drug-weight", text: Binding(
                 get: { weightText }, set: { weightText = $0; session.set(route, "weight", $0) }))
@@ -57,7 +57,7 @@ struct DrugCardView: View {
                     ForEach(card.doses) { dose in
                         doseRow(dose, weightKg: dosingKg)
                     }
-                    Text(cfg.disclaimer).font(.caption2).foregroundStyle(.secondary)
+                    Text(cfg.disclaimer).font(Theme.caption2).foregroundStyle(.secondary)
                 } else {
                     Text("Enter an exact weight (preferred) or an age to estimate.")
                         .foregroundStyle(.secondary)
@@ -67,9 +67,9 @@ struct DrugCardView: View {
             .accessibilityIdentifier("dose-output")
 
             if let c = card.contraindications, !c.isEmpty {
-                Text("Contraindications: \(c.joined(separator: "; "))").font(.callout)
+                Text("Contraindications: \(c.joined(separator: "; "))").font(Theme.callout)
             }
-            if let r = card.reversal { Text("Reversal: \(r)").font(.callout) }
+            if let r = card.reversal { Text("Reversal: \(r)").font(Theme.callout) }
             BuildNote(text: card.buildNote)
             SourcesBlock(meta: card.meta)
         }
@@ -94,13 +94,13 @@ struct DrugCardView: View {
             if card.obeseWeightBasis == "ideal" {
                 VStack(alignment: .leading, spacing: 6) {
                     Text("Obesity flag — dosing from ideal body weight")
-                        .font(.subheadline.bold())
+                        .font(Theme.semibold(15, relativeTo: .subheadline))
                     Text("Entered weight \(fmt(ob.actualKg)) kg is ~\(ob.pctOver)% above the age-expected weight (\(fmt(ob.ibwKg)) kg). This drug is hydrophilic — actual-weight dosing risks overdose. Doses below use \(obeseOverride ? "actual weight (\(fmt(ob.actualKg)) kg)" : "\(fmt(ob.ibwKg)) kg").")
-                        .font(.footnote)
+                        .font(Theme.footnote)
                     Button(obeseOverride ? "Use ideal body weight" : "Use actual weight instead") {
                         obeseOverride.toggle()
                     }
-                    .font(.footnote).buttonStyle(.bordered)
+                    .font(Theme.footnote).buttonStyle(.bordered)
                 }
                 .padding(10)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -108,7 +108,7 @@ struct DrugCardView: View {
                 .overlay(alignment: .leading) { Rectangle().fill(Color.orange).frame(width: 4) }
             } else if card.obeseWeightBasis == "actual" {
                 Text("Entered weight is ~\(ob.pctOver)% above the age-expected weight, but this drug is dosed by total (actual) body weight even in obesity — no adjustment.")
-                    .font(.footnote).foregroundStyle(.secondary)
+                    .font(Theme.footnote).foregroundStyle(.secondary)
             }
         }
     }
@@ -133,15 +133,15 @@ struct DrugCardView: View {
                 }
             }
             Text("ETT \(zone.equipment.ettUncuffed ?? "—") · LMA \(zone.equipment.lma ?? "—") · \(zone.equipment.blade ?? "—")")
-                .font(.caption).foregroundStyle(.secondary)
+                .font(Theme.caption).foregroundStyle(.secondary)
         }
     }
 
     private func doseRow(_ dose: DrugCard.Dose, weightKg: Double) -> some View {
         let d = WeightZones.dose(from: dose.rule, weightKg: weightKg)
         return VStack(alignment: .leading, spacing: 3) {
-            Text(dose.indication).font(.subheadline.bold())
-                + Text(" · \(dose.route)").font(.caption).foregroundColor(.secondary)
+            Text(dose.indication).font(Theme.semibold(15, relativeTo: .subheadline))
+                + Text(" · \(dose.route)").font(Theme.caption).foregroundColor(.secondary)
             if let d {
                 HStack(spacing: 4) {
                     if let hi = d.amountHigh, hi != d.amount {
@@ -156,12 +156,12 @@ struct DrugCardView: View {
                             Text("= \(fmt(v)) mL\(d.concentration.map { " (\($0))" } ?? "")")
                         }
                     }
-                    if d.capped { Text("max-dose cap").font(.caption2).foregroundStyle(.orange) }
-                    if d.floored { Text("min-dose floor").font(.caption2).foregroundStyle(.orange) }
+                    if d.capped { Text("max-dose cap").font(Theme.caption2).foregroundStyle(.orange) }
+                    if d.floored { Text("min-dose floor").font(Theme.caption2).foregroundStyle(.orange) }
                 }
-                if let rep = d.repeatText { Text(rep).font(.caption).foregroundStyle(.secondary) }
+                if let rep = d.repeatText { Text(rep).font(Theme.caption).foregroundStyle(.secondary) }
             }
-            if let n = dose.notes { Text(n).font(.caption).foregroundStyle(.secondary) }
+            if let n = dose.notes { Text(n).font(Theme.caption).foregroundStyle(.secondary) }
             Divider()
         }
     }

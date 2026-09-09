@@ -19,7 +19,7 @@ struct ClearableField: View {
                 Text(label)
                 if let unit { Text("(\(unit))").foregroundStyle(.secondary) }
             }
-            .font(.subheadline)
+            .font(Theme.subheadline)
 
             HStack {
                 TextField("", text: $text)
@@ -70,7 +70,7 @@ struct LastVerified: View {
                     Link("Flag as outdated", destination: url)
                 }
             }
-            .font(.footnote)
+            .font(Theme.footnote)
             .foregroundStyle(.secondary)
         }
     }
@@ -91,11 +91,11 @@ struct SourcesBlock: View {
         if let sources = meta.sources, !sources.isEmpty {
             VStack(alignment: .leading, spacing: 4) {
                 Divider()
-                Text("SOURCES").font(.caption2).foregroundStyle(.secondary).tracking(0.6)
+                Text("SOURCES").font(Theme.caption2).foregroundStyle(.secondary).tracking(0.6)
                 ForEach(Array(sources.enumerated()), id: \.offset) { i, s in
-                    Text("\(i + 1). \(s)").font(.footnote)
+                    Text("\(i + 1). \(s)").font(Theme.footnote)
                 }
-                NavigationLink(value: Route.sources) { Text("All sources ›").font(.caption) }
+                NavigationLink(value: Route.sources) { Text("All sources ›").font(Theme.caption) }
             }
             .padding(.top, 4)
         }

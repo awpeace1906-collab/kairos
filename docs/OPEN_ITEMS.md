@@ -6,37 +6,104 @@ Living tracker. Two lists:
    or original content, existing Critical Vector / AnesCalc assets) before the
    affected content can be finalized.
 
-Last updated: 2026-09-07
+Last updated: 2026-09-08
 
-## ▶ NEXT SESSION — start here (2026-09-07)
-State: **301 modules**, pipeline green (301/0, tests 235/0). iOS builds + runs;
-`ios-ci` root cause fixed (SearchEntry init) and now green. Care-setting lens
-fully seeded (all modules). DIRECTIONS_FORWARD §1 fully shipped.
+## ▶ NEXT SESSION — start here (2026-09-08)
+State: **312 modules**, pipeline green (312/0, tests 252/0). iOS builds + runs;
+`ios-ci` green (fixed by moving bundled TTFs out of `ios/Sources/` into
+`ios/Resources/Fonts/` — a binary blob inside the Swift source glob tripped the
+older CI toolchain). IBM Plex bundled on both clients + the type sweep is done
+(nav-bar title font, all semantic sizes → `Theme.*` tokens with Dynamic Type
+kept). Web has a desktop nav rail (≥ 960 px), section-tint identity on detail
+pages, per-h2 rules + ticks, and a route fade. The Rumack-Matthew nomogram now
+renders on **both** clients (calculator `plot` schema + web SVG + iOS `Canvas`
+`NomogramView`).
+
 Remaining open items:
-1. **pARC computing tool** — blocked on the verified Kharbanda 2018 logistic
-   coefficients (the CV guide + `pediatric-appendicitis-score` document the
-   variables and bands but not the β values; MDCalc has the formula). Do NOT
-   fabricate coefficients. The descriptive comparison is already complete.
-2. **Peds Module: section or lens?** — architectural call (see the pre-arrival /
-   PAS work). If it becomes a true lens, the peds calculators move to their
-   clinical sections + get peds tags. Own session.
-3. **Home-screen pinned shortcut** — deferred as a small separate UX task (needs a
-   new pinned-link element in both clients). For now `peds-pre-arrival-card` is
-   surfaced via prehospital-first `settingEmphasis` + strong aliases, which the
-   care-setting lens floats up.
-4. Follow-on calculator/table ideas noted in module buildNotes: KI age-dosing
-   table, DTPA/Prussian-blue dosing card, interactive lower-risk BRUE checklist,
-   HIET dosing card.
-5. Parked per instruction: GitHub Pages hosting, REMOTE_BASE wiring.
-DONE 2026-09-07 (across the block): VExUS/de-resuscitation; CV_Austere Parts One
-& Two; ballistics/blast manual → 3 modules; intoxicating-substances → 6 `tox-*`
-modules; tox lateral expansion → `tox-cardiac-meds` + `tox-psych-meds`;
-`new-orleans-criteria` + `mangled-extremity-severity-score` calculators; iOS
-table renderer polish; ios-ci compile fix; `methemoglobinemia`,
-`nerve-agent-toxicity`, `vesicant-toxicity` references; BRUE higher-risk branch
-built out (v2); NIHSS severity-band citation (v2).
+1. **Peds Module: section or lens?** — the one real architectural call left.
+   RECOMMENDATION (2026-09-08): keep Peds Module as a **section** for browsing,
+   but ALSO make "peds" a care-setting-style lens: tag every peds-relevant
+   module (`audience: "peds"` or a `peds` entry in `settingEmphasis`-like
+   metadata) so a "Peds" toggle on any clinical section floats the peds
+   variants up, and the peds calculators keep a home in their clinical section
+   too (cross-listed, not moved). Rationale + migration in the 2026-09-08 log
+   entry below. Still its own session — touches nav metadata on ~30 modules and
+   a lens control in both clients.
+2. **Home-screen pinned shortcut** — deferred; needs a new pinned-link element
+   in both clients. `peds-pre-arrival-card` is still surfaced via
+   prehospital-first `settingEmphasis` + aliases.
+3. Parked per instruction: GitHub Pages hosting, REMOTE_BASE wiring.
+
+DONE 2026-09-08 (across the block): pARC interactive calculator (verified
+coefficients); home redesign + IBM Plex bundled both clients; Rumack-Matthew
+nomogram (web + iOS); web UI polish (form-control font, tables, WHY/TAKEAWAY
+split, salicylate band fix); desktop nav rail + heading rhythm + section
+identity + motion; iOS `ios-ci` font-path fix; iOS type sweep + nav-bar font;
+backlog cleared → `radiation-decorporation-dosing` (KI age table + Ca/Zn-DTPA +
+Prussian blue + bicarbonate, one module), `high-dose-insulin-euglycemia-dosing`
+calculator, `brue-lower-risk-criteria` peds-tool checklist.
 
 ## Progress log
+- 2026-09-08 — **Loose ends + backlog (+3 → 312 total).** *iOS nomogram:* added
+  the `plot` field to the iOS `Calculator` model and a SwiftUI `Canvas`
+  `NomogramView` (semi-log-Y, 1-2-5 decade grid, curve sampled from
+  `Expression.evaluate` with the free variable `x`, marker + above/below colour
+  + caption) — parity with the web renderer; verified the acetaminophen curve
+  renders on device. *iOS IBM Plex sweep:* nav-bar title font set to
+  IBMPlexSans-SmBld via `UINavigationBarAppearance` in `KairosApp.init`; every
+  `.font(.headline/.subheadline/.callout/.footnote/.caption/.caption2/.title3)`
+  and the `.bold()`/`.monospaced()` compounds swapped for `Theme.*` tokens that
+  keep Dynamic Type (`.custom(_:size:relativeTo:)`). *Backlog (4 asks → 3
+  modules):* `radiation-decorporation-dosing` (reference) merges the KI
+  age-dosing table, Ca-/Zn-DTPA and insoluble Prussian blue cards, and
+  bicarbonate-for-uranium, with an isotope→agent quick table — FDA 2001 / WHO
+  2017 / product labels / NCRP 161 / REMM; `high-dose-insulin-euglycemia-dosing`
+  (formula calculator) — weight-based insulin bolus + infusion range + 10
+  unit/kg/h ceiling, dextrose bolus (0.5 g/kg = 1 mL/kg D50) and maintenance,
+  potassium caveat — Engebretsen 2011 / St-Onge 2017 CCM;
+  `brue-lower-risk-criteria` (peds-tool, embedded additive calc) — the AAP 2016
+  all-must-be-true lower-risk checklist, defers to `brue-pathway` for
+  management. Parent build notes (`acute-radiation-syndrome`, `tox-cardiac-meds`,
+  `brue-pathway`) updated to point at the new modules. validate 312/0, test
+  252/0, iOS BUILD SUCCEEDED + 10/10 engine tests.
+  **Peds Module — section-vs-lens recommendation:** keep it as a browsable
+  *section* (it is a genuine mental category at the bedside — "this patient is a
+  kid"), but add a lightweight **peds lens** on top: give every peds-relevant
+  module a `peds` audience tag and cross-list the peds calculators into their
+  clinical sections (Appendicitis scores under GI, BRUE under Neuro/Resus, etc.)
+  rather than moving them. A "Peds" toggle then works like the care-setting
+  lens — it reorders/filters within any section to the peds variant — while the
+  Peds Module section stays as the one-stop browse for peds-only tools
+  (pedi-tape, weight zones, neonatal). This avoids the lose-lose of either
+  duplicating numbers or stranding peds calculators away from their clinical
+  context. Migration: ~30 modules get the tag; both clients get a lens control
+  (reuse the `settingLens` machinery). Own session.
+- 2026-09-08 — **Design pass 2 — desktop chrome, heading rhythm, section
+  identity, motion.** Web: persistent left **nav rail** at ≥ 960 px (brand,
+  5 sections with tint marks + counts, About/Sources, active-section spine);
+  the home view collapses to a search launcher when the rail shows (no
+  duplicate section list). Detail pages: `h1` up to 1.55 rem with a
+  section-tint underline; every non-first `<h2>` gets a hairline section rule +
+  a 3 px tint tick + 30 px top margin; a faint tint wash down the first 150 px
+  of the card. Motion: 0.18 s `kairos-rise` fade on route change,
+  `:focus-visible` ember ring, 0.12 s hover transitions — all under
+  `prefers-reduced-motion: no-preference`. Shell cache → v7. iOS mirror: section
+  eyebrow + tint bar, `<h2>` tick + `Divider` rule, WHY-THIS-MATTERS (quiet
+  grey) vs CLINICAL-TAKEAWAY (ember) split, mono table headers, load fade.
+- 2026-09-08 — **Nomogram + web UI polish.** Added a declarative `plot` block to
+  `calculator.schema.json` (semilogy, x/y axes, curve expressions in `x`) and a
+  web SVG renderer; `apap-nac-dosing` → v2 renders the Rumack-Matthew 150 line +
+  a live plotted point (green below / ember on-or-above). Web polish:
+  `input,button,select,textarea { font: inherit }` (form controls were falling
+  back to Arial); table headers → mono / uppercase / tinted fill + zebra;
+  WHY-THIS-MATTERS / CLINICAL-TAKEAWAY / callout given three distinct weights;
+  calculator field labels → mono; 44 px inputs + ember focus ring; toolbar
+  aligned. `salicylate-toxicity` → v2: added a passthrough `level` formula so the
+  management bands (keyed to the raw input, which the formula engine never
+  surfaced) actually render — the only formula calc affected. iOS: moved the 7
+  bundled TTFs out of `ios/Sources/` into `ios/Resources/Fonts/` with an
+  explicit resources build phase — this fixed the `ios-ci` failure (confirmed
+  green on the next push).
 - 2026-09-08 — **pARC tool + home-screen design pass.** pARC is now interactive:
   `pediatric-appendicitis-risk-calculator` (peds-tool + embedded formula calc)
   built from the published Kharbanda 2018 coefficients (found in the NCT02633735

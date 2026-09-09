@@ -31,8 +31,12 @@ struct CalculatorView: View {
                 .accessibilityElement(children: .contain)
                 .accessibilityIdentifier("calc-result")
 
+            if let plot = calc.plot {
+                NomogramView(plot: plot, inputs: inputs)
+            }
+
             if let notes = calc.notes {
-                Text(notes).font(.footnote).foregroundStyle(.secondary)
+                Text(notes).font(Theme.footnote).foregroundStyle(.secondary)
             }
             BuildNote(text: calc.buildNote)
             SourcesBlock(meta: calc.meta)
@@ -48,12 +52,12 @@ struct CalculatorView: View {
     private var header: some View {
         VStack(alignment: .leading, spacing: 4) {
             if let s = calc.settings, !s.isEmpty {
-                Text(s.joined(separator: " · ")).font(.caption).foregroundStyle(.secondary)
+                Text(s.joined(separator: " · ")).font(Theme.caption).foregroundStyle(.secondary)
             }
             Text(calc.purpose).foregroundStyle(.secondary)
             if let flags = calc.meta.flags, !flags.isEmpty {
                 HStack { ForEach(flags, id: \.self) { flag in
-                    Text(flag).font(.caption2).padding(.horizontal, 6).padding(.vertical, 2)
+                    Text(flag).font(Theme.caption2).padding(.horizontal, 6).padding(.vertical, 2)
                         .background(Color.orange.opacity(0.2), in: Capsule())
                 }}
             }
@@ -63,8 +67,8 @@ struct CalculatorView: View {
     private var additiveItems: some View {
         ForEach(calc.items ?? []) { item in
             VStack(alignment: .leading, spacing: 6) {
-                Text(item.label).font(.subheadline.bold())
-                if let help = item.help { Text(help).font(.caption).foregroundStyle(.secondary) }
+                Text(item.label).font(Theme.semibold(15, relativeTo: .subheadline))
+                if let help = item.help { Text(help).font(Theme.caption).foregroundStyle(.secondary) }
                 ForEach(Array(item.options.enumerated()), id: \.offset) { idx, opt in
                     Button {
                         choices[item.key] = idx
@@ -91,7 +95,7 @@ struct CalculatorView: View {
         ForEach(calc.inputs ?? []) { input in
             if input.type == "select", let options = input.options {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(input.label).font(.subheadline)
+                    Text(input.label).font(Theme.subheadline)
                     Picker(input.label, selection: Binding(
                         get: { inputs[input.key] ?? "" },
                         set: { inputs[input.key] = $0; session.set(route, input.key, $0) }
@@ -122,8 +126,8 @@ struct CalculatorView: View {
         ForEach(Array((calc.tiers ?? []).enumerated()), id: \.offset) { _, tier in
             VStack(alignment: .leading, spacing: 2) {
                 Text(tier.label).bold()
-                Text(tier.description).font(.callout)
-                if let m = tier.mortality { Text("Mortality: \(m)").font(.caption).foregroundStyle(.secondary) }
+                Text(tier.description).font(Theme.callout)
+                if let m = tier.mortality { Text("Mortality: \(m)").font(Theme.caption).foregroundStyle(.secondary) }
             }
             .padding(.vertical, 4)
         }
@@ -137,7 +141,7 @@ struct CalculatorView: View {
                     .foregroundStyle(.secondary)
             } else {
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("Score \(fmt(result.score))").font(.title3)
+                    Text("Score \(fmt(result.score))").font(Theme.title3)
                     ForEach(Array(result.bands.enumerated()), id: \.offset) { _, band in
                         bandCard(band)
                     }
@@ -171,9 +175,9 @@ struct CalculatorView: View {
     private func bandCard(_ b: Calculator.Band) -> some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(b.label).bold()
-            if let r = b.risk { Text(r).font(.callout) }
-            if let d = b.disposition { Text(d).font(.callout).foregroundStyle(.secondary) }
-            if let d = b.detail { Text(d).font(.callout).foregroundStyle(.secondary) }
+            if let r = b.risk { Text(r).font(Theme.callout) }
+            if let d = b.disposition { Text(d).font(Theme.callout).foregroundStyle(.secondary) }
+            if let d = b.detail { Text(d).font(Theme.callout).foregroundStyle(.secondary) }
         }
         .padding(10)
         .frame(maxWidth: .infinity, alignment: .leading)

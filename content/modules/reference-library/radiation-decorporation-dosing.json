@@ -1,0 +1,135 @@
+{
+  "id": "radiation-decorporation-dosing",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Radiation — Thyroid Blocking & Decorporation Dosing",
+  "settingEmphasis": ["ed", "icu", "prehospital"],
+  "aliases": [
+    "potassium iodide dose",
+    "KI thyroid blocking",
+    "Prussian blue dose",
+    "Radiogardase",
+    "Ca-DTPA Zn-DTPA dose",
+    "pentetate calcium zinc trisodium",
+    "internal contamination decorporation",
+    "radioiodine cesium plutonium americium"
+  ],
+  "tags": ["radiation", "CBRN", "internal contamination", "decorporation", "potassium iodide", "Prussian blue", "DTPA", "dosing", "ED", "ICU"],
+  "keywords": [
+    "potassium iodide age based dose 130 65 32 16 mg predicted thyroid exposure",
+    "Prussian blue insoluble ferric hexacyanoferrate 3 g TID adults 1 g TID children cesium thallium",
+    "calcium zinc DTPA 1 g IV adults 14 mg per kg children transuranics plutonium americium",
+    "sodium bicarbonate urine alkalinization uranium",
+    "REAC/TS REMM strategic national stockpile isotope specific agent"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-08",
+  "next_review_due": "2027-03-08",
+  "review_tier": 2,
+  "sources": [
+    "FDA. Guidance: Potassium Iodide as a Thyroid Blocking Agent in Radiation Emergencies. CDER, December 2001",
+    "WHO. Iodine thyroid blocking: guidelines for use in planning for and responding to radiological and nuclear emergencies. 2017",
+    "Radiogardase (insoluble Prussian blue) US prescribing information, Heyl",
+    "Pentetate calcium trisodium / pentetate zinc trisodium injection US prescribing information (hameln pharmaceuticals)",
+    "NCRP Report No. 161: Management of Persons Contaminated with Radionuclides. 2008",
+    "Radiation Emergency Medical Management (REMM), US HHS — decorporation, DTPA, Prussian blue, KI; remm.hhs.gov",
+    "REAC/TS (Radiation Emergency Assistance Center/Training Site), Oak Ridge — 24/7 consult +1-865-576-1005"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-08", "change": "Initial entry — the KI age-dosing table and the Ca-/Zn-DTPA and Prussian blue decorporation cards flagged as follow-ons in the acute-radiation-syndrome build note, plus urinary alkalinization for uranium. Companion to acute-radiation-syndrome and hazmat-scene-toxidromes." }
+  ],
+  "summary": "Dosing for the four internal-contamination countermeasures: potassium iodide (radioiodine thyroid blocking only — age-based, useful only if given early), insoluble Prussian blue (cesium-137, thallium), Ca-/Zn-DTPA (plutonium, americium and other transuranics), and sodium bicarbonate urinary alkalinization (uranium, which is chemically nephrotoxic). Decontaminate externally first; match the agent to the confirmed isotope; call REAC/TS.",
+  "whyThisMatters": "In a radiological release the treatable problem is internal contamination, and every agent is isotope-specific — KI does nothing for cesium, Prussian blue does nothing for iodine or plutonium, DTPA does nothing for uranium. The therapeutic window is also front-loaded: KI is near-useless by 24 h, and DTPA chelates circulating actinide far better in the first day than after it has deposited in bone and liver. Knowing the dose and starting it while the isotope is still being identified — rather than waiting for formal biodosimetry — is what changes the committed dose.",
+  "clinicalTakeaway": "Remove clothing and wash first (that alone clears ~90% of external contamination); decorporation is only for what got inside. Give potassium iodide by age (adult 130 mg, 3-12 y 65 mg, 1 mo-3 y 32 mg, birth-1 mo 16 mg) as early as possible for a radioiodine release, repeating daily while exposure continues except in neonates and pregnancy. For confirmed cesium-137 or thallium, start insoluble Prussian blue 3 g PO TID (adult / adolescent) or 1 g PO TID (2-12 y) and continue for weeks. For plutonium / americium / transuranics, give Ca-DTPA 1 g IV (adult) or 14 mg/kg up to 1 g (child) once, then switch to Zn-DTPA after 24 h. Alkalinize the urine to pH 8-9 with sodium bicarbonate for uranium. Contact REAC/TS and use REMM; DTPA and Prussian blue live in the Strategic National Stockpile, not the hospital pharmacy.",
+  "body": [
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Decorporation treats INTERNAL contamination only. Address life threats and decontaminate the skin/wounds first. Confirm the radionuclide (nasal/wound swabs, excreta bioassay, dose reconstruction) before committing to an agent — the wrong agent wastes the therapeutic window. 24/7 expert help: REAC/TS +1-865-576-1005; guidance at remm.hhs.gov."
+    },
+    { "type": "heading", "level": 2, "text": "Isotope → agent, at a glance" },
+    {
+      "type": "table",
+      "columns": ["Radionuclide", "Agent", "Route / note"],
+      "rows": [
+        ["Radioiodine (I-131, I-123)", "Potassium iodide (KI)", "Oral; thyroid blocking only; must be early"],
+        ["Cesium-137 / Cs-134, thallium, rubidium", "Prussian blue, insoluble (Radiogardase)", "Oral; interrupts enterohepatic recycling"],
+        ["Plutonium, americium, curium, californium, other transuranics; some rare earths (Y, Sc, lanthanides)", "Ca-DTPA then Zn-DTPA", "IV (or nebulized for pure inhalation)"],
+        ["Uranium", "Sodium bicarbonate", "Alkalinize urine to pH 8-9; uranium is chemically nephrotoxic"],
+        ["Tritium (H-3)", "Forced oral fluids / hydration", "Dilution and diuresis; halves the biological half-life"],
+        ["Strontium-90", "Oral calcium / phosphate, consider stable strontium; ± aluminium hydroxide to reduce gut uptake", "Supportive; discuss with REAC/TS"]
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Potassium iodide (KI) — radioiodine thyroid blocking" },
+    {
+      "type": "text",
+      "text": "Blocks thyroid uptake of radioiodine by saturating the gland with stable iodine. **It does nothing for external radiation or for any other isotope**, and the benefit is almost entirely in the first few hours — give within 3-4 h if possible; by ~24 h post-exposure there is little point starting it. Greatest absolute benefit in children, adolescents, and pregnant or lactating women; least in adults over 40 (higher risk of iodine-induced thyroid dysfunction, lowest radiation-induced cancer risk)."
+    },
+    {
+      "type": "table",
+      "columns": ["Group", "Treat if predicted thyroid dose ≥", "KI dose", "Volume of 65 mg/mL oral solution"],
+      "rows": [
+        ["Adults > 40 y", "5 Gy (500 cGy)", "130 mg", "2 mL"],
+        ["Adults 18-40 y", "0.1 Gy (10 cGy)", "130 mg", "2 mL"],
+        ["Pregnant / lactating", "0.05 Gy (5 cGy)", "130 mg", "2 mL"],
+        ["Adolescents 12-18 y", "0.05 Gy (5 cGy)", "65 mg (130 mg if ≥ 70 kg / adult size)", "1 mL"],
+        ["Children 3-12 y", "0.05 Gy (5 cGy)", "65 mg", "1 mL"],
+        ["Infants 1 mo-3 y", "0.05 Gy (5 cGy)", "32 mg", "0.5 mL"],
+        ["Birth-1 mo", "0.05 Gy (5 cGy)", "16 mg", "0.25 mL"]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Tablets are 65 mg and 130 mg, scored; oral solution is 65 mg/mL. For small children, crush/dissolve a tablet in milk, juice, or formula.",
+        "Repeat every 24 h while radioiodine exposure or contamination risk continues (e.g. ongoing plume, unavoidable contaminated food/water).",
+        "Do NOT repeat dosing in neonates (< 1 month), or in pregnant / lactating women — a single dose is preferred; check the neonatal TSH if more than one dose is given (risk of transient hypothyroidism).",
+        "Contraindications: known iodine hypersensitivity, dermatitis herpetiformis, hypocomplementemic vasculitis. Caution with nodular goiter, Graves disease, or autoimmune thyroiditis (iodine-induced hyper- or hypothyroidism).",
+        "Adjunct only — it does not replace evacuation, sheltering, or control of the contaminated food chain."
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Insoluble Prussian blue (Radiogardase) — cesium, thallium" },
+    {
+      "type": "list",
+      "items": [
+        "Mechanism: ion exchange in the gut lumen traps cesium/thallium and interrupts its enterohepatic recirculation, shortening the biological half-life substantially (cesium-137 roughly from ~110 days to ~40 days).",
+        "Adults and adolescents ≥ 13 y: 3 g by mouth three times daily (9 g/day).",
+        "Children 2-12 y: 1 g by mouth three times daily (3 g/day).",
+        "Under 2 y: not established — only on REAC/TS advice.",
+        "Take with food to stimulate bile flow. Continue at least 30 days; longer (months) for a high body burden, tapering by whole-body counting and fecal excretion.",
+        "Adverse effects: constipation (add a laxative, fiber, fluids), hypokalemia (monitor and replace potassium), blue stools (and blue mouth/teeth if capsules are opened). Caution with reduced GI motility or obstruction.",
+        "Only the INSOLUBLE form (ferric hexacyanoferrate(II), Radiogardase) is a drug; artist's/soluble Prussian blue is not a substitute."
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Ca-DTPA and Zn-DTPA — plutonium, americium, transuranics" },
+    {
+      "type": "list",
+      "items": [
+        "Chelates transuranic actinides (Pu, Am, Cm) and some rare earths for renal excretion. NOT effective for uranium or neptunium.",
+        "Adults and adolescents: initial dose 1 g Ca-DTPA IV — slow push over 3-4 min, or diluted in 100-250 mL D5W/NS over ~30 min. Nebulized 1 g in a 1:1 dilution with sterile water or saline is an option for pure inhalation exposure.",
+        "After the first 24 h, switch to Zn-DTPA 1 g IV once daily for maintenance — it depletes endogenous zinc and manganese far less than Ca-DTPA and is preferred for any course beyond a single dose.",
+        "Children < 12 y: 14 mg/kg IV once daily (either salt), maximum 1 g/day.",
+        "Pregnancy: use Zn-DTPA (Ca-DTPA is teratogenic in animals via zinc depletion); a single initial Ca-DTPA dose may be justified for a high burden, then Zn-DTPA plus oral zinc.",
+        "Start as early as possible — chelation of circulating actinide in the first 24 h is far more effective than after skeletal/hepatic deposition, though later courses still help. Duration and interval are guided by urine/fecal actinide bioassay and body counting.",
+        "Renally cleared — in significant renal impairment, extend the interval and coordinate timing with dialysis."
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Sodium bicarbonate — uranium" },
+    {
+      "type": "text",
+      "text": "Uranium's acute hazard is **chemical nephrotoxicity**, not its radioactivity. Ensure vigorous hydration and urine output, then alkalinize the urine to pH 8-9 (e.g. sodium bicarbonate 100 mEq in 1 L D5W titrated, or oral) to form the less nephrotoxic uranyl-carbonate complex and enhance renal elimination. Monitor urine pH, serum bicarbonate and potassium, and renal function. DTPA and Prussian blue are not effective for uranium."
+    },
+    { "type": "heading", "level": 2, "text": "Logistics" },
+    {
+      "type": "list",
+      "items": [
+        "KI is widely pre-positioned; DTPA and Prussian blue are in the Strategic National Stockpile and CHEMPACK/RSS caches, not routine hospital pharmacy stock — activate the stockpile request early.",
+        "REAC/TS (+1-865-576-1005) and REMM (remm.hhs.gov) provide 24/7 dose reconstruction, agent selection, and bioassay guidance; CDC Radiation Emergencies and state radiation-control programs coordinate population countermeasures.",
+        "Collect and label all excreta, swabs, and removed clothing for the health-physics team — dosing duration is driven by serial bioassay, not a fixed course."
+      ]
+    }
+  ],
+  "related": ["acute-radiation-syndrome", "hazmat-scene-toxidromes"],
+  "buildNote": "Tier 2 — countermeasure doctrine is stable but agent availability, stockpile packaging, and pediatric thresholds shift; recheck KI thresholds against the current FDA/WHO guidance and DTPA/Prussian blue dosing against current REMM. Merges the two follow-ons named in the acute-radiation-syndrome build note (KI age table + DTPA/Prussian-blue card) into one dosing reference. Order-of-magnitude triage aid, not a substitute for REAC/TS consultation and formal bioassay."
+}

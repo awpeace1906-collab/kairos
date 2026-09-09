@@ -22,7 +22,7 @@ struct SourcesView: View {
         List {
             Section {
                 Text("Every primary source behind the material in Kairos — \(items.count) references across the calculators, guides, drug cards, and reference library. Each page also lists its own sources at the bottom.")
-                    .font(.footnote).foregroundStyle(.secondary)
+                    .font(Theme.footnote).foregroundStyle(.secondary)
             }
             ForEach(groupOrder, id: \.self) { group in
                 let gi = filtered.filter { $0.group == group }
@@ -30,9 +30,9 @@ struct SourcesView: View {
                     Section(group) {
                         ForEach(gi) { item in
                             VStack(alignment: .leading, spacing: 3) {
-                                Text(item.text).font(.callout)
+                                Text(item.text).font(Theme.callout)
                                 Text("Cited in: " + item.usedBy.map(\.title).joined(separator: ", "))
-                                    .font(.caption2).foregroundStyle(.secondary)
+                                    .font(Theme.caption2).foregroundStyle(.secondary)
                             }
                             .padding(.vertical, 2)
                         }
@@ -44,7 +44,7 @@ struct SourcesView: View {
                     Text("Listing a source here does not guarantee the linked page's content is current — check each page's own \u{201c}Last verified\u{201d} date. See About \u{203a} Medical & legal disclaimer for the full disclaimer.")
                     Text("Generated from content/sources-index.json · citations are being migrated to a structured registry.")
                 }
-                .font(.caption2).foregroundStyle(.secondary)
+                .font(Theme.caption2).foregroundStyle(.secondary)
             }
         }
         .listStyle(.insetGrouped)

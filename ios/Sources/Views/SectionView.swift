@@ -18,7 +18,7 @@ struct SectionView: View {
             if let section {
                 List {
                     Text(section.coreQuestion)
-                        .font(.subheadline).foregroundStyle(.secondary)
+                        .font(Theme.subheadline).foregroundStyle(.secondary)
                         .listRowSeparator(.hidden)
 
                     ForEach(categories(section), id: \.title) { cat in

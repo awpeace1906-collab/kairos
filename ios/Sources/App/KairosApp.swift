@@ -1,5 +1,6 @@
 import SwiftUI
 import CoreText
+import UIKit
 
 @main
 struct KairosApp: App {
@@ -9,7 +10,24 @@ struct KairosApp: App {
     @AppStorage("kairos.onboarding.seen") private var onboardingSeen = false
     @State private var showOnboarding = false
 
-    init() { Self.registerBundledFonts() }
+    init() {
+        Self.registerBundledFonts()
+        Self.applyNavBarType()
+    }
+
+    /// Put the navigation-bar title in IBM Plex Sans SemiBold so the nav chrome
+    /// matches the in-content type (SwiftUI's .navigationTitle otherwise stays SF).
+    private static func applyNavBarType() {
+        guard let inline = UIFont(name: "IBMPlexSans-SmBld", size: 17),
+              let large = UIFont(name: "IBMPlexSans-SmBld", size: 34) else { return }
+        let a = UINavigationBarAppearance()
+        a.configureWithDefaultBackground()
+        a.titleTextAttributes[.font] = inline
+        a.largeTitleTextAttributes[.font] = large
+        UINavigationBar.appearance().standardAppearance = a
+        UINavigationBar.appearance().scrollEdgeAppearance = a
+        UINavigationBar.appearance().compactAppearance = a
+    }
 
     /// IBM Plex Sans + Mono ship as TTFs under Sources/Fonts/. Registering them
     /// at process start (rather than via UIAppFonts) keeps project.yml's
@@ -62,8 +80,8 @@ struct RootView: View {
                 if let err = content.loadError {
                     VStack(spacing: 12) {
                         Image(systemName: "exclamationmark.triangle").font(.largeTitle)
-                        Text("Content didn't load").font(.headline)
-                        Text(err).font(.footnote).foregroundStyle(.secondary)
+                        Text("Content didn't load").font(Theme.headline)
+                        Text(err).font(Theme.footnote).foregroundStyle(.secondary)
                             .multilineTextAlignment(.center).padding()
                     }
                 } else if content.sections.isEmpty {
@@ -92,14 +110,14 @@ struct OnboardingView: View {
     var body: some View {
         VStack(spacing: 16) {
             Spacer()
-            Text("Kairos").font(.system(size: 40, weight: .semibold))
-            Text("pronounced *KY-ros* (rhymes with “sky”)").font(.callout).foregroundStyle(.secondary)
+            Text("Kairos").font(Theme.display(40, relativeTo: .largeTitle))
+            Text("pronounced *KY-ros* (rhymes with “sky”)").font(Theme.callout).foregroundStyle(.secondary)
             Text("Greek for “the critical moment” — the point where decisive action changes the outcome. That’s the moment this app is built for.")
                 .multilineTextAlignment(.center).padding(.horizontal, 32)
             Spacer()
             Button("Get started", action: onDone)
                 .buttonStyle(.borderedProminent)
-            Text("Full “About” is in Settings.").font(.footnote).foregroundStyle(.secondary)
+            Text("Full “About” is in Settings.").font(Theme.footnote).foregroundStyle(.secondary)
         }
         .padding()
         .presentationDetents([.medium])

@@ -1,0 +1,54 @@
+{
+  "id": "high-dose-insulin-euglycemia-dosing",
+  "section": "Calculators",
+  "category": "Toxicology / Withdrawal",
+  "title": "High-Dose Insulin Euglycemia Therapy (HIET) — Dosing",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["HIET", "HIE", "hyperinsulinemia euglycemia", "high dose insulin CCB overdose", "insulin beta blocker overdose", "high dose insulin euglycemic therapy"],
+  "tags": ["HIET", "calcium channel blocker", "beta-blocker", "toxicology", "insulin", "dextrose", "ICU", "ED", "cardiogenic shock"],
+  "keywords": [
+    "regular insulin 1 unit per kg IV bolus then 0.5 to 1 unit per kg per hour infusion titrate to 10",
+    "dextrose 0.5 g per kg bolus if glucose under 250 then infusion",
+    "hypokalemia expected keep potassium 2.5 to 2.8 do not aggressively replace",
+    "onset 15 to 45 minutes inotropy not chronotropy monitor glucose",
+    "calcium channel blocker beta blocker poisoning cardiogenic shock"
+  ],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-08",
+  "next_review_due": "2027-03-08",
+  "review_tier": 2,
+  "sources": [
+    "Engebretsen KM, Kaczmarek KM, Morgan J, Holger JS. High-dose insulin therapy in beta-blocker and calcium channel-blocker poisoning. Clin Toxicol (Phila). 2011;49(4):277-283",
+    "St-Onge M, Anseeuw K, Cantrell FL, et al. Experts Consensus Recommendations for the Management of Calcium Channel Blocker Poisoning in Adults. Crit Care Med. 2017;45(3):e306-e315",
+    "Krenz JR, Kaakeh Y. An Overview of Hyperinsulinemic-Euglycemic Therapy in Calcium Channel Blocker and Beta-blocker Overdose. Pharmacotherapy. 2018;38(11):1130-1142",
+    "Goldfrank's Toxicologic Emergencies, 11th ed. — Antidotes in Depth: High-Dose Insulin"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-08", "change": "Initial entry — weight-based HIET starting doses (regular insulin bolus + infusion range + titration ceiling, dextrose bolus and maintenance). Companion to tox-cardiac-meds; the HIET dosing-card follow-on named in that module's build note." }
+  ],
+  "engine": "formula",
+  "settings": ["ED", "ICU"],
+  "purpose": "Weight-based starting doses for high-dose insulin euglycemia therapy — the workhorse for cardiogenic shock from calcium-channel-blocker or beta-blocker poisoning. Insulin here is an inotrope: it takes 15-45 min to work, so start it early and keep vasopressors and calcium running alongside. Titrate the infusion up (not the bolus) to effect, guided by cardiac output / perfusion, not a fixed number.",
+  "inputs": [
+    { "key": "weight", "label": "Weight", "type": "number", "unit": "kg", "min": 3, "max": 200 },
+    { "key": "glucose", "label": "Current blood glucose (optional — for the dextrose decision)", "type": "number", "unit": "mg/dL", "min": 20, "max": 900 }
+  ],
+  "formulas": [
+    { "key": "insulinBolus", "label": "Regular insulin — IV bolus (1 unit/kg)", "expression": "1 * weight", "unit": "units", "precision": 0 },
+    { "key": "infusionStart", "label": "Insulin infusion — start (0.5 unit/kg/h)", "expression": "0.5 * weight", "unit": "units/h", "precision": 1 },
+    { "key": "infusionAlt", "label": "Insulin infusion — alternative higher start (1 unit/kg/h)", "expression": "1 * weight", "unit": "units/h", "precision": 0 },
+    { "key": "infusionMax", "label": "Insulin infusion — titration ceiling (10 unit/kg/h)", "expression": "10 * weight", "unit": "units/h", "precision": 0 },
+    { "key": "dextroseBolus", "label": "Dextrose — bolus if glucose < 250 mg/dL (0.5 g/kg)", "expression": "0.5 * weight", "unit": "g", "precision": 1 },
+    { "key": "d50Bolus", "label": "Dextrose bolus — volume of D50W", "expression": "1 * weight", "unit": "mL", "precision": 0 },
+    { "key": "d10MaintRate", "label": "Dextrose maintenance — approx D10W rate (0.5 g/kg/h)", "expression": "5 * weight", "unit": "mL/h", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "insulinBolus", "label": "Give the bolus of REGULAR insulin, then start the infusion immediately. Also give a dextrose bolus now unless the glucose is already > 250 mg/dL. Do not wait for a glucose result to start insulin in a crashing patient. Onset of inotropy is 15-45 min — continue calcium, vasopressors, and pacing in the meantime.", "severity": "high" },
+    { "forKey": "infusionStart", "label": "Standard start is 0.5-1 unit/kg/h. Titrate UP by 0.5-2 unit/kg/h every 10-30 min for inadequate perfusion / cardiac output — reported effective doses commonly reach 5-10 unit/kg/h; do not re-bolus to escalate. Wean once vasopressor requirement and perfusion improve; insulin often outlasts the pressors.", "severity": "moderate" },
+    { "forKey": "dextroseBolus", "label": "After the bolus, run a continuous dextrose infusion (D10W, or D25/D50 via central line for volume control) and check glucose every 15-30 min until stable, then hourly. Euglycemia target ~100-250 mg/dL; hypoglycemia can occur up to a day after insulin is stopped, so keep checking.", "severity": "info" },
+    { "forKey": "infusionMax", "label": "Potassium falls (intracellular shift, not total-body deficit). Keep serum K around 2.5-2.8 mEq/L and replace only to that floor — aggressive repletion causes rebound hyperkalemia when the insulin is weaned. Monitor K every 1-2 h. Watch for fluid overload from the dextrose volume; concentrate the dextrose and consider a diuretic.", "severity": "moderate" }
+  ],
+  "notes": "Use REGULAR insulin. HIET is first-line for moderate-to-severe CCB toxicity and a key adjunct for beta-blocker toxicity; it improves inotropy and metabolic substrate use without raising SVR, so it pairs with a vasopressor rather than replacing one. Central venous access is preferred for concentrated dextrose and potassium. Common pitfalls: starting too late, under-titrating the infusion, over-replacing potassium, and stopping dextrose monitoring too soon. Lipid emulsion, transvenous pacing, and VA-ECMO are the next tier for refractory shock. See tox-cardiac-meds for the full antidote decision.",
+  "buildNote": "Formula engine — weight-based starting figures only; the titration ceiling (10 unit/kg/h) is shown as a computed number but escalation is clinical. Dextrose bolus is gated in prose on glucose < 250 (no conditional engine). D50 volume uses 0.5 g/kg = 1 mL/kg of D50W; D10 maintenance approximates 0.5 g/kg/h. Companion to tox-cardiac-meds and toxidromes-and-overdoses."
+}

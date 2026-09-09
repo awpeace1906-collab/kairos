@@ -64,7 +64,7 @@ struct HomeView: View {
                     NavigationLink(value: Route.content(entry.route)) {
                         VStack(alignment: .leading, spacing: 2) {
                             Text(entry.title)
-                            Text(entry.category).font(.caption).foregroundStyle(.secondary)
+                            Text(entry.category).font(Theme.caption).foregroundStyle(.secondary)
                         }
                     }
                 }
@@ -91,7 +91,7 @@ struct HomeView: View {
 
     private func chip(_ label: String, isOn: Bool, tap: @escaping () -> Void) -> some View {
         Button(action: tap) {
-            Text(label).font(.caption).padding(.horizontal, 12).padding(.vertical, 5)
+            Text(label).font(Theme.caption).padding(.horizontal, 12).padding(.vertical, 5)
                 .background(isOn ? Color.accentColor : Color(.secondarySystemBackground),
                            in: Capsule())
                 .foregroundStyle(isOn ? .white : .primary)
@@ -111,12 +111,12 @@ struct HomeView: View {
                             .frame(width: 20, height: 20)
                         VStack(alignment: .leading, spacing: 2) {
                             HStack(alignment: .firstTextBaseline) {
-                                Text(s.title).font(.system(.body, weight: .semibold))
+                                Text(s.title).font(Theme.semibold(16, relativeTo: .body))
                                 Spacer()
                                 Text("\(sectionCount(s.title))")
                                     .font(Theme.mono(12)).foregroundStyle(.secondary)
                             }
-                            Text(s.coreQuestion).font(.caption).foregroundStyle(.secondary)
+                            Text(s.coreQuestion).font(Theme.caption).foregroundStyle(.secondary)
                         }
                     }
                     .padding(.vertical, 4)

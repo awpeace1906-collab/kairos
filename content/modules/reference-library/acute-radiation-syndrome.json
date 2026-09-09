@@ -244,5 +244,5 @@
     "crush-syndrome",
     "hemorrhagic-shock-mtp"
   ],
-  "buildNote": "Tier 2 (ARS management doctrine is stable; the cytokine approvals — filgrastim, sargramostim, pegfilgrastim, romiplostim for haematopoietic ARS — and decorporation availability shift, recheck against REMM). Completes the CBRN reference set (hazmat-scene-toxidromes, incendiary-chemical-burns, nerve-agent-toxicity, vesicant-toxicity, this). Dose figures are order-of-magnitude triage aids, not a substitute for formal biodosimetry. A KI age-dosing table and a DTPA/Prussian-blue dosing card are natural follow-ons."
+  "buildNote": "Tier 2 (ARS management doctrine is stable; the cytokine approvals — filgrastim, sargramostim, pegfilgrastim, romiplostim for haematopoietic ARS — and decorporation availability shift, recheck against REMM). Completes the CBRN reference set (hazmat-scene-toxidromes, incendiary-chemical-burns, nerve-agent-toxicity, vesicant-toxicity, this). Dose figures are order-of-magnitude triage aids, not a substitute for formal biodosimetry. Countermeasure dosing (KI age table, Ca-/Zn-DTPA, Prussian blue, bicarbonate for uranium) is in `radiation-decorporation-dosing`."
 }

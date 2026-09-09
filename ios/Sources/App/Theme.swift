@@ -53,9 +53,27 @@ enum Theme {
     // Mirrors web --font-sans / --font-mono. TTFs in ios/Sources/Fonts/ are
     // registered at launch (KairosApp.registerBundledFonts). PostScript names
     // are IBM Plex's abbreviated forms (…-SmBld, …-Medm).
-    static func display(_ size: CGFloat) -> Font { .custom("IBMPlexSans-SmBld", size: size) }
-    static func sans(_ size: CGFloat) -> Font { .custom("IBMPlexSans", size: size) }
-    static func mono(_ size: CGFloat) -> Font { .custom("IBMPlexMono", size: size) }
+    static func display(_ size: CGFloat, relativeTo style: Font.TextStyle = .title3) -> Font {
+        .custom("IBMPlexSans-SmBld", size: size, relativeTo: style)
+    }
+    static func sans(_ size: CGFloat, relativeTo style: Font.TextStyle = .body) -> Font {
+        .custom("IBMPlexSans", size: size, relativeTo: style)
+    }
+    static func semibold(_ size: CGFloat, relativeTo style: Font.TextStyle = .body) -> Font {
+        .custom("IBMPlexSans-SmBld", size: size, relativeTo: style)
+    }
+    static func mono(_ size: CGFloat, relativeTo style: Font.TextStyle = .footnote) -> Font {
+        .custom("IBMPlexMono", size: size, relativeTo: style)
+    }
+
+    // IBM Plex stand-ins for the SwiftUI semantic sizes — keep Dynamic Type.
+    static var headline: Font    { semibold(17, relativeTo: .headline) }
+    static var title3: Font      { display(20, relativeTo: .title3) }
+    static var subheadline: Font { sans(15, relativeTo: .subheadline) }
+    static var callout: Font     { sans(16, relativeTo: .callout) }
+    static var footnote: Font    { sans(13, relativeTo: .footnote) }
+    static var caption: Font     { sans(12, relativeTo: .caption) }
+    static var caption2: Font    { sans(11, relativeTo: .caption2) }
 
     static func severityColor(_ severity: String?) -> Color {
         switch severity {

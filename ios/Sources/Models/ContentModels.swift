@@ -232,9 +232,34 @@ struct Calculator: Codable {
     let formulas: [Formula]?
     let tiers: [Tier]?
     let interpretation: [Band]
+    let plot: Plot?
     let buildNote: String?
 
     enum Engine: String, Codable { case additive, formula, classification, external }
+
+    /// Optional 2-D plot (e.g. a treatment nomogram) rendered next to the result.
+    /// Curve expressions use the free variable `x`; the marker is read from the
+    /// inputs named by x.key / y.key. Mirrors calculator.schema.json `plot`.
+    struct Plot: Codable, Hashable {
+        let kind: String
+        let caption: String?
+        let x: Axis
+        let y: Axis
+        let curves: [Curve]
+
+        struct Axis: Codable, Hashable {
+            let key: String
+            let label: String
+            let min: Double
+            let max: Double
+            let unit: String?
+        }
+        struct Curve: Codable, Hashable {
+            let label: String
+            let expression: String
+            let tone: String?
+        }
+    }
 
     struct Input: Codable, Identifiable, Hashable {
         var id: String { key }
@@ -299,12 +324,13 @@ struct Calculator: Codable {
         formulas = try c.decodeIfPresent([Formula].self, forKey: .formulas)
         tiers = try c.decodeIfPresent([Tier].self, forKey: .tiers)
         interpretation = try c.decode([Band].self, forKey: .interpretation)
+        plot = try c.decodeIfPresent(Plot.self, forKey: .plot)
         buildNote = try c.decodeIfPresent(String.self, forKey: .buildNote)
     }
     func encode(to encoder: Encoder) throws { /* read-only in the app */ }
 
     private enum CodingKeys: String, CodingKey {
-        case engine, settings, purpose, notes, inputs, items, formulas, tiers, interpretation, buildNote
+        case engine, settings, purpose, notes, inputs, items, formulas, tiers, interpretation, plot, buildNote
     }
 }
 

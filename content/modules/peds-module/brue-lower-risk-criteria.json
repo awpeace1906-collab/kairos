@@ -1,0 +1,83 @@
+{
+  "id": "brue-lower-risk-criteria",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "BRUE — Lower-Risk Criteria Checklist",
+  "settingEmphasis": ["ed"],
+  "aliases": ["BRUE lower risk", "brief resolved unexplained event", "ALTE successor", "BRUE criteria", "lower-risk BRUE checklist"],
+  "tags": ["BRUE", "peds", "infant", "apnea", "decision rule", "ED", "disposition"],
+  "keywords": [
+    "age over 60 days gestational age 32 weeks postconceptional 45 weeks",
+    "no CPR by trained provider event under 1 minute first event",
+    "no concerning history no concerning physical exam findings",
+    "lower risk BRUE observation pulse oximetry ECG pertussis shared decision making",
+    "higher risk BRUE any criterion not met"
+  ],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-08",
+  "next_review_due": "2027-09-08",
+  "review_tier": 1,
+  "sources": [
+    "Tieder JS, Bonkowsky JL, Etzel RA, et al. Brief Resolved Unexplained Events (Formerly Apparent Life-Threatening Events) and Evaluation of Lower-Risk Infants. Pediatrics. 2016;137(5):e20160590",
+    "Merritt JL 2nd, Quinonez RA, Bonkowsky JL, et al. A Framework for Evaluation of the Higher-Risk Infant After a Brief Resolved Unexplained Event. Pediatrics. 2019;144(2):e20184101"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-08", "change": "Initial entry — interactive all-must-be-true checklist for the AAP 2016 lower-risk BRUE definition; complements the brue-pathway reference (which carries the full lower- and higher-risk management detail). Follow-on named in the brue-pathway build note." }
+  ],
+  "kind": "decision-tree",
+  "purpose": "Applies the AAP 2016 definition of a LOWER-RISK Brief Resolved Unexplained Event. A BRUE is a sudden, brief, now-resolved episode in an infant < 1 year of a colour change, absent/decreased/irregular breathing, marked tone change, or altered responsiveness, with no explanation after a full history and exam. Every criterion below must be met to call it lower-risk; if any is not met, use the higher-risk framework.",
+  "ageRange": "Infants < 1 year (BRUE is not defined outside this age)",
+  "sourceOfTruth": ["brue-pathway"],
+  "embeddedCalculator": {
+    "id": "brue-lower-risk-criteria-calc",
+    "section": "Peds Module",
+    "category": "Peds Resuscitation & Decision Support",
+    "title": "BRUE — Lower-Risk Criteria",
+    "contentType": "calculator",
+    "content_version": 1,
+    "review_tier": 1,
+    "last_reviewed": "2026-09-08",
+    "next_review_due": "2027-09-08",
+    "sources": ["Tieder JS, et al. Pediatrics. 2016;137(5):e20160590"],
+    "engine": "additive",
+    "purpose": "All seven criteria must be met for a lower-risk BRUE.",
+    "items": [
+      { "key": "age", "label": "Age > 60 days", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+      { "key": "gestation", "label": "Born ≥ 32 weeks gestation AND postconceptional age ≥ 45 weeks", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+      { "key": "firstEvent", "label": "First BRUE (no prior BRUE, not occurring in clusters)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+      { "key": "duration", "label": "Event lasted < 1 minute", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+      { "key": "noCPR", "label": "No CPR by a trained medical provider", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+      { "key": "history", "label": "No concerning historical features (see notes)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+      { "key": "exam", "label": "No concerning physical examination findings (see notes)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+    ],
+    "interpretation": [
+      { "min": 7, "max": 7, "label": "LOWER-RISK BRUE — all seven criteria met", "risk": "In this group the risk of a serious underlying diagnosis or a recurrent event is low.", "disposition": "May: brief ED/observation monitoring with continuous pulse oximetry and serial exams; 12-lead ECG; test for pertussis. Should NOT routinely: admit solely for monitoring; send WBC/blood culture/CSF/chemistries/blood gas/ammonia/lactate/urine organic acids; obtain CXR, echo, neuroimaging, EEG, or a skeletal survey; start acid suppression or anti-epileptics; discharge a home cardiorespiratory monitor. Shared decision-making with caregivers, offer CPR training resources, arrange follow-up within 24 h.", "severity": "low" },
+      { "min": 0, "max": 6, "label": "NOT lower-risk — at least one criterion is not met", "risk": "The event does not meet the AAP lower-risk definition; it does not by itself quantify how high the risk is.", "disposition": "Use the higher-risk framework (Merritt 2019) in the brue-pathway module: targeted, feature-driven evaluation and a period of monitored observation rather than the broad ALTE work-up. Escalate for any explanation found on history/exam (that makes it an explained event, not a BRUE), prematurity, recurrent or clustered events, a family history of sudden unexplained death, social concern, or an abnormal exam.", "severity": "moderate" }
+    ],
+    "notes": "Concerning HISTORY (any present → not a simple lower-risk BRUE, and may point to a specific cause): recurrent events or events in clusters; event during sleep vs feeding vs waking; duration > 1 min; required stimulation or resuscitation; prior similar events; possible non-accidental trauma, suffocation, or medication/toxin exposure; family history of sudden unexplained death, cardiac disease, or metabolic/genetic disease; social or environmental risk. Concerning EXAM (any present → evaluate further): abnormal vital signs or growth, respiratory distress, abnormal tone or neurologic exam, murmur or abnormal cardiac exam, organomegaly, dysmorphology, bruising/oral or ocular injury or other signs of abuse, fever."
+  },
+  "body": [
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "A BRUE requires that the clinician finds NO explanation after a full history and exam. If a cause is identified (GERD with choking, a viral URI, a witnessed seizure, a toxic exposure, etc.) it is an explained event and is managed on its own merits — the BRUE pathway does not apply."
+    },
+    { "type": "heading", "level": 2, "text": "If lower-risk" },
+    {
+      "type": "list",
+      "items": [
+        "The evidence does not support hospitalization solely for cardiorespiratory monitoring, or a broad laboratory/imaging work-up.",
+        "Reasonable options: a short period of monitored observation with continuous pulse oximetry and serial exams; a 12-lead ECG; pertussis testing when exposure or cough is plausible.",
+        "Educate caregivers about BRUEs, offer CPR training resources, use shared decision-making, and ensure follow-up within 24 hours.",
+        "Do not routinely start acid suppression, prescribe anti-epileptic drugs, obtain neuroimaging or an EEG, or send home a cardiorespiratory monitor."
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "If not lower-risk" },
+    {
+      "type": "text",
+      "text": "Move to the higher-risk framework in **brue-pathway**: it is expert consensus (not a validated rule) and pairs each risk-elevating feature with a targeted test rather than a reflex panel, plus a period of monitored observation and clear return precautions."
+    }
+  ],
+  "buildNote": "peds-tool with an embedded additive calculator — 7 criteria, all-must-be-true (score 7/7 = lower-risk). The concerning-history and concerning-exam feature lists live in the calculator notes and the body. Defers to brue-pathway for the full lower- and higher-risk management detail. Follow-on named in the brue-pathway build note."
+}
