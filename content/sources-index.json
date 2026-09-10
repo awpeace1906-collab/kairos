@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 608,
+  "count": 632,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -1066,6 +1066,18 @@
       ]
     },
     {
+      "text": "Girard TD, Alhazzani W, Kress JP, et al. An Official ATS/CHEST Clinical Practice Guideline: Liberation From Mechanical Ventilation in Critically Ill Adults — rehabilitation protocols, ventilator liberation protocols, and cuff leak tests. Am J Respir Crit Care Med. 2017;195(1):120-133",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "ventilator-liberation-weaning",
+          "title": "Ventilator Liberation & Extubation",
+          "section": "Reference Library",
+          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+        }
+      ]
+    },
+    {
       "text": "Glauser T et al. AES status epilepticus guideline. Epilepsy Curr 2016",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1098,6 +1110,18 @@
           "title": "Sedation & Analgesia Agents",
           "section": "Reference Library",
           "route": "/reference-library/perioperative-anesthesia/sedation-analgesia-agents"
+        }
+      ]
+    },
+    {
+      "text": "Griffiths R, White SM, Moppett IK, et al. Safety guideline: reducing the risk from cemented hemiarthroplasty for hip fracture (Association of Anaesthetists of GB & Ireland / British Orthopaedic Association / British Geriatrics Society). Anaesthesia. 2015;70(5):623-626",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "bone-cement-implantation-syndrome",
+          "title": "Bone Cement Implantation Syndrome (BCIS)",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/bone-cement-implantation-syndrome"
         }
       ]
     },
@@ -1362,6 +1386,18 @@
           "title": "Opioid Toxicity — Heroin, Fentanyl, Methadone, Buprenorphine",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-opioids"
+        }
+      ]
+    },
+    {
+      "text": "Ouellette DR, Patel S, Girard TD, et al. Liberation From Mechanical Ventilation in Critically Ill Adults: An Official ACCP/ATS Clinical Practice Guideline. Chest. 2017;151(1):166-180",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "ventilator-liberation-weaning",
+          "title": "Ventilator Liberation & Extubation",
+          "section": "Reference Library",
+          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -1774,6 +1810,18 @@
       ]
     },
     {
+      "text": "CRASH-3 trial collaborators. Effects of tranexamic acid on death, disability, vascular occlusive events and other morbidities in patients with acute traumatic brain injury. Lancet. 2019;394(10210):1713-1723",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "icp-tbi-management",
+          "title": "Raised ICP & TBI Management",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/icp-tbi-management"
+        }
+      ]
+    },
+    {
       "text": "Critical Vector — Antidotes & Reversal Agents pocket reference (v7, verified against FDA / NEJM / MHAUS / ASRA / ACEP / AAP / poison-center references, July 2026)",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -1924,6 +1972,30 @@
       ]
     },
     {
+      "text": "François B, Bellissant E, Gissot V, et al. 12-h pretreatment with methylprednisolone versus placebo for prevention of postextubation laryngeal oedema. Lancet. 2007;369(9567):1083-1089",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "ventilator-liberation-weaning",
+          "title": "Ventilator Liberation & Extubation",
+          "section": "Reference Library",
+          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+        }
+      ]
+    },
+    {
+      "text": "Girard TD, Kress JP, Fuchs BD, et al. Efficacy and safety of a paired sedation and ventilator weaning protocol for mechanically ventilated patients in intensive care (Awakening and Breathing Controlled trial). Lancet. 2008;371(9607):126-134",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "ventilator-liberation-weaning",
+          "title": "Ventilator Liberation & Extubation",
+          "section": "Reference Library",
+          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+        }
+      ]
+    },
+    {
       "text": "Granfeldt A et al. Sodium bicarbonate for in-hospital cardiac arrest (BIHCA). JAMA, June 11 2026",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -1944,6 +2016,18 @@
           "title": "C-Spine & CT Head Decision Rules",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/decision-rules-cspine-ct-head"
+        }
+      ]
+    },
+    {
+      "text": "Hernández G, Vaquero C, Colinas L, et al. Effect of Postextubation High-Flow Nasal Cannula vs Noninvasive Ventilation on Reintubation and Postextubation Respiratory Failure in High-Risk Patients. JAMA. 2016;316(15):1565-1574",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "ventilator-liberation-weaning",
+          "title": "Ventilator Liberation & Extubation",
+          "section": "Reference Library",
+          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -2116,6 +2200,18 @@
       ]
     },
     {
+      "text": "Paschold BS, Braeuer BLP, Santer P, et al. High vs low FiO2 for anaesthetic washout and extubation and postoperative atelectasis: a randomised controlled trial. Br J Anaesth. 2026;137(2):591-600",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "ventilator-liberation-weaning",
+          "title": "Ventilator Liberation & Extubation",
+          "section": "Reference Library",
+          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+        }
+      ]
+    },
+    {
       "text": "Perkins GD et al. Epinephrine in out-of-hospital cardiac arrest (PARAMEDIC2). NEJM 2018; Cheskes S et al. DOSE-VF. NEJM 2022; Kudenchuk PJ et al. ALPS. NEJM 2016",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -2244,6 +2340,18 @@
           "title": "Awake Intubation (ICU)",
           "section": "Procedures",
           "route": "/procedures/airway-sedation-workflows/awake-intubation"
+        }
+      ]
+    },
+    {
+      "text": "Schmid B, et al. (GSAIC COVALENT). Conventional vs Video-Assisted Laryngoscopy for Perioperative Endotracheal Intubation. JAMA Netw Open. 2026;9(8):e2625965",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "airway-management-flow",
+          "title": "Airway Management Flow",
+          "section": "Procedures",
+          "route": "/procedures/airway-sedation-workflows/airway-management-flow"
         }
       ]
     },
@@ -2416,6 +2524,18 @@
       ]
     },
     {
+      "text": "Subirà C, Hernández G, Vázquez A, et al. Effect of Pressure Support vs T-Piece Ventilation Strategies During Spontaneous Breathing Trials on Successful Extubation. JAMA. 2019;321(22):2175-2182",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "ventilator-liberation-weaning",
+          "title": "Ventilator Liberation & Extubation",
+          "section": "Reference Library",
+          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+        }
+      ]
+    },
+    {
       "text": "Teasdale G, Jennett B. Lancet 1974",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -2424,6 +2544,18 @@
           "title": "Glasgow Coma Scale (GCS)",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/gcs"
+        }
+      ]
+    },
+    {
+      "text": "Thille AW, Muller G, Gacouin A, et al. Effect of Postextubation High-Flow Nasal Oxygen With Noninvasive Ventilation vs High-Flow Nasal Oxygen Alone on Reintubation Among Patients at High Risk of Extubation Failure. JAMA. 2019;322(15):1465-1475",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "ventilator-liberation-weaning",
+          "title": "Ventilator Liberation & Extubation",
+          "section": "Reference Library",
+          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -2532,6 +2664,18 @@
           "title": "Rapid Shallow Breathing Index (RSBI)",
           "section": "Calculators",
           "route": "/calculators/icu-critical-care/rsbi"
+        }
+      ]
+    },
+    {
+      "text": "Young D, Harrison DA, Cuthbertson BH, Rowan K; TracMan Collaborators. Effect of early vs late tracheostomy placement on survival in patients receiving mechanical ventilation (TracMan). JAMA. 2013;309(20):2121-2129",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "ventilator-liberation-weaning",
+          "title": "Ventilator Liberation & Extubation",
+          "section": "Reference Library",
+          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -3886,6 +4030,18 @@
       ]
     },
     {
+      "text": "Alkalinised lidocaine ETT-cuff meta-analyses (PLOS ONE; evidence-based review, 2337 patients) — reduced post-extubation sore throat and cough",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "airway-management-flow",
+          "title": "Airway Management Flow",
+          "section": "Procedures",
+          "route": "/procedures/airway-sedation-workflows/airway-management-flow"
+        }
+      ]
+    },
+    {
       "text": "Allgöwer M, Burri C. 1967",
       "group": "Other primary sources",
       "usedBy": [
@@ -4096,6 +4252,18 @@
       ]
     },
     {
+      "text": "Bardy GH, et al. Surface ECG clues suggesting a nodofascicular Mahaim fiber. J Am Coll Cardiol (6-point antidromic Mahaim criteria); reviewed in The Critical Vector",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ecg-library",
+          "title": "ECG Library — Key Patterns",
+          "section": "Reference Library",
+          "route": "/reference-library/cardiac-ecg/ecg-library"
+        }
+      ]
+    },
+    {
       "text": "Baxter CR, Shires T. Ann N Y Acad Sci 1968",
       "group": "Other primary sources",
       "usedBy": [
@@ -4164,6 +4332,18 @@
           "title": "Ventilator Management",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/ventilator-management"
+        }
+      ]
+    },
+    {
+      "text": "Boles JM, Bion J, Connors A, et al. Weaning from mechanical ventilation. Eur Respir J. 2007;29(5):1033-1056 (simple / difficult / prolonged framework)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ventilator-liberation-weaning",
+          "title": "Ventilator Liberation & Extubation",
+          "section": "Reference Library",
+          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -5200,6 +5380,18 @@
       ]
     },
     {
+      "text": "Donaldson AJ, Thomson HE, Harper NJ, Kenny NW. Bone cement implantation syndrome. Br J Anaesth. 2009;102(1):12-22",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "bone-cement-implantation-syndrome",
+          "title": "Bone Cement Implantation Syndrome (BCIS)",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/bone-cement-implantation-syndrome"
+        }
+      ]
+    },
+    {
       "text": "Done AK. Pediatrics 1960 (nomogram — now discredited); EXTRIP 2015 salicylate recommendations; AACT/ACMT guidance",
       "group": "Other primary sources",
       "usedBy": [
@@ -5770,6 +5962,18 @@
       ]
     },
     {
+      "text": "Jain A. FIND / DE-SELECT / CONTROL — a conceptual POCUS framework for antibiotic decisions (Life on the Frontline); reviewed in The Critical Vector (unvalidated framework)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pocus-guide",
+          "title": "POCUS Guide",
+          "section": "Procedures",
+          "route": "/procedures/regional-anesthesia-ultrasound/pocus-guide"
+        }
+      ]
+    },
+    {
       "text": "Janmahasatian S et al. Clin Pharmacokinet 2005;44:1051-65 (PMID 16176118)",
       "group": "Other primary sources",
       "usedBy": [
@@ -6142,6 +6346,18 @@
       ]
     },
     {
+      "text": "Long B, Lentz S, Gottlieb M. Alcoholic Ketoacidosis: Etiologies, Evaluation, and Management. J Emerg Med. 2021;61(6):658-665",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "alcoholic-ketoacidosis",
+          "title": "Alcoholic Ketoacidosis (AKA)",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/alcoholic-ketoacidosis"
+        }
+      ]
+    },
+    {
       "text": "MacIntyre NR et al. ACCP/AARC/ACCM. Chest 2001",
       "group": "Other primary sources",
       "usedBy": [
@@ -6210,6 +6426,18 @@
           "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/wound-ballistics"
+        }
+      ]
+    },
+    {
+      "text": "McGuire LC, Cruickshank AM, Munro PT. Alcoholic ketoacidosis. Emerg Med J. 2006;23(6):417-420",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "alcoholic-ketoacidosis",
+          "title": "Alcoholic Ketoacidosis (AKA)",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/alcoholic-ketoacidosis"
         }
       ]
     },
@@ -6522,6 +6750,18 @@
           "title": "Acute Radiation Syndrome & Radiological Casualties",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/acute-radiation-syndrome"
+        }
+      ]
+    },
+    {
+      "text": "Olsen F, Kotyra M, Houltz E, Ricksten SE. Bone cement implantation syndrome in cemented hemiarthroplasty for femoral neck fracture: incidence, risk factors, and effect on outcome. Br J Anaesth. 2014;113(5):800-806",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "bone-cement-implantation-syndrome",
+          "title": "Bone Cement Implantation Syndrome (BCIS)",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/bone-cement-implantation-syndrome"
         }
       ]
     },
@@ -6930,6 +7170,18 @@
           "title": "Stimulant Toxicity — Cocaine, Amphetamines, MDMA, Cathinones",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-stimulants"
+        }
+      ]
+    },
+    {
+      "text": "Robba C, McCredie V, Chesnut RM, Citerio G, et al. Update on the management of acute brain injury (traumatic brain injury). Intensive Care Med. 2025;51(6):1112-1127",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "icp-tbi-management",
+          "title": "Raised ICP & TBI Management",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/icp-tbi-management"
         }
       ]
     },
@@ -7402,6 +7654,18 @@
       ]
     },
     {
+      "text": "The Critical Vector — EtCO2 vs PaCO2 gradient (Reference Audit); West's Respiratory Physiology (dead space / V/Q)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "capnography",
+          "title": "Capnography — Waveform Interpretation",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/capnography"
+        }
+      ]
+    },
+    {
       "text": "Thornton PS et al; Pediatric Endocrine Society. J Pediatr 2015;167(2):238-245",
       "group": "Other primary sources",
       "usedBy": [
@@ -7690,6 +7954,18 @@
       ]
     },
     {
+      "text": "Wrenn KD, Slovis CM, Minion GE, Rutkowski R. The syndrome of alcoholic ketoacidosis. Am J Med. 1991;91(2):119-128",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "alcoholic-ketoacidosis",
+          "title": "Alcoholic Ketoacidosis (AKA)",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/alcoholic-ketoacidosis"
+        }
+      ]
+    },
+    {
       "text": "Wu BU et al. Gut 2008",
       "group": "Other primary sources",
       "usedBy": [
@@ -7698,6 +7974,18 @@
           "title": "BISAP Score",
           "section": "Calculators",
           "route": "/calculators/gi-renal-metabolic/bisap"
+        }
+      ]
+    },
+    {
+      "text": "Yang KL, Tobin MJ. A prospective study of indexes predicting the outcome of trials of weaning from mechanical ventilation. N Engl J Med. 1991;324(21):1445-1450 (RSBI)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ventilator-liberation-weaning",
+          "title": "Ventilator Liberation & Extubation",
+          "section": "Reference Library",
+          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
         }
       ]
     },

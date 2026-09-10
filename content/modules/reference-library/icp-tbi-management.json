@@ -41,15 +41,22 @@
     "decompressive craniectomy"
   ],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-02",
-  "next_review_due": "2026-12-02",
+  "content_version": 3,
+  "last_reviewed": "2026-09-09",
+  "next_review_due": "2027-03-09",
   "review_tier": 1,
   "sources": [
     "Critical Vector — ICU Pocket Guide: ICP / TBI (BTF 2016)",
-    "Brain Trauma Foundation Guidelines for the Management of Severe TBI, 4th ed (2016); Seattle International Severe TBI Consensus (SIBICC) tiered approach"
+    "Brain Trauma Foundation Guidelines for the Management of Severe TBI, 4th ed (2016); Seattle International Severe TBI Consensus (SIBICC) tiered approach",
+    "Robba C, McCredie V, Chesnut RM, Citerio G, et al. Update on the management of acute brain injury (traumatic brain injury). Intensive Care Med. 2025;51(6):1112-1127",
+    "CRASH-3 trial collaborators. Effects of tranexamic acid on death, disability, vascular occlusive events and other morbidities in patients with acute traumatic brain injury. Lancet. 2019;394(10210):1713-1723"
   ],
   "changelog": [
+    {
+      "version": 3,
+      "date": "2026-09-09",
+      "change": "Added a 2025 evidence-update section (Robba et al., Intensive Care Med 2025): the three ICP-monitoring positions (BTF / Milan / Seattle), a PaO2 target band with a hyperoxaemia caution, no TXA benefit in isolated TBI, CPPopt, the elderly SBP target, and where brain-tissue-oxygen monitoring stands (BOOST-II / OXY-TC / BONANZA-BOOST-III). Adjusted the SpO2/PaO2 target row."
+    },
     {
       "version": 2,
       "date": "2026-09-07",
@@ -91,7 +98,7 @@
         ],
         [
           "SpO2 / PaO2",
-          "≥ 95% / > 60 mmHg — avoid hypoxia"
+          "SpO2 > 94%, PaO2 80–120 mmHg — avoid hypoxia AND hyperoxaemia (PaO2 > 150 increasingly viewed as harmful, not just wasteful)"
         ],
         [
           "PaCO2",
@@ -176,6 +183,23 @@
       "type": "callout",
       "tone": "danger",
       "text": "Herniation now (blown pupil, extensor posturing, Cushing's triad — hypertension + bradycardia + irregular respiration): HOB up, hyperventilate transiently, 23.4% saline 30 mL (or mannitol 1 g/kg), drain CSF if an EVD is in, and call neurosurgery for emergent decompression / evacuation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2025 evidence update (Robba et al., Intensive Care Med)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "ICP monitoring is standard of care but has never been shown in an RCT to improve outcome — it detects an expanding mass lesion and informs the wider physiology (CPP, autoregulation, compensatory reserve), it is not a validated treatment target on its own. Three positions on WHEN to monitor: BTF (comatose + abnormal CT, or normal CT plus 2 of age > 40 / hypotension / posturing); the more conservative 2013 Milan consensus (only when a sedation-hold neuro check is genuinely unsafe, or post-craniectomy to gauge effect); and the more liberal Seattle SIBICC Delphi position. No consensus — practice varies.",
+        "Blood pressure: SBP ≥ 100 mmHg (age-based) or MAP > 80; SBP ≥ 110 may specifically benefit elderly patients.",
+        "CPP: BTF target 60–70; individualised CPPopt (the CPP at which autoregulation is best preserved, from PRx) is of growing interest but the outcome evidence is still catching up.",
+        "Fluids: isotonic crystalloid is first-line for resuscitation — routine hypertonic saline has not shown an outcome benefit over isotonic fluid (it remains a tool for acute ICP crises); hypo-osmolar fluids worsen oedema and are contraindicated.",
+        "Tranexamic acid: no outcome benefit in ISOLATED TBI despite its reflexive use in trauma (CRASH-3 — the pre-specified benefit was confined to mild–moderate TBI treated within 3 h, and even that is debated). Give it for the coexisting extracranial haemorrhage, not for the head injury itself.",
+        "Brain-tissue oxygen (PbtO2) monitoring: BOOST-II cut the burden of brain hypoxia with a non-significant outcome trend; OXY-TC found no overall functional benefit (a signal reappeared in the raised-ICP subgroup). Two phase-III trials (BONANZA, BOOST-III) are running to settle whether ICP + PbtO2 beats ICP alone — a plausible but unproven upgrade for now. Pupillometry, transcranial Doppler, and optic-nerve-sheath diameter have real bedside utility as non-invasive adjuncts.",
+        "Despite the thin RCT base for the bundle as a whole, protocolised early control of oxygenation, CO2, BP/CPP, temperature, glucose, and sodium is consistently associated with better survival — the aggregate habit outperforms any single proven component."
+      ]
     }
   ],
   "related": [

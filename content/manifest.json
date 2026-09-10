@@ -1760,8 +1760,8 @@
       "next_review_due": "2027-09-03"
     },
     "procedures/airway-management-flow": {
-      "content_version": 2,
-      "hash": "0c57cdd6798fd9a6",
+      "content_version": 3,
+      "hash": "08282eab3be39da2",
       "path": "modules/procedures/airway-management-flow.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -1823,8 +1823,8 @@
       "next_review_due": "2026-12-01"
     },
     "procedures/pocus-guide": {
-      "content_version": 2,
-      "hash": "2e5ac15a8d0bd4a2",
+      "content_version": 3,
+      "hash": "e81d402ca1e02842",
       "path": "modules/procedures/pocus-guide.json",
       "contentType": "reference",
       "section": "Procedures",
@@ -1938,6 +1938,15 @@
       "review_tier": 3,
       "next_review_due": "2027-03-02"
     },
+    "reference-library/alcoholic-ketoacidosis": {
+      "content_version": 1,
+      "hash": "76c896d616f2e8eb",
+      "path": "modules/reference-library/alcoholic-ketoacidosis.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-09-09"
+    },
     "reference-library/altered-mental-status": {
       "content_version": 2,
       "hash": "357ca91e2b6285a0",
@@ -2028,9 +2037,18 @@
       "review_tier": 3,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/bone-cement-implantation-syndrome": {
+      "content_version": 1,
+      "hash": "2d515617a960b08d",
+      "path": "modules/reference-library/bone-cement-implantation-syndrome.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-09"
+    },
     "reference-library/capnography": {
-      "content_version": 2,
-      "hash": "23620f9837bdeff6",
+      "content_version": 3,
+      "hash": "988d2e9e304607f2",
       "path": "modules/reference-library/capnography.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2120,7 +2138,7 @@
     },
     "reference-library/dka-hhs-adult-management": {
       "content_version": 1,
-      "hash": "ec57a214ea1010e8",
+      "hash": "97982fc49d4ef232",
       "path": "modules/reference-library/dka-hhs-adult-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2146,8 +2164,8 @@
       "next_review_due": "2027-03-04"
     },
     "reference-library/ecg-library": {
-      "content_version": 3,
-      "hash": "5e803c58c24d6290",
+      "content_version": 4,
+      "hash": "4903e8210846c96c",
       "path": "modules/reference-library/ecg-library.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2299,13 +2317,13 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/icp-tbi-management": {
-      "content_version": 2,
-      "hash": "e718604a0863d603",
+      "content_version": 3,
+      "hash": "7bbcce35cce26d02",
       "path": "modules/reference-library/icp-tbi-management.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": 1,
-      "next_review_due": "2026-12-02"
+      "next_review_due": "2027-03-09"
     },
     "reference-library/icu-workflow": {
       "content_version": 2,
@@ -2775,9 +2793,18 @@
       "review_tier": 2,
       "next_review_due": "2027-03-07"
     },
+    "reference-library/ventilator-liberation-weaning": {
+      "content_version": 2,
+      "hash": "c92bef174e5ee345",
+      "path": "modules/reference-library/ventilator-liberation-weaning.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-09"
+    },
     "reference-library/ventilator-management": {
-      "content_version": 4,
-      "hash": "ad04ae555e0aca14",
+      "content_version": 5,
+      "hash": "b1847767821ce189",
       "path": "modules/reference-library/ventilator-management.json",
       "contentType": "reference",
       "section": "Reference Library",

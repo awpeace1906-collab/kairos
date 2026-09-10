@@ -53,6 +53,33 @@ Prussian blue + bicarbonate, one module), `high-dose-insulin-euglycemia-dosing`
 calculator, `brue-lower-risk-criteria` peds-tool checklist.
 
 ## Progress log
+- 2026-09-09 — **Guide fold-ins (6, no new modules).** From the deferred list in
+  the CV Guides review: `capnography` v3 (new EtCO2–PaCO2 gradient section);
+  `airway-management-flow` v3 (Plan A → VL > DL / hyperangulated > Macintosh per
+  COVALENT 2026; post-intubation alkalinised-lidocaine-cuff pearl);
+  `pocus-guide` v3 (FIND / DE-SELECT / CONTROL antibiotic framework);
+  `ecg-library` v4 (antidromic Mahaim + Bardy 6-point criteria);
+  `ventilator-liberation-weaning` v2 (avoid 100% FiO2 washout at extubation —
+  Paschold BJA 2026). validate 316/0, test 252/0. Pure-EBM-audit guides skipped
+  (list in SOURCE_MATERIALS.md).
+- 2026-09-09 — **CV Guides refresh reviewed + 3 new modules + 1 update (→ 316).**
+  User supplied an updated `CV Guides.zip`; most new files are EBM-audit /
+  trial-breakdown pieces (no new modules per the 2026-09-02 direction — fold-in
+  list is in `docs/SOURCE_MATERIALS.md`). Built: **`ventilator-liberation-weaning`**
+  (the explicit ask — ICU extubation/weaning: daily readiness screen, SBT
+  technique + pass/fail, SAT+SBT pairing, RSBI, cuff-leak test + prophylactic
+  methylprednisolone, high-risk extubation to HFNC/NIV with the "no rescue NIV"
+  rule, reintubation, failure-to-wean work-up table, tracheostomy timing; 2017
+  ACCP/ATS + Boles 2007 + Subirà 2019 + Thille/Hernández + François 2007 +
+  TracMan). `ventilator-management` → v5 (weaning section points to it).
+  **`bone-cement-implantation-syndrome`** (Peri-op / Anaesthesia — Donaldson
+  grading, mechanism, prevention checklist, grade-by-grade RV-failure
+  management). **`alcoholic-ketoacidosis`** (Critical Care — NADH/NAD⁺ mechanism,
+  the β-OHB-under-reads point, work-up + mimics, dextrose/thiamine/electrolytes,
+  no-insulin/no-bicarb; companion to `dka-hhs-adult-management`). **`icp-tbi-management`
+  → v3** — folded in the 2025 ICM review (Robba et al.): ICP-monitoring camps,
+  PaO2 80–120 + hyperoxaemia caution, no TXA benefit in isolated TBI, CPPopt,
+  elderly SBP ≥ 110, PbtO2 trial status. validate 316/0, test 252/0.
 - 2026-09-08 — **Pin/unpin UI · adult DKA module · deploy wired for real (+1 → 313).**
   *Pins:* `prefs.js` `PINS_KEY` (id array; `null` = use curated) + `pinnedIds` /
   `isPinned` / `togglePin`; `ios/Sources/App/Pins.swift` (`@AppStorage` string,

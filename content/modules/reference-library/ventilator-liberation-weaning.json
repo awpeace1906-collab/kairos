@@ -1,0 +1,247 @@
+{
+  "id": "ventilator-liberation-weaning",
+  "section": "Reference Library",
+  "category": "ICU / Critical Care",
+  "title": "Ventilator Liberation & Extubation",
+  "settingEmphasis": [
+    "icu",
+    "ed"
+  ],
+  "audience": [
+    "adult"
+  ],
+  "aliases": [
+    "weaning from mechanical ventilation",
+    "spontaneous breathing trial",
+    "SBT",
+    "extubation readiness",
+    "cuff leak test",
+    "RSBI",
+    "failure to wean",
+    "post-extubation respiratory failure",
+    "SAT SBT pairing"
+  ],
+  "tags": [
+    "ventilator weaning",
+    "extubation",
+    "SBT",
+    "liberation",
+    "cuff leak",
+    "HFNC",
+    "NIV",
+    "tracheostomy",
+    "ICU",
+    "reintubation"
+  ],
+  "keywords": [
+    "daily readiness screen PaO2 FiO2 150 PEEP 5 to 8 pH 7.25 minimal pressors cough mentation",
+    "spontaneous breathing trial pressure support 5 to 8 or T-piece 30 to 120 minutes pass fail",
+    "rapid shallow breathing index RSBI respiratory rate over tidal volume litres under 105",
+    "paired spontaneous awakening trial and spontaneous breathing trial ABC trial Girard",
+    "cuff leak test under 110 mL or under 10 to 15 percent methylprednisolone 20 mg q4h four doses",
+    "high risk extubation prophylactic HFNC or non-invasive ventilation not rescue NIV",
+    "failure to wean reversible factors weaning induced pulmonary edema ICU acquired weakness phosphate magnesium",
+    "tracheostomy timing day 10 to 14 TracMan no early mortality benefit",
+    "reintubation 10 to 15 percent mortality delayed reintubation worse"
+  ],
+  "contentType": "reference",
+  "content_version": 2,
+  "last_reviewed": "2026-09-09",
+  "next_review_due": "2027-03-09",
+  "review_tier": 2,
+  "sources": [
+    "Ouellette DR, Patel S, Girard TD, et al. Liberation From Mechanical Ventilation in Critically Ill Adults: An Official ACCP/ATS Clinical Practice Guideline. Chest. 2017;151(1):166-180",
+    "Girard TD, Alhazzani W, Kress JP, et al. An Official ATS/CHEST Clinical Practice Guideline: Liberation From Mechanical Ventilation in Critically Ill Adults — rehabilitation protocols, ventilator liberation protocols, and cuff leak tests. Am J Respir Crit Care Med. 2017;195(1):120-133",
+    "Boles JM, Bion J, Connors A, et al. Weaning from mechanical ventilation. Eur Respir J. 2007;29(5):1033-1056 (simple / difficult / prolonged framework)",
+    "Girard TD, Kress JP, Fuchs BD, et al. Efficacy and safety of a paired sedation and ventilator weaning protocol for mechanically ventilated patients in intensive care (Awakening and Breathing Controlled trial). Lancet. 2008;371(9607):126-134",
+    "Yang KL, Tobin MJ. A prospective study of indexes predicting the outcome of trials of weaning from mechanical ventilation. N Engl J Med. 1991;324(21):1445-1450 (RSBI)",
+    "Subirà C, Hernández G, Vázquez A, et al. Effect of Pressure Support vs T-Piece Ventilation Strategies During Spontaneous Breathing Trials on Successful Extubation. JAMA. 2019;321(22):2175-2182",
+    "Thille AW, Muller G, Gacouin A, et al. Effect of Postextubation High-Flow Nasal Oxygen With Noninvasive Ventilation vs High-Flow Nasal Oxygen Alone on Reintubation Among Patients at High Risk of Extubation Failure. JAMA. 2019;322(15):1465-1475",
+    "Hernández G, Vaquero C, Colinas L, et al. Effect of Postextubation High-Flow Nasal Cannula vs Noninvasive Ventilation on Reintubation and Postextubation Respiratory Failure in High-Risk Patients. JAMA. 2016;316(15):1565-1574",
+    "François B, Bellissant E, Gissot V, et al. 12-h pretreatment with methylprednisolone versus placebo for prevention of postextubation laryngeal oedema. Lancet. 2007;369(9567):1083-1089",
+    "Young D, Harrison DA, Cuthbertson BH, Rowan K; TracMan Collaborators. Effect of early vs late tracheostomy placement on survival in patients receiving mechanical ventilation (TracMan). JAMA. 2013;309(20):2121-2129",
+    "Paschold BS, Braeuer BLP, Santer P, et al. High vs low FiO2 for anaesthetic washout and extubation and postoperative atelectasis: a randomised controlled trial. Br J Anaesth. 2026;137(2):591-600"
+  ],
+  "changelog": [
+    {
+      "version": 2,
+      "date": "2026-09-09",
+      "change": "Added an extubation-window FiO2 note — avoid 100% washout (absorption atelectasis); ~70% is the practical target (Paschold, BJA 2026)."
+    },
+    {
+      "version": 1,
+      "date": "2026-09-09",
+      "change": "Initial entry — the daily readiness screen, SBT technique and pass/fail, SAT+SBT pairing, RSBI, cuff-leak test + prophylactic steroids, high-risk extubation to HFNC/NIV, the extubation procedure, post-extubation monitoring and reintubation, failure-to-wean work-up, and tracheostomy timing. Deepens the 'Weaning & extubation' section of ventilator-management."
+    }
+  ],
+  "summary": "Screen every day, trial early, and separate the two questions: can they breathe (the SBT) and can they protect the airway (secretions, cough, cuff leak). Pass a 30-120 min SBT on low pressure support, extubate high-risk patients straight onto HFNC or NIV (never rescue NIV once failure is established), and watch the first 48-72 h. If a third SBT fails, stop guessing and hunt the reversible cause — cardiac, volume, neuromuscular, electrolyte, sedation, delirium.",
+  "whyThisMatters": "Each extra ventilator day adds VAP, delirium, and ICU-acquired weakness risk, so an unweaned patient who could be liberated is being harmed by the delay — but a premature extubation that fails carries an independent mortality signal, and a *delayed* reintubation is worse still. The job is to extubate at the earliest moment the odds favour it, with the post-extubation support that matches the patient's risk already running, not to wait for certainty.",
+  "clinicalTakeaway": "Run a daily readiness screen; when it passes, do a 30-120 minute SBT on pressure support 5-8 / PEEP 5 (or T-piece) paired with a sedation-interruption trial. Extubate if the SBT passes AND the patient follows commands, has a strong cough, and manageable secretions. For a high-risk patient (age > 65, COPD/CHF, > 7 days ventilated, prior failed SBT, weak cough) extubate directly onto HFNC — add NIV for hypercapnic COPD or cardiogenic pulmonary oedema. Do a cuff-leak test only in high-risk airways; a failed test means pretreat with methylprednisolone 20 mg IV q4h x 4 starting = 4 h before, not cancel. If NIV is needed for *established* post-extubation failure, reintubate instead. Three failed SBTs = look for weaning-induced pulmonary oedema, fluid overload, weakness, low phosphate/magnesium, oversedation, and delirium.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "1 — Daily readiness screen"
+    },
+    {
+      "type": "text",
+      "text": "Assess every intubated patient at least once a day. All of the following should be true before an SBT:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The reason for intubation is resolving or resolved.",
+        "Oxygenation adequate: PaO2/FiO2 > 150-200, FiO2 = 0.4-0.5, PEEP = 5-8 cm H2O.",
+        "pH = 7.25 (compensated respiratory acidosis in a chronic CO2-retainer is acceptable at their baseline).",
+        "Haemodynamically stable: no or low-dose single vasopressor, no active myocardial ischaemia.",
+        "Able to initiate a spontaneous breath.",
+        "Mentation adequate for airway protection — follows simple commands, or a stable baseline deficit with a good cough and secretions that suction < every 1-2 h.",
+        "No planned return to theatre or procedure requiring deep sedation in the next 24 h."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "Pair the screen with a Spontaneous Awakening Trial (sedation interruption) — coordinated SAT + SBT (ABC trial) shortens ventilation and ICU stay and lowers 1-year mortality versus usual sedation + SBT. Hold the SAT for active seizures, alcohol withdrawal, escalating pressors, active ischaemia, or paralysis."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2 — The spontaneous breathing trial"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Technique: pressure support 5-8 cm H2O with PEEP 5 (or CPAP 5, or a T-piece). The 2017 guideline suggests the *first* SBT be done with low pressure support rather than a T-piece, and last 30-120 minutes.",
+        "Duration: 30 minutes is enough for most; extend toward 120 minutes for high-risk or repeatedly failing patients (a 30-min PS trial and a 2-h T-piece trial give similar extubation success — JAMA 2019).",
+        "PASS if, for the whole trial: RR < 35 (ideally < 30), SpO2 = 90% (or PaO2 = 60 on FiO2 = 0.5), HR < 140 and no sustained change > 20%, SBP 90-180 with no new vasopressor need, and no distress — accessory muscle use, paradoxical abdominal motion, diaphoresis, agitation.",
+        "FAIL for any of the above, or an RSBI that climbs through the trial. A failed SBT → return to a comfortable rest mode (do NOT keep them working), find why (below), and re-screen in 24 h."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "RSBI (rapid shallow breathing index)"
+    },
+    {
+      "type": "text",
+      "text": "RSBI = respiratory rate / tidal volume in litres, measured on minimal/zero support after ~1 minute of spontaneous breathing. < 105 breaths/min/L predicts SBT success; = 105 predicts failure. Use it as an adjunct and a trend, not a gate — a borderline RSBI in an otherwise-ready patient should not stop an SBT, and a low RSBI does not override a clearly failing trial."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3 — Airway assessment (separate from the SBT)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Cough strength: a weak cough (cannot clear secretions to the ETT, low peak cough flow) roughly triples extubation-failure risk independent of the SBT.",
+        "Secretion burden: frequent suctioning (< every 2 h) predicts failure.",
+        "Mental status: unable to follow commands adds risk but is not an absolute contraindication — in selected neuro patients with a good cough and airway reflexes, extubation still succeeds.",
+        "Cuff-leak test — only in patients at risk of post-extubation laryngeal oedema: traumatic or repeated intubation, intubation > 6 days, large ETT relative to airway, prior self-extubation with reintubation, airway burns/infection, or a previously failed cuff leak. Method: with the cuff deflated on volume-control, the expired tidal volume falls by < 110 mL (or < 10-15% of the delivered volume) = positive (concerning)."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "A positive cuff-leak test in a patient who is otherwise ready is a reason to PRETREAT, not to cancel. Give methylprednisolone 20 mg IV every 4 h for 4 doses (or 40 mg q4h), starting at least 4 h — ideally 12 h — before extubation, then re-check the leak. Have racemic epinephrine, steroids, heliox, and a reintubation/airway-exchange plan ready at the bedside for extubation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4 — Extubation and immediate post-extubation support"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Position sitting up (reverse Trendelenburg / 45° in obesity), suction the airway and mouth, pre-oxygenate, deflate the cuff and remove at end of a positive-pressure breath or during a cough.",
+        "Default post-extubation oxygen: conventional O2 for low-risk; step up as below for high-risk.",
+        "HIGH-RISK (extubate straight onto support): age > 65, chronic cardiac or respiratory disease, APACHE II > 12 on the extubation day, BMI > 30, = 1 failed SBT, mechanically ventilated > 7 days, = 2 comorbidities, weak cough or copious secretions.",
+        "High-risk without hypercapnia → high-flow nasal cannula (HFNC) is at least as good as NIV for preventing reintubation and better tolerated.",
+        "High-risk WITH hypercapnic COPD, or cardiogenic pulmonary oedema → prophylactic NIV (alternating with HFNC in the first 48 h in the highest-risk group lowers reintubation further).",
+        "Very high-risk / borderline airway → extubate over an airway-exchange catheter and keep it in situ during the observation window.",
+        "Do not wash out / extubate on 100% O2 by reflex — pure oxygen in poorly-ventilated alveoli causes absorption atelectasis (Paschold, BJA 2026: ~1067 mL end-expiratory lung-volume loss vs ~423 mL at lower FiO2). ~70% is the sweet spot: it matches 40% for atelectasis but gives the best post-extubation SpO2 stability. Keep 100% only if desaturation margin is genuinely the limiting concern."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "Do NOT use NIV as rescue for ESTABLISHED post-extubation respiratory failure (rising work of breathing, hypercapnia, hypoxaemia already present) — it delays a needed reintubation and increases mortality. Prophylactic NIV started immediately at extubation in a high-risk patient is a different intervention with a different evidence base. Once failure is declared, reintubate."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "5 — Post-extubation monitoring & reintubation"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Highest risk is the first 48-72 h. Watch: rising RR and work of breathing, stridor, agitation or somnolence, worsening gas exchange, and an escalating secretion/suction need.",
+        "Post-extubation stridor from laryngeal oedema → sit up, nebulised racemic epinephrine, IV dexamethasone or methylprednisolone, consider heliox as a bridge; low threshold to reintubate before it becomes a can't-ventilate airway.",
+        "Reintubation rate is ~10-15% and is independently associated with higher mortality — but the harm is worse when reintubation is DELAYED. If failure is established, reintubate promptly rather than escalating NIV/HFNC.",
+        "Reintubation is not the same as SBT failure: an SBT that fails means keep weaning; an extubation that fails means the airway or the pump could not sustain unassisted breathing outside the tube."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6 — Difficult / prolonged weaning"
+    },
+    {
+      "type": "text",
+      "text": "Simple weaning = extubated after the first SBT. Difficult = up to 3 SBTs or up to 7 days from the first SBT. Prolonged = > 3 SBTs or > 7 days. Once weaning is difficult, stop repeating identical trials and systematically look for reversible load/capacity mismatch:"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Domain",
+        "What to look for / do"
+      ],
+      "rows": [
+        [
+          "Cardiac",
+          "Weaning-induced pulmonary oedema — the switch to negative-pressure breathing raises LV preload and afterload. Suggested by a rising B-lines / E/e' / NT-proBNP or a haemoconcentration during the SBT. Diurese, optimise afterload/rate control, treat ischaemia; re-trial."
+        ],
+        [
+          "Volume",
+          "Cumulative positive fluid balance predicts weaning failure — target a neutral-to-negative balance once resuscitated."
+        ],
+        [
+          "Respiratory load",
+          "Bronchospasm, secretions, auto-PEEP, pleural effusion (drain a large one), abdominal distension, chest-wall oedema."
+        ],
+        [
+          "Neuromuscular",
+          "ICU-acquired weakness, critical-illness polyneuropathy/myopathy, phrenic nerve injury (post-cardiac-surgery, central-line), residual neuromuscular blockade, Guillain-Barré / myasthenia. Early mobilisation and PT; minimise steroids + paralytics together."
+        ],
+        [
+          "Metabolic",
+          "Replace phosphate, magnesium, potassium, calcium; avoid overfeeding (high CO2 load) and metabolic alkalosis (blunts respiratory drive)."
+        ],
+        [
+          "Sedation / neuro",
+          "Accumulated sedatives (especially benzodiazepines), opioid load, delirium, and untreated pain or anxiety. Switch to light/analgesia-first sedation, treat delirium, mobilise."
+        ],
+        [
+          "Endocrine / other",
+          "Hypothyroidism, adrenal insufficiency, anaemia limiting O2 delivery, malnutrition."
+        ]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "For prolonged weaning, use a protocolised gradual reduction of pressure support (or progressively longer T-piece periods) with full rest overnight, plus daily SBT screening.",
+        "Tracheostomy: TracMan showed no survival benefit to early (< 10 days) versus late placement — decide by day 7-10 on the trajectory (airway protection needs, expected further weeks of support, secretion clearance, patient comfort and communication), not a fixed day."
+      ]
+    }
+  ],
+  "related": [
+    "ventilator-management",
+    "ventilator-modes",
+    "advanced-ards-ventilation",
+    "copd-invasive-ventilation",
+    "physiologically-difficult-airway"
+  ],
+  "buildNote": "Tier 2 — the 2017 ACCP/ATS liberation guideline is the backbone; the HFNC-vs-NIV positioning (Hernández 2016, Thille 2019) and the PS-vs-T-piece SBT question (Subirà 2019) are the parts to re-check. Deliberately deeper than the 'Weaning & extubation' heading in `ventilator-management`, which is cross-linked and gets a pointer to this. Numeric thresholds are guideline starting points, not a local protocol."
+}

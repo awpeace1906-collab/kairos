@@ -292,3 +292,48 @@ interactive New Orleans Criteria. The Done nomogram is deliberately not built �
 5. **Peds drug cross-check** — reconcile the peds cards against
    `peds_drug_database_v4_us_complete.html`; log discrepancies in
    `docs/TIER1_VERIFICATION.md`.
+
+---
+
+## 2026-09-09 — "CV Guides" refresh batch reviewed
+
+The user supplied an updated `CV Guides.zip` (~62 HTML + the ballistics PDF). Most
+of the *new* files (2026-09-07/08) are **EBM commentary / "content audit" / trial
+breakdowns**, which per the 2026-09-02 DIRECTION do NOT get their own modules —
+actionable residue folds into existing modules instead.
+
+**Acted on this session:**
+- 🟢 NEW `ventilator-liberation-weaning` — the explicit ask (ICU extubation /
+  weaning). Built from the 2017 ACCP/ATS liberation guideline + Boles 2007 +
+  Subirà 2019 + Thille/Hernández (HFNC vs NIV) + François 2007 (cuff-leak
+  steroids) + TracMan. `ventilator-management` weaning section now points to it
+  (→ v5).
+- 🟢 NEW `bone-cement-implantation-syndrome` — real peri-op emergency, no prior
+  module. From `bone-cement-implantation-syndrome.html` (audit) + primary
+  Donaldson 2009 + AAGBI 2015 hemiarthroplasty guideline.
+- 🟢 NEW `alcoholic-ketoacidosis` — from `alcoholic-ketoacidosis-mechanism.html`
+  (audit) + Wrenn 1991 / McGuire 2006 / Long 2021. Companion to
+  `dka-hhs-adult-management`.
+- 🟢 UPDATE `icp-tbi-management` → v3 — folded in the 2025 ICM review
+  (`cv-post-tbi-icu-2025.html`, Robba et al.): ICP-monitoring camps, PaO2
+  80–120 + hyperoxaemia caution, no TXA benefit in isolated TBI, CPPopt, elderly
+  SBP ≥ 110, PbtO2 trial status (BOOST-II / OXY-TC / BONANZA-BOOST-III).
+
+**Folded in 2026-09-09 (no new modules):**
+- 🟢 `etco2-vs-paco2-gradient` → new "EtCO2–PaCO2 gradient" section in `capnography` (v3).
+- 🟢 `fio2-washout-atelectasis` → extubation-window FiO2 note in
+  `ventilator-liberation-weaning` (v2) — avoid 100% washout, ~70% is the target (Paschold BJA 2026).
+- 🟢 `alkalinized-lidocaine-ett-cuff` → post-intubation pearl in
+  `airway-management-flow` node s7 (v3).
+- 🟢 `covalent-dl-vs-vl-trial` → Plan A device line in `airway-management-flow` node s3 (v3):
+  VL > DL, hyperangulated > Macintosh.
+- 🟢 `pocus-antibiotic-decision-framework` → "FIND / DE-SELECT / CONTROL" section in `pocus-guide` (v3).
+- 🟢 `antidromic-mahaim-tachycardia` → antidromic Mahaim + Bardy 6-point criteria added to
+  `ecg-library` "Other high-yield patterns" (v4).
+
+**Skip (pure EBM audit, no management delta):** `ha-study-haloperidol-headache`,
+`txa-angioedema-audit`, `beta-blocker-cheat-sheet-audit`,
+`blood-gas-analysis-chart-audit`, `prehospital-bolus-vs-infusion`,
+`biostatistics-for-clinicians`, `covalent-dl-vs-vl-trial` (as a standalone),
+`25-years-septic-shock-resuscitation-trials` (already reflected in
+`septic-shock-resuscitation`).

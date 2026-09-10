@@ -1,0 +1,95 @@
+{
+  "id": "bone-cement-implantation-syndrome",
+  "section": "Reference Library",
+  "category": "Perioperative & Anesthesia",
+  "title": "Bone Cement Implantation Syndrome (BCIS)",
+  "settingEmphasis": ["or", "icu"],
+  "audience": ["adult"],
+  "aliases": [
+    "BCIS",
+    "cement reaction",
+    "PMMA reaction",
+    "cemented hemiarthroplasty collapse",
+    "Donaldson classification",
+    "fat embolism arthroplasty"
+  ],
+  "tags": ["BCIS", "bone cement", "PMMA", "hemiarthroplasty", "arthroplasty", "hip fracture", "fat embolism", "RV failure", "OR emergency", "anesthesia"],
+  "keywords": [
+    "hypoxia hypotension arrhythmia cardiac arrest around cementation prosthesis insertion",
+    "Donaldson grade 1 SpO2 under 94 or SBP fall over 20 percent grade 2 SpO2 under 88 or SBP fall over 40 or LOC grade 3 collapse CPR",
+    "embolic shower fat marrow cement air bone debris pulmonary vascular obstruction right heart strain",
+    "cemented femoral stem hip fracture hemiarthroplasty elderly pulmonary hypertension highest risk",
+    "prevention canal lavage retrograde cement gun distal vent minimise pressurisation FiO2 100 euvolaemia vasopressor ready"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-09",
+  "next_review_due": "2027-03-09",
+  "review_tier": 2,
+  "sources": [
+    "Donaldson AJ, Thomson HE, Harper NJ, Kenny NW. Bone cement implantation syndrome. Br J Anaesth. 2009;102(1):12-22",
+    "Griffiths R, White SM, Moppett IK, et al. Safety guideline: reducing the risk from cemented hemiarthroplasty for hip fracture (Association of Anaesthetists of GB & Ireland / British Orthopaedic Association / British Geriatrics Society). Anaesthesia. 2015;70(5):623-626",
+    "Olsen F, Kotyra M, Houltz E, Ricksten SE. Bone cement implantation syndrome in cemented hemiarthroplasty for femoral neck fracture: incidence, risk factors, and effect on outcome. Br J Anaesth. 2014;113(5):800-806"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-09", "change": "Initial entry — Donaldson grading, mechanism, risk factors, the shared surgical/anaesthetic prevention checklist, and grade-by-grade management (RV-failure framing). From the CV BCIS audit + the primary Donaldson 2009 review and the 2015 AAGBI hemiarthroplasty safety guideline." }
+  ],
+  "summary": "Hypoxia, hypotension, arrhythmia, or arrest occurring around femoral canal pressurisation, prosthesis insertion, or joint reduction during a cemented arthroplasty — an embolic shower (fat, marrow, cement, air, debris) causing pulmonary vascular obstruction and acute right-heart strain, with a monomer-mediated vasodilatory component. Grade by the Donaldson scale, treat it as right ventricular failure, and stop cementing.",
+  "whyThisMatters": "The highest-incidence setting is a cemented hemiarthroplasty for a hip fracture in an elderly patient with limited cardiopulmonary reserve — exactly the population least able to tolerate an acute rise in pulmonary vascular resistance — and the deterioration lands in a predictable 30-60 second window that the anaesthetist can be ready for. Severe BCIS (grade 2-3) carries real perioperative mortality, and a hypovolaemic patient at the moment of cementation is the setup that turns a transient dip into an arrest.",
+  "clinicalTakeaway": "Anticipate it: before cementation, raise FiO2 toward 1.0, confirm euvolaemia, have a vasopressor drawn up and running low-dose if needed, and make sure the surgeon announces cementation. If BCIS occurs — 100% oxygen, IV fluids, an alpha-agonist (phenylephrine) first, escalate to noradrenaline then adrenaline for RV failure or refractory hypotension, hold further cementation, and run ACLS for grade 3. Treat it as acute RV failure: support coronary perfusion pressure, avoid fluid overload and further increases in PVR (hypoxia, hypercarbia, acidosis), and consider an inhaled pulmonary vasodilator (epoprostenol / nitric oxide) if there is a pulmonary-hypertensive crisis. Most survivors are transient — but monitor for delayed hypoxia and embolic complications.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Grading (Donaldson 2009)" },
+    {
+      "type": "table",
+      "columns": ["Grade", "Definition"],
+      "rows": [
+        ["1", "Moderate hypoxia (SpO2 < 94%) OR hypotension (fall in systolic BP > 20%)"],
+        ["2", "Severe hypoxia (SpO2 < 88%) OR hypotension (fall in systolic BP > 40%) OR unexpected loss of consciousness"],
+        ["3", "Cardiovascular collapse requiring CPR"]
+      ]
+    },
+    { "type": "text", "text": "Grade 1 is common and usually self-limiting; grades 2-3 are the ones with a mortality signal. The event typically begins within 30-60 seconds of cement or prosthesis insertion (or of reduction / tourniquet release in a cemented knee) and evolves over a few minutes." },
+    { "type": "heading", "level": 2, "text": "Mechanism" },
+    {
+      "type": "list",
+      "items": [
+        "Canal pressurisation drives an embolic shower — fat, marrow, cement particles, air, and bone debris — into the pulmonary circulation, causing mechanical obstruction, an increase in pulmonary vascular resistance, and acute right ventricular strain / failure.",
+        "Mediator release (thromboxane, complement, tissue factor) amplifies pulmonary vasoconstriction and can trigger arrhythmia.",
+        "Methylmethacrylate monomer absorption contributes a direct systemic vasodilatory / negative-inotropic effect, worse in a hypovolaemic patient.",
+        "Net picture: acute cor pulmonale — low cardiac output from a pressure-overloaded RV, systemic hypotension, hypoxia from V/Q mismatch and a low mixed-venous saturation."
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Risk factors" },
+    {
+      "type": "list",
+      "items": [
+        "Patient: age > 75-80, ASA 3-4, pre-existing pulmonary hypertension or significant cardiopulmonary disease, osteoporosis, bony metastases / pathological fracture, and a hip FRACTURE (vs an elective arthroplasty).",
+        "Surgical: a cemented (vs uncemented) femoral component, a long-stem femoral prosthesis, a first-time procedure (vs revision), and aggressive canal pressurisation.",
+        "Setting: cemented hemiarthroplasty for femoral neck fracture has the highest reported incidence; also cemented TKA (at tourniquet release), vertebroplasty / kyphoplasty."
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Prevention (shared surgical + anaesthetic checklist)" },
+    {
+      "type": "list",
+      "items": [
+        "Surgeon: thorough canal lavage, brushing and drying; retrograde cement application with a cement gun and a suction/vent catheter; minimise the pressure and duration of pressurisation; be cautious with long stems and pathological bone; consider an uncemented or modern-cementing technique in the highest-risk patient.",
+        "Anaesthetist: correct hypovolaemia BEFORE cementation; increase FiO2 toward 1.0 just before cement; have phenylephrine / ephedrine drawn up and noradrenaline available, and start a low-dose infusion pre-emptively in a marginal patient; maintain normocarbia, normothermia, and normal pH (all raise PVR when deranged).",
+        "Team: an explicit verbal 'cementing now' call so monitoring attention and vasopressor readiness are synchronised to the event.",
+        "Corticosteroid pre-treatment (e.g. methylprednisolone) has one small positive trial and is reasonable in a very high-risk case, but is not established practice; dexamethasone alone is untested."
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Management" },
+    {
+      "type": "list",
+      "items": [
+        "Grade 1: FiO2 1.0, a fluid bolus, and a bolus alpha-agonist (phenylephrine 50-100 mcg) — usually enough. Inform the surgeon; reassess before any further cement.",
+        "Grade 2: as above plus a vasopressor infusion (noradrenaline), consider adrenaline for RV support / low output, invasive arterial monitoring, and hold further cementation. Get a blood gas; treat hypoxia, hypercarbia, and acidosis aggressively because each raises PVR further.",
+        "Grade 3: ACLS. Adrenaline, chest compressions, secure the airway, and treat the reversible cause — this is obstructive shock from acute cor pulmonale. Abort further cementation.",
+        "RV-failure principles throughout: maintain systemic (coronary) perfusion pressure with a vasopressor, avoid volume overload of the failing RV, minimise anything that raises PVR, and consider an inhaled pulmonary vasodilator (epoprostenol or nitric oxide) and TOE if a pulmonary-hypertensive crisis is suspected. VA-ECMO is a salvage option in a refractory grade-3 event in a candidate.",
+        "After stabilisation: most events are transient. Continue high FiO2, monitor for delayed hypoxaemia and further embolic phenomena (fat embolism syndrome, PE), and consider ICU admission for grade 2-3."
+      ]
+    }
+  ],
+  "related": ["physiologically-difficult-airway", "pressor-inotrope-reference"],
+  "buildNote": "Tier 2 — the Donaldson grading and the 2015 AAGBI hemiarthroplasty guidance are stable; incidence/mortality figures and the role of modern cementing technique are the parts to re-check. Deliberately an OR/peri-op emergency reference; RV-failure management overlaps `pressor-inotrope-reference` at the pointer level only."
+}

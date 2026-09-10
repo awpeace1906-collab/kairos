@@ -33,7 +33,7 @@
     "ICU"
   ],
   "contentType": "reference",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-01",
   "next_review_due": "2027-03-01",
   "review_tier": 2,
@@ -42,10 +42,16 @@
     "Meyers HP et al. J Emerg Med 2021 (OMI vs NOMI)",
     "de Winter RJ et al. NEJM 2008; de Zwaan C et al. Am Heart J 1982 (Wellens)",
     "Smith SW et al. Ann Emerg Med 2012; Meyers HP et al. Am Heart J 2015 (Modified Sgarbossa)",
-    "ACC Expert Consensus on ECG Diagnosis of Acute Coronary Occlusion MI. JACC 2022"
+    "ACC Expert Consensus on ECG Diagnosis of Acute Coronary Occlusion MI. JACC 2022",
+    "Bardy GH, et al. Surface ECG clues suggesting a nodofascicular Mahaim fiber. J Am Coll Cardiol (6-point antidromic Mahaim criteria); reviewed in The Critical Vector"
   ],
   "flags": [],
   "changelog": [
+    {
+      "version": 4,
+      "date": "2026-09-09",
+      "change": "Added antidromic Mahaim (atriofascicular) tachycardia + the Bardy 6-point criteria to 'Other high-yield patterns'."
+    },
     {
       "version": 3,
       "date": "2026-09-07",
@@ -182,7 +188,8 @@
         "Hyperkalemia progression: peaked T waves → PR prolongation / P-wave flattening → QRS widening → sine wave → asystole/VF.",
         "WPW: delta wave + short PR (+ wide QRS). Avoid AV-nodal blockers in pre-excited AF.",
         "Torsades de pointes: polymorphic VT on a prolonged QT — treat with IV magnesium, correct K⁺/Mg²⁺, overdrive pacing / isoproterenol for the bradycardia-dependent form.",
-        "Digoxin effect (down-sloping 'scooped' ST, the 'Salvador Dalí moustache') vs. digoxin toxicity (almost any arrhythmia — classically bidirectional VT, PAT with block; worse with hypokalemia/hypomagnesemia)."
+        "Digoxin effect (down-sloping 'scooped' ST, the 'Salvador Dalí moustache') vs. digoxin toxicity (almost any arrhythmia — classically bidirectional VT, PAT with block; worse with hypokalemia/hypomagnesemia).",
+        "Antidromic Mahaim (atriofascicular) tachycardia: a regular wide-complex tachycardia with an LBBB pattern — rS / negative-dominant V1–V4 and a LATE precordial transition (after V4). The Mahaim fibre (right atrium → distal RB/RV, decremental, antegrade-only) is the antegrade limb, the AV node the retrograde limb. Bardy 6-point criteria (~87% sens): left axis 0° to −75°, QRS ≤ 0.15 s, R wave in lead I, rS in V1, precordial transition after V4, cycle length 220–450 ms. VT stays on the differential — the pattern suggests, it does not prove."
       ]
     }
   ],

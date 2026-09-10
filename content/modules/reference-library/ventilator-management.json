@@ -29,7 +29,7 @@
     "ICU"
   ],
   "contentType": "reference",
-  "content_version": 4,
+  "content_version": 5,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -42,6 +42,11 @@
     "Critical Vector — Mechanical Ventilation (full guide, original content)"
   ],
   "changelog": [
+    {
+      "version": 5,
+      "date": "2026-09-09",
+      "change": "Weaning & extubation section now points to the dedicated ventilator-liberation-weaning reference for the full pathway."
+    },
     {
       "version": 4,
       "date": "2026-09-07",
@@ -219,7 +224,8 @@
         "Standardised, RT-/RN-driven protocols shorten ventilator duration vs. ad hoc physician judgement.",
         "Reintubation is independently associated with worse outcomes — a failed extubation is not a neutral 'try again'.",
         "Cuff-leak test before extubating a patient at risk of laryngeal oedema (traumatic / prolonged intubation, large tube, prone). A reduced / absent leak flags post-extubation stridor and reintubation risk → IV corticosteroids ≥ 4 h before a re-attempt (benefit confined to the failed-leak subgroup).",
-        "Post-extubation support (Hernandez 2016): extubate HIGH-RISK patients directly onto prophylactic HFNC as the default (non-inferior to NIV, better tolerated); in low-risk patients HFNC beat conventional O2. Reserve NIV for hypercapnic / COPD / heart-failure phenotypes, or the highest risk-factor burden (post hoc: NIV beat HFNC at ≥ 4 risk factors, 23.9% vs 45.7% reintubation). High-risk = any of: age > 65 · HF as the vent indication · moderate–severe COPD · APACHE II > 12 · BMI > 30 · difficult / prolonged weaning · ≥ 2 comorbidities · MV > 7 days."
+        "Post-extubation support (Hernandez 2016): extubate HIGH-RISK patients directly onto prophylactic HFNC as the default (non-inferior to NIV, better tolerated); in low-risk patients HFNC beat conventional O2. Reserve NIV for hypercapnic / COPD / heart-failure phenotypes, or the highest risk-factor burden (post hoc: NIV beat HFNC at ≥ 4 risk factors, 23.9% vs 45.7% reintubation). High-risk = any of: age > 65 · HF as the vent indication · moderate–severe COPD · APACHE II > 12 · BMI > 30 · difficult / prolonged weaning · ≥ 2 comorbidities · MV > 7 days.",
+        "Full liberation pathway — the readiness screen detail, SBT technique, cuff-leak test + prophylactic steroids, high-risk extubation to HFNC/NIV, and the failure-to-wean work-up — is in `ventilator-liberation-weaning`."
       ]
     },
     {

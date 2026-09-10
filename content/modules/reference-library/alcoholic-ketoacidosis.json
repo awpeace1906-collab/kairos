@@ -1,0 +1,80 @@
+{
+  "id": "alcoholic-ketoacidosis",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Alcoholic Ketoacidosis (AKA)",
+  "settingEmphasis": ["ed", "icu"],
+  "audience": ["adult"],
+  "aliases": [
+    "AKA",
+    "alcoholic ketoacidosis",
+    "starvation ketoacidosis alcohol",
+    "beta-hydroxybutyrate alcohol",
+    "high anion gap alcohol vomiting"
+  ],
+  "tags": ["alcoholic ketoacidosis", "AKA", "anion gap acidosis", "beta-hydroxybutyrate", "thiamine", "dextrose", "electrolytes", "ED", "toxicology"],
+  "keywords": [
+    "chronic alcohol starvation vomiting volume depletion high NADH NAD ratio",
+    "glucose normal or low high anion gap metabolic acidosis mixed disturbance vomiting alkalosis",
+    "beta-hydroxybutyrate predominates urine nitroprusside dipstick under-reads",
+    "dextrose 5 in saline stops ketogenesis thiamine before glucose replace potassium magnesium phosphate",
+    "no routine insulin no routine bicarbonate rule out DKA toxic alcohols salicylate sepsis"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-09",
+  "next_review_due": "2027-09-09",
+  "review_tier": 2,
+  "sources": [
+    "Wrenn KD, Slovis CM, Minion GE, Rutkowski R. The syndrome of alcoholic ketoacidosis. Am J Med. 1991;91(2):119-128",
+    "McGuire LC, Cruickshank AM, Munro PT. Alcoholic ketoacidosis. Emerg Med J. 2006;23(6):417-420",
+    "Long B, Lentz S, Gottlieb M. Alcoholic Ketoacidosis: Etiologies, Evaluation, and Management. J Emerg Med. 2021;61(6):658-665"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-09", "change": "Initial entry — the NADH/NAD+ mechanism, the mixed acid-base picture and why the urine ketone dipstick under-reads, the work-up (and the mimics to exclude), and dextrose + thiamine + electrolytes management with the no-insulin / no-bicarbonate caveat. Companion to dka-hhs-adult-management." }
+  ],
+  "summary": "A chronic drinker who binges then stops eating (usually because of vomiting or abdominal pain) presents 1-3 days later with a high anion-gap ketoacidosis and a glucose that is normal or LOW. Ethanol metabolism drives the hepatic NADH/NAD+ ratio up, which shuts down gluconeogenesis and the Krebs cycle and pushes ketogenesis toward β-hydroxybutyrate. Treatment is dextrose-containing saline, thiamine before glucose, and aggressive K/Mg/PO4 repletion — not insulin, not bicarbonate.",
+  "whyThisMatters": "AKA is easy to under-call because the glucose is not high and the urine ketone dipstick reads weak — it measures acetoacetate, and the high NADH/NAD+ ratio makes the ketone body here overwhelmingly β-hydroxybutyrate. Meanwhile the differential for a high-gap acidosis in this exact patient — DKA, methanol/ethylene glycol, salicylate, sepsis, a GI bleed, pancreatitis — contains several things that kill quickly and are treated very differently. Naming AKA is as much about excluding those as about the sugar water.",
+  "clinicalTakeaway": "Give D5 in 0.9% saline (or lactated Ringer's) — dextrose triggers endogenous insulin and halts ketogenesis, saline corrects the volume deficit; the ketoacidosis usually clears in 12-24 h. Give thiamine 100 mg IV before or with the glucose. Replace potassium, magnesium, and phosphate early and repeatedly — all fall further with dextrose and refeeding. Do NOT routinely give insulin (glucose is not high — hypoglycaemia risk) or bicarbonate (reserve for pH < 7.0). Send a β-hydroxybutyrate, anion gap, lactate, glucose, lipase, and an osmolar gap; exclude DKA, toxic alcohols, and salicylate before settling on AKA. Manage co-existing alcohol withdrawal with benzodiazepines.",
+  "body": [
+    { "type": "heading", "level": 2, "text": "Mechanism" },
+    {
+      "type": "list",
+      "items": [
+        "Alcohol dehydrogenase (ethanol → acetaldehyde) and aldehyde dehydrogenase (acetaldehyde → acetate) each reduce NAD+ to NADH — two sequential NAD+-consuming steps that sharply raise the hepatic NADH/NAD+ ratio.",
+        "High NADH/NAD+ drives the lactate/pyruvate and malate/oxaloacetate equilibria toward the reduced partner, depleting the oxaloacetate needed for gluconeogenesis and the Krebs cycle — so glucose output falls and acetyl-CoA is diverted to ketones.",
+        "Add starvation (glycogen depleted, insulin low, glucagon/cortisol/GH/catecholamines up) and the liver runs full-tilt ketogenesis: free fatty acids → acetyl-CoA → acetoacetate, then the high NADH/NAD+ ratio converts most of it to β-hydroxybutyrate.",
+        "Volume depletion (poor intake, vomiting, alcohol diuresis) and a raised counter-regulatory drive complete the picture."
+      ]
+    },
+    { "type": "callout", "tone": "info", "text": "The nitroprusside reaction (urine and most bedside ketone strips) detects acetoacetate and acetone, NOT β-hydroxybutyrate — so it under-reads AKA at presentation and can paradoxically turn MORE positive as the patient improves and β-hydroxybutyrate is reconverted to acetoacetate. Track the anion gap and a quantitative β-hydroxybutyrate, not the dipstick." },
+    { "type": "heading", "level": 2, "text": "Presentation & labs" },
+    {
+      "type": "list",
+      "items": [
+        "History: chronic heavy use, a recent binge, then an abrupt stop 1-3 days ago — typically because nausea, vomiting, or abdominal pain stopped oral intake.",
+        "Exam: volume depletion, tachycardia, tachypnoea (Kussmaul), diffuse abdominal tenderness, tremor / signs of withdrawal; usually alert (marked confusion → look for another cause).",
+        "Acid-base: high anion-gap metabolic acidosis, frequently MIXED — AGMA + a metabolic alkalosis from vomiting + a respiratory alkalosis from pain / withdrawal / liver disease / sepsis. The measured bicarbonate and pH can be near-normal despite a large gap.",
+        "Glucose: normal or low; occasionally mildly elevated (if clearly > 250 mg/dL with ketoacidosis, treat as DKA).",
+        "Send: BMP (gap, low K/Mg/PO4/Cl common), β-hydroxybutyrate, VBG, lactate (mild rise is typical; a large rise → hunt another cause), glucose, lipase, LFTs, ethanol level, osmolality + calculated osmolar gap, salicylate level, and a pregnancy test. Get lipase / imaging if pancreatitis is plausible."
+      ]
+    },
+    { "type": "heading", "level": 2, "text": "Exclude the mimics" },
+    { "type": "text", "text": "Before committing to AKA, rule out: diabetic ketoacidosis (glucose), methanol and ethylene glycol (unexplained osmolar gap, visual symptoms, oxalate crystals / renal failure — do not wait for levels if suspected), salicylate toxicity (tinnitus, mixed respiratory alkalosis + AGMA, level), sepsis / occult infection, an acute GI bleed, pancreatitis, and isopropyl alcohol (ketosis WITHOUT acidosis). Starvation ketoacidosis alone rarely drops the bicarbonate below ~18." },
+    { "type": "heading", "level": 2, "text": "Management" },
+    {
+      "type": "list",
+      "items": [
+        "Fluids: dextrose-containing isotonic crystalloid — 5% dextrose in 0.9% sodium chloride, or in lactated Ringer's. The dextrose stimulates insulin release and suppresses glucagon, which shuts off ketogenesis; the crystalloid restores volume. Ketoacidosis typically resolves within 12-24 h.",
+        "Thiamine 100 mg IV, given BEFORE or with the first glucose, to prevent precipitating Wernicke encephalopathy. Continue daily.",
+        "Electrolytes: check and replace potassium, magnesium, and phosphate at the outset and repeatedly — all fall further as dextrose/insulin and refeeding shift them intracellularly. Magnesium is also a cofactor for thiamine-dependent enzymes.",
+        "Do NOT give insulin routinely — the glucose is not high and hypoglycaemia is the risk. Do NOT give bicarbonate unless the acidaemia is life-threatening (pH < 7.0), which is uncommon in isolated AKA.",
+        "Antiemetic for the vomiting; treat pain. Assess for and manage alcohol withdrawal (symptom-triggered benzodiazepines) — it frequently co-exists.",
+        "Look actively for the trigger and for co-morbid disease: infection, pancreatitis, alcoholic hepatitis, GI bleeding, and the toxic-alcohol mimics.",
+        "Resolution: the anion gap closes and the patient tolerates oral intake. A transient rise in measured (dipstick) ketones during recovery is expected and is not treatment failure — follow the gap."
+      ]
+    }
+  ],
+  "related": ["dka-hhs-adult-management", "iv-fluids"],
+  "buildNote": "Tier 2 — the biochemistry and the dextrose/thiamine/electrolyte management are settled (Wrenn 1991, McGuire 2006, Long 2021). From the CV AKA mechanism audit plus primary sources. Companion to `dka-hhs-adult-management`; the two share the mixed-acid-base and electrolyte themes but diverge on insulin (AKA: no)."
+}

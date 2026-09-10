@@ -40,16 +40,22 @@
     "ILCOR"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 3,
   "sources": [
     "Critical Vector — Capnography pocket reference (v1, verified against Resuscitation, ILCOR, primary EM/critical-care literature, July 2026)",
     "ILCOR 2020 consensus on science — EtCO2 during CPR",
-    "Resuscitation — pooled observational data on EtCO2 and ROSC"
+    "Resuscitation — pooled observational data on EtCO2 and ROSC",
+    "The Critical Vector — EtCO2 vs PaCO2 gradient (Reference Audit); West's Respiratory Physiology (dead space / V/Q)"
   ],
   "changelog": [
+    {
+      "version": 3,
+      "date": "2026-09-09",
+      "change": "Added an 'EtCO2–PaCO2 gradient' section (normal 2–5 mmHg; abrupt drop = PE / low output / hypovolaemia; wide = COPD / high dead space) — from the CV EtCO2-vs-PaCO2 audit."
+    },
     {
       "version": 2,
       "date": "2026-09-07",
@@ -149,6 +155,23 @@
       "type": "callout",
       "tone": "warning",
       "text": "A flat capnography line does not automatically mean esophageal intubation. If the tube was confirmed correctly placed moments earlier, an abrupt flatline is circulatory arrest until proven otherwise. Chest compressions restore some waveform even in a correctly placed tube, so a flat line during ongoing CPR is a different problem from a flat line right after intubation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "EtCO2–PaCO2 gradient"
+    },
+    {
+      "type": "text",
+      "text": "End-tidal CO2 normally sits 2–5 mmHg BELOW arterial CO2 — the gap is dead space (anatomic + alveolar), not measurement error. A widening gradient, or an abrupt EtCO2 drop with unchanged ventilation, is one of the earliest bedside warnings that pulmonary blood flow or dead space has changed."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Sudden EtCO2 fall: pulmonary embolism (ventilated, non-perfused alveoli), a fall in cardiac output or cardiac arrest, acute hypovolaemia/haemorrhage — EtCO2 can flag these before the blood pressure moves.",
+        "Chronically wide gradient: COPD / severe parenchymal lung disease (V/Q mismatch, destroyed units), high-dead-space or high-frequency ventilation strategies.",
+        "Use EtCO2 as a continuous trend and screening tool — for a precise PaCO2 (permissive hypercapnia targets, raised-ICP CO2 control, severe metabolic acidosis) get a blood gas and re-measure the gradient."
+      ]
     },
     {
       "type": "heading",

@@ -6064,6 +6064,44 @@
       ]
     },
     {
+      "id": "alcoholic-ketoacidosis",
+      "title": "Alcoholic Ketoacidosis (AKA)",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "alcoholic ketoacidosis",
+        "AKA",
+        "anion gap acidosis",
+        "beta-hydroxybutyrate",
+        "thiamine",
+        "dextrose",
+        "electrolytes",
+        "ED",
+        "toxicology"
+      ],
+      "keywords": [
+        "chronic alcohol starvation vomiting volume depletion high NADH NAD ratio",
+        "glucose normal or low high anion gap metabolic acidosis mixed disturbance vomiting alkalosis",
+        "beta-hydroxybutyrate predominates urine nitroprusside dipstick under-reads",
+        "dextrose 5 in saline stops ketogenesis thiamine before glucose replace potassium magnesium phosphate",
+        "no routine insulin no routine bicarbonate rule out DKA toxic alcohols salicylate sepsis",
+        "AKA",
+        "alcoholic ketoacidosis",
+        "starvation ketoacidosis alcohol",
+        "beta-hydroxybutyrate alcohol",
+        "high anion gap alcohol vomiting"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/alcoholic-ketoacidosis",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ],
+      "audience": [
+        "adult"
+      ]
+    },
+    {
       "id": "tox-cannabinoids-inhalants",
       "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
       "section": "Reference Library",
@@ -6941,6 +6979,53 @@
       "route": "/reference-library/icu-critical-care/advanced-ards-ventilation",
       "settingEmphasis": [
         "icu"
+      ]
+    },
+    {
+      "id": "ventilator-liberation-weaning",
+      "title": "Ventilator Liberation & Extubation",
+      "section": "Reference Library",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "ventilator weaning",
+        "extubation",
+        "SBT",
+        "liberation",
+        "cuff leak",
+        "HFNC",
+        "NIV",
+        "tracheostomy",
+        "ICU",
+        "reintubation"
+      ],
+      "keywords": [
+        "daily readiness screen PaO2 FiO2 150 PEEP 5 to 8 pH 7.25 minimal pressors cough mentation",
+        "spontaneous breathing trial pressure support 5 to 8 or T-piece 30 to 120 minutes pass fail",
+        "rapid shallow breathing index RSBI respiratory rate over tidal volume litres under 105",
+        "paired spontaneous awakening trial and spontaneous breathing trial ABC trial Girard",
+        "cuff leak test under 110 mL or under 10 to 15 percent methylprednisolone 20 mg q4h four doses",
+        "high risk extubation prophylactic HFNC or non-invasive ventilation not rescue NIV",
+        "failure to wean reversible factors weaning induced pulmonary edema ICU acquired weakness phosphate magnesium",
+        "tracheostomy timing day 10 to 14 TracMan no early mortality benefit",
+        "reintubation 10 to 15 percent mortality delayed reintubation worse",
+        "weaning from mechanical ventilation",
+        "spontaneous breathing trial",
+        "SBT",
+        "extubation readiness",
+        "cuff leak test",
+        "RSBI",
+        "failure to wean",
+        "post-extubation respiratory failure",
+        "SAT SBT pairing"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning",
+      "settingEmphasis": [
+        "icu",
+        "ed"
+      ],
+      "audience": [
+        "adult"
       ]
     },
     {
@@ -7874,6 +7959,46 @@
       "route": "/reference-library/perioperative-anesthesia/anesthesia-pocus",
       "settingEmphasis": [
         "or"
+      ]
+    },
+    {
+      "id": "bone-cement-implantation-syndrome",
+      "title": "Bone Cement Implantation Syndrome (BCIS)",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "BCIS",
+        "bone cement",
+        "PMMA",
+        "hemiarthroplasty",
+        "arthroplasty",
+        "hip fracture",
+        "fat embolism",
+        "RV failure",
+        "OR emergency",
+        "anesthesia"
+      ],
+      "keywords": [
+        "hypoxia hypotension arrhythmia cardiac arrest around cementation prosthesis insertion",
+        "Donaldson grade 1 SpO2 under 94 or SBP fall over 20 percent grade 2 SpO2 under 88 or SBP fall over 40 or LOC grade 3 collapse CPR",
+        "embolic shower fat marrow cement air bone debris pulmonary vascular obstruction right heart strain",
+        "cemented femoral stem hip fracture hemiarthroplasty elderly pulmonary hypertension highest risk",
+        "prevention canal lavage retrograde cement gun distal vent minimise pressurisation FiO2 100 euvolaemia vasopressor ready",
+        "BCIS",
+        "cement reaction",
+        "PMMA reaction",
+        "cemented hemiarthroplasty collapse",
+        "Donaldson classification",
+        "fat embolism arthroplasty"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/bone-cement-implantation-syndrome",
+      "settingEmphasis": [
+        "or",
+        "icu"
+      ],
+      "audience": [
+        "adult"
       ]
     },
     {
