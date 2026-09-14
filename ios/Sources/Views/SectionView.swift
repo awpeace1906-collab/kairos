@@ -35,7 +35,7 @@ struct SectionView: View {
                                 NavigationLink(value: Route.content(item.route)) {
                                     HStack {
                                         Text(item.title)
-                                        if item.section != section.title {
+                                        if item.section != section.title || (pedsLens && item.isPeds) {
                                             Spacer()
                                             Text("peds")
                                                 .font(Theme.caption2)

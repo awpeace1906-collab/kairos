@@ -65,7 +65,12 @@ struct HomeView: View {
                 ForEach(items) { entry in
                     NavigationLink(value: Route.content(entry.route)) {
                         VStack(alignment: .leading, spacing: 2) {
-                            Text(entry.title)
+                            HStack {
+                                Text(entry.title)
+                                if pedsLens && entry.isPeds {
+                                    Text("peds").font(Theme.caption2).foregroundStyle(Theme.sectionColor("peds-module"))
+                                }
+                            }
                             Text(entry.category).font(Theme.caption).foregroundStyle(.secondary)
                         }
                     }

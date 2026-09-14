@@ -7,9 +7,9 @@
   "aliases": ["NIHSS", "stroke severity", "stroke scale"],
   "tags": ["stroke", "severity", "thrombolytic", "thrombectomy", "ED", "ICU"],
   "contentType": "calculator",
-  "content_version": 2,
-  "last_reviewed": "2026-09-07",
-  "next_review_due": "2027-03-07",
+  "content_version": 3,
+  "last_reviewed": "2026-09-13",
+  "next_review_due": "2027-03-13",
   "review_tier": 1,
   "sources": [
     "Brott T, Adams HP Jr, Olinger CP, et al. Measurements of acute cerebral infarction: a clinical examination scale. Stroke. 1989;20(7):864-870",
@@ -17,29 +17,102 @@
     "Adams HP Jr, Davis PH, Leira EC, et al. Baseline NIH Stroke Scale score strongly predicts outcome after stroke: a report of the TOAST trial. Neurology. 1999;53(1):126-131 (score-to-outcome relationship)"
   ],
   "changelog": [
+    { "version": 3, "date": "2026-09-13", "change": "Converted all 15 items from free-entry integers to select dropdowns carrying the official NIH Stroke Scale category text for each score, per user UI feedback (a fixed small scored set should be a picker, not a numeric field). Supersedes the v1 scope note about not encoding per-point criteria — these are the standardized scale's own published category labels for the score a certified examiner has already determined, not exam-technique instruction. UN (untestable — amputation/joint fusion for items 5-6, intubation for item 10) is not modeled; enter the closest scored category if genuinely untestable, per your institution's convention." },
     { "version": 2, "date": "2026-09-07", "change": "Expanded sources with the full Brott 1989 citation, the NINDS scale materials, and Adams 1999 (TOAST) for the score-to-outcome relationship; named the severity-band scheme and its alternate in notes; removed the needs-primary-source flag." },
     { "version": 1, "date": "2026-08-31", "change": "Item score ranges only, per the deliberate scope decision in Calculator_Logic_Build_Spec.md." }
   ],
   "engine": "formula",
   "settings": ["ED", "ICU"],
   "purpose": "Standardized stroke severity — drives thrombolytic/thrombectomy eligibility and serial monitoring. Enter the item scores a trained examiner has already determined.",
-  "notes": "Per the build spec's deliberate scope decision, the per-point behavioral criteria (what separates a 1 from a 2 on each item) are NOT encoded here — that is certified-examiner territory. This tool sums the item scores you enter. Severity bands shown (0 none / 1-4 minor / 5-15 moderate / 16-20 moderate-severe / 21-42 severe) follow the NINDS NIH Stroke Scale descriptors used in the scale's training materials; an alternate common scheme is < 5 / 5-14 / 15-24 / > 24. Bands are for communication and trending — thrombolytic and thrombectomy decisions use the specific trial criteria and clinical context, not a cut-point. Higher baseline score predicts worse outcome (Adams 1999): roughly ≤ 6 favours a good outcome and ≥ 16 a high probability of death or severe disability.",
+  "notes": "Each item's dropdown shows the official NIH Stroke Scale category text for that score — administer the exam per NINDS-certified technique first; this tool is for entering the score you've already determined, not for teaching how to elicit it. This tool sums the item scores you enter. Severity bands shown (0 none / 1-4 minor / 5-15 moderate / 16-20 moderate-severe / 21-42 severe) follow the NINDS NIH Stroke Scale descriptors used in the scale's training materials; an alternate common scheme is < 5 / 5-14 / 15-24 / > 24. Bands are for communication and trending — thrombolytic and thrombectomy decisions use the specific trial criteria and clinical context, not a cut-point. Higher baseline score predicts worse outcome (Adams 1999): roughly ≤ 6 favours a good outcome and ≥ 16 a high probability of death or severe disability.",
   "inputs": [
-    { "key": "loc",   "label": "1a. Level of consciousness (0-3)", "type": "integer", "min": 0, "max": 3 },
-    { "key": "locQ",  "label": "1b. LOC questions (0-2)", "type": "integer", "min": 0, "max": 2 },
-    { "key": "locC",  "label": "1c. LOC commands (0-2)", "type": "integer", "min": 0, "max": 2 },
-    { "key": "gaze",  "label": "2. Best gaze (0-2)", "type": "integer", "min": 0, "max": 2 },
-    { "key": "visual","label": "3. Visual fields (0-3)", "type": "integer", "min": 0, "max": 3 },
-    { "key": "facial","label": "4. Facial palsy (0-3)", "type": "integer", "min": 0, "max": 3 },
-    { "key": "armL",  "label": "5a. Motor arm — left (0-4)", "type": "integer", "min": 0, "max": 4 },
-    { "key": "armR",  "label": "5b. Motor arm — right (0-4)", "type": "integer", "min": 0, "max": 4 },
-    { "key": "legL",  "label": "6a. Motor leg — left (0-4)", "type": "integer", "min": 0, "max": 4 },
-    { "key": "legR",  "label": "6b. Motor leg — right (0-4)", "type": "integer", "min": 0, "max": 4 },
-    { "key": "ataxia","label": "7. Limb ataxia (0-2)", "type": "integer", "min": 0, "max": 2 },
-    { "key": "sensory","label": "8. Sensory (0-2)", "type": "integer", "min": 0, "max": 2 },
-    { "key": "language","label": "9. Best language (0-3)", "type": "integer", "min": 0, "max": 3 },
-    { "key": "dysarthria","label": "10. Dysarthria (0-2)", "type": "integer", "min": 0, "max": 2 },
-    { "key": "extinction","label": "11. Extinction / inattention (0-2)", "type": "integer", "min": 0, "max": 2 }
+    { "key": "loc", "label": "1a. Level of consciousness", "type": "select", "options": [
+      { "label": "0 — Alert, keenly responsive", "value": 0 },
+      { "label": "1 — Not alert, arousable by minor stimulation", "value": 1 },
+      { "label": "2 — Not alert, requires repeated stimulation to attend, or is obtunded", "value": 2 },
+      { "label": "3 — Responds only with reflex motor/autonomic effects, or unresponsive/flaccid/areflexic", "value": 3 }
+    ] },
+    { "key": "locQ", "label": "1b. LOC questions (month, age)", "type": "select", "options": [
+      { "label": "0 — Answers both correctly", "value": 0 },
+      { "label": "1 — Answers one correctly", "value": 1 },
+      { "label": "2 — Answers neither correctly", "value": 2 }
+    ] },
+    { "key": "locC", "label": "1c. LOC commands (open/close eyes, grip/release hand)", "type": "select", "options": [
+      { "label": "0 — Performs both tasks correctly", "value": 0 },
+      { "label": "1 — Performs one task correctly", "value": 1 },
+      { "label": "2 — Performs neither task correctly", "value": 2 }
+    ] },
+    { "key": "gaze", "label": "2. Best gaze", "type": "select", "options": [
+      { "label": "0 — Normal", "value": 0 },
+      { "label": "1 — Partial gaze palsy", "value": 1 },
+      { "label": "2 — Forced deviation or total gaze paresis not overcome by oculocephalic maneuver", "value": 2 }
+    ] },
+    { "key": "visual", "label": "3. Visual fields", "type": "select", "options": [
+      { "label": "0 — No visual loss", "value": 0 },
+      { "label": "1 — Partial hemianopia", "value": 1 },
+      { "label": "2 — Complete hemianopia", "value": 2 },
+      { "label": "3 — Bilateral hemianopia (blind, including cortical blindness)", "value": 3 }
+    ] },
+    { "key": "facial", "label": "4. Facial palsy", "type": "select", "options": [
+      { "label": "0 — Normal symmetrical movement", "value": 0 },
+      { "label": "1 — Minor paralysis (flattened nasolabial fold, asymmetric smile)", "value": 1 },
+      { "label": "2 — Partial paralysis (total/near-total paralysis of lower face)", "value": 2 },
+      { "label": "3 — Complete paralysis of one or both sides (upper and lower face)", "value": 3 }
+    ] },
+    { "key": "armL", "label": "5a. Motor arm — left", "type": "select", "options": [
+      { "label": "0 — No drift, holds 90°/45° for full 10 s", "value": 0 },
+      { "label": "1 — Drift, but doesn't hit the bed within 10 s", "value": 1 },
+      { "label": "2 — Some effort against gravity, drifts down to bed before 10 s", "value": 2 },
+      { "label": "3 — No effort against gravity, limb falls", "value": 3 },
+      { "label": "4 — No movement", "value": 4 }
+    ] },
+    { "key": "armR", "label": "5b. Motor arm — right", "type": "select", "options": [
+      { "label": "0 — No drift, holds 90°/45° for full 10 s", "value": 0 },
+      { "label": "1 — Drift, but doesn't hit the bed within 10 s", "value": 1 },
+      { "label": "2 — Some effort against gravity, drifts down to bed before 10 s", "value": 2 },
+      { "label": "3 — No effort against gravity, limb falls", "value": 3 },
+      { "label": "4 — No movement", "value": 4 }
+    ] },
+    { "key": "legL", "label": "6a. Motor leg — left", "type": "select", "options": [
+      { "label": "0 — No drift, holds 30° for full 5 s", "value": 0 },
+      { "label": "1 — Drift, falls by end of 5 s but doesn't hit the bed", "value": 1 },
+      { "label": "2 — Some effort against gravity, falls to bed by 5 s", "value": 2 },
+      { "label": "3 — No effort against gravity, falls to bed immediately", "value": 3 },
+      { "label": "4 — No movement", "value": 4 }
+    ] },
+    { "key": "legR", "label": "6b. Motor leg — right", "type": "select", "options": [
+      { "label": "0 — No drift, holds 30° for full 5 s", "value": 0 },
+      { "label": "1 — Drift, falls by end of 5 s but doesn't hit the bed", "value": 1 },
+      { "label": "2 — Some effort against gravity, falls to bed by 5 s", "value": 2 },
+      { "label": "3 — No effort against gravity, falls to bed immediately", "value": 3 },
+      { "label": "4 — No movement", "value": 4 }
+    ] },
+    { "key": "ataxia", "label": "7. Limb ataxia (finger-nose-finger, heel-shin)", "type": "select", "options": [
+      { "label": "0 — Absent", "value": 0 },
+      { "label": "1 — Present in one limb", "value": 1 },
+      { "label": "2 — Present in two limbs", "value": 2 }
+    ] },
+    { "key": "sensory", "label": "8. Sensory", "type": "select", "options": [
+      { "label": "0 — Normal, no sensory loss", "value": 0 },
+      { "label": "1 — Mild-to-moderate sensory loss", "value": 1 },
+      { "label": "2 — Severe to total sensory loss", "value": 2 }
+    ] },
+    { "key": "language", "label": "9. Best language (aphasia)", "type": "select", "options": [
+      { "label": "0 — No aphasia, normal", "value": 0 },
+      { "label": "1 — Mild-to-moderate aphasia", "value": 1 },
+      { "label": "2 — Severe aphasia", "value": 2 },
+      { "label": "3 — Mute, global aphasia, no usable speech or comprehension", "value": 3 }
+    ] },
+    { "key": "dysarthria", "label": "10. Dysarthria", "type": "select", "options": [
+      { "label": "0 — Normal", "value": 0 },
+      { "label": "1 — Mild-to-moderate dysarthria, slurs some words", "value": 1 },
+      { "label": "2 — Severe dysarthria, unintelligible or worse", "value": 2 }
+    ] },
+    { "key": "extinction", "label": "11. Extinction / inattention (neglect)", "type": "select", "options": [
+      { "label": "0 — No abnormality", "value": 0 },
+      { "label": "1 — Inattention to one modality (visual, tactile, auditory, spatial, personal)", "value": 1 },
+      { "label": "2 — Profound hemi-inattention, or extinction to more than one modality", "value": 2 }
+    ] }
   ],
   "formulas": [
     { "key": "total", "label": "NIHSS total", "expression": "loc+locQ+locC+gaze+visual+facial+armL+armR+legL+legR+ataxia+sensory+language+dysarthria+extinction", "precision": 0 }

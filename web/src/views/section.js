@@ -72,7 +72,7 @@ export function renderSection(sectionId, store) {
                   "li",
                   {},
                   el("a", { href: `#${it.route}` }, it.title),
-                  !homeHere(it) ? el("span", { class: "xlist-badge" }, "peds") : null
+                  (peds && isPeds(it)) || !homeHere(it) ? el("span", { class: "xlist-badge" }, "peds") : null
                 )
               )
             )

@@ -186,38 +186,75 @@ struct BlockList: View {
         }
     }
 
-    /// Wrapping, fixed-column-width table inside a horizontal scroll. Cells wrap
-    /// rather than stretch to one line; column width scales down with column
-    /// count so 5-6 column tables stay legible on a phone.
+    /// Tables with a few columns lay out full-width with flexible, wrapping
+    /// columns — no scroll needed, and no fixed width guessing at the screen
+    /// size. Only genuinely dense tables (4+ columns, e.g. an induction-agent
+    /// haemodynamic table) fall back to a fixed-column-width horizontal scroll,
+    /// since flexible columns would squeeze those illegibly on a phone.
     @ViewBuilder private func tableView(columns: [String], rows: [[String]]) -> some View {
         let colCount = max(columns.count, rows.map(\.count).max() ?? 1)
-        let colWidth: CGFloat = max(116, min(210, 640 / CGFloat(max(colCount, 1))))
+        if colCount <= 3 {
+            flexibleTable(columns: columns, rows: rows, colCount: colCount)
+        } else {
+            let colWidth: CGFloat = max(116, min(210, 640 / CGFloat(max(colCount, 1))))
+            ScrollView(.horizontal, showsIndicators: true) {
+                fixedWidthTable(columns: columns, rows: rows, colWidth: colWidth)
+            }
+        }
+    }
 
-        ScrollView(.horizontal, showsIndicators: true) {
-            VStack(alignment: .leading, spacing: 0) {
-                if !columns.isEmpty {
-                    HStack(alignment: .top, spacing: 12) {
-                        ForEach(Array(columns.enumerated()), id: \.offset) { _, c in
-                            Text(c.uppercased()).font(Theme.mono(11)).tracking(0.4)
-                                .foregroundStyle(.secondary)
-                                .frame(width: colWidth, alignment: .topLeading)
-                                .fixedSize(horizontal: false, vertical: true)
-                        }
+    @ViewBuilder private func flexibleTable(columns: [String], rows: [[String]], colCount: Int) -> some View {
+        VStack(alignment: .leading, spacing: 0) {
+            if !columns.isEmpty {
+                HStack(alignment: .top, spacing: 12) {
+                    ForEach(Array(columns.enumerated()), id: \.offset) { _, c in
+                        Text(c.uppercased()).font(Theme.mono(11)).tracking(0.4)
+                            .foregroundStyle(.secondary)
+                            .frame(maxWidth: .infinity, alignment: .topLeading)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
-                    .padding(.vertical, 6)
-                    Divider()
                 }
-                ForEach(Array(rows.enumerated()), id: \.offset) { idx, row in
-                    HStack(alignment: .top, spacing: 12) {
-                        ForEach(Array(row.enumerated()), id: \.offset) { _, cell in
-                            Text(cell).font(Theme.callout)
-                                .frame(width: colWidth, alignment: .topLeading)
-                                .fixedSize(horizontal: false, vertical: true)
-                        }
+                .padding(.vertical, 6)
+                Divider()
+            }
+            ForEach(Array(rows.enumerated()), id: \.offset) { idx, row in
+                HStack(alignment: .top, spacing: 12) {
+                    ForEach(Array(row.enumerated()), id: \.offset) { _, cell in
+                        Text(cell).font(Theme.callout)
+                            .frame(maxWidth: .infinity, alignment: .topLeading)
+                            .fixedSize(horizontal: false, vertical: true)
                     }
-                    .padding(.vertical, 6)
-                    if idx < rows.count - 1 { Divider().opacity(0.4) }
                 }
+                .padding(.vertical, 6)
+                if idx < rows.count - 1 { Divider().opacity(0.4) }
+            }
+        }
+    }
+
+    @ViewBuilder private func fixedWidthTable(columns: [String], rows: [[String]], colWidth: CGFloat) -> some View {
+        VStack(alignment: .leading, spacing: 0) {
+            if !columns.isEmpty {
+                HStack(alignment: .top, spacing: 12) {
+                    ForEach(Array(columns.enumerated()), id: \.offset) { _, c in
+                        Text(c.uppercased()).font(Theme.mono(11)).tracking(0.4)
+                            .foregroundStyle(.secondary)
+                            .frame(width: colWidth, alignment: .topLeading)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+                .padding(.vertical, 6)
+                Divider()
+            }
+            ForEach(Array(rows.enumerated()), id: \.offset) { idx, row in
+                HStack(alignment: .top, spacing: 12) {
+                    ForEach(Array(row.enumerated()), id: \.offset) { _, cell in
+                        Text(cell).font(Theme.callout)
+                            .frame(width: colWidth, alignment: .topLeading)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                }
+                .padding(.vertical, 6)
+                if idx < rows.count - 1 { Divider().opacity(0.4) }
             }
         }
     }

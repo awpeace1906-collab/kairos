@@ -144,8 +144,14 @@ final class ContentStore: ObservableObject {
             var cachedVersions = UserDefaults.standard.dictionary(forKey: "kairos.manifest.v1") as? [String: Int] ?? [:]
             try FileManager.default.createDirectory(at: cachesDir, withIntermediateDirectories: true)
 
+            // First launch has no UserDefaults record yet — treat the BUNDLED
+            // version as the baseline (not 0), or a fresh install on a device
+            // with network would immediately overwrite newly-bundled content
+            // with whatever is still live on the CDN, even if that's older.
             var changed: [String] = []
-            for (key, m) in remote.modules where (cachedVersions[key] ?? 0) < m.contentVersion {
+            for (key, m) in remote.modules {
+                let baseline = cachedVersions[key] ?? manifest?.modules[key]?.contentVersion ?? 0
+                guard baseline < m.contentVersion else { continue }
                 let src = remoteBase.appendingPathComponent(m.path)
                 let (moduleData, _) = try await URLSession.shared.data(from: src)
                 let dest = cachesDir.appendingPathComponent(m.path)

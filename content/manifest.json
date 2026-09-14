@@ -505,13 +505,13 @@
       "next_review_due": "2027-09-07"
     },
     "calculators/neuro/nihss": {
-      "content_version": 2,
-      "hash": "b50c1f58552fd82b",
+      "content_version": 3,
+      "hash": "af42a92a1a345622",
       "path": "modules/calculators/neuro/nihss.json",
       "contentType": "calculator",
       "section": "Calculators",
       "review_tier": 1,
-      "next_review_due": "2027-03-07"
+      "next_review_due": "2027-03-13"
     },
     "calculators/neuro/ottawa-sah-rule": {
       "content_version": 1,

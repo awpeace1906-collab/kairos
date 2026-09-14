@@ -2,7 +2,10 @@ import SwiftUI
 
 // Tier 6 UI requirements:
 //  - inline "x in a circle" clear on every entry field (clears just that field)
-//  - a keyboard-collapse control (the "Done" toolbar button)
+//  - a keyboard-collapse control: a yellow checkmark, not just a text "Done" —
+//    for a continuous, patient-specific value (HR, BP, weight — anything that
+//    can't be a dropdown) it's the visible "confirm this entry" affordance,
+//    distinct from a select field's own built-in confirmation.
 // The screen-level "Clear fields" button lives on each multi-field screen.
 
 struct ClearableField: View {
@@ -29,7 +32,11 @@ struct ClearableField: View {
                     .toolbar {
                         ToolbarItemGroup(placement: .keyboard) {
                             Spacer()
-                            Button("Done") { focused = false }
+                            Button { focused = false } label: {
+                                Image(systemName: "checkmark.circle.fill")
+                                    .foregroundStyle(.yellow)
+                            }
+                            .accessibilityLabel("Done entering \(label)")
                         }
                     }
                 if !text.isEmpty {

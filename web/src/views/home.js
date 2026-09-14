@@ -1,6 +1,6 @@
 import { el } from "../components.js";
 import { makeSearch } from "../lib/search.js";
-import { applyLens, applyPedsLens } from "../lib/settingLens.js";
+import { applyLens, applyPedsLens, isPeds } from "../lib/settingLens.js";
 import { prefs, CARE_SETTING_KEY, activeCareSetting, PEDS_LENS_KEY, activePedsLens, pinnedIds } from "../lib/prefs.js";
 
 export function renderHome(store, router) {
@@ -164,6 +164,7 @@ export function renderHome(store, router) {
                   "a",
                   { href: `#${it.route}`, class: "result-item" },
                   el("span", { class: "ri-title" }, it.title),
+                  peds && isPeds(it) ? el("span", { class: "xlist-badge" }, "peds") : null,
                   el("span", { class: "ri-cat" }, it.category)
                 )
               )

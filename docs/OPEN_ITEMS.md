@@ -53,6 +53,43 @@ Prussian blue + bicarbonate, one module), `high-dose-insulin-euglycemia-dosing`
 calculator, `brue-lower-risk-criteria` peds-tool checklist.
 
 ## Progress log
+- 2026-09-14 — **UI Phase 3 (calculator selects, keyboard checkmark, lateral
+  scroll) + Phase 4 start (peds-lens visibility) shipped.** `nihss` → v3: all
+  15 items converted from free-entry integers to `select` dropdowns carrying
+  the official NIH Stroke Scale category text per score (per user feedback —
+  a fixed small scored set should be a picker, not a numeric field). Audited
+  every other calculator for the same gap: the `additive` engine already does
+  this natively (`items[].options[]`), so NIHSS (a `formula`-engine calc with
+  raw exam-finding inputs) was the one real gap; `grace-acs`'s integer inputs
+  and `harris-benedict`'s stress-factor number input are genuinely continuous
+  values, correctly left alone. iOS `ClearableField`'s keyboard toolbar "Done"
+  button replaced with a yellow checkmark — the confirm affordance for
+  continuous, patient-specific fields (HR, BP, weight) that can't be a
+  dropdown. iOS `ContentDetailView`'s table renderer: tables with ≤3 columns
+  now lay out full-width with flexible wrapping columns (no forced horizontal
+  scroll); only genuinely dense 4+-column tables (e.g. an induction-agent
+  haemodynamic table) keep the fixed-width horizontal-scroll behavior — fixes
+  the "lateral scrolling on some screens" complaint. Peds lens visibility: the
+  lens now visibly tags floated items with a "peds" badge (reusing the
+  existing cross-list badge styling) instead of only silently reordering,
+  on both web (`home.js`, `section.js`) and iOS (`HomeView`, `SectionView`).
+  **Found and fixed a real bug while verifying NIHSS in the simulator:**
+  `ContentStore.checkForUpdates()` compared each remote module's version
+  against `cachedVersions[key] ?? 0` — on ANY fresh install with network
+  access, this treated "never downloaded" as version 0 and eagerly
+  overwrote freshly-bundled local content with whatever is still live on
+  the deployed GitHub Pages site (even if older), silently masking every
+  local content edit during simulator testing. Fixed to fall back to the
+  *bundled* manifest's version as the baseline instead of 0. This means any
+  session testing local content changes in the simulator before this fix may
+  have been looking at stale (deployed) content without realizing it —
+  worth keeping in mind if past verification claims about content changes
+  ever seem suspect. iOS BUILD SUCCEEDED, 10/10 engine tests, verified live
+  (simulator: NIHSS dropdowns + labels correct after the cache fix; Settings
+  structure). validate 318/0, test 252/0. **Phase 4's broader "full visual
+  pass" is still open** — everything concrete from the original backlog is
+  now done; a fresh top-to-bottom look (now that tab bar + settings + these
+  fixes are all live) is the natural next step whenever picked back up.
 - 2026-09-13 — **Phase 5 (Procedures gap) + Settings redesign shipped on both
   clients (→ 318 modules).** Procedures: new "Vascular & Thoracic Access"
   category (`content/config/sections.json`) with two genuine content-gap
