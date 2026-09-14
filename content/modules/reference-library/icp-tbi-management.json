@@ -207,7 +207,9 @@
     "trauma-primary-survey",
     "acute-ischemic-stroke",
     "sodium-disorders",
-    "gcs"
+    "gcs",
+    "brain-death-determination",
+    "primary-palliative-care-icu"
   ],
   "buildNote": "Tier 1. SIBICC tiers added from standard neurocritical-care practice. Cross-links the hyperosmolar-therapy decision module and GCS."
 }

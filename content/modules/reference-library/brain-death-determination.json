@@ -1,0 +1,144 @@
+{
+  "id": "brain-death-determination",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Brain Death / Death by Neurologic Criteria",
+  "settingEmphasis": [
+    "icu",
+    "ed"
+  ],
+  "aliases": [
+    "brain death exam",
+    "BD/DNC",
+    "death by neurologic criteria",
+    "apnea test",
+    "ancillary testing brain death"
+  ],
+  "tags": [
+    "brain death",
+    "DNC",
+    "apnea test",
+    "ancillary testing",
+    "neurocritical care",
+    "ICU",
+    "organ donation"
+  ],
+  "keywords": [
+    "prerequisites normothermia normotension no confounders",
+    "coma plus absent brainstem reflexes plus apnea test",
+    "apnea test PaCO2 rise ≥20 and total ≥60",
+    "EEG no longer recommended 2023",
+    "two exams for peds separated by observation period",
+    "high cervical injury needs ancillary test"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2027-03-14",
+  "review_tier": 1,
+  "sources": [
+    "Greer DM, Kirschen MP, Lewis A, et al. Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Guideline. Neurology. 2023;101(24):1112-1132 (AAN/AAP/CNS/SCCM).",
+    "Wijdicks EFM, et al. Evidence-based guideline update: determining brain death in adults. Neurology. 2010 (superseded by the 2023 consensus guideline for most elements; cited for historical context on EEG's removal)."
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-14",
+      "change": "Initial entry — a genuine content gap (Kairos had no module on brain death / DNC determination). Built from the 2023 AAN/AAP/CNS/SCCM consensus guideline: prerequisites, clinical exam, apnea test, ancillary testing, and the pediatric/adult harmonization."
+    }
+  ],
+  "related": [
+    "icp-tbi-management",
+    "primary-palliative-care-icu"
+  ],
+  "summary": "Bedside determination of death by neurologic criteria — the prerequisites that must be met, the clinical exam findings required, the apnea test, and when an ancillary test is needed instead of (or alongside) the bedside exam.",
+  "whyThisMatters": "Getting this determination right matters legally and ethically in a way few other bedside assessments do — it declares a death, it starts an irreversible process (withdrawal of support, organ donation evaluation), and it is one of the few exams where a single missed prerequisite genuinely invalidates the entire determination.",
+  "clinicalTakeaway": "Confirm every prerequisite before you start the exam — normothermia, normotension, no confounding drugs — because the exam itself is only valid if they're all true. If the clinical exam or apnea test can't be completed or interpreted (facial trauma, chronic CO2 retention, instability, high cervical injury), go straight to an ancillary blood-flow study rather than forcing an unreliable bedside exam. EEG is no longer part of this pathway.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Prerequisites — confirm all before starting"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Known cause: an established, irreversible catastrophic brain injury sufficient to explain the clinical picture (confirmed by exam and neuroimaging).",
+        "Normothermia: core temperature ≥ 36°C (96.8°F).",
+        "Normotension: adult SBP ≥ 100 mmHg (age-appropriate lower limits in children) — treat shock before proceeding, since hypotension alone can suppress brainstem reflexes.",
+        "No confounding CNS-depressant drug effect: allow ≥ 5 half-lives of any sedative/opioid (longer with hepatic or renal impairment), or check a level/reverse if available. Confirm no residual neuromuscular blockade with a train-of-four (TOF) showing full recovery.",
+        "No severe metabolic, electrolyte, or endocrine derangement that could account for coma (severe hypo/hypernatremia, hypoglycemia, hepatic or uremic encephalopathy, severe hypothyroidism).",
+        "No evidence of any observer-witnessed spontaneous movement, posturing, or response to stimuli inconsistent with brain death before starting the formal exam."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Clinical examination"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Coma: no eye opening, no vocalization, no purposeful response to noxious stimulation anywhere (central stimulus, e.g. supraorbital or TMJ pressure). Spinally-mediated reflexes (deep tendon reflexes, triple flexion, plantar responses) do NOT exclude brain death — they can persist.",
+        "Pupillary light reflex: absent bilaterally; pupils typically midposition to dilated (4-9 mm), fixed.",
+        "Corneal reflex: absent bilaterally (touch the cornea, not the sclera).",
+        "Oculocephalic reflex (doll's eyes): absent — ONLY test if the cervical spine is cleared.",
+        "Oculovestibular reflex (cold calorics): absent — irrigate each ear with 50 mL ice water (confirm the tympanic membrane is intact and canal is clear first), head elevated 30°, observe 1 minute, wait 5 minutes before testing the other side. No nystagmus or eye deviation.",
+        "Facial motor response: no grimace to noxious stimulation of the face, supraorbital ridge, TMJ, or nail beds.",
+        "Gag reflex: absent to posterior pharyngeal stimulation.",
+        "Cough reflex: absent to deep tracheal suctioning."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Apnea test"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Preoxygenate to PaO2 > 200 mmHg; confirm hemodynamic stability first.",
+        "Disconnect from the ventilator (or use CPAP/T-piece with passive oxygen flow), and observe continuously for any respiratory effort — chest wall or abdominal movement.",
+        "Draw an ABG at the target time. A positive (confirmatory) test requires NO respiratory movement AND PaCO2 has risen to ≥ 60 mmHg AND increased by ≥ 20 mmHg above the patient's own baseline.",
+        "Monitor SpO2 and hemodynamics throughout — abort immediately for SpO2 < 85%, significant arrhythmia, or hemodynamic instability, and reconnect the ventilator. An aborted test is NOT a completed apnea test — proceed to an ancillary study instead."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Chronic CO2 retainers (e.g. severe COPD) may not reach the required PaCO2 threshold safely, or their baseline may already be elevated enough that the ΔPaCO2 target is unreliable — plan for an ancillary test in these patients rather than a bedside apnea test."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "When the exam or apnea test can't be completed"
+    },
+    {
+      "type": "text",
+      "text": "Go to an ancillary blood-flow study when the clinical exam is uninterpretable (severe facial/orbital trauma, cannot test calorics, high cervical spinal cord injury preventing oculocephalic testing), the apnea test can't be safely completed or interpreted (hemodynamic instability, chronic hypercapnia, severe hypoxemic lung disease), or simply to shorten the observation interval / add certainty in an ambiguous case."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Cerebral angiography (four-vessel) — the reference standard: absence of intracranial arterial filling at the skull base.",
+        "Radionuclide (technetium) brain perfusion scan: absence of intracerebral uptake — the classic \"hollow skull\" / \"empty light bulb\" sign.",
+        "Transcranial Doppler: reverberating (to-and-fro) flow or small early systolic spikes with absent diastolic flow, on two studies ≥ 30 minutes apart, by an experienced operator — technically demanding and operator-dependent.",
+        "EEG is NO LONGER recommended as an ancillary test in the 2023 consensus guideline (removed from the pathway) — it does not reliably confirm absent intracranial blood flow and has a meaningful false-negative rate for brain death. If an older protocol at your institution still lists EEG, it has not been updated to the current consensus."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Number of exams and timing"
+    },
+    {
+      "type": "text",
+      "text": "The 2023 consensus guideline harmonized pediatric and adult practice: from term newborn (≥ 37 weeks corrected gestational age) through age 18, two independent examinations plus apnea tests are required, each performed by a different attending physician, separated by an observation period — check your institutional policy for the exact interval, since it is age-dependent and was shortened from older separate pediatric guidelines. For adults, a single examination plus apnea test (or exam plus ancillary test if apnea testing isn't feasible) by one qualified attending is generally sufficient, though many institutions still require or prefer two."
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "This is a legal determination of death, not a prognostic estimate — follow your institution's specific policy for exam number, physician qualifications, and documentation requirements exactly; they implement this guideline but may add stricter local requirements. Time of death is the time the determination is completed (final exam finding, or the ancillary test result), not when support is later withdrawn."
+    }
+  ]
+}

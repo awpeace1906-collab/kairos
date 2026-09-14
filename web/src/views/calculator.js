@@ -134,7 +134,17 @@ function additiveItem(item, selectedIdx, onPick) {
 
 function resultView(mod, r) {
   if (r.engine === "additive") {
-    if (r.incomplete) return [el("p", { class: "muted" }, `Answer all ${mod.items.length} items — ${r.answered} done`)];
+    if (r.incomplete) {
+      const pct = Math.round((r.answered / mod.items.length) * 100);
+      return [
+        el(
+          "div",
+          { class: "progress" },
+          el("div", { class: "progress-bar" }, el("div", { class: "progress-fill", style: `width:${pct}%` })),
+          el("p", { class: "muted progress-label" }, `${r.answered} of ${mod.items.length} answered`)
+        ),
+      ];
+    }
     const band = r.bands[0];
     return [
       el("div", { class: "score" }, "Score ", el("strong", {}, String(r.score))),

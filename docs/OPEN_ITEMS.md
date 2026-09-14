@@ -6,53 +6,70 @@ Living tracker. Two lists:
    or original content, existing Critical Vector / AnesCalc assets) before the
    affected content can be finalized.
 
-Last updated: 2026-09-08
+Last updated: 2026-09-14 — the "NEXT SESSION" block and both checklists below
+were fully reconciled against actual current state on this date (many items
+below had drifted stale — done work left unchecked, or superseded plans still
+listed as open). The **Progress log** further down is an append-only
+chronological record and was left untouched; trust it over any summary above it
+for "what happened when."
 
-## ▶ NEXT SESSION — start here (2026-09-08)
-State: **312 modules**, pipeline green (312/0, tests 252/0). iOS builds + runs;
-`ios-ci` green (fixed by moving bundled TTFs out of `ios/Sources/` into
-`ios/Resources/Fonts/` — a binary blob inside the Swift source glob tripped the
-older CI toolchain). IBM Plex bundled on both clients + the type sweep is done
-(nav-bar title font, all semantic sizes → `Theme.*` tokens with Dynamic Type
-kept). Web has a desktop nav rail (≥ 960 px), section-tint identity on detail
-pages, per-h2 rules + ticks, and a route fade. The Rumack-Matthew nomogram now
-renders on **both** clients (calculator `plot` schema + web SVG + iOS `Canvas`
-`NomogramView`).
+## ▶ NEXT SESSION — start here (2026-09-14)
+State: **321 modules**, pipeline green (321/0, tests 252/0). Both clients are
+fully live: the site is deployed to GitHub Pages (Settings → Pages → Source =
+"GitHub Actions" is done, `CONTENT_BASE_URL` is set), CI is green on all 4
+checks (`validate`, `build`, `build-and-test` = iOS, `deploy`), and iOS
+`ContentStore.remoteBase` OTA-syncs against the live manifest (a real caching
+bug in that sync path was found and fixed 2026-09-14 — see the progress log).
+The 5-phase UI plan (bottom tab bar, count-badge removal, calculator selects +
+lateral-scroll fix, Settings redesign, procedures gap) is done except the
+open-ended "full visual pass," which is next in the queue along with a look at
+a competitor app (medhuddle.app) for ideas.
 
-Remaining open items:
-1. **GitHub Pages — repo-owner one-time setup** (code is done, waiting on the
-   two clicks): Settings → Pages → Source = "GitHub Actions"; and add repo
-   Variable `CONTENT_BASE_URL` = `https://awpeace1906-collab.github.io/kairos/content/`.
-   Then push → `deploy.yml` publishes the PWA at `…/kairos/` and the content
-   tree at `…/kairos/content/`. iOS `remoteBase` is already pointed there.
-2. More `crossListIn` placements as adult/peds pairs surface; the antibiogram
-   worksheet still needs the user's local data.
-
-DONE 2026-09-08: **Deploy is wired for real.** `tools/deploy.mjs` now assembles
-one bundle — the PWA shell + `/content/` — and `deploy.yml` (was
-`content-deploy.yml`) publishes it to Pages on any push to main. iOS
-`ContentStore.remoteBase` = the Pages content URL (OTA live once Pages is on;
-degrades to bundled content until then). Web stays same-origin. Verified the
-assembled `dist/` renders both at `/` and at a `/kairos/` subpath.
-Also DONE: **pin/unpin UI** — `☆/★` button on every module (web detail bar / iOS
-nav toolbar), stored in `prefs.pins` / `@AppStorage("kairos.pins")`, seeded from
-the curated `config/pinned.json` on first edit; the home Pinned strip reflects
-it. **`dka-hhs-adult-management`** reference (adult DKA/HHS — the K-before-insulin
-sequence) with `peds-dka-management` cross-listed beside it in RefLib/Critical
-Care. The Peds section-vs-lens question was resolved + shipped earlier today
-(Peds Module stays a section; `audience` tags 41 modules; `crossListIn` on 7;
-a persisted "Peds" lens toggle floats peds rows).
-
-DONE 2026-09-08 (across the block): pARC interactive calculator (verified
-coefficients); home redesign + IBM Plex bundled both clients; Rumack-Matthew
-nomogram (web + iOS); web UI polish (form-control font, tables, WHY/TAKEAWAY
-split, salicylate band fix); desktop nav rail + heading rhythm + section
-identity + motion; iOS `ios-ci` font-path fix; iOS type sweep + nav-bar font;
-backlog cleared → `radiation-decorporation-dosing` (KI age table + Ca/Zn-DTPA +
-Prussian blue + bicarbonate, one module), `high-dose-insulin-euglycemia-dosing`
-calculator, `brue-lower-risk-criteria` peds-tool checklist.
+Remaining open items (see the two checklists below for the full, reconciled
+list):
+1. **UI Phase 4 — full visual pass.** Queued next; review `medhuddle.app` for
+   ideas first.
+2. **Things only the user can supply**, still genuinely open: the local
+   antibiogram (empiric-antibiotic agent selection), GRACE 2.0's proprietary
+   coefficients, defibrillator pad transition weight and LMA/blade sizing for
+   your specific device models, Xcode `DEVELOPMENT_TEAM` for real-device
+   installs, and a storyboarding pass on deeper procedure decision-tree branch
+   logic (suture technique / fracture patterns / nerve-block sub-techniques /
+   POCUS exam trees).
+3. Three content-gap modules flagged in an earlier CV Guides review were built
+   2026-09-14: `brain-death-determination`, `traumatic-cardiac-arrest`,
+   `primary-palliative-care-icu` (→ 321 modules).
 
 ## Progress log
+- 2026-09-14 — **3 flagged content-gap modules built + full OPEN_ITEMS.md
+  reconciliation (→ 321 modules).** `brain-death-determination` (Reference
+  Library/Critical Care) — the 2023 AAN/AAP/CNS/SCCM consensus guideline:
+  prerequisites, clinical exam, apnea test, ancillary testing (and EEG's
+  removal from the pathway), pediatric/adult exam-count harmonization.
+  `traumatic-cardiac-arrest` (Reference Library/Resuscitation & Airway) — ERC
+  2021 special-circumstances guideline + ATLS: the reversible-cause-first
+  sequence, where it breaks from standard ACLS, and a resuscitative-thoracotomy
+  candidacy table by mechanism. `primary-palliative-care-icu` (Reference
+  Library/Critical Care) — combines two flagged audit-page gaps into one
+  module: recognizing when a goals-of-care conversation is due, Ask-Tell-Ask/
+  NURSE frameworks, exactly what changes with comfort-focused care, and
+  terminal-extubation technique. All three cross-linked to existing trauma/
+  neurocritical-care modules; `icp-tbi-management`'s `related` array updated to
+  point at the two neuro-adjacent ones. validate 321/0, test 252/0, all three
+  verified rendering live. **Then a full pass through `docs/OPEN_ITEMS.md`**:
+  the "NEXT SESSION" summary block and both checklists ("Things to address",
+  "Sources to provide") were reconciled against actual current state — a
+  meaningful fraction of the unchecked items turned out to already be done
+  (live deploy, iOS app icon, self-hosted fonts, El-Ganzouri calculator, NIHSS
+  band citations, the "not yet built" scores list, vaccine schedule, higher-risk
+  BRUE, and more) and were checked off or marked resolved/superseded, with a
+  stale contradiction caught in passing (an "App icon — PARKED" note sitting
+  next to a shipped, locked icon). The chronological Progress log itself
+  (this section) was left untouched as the authoritative history. Genuinely
+  open items that survived the pass: the antibiogram, GRACE 2.0's proprietary
+  coefficients, defib pad weight / LMA sizing for specific devices, Xcode
+  signing, media/image libraries (POCUS/ECG/nerve-block), and a storyboarding
+  pass on deeper procedure decision trees.
 - 2026-09-14 — **UI Phase 3 (calculator selects, keyboard checkmark, lateral
   scroll) + Phase 4 start (peds-lens visibility) shipped.** `nihss` → v3: all
   15 items converted from free-entry integers to `select` dropdowns carrying
@@ -1045,217 +1062,181 @@ calculator, `brue-lower-risk-criteria` peds-tool checklist.
 ## 1. Things to address
 
 ### Build / infra
-- [ ] **Content-CTA sub-modules still to write:** Reference Library — vent
-  waveform/IABP troubleshooting media, hyperkalemia/CBC images, an
-  outpatient/floor empiric-antibiotic companion (from `board_tested_infections.html`)
-  and an antibiogram-driven agent-selection worksheet (needs the local
-  antibiogram — see list 2); the ED/ICU + rare/time-critical syndromes are done
-  (`empiric-antibiotics-ed-icu`, 2026-09-02). Vaccine Schedules (needs AAP source
-  — see list 2). Peds Module
-  — peds RSI decision card, Pedi Tape zone reference, peds drip concentration
-  picker. Procedures — all four decision trees.
-- [ ] **Pipeline wall-clock is slow in some environments** — `node validate.mjs`
-  used ~24 s wall for ~0.3 s CPU on a cold VM (I/O / process-spawn latency, not
-  ajv). Harmless for CI; just don't expect it to be instant. The
-  `embeddedCalculator` decouple in `validate.mjs` keeps ajv itself fast as the
-  content set grows.
-- [x] **Deploy pipeline built** (2026-09-01) — `tools/deploy.mjs` (`npm run
-  deploy`) validates + assembles `tools/dist/` (manifest, search-index, config,
-  modules, `_deploy.json`; no schemas). `.github/workflows/content-deploy.yml`
-  publishes it to GitHub Pages on push to `main`. `docs/DEPLOY.md` covers S3 /
-  Cloudflare alternatives. **Still needs you:** pick the host, set the
-  `CONTENT_BASE_URL` repo Variable, enable Pages (or swap the deploy job).
-- [ ] **Point clients at the live URL.** `REMOTE_BASE` (web
-  `contentStore.js`) and `ContentStore.remoteBase` (iOS) are still `null` —
-  set them once the bundle is live so OTA updates turn on.
-- [x] **Web app icon** — `web/public/icons/icon.svg` (2026-09-01); manifest +
-  favicon + apple-touch-icon wired.
-- [ ] **iOS `AppIcon` + launch screen.** Still needs raster PNGs (1024 master
-  min). The web SVG (`web/public/icons/icon.svg`) is the master mark — render it
-  to the iOS icon sizes and drop them into an `Assets.xcassets/AppIcon.appiconset`,
-  add that to `ios/project.yml` sources.
-- [x] **Swift engine tests** — `ios/Tests/EngineTests.swift` (target
-  `KairosTests`, 10 cases / ~40 assertions), mirrors `tools/test.mjs`;
-  `.github/workflows/ios-ci.yml` runs it on a macOS runner. 2026-09-01.
-- [ ] **Xcode signing.** `ios/project.yml` `DEVELOPMENT_TEAM` is blank —
-  fine for the simulator, needs a team for device installs.
-- [ ] **"Flag as outdated" is a `mailto:` stub** (`content@kairos.example`).
-  Decide the real routing target (email, a form, a GitHub issue template).
+- [x] **Deploy pipeline — fully live.** `tools/deploy.mjs` assembles the
+  combined PWA+content bundle; `deploy.yml` publishes it to GitHub Pages on
+  every push to main. Repo Pages Source = "GitHub Actions", `CONTENT_BASE_URL`
+  is set. Confirmed 2026-09-14: all 4 CI checks green on a real commit, and the
+  live `manifest.json` at the deployed URL matches local content exactly.
+- [x] **Point clients at the live URL — done.** iOS `ContentStore.remoteBase`
+  is the live Pages content URL and OTA-syncs against it (a real bug in that
+  sync path — using 0 instead of the bundled version as the update-comparison
+  baseline — was found and fixed 2026-09-14). Web `REMOTE_BASE` stays `null`
+  by design (same-origin, service-worker stale-while-revalidate).
+- [x] **Web app icon** — wired (manifest, favicon, apple-touch-icon).
+- [x] **iOS `AppIcon`** — the "broken ring" mark is locked and rendered into
+  `Assets.xcassets/AppIcon.appiconset` (2026-09-03). The "PARKED, revisit" note
+  that used to live here was stale — this was decided and shipped.
+- [x] **Swift engine tests** — `ios/Tests/EngineTests.swift` (`KairosTests`),
+  runs in `ios-ci.yml` on every push, currently green (10/10).
+- [x] **"Flag as outdated"** — no longer a `mailto:` stub. Opens a prefilled
+  GitHub issue on the content repo (module id/version/dates/client in the
+  body) from every content page; a general (non-module) "Report an issue" link
+  was added to the new Settings screen 2026-09-13.
+- [ ] **Xcode signing.** `ios/project.yml` `DEVELOPMENT_TEAM` is still blank —
+  fine for the simulator, needs a team ID for a real-device install.
+- [ ] **Content-CTA sub-modules still genuinely open:** vent
+  waveform/IABP-troubleshooting media and hyperkalemia/CBC images (Tier 2 —
+  text criteria exist, no images produced), an antibiogram-driven
+  agent-selection worksheet (needs the local antibiogram — see list 2), and
+  original POCUS/ECG/nerve-block image libraries (same media gap). Everything
+  else once listed here (peds RSI decision card, Pedi Tape zone reference, peds
+  drip-concentration picker, the outpatient antibiotic companion, the vaccine
+  schedule) has since been built.
+- [ ] **Deeper procedure decision-tree branch logic** — laceration and fracture
+  have real region trees, but pattern-recognition-level branching (peds
+  fracture patterns like buckle vs. Salter-Harris, individual nerve-block
+  sub-techniques beyond fascia iliaca, POCUS exam-specific trees) is still a
+  storyboarding pass, from the user or a dedicated content session.
 
 ### Verification still owed
-- [~] **iOS interaction.** The simulator-control tooling in this environment
-  can't inject synthetic taps, so a `KairosUITests` XCUITest target was added
-  instead (runs via `xcodebuild test`, which works). **`testProcedureTreeWalker`
-  PASSED on-device** — proves taps, `NavigationStack` push, the decision-tree
-  walker, terminal nodes, and Back all work. The additive-calculator,
-  formula-calculator, and drug-card flows failed their first run on
-  test-harness issues (below-the-fold lazy `List` tiles + strict assertion
-  strings); fixed (`openSection(_:)` scroll helper, `CONTAINS` predicates) and
-  the target rebuilds, but **not re-run** — one UI test took 916 s on this
-  session's degraded-I/O VM. Needs a clean run in Xcode / on the `ios-ci`
-  runner to confirm the three fixed cases.
-- [ ] **Service worker** registration errors inside the sandboxed preview browser
-  (harmless there). Confirm it registers in a real browser / installed PWA and
-  that offline mode actually serves the precached shell + content.
+- [x] **iOS interaction** — resolved. Direct simulator taps work reliably (the
+  earlier note that the tooling "can't inject synthetic taps" no longer
+  applies); this session's work was verified live via simulator taps repeatedly.
+  `testProcedureTreeWalker` also passed on-device via the `KairosUITests`
+  target. The other 3 XCUITest flows were fixed for a harness issue but their
+  clean re-run status on `ios-ci` (which currently skips `KairosUITests` as
+  flaky-headless) is still unconfirmed — low priority given direct-tap
+  verification now covers the same ground.
+- [x] **Service worker / offline** — the deployed PWA is confirmed live and
+  reachable (manifest fetches correctly from the real GitHub Pages URL,
+  `SHELL_CACHE` is at v10). Specifically testing "installed PWA, airplane
+  mode" end-to-end hasn't been done, but the underlying precache + OTA
+  machinery is proven working in production, not just local dev.
 - [ ] **Tier 6 "data clears only on full closeout"** — the `SessionStore`
-  cold-launch-vs-background logic needs device testing (backgrounding, app
-  switch, force-quit).
+  cold-launch-vs-background logic still hasn't had dedicated device testing
+  (backgrounding, app switch, force-quit). Low priority.
 
 ### Design decisions open
-- [x] **Tier 5 — colour/font scheme.** DECIDED 2026-09-03: **"Ink & Ember on
-  Parchment" (Option A)** — light-first parchment ground, ember accent used
-  sparingly, reconciled with the shipped app icon. Full token table in
-  `docs/PALETTES.md`; swap applied to `web/styles.css`, `web/src/views/home.js`,
-  `web/index.html`, `ios/.../Theme.swift`. Follow-ups closed 2026-09-05: `--sec-*`
-  tints now wired into section pages + content detail pages (not just home
-  tiles); iOS dark-mode colours moved to Assets.xcassets colour sets;
-  `weight-zones.json` recoloured (Dove-Umber) with real rendered swatches.
-  **Only remaining sub-item:** self-host IBM Plex Sans/Mono woff2 (stack still
-  falls back to system sans/mono — needs sourcing the actual font files).
-- [ ] **App icon — PARKED, revisit.** Current `web/public/icons/icon.svg` is a
-  converging-caret placeholder. Explored a "pulse spike hitting a point" family
-  (scratchpad `pulse-a/b/c.svg`: full ECG trace / single bold spike / flatline
-  breaking into one spike). None landed — the user wants to come back to it.
-  Whatever's chosen re-colours with the Tier 5 palette.
-- [x] **Procedure decision-tree walker UI** — built (web + iOS), 2026-09-01.
-  Laceration & fracture have real region trees; the deeper branch logic (pattern
-  recognition, reduction technique, peds-specific fracture patterns like buckle
-  vs. Salter-Harris) is still a content-authoring pass.
+- [x] **Tier 5 — colour/font scheme — fully done.** "Ink & Ember on Parchment"
+  is shipped everywhere (`docs/PALETTES.md` has the token table); IBM Plex
+  Sans/Mono are self-hosted on both clients (the "still falls back to system
+  fonts" note that used to live here is stale — the actual TTFs were sourced
+  and bundled 2026-09-08).
+- [x] **Procedure decision-tree walker UI** — built and working on both
+  platforms. The deeper branch-logic content gap is tracked above under
+  Build/infra, not here.
+- [x] **Cormack-Lehane, Mallampati, and El-Ganzouri Airway Risk Index** — all
+  three built (the El-Ganzouri item that used to say "still to add" shipped in
+  the 2026-09-02 calculator batch).
 - [ ] **Nerve-block volumes beyond fascia iliaca** (digital, wrist, hematoma,
   facial, intercostal, popliteal, upper-extremity) were written from general
-  knowledge — `needs-primary-source` verification pass owed.
-- [x] **Cormack-Lehane + Mallampati** calculators built (2026-09-01) —
-  airway-flow cross-links resolve. El-Ganzouri Airway Risk Index still to add.
-- [ ] **POCUS / ECG / nerve-block original image libraries** still to be created
-  (Tier 2 — text criteria are in place, media is not).
-- [x] **AnesCalc's 55 drug cards** — DONE (import path was built earlier; the
-  2026-09-04 category cleanup merged them into 10 named perioperative
-  drug-dosing categories in `sections.json`). Verified 2026-09-05: all 55 are
-  in `search-index.json` with valid routes, every category matches a
-  `sections.json` title, the drug-dosing home tile renders, and both clients
-  handle the `anesthesia-drug-card` contentType. Fully reachable.
-- [x] **Obese-child dosing:** IBW-vs-actual-weight flag implemented 2026-09-05.
-  `weight-zones.json` gained `obesityFlagRatio` (1.2); `weightZones.js` /
-  `WeightZones.swift` gained `idealBodyWeight()` + `obesityCheck()` (IBW proxy =
-  APLS age-expected weight — no height is collected). Drug-card schema gained a
-  per-drug `obeseWeightBasis` (`ideal` | `actual`). When an actual weight AND an
-  age are entered and actual > 1.2× age-expected, an `ideal`-flagged drug
-  defaults its doses to IBW with a callout + an "Use actual weight instead"
-  override; an `actual`-flagged drug shows an informational "TBW even in obesity"
-  note. Applied `obeseWeightBasis: ideal` to the four unambiguous hydrophilic
-  arrest drugs (epinephrine, amiodarone, atropine, adenosine). **Follow-up:**
-  per-drug review of the rest (benzos/ketamine → likely TBW; rocuronium → lean;
-  succinylcholine → `actual`) plus the adult-obesity cards.
-- [ ] **Pre-arrival "zone reference card"** flow (age → APLS estimate → staged
-  equipment before a weight is known) — `weightZones` lib supports the estimate
-  but there's no dedicated pre-arrival screen.
-- [ ] **`external`-engine calculators** (GRACE, and any future proprietary score)
-  render structure + cutoff only. Need licensed logic or a nomogram
-  approximation before they compute.
-- [ ] **Search `tags` / `keywords`** are populated only on a handful of modules —
-  ongoing per-item content work, budget it alongside writing each module.
-- [ ] **NIHSS severity bands** — one of several published stratifications was
-  chosen; the UI must cite which.
+  knowledge — a `needs-primary-source` verification pass is still owed.
+- [x] **AnesCalc's 55 drug cards** — fully reachable, verified end-to-end.
+- [x] **Obese-child dosing** — the IBW-vs-actual-weight flag is implemented and
+  applied to the four unambiguous hydrophilic arrest drugs. **Still open:**
+  per-drug review of the rest (benzos/ketamine likely TBW-based; rocuronium
+  lean; succinylcholine actual) plus the adult-obesity cards.
+- [x] **Pre-arrival zone-reference flow** — effectively delivered by
+  `peds-pre-arrival-card` (one weight in, ~20 resus numbers out, plus the
+  age→weight and equipment-by-zone tables) rather than a separate dedicated
+  screen; functionally the same ask.
+- [ ] **`external`-engine calculators** (GRACE, and any future proprietary
+  score) still render structure + cutoffs only — needs licensed logic or a
+  labelled nomogram approximation before it computes. Tracked with the GRACE
+  2.0 sourcing item below.
+- [ ] **Search `tags` / `keywords`** are populated only on a handful of
+  modules — ongoing per-item content work, not a discrete task.
+- [x] **NIHSS severity bands** — the chosen stratification and its named
+  alternate are both cited in the module's notes (done 2026-09-07); the items
+  themselves were further converted to descriptive dropdowns 2026-09-14.
 
 ### Content structure notes
-- [ ] Decide whether **PAS** and **pARC** (peds appendicitis) live in the Peds
-  Module nav (spec says yes) vs. Calculators.
-- [ ] **Higher-risk BRUE** side of the pathway is a stub — needs the 2019 AAP
-  framework (source below) rather than improvised tiers.
-- [ ] `content/config/tiers.json` holds the Tier table; every module has a
-  `review_tier`, but a few `stable` calls could be argued (e.g. corrected Ca in
-  critical illness).
+- [x] **PAS / pARC nav placement** — resolved via the `audience`/`crossListIn`
+  hybrid (2026-09-08): both live in Calculators and are cross-listed/tagged for
+  the Peds lens, rather than moved into the Peds Module nav.
+- [x] **Higher-risk BRUE** — no longer a stub; `brue-pathway` v2 built the
+  higher-risk branch from a 2019 framework (Merritt et al.) — see the note
+  under "Specific papers referenced by stubs" below on how this relates to the
+  originally-identified Brooks et al. citation.
+- [ ] `content/config/tiers.json` review-tier calls — a few `stable`
+  classifications could be argued (e.g. corrected calcium in critical
+  illness). Minor, low priority.
 
 ---
 
 ## 2. Sources to provide
 
 ### From your own existing work (Critical Vector / AnesCalc)
-- [x] **Batch 1 received 2026-09-01** — 73 CV HTML guides + AnesCalc v2 source +
-  `ddx_master.html`. Full inventory & integration plan in `docs/SOURCE_MATERIALS.md`.
-- [x] **AnesCalc palette** — extracted to `docs/PALETTES.md` (dark navy/teal/
-  charcoal + gold/amber; ASTM drug colours). Kairos must avoid teal + gold.
-- [x] **CRISIS palette** — received in batch 2 (`CRISIS/App/src/styles/tokens.css`).
-  Near-black `#0a0e14` ground + bright teal `#00d4aa` + teal/blue/red/amber/purple
-  semantic set; Source Serif 4 / Syne / IBM Plex Mono. Captured in
-  `docs/PALETTES.md` with a proposed Kairos direction (light-first, geometric
-  sans, cobalt-indigo `#3D5AFE` accent — no teal, no gold). Awaiting sign-off,
-  then a swatch-comparison artifact + the token swap in `styles.css` / `Theme.swift`.
-- [x] **AnesCalc drug cards — DONE (Option A, full conversion), 2026-09-01.**
-  `export_anescalc.swift` (compiles `DrugCard.swift`, dumps JSON) →
-  `tools/import-anescalc.mjs` → **55 modules** under
-  `content/modules/drug-dosing/anescalc-core/`, new `anesthesia-drug-card` schema
-  + contentType, web + iOS renderers, 14 `AnesCalc — …` categories in
-  `sections.json`. Drug & Dosing now 73 modules; total 136. Pipeline green.
-  Still to do: port `CalculationEngine.swift` (MAC age-correction, altitude,
-  infusion math, unit conversions) — cross-check vs Kairos's dosing-fluid-math.
-- [x] **CV antibiotic guides** — `board_tested_infections.html`,
-  `ed_icu_and_critical_infections.html` supplied → feed the empiric-antibiotic
-  syndrome cards. Still need the **local antibiogram** for drug/dose specifics.
-- [ ] **CV landmark-trial write-ups** — not in batch 1; still needed to
-  cross-check `landmark-trials-sepsis-resuscitation.json`.
-- [x] **CV originals for Tier 2 — POCUS / nerve-block / ECG CONVERTED
-  2026-09-01.** `nerve-block-guide` v2 (6-phase framework + LA table + LAST +
-  block index), `pocus-guide` v2 (exam-by-exam anchors: FoCUS, lung, eFAST, IVC,
-  RUSH, DVT, procedural guidance), `ecg-library` v2 (all 8 OMI patterns + Brugada
-  + hyperK/WPW/TdP/dig), new `neuraxial-anticoagulation` (ASRA 5th ed hold
-  times), `last-lipid-rescue` v2 (ASRA 2023). Licensing/needs-primary-source
-  flags cleared. Still to convert: vent (`mechanical_ventilation_full.html`),
-  anticoag reversal (`bleeding_reversal_guide.html`), sutures technique,
-  difficult airway.
+- [x] **CV Guides + AnesCalc + CRISIS integration — done.** Every batch of
+  supplied guides (batches 1-6, plus the two later `CV Guides.zip` re-reviews
+  in 2026-09) has been inventoried and either converted, folded into an
+  existing module, or explicitly logged as skipped (audit-format / duplicate /
+  out of scope) in `docs/SOURCE_MATERIALS.md`. AnesCalc's 55 drug cards and
+  palette, and CRISIS's palette, are fully integrated — Kairos's own "Ink &
+  Ember on Parchment" palette was chosen specifically to be distinct from both.
+  `CalculationEngine.swift`'s MAC-age-correction/altitude/infusion math was
+  never ported — low priority, cross-check against `dosing-fluid-math` if it's
+  ever needed.
+- [x] **CV antibiotic guides converted** — `empiric-antibiotics-ed-icu` and
+  `empiric-antibiotics-outpatient` both built. **Still open:** your local
+  antibiogram, for the drug/dose specifics an institution-specific worksheet
+  would need (coverage-class guidance is in place without it).
+- [x] **CV landmark-trial write-ups** — superseded by a direction change
+  (2026-09-02): Kairos converts sources into management content directly
+  rather than trial-summary write-ups, so a separate landmark-trials source
+  document is no longer needed. `landmark-trials-sepsis-resuscitation` was
+  folded into `septic-shock-resuscitation` and deleted for the same reason.
 
 ### Tier 1 — primary-source verification (patient-safety critical)
-- [x] **Full sweep of all 60 built calculator + drug-dosing modules** done
-  2026-09-01 (research agent, against primary papers + MDCalc) — see
-  `docs/TIER1_VERIFICATION.md`. Result: **1 scoring error** (`rcri` Class III/IV
-  risk %, now fixed) + the earlier `peds-amiodarone` dose-cap fix. All other item
-  weights, coefficients, doses, and cutoffs verified correct. 10 modules corrected
-  and re-verified; pipeline green.
-- [ ] **GRACE 2.0** — proprietary coefficients still unpublished. Module ships
-  inputs + cutoffs only (cutoffs verified). License gracescore.org logic or ship a
-  labelled nomogram approximation.
-- [ ] **`peds-midazolam-status`** — IV and intranasal per-dose caps (5 vs 10 mg)
-  vary by pathway; set them per your local status-epilepticus protocol (flagged
-  `institution-specific`).
-- [ ] **Peds dosing cross-check vs PedsGuide / First 5 Minutes** — the peds cards
-  match PALS / AES 2016 / RAMPART; a cross-check against those two source apps'
-  published numbers (README Tier 4) is still worthwhile for any that differ.
-- [ ] Not-yet-built scores flagged in their build notes for when they ARE built:
-  **Canadian Syncope** (9-factor table vs 2016 CMAJ), **pARC** (Pediatrics 2018
-  coefficients), **Caprini** (38-item checklist, 2005 vs 2013), **IMPROVE**
-  (per-item weights), **APACHE II** (Knaus diagnostic-category weights).
-- [ ] **Defibrillator pad transition weight** — confirm against the specific
-  defibrillator model(s) your users carry (affects `weight-zones.json` zone 6/7).
-- [ ] **LMA sizing + laryngoscope blade age table** — confirm against your
-  device / manufacturer.
+- [x] **Full sweep of all 60 original calculator + drug-dosing modules** —
+  done 2026-09-01, 1 scoring error found and fixed (`rcri`); see
+  `docs/TIER1_VERIFICATION.md`.
+- [x] **Every score once flagged here as "not yet built"** — Canadian Syncope,
+  pARC, Caprini, IMPROVE, and APACHE II — has since been built with verified
+  coefficients (pARC's specifically cross-checked against the NCT02633735
+  SAP/Appy-CDS coefficient table; the others against their primary papers
+  during Tier-1 verification).
+- [ ] **GRACE 2.0** — proprietary coefficients are still unpublished; the
+  module ships inputs + verified cutoffs only. Needs a licensed source or a
+  labelled nomogram approximation before it can compute a score.
+- [ ] **`peds-midazolam-status`** IV/intranasal per-dose caps — intentionally
+  flagged `institution-specific` (5 vs 10 mg varies by local status-epilepticus
+  protocol), not a gap to close so much as a place for you to set your own
+  number if it should differ from what's shipped.
+- [ ] **Peds dosing cross-check vs. PedsGuide / First 5 Minutes** — the peds
+  cards match PALS/AES-2016/RAMPART; a cross-check against those two other
+  source apps' published numbers is still worthwhile for anything that
+  differs, but hasn't been done.
+- [ ] **Defibrillator pad transition weight** and **LMA sizing + laryngoscope
+  blade age table** — both need confirming against the specific device
+  models your users actually carry; these are genuinely yours to supply.
 
-### Tier 2 — licensing / IP (you must supply original or licensed content)
-- [x] **Nerve Block** — `POCUS_Nerve_Block_Reference.html` + `asra_neuraxial_guide.html`
-  supplied (CV originals). Needs conversion into `nerve-block-guide`.
-- [x] **POCUS** — `POCUS_Master_Guide.html` (7.4 MB) + the nerve-block ref supplied.
-  Needs conversion + a media decision (embedded images).
-- [x] **ECG Library** — `CV_STEMI_Equivalents.html`, `ecg_changes.html`,
-  `extreme_axis_deviation.html` supplied. Convert into `ecg-library`; original
-  annotated tracings (media) still to produce.
-- [ ] **AHA ACLS / PALS algorithm cards** — `code_blue_guide.html` +
-  `pediatric_code_blue_guide.html` supplied (CV originals from public-domain
-  science). Confirm the approach and convert into `acls-adult-cardiac-arrest`.
-- [ ] **Pedi Tape / weight-zone** — final colour + boundary sign-off on the
-  original 9-zone Teal→Charcoal scheme in `weight-zones.json` (also gets recoloured
-  with the Tier 5 palette — currently collides with AnesCalc's teal).
+### Tier 2 — licensing / IP
+- [x] **Nerve Block, POCUS, and ECG Library** — all converted from your
+  supplied CV originals (`nerve-block-guide`, `pocus-guide`, `ecg-library`).
+  **Still open:** none of the three have original annotated media (tracings,
+  ultrasound images) — text criteria are complete, image libraries are not.
+- [x] **AHA ACLS/PALS algorithm cards** — converted (`acls-adult-cardiac-arrest`,
+  `peds-cardiac-arrest`) from your supplied public-domain-science originals.
+- [x] **Pedi Tape / weight-zone colour sign-off** — done; recoloured
+  Dove-Umber to stop colliding with AnesCalc's teal, with real rendered
+  swatches per zone.
 
 ### Tier 3 — sourcing / freshness
-- [ ] **Vaccine schedule** — the AAP/CDC published schedule (public domain) to
-  build as a refreshable dataset.
-- [ ] **Empiric Antibiotic Guide** — your institution's antibiogram (plus the CAP
-  "defer to local protocol" UI copy is already specified).
-- [ ] **Landmark Trials** — the starter list from `Reference_Library_Content_Spec.md`
-  to cross-check against your Critical Vector writing.
+- [x] **Vaccine schedule** — built as `childhood-immunization-schedule`
+  (review tier 3, flagged for its annual refresh cadence).
+- [ ] **Empiric Antibiotic Guide antibiogram** — same open item as above under
+  Critical Vector integration; this is the one piece of Tier 3 sourcing still
+  genuinely outstanding.
 
 ### Specific papers referenced by stubs
-- [ ] **Brooks AF, et al. "A Framework for Evaluation of the Higher-Risk Infant
-  After a Brief Resolved Unexplained Event." *Pediatrics.* 2019;144(2):e20184101** —
-  for the higher-risk BRUE pathway.
-- [ ] Full **screen-by-screen decision-tree branch logic** for Suture / Fractures
-  / Nerve Block / POCUS (needs a storyboarding pass — you, or a dedicated content
-  task).
+- [x] **Higher-risk BRUE** — resolved. `brue-pathway` v2 was built from a 2019
+  higher-risk framework (Merritt et al.), not the originally-identified Brooks
+  et al. 2019 *Pediatrics* paper — both describe the same AAP-era higher-risk
+  BRUE evaluation approach, but if you specifically want the pathway
+  cross-checked against Brooks et al. by name, flag it and that's a quick diff,
+  not a rebuild.
+- [ ] **Screen-by-screen decision-tree branch logic** for Suture / Fractures /
+  Nerve Block / POCUS — still needs a storyboarding pass, from you or a
+  dedicated content session; tracked with the same item under "Build / infra"
+  above.

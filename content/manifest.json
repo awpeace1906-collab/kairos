@@ -2064,6 +2064,15 @@
       "review_tier": 2,
       "next_review_due": "2027-03-09"
     },
+    "reference-library/brain-death-determination": {
+      "content_version": 1,
+      "hash": "9b05cdbc2f5e9f21",
+      "path": "modules/reference-library/brain-death-determination.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-14"
+    },
     "reference-library/capnography": {
       "content_version": 3,
       "hash": "988d2e9e304607f2",
@@ -2336,7 +2345,7 @@
     },
     "reference-library/icp-tbi-management": {
       "content_version": 3,
-      "hash": "7bbcce35cce26d02",
+      "hash": "8fe0fc2d93b87cb2",
       "path": "modules/reference-library/icp-tbi-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2604,6 +2613,15 @@
       "review_tier": 1,
       "next_review_due": "2027-03-03"
     },
+    "reference-library/primary-palliative-care-icu": {
+      "content_version": 1,
+      "hash": "9e912da8e72490f5",
+      "path": "modules/reference-library/primary-palliative-care-icu.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-14"
+    },
     "reference-library/radiation-decorporation-dosing": {
       "content_version": 1,
       "hash": "5acbc3e6160af90f",
@@ -2792,6 +2810,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2027-09-03"
+    },
+    "reference-library/traumatic-cardiac-arrest": {
+      "content_version": 1,
+      "hash": "ac34b12bb286187a",
+      "path": "modules/reference-library/traumatic-cardiac-arrest.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-14"
     },
     "reference-library/twelve-lead-stemi-criteria": {
       "content_version": 3,

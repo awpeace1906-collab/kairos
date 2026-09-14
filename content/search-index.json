@@ -6177,6 +6177,40 @@
       ]
     },
     {
+      "id": "brain-death-determination",
+      "title": "Brain Death / Death by Neurologic Criteria",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "brain death",
+        "DNC",
+        "apnea test",
+        "ancillary testing",
+        "neurocritical care",
+        "ICU",
+        "organ donation"
+      ],
+      "keywords": [
+        "prerequisites normothermia normotension no confounders",
+        "coma plus absent brainstem reflexes plus apnea test",
+        "apnea test PaCO2 rise ≥20 and total ≥60",
+        "EEG no longer recommended 2023",
+        "two exams for peds separated by observation period",
+        "high cervical injury needs ancillary test",
+        "brain death exam",
+        "BD/DNC",
+        "death by neurologic criteria",
+        "apnea test",
+        "ancillary testing brain death"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/brain-death-determination",
+      "settingEmphasis": [
+        "icu",
+        "ed"
+      ]
+    },
+    {
       "id": "tox-cannabinoids-inhalants",
       "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
       "section": "Reference Library",
@@ -6673,6 +6707,43 @@
       "route": "/reference-library/critical-care/padis-bundle",
       "settingEmphasis": [
         "icu"
+      ]
+    },
+    {
+      "id": "primary-palliative-care-icu",
+      "title": "Primary Palliative Care & Comfort-Focused Transitions in the ICU",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "palliative care",
+        "goals of care",
+        "comfort care",
+        "terminal extubation",
+        "family meeting",
+        "ICU",
+        "end of life"
+      ],
+      "keywords": [
+        "primary vs specialty palliative care",
+        "surprise question prognostic trigger",
+        "ask tell ask",
+        "NURSE mnemonic responding to emotion",
+        "avoid do you want everything framing",
+        "premedicate before terminal extubation",
+        "principle of double effect titrate to symptoms not a fixed dose",
+        "discontinue what no longer informs care",
+        "goals of care conversation",
+        "comfort care",
+        "terminal extubation",
+        "compassionate extubation",
+        "withdrawal of life support",
+        "family meeting ICU"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/primary-palliative-care-icu",
+      "settingEmphasis": [
+        "icu",
+        "ed"
       ]
     },
     {
@@ -9788,6 +9859,43 @@
       "settingEmphasis": [
         "ed",
         "prehospital"
+      ]
+    },
+    {
+      "id": "traumatic-cardiac-arrest",
+      "title": "Traumatic Cardiac Arrest",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "trauma",
+        "cardiac arrest",
+        "hemorrhage",
+        "tension pneumothorax",
+        "tamponade",
+        "resuscitative thoracotomy",
+        "REBOA",
+        "ED",
+        "prehospital"
+      ],
+      "keywords": [
+        "treat reversible causes before or instead of ACLS drugs",
+        "bilateral finger thoracostomy not just needle",
+        "resuscitative thoracotomy penetrating recent loss of vitals",
+        "compressions lower priority than reversible-cause treatment",
+        "commotio cordis is the exception where defibrillation matters",
+        "blood products not crystalloid",
+        "TCA",
+        "trauma arrest",
+        "hemorrhagic arrest",
+        "traumatic PEA",
+        "resuscitative thoracotomy criteria"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/traumatic-cardiac-arrest",
+      "settingEmphasis": [
+        "ed",
+        "prehospital",
+        "icu"
       ]
     },
     {

@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 641,
+  "count": 650,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -1138,6 +1138,18 @@
       ]
     },
     {
+      "text": "Greer DM, Kirschen MP, Lewis A, et al. Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Guideline. Neurology. 2023;101(24):1112-1132 (AAN/AAP/CNS/SCCM).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "brain-death-determination",
+          "title": "Brain Death / Death by Neurologic Criteria",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/brain-death-determination"
+        }
+      ]
+    },
+    {
       "text": "Griffiths R, White SM, Moppett IK, et al. Safety guideline: reducing the risk from cemented hemiarthroplasty for hip fracture (Association of Anaesthetists of GB & Ireland / British Orthopaedic Association / British Geriatrics Society). Anaesthesia. 2015;70(5):623-626",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1342,6 +1354,18 @@
       ]
     },
     {
+      "text": "Lott C, Truhlář A, Alfonzo A, et al. European Resuscitation Council Guidelines 2021: Cardiac arrest in special circumstances. Resuscitation. 2021;161:152-219 (traumatic cardiac arrest section).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "traumatic-cardiac-arrest",
+          "title": "Traumatic Cardiac Arrest",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/traumatic-cardiac-arrest"
+        }
+      ]
+    },
+    {
       "text": "Metcalf RA et al. Platelet Transfusion: 2025 AABB & ICTMG Guidelines. JAMA 2025;334(7):606-617",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1498,6 +1522,18 @@
       ]
     },
     {
+      "text": "Rotondo MF, et al. Practice management guidelines for resuscitative thoracotomy. J Trauma. 2001 / EAST guideline update — resuscitative thoracotomy indications by mechanism.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "traumatic-cardiac-arrest",
+          "title": "Traumatic Cardiac Arrest",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/traumatic-cardiac-arrest"
+        }
+      ]
+    },
+    {
       "text": "SCAI SHOCK Stage Classification Expert Consensus Update. J Soc Cardiovasc Angiogr Interv 2022;1:100008",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1642,6 +1678,18 @@
       ]
     },
     {
+      "text": "Truog RD, Campbell ML, Curtis JR, et al. Recommendations for end-of-life care in the ICU: a consensus statement by the American College of Critical Care Medicine. Crit Care Med. 2008 (ventilator-withdrawal technique, principle of double effect).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "primary-palliative-care-icu",
+          "title": "Primary Palliative Care & Comfort-Focused Transitions in the ICU",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/primary-palliative-care-icu"
+        }
+      ]
+    },
+    {
       "text": "Umpierrez GE, Davis GM, ElSayed NA, et al. Hyperglycaemic crises in adults with diabetes: a consensus report (ADA/EASD/AACE/JBDS/DTS). Diabetologia. 2024;67(8):1455-1479",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1662,6 +1710,18 @@
           "title": "Radiation — Thyroid Blocking & Decorporation Dosing",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/radiation-decorporation-dosing"
+        }
+      ]
+    },
+    {
+      "text": "Wijdicks EFM, et al. Evidence-based guideline update: determining brain death in adults. Neurology. 2010 (superseded by the 2023 consensus guideline for most elements; cited for historical context on EEG's removal).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "brain-death-determination",
+          "title": "Brain Death / Death by Neurologic Criteria",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/brain-death-determination"
         }
       ]
     },
@@ -2344,6 +2404,18 @@
       ]
     },
     {
+      "text": "Quill TE, Abernethy AP. Generalist plus specialist palliative care — creating a more sustainable model. NEJM. 2013;368(13):1173-1175 (primary vs. specialty palliative care framework).",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "primary-palliative-care-icu",
+          "title": "Primary Palliative Care & Comfort-Focused Transitions in the ICU",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/primary-palliative-care-icu"
+        }
+      ]
+    },
+    {
       "text": "REVISE Trial (pantoprazole stress-ulcer prophylaxis, n=4,821)",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -3000,6 +3072,18 @@
           "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-cannabinoids-inhalants"
+        }
+      ]
+    },
+    {
+      "text": "American College of Surgeons Committee on Trauma. ATLS 10th Edition — thoracic trauma and resuscitative thoracotomy criteria.",
+      "group": "Reference texts & drug libraries",
+      "usedBy": [
+        {
+          "id": "traumatic-cardiac-arrest",
+          "title": "Traumatic Cardiac Arrest",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/traumatic-cardiac-arrest"
         }
       ]
     },
@@ -4296,6 +4380,18 @@
           "title": "Blast Injury — Taxonomy, Primary Blast & Blast TBI",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/blast-injury"
+        }
+      ]
+    },
+    {
+      "text": "Back AL, Arnold RM, Tulsky JA. Mastering Communication with Seriously Ill Patients — Ask-Tell-Ask and NURSE frameworks.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "primary-palliative-care-icu",
+          "title": "Primary Palliative Care & Comfort-Focused Transitions in the ICU",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/primary-palliative-care-icu"
         }
       ]
     },
@@ -6018,6 +6114,18 @@
           "title": "Ventilator Management",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/ventilator-management"
+        }
+      ]
+    },
+    {
+      "text": "IPAL-ICU Project (CAPC) — Improving Palliative Care in the ICU, clinical and communication tools.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "primary-palliative-care-icu",
+          "title": "Primary Palliative Care & Comfort-Focused Transitions in the ICU",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/primary-palliative-care-icu"
         }
       ]
     },

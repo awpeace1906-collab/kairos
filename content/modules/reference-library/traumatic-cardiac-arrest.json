@@ -1,0 +1,149 @@
+{
+  "id": "traumatic-cardiac-arrest",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Traumatic Cardiac Arrest",
+  "settingEmphasis": [
+    "ed",
+    "prehospital",
+    "icu"
+  ],
+  "aliases": [
+    "TCA",
+    "trauma arrest",
+    "hemorrhagic arrest",
+    "traumatic PEA",
+    "resuscitative thoracotomy criteria"
+  ],
+  "tags": [
+    "trauma",
+    "cardiac arrest",
+    "hemorrhage",
+    "tension pneumothorax",
+    "tamponade",
+    "resuscitative thoracotomy",
+    "REBOA",
+    "ED",
+    "prehospital"
+  ],
+  "keywords": [
+    "treat reversible causes before or instead of ACLS drugs",
+    "bilateral finger thoracostomy not just needle",
+    "resuscitative thoracotomy penetrating recent loss of vitals",
+    "compressions lower priority than reversible-cause treatment",
+    "commotio cordis is the exception where defibrillation matters",
+    "blood products not crystalloid"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2027-03-14",
+  "review_tier": 1,
+  "sources": [
+    "Lott C, Truhlář A, Alfonzo A, et al. European Resuscitation Council Guidelines 2021: Cardiac arrest in special circumstances. Resuscitation. 2021;161:152-219 (traumatic cardiac arrest section).",
+    "American College of Surgeons Committee on Trauma. ATLS 10th Edition — thoracic trauma and resuscitative thoracotomy criteria.",
+    "Rotondo MF, et al. Practice management guidelines for resuscitative thoracotomy. J Trauma. 2001 / EAST guideline update — resuscitative thoracotomy indications by mechanism."
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-14",
+      "change": "Initial entry — a genuine content gap (Kairos had no traumatic-arrest-specific algorithm; hemorrhagic-shock-mtp covers pre-arrest fluid/blood strategy but not the arrest algorithm itself). Built from ERC 2021 special-circumstances guideline + ATLS resuscitative thoracotomy criteria."
+    }
+  ],
+  "related": [
+    "hemorrhagic-shock-mtp",
+    "penetrating-regional-trauma",
+    "trauma-primary-survey",
+    "code-leadership-run-the-room",
+    "acls-adult-cardiac-arrest"
+  ],
+  "summary": "Traumatic cardiac arrest is not a medical code — the cause is almost always a mechanical, reversible problem. This is the reversible-cause-first sequence, resuscitative thoracotomy criteria, and where standard ACLS logic doesn't apply.",
+  "whyThisMatters": "Running a traumatic arrest like a medical arrest — cycling epinephrine, focusing on compressions and rhythm — treats the wrong problem: an empty, hypovolemic heart or an obstructed one doesn't restart because of epinephrine or compressions. Outcomes turn on how fast the reversible cause is found and fixed, not on following the standard algorithm.",
+  "clinicalTakeaway": "Work the reversible causes in parallel with (or ahead of) any drugs: stop external hemorrhage first, then bilateral chest decompression, then address tamponade, then replace volume with blood, not crystalloid. Compressions and epinephrine are not the priority in a hypovolemic arrest — don't let them delay the interventions that actually fix the cause.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why this isn't a standard code"
+    },
+    {
+      "type": "text",
+      "text": "Medical cardiac arrest is usually a primary electrical or ischemic cardiac event in a heart that was otherwise adequately filled — compressions and epinephrine make physiologic sense there. Traumatic arrest is nearly always caused by one of four mechanical, reversible problems: hypovolemia (hemorrhage), hypoxia, tension pneumothorax, or cardiac tamponade. Standard ACLS drugs and a compressions-first approach do not fix any of these — only finding and treating the specific cause does."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The sequence — reversible causes first"
+    },
+    {
+      "type": "list",
+      "items": [
+        "1. Stop catastrophic external hemorrhage immediately — direct pressure, wound packing, a tourniquet on any bleeding extremity. This takes priority over almost everything else, including initial airway management if a limb is exsanguinating.",
+        "2. Airway — basic maneuvers and oxygenation; a definitive airway if it doesn't interrupt the interventions below.",
+        "3. Bilateral chest decompression for tension pneumothorax — finger thoracostomy (or needle decompression as a bridge) on BOTH sides, not just the clinically-suspected side. Exam findings (breath sounds, tracheal deviation) are unreliable in a loud, chaotic resuscitation, and bilateral chest trauma is common.",
+        "4. Address tamponade — pericardiocentesis can be temporizing, but resuscitative thoracotomy (below) is the definitive move for the arrested patient with suspected tamponade or a penetrating chest wound.",
+        "5. Control non-compressible hemorrhage — pelvic binder for a suspected pelvic fracture, tourniquets for extremity sources; REBOA or thoracotomy with aortic cross-clamp for non-compressible torso hemorrhage where the resources and expertise exist.",
+        "6. Replace volume with blood products, not crystalloid — activate massive transfusion (see hemorrhagic-shock-mtp)."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Where TCA breaks from standard ACLS"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Compressions are lower priority. In a hypovolemic, empty heart, compressions generate little to no coronary or cerebral perfusion — they should not delay chest decompression, hemorrhage control, or volume replacement, though they're still reasonable to run simultaneously if staffing allows.",
+        "Epinephrine is not the priority intervention, and there's no evidence it changes outcome in TCA before the reversible cause is addressed — treat the cause first.",
+        "Rhythm is usually PEA, not a shockable rhythm. Defibrillation only helps if the rhythm is genuinely VF/VT.",
+        "Commotio cordis is the exception: a blunt, low-energy chest wall impact (typically sport-related) can trigger true VF in a structurally normal heart — this is one traumatic-arrest scenario where standard defibrillation is exactly the right move."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Resuscitative (ED) thoracotomy — who qualifies"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Mechanism",
+        "Best candidates",
+        "Poor candidates"
+      ],
+      "rows": [
+        [
+          "Penetrating chest trauma",
+          "Witnessed loss of vital signs within ~10-15 minutes of arrival, or signs of life lost en route with a short transport time",
+          "No signs of life at the scene with prolonged (>15 min) prehospital CPR and no response"
+        ],
+        [
+          "Penetrating trauma, other body region",
+          "Signs of life on arrival with a rapidly correctable cause",
+          "Prolonged downtime, no signs of life throughout"
+        ],
+        [
+          "Blunt trauma",
+          "Witnessed arrest with signs of life on ED arrival — much lower survival than penetrating",
+          "Blunt arrest with prehospital CPR > 10 minutes and no signs of life; generally not indicated"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "\"Signs of life\" — pupillary response, spontaneous respiration, organized ECG activity, or a palpable pulse — at any point after the injury meaningfully changes the calculus toward attempting thoracotomy or continued aggressive resuscitation; their sustained absence, especially with a long downtime, is the strongest reason to stop."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Termination of resuscitation"
+    },
+    {
+      "type": "text",
+      "text": "Many EMS and trauma systems use TCA-specific termination criteria distinct from medical arrest — check your local protocol. General features across most: no organized cardiac activity or signs of life after the reversible causes above have genuinely been addressed (not just \"a code was run\"), and for blunt trauma, an extended downtime without signs of life is itself a reason not to transport or to stop."
+    }
+  ]
+}

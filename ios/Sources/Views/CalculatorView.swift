@@ -137,8 +137,12 @@ struct CalculatorView: View {
         switch calc.engine {
         case .additive:
             if result.incomplete {
-                Text("Answer all \(result.totalItems) items — \(result.answered) done")
-                    .foregroundStyle(.secondary)
+                VStack(alignment: .leading, spacing: 6) {
+                    ProgressView(value: Double(result.answered), total: Double(result.totalItems))
+                        .tint(Theme.accent)
+                    Text("\(result.answered) of \(result.totalItems) answered")
+                        .font(Theme.mono(12)).foregroundStyle(.secondary)
+                }
             } else {
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Score \(fmt(result.score))").font(Theme.title3)

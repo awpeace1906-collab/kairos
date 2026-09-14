@@ -343,14 +343,15 @@ actionable residue folds into existing modules instead.
   `acute-dyspnea-niv` (v3) — hypoxic-drive teaching is overweighted vs. the
   dominant V/Q-mismatch (hypoxic pulmonary vasoconstriction reversal) mechanism;
   SpO2 88–92% target, never withhold O2 out of drive-suppression fear.
-- **Flagged as genuine content-gap candidates — not yet built** (deserve a
-  careful primary-source build next session, not a rushed one):
-  `brain-death-bd-dnc-framework` (BD/DNC determination pathway — Kairos has
-  no existing module on this at all), `traumatic-cardiac-arrest`
-  (reversible-cause-first algorithm, meaningfully distinct from a medical
-  ACLS code), `primary-palliative-care-icu` + `comfort-focused-care-transition`
-  (ICU comfort-focused-care transition — likely one combined module; also a
-  content gap).
+- 🟢 **Built 2026-09-14** (→ 321 modules): `brain-death-determination` (2023
+  AAN/AAP/CNS/SCCM consensus guideline — prerequisites, clinical exam, apnea
+  test, ancillary testing, EEG's removal from the pathway), `traumatic-cardiac-arrest`
+  (ERC 2021 special-circumstances guideline + ATLS — reversible-cause-first
+  sequence, resuscitative thoracotomy criteria table), `primary-palliative-care-icu`
+  (combines the flagged `primary-palliative-care-icu` + `comfort-focused-care-transition`
+  audit pages into one module, written from standard palliative-medicine
+  sources — goals-of-care triggers, Ask-Tell-Ask/NURSE frameworks, what
+  changes with comfort-focused care, terminal-extubation technique).
 - **Skip — duplicates existing coverage:** `code-blue-leadership` (already
   covered by `code-leadership-run-the-room`), `hemorrhagic-shock-crystalloid`
   (already covered by `hemorrhagic-shock-mtp` v2's crystalloid-harm section),

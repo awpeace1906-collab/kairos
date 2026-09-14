@@ -1,0 +1,172 @@
+{
+  "id": "primary-palliative-care-icu",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Primary Palliative Care & Comfort-Focused Transitions in the ICU",
+  "settingEmphasis": [
+    "icu",
+    "ed"
+  ],
+  "aliases": [
+    "goals of care conversation",
+    "comfort care",
+    "terminal extubation",
+    "compassionate extubation",
+    "withdrawal of life support",
+    "family meeting ICU"
+  ],
+  "tags": [
+    "palliative care",
+    "goals of care",
+    "comfort care",
+    "terminal extubation",
+    "family meeting",
+    "ICU",
+    "end of life"
+  ],
+  "keywords": [
+    "primary vs specialty palliative care",
+    "surprise question prognostic trigger",
+    "ask tell ask",
+    "NURSE mnemonic responding to emotion",
+    "avoid do you want everything framing",
+    "premedicate before terminal extubation",
+    "principle of double effect titrate to symptoms not a fixed dose",
+    "discontinue what no longer informs care"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2027-03-14",
+  "review_tier": 1,
+  "sources": [
+    "Quill TE, Abernethy AP. Generalist plus specialist palliative care — creating a more sustainable model. NEJM. 2013;368(13):1173-1175 (primary vs. specialty palliative care framework).",
+    "Back AL, Arnold RM, Tulsky JA. Mastering Communication with Seriously Ill Patients — Ask-Tell-Ask and NURSE frameworks.",
+    "Truog RD, Campbell ML, Curtis JR, et al. Recommendations for end-of-life care in the ICU: a consensus statement by the American College of Critical Care Medicine. Crit Care Med. 2008 (ventilator-withdrawal technique, principle of double effect).",
+    "IPAL-ICU Project (CAPC) — Improving Palliative Care in the ICU, clinical and communication tools."
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-14",
+      "change": "Initial entry — combines two flagged content gaps (primary palliative care skills + the comfort-focused-care transition) into one module: recognizing when a goals-of-care conversation is due, how to structure it, and what actually changes when a patient transitions to comfort-focused care, including terminal extubation technique."
+    }
+  ],
+  "related": [
+    "brain-death-determination",
+    "icp-tbi-management"
+  ],
+  "summary": "The palliative-care skills every ICU/ED clinician needs without a consult — recognizing when a goals-of-care conversation is due, structuring it, and what concretely changes (medications, monitoring, ventilator withdrawal) once a patient transitions to comfort-focused care.",
+  "whyThisMatters": "Specialty palliative care is not always available, and even when it is, every intensivist and emergency clinician still needs baseline competency in these conversations and this transition — they come up on nights, weekends, and in patients who deteriorate faster than a consult can arrive. Doing this poorly causes real, avoidable suffering for both the patient and the family.",
+  "clinicalTakeaway": "Don't wait for a crisis to have the conversation — the \"surprise question\" and the trigger list below tell you when it's due. When the goal genuinely shifts to comfort, the change is total: stop what no longer serves the patient (routine vitals, most medications, restraints), escalate symptom control without a ceiling except the symptom itself, and if withdrawing ventilatory support, premedicate first — every time.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Primary vs. specialty palliative care"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Level",
+        "Who provides it",
+        "Scope"
+      ],
+      "rows": [
+        [
+          "Primary palliative care",
+          "Any treating clinician (intensivist, EM physician, hospitalist)",
+          "Basic symptom management, straightforward goals-of-care conversations, recognizing when to escalate"
+        ],
+        [
+          "Specialty palliative care",
+          "A palliative medicine consult team",
+          "Refractory symptoms, complex or conflicted family dynamics, prognostic uncertainty, complicated grief"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "When a goals-of-care conversation is due"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The \"surprise question\": would you be surprised if this patient died during this admission, or within the next year? If no — the conversation is due now, not after the next decline.",
+        "Multi-organ failure, or a prolonged ICU stay without meaningful improvement.",
+        "A new catastrophic diagnosis (devastating brain injury, metastatic disease with no further therapy) where the family hasn't yet been told what it means functionally.",
+        "The family is requesting \"everything\" without having been asked what \"everything\" is meant to achieve.",
+        "Repeated returns to the ICU/ED for the same underlying process with no durable improvement between admissions."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Structuring the conversation"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Ask-Tell-Ask: ask what the family/patient already understands, tell them the clinical picture in plain language, then ask what they understood from what you just said (and correct any gaps).",
+        "Avoid \"Do you want us to do everything?\" — it's a leading, binary framing that doesn't surface what actually matters to the patient. Ask instead what a good day looks like for them, or what they would consider an unacceptable outcome.",
+        "NURSE for responding to emotion, when it surfaces (it will): Name it (\"it sounds like this is frightening\"), Understand (\"help me understand what's worrying you most\"), Respect (acknowledge what they're managing), Support (\"we're going to work through this together\"), Explore (\"tell me more about that\"). Don't rush past the emotion to get to the medical facts — the facts don't land until the emotion is acknowledged.",
+        "Give a realistic, honest prognosis rather than a vague one — families consistently report wanting clear information even when it's bad news, delivered with compassion."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What actually changes with comfort-focused care"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Domain",
+        "Change"
+      ],
+      "rows": [
+        [
+          "Monitoring",
+          "Discontinue routine vitals, labs, and telemetry that no longer inform a management decision — alarms and interruptions for data that won't change anything add burden without benefit."
+        ],
+        [
+          "Medications",
+          "Stop anything not serving comfort (statins, most home medications, routine antibiotics unless treating a symptomatic infection). Continue or start symptom-targeted medications with no fixed ceiling except the symptom: opioids for pain/dyspnea, benzodiazepines for anxiety/agitation, antisecretory agents (e.g. glycopyrrolate) for upper-airway secretions (\"death rattle\"), antiemetics as needed."
+        ],
+        [
+          "Nutrition/hydration",
+          "Per the patient's previously expressed wishes or the family's decision, once the goal is comfort rather than prolonging life — artificial nutrition/hydration is not obligatory."
+        ],
+        [
+          "Restraints",
+          "Discontinue if no longer needed for safety."
+        ],
+        [
+          "Basic care",
+          "Does NOT stop: hygiene, repositioning, mouth care, and family presence continue throughout."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ventilator withdrawal (\"terminal\" or \"compassionate\" extubation)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Premedicate BEFORE disconnecting or extubating — an opioid and, if anxiety/agitation is anticipated, a benzodiazepine — even in a patient who appears unresponsive; anticipate distress rather than reacting to it after the fact.",
+        "Discontinue any neuromuscular blocker with adequate time for full reversal/washout FIRST, always — you cannot assess or treat the patient's comfort while they're paralyzed.",
+        "Have family present if they wish, and involve chaplaincy/social work beforehand.",
+        "There is no fixed timeline — death after ventilator withdrawal can take minutes to days; prepare the family for that range rather than a specific number.",
+        "The principle of double effect: titrating opioids/benzodiazepines to visible signs of distress (tachypnea, grimacing, accessory muscle use) is not euthanasia — the intent is symptom relief, the dose is driven by the symptom, and this distinction matters both ethically and for how you document it."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Comfort-focused care is not abandonment. Continue frequent reassessment and family check-ins, treat breakthrough symptoms promptly, and don't let \"nothing more to do medically\" become \"nothing more we're doing for this family.\""
+    }
+  ]
+}
