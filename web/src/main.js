@@ -3,15 +3,20 @@ import { createRouter } from "./lib/router.js";
 import { renderHome } from "./views/home.js";
 import { renderSection } from "./views/section.js";
 import { renderContent } from "./views/content.js";
+import { renderSettings } from "./views/settings.js";
 import { renderAbout } from "./views/about.js";
+import { renderDisclaimer } from "./views/disclaimer.js";
+import { renderAcknowledgments } from "./views/acknowledgments.js";
 import { renderSources } from "./views/sources.js";
 import { el, pinButton } from "./components.js";
+import { applyTheme } from "./lib/prefs.js";
 
 const app = document.getElementById("app");
 const rail = document.getElementById("nav-rail");
 const tabBar = document.getElementById("tab-bar");
 const store = await new ContentStore().init();
 
+applyTheme();
 buildRail();
 buildTabBar();
 
@@ -21,7 +26,13 @@ const router = createRouter(async (route) => {
     if (route === "/" || route === "") {
       app.replaceChildren(renderHome(store, router));
     } else if (route === "/about") {
-      app.replaceChildren(el("div", { class: "detail" }, el("a", { href: "#/", class: "back" }, "‹ Home"), renderAbout(store)));
+      app.replaceChildren(el("div", { class: "detail" }, el("a", { href: "#/", class: "back" }, "‹ Home"), renderSettings(store)));
+    } else if (route === "/about/info") {
+      app.replaceChildren(el("div", { class: "detail" }, el("a", { href: "#/about", class: "back" }, "‹ Settings"), renderAbout()));
+    } else if (route === "/about/disclaimer") {
+      app.replaceChildren(el("div", { class: "detail" }, el("a", { href: "#/about", class: "back" }, "‹ Settings"), renderDisclaimer()));
+    } else if (route === "/about/acknowledgments") {
+      app.replaceChildren(el("div", { class: "detail" }, el("a", { href: "#/about", class: "back" }, "‹ Settings"), renderAcknowledgments()));
     } else if (route === "/sources") {
       app.replaceChildren(el("div", { class: "detail" }, el("a", { href: "#/", class: "back" }, "‹ Home"), renderSources(store)));
     } else if (route.startsWith("/section/")) {
@@ -72,7 +83,7 @@ function buildRail() {
     el(
       "div",
       { class: "rail-foot" },
-      el("a", { href: "#/about", "data-route": "/about" }, "About"),
+      el("a", { href: "#/about", "data-route": "/about" }, "Settings"),
       el("span", {}, " · "),
       el("a", { href: "#/sources", "data-route": "/sources" }, "Sources")
     )
@@ -111,8 +122,10 @@ function markTabBar(route) {
   const active =
     route === "/" || route === ""
       ? "/"
-      : route === "/about" || route === "/sources"
+      : route === "/sources"
       ? route
+      : route.startsWith("/about")
+      ? "/about"
       : "/"; // any content/section page still belongs under the Home tab
   for (const a of tabBar.querySelectorAll("[data-route]")) {
     a.classList.toggle("active", a.getAttribute("data-route") === active);
@@ -122,7 +135,7 @@ function markTabBar(route) {
 function markRail(route) {
   for (const a of rail.querySelectorAll("[data-route]")) {
     const r = a.getAttribute("data-route");
-    a.classList.toggle("active", route === r || (r.startsWith("/section/") && route === r));
+    a.classList.toggle("active", route === r || (r === "/about" && route.startsWith("/about")));
   }
   // a content page belongs to its section — light that rail row too
   const entry = route.startsWith("/section/") ? null : store.entryByRoute(route);

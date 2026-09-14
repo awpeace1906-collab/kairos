@@ -8,7 +8,16 @@ struct KairosApp: App {
     @StateObject private var sessionStore = SessionStore()
     @Environment(\.scenePhase) private var scenePhase
     @AppStorage("kairos.onboarding.seen") private var onboardingSeen = false
+    @AppStorage("kairos.appearance") private var appearance = "system"
     @State private var showOnboarding = false
+
+    private var colorScheme: ColorScheme? {
+        switch appearance {
+        case "light": return .light
+        case "dark": return .dark
+        default: return nil
+        }
+    }
 
     init() {
         Self.registerBundledFonts()
@@ -48,6 +57,7 @@ struct KairosApp: App {
             RootView()
                 .environmentObject(content)
                 .environmentObject(sessionStore)
+                .preferredColorScheme(colorScheme)
                 .task {
                     content.load()
                     showOnboarding = !onboardingSeen

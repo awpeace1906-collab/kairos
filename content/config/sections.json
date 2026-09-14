@@ -20,6 +20,10 @@
         {
           "id": "airway-sedation-workflows",
           "title": "Airway & Sedation Workflows"
+        },
+        {
+          "id": "vascular-thoracic-access",
+          "title": "Vascular & Thoracic Access"
         }
       ]
     },

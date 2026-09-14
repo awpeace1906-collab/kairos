@@ -21,3 +21,8 @@ export function flagOutdatedURL(mod) {
   const q = new URLSearchParams({ labels: "content,needs-review", title, body });
   return `https://github.com/${GITHUB_REPO}/issues/new?${q.toString()}`;
 }
+
+/** General "report an issue" link for the Settings screen — no module context. */
+export function newIssueURL() {
+  return `https://github.com/${GITHUB_REPO}/issues/new`;
+}

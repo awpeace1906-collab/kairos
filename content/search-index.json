@@ -5493,6 +5493,81 @@
       ]
     },
     {
+      "id": "central-line-placement",
+      "title": "Central Line Placement (CVC)",
+      "section": "Procedures",
+      "category": "Vascular & Thoracic Access",
+      "tags": [
+        "central line",
+        "CVC",
+        "vascular access",
+        "Seldinger technique",
+        "ultrasound-guided",
+        "ICU",
+        "ED",
+        "OR",
+        "procedure"
+      ],
+      "keywords": [
+        "maximal sterile barrier precautions",
+        "ultrasound-guided internal jugular",
+        "guidewire never forced",
+        "confirm venous not arterial before dilating",
+        "CXR confirms tip position and rules out pneumothorax",
+        "femoral preferred in cardiac arrest",
+        "subclavian lowest infection risk highest pneumothorax risk",
+        "avoid subclavian in dialysis-dependent patients",
+        "central venous catheter",
+        "CVC insertion",
+        "central line",
+        "IJ line",
+        "subclavian line",
+        "femoral line",
+        "Seldinger technique central access"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/vascular-thoracic-access/central-line-placement",
+      "settingEmphasis": [
+        "icu",
+        "ed",
+        "or"
+      ]
+    },
+    {
+      "id": "tube-thoracostomy",
+      "title": "Tube Thoracostomy (Chest Tube)",
+      "section": "Procedures",
+      "category": "Vascular & Thoracic Access",
+      "tags": [
+        "chest tube",
+        "tube thoracostomy",
+        "pneumothorax",
+        "hemothorax",
+        "triangle of safety",
+        "trauma",
+        "procedure"
+      ],
+      "keywords": [
+        "triangle of safety landmarks",
+        "insert above the rib not below",
+        "finger sweep confirms pleural entry",
+        "massive hemothorax 1500 mL initial or 200 mL per hour",
+        "re-expansion pulmonary edema large volume drainage",
+        "pigtail catheter versus large-bore tube",
+        "chest tube placement",
+        "tube thoracostomy",
+        "chest drain insertion",
+        "triangle of safety chest tube"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/vascular-thoracic-access/tube-thoracostomy",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
+      ]
+    },
+    {
       "id": "fracture-splinting-guide",
       "title": "Fracture / Splinting Guide",
       "section": "Procedures",

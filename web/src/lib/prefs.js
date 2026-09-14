@@ -35,6 +35,17 @@ export function activeCareSetting() {
   return prefs.get(CARE_SETTING_KEY, null);
 }
 
+/** Appearance override — "system" (default, follow the OS), "light", or "dark".
+    Applied by setting/removing documentElement.dataset.theme (see applyTheme()). */
+export const THEME_KEY = "theme";
+export function activeTheme() {
+  return prefs.get(THEME_KEY, "system");
+}
+export function applyTheme(theme = activeTheme()) {
+  if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+  else delete document.documentElement.dataset.theme;
+}
+
 /** The peds lens — a boolean toggle, orthogonal to the care-setting lens. When on,
     peds/neonate modules float to the top of any list (a lens, never a filter). */
 export const PEDS_LENS_KEY = "pedsLens";

@@ -53,6 +53,30 @@ Prussian blue + bicarbonate, one module), `high-dose-insulin-euglycemia-dosing`
 calculator, `brue-lower-risk-criteria` peds-tool checklist.
 
 ## Progress log
+- 2026-09-13 — **Phase 5 (Procedures gap) + Settings redesign shipped on both
+  clients (→ 318 modules).** Procedures: new "Vascular & Thoracic Access"
+  category (`content/config/sections.json`) with two genuine content-gap
+  modules — `central-line-placement` (site selection IJ/subclavian/femoral,
+  maximal sterile barrier prep, ultrasound-guided Seldinger sequence,
+  confirm-venous-before-dilating, CXR/lung-US confirmation) and
+  `tube-thoracostomy` (triangle-of-safety landmark, blunt dissection above the
+  rib, finger sweep, tube sizing/direction, massive-hemothorax ≥1500 mL/≥200
+  mL-per-hr and re-expansion-pulmonary-edema decision points). Both
+  `workflow`-type procedures, cross-linked to existing trauma/vascular
+  reference modules, verified rendering on web + iOS. Settings: full redesign
+  per the plan agreed last session — a native grouped-list root
+  (`ios/Sources/Views/AboutView.swift` rewritten; new `web/src/views/settings.js`)
+  with Appearance (System/Light/Dark) + Care setting + Peds lens inline, a
+  Content section (reset pinned shortcuts), and Info/Support submenus (About
+  Kairos, Medical & Legal Disclaimer, Acknowledgments, Report an issue) split
+  into their own pages instead of one long scroll. Appearance override wired
+  end-to-end: iOS `.preferredColorScheme` off `@AppStorage("kairos.appearance")`
+  at the WindowGroup level; web `documentElement.dataset.theme` +
+  `:root[data-theme]` CSS overrides guarding the existing
+  `prefers-color-scheme` blocks, so an explicit choice wins over the OS
+  setting in both directions. SW `SHELL_CACHE` → v10. iOS BUILD SUCCEEDED,
+  10/10 engine tests; both verified live (simulator + browser preview).
+  validate 318/0, test 252/0.
 - 2026-09-13 — **UI overhaul Phase 1 (bottom tab bar) + Phase 2 (count-badge
   removal) shipped on both clients.** iOS: `RootView` no longer owns a bare
   `NavigationStack` — a new `MainTabView` (`ios/Sources/App/KairosApp.swift`)

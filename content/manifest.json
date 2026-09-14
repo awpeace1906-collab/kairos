@@ -1777,6 +1777,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "procedures/central-line-placement": {
+      "content_version": 1,
+      "hash": "38187b9bc126d949",
+      "path": "modules/procedures/central-line-placement.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-13"
+    },
     "procedures/fracture-splinting-guide": {
       "content_version": 2,
       "hash": "2ed9c905e4ebd76d",
@@ -1848,6 +1857,15 @@
       "section": "Procedures",
       "review_tier": 1,
       "next_review_due": "2026-12-01"
+    },
+    "procedures/tube-thoracostomy": {
+      "content_version": 1,
+      "hash": "c023b1613ce230f1",
+      "path": "modules/procedures/tube-thoracostomy.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-13"
     },
     "reference-library/abg-interpretation": {
       "content_version": 3,

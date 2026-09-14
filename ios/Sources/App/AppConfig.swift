@@ -37,4 +37,15 @@ enum AppConfig {
         ]
         return c?.url
     }
+
+    /// General "report an issue" link for the Settings screen — no module context,
+    /// just points at the repo's issue tracker.
+    static func newIssueURL(title: String = "", body: String = "") -> URL? {
+        var c = URLComponents(string: "https://github.com/\(githubRepo)/issues/new")
+        var items: [URLQueryItem] = []
+        if !title.isEmpty { items.append(URLQueryItem(name: "title", value: title)) }
+        if !body.isEmpty { items.append(URLQueryItem(name: "body", value: body)) }
+        c?.queryItems = items.isEmpty ? nil : items
+        return c?.url
+    }
 }

@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 633,
+  "count": 641,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -562,6 +562,18 @@
       ]
     },
     {
+      "text": "British Thoracic Society Pleural Disease Guideline 2010 (re-expansion pulmonary edema, drainage volume limits).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "tube-thoracostomy",
+          "title": "Tube Thoracostomy (Chest Tube)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
+        }
+      ]
+    },
+    {
       "text": "BSPED DKA Guideline (ISPAD-aligned)",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1042,6 +1054,18 @@
       ]
     },
     {
+      "text": "Frykholm P, et al. Clinical guidelines on central venous catheterisation. Acta Anaesthesiol Scand. 2014.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "central-line-placement",
+          "title": "Central Line Placement (CVC)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/central-line-placement"
+        }
+      ]
+    },
+    {
       "text": "Gelb AW et al. WHO-WFSA International Standards for a Safe Practice of Anesthesia. Anesthesiology 2018; ASA 2023 fasting guidelines; SPAQI 2025 GLP-1 update",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1378,6 +1402,18 @@
       ]
     },
     {
+      "text": "O'Grady NP, et al. Guidelines for the prevention of intravascular catheter-related infections (CDC/HICPAC). Clin Infect Dis. 2011 (2017 update).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "central-line-placement",
+          "title": "Central Line Placement (CVC)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/central-line-placement"
+        }
+      ]
+    },
+    {
       "text": "Opioid Overdose Management: Guidelines and Antidote Advances. European Society of Medicine, 2025",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1590,6 +1626,18 @@
           "title": "Chronic Hypertension & GDM in Pregnancy",
           "section": "Reference Library",
           "route": "/reference-library/obstetric-gynecologic/chronic-htn-gdm-pregnancy"
+        }
+      ]
+    },
+    {
+      "text": "Troianos CA, et al. Guidelines for performing ultrasound-guided vascular cannulation. J Am Soc Echocardiogr. 2011 (ASA/SCA).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "central-line-placement",
+          "title": "Central Line Placement (CVC)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/central-line-placement"
         }
       ]
     },
@@ -2884,6 +2932,18 @@
       ]
     },
     {
+      "text": "Laan DV, et al. Chest wall thickness and decompression failure: a systematic review. Injury. 2016 (landmark/depth considerations).",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "tube-thoracostomy",
+          "title": "Tube Thoracostomy (Chest Tube)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
+        }
+      ]
+    },
+    {
       "text": "Lee TH et al. Albumin + furosemide meta-analysis. PLOS One 2021 (13 studies, 422 pts)",
       "group": "Cohort, registry & systematic reviews",
       "usedBy": [
@@ -3288,6 +3348,18 @@
           "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/penetrating-regional-trauma"
+        }
+      ]
+    },
+    {
+      "text": "ATLS 10th Edition — American College of Surgeons Committee on Trauma (chest tube technique, massive hemothorax criteria).",
+      "group": "Reference texts & drug libraries",
+      "usedBy": [
+        {
+          "id": "tube-thoracostomy",
+          "title": "Tube Thoracostomy (Chest Tube)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
         }
       ]
     },
@@ -6190,6 +6262,18 @@
       ]
     },
     {
+      "text": "Kong VY, et al. A practical approach to tube thoracostomy. S Afr J Surg. 2019.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tube-thoracostomy",
+          "title": "Tube Thoracostomy (Chest Tube)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
+        }
+      ]
+    },
+    {
       "text": "Koponen T et al. Br J Anaesth 2019",
       "group": "Other primary sources",
       "usedBy": [
@@ -6426,6 +6510,18 @@
           "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/wound-ballistics"
+        }
+      ]
+    },
+    {
+      "text": "McGee DC, Gould MK. Preventing complications of central venous catheterization. N Engl J Med. 2003;348:1123-1133.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "central-line-placement",
+          "title": "Central Line Placement (CVC)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/central-line-placement"
         }
       ]
     },

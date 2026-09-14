@@ -1,0 +1,84 @@
+{
+  "id": "tube-thoracostomy",
+  "section": "Procedures",
+  "category": "Vascular & Thoracic Access",
+  "title": "Tube Thoracostomy (Chest Tube)",
+  "settingEmphasis": ["ed", "icu", "prehospital"],
+  "aliases": ["chest tube placement", "tube thoracostomy", "chest drain insertion", "triangle of safety chest tube"],
+  "tags": ["chest tube", "tube thoracostomy", "pneumothorax", "hemothorax", "triangle of safety", "trauma", "procedure"],
+  "keywords": ["triangle of safety landmarks", "insert above the rib not below", "finger sweep confirms pleural entry", "massive hemothorax 1500 mL initial or 200 mL per hour", "re-expansion pulmonary edema large volume drainage", "pigtail catheter versus large-bore tube"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-13",
+  "next_review_due": "2026-12-13",
+  "review_tier": 1,
+  "sources": [
+    "ATLS 10th Edition — American College of Surgeons Committee on Trauma (chest tube technique, massive hemothorax criteria).",
+    "Kong VY, et al. A practical approach to tube thoracostomy. S Afr J Surg. 2019.",
+    "Laan DV, et al. Chest wall thickness and decompression failure: a systematic review. Injury. 2016 (landmark/depth considerations).",
+    "British Thoracic Society Pleural Disease Guideline 2010 (re-expansion pulmonary edema, drainage volume limits)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-13", "change": "Initial entry — a genuine content gap (chest tube placement had no dedicated module). Sequential workflow: landmarks, blunt dissection technique, tube sizing, confirmation, massive-hemothorax/re-expansion-pulmonary-edema decision points." }
+  ],
+  "outputType": "workflow",
+  "purpose": "A step-through for open (blunt-dissection) tube thoracostomy — landmarks, technique, tube sizing, and the decision points around massive hemothorax and re-expansion pulmonary edema — for bedside reference or pre-procedure rehearsal, not a substitute for supervised training on your first attempts.",
+  "entryPrompt": "Confirm the indication and the landmark before you cut — most avoidable complications come from working outside the triangle of safety.",
+  "nodes": [
+    {
+      "id": "indication-landmark",
+      "type": "step",
+      "prompt": "1. Indication & landmark",
+      "body": "Indications: pneumothorax (after needle/finger decompression of a tension pneumothorax, or any significant/symptomatic simple pneumothorax), hemothorax, traumatic hemopneumothorax, empyema, malignant effusion. Landmark — the triangle of safety: bordered anteriorly by the lateral edge of pectoralis major, posteriorly by the lateral edge of latissimus dorsi, and inferiorly by a horizontal line at the nipple level (4th-5th intercostal space); apex toward the axilla. Position the patient supine or slightly head-up with the ipsilateral arm abducted or placed behind the head to open up the triangle."
+    },
+    {
+      "id": "prep",
+      "type": "step",
+      "prompt": "2. Prep & anesthesia",
+      "body": "Sterile prep and drape the field. Anesthetize generously with local anesthetic — skin, subcutaneous tissue, intercostal muscle, and the rib periosteum and parietal pleura itself (both are pain-sensitive; under-anesthetizing the pleura is the most common reason this procedure is remembered as agonizing). In an awake patient, this is also the moment to give IV analgesia/procedural sedation if the situation allows for it."
+    },
+    {
+      "id": "incision-dissection",
+      "type": "step",
+      "prompt": "3. Incision & blunt dissection",
+      "body": "Make a 2-3 cm skin incision parallel to the rib, centered over the interspace one rib-space below your intended entry point, then dissect up and over the top of the rib below — this keeps you clear of the intercostal neurovascular bundle, which runs along the INFERIOR margin of each rib. Use a curved clamp (Kelly) for blunt dissection through subcutaneous tissue and intercostal muscle, staying on top of the lower rib the entire way."
+    },
+    {
+      "id": "pleural-entry",
+      "type": "step",
+      "prompt": "4. Pleural entry & finger sweep",
+      "body": "Puncture the parietal pleura with the clamp in a controlled, deliberate motion (a rush of air or blood confirms you are in the pleural space), then spread the clamp to open a tract large enough for a finger. Perform a finger sweep: confirm you are in the free pleural space, clear any adhesions immediately around the tract, and confirm you do NOT feel abdominal organs, diaphragm, or a mass where lung should be — this is the single step that prevents the catastrophic misplacement of a chest tube into the abdomen."
+    },
+    {
+      "id": "tube-placement",
+      "type": "step",
+      "prompt": "5. Tube placement & direction",
+      "body": "Guide the tube into the pleural space with a clamp, directing it based on indication: posteriorly and superiorly (toward the apex) for a pneumothorax being drained of air; posteriorly and inferiorly (toward the base) for a hemothorax or effusion being drained of fluid. Advance until all drainage-tube side holes are well within the chest — confirmed by the tube's depth marking and by feeling no resistance. Tube size: 28-32 Fr for trauma/hemothorax (large bore needed to evacuate blood and clot without occluding); 20-24 Fr is adequate for a simple pneumothorax; a small-bore Seldinger pigtail catheter is an increasingly used, less painful alternative for a stable simple pneumothorax or effusion."
+    },
+    {
+      "id": "secure-connect",
+      "type": "step",
+      "prompt": "6. Secure, connect, confirm",
+      "body": "Connect immediately to a chest drainage/water-seal system (with suction only if directed, otherwise water seal alone). Confirm correct placement: fogging/condensation visible in the tube with respiration, respiratory swing at the water seal, immediate clinical improvement, and breath sounds returning. Secure with both a purse-string closure suture around the tube and a separate anchoring stitch, then an occlusive dressing. Obtain a chest X-ray to confirm tube position, resolution of the pneumothorax/hemothorax, and to rule out kinking or a fissure placement."
+    },
+    {
+      "id": "decision-points",
+      "type": "warning",
+      "prompt": "Two decision points that change management",
+      "body": "Massive hemothorax → OR, not just a bigger tube: an initial chest-tube output of ≥ 1500 mL, OR ongoing output of ≥ 200 mL/hour for 2-4 consecutive hours, meets criteria for emergent thoracotomy — activate surgery immediately rather than watching the drain. Re-expansion pulmonary edema: rapidly draining a large-volume effusion or long-standing pneumothorax can trigger unilateral pulmonary edema; for a large chronic effusion, limit initial drainage to roughly 1-1.5 L and clamp/slow the rate if the patient develops cough, chest tightness, or hypoxia during drainage, then resume more gradually."
+    }
+  ],
+  "checklist": [
+    "Indication and side confirmed before prepping",
+    "Entry point is within the triangle of safety, at or above the 5th intercostal space",
+    "Local anesthetic infiltrated down to and including rib periosteum and pleura",
+    "Dissection stayed on top of the rib below the interspace, never along its inferior margin",
+    "Finger sweep performed and confirmed free pleural space before the tube goes in",
+    "Tube directed apically for air, basally for fluid",
+    "Purse-string AND separate anchoring suture placed",
+    "CXR obtained to confirm position and re-check for pneumothorax/hemothorax resolution",
+    "Massive-hemothorax thresholds (≥1500 mL initial or ≥200 mL/hr) checked against output before assuming the tube alone will fix it"
+  ],
+  "crossLinks": ["penetrating-regional-trauma", "trauma-primary-survey", "efast-exam", "hemorrhagic-shock-mtp"],
+  "buildNote": "workflow outputType, sequential. Deliberately does not restate broader trauma resuscitation (trauma-primary-survey, hemorrhagic-shock-mtp) or the eFAST pneumothorax/hemothorax scan itself (efast-exam) — this module is the hands-on tube-placement sequence plus the two decision points (massive hemothorax, re-expansion pulmonary edema) that most directly change management mid-procedure."
+}

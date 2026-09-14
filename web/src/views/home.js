@@ -189,7 +189,7 @@ export function renderHome(store, router) {
     el(
       "p",
       { class: "home-footer" },
-      el("a", { href: "#/about" }, "About"),
+      el("a", { href: "#/about" }, "Settings"),
       " · ",
       el("a", { href: "#/sources" }, "Sources")
     )
