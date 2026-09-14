@@ -3,7 +3,7 @@
 // spec, fallback #4). OTA content updates land in a separate runtime cache managed
 // by ContentStore; this SW just guarantees the shell and the bundled baseline.
 
-const SHELL_CACHE = "kairos-shell-v8";
+const SHELL_CACHE = "kairos-shell-v9";
 const SHELL = [
   "./",
   "./index.html",

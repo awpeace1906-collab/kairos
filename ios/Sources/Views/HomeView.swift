@@ -52,20 +52,6 @@ struct HomeView: View {
         .searchable(text: $query, prompt: "Search all sections — e.g. “chest pain”, “gbs”")
         .navigationTitle("")
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                NavigationLink(value: Route.sources) {
-                    Image(systemName: "text.book.closed")
-                }
-                .accessibilityLabel("Sources")
-            }
-            ToolbarItem(placement: .navigationBarTrailing) {
-                NavigationLink(value: Route.about) {
-                    Image(systemName: "info.circle")
-                }
-                .accessibilityLabel("About")
-            }
-        }
         .safeAreaInset(edge: .top) {
             if !query.isEmpty { filterChips }
         }
@@ -145,12 +131,7 @@ struct HomeView: View {
                             .fill(Theme.sectionColor(s.id))
                             .frame(width: 20, height: 20)
                         VStack(alignment: .leading, spacing: 2) {
-                            HStack(alignment: .firstTextBaseline) {
-                                Text(s.title).font(Theme.semibold(16, relativeTo: .body))
-                                Spacer()
-                                Text("\(sectionCount(s.title))")
-                                    .font(Theme.mono(12)).foregroundStyle(.secondary)
-                            }
+                            Text(s.title).font(Theme.semibold(16, relativeTo: .body))
                             Text(s.coreQuestion).font(Theme.caption).foregroundStyle(.secondary)
                         }
                     }
@@ -162,10 +143,6 @@ struct HomeView: View {
         } header: {
             Text("Browse").font(Theme.mono(11)).tracking(1).textCase(.uppercase)
         }
-    }
-
-    private func sectionCount(_ title: String) -> Int {
-        content.searchIndex.entries.lazy.filter { $0.section == title }.count
     }
 
     private func groupedBySection(_ entries: [SearchEntry]) -> [(String, [SearchEntry])] {

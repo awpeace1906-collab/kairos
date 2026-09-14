@@ -130,6 +130,26 @@ h1 { font-size: 1.4rem; margin: 0 0 8px; letter-spacing: -0.01em; text-wrap: bal
     font-family: var(--font-mono); font-size: .82rem;
   }
 }
+
+/* ---------- mobile bottom tab bar (< 960px) — the rail's counterpart ---------- */
+.tab-bar {
+  display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+  background: var(--surface); border-top: 1px solid var(--line);
+  padding: 6px calc(4px + env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) calc(4px + env(safe-area-inset-left));
+}
+@media (min-width: 960px) { .tab-bar { display: none; } }
+.tab-item {
+  flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;
+  padding: 6px 4px; border-radius: 9px; color: var(--muted);
+  font-family: var(--font-mono); font-size: .68rem; letter-spacing: .02em;
+}
+.tab-icon { font-size: 1.15rem; line-height: 1; }
+.tab-item.active { color: var(--accent); }
+.tab-item.active .tab-icon { color: var(--accent); }
+@media (max-width: 959px) {
+  .app { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+}
+
 h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
 .muted { color: var(--muted); }
 .loading { padding: 40px 0; text-align: center; }
@@ -146,7 +166,7 @@ h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
 .pin-btn.on { border-color: var(--accent); color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--surface)); }
 
 /* numbers read as instrument output, not prose */
-.score strong, .formula-result strong, .dose-amt strong, .tile-count,
+.score strong, .formula-result strong, .dose-amt strong,
 .adc-label, .setting-label, .result-section, .sources-block h2,
 .why-matters h4, .takeaway h4, .settings, .last-verified, .flag {
   font-family: var(--font-mono);
@@ -249,7 +269,7 @@ h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
 .section-tiles-label { font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin: 4px 0 2px; }
 .tile {
   position: relative; display: grid;
-  grid-template-columns: auto 1fr auto; align-items: center; gap: 3px 14px;
+  grid-template-columns: auto 1fr; align-items: center; gap: 3px 14px;
   padding: 15px 16px 15px 17px;
   background: color-mix(in srgb, var(--tint, var(--line)) 9%, var(--surface));
   border: 1px solid var(--line);
@@ -265,13 +285,6 @@ h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
   background: var(--tint, var(--muted));
 }
 .tile-title { grid-column: 2; grid-row: 1; font-weight: 600; font-size: 1.02rem; letter-spacing: -0.01em; color: var(--text); }
-.tile-count {
-  grid-column: 3; grid-row: 1 / span 2; align-self: center;
-  font-family: var(--font-mono); font-size: .74rem; color: var(--muted);
-  font-variant-numeric: tabular-nums;
-  background: var(--surface); border: 1px solid var(--line);
-  border-radius: 999px; padding: 3px 9px;
-}
 .tile-q { grid-column: 2; grid-row: 2; font-size: .82rem; color: var(--muted); line-height: 1.4; }
 
 /* content */

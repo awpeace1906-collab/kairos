@@ -1,16 +1,23 @@
 import SwiftUI
 
-// Settings -> App Information -> "About Kairos". Literal static copy from
-// README_Build_Package.md (Tier 5). Not content-as-data — it never needs a
-// refresh mechanism, so it lives in the app shell.
+// The Settings tab's root. App-preference controls up top, "About Kairos"
+// (literal static copy from README_Build_Package.md, Tier 5 — not
+// content-as-data, it never needs a refresh mechanism) below.
 
 struct AboutView: View {
     @EnvironmentObject private var content: ContentStore
     @AppStorage("kairos.careSetting") private var careSetting = ""
+    @AppStorage("kairos.pedsLens") private var pedsLens = false
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
+                Toggle("Peds lens", isOn: $pedsLens).font(Theme.subheadline)
+                Text("Floats pediatric content to the top of any list — it never hides the adult content underneath.")
+                    .font(Theme.footnote).foregroundStyle(.secondary)
+
+                Divider().padding(.vertical, 4)
+
                 Text("About Kairos").font(Theme.display(32, relativeTo: .largeTitle))
 
                 if !content.careSettings.isEmpty {
@@ -57,7 +64,7 @@ struct AboutView: View {
             }
             .padding()
         }
-        .navigationTitle("About")
+        .navigationTitle("Settings")
         .navigationBarTitleDisplayMode(.inline)
     }
 }

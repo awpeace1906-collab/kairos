@@ -63,7 +63,7 @@ export function renderSection(sectionId, store) {
           el(
             "details",
             { class: "toc-cat", open: !!q },
-            el("summary", {}, `${c.title} (${byCat[c.title].length})`),
+            el("summary", {}, c.title),
             el(
               "ul",
               {},

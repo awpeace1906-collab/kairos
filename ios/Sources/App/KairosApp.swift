@@ -66,42 +66,61 @@ struct KairosApp: App {
 enum Route: Hashable {
     case section(String)   // section id
     case content(String)   // search-index route
-    case about
-    case sources
+    case sources           // also a bottom-tab root; pushable here too since
+                            // a content page's "All sources ›" link lives inside
+                            // the Home tab's own stack (SourcesBlock).
 }
 
 struct RootView: View {
     @EnvironmentObject private var content: ContentStore
-    @State private var path: [Route] = []
 
     var body: some View {
-        NavigationStack(path: $path) {
-            Group {
-                if let err = content.loadError {
-                    VStack(spacing: 12) {
-                        Image(systemName: "exclamationmark.triangle").font(.largeTitle)
-                        Text("Content didn't load").font(Theme.headline)
-                        Text(err).font(Theme.footnote).foregroundStyle(.secondary)
-                            .multilineTextAlignment(.center).padding()
-                    }
-                } else if content.sections.isEmpty {
-                    ProgressView("Loading Kairos…")
-                } else {
-                    HomeView()
+        Group {
+            if let err = content.loadError {
+                VStack(spacing: 12) {
+                    Image(systemName: "exclamationmark.triangle").font(.largeTitle)
+                    Text("Content didn't load").font(Theme.headline)
+                    Text(err).font(Theme.footnote).foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center).padding()
                 }
-            }
-            .navigationDestination(for: Route.self) { route in
-                switch route {
-                case .section(let id):    SectionView(sectionID: id)
-                case .content(let r):     ContentDetailView(route: r)
-                case .about:              AboutView()
-                case .sources:            SourcesView()
-                }
+            } else if content.sections.isEmpty {
+                ProgressView("Loading Kairos…")
+            } else {
+                MainTabView()
             }
         }
         // Body copy in IBM Plex Sans; views that need SF for a system control
         // set their own .font() and win the cascade.
         .font(Theme.sans(17))
+    }
+}
+
+/// Bottom tab bar — Home / Sources / Settings, each its own push stack (mirrors
+/// CRISIS's ContentView.swift). Settings is where "About Kairos" now lives.
+struct MainTabView: View {
+    @State private var homePath: [Route] = []
+
+    var body: some View {
+        TabView {
+            NavigationStack(path: $homePath) {
+                HomeView()
+                    .navigationDestination(for: Route.self) { route in
+                        switch route {
+                        case .section(let id): SectionView(sectionID: id)
+                        case .content(let r):  ContentDetailView(route: r)
+                        case .sources:         SourcesView()
+                        }
+                    }
+            }
+            .tabItem { Label("Home", systemImage: "house.fill") }
+
+            NavigationStack { SourcesView() }
+                .tabItem { Label("Sources", systemImage: "text.book.closed.fill") }
+
+            NavigationStack { AboutView() }
+                .tabItem { Label("Settings", systemImage: "gearshape.fill") }
+        }
+        .tint(Theme.accent)
     }
 }
 

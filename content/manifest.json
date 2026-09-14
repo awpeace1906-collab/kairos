@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T00:00:00Z",
+  "generatedAt": "2026-09-14T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
@@ -1876,8 +1876,8 @@
       "next_review_due": "2026-12-04"
     },
     "reference-library/acute-dyspnea-niv": {
-      "content_version": 2,
-      "hash": "6587dbb62aac5707",
+      "content_version": 3,
+      "hash": "e261f45ae6fe2f5e",
       "path": "modules/reference-library/acute-dyspnea-niv.json",
       "contentType": "reference",
       "section": "Reference Library",

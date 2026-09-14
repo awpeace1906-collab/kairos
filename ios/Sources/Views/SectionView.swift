@@ -30,7 +30,7 @@ struct SectionView: View {
                     }
 
                     ForEach(categories(section), id: \.title) { cat in
-                        Section("\(cat.title) (\(cat.items.count))") {
+                        Section(cat.title) {
                             ForEach(cat.items) { item in
                                 NavigationLink(value: Route.content(item.route)) {
                                     HStack {

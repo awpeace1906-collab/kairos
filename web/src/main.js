@@ -9,9 +9,11 @@ import { el, pinButton } from "./components.js";
 
 const app = document.getElementById("app");
 const rail = document.getElementById("nav-rail");
+const tabBar = document.getElementById("tab-bar");
 const store = await new ContentStore().init();
 
 buildRail();
+buildTabBar();
 
 const router = createRouter(async (route) => {
   window.scrollTo(0, 0);
@@ -44,6 +46,7 @@ const router = createRouter(async (route) => {
     app.replaceChildren(el("section", { class: "content" }, el("h1", {}, "Not found"), el("p", { class: "muted" }, err.message), el("a", { href: "#/" }, "Back to home")));
   }
   markRail(route);
+  markTabBar(route);
 });
 
 router.start();
@@ -52,9 +55,6 @@ router.start();
    primary section switcher there; the home view hides its own section list when
    the rail is showing, so there's still just one list. */
 function buildRail() {
-  const countBySection = {};
-  for (const e of store.searchEntries) countBySection[e.section] = (countBySection[e.section] || 0) + 1;
-
   rail.replaceChildren(
     el("a", { class: "rail-brand", href: "#/" }, "Kairos", el("i", { "aria-hidden": "true" })),
     el(
@@ -65,8 +65,7 @@ function buildRail() {
           "a",
           { class: "rail-link", href: `#/section/${s.id}`, "data-route": `/section/${s.id}` },
           el("span", { class: "rail-mark", "data-section": s.id, "aria-hidden": "true" }),
-          el("span", { class: "rail-label" }, s.title),
-          el("span", { class: "rail-count" }, String(countBySection[s.title] ?? ""))
+          el("span", { class: "rail-label" }, s.title)
         )
       )
     ),
@@ -79,6 +78,45 @@ function buildRail() {
     )
   );
   rail.hidden = false;
+}
+
+/* Bottom tab bar — the mobile-width counterpart to the nav rail (CSS shows
+   exactly one of the two, same breakpoint). Three destinations, same as the
+   iOS TabView: Home, Sources, Settings (which is where the About page lives). */
+function buildTabBar() {
+  tabBar.replaceChildren(
+    el(
+      "a",
+      { class: "tab-item", href: "#/", "data-route": "/" },
+      el("span", { class: "tab-icon", "aria-hidden": "true" }, "⌂"),
+      el("span", { class: "tab-label" }, "Home")
+    ),
+    el(
+      "a",
+      { class: "tab-item", href: "#/sources", "data-route": "/sources" },
+      el("span", { class: "tab-icon", "aria-hidden": "true" }, "▤"),
+      el("span", { class: "tab-label" }, "Sources")
+    ),
+    el(
+      "a",
+      { class: "tab-item", href: "#/about", "data-route": "/about" },
+      el("span", { class: "tab-icon", "aria-hidden": "true" }, "⚙"),
+      el("span", { class: "tab-label" }, "Settings")
+    )
+  );
+  tabBar.hidden = false;
+}
+
+function markTabBar(route) {
+  const active =
+    route === "/" || route === ""
+      ? "/"
+      : route === "/about" || route === "/sources"
+      ? route
+      : "/"; // any content/section page still belongs under the Home tab
+  for (const a of tabBar.querySelectorAll("[data-route]")) {
+    a.classList.toggle("active", a.getAttribute("data-route") === active);
+  }
 }
 
 function markRail(route) {

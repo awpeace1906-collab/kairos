@@ -9,10 +9,6 @@ export function renderHome(store, router) {
   let setting = activeCareSetting();
   let peds = activePedsLens();
 
-  // per-section item counts for the tile badges
-  const countBySection = {};
-  for (const e of store.searchEntries) countBySection[e.section] = (countBySection[e.section] || 0) + 1;
-
   const input = el("input", {
     type: "search",
     class: "search-input",
@@ -98,7 +94,6 @@ export function renderHome(store, router) {
         { class: "tile", href: `#/section/${s.id}`, "data-section": s.id },
         el("span", { class: "tile-mark", "aria-hidden": "true" }),
         el("span", { class: "tile-title" }, s.title),
-        el("span", { class: "tile-count" }, String(countBySection[s.title] ?? "")),
         el("span", { class: "tile-q" }, s.coreQuestion)
       )
     )

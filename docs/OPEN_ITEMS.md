@@ -53,6 +53,47 @@ Prussian blue + bicarbonate, one module), `high-dose-insulin-euglycemia-dosing`
 calculator, `brue-lower-risk-criteria` peds-tool checklist.
 
 ## Progress log
+- 2026-09-13 — **UI overhaul Phase 1 (bottom tab bar) + Phase 2 (count-badge
+  removal) shipped on both clients.** iOS: `RootView` no longer owns a bare
+  `NavigationStack` — a new `MainTabView` (`ios/Sources/App/KairosApp.swift`)
+  wraps a `TabView` with Home / Sources / Settings tabs, each its own
+  `NavigationStack` (mirrors CRISIS's `ContentView.swift`). `Route.about` was
+  removed (Settings tab hosts `AboutView` directly as its root, now also
+  carrying the Peds-lens toggle — it's a real settings screen, not just About);
+  `Route.sources` stays (also reachable as a push from inside a content page's
+  "All sources ›" link — `Components/ClearableField.swift`'s `SourcesBlock`).
+  Web: mobile-width (`< 960px`) now shows a fixed bottom tab bar (`#tab-bar` in
+  `index.html`, built in `main.js`) mirroring the same 3 destinations — the
+  desktop nav rail is unchanged, exactly one of the two shows per the same
+  breakpoint. Removed every "(N)" count badge next to a browse item — Home's
+  section tiles, the nav rail, and each section page's category headers (web
+  `section.js` + iOS `SectionView.swift`) — per user feedback that it read as
+  a website's index page, not an app menu. iOS: BUILD SUCCEEDED, 10/10 engine
+  tests. Web: verified live at mobile width (tab bar, no counts) and confirmed
+  the rail-driven desktop layout is untouched. SW `SHELL_CACHE` → v9.
+  **Phase 3 (calculator select-input conversion + lateral-scroll fix) is next**
+  — see the UI backlog in memory (`project_kairos.md`).
+- 2026-09-13 — **CV Guides re-review — 16 new files, 1 fold-in, 3 flagged as
+  new-module candidates.** User re-supplied `CV Guides.zip`; diffed against
+  `SOURCE_MATERIALS.md`'s tracked list. Of 16 genuinely new files, 13 are the
+  same "Content Audit / Verified" social-post-audit format already excluded by
+  the 2026-09-02 direction, with no new actionable delta over existing
+  coverage (`code-blue-leadership` duplicates `code-leadership-run-the-room`;
+  `hemorrhagic-shock-crystalloid` duplicates `hemorrhagic-shock-mtp` v2;
+  `rsi-trial-ketamine-etomidate`'s finding is already in
+  `physiologically-difficult-airway`'s induction-agent table; `colcot_guide` /
+  `magnesium_lactate_summary` / `snapp_trial_summary` / others are single-trial
+  write-ups outside Kairos's acute-bedside scope or too preliminary). One
+  fold-in shipped: `acute-dyspnea-niv` → v3, new "Don't withhold oxygen in
+  COPD" section (hypoxic-drive teaching is overweighted vs. the dominant
+  V/Q-mismatch mechanism; SpO2 88–92% target, never withhold O2). **Flagged
+  for a future session, not yet built** (genuine content gaps, deserve careful
+  primary-source builds rather than a rushed pass): `brain-death-bd-dnc-framework`
+  (BD/DNC determination — Kairos has nothing on this), `traumatic-cardiac-arrest`
+  (reversible-cause-first algorithm, distinct from medical ACLS), and
+  `primary-palliative-care-icu` + `comfort-focused-care-transition` (ICU
+  comfort-focused-care transition — likely one combined module). validate
+  316/0 (unaffected — content-only fold-in), test 252/0.
 - 2026-09-09 — **Guide fold-ins (6, no new modules).** From the deferred list in
   the CV Guides review: `capnography` v3 (new EtCO2–PaCO2 gradient section);
   `airway-management-flow` v3 (Plan A → VL > DL / hyperangulated > Macintosh per

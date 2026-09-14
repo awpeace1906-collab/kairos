@@ -40,15 +40,21 @@
     "P-SILI tidal volume 9 mL/kg"
   ],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-03",
+  "content_version": 3,
+  "last_reviewed": "2026-09-13",
   "next_review_due": "2026-12-03",
   "review_tier": 1,
   "sources": [
     "Critical Vector — EM Pocket Guide: Acute Dyspnea / NIV (BLUE Protocol; ATS 2024)",
-    "Lichtenstein D. BLUE protocol, Chest 2008; FLORALI (NEJM 2015); 3CPO trial; Surviving Sepsis 2026 (HFNC)"
+    "Lichtenstein D. BLUE protocol, Chest 2008; FLORALI (NEJM 2015); 3CPO trial; Surviving Sepsis 2026 (HFNC)",
+    "Robinson TD et al. The role of hypoventilation and ventilation-perfusion redistribution in oxygen-induced hypercapnia during acute exacerbations of COPD. Am J Respir Crit Care Med 2000; Aubier M et al. Am Rev Respir Dis 1980"
   ],
   "changelog": [
+    {
+      "version": 3,
+      "date": "2026-09-13",
+      "change": "Added 'Don't withhold oxygen in COPD' pearl — hypoxic-drive teaching overweighted vs. the dominant V/Q-mismatch mechanism; SpO2 88-92% target, never withhold O2 out of drive fear."
+    },
     {
       "version": 2,
       "date": "2026-09-07",
@@ -183,6 +189,15 @@
       "type": "callout",
       "tone": "warning",
       "text": "NIV failure signs — worsening RR, SpO2, or mentation after 1 h; spontaneous tidal volume > 9 mL/kg IBW (P-SILI risk); inability to protect the airway; haemodynamic deterioration → intubate early, not late. In a COPD patient: pH < 7.30 and not improving at 1 h = intubate. Consider CO poisoning (SpO2 falsely normal), and tension pneumothorax in a ventilated patient with sudden desaturation + collapse (decompress before the CXR)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Don't withhold oxygen in COPD"
+    },
+    {
+      "type": "text",
+      "text": "\"Supplemental O2 will knock out their hypoxic drive\" overstates a minor contributor. The dominant mechanism of CO2 rise with O2 in COPD is reversal of hypoxic pulmonary vasoconstriction — V/Q-mismatched, poorly-ventilated units get reperfused, worsening dead-space ventilation (Robinson 2000; Aubier 1980). Blunted respiratory drive plays a small supporting role at most. The practical takeaway is the same either way: titrate to SpO2 88–92%, don't chase 100%, but never withhold or remove O2 from a hypoxic COPD patient out of drive-suppression fear — permissive hypercapnia with airway support (NIV, or intubation) is the answer to a rising CO2, not less oxygen."
     }
   ]
 }

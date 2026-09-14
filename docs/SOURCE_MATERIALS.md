@@ -337,3 +337,35 @@ actionable residue folds into existing modules instead.
 `biostatistics-for-clinicians`, `covalent-dl-vs-vl-trial` (as a standalone),
 `25-years-septic-shock-resuscitation-trials` (already reflected in
 `septic-shock-resuscitation`).
+
+**2026-09-13 re-review (16 new files vs. this doc's tracked list):**
+- 🟢 `copd-hypoxic-drive-myth` → new "Don't withhold oxygen in COPD" section in
+  `acute-dyspnea-niv` (v3) — hypoxic-drive teaching is overweighted vs. the
+  dominant V/Q-mismatch (hypoxic pulmonary vasoconstriction reversal) mechanism;
+  SpO2 88–92% target, never withhold O2 out of drive-suppression fear.
+- **Flagged as genuine content-gap candidates — not yet built** (deserve a
+  careful primary-source build next session, not a rushed one):
+  `brain-death-bd-dnc-framework` (BD/DNC determination pathway — Kairos has
+  no existing module on this at all), `traumatic-cardiac-arrest`
+  (reversible-cause-first algorithm, meaningfully distinct from a medical
+  ACLS code), `primary-palliative-care-icu` + `comfort-focused-care-transition`
+  (ICU comfort-focused-care transition — likely one combined module; also a
+  content gap).
+- **Skip — duplicates existing coverage:** `code-blue-leadership` (already
+  covered by `code-leadership-run-the-room`), `hemorrhagic-shock-crystalloid`
+  (already covered by `hemorrhagic-shock-mtp` v2's crystalloid-harm section),
+  `rsi-trial-ketamine-etomidate` (the finding — ketamine not hemodynamically
+  neutral vs. etomidate, 2025 NEJM RSI trial — is already in
+  `physiologically-difficult-airway`'s induction-agent table), `niv-copd-exacerbation`
+  (settings already in `acute-dyspnea-niv`'s COPD bundle: IPAP 10-15/EPAP 4-8).
+- **Skip — pure EBM audit / single-trial write-up, no bedside-management
+  delta or out of Kairos's acute-bedside scope:** `colcot_guide` (outpatient
+  secondary-prevention trial, not acute care), `magnesium_lactate_summary`
+  (single-center 138-pt trial, no mortality signal), `snapp_trial_summary`
+  (sugammadex vs. neostigmine PPCs — no definitive result yet), `ivermectin-icu-strongyloides`,
+  `niv-chf-gradients`, `cv-post-prehospital-airway-2026`, `primary-palliative-care-icu`'s
+  companion audit framing (content itself flagged above, the audit page skipped),
+  `CV_Mitochondrial_VA_Hypersensitivity` (single 7-patient cohort, still
+  provisional — not ready for a bedside-actionable recommendation).
+- `ballistics_blast_manual_v6.pdf` is the source PDF for the already-converted
+  `ballistics_blast_manual_v6_lightmode.html` — no new content.

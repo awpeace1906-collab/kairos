@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T00:00:00Z",
+  "generatedAt": "2026-09-14T00:00:00Z",
   "groupOrder": [
     "Guidelines & consensus statements",
     "Randomized trials & major studies",
@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 632,
+  "count": 633,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -7194,6 +7194,18 @@
           "title": "Fracture / Splinting Guide",
           "section": "Procedures",
           "route": "/procedures/wound-fracture-care/fracture-splinting-guide"
+        }
+      ]
+    },
+    {
+      "text": "Robinson TD et al. The role of hypoventilation and ventilation-perfusion redistribution in oxygen-induced hypercapnia during acute exacerbations of COPD. Am J Respir Crit Care Med 2000; Aubier M et al. Am Rev Respir Dis 1980",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acute-dyspnea-niv",
+          "title": "Acute Dyspnea — POCUS & NIV",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/acute-dyspnea-niv"
         }
       ]
     },
