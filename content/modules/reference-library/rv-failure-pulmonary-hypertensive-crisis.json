@@ -1,0 +1,101 @@
+{
+  "id": "rv-failure-pulmonary-hypertensive-crisis",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Right Ventricular Failure & Acute Pulmonary Hypertensive Crisis",
+  "settingEmphasis": ["icu", "or"],
+  "aliases": ["RV failure", "acute pulmonary hypertensive crisis", "right heart failure"],
+  "tags": ["right ventricular failure", "pulmonary hypertension", "RV failure", "shock", "ICU", "OR"],
+  "keywords": ["the RV is thin-walled and afterload-sensitive in a way the LV isn't, a sudden rise in pulmonary vascular resistance can acutely fail it even when the muscle itself is otherwise normal", "avoid the four H's that worsen RV afterload — hypoxia, hypercarbia, acidosis, and high intrathoracic pressure from aggressive PEEP or breath-stacking", "preload is a balancing act, the failing RV needs adequate preload to maintain output but is also easily overloaded, a fluid bolus that would help a failing LV can make a failing RV worse", "norepinephrine is generally the first-line pressor, it supports coronary perfusion pressure to the RV itself while also being a pulmonary vasoconstrictor at lower relative doses than some alternatives", "inhaled pulmonary vasodilators (inhaled nitric oxide or inhaled epoprostenol) selectively drop pulmonary vascular resistance without the systemic hypotension a systemic vasodilator would cause"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Harjola VP, et al. Contemporary management of acute right ventricular failure: a statement from the Heart Failure Association and the Working Group on Pulmonary Circulation and Right Ventricular Function of the European Society of Cardiology. Eur J Heart Fail. 2016;18(3):226-241.",
+    "Lahm T, et al. Hemodynamic Assessment of Patients with Pulmonary Hypertension. An Official American Thoracic Society/Pulmonary Hypertension Association Function Test and Radiographic Assessment. Am J Respir Crit Care Med. 2018."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). RV failure was mentioned only in passing across shock-classification and pressor-inotrope-reference; this module supplies the distinct management paradigm the RV's unique physiology actually requires." }
+  ],
+  "summary": "The RV is thin-walled and exquisitely afterload-sensitive — a sudden rise in pulmonary vascular resistance can acutely fail it even with a structurally normal heart, and the management priorities (avoiding the four H's, cautious preload, norepinephrine over pure vasodilation) are close to the opposite instinct many clinicians default to for left heart failure.",
+  "whyThisMatters": "Standard shock/heart-failure reflexes — give more fluid, use a pure vasodilator to reduce afterload, tolerate permissive hypercapnia — can each actively worsen a failing RV, which makes recognizing RV failure specifically (not just 'shock' or 'heart failure' generically) a genuine branch point in management, especially in the perioperative and ICU populations where pulmonary hypertension and RV strain are common but easy to overlook until the patient decompensates.",
+  "clinicalTakeaway": "Aggressively avoid the four H's that raise pulmonary vascular resistance and RV afterload: Hypoxia, Hypercarbia, acidosis (H+), and High intrathoracic pressure (excessive PEEP/breath-stacking/air trapping). Treat preload as a careful balancing act — the failing RV needs adequate preload to maintain output but is easily overloaded by the same fluid bolus that would help a failing LV; use small fluid challenges with close reassessment rather than large empiric boluses. Norepinephrine is generally the first-line pressor — it supports RV coronary perfusion pressure while raising systemic vascular resistance more than pulmonary vascular resistance at typical doses. Reach for an inhaled pulmonary vasodilator (inhaled nitric oxide or inhaled epoprostenol) to selectively drop pulmonary vascular resistance without causing the systemic hypotension a systemic vasodilator would.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why the RV fails differently than the LV"
+    },
+    {
+      "type": "text",
+      "text": "The right ventricle is a thin-walled, crescent-shaped chamber built to pump against a normally low-resistance pulmonary circuit — it tolerates volume well but is poorly equipped to handle a sudden rise in afterload (pulmonary vascular resistance). Unlike the LV, which can often compensate for an acute afterload increase, the RV can acutely fail — dilate, become ischemic (RV coronary perfusion depends on the pressure gradient between aortic diastolic pressure and RV pressure, which narrows as RV pressure rises), and push the interventricular septum leftward (reducing LV filling and output too) — even when the RV muscle itself was previously normal. Common triggers: acute PE, ARDS/high-PEEP ventilation, acute hypoxic/hypercarbic respiratory failure, right-sided MI, post-cardiac-surgery pulmonary hypertension, and decompensation of chronic pulmonary hypertension."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Avoid the four H's — everything that raises pulmonary vascular resistance"
+    },
+    {
+      "type": "table",
+      "columns": ["Factor", "Why it matters", "Target"],
+      "rows": [
+        ["Hypoxia", "A potent pulmonary vasoconstrictor — hypoxic pulmonary vasoconstriction directly raises RV afterload", "Keep SpO2/PaO2 adequate; avoid tolerating hypoxemia in a patient with known/suspected RV strain"],
+        ["Hypercarbia", "Elevated PaCO2 raises pulmonary vascular resistance", "Avoid permissive hypercapnia strategies that might otherwise be acceptable in a patient without RV concern"],
+        ["Acidosis (H+)", "Acidemia independently raises pulmonary vascular resistance, compounding hypercarbia's effect", "Correct significant acidosis where feasible"],
+        ["High intrathoracic pressure", "Excessive PEEP, breath-stacking/auto-PEEP, and high plateau pressures all directly compress the pulmonary vasculature and raise RV afterload", "Use the lowest PEEP/pressures that meet oxygenation/ventilation goals in a patient with known RV strain; watch specifically for breath-stacking in an obstructive/tachypneic patient"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Preload — a balancing act, not a reflex fluid bolus"
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "The instinct to give fluid for hypotension/shock can actively worsen a failing RV — an already-dilated, overloaded RV that receives more volume can distend further, push the septum further into the LV, and worsen cardiac output rather than improve it. This is the opposite of the usual shock reflex and is worth stating explicitly since it cuts against default practice."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Use small, carefully-monitored fluid challenges with close reassessment (clinical response, ideally with some hemodynamic/echo guidance if available) rather than a large empiric bolus.",
+        "If the RV appears volume-overloaded (dilated on bedside echo, elevated CVP with a poor clinical response to fluid), diuresis or even fluid removal may be more appropriate than further fluid administration — assess rather than assume more volume helps."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pressor and inotrope selection"
+    },
+    {
+      "type": "list",
+      "items": [
+        "NOREPINEPHRINE is generally the first-line pressor in RV failure/acute pulmonary hypertensive crisis with hypotension — it raises systemic vascular resistance (supporting the coronary perfusion pressure gradient that feeds the struggling RV) with a comparatively smaller relative effect on pulmonary vascular resistance than some alternatives, and it has inotropic activity that can help a failing RV directly.",
+        "Consider adding an inotrope (dobutamine, milrinone, or epinephrine depending on the clinical picture) if RV contractility itself appears to be the dominant problem rather than pure afterload — but be aware that pure vasodilating inotropes (like dobutamine or milrinone alone) can cause systemic hypotension that then further compromises RV coronary perfusion, so this is often combined with a vasopressor rather than used alone in a hypotensive patient.",
+        "AVOID a pure systemic vasodilator as a first-line strategy for presumed pulmonary hypertension in this setting — it will drop systemic blood pressure (worsening RV coronary perfusion) without a comparably targeted effect on the pulmonary circulation."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Selective pulmonary vasodilation"
+    },
+    {
+      "type": "text",
+      "text": "Inhaled pulmonary vasodilators — inhaled nitric oxide or inhaled epoprostenol — selectively reduce pulmonary vascular resistance in ventilated alveoli without causing the systemic hypotension a systemic (IV) vasodilator would, since they're delivered directly to the lung and have a very short systemic half-life once absorbed. This makes them a useful tool specifically for RV afterload reduction in the acutely decompensated patient, used as a bridge while the underlying trigger (hypoxia, PE, ARDS, etc.) is addressed — they are not typically curative on their own and don't have a demonstrated mortality benefit, similar in spirit to their role in ARDS rescue (see advanced-ards-ventilation)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Escalation"
+    },
+    {
+      "type": "text",
+      "text": "A patient with refractory RV failure/shock despite optimizing the above may need mechanical circulatory support (RV-specific or biventricular ECMO/mechanical support) — see the ECMO & Advanced Circulatory Support reference for the broader escalation pathway once medical management alone isn't sufficient."
+    }
+  ],
+  "related": ["shock-classification", "pressor-inotrope-reference", "ecmo-support", "acute-pe-guideline-2026"],
+  "buildNote": "Critical Care category. The four-H framework and the norepinephrine-over-pure-vasodilator preference are standard, well-established critical care/anesthesia teaching for RV protection; the preload-as-balancing-act point deliberately stated as a contrast to default LV-failure/shock reflexes since that's the highest-value teaching point for a clinician defaulting to generic shock management."
+}

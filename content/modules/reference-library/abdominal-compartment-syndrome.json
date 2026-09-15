@@ -1,0 +1,102 @@
+{
+  "id": "abdominal-compartment-syndrome",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Abdominal Compartment Syndrome",
+  "settingEmphasis": ["icu"],
+  "aliases": ["ACS (abdominal)", "intra-abdominal hypertension", "IAH", "intra-abdominal pressure"],
+  "tags": ["abdominal compartment syndrome", "intra-abdominal hypertension", "IAP", "decompressive laparotomy", "ICU"],
+  "keywords": ["measure IAP via bladder pressure at end-expiration, supine, abdominal muscles relaxed, that's the WSACS reference technique, not a rough clinical guess", "intra-abdominal hypertension starts at 12mmHg and is graded I through IV, abdominal compartment syndrome specifically means IAP over 20 with new organ dysfunction, it's a physiologic diagnosis not just a pressure number", "classic risk population — large volume resuscitation, damage control laparotomy, severe pancreatitis, massive ascites, abdominal packing", "decreasing urine output, rising peak airway pressures, and falling cardiac output in a distended, tense abdomen after large-volume resuscitation should trigger IAP measurement, not just be attributed to the underlying illness", "decompressive laparotomy is the definitive treatment for true ACS unresponsive to medical measures, don't keep escalating medical therapy alone once organ dysfunction is established"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Kirkpatrick AW, et al. Intra-abdominal hypertension and the abdominal compartment syndrome: updated consensus definitions and clinical practice guidelines from the World Society of the Abdominal Compartment Syndrome. Intensive Care Med. 2013;39(7):1190-1206.",
+    "De Waele JJ, et al. Intra-abdominal hypertension and abdominal compartment syndrome. Am J Kidney Dis. 2011;57(1):159-169."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). Previously only a single passing mention inside efast-exam.json; no module addressed IAP measurement, the IAH grading scale, or the criteria/management for true abdominal compartment syndrome." }
+  ],
+  "summary": "Abdominal compartment syndrome is a physiologic diagnosis, not just a pressure number — sustained intra-abdominal pressure over 20 mmHg PLUS new organ dysfunction, most often in a patient who's had large-volume resuscitation, and decompressive laparotomy is the definitive treatment once medical measures fail.",
+  "whyThisMatters": "This is a classic 'attributed to the underlying illness' miss — falling urine output, rising ventilator pressures, and declining cardiac output in a distended post-resuscitation abdomen get chalked up to the primary critical illness instead of triggering a bladder pressure measurement, delaying a diagnosis that has a specific, effective treatment (decompression) once recognized.",
+  "clinicalTakeaway": "Measure intra-abdominal pressure (IAP) via bladder pressure at end-expiration, supine, with the abdominal wall relaxed — this is the WSACS reference technique, not a clinical guess based on how tense the abdomen feels. Intra-abdominal hypertension (IAH) starts at 12 mmHg and is graded I-IV; abdominal compartment syndrome (ACS) specifically means IAP >20 mmHg WITH new organ dysfunction — it's the organ dysfunction that makes it ACS, not the pressure number alone. Suspect it in a distended, tense abdomen after large-volume resuscitation, damage control laparotomy, severe pancreatitis, or massive ascites, especially with new oliguria, rising peak/plateau airway pressures, or declining cardiac output. Decompressive laparotomy is the definitive treatment for true ACS that doesn't respond to medical measures — don't keep escalating medical therapy alone once organ dysfunction is established.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Measuring intra-abdominal pressure"
+    },
+    {
+      "type": "text",
+      "text": "The WSACS reference technique: measure via the bladder (an indwelling urinary catheter with a small volume of saline instilled, connected to a pressure transducer), at END-EXPIRATION, with the patient SUPINE, and the abdominal wall muscles RELAXED (paralysis/deep sedation can affect the reading — interpret in that context). Normal IAP in a critically ill patient is roughly 5-7 mmHg (higher than the 0-5 mmHg typical of a healthy person)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Grading — IAH vs ACS are not the same thing"
+    },
+    {
+      "type": "table",
+      "columns": ["Grade", "IAP", "Meaning"],
+      "rows": [
+        ["Normal", "5-7 mmHg (critically ill baseline)", "No intervention needed"],
+        ["IAH Grade I", "12-15 mmHg", "Intra-abdominal hypertension — monitor, address contributing factors"],
+        ["IAH Grade II", "16-20 mmHg", "Escalating — consider medical measures to reduce IAP"],
+        ["IAH Grade III", "21-25 mmHg", "Significant — active medical management, watch closely for organ dysfunction"],
+        ["IAH Grade IV", "> 25 mmHg", "Severe — high risk for ACS"],
+        ["Abdominal Compartment Syndrome (ACS)", "Sustained IAP > 20 mmHg", "PLUS new-onset organ dysfunction (oliguria/AKI, rising airway pressures with hypoxemia, declining cardiac output/hypotension) — this combination, not the pressure alone, defines true ACS"]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "IAH and ACS are not interchangeable — a patient can have IAH (an elevated pressure) without meeting criteria for ACS (which requires demonstrated new organ dysfunction). This distinction matters because it separates 'monitor and address contributing factors' from 'this needs active/surgical intervention.'"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Who's at risk"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Large-volume crystalloid resuscitation (a well-described risk factor — bowel/retroperitoneal edema from aggressive fluid administration is a major contributor, giving this a direct link to trauma/sepsis resuscitation practices)",
+        "Damage control laparotomy / open abdomen management",
+        "Severe acute pancreatitis",
+        "Massive ascites (cirrhosis, malignancy)",
+        "Major abdominal/retroperitoneal hemorrhage",
+        "Tight abdominal closure after major surgery"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recognizing it clinically — don't just attribute the findings to the underlying illness"
+    },
+    {
+      "type": "list",
+      "items": [
+        "New or worsening oliguria/AKI in a distended, tense abdomen — a classic and easily-missed presentation, since AKI in a critically ill post-resuscitation patient has many other plausible explanations that can distract from checking IAP.",
+        "Rising peak and plateau airway pressures with worsening oxygenation — elevated IAP pushes the diaphragm cephalad and reduces chest wall/lung compliance, which can look like it's 'just' worsening lung pathology if IAP isn't specifically considered.",
+        "Declining cardiac output/rising vasopressor requirement — elevated IAP compresses the IVC and reduces venous return/preload, and can be misread as simply 'more shock' from the primary process.",
+        "The unifying trigger: a tense, distended abdomen in a patient with a risk factor above, combined with ANY of the above new organ dysfunction, should prompt an actual bladder pressure measurement — not just an assumption that the findings are explained by the underlying critical illness alone."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Management"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Medical measures to reduce IAP for IAH/early ACS: evacuate gastric/bowel contents (NG/rectal tube decompression), improve abdominal wall compliance (adequate sedation/analgesia, consider neuromuscular blockade in refractory cases), avoid excessive ongoing fluid administration once feasible, drain large-volume ascites if present, and optimize body positioning (avoid excessive head-of-bed elevation, which raises IAP further).",
+        "DECOMPRESSIVE LAPAROTOMY is the definitive treatment for true ACS (elevated IAP + organ dysfunction) that doesn't respond to medical measures — do not keep escalating medical therapy indefinitely once organ dysfunction is clearly established; surgical decompression is the actual answer, typically followed by open abdomen management with a temporary closure device and staged fascial closure once the physiology allows."
+      ]
+    }
+  ],
+  "related": ["hemorrhagic-shock-mtp", "ecmo-support"],
+  "buildNote": "Critical Care category. IAH grading thresholds (12-15/16-20/21-25/>25 mmHg) and the ACS definition (IAP>20 + new organ dysfunction) WebSearch-verified against the WSACS 2013 updated consensus definitions."
+}

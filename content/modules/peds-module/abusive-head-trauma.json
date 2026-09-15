@@ -1,0 +1,103 @@
+{
+  "id": "abusive-head-trauma",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Abusive Head Trauma (Shaken Baby)",
+  "settingEmphasis": ["ed", "icu"],
+  "audience": ["peds"],
+  "aliases": ["shaken baby syndrome", "AHT", "non-accidental head injury"],
+  "tags": ["abusive head trauma", "shaken baby syndrome", "non-accidental trauma", "child abuse", "peds", "ED", "ICU"],
+  "keywords": ["the classic triad — subdural hemorrhage, bilateral retinal hemorrhage, encephalopathy — but don't wait for all three before acting on suspicion, a partial picture with a history that doesn't fit the injury is enough to trigger workup", "no clear explanatory history, a changing history, or a history inconsistent with the child's developmental stage (a non-mobile infant 'rolled off the couch and hit their head hard enough for this') are red flags in themselves", "extensive retinal hemorrhage with perimacular folds is highly specific for abuse, accidental trauma even from a real fall rarely produces this pattern", "a skeletal survey is standard in any child under 2 with suspected abuse, occult fractures are found in 30-70 percent of abused children with a head injury, don't skip it because the exam looks otherwise normal", "this complements not duplicates the existing TEN-4-FACESp bruising screen, that tool is for bruising patterns, this module is for the neurologic/intracranial presentation"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Narang SK, et al. Abusive Head Trauma in Infants and Children. Pediatrics. 2020;145(4):e20200203.",
+    "Levin AV. Retinal hemorrhage in abusive head trauma. Pediatrics. 2010;126(5):961-970.",
+    "American College of Radiology. ACR-SPR Practice Parameter for Skeletal Surveys in Children."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). The existing nat-ten4-facesp-screening module covers bruising patterns specifically; this is the complementary module for the neurologic/intracranial presentation of abusive head trauma, deliberately cross-referenced rather than merged since they're different clinical pictures." }
+  ],
+  "kind": "reference",
+  "purpose": "Recognition of abusive head trauma in an infant/young child — the classic triad, red-flag history features, and the standard workup (neuroimaging, dilated ophthalmologic exam, skeletal survey) — complementing, not duplicating, the existing bruising-pattern screening tool.",
+  "ageRange": "Highest risk under 2 years, most classically under 1 year; can occur in older children.",
+  "sourceOfTruth": ["nat-ten4-facesp-screening"],
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The classic triad — and why not to wait for all three"
+    },
+    {
+      "type": "text",
+      "text": "Classically described as subdural hemorrhage, bilateral retinal hemorrhage, and encephalopathy (altered mental status, seizures, apnea) — but a partial picture is enough to warrant a full workup, especially when paired with a history that doesn't adequately explain the injury. Waiting for the complete triad before taking action means missing many real cases, since not every case presents with all three findings clearly."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Red flags in the history itself"
+    },
+    {
+      "type": "list",
+      "items": [
+        "No explanatory history at all for a significant intracranial injury.",
+        "A history that changes between tellings, or differs between caregivers.",
+        "A history inconsistent with the child's developmental stage — the classic example: a non-mobile infant (too young to roll or crawl) with a history of a fall or mechanism that would require mobility they don't yet have.",
+        "A described mechanism (e.g. a short fall from a couch or bed) that is disproportionate to the severity of injury found — short household falls very rarely produce severe intracranial injury or retinal hemorrhage in a well child.",
+        "Delay in seeking care for a significant injury."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Retinal hemorrhage — highly specific when extensive"
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "Extensive, multilayered retinal hemorrhage — especially with perimacular retinal folds or retinoschisis — in an infant with intracranial hemorrhage or other trauma evidence and no clear alternative explanation is HIGHLY SPECIFIC for abusive head trauma. Even severe accidental trauma (a real fall from a significant height, a motor vehicle collision) infrequently produces this specific pattern, which is part of why it carries diagnostic weight."
+    },
+    {
+      "type": "text",
+      "text": "A dilated ophthalmologic examination by someone experienced in interpreting pediatric retinal findings (ophthalmology) is part of the standard workup — not every retinal hemorrhage pattern is equally specific, and the distribution/extent/associated findings (folds, schisis) matter for interpretation, so this shouldn't be assessed by a non-dilated bedside exam alone when abuse is a genuine consideration."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Skeletal survey — don't skip it"
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "A skeletal survey is STANDARD in any child under 2 with suspected abuse, including suspected abusive head trauma — occult fractures (classic metaphyseal corner fractures, rib fractures, especially in different stages of healing) are found in roughly 30-70% of abused children with a head injury. Do not skip this because the child's exam otherwise looks unremarkable outside the head — many of these fractures are clinically silent."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Per ACR practice parameters, a skeletal survey includes dedicated views of the skull, spine, ribs, and long bones — not a single babygram-style whole-body film, which has inadequate sensitivity for these fracture patterns.",
+        "Classic metaphyseal lesions ('corner fractures' or 'bucket-handle fractures') at the ends of long bones, and rib fractures (especially posterior, and especially multiple/bilateral or in different stages of healing) are considered highly specific for abuse in a non-mobile infant.",
+        "A follow-up skeletal survey roughly 2 weeks later is often recommended in equivocal cases, since healing fractures not visible acutely can become apparent as callus forms."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Workup and next steps"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Neuroimaging (CT for acute evaluation, MRI often follows for better characterization of injury age/pattern and to detect additional findings CT may miss).",
+        "Dilated ophthalmologic exam as above.",
+        "Skeletal survey as above.",
+        "Coagulation studies to help exclude a bleeding diathesis as a contributing/alternative explanation for bruising or intracranial hemorrhage, per standard child-abuse-evaluation protocols.",
+        "Involve your institution's child protection team/social work early — this evaluation, the reporting obligations, and the family conversation are handled through that established multidisciplinary pathway, not improvised case-by-case.",
+        "This module deliberately complements rather than duplicates the existing TEN-4-FACESp bruising-pattern screening tool — that tool screens for suspicious BRUISING patterns; this module addresses the neurologic/intracranial presentation. A child can present with findings relevant to either or both."
+      ]
+    }
+  ],
+  "buildNote": "peds-tool with kind=reference and sourceOfTruth pointing to nat-ten4-facesp-screening (the existing bruising-pattern tool) since the two are complementary, deliberately not merged. Retinal hemorrhage specificity and skeletal survey yield (30-70% occult fracture detection) WebSearch-verified against Narang et al. (Pediatrics 2020), Levin (Pediatrics 2010), and ACR-SPR practice parameters. peds-tool schema has no related[] field."
+}

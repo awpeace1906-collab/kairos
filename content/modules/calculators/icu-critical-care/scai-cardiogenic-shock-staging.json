@@ -1,0 +1,37 @@
+{
+  "id": "scai-cardiogenic-shock-staging",
+  "section": "Calculators",
+  "category": "ICU / Critical Care",
+  "title": "SCAI Cardiogenic Shock Staging",
+  "settingEmphasis": ["icu"],
+  "aliases": ["SCAI shock stage", "cardiogenic shock classification", "SCAI stage A-E"],
+  "tags": ["cardiogenic shock", "SCAI staging", "shock classification", "ICU"],
+  "keywords": ["this stages severity within cardiogenic shock once diagnosed, it does not diagnose the mechanism, pair it with shock-classification for that", "stage C is the classic cardiogenic shock most clinicians picture, but stages D and E are common ICU deterioration patterns that get missed if you re-anchor on the admission stage instead of restaging", "roughly 1 percent mortality at stage A climbing to roughly 90 percent at stage E, this is one of the strongest mortality-predicting classifications in cardiac critical care", "reassess the stage frequently, a patient can move from C to D to E within hours despite treatment"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Baran DA, et al. SCAI clinical expert consensus statement on the classification of cardiogenic shock. Catheter Cardiovasc Interv. 2019;94(1):29-37.",
+    "Jentzer JC, et al. Cardiogenic Shock Classification to Predict Mortality in the Cardiac Intensive Care Unit. J Am Coll Cardiol. 2019;74(17):2117-2128."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). The staging concept was already explained narratively inside shock-classification, but no dedicated staging tool existed, unlike other severity classifications in this app (Killip, APACHE-II). A classification, not a point score, so uses the classification engine type." }
+  ],
+  "engine": "classification",
+  "settings": ["ICU"],
+  "purpose": "Stages cardiogenic shock severity from A (at risk) to E (extremis) — a strong, validated predictor of in-hospital mortality that also guides escalation urgency.",
+  "notes": "Distinguish from SHOCK MECHANISM (see shock-classification) — this stages SEVERITY within cardiogenic shock specifically, once that diagnosis is established, and tracks closely with in-hospital mortality (roughly A <1%, B ~3%, C ~20%, D ~55%, E ~90% in the derivation cohort).",
+  "tiers": [
+    { "label": "Stage A — At risk", "description": "No current signs/symptoms of cardiogenic shock, but at risk for its development (e.g. large anterior MI, prior decompensated heart failure).", "mortality": "Very low (approx. <1%) — close monitoring, no shock-specific intervention yet needed" },
+    { "label": "Stage B — Beginning", "description": "Clinical evidence of relative hypotension or tachycardia WITHOUT hypoperfusion — normal or mildly elevated lactate (< 2 mmol/L).", "mortality": "Low (approx. 3%) — close monitoring, address the underlying cardiac process" },
+    { "label": "Stage C — Classic", "description": "Hypoperfusion requiring intervention beyond volume resuscitation — meets hemodynamic criteria for cardiogenic shock (SBP <90 mmHg for >30 min, or need for pressors/inotropes/mechanical support to maintain SBP >90) WITH clinical congestion and lactate ≥2 but <5 mmol/L.", "mortality": "Substantial (approx. 20%) — pharmacologic support (pressors/inotropes), consider escalating monitoring/mechanical support evaluation" },
+    { "label": "Stage D — Deteriorating", "description": "Similar to Stage C but FAILING to respond to initial interventions — lactate ≤5 mmol/L with end-organ dysfunction (renal/hepatic), OR lactate ≥5 mmol/L WITHOUT end-organ dysfunction, OR persistent hypoperfusion despite escalating support.", "mortality": "High (approx. 55%) — escalate support urgently, actively evaluate for mechanical circulatory support (IABP/Impella/VA-ECMO)" },
+    { "label": "Stage E — Extremis", "description": "Cardiac arrest with ongoing CPR, and/or ECMO/mechanical circulatory support being emergently initiated, and/or refractory shock despite maximal support with multiple pressors/inotropes.", "mortality": "Very high (approx. 90%) — maximal resuscitative and mechanical circulatory support efforts" }
+  ],
+  "interpretation": [
+    { "label": "Stage strongly predicts in-hospital and long-term mortality — reassess frequently, a patient can move between stages within hours", "detail": "This is a severity/prognostic classification, not a treatment algorithm on its own — pair it with the mechanism-based workup in shock-classification and the device-selection considerations for escalating mechanical support.", "severity": "info" }
+  ],
+  "buildNote": "classification engine, matching the postpartum-hemorrhage-staging/killip-classification pattern. Stage criteria and approximate mortality figures WebSearch-verified against Baran et al. (2019 SCAI consensus statement) and Jentzer et al. (JACC 2019) — mortality figures presented as approximate since they vary somewhat across validation cohorts. Calculators carry no `related` field; cross-referenced to shock-classification and rv-failure-pulmonary-hypertensive-crisis via `notes` and keywords instead."
+}

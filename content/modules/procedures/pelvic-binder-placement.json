@@ -1,0 +1,65 @@
+{
+  "id": "pelvic-binder-placement",
+  "section": "Procedures",
+  "category": "Wound & Fracture Care",
+  "title": "Pelvic Binder Placement & Hemorrhage Control",
+  "settingEmphasis": ["ed", "prehospital"],
+  "aliases": ["pelvic sling", "pelvic fracture binder", "SAM sling"],
+  "tags": ["pelvic binder", "pelvic fracture", "hemorrhage control", "trauma", "ED", "prehospital"],
+  "keywords": ["level matters more than tightness, the binder goes over the greater trochanters, not the iliac crests, a binder placed too high barely reduces the fracture at all", "don't log roll a patient with a suspected pelvic fracture to place the binder, minimize movement and slide it into place", "a binder is a temporizing measure, not a cure, it buys time for resuscitation and definitive management, it doesn't replace angio-embolization or surgical fixation for ongoing bleeding", "apply based on mechanism and clinical suspicion, don't wait for a pelvic X-ray to confirm the fracture before binding an unstable-mechanism, hemodynamically concerning patient"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Bonner TJ, et al. Accurate placement of a pelvic binder improves reduction of unstable fractures of the pelvic ring. Injury. 2011;42(10):1015-1019.",
+    "LITFL. Pelvic Binders — Emergency Procedures."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). Pelvic hemorrhage was referenced across several existing trauma modules (hemorrhagic-shock-mtp, trauma-primary-survey) but the binder placement technique itself had no standalone procedure card." }
+  ],
+  "outputType": "workflow",
+  "purpose": "Correct placement level and technique for a pelvic binder — a temporizing hemorrhage-control measure for a suspected unstable pelvic fracture, buying time for definitive resuscitation and management.",
+  "entryPrompt": "Apply based on mechanism and clinical suspicion — do not wait for a pelvic X-ray to confirm a fracture before binding a hemodynamically concerning patient with a mechanism consistent with pelvic injury.",
+  "nodes": [
+    {
+      "id": "indication",
+      "type": "step",
+      "prompt": "1. Recognize the indication",
+      "body": "Suspect an unstable pelvic fracture in blunt trauma (especially high-energy mechanisms — motor vehicle collision, motorcycle, fall from height, pedestrian struck) with pelvic pain, pelvic instability on gentle exam, or unexplained hemodynamic instability after trauma. Do NOT repeatedly spring/rock the pelvis to test for instability — this can dislodge an early clot and worsen bleeding; a single gentle assessment (or skipping mechanical testing entirely in favor of imaging/binding based on mechanism) is preferred over repeated manipulation."
+    },
+    {
+      "id": "positioning",
+      "type": "step",
+      "prompt": "2. Minimize movement while placing the binder",
+      "body": "Do NOT log roll a patient with a suspected unstable pelvic fracture to place the binder — this can worsen displacement and bleeding. Instead, carefully slide the binder underneath the patient with minimal movement, or use a scoop stretcher / coordinated log-lift technique if the binder must go underneath, minimizing pelvic motion throughout."
+    },
+    {
+      "id": "level",
+      "type": "step",
+      "prompt": "3. Position at the correct LEVEL — greater trochanters, not the iliac crests",
+      "body": "This is the single most common placement error and the one that matters most: the binder must sit at the level of the GREATER TROCHANTERS (roughly the level of the pubic symphysis anteriorly), NOT higher up at the iliac crests. A binder placed too high provides dramatically less fracture reduction — studies show the fracture gap can be nearly 3x larger when a binder is placed above the trochanteric level compared to correct placement. If you're unsure, palpate the greater trochanters directly and align the binder there."
+    },
+    {
+      "id": "symmetry-tension",
+      "type": "step",
+      "prompt": "4. Ensure symmetry and appropriate tension",
+      "body": "Align the binder symmetrically on both sides before tightening — an asymmetric binder can worsen rather than reduce a fracture. Tighten firmly and evenly per the device's instructions (commercial pelvic binders typically have a mechanism indicating adequate tension); a bedsheet-improvised binder should be snugged firmly and secured (tied/clamped), but avoid excessive tension that could cause skin injury, especially with prolonged use."
+    },
+    {
+      "id": "reassess",
+      "type": "step",
+      "prompt": "5. Reassess and continue resuscitation",
+      "body": "A binder is a TEMPORIZING measure, not a definitive treatment — it buys time by stabilizing the fracture and reducing pelvic volume (which helps tamponade venous/cancellous bone bleeding), but it does NOT control arterial bleeding from a major vessel injury. Continue standard hemorrhage-control resuscitation (see hemorrhagic-shock-mtp) in parallel, and get trauma surgery/interventional radiology involved promptly for definitive management (angio-embolization for arterial bleeding, or surgical fixation) — do not treat binder placement as having solved the problem."
+    }
+  ],
+  "checklist": [
+    "Movement minimized while placing the binder — no log rolling a suspected unstable pelvis",
+    "Binder positioned at the level of the GREATER TROCHANTERS, not the iliac crests",
+    "Symmetric placement confirmed on both sides before final tightening",
+    "Understood as a temporizing measure — hemorrhage-control resuscitation and definitive management (angio-embolization/surgical fixation) pursued in parallel, not deferred"
+  ],
+  "crossLinks": ["hemorrhagic-shock-mtp", "trauma-primary-survey"],
+  "buildNote": "workflow outputType. Trochanteric placement level and its quantified effect on fracture reduction WebSearch-verified against Bonner et al. (Injury 2011) and LITFL procedural teaching — this is the single highest-yield technical point since incorrect (too-high) placement is described as common in practice."
+}

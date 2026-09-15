@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 828,
+  "count": 865,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -538,6 +538,30 @@
       ]
     },
     {
+      "text": "American Society of Anesthesiologists Consensus-Based Guidance on Preoperative Management of Patients on GLP-1 Receptor Agonists (June 2023).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "perioperative-home-medication-management",
+          "title": "Perioperative Home Medication Management",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/perioperative-home-medication-management"
+        }
+      ]
+    },
+    {
+      "text": "American Society of Anesthesiologists. Updated ASA Consensus-Based Guidance on Preoperative Management of Patients on GLP-1 Receptor Agonists (October 2024) — reversed the initial hold recommendation for most patients.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "perioperative-home-medication-management",
+          "title": "Perioperative Home Medication Management",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/perioperative-home-medication-management"
+        }
+      ]
+    },
+    {
       "text": "Anseeuw K, et al. Cyanide poisoning by fire smoke inhalation: a European expert consensus. Eur J Emerg Med. 2013;20(1):2-9.",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -690,6 +714,30 @@
           "title": "Acute Mesenteric Ischemia",
           "section": "Reference Library",
           "route": "/reference-library/vascular-emergencies/acute-mesenteric-ischemia"
+        }
+      ]
+    },
+    {
+      "text": "Baran DA, et al. SCAI clinical expert consensus statement on the classification of cardiogenic shock. Catheter Cardiovasc Interv. 2019;94(1):29-37.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "scai-cardiogenic-shock-staging",
+          "title": "SCAI Cardiogenic Shock Staging",
+          "section": "Calculators",
+          "route": "/calculators/icu-critical-care/scai-cardiogenic-shock-staging"
+        }
+      ]
+    },
+    {
+      "text": "Björck M, et al. Editor's Choice — European Society for Vascular Surgery (ESVS) 2020 Clinical Practice Guidelines on the Management of Acute Limb Ischaemia. Eur J Vasc Endovasc Surg. 2020;59(2):173-218.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "acute-limb-ischemia",
+          "title": "Acute Limb Ischemia",
+          "section": "Reference Library",
+          "route": "/reference-library/vascular-emergencies/acute-limb-ischemia"
         }
       ]
     },
@@ -1306,6 +1354,18 @@
       ]
     },
     {
+      "text": "Gan TJ, et al. Fourth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting. Anesth Analg. 2020;131(2):411-448.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "ponv-treatment-algorithm",
+          "title": "PONV Treatment Algorithm",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/ponv-treatment-algorithm"
+        }
+      ]
+    },
+    {
       "text": "Gelb AW et al. WHO-WFSA International Standards for a Safe Practice of Anesthesia. Anesthesiology 2018; ASA 2023 fasting guidelines; SPAQI 2025 GLP-1 update",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1618,6 +1678,18 @@
       ]
     },
     {
+      "text": "Kasotakis G, et al. Operative fixation of rib fractures after blunt trauma: A practice management guideline from the Eastern Association for the Surgery of Trauma. J Trauma Acute Care Surg. 2017;82(3):618-626.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "blunt-chest-trauma",
+          "title": "Blunt Chest Trauma — Rib Fractures, Flail Chest & Pulmonary Contusion",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/blunt-chest-trauma"
+        }
+      ]
+    },
+    {
       "text": "KDIGO Clinical Practice Guideline for Acute Kidney Injury (2012)",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1638,6 +1710,18 @@
           "title": "Neonatal Jaundice (AAP 2022)",
           "section": "Peds Module",
           "route": "/peds-module/neonatology/neonatal-jaundice"
+        }
+      ]
+    },
+    {
+      "text": "Kirkpatrick AW, et al. Intra-abdominal hypertension and the abdominal compartment syndrome: updated consensus definitions and clinical practice guidelines from the World Society of the Abdominal Compartment Syndrome. Intensive Care Med. 2013;39(7):1190-1206.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "abdominal-compartment-syndrome",
+          "title": "Abdominal Compartment Syndrome",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/abdominal-compartment-syndrome"
         }
       ]
     },
@@ -1734,6 +1818,30 @@
           "title": "Shock Classification & Bedside Diagnosis",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/shock-classification"
+        }
+      ]
+    },
+    {
+      "text": "National Asthma Education and Prevention Program (NAEPP) Expert Panel Report 3/4 guidelines on asthma management.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "peds-asthma-exacerbation-management",
+          "title": "Pediatric Asthma Exacerbation — Severity & Management",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-asthma-exacerbation-management"
+        }
+      ]
+    },
+    {
+      "text": "Neonatal Hypoglycemia: A Systematic Review of International and Local Clinical Guidelines with Clinical Implications. J Clin Med. 2026;15(10):3921.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "neonatal-hypoglycemia",
+          "title": "Neonatal Hypoglycemia — Screening & Management",
+          "section": "Peds Module",
+          "route": "/peds-module/neonatology/neonatal-hypoglycemia"
         }
       ]
     },
@@ -2014,6 +2122,30 @@
       ]
     },
     {
+      "text": "Simon B, et al. Pain management guidelines for blunt thoracic trauma. J Trauma. 2005;59(5):1256-1267.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "blunt-chest-trauma",
+          "title": "Blunt Chest Trauma — Rib Fractures, Flail Chest & Pulmonary Contusion",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/blunt-chest-trauma"
+        }
+      ]
+    },
+    {
+      "text": "Society for Perioperative Assessment and Quality Improvement (SPAQI) multidisciplinary consensus statement on GLP-1 receptor agonist perioperative management.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "perioperative-home-medication-management",
+          "title": "Perioperative Home Medication Management",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/perioperative-home-medication-management"
+        }
+      ]
+    },
+    {
       "text": "St-Onge M, Anseeuw K, Cantrell FL, et al. Experts Consensus Recommendations for the Management of Calcium Channel Blocker Poisoning in Adults. Crit Care Med. 2017;45(3):e306-e315",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -2058,6 +2190,18 @@
           "title": "Chromosomal Disorders",
           "section": "Peds Module",
           "route": "/peds-module/neonatology/chromosomal-disorders"
+        }
+      ]
+    },
+    {
+      "text": "Stevens DL, et al. Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "necrotizing-soft-tissue-infection",
+          "title": "Necrotizing Soft Tissue Infection — Recognition & Surgical Urgency",
+          "section": "Reference Library",
+          "route": "/reference-library/infectious-disease-immunization/necrotizing-soft-tissue-infection"
         }
       ]
     },
@@ -2640,6 +2784,18 @@
           "title": "Running the Code — Team Leadership",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/code-leadership-run-the-room"
+        }
+      ]
+    },
+    {
+      "text": "Harris DL, et al. Dextrose Gel for Neonatal Hypoglycaemia (the Sugar Babies Study): a randomised, double-blind, placebo-controlled trial. Lancet. 2013;382(9910):2077-2083.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "neonatal-hypoglycemia",
+          "title": "Neonatal Hypoglycemia — Screening & Management",
+          "section": "Peds Module",
+          "route": "/peds-module/neonatology/neonatal-hypoglycemia"
         }
       ]
     },
@@ -3856,6 +4012,18 @@
       ]
     },
     {
+      "text": "Weibel S, et al. Drugs for preventing postoperative nausea and vomiting in adults after general anaesthesia: a network meta-analysis. Cochrane Database Syst Rev. 2020.",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "ponv-treatment-algorithm",
+          "title": "PONV Treatment Algorithm",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/ponv-treatment-algorithm"
+        }
+      ]
+    },
+    {
       "text": "American College of Surgeons Committee on Trauma. ATLS 10th Edition — thoracic trauma and resuscitative thoracotomy criteria.",
       "group": "Reference texts & drug libraries",
       "usedBy": [
@@ -4978,6 +5146,18 @@
       ]
     },
     {
+      "text": "Adamkin DH, Committee on Fetus and Newborn. Postnatal Glucose Homeostasis in Late-Preterm and Term Infants. Pediatrics. 2011;127(3):575-579.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "neonatal-hypoglycemia",
+          "title": "Neonatal Hypoglycemia — Screening & Management",
+          "section": "Peds Module",
+          "route": "/peds-module/neonatology/neonatal-hypoglycemia"
+        }
+      ]
+    },
+    {
       "text": "Adamkin DH; AAP Committee on Fetus and Newborn. Pediatrics 2011;127(3):575-579",
       "group": "Other primary sources",
       "usedBy": [
@@ -5086,6 +5266,18 @@
       ]
     },
     {
+      "text": "American College of Radiology. ACR-SPR Practice Parameter for Skeletal Surveys in Children.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "abusive-head-trauma",
+          "title": "Abusive Head Trauma (Shaken Baby)",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/abusive-head-trauma"
+        }
+      ]
+    },
+    {
       "text": "American Diabetes Association. Standards of Care in Diabetes — 2025. Diabetes Care. 2025;48(Suppl 1)",
       "group": "Other primary sources",
       "usedBy": [
@@ -5118,6 +5310,18 @@
           "title": "Kawasaki Disease",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/kawasaki-disease"
+        }
+      ]
+    },
+    {
+      "text": "American Society of Anesthesiologists Task Force on Prevention of Perioperative Peripheral Neuropathies. Practice Advisory for the Prevention of Perioperative Peripheral Neuropathies. Anesthesiology. 2018;128(1):11-26.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "perioperative-positioning-nerve-injury",
+          "title": "Perioperative Positioning & Nerve Injury Prevention",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/perioperative-positioning-nerve-injury"
         }
       ]
     },
@@ -5512,6 +5716,30 @@
       ]
     },
     {
+      "text": "Bonne SL, Kadri SS. Evaluation and Management of Necrotizing Soft Tissue Infections. Infect Dis Clin North Am. 2017;31(3):497-511.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "necrotizing-soft-tissue-infection",
+          "title": "Necrotizing Soft Tissue Infection — Recognition & Surgical Urgency",
+          "section": "Reference Library",
+          "route": "/reference-library/infectious-disease-immunization/necrotizing-soft-tissue-infection"
+        }
+      ]
+    },
+    {
+      "text": "Bonner TJ, et al. Accurate placement of a pelvic binder improves reduction of unstable fractures of the pelvic ring. Injury. 2011;42(10):1015-1019.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pelvic-binder-placement",
+          "title": "Pelvic Binder Placement & Hemorrhage Control",
+          "section": "Procedures",
+          "route": "/procedures/wound-fracture-care/pelvic-binder-placement"
+        }
+      ]
+    },
+    {
       "text": "Bosse MJ, et al. A prospective evaluation of the lower-extremity injury-severity scores (LEAP study). J Bone Joint Surg Am. 2001;83(1):3-14",
       "group": "Other primary sources",
       "usedBy": [
@@ -5580,6 +5808,18 @@
           "title": "Brugada Criteria for VT vs SVT with Aberrancy",
           "section": "Calculators",
           "route": "/calculators/cardiovascular-chest-pain-arrhythmia/brugada-vt"
+        }
+      ]
+    },
+    {
+      "text": "Bulger EM, et al. Rib fractures in the elderly. J Trauma. 2000;48(6):1040-1046.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "blunt-chest-trauma",
+          "title": "Blunt Chest Trauma — Rib Fractures, Flail Chest & Pulmonary Contusion",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/blunt-chest-trauma"
         }
       ]
     },
@@ -6610,6 +6850,18 @@
       ]
     },
     {
+      "text": "De Waele JJ, et al. Intra-abdominal hypertension and abdominal compartment syndrome. Am J Kidney Dis. 2011;57(1):159-169.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "abdominal-compartment-syndrome",
+          "title": "Abdominal Compartment Syndrome",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/abdominal-compartment-syndrome"
+        }
+      ]
+    },
+    {
       "text": "Decker BS, et al. EXTRIP Workgroup Recommendations on the Use of Extracorporeal Treatments in Lithium Poisoning. Clin J Am Soc Nephrol. 2015;10(5):875-887",
       "group": "Other primary sources",
       "usedBy": [
@@ -6834,6 +7086,18 @@
           "title": "Revised Cardiac Risk Index (RCRI)",
           "section": "Calculators",
           "route": "/calculators/anesthesia-airway-or/rcri"
+        }
+      ]
+    },
+    {
+      "text": "Ducharme FM, et al. Diagnosis and management of asthma in preschool and school-age children: a practical approach for paediatricians. Paediatr Child Health. 2015.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-asthma-exacerbation-management",
+          "title": "Pediatric Asthma Exacerbation — Severity & Management",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-asthma-exacerbation-management"
         }
       ]
     },
@@ -7270,6 +7534,18 @@
       ]
     },
     {
+      "text": "Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-asthma-exacerbation-management",
+          "title": "Pediatric Asthma Exacerbation — Severity & Management",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-asthma-exacerbation-management"
+        }
+      ]
+    },
+    {
       "text": "Goldfrank's Toxicologic Emergencies — beta-blocker overdose / membrane-stabilizing activity",
       "group": "Other primary sources",
       "usedBy": [
@@ -7450,6 +7726,18 @@
       ]
     },
     {
+      "text": "Harjola VP, et al. Contemporary management of acute right ventricular failure: a statement from the Heart Failure Association and the Working Group on Pulmonary Circulation and Right Ventricular Function of the European Society of Cardiology. Eur J Heart Fail. 2016;18(3):226-241.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "rv-failure-pulmonary-hypertensive-crisis",
+          "title": "Right Ventricular Failure & Acute Pulmonary Hypertensive Crisis",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/rv-failure-pulmonary-hypertensive-crisis"
+        }
+      ]
+    },
+    {
       "text": "Haydel MJ, et al. Indications for computed tomography in patients with minor head injury. N Engl J Med. 2000;343(2):100-105",
       "group": "Other primary sources",
       "usedBy": [
@@ -7594,6 +7882,18 @@
       ]
     },
     {
+      "text": "International recommendations on epinephrine auto-injector doses often differ from standard weight-based guidance. Ann Allergy Asthma Immunol. 2022.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-epinephrine-anaphylaxis",
+          "title": "Epinephrine — Pediatric Anaphylaxis (IM)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-epinephrine-anaphylaxis"
+        }
+      ]
+    },
+    {
       "text": "IPAL-ICU Project (CAPC) — Improving Palliative Care in the ICU, clinical and communication tools.",
       "group": "Other primary sources",
       "usedBy": [
@@ -7650,6 +7950,18 @@
           "title": "Adjusted / Lean Body Weight",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/dosing-fluid-math/adjusted-body-weight"
+        }
+      ]
+    },
+    {
+      "text": "Jentzer JC, et al. Cardiogenic Shock Classification to Predict Mortality in the Cardiac Intensive Care Unit. J Am Coll Cardiol. 2019;74(17):2117-2128.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "scai-cardiogenic-shock-staging",
+          "title": "SCAI Cardiogenic Shock Staging",
+          "section": "Calculators",
+          "route": "/calculators/icu-critical-care/scai-cardiogenic-shock-staging"
         }
       ]
     },
@@ -7978,6 +8290,18 @@
       ]
     },
     {
+      "text": "Lahm T, et al. Hemodynamic Assessment of Patients with Pulmonary Hypertension. An Official American Thoracic Society/Pulmonary Hypertension Association Function Test and Radiographic Assessment. Am J Respir Crit Care Med. 2018.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "rv-failure-pulmonary-hypertensive-crisis",
+          "title": "Right Ventricular Failure & Acute Pulmonary Hypertensive Crisis",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/rv-failure-pulmonary-hypertensive-crisis"
+        }
+      ]
+    },
+    {
       "text": "Lanoxin (digoxin) prescribing information — amiodarone co-administration data",
       "group": "Other primary sources",
       "usedBy": [
@@ -8022,6 +8346,30 @@
           "title": "Albumin + Furosemide (Push/Pull)",
           "section": "Reference Library",
           "route": "/reference-library/cardiac-ecg/albumin-furosemide-push-pull"
+        }
+      ]
+    },
+    {
+      "text": "Levin AV. Retinal hemorrhage in abusive head trauma. Pediatrics. 2010;126(5):961-970.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "abusive-head-trauma",
+          "title": "Abusive Head Trauma (Shaken Baby)",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/abusive-head-trauma"
+        }
+      ]
+    },
+    {
+      "text": "Levin RL, et al. Methylene blue reduces mortality and morbidity in vasoplegic patients after cardiac surgery. Ann Thorac Surg. 2004;77(2):496-499.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "post-cardiac-surgery-vasoplegia",
+          "title": "Post-Cardiac-Surgery Vasoplegic Syndrome",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/post-cardiac-surgery-vasoplegia"
         }
       ]
     },
@@ -8082,6 +8430,18 @@
           "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/penetrating-regional-trauma"
+        }
+      ]
+    },
+    {
+      "text": "LITFL. Pelvic Binders — Emergency Procedures.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pelvic-binder-placement",
+          "title": "Pelvic Binder Placement & Hemorrhage Control",
+          "section": "Procedures",
+          "route": "/procedures/wound-fracture-care/pelvic-binder-placement"
         }
       ]
     },
@@ -8536,6 +8896,18 @@
       ]
     },
     {
+      "text": "Narang SK, et al. Abusive Head Trauma in Infants and Children. Pediatrics. 2020;145(4):e20200203.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "abusive-head-trauma",
+          "title": "Abusive Head Trauma (Shaken Baby)",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/abusive-head-trauma"
+        }
+      ]
+    },
+    {
       "text": "Narins RG, Emmett M. Simple and mixed acid-base disorders: a practical approach. Medicine (Baltimore). 1980;59(3):161-187 (Winter's formula, named for the original unpublished work by Dr. Winters).",
       "group": "Other primary sources",
       "usedBy": [
@@ -8778,6 +9150,18 @@
           "title": "Escharotomy",
           "section": "Procedures",
           "route": "/procedures/wound-fracture-care/escharotomy"
+        }
+      ]
+    },
+    {
+      "text": "Ortoleva JP, et al. Vasoplegia After Cardiac Surgery: Current Literature and Rescue Therapy Options. J Cardiothorac Vasc Anesth. 2022;36(6):1503-1513.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "post-cardiac-surgery-vasoplegia",
+          "title": "Post-Cardiac-Surgery Vasoplegic Syndrome",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/post-cardiac-surgery-vasoplegia"
         }
       ]
     },
@@ -9436,6 +9820,18 @@
       ]
     },
     {
+      "text": "Rutherford RB, et al. Recommended standards for reports dealing with lower extremity ischemia: revised version. J Vasc Surg. 1997;26(3):517-538.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acute-limb-ischemia",
+          "title": "Acute Limb Ischemia",
+          "section": "Reference Library",
+          "route": "/reference-library/vascular-emergencies/acute-limb-ischemia"
+        }
+      ]
+    },
+    {
       "text": "Saltzman JR et al. Gastrointest Endosc 2011",
       "group": "Other primary sources",
       "usedBy": [
@@ -9552,6 +9948,18 @@
           "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-cannabinoids-inhalants"
+        }
+      ]
+    },
+    {
+      "text": "Shah PR, et al. Hydroxocobalamin or Methylene Blue for Vasoplegic Syndrome in Adult Cardiothoracic Surgery. J Cardiothorac Vasc Anesth. 2022;36(3):723-729.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "post-cardiac-surgery-vasoplegia",
+          "title": "Post-Cardiac-Surgery Vasoplegic Syndrome",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/post-cardiac-surgery-vasoplegia"
         }
       ]
     },
@@ -10192,6 +10600,18 @@
       ]
     },
     {
+      "text": "Warner MA, et al. Perioperative visual loss. Anesthesiology. 2001;95(6):1417-1421.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "perioperative-positioning-nerve-injury",
+          "title": "Perioperative Positioning & Nerve Injury Prevention",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/perioperative-positioning-nerve-injury"
+        }
+      ]
+    },
+    {
       "text": "Waselenko JK, et al. Medical management of the acute radiation syndrome: recommendations of the Strategic National Stockpile Radiation Working Group. Ann Intern Med. 2004;140(12):1037-1051",
       "group": "Other primary sources",
       "usedBy": [
@@ -10356,6 +10776,30 @@
           "title": "LRINEC Score",
           "section": "Calculators",
           "route": "/calculators/sepsis-infectious-disease/lrinec"
+        }
+      ]
+    },
+    {
+      "text": "Wong CH, et al. The LRINEC (Laboratory Risk Indicator for Necrotizing Fasciitis) score: a tool for distinguishing necrotizing fasciitis from other soft tissue infections. Crit Care Med. 2004;32(7):1535-1541.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "necrotizing-soft-tissue-infection",
+          "title": "Necrotizing Soft Tissue Infection — Recognition & Surgical Urgency",
+          "section": "Reference Library",
+          "route": "/reference-library/infectious-disease-immunization/necrotizing-soft-tissue-infection"
+        }
+      ]
+    },
+    {
+      "text": "Wood JP, et al. Epinephrine for First-aid Management of Anaphylaxis. Pediatrics. 2017;139(3):e20164006.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-epinephrine-anaphylaxis",
+          "title": "Epinephrine — Pediatric Anaphylaxis (IM)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-epinephrine-anaphylaxis"
         }
       ]
     },

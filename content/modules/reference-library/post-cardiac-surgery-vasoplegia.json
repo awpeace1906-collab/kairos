@@ -1,0 +1,88 @@
+{
+  "id": "post-cardiac-surgery-vasoplegia",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Post-Cardiac-Surgery Vasoplegic Syndrome",
+  "settingEmphasis": ["icu", "or"],
+  "aliases": ["vasoplegic syndrome", "vasoplegia", "refractory vasodilatory shock post-bypass"],
+  "tags": ["vasoplegia", "vasoplegic syndrome", "cardiac surgery", "refractory shock", "methylene blue", "hydroxocobalamin", "ICU", "OR"],
+  "keywords": ["high cardiac output plus low systemic vascular resistance plus a pressor requirement that keeps climbing despite what looks like adequate volume, that's the vasoplegic pattern, distinguish it from cardiogenic or hypovolemic shock before treating", "cardiopulmonary bypass itself is the trigger in a lot of these cases, the inflammatory/complement cascade from the extracorporeal circuit, not a separate new insult", "methylene blue and hydroxocobalamin both work by interrupting nitric-oxide-mediated vasodilation through different mechanisms, they're not interchangeable with a generic pressor", "methylene blue causes a harmless-but-alarming blue-green discoloration of the skin and urine and interferes with pulse oximetry readings for a while, warn the team before giving it", "avoid methylene blue in a patient on serotonergic medications, it's a MAO inhibitor and can precipitate serotonin syndrome"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Levin RL, et al. Methylene blue reduces mortality and morbidity in vasoplegic patients after cardiac surgery. Ann Thorac Surg. 2004;77(2):496-499.",
+    "Shah PR, et al. Hydroxocobalamin or Methylene Blue for Vasoplegic Syndrome in Adult Cardiothoracic Surgery. J Cardiothorac Vasc Anesth. 2022;36(3):723-729.",
+    "Ortoleva JP, et al. Vasoplegia After Cardiac Surgery: Current Literature and Rescue Therapy Options. J Cardiothorac Vasc Anesth. 2022;36(6):1503-1513."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). Vasoplegia was mentioned in passing across roughly 6 existing modules (shock-classification, pressor-inotrope-reference, push-dose-pressors, etc.) but no module addressed its specific post-cardiac-surgery presentation or the methylene blue/hydroxocobalamin rescue therapies." }
+  ],
+  "summary": "Post-cardiac-surgery vasoplegic syndrome is high cardiac output plus profoundly low systemic vascular resistance plus an escalating pressor requirement despite adequate volume — when standard vasopressors alone aren't holding, methylene blue and hydroxocobalamin are the two nitric-oxide-pathway rescue agents to reach for.",
+  "whyThisMatters": "Vasoplegia after cardiopulmonary bypass is common enough (a meaningful minority of cardiac surgery patients) and mortality-relevant enough that recognizing it as a distinct entity — rather than just 'shock, add more norepinephrine' — changes management, since the definitive rescue therapies here work through a completely different mechanism than escalating catecholamine doses alone.",
+  "clinicalTakeaway": "Recognize the vasoplegic pattern: high/normal cardiac output, low systemic vascular resistance, and a vasopressor requirement that keeps climbing despite what looks like adequate intravascular volume — most commonly triggered by the inflammatory/complement cascade of cardiopulmonary bypass itself. When escalating norepinephrine (± vasopressin) alone isn't controlling it, add methylene blue or hydroxocobalamin — both interrupt nitric-oxide-mediated vasodilation through different mechanisms and are genuine rescue agents, not just another pressor. Warn the team before giving methylene blue (harmless blue-green skin/urine discoloration, transient pulse oximetry interference) and avoid it in a patient on serotonergic medications (it's a MAO inhibitor and can precipitate serotonin syndrome).",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recognizing the vasoplegic pattern"
+    },
+    {
+      "type": "text",
+      "text": "Vasoplegic syndrome presents as a distinct hemodynamic profile: HIGH or normal cardiac output, PROFOUNDLY LOW systemic vascular resistance, and a vasopressor requirement that keeps escalating despite what appears to be adequate intravascular volume. This distinguishes it from cardiogenic shock (low cardiac output) or ongoing hypovolemia (which should respond to volume) — mistaking vasoplegia for either of those and treating accordingly (more inotrope, more volume) won't address the actual problem."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why it happens after cardiac surgery"
+    },
+    {
+      "type": "text",
+      "text": "Cardiopulmonary bypass itself is a major trigger — the extracorporeal circuit activates a systemic inflammatory response and complement cascade (blood contacting the non-endothelial surfaces of the bypass circuit), which drives excessive nitric oxide production and profound vasodilation. Risk factors include prolonged bypass time, pre-existing use of ACE inhibitors/ARBs or calcium channel blockers, pre-existing heart failure, and prior vasoplegia. This means a substantial fraction of cases are a predictable physiologic consequence of the bypass process itself, not a separate new complication to hunt for a distinct cause of."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "First-line — standard vasopressors"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Norepinephrine remains first-line, titrated as needed.",
+        "Vasopressin is commonly added early as a second agent — it works through a non-catecholamine (V1 receptor) pathway, which is mechanistically attractive in a state driven by excessive nitric-oxide-mediated vasodilation, and helps avoid escalating catecholamine doses alone.",
+        "If the requirement keeps climbing despite an adequate combination of norepinephrine and vasopressin, this is refractory vasoplegia and it's time to reach for a rescue agent rather than simply adding a third catecholamine."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rescue therapy — methylene blue and hydroxocobalamin"
+    },
+    {
+      "type": "table",
+      "columns": ["Agent", "Mechanism", "Practical notes"],
+      "rows": [
+        ["Methylene blue", "Inhibits guanylate cyclase, blocking the nitric-oxide-mediated vasodilation pathway at a downstream step", "Typical dosing in the literature is around 1-2 mg/kg IV, sometimes followed by an infusion. Causes a harmless but alarming blue-green discoloration of skin and urine, and transiently interferes with pulse oximetry (falsely low readings) — warn the team beforehand. Is a MAO inhibitor — AVOID in a patient on serotonergic medications (SSRIs, SNRIs, certain opioids) given the serotonin syndrome risk. Avoid in G6PD deficiency (risk of hemolysis)."],
+        ["Hydroxocobalamin", "Scavenges nitric oxide directly (also the mechanism behind its use as a cyanide antidote)", "Dosing reported in the literature around 5 grams IV, given either as a bolus over ~15 minutes or as an extended infusion (e.g. over several hours) — an extended infusion may give a steadier hemodynamic effect with less rebound vasodilation than a bolus. Causes a reddish discoloration of skin/urine/secretions and can interfere with some lab assays (including co-oximetry-based measurements) for a period afterward."]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "Head-to-head comparisons suggest broadly similar hemodynamic efficacy between the two agents (improved mean arterial pressure and reduced vasopressor requirement within the first hour) — choice often comes down to institutional availability/protocol and specific contraindications (methylene blue's serotonin syndrome/G6PD-deficiency risk vs hydroxocobalamin's lab interference) rather than one being clearly superior."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "If rescue therapy fails"
+    },
+    {
+      "type": "text",
+      "text": "Refractory vasoplegia despite maximal vasopressor support and a rescue agent is a genuine escalation point — involve cardiac surgery/cardiac anesthesia and consider mechanical circulatory support evaluation if the clinical picture is deteriorating (see the ECMO & Advanced Circulatory Support reference), and ensure other contributing/confounding causes of refractory shock (occult bleeding, tamponade, sepsis) have been actively excluded rather than assuming everything is vasoplegia alone."
+    }
+  ],
+  "related": ["pressor-inotrope-reference", "shock-classification", "ecmo-support"],
+  "buildNote": "Critical Care category. Methylene blue and hydroxocobalamin dosing, mechanisms, and practical contraindications (serotonin syndrome, G6PD deficiency, pulse-oximetry/lab interference) WebSearch-verified against Ortoleva et al. (J Cardiothorac Vasc Anesth 2022) and Shah et al. (2022) — dosing given as literature-reported ranges rather than a single fixed institutional protocol, since practice genuinely varies."
+}

@@ -1,0 +1,80 @@
+{
+  "id": "necrotizing-soft-tissue-infection",
+  "section": "Reference Library",
+  "category": "Infectious Disease & Immunization",
+  "title": "Necrotizing Soft Tissue Infection — Recognition & Surgical Urgency",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["necrotizing fasciitis", "nec fasc", "gas gangrene", "flesh-eating infection"],
+  "tags": ["necrotizing fasciitis", "necrotizing soft tissue infection", "surgical emergency", "sepsis", "ED", "ICU"],
+  "keywords": ["pain out of proportion to the visible skin findings is the single most important early clue, the skin can look deceptively mild while the fascia underneath is being destroyed", "time to the OR is the outcome-determining variable, every hour of delay to surgical debridement measurably increases mortality", "a low LRINEC score does NOT rule it out, the score was derived and validated to flag high-risk patients, not to safely exclude the diagnosis in someone you're genuinely worried about", "crepitus, skin bullae, and skin necrosis are late findings, waiting for them means you've waited too long", "broad-spectrum antibiotics plus clindamycin or linezolid for antitoxin effect against toxin-producing strains, but antibiotics alone never substitute for surgical source control"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Stevens DL, et al. Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the Infectious Diseases Society of America.",
+    "Wong CH, et al. The LRINEC (Laboratory Risk Indicator for Necrotizing Fasciitis) score: a tool for distinguishing necrotizing fasciitis from other soft tissue infections. Crit Care Med. 2004;32(7):1535-1541.",
+    "Bonne SL, Kadri SS. Evaluation and Management of Necrotizing Soft Tissue Infections. Infect Dis Clin North Am. 2017;31(3):497-511."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). The LRINEC calculator already existed under Calculators/Sepsis-ID, but no reference module addressed clinical recognition, the time-to-OR imperative, or antibiotic/management principles once suspected — this is that missing companion." }
+  ],
+  "summary": "Necrotizing soft tissue infection is a surgical emergency where pain out of proportion to the skin findings is the earliest clue and time to the OR is the single variable that determines outcome — a reassuring exam or a low LRINEC score does not safely exclude it if your clinical gestalt says otherwise.",
+  "whyThisMatters": "This is a diagnosis where the visible skin can look almost normal while the fascia beneath is already being destroyed, and every hour of delay to surgical debridement is associated with rising mortality — the entire clinical discipline here is refusing to be reassured by a benign-looking exam and moving fast on suspicion alone rather than waiting for confirmatory findings that only appear once the disease is already advanced.",
+  "clinicalTakeaway": "Pain out of proportion to visible exam findings is the single most important early clue — trust it even when the skin looks unremarkable. Do NOT use a low LRINEC score to exclude the diagnosis in a patient you're genuinely worried about; it was derived to flag high-risk patients, not to safely rule the diagnosis out. Crepitus, bullae, and skin necrosis are LATE findings — waiting for them means the window for the best outcome has already narrowed. Get surgical consultation immediately on clinical suspicion, start broad-spectrum antibiotics plus an antitoxin agent (clindamycin or linezolid) right away, but remember antibiotics never substitute for surgical source control — time to the OR is the variable that actually determines survival.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recognition — trust pain out of proportion"
+    },
+    {
+      "type": "text",
+      "text": "The classic and most reliable early clue is pain that is severe and out of proportion to how mild or unremarkable the overlying skin looks. Early necrotizing soft tissue infection can present with skin that appears like ordinary cellulitis — mild erythema, minimal swelling — while the fascia underneath is already being destroyed. Other early-to-intermediate clues: rapid progression despite what looks like appropriate treatment for simple cellulitis, systemic toxicity (fever, tachycardia, hypotension) that seems disproportionate to the visible skin findings, and woody/firm induration extending beyond the visible erythema on palpation."
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "Crepitus, hemorrhagic bullae, and frank skin necrosis/ecchymosis are LATE findings — by the time these appear, the infection has already advanced significantly. Waiting for them before escalating care means waiting too long."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "LRINEC — use it to flag risk, not to exclude the diagnosis"
+    },
+    {
+      "type": "text",
+      "text": "The LRINEC score (see the LRINEC calculator) is validated to help flag patients at higher risk of necrotizing fasciitis versus a simple soft tissue infection. It was derived and validated as a risk-flagging tool, not as a rule-out test — a LOW LRINEC score does NOT safely exclude necrotizing infection in a patient whose clinical picture still concerns you. Surgical consultation should be driven by clinical suspicion, with the score as one supporting data point, not a gate that must be crossed before escalating."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Time to the OR is the outcome-determining variable"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Every hour of delay from presentation to surgical debridement is associated with measurably worse outcomes — this is one of the clearest time-sensitive relationships in surgical infectious disease, and it's why the management priority is getting surgery involved immediately on suspicion, not completing a full workup first.",
+        "Imaging (CT, or bedside ultrasound showing fascial fluid/air) can support the diagnosis but should NOT delay surgical consultation or definitive surgical exploration in a patient with high clinical suspicion — a patient who is sick enough and concerning enough on exam may need to go straight to the OR for diagnostic/therapeutic exploration rather than waiting on imaging.",
+        "Surgical debridement is both diagnostic (frank necrotic, non-bleeding, easily-separable tissue confirms the diagnosis intraoperatively) and therapeutic (removing the source) — often requiring multiple staged debridements as the extent of non-viable tissue becomes clearer over subsequent days."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Antibiotics and supportive management"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Broad-spectrum empiric antibiotics covering gram-positive, gram-negative, and anaerobic organisms (regimen per local antibiogram/sepsis protocol) started immediately — this is a polymicrobial infection in many cases, though monomicrobial group A Streptococcus or Clostridial infections also occur.",
+        "Add CLINDAMYCIN or LINEZOLID specifically for its antitoxin effect (suppressing bacterial exotoxin production, particularly relevant for toxin-producing Group A Strep and Clostridial species) — this is given in addition to, not instead of, broad-spectrum coverage.",
+        "Aggressive sepsis resuscitation runs in parallel (see septic-shock-resuscitation) — these patients are frequently septic or rapidly heading toward septic shock.",
+        "ANTIBIOTICS ALONE NEVER SUBSTITUTE FOR SURGICAL SOURCE CONTROL — this cannot be treated medically; the infected/necrotic tissue has to be physically removed for the patient to have a chance at survival, no matter how appropriate or aggressive the antibiotic regimen is."
+      ]
+    }
+  ],
+  "related": ["lrinec", "septic-shock-resuscitation"],
+  "buildNote": "Infectious Disease & Immunization category, pairing with the existing LRINEC calculator (Calculators/Sepsis-ID) which this module explicitly cross-links and frames as risk-flagging rather than rule-out, per the score's own original validation intent. Time-to-debridement outcome relationship WebSearch-verified against Bonne & Kadri (Infect Dis Clin North Am 2017) and the IDSA 2014 SSTI guideline."
+}

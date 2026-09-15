@@ -6,50 +6,38 @@ Living tracker. Two lists:
    or original content, existing Critical Vector / AnesCalc assets) before the
    affected content can be finalized.
 
-Last updated: 2026-09-15 — see the fresh-look audit entry in the Progress log
-below for current state. The **Progress log** further down is an append-only
-chronological record; trust it over any summary above it for "what happened
-when."
+Last updated: 2026-09-15 — see the fresh-look audit entries in the Progress
+log below for current state. The **Progress log** further down is an
+append-only chronological record; trust it over any summary above it for
+"what happened when."
 
 ## ▶ NEXT SESSION — start here (2026-09-15)
-State: **398 modules**, pipeline green (validate 398/0, build/sync/test
+State: **413 modules**, pipeline green (validate 413/0, build/sync/test
 281/0), iOS `TEST SUCCEEDED` (10/10 EngineTests). The original 2026-09-14
 content audit fully closed out at the end of Batch 5 (384 modules). A **fresh
 follow-up gap audit** ran 2026-09-15 (4 parallel domain agents — ED/Trauma,
 ICU/Critical Care, OR/Anesthesia/Perioperative, Peds/OB — each cross-checking
-the live 384-module inventory before proposing anything) and surfaced **49
-genuine, non-duplicate candidate gaps**. The highest-acuity ~14 of those
-shipped as **"fresh-look Batch 6"** (→ 398 modules) — see the progress log
-entry below for the full list. **35 candidates from that same audit remain
-un-built** and are the natural next thing to scope/batch with the user:
+the live inventory before proposing anything) surfaced **49 genuine,
+non-duplicate candidate gaps**. Batch 6 (→ 398 modules) shipped the highest-
+acuity ~14; Batch 7 (→ 413 modules) shipped 15 more — see the progress log
+entries below for full lists. **18 candidates from that same audit remain
+un-built**, the natural next thing to scope/batch with the user:
 
-- ED/Trauma remaining: necrotizing soft tissue infection management, epistaxis
-  management, acute scrotum (torsion/priapism/Fournier's), accidental
-  hypothermia staging, HINTS vertigo, pelvic binder/hemorrhage, blunt chest
-  trauma, acute limb ischemia (8 of the original 15 — the other 7 shipped in
-  Batch 6).
-- ICU/Critical Care remaining: RV failure/pulm HTN crisis, invasive
-  hemodynamic monitoring (art line/CVP/PAC), abdominal compartment syndrome,
-  ICU nutrition, severe alcohol withdrawal/DTs escalation, SCAI cardiogenic
-  shock staging (calculator), MCS device selection (IABP/Impella/VA-ECMO —
-  flagged as needing a "what the intensivist should know" framing, not a
-  device-choice implication), opioid withdrawal induction (flagged: write as
-  principles + when to involve addiction medicine, not a rigid dosing ladder,
-  since protocols vary by institution), post-cardiac-surgery vasoplegia (9 of
-  12 — ISTH DIC, post-cardiac-arrest/TTM, and the ARDS rescue-therapies
-  extension shipped in Batch 6).
-- OR/Anesthesia remaining: perioperative home-med management (incl.
-  GLP-1/SGLT2i), intraoperative awareness, emergence delirium/POD, PONV
-  treatment algorithm, positioning nerve injury prevention, pneumoperitoneum/
-  Trendelenburg physiology, one-lung ventilation basics, anesthesia machine
-  checkout (8 of 10 — OR fire safety and cricothyroidotomy shipped in Batch
-  6).
-- Peds/OB remaining: peds asthma severity/management, neonatal hypoglycemia,
-  abusive head trauma, peds dehydration/ORT, peds non-sedation procedural
-  pain, peds weight-based IM epi anaphylaxis dosing, peripartum
-  cardiomyopathy, amniotic fluid embolism (8 of 12 — Kawasaki, peds status
-  epilepticus ladder, neonatal EOS risk orientation, and peds toxic ingestion
-  shipped in Batch 6).
+- ED/Trauma remaining (4 of 15): epistaxis management, acute scrotum
+  (torsion/priapism/Fournier's), accidental hypothermia staging, HINTS
+  vertigo.
+- ICU/Critical Care remaining (5 of 12): invasive hemodynamic monitoring
+  (art line/CVP/PAC), ICU nutrition, severe alcohol withdrawal/DTs
+  escalation, MCS device selection (IABP/Impella/VA-ECMO — flagged as needing
+  a "what the intensivist should know" framing, not a device-choice
+  implication), opioid withdrawal induction (flagged: write as principles +
+  when to involve addiction medicine, not a rigid dosing ladder, since
+  protocols vary by institution).
+- OR/Anesthesia remaining (5 of 10): intraoperative awareness, emergence
+  delirium/POD, pneumoperitoneum/Trendelenburg physiology, one-lung
+  ventilation basics, anesthesia machine checkout.
+- Peds/OB remaining (4 of 12): peds dehydration/ORT, peds non-sedation
+  procedural pain, peripartum cardiomyopathy, amniotic fluid embolism.
 
 Also still open from the prior cycle:
 1. **UI Phase 4 — full visual pass.** Open-ended, unchanged since 2026-09-14.
@@ -62,6 +50,75 @@ Also still open from the prior cycle:
    POCUS exam trees).
 
 ## Progress log
+- 2026-09-15 — **Fresh-look content audit Batch 7 shipped (→ 413 modules).**
+  Continuation of the same fresh-look audit that shipped Batch 6 — 15 more of
+  the 49 candidate gaps built, prioritizing the next tier of acuity across
+  all four domains. Third module added to the Vascular Emergencies category:
+  `acute-limb-ischemia` (Rutherford I-III classification table; paresthesia/
+  paralysis flagged as late, ominous findings, not just uncomfortable
+  symptoms). New Procedures: `pelvic-binder-placement` (the single highest-
+  yield technical point — level at the GREATER TROCHANTERS, not the iliac
+  crests, since placement too high is a common, quantified error that nearly
+  triples the residual fracture gap). New Reference Library:
+  `blunt-chest-trauma` (aggressive multimodal analgesia framed as the actual
+  treatment for rib fractures, since poor pain control → shallow breathing →
+  pneumonia is the real killer, not the fracture; elderly patients with 3+
+  rib fractures flagged for a lower admission threshold even when they look
+  fine in the ED), `necrotizing-soft-tissue-infection` (explicitly frames
+  LRINEC, which already existed as a calculator, as a risk-FLAG tool per its
+  own original validation intent, not a rule-out test — a low score doesn't
+  exclude the diagnosis in a patient you're still worried about),
+  `abdominal-compartment-syndrome` (WSACS IAH grading I-IV plus the ACS
+  definition — IAP>20 PLUS new organ dysfunction, not the pressure number
+  alone), `rv-failure-pulmonary-hypertensive-crisis` (the four H's framework;
+  explicitly states the failing-RV preload response is close to the OPPOSITE
+  of the default shock-resuscitation fluid-bolus reflex), `post-cardiac-
+  surgery-vasoplegia` (methylene blue vs hydroxocobalamin dosing/mechanism/
+  contraindications — methylene blue's serotonin-syndrome risk on SSRIs and
+  G6PD-deficiency risk both WebSearch-verified before inclusion),
+  `ponv-treatment-algorithm` (companion to the existing Apfel score
+  calculator — the highest-yield rule is switching antiemetic RECEPTOR CLASS
+  for rescue rather than repeating whatever was already given for
+  prophylaxis within 6 hours), `perioperative-home-medication-management`
+  (leads with the GLP-1 guidance reversal — ASA's June 2023 "hold it"
+  recommendation was reversed in October 2024 to "continue most patients,"
+  flagged explicitly since this is the kind of fact that goes stale fast),
+  `perioperative-positioning-nerve-injury` (ulnar neuropathy as the single
+  most common perioperative nerve injury claim; axillary roll goes under the
+  DOWN CHEST in lateral position, not the axilla itself; prone-position eye
+  checks need to repeat through a long case, not happen once at setup). New
+  Calculators: `scai-cardiogenic-shock-staging` (classification engine, tiers
+  A-E; live-verified rendering in browser showing all 5 tiers with mortality
+  figures). New Peds Module: `peds-asthma-exacerbation-management`
+  (deliberately distinguished from the existing `bronchiolitis-management` in
+  its own opening callout, since the two conditions look like the same
+  "wheezing child" at a glance but need different evidence-based approaches;
+  escalation is explicitly by RESPONSE to the last intervention, not a fixed
+  timer), `abusive-head-trauma` (complements rather than duplicates the
+  existing `nat-ten4-facesp-screening` bruising tool — this covers the
+  neurologic/intracranial presentation; skeletal survey yield of 30-70%
+  occult fractures stated explicitly as a reason not to skip it just because
+  the exam looks otherwise normal). New Drug & Dosing:
+  `peds-epinephrine-anaphylaxis` (IM 1:1,000 dosing, explicitly distinguished
+  in its own notes from the existing IV/IO 1:10,000 arrest-dosing card to
+  prevent a concentration mix-up; commercial autoinjector weight tiers —
+  0.1/0.15/0.3 mg — included as bedside reference alongside the computed
+  manual dose). New Peds Module: `neonatal-hypoglycemia` (deliberately did
+  NOT state a single numeric glucose threshold — WebSearch confirmed genuine,
+  persistent disagreement across AAP/BAPM/PES guideline bodies on the exact
+  cutoff and screening timing — presented the shared principles instead:
+  targeted screening of at-risk infants, symptomatic hypoglycemia treated
+  immediately regardless of the number, and 40% dextrose gel as now
+  widely-endorsed first-line therapy for the well-appearing at-risk infant;
+  cross-referenced rather than duplicated against the existing
+  `infant-of-diabetic-mother` module for that specific mechanism/context).
+  Pipeline: validate 413/0, build/sync/test 281/0, iOS `TEST SUCCEEDED`
+  10/10. Live-verified `scai-cardiogenic-shock-staging` (all 5 tiers +
+  mortality rendering correctly) and confirmed `pelvic-binder-placement`
+  indexed correctly under Wound & Fracture Care. **18 of the original 49
+  fresh-look candidates remain queued** — see the NEXT SESSION block above,
+  itemized by domain.
+
 - 2026-09-15 — **Fresh-look content audit + Batch 6 shipped (→ 398
   modules).** A follow-up gap audit (separate from and after the 2026-09-14
   audit, which fully closed at Batch 5) ran via 4 parallel domain-scoped

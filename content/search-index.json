@@ -1592,6 +1592,32 @@
       ]
     },
     {
+      "id": "scai-cardiogenic-shock-staging",
+      "title": "SCAI Cardiogenic Shock Staging",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "cardiogenic shock",
+        "SCAI staging",
+        "shock classification",
+        "ICU"
+      ],
+      "keywords": [
+        "this stages severity within cardiogenic shock once diagnosed, it does not diagnose the mechanism, pair it with shock-classification for that",
+        "stage C is the classic cardiogenic shock most clinicians picture, but stages D and E are common ICU deterioration patterns that get missed if you re-anchor on the admission stage instead of restaging",
+        "roughly 1 percent mortality at stage A climbing to roughly 90 percent at stage E, this is one of the strongest mortality-predicting classifications in cardiac critical care",
+        "reassess the stage frequently, a patient can move from C to D to E within hours despite treatment",
+        "SCAI shock stage",
+        "cardiogenic shock classification",
+        "SCAI stage A-E"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/scai-cardiogenic-shock-staging",
+      "settingEmphasis": [
+        "icu"
+      ]
+    },
+    {
       "id": "abcd2",
       "title": "ABCD² Score for TIA",
       "section": "Calculators",
@@ -4897,6 +4923,28 @@
       ]
     },
     {
+      "id": "peds-epinephrine-anaphylaxis",
+      "title": "Epinephrine — Pediatric Anaphylaxis (IM)",
+      "section": "Drug & Dosing Cards",
+      "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
+      "tags": [],
+      "keywords": [
+        "epi pen dose peds",
+        "IM epinephrine anaphylaxis peds",
+        "epinephrine autoinjector weight"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-epinephrine-anaphylaxis",
+      "settingEmphasis": [
+        "ed",
+        "prehospital",
+        "icu"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
       "id": "peds-epinephrine-arrest",
       "title": "Epinephrine — Pediatric Cardiac Arrest",
       "section": "Drug & Dosing Cards",
@@ -5474,6 +5522,40 @@
       ]
     },
     {
+      "id": "neonatal-hypoglycemia",
+      "title": "Neonatal Hypoglycemia — Screening & Management",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "neonatal hypoglycemia",
+        "dextrose gel",
+        "newborn glucose",
+        "at-risk newborn",
+        "neonatology",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "screening thresholds and timing genuinely vary across major guidelines, AAP/BAPM/PES don't all agree on the exact number, know your institution's chosen threshold rather than assuming one universal cutoff",
+        "targeted screening of at-risk newborns, not every newborn, the at-risk groups are infant of a diabetic mother, large or small for gestational age, late preterm, and perinatally stressed",
+        "40 percent oral dextrose gel is now first-line for an asymptomatic or mildly symptomatic at-risk newborn with a low glucose, it reduces the need for IV dextrose and NICU admission in selected cases",
+        "a SYMPTOMATIC hypoglycemic newborn — jitteriness, poor feeding, lethargy, seizure, apnea — gets treated immediately and more aggressively regardless of the exact number, symptoms change the calculus",
+        "this is the general newborn screening and management protocol, for the infant-of-a-diabetic-mother-specific mechanism and macrosomia/lung-maturation context, see that dedicated module",
+        "newborn low blood sugar",
+        "neonatal glucose screening",
+        "dextrose gel newborn"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/neonatal-hypoglycemia",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ],
+      "audience": [
+        "neonate"
+      ]
+    },
+    {
       "id": "neonatal-jaundice",
       "title": "Neonatal Jaundice (AAP 2022)",
       "section": "Peds Module",
@@ -5716,6 +5798,40 @@
       ],
       "audience": [
         "neonate"
+      ]
+    },
+    {
+      "id": "abusive-head-trauma",
+      "title": "Abusive Head Trauma (Shaken Baby)",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "abusive head trauma",
+        "shaken baby syndrome",
+        "non-accidental trauma",
+        "child abuse",
+        "peds",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "the classic triad — subdural hemorrhage, bilateral retinal hemorrhage, encephalopathy — but don't wait for all three before acting on suspicion, a partial picture with a history that doesn't fit the injury is enough to trigger workup",
+        "no clear explanatory history, a changing history, or a history inconsistent with the child's developmental stage (a non-mobile infant 'rolled off the couch and hit their head hard enough for this') are red flags in themselves",
+        "extensive retinal hemorrhage with perimacular folds is highly specific for abuse, accidental trauma even from a real fall rarely produces this pattern",
+        "a skeletal survey is standard in any child under 2 with suspected abuse, occult fractures are found in 30-70 percent of abused children with a head injury, don't skip it because the exam looks otherwise normal",
+        "this complements not duplicates the existing TEN-4-FACESp bruising screen, that tool is for bruising patterns, this module is for the neurologic/intracranial presentation",
+        "shaken baby syndrome",
+        "AHT",
+        "non-accidental head injury"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/abusive-head-trauma",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -6018,6 +6134,39 @@
           "section": "Calculators",
           "category": "GI / Renal / Metabolic"
         }
+      ]
+    },
+    {
+      "id": "peds-asthma-exacerbation-management",
+      "title": "Pediatric Asthma Exacerbation — Severity & Management",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "asthma exacerbation",
+        "PRAM",
+        "PASS",
+        "wheezing",
+        "peds",
+        "ED"
+      ],
+      "keywords": [
+        "this is the older wheezing child, distinct from bronchiolitis which is the under-2 first-time-wheeze picture with a different treatment approach entirely, don't treat a toddler's asthma exacerbation like bronchiolitis or vice versa",
+        "PRAM scores oxygen saturation, suprasternal retractions, scalene muscle use, air entry, and wheezing, 0-12, higher is worse, validated ages 2-17",
+        "the treatment ladder escalates by how the child responds to the last step, not by a fixed time interval alone, reassess after every intervention",
+        "back-to-back or continuous nebulized albuterol for moderate-severe exacerbations, not spaced-out single treatments, and add ipratropium in the same nebulizer for the first few doses",
+        "IV magnesium sulfate for severe exacterbations not responding to first-line bronchodilators/steroids, a genuinely evidence-supported step, not a last-ditch measure to skip past",
+        "peds asthma attack",
+        "status asthmaticus peds",
+        "PRAM score",
+        "pediatric asthma severity score"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-asthma-exacerbation-management",
+      "settingEmphasis": [
+        "ed"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -7335,6 +7484,35 @@
       ]
     },
     {
+      "id": "pelvic-binder-placement",
+      "title": "Pelvic Binder Placement & Hemorrhage Control",
+      "section": "Procedures",
+      "category": "Wound & Fracture Care",
+      "tags": [
+        "pelvic binder",
+        "pelvic fracture",
+        "hemorrhage control",
+        "trauma",
+        "ED",
+        "prehospital"
+      ],
+      "keywords": [
+        "level matters more than tightness, the binder goes over the greater trochanters, not the iliac crests, a binder placed too high barely reduces the fracture at all",
+        "don't log roll a patient with a suspected pelvic fracture to place the binder, minimize movement and slide it into place",
+        "a binder is a temporizing measure, not a cure, it buys time for resuscitation and definitive management, it doesn't replace angio-embolization or surgical fixation for ongoing bleeding",
+        "apply based on mechanism and clinical suspicion, don't wait for a pelvic X-ray to confirm the fracture before binding an unstable-mechanism, hemodynamically concerning patient",
+        "pelvic sling",
+        "pelvic fracture binder",
+        "SAM sling"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/wound-fracture-care/pelvic-binder-placement",
+      "settingEmphasis": [
+        "ed",
+        "prehospital"
+      ]
+    },
+    {
       "id": "anticoagulation-reversal",
       "title": "Anticoagulation Reversal Reference",
       "section": "Reference Library",
@@ -7849,6 +8027,35 @@
       "route": "/reference-library/cardiac-ecg/hs-troponin-chest-pain",
       "settingEmphasis": [
         "ed"
+      ]
+    },
+    {
+      "id": "abdominal-compartment-syndrome",
+      "title": "Abdominal Compartment Syndrome",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "abdominal compartment syndrome",
+        "intra-abdominal hypertension",
+        "IAP",
+        "decompressive laparotomy",
+        "ICU"
+      ],
+      "keywords": [
+        "measure IAP via bladder pressure at end-expiration, supine, abdominal muscles relaxed, that's the WSACS reference technique, not a rough clinical guess",
+        "intra-abdominal hypertension starts at 12mmHg and is graded I through IV, abdominal compartment syndrome specifically means IAP over 20 with new organ dysfunction, it's a physiologic diagnosis not just a pressure number",
+        "classic risk population — large volume resuscitation, damage control laparotomy, severe pancreatitis, massive ascites, abdominal packing",
+        "decreasing urine output, rising peak airway pressures, and falling cardiac output in a distended, tense abdomen after large-volume resuscitation should trigger IAP measurement, not just be attributed to the underlying illness",
+        "decompressive laparotomy is the definitive treatment for true ACS unresponsive to medical measures, don't keep escalating medical therapy alone once organ dysfunction is established",
+        "ACS (abdominal)",
+        "intra-abdominal hypertension",
+        "IAH",
+        "intra-abdominal pressure"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/abdominal-compartment-syndrome",
+      "settingEmphasis": [
+        "icu"
       ]
     },
     {
@@ -8730,6 +8937,38 @@
       ]
     },
     {
+      "id": "post-cardiac-surgery-vasoplegia",
+      "title": "Post-Cardiac-Surgery Vasoplegic Syndrome",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "vasoplegia",
+        "vasoplegic syndrome",
+        "cardiac surgery",
+        "refractory shock",
+        "methylene blue",
+        "hydroxocobalamin",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "high cardiac output plus low systemic vascular resistance plus a pressor requirement that keeps climbing despite what looks like adequate volume, that's the vasoplegic pattern, distinguish it from cardiogenic or hypovolemic shock before treating",
+        "cardiopulmonary bypass itself is the trigger in a lot of these cases, the inflammatory/complement cascade from the extracorporeal circuit, not a separate new insult",
+        "methylene blue and hydroxocobalamin both work by interrupting nitric-oxide-mediated vasodilation through different mechanisms, they're not interchangeable with a generic pressor",
+        "methylene blue causes a harmless-but-alarming blue-green discoloration of the skin and urine and interferes with pulse oximetry readings for a while, warn the team before giving it",
+        "avoid methylene blue in a patient on serotonergic medications, it's a MAO inhibitor and can precipitate serotonin syndrome",
+        "vasoplegic syndrome",
+        "vasoplegia",
+        "refractory vasodilatory shock post-bypass"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/post-cardiac-surgery-vasoplegia",
+      "settingEmphasis": [
+        "icu",
+        "or"
+      ]
+    },
+    {
       "id": "primary-palliative-care-icu",
       "title": "Primary Palliative Care & Comfort-Focused Transitions in the ICU",
       "section": "Reference Library",
@@ -8877,6 +9116,36 @@
       "settingEmphasis": [
         "icu",
         "ed"
+      ]
+    },
+    {
+      "id": "rv-failure-pulmonary-hypertensive-crisis",
+      "title": "Right Ventricular Failure & Acute Pulmonary Hypertensive Crisis",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "right ventricular failure",
+        "pulmonary hypertension",
+        "RV failure",
+        "shock",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "the RV is thin-walled and afterload-sensitive in a way the LV isn't, a sudden rise in pulmonary vascular resistance can acutely fail it even when the muscle itself is otherwise normal",
+        "avoid the four H's that worsen RV afterload — hypoxia, hypercarbia, acidosis, and high intrathoracic pressure from aggressive PEEP or breath-stacking",
+        "preload is a balancing act, the failing RV needs adequate preload to maintain output but is also easily overloaded, a fluid bolus that would help a failing LV can make a failing RV worse",
+        "norepinephrine is generally the first-line pressor, it supports coronary perfusion pressure to the RV itself while also being a pulmonary vasoconstrictor at lower relative doses than some alternatives",
+        "inhaled pulmonary vasodilators (inhaled nitric oxide or inhaled epoprostenol) selectively drop pulmonary vascular resistance without the systemic hypotension a systemic vasodilator would cause",
+        "RV failure",
+        "acute pulmonary hypertensive crisis",
+        "right heart failure"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/rv-failure-pulmonary-hypertensive-crisis",
+      "settingEmphasis": [
+        "icu",
+        "or"
       ]
     },
     {
@@ -9534,6 +9803,37 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/infectious-disease-immunization/modified-duke-criteria",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "necrotizing-soft-tissue-infection",
+      "title": "Necrotizing Soft Tissue Infection — Recognition & Surgical Urgency",
+      "section": "Reference Library",
+      "category": "Infectious Disease & Immunization",
+      "tags": [
+        "necrotizing fasciitis",
+        "necrotizing soft tissue infection",
+        "surgical emergency",
+        "sepsis",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "pain out of proportion to the visible skin findings is the single most important early clue, the skin can look deceptively mild while the fascia underneath is being destroyed",
+        "time to the OR is the outcome-determining variable, every hour of delay to surgical debridement measurably increases mortality",
+        "a low LRINEC score does NOT rule it out, the score was derived and validated to flag high-risk patients, not to safely exclude the diagnosis in someone you're genuinely worried about",
+        "crepitus, skin bullae, and skin necrosis are late findings, waiting for them means you've waited too long",
+        "broad-spectrum antibiotics plus clindamycin or linezolid for antitoxin effect against toxin-producing strains, but antibiotics alone never substitute for surgical source control",
+        "necrotizing fasciitis",
+        "nec fasc",
+        "gas gangrene",
+        "flesh-eating infection"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/infectious-disease-immunization/necrotizing-soft-tissue-infection",
       "settingEmphasis": [
         "ed",
         "icu"
@@ -10609,6 +10909,35 @@
       ]
     },
     {
+      "id": "perioperative-home-medication-management",
+      "title": "Perioperative Home Medication Management",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "perioperative medications",
+        "GLP-1 agonists",
+        "anticoagulants",
+        "ACE inhibitors",
+        "preoperative",
+        "OR"
+      ],
+      "keywords": [
+        "this is general medication-class guidance, not neuraxial-anticoagulation timing, that specific question is answered by the ASRA guideline reference instead",
+        "the 2024 ASA GLP-1 guidance reversed the original 2023 hold-it recommendation, most patients now continue their GLP-1 through surgery, know which version of the guidance you're following",
+        "ACE inhibitors and ARBs held the morning of surgery reduces intraoperative hypotension, but the evidence on whether that actually changes outcomes is mixed",
+        "diuretics generally held the morning of surgery to avoid volume depletion and electrolyte issues going into a case",
+        "metformin held for GI/contrast cases over lactic acidosis concerns, but this is being reconsidered for routine low-risk surgery, know your institution's current stance",
+        "hold vs continue home meds surgery",
+        "preoperative medication reconciliation",
+        "GLP-1 perioperative guidance"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/perioperative-home-medication-management",
+      "settingEmphasis": [
+        "or"
+      ]
+    },
+    {
       "id": "perioperative-glycemic-management",
       "title": "Perioperative Hyperglycemia",
       "section": "Reference Library",
@@ -10641,6 +10970,67 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/perioperative-anesthesia/perioperative-glycemic-management",
+      "settingEmphasis": [
+        "or",
+        "icu"
+      ]
+    },
+    {
+      "id": "perioperative-positioning-nerve-injury",
+      "title": "Perioperative Positioning & Nerve Injury Prevention",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "patient positioning",
+        "ulnar neuropathy",
+        "brachial plexus injury",
+        "lithotomy",
+        "compartment syndrome",
+        "perioperative safety",
+        "OR"
+      ],
+      "keywords": [
+        "ulnar neuropathy is the single most common perioperative nerve injury claim, and it can happen despite a documented, seemingly appropriate positioning check, know the padding and forearm-position basics regardless",
+        "brachial plexus injury from arm abduction beyond 90 degrees or from a shoulder brace pressing into the axilla during steep Trendelenburg, both are preventable with attention at setup",
+        "lithotomy position held too long is a real cause of compartment syndrome in the legs, there's a time-based risk that increases with duration, periodically reassess if a case runs long",
+        "lateral decubitus position needs an axillary roll under the DOWN chest, not the axilla itself, to protect the brachial plexus and the dependent arm from vascular compression",
+        "prone position needs the eyes checked and protected repeatedly through a long case, not just once at the start, pressure on the globe risks vision loss",
+        "positioning injury",
+        "ulnar neuropathy surgery",
+        "brachial plexus injury surgery",
+        "lithotomy compartment syndrome"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/perioperative-positioning-nerve-injury",
+      "settingEmphasis": [
+        "or"
+      ]
+    },
+    {
+      "id": "ponv-treatment-algorithm",
+      "title": "PONV Treatment Algorithm",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "PONV",
+        "postoperative nausea and vomiting",
+        "antiemetic",
+        "PACU",
+        "perioperative",
+        "OR"
+      ],
+      "keywords": [
+        "the Apfel score tells you who's at risk before surgery, this tells you what to actually do once nausea/vomiting has happened, they're companion tools not the same thing",
+        "prophylaxis and rescue use different receptor classes, if a drug class was already given for prophylaxis, don't repeat that same class for rescue, add a different mechanism instead",
+        "multimodal prophylaxis matched to the number of Apfel risk factors, the higher the risk the more classes you combine upfront rather than treating reactively",
+        "TIVA with propofol is itself a PONV-reduction strategy, not just an alternative technique, worth remembering in a high-risk patient",
+        "ondansetron redosing within 6 hours of an earlier dose adds little benefit, switch to a different class instead of repeating the same one",
+        "postoperative nausea and vomiting treatment",
+        "PONV rescue therapy",
+        "antiemetic ladder"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/ponv-treatment-algorithm",
       "settingEmphasis": [
         "or",
         "icu"
@@ -11117,6 +11507,37 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/resuscitation-airway/blunt-cerebrovascular-injury-screening",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "blunt-chest-trauma",
+      "title": "Blunt Chest Trauma — Rib Fractures, Flail Chest & Pulmonary Contusion",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "blunt chest trauma",
+        "rib fractures",
+        "flail chest",
+        "pulmonary contusion",
+        "trauma",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "aggressive multimodal analgesia is the actual treatment for rib fractures, poorly controlled pain is what drives the downward spiral into pneumonia and respiratory failure, not the fracture itself",
+        "an elderly patient with 3 or more rib fractures has a real, substantially elevated mortality risk and should be treated with a lower threshold for admission and monitoring, even if they look okay in the ED right now",
+        "flail chest is a clinical diagnosis, 3 or more contiguous ribs each fractured in 2 or more places creating a free-floating segment with paradoxical movement",
+        "pulmonary contusion often worsens over the first 24-72 hours before it gets better, don't be reassured by a clean initial chest X-ray",
+        "avoid over-resuscitation with IV fluids in a patient with a significant pulmonary contusion, extra fluid worsens the injured lung",
+        "rib fracture management",
+        "flail chest",
+        "pulmonary contusion"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/blunt-chest-trauma",
       "settingEmphasis": [
         "ed",
         "icu"
@@ -12521,6 +12942,36 @@
         "ed",
         "prehospital",
         "or"
+      ]
+    },
+    {
+      "id": "acute-limb-ischemia",
+      "title": "Acute Limb Ischemia",
+      "section": "Reference Library",
+      "category": "Vascular Emergencies",
+      "tags": [
+        "acute limb ischemia",
+        "Rutherford classification",
+        "the 6 Ps",
+        "vascular emergency",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "the 6 Ps — pain, pallor, pulselessness, paresthesia, paralysis, poikilothermia (cold) — but paresthesia and paralysis are the two that mean the limb is running out of time, not just uncomfortable",
+        "Rutherford I is viable and can wait for imaging, IIa is salvageable with prompt treatment, IIb needs immediate revascularization, III is irreversible and amputation-bound",
+        "loss of sensation and motor function are late, ominous findings, don't wait for them before escalating",
+        "embolic source think atrial fibrillation or a recent MI, thrombotic think a known area of atherosclerotic peripheral artery disease that finally occluded",
+        "heparin as soon as the diagnosis is suspected, before imaging is even back, unless there's a clear contraindication",
+        "ALI",
+        "Rutherford classification",
+        "acutely ischemic limb"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/vascular-emergencies/acute-limb-ischemia",
+      "settingEmphasis": [
+        "ed",
+        "icu"
       ]
     },
     {

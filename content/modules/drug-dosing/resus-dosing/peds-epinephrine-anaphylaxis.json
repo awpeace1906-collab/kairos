@@ -1,0 +1,42 @@
+{
+  "id": "peds-epinephrine-anaphylaxis",
+  "section": "Drug & Dosing Cards",
+  "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
+  "title": "Epinephrine — Pediatric Anaphylaxis (IM)",
+  "settingEmphasis": ["ed", "prehospital", "icu"],
+  "audience": ["peds"],
+  "aliases": ["epi pen dose peds", "IM epinephrine anaphylaxis peds", "epinephrine autoinjector weight"],
+  "contentType": "drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Wood JP, et al. Epinephrine for First-aid Management of Anaphylaxis. Pediatrics. 2017;139(3):e20164006.",
+    "International recommendations on epinephrine auto-injector doses often differ from standard weight-based guidance. Ann Allergy Asthma Immunol. 2022."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). The existing peds-epinephrine-arrest card is IV/IO dosing for cardiac arrest; this is the distinct IM dosing/autoinjector-tier card for anaphylaxis, which uses a different route, concentration reference, and dosing cap." }
+  ],
+  "purpose": "IM epinephrine dosing for pediatric anaphylaxis — computed from exact weight for a manual draw-up, with the corresponding commercial autoinjector strength tier shown alongside for reference.",
+  "population": "peds",
+  "weightBasis": "actual",
+  "doses": [
+    {
+      "indication": "Anaphylaxis — IM injection, anterolateral thigh",
+      "route": "IM",
+      "rule": {
+        "perKg": 0.01,
+        "unit": "mg",
+        "maxDose": 0.5,
+        "maxDoseUnit": "mg",
+        "concentration": "1 mg/mL (1:1,000)",
+        "mlPerUnit": 1,
+        "repeat": "May repeat every 5-15 minutes if inadequate response"
+      },
+      "notes": "0.01 mg/kg of 1 mg/mL (1:1,000) IM — NOT the 0.1 mg/mL (1:10,000) concentration used for IV/IO cardiac arrest dosing. Single-dose cap is commonly 0.3 mg in a prepubertal child, up to 0.5 mg in an adolescent/teen-sized patient — use clinical judgment on which cap applies near that transition. If reaching for a commercial autoinjector instead of a manual draw-up: 7.5-15 kg = 0.1 mg autoinjector; 15-30 kg = 0.15 mg; ≥30 kg = 0.3 mg. Under 7.5 kg has no matching commercial autoinjector — use the computed manual IM dose above."
+    }
+  ],
+  "contraindications": [],
+  "buildNote": "drug-card schema, weight-based IM dosing (distinct route/concentration from the existing IV/IO peds-epinephrine-arrest card, which this card's own notes explicitly warn not to confuse). Commercial autoinjector weight tiers WebSearch-verified against Wood et al. (Pediatrics 2017) and a 2022 Ann Allergy Asthma Immunol review: 7.5-15 kg -> 0.1 mg autoinjector; 15-30 kg -> 0.15 mg; >=30 kg -> 0.3 mg (historical adult dose); under 7.5 kg has no matching commercial autoinjector and needs a manual weight-based draw-up, which is exactly what this card's computed dose is for. Autoinjector tiers are informational reference only — the schema's computed per-kg dose is the authoritative number for a manual draw-up."
+}

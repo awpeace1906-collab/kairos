@@ -1,0 +1,70 @@
+{
+  "id": "peds-asthma-exacerbation-management",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Pediatric Asthma Exacerbation — Severity & Management",
+  "settingEmphasis": ["ed"],
+  "audience": ["peds"],
+  "aliases": ["peds asthma attack", "status asthmaticus peds", "PRAM score", "pediatric asthma severity score"],
+  "tags": ["asthma exacerbation", "PRAM", "PASS", "wheezing", "peds", "ED"],
+  "keywords": ["this is the older wheezing child, distinct from bronchiolitis which is the under-2 first-time-wheeze picture with a different treatment approach entirely, don't treat a toddler's asthma exacerbation like bronchiolitis or vice versa", "PRAM scores oxygen saturation, suprasternal retractions, scalene muscle use, air entry, and wheezing, 0-12, higher is worse, validated ages 2-17", "the treatment ladder escalates by how the child responds to the last step, not by a fixed time interval alone, reassess after every intervention", "back-to-back or continuous nebulized albuterol for moderate-severe exacerbations, not spaced-out single treatments, and add ipratropium in the same nebulizer for the first few doses", "IV magnesium sulfate for severe exacterbations not responding to first-line bronchodilators/steroids, a genuinely evidence-supported step, not a last-ditch measure to skip past"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Ducharme FM, et al. Diagnosis and management of asthma in preschool and school-age children: a practical approach for paediatricians. Paediatr Child Health. 2015.",
+    "Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention.",
+    "National Asthma Education and Prevention Program (NAEPP) Expert Panel Report 3/4 guidelines on asthma management."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). Bronchiolitis (infant first-time wheeze) already existed as its own module, and status-asthmaticus-ventilation covers mechanical ventilation strategy for an already-intubated patient — this fills the missing space between them: severity assessment and the stepwise medication ladder for the classic older-child asthma exacerbation in the ED, before intubation is on the table." }
+  ],
+  "kind": "reference",
+  "purpose": "Severity assessment (PRAM) and the stepwise bronchodilator/steroid/magnesium escalation ladder for a pediatric asthma exacerbation — the older-child wheeze picture, distinct from infant bronchiolitis.",
+  "ageRange": "Roughly 2-17 years — PRAM is validated in this range. A first-time wheeze under age 2 is more likely bronchiolitis (see bronchiolitis-management) and is managed differently.",
+  "sourceOfTruth": ["status-asthmaticus-ventilation"],
+  "body": [
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "This is the OLDER child with known or new asthma — distinct from bronchiolitis (typically under 2, first-time wheeze, viral etiology, bronchodilators/steroids are NOT the mainstay per bronchiolitis-management). Don't apply this module's ladder to a bronchiolitis presentation or vice versa — the two conditions look superficially similar (a wheezing child) but have different evidence-based treatment approaches."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Severity assessment — PRAM"
+    },
+    {
+      "type": "text",
+      "text": "The Pediatric Respiratory Assessment Measure (PRAM) is a validated bedside score (ages 2-17) combining oxygen saturation, suprasternal retractions, scalene muscle use, air entry, and wheezing into a 0-12 scale (higher = more severe). It's most useful for tracking TREND — reassessing before and after treatment to gauge response — rather than as a single static number to act on in isolation. A high PRAM score is a strong predictor of hospital admission."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Stepwise treatment ladder — escalate by RESPONSE, not a fixed timer"
+    },
+    {
+      "type": "list",
+      "items": [
+        "MILD exacerbations: intermittent nebulized (or MDI-with-spacer) albuterol, spaced doses, reassess response before deciding on disposition.",
+        "MODERATE-SEVERE exacerbations: BACK-TO-BACK or CONTINUOUS nebulized albuterol rather than spaced single treatments — this is a meaningful escalation in intensity, not just repeating the mild-exacerbation approach more often. Add nebulized IPRATROPIUM to the albuterol for the first several doses in moderate-severe presentations — combination therapy in the acute phase has better evidence than albuterol alone at this severity.",
+        "Systemic corticosteroids (oral or IV — oral is equally effective if the child can tolerate it and isn't vomiting) given EARLY for any exacerbation beyond mild, not held in reserve — steroids take hours to have clinical effect, so early administration matters for their eventual benefit to be realized during the ED visit/admission.",
+        "IV MAGNESIUM SULFATE for severe exacerbations not adequately responding to the above — this is a genuinely evidence-supported step with real bronchodilator effect, not a last-ditch or purely 'nothing else to try' measure. Don't skip past it or delay it while cycling through more albuterol alone in a child who's already severe and not improving.",
+        "Reassess after EVERY intervention and let the child's response (not a fixed time interval) drive the next escalation decision — a child not improving after back-to-back albuterol plus ipratropium plus steroids plus magnesium is in genuinely severe/refractory status and needs escalating respiratory support and ICU-level care.",
+        "Terbutaline (subcutaneous or IV) and other second-line agents are used in refractory cases per institutional protocol/ICU involvement — this is beyond typical ED-only management and usually accompanies escalating respiratory support."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Respiratory support escalation"
+    },
+    {
+      "type": "text",
+      "text": "A child who is not responding to the medication ladder and is showing worsening work of breathing, fatigue, or declining mental status needs escalating respiratory support — high-flow nasal cannula or noninvasive ventilation as a bridge in appropriate candidates, with intubation reserved for true respiratory failure or impending arrest given that positive-pressure ventilation in status asthmaticus carries real risk (breath-stacking, barotrauma, hemodynamic compromise from high intrathoracic pressure in an obstructed lung). If intubation and mechanical ventilation become necessary, see status-asthmaticus-ventilation for the specific 'minimize minute ventilation, tolerate permissive hypercapnia' strategy that obstructive lung physiology requires — this is deliberately NOT restated here since that module already covers it in depth."
+    }
+  ],
+  "buildNote": "peds-tool with kind=reference and sourceOfTruth pointing to status-asthmaticus-ventilation for the already-intubated management strategy, avoiding duplication. PRAM component list and the back-to-back-albuterol/early-steroids/magnesium ladder WebSearch-verified against Ducharme et al. and GINA/NAEPP guideline teaching. Deliberately distinguished from bronchiolitis-management in its own callout since the two conditions are easy to conflate at the bedside but require different treatment approaches. peds-tool schema has no related[] field."
+}

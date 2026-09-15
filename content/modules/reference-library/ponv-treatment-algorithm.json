@@ -1,0 +1,83 @@
+{
+  "id": "ponv-treatment-algorithm",
+  "section": "Reference Library",
+  "category": "Perioperative & Anesthesia",
+  "title": "PONV Treatment Algorithm",
+  "settingEmphasis": ["or", "icu"],
+  "aliases": ["postoperative nausea and vomiting treatment", "PONV rescue therapy", "antiemetic ladder"],
+  "tags": ["PONV", "postoperative nausea and vomiting", "antiemetic", "PACU", "perioperative", "OR"],
+  "keywords": ["the Apfel score tells you who's at risk before surgery, this tells you what to actually do once nausea/vomiting has happened, they're companion tools not the same thing", "prophylaxis and rescue use different receptor classes, if a drug class was already given for prophylaxis, don't repeat that same class for rescue, add a different mechanism instead", "multimodal prophylaxis matched to the number of Apfel risk factors, the higher the risk the more classes you combine upfront rather than treating reactively", "TIVA with propofol is itself a PONV-reduction strategy, not just an alternative technique, worth remembering in a high-risk patient", "ondansetron redosing within 6 hours of an earlier dose adds little benefit, switch to a different class instead of repeating the same one"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Gan TJ, et al. Fourth Consensus Guidelines for the Management of Postoperative Nausea and Vomiting. Anesth Analg. 2020;131(2):411-448.",
+    "Weibel S, et al. Drugs for preventing postoperative nausea and vomiting in adults after general anaesthesia: a network meta-analysis. Cochrane Database Syst Rev. 2020."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). The Apfel score already existed as the risk-stratification tool, and several individual antiemetic drug cards already existed, but nothing unified them into the actual prophylaxis-then-rescue treatment algorithm." }
+  ],
+  "summary": "PONV management is two linked but distinct steps — multimodal prophylaxis matched to Apfel risk BEFORE surgery, then a rescue ladder that always reaches for a DIFFERENT receptor class than whatever was already given, never a repeat of the same drug class.",
+  "whyThisMatters": "The most common practical error is redosing the same antiemetic class that already failed (or repeating a prophylactic drug for rescue) instead of switching mechanisms — PONV pathophysiology involves multiple receptor pathways (5-HT3, dopamine D2, NK-1, histamine, muscarinic), and combining different mechanisms is measurably more effective than escalating one.",
+  "clinicalTakeaway": "Match prophylaxis intensity to Apfel risk score — low risk gets minimal/no prophylaxis, higher risk gets multiple antiemetic classes combined upfront, and consider TIVA with propofol itself as a PONV-reduction strategy in high-risk patients, not just an alternative anesthetic technique. For rescue in PACU: if PONV occurs within 6 hours of prophylaxis, do NOT repeat the same drug class — add a different mechanism instead (e.g. if 5-HT3 antagonist prophylaxis was given, rescue with a dopamine antagonist, NK-1 antagonist, or a different class entirely). If PONV occurs more than 6 hours after prophylaxis, any class (including a repeat of the original) is reasonable. For a patient who received no prophylaxis, a low-dose 5-HT3 antagonist is typically first-line rescue.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step 1 — risk-matched multimodal prophylaxis"
+    },
+    {
+      "type": "text",
+      "text": "Use the Apfel score (see apfel-ponv) to estimate baseline risk, then match prophylaxis intensity to that risk rather than a one-size-fits-all approach:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Low risk (0-1 Apfel factors) — minimal or no pharmacologic prophylaxis is often reasonable; reducing baseline risk factors (adequate hydration, minimizing opioids, avoiding nitrous oxide where feasible) still applies.",
+        "Moderate risk (2 Apfel factors) — 1-2 prophylactic antiemetics from different classes.",
+        "High risk (3-4 Apfel factors) — combine multiple antiemetic classes AND consider anesthetic-technique modifications together, not antiemetics alone.",
+        "Anesthetic technique matters as its own PONV-reduction strategy — TOTAL INTRAVENOUS ANESTHESIA (TIVA) with propofol meaningfully reduces PONV risk compared to volatile-agent maintenance, and minimizing intraoperative/postoperative opioids (multimodal analgesia, regional techniques) reduces a major PONV driver in its own right. In a high-risk patient, these technique choices are part of the prophylaxis strategy, not separate from it."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Antiemetic classes — know which mechanism you're already covering"
+    },
+    {
+      "type": "table",
+      "columns": ["Class", "Example agents", "Notes"],
+      "rows": [
+        ["5-HT3 antagonist", "Ondansetron, granisetron", "Workhorse first-line class for both prophylaxis and rescue"],
+        ["Dopamine (D2) antagonist", "Droperidol, metoclopramide", "Droperidol carries a QT-prolongation boxed warning historically limiting use, though real-world risk at antiemetic doses is debated; metoclopramide also has prokinetic activity"],
+        ["Corticosteroid", "Dexamethasone", "Given at induction for prophylaxis (delayed onset makes it unsuitable as a rescue agent for acute PONV in PACU)"],
+        ["NK-1 antagonist", "Aprepitant, fosaprepitant", "Longer duration of action, useful for high-risk patients with prophylaxis; less commonly used for acute rescue given cost/access"],
+        ["Antihistamine", "Diphenhydramine, promethazine", "Sedating — factor that into a PACU patient's overall recovery/monitoring plan"],
+        ["Anticholinergic", "Scopolamine (transdermal)", "Typically applied preoperatively for prophylaxis given its delayed onset; anticholinergic side effects (dry mouth, visual blurring) limit use in some patients"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Step 2 — rescue in PACU: switch classes, don't repeat"
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "If PONV occurs WITHIN 6 HOURS of prophylaxis being given, do NOT repeat the same drug class for rescue — redosing within this window adds little additional benefit and just delays effective treatment. Choose a DIFFERENT mechanism instead."
+    },
+    {
+      "type": "list",
+      "items": [
+        "PONV within 6 hours of prophylaxis: rescue with a class NOT already given — e.g. if a 5-HT3 antagonist was used for prophylaxis, rescue with a dopamine antagonist (low-dose droperidol) or another distinct mechanism, rather than another dose of the 5-HT3 antagonist.",
+        "PONV more than 6 hours after prophylaxis: any class is reasonable at this point, including repeating the original prophylactic agent, since enough time has passed that redosing can still add benefit.",
+        "No prophylaxis was given at all: a low-dose 5-HT3 antagonist (e.g. ondansetron) is typically reasonable first-line rescue.",
+        "Persistent/refractory PONV despite rescue: reassess for a non-anesthetic cause (surgical/mechanical — bowel obstruction, elevated ICP, medication effect, etc.) rather than continuing to cycle through antiemetic classes indefinitely — refractory PONV that doesn't respond to a reasonable multimodal rescue attempt deserves a broader differential, not just another drug."
+      ]
+    }
+  ],
+  "related": ["apfel-ponv", "ondansetron", "droperidol"],
+  "buildNote": "Perioperative & Anesthesia category, companion to the existing Apfel score calculator. The 6-hour do-not-repeat-the-same-class rule and the TIVA-as-PONV-strategy point WebSearch-verified against the Fourth Consensus Guidelines (Anesth Analg 2020) and the Cochrane network meta-analysis — deliberately organized as prophylaxis-then-rescue since that's the actual clinical decision structure, distinct from the Apfel module's pure risk-scoring scope."
+}

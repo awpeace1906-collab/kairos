@@ -1,0 +1,92 @@
+{
+  "id": "acute-limb-ischemia",
+  "section": "Reference Library",
+  "category": "Vascular Emergencies",
+  "title": "Acute Limb Ischemia",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["ALI", "Rutherford classification", "acutely ischemic limb"],
+  "tags": ["acute limb ischemia", "Rutherford classification", "the 6 Ps", "vascular emergency", "ED", "ICU"],
+  "keywords": ["the 6 Ps — pain, pallor, pulselessness, paresthesia, paralysis, poikilothermia (cold) — but paresthesia and paralysis are the two that mean the limb is running out of time, not just uncomfortable", "Rutherford I is viable and can wait for imaging, IIa is salvageable with prompt treatment, IIb needs immediate revascularization, III is irreversible and amputation-bound", "loss of sensation and motor function are late, ominous findings, don't wait for them before escalating", "embolic source think atrial fibrillation or a recent MI, thrombotic think a known area of atherosclerotic peripheral artery disease that finally occluded", "heparin as soon as the diagnosis is suspected, before imaging is even back, unless there's a clear contraindication"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Rutherford RB, et al. Recommended standards for reports dealing with lower extremity ischemia: revised version. J Vasc Surg. 1997;26(3):517-538.",
+    "Björck M, et al. Editor's Choice — European Society for Vascular Surgery (ESVS) 2020 Clinical Practice Guidelines on the Management of Acute Limb Ischaemia. Eur J Vasc Endovasc Surg. 2020;59(2):173-218."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). No prior module addressed acute limb ischemia despite the app already covering aortic dissection/ruptured AAA and acute mesenteric ischemia in the same Vascular Emergencies category." }
+  ],
+  "summary": "Acute limb ischemia is a race against the clock measured in the Rutherford grade — sensory and motor loss mean the limb is running out of time, and getting to revascularization fast matters more than a perfect workup first.",
+  "whyThisMatters": "A limb progressing from Rutherford IIa to IIb to III can happen over hours, and once motor/sensory function is lost the window for salvage closes — recognizing which grade you're looking at determines whether there's time for imaging or whether the patient needs to go straight to the OR/angio suite.",
+  "clinicalTakeaway": "Assess the 6 Ps, but weight paresthesia and paralysis heaviest — they signal the limb is running out of time, not the earlier and less specific pain/pallor/pulselessness/poikilothermia. Grade with Rutherford: I (viable, can image first) vs IIa (salvageable, prompt treatment) vs IIb (immediately threatened, needs urgent revascularization) vs III (irreversible, amputation likely regardless of intervention). Start heparin as soon as ALI is suspected, before imaging results are even back, unless there's a clear contraindication — delaying anticoagulation to complete a workup costs viable tissue. Get vascular surgery involved immediately for IIb or III.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The 6 Ps — weighted, not equal"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Pain — often the presenting complaint, but nonspecific on its own.",
+        "Pallor — visible early, also nonspecific alone.",
+        "Pulselessness — supports the diagnosis but a palpable pulse doesn't exclude ALI (collateral flow can preserve a weak pulse even with significant ischemia), and a Doppler signal is more sensitive than palpation.",
+        "Poikilothermia (coldness) — supportive but nonspecific.",
+        "Paresthesia — sensory loss is an OMINOUS sign that the limb is running out of time, not just an uncomfortable symptom to note in passing.",
+        "Paralysis — motor loss is the most ominous of all six and signals advanced ischemia approaching irreversibility."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "Sensory and motor findings (paresthesia, paralysis) are LATE findings that mean the limb is running out of time — do not wait for them to develop before escalating care. A limb with intact sensation/motor function today can lose both within hours."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rutherford classification"
+    },
+    {
+      "type": "table",
+      "columns": ["Category", "Description", "Sensory loss", "Motor weakness", "Doppler signals", "Management urgency"],
+      "rows": [
+        ["I — Viable", "Not immediately threatened", "None", "None", "Audible arterial and venous", "Not immediately threatened — time for a full workup/imaging before treatment"],
+        ["IIa — Marginally threatened", "Salvageable if promptly treated", "Minimal (toes) or none", "None", "Often inaudible arterial, audible venous", "Prompt treatment, but some time for imaging/planning"],
+        ["IIb — Immediately threatened", "Salvageable ONLY with immediate revascularization", "More than toes, with rest pain", "Mild-moderate", "Usually inaudible arterial, audible venous", "Immediate revascularization — this is a 'straight to intervention' category, not one that waits for a full workup"],
+        ["III — Irreversible", "Major tissue loss or permanent nerve damage inevitable", "Profound, anesthetic", "Profound paralysis", "Inaudible arterial and venous", "Amputation likely regardless of any revascularization attempt"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Mechanism — embolic vs thrombotic"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Embolic — think atrial fibrillation, recent MI with mural thrombus, or a known cardiac thrombus source. Often a more dramatic, sudden onset in a patient with NO prior claudication history (the limb had normal baseline circulation until the embolus lodged).",
+        "Thrombotic — think a patient with known peripheral artery disease/claudication history whose already-diseased vessel finally occludes. Onset can be somewhat less dramatic since collateral circulation may have partially developed over time from the pre-existing disease."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Management"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Systemic anticoagulation (heparin) as soon as ALI is clinically suspected — do NOT wait for imaging to confirm the diagnosis before starting it, unless there's a clear contraindication. Delaying anticoagulation to complete a workup costs viable tissue time.",
+        "Immediate vascular surgery consultation for Rutherford IIb or III — these categories go straight toward revascularization planning, not a leisurely imaging-first pathway.",
+        "For Rutherford I or IIa, there is more time for imaging (CT angiography or catheter-based angiography) to define the lesion and plan the revascularization approach (catheter-directed thrombolysis, thrombectomy, or surgical bypass depending on anatomy/mechanism/institution capability).",
+        "Analgesia — ALI is genuinely painful and adequate pain control shouldn't be an afterthought while arranging definitive care.",
+        "After revascularization, watch closely for reperfusion syndrome/compartment syndrome in the affected limb — restored flow into ischemic tissue can cause severe swelling and a secondary compartment syndrome that itself threatens the limb."
+      ]
+    }
+  ],
+  "related": ["aortic-dissection-ruptured-aaa", "acute-mesenteric-ischemia"],
+  "buildNote": "Third module in the Vascular Emergencies category alongside aortic-dissection-ruptured-aaa and acute-mesenteric-ischemia. Rutherford classification table WebSearch-verified against the original 1997 J Vasc Surg standards and the 2020 ESVS guideline."
+}

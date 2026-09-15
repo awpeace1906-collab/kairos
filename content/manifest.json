@@ -513,6 +513,15 @@
       "review_tier": 1,
       "next_review_due": "2027-09-02"
     },
+    "calculators/icu-critical-care/scai-cardiogenic-shock-staging": {
+      "content_version": 1,
+      "hash": "1c48f9bc4e0edf9e",
+      "path": "modules/calculators/icu-critical-care/scai-cardiogenic-shock-staging.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "calculators/neuro/abcd2": {
       "content_version": 1,
       "hash": "6a63f70cb6d2c680",
@@ -1688,6 +1697,15 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "drug-dosing/resus-dosing/peds-epinephrine-anaphylaxis": {
+      "content_version": 1,
+      "hash": "3959e052c48b06d9",
+      "path": "modules/drug-dosing/resus-dosing/peds-epinephrine-anaphylaxis.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "drug-dosing/resus-dosing/peds-epinephrine-arrest": {
       "content_version": 3,
       "hash": "215cec809880a319",
@@ -1768,6 +1786,15 @@
       "section": "Drug & Dosing Cards",
       "review_tier": 1,
       "next_review_due": "2026-12-14"
+    },
+    "peds-module/abusive-head-trauma": {
+      "content_version": 1,
+      "hash": "85f17024e5cb12f9",
+      "path": "modules/peds-module/abusive-head-trauma.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "peds-module/apgar-score": {
       "content_version": 1,
@@ -1931,6 +1958,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "peds-module/neonatal-hypoglycemia": {
+      "content_version": 1,
+      "hash": "8a8a339ebb0001ea",
+      "path": "modules/peds-module/neonatal-hypoglycemia.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "peds-module/neonatal-jaundice": {
       "content_version": 1,
       "hash": "492f462ec2cffb20",
@@ -2007,6 +2043,15 @@
       "content_version": 1,
       "hash": "e924f76568990777",
       "path": "modules/peds-module/pediatric-burn-management.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "peds-module/peds-asthma-exacerbation-management": {
+      "content_version": 1,
+      "hash": "7dba84860b51e5c5",
+      "path": "modules/peds-module/peds-asthma-exacerbation-management.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
       "review_tier": 1,
@@ -2300,6 +2345,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-15"
     },
+    "procedures/pelvic-binder-placement": {
+      "content_version": 1,
+      "hash": "a94a36f395b5efc4",
+      "path": "modules/procedures/pelvic-binder-placement.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "procedures/pericardiocentesis": {
       "content_version": 1,
       "hash": "38f931d1400d6652",
@@ -2372,6 +2426,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-15"
     },
+    "reference-library/abdominal-compartment-syndrome": {
+      "content_version": 1,
+      "hash": "cdfc500c3605ebb2",
+      "path": "modules/reference-library/abdominal-compartment-syndrome.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/abg-interpretation": {
       "content_version": 3,
       "hash": "9ed39b88c6ce4c18",
@@ -2415,6 +2478,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-12-14"
+    },
+    "reference-library/acute-limb-ischemia": {
+      "content_version": 1,
+      "hash": "fecfa8d719ff7a71",
+      "path": "modules/reference-library/acute-limb-ischemia.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/acute-liver-failure": {
       "content_version": 1,
@@ -2600,6 +2672,15 @@
       "content_version": 1,
       "hash": "71481938655491cd",
       "path": "modules/reference-library/blunt-cerebrovascular-injury-screening.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "reference-library/blunt-chest-trauma": {
+      "content_version": 1,
+      "hash": "eb86682abf159bce",
+      "path": "modules/reference-library/blunt-chest-trauma.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": 1,
@@ -3064,6 +3145,15 @@
       "review_tier": 1,
       "next_review_due": "2027-03-14"
     },
+    "reference-library/necrotizing-soft-tissue-infection": {
+      "content_version": 1,
+      "hash": "d7f98475e2f29091",
+      "path": "modules/reference-library/necrotizing-soft-tissue-infection.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/nerve-agent-toxicity": {
       "content_version": 1,
       "hash": "3c808f6b19b10faf",
@@ -3172,6 +3262,24 @@
       "review_tier": 3,
       "next_review_due": "2027-03-02"
     },
+    "reference-library/perioperative-home-medication-management": {
+      "content_version": 1,
+      "hash": "aeeb4201d7528ce7",
+      "path": "modules/reference-library/perioperative-home-medication-management.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "reference-library/perioperative-positioning-nerve-injury": {
+      "content_version": 1,
+      "hash": "9b619f7585f3a2e1",
+      "path": "modules/reference-library/perioperative-positioning-nerve-injury.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/peripheral-iv-vasopressors": {
       "content_version": 2,
       "hash": "373c30f1b9e9e8c1",
@@ -3199,10 +3307,28 @@
       "review_tier": 1,
       "next_review_due": "2026-12-03"
     },
+    "reference-library/ponv-treatment-algorithm": {
+      "content_version": 1,
+      "hash": "48d5305e77157a0f",
+      "path": "modules/reference-library/ponv-treatment-algorithm.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/post-cardiac-arrest-care-ttm": {
       "content_version": 1,
       "hash": "8e1f3ca93404e8dc",
       "path": "modules/reference-library/post-cardiac-arrest-care-ttm.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "reference-library/post-cardiac-surgery-vasoplegia": {
+      "content_version": 1,
+      "hash": "93f96f9687213d3a",
+      "path": "modules/reference-library/post-cardiac-surgery-vasoplegia.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": 1,
@@ -3306,6 +3432,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-12-02"
+    },
+    "reference-library/rv-failure-pulmonary-hypertensive-crisis": {
+      "content_version": 1,
+      "hash": "85534451c9a1384a",
+      "path": "modules/reference-library/rv-failure-pulmonary-hypertensive-crisis.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/sedation-analgesia-agents": {
       "content_version": 2,

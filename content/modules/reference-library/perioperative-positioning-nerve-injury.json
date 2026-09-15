@@ -1,0 +1,100 @@
+{
+  "id": "perioperative-positioning-nerve-injury",
+  "section": "Reference Library",
+  "category": "Perioperative & Anesthesia",
+  "title": "Perioperative Positioning & Nerve Injury Prevention",
+  "settingEmphasis": ["or"],
+  "aliases": ["positioning injury", "ulnar neuropathy surgery", "brachial plexus injury surgery", "lithotomy compartment syndrome"],
+  "tags": ["patient positioning", "ulnar neuropathy", "brachial plexus injury", "lithotomy", "compartment syndrome", "perioperative safety", "OR"],
+  "keywords": ["ulnar neuropathy is the single most common perioperative nerve injury claim, and it can happen despite a documented, seemingly appropriate positioning check, know the padding and forearm-position basics regardless", "brachial plexus injury from arm abduction beyond 90 degrees or from a shoulder brace pressing into the axilla during steep Trendelenburg, both are preventable with attention at setup", "lithotomy position held too long is a real cause of compartment syndrome in the legs, there's a time-based risk that increases with duration, periodically reassess if a case runs long", "lateral decubitus position needs an axillary roll under the DOWN chest, not the axilla itself, to protect the brachial plexus and the dependent arm from vascular compression", "prone position needs the eyes checked and protected repeatedly through a long case, not just once at the start, pressure on the globe risks vision loss"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "American Society of Anesthesiologists Task Force on Prevention of Perioperative Peripheral Neuropathies. Practice Advisory for the Prevention of Perioperative Peripheral Neuropathies. Anesthesiology. 2018;128(1):11-26.",
+    "Warner MA, et al. Perioperative visual loss. Anesthesiology. 2001;95(6):1417-1421."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). No prior module addressed positioning-related injury prevention despite its high medicolegal relevance and its applicability to nearly every OR case." }
+  ],
+  "summary": "Ulnar neuropathy is the single most common perioperative nerve injury claim and can happen despite a documented positioning check — the practical fixes are simple (forearm neutral/supinated, padding, avoiding sustained arm abduction beyond 90°, an axillary roll under the down chest in lateral position) but need active attention at setup and periodically through a long case.",
+  "whyThisMatters": "Positioning injury is a common source of perioperative morbidity and medicolegal claims precisely because it's preventable and yet keeps happening — often in cases where a positioning check was documented but the actual mechanics (padding placement, arm angle, duration in a compromising position) weren't specifically attended to, which is why concrete technique points matter more than a generic 'positioning was checked' checkbox.",
+  "clinicalTakeaway": "For supine arms: keep the forearm neutral or supinated (not pronated) with padding under the elbow to protect the ulnar nerve at the cubital tunnel, and avoid arm abduction beyond 90° for a prolonged period to protect the brachial plexus. For lateral decubitus: place an axillary roll under the DOWN chest wall (not directly in the axilla) to take pressure off the dependent brachial plexus and axillary vessels, and protect the dependent eye/ear. For lithotomy: minimize duration in the position where feasible and periodically reassess if a case runs long, since compartment syndrome risk in the legs rises with time in the position. For prone: check and protect the eyes repeatedly through a long case (not just once at setup) to prevent pressure-related vision loss, and ensure the abdomen hangs free to avoid raised intra-abdominal/venous pressure.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ulnar neuropathy — the most common claim"
+    },
+    {
+      "type": "text",
+      "text": "Ulnar neuropathy is the single most frequently reported perioperative peripheral nerve injury, and it can occur even with an apparently appropriate, documented positioning setup — a meaningful fraction have no clearly identifiable intraoperative cause, which is part of why the ASA practice advisory frames prevention as reducing risk rather than guaranteeing avoidance."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Keep the forearm in a NEUTRAL or SUPINATED position rather than pronated — pronation increases pressure on the ulnar nerve as it passes through the cubital tunnel at the elbow.",
+        "Pad the elbow/cubital tunnel area to reduce direct pressure on the nerve where it's most superficial and vulnerable.",
+        "Avoid prolonged direct pressure on the posteromedial elbow from an armboard edge or restraint strap."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Brachial plexus injury"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Avoid sustained arm abduction beyond 90° on an armboard — this stretches the brachial plexus against the fixed point at the coracoid process/pectoralis minor.",
+        "Be cautious with shoulder braces used to prevent patient sliding during steep Trendelenburg positioning (common in robotic/laparoscopic pelvic surgery) — a brace pressing into the axilla or directly onto the shoulder can compress or stretch the brachial plexus over a prolonged case; padding and correct placement (over the acromioclavicular joint/bony shoulder, not into the soft tissue of the axilla) matters.",
+        "Avoid excessive head rotation/lateral flexion away from an abducted arm, which combines with the arm position to further stretch the plexus."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Lithotomy position — time-dependent compartment syndrome risk"
+    },
+    {
+      "type": "text",
+      "text": "Prolonged lithotomy positioning is a recognized cause of well-leg compartment syndrome — the risk is time-dependent, rising the longer the legs are held elevated and flexed in stirrups (particularly candy-cane or high-lithotomy configurations that further compromise perfusion). Minimize time in the position where the surgical plan allows, avoid excessive hip flexion/external rotation beyond what's needed, ensure stirrups/padding aren't creating focal compression points (especially over the peroneal nerve at the fibular head — a second nerve injury risk in this position), and if a case runs unexpectedly long, periodically reassess the legs and consider briefly repositioning if the surgical field allows."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Lateral decubitus position"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Place an AXILLARY ROLL under the DOWN (dependent) chest wall — specifically NOT directly in the axilla itself — to relieve pressure on the dependent brachial plexus and axillary vessels, which are otherwise compressed by the weight of the thorax.",
+        "Protect the dependent eye and ear from direct pressure on the OR table/headrest.",
+        "Pad between the legs and check the dependent (down) leg's peroneal nerve at the fibular head for pressure points.",
+        "The nondependent (up) arm, if positioned on a support/airplane arm holder, needs the same abduction/pressure precautions as a supine arm."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Prone position — eyes need repeated attention, not a one-time check"
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Perioperative vision loss is a rare but devastating complication associated with prolonged prone positioning (particularly spine surgery) — direct pressure on the globe (from a poorly fitting headrest or the patient's own arm/positioning device) can cause central retinal artery occlusion, and even without direct pressure, ischemic optic neuropathy is a described risk in long prone cases with significant blood loss/hypotension. Check and reposition the head/face padding repeatedly through a long case — not just once at setup — since gradual patient migration on the table can create new pressure points hours into a case."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Confirm the abdomen hangs free (not compressed against the table/frame) — abdominal compression raises intra-abdominal and epidural venous pressure, increasing surgical bleeding and contributing to the physiology behind some prone-position vision loss cases.",
+        "Reverse Trendelenburg (head-up tilt) where surgically feasible may reduce venous congestion/orbital pressure in a long prone case.",
+        "Document periodic eye checks through a prolonged prone case as part of routine intraoperative monitoring, not a single setup-time checkbox."
+      ]
+    }
+  ],
+  "related": ["preanesthesia-checklist", "neuraxial-anesthesia"],
+  "buildNote": "Perioperative & Anesthesia category. Ulnar neuropathy/brachial plexus/lithotomy/lateral-decubitus/prone-eye-protection content WebSearch-verified against the ASA 2018 Practice Advisory for the Prevention of Perioperative Peripheral Neuropathies and Warner et al. on perioperative visual loss (Anesthesiology 2001)."
+}

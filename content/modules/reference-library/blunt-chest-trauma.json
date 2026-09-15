@@ -1,0 +1,74 @@
+{
+  "id": "blunt-chest-trauma",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Blunt Chest Trauma — Rib Fractures, Flail Chest & Pulmonary Contusion",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["rib fracture management", "flail chest", "pulmonary contusion"],
+  "tags": ["blunt chest trauma", "rib fractures", "flail chest", "pulmonary contusion", "trauma", "ED", "ICU"],
+  "keywords": ["aggressive multimodal analgesia is the actual treatment for rib fractures, poorly controlled pain is what drives the downward spiral into pneumonia and respiratory failure, not the fracture itself", "an elderly patient with 3 or more rib fractures has a real, substantially elevated mortality risk and should be treated with a lower threshold for admission and monitoring, even if they look okay in the ED right now", "flail chest is a clinical diagnosis, 3 or more contiguous ribs each fractured in 2 or more places creating a free-floating segment with paradoxical movement", "pulmonary contusion often worsens over the first 24-72 hours before it gets better, don't be reassured by a clean initial chest X-ray", "avoid over-resuscitation with IV fluids in a patient with a significant pulmonary contusion, extra fluid worsens the injured lung"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Kasotakis G, et al. Operative fixation of rib fractures after blunt trauma: A practice management guideline from the Eastern Association for the Surgery of Trauma. J Trauma Acute Care Surg. 2017;82(3):618-626.",
+    "Bulger EM, et al. Rib fractures in the elderly. J Trauma. 2000;48(6):1040-1046.",
+    "Simon B, et al. Pain management guidelines for blunt thoracic trauma. J Trauma. 2005;59(5):1256-1267."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). The existing penetrating-regional-trauma module is explicitly scoped to penetrating mechanism; NEXUS Chest CT decides who needs imaging but doesn't address managing what's found. This is the missing management-focused blunt chest trauma reference." }
+  ],
+  "summary": "Rib fractures kill through the downward spiral of poor pain control → shallow breathing → atelectasis/pneumonia, not through the fracture itself — aggressive analgesia is the actual treatment, and an elderly patient with 3+ fractures needs a lower threshold for admission even if they look fine right now.",
+  "whyThisMatters": "Rib fracture mortality is driven almost entirely by the downstream respiratory complications of inadequate pain control, and this risk is dramatically amplified in older patients — each additional rib fracture in a geriatric patient meaningfully increases mortality and pneumonia risk, which is why age and rib fracture count belong in the disposition decision even when the patient looks stable in the ED.",
+  "clinicalTakeaway": "Treat pain aggressively and multimodally (regional anesthesia/nerve blocks, scheduled non-opioid analgesics, opioids as needed) — the goal is a pain level that allows the patient to take deep breaths and cough effectively, since shallow breathing from poor pain control is what leads to atelectasis and pneumonia. Have a low threshold to admit/monitor an elderly patient (roughly 65+) with 3 or more rib fractures, even if they look well in the ED, given the documented mortality risk. Recognize flail chest clinically (paradoxical chest wall movement from 3+ contiguous double-fractured ribs) and manage the underlying pulmonary contusion, not just the flail segment itself. Don't be falsely reassured by a clean initial chest X-ray — pulmonary contusion often worsens over 24-72 hours, and avoid over-resuscitating with IV fluids in a patient with a significant contusion.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rib fractures — pain control is the treatment"
+    },
+    {
+      "type": "text",
+      "text": "The rib fracture itself heals on its own; the actual clinical danger is the downstream cascade — pain causes shallow breathing and a poor/absent cough, which leads to atelectasis, retained secretions, and pneumonia. This makes aggressive, multimodal pain control the primary therapeutic intervention, not an afterthought to the fracture diagnosis."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Multimodal analgesia: regional techniques (erector spinae plane block, serratus anterior block, epidural for severe/multi-level injury) plus scheduled non-opioid agents (acetaminophen, NSAIDs if not contraindicated) plus opioids as needed — regional techniques in particular reduce opioid requirements and their attendant respiratory depression risk in a population where respiratory reserve is already compromised.",
+        "Incentive spirometry and pulmonary toilet (encouraging deep breathing and effective coughing) are only achievable if pain is adequately controlled first — teaching a technique to a patient who can't tolerate a deep breath accomplishes little.",
+        "Rib fracture COUNT and patient AGE both matter for risk-stratifying admission decisions — a young, otherwise healthy patient with 1-2 rib fractures and good pain control on oral analgesics can often be managed as an outpatient; an older patient or one with multiple fractures needs a different calculus (see below)."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "An elderly patient (roughly 65+) with 3 or more rib fractures carries a substantially elevated mortality and pneumonia risk compared to a younger patient with the same injury count — documented in trauma literature as roughly double the mortality risk per additional rib fracture in this population. Have a genuinely lower threshold to admit and monitor these patients even if they look comfortable and are maintaining oxygenation in the ED right now — the deterioration from inadequate pain control and progressive atelectasis can be delayed."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Flail chest"
+    },
+    {
+      "type": "text",
+      "text": "A clinical diagnosis: 3 or more contiguous ribs, each fractured in 2 or more places, creating a free-floating segment of chest wall that moves paradoxically (inward on inspiration, outward on expiration) relative to the rest of the chest wall. The flail segment itself is often less clinically important than the underlying pulmonary contusion that essentially always accompanies it — the contusion, not the mechanical flail motion, is usually what drives respiratory failure. Management is primarily supportive: aggressive pain control (as above), pulmonary toilet, and respiratory support escalating from supplemental oxygen to noninvasive ventilation to intubation as needed based on the patient's actual respiratory status — not reflexive early intubation based on the flail diagnosis alone. Surgical rib fixation is an option in selected patients (particularly with significant flail physiology or failure to wean from the ventilator) per trauma/thoracic surgery evaluation, though patient selection criteria continue to evolve."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Pulmonary contusion"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Often WORSENS over the first 24-72 hours after injury before it improves — a clean or minimally-abnormal initial chest X-ray does not exclude a clinically significant contusion that will declare itself over the following day or two. Serial reassessment matters more than a single early imaging result.",
+        "Avoid over-resuscitation with IV fluids — a contused lung is more susceptible to worsening from excess intravascular volume, similar in principle to avoiding fluid overload in ARDS. Resuscitate to hemodynamic need, not a fixed volume target, and be judicious once the patient is otherwise stable.",
+        "Supportive respiratory management, with escalation of respiratory support guided by actual oxygenation/ventilation status and work of breathing, mirrors general lung-protective principles when mechanical ventilation becomes necessary."
+      ]
+    }
+  ],
+  "related": ["penetrating-regional-trauma", "trauma-primary-survey"],
+  "buildNote": "Resuscitation & Airway category, matching the existing trauma module convention. Rib-fracture-count/age mortality relationship and the pain-control-as-primary-treatment framing WebSearch-verified against Bulger et al. (J Trauma 2000) and the EAST practice management guideline."
+}
