@@ -27,12 +27,70 @@ Still open from the prior cycle:
 2. **Things only the user can supply**, still genuinely open: the local
    antibiogram (empiric-antibiotic agent selection), GRACE 2.0's proprietary
    coefficients, defibrillator pad transition weight and LMA/blade sizing for
-   your specific device models, Xcode `DEVELOPMENT_TEAM` for real-device
-   installs, and a storyboarding pass on deeper procedure decision-tree branch
-   logic (suture technique / fracture patterns / nerve-block sub-techniques /
-   POCUS exam trees).
+   your specific device models, and a storyboarding pass on deeper procedure
+   decision-tree branch logic (suture technique / fracture patterns /
+   nerve-block sub-techniques / POCUS exam trees).
+3. **Xcode `DEVELOPMENT_TEAM` — actively being set up (2026-09-15).** User
+   confirmed a paid Apple Developer account; next step is getting the Team ID
+   from developer.apple.com/account into `ios/project.yml` so a real-device
+   build/install actually works. This is now the blocking step for getting
+   the ContentStore fix below (and everything else built this session) onto
+   the user's phone at all — see that progress log entry for why.
 
 ## Progress log
+- 2026-09-15 — **Real bug found and fixed: the iOS app's OTA content sync
+  could never make brand-new modules or categories discoverable, no matter
+  how many deploys succeeded.** User reported "it's not automatically
+  updating" after Batch 8 deployed cleanly; reading `ContentStore.swift`
+  confirmed the actual mechanism — `checkForUpdates()` downloads
+  changed/new module JSON into `Caches/` and bumps `manifest`, but NEVER
+  refreshed `search-index.json` or `config/sections.json`, both of which
+  were read only once, from the build-time bundle, in `load()`. Since
+  nothing ever pointed a route or a browse category at a module that didn't
+  exist when the app was last built, every module added since whatever
+  build is on a given device — which for the user's phone (still v0.1.0) is
+  effectively the entire Batch 2-8 output — was structurally invisible via
+  search or section browsing, even though its raw JSON may have silently
+  synced into cache in the background. **Fixed**: `checkForUpdates()` now
+  also fetches `search-index.json` and `config/sections.json` fresh on
+  every check (they aren't per-module-versioned, so unlike modules they're
+  just always refreshed rather than diffed) and updates the `@Published
+  searchIndex`/`sections` directly; both are also persisted to `Caches/`
+  via a new `fetchAndCache()` helper, and `load()` now prefers that cached
+  copy over the bundle via a new `cachedOrBundled()` helper (mirroring how
+  `loadModuleData` already preferred cache over bundle for individual
+  modules) — so a relaunch shows the last-synced state immediately, not
+  just whatever was true when the app was built. **Important caveat stated
+  directly to the user**: this is a CODE fix, and the very mechanism it
+  fixes only ever delivered CONTENT — so the user's already-installed app
+  cannot receive this fix over the air. It needs a fresh install, which
+  needs `DEVELOPMENT_TEAM` signing (see the NEXT SESSION item above) since
+  there's no App Store/TestFlight distribution set up.
+
+  **Also fixed while in there** (user asked, unrelated to the sync bug but
+  same area of the app): the Settings screen's version string
+  (`"Kairos v0.1.0"`) was hardcoded in `AboutView.swift` instead of reading
+  the bundle — added `AppConfig.appVersion` (reads
+  `CFBundleShortVersionString`) so bumping `MARKETING_VERSION` in
+  `project.yml` is now the only edit needed for iOS. The web client versions
+  independently (no shared build pipeline between the two platforms), so a
+  parallel `APP_VERSION` constant was added to `web/src/lib/appConfig.js`
+  instead, with a comment on both sides pointing at the other — two files to
+  bump instead of one, but each is now a single clean edit point rather than
+  a string buried in UI code. Also added TEE Compass and a yet-to-be-named
+  POCUS guide to the "Companion apps" paragraph in Acknowledgments on both
+  clients (iOS `AcknowledgmentsView` in `AboutView.swift`, web
+  `acknowledgments.js`) per the user's explicit request. iOS: build/test run
+  twice (once mid-edit, once clean after all three changes landed) — both
+  `TEST SUCCEEDED`, 10/10. Web: live-verified in browser after hitting the
+  now-familiar stale-dev-server-cache issue again, this time from the
+  browser's in-memory ES module cache surviving a hash-only `navigate` call
+  rather than the service worker — fixed with an explicit
+  `window.location.reload()` (SW unregister/cache-clear alone didn't touch
+  it this time, worth remembering as a second variant of the same class of
+  gotcha).
+
+
 - 2026-09-15 — **Fresh-look content audit Batch 8 shipped (→ 431 modules) —
   closes the ENTIRE fresh-look audit cycle (all 49 candidates across Batches
   6-8).** New Reference Library: `acute-scrotum` (torsion salvage collapses

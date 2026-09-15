@@ -10,7 +10,7 @@ import {
   activePedsLens,
   PINS_KEY,
 } from "../lib/prefs.js";
-import { newIssueURL } from "../lib/appConfig.js";
+import { newIssueURL, APP_VERSION } from "../lib/appConfig.js";
 
 // The Settings tab's root. Frequently touched preferences (care setting, Peds
 // lens, appearance) stay inline; read-once-then-forget info (About, Legal,
@@ -125,6 +125,6 @@ export function renderSettings(store) {
     contentSection(),
     infoLinks(),
     supportLinks(),
-    el("p", { class: "last-verified" }, "Kairos v0.1.0 · content bundle from content/manifest.json")
+    el("p", { class: "last-verified" }, `Kairos v${APP_VERSION} · content bundle from content/manifest.json`)
   );
 }

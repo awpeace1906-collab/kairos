@@ -57,7 +57,7 @@ struct AboutView: View {
             }
 
             Section {
-                Text("Kairos v0.1.0").font(Theme.footnote).foregroundStyle(.secondary)
+                Text("Kairos v\(AppConfig.appVersion)").font(Theme.footnote).foregroundStyle(.secondary)
             }
         }
         .navigationTitle("Settings")
@@ -129,7 +129,7 @@ struct AcknowledgmentsView: View {
                     .font(Theme.footnote).foregroundStyle(.secondary)
 
                 Text("Companion apps").font(Theme.title3).padding(.top, 6)
-                Text("Kairos is built alongside AnesCalc (anesthesia calculators) and CRISIS (crisis protocols & envenomation) — three focused tools rather than one that tries to do everything.")
+                Text("Kairos is built alongside AnesCalc (anesthesia calculators), CRISIS (crisis protocols & envenomation), and TEE Compass — with a POCUS guide in the works — focused tools rather than one app that tries to do everything.")
                     .font(Theme.footnote).foregroundStyle(.secondary)
             }
             .padding()

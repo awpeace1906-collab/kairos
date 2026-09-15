@@ -4,6 +4,12 @@
 
 export const GITHUB_REPO = "awpeace1906-collab/kairos";
 
+/** "0.1.0" — the single place to bump the web client's version. Keep in sync
+    with MARKETING_VERSION in ios/project.yml (the two platforms build/ship
+    independently, so this can't be derived automatically the way the iOS
+    About screen reads it from its own bundle — bump both when releasing). */
+export const APP_VERSION = "0.1.0";
+
 /** Build a prefilled "content outdated" GitHub issue URL for a module's meta. */
 export function flagOutdatedURL(mod) {
   const title = `Outdated: ${mod.title} (${mod.id} v${mod.content_version ?? "?"})`;

@@ -8,6 +8,6 @@ export function renderAcknowledgments() {
     el("h2", {}, "Typography"),
     el("p", { class: "muted" }, "IBM Plex Sans and IBM Plex Mono, © IBM Corporation, licensed under the SIL Open Font License 1.1."),
     el("h2", {}, "Companion apps"),
-    el("p", { class: "muted" }, "Kairos is built alongside AnesCalc (anesthesia calculators) and CRISIS (crisis protocols & envenomation) — three focused tools rather than one that tries to do everything.")
+    el("p", { class: "muted" }, "Kairos is built alongside AnesCalc (anesthesia calculators), CRISIS (crisis protocols & envenomation), and TEE Compass — with a POCUS guide in the works — focused tools rather than one app that tries to do everything.")
   );
 }

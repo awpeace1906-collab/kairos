@@ -6,6 +6,12 @@ import Foundation
 enum AppConfig {
     static let githubRepo = "awpeace1906-collab/kairos"
 
+    /// "0.1.0" — read from the bundle (MARKETING_VERSION in project.yml) so the
+    /// Settings/About screen never needs a manual edit when the version bumps.
+    static var appVersion: String {
+        (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String) ?? "?"
+    }
+
     /// Prefilled "content outdated" GitHub issue URL for a module's metadata.
     static func flagOutdatedURL(_ meta: RecordMeta) -> URL? {
         let appVersion = (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String) ?? "?"

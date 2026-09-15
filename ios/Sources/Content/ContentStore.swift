@@ -42,8 +42,12 @@ final class ContentStore: ObservableObject {
 
     func load() {
         do {
-            let s: SectionsConfig = try bundled("config/sections.json")
-            let idx: SearchIndexFile = try bundled("search-index.json")
+            // A prior successful checkForUpdates() run persists a fresher copy of
+            // these two into Caches/ — prefer that over the build-time bundle so a
+            // relaunch shows the last-known-good synced state immediately, before
+            // this session's own checkForUpdates() call below even completes.
+            let s: SectionsConfig = try cachedOrBundled("config/sections.json")
+            let idx: SearchIndexFile = try cachedOrBundled("search-index.json")
             let zones: WeightZonesConfig = try bundled("config/weight-zones.json")
             let t: TiersConfig = try bundled("config/tiers.json")
             let m: Manifest = try bundled("manifest.json")
@@ -106,6 +110,19 @@ final class ContentStore: ObservableObject {
         try decoder.decode(T.self, from: try bundledData(relPath))
     }
 
+    /// A prior checkForUpdates() may have persisted a fresher copy of `relPath`
+    /// into Caches/ — prefer it, falling back to the build-time bundle. Used for
+    /// the two "structural" files (search-index.json, config/sections.json) that
+    /// determine what content is even discoverable, as opposed to individual
+    /// module payloads (which loadModuleData already handles this way).
+    private func cachedOrBundled<T: Decodable>(_ relPath: String) throws -> T {
+        let cached = cachesDir.appendingPathComponent(relPath)
+        if let data = try? Data(contentsOf: cached), let decoded = try? decoder.decode(T.self, from: data) {
+            return decoded
+        }
+        return try bundled(relPath)
+    }
+
     private func bundledData(_ relPath: String) throws -> Data {
         // The folder reference is copied into the bundle under its on-disk name,
         // "content" (lowercase — the `name:` in project.yml only renames the Xcode
@@ -139,6 +156,23 @@ final class ContentStore: ObservableObject {
     func checkForUpdates() async {
         guard let remoteBase = Self.remoteBase else { return }
         do {
+            // These two aren't individually versioned the way modules are — they're
+            // the structural files (what routes exist, what categories exist) that
+            // make newly-added content discoverable at all via search/browse.
+            // Refresh them unconditionally whenever we're online, not just when a
+            // module version bumps, and persist to Caches/ so the next cold launch
+            // (via load()'s cachedOrBundled) starts from this synced state instead
+            // of the original build-time bundle. Without this, a module can finish
+            // syncing its own JSON and still never appear anywhere in the app.
+            if let idxData = try? await fetchAndCache(remoteBase, "search-index.json"),
+               let idx = try? decoder.decode(SearchIndexFile.self, from: idxData) {
+                searchIndex = SearchIndex(entries: idx.entries)
+            }
+            if let secData = try? await fetchAndCache(remoteBase, "config/sections.json"),
+               let s = try? decoder.decode(SectionsConfig.self, from: secData) {
+                sections = s.sections.sorted { $0.order < $1.order }
+            }
+
             let (data, _) = try await URLSession.shared.data(from: remoteBase.appendingPathComponent("manifest.json"))
             let remote = try decoder.decode(Manifest.self, from: data)
             var cachedVersions = UserDefaults.standard.dictionary(forKey: "kairos.manifest.v1") as? [String: Int] ?? [:]
@@ -169,6 +203,17 @@ final class ContentStore: ObservableObject {
             // Offline or the CDN is unreachable — we simply keep rendering from cache.
             print("[content] update check skipped: \(error)")
         }
+    }
+
+    /// Fetch `relPath` from `remoteBase` and persist it into Caches/ under the same
+    /// relative path, returning the raw bytes for the caller to decode.
+    @discardableResult
+    private func fetchAndCache(_ remoteBase: URL, _ relPath: String) async throws -> Data {
+        let (data, _) = try await URLSession.shared.data(from: remoteBase.appendingPathComponent(relPath))
+        let dest = cachesDir.appendingPathComponent(relPath)
+        try FileManager.default.createDirectory(at: dest.deletingLastPathComponent(), withIntermediateDirectories: true)
+        try data.write(to: dest, options: .atomic)
+        return data
     }
 }
 

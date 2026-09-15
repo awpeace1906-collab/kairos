@@ -7,6 +7,10 @@ options:
 
 settings:
   base:
+    # The Settings/About screen reads this automatically (AppConfig.appVersion ->
+    # Bundle.main.infoDictionary), so bumping it here is the only iOS-side edit
+    # needed. The web client versions independently — also bump APP_VERSION in
+    # web/src/lib/appConfig.js when releasing.
     MARKETING_VERSION: "0.1.0"
     CURRENT_PROJECT_VERSION: "1"
     SWIFT_VERSION: "5.9"
