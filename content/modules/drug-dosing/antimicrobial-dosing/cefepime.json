@@ -33,5 +33,5 @@
     "Think of unexplained new confusion or myoclonus in an ICU patient on cefepime as drug-induced until proven otherwise — it's a common, underrecognized, and reversible cause of exactly the picture that gets written off as 'sepsis-associated encephalopathy.'",
     "Symptoms typically improve within 2-3 days of stopping the drug, faster with dialysis in renal failure — this reversibility is itself a useful diagnostic clue in a trial-of-discontinuation sense."
   ],
-  "buildNote": "anesthesia-drug-card contentType reused for a fixed-dose antimicrobial. Deliberately led with the neurotoxicity content rather than treating it as a minor caution — it's the clinically distinctive, actionable reason this card exists."
+  "buildNote": "anesthesia-drug-card contentType reused for a fixed-dose antimicrobial. Deliberately led with the neurotoxicity content rather than treating it as a minor caution — it's the clinically distinctive, actionable reason this card exists. See renal-dose-adjustment-critical-illness-antibiotics (Batch 3) for why no precise CrCl table is given here."
 }

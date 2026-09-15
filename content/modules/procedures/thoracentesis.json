@@ -1,0 +1,66 @@
+{
+  "id": "thoracentesis",
+  "section": "Procedures",
+  "category": "Aspiration & Drainage Procedures",
+  "title": "Thoracentesis",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["pleural tap", "diagnostic thoracentesis", "therapeutic thoracentesis"],
+  "tags": ["thoracentesis", "pleural effusion", "pneumothorax", "ultrasound-guided", "ED", "ICU", "procedure"],
+  "keywords": ["ultrasound-guided reduces pneumothorax risk compared to blind landmark technique", "above the rib not below — avoid the neurovascular bundle running along the rib's inferior margin", "re-expansion pulmonary edema risk with large-volume rapid drainage, limit to roughly 1.5L or stop if symptoms develop", "send fluid for Light's Criteria same visit"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Thomsen TW, et al. Videos in clinical medicine. Thoracentesis. N Engl J Med. 2006;355(15):e16.",
+    "Gordon CE, et al. Pneumothorax following thoracentesis: a systematic review and meta-analysis. Arch Intern Med. 2010;170(4):332-339 (ultrasound-guidance benefit)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3). Cross-linked to the new lights-criteria calculator (Batch 3) for the fluid-interpretation step this procedure exists to feed." }
+  ],
+  "outputType": "workflow",
+  "purpose": "Ultrasound-guided pleural fluid drainage — site selection, needle technique staying above the rib, and the re-expansion pulmonary edema risk with large-volume drainage.",
+  "entryPrompt": "Ultrasound guidance is standard of care wherever available — it meaningfully lowers the pneumothorax rate compared to the blind landmark technique.",
+  "nodes": [
+    {
+      "id": "indication",
+      "type": "step",
+      "prompt": "1. Confirm indication and site",
+      "body": "Diagnostic: a new or unexplained pleural effusion, to send fluid for Light's Criteria and further studies. Therapeutic: symptomatic relief of dyspnea from a large effusion. Use ultrasound to confirm a fluid pocket large enough and accessible enough to tap safely, and to identify the diaphragm/liver/spleen position — ultrasound guidance meaningfully lowers the pneumothorax rate compared to the classic blind landmark technique and is the standard of care wherever available."
+    },
+    {
+      "id": "position",
+      "type": "step",
+      "prompt": "2. Position",
+      "body": "Patient sitting upright, leaning forward over a bedside table if tolerated — this pools the effusion posteroinferiorly. Typical entry site is the posterior axillary line, one or two interspaces below the top of the effusion as marked by ultrasound, generally not below the 8th-9th intercostal space to avoid the diaphragm/abdominal organs."
+    },
+    {
+      "id": "technique",
+      "type": "step",
+      "prompt": "3. Needle technique — above the rib, not below",
+      "body": "Enter just ABOVE the superior border of the rib below the chosen interspace — the neurovascular bundle (intercostal artery, vein, nerve) runs along the INFERIOR margin of each rib, so walking the needle onto the top of the lower rib and then just over it avoids it. Infiltrate local anesthetic down to and including the pleura (this is often the most painful step if under-anesthetized). Advance under continuous aspiration or continuous ultrasound visualization until fluid returns; many kits use a catheter-over-needle technique to reduce lung-puncture risk once fluid is reached."
+    },
+    {
+      "id": "drainage",
+      "type": "step",
+      "prompt": "4. Drainage volume",
+      "body": "For therapeutic drainage, a common practice limit is roughly 1.5 L in one sitting — beyond this, the risk of re-expansion pulmonary edema rises, particularly with rapid drainage of a large, long-standing effusion. Stop drainage (regardless of volume) if the patient develops chest pain, cough, or dyspnea during the procedure — these can signal the lung re-expanding faster than it tolerates, or an evolving pneumothorax."
+    },
+    {
+      "id": "postproc",
+      "type": "step",
+      "prompt": "5. Post-procedure",
+      "body": "A post-procedure chest X-ray to assess for pneumothorax is traditional but not mandatory in a low-risk, asymptomatic, ultrasound-guided tap with a single easy pass — reserve it for multiple needle passes, air aspirated during the procedure, new symptoms, or a patient who will need mechanical ventilation shortly after (where even a small pneumothorax matters more). Send pleural fluid promptly for Light's Criteria plus any further studies (cell count/differential, glucose, pH, cytology, culture) indicated by the clinical question."
+    }
+  ],
+  "checklist": [
+    "Ultrasound used to confirm the fluid pocket and mark site/depth immediately before prepping",
+    "Entry above the rib, not below — neurovascular bundle avoided",
+    "Local anesthetic carried down to the pleura, not just the skin",
+    "Volume drained monitored, generally capped near 1.5 L, stopped early for new symptoms",
+    "Fluid sent for Light's Criteria plus further studies as indicated"
+  ],
+  "crossLinks": ["lights-criteria", "acute-dyspnea-niv", "decaf-score"],
+  "buildNote": "workflow outputType. Cross-links to the new lights-criteria calculator (Batch 3) since that's the natural next step after fluid is obtained — this procedure card deliberately doesn't restate the exudate/transudate criteria themselves."
+}

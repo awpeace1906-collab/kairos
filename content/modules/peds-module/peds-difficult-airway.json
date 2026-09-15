@@ -1,0 +1,80 @@
+{
+  "id": "peds-difficult-airway",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Pediatric Difficult Airway Approach",
+  "settingEmphasis": ["ed", "icu", "or"],
+  "audience": ["peds"],
+  "aliases": ["peds CICO", "pediatric needle cricothyrotomy", "peds surgical airway", "DAS paediatric guidelines"],
+  "tags": ["difficult airway", "CICO", "cricothyrotomy", "peds", "ED", "ICU", "OR"],
+  "keywords": ["under 8 needle cric first line per DAS 2015, scalpel only if needle fails", "over 8 scalpel technique for all front-of-neck access", "size matters more than exact age at the transition", "large occiput floppy epiglottis cephalad larynx obligate nose breathers under 6 months"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Difficult Airway Society (DAS) Paediatric Difficult Airway Guidelines, 2015 — covering ages 1-8 years, three algorithms: difficult mask ventilation, unanticipated difficult intubation, cannot intubate cannot oxygenate (CICO).",
+    "Focused review on management of the difficult paediatric airway. PMC (contemporary review discussing the needle-vs-surgical transition age and the lack of firm consensus above age 8)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3). The needle-vs-surgical cricothyrotomy age cutoff was WebSearch-verified rather than assumed: the DAS 2015 guideline's own scope is ages 1-8 with needle first-line, but contemporary review literature is explicit that there is NO firm evidence-based transition age above 8 — expert ranges cited span 8-12, with size mattering more than age. Built with that genuine uncertainty stated rather than presenting a single cutoff as more settled than it is." }
+  ],
+  "kind": "reference",
+  "ageRange": "Primarily under 8 years for the needle-cricothyrotomy-preferred approach discussed here; anatomic considerations apply broadly through early childhood",
+  "purpose": "Why the pediatric difficult/failed airway approach differs from the adult one, and specifically what to do for cannot-intubate-cannot-oxygenate (CICO) in a child — where the needle-vs-scalpel front-of-neck-access decision is genuinely less settled than in adults.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why the pediatric airway behaves differently"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Relatively large occiput — a supine infant's head flexes forward on the neck by default; a shoulder roll (not head extension alone) often improves the view.",
+        "Large tongue relative to the oral cavity, and a floppy, longer, more anteriorly-positioned epiglottis — a straight (Miller) blade to directly lift the epiglottis is frequently preferred over a curved blade in infants and young children.",
+        "A cephalad (higher, more anterior) larynx compared to an adult's.",
+        "Infants under ~6 months are obligate nasal breathers — nasal obstruction (secretions, choanal atresia) can cause significant respiratory distress even with a clear mouth and airway.",
+        "Small absolute airway diameter means a small amount of edema or secretions causes a proportionally much larger increase in resistance (Poiseuille's law) — this is also why post-extubation stridor and croup are pediatric-specific concerns rarely seen the same way in adults.",
+        "Higher metabolic rate and oxygen consumption per kg, with a smaller functional residual capacity, means desaturation happens FASTER during any apneic period — pre-oxygenation and apneic oxygenation matter even more than in adults."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "General approach — mirrors the adult DAS framework, sized down"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Plan A: optimize the first intubation attempt — best available laryngoscopist, appropriate blade/tube size, positioning, apneic oxygenation via nasal cannula if tolerated.",
+        "Plan B: supraglottic airway (SGA) as a rescue oxygenation device and/or conduit — pediatric SGAs are available down to neonatal sizes; know your department's sizes before you need them.",
+        "Plan C: return to face-mask ventilation, call for help early (a second airway-experienced provider, ENT/anesthesia), and reassess whether this can wait for a controlled setting.",
+        "Plan D — CICO: front-of-neck access. This is where the pediatric approach most concretely diverges from adult practice — see below."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "CICO in a child: needle vs. surgical front-of-neck access"
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "The DAS 2015 paediatric guideline (covering ages 1-8) recommends needle cricothyroidotomy as first-line for CICO in this age group, with a scalpel technique reserved for when needle access fails or isn't achievable — the reverse of the adult algorithm, where scalpel cricothyrotomy is first-line. The cricothyroid membrane in a young child is too small and the surrounding anatomy too fragile for a reliably safe scalpel-first approach at this size."
+    },
+    {
+      "type": "text",
+      "text": "Above age 8, there is genuinely NO firm, universally-agreed transition point in the evidence — contemporary reviews cite expert-recommended cutoffs anywhere from 8 to 12 years, and multiple sources emphasize that the CHILD'S SIZE matters more than their age in years. A large 9-year-old may be reasonably approached like an adult; a small, underweight 11-year-old may still need the needle-first approach. Use clinical judgment on anatomy, not a hard age number, once past the DAS guideline's own 1-8 scope."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Needle cricothyrotomy technique: locate the cricothyroid membrane, insert a large-bore IV catheter (typically 14-16G) at a 45° caudad angle while aspirating, confirm air return, advance the catheter and remove the needle, then connect to an oxygen source — either a jet ventilation setup if immediately available, or an improvised high-pressure oxygen source (e.g., a 3-way stopcock/Y-connector jury-rig) if not. This provides OXYGENATION, not reliable ventilation — CO2 will accumulate, and this is a bridge to a definitive airway, not a destination.",
+        "This is a low-frequency, high-stakes skill — competency decays without deliberate practice. If your department/OR has pediatric CICO simulation available, use it; this is one of the areas where 'I've read about it' and 'I can do it under pressure' are furthest apart."
+      ]
+    }
+  ],
+  "buildNote": "kind: reference rather than decision-tree — the content is genuinely 'here is the current state of an unsettled evidence base plus the DAS guideline's actual scope,' not a clean branching algorithm. Distinct from anatomically-difficult-airway/macocha-score (adult-focused, already built) and peds-rsi-decision-card (RSI medication/dosing decision, not the failed-airway escalation itself). peds-tool has no related[] field — cross-link to anatomically-difficult-airway noted here in prose."
+}

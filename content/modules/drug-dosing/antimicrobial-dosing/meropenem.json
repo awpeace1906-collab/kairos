@@ -33,5 +33,5 @@
     "The valproate interaction is easy to miss and can precipitate status epilepticus in a patient previously well-controlled — actively check the med list before starting meropenem in anyone on valproic acid.",
     "Meropenem is often reached for specifically for its CNS penetration and Pseudomonas coverage together — if neither is needed, a narrower or non-carbapenem agent is frequently more appropriate stewardship."
   ],
-  "buildNote": "anesthesia-drug-card contentType reused for a fixed-dose antimicrobial. Renal-dosing tiers given with a source citation and an explicit 'confirm locally' caveat rather than presented as unambiguous, since exact eGFR cutoffs vary somewhat across references."
+  "buildNote": "anesthesia-drug-card contentType reused for a fixed-dose antimicrobial. Renal-dosing tiers given with a source citation and an explicit 'confirm locally' caveat rather than presented as unambiguous, since exact eGFR cutoffs vary somewhat across references. Cross-linked from renal-dose-adjustment-critical-illness-antibiotics (Batch 3) as the one antimicrobial card in that category with an actual sourced table."
 }

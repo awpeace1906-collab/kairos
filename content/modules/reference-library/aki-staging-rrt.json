@@ -154,7 +154,8 @@
     "hyperkalemia-management",
     "abg-interpretation",
     "iv-fluids",
-    "meld-na"
+    "meld-na",
+    "renal-dose-adjustment-critical-illness-antibiotics"
   ],
   "buildNote": "Tier 3. STARRT-AKI / AKIKI timing evidence added from standard practice. A contrast-nephropathy pathway already exists as its own module."
 }

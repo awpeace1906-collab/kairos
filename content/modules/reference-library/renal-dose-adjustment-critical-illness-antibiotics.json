@@ -1,0 +1,86 @@
+{
+  "id": "renal-dose-adjustment-critical-illness-antibiotics",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Renal Dose Adjustment — Critical-Illness Antibiotics",
+  "settingEmphasis": ["icu", "ed"],
+  "aliases": ["antibiotic renal dosing", "augmented renal clearance", "CRRT antibiotic dosing"],
+  "tags": ["renal dosing", "antibiotics", "augmented renal clearance", "CRRT", "ICU"],
+  "keywords": ["augmented renal clearance can under-dose a normal-CrCl regimen in young hyperdynamic sepsis", "meropenem eGFR tiers 1g q12h 25-50 0.5g q12h under 25", "vancomycin AUC-guided not trough-guided", "CRRT effluent rate drives dosing more than native renal function"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Roberts JA, et al. DALI study — defining antibiotic levels in intensive care unit patients. Clin Infect Dis. 2014;58(8):1072-1083.",
+    "Udy AA, et al. Augmented renal clearance in the ICU: results of a multicenter observational study. Crit Care Med. 2014;42(3):520-527.",
+    "Standard renal dose-reduction table (eGFR-tiered) as commonly summarized in critical-care pharmacy references for meropenem; see that card's own sources for the primary citation."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3), built as the companion reference the Batch 2 antimicrobial-dosing cards (piperacillin-tazobactam, meropenem, cefepime, vancomycin) already pointed to qualitatively. Deliberately does NOT invent precise CrCl-tiered tables for pip-tazo/cefepime where none of those cards' own research found one — the point of this module is explaining WHY that's the right call (augmented renal clearance, institutional variation), not papering over the gap with a fabricated number." }
+  ],
+  "summary": "Why a fixed CrCl-tiered antibiotic dosing table is often the wrong tool in critical illness, what the two things that actually drive the decision are (augmented renal clearance vs. reduced clearance vs. CRRT), and where Kairos does and doesn't give you an exact number.",
+  "whyThisMatters": "Critically ill patients don't sit at one end of the renal-function spectrum — the same ICU has patients with augmented renal clearance clearing drugs faster than a 'normal' dose accounts for, sitting next to patients in AKI or on CRRT needing major reduction, and treating both with the same textbook CrCl table under-doses one group and overdoses the other.",
+  "clinicalTakeaway": "Don't reach for a single CrCl-tiered table as if critical illness were just 'reduced kidney function.' Check for augmented renal clearance risk factors (young, trauma/burn/sepsis, low baseline creatinine) before assuming a standard or reduced dose is enough; use CRRT effluent rate rather than native renal function once a patient is on continuous renal replacement; and lean on your institution's pharmacy/protocol for the antibiotics where a precise, current table genuinely varies by source — pip-tazo and cefepime among them.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The core problem: critical illness isn't just \"reduced renal function\""
+    },
+    {
+      "type": "text",
+      "text": "Standard drug-label renal dosing tables were built for a stable outpatient population where declining renal function is the only variable that moves. ICU patients break that assumption in both directions at once across the same unit."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Augmented renal clearance (ARC)"
+    },
+    {
+      "type": "text",
+      "text": "A real and under-recognized phenomenon: young, previously healthy patients with a hyperdynamic circulation (sepsis, trauma, burns, major surgery) can clear renally-eliminated drugs FASTER than a standard dose accounts for — CrCl > 130 mL/min is not rare in this population. Dosing a 25-year-old trauma patient with a normal-appearing creatinine as if a 'standard' regimen is automatically adequate can under-dose them, risking treatment failure and resistance selection — the opposite error from the one renal-dosing tables are designed to prevent."
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Risk factors for ARC: age < 50-55, trauma/burn/major surgery/sepsis without shock, low SOFA score relative to the rest of the unit, and a measured or calculated CrCl already trending > 130 mL/min. A 'normal' serum creatinine in a young, hyperdynamic patient is NOT reassurance that standard dosing is enough — if anything it's a flag to consider extended-infusion/higher-end dosing strategies rather than reducing anything."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Reduced renal function — the familiar direction"
+    },
+    {
+      "type": "text",
+      "text": "The direction every standard reference already covers: as CrCl/eGFR falls, dose and/or interval need reduction to avoid toxic accumulation (seizures with beta-lactams and carbapenems, nephrotoxicity with vancomycin/aminoglycosides). Where Kairos has a real, sourced table for this, it's on the drug's own card — see meropenem's renal-dosing table (eGFR > 50 no change; 25-50 → 1g q12h; < 25 → 0.5g q12h; < 10/dialysis → 0.5g q24h + post-HD dosing)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Where Kairos gives you an exact table, and where it deliberately doesn't"
+    },
+    {
+      "type": "table",
+      "columns": ["Drug", "Renal-dosing table in Kairos?", "Why"],
+      "rows": [
+        ["Meropenem", "Yes — see the meropenem card", "A consistent, commonly-cited eGFR-tiered table was found and sourced during research; still carries a 'confirm locally' caveat since exact cutoffs vary somewhat by source."],
+        ["Piperacillin-tazobactam", "No — qualitative guidance only, see the pip-tazo card", "Research did not turn up one consistent table; more importantly, ARC is common enough in the sepsis population this drug is used in that a fixed reduced-dose table risks under-dosing more often than a qualitative 'check your protocol' does."],
+        ["Cefepime", "No — qualitative guidance only, see the cefepime card", "Same reasoning as pip-tazo. Cefepime's dominant safety issue (neurotoxicity) is actually MORE about not skipping adjustment at all than about hitting one exact number — see that card's cautions."],
+        ["Vancomycin", "Not applicable — dosed by AUC-guided monitoring, not a CrCl table", "Modern vancomycin dosing (2020 ASHP/IDSA/PIDS/SIDP consensus) targets an AUC:MIC of 400-600, adjusted from levels and a population PK model or nomogram rather than a fixed renal-function table — see the vancomycin card."]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Continuous renal replacement therapy (CRRT)"
+    },
+    {
+      "type": "text",
+      "text": "Once a patient is on CRRT, native renal function stops being the relevant variable — the CRRT effluent rate (and modality: CVVH/CVVHD/CVVHDF) becomes the dominant driver of drug clearance instead. A patient on high-effluent-rate CRRT may need dosing closer to normal renal function than to the anuric end of the spectrum their native kidneys would suggest. This is genuinely modality- and institution-specific (exact effluent-rate-tiered tables vary by CRRT platform and prescribed dose) — involve pharmacy for CRRT-specific antibiotic dosing rather than extrapolating from a non-CRRT renal-dosing table."
+    }
+  ],
+  "related": ["aki-staging-rrt", "vancomycin", "meropenem", "piperacillin-tazobactam", "cefepime"],
+  "buildNote": "Companion reference to the Batch 2 antimicrobial-dosing cards, which each pointed here qualitatively. The table of 'which drugs get an exact number vs. qualitative guidance' is the honest map of what this app's own research could and couldn't verify — worth keeping current as future antibiotic cards are added rather than letting it silently go stale."
+}

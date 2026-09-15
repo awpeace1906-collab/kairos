@@ -1,0 +1,78 @@
+{
+  "id": "lumbar-puncture",
+  "section": "Procedures",
+  "category": "Aspiration & Drainage Procedures",
+  "title": "Lumbar Puncture",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["LP", "spinal tap", "CSF sampling"],
+  "tags": ["lumbar puncture", "CSF", "meningitis", "opening pressure", "ED", "ICU", "procedure"],
+  "keywords": ["intercristal line marks L4 or the L4-5 interspace, use L3-4 or L4-5, stays below the conus at any age", "opening pressure normal 10-20 cmH2O adults, lateral decubitus with legs extended", "traumatic tap versus true xanthochromia distinguish by tube 1 vs tube 4 RBC count"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Straus SE, et al. How do I perform a lumbar puncture and analyze the results to diagnose bacterial meningitis? JAMA. 2006;296(16):2012-2022.",
+    "MR imaging determination of the location of the normal conus medullaris throughout childhood — confirms L3-4/L4-5 needle placement stays below the conus at any age, verified via WebSearch given the peds-relevant anatomy claim."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3), alongside paracentesis/thoracentesis/arthrocentesis in the new Aspiration & Drainage Procedures category." }
+  ],
+  "outputType": "workflow",
+  "purpose": "Landmark and ultrasound-assisted technique for diagnostic/therapeutic lumbar puncture, opening-pressure measurement, and how to interpret a traumatic tap.",
+  "entryPrompt": "Check the contraindications before you position the patient — a coagulopathy or a mass lesion with midline shift changes the plan entirely.",
+  "nodes": [
+    {
+      "id": "contraindications",
+      "type": "warning",
+      "prompt": "Before you start: contraindications",
+      "body": "Signs of raised ICP with risk of herniation (papilledema, focal neuro deficit, altered consciousness with concern for a mass lesion) — get imaging first unless the clinical picture makes empiric treatment plus imaging-after the safer path (e.g. suspected bacterial meningitis: don't delay antibiotics for imaging). Coagulopathy or significant thrombocytopenia (platelets typically < 50,000, or on therapeutic anticoagulation) — correct first if possible. Infection overlying the puncture site — choose a different interspace or route. Suspected spinal epidural abscess at the planned level."
+    },
+    {
+      "id": "position",
+      "type": "step",
+      "prompt": "1. Position and landmark",
+      "body": "Lateral decubitus with knees drawn toward the chest (best for accurate opening pressure — the patient must be relaxed and NOT tightly flexed/held by an assistant, which falsely elevates pressure), or sitting-forward if opening pressure isn't needed or positioning is difficult. The intercristal line (a line connecting the top of both iliac crests) crosses the spine at approximately L4 or the L4-5 interspace — use this landmark, and aim for the L3-4 or L4-5 interspace, which stays below the conus medullaris at any age including infants (the conus is usually higher, around L1-2, but with real individual variability into early childhood — L3-4/L4-5 is deliberately conservative)."
+    },
+    {
+      "id": "ultrasound",
+      "type": "step",
+      "prompt": "2. Consider ultrasound assistance, especially in a difficult body habitus",
+      "body": "Pre-procedural ultrasound to mark the midline and interspace (not necessarily real-time-guided) improves first-pass success in obese patients, patients with distorted anatomy, or after a failed landmark attempt — a genuinely underused adjunct outside of expert hands, not just an academic curiosity."
+    },
+    {
+      "id": "needle",
+      "type": "step",
+      "prompt": "3. Needle insertion",
+      "body": "Sterile prep and drape, local anesthetic infiltration at the skin and along the planned tract. Advance the spinal needle (bevel parallel to the long axis of the spine to reduce headache risk with a traditional cutting-tip needle; atraumatic/pencil-point needles are increasingly preferred and reduce post-LP headache regardless of orientation) slightly cephalad, aiming toward the umbilicus. A distinct 'pop' or give is often felt passing through the ligamentum flavum/dura. Remove the stylet periodically to check for CSF return."
+    },
+    {
+      "id": "pressure",
+      "type": "step",
+      "prompt": "4. Opening pressure",
+      "body": "Attach the manometer as soon as CSF flows, with the patient in the LATERAL DECUBITUS position and legs relaxed/extended (not flexed) for an accurate reading — a sitting position or flexed legs will falsely elevate the number. Normal adult opening pressure is roughly 10-20 cmH2O (obese patients can normally run somewhat higher). A markedly elevated pressure changes management (consider idiopathic intracranial hypertension, or reconsider whether imaging should have preceded the tap) — this is a genuinely useful number, don't skip it when clinically relevant."
+    },
+    {
+      "id": "collection",
+      "type": "step",
+      "prompt": "5. Fluid collection",
+      "body": "Collect CSF into sequentially numbered tubes — typically: tube 1 (cell count/differential), tube 2 (glucose/protein), tube 3 (culture/gram stain), tube 4 (repeat cell count, used to help distinguish a traumatic tap from true subarachnoid hemorrhage). Send additional tubes for specific studies as indicated (PCR panel, oligoclonal bands, cytology) per the clinical question."
+    },
+    {
+      "id": "interpretation",
+      "type": "recommendation",
+      "prompt": "Traumatic tap vs. true xanthochromia",
+      "body": "A falling RBC count from tube 1 to tube 4 suggests a traumatic tap (blood introduced by the needle itself) rather than true subarachnoid hemorrhage, where the RBC count stays roughly consistent across tubes. Xanthochromia (yellow discoloration from RBC breakdown products) supports true SAH but takes hours to develop and can be falsely negative very early — a negative xanthochromia very soon after headache onset doesn't fully exclude SAH if pretest probability is high; correlate with the clinical picture and consider CT angiography rather than relying on the LP alone in an equivocal case."
+    }
+  ],
+  "checklist": [
+    "Contraindications screened (raised-ICP/herniation risk, coagulopathy, overlying infection) before positioning",
+    "Intercristal line landmark used, targeting L3-4 or L4-5 — safe at any age",
+    "Opening pressure measured in lateral decubitus with legs relaxed/extended, not flexed or sitting",
+    "CSF collected in sequential numbered tubes with tube 4 sent for a repeat cell count if a traumatic tap vs. SAH distinction matters",
+    "Ultrasound landmark-marking considered for a difficult body habitus or after a failed attempt"
+  ],
+  "crossLinks": ["altered-mental-status", "febrile-infant-risk-stratification", "acute-ischemic-stroke"],
+  "buildNote": "workflow outputType, sequential with one warning node for pre-procedure contraindications. Peds-relevant conus-medullaris anatomy claim WebSearch-verified rather than assumed, since it's exactly the kind of number a rushed build could get subtly wrong at pediatric ages."
+}

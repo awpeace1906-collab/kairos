@@ -1,0 +1,56 @@
+{
+  "id": "lights-criteria",
+  "section": "Calculators",
+  "category": "Pulmonary / PE / DVT / Resp Failure",
+  "title": "Light's Criteria (Pleural Effusion)",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["exudate vs transudate", "pleural fluid analysis"],
+  "tags": ["pleural effusion", "exudate", "transudate", "thoracentesis", "ED", "ICU"],
+  "keywords": ["ANY one criterion positive means exudate", "protein ratio over 0.5", "LDH ratio over 0.6", "pleural LDH over two-thirds ULN serum LDH", "misclassifies 25-30 percent of heart-failure transudates as exudate — use albumin gradient if suspicious"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Light RW, et al. Pleural effusions: the diagnostic separation of transudates and exudates. Ann Intern Med. 1972;77(4):507-513 (original criteria).",
+    "Diagnostic Approach to Pleural Effusion in Adults. Am Fam Physician. 2006;73(7):1211-1220."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3). Built as an additive checklist (any-one-positive = exudate) rather than a threshold score — Light's Criteria is a rule-out-transudate decision rule, not a summed score, so the additive engine is reused for that any-one-positive logic exactly as preeclampsia-severe-features was in Batch 2." }
+  ],
+  "engine": "additive",
+  "purpose": "Distinguish exudative from transudative pleural effusion at the bedside — an effusion is exudative if it meets ANY ONE of the three criteria below.",
+  "notes": "This is a rule-out-transudate decision rule, not a point-threshold score: ANY single criterion being positive classifies the effusion as exudative, so the 'score' here is really a count of how many of the 3 criteria are met (0 = transudate, 1-3 = exudate — the count above 0 doesn't change the classification, only confirms it more ways). Light's Criteria over-calls exudate in roughly 25-30% of heart-failure-related transudates, usually after diuresis has concentrated the protein/LDH — if the clinical picture screams heart failure but Light's says exudate, check a serum-to-pleural albumin gradient (> 1.2 g/dL favors transudate) or protein gradient (> 3.1 g/dL favors transudate) rather than overriding on gestalt alone.",
+  "items": [
+    {
+      "key": "proteinRatio",
+      "label": "Pleural fluid protein / serum protein ratio > 0.5",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": 1 }
+      ]
+    },
+    {
+      "key": "ldhRatio",
+      "label": "Pleural fluid LDH / serum LDH ratio > 0.6",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": 1 }
+      ]
+    },
+    {
+      "key": "ldhAbsolute",
+      "label": "Pleural fluid LDH > 2/3 of the upper limit of normal for serum LDH",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": 1 }
+      ]
+    }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "Transudate", "detail": "No criterion met. Think heart failure, cirrhosis/hepatic hydrothorax, nephrotic syndrome, or hypoalbuminemia — manage the underlying systemic process, not the pleural space itself.", "severity": "info" },
+    { "min": 1, "max": 3, "label": "Exudate", "detail": "One or more criteria met. Send further pleural fluid studies (cell count/differential, glucose, pH, cytology, culture ± cholesterol/triglycerides if chylothorax suspected) to work toward the specific cause — parapneumonic/empyema, malignancy, PE, TB, and many others.", "severity": "moderate" }
+  ],
+  "buildNote": "engine: additive reused for any-one-positive checklist logic (same pattern as preeclampsia-severe-features from Batch 2) rather than a genuine summed score — documented here and in notes so the reuse isn't mistaken for a real point-threshold interpretation. Companion to a future thoracentesis procedure card (Batch 3) for the technique side of getting this fluid in the first place."
+}

@@ -1,0 +1,74 @@
+{
+  "id": "decaf-score",
+  "section": "Calculators",
+  "category": "Pulmonary / PE / DVT / Resp Failure",
+  "title": "DECAF Score",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["Dyspnea Eosinopenia Consolidation Acidemia atrial Fibrillation score", "COPD exacerbation mortality score"],
+  "tags": ["COPD", "AECOPD", "mortality risk", "dyspnea", "ED", "ICU"],
+  "keywords": ["extended MRC dyspnea scale 5a versus 5b", "eosinopenia under 0.05", "acidemia pH under 7.3", "low risk 0-1 intermediate 2 high risk 3-6"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Steer J, Gibson J, Bourke SC. The DECAF Score: predicting hospital mortality in exacerbations of chronic obstructive pulmonary disease. Thorax. 2012;67(11):970-976.",
+    "DECAF versus CURB-65 to Foresee Mortality among Patients Presenting with an Acute Exacerbation of COPD (validation literature)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3). All 5 components and risk bands WebSearch-verified against the 2012 Thorax derivation paper, including the extended-MRC-Dyspnea 5a/5b split." }
+  ],
+  "engine": "additive",
+  "purpose": "In-hospital mortality risk for an acute COPD exacerbation, at the point of admission — helps identify who's safe for early supported discharge (low risk) versus who needs closer monitoring or escalation planning (high risk).",
+  "items": [
+    {
+      "key": "dyspnea",
+      "label": "Extended MRC Dyspnea (eMRCD) scale",
+      "help": "Grades 1-4 = able to leave the house unaided. 5a = too breathless to leave the house, but independent with washing/dressing. 5b = too breathless to leave the house AND needs help washing/dressing.",
+      "options": [
+        { "label": "eMRCD 1-4", "points": 0 },
+        { "label": "eMRCD 5a", "points": 1 },
+        { "label": "eMRCD 5b", "points": 2 }
+      ]
+    },
+    {
+      "key": "eosinopenia",
+      "label": "Eosinopenia — blood eosinophil count < 0.05 × 10⁹/L",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": 1 }
+      ]
+    },
+    {
+      "key": "consolidation",
+      "label": "Consolidation on chest X-ray",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": 1 }
+      ]
+    },
+    {
+      "key": "acidemia",
+      "label": "Acidemia — arterial pH < 7.30",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": 1 }
+      ]
+    },
+    {
+      "key": "afib",
+      "label": "Atrial fibrillation (known history, or new on this presentation)",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": 1 }
+      ]
+    }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 1, "label": "Low risk (0-1)", "detail": "Low in-hospital mortality risk — a candidate for early supported discharge pathways where available.", "severity": "low" },
+    { "min": 2, "max": 2, "label": "Intermediate risk (2)", "detail": "Individualize disposition; not clearly low or high risk on this score alone.", "severity": "moderate" },
+    { "min": 3, "max": 6, "label": "High risk (3-6)", "detail": "Substantially elevated in-hospital mortality — favor admission with close monitoring and early escalation planning (NIV readiness, ceiling-of-care discussion).", "severity": "high" }
+  ],
+  "buildNote": "The eosinopenia cutoff (< 0.05 ×10⁹/L) is the opposite direction from the eosinophil-guided-steroid literature elsewhere in respiratory medicine (where LOW eosinophils predict a poor steroid response) — both point the same clinical direction here (low eosinophils = sicker, more likely bacterial-driven exacerbation), but flagged in case a future editor assumes it's a copy-paste error from a steroid-responsiveness module. Companion to bronchiolitis-management/croup-management as the third major respiratory-exacerbation scoring tool, though for a different age group and disease."
+}

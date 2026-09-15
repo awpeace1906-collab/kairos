@@ -1,0 +1,103 @@
+{
+  "id": "timi-stemi",
+  "section": "Calculators",
+  "category": "Cardiovascular / Chest Pain / Arrhythmia",
+  "title": "TIMI Risk Score for STEMI",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["TIMI STEMI risk score", "thrombolysis in myocardial infarction STEMI"],
+  "tags": ["STEMI", "TIMI", "mortality risk", "ACS", "ED", "ICU"],
+  "keywords": ["0-14 points age 65-74 2pts 75+ 3pts", "SBP under 100 is 3 points", "Killip II-IV 2 points", "anterior MI or LBBB 1 point", "distinguish from the existing TIMI NSTEMI score already in Kairos"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Morrow DA, et al. TIMI Risk Score for ST-Elevation Myocardial Infarction: A Convenient, Bedside, Clinical Score for Risk Assessment at Presentation. Circulation. 2000;102(17):2031-2037."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3). Kairos already had the TIMI score for NSTEMI/UA (a different score, different variables); this is the distinct STEMI-specific version. Point values WebSearch-verified against the original 2000 Circulation derivation paper." }
+  ],
+  "engine": "additive",
+  "purpose": "30-day mortality risk estimate at presentation for STEMI, using variables available immediately at the bedside — distinct from the TIMI NSTEMI/UA score already in Kairos, which uses different criteria entirely.",
+  "notes": "A different tool from the existing TIMI (NSTEMI/UA) score — do not conflate the two despite the shared name; this one was derived specifically in fibrinolytic-era STEMI patients and uses Killip class, weight, and time-to-treatment rather than the NSTEMI score's aspirin-use/prior-stenosis/recent-angina criteria.",
+  "items": [
+    {
+      "key": "age",
+      "label": "Age",
+      "options": [
+        { "label": "< 65", "points": 0 },
+        { "label": "65-74", "points": 2 },
+        { "label": "75 or older", "points": 3 }
+      ]
+    },
+    {
+      "key": "history",
+      "label": "History of diabetes, hypertension, or angina (any one)",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": 1 }
+      ]
+    },
+    {
+      "key": "sbp",
+      "label": "Systolic blood pressure",
+      "options": [
+        { "label": "≥ 100 mmHg", "points": 0 },
+        { "label": "< 100 mmHg", "points": 3 }
+      ]
+    },
+    {
+      "key": "hr",
+      "label": "Heart rate",
+      "options": [
+        { "label": "≤ 100 bpm", "points": 0 },
+        { "label": "> 100 bpm", "points": 2 }
+      ]
+    },
+    {
+      "key": "killip",
+      "label": "Killip class",
+      "options": [
+        { "label": "I", "points": 0 },
+        { "label": "II-IV", "points": 2 }
+      ]
+    },
+    {
+      "key": "weight",
+      "label": "Weight",
+      "options": [
+        { "label": "≥ 67 kg", "points": 0 },
+        { "label": "< 67 kg", "points": 1 }
+      ]
+    },
+    {
+      "key": "location",
+      "label": "Anterior ST elevation, or new left bundle branch block",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": 1 }
+      ]
+    },
+    {
+      "key": "timeToTreatment",
+      "label": "Time from symptom onset to treatment",
+      "options": [
+        { "label": "≤ 4 hours", "points": 0 },
+        { "label": "> 4 hours", "points": 1 }
+      ]
+    }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 0, "label": "Score 0", "detail": "≈ 0.8% 30-day mortality.", "severity": "low" },
+    { "min": 1, "max": 1, "label": "Score 1", "detail": "≈ 1.6% 30-day mortality.", "severity": "low" },
+    { "min": 2, "max": 2, "label": "Score 2", "detail": "≈ 2.2% 30-day mortality.", "severity": "low" },
+    { "min": 3, "max": 3, "label": "Score 3", "detail": "≈ 4.4% 30-day mortality.", "severity": "moderate" },
+    { "min": 4, "max": 4, "label": "Score 4", "detail": "≈ 7.3% 30-day mortality.", "severity": "moderate" },
+    { "min": 5, "max": 5, "label": "Score 5", "detail": "≈ 12.4% 30-day mortality.", "severity": "high" },
+    { "min": 6, "max": 6, "label": "Score 6", "detail": "≈ 16.1% 30-day mortality.", "severity": "high" },
+    { "min": 7, "max": 7, "label": "Score 7", "detail": "≈ 23.4% 30-day mortality.", "severity": "critical" },
+    { "min": 8, "max": 14, "label": "Score 8+", "detail": "≈ 26.8-35.9% 30-day mortality — steep, near-linear climb per point at the top of the range.", "severity": "critical" }
+  ],
+  "buildNote": "Mortality percentages are the point-by-point figures from the original Morrow 2000 derivation cohort (fibrinolytic-era), reproduced as commonly cited — treat as an order-of-magnitude risk gradient rather than a precise modern-era number, since contemporary primary-PCI mortality is generally lower across the board. The score itself (which variables, how many points each) is the durable, still-used part; the raw percentages are the part most likely to have drifted from a 2000-era fibrinolytic cohort. Distinct calculator from the existing TIMI NSTEMI/UA score — cross-link via aliases/keywords since calculator schema has no related[] field."
+}

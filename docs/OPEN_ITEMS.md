@@ -49,6 +49,77 @@ list):
    POCUS exam trees).
 
 ## Progress log
+- 2026-09-15 — **Content audit Batch 3 shipped (→ 354 modules).** Calculators:
+  `edacs` and `timi-stemi` (Cardiovascular — the STEMI-specific TIMI score,
+  distinct from the existing NSTEMI/UA one), `lights-criteria` and
+  `decaf-score` (Pulmonary — Light's Criteria built as an any-one-positive
+  additive checklist, same reuse pattern as preeclampsia-severe-features),
+  `ckd-epi-egfr` (GI/Renal — the real gap; race-free 2021 equation, its
+  sex-dependent kappa/alpha/female-multiplier terms pre-resolved into linear
+  functions of a 0/1 select since the formula grammar has no conditional
+  branching, hand-verified against two test cases live in the browser: 50yo
+  male Scr 1.0 → 92 mL/min, 50yo female Scr 0.8 → 90 mL/min, both matching
+  hand calculation exactly). **A real false-positive caught mid-batch**:
+  went to build a `cockcroft-gault-crcl` calculator for the audit's
+  "Cockcroft-Gault/CKD-EPI as a standalone calculator" gap, and — while
+  searching the live app to verify the new CKD-EPI card rendered — found
+  Cockcroft-Gault already existed as `cockcroft-gault` under Drug & Dosing.
+  Deleted the duplicate file and instead added `crossListIn` on the existing
+  card into Calculators/GI-Renal-Metabolic (the same pattern as
+  `apgar-score`'s OB-Newborn cross-list), with a changelog entry on that
+  card documenting exactly what almost happened and why — this is the same
+  cross-verification discipline applied throughout the audit, just caught
+  one step later than the other false positives from the original scoping
+  pass. New Reference Library: `renal-dose-adjustment-critical-illness-
+  antibiotics` (Critical Care) — the companion reference the Batch 2
+  antimicrobial cards already pointed to qualitatively; explains augmented
+  renal clearance and CRRT-effluent-rate dosing as the reasons a single
+  fixed CrCl table is often the wrong tool in the ICU, and includes an
+  honest table of which antibiotics do/don't get a precise number in this
+  app and why. New Peds Module: `peds-difficult-airway` (the DAS 2015
+  needle-vs-surgical cricothyrotomy age cutoff — WebSearch-verified that
+  the <8yo needle-first recommendation is real but that there is NO firm
+  evidence-based transition age above 8, contemporary reviews cite 8-12
+  with size mattering more than age; built with that genuine uncertainty
+  stated rather than presenting a single cutoff as more settled than it
+  is) and `pediatric-burn-management` (Lund-Browder age-banded head/thigh/
+  leg percentages, WebSearch-verified across multiple source fragments and
+  assembled into one table; the maintenance-fluid-addition teaching point
+  that the existing adult-oriented `parkland-formula` card doesn't cover;
+  ABA burn-center referral thresholds). New Procedures, in a new
+  **Aspiration & Drainage Procedures** category: `lumbar-puncture`,
+  `thoracentesis` (cross-linked to the new `lights-criteria` calculator),
+  `paracentesis` (SBP PMN≥250 threshold, Z-track technique, large-volume
+  albumin replacement), `arthrocentesis`; plus `ed-joint-reductions` (under
+  the existing Wound & Fracture Care category — shoulder/nursemaid-elbow/
+  patella/digit, with the nursemaid's-elbow hyperpronation-vs-supination-
+  flexion success rates WebSearch-verified against a Cochrane meta-analysis
+  rather than asserted from memory: ~91% vs ~74% first-attempt success).
+  **A real tooling gotcha hit and resolved**: after restarting the local
+  dev server (it had silently died hours earlier — `preview_list` showed it
+  in the "recently ended" list, not running — so an earlier browser tab was
+  serving genuinely stale content, which is why the croup/transfusion-
+  reactions verification in the Batch 2 session needed a force-reload to
+  work), the app's search still couldn't find any of the 5 new Procedures
+  modules even after confirming via direct `fetch()` that they were present
+  in `search-index.json`. Traced to a stale Service Worker cache serving an
+  old precached copy of that file to the app's own internal fetch calls
+  (the manual `fetch(..., {cache:'no-store'})` used to check the data
+  bypassed it, which is why the data looked fine while the UI didn't).
+  Unregistering the service worker and clearing the Cache Storage resolved
+  it — a pure local-dev-verification artifact, not a content or build bug;
+  worth remembering this failure signature (data confirmed present via
+  direct fetch, but UI search still returns nothing) as a services-worker
+  cache red flag for future sessions rather than re-diagnosing from
+  scratch. validate 354/0, build/sync/test 269/0, iOS `xcodebuild test` run
+  in parallel. Live-verified `arthrocentesis` and the CKD-EPI/Cockcroft-
+  Gault cross-list rendering correctly post-fix. **Batch 4 of the content
+  audit remains queued** — see the "Content audit 2026-09-14" section above
+  for the full scoped list (niche references — acute liver failure, heat
+  stroke, drowning, electrical injury, sickle cell crisis, HIV PEP, thyroid
+  storm/adrenal crisis, perioperative-specific anaphylaxis — plus
+  structural housekeeping: category-label normalization, missing tags on
+  older files, the misplaced peds-epinephrine-arrest file).
 - 2026-09-14 — **Content audit Batch 2 shipped (→ 341 modules).** All eight
   Batch 2 items from the priority scope, plus one mid-batch addition the user
   asked for directly. Calculators/Obstetric-Newborn: `bishop-score` (additive,

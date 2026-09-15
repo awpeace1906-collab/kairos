@@ -156,6 +156,15 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "calculators/cardiovascular/edacs": {
+      "content_version": 1,
+      "hash": "1acc6f87e82e5fef",
+      "path": "modules/calculators/cardiovascular/edacs.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "calculators/cardiovascular/grace-acs": {
       "content_version": 1,
       "hash": "8ecf2cdce997b429",
@@ -219,6 +228,15 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "calculators/cardiovascular/timi-stemi": {
+      "content_version": 1,
+      "hash": "dd9ac38a5c43727a",
+      "path": "modules/calculators/cardiovascular/timi-stemi.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "calculators/early-warning-resus/mews": {
       "content_version": 1,
       "hash": "8ce955c77f8dd89b",
@@ -280,6 +298,15 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2027-03-14"
+    },
+    "calculators/gi-renal-metabolic/ckd-epi-egfr": {
+      "content_version": 1,
+      "hash": "ccbca5d5c7948986",
+      "path": "modules/calculators/gi-renal-metabolic/ckd-epi-egfr.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "calculators/gi-renal-metabolic/corrected-calcium": {
       "content_version": 1,
@@ -593,6 +620,24 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2026-11-30"
+    },
+    "calculators/pulmonary/decaf-score": {
+      "content_version": 1,
+      "hash": "978660ef6b0fae63",
+      "path": "modules/calculators/pulmonary/decaf-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "calculators/pulmonary/lights-criteria": {
+      "content_version": 1,
+      "hash": "c9739eb43e3aa00a",
+      "path": "modules/calculators/pulmonary/lights-criteria.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "calculators/pulmonary/perc-rule": {
       "content_version": 1,
@@ -1405,7 +1450,7 @@
     },
     "drug-dosing/antimicrobial-dosing/cefepime": {
       "content_version": 1,
-      "hash": "2c004da9928e3986",
+      "hash": "fcb9a338ceea88d3",
       "path": "modules/drug-dosing/antimicrobial-dosing/cefepime.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1414,7 +1459,7 @@
     },
     "drug-dosing/antimicrobial-dosing/meropenem": {
       "content_version": 1,
-      "hash": "56a9bd3ee0cd2e57",
+      "hash": "66a63c7a6bf3d721",
       "path": "modules/drug-dosing/antimicrobial-dosing/meropenem.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1423,7 +1468,7 @@
     },
     "drug-dosing/antimicrobial-dosing/piperacillin-tazobactam": {
       "content_version": 1,
-      "hash": "105d8f395297c4c8",
+      "hash": "12da7190ae519669",
       "path": "modules/drug-dosing/antimicrobial-dosing/piperacillin-tazobactam.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1432,7 +1477,7 @@
     },
     "drug-dosing/antimicrobial-dosing/vancomycin": {
       "content_version": 1,
-      "hash": "e7406ec658e8273d",
+      "hash": "cb92d9e9834c29fe",
       "path": "modules/drug-dosing/antimicrobial-dosing/vancomycin.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1458,12 +1503,13 @@
       "next_review_due": "2026-12-08"
     },
     "drug-dosing/dosing-fluid-math/cockcroft-gault": {
-      "content_version": 1,
-      "hash": "e80c8e6b5d4e2cf3",
+      "content_version": 2,
+      "hash": "44e6cf8033d068de",
       "path": "modules/drug-dosing/dosing-fluid-math/cockcroft-gault.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
-      "review_tier": "stable"
+      "review_tier": "stable",
+      "next_review_due": "2026-12-15"
     },
     "drug-dosing/dosing-fluid-math/free-water-deficit": {
       "content_version": 2,
@@ -1840,6 +1886,15 @@
       "review_tier": 1,
       "next_review_due": "2027-03-07"
     },
+    "peds-module/pediatric-burn-management": {
+      "content_version": 1,
+      "hash": "e924f76568990777",
+      "path": "modules/peds-module/pediatric-burn-management.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "peds-module/peds-cardiac-arrest": {
       "content_version": 1,
       "hash": "91a3cb5e285aace6",
@@ -1848,6 +1903,15 @@
       "section": "Peds Module",
       "review_tier": 1,
       "next_review_due": "2027-03-04"
+    },
+    "peds-module/peds-difficult-airway": {
+      "content_version": 1,
+      "hash": "ced1f3ff2da43be5",
+      "path": "modules/peds-module/peds-difficult-airway.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "peds-module/peds-dka-management": {
       "content_version": 1,
@@ -1921,6 +1985,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "procedures/arthrocentesis": {
+      "content_version": 1,
+      "hash": "7d1ef2d89587cc20",
+      "path": "modules/procedures/arthrocentesis.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "procedures/awake-intubation": {
       "content_version": 1,
       "hash": "adb3d7541d6c0c93",
@@ -1938,6 +2011,15 @@
       "section": "Procedures",
       "review_tier": 1,
       "next_review_due": "2026-12-13"
+    },
+    "procedures/ed-joint-reductions": {
+      "content_version": 1,
+      "hash": "9a32236c7552106b",
+      "path": "modules/procedures/ed-joint-reductions.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "procedures/fracture-splinting-guide": {
       "content_version": 2,
@@ -1966,6 +2048,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-01"
     },
+    "procedures/lumbar-puncture": {
+      "content_version": 1,
+      "hash": "9cf41acd05d338d9",
+      "path": "modules/procedures/lumbar-puncture.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "procedures/nerve-block-guide": {
       "content_version": 3,
       "hash": "600b36e3905acb0e",
@@ -1983,6 +2074,15 @@
       "section": "Procedures",
       "review_tier": 1,
       "next_review_due": "2026-12-01"
+    },
+    "procedures/paracentesis": {
+      "content_version": 1,
+      "hash": "05390d708a7ad7d3",
+      "path": "modules/procedures/paracentesis.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "procedures/pericardiocentesis": {
       "content_version": 1,
@@ -2019,6 +2119,15 @@
       "section": "Procedures",
       "review_tier": 1,
       "next_review_due": "2026-12-01"
+    },
+    "procedures/thoracentesis": {
+      "content_version": 1,
+      "hash": "fe174fd7ca6a9666",
+      "path": "modules/procedures/thoracentesis.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "procedures/tube-thoracostomy": {
       "content_version": 1,
@@ -2102,7 +2211,7 @@
     },
     "reference-library/aki-staging-rrt": {
       "content_version": 2,
-      "hash": "6e752d56729bd077",
+      "hash": "17f2ebab62662fd9",
       "path": "modules/reference-library/aki-staging-rrt.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2801,6 +2910,15 @@
       "section": "Reference Library",
       "review_tier": 2,
       "next_review_due": "2027-03-08"
+    },
+    "reference-library/renal-dose-adjustment-critical-illness-antibiotics": {
+      "content_version": 1,
+      "hash": "efd2e6728e0284f0",
+      "path": "modules/reference-library/renal-dose-adjustment-critical-illness-antibiotics.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/rsi-seven-ps": {
       "content_version": 2,

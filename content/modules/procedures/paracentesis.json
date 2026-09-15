@@ -1,0 +1,67 @@
+{
+  "id": "paracentesis",
+  "section": "Procedures",
+  "category": "Aspiration & Drainage Procedures",
+  "title": "Paracentesis",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["abdominal tap", "SBP tap", "large-volume paracentesis", "albumin replacement paracentesis"],
+  "tags": ["paracentesis", "ascites", "SBP", "spontaneous bacterial peritonitis", "SAAG", "ED", "ICU", "procedure"],
+  "keywords": ["Z-track technique reduces post-procedure ascitic fluid leak", "left lower quadrant lateral to the rectus sheath, avoid old surgical scars and visible vessels", "SBP diagnosis is ascitic fluid PMN count 250 or greater regardless of culture result", "albumin 6-8g per liter removed beyond 5L to prevent post-paracentesis circulatory dysfunction"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Thomsen TW, et al. Videos in clinical medicine. Paracentesis. N Engl J Med. 2006;355(19):e21.",
+    "Runyon BA. Management of adult patients with ascites due to cirrhosis: update 2012. AASLD Practice Guideline.",
+    "European Association for the Study of the Liver. EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3)." }
+  ],
+  "outputType": "workflow",
+  "purpose": "Diagnostic and large-volume therapeutic paracentesis — site selection, the Z-track technique, the SBP diagnostic threshold, and when post-procedure albumin replacement is indicated.",
+  "entryPrompt": "Coagulopathy is rarely a true contraindication here — most cirrhotic patients have an abnormal INR at baseline and paracentesis is still considered safe without prophylactic correction in the absence of clinically overt bleeding or DIC.",
+  "nodes": [
+    {
+      "id": "site",
+      "type": "step",
+      "prompt": "1. Site selection",
+      "body": "Left lower quadrant, lateral to the rectus sheath (avoids the inferior epigastric vessels that run within the rectus sheath), is generally preferred over the right lower quadrant since the cecum is more mobile/distensible than a fixed structure on the left, and bowel is more easily displaced away from the needle path. Avoid the midline (risk of encountering the falciform ligament/adherent bowel from prior surgery), old surgical scars (adhesions increase bowel-injury risk), visible collateral veins, and areas of cellulitis. Ultrasound to confirm a fluid pocket and mark the site immediately before the procedure improves safety and success, especially with a smaller volume of ascites."
+    },
+    {
+      "id": "technique",
+      "type": "step",
+      "prompt": "2. Z-track technique",
+      "body": "After local anesthesia, pull the skin taut and displace it 1-2 cm relative to the deeper tissue before inserting the needle, then advance in stages, releasing the skin traction once through the peritoneum. This creates a zigzag (not straight) tract through the abdominal wall layers that tends to seal itself once the needle is withdrawn and the skin released — reducing the risk of persistent post-procedure ascitic fluid leak, which is a genuine nuisance complication when skipped."
+    },
+    {
+      "id": "drainage",
+      "type": "step",
+      "prompt": "3. Drainage",
+      "body": "Diagnostic: 30-50 mL is generally sufficient. Large-volume therapeutic paracentesis: several liters can be safely removed in one session using a vacuum-bottle or wall-suction system with a catheter (rather than a rigid needle left in place, which risks bowel injury as the abdomen decompresses and organs shift). There is no universally mandated maximum volume, but very large-volume taps (> 5 L) are where post-paracentesis circulatory dysfunction becomes a real consideration — see below."
+    },
+    {
+      "id": "albumin",
+      "type": "step",
+      "prompt": "4. Albumin replacement for large-volume taps",
+      "body": "For volumes removed beyond about 5 liters, give IV albumin (commonly cited as roughly 6-8 g per liter removed beyond that threshold) to reduce the risk of post-paracentesis circulatory dysfunction — a drop in effective circulating volume that can precipitate hepatorenal syndrome or worsening renal function. Below ~5 L, albumin is generally not required. This is a real, guideline-supported practice, not a soft suggestion — skipping it on a large-volume tap in a cirrhotic patient is a recognized way to precipitate AKI."
+    },
+    {
+      "id": "sbp",
+      "type": "recommendation",
+      "prompt": "Diagnosing spontaneous bacterial peritonitis (SBP)",
+      "body": "SBP is diagnosed by an ascitic fluid polymorphonuclear (PMN, i.e. neutrophil) count ≥ 250 cells/mm³ — this threshold alone is diagnostic and treatment should start empirically once it's met, REGARDLESS of whether culture is positive or what the culture eventually shows (culture-negative neutrocytic ascites is treated the same as culture-positive SBP). Don't wait for culture results to start antibiotics when the PMN count already meets threshold. The serum-ascites albumin gradient (SAAG) — serum albumin minus ascitic fluid albumin — helps distinguish portal-hypertensive ascites (SAAG ≥ 1.1 g/dL, e.g. cirrhosis, heart failure) from non-portal-hypertensive causes (SAAG < 1.1 g/dL, e.g. malignancy, infection, pancreatitis) but is a separate question from the SBP diagnosis itself."
+    }
+  ],
+  "checklist": [
+    "Site chosen in the left lower quadrant lateral to the rectus sheath, away from scars/collaterals; ultrasound-marked immediately before the procedure",
+    "Z-track technique used to reduce post-procedure leak",
+    "Catheter (not rigid needle left in place) used for large-volume drainage",
+    "Albumin given for volumes removed beyond ~5 L",
+    "Fluid sent for cell count/differential (PMN ≥ 250 = SBP regardless of culture), albumin (for SAAG), culture, and other studies as indicated"
+  ],
+  "crossLinks": ["meld-na", "aki-staging-rrt", "empiric-antibiotics-ed-icu"],
+  "buildNote": "workflow outputType. The 5L/albumin-dosing figures are the commonly-cited practice numbers from AASLD/EASL guidance — flagged for institutional-protocol confirmation the same way meropenem's renal table was, since exact albumin dosing conventions vary somewhat by source."
+}

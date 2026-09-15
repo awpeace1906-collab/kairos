@@ -1,0 +1,91 @@
+{
+  "id": "pediatric-burn-management",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Pediatric Burn Management",
+  "settingEmphasis": ["ed", "icu"],
+  "audience": ["peds"],
+  "aliases": ["Lund-Browder chart", "peds Parkland formula", "Galveston formula", "pediatric TBSA"],
+  "tags": ["burns", "TBSA", "fluid resuscitation", "Lund-Browder", "peds", "ED"],
+  "keywords": ["Lund-Browder head starts at 19 percent in infants versus 7 in adults", "add maintenance fluid on top of resuscitation fluid — kids can't do this without it, low glycogen reserve", "burn center referral over 10 percent TBSA or any critical area regardless of size", "all significant peds burns get an accidental-vs-non-accidental trauma screen"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Lund CC, Browder NC. The estimation of areas of burns. Surg Gynecol Obstet. 1944;79:352-358 (original chart).",
+    "Fluid Resuscitation of Severely Burned Children (Galveston formula, maintenance-fluid literature).",
+    "American Burn Association. Guidelines for Burn Patient Referral (2018 update)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3). The existing parkland-formula card is confirmed adult-oriented (no maintenance-fluid addition, no Lund-Browder table) — this module fills the peds-specific gaps rather than duplicating that card's resuscitation-volume math, which still applies at any age. Lund-Browder age-banded percentages WebSearch-verified across multiple independent source fragments before being assembled into one table." }
+  ],
+  "kind": "reference",
+  "ageRange": "Birth through adolescence — the Lund-Browder table below is specifically what makes this tool age-sensitive where the adult rule of nines is not",
+  "purpose": "The pediatric-specific parts of burn management that the adult-oriented parkland-formula card doesn't cover: accurate %TBSA estimation in a child (the rule of nines is wrong for kids), the maintenance-fluid addition kids need that adults don't, and burn-center referral thresholds.",
+  "sourceOfTruth": ["parkland-formula"],
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why the adult rule of nines doesn't work in children"
+    },
+    {
+      "type": "text",
+      "text": "A young child's head is proportionally much larger, and their legs proportionally much smaller, than an adult's — using the adult rule of nines on a toddler overestimates leg burns and badly underestimates head/scalp burns. The Lund-Browder chart corrects for this by scaling the head and leg percentages with age."
+    },
+    {
+      "type": "table",
+      "columns": ["Region", "Age 0 (infant)", "Age 1", "Age 5", "Age 10", "Age 15", "Adult"],
+      "rows": [
+        ["Head (each)", "19%", "17%", "13%", "11%", "9%", "7%"],
+        ["Each thigh", "5.5%", "6.5%", "8%", "8.5%", "9%", "9.5%"],
+        ["Each lower leg", "5%", "5%", "5.5%", "6%", "6.5%", "7%"]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "All other regions (trunk, arms, neck, genitalia) are essentially constant across ages in the Lund-Browder chart and match the standard rule-of-nines figures — it's specifically the head and legs that shift with growth. Use the nearest age band; interpolate if the child's age falls between two rows."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fluid resuscitation — the same formula PLUS something adults don't need"
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "The resuscitation-volume math itself (4 mL/kg/%TBSA lactated Ringer's, half over the first 8 hours, rest over 16 — see the parkland-formula card) is the same formula at any age. What's missing if you stop there in a child: kids have low glycogen reserves and can become hypoglycemic during burn resuscitation if given ONLY resuscitation fluid with no dextrose-containing maintenance fluid running alongside it. A plain adult-style Parkland calculation, run in isolation, under-resuscitates a child's actual fluid needs."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Add weight-based maintenance fluid (Holliday-Segar: 4 mL/kg/h for the first 10 kg + 2 mL/kg/h for the next 10 kg + 1 mL/kg/h for each kg above 20) running separately alongside the resuscitation fluid — this maintenance fluid is typically dextrose-containing (e.g. D5 in a dilute saline solution) specifically to cover the hypoglycemia risk, while the resuscitation fluid itself stays lactated Ringer's without dextrose.",
+        "The Galveston formula is an alternative, body-surface-area-based approach purpose-built for pediatric burns that bundles resuscitation and maintenance into one calculation (5000 mL × %TBSA × BSA[m²] + 2000 mL × BSA[m²] for the first 24 hours) — some pediatric burn centers prefer it over a Parkland-plus-maintenance approach; know which convention your receiving burn center uses if transferring.",
+        "Titrate to urine output of 1 mL/kg/h in children under 30 kg (vs. 0.5 mL/kg/h in adults) — already noted on the parkland-formula card, restated here because it's easy to under-shoot if defaulting to the adult target out of habit."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Burn center referral — lower threshold in children"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Partial-thickness or deeper burns > 10% TBSA (vs. the general adult threshold, which is similar but children tolerate a given %TBSA worse than adults of the same nominal burn size).",
+        "ANY burn — regardless of %TBSA — involving the face, hands, feet, genitalia/perineum, or major joints, or any full-thickness (3rd degree) burn at any size.",
+        "Electrical, chemical, or inhalation injury.",
+        "Circumferential burns (extremity or torso) — risk of compartment syndrome/restrictive ventilation as edema develops; escharotomy may become necessary.",
+        "A notably LOWER bar for referral consideration in young children even below the 10% threshold — pain control, frequent dressing changes, and family/caregiver support needs alone are often enough reason in a young child, independent of burn severity."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Every pediatric burn evaluation includes a screen for non-accidental trauma — pattern (stocking/glove distribution, clear immersion lines, symmetric/bilateral burns, sharply demarcated borders), a history inconsistent with the child's developmental stage or the injury pattern, and delayed presentation are all red flags. This is a routine part of the workup, not an accusation reserved for suspicious-looking cases."
+      }
+  ],
+  "buildNote": "kind: reference. Deliberately scoped to NOT duplicate parkland-formula's resuscitation-volume computation — sourceOfTruth points there for the actual math, this module supplies the Lund-Browder table, the maintenance-fluid addition, and referral criteria that card doesn't cover. peds-tool has no related[] field — cross-link to parkland-formula noted via sourceOfTruth (a real schema field, not prose) plus in the purpose/body text."
+}

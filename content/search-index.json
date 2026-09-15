@@ -497,6 +497,31 @@
       ]
     },
     {
+      "id": "edacs",
+      "title": "EDACS (Emergency Department Assessment of Chest Pain Score)",
+      "section": "Calculators",
+      "category": "Cardiovascular / Chest Pain / Arrhythmia",
+      "tags": [
+        "chest pain",
+        "ACS",
+        "rule-out",
+        "accelerated diagnostic pathway",
+        "ED"
+      ],
+      "keywords": [
+        "low risk under 16 points plus no new ischemia plus negative 0/2h troponin",
+        "male +6 diaphoresis +3 radiation +5",
+        "pleuritic and palpation-reproducible pain subtract points",
+        "EDACS-ADP",
+        "chest pain accelerated diagnostic pathway"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/cardiovascular-chest-pain-arrhythmia/edacs",
+      "settingEmphasis": [
+        "ed"
+      ]
+    },
+    {
       "id": "grace-acs",
       "title": "GRACE ACS Risk / Mortality Calculator",
       "section": "Calculators",
@@ -631,6 +656,35 @@
       "route": "/calculators/cardiovascular-chest-pain-arrhythmia/timi-nstemi",
       "settingEmphasis": [
         "ed"
+      ]
+    },
+    {
+      "id": "timi-stemi",
+      "title": "TIMI Risk Score for STEMI",
+      "section": "Calculators",
+      "category": "Cardiovascular / Chest Pain / Arrhythmia",
+      "tags": [
+        "STEMI",
+        "TIMI",
+        "mortality risk",
+        "ACS",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "0-14 points age 65-74 2pts 75+ 3pts",
+        "SBP under 100 is 3 points",
+        "Killip II-IV 2 points",
+        "anterior MI or LBBB 1 point",
+        "distinguish from the existing TIMI NSTEMI score already in Kairos",
+        "TIMI STEMI risk score",
+        "thrombolysis in myocardial infarction STEMI"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/cardiovascular-chest-pain-arrhythmia/timi-stemi",
+      "settingEmphasis": [
+        "ed",
+        "icu"
       ]
     },
     {
@@ -805,6 +859,35 @@
       ],
       "contentType": "calculator",
       "route": "/calculators/gi-renal-metabolic/child-pugh",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "ckd-epi-egfr",
+      "title": "CKD-EPI 2021 eGFR",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "renal function",
+        "eGFR",
+        "CKD staging",
+        "kidney disease",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "2021 race-free equation removed the Black-race coefficient",
+        "CKD G1-G5 staging",
+        "for CKD diagnosis and staging use this, not Cockcroft-Gault",
+        "eGFR",
+        "estimated glomerular filtration rate",
+        "race-free CKD-EPI",
+        "CKD staging"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/ckd-epi-egfr",
       "settingEmphasis": [
         "ed",
         "icu"
@@ -1795,6 +1878,63 @@
       "route": "/calculators/pulmonary-pe-dvt-resp-failure/curb-65",
       "settingEmphasis": [
         "ed"
+      ]
+    },
+    {
+      "id": "decaf-score",
+      "title": "DECAF Score",
+      "section": "Calculators",
+      "category": "Pulmonary / PE / DVT / Resp Failure",
+      "tags": [
+        "COPD",
+        "AECOPD",
+        "mortality risk",
+        "dyspnea",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "extended MRC dyspnea scale 5a versus 5b",
+        "eosinopenia under 0.05",
+        "acidemia pH under 7.3",
+        "low risk 0-1 intermediate 2 high risk 3-6",
+        "Dyspnea Eosinopenia Consolidation Acidemia atrial Fibrillation score",
+        "COPD exacerbation mortality score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/pulmonary-pe-dvt-resp-failure/decaf-score",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "lights-criteria",
+      "title": "Light's Criteria (Pleural Effusion)",
+      "section": "Calculators",
+      "category": "Pulmonary / PE / DVT / Resp Failure",
+      "tags": [
+        "pleural effusion",
+        "exudate",
+        "transudate",
+        "thoracentesis",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "ANY one criterion positive means exudate",
+        "protein ratio over 0.5",
+        "LDH ratio over 0.6",
+        "pleural LDH over two-thirds ULN serum LDH",
+        "misclassifies 25-30 percent of heart-failure transudates as exudate — use albumin gradient if suspicious",
+        "exudate vs transudate",
+        "pleural fluid analysis"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/pulmonary-pe-dvt-resp-failure/lights-criteria",
+      "settingEmphasis": [
+        "ed",
+        "icu"
       ]
     },
     {
@@ -3325,6 +3465,12 @@
       "settingEmphasis": [
         "ed",
         "icu"
+      ],
+      "crossListIn": [
+        {
+          "section": "Calculators",
+          "category": "GI / Renal / Metabolic"
+        }
       ]
     },
     {
@@ -5477,6 +5623,39 @@
       ]
     },
     {
+      "id": "pediatric-burn-management",
+      "title": "Pediatric Burn Management",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "burns",
+        "TBSA",
+        "fluid resuscitation",
+        "Lund-Browder",
+        "peds",
+        "ED"
+      ],
+      "keywords": [
+        "Lund-Browder head starts at 19 percent in infants versus 7 in adults",
+        "add maintenance fluid on top of resuscitation fluid — kids can't do this without it, low glycogen reserve",
+        "burn center referral over 10 percent TBSA or any critical area regardless of size",
+        "all significant peds burns get an accidental-vs-non-accidental trauma screen",
+        "Lund-Browder chart",
+        "peds Parkland formula",
+        "Galveston formula",
+        "pediatric TBSA"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/pediatric-burn-management",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
       "id": "peds-cardiac-arrest",
       "title": "Pediatric Cardiac Arrest — Numbers Card (PALS)",
       "section": "Peds Module",
@@ -5519,6 +5698,41 @@
           "section": "Reference Library",
           "category": "Resuscitation & Airway"
         }
+      ]
+    },
+    {
+      "id": "peds-difficult-airway",
+      "title": "Pediatric Difficult Airway Approach",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "difficult airway",
+        "CICO",
+        "cricothyrotomy",
+        "peds",
+        "ED",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "under 8 needle cric first line per DAS 2015, scalpel only if needle fails",
+        "over 8 scalpel technique for all front-of-neck access",
+        "size matters more than exact age at the transition",
+        "large occiput floppy epiglottis cephalad larynx obligate nose breathers under 6 months",
+        "peds CICO",
+        "pediatric needle cricothyrotomy",
+        "peds surgical airway",
+        "DAS paediatric guidelines"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-difficult-airway",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or"
+      ],
+      "audience": [
+        "peds"
       ]
     },
     {
@@ -5812,6 +6026,125 @@
       ]
     },
     {
+      "id": "arthrocentesis",
+      "title": "Arthrocentesis (Joint Aspiration)",
+      "section": "Procedures",
+      "category": "Aspiration & Drainage Procedures",
+      "tags": [
+        "arthrocentesis",
+        "septic arthritis",
+        "joint aspiration",
+        "synovial fluid",
+        "ED",
+        "procedure"
+      ],
+      "keywords": [
+        "synovial WBC over 50000 with over 90 percent PMN concerning for septic arthritis, no single cutoff rules it out",
+        "crystal exam under polarized light distinguishes gout negative birefringent needles from pseudogout positive birefringent rhomboids",
+        "knee lateral or medial midpatellar approach most common",
+        "prosthetic joint suspected infection needs orthopedic involvement not a routine ED tap",
+        "joint aspiration",
+        "knee tap",
+        "septic arthritis workup"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/aspiration-drainage-procedures/arthrocentesis",
+      "settingEmphasis": [
+        "ed"
+      ]
+    },
+    {
+      "id": "lumbar-puncture",
+      "title": "Lumbar Puncture",
+      "section": "Procedures",
+      "category": "Aspiration & Drainage Procedures",
+      "tags": [
+        "lumbar puncture",
+        "CSF",
+        "meningitis",
+        "opening pressure",
+        "ED",
+        "ICU",
+        "procedure"
+      ],
+      "keywords": [
+        "intercristal line marks L4 or the L4-5 interspace, use L3-4 or L4-5, stays below the conus at any age",
+        "opening pressure normal 10-20 cmH2O adults, lateral decubitus with legs extended",
+        "traumatic tap versus true xanthochromia distinguish by tube 1 vs tube 4 RBC count",
+        "LP",
+        "spinal tap",
+        "CSF sampling"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/aspiration-drainage-procedures/lumbar-puncture",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "paracentesis",
+      "title": "Paracentesis",
+      "section": "Procedures",
+      "category": "Aspiration & Drainage Procedures",
+      "tags": [
+        "paracentesis",
+        "ascites",
+        "SBP",
+        "spontaneous bacterial peritonitis",
+        "SAAG",
+        "ED",
+        "ICU",
+        "procedure"
+      ],
+      "keywords": [
+        "Z-track technique reduces post-procedure ascitic fluid leak",
+        "left lower quadrant lateral to the rectus sheath, avoid old surgical scars and visible vessels",
+        "SBP diagnosis is ascitic fluid PMN count 250 or greater regardless of culture result",
+        "albumin 6-8g per liter removed beyond 5L to prevent post-paracentesis circulatory dysfunction",
+        "abdominal tap",
+        "SBP tap",
+        "large-volume paracentesis",
+        "albumin replacement paracentesis"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/aspiration-drainage-procedures/paracentesis",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "thoracentesis",
+      "title": "Thoracentesis",
+      "section": "Procedures",
+      "category": "Aspiration & Drainage Procedures",
+      "tags": [
+        "thoracentesis",
+        "pleural effusion",
+        "pneumothorax",
+        "ultrasound-guided",
+        "ED",
+        "ICU",
+        "procedure"
+      ],
+      "keywords": [
+        "ultrasound-guided reduces pneumothorax risk compared to blind landmark technique",
+        "above the rib not below — avoid the neurovascular bundle running along the rib's inferior margin",
+        "re-expansion pulmonary edema risk with large-volume rapid drainage, limit to roughly 1.5L or stop if symptoms develop",
+        "send fluid for Light's Criteria same visit",
+        "pleural tap",
+        "diagnostic thoracentesis",
+        "therapeutic thoracentesis"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/aspiration-drainage-procedures/thoracentesis",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "last-lipid-rescue",
       "title": "LAST — Recognition & Lipid Rescue",
       "section": "Procedures",
@@ -6073,6 +6406,37 @@
         "ed",
         "icu",
         "prehospital"
+      ]
+    },
+    {
+      "id": "ed-joint-reductions",
+      "title": "ED Joint Reductions — Shoulder, Elbow, Patella, Digit",
+      "section": "Procedures",
+      "category": "Wound & Fracture Care",
+      "tags": [
+        "dislocation",
+        "reduction",
+        "shoulder",
+        "nursemaid elbow",
+        "patella",
+        "digit",
+        "ED",
+        "procedure"
+      ],
+      "keywords": [
+        "hyperpronation first-line for nursemaid elbow, about 90 percent first-attempt success versus 74 percent for supination-flexion",
+        "scapular manipulation and external rotation don't need heavy sedation or traction-countertraction force",
+        "patella reduces with knee extension and gentle medial push, most reduce with straightening alone",
+        "always document neurovascular exam before AND after reduction",
+        "anterior shoulder dislocation reduction",
+        "nursemaid elbow reduction",
+        "patellar dislocation reduction",
+        "finger dislocation reduction"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/wound-fracture-care/ed-joint-reductions",
+      "settingEmphasis": [
+        "ed"
       ]
     },
     {
@@ -7373,6 +7737,34 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/critical-care/icp-tbi-management",
+      "settingEmphasis": [
+        "icu",
+        "ed"
+      ]
+    },
+    {
+      "id": "renal-dose-adjustment-critical-illness-antibiotics",
+      "title": "Renal Dose Adjustment — Critical-Illness Antibiotics",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "renal dosing",
+        "antibiotics",
+        "augmented renal clearance",
+        "CRRT",
+        "ICU"
+      ],
+      "keywords": [
+        "augmented renal clearance can under-dose a normal-CrCl regimen in young hyperdynamic sepsis",
+        "meropenem eGFR tiers 1g q12h 25-50 0.5g q12h under 25",
+        "vancomycin AUC-guided not trough-guided",
+        "CRRT effluent rate drives dosing more than native renal function",
+        "antibiotic renal dosing",
+        "augmented renal clearance",
+        "CRRT antibiotic dosing"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/renal-dose-adjustment-critical-illness-antibiotics",
       "settingEmphasis": [
         "icu",
         "ed"

@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 692,
+  "count": 720,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -486,6 +486,18 @@
           "title": "Acute Ischemic Stroke — Time-Based Algorithm",
           "section": "Reference Library",
           "route": "/reference-library/cardiac-ecg/acute-ischemic-stroke"
+        }
+      ]
+    },
+    {
+      "text": "American Burn Association. Guidelines for Burn Patient Referral (2018 update).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "pediatric-burn-management",
+          "title": "Pediatric Burn Management",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/pediatric-burn-management"
         }
       ]
     },
@@ -1030,6 +1042,18 @@
       ]
     },
     {
+      "text": "Difficult Airway Society (DAS) Paediatric Difficult Airway Guidelines, 2015 — covering ages 1-8 years, three algorithms: difficult mask ventilation, unanticipated difficult intubation, cannot intubate cannot oxygenate (CICO).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "peds-difficult-airway",
+          "title": "Pediatric Difficult Airway Approach",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-difficult-airway"
+        }
+      ]
+    },
+    {
       "text": "EAST Practice Management Guideline — Penetrating Zone II Neck Trauma; NCBI Bookshelf Neck Trauma (StatPearls)",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1114,6 +1138,18 @@
       ]
     },
     {
+      "text": "European Association for the Study of the Liver. EASL Clinical Practice Guidelines for the management of patients with decompensated cirrhosis.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "paracentesis",
+          "title": "Paracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/paracentesis"
+        }
+      ]
+    },
+    {
       "text": "FIGO AUB System 1 & 2 (PALM-COEIN); ACOG guidance on acute AUB in non-pregnant reproductive-age women",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1134,6 +1170,18 @@
           "title": "Pneumonia Severity Index (PSI / PORT)",
           "section": "Calculators",
           "route": "/calculators/sepsis-infectious-disease/psi-port"
+        }
+      ]
+    },
+    {
+      "text": "Focused review on management of the difficult paediatric airway. PMC (contemporary review discussing the needle-vs-surgical transition age and the lack of firm consensus above age 8).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "peds-difficult-airway",
+          "title": "Pediatric Difficult Airway Approach",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-difficult-airway"
         }
       ]
     },
@@ -1662,6 +1710,18 @@
           "title": "Traumatic Cardiac Arrest",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/traumatic-cardiac-arrest"
+        }
+      ]
+    },
+    {
+      "text": "Runyon BA. Management of adult patients with ascites due to cirrhosis: update 2012. AASLD Practice Guideline.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "paracentesis",
+          "title": "Paracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/paracentesis"
         }
       ]
     },
@@ -2476,6 +2536,18 @@
       ]
     },
     {
+      "text": "Margaretten ME, et al. Does this adult patient have septic arthritis? JAMA. 2007;297(13):1478-1488 (synovial fluid interpretation, no single WBC cutoff excludes septic arthritis).",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "arthrocentesis",
+          "title": "Arthrocentesis (Joint Aspiration)",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/arthrocentesis"
+        }
+      ]
+    },
+    {
       "text": "NICHD (Shankaran S et al. NEJM 2005), TOBY (Azzopardi DV et al. NEJM 2009), CoolCap (Gluckman PD et al. Lancet 2005)",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -2872,6 +2944,18 @@
       ]
     },
     {
+      "text": "Straus SE, et al. How do I perform a lumbar puncture and analyze the results to diagnose bacterial meningitis? JAMA. 2006;296(16):2012-2022.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "lumbar-puncture",
+          "title": "Lumbar Puncture",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/lumbar-puncture"
+        }
+      ]
+    },
+    {
       "text": "Subirà C, Hernández G, Vázquez A, et al. Effect of Pressure Support vs T-Piece Ventilation Strategies During Spontaneous Breathing Trials on Successful Extubation. JAMA. 2019;321(22):2175-2182",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -2892,6 +2976,18 @@
           "title": "Glasgow Coma Scale (GCS)",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/gcs"
+        }
+      ]
+    },
+    {
+      "text": "Than M, et al. Effectiveness of EDACS versus ADAPT accelerated diagnostic pathways for chest pain: a pragmatic randomized controlled trial. Ann Emerg Med. 2016;68(1):93-102.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "edacs",
+          "title": "EDACS (Emergency Department Assessment of Chest Pain Score)",
+          "section": "Calculators",
+          "route": "/calculators/cardiovascular-chest-pain-arrhythmia/edacs"
         }
       ]
     },
@@ -3100,6 +3196,18 @@
       ]
     },
     {
+      "text": "Cochrane review meta-analysis, hyperpronation vs. supination-flexion for nursemaid's elbow reduction — WebSearch-verified: hyperpronation ~90.8% vs. supination-flexion ~73.6% first-attempt success.",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "ed-joint-reductions",
+          "title": "ED Joint Reductions — Shoulder, Elbow, Patella, Digit",
+          "section": "Procedures",
+          "route": "/procedures/wound-fracture-care/ed-joint-reductions"
+        }
+      ]
+    },
+    {
       "text": "Cotton DM et al. pARC community-ED validation. Ann Emerg Med 2019;74(4):471-480",
       "group": "Cohort, registry & systematic reviews",
       "usedBy": [
@@ -3160,6 +3268,18 @@
       ]
     },
     {
+      "text": "DECAF versus CURB-65 to Foresee Mortality among Patients Presenting with an Acute Exacerbation of COPD (validation literature).",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "decaf-score",
+          "title": "DECAF Score",
+          "section": "Calculators",
+          "route": "/calculators/pulmonary-pe-dvt-resp-failure/decaf-score"
+        }
+      ]
+    },
+    {
       "text": "Flumazenil in Benzodiazepine Overdose. CMAJ. 2016;188(17-18):e537 (meta-analysis, NNH ~50)",
       "group": "Cohort, registry & systematic reviews",
       "usedBy": [
@@ -3180,6 +3300,18 @@
           "title": "Surgical Apgar Score",
           "section": "Calculators",
           "route": "/calculators/anesthesia-airway-or/surgical-apgar"
+        }
+      ]
+    },
+    {
+      "text": "Gordon CE, et al. Pneumothorax following thoracentesis: a systematic review and meta-analysis. Arch Intern Med. 2010;170(4):332-339 (ultrasound-guidance benefit).",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "thoracentesis",
+          "title": "Thoracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/thoracentesis"
         }
       ]
     },
@@ -3328,6 +3460,18 @@
       ]
     },
     {
+      "text": "Than M, et al. Development and validation of the Emergency Department Assessment of Chest pain Score and 2 h accelerated diagnostic protocol. Emerg Med Australas. 2014;26(1):34-41.",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "edacs",
+          "title": "EDACS (Emergency Department Assessment of Chest Pain Score)",
+          "section": "Calculators",
+          "route": "/calculators/cardiovascular-chest-pain-arrhythmia/edacs"
+        }
+      ]
+    },
+    {
       "text": "Toxicity of Synthetic Cannabinoids in K2/Spice: A Systematic Review. PMC, 2023",
       "group": "Cohort, registry & systematic reviews",
       "usedBy": [
@@ -3336,6 +3480,18 @@
           "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-cannabinoids-inhalants"
+        }
+      ]
+    },
+    {
+      "text": "Udy AA, et al. Augmented renal clearance in the ICU: results of a multicenter observational study. Crit Care Med. 2014;42(3):520-527.",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "renal-dose-adjustment-critical-illness-antibiotics",
+          "title": "Renal Dose Adjustment — Critical-Illness Antibiotics",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/renal-dose-adjustment-critical-illness-antibiotics"
         }
       ]
     },
@@ -5812,6 +5968,18 @@
       ]
     },
     {
+      "text": "Diagnostic Approach to Pleural Effusion in Adults. Am Fam Physician. 2006;73(7):1211-1220.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "lights-criteria",
+          "title": "Light's Criteria (Pleural Effusion)",
+          "section": "Calculators",
+          "route": "/calculators/pulmonary-pe-dvt-resp-failure/lights-criteria"
+        }
+      ]
+    },
+    {
       "text": "DiCarlo AL, et al. Cytokine therapy for the acute radiation syndrome (nplate/romiplostim, filgrastim, sargramostim FDA approvals for hematopoietic ARS)",
       "group": "Other primary sources",
       "usedBy": [
@@ -6154,6 +6322,18 @@
       ]
     },
     {
+      "text": "Fluid Resuscitation of Severely Burned Children (Galveston formula, maintenance-fluid literature).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pediatric-burn-management",
+          "title": "Pediatric Burn Management",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/pediatric-burn-management"
+        }
+      ]
+    },
+    {
       "text": "Fomepizole for Ethylene Glycol and Methanol Poisoning. N Engl J Med, 2009; EXTRIP toxic-alcohol recommendations",
       "group": "Other primary sources",
       "usedBy": [
@@ -6490,6 +6670,18 @@
       ]
     },
     {
+      "text": "Inker LA, et al. New Creatinine- and Cystatin C-Based Equations to Estimate GFR without Race. N Engl J Med. 2021;385(19):1737-1749.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ckd-epi-egfr",
+          "title": "CKD-EPI 2021 eGFR",
+          "section": "Calculators",
+          "route": "/calculators/gi-renal-metabolic/ckd-epi-egfr"
+        }
+      ]
+    },
+    {
       "text": "IPAL-ICU Project (CAPC) — Improving Palliative Care in the ICU, clinical and communication tools.",
       "group": "Other primary sources",
       "usedBy": [
@@ -6814,6 +7006,18 @@
       ]
     },
     {
+      "text": "Kuhn JE. Treating the initial anterior shoulder dislocation — an evidence-based medicine approach. Sports Med Arthrosc Rev. 2006 (reduction technique comparisons).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ed-joint-reductions",
+          "title": "ED Joint Reductions — Shoulder, Elbow, Patella, Digit",
+          "section": "Procedures",
+          "route": "/procedures/wound-fracture-care/ed-joint-reductions"
+        }
+      ]
+    },
+    {
       "text": "Lanoxin (digoxin) prescribing information — amiodarone co-administration data",
       "group": "Other primary sources",
       "usedBy": [
@@ -6870,6 +7074,18 @@
           "title": "Modified Duke Criteria — Infective Endocarditis",
           "section": "Reference Library",
           "route": "/reference-library/infectious-disease-immunization/modified-duke-criteria"
+        }
+      ]
+    },
+    {
+      "text": "Light RW, et al. Pleural effusions: the diagnostic separation of transudates and exudates. Ann Intern Med. 1972;77(4):507-513 (original criteria).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "lights-criteria",
+          "title": "Light's Criteria (Pleural Effusion)",
+          "section": "Calculators",
+          "route": "/calculators/pulmonary-pe-dvt-resp-failure/lights-criteria"
         }
       ]
     },
@@ -6966,6 +7182,18 @@
           "title": "Pericardiocentesis",
           "section": "Procedures",
           "route": "/procedures/vascular-thoracic-access/pericardiocentesis"
+        }
+      ]
+    },
+    {
+      "text": "Lund CC, Browder NC. The estimation of areas of burns. Surg Gynecol Obstet. 1944;79:352-358 (original chart).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pediatric-burn-management",
+          "title": "Pediatric Burn Management",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/pediatric-burn-management"
         }
       ]
     },
@@ -7228,6 +7456,18 @@
       ]
     },
     {
+      "text": "Morrow DA, et al. TIMI Risk Score for ST-Elevation Myocardial Infarction: A Convenient, Bedside, Clinical Score for Risk Assessment at Presentation. Circulation. 2000;102(17):2031-2037.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "timi-stemi",
+          "title": "TIMI Risk Score for STEMI",
+          "section": "Calculators",
+          "route": "/calculators/cardiovascular-chest-pain-arrhythmia/timi-stemi"
+        }
+      ]
+    },
+    {
       "text": "Moss MJ, Warrick BJ, Nelson LS, et al. ACMT/AACT Position Statement: Preventing Occupational Fentanyl Exposure. Clin Toxicol. 2018;56(4):297-300",
       "group": "Other primary sources",
       "usedBy": [
@@ -7236,6 +7476,18 @@
           "title": "Opioid Toxicity — Heroin, Fentanyl, Methadone, Buprenorphine",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-opioids"
+        }
+      ]
+    },
+    {
+      "text": "MR imaging determination of the location of the normal conus medullaris throughout childhood — confirms L3-4/L4-5 needle placement stays below the conus at any age, verified via WebSearch given the peds-relevant anatomy claim.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "lumbar-puncture",
+          "title": "Lumbar Puncture",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/lumbar-puncture"
         }
       ]
     },
@@ -7272,6 +7524,18 @@
           "title": "Venous Congestion, VExUS & De-resuscitation",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/venous-congestion-deresuscitation"
+        }
+      ]
+    },
+    {
+      "text": "National Kidney Foundation. CKD-EPI Creatinine Equation (2021).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ckd-epi-egfr",
+          "title": "CKD-EPI 2021 eGFR",
+          "section": "Calculators",
+          "route": "/calculators/gi-renal-metabolic/ckd-epi-egfr"
         }
       ]
     },
@@ -7870,6 +8134,30 @@
       ]
     },
     {
+      "text": "Roberts and Hedges' Clinical Procedures in Emergency Medicine, 7th ed. — Arthrocentesis chapter.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "arthrocentesis",
+          "title": "Arthrocentesis (Joint Aspiration)",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/arthrocentesis"
+        }
+      ]
+    },
+    {
+      "text": "Roberts and Hedges' Clinical Procedures in Emergency Medicine, 7th ed. — Joint reduction chapters.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ed-joint-reductions",
+          "title": "ED Joint Reductions — Shoulder, Elbow, Patella, Digit",
+          "section": "Procedures",
+          "route": "/procedures/wound-fracture-care/ed-joint-reductions"
+        }
+      ]
+    },
+    {
       "text": "Roberts JA, et al. DALI study — defining antibiotic levels in intensive care unit patients. Clin Infect Dis. 2014;58(8):1072-1083 (PK/PD rationale for extended infusion in critical illness).",
       "group": "Other primary sources",
       "usedBy": [
@@ -7890,6 +8178,12 @@
           "title": "Meropenem",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/antimicrobial-dosing/meropenem"
+        },
+        {
+          "id": "renal-dose-adjustment-critical-illness-antibiotics",
+          "title": "Renal Dose Adjustment — Critical-Illness Antibiotics",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/renal-dose-adjustment-critical-illness-antibiotics"
         }
       ]
     },
@@ -8290,6 +8584,18 @@
       ]
     },
     {
+      "text": "Standard renal dose-reduction table (eGFR-tiered) as commonly summarized in critical-care pharmacy references for meropenem; see that card's own sources for the primary citation.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "renal-dose-adjustment-critical-illness-antibiotics",
+          "title": "Renal Dose Adjustment — Critical-Illness Antibiotics",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/renal-dose-adjustment-critical-illness-antibiotics"
+        }
+      ]
+    },
+    {
       "text": "Standard renal dose-reduction table (eGFR-tiered) as commonly summarized in critical-care pharmacy references; confirm precise cutoffs against your institution's renal dosing protocol and current product labeling.",
       "group": "Other primary sources",
       "usedBy": [
@@ -8362,6 +8668,18 @@
       ]
     },
     {
+      "text": "Steer J, Gibson J, Bourke SC. The DECAF Score: predicting hospital mortality in exacerbations of chronic obstructive pulmonary disease. Thorax. 2012;67(11):970-976.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "decaf-score",
+          "title": "DECAF Score",
+          "section": "Calculators",
+          "route": "/calculators/pulmonary-pe-dvt-resp-failure/decaf-score"
+        }
+      ]
+    },
+    {
       "text": "Subbe CP et al. QJM 2001; widely adopted ward track-and-trigger tool (NEWS2 is the successor)",
       "group": "Other primary sources",
       "usedBy": [
@@ -8406,6 +8724,30 @@
           "title": "Capnography — Waveform Interpretation",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/capnography"
+        }
+      ]
+    },
+    {
+      "text": "Thomsen TW, et al. Videos in clinical medicine. Paracentesis. N Engl J Med. 2006;355(19):e21.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "paracentesis",
+          "title": "Paracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/paracentesis"
+        }
+      ]
+    },
+    {
+      "text": "Thomsen TW, et al. Videos in clinical medicine. Thoracentesis. N Engl J Med. 2006;355(15):e16.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "thoracentesis",
+          "title": "Thoracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/thoracentesis"
         }
       ]
     },

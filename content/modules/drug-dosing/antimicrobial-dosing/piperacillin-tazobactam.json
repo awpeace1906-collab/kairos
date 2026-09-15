@@ -34,5 +34,5 @@
     "The extended-infusion strategy uses the identical total daily dose as standard dosing — it's a delivery-method change, not a bigger dose, so it doesn't need a separate 'extended-infusion dose' number.",
     "A falsely elevated PT/aPTT and even bleeding have been reported with high-dose piperacillin-tazobactam via platelet dysfunction — worth remembering in a patient on it who develops unexplained bleeding or coagulation-panel derangement."
   ],
-  "buildNote": "anesthesia-drug-card contentType reused for a non-anesthesia fixed-dose antimicrobial — see the schema's updated description. Deliberately did not fabricate a precise CrCl-tiered renal dosing table; the extended-infusion standard-dose regimen is the well-established, confidently-sourced part of this card."
+  "buildNote": "anesthesia-drug-card contentType reused for a non-anesthesia fixed-dose antimicrobial — see the schema's updated description. Deliberately did not fabricate a precise CrCl-tiered renal dosing table; the extended-infusion standard-dose regimen is the well-established, confidently-sourced part of this card. See renal-dose-adjustment-critical-illness-antibiotics (Batch 3) for the fuller explanation of why — augmented renal clearance in this drug's typical sepsis population makes a fixed reduced-dose table actively risky."
 }

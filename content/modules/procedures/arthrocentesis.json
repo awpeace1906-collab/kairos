@@ -1,0 +1,60 @@
+{
+  "id": "arthrocentesis",
+  "section": "Procedures",
+  "category": "Aspiration & Drainage Procedures",
+  "title": "Arthrocentesis (Joint Aspiration)",
+  "settingEmphasis": ["ed"],
+  "aliases": ["joint aspiration", "knee tap", "septic arthritis workup"],
+  "tags": ["arthrocentesis", "septic arthritis", "joint aspiration", "synovial fluid", "ED", "procedure"],
+  "keywords": ["synovial WBC over 50000 with over 90 percent PMN concerning for septic arthritis, no single cutoff rules it out", "crystal exam under polarized light distinguishes gout negative birefringent needles from pseudogout positive birefringent rhomboids", "knee lateral or medial midpatellar approach most common", "prosthetic joint suspected infection needs orthopedic involvement not a routine ED tap"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Roberts and Hedges' Clinical Procedures in Emergency Medicine, 7th ed. — Arthrocentesis chapter.",
+    "Margaretten ME, et al. Does this adult patient have septic arthritis? JAMA. 2007;297(13):1478-1488 (synovial fluid interpretation, no single WBC cutoff excludes septic arthritis)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3)." }
+  ],
+  "outputType": "workflow",
+  "purpose": "Knee arthrocentesis technique (the most common ED joint aspiration) and how to interpret synovial fluid — cell count, crystal exam, and why no single WBC cutoff can fully exclude septic arthritis.",
+  "entryPrompt": "A suspected prosthetic joint infection is an orthopedic/infectious-disease co-management decision, not a routine ED aspiration — involve them before tapping a prosthetic joint.",
+  "nodes": [
+    {
+      "id": "indication",
+      "type": "step",
+      "prompt": "1. Indication and contraindications",
+      "body": "Indications: new atraumatic monoarticular joint effusion/pain (rule out septic arthritis and crystal arthropathy), known effusion with worsening pain/fever, or therapeutic drainage for a large tense effusion causing pain. Relative contraindications: overlying cellulitis or skin infection at the planned entry site (choose a different site or defer), significant coagulopathy (weigh risk/benefit — septic arthritis workup often still proceeds despite a mild coagulopathy given the stakes of a missed diagnosis), and a PROSTHETIC joint — suspected prosthetic joint infection needs orthopedic involvement rather than a routine ED tap, given the risk of seeding a sterile prosthesis and the different fluid-interpretation thresholds that apply."
+    },
+    {
+      "id": "technique",
+      "type": "step",
+      "prompt": "2. Knee arthrocentesis — the most common ED joint tap",
+      "body": "Position supine with the knee extended (or slightly flexed with a towel roll support, per patient comfort/effusion size). The lateral or medial midpatellar approach is most common: identify the midpoint of the patella, entry point roughly 1 cm lateral (or medial) and slightly inferior to that point, directing the needle posteriorly and slightly medially (or laterally) under the patella toward the intercondylar notch. Ultrasound guidance improves success for a small or difficult-to-localize effusion and is increasingly standard where available, especially for joints other than a large obviously-effused knee."
+    },
+    {
+      "id": "other-joints",
+      "type": "step",
+      "prompt": "3. Other joints — general principle",
+      "body": "The same core technique (sterile prep, local anesthesia, needle into the joint capsule at a site avoiding neurovascular structures, aspirate under gentle continuous suction) applies to the ankle, wrist, elbow, and shoulder, but each has its own specific landmarks and a higher difficulty/complication profile than the knee — use ultrasound guidance liberally for anything other than a large, easily-palpable knee effusion, and don't hesitate to involve a more experienced proceduralist for a technically difficult joint when the diagnosis is time-sensitive (suspected septic arthritis)."
+    },
+    {
+      "id": "interpretation",
+      "type": "recommendation",
+      "prompt": "4. Synovial fluid interpretation",
+      "body": "Send synovial fluid for cell count with differential, gram stain and culture, and crystal examination under polarized light microscopy. Rough interpretive bands: non-inflammatory (WBC < 2,000/mm³ — osteoarthritis, trauma), inflammatory (WBC 2,000-50,000/mm³ — gout, pseudogout, rheumatoid arthritis, reactive arthritis), and septic (WBC > 50,000/mm³ with a high percentage of PMNs, classically > 90%, raises real concern) — but NO single WBC cutoff reliably excludes septic arthritis on its own; a synovial WBC well below 50,000 does not rule it out, particularly early in the course, in a partially-treated patient (recent antibiotics), or in an immunocompromised host. Crystal exam distinguishes gout (needle-shaped, negatively birefringent crystals) from pseudogout/CPPD (rhomboid-shaped, positively birefringent crystals) — importantly, finding crystals does NOT exclude a concurrent septic joint; both can coexist, and a high enough clinical suspicion for infection should drive empiric treatment regardless of a positive crystal exam."
+    }
+  ],
+  "checklist": [
+    "Prosthetic joint screened for and orthopedics involved if present, rather than a routine ED tap",
+    "Sterile technique with a site avoiding overlying cellulitis and named neurovascular structures",
+    "Fluid sent for cell count/differential, gram stain/culture, AND crystal exam — not just one or two of the three",
+    "Remembered that crystals seen do not exclude a concurrent septic joint",
+    "Empiric treatment for suspected septic arthritis not withheld solely because the synovial WBC is below 50,000"
+  ],
+  "crossLinks": ["empiric-antibiotics-ed-icu", "lights-criteria"],
+  "buildNote": "workflow outputType. Cross-linked to lights-criteria not because the criteria transfer directly (they don't — different fluid, different thresholds) but because both are 'send this fluid, interpret it against a threshold' procedures built in the same batch, and a user reading one may reasonably look for the other. Joint reductions (a separate, non-aspiration procedure) intentionally NOT folded in here — see the new ed-joint-reductions module."
+}

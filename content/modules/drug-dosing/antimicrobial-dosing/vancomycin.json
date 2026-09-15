@@ -37,5 +37,5 @@
   "contraindications": [
     "Known vancomycin anaphylaxis (true IgE-mediated allergy — distinct from vancomycin infusion reaction / 'red man syndrome', which is rate-related histamine release, not a true allergy, and is managed by slowing the infusion rather than avoiding the drug)"
   ],
-  "buildNote": "Loading dose is a clean per-kg rule; maintenance dosing is deliberately framed as an empiric starting point rather than a precise computed number, since real maintenance dosing is AUC/level-guided, not a fixed formula — encoding a false-precision maintenance number would misrepresent current practice."
+  "buildNote": "Loading dose is a clean per-kg rule; maintenance dosing is deliberately framed as an empiric starting point rather than a precise computed number, since real maintenance dosing is AUC/level-guided, not a fixed formula — encoding a false-precision maintenance number would misrepresent current practice. See renal-dose-adjustment-critical-illness-antibiotics (Batch 3) for why vancomycin isn't in that reference's CrCl-tiered table."
 }

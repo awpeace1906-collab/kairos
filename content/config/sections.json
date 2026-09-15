@@ -24,6 +24,10 @@
         {
           "id": "vascular-thoracic-access",
           "title": "Vascular & Thoracic Access"
+        },
+        {
+          "id": "aspiration-drainage",
+          "title": "Aspiration & Drainage Procedures"
         }
       ]
     },

@@ -1,0 +1,98 @@
+{
+  "id": "edacs",
+  "section": "Calculators",
+  "category": "Cardiovascular / Chest Pain / Arrhythmia",
+  "title": "EDACS (Emergency Department Assessment of Chest Pain Score)",
+  "settingEmphasis": ["ed"],
+  "aliases": ["EDACS-ADP", "chest pain accelerated diagnostic pathway"],
+  "tags": ["chest pain", "ACS", "rule-out", "accelerated diagnostic pathway", "ED"],
+  "keywords": ["low risk under 16 points plus no new ischemia plus negative 0/2h troponin", "male +6 diaphoresis +3 radiation +5", "pleuritic and palpation-reproducible pain subtract points"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Than M, et al. Development and validation of the Emergency Department Assessment of Chest pain Score and 2 h accelerated diagnostic protocol. Emerg Med Australas. 2014;26(1):34-41.",
+    "Than M, et al. Effectiveness of EDACS versus ADAPT accelerated diagnostic pathways for chest pain: a pragmatic randomized controlled trial. Ann Emerg Med. 2016;68(1):93-102."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3). Point values verified via WebSearch against the original 2014 derivation paper before building." }
+  ],
+  "engine": "additive",
+  "purpose": "Risk-stratify ED chest pain for possible early discharge without stress testing, when combined with two negative troponins 2 hours apart and no new ischemia on ECG (the full EDACS-ADP).",
+  "notes": "EDACS alone gives the score below. The full accelerated diagnostic pathway (EDACS-ADP) requires ALL THREE: EDACS < 16, no new ischemic changes on ECG, and troponin negative at both 0h and 2h. Any one of those failing means the patient is NOT low risk regardless of the EDACS number — this calculator scores EDACS only, it does not track the ECG/troponin arms for you.",
+  "items": [
+    {
+      "key": "age",
+      "label": "Age",
+      "options": [
+        { "label": "18-45", "points": 2 },
+        { "label": "46-50", "points": 4 },
+        { "label": "51-55", "points": 6 },
+        { "label": "56-60", "points": 8 },
+        { "label": "61-65", "points": 10 },
+        { "label": "66-70", "points": 12 },
+        { "label": "71-75", "points": 14 },
+        { "label": "76-80", "points": 16 },
+        { "label": "81-85", "points": 18 },
+        { "label": "86 or older", "points": 20 }
+      ]
+    },
+    {
+      "key": "sex",
+      "label": "Sex",
+      "options": [
+        { "label": "Female", "points": 0 },
+        { "label": "Male", "points": 6 }
+      ]
+    },
+    {
+      "key": "cadRisk",
+      "label": "Known coronary artery disease, OR ≥ 3 risk factors (HTN, hyperlipidemia, diabetes, current smoker, family history of premature CAD)",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": 4 }
+      ]
+    },
+    {
+      "key": "diaphoresis",
+      "label": "Diaphoresis",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": 3 }
+      ]
+    },
+    {
+      "key": "radiation",
+      "label": "Pain radiates to arm, shoulder, neck, or jaw",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": 5 }
+      ]
+    },
+    {
+      "key": "pleuritic",
+      "label": "Pain occurs with, or is worsened by, inspiration",
+      "help": "An atypical feature — subtracts points.",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": -4 }
+      ]
+    },
+    {
+      "key": "palpation",
+      "label": "Pain is reproduced by palpation",
+      "help": "An atypical feature — subtracts points.",
+      "options": [
+        { "label": "No", "points": 0 },
+        { "label": "Yes", "points": -6 }
+      ]
+    }
+  ],
+  "interpretation": [
+    { "min": -10, "max": 15, "label": "Low risk (< 16)", "detail": "Eligible for the EDACS-ADP IF also no new ischemia on ECG AND troponin negative at both 0h and 2h. Meeting all three supports early discharge without provocative testing.", "severity": "low" },
+    { "min": 16, "max": 40, "label": "Not low risk (≥ 16)", "detail": "Does not qualify for the accelerated pathway regardless of ECG/troponin results — manage per standard ACS workup.", "severity": "moderate" }
+  ],
+  "buildNote": "engine: additive with the age band represented as a 10-option select item, matching the ASPECTS/Bishop/Child-Pugh pattern from prior batches rather than a formula-engine step function — this is how the score is actually presented and used at the bedside (pick your band, don't compute). Companion to heart-score / modified-shock-index; not a replacement for either."
+}
