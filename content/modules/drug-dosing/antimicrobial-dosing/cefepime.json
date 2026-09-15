@@ -1,0 +1,37 @@
+{
+  "id": "cefepime",
+  "section": "Drug & Dosing Cards",
+  "category": "Antimicrobial Dosing",
+  "title": "Cefepime",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["Maxipime", "cefepime neurotoxicity"],
+  "tags": ["antibiotic", "cephalosporin", "neurotoxicity", "renal dosing", "ED", "ICU"],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2026-12-14",
+  "review_tier": 1,
+  "sources": [
+    "Payne LE, et al. Cefepime-induced neurotoxicity: a systematic review. Crit Care. 2017;21(1):276.",
+    "Boschung-Pasquier L, et al. Cefepime neurotoxicity: thresholds and risk factors — a retrospective cohort study. Clin Microbiol Infect. 2020;26(3):333-339."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap. The neurotoxicity risk is the reason this card earns its place even though cefepime coverage overlaps other agents already in the empiric-antibiotic references — it's a distinctive, underrecognized, and specifically actionable safety issue." }
+  ],
+  "drugClass": "antimicrobial",
+  "drugClassLabel": "Antimicrobial — 4th-generation cephalosporin",
+  "mechanism": "Broad-spectrum 4th-generation cephalosporin with good gram-negative coverage including Pseudomonas, plus reasonable gram-positive coverage — a common empiric choice for febrile neutropenia and hospital-acquired/health-care-associated infections.",
+  "onset": "Within the first infusion.",
+  "duration": "Redosed every 8-12 h at standard renal function; interval/dose narrows sharply as renal function falls — see cautions.",
+  "dosing": "Standard (normal renal function, CrCl > 60): 2 g IV q8h for severe infection (e.g. febrile neutropenia, Pseudomonas coverage); 2 g q12h or 1 g q12h for less severe infection.\nRenal impairment (CrCl ≤ 60): dose and/or interval reduction is REQUIRED — confirm against your institution's renal dosing protocol or current product labeling for the exact tier, since getting this wrong is the single biggest driver of the neurotoxicity described below. Do not simply continue a standard-renal-function regimen and plan to reassess later.",
+  "cautions": [
+    "CI: known cefepime/cephalosporin anaphylaxis.",
+    "AEs — cefepime-induced neurotoxicity (CIN): this is the defining safety issue for this drug. Reported in up to ~15% of medical ICU patients receiving it, presenting as altered mental status, confusion, myoclonus, or non-convulsive status epilepticus — it is frequently misattributed to sepsis, delirium, or the underlying illness rather than recognized as drug-induced. Renal impairment, advanced age, and pre-existing brain injury are the major risk factors, but CIN has also been reported in patients with normal renal function.",
+    "Even RENALLY-ADJUSTED dosing does not eliminate the risk — neurotoxicity has been reported in roughly a quarter of cases despite an appropriately reduced dose. If a patient on cefepime develops new confusion, myoclonus, or unexplained mental status change, cefepime neurotoxicity belongs on the differential regardless of whether the dose was 'correct' — check a level or empirically hold/switch the drug if suspicion is genuine, and consider EEG if non-convulsive status is a concern."
+  ],
+  "pearls": [
+    "Think of unexplained new confusion or myoclonus in an ICU patient on cefepime as drug-induced until proven otherwise — it's a common, underrecognized, and reversible cause of exactly the picture that gets written off as 'sepsis-associated encephalopathy.'",
+    "Symptoms typically improve within 2-3 days of stopping the drug, faster with dialysis in renal failure — this reversibility is itself a useful diagnostic clue in a trial-of-discontinuation sense."
+  ],
+  "buildNote": "anesthesia-drug-card contentType reused for a fixed-dose antimicrobial. Deliberately led with the neurotoxicity content rather than treating it as a minor caution — it's the clinically distinctive, actionable reason this card exists."
+}

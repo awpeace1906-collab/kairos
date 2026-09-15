@@ -49,6 +49,72 @@ list):
    POCUS exam trees).
 
 ## Progress log
+- 2026-09-14 — **Content audit Batch 2 shipped (→ 341 modules).** All eight
+  Batch 2 items from the priority scope, plus one mid-batch addition the user
+  asked for directly. Calculators/Obstetric-Newborn: `bishop-score` (additive,
+  0-13, unfavorable/intermediate/favorable bands), `preeclampsia-severe-
+  features` (additive engine repurposed for any-one-positive checklist logic
+  rather than a threshold score — `notes` field documents that reuse; also
+  carries the Mississippi Triple-Class HELLP system), `postpartum-hemorrhage-
+  staging` (`engine: classification`, matching `killip-classification`'s
+  tiers[] pattern — CMQCC Stage 0-3 with EBL thresholds and escalation
+  actions per stage). Verified along the way that the audit's "no Obstetric/
+  Newborn category" and "no scored APGAR" findings were both **false
+  positives** — `ob-newborn` already existed in `sections.json` and
+  `apgar-score` already cross-lists into it via `crossListIn` +
+  `embeddedCalculator`; corrected rather than duplicated. `child-pugh`
+  (additive, Class A/B/C) and `modified-rankin-scale` (`engine:
+  classification`, tiers 0-6, with a note on mRS 0-1 as typical thrombectomy-
+  trial enrollment and mRS 0-2 at 90 days as the standard "good outcome"
+  threshold) round out Calculators. **New Antimicrobial Dosing category**
+  added to Drug & Dosing Cards (`sections.json`) after the user asked mid-
+  batch to check antimicrobial dosing coverage more broadly, not just one
+  drug: `vancomycin` (drug-card, weight-based loading + AUC-guided
+  maintenance — hit two schema validation errors along the way, missing
+  `purpose` and a disallowed top-level `cautions` key that doesn't exist on
+  `drug-card.schema.json`, both fixed), `piperacillin-tazobactam` and
+  `meropenem` (extended-infusion dosing strategy, renal adjustment — pip-
+  tazo's given qualitatively per source rather than a fabricated CrCl table,
+  meropenem's given as a sourced table with an explicit "confirm locally"
+  caveat since a real table was actually found), `cefepime` (leads with
+  cefepime-induced neurotoxicity as the defining safety issue — occurs in
+  ~15% of medical ICU patients, in ~26% of cases *despite* correct renal
+  dosing, reversible in 2-3 days off the drug). These three fixed-dose
+  antibiotics didn't fit either drug schema (`drug-card` requires per-kg
+  dosing; `anesthesia-drug-card`'s `drugClass` enum had no antimicrobial
+  option) — extended `anesthesia-drug-card.schema.json`'s `drugClass` enum
+  with `"antimicrobial"` after grepping both clients to confirm `drugClass`
+  drives zero rendering/color logic (only the free-text `drugClassLabel`
+  does), a safe minimal schema change. Reference Library: `transfusion-
+  reactions` (AHTR, FNHTR, allergic/anaphylactic, delayed hemolytic,
+  transfusion sepsis, TA-GVHD, plus a TRALI-vs-TACO comparison table since
+  those two are easy to confuse and need near-opposite management —
+  cross-linked into `blood-products`' `related[]`). `acute-ischemic-stroke`
+  currency update: replaced a vague "see the HOPE trial" wake-up-stroke
+  mention with the actual verified 2026 AHA/ASA guideline position — a new
+  Class 2a recommendation for IV thrombolysis 4.5-9h post-onset or wake-up
+  stroke with advanced-imaging (DWI-FLAIR/perfusion mismatch) selection,
+  sourced to TRACE-III/EXTEND/WAKE-UP; also updated tenecteplase to reflect
+  the 2026 guideline endorsing it as equivalent to alteplase across the full
+  4.5h window, not just pre-thrombectomy. Peds Module: `bronchiolitis-
+  management` (AAP 2014 CPG, still standing — built mostly as a "what NOT to
+  do" reference: no bronchodilators/steroids/routine CXR/viral testing; HFNC
+  given qualitatively per a 2026 Delphi/RAND-UCLA appropriateness consensus
+  rather than a fabricated flow-rate table) and `croup-management` (Westley
+  score 0-17 table verified component-by-component via WebSearch, severity-
+  tiered treatment, and the discharge-timing pitfall that epinephrine's
+  effect wanes by ~2h so a good 20-minute recheck isn't a discharge basis —
+  plus the less-known finding that low-dose 0.15mg/kg dexamethasone performs
+  comparably to the standard 0.6mg/kg). `peds-tool.schema.json` has no
+  `related[]` field (unlike `reference.schema.json`) — cross-links between
+  the two peds modules and back to febrile-infant-risk-stratification are
+  noted in `buildNote` prose instead, matching the schema's actual
+  constraint rather than fighting it. validate 341/0, build/sync/test 260/0.
+  Live-verified `croup-management` and `transfusion-reactions` rendering on
+  web (Westley table, TRALI/TACO comparison table, warning callouts all
+  correct); iOS `xcodebuild test` run in parallel. **Batches 3-4 of the
+  content audit remain queued** — see the "Content audit 2026-09-14" section
+  above for the full scoped list.
 - 2026-09-14 — **Content audit Batch 1 shipped (→ 329 modules).** All seven
   Batch 1 items from the priority scope: `aspects` (Alberta Stroke Program
   Early CT Score — additive engine, 10 regions each worth 1 point normal,

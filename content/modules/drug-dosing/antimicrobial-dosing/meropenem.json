@@ -1,0 +1,37 @@
+{
+  "id": "meropenem",
+  "section": "Drug & Dosing Cards",
+  "category": "Antimicrobial Dosing",
+  "title": "Meropenem",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["Merrem", "carbapenem dosing"],
+  "tags": ["antibiotic", "carbapenem", "extended infusion", "sepsis", "renal dosing", "ED", "ICU"],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2026-12-14",
+  "review_tier": 1,
+  "sources": [
+    "Roberts JA, et al. DALI study — defining antibiotic levels in intensive care unit patients. Clin Infect Dis. 2014;58(8):1072-1083.",
+    "Standard renal dose-reduction table (eGFR-tiered) as commonly summarized in critical-care pharmacy references; confirm precise cutoffs against your institution's renal dosing protocol and current product labeling."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap, second card in the new Antimicrobial Dosing category." }
+  ],
+  "drugClass": "antimicrobial",
+  "drugClassLabel": "Antimicrobial — carbapenem",
+  "mechanism": "Broad-spectrum carbapenem — covers most gram-negatives (including many ESBL producers and Pseudomonas), gram-positives, and anaerobes. Like other beta-lactams, killing is time-dependent (time above MIC), so extended infusion improves target attainment the same way it does for piperacillin-tazobactam.",
+  "onset": "Within the first infusion; extended/continuous infusion improves sustained exposure more than peak effect.",
+  "duration": "Redosed every 8 h at standard renal function; interval widens as renal function falls.",
+  "dosing": "Standard (normal renal function): 1 g IV q8h. Use 2 g q8h for CNS infection, severe Pseudomonas infection, or other indications needing higher CNS/tissue penetration.\nExtended-infusion strategy (preferred in critical illness/sepsis): infuse the dose over 3 hours rather than the traditional 30 minutes, for the same PK/PD rationale as piperacillin-tazobactam.\nRenal dose reduction (typical eGFR tiers — confirm against your institution's protocol, as exact cutoffs vary by source): eGFR > 50 mL/min — no change; eGFR 25-50 — 1 g q12h; eGFR < 25 — 0.5 g q12h; eGFR < 10 / dialysis — 0.5 g q24h, with supplemental post-dialysis dosing on hemodialysis days.",
+  "cautions": [
+    "CI: known carbapenem anaphylaxis. Cross-reactivity with penicillin allergy is real but lower than once assumed — a history of penicillin allergy is not an automatic carbapenem contraindication, but confirm your institution's approach for severe/anaphylactic penicillin reactions.",
+    "AEs: seizures — a class effect of carbapenems, meropenem carries a lower risk than imipenem but it is not zero, and risk rises sharply with inadequate renal dose reduction, pre-existing CNS disease, or very high doses. This is the single most important reason NOT to skip the renal adjustment.",
+    "Precautions: reduces valproic acid levels significantly (a well-described interaction) — avoid co-administration where possible, or monitor levels closely and expect breakthrough seizures if a patient is on valproate for seizure control."
+  ],
+  "pearls": [
+    "The valproate interaction is easy to miss and can precipitate status epilepticus in a patient previously well-controlled — actively check the med list before starting meropenem in anyone on valproic acid.",
+    "Meropenem is often reached for specifically for its CNS penetration and Pseudomonas coverage together — if neither is needed, a narrower or non-carbapenem agent is frequently more appropriate stewardship."
+  ],
+  "buildNote": "anesthesia-drug-card contentType reused for a fixed-dose antimicrobial. Renal-dosing tiers given with a source citation and an explicit 'confirm locally' caveat rather than presented as unambiguous, since exact eGFR cutoffs vary somewhat across references."
+}

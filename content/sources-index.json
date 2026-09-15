@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 665,
+  "count": 692,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -30,6 +30,18 @@
           "title": "Peds Pre-Arrival Card — One Weight, Every Number",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/peds-pre-arrival-card"
+        }
+      ]
+    },
+    {
+      "text": "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke. Stroke. 2026 (AHA/ASA) — Class 2a recommendation for 4.5–9 h / wake-up stroke thrombolysis with advanced-imaging selection; endorses tenecteplase as equivalent to alteplase across the 4.5 h window.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "acute-ischemic-stroke",
+          "title": "Acute Ischemic Stroke — Time-Based Algorithm",
+          "section": "Reference Library",
+          "route": "/reference-library/cardiac-ecg/acute-ischemic-stroke"
         }
       ]
     },
@@ -216,6 +228,42 @@
           "title": "Ectopic Pregnancy",
           "section": "Reference Library",
           "route": "/reference-library/obstetric-gynecologic/ectopic-pregnancy"
+        }
+      ]
+    },
+    {
+      "text": "ACOG Practice Bulletin No. 107: Induction of Labor. Obstet Gynecol. 2009 (reaffirmed).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "bishop-score",
+          "title": "Bishop Score",
+          "section": "Calculators",
+          "route": "/calculators/obstetric-newborn-ed-or-crossover/bishop-score"
+        }
+      ]
+    },
+    {
+      "text": "ACOG Practice Bulletin No. 183: Postpartum Hemorrhage. Obstet Gynecol. 2017;130(4):e168-e186.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "postpartum-hemorrhage-staging",
+          "title": "Postpartum Hemorrhage — Staged Response",
+          "section": "Calculators",
+          "route": "/calculators/obstetric-newborn-ed-or-crossover/postpartum-hemorrhage-staging"
+        }
+      ]
+    },
+    {
+      "text": "ACOG Practice Bulletin No. 222: Gestational Hypertension and Preeclampsia. Obstet Gynecol. 2020;135(6):e237-e260.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "preeclampsia-severe-features",
+          "title": "Preeclampsia — Severe Features / HELLP",
+          "section": "Calculators",
+          "route": "/calculators/obstetric-newborn-ed-or-crossover/preeclampsia-severe-features"
         }
       ]
     },
@@ -454,6 +502,18 @@
       ]
     },
     {
+      "text": "Appropriate Use of High-Flow Nasal Cannula in Bronchiolitis: A Delphi/RAND-UCLA Appropriateness Method consensus. Hospital Pediatrics. 2026;16(1):12.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "bronchiolitis-management",
+          "title": "Bronchiolitis — Evaluation & Management",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/bronchiolitis-management"
+        }
+      ]
+    },
+    {
       "text": "ASA 2023 Practice Guidelines for Monitoring and Antagonism of Neuromuscular Blockade",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -594,6 +654,18 @@
           "title": "Pediatric DKA Management",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/peds-dka-management"
+        }
+      ]
+    },
+    {
+      "text": "California Maternal Quality Care Collaborative (CMQCC) OB Hemorrhage Toolkit — staged obstetric hemorrhage care guidelines.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "postpartum-hemorrhage-staging",
+          "title": "Postpartum Hemorrhage — Staged Response",
+          "section": "Calculators",
+          "route": "/calculators/obstetric-newborn-ed-or-crossover/postpartum-hemorrhage-staging"
         }
       ]
     },
@@ -1510,6 +1582,18 @@
       ]
     },
     {
+      "text": "Ralston SL, et al. Clinical Practice Guideline: The Diagnosis, Management, and Prevention of Bronchiolitis. Pediatrics. 2014;134(5):e1474-e1502 (AAP; reaffirmed, still the foundational CPG).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "bronchiolitis-management",
+          "title": "Bronchiolitis — Evaluation & Management",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/bronchiolitis-management"
+        }
+      ]
+    },
+    {
       "text": "Ranson JH et al. Surg Gynecol Obstet 1974; ACG 2013 acute pancreatitis guideline",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1578,6 +1662,18 @@
           "title": "Traumatic Cardiac Arrest",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/traumatic-cardiac-arrest"
+        }
+      ]
+    },
+    {
+      "text": "Rybak MJ, Le J, Lodise TP, et al. Therapeutic monitoring of vancomycin for serious methicillin-resistant Staphylococcus aureus infections: A revised consensus guideline and review by ASHP, IDSA, PIDS, and SIDP. Am J Health Syst Pharm. 2020;77(11):835-864.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "vancomycin",
+          "title": "Vancomycin",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/antimicrobial-dosing/vancomycin"
         }
       ]
     },
@@ -2872,6 +2968,18 @@
       ]
     },
     {
+      "text": "Vlaar APJ, Juffermans NP. Transfusion-related acute lung injury: a clinical review. Lancet. 2013;382(9896):984-994.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "transfusion-reactions",
+          "title": "Transfusion Reactions — Recognition & Management",
+          "section": "Reference Library",
+          "route": "/reference-library/anticoagulation-labs/transfusion-reactions"
+        }
+      ]
+    },
+    {
       "text": "Wells PS et al. Lancet 1997;350:1795-8",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -2952,6 +3060,18 @@
           "title": "Peripheral IV Vasopressors — How Risky, Really?",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/peripheral-iv-vasopressors"
+        }
+      ]
+    },
+    {
+      "text": "Boschung-Pasquier L, et al. Cefepime neurotoxicity: thresholds and risk factors — a retrospective cohort study. Clin Microbiol Infect. 2020;26(3):333-339.",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "cefepime",
+          "title": "Cefepime",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/antimicrobial-dosing/cefepime"
         }
       ]
     },
@@ -3168,6 +3288,18 @@
           "title": "ABC Score for Massive Transfusion",
           "section": "Calculators",
           "route": "/calculators/trauma/abc-score-mtp"
+        }
+      ]
+    },
+    {
+      "text": "Payne LE, et al. Cefepime-induced neurotoxicity: a systematic review. Crit Care. 2017;21(1):276.",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "cefepime",
+          "title": "Cefepime",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/antimicrobial-dosing/cefepime"
         }
       ]
     },
@@ -4150,6 +4282,18 @@
       ]
     },
     {
+      "text": "AABB Technical Manual, 21st ed. — Noninfectious Complications of Blood Transfusion.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "transfusion-reactions",
+          "title": "Transfusion Reactions — Recognition & Management",
+          "section": "Reference Library",
+          "route": "/reference-library/anticoagulation-labs/transfusion-reactions"
+        }
+      ]
+    },
+    {
       "text": "AAFP — Essentials of Skin Laceration Repair",
       "group": "Other primary sources",
       "usedBy": [
@@ -4612,6 +4756,18 @@
       ]
     },
     {
+      "text": "Bishop EH. Pelvic scoring for elective induction. Obstet Gynecol. 1964;24:266-268.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "bishop-score",
+          "title": "Bishop Score",
+          "section": "Calculators",
+          "route": "/calculators/obstetric-newborn-ed-or-crossover/bishop-score"
+        }
+      ]
+    },
+    {
       "text": "Bissell BD, et al. Impact of protocolized diuresis for de-resuscitation in the intensive care unit. Crit Care. 2020;24:70",
       "group": "Other primary sources",
       "usedBy": [
@@ -4620,6 +4776,18 @@
           "title": "Venous Congestion, VExUS & De-resuscitation",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/venous-congestion-deresuscitation"
+        }
+      ]
+    },
+    {
+      "text": "Bjornson C, Russell K. Nebulized epinephrine for croup in children. Cochrane Database Syst Rev (foundational epinephrine evidence base).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "croup-management",
+          "title": "Croup — Westley Score & Management",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/croup-management"
         }
       ]
     },
@@ -4866,6 +5034,18 @@
           "title": "Nerve Agents & Organophosphates — Cholinergic Crisis",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/nerve-agent-toxicity"
+        }
+      ]
+    },
+    {
+      "text": "Child CG, Turcotte JG. Surgery and portal hypertension. In: The Liver and Portal Hypertension. 1964.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "child-pugh",
+          "title": "Child-Pugh Score",
+          "section": "Calculators",
+          "route": "/calculators/gi-renal-metabolic/child-pugh"
         }
       ]
     },
@@ -5562,6 +5742,18 @@
           "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/penetrating-regional-trauma"
+        }
+      ]
+    },
+    {
+      "text": "Croup: Rapid Evidence Review. Am Fam Physician. 2026 (dosing equivalence data, epinephrine time course, discharge criteria).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "croup-management",
+          "title": "Croup — Westley Score & Management",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/croup-management"
         }
       ]
     },
@@ -6490,6 +6682,18 @@
       ]
     },
     {
+      "text": "Key supporting trials for the extended window: TRACE-III, EXTEND, WAKE-UP.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acute-ischemic-stroke",
+          "title": "Acute Ischemic Stroke — Time-Based Algorithm",
+          "section": "Reference Library",
+          "route": "/reference-library/cardiac-ecg/acute-ischemic-stroke"
+        }
+      ]
+    },
+    {
       "text": "Killip T, Kimball JT. Am J Cardiol 1967",
       "group": "Other primary sources",
       "usedBy": [
@@ -6730,6 +6934,18 @@
       ]
     },
     {
+      "text": "Lodise TP Jr, et al. Piperacillin-tazobactam for Pseudomonas aeruginosa infection: clinical implications of an extended-infusion dosing strategy. Clin Infect Dis. 2007;44(3):357-363.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "piperacillin-tazobactam",
+          "title": "Piperacillin-Tazobactam",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/antimicrobial-dosing/piperacillin-tazobactam"
+        }
+      ]
+    },
+    {
       "text": "Long B, Lentz S, Gottlieb M. Alcoholic Ketoacidosis: Etiologies, Evaluation, and Management. J Emerg Med. 2021;61(6):658-665",
       "group": "Other primary sources",
       "usedBy": [
@@ -6822,6 +7038,18 @@
           "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/wound-ballistics"
+        }
+      ]
+    },
+    {
+      "text": "Martin JN Jr, et al. The spectrum of severe preeclampsia: comparative analysis by HELLP syndrome classification. Am J Obstet Gynecol. 1999;180(6 Pt 1):1373-1384 (Mississippi Triple-Class System).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "preeclampsia-severe-features",
+          "title": "Preeclampsia — Severe Features / HELLP",
+          "section": "Calculators",
+          "route": "/calculators/obstetric-newborn-ed-or-crossover/preeclampsia-severe-features"
         }
       ]
     },
@@ -7474,6 +7702,18 @@
       ]
     },
     {
+      "text": "Pugh RN, Murray-Lyon IM, Dawson JL, et al. Transection of the oesophagus for bleeding oesophageal varices. Br J Surg. 1973;60(8):646-649.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "child-pugh",
+          "title": "Child-Pugh Score",
+          "section": "Calculators",
+          "route": "/calculators/gi-renal-metabolic/child-pugh"
+        }
+      ]
+    },
+    {
       "text": "Radiation Emergency Medical Management (REMM), US DHHS/ASPR — remm.hhs.gov (ARS triage, biodosimetry, decorporation)",
       "group": "Other primary sources",
       "usedBy": [
@@ -7530,6 +7770,18 @@
           "title": "Perioperative Hyperglycemia",
           "section": "Reference Library",
           "route": "/reference-library/perioperative-anesthesia/perioperative-glycemic-management"
+        }
+      ]
+    },
+    {
+      "text": "Rankin J. Cerebral vascular accidents in patients over the age of 60. Scott Med J. 1957;2(5):200-215 (original scale).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "modified-rankin-scale",
+          "title": "Modified Rankin Scale (mRS)",
+          "section": "Calculators",
+          "route": "/calculators/neuro-stroke-head-injury/modified-rankin-scale"
         }
       ]
     },
@@ -7618,6 +7870,30 @@
       ]
     },
     {
+      "text": "Roberts JA, et al. DALI study — defining antibiotic levels in intensive care unit patients. Clin Infect Dis. 2014;58(8):1072-1083 (PK/PD rationale for extended infusion in critical illness).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "piperacillin-tazobactam",
+          "title": "Piperacillin-Tazobactam",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/antimicrobial-dosing/piperacillin-tazobactam"
+        }
+      ]
+    },
+    {
+      "text": "Roberts JA, et al. DALI study — defining antibiotic levels in intensive care unit patients. Clin Infect Dis. 2014;58(8):1072-1083.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "meropenem",
+          "title": "Meropenem",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/antimicrobial-dosing/meropenem"
+        }
+      ]
+    },
+    {
       "text": "Robinson TD et al. The role of hypoventilation and ventilation-perfusion redistribution in oxygen-induced hypercapnia during acute exacerbations of COPD. Am J Respir Crit Care Med 2000; Aubier M et al. Am Rev Respir Dis 1980",
       "group": "Other primary sources",
       "usedBy": [
@@ -7698,6 +7974,18 @@
           "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/wound-ballistics"
+        }
+      ]
+    },
+    {
+      "text": "Roubinian N. TACO and TRALI: biology, risk factors, and prevention. Hematology Am Soc Hematol Educ Program. 2018;2018(1):585-594.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "transfusion-reactions",
+          "title": "Transfusion Reactions — Recognition & Management",
+          "section": "Reference Library",
+          "route": "/reference-library/anticoagulation-labs/transfusion-reactions"
         }
       ]
     },
@@ -8002,6 +8290,18 @@
       ]
     },
     {
+      "text": "Standard renal dose-reduction table (eGFR-tiered) as commonly summarized in critical-care pharmacy references; confirm precise cutoffs against your institution's renal dosing protocol and current product labeling.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "meropenem",
+          "title": "Meropenem",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/antimicrobial-dosing/meropenem"
+        }
+      ]
+    },
+    {
       "text": "Standard toxicology; Krasowski MD et al. BMC Clin Pathol 2012",
       "group": "Other primary sources",
       "usedBy": [
@@ -8254,6 +8554,18 @@
       ]
     },
     {
+      "text": "van Swieten JC, Koudstaal PJ, Visser MC, et al. Interobserver agreement for the assessment of handicap in stroke patients. Stroke. 1988;19(5):604-607 (modified scale).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "modified-rankin-scale",
+          "title": "Modified Rankin Scale (mRS)",
+          "section": "Calculators",
+          "route": "/calculators/neuro-stroke-head-injury/modified-rankin-scale"
+        }
+      ]
+    },
+    {
       "text": "Vos CF, et al. Successful Treatment of Severe, Treatment-Resistant GHB Withdrawal Through Thiopental-Coma. J Addict Med. 2021",
       "group": "Other primary sources",
       "usedBy": [
@@ -8322,6 +8634,18 @@
           "title": "COWS (Clinical Opiate Withdrawal Scale)",
           "section": "Calculators",
           "route": "/calculators/toxicology-withdrawal/cows"
+        }
+      ]
+    },
+    {
+      "text": "Westley CR, et al. Nebulized racemic epinephrine by IPPB for the treatment of croup: a double-blind study. Am J Dis Child. 1978;132(5):484-487 (original scoring system).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "croup-management",
+          "title": "Croup — Westley Score & Management",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/croup-management"
         }
       ]
     },

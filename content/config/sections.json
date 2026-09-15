@@ -132,6 +132,10 @@
           "title": "Anticoagulants & Hemostatics"
         },
         {
+          "id": "antimicrobial-dosing",
+          "title": "Antimicrobial Dosing"
+        },
+        {
           "id": "resus-dosing",
           "title": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)"
         },

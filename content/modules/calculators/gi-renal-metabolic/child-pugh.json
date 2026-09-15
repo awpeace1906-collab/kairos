@@ -1,0 +1,78 @@
+{
+  "id": "child-pugh",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "Child-Pugh Score",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["Child-Pugh", "Child-Turcotte-Pugh", "CTP score", "cirrhosis severity"],
+  "tags": ["cirrhosis", "liver disease", "hepatic encephalopathy", "ascites", "ED", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2027-03-14",
+  "review_tier": 1,
+  "sources": [
+    "Pugh RN, Murray-Lyon IM, Dawson JL, et al. Transection of the oesophagus for bleeding oesophageal varices. Br J Surg. 1973;60(8):646-649.",
+    "Child CG, Turcotte JG. Surgery and portal hypertension. In: The Liver and Portal Hypertension. 1964."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap (MELD-Na existed but its long-standing bedside companion, still widely used for surgical-risk and prognosis conversations, did not)." }
+  ],
+  "engine": "additive",
+  "settings": ["ED", "ICU"],
+  "purpose": "Grades cirrhosis severity from labs plus two clinical exam findings (ascites, encephalopathy) — older and less precise than MELD-Na for transplant allocation, but still the standard reference for surgical-risk stratification and the classic A/B/C prognostic classes.",
+  "items": [
+    {
+      "key": "bilirubin",
+      "label": "Total bilirubin",
+      "options": [
+        { "label": "< 2 mg/dL (< 34 µmol/L)", "points": 1 },
+        { "label": "2-3 mg/dL (34-51 µmol/L)", "points": 2 },
+        { "label": "> 3 mg/dL (> 51 µmol/L)", "points": 3 }
+      ]
+    },
+    {
+      "key": "albumin",
+      "label": "Serum albumin",
+      "options": [
+        { "label": "> 3.5 g/dL", "points": 1 },
+        { "label": "2.8-3.5 g/dL", "points": 2 },
+        { "label": "< 2.8 g/dL", "points": 3 }
+      ]
+    },
+    {
+      "key": "inr",
+      "label": "INR",
+      "options": [
+        { "label": "< 1.7", "points": 1 },
+        { "label": "1.7-2.3", "points": 2 },
+        { "label": "> 2.3", "points": 3 }
+      ]
+    },
+    {
+      "key": "ascites",
+      "label": "Ascites",
+      "options": [
+        { "label": "None", "points": 1 },
+        { "label": "Mild — controlled with diuretics", "points": 2 },
+        { "label": "Moderate-to-severe / refractory", "points": 3 }
+      ]
+    },
+    {
+      "key": "encephalopathy",
+      "label": "Hepatic encephalopathy",
+      "options": [
+        { "label": "None", "points": 1 },
+        { "label": "Grade 1-2 (mild confusion, asterixis)", "points": 2 },
+        { "label": "Grade 3-4 (stupor, coma)", "points": 3 }
+      ]
+    }
+  ],
+  "interpretation": [
+    { "min": 5, "max": 6, "label": "Class A", "risk": "Well-compensated — ~100% 1-year survival; lowest perioperative risk", "severity": "low" },
+    { "min": 7, "max": 9, "label": "Class B", "risk": "Significant functional compromise — ~80% 1-year survival; elevated perioperative risk, especially for major surgery", "severity": "moderate" },
+    { "min": 10, "max": 15, "label": "Class C", "risk": "Decompensated — ~45% 1-year survival; elective surgery is generally avoided, and even necessary procedures carry substantial risk", "severity": "high" }
+  ],
+  "notes": "For transplant listing and organ allocation, MELD-Na is the current standard (see meld-na) — Child-Pugh's continued relevance is mainly perioperative risk stratification (a Class C patient is a very different surgical conversation than a Class A) and as a quick prognostic anchor that doesn't require a calculator app to eyeball at the bedside.",
+  "buildNote": "Standard additive engine — the one score in this codebase where each item's point range starts at 1 rather than 0, matching the original 1-3 per-parameter scale exactly."
+}

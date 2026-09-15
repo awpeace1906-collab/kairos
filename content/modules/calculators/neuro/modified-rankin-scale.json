@@ -1,0 +1,37 @@
+{
+  "id": "modified-rankin-scale",
+  "section": "Calculators",
+  "category": "Neuro / Stroke / Head Injury",
+  "title": "Modified Rankin Scale (mRS)",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["mRS", "Rankin score", "stroke disability scale"],
+  "tags": ["stroke", "disability", "functional outcome", "ED", "ICU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2027-03-14",
+  "review_tier": 1,
+  "sources": [
+    "van Swieten JC, Koudstaal PJ, Visser MC, et al. Interobserver agreement for the assessment of handicap in stroke patients. Stroke. 1988;19(5):604-607 (modified scale).",
+    "Rankin J. Cerebral vascular accidents in patients over the age of 60. Scott Med J. 1957;2(5):200-215 (original scale)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap. The near-universal stroke functional-outcome measure, used as the baseline/premorbid reference point alongside NIHSS and ASPECTS in thrombectomy decision-making, and as the standard outcome measure in every major stroke trial." }
+  ],
+  "engine": "classification",
+  "settings": ["ED", "ICU"],
+  "purpose": "The standard measure of functional independence after stroke — used both as a baseline (premorbid mRS) input to thrombectomy eligibility and as the outcome measure in essentially every stroke trial.",
+  "tiers": [
+    { "label": "0", "description": "No symptoms at all." },
+    { "label": "1", "description": "No significant disability despite symptoms — able to carry out all usual duties and activities." },
+    { "label": "2", "description": "Slight disability — unable to carry out all previous activities, but able to look after own affairs without assistance." },
+    { "label": "3", "description": "Moderate disability — requires some help, but able to walk without assistance." },
+    { "label": "4", "description": "Moderately severe disability — unable to walk or attend to own bodily needs without assistance." },
+    { "label": "5", "description": "Severe disability — bedridden, incontinent, requires constant nursing care and attention." },
+    { "label": "6", "description": "Dead." }
+  ],
+  "interpretation": [
+    { "label": "A baseline (premorbid) mRS is part of thrombectomy eligibility screening", "detail": "Most major thrombectomy trials required a premorbid mRS 0-1 for enrollment — a patient already at mRS 3-4 at baseline changes the risk/benefit conversation, not the acute NIHSS/ASPECTS alone. mRS 0-2 at 90 days is the standard 'good outcome' threshold reported in stroke trials.", "severity": "info" }
+  ],
+  "buildNote": "classification engine, matching the killip-classification / postpartum-hemorrhage-staging pattern. Pairs with nihss and aspects (both already built) in the stroke-decision workflow — cross-referenced via aliases/keywords since calculators don't carry a `related` field."
+}

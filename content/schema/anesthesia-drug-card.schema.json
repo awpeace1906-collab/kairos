@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://kairos.app/schema/anesthesia-drug-card.schema.json",
   "title": "Kairos anesthesia drug card (AnesCalc-origin)",
-  "description": "A text reference card for an anesthesia / perioperative drug. Imported from AnesCalc v2's DrugCard model — NOT a per-kg calculator (that is drug-card.schema.json). Prose fields, no live math.",
+  "description": "A prose text drug reference card — no live per-kg math (that's drug-card.schema.json). Originally AnesCalc v2's DrugCard model for anesthesia/perioperative drugs; reused as-is for any fixed-dose (non-weight-based) drug card, e.g. antimicrobials, since the underlying shape (mechanism/onset/duration/multi-line dosing/cautions/pearls) fits equally well.",
   "type": "object",
   "allOf": [
     { "$ref": "common.schema.json#/$defs/recordMeta" },
@@ -27,7 +27,7 @@
       "enum": [
         "induction", "benzodiazepine", "volatile", "nmb", "opioid", "local",
         "vasopressor", "reversal", "anticholinergic", "antiemetic", "gi",
-        "emergency", "methylene-blue", "anticoagulant"
+        "emergency", "methylene-blue", "anticoagulant", "antimicrobial"
       ]
     },
     "drugClassLabel": { "type": "string" },

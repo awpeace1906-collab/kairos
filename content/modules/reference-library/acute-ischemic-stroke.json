@@ -14,7 +14,9 @@
     "stroke BP targets",
     "tPA contraindications",
     "ICH management",
-    "DAWN DEFUSE-3"
+    "DAWN DEFUSE-3",
+    "extended window thrombolysis 4.5-9 hours",
+    "wake-up stroke tenecteplase"
   ],
   "tags": [
     "stroke",
@@ -39,15 +41,22 @@
     "ICH SBP target"
   ],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-02",
-  "next_review_due": "2026-12-02",
+  "content_version": 3,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2026-12-14",
   "review_tier": 1,
   "sources": [
     "Critical Vector — EM Pocket Guide: Stroke / TIA (AHA 2023)",
+    "2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke. Stroke. 2026 (AHA/ASA) — Class 2a recommendation for 4.5–9 h / wake-up stroke thrombolysis with advanced-imaging selection; endorses tenecteplase as equivalent to alteplase across the 4.5 h window.",
+    "Key supporting trials for the extended window: TRACE-III, EXTEND, WAKE-UP.",
     "AHA/ASA Guideline for the Early Management of Acute Ischemic Stroke (2019, 2023 update); DAWN, DEFUSE-3"
   ],
   "changelog": [
+    {
+      "version": 3,
+      "date": "2026-09-14",
+      "change": "Currency update: replaced the vague 'HOPE trial' wake-up-stroke mention with the actual 2026 AHA/ASA guideline position — a new Class 2a recommendation for IV thrombolysis 4.5–9 h post-onset or wake-up stroke with advanced-imaging (DWI-FLAIR or perfusion mismatch) selection, sourced to TRACE-III/EXTEND/WAKE-UP. Also updated the tenecteplase line: the 2026 guideline endorses it as equivalent to alteplase across the full 4.5 h window, not only as a pre-thrombectomy convenience."
+    },
     {
       "version": 2,
       "date": "2026-09-07",
@@ -72,9 +81,9 @@
       "type": "list",
       "items": [
         "0–25 min: NIHSS, fingerstick glucose, INR / anti-Xa if on anticoagulation, ECG, weight → STAT non-contrast head CT. Do not delay CT for labs unless anticoagulation is known/suspected.",
-        "25–45 min (if eligible): IV thrombolysis — alteplase 0.9 mg/kg (max 90 mg), 10% as a bolus over 1 min, the rest over 60 min — for onset (or last-known-well) within 4.5 h. Tenecteplase 0.25 mg/kg single bolus is an accepted alternative, especially before thrombectomy.",
+        "25–45 min (if eligible): IV thrombolysis — alteplase 0.9 mg/kg (max 90 mg), 10% as a bolus over 1 min, the rest over 60 min — for onset (or last-known-well) within 4.5 h. The 2026 AHA/ASA guideline now endorses tenecteplase 0.25 mg/kg single IV bolus as an equally acceptable alternative to alteplase across the whole 4.5 h window, not just as a pre-thrombectomy convenience — a single bolus with no infusion pump is the practical advantage.",
         "0–24 h, large-vessel occlusion: CT angiography → mechanical thrombectomy. Standard window 0–6 h; extend to 24 h with DAWN / DEFUSE-3 perfusion-mismatch criteria.",
-        "Wake-up / unknown onset: MRI DWI-FLAIR mismatch (or CT perfusion) can still select some patients for thrombolysis (see the HOPE trial for the 4.5–24 h perfusion-selected question)."
+        "Extended-window thrombolysis (4.5–9 h, or wake-up stroke with unknown onset): new Class 2a recommendation in the 2026 AHA/ASA guideline — IV thrombolysis (alteplase or tenecteplase) may be reasonable in this window if advanced imaging (MRI DWI-FLAIR mismatch, or CT/MR perfusion mismatch) shows salvageable brain tissue, based on TRACE-III, EXTEND, and WAKE-UP. This is now a guideline-level recommendation, not just a perfusion-imaging option to consider — involve the stroke team early for imaging selection rather than defaulting to 'outside the window, no thrombolysis' past 4.5 h."
       ]
     },
     {

@@ -1,0 +1,107 @@
+{
+  "id": "transfusion-reactions",
+  "section": "Reference Library",
+  "category": "Anticoagulation & Labs",
+  "title": "Transfusion Reactions — Recognition & Management",
+  "settingEmphasis": ["ed", "icu", "or"],
+  "aliases": ["TRALI", "TACO", "acute hemolytic transfusion reaction", "febrile non-hemolytic transfusion reaction", "transfusion anaphylaxis"],
+  "tags": ["transfusion", "TRALI", "TACO", "hemolytic reaction", "anaphylaxis", "blood products", "ED", "ICU", "OR"],
+  "keywords": ["stop the transfusion first, ask questions second", "recheck patient ID against the unit tag before anything else", "TRALI hypotension normal BNP within 6 hours", "TACO hypertension elevated BNP responds to diuretics", "IgA deficiency and severe anaphylaxis", "delayed hemolytic reaction days to weeks later minor antigen"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2027-03-14",
+  "review_tier": 1,
+  "sources": [
+    "AABB Technical Manual, 21st ed. — Noninfectious Complications of Blood Transfusion.",
+    "Vlaar APJ, Juffermans NP. Transfusion-related acute lung injury: a clinical review. Lancet. 2013;382(9896):984-994.",
+    "Roubinian N. TACO and TRALI: biology, risk factors, and prevention. Hematology Am Soc Hematol Educ Program. 2018;2018(1):585-594."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap; blood-products covered product selection and thresholds only, not what to do when a transfusion goes wrong. Cross-linked both directions." }
+  ],
+  "related": ["blood-products", "anaphylaxis", "acute-dyspnea-niv"],
+  "summary": "What to do the moment a transfusion reaction is suspected, and how to tell the five reactions that actually change management apart — especially TRALI vs. TACO, which look similar but are treated almost oppositely.",
+  "whyThisMatters": "Every suspected transfusion reaction gets the same first move — stop the transfusion — but what happens next diverges completely by type, and TRALI and TACO in particular are easy to confuse under pressure despite needing near-opposite management (one needs supportive respiratory care, the other needs diuresis).",
+  "clinicalTakeaway": "Stop the transfusion, keep the line open with saline (not the blood), and recheck the patient's ID against the unit tag before anything else — a clerical ABO mismatch is the most preventable and most dangerous cause. Then use the distinguishing features below (timing, BP direction, BNP, diuretic response) to tell TRALI from TACO, since guessing wrong means treating a fluid-overloaded heart with more fluid, or under-supporting a capillary-leak lung injury.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Universal first steps — any suspected reaction"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Stop the transfusion immediately.",
+        "Keep the IV line open with normal saline — do NOT keep infusing the blood product while you sort out what's happening.",
+        "Recheck the patient's identity against the unit tag and the transfusion record — clerical ABO-mismatch error is the most common cause of a severe acute hemolytic reaction, and it's the one preventable-in-the-moment step.",
+        "Notify the blood bank and send a post-reaction blood sample plus the implicated unit back for workup (repeat type & crossmatch, direct antiglobulin/Coombs test, visual check for hemolysis).",
+        "Monitor vitals closely and treat per the specific reaction below."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Acute hemolytic transfusion reaction (AHTR)"
+    },
+    {
+      "type": "text",
+      "text": "Usually ABO incompatibility from a clerical/identification error, during or within minutes to hours of transfusion. Fever, chills, flank or back pain, hemoglobinuria (dark or red urine), hypotension, and — if severe — DIC and acute kidney injury. Beyond the universal first steps: aggressive IV fluids to maintain urine output and protect the kidneys, vasopressor support if hypotensive, and monitor closely for DIC (fibrinogen, platelets, coags) and worsening renal function."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Febrile non-hemolytic transfusion reaction (FNHTR)"
+    },
+    {
+      "type": "text",
+      "text": "The most common transfusion reaction — a cytokine/leukocyte-antibody response, not hemolysis. Temperature rise ≥ 1°C with chills, usually mild and self-limited. Stop or slow the transfusion, give an antipyretic (avoid aspirin if the patient is thrombocytopenic), and rule out a hemolytic reaction or bacterial contamination before resuming — this is a diagnosis made after excluding the more dangerous causes of fever during transfusion, not assumed first."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Allergic reaction / anaphylaxis"
+    },
+    {
+      "type": "text",
+      "text": "An antibody response to donor plasma proteins. Mild (urticaria, itching, no respiratory or hemodynamic involvement): can often resume the transfusion after an antihistamine once symptoms resolve. Severe/anaphylactic (bronchospasm, hypotension, angioedema): stop permanently, treat as anaphylaxis (epinephrine, antihistamines, steroids — see the anaphylaxis reference), and do not resume that unit. IgA-deficient patients with anti-IgA antibodies are at particular risk for severe reactions and need washed or IgA-deficient products for future transfusions — flag this for the blood bank once identified."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "TRALI vs. TACO — the pair that's easy to confuse"
+    },
+    {
+      "type": "table",
+      "columns": ["Feature", "TRALI", "TACO"],
+      "rows": [
+        ["Mechanism", "Donor anti-HLA/anti-neutrophil antibodies attack recipient leukocytes, causing pulmonary capillary leak", "Volume overload from the transfusion itself, in a heart/kidneys that can't handle the load"],
+        ["Timing", "Within 6 hours of transfusion", "During transfusion up to ~12 hours after, often with rapid or large-volume infusion"],
+        ["Blood pressure", "Normal or LOW", "Elevated"],
+        ["BNP", "Normal or only mildly elevated", "Elevated"],
+        ["Volume status exam", "No signs of fluid overload — this is capillary leak, not volume excess", "JVD, peripheral edema, other overload signs"],
+        ["Response to diuretics", "No improvement — it isn't a volume problem", "Improves"],
+        ["Management", "Stop the transfusion, supportive respiratory care (oxygen, possibly mechanical ventilation) — do NOT fluid-restrict/diurese as the primary treatment", "Stop or slow the transfusion, diuresis (e.g. furosemide), oxygen, slow the rate of future units"]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Both present as new respiratory distress with bilateral infiltrates during or shortly after transfusion — treating one as the other means either diuresing a patient who needs respiratory support, or fluid-restricting a patient who's actually volume overloaded. When the picture is ambiguous, BNP and the response to a diuretic trial are the most useful bedside discriminators."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Delayed hemolytic reaction, sepsis, and TA-GVHD — lower acute-care yield but worth recognizing"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Delayed hemolytic transfusion reaction: days to weeks after transfusion, from an anamnestic antibody response to a minor blood-group antigen the patient was previously sensitized to (prior transfusion or pregnancy) — presents as unexplained anemia and mild jaundice with a positive direct antiglobulin test. Usually milder than acute hemolysis; often monitored rather than aggressively treated unless severe.",
+        "Transfusion-associated sepsis: bacterial contamination of the product (more often platelets, which are stored at room temperature) — fever, hypotension, and shock shortly after the transfusion starts. Stop the transfusion, send blood cultures from both the patient AND the implicated bag, start broad-spectrum antibiotics, and return the unit to the blood bank for culture.",
+        "Transfusion-associated graft-versus-host disease: rare, from viable donor lymphocytes engrafting in an immunocompromised recipient — nearly always fatal once established, but now largely prevented by irradiating blood products for at-risk recipients (immunocompromised patients, directed donations from blood relatives, intrauterine transfusions)."
+      ]
+    }
+  ]
+}

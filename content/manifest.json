@@ -272,6 +272,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-01"
     },
+    "calculators/gi-renal-metabolic/child-pugh": {
+      "content_version": 1,
+      "hash": "8e79d4695ffcde42",
+      "path": "modules/calculators/gi-renal-metabolic/child-pugh.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-03-14"
+    },
     "calculators/gi-renal-metabolic/corrected-calcium": {
       "content_version": 1,
       "hash": "3830d4dd3b9f060a",
@@ -504,6 +513,15 @@
       "review_tier": 1,
       "next_review_due": "2027-09-02"
     },
+    "calculators/neuro/modified-rankin-scale": {
+      "content_version": 1,
+      "hash": "23fbaddf9de02f65",
+      "path": "modules/calculators/neuro/modified-rankin-scale.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-03-14"
+    },
     "calculators/neuro/new-orleans-criteria": {
       "content_version": 1,
       "hash": "78eb3650772dc0d1",
@@ -530,6 +548,33 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2027-09-02"
+    },
+    "calculators/ob-newborn/bishop-score": {
+      "content_version": 1,
+      "hash": "320a0f4c70caacd1",
+      "path": "modules/calculators/ob-newborn/bishop-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-03-14"
+    },
+    "calculators/ob-newborn/postpartum-hemorrhage-staging": {
+      "content_version": 1,
+      "hash": "5589654c44b76e5d",
+      "path": "modules/calculators/ob-newborn/postpartum-hemorrhage-staging.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-03-14"
+    },
+    "calculators/ob-newborn/preeclampsia-severe-features": {
+      "content_version": 1,
+      "hash": "cff46a9c1ac6ac2d",
+      "path": "modules/calculators/ob-newborn/preeclampsia-severe-features.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-03-14"
     },
     "calculators/pulmonary/bode-index": {
       "content_version": 1,
@@ -1358,6 +1403,42 @@
       "review_tier": 1,
       "next_review_due": "2026-12-01"
     },
+    "drug-dosing/antimicrobial-dosing/cefepime": {
+      "content_version": 1,
+      "hash": "2c004da9928e3986",
+      "path": "modules/drug-dosing/antimicrobial-dosing/cefepime.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-14"
+    },
+    "drug-dosing/antimicrobial-dosing/meropenem": {
+      "content_version": 1,
+      "hash": "56a9bd3ee0cd2e57",
+      "path": "modules/drug-dosing/antimicrobial-dosing/meropenem.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-14"
+    },
+    "drug-dosing/antimicrobial-dosing/piperacillin-tazobactam": {
+      "content_version": 1,
+      "hash": "105d8f395297c4c8",
+      "path": "modules/drug-dosing/antimicrobial-dosing/piperacillin-tazobactam.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-14"
+    },
+    "drug-dosing/antimicrobial-dosing/vancomycin": {
+      "content_version": 1,
+      "hash": "e7406ec658e8273d",
+      "path": "modules/drug-dosing/antimicrobial-dosing/vancomycin.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-14"
+    },
     "drug-dosing/dosing-fluid-math/adjusted-body-weight": {
       "content_version": 2,
       "hash": "d843d74a72c16504",
@@ -1561,6 +1642,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "peds-module/bronchiolitis-management": {
+      "content_version": 1,
+      "hash": "66cec4714e60a5a4",
+      "path": "modules/peds-module/bronchiolitis-management.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-14"
+    },
     "peds-module/brue-lower-risk-criteria": {
       "content_version": 1,
       "hash": "3f3c5fc21fba3274",
@@ -1587,6 +1677,15 @@
       "section": "Peds Module",
       "review_tier": 1,
       "next_review_due": "2027-09-03"
+    },
+    "peds-module/croup-management": {
+      "content_version": 1,
+      "hash": "9ee8edf37215120e",
+      "path": "modules/peds-module/croup-management.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-14"
     },
     "peds-module/developmental-delay-evaluation": {
       "content_version": 1,
@@ -1966,13 +2065,13 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/acute-ischemic-stroke": {
-      "content_version": 2,
-      "hash": "0cbed98efcc65ff1",
+      "content_version": 3,
+      "hash": "fb6a842201c3e723",
       "path": "modules/reference-library/acute-ischemic-stroke.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": 1,
-      "next_review_due": "2026-12-02"
+      "next_review_due": "2026-12-14"
     },
     "reference-library/acute-pe-guideline-2026": {
       "content_version": 2,
@@ -2111,7 +2210,7 @@
     },
     "reference-library/blood-products": {
       "content_version": 2,
-      "hash": "80b59ec820fc01fa",
+      "hash": "f951fc88dcfefff5",
       "path": "modules/reference-library/blood-products.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2864,6 +2963,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-12-02"
+    },
+    "reference-library/transfusion-reactions": {
+      "content_version": 1,
+      "hash": "df883ae7c55c6533",
+      "path": "modules/reference-library/transfusion-reactions.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-14"
     },
     "reference-library/trauma-primary-survey": {
       "content_version": 2,

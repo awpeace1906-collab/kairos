@@ -785,6 +785,32 @@
       ]
     },
     {
+      "id": "child-pugh",
+      "title": "Child-Pugh Score",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "cirrhosis",
+        "liver disease",
+        "hepatic encephalopathy",
+        "ascites",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "Child-Pugh",
+        "Child-Turcotte-Pugh",
+        "CTP score",
+        "cirrhosis severity"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/child-pugh",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "corrected-calcium",
       "title": "Corrected Calcium in Hypoalbuminemia",
       "section": "Calculators",
@@ -1529,6 +1555,30 @@
       ]
     },
     {
+      "id": "modified-rankin-scale",
+      "title": "Modified Rankin Scale (mRS)",
+      "section": "Calculators",
+      "category": "Neuro / Stroke / Head Injury",
+      "tags": [
+        "stroke",
+        "disability",
+        "functional outcome",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "mRS",
+        "Rankin score",
+        "stroke disability scale"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/neuro-stroke-head-injury/modified-rankin-scale",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "new-orleans-criteria",
       "title": "New Orleans Criteria (CT Head)",
       "section": "Calculators",
@@ -1614,6 +1664,85 @@
       "route": "/calculators/neuro-stroke-head-injury/ottawa-sah-rule",
       "settingEmphasis": [
         "ed"
+      ]
+    },
+    {
+      "id": "bishop-score",
+      "title": "Bishop Score",
+      "section": "Calculators",
+      "category": "Obstetric / Newborn (ED & OR crossover)",
+      "tags": [
+        "obstetrics",
+        "labor induction",
+        "cervical exam",
+        "OB",
+        "ED",
+        "OR"
+      ],
+      "keywords": [
+        "Bishop score",
+        "cervical ripening score",
+        "induction readiness score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/obstetric-newborn-ed-or-crossover/bishop-score",
+      "settingEmphasis": [
+        "ed",
+        "or"
+      ]
+    },
+    {
+      "id": "postpartum-hemorrhage-staging",
+      "title": "Postpartum Hemorrhage — Staged Response",
+      "section": "Calculators",
+      "category": "Obstetric / Newborn (ED & OR crossover)",
+      "tags": [
+        "obstetrics",
+        "postpartum hemorrhage",
+        "massive transfusion",
+        "OB",
+        "OR",
+        "ED"
+      ],
+      "keywords": [
+        "PPH staging",
+        "CMQCC hemorrhage stage",
+        "obstetric hemorrhage protocol"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/obstetric-newborn-ed-or-crossover/postpartum-hemorrhage-staging",
+      "settingEmphasis": [
+        "or",
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "preeclampsia-severe-features",
+      "title": "Preeclampsia — Severe Features / HELLP",
+      "section": "Calculators",
+      "category": "Obstetric / Newborn (ED & OR crossover)",
+      "tags": [
+        "obstetrics",
+        "preeclampsia",
+        "HELLP",
+        "hypertension in pregnancy",
+        "OB",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "preeclampsia severity",
+        "severe preeclampsia criteria",
+        "HELLP syndrome",
+        "Mississippi classification"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/obstetric-newborn-ed-or-crossover/preeclampsia-severe-features",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or"
       ]
     },
     {
@@ -2976,6 +3105,108 @@
       "route": "/drug-dosing/antiemetics-aspiration-prophylaxis/ondansetron",
       "settingEmphasis": [
         "or"
+      ]
+    },
+    {
+      "id": "cefepime",
+      "title": "Cefepime",
+      "section": "Drug & Dosing Cards",
+      "category": "Antimicrobial Dosing",
+      "tags": [
+        "antibiotic",
+        "cephalosporin",
+        "neurotoxicity",
+        "renal dosing",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "Maxipime",
+        "cefepime neurotoxicity"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/antimicrobial-dosing/cefepime",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "meropenem",
+      "title": "Meropenem",
+      "section": "Drug & Dosing Cards",
+      "category": "Antimicrobial Dosing",
+      "tags": [
+        "antibiotic",
+        "carbapenem",
+        "extended infusion",
+        "sepsis",
+        "renal dosing",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "Merrem",
+        "carbapenem dosing"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/antimicrobial-dosing/meropenem",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "piperacillin-tazobactam",
+      "title": "Piperacillin-Tazobactam",
+      "section": "Drug & Dosing Cards",
+      "category": "Antimicrobial Dosing",
+      "tags": [
+        "antibiotic",
+        "beta-lactam",
+        "extended infusion",
+        "sepsis",
+        "renal dosing",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "Zosyn",
+        "pip-tazo",
+        "pip/tazo",
+        "extended infusion beta-lactam"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/antimicrobial-dosing/piperacillin-tazobactam",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "vancomycin",
+      "title": "Vancomycin",
+      "section": "Drug & Dosing Cards",
+      "category": "Antimicrobial Dosing",
+      "tags": [
+        "vancomycin",
+        "antibiotic",
+        "AUC-guided dosing",
+        "MRSA",
+        "renal dosing",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "vancomycin dosing",
+        "AUC-guided vancomycin",
+        "vancomycin loading dose"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/antimicrobial-dosing/vancomycin",
+      "settingEmphasis": [
+        "ed",
+        "icu"
       ]
     },
     {
@@ -4976,6 +5207,39 @@
       ]
     },
     {
+      "id": "bronchiolitis-management",
+      "title": "Bronchiolitis — Evaluation & Management",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "bronchiolitis",
+        "RSV",
+        "infant",
+        "respiratory distress",
+        "peds",
+        "ED"
+      ],
+      "keywords": [
+        "clinical diagnosis do not order CXR or viral testing routinely",
+        "albuterol and bronchodilators not recommended",
+        "supportive care oxygen suction hydration is the treatment",
+        "reserve HFNC for hypoxemia not responding to low-flow oxygen",
+        "apnea risk in young/ex-premature infants",
+        "RSV bronchiolitis",
+        "bronchiolitis AAP guideline",
+        "high flow nasal cannula bronchiolitis"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/bronchiolitis-management",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
       "id": "brue-lower-risk-criteria",
       "title": "BRUE — Lower-Risk Criteria Checklist",
       "section": "Peds Module",
@@ -5030,6 +5294,40 @@
       ],
       "contentType": "peds-tool",
       "route": "/peds-module/peds-resuscitation-decision-support/brue-pathway",
+      "settingEmphasis": [
+        "ed"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
+      "id": "croup-management",
+      "title": "Croup — Westley Score & Management",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "croup",
+        "stridor",
+        "Westley score",
+        "dexamethasone",
+        "nebulized epinephrine",
+        "peds",
+        "ED"
+      ],
+      "keywords": [
+        "barky cough seal-like stridor hoarse voice",
+        "Westley score 0-17 five components",
+        "dexamethasone 0.6 mg/kg single dose max 12 mg all severities",
+        "moderate-severe gets nebulized epinephrine",
+        "observe at least 2-3 hours after epinephrine before discharge, effect wanes by ~2h",
+        "laryngotracheobronchitis",
+        "Westley croup score",
+        "nebulized epinephrine croup",
+        "dexamethasone croup dose"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/croup-management",
       "settingEmphasis": [
         "ed"
       ],
@@ -5993,6 +6291,43 @@
       ]
     },
     {
+      "id": "transfusion-reactions",
+      "title": "Transfusion Reactions — Recognition & Management",
+      "section": "Reference Library",
+      "category": "Anticoagulation & Labs",
+      "tags": [
+        "transfusion",
+        "TRALI",
+        "TACO",
+        "hemolytic reaction",
+        "anaphylaxis",
+        "blood products",
+        "ED",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "stop the transfusion first, ask questions second",
+        "recheck patient ID against the unit tag before anything else",
+        "TRALI hypotension normal BNP within 6 hours",
+        "TACO hypertension elevated BNP responds to diuretics",
+        "IgA deficiency and severe anaphylaxis",
+        "delayed hemolytic reaction days to weeks later minor antigen",
+        "TRALI",
+        "TACO",
+        "acute hemolytic transfusion reaction",
+        "febrile non-hemolytic transfusion reaction",
+        "transfusion anaphylaxis"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/anticoagulation-labs/transfusion-reactions",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or"
+      ]
+    },
+    {
       "id": "twelve-lead-stemi-criteria",
       "title": "12-Lead: STEMI Criteria & Localization",
       "section": "Reference Library",
@@ -6053,7 +6388,9 @@
         "stroke BP targets",
         "tPA contraindications",
         "ICH management",
-        "DAWN DEFUSE-3"
+        "DAWN DEFUSE-3",
+        "extended window thrombolysis 4.5-9 hours",
+        "wake-up stroke tenecteplase"
       ],
       "contentType": "reference",
       "route": "/reference-library/cardiac-ecg/acute-ischemic-stroke",

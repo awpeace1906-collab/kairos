@@ -1,0 +1,38 @@
+{
+  "id": "piperacillin-tazobactam",
+  "section": "Drug & Dosing Cards",
+  "category": "Antimicrobial Dosing",
+  "title": "Piperacillin-Tazobactam",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["Zosyn", "pip-tazo", "pip/tazo", "extended infusion beta-lactam"],
+  "tags": ["antibiotic", "beta-lactam", "extended infusion", "sepsis", "renal dosing", "ED", "ICU"],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2026-12-14",
+  "review_tier": 1,
+  "sources": [
+    "Roberts JA, et al. DALI study — defining antibiotic levels in intensive care unit patients. Clin Infect Dis. 2014;58(8):1072-1083 (PK/PD rationale for extended infusion in critical illness).",
+    "Lodise TP Jr, et al. Piperacillin-tazobactam for Pseudomonas aeruginosa infection: clinical implications of an extended-infusion dosing strategy. Clin Infect Dis. 2007;44(3):357-363."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap; vancomycin was the only antimicrobial dosing card until this batch. Standard extended-infusion regimen given with confidence; renal-adjustment presented qualitatively rather than as a precise numeric table, since critically ill patients frequently have AUGMENTED (not reduced) renal clearance and institutional CrCl-tiered protocols vary — a false-precision table risks being wrong in the direction that matters (under-dosing a septic patient with a normal or high CrCl)." }
+  ],
+  "drugClass": "antimicrobial",
+  "drugClassLabel": "Antimicrobial — beta-lactam/beta-lactamase inhibitor",
+  "mechanism": "Broad-spectrum beta-lactam (piperacillin) plus a beta-lactamase inhibitor (tazobactam) — covers most gram-negatives including Pseudomonas, gram-positives, and anaerobes. Bactericidal effect is time-dependent (time above MIC), which is why infusion duration matters as much as the dose itself.",
+  "onset": "Within the first infusion, but time-to-therapeutic-exposure depends heavily on infusion strategy (see dosing).",
+  "duration": "Redosed every 6-8 h depending on renal function and infusion strategy.",
+  "dosing": "Standard (normal renal function): 4.5 g IV q6h or q8h.\nExtended-infusion strategy (preferred in critical illness/sepsis): the SAME 4.5 g dose infused over 4 hours rather than the traditional 30 minutes — this keeps free drug concentrations above the MIC for a much larger fraction of the dosing interval, which is what actually drives bacterial killing for this class. Increasingly the standard approach in ICU sepsis protocols, not just a specialist option.\nRenal impairment: reduce the dose and/or extend the interval as CrCl falls — but critically ill patients frequently have AUGMENTED renal clearance (CrCl > 130 mL/min is common in young, hyperdynamic sepsis patients), which can under-dose a STANDARD regimen, not just a reduced one. Use your institution's renal/ARC dosing protocol or pharmacy consult for anything outside straightforward normal renal function — precise CrCl-tiered numbers vary enough by source and patient population that a single fixed table here would risk more harm than help.",
+  "cautions": [
+    "CI: known penicillin/beta-lactam anaphylaxis.",
+    "AEs: interstitial nephritis (usually reversible), rash, GI upset, and rare but described neurotoxicity (seizures) at very high exposure, especially in renal impairment.",
+    "Precautions: contains a significant sodium load per gram — consider in heart failure/fluid-restricted patients on repeated high-dose therapy.",
+    "Precautions: does NOT reliably cover MRSA, atypicals, or most fungi — pair with the appropriate agent per your empiric-antibiotic pathway when those are on the differential."
+  ],
+  "pearls": [
+    "The extended-infusion strategy uses the identical total daily dose as standard dosing — it's a delivery-method change, not a bigger dose, so it doesn't need a separate 'extended-infusion dose' number.",
+    "A falsely elevated PT/aPTT and even bleeding have been reported with high-dose piperacillin-tazobactam via platelet dysfunction — worth remembering in a patient on it who develops unexplained bleeding or coagulation-panel derangement."
+  ],
+  "buildNote": "anesthesia-drug-card contentType reused for a non-anesthesia fixed-dose antimicrobial — see the schema's updated description. Deliberately did not fabricate a precise CrCl-tiered renal dosing table; the extended-infusion standard-dose regimen is the well-established, confidently-sourced part of this card."
+}

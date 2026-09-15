@@ -1,0 +1,113 @@
+{
+  "id": "croup-management",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Croup — Westley Score & Management",
+  "settingEmphasis": ["ed"],
+  "audience": ["peds"],
+  "aliases": ["laryngotracheobronchitis", "Westley croup score", "nebulized epinephrine croup", "dexamethasone croup dose"],
+  "tags": ["croup", "stridor", "Westley score", "dexamethasone", "nebulized epinephrine", "peds", "ED"],
+  "keywords": ["barky cough seal-like stridor hoarse voice", "Westley score 0-17 five components", "dexamethasone 0.6 mg/kg single dose max 12 mg all severities", "moderate-severe gets nebulized epinephrine", "observe at least 2-3 hours after epinephrine before discharge, effect wanes by ~2h"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2026-12-14",
+  "review_tier": 1,
+  "sources": [
+    "Westley CR, et al. Nebulized racemic epinephrine by IPPB for the treatment of croup: a double-blind study. Am J Dis Child. 1978;132(5):484-487 (original scoring system).",
+    "Croup: Rapid Evidence Review. Am Fam Physician. 2026 (dosing equivalence data, epinephrine time course, discharge criteria).",
+    "Bjornson C, Russell K. Nebulized epinephrine for croup in children. Cochrane Database Syst Rev (foundational epinephrine evidence base)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap. Westley score table and severity-tiered management verified against the 2026 AFP rapid evidence review; included the less commonly known finding that low-dose dexamethasone (0.15 mg/kg) performs comparably to the standard 0.6 mg/kg for most patients, since that's a real stewardship-relevant nuance rather than boilerplate." }
+  ],
+  "kind": "reference",
+  "ageRange": "Typically 6 months - 3 years, peak ~2 years; can occur up to age 6",
+  "purpose": "Score croup severity with the Westley score and match treatment (dexamethasone alone vs. + nebulized epinephrine) to that severity — with the discharge-timing question after epinephrine that trips people up most.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Clinical picture"
+    },
+    {
+      "type": "text",
+      "text": "Barky/seal-like cough, hoarse voice, and inspiratory stridor from viral (usually parainfluenza) upper-airway inflammation. Symptoms are classically worse at night and with agitation/crying — assess the child as calm as possible, since agitation itself worsens the exam findings and can overestimate severity."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Westley croup score (0-17)"
+    },
+    {
+      "type": "table",
+      "columns": ["Component", "Finding", "Points"],
+      "rows": [
+        ["Level of consciousness", "Normal (including sleep)", "0"],
+        ["", "Disoriented/depressed", "5"],
+        ["Cyanosis", "None", "0"],
+        ["", "With agitation", "4"],
+        ["", "At rest", "5"],
+        ["Stridor", "None", "0"],
+        ["", "With agitation", "1"],
+        ["", "At rest", "2"],
+        ["Air entry", "Normal", "0"],
+        ["", "Mildly decreased", "1"],
+        ["", "Markedly decreased", "2"],
+        ["Retractions", "None", "0"],
+        ["", "Mild", "1"],
+        ["", "Moderate", "2"],
+        ["", "Severe", "3"]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "< 2: mild",
+        "3-5: moderate",
+        "6-11: severe",
+        "≥ 12: impending respiratory failure"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Treatment by severity"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Mild (< 2): single dose of oral dexamethasone plus supportive care and reassurance (cool air/mist has no proven benefit but is low-risk and often used); discharge home if the child otherwise looks well.",
+        "Moderate-severe (≥ 3): dexamethasone PLUS nebulized epinephrine. Epinephrine improves signs of respiratory distress within 10-30 minutes, with effect sustained for roughly an hour and largely gone by about 2 hours — this decay curve is exactly why observation after dosing matters (see below).",
+        "Impending respiratory failure (≥ 12): treat as above but with immediate escalation — prepare for advanced airway management, involve anesthesia/ENT/PICU early, and do not delay epinephrine while arranging disposition."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Dexamethasone dosing"
+    },
+    {
+      "type": "text",
+      "text": "Standard dose: 0.6 mg/kg (max 12 mg), single dose, PO/IM/IV — all equally effective, oral is preferred when tolerated. A genuinely useful nuance: 0.15 mg/kg and 0.3 mg/kg doses have shown comparable clinical effectiveness to 0.6 mg/kg in mild-to-moderate croup in multiple studies, though 0.6 mg/kg remains the most commonly used and the safe default when dosing precision or follow-up is uncertain."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Discharge after nebulized epinephrine — the part that gets missed"
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Epinephrine's effect wanes within roughly 2 hours, so a child who looks great at 20 minutes post-dose is NOT ready for discharge on that basis alone. Observe for at least 2-3 hours after the last epinephrine dose, watching for rebound symptoms as the effect wears off, before discharging. A child needing a second epinephrine dose, or one who rebounds significantly, warrants a longer observation period or admission."
+      },
+    {
+      "type": "list",
+      "items": [
+        "Discharge criteria: sustained improvement through the observation window, no stridor at rest, adequate oral intake, and reliable caregivers who understand return precautions.",
+        "Admission: impending respiratory failure, multiple epinephrine doses needed, significant rebound after observation, or an atypical/prolonged course raising concern for bacterial tracheitis or another diagnosis."
+      ]
+    }
+  ],
+  "buildNote": "kind: reference with an embedded severity table rather than an embedded calculator — the Westley score is a clean additive point score and could become a calculator later, but the discharge-timing pitfall (epinephrine wearing off before disposition) is the higher-yield teaching point and is prose/callout content, not a number. Pairs with bronchiolitis-management and peds-rsi-decision-card (impending-failure escalation); peds-tool has no related[] field, so cross-link noted here in prose."
+}

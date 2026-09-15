@@ -1,0 +1,34 @@
+{
+  "id": "postpartum-hemorrhage-staging",
+  "section": "Calculators",
+  "category": "Obstetric / Newborn (ED & OR crossover)",
+  "title": "Postpartum Hemorrhage — Staged Response",
+  "settingEmphasis": ["or", "ed", "icu"],
+  "aliases": ["PPH staging", "CMQCC hemorrhage stage", "obstetric hemorrhage protocol"],
+  "tags": ["obstetrics", "postpartum hemorrhage", "massive transfusion", "OB", "OR", "ED"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2027-03-14",
+  "review_tier": 1,
+  "sources": [
+    "California Maternal Quality Care Collaborative (CMQCC) OB Hemorrhage Toolkit — staged obstetric hemorrhage care guidelines.",
+    "ACOG Practice Bulletin No. 183: Postpartum Hemorrhage. Obstet Gynecol. 2017;130(4):e168-e186."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap. Built on the CMQCC staged obstetric hemorrhage framework (Stage 0-3), which drives blood-bank/OR escalation in most US labor & delivery units. A classification, not a point score, so uses the calculator engine's classification type rather than additive." }
+  ],
+  "engine": "classification",
+  "settings": ["OR", "ED", "ICU"],
+  "purpose": "Stages ongoing postpartum bleeding by cumulative estimated blood loss and vital-sign trend to drive escalation — from active management through massive transfusion activation.",
+  "tiers": [
+    { "label": "Stage 0 — normal", "description": "Estimated blood loss < 500 mL after vaginal delivery (< 1000 mL after cesarean), normal vital signs.", "mortality": "Active management of the third stage (uterotonic, uterine massage, cord traction); continue routine post-delivery monitoring." },
+    { "label": "Stage 1", "description": "EBL 500-999 mL after vaginal delivery (or trending toward 1000+ mL after cesarean), OR any abnormal vital signs with ongoing bleeding above the expected amount.", "mortality": "First-line uterotonics (oxytocin, methylergonovine, or carboprost per contraindications), IV access ×2, type & screen, quantify blood loss, increase monitoring frequency, activate the OB hemorrhage team." },
+    { "label": "Stage 2", "description": "Continued bleeding with cumulative EBL up to ~1500 mL despite first-line measures.", "mortality": "Second-line uterotonics, tranexamic acid, order blood products (type & crossmatch, have PRBCs available), move toward the OR for exam under anesthesia / uterine tamponade / surgical management, consider bimanual uterine compression while preparing." },
+    { "label": "Stage 3 — massive hemorrhage", "description": "EBL > 1500 mL, OR more than 2 units PRBC transfused, OR unstable vital signs, OR clinical suspicion of DIC/coagulopathy.", "mortality": "Activate massive transfusion protocol, move to definitive surgical management (uterine artery ligation, B-Lynch compression suture, or hysterectomy as a last resort), involve interventional radiology / anesthesia / ICU early, treat coagulopathy with lab-guided products." }
+  ],
+  "interpretation": [
+    { "label": "Cumulative estimated blood loss, not a single reading, drives the stage", "detail": "Quantitative blood loss (weighing pads/drapes) is more accurate than visual estimation, which systematically underestimates — use it whenever available. Re-stage continuously; a patient can move through several stages in minutes.", "severity": "info" }
+  ],
+  "buildNote": "classification engine, matching the killip-classification pattern — a staged framework, not a point-summed score. Cross-references postpartum-hemorrhage (the existing management reference) and hemorrhagic-shock-mtp via aliases/keywords since calculators don't carry a `related` field."
+}

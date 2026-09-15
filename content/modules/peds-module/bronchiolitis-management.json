@@ -1,0 +1,96 @@
+{
+  "id": "bronchiolitis-management",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Bronchiolitis — Evaluation & Management",
+  "settingEmphasis": ["ed", "icu"],
+  "audience": ["peds"],
+  "aliases": ["RSV bronchiolitis", "bronchiolitis AAP guideline", "high flow nasal cannula bronchiolitis"],
+  "tags": ["bronchiolitis", "RSV", "infant", "respiratory distress", "peds", "ED"],
+  "keywords": ["clinical diagnosis do not order CXR or viral testing routinely", "albuterol and bronchodilators not recommended", "supportive care oxygen suction hydration is the treatment", "reserve HFNC for hypoxemia not responding to low-flow oxygen", "apnea risk in young/ex-premature infants"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2026-12-14",
+  "review_tier": 1,
+  "sources": [
+    "Ralston SL, et al. Clinical Practice Guideline: The Diagnosis, Management, and Prevention of Bronchiolitis. Pediatrics. 2014;134(5):e1474-e1502 (AAP; reaffirmed, still the foundational CPG).",
+    "Appropriate Use of High-Flow Nasal Cannula in Bronchiolitis: A Delphi/RAND-UCLA Appropriateness Method consensus. Hospital Pediatrics. 2026;16(1):12."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap; one of the highest-volume peds ED presentations had no dedicated module. Built on the AAP 2014 CPG (still the standing guideline) plus the 2026 Delphi/RAND-UCLA consensus on appropriate HFNC use, which is a live practice-variation issue, not a settled number — presented qualitatively rather than with a fabricated flow-rate table." }
+  ],
+  "kind": "reference",
+  "ageRange": "Typically infants and children < 2 years, peak incidence 2-6 months; classic RSV season but caused by multiple respiratory viruses",
+  "purpose": "How to diagnose and manage bronchiolitis without over-testing or over-treating — this is a clinical diagnosis, and the single most common management error is ordering tests or giving medications the evidence says don't help.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Diagnosis — clinical, not radiographic or laboratory"
+    },
+    {
+      "type": "text",
+      "text": "Bronchiolitis is a clinical diagnosis: an upper respiratory prodrome (rhinorrhea, congestion) followed by lower respiratory findings — wheeze, crackles, tachypnea, increased work of breathing — in a child under 2. Do NOT routinely order a chest X-ray or viral testing (RSV/respiratory panel) for a typical presentation — imaging findings are nonspecific and frequently drive unnecessary antibiotic use for what is a viral illness, and a positive or negative viral test rarely changes management for an individual patient."
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Reserve chest X-ray for atypical presentations: focal findings suggesting a complication (pneumonia, effusion), a toxic-appearing child, or a diagnosis in question — not as a routine part of the bronchiolitis workup."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What does NOT help — the core of the guideline"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Albuterol/salbutamol or other bronchodilators — not recommended, even as a therapeutic trial. Studies consistently fail to show benefit, and treating anyway delays recognition that the wheeze isn't reversible bronchospasm.",
+        "Systemic corticosteroids — not recommended for isolated bronchiolitis (distinct from wheeze with an asthma/reactive-airway component in an older child).",
+        "Nebulized hypertonic saline — evidence is mixed/inconsistent; not routinely recommended, particularly not in the ED for a brief encounter.",
+        "Antibiotics — not indicated unless a specific concurrent bacterial infection (e.g. otitis media, pneumonia) is identified; bronchiolitis itself is viral.",
+        "Chest physiotherapy — not shown to help and not recommended."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What DOES help — supportive care"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Nasal suctioning — the single most useful intervention for a congested infant, especially before feeds and before reassessing work of breathing.",
+        "Supplemental oxygen for hypoxemia — a specific universal SpO2 cutoff for treatment is not mandated by the guideline; use clinical status and trend rather than chasing a number in an otherwise well infant with borderline saturations.",
+        "Maintain hydration — many infants feed poorly from nasal congestion and tachypnea; IV or NG fluids for those unable to maintain oral intake.",
+        "Monitor for apnea — a real risk in young infants (particularly < 2 months corrected age or ex-premature infants), even before major respiratory distress develops; this drives admission decisions independent of oxygen requirement."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "High-flow nasal cannula — a genuinely evolving question"
+    },
+    {
+      "type": "text",
+      "text": "HFNC is effective rescue therapy for an infant failing standard low-flow oxygen, but the evidence does not support routine, early, liberal use as a default first-line therapy for mild-to-moderate distress — starting HFNC too early/too broadly has been associated with longer hospital stays without a clear outcome benefit over standard oxygen in infants who don't need it. Practice variation in exactly when to start, how to titrate, and when to wean HFNC remains substantial enough that a 2026 Delphi/RAND-UCLA appropriateness consensus was published specifically to address it. Follow your institution's protocol for specific flow rates and escalation/weaning criteria rather than a fixed number here."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Admission considerations"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Hypoxemia not correctable with low-flow oxygen, or an escalating oxygen/respiratory-support requirement",
+        "Significant work of breathing (retractions, grunting, nasal flaring) or apnea",
+        "Inability to maintain hydration/oral intake",
+        "Young age (especially < 2-3 months) or ex-premature infant with apnea risk, even with otherwise mild findings",
+        "Underlying risk factors: chronic lung disease, hemodynamically significant congenital heart disease, immunodeficiency, neuromuscular disease"
+      ]
+    }
+  ],
+  "buildNote": "Deliberately built as a 'what NOT to do' guideline-adherence reference rather than a scored tool — the AAP 2014 CPG's actionable content is overwhelmingly about avoiding unhelpful tests/treatments, which a calculator can't represent. HFNC content given qualitatively per the 2026 Delphi consensus rather than a fabricated flow-rate table. Pairs with croup-management (the other common viral peds-respiratory presentation) and febrile-infant-risk-stratification; peds-tool has no related[] field, so cross-link noted here in prose."
+}

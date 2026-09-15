@@ -1,0 +1,81 @@
+{
+  "id": "bishop-score",
+  "section": "Calculators",
+  "category": "Obstetric / Newborn (ED & OR crossover)",
+  "title": "Bishop Score",
+  "settingEmphasis": ["ed", "or"],
+  "aliases": ["Bishop score", "cervical ripening score", "induction readiness score"],
+  "tags": ["obstetrics", "labor induction", "cervical exam", "OB", "ED", "OR"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2027-03-14",
+  "review_tier": 1,
+  "sources": [
+    "Bishop EH. Pelvic scoring for elective induction. Obstet Gynecol. 1964;24:266-268.",
+    "ACOG Practice Bulletin No. 107: Induction of Labor. Obstet Gynecol. 2009 (reaffirmed)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap (Obstetric/Newborn calculators existed only via the peds-module APGAR cross-list into this category)." }
+  ],
+  "engine": "additive",
+  "settings": ["ED", "OR"],
+  "purpose": "Estimates cervical readiness for labor induction from the bedside cervical exam — a favorable score predicts a vaginal-delivery success rate similar to spontaneous labor.",
+  "items": [
+    {
+      "key": "dilation",
+      "label": "Dilation",
+      "options": [
+        { "label": "Closed", "points": 0 },
+        { "label": "1-2 cm", "points": 1 },
+        { "label": "3-4 cm", "points": 2 },
+        { "label": "≥ 5 cm", "points": 3 }
+      ]
+    },
+    {
+      "key": "effacement",
+      "label": "Effacement",
+      "options": [
+        { "label": "0-30%", "points": 0 },
+        { "label": "40-50%", "points": 1 },
+        { "label": "60-70%", "points": 2 },
+        { "label": "≥ 80%", "points": 3 }
+      ]
+    },
+    {
+      "key": "station",
+      "label": "Station",
+      "options": [
+        { "label": "-3", "points": 0 },
+        { "label": "-2", "points": 1 },
+        { "label": "-1 or 0", "points": 2 },
+        { "label": "+1 or +2", "points": 3 }
+      ]
+    },
+    {
+      "key": "consistency",
+      "label": "Cervical consistency",
+      "options": [
+        { "label": "Firm", "points": 0 },
+        { "label": "Medium", "points": 1 },
+        { "label": "Soft", "points": 2 }
+      ]
+    },
+    {
+      "key": "position",
+      "label": "Cervical position",
+      "options": [
+        { "label": "Posterior", "points": 0 },
+        { "label": "Mid-position", "points": 1 },
+        { "label": "Anterior", "points": 2 }
+      ]
+    }
+  ],
+  "interpretation": [
+    { "min": 0, "max": 5, "label": "Unfavorable", "risk": "Higher induction-failure and cesarean risk — cervical ripening (prostaglandin or mechanical) before oxytocin is usually indicated", "severity": "moderate" },
+    { "min": 6, "max": 7, "label": "Intermediate", "risk": "Borderline — ripening agents are still reasonable depending on the full clinical picture", "severity": "low" },
+    { "min": 8, "max": 13, "label": "Favorable", "risk": "Vaginal-delivery success rate similar to spontaneous labor — oxytocin induction alone is reasonable", "severity": "info" }
+  ],
+  "notes": "The classic cutoff is ≥ 8 = favorable, ≤ 6 = unfavorable; some protocols use < 6 rather than ≤ 6 as the unfavorable threshold — check your local induction protocol. A modified 3-component version (dilation, effacement, station only) is sometimes used and correlates well, but the full 5-component score is what's validated and reported in the original literature.",
+  "buildNote": "Standard additive engine, 5 items summing to 0-13."
+}

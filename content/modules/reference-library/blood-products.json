@@ -198,7 +198,8 @@
     "teg-rotem-interpretation",
     "septic-shock-resuscitation",
     "meld-na",
-    "shock-classification"
+    "shock-classification",
+    "transfusion-reactions"
   ],
-  "buildNote": "Tier 3. Pairs with anticoagulation-reversal and the new teg-rotem-interpretation module. `early-calcium-minimal-transfusion.html` (calcium in massive transfusion / the 'lethal diamond') is a further section to add here or as its own module. Feeds a future ABC-score / massive-transfusion-protocol module."
+  "buildNote": "Tier 3. Pairs with anticoagulation-reversal and the new teg-rotem-interpretation module. `early-calcium-minimal-transfusion.html` (calcium in massive transfusion / the 'lethal diamond') is a further section to add here or as its own module. Feeds a future ABC-score / massive-transfusion-protocol module. transfusion-reactions covers what to do when a transfusion goes wrong (this module covers product selection/thresholds only) — cross-linked 2026-09-14."
 }
