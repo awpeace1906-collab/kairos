@@ -1547,6 +1547,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-08"
     },
+    "drug-dosing/dosing-fluid-math/calcium-chloride-gluconate": {
+      "content_version": 1,
+      "hash": "35f3ee8d69e2ac2c",
+      "path": "modules/drug-dosing/dosing-fluid-math/calcium-chloride-gluconate.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "drug-dosing/dosing-fluid-math/cockcroft-gault": {
       "content_version": 2,
       "hash": "44e6cf8033d068de",
@@ -1564,6 +1573,15 @@
       "section": "Drug & Dosing Cards",
       "review_tier": 1,
       "next_review_due": "2026-12-01"
+    },
+    "drug-dosing/dosing-fluid-math/high-dose-naloxone-nalmefene": {
+      "content_version": 1,
+      "hash": "0be8e89dba23c3b6",
+      "path": "modules/drug-dosing/dosing-fluid-math/high-dose-naloxone-nalmefene.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "drug-dosing/dosing-fluid-math/holliday-segar-maintenance-fluids": {
       "content_version": 2,
@@ -1597,6 +1615,24 @@
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
       "review_tier": "stable"
+    },
+    "drug-dosing/dosing-fluid-math/push-dose-pressors": {
+      "content_version": 1,
+      "hash": "a8072f317f3405e9",
+      "path": "modules/drug-dosing/dosing-fluid-math/push-dose-pressors.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "drug-dosing/dosing-fluid-math/sodium-bicarbonate": {
+      "content_version": 1,
+      "hash": "de63c0575cf7aab0",
+      "path": "modules/drug-dosing/dosing-fluid-math/sodium-bicarbonate.json",
+      "contentType": "anesthesia-drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "drug-dosing/dosing-fluid-math/steroid-conversion": {
       "content_version": 1,
@@ -1841,6 +1877,15 @@
       "review_tier": 1,
       "next_review_due": "2027-09-03"
     },
+    "peds-module/nat-ten4-facesp-screening": {
+      "content_version": 1,
+      "hash": "2cd672f2e703803c",
+      "path": "modules/peds-module/nat-ten4-facesp-screening.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "peds-module/neonatal-growth-parameters": {
       "content_version": 1,
       "hash": "cd86f7530fa599e8",
@@ -1994,6 +2039,15 @@
       "review_tier": 1,
       "next_review_due": "2027-03-07"
     },
+    "peds-module/peds-procedural-sedation": {
+      "content_version": 1,
+      "hash": "415a43134d0acc7d",
+      "path": "modules/peds-module/peds-procedural-sedation.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "peds-module/peds-rsi-decision-card": {
       "content_version": 1,
       "hash": "d78c19b563e20e74",
@@ -2002,6 +2056,15 @@
       "section": "Peds Module",
       "review_tier": 1,
       "next_review_due": "2027-03-03"
+    },
+    "peds-module/peds-trauma-resuscitation": {
+      "content_version": 1,
+      "hash": "bcbdb1db78320e6a",
+      "path": "modules/peds-module/peds-trauma-resuscitation.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "peds-module/prematurity-complications": {
       "content_version": 1,
@@ -2020,6 +2083,24 @@
       "section": "Peds Module",
       "review_tier": 1,
       "next_review_due": "2027-09-03"
+    },
+    "procedures/abscess-incision-drainage": {
+      "content_version": 1,
+      "hash": "0ca89ad15a3f78c2",
+      "path": "modules/procedures/abscess-incision-drainage.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "procedures/adult-synchronized-cardioversion": {
+      "content_version": 1,
+      "hash": "12edb3c1f09dac51",
+      "path": "modules/procedures/adult-synchronized-cardioversion.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "procedures/airway-management-flow": {
       "content_version": 3,
@@ -2066,6 +2147,24 @@
       "review_tier": 1,
       "next_review_due": "2026-12-15"
     },
+    "procedures/escharotomy": {
+      "content_version": 1,
+      "hash": "1f15b664f1559e44",
+      "path": "modules/procedures/escharotomy.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "procedures/foreign-body-removal": {
+      "content_version": 1,
+      "hash": "7d80283695072559",
+      "path": "modules/procedures/foreign-body-removal.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "procedures/fracture-splinting-guide": {
       "content_version": 2,
       "hash": "2ed9c905e4ebd76d",
@@ -2097,6 +2196,15 @@
       "content_version": 1,
       "hash": "9cf41acd05d338d9",
       "path": "modules/procedures/lumbar-puncture.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "procedures/nasogastric-orogastric-tube-placement": {
+      "content_version": 1,
+      "hash": "95ccdcdee49bb0ab",
+      "path": "modules/procedures/nasogastric-orogastric-tube-placement.json",
       "contentType": "procedure",
       "section": "Procedures",
       "review_tier": 1,
@@ -2156,6 +2264,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-04"
     },
+    "procedures/precipitous-vaginal-delivery": {
+      "content_version": 1,
+      "hash": "c6f865ff08114b1a",
+      "path": "modules/procedures/precipitous-vaginal-delivery.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "procedures/procedural-sedation-workflow": {
       "content_version": 1,
       "hash": "d15676aafa5b6212",
@@ -2182,6 +2299,15 @@
       "section": "Procedures",
       "review_tier": 1,
       "next_review_due": "2026-12-13"
+    },
+    "procedures/urinary-catheterization": {
+      "content_version": 1,
+      "hash": "97193bdf8ff082fc",
+      "path": "modules/procedures/urinary-catheterization.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/abg-interpretation": {
       "content_version": 3,

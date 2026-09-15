@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 759,
+  "count": 788,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -510,6 +510,18 @@
           "title": "Pediatric Burn Management",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/pediatric-burn-management"
+        }
+      ]
+    },
+    {
+      "text": "American College of Obstetricians and Gynecologists (ACOG) guidance on delayed umbilical cord clamping.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "precipitous-vaginal-delivery",
+          "title": "Precipitous Vaginal Delivery",
+          "section": "Procedures",
+          "route": "/procedures/obstetric-delivery/precipitous-vaginal-delivery"
         }
       ]
     },
@@ -1318,6 +1330,18 @@
       ]
     },
     {
+      "text": "Green SM, et al. Clinical Practice Guideline for Emergency Department Ketamine Dissociative Sedation: 2011 Update.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "peds-procedural-sedation",
+          "title": "Pediatric Procedural Sedation",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-procedural-sedation"
+        }
+      ]
+    },
+    {
       "text": "Greer DM, Kirschen MP, Lewis A, et al. Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Guideline. Neurology. 2023;101(24):1112-1132 (AAN/AAP/CNS/SCCM).",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1602,6 +1626,18 @@
           "title": "Shock Classification & Bedside Diagnosis",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/shock-classification"
+        }
+      ]
+    },
+    {
+      "text": "Neumar RW, et al. Adult Advanced Cardiovascular Life Support: American Heart Association Guidelines.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "adult-synchronized-cardioversion",
+          "title": "Adult Synchronized Cardioversion",
+          "section": "Procedures",
+          "route": "/procedures/cardiac-procedures/adult-synchronized-cardioversion"
         }
       ]
     },
@@ -2452,6 +2488,18 @@
       ]
     },
     {
+      "text": "Gaspari RJ, et al. A randomized controlled trial of incision and drainage versus ultrasonographically guided needle aspiration for skin abscesses. Ann Emerg Med. 2011.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "abscess-incision-drainage",
+          "title": "Abscess Incision & Drainage",
+          "section": "Procedures",
+          "route": "/procedures/wound-fracture-care/abscess-incision-drainage"
+        }
+      ]
+    },
+    {
       "text": "Girard TD, Kress JP, Fuchs BD, et al. Efficacy and safety of a paired sedation and ventilator weaning protocol for mechanically ventilated patients in intensive care (Awakening and Breathing Controlled trial). Lancet. 2008;371(9607):126-134",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -2736,6 +2784,18 @@
           "title": "Ottawa SAH Rule",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/ottawa-sah-rule"
+        }
+      ]
+    },
+    {
+      "text": "Pierce MC, et al. Validation of a Clinical Decision Rule to Predict Abuse in Young Children Based on Bruising Characteristics. JAMA Netw Open. 2021.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "nat-ten4-facesp-screening",
+          "title": "TEN-4-FACESp Bruising Screening (Non-Accidental Trauma)",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/nat-ten4-facesp-screening"
         }
       ]
     },
@@ -3360,6 +3420,18 @@
           "title": "Pediatric Appendicitis Risk Calculator (pARC)",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/pediatric-appendicitis-risk-calculator"
+        }
+      ]
+    },
+    {
+      "text": "Criteria and validation statistics (96% sensitivity, 87% specificity in children < 4 years) WebSearch-verified before writing.",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "nat-ten4-facesp-screening",
+          "title": "TEN-4-FACESp Bruising Screening (Non-Accidental Trauma)",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/nat-ten4-facesp-screening"
         }
       ]
     },
@@ -4008,6 +4080,18 @@
           "title": "Tube Thoracostomy (Chest Tube)",
           "section": "Procedures",
           "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
+        }
+      ]
+    },
+    {
+      "text": "ATLS 10th edition — Pediatric Trauma chapter.",
+      "group": "Reference texts & drug libraries",
+      "usedBy": [
+        {
+          "id": "peds-trauma-resuscitation",
+          "title": "Pediatric Trauma Resuscitation",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-trauma-resuscitation"
         }
       ]
     },
@@ -4810,6 +4894,30 @@
       ]
     },
     {
+      "text": "American Burn Association. Advanced Burn Life Support (ABLS) course materials — escharotomy indications and technique.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "escharotomy",
+          "title": "Escharotomy",
+          "section": "Procedures",
+          "route": "/procedures/wound-fracture-care/escharotomy"
+        }
+      ]
+    },
+    {
+      "text": "American College of Emergency Physicians Clinical Policy: Procedural Sedation and Analgesia in the Emergency Department.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-procedural-sedation",
+          "title": "Pediatric Procedural Sedation",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-procedural-sedation"
+        }
+      ]
+    },
+    {
       "text": "American College of Medical Toxicology position statement on the use of intravenous lipid emulsion (ILE)",
       "group": "Other primary sources",
       "usedBy": [
@@ -4830,6 +4938,18 @@
           "title": "DKA & HHS — Adult Management",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/dka-hhs-adult-management"
+        }
+      ]
+    },
+    {
+      "text": "American Heart Association. 2025 ACLS Electrical Cardioversion Algorithm.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "adult-synchronized-cardioversion",
+          "title": "Adult Synchronized Cardioversion",
+          "section": "Procedures",
+          "route": "/procedures/cardiac-procedures/adult-synchronized-cardioversion"
         }
       ]
     },
@@ -5344,6 +5464,18 @@
       ]
     },
     {
+      "text": "CDC guidance on catheter-associated urinary tract infection (CAUTI) prevention.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "urinary-catheterization",
+          "title": "Urinary Catheterization",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/urinary-catheterization"
+        }
+      ]
+    },
+    {
       "text": "CDC. Antiretroviral Postexposure Prophylaxis After Sexual, Injection Drug Use, or Other Nonoccupational Exposure to HIV — United States, 2025 Update. MMWR Recomm Rep. 2025;74(1).",
       "group": "Other primary sources",
       "usedBy": [
@@ -5514,6 +5646,18 @@
           "title": "Cockcroft-Gault Creatinine Clearance",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/dosing-fluid-math/cockcroft-gault"
+        }
+      ]
+    },
+    {
+      "text": "Concentration/dilution math cross-checked against the existing drug-concentration-math reference's push-dose callout (same numbers, expanded here into a full card).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "push-dose-pressors",
+          "title": "Push-Dose Pressors",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/dosing-fluid-math/push-dose-pressors"
         }
       ]
     },
@@ -6178,6 +6322,18 @@
       ]
     },
     {
+      "text": "Davies PH, Benger JR. Foreign bodies in the nose and ear: a review of techniques for removal in the emergency department. J Accid Emerg Med. 2000.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "foreign-body-removal",
+          "title": "Foreign Body Removal",
+          "section": "Procedures",
+          "route": "/procedures/wound-fracture-care/foreign-body-removal"
+        }
+      ]
+    },
+    {
       "text": "Davis KG. Acute management of white phosphorus burn. Mil Med. 2002;167(1):83-84",
       "group": "Other primary sources",
       "usedBy": [
@@ -6442,6 +6598,18 @@
       ]
     },
     {
+      "text": "Efficacy/safety comparison to standard-dose naloxone — no proven survival benefit, increased withdrawal severity — WebSearch-verified before writing, consistent with this app's existing tox-opioids reference's standard-dose-first philosophy.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "high-dose-naloxone-nalmefene",
+          "title": "High-Dose Intranasal Naloxone & Nalmefene",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/dosing-fluid-math/high-dose-naloxone-nalmefene"
+        }
+      ]
+    },
+    {
       "text": "Einersen PM et al. Rapid TEG thresholds for goal-directed resuscitation. J Trauma Acute Care Surg 2017;82(1):114-119",
       "group": "Other primary sources",
       "usedBy": [
@@ -6550,6 +6718,30 @@
       ]
     },
     {
+      "text": "Existing hyperkalemia-management card's bicarbonate caveat (this card covers the OTHER indications — TCA overdose and salicylate toxicity — where bicarbonate has a much clearer role than in routine hyperkalemia).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "sodium-bicarbonate",
+          "title": "Sodium Bicarbonate",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/dosing-fluid-math/sodium-bicarbonate"
+        }
+      ]
+    },
+    {
+      "text": "Existing hyperkalemia-management card's calcium dosing (this card generalizes that same dosing to its other indications, not restating the hyperkalemia-specific algorithm).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "calcium-chloride-gluconate",
+          "title": "Calcium Chloride & Calcium Gluconate",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/dosing-fluid-math/calcium-chloride-gluconate"
+        }
+      ]
+    },
+    {
       "text": "EXTRIP workgroup — digoxin (dialysis not recommended; Fab is definitive)",
       "group": "Other primary sources",
       "usedBy": [
@@ -6582,6 +6774,30 @@
           "title": "Hemorrhagic Shock & Massive Transfusion",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/hemorrhagic-shock-mtp"
+        }
+      ]
+    },
+    {
+      "text": "FDA approval: Kloxxado (naloxone 8mg intranasal), April 2021.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "high-dose-naloxone-nalmefene",
+          "title": "High-Dose Intranasal Naloxone & Nalmefene",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/dosing-fluid-math/high-dose-naloxone-nalmefene"
+        }
+      ]
+    },
+    {
+      "text": "FDA approval: Opvee (nalmefene 2.7mg intranasal), for ages ≥ 12.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "high-dose-naloxone-nalmefene",
+          "title": "High-Dose Intranasal Naloxone & Nalmefene",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/dosing-fluid-math/high-dose-naloxone-nalmefene"
         }
       ]
     },
@@ -6630,6 +6846,18 @@
           "title": "HEART Score for Major Cardiac Events",
           "section": "Calculators",
           "route": "/calculators/cardiovascular-chest-pain-arrhythmia/heart-score"
+        }
+      ]
+    },
+    {
+      "text": "Fitch MT, et al. Videos in clinical medicine. Abscess incision and drainage. N Engl J Med. 2007;357(19):e20.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "abscess-incision-drainage",
+          "title": "Abscess Incision & Drainage",
+          "section": "Procedures",
+          "route": "/procedures/wound-fracture-care/abscess-incision-drainage"
         }
       ]
     },
@@ -7534,6 +7762,18 @@
       ]
     },
     {
+      "text": "Loop-drainage-vs-packing comparative outcome data reflects the growing shift away from routine packing for simple abscesses.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "abscess-incision-drainage",
+          "title": "Abscess Incision & Drainage",
+          "section": "Procedures",
+          "route": "/procedures/wound-fracture-care/abscess-incision-drainage"
+        }
+      ]
+    },
+    {
       "text": "Loukas M, et al. A review of the anatomy of the pericardium and pericardiocentesis technique. Clin Anat. 2012.",
       "group": "Other primary sources",
       "usedBy": [
@@ -7888,6 +8128,18 @@
       ]
     },
     {
+      "text": "National Battery Ingestion Hotline / Poison Control button-battery management guidance.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "foreign-body-removal",
+          "title": "Foreign Body Removal",
+          "section": "Procedures",
+          "route": "/procedures/wound-fracture-care/foreign-body-removal"
+        }
+      ]
+    },
+    {
       "text": "National Heart, Lung, and Blood Institute ARDS Clinical Trials Network. Comparison of two fluid-management strategies in acute lung injury (FACTT). N Engl J Med. 2006;354:2564-2575",
       "group": "Other primary sources",
       "usedBy": [
@@ -8070,6 +8322,18 @@
           "title": "MELD-Na Score",
           "section": "Calculators",
           "route": "/calculators/gi-renal-metabolic/meld-na"
+        }
+      ]
+    },
+    {
+      "text": "Orgill DP, Piccolo N. Escharotomy and decompressive therapies in burns. J Burn Care Res. 2009.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "escharotomy",
+          "title": "Escharotomy",
+          "section": "Procedures",
+          "route": "/procedures/wound-fracture-care/escharotomy"
         }
       ]
     },
@@ -8968,6 +9232,30 @@
       ]
     },
     {
+      "text": "Standard critical-care/emergency-medicine nursing and physician procedural references for NG/OG tube placement and confirmation.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "nasogastric-orogastric-tube-placement",
+          "title": "Nasogastric & Orogastric Tube Placement",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/nasogastric-orogastric-tube-placement"
+        }
+      ]
+    },
+    {
+      "text": "Standard critical-care/toxicology dosing references for calcium in CCB overdose and citrate toxicity.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "calcium-chloride-gluconate",
+          "title": "Calcium Chloride & Calcium Gluconate",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/dosing-fluid-math/calcium-chloride-gluconate"
+        }
+      ]
+    },
+    {
       "text": "Standard EM references (AEIOU-TIPS mnemonic); ACEP clinical policy on altered mental status",
       "group": "Other primary sources",
       "usedBy": [
@@ -8976,6 +9264,30 @@
           "title": "Altered Mental Status (AEIOU-TIPS)",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/altered-mental-status"
+        }
+      ]
+    },
+    {
+      "text": "Standard emergency medicine/nursing procedural references for urethral and suprapubic catheterization.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "urinary-catheterization",
+          "title": "Urinary Catheterization",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/urinary-catheterization"
+        }
+      ]
+    },
+    {
+      "text": "Standard EMS/emergency medicine field-delivery procedural references.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "precipitous-vaginal-delivery",
+          "title": "Precipitous Vaginal Delivery",
+          "section": "Procedures",
+          "route": "/procedures/obstetric-delivery/precipitous-vaginal-delivery"
         }
       ]
     },
@@ -9024,6 +9336,18 @@
           "title": "Meropenem",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/antimicrobial-dosing/meropenem"
+        }
+      ]
+    },
+    {
+      "text": "Standard toxicology references for TCA sodium-channel-blockade management and salicylate alkalinization targets.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "sodium-bicarbonate",
+          "title": "Sodium Bicarbonate",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/dosing-fluid-math/sodium-bicarbonate"
         }
       ]
     },
@@ -9268,6 +9592,18 @@
       ]
     },
     {
+      "text": "TXA pediatric dosing (15 mg/kg load, max 1 g, then 2 mg/kg/h infusion for at least 8h) WebSearch-verified before writing.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-trauma-resuscitation",
+          "title": "Pediatric Trauma Resuscitation",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-trauma-resuscitation"
+        }
+      ]
+    },
+    {
       "text": "Uddin S, et al. Dexmedetomidine Induced Polyuria in the Intensive Care Unit. Case Reports in Critical Care. 2021. doi:10.1155/2021/8850116",
       "group": "Other primary sources",
       "usedBy": [
@@ -9396,6 +9732,18 @@
           "title": "Acute Radiation Syndrome & Radiological Casualties",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/acute-radiation-syndrome"
+        }
+      ]
+    },
+    {
+      "text": "Weingart S. Push-dose pressors for immediate blood pressure control. Clin Exp Emerg Med. 2015;2(2):131-132.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "push-dose-pressors",
+          "title": "Push-Dose Pressors",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/dosing-fluid-math/push-dose-pressors"
         }
       ]
     },

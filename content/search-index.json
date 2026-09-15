@@ -3614,6 +3614,40 @@
       ]
     },
     {
+      "id": "calcium-chloride-gluconate",
+      "title": "Calcium Chloride & Calcium Gluconate",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "calcium chloride",
+        "calcium gluconate",
+        "hyperkalemia",
+        "calcium channel blocker overdose",
+        "hypocalcemia",
+        "ED",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "chloride delivers 3 times the elemental calcium per gram versus gluconate",
+        "chloride via central line only, causes severe tissue necrosis on peripheral extravasation, gluconate is peripheral-safe",
+        "membrane-stabilizing for hyperkalemia and CCB overdose does not itself lower potassium",
+        "massive transfusion citrate toxicity is a real, under-recognized indication",
+        "IV calcium",
+        "calcium for hyperkalemia",
+        "calcium for CCB overdose",
+        "calcium for citrate toxicity",
+        "calcium for hypocalcemia"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/dosing-fluid-math/calcium-chloride-gluconate",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or"
+      ]
+    },
+    {
       "id": "cockcroft-gault",
       "title": "Cockcroft-Gault Creatinine Clearance",
       "section": "Drug & Dosing Cards",
@@ -3663,6 +3697,38 @@
       "settingEmphasis": [
         "icu",
         "ed"
+      ]
+    },
+    {
+      "id": "high-dose-naloxone-nalmefene",
+      "title": "High-Dose Intranasal Naloxone & Nalmefene",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "naloxone",
+        "nalmefene",
+        "opioid overdose",
+        "fentanyl",
+        "ED",
+        "prehospital"
+      ],
+      "keywords": [
+        "Kloxxado is FDA-approved 8mg intranasal naloxone, twice the standard Narcan 4mg dose",
+        "Opvee is FDA-approved 2.7mg intranasal nalmefene, longer half-life than naloxone",
+        "neither has shown a proven survival benefit over standard-dose naloxone",
+        "both carry a real risk of more severe and more protracted precipitated withdrawal",
+        "standard-dose naloxone with retitration and an infusion for recurrence remains the evidence-based default",
+        "Kloxxado",
+        "Opvee",
+        "8mg naloxone",
+        "nalmefene nasal spray",
+        "fentanyl-era opioid reversal"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/dosing-fluid-math/high-dose-naloxone-nalmefene",
+      "settingEmphasis": [
+        "ed",
+        "prehospital"
       ]
     },
     {
@@ -3741,6 +3807,71 @@
       "settingEmphasis": [
         "ed",
         "prehospital",
+        "icu"
+      ]
+    },
+    {
+      "id": "push-dose-pressors",
+      "title": "Push-Dose Pressors",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "push-dose pressor",
+        "phenylephrine",
+        "epinephrine",
+        "hypotension",
+        "peri-intubation",
+        "ED",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "phenylephrine 100mcg/mL is 1mL of the 10mg/mL vial diluted to 100mL, give 50-200mcg IV push",
+        "epinephrine push-dose 10mcg/mL from the 1:10,000 arrest syringe, give 5-20mcg IV push",
+        "a bridge to definitive fluids or an infusion, not a substitute for treating the underlying cause",
+        "label every syringe, concentration confusion here is a real medication-error risk",
+        "push-dose phenylephrine",
+        "push-dose epinephrine",
+        "peri-intubation pressor",
+        "code-adjacent vasopressor bolus"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/dosing-fluid-math/push-dose-pressors",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or"
+      ]
+    },
+    {
+      "id": "sodium-bicarbonate",
+      "title": "Sodium Bicarbonate",
+      "section": "Drug & Dosing Cards",
+      "category": "Dosing & Fluid Math",
+      "tags": [
+        "sodium bicarbonate",
+        "TCA overdose",
+        "salicylate toxicity",
+        "urine alkalinization",
+        "acidosis",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "TCA overdose is the clearest indication, target arterial pH 7.5-7.55, treat a widening QRS not just an acidotic gas",
+        "salicylate toxicity needs BOTH serum alkalinization AND urine alkalinization with potassium repletion, urine pH is the real target not serum",
+        "NOT for routine cardiac arrest or routine severe acidosis outside these specific indications",
+        "sodium and volume load matters in heart failure or renal failure patients",
+        "NaHCO3",
+        "bicarb push",
+        "TCA overdose bicarb",
+        "urine alkalinization",
+        "salicylate alkalinization"
+      ],
+      "contentType": "anesthesia-drug-card",
+      "route": "/drug-dosing/dosing-fluid-math/sodium-bicarbonate",
+      "settingEmphasis": [
+        "ed",
         "icu"
       ]
     },
@@ -5999,6 +6130,37 @@
       ]
     },
     {
+      "id": "peds-procedural-sedation",
+      "title": "Pediatric Procedural Sedation",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "procedural sedation",
+        "ketamine",
+        "peds",
+        "fracture reduction",
+        "ED"
+      ],
+      "keywords": [
+        "ketamine is the peds ED workhorse, different dose and monitoring than RSI ketamine",
+        "NPO status is a risk-modifying factor not an absolute contraindication for urgent sedation",
+        "capnography catches hypoventilation minutes before pulse oximetry does",
+        "recovery agitation is common and usually self-limited, distinct from a true adverse event",
+        "peds sedation",
+        "ketamine sedation child",
+        "fracture reduction sedation peds",
+        "NPO guidelines sedation"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-procedural-sedation",
+      "settingEmphasis": [
+        "ed"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
       "id": "peds-rsi-decision-card",
       "title": "Pediatric RSI — Decision & Dosing Card",
       "section": "Peds Module",
@@ -6027,6 +6189,40 @@
         "ed",
         "icu",
         "prehospital"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
+      "id": "peds-trauma-resuscitation",
+      "title": "Pediatric Trauma Resuscitation",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "trauma",
+        "hemorrhagic shock",
+        "TXA",
+        "massive transfusion",
+        "peds",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "a normal blood pressure does NOT rule out significant shock in a child, hypotension is a late finding",
+        "tachycardia and narrowed pulse pressure are the earlier warning signs",
+        "TXA 15mg/kg load max 1g then 2mg/kg/h for at least 8 hours",
+        "PRBC bolus 10mL/kg, weight-based massive transfusion ratios mirror the adult 1:1:1 concept",
+        "peds trauma",
+        "pediatric massive transfusion",
+        "peds TXA dosing",
+        "compensated shock child"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-trauma-resuscitation",
+      "settingEmphasis": [
+        "ed",
+        "icu"
       ],
       "audience": [
         "peds"
@@ -6065,6 +6261,38 @@
       "route": "/peds-module/peds-resuscitation-decision-support/peds-pre-arrival-card",
       "settingEmphasis": [
         "prehospital",
+        "ed"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
+      "id": "nat-ten4-facesp-screening",
+      "title": "TEN-4-FACESp Bruising Screening (Non-Accidental Trauma)",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "non-accidental trauma",
+        "child abuse",
+        "bruising",
+        "TEN-4-FACESp",
+        "peds",
+        "ED"
+      ],
+      "keywords": [
+        "torso ears neck are TEN, any bruising in an infant under 4.99 months is the 4, FACESp is frenulum angle of jaw cheeks eyelids subconjunctival patterned",
+        "96 percent sensitive 87 percent specific for children under 4 years",
+        "a pre-mobile infant should not have bruises from normal activity",
+        "positive screen means document photograph and involve your child-protection pathway, not accuse",
+        "child abuse bruising rule",
+        "bruising clinical decision rule",
+        "non-accidental trauma screening",
+        "NAT bruising"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/nat-ten4-facesp-screening",
+      "settingEmphasis": [
         "ed"
       ],
       "audience": [
@@ -6253,6 +6481,36 @@
       ]
     },
     {
+      "id": "nasogastric-orogastric-tube-placement",
+      "title": "Nasogastric & Orogastric Tube Placement",
+      "section": "Procedures",
+      "category": "Aspiration & Drainage Procedures",
+      "tags": [
+        "nasogastric tube",
+        "orogastric tube",
+        "gastric decompression",
+        "ED",
+        "ICU",
+        "procedure"
+      ],
+      "keywords": [
+        "basilar skull fracture and significant midface trauma are contraindications to the nasal route, use orogastric instead",
+        "measure nose to ear to xiphoid for estimated insertion depth",
+        "auscultation alone does not reliably confirm placement, get a chest x-ray before using the tube for feeding or a large volume",
+        "coiling in the airway is the feared complication, stop if resistance, coughing, or desaturation occurs",
+        "NG tube",
+        "OG tube",
+        "gastric decompression",
+        "tube confirmation chest x-ray"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/aspiration-drainage-procedures/nasogastric-orogastric-tube-placement",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "paracentesis",
       "title": "Paracentesis",
       "section": "Procedures",
@@ -6312,6 +6570,100 @@
       "settingEmphasis": [
         "ed",
         "icu"
+      ]
+    },
+    {
+      "id": "urinary-catheterization",
+      "title": "Urinary Catheterization",
+      "section": "Procedures",
+      "category": "Aspiration & Drainage Procedures",
+      "tags": [
+        "urinary catheter",
+        "Foley",
+        "urinary retention",
+        "suprapubic catheterization",
+        "ED",
+        "ICU",
+        "procedure"
+      ],
+      "keywords": [
+        "blood at the urethral meatus, a high-riding or non-palpable prostate, or perineal/scrotal hematoma after pelvic trauma means stop and get imaging before a urethral catheter",
+        "coude tip catheter for a male with suspected BPH when a standard catheter won't pass",
+        "do not force a catheter against resistance",
+        "CAUTI is a real and largely preventable complication, use only when genuinely indicated and remove promptly",
+        "Foley catheter",
+        "urethral catheterization",
+        "suprapubic catheter",
+        "blood at the meatus"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/aspiration-drainage-procedures/urinary-catheterization",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "adult-synchronized-cardioversion",
+      "title": "Adult Synchronized Cardioversion",
+      "section": "Procedures",
+      "category": "Cardiac Procedures",
+      "tags": [
+        "cardioversion",
+        "atrial fibrillation",
+        "SVT",
+        "ventricular tachycardia",
+        "unstable tachyarrhythmia",
+        "ED",
+        "ICU",
+        "procedure"
+      ],
+      "keywords": [
+        "for an unstable patient with a pulse and a tachyarrhythmia, synchronized not unsynchronized",
+        "2025 AHA algorithm 200J for AFib and AFlutter, 100J for narrow SVT and monomorphic VT",
+        "sync mode resets to off after every shock, re-enable it before each subsequent attempt",
+        "polymorphic VT is treated as unsynchronized defibrillation, not synchronized cardioversion, since sync can't reliably find an R wave",
+        "synchronized cardioversion",
+        "electrical cardioversion",
+        "unstable tachyarrhythmia shock"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/cardiac-procedures/adult-synchronized-cardioversion",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "precipitous-vaginal-delivery",
+      "title": "Precipitous Vaginal Delivery",
+      "section": "Procedures",
+      "category": "Obstetric Delivery",
+      "tags": [
+        "delivery",
+        "precipitous labor",
+        "obstetric emergency",
+        "newborn",
+        "ED",
+        "prehospital",
+        "procedure"
+      ],
+      "keywords": [
+        "support the perineum, guide not pull, let the head deliver between contractions",
+        "check for a nuchal cord and reduce it or clamp-and-cut only if truly required",
+        "suction only if there is visible obstruction, routine suctioning of a vigorous newborn is no longer recommended",
+        "delayed cord clamping for an uncomplicated vigorous newborn, roughly 30-60 seconds",
+        "this covers the mechanics of an otherwise normal delivery — see obstetric-delivery-emergencies for shoulder dystocia, cord prolapse, and abruption",
+        "emergency delivery",
+        "delivering a baby in the ED",
+        "precipitous labor",
+        "catching a baby"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/obstetric-delivery/precipitous-vaginal-delivery",
+      "settingEmphasis": [
+        "ed",
+        "prehospital"
       ]
     },
     {
@@ -6579,6 +6931,35 @@
       ]
     },
     {
+      "id": "abscess-incision-drainage",
+      "title": "Abscess Incision & Drainage",
+      "section": "Procedures",
+      "category": "Wound & Fracture Care",
+      "tags": [
+        "abscess",
+        "incision and drainage",
+        "I&D",
+        "MRSA",
+        "ED",
+        "procedure"
+      ],
+      "keywords": [
+        "ultrasound confirms a drainable fluid collection versus cellulitis before cutting",
+        "loop drainage technique has equivalent cure with less pain than packing for many abscesses",
+        "antibiotics are indicated for MRSA-endemic areas, systemic signs, immunocompromise, or a large abscess with surrounding cellulitis, not for a small simple abscess after adequate drainage",
+        "packing is not mandatory for every abscess, evidence increasingly favors selective/no packing for small simple ones",
+        "I&D",
+        "abscess drainage",
+        "loop drainage technique",
+        "packing vs no packing"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/wound-fracture-care/abscess-incision-drainage",
+      "settingEmphasis": [
+        "ed"
+      ]
+    },
+    {
       "id": "ed-joint-reductions",
       "title": "ED Joint Reductions — Shoulder, Elbow, Patella, Digit",
       "section": "Procedures",
@@ -6605,6 +6986,69 @@
       ],
       "contentType": "procedure",
       "route": "/procedures/wound-fracture-care/ed-joint-reductions",
+      "settingEmphasis": [
+        "ed"
+      ]
+    },
+    {
+      "id": "escharotomy",
+      "title": "Escharotomy",
+      "section": "Procedures",
+      "category": "Wound & Fracture Care",
+      "tags": [
+        "escharotomy",
+        "circumferential burn",
+        "compartment syndrome",
+        "burns",
+        "ED",
+        "ICU",
+        "procedure"
+      ],
+      "keywords": [
+        "indicated for a circumferential full-thickness burn causing vascular compromise in a limb or restrictive ventilation on the chest",
+        "clinical diagnosis — diminished or absent distal pulses, worsening capillary refill, paresthesia, or rising peak airway pressures with a chest wall burn",
+        "incise through the eschar only, into the underlying fat, not muscle — that would be a fasciotomy for a different indication",
+        "midaxial line for limbs avoiding named neurovascular structures, bilateral mid-axillary lines connected for chest wall",
+        "burn compartment syndrome",
+        "circumferential burn release",
+        "chest wall escharotomy"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/wound-fracture-care/escharotomy",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "foreign-body-removal",
+      "title": "Foreign Body Removal",
+      "section": "Procedures",
+      "category": "Wound & Fracture Care",
+      "tags": [
+        "foreign body",
+        "ENT",
+        "ophthalmology",
+        "soft tissue",
+        "button battery",
+        "ED",
+        "procedure"
+      ],
+      "keywords": [
+        "button battery in the nose or ear is a true emergency, tissue necrosis starts within hours",
+        "button battery in the esophagus is also emergent, remove within 2 hours if possible",
+        "a stomach button battery in an asymptomatic child over 5 or with a battery under 20mm can often be observed",
+        "irrigation is first-line for many ear/nose foreign bodies before instrumentation",
+        "plain radiography misses organic and most glass-thin material, ultrasound or CT if suspicion remains high after a negative X-ray",
+        "FB removal",
+        "ear foreign body",
+        "nasal foreign body",
+        "button battery",
+        "soft tissue foreign body",
+        "corneal foreign body"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/wound-fracture-care/foreign-body-removal",
       "settingEmphasis": [
         "ed"
       ]

@@ -1,0 +1,39 @@
+{
+  "id": "sodium-bicarbonate",
+  "section": "Drug & Dosing Cards",
+  "category": "Dosing & Fluid Math",
+  "title": "Sodium Bicarbonate",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["NaHCO3", "bicarb push", "TCA overdose bicarb", "urine alkalinization", "salicylate alkalinization"],
+  "tags": ["sodium bicarbonate", "TCA overdose", "salicylate toxicity", "urine alkalinization", "acidosis", "ED", "ICU"],
+  "keywords": ["TCA overdose is the clearest indication, target arterial pH 7.5-7.55, treat a widening QRS not just an acidotic gas", "salicylate toxicity needs BOTH serum alkalinization AND urine alkalinization with potassium repletion, urine pH is the real target not serum", "NOT for routine cardiac arrest or routine severe acidosis outside these specific indications", "sodium and volume load matters in heart failure or renal failure patients"],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Existing hyperkalemia-management card's bicarbonate caveat (this card covers the OTHER indications — TCA overdose and salicylate toxicity — where bicarbonate has a much clearer role than in routine hyperkalemia).",
+    "Standard toxicology references for TCA sodium-channel-blockade management and salicylate alkalinization targets."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5). Bicarbonate for hyperkalemia is already covered (and appropriately caveated as low-value) in hyperkalemia-management.json — this card's value is the two indications where bicarbonate is genuinely first-line and high-value: TCA overdose and salicylate toxicity." }
+  ],
+  "drugClass": "emergency",
+  "drugClassLabel": "Alkalinizing agent / antidote",
+  "mechanism": "In TCA (and other sodium-channel-blocking drug) overdose, sodium bicarbonate works through TWO mechanisms: the sodium load helps overcome competitive sodium-channel blockade, and alkalinization reduces the drug's affinity for the sodium channel — both push toward narrowing a widened QRS and reducing arrhythmia risk. In salicylate toxicity, alkalinizing the SERUM shifts salicylate out of the CNS (ion trapping — less of the un-ionized, CNS-penetrant form), while alkalinizing the URINE traps ionized salicylate for excretion (the same ion-trapping principle applied to renal elimination).",
+  "onset": "Minutes for the serum pH/sodium-load effect; urine pH change takes longer and needs to be actively monitored and titrated.",
+  "duration": "Short — typically given as repeated boluses and/or a continuous infusion, not a one-time fix.",
+  "dosing": "TCA overdose (or other sodium-channel-blocking drug with a widened QRS): 1-2 mEq/kg IV bolus, repeated to a target arterial pH of 7.50-7.55 — treat the QRS WIDTH and the clinical picture, not just an acidotic blood gas; a TCA-overdose patient with a NORMAL pH but a widening QRS still needs bicarbonate. Follow with a continuous infusion (e.g. 150 mEq NaHCO3 in 1L D5W, titrated) to maintain the target pH once the QRS narrows.\nSalicylate toxicity: bolus 1-2 mEq/kg IV, then a continuous infusion (commonly 150 mEq NaHCO3 in 1L D5W) targeting BOTH serum pH ~7.50-7.55 AND urine pH ≥ 7.5 — urine alkalinization is the actual therapeutic goal for enhancing salicylate elimination, and it requires ADEQUATE POTASSIUM REPLETION to achieve (a hypokalemic kidney reabsorbs potassium at the expense of excreting hydrogen ions, which defeats urine alkalinization — check and correct potassium alongside the bicarbonate infusion, not as an afterthought).",
+  "cautions": [
+    "Precautions: significant sodium and volume load — use cautiously and monitor closely in heart failure or significant renal impairment, where the sodium/volume burden itself becomes a competing risk.",
+    "Precautions: hypokalemia is common during bicarbonate therapy (both from the alkalosis itself shifting potassium intracellularly, and because achieving urine alkalinization for salicylate elimination specifically requires potassium repletion) — monitor potassium frequently and replete proactively.",
+    "Precautions: overcorrection (pH above the target range) doesn't add benefit and adds risk (worsening hypokalemia, alkalosis-related complications) — titrate to the specific target, don't just keep dosing."
+  ],
+  "pearls": [
+    "The single most important teaching point: in TCA overdose, treat based on QRS width and clinical toxicity, not a 'normal-looking' blood gas — a patient can have a widening QRS from sodium-channel blockade well before or independent of developing a measurable acidosis, and bicarbonate's benefit here is not really about correcting acidemia.",
+    "Bicarbonate for salicylate toxicity is NOT primarily about correcting the patient's acid-base status — it's a deliberate elimination-enhancement strategy (ion trapping in urine), which is why the URINE pH target matters as much as the serum pH target and why potassium repletion is a non-negotiable part of achieving it.",
+    "This card deliberately does NOT cover bicarbonate for hyperkalemia (low, largely unsupported value outside severe concurrent acidosis — see hyperkalemia-management) or for routine cardiac arrest (not a recommended routine ACLS drug outside specific circumstances like known hyperkalemia, TCA overdose, or pre-existing severe metabolic acidosis) — bicarbonate is a targeted antidote in the two indications above, not a general-purpose 'fix the pH' drug."
+  ],
+  "buildNote": "anesthesia-drug-card contentType. Deliberately scoped to the two indications (TCA overdose, salicylate toxicity) where bicarbonate is genuinely high-value and first-line, explicitly declining to re-litigate the hyperkalemia indication already covered (and appropriately caveated as lower-value) in hyperkalemia-management.json — avoids duplicating that card's content while still closing the real gap the audit identified."
+}

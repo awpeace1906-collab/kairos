@@ -1,0 +1,40 @@
+{
+  "id": "calcium-chloride-gluconate",
+  "section": "Drug & Dosing Cards",
+  "category": "Dosing & Fluid Math",
+  "title": "Calcium Chloride & Calcium Gluconate",
+  "settingEmphasis": ["ed", "icu", "or"],
+  "aliases": ["IV calcium", "calcium for hyperkalemia", "calcium for CCB overdose", "calcium for citrate toxicity", "calcium for hypocalcemia"],
+  "tags": ["calcium chloride", "calcium gluconate", "hyperkalemia", "calcium channel blocker overdose", "hypocalcemia", "ED", "ICU", "OR"],
+  "keywords": ["chloride delivers 3 times the elemental calcium per gram versus gluconate", "chloride via central line only, causes severe tissue necrosis on peripheral extravasation, gluconate is peripheral-safe", "membrane-stabilizing for hyperkalemia and CCB overdose does not itself lower potassium", "massive transfusion citrate toxicity is a real, under-recognized indication"],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Existing hyperkalemia-management card's calcium dosing (this card generalizes that same dosing to its other indications, not restating the hyperkalemia-specific algorithm).",
+    "Standard critical-care/toxicology dosing references for calcium in CCB overdose and citrate toxicity."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5). Calcium dosing already existed embedded in hyperkalemia-management.json for that specific indication; this card generalizes it into a standalone reference usable for calcium channel blocker overdose, citrate toxicity, and symptomatic hypocalcemia as well, none of which had a calcium-dosing card to point to before now." }
+  ],
+  "drugClass": "emergency",
+  "drugClassLabel": "Electrolyte / membrane stabilizer",
+  "mechanism": "Raises serum ionized calcium. In hyperkalemia and calcium channel blocker (CCB) overdose, the key effect is MEMBRANE STABILIZATION at the cardiac myocyte level — it protects against arrhythmia and improves conduction, but does NOT lower serum potassium and does NOT reverse the CCB's receptor-level effect (it's a physiologic antagonist of the downstream calcium-channel-blockade consequence, not a pharmacologic reversal agent). In hypocalcemia and citrate toxicity (from massive blood-product transfusion, which chelates calcium), it directly corrects a genuine calcium deficit.",
+  "onset": "1-3 minutes IV.",
+  "duration": "30-60 minutes — repeat dosing is often needed if the underlying process (ongoing hyperkalemia, ongoing CCB toxicity, ongoing citrate load from continued transfusion) hasn't resolved.",
+  "dosing": "Calcium gluconate: 1-3 g IV over 5-10 minutes — safe via PERIPHERAL IV.\nCalcium chloride: 1 g IV via a CENTRAL line ONLY — do not give peripherally.\nRepeat every 10-20 minutes (CCB overdose/severe hyperkalemia) or every 30 minutes (routine hyperkalemia ECG changes not improving) as needed, guided by ECG/clinical response.\nCitrate toxicity during massive transfusion: empiric calcium (gluconate typically, given the peripheral-access practicality of most transfusion scenarios) is often given proactively per massive transfusion protocol, roughly every 4 units of blood product transfused, or reactively for ionized-hypocalcemia-related hypotension/arrhythmia/prolonged QT during rapid transfusion — check institutional MTP protocol for the specific triggering rule used locally.",
+  "cautions": [
+    "CI: use with extreme caution, or avoid, in a patient on digoxin — calcium can potentiate digoxin cardiotoxicity ('stone heart' is the classically-taught but rare severe manifestation); if calcium is genuinely needed in a digoxin-toxic or digoxin-therapeutic patient with life-threatening hyperkalemia or CCB overdose, give it slowly and consider digoxin-specific antibody fragments (Fab) first/concurrently if digoxin toxicity is a real concern.",
+    "AEs: calcium chloride causes SEVERE tissue necrosis if it extravasates peripherally — this is why it's central-line-only; calcium gluconate is peripherally safe specifically because it delivers less free calcium per volume and is gentler on tissue if it does extravasate.",
+    "Precautions: calcium chloride delivers roughly 3x the elemental calcium per gram compared to calcium gluconate — this is WHY it's dosed lower (1g vs 1-3g) and reserved for central access, not an arbitrary difference; do not substitute one for the other at the same gram dose expecting the same effect.",
+    "Precautions: does NOT lower serum potassium in hyperkalemia and does NOT reverse a calcium channel blocker at the receptor level — it is a temporizing, protective measure in both cases; definitive treatment (potassium-lowering therapy; high-dose insulin/lipid emulsion/vasopressors for CCB overdose — see high-dose-insulin-euglycemia-dosing) still needs to happen."
+  ],
+  "pearls": [
+    "In hyperkalemia specifically, calcium's job is buying time and protecting the heart WHILE the potassium-lowering therapies (insulin/glucose, albuterol, etc. — see hyperkalemia-management) take effect — it's the first step of a ladder, not the whole ladder.",
+    "For CCB overdose, calcium is often used alongside high-dose insulin/euglycemia therapy and vasopressors as part of a broader toxicologic resuscitation, not as a standalone fix — see high-dose-insulin-euglycemia-dosing.",
+    "Citrate toxicity is a real, somewhat under-recognized driver of hypotension/arrhythmia during rapid massive transfusion, distinct from the hemorrhage itself — if a massively-transfused patient develops new hypotension or a prolonged QT that doesn't fit the bleeding picture, check an ionized calcium and consider empiric calcium."
+  ],
+  "buildNote": "anesthesia-drug-card contentType reused for a fixed-dose electrolyte/membrane-stabilizer rather than a weight-based drug-card — matches the antimicrobial-dosing precedent from Batch 2 for reusing this schema generally. Deliberately generalizes rather than duplicates hyperkalemia-management's existing calcium dosing, adding the CCB-overdose and citrate-toxicity indications that card doesn't cover."
+}

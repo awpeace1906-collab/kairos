@@ -1,0 +1,38 @@
+{
+  "id": "push-dose-pressors",
+  "section": "Drug & Dosing Cards",
+  "category": "Dosing & Fluid Math",
+  "title": "Push-Dose Pressors",
+  "settingEmphasis": ["ed", "icu", "or"],
+  "aliases": ["push-dose phenylephrine", "push-dose epinephrine", "peri-intubation pressor", "code-adjacent vasopressor bolus"],
+  "tags": ["push-dose pressor", "phenylephrine", "epinephrine", "hypotension", "peri-intubation", "ED", "ICU", "OR"],
+  "keywords": ["phenylephrine 100mcg/mL is 1mL of the 10mg/mL vial diluted to 100mL, give 50-200mcg IV push", "epinephrine push-dose 10mcg/mL from the 1:10,000 arrest syringe, give 5-20mcg IV push", "a bridge to definitive fluids or an infusion, not a substitute for treating the underlying cause", "label every syringe, concentration confusion here is a real medication-error risk"],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Weingart S. Push-dose pressors for immediate blood pressure control. Clin Exp Emerg Med. 2015;2(2):131-132.",
+    "Concentration/dilution math cross-checked against the existing drug-concentration-math reference's push-dose callout (same numbers, expanded here into a full card)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5). drug-concentration-math.json already had a one-line push-dose callout; this is the full dedicated card the audit flagged as missing — distinct dilution/prep detail from the OR-bolus vasopressor cards already in Kairos (anescalc-core), which are dosed differently for a controlled anesthesia setting rather than an ED/ICU bridge-dose context." }
+  ],
+  "drugClass": "vasopressor",
+  "drugClassLabel": "Vasopressor — push-dose bridge therapy",
+  "mechanism": "Small, rapidly-titratable IV boluses of a vasopressor to bridge transient hypotension — most commonly peri-intubation hypotension, or brief hypotensive episodes during a procedure — while the underlying cause is addressed or a continuous infusion is prepared. Phenylephrine (pure alpha-1 agonist, raises BP via vasoconstriction without much chronotropic effect) and epinephrine (alpha and beta effects, raises both BP and heart rate/contractility) are the two agents in routine push-dose use.",
+  "onset": "Within 1 minute for either agent.",
+  "duration": "Phenylephrine: roughly 10-20 minutes. Epinephrine: roughly 5-10 minutes. Both are short-acting by design — that's the point of a 'push-dose' bridge rather than a sustained infusion.",
+  "dosing": "Phenylephrine: dilute to 100 mcg/mL (commonly: withdraw 1 mL of the 10 mg/mL vial and dilute into 100 mL normal saline — LABEL THE BAG/SYRINGE IMMEDIATELY). Give 50-200 mcg IV push, repeated as needed.\nEpinephrine: dilute to 10 mcg/mL (commonly: withdraw 1 mL of a standard 1:10,000 cardiac-arrest epinephrine syringe [0.1 mg/mL] and dilute into 9 mL normal saline — LABEL IMMEDIATELY, this is a DIFFERENT concentration from the undiluted 1:10,000 arrest syringe it came from). Give 5-20 mcg IV push, repeated as needed.\nBoth: this is a BRIDGE, not a destination — if repeat boluses are needed more than a few times, start a continuous infusion and address the underlying cause (hypovolemia, sedation-related vasodilation, obstructive physiology) rather than continuing to re-bolus indefinitely.",
+  "cautions": [
+    "AEs: reflex bradycardia with phenylephrine (pure alpha agonism triggers a baroreceptor-mediated reflex slowing); tachycardia/arrhythmia risk with epinephrine, especially at higher or repeated doses.",
+    "Precautions: dilution errors are a real and well-described medication-safety hazard here — the epinephrine dilution in particular takes a code-dose concentration and dilutes it 10-fold; an unlabeled or mislabeled syringe risks a 10x overdose if someone assumes it's still full-strength arrest-dose epinephrine. Prepare fresh, label immediately and clearly, and discard/don't stockpile pre-diluted syringes across patients.",
+    "Precautions: choose phenylephrine when the priority is vasoconstriction without added tachycardia (e.g. tachycardic patient); choose epinephrine when some inotropic/chronotropic support is also wanted, or in a patient who may need epinephrine's fuller hemodynamic profile (e.g. peri-arrest, some cases of vasoplegia not responding to phenylephrine alone)."
+  ],
+  "pearls": [
+    "Prepare push-dose pressors on the pole and ready to go BEFORE inducing a hemodynamically fragile patient for intubation — see physiologically-difficult-airway — rather than scrambling to mix a dilution after hypotension has already developed.",
+    "This is the ED/ICU bridge-dose concentration and use-case, distinct from the OR anesthesia bolus-dosing conventions on the anescalc-core vasopressor cards, which are written for a controlled anesthesia setting with different baseline assumptions — don't conflate the two dosing contexts."
+  ],
+  "buildNote": "anesthesia-drug-card contentType reused for a two-drug technique card (phenylephrine + epinephrine together) rather than splitting into two separate cards, since the clinical decision is genuinely 'which of these two, prepared this way, right now' — matching how the dosing field already handles multi-indication content elsewhere in this app. Cross-links to physiologically-difficult-airway and post-intubation-management, which already reference push-dose pressors conceptually but didn't have the dedicated prep/dosing card the audit flagged as missing."
+}

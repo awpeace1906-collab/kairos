@@ -1,0 +1,65 @@
+{
+  "id": "nasogastric-orogastric-tube-placement",
+  "section": "Procedures",
+  "category": "Aspiration & Drainage Procedures",
+  "title": "Nasogastric & Orogastric Tube Placement",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["NG tube", "OG tube", "gastric decompression", "tube confirmation chest x-ray"],
+  "tags": ["nasogastric tube", "orogastric tube", "gastric decompression", "ED", "ICU", "procedure"],
+  "keywords": ["basilar skull fracture and significant midface trauma are contraindications to the nasal route, use orogastric instead", "measure nose to ear to xiphoid for estimated insertion depth", "auscultation alone does not reliably confirm placement, get a chest x-ray before using the tube for feeding or a large volume", "coiling in the airway is the feared complication, stop if resistance, coughing, or desaturation occurs"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Standard critical-care/emergency-medicine nursing and physician procedural references for NG/OG tube placement and confirmation."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5)." }
+  ],
+  "outputType": "workflow",
+  "purpose": "Gastric decompression or feeding-tube placement technique, the trauma-related contraindication to the nasal route, and why auscultation alone is not a reliable confirmation method.",
+  "entryPrompt": "Check for a contraindication to the NASAL route (basilar skull fracture, significant midface trauma) before choosing between NG and OG — this changes the whole approach, not just the entry point.",
+  "nodes": [
+    {
+      "id": "route",
+      "type": "warning",
+      "prompt": "Choose the route — nasal is contraindicated in specific trauma",
+      "body": "AVOID the nasal route (use orogastric instead) in a patient with a suspected or confirmed BASILAR SKULL FRACTURE or significant MIDFACE TRAUMA — there is a real, if rare, risk of inadvertent intracranial tube placement through a fracture defect. Absent that specific contraindication, nasogastric is generally more comfortable for an awake patient who will keep the tube in place for a while; orogastric is preferred in an intubated/sedated patient (bypasses the nasal contraindication question entirely and is often faster) or in the trauma patient above."
+    },
+    {
+      "id": "measure",
+      "type": "step",
+      "prompt": "1. Measure the insertion depth",
+      "body": "Estimate the distance from the tip of the nose (or corner of the mouth, for orogastric), to the earlobe, to the xiphoid process — mark this distance on the tube as the target insertion depth. This is an estimate, not a guarantee of correct final position — confirmation (below) still matters regardless of how carefully this step was done."
+    },
+    {
+      "id": "insert",
+      "type": "step",
+      "prompt": "2. Insertion",
+      "body": "Lubricate the tube. For an awake patient, position sitting up if possible, and have the patient swallow (sips of water if not contraindicated) or swallow repeatedly as the tube is advanced past the oropharynx — this helps the tube pass into the esophagus rather than curling in the mouth or entering the trachea. Advance smoothly to the pre-measured depth. STOP and withdraw if you encounter significant resistance, the patient develops sudden coughing/choking/desaturation, or the patient (if awake and able to communicate) cannot speak/phonate — any of these suggests the tube may be entering the airway rather than the esophagus."
+    },
+    {
+      "id": "confirm",
+      "type": "step",
+      "prompt": "3. Confirm placement — before using the tube",
+      "body": "AUSCULTATION ALONE (listening for an air-insufflation 'whoosh' over the epigastrium) IS NOT RELIABLE — it has produced false reassurance in cases of confirmed airway placement, since transmitted sounds can mimic a correct gastric position. Aspirating gastric contents (and checking pH, if available, as a supportive sign) is somewhat more reassuring but still not definitive alone. A CHEST X-RAY confirming the tube tip below the diaphragm is the standard for definitive confirmation BEFORE the tube is used for feeding or any large-volume instillation — for pure gastric decompression in an emergent setting, brief use pending imaging is a judgment call, but do not start tube feeds or large-volume medication administration without radiographic confirmation."
+    },
+    {
+      "id": "secure",
+      "type": "step",
+      "prompt": "4. Secure and document",
+      "body": "Secure the tube to the nose/face with tape or a commercial securement device, note and document the depth at the nostril/lip for future reference (so any subsequent migration is detectable), and connect to the appropriate drainage/suction system or feeding setup once placement is confirmed."
+    }
+  ],
+  "checklist": [
+    "Nasal-route contraindication (basilar skull fracture, significant midface trauma) screened for before choosing NG vs OG",
+    "Insertion depth pre-measured (nose/mouth → ear → xiphoid) rather than inserted to an arbitrary depth",
+    "Insertion stopped immediately for resistance, coughing, desaturation, or loss of phonation",
+    "Placement confirmed by chest X-ray (not auscultation alone) before the tube is used for feeding or large-volume instillation",
+    "Depth at the nostril/lip documented for future reference"
+  ],
+  "crossLinks": ["trauma-primary-survey", "anatomically-difficult-airway"],
+  "buildNote": "workflow outputType. The basilar-skull-fracture contraindication is given its own warning node ahead of the routine steps since it's the single most important decision point and easy to overlook under time pressure."
+}

@@ -49,6 +49,69 @@ list):
    POCUS exam trees).
 
 ## Progress log
+- 2026-09-15 — **Content audit Batch 5 shipped (→ 384 modules) — closes out
+  every remaining item from the original 2026-09-14 audit's gap list.**
+  Pre-build verification pass caught **one more false positive**: "electrolyte
+  repletion protocols (K/Mg/Phos)" was already fully covered by a solid table
+  in `lab-interpretation.json` — confirmed by reading the actual file before
+  building anything, skipped rather than duplicated. New Peds Module:
+  `peds-procedural-sedation` (the existing `procedural-sedation-workflow`
+  procedure genuinely has zero peds content, confirmed by direct search —
+  ketamine as the peds ED workhorse at procedural-sedation doses distinct
+  from RSI dosing, NPO status as a risk-modifying factor not an absolute
+  gate, and emergence-agitation counseling), `peds-trauma-resuscitation`
+  (compensated shock — a normal BP does NOT rule out significant pediatric
+  blood loss, hypotension is a late finding; TXA 15mg/kg load max 1g then
+  2mg/kg/h, WebSearch-verified), `nat-ten4-facesp-screening` (the validated
+  bruising-pattern clinical decision rule — 96% sensitive/87% specific in
+  children under 4 — filling the gap next to the fracture-pattern and
+  burn-pattern NAT red flags already in `fracture-splinting-guide` and
+  `pediatric-burn-management`, neither of which covers bruising). New Drug &
+  Dosing: `push-dose-pressors` (phenylephrine + epinephrine prep/dosing as
+  one two-drug technique card, distinct from the OR-bolus anescalc cards),
+  `calcium-chloride-gluconate` and `sodium-bicarbonate` (generalized from
+  their existing hyperkalemia-specific dosing in `hyperkalemia-management`
+  to their OTHER real indications — CCB overdose and citrate toxicity for
+  calcium; TCA overdose and salicylate alkalinization for bicarb — without
+  duplicating the hyperkalemia content itself), `high-dose-naloxone-
+  nalmefene` (Kloxxado 8mg IN naloxone and Opvee 2.7mg IN nalmefene —
+  WebSearch-verified that NEITHER has shown a proven survival benefit over
+  standard-dose naloxone and both carry a real risk of more severe
+  precipitated withdrawal, so the card leads with that evidence gap rather
+  than the fentanyl-era marketing rationale, consistent with the existing
+  `tox-opioids` reference's standard-dose-first philosophy). New Procedures,
+  in two new categories (**Obstetric Delivery**, **Cardiac Procedures**) plus
+  existing ones: `abscess-incision-drainage` (general, distinct from the
+  already-existing Bartholin-specific I&D — loop drainage vs. packing vs.
+  neither, and antibiotics as selective not universal), `foreign-body-
+  removal` (button battery given its own warning node — esophageal/nasal/
+  aural removal is a true 2-hour emergency, WebSearch-verified against the
+  National Capital Poison Center guideline including the honey/sucralfate
+  dosing and the poison-control hotline number), `nasogastric-orogastric-
+  tube-placement` (the basilar-skull-fracture contraindication to the nasal
+  route as its own warning node; auscultation-alone is not reliable
+  confirmation), `urinary-catheterization` (blood-at-the-meatus/high-riding-
+  prostate/perineal-hematoma trauma red flags as an absolute stop-and-image
+  gate; CAUTI prevention framing), `escharotomy` (explicitly distinguished
+  from fasciotomy — eschar+fat only, never muscle — since conflating the two
+  is a real and consequential error), `precipitous-vaginal-delivery` (the
+  actual delivery MECHANICS that the existing `obstetric-delivery-
+  emergencies` module assumes are already known — that module covers
+  shoulder dystocia/cord prolapse/abruption, confirmed by reading its
+  headings before building this as a genuinely non-duplicative companion),
+  `adult-synchronized-cardioversion` (only peds cardioversion energy dosing
+  existed before this — energy doses WebSearch-verified against the current
+  2025 AHA Electrical Cardioversion Algorithm: 200J AFib/flutter, 100J
+  narrow SVT/monomorphic VT; the sync-mode-resets-after-every-shock trap
+  given its own warning node). validate 384/0, build/sync/test 279/0, iOS
+  `xcodebuild test` run in parallel. Live-verified `foreign-body-removal`
+  rendering correctly (warning-node button-battery content, numbered steps,
+  checklist, cross-links) and `adult-synchronized-cardioversion` indexed
+  correctly under the new Cardiac Procedures category. **This closes the
+  entire originally-scoped 2026-09-14 content audit** — Batches 1 through 5
+  covered every confirmed real gap from that audit's four-subagent research
+  pass; anything not built was checked and found to already exist. Future
+  content work is a fresh audit or user-directed, not a queued backlog.
 - 2026-09-15 — **Content audit Batch 4 shipped (→ 370 modules).** Structural
   housekeeping first: fixed `advanced-ards-ventilation` and `ventilator-
   liberation-weaning` (Reference Library) which were miscategorized as "ICU /

@@ -1,0 +1,60 @@
+{
+  "id": "escharotomy",
+  "section": "Procedures",
+  "category": "Wound & Fracture Care",
+  "title": "Escharotomy",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["burn compartment syndrome", "circumferential burn release", "chest wall escharotomy"],
+  "tags": ["escharotomy", "circumferential burn", "compartment syndrome", "burns", "ED", "ICU", "procedure"],
+  "keywords": ["indicated for a circumferential full-thickness burn causing vascular compromise in a limb or restrictive ventilation on the chest", "clinical diagnosis — diminished or absent distal pulses, worsening capillary refill, paresthesia, or rising peak airway pressures with a chest wall burn", "incise through the eschar only, into the underlying fat, not muscle — that would be a fasciotomy for a different indication", "midaxial line for limbs avoiding named neurovascular structures, bilateral mid-axillary lines connected for chest wall"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "American Burn Association. Advanced Burn Life Support (ABLS) course materials — escharotomy indications and technique.",
+    "Orgill DP, Piccolo N. Escharotomy and decompressive therapies in burns. J Burn Care Res. 2009."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5) — pediatric-burn-management and parkland-formula both reference this as a consideration for circumferential burns, but no technique card existed until now." }
+  ],
+  "outputType": "workflow",
+  "purpose": "When and how to perform an escharotomy for a circumferential full-thickness burn causing vascular compromise (limb) or restrictive ventilation (chest wall) — a clinical diagnosis and a bedside procedure, distinct from a fasciotomy.",
+  "entryPrompt": "This is a clinical diagnosis based on exam findings trending the wrong way, not a fixed time-after-burn trigger — reassess frequently as edema evolves over the first 24-48 hours.",
+  "nodes": [
+    {
+      "id": "recognition",
+      "type": "step",
+      "prompt": "1. Recognize the indication",
+      "body": "A CIRCUMFERENTIAL full-thickness (or deep partial-thickness) burn of a LIMB causing vascular compromise: diminished or absent distal pulses (by Doppler if not palpable), progressively worsening capillary refill, increasing pain out of proportion or new paresthesia/paralysis, and a tense, non-compliant limb — the inelastic eschar acts like a tourniquet as underlying tissue edema builds over the first 24-48 hours post-burn, so this can develop or worsen well after the initial burn assessment, not just immediately. A circumferential CHEST WALL burn causing restrictive ventilation: rising peak airway pressures in a ventilated patient, or worsening respiratory distress/declining tidal volumes in a spontaneously breathing patient, from the eschar mechanically restricting chest wall excursion."
+    },
+    {
+      "id": "limb-technique",
+      "type": "step",
+      "prompt": "2. Limb escharotomy — technique",
+      "body": "Incise along the MID-AXIAL line (the line connecting the midpoints of the flexion creases, roughly the mid-lateral and/or mid-medial aspect of the limb) — this avoids major neurovascular bundles, which typically run more anteriorly/medially. Incise through the ESCHAR ONLY, into the underlying subcutaneous fat — you should feel/see the tissue relax and separate (gaping open) once through the constricting eschar; this is deliberately NOT a fasciotomy (which goes through fascia into muscle compartments for a different indication — traumatic/ischemic compartment syndrome, not burn eschar constriction) and going deeper than needed risks unnecessary injury to underlying structures. Extend the incision the full length of the circumferential burn, and across involved joints if the burn crosses them. For digits, individual digital escharotomies (mid-lateral) may be needed if circumferentially burned and compromised."
+    },
+    {
+      "id": "chest-technique",
+      "type": "step",
+      "prompt": "3. Chest wall escharotomy — technique",
+      "body": "Bilateral incisions along the anterior axillary lines (or mid-axillary), extended and connected by transverse incisions at the level of the costal margin inferiorly and, if needed, near the clavicles superiorly — creating a rectangular/grid pattern that releases the constricting eschar across the chest wall to restore adequate excursion. Same principle: through eschar into subcutaneous tissue, not into deeper structures."
+    },
+    {
+      "id": "reassess",
+      "type": "step",
+      "prompt": "4. Reassess and manage bleeding",
+      "body": "Reassess pulses/capillary refill (limb) or ventilation parameters (chest) immediately after the incision — improvement should be apparent quickly if the escharotomy adequately released the constriction. Escharotomy through full-thickness burned tissue is typically not very painful (the nerve endings in that tissue are usually already destroyed by the burn itself) and bleeding is often modest since the eschar itself is relatively avascular — but bleeding from the incision edges (viable tissue at the wound margin) can still occur and should be controlled with direct pressure/electrocautery as needed."
+    }
+  ],
+  "checklist": [
+    "Indication confirmed by clinical exam trend (pulses, capillary refill, pain/sensation for limbs; ventilation parameters for chest) — not assumed from burn size/circumferential appearance alone",
+    "Incision along the mid-axial line for limbs, avoiding named neurovascular structures",
+    "Depth limited to eschar + subcutaneous fat — NOT into muscle/fascia (that would be a fasciotomy, a different procedure for a different indication)",
+    "Full length of the circumferential burn released, across joints if involved",
+    "Reassessment performed immediately after to confirm the release was adequate"
+  ],
+  "crossLinks": ["pediatric-burn-management", "parkland-formula"],
+  "buildNote": "workflow outputType. Explicitly distinguishes escharotomy (through eschar/fat, for burn-constriction) from fasciotomy (through fascia into muscle, for traumatic/ischemic compartment syndrome) since conflating the two is a real and consequential error — going too deep on an escharotomy risks unnecessary injury, while a true traumatic compartment syndrome needs the deeper fasciotomy this procedure does NOT describe."
+}

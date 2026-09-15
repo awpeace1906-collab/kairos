@@ -28,6 +28,14 @@
         {
           "id": "aspiration-drainage",
           "title": "Aspiration & Drainage Procedures"
+        },
+        {
+          "id": "obstetric-delivery",
+          "title": "Obstetric Delivery"
+        },
+        {
+          "id": "cardiac-procedures",
+          "title": "Cardiac Procedures"
         }
       ]
     },

@@ -1,0 +1,40 @@
+{
+  "id": "high-dose-naloxone-nalmefene",
+  "section": "Drug & Dosing Cards",
+  "category": "Dosing & Fluid Math",
+  "title": "High-Dose Intranasal Naloxone & Nalmefene",
+  "settingEmphasis": ["ed", "prehospital"],
+  "aliases": ["Kloxxado", "Opvee", "8mg naloxone", "nalmefene nasal spray", "fentanyl-era opioid reversal"],
+  "tags": ["naloxone", "nalmefene", "opioid overdose", "fentanyl", "ED", "prehospital"],
+  "keywords": ["Kloxxado is FDA-approved 8mg intranasal naloxone, twice the standard Narcan 4mg dose", "Opvee is FDA-approved 2.7mg intranasal nalmefene, longer half-life than naloxone", "neither has shown a proven survival benefit over standard-dose naloxone", "both carry a real risk of more severe and more protracted precipitated withdrawal", "standard-dose naloxone with retitration and an infusion for recurrence remains the evidence-based default"],
+  "contentType": "anesthesia-drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "FDA approval: Kloxxado (naloxone 8mg intranasal), April 2021.",
+    "FDA approval: Opvee (nalmefene 2.7mg intranasal), for ages ≥ 12.",
+    "Efficacy/safety comparison to standard-dose naloxone — no proven survival benefit, increased withdrawal severity — WebSearch-verified before writing, consistent with this app's existing tox-opioids reference's standard-dose-first philosophy."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5), the specific FDA-approved high-dose/long-acting products the audit flagged, framed with the actual evidence (which does not support routine preference for these over standard-dose naloxone) rather than the marketing rationale alone. Cross-linked with, and deliberately consistent with, the existing tox-opioids reference's standard-naloxone-first, retitrate-and-infuse philosophy — this card supplements that guidance with the specific product details, it doesn't contradict it." }
+  ],
+  "drugClass": "reversal",
+  "drugClassLabel": "Opioid antagonist — high-dose/long-acting intranasal formulations",
+  "mechanism": "Competitive opioid receptor antagonism, same mechanism as standard-dose naloxone (Kloxxado is simply a higher-concentration naloxone nasal spray) — nalmefene (Opvee) is a different molecule with a substantially longer half-life than naloxone, marketed specifically to outlast long-acting/high-potency synthetic opioids like fentanyl and its analogs without needing re-dosing as often.",
+  "onset": "Comparable to standard intranasal naloxone — within a few minutes.",
+  "duration": "Naloxone (any dose): roughly 30-90 minutes, generally shorter than the opioid being reversed, especially fentanyl analogs and methadone — hence the standard teaching to observe for re-sedation regardless of which naloxone product/dose is used. Nalmefene: meaningfully longer-acting than naloxone, which is the specific rationale for its development, though this same long duration is also what prolongs precipitated withdrawal if it occurs.",
+  "dosing": "Kloxxado (naloxone 8mg intranasal spray): one spray (8mg) into one nostril; may repeat every 2-3 minutes with additional doses in alternating nostrils if needed, per product labeling — this is DOUBLE the standard Narcan 4mg intranasal dose.\nOpvee (nalmefene 2.7mg intranasal spray): one spray (2.7mg) into one nostril; may repeat every 2-3 minutes in alternating nostrils if inadequate response, per product labeling. Approved for ages 12 and older.\nBoth: the SAME general principles as standard-dose naloxone apply — titrate to adequate spontaneous respiration, not full arousal, and observe for a period appropriate to the suspected opioid's duration (see tox-opioids).",
+  "cautions": [
+    "Precautions: NEITHER product has demonstrated a proven survival benefit over standard-dose (4mg intranasal or 0.4mg IV/IM) naloxone in the available evidence to date — the fentanyl-era marketing rationale (standard doses being 'not enough' for high-potency synthetic opioids) has not translated into demonstrated outcome improvement in real-world data.",
+    "AEs: both are associated with MORE SEVERE and MORE PROTRACTED precipitated opioid withdrawal compared to standard-dose naloxone — for a patient who is opioid-dependent, over-reversal produces genuine suffering (vomiting, diarrhea, agitation, combativeness) without added safety benefit, and can complicate the clinical encounter (a distressed, combative patient is harder to safely observe and treat).",
+    "Precautions: nalmefene's longer duration is a double-edged feature — it's the intended advantage against long-acting opioids, but it also means a precipitated withdrawal episode, if it occurs, lasts longer and is harder to manage than a naloxone-induced one."
+  ],
+  "pearls": [
+    "The evidence-based default remains standard-dose naloxone (0.04-0.4 mg IV/IM, or the standard 4mg intranasal product), titrated to adequate ventilation, with re-dosing and a continuous infusion for recurrent re-sedation — see tox-opioids for that full approach. These high-dose/long-acting products are not shown to outperform that approach and add real over-reversal risk.",
+    "Reach for Kloxxado/Opvee only where your protocol or product availability specifically calls for it (e.g. a take-home naloxone program that has standardized on the higher-dose product, or an EMS system protocol built around it) rather than reflexively assuming 'higher dose = better' for a suspected fentanyl overdose.",
+    "Community/bystander naloxone distribution programs increasingly stock these higher-dose products for logistical/availability reasons as much as clinical superiority — worth knowing what a patient or their community contacts may already have access to and have used before ED arrival."
+  ],
+  "buildNote": "anesthesia-drug-card contentType. Deliberately leads with the evidence gap rather than presenting these as a straightforward upgrade — the FDA-approval and product-dosing facts are solid, but the clinical framing needed to be accurate about the lack of proven survival benefit and the real over-reversal/withdrawal cost, consistent with the standing no-fabrication and accuracy discipline for this whole project. Cross-references tox-opioids rather than restating its full opioid-toxidrome/naloxone-titration content."
+}

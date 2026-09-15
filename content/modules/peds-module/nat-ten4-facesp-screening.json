@@ -1,0 +1,81 @@
+{
+  "id": "nat-ten4-facesp-screening",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "TEN-4-FACESp Bruising Screening (Non-Accidental Trauma)",
+  "settingEmphasis": ["ed"],
+  "audience": ["peds"],
+  "aliases": ["child abuse bruising rule", "bruising clinical decision rule", "non-accidental trauma screening", "NAT bruising"],
+  "tags": ["non-accidental trauma", "child abuse", "bruising", "TEN-4-FACESp", "peds", "ED"],
+  "keywords": ["torso ears neck are TEN, any bruising in an infant under 4.99 months is the 4, FACESp is frenulum angle of jaw cheeks eyelids subconjunctival patterned", "96 percent sensitive 87 percent specific for children under 4 years", "a pre-mobile infant should not have bruises from normal activity", "positive screen means document photograph and involve your child-protection pathway, not accuse"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Pierce MC, et al. Validation of a Clinical Decision Rule to Predict Abuse in Young Children Based on Bruising Characteristics. JAMA Netw Open. 2021.",
+    "Criteria and validation statistics (96% sensitivity, 87% specificity in children < 4 years) WebSearch-verified before writing."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5). The only existing non-accidental-trauma content in Kairos was a fracture-pattern-specific warning embedded in fracture-splinting-guide.json (classic metaphyseal lesions, rib fractures, etc.) and a general callout in pediatric-burn-management.json — neither is a standalone screening tool, and neither covers BRUISING, which is what TEN-4-FACESp specifically addresses. Built as a validated, named clinical decision rule rather than a generic 'consider abuse' reminder." }
+  ],
+  "kind": "reference",
+  "ageRange": "Children under 4 years old (the validated age range for this specific rule); the '4' component — ANY bruising being concerning — applies most sharply to infants under ~5 months, who are pre-mobile and shouldn't have bruises from normal activity at all",
+  "purpose": "A validated bruising-pattern screening tool (96% sensitive, 87% specific in children under 4) to help decide when a bruise's location or the child's age should trigger a non-accidental trauma workup — a bruising-specific complement to the fracture-pattern and burn-pattern NAT red flags already covered elsewhere in this app.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The rule"
+    },
+    {
+      "type": "text",
+      "text": "TEN-4-FACESp screens for bruising characteristics that are statistically much more associated with abusive than accidental injury in children under 4 years old. ANY ONE of the following, present on exam, is a positive screen:"
+    },
+    {
+      "type": "table",
+      "columns": ["Component", "What it means"],
+      "rows": [
+        ["T — Torso", "Bruising on the trunk (chest, abdomen, back, buttocks)"],
+        ["E — Ears", "Bruising on either ear"],
+        ["N — Neck", "Bruising on the neck"],
+        ["4 — Under 4.99 months", "ANY bruising at all, anywhere, in an infant younger than approximately 5 months — a pre-mobile infant who isn't yet cruising/walking has no normal mechanism to bruise themselves"],
+        ["F — Frenulum", "Torn or bruised frenulum (the tissue connecting lip to gum, or tongue to floor of mouth)"],
+        ["A — Angle of the jaw", "Bruising at the mandibular angle"],
+        ["C — Cheeks (fleshy)", "Bruising on the fleshy part of the cheek"],
+        ["E — Eyelids", "Bruising on the eyelids"],
+        ["S — Subconjunctival hemorrhage", "Bleeding in the white of the eye, without a clear accidental mechanism"],
+        ["p — Patterned bruising", "A bruise with a recognizable shape suggesting a specific object (a hand print, a loop/cord mark, a belt buckle, bite mark, etc.)"]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "The logic behind TEN and the '4': torso, ears, and neck are areas NOT typically struck in a normal fall or bump for an ambulatory child (unlike shins, forehead, and bony prominences, which bruise easily from ordinary childhood activity) — bruising there is disproportionately associated with abuse. And a pre-mobile infant (under ~5 months) has essentially no way to bruise themselves through normal activity at all, so ANY bruising in that age group is a meaningful finding regardless of location."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What a positive screen means — and doesn't mean"
+    },
+    {
+      "type": "list",
+      "items": [
+        "A positive screen means the finding warrants a further NAT workup — it is NOT a diagnosis of abuse, and it is not an accusation. Document precisely (location, size, pattern, photograph if your institution's protocol supports it), and follow your local child-protection/safeguarding pathway.",
+        "A convincing, developmentally-consistent accidental explanation for a SINGLE finding in an otherwise low-risk context may not need the full workup — this is where clinical judgment and your institution's social work/child-protection team involvement matters; the rule is a screening aid, not a rigid algorithm that overrides clinical context entirely.",
+        "This rule covers BRUISING specifically. It's a companion to, not a replacement for, the other NAT red flags already in this app: classic fracture patterns (metaphyseal corner/bucket-handle lesions, posterior rib fractures — see fracture-splinting-guide) and the burn-pattern red flags (see pediatric-burn-management)."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Validation"
+    },
+    {
+      "type": "text",
+      "text": "In the validation cohort (children under 4 years), the rule was 96% sensitive and 87% specific for distinguishing abusive from accidental trauma based on bruising characteristics alone — strong performance for a bedside screening tool, though as with any screening rule, a negative result doesn't fully exclude abuse and clinical judgment about the overall presentation still matters."
+    }
+  ],
+  "buildNote": "kind: reference, presenting a validated named clinical decision rule rather than a vague reminder — deliberately does not restate the fracture-pattern or burn-pattern red flags already covered in fracture-splinting-guide.json / pediatric-burn-management.json, since those already exist and this module's value is specifically the bruising-pattern rule they don't cover. peds-tool has no related[] field — cross-links noted in prose."
+}
