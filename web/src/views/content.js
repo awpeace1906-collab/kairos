@@ -36,6 +36,18 @@ function shell(mod, ...body) {
   );
 }
 
+/** A "Term: the rest of the sentence" list item gets its lead term bolded —
+    purely presentational (never changes the text), and degrades to plain text
+    for any item that isn't shaped that way. Short lead-in only (<=7 words) so
+    a colon appearing mid-sentence in ordinary prose doesn't get misread as a label. */
+function listItem(text) {
+  const m = /^([^:]{2,50}):\s(.+)$/s.exec(text);
+  if (m && m[1].trim().split(/\s+/).length <= 7) {
+    return el("li", {}, el("strong", {}, m[1] + ":"), " " + m[2]);
+  }
+  return el("li", {}, text);
+}
+
 /** Shared renderer for the `body` block array used by reference and peds-tool modules. */
 export function renderBlocks(body) {
   return (body || []).map((b) => {
@@ -45,7 +57,7 @@ export function renderBlocks(body) {
       case "text":
         return el("p", {}, b.text);
       case "list":
-        return el("ul", {}, (b.items || []).map((i) => el("li", {}, i)));
+        return el("ul", {}, (b.items || []).map(listItem));
       case "callout":
         return el("div", { class: `callout ${b.tone || "info"}` }, b.text);
       case "table":
@@ -80,6 +92,24 @@ function renderAnesthesiaDrugCard(mod) {
     value ? el("div", { class: "adc-field" }, el("span", { class: "adc-label" }, label), el("span", {}, value)) : null;
   const list = (label, items) =>
     items?.length ? el("div", {}, el("h3", {}, label), el("ul", {}, items.map((i) => el("li", {}, i)))) : null;
+  const dosingRows = (text) => {
+    if (!text) return null;
+    return el(
+      "div",
+      {},
+      text.split("\n").filter(Boolean).map((line) => {
+        const i = line.indexOf(": ");
+        return i === -1
+          ? el("div", { class: "dose-row" }, el("div", { class: "dose-amt" }, line))
+          : el(
+              "div",
+              { class: "dose-row" },
+              el("div", { class: "dose-ind" }, line.slice(0, i)),
+              el("div", { class: "dose-amt" }, line.slice(i + 2))
+            );
+      })
+    );
+  };
 
   return el(
     "section",
@@ -94,7 +124,7 @@ function renderAnesthesiaDrugCard(mod) {
       field("Onset", mod.onset),
       field("Duration", mod.duration),
       mod.reversal ? field("Reversal", mod.reversal) : null),
-    el("div", {}, el("h3", {}, "Dosing"), el("pre", { class: "adc-dosing" }, mod.dosing)),
+    el("div", {}, el("h3", {}, "Dosing"), dosingRows(mod.dosing)),
     list("Cautions", mod.cautions),
     list("Pearls", mod.pearls),
     sourcesBlock(mod),
@@ -117,11 +147,17 @@ function renderProcedure(mod, route) {
 
 function workflowList(mod) {
   if (!mod.nodes?.length) return null;
-  return el("ol", { class: "nodes" }, mod.nodes.map((n) =>
-    el("li", { class: `node ${n.type}` },
-      n.prompt ? el("strong", {}, n.prompt) : null,
-      n.body ? el("p", {}, n.body) : null)
-  ));
+  let stepNum = 0;
+  return el("ol", { class: "nodes" }, mod.nodes.map((n) => {
+    const isWarning = n.type === "warning";
+    if (!isWarning) stepNum++;
+    return el(
+      "li",
+      { class: `node ${n.type}` },
+      el("span", { class: "node-badge", "aria-hidden": "true" }, isWarning ? "!" : String(stepNum)),
+      el("div", { class: "node-body" }, n.prompt ? el("strong", {}, n.prompt) : null, n.body ? el("p", {}, n.body) : null)
+    );
+  }));
 }
 
 /** Interactive walk of a decision-tree procedure. */
@@ -282,7 +318,7 @@ function renderDrugCard(mod, route, store) {
 function renderPedsTool(mod, route, store) {
   if (mod.embeddedCalculator) {
     const node = renderCalculator({ ...mod.embeddedCalculator, title: mod.title }, route);
-    const intro = mount(el("div"), el("p", { class: "purpose" }, mod.purpose), mod.ageRange ? el("p", { class: "settings" }, mod.ageRange) : null);
+    const intro = mount(el("div"), el("p", { class: "purpose" }, mod.purpose), mod.ageRange ? el("p", { class: "muted" }, mod.ageRange) : null);
     node.prepend(...intro.childNodes);
     // A peds-tool may carry an explanatory body alongside its calculator
     // (matches the iOS PedsToolBody behaviour).
@@ -291,7 +327,8 @@ function renderPedsTool(mod, route, store) {
   }
   return shell(
     mod,
-    el("p", { class: "settings" }, `${mod.kind}${mod.ageRange ? " · " + mod.ageRange : ""}`),
+    el("p", { class: "settings" }, mod.kind),
+    mod.ageRange ? el("p", { class: "muted" }, mod.ageRange) : null,
     mod.sourceOfTruth?.length ? el("p", { class: "muted" }, "Defers to: " + mod.sourceOfTruth.join(", ")) : null,
     mod.body?.length ? el("div", { class: "prose" }, ...renderBlocks(mod.body)) : null
   );

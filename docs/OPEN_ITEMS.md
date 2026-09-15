@@ -41,6 +41,38 @@ list):
    `primary-palliative-care-icu` (→ 321 modules).
 
 ## Progress log
+- 2026-09-14 — **Phase 4 visual pass, round 2 (procedures, drug cards,
+  reference lists) on both clients.** Toured screen types not yet covered in
+  round 1 (Home + a calculator). Found and fixed three concrete "reads like a
+  website" spots: (1) static `workflow`-type procedures (e.g.
+  `airway-management-flow`) rendered as a plain numbered `<ol>`/`<li>` dump
+  with no visual separation — now each step is a card with a numbered ember
+  badge (or a red "!" badge for a `warning`-type node like CICO/LAST), on both
+  web (`.nodes .node`, `content.js` `workflowList`) and iOS (new
+  `WorkflowNodeCard`, `ContentDetailView.swift`). (2) Anesthesia drug cards'
+  "Dosing" section (all 55 AnesCalc cards) was one monospace pre-wrapped text
+  blob with embedded `\n`s — now parsed into discrete indication/dose rows
+  reusing the exact same `.dose-row`/`.dose-ind`/`.dose-amt` styling a
+  computed weight-based dose already uses, so a static card and a live
+  calculated one now look identical (web `dosingRows()`, iOS `dosingRow()`).
+  (3) Generic reference/peds-tool bullet lists (`renderBlocks`/`BlockList`,
+  used across most of the content library) now bold a short "Term: " lead-in
+  when a list item has that shape — purely presentational, degrades to a
+  plain bullet for ordinary prose; verified no false positives on numbered
+  prose lists that happen to contain a colon. Also caught and fixed a smaller
+  readability bug while checking a peds-tool page: `ageRange` text (a full
+  sentence, e.g. "Term neonate (post-resuscitation) to adolescent (~3-50 kg)")
+  was being routed through the `.settings` class, meant for short eyebrow
+  tags — it was rendering as a wall of shouty uppercase mono. Split apart so
+  short tags (`outputType`, `kind`) keep the eyebrow treatment and `ageRange`
+  gets calm sentence-case (`.muted`); iOS was already correct, no fix needed
+  there. SW `SHELL_CACHE` → v12. iOS BUILD SUCCEEDED, 10/10 engine tests;
+  both platforms verified live. validate 321/0, test 252/0 (content
+  unaffected — this round was rendering-only, no schema/module changes).
+  **Phase 4 status**: this closes out the concrete "still reads like a
+  website" complaints identified across Home, calculators, procedures, drug
+  cards, and reference pages. What's left is genuinely open-ended — continued
+  fresh eyes on any screen, not a discrete remaining task.
 - 2026-09-14 — **3 flagged content-gap modules built + full OPEN_ITEMS.md
   reconciliation (→ 321 modules).** `brain-death-determination` (Reference
   Library/Critical Care) — the 2023 AAN/AAP/CNS/SCCM consensus guideline:

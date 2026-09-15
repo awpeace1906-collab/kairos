@@ -469,11 +469,28 @@ h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
 .adc-grid { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 10px 0; }
 .adc-field { font-size: .9rem; }
 .adc-label { color: var(--muted); margin-right: 6px; text-transform: uppercase; font-size: .72rem; letter-spacing: .06em; }
-.adc-dosing { white-space: pre-wrap; background: var(--surface-2); padding: 10px 12px; border-radius: 8px; font-size: .9rem; }
 .anesthesia-drug-card h3 { margin: 16px 0 4px; }
 
-.nodes .node { margin: 8px 0; }
-.nodes .node.warning strong, .node.warning { color: var(--sev-high); }
+.nodes { list-style: none; padding: 0; margin: 14px 0; display: grid; gap: 10px; }
+.nodes .node {
+  display: flex; gap: 12px; align-items: flex-start;
+  padding: 13px 14px; border-radius: var(--radius);
+  background: var(--surface-2); border: 1px solid var(--line);
+}
+.nodes .node.warning {
+  background: color-mix(in srgb, var(--sev-high) 8%, var(--surface-2));
+  border-color: color-mix(in srgb, var(--sev-high) 40%, var(--line));
+}
+.node-badge {
+  flex: none; width: 26px; height: 26px; border-radius: 999px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono); font-size: .8rem; font-weight: 600;
+  background: var(--accent); color: #fff;
+}
+.node.warning .node-badge { background: var(--sev-high); }
+.node-body { flex: 1; min-width: 0; }
+.node-body strong { display: block; margin-bottom: 4px; }
+.node-body p { margin: 0; }
 .tree-walker { border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin: 10px 0; background: var(--surface-2); }
 .tree-crumbs { font-size: .8rem; color: var(--muted); margin-bottom: 8px; }
 .tree-crumbs a { color: var(--accent); }

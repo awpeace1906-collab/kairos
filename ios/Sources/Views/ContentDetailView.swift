@@ -151,6 +151,18 @@ struct BlockList: View {
         }
     }
 
+    /// A "Term: the rest of the sentence" list item gets its lead term bolded —
+    /// purely presentational, degrades to a plain bullet for anything else.
+    private func listItemText(_ s: String) -> Text {
+        guard let colonRange = s.range(of: ": ") else { return Text("• \(s)") }
+        let leadLen = s.distance(from: s.startIndex, to: colonRange.lowerBound)
+        guard leadLen >= 2, leadLen <= 50 else { return Text("• \(s)") }
+        let lead = String(s[s.startIndex..<colonRange.lowerBound])
+        let rest = String(s[colonRange.upperBound...])
+        guard lead.split(separator: " ").count <= 7 else { return Text("• \(s)") }
+        return Text("• ") + Text("\(lead):").fontWeight(.semibold) + Text(" \(rest)")
+    }
+
     @ViewBuilder private func block(_ b: ReferenceDoc.Block, isFirst: Bool) -> some View {
         switch b.type {
         case "heading":
@@ -171,7 +183,7 @@ struct BlockList: View {
             Text(b.text ?? "")
         case "list":
             VStack(alignment: .leading, spacing: 4) {
-                ForEach(b.items ?? [], id: \.self) { Text("• \($0)") }
+                ForEach(b.items ?? [], id: \.self) { listItemText($0) }
             }
         case "callout":
             Text(b.text ?? "")
@@ -269,6 +281,14 @@ struct BlockList: View {
 struct ProcedureBody: View {
     let proc: Procedure
     private var isTree: Bool { proc.outputType == "decision-tree" && !(proc.nodes ?? []).isEmpty }
+    private var numberedNodes: [(node: Procedure.Node, badge: String)] {
+        var n = 0
+        return (proc.nodes ?? []).map { node in
+            let isWarning = node.type == "warning"
+            if !isWarning { n += 1 }
+            return (node, isWarning ? "!" : String(n))
+        }
+    }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -280,12 +300,10 @@ struct ProcedureBody: View {
             if isTree {
                 ProcedureWalker(nodes: proc.nodes ?? [])
             } else {
-                ForEach(proc.nodes ?? []) { node in
-                    VStack(alignment: .leading, spacing: 4) {
-                        if let p = node.prompt { Text(p).bold() }
-                        if let b = node.body { Text(b).foregroundStyle(node.type == "warning" ? .red : .primary) }
+                VStack(alignment: .leading, spacing: 10) {
+                    ForEach(numberedNodes, id: \.node.id) { item in
+                        WorkflowNodeCard(node: item.node, badge: item.badge)
                     }
-                    .padding(.vertical, 4)
                 }
             }
 
@@ -304,6 +322,38 @@ struct ProcedureBody: View {
             BuildNote(text: proc.buildNote)
             SourcesBlock(meta: proc.meta)
         }
+    }
+}
+
+/// One step in a static (non-tree) procedure workflow — a numbered card, or a
+/// warning-badged card for an at-any-point caution (e.g. CICO, LAST).
+struct WorkflowNodeCard: View {
+    let node: Procedure.Node
+    let badge: String
+    private var isWarning: Bool { node.type == "warning" }
+
+    var body: some View {
+        HStack(alignment: .top, spacing: 12) {
+            Text(badge)
+                .font(Theme.mono(13)).fontWeight(.semibold)
+                .foregroundStyle(.white)
+                .frame(width: 26, height: 26)
+                .background(isWarning ? Theme.severityColor("high") : Theme.accent, in: Circle())
+            VStack(alignment: .leading, spacing: 4) {
+                if let p = node.prompt { Text(p).font(Theme.subheadline).fontWeight(.semibold) }
+                if let b = node.body { Text(b).font(Theme.callout) }
+            }
+        }
+        .padding(13)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(
+            isWarning ? Theme.severityColor("high").opacity(0.12) : Color(.secondarySystemBackground),
+            in: RoundedRectangle(cornerRadius: 12)
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 12)
+                .stroke(isWarning ? Theme.severityColor("high").opacity(0.4) : Color(.separator), lineWidth: 1)
+        )
     }
 }
 
@@ -403,13 +453,30 @@ struct AnesthesiaDrugCardBody: View {
             if let r = card.reversal { labeled("Reversal", r) }
 
             group("Dosing") {
-                Text(card.dosing).font(Theme.mono(13))
-                    .padding(10).frame(maxWidth: .infinity, alignment: .leading)
-                    .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 8))
+                VStack(alignment: .leading, spacing: 0) {
+                    let lines = card.dosing.split(separator: "\n").map(String.init)
+                    ForEach(Array(lines.enumerated()), id: \.offset) { i, line in
+                        dosingRow(line)
+                        if i < lines.count - 1 { Divider() }
+                    }
+                }
             }
             group("Cautions") { bullets(card.cautions) }
             group("Pearls") { bullets(card.pearls) }
             SourcesBlock(meta: card.meta)
+        }
+    }
+
+    @ViewBuilder private func dosingRow(_ line: String) -> some View {
+        if let range = line.range(of: ": ") {
+            VStack(alignment: .leading, spacing: 3) {
+                Text(line[line.startIndex..<range.lowerBound]).font(Theme.semibold(15, relativeTo: .subheadline))
+                Text(line[range.upperBound...]).font(Theme.callout)
+            }
+            .padding(.vertical, 8)
+            .frame(maxWidth: .infinity, alignment: .leading)
+        } else {
+            Text(line).font(Theme.callout).padding(.vertical, 8)
         }
     }
 
