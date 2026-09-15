@@ -1,0 +1,85 @@
+{
+  "id": "amniotic-fluid-embolism",
+  "section": "Reference Library",
+  "category": "Obstetric & Gynecologic",
+  "title": "Amniotic Fluid Embolism",
+  "settingEmphasis": ["or", "ed", "icu"],
+  "audience": ["adult"],
+  "aliases": ["AFE", "anaphylactoid syndrome of pregnancy"],
+  "tags": ["amniotic fluid embolism", "AFE", "DIC", "obstetric emergency", "cardiac arrest", "OR", "ED", "ICU"],
+  "keywords": ["sudden cardiorespiratory collapse plus overt DIC in labor or immediately postpartum is the diagnostic pattern, both parts matter, collapse alone without the coagulopathy component doesn't meet the proposed research diagnostic criteria", "the ISTH DIC scoring is modified for pregnancy in this specific context, fibrinogen under 200 rather than the standard under 100 threshold, pregnancy's normally elevated fibrinogen baseline makes the standard cutoff too lenient here", "coagulopathy is the dominant, defining feature, present in the large majority of cases, this isn't an occasional complication, it's central to what AFE actually is", "supportive resuscitation and aggressive correction of the coagulopathy are the actual treatment, there is no antidote or definitive therapy that reverses the underlying process itself", "this is a diagnosis of exclusion made in the acute moment, the differential includes pulmonary embolism, eclampsia, and other causes of peripartum collapse, but AFE shouldn't be a delayed afterthought diagnosis when the clinical pattern fits"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Clark SL, et al. Proposed diagnostic criteria for the case definition of amniotic fluid embolism in research studies. Am J Obstet Gynecol. 2016;215(4):408-412.",
+    "Society for Maternal-Fetal Medicine / Amniotic Fluid Embolism Foundation. Recognition and Management of Amniotic Fluid Embolism.",
+    "Pacheco LD, et al. Amniotic fluid embolism: diagnosis and management. Am J Obstet Gynecol. 2016;215(2):B16-B24."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). maternal-cardiac-arrest already gives AFE a good one-line management mention (including the unproven 'A-OK' regimen); this module supplies the fuller diagnostic-criteria and DIC-management depth that a single line within an arrest algorithm can't carry, cross-linked back to it rather than duplicated." }
+  ],
+  "summary": "AFE's proposed research diagnostic criteria require BOTH sudden cardiorespiratory collapse AND overt DIC in labor or shortly postpartum — coagulopathy isn't an occasional complication of AFE, it's a defining, near-universal feature (present in roughly 83% of cases), and supportive resuscitation plus aggressive coagulopathy correction is the actual treatment since there's no antidote.",
+  "whyThisMatters": "AFE kills through a combination of acute cardiopulmonary collapse and a coagulopathy that can consume clotting factors faster than they can be replaced, and because there's no specific reversing therapy, the entire clinical discipline is early recognition of the pattern (not waiting for a delayed diagnosis) paired with maximally aggressive supportive and hemostatic resuscitation rather than searching for a definitive treatment that doesn't exist.",
+  "clinicalTakeaway": "Suspect AFE with SUDDEN cardiorespiratory collapse (cardiac arrest, or both hypotension and respiratory compromise) during labor or shortly after delivery, especially when followed by evidence of overt DIC — the proposed research diagnostic criteria require both components together, not collapse alone. Use a pregnancy-modified DIC scoring approach (fibrinogen threshold of <200 mg/dL rather than the standard <100 mg/dL, since pregnancy's normally elevated baseline fibrinogen makes the standard cutoff too lenient in this population). Treatment is aggressive supportive resuscitation (standard cardiac arrest management, early massive transfusion protocol activation) plus early, aggressive correction of the coagulopathy — there is no antidote or specific reversing therapy, so hemostatic support and hemodynamic stabilization ARE the treatment. This is a clinical diagnosis made in the acute moment against a differential that includes pulmonary embolism, eclampsia, and other causes of peripartum collapse — don't let it become a delayed, retrospective-only diagnosis when the pattern fits in real time.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Proposed diagnostic criteria — both components required"
+    },
+    {
+      "type": "text",
+      "text": "An expert panel (Society for Maternal-Fetal Medicine and the Amniotic Fluid Embolism Foundation) proposed uniform research diagnostic criteria requiring BOTH of the following:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "1. Sudden onset of cardiorespiratory arrest, OR both hypotension (systolic BP <90 mmHg) AND respiratory compromise (dyspnea, cyanosis, or SpO2 <90%).",
+        "2. Documentation of OVERT DIC following the appearance of these initial signs/symptoms, using a DIC scoring system MODIFIED FOR PREGNANCY (see below) — this second component is not optional or supplementary, it's part of the defining diagnostic pattern."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Coagulopathy is a dominant, near-universal feature of AFE — observed in roughly 83% of cases — not an occasional downstream complication. A sudden peripartum collapse WITHOUT evolving coagulopathy should prompt genuine consideration of an alternative diagnosis (pulmonary embolism, eclampsia/seizure, anesthetic complication, other causes of peripartum cardiovascular collapse) rather than being assumed to be AFE by default."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "DIC scoring — modified for pregnancy"
+    },
+    {
+      "type": "text",
+      "text": "The standard ISTH DIC score (see isth-dic-score) is modified in this specific obstetric context: a fibrinogen threshold of LESS THAN 200 mg/dL is used (rather than the standard <100 mg/dL cutoff), because pregnancy's normally elevated baseline fibrinogen level makes the standard, non-pregnancy threshold too lenient — a fibrinogen level that would look reassuringly normal outside pregnancy can already represent a significant relative drop and clinically meaningful coagulopathy in this population."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Management — supportive and hemostatic, since there's no antidote"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Standard cardiac arrest resuscitation if arrest has occurred, including consideration of perimortem cesarean delivery per standard maternal cardiac arrest principles if the patient remains undelivered (see maternal-cardiac-arrest for the arrest-specific algorithm this module deliberately doesn't restate).",
+        "Activate massive transfusion protocol EARLY given the near-universal coagulopathy — don't wait for lab-confirmed DIC to anticipate and prepare for it.",
+        "Aggressive correction of coagulopathy with blood products guided by clinical bleeding and lab trends (see hemorrhagic-shock-mtp and teg-rotem-interpretation for the general hemostatic resuscitation approach) — this IS the treatment, alongside hemodynamic support, since there is no specific antidote or reversing agent for the underlying AFE process itself.",
+        "Hemodynamic support with vasopressors/inotropes as needed for the cardiopulmonary collapse component, and consideration of ECMO in a specialized center for refractory cardiopulmonary failure.",
+        "The historical 'A-OK' regimen (atropine, ondansetron, ketorolac) has been proposed based on a theoretical anaphylactoid mechanism but remains UNPROVEN — mentioned here for awareness since it's sometimes referenced, not as an endorsed standard therapy."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A clinical diagnosis made in the moment"
+    },
+    {
+      "type": "text",
+      "text": "AFE is diagnosed clinically, in real time, against a differential that includes pulmonary embolism, eclampsia, anesthetic complications (high spinal, local anesthetic systemic toxicity), and other causes of peripartum collapse — there is no confirmatory test available acutely to definitively establish the diagnosis in the moment. The clinical discipline is recognizing the pattern (sudden collapse plus evolving coagulopathy in labor/immediately postpartum) and committing to aggressive supportive/hemostatic resuscitation promptly, rather than treating AFE as a diagnosis that can only be confirmed retrospectively after the acute window for effective intervention has passed."
+    }
+  ],
+  "related": ["maternal-cardiac-arrest", "isth-dic-score", "hemorrhagic-shock-mtp", "teg-rotem-interpretation"],
+  "buildNote": "Obstetric & Gynecologic category. Diagnostic criteria (both components required) and the pregnancy-modified fibrinogen threshold (<200 mg/dL) WebSearch-verified against Clark et al. (Am J Obstet Gynecol 2016, the SMFM/AFE Foundation proposed criteria) and Pacheco et al. Deliberately cross-links to and doesn't duplicate maternal-cardiac-arrest's existing one-line AFE arrest management, including its 'A-OK' regimen mention, which this module flags explicitly as unproven per that same source material."
+}

@@ -1,0 +1,65 @@
+{
+  "id": "intraoperative-awareness",
+  "section": "Reference Library",
+  "category": "Perioperative & Anesthesia",
+  "title": "Intraoperative Awareness",
+  "settingEmphasis": ["or"],
+  "aliases": ["accidental awareness under general anesthesia", "AAGA", "anesthesia awareness"],
+  "tags": ["intraoperative awareness", "AAGA", "depth of anesthesia", "TIVA", "neuromuscular blockade", "OR"],
+  "keywords": ["neuromuscular blocking drugs are the single most commonly implicated risk factor, a paralyzed patient can't move or signal distress even if partially aware, which is exactly what makes this combination so dangerous", "TIVA carries a disproportionately higher awareness risk than volatile-agent maintenance, partly because there's no simple end-tidal concentration number to monitor the way there is with a volatile agent", "depth-of-anesthesia monitors like BIS can help, especially with TIVA, but the evidence that the monitor itself beats simply paying close attention to dosing/vitals is genuinely mixed, it's a tool not a guarantee", "if a patient reports awareness postoperatively, take it seriously and follow a structured response, don't dismiss or minimize what they're describing", "risk factors beyond NMBD and TIVA include female sex, younger adult age, obesity, and less experienced anesthesia staff, a useful checklist for identifying a higher-risk case in advance"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Pandit JJ, et al. 5th National Audit Project (NAP5) on accidental awareness during general anaesthesia. Br J Anaesth. 2014;113(4):549-559.",
+    "Avidan MS, et al. Prevention of Intraoperative Awareness in a High-Risk Surgical Population. N Engl J Med. 2011;365(7):591-600."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). No prior module addressed recognition, risk factors, or the post-event response for intraoperative awareness." }
+  ],
+  "summary": "Neuromuscular blockade is the single most commonly implicated risk factor for intraoperative awareness — a paralyzed patient can't move or signal distress even if partially aware — and TIVA carries disproportionately higher risk than volatile maintenance, partly because there's no simple end-tidal number to monitor the way there is with a volatile agent.",
+  "whyThisMatters": "This is a rare but genuinely traumatic complication for the patient (associated with real psychological sequelae including PTSD-like symptoms in some cases), and the risk factor pattern — paralysis masking distress, TIVA lacking a simple real-time depth marker — points directly at where extra vigilance actually helps, which is why knowing the risk factors changes practice rather than being purely academic.",
+  "clinicalTakeaway": "Overall incidence is low (roughly 1 in 19,600 in the large NAP5 audit) but rises meaningfully in high-risk populations (up to ~1% in some at-risk surgical groups). Neuromuscular blocking drugs are the single most commonly implicated risk factor — extra vigilance on adequate anesthetic depth is warranted whenever paralysis is used, since a paralyzed patient cannot move or otherwise signal distress even if partially aware. TIVA carries disproportionately higher awareness risk than volatile-agent maintenance in audit data, and depth-of-anesthesia monitoring (e.g. BIS) is generally recommended for TIVA or when neuromuscular blockade is used, though evidence that the monitor itself outperforms close attention to dosing and vital signs is genuinely mixed — treat it as a helpful tool, not a guarantee. If a patient reports awareness postoperatively, take it seriously and follow a structured response rather than dismissing or minimizing what they're describing.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Incidence and risk factors"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Overall incidence in the large UK NAP5 audit was approximately 1 in 19,600 general anesthetics — genuinely rare — but rises to as high as roughly 1% in certain high-risk surgical populations (e.g. cardiac surgery, obstetric general anesthesia, major trauma).",
+        "NEUROMUSCULAR BLOCKING DRUGS are the single most commonly implicated risk factor across audit data — a patient who is paralyzed cannot move, grimace, or otherwise physically signal distress even if they are partially aware, which removes the clinical cues that would normally prompt an anesthesiologist to deepen anesthesia.",
+        "TOTAL INTRAVENOUS ANESTHESIA (TIVA) is significantly overrepresented among awareness cases compared to volatile-agent maintenance — part of the reason is that there's no simple, continuously-displayed number analogous to end-tidal volatile agent concentration to gauge depth with TIVA, making under-dosing easier to miss without deliberate attention.",
+        "Other described risk factors: female sex, younger adult age (though notably not children, where the pattern differs), obesity, and less experienced/junior anesthesia staff."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Depth-of-anesthesia monitoring — a tool, not a guarantee"
+    },
+    {
+      "type": "text",
+      "text": "Depth-of-anesthesia monitors (e.g. BIS — bispectral index) are generally recommended particularly for TIVA cases or whenever neuromuscular blockade is used, given the reduced clinical cues available in both scenarios. However, the evidence on whether the monitor itself meaningfully outperforms close attention to dosing and standard vital signs is genuinely mixed — some trials show benefit, others suggest that increased vigilance and protocol adherence (which often accompanies monitor use) may account for much of the observed reduction in awareness rates, rather than the monitor number itself. There's also a technical limitation worth knowing: BIS values can be affected by EMG (muscle) activity, and neuromuscular blocking drugs reduce that EMG signal in a way that can artificially lower the displayed BIS number independent of true anesthetic depth — so a BIS reading in a paralyzed patient needs to be interpreted with that caveat in mind, not treated as an infallible number."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "If a patient reports awareness"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Take the report seriously — do not dismiss or minimize what the patient describes, even if it seems inconsistent with the documented anesthetic record.",
+        "A structured post-event response (per institutional protocol) typically includes a dedicated interview to characterize what was experienced (sounds, sensations, pain, paralysis, emotional distress), an explanation and genuine apology to the patient, documentation, and an offer of psychological support/follow-up — awareness events carry a real risk of lasting psychological sequelae including PTSD-like symptoms, so this isn't just a documentation exercise.",
+        "Review of the case (anesthetic record, drug administration, any equipment issues) to understand what happened and whether a modifiable factor contributed, feeding back into practice/institutional learning rather than treating it as an isolated, unexaminable event."
+      ]
+    }
+  ],
+  "related": ["sedation-analgesia-agents", "rass"],
+  "buildNote": "Perioperative & Anesthesia category. Incidence figures, the NMBD/TIVA risk-factor overrepresentation, and the BIS/EMG interpretive caveat WebSearch-verified against the NAP5 audit (Br J Anaesth 2014) and the Michigan Awareness Control Study/related BIS literature."
+}

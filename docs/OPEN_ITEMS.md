@@ -12,34 +12,17 @@ append-only chronological record; trust it over any summary above it for
 "what happened when."
 
 ## ▶ NEXT SESSION — start here (2026-09-15)
-State: **413 modules**, pipeline green (validate 413/0, build/sync/test
+State: **431 modules**, pipeline green (validate 431/0, build/sync/test
 281/0), iOS `TEST SUCCEEDED` (10/10 EngineTests). The original 2026-09-14
-content audit fully closed out at the end of Batch 5 (384 modules). A **fresh
-follow-up gap audit** ran 2026-09-15 (4 parallel domain agents — ED/Trauma,
-ICU/Critical Care, OR/Anesthesia/Perioperative, Peds/OB — each cross-checking
-the live inventory before proposing anything) surfaced **49 genuine,
-non-duplicate candidate gaps**. Batch 6 (→ 398 modules) shipped the highest-
-acuity ~14; Batch 7 (→ 413 modules) shipped 15 more — see the progress log
-entries below for full lists. **18 candidates from that same audit remain
-un-built**, the natural next thing to scope/batch with the user:
+content audit closed at Batch 5 (384 modules). The **fresh follow-up gap
+audit** (4 parallel domain agents, 2026-09-15) that found 49 genuine,
+non-duplicate candidate gaps is now **fully closed too** — Batch 6 (→ 398),
+Batch 7 (→ 413), and Batch 8 (→ 431) shipped all 49 candidates across three
+batches. See the progress log entries below for full per-batch lists.
+**No queued backlog remains from either audit cycle** — the next content
+work starts from a fresh look, the same way this cycle itself began.
 
-- ED/Trauma remaining (4 of 15): epistaxis management, acute scrotum
-  (torsion/priapism/Fournier's), accidental hypothermia staging, HINTS
-  vertigo.
-- ICU/Critical Care remaining (5 of 12): invasive hemodynamic monitoring
-  (art line/CVP/PAC), ICU nutrition, severe alcohol withdrawal/DTs
-  escalation, MCS device selection (IABP/Impella/VA-ECMO — flagged as needing
-  a "what the intensivist should know" framing, not a device-choice
-  implication), opioid withdrawal induction (flagged: write as principles +
-  when to involve addiction medicine, not a rigid dosing ladder, since
-  protocols vary by institution).
-- OR/Anesthesia remaining (5 of 10): intraoperative awareness, emergence
-  delirium/POD, pneumoperitoneum/Trendelenburg physiology, one-lung
-  ventilation basics, anesthesia machine checkout.
-- Peds/OB remaining (4 of 12): peds dehydration/ORT, peds non-sedation
-  procedural pain, peripartum cardiomyopathy, amniotic fluid embolism.
-
-Also still open from the prior cycle:
+Still open from the prior cycle:
 1. **UI Phase 4 — full visual pass.** Open-ended, unchanged since 2026-09-14.
 2. **Things only the user can supply**, still genuinely open: the local
    antibiogram (empiric-antibiotic agent selection), GRACE 2.0's proprietary
@@ -50,6 +33,94 @@ Also still open from the prior cycle:
    POCUS exam trees).
 
 ## Progress log
+- 2026-09-15 — **Fresh-look content audit Batch 8 shipped (→ 431 modules) —
+  closes the ENTIRE fresh-look audit cycle (all 49 candidates across Batches
+  6-8).** New Reference Library: `acute-scrotum` (torsion salvage collapses
+  from ~90-96% within 4-6h to under 20% beyond 24h; low-flow vs high-flow
+  priapism distinguished since the wrong approach for one doesn't address
+  the other's mechanism; Fournier's explicitly cross-linked to
+  `necrotizing-soft-tissue-infection` rather than restated),
+  `accidental-hypothermia-staging` (Revised Swiss System I-IV; "not dead
+  until warm and dead"; gentle-handling warning since a cold, irritable
+  myocardium can fibrillate from rough movement alone — the natural
+  counterpart to the existing `heat-stroke` module), `hints-vertigo`
+  (explicitly scoped to acute vestibular syndrome only, NOT episodic/BPPV
+  vertigo; states plainly that a NORMAL head impulse test is the worrisome
+  central-cause finding, the counterintuitive part everyone gets backwards
+  the first time; explicit operator-dependence caveat since the exam's
+  reported ~100%/90-94% sensitivity/specificity was demonstrated by trained
+  examiners specifically), `invasive-hemodynamic-monitoring` (square-wave
+  test technique for a damped arterial line; explicitly states CVP is a
+  weaker fluid-responsiveness predictor than commonly assumed), `icu-nutrition`
+  (expands icu-workflow's existing one-liner into a real protocol — hold,
+  don't switch to parenteral, during hemodynamic instability),
+  `severe-alcohol-withdrawal-dts` (the ICU escalation companion to the
+  existing CIWA-Ar calculator; phenobarbital's dual GABA/NMDA mechanism
+  framed as a genuine next step, not a last resort, once a patient is
+  benzodiazepine-refractory), `mcs-device-selection` (deliberately titled
+  "what the intensivist should know" per the user's own scoping direction —
+  bedside physiology/complications, not a device-choice protocol; states
+  that VA-ECMO can paradoxically INCREASE LV afterload and cause
+  ventricular distension, the counterintuitive point most worth knowing),
+  `opioid-withdrawal-induction` (deliberately principles-only per the
+  user's own scoping direction, not a fixed dosing ladder, since protocols
+  genuinely vary by institution — traditional vs low-dose/microdosing
+  induction contrasted, with fentanyl's tissue accumulation flagged as a
+  reason for extra caution even when COWS-based timing looks correct),
+  `intraoperative-awareness` (neuromuscular blockade as the single most
+  commonly implicated risk factor — a paralyzed patient can't signal
+  distress even if aware; BIS's EMG-interference caveat in a paralyzed
+  patient stated explicitly), `emergence-delirium-pod` (distinguishes the
+  two entities by timing/population, then leads with "rule out a reversible
+  cause first" — hypoxia, pain, a full bladder, residual paralysis — before
+  either is diagnosed by exclusion), `pneumoperitoneum-trendelenburg-
+  physiology` (states that pneumoperitoneum's SVR rise can mask a real fall
+  in cardiac output/cerebral perfusion behind a normal-looking blood
+  pressure — the single highest-value counterintuitive point), `one-lung-
+  ventilation-basics` (fiberoptic bronchoscopy, not auscultation, as the
+  gold standard — clinical exam alone has reported malposition rates as
+  high as ~50%; a clear position-then-suction-then-escalate hypoxemia
+  troubleshooting sequence), `anesthesia-machine-checkout` (the ASA 2008
+  15-item full / 8-item abbreviated structure; explicitly distinguished
+  from the existing patient-facing `preanesthesia-checklist` despite both
+  sharing "pre-" in their names), `peripartum-cardiomyopathy` (all four
+  diagnostic criteria stated together, not just the EF cutoff; leads with
+  how easily PPCM symptoms get misattributed to normal late pregnancy;
+  bromocriptine's 2025 meta-analysis evidence included with its own
+  not-yet-universal-practice caveat preserved from the source), `amniotic-
+  fluid-embolism` (states plainly that coagulopathy is present in ~83% of
+  cases and is part of the DEFINING diagnostic pattern, not a downstream
+  complication — a collapse without evolving DIC should prompt reconsidering
+  the diagnosis; pregnancy-modified DIC fibrinogen threshold of <200 mg/dL
+  vs the standard <100; cross-linked to, not duplicated from, the existing
+  one-line AFE mention inside `maternal-cardiac-arrest`, including flagging
+  that mention's own "A-OK" regimen as unproven). New Procedures:
+  `epistaxis-management` (leads with topical TXA ahead of reflexive
+  anterior packing per head-to-head trial evidence — 73% bleeding cessation
+  at 10 minutes vs 29% for packing — with the biggest advantage in exactly
+  the anticoagulated/antiplatelet patients most often reflexively packed),
+  `peds-nonsedation-procedural-pain` (onset-time table for LMX4/EMLA/
+  buffered lidocaine/vapocoolant with an explicit warning that mistimed
+  application is the single most common failure mode; infant sucrose framed
+  as a real evidence-based analgesic, not merely distraction — corrected a
+  schema mistake mid-build, see Errors below). Pipeline: validate 431/0,
+  build/sync/test 281/0, iOS `TEST SUCCEEDED` 10/10. Live-verified
+  `peds-nonsedation-procedural-pain` rendering correctly post-fix. **This
+  closes the entire fresh-look audit cycle — 49/49 candidates built across
+  Batches 6-8, 0 duplicates found or built, nothing left queued from either
+  the original 2026-09-14 audit or this follow-up cycle.**
+
+  **Error caught and fixed mid-batch**: `peds-nonsedation-procedural-pain.json`
+  was initially built with a `procedure` contentType but used a top-level
+  `body` array (the `reference`/`peds-tool` block-content pattern) — the
+  `procedure.schema.json` has NO `body` field, only `nodes[]` with each
+  node's content as a plain string. Caught by reading the schema again
+  before running validate (not by a failed validate run) and converted the
+  heading/table/list/callout blocks into four `nodes[]` steps with
+  prose-converted body strings. Worth remembering: `procedure` modules take
+  `nodes[]`, not `body[]` — only `reference` and `peds-tool` use the
+  richer block-content `body` array.
+
 - 2026-09-15 — **Fresh-look content audit Batch 7 shipped (→ 413 modules).**
   Continuation of the same fresh-look audit that shipped Batch 6 — 15 more of
   the 49 candidate gaps built, prioritizing the next tier of acuity across

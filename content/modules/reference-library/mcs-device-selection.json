@@ -1,0 +1,92 @@
+{
+  "id": "mcs-device-selection",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Temporary Mechanical Circulatory Support — What the Intensivist Should Know",
+  "settingEmphasis": ["icu"],
+  "aliases": ["IABP vs Impella vs ECMO", "mechanical circulatory support", "MCS devices cardiogenic shock"],
+  "tags": ["mechanical circulatory support", "IABP", "Impella", "VA-ECMO", "cardiogenic shock", "ICU"],
+  "keywords": ["this is bedside orientation for the intensivist managing these patients day to day, not a device-selection protocol, the actual choice of device is a cardiology/cardiac surgery/shock-team decision made with imaging and hemodynamics this module doesn't replace", "IABP is the oldest and least powerful of the three, routine use in cardiogenic shock is no longer broadly recommended by major guidelines, though it still has a role in selected patients particularly for coronary perfusion augmentation", "Impella unloads the LV directly by pumping blood from the ventricle to the aorta, VA-ECMO provides full cardiopulmonary support but can actually increase LV afterload and worsen LV distension, sometimes needing its own venting strategy", "know the bedside complications to watch for with each device, limb ischemia and bleeding at the access site are shared risks, VA-ECMO adds the differential-hypoxia (Harlequin syndrome) concern specific to peripheral cannulation", "randomized head-to-head trial evidence comparing these devices is still limited, the SCAI shock stage is a genuinely useful shared framework for tracking severity and escalation regardless of which specific device is chosen"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Rihal CS, et al. 2015 SCAI/ACC/HFSA/STS Clinical Expert Consensus Statement on the Use of Percutaneous Mechanical Circulatory Support Devices in Cardiovascular Care.",
+    "Thiele H, et al. Extracorporeal Life Support in Infarct-Related Cardiogenic Shock (ECLS-SHOCK). N Engl J Med. 2023;389(14):1286-1297.",
+    "Møller JE, et al. Microaxial Flow Pump or Standard Care in Infarct-Related Cardiogenic Shock (DanGer Shock). N Engl J Med. 2024;390(15):1382-1393."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). Deliberately framed as bedside orientation ('what the intensivist should know') rather than a device-selection algorithm, per explicit user direction when this item was scoped — MCS device choice is a cardiology/cardiac-surgery/shock-team decision this module supports understanding of, not one it implies Kairos makes." }
+  ],
+  "summary": "This is orientation for the bedside intensivist managing a patient already on temporary mechanical circulatory support — what each device actually does physiologically and what to watch for at the bedside — not a protocol for choosing between them, which is a cardiology/cardiac-surgery/shock-team decision made with imaging and hemodynamics this module doesn't replace.",
+  "whyThisMatters": "An ICU clinician doesn't need to make the device-selection decision, but does need to understand what the device sitting in front of them is actually doing to the patient's physiology and which bedside complications to watch for — VA-ECMO's tendency to increase LV afterload and cause ventricular distension, for instance, is exactly the kind of physiologic fact that changes what you're watching for at the bedside even if you weren't the one who chose the device.",
+  "clinicalTakeaway": "IABP is the oldest, least powerful, and least invasive of the three — augments diastolic coronary perfusion and modestly reduces afterload, but routine use in cardiogenic shock is no longer broadly guideline-recommended given trial evidence (IABP-SHOCK II) showing no mortality benefit; it still has a role in selected patients. Impella (a microaxial pump) directly unloads the LV by pumping blood from the ventricle into the aorta — this is a genuinely different mechanism than IABP, actively reducing LV wall stress. VA-ECMO provides full cardiopulmonary support (both circulatory support and oxygenation) but paradoxically can INCREASE LV afterload and worsen LV distension, since it pumps blood retrograde into the aorta against the native LV — some patients need a venting strategy (e.g. combined with Impella, an 'ECPELLA' approach) to address this. Watch for shared bedside risks (limb ischemia and bleeding at the vascular access site) across all three, plus VA-ECMO's specific differential hypoxia (Harlequin syndrome) risk with peripheral cannulation.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What this module is — and isn't"
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "This is bedside orientation for the intensivist managing a patient on (or being evaluated for) temporary mechanical circulatory support — it is NOT a device-selection algorithm. The actual choice between IABP, Impella, and VA-ECMO is a cardiology/cardiac surgery/shock-team decision made with detailed hemodynamics, imaging, and center-specific expertise/availability that this module doesn't attempt to replace."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What each device actually does"
+    },
+    {
+      "type": "table",
+      "columns": ["Device", "Mechanism", "Effect on LV"],
+      "rows": [
+        ["IABP (intra-aortic balloon pump)", "A balloon in the descending thoracic aorta inflates during diastole (augmenting coronary perfusion pressure) and deflates just before systole (modestly reducing afterload)", "Modest afterload reduction and modest coronary perfusion augmentation — the least powerful hemodynamic effect of the three"],
+        ["Impella (microaxial flow pump)", "A catheter-mounted pump sits across the aortic valve and actively pumps blood from the LV directly into the aorta", "DIRECTLY UNLOADS the LV — reduces LV end-diastolic pressure/wall stress and myocardial oxygen demand, a genuinely different and more powerful mechanism than IABP"],
+        ["VA-ECMO", "A pump-oxygenator circuit drains venous blood, oxygenates it, and returns it under pressure — typically peripherally, retrograde into the arterial system", "Provides full circulatory support AND gas exchange, but can INCREASE LV afterload (pumping retrograde against the native LV) — this can worsen LV distension and pulmonary edema in a patient with poor native LV function, sometimes requiring an LV venting strategy (e.g. combined with Impella — 'ECPELLA' — or a surgical vent) to unload the distended ventricle"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Where the evidence stands"
+    },
+    {
+      "type": "list",
+      "items": [
+        "IABP-SHOCK II and subsequent guideline updates moved away from routine IABP use in cardiogenic shock given no demonstrated mortality benefit — it retains a role in selected patients (e.g. for coronary perfusion augmentation in specific scenarios) but isn't the default escalation step it once was.",
+        "DanGer Shock (NEJM 2024) — a randomized trial of microaxial flow pump (Impella) plus standard care versus standard care alone in infarct-related cardiogenic shock — showed a mortality benefit with Impella, though also a higher rate of complications (including limb ischemia, bleeding, and renal complications), reinforcing that these devices are genuinely double-edged: real physiologic benefit paired with real procedural risk.",
+        "ECLS-SHOCK (NEJM 2023) — a randomized trial of early VA-ECMO versus standard care in infarct-related cardiogenic shock — did NOT show a mortality benefit with routine early ECMO use in this population, tempering earlier enthusiasm for reflexive early ECMO deployment.",
+        "Overall: head-to-head randomized comparisons directly between these devices remain limited, and center-specific expertise/availability genuinely influences real-world device selection alongside the patient's specific physiology — this is an active, evolving area of evidence, not a settled algorithm."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bedside complications to watch for"
+    },
+    {
+      "type": "list",
+      "items": [
+        "LIMB ISCHEMIA at the arterial access site — a shared risk across all three devices given large-bore arterial cannulation; check distal pulses/perfusion regularly, and know that a distal perfusion catheter is sometimes placed prophylactically (particularly with VA-ECMO) specifically to reduce this risk.",
+        "BLEEDING at the access site, and more broadly given the anticoagulation typically required to prevent device thrombosis.",
+        "HEMOLYSIS — a mechanical consequence of blood passing through any of these pump systems; monitor for it, particularly with prolonged support.",
+        "DIFFERENTIAL HYPOXIA ('Harlequin syndrome' or 'north-south syndrome') — specific to peripheral VA-ECMO with a still-functioning native heart: well-oxygenated ECMO blood perfuses the lower body while poorly-oxygenated blood ejected by a recovering-but-still-impaired native heart (with concurrent lung injury) preferentially perfuses the upper body/coronary/cerebral circulation, so the upper body can be relatively hypoxemic even while lower-body saturations look reassuring — this specifically means checking oxygenation via a RIGHT upper extremity (pre-ductal-equivalent) arterial sample, not just relying on a lower-body sampling site.",
+        "LV DISTENSION with VA-ECMO specifically, as above — watch for signs (worsening pulmonary edema, a non-pulsatile or minimally pulsatile arterial waveform suggesting the native heart isn't ejecting) that may prompt a venting strategy discussion with the managing team."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A shared severity framework"
+    },
+    {
+      "type": "text",
+      "text": "Regardless of which device a patient ends up on, the SCAI cardiogenic shock staging system (see scai-cardiogenic-shock-staging) is a genuinely useful shared framework for tracking severity and escalation over time — it's mechanism-agnostic and gives the whole team a common language for how sick the patient is and whether they're trending better or worse."
+    }
+  ],
+  "related": ["scai-cardiogenic-shock-staging", "ecmo-support", "rv-failure-pulmonary-hypertensive-crisis"],
+  "buildNote": "Critical Care category. Deliberately built as bedside physiology/complication orientation rather than a device-selection algorithm, per the user's explicit scoping direction for this item. Device mechanisms and the DanGer Shock/ECLS-SHOCK trial findings WebSearch-verified against the original NEJM publications (2023, 2024) and the 2015 SCAI/ACC/HFSA/STS consensus statement."
+}

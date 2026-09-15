@@ -1,0 +1,62 @@
+{
+  "id": "peds-nonsedation-procedural-pain",
+  "section": "Procedures",
+  "category": "Airway & Sedation Workflows",
+  "title": "Pediatric Procedural Pain Management — Non-Sedation Techniques",
+  "settingEmphasis": ["ed"],
+  "aliases": ["topical anesthesia peds", "EMLA LMX4", "vapocoolant spray", "sucrose analgesia infant"],
+  "tags": ["procedural pain", "topical anesthesia", "vapocoolant", "sucrose", "peds", "ED"],
+  "keywords": ["most minor peds procedures — IV starts, venipuncture, simple laceration repair, abscess I&D — don't need procedural sedation at all if pain is managed well with the right non-sedation technique and timing", "LMX4 has a faster onset, roughly 20-30 minutes, than EMLA's 45-60 minutes, know which one you have available and plan the timing accordingly rather than being surprised it isn't ready yet", "buffered lidocaine delivered needle-free (a Zingo-style J-tip injector) has analgesic onset in 1-3 minutes, useful when there isn't time for a 20-45 minute topical cream to work", "vapocoolant spray works immediately but only lasts briefly, its main advantage is speed for a quick procedure, not depth or duration of analgesia", "oral sucrose is a real, evidence-supported analgesic for a brief painful procedure in an infant, not just a distraction technique, timing it right before the procedure matters"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Krauss BS, et al. Managing pain and distress in children undergoing brief diagnostic and therapeutic procedures. Paediatr Anaesth. 2019.",
+    "Stevens B, et al. Sucrose for analgesia in newborn infants undergoing painful procedures. Cochrane Database Syst Rev. 2016.",
+    "Poonai N, et al. Vapocoolant spray for children with intravenous cannulation pain."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). Procedural sedation is covered in depth elsewhere (procedural-sedation-workflow, peds-procedural-sedation); this fills the missing space of non-sedation techniques that avoid the need for sedation entirely in most minor pediatric procedures." }
+  ],
+  "outputType": "reference-checklist",
+  "purpose": "Non-sedation techniques — topical/needle-free anesthesia, vapocoolant, and infant sucrose — that manage pain adequately for most minor pediatric procedures without the resources and risk of procedural sedation.",
+  "entryPrompt": "Most minor procedures (IV starts, venipuncture, simple laceration repair, abscess I&D) don't need procedural sedation if pain is managed well with the right technique and, critically, the right TIMING — a topical agent applied too late is functionally the same as no analgesia at all.",
+  "checklist": [
+    "LMX4 (4% liposomal lidocaine) applied with roughly 20-30 minutes lead time — faster onset than EMLA, apply as soon as the need for the procedure is identified rather than right before you're ready to start",
+    "EMLA (lidocaine-prilocaine eutectic mixture) applied with roughly 45-60 minutes lead time under an occlusive dressing if LMX4 isn't available — plan for this longer window or it won't be ready when needed",
+    "Buffered lidocaine via needle-free injector (e.g. J-tip/Zingo-style device) considered when there isn't 20-45 minutes to wait — onset in roughly 1-3 minutes",
+    "Vapocoolant spray considered for a quick procedure where immediate (if brief) analgesia is more valuable than depth/duration — apply immediately before the procedure, not in advance",
+    "Oral sucrose given to an infant shortly BEFORE a brief painful procedure (heel stick, venipuncture, immunization) — a real, evidence-supported analgesic technique in this age group, not merely a distraction/comfort measure",
+    "Non-pharmacologic adjuncts (parental presence/holding, distraction, age-appropriate explanation, a child-life specialist if available) used alongside — not instead of — an appropriate pharmacologic technique for a genuinely painful procedure"
+  ],
+  "nodes": [
+    {
+      "id": "topical",
+      "type": "step",
+      "prompt": "Topical anesthetics — know the onset time and plan accordingly",
+      "body": "LMX4 (4% liposomal lidocaine): onset roughly 20-30 minutes, no occlusive dressing required — often the more practical choice in a busy ED if available. EMLA (lidocaine-prilocaine): onset roughly 45-60 minutes, requires an occlusive dressing over the site for the full duration — plan for this longer lead time or the procedure will outpace the analgesia. Amethocaine (tetracaine) gel: onset roughly 30-40 minutes, reported as more effective than EMLA for venipuncture/cannulation in some comparative studies where available. The single most common failure mode with any topical agent is TIMING — applying it right before attempting the procedure defeats the purpose. Apply as soon as the need for the procedure is identified (e.g. at triage or on the treatment decision), not when the clinician is finally ready to perform it."
+    },
+    {
+      "id": "faster-options",
+      "type": "step",
+      "prompt": "Faster options when there isn't time to wait",
+      "body": "Buffered lidocaine via a needle-free injector (J-tip/Zingo-style device) delivers analgesic onset within roughly 1-3 minutes — a genuinely useful option when a topical cream's 20-45 minute lead time isn't available. Vapocoolant spray provides immediate (essentially instant) but brief analgesia — its advantage is speed, not depth or duration, making it best suited to a quick, brief procedure rather than one requiring sustained analgesia; it has been shown to reduce IV cannulation pain without increasing procedural difficulty."
+    },
+    {
+      "id": "sucrose",
+      "type": "step",
+      "prompt": "Sucrose for infants — a real analgesic, not just a distraction",
+      "body": "Oral sucrose given shortly BEFORE a brief painful procedure (heel stick, venipuncture, immunization, IV start) in an infant has genuine, evidence-supported analgesic effect — this is a pharmacologic-adjacent intervention with real data behind it (Cochrane-reviewed), not merely a soothing/distraction technique to make the caregiver feel better. Timing matters — give it shortly before, not well in advance of, the procedure for the effect to be present when needed."
+    },
+    {
+      "id": "combine",
+      "type": "step",
+      "prompt": "Combine with non-pharmacologic measures, not instead of",
+      "body": "Parental presence/holding, age-appropriate distraction, clear explanation matched to developmental stage, and involvement of a child-life specialist where available all genuinely help — but they work best as an ADDITION to an appropriate pharmacologic technique for a truly painful procedure, not as a substitute for one. A well-timed topical agent plus good non-pharmacologic support together is the actual goal, not choosing one approach over the other."
+    }
+  ],
+  "crossLinks": ["procedural-sedation-workflow", "peds-procedural-sedation"],
+  "buildNote": "reference-checklist outputType, since this is a technique-selection reference rather than a linear procedural workflow. Onset timings for LMX4/EMLA/buffered lidocaine/vapocoolant and the sucrose evidence base WebSearch-verified against Krauss et al. (Paediatr Anaesth 2019) and the Cochrane sucrose review — deliberately scoped as the non-sedation companion to the existing procedural sedation modules, not a replacement for them when genuine sedation is actually indicated."
+}

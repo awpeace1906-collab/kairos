@@ -1,0 +1,85 @@
+{
+  "id": "acute-scrotum",
+  "section": "Reference Library",
+  "category": "ENT / Ophtho / Dental / GU",
+  "title": "Acute Scrotum — Torsion, Priapism & Fournier's Gangrene",
+  "settingEmphasis": ["ed"],
+  "aliases": ["testicular torsion", "Fournier's gangrene", "priapism", "scrotal pain"],
+  "tags": ["testicular torsion", "priapism", "Fournier's gangrene", "urologic emergency", "ED"],
+  "keywords": ["testicular torsion salvage is a race against the clock, roughly 90-96 percent salvage within 4-6 hours falling to under 20 percent beyond 24 hours, don't wait for ultrasound if the clinical picture is clear and urology is available for immediate exploration", "a normal cremasteric reflex makes torsion less likely but does not exclude it, don't be falsely reassured by one preserved reflex in a patient whose exam otherwise fits", "priapism over 4 hours is an emergency, distinguish low-flow (ischemic, painful, the true emergency needing prompt decompression) from high-flow (non-ischemic, often painless, can often be observed)", "Fournier's gangrene is necrotizing fasciitis of the perineum/genitals, it needs the same time-to-OR urgency as necrotizing soft tissue infection anywhere else on the body", "don't let embarrassment or a busy department delay a genital exam in a patient with scrotal pain, this is one of the areas where diagnostic delay has an irreversible consequence"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Sharp VJ, et al. Testicular Torsion: Diagnosis, Evaluation, and Management. Am Fam Physician. 2013;88(12):835-840.",
+    "Mellick LB, et al. A Systematic Review of Testicle Survival Time After a Torsion Event. Pediatr Emerg Care. 2019;35(12):821-825.",
+    "Montague DK, et al. American Urological Association guideline on the management of priapism."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). No prior module addressed any of these three time-critical GU emergencies; priapism only appeared as a passing footnote inside sickle-cell-crisis." }
+  ],
+  "summary": "Three genital emergencies where time is the enemy — testicular torsion salvage collapses from ~90-96% within 4-6 hours to under 20% beyond 24, ischemic priapism over 4 hours needs prompt decompression, and Fournier's gangrene needs the same time-to-OR urgency as necrotizing fasciitis anywhere else.",
+  "whyThisMatters": "All three conditions are diagnoses where a delayed genital exam — sometimes from patient embarrassment, sometimes from clinician hesitation in a busy department — directly costs organ salvage or, in Fournier's, survival; the clinical discipline here is treating a scrotal complaint with the same urgency as any other time-critical presentation rather than letting social awkwardness slow the workup.",
+  "clinicalTakeaway": "Testicular torsion: don't wait for ultrasound if the clinical picture is clear and urology is available for immediate exploration — every hour matters, and a normal cremasteric reflex does NOT exclude torsion. Priapism: distinguish low-flow (ischemic, painful, a true emergency) from high-flow (non-ischemic, often painless, less urgent) before deciding on decompression — treat a painful erection over 4 hours as ischemic priapism until proven otherwise. Fournier's gangrene: this is necrotizing fasciitis of the perineum — treat with the same emergent surgical urgency (see necrotizing-soft-tissue-infection), not a slower GU-referral pathway.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Testicular torsion — a race against the clock"
+    },
+    {
+      "type": "table",
+      "columns": ["Time from onset", "Approximate testicular salvage rate"],
+      "rows": [
+        ["Within 4-6 hours", "~90-96%"],
+        ["13-24 hours", "~50-54%"],
+        ["Beyond 24 hours", "~10-18%"]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Classic presentation: sudden, severe unilateral testicular pain, often with nausea/vomiting, a high-riding or horizontally-oriented testicle, and an ABSENT cremasteric reflex — but a PRESERVED cremasteric reflex makes torsion less likely, it does NOT exclude it. Don't be falsely reassured by one preserved finding in a patient whose overall picture still fits.",
+        "Bedside/formal ultrasound with Doppler flow is the standard confirmatory test when available promptly — but if the clinical picture is highly suggestive and urology is immediately available for surgical exploration, do NOT let imaging delay definitive treatment. Manual detorsion (rotating the testicle outward, like 'opening a book,' typically counterclockwise on the left/clockwise on the right when facing the patient, though the direction can vary) can be attempted at the bedside as a temporizing measure while arranging emergent surgery, but is not a substitute for surgical exploration and fixation.",
+        "Time-to-intervention is the single variable that determines salvage — this is one of the clearest 'minutes matter' relationships in urologic emergency care, matching the framing already used for acute limb ischemia and necrotizing soft tissue infection elsewhere in this app."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Priapism — low-flow vs high-flow"
+    },
+    {
+      "type": "table",
+      "columns": ["Feature", "Low-flow (ischemic)", "High-flow (non-ischemic)"],
+      "rows": [
+        ["Mechanism", "Venous outflow obstruction — blood trapped, not exchanging", "Arterial — usually from perineal/genital trauma creating a fistula"],
+        ["Pain", "Painful — a true urologic emergency", "Often painless"],
+        ["Urgency", "Emergent — prolonged ischemia risks permanent erectile tissue damage", "Less urgent — can often be observed initially"],
+        ["Typical cause", "Sickle cell disease, certain medications (some psychiatric/erectile-dysfunction drugs), idiopathic", "Straddle injury or other perineal trauma"]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "A painful erection lasting more than 4 hours, not related to sexual arousal, is treated as ISCHEMIC (low-flow) priapism until proven otherwise, given the time-sensitive risk to erectile tissue.",
+        "Management of ischemic priapism: aspiration of blood from the corpus cavernosum plus intracavernosal injection of a sympathomimetic agent (e.g. phenylephrine) to promote detumescence — this is a urology-directed procedure, involve urology early.",
+        "High-flow priapism (typically painless, history of perineal trauma) is less urgent and often managed with observation or, if needed, selective arterial embolization rather than the aspiration/injection approach used for ischemic priapism — distinguishing the two matters because the wrong approach for high-flow priapism doesn't address the actual mechanism.",
+        "In a patient with sickle cell disease and priapism, involve hematology alongside urology — see sickle-cell-crisis for the broader sickle cell management context, though priapism-specific detumescence still follows the approach above."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Fournier's gangrene — necrotizing fasciitis of the perineum"
+    },
+    {
+      "type": "text",
+      "text": "Fournier's gangrene is necrotizing fasciitis involving the perineal, genital, or perianal region — the same disease process, and the same time-critical surgical urgency, as necrotizing soft tissue infection anywhere else on the body (see necrotizing-soft-tissue-infection for the general recognition/management principles: pain out of proportion to exam, don't wait for crepitus/bullae/necrosis which are late findings, broad-spectrum antibiotics plus an antitoxin agent, and emergent surgical debridement as the definitive treatment that antibiotics alone can never substitute for). Risk factors include diabetes, immunosuppression, recent perineal/genital trauma or instrumentation, and local infection (perianal abscess, urinary tract infection). Aggressive fluid resuscitation and broad-spectrum antibiotics start immediately, but emergent surgical debridement is what determines survival — get surgery/urology involved the moment this is suspected, not after a full workup."
+    }
+  ],
+  "related": ["necrotizing-soft-tissue-infection", "sickle-cell-crisis"],
+  "buildNote": "New content in the ENT / Ophtho / Dental / GU category (its GU component, alongside the existing ophtho/ENT modules in this category). Testicular torsion salvage-rate timeline and priapism low-flow/high-flow distinction WebSearch-verified against Mellick et al. (Pediatr Emerg Care 2019) and AUA priapism guideline teaching. Fournier's section deliberately cross-links to necrotizing-soft-tissue-infection rather than restating its general recognition principles."
+}

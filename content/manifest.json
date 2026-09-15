@@ -2066,6 +2066,15 @@
       "review_tier": 1,
       "next_review_due": "2027-03-04"
     },
+    "peds-module/peds-dehydration-ort": {
+      "content_version": 1,
+      "hash": "7b476bad81e6e81b",
+      "path": "modules/peds-module/peds-dehydration-ort.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "peds-module/peds-difficult-airway": {
       "content_version": 1,
       "hash": "ced1f3ff2da43be5",
@@ -2246,6 +2255,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-15"
     },
+    "procedures/epistaxis-management": {
+      "content_version": 1,
+      "hash": "53b23cf2ff6ea733",
+      "path": "modules/procedures/epistaxis-management.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "procedures/escharotomy": {
       "content_version": 1,
       "hash": "1f15b664f1559e44",
@@ -2340,6 +2358,15 @@
       "content_version": 1,
       "hash": "05390d708a7ad7d3",
       "path": "modules/procedures/paracentesis.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "procedures/peds-nonsedation-procedural-pain": {
+      "content_version": 1,
+      "hash": "dd5fcfdbf0e7e745",
+      "path": "modules/procedures/peds-nonsedation-procedural-pain.json",
       "contentType": "procedure",
       "section": "Procedures",
       "review_tier": 1,
@@ -2452,6 +2479,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-03"
     },
+    "reference-library/accidental-hypothermia-staging": {
+      "content_version": 1,
+      "hash": "351e84a75c93d662",
+      "path": "modules/reference-library/accidental-hypothermia-staging.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/acls-adult-cardiac-arrest": {
       "content_version": 5,
       "hash": "83c981b3d68b3ce6",
@@ -2524,6 +2560,15 @@
       "review_tier": 2,
       "next_review_due": "2027-03-07"
     },
+    "reference-library/acute-scrotum": {
+      "content_version": 1,
+      "hash": "b8c4342c3bcc3a9a",
+      "path": "modules/reference-library/acute-scrotum.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/adrenal-crisis": {
       "content_version": 1,
       "hash": "a84c4c4fd5d333b2",
@@ -2578,6 +2623,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-03"
     },
+    "reference-library/amniotic-fluid-embolism": {
+      "content_version": 1,
+      "hash": "3579510df84169c8",
+      "path": "modules/reference-library/amniotic-fluid-embolism.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/anaphylaxis": {
       "content_version": 3,
       "hash": "5ec19f359f5454dc",
@@ -2595,6 +2649,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-12-03"
+    },
+    "reference-library/anesthesia-machine-checkout": {
+      "content_version": 1,
+      "hash": "771bde83d0402618",
+      "path": "modules/reference-library/anesthesia-machine-checkout.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/anesthesia-pocus": {
       "content_version": 2,
@@ -2902,6 +2965,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-15"
     },
+    "reference-library/emergence-delirium-pod": {
+      "content_version": 1,
+      "hash": "f53cd64441a6729c",
+      "path": "modules/reference-library/emergence-delirium-pod.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/emergency-drugs-pregnancy": {
       "content_version": 2,
       "hash": "e9aebcd8fdf8c2e5",
@@ -3001,6 +3073,15 @@
       "review_tier": 1,
       "next_review_due": "2027-03-04"
     },
+    "reference-library/hints-vertigo": {
+      "content_version": 1,
+      "hash": "2cae1ebdf26a187f",
+      "path": "modules/reference-library/hints-vertigo.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/hiv-post-exposure-prophylaxis": {
       "content_version": 1,
       "hash": "260dd046833b71c3",
@@ -3046,6 +3127,15 @@
       "review_tier": 1,
       "next_review_due": "2027-03-09"
     },
+    "reference-library/icu-nutrition": {
+      "content_version": 1,
+      "hash": "bcc330aa6857e0c7",
+      "path": "modules/reference-library/icu-nutrition.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/icu-workflow": {
       "content_version": 2,
       "hash": "7d87922f097e26bc",
@@ -3072,6 +3162,24 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2027-03-03"
+    },
+    "reference-library/intraoperative-awareness": {
+      "content_version": 1,
+      "hash": "a697d9435cdf0727",
+      "path": "modules/reference-library/intraoperative-awareness.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "reference-library/invasive-hemodynamic-monitoring": {
+      "content_version": 1,
+      "hash": "512bb1da4f447207",
+      "path": "modules/reference-library/invasive-hemodynamic-monitoring.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/iv-fluids": {
       "content_version": 3,
@@ -3126,6 +3234,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-12-02"
+    },
+    "reference-library/mcs-device-selection": {
+      "content_version": 1,
+      "hash": "e1a62d9b2ecd8410",
+      "path": "modules/reference-library/mcs-device-selection.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/methemoglobinemia": {
       "content_version": 1,
@@ -3190,10 +3307,28 @@
       "review_tier": 1,
       "next_review_due": "2027-03-02"
     },
+    "reference-library/one-lung-ventilation-basics": {
+      "content_version": 1,
+      "hash": "7565ed90358613a8",
+      "path": "modules/reference-library/one-lung-ventilation-basics.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/ophthalmologic-emergencies": {
       "content_version": 1,
       "hash": "3108eed341b38b22",
       "path": "modules/reference-library/ophthalmologic-emergencies.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "reference-library/opioid-withdrawal-induction": {
+      "content_version": 1,
+      "hash": "0b3fbabc9772d8a8",
+      "path": "modules/reference-library/opioid-withdrawal-induction.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": 1,
@@ -3280,6 +3415,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-15"
     },
+    "reference-library/peripartum-cardiomyopathy": {
+      "content_version": 1,
+      "hash": "34563cd5ef663efe",
+      "path": "modules/reference-library/peripartum-cardiomyopathy.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/peripheral-iv-vasopressors": {
       "content_version": 2,
       "hash": "373c30f1b9e9e8c1",
@@ -3306,6 +3450,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-12-03"
+    },
+    "reference-library/pneumoperitoneum-trendelenburg-physiology": {
+      "content_version": 1,
+      "hash": "f5764608980b5362",
+      "path": "modules/reference-library/pneumoperitoneum-trendelenburg-physiology.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/ponv-treatment-algorithm": {
       "content_version": 1,
@@ -3459,6 +3612,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-12-14"
+    },
+    "reference-library/severe-alcohol-withdrawal-dts": {
+      "content_version": 1,
+      "hash": "7836bf3ae5871de6",
+      "path": "modules/reference-library/severe-alcohol-withdrawal-dts.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/shock-classification": {
       "content_version": 2,

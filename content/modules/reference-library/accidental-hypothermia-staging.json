@@ -1,0 +1,72 @@
+{
+  "id": "accidental-hypothermia-staging",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Accidental Hypothermia — Staging & Rewarming",
+  "settingEmphasis": ["ed", "icu", "prehospital"],
+  "aliases": ["hypothermia staging", "Swiss staging system", "rewarming protocol"],
+  "tags": ["hypothermia", "Swiss staging system", "rewarming", "cardiac arrest", "ED", "ICU", "prehospital"],
+  "keywords": ["mild 35-32C, moderate 32-28C, severe 28-24C, profound under 24C, the Swiss staging system uses clinical signs to estimate the stage when a core temperature isn't available yet", "handle a severely hypothermic patient gently, rough movement/repositioning can trigger a lethal arrhythmia in a cold, irritable heart, this isn't a routine trauma-style logroll situation", "a hypothermic patient isn't dead until they're warm and dead, resuscitation efforts and the decision to stop are different in significant hypothermia than in a normothermic arrest", "below 30C, withhold or space out defibrillation and vasopressor dosing per current guidance, a cold heart doesn't respond normally to either", "passive external rewarming for mild, active external for moderate, active core rewarming (including ECMO for cardiac arrest) for severe/profound, the companion piece to heat-stroke's opposite problem"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Pasquier M, et al. Clinical staging of accidental hypothermia: The Revised Swiss System. Resuscitation. 2021;162:182-187.",
+    "Musi ME, et al. Clinical staging of accidental hypothermia: The Revised Swiss System: Recommendation of the International Commission for Mountain Emergency Medicine (ICAR MedCom). Resuscitation. 2021."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). Only passing mentions existed elsewhere (trauma primary survey, precipitous delivery); this is heat-stroke's natural counterpart, previously missing despite that module already existing." }
+  ],
+  "summary": "The Revised Swiss Staging System lets you estimate hypothermia severity from clinical signs alone when core temperature isn't yet available — mild stays shivering and alert, moderate loses shivering and consciousness dims, severe becomes unconscious with vital signs still present, profound looks like death but a hypothermic patient isn't dead until they're warm and dead.",
+  "whyThisMatters": "Cold myocardium is electrically irritable and rough handling or premature defibrillation attempts in a severely hypothermic patient can precipitate the very arrhythmia you're trying to prevent, which is why gentle handling and modified resuscitation rules exist specifically for this population — and because a profoundly hypothermic patient can present looking clinically dead with fixed pupils and no detectable pulse yet still be neurologically salvageable after rewarming, the usual rules for declaring death don't straightforwardly apply.",
+  "clinicalTakeaway": "Stage clinically when core temperature isn't yet available: mild (shivering, alert) roughly 35-32°C gets passive external rewarming (warm environment, blankets, remove wet clothing); moderate (shivering stops, consciousness impaired) roughly 32-28°C gets active external rewarming (warm blankets/forced-air warming) plus careful monitoring; severe (unconscious, vital signs present) roughly 28-24°C and profound (may appear dead) below 24°C need active core rewarming, gentle handling to avoid precipitating arrhythmia, and in cardiac arrest, consideration of ECMO/cardiopulmonary bypass for rewarming alongside CPR. Below 30°C, follow modified resuscitation guidance — space out or withhold defibrillation attempts and vasopressor dosing per current protocol, since a cold heart doesn't respond normally to either. A hypothermic patient in arrest isn't declared dead until rewarmed (or until further resuscitation is deemed futile per protocol) — 'not dead until warm and dead.'",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The Revised Swiss Staging System"
+    },
+    {
+      "type": "table",
+      "columns": ["Stage", "Core temperature", "Clinical signs", "Rewarming approach"],
+      "rows": [
+        ["HT I — Mild", "35-32°C", "Conscious, shivering", "Passive external rewarming — warm environment, insulation, remove wet clothing; the patient can often generate their own heat via shivering"],
+        ["HT II — Moderate", "32-28°C", "Impaired consciousness, NOT shivering", "Active external rewarming — warm blankets, forced-air warming devices — plus cardiac monitoring; loss of shivering means the patient can no longer self-rewarm"],
+        ["HT III — Severe", "28-24°C", "Unconscious, vital signs PRESENT", "Active external AND core rewarming (warmed IV fluids, warmed humidified oxygen, body cavity lavage where available) with continuous cardiac monitoring given high arrhythmia risk"],
+        ["HT IV — Profound / apparent death", "< 24°C", "No, or minimal, vital signs — may appear clinically dead", "Active core rewarming, CPR if in arrest, and consideration of extracorporeal rewarming (ECMO/cardiopulmonary bypass) — 'not dead until warm and dead'"]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "This system was specifically designed for use when an accurate core temperature ISN'T immediately available (a common field/prehospital situation) — clinical signs (consciousness, presence of shivering, vital signs) let you estimate the stage and guide initial management before a core temperature probe result comes back."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Gentle handling — a cold heart is electrically irritable"
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Handle a moderately-to-severely hypothermic patient GENTLY — rough movement, repositioning, or unnecessary jostling can precipitate ventricular fibrillation in a cold, irritable myocardium. This is not a routine trauma logroll/transfer situation; minimize movement and handle deliberately."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Modified resuscitation below 30°C"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Below 30°C, a cold heart may not respond normally to defibrillation or vasopressors — current guidance generally supports limiting defibrillation attempts and spacing out (or withholding) vasopressor dosing until the core temperature rises above this threshold, rather than repeating standard-interval ACLS dosing on a hypothermic arrest.",
+        "Continue CPR while actively rewarming — a hypothermic arrest is treated as potentially reversible with rewarming in a way a normothermic arrest of the same duration would not be, which is the basis for the 'not dead until warm and dead' principle.",
+        "Extracorporeal rewarming (ECMO or cardiopulmonary bypass) is the fastest and most effective rewarming method for a patient in cardiac arrest from severe/profound hypothermia, when available — it simultaneously provides circulatory support and core rewarming, and should be considered early rather than as a last resort in a center with that capability."
+      ]
+    }
+  ],
+  "related": ["heat-stroke", "trauma-primary-survey"],
+  "buildNote": "Critical Care category, the natural counterpart to the existing heat-stroke module. Swiss staging thresholds and the gentle-handling/modified-resuscitation-below-30C points WebSearch-verified against Pasquier et al. and the ICAR MedCom Revised Swiss System (Resuscitation 2021)."
+}

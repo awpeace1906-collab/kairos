@@ -1,0 +1,72 @@
+{
+  "id": "epistaxis-management",
+  "section": "Procedures",
+  "category": "ENT / Ophtho / Dental / GU",
+  "title": "Epistaxis Management",
+  "settingEmphasis": ["ed"],
+  "aliases": ["nosebleed management", "anterior nasal packing", "posterior epistaxis"],
+  "tags": ["epistaxis", "nosebleed", "nasal packing", "tranexamic acid", "ENT", "ED"],
+  "keywords": ["70-95 percent of epistaxis is anterior, from Kiesselbach's plexus on the septum, try topical TXA before reflexive packing", "topical TXA stops bleeding faster than anterior packing in head-to-head trials and is far better tolerated, patients hate packing", "posterior epistaxis is the one that can't be controlled anteriorly and needs a posterior balloon or ENT, red flags are bleeding from both nostrils or down the throat despite anterior measures", "always have the patient blow their nose first to clear clots before attempting any intervention, a clot-filled nose makes it impossible to see the actual bleeding source", "anticoagulated and antiplatelet patients are exactly the population where topical TXA shows the biggest advantage over packing"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Ker K, et al. Topical tranexamic acid for epistaxis. Ann Emerg Med. 2022 (NoPAC-derived and related RCTs).",
+    "Zahed R, et al. Topical Tranexamic Acid Compared With Anterior Nasal Packing for Treatment of Epistaxis in Patients Taking Antiplatelet Drugs. Am J Emerg Med. 2018."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). No prior module addressed this very common ED procedure." }
+  ],
+  "outputType": "workflow",
+  "purpose": "Stepwise anterior epistaxis management leading with topical tranexamic acid ahead of reflexive nasal packing, plus recognition of when a bleed is posterior and needs escalation beyond anterior measures.",
+  "entryPrompt": "Have the patient blow their nose firmly first to clear clots before attempting any intervention — a clot-filled nasal cavity makes it impossible to actually see the bleeding source and wastes the first attempt at control.",
+  "nodes": [
+    {
+      "id": "prep",
+      "type": "step",
+      "prompt": "1. Position and clear the nose",
+      "body": "Have the patient sit upright, leaning slightly forward (reduces swallowing blood and aspiration risk), and firmly blow their nose to clear existing clots. Apply direct pressure — pinching the soft cartilaginous lower nose (not the bony bridge) continuously for a full 10-15 minutes by the clock — while preparing the next steps; many anterior bleeds will actually stop with this alone if given adequate, uninterrupted time."
+    },
+    {
+      "id": "identify",
+      "type": "step",
+      "prompt": "2. Identify the source if possible",
+      "body": "With good lighting (headlamp) and a nasal speculum if available, look for an identifiable anterior bleeding point, most often on the septum at Kiesselbach's plexus (the confluence of several vessels just inside the nostril) — roughly 70-95% of epistaxis arises from this anterior source. Topical vasoconstrictor/anesthetic spray (e.g. oxymetazoline with lidocaine) can improve visualization and comfort before the next step."
+    },
+    {
+      "id": "txa-first",
+      "type": "step",
+      "prompt": "3. Topical tranexamic acid — try this BEFORE reflexive packing",
+      "body": "Soak a cotton pledget/gauze in topical tranexamic acid (TXA) and place it against the identified or suspected bleeding site for roughly 10 minutes. Head-to-head trials show topical TXA achieves faster bleeding cessation than anterior nasal packing, with less rebleeding at one week, shorter ED length of stay, and much higher patient tolerance — packing is genuinely unpleasant and TXA avoids it for many patients. This advantage is especially pronounced in patients on antiplatelet or anticoagulant therapy, exactly the population where you'd otherwise be reaching for packing most often."
+    },
+    {
+      "id": "packing",
+      "type": "step",
+      "prompt": "4. Anterior nasal packing if TXA doesn't control it",
+      "body": "If bleeding continues despite an adequate trial of direct pressure and topical TXA, proceed to anterior nasal packing (a compressed nasal tampon/sponge that expands on contact with moisture, or ribbon gauze with an antibiotic ointment/ointment-coated dressing per local practice). Prescribe topical antibiotic ointment or an antibiotic to reduce toxic shock/sinusitis risk while packing is in place per local protocol, and arrange follow-up for pack removal (typically 24-48 hours) with ENT or the treating service."
+    },
+    {
+      "id": "posterior",
+      "type": "warning",
+      "prompt": "5. Recognize posterior epistaxis — it won't respond to anterior measures alone",
+      "body": "Suspect a POSTERIOR source if bleeding continues from both nostrils or down the posterior pharynx DESPITE adequate anterior packing/pressure, or if no anterior source can be identified in a briskly bleeding patient. Posterior epistaxis is higher-risk (harder to control, associated with more significant blood loss, more common in patients with vascular disease/anticoagulation) and needs either a dedicated posterior balloon device (or a Foley catheter technique if no dedicated device is available) plus admission, or emergent ENT involvement — this is not adequately managed with anterior packing alone, and repeating anterior packing when the source is actually posterior wastes time."
+    },
+    {
+      "id": "refractory",
+      "type": "step",
+      "prompt": "6. Refractory bleeding",
+      "body": "Ongoing significant bleeding despite posterior packing, hemodynamic instability, or a bleed that simply won't come under control needs emergent ENT consultation for possible endoscopic cautery/ligation or interventional radiology for embolization — don't keep escalating packing attempts alone in a patient who's genuinely unstable or refractory."
+    }
+  ],
+  "checklist": [
+    "Patient positioned upright/forward-leaning, nose cleared of clots before any intervention attempted",
+    "Direct pressure given a full, uninterrupted 10-15 minutes before moving to the next step",
+    "Topical TXA tried before reflexive anterior packing, especially in an anticoagulated/antiplatelet patient",
+    "Posterior source recognized (bilateral bleeding, bleeding down the pharynx, or no identifiable anterior source) rather than repeating anterior measures indefinitely",
+    "ENT involved for posterior epistaxis or any refractory/hemodynamically significant bleed"
+  ],
+  "crossLinks": ["tranexamic-acid-txa"],
+  "buildNote": "workflow outputType. TXA-before-packing sequencing and its outsized benefit in anticoagulated/antiplatelet patients WebSearch-verified against Zahed et al. (Am J Emerg Med 2018) and subsequent RCT/meta-analysis literature (the NoPAC trial and related work) — this is a genuine, evidence-driven departure from the older 'pack first' reflex."
+}

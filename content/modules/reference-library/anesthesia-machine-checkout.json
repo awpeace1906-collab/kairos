@@ -1,0 +1,74 @@
+{
+  "id": "anesthesia-machine-checkout",
+  "section": "Reference Library",
+  "category": "Perioperative & Anesthesia",
+  "title": "Anesthesia Machine Pre-Use Checkout",
+  "settingEmphasis": ["or"],
+  "aliases": ["anesthesia machine check", "daily machine checkout", "ASA 2008 checkout recommendations"],
+  "tags": ["anesthesia machine checkout", "pre-use check", "equipment safety", "perioperative safety", "OR"],
+  "keywords": ["this is the daily machine/circuit checkout, distinct from the patient-facing pre-anesthesia checklist and fasting review, two different checklists with the word 'pre' in both names, don't conflate them", "a self-inflating bag and backup oxygen source is item one on the list for a reason, know exactly where it is and that it works before you need it in an emergency, not during one", "leak-test the breathing circuit under positive pressure before every case where the machine hasn't already been checked that day, a slow leak can silently under-deliver ventilation for an entire case", "completing this checkout is genuinely associated with reduced anesthetic morbidity and mortality, this isn't a box-ticking ritual, equipment failure caught here is equipment failure that never reaches the patient", "full checkout once at the start of the day or whenever the machine is moved/serviced/a vaporizer changed, an abbreviated between-case check the rest of the day"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "American Society of Anesthesiologists. 2008 Recommendations for Pre-Anesthesia Checkout Procedures.",
+    "Anesthesia Patient Safety Foundation. New Guidelines Available for Pre-Anesthesia Checkout."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). Distinct from the existing preanesthesia-checklist module, which is patient-facing (fasting, consent, allergies) — this is the machine/equipment-facing daily safety checkout." }
+  ],
+  "summary": "The ASA 2008 machine checkout is a genuinely safety-relevant daily ritual, not a box-ticking formality — completing it is directly associated with reduced anesthetic morbidity and mortality, and the whole point is catching equipment failure before it ever reaches a patient.",
+  "whyThisMatters": "This module addresses a different 'pre-' checklist than the patient-facing preanesthesia-checklist — that one covers the patient (fasting, allergies, consent), this one covers the machine itself, and conflating the two risks skipping the equipment check because 'the pre-anesthesia checklist was already done.'",
+  "clinicalTakeaway": "Perform a FULL checkout at the start of each day, or whenever the machine is moved, serviced, or a vaporizer is changed — roughly 15 items, taking under 5 minutes. An ABBREVIATED between-case check (roughly 8 of those items) is done before each subsequent case that day. Priority items: confirm backup ventilation equipment (a self-inflating bag connected to an oxygen source) is present and functional — know exactly where it is and that it works BEFORE an emergency, not during one. Leak-test the breathing circuit under positive pressure — a slow leak can silently under-deliver ventilation for an entire case without an obvious alarm. This is genuinely associated with reduced anesthetic morbidity/mortality in the literature — treat it as a real safety check, not a formality to rush through.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Full checkout — start of day, or after moving/servicing/vaporizer change"
+    },
+    {
+      "type": "text",
+      "text": "The 2008 ASA recommendations specify roughly 15 items to check/verify at the start of each day, or whenever the machine is moved, serviced, or a vaporizer is changed. This typically takes under 5 minutes. Core components:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "BACKUP VENTILATION — verify a self-inflating resuscitation bag and an alternate oxygen source are present and functional. This is item one for a reason: know exactly where it is and that it actually works before you're reaching for it during a machine failure, not discovering a problem with it in that moment.",
+        "GAS SUPPLY — check pipeline gas pressures (oxygen, air, nitrous if applicable) and verify backup cylinder gas supply/pressure in case of pipeline failure.",
+        "GAS FLOW AND LEAK TESTING — verify flow control function and perform a LOW-PRESSURE LEAK TEST of the machine's internal gas delivery system.",
+        "VAPORIZERS — confirm adequate fill level and secure mounting/locking of volatile agent vaporizers.",
+        "BREATHING CIRCUIT — leak-test the circuit itself under POSITIVE PRESSURE (a separate test from the low-pressure system leak test above) — this specifically catches a leak in the patient-facing circuit that could silently under-deliver ventilation during the case without triggering an obvious alarm.",
+        "SCAVENGING SYSTEM — verify proper function to ensure waste anesthetic gas is being appropriately removed from the OR environment.",
+        "VENTILATOR — verify functional operation, including alarm function.",
+        "MONITORS — confirm all monitoring systems are calibrated and operational before the first case."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Abbreviated between-case check"
+    },
+    {
+      "type": "text",
+      "text": "A shorter subset (roughly 8 of the full 15 items) is performed before each subsequent case on a day when the full checkout has already been completed — this typically takes under 2 minutes and focuses on the items most relevant to verify fresh for each new patient/case setup (circuit integrity, gas flow, backup ventilation availability) rather than re-verifying every item from the full checkout."
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "This is distinct from the preanesthesia-checklist module, which covers the PATIENT-facing preoperative review (fasting status, allergies, consent, relevant history) — both share the word 'pre-' in their names but address entirely different safety domains. Completing one is not a substitute for the other."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why this matters beyond ritual"
+    },
+    {
+      "type": "text",
+      "text": "Completion of a structured anesthesia equipment checkout procedure is associated with a measurable reduction in anesthetic morbidity and mortality in the literature — this isn't a box-ticking ritual performed out of habit or regulatory requirement alone. Equipment failure (a leaking circuit, an empty backup oxygen cylinder, a malfunctioning vaporizer) caught during this checkout is equipment failure that never has the chance to affect an actual patient — the entire value of the checkout is front-loading that discovery to a moment with no patient yet connected, rather than discovering it mid-case."
+    }
+  ],
+  "related": ["preanesthesia-checklist", "or-fire-safety"],
+  "buildNote": "Perioperative & Anesthesia category. The 15-item/8-item full-vs-abbreviated structure and the ~5-minute/~2-minute time estimates WebSearch-verified against the ASA 2008 Recommendations for Pre-Anesthesia Checkout Procedures and APSF coverage of the guideline."
+}

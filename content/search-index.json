@@ -6248,6 +6248,38 @@
       ]
     },
     {
+      "id": "peds-dehydration-ort",
+      "title": "Pediatric Dehydration Assessment & Oral Rehydration Therapy",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "dehydration",
+        "oral rehydration therapy",
+        "gastroenteritis",
+        "ondansetron",
+        "peds",
+        "ED"
+      ],
+      "keywords": [
+        "clinical assessment beats any specific lab value for grading dehydration severity in a child, general appearance, capillary refill, skin turgor, and mucous membranes together outperform a single sign alone",
+        "oral rehydration therapy is first-line for mild-moderate dehydration, not a fallback after IV access fails, going straight to an IV in a child who could tolerate ORT skips a genuinely effective, less invasive first step",
+        "a single oral dose of ondansetron meaningfully reduces the need for IV rehydration and continued vomiting in a child failing oral intake from gastroenteritis, give it before writing off ORT as failed",
+        "WHO oral rehydration solution is roughly 75 mEq/L sodium and 75 mmol/L glucose, this specific formulation matters, sports drinks and juice are not an adequate substitute for true ORS in a meaningfully dehydrated child",
+        "severe dehydration still gets IV fluids first, ORT is for mild-moderate, know which severity tier you're actually looking at before picking the route",
+        "ORT",
+        "oral rehydration therapy peds",
+        "gastroenteritis dehydration"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-dehydration-ort",
+      "settingEmphasis": [
+        "ed"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
       "id": "peds-difficult-airway",
       "title": "Pediatric Difficult Airway Approach",
       "section": "Peds Module",
@@ -6743,6 +6775,36 @@
       ]
     },
     {
+      "id": "peds-nonsedation-procedural-pain",
+      "title": "Pediatric Procedural Pain Management — Non-Sedation Techniques",
+      "section": "Procedures",
+      "category": "Airway & Sedation Workflows",
+      "tags": [
+        "procedural pain",
+        "topical anesthesia",
+        "vapocoolant",
+        "sucrose",
+        "peds",
+        "ED"
+      ],
+      "keywords": [
+        "most minor peds procedures — IV starts, venipuncture, simple laceration repair, abscess I&D — don't need procedural sedation at all if pain is managed well with the right non-sedation technique and timing",
+        "LMX4 has a faster onset, roughly 20-30 minutes, than EMLA's 45-60 minutes, know which one you have available and plan the timing accordingly rather than being surprised it isn't ready yet",
+        "buffered lidocaine delivered needle-free (a Zingo-style J-tip injector) has analgesic onset in 1-3 minutes, useful when there isn't time for a 20-45 minute topical cream to work",
+        "vapocoolant spray works immediately but only lasts briefly, its main advantage is speed for a quick procedure, not depth or duration of analgesia",
+        "oral sucrose is a real, evidence-supported analgesic for a brief painful procedure in an infant, not just a distraction technique, timing it right before the procedure matters",
+        "topical anesthesia peds",
+        "EMLA LMX4",
+        "vapocoolant spray",
+        "sucrose analgesia infant"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/airway-sedation-workflows/peds-nonsedation-procedural-pain",
+      "settingEmphasis": [
+        "ed"
+      ]
+    },
+    {
       "id": "procedural-sedation-workflow",
       "title": "Procedural Sedation Workflow",
       "section": "Procedures",
@@ -6978,6 +7040,35 @@
       "settingEmphasis": [
         "ed",
         "icu"
+      ]
+    },
+    {
+      "id": "epistaxis-management",
+      "title": "Epistaxis Management",
+      "section": "Procedures",
+      "category": "ENT / Ophtho / Dental / GU",
+      "tags": [
+        "epistaxis",
+        "nosebleed",
+        "nasal packing",
+        "tranexamic acid",
+        "ENT",
+        "ED"
+      ],
+      "keywords": [
+        "70-95 percent of epistaxis is anterior, from Kiesselbach's plexus on the septum, try topical TXA before reflexive packing",
+        "topical TXA stops bleeding faster than anterior packing in head-to-head trials and is far better tolerated, patients hate packing",
+        "posterior epistaxis is the one that can't be controlled anteriorly and needs a posterior balloon or ENT, red flags are bleeding from both nostrils or down the throat despite anterior measures",
+        "always have the patient blow their nose first to clear clots before attempting any intervention, a clot-filled nose makes it impossible to see the actual bleeding source",
+        "anticoagulated and antiplatelet patients are exactly the population where topical TXA shows the biggest advantage over packing",
+        "nosebleed management",
+        "anterior nasal packing",
+        "posterior epistaxis"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/ent-ophtho-dental-gu/epistaxis-management",
+      "settingEmphasis": [
+        "ed"
       ]
     },
     {
@@ -8059,6 +8150,38 @@
       ]
     },
     {
+      "id": "accidental-hypothermia-staging",
+      "title": "Accidental Hypothermia — Staging & Rewarming",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "hypothermia",
+        "Swiss staging system",
+        "rewarming",
+        "cardiac arrest",
+        "ED",
+        "ICU",
+        "prehospital"
+      ],
+      "keywords": [
+        "mild 35-32C, moderate 32-28C, severe 28-24C, profound under 24C, the Swiss staging system uses clinical signs to estimate the stage when a core temperature isn't available yet",
+        "handle a severely hypothermic patient gently, rough movement/repositioning can trigger a lethal arrhythmia in a cold, irritable heart, this isn't a routine trauma-style logroll situation",
+        "a hypothermic patient isn't dead until they're warm and dead, resuscitation efforts and the decision to stop are different in significant hypothermia than in a normothermic arrest",
+        "below 30C, withhold or space out defibrillation and vasopressor dosing per current guidance, a cold heart doesn't respond normally to either",
+        "passive external rewarming for mild, active external for moderate, active core rewarming (including ECMO for cardiac arrest) for severe/profound, the companion piece to heat-stroke's opposite problem",
+        "hypothermia staging",
+        "Swiss staging system",
+        "rewarming protocol"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/accidental-hypothermia-staging",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
+      ]
+    },
+    {
       "id": "acute-liver-failure",
       "title": "Acute Liver Failure",
       "section": "Reference Library",
@@ -8741,6 +8864,34 @@
       ]
     },
     {
+      "id": "icu-nutrition",
+      "title": "ICU Nutrition — Enteral & Parenteral Initiation",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "enteral nutrition",
+        "parenteral nutrition",
+        "ICU nutrition",
+        "refeeding syndrome",
+        "ICU"
+      ],
+      "keywords": [
+        "early enteral nutrition, generally within 24-48 hours, for a patient who cannot maintain adequate oral intake, the gut is the preferred route when it's usable, this is the icu-workflow one-liner expanded into an actual protocol",
+        "hemodynamic instability on escalating vasopressors is a reason to hold or delay enteral feeding, not a reason to switch straight to parenteral, wait for the patient to stabilize first",
+        "parenteral nutrition is reserved for a gut that genuinely can't be used, or enteral intake that's inadequate after a real trial, not a default first choice just because it's easier to start",
+        "postpyloric feeding for a patient at high aspiration risk, gastric feeding is fine for most others, this is a risk-stratified decision not a blanket rule",
+        "refeeding syndrome risk is highest in a chronically malnourished or prolonged-NPO patient, start nutrition slowly and correct electrolytes proactively in that population rather than feeding at a full target rate from hour one",
+        "enteral nutrition timing",
+        "parenteral nutrition ICU",
+        "tube feeding critically ill"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/icu-nutrition",
+      "settingEmphasis": [
+        "icu"
+      ]
+    },
+    {
       "id": "icu-workflow",
       "title": "ICU Workflow — Admission, Rounding, Signout",
       "section": "Reference Library",
@@ -8777,6 +8928,38 @@
       "route": "/reference-library/critical-care/icu-workflow",
       "settingEmphasis": [
         "icu"
+      ]
+    },
+    {
+      "id": "invasive-hemodynamic-monitoring",
+      "title": "Invasive Hemodynamic Monitoring — Arterial Line, CVP & PA Catheter",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "arterial line",
+        "CVP",
+        "pulmonary artery catheter",
+        "Swan-Ganz",
+        "hemodynamic monitoring",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "the arterial waveform's dicrotic notch marks aortic valve closure, a low or absent notch on a damped trace usually means a circuit problem, not a patient problem, square-wave test it before trusting the number",
+        "CVP is a static pressure number with real limitations as a volume-responsiveness predictor, don't use a single CVP value alone to decide on a fluid bolus, trend and dynamic measures are more useful",
+        "PA catheter derived numbers — PCWP, cardiac output, SVR, mixed venous saturation — are less commonly used now than a decade ago, but you'll still encounter them and need to interpret them when they appear",
+        "PCWP over roughly 18 suggests cardiogenic pulmonary edema, under that with a low cardiac output points toward a different shock etiology, use it alongside the rest of the picture not in isolation",
+        "square wave test the arterial line before trusting a value that looks off, a damped or overdamped waveform will falsely narrow pulse pressure and can mislead you",
+        "arterial line waveform",
+        "CVP interpretation",
+        "Swan-Ganz catheter",
+        "pulmonary artery catheter"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/invasive-hemodynamic-monitoring",
+      "settingEmphasis": [
+        "icu",
+        "or"
       ]
     },
     {
@@ -8862,6 +9045,36 @@
         "ed",
         "prehospital",
         "icu"
+      ]
+    },
+    {
+      "id": "opioid-withdrawal-induction",
+      "title": "Opioid Withdrawal — Inpatient Buprenorphine Induction Principles",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "opioid withdrawal",
+        "buprenorphine",
+        "opioid use disorder",
+        "COWS",
+        "ICU",
+        "ED"
+      ],
+      "keywords": [
+        "this is principles and when-to-call-for-help, not a fixed dosing ladder, actual induction protocols vary genuinely across institutions and involve addiction medicine input, know the concepts well enough to start the conversation and recognize a reasonable plan",
+        "traditional induction waits for the patient to be in mild-moderate withdrawal, measured with COWS, before the first dose, giving buprenorphine too early into a still-opioid-occupied system can precipitate a sudden, severe withdrawal",
+        "low-dose or microdosing induction gets around the precipitated-withdrawal risk by starting with very small doses while the patient continues their usual opioid, then gradually up-titrating buprenorphine while tapering the other opioid off, no withdrawal period required first",
+        "fentanyl's high lipophilicity and tissue accumulation is a real, described complication for buprenorphine induction, precipitated withdrawal can occur even when the timing looks textbook-correct, know this population needs extra caution and likely addiction medicine involvement",
+        "involve addiction medicine / a consult service early rather than improvising a full induction protocol de novo, this is exactly the kind of care that benefits from a team that does it routinely",
+        "buprenorphine induction",
+        "opioid use disorder inpatient",
+        "microdosing buprenorphine"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/opioid-withdrawal-induction",
+      "settingEmphasis": [
+        "icu",
+        "ed"
       ]
     },
     {
@@ -9190,6 +9403,35 @@
       ]
     },
     {
+      "id": "severe-alcohol-withdrawal-dts",
+      "title": "Severe Alcohol Withdrawal / Delirium Tremens — ICU Escalation",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "delirium tremens",
+        "alcohol withdrawal",
+        "phenobarbital",
+        "benzodiazepine-refractory",
+        "ICU"
+      ],
+      "keywords": [
+        "this is the ICU escalation companion to the CIWA-Ar calculator, for when symptom-triggered benzodiazepine dosing isn't controlling the picture and the patient is heading toward true refractory withdrawal",
+        "phenobarbital has real mechanistic appeal over more benzodiazepine — it works on GABA and NMDA receptors both, not GABA alone, and there's genuine clinical data supporting it in benzo-refractory cases",
+        "there is no single universally agreed phenobarbital loading protocol, published regimens range from roughly 10 to 20 mg/kg loading with variation in how it's dosed and followed, know your institution's chosen protocol",
+        "escalating benzodiazepine doses with no ceiling in mind is a real failure mode, recognize when you've crossed from standard symptom-triggered dosing into genuinely refractory territory that needs a different drug class",
+        "consider adjuncts like dexmedetomidine or propofol infusion alongside a benzodiazepine/phenobarbital-based strategy in refractory cases requiring ventilator support, but these do not treat the withdrawal seizure risk on their own",
+        "delirium tremens",
+        "DTs",
+        "benzodiazepine-refractory alcohol withdrawal",
+        "phenobarbital alcohol withdrawal"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/severe-alcohol-withdrawal-dts",
+      "settingEmphasis": [
+        "icu"
+      ]
+    },
+    {
       "id": "sickle-cell-crisis",
       "title": "Sickle Cell Crisis",
       "section": "Reference Library",
@@ -9305,6 +9547,35 @@
         "ed",
         "icu",
         "prehospital"
+      ]
+    },
+    {
+      "id": "mcs-device-selection",
+      "title": "Temporary Mechanical Circulatory Support — What the Intensivist Should Know",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "mechanical circulatory support",
+        "IABP",
+        "Impella",
+        "VA-ECMO",
+        "cardiogenic shock",
+        "ICU"
+      ],
+      "keywords": [
+        "this is bedside orientation for the intensivist managing these patients day to day, not a device-selection protocol, the actual choice of device is a cardiology/cardiac surgery/shock-team decision made with imaging and hemodynamics this module doesn't replace",
+        "IABP is the oldest and least powerful of the three, routine use in cardiogenic shock is no longer broadly recommended by major guidelines, though it still has a role in selected patients particularly for coronary perfusion augmentation",
+        "Impella unloads the LV directly by pumping blood from the ventricle to the aorta, VA-ECMO provides full cardiopulmonary support but can actually increase LV afterload and worsen LV distension, sometimes needing its own venting strategy",
+        "know the bedside complications to watch for with each device, limb ischemia and bleeding at the access site are shared risks, VA-ECMO adds the differential-hypoxia (Harlequin syndrome) concern specific to peripheral cannulation",
+        "randomized head-to-head trial evidence comparing these devices is still limited, the SCAI shock stage is a genuinely useful shared framework for tracking severity and escalation regardless of which specific device is chosen",
+        "IABP vs Impella vs ECMO",
+        "mechanical circulatory support",
+        "MCS devices cardiogenic shock"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/mcs-device-selection",
+      "settingEmphasis": [
+        "icu"
       ]
     },
     {
@@ -9518,6 +9789,35 @@
       ],
       "audience": [
         "adult"
+      ]
+    },
+    {
+      "id": "acute-scrotum",
+      "title": "Acute Scrotum — Torsion, Priapism & Fournier's Gangrene",
+      "section": "Reference Library",
+      "category": "ENT / Ophtho / Dental / GU",
+      "tags": [
+        "testicular torsion",
+        "priapism",
+        "Fournier's gangrene",
+        "urologic emergency",
+        "ED"
+      ],
+      "keywords": [
+        "testicular torsion salvage is a race against the clock, roughly 90-96 percent salvage within 4-6 hours falling to under 20 percent beyond 24 hours, don't wait for ultrasound if the clinical picture is clear and urology is available for immediate exploration",
+        "a normal cremasteric reflex makes torsion less likely but does not exclude it, don't be falsely reassured by one preserved reflex in a patient whose exam otherwise fits",
+        "priapism over 4 hours is an emergency, distinguish low-flow (ischemic, painful, the true emergency needing prompt decompression) from high-flow (non-ischemic, often painless, can often be observed)",
+        "Fournier's gangrene is necrotizing fasciitis of the perineum/genitals, it needs the same time-to-OR urgency as necrotizing soft tissue infection anywhere else on the body",
+        "don't let embarrassment or a busy department delay a genital exam in a patient with scrotal pain, this is one of the areas where diagnostic delay has an irreversible consequence",
+        "testicular torsion",
+        "Fournier's gangrene",
+        "priapism",
+        "scrotal pain"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/ent-ophtho-dental-gu/acute-scrotum",
+      "settingEmphasis": [
+        "ed"
       ]
     },
     {
@@ -9872,6 +10172,41 @@
       "route": "/reference-library/obstetric-gynecologic/abnormal-uterine-bleeding",
       "settingEmphasis": [
         "ed"
+      ]
+    },
+    {
+      "id": "amniotic-fluid-embolism",
+      "title": "Amniotic Fluid Embolism",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "amniotic fluid embolism",
+        "AFE",
+        "DIC",
+        "obstetric emergency",
+        "cardiac arrest",
+        "OR",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "sudden cardiorespiratory collapse plus overt DIC in labor or immediately postpartum is the diagnostic pattern, both parts matter, collapse alone without the coagulopathy component doesn't meet the proposed research diagnostic criteria",
+        "the ISTH DIC scoring is modified for pregnancy in this specific context, fibrinogen under 200 rather than the standard under 100 threshold, pregnancy's normally elevated fibrinogen baseline makes the standard cutoff too lenient here",
+        "coagulopathy is the dominant, defining feature, present in the large majority of cases, this isn't an occasional complication, it's central to what AFE actually is",
+        "supportive resuscitation and aggressive correction of the coagulopathy are the actual treatment, there is no antidote or definitive therapy that reverses the underlying process itself",
+        "this is a diagnosis of exclusion made in the acute moment, the differential includes pulmonary embolism, eclampsia, and other causes of peripartum collapse, but AFE shouldn't be a delayed afterthought diagnosis when the clinical pattern fits",
+        "AFE",
+        "anaphylactoid syndrome of pregnancy"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/amniotic-fluid-embolism",
+      "settingEmphasis": [
+        "or",
+        "ed",
+        "icu"
+      ],
+      "audience": [
+        "adult"
       ]
     },
     {
@@ -10338,6 +10673,39 @@
       ]
     },
     {
+      "id": "peripartum-cardiomyopathy",
+      "title": "Peripartum Cardiomyopathy",
+      "section": "Reference Library",
+      "category": "Obstetric & Gynecologic",
+      "tags": [
+        "peripartum cardiomyopathy",
+        "PPCM",
+        "heart failure",
+        "pregnancy",
+        "postpartum",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "diagnosis requires heart failure developing in the last month of pregnancy through 5 months postpartum, an ejection fraction under 45 percent, and no other identifiable cause, four criteria not just a low EF found incidentally postpartum",
+        "easy to misattribute dyspnea/edema/fatigue in late pregnancy or early postpartum to normal pregnancy physiology, a real and dangerous diagnostic delay pattern, have a lower threshold for an echo in this population than you would otherwise",
+        "bromocriptine added to standard heart failure therapy improves LV function/remodeling in the current evidence base, mechanism is stopping prolactin, whose cleaved fragment is implicated in the disease process, this is not yet universal standard of care everywhere",
+        "standard heart failure medications need pregnancy/lactation-safe substitutions, ACE inhibitors and ARBs are contraindicated in pregnancy, know which agents are safe to use instead",
+        "anticoagulation is a real consideration given the elevated thromboembolic risk with a severely reduced EF in the peripartum period, not an afterthought",
+        "PPCM",
+        "postpartum cardiomyopathy"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/obstetric-gynecologic/peripartum-cardiomyopathy",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ],
+      "audience": [
+        "adult"
+      ]
+    },
+    {
       "id": "pid-tubo-ovarian-abscess",
       "title": "PID & Tubo-ovarian Abscess",
       "section": "Reference Library",
@@ -10569,6 +10937,34 @@
       ]
     },
     {
+      "id": "anesthesia-machine-checkout",
+      "title": "Anesthesia Machine Pre-Use Checkout",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "anesthesia machine checkout",
+        "pre-use check",
+        "equipment safety",
+        "perioperative safety",
+        "OR"
+      ],
+      "keywords": [
+        "this is the daily machine/circuit checkout, distinct from the patient-facing pre-anesthesia checklist and fasting review, two different checklists with the word 'pre' in both names, don't conflate them",
+        "a self-inflating bag and backup oxygen source is item one on the list for a reason, know exactly where it is and that it works before you need it in an emergency, not during one",
+        "leak-test the breathing circuit under positive pressure before every case where the machine hasn't already been checked that day, a slow leak can silently under-deliver ventilation for an entire case",
+        "completing this checkout is genuinely associated with reduced anesthetic morbidity and mortality, this isn't a box-ticking ritual, equipment failure caught here is equipment failure that never reaches the patient",
+        "full checkout once at the start of the day or whenever the machine is moved/serviced/a vaporizer changed, an abbreviated between-case check the rest of the day",
+        "anesthesia machine check",
+        "daily machine checkout",
+        "ASA 2008 checkout recommendations"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/anesthesia-machine-checkout",
+      "settingEmphasis": [
+        "or"
+      ]
+    },
+    {
       "id": "anesthesia-pocus",
       "title": "Anesthesia POCUS — Cardiac, Airway, Lung, Vascular, Neuraxial",
       "section": "Reference Library",
@@ -10683,6 +11079,66 @@
       "settingEmphasis": [
         "or",
         "icu"
+      ]
+    },
+    {
+      "id": "emergence-delirium-pod",
+      "title": "Emergence Delirium & Postoperative Delirium (PACU)",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "emergence delirium",
+        "postoperative delirium",
+        "PACU",
+        "dexmedetomidine",
+        "perioperative",
+        "OR"
+      ],
+      "keywords": [
+        "emergence delirium in PACU minutes and postoperative delirium hours to days later are related but distinct entities, know which one you're actually looking at before reaching for a fix",
+        "preschool-aged children, volatile-agent maintenance, otolaryngology/ophthalmologic procedures, and preoperative anxiety are the classic emergence-delirium risk pattern",
+        "older age, higher ASA class, prolonged surgery/anesthesia, more blood loss, and low preoperative albumin are the classic postoperative-delirium risk pattern, a different population than emergence delirium's",
+        "dexmedetomidine is the most consistently evidence-supported pharmacologic prevention strategy across both entities, intranasal or IV depending on the population and setting",
+        "first rule out a reversible physiologic cause — hypoxia, hypoglycemia, pain, a full bladder, residual neuromuscular blockade — before assuming this is 'just' emergence delirium or POD and reaching straight for a sedative",
+        "emergence agitation",
+        "postoperative delirium",
+        "POD",
+        "PACU delirium"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/emergence-delirium-pod",
+      "settingEmphasis": [
+        "or",
+        "icu"
+      ]
+    },
+    {
+      "id": "intraoperative-awareness",
+      "title": "Intraoperative Awareness",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "intraoperative awareness",
+        "AAGA",
+        "depth of anesthesia",
+        "TIVA",
+        "neuromuscular blockade",
+        "OR"
+      ],
+      "keywords": [
+        "neuromuscular blocking drugs are the single most commonly implicated risk factor, a paralyzed patient can't move or signal distress even if partially aware, which is exactly what makes this combination so dangerous",
+        "TIVA carries a disproportionately higher awareness risk than volatile-agent maintenance, partly because there's no simple end-tidal concentration number to monitor the way there is with a volatile agent",
+        "depth-of-anesthesia monitors like BIS can help, especially with TIVA, but the evidence that the monitor itself beats simply paying close attention to dosing/vitals is genuinely mixed, it's a tool not a guarantee",
+        "if a patient reports awareness postoperatively, take it seriously and follow a structured response, don't dismiss or minimize what they're describing",
+        "risk factors beyond NMBD and TIVA include female sex, younger adult age, obesity, and less experienced anesthesia staff, a useful checklist for identifying a higher-risk case in advance",
+        "accidental awareness under general anesthesia",
+        "AAGA",
+        "anesthesia awareness"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/intraoperative-awareness",
+      "settingEmphasis": [
+        "or"
       ]
     },
     {
@@ -10847,6 +11303,34 @@
       ]
     },
     {
+      "id": "one-lung-ventilation-basics",
+      "title": "One-Lung Ventilation Basics",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "one-lung ventilation",
+        "double lumen tube",
+        "bronchial blocker",
+        "thoracic anesthesia",
+        "OR"
+      ],
+      "keywords": [
+        "fiberoptic bronchoscopy is the gold standard for confirming double lumen tube position, not clinical exam alone, malposition rates by clinical exam alone are reported as high as half of cases, don't trust auscultation to confirm placement",
+        "position can and does shift with surgical manipulation and patient repositioning during the case, re-confirm with a repeat bronchoscopy look if hypoxemia develops rather than assuming your initial placement is still correct",
+        "hypoxemia troubleshooting follows a logical sequence, check tube position first, suction secretions, then increase FiO2 and consider CPAP to the non-ventilated lung, don't jump straight to increasing FiO2 without checking position first",
+        "a double lumen tube allows selective lung isolation and independent suctioning of either lung, a bronchial blocker works through a single-lumen tube and is often easier in a difficult airway or pre-existing tracheostomy but can't independently suction/ventilate the non-blocked side as flexibly",
+        "hypoxic pulmonary vasoconstriction in the non-ventilated lung is actually helpful here, it redirects blood flow toward the ventilated lung and volatile anesthetics can blunt this response at high concentrations, worth knowing when troubleshooting oxygenation",
+        "lung isolation",
+        "double lumen tube",
+        "bronchial blocker"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/one-lung-ventilation-basics",
+      "settingEmphasis": [
+        "or"
+      ]
+    },
+    {
       "id": "or-fire-safety",
       "title": "OR Fire Safety & Airway Fire Protocol",
       "section": "Reference Library",
@@ -11002,6 +11486,35 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/perioperative-anesthesia/perioperative-positioning-nerve-injury",
+      "settingEmphasis": [
+        "or"
+      ]
+    },
+    {
+      "id": "pneumoperitoneum-trendelenburg-physiology",
+      "title": "Pneumoperitoneum & Steep Trendelenburg Physiology",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "pneumoperitoneum",
+        "Trendelenburg",
+        "laparoscopic surgery",
+        "robotic surgery",
+        "CO2 insufflation",
+        "OR"
+      ],
+      "keywords": [
+        "raised intra-abdominal pressure from CO2 insufflation pushes the diaphragm up, reduces lung compliance, and raises peak airway pressures, expect to need more pressure/PEEP than you did before insufflation",
+        "systemic vascular resistance typically rises with pneumoperitoneum, which can keep blood pressure looking normal or even elevated even as cardiac output and cerebral blood flow are actually falling, don't be falsely reassured by a normal BP alone",
+        "keeping end-tidal CO2 in a moderate range, roughly 30-35, has been shown to blunt some of the adverse cerebral perfusion pressure effects of combined pneumoperitoneum and steep Trendelenburg",
+        "internal jugular vein compression from prolonged head-down positioning raises intracranial pressure and has been linked to postoperative cognitive changes in some studies, watch the neck/face for progressive venous congestion over a long case",
+        "facial and airway edema from prolonged steep Trendelenburg is a real extubation-timing consideration, don't be surprised by it and have a plan (leak test, cautious extubation) for a long robotic case",
+        "CO2 insufflation physiology",
+        "laparoscopic surgery physiology",
+        "robotic surgery positioning"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/pneumoperitoneum-trendelenburg-physiology",
       "settingEmphasis": [
         "or"
       ]
@@ -11824,6 +12337,34 @@
         "prehospital",
         "or",
         "icu"
+      ]
+    },
+    {
+      "id": "hints-vertigo",
+      "title": "HINTS Exam — Central vs Peripheral Vertigo",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "vertigo",
+        "HINTS exam",
+        "posterior stroke",
+        "acute vestibular syndrome",
+        "ED"
+      ],
+      "keywords": [
+        "HINTS only applies to acute vestibular syndrome, continuous vertigo/nausea/unsteadiness lasting more than 24 hours, do NOT use it on episodic vertigo (BPPV-type spells lasting seconds to minutes) which needs a different exam (Dix-Hallpike) entirely",
+        "a NORMAL head impulse test in a patient with acute vestibular syndrome is actually the worrisome finding, it suggests the vestibular pathway isn't the problem, meaning a central cause",
+        "the mnemonic INFARCT — Impulse Normal, Fast-phase Alternating, Refixation on Cover Test (skew) — flags the pattern that points to a central/stroke cause",
+        "outperforms early MRI for detecting posterior circulation stroke in this population, roughly 100 percent sensitivity and 90-94 percent specificity in skilled hands, but this is genuinely operator-dependent",
+        "this is a skill that requires real training and practice to perform reliably, know your own comfort level and don't over-trust a HINTS exam you're not confident in",
+        "HINTS exam",
+        "acute vestibular syndrome",
+        "central vs peripheral vertigo"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/hints-vertigo",
+      "settingEmphasis": [
+        "ed"
       ]
     },
     {

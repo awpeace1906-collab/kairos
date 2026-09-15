@@ -1,0 +1,89 @@
+{
+  "id": "peds-dehydration-ort",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Pediatric Dehydration Assessment & Oral Rehydration Therapy",
+  "settingEmphasis": ["ed"],
+  "audience": ["peds"],
+  "aliases": ["ORT", "oral rehydration therapy peds", "gastroenteritis dehydration"],
+  "tags": ["dehydration", "oral rehydration therapy", "gastroenteritis", "ondansetron", "peds", "ED"],
+  "keywords": ["clinical assessment beats any specific lab value for grading dehydration severity in a child, general appearance, capillary refill, skin turgor, and mucous membranes together outperform a single sign alone", "oral rehydration therapy is first-line for mild-moderate dehydration, not a fallback after IV access fails, going straight to an IV in a child who could tolerate ORT skips a genuinely effective, less invasive first step", "a single oral dose of ondansetron meaningfully reduces the need for IV rehydration and continued vomiting in a child failing oral intake from gastroenteritis, give it before writing off ORT as failed", "WHO oral rehydration solution is roughly 75 mEq/L sodium and 75 mmol/L glucose, this specific formulation matters, sports drinks and juice are not an adequate substitute for true ORS in a meaningfully dehydrated child", "severe dehydration still gets IV fluids first, ORT is for mild-moderate, know which severity tier you're actually looking at before picking the route"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "King CK, et al. Managing Acute Gastroenteritis Among Children: Oral Rehydration, Maintenance, and Nutritional Therapy. MMWR Recomm Rep. 2003;52(RR-16):1-16.",
+    "Freedman SB, et al. Oral Ondansetron for Gastroenteritis in a Pediatric Emergency Department. N Engl J Med. 2006;354(16):1698-1705.",
+    "Colletti JE, et al. Practice parameter: evaluation and management of children with acute gastroenteritis in the outpatient setting. Acad Emerg Med. 2010."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). Far more common than DKA (which already has its own dedicated module), no prior module addressed dehydration severity assessment or the ORT-vs-IV decision." }
+  ],
+  "kind": "reference",
+  "purpose": "Clinical dehydration severity assessment and the oral-rehydration-first approach (including ondansetron-facilitated ORT) for the far-more-common-than-DKA pediatric gastroenteritis/dehydration presentation.",
+  "ageRange": "Infants through school-age children; ORT principles apply broadly but younger infants carry less physiologic reserve and warrant closer monitoring.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Clinical assessment — no single sign, no lab value beats the combination"
+    },
+    {
+      "type": "text",
+      "text": "Dehydration severity in a child is graded clinically — general appearance/alertness, capillary refill time, skin turgor, and mucous membrane moisture together, not any single sign or a specific lab value in isolation. Clinical assessment using this combination of signs has been shown to outperform isolated measures (including a single lab value) for estimating actual fluid deficit."
+    },
+    {
+      "type": "table",
+      "columns": ["Severity", "Approx. fluid deficit", "Clinical picture", "Management approach"],
+      "rows": [
+        ["Minimal/none", "< 3%", "Alert, normal vital signs, moist mucous membranes, normal capillary refill", "No specific rehydration needed beyond continued normal intake"],
+        ["Mild-moderate", "3-9%", "Slightly decreased activity, dry mucous membranes, normal-to-mildly-delayed capillary refill, normal-to-mildly-decreased urine output", "ORAL REHYDRATION THERAPY is FIRST-LINE — not a fallback after IV access fails"],
+        ["Severe", "> 9%", "Lethargy/altered mental status, delayed capillary refill, decreased skin turgor, minimal urine output, possible hemodynamic compromise", "IV fluids first — ORT is not the initial approach for a severely dehydrated child"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Oral rehydration therapy — first-line for mild-moderate, not a fallback"
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "ORT is FIRST-LINE therapy for mild-to-moderate dehydration — it is not something to try only after IV access has failed or as a lesser alternative. Going straight to IV fluids in a child who could tolerate oral rehydration skips a genuinely effective, evidence-supported, and less invasive first step."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Use a proper oral rehydration solution (ORS) — the WHO formulation is roughly 75 mEq/L sodium and 75 mmol/L glucose, a specific balanced electrolyte/glucose composition. Sports drinks, juice, and soda are NOT adequate substitutes in a meaningfully dehydrated child — they carry too much sugar relative to electrolytes and can worsen osmotic diarrhea.",
+        "Give small, frequent volumes rather than large volumes at once, especially in a child who has been vomiting — this improves tolerance.",
+        "Reassess response over the ED visit — improving alertness, tolerance of oral intake, and urine output are the practical markers of successful rehydration."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ondansetron-facilitated ORT — give it before writing off oral rehydration as failed"
+    },
+    {
+      "type": "text",
+      "text": "A single oral dose of ondansetron, given to a child with gastroenteritis-associated vomiting who is failing to tolerate oral rehydration, meaningfully reduces the need for IV rehydration and reduces continued vomiting — this is a well-studied, practice-changing intervention (used by the large majority of pediatric ED physicians for this indication). The practical implication: before concluding that a child has 'failed' oral rehydration and needs IV fluids, give a dose of ondansetron and reattempt ORT — many children who would otherwise 'fail' oral intake succeed once vomiting is controlled."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "When IV fluids are the right call"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Severe dehydration (see table above) gets IV fluids as the initial approach, not a trial of ORT first.",
+        "A child who genuinely fails an adequate trial of ORT (including with ondansetron facilitation) — persistent vomiting, worsening clinical status, or inability to keep up with ongoing losses — needs IV rehydration.",
+        "Significant electrolyte derangement, altered mental status, or hemodynamic compromise are all reasons to move directly to IV fluids rather than attempting oral rehydration first.",
+        "Nasogastric rehydration is a reasonable intermediate option in some settings/patients who can't tolerate oral intake by mouth but don't yet need IV access — worth knowing as an option between ORT and IV fluids, per local practice."
+      ]
+    }
+  ],
+  "buildNote": "peds-tool with kind=reference. Clinical assessment approach, WHO ORS composition, and the ondansetron-facilitated ORT evidence WebSearch-verified against the CDC MMWR 2003 guideline, Freedman et al. (NEJM 2006), and the 2010 Acad Emerg Med practice parameter. peds-tool schema has no related[] field — cross-reference to peds-dka-management (a more severe/specific dehydration-adjacent presentation) is intentionally left out of the structured fields and not otherwise needed in prose here."
+}

@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 865,
+  "count": 909,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -558,6 +558,18 @@
           "title": "Perioperative Home Medication Management",
           "section": "Reference Library",
           "route": "/reference-library/perioperative-anesthesia/perioperative-home-medication-management"
+        }
+      ]
+    },
+    {
+      "text": "Anesthesia Patient Safety Foundation. New Guidelines Available for Pre-Anesthesia Checkout.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "anesthesia-machine-checkout",
+          "title": "Anesthesia Machine Pre-Use Checkout",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/anesthesia-machine-checkout"
         }
       ]
     },
@@ -1786,6 +1798,18 @@
       ]
     },
     {
+      "text": "McClave SA, et al. Guidelines for the Provision and Assessment of Nutrition Support Therapy in the Adult Critically Ill Patient: SCCM and ASPEN. JPEN J Parenter Enteral Nutr. 2016;40(2):159-211.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "icu-nutrition",
+          "title": "ICU Nutrition — Enteral & Parenteral Initiation",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/icu-nutrition"
+        }
+      ]
+    },
+    {
       "text": "McCrindle BW, et al. Diagnosis, Treatment, and Long-Term Management of Kawasaki Disease: A Scientific Statement for Health Professionals From the American Heart Association. Circulation. 2017;135(17):e927-e999.",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1806,6 +1830,18 @@
           "title": "Blood Products Reference",
           "section": "Reference Library",
           "route": "/reference-library/anticoagulation-labs/blood-products"
+        }
+      ]
+    },
+    {
+      "text": "Montague DK, et al. American Urological Association guideline on the management of priapism.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "acute-scrotum",
+          "title": "Acute Scrotum — Torsion, Priapism & Fournier's Gangrene",
+          "section": "Reference Library",
+          "route": "/reference-library/ent-ophtho-dental-gu/acute-scrotum"
         }
       ]
     },
@@ -2014,6 +2050,18 @@
       ]
     },
     {
+      "text": "Rihal CS, et al. 2015 SCAI/ACC/HFSA/STS Clinical Expert Consensus Statement on the Use of Percutaneous Mechanical Circulatory Support Devices in Cardiovascular Care.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "mcs-device-selection",
+          "title": "Temporary Mechanical Circulatory Support — What the Intensivist Should Know",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/mcs-device-selection"
+        }
+      ]
+    },
+    {
       "text": "Rockall TA et al. Gut 1996; NICE NG12 acute UGIB guidance",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -2130,6 +2178,18 @@
           "title": "Blunt Chest Trauma — Rib Fractures, Flail Chest & Pulmonary Contusion",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/blunt-chest-trauma"
+        }
+      ]
+    },
+    {
+      "text": "Singer P, et al. ESPEN practical and partially revised guideline: Clinical nutrition in the intensive care unit. Clin Nutr. 2023;42(9):1671-1689.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "icu-nutrition",
+          "title": "ICU Nutrition — Enteral & Parenteral Initiation",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/icu-nutrition"
         }
       ]
     },
@@ -2302,6 +2362,18 @@
       ]
     },
     {
+      "text": "Vincent JL, et al. Clinical review: Update on hemodynamic monitoring — a consensus of 16. Crit Care. 2011;15(4):229.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "invasive-hemodynamic-monitoring",
+          "title": "Invasive Hemodynamic Monitoring — Arterial Line, CVP & PA Catheter",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/invasive-hemodynamic-monitoring"
+        }
+      ]
+    },
+    {
       "text": "WHO. Iodine thyroid blocking: guidelines for use in planning for and responding to radiological and nuclear emergencies. 2017",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -2358,6 +2430,18 @@
           "title": "NIH Stroke Scale (NIHSS)",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/nihss"
+        }
+      ]
+    },
+    {
+      "text": "Adamu J, et al. Bromocriptine in peripartum cardiomyopathy: A meta-analysis with trial sequential analysis. ESC Heart Fail. 2025.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "peripartum-cardiomyopathy",
+          "title": "Peripartum Cardiomyopathy",
+          "section": "Reference Library",
+          "route": "/reference-library/obstetric-gynecologic/peripartum-cardiomyopathy"
         }
       ]
     },
@@ -2980,6 +3064,18 @@
       ]
     },
     {
+      "text": "Marcantonio ER. Postoperative Delirium: A 76-Year-Old Woman With Delirium Following Surgery. JAMA. 2012;308(1):73-81.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "emergence-delirium-pod",
+          "title": "Emergence Delirium & Postoperative Delirium (PACU)",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/emergence-delirium-pod"
+        }
+      ]
+    },
+    {
       "text": "Margaretten ME, et al. Does this adult patient have septic arthritis? JAMA. 2007;297(13):1478-1488 (synovial fluid interpretation, no single WBC cutoff excludes septic arthritis).",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -3192,6 +3288,18 @@
           "title": "NEXUS Chest CT Decision Instrument",
           "section": "Calculators",
           "route": "/calculators/trauma/nexus-chest-ct"
+        }
+      ]
+    },
+    {
+      "text": "Rosenson J, et al. Phenobarbital for acute alcohol withdrawal: a prospective randomized double-blind placebo-controlled study. J Emerg Med. 2013;44(3):592-598.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "severe-alcohol-withdrawal-dts",
+          "title": "Severe Alcohol Withdrawal / Delirium Tremens — ICU Escalation",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/severe-alcohol-withdrawal-dts"
         }
       ]
     },
@@ -3912,6 +4020,18 @@
           "title": "Albumin + Furosemide (Push/Pull)",
           "section": "Reference Library",
           "route": "/reference-library/cardiac-ecg/albumin-furosemide-push-pull"
+        }
+      ]
+    },
+    {
+      "text": "Mellick LB, et al. A Systematic Review of Testicle Survival Time After a Torsion Event. Pediatr Emerg Care. 2019;35(12):821-825.",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "acute-scrotum",
+          "title": "Acute Scrotum — Torsion, Priapism & Fournier's Gangrene",
+          "section": "Reference Library",
+          "route": "/reference-library/ent-ophtho-dental-gu/acute-scrotum"
         }
       ]
     },
@@ -5182,6 +5302,18 @@
       ]
     },
     {
+      "text": "Ahmed S, et al. Low-dose buprenorphine initiation in the era of fentanyl and fentanyl analogs: A case series. J Opioid Manag. 2023.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "opioid-withdrawal-induction",
+          "title": "Opioid Withdrawal — Inpatient Buprenorphine Induction Principles",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/opioid-withdrawal-induction"
+        }
+      ]
+    },
+    {
       "text": "Aldrete JA. J Clin Anesth 1995",
       "group": "Other primary sources",
       "usedBy": [
@@ -5326,6 +5458,18 @@
       ]
     },
     {
+      "text": "American Society of Anesthesiologists. 2008 Recommendations for Pre-Anesthesia Checkout Procedures.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "anesthesia-machine-checkout",
+          "title": "Anesthesia Machine Pre-Use Checkout",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/anesthesia-machine-checkout"
+        }
+      ]
+    },
+    {
       "text": "American Society of Anesthesiologists. Practice Advisory for the Prevention and Management of Operating Room Fires. Anesthesiology. 2013;118(2):271-290.",
       "group": "Other primary sources",
       "usedBy": [
@@ -5416,6 +5560,18 @@
       ]
     },
     {
+      "text": "Arany Z, Elkayam U. Peripartum Cardiomyopathy. Circulation. 2016;133(14):1397-1409.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peripartum-cardiomyopathy",
+          "title": "Peripartum Cardiomyopathy",
+          "section": "Reference Library",
+          "route": "/reference-library/obstetric-gynecologic/peripartum-cardiomyopathy"
+        }
+      ]
+    },
+    {
       "text": "ARDSNet",
       "group": "Other primary sources",
       "usedBy": [
@@ -5472,6 +5628,18 @@
           "title": "POCUS Nerve Block — Sequential Checklist",
           "section": "Procedures",
           "route": "/procedures/regional-anesthesia-ultrasound/pocus-nerve-block-checklist"
+        }
+      ]
+    },
+    {
+      "text": "Avidan MS, et al. Prevention of Intraoperative Awareness in a High-Risk Surgical Population. N Engl J Med. 2011;365(7):591-600.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "intraoperative-awareness",
+          "title": "Intraoperative Awareness",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/intraoperative-awareness"
         }
       ]
     },
@@ -5568,6 +5736,18 @@
           "title": "ECG Library — Key Patterns",
           "section": "Reference Library",
           "route": "/reference-library/cardiac-ecg/ecg-library"
+        }
+      ]
+    },
+    {
+      "text": "Bauersachs J, et al. Pathophysiology, diagnosis and management of peripartum cardiomyopathy: a position statement from the ESC Study Group. Eur J Heart Fail. 2019;21(7):827-843.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peripartum-cardiomyopathy",
+          "title": "Peripartum Cardiomyopathy",
+          "section": "Reference Library",
+          "route": "/reference-library/obstetric-gynecologic/peripartum-cardiomyopathy"
         }
       ]
     },
@@ -5848,6 +6028,18 @@
       ]
     },
     {
+      "text": "Campos JH, Feider A. Hypoxia During One-Lung Ventilation—A Review and Update. J Cardiothorac Vasc Anesth. 2018;32(5):2330-2338.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "one-lung-ventilation-basics",
+          "title": "One-Lung Ventilation Basics",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/one-lung-ventilation-basics"
+        }
+      ]
+    },
+    {
       "text": "Canadian Airway Focus Group (CAFG) — 3-attempt rule",
       "group": "Other primary sources",
       "usedBy": [
@@ -6118,6 +6310,30 @@
       ]
     },
     {
+      "text": "Clark SL, et al. Proposed diagnostic criteria for the case definition of amniotic fluid embolism in research studies. Am J Obstet Gynecol. 2016;215(4):408-412.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "amniotic-fluid-embolism",
+          "title": "Amniotic Fluid Embolism",
+          "section": "Reference Library",
+          "route": "/reference-library/obstetric-gynecologic/amniotic-fluid-embolism"
+        }
+      ]
+    },
+    {
+      "text": "Closhen D, et al. Effects of pneumoperitoneum and Trendelenburg position on intracranial pressure and cerebral blood flow. J Anaesthesiol Clin Pharmacol. 2023.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pneumoperitoneum-trendelenburg-physiology",
+          "title": "Pneumoperitoneum & Steep Trendelenburg Physiology",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/pneumoperitoneum-trendelenburg-physiology"
+        }
+      ]
+    },
+    {
       "text": "Cockcroft DW, Gault MH. Nephron 1976",
       "group": "Other primary sources",
       "usedBy": [
@@ -6126,6 +6342,18 @@
           "title": "Cockcroft-Gault Creatinine Clearance",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/dosing-fluid-math/cockcroft-gault"
+        }
+      ]
+    },
+    {
+      "text": "Colletti JE, et al. Practice parameter: evaluation and management of children with acute gastroenteritis in the outpatient setting. Acad Emerg Med. 2010.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-dehydration-ort",
+          "title": "Pediatric Dehydration Assessment & Oral Rehydration Therapy",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-dehydration-ort"
         }
       ]
     },
@@ -7462,6 +7690,18 @@
       ]
     },
     {
+      "text": "Freedman SB, et al. Oral Ondansetron for Gastroenteritis in a Pediatric Emergency Department. N Engl J Med. 2006;354(16):1698-1705.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-dehydration-ort",
+          "title": "Pediatric Dehydration Assessment & Oral Rehydration Therapy",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-dehydration-ort"
+        }
+      ]
+    },
+    {
       "text": "Fridericia LS. Acta Med Scand 1920;53:469-86",
       "group": "Other primary sources",
       "usedBy": [
@@ -7758,6 +7998,18 @@
           "title": "ICH Score",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/ich-score"
+        }
+      ]
+    },
+    {
+      "text": "Hendey GW, et al. Use of Phenobarbital in Delirium Tremens. West J Emerg Med. 2011.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "severe-alcohol-withdrawal-dts",
+          "title": "Severe Alcohol Withdrawal / Delirium Tremens — ICU Escalation",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/severe-alcohol-withdrawal-dts"
         }
       ]
     },
@@ -8062,6 +8314,30 @@
       ]
     },
     {
+      "text": "Kalmar AF, et al. Influence of steep Trendelenburg position and CO2 pneumoperitoneum on cardiovascular, cerebrovascular, and respiratory homeostasis during robotic prostatectomy. Br J Anaesth. 2010.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pneumoperitoneum-trendelenburg-physiology",
+          "title": "Pneumoperitoneum & Steep Trendelenburg Physiology",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/pneumoperitoneum-trendelenburg-physiology"
+        }
+      ]
+    },
+    {
+      "text": "Kattah JC, et al. HINTS to diagnose stroke in the acute vestibular syndrome: three-step bedside oculomotor examination more sensitive than early MRI diffusion-weighted imaging. Stroke. 2009;40(11):3504-3510.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "hints-vertigo",
+          "title": "HINTS Exam — Central vs Peripheral Vertigo",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/hints-vertigo"
+        }
+      ]
+    },
+    {
       "text": "Kauvar DS, et al. Utility of the Mangled Extremity Severity Score in predicting amputation in military lower extremity arterial injury. Ann Vasc Surg. 2018",
       "group": "Other primary sources",
       "usedBy": [
@@ -8106,6 +8382,30 @@
           "title": "Cannabinoid & Inhalant Toxicity — THC, Synthetic Cannabinoids, Solvents, Nitrites",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-cannabinoids-inhalants"
+        }
+      ]
+    },
+    {
+      "text": "Ker K, et al. Topical tranexamic acid for epistaxis. Ann Emerg Med. 2022 (NoPAC-derived and related RCTs).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "epistaxis-management",
+          "title": "Epistaxis Management",
+          "section": "Procedures",
+          "route": "/procedures/ent-ophtho-dental-gu/epistaxis-management"
+        }
+      ]
+    },
+    {
+      "text": "Kessel KM, et al. Phenobarbital Versus Benzodiazepines for the Treatment of Severe Alcohol Withdrawal. J Pharm Pract. 2024.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "severe-alcohol-withdrawal-dts",
+          "title": "Severe Alcohol Withdrawal / Delirium Tremens — ICU Escalation",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/severe-alcohol-withdrawal-dts"
         }
       ]
     },
@@ -8158,6 +8458,18 @@
       ]
     },
     {
+      "text": "King CK, et al. Managing Acute Gastroenteritis Among Children: Oral Rehydration, Maintenance, and Nutritional Therapy. MMWR Recomm Rep. 2003;52(RR-16):1-16.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-dehydration-ort",
+          "title": "Pediatric Dehydration Assessment & Oral Rehydration Therapy",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-dehydration-ort"
+        }
+      ]
+    },
+    {
       "text": "Kitabchi AE, Umpierrez GE, Miles JM, Fisher JN. Hyperglycemic crises in adult patients with diabetes. Diabetes Care. 2009;32(7):1335-1343",
       "group": "Other primary sources",
       "usedBy": [
@@ -8178,6 +8490,18 @@
           "title": "MASCC Risk Index (Febrile Neutropenia)",
           "section": "Calculators",
           "route": "/calculators/sepsis-infectious-disease/mascc-score"
+        }
+      ]
+    },
+    {
+      "text": "Klein U, et al. Lung Isolation Anesthesia. StatPearls.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "one-lung-ventilation-basics",
+          "title": "One-Lung Ventilation Basics",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/one-lung-ventilation-basics"
         }
       ]
     },
@@ -8262,6 +8586,18 @@
           "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-alcohols-anticholinergics-other"
+        }
+      ]
+    },
+    {
+      "text": "Krauss BS, et al. Managing pain and distress in children undergoing brief diagnostic and therapeutic procedures. Paediatr Anaesth. 2019.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-nonsedation-procedural-pain",
+          "title": "Pediatric Procedural Pain Management — Non-Sedation Techniques",
+          "section": "Procedures",
+          "route": "/procedures/airway-sedation-workflows/peds-nonsedation-procedural-pain"
         }
       ]
     },
@@ -8614,6 +8950,18 @@
       ]
     },
     {
+      "text": "Marino PL. The ICU Book, 4th ed. Chapter: Hemodynamic Monitoring.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "invasive-hemodynamic-monitoring",
+          "title": "Invasive Hemodynamic Monitoring — Arterial Line, CVP & PA Catheter",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/invasive-hemodynamic-monitoring"
+        }
+      ]
+    },
+    {
       "text": "Martin JN Jr, et al. The spectrum of severe preeclampsia: comparative analysis by HELLP syndrome classification. Am J Obstet Gynecol. 1999;180(6 Pt 1):1373-1384 (Mississippi Triple-Class System).",
       "group": "Other primary sources",
       "usedBy": [
@@ -8836,6 +9184,18 @@
       ]
     },
     {
+      "text": "Møller JE, et al. Microaxial Flow Pump or Standard Care in Infarct-Related Cardiogenic Shock (DanGer Shock). N Engl J Med. 2024;390(15):1382-1393.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "mcs-device-selection",
+          "title": "Temporary Mechanical Circulatory Support — What the Intensivist Should Know",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/mcs-device-selection"
+        }
+      ]
+    },
+    {
       "text": "Morrow DA, et al. TIMI Risk Score for ST-Elevation Myocardial Infarction: A Convenient, Bedside, Clinical Score for Risk Assessment at Presentation. Circulation. 2000;102(17):2031-2037.",
       "group": "Other primary sources",
       "usedBy": [
@@ -8892,6 +9252,18 @@
           "title": "Stimulant Toxicity — Cocaine, Amphetamines, MDMA, Cathinones",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-stimulants"
+        }
+      ]
+    },
+    {
+      "text": "Musi ME, et al. Clinical staging of accidental hypothermia: The Revised Swiss System: Recommendation of the International Commission for Mountain Emergency Medicine (ICAR MedCom). Resuscitation. 2021.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "accidental-hypothermia-staging",
+          "title": "Accidental Hypothermia — Staging & Rewarming",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/accidental-hypothermia-staging"
         }
       ]
     },
@@ -9042,6 +9414,18 @@
           "title": "POCUS Nerve Block — Sequential Checklist",
           "section": "Procedures",
           "route": "/procedures/regional-anesthesia-ultrasound/pocus-nerve-block-checklist"
+        }
+      ]
+    },
+    {
+      "text": "Newman-Toker DE, et al. HINTS outperforms ABCD2 to screen for stroke in acute continuous vertigo and dizziness. Acad Emerg Med. 2013;20(10):986-996.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "hints-vertigo",
+          "title": "HINTS Exam — Central vs Peripheral Vertigo",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/hints-vertigo"
         }
       ]
     },
@@ -9214,6 +9598,18 @@
       ]
     },
     {
+      "text": "Pacheco LD, et al. Amniotic fluid embolism: diagnosis and management. Am J Obstet Gynecol. 2016;215(2):B16-B24.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "amniotic-fluid-embolism",
+          "title": "Amniotic Fluid Embolism",
+          "section": "Reference Library",
+          "route": "/reference-library/obstetric-gynecologic/amniotic-fluid-embolism"
+        }
+      ]
+    },
+    {
       "text": "PALS; standard PICU references",
       "group": "Other primary sources",
       "usedBy": [
@@ -9234,6 +9630,30 @@
           "title": "Ketamine",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/induction-sedation-agents/ketamine"
+        }
+      ]
+    },
+    {
+      "text": "Pandit JJ, et al. 5th National Audit Project (NAP5) on accidental awareness during general anaesthesia. Br J Anaesth. 2014;113(4):549-559.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "intraoperative-awareness",
+          "title": "Intraoperative Awareness",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/intraoperative-awareness"
+        }
+      ]
+    },
+    {
+      "text": "Pasquier M, et al. Clinical staging of accidental hypothermia: The Revised Swiss System. Resuscitation. 2021;162:182-187.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "accidental-hypothermia-staging",
+          "title": "Accidental Hypothermia — Staging & Rewarming",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/accidental-hypothermia-staging"
         }
       ]
     },
@@ -9348,6 +9768,18 @@
           "title": "POCUS Nerve Block — Sequential Checklist",
           "section": "Procedures",
           "route": "/procedures/regional-anesthesia-ultrasound/pocus-nerve-block-checklist"
+        }
+      ]
+    },
+    {
+      "text": "Poonai N, et al. Vapocoolant spray for children with intravenous cannulation pain.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-nonsedation-procedural-pain",
+          "title": "Pediatric Procedural Pain Management — Non-Sedation Techniques",
+          "section": "Procedures",
+          "route": "/procedures/airway-sedation-workflows/peds-nonsedation-procedural-pain"
         }
       ]
     },
@@ -9534,6 +9966,18 @@
           "title": "Perioperative Hyperglycemia",
           "section": "Reference Library",
           "route": "/reference-library/perioperative-anesthesia/perioperative-glycemic-management"
+        }
+      ]
+    },
+    {
+      "text": "Randhawa PA, et al. Buprenorphine Low-Dose Initiation. Penn Center for Addiction Medicine and Policy (CAMP) clinical guidance.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "opioid-withdrawal-induction",
+          "title": "Opioid Withdrawal — Inpatient Buprenorphine Induction Principles",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/opioid-withdrawal-induction"
         }
       ]
     },
@@ -9964,6 +10408,18 @@
       ]
     },
     {
+      "text": "Sharp VJ, et al. Testicular Torsion: Diagnosis, Evaluation, and Management. Am Fam Physician. 2013;88(12):835-840.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acute-scrotum",
+          "title": "Acute Scrotum — Torsion, Priapism & Fournier's Gangrene",
+          "section": "Reference Library",
+          "route": "/reference-library/ent-ophtho-dental-gu/acute-scrotum"
+        }
+      ]
+    },
+    {
       "text": "Singh A et al. Crit Care 2023 (SI vs MSI in trauma and sepsis)",
       "group": "Other primary sources",
       "usedBy": [
@@ -9996,6 +10452,18 @@
           "title": "ECG Library — Key Patterns",
           "section": "Reference Library",
           "route": "/reference-library/cardiac-ecg/ecg-library"
+        }
+      ]
+    },
+    {
+      "text": "Society for Maternal-Fetal Medicine / Amniotic Fluid Embolism Foundation. Recognition and Management of Amniotic Fluid Embolism.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "amniotic-fluid-embolism",
+          "title": "Amniotic Fluid Embolism",
+          "section": "Reference Library",
+          "route": "/reference-library/obstetric-gynecologic/amniotic-fluid-embolism"
         }
       ]
     },
@@ -10276,6 +10744,18 @@
       ]
     },
     {
+      "text": "Stevens B, et al. Sucrose for analgesia in newborn infants undergoing painful procedures. Cochrane Database Syst Rev. 2016.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-nonsedation-procedural-pain",
+          "title": "Pediatric Procedural Pain Management — Non-Sedation Techniques",
+          "section": "Procedures",
+          "route": "/procedures/airway-sedation-workflows/peds-nonsedation-procedural-pain"
+        }
+      ]
+    },
+    {
       "text": "Subbe CP et al. QJM 2001; widely adopted ward track-and-trigger tool (NEWS2 is the successor)",
       "group": "Other primary sources",
       "usedBy": [
@@ -10284,6 +10764,18 @@
           "title": "Modified Early Warning Score (MEWS)",
           "section": "Calculators",
           "route": "/calculators/early-warning-resuscitation/mews"
+        }
+      ]
+    },
+    {
+      "text": "Substance Abuse and Mental Health Services Administration (SAMHSA). Clinical Guidance for Treating Pregnant and Parenting Women With Opioid Use Disorder and Their Infants — buprenorphine induction principles.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "opioid-withdrawal-induction",
+          "title": "Opioid Withdrawal — Inpatient Buprenorphine Induction Principles",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/opioid-withdrawal-induction"
         }
       ]
     },
@@ -10344,6 +10836,18 @@
           "title": "Capnography — Waveform Interpretation",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/capnography"
+        }
+      ]
+    },
+    {
+      "text": "Thiele H, et al. Extracorporeal Life Support in Infarct-Related Cardiogenic Shock (ECLS-SHOCK). N Engl J Med. 2023;389(14):1286-1297.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "mcs-device-selection",
+          "title": "Temporary Mechanical Circulatory Support — What the Intensivist Should Know",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/mcs-device-selection"
         }
       ]
     },
@@ -10560,6 +11064,18 @@
           "title": "Ophthalmologic Emergencies",
           "section": "Reference Library",
           "route": "/reference-library/ent-ophtho-dental-gu/ophthalmologic-emergencies"
+        }
+      ]
+    },
+    {
+      "text": "Vlajkovic GP, Sindjelic RP. Emergence delirium in children: many questions, few answers. Anesth Analg. 2007;104(1):84-91.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "emergence-delirium-pod",
+          "title": "Emergence Delirium & Postoperative Delirium (PACU)",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/emergence-delirium-pod"
         }
       ]
     },
@@ -10848,6 +11364,18 @@
           "title": "Cormack-Lehane Classification",
           "section": "Calculators",
           "route": "/calculators/anesthesia-airway-or/cormack-lehane"
+        }
+      ]
+    },
+    {
+      "text": "Zahed R, et al. Topical Tranexamic Acid Compared With Anterior Nasal Packing for Treatment of Epistaxis in Patients Taking Antiplatelet Drugs. Am J Emerg Med. 2018.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "epistaxis-management",
+          "title": "Epistaxis Management",
+          "section": "Procedures",
+          "route": "/procedures/ent-ophtho-dental-gu/epistaxis-management"
         }
       ]
     },
