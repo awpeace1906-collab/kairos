@@ -5,9 +5,10 @@
   "title": "Corrected QT Interval (QTc)",
   "settingEmphasis": ["ed", "icu", "or"],
   "aliases": ["QTc", "Bazett", "Fridericia", "QT correction"],
+  "tags": ["QTc", "arrhythmia", "ECG", "drug-induced QT prolongation", "ED", "ICU", "OR"],
   "contentType": "calculator",
-  "content_version": 2,
-  "last_reviewed": "2026-09-01",
+  "content_version": 3,
+  "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-01",
   "review_tier": 1,
   "sources": [
@@ -16,6 +17,7 @@
     "Rautaharju PM et al. AHA/ACCF/HRS. Circulation 2009;119:e241-50"
   ],
   "changelog": [
+    { "version": 3, "date": "2026-09-15", "change": "Content audit Batch 4 housekeeping: added missing tags[] field. No scoring content changed." },
     { "version": 2, "date": "2026-09-01", "change": "Tier 1 verification: formulas confirmed. Added a Fridericia interpretation band set; borderline band now starts at 450 ms (men) per AHA/ACCF/HRS 2009." },
     { "version": 1, "date": "2026-08-31", "change": "Initial entry transcribed from Calculator_Logic_Build_Spec.md" }
   ],

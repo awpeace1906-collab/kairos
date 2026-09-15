@@ -5,13 +5,15 @@
   "title": "Killip Classification",
   "settingEmphasis": ["ed", "icu"],
   "aliases": ["Killip", "Killip class"],
+  "tags": ["acute MI", "heart failure", "Killip", "mortality", "ED", "ICU"],
   "contentType": "calculator",
-  "content_version": 1,
-  "last_reviewed": "2026-08-31",
+  "content_version": 2,
+  "last_reviewed": "2026-09-15",
   "next_review_due": "2026-11-30",
   "review_tier": 1,
   "sources": ["Killip T, Kimball JT. Am J Cardiol 1967"],
   "changelog": [
+    { "version": 2, "date": "2026-09-15", "change": "Content audit Batch 4 housekeeping: added missing tags[] field. No content changed." },
     { "version": 1, "date": "2026-08-31", "change": "Initial entry transcribed from Calculator_Logic_Build_Spec.md" }
   ],
   "engine": "classification",

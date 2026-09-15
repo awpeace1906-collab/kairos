@@ -35,8 +35,8 @@
     "discharge with auto-injector"
   ],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-03",
+  "content_version": 3,
+  "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-03",
   "review_tier": 1,
   "sources": [
@@ -44,6 +44,11 @@
     "Joint Task Force Anaphylaxis Practice Parameter 2023 update"
   ],
   "changelog": [
+    {
+      "version": 3,
+      "date": "2026-09-15",
+      "change": "Content audit Batch 4: added related[] cross-linking to the new perioperative-anaphylaxis module (this reference is ED/prehospital-focused; the OR-specific presentation, cause distribution, and tryptase workup now have their own companion module) and anesthesia-pocus. No treatment content changed."
+    },
     {
       "version": 2,
       "date": "2026-09-07",
@@ -98,5 +103,6 @@
       "tone": "warning",
       "text": "Refractory hypotension or stridor despite IM epinephrine → start the infusion early and prepare for a difficult airway (angioedema). Persistent bronchospasm: nebulised salbutamol. Persistent upper-airway oedema: nebulised epinephrine and early intubation by the most experienced operator."
     }
-  ]
+  ],
+  "related": ["perioperative-anaphylaxis", "anesthesia-pocus"]
 }

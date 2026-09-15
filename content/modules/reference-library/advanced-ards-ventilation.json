@@ -1,7 +1,7 @@
 {
   "id": "advanced-ards-ventilation",
   "section": "Reference Library",
-  "category": "ICU / Critical Care",
+  "category": "Critical Care",
   "title": "Beyond Lung-Protective: APRV, Recruitment, Intraoperative PEEP",
   "settingEmphasis": [
     "icu"
@@ -33,8 +33,8 @@
     "IMPROVE low tidal volume PROVHILO no benefit high PEEP RM"
   ],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-03",
+  "content_version": 3,
+  "last_reviewed": "2026-09-15",
   "next_review_due": "2027-09-03",
   "review_tier": 1,
   "sources": [
@@ -42,6 +42,11 @@
     "ART trial (JAMA 2017); IMPROVE (NEJM 2013); PROVHILO (Lancet 2014); APRV/BiVent meta-analysis 2026"
   ],
   "changelog": [
+    {
+      "version": 3,
+      "date": "2026-09-15",
+      "change": "Content audit Batch 4 housekeeping: category corrected from 'ICU / Critical Care' (not a valid Reference Library category — that title belongs to the Calculators section's ICU category) to 'Critical Care' (the actual Reference Library category, per sections.json). No clinical content changed."
+    },
     {
       "version": 2,
       "date": "2026-09-07",

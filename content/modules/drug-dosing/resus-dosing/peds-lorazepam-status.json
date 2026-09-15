@@ -1,21 +1,52 @@
 {
   "id": "peds-lorazepam-status",
   "section": "Drug & Dosing Cards",
-  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
   "title": "Lorazepam — Pediatric Status Epilepticus",
-  "settingEmphasis": ["ed", "icu", "prehospital"],
-  "audience": ["peds"],
-  "aliases": ["peds lorazepam", "Ativan seizure dose", "first-line status epilepticus"],
-  "tags": ["status epilepticus", "seizure", "benzodiazepine", "first line", "peds"],
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
+  "audience": [
+    "peds"
+  ],
+  "aliases": [
+    "peds lorazepam",
+    "Ativan seizure dose",
+    "first-line status epilepticus"
+  ],
+  "tags": [
+    "status epilepticus",
+    "seizure",
+    "benzodiazepine",
+    "first line",
+    "peds"
+  ],
   "contentType": "drug-card",
-  "content_version": 2,
-  "last_reviewed": "2026-09-14",
+  "content_version": 3,
+  "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-14",
   "review_tier": 1,
-  "sources": ["Drug_Dosing_Peds_Weight_Based_Spec.md (cross-checked vs Stanford & Riley Children's pathways)"],
+  "sources": [
+    "Drug_Dosing_Peds_Weight_Based_Spec.md (cross-checked vs Stanford & Riley Children's pathways)"
+  ],
   "changelog": [
-    { "version": 2, "date": "2026-09-14", "change": "Updated buildNote to cross-link the newly-built second-line set (peds-fosphenytoin-status, peds-levetiracetam-status, peds-valproate-status) and clarify neonatal phenobarbital lives in the separate neonatal-seizures module." },
-    { "version": 1, "date": "2026-08-31", "change": "Initial entry." }
+    {
+      "version": 3,
+      "date": "2026-09-15",
+      "change": "Content audit Batch 4 housekeeping: category renamed from '...(Adult + Peds)' to '...Pediatric Resuscitation Dosing' — every card in this category was peds-only, the old name was misleading. No dosing content changed."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-14",
+      "change": "Updated buildNote to cross-link the newly-built second-line set (peds-fosphenytoin-status, peds-levetiracetam-status, peds-valproate-status) and clarify neonatal phenobarbital lives in the separate neonatal-seizures module."
+    },
+    {
+      "version": 1,
+      "date": "2026-08-31",
+      "change": "Initial entry."
+    }
   ],
   "purpose": "First-line IV benzodiazepine for pediatric status epilepticus when IV access is available.",
   "population": "peds",
@@ -24,7 +55,13 @@
     {
       "indication": "Status epilepticus (IV access present)",
       "route": "IV",
-      "rule": { "perKg": 0.1, "unit": "mg", "maxDose": 4, "maxDoseUnit": "mg", "repeat": "May repeat once after 5 minutes if the seizure persists" },
+      "rule": {
+        "perKg": 0.1,
+        "unit": "mg",
+        "maxDose": 4,
+        "maxDoseUnit": "mg",
+        "repeat": "May repeat once after 5 minutes if the seizure persists"
+      },
       "notes": "If no IV access: IM/IN midazolam is the preferred first agent — see the midazolam card."
     }
   ],

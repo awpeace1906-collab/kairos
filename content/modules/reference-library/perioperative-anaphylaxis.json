@@ -1,0 +1,91 @@
+{
+  "id": "perioperative-anaphylaxis",
+  "section": "Reference Library",
+  "category": "Perioperative & Anesthesia",
+  "title": "Perioperative Anaphylaxis",
+  "settingEmphasis": ["or"],
+  "aliases": ["intraoperative anaphylaxis", "anesthesia anaphylaxis", "NMBA allergy", "chlorhexidine allergy"],
+  "tags": ["anaphylaxis", "perioperative", "NMBA", "chlorhexidine", "tryptase", "OR", "anesthesia"],
+  "keywords": ["NMBA is the single leading cause, roughly 38 percent, followed by antibiotics, patent blue dye, chlorhexidine", "sugammadex is an increasingly recognized cause in its own right, not just a rocuronium-allergy issue", "draw acute tryptase 30 minutes to 2 hours after onset, draw a baseline at least 24 hours after full resolution", "a draped, sedated, paralyzed patient can't report itching or throat tightness — hypotension and bronchospasm are often the first and only clues"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Focus on the agents most frequently responsible for perioperative anaphylaxis. Clin Mol Allergy. 2018.",
+    "Use and Interpretation of Acute and Baseline Tryptase in Perioperative Hypersensitivity and Anaphylaxis.",
+    "Cause distribution and tryptase timing/interpretation WebSearch-verified before writing."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4). The existing anaphylaxis module is confirmed ED/prehospital-only (settingEmphasis has no 'or'); this module covers what's specifically different about the OR presentation and workup rather than duplicating the core anaphylaxis treatment algorithm, which is identical." }
+  ],
+  "summary": "Anaphylaxis under general anesthesia looks different from the ED presentation — the classic symptoms (itching, throat tightness, a sense of doom) are invisible in a sedated, paralyzed, draped patient, so hypotension and bronchospasm are often the ONLY clues. The cause distribution is also different from the general population (NMBAs lead, not food/insect stings), and the diagnostic workup afterward (tryptase timing, allergy referral) is genuinely OR-specific.",
+  "whyThisMatters": "A patient under general anesthesia cannot tell you they're itchy or that their throat feels tight — the usual first symptoms of anaphylaxis that prompt recognition everywhere else are simply unavailable, so unexplained hypotension or a sudden rise in airway pressure/bronchospasm after a new drug exposure has to BE the trigger for considering anaphylaxis, not a late confirmatory finding.",
+  "clinicalTakeaway": "In the OR, treat unexplained hypotension and/or bronchospasm shortly after a new drug/agent exposure as anaphylaxis until proven otherwise — epinephrine is still first-line treatment, same as anywhere else. Think NMBAs, antibiotics, chlorhexidine, and sugammadex first when reviewing what the patient was exposed to (not the food/insect-sting causes that dominate outside the OR). After stabilization, draw an acute tryptase within 30 minutes-2 hours of onset AND a baseline tryptase at least 24 hours after full resolution — a single tryptase level without a baseline for comparison is much less useful, since baseline levels vary between individuals.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why it presents differently under anesthesia"
+    },
+    {
+      "type": "text",
+      "text": "The patient is sedated (can't report itching, throat tightness, or a sense of impending doom), paralyzed (can't develop visible stridor/respiratory distress the way an awake patient would), and draped (skin flushing/urticaria may not be visible or may be the LAST thing noticed rather than the first). This means the presentation is dominated by objective hemodynamic and respiratory findings: sudden, otherwise-unexplained hypotension (sometimes severe/refractory) and/or a sudden rise in peak airway pressure or new bronchospasm. Either — or both — after a new drug exposure should trigger consideration of anaphylaxis."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Cause distribution — different from the general population"
+    },
+    {
+      "type": "table",
+      "columns": ["Cause", "Approximate share of IgE-mediated perioperative anaphylaxis"],
+      "rows": [
+        ["Neuromuscular blocking agents (NMBAs)", "~38% — the single leading cause"],
+        ["Antibiotics", "~8%"],
+        ["Patent blue dye (sentinel lymph node mapping)", "~6%"],
+        ["Chlorhexidine", "~5%"],
+        ["Other (latex, sugammadex, opioids, colloids, protamine, and others)", "remainder"]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "Sugammadex is an increasingly recognized cause of perioperative anaphylaxis in its own right — not merely a marker of underlying rocuronium allergy. As sugammadex use has expanded, reports of anaphylaxis specifically to sugammadex itself have grown; consider it on the differential when reaction timing lines up with reversal rather than induction."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Chlorhexidine deserves specific attention because it's everywhere in the perioperative environment (skin prep, central line kits, some coated catheters, some lubricants) and easy to overlook as a cause since it isn't a 'drug' in the way NMBAs and antibiotics are.",
+        "Latex remains a cause, though its relative share has declined over recent decades with reduced latex use in many ORs — still worth asking about in a patient with a documented latex allergy or spina bifida (a recognized latex-sensitization risk group).",
+        "Review the full timeline of everything the patient was exposed to — induction agents, NMBA, antibiotics, skin prep, any dyes, colloid volume expanders, protamine (if used) — rather than assuming it must be the most recently given drug."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Treatment"
+    },
+    {
+      "type": "text",
+      "text": "The core treatment algorithm is IDENTICAL to anaphylaxis anywhere else — epinephrine first-line (IV titrated boluses or an infusion are typical in the OR setting given IV access is already established, rather than IM as in the ED/prehospital setting), stop the presumed triggering agent, fluid resuscitation for hypotension, and secure/support the airway as needed — see the main anaphylaxis reference for the full algorithm, which this module doesn't restate."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Tryptase — timing is everything for a useful result"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Acute (event) tryptase: draw within roughly 30 minutes to 2 hours after symptom onset — tryptase peaks quickly (often within an hour) and has a half-life of only 1.5-2.5 hours, so a level drawn too late can already be falling back toward baseline and understate the true peak.",
+        "Baseline (convalescent) tryptase: draw at least 24 hours after all symptoms have FULLY resolved (or use a pre-existing pre-op sample if available) — this is essential for interpretation, since baseline tryptase varies meaningfully between individuals, and a single acute-only level can't distinguish 'elevated for this patient' from 'this patient normally runs high.'",
+        "Interpretation: an acute level exceeding roughly [2 + (1.2 × baseline)] supports genuine mast-cell activation — a rise-from-baseline calculation, not a fixed absolute cutoff.",
+        "Refer to an allergist/immunologist for formal testing (skin testing, specific IgE where available) once the patient has recovered — identifying the actual culprit agent matters enormously for future anesthetic planning, and empiric avoidance of an entire drug class without confirmed testing can unnecessarily limit future anesthetic options."
+      ]
+    }
+  ],
+  "related": ["anaphylaxis", "anesthesia-pocus", "surgical-antibiotic-prophylaxis"],
+  "buildNote": "Deliberately does not restate the core epinephrine-dosing/anaphylaxis-treatment algorithm, which is identical to the existing anaphylaxis module — this module's value is entirely in what's DIFFERENT about the OR context: presentation, cause distribution, and the tryptase-timing workup."
+}

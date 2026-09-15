@@ -1,0 +1,87 @@
+{
+  "id": "thyroid-storm-myxedema-coma",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Thyroid Storm & Myxedema Coma",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["thyrotoxic crisis", "myxedema crisis", "Burch-Wartofsky", "severe hypothyroidism decompensation"],
+  "tags": ["thyroid storm", "myxedema coma", "endocrine emergency", "hyperthyroidism", "hypothyroidism", "ED", "ICU"],
+  "keywords": ["give antithyroid drug BEFORE iodine, at least an hour before, or iodine feeds more hormone synthesis", "PTU 500-1000mg load then 250mg q4h, propranolol 60-80mg q4h, hydrocortisone 300mg load then 100mg q8h", "myxedema coma IV levothyroxine plus stress-dose steroids given together, never levothyroxine alone", "both are clinical diagnoses treated before confirmatory labs return"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Approach to the patient with thyroid storm. J Clin Endocrinol Metab. 2026.",
+    "Ross DS, et al. 2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis.",
+    "PTU/propranolol/hydrocortisone dosing and the antithyroid-before-iodine sequencing WebSearch-verified before writing."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4). Both are true endocrine emergencies with essentially no existing Kairos coverage; combined into one module since they're the opposite-direction decompensation of the same organ system and share the 'treat empirically before confirmatory labs' pattern." }
+  ],
+  "summary": "Two opposite-direction thyroid emergencies that share a core lesson: both are clinical diagnoses treated empirically, and both have a specific sequencing/combination rule that's easy to get backwards under pressure.",
+  "whyThisMatters": "Thyroid storm and myxedema coma are both rare enough that the exact treatment sequence isn't reflexive for most clinicians, and both have a genuine 'order matters' trap: giving iodine before an antithyroid drug in storm fuels MORE hormone synthesis instead of blocking it, and giving levothyroxine alone in myxedema coma (without covering for possible concurrent adrenal insufficiency) can precipitate adrenal crisis.",
+  "clinicalTakeaway": "Thyroid storm: beta-blocker + antithyroid drug (PTU or methimazole) first, THEN iodine at least an hour later, plus hydrocortisone and aggressive supportive cooling — start before confirmatory labs return in a clinically convincing picture. Myxedema coma: IV levothyroxine AND stress-dose hydrocortisone together (never levothyroxine alone, given the real risk of unmasking concurrent adrenal insufficiency), plus passive rewarming and treatment of the precipitating cause.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Thyroid storm — recognition"
+    },
+    {
+      "type": "text",
+      "text": "A clinical diagnosis (the Burch-Wartofsky point scale is the most widely used bedside scoring aid in the US, though it's empirically derived rather than fully validated) in a patient with known or suspected hyperthyroidism who develops fever, marked tachycardia (often disproportionate to fever alone), altered mental status/agitation, GI symptoms (nausea, vomiting, diarrhea), and cardiovascular compromise — this is a clinical syndrome, not a specific lab cutoff, and treatment should not wait for TSH/free T4 confirmation in a convincing presentation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Thyroid storm — treatment, IN ORDER"
+    },
+    {
+      "type": "list",
+      "items": [
+        "1. Beta-blockade: propranolol 60-80 mg PO/NG every 4 hours (or an IV alternative — esmolol, labetalol) — controls the adrenergic surge and, as a bonus, propranolol specifically also blocks peripheral T4-to-T3 conversion.",
+        "2. Antithyroid drug: propylthiouracil (PTU) 500-1000 mg loading dose, then 250 mg every 4 hours — PTU is often preferred acutely because it ALSO blocks peripheral T4-to-T3 conversion, which methimazole does not.",
+        "3. Iodine — but only AFTER the antithyroid drug, and at least 1 hour later: this sequencing is the single most important detail to get right. Iodine (Lugol's solution or potassium iodide) blocks the release of preformed thyroid hormone via the Wolff-Chaikoff effect, but if given BEFORE the antithyroid drug has had a chance to block new hormone synthesis, iodine instead supplies additional substrate that can worsen the storm.",
+        "4. Hydrocortisone: 300 mg IV loading dose, then 100 mg every 8 hours — covers for relative adrenal insufficiency (thyroid hormone excess accelerates cortisol metabolism) and also blocks peripheral T4-to-T3 conversion.",
+        "5. Aggressive supportive care: cooling measures for fever (avoid aspirin specifically — it displaces thyroid hormone from binding globulin and can worsen free hormone levels), fluid/electrolyte correction, and treatment of the precipitating cause (infection, DKA, trauma, surgery, medication non-adherence, iodine load from IV contrast)."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "The order is: BETA-BLOCKER and ANTITHYROID DRUG first, IODINE at least an hour after the antithyroid drug, not before. Getting this backwards is the classic teaching trap — iodine given first can worsen the storm by providing substrate for a still-active synthesis pathway."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Myxedema coma — recognition"
+    },
+    {
+      "type": "text",
+      "text": "Severe decompensated hypothyroidism — altered mental status (ranging from confusion to true coma), hypothermia, bradycardia, hypoventilation (can progress to CO2 narcosis), hyponatremia, and hypotension, usually in a patient with untreated/undertreated hypothyroidism who develops a precipitating stressor (infection, cold exposure, sedative/opioid administration, MI, stroke, trauma). Mortality is high even with treatment — this is a genuine emergency, not just 'severe hypothyroidism.'"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Myxedema coma — treatment"
+    },
+    {
+      "type": "list",
+      "items": [
+        "IV levothyroxine (a loading dose followed by daily maintenance) — some protocols add IV liothyronine (T3) alongside levothyroxine (T4) for faster onset, since T4-to-T3 conversion is impaired in severe hypothyroidism; institutional practice varies here.",
+        "Stress-dose IV hydrocortisone, started TOGETHER with the levothyroxine, not after — a patient with severe primary hypothyroidism may have concurrent adrenal insufficiency (autoimmune polyglandular syndrome) or a relatively insufficient cortisol reserve for the physiologic stress; giving thyroid hormone alone can unmask/precipitate an adrenal crisis by accelerating cortisol metabolism.",
+        "Passive rewarming (active rewarming can cause vasodilation and hemodynamic collapse in a volume-depleted patient) — avoid aggressive active warming.",
+        "Treat the precipitating cause — actively look for and treat infection, correct hyponatremia cautiously (rapid correction risk applies here too), and support ventilation as needed (hypoventilation with CO2 narcosis is a real risk requiring close monitoring, sometimes intubation)."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Never give levothyroxine alone without also covering for adrenal insufficiency in myxedema coma — give stress-dose hydrocortisone AT THE SAME TIME, not as an afterthought."
+    }
+  ],
+  "related": ["adrenal-crisis", "altered-mental-status", "empiric-antibiotics-ed-icu"],
+  "buildNote": "Both syndromes built into one module given the shared 'empiric-treatment, order/combination matters' teaching structure — the Burch-Wartofsky score itself was deliberately NOT built as a separate calculator in this pass (it's empirically derived and less central to bedside management than the treatment sequence itself); a future addition if there's demand for it as a standalone scored tool."
+}

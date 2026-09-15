@@ -1,0 +1,94 @@
+{
+  "id": "sickle-cell-crisis",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Sickle Cell Crisis",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["vaso-occlusive crisis", "acute chest syndrome", "sickle cell pain crisis", "SCD exchange transfusion"],
+  "tags": ["sickle cell disease", "vaso-occlusive crisis", "acute chest syndrome", "priapism", "exchange transfusion", "ED", "ICU"],
+  "keywords": ["believe the patient's pain, individualized pain plans exist for a reason", "acute chest syndrome is a new pulmonary infiltrate plus one of fever chest pain hypoxia tachypnea in a known sickle cell patient", "exchange transfusion indications stroke moderate-severe acute chest syndrome multiorgan dysfunction", "target HbS under 30 percent for exchange", "do not push hemoglobin above 10 with simple transfusion, viscosity risk"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "American Society of Hematology. Sickle cell disease: when and how to transfuse.",
+    "Guidelines on red cell transfusion in sickle cell disease Part II: indications for transfusion. Br J Haematol.",
+    "Exchange-transfusion indications and the hemoglobin-10 viscosity caveat WebSearch-verified before writing."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4)." }
+  ],
+  "summary": "Vaso-occlusive pain crisis is the most common presentation, but the highest-stakes decision is recognizing acute chest syndrome early and knowing when simple transfusion isn't enough — exchange transfusion has specific indications, and pushing hemoglobin too high with simple transfusion alone can make things worse.",
+  "whyThisMatters": "Sickle cell patients are frequently undertreated for pain due to stigma and bias, while the genuinely dangerous complications (acute chest syndrome, stroke, splenic sequestration, priapism) can be under-recognized because a 'routine' pain crisis presentation is so much more common — both failure modes cause real, preventable harm.",
+  "clinicalTakeaway": "Treat pain aggressively and per the patient's individualized pain plan where one exists — they know their own disease. Actively screen every sickle cell presentation for the complications that change management (new hypoxia or infiltrate = acute chest syndrome until proven otherwise; focal neuro deficit = stroke; priapism > 4h = urologic emergency). Reserve exchange transfusion for its specific indications (stroke, moderate-to-severe acute chest syndrome, multiorgan dysfunction) rather than reflexively transfusing everyone, and never push hemoglobin above ~10 g/dL with simple transfusion alone.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Vaso-occlusive (pain) crisis"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Believe the patient — they typically know their own crisis pattern and often have a documented individualized pain management plan; follow it when available rather than defaulting to a generic weak-opioid pathway.",
+        "Aggressive analgesia, typically IV opioids, dosed to effect and reassessed frequently — undertreatment of sickle cell pain is a well-documented, real problem driven by bias, and it delays recovery, not just comfort.",
+        "IV fluids at a maintenance (not aggressive/bolus) rate for most crises — overhydration doesn't shorten a vaso-occlusive crisis and can contribute to volume overload/precipitate acute chest syndrome in a susceptible patient.",
+        "Incentive spirometry for any hospitalized patient — reduces atelectasis, which is itself a risk factor for precipitating acute chest syndrome.",
+        "Actively look for a precipitant (infection, dehydration, cold exposure, hypoxia) and treat it in parallel."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Acute chest syndrome — the complication to actively rule out"
+    },
+    {
+      "type": "text",
+      "text": "Defined as a NEW pulmonary infiltrate on imaging PLUS at least one of: fever, chest pain, hypoxia, tachypnea, or wheeze/cough, in a patient with known sickle cell disease. It can look identical to a vaso-occlusive crisis or pneumonia at first and can develop or worsen AFTER admission for what looked like a routine pain crisis — have a low threshold to re-image and recheck oxygenation if a hospitalized sickle cell patient's respiratory status changes."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Supplemental oxygen for hypoxia, incentive spirometry, bronchodilators if wheezing, and empiric antibiotics (atypical coverage included, since the presentation overlaps with infectious pneumonia and the two often coexist).",
+        "Transfusion is a mainstay of treatment: simple transfusion may suffice for milder cases, but moderate-to-severe acute chest syndrome (significant hypoxia, multilobar involvement, rapid progression) generally warrants exchange transfusion rather than simple transfusion."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Exchange transfusion — specific indications, not routine"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Acute ischemic stroke, or symptoms concerning for one, in a sickle cell patient — transfuse (exchange preferred) to bring HbS below ~30% pending further workup; this is one of the clearest, most time-sensitive indications.",
+        "Moderate-to-severe acute chest syndrome.",
+        "Multiorgan dysfunction from sickle cell crisis.",
+        "Severe or refractory priapism not responding to initial measures (though evidence for transfusion specifically improving priapism outcomes is weaker than for the other indications — a shunt/drainage procedure is often the more directly effective intervention).",
+        "Preoperatively before surgery requiring general anesthesia, and in complicated pregnancy — per hematology involvement."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Do NOT push hemoglobin above roughly 10 g/dL with SIMPLE transfusion — sickle cell blood is already more viscous than normal, and adding volume without reducing the sickle-hemoglobin fraction can worsen viscosity-related complications rather than help. This is exactly the scenario exchange transfusion is designed to avoid: it replaces sickle cells with normal cells (lowering %HbS) while controlling the hematocrit rise, rather than just adding more (partly sickle) blood on top."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Other complications to keep on the differential"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Splenic sequestration (more common in children, before autosplenectomy occurs): acute splenic enlargement with a rapid hemoglobin drop and potential shock — a genuine emergency.",
+        "Priapism > 4 hours is a urologic emergency requiring prompt intervention (aspiration/irrigation, phenylephrine) — don't let it sit while other issues are addressed.",
+        "Aplastic crisis (classically parvovirus B19): sudden, severe anemia from marrow suppression rather than hemolysis — reticulocyte count is low, distinguishing it from a typical hemolytic picture."
+      ]
+    }
+  ],
+  "related": ["blood-products", "acute-dyspnea-niv", "empiric-antibiotics-ed-icu"],
+  "buildNote": "Kept centered on the two highest-yield ED/ICU decisions — aggressive appropriate pain control, and recognizing which complications need transfusion escalation beyond simple pain management — rather than attempting a full hematology textbook treatment of sickle cell disease."
+}

@@ -1,0 +1,90 @@
+{
+  "id": "mascc-score",
+  "section": "Calculators",
+  "category": "Sepsis / Infectious Disease",
+  "title": "MASCC Risk Index (Febrile Neutropenia)",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["Multinational Association for Supportive Care in Cancer risk index", "febrile neutropenia risk score", "outpatient febrile neutropenia eligibility"],
+  "tags": ["febrile neutropenia", "MASCC", "oncology", "risk stratification", "ED", "ICU"],
+  "keywords": ["score 21 or higher is low risk, potentially eligible for outpatient oral therapy", "burden of illness none or mild is 5 points, moderate is 3, severe is 0", "no hypotension is 5 points", "max score 26", "does not replace clinical judgment or institutional outpatient-eligibility protocol"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Klastersky J, Paesmans M, Rubenstein EB, et al. The Multinational Association for Supportive Care in Cancer risk index: a multinational scoring system for identifying low-risk febrile neutropenic cancer patients. J Clin Oncol. 2000;18(16):3038-3051.",
+    "IDSA has endorsed the MASCC risk index (Level B evidence) since 2002 for identifying low-risk febrile neutropenia candidates for outpatient management."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4): the existing empiric-antibiotics-ed-icu reference covers WHICH antibiotics for febrile neutropenia but not the risk-stratification decision of admission vs. outpatient management. Burden-of-illness and hypotension point values WebSearch-verified directly against the original 2000 derivation paper; the remaining 5 components reproduced from standard knowledge, cross-checked for internal consistency against the independently-confirmed 26-point maximum (all 7 components sum to exactly 26)." }
+  ],
+  "engine": "additive",
+  "purpose": "Risk-stratify a febrile neutropenic cancer patient into low-risk (potential candidate for outpatient oral antibiotic therapy) versus high-risk (admission for IV antibiotics) — a distinct question from which antibiotic to choose.",
+  "notes": "A score ≥ 21 identifies LOW risk for serious complications — but this alone does NOT automatically mean outpatient management is appropriate. Reliable follow-up, social support, ability to return promptly if worsening, and institutional protocol all factor into the actual disposition decision. Use this score to inform, not replace, that judgment.",
+  "items": [
+    {
+      "key": "burden",
+      "label": "Burden of febrile neutropenia (overall symptom severity)",
+      "options": [
+        { "label": "No symptoms or mild symptoms", "points": 5 },
+        { "label": "Moderate symptoms", "points": 3 },
+        { "label": "Severe symptoms / moribund", "points": 0 }
+      ]
+    },
+    {
+      "key": "hypotension",
+      "label": "No hypotension (systolic BP ≥ 90 mmHg)",
+      "options": [
+        { "label": "No hypotension", "points": 5 },
+        { "label": "Hypotension present (SBP < 90)", "points": 0 }
+      ]
+    },
+    {
+      "key": "copd",
+      "label": "No chronic obstructive pulmonary disease",
+      "help": "COPD here means active disease requiring bronchodilators/steroids/oxygen or with a documented drop in FEV1 — not a remote or resolved history.",
+      "options": [
+        { "label": "No active COPD", "points": 4 },
+        { "label": "Active COPD", "points": 0 }
+      ]
+    },
+    {
+      "key": "tumorType",
+      "label": "Solid tumor, OR a hematologic malignancy with no prior fungal infection",
+      "options": [
+        { "label": "Yes", "points": 4 },
+        { "label": "No (hematologic malignancy WITH a prior fungal infection)", "points": 0 }
+      ]
+    },
+    {
+      "key": "dehydration",
+      "label": "No dehydration requiring IV fluids",
+      "options": [
+        { "label": "No dehydration", "points": 3 },
+        { "label": "Dehydration requiring IV fluids", "points": 0 }
+      ]
+    },
+    {
+      "key": "status",
+      "label": "Outpatient status at the onset of fever",
+      "options": [
+        { "label": "Outpatient at fever onset", "points": 3 },
+        { "label": "Inpatient at fever onset", "points": 0 }
+      ]
+    },
+    {
+      "key": "age",
+      "label": "Age",
+      "options": [
+        { "label": "< 60 years", "points": 2 },
+        { "label": "≥ 60 years", "points": 0 }
+      ]
+    }
+  ],
+  "interpretation": [
+    { "min": 21, "max": 26, "label": "Low risk (≥ 21)", "detail": "Low predicted risk of serious medical complications. A potential candidate for outpatient oral antibiotic therapy per institutional protocol, IF reliable follow-up and support are also in place — this score alone doesn't complete the disposition decision.", "severity": "low" },
+    { "min": 0, "max": 20, "label": "High risk (< 21)", "detail": "Higher predicted risk of serious complications — favor admission for IV antibiotics and closer monitoring.", "severity": "high" }
+  ],
+  "buildNote": "engine: additive, 7-item bedside score. Companion to empiric-antibiotics-ed-icu (which covers antibiotic SELECTION for febrile neutropenia) and the antimicrobial-dosing cards (cefepime/pip-tazo, both referenced there as the monotherapy options) — calculator schema has no related[] field, cross-link noted here."
+}

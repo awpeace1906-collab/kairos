@@ -1,0 +1,70 @@
+{
+  "id": "blunt-cerebrovascular-injury-screening",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Blunt Cerebrovascular Injury (BCVI) Screening",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["Denver criteria", "Memphis criteria", "BCVI", "blunt carotid vertebral injury"],
+  "tags": ["BCVI", "Denver criteria", "trauma", "carotid injury", "vertebral artery injury", "CTA", "ED", "ICU"],
+  "keywords": ["any ONE risk factor present is enough to trigger CTA screening", "C1-C3 cervical spine fracture or fracture through the transverse foramen", "basilar skull fracture with carotid canal involvement", "LeFort II or III fracture", "TBI with GCS under 6 or diffuse axonal injury", "near-hanging with anoxic injury", "seatbelt sign or soft tissue neck injury with significant swelling or altered consciousness", "check your trauma center's own protocol — the exact criteria set and imaging pathway varies by institution"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Biffl WL, et al. Optimizing screening for blunt cerebrovascular injuries. Am J Surg. 1999 (Denver criteria, later modified 2005/expanded 2012).",
+    "Western Trauma Association. Critical Decisions in Trauma: Screening for and treatment of blunt cerebrovascular injuries.",
+    "Denver/Memphis criteria components WebSearch-verified across multiple contemporary sources; this reference presents the general framework rather than claiming to fully reproduce either institution's current internal checklist verbatim."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4). Built as a screening reference (any-one-positive risk factor triggers CTA) rather than a scored calculator, since BCVI screening is a rule-in checklist, not a summed score. Deliberately did not attempt to reproduce every exact fracture-pattern sub-criterion with false precision — the core, well-established risk-factor categories are presented with an explicit direction to confirm against institutional protocol for the exact current checklist, since Denver has been revised multiple times (1996, 2005, 2012) and Memphis differs somewhat from Denver." }
+  ],
+  "summary": "Blunt cerebrovascular injury (carotid or vertebral artery injury from blunt trauma) is easy to miss because it's often asymptomatic at presentation — screening criteria exist specifically because waiting for a stroke to declare itself is too late. Any ONE risk factor present is generally enough to trigger CT angiography.",
+  "whyThisMatters": "BCVI causes a stroke in a meaningful fraction of untreated cases, often with a delay of hours to days after the initial trauma — by the time neurologic symptoms appear, the window for effective antithrombotic therapy to prevent that stroke may have already closed. Systematic screening based on injury pattern (not waiting for symptoms) is what catches these injuries while they're still treatable.",
+  "clinicalTakeaway": "In a blunt trauma patient, actively screen for BCVI risk factors rather than waiting for neurologic symptoms — any ONE positive risk factor is generally enough to obtain CT angiography of the neck. If BCVI is found, antithrombotic therapy (typically antiplatelet or anticoagulant, per grade and institutional protocol) is the mainstay of stroke prevention, started as soon as the bleeding risk from associated injuries allows.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why screen instead of wait for symptoms"
+    },
+    {
+      "type": "text",
+      "text": "A dissected or injured carotid/vertebral artery is frequently clinically silent at the time of the initial trauma evaluation. Neurologic symptoms (when they occur) can be delayed by hours to days as a dissection flap propagates or a thrombus embolizes — by then, the patient has already had (or is having) a preventable stroke. The Denver and Memphis screening criteria exist to identify patients at meaningfully elevated risk BEFORE that happens, based on injury pattern and mechanism rather than symptoms."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Common risk-factor categories that trigger CTA screening"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Cervical spine fracture patterns, particularly high-risk patterns: fractures involving C1-C3, fractures extending into or through the transverse foramen, and cervical subluxation.",
+        "Basilar skull fracture involving the carotid canal.",
+        "LeFort II or III facial fracture pattern.",
+        "Severe traumatic brain injury or diffuse axonal injury (classically cited with a GCS threshold, though the exact cutoff has varied across criteria revisions — confirm your institution's current number).",
+        "Near-hanging with evidence of anoxic brain injury.",
+        "Seatbelt sign or other significant soft-tissue injury to the neck (e.g. a 'clothesline'-type injury), particularly with significant swelling or any alteration in level of consciousness.",
+        "Thoracic vascular injury or significant blunt chest trauma with a mechanism transmitting substantial force to the neck (part of the expanded 2012 Denver criteria)."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "This list captures the RECURRING categories across Denver/Memphis screening criteria, not a verbatim reproduction of either institution's exact, currently-in-use checklist — Denver alone has been revised at least three times (1996 original, 2005 narrowing of which cervical-spine injuries qualify, 2012 expansion to include additional craniofacial/brain/thoracic injuries), and Memphis differs from Denver in scope. Confirm the exact criteria set and imaging pathway your trauma center actually uses rather than treating this list as the final word."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "If BCVI is found"
+    },
+    {
+      "type": "text",
+      "text": "Management centers on antithrombotic therapy (antiplatelet or anticoagulant, chosen based on injury grade and bleeding risk from associated injuries) to prevent the stroke the screening was designed to catch — started as soon as concurrent injuries (solid organ injury, traumatic brain injury, other active bleeding) allow. Grading systems (e.g. the Biffl grading scale, I-V) stratify injury severity and inform the specific antithrombotic choice and follow-up imaging interval; that level of detail is beyond this screening-focused reference — involve trauma surgery and, where available, neurointerventional/vascular consultation for grade-specific management."
+    }
+  ],
+  "related": ["trauma-primary-survey", "acute-ischemic-stroke", "anticoagulation-reversal"],
+  "buildNote": "Deliberately scoped as a screening-awareness reference rather than an exhaustive, falsely-precise criteria checklist — the fracture-pattern specifics (exact GCS cutoffs, precise cervical-level combinations) vary enough across Denver revisions and the separate Memphis criteria that presenting one fixed number as definitive would risk being institution-inappropriate. The clinical message that matters most (screen based on pattern, don't wait for symptoms; any one factor is enough to scan) is accurate and stable across all versions."
+}

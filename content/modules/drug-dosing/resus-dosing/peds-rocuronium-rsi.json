@@ -1,21 +1,52 @@
 {
   "id": "peds-rocuronium-rsi",
   "section": "Drug & Dosing Cards",
-  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
   "title": "Rocuronium — Pediatric RSI Paralysis",
-  "settingEmphasis": ["ed", "icu", "prehospital"],
-  "audience": ["peds"],
-  "aliases": ["peds rocuronium", "RSI paralytic", "non-depolarizing paralytic"],
-  "tags": ["RSI", "rapid sequence intubation", "paralytic", "neuromuscular blockade", "peds"],
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
+  "audience": [
+    "peds"
+  ],
+  "aliases": [
+    "peds rocuronium",
+    "RSI paralytic",
+    "non-depolarizing paralytic"
+  ],
+  "tags": [
+    "RSI",
+    "rapid sequence intubation",
+    "paralytic",
+    "neuromuscular blockade",
+    "peds"
+  ],
   "contentType": "drug-card",
-  "content_version": 2,
-  "last_reviewed": "2026-09-14",
+  "content_version": 3,
+  "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-14",
   "review_tier": 1,
-  "sources": ["Drug_Dosing_Peds_Weight_Based_Spec.md"],
+  "sources": [
+    "Drug_Dosing_Peds_Weight_Based_Spec.md"
+  ],
   "changelog": [
-    { "version": 2, "date": "2026-09-14", "change": "Fixed 'sugammadec' → 'sugammadex' typo; cross-linked the new peds-succinylcholine-rsi card." },
-    { "version": 1, "date": "2026-08-31", "change": "Initial entry." }
+    {
+      "version": 3,
+      "date": "2026-09-15",
+      "change": "Content audit Batch 4 housekeeping: category renamed from '...(Adult + Peds)' to '...Pediatric Resuscitation Dosing' — every card in this category was peds-only, the old name was misleading. No dosing content changed."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-14",
+      "change": "Fixed 'sugammadec' → 'sugammadex' typo; cross-linked the new peds-succinylcholine-rsi card."
+    },
+    {
+      "version": 1,
+      "date": "2026-08-31",
+      "change": "Initial entry."
+    }
   ],
   "purpose": "Non-depolarizing paralytic for RSI. Default when succinylcholine is contraindicated; reversible with sugammadex.",
   "population": "peds",
@@ -24,11 +55,17 @@
     {
       "indication": "RSI paralysis",
       "route": "IV / IO",
-      "rule": { "perKg": 1, "perKgHigh": 1.2, "unit": "mg" },
+      "rule": {
+        "perKg": 1,
+        "perKgHigh": 1.2,
+        "unit": "mg"
+      },
       "notes": "Onset ~45-60 s at RSI dose, duration 30-60 min. No fasciculations, no hyperkalemia risk."
     }
   ],
-  "contraindications": ["Known rocuronium / vecuronium anaphylaxis"],
+  "contraindications": [
+    "Known rocuronium / vecuronium anaphylaxis"
+  ],
   "reversal": "Sugammadex 16 mg/kg for immediate reversal of an RSI dose.",
   "buildNote": "Succinylcholine is the faster-onset/shorter-duration depolarizing alternative — see peds-succinylcholine-rsi for its dosing and contraindications (hyperkalemia risk, myopathy, MH history)."
 }

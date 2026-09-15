@@ -1,15 +1,31 @@
 {
   "id": "peds-midazolam-status",
   "section": "Drug & Dosing Cards",
-  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
   "title": "Midazolam — Pediatric Status Epilepticus",
-  "settingEmphasis": ["ed", "icu", "prehospital"],
-  "audience": ["peds"],
-  "aliases": ["peds midazolam", "Versed seizure dose", "IM midazolam seizure"],
-  "tags": ["status epilepticus", "seizure", "benzodiazepine", "no IV access", "peds"],
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
+  "audience": [
+    "peds"
+  ],
+  "aliases": [
+    "peds midazolam",
+    "Versed seizure dose",
+    "IM midazolam seizure"
+  ],
+  "tags": [
+    "status epilepticus",
+    "seizure",
+    "benzodiazepine",
+    "no IV access",
+    "peds"
+  ],
   "contentType": "drug-card",
-  "content_version": 3,
-  "last_reviewed": "2026-09-02",
+  "content_version": 4,
+  "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
   "sources": [
@@ -17,11 +33,30 @@
     "Silbergleit R et al. RAMPART. NEJM 2012;366:591-600",
     "Othman AA et al. Ket-Mid RCT. Pediatr Neurol 2025 (investigational combination)"
   ],
-  "flags": ["institution-specific"],
+  "flags": [
+    "institution-specific"
+  ],
   "changelog": [
-    { "version": 3, "date": "2026-09-02", "change": "Added a note on the Ket-Mid RCT (ketamine 2 mg/kg + midazolam 0.2 mg/kg as first-line for pediatric GCSE) — single-centre, 'promising not practice-changing'." },
-    { "version": 2, "date": "2026-09-01", "change": "Tier 1 verification: IM 0.2 mg/kg / max 10 mg confirmed (RAMPART: 10 mg ≥ 40 kg, 5 mg for 13-40 kg). IV and intranasal per-dose caps vary by pathway (many cap at 5 mg) — flagged institution-specific; added the RAMPART weight bands." },
-    { "version": 1, "date": "2026-08-31", "change": "Initial entry." }
+    {
+      "version": 4,
+      "date": "2026-09-15",
+      "change": "Content audit Batch 4 housekeeping: category renamed from '...(Adult + Peds)' to '...Pediatric Resuscitation Dosing' — every card in this category was peds-only, the old name was misleading. No dosing content changed."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-02",
+      "change": "Added a note on the Ket-Mid RCT (ketamine 2 mg/kg + midazolam 0.2 mg/kg as first-line for pediatric GCSE) — single-centre, 'promising not practice-changing'."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-01",
+      "change": "Tier 1 verification: IM 0.2 mg/kg / max 10 mg confirmed (RAMPART: 10 mg ≥ 40 kg, 5 mg for 13-40 kg). IV and intranasal per-dose caps vary by pathway (many cap at 5 mg) — flagged institution-specific; added the RAMPART weight bands."
+    },
+    {
+      "version": 1,
+      "date": "2026-08-31",
+      "change": "Initial entry."
+    }
   ],
   "purpose": "First-line benzodiazepine for pediatric status epilepticus when there is no IV access — IM or intranasal.",
   "population": "peds",
@@ -30,13 +65,25 @@
     {
       "indication": "No IV access — IM or intranasal",
       "route": "IM / IN",
-      "rule": { "perKg": 0.2, "unit": "mg", "maxDose": 10, "maxDoseUnit": "mg" },
+      "rule": {
+        "perKg": 0.2,
+        "unit": "mg",
+        "maxDose": 10,
+        "maxDoseUnit": "mg"
+      },
       "notes": "IM is at least as effective as IV lorazepam for time-to-seizure-cessation when access has to be established (RAMPART). RAMPART fixed doses: 10 mg for ≥ 40 kg, 5 mg for 13-40 kg. Some peds pathways cap intranasal at 5 mg/dose — confirm locally."
     },
     {
       "indication": "IV access present",
       "route": "IV",
-      "rule": { "perKg": 0.1, "perKgHigh": 0.2, "unit": "mg", "maxDose": 10, "maxDoseUnit": "mg", "repeat": "May repeat once" },
+      "rule": {
+        "perKg": 0.1,
+        "perKgHigh": 0.2,
+        "unit": "mg",
+        "maxDose": 10,
+        "maxDoseUnit": "mg",
+        "repeat": "May repeat once"
+      },
       "notes": "Many pediatric pathways cap IV midazolam at 5 mg/dose; AES 2016 does not list IV midazolam as a first-line agent. Confirm the per-dose cap against your local status-epilepticus pathway."
     }
   ],

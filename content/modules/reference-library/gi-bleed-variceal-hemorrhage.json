@@ -1,0 +1,79 @@
+{
+  "id": "gi-bleed-variceal-hemorrhage",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "GI Bleed & Variceal Hemorrhage Management",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["upper GI bleed", "variceal bleeding", "octreotide GI bleed", "balloon tamponade", "TIPS bridge"],
+  "tags": ["GI bleed", "variceal hemorrhage", "cirrhosis", "octreotide", "balloon tamponade", "ED", "ICU"],
+  "keywords": ["restrictive transfusion target hemoglobin 7, do not overtransfuse in variceal bleeding specifically since it can raise portal pressure and worsen bleeding", "variceal bleed gets octreotide plus antibiotics plus endoscopic banding within 12 hours, all three not just one", "antibiotics in cirrhotic GI bleed reduce mortality independent of the bleeding source", "balloon tamponade is a temporizing bridge only, not definitive, for refractory bleeding awaiting TIPS or endoscopy"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Garcia-Tsao G, et al. AASLD Practice Guidance: Portal hypertensive bleeding in cirrhosis.",
+    "de Franchis R, et al. Baveno VII consensus workshop on portal hypertension.",
+    "Restrictive transfusion threshold (Villanueva NEJM 2013) and the antibiotic-mortality-benefit point WebSearch-verified before writing — this module builds on the scoring tools (Glasgow-Blatchford etc.) and blood-products/anticoagulation-reversal content already in Kairos rather than duplicating them."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4). The risk-stratification scores (Glasgow-Blatchford, Rockall, etc.) already exist as calculators in Kairos — this module is the narrative MANAGEMENT companion those calculators lacked, per the audit's own framing of the gap." }
+  ],
+  "summary": "Non-variceal and variceal upper GI bleeds are managed differently in several important ways — variceal bleeding specifically needs three concurrent therapies (not sequential trial-and-error), a restrictive transfusion target that's easy to over-shoot out of habit, and balloon tamponade is a bridge, never a destination.",
+  "whyThisMatters": "In known or suspected variceal hemorrhage, transfusing to a normal hemoglobin can actively worsen bleeding by raising portal pressure — the instinct to 'give more blood to a bleeding patient' is exactly backwards here, and it's one of the more counterintuitive, easy-to-get-wrong management points in emergency/critical care.",
+  "clinicalTakeaway": "For suspected variceal hemorrhage in a cirrhotic patient: start octreotide AND prophylactic antibiotics immediately, and arrange endoscopy within 12 hours — all three, not just one. Transfuse to a restrictive target (Hgb ~7 g/dL, slightly higher with active hemodynamic instability) rather than chasing a normal number. If bleeding is refractory and endoscopy/TIPS isn't immediately available, balloon tamponade is a temporizing bridge only.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Initial resuscitation — restrictive transfusion, and why it matters more here"
+    },
+    {
+      "type": "text",
+      "text": "Restrictive transfusion (target hemoglobin ~7 g/dL, higher if actively unstable or with significant cardiac disease) is standard for upper GI bleeding generally, but the rationale is STRONGER in variceal bleeding specifically: over-transfusing raises intravascular volume and portal pressure, which can directly worsen ongoing variceal bleeding — this isn't just 'avoid unnecessary transfusion,' it's 'over-transfusion can actively make this specific bleed worse.' Resist the reflex to transfuse toward a normal hemoglobin in a hemodynamically stable variceal bleeder."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Suspected variceal hemorrhage — three concurrent therapies"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Octreotide: bolus followed by continuous infusion, started as soon as variceal bleeding is suspected (known cirrhosis, stigmata of portal hypertension, or a bleed severe enough to warrant treating empirically pending endoscopy) — reduces splanchnic blood flow and portal pressure.",
+        "Prophylactic antibiotics: started at the same time, not held pending evidence of infection. This is a genuinely important, sometimes-overlooked point — antibiotic prophylaxis in cirrhotic patients with GI bleeding reduces MORTALITY, independent of whether an infection is clinically apparent at presentation, likely by preventing the bacterial translocation and subsequent infection/rebleeding cascade that complicates cirrhotic GI bleeds.",
+        "Endoscopy within 12 hours for both diagnosis and therapy (band ligation for esophageal varices; other techniques for gastric varices) — this is a hard target in the variceal-bleeding literature, not a loose guideline."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "All three — octreotide, antibiotics, and timely endoscopy — should be started/arranged together in suspected variceal hemorrhage, not tried one at a time. Withholding antibiotics until 'proof' of infection, or delaying octreotide until endoscopy confirms varices, both give up real mortality benefit for no good reason."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Refractory bleeding — balloon tamponade is a bridge, not a destination"
+    },
+    {
+      "type": "text",
+      "text": "For life-threatening variceal hemorrhage refractory to the above, uncontrolled by endoscopy, or when endoscopy/interventional radiology isn't immediately available, balloon tamponade (e.g. a Sengstaken-Blakemore or Minnesota tube) can temporarily control bleeding by direct compression. This is explicitly temporizing — rebleeding is common once deflated, and prolonged inflation risks esophageal/gastric mucosal ischemia and perforation. Use it as a bridge to definitive therapy (repeat endoscopy, or TIPS — transjugular intrahepatic portosystemic shunt — for genuinely refractory bleeding), with a clear plan for what happens next, not as an endpoint."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Non-variceal upper GI bleed — where the approach diverges"
+    },
+    {
+      "type": "list",
+      "items": [
+        "High-dose PPI (e.g. an IV bolus followed by continuous infusion or high-dose intermittent dosing) rather than octreotide — the mechanism (reducing acid to stabilize a clot over an ulcer) is different from the portal-pressure-lowering goal of octreotide, and octreotide has no established role here.",
+        "No mandatory antibiotic-prophylaxis analog exists for non-variceal bleeding the way it does for variceal bleeding in cirrhotics — the mortality-benefit data specifically concerns the cirrhotic/variceal population.",
+        "Endoscopy timing is generally within 24 hours (versus the tighter 12-hour variceal target), risk-stratified by clinical severity (existing risk scores like Glasgow-Blatchford help triage who needs it soonest)."
+      ]
+    }
+  ],
+  "related": ["blood-products", "anticoagulation-reversal", "meld-na", "iv-fluids"],
+  "buildNote": "Deliberately narrative/management-focused, complementing the existing risk-stratification calculators (Glasgow-Blatchford, Rockall, etc. — check Calculators/GI-Renal-Metabolic) rather than restating their scoring logic. The restrictive-transfusion-worsens-variceal-bleeding mechanism is stated explicitly since it's the single most counterintuitive, most likely-to-be-gotten-wrong point in this content."
+}

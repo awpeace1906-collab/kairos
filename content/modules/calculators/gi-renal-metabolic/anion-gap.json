@@ -5,12 +5,14 @@
   "title": "Anion Gap",
   "settingEmphasis": ["ed", "icu"],
   "aliases": ["AG", "serum anion gap", "delta gap"],
+  "tags": ["metabolic acidosis", "anion gap", "electrolytes", "ED", "ICU"],
   "contentType": "calculator",
-  "content_version": 1,
-  "last_reviewed": "2026-08-31",
+  "content_version": 2,
+  "last_reviewed": "2026-09-15",
   "review_tier": "stable",
   "sources": ["Standard clinical chemistry; Emmett M, Narins RG. Medicine (Baltimore) 1977"],
   "changelog": [
+    { "version": 2, "date": "2026-09-15", "change": "Content audit Batch 4 housekeeping: added missing tags[] field. No scoring content changed." },
     { "version": 1, "date": "2026-08-31", "change": "Initial entry. Stable formula — no scheduled review." }
   ],
   "engine": "formula",

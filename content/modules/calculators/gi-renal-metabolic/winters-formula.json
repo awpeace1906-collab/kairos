@@ -1,0 +1,36 @@
+{
+  "id": "winters-formula",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "Winter's Formula (Expected Respiratory Compensation)",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["Winters formula", "expected PaCO2", "respiratory compensation for metabolic acidosis"],
+  "tags": ["acid-base", "metabolic acidosis", "ABG", "compensation", "ED", "ICU"],
+  "keywords": ["expected PaCO2 equals 1.5 times bicarbonate plus 8 plus or minus 2", "measured PaCO2 above expected means concurrent respiratory acidosis, inadequate compensation", "measured PaCO2 below expected means concurrent respiratory alkalosis, overcompensation or a separate primary process"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": "stable",
+  "sources": [
+    "Narins RG, Emmett M. Simple and mixed acid-base disorders: a practical approach. Medicine (Baltimore). 1980;59(3):161-187 (Winter's formula, named for the original unpublished work by Dr. Winters)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4). Formula WebSearch-verified: expected PaCO2 = 1.5 × HCO3 + 8 ± 2." }
+  ],
+  "engine": "formula",
+  "purpose": "Check whether a patient's respiratory compensation for a metabolic acidosis is appropriate — the formula predicts the PaCO2 that FULLY-compensated pure metabolic acidosis should produce, so you can tell whether a second, independent acid-base process is also present.",
+  "notes": "This formula only applies to a PRIMARY metabolic acidosis. Compare the patient's MEASURED PaCO2 to the formula's expected range: if measured PaCO2 is HIGHER than expected, a concurrent respiratory acidosis is also present (compensation is inadequate — consider a superimposed respiratory problem, e.g. sedation, fatigue, primary lung disease). If measured PaCO2 is LOWER than expected, a concurrent respiratory alkalosis is present (overcompensation, or an independent process driving hyperventilation — e.g. sepsis, salicylate toxicity, pain, anxiety). If measured PaCO2 falls within the expected ± 2 range, the picture is consistent with a SIMPLE (uncomplicated) metabolic acidosis.",
+  "inputs": [
+    { "key": "hco3", "label": "Serum bicarbonate (HCO3)", "type": "number", "unit": "mmol/L", "min": 2, "max": 40 }
+  ],
+  "formulas": [
+    { "key": "expectedLow", "label": "Expected PaCO2 — lower bound", "expression": "(1.5 * hco3) + 6", "unit": "mmHg", "precision": 1 },
+    { "key": "expectedCenter", "label": "Expected PaCO2 — center estimate", "expression": "(1.5 * hco3) + 8", "unit": "mmHg", "precision": 1 },
+    { "key": "expectedHigh", "label": "Expected PaCO2 — upper bound", "expression": "(1.5 * hco3) + 10", "unit": "mmHg", "precision": 1 }
+  ],
+  "interpretation": [
+    { "forKey": "expectedCenter", "label": "Compare the patient's MEASURED PaCO2 to this expected range (center ± 2, i.e. the lower/upper bounds above).", "detail": "Measured PaCO2 within the range → simple metabolic acidosis. Above the range → concurrent respiratory acidosis. Below the range → concurrent respiratory alkalosis.", "severity": "info" }
+  ],
+  "buildNote": "engine: formula, computing all three points of the ±2 range as separate named outputs since the app has no way to display 'a range' from a single formula result — the interpretation text then tells the user how to use all three together against their own measured PaCO2, which isn't itself an input to this calculator (comparing two independently-obtained numbers, not computing a single verdict)."
+}

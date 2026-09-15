@@ -1,0 +1,93 @@
+{
+  "id": "electrical-injury-lightning",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Electrical Injury & Lightning Strike",
+  "settingEmphasis": ["ed", "icu", "prehospital"],
+  "aliases": ["electrocution", "high voltage injury", "low voltage injury", "lightning injury", "reverse triage"],
+  "tags": ["electrical injury", "lightning", "rhabdomyolysis", "compartment syndrome", "arrhythmia", "ED", "ICU"],
+  "keywords": ["high voltage over 1000V, low voltage under 1000V, household 110-240V is low voltage", "assume rhabdomyolysis if CK in the thousands", "cardiac monitoring roughly 12 hours for high voltage even if asymptomatic, 24h if loss of consciousness occurred", "lightning uses reverse triage — resuscitate the apparently dead first, since lightning arrest is often reversible"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Electrical Injuries. StatPearls.",
+    "Voltage classification, rhabdomyolysis/compartment syndrome risk, and cardiac-monitoring duration WebSearch-verified before writing."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4)." }
+  ],
+  "summary": "High-voltage and low-voltage electrical injury are managed differently, and lightning is different again — its 'reverse triage' rule inverts the usual mass-casualty approach.",
+  "whyThisMatters": "The internal damage from a high-voltage injury is frequently far worse than the visible entry/exit burns suggest — current follows the path of least resistance through deep tissue, causing rhabdomyolysis, compartment syndrome, and organ injury that a skin exam alone will underestimate; meanwhile lightning causes a very specific, often-reversible cardiorespiratory arrest pattern that changes who gets resuscitated first in a multi-victim strike.",
+  "clinicalTakeaway": "Classify the injury as high voltage (> 1000V) or low voltage (< 1000V) — high voltage needs aggressive rhabdomyolysis/compartment-syndrome screening and roughly 12 hours of cardiac monitoring even if asymptomatic (24h if there was loss of consciousness); a truly asymptomatic low-voltage exposure with a normal ECG and exam can often be discharged. For a lightning strike with multiple victims, resuscitate the apparently dead FIRST — this is the one scenario where reverse triage is correct.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Voltage classification"
+    },
+    {
+      "type": "table",
+      "columns": ["", "Low voltage", "High voltage"],
+      "rows": [
+        ["Threshold", "< 1,000 V", "≥ 1,000 V"],
+        ["Typical source", "Household current (110-120V North America, 220-240V elsewhere)", "Power lines, industrial equipment"],
+        ["Mortality", "Low (roughly < 1-3%)", "Substantially higher (cited as roughly 5-30%)"],
+        ["Deep tissue injury risk", "Low", "High — internal damage often exceeds what the skin burns suggest"]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "Current (amperage), not voltage, is the physiologically important variable for injury severity — but voltage remains the practical classification used clinically because amperage usually isn't known/measurable at the bedside."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "High-voltage injury — what to actively look for"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Rhabdomyolysis: check CK and urine myoglobin/dipstick on arrival and trend it — if CK is in the thousands, assume rhabdomyolysis is present and treat with aggressive IV fluid resuscitation targeting good urine output.",
+        "Compartment syndrome: deep muscle injury from current passage can cause compartment syndrome even without dramatic external burns — have a low threshold for compartment pressure checks/fasciotomy evaluation in a limb the current passed through, especially with disproportionate pain, tense swelling, or a distal neurovascular deficit.",
+        "Cardiac arrhythmia: cardiac monitoring for roughly 12 hours is reasonable even in an asymptomatic patient after significant high-voltage exposure; extend to 24 hours if there was any loss of consciousness.",
+        "Entry/exit wound burns are often small and unimpressive relative to the internal injury — do not let a benign-looking skin wound reassure you about the likely extent of deep tissue damage."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Low-voltage injury — when it's reasonably safe to discharge"
+    },
+    {
+      "type": "text",
+      "text": "A patient with a clearly low-voltage exposure, a normal ECG, no loss of consciousness, no significant burn, and an unremarkable exam can generally be safely discharged with routine follow-up — extensive workup for a trivial household-current exposure in an asymptomatic patient is usually not necessary."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Lightning strike — a genuinely different mechanism"
+    },
+    {
+      "type": "text",
+      "text": "Lightning delivers an extremely brief, extremely high-voltage direct-current-like discharge that tends to flash over the body surface rather than passing deeply through it the way a sustained electrical-line contact does — internal organ/deep-tissue injury is often less severe than high-voltage industrial injury despite the enormous energy involved. The characteristic and most dangerous effect is cardiorespiratory: lightning can cause immediate cardiac asystole (which often self-converts back to a perfusing rhythm due to the heart's inherent automaticity) AND a separate, longer-lasting respiratory arrest from brainstem/medullary stunning — if the respiratory arrest isn't supported with ventilation during that window, the patient develops a SECONDARY hypoxic cardiac arrest that is much less likely to be reversible."
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Reverse triage for a multi-victim lightning strike: resuscitate patients who appear DEAD (in cardiopulmonary arrest) FIRST, ahead of those who are alive but injured. This inverts the usual mass-casualty triage logic and is correct specifically because of the mechanism above — the 'dead' lightning victims often have a reversible arrest if ventilated/resuscitated promptly, while triaging them last (as usual MCI logic would) means losing patients who could have been saved."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Look for lightning-specific skin findings (Lichtenberg figures — a fern-like/feathering pattern, pathognomonic but transient, fades over hours) and check for tympanic membrane rupture (common) and cataracts (can develop later).",
+        "Cardiac monitoring and a full trauma evaluation (blast-effect trauma, falls) are still indicated even without obvious burns."
+      ]
+    }
+  ],
+  "related": ["traumatic-cardiac-arrest", "shock-classification", "aki-staging-rrt"],
+  "buildNote": "Reverse-triage framing for lightning is standard wilderness/disaster-medicine teaching, presented here with the mechanistic reasoning (respiratory arrest outlasting cardiac arrest) rather than as a bare rule, so it's understood rather than just memorized."
+}

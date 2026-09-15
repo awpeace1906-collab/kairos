@@ -1,7 +1,7 @@
 {
   "id": "ventilator-liberation-weaning",
   "section": "Reference Library",
-  "category": "ICU / Critical Care",
+  "category": "Critical Care",
   "title": "Ventilator Liberation & Extubation",
   "settingEmphasis": [
     "icu",
@@ -45,8 +45,8 @@
     "reintubation 10 to 15 percent mortality delayed reintubation worse"
   ],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-09",
+  "content_version": 3,
+  "last_reviewed": "2026-09-15",
   "next_review_due": "2027-03-09",
   "review_tier": 2,
   "sources": [
@@ -63,6 +63,11 @@
     "Paschold BS, Braeuer BLP, Santer P, et al. High vs low FiO2 for anaesthetic washout and extubation and postoperative atelectasis: a randomised controlled trial. Br J Anaesth. 2026;137(2):591-600"
   ],
   "changelog": [
+    {
+      "version": 3,
+      "date": "2026-09-15",
+      "change": "Content audit Batch 4 housekeeping: category corrected from 'ICU / Critical Care' (not a valid Reference Library category) to 'Critical Care'. No clinical content changed."
+    },
     {
       "version": 2,
       "date": "2026-09-09",

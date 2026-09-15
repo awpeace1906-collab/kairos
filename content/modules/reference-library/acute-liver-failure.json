@@ -1,0 +1,83 @@
+{
+  "id": "acute-liver-failure",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Acute Liver Failure",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["fulminant hepatic failure", "King's College Criteria", "acetaminophen liver failure"],
+  "tags": ["acute liver failure", "King's College Criteria", "hepatic encephalopathy", "cerebral edema", "coagulopathy", "ED", "ICU"],
+  "keywords": ["acetaminophen King's College pH under 7.3 alone is sufficient, OR the triad of INR over 6.5 creatinine over 3.4 grade III-IV encephalopathy", "non-acetaminophen INR over 6.5 alone OR 3 of 5 minor criteria", "N-acetylcysteine even for non-acetaminophen causes", "do not prophylactically correct coagulopathy, it's a prognostic marker not a bleeding-risk number to chase", "cerebral edema is the feared complication of high-grade encephalopathy"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "O'Grady JG, Alexander GJ, Hayllar KM, Williams R. Early indicators of prognosis in fulminant hepatic failure. Gastroenterology. 1989;97(2):439-445 (original King's College Criteria).",
+    "AASLD guidance recommends the King's College Criteria for transplant-listing decisions in acute liver failure.",
+    "Exact criteria thresholds WebSearch-verified against multiple contemporary sources before writing."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4)." }
+  ],
+  "summary": "Acute liver failure is coagulopathy plus encephalopathy in a patient with no prior liver disease and a short illness course — the King's College Criteria (different thresholds for acetaminophen vs. other causes) drive transplant-center referral timing, and a few genuine counterintuitive management points (NAC beyond acetaminophen, not correcting coagulopathy prophylactically) matter.",
+  "whyThisMatters": "Acute liver failure can deteriorate from 'sick but talking' to cerebral edema and herniation within hours to days, and the decision to transfer to a transplant center needs to happen BEFORE that deterioration — not after, when transport itself becomes dangerous — so recognizing King's-College-positive criteria early, and referring on that basis rather than waiting for the patient to look sicker, is the actionable point.",
+  "clinicalTakeaway": "Any patient with new coagulopathy (INR ≥ 1.5) AND any degree of encephalopathy, with no prior liver disease and illness onset within the past 26 weeks, has acute liver failure until proven otherwise — call your transplant center early. For acetaminophen-induced ALF, arterial pH < 7.3 (after adequate fluid resuscitation) ALONE is sufficient to trigger transplant-center referral, without needing to wait for the full triad. Give N-acetylcysteine regardless of etiology — it has a mortality benefit even in non-acetaminophen ALF, not just the classic overdose indication.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Definition"
+    },
+    {
+      "type": "text",
+      "text": "Acute liver failure = new-onset coagulopathy (INR ≥ 1.5) PLUS any degree of hepatic encephalopathy, in a patient with NO pre-existing liver disease and an illness duration of less than 26 weeks. The distinction from decompensated CHRONIC liver disease (cirrhosis) matters — this reference is about the acute, previously-healthy-liver presentation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "King's College Criteria — when to call the transplant center"
+    },
+    {
+      "type": "text",
+      "text": "Two separate criteria sets, because acetaminophen-induced and non-acetaminophen-induced ALF behave differently prognostically. Meeting criteria means the patient has a poor predicted survival WITHOUT transplant and should prompt urgent transplant-center referral — it doesn't mean transplant is certain or immediate, but the conversation needs to start now, not later."
+    },
+    {
+      "type": "table",
+      "columns": ["Etiology", "Criteria (meeting EITHER pathway is sufficient)"],
+      "rows": [
+        [
+          "Acetaminophen",
+          "Arterial pH < 7.3 (after adequate fluid resuscitation) ALONE — sufficient by itself. \n OR the triad: INR > 6.5 (PT > 100s) AND creatinine > 3.4 mg/dL AND grade III-IV hepatic encephalopathy."
+        ],
+        [
+          "Non-acetaminophen",
+          "INR > 6.5 ALONE, regardless of encephalopathy grade. \n OR any 3 of these 5: age < 10 or > 40 years; etiology is indeterminate or drug-induced (non-acetaminophen); jaundice-to-encephalopathy interval > 7 days; INR > 3.5; bilirubin > 17.4 mg/dL (300 µmol/L)."
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "The pH < 7.3 acetaminophen criterion, and the INR > 6.5 non-acetaminophen criterion, are each SINGLE criteria sufficient on their own — you don't need the rest of the triad/5-factor list if either of those specific numbers is met."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Management — including a few counterintuitive points"
+    },
+    {
+      "type": "list",
+      "items": [
+        "N-acetylcysteine (NAC) for ALL acute liver failure, not just acetaminophen-induced — evidence supports a mortality/transplant-free-survival benefit even in non-acetaminophen ALF, likely via improved hepatic microcirculation and antioxidant effect, not just as a specific antidote.",
+        "Do NOT prophylactically correct the coagulopathy (FFP, vitamin K) in the absence of active bleeding or before an invasive procedure — the elevated INR is a PROGNOSTIC MARKER the team needs to track, and correcting it masks the trend that's actually informing transplant urgency and clinical trajectory. Reserve correction for active bleeding or immediately before a genuinely necessary invasive procedure.",
+        "Monitor closely for cerebral edema as encephalopathy grade rises (grade III-IV in particular) — this is the feared, potentially fatal complication. Head-of-bed elevation, avoiding hypotonic fluids, and treating triggers (agitation, seizures, hypercapnia) are first-line; hypertonic saline or mannitol and ICP monitoring are next-level interventions per neurocritical care/transplant-center guidance once cerebral edema is a real concern.",
+        "Correct hypoglycemia aggressively and check it frequently — impaired gluconeogenesis makes ALF patients prone to it, and it can itself worsen encephalopathy/mimic its progression.",
+        "Treat/prevent infection proactively — ALF patients are functionally immunocompromised and infection is a major driver of deterioration and a contraindication to transplant if uncontrolled at the time of listing.",
+        "Avoid sedation where possible, or use short-acting agents titrated carefully — sedation can mask a genuine decline in mental status that the team needs to be tracking."
+      ]
+    }
+  ],
+  "related": ["apap-nac-dosing", "meld-na", "aki-staging-rrt", "altered-mental-status"],
+  "buildNote": "Cross-links to apap-nac-dosing for the actual NAC dosing regimen (this module deliberately doesn't restate per-kg dosing, just the 'give it regardless of etiology' management point) and meld-na for the chronic-liver-disease-adjacent scoring tool this module is explicitly NOT about."
+}

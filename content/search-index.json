@@ -481,7 +481,15 @@
       "title": "Corrected QT Interval (QTc)",
       "section": "Calculators",
       "category": "Cardiovascular / Chest Pain / Arrhythmia",
-      "tags": [],
+      "tags": [
+        "QTc",
+        "arrhythmia",
+        "ECG",
+        "drug-induced QT prolongation",
+        "ED",
+        "ICU",
+        "OR"
+      ],
       "keywords": [
         "QTc",
         "Bazett",
@@ -526,7 +534,14 @@
       "title": "GRACE ACS Risk / Mortality Calculator",
       "section": "Calculators",
       "category": "Cardiovascular / Chest Pain / Arrhythmia",
-      "tags": [],
+      "tags": [
+        "ACS",
+        "GRACE",
+        "risk stratification",
+        "mortality",
+        "ED",
+        "ICU"
+      ],
       "keywords": [
         "GRACE",
         "GRACE 2.0",
@@ -590,7 +605,14 @@
       "title": "Killip Classification",
       "section": "Calculators",
       "category": "Cardiovascular / Chest Pain / Arrhythmia",
-      "tags": [],
+      "tags": [
+        "acute MI",
+        "heart failure",
+        "Killip",
+        "mortality",
+        "ED",
+        "ICU"
+      ],
       "keywords": [
         "Killip",
         "Killip class"
@@ -803,7 +825,13 @@
       "title": "Anion Gap",
       "section": "Calculators",
       "category": "GI / Renal / Metabolic",
-      "tags": [],
+      "tags": [
+        "metabolic acidosis",
+        "anion gap",
+        "electrolytes",
+        "ED",
+        "ICU"
+      ],
       "keywords": [
         "AG",
         "serum anion gap",
@@ -1158,6 +1186,34 @@
       ]
     },
     {
+      "id": "winters-formula",
+      "title": "Winter's Formula (Expected Respiratory Compensation)",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "acid-base",
+        "metabolic acidosis",
+        "ABG",
+        "compensation",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "expected PaCO2 equals 1.5 times bicarbonate plus 8 plus or minus 2",
+        "measured PaCO2 above expected means concurrent respiratory acidosis, inadequate compensation",
+        "measured PaCO2 below expected means concurrent respiratory alkalosis, overcompensation or a separate primary process",
+        "Winters formula",
+        "expected PaCO2",
+        "respiratory compensation for metabolic acidosis"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/winters-formula",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "four-ts-hit",
       "title": "4Ts Score for HIT",
       "section": "Calculators",
@@ -1179,6 +1235,46 @@
       "settingEmphasis": [
         "icu",
         "ed"
+      ]
+    },
+    {
+      "id": "apache-ii",
+      "title": "APACHE II Score",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "ICU",
+        "mortality",
+        "severity of illness",
+        "prognosis",
+        "critical care"
+      ],
+      "keywords": [
+        "acute physiology score",
+        "age points",
+        "chronic health points",
+        "temperature",
+        "MAP",
+        "heart rate",
+        "respiratory rate",
+        "oxygenation",
+        "arterial pH",
+        "sodium",
+        "potassium",
+        "creatinine",
+        "hematocrit",
+        "WBC",
+        "GCS",
+        "worst value in first 24 hours",
+        "APACHE II",
+        "acute physiology and chronic health evaluation",
+        "ICU mortality score",
+        "ICU severity of illness"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/apache-ii",
+      "settingEmphasis": [
+        "icu"
       ]
     },
     {
@@ -1206,6 +1302,32 @@
       ],
       "contentType": "calculator",
       "route": "/calculators/icu-critical-care/ards-berlin",
+      "settingEmphasis": [
+        "icu"
+      ]
+    },
+    {
+      "id": "braden-scale",
+      "title": "Braden Scale (Pressure Injury Risk)",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "pressure injury",
+        "pressure ulcer",
+        "skin breakdown",
+        "nursing assessment",
+        "ICU"
+      ],
+      "keywords": [
+        "6 subscales, 5 scored 1-4 and friction-shear scored 1-3, total range 6-23",
+        "lower score means higher risk, opposite direction from most scores",
+        "17 or higher no measurable risk, 15-16 low, 13-14 moderate, 10-12 high, 9 or below very high",
+        "pressure ulcer risk",
+        "pressure injury risk assessment",
+        "Braden score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/braden-scale",
       "settingEmphasis": [
         "icu"
       ]
@@ -2157,46 +2279,6 @@
       ]
     },
     {
-      "id": "apache-ii",
-      "title": "APACHE II Score",
-      "section": "Calculators",
-      "category": "Sepsis / Infectious Disease",
-      "tags": [
-        "ICU",
-        "mortality",
-        "severity of illness",
-        "prognosis",
-        "critical care"
-      ],
-      "keywords": [
-        "acute physiology score",
-        "age points",
-        "chronic health points",
-        "temperature",
-        "MAP",
-        "heart rate",
-        "respiratory rate",
-        "oxygenation",
-        "arterial pH",
-        "sodium",
-        "potassium",
-        "creatinine",
-        "hematocrit",
-        "WBC",
-        "GCS",
-        "worst value in first 24 hours",
-        "APACHE II",
-        "acute physiology and chronic health evaluation",
-        "ICU mortality score",
-        "ICU severity of illness"
-      ],
-      "contentType": "calculator",
-      "route": "/calculators/sepsis-infectious-disease/apache-ii",
-      "settingEmphasis": [
-        "icu"
-      ]
-    },
-    {
       "id": "centor-mcisaac",
       "title": "Centor Score / McIsaac Modification",
       "section": "Calculators",
@@ -2221,6 +2303,36 @@
       ]
     },
     {
+      "id": "charlson-comorbidity-index",
+      "title": "Charlson Comorbidity Index",
+      "section": "Calculators",
+      "category": "Sepsis / Infectious Disease",
+      "tags": [
+        "comorbidity",
+        "prognosis",
+        "mortality",
+        "risk adjustment",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "1 point conditions include MI CHF PVD CVA dementia COPD",
+        "2 point conditions include hemiplegia moderate-severe CKD diabetes with end-organ damage any tumor leukemia lymphoma",
+        "3 points moderate-severe liver disease",
+        "6 points metastatic solid tumor or AIDS",
+        "age adjustment adds a point per decade over 40 up to 4",
+        "CCI",
+        "age-adjusted Charlson",
+        "comorbidity burden score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/sepsis-infectious-disease/charlson-comorbidity-index",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "lrinec",
       "title": "LRINEC Score",
       "section": "Calculators",
@@ -2238,6 +2350,36 @@
       ],
       "contentType": "calculator",
       "route": "/calculators/sepsis-infectious-disease/lrinec",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "mascc-score",
+      "title": "MASCC Risk Index (Febrile Neutropenia)",
+      "section": "Calculators",
+      "category": "Sepsis / Infectious Disease",
+      "tags": [
+        "febrile neutropenia",
+        "MASCC",
+        "oncology",
+        "risk stratification",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "score 21 or higher is low risk, potentially eligible for outpatient oral therapy",
+        "burden of illness none or mild is 5 points, moderate is 3, severe is 0",
+        "no hypotension is 5 points",
+        "max score 26",
+        "does not replace clinical judgment or institutional outpatient-eligibility protocol",
+        "Multinational Association for Supportive Care in Cancer risk index",
+        "febrile neutropenia risk score",
+        "outpatient febrile neutropenia eligibility"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/sepsis-infectious-disease/mascc-score",
       "settingEmphasis": [
         "ed",
         "icu"
@@ -2937,6 +3079,34 @@
       ],
       "audience": [
         "peds"
+      ]
+    },
+    {
+      "id": "baux-score",
+      "title": "Revised Baux Score (Burn Mortality)",
+      "section": "Calculators",
+      "category": "Trauma",
+      "tags": [
+        "burns",
+        "TBSA",
+        "mortality",
+        "trauma",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "age plus percent TBSA plus 17 if inhalation injury",
+        "score over 140 considered unsurvivable, sharp mortality rise above 110",
+        "not a triage or withdrawal-of-care tool by itself",
+        "Baux",
+        "burn mortality prediction",
+        "revised Baux score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/trauma/baux-score",
+      "settingEmphasis": [
+        "ed",
+        "icu"
       ]
     },
     {
@@ -4488,7 +4658,7 @@
       "id": "peds-adenosine-svt",
       "title": "Adenosine — Pediatric Stable SVT",
       "section": "Drug & Dosing Cards",
-      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
       "tags": [
         "SVT",
         "supraventricular tachycardia",
@@ -4501,7 +4671,7 @@
         "SVT dose"
       ],
       "contentType": "drug-card",
-      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-adenosine-svt",
+      "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-adenosine-svt",
       "settingEmphasis": [
         "ed",
         "icu"
@@ -4514,7 +4684,7 @@
       "id": "peds-amiodarone-arrest",
       "title": "Amiodarone — Pediatric VF / Pulseless VT",
       "section": "Drug & Dosing Cards",
-      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
       "tags": [
         "VF",
         "pulseless VT",
@@ -4528,7 +4698,7 @@
         "shock-refractory VF dose"
       ],
       "contentType": "drug-card",
-      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-amiodarone-arrest",
+      "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-amiodarone-arrest",
       "settingEmphasis": [
         "ed",
         "prehospital",
@@ -4542,7 +4712,7 @@
       "id": "peds-atropine-bradycardia",
       "title": "Atropine — Pediatric (bradycardia / RSI premedication)",
       "section": "Drug & Dosing Cards",
-      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
       "tags": [
         "bradycardia",
         "vagal",
@@ -4556,7 +4726,7 @@
         "vagal bradycardia dose"
       ],
       "contentType": "drug-card",
-      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-atropine-bradycardia",
+      "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-atropine-bradycardia",
       "settingEmphasis": [
         "ed",
         "icu",
@@ -4570,7 +4740,7 @@
       "id": "peds-epinephrine-arrest",
       "title": "Epinephrine — Pediatric Cardiac Arrest",
       "section": "Drug & Dosing Cards",
-      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
       "tags": [],
       "keywords": [
         "epi",
@@ -4578,7 +4748,7 @@
         "peds code dose"
       ],
       "contentType": "drug-card",
-      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-epinephrine-arrest",
+      "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-epinephrine-arrest",
       "settingEmphasis": [
         "ed",
         "prehospital",
@@ -4592,7 +4762,7 @@
       "id": "peds-fosphenytoin-status",
       "title": "Fosphenytoin — Pediatric Status Epilepticus (Second-Line)",
       "section": "Drug & Dosing Cards",
-      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
       "tags": [
         "status epilepticus",
         "seizure",
@@ -4607,7 +4777,7 @@
         "second-line status epilepticus"
       ],
       "contentType": "drug-card",
-      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-fosphenytoin-status",
+      "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-fosphenytoin-status",
       "settingEmphasis": [
         "ed",
         "icu"
@@ -4620,7 +4790,7 @@
       "id": "peds-ketamine-rsi",
       "title": "Ketamine — Pediatric RSI Induction",
       "section": "Drug & Dosing Cards",
-      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
       "tags": [
         "RSI",
         "rapid sequence intubation",
@@ -4635,7 +4805,7 @@
         "ketamine intubation dose"
       ],
       "contentType": "drug-card",
-      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-ketamine-rsi",
+      "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-ketamine-rsi",
       "settingEmphasis": [
         "ed",
         "icu",
@@ -4649,7 +4819,7 @@
       "id": "peds-levetiracetam-status",
       "title": "Levetiracetam — Pediatric Status Epilepticus (Second-Line)",
       "section": "Drug & Dosing Cards",
-      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
       "tags": [
         "status epilepticus",
         "seizure",
@@ -4663,7 +4833,7 @@
         "second-line status epilepticus"
       ],
       "contentType": "drug-card",
-      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-levetiracetam-status",
+      "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-levetiracetam-status",
       "settingEmphasis": [
         "ed",
         "icu"
@@ -4676,7 +4846,7 @@
       "id": "peds-lorazepam-status",
       "title": "Lorazepam — Pediatric Status Epilepticus",
       "section": "Drug & Dosing Cards",
-      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
       "tags": [
         "status epilepticus",
         "seizure",
@@ -4690,7 +4860,7 @@
         "first-line status epilepticus"
       ],
       "contentType": "drug-card",
-      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-lorazepam-status",
+      "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-lorazepam-status",
       "settingEmphasis": [
         "ed",
         "icu",
@@ -4704,7 +4874,7 @@
       "id": "peds-midazolam-status",
       "title": "Midazolam — Pediatric Status Epilepticus",
       "section": "Drug & Dosing Cards",
-      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
       "tags": [
         "status epilepticus",
         "seizure",
@@ -4718,7 +4888,7 @@
         "IM midazolam seizure"
       ],
       "contentType": "drug-card",
-      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-midazolam-status",
+      "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-midazolam-status",
       "settingEmphasis": [
         "ed",
         "icu",
@@ -4732,7 +4902,7 @@
       "id": "peds-rocuronium-rsi",
       "title": "Rocuronium — Pediatric RSI Paralysis",
       "section": "Drug & Dosing Cards",
-      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
       "tags": [
         "RSI",
         "rapid sequence intubation",
@@ -4746,7 +4916,7 @@
         "non-depolarizing paralytic"
       ],
       "contentType": "drug-card",
-      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-rocuronium-rsi",
+      "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-rocuronium-rsi",
       "settingEmphasis": [
         "ed",
         "icu",
@@ -4760,7 +4930,7 @@
       "id": "peds-succinylcholine-rsi",
       "title": "Succinylcholine — Pediatric RSI Paralysis",
       "section": "Drug & Dosing Cards",
-      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
       "tags": [
         "RSI",
         "rapid sequence intubation",
@@ -4775,7 +4945,7 @@
         "suxamethonium"
       ],
       "contentType": "drug-card",
-      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-succinylcholine-rsi",
+      "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-succinylcholine-rsi",
       "settingEmphasis": [
         "ed",
         "icu",
@@ -4789,7 +4959,7 @@
       "id": "peds-valproate-status",
       "title": "Valproate — Pediatric Status Epilepticus (Second-Line)",
       "section": "Drug & Dosing Cards",
-      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
       "tags": [
         "status epilepticus",
         "seizure",
@@ -4804,7 +4974,7 @@
         "second-line status epilepticus"
       ],
       "contentType": "drug-card",
-      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-valproate-status",
+      "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-valproate-status",
       "settingEmphasis": [
         "ed",
         "icu"
@@ -7012,6 +7182,67 @@
       ]
     },
     {
+      "id": "acute-liver-failure",
+      "title": "Acute Liver Failure",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "acute liver failure",
+        "King's College Criteria",
+        "hepatic encephalopathy",
+        "cerebral edema",
+        "coagulopathy",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "acetaminophen King's College pH under 7.3 alone is sufficient, OR the triad of INR over 6.5 creatinine over 3.4 grade III-IV encephalopathy",
+        "non-acetaminophen INR over 6.5 alone OR 3 of 5 minor criteria",
+        "N-acetylcysteine even for non-acetaminophen causes",
+        "do not prophylactically correct coagulopathy, it's a prognostic marker not a bleeding-risk number to chase",
+        "cerebral edema is the feared complication of high-grade encephalopathy",
+        "fulminant hepatic failure",
+        "King's College Criteria",
+        "acetaminophen liver failure"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/acute-liver-failure",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "adrenal-crisis",
+      "title": "Adrenal Crisis",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "adrenal crisis",
+        "adrenal insufficiency",
+        "hydrocortisone",
+        "endocrine emergency",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "treat before confirming the diagnosis, do not wait for a cortisol level",
+        "hydrocortisone 100mg IV bolus then 200mg per 24 hours",
+        "1 liter isotonic saline in the first hour then further fluids as needed",
+        "check and correct hypoglycemia hyponatremia hyperkalemia",
+        "any patient on chronic steroids or with known adrenal insufficiency who is acutely unwell needs stress-dose steroids",
+        "acute adrenal insufficiency",
+        "Addisonian crisis",
+        "adrenal insufficiency decompensation"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/adrenal-crisis",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "aki-staging-rrt",
       "title": "AKI Staging & Renal Replacement Therapy",
       "section": "Reference Library",
@@ -7085,6 +7316,40 @@
       ],
       "audience": [
         "adult"
+      ]
+    },
+    {
+      "id": "advanced-ards-ventilation",
+      "title": "Beyond Lung-Protective: APRV, Recruitment, Intraoperative PEEP",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "ARDS",
+        "APRV",
+        "recruitment maneuver",
+        "PEEP titration",
+        "intraoperative ventilation",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "APRV Phigh Plow Thigh Tlow",
+        "Tlow terminate at 50-75% peak expiratory flow",
+        "Plow 0 does not mean zero PEEP",
+        "ART trial harm PEEP 45 peak 60",
+        "staircase recruitment cap 40-50",
+        "decremental PEEP trial",
+        "IMPROVE low tidal volume PROVHILO no benefit high PEEP RM",
+        "APRV setup",
+        "airway pressure release ventilation",
+        "BiVent",
+        "recruitment maneuver ART trial",
+        "intraoperative protective ventilation IMPROVE PROVHILO"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/advanced-ards-ventilation",
+      "settingEmphasis": [
+        "icu"
       ]
     },
     {
@@ -7414,6 +7679,103 @@
       "route": "/reference-library/critical-care/ecmo-support",
       "settingEmphasis": [
         "icu"
+      ]
+    },
+    {
+      "id": "electrical-injury-lightning",
+      "title": "Electrical Injury & Lightning Strike",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "electrical injury",
+        "lightning",
+        "rhabdomyolysis",
+        "compartment syndrome",
+        "arrhythmia",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "high voltage over 1000V, low voltage under 1000V, household 110-240V is low voltage",
+        "assume rhabdomyolysis if CK in the thousands",
+        "cardiac monitoring roughly 12 hours for high voltage even if asymptomatic, 24h if loss of consciousness occurred",
+        "lightning uses reverse triage — resuscitate the apparently dead first, since lightning arrest is often reversible",
+        "electrocution",
+        "high voltage injury",
+        "low voltage injury",
+        "lightning injury",
+        "reverse triage"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/electrical-injury-lightning",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
+      ]
+    },
+    {
+      "id": "gi-bleed-variceal-hemorrhage",
+      "title": "GI Bleed & Variceal Hemorrhage Management",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "GI bleed",
+        "variceal hemorrhage",
+        "cirrhosis",
+        "octreotide",
+        "balloon tamponade",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "restrictive transfusion target hemoglobin 7, do not overtransfuse in variceal bleeding specifically since it can raise portal pressure and worsen bleeding",
+        "variceal bleed gets octreotide plus antibiotics plus endoscopic banding within 12 hours, all three not just one",
+        "antibiotics in cirrhotic GI bleed reduce mortality independent of the bleeding source",
+        "balloon tamponade is a temporizing bridge only, not definitive, for refractory bleeding awaiting TIPS or endoscopy",
+        "upper GI bleed",
+        "variceal bleeding",
+        "octreotide GI bleed",
+        "balloon tamponade",
+        "TIPS bridge"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/gi-bleed-variceal-hemorrhage",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "heat-stroke",
+      "title": "Heat Stroke",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "heat stroke",
+        "hyperthermia",
+        "cooling",
+        "rhabdomyolysis",
+        "ED",
+        "ICU",
+        "prehospital"
+      ],
+      "keywords": [
+        "cooling speed is the single biggest predictor of survival, target core temp under 39C as fast as possible",
+        "cold water immersion is fastest for exertional heat stroke in a young healthy patient",
+        "evaporative cooling for classic heat stroke in an elderly or comorbid patient",
+        "avoid antipyretics, they don't work on this mechanism and can harm a coagulopathic patient",
+        "check for rhabdomyolysis and DIC",
+        "exertional heat stroke",
+        "classic heat stroke",
+        "heat illness"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/heat-stroke",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
       ]
     },
     {
@@ -7812,6 +8174,38 @@
       ]
     },
     {
+      "id": "sickle-cell-crisis",
+      "title": "Sickle Cell Crisis",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "sickle cell disease",
+        "vaso-occlusive crisis",
+        "acute chest syndrome",
+        "priapism",
+        "exchange transfusion",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "believe the patient's pain, individualized pain plans exist for a reason",
+        "acute chest syndrome is a new pulmonary infiltrate plus one of fever chest pain hypoxia tachypnea in a known sickle cell patient",
+        "exchange transfusion indications stroke moderate-severe acute chest syndrome multiorgan dysfunction",
+        "target HbS under 30 percent for exchange",
+        "do not push hemoglobin above 10 with simple transfusion, viscosity risk",
+        "vaso-occlusive crisis",
+        "acute chest syndrome",
+        "sickle cell pain crisis",
+        "SCD exchange transfusion"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/sickle-cell-crisis",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "sodium-disorders",
       "title": "Sodium Disorders — Hypo- & Hypernatremia",
       "section": "Reference Library",
@@ -7895,6 +8289,37 @@
         "ed",
         "icu",
         "prehospital"
+      ]
+    },
+    {
+      "id": "thyroid-storm-myxedema-coma",
+      "title": "Thyroid Storm & Myxedema Coma",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "thyroid storm",
+        "myxedema coma",
+        "endocrine emergency",
+        "hyperthyroidism",
+        "hypothyroidism",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "give antithyroid drug BEFORE iodine, at least an hour before, or iodine feeds more hormone synthesis",
+        "PTU 500-1000mg load then 250mg q4h, propranolol 60-80mg q4h, hydrocortisone 300mg load then 100mg q8h",
+        "myxedema coma IV levothyroxine plus stress-dose steroids given together, never levothyroxine alone",
+        "both are clinical diagnoses treated before confirmatory labs return",
+        "thyrotoxic crisis",
+        "myxedema crisis",
+        "Burch-Wartofsky",
+        "severe hypothyroidism decompensation"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/thyroid-storm-myxedema-coma",
+      "settingEmphasis": [
+        "ed",
+        "icu"
       ]
     },
     {
@@ -8033,44 +8458,10 @@
       ]
     },
     {
-      "id": "advanced-ards-ventilation",
-      "title": "Beyond Lung-Protective: APRV, Recruitment, Intraoperative PEEP",
-      "section": "Reference Library",
-      "category": "ICU / Critical Care",
-      "tags": [
-        "ARDS",
-        "APRV",
-        "recruitment maneuver",
-        "PEEP titration",
-        "intraoperative ventilation",
-        "ICU",
-        "OR"
-      ],
-      "keywords": [
-        "APRV Phigh Plow Thigh Tlow",
-        "Tlow terminate at 50-75% peak expiratory flow",
-        "Plow 0 does not mean zero PEEP",
-        "ART trial harm PEEP 45 peak 60",
-        "staircase recruitment cap 40-50",
-        "decremental PEEP trial",
-        "IMPROVE low tidal volume PROVHILO no benefit high PEEP RM",
-        "APRV setup",
-        "airway pressure release ventilation",
-        "BiVent",
-        "recruitment maneuver ART trial",
-        "intraoperative protective ventilation IMPROVE PROVHILO"
-      ],
-      "contentType": "reference",
-      "route": "/reference-library/icu-critical-care/advanced-ards-ventilation",
-      "settingEmphasis": [
-        "icu"
-      ]
-    },
-    {
       "id": "ventilator-liberation-weaning",
       "title": "Ventilator Liberation & Extubation",
       "section": "Reference Library",
-      "category": "ICU / Critical Care",
+      "category": "Critical Care",
       "tags": [
         "ventilator weaning",
         "extubation",
@@ -8104,7 +8495,7 @@
         "SAT SBT pairing"
       ],
       "contentType": "reference",
-      "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning",
+      "route": "/reference-library/critical-care/ventilator-liberation-weaning",
       "settingEmphasis": [
         "icu",
         "ed"
@@ -8273,6 +8664,37 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/infectious-disease-immunization/empiric-antibiotics-outpatient",
+      "settingEmphasis": [
+        "ed"
+      ]
+    },
+    {
+      "id": "hiv-post-exposure-prophylaxis",
+      "title": "HIV Post-Exposure Prophylaxis (PEP)",
+      "section": "Reference Library",
+      "category": "Infectious Disease & Immunization",
+      "tags": [
+        "HIV",
+        "PEP",
+        "post-exposure prophylaxis",
+        "needlestick",
+        "occupational exposure",
+        "ED"
+      ],
+      "keywords": [
+        "start within 72 hours, ideally within 24, every hour matters",
+        "2025 CDC update preferred regimen bictegravir emtricitabine tenofovir alafenamide single tablet",
+        "28 day course",
+        "follow-up HIV testing now concludes at 12 weeks with a 4th generation assay, not 6 months",
+        "source patient testing negative means stop PEP",
+        "PEP",
+        "nPEP",
+        "occupational HIV exposure",
+        "needlestick HIV prophylaxis",
+        "HIV nPEP"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/infectious-disease-immunization/hiv-post-exposure-prophylaxis",
       "settingEmphasis": [
         "ed"
       ]
@@ -9316,6 +9738,36 @@
       ]
     },
     {
+      "id": "perioperative-anaphylaxis",
+      "title": "Perioperative Anaphylaxis",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "anaphylaxis",
+        "perioperative",
+        "NMBA",
+        "chlorhexidine",
+        "tryptase",
+        "OR",
+        "anesthesia"
+      ],
+      "keywords": [
+        "NMBA is the single leading cause, roughly 38 percent, followed by antibiotics, patent blue dye, chlorhexidine",
+        "sugammadex is an increasingly recognized cause in its own right, not just a rocuronium-allergy issue",
+        "draw acute tryptase 30 minutes to 2 hours after onset, draw a baseline at least 24 hours after full resolution",
+        "a draped, sedated, paralyzed patient can't report itching or throat tightness — hypotension and bronchospasm are often the first and only clues",
+        "intraoperative anaphylaxis",
+        "anesthesia anaphylaxis",
+        "NMBA allergy",
+        "chlorhexidine allergy"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/perioperative-anaphylaxis",
+      "settingEmphasis": [
+        "or"
+      ]
+    },
+    {
       "id": "perioperative-glycemic-management",
       "title": "Perioperative Hyperglycemia",
       "section": "Reference Library",
@@ -9794,6 +10246,42 @@
       ]
     },
     {
+      "id": "blunt-cerebrovascular-injury-screening",
+      "title": "Blunt Cerebrovascular Injury (BCVI) Screening",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "BCVI",
+        "Denver criteria",
+        "trauma",
+        "carotid injury",
+        "vertebral artery injury",
+        "CTA",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "any ONE risk factor present is enough to trigger CTA screening",
+        "C1-C3 cervical spine fracture or fracture through the transverse foramen",
+        "basilar skull fracture with carotid canal involvement",
+        "LeFort II or III fracture",
+        "TBI with GCS under 6 or diffuse axonal injury",
+        "near-hanging with anoxic injury",
+        "seatbelt sign or soft tissue neck injury with significant swelling or altered consciousness",
+        "check your trauma center's own protocol — the exact criteria set and imaging pathway varies by institution",
+        "Denver criteria",
+        "Memphis criteria",
+        "BCVI",
+        "blunt carotid vertebral injury"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/blunt-cerebrovascular-injury-screening",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "decision-rules-cspine-ct-head",
       "title": "C-Spine & CT Head Decision Rules",
       "section": "Reference Library",
@@ -9917,6 +10405,38 @@
         "prehospital",
         "ed",
         "icu"
+      ]
+    },
+    {
+      "id": "drowning",
+      "title": "Drowning",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [
+        "drowning",
+        "submersion",
+        "resuscitation",
+        "pulmonary edema",
+        "ED",
+        "ICU",
+        "prehospital"
+      ],
+      "keywords": [
+        "drowning is a process not an outcome, the term 'near-drowning' is retired terminology",
+        "ventilation-first resuscitation not chest-compression-first, hypoxia is the primary insult",
+        "asymptomatic patients can still deteriorate over several hours, observe before clearing",
+        "no routine C-spine immobilization unless the mechanism actually suggests trauma",
+        "no benefit shown for prophylactic antibiotics or steroids",
+        "near-drowning",
+        "submersion injury",
+        "water rescue"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/drowning",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
       ]
     },
     {

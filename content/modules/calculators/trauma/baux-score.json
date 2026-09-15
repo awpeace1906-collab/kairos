@@ -1,0 +1,48 @@
+{
+  "id": "baux-score",
+  "section": "Calculators",
+  "category": "Trauma",
+  "title": "Revised Baux Score (Burn Mortality)",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["Baux", "burn mortality prediction", "revised Baux score"],
+  "tags": ["burns", "TBSA", "mortality", "trauma", "ED", "ICU"],
+  "keywords": ["age plus percent TBSA plus 17 if inhalation injury", "score over 140 considered unsurvivable, sharp mortality rise above 110", "not a triage or withdrawal-of-care tool by itself"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Osler T, Glance LG, Hosmer DW. Simplified estimates of the probability of death after burn injuries: extending and updating the Baux score. J Trauma. 2010;68(3):690-697 (the revised Baux score, adding the inhalation-injury term).",
+    "Baux S. Contribution à l'étude du traitement local des brûlures thermiques étendues. 1961 (original score: age + %TBSA)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3/4 trauma calculators). Formula WebSearch-verified: revised Baux = age + %TBSA + 17 (if inhalation injury); score > 140 widely cited as unsurvivable, with a sharp mortality rise above ~110." }
+  ],
+  "engine": "formula",
+  "purpose": "A simple, fast mortality-risk estimate for a burn patient, combining age, burn size, and inhalation injury into a single number — useful for framing prognosis conversations and resource-allocation discussions, not a substitute for the full clinical picture.",
+  "notes": "This is a crude, easily-computed estimate, not a precise probability — its value is speed and simplicity at the bedside, particularly in mass-casualty/limited-resource settings where a fuller risk model isn't practical. Use it to inform, not replace, a full assessment (age extremes, comorbidities, and associated trauma all matter beyond what this formula captures) — the original literature itself notes reduced accuracy at the extremes of age.",
+  "inputs": [
+    { "key": "age", "label": "Age", "type": "number", "unit": "years", "min": 0, "max": 110 },
+    { "key": "tbsa", "label": "% total body surface area burned (2nd degree and deeper)", "type": "number", "unit": "%", "min": 0, "max": 100 },
+    {
+      "key": "inhalation",
+      "label": "Inhalation injury",
+      "type": "select",
+      "options": [
+        { "label": "No", "value": 0 },
+        { "label": "Yes", "value": 17 }
+      ]
+    }
+  ],
+  "formulas": [
+    { "key": "baux", "label": "Revised Baux score", "expression": "age + tbsa + inhalation", "precision": 0 }
+  ],
+  "interpretation": [
+    { "forKey": "baux", "min": 0, "max": 79, "label": "< 80", "detail": "Lower predicted mortality risk on this crude score — still requires full burn-center-level assessment and management.", "severity": "low" },
+    { "forKey": "baux", "min": 80, "max": 109, "label": "80-109", "detail": "Intermediate risk range.", "severity": "moderate" },
+    { "forKey": "baux", "min": 110, "max": 139, "label": "110-139", "detail": "A range where mortality rises sharply — high risk.", "severity": "high" },
+    { "forKey": "baux", "min": 140, "max": 300, "label": "≥ 140", "detail": "Widely cited as an approximate threshold above which survival becomes very unlikely — this number alone should never drive a unilateral withdrawal-of-care decision; it's one input to a much larger conversation involving the full clinical picture, the burn team, and the patient/family.", "severity": "critical" }
+  ],
+  "buildNote": "engine: formula, deliberately simple (age + tbsa + a select-encoded inhalation-injury add-on, matching the sex-factor-as-select pattern used throughout this session for encoding a binary modifier into a formula-engine input). Companion to the new pediatric-burn-management module (Lund-Browder %TBSA estimation) and the existing parkland-formula card (fluid resuscitation) — together these three cover sizing, fluids, and prognosis for a burn patient. The >140 'unsurvivable' framing is stated carefully with an explicit caution against using it as a unilateral decision tool, given the ethical weight of that number."
+}

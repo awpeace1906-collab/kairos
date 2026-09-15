@@ -1,0 +1,76 @@
+{
+  "id": "drowning",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "Drowning",
+  "settingEmphasis": ["ed", "icu", "prehospital"],
+  "aliases": ["near-drowning", "submersion injury", "water rescue"],
+  "tags": ["drowning", "submersion", "resuscitation", "pulmonary edema", "ED", "ICU", "prehospital"],
+  "keywords": ["drowning is a process not an outcome, the term 'near-drowning' is retired terminology", "ventilation-first resuscitation not chest-compression-first, hypoxia is the primary insult", "asymptomatic patients can still deteriorate over several hours, observe before clearing", "no routine C-spine immobilization unless the mechanism actually suggests trauma", "no benefit shown for prophylactic antibiotics or steroids"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Idris AH, et al. 2003 Utstein-style guidelines for uniform reporting of data from drowning: the 'Utstein Drowning' recommendations. Circulation (drowning definition/terminology).",
+    "Szpilman D, et al. Drowning. N Engl J Med. 2012;366(22):2102-2110.",
+    "Schmidt AC, et al. Wilderness Medical Society Clinical Practice Guidelines for the Treatment and Prevention of Drowning."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4)." }
+  ],
+  "summary": "Modern drowning terminology, resuscitation, and disposition differ from older teaching in a few specific ways: 'near-drowning' is retired, ventilation is prioritized early given the hypoxic mechanism, routine C-spine immobilization isn't indicated absent a trauma mechanism, and even an asymptomatic patient needs a period of observation before being cleared.",
+  "whyThisMatters": "Drowning kills primarily through hypoxia, not the aspirated water volume or its salt/fresh-water composition (an old distinction that turned out not to meaningfully change management) — understanding that reframes both resuscitation priorities (ventilation matters early, not just compressions) and why a patient who looks fine on arrival can still deteriorate hours later as pulmonary injury evolves.",
+  "clinicalTakeaway": "Use 'drowning' with an outcome descriptor (fatal / non-fatal), not 'near-drowning' or 'dry/wet drowning' — those terms are retired. In cardiac arrest from drowning, prioritize early ventilation (rescue breaths) rather than a compressions-only approach, since hypoxia is the primary insult. Don't routinely immobilize the C-spine unless the mechanism actually suggests trauma (diving into shallow water, a fall, a watercraft collision) — routine immobilization in every water-rescue patient is outdated and can complicate airway management for no benefit. Observe even an asymptomatic patient for several hours before clearing them, since pulmonary injury can evolve after an initially reassuring presentation.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Terminology — 'drowning' is a process, not just an outcome"
+    },
+    {
+      "type": "text",
+      "text": "Current consensus terminology defines drowning as the process of experiencing respiratory impairment from submersion/immersion in liquid — with an outcome of death, morbidity, or no morbidity, rather than separate named syndromes. Retired terms that should NOT be used: 'near-drowning,' 'dry drowning,' 'wet drowning,' 'secondary drowning,' 'active/passive drowning.' Use 'drowning' with a plain outcome descriptor (fatal drowning / non-fatal drowning) instead — this isn't just terminology pedantry, it reflects that the old sub-classifications didn't actually change management and caused confusion (particularly 'dry drowning'/'secondary drowning,' terms that fueled anxiety about delayed deterioration days after a seemingly fine water exposure, which is not how this actually works)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Resuscitation — hypoxia is the primary insult"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Ventilation matters early and specifically — unlike a primary cardiac arrest, drowning arrest is driven by hypoxia, so rescue breaths (even before compressions, in a lay-rescuer or lifeguard context) are part of standard drowning-specific resuscitation teaching, distinct from the compressions-first emphasis of general adult BLS for a presumed cardiac cause.",
+        "The old fresh-water-vs-salt-water distinction (different theoretical electrolyte/hemodynamic effects) does NOT meaningfully change clinical management — treat the hypoxia and pulmonary injury regardless of water type; don't let this distract from resuscitation.",
+        "The aspirated volume itself is often small even in a fatal drowning — laryngospasm limits aspiration in many cases — so 'how much water did they swallow' is generally not a useful clinical question.",
+        "Standard ACLS/PALS algorithms apply once a organized resuscitation is underway; the drowning-specific point is mainly about the EARLY, pre-hospital ventilation-first emphasis."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "C-spine — don't reflexively immobilize everyone"
+    },
+    {
+      "type": "text",
+      "text": "Routine cervical spine immobilization for every water-rescue patient is OUTDATED — the incidence of clinically significant C-spine injury in drowning without a concerning mechanism is low, and immobilization can meaningfully complicate airway management and delay resuscitation for a hypoxic patient who needs urgent ventilation. Reserve C-spine precautions for a mechanism that actually suggests trauma: diving into shallow/unknown-depth water, a witnessed fall, a watercraft/personal-watercraft collision, or signs of trauma on exam. A drowning victim pulled from open water with no trauma mechanism generally does not need routine spinal immobilization."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Disposition — even an asymptomatic patient needs observation"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Pulmonary injury (from aspiration, surfactant washout, and the inflammatory response) can evolve over hours — a patient who looks and feels fine immediately after rescue can still develop respiratory symptoms, hypoxia, or a new infiltrate several hours later.",
+        "A period of observation (commonly cited in the range of 4-8 hours, with continuous pulse oximetry and reassessment) is appropriate even for an asymptomatic patient with a normal initial exam, before clearing them for discharge — the exact duration varies by source/institution, but the principle (don't clear immediately on a reassuring initial snapshot) is well-supported.",
+        "A patient who remains completely asymptomatic with normal vitals, normal oxygen saturation, and a normal lung exam throughout the observation period can generally be safely discharged.",
+        "No evidence supports prophylactic antibiotics or corticosteroids in drowning — reserve antibiotics for evidence of actual infection (aspiration pneumonia, grossly contaminated water source with a compatible clinical course), not as a routine prophylactic measure."
+      ]
+    }
+  ],
+  "related": ["acute-dyspnea-niv", "traumatic-cardiac-arrest", "peds-cardiac-arrest"],
+  "buildNote": "Terminology section included deliberately even though it's not a treatment decision — 'near-drowning'/'dry drowning' are still common in lay and even some clinical usage, and clearing up why they were retired (and what the actually-supported observation-period concept is, versus the folklore version of 'secondary drowning days later') has real clinical communication value."
+}

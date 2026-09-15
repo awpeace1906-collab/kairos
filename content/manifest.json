@@ -166,8 +166,8 @@
       "next_review_due": "2026-12-15"
     },
     "calculators/cardiovascular/grace-acs": {
-      "content_version": 1,
-      "hash": "8ecf2cdce997b429",
+      "content_version": 2,
+      "hash": "9938663da2ea5d3d",
       "path": "modules/calculators/cardiovascular/grace-acs.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -193,8 +193,8 @@
       "next_review_due": "2026-12-01"
     },
     "calculators/cardiovascular/killip-classification": {
-      "content_version": 1,
-      "hash": "eb3851eaf4db59e4",
+      "content_version": 2,
+      "hash": "45c87b24ccdd4fc8",
       "path": "modules/calculators/cardiovascular/killip-classification.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -211,8 +211,8 @@
       "next_review_due": "2027-09-02"
     },
     "calculators/cardiovascular/qtc": {
-      "content_version": 2,
-      "hash": "3d602e22e58211ae",
+      "content_version": 3,
+      "hash": "cc0e4b1f3f1c4d51",
       "path": "modules/calculators/cardiovascular/qtc.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -274,8 +274,8 @@
       "next_review_due": "2027-03-07"
     },
     "calculators/gi-renal-metabolic/anion-gap": {
-      "content_version": 1,
-      "hash": "255ca97cd1490b6a",
+      "content_version": 2,
+      "hash": "0455a04dd540be86",
       "path": "modules/calculators/gi-renal-metabolic/anion-gap.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -387,6 +387,24 @@
       "review_tier": 1,
       "next_review_due": "2027-09-02"
     },
+    "calculators/gi-renal-metabolic/winters-formula": {
+      "content_version": 1,
+      "hash": "adfe850eeb3f5e8f",
+      "path": "modules/calculators/gi-renal-metabolic/winters-formula.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": "stable",
+      "next_review_due": "2026-12-15"
+    },
+    "calculators/icu-critical-care/apache-ii": {
+      "content_version": 2,
+      "hash": "59a8d10c1b73bde9",
+      "path": "modules/calculators/icu-critical-care/apache-ii.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-09-02"
+    },
     "calculators/icu-critical-care/ards-berlin": {
       "content_version": 1,
       "hash": "c953b613597e8ce0",
@@ -395,6 +413,15 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2027-09-02"
+    },
+    "calculators/icu-critical-care/braden-scale": {
+      "content_version": 1,
+      "hash": "d34dd50d9bccde0e",
+      "path": "modules/calculators/icu-critical-care/braden-scale.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "calculators/icu-critical-care/cam-icu": {
       "content_version": 1,
@@ -711,15 +738,6 @@
       "review_tier": 1,
       "next_review_due": "2027-09-02"
     },
-    "calculators/sepsis-id/apache-ii": {
-      "content_version": 1,
-      "hash": "0c3e2de1500686ad",
-      "path": "modules/calculators/sepsis-id/apache-ii.json",
-      "contentType": "calculator",
-      "section": "Calculators",
-      "review_tier": 1,
-      "next_review_due": "2027-09-02"
-    },
     "calculators/sepsis-id/centor-mcisaac": {
       "content_version": 1,
       "hash": "b130097c80c3d346",
@@ -729,6 +747,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-01"
     },
+    "calculators/sepsis-id/charlson-comorbidity-index": {
+      "content_version": 1,
+      "hash": "72e374855ce35c40",
+      "path": "modules/calculators/sepsis-id/charlson-comorbidity-index.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "calculators/sepsis-id/lrinec": {
       "content_version": 1,
       "hash": "e1bbe98f4c08b29a",
@@ -737,6 +764,15 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2026-11-30"
+    },
+    "calculators/sepsis-id/mascc-score": {
+      "content_version": 1,
+      "hash": "f601ddb2e271052c",
+      "path": "modules/calculators/sepsis-id/mascc-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "calculators/sepsis-id/psi-port": {
       "content_version": 2,
@@ -853,6 +889,15 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2027-09-02"
+    },
+    "calculators/trauma/baux-score": {
+      "content_version": 1,
+      "hash": "c412b22fc50e4a65",
+      "path": "modules/calculators/trauma/baux-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "calculators/trauma/canadian-cspine": {
       "content_version": 1,
@@ -1571,18 +1616,9 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
-    "drug-dosing/peds-epinephrine-arrest": {
-      "content_version": 2,
-      "hash": "cbe694ed6223675b",
-      "path": "modules/drug-dosing/peds-epinephrine-arrest.json",
-      "contentType": "drug-card",
-      "section": "Drug & Dosing Cards",
-      "review_tier": 1,
-      "next_review_due": "2026-11-30"
-    },
     "drug-dosing/resus-dosing/peds-adenosine-svt": {
-      "content_version": 2,
-      "hash": "47940a95ca95835a",
+      "content_version": 3,
+      "hash": "82cf1fbc16620268",
       "path": "modules/drug-dosing/resus-dosing/peds-adenosine-svt.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1590,8 +1626,8 @@
       "next_review_due": "2026-11-30"
     },
     "drug-dosing/resus-dosing/peds-amiodarone-arrest": {
-      "content_version": 3,
-      "hash": "5e17bf074d7ce7f9",
+      "content_version": 4,
+      "hash": "a99b6ca5524f9d5a",
       "path": "modules/drug-dosing/resus-dosing/peds-amiodarone-arrest.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1599,17 +1635,26 @@
       "next_review_due": "2026-12-01"
     },
     "drug-dosing/resus-dosing/peds-atropine-bradycardia": {
-      "content_version": 2,
-      "hash": "55309e7e000cec7b",
+      "content_version": 3,
+      "hash": "409e267a89b5c53f",
       "path": "modules/drug-dosing/resus-dosing/peds-atropine-bradycardia.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "drug-dosing/resus-dosing/peds-epinephrine-arrest": {
+      "content_version": 3,
+      "hash": "215cec809880a319",
+      "path": "modules/drug-dosing/resus-dosing/peds-epinephrine-arrest.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-11-30"
+    },
     "drug-dosing/resus-dosing/peds-fosphenytoin-status": {
-      "content_version": 1,
-      "hash": "70a6aae978dd345b",
+      "content_version": 2,
+      "hash": "d67e5a185ea129cf",
       "path": "modules/drug-dosing/resus-dosing/peds-fosphenytoin-status.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1617,8 +1662,8 @@
       "next_review_due": "2026-12-14"
     },
     "drug-dosing/resus-dosing/peds-ketamine-rsi": {
-      "content_version": 2,
-      "hash": "a4509c15eae6abc6",
+      "content_version": 3,
+      "hash": "1b49ac2fa609ef96",
       "path": "modules/drug-dosing/resus-dosing/peds-ketamine-rsi.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1626,8 +1671,8 @@
       "next_review_due": "2026-12-01"
     },
     "drug-dosing/resus-dosing/peds-levetiracetam-status": {
-      "content_version": 1,
-      "hash": "a079342f5ef3531f",
+      "content_version": 2,
+      "hash": "f7b1a4ec84db0d90",
       "path": "modules/drug-dosing/resus-dosing/peds-levetiracetam-status.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1635,8 +1680,8 @@
       "next_review_due": "2026-12-14"
     },
     "drug-dosing/resus-dosing/peds-lorazepam-status": {
-      "content_version": 2,
-      "hash": "29f8ddb87a9e6525",
+      "content_version": 3,
+      "hash": "fce36ca65f1f4a1f",
       "path": "modules/drug-dosing/resus-dosing/peds-lorazepam-status.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1644,8 +1689,8 @@
       "next_review_due": "2026-12-14"
     },
     "drug-dosing/resus-dosing/peds-midazolam-status": {
-      "content_version": 3,
-      "hash": "7a2d1f9bf9911934",
+      "content_version": 4,
+      "hash": "e182ae8bbf308a3a",
       "path": "modules/drug-dosing/resus-dosing/peds-midazolam-status.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1653,8 +1698,8 @@
       "next_review_due": "2026-12-02"
     },
     "drug-dosing/resus-dosing/peds-rocuronium-rsi": {
-      "content_version": 2,
-      "hash": "c66e178edeb9411b",
+      "content_version": 3,
+      "hash": "9d677744a0f0c584",
       "path": "modules/drug-dosing/resus-dosing/peds-rocuronium-rsi.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1662,8 +1707,8 @@
       "next_review_due": "2026-12-14"
     },
     "drug-dosing/resus-dosing/peds-succinylcholine-rsi": {
-      "content_version": 1,
-      "hash": "f2f8360135615249",
+      "content_version": 2,
+      "hash": "14795065707eeee5",
       "path": "modules/drug-dosing/resus-dosing/peds-succinylcholine-rsi.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1671,8 +1716,8 @@
       "next_review_due": "2026-12-14"
     },
     "drug-dosing/resus-dosing/peds-valproate-status": {
-      "content_version": 1,
-      "hash": "22e245bd1a96dc4a",
+      "content_version": 2,
+      "hash": "6b4af7202c8a4047",
       "path": "modules/drug-dosing/resus-dosing/peds-valproate-status.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -2182,6 +2227,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-14"
     },
+    "reference-library/acute-liver-failure": {
+      "content_version": 1,
+      "hash": "59e82f4129cbd272",
+      "path": "modules/reference-library/acute-liver-failure.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/acute-pe-guideline-2026": {
       "content_version": 2,
       "hash": "9dffabf017150533",
@@ -2200,9 +2254,18 @@
       "review_tier": 2,
       "next_review_due": "2027-03-07"
     },
+    "reference-library/adrenal-crisis": {
+      "content_version": 1,
+      "hash": "a84c4c4fd5d333b2",
+      "path": "modules/reference-library/adrenal-crisis.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/advanced-ards-ventilation": {
-      "content_version": 2,
-      "hash": "6f29f5acfd65a499",
+      "content_version": 3,
+      "hash": "dc2b3bae747aad94",
       "path": "modules/reference-library/advanced-ards-ventilation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2246,8 +2309,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/anaphylaxis": {
-      "content_version": 2,
-      "hash": "02eed4b4eb7770e3",
+      "content_version": 3,
+      "hash": "5ec19f359f5454dc",
       "path": "modules/reference-library/anaphylaxis.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2325,6 +2388,15 @@
       "section": "Reference Library",
       "review_tier": 3,
       "next_review_due": "2026-12-02"
+    },
+    "reference-library/blunt-cerebrovascular-injury-screening": {
+      "content_version": 1,
+      "hash": "71481938655491cd",
+      "path": "modules/reference-library/blunt-cerebrovascular-injury-screening.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/bone-cement-implantation-syndrome": {
       "content_version": 1,
@@ -2443,6 +2515,15 @@
       "review_tier": 2,
       "next_review_due": "2027-03-08"
     },
+    "reference-library/drowning": {
+      "content_version": 1,
+      "hash": "f46129edbb2fed37",
+      "path": "modules/reference-library/drowning.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/drug-concentration-math": {
       "content_version": 2,
       "hash": "8627ba01939ca8ef",
@@ -2506,6 +2587,15 @@
       "review_tier": 3,
       "next_review_due": "2027-03-02"
     },
+    "reference-library/electrical-injury-lightning": {
+      "content_version": 1,
+      "hash": "00f108a3aea295bb",
+      "path": "modules/reference-library/electrical-injury-lightning.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/emergency-drugs-pregnancy": {
       "content_version": 2,
       "hash": "e9aebcd8fdf8c2e5",
@@ -2560,6 +2650,15 @@
       "review_tier": 1,
       "next_review_due": "2027-03-03"
     },
+    "reference-library/gi-bleed-variceal-hemorrhage": {
+      "content_version": 1,
+      "hash": "71b0a4604f94b131",
+      "path": "modules/reference-library/gi-bleed-variceal-hemorrhage.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/hazmat-scene-toxidromes": {
       "content_version": 1,
       "hash": "66718f052a6a9f1e",
@@ -2578,6 +2677,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/heat-stroke": {
+      "content_version": 1,
+      "hash": "a344453235cb0d84",
+      "path": "modules/reference-library/heat-stroke.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/hemorrhagic-shock-mtp": {
       "content_version": 3,
       "hash": "d2c10af69a09b310",
@@ -2586,6 +2694,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2027-03-04"
+    },
+    "reference-library/hiv-post-exposure-prophylaxis": {
+      "content_version": 1,
+      "hash": "260dd046833b71c3",
+      "path": "modules/reference-library/hiv-post-exposure-prophylaxis.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/hs-troponin-chest-pain": {
       "content_version": 2,
@@ -2794,6 +2911,15 @@
       "review_tier": 2,
       "next_review_due": "2027-03-07"
     },
+    "reference-library/perioperative-anaphylaxis": {
+      "content_version": 1,
+      "hash": "d5802d75436ae39f",
+      "path": "modules/reference-library/perioperative-anaphylaxis.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/perioperative-glycemic-management": {
       "content_version": 2,
       "hash": "389d8554778d1d1a",
@@ -2956,6 +3082,15 @@
       "review_tier": 3,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/sickle-cell-crisis": {
+      "content_version": 1,
+      "hash": "3bf5dcc3e96e61a0",
+      "path": "modules/reference-library/sickle-cell-crisis.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/sodium-disorders": {
       "content_version": 2,
       "hash": "aee8a1cacd21200d",
@@ -3000,6 +3135,15 @@
       "section": "Reference Library",
       "review_tier": 3,
       "next_review_due": "2027-03-02"
+    },
+    "reference-library/thyroid-storm-myxedema-coma": {
+      "content_version": 1,
+      "hash": "e4ebb48b53205c9f",
+      "path": "modules/reference-library/thyroid-storm-myxedema-coma.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/tox-alcohols-anticholinergics-other": {
       "content_version": 1,
@@ -3137,8 +3281,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/ventilator-liberation-weaning": {
-      "content_version": 2,
-      "hash": "c92bef174e5ee345",
+      "content_version": 3,
+      "hash": "1f3b9de99259ed13",
       "path": "modules/reference-library/ventilator-liberation-weaning.json",
       "contentType": "reference",
       "section": "Reference Library",

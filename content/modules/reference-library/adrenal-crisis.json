@@ -1,0 +1,71 @@
+{
+  "id": "adrenal-crisis",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Adrenal Crisis",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["acute adrenal insufficiency", "Addisonian crisis", "adrenal insufficiency decompensation"],
+  "tags": ["adrenal crisis", "adrenal insufficiency", "hydrocortisone", "endocrine emergency", "ED", "ICU"],
+  "keywords": ["treat before confirming the diagnosis, do not wait for a cortisol level", "hydrocortisone 100mg IV bolus then 200mg per 24 hours", "1 liter isotonic saline in the first hour then further fluids as needed", "check and correct hypoglycemia hyponatremia hyperkalemia", "any patient on chronic steroids or with known adrenal insufficiency who is acutely unwell needs stress-dose steroids"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Endocrine Society. Guidance for the prevention and emergency management of adult patients with adrenal insufficiency.",
+    "Hydrocortisone dosing and fluid resuscitation targets WebSearch-verified before writing."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4)." }
+  ],
+  "summary": "A clinical diagnosis treated on suspicion, not confirmed diagnosis — the single highest-yield action is giving hydrocortisone immediately, before any lab result comes back.",
+  "whyThisMatters": "Adrenal crisis is rapidly fatal if untreated, but the presentation (hypotension, vomiting, abdominal pain, altered mental status, hyponatremia) overlaps heavily with sepsis and other causes of shock — the patients most likely to actually have it are exactly the ones at risk of the diagnosis being missed while everyone chases the more common alternative explanation.",
+  "clinicalTakeaway": "Give hydrocortisone 100 mg IV immediately in any patient with a plausible presentation and a risk factor (known adrenal insufficiency, chronic steroid use with a missed/reduced dose during acute illness, or a presentation that just doesn't add up for the working diagnosis) — do not wait for a cortisol level or ACTH stim test result. Treating empirically has essentially no downside in a genuinely sick patient; missing the diagnosis while waiting for confirmation can be fatal.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Who to suspect it in"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Known primary or secondary adrenal insufficiency (Addison's disease, prior bilateral adrenalectomy, hypopituitarism) who is now acutely unwell — infection, trauma, surgery, or any physiologic stressor can precipitate crisis if their steroid dose isn't stress-adjusted.",
+        "Any patient on chronic exogenous glucocorticoids (even inhaled/topical in some cases, though oral/systemic is the classic risk) who abruptly stops or whose intake is disrupted (vomiting, NPO status) during acute illness — HPA axis suppression from chronic steroid use is a real and often under-recognized cause.",
+        "A patient with unexplained hypotension refractory to fluids, especially with hyponatremia, hyperkalemia, hypoglycemia, or eosinophilia, where the working diagnosis (sepsis, GI illness) doesn't fully explain the picture."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Treatment — don't wait for confirmation"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Hydrocortisone 100 mg IV (or IM if no IV access yet) immediately — this is a low-risk, high-value empiric treatment; there is essentially no downside to giving it in a patient who turns out not to have adrenal insufficiency, versus the real risk of withholding it in one who does.",
+        "Continue hydrocortisone 200 mg over the next 24 hours (continuous infusion, or divided doses such as 50 mg IV every 6 hours).",
+        "Rapid isotonic saline resuscitation: 1 L in the first hour, with further IV fluids guided by ongoing losses and hemodynamic response (total fluid needs can run 4-6 L over the first 24 hours in a severe crisis).",
+        "Check and correct: glucose (hypoglycemia is common — give dextrose if low), sodium (hyponatremia is common — correct at a safe rate, don't overcorrect), and potassium (hyperkalemia can occur, especially in primary adrenal insufficiency with concurrent mineralocorticoid deficiency).",
+        "Look for and treat the precipitating illness (infection is a common trigger) in parallel — treating the crisis doesn't mean ignoring why it happened."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Do NOT delay hydrocortisone to obtain a cortisol level first if the patient is unstable — draw the level if convenient (a random cortisol can still be informative even after treatment starts, though less so), but treatment should never wait on it in a genuinely sick patient."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "After stabilization"
+    },
+    {
+      "type": "text",
+      "text": "Once stable, hydrocortisone is tapered back down toward the patient's usual maintenance/stress dose over the following days, guided by clinical status and the resolution of the precipitating illness. Endocrinology involvement is appropriate for anyone with a new diagnosis of adrenal insufficiency, or for tailoring the taper/follow-up in a known patient. Before discharge, every patient with adrenal insufficiency should be re-educated (or educated for the first time, if new) on sick-day stress dosing rules and should carry an emergency hydrocortisone injection kit if not already doing so — this crisis is frequently preventable with adequate self-management education."
+    }
+  ],
+  "related": ["thyroid-storm-myxedema-coma", "shock-classification", "septic-shock-resuscitation"],
+  "buildNote": "Kept deliberately focused on the ED/ICU-actionable core (recognize, treat immediately, don't wait for labs) rather than a full endocrinology workup of adrenal insufficiency etiology, which is a separate, non-emergent question."
+}

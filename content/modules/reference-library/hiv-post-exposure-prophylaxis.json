@@ -1,0 +1,100 @@
+{
+  "id": "hiv-post-exposure-prophylaxis",
+  "section": "Reference Library",
+  "category": "Infectious Disease & Immunization",
+  "title": "HIV Post-Exposure Prophylaxis (PEP)",
+  "settingEmphasis": ["ed"],
+  "aliases": ["PEP", "nPEP", "occupational HIV exposure", "needlestick HIV prophylaxis", "HIV nPEP"],
+  "tags": ["HIV", "PEP", "post-exposure prophylaxis", "needlestick", "occupational exposure", "ED"],
+  "keywords": ["start within 72 hours, ideally within 24, every hour matters", "2025 CDC update preferred regimen bictegravir emtricitabine tenofovir alafenamide single tablet", "28 day course", "follow-up HIV testing now concludes at 12 weeks with a 4th generation assay, not 6 months", "source patient testing negative means stop PEP"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "CDC. Antiretroviral Postexposure Prophylaxis After Sexual, Injection Drug Use, or Other Nonoccupational Exposure to HIV — United States, 2025 Update. MMWR Recomm Rep. 2025;74(1).",
+    "2025 US Public Health Service Guidelines for the Management of Occupational Exposures to HIV and Recommendations for Post-exposure Prophylaxis in Healthcare Settings.",
+    "Regimen and follow-up-testing changes WebSearch-verified against both 2025 updates before writing this module — this is a genuinely recently-changed guideline, not stable long-standing content."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4). Built directly against the 2025 CDC nPEP update and the 2025 USPHS occupational-exposure guideline, both genuinely recent changes (simplified single-tablet preferred regimen; shortened follow-up-testing window to 12 weeks with a 4th-generation assay) rather than assuming older, more familiar guidance was still current." }
+  ],
+  "summary": "Who needs PEP, what to start (a 2025 guideline update simplified this to a preferred single-tablet regimen), and the follow-up testing schedule — which is now shorter than many clinicians still assume.",
+  "whyThisMatters": "PEP only works if started fast — efficacy drops the longer the delay, and the window closes at 72 hours — so the decision to start empirically, before waiting on source-patient testing or infectious disease consultation, is often the difference between PEP actually preventing an infection and it not being started in time to matter.",
+  "clinicalTakeaway": "For any exposure with a plausible risk of HIV transmission (percutaneous, mucous membrane, or non-intact skin exposure to blood/body fluids from a source with known or unknown HIV status and a risk factor), start PEP empirically as soon as possible — ideally within 24 hours, and no later than 72 hours. Use the preferred single-tablet regimen when available. Stop PEP early if the source patient subsequently tests negative for HIV.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Who needs PEP"
+    },
+    {
+      "type": "text",
+      "text": "Any exposure (percutaneous injury, mucous membrane contact, or contact with non-intact skin) to blood or a body fluid with transmission risk, from a source known to have HIV or whose status is unknown but has plausible risk factors. This applies to both occupational exposures (needlestick, sharps injury in a healthcare worker) and non-occupational exposures (sexual assault, consensual exposure, shared injection equipment)."
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Do NOT wait for source-patient HIV testing results before starting PEP if the exposure is significant and time is running short — every hour of delay matters, and testing can take longer than the window allows. Start empirically, then stop early if the source subsequently tests negative."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Timing"
+    },
+    {
+      "type": "text",
+      "text": "Start as soon as possible — ideally within 24 hours of exposure, and no later than 72 hours. Efficacy is highest with the earliest start; PEP started after 72 hours is not recommended (the evidence base for benefit beyond that window is poor)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Regimen — 2025 update, preferred options"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Preferred single-tablet regimen: bictegravir/emtricitabine/tenofovir alafenamide (BIC/FTC/TAF) once daily — the 2025 CDC update's preferred choice for most adults and adolescents, favored for simplicity and adherence.",
+        "Alternative: dolutegravir PLUS (tenofovir alafenamide OR tenofovir disoproxil fumarate) PLUS (emtricitabine OR lamivudine).",
+        "Full course: 28 days, regardless of which regimen is used.",
+        "Renal function, potential drug interactions, and pregnancy status all factor into the exact regimen choice — this is a starting framework, not a substitute for checking the current full guideline or an ID/pharmacy consult when available, especially for an atypical patient (significant renal impairment, on other interacting medications)."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Baseline workup"
+    },
+    {
+      "type": "list",
+      "items": [
+        "HIV Ag/Ab combination (4th generation) test in the exposed person, to confirm they are not already HIV-positive before starting PEP.",
+        "Hepatitis B and C status (source and exposed person, as applicable) — hepatitis B post-exposure management is a separate, parallel decision (vaccination status, HBIG) that doesn't wait on the HIV workup.",
+        "Pregnancy test where relevant.",
+        "Renal function (creatinine) — relevant to regimen choice/dosing.",
+        "Baseline CBC/LFTs are reasonable but not required to START PEP — don't delay the first dose waiting on labs to return."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Follow-up — the window is now shorter than many clinicians still remember"
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "The 2025 update shortened the follow-up testing window compared to older, still-widely-remembered guidance. With a 4th-generation Ag/Ab assay, follow-up HIV testing now concludes at 12 weeks post-exposure — NOT 6 months. The older 6-month endpoint only still applies if a 4th-generation assay is unavailable and a less sensitive assay must be used instead (in which case testing continues at 6 weeks, 12 weeks, and 6 months)."
+    },
+    {
+      "type": "list",
+      "items": [
+        "If the source patient tests negative for HIV: no further follow-up HIV testing of the exposed person is needed for that exposure — PEP can be stopped.",
+        "If the source is HIV-positive, or untestable/unknown: retest the exposed person at 4-6 weeks and again at the 12-week endpoint (using a 4th-generation assay).",
+        "Counsel on safer-sex/harm-reduction practices and avoiding blood/organ/tissue donation during the follow-up window, since transmission risk isn't fully excluded until testing concludes."
+      ]
+    }
+  ],
+  "related": ["empiric-antibiotics-ed-icu", "anaphylaxis"],
+  "buildNote": "A genuinely recently-changed guideline (2025 updates to both the occupational and non-occupational pathways) — flagged review_tier 1 (currency-sensitive) rather than a stable/rarely-reviewed reference, since another regimen simplification or testing-window change is plausible within a year or two given how recently this one landed."
+}

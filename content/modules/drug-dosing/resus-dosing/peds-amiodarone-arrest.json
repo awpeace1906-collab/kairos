@@ -1,14 +1,16 @@
 {
   "id": "peds-amiodarone-arrest",
   "section": "Drug & Dosing Cards",
-  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
   "title": "Amiodarone — Pediatric VF / Pulseless VT",
   "settingEmphasis": [
     "ed",
     "prehospital",
     "icu"
   ],
-  "audience": ["peds"],
+  "audience": [
+    "peds"
+  ],
   "aliases": [
     "peds amiodarone",
     "shock-refractory VF dose"
@@ -22,8 +24,8 @@
     "PALS"
   ],
   "contentType": "drug-card",
-  "content_version": 3,
-  "last_reviewed": "2026-09-01",
+  "content_version": 4,
+  "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-01",
   "review_tier": 1,
   "sources": [
@@ -34,6 +36,11 @@
     "verify-against-mdcalc"
   ],
   "changelog": [
+    {
+      "version": 4,
+      "date": "2026-09-15",
+      "change": "Content audit Batch 4 housekeeping: category renamed from '...(Adult + Peds)' to '...Pediatric Resuscitation Dosing' — every card in this category was peds-only, the old name was misleading. No dosing content changed."
+    },
     {
       "version": 3,
       "date": "2026-09-05",

@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 720,
+  "count": 759,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -30,6 +30,18 @@
           "title": "Peds Pre-Arrival Card — One Weight, Every Number",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/peds-pre-arrival-card"
+        }
+      ]
+    },
+    {
+      "text": "2025 US Public Health Service Guidelines for the Management of Occupational Exposures to HIV and Recommendations for Post-exposure Prophylaxis in Healthcare Settings.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "hiv-post-exposure-prophylaxis",
+          "title": "HIV Post-Exposure Prophylaxis (PEP)",
+          "section": "Reference Library",
+          "route": "/reference-library/infectious-disease-immunization/hiv-post-exposure-prophylaxis"
         }
       ]
     },
@@ -407,13 +419,13 @@
           "id": "peds-adenosine-svt",
           "title": "Adenosine — Pediatric Stable SVT",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-adenosine-svt"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-adenosine-svt"
         },
         {
           "id": "peds-atropine-bradycardia",
           "title": "Atropine — Pediatric (bradycardia / RSI premedication)",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-atropine-bradycardia"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-atropine-bradycardia"
         }
       ]
     },
@@ -425,7 +437,7 @@
           "id": "peds-epinephrine-arrest",
           "title": "Epinephrine — Pediatric Cardiac Arrest",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-epinephrine-arrest"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-epinephrine-arrest"
         }
       ]
     },
@@ -461,7 +473,7 @@
           "id": "peds-amiodarone-arrest",
           "title": "Amiodarone — Pediatric VF / Pulseless VT",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-amiodarone-arrest"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-amiodarone-arrest"
         }
       ]
     },
@@ -1018,6 +1030,18 @@
       ]
     },
     {
+      "text": "de Franchis R, et al. Baveno VII consensus workshop on portal hypertension.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "gi-bleed-variceal-hemorrhage",
+          "title": "GI Bleed & Variceal Hemorrhage Management",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/gi-bleed-variceal-hemorrhage"
+        }
+      ]
+    },
+    {
       "text": "Decousus H et al. Chest 2011 (IMPROVE); ASH 2018 VTE prophylaxis guideline",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1229,7 +1253,7 @@
           "id": "ventilator-liberation-weaning",
           "title": "Ventilator Liberation & Extubation",
           "section": "Reference Library",
-          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+          "route": "/reference-library/critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -1253,7 +1277,7 @@
           "id": "peds-midazolam-status",
           "title": "Midazolam — Pediatric Status Epilepticus",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-midazolam-status"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-midazolam-status"
         }
       ]
     },
@@ -1265,19 +1289,19 @@
           "id": "peds-fosphenytoin-status",
           "title": "Fosphenytoin — Pediatric Status Epilepticus (Second-Line)",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-fosphenytoin-status"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-fosphenytoin-status"
         },
         {
           "id": "peds-levetiracetam-status",
           "title": "Levetiracetam — Pediatric Status Epilepticus (Second-Line)",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-levetiracetam-status"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-levetiracetam-status"
         },
         {
           "id": "peds-valproate-status",
           "title": "Valproate — Pediatric Status Epilepticus (Second-Line)",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-valproate-status"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-valproate-status"
         }
       ]
     },
@@ -1330,6 +1354,18 @@
       ]
     },
     {
+      "text": "Guidelines on red cell transfusion in sickle cell disease Part II: indications for transfusion. Br J Haematol.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "sickle-cell-crisis",
+          "title": "Sickle Cell Crisis",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/sickle-cell-crisis"
+        }
+      ]
+    },
+    {
       "text": "Harris JA, Benedict FG. PNAS 1918 (original equation); ASPEN/SCCM 2016 critical care nutrition guideline",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1338,6 +1374,18 @@
           "title": "Harris-Benedict Energy Expenditure",
           "section": "Calculators",
           "route": "/calculators/icu-critical-care/harris-benedict"
+        }
+      ]
+    },
+    {
+      "text": "Idris AH, et al. 2003 Utstein-style guidelines for uniform reporting of data from drowning: the 'Utstein Drowning' recommendations. Circulation (drowning definition/terminology).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "drowning",
+          "title": "Drowning",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/drowning"
         }
       ]
     },
@@ -1362,6 +1410,18 @@
           "title": "Empiric Antibiotics — Outpatient & Floor Syndromes",
           "section": "Reference Library",
           "route": "/reference-library/infectious-disease-immunization/empiric-antibiotics-outpatient"
+        }
+      ]
+    },
+    {
+      "text": "IDSA has endorsed the MASCC risk index (Level B evidence) since 2002 for identifying low-risk febrile neutropenia candidates for outpatient management.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "mascc-score",
+          "title": "MASCC Risk Index (Febrile Neutropenia)",
+          "section": "Calculators",
+          "route": "/calculators/sepsis-infectious-disease/mascc-score"
         }
       ]
     },
@@ -1613,7 +1673,7 @@
           "id": "ventilator-liberation-weaning",
           "title": "Ventilator Liberation & Extubation",
           "section": "Reference Library",
-          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+          "route": "/reference-library/critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -1678,6 +1738,18 @@
       ]
     },
     {
+      "text": "Regimen and follow-up-testing changes WebSearch-verified against both 2025 updates before writing this module — this is a genuinely recently-changed guideline, not stable long-standing content.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "hiv-post-exposure-prophylaxis",
+          "title": "HIV Post-Exposure Prophylaxis (PEP)",
+          "section": "Reference Library",
+          "route": "/reference-library/infectious-disease-immunization/hiv-post-exposure-prophylaxis"
+        }
+      ]
+    },
+    {
       "text": "Remley M, Loos P, Riesberg J, et al. Prolonged Casualty Care Guidelines. Joint Trauma System CPG ID: 91. 21 Dec 2021, rapid update June 2023",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1698,6 +1770,18 @@
           "title": "Rockall Score (Upper GI Bleed)",
           "section": "Calculators",
           "route": "/calculators/gi-renal-metabolic/rockall"
+        }
+      ]
+    },
+    {
+      "text": "Ross DS, et al. 2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "thyroid-storm-myxedema-coma",
+          "title": "Thyroid Storm & Myxedema Coma",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/thyroid-storm-myxedema-coma"
         }
       ]
     },
@@ -1758,6 +1842,18 @@
           "title": "PADIS Bundle & RASS",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/padis-bundle"
+        }
+      ]
+    },
+    {
+      "text": "Schmidt AC, et al. Wilderness Medical Society Clinical Practice Guidelines for the Treatment and Prevention of Drowning.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "drowning",
+          "title": "Drowning",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/drowning"
         }
       ]
     },
@@ -1930,6 +2026,18 @@
       ]
     },
     {
+      "text": "Wilderness Medical Society Clinical Practice Guidelines for the Prevention and Treatment of Heat Illness.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "heat-stroke",
+          "title": "Heat Stroke",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/heat-stroke"
+        }
+      ]
+    },
+    {
       "text": "Zhang J et al. Obstet Gynecol 2010; ACOG/SMFM Consensus — Safe Prevention of the Primary Cesarean Delivery",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -2057,7 +2165,7 @@
           "id": "advanced-ards-ventilation",
           "title": "Beyond Lung-Protective: APRV, Recruitment, Intraoperative PEEP",
           "section": "Reference Library",
-          "route": "/reference-library/icu-critical-care/advanced-ards-ventilation"
+          "route": "/reference-library/critical-care/advanced-ards-ventilation"
         }
       ]
     },
@@ -2129,19 +2237,19 @@
           "id": "peds-fosphenytoin-status",
           "title": "Fosphenytoin — Pediatric Status Epilepticus (Second-Line)",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-fosphenytoin-status"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-fosphenytoin-status"
         },
         {
           "id": "peds-levetiracetam-status",
           "title": "Levetiracetam — Pediatric Status Epilepticus (Second-Line)",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-levetiracetam-status"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-levetiracetam-status"
         },
         {
           "id": "peds-valproate-status",
           "title": "Valproate — Pediatric Status Epilepticus (Second-Line)",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-valproate-status"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-valproate-status"
         }
       ]
     },
@@ -2339,7 +2447,7 @@
           "id": "ventilator-liberation-weaning",
           "title": "Ventilator Liberation & Extubation",
           "section": "Reference Library",
-          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+          "route": "/reference-library/critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -2351,7 +2459,7 @@
           "id": "ventilator-liberation-weaning",
           "title": "Ventilator Liberation & Extubation",
           "section": "Reference Library",
-          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+          "route": "/reference-library/critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -2387,7 +2495,7 @@
           "id": "ventilator-liberation-weaning",
           "title": "Ventilator Liberation & Extubation",
           "section": "Reference Library",
-          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+          "route": "/reference-library/critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -2579,7 +2687,7 @@
           "id": "peds-midazolam-status",
           "title": "Midazolam — Pediatric Status Epilepticus",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-midazolam-status"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-midazolam-status"
         }
       ]
     },
@@ -2603,7 +2711,7 @@
           "id": "ventilator-liberation-weaning",
           "title": "Ventilator Liberation & Extubation",
           "section": "Reference Library",
-          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+          "route": "/reference-library/critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -2700,6 +2808,18 @@
           "title": "Primary Palliative Care & Comfort-Focused Transitions in the ICU",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/primary-palliative-care-icu"
+        }
+      ]
+    },
+    {
+      "text": "Restrictive transfusion threshold (Villanueva NEJM 2013) and the antibiotic-mortality-benefit point WebSearch-verified before writing — this module builds on the scoring tools (Glasgow-Blatchford etc.) and blood-products/anticoagulation-reversal content already in Kairos rather than duplicating them.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "gi-bleed-variceal-hemorrhage",
+          "title": "GI Bleed & Variceal Hemorrhage Management",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/gi-bleed-variceal-hemorrhage"
         }
       ]
     },
@@ -2819,7 +2939,7 @@
           "id": "peds-midazolam-status",
           "title": "Midazolam — Pediatric Status Epilepticus",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-midazolam-status"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-midazolam-status"
         }
       ]
     },
@@ -2963,7 +3083,7 @@
           "id": "ventilator-liberation-weaning",
           "title": "Ventilator Liberation & Extubation",
           "section": "Reference Library",
-          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+          "route": "/reference-library/critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -2999,7 +3119,7 @@
           "id": "ventilator-liberation-weaning",
           "title": "Ventilator Liberation & Extubation",
           "section": "Reference Library",
-          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+          "route": "/reference-library/critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -3131,7 +3251,7 @@
           "id": "ventilator-liberation-weaning",
           "title": "Ventilator Liberation & Extubation",
           "section": "Reference Library",
-          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+          "route": "/reference-library/critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -3192,6 +3312,18 @@
           "title": "ARISCAT Score (Postoperative Pulmonary Complications)",
           "section": "Calculators",
           "route": "/calculators/anesthesia-airway-or/ariscat"
+        }
+      ]
+    },
+    {
+      "text": "Charlson ME, Pompei P, Ales KL, MacKenzie CR. A new method of classifying prognostic comorbidity in longitudinal studies: development and validation. J Chronic Dis. 1987;40(5):373-383.",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "charlson-comorbidity-index",
+          "title": "Charlson Comorbidity Index",
+          "section": "Calculators",
+          "route": "/calculators/sepsis-infectious-disease/charlson-comorbidity-index"
         }
       ]
     },
@@ -3432,6 +3564,18 @@
           "title": "Cefepime",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/antimicrobial-dosing/cefepime"
+        }
+      ]
+    },
+    {
+      "text": "Point values and age-adjustment structure WebSearch-verified against the original 1987 derivation.",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "charlson-comorbidity-index",
+          "title": "Charlson Comorbidity Index",
+          "section": "Calculators",
+          "route": "/calculators/sepsis-infectious-disease/charlson-comorbidity-index"
         }
       ]
     },
@@ -4319,7 +4463,7 @@
           "id": "advanced-ards-ventilation",
           "title": "Beyond Lung-Protective: APRV, Recruitment, Intraoperative PEEP",
           "section": "Reference Library",
-          "route": "/reference-library/icu-critical-care/advanced-ards-ventilation"
+          "route": "/reference-library/critical-care/advanced-ards-ventilation"
         }
       ]
     },
@@ -4510,6 +4654,18 @@
       ]
     },
     {
+      "text": "AASLD guidance recommends the King's College Criteria for transplant-listing decisions in acute liver failure.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acute-liver-failure",
+          "title": "Acute Liver Failure",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/acute-liver-failure"
+        }
+      ]
+    },
+    {
       "text": "ACEP airway guidance (2023); standard emergency airway management (Walls / Manual of Emergency Airway Management)",
       "group": "Other primary sources",
       "usedBy": [
@@ -4553,7 +4709,7 @@
           "id": "peds-amiodarone-arrest",
           "title": "Amiodarone — Pediatric VF / Pulseless VT",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-amiodarone-arrest"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-amiodarone-arrest"
         }
       ]
     },
@@ -4678,6 +4834,18 @@
       ]
     },
     {
+      "text": "American Society of Hematology. Sickle cell disease: when and how to transfuse.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "sickle-cell-crisis",
+          "title": "Sickle Cell Crisis",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/sickle-cell-crisis"
+        }
+      ]
+    },
+    {
       "text": "Anticholinergic Intoxication. EMCrit/IBCC, 2025; Physostigmine in Anticholinergic Poisoning: An Old Antidote with Resurgence. PMC, 2020",
       "group": "Other primary sources",
       "usedBy": [
@@ -4716,6 +4884,18 @@
           "title": "Weight Zones & Equipment Sizing",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/pedi-tape-weight-zones"
+        }
+      ]
+    },
+    {
+      "text": "Approach to the patient with thyroid storm. J Clin Endocrinol Metab. 2026.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "thyroid-storm-myxedema-coma",
+          "title": "Thyroid Storm & Myxedema Coma",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/thyroid-storm-myxedema-coma"
         }
       ]
     },
@@ -4864,6 +5044,18 @@
       ]
     },
     {
+      "text": "Baux S. Contribution à l'étude du traitement local des brûlures thermiques étendues. 1961 (original score: age + %TBSA).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "baux-score",
+          "title": "Revised Baux Score (Burn Mortality)",
+          "section": "Calculators",
+          "route": "/calculators/trauma/baux-score"
+        }
+      ]
+    },
+    {
       "text": "Baxter CR, Shires T. Ann N Y Acad Sci 1968",
       "group": "Other primary sources",
       "usedBy": [
@@ -4900,6 +5092,18 @@
       ]
     },
     {
+      "text": "Bergstrom N, Braden BJ, Laguzza A, Holman V. The Braden Scale for Predicting Pressure Sore Risk. Nurs Res. 1987;36(4):205-210.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "braden-scale",
+          "title": "Braden Scale (Pressure Injury Risk)",
+          "section": "Calculators",
+          "route": "/calculators/icu-critical-care/braden-scale"
+        }
+      ]
+    },
+    {
       "text": "Berman BD. Neuroleptic Malignant Syndrome: A Review for Neurohospitalists. Neurohospitalist. 2011;1(1):41-47",
       "group": "Other primary sources",
       "usedBy": [
@@ -4908,6 +5112,18 @@
           "title": "Psychiatric Drug Toxicity — Lithium, Antipsychotics/NMS, SSRIs, Bupropion",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-psych-meds"
+        }
+      ]
+    },
+    {
+      "text": "Biffl WL, et al. Optimizing screening for blunt cerebrovascular injuries. Am J Surg. 1999 (Denver criteria, later modified 2005/expanded 2012).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "blunt-cerebrovascular-injury-screening",
+          "title": "Blunt Cerebrovascular Injury (BCVI) Screening",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/blunt-cerebrovascular-injury-screening"
         }
       ]
     },
@@ -4967,7 +5183,7 @@
           "id": "ventilator-liberation-weaning",
           "title": "Ventilator Liberation & Extubation",
           "section": "Reference Library",
-          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+          "route": "/reference-library/critical-care/ventilator-liberation-weaning"
         }
       ]
     },
@@ -4980,6 +5196,18 @@
           "title": "Mangled Extremity Severity Score (MESS)",
           "section": "Calculators",
           "route": "/calculators/trauma/mangled-extremity-severity-score"
+        }
+      ]
+    },
+    {
+      "text": "Bouchama A, Knochel JP. Heat stroke. N Engl J Med. 2002;346(25):1978-1988.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "heat-stroke",
+          "title": "Heat Stroke",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/heat-stroke"
         }
       ]
     },
@@ -5092,6 +5320,18 @@
       ]
     },
     {
+      "text": "Cause distribution and tryptase timing/interpretation WebSearch-verified before writing.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "perioperative-anaphylaxis",
+          "title": "Perioperative Anaphylaxis",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/perioperative-anaphylaxis"
+        }
+      ]
+    },
+    {
       "text": "CCW Protocol III on Incendiary Weapons, 1980",
       "group": "Other primary sources",
       "usedBy": [
@@ -5100,6 +5340,18 @@
           "title": "White Phosphorus & Incendiary Casualties",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/incendiary-chemical-burns"
+        }
+      ]
+    },
+    {
+      "text": "CDC. Antiretroviral Postexposure Prophylaxis After Sexual, Injection Drug Use, or Other Nonoccupational Exposure to HIV — United States, 2025 Update. MMWR Recomm Rep. 2025;74(1).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "hiv-post-exposure-prophylaxis",
+          "title": "HIV Post-Exposure Prophylaxis (PEP)",
+          "section": "Reference Library",
+          "route": "/reference-library/infectious-disease-immunization/hiv-post-exposure-prophylaxis"
         }
       ]
     },
@@ -5950,6 +6202,18 @@
       ]
     },
     {
+      "text": "Denver/Memphis criteria components WebSearch-verified across multiple contemporary sources; this reference presents the general framework rather than claiming to fully reproduce either institution's current internal checklist verbatim.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "blunt-cerebrovascular-injury-screening",
+          "title": "Blunt Cerebrovascular Injury (BCVI) Screening",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/blunt-cerebrovascular-injury-screening"
+        }
+      ]
+    },
+    {
       "text": "Devine BJ. Drug Intell Clin Pharm 1974",
       "group": "Other primary sources",
       "usedBy": [
@@ -6071,31 +6335,31 @@
           "id": "peds-adenosine-svt",
           "title": "Adenosine — Pediatric Stable SVT",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-adenosine-svt"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-adenosine-svt"
         },
         {
           "id": "peds-atropine-bradycardia",
           "title": "Atropine — Pediatric (bradycardia / RSI premedication)",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-atropine-bradycardia"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-atropine-bradycardia"
         },
         {
           "id": "peds-ketamine-rsi",
           "title": "Ketamine — Pediatric RSI Induction",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-ketamine-rsi"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-ketamine-rsi"
         },
         {
           "id": "peds-rocuronium-rsi",
           "title": "Rocuronium — Pediatric RSI Paralysis",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-rocuronium-rsi"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-rocuronium-rsi"
         },
         {
           "id": "peds-succinylcholine-rsi",
           "title": "Succinylcholine — Pediatric RSI Paralysis",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-succinylcholine-rsi"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-succinylcholine-rsi"
         }
       ]
     },
@@ -6119,25 +6383,25 @@
           "id": "peds-fosphenytoin-status",
           "title": "Fosphenytoin — Pediatric Status Epilepticus (Second-Line)",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-fosphenytoin-status"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-fosphenytoin-status"
         },
         {
           "id": "peds-levetiracetam-status",
           "title": "Levetiracetam — Pediatric Status Epilepticus (Second-Line)",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-levetiracetam-status"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-levetiracetam-status"
         },
         {
           "id": "peds-lorazepam-status",
           "title": "Lorazepam — Pediatric Status Epilepticus",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-lorazepam-status"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-lorazepam-status"
         },
         {
           "id": "peds-valproate-status",
           "title": "Valproate — Pediatric Status Epilepticus (Second-Line)",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-valproate-status"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-valproate-status"
         }
       ]
     },
@@ -6202,6 +6466,30 @@
       ]
     },
     {
+      "text": "Electrical Injuries. StatPearls.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "electrical-injury-lightning",
+          "title": "Electrical Injury & Lightning Strike",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/electrical-injury-lightning"
+        }
+      ]
+    },
+    {
+      "text": "Endocrine Society. Guidance for the prevention and emergency management of adult patients with adrenal insufficiency.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "adrenal-crisis",
+          "title": "Adrenal Crisis",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/adrenal-crisis"
+        }
+      ]
+    },
+    {
       "text": "Engebretsen KM, Kaczmarek KM, Morgan J, Holger JS. High-dose insulin therapy in beta-blocker and calcium channel-blocker poisoning. Clin Toxicol (Phila). 2011;49(4):277-283",
       "group": "Other primary sources",
       "usedBy": [
@@ -6234,6 +6522,30 @@
           "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-alcohols-anticholinergics-other"
+        }
+      ]
+    },
+    {
+      "text": "Exact criteria thresholds WebSearch-verified against multiple contemporary sources before writing.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acute-liver-failure",
+          "title": "Acute Liver Failure",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/acute-liver-failure"
+        }
+      ]
+    },
+    {
+      "text": "Exchange-transfusion indications and the hemoglobin-10 viscosity caveat WebSearch-verified before writing.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "sickle-cell-crisis",
+          "title": "Sickle Cell Crisis",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/sickle-cell-crisis"
         }
       ]
     },
@@ -6281,7 +6593,7 @@
           "id": "peds-succinylcholine-rsi",
           "title": "Succinylcholine — Pediatric RSI Paralysis",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-succinylcholine-rsi"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-succinylcholine-rsi"
         }
       ]
     },
@@ -6330,6 +6642,18 @@
           "title": "Pediatric Burn Management",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/pediatric-burn-management"
+        }
+      ]
+    },
+    {
+      "text": "Focus on the agents most frequently responsible for perioperative anaphylaxis. Clin Mol Allergy. 2018.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "perioperative-anaphylaxis",
+          "title": "Perioperative Anaphylaxis",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/perioperative-anaphylaxis"
         }
       ]
     },
@@ -6402,6 +6726,18 @@
           "title": "Sedative-Hypnotic Toxicity — Benzodiazepines, Barbiturates, GHB",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-sedative-hypnotics"
+        }
+      ]
+    },
+    {
+      "text": "Garcia-Tsao G, et al. AASLD Practice Guidance: Portal hypertensive bleeding in cirrhosis.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "gi-bleed-variceal-hemorrhage",
+          "title": "GI Bleed & Variceal Hemorrhage Management",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/gi-bleed-variceal-hemorrhage"
         }
       ]
     },
@@ -6545,7 +6881,7 @@
           "id": "peds-ketamine-rsi",
           "title": "Ketamine — Pediatric RSI Induction",
           "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-ketamine-rsi"
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-ketamine-rsi"
         }
       ]
     },
@@ -6642,6 +6978,18 @@
           "title": "Hunt-Hess Classification",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/hunt-hess"
+        }
+      ]
+    },
+    {
+      "text": "Hydrocortisone dosing and fluid resuscitation targets WebSearch-verified before writing.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "adrenal-crisis",
+          "title": "Adrenal Crisis",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/adrenal-crisis"
         }
       ]
     },
@@ -6922,6 +7270,18 @@
       ]
     },
     {
+      "text": "Klastersky J, Paesmans M, Rubenstein EB, et al. The Multinational Association for Supportive Care in Cancer risk index: a multinational scoring system for identifying low-risk febrile neutropenic cancer patients. J Clin Oncol. 2000;18(16):3038-3051.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "mascc-score",
+          "title": "MASCC Risk Index (Febrile Neutropenia)",
+          "section": "Calculators",
+          "route": "/calculators/sepsis-infectious-disease/mascc-score"
+        }
+      ]
+    },
+    {
       "text": "Kline JA et al. J Thromb Haemost 2004; 2008",
       "group": "Other primary sources",
       "usedBy": [
@@ -6941,7 +7301,7 @@
           "id": "apache-ii",
           "title": "APACHE II Score",
           "section": "Calculators",
-          "route": "/calculators/sepsis-infectious-disease/apache-ii"
+          "route": "/calculators/icu-critical-care/apache-ii"
         }
       ]
     },
@@ -7516,6 +7876,18 @@
       ]
     },
     {
+      "text": "Narins RG, Emmett M. Simple and mixed acid-base disorders: a practical approach. Medicine (Baltimore). 1980;59(3):161-187 (Winter's formula, named for the original unpublished work by Dr. Winters).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "winters-formula",
+          "title": "Winter's Formula (Expected Respiratory Compensation)",
+          "section": "Calculators",
+          "route": "/calculators/gi-renal-metabolic/winters-formula"
+        }
+      ]
+    },
+    {
       "text": "National Heart, Lung, and Blood Institute ARDS Clinical Trials Network. Comparison of two fluid-management strategies in acute lung injury (FACTT). N Engl J Med. 2006;354:2564-2575",
       "group": "Other primary sources",
       "usedBy": [
@@ -7642,6 +8014,18 @@
       ]
     },
     {
+      "text": "O'Grady JG, Alexander GJ, Hayllar KM, Williams R. Early indicators of prognosis in fulminant hepatic failure. Gastroenterology. 1989;97(2):439-445 (original King's College Criteria).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acute-liver-failure",
+          "title": "Acute Liver Failure",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/acute-liver-failure"
+        }
+      ]
+    },
+    {
       "text": "Oak Ridge Radiation Emergency Assistance Center / Training Site (REAC/TS) — The Medical Aspects of Radiation Incidents",
       "group": "Other primary sources",
       "usedBy": [
@@ -7698,6 +8082,18 @@
           "title": "Hazmat Scene Management & Chemical Toxidromes",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/hazmat-scene-toxidromes"
+        }
+      ]
+    },
+    {
+      "text": "Osler T, Glance LG, Hosmer DW. Simplified estimates of the probability of death after burn injuries: extending and updating the Baux score. J Trauma. 2010;68(3):690-697 (the revised Baux score, adding the inhalation-injury term).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "baux-score",
+          "title": "Revised Baux Score (Burn Mortality)",
+          "section": "Calculators",
+          "route": "/calculators/trauma/baux-score"
         }
       ]
     },
@@ -7966,6 +8362,18 @@
       ]
     },
     {
+      "text": "PTU/propranolol/hydrocortisone dosing and the antithyroid-before-iodine sequencing WebSearch-verified before writing.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "thyroid-storm-myxedema-coma",
+          "title": "Thyroid Storm & Myxedema Coma",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/thyroid-storm-myxedema-coma"
+        }
+      ]
+    },
+    {
       "text": "Pugh RN, Murray-Lyon IM, Dawson JL, et al. Transection of the oesophagus for bleeding oesophageal varices. Br J Surg. 1973;60(8):646-649.",
       "group": "Other primary sources",
       "usedBy": [
@@ -8106,6 +8514,18 @@
           "title": "Stimulant Toxicity — Cocaine, Amphetamines, MDMA, Cathinones",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-stimulants"
+        }
+      ]
+    },
+    {
+      "text": "Risk-band cutoffs (≥17 no risk / 15-16 low / 13-14 moderate / 10-12 high / ≤9 very high) WebSearch-verified against contemporary nursing-assessment references.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "braden-scale",
+          "title": "Braden Scale (Pressure Injury Risk)",
+          "section": "Calculators",
+          "route": "/calculators/icu-critical-care/braden-scale"
         }
       ]
     },
@@ -8704,6 +9124,18 @@
       ]
     },
     {
+      "text": "Szpilman D, et al. Drowning. N Engl J Med. 2012;366(22):2102-2110.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "drowning",
+          "title": "Drowning",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/drowning"
+        }
+      ]
+    },
+    {
       "text": "TCCC Handbook — MARCH algorithm and MARCH PAWS extended variant",
       "group": "Other primary sources",
       "usedBy": [
@@ -8884,6 +9316,18 @@
       ]
     },
     {
+      "text": "Use and Interpretation of Acute and Baseline Tryptase in Perioperative Hypersensitivity and Anaphylaxis.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "perioperative-anaphylaxis",
+          "title": "Perioperative Anaphylaxis",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/perioperative-anaphylaxis"
+        }
+      ]
+    },
+    {
       "text": "van der Linden PD, et al. Fluoroquinolones and risk of Achilles tendon disorders: case-control study. BMJ. 2002;324(7349):1306-1307",
       "group": "Other primary sources",
       "usedBy": [
@@ -8904,6 +9348,18 @@
           "title": "Modified Rankin Scale (mRS)",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/modified-rankin-scale"
+        }
+      ]
+    },
+    {
+      "text": "Voltage classification, rhabdomyolysis/compartment syndrome risk, and cardiac-monitoring duration WebSearch-verified before writing.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "electrical-injury-lightning",
+          "title": "Electrical Injury & Lightning Strike",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/electrical-injury-lightning"
         }
       ]
     },
@@ -8976,6 +9432,18 @@
           "title": "COWS (Clinical Opiate Withdrawal Scale)",
           "section": "Calculators",
           "route": "/calculators/toxicology-withdrawal/cows"
+        }
+      ]
+    },
+    {
+      "text": "Western Trauma Association. Critical Decisions in Trauma: Screening for and treatment of blunt cerebrovascular injuries.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "blunt-cerebrovascular-injury-screening",
+          "title": "Blunt Cerebrovascular Injury (BCVI) Screening",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/blunt-cerebrovascular-injury-screening"
         }
       ]
     },
@@ -9095,7 +9563,7 @@
           "id": "ventilator-liberation-weaning",
           "title": "Ventilator Liberation & Extubation",
           "section": "Reference Library",
-          "route": "/reference-library/icu-critical-care/ventilator-liberation-weaning"
+          "route": "/reference-library/critical-care/ventilator-liberation-weaning"
         }
       ]
     },

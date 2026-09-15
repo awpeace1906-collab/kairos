@@ -1,15 +1,32 @@
 {
   "id": "peds-succinylcholine-rsi",
   "section": "Drug & Dosing Cards",
-  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
   "title": "Succinylcholine — Pediatric RSI Paralysis",
-  "settingEmphasis": ["ed", "icu", "prehospital"],
-  "audience": ["peds"],
-  "aliases": ["peds succinylcholine", "peds sux", "depolarizing paralytic", "suxamethonium"],
-  "tags": ["RSI", "rapid sequence intubation", "paralytic", "neuromuscular blockade", "peds"],
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
+  "audience": [
+    "peds"
+  ],
+  "aliases": [
+    "peds succinylcholine",
+    "peds sux",
+    "depolarizing paralytic",
+    "suxamethonium"
+  ],
+  "tags": [
+    "RSI",
+    "rapid sequence intubation",
+    "paralytic",
+    "neuromuscular blockade",
+    "peds"
+  ],
   "contentType": "drug-card",
-  "content_version": 1,
-  "last_reviewed": "2026-09-14",
+  "content_version": 2,
+  "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-14",
   "review_tier": 1,
   "sources": [
@@ -17,7 +34,16 @@
     "FDA boxed warning — succinylcholine chloride prescribing information (hyperkalemic cardiac arrest in children with undiagnosed skeletal-muscle myopathy)."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-14", "change": "Initial entry — the depolarizing-paralytic sibling named in peds-rocuronium-rsi's buildNote as the still-needed complement of that set." }
+    {
+      "version": 2,
+      "date": "2026-09-15",
+      "change": "Content audit Batch 4 housekeeping: category renamed from '...(Adult + Peds)' to '...Pediatric Resuscitation Dosing' — every card in this category was peds-only, the old name was misleading. No dosing content changed."
+    },
+    {
+      "version": 1,
+      "date": "2026-09-14",
+      "change": "Initial entry — the depolarizing-paralytic sibling named in peds-rocuronium-rsi's buildNote as the still-needed complement of that set."
+    }
   ],
   "purpose": "Fastest-onset paralytic for RSI when a depolarizing agent is appropriate — the alternative to rocuronium when the fastest possible paralysis and the shortest duration both matter.",
   "population": "peds",
@@ -27,13 +53,25 @@
     {
       "indication": "RSI paralysis",
       "route": "IV / IO",
-      "rule": { "perKg": 1, "perKgHigh": 2, "unit": "mg", "maxDose": 150, "maxDoseUnit": "mg" },
+      "rule": {
+        "perKg": 1,
+        "perKgHigh": 2,
+        "unit": "mg",
+        "maxDose": 150,
+        "maxDoseUnit": "mg"
+      },
       "notes": "Infants and young children often need the higher end of the range (larger volume of distribution). Onset ~30-60 s, duration 5-10 min — the fastest-recovering paralytic available."
     },
     {
       "indication": "RSI paralysis, no IV/IO access",
       "route": "IM",
-      "rule": { "perKg": 3, "perKgHigh": 4, "unit": "mg", "maxDose": 150, "maxDoseUnit": "mg" },
+      "rule": {
+        "perKg": 3,
+        "perKgHigh": 4,
+        "unit": "mg",
+        "maxDose": 150,
+        "maxDoseUnit": "mg"
+      },
       "notes": "Slower onset (~2-3 min) than IV/IO — use only when vascular access genuinely isn't available."
     }
   ],

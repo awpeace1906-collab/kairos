@@ -1,15 +1,30 @@
 {
   "id": "peds-levetiracetam-status",
   "section": "Drug & Dosing Cards",
-  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "category": "Weight/Age-Based Pediatric Resuscitation Dosing",
   "title": "Levetiracetam — Pediatric Status Epilepticus (Second-Line)",
-  "settingEmphasis": ["ed", "icu"],
-  "audience": ["peds"],
-  "aliases": ["peds levetiracetam", "Keppra", "second-line status epilepticus"],
-  "tags": ["status epilepticus", "seizure", "second line", "peds", "ESETT"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "audience": [
+    "peds"
+  ],
+  "aliases": [
+    "peds levetiracetam",
+    "Keppra",
+    "second-line status epilepticus"
+  ],
+  "tags": [
+    "status epilepticus",
+    "seizure",
+    "second line",
+    "peds",
+    "ESETT"
+  ],
   "contentType": "drug-card",
-  "content_version": 1,
-  "last_reviewed": "2026-09-14",
+  "content_version": 2,
+  "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-14",
   "review_tier": 1,
   "sources": [
@@ -18,7 +33,16 @@
     "Drug_Dosing_Peds_Weight_Based_Spec.md (cross-checked vs Stanford & Riley Children's pathways)."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-14", "change": "Initial entry — one of the second/third-line agents named in peds-lorazepam-status's buildNote as the still-needed remainder of the status-epilepticus set." }
+    {
+      "version": 2,
+      "date": "2026-09-15",
+      "change": "Content audit Batch 4 housekeeping: category renamed from '...(Adult + Peds)' to '...Pediatric Resuscitation Dosing' — every card in this category was peds-only, the old name was misleading. No dosing content changed."
+    },
+    {
+      "version": 1,
+      "date": "2026-09-14",
+      "change": "Initial entry — one of the second/third-line agents named in peds-lorazepam-status's buildNote as the still-needed remainder of the status-epilepticus set."
+    }
   ],
   "purpose": "Second-line agent for pediatric status epilepticus persisting after an adequate benzodiazepine dose — roughly equivalent efficacy to fosphenytoin and valproate per ESETT, with the most favorable safety/interaction profile of the three, which is moving it earlier in many institutional protocols.",
   "population": "peds",
@@ -27,7 +51,12 @@
     {
       "indication": "Status epilepticus, second-line load",
       "route": "IV / IO",
-      "rule": { "perKg": 60, "unit": "mg", "maxDose": 4500, "maxDoseUnit": "mg" },
+      "rule": {
+        "perKg": 60,
+        "unit": "mg",
+        "maxDose": 4500,
+        "maxDoseUnit": "mg"
+      },
       "notes": "Infuse over ~10 minutes (the ESETT protocol infusion time). No cardiac monitoring requirement — the main practical advantage over fosphenytoin. Renal-dose down-titrate for maintenance dosing, not the acute load."
     }
   ],

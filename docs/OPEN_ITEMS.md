@@ -49,6 +49,80 @@ list):
    POCUS exam trees).
 
 ## Progress log
+- 2026-09-15 — **Content audit Batch 4 shipped (→ 370 modules).** Structural
+  housekeeping first: fixed `advanced-ards-ventilation` and `ventilator-
+  liberation-weaning` (Reference Library) which were miscategorized as "ICU /
+  Critical Care" — that title belongs only to the Calculators section's ICU
+  category; the Reference Library one is plain "Critical Care" — both
+  corrected. `apache-ii` recategorized from "Sepsis / Infectious Disease" to
+  "ICU / Critical Care" (a general severity score, not sepsis-specific) and
+  moved to match on disk. Added missing `tags[]` to `grace-acs`, `killip-
+  classification`, `qtc`, `anion-gap`. Moved `peds-epinephrine-arrest.json`
+  into `resus-dosing/` alongside its category-mates. Renamed the
+  misleadingly-named "Weight/Age-Based Resuscitation Dosing (Adult + Peds)"
+  category to "...Pediatric Resuscitation Dosing" — every one of its 12
+  cards was peds-only, confirmed by listing the category's actual contents
+  before renaming rather than assuming the audit's claim was right. **Two
+  more false positives caught and corrected before building anything**:
+  KDIGO/AKIN AKI staging was flagged as missing but already exists as a full
+  table in `aki-staging-rrt`; MASCC was checked against `empiric-antibiotics-
+  ed-icu` first and confirmed genuinely absent (that module covers antibiotic
+  *choice* for febrile neutropenia, not the admission-vs-outpatient risk
+  score) before building it. New calculators (EDACS/TIMI-STEMI/DECAF/Light's-
+  Criteria/CKD-EPI shipped in Batch 3; these are Batch 4's five additions):
+  `mascc-score`, `charlson-comorbidity-index` (implemented as a count-of-
+  how-many-apply select per point-tier rather than 16 individual toggles,
+  sized to the ACTUAL number of conditions per tier — 10 for the 1-point
+  tier, 6 for the 2-point tier — after catching and fixing an initial
+  version that arbitrarily capped at "5 or more"/"3 or more" and would have
+  undercounted a high-comorbidity patient), `baux-score` (revised Baux,
+  hand-verified formula), `braden-scale` (6 subscales, correctly the
+  *inverse* direction of most scores — lower means higher risk), `winters-
+  formula` (three named formula outputs for the ±2 range since the app can't
+  display a single formula as a range — live-verified in the browser:
+  HCO3=15 → 28.5/30.5/32.5, exact match to hand calculation). New Reference
+  Library: `blunt-cerebrovascular-injury-screening` (Denver/Memphis BCVI —
+  built as an any-one-risk-factor-triggers-CTA reference rather than a false-
+  precision scored checklist, since Denver alone has been revised three
+  times and Memphis differs from it), `hiv-post-exposure-prophylaxis` (built
+  against the genuinely recent 2025 CDC nPEP + USPHS occupational-exposure
+  updates — simplified single-tablet preferred regimen, and a follow-up-
+  testing window shortened to 12 weeks that many clinicians still
+  misremember as 6 months), `thyroid-storm-myxedema-coma` (the antithyroid-
+  drug-before-iodine sequencing trap, and the never-levothyroxine-alone-
+  without-steroids rule for myxedema coma), `adrenal-crisis`, `electrical-
+  injury-lightning` (the >1000V high/low-voltage cutoff, and lightning's
+  reverse-triage rule explained mechanistically rather than stated as a bare
+  rule), `sickle-cell-crisis` (exchange-transfusion indications, and the
+  don't-push-Hgb-above-10-with-simple-transfusion viscosity trap),
+  `acute-liver-failure` (King's College Criteria for both acetaminophen and
+  non-acetaminophen etiologies, each with their single-criterion-alone
+  pathway; NAC recommended regardless of etiology; the don't-prophylactically-
+  correct-coagulopathy counterintuitive point), `gi-bleed-variceal-
+  hemorrhage` (restrictive transfusion matters MORE in variceal bleeding
+  specifically since over-transfusion raises portal pressure; the three-
+  concurrent-therapies point for suspected variceal bleeding), `heat-stroke`
+  (cooling speed over method; no antipyretics), `drowning` ('near-drowning'
+  is retired terminology; ventilation-first resuscitation; no routine C-spine
+  immobilization absent a trauma mechanism), `perioperative-anaphylaxis`
+  (cause distribution WebSearch-verified — NMBA ~38%, not food/stings like
+  the general population; sugammadex as an emerging cause in its own right;
+  tryptase timing/interpretation math — cross-linked both directions with the
+  existing ED/prehospital-only `anaphylaxis` module, which had no `related[]`
+  field at all until this pass). validate 370/0, build/sync/test 279/0, iOS
+  `xcodebuild test` run in parallel. Live-verified `winters-formula`'s three
+  outputs and `charlson-comorbidity-index`'s full condition-list rendering
+  on web; `acute-liver-failure`'s King's College table (with `\n`-separated
+  multi-line cells) confirmed rendering correctly. **This closes out the
+  originally-scoped Content audit 2026-09-14 priority list** — remaining
+  items from that audit (procedural-sedation peds content, peds trauma
+  resuscitation, NAT/TEN-4-FACESp screening, push-dose pressor prep cards,
+  standalone calcium/bicarb cards, electrolyte repletion protocols,
+  high-dose intranasal naloxone/nalmefene, general abscess I&D, foreign-body
+  removal, NG/OG tube placement, urinary catheterization, escharotomy,
+  precipitous delivery technique, adult synchronized cardioversion
+  technique) are real but genuinely lower-yield/more niche — a Batch 5 if
+  there's appetite for it, not an urgent gap.
 - 2026-09-15 — **Content audit Batch 3 shipped (→ 354 modules).** Calculators:
   `edacs` and `timi-stemi` (Cardiovascular — the STEMI-specific TIMI score,
   distinct from the existing NSTEMI/UA one), `lights-criteria` and

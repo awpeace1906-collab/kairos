@@ -1,0 +1,94 @@
+{
+  "id": "braden-scale",
+  "section": "Calculators",
+  "category": "ICU / Critical Care",
+  "title": "Braden Scale (Pressure Injury Risk)",
+  "settingEmphasis": ["icu"],
+  "aliases": ["pressure ulcer risk", "pressure injury risk assessment", "Braden score"],
+  "tags": ["pressure injury", "pressure ulcer", "skin breakdown", "nursing assessment", "ICU"],
+  "keywords": ["6 subscales, 5 scored 1-4 and friction-shear scored 1-3, total range 6-23", "lower score means higher risk, opposite direction from most scores", "17 or higher no measurable risk, 15-16 low, 13-14 moderate, 10-12 high, 9 or below very high"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Bergstrom N, Braden BJ, Laguzza A, Holman V. The Braden Scale for Predicting Pressure Sore Risk. Nurs Res. 1987;36(4):205-210.",
+    "Risk-band cutoffs (≥17 no risk / 15-16 low / 13-14 moderate / 10-12 high / ≤9 very high) WebSearch-verified against contemporary nursing-assessment references."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4). Subscale descriptor wording follows standard clinical phrasing rather than the copyrighted original instrument's exact text; point values and structure (6 subscales, 5 scored 1-4, friction/shear scored 1-3, total 6-23) verified." }
+  ],
+  "engine": "additive",
+  "purpose": "Standardized bedside assessment of pressure-injury risk in a hospitalized patient, driving how aggressively to intervene (repositioning frequency, support surface, nutrition consult) — note the score runs the OPPOSITE direction from most clinical scores: LOWER means HIGHER risk.",
+  "notes": "Unlike most scores in this app, a LOWER Braden total means HIGHER risk — double check you're reading the direction correctly before acting on it.",
+  "items": [
+    {
+      "key": "sensory",
+      "label": "Sensory perception — ability to respond meaningfully to pressure-related discomfort",
+      "options": [
+        { "label": "Completely limited — unresponsive to painful stimuli, or limited ability to feel pain over most of the body", "points": 1 },
+        { "label": "Very limited — responds only to painful stimuli; cannot communicate discomfort except by moaning/restlessness, or has a sensory impairment limiting the ability to feel pain/discomfort over half the body", "points": 2 },
+        { "label": "Slightly limited — responds to verbal commands but cannot always communicate discomfort, or has some sensory impairment limiting ability to feel pain/discomfort in 1-2 extremities", "points": 3 },
+        { "label": "No impairment — responds to verbal commands, no sensory deficit that would limit ability to feel/voice pain or discomfort", "points": 4 }
+      ]
+    },
+    {
+      "key": "moisture",
+      "label": "Moisture — degree to which skin is exposed to moisture",
+      "options": [
+        { "label": "Constantly moist — skin kept moist almost constantly by sweat, urine, etc.; dampness detected every time patient is moved", "points": 1 },
+        { "label": "Very moist — skin often but not always moist; linen must be changed at least once per shift", "points": 2 },
+        { "label": "Occasionally moist — skin occasionally moist, requiring an extra linen change about once a day", "points": 3 },
+        { "label": "Rarely moist — skin usually dry, linen changed only at routine intervals", "points": 4 }
+      ]
+    },
+    {
+      "key": "activity",
+      "label": "Activity — degree of physical activity",
+      "options": [
+        { "label": "Bedfast — confined to bed", "points": 1 },
+        { "label": "Chairfast — ability to walk severely limited or nonexistent; cannot bear own weight/must be assisted into a chair or wheelchair", "points": 2 },
+        { "label": "Walks occasionally — walks occasionally during the day but for very short distances, with or without assistance; spends majority of each shift in bed/chair", "points": 3 },
+        { "label": "Walks frequently — walks outside the room at least twice a day and inside the room at least once every 2 hours during waking hours", "points": 4 }
+      ]
+    },
+    {
+      "key": "mobility",
+      "label": "Mobility — ability to change and control body position",
+      "options": [
+        { "label": "Completely immobile — cannot make even slight changes in body/extremity position without assistance", "points": 1 },
+        { "label": "Very limited — makes occasional slight changes in body/extremity position but cannot make frequent or significant changes independently", "points": 2 },
+        { "label": "Slightly limited — makes frequent, though slight, changes in body/extremity position independently", "points": 3 },
+        { "label": "No limitation — makes major and frequent changes in position without assistance", "points": 4 }
+      ]
+    },
+    {
+      "key": "nutrition",
+      "label": "Nutrition — usual food intake pattern",
+      "options": [
+        { "label": "Very poor — never eats a complete meal, rarely eats more than a third of any food offered, eats poorly overall, or is NPO/on clear liquids/IV fluids for more than 5 days", "points": 1 },
+        { "label": "Probably inadequate — rarely eats a complete meal, generally eats only about half of food offered; occasionally takes a supplement, or receives less than optimal tube-feed/TPN volume", "points": 2 },
+        { "label": "Adequate — eats over half of most meals, occasionally refuses a meal but will usually take a supplement if offered, or is on tube feeding/TPN meeting most nutritional needs", "points": 3 },
+        { "label": "Excellent — eats most of every meal, never refuses a meal, does not require supplementation", "points": 4 }
+      ]
+    },
+    {
+      "key": "frictionShear",
+      "label": "Friction and shear",
+      "options": [
+        { "label": "Problem — requires moderate to maximum assistance to move; complete lifting without sliding against sheets is impossible; frequent sliding down in bed/chair requiring frequent repositioning with maximum assistance; spasticity/contractures/agitation lead to almost constant friction", "points": 1 },
+        { "label": "Potential problem — moves feebly or requires minimum assistance; during a move, skin probably slides to some extent against sheets/chair/restraints; maintains relatively good position in chair/bed most of the time but occasionally slides down", "points": 2 },
+        { "label": "No apparent problem — moves independently in bed/chair with sufficient strength to lift up completely during a move; maintains good position at all times", "points": 3 }
+      ]
+    }
+  ],
+  "interpretation": [
+    { "min": 17, "max": 23, "label": "17-23 — no measurable risk", "detail": "Continue routine skin assessment and standard preventive practice.", "severity": "info" },
+    { "min": 15, "max": 16, "label": "15-16 — low risk", "detail": "Basic preventive measures: routine repositioning schedule, moisture management, nutrition attention.", "severity": "low" },
+    { "min": 13, "max": 14, "label": "13-14 — moderate risk", "detail": "Escalate: more frequent repositioning, a pressure-redistribution support surface, closer skin checks.", "severity": "moderate" },
+    { "min": 10, "max": 12, "label": "10-12 — high risk", "detail": "Aggressive prevention: frequent repositioning, specialty support surface, nutrition consult, heel protection.", "severity": "high" },
+    { "min": 6, "max": 9, "label": "≤ 9 — very high risk", "detail": "Maximal prevention effort and close, frequent skin surveillance — this patient is at substantial risk without it.", "severity": "critical" }
+  ],
+  "buildNote": "engine: additive, 6 subscales summing to 6-23. Subscale wording is a faithful paraphrase of the standard clinical descriptors rather than the original copyrighted instrument's exact phrasing."
+}
