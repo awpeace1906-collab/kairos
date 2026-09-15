@@ -1,0 +1,87 @@
+{
+  "id": "acute-mesenteric-ischemia",
+  "section": "Reference Library",
+  "category": "Vascular Emergencies",
+  "title": "Acute Mesenteric Ischemia",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["mesenteric ischemia", "bowel ischemia", "AMI (mesenteric)"],
+  "tags": ["mesenteric ischemia", "abdominal pain out of proportion", "vascular emergency", "GI", "ED", "ICU"],
+  "keywords": ["pain out of proportion to exam is the classic and most important clue, early on the abdomen can be soft and benign-appearing", "elevated lactate is a late finding, a normal lactate does not rule this out early", "CT angiography is the diagnostic test of choice, not plain CT abdomen/pelvis without a dedicated arterial-phase protocol", "embolic (usually SMA, often atrial fibrillation source) vs thrombotic (usually at an area of pre-existing atherosclerotic stenosis) vs non-occlusive mesenteric ischemia (low-flow state, often in a hypotensive/vasopressor-dependent ICU patient) vs mesenteric venous thrombosis", "mortality remains high, 30-60 percent overall, largely because of diagnostic delay"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Bala M, et al. Acute mesenteric ischemia: updated guidelines of the World Society of Emergency Surgery. World J Emerg Surg. 2022;17:54.",
+    "Clair DG, Beach JM. Mesenteric Ischemia. N Engl J Med. 2016;374(10):959-968."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). Previously unaddressed anywhere in the corpus; a high-mortality diagnosis whose main enemy is delayed recognition because early exam findings are often unimpressive." }
+  ],
+  "summary": "Acute mesenteric ischemia kills through delay — the exam is often deceptively benign early on, so the diagnosis has to be actively considered on history and risk factors, not waited for on exam or a normal lactate.",
+  "whyThisMatters": "Overall mortality is 30-60% and is driven largely by how long it takes to get from symptom onset to revascularization — every hour of bowel ischemia that progresses to infarction and perforation moves the patient further from a salvageable outcome and closer to a large bowel resection or death. 'Pain out of proportion to exam' exists as a teaching phrase specifically because clinicians keep anchoring on a soft, benign-looking abdomen and delaying imaging.",
+  "clinicalTakeaway": "Think of mesenteric ischemia in anyone with severe, sudden abdominal pain that seems out of proportion to a soft/benign exam — especially with atrial fibrillation, recent MI, known atherosclerotic disease, or a low-flow/vasopressor-dependent ICU state. Do NOT wait on lactate to decide whether to image — it's a late marker and a normal early lactate does not exclude the diagnosis. Get CT angiography (dedicated arterial-phase protocol) directly rather than a routine abdomen/pelvis CT, and get surgery involved early — the diagnosis is time-critical even before peritonitis develops.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recognition — the exam lies early"
+    },
+    {
+      "type": "text",
+      "text": "The single most important clinical clue is pain out of proportion to physical exam findings — severe pain in a patient whose abdomen is still soft, non-distended, and minimally tender. This is because ischemia of the bowel mucosa causes severe visceral pain well before there's enough transmural injury to produce peritoneal signs. By the time peritonitis, rebound, or guarding appear, infarction and perforation may already be underway — waiting for a 'surgical abdomen' on exam is waiting too long."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The four mechanisms"
+    },
+    {
+      "type": "table",
+      "columns": ["Type", "Typical patient", "Mechanism"],
+      "rows": [
+        ["Embolic (~40-50%)", "Atrial fibrillation, recent MI, known cardiac thrombus source", "Embolus lodges in the SMA, classically just past the origin of the middle colic artery — often sudden, severe onset"],
+        ["Thrombotic (~25-30%)", "Known atherosclerotic/PAD disease, chronic mesenteric angina history ('food fear', post-prandial pain, weight loss)", "Acute thrombosis at a pre-existing stenotic plaque — may have a more gradual prodrome before the acute event"],
+        ["Non-occlusive (NOMI) (~20-30%)", "Critically ill, hypotensive, on vasopressors, recent cardiac surgery/dialysis", "Low mesenteric flow state from splanchnic vasoconstriction — no fixed occlusion; classically under-recognized in the ICU because the patient is already sedated/intubated and can't report pain"],
+        ["Mesenteric venous thrombosis (~5-15%)", "Hypercoagulable state, malignancy, portal hypertension, recent abdominal surgery", "Venous outflow obstruction — often more indolent onset over days than the arterial forms"]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Workup"
+    },
+    {
+      "type": "list",
+      "items": [
+        "CT ANGIOGRAPHY (dedicated arterial-phase mesenteric protocol) is the diagnostic test of choice — a routine non-protocoled abdomen/pelvis CT can miss it. If mesenteric ischemia is on the differential, say so explicitly when ordering so the correct protocol is used.",
+        "Lactate is a LATE marker of established ischemia/infarction, not a screening test — a normal lactate does NOT rule out early mesenteric ischemia, and waiting for lactate to rise before imaging costs time the patient doesn't have.",
+        "Other labs (WBC, lipase, D-dimer) are nonspecific and neither rule in nor rule out the diagnosis reliably — don't let a normal WBC or lipase talk you out of imaging if the clinical suspicion is there.",
+        "Non-occlusive mesenteric ischemia (NOMI) is easy to miss in a sedated, intubated, vasopressor-dependent ICU patient who can't report pain — think of it in that population with rising lactate, feeding intolerance, or unexplained clinical deterioration, and maintain the highest mean arterial pressure/perfusion the hemodynamic status allows while working it up."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "A soft, non-tender abdomen does NOT exclude mesenteric ischemia early in its course. If the pain is severe and the risk factors fit (atrial fibrillation, known vascular disease, low-flow ICU state), image with a dedicated CT angiogram rather than reassessing and waiting."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Management once suspected/confirmed"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Emergent surgical (and, where available, vascular/interventional) consultation — do not delay this for a complete workup once the diagnosis is reasonably suspected.",
+        "Resuscitate with IV fluids, but avoid excessive vasopressor use if possible — vasopressors worsen splanchnic vasoconstriction and can convert borderline perfusion into frank NOMI; if pressors are unavoidable, favor agents with less mesenteric vasoconstrictive effect per the treating team's judgment.",
+        "Broad-spectrum antibiotics covering enteric flora, given the risk of bacterial translocation/perforation.",
+        "Anticoagulation (heparin) is typically started once the diagnosis is confirmed, per surgical/vascular guidance, particularly for embolic or venous thrombotic causes — timing relative to any planned intervention is a surgical/vascular team decision.",
+        "Definitive management depends on mechanism and extent — embolectomy/thrombectomy, endovascular revascularization, or surgical exploration with resection of non-viable bowel, sometimes with a planned second-look laparotomy given how hard it can be to judge bowel viability on a single look."
+      ]
+    }
+  ],
+  "related": ["hemorrhagic-shock-mtp", "shock-classification"],
+  "buildNote": "New Vascular Emergencies category, pairs with aortic-dissection-ruptured-aaa. Mechanism-distribution percentages and mortality figures reflect the World Society of Emergency Surgery 2022 guideline and standard EM/surgical teaching; kept as ranges rather than false-precision point estimates since these vary across series."
+}

@@ -12,7 +12,11 @@
     "BiVent",
     "recruitment maneuver ART trial",
     "decremental PEEP trial",
-    "intraoperative protective ventilation IMPROVE PROVHILO"
+    "intraoperative protective ventilation IMPROVE PROVHILO",
+    "prone positioning ARDS",
+    "PROSEVA",
+    "neuromuscular blockade ARDS",
+    "inhaled nitric oxide ARDS"
   ],
   "tags": [
     "ARDS",
@@ -20,6 +24,9 @@
     "recruitment maneuver",
     "PEEP titration",
     "intraoperative ventilation",
+    "prone positioning",
+    "refractory hypoxemia",
+    "inhaled nitric oxide",
     "ICU",
     "OR"
   ],
@@ -30,18 +37,29 @@
     "ART trial harm PEEP 45 peak 60",
     "staircase recruitment cap 40-50",
     "decremental PEEP trial",
-    "IMPROVE low tidal volume PROVHILO no benefit high PEEP RM"
+    "IMPROVE low tidal volume PROVHILO no benefit high PEEP RM",
+    "PROSEVA proning had a bigger mortality effect than any other ARDS intervention including lung-protective ventilation itself, 16+ hours a day early in moderate-severe ARDS",
+    "ROSE trial found continuous 48-hour cisatracurium infusion was not superior to as-needed paralysis with light sedation, and may cause harm, don't reflexively start a continuous NMB infusion",
+    "inhaled nitric oxide improves oxygenation transiently but has never shown a mortality benefit, use it as a bridge/rescue not a routine therapy"
   ],
   "contentType": "reference",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2027-09-03",
   "review_tier": 1,
   "sources": [
     "Critical Vector — Vent Pocket Guide: APRV, Recruitment, Intraoperative Protective Ventilation",
-    "ART trial (JAMA 2017); IMPROVE (NEJM 2013); PROVHILO (Lancet 2014); APRV/BiVent meta-analysis 2026"
+    "ART trial (JAMA 2017); IMPROVE (NEJM 2013); PROVHILO (Lancet 2014); APRV/BiVent meta-analysis 2026",
+    "Guerin C, et al. Prone Positioning in Severe Acute Respiratory Distress Syndrome (PROSEVA). N Engl J Med. 2013;368(23):2159-2168.",
+    "National Heart, Lung, and Blood Institute PETAL Network. Early Neuromuscular Blockade in ARDS (ROSE). N Engl J Med. 2019;380(21):1997-2008.",
+    "Gebistorf F, et al. Inhaled nitric oxide for acute respiratory distress syndrome (ARDS) in children and adults. Cochrane Database Syst Rev. 2016."
   ],
   "changelog": [
+    {
+      "version": 4,
+      "date": "2026-09-15",
+      "change": "Added a rescue-therapies section for refractory hypoxemia — prone positioning (PROSEVA), neuromuscular blockade (ROSE trial), and inhaled nitric oxide — a genuine content gap identified in the fresh-look content audit (Batch 6, 2026-09-15). Extended, not duplicated: this module already covered APRV/recruitment/intraoperative PEEP as 'beyond lung-protective' strategies, and rescue therapies for refractory hypoxemia are a natural, coherent addition to that same scope rather than a separate module."
+    },
     {
       "version": 3,
       "date": "2026-09-15",
@@ -60,7 +78,7 @@
   ],
   "summary": "Three related topics past the standard lung-protective bundle. APRV setup varies more across centres than any other mode. Aggressive maximal recruitment (ART: PEEP 45, peak 60) caused harm — a moderate staircase manoeuvre plus a decremental PEEP trial is a different thing. In the routine surgical patient, low tidal volume does the work; added PEEP/recruitment mostly adds haemodynamic cost.",
   "whyThisMatters": "The interventions past the lung-protective bundle are where enthusiasm outran evidence: maximal recruitment (ART) killed patients, APRV is set up differently at every centre, and routine intraoperative PEEP mostly buys haemodynamic cost for no benefit. Knowing where the line is matters more than knowing the manoeuvres.",
-  "clinicalTakeaway": "In established ARDS, low tidal volume and a titrated PEEP do the work; reserve a moderate staircase recruitment plus a decremental PEEP trial for refractory hypoxaemia, and avoid the ART-style maximal manoeuvre. Use APRV only if the team runs it routinely. In the routine surgical patient, low tidal volume is enough — don't add PEEP or recruitment reflexively.",
+  "clinicalTakeaway": "In established ARDS, low tidal volume and a titrated PEEP do the work; reserve a moderate staircase recruitment plus a decremental PEEP trial for refractory hypoxaemia, and avoid the ART-style maximal manoeuvre. Use APRV only if the team runs it routinely. In the routine surgical patient, low tidal volume is enough — don't add PEEP or recruitment reflexively. For refractory hypoxaemia despite all of this: prone EARLY in moderate-severe ARDS (P/F ≤150) rather than as a last resort, reserve neuromuscular blockade for dyssynchrony/proning rather than a routine continuous infusion, and treat inhaled nitric oxide as a temporizing bridge, not a therapy with a mortality benefit.",
   "body": [
     {
       "type": "heading",
@@ -152,6 +170,41 @@
     {
       "type": "text",
       "text": "Read together: the low tidal volume is doing the real work. In the routine open-abdominal population, PEEP and recruitment added on top add haemodynamic cost without a demonstrated benefit — a mirror of the ART pattern in a lower-acuity population. Later trials (PROBESE in obesity, iPROVE-OLV in one-lung ventilation) suggest PEEP/recruitment may still matter in specific subgroups; that is unsettled."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rescue therapies for refractory hypoxemia"
+    },
+    {
+      "type": "text",
+      "text": "When lung-protective ventilation plus a reasonable PEEP/recruitment strategy still leaves a patient severely hypoxemic, three further interventions are commonly reached for — but they carry very different evidence bases and should not be treated as interchangeable 'more rescue' options."
+    },
+    {
+      "type": "table",
+      "columns": ["Intervention", "Evidence", "Practical takeaway"],
+      "rows": [
+        [
+          "Prone positioning",
+          "PROSEVA (NEJM 2013): moderate-severe ARDS (P/F ≤ 150), prone ≥16 h/day, started EARLY — 28-day mortality 16% prone vs 32.8% supine, one of the largest mortality effects of any ARDS intervention studied, bigger than lung-protective ventilation itself produced in its own original trials",
+          "First-line rescue, not a last resort — apply EARLY in moderate-severe ARDS (P/F ≤150) rather than waiting until every other option is exhausted. Needs a protocolized team (pressure injury prevention, ETT/line security, a plan for the patient developing an emergency while prone)."
+        ],
+        [
+          "Neuromuscular blockade (paralysis)",
+          "ROSE (NEJM 2019): continuous 48-hour cisatracurium infusion with deep sedation was NOT superior to as-needed NMB with lighter sedation in moderate-severe ARDS, and the continuous-infusion arm trended toward more cardiovascular adverse events",
+          "Don't reflexively start a continuous 48-hour paralytic infusion as a default early-ARDS strategy (this reversed earlier, smaller-trial-driven practice). Reserve NMB for patient-ventilator dyssynchrony, refractory hypoxemia, or during proning itself, using it as-needed rather than as a fixed continuous infusion."
+        ],
+        [
+          "Inhaled nitric oxide (or inhaled epoprostenol)",
+          "Multiple trials/meta-analyses (Cochrane 2016 and subsequent): reliably improves oxygenation transiently, but has never demonstrated a mortality benefit and carries a signal for renal impairment with prolonged use",
+          "Use as a temporizing BRIDGE for severe, refractory hypoxemia (e.g. while arranging proning, ECMO transfer, or another definitive step) — not as a routine ARDS therapy, and be honest that it's buying time/oxygenation numbers rather than changing the outcome trajectory on its own."
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "Rough priority order for genuinely refractory hypoxemia: optimize lung-protective ventilation and PEEP first, prone EARLY if P/F ≤150 (don't save it for last), reserve neuromuscular blockade for dyssynchrony/proning/persistent refractory hypoxemia rather than routine continuous use, and treat inhaled pulmonary vasodilators as a bridge — with ECMO as the next escalation if all of this is failing (see ECMO & Advanced Circulatory Support)."
     }
   ]
 }

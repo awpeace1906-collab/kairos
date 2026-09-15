@@ -1,0 +1,66 @@
+{
+  "id": "neonatal-early-onset-sepsis-risk",
+  "section": "Peds Module",
+  "category": "Neonatology",
+  "title": "Neonatal Early-Onset Sepsis Risk (Kaiser EOS Model)",
+  "settingEmphasis": ["ed", "icu"],
+  "audience": ["neonate"],
+  "aliases": ["Kaiser EOS calculator", "early-onset sepsis calculator", "Escobar model", "neonatal sepsis risk"],
+  "tags": ["early-onset sepsis", "neonatal sepsis", "Kaiser calculator", "GBS", "chorioamnionitis", "neonatology", "ED", "ICU"],
+  "keywords": ["this is NOT a simple point-based score you can hand-calculate, it's a multivariable regression model that also needs your own institution's baseline EOS incidence as an input, use the actual online tool", "inputs are gestational age, maternal highest antepartum temperature, maternal GBS status, duration of rupture of membranes, type and timing of intrapartum antibiotics, then the infant's clinical exam in the first 12 hours modifies the estimate further", "reduces unnecessary antibiotic exposure in well-appearing newborns while maintaining safety, that's the entire point of using it over a fixed rule-based checklist", "incidence of EOS overall is roughly 0.5-1.2 per 1000 live births, most exposed newborns do not develop sepsis", "a sick-appearing or clinically abnormal infant is managed on clinical grounds, the calculator is for risk-stratifying the well-appearing exposed newborn, not overriding clinical concern"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Kuzniewicz MW, et al. A Quantitative, Risk-Based Approach to the Management of Neonatal Early-Onset Sepsis. JAMA Pediatr. 2017;171(4):365-371.",
+    "Achten NB, et al. Update to the Neonatal Early-Onset Sepsis Calculator Utilizing a Contemporary Cohort. Pediatrics. 2024;154(4):e2023065267.",
+    "Kaiser Permanente Division of Research. Neonatal Early-Onset Sepsis Calculator — neonatalsepsiscalculator.kaiserpermanente.org."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). Built as a reference/orientation module rather than a reproduced calculator engine — WebSearch confirmed the underlying model is a multivariable Bayesian regression that also requires the user's OWN institution's baseline EOS incidence as an input, which makes faithfully reproducing it as a static point-based tool here both infeasible and risky (a wrong or stale coefficient could misinform a decision about antibiotics in a newborn). This follows the same no-fabrication discipline used for GRACE ACS (flagged external/incomplete rather than reproduced)." }
+  ],
+  "kind": "reference",
+  "purpose": "Orient the bedside clinician to what the Kaiser Permanente neonatal early-onset sepsis (EOS) risk calculator does, what it needs as inputs, and when to use the real tool — this module intentionally does not attempt to reproduce its regression math.",
+  "ageRange": "Neonates ≥34 weeks gestational age in the first 12-24 hours of life (the tool's validated population).",
+  "body": [
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "This is a multivariable regression model, not a simple additive point score — it cannot be faithfully hand-calculated or reproduced as a static table, and it requires your OWN institution's baseline EOS incidence as an input. Use the actual calculator at neonatalsepsiscalculator.kaiserpermanente.org (or your institution's integrated EHR version) rather than approximating it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What the model does"
+    },
+    {
+      "type": "text",
+      "text": "The Kaiser Permanente EOS calculator estimates an individual newborn's risk of early-onset sepsis using a two-stage approach: first, it establishes a PRIOR probability of EOS based on maternal/perinatal risk factors present at birth — gestational age, highest maternal antepartum temperature, maternal Group B Strep (GBS) status, duration of rupture of membranes, and the type/timing of intrapartum antibiotics given. Second, it MODIFIES that prior estimate using the infant's own clinical status/exam findings observed over the first 12 hours of life, producing a final individualized risk estimate that guides whether to draw blood cultures, start empiric antibiotics, or simply observe with serial exams."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Why it needs YOUR institution's baseline incidence"
+    },
+    {
+      "type": "text",
+      "text": "Overall EOS incidence is roughly 0.5-1.2 cases per 1000 live births, but this varies by population and setting — the tool asks for the specific EOS incidence at the birth hospital/health system as a baseline input, because the same combination of risk factors translates into a different absolute risk depending on how common EOS actually is in that population. This is precisely why a generic, non-institution-specific version of this tool would give a misleading number — it isn't a fixed formula independent of context."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What it's for — and what it isn't for"
+    },
+    {
+      "type": "list",
+      "items": [
+        "It's designed to reduce unnecessary antibiotic exposure and NICU admission in WELL-APPEARING newborns with some risk-factor exposure, by individualizing risk rather than applying a blunt categorical rule (e.g. 'any maternal fever gets empiric antibiotics'), while maintaining safety in multiple validation cohorts.",
+        "It is NOT a substitute for clinical judgment in a sick-appearing or clinically abnormal newborn — an infant with respiratory distress, temperature instability, lethargy, or other signs of illness is managed on clinical grounds and gets appropriate workup/treatment regardless of what a risk calculator would estimate for an asymptomatic infant with the same exposure history.",
+        "The tool has been updated since its original derivation (a 2024 Pediatrics update recalibrated it against a more contemporary cohort) — use the current, actively-maintained version rather than an older cached calculation method."
+      ]
+    }
+  ],
+  "buildNote": "peds-tool with kind=reference. Deliberately built as an orientation/when-to-use module rather than an embedded calculator — the model's Bayesian two-stage structure and its dependence on institution-specific baseline incidence were WebSearch-confirmed against the JAMA Pediatrics 2017 derivation and the 2024 Pediatrics recalibration, and both make static reproduction here inappropriate. This mirrors how grace-acs.json is flagged external/incomplete rather than having its proprietary math guessed at. peds-tool schema has no related[] field."
+}

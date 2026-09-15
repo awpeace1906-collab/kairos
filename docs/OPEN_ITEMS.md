@@ -6,41 +6,54 @@ Living tracker. Two lists:
    or original content, existing Critical Vector / AnesCalc assets) before the
    affected content can be finalized.
 
-Last updated: 2026-09-14 — the "NEXT SESSION" block and both checklists below
-were fully reconciled against actual current state on this date (many items
-below had drifted stale — done work left unchecked, or superseded plans still
-listed as open). The **Progress log** further down is an append-only
-chronological record and was left untouched; trust it over any summary above it
-for "what happened when."
+Last updated: 2026-09-15 — see the fresh-look audit entry in the Progress log
+below for current state. The **Progress log** further down is an append-only
+chronological record; trust it over any summary above it for "what happened
+when."
 
-## ▶ NEXT SESSION — start here (2026-09-14)
-State: **321 modules**, pipeline green (321/0, tests 252/0). Both clients are
-fully live: the site is deployed to GitHub Pages (Settings → Pages → Source =
-"GitHub Actions" is done, `CONTENT_BASE_URL` is set), CI is green on all 4
-checks (`validate`, `build`, `build-and-test` = iOS, `deploy`), and iOS
-`ContentStore.remoteBase` OTA-syncs against the live manifest (a real caching
-bug in that sync path was found and fixed 2026-09-14 — see the progress log).
-The 5-phase UI plan (bottom tab bar, count-badge removal, calculator selects +
-lateral-scroll fix, Settings redesign, procedures gap) is done except the
-open-ended "full visual pass," which is next in the queue along with a look at
-a competitor app (medhuddle.app) for ideas.
+## ▶ NEXT SESSION — start here (2026-09-15)
+State: **398 modules**, pipeline green (validate 398/0, build/sync/test
+281/0), iOS `TEST SUCCEEDED` (10/10 EngineTests). The original 2026-09-14
+content audit fully closed out at the end of Batch 5 (384 modules). A **fresh
+follow-up gap audit** ran 2026-09-15 (4 parallel domain agents — ED/Trauma,
+ICU/Critical Care, OR/Anesthesia/Perioperative, Peds/OB — each cross-checking
+the live 384-module inventory before proposing anything) and surfaced **49
+genuine, non-duplicate candidate gaps**. The highest-acuity ~14 of those
+shipped as **"fresh-look Batch 6"** (→ 398 modules) — see the progress log
+entry below for the full list. **35 candidates from that same audit remain
+un-built** and are the natural next thing to scope/batch with the user:
 
-Remaining open items (see the two checklists below for the full, reconciled
-list):
-1. **A full content audit (currency + gaps) ran 2026-09-14** — see "Content
-   audit 2026-09-14" under Things to address, below. Headline results: no
-   wrong clinical numbers found anywhere sampled; one genuinely significant
-   currency gap (Surviving Sepsis Campaign 2026 guideline supersedes the 2021
-   version `septic-shock-resuscitation` is still built on); a long list of
-   real, specific, confirmed content gaps across every section (Obstetric/
-   Newborn has no Calculators category at all; ASPECTS, Duke Criteria,
-   Child-Pugh, febrile-infant risk stratification, and pericardiocentesis are
-   the highest-yield single missing items). Full breakdown below — this is
-   the natural next thing to scope and prioritize with the user before
-   building.
-2. **UI Phase 4 — full visual pass.** The concrete backlog closed 2026-09-14;
-   what's left is open-ended.
-3. **Things only the user can supply**, still genuinely open: the local
+- ED/Trauma remaining: necrotizing soft tissue infection management, epistaxis
+  management, acute scrotum (torsion/priapism/Fournier's), accidental
+  hypothermia staging, HINTS vertigo, pelvic binder/hemorrhage, blunt chest
+  trauma, acute limb ischemia (8 of the original 15 — the other 7 shipped in
+  Batch 6).
+- ICU/Critical Care remaining: RV failure/pulm HTN crisis, invasive
+  hemodynamic monitoring (art line/CVP/PAC), abdominal compartment syndrome,
+  ICU nutrition, severe alcohol withdrawal/DTs escalation, SCAI cardiogenic
+  shock staging (calculator), MCS device selection (IABP/Impella/VA-ECMO —
+  flagged as needing a "what the intensivist should know" framing, not a
+  device-choice implication), opioid withdrawal induction (flagged: write as
+  principles + when to involve addiction medicine, not a rigid dosing ladder,
+  since protocols vary by institution), post-cardiac-surgery vasoplegia (9 of
+  12 — ISTH DIC, post-cardiac-arrest/TTM, and the ARDS rescue-therapies
+  extension shipped in Batch 6).
+- OR/Anesthesia remaining: perioperative home-med management (incl.
+  GLP-1/SGLT2i), intraoperative awareness, emergence delirium/POD, PONV
+  treatment algorithm, positioning nerve injury prevention, pneumoperitoneum/
+  Trendelenburg physiology, one-lung ventilation basics, anesthesia machine
+  checkout (8 of 10 — OR fire safety and cricothyroidotomy shipped in Batch
+  6).
+- Peds/OB remaining: peds asthma severity/management, neonatal hypoglycemia,
+  abusive head trauma, peds dehydration/ORT, peds non-sedation procedural
+  pain, peds weight-based IM epi anaphylaxis dosing, peripartum
+  cardiomyopathy, amniotic fluid embolism (8 of 12 — Kawasaki, peds status
+  epilepticus ladder, neonatal EOS risk orientation, and peds toxic ingestion
+  shipped in Batch 6).
+
+Also still open from the prior cycle:
+1. **UI Phase 4 — full visual pass.** Open-ended, unchanged since 2026-09-14.
+2. **Things only the user can supply**, still genuinely open: the local
    antibiogram (empiric-antibiotic agent selection), GRACE 2.0's proprietary
    coefficients, defibrillator pad transition weight and LMA/blade sizing for
    your specific device models, Xcode `DEVELOPMENT_TEAM` for real-device
@@ -49,6 +62,90 @@ list):
    POCUS exam trees).
 
 ## Progress log
+- 2026-09-15 — **Fresh-look content audit + Batch 6 shipped (→ 398
+  modules).** A follow-up gap audit (separate from and after the 2026-09-14
+  audit, which fully closed at Batch 5) ran via 4 parallel domain-scoped
+  research agents, each instructed to cross-check the live 384-module
+  inventory before proposing anything — found **49 genuine candidate gaps**,
+  0 duplicates of existing content. Built the highest-acuity ~14 as Batch 6;
+  the other 35 are queued and itemized in the NEXT SESSION block above.
+  Two new Reference Library categories added: `vascular-emergencies` and
+  `ent-ophtho` ("ENT / Ophtho / Dental / GU"); a matching Procedures category
+  `ent-ophtho-procedures` was also added for the one new ENT/ophtho
+  procedure. New Reference Library: `aortic-dissection-ruptured-aaa`
+  (ADD-RS scoring + Stanford A/B impulse control, paired with ruptured-AAA
+  permissive-hypotension management in one module), `acute-mesenteric-
+  ischemia` (pain-out-of-proportion-to-exam as the core teaching point; a
+  normal lactate does NOT rule it out early), `carbon-monoxide-cyanide-
+  poisoning` (pulse oximetry reads falsely normal — co-oximetry required;
+  HBO indications; empiric hydroxocobalamin for suspected concurrent cyanide
+  in structure-fire smoke inhalation, without waiting for a level),
+  `ophthalmologic-emergencies` (angle-closure glaucoma, globe rupture, CRAO,
+  chemical injury, PLUS orbital compartment syndrome/retrobulbar hemorrhage
+  as a 5th emergency added mid-build once its role as the actual indication
+  for lateral canthotomy became clear), `deep-neck-space-infections` (PTA,
+  adult epiglottitis — explicitly NOT just a peds disease — and Ludwig's
+  angina, organized around a shared airway-first theme), `post-cardiac-
+  arrest-care-ttm` (TTM2-driven shift from mandatory 33°C hypothermia to
+  active fever-prevention/normothermia as the primary strategy; the ≥72h
+  neuroprognostication window is counted from normothermia, not from ROSC —
+  cross-linked back from `acls-adult-cardiac-arrest`, whose thin 2-line
+  post-ROSC callout now points here instead of being expanded in place), and
+  `or-fire-safety` (fire triangle + timeout risk assessment; airway fire's
+  stop-gas/remove-tube/irrigate-with-saline/reventilate-with-air-before-
+  oxygen sequence). Extended (not duplicated) `advanced-ards-ventilation`
+  with a rescue-therapies section — prone positioning (PROSEVA: 16.2%
+  absolute mortality reduction, bigger than any other single ARDS
+  intervention studied, apply EARLY not as a last resort), neuromuscular
+  blockade (ROSE trial reversed the earlier continuous-infusion default —
+  as-needed only), inhaled nitric oxide (bridge/rescue only, never shown a
+  mortality benefit) — chosen over a new file since this module's own title
+  ("Beyond Lung-Protective") already scoped it as the right home. New
+  Calculators: `isth-dic-score` (additive engine; 2025 ISTH update
+  quantified the D-dimer point thresholds at >3x/>7x ULN; live-verified in
+  browser — selections summing to 7 correctly banded as "Compatible with
+  overt DIC"). New Procedures: `lateral-canthotomy` (scalpel-finger-bougie-
+  style sequence verified against StatPearls/Merck Manual — canthotomy, then
+  inferior crus by 'strumming' identification cut inferoposteriorly, superior
+  crus only if IOP still >40; live-verified rendering in browser) and
+  `cricothyroidotomy` (scalpel-finger-bougie technique, 6.0 cuffed ETT
+  railroad target — previously only referenced as the difficult-airway
+  algorithm's terminal endpoint with no standalone procedure card of its
+  own). New Peds Module: `kawasaki-disease` (classic vs incomplete criteria —
+  incomplete is NOT a lesser diagnosis, especially under 6 months; IVIG 2g/kg
+  within 10 days is what actually prevents coronary aneurysm),
+  `peds-status-epilepticus-ladder` (the 2016 AES four-phase timed algorithm —
+  built using `sourceOfTruth` to point at the 5 individual peds anti-seizure
+  drug cards that already existed but had never been unified into a timed
+  structure, matching what `status-epilepticus-adult` already has),
+  `neonatal-early-onset-sepsis-risk` (deliberately built as an orientation
+  reference, NOT a reproduced calculator — WebSearch confirmed the Kaiser
+  model is a multivariable Bayesian regression that also requires the user's
+  own institution's baseline EOS incidence as an input, making a static
+  point-based reproduction both infeasible and risky; same no-fabrication
+  call as GRACE ACS being left external/incomplete), and
+  `peds-toxic-ingestion-one-pill-can-kill` (scoped to avoid restating
+  CCB/beta-blocker/clonidine/TCA/opioid/sulfonylurea management that already
+  lives elsewhere in the corpus — genuinely new standalone content only for
+  camphor, methyl salicylate/oil of wintergreen, and chloroquine, none of
+  which existed anywhere before). Both double-checks the user flagged before
+  approving the batch were honored: MCS device selection and opioid
+  withdrawal induction were explicitly deferred to the 35-item backlog above
+  rather than built now, precisely because they need the "what to know, not
+  a rigid protocol" framing called out at scoping time. Pipeline: validate
+  398/0, build/sync/test 281/0, iOS `TEST SUCCEEDED` 10/10 — note the
+  simulator destination needed an explicit `OS=26.5` added to the
+  `-destination` flag this session (bare `name:iPhone 17 Pro` started
+  erroring as "no available devices matched" once multiple OS versions of
+  that simulator existed on this machine; future sessions should use
+  `platform=iOS Simulator,name=iPhone 17 Pro,OS=26.5` or check `xcodebuild
+  -showdestinations` if that stops working too). Also hit and fixed the
+  already-known local `git` breakage at the start of this session — every
+  git command was failing with an Xcode license prompt (`sudo xcodebuild
+  -license`) that needed the user's own interactive terminal; not a Kairos
+  repo issue, just noting it here in case it recurs on this machine.
+
+- 2026-09-15 — **Content audit Batch 5 shipped (→ 384 modules) — closes out
 - 2026-09-15 — **Content audit Batch 5 shipped (→ 384 modules) — closes out
   every remaining item from the original 2026-09-14 audit's gap list.**
   Pre-build verification pass caught **one more false positive**: "electrolyte

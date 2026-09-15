@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 788,
+  "count": 828,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -526,6 +526,42 @@
       ]
     },
     {
+      "text": "American Heart Association. Part 11: Post-Cardiac Arrest Care: 2025 AHA Guidelines for CPR and ECC. Circulation. 2025.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "post-cardiac-arrest-care-ttm",
+          "title": "Post-Cardiac Arrest Care & Targeted Temperature Management",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/post-cardiac-arrest-care-ttm"
+        }
+      ]
+    },
+    {
+      "text": "Anseeuw K, et al. Cyanide poisoning by fire smoke inhalation: a European expert consensus. Eur J Emerg Med. 2013;20(1):2-9.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "carbon-monoxide-cyanide-poisoning",
+          "title": "Carbon Monoxide Poisoning & Cyanide Co-Exposure",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/carbon-monoxide-cyanide-poisoning"
+        }
+      ]
+    },
+    {
+      "text": "Apfelbaum JL, et al. Practice Advisory for the Prevention and Management of Operating Room Fires: an updated report by the ASA Task Force.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "or-fire-safety",
+          "title": "OR Fire Safety & Airway Fire Protocol",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/or-fire-safety"
+        }
+      ]
+    },
+    {
       "text": "Apgar V. 1953; AAP–ACOG Committee Opinion on the Apgar Score (2015, reaffirmed)",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -642,6 +678,18 @@
           "title": "PESI (Pulmonary Embolism Severity Index)",
           "section": "Calculators",
           "route": "/calculators/pulmonary-pe-dvt-resp-failure/pesi"
+        }
+      ]
+    },
+    {
+      "text": "Bala M, et al. Acute mesenteric ischemia: updated guidelines of the World Society of Emergency Surgery. World J Emerg Surg. 2022;17:54.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "acute-mesenteric-ischemia",
+          "title": "Acute Mesenteric Ischemia",
+          "section": "Reference Library",
+          "route": "/reference-library/vascular-emergencies/acute-mesenteric-ischemia"
         }
       ]
     },
@@ -1066,6 +1114,18 @@
       ]
     },
     {
+      "text": "Difficult Airway Society (DAS) 2015 Guidelines for management of unanticipated difficult intubation.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "cricothyroidotomy",
+          "title": "Emergency Cricothyroidotomy (Surgical Airway)",
+          "section": "Procedures",
+          "route": "/procedures/airway-sedation-workflows/cricothyroidotomy"
+        }
+      ]
+    },
+    {
       "text": "Difficult Airway Society (DAS) 2025 guidelines for unanticipated difficult intubation in adults",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1182,6 +1242,18 @@
           "title": "Paracentesis",
           "section": "Procedures",
           "route": "/procedures/aspiration-drainage-procedures/paracentesis"
+        }
+      ]
+    },
+    {
+      "text": "European Resuscitation Council / European Society of Intensive Care Medicine. Guidelines 2025: Post-Resuscitation Care.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "post-cardiac-arrest-care-ttm",
+          "title": "Post-Cardiac Arrest Care & Targeted Temperature Management",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/post-cardiac-arrest-care-ttm"
         }
       ]
     },
@@ -1314,6 +1386,18 @@
           "title": "Valproate — Pediatric Status Epilepticus (Second-Line)",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-valproate-status"
+        }
+      ]
+    },
+    {
+      "text": "Glauser T, et al. Evidence-Based Guideline: Treatment of Convulsive Status Epilepticus in Children and Adults: Report of the Guideline Committee of the American Epilepsy Society. Epilepsy Curr. 2016;16(1):48-61.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "peds-status-epilepticus-ladder",
+          "title": "Pediatric Status Epilepticus — Treatment Ladder",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-status-epilepticus-ladder"
         }
       ]
     },
@@ -1510,6 +1594,18 @@
       ]
     },
     {
+      "text": "Isselbacher EM, et al. 2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease. Circulation. 2022;146(24):e334-e482.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "aortic-dissection-ruptured-aaa",
+          "title": "Aortic Dissection & Ruptured AAA",
+          "section": "Reference Library",
+          "route": "/reference-library/vascular-emergencies/aortic-dissection-ruptured-aaa"
+        }
+      ]
+    },
+    {
       "text": "Jiménez D et al. Arch Intern Med 2010; ESC 2019 Acute PE guideline",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1602,6 +1698,18 @@
           "title": "Traumatic Cardiac Arrest",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/traumatic-cardiac-arrest"
+        }
+      ]
+    },
+    {
+      "text": "McCrindle BW, et al. Diagnosis, Treatment, and Long-Term Management of Kawasaki Disease: A Scientific Statement for Health Professionals From the American Heart Association. Circulation. 2017;135(17):e927-e999.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "kawasaki-disease",
+          "title": "Kawasaki Disease",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/kawasaki-disease"
         }
       ]
     },
@@ -1806,6 +1914,18 @@
           "title": "Rockall Score (Upper GI Bleed)",
           "section": "Calculators",
           "route": "/calculators/gi-renal-metabolic/rockall"
+        }
+      ]
+    },
+    {
+      "text": "Rogers AM, et al. Sensitivity of the Aortic Dissection Detection Risk Score, a Novel Guideline-Based Tool for Identification of Acute Aortic Dissection at Initial Presentation. Circulation. 2011;123(20):2213-2218.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "aortic-dissection-ruptured-aaa",
+          "title": "Aortic Dissection & Ruptured AAA",
+          "section": "Reference Library",
+          "route": "/reference-library/vascular-emergencies/aortic-dissection-ruptured-aaa"
         }
       ]
     },
@@ -2668,6 +2788,18 @@
       ]
     },
     {
+      "text": "Kuzniewicz MW, et al. A Quantitative, Risk-Based Approach to the Management of Neonatal Early-Onset Sepsis. JAMA Pediatr. 2017;171(4):365-371.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "neonatal-early-onset-sepsis-risk",
+          "title": "Neonatal Early-Onset Sepsis Risk (Kaiser EOS Model)",
+          "section": "Peds Module",
+          "route": "/peds-module/neonatology/neonatal-early-onset-sepsis-risk"
+        }
+      ]
+    },
+    {
       "text": "Mahler SA et al. Circ Cardiovasc Qual Outcomes 2015 (HEART Pathway RCT)",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -3336,6 +3468,18 @@
           "title": "Peripheral IV Vasopressors — How Risky, Really?",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/peripheral-iv-vasopressors"
+        }
+      ]
+    },
+    {
+      "text": "Achten NB, et al. Update to the Neonatal Early-Onset Sepsis Calculator Utilizing a Contemporary Cohort. Pediatrics. 2024;154(4):e2023065267.",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "neonatal-early-onset-sepsis-risk",
+          "title": "Neonatal Early-Onset Sepsis Risk (Kaiser EOS Model)",
+          "section": "Peds Module",
+          "route": "/peds-module/neonatology/neonatal-early-onset-sepsis-risk"
         }
       ]
     },
@@ -4624,6 +4768,18 @@
       ]
     },
     {
+      "text": "Walker RA, Adhikari S. Eye Emergencies. In: Tintinalli's Emergency Medicine, 9th ed.",
+      "group": "Reference texts & drug libraries",
+      "usedBy": [
+        {
+          "id": "ophthalmologic-emergencies",
+          "title": "Ophthalmologic Emergencies",
+          "section": "Reference Library",
+          "route": "/reference-library/ent-ophtho-dental-gu/ophthalmologic-emergencies"
+        }
+      ]
+    },
+    {
       "text": "2025 lung-ultrasound pneumothorax algorithm",
       "group": "Other primary sources",
       "usedBy": [
@@ -4954,6 +5110,30 @@
       ]
     },
     {
+      "text": "American Heart Association. Update on Diagnosis and Management of Kawasaki Disease: Identifying and Managing Patients at High Risk. Circulation. 2025.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "kawasaki-disease",
+          "title": "Kawasaki Disease",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/kawasaki-disease"
+        }
+      ]
+    },
+    {
+      "text": "American Society of Anesthesiologists. Practice Advisory for the Prevention and Management of Operating Room Fires. Anesthesiology. 2013;118(2):271-290.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "or-fire-safety",
+          "title": "OR Fire Safety & Airway Fire Protocol",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/or-fire-safety"
+        }
+      ]
+    },
+    {
       "text": "American Society of Hematology. Sickle cell disease: when and how to transfuse.",
       "group": "Other primary sources",
       "usedBy": [
@@ -5136,6 +5316,30 @@
           "title": "Injury Severity Score (ISS)",
           "section": "Calculators",
           "route": "/calculators/trauma/injury-severity-score"
+        }
+      ]
+    },
+    {
+      "text": "Ballard SR, et al. Lateral Canthotomy and Cantholysis. StatPearls. NCBI Bookshelf.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "lateral-canthotomy",
+          "title": "Lateral Canthotomy & Cantholysis",
+          "section": "Procedures",
+          "route": "/procedures/ent-ophtho-dental-gu/lateral-canthotomy"
+        }
+      ]
+    },
+    {
+      "text": "Bar-Oz B, et al. Medications that can be fatal for a toddler with one tablet or teaspoonful ingestion. Drug Saf. 2004;27(14):1057-1082.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-toxic-ingestion-one-pill-can-kill",
+          "title": "Pediatric Toxic Ingestion — \"One Pill Can Kill\"",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-toxic-ingestion-one-pill-can-kill"
         }
       ]
     },
@@ -5356,6 +5560,18 @@
       ]
     },
     {
+      "text": "Brown CA, et al. Cricothyrotomy. In: The Walls Manual of Emergency Airway Management, 6th ed.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "cricothyroidotomy",
+          "title": "Emergency Cricothyroidotomy (Surgical Airway)",
+          "section": "Procedures",
+          "route": "/procedures/airway-sedation-workflows/cricothyroidotomy"
+        }
+      ]
+    },
+    {
       "text": "Brugada P et al. Circulation 1991",
       "group": "Other primary sources",
       "usedBy": [
@@ -5484,6 +5700,18 @@
           "title": "HIV Post-Exposure Prophylaxis (PEP)",
           "section": "Reference Library",
           "route": "/reference-library/infectious-disease-immunization/hiv-post-exposure-prophylaxis"
+        }
+      ]
+    },
+    {
+      "text": "CDC. Clinical Guidance for Carbon Monoxide Poisoning Following Disasters and Severe Weather.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "carbon-monoxide-cyanide-poisoning",
+          "title": "Carbon Monoxide Poisoning & Cyanide Co-Exposure",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/carbon-monoxide-cyanide-poisoning"
         }
       ]
     },
@@ -5638,6 +5866,18 @@
       ]
     },
     {
+      "text": "Clair DG, Beach JM. Mesenteric Ischemia. N Engl J Med. 2016;374(10):959-968.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acute-mesenteric-ischemia",
+          "title": "Acute Mesenteric Ischemia",
+          "section": "Reference Library",
+          "route": "/reference-library/vascular-emergencies/acute-mesenteric-ischemia"
+        }
+      ]
+    },
+    {
       "text": "Cockcroft DW, Gault MH. Nephron 1976",
       "group": "Other primary sources",
       "usedBy": [
@@ -5694,6 +5934,18 @@
           "title": "Methemoglobinemia — Recognition & Methylene Blue",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/methemoglobinemia"
+        }
+      ]
+    },
+    {
+      "text": "Costain N, Marrie TJ. Ludwig's angina. Am J Med. 2011;124(2):115-117.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "deep-neck-space-infections",
+          "title": "Deep Neck Space Infections — PTA, Epiglottitis & Ludwig's Angina",
+          "section": "Reference Library",
+          "route": "/reference-library/ent-ophtho-dental-gu/deep-neck-space-infections"
         }
       ]
     },
@@ -6322,6 +6574,18 @@
       ]
     },
     {
+      "text": "Dankiewicz J, et al. Hypothermia versus Normothermia after Out-of-Hospital Cardiac Arrest (TTM2). N Engl J Med. 2021;384(24):2283-2294.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "post-cardiac-arrest-care-ttm",
+          "title": "Post-Cardiac Arrest Care & Targeted Temperature Management",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/post-cardiac-arrest-care-ttm"
+        }
+      ]
+    },
+    {
       "text": "Davies PH, Benger JR. Foreign bodies in the nose and ear: a review of techniques for removal in the emergency department. J Accid Emerg Med. 2000.",
       "group": "Other primary sources",
       "usedBy": [
@@ -6594,6 +6858,18 @@
           "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/penetrating-regional-trauma"
+        }
+      ]
+    },
+    {
+      "text": "ECRI Institute. New Clinical Guide to Surgical Fire Prevention.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "or-fire-safety",
+          "title": "OR Fire Safety & Airway Fire Protocol",
+          "section": "Reference Library",
+          "route": "/reference-library/perioperative-anesthesia/or-fire-safety"
         }
       ]
     },
@@ -6970,6 +7246,30 @@
       ]
     },
     {
+      "text": "Gebistorf F, et al. Inhaled nitric oxide for acute respiratory distress syndrome (ARDS) in children and adults. Cochrane Database Syst Rev. 2016.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "advanced-ards-ventilation",
+          "title": "Beyond Lung-Protective: APRV, Recruitment, Intraoperative PEEP",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/advanced-ards-ventilation"
+        }
+      ]
+    },
+    {
+      "text": "Gerstenblith AT, Rabinowitz MP, eds. The Wills Eye Manual, 8th ed.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ophthalmologic-emergencies",
+          "title": "Ophthalmologic Emergencies",
+          "section": "Reference Library",
+          "route": "/reference-library/ent-ophtho-dental-gu/ophthalmologic-emergencies"
+        }
+      ]
+    },
+    {
       "text": "Goldfrank's Toxicologic Emergencies — beta-blocker overdose / membrane-stabilizing activity",
       "group": "Other primary sources",
       "usedBy": [
@@ -7126,6 +7426,30 @@
       ]
     },
     {
+      "text": "Guardiani E, et al. Supraglottitis in the era following widespread immunization against Haemophilus influenzae type B. Laryngoscope. 2010;120(11):2183-2188.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "deep-neck-space-infections",
+          "title": "Deep Neck Space Infections — PTA, Epiglottitis & Ludwig's Angina",
+          "section": "Reference Library",
+          "route": "/reference-library/ent-ophtho-dental-gu/deep-neck-space-infections"
+        }
+      ]
+    },
+    {
+      "text": "Guerin C, et al. Prone Positioning in Severe Acute Respiratory Distress Syndrome (PROSEVA). N Engl J Med. 2013;368(23):2159-2168.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "advanced-ards-ventilation",
+          "title": "Beyond Lung-Protective: APRV, Recruitment, Intraoperative PEEP",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/advanced-ards-ventilation"
+        }
+      ]
+    },
+    {
       "text": "Haydel MJ, et al. Indications for computed tomography in patients with minor head injury. N Engl J Med. 2000;343(2):100-105",
       "group": "Other primary sources",
       "usedBy": [
@@ -7158,6 +7482,18 @@
           "title": "Septic Shock — Resuscitation Targets",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/septic-shock-resuscitation"
+        }
+      ]
+    },
+    {
+      "text": "Hill C, et al. Emergency surgical cricothyroidotomy: 24 case series and analysis of technique. J Emerg Med. 2018.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "cricothyroidotomy",
+          "title": "Emergency Cricothyroidotomy (Surgical Airway)",
+          "section": "Procedures",
+          "route": "/procedures/airway-sedation-workflows/cricothyroidotomy"
         }
       ]
     },
@@ -7282,6 +7618,18 @@
       ]
     },
     {
+      "text": "ISTH SSC Subcommittee on DIC. Updated definition and scoring of disseminated intravascular coagulation in 2025. J Thromb Haemost. 2025.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "isth-dic-score",
+          "title": "ISTH DIC Score",
+          "section": "Calculators",
+          "route": "/calculators/icu-critical-care/isth-dic-score"
+        }
+      ]
+    },
+    {
       "text": "Jain A. FIND / DE-SELECT / CONTROL — a conceptual POCUS framework for antibiotic decisions (Life on the Frontline); reviewed in The Critical Vector (unvalidated framework)",
       "group": "Other primary sources",
       "usedBy": [
@@ -7386,6 +7734,18 @@
           "title": "Peds Pre-Arrival Card — One Weight, Every Number",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/peds-pre-arrival-card"
+        }
+      ]
+    },
+    {
+      "text": "Kaiser Permanente Division of Research. Neonatal Early-Onset Sepsis Calculator — neonatalsepsiscalculator.kaiserpermanente.org.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "neonatal-early-onset-sepsis-risk",
+          "title": "Neonatal Early-Onset Sepsis Risk (Kaiser EOS Model)",
+          "section": "Peds Module",
+          "route": "/peds-module/neonatology/neonatal-early-onset-sepsis-risk"
         }
       ]
     },
@@ -7518,6 +7878,18 @@
           "title": "PERC Rule for PE",
           "section": "Calculators",
           "route": "/calculators/pulmonary-pe-dvt-resp-failure/perc-rule"
+        }
+      ]
+    },
+    {
+      "text": "Klug TE, et al. Peritonsillar abscess: complication of acute tonsillitis or Weber's glands infection? Otolaryngol Head Neck Surg. 2016.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "deep-neck-space-infections",
+          "title": "Deep Neck Space Infections — PTA, Epiglottitis & Ludwig's Angina",
+          "section": "Reference Library",
+          "route": "/reference-library/ent-ophtho-dental-gu/deep-neck-space-infections"
         }
       ]
     },
@@ -7714,6 +8086,18 @@
       ]
     },
     {
+      "text": "LITFL. Procedure: Lateral Canthotomy.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "lateral-canthotomy",
+          "title": "Lateral Canthotomy & Cantholysis",
+          "section": "Procedures",
+          "route": "/procedures/ent-ophtho-dental-gu/lateral-canthotomy"
+        }
+      ]
+    },
+    {
       "text": "Liu YC et al. World J Emerg Med 2012;3(2):114-117",
       "group": "Other primary sources",
       "usedBy": [
@@ -7882,6 +8266,18 @@
       ]
     },
     {
+      "text": "Matteucci MJ. One pill can kill: assessing the potential for fatal poisonings in children. Pediatr Ann. 2005;34(12):964-968.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-toxic-ingestion-one-pill-can-kill",
+          "title": "Pediatric Toxic Ingestion — \"One Pill Can Kill\"",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-toxic-ingestion-one-pill-can-kill"
+        }
+      ]
+    },
+    {
       "text": "McGee DC, Gould MK. Preventing complications of central venous catheterization. N Engl J Med. 2003;348:1123-1133.",
       "group": "Other primary sources",
       "usedBy": [
@@ -7978,6 +8374,18 @@
       ]
     },
     {
+      "text": "Merck Manual Professional Edition. How To Do Lateral Canthotomy.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "lateral-canthotomy",
+          "title": "Lateral Canthotomy & Cantholysis",
+          "section": "Procedures",
+          "route": "/procedures/ent-ophtho-dental-gu/lateral-canthotomy"
+        }
+      ]
+    },
+    {
       "text": "Merritt JL 2nd, Quinonez RA, Bonkowsky JL, et al. A Framework for Evaluation of the Higher-Risk Infant After a Brief Resolved Unexplained Event. Pediatrics. 2019;144(2):e20184101",
       "group": "Other primary sources",
       "usedBy": [
@@ -8040,6 +8448,18 @@
           "title": "Antidotes & Reversal Agents",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/antidotes-reversal-agents"
+        }
+      ]
+    },
+    {
+      "text": "Michael JB, Sztajnkrycer MD. Deadly pediatric poisons: nine common agents that kill at low doses. Emerg Med Clin North Am. 2004;22(4):1019-1050.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-toxic-ingestion-one-pill-can-kill",
+          "title": "Pediatric Toxic Ingestion — \"One Pill Can Kill\"",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-toxic-ingestion-one-pill-can-kill"
         }
       ]
     },
@@ -8152,6 +8572,18 @@
       ]
     },
     {
+      "text": "National Heart, Lung, and Blood Institute PETAL Network. Early Neuromuscular Blockade in ARDS (ROSE). N Engl J Med. 2019;380(21):1997-2008.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "advanced-ards-ventilation",
+          "title": "Beyond Lung-Protective: APRV, Recruitment, Intraoperative PEEP",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/advanced-ards-ventilation"
+        }
+      ]
+    },
+    {
       "text": "National Kidney Foundation. CKD-EPI Creatinine Equation (2021).",
       "group": "Other primary sources",
       "usedBy": [
@@ -8160,6 +8592,18 @@
           "title": "CKD-EPI 2021 eGFR",
           "section": "Calculators",
           "route": "/calculators/gi-renal-metabolic/ckd-epi-egfr"
+        }
+      ]
+    },
+    {
+      "text": "Nazerian P, et al. Diagnostic Accuracy of the Aortic Dissection Detection Risk Score Plus D-Dimer for Acute Aortic Syndromes. Circulation. 2018;137(3):250-258.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "aortic-dissection-ruptured-aaa",
+          "title": "Aortic Dissection & Ruptured AAA",
+          "section": "Reference Library",
+          "route": "/reference-library/vascular-emergencies/aortic-dissection-ruptured-aaa"
         }
       ]
     },
@@ -9460,6 +9904,18 @@
       ]
     },
     {
+      "text": "Taylor FB, et al. Towards definition, clinical and laboratory criteria, and a scoring system for disseminated intravascular coagulation. Thromb Haemost. 2001;86(5):1327-1330.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "isth-dic-score",
+          "title": "ISTH DIC Score",
+          "section": "Calculators",
+          "route": "/calculators/icu-critical-care/isth-dic-score"
+        }
+      ]
+    },
+    {
       "text": "TCCC Handbook — MARCH algorithm and MARCH PAWS extended variant",
       "group": "Other primary sources",
       "usedBy": [
@@ -9688,6 +10144,18 @@
       ]
     },
     {
+      "text": "Varma DR, et al. A review of central retinal artery occlusion: clinical presentation and management. Eye (Lond). 2013;27(6):688-697.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ophthalmologic-emergencies",
+          "title": "Ophthalmologic Emergencies",
+          "section": "Reference Library",
+          "route": "/reference-library/ent-ophtho-dental-gu/ophthalmologic-emergencies"
+        }
+      ]
+    },
+    {
       "text": "Voltage classification, rhabdomyolysis/compartment syndrome risk, and cardiac-monitoring duration WebSearch-verified before writing.",
       "group": "Other primary sources",
       "usedBy": [
@@ -9732,6 +10200,18 @@
           "title": "Acute Radiation Syndrome & Radiological Casualties",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/acute-radiation-syndrome"
+        }
+      ]
+    },
+    {
+      "text": "Weaver LK. Carbon monoxide poisoning. N Engl J Med. 2009;360(12):1217-1225.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "carbon-monoxide-cyanide-poisoning",
+          "title": "Carbon Monoxide Poisoning & Cyanide Co-Exposure",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/carbon-monoxide-cyanide-poisoning"
         }
       ]
     },

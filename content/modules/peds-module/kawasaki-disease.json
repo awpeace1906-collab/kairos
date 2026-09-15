@@ -1,0 +1,77 @@
+{
+  "id": "kawasaki-disease",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Kawasaki Disease",
+  "settingEmphasis": ["ed"],
+  "audience": ["peds"],
+  "aliases": ["mucocutaneous lymph node syndrome", "KD"],
+  "tags": ["Kawasaki disease", "fever 5 days", "coronary artery aneurysm", "IVIG", "vasculitis", "peds", "ED"],
+  "keywords": ["fever for 5 or more days plus 4 of 5 — mucosal changes, conjunctivitis, rash, extremity changes, cervical lymphadenopathy — but incomplete Kawasaki with fewer criteria is real and still needs treatment, especially under 1 year old", "IVIG 2 g/kg single infusion, ideally within the first 10 days of illness, this is what actually prevents coronary aneurysms", "high-dose aspirin 80-100 mg/kg/day during the acute febrile phase, then a low antiplatelet dose after fever resolves", "the whole point of early treatment is preventing coronary artery aneurysms, echo is part of the workup not an afterthought", "high-risk features that predict aneurysm risk — age under 6 months, Asian ethnicity, CRP 13 or higher, baseline coronary z-score 2 or higher"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "McCrindle BW, et al. Diagnosis, Treatment, and Long-Term Management of Kawasaki Disease: A Scientific Statement for Health Professionals From the American Heart Association. Circulation. 2017;135(17):e927-e999.",
+    "American Heart Association. Update on Diagnosis and Management of Kawasaki Disease: Identifying and Managing Patients at High Risk. Circulation. 2025."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). No prior mention anywhere in the corpus despite being a classic high-stakes pediatric diagnostic miss." }
+  ],
+  "kind": "reference",
+  "purpose": "Recognition of classic and incomplete Kawasaki disease, and the IVIG/aspirin treatment that actually prevents its main long-term threat — coronary artery aneurysm.",
+  "ageRange": "Most common 6 months to 5 years; can occur outside this range, and incomplete presentations are especially important to recognize in infants under 6 months.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Diagnostic criteria — classic and incomplete"
+    },
+    {
+      "type": "text",
+      "text": "Classic (complete) Kawasaki disease: fever for 5 or more days PLUS at least 4 of the following 5 criteria: (1) bilateral non-purulent conjunctival injection, (2) oral/mucosal changes (strawberry tongue, red/cracked/fissured lips, diffuse oropharyngeal erythema), (3) polymorphous rash, (4) extremity changes (erythema/edema of hands/feet acutely, periungual desquamation in the subacute phase, roughly 2-3 weeks in), (5) cervical lymphadenopathy (at least one node ≥1.5 cm, usually unilateral)."
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "INCOMPLETE Kawasaki disease (fewer than 4 of the 5 criteria, but fever ≥5 days plus supportive labs/echo findings) is real and still carries coronary aneurysm risk — it is NOT a lesser diagnosis to dismiss. It's especially important to consider in infants under 6 months, who paradoxically often present with fewer classic clinical criteria while carrying some of the HIGHEST aneurysm risk if untreated."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "High-risk features for coronary aneurysm"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Age under 6 months",
+        "Asian ethnicity/race",
+        "CRP ≥ 13 mg/dL",
+        "Baseline (pre-treatment) coronary artery z-score ≥ 2 on echocardiogram",
+        "These patients carry a substantially increased likelihood of developing coronary artery aneurysm and warrant particularly prompt treatment and close follow-up."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Treatment"
+    },
+    {
+      "type": "list",
+      "items": [
+        "IVIG 2 g/kg as a SINGLE infusion, ideally started within the first 10 days of illness — this is the single intervention most clearly shown to reduce coronary artery aneurysm risk, and earlier treatment (within the fever window) matters.",
+        "Aspirin — high-dose (80-100 mg/kg/day, divided) during the acute febrile phase for its anti-inflammatory effect, then transitioned to a LOW antiplatelet dose (roughly 3-5 mg/kg/day) once fever has resolved, continued until follow-up echocardiography confirms no coronary abnormality (typically around 6-8 weeks post-onset, per cardiology guidance).",
+        "Echocardiography is part of the acute workup, not an afterthought — baseline echo at diagnosis, with follow-up per cardiology/AHA-guided timing to monitor for evolving coronary involvement.",
+        "A patient who remains febrile or has recrudescent fever after the initial IVIG dose (IVIG-resistant/refractory Kawasaki, roughly 10-20% of patients) needs escalation — a second IVIG dose, corticosteroids, or other adjunct therapy per cardiology/rheumatology guidance; this isn't managed with a second identical IVIG dose reflexively without specialist input."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "Don't let a benign-looking child with 'just a viral fever and rash' sit unexamined for the extremity/mucosal/conjunctival/lymph node findings — Kawasaki disease is a clinical diagnosis with no confirmatory lab test, and the cost of missing it (an undiagnosed, untreated coronary aneurysm) is a lifelong cardiac risk that was preventable with timely IVIG."
+    }
+  ],
+  "buildNote": "peds-tool with kind=reference (no sourceOfTruth needed — this is genuinely new content, not a pointer to an existing adult module). Diagnostic criteria, IVIG/aspirin dosing, and the 2025 AHA high-risk feature set (age <6mo, Asian ethnicity, CRP ≥13, baseline z-score ≥2) WebSearch-verified against the AHA 2017 scientific statement and 2025 update. peds-tool schema has no related[] field — cross-links are kept in prose/buildNote per established pattern rather than a structured field."
+}

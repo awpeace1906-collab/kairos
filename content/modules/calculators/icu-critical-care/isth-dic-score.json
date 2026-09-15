@@ -1,0 +1,52 @@
+{
+  "id": "isth-dic-score",
+  "section": "Calculators",
+  "category": "ICU / Critical Care",
+  "title": "ISTH DIC Score",
+  "settingEmphasis": ["icu", "ed"],
+  "aliases": ["disseminated intravascular coagulation score", "overt DIC score", "ISTH overt DIC criteria"],
+  "tags": ["DIC", "disseminated intravascular coagulation", "coagulopathy", "sepsis", "ICU", "ED"],
+  "keywords": ["only apply this score if the patient has an underlying disorder known to be associated with DIC, sepsis, trauma, malignancy, obstetric catastrophe, it is not a general coagulopathy screen", "score of 5 or more is compatible with overt DIC", "score under 5 is suggestive but not confirmatory of non-overt DIC, repeat in 1-2 days if clinical suspicion persists", "2025 ISTH update quantified the D-dimer thresholds at greater than 3 times and greater than 7 times the upper limit of normal for the 2 and 3 point tiers"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Taylor FB, et al. Towards definition, clinical and laboratory criteria, and a scoring system for disseminated intravascular coagulation. Thromb Haemost. 2001;86(5):1327-1330.",
+    "ISTH SSC Subcommittee on DIC. Updated definition and scoring of disseminated intravascular coagulation in 2025. J Thromb Haemost. 2025."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). DIC was referenced across roughly 10 existing modules (transfusion reactions, postpartum hemorrhage, heat stroke, sepsis-related content) with no scoring tool anywhere in the corpus. D-dimer point thresholds reflect the ISTH 2025 update quantifying what were previously the more subjective 'moderate vs strong increase' categories." }
+  ],
+  "engine": "additive",
+  "settings": ["ICU", "ED"],
+  "purpose": "Quantifies overt disseminated intravascular coagulation in a patient with a KNOWN underlying disorder associated with DIC (sepsis, trauma, malignancy, obstetric catastrophe, etc.) — this is not a general coagulopathy screening tool for an undifferentiated patient.",
+  "notes": "Apply only when there is a clinical suspicion of DIC in the context of an associated underlying condition. A score under 5 does not exclude non-overt/early-phase DIC — if suspicion remains, repeat the panel in 1-2 days.",
+  "items": [
+    { "key": "platelets", "label": "Platelet count (x10³/µL)", "options": [
+      { "label": "≥ 100", "points": 0 },
+      { "label": "50-99", "points": 1 },
+      { "label": "< 50", "points": 2 }
+    ]},
+    { "key": "fibrin_marker", "label": "Fibrin-related marker (D-dimer)", "options": [
+      { "label": "No increase", "points": 0 },
+      { "label": "Moderate increase (> 3× upper limit of normal)", "points": 2 },
+      { "label": "Strong increase (> 7× upper limit of normal)", "points": 3 }
+    ]},
+    { "key": "pt_prolongation", "label": "Prothrombin time prolongation (seconds above upper limit of normal)", "options": [
+      { "label": "< 3 sec", "points": 0 },
+      { "label": "3-6 sec", "points": 1 },
+      { "label": "> 6 sec", "points": 2 }
+    ]},
+    { "key": "fibrinogen", "label": "Fibrinogen (mg/dL)", "options": [
+      { "label": "≥ 100 mg/dL (≥ 1 g/L)", "points": 0 },
+      { "label": "< 100 mg/dL (< 1 g/L)", "points": 1 }
+    ]}
+  ],
+  "interpretation": [
+    { "min": 0, "max": 4, "label": "Not compatible with overt DIC", "detail": "Suggestive of non-overt (early-phase/pre-DIC) or no DIC. If clinical suspicion persists given the underlying condition, repeat the panel in 1-2 days rather than excluding DIC on a single low score.", "severity": "moderate" },
+    { "min": 5, "max": 8, "label": "Compatible with overt DIC", "detail": "Treat the underlying cause aggressively, provide hemostatic support (platelets, FFP, cryoprecipitate) guided by bleeding and lab trends, and consider anticoagulation only in select cases per hematology input.", "disposition": "Hematology involvement; treat underlying trigger; hemostatic support guided by bleeding/labs", "severity": "critical" }
+  ],
+  "buildNote": "Point structure and the 5-point overt-DIC threshold WebSearch-verified against the original Taylor et al. 2001 ISTH criteria and the 2025 ISTH SSC update, which quantified the D-dimer moderate/strong increase thresholds at >3x and >7x ULN respectively (previously more subjectively defined). Deliberately framed in purpose/notes as applicable only with a known DIC-associated underlying condition, matching the original ISTH algorithm's first step (which this tool does not itself score, since it's a yes/no clinical gate rather than a point-scored item)."
+}

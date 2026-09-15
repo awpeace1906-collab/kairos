@@ -1,0 +1,89 @@
+{
+  "id": "deep-neck-space-infections",
+  "section": "Reference Library",
+  "category": "ENT / Ophtho / Dental / GU",
+  "title": "Deep Neck Space Infections — PTA, Epiglottitis & Ludwig's Angina",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["peritonsillar abscess", "adult epiglottitis", "Ludwig angina", "deep space neck infection"],
+  "tags": ["peritonsillar abscess", "epiglottitis", "Ludwig's angina", "airway emergency", "ENT", "ED", "ICU"],
+  "keywords": ["hot potato voice, trismus, and uvular deviation point to peritonsillar abscess", "adult epiglottitis is not just a peds disease, think of it in an adult with a sore throat worse than the exam looks, muffled voice, drooling, tripod positioning", "Ludwig's angina is bilateral submandibular space cellulitis that pushes the tongue up and back, it's a floor-of-mouth process not a tonsil process", "the shared theme across all three is airway-first thinking, get anesthesia/ENT to the bedside early before the airway closes rather than after", "avoid agitating a child or adult with a tenuous airway from one of these, keep them upright and calm, don't force a lateral neck film or exam that provokes crying/struggling"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Klug TE, et al. Peritonsillar abscess: complication of acute tonsillitis or Weber's glands infection? Otolaryngol Head Neck Surg. 2016.",
+    "Guardiani E, et al. Supraglottitis in the era following widespread immunization against Haemophilus influenzae type B. Laryngoscope. 2010;120(11):2183-2188.",
+    "Costain N, Marrie TJ. Ludwig's angina. Am J Med. 2011;124(2):115-117."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). No prior module addressed any of these three airway-risk oropharyngeal/neck infections." }
+  ],
+  "summary": "Three deep neck space infections — peritonsillar abscess, adult epiglottitis, and Ludwig's angina — share one organizing principle: think about the airway before anything else, and get airway-capable help to the bedside early rather than after things decompensate.",
+  "whyThisMatters": "All three can progress from 'sore throat' to airway obstruction, and the exam finding that distinguishes them (trismus/uvular deviation vs. drooling/tripod positioning vs. a woody bilateral submandibular swelling pushing the tongue up) tells you which structure is actually at risk and how urgently. Adult epiglottitis in particular is under-recognized because clinicians associate it with pediatrics — it still occurs in adults and the airway can close fast.",
+  "clinicalTakeaway": "Peritonsillar abscess: trismus, muffled 'hot potato' voice, and uvular deviation away from the abscess side — needle aspiration or I&D once confirmed, most can be managed without emergent airway intervention. Adult epiglottitis: think of it in an adult with a sore throat that looks worse than the oropharyngeal exam, muffled voice, drooling, and tripod/sniffing positioning — keep the patient calm and upright, get anesthesia/ENT to the bedside for a controlled airway BEFORE attempting anything that could provoke laryngospasm or complete obstruction (including forcing a supine position or aggressive oropharyngeal exam). Ludwig's angina: bilateral, rapidly progressive submandibular/sublingual space cellulitis that elevates and pushes the tongue posteriorly — early airway evaluation is critical since it can obstruct even before frank abscess formation, and it needs broad-spectrum antibiotics plus surgical involvement, not just antibiotics alone.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Peritonsillar abscess (PTA)"
+    },
+    {
+      "type": "text",
+      "text": "Classic exam: unilateral, severe sore throat, trismus (limited mouth opening from pterygoid muscle irritation), a muffled 'hot potato' voice, and uvular deviation AWAY from the affected side with bulging of the soft palate/anterior tonsillar pillar above the tonsil itself. Drooling and odynophagia are common. This is distinct from simple tonsillitis/peritonsillar cellulitis, which lacks the fluctuant collection and typically doesn't cause trismus or uvular deviation."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Bedside intraoral ultrasound (if available) can help confirm a drainable fluid collection versus cellulitis and guide needle placement, reducing the chance of a dry tap or carotid injury.",
+        "Needle aspiration is often first-line and can be diagnostic and therapeutic in one step; incision and drainage is used for larger or recurrent collections, or if aspiration is unsuccessful/incomplete.",
+        "Antibiotics covering oral flora (including anaerobes) plus analgesia; most patients can be managed as outpatients after drainage if they're tolerating oral intake and don't have airway compromise or systemic toxicity.",
+        "Airway compromise from PTA alone is uncommon but not impossible with a very large collection — reassess airway status, not just pain, after any attempted drainage."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adult epiglottitis (supraglottitis)"
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Epiglottitis is not just a pediatric disease — since Hib vaccination became widespread, the disease burden has shifted toward adults, where it's frequently under-recognized because clinicians anchor on the pediatric framing."
+    },
+    {
+      "type": "text",
+      "text": "Think of it in an adult with a sore throat that seems disproportionately severe compared to a relatively unimpressive oropharyngeal exam (because the pathology is below what you can see on routine oral exam) — muffled 'hot potato' voice, drooling, odynophagia out of proportion to visible findings, and a preference for sitting upright/tripod or sniffing position (which maximizes airway diameter). Fever may or may not be prominent in adults."
+    },
+    {
+      "type": "list",
+      "items": [
+        "DO NOT agitate the patient or force them supine, force an aggressive oropharyngeal/laryngoscopic exam, or send them alone to a remote area (e.g. unmonitored CT) if there's real concern for airway compromise — anxiety and struggling can precipitate complete obstruction in a tenuously patent airway.",
+        "Keep the patient in the position of comfort (usually sitting upright), give humidified oxygen if tolerated without distress, and get anesthesia/ENT to the BEDSIDE early to assess and, if needed, secure the airway under controlled conditions (often in the OR with double setup for surgical airway) rather than waiting for decompensation.",
+        "Lateral neck X-ray can show the 'thumbprint sign' (swollen epiglottis) and is reasonable if it doesn't require distressing positioning, but definitive diagnosis and airway assessment is via flexible nasolaryngoscopy in a controlled, monitored setting — not a reason to delay involving airway-capable specialists.",
+        "IV antibiotics (covering H. influenzae, Streptococcus species, and consideration of MRSA/anaerobes per local patterns) and IV steroids are typically given, but airway management always takes priority over completing the medical workup if there's any concern."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ludwig's angina"
+    },
+    {
+      "type": "text",
+      "text": "A rapidly progressive, typically BILATERAL cellulitis of the submandibular and sublingual spaces, most often arising from a dental infection (classically a lower second/third molar). Unlike PTA, this is a floor-of-mouth process, not a tonsillar one — the tongue gets pushed superiorly and posteriorly by the indurated, 'woody' submandibular swelling, which is what threatens the airway even before any discrete abscess forms."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Exam: bilateral submandibular swelling that is firm/'woody' (not fluctuant, since this is typically a spreading cellulitis rather than a walled-off abscess early on), tongue elevation and posterior displacement, trismus, drooling, and possible stridor/respiratory distress as it progresses.",
+        "Early airway evaluation is critical — this can obstruct the airway through soft tissue swelling and tongue displacement alone, without needing frank abscess formation, and can progress faster than clinicians expect. Involve anesthesia/ENT early for airway assessment, with a low threshold for awake/controlled airway management if there's any concern, since standard laryngoscopy can be difficult or impossible with severe floor-of-mouth swelling.",
+        "Broad-spectrum IV antibiotics covering oral flora/anaerobes and the likely odontogenic source, PLUS surgical/ENT or oral-maxillofacial involvement — this is not managed with antibiotics alone, since drainage of any collection and dental source control (extraction) are often needed.",
+        "CT with contrast (if the airway is stable enough to allow it) helps define the extent of spread and identify any drainable collection, but should not delay airway assessment/securing if there's active concern."
+      ]
+    }
+  ],
+  "related": ["airway-management-flow", "ophthalmologic-emergencies"],
+  "buildNote": "New ENT / Ophtho / Dental / GU category (shared with ophthalmologic-emergencies and lateral-canthotomy). related[] references airway-management-flow defensively — verify the actual id at validate time. Deliberately organized around the shared 'airway-first' theme across all three diagnoses rather than three disconnected entries, matching how these are taught together clinically."
+}

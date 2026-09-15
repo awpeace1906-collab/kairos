@@ -1,0 +1,90 @@
+{
+  "id": "post-cardiac-arrest-care-ttm",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Post-Cardiac Arrest Care & Targeted Temperature Management",
+  "settingEmphasis": ["icu", "ed"],
+  "aliases": ["post-ROSC care", "targeted temperature management", "TTM", "therapeutic hypothermia", "post-arrest bundle"],
+  "tags": ["post-cardiac arrest", "TTM", "targeted temperature management", "neuroprognostication", "ROSC", "ICU"],
+  "keywords": ["the evidence has shifted away from mandatory hypothermia toward active fever prevention, TTM2 showed no benefit of 33C over controlled normothermia with fever avoidance", "target normothermia under 37.5C for at least 24-72 hours, avoid fever which is clearly harmful even if deep hypothermia isn't clearly beneficial", "avoid hypotension, target a MAP that supports cerebral perfusion, don't chase a fixed number blindly", "continuous EEG from day 1 to catch subclinical seizures, myoclonus after cardiac arrest can look like seizure but isn't always", "multimodal neuroprognostication waits until at least 72 hours AFTER the patient is back to normothermia, not 72 hours after ROSC, and no single test is used in isolation"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "American Heart Association. Part 11: Post-Cardiac Arrest Care: 2025 AHA Guidelines for CPR and ECC. Circulation. 2025.",
+    "Dankiewicz J, et al. Hypothermia versus Normothermia after Out-of-Hospital Cardiac Arrest (TTM2). N Engl J Med. 2021;384(24):2283-2294.",
+    "European Resuscitation Council / European Society of Intensive Care Medicine. Guidelines 2025: Post-Resuscitation Care."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). acls-adult-cardiac-arrest.json previously gave post-ROSC care only a couple of lines; this is the missing depth on TTM target selection, hemodynamic/glucose/seizure management, and neuroprognostication timing, cross-linked back from that module." }
+  ],
+  "summary": "The evidence has moved away from mandatory deep hypothermia toward active fever prevention (normothermia, <37.5°C) as the primary post-arrest temperature strategy — pair that with avoiding hypotension, treating seizures aggressively, and waiting the full ≥72 hours after normothermia (not after ROSC) before committing to a neuroprognosis.",
+  "whyThisMatters": "Two large trials (TTM, then TTM2) progressively dismantled the assumption that cooling to 33°C is necessary — TTM2 showed no mortality or functional-outcome benefit of hypothermia over controlled normothermia with fever prevention, while fever itself remains clearly associated with worse outcomes. Premature neuroprognostication is a distinct, serious risk in the other direction — withdrawing care too early based on an incomplete picture can produce a self-fulfilling prophecy in a patient who might otherwise have recovered.",
+  "clinicalTakeaway": "Target active fever prevention — core temperature <37.5°C — for at least 24-72 hours post-ROSC; routine cooling to 33°C is no longer the default recommendation given TTM2, though it remains a reasonable option per some protocols/patient factors. Avoid hypotension (support MAP adequately, don't tolerate low pressures 'because the patient is post-arrest'). Treat glucose to avoid both hyperglycemia and hypoglycemia rather than tight control. Start continuous EEG on day 1 to catch subclinical/nonconvulsive seizures, which are common and often missed without it. Do NOT finalize a neuroprognosis before at least 72 hours have passed since the patient became normothermic (not simply 72 hours since ROSC) — and never on a single test or exam finding in isolation.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Temperature management — from 'therapeutic hypothermia' to fever prevention"
+    },
+    {
+      "type": "text",
+      "text": "The original TTM trial (33°C vs 36°C) found no mortality difference between the two targets. TTM2 went further, comparing 33°C hypothermia against controlled NORMOTHERMIA with active fever prevention (target <37.5°C) — and again found no benefit of hypothermia, while hypothermia carried more adverse effects (arrhythmia, hemodynamic instability). Current guidance has shifted accordingly: active fever prevention targeting a core temperature below 37.5°C, sustained for at least 24-72 hours, is now the primary recommended strategy for most patients, with deliberate deeper cooling (33°C) considered an option per local protocol/patient factors rather than a universal mandate."
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "The one point that hasn't changed across any of these trials: FEVER is bad. Whatever specific target temperature a given protocol uses, actively preventing fever in the post-arrest period is not optional."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hemodynamic, ventilation, and glucose goals"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Avoid hypotension — a low blood pressure in the post-arrest period is independently associated with worse neurologic outcome, presumably through secondary ischemic injury layered on top of the initial arrest insult. Support MAP with fluids and vasopressors as needed rather than tolerating a lower-than-usual target 'because the patient just arrested.'",
+        "Avoid both hyperoxia and hypoxia — titrate FiO2 to the lowest level that maintains an adequate SpO2/PaO2 rather than leaving a patient on 100% oxygen indefinitely; both extremes have been associated with worse outcomes.",
+        "Avoid hyperventilation (which causes cerebral vasoconstriction and can worsen ischemia) — target a normal PaCO2 rather than the reflexive over-ventilation that can happen during and immediately after resuscitation.",
+        "Glucose: avoid both hyperglycemia and hypoglycemia — treat to a moderate range rather than pursuing tight glycemic control, which increases hypoglycemia risk without clear benefit in this population."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Seizures and EEG monitoring"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Seizures (including subclinical/nonconvulsive seizures with no visible movement) are common after cardiac arrest and are associated with worse outcomes — but treating them appropriately may still allow for a good recovery, so aggressive identification matters.",
+        "Start continuous EEG monitoring from day 1 post-ROSC to detect seizures and epileptiform activity that would otherwise be missed on intermittent exam alone.",
+        "Post-anoxic myoclonus can be mistaken for seizure activity (or vice versa) and does not, by itself, carry the same prognostic implication as classic myoclonic status epilepticus — EEG correlation matters for distinguishing these rather than treating myoclonus as an automatic poor-prognosis sign.",
+        "Treat identified seizures per standard status epilepticus principles — see the status epilepticus treatment ladder."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Neuroprognostication — wait for the full window, use multiple modalities"
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Multimodal neuroprognostication should not occur before AT LEAST 72 HOURS AFTER THE PATIENT HAS RETURNED TO NORMOTHERMIA — not 72 hours after ROSC. In a patient who was cooled, this pushes the earliest reasonable prognostication timepoint out further than 72 hours post-arrest. Sedating medications and their metabolites (especially in renal/hepatic impairment or after therapeutic hypothermia, which slows drug clearance) can also confound exam findings and need to be accounted for before drawing conclusions."
+    },
+    {
+      "type": "list",
+      "items": [
+        "No single test or exam finding should be used in isolation to determine prognosis — combine clinical exam (pupillary/corneal reflexes, motor response), EEG findings, somatosensory evoked potentials (SSEPs) where available, neuroimaging (CT/MRI), and biomarkers (e.g. neuron-specific enolase) per local protocol.",
+        "Confounders to actively rule out before finalizing a poor prognosis: residual sedation/paralytic effect, hypothermia's effect on drug metabolism, severe metabolic derangement, and ongoing seizure activity.",
+        "This is a decision made collaboratively with the family/surrogate decision-makers once an adequately multimodal, adequately-timed assessment is complete — not a single clinician's exam at an early timepoint."
+      ]
+    }
+  ],
+  "related": ["acls-adult-cardiac-arrest", "status-epilepticus-adult", "brain-death-determination"],
+  "buildNote": "Critical Care category. TTM/TTM2 findings and the shift to fever-prevention-as-primary-strategy, EEG-from-day-1, and the '≥72h post-normothermia' neuroprognostication timing rule WebSearch-verified against the 2025 AHA Part 11 guideline and TTM2 (NEJM 2021). acls-adult-cardiac-arrest.json's related[] updated in the same batch to include this id so the thin post-ROSC section there links forward to this depth."
+}

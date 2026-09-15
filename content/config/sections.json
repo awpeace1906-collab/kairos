@@ -36,6 +36,10 @@
         {
           "id": "cardiac-procedures",
           "title": "Cardiac Procedures"
+        },
+        {
+          "id": "ent-ophtho-procedures",
+          "title": "ENT / Ophtho / Dental / GU"
         }
       ]
     },
@@ -173,6 +177,14 @@
         {
           "id": "cardiac-ecg",
           "title": "Cardiac / ECG"
+        },
+        {
+          "id": "vascular-emergencies",
+          "title": "Vascular Emergencies"
+        },
+        {
+          "id": "ent-ophtho",
+          "title": "ENT / Ophtho / Dental / GU"
         },
         {
           "id": "critical-care",

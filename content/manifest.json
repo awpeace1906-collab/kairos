@@ -468,6 +468,15 @@
       "review_tier": 1,
       "next_review_due": "2027-09-02"
     },
+    "calculators/icu-critical-care/isth-dic-score": {
+      "content_version": 1,
+      "hash": "5414e63e55a3d4f5",
+      "path": "modules/calculators/icu-critical-care/isth-dic-score.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "calculators/icu-critical-care/padua-prediction-score": {
       "content_version": 1,
       "hash": "f9b53486ba4f3380",
@@ -1877,10 +1886,28 @@
       "review_tier": 1,
       "next_review_due": "2027-09-03"
     },
+    "peds-module/kawasaki-disease": {
+      "content_version": 1,
+      "hash": "e5e952447b0c5d8a",
+      "path": "modules/peds-module/kawasaki-disease.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "peds-module/nat-ten4-facesp-screening": {
       "content_version": 1,
       "hash": "2cd672f2e703803c",
       "path": "modules/peds-module/nat-ten4-facesp-screening.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "peds-module/neonatal-early-onset-sepsis-risk": {
+      "content_version": 1,
+      "hash": "e94a710eb4e578c3",
+      "path": "modules/peds-module/neonatal-early-onset-sepsis-risk.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
       "review_tier": 1,
@@ -2057,6 +2084,24 @@
       "review_tier": 1,
       "next_review_due": "2027-03-03"
     },
+    "peds-module/peds-status-epilepticus-ladder": {
+      "content_version": 1,
+      "hash": "992d762180db50d9",
+      "path": "modules/peds-module/peds-status-epilepticus-ladder.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "peds-module/peds-toxic-ingestion-one-pill-can-kill": {
+      "content_version": 1,
+      "hash": "ef83f2f213a8dfd4",
+      "path": "modules/peds-module/peds-toxic-ingestion-one-pill-can-kill.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "peds-module/peds-trauma-resuscitation": {
       "content_version": 1,
       "hash": "bcbdb1db78320e6a",
@@ -2138,6 +2183,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-13"
     },
+    "procedures/cricothyroidotomy": {
+      "content_version": 1,
+      "hash": "c4a0d27b1e14dad5",
+      "path": "modules/procedures/cricothyroidotomy.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "procedures/ed-joint-reductions": {
       "content_version": 1,
       "hash": "9a32236c7552106b",
@@ -2191,6 +2245,15 @@
       "section": "Procedures",
       "review_tier": 1,
       "next_review_due": "2026-12-01"
+    },
+    "procedures/lateral-canthotomy": {
+      "content_version": 1,
+      "hash": "e5fc22de5946d11f",
+      "path": "modules/procedures/lateral-canthotomy.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "procedures/lumbar-puncture": {
       "content_version": 1,
@@ -2327,13 +2390,13 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/acls-adult-cardiac-arrest": {
-      "content_version": 4,
-      "hash": "42df734d368990e6",
+      "content_version": 5,
+      "hash": "83c981b3d68b3ce6",
       "path": "modules/reference-library/acls-adult-cardiac-arrest.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": 1,
-      "next_review_due": "2026-12-04"
+      "next_review_due": "2026-12-15"
     },
     "reference-library/acute-dyspnea-niv": {
       "content_version": 3,
@@ -2357,6 +2420,15 @@
       "content_version": 1,
       "hash": "59e82f4129cbd272",
       "path": "modules/reference-library/acute-liver-failure.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "reference-library/acute-mesenteric-ischemia": {
+      "content_version": 1,
+      "hash": "45052b4237991794",
+      "path": "modules/reference-library/acute-mesenteric-ischemia.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": 1,
@@ -2390,8 +2462,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/advanced-ards-ventilation": {
-      "content_version": 3,
-      "hash": "dc2b3bae747aad94",
+      "content_version": 4,
+      "hash": "a2620f8d5dc50080",
       "path": "modules/reference-library/advanced-ards-ventilation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2479,6 +2551,15 @@
       "review_tier": 3,
       "next_review_due": "2026-12-02"
     },
+    "reference-library/aortic-dissection-ruptured-aaa": {
+      "content_version": 1,
+      "hash": "7b758a94ddc346bc",
+      "path": "modules/reference-library/aortic-dissection-ruptured-aaa.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/bartholin-vulvar-emergencies": {
       "content_version": 2,
       "hash": "278ea2ed18aaf6e6",
@@ -2550,6 +2631,15 @@
       "section": "Reference Library",
       "review_tier": 3,
       "next_review_due": "2026-12-02"
+    },
+    "reference-library/carbon-monoxide-cyanide-poisoning": {
+      "content_version": 1,
+      "hash": "4ee85ad243b91fc6",
+      "path": "modules/reference-library/carbon-monoxide-cyanide-poisoning.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/childhood-immunization-schedule": {
       "content_version": 2,
@@ -2631,6 +2721,15 @@
       "section": "Reference Library",
       "review_tier": 3,
       "next_review_due": "2027-03-02"
+    },
+    "reference-library/deep-neck-space-infections": {
+      "content_version": 1,
+      "hash": "540b058d4de8f384",
+      "path": "modules/reference-library/deep-neck-space-infections.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/dka-hhs-adult-management": {
       "content_version": 1,
@@ -3001,6 +3100,24 @@
       "review_tier": 1,
       "next_review_due": "2027-03-02"
     },
+    "reference-library/ophthalmologic-emergencies": {
+      "content_version": 1,
+      "hash": "3108eed341b38b22",
+      "path": "modules/reference-library/ophthalmologic-emergencies.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
+    "reference-library/or-fire-safety": {
+      "content_version": 1,
+      "hash": "bdc66eb8e80eab2e",
+      "path": "modules/reference-library/or-fire-safety.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
+    },
     "reference-library/ovarian-torsion": {
       "content_version": 2,
       "hash": "3940c9ec9778b4ec",
@@ -3081,6 +3198,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2026-12-03"
+    },
+    "reference-library/post-cardiac-arrest-care-ttm": {
+      "content_version": 1,
+      "hash": "8e1f3ca93404e8dc",
+      "path": "modules/reference-library/post-cardiac-arrest-care-ttm.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2026-12-15"
     },
     "reference-library/post-intubation-management": {
       "content_version": 2,

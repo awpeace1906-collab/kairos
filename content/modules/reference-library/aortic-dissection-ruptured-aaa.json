@@ -1,0 +1,93 @@
+{
+  "id": "aortic-dissection-ruptured-aaa",
+  "section": "Reference Library",
+  "category": "Vascular Emergencies",
+  "title": "Aortic Dissection & Ruptured AAA",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["thoracic aortic dissection", "abdominal aortic aneurysm rupture", "acute aortic syndrome", "ADD-RS"],
+  "tags": ["aortic dissection", "ruptured AAA", "acute aortic syndrome", "tearing chest pain", "vascular emergency", "ED", "ICU"],
+  "keywords": ["ADD-RS score of 0-3, low-risk plus negative D-dimer has a negative predictive value near 99.7%", "Stanford A involves the ascending aorta and needs emergent cardiac surgery, Stanford B is descending-only and usually managed medically first", "impulse control — heart rate and blood pressure both need to come down, beta-blocker before vasodilator to avoid reflex tachycardia worsening shear stress", "ruptured AAA triad of pain, hypotension, and a pulsatile abdominal mass is present in a minority of patients, don't wait for all three", "permissive hypotension for a ruptured AAA en route to the OR, same logic as any uncontrolled hemorrhage"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Nazerian P, et al. Diagnostic Accuracy of the Aortic Dissection Detection Risk Score Plus D-Dimer for Acute Aortic Syndromes. Circulation. 2018;137(3):250-258.",
+    "Rogers AM, et al. Sensitivity of the Aortic Dissection Detection Risk Score, a Novel Guideline-Based Tool for Identification of Acute Aortic Dissection at Initial Presentation. Circulation. 2011;123(20):2213-2218.",
+    "Isselbacher EM, et al. 2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease. Circulation. 2022;146(24):e334-e482."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). No prior module addressed either aortic dissection or ruptured AAA; both are covered together here as the two classic 'sudden severe pain plus hemodynamic collapse' vascular catastrophes that are easy to conflate with more common ED diagnoses." }
+  ],
+  "summary": "Aortic dissection and ruptured AAA are both easy to miss because their pain can mimic far more common complaints — the fix is a low threshold to think of them plus fast, decisive imaging and hemodynamic control once suspected.",
+  "whyThisMatters": "Both conditions kill by the hour: untreated Stanford A dissection has a mortality that climbs roughly 1-2% per hour in the first 24-48 hours, and a ruptured AAA that isn't in the OR promptly is often fatal. Both can present atypically — dissection without the classic 'tearing, ripping, radiating to the back' pain, and ruptured AAA without the classic triad — so the diagnosis is missed far more often than it's over-considered.",
+  "clinicalTakeaway": "Use the ADD-RS (high-risk condition/pain features/exam findings, 1 point each) to decide who needs imaging for dissection: score ≤1 plus a negative D-dimer effectively rules it out; score >1 goes straight to CT angiography, no D-dimer detour. For dissection, control BOTH heart rate and blood pressure — beta-blocker (esmolol/labetalol) FIRST to blunt reflex tachycardia, then a vasodilator (nicardipine) — target HR <60 and SBP 100-120. For a ruptured AAA, permissive hypotension (SBP ~80-100 mmHg, or just palpable radial pulse) while moving immediately to the OR/hybrid suite — aggressive fluid resuscitation before hemorrhage control can worsen bleeding.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Aortic dissection — recognition and risk stratification"
+    },
+    {
+      "type": "text",
+      "text": "Classic presentation is sudden, severe, tearing/ripping chest or back pain, often maximal at onset (unlike the crescendo pattern of ACS) and sometimes migrating as the dissection propagates. But a meaningful fraction of patients present atypically — painless dissection, syncope as the presenting symptom, a stroke-like picture (if a carotid is involved), or an isolated abdominal/flank pain picture. High-risk PREDISPOSING CONDITIONS: Marfan or other connective tissue disease, family history of aortic disease, known aortic valve disease, recent aortic manipulation, known thoracic aortic aneurysm. High-risk PAIN FEATURES: abrupt onset, severe intensity, ripping/tearing quality. High-risk EXAM FEATURES: pulse deficit or systolic BP differential between limbs, focal neurologic deficit with pain, new aortic insufficiency murmur with pain, hypotension or shock."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "ADD-RS (Aortic Dissection Detection Risk Score)"
+    },
+    {
+      "type": "text",
+      "text": "1 point for meeting criteria in EACH of the three categories above (predisposing condition / pain features / exam features), for a score of 0-3."
+    },
+    {
+      "type": "table",
+      "columns": ["ADD-RS", "Risk", "Approach"],
+      "rows": [
+        ["0", "Low", "D-dimer — if negative, dissection is effectively excluded (NPV ~99.7% when combined); consider alternate diagnoses"],
+        ["1", "Intermediate", "D-dimer reasonable — if negative, very low residual risk; if positive or clinical concern remains high, proceed to CTA"],
+        ["2-3", "High", "Go straight to CT angiography (or TEE if unstable for transport) — skip the D-dimer step"]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "About 95% of confirmed dissections score intermediate or high risk on the ADD-RS — the score's main value is safely narrowing the low-risk group, not catching every possible case on its own. Use clinical judgment on top of the score, not instead of it."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Stanford classification and initial management"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Stanford TYPE A — involves the ascending aorta (regardless of where it originated) — surgical emergency, emergent cardiothoracic surgery consultation, mortality rises roughly 1-2% per hour untreated.",
+        "Stanford TYPE B — descending aorta only, distal to the left subclavian — usually managed medically first (impulse control) unless there's malperfusion, rupture, or refractory pain/hypertension, in which case it also needs urgent intervention (TEVAR).",
+        "Impulse control for EITHER type while awaiting definitive management: beta-blocker FIRST (esmolol or labetalol — both rate AND blood-pressure control) to blunt reflex tachycardia, THEN a vasodilator (nicardipine) if blood pressure remains elevated. Target heart rate <60 bpm and systolic blood pressure 100-120 mmHg. Giving a vasodilator alone (without beta-blockade first) can provoke reflex tachycardia that increases aortic wall shear stress and can worsen the dissection."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ruptured abdominal aortic aneurysm"
+    },
+    {
+      "type": "text",
+      "text": "The classic triad of abdominal/back pain, hypotension, and a pulsatile abdominal mass is present in only about a third to half of patients — do not wait for all three before acting on clinical suspicion, especially in an older patient with known or unknown AAA presenting with syncope, flank pain, or unexplained hypotension. Bedside ultrasound (aorta view) is fast and highly sensitive for the presence of an aneurysm, though it cannot reliably confirm or exclude active rupture — a hemodynamically unstable patient with a known/newly-found AAA on bedside ultrasound goes straight to the OR/hybrid suite without waiting for CT."
+    },
+    {
+      "type": "list",
+      "items": [
+        "PERMISSIVE HYPOTENSION — target systolic BP ~80-100 mmHg or simply a palpable radial pulse, NOT normal blood pressure — the same 'don't pop the clot' logic as any uncontrolled hemorrhagic source. Aggressive crystalloid resuscitation to a normal pressure before the bleeding is surgically controlled increases mortality by diluting clotting factors and raising hydrostatic pressure against a tenuous clot.",
+        "Type and crossmatch immediately, activate massive transfusion protocol if unstable — see the massive transfusion / hemorrhagic shock reference.",
+        "Immediate vascular surgery consultation — a hemodynamically UNSTABLE patient with a ruptured or suspected-ruptured AAA goes directly to the OR or hybrid endovascular suite; do not delay for a full CT angiogram if the patient is crashing and the diagnosis is already reasonably certain from bedside ultrasound.",
+        "A STABLE patient with a known/suspected AAA and new pain gets CT angiography to confirm rupture/impending rupture and define anatomy for EVAR vs open repair planning."
+      ]
+    }
+  ],
+  "related": ["hemorrhagic-shock-mtp", "shock-classification"],
+  "buildNote": "New Vascular Emergencies category. ADD-RS point structure and NPV figures WebSearch-verified against the Circulation 2018/2011 primary sources. Stanford A/B management and permissive-hypotension-for-ruptured-AAA reflect standard, well-established EM/vascular surgery teaching."
+}

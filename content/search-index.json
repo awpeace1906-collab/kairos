@@ -1454,6 +1454,35 @@
       ]
     },
     {
+      "id": "isth-dic-score",
+      "title": "ISTH DIC Score",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [
+        "DIC",
+        "disseminated intravascular coagulation",
+        "coagulopathy",
+        "sepsis",
+        "ICU",
+        "ED"
+      ],
+      "keywords": [
+        "only apply this score if the patient has an underlying disorder known to be associated with DIC, sepsis, trauma, malignancy, obstetric catastrophe, it is not a general coagulopathy screen",
+        "score of 5 or more is compatible with overt DIC",
+        "score under 5 is suggestive but not confirmatory of non-overt DIC, repeat in 1-2 days if clinical suspicion persists",
+        "2025 ISTH update quantified the D-dimer thresholds at greater than 3 times and greater than 7 times the upper limit of normal for the 2 and 3 point tiers",
+        "disseminated intravascular coagulation score",
+        "overt DIC score",
+        "ISTH overt DIC criteria"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/isth-dic-score",
+      "settingEmphasis": [
+        "icu",
+        "ed"
+      ]
+    },
+    {
       "id": "padua-prediction-score",
       "title": "Padua Prediction Score",
       "section": "Calculators",
@@ -5374,6 +5403,42 @@
       ]
     },
     {
+      "id": "neonatal-early-onset-sepsis-risk",
+      "title": "Neonatal Early-Onset Sepsis Risk (Kaiser EOS Model)",
+      "section": "Peds Module",
+      "category": "Neonatology",
+      "tags": [
+        "early-onset sepsis",
+        "neonatal sepsis",
+        "Kaiser calculator",
+        "GBS",
+        "chorioamnionitis",
+        "neonatology",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "this is NOT a simple point-based score you can hand-calculate, it's a multivariable regression model that also needs your own institution's baseline EOS incidence as an input, use the actual online tool",
+        "inputs are gestational age, maternal highest antepartum temperature, maternal GBS status, duration of rupture of membranes, type and timing of intrapartum antibiotics, then the infant's clinical exam in the first 12 hours modifies the estimate further",
+        "reduces unnecessary antibiotic exposure in well-appearing newborns while maintaining safety, that's the entire point of using it over a fixed rule-based checklist",
+        "incidence of EOS overall is roughly 0.5-1.2 per 1000 live births, most exposed newborns do not develop sepsis",
+        "a sick-appearing or clinically abnormal infant is managed on clinical grounds, the calculator is for risk-stratifying the well-appearing exposed newborn, not overriding clinical concern",
+        "Kaiser EOS calculator",
+        "early-onset sepsis calculator",
+        "Escobar model",
+        "neonatal sepsis risk"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/neonatology/neonatal-early-onset-sepsis-risk",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ],
+      "audience": [
+        "neonate"
+      ]
+    },
+    {
       "id": "neonatal-hie-cooling",
       "title": "Neonatal HIE & Therapeutic Hypothermia",
       "section": "Peds Module",
@@ -5852,6 +5917,38 @@
       ]
     },
     {
+      "id": "kawasaki-disease",
+      "title": "Kawasaki Disease",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "Kawasaki disease",
+        "fever 5 days",
+        "coronary artery aneurysm",
+        "IVIG",
+        "vasculitis",
+        "peds",
+        "ED"
+      ],
+      "keywords": [
+        "fever for 5 or more days plus 4 of 5 — mucosal changes, conjunctivitis, rash, extremity changes, cervical lymphadenopathy — but incomplete Kawasaki with fewer criteria is real and still needs treatment, especially under 1 year old",
+        "IVIG 2 g/kg single infusion, ideally within the first 10 days of illness, this is what actually prevents coronary aneurysms",
+        "high-dose aspirin 80-100 mg/kg/day during the acute febrile phase, then a low antiplatelet dose after fever resolves",
+        "the whole point of early treatment is preventing coronary artery aneurysms, echo is part of the workup not an afterthought",
+        "high-risk features that predict aneurysm risk — age under 6 months, Asian ethnicity, CRP 13 or higher, baseline coronary z-score 2 or higher",
+        "mucocutaneous lymph node syndrome",
+        "KD"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/kawasaki-disease",
+      "settingEmphasis": [
+        "ed"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
       "id": "pediatric-appendicitis-risk-calculator",
       "title": "Pediatric Appendicitis Risk Calculator (pARC)",
       "section": "Peds Module",
@@ -6195,6 +6292,71 @@
       ]
     },
     {
+      "id": "peds-status-epilepticus-ladder",
+      "title": "Pediatric Status Epilepticus — Treatment Ladder",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "status epilepticus",
+        "seizure",
+        "peds",
+        "benzodiazepine",
+        "second-line antiseizure",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "the 2016 AES algorithm is a timed staircase, not a single drug choice — stabilization 0-5 minutes, first-line benzodiazepine 5-20 minutes, second-line agent 20-40 minutes, third-line 40-60 minutes",
+        "give a full benzodiazepine dose, not a timid partial dose, under-dosing is the most common preventable error",
+        "check glucose in the first few minutes, hypoglycemia is a reversible cause that a benzodiazepine alone won't fix",
+        "no line yet, don't wait for one, IM midazolam works and buys time to get access",
+        "if seizures continue past the second-line agent, this is refractory status epilepticus and needs intubation for a continuous infusion, not a third sequential bolus drug tried one after another indefinitely",
+        "peds status epilepticus",
+        "pediatric seizure algorithm",
+        "AES status epilepticus algorithm"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-status-epilepticus-ladder",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
+      "id": "peds-toxic-ingestion-one-pill-can-kill",
+      "title": "Pediatric Toxic Ingestion — \"One Pill Can Kill\"",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "toxic ingestion",
+        "one pill can kill",
+        "toddler poisoning",
+        "peds toxicology",
+        "ED"
+      ],
+      "keywords": [
+        "a history of a single missing pill or a small unknown taste is enough to trigger a real workup in a toddler for this specific list of agents, do not wait for symptoms to develop before taking it seriously",
+        "sulfonylureas, calcium channel blockers, beta-blockers, opioids, TCAs, and clonidine already have their own management references in this app, this module is the peds-specific triage layer that routes to them",
+        "camphor causes seizures fast, often within 5-90 minutes, and there is no antidote, management is supportive and seizure control",
+        "methyl salicylate — oil of wintergreen — is concentrated enough that under a teaspoon has killed a toddler, treat it as aspirin overdose but with a much smaller lethal volume",
+        "chloroquine and other antimalarials cause rapid cardiac dysfunction and seizures, a single adult tablet can be lethal to a small child",
+        "toxic toddler",
+        "single dose lethal ingestion",
+        "deadly pediatric poisons"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-toxic-ingestion-one-pill-can-kill",
+      "settingEmphasis": [
+        "ed"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
       "id": "peds-trauma-resuscitation",
       "title": "Pediatric Trauma Resuscitation",
       "section": "Peds Module",
@@ -6394,6 +6556,41 @@
         "icu",
         "or",
         "ed"
+      ]
+    },
+    {
+      "id": "cricothyroidotomy",
+      "title": "Emergency Cricothyroidotomy (Surgical Airway)",
+      "section": "Procedures",
+      "category": "Airway & Sedation Workflows",
+      "tags": [
+        "cricothyroidotomy",
+        "surgical airway",
+        "can't intubate can't ventilate",
+        "CICO",
+        "emergency airway",
+        "ED",
+        "OR",
+        "ICU"
+      ],
+      "keywords": [
+        "scalpel-finger-bougie technique — scalpel to make the hole, finger to keep it open and confirm you're in the trachea, bougie to railroad the tube over, no second-guessing the sequence",
+        "this is the last step of the difficult airway algorithm, decide early rather than as a final desperate move after everything else has failed",
+        "a 6.0 cuffed endotracheal tube is the standard railroad target, not a dedicated small cricothyroidotomy tube in the adult emergency scenario",
+        "vertical skin incision but a horizontal stab through the cricothyroid membrane itself",
+        "confirm with quantitative waveform capnography like any other airway",
+        "surgical airway",
+        "cric",
+        "front-of-neck access",
+        "FONA",
+        "scalpel-finger-bougie"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/airway-sedation-workflows/cricothyroidotomy",
+      "settingEmphasis": [
+        "ed",
+        "or",
+        "icu"
       ]
     },
     {
@@ -6632,6 +6829,35 @@
       "settingEmphasis": [
         "ed",
         "icu"
+      ]
+    },
+    {
+      "id": "lateral-canthotomy",
+      "title": "Lateral Canthotomy & Cantholysis",
+      "section": "Procedures",
+      "category": "ENT / Ophtho / Dental / GU",
+      "tags": [
+        "lateral canthotomy",
+        "cantholysis",
+        "orbital compartment syndrome",
+        "retrobulbar hemorrhage",
+        "procedure",
+        "ED"
+      ],
+      "keywords": [
+        "this is a clinical diagnosis and a bedside procedure, do not wait for CT or ophthalmology if vision is threatened",
+        "cut the lateral canthal tendon first, then the inferior crus, then the superior crus only if pressure remains elevated",
+        "strumming the crus with closed scissors to confirm it's fully released, it should feel like a plucked string when intact and go slack once cut",
+        "cut inferoposteriorly toward the orbital rim to avoid the lacrimal gland and levator muscle superiorly",
+        "this buys time, it does not replace definitive ophthalmology management once decompressed",
+        "orbital decompression",
+        "canthotomy and cantholysis",
+        "retrobulbar hemorrhage decompression"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/ent-ophtho-dental-gu/lateral-canthotomy",
+      "settingEmphasis": [
+        "ed"
       ]
     },
     {
@@ -7773,6 +7999,9 @@
         "recruitment maneuver",
         "PEEP titration",
         "intraoperative ventilation",
+        "prone positioning",
+        "refractory hypoxemia",
+        "inhaled nitric oxide",
         "ICU",
         "OR"
       ],
@@ -7784,11 +8013,18 @@
         "staircase recruitment cap 40-50",
         "decremental PEEP trial",
         "IMPROVE low tidal volume PROVHILO no benefit high PEEP RM",
+        "PROSEVA proning had a bigger mortality effect than any other ARDS intervention including lung-protective ventilation itself, 16+ hours a day early in moderate-severe ARDS",
+        "ROSE trial found continuous 48-hour cisatracurium infusion was not superior to as-needed paralysis with light sedation, and may cause harm, don't reflexively start a continuous NMB infusion",
+        "inhaled nitric oxide improves oxygenation transiently but has never shown a mortality benefit, use it as a bridge/rescue not a routine therapy",
         "APRV setup",
         "airway pressure release ventilation",
         "BiVent",
         "recruitment maneuver ART trial",
-        "intraoperative protective ventilation IMPROVE PROVHILO"
+        "intraoperative protective ventilation IMPROVE PROVHILO",
+        "prone positioning ARDS",
+        "PROSEVA",
+        "neuromuscular blockade ARDS",
+        "inhaled nitric oxide ARDS"
       ],
       "contentType": "reference",
       "route": "/reference-library/critical-care/advanced-ards-ventilation",
@@ -7870,6 +8106,41 @@
         "ed",
         "prehospital",
         "icu"
+      ]
+    },
+    {
+      "id": "carbon-monoxide-cyanide-poisoning",
+      "title": "Carbon Monoxide Poisoning & Cyanide Co-Exposure",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "carbon monoxide",
+        "cyanide",
+        "hyperbaric oxygen",
+        "smoke inhalation",
+        "toxicology",
+        "ED",
+        "ICU",
+        "prehospital"
+      ],
+      "keywords": [
+        "COHb level does not reliably predict clinical severity, treat the patient and the exposure history, not just the number",
+        "pulse oximetry reads falsely normal in CO poisoning, it cannot distinguish oxyhemoglobin from carboxyhemoglobin, co-oximetry is required",
+        "100 percent high-flow oxygen for everyone regardless of COHb level, it's the antidote and it's cheap",
+        "hyperbaric oxygen for COHb over 25 percent, any loss of consciousness, cardiac involvement, severe acidosis, neurologic deficit, or pregnancy",
+        "consider concurrent cyanide toxicity in any structure-fire smoke inhalation with altered mental status or lactate over 10, hydroxocobalamin is the antidote of choice",
+        "delayed neurologic sequelae can appear days to weeks after apparent recovery from CO poisoning",
+        "CO poisoning",
+        "carboxyhemoglobin",
+        "smoke inhalation toxicity",
+        "cyanide poisoning"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/carbon-monoxide-cyanide-poisoning",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
       ]
     },
     {
@@ -8427,6 +8698,38 @@
       ]
     },
     {
+      "id": "post-cardiac-arrest-care-ttm",
+      "title": "Post-Cardiac Arrest Care & Targeted Temperature Management",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "post-cardiac arrest",
+        "TTM",
+        "targeted temperature management",
+        "neuroprognostication",
+        "ROSC",
+        "ICU"
+      ],
+      "keywords": [
+        "the evidence has shifted away from mandatory hypothermia toward active fever prevention, TTM2 showed no benefit of 33C over controlled normothermia with fever avoidance",
+        "target normothermia under 37.5C for at least 24-72 hours, avoid fever which is clearly harmful even if deep hypothermia isn't clearly beneficial",
+        "avoid hypotension, target a MAP that supports cerebral perfusion, don't chase a fixed number blindly",
+        "continuous EEG from day 1 to catch subclinical seizures, myoclonus after cardiac arrest can look like seizure but isn't always",
+        "multimodal neuroprognostication waits until at least 72 hours AFTER the patient is back to normothermia, not 72 hours after ROSC, and no single test is used in isolation",
+        "post-ROSC care",
+        "targeted temperature management",
+        "TTM",
+        "therapeutic hypothermia",
+        "post-arrest bundle"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/post-cardiac-arrest-care-ttm",
+      "settingEmphasis": [
+        "icu",
+        "ed"
+      ]
+    },
+    {
       "id": "primary-palliative-care-icu",
       "title": "Primary Palliative Care & Comfort-Focused Transitions in the ICU",
       "section": "Reference Library",
@@ -8946,6 +9249,68 @@
       ],
       "audience": [
         "adult"
+      ]
+    },
+    {
+      "id": "deep-neck-space-infections",
+      "title": "Deep Neck Space Infections — PTA, Epiglottitis & Ludwig's Angina",
+      "section": "Reference Library",
+      "category": "ENT / Ophtho / Dental / GU",
+      "tags": [
+        "peritonsillar abscess",
+        "epiglottitis",
+        "Ludwig's angina",
+        "airway emergency",
+        "ENT",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "hot potato voice, trismus, and uvular deviation point to peritonsillar abscess",
+        "adult epiglottitis is not just a peds disease, think of it in an adult with a sore throat worse than the exam looks, muffled voice, drooling, tripod positioning",
+        "Ludwig's angina is bilateral submandibular space cellulitis that pushes the tongue up and back, it's a floor-of-mouth process not a tonsil process",
+        "the shared theme across all three is airway-first thinking, get anesthesia/ENT to the bedside early before the airway closes rather than after",
+        "avoid agitating a child or adult with a tenuous airway from one of these, keep them upright and calm, don't force a lateral neck film or exam that provokes crying/struggling",
+        "peritonsillar abscess",
+        "adult epiglottitis",
+        "Ludwig angina",
+        "deep space neck infection"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/ent-ophtho-dental-gu/deep-neck-space-infections",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "ophthalmologic-emergencies",
+      "title": "Ophthalmologic Emergencies",
+      "section": "Reference Library",
+      "category": "ENT / Ophtho / Dental / GU",
+      "tags": [
+        "angle-closure glaucoma",
+        "globe rupture",
+        "CRAO",
+        "chemical eye injury",
+        "ophthalmology",
+        "ED"
+      ],
+      "keywords": [
+        "acute angle-closure glaucoma is a painful red eye with a mid-dilated fixed pupil and a rock-hard globe on palpation, treat before ophtho even arrives",
+        "globe rupture — stop the exam, rigid shield, no further manipulation or pressure, nothing by mouth for OR",
+        "CRAO is a stroke of the eye, painless sudden monocular vision loss, treat on the same urgent timeline as an ischemic stroke",
+        "chemical injury to the eye is the one true can't-wait-for-consult ophtho emergency, irrigate first before checking visual acuity or anything else",
+        "alkali burns penetrate deeper and are worse than acid burns",
+        "eye emergencies",
+        "acute vision loss",
+        "red eye emergency",
+        "ocular trauma"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/ent-ophtho-dental-gu/ophthalmologic-emergencies",
+      "settingEmphasis": [
+        "ed"
       ]
     },
     {
@@ -10179,6 +10544,38 @@
       "settingEmphasis": [
         "or",
         "icu"
+      ]
+    },
+    {
+      "id": "or-fire-safety",
+      "title": "OR Fire Safety & Airway Fire Protocol",
+      "section": "Reference Library",
+      "category": "Perioperative & Anesthesia",
+      "tags": [
+        "OR fire",
+        "surgical fire",
+        "airway fire",
+        "fire triangle",
+        "RACE",
+        "perioperative safety",
+        "OR"
+      ],
+      "keywords": [
+        "the fire triangle in the OR is an oxidizer (supplemental oxygen or nitrous, often pooling under drapes), a fuel (drapes, prep solution, ETT, hair), and an ignition source (electrocautery, laser, fiber-optic light source)",
+        "the highest-risk combination is an open oxygen source near the head and neck during head/neck/upper-chest surgery with an ignition source nearby",
+        "airway fire — stop the gas flow, remove the burning tube, pour saline in the airway, then and only then reventilate with air before reintroducing oxygen",
+        "RACE for a general OR/hospital fire — Rescue, Alarm, Confine, Extinguish or Evacuate",
+        "let prep solution dry fully and avoid pooling before draping and before activating electrocautery",
+        "surgical fire",
+        "operating room fire",
+        "airway fire",
+        "RACE protocol",
+        "fire triangle"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/perioperative-anesthesia/or-fire-safety",
+      "settingEmphasis": [
+        "or"
       ]
     },
     {
@@ -12124,6 +12521,68 @@
         "ed",
         "prehospital",
         "or"
+      ]
+    },
+    {
+      "id": "acute-mesenteric-ischemia",
+      "title": "Acute Mesenteric Ischemia",
+      "section": "Reference Library",
+      "category": "Vascular Emergencies",
+      "tags": [
+        "mesenteric ischemia",
+        "abdominal pain out of proportion",
+        "vascular emergency",
+        "GI",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "pain out of proportion to exam is the classic and most important clue, early on the abdomen can be soft and benign-appearing",
+        "elevated lactate is a late finding, a normal lactate does not rule this out early",
+        "CT angiography is the diagnostic test of choice, not plain CT abdomen/pelvis without a dedicated arterial-phase protocol",
+        "embolic (usually SMA, often atrial fibrillation source) vs thrombotic (usually at an area of pre-existing atherosclerotic stenosis) vs non-occlusive mesenteric ischemia (low-flow state, often in a hypotensive/vasopressor-dependent ICU patient) vs mesenteric venous thrombosis",
+        "mortality remains high, 30-60 percent overall, largely because of diagnostic delay",
+        "mesenteric ischemia",
+        "bowel ischemia",
+        "AMI (mesenteric)"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/vascular-emergencies/acute-mesenteric-ischemia",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "aortic-dissection-ruptured-aaa",
+      "title": "Aortic Dissection & Ruptured AAA",
+      "section": "Reference Library",
+      "category": "Vascular Emergencies",
+      "tags": [
+        "aortic dissection",
+        "ruptured AAA",
+        "acute aortic syndrome",
+        "tearing chest pain",
+        "vascular emergency",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "ADD-RS score of 0-3, low-risk plus negative D-dimer has a negative predictive value near 99.7%",
+        "Stanford A involves the ascending aorta and needs emergent cardiac surgery, Stanford B is descending-only and usually managed medically first",
+        "impulse control — heart rate and blood pressure both need to come down, beta-blocker before vasodilator to avoid reflex tachycardia worsening shear stress",
+        "ruptured AAA triad of pain, hypotension, and a pulsatile abdominal mass is present in a minority of patients, don't wait for all three",
+        "permissive hypotension for a ruptured AAA en route to the OR, same logic as any uncontrolled hemorrhage",
+        "thoracic aortic dissection",
+        "abdominal aortic aneurysm rupture",
+        "acute aortic syndrome",
+        "ADD-RS"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/vascular-emergencies/aortic-dissection-ruptured-aaa",
+      "settingEmphasis": [
+        "ed",
+        "icu"
       ]
     }
   ]

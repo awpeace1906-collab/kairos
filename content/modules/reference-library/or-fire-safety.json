@@ -1,0 +1,99 @@
+{
+  "id": "or-fire-safety",
+  "section": "Reference Library",
+  "category": "Perioperative & Anesthesia",
+  "title": "OR Fire Safety & Airway Fire Protocol",
+  "settingEmphasis": ["or"],
+  "aliases": ["surgical fire", "operating room fire", "airway fire", "RACE protocol", "fire triangle"],
+  "tags": ["OR fire", "surgical fire", "airway fire", "fire triangle", "RACE", "perioperative safety", "OR"],
+  "keywords": ["the fire triangle in the OR is an oxidizer (supplemental oxygen or nitrous, often pooling under drapes), a fuel (drapes, prep solution, ETT, hair), and an ignition source (electrocautery, laser, fiber-optic light source)", "the highest-risk combination is an open oxygen source near the head and neck during head/neck/upper-chest surgery with an ignition source nearby", "airway fire — stop the gas flow, remove the burning tube, pour saline in the airway, then and only then reventilate with air before reintroducing oxygen", "RACE for a general OR/hospital fire — Rescue, Alarm, Confine, Extinguish or Evacuate", "let prep solution dry fully and avoid pooling before draping and before activating electrocautery"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "American Society of Anesthesiologists. Practice Advisory for the Prevention and Management of Operating Room Fires. Anesthesiology. 2013;118(2):271-290.",
+    "ECRI Institute. New Clinical Guide to Surgical Fire Prevention.",
+    "Apfelbaum JL, et al. Practice Advisory for the Prevention and Management of Operating Room Fires: an updated report by the ASA Task Force."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). No prior module addressed OR fire prevention or the airway fire response, despite it being an ASA practice-advisory-mandated, safety-critical topic." }
+  ],
+  "summary": "OR fires happen when the fire triangle — oxidizer, fuel, ignition source — comes together, most dangerously during head/neck/upper-chest surgery with an open oxygen source; prevention is a team responsibility at every timeout, and an airway fire has a specific stop-remove-irrigate-reventilate sequence that has to be automatic.",
+  "whyThisMatters": "Surgical fires are rare but devastating and largely preventable — nearly all of them involve the same recognizable combination of an oxygen-enriched atmosphere, a fuel source, and an ignition source close together, which is exactly why the ASA mandates an explicit fire-risk assessment at every surgical timeout. An airway fire specifically is a true emergency where the correct sequence (stop gas flow before anything else) has to be reflexive, not looked up in the moment.",
+  "clinicalTakeaway": "Assess fire risk at every timeout — an open oxygen source near the head/neck plus an ignition source (electrocautery, laser) during head/neck/upper-chest surgery is the classic high-risk combination. Let prep solution dry fully and avoid pooling before draping/activating cautery. If a fire starts on the drapes/patient: RESCUE the patient, sound the ALARM, CONFINE by closing doors, and EXTINGUISH (or evacuate if it can't be controlled) — RACE. If an airway fire occurs: STOP the flow of airway gases immediately, REMOVE the burning endotracheal tube, POUR SALINE into the airway, THEN reventilate with air (mask ventilation) before reintroducing oxygen — do not reintroduce oxygen or reinsert an ETT until the fire is confirmed out.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The fire triangle in the OR"
+    },
+    {
+      "type": "table",
+      "columns": ["Element", "OR examples"],
+      "rows": [
+        ["Oxidizer", "Supplemental oxygen or nitrous oxide, especially an open source (nasal cannula, face mask, open delivery under drapes near the head) that can pool and create a locally oxygen-enriched atmosphere well above room air"],
+        ["Fuel", "Surgical drapes, prep solution (especially alcohol-based, if not fully dried), the endotracheal tube itself, patient hair, gauze/sponges"],
+        ["Ignition source", "Electrocautery, laser, fiber-optic light source/cable (which can get hot enough to ignite drapes if left resting on them)"]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "The highest-risk scenario is head/neck/upper-chest surgery with an open oxygen source near the surgical field AND an ignition source (electrocautery/laser) in use — this combination is exactly what the ASA fire-risk assessment at timeout is designed to catch."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Prevention — every timeout"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Explicitly assess fire risk as part of the surgical timeout, especially for head/neck/upper-chest cases — this is an ASA practice-advisory expectation, not an optional extra step.",
+        "Allow alcohol-based or other flammable prep solutions to fully dry before draping, and avoid pooling of prep solution (especially in body folds/depressions) before activating any ignition source.",
+        "For open oxygen delivery near the face during head/neck surgery, coordinate with the surgeon to minimize supplemental oxygen concentration when electrocautery/laser is in active use near the field, if the patient's oxygenation allows it — an open, high-flow oxygen source right next to an active ignition source is the single most correctable risk factor.",
+        "Keep the fiber-optic light source cable off the drapes when not actively in the field, and use it only under direct attention — a light cable resting on drapes can generate enough heat to ignite them.",
+        "Communicate clearly between surgery, anesthesia, and nursing whenever an ignition source is about to be used near an oxygen-enriched field — this is a team safety moment, not any single role's sole responsibility."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "If a fire starts — RACE"
+    },
+    {
+      "type": "list",
+      "items": [
+        "RESCUE — remove the patient from the immediate fire source/area.",
+        "ALARM — activate the fire alarm/call for help per institutional protocol.",
+        "CONFINE — close doors to limit fire and smoke spread.",
+        "EXTINGUISH (if safe and the fire is small/controllable) or EVACUATE if it cannot be safely controlled."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Airway fire — the specific emergency sequence"
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "An airway fire (during head/neck/upper-airway surgery, or from an ignition source near an oxygen-enriched airway) is a distinct emergency with its own sequence — this has to be automatic, not looked up in the moment."
+    },
+    {
+      "type": "list",
+      "items": [
+        "1. STOP the flow of airway gases immediately — disconnect the breathing circuit / stop all gas flow to the airway, including turning off supplemental oxygen and nitrous oxide.",
+        "2. REMOVE the burning material from the airway — this means removing the endotracheal tube (which may itself be burning or be the fuel source) if it's safe to do so.",
+        "3. POUR SALINE (or water) into the airway to extinguish any remaining fire.",
+        "4. Only AFTER the fire is confirmed extinguished: reventilate the patient with air (mask ventilation) — do NOT reintroduce oxygen or reinsert an endotracheal tube until the fire is out.",
+        "5. Once the patient is stabilized on air, reassess the airway (direct/bronchoscopic examination) for thermal injury before deciding how to proceed — reintubation, extent of injury, and ongoing management should be guided by what's actually found, not assumed.",
+        "6. Assess the patient for smoke inhalation injury and manage per standard inhalation-injury principles if significant airway/thermal injury is found."
+      ]
+    }
+  ],
+  "related": ["malignant-hyperthermia", "perioperative-anaphylaxis"],
+  "buildNote": "Perioperative & Anesthesia category. Fire triangle framing, timeout fire-risk-assessment expectation, and the airway-fire stop-remove-irrigate-reventilate sequence WebSearch-verified against the ASA 2013 Practice Advisory and ECRI Institute guidance."
+}

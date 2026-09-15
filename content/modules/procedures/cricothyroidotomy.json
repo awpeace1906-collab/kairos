@@ -1,0 +1,79 @@
+{
+  "id": "cricothyroidotomy",
+  "section": "Procedures",
+  "category": "Airway & Sedation Workflows",
+  "title": "Emergency Cricothyroidotomy (Surgical Airway)",
+  "settingEmphasis": ["ed", "or", "icu"],
+  "aliases": ["surgical airway", "cric", "front-of-neck access", "FONA", "scalpel-finger-bougie"],
+  "tags": ["cricothyroidotomy", "surgical airway", "can't intubate can't ventilate", "CICO", "emergency airway", "ED", "OR", "ICU"],
+  "keywords": ["scalpel-finger-bougie technique — scalpel to make the hole, finger to keep it open and confirm you're in the trachea, bougie to railroad the tube over, no second-guessing the sequence", "this is the last step of the difficult airway algorithm, decide early rather than as a final desperate move after everything else has failed", "a 6.0 cuffed endotracheal tube is the standard railroad target, not a dedicated small cricothyroidotomy tube in the adult emergency scenario", "vertical skin incision but a horizontal stab through the cricothyroid membrane itself", "confirm with quantitative waveform capnography like any other airway"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Hill C, et al. Emergency surgical cricothyroidotomy: 24 case series and analysis of technique. J Emerg Med. 2018.",
+    "Brown CA, et al. Cricothyrotomy. In: The Walls Manual of Emergency Airway Management, 6th ed.",
+    "Difficult Airway Society (DAS) 2015 Guidelines for management of unanticipated difficult intubation."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). Previously only referenced as the terminal endpoint within the difficult-airway algorithm module without its own step-by-step procedure card, unlike other Procedures-section content of comparable acuity (central line, tube thoracostomy)." }
+  ],
+  "outputType": "workflow",
+  "purpose": "Step-by-step surgical airway technique (scalpel-finger-bougie) for the can't-intubate-can't-ventilate emergency, when the difficult airway algorithm has reached its terminal step.",
+  "entryPrompt": "This is the last step of the difficult airway algorithm — a genuine can't-intubate, can't-ventilate (CICO) emergency. Declare it early and commit to the technique fully rather than treating it as a last desperate improvisation.",
+  "nodes": [
+    {
+      "id": "declare",
+      "type": "step",
+      "prompt": "1. Declare CICO and commit",
+      "body": "State out loud that this is a can't-intubate-can't-ventilate emergency and that you are proceeding to a surgical airway — this is a decision point the whole team needs to hear, not a private judgment call. Hesitation costs time the patient doesn't have; once declared, commit fully to the technique rather than oscillating back to repeated intubation attempts."
+    },
+    {
+      "id": "position-identify",
+      "type": "step",
+      "prompt": "2. Position and identify landmarks",
+      "body": "Extend the neck if there's no cervical spine concern (a pillow/roll under the shoulders helps). Stabilize the larynx with your non-dominant hand and identify the cricothyroid membrane by palpation — the depression between the thyroid cartilage (superior) and cricoid cartilage (inferior). If landmarks are difficult to palpate (obesity, edema, prior neck surgery), a generous vertical incision helps you find them by direct exposure rather than relying on palpation alone."
+    },
+    {
+      "id": "incise",
+      "type": "step",
+      "prompt": "3. Incise — vertical skin, horizontal membrane",
+      "body": "Make a vertical midline skin incision roughly 3-4 cm over the cricothyroid membrane (a vertical incision avoids major vessels better than a horizontal one and keeps your options open if landmarks shift). Then make a HORIZONTAL stab incision directly through the cricothyroid membrane itself, entering the airway."
+    },
+    {
+      "id": "finger",
+      "type": "step",
+      "prompt": "4. Finger — hold the tract open and confirm placement",
+      "body": "Immediately after incising the membrane, insert the index finger of your non-dominant hand into the incision to hold the tract open, confirm you are in the trachea (not a false passage), and maintain your orientation while you set down the scalpel and pick up the bougie."
+    },
+    {
+      "id": "bougie",
+      "type": "step",
+      "prompt": "5. Bougie — railroad along your finger into the trachea",
+      "body": "Slide a bougie (ideally coude/angled-tip) along your finger, through the incision, and into the trachea, directing it caudally. Advance it roughly 10-15 cm — you may feel tracheal ring 'clicks' or hold-up at the carina/mainstem bronchus as confirmation of correct tracheal placement, though absence of this sensation doesn't necessarily mean failure."
+    },
+    {
+      "id": "tube",
+      "type": "step",
+      "prompt": "6. Tube — railroad a 6.0 cuffed ETT over the bougie",
+      "body": "Thread a well-lubricated size 6.0 cuffed endotracheal tube over the bougie and advance it through the incision into the trachea (a standard adult cuffed ETT is the typical railroad target in this emergency technique — not a dedicated small-bore cricothyroidotomy-specific tube). Remove the bougie, inflate the cuff."
+    },
+    {
+      "id": "confirm-secure",
+      "type": "step",
+      "prompt": "7. Confirm and secure",
+      "body": "Confirm placement with quantitative waveform capnography — the same standard as any other airway, a surgical airway is not exempt from confirmation. Secure the tube well (this site is more prone to dislodgement than an oral ETT), and reassess ventilation/oxygenation. Obtain imaging and further airway/ENT evaluation once the patient is stabilized — this is an emergency bridge, and definitive airway management (including possible conversion to a formal tracheostomy) is a subsequent decision made once the immediate crisis has passed."
+    }
+  ],
+  "checklist": [
+    "CICO declared explicitly and the team committed to a surgical airway rather than repeated failed intubation attempts",
+    "Vertical skin incision, horizontal incision through the cricothyroid membrane itself",
+    "Finger used to hold the tract open and confirm tracheal placement before the scalpel is set down",
+    "Bougie railroaded through the finger-held tract, then a 6.0 cuffed ETT railroaded over the bougie",
+    "Placement confirmed with quantitative waveform capnography, tube secured, and further airway/ENT evaluation arranged once stabilized"
+  ],
+  "crossLinks": ["airway-management-flow", "physiologically-difficult-airway"],
+  "buildNote": "workflow outputType. Scalpel-finger-bougie sequence and the 6.0 cuffed ETT railroad target WebSearch-verified against Walls Manual/EMCrit/First10EM procedural teaching, which converged consistently on this technique as the current emergency-medicine standard over older tracheal-hook or dedicated-cric-kit approaches. crossLinks id physiologically-difficult-airway assumed from prior batch naming — verify actual id at build time."
+}

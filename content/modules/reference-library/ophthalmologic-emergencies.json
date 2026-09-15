@@ -1,0 +1,115 @@
+{
+  "id": "ophthalmologic-emergencies",
+  "section": "Reference Library",
+  "category": "ENT / Ophtho / Dental / GU",
+  "title": "Ophthalmologic Emergencies",
+  "settingEmphasis": ["ed"],
+  "aliases": ["eye emergencies", "acute vision loss", "red eye emergency", "ocular trauma"],
+  "tags": ["angle-closure glaucoma", "globe rupture", "CRAO", "chemical eye injury", "ophthalmology", "ED"],
+  "keywords": ["acute angle-closure glaucoma is a painful red eye with a mid-dilated fixed pupil and a rock-hard globe on palpation, treat before ophtho even arrives", "globe rupture — stop the exam, rigid shield, no further manipulation or pressure, nothing by mouth for OR", "CRAO is a stroke of the eye, painless sudden monocular vision loss, treat on the same urgent timeline as an ischemic stroke", "chemical injury to the eye is the one true can't-wait-for-consult ophtho emergency, irrigate first before checking visual acuity or anything else", "alkali burns penetrate deeper and are worse than acid burns"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Gerstenblith AT, Rabinowitz MP, eds. The Wills Eye Manual, 8th ed.",
+    "Walker RA, Adhikari S. Eye Emergencies. In: Tintinalli's Emergency Medicine, 9th ed.",
+    "Varma DR, et al. A review of central retinal artery occlusion: clinical presentation and management. Eye (Lond). 2013;27(6):688-697."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). No ophthalmologic content existed anywhere in the corpus prior to this; these four diagnoses are the time-critical subset where delay directly costs vision." }
+  ],
+  "summary": "Four eye emergencies where minutes matter for vision: acute angle-closure glaucoma, globe rupture, central retinal artery occlusion, and chemical injury — each has a distinct first move that shouldn't wait for ophthalmology to arrive.",
+  "whyThisMatters": "Unlike most 'red eye' presentations, these four are genuinely time-critical for vision preservation — chemical injury and CRAO in particular are measured in minutes, and globe rupture management is dominated by what you should NOT do (any pressure on the globe can extrude intraocular contents and convert a salvageable eye into a lost one).",
+  "clinicalTakeaway": "Chemical eye injury: irrigate immediately with whatever's available, before checking vision or history — this is the one ophtho complaint that never waits for anything else. Globe rupture: rigid shield (never a pressure patch), no further exam/manipulation, NPO, antiemetics to prevent Valsalva-induced extrusion, emergent ophtho. Acute angle-closure glaucoma: start IOP-lowering treatment in the ED, don't just wait for ophthalmology. CRAO: treat with the same urgency as an acute ischemic stroke — it may share the same underlying thrombotic/embolic workup and time-sensitive reperfusion window.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Orbital compartment syndrome (retrobulbar hemorrhage) — the fifth true emergency"
+    },
+    {
+      "type": "text",
+      "text": "Bleeding or swelling confined within the bony orbit (most often retrobulbar hemorrhage after facial/orbital trauma, but also post-surgical or spontaneous) raises orbital pressure with nowhere to go, which can compress the optic nerve and central retinal artery and cause permanent vision loss within as little as 60-90 minutes if untreated. Suspect it with proptosis, a tense/firm orbit on palpation, resistance to retropulsion of the globe, an afferent pupillary defect, elevated intraocular pressure, and decreasing vision after orbital trauma."
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "This is a clinical diagnosis treated at the bedside — do NOT wait for CT imaging or ophthalmology to arrive if vision is threatened and the diagnosis is apparent. Emergent lateral canthotomy and cantholysis is the definitive ED bedside decompression procedure; see the lateral-canthotomy procedure guide."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Chemical eye injury — irrigate first, always"
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "Chemical exposure to the eye is irrigated BEFORE visual acuity, before history, before anything else — with whatever is immediately available (saline, or even tap water if nothing else is at hand) while the rest of the workup is arranged around it, not before it."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Alkali burns (drain cleaners, cement, ammonia) penetrate deeper and are generally worse than acid burns, because alkali causes liquefactive necrosis that keeps advancing through tissue, while acid causes coagulative necrosis that tends to limit its own depth.",
+        "Irrigate with at least 1-2 liters (more for alkali or if pH remains abnormal), using a Morgan lens or simple IV tubing run over the eye if a Morgan lens isn't tolerated/available, ideally after a topical anesthetic drop to allow the patient to tolerate irrigation and eyelid retraction.",
+        "Check the conjunctival pH with litmus paper after irrigation and continue irrigating until it normalizes (roughly 7.0-7.4) and stays stable on a repeat check 15-20 minutes later — don't stop irrigating just because a fixed volume was given.",
+        "Sweep the fornices for retained particulate matter (common with cement/lime) once irrigation is underway — retained alkaline particles will keep re-injuring the eye if left in place.",
+        "Emergent ophthalmology involvement for any significant chemical injury, especially if the cornea appears hazy/opacified or the pH won't normalize."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Globe rupture — stop touching the eye"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Suspect with a history of significant blunt or penetrating trauma plus any of: visible extrusion of intraocular contents, a peaked/teardrop-shaped pupil, marked hyphema, severe subconjunctival hemorrhage that obscures the globe, or a soft/collapsed-feeling globe.",
+        "STOP THE EXAM once suspected — no further palpation of the globe, no tonometry (IOP measurement can extrude contents through the rupture site), no forced eyelid retraction.",
+        "Place a RIGID eye shield (a real shield or an improvised one, e.g. a cut-down cup taped over the orbit) — never a pressure patch, which can itself extrude contents.",
+        "NPO, antiemetics, and pain/anxiety control — Valsalva from vomiting or straining raises intraocular pressure and can extrude contents through the rupture.",
+        "Keep the head of bed elevated, avoid anything that raises IOP (including succinylcholine if intubation is needed for other injuries — a non-depolarizing agent is preferred if the eye is a concern), and get emergent ophthalmology involvement for operative repair.",
+        "CT orbits (thin-cut, avoiding contrast dye directly instilled in the eye) can help characterize the injury without touching the globe, if imaging is needed for other trauma reasons anyway."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Acute angle-closure glaucoma"
+    },
+    {
+      "type": "text",
+      "text": "Classic presentation: acute onset of severe eye pain (often with headache, nausea/vomiting that can mimic a primary GI or neuro complaint), a red eye, blurred vision often with halos around lights, a mid-dilated and FIXED (poorly reactive) pupil, and a globe that feels rock-hard on gentle palpation compared to the other eye. Intraocular pressure is markedly elevated (often >30-40 mmHg, sometimes much higher) if measured."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Start IOP-lowering treatment in the ED rather than waiting for ophthalmology to arrive — every additional hour of markedly elevated IOP risks permanent optic nerve damage.",
+        "Typical ED regimen (adjust per local protocol/ophtho guidance): a topical beta-blocker (e.g. timolol), a topical alpha-agonist (e.g. apraclonidine or brimonidine), and a topical carbonic anhydrase inhibitor (e.g. dorzolamide), given essentially simultaneously — plus a systemic carbonic anhydrase inhibitor (IV or oral acetazolamide) if there's no contraindication (sulfa allergy, sickle cell disease, significant renal impairment).",
+        "Pilocarpine (miotic) is often added but only AFTER initial IOP-lowering treatment has had a chance to work — giving it too early, before the pressure has come down at all, can be ineffective because a very high pressure causes ischemic pupillary sphincter paralysis that doesn't respond to pilocarpine yet.",
+        "Emergent ophthalmology consultation for definitive treatment (typically laser peripheral iridotomy) — ED medical therapy buys time and protects the nerve, it doesn't replace definitive treatment."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Central retinal artery occlusion (CRAO) — a stroke of the eye"
+    },
+    {
+      "type": "text",
+      "text": "Sudden, painless, profound monocular vision loss. Exam classically shows a pale/edematous retina with a 'cherry-red spot' at the fovea (where the thin retina overlies the still-perfused choroid), though this can take time to develop and may not be obvious on a non-dilated ED fundus exam."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Treat with the same urgency as an acute ischemic stroke — CRAO shares a similar embolic/thrombotic pathophysiology (often from carotid or cardioembolic sources) and time-sensitive reperfusion window; involve neurology/stroke and ophthalmology emergently and consider whether the patient falls within a treatment window analogous to ischemic stroke per current institutional protocol.",
+        "Urgent stroke workup (CT/CTA head and neck, cardiac monitoring, carotid evaluation) is appropriate regardless of specific eye-directed treatment, since the underlying vascular risk factors and embolic source are the same as for cerebral stroke and matter for secondary prevention.",
+        "Time-honored bedside maneuvers (ocular massage, anterior chamber paracentesis, carbogen/high-flow oxygen) have limited evidence and are generally ophthalmology-directed rather than a routine ED intervention — the priority is urgent specialist involvement and recognizing this as a vascular emergency, not memorizing a specific bedside procedure."
+      ]
+    }
+  ],
+  "related": ["acute-ischemic-stroke", "lateral-canthotomy"],
+  "buildNote": "New ENT / Ophtho / Dental / GU category. Deliberately scoped to the four genuinely time-critical eye emergencies rather than a general ophthalmology text; more common but less acute complaints (conjunctivitis, corneal abrasion, subconjunctival hemorrhage) are out of scope for a bedside crisis-reference module. related[] points to the new lateral-canthotomy procedure built alongside this in the same batch."
+}

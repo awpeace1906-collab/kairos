@@ -1,0 +1,71 @@
+{
+  "id": "peds-status-epilepticus-ladder",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Pediatric Status Epilepticus — Treatment Ladder",
+  "settingEmphasis": ["ed", "icu"],
+  "audience": ["peds"],
+  "aliases": ["peds status epilepticus", "pediatric seizure algorithm", "AES status epilepticus algorithm"],
+  "tags": ["status epilepticus", "seizure", "peds", "benzodiazepine", "second-line antiseizure", "ED", "ICU"],
+  "keywords": ["the 2016 AES algorithm is a timed staircase, not a single drug choice — stabilization 0-5 minutes, first-line benzodiazepine 5-20 minutes, second-line agent 20-40 minutes, third-line 40-60 minutes", "give a full benzodiazepine dose, not a timid partial dose, under-dosing is the most common preventable error", "check glucose in the first few minutes, hypoglycemia is a reversible cause that a benzodiazepine alone won't fix", "no line yet, don't wait for one, IM midazolam works and buys time to get access", "if seizures continue past the second-line agent, this is refractory status epilepticus and needs intubation for a continuous infusion, not a third sequential bolus drug tried one after another indefinitely"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-15",
+  "next_review_due": "2026-12-15",
+  "review_tier": 1,
+  "sources": [
+    "Glauser T, et al. Evidence-Based Guideline: Treatment of Convulsive Status Epilepticus in Children and Adults: Report of the Guideline Committee of the American Epilepsy Society. Epilepsy Curr. 2016;16(1):48-61."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). The individual second-line drug cards (fosphenytoin, levetiracetam, valproate, lorazepam, midazolam) already existed but nothing unified them into the timed algorithm, unlike the adult status-epilepticus-adult module which already has this structure." }
+  ],
+  "kind": "decision-tree",
+  "purpose": "The timed, staged treatment algorithm for pediatric convulsive status epilepticus — when to escalate, not just what each individual drug's dose is.",
+  "ageRange": "Pediatric, all ages — dosing for each stage lives in the individual weight-based drug cards linked below.",
+  "sourceOfTruth": ["peds-lorazepam-status", "peds-midazolam-status", "peds-fosphenytoin-status", "peds-levetiracetam-status", "peds-valproate-status"],
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Definition and the core principle"
+    },
+    {
+      "type": "text",
+      "text": "Status epilepticus = a seizure lasting more than 5 minutes, OR two or more seizures without full recovery of consciousness between them. The core principle across every stage: give FULL doses promptly rather than partial/timid doses — under-dosing is one of the most common preventable errors, and benzodiazepines become progressively less effective the longer a seizure continues (GABA-A receptor internalization), which is exactly why the algorithm is time-staged rather than open-ended."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2016 AES algorithm — four timed phases"
+    },
+    {
+      "type": "table",
+      "columns": ["Phase", "Window", "Action"],
+      "rows": [
+        ["Stabilization", "0-5 min", "Airway/breathing/circulation, oxygen, monitor, IV access if readily available (don't delay benzodiazepine for it), POINT-OF-CARE GLUCOSE — treat hypoglycemia immediately if found, since a benzodiazepine alone won't fix a hypoglycemic seizure."],
+        ["First-line (benzodiazepine)", "5-20 min", "A FULL-dose benzodiazepine — IV lorazepam if access is present; IM midazolam (or intranasal/buccal midazolam) if no IV access yet, rather than waiting to establish one. See the linked lorazepam/midazolam dosing cards for weight-based dosing. May repeat once if the first dose doesn't terminate the seizure within a few minutes."],
+        ["Second-line (non-benzodiazepine antiseizure medication)", "20-40 min", "If seizures continue despite an adequate benzodiazepine trial: levetiracetam, fosphenytoin, or valproate — choice depends on patient factors (e.g. valproate generally avoided with known/suspected hepatic or mitochondrial disease; fosphenytoin avoided in some cardiac conduction concerns) and institutional preference. See the linked individual dosing cards."],
+        ["Third-line / refractory status", "40-60 min", "If seizures persist past an adequate second-line agent, this is REFRACTORY status epilepticus — the next step is typically a different second-line agent OR proceeding to intubation and a continuous infusion (midazolam, pentobarbital, or propofol infusion per institutional/ICU protocol), not an indefinite sequence of additional bolus drugs tried one after another."]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Reaching the third-line/refractory stage means involving critical care and typically proceeding to a continuous infusion under controlled, monitored conditions (usually with intubation) — this is an escalation in the LEVEL of care, not just the next drug on a list."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "In parallel with the drug ladder"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Check glucose early and treat hypoglycemia immediately if found — this is a reversible cause the drug ladder alone won't address.",
+        "Look for and treat other reversible causes in parallel with drug treatment, not sequentially after it — fever/infection, electrolyte derangement (especially hyponatremia in young infants), toxic ingestion, known epilepsy with a missed anticonvulsant dose, trauma, or a known VP shunt malfunction.",
+        "Continuous or frequent reassessment of airway and breathing throughout — benzodiazepines and the second-line agents all carry some respiratory depression risk, especially when given in sequence."
+      ]
+    }
+  ],
+  "buildNote": "peds-tool with kind=decision-tree and sourceOfTruth pointing to all five existing individual drug dosing cards rather than restating their weight-based doses — this module supplies the missing timed-algorithm structure the adult status-epilepticus-adult module already has. AES 2016 four-phase timing (0-5/5-20/20-40/40-60 min) WebSearch-verified against the original AES guideline. peds-tool schema has no related[] field."
+}
