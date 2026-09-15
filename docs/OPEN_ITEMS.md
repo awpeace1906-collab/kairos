@@ -27,20 +27,59 @@ a competitor app (medhuddle.app) for ideas.
 
 Remaining open items (see the two checklists below for the full, reconciled
 list):
-1. **UI Phase 4 — full visual pass.** Queued next; review `medhuddle.app` for
-   ideas first.
-2. **Things only the user can supply**, still genuinely open: the local
+1. **A full content audit (currency + gaps) ran 2026-09-14** — see "Content
+   audit 2026-09-14" under Things to address, below. Headline results: no
+   wrong clinical numbers found anywhere sampled; one genuinely significant
+   currency gap (Surviving Sepsis Campaign 2026 guideline supersedes the 2021
+   version `septic-shock-resuscitation` is still built on); a long list of
+   real, specific, confirmed content gaps across every section (Obstetric/
+   Newborn has no Calculators category at all; ASPECTS, Duke Criteria,
+   Child-Pugh, febrile-infant risk stratification, and pericardiocentesis are
+   the highest-yield single missing items). Full breakdown below — this is
+   the natural next thing to scope and prioritize with the user before
+   building.
+2. **UI Phase 4 — full visual pass.** The concrete backlog closed 2026-09-14;
+   what's left is open-ended.
+3. **Things only the user can supply**, still genuinely open: the local
    antibiogram (empiric-antibiotic agent selection), GRACE 2.0's proprietary
    coefficients, defibrillator pad transition weight and LMA/blade sizing for
    your specific device models, Xcode `DEVELOPMENT_TEAM` for real-device
    installs, and a storyboarding pass on deeper procedure decision-tree branch
    logic (suture technique / fracture patterns / nerve-block sub-techniques /
    POCUS exam trees).
-3. Three content-gap modules flagged in an earlier CV Guides review were built
-   2026-09-14: `brain-death-determination`, `traumatic-cardiac-arrest`,
-   `primary-palliative-care-icu` (→ 321 modules).
 
 ## Progress log
+- 2026-09-14 — **Full content audit: OPEN_ITEMS.md self-verification +
+  currency/gap analysis across all 321 modules.** User asked to confirm the
+  earlier same-day OPEN_ITEMS.md reconciliation was accurate AND to audit
+  the content library itself for currency and gaps, "using all tools." Part
+  1: directly spot-verified ~15 of the reconciliation's "done" claims
+  (El-Ganzouri, childhood-immunization-schedule, canadian-syncope/caprini/
+  improve-bleed/apache-ii/pARC, flagOutdatedURL on both clients, iOS AppIcon
+  asset, 7 self-hosted font files each platform, brue-pathway v2's Merritt
+  citation, GRACE `engine: external`, Xcode DEVELOPMENT_TEAM absent) — all
+  confirmed accurate, no holes found in the reconciliation itself. Part 2:
+  four parallel research subagents (one per section) plus direct WebSearch
+  research on flagship guidelines (2025 AHA ACLS/CPR, 2026 Surviving Sepsis
+  Campaign, 2026 AHA/ASA stroke, 2026 multi-society PE guideline, ciraparantag
+  approval status, Ezplaz freeze-dried-plasma licensure, ERC 2025 peds
+  guideline) — see the new "Content audit 2026-09-14" section under Things
+  to address for the full, cross-checked, false-positive-corrected findings.
+  Headline: **no wrong clinical number found anywhere sampled** — every
+  currency concern was either a real gap (missing coverage) or resolved as
+  already-current on verification; the pipeline's sourcing discipline held
+  up well under an adversarial check. The one significant currency gap is
+  `septic-shock-resuscitation` still citing SSC 2021 when a major SSC 2026
+  revision exists. A long list of specific, confirmed content gaps was
+  compiled across Calculators, Drug & Dosing, Reference Library, Procedures,
+  and Peds Module — highest-yield single items: ASPECTS, Duke Criteria,
+  Child-Pugh, febrile-infant risk stratification, pericardiocentesis, and
+  the fact that Calculators has no Obstetric/Newborn category at all despite
+  it being one of the eleven intended categories. Two gaps in Drug & Dosing
+  were already self-flagged inside the content via `buildNote` (peds status-
+  epilepticus second/third-line agents, peds succinylcholine) — genuine
+  quick wins. No content changes made this pass — this was audit-only;
+  building against these findings is the natural next session.
 - 2026-09-14 — **Phase 4 visual pass, round 2 (procedures, drug cards,
   reference lists) on both clients.** Toured screen types not yet covered in
   round 1 (Home + a calculator). Found and fixed three concrete "reads like a
@@ -1092,6 +1131,155 @@ list):
 ---
 
 ## 1. Things to address
+
+### Content audit 2026-09-14 — currency + gap analysis
+A full pass across all 321 modules: this session's own OPEN_ITEMS.md
+reconciliation claims were independently spot-verified (all checked out —
+see the progress log), then four parallel research passes (one per section)
+plus direct web research checked (a) whether any cited guideline has been
+superseded and (b) what a comprehensive ED/ICU/OR/Peds bedside tool would be
+expected to cover that isn't here. Cross-referenced findings against each
+other to remove false positives before listing anything below (e.g. an
+initial "missing Rumack-Matthew nomogram" and "missing VIS" flag were both
+wrong — both exist as drug-dosing cards with a live nomogram plot, just not
+filed under Calculators).
+
+**Currency — confirmed real findings only** (not fabricated; each was
+checked against a live source):
+- [ ] **`septic-shock-resuscitation` is built on Surviving Sepsis Campaign
+  2021** — a new SSC 2026 guideline exists (129 statements, 46 new,
+  described by its authors as a paradigm shift toward risk-stratified
+  precision medicine and whole-course/post-discharge management). This is
+  the single most significant currency gap found — a full guideline
+  revision, not a minor tweak. Needs a dedicated update pass, not a quick
+  patch.
+- [ ] **`acute-ischemic-stroke` doesn't cover the extended thrombolysis
+  window** (4.5–9 h, or wake-up stroke, advanced-imaging-selected) that a
+  new Feb 2026 AHA/ASA guideline formalizes — the module currently extends
+  imaging-based selection to thrombectomy only, not to thrombolysis itself.
+  Alteplase/tenecteplase dosing and the standard 4.5 h window are otherwise
+  current and correct.
+- [ ] **`acls-adult-cardiac-arrest` doesn't cover the new EMS-provider-
+  stratified termination-of-resuscitation criteria** from the Oct 2025 AHA
+  refresh (different TOR rules for BLS vs. ALS vs. universal application).
+  Lower priority than the two above — arguably more an EMS/prehospital-
+  protocol detail than a hospital ED/ICU one, but Kairos does carry a
+  prehospital setting lens. Note: everything else checked in this module
+  (IV-preferred-over-IO, vasopressin removed, calcium/bicarbonate not
+  routine citing COCA/BIHCA, DSED not recommended, infant two-finger
+  technique eliminated) already correctly reflects the Oct 2025 update —
+  this module is otherwise a good example of the pipeline's currency
+  discipline.
+- **Verified NOT problems** (checked and cleared, don't re-flag): the
+  `twelve-lead-stemi-criteria` "Fifth Universal Definition of MI (2026)"
+  citation looked potentially fabricated on first pass (an unfamiliar
+  journal DOI pattern) but is a real, verified publication (ESC/ACC/AHA/WHF
+  joint statement) with the exact classification framework Kairos already
+  cites; `acute-pe-guideline-2026` already correctly reflects the real new
+  2026 multi-society AHA/ACC PE guideline (A–E clinical categories); the
+  freeze-dried-plasma FDA-licensure citation in `iv-fluids`/`hemorrhagic-
+  shock-mtp` is accurate (Ezplaz, licensed July 29 2026); `erc-2025-
+  pediatric-life-support` is built on a real guideline; anticoagulation-
+  reversal correctly excludes ciraparantag (still investigational, not
+  FDA-approved). No wrong dose, coefficient, or threshold was found in
+  anything sampled across all four passes — the gaps below are absence of
+  coverage, not errors in what's written.
+
+**Confirmed content gaps, by section** (real, specific, cross-checked
+against the actual inventory — not guessed):
+
+*Calculators* — the standalone Obstetric/Newborn category doesn't exist at
+all (OB/newborn content is narrative-only); missing a scored Bishop Score,
+a true scored APGAR, a preeclampsia/HELLP severity tool, a PPH blood-loss
+estimator. Also missing, by category: Cardiovascular — EDACS, TIMI-STEMI
+(only the NSTEMI variant exists), ASCVD/Framingham risk. Pulmonary —
+Light's Criteria (pleural effusion), DECAF. **Neuro — ASPECTS is a
+significant gap** (central to thrombectomy decision-making alongside
+NIHSS, which is present), also Modified Rankin Scale, Modified Fisher
+Grade, LAMS/RACE. Trauma — Baux Score, Denver/Memphis criteria for blunt
+cerebrovascular injury (Parkland is NOT a gap — it's a drug-dosing card).
+**Sepsis/ID — Duke Criteria for infective endocarditis is a significant
+gap**, also MASCC, Charlson Comorbidity Index. GI/Renal/Metabolic —
+**Child-Pugh is a surprising gap given MELD-Na exists**, also Cockcroft-
+Gault/CKD-EPI as a standalone calculator, Winter's Formula, formal
+KDIGO/AKIN AKI staging. ICU — Braden Scale (VIS is NOT a gap — it's a
+drug-dosing card with a live plot). Minor structural notes: APACHE II is
+filed under Sepsis/ID rather than ICU/Critical Care; a few older files
+(`grace-acs`, `killip-classification`, `qtc`, `anion-gap`) have no `tags`.
+
+*Drug & Dosing* — real gaps: a vancomycin dosing card (loading + AUC:MIC
+maintenance — currently name-only in antibiotic references), renal
+dose-adjustment reference for critical-illness antibiotics (pip-tazo
+extended infusion, meropenem/cefepime by CrCl/CRRT), ED/ICU push-dose
+pressor prep cards (distinct concentration/prep from the existing OR-bolus
+cards), standalone IV calcium chloride/gluconate and sodium bicarbonate
+cards, electrolyte repletion protocols (K/Mg/Phos — hyperkalemia
+*treatment* is covered, repletion isn't), high-dose intranasal
+naloxone/nalmefene (fentanyl-era reversal). Two gaps are **self-flagged
+inside the content itself** (a `buildNote` naming its own missing
+companion) — worth doing first since they're already scoped: peds
+second/third-line status-epilepticus agents (diazepam rectal, fosphenytoin,
+levetiracetam, valproate, phenobarbital — named in
+`peds-lorazepam-status.json`'s buildNote) and a peds succinylcholine RSI
+calculator (named in `peds-rocuronium-rsi.json`'s buildNote). Structural:
+`peds-epinephrine-arrest.json` is misplaced (sits outside `resus-dosing/`
+with everything else in its category); the "Weight/Age-Based Resuscitation
+Dosing (Adult + Peds)" category has zero adult cards despite the name;
+typo "sugammadec" → "sugammadex" in `peds-rocuronium-rsi.json`; the two
+tox-withdrawal calculators (`digoxin-immune-fab-dosing`,
+`high-dose-insulin-euglycemia-dosing`) are excellent but effectively
+invisible to anyone browsing only the Drug & Dosing section.
+
+*Reference Library* — real gaps: transfusion reactions (acute hemolytic,
+TRALI, TACO, febrile non-hemolytic, anaphylactic — `blood-products.json`
+covers product selection only), acute liver failure, GI bleed/variceal
+hemorrhage management (the scoring tools exist as calculators, no
+narrative companion), heat stroke, drowning, electrical injury/lightning,
+sickle cell crisis, HIV PEP, thyroid storm/myxedema coma, adrenal crisis,
+perioperative-specific anaphylaxis (the existing `anaphylaxis.json` is
+ED/prehospital-only — NMBA/rocuronium, chlorhexidine, latex, and tryptase
+timing are OR-specific and absent), a general ED/ICU vascular-access
+escalation reference, VTE prophylaxis timing in trauma/neurosurgery. A
+pericardiocentesis *procedure* card (see Procedures below) is referenced
+from several reference modules but doesn't exist as its own walkthrough.
+Structural: two modules (`advanced-ards-ventilation`,
+`ventilator-liberation-weaning`) use category `"ICU / Critical Care"` while
+the other 24 critical-care modules use plain `"Critical Care"` — fragments
+category-based navigation into a spurious extra bucket, should be
+normalized.
+
+*Procedures* — real gaps: pericardiocentesis, lumbar puncture,
+paracentesis, thoracentesis, arthrocentesis, isolated ED joint reductions
+(anterior shoulder, nursemaid elbow, patella, digit — distinct from the
+fracture-associated dislocations `fracture-splinting-guide` already
+covers), general abscess I&D (Bartholin-specific I&D already exists),
+foreign-body removal, NG/OG tube placement, urinary catheterization,
+escharotomy, precipitous/vaginal delivery *technique* (existing OB content
+covers complications and staging, assumes delivery mechanics are already
+known), and adult synchronized cardioversion for unstable tachyarrhythmia
+(pad placement gets one passing mention; no dedicated technique/energy
+algorithm). Cricothyrotomy does NOT need a separate dedicated procedure —
+`anatomically-difficult-airway`'s embedded 7-step technique is solid and a
+second version would be duplicative.
+
+*Peds Module* — real gaps: **febrile infant/neonate risk stratification is
+a significant gap** (Step-by-Step, PECARN febrile infant, or Rochester
+criteria — zero coverage despite BRUE/appendicitis/PECARN-head all being
+present as a model for exactly this kind of tool), bronchiolitis
+management, croup severity/treatment, peds-specific procedural sedation
+(the existing workflow has zero pediatric content; the one peds ketamine
+card is for RSI, a different indication/dosing/monitoring context), peds
+difficult-airway approach including the surgical-vs-needle cricothyrotomy
+age cutoff (absent entirely), pediatric burn management (the existing
+Parkland card is adult-oriented — no Lund-Browder %TBSA chart or
+maintenance-fluid addition for peds), pediatric-specific trauma
+resuscitation (weight-based blood product/TXA dosing, compensated-shock
+recognition). Partially covered, worth strengthening: a unified NAT/child-
+abuse screening tool (currently only an orthopedic-context warning inside
+`fracture-splinting-guide`, no standalone tool like TEN-4-FACESp).
+Structural: the `peds-dosing-refs` ("Peds Dosing References") category in
+`sections.json` is completely empty — zero files use it; `peds-drip-
+concentrations` would naturally fit there but is filed elsewhere.
 
 ### Build / infra
 - [x] **Deploy pipeline — fully live.** `tools/deploy.mjs` assembles the
