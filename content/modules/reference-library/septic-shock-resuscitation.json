@@ -39,20 +39,26 @@
     "CRT-PHR",
     "phenotype",
     "venous congestion",
-    "SSC 2021"
+    "SSC 2026"
   ],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-02",
-  "next_review_due": "2026-12-02",
+  "content_version": 3,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2026-12-14",
   "review_tier": 1,
   "sources": [
-    "Surviving Sepsis Campaign 2021 (Crit Care Med 2021;49:e1063-e1143)",
+    "Surviving Sepsis Campaign 2026 — International Guidelines for Management of Sepsis and Septic Shock (Intensive Care Med 2026; Crit Care Med 2026) — updates the 2021 guideline with 129 statements (46 new); currency review confirmed this module's existing trial-based content already anticipated most of the 2026 direction, with peripheral-vasopressor timing, age-adjusted MAP, and broadened corticosteroid use as the specific updates applied here.",
     "ANDROMEDA-SHOCK (JAMA 2019;321:654); ANDROMEDA-SHOCK-2 / CRT-PHR (JAMA 2025;334:1988)",
     "Hernandez G et al. 25 years of septic shock hemodynamic resuscitation trials. Crit Care 2026;30:400",
-    "SEPSISPAM (NEJM 2014;370:1583); CLASSIC (NEJM 2022;386:2459); VASST (NEJM 2008); ATHOS-3 (angiotensin II)"
+    "SEPSISPAM (NEJM 2014;370:1583); CLASSIC (NEJM 2022;386:2459); VASST (NEJM 2008); ATHOS-3 (angiotensin II)",
+    "ADRENAL (NEJM 2018;378:797); APROCCHSS (NEJM 2018;378:809) — corticosteroids in septic shock, mixed mortality signal across trials"
   ],
   "changelog": [
+    {
+      "version": 3,
+      "date": "2026-09-14",
+      "change": "Currency update to SSC 2026: broadened the hydrocortisone recommendation from 'shock not responding to fluids + moderate-dose norepinephrine' to any septic shock requiring vasopressor support (2026 no longer gates it to a dose threshold, though the mortality evidence across ADRENAL/APROCCHSS remains mixed — framed as a reasonable-to-start conditional recommendation, not a mandate). Added the age ≥ 65 lower MAP target (60-65 mmHg) to the MAP section. Cross-linked venous-congestion-deresuscitation explicitly in the de-resuscitation bullet and in `related`. The peripheral-vasopressor line was already current (SSC 2021 carried it, SSC 2026 keeps and reinforces it) — citation updated."
+    },
     {
       "version": 2,
       "date": "2026-09-07",
@@ -79,7 +85,7 @@
         "Blood cultures ×2 (don't delay antibiotics for them), lactate, then broad-spectrum antibiotics within 1 h of recognition — see the empiric-antibiotics modules.",
         "Identify and address the source in parallel (imaging, drainage, debridement, line removal).",
         "Initial fluid: ~30 mL/kg balanced crystalloid (LR / Plasma-Lyte over saline in sepsis) for hypotension or lactate ≥ 4, then STOP and reassess. Not a fixed prescription to repeat.",
-        "Start norepinephrine early — through a peripheral IV rather than delaying for a central line (SSC 2021). Target MAP ≥ 65."
+        "Start norepinephrine early — through a peripheral IV rather than delaying for a central line (SSC 2021, reinforced in SSC 2026). In unstable shock, starting fluid and a vasopressor concurrently rather than sequentially is reasonable rather than waiting to see if fluid alone works first. Target MAP ≥ 65 (see the age-adjusted nuance below)."
       ]
     },
     {
@@ -89,7 +95,7 @@
     },
     {
       "type": "text",
-      "text": "Default MAP ≥ 65 mmHg. A higher target (80–85) gave no overall mortality or renal benefit and caused more new-onset atrial fibrillation (SEPSISPAM) — reserve it for chronic hypertensives, where the higher target reduced RRT need without the AF penalty. Titrate to the individual: mentation, urine output, CRT, and lactate trend matter more than the number."
+      "text": "Default MAP ≥ 65 mmHg. SSC 2026 suggests a lower initial target of 60–65 mmHg for patients ≥ 65 years old, to limit cumulative vasopressor exposure in a group where that exposure itself carries risk — this is a floor to start from, not a ceiling; titrate up if perfusion markers don't improve. A higher target (80–85) gave no overall mortality or renal benefit and caused more new-onset atrial fibrillation (SEPSISPAM) — reserve it for chronic hypertensives, where the higher target reduced RRT need without the AF penalty. Titrate to the individual: mentation, urine output, CRT, and lactate trend matter more than the number."
     },
     {
       "type": "heading",
@@ -117,7 +123,7 @@
         [
           "3",
           "Add hydrocortisone 200 mg/day",
-          "IV, continuous infusion or 50 mg q6h, for shock not responding to fluids + moderate-dose norepinephrine."
+          "IV, continuous infusion or 50 mg q6h. SSC 2026 broadens this to any septic shock requiring ongoing vasopressor support, rather than gating it to a specific dose threshold — but the mortality evidence itself is genuinely mixed (ADRENAL: faster shock reversal, no mortality benefit; APROCCHSS: a mortality benefit with hydrocortisone+fludrocortisone together), so treat it as reasonable-to-start rather than a mandate, and stop it once vasopressors are off."
         ],
         [
           "4",
@@ -146,7 +152,7 @@
         "Do NOT give reflexive repeat boluses. Before each additional bolus, demonstrate fluid responsiveness: passive leg raise with a real-time cardiac-output monitor, a 4-mL/kg fluid challenge, or pulse-pressure / stroke-volume variation ≥ 12% in a passive, ventilated, sinus-rhythm patient.",
         "Systematic fluid-responsiveness testing before any bolus avoided fluid entirely in ~25% of patients in ANDROMEDA-SHOCK.",
         "A restrictive strategy is safe (CLASSIC). Also weigh fluid TOLERANCE — rising CVP, IVC plethora, B-lines, portal-vein pulsatility (VExUS) — not just responsiveness. A responsive but congested patient does not need more fluid.",
-        "Once stabilised, shift to de-resuscitation: aim for a neutral-to-negative fluid balance, remove accumulated fluid, and watch for venous congestion / organ oedema."
+        "Once stabilised, shift to de-resuscitation: aim for a neutral-to-negative fluid balance, remove accumulated fluid, and watch for venous congestion / organ oedema — SSC 2026 formalizes active fluid removal after the initial resuscitation phase as its own step, not just an afterthought once the patient looks overloaded. See venous-congestion-deresuscitation for the VExUS grading and the full bedside de-resuscitation protocol."
       ]
     },
     {
@@ -269,7 +275,8 @@
     "iv-fluids",
     "empiric-antibiotics-ed-icu",
     "peripheral-iv-vasopressors",
-    "vasoactive-inotropic-score"
+    "vasoactive-inotropic-score",
+    "venous-congestion-deresuscitation"
   ],
-  "buildNote": "Tier 1. Management-oriented (targets + titration sequence). Absorbed the bedside-actionable rows of the retired landmark-trials-sepsis-resuscitation module (2026-09-02). Cross-links the pressor mixing reference and the shock-classification bedside algorithm. A VExUS / venous-congestion module and a steroid-in-sepsis (hydrocortisone ± fludrocortisone, APROCCHSS/ADRENAL) module are natural follow-ons."
+  "buildNote": "Tier 1. Management-oriented (targets + titration sequence). Absorbed the bedside-actionable rows of the retired landmark-trials-sepsis-resuscitation module (2026-09-02). Cross-links the pressor mixing reference and the shock-classification bedside algorithm. The VExUS/venous-congestion follow-on this buildNote used to flag as still-needed was built 2026-09-07 (venous-congestion-deresuscitation) and is now cross-linked directly. SSC 2026 currency pass (2026-09-14) found this module's trial-driven content had already substantively anticipated the new guideline's direction (CRT-guided resuscitation, fluid-responsiveness testing, phenotype-driven escalation) — the delta applied was narrower than a full rewrite: broadened hydrocortisone gating, age-adjusted MAP target, explicit de-resuscitation cross-link."
 }

@@ -1,0 +1,47 @@
+{
+  "id": "aspects",
+  "section": "Calculators",
+  "category": "Neuro / Stroke / Head Injury",
+  "title": "ASPECTS — Alberta Stroke Program Early CT Score",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["ASPECTS", "Alberta Stroke Program Early CT Score", "early ischemic change score"],
+  "tags": ["stroke", "CT", "thrombectomy", "large vessel occlusion", "ED", "ICU"],
+  "keywords": ["10 point non-contrast CT MCA territory score", "subtract one point per region with early ischemic change", "low ASPECTS no longer an automatic thrombectomy exclusion", "SELECT2 ANGEL-ASPECT TENSION large core trials 2023"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2027-03-14",
+  "review_tier": 1,
+  "sources": [
+    "Barber PA, Demchuk AM, Zhang J, Buchan AM. Validity and reliability of a quantitative computed tomography score in predicting outcome of hyperacute stroke before thrombolytic therapy (ASPECTS). Lancet. 2000;355(9216):1670-1674.",
+    "Pexman JH, et al. Use of the Alberta Stroke Program Early CT Score (ASPECTS) for assessing CT scans in patients with acute stroke. AJNR. 2001;22(8):1534-1542.",
+    "Sarraj A, et al. SELECT2 — Trial of Endovascular Thrombectomy for Large Ischemic Strokes. NEJM. 2023;388:1259-1271.",
+    "Huo X, et al. ANGEL-ASPECT — Endovascular Therapy after Large Ischemic Core in Acute Stroke. NEJM. 2023;388:1272-1283."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap (NIHSS existed but its usual thrombectomy-decision companion did not). Additive engine: each of the 10 standard regions scores 1 point if normal, summing to the conventional 0-10 ASPECTS value. Interpretation notes the 2023 large-core trials (SELECT2, ANGEL-ASPECT, and TENSION) that extended thrombectomy benefit below the traditional ASPECTS ≥6 cutoff." }
+  ],
+  "engine": "additive",
+  "settings": ["ED", "ICU"],
+  "purpose": "Quantifies early ischemic change on non-contrast CT across 10 standard MCA-territory regions — used alongside NIHSS in thrombectomy eligibility and to estimate infarct-core extent.",
+  "items": [
+    { "key": "caudate", "label": "Caudate", "options": [{ "label": "Normal", "points": 1 }, { "label": "Early ischemic change", "points": 0 }] },
+    { "key": "lentiform", "label": "Lentiform nucleus", "options": [{ "label": "Normal", "points": 1 }, { "label": "Early ischemic change", "points": 0 }] },
+    { "key": "internalCapsule", "label": "Internal capsule", "options": [{ "label": "Normal", "points": 1 }, { "label": "Early ischemic change", "points": 0 }] },
+    { "key": "insula", "label": "Insular ribbon", "options": [{ "label": "Normal", "points": 1 }, { "label": "Early ischemic change", "points": 0 }] },
+    { "key": "m1", "label": "M1 — anterior MCA cortex", "options": [{ "label": "Normal", "points": 1 }, { "label": "Early ischemic change", "points": 0 }] },
+    { "key": "m2", "label": "M2 — MCA cortex lateral to the insular ribbon", "options": [{ "label": "Normal", "points": 1 }, { "label": "Early ischemic change", "points": 0 }] },
+    { "key": "m3", "label": "M3 — posterior MCA cortex", "options": [{ "label": "Normal", "points": 1 }, { "label": "Early ischemic change", "points": 0 }] },
+    { "key": "m4", "label": "M4 — anterior MCA territory, immediately superior to M1", "options": [{ "label": "Normal", "points": 1 }, { "label": "Early ischemic change", "points": 0 }] },
+    { "key": "m5", "label": "M5 — lateral MCA territory, immediately superior to M2", "options": [{ "label": "Normal", "points": 1 }, { "label": "Early ischemic change", "points": 0 }] },
+    { "key": "m6", "label": "M6 — posterior MCA territory, immediately superior to M3", "options": [{ "label": "Normal", "points": 1 }, { "label": "Early ischemic change", "points": 0 }] }
+  ],
+  "interpretation": [
+    { "min": 10, "max": 10, "label": "10 — no early ischemic change", "severity": "info" },
+    { "min": 8, "max": 9, "label": "8-9 — small core", "risk": "Standard eligibility considerations for thrombolysis/thrombectomy apply", "severity": "low" },
+    { "min": 6, "max": 7, "label": "6-7 — moderate core", "risk": "The traditional ASPECTS ≥ 6 thrombectomy-eligibility threshold; outcomes worsen as the score falls toward 6", "severity": "moderate" },
+    { "min": 0, "max": 5, "label": "≤ 5 — large core", "risk": "Historically a relative exclusion for reperfusion therapy, but SELECT2, ANGEL-ASPECT, and TENSION (2023) all showed a thrombectomy benefit even in this range in appropriately selected patients — ASPECTS ≤ 5 is no longer an automatic exclusion; involve the stroke/neurointervention team rather than withholding on the score alone", "severity": "high" }
+  ],
+  "notes": "Score the hemisphere with the suspected infarct on the earliest available non-contrast CT (or DWI-ASPECTS on MRI, scored the same way). Each of the 10 regions starts credited as normal (1 point); mark 'early ischemic change' for hypoattenuation, loss of grey-white differentiation, or focal swelling — the score is 10 minus the number of abnormal regions, not a severity-graded per-region score. Caudate/lentiform/internal-capsule/insular-ribbon changes carry more weight for functional outcome than an equivalent M-region change, but the standard score treats all 10 regions equally; this tool implements the standard (unweighted) ASPECTS as published, which is what's used in trial eligibility criteria and most stroke protocols.",
+  "buildNote": "Additive engine models the conventional 0-10 score directly (1 point per normal region) rather than a 'deficit' formula, so the number shown to the user matches what every stroke protocol and trial publication reports. Pairs with nihss (already built) in thrombectomy decision-making — cross-referenced via aliases/keywords rather than a `related` field, since the calculator schema doesn't carry one."
+}

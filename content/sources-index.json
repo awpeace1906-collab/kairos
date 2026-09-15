@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T00:00:00Z",
+  "generatedAt": "2026-09-15T00:00:00Z",
   "groupOrder": [
     "Guidelines & consensus statements",
     "Randomized trials & major studies",
@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 650,
+  "count": 665,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -288,6 +288,18 @@
           "title": "Trauma Team Activation & Field Triage",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/trauma-team-activation"
+        }
+      ]
+    },
+    {
+      "text": "Adler Y, Charron P, Imazio M, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J. 2015;36(42):2921-2964.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "pericardiocentesis",
+          "title": "Pericardiocentesis",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/pericardiocentesis"
         }
       ]
     },
@@ -1126,6 +1138,30 @@
       ]
     },
     {
+      "text": "Glauser T, et al. Evidence-Based Guideline: Treatment of Convulsive Status Epilepticus in Children and Adults — AES 2016.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "peds-fosphenytoin-status",
+          "title": "Fosphenytoin — Pediatric Status Epilepticus (Second-Line)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-fosphenytoin-status"
+        },
+        {
+          "id": "peds-levetiracetam-status",
+          "title": "Levetiracetam — Pediatric Status Epilepticus (Second-Line)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-levetiracetam-status"
+        },
+        {
+          "id": "peds-valproate-status",
+          "title": "Valproate — Pediatric Status Epilepticus (Second-Line)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-valproate-status"
+        }
+      ]
+    },
+    {
       "text": "Green SM et al. ED ketamine clinical practice guideline; RSI trial (ketamine vs etomidate, NEJM Dec 2025)",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1462,6 +1498,18 @@
       ]
     },
     {
+      "text": "Pantell RH, Roberts KB, Adams WG, et al. Clinical Practice Guideline: Evaluation and Management of Well-Appearing Febrile Infants 8 to 60 Days Old. Pediatrics. 2021;148(2):e2021052228.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "febrile-infant-risk-stratification",
+          "title": "Febrile Infant Risk Stratification (8-60 Days)",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/febrile-infant-risk-stratification"
+        }
+      ]
+    },
+    {
       "text": "Ranson JH et al. Surg Gynecol Obstet 1974; ACG 2013 acute pancreatitis guideline",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1618,18 +1666,6 @@
       ]
     },
     {
-      "text": "Surviving Sepsis Campaign 2021 (Crit Care Med 2021;49:e1063-e1143)",
-      "group": "Guidelines & consensus statements",
-      "usedBy": [
-        {
-          "id": "septic-shock-resuscitation",
-          "title": "Septic Shock — Resuscitation Targets",
-          "section": "Reference Library",
-          "route": "/reference-library/resuscitation-airway/septic-shock-resuscitation"
-        }
-      ]
-    },
-    {
       "text": "Surviving Sepsis Campaign 2021 (Evans L et al. Intensive Care Med 2021;47:1181)",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1650,6 +1686,18 @@
           "title": "Vasopressors & Inotropes Reference",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/pressor-inotrope-reference"
+        }
+      ]
+    },
+    {
+      "text": "Surviving Sepsis Campaign 2026 — International Guidelines for Management of Sepsis and Septic Shock (Intensive Care Med 2026; Crit Care Med 2026) — updates the 2021 guideline with 129 statements (46 new); currency review confirmed this module's existing trial-based content already anticipated most of the 2026 direction, with peripheral-vasopressor timing, age-adjusted MAP, and broadened corticosteroid use as the specific updates applied here.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "septic-shock-resuscitation",
+          "title": "Septic Shock — Resuscitation Targets",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/septic-shock-resuscitation"
         }
       ]
     },
@@ -1746,6 +1794,18 @@
           "title": "NIH Stroke Scale (NIHSS)",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/nihss"
+        }
+      ]
+    },
+    {
+      "text": "ADRENAL (NEJM 2018;378:797); APROCCHSS (NEJM 2018;378:809) — corticosteroids in septic shock, mixed mortality signal across trials",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "septic-shock-resuscitation",
+          "title": "Septic Shock — Resuscitation Targets",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/septic-shock-resuscitation"
         }
       ]
     },
@@ -1858,6 +1918,18 @@
       ]
     },
     {
+      "text": "Barber PA, Demchuk AM, Zhang J, Buchan AM. Validity and reliability of a quantitative computed tomography score in predicting outcome of hyperacute stroke before thrombolytic therapy (ASPECTS). Lancet. 2000;355(9216):1670-1674.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "aspects",
+          "title": "ASPECTS — Alberta Stroke Program Early CT Score",
+          "section": "Calculators",
+          "route": "/calculators/neuro-stroke-head-injury/aspects"
+        }
+      ]
+    },
+    {
       "text": "Bickell WH et al. NEJM 1994;331:1105-1109; PROPPR (Holcomb JB et al. JAMA 2015;313:471-482)",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -1890,6 +1962,30 @@
           "title": "Albumin + Furosemide (Push/Pull)",
           "section": "Reference Library",
           "route": "/reference-library/cardiac-ecg/albumin-furosemide-push-pull"
+        }
+      ]
+    },
+    {
+      "text": "Chamberlain JM, et al. ESETT — Trial of Three Anticonvulsant Medications for Status Epilepticus. NEJM. 2019;381:2103-2113.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "peds-fosphenytoin-status",
+          "title": "Fosphenytoin — Pediatric Status Epilepticus (Second-Line)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-fosphenytoin-status"
+        },
+        {
+          "id": "peds-levetiracetam-status",
+          "title": "Levetiracetam — Pediatric Status Epilepticus (Second-Line)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-levetiracetam-status"
+        },
+        {
+          "id": "peds-valproate-status",
+          "title": "Valproate — Pediatric Status Epilepticus (Second-Line)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-valproate-status"
         }
       ]
     },
@@ -2164,6 +2260,18 @@
       ]
     },
     {
+      "text": "Huo X, et al. ANGEL-ASPECT — Endovascular Therapy after Large Ischemic Core in Acute Stroke. NEJM. 2023;388:1272-1283.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "aspects",
+          "title": "ASPECTS — Alberta Stroke Program Early CT Score",
+          "section": "Calculators",
+          "route": "/calculators/neuro-stroke-head-injury/aspects"
+        }
+      ]
+    },
+    {
       "text": "Johnston SC et al. Lancet 2007",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -2232,6 +2340,18 @@
           "title": "PECARN Pediatric Head Injury Rule",
           "section": "Calculators",
           "route": "/calculators/trauma/pecarn-head"
+        }
+      ]
+    },
+    {
+      "text": "Kuppermann N, et al. A Clinical Prediction Rule to Identify Febrile Infants 60 Days and Younger at Low Risk for Serious Bacterial Infections (PECARN). JAMA Pediatr. 2019;173(4):342-351.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "febrile-infant-risk-stratification",
+          "title": "Febrile Infant Risk Stratification (8-60 Days)",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/febrile-infant-risk-stratification"
         }
       ]
     },
@@ -2460,6 +2580,18 @@
           "title": "Awake Intubation (ICU)",
           "section": "Procedures",
           "route": "/procedures/airway-sedation-workflows/awake-intubation"
+        }
+      ]
+    },
+    {
+      "text": "Sarraj A, et al. SELECT2 — Trial of Endovascular Thrombectomy for Large Ischemic Strokes. NEJM. 2023;388:1259-1271.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "aspects",
+          "title": "ASPECTS — Alberta Stroke Program Early CT Score",
+          "section": "Calculators",
+          "route": "/calculators/neuro-stroke-head-injury/aspects"
         }
       ]
     },
@@ -5598,6 +5730,12 @@
           "title": "Rocuronium — Pediatric RSI Paralysis",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-rocuronium-rsi"
+        },
+        {
+          "id": "peds-succinylcholine-rsi",
+          "title": "Succinylcholine — Pediatric RSI Paralysis",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-succinylcholine-rsi"
         }
       ]
     },
@@ -5614,14 +5752,32 @@
       ]
     },
     {
-      "text": "Drug_Dosing_Peds_Weight_Based_Spec.md (cross-checked vs Stanford & Riley Children's pathways)",
+      "text": "Drug_Dosing_Peds_Weight_Based_Spec.md (cross-checked vs Stanford & Riley Children's pathways).",
       "group": "Other primary sources",
       "usedBy": [
+        {
+          "id": "peds-fosphenytoin-status",
+          "title": "Fosphenytoin — Pediatric Status Epilepticus (Second-Line)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-fosphenytoin-status"
+        },
+        {
+          "id": "peds-levetiracetam-status",
+          "title": "Levetiracetam — Pediatric Status Epilepticus (Second-Line)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-levetiracetam-status"
+        },
         {
           "id": "peds-lorazepam-status",
           "title": "Lorazepam — Pediatric Status Epilepticus",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-lorazepam-status"
+        },
+        {
+          "id": "peds-valproate-status",
+          "title": "Valproate — Pediatric Status Epilepticus (Second-Line)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-valproate-status"
         }
       ]
     },
@@ -5758,6 +5914,18 @@
       ]
     },
     {
+      "text": "FDA boxed warning — succinylcholine chloride prescribing information (hyperkalemic cardiac arrest in children with undiagnosed skeletal-muscle myopathy).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-succinylcholine-rsi",
+          "title": "Succinylcholine — Pediatric RSI Paralysis",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-succinylcholine-rsi"
+        }
+      ]
+    },
+    {
       "text": "FDA Drug Safety Communication: benzocaine and methemoglobinemia (2018)",
       "group": "Other primary sources",
       "usedBy": [
@@ -5802,6 +5970,18 @@
           "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-alcohols-anticholinergics-other"
+        }
+      ]
+    },
+    {
+      "text": "Fowler VG, Durack DT, Selton-Suty C, et al. The 2023 Duke-ISCVID Criteria for Infective Endocarditis — Updated Modification of the Duke Criteria. Clin Infect Dis. 2023 (advanced-imaging and additional-pathogen refinements to the framework below; the core major/minor structure and combination logic are unchanged from 2000).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "modified-duke-criteria",
+          "title": "Modified Duke Criteria — Infective Endocarditis",
+          "section": "Reference Library",
+          "route": "/reference-library/infectious-disease-immunization/modified-duke-criteria"
         }
       ]
     },
@@ -6478,6 +6658,18 @@
       ]
     },
     {
+      "text": "Li JS, Sexton DJ, Mick N, et al. Proposed modifications to the Duke criteria for the diagnosis of infective endocarditis. Clin Infect Dis. 2000;30(4):633-638.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "modified-duke-criteria",
+          "title": "Modified Duke Criteria — Infective Endocarditis",
+          "section": "Reference Library",
+          "route": "/reference-library/infectious-disease-immunization/modified-duke-criteria"
+        }
+      ]
+    },
+    {
       "text": "Lim WS et al. Thorax 2003",
       "group": "Other primary sources",
       "usedBy": [
@@ -6546,6 +6738,18 @@
           "title": "Alcoholic Ketoacidosis (AKA)",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/alcoholic-ketoacidosis"
+        }
+      ]
+    },
+    {
+      "text": "Loukas M, et al. A review of the anatomy of the pericardium and pericardiocentesis technique. Clin Anat. 2012.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pericardiocentesis",
+          "title": "Pericardiocentesis",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/pericardiocentesis"
         }
       ]
     },
@@ -7104,6 +7308,18 @@
           "title": "Radiation — Thyroid Blocking & Decorporation Dosing",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/radiation-decorporation-dosing"
+        }
+      ]
+    },
+    {
+      "text": "Pexman JH, et al. Use of the Alberta Stroke Program Early CT Score (ASPECTS) for assessing CT scans in patients with acute stroke. AJNR. 2001;22(8):1534-1542.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "aspects",
+          "title": "ASPECTS — Alberta Stroke Program Early CT Score",
+          "section": "Calculators",
+          "route": "/calculators/neuro-stroke-head-injury/aspects"
         }
       ]
     },
@@ -7854,6 +8070,18 @@
           "title": "Modified Early Warning Score (MEWS)",
           "section": "Calculators",
           "route": "/calculators/early-warning-resuscitation/mews"
+        }
+      ]
+    },
+    {
+      "text": "Synovitz CK, Brown EJ. Pericardiocentesis. In: Roberts and Hedges' Clinical Procedures in Emergency Medicine, 7th ed.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pericardiocentesis",
+          "title": "Pericardiocentesis",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/pericardiocentesis"
         }
       ]
     },

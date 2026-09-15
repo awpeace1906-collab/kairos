@@ -49,6 +49,45 @@ list):
    POCUS exam trees).
 
 ## Progress log
+- 2026-09-14 — **Content audit Batch 1 shipped (→ 329 modules).** All seven
+  Batch 1 items from the priority scope: `aspects` (Alberta Stroke Program
+  Early CT Score — additive engine, 10 regions each worth 1 point normal,
+  interpretation notes the 2023 large-core trials SELECT2/ANGEL-ASPECT that
+  extended thrombectomy benefit below the traditional ASPECTS ≥6 cutoff);
+  `modified-duke-criteria` (infective endocarditis — built as a structured
+  reference, not a numeric calculator, since Definite/Possible/Rejected is
+  combinatorial logic that a point-threshold would misrepresent);
+  `pericardiocentesis` (new Vascular & Thoracic Access procedure — tamponade
+  recognition, ultrasound-guided technique, the traumatic-hemopericardium
+  "bridge not definitive" caveat as a warning node; cross-linked from the 5
+  modules that already referenced it as if it existed);
+  `febrile-infant-risk-stratification` (peds-tool, kind: decision-tree — the
+  AAP 2021 three-age-band pathway: 8-21d mandatory full workup, 22-28d
+  markers gate the LP, 29-60d full marker-driven algorithm with exact
+  procalcitonin/ANC/CRP thresholds); `peds-succinylcholine-rsi` +
+  `peds-fosphenytoin-status` + `peds-levetiracetam-status` +
+  `peds-valproate-status` (the two sets that were self-flagged inside
+  existing content via `buildNote` — peds-rocuronium-rsi's and
+  peds-lorazepam-status's missing companions, now built and cross-linked
+  both directions, plus a `sugammadec`→`sugammadex` typo fix caught in the
+  same file). **The `septic-shock-resuscitation` SSC-2026 currency update**:
+  researched the actual guideline specifics via WebSearch rather than
+  guessing (peripheral-vasopressor timing reinforced, age ≥65 gets a lower
+  60-65 mmHg initial MAP target, hydrocortisone broadened from a
+  vasopressor-dose gate to any septic-shock-on-pressors with the ADRENAL/
+  APROCCHSS mixed-evidence caveat kept explicit, active de-resuscitation
+  formalized as its own step and cross-linked to the already-built
+  venous-congestion-deresuscitation module which this module's own buildNote
+  had predicted as a natural follow-on back in 2026-09-02). Found the
+  module's existing trial-driven content (CRT-guided resuscitation,
+  fluid-responsiveness testing, phenotype-driven escalation) had already
+  substantively anticipated 2026 SSC's direction — the actual edit needed
+  was targeted, not a rewrite. ASPECTS scoring verified live (all-normal →
+  10; 4 abnormal → 6, correct band); pericardiocentesis verified rendering
+  correctly on both web and iOS with the workflow-card treatment from the
+  last visual pass. validate 329/0, test 254/0, iOS BUILD SUCCEEDED + 10/10
+  engine tests. **Batches 2-4 of the content audit remain queued** — see the
+  "Content audit 2026-09-14" section above for the full scoped list.
 - 2026-09-14 — **Full content audit: OPEN_ITEMS.md self-verification +
   currency/gap analysis across all 321 modules.** User asked to confirm the
   earlier same-day OPEN_ITEMS.md reconciliation was accurate AND to audit

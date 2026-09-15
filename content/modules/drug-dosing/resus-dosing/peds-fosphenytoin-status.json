@@ -1,0 +1,39 @@
+{
+  "id": "peds-fosphenytoin-status",
+  "section": "Drug & Dosing Cards",
+  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "title": "Fosphenytoin — Pediatric Status Epilepticus (Second-Line)",
+  "settingEmphasis": ["ed", "icu"],
+  "audience": ["peds"],
+  "aliases": ["peds fosphenytoin", "Cerebyx", "PE dosing", "second-line status epilepticus"],
+  "tags": ["status epilepticus", "seizure", "second line", "peds", "ESETT"],
+  "contentType": "drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2026-12-14",
+  "review_tier": 1,
+  "sources": [
+    "Chamberlain JM, et al. ESETT — Trial of Three Anticonvulsant Medications for Status Epilepticus. NEJM. 2019;381:2103-2113.",
+    "Glauser T, et al. Evidence-Based Guideline: Treatment of Convulsive Status Epilepticus in Children and Adults — AES 2016.",
+    "Drug_Dosing_Peds_Weight_Based_Spec.md (cross-checked vs Stanford & Riley Children's pathways)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — one of the second/third-line agents named in peds-lorazepam-status's buildNote as the still-needed remainder of the status-epilepticus set." }
+  ],
+  "purpose": "Second-line agent for pediatric status epilepticus persisting after an adequate benzodiazepine dose (or a second benzodiazepine dose) — roughly equivalent efficacy to levetiracetam and valproate per ESETT; the traditional first choice where cardiac monitoring is readily available.",
+  "population": "peds",
+  "weightBasis": "actual",
+  "doses": [
+    {
+      "indication": "Status epilepticus, second-line load",
+      "route": "IV / IO",
+      "rule": { "perKg": 20, "unit": "mg PE", "maxDose": 1500, "maxDoseUnit": "mg PE" },
+      "notes": "Infuse at ≤ 3 mg PE/kg/min (max 150 mg PE/min). Monitor ECG and blood pressure during the infusion — hypotension and arrhythmia are uncommon but described, more so than with levetiracetam or valproate."
+    }
+  ],
+  "contraindications": [
+    "Sinus bradycardia, second- or third-degree AV block, or other significant conduction abnormality",
+    "Known hypersensitivity to phenytoin/fosphenytoin"
+  ],
+  "buildNote": "Second/third-line status-epilepticus sibling of peds-lorazepam-status and peds-midazolam-status. ESETT (2019) found fosphenytoin, levetiracetam (see peds-levetiracetam-status), and valproate (see peds-valproate-status) roughly equivalent in efficacy (~45-50% seizure cessation) and safety when benzodiazepines fail — choice is largely institutional preference and contraindication profile, not a clear winner. Phenobarbital for neonatal seizures is covered separately in the neonatal-seizures reference module (a different population/algorithm, not duplicated here)."
+}

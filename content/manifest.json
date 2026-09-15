@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T00:00:00Z",
+  "generatedAt": "2026-09-15T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
@@ -449,6 +449,15 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2026-11-30"
+    },
+    "calculators/neuro/aspects": {
+      "content_version": 1,
+      "hash": "0bb9255514cb2c1a",
+      "path": "modules/calculators/neuro/aspects.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-03-14"
     },
     "calculators/neuro/canadian-ct-head": {
       "content_version": 1,
@@ -1471,6 +1480,15 @@
       "review_tier": 1,
       "next_review_due": "2026-11-30"
     },
+    "drug-dosing/resus-dosing/peds-fosphenytoin-status": {
+      "content_version": 1,
+      "hash": "70a6aae978dd345b",
+      "path": "modules/drug-dosing/resus-dosing/peds-fosphenytoin-status.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-14"
+    },
     "drug-dosing/resus-dosing/peds-ketamine-rsi": {
       "content_version": 2,
       "hash": "a4509c15eae6abc6",
@@ -1480,14 +1498,23 @@
       "review_tier": 1,
       "next_review_due": "2026-12-01"
     },
-    "drug-dosing/resus-dosing/peds-lorazepam-status": {
+    "drug-dosing/resus-dosing/peds-levetiracetam-status": {
       "content_version": 1,
-      "hash": "c096771a50b48e59",
+      "hash": "a079342f5ef3531f",
+      "path": "modules/drug-dosing/resus-dosing/peds-levetiracetam-status.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-14"
+    },
+    "drug-dosing/resus-dosing/peds-lorazepam-status": {
+      "content_version": 2,
+      "hash": "29f8ddb87a9e6525",
       "path": "modules/drug-dosing/resus-dosing/peds-lorazepam-status.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
       "review_tier": 1,
-      "next_review_due": "2026-11-30"
+      "next_review_due": "2026-12-14"
     },
     "drug-dosing/resus-dosing/peds-midazolam-status": {
       "content_version": 3,
@@ -1499,13 +1526,31 @@
       "next_review_due": "2026-12-02"
     },
     "drug-dosing/resus-dosing/peds-rocuronium-rsi": {
-      "content_version": 1,
-      "hash": "db65dd090bbf8c6c",
+      "content_version": 2,
+      "hash": "c66e178edeb9411b",
       "path": "modules/drug-dosing/resus-dosing/peds-rocuronium-rsi.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
       "review_tier": 1,
-      "next_review_due": "2026-11-30"
+      "next_review_due": "2026-12-14"
+    },
+    "drug-dosing/resus-dosing/peds-succinylcholine-rsi": {
+      "content_version": 1,
+      "hash": "f2f8360135615249",
+      "path": "modules/drug-dosing/resus-dosing/peds-succinylcholine-rsi.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-14"
+    },
+    "drug-dosing/resus-dosing/peds-valproate-status": {
+      "content_version": 1,
+      "hash": "22e245bd1a96dc4a",
+      "path": "modules/drug-dosing/resus-dosing/peds-valproate-status.json",
+      "contentType": "drug-card",
+      "section": "Drug & Dosing Cards",
+      "review_tier": 1,
+      "next_review_due": "2026-12-14"
     },
     "peds-module/apgar-score": {
       "content_version": 1,
@@ -1551,6 +1596,15 @@
       "section": "Peds Module",
       "review_tier": 1,
       "next_review_due": "2027-09-03"
+    },
+    "peds-module/febrile-infant-risk-stratification": {
+      "content_version": 1,
+      "hash": "446ded7937df8b86",
+      "path": "modules/peds-module/febrile-infant-risk-stratification.json",
+      "contentType": "peds-tool",
+      "section": "Peds Module",
+      "review_tier": 1,
+      "next_review_due": "2026-12-14"
     },
     "peds-module/inborn-errors-metabolism": {
       "content_version": 1,
@@ -1830,6 +1884,15 @@
       "section": "Procedures",
       "review_tier": 1,
       "next_review_due": "2026-12-01"
+    },
+    "procedures/pericardiocentesis": {
+      "content_version": 1,
+      "hash": "38f931d1400d6652",
+      "path": "modules/procedures/pericardiocentesis.json",
+      "contentType": "procedure",
+      "section": "Procedures",
+      "review_tier": 1,
+      "next_review_due": "2026-12-14"
     },
     "procedures/pocus-guide": {
       "content_version": 3,
@@ -2442,6 +2505,15 @@
       "review_tier": 2,
       "next_review_due": "2027-03-07"
     },
+    "reference-library/modified-duke-criteria": {
+      "content_version": 1,
+      "hash": "ec719c1829bb1964",
+      "path": "modules/reference-library/modified-duke-criteria.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 1,
+      "next_review_due": "2027-03-14"
+    },
     "reference-library/nerve-agent-toxicity": {
       "content_version": 1,
       "hash": "3c808f6b19b10faf",
@@ -2650,13 +2722,13 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/septic-shock-resuscitation": {
-      "content_version": 2,
-      "hash": "d2de2b37a5e35f44",
+      "content_version": 3,
+      "hash": "4295313e8baf557e",
       "path": "modules/reference-library/septic-shock-resuscitation.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": 1,
-      "next_review_due": "2026-12-02"
+      "next_review_due": "2026-12-14"
     },
     "reference-library/shock-classification": {
       "content_version": 2,

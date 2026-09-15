@@ -1,0 +1,73 @@
+{
+  "id": "pericardiocentesis",
+  "section": "Procedures",
+  "category": "Vascular & Thoracic Access",
+  "title": "Pericardiocentesis",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["pericardial tap", "cardiac tamponade drainage", "subxiphoid pericardiocentesis"],
+  "tags": ["pericardiocentesis", "cardiac tamponade", "pericardial effusion", "ultrasound-guided", "ED", "ICU", "procedure"],
+  "keywords": ["ultrasound-guided is standard of care over blind landmark technique", "even a small volume drained can dramatically improve tamponade physiology", "subxiphoid classic landmark aim toward left shoulder", "traumatic hemopericardium is often only a bridge to thoracotomy not definitive", "thread a pigtail catheter rather than removing the needle immediately"],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2026-12-14",
+  "review_tier": 1,
+  "sources": [
+    "Synovitz CK, Brown EJ. Pericardiocentesis. In: Roberts and Hedges' Clinical Procedures in Emergency Medicine, 7th ed.",
+    "Adler Y, Charron P, Imazio M, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J. 2015;36(42):2921-2964.",
+    "Loukas M, et al. A review of the anatomy of the pericardium and pericardiocentesis technique. Clin Anat. 2012."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap. Pericardiocentesis was referenced from shock-classification, trauma-primary-survey, traumatic-cardiac-arrest, efast-exam, and anesthesia-pocus as if it existed as its own procedure, but no walkthrough existed. Sequential workflow: recognition, site selection, ultrasound-guided technique, confirmation, and the traumatic-vs-medical nuance (temporizing bridge vs. potentially definitive)." }
+  ],
+  "outputType": "workflow",
+  "purpose": "Needle decompression of a pericardial effusion causing tamponade physiology — site selection, ultrasound-guided technique, and the distinction between a temporizing bridge (traumatic hemopericardium) and a potentially definitive drainage (medical effusion).",
+  "entryPrompt": "Confirm tamponade physiology before you needle — not every visible effusion needs an emergent tap.",
+  "nodes": [
+    {
+      "id": "recognition",
+      "type": "step",
+      "prompt": "1. Confirm tamponade physiology",
+      "body": "Beck's triad (hypotension, elevated JVP, muffled heart sounds) is insensitive — don't wait for all three. Look for pulsus paradoxus > 10 mmHg, tachycardia, and on ultrasound: a pericardial effusion with right ventricular diastolic collapse (most sensitive early sign) or right atrial systolic collapse, plus a plethoric IVC with minimal respiratory variation. A small effusion that accumulated rapidly can tamponade; a large chronic effusion may not. Emergent drainage is for tamponade physiology, not effusion size alone."
+    },
+    {
+      "id": "site",
+      "type": "step",
+      "prompt": "2. Site selection — ultrasound-guided, not blind",
+      "body": "Ultrasound guidance is the standard of care and has replaced the classic 'blind' subxiphoid landmark technique wherever ultrasound and time allow. Identify the largest fluid pocket closest to the skin surface with the most direct needle path that avoids lung, liver, and the internal mammary/coronary vessels — this is often an apical or parasternal window with a large effusion, not necessarily the classic subxiphoid point. Mark the site, needle angle, and depth to the effusion with the probe immediately before prepping, since the patient's position will be fixed once draped."
+    },
+    {
+      "id": "classic-landmark",
+      "type": "step",
+      "prompt": "3. Classic subxiphoid landmark (if ultrasound genuinely isn't available)",
+      "body": "Patient supine, head of bed 30-45° to pool the effusion inferiorly. Entry point 1-2 cm left and inferior to the xiphoid process. Advance the needle at a shallow 15-30° angle to the skin, aiming toward the left shoulder, under continuous gentle aspiration. If an ECG lead is clipped to the needle hub, ST-segment elevation or ectopy means the needle tip is touching ventricular myocardium — withdraw slightly."
+    },
+    {
+      "id": "technique",
+      "type": "step",
+      "prompt": "4. Needle entry and catheter placement",
+      "body": "Advance under continuous aspiration (or continuous ultrasound visualization of the needle tip) until fluid returns. If there's any doubt whether the tip is truly in the pericardial space versus a cardiac chamber, inject a few mL of agitated saline under ultrasound — bubbles appearing in the effusion (not swirling into a chamber) confirm correct position. Once confirmed, thread a guidewire (Seldinger technique) and place a pigtail catheter for continued drainage rather than removing the needle after a single aspiration — tamponade commonly re-accumulates, and a pigtail left in place avoids a second needle pass."
+    },
+    {
+      "id": "drainage",
+      "type": "step",
+      "prompt": "5. Drainage volume and reassessment",
+      "body": "Even a small volume drained (50-100 mL) can produce dramatic hemodynamic improvement — the pericardial pressure-volume curve is steep near the tamponade point, so a small volume change makes a large pressure difference. Reassess hemodynamics and repeat ultrasound after initial drainage rather than assuming more is always better; send fluid for cell count, cytology, culture, and other studies as indicated by the suspected etiology."
+    },
+    {
+      "id": "traumatic-caveat",
+      "type": "warning",
+      "prompt": "Traumatic hemopericardium — a bridge, not necessarily definitive",
+      "body": "In traumatic tamponade (penetrating chest trauma, hemopericardium), pericardiocentesis is often only temporizing: blood in the pericardial space clots and can re-tamponade despite needle drainage, and ongoing surgical bleeding will not stop with aspiration alone. Use it as a bridge to definitive management (resuscitative thoracotomy or a surgical pericardial window) in the unstable trauma patient, not as the endpoint of care — see traumatic-cardiac-arrest for the broader sequence this fits into."
+    }
+  ],
+  "checklist": [
+    "Tamponade physiology confirmed (pulsus paradoxus, RV diastolic collapse, plethoric non-collapsing IVC) — not just 'an effusion is present'",
+    "Ultrasound used to pick the largest, most accessible pocket rather than defaulting to the blind subxiphoid landmark",
+    "Needle tip position confirmed (fluid return, or agitated saline if uncertain) before committing to catheter placement",
+    "A pigtail catheter left in place rather than a single needle aspiration, when feasible",
+    "For trauma: surgery involved early — pericardiocentesis is a bridge, not the definitive answer, for hemopericardium"
+  ],
+  "crossLinks": ["shock-classification", "trauma-primary-survey", "traumatic-cardiac-arrest", "efast-exam", "anesthesia-pocus"],
+  "buildNote": "workflow outputType, sequential with one warning node for the traumatic-hemopericardium caveat. Deliberately doesn't restate tamponade pathophysiology or the broader shock-classification framework — this is the hands-on technique sequence, cross-linked to the modules that already cover recognition and the broader trauma-arrest algorithm."
+}

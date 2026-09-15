@@ -1,0 +1,96 @@
+{
+  "id": "febrile-infant-risk-stratification",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "Febrile Infant Risk Stratification (8-60 Days)",
+  "settingEmphasis": ["ed", "icu"],
+  "audience": ["peds", "neonate"],
+  "aliases": ["febrile infant", "fever in infant", "well-appearing febrile infant", "Step-by-Step", "Rochester criteria", "PECARN febrile infant"],
+  "tags": ["fever", "infant", "neonate", "sepsis workup", "lumbar puncture", "peds", "ED"],
+  "keywords": ["8-21 days always full workup no low-risk pathway", "22-28 days inflammatory markers guide LP decision", "29-60 days ANC CRP procalcitonin determine outpatient eligibility", "temperature 38.5 is itself a risk marker in the 29-60 day band", "AAP 2021 clinical practice guideline harmonized prior rules"],
+  "contentType": "peds-tool",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2026-12-14",
+  "review_tier": 1,
+  "sources": [
+    "Pantell RH, Roberts KB, Adams WG, et al. Clinical Practice Guideline: Evaluation and Management of Well-Appearing Febrile Infants 8 to 60 Days Old. Pediatrics. 2021;148(2):e2021052228.",
+    "Kuppermann N, et al. A Clinical Prediction Rule to Identify Febrile Infants 60 Days and Younger at Low Risk for Serious Bacterial Infections (PECARN). JAMA Pediatr. 2019;173(4):342-351."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap. Built from the AAP 2021 Clinical Practice Guideline, which harmonized the older Rochester/Philadelphia/Boston criteria and the PECARN rule into one three-age-band pathway; that's the framework implemented here rather than an older individual rule set." }
+  ],
+  "kind": "decision-tree",
+  "ageRange": "Well-appearing infants, 8-60 days corrected gestational age, temperature ≥ 38.0°C (100.4°F) — rectal, or equivalent",
+  "purpose": "Which febrile infants 8-60 days old need a full sepsis workup (blood, urine, CSF) versus a narrower workup versus outpatient management — stratified by age band and inflammatory markers, per the AAP 2021 guideline.",
+  "body": [
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "This applies ONLY to a well-appearing infant. Any ill appearance, hemodynamic instability, or exam finding of concern (bulging fontanelle, petechiae, respiratory distress) bypasses this entire pathway — full sepsis workup, empiric antibiotics, and admission regardless of age or markers."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "8-21 days: no low-risk pathway"
+    },
+    {
+      "type": "text",
+      "text": "Every infant in this age band gets a full evaluation regardless of how well they look or what the inflammatory markers show — this age group is too high-risk for any deferral strategy."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Blood culture, complete blood count with differential, urinalysis + urine culture (catheterized specimen)",
+        "Lumbar puncture with CSF cell count, glucose, protein, and culture — always, no exceptions in this age band",
+        "Inflammatory markers (procalcitonin, CRP, ANC) may still be sent to help interpret CSF pleocytosis or guide length of therapy, but they do NOT change the decision to do the full workup here",
+        "Empiric parenteral antibiotics and admission for all"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "22-28 days: markers guide the LP, not the blood/urine workup"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Blood culture and urinalysis + urine culture — always.",
+        "Inflammatory markers determine whether LP is required or optional: if ALL markers are negative (see thresholds below), LP is optional via shared decision-making with the family; if ANY marker is positive, LP is recommended.",
+        "Empiric antibiotics are typically given; admission is typically recommended for this age band even when markers are reassuring, though a well-appearing infant with negative markers, a negative CSF (if obtained), and reliable caregivers with close follow-up is a reasonable shared-decision-making conversation at some centers."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "29-60 days: full inflammatory-marker-driven pathway"
+    },
+    {
+      "type": "text",
+      "text": "Blood culture and urinalysis + urine culture are still always obtained. Whether an LP, empiric antibiotics, and admission are needed depends entirely on the inflammatory markers below."
+    },
+    {
+      "type": "table",
+      "columns": ["Marker", "Threshold that counts as POSITIVE (elevated risk)"],
+      "rows": [
+        ["Procalcitonin (preferred marker if available)", "≥ 0.5 ng/mL"],
+        ["ANC", "≥ 4,000/µL"],
+        ["CRP", "≥ 20 mg/L (2 mg/dL)"],
+        ["Temperature", "≥ 38.5°C is itself counted as a risk marker in this age band"]
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "ALL markers negative AND urinalysis negative: LP is optional (shared decision-making); antibiotics and admission are NOT required — outpatient management with close follow-up (reassessment within 24 hours) is appropriate for a well-appearing infant with reliable caregivers.",
+        "ANY marker positive: LP is recommended. If CSF is reassuring (no pleocytosis), antibiotics and admission decisions are individualized; if CSF is concerning or unable to be obtained, empiric antibiotics and admission."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "Procalcitonin is the single best-performing marker when available (rises and falls faster than CRP, better discriminates bacterial from viral illness) — use it preferentially over CRP/ANC when your lab offers a rapid turnaround. Where procalcitonin isn't available, ANC and CRP together are the guideline's fallback."
+    }
+  ],
+  "buildNote": "kind: decision-tree via structured body content rather than an embedded calculator — the AAP 2021 pathway is genuinely three different age-banded algorithms with different decision logic (mandatory-everything, LP-optional-by-markers, and full-marker-driven), not a single scorable rule, so a numeric calculator would misrepresent it the same way Duke Criteria would. Distinct from PECARN head/appendicitis peds tools which ARE clean point-based rules and are built as embedded calculators."
+}

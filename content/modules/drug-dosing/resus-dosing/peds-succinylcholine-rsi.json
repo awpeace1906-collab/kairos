@@ -1,0 +1,48 @@
+{
+  "id": "peds-succinylcholine-rsi",
+  "section": "Drug & Dosing Cards",
+  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "title": "Succinylcholine — Pediatric RSI Paralysis",
+  "settingEmphasis": ["ed", "icu", "prehospital"],
+  "audience": ["peds"],
+  "aliases": ["peds succinylcholine", "peds sux", "depolarizing paralytic", "suxamethonium"],
+  "tags": ["RSI", "rapid sequence intubation", "paralytic", "neuromuscular blockade", "peds"],
+  "contentType": "drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2026-12-14",
+  "review_tier": 1,
+  "sources": [
+    "Drug_Dosing_Peds_Weight_Based_Spec.md",
+    "FDA boxed warning — succinylcholine chloride prescribing information (hyperkalemic cardiac arrest in children with undiagnosed skeletal-muscle myopathy)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — the depolarizing-paralytic sibling named in peds-rocuronium-rsi's buildNote as the still-needed complement of that set." }
+  ],
+  "purpose": "Fastest-onset paralytic for RSI when a depolarizing agent is appropriate — the alternative to rocuronium when the fastest possible paralysis and the shortest duration both matter.",
+  "population": "peds",
+  "weightBasis": "actual",
+  "obeseWeightBasis": "actual",
+  "doses": [
+    {
+      "indication": "RSI paralysis",
+      "route": "IV / IO",
+      "rule": { "perKg": 1, "perKgHigh": 2, "unit": "mg", "maxDose": 150, "maxDoseUnit": "mg" },
+      "notes": "Infants and young children often need the higher end of the range (larger volume of distribution). Onset ~30-60 s, duration 5-10 min — the fastest-recovering paralytic available."
+    },
+    {
+      "indication": "RSI paralysis, no IV/IO access",
+      "route": "IM",
+      "rule": { "perKg": 3, "perKgHigh": 4, "unit": "mg", "maxDose": 150, "maxDoseUnit": "mg" },
+      "notes": "Slower onset (~2-3 min) than IV/IO — use only when vascular access genuinely isn't available."
+    }
+  ],
+  "contraindications": [
+    "Hyperkalemia risk: renal failure, burns > 24 h old, denervation injury or prolonged immobilization, myopathies — depolarization can trigger a dangerous potassium efflux",
+    "Personal or family history of malignant hyperthermia",
+    "Known or suspected pseudocholinesterase deficiency (prolonged paralysis)",
+    "Undiagnosed skeletal-muscle myopathy (e.g. Duchenne muscular dystrophy) — FDA boxed warning: succinylcholine has caused acute rhabdomyolysis with hyperkalemia and cardiac arrest in young boys with unrecognized myopathy, most often after a first anesthetic exposure. Favor rocuronium when a myopathy can't be confidently excluded (non-emergent walking child with unexplained weakness/delayed milestones, or any elective use in a young boy without a clear diagnosis)."
+  ],
+  "reversal": "None — recovery is by spontaneous pseudocholinesterase hydrolysis, not a reversal agent. This is exactly why it's chosen when a short duration matters more than reversibility.",
+  "buildNote": "Depolarizing-agent sibling of peds-rocuronium-rsi (the non-depolarizing default when succinylcholine is contraindicated). Cross-linked both directions."
+}

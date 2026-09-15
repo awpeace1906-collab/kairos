@@ -8,12 +8,15 @@
   "aliases": ["peds lorazepam", "Ativan seizure dose", "first-line status epilepticus"],
   "tags": ["status epilepticus", "seizure", "benzodiazepine", "first line", "peds"],
   "contentType": "drug-card",
-  "content_version": 1,
-  "last_reviewed": "2026-08-31",
-  "next_review_due": "2026-11-30",
+  "content_version": 2,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2026-12-14",
   "review_tier": 1,
   "sources": ["Drug_Dosing_Peds_Weight_Based_Spec.md (cross-checked vs Stanford & Riley Children's pathways)"],
-  "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry." }],
+  "changelog": [
+    { "version": 2, "date": "2026-09-14", "change": "Updated buildNote to cross-link the newly-built second-line set (peds-fosphenytoin-status, peds-levetiracetam-status, peds-valproate-status) and clarify neonatal phenobarbital lives in the separate neonatal-seizures module." },
+    { "version": 1, "date": "2026-08-31", "change": "Initial entry." }
+  ],
   "purpose": "First-line IV benzodiazepine for pediatric status epilepticus when IV access is available.",
   "population": "peds",
   "weightBasis": "actual",
@@ -25,5 +28,5 @@
       "notes": "If no IV access: IM/IN midazolam is the preferred first agent — see the midazolam card."
     }
   ],
-  "buildNote": "Part of the status-epilepticus set (lorazepam, midazolam, diazepam rectal, then fosphenytoin/levetiracetam/valproate, phenobarbital for neonates). Cross-link them."
+  "buildNote": "First-line benzodiazepine sibling of peds-midazolam-status. If seizures persist after an adequate benzodiazepine dose, the second-line set is peds-fosphenytoin-status, peds-levetiracetam-status, and peds-valproate-status (ESETT 2019 — roughly equivalent efficacy, pick by contraindication profile). Phenobarbital for neonatal seizures is a different population/algorithm, covered in the neonatal-seizures reference module. Diazepam rectal (Diastat) as an out-of-hospital/no-access option is not yet built."
 }

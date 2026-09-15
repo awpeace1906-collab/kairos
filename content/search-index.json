@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T00:00:00Z",
+  "generatedAt": "2026-09-15T00:00:00Z",
   "entries": [
     {
       "id": "apfel-ponv",
@@ -1350,6 +1350,35 @@
       "route": "/calculators/neuro-stroke-head-injury/abcd2",
       "settingEmphasis": [
         "ed"
+      ]
+    },
+    {
+      "id": "aspects",
+      "title": "ASPECTS — Alberta Stroke Program Early CT Score",
+      "section": "Calculators",
+      "category": "Neuro / Stroke / Head Injury",
+      "tags": [
+        "stroke",
+        "CT",
+        "thrombectomy",
+        "large vessel occlusion",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "10 point non-contrast CT MCA territory score",
+        "subtract one point per region with early ischemic change",
+        "low ASPECTS no longer an automatic thrombectomy exclusion",
+        "SELECT2 ANGEL-ASPECT TENSION large core trials 2023",
+        "ASPECTS",
+        "Alberta Stroke Program Early CT Score",
+        "early ischemic change score"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/neuro-stroke-head-injury/aspects",
+      "settingEmphasis": [
+        "ed",
+        "icu"
       ]
     },
     {
@@ -4183,6 +4212,34 @@
       ]
     },
     {
+      "id": "peds-fosphenytoin-status",
+      "title": "Fosphenytoin — Pediatric Status Epilepticus (Second-Line)",
+      "section": "Drug & Dosing Cards",
+      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "tags": [
+        "status epilepticus",
+        "seizure",
+        "second line",
+        "peds",
+        "ESETT"
+      ],
+      "keywords": [
+        "peds fosphenytoin",
+        "Cerebyx",
+        "PE dosing",
+        "second-line status epilepticus"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-fosphenytoin-status",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
       "id": "peds-ketamine-rsi",
       "title": "Ketamine — Pediatric RSI Induction",
       "section": "Drug & Dosing Cards",
@@ -4206,6 +4263,33 @@
         "ed",
         "icu",
         "prehospital"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
+      "id": "peds-levetiracetam-status",
+      "title": "Levetiracetam — Pediatric Status Epilepticus (Second-Line)",
+      "section": "Drug & Dosing Cards",
+      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "tags": [
+        "status epilepticus",
+        "seizure",
+        "second line",
+        "peds",
+        "ESETT"
+      ],
+      "keywords": [
+        "peds levetiracetam",
+        "Keppra",
+        "second-line status epilepticus"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-levetiracetam-status",
+      "settingEmphasis": [
+        "ed",
+        "icu"
       ],
       "audience": [
         "peds"
@@ -4290,6 +4374,63 @@
         "ed",
         "icu",
         "prehospital"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
+      "id": "peds-succinylcholine-rsi",
+      "title": "Succinylcholine — Pediatric RSI Paralysis",
+      "section": "Drug & Dosing Cards",
+      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "tags": [
+        "RSI",
+        "rapid sequence intubation",
+        "paralytic",
+        "neuromuscular blockade",
+        "peds"
+      ],
+      "keywords": [
+        "peds succinylcholine",
+        "peds sux",
+        "depolarizing paralytic",
+        "suxamethonium"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-succinylcholine-rsi",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "prehospital"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
+      "id": "peds-valproate-status",
+      "title": "Valproate — Pediatric Status Epilepticus (Second-Line)",
+      "section": "Drug & Dosing Cards",
+      "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+      "tags": [
+        "status epilepticus",
+        "seizure",
+        "second line",
+        "peds",
+        "ESETT"
+      ],
+      "keywords": [
+        "peds valproate",
+        "valproic acid",
+        "Depacon",
+        "second-line status epilepticus"
+      ],
+      "contentType": "drug-card",
+      "route": "/drug-dosing/weight-age-based-resuscitation-dosing-adult-peds/peds-valproate-status",
+      "settingEmphasis": [
+        "ed",
+        "icu"
       ],
       "audience": [
         "peds"
@@ -4894,6 +5035,44 @@
       ],
       "audience": [
         "peds"
+      ]
+    },
+    {
+      "id": "febrile-infant-risk-stratification",
+      "title": "Febrile Infant Risk Stratification (8-60 Days)",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [
+        "fever",
+        "infant",
+        "neonate",
+        "sepsis workup",
+        "lumbar puncture",
+        "peds",
+        "ED"
+      ],
+      "keywords": [
+        "8-21 days always full workup no low-risk pathway",
+        "22-28 days inflammatory markers guide LP decision",
+        "29-60 days ANC CRP procalcitonin determine outpatient eligibility",
+        "temperature 38.5 is itself a risk marker in the 29-60 day band",
+        "AAP 2021 clinical practice guideline harmonized prior rules",
+        "febrile infant",
+        "fever in infant",
+        "well-appearing febrile infant",
+        "Step-by-Step",
+        "Rochester criteria",
+        "PECARN febrile infant"
+      ],
+      "contentType": "peds-tool",
+      "route": "/peds-module/peds-resuscitation-decision-support/febrile-infant-risk-stratification",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ],
+      "audience": [
+        "peds",
+        "neonate"
       ]
     },
     {
@@ -5531,6 +5710,37 @@
         "icu",
         "ed",
         "or"
+      ]
+    },
+    {
+      "id": "pericardiocentesis",
+      "title": "Pericardiocentesis",
+      "section": "Procedures",
+      "category": "Vascular & Thoracic Access",
+      "tags": [
+        "pericardiocentesis",
+        "cardiac tamponade",
+        "pericardial effusion",
+        "ultrasound-guided",
+        "ED",
+        "ICU",
+        "procedure"
+      ],
+      "keywords": [
+        "ultrasound-guided is standard of care over blind landmark technique",
+        "even a small volume drained can dramatically improve tamponade physiology",
+        "subxiphoid classic landmark aim toward left shoulder",
+        "traumatic hemopericardium is often only a bridge to thoracotomy not definitive",
+        "thread a pigtail catheter rather than removing the needle immediately",
+        "pericardial tap",
+        "cardiac tamponade drainage",
+        "subxiphoid pericardiocentesis"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/vascular-thoracic-access/pericardiocentesis",
+      "settingEmphasis": [
+        "ed",
+        "icu"
       ]
     },
     {
@@ -7336,6 +7546,37 @@
       "route": "/reference-library/infectious-disease-immunization/empiric-antibiotics-outpatient",
       "settingEmphasis": [
         "ed"
+      ]
+    },
+    {
+      "id": "modified-duke-criteria",
+      "title": "Modified Duke Criteria — Infective Endocarditis",
+      "section": "Reference Library",
+      "category": "Infectious Disease & Immunization",
+      "tags": [
+        "endocarditis",
+        "infective endocarditis",
+        "Duke criteria",
+        "blood cultures",
+        "echocardiogram",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "definite = 2 major or 1 major plus 3 minor or 5 minor",
+        "possible = 1 major plus 1 minor or 3 minor",
+        "typical IE organisms viridans strep staph aureus HACEK enterococcus",
+        "vegetation new regurgitation are the two major criteria buckets",
+        "predisposition fever vascular immunologic microbiologic are the five minor criteria",
+        "Duke criteria",
+        "infective endocarditis diagnosis",
+        "IE diagnostic criteria"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/infectious-disease-immunization/modified-duke-criteria",
+      "settingEmphasis": [
+        "ed",
+        "icu"
       ]
     },
     {
@@ -9580,7 +9821,7 @@
         "CRT-PHR",
         "phenotype",
         "venous congestion",
-        "SSC 2021",
+        "SSC 2026",
         "sepsis resuscitation",
         "MAP target sepsis",
         "capillary refill time target",

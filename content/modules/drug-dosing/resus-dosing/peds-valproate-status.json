@@ -1,0 +1,42 @@
+{
+  "id": "peds-valproate-status",
+  "section": "Drug & Dosing Cards",
+  "category": "Weight/Age-Based Resuscitation Dosing (Adult + Peds)",
+  "title": "Valproate — Pediatric Status Epilepticus (Second-Line)",
+  "settingEmphasis": ["ed", "icu"],
+  "audience": ["peds"],
+  "aliases": ["peds valproate", "valproic acid", "Depacon", "second-line status epilepticus"],
+  "tags": ["status epilepticus", "seizure", "second line", "peds", "ESETT"],
+  "contentType": "drug-card",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2026-12-14",
+  "review_tier": 1,
+  "sources": [
+    "Chamberlain JM, et al. ESETT — Trial of Three Anticonvulsant Medications for Status Epilepticus. NEJM. 2019;381:2103-2113.",
+    "Glauser T, et al. Evidence-Based Guideline: Treatment of Convulsive Status Epilepticus in Children and Adults — AES 2016.",
+    "Drug_Dosing_Peds_Weight_Based_Spec.md (cross-checked vs Stanford & Riley Children's pathways)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — one of the second/third-line agents named in peds-lorazepam-status's buildNote as the still-needed remainder of the status-epilepticus set." }
+  ],
+  "purpose": "Second-line agent for pediatric status epilepticus persisting after an adequate benzodiazepine dose — roughly equivalent efficacy to fosphenytoin and levetiracetam per ESETT; avoid where hepatotoxicity or a mitochondrial disorder is a concern.",
+  "population": "peds",
+  "weightBasis": "actual",
+  "doses": [
+    {
+      "indication": "Status epilepticus, second-line load",
+      "route": "IV / IO",
+      "rule": { "perKg": 40, "unit": "mg", "maxDose": 3000, "maxDoseUnit": "mg" },
+      "notes": "Infuse over ~10 minutes (the ESETT protocol infusion time)."
+    }
+  ],
+  "contraindications": [
+    "Known or suspected mitochondrial disease (POLG mutation) — risk of fulminant hepatic failure",
+    "Known hepatic disease or significant hepatic impairment",
+    "Known urea-cycle disorder (hyperammonemia risk)",
+    "Pregnancy (teratogenicity) — rarely a factor in the acute pediatric status setting but worth noting for adolescent patients",
+    "Age < 2 years is a relative caution — higher reported hepatotoxicity risk in this group; many protocols prefer fosphenytoin or levetiracetam first in infants and toddlers"
+  ],
+  "buildNote": "Second/third-line status-epilepticus sibling of peds-lorazepam-status and peds-midazolam-status. ESETT (2019) found valproate, fosphenytoin (see peds-fosphenytoin-status), and levetiracetam (see peds-levetiracetam-status) roughly equivalent in efficacy (~45-50% seizure cessation) and safety when benzodiazepines fail — choice is largely institutional preference and contraindication profile, not a clear winner."
+}

@@ -1,0 +1,92 @@
+{
+  "id": "modified-duke-criteria",
+  "section": "Reference Library",
+  "category": "Infectious Disease & Immunization",
+  "title": "Modified Duke Criteria — Infective Endocarditis",
+  "settingEmphasis": ["ed", "icu"],
+  "aliases": ["Duke criteria", "infective endocarditis diagnosis", "IE diagnostic criteria"],
+  "tags": ["endocarditis", "infective endocarditis", "Duke criteria", "blood cultures", "echocardiogram", "ED", "ICU"],
+  "keywords": ["definite = 2 major or 1 major plus 3 minor or 5 minor", "possible = 1 major plus 1 minor or 3 minor", "typical IE organisms viridans strep staph aureus HACEK enterococcus", "vegetation new regurgitation are the two major criteria buckets", "predisposition fever vascular immunologic microbiologic are the five minor criteria"],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-14",
+  "next_review_due": "2027-03-14",
+  "review_tier": 1,
+  "sources": [
+    "Li JS, Sexton DJ, Mick N, et al. Proposed modifications to the Duke criteria for the diagnosis of infective endocarditis. Clin Infect Dis. 2000;30(4):633-638.",
+    "Fowler VG, Durack DT, Selton-Suty C, et al. The 2023 Duke-ISCVID Criteria for Infective Endocarditis — Updated Modification of the Duke Criteria. Clin Infect Dis. 2023 (advanced-imaging and additional-pathogen refinements to the framework below; the core major/minor structure and combination logic are unchanged from 2000)."
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap. Built as a structured reference rather than a numeric calculator: the Definite/Possible/Rejected classification is combinatorial (different major+minor combinations meet 'definite' at different total counts), not a single point-threshold, so a scored calculator would misrepresent it." }
+  ],
+  "related": ["twelve-lead-stemi-criteria", "empiric-antibiotics-ed-icu"],
+  "summary": "Classifies a suspected infective endocarditis case as Definite, Possible, or Rejected from major and minor clinical/microbiologic/echocardiographic criteria — not a point score, a specific combination rule.",
+  "whyThisMatters": "Infective endocarditis has no single confirmatory test — the diagnosis is made by pattern-matching microbiology, imaging, and clinical findings against this framework, and getting the combination logic right (rather than eyeballing 'enough criteria') is what separates a confident diagnosis from a missed or over-called one.",
+  "clinicalTakeaway": "Two major criteria, or one major plus three minor, or five minor = Definite. One major plus one minor, or three minor = Possible. Below that — or a firm alternative diagnosis, or resolution within four days of antibiotics — is Rejected. Get blood cultures before antibiotics whenever feasible; the major microbiologic criterion depends on it.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Major criteria"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "1. Blood culture positive for IE"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Typical IE organism from 2 separate blood cultures: viridans streptococci, Streptococcus gallolyticus (bovis), HACEK group, Staphylococcus aureus, or community-acquired enterococci without a primary focus.",
+        "OR a non-typical organism persistently positive: ≥ 2 positive cultures drawn > 12 h apart, or all of 3 (or a majority of ≥ 4) separate cultures with the first and last drawn ≥ 1 h apart.",
+        "OR a single positive culture for Coxiella burnetii, or a phase I IgG antibody titer > 1:800."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "2. Evidence of endocardial involvement"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Echocardiogram positive for IE: an oscillating intracardiac mass on a valve or supporting structure, an abscess, or new partial dehiscence of a prosthetic valve. (The 2023 Duke-ISCVID update also recognizes cardiac CT and PET/CT findings for prosthetic valve endocarditis, where TEE is often limited.)",
+        "OR new valvular regurgitation — a worsening or changing pre-existing murmur is NOT sufficient on its own."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Minor criteria"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Predisposition: a predisposing heart condition (prosthetic valve, prior IE, most congenital/valvular disease) or injection drug use.",
+        "Fever ≥ 38.0°C.",
+        "Vascular phenomena: major arterial emboli, septic pulmonary infarcts, mycotic aneurysm, intracranial hemorrhage, conjunctival hemorrhages, Janeway lesions.",
+        "Immunologic phenomena: glomerulonephritis, Osler nodes, Roth spots, positive rheumatoid factor.",
+        "Microbiological evidence not meeting a major criterion: a positive blood culture not qualifying above, or serologic evidence of active infection with an organism consistent with IE."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Classification"
+    },
+    {
+      "type": "table",
+      "columns": ["Category", "Requires"],
+      "rows": [
+        ["Definite", "2 major — OR — 1 major + 3 minor — OR — 5 minor"],
+        ["Possible", "1 major + 1 minor — OR — 3 minor"],
+        ["Rejected", "A firm alternate diagnosis explains the findings; OR resolution of the syndrome with ≤ 4 days of antibiotics; OR no pathologic evidence of IE at surgery or autopsy after ≤ 4 days of antibiotics; OR simply doesn't meet the 'Possible' criteria above"]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "Draw blood cultures BEFORE starting antibiotics whenever the patient is stable enough to allow it — three sets from separate venipuncture sites is standard practice. Empiric antibiotics started before cultures are drawn is the most common preventable reason the major microbiologic criterion can't later be met."
+    }
+  ]
+}
