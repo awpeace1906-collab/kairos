@@ -38,6 +38,7 @@
           "type": { "type": "string", "enum": ["question", "step", "recommendation", "warning"] },
           "prompt": { "type": "string" },
           "body": { "type": "string" },
+          "diagram": { "$ref": "common.schema.json#/$defs/diagram" },
           "choices": {
             "type": "array",
             "items": {

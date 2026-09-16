@@ -193,6 +193,8 @@ struct BlockList: View {
                 .overlay(alignment: .leading) { Rectangle().fill(calloutColor(b.tone)).frame(width: 4) }
         case "table":
             tableView(columns: b.columns ?? [], rows: b.rows ?? [])
+        case "diagram":
+            if let d = b.diagram { DiagramView(diagram: d) }
         default:
             EmptyView()
         }
@@ -342,6 +344,7 @@ struct WorkflowNodeCard: View {
             VStack(alignment: .leading, spacing: 4) {
                 if let p = node.prompt { Text(p).font(Theme.subheadline).fontWeight(.semibold) }
                 if let b = node.body { Text(b).font(Theme.callout) }
+                if let d = node.diagram { DiagramView(diagram: d) }
             }
         }
         .padding(13)

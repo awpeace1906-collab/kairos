@@ -48,6 +48,110 @@ function listItem(text) {
   return el("li", {}, text);
 }
 
+/** Semantic diagram tokens -> CSS custom properties, so a figure stays legible
+    in both themes (styles.css defines the light/dark values). Never raw hex in
+    content. Mirrors DiagramView.swift's `color(_:)`. */
+const DIAGRAM_TOKENS = {
+  outline: "--dg-outline", surface: "--dg-surface", tissue: "--dg-tissue",
+  bone: "--dg-bone", lumen: "--dg-lumen", muscle: "--dg-muscle",
+  vessel: "--dg-vessel", accent: "--dg-accent", danger: "--dg-danger",
+  warning: "--dg-warning", good: "--dg-good", muted: "--dg-muted", text: "--dg-text",
+};
+const dgColor = (tok) => (tok && DIAGRAM_TOKENS[tok] ? `var(${DIAGRAM_TOKENS[tok]})` : "none");
+
+/** Build one SVG element (namespaced — `el()` makes HTML elements, which don't
+    render inside an <svg>). */
+function svgEl(tag, attrs, ...children) {
+  const n = document.createElementNS("http://www.w3.org/2000/svg", tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (v !== null && v !== undefined) n.setAttribute(k, String(v));
+  }
+  for (const c of children.flat()) if (c != null) n.appendChild(c);
+  return n;
+}
+
+function diagramShape(s) {
+  const common = {
+    fill: dgColor(s.fill),
+    stroke: dgColor(s.stroke),
+    "stroke-width": s.strokeWidth ?? 1.5,
+    "stroke-linecap": "round",
+    "stroke-linejoin": "round",
+    opacity: s.opacity,
+  };
+  if (s.dash) common["stroke-dasharray"] = "5 4";
+
+  switch (s.kind) {
+    case "path":
+      return svgEl("path", { ...common, d: s.d });
+    case "line":
+      return svgEl("line", { ...common, x1: s.from?.[0], y1: s.from?.[1], x2: s.to?.[0], y2: s.to?.[1], fill: "none" });
+    case "polyline":
+      return svgEl("polyline", { ...common, fill: dgColor(s.fill), points: (s.points || []).map((p) => p.join(",")).join(" ") });
+    case "rect":
+      return svgEl("rect", { ...common, x: s.at?.[0], y: s.at?.[1], width: s.size?.[0], height: s.size?.[1], rx: s.rx });
+    case "circle":
+      return svgEl("circle", { ...common, cx: s.at?.[0], cy: s.at?.[1], r: s.r });
+    case "ellipse":
+      return svgEl("ellipse", { ...common, cx: s.at?.[0], cy: s.at?.[1], rx: s.rx, ry: s.ry });
+    case "arrow": {
+      // Head drawn as a filled triangle rather than a <marker>, so its colour
+      // follows the same token and no shared <defs> id can collide.
+      const [x1, y1] = s.from || [0, 0], [x2, y2] = s.to || [0, 0];
+      const a = Math.atan2(y2 - y1, x2 - x1), h = 7, w = 3.6;
+      const tip = [x2, y2];
+      const back = [x2 - h * Math.cos(a), y2 - h * Math.sin(a)];
+      const left = [back[0] + w * Math.sin(a), back[1] - w * Math.cos(a)];
+      const right = [back[0] - w * Math.sin(a), back[1] + w * Math.cos(a)];
+      return svgEl(
+        "g", {},
+        svgEl("line", { ...common, x1, y1, x2: back[0], y2: back[1], fill: "none" }),
+        svgEl("polygon", { points: [tip, left, right].map((p) => p.join(",")).join(" "), fill: dgColor(s.stroke), opacity: s.opacity })
+      );
+    }
+    case "text":
+      return svgEl(
+        "text",
+        {
+          x: s.at?.[0], y: s.at?.[1],
+          "font-size": s.fontSize ?? 11,
+          "font-weight": s.weight === "bold" ? 600 : 400,
+          "text-anchor": s.anchor || "start",
+          fill: dgColor(s.fill || "text"),
+          stroke: "none",
+          opacity: s.opacity,
+        },
+        document.createTextNode(s.text || "")
+      );
+    default:
+      return null;
+  }
+}
+
+/** Render a `diagram` — an original declarative vector figure. Mirrors the iOS
+    DiagramView; see common.schema.json#/$defs/diagram. */
+export function renderDiagram(d) {
+  if (!d || !Array.isArray(d.viewBox) || !Array.isArray(d.shapes)) return null;
+  const svg = svgEl(
+    "svg",
+    {
+      viewBox: d.viewBox.join(" "),
+      class: "diagram-svg",
+      role: "img",
+      "aria-label": d.title || d.caption || "clinical diagram",
+      preserveAspectRatio: "xMidYMid meet",
+    },
+    d.shapes.map(diagramShape)
+  );
+  return el(
+    "figure",
+    { class: "diagram" },
+    d.title ? el("figcaption", { class: "diagram-title" }, d.title) : null,
+    svg,
+    d.caption ? el("p", { class: "diagram-caption" }, d.caption) : null
+  );
+}
+
 /** Shared renderer for the `body` block array used by reference and peds-tool modules. */
 export function renderBlocks(body) {
   return (body || []).map((b) => {
@@ -60,6 +164,8 @@ export function renderBlocks(body) {
         return el("ul", {}, (b.items || []).map(listItem));
       case "callout":
         return el("div", { class: `callout ${b.tone || "info"}` }, b.text);
+      case "diagram":
+        return renderDiagram(b.diagram);
       case "table":
         return el(
           "div",
@@ -155,7 +261,13 @@ function workflowList(mod) {
       "li",
       { class: `node ${n.type}` },
       el("span", { class: "node-badge", "aria-hidden": "true" }, isWarning ? "!" : String(stepNum)),
-      el("div", { class: "node-body" }, n.prompt ? el("strong", {}, n.prompt) : null, n.body ? el("p", {}, n.body) : null)
+      el(
+        "div",
+        { class: "node-body" },
+        n.prompt ? el("strong", {}, n.prompt) : null,
+        n.body ? el("p", {}, n.body) : null,
+        n.diagram ? renderDiagram(n.diagram) : null
+      )
     );
   }));
 }
@@ -179,6 +291,7 @@ function treeWalker(mod) {
     const bodyEls = [
       node.prompt ? el("h3", {}, node.prompt) : null,
       node.body ? el("p", { class: `node ${node.type}` }, node.body) : null,
+      node.diagram ? renderDiagram(node.diagram) : null,
     ];
     if (node.choices?.length) {
       bodyEls.push(el("div", { class: "opts" }, node.choices.map((c) =>

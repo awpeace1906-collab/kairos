@@ -53,6 +53,65 @@
         "stub"
       ]
     },
+    "diagram": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["viewBox", "shapes"],
+      "description": "An original, declarative vector illustration. Deliberately NOT raster/video: it renders natively on both clients (web SVG, iOS SwiftUI Canvas), stays offline-first and tiny, themes itself via semantic colour tokens, and carries no third-party licensing. Same architectural pattern as the calculator `plot` field.",
+      "properties": {
+        "title": { "type": "string" },
+        "caption": { "type": "string", "description": "Rendered under the figure. Carries the teaching point, not a restatement of the labels." },
+        "viewBox": {
+          "type": "array",
+          "description": "[minX, minY, width, height] — the drawing's own coordinate space; both renderers scale to fit.",
+          "items": { "type": "number" },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "shapes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["kind"],
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": ["path", "line", "polyline", "rect", "circle", "ellipse", "arrow", "text"]
+              },
+              "d": { "type": "string", "description": "kind=path: SVG path data. Supported commands: M/m L/l H/h V/v C/c Q/q Z/z (no arcs — approximate with curves)." },
+              "points": {
+                "type": "array",
+                "description": "kind=polyline: [[x,y], ...]",
+                "items": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 }
+              },
+              "from": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 },
+              "to": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 },
+              "at": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 },
+              "size": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 },
+              "r": { "type": "number" },
+              "rx": { "type": "number" },
+              "ry": { "type": "number" },
+              "text": { "type": "string" },
+              "fontSize": { "type": "number", "default": 11 },
+              "anchor": { "type": "string", "enum": ["start", "middle", "end"], "default": "start" },
+              "weight": { "type": "string", "enum": ["regular", "bold"], "default": "regular" },
+              "fill": { "$ref": "common.schema.json#/$defs/diagramColor" },
+              "stroke": { "$ref": "common.schema.json#/$defs/diagramColor" },
+              "strokeWidth": { "type": "number", "default": 1.5 },
+              "dash": { "type": "boolean", "default": false, "description": "Dashed stroke — conventionally 'a plane/landmark you infer rather than see'." },
+              "opacity": { "type": "number", "minimum": 0, "maximum": 1 }
+            }
+          }
+        }
+      }
+    },
+    "diagramColor": {
+      "type": "string",
+      "description": "Semantic token, never a literal hex — each client maps these to its own light/dark palette so a diagram is legible in both themes.",
+      "enum": ["outline", "surface", "tissue", "bone", "lumen", "muscle", "vessel", "accent", "danger", "warning", "good", "muted", "text"]
+    },
     "recordMeta": {
       "type": "object",
       "description": "Fields every content module carries.",

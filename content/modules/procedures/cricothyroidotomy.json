@@ -3,12 +3,37 @@
   "section": "Procedures",
   "category": "Airway & Sedation Workflows",
   "title": "Emergency Cricothyroidotomy (Surgical Airway)",
-  "settingEmphasis": ["ed", "or", "icu"],
-  "aliases": ["surgical airway", "cric", "front-of-neck access", "FONA", "scalpel-finger-bougie"],
-  "tags": ["cricothyroidotomy", "surgical airway", "can't intubate can't ventilate", "CICO", "emergency airway", "ED", "OR", "ICU"],
-  "keywords": ["scalpel-finger-bougie technique — scalpel to make the hole, finger to keep it open and confirm you're in the trachea, bougie to railroad the tube over, no second-guessing the sequence", "this is the last step of the difficult airway algorithm, decide early rather than as a final desperate move after everything else has failed", "a 6.0 cuffed endotracheal tube is the standard railroad target, not a dedicated small cricothyroidotomy tube in the adult emergency scenario", "vertical skin incision but a horizontal stab through the cricothyroid membrane itself", "confirm with quantitative waveform capnography like any other airway"],
+  "settingEmphasis": [
+    "ed",
+    "or",
+    "icu"
+  ],
+  "aliases": [
+    "surgical airway",
+    "cric",
+    "front-of-neck access",
+    "FONA",
+    "scalpel-finger-bougie"
+  ],
+  "tags": [
+    "cricothyroidotomy",
+    "surgical airway",
+    "can't intubate can't ventilate",
+    "CICO",
+    "emergency airway",
+    "ED",
+    "OR",
+    "ICU"
+  ],
+  "keywords": [
+    "scalpel-finger-bougie technique — scalpel to make the hole, finger to keep it open and confirm you're in the trachea, bougie to railroad the tube over, no second-guessing the sequence",
+    "this is the last step of the difficult airway algorithm, decide early rather than as a final desperate move after everything else has failed",
+    "a 6.0 cuffed endotracheal tube is the standard railroad target, not a dedicated small cricothyroidotomy tube in the adult emergency scenario",
+    "vertical skin incision but a horizontal stab through the cricothyroid membrane itself",
+    "confirm with quantitative waveform capnography like any other airway"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,7 +43,16 @@
     "Difficult Airway Society (DAS) 2015 Guidelines for management of unanticipated difficult intubation."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). Previously only referenced as the terminal endpoint within the difficult-airway algorithm module without its own step-by-step procedure card, unlike other Procedures-section content of comparable acuity (central line, tube thoracostomy)." }
+    {
+      "version": 2,
+      "date": "2026-09-16",
+      "change": "Added a landmark diagram to the positioning/identification step — first content use of the new declarative `diagram` block (common.schema.json#/$defs/diagram), rendered natively as SVG on web and SwiftUI Canvas on iOS. Original vector artwork, so there is no third-party image licensing and it works fully offline."
+    },
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). Previously only referenced as the terminal endpoint within the difficult-airway algorithm module without its own step-by-step procedure card, unlike other Procedures-section content of comparable acuity (central line, tube thoracostomy)."
+    }
   ],
   "outputType": "workflow",
   "purpose": "Step-by-step surgical airway technique (scalpel-finger-bougie) for the can't-intubate-can't-ventilate emergency, when the difficult airway algorithm has reached its terminal step.",
@@ -34,7 +68,274 @@
       "id": "position-identify",
       "type": "step",
       "prompt": "2. Position and identify landmarks",
-      "body": "Extend the neck if there's no cervical spine concern (a pillow/roll under the shoulders helps). Stabilize the larynx with your non-dominant hand and identify the cricothyroid membrane by palpation — the depression between the thyroid cartilage (superior) and cricoid cartilage (inferior). If landmarks are difficult to palpate (obesity, edema, prior neck surgery), a generous vertical incision helps you find them by direct exposure rather than relying on palpation alone."
+      "body": "Extend the neck if there's no cervical spine concern (a pillow/roll under the shoulders helps). Stabilize the larynx with your non-dominant hand and identify the cricothyroid membrane by palpation — the depression between the thyroid cartilage (superior) and cricoid cartilage (inferior). If landmarks are difficult to palpate (obesity, edema, prior neck surgery), a generous vertical incision helps you find them by direct exposure rather than relying on palpation alone.",
+      "diagram": {
+        "title": "Cricothyroid membrane — surface landmarks",
+        "viewBox": [
+          0,
+          0,
+          336,
+          230
+        ],
+        "caption": "Palpate down the midline from the laryngeal prominence: the first soft gap below the thyroid cartilage is the cricothyroid membrane, bounded below by the solid cricoid ring. In an obese or edematous neck this gap is not visible — a generous VERTICAL skin incision lets you find it by feel rather than by sight.",
+        "shapes": [
+          {
+            "kind": "path",
+            "d": "M 62 12 C 52 70 50 150 58 218 L 242 218 C 250 150 248 70 238 12 Z",
+            "fill": "tissue",
+            "stroke": "outline",
+            "strokeWidth": 1.2,
+            "opacity": 0.55
+          },
+          {
+            "kind": "path",
+            "d": "M 108 44 Q 150 34 192 44 Q 150 52 108 44 Z",
+            "fill": "bone",
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "text",
+            "at": [
+              200,
+              44
+            ],
+            "text": "Hyoid",
+            "fontSize": 10,
+            "fill": "muted"
+          },
+          {
+            "kind": "path",
+            "d": "M 112 66 L 150 58 L 188 66 L 190 112 Q 150 122 110 112 Z",
+            "fill": "bone",
+            "stroke": "outline",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "text",
+            "at": [
+              200,
+              80
+            ],
+            "text": "Thyroid cartilage",
+            "fontSize": 10,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              200,
+              93
+            ],
+            "text": "(laryngeal prominence)",
+            "fontSize": 9,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              112,
+              118
+            ],
+            "size": [
+              76,
+              20
+            ],
+            "rx": 3,
+            "fill": "danger",
+            "stroke": "danger",
+            "strokeWidth": 1.4,
+            "opacity": 0.85
+          },
+          {
+            "kind": "text",
+            "at": [
+              200,
+              125
+            ],
+            "text": "Cricothyroid",
+            "fontSize": 10,
+            "weight": "bold",
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              200,
+              136
+            ],
+            "text": "membrane — TARGET",
+            "fontSize": 9,
+            "weight": "bold",
+            "fill": "danger"
+          },
+          {
+            "kind": "path",
+            "d": "M 110 142 Q 150 134 190 142 L 190 166 Q 150 174 110 166 Z",
+            "fill": "bone",
+            "stroke": "outline",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "text",
+            "at": [
+              200,
+              157
+            ],
+            "text": "Cricoid ring",
+            "fontSize": 10,
+            "fill": "muted"
+          },
+          {
+            "kind": "path",
+            "d": "M 116 176 Q 150 170 184 176 L 184 188 Q 150 194 116 188 Z",
+            "fill": "lumen",
+            "stroke": "outline",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "path",
+            "d": "M 116 196 Q 150 190 184 196 L 184 208 Q 150 214 116 208 Z",
+            "fill": "lumen",
+            "stroke": "outline",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "text",
+            "at": [
+              200,
+              196
+            ],
+            "text": "Trachea",
+            "fontSize": 10,
+            "fill": "muted"
+          },
+          {
+            "kind": "line",
+            "from": [
+              150,
+              26
+            ],
+            "to": [
+              150,
+              216
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1,
+            "dash": true,
+            "opacity": 0.7
+          },
+          {
+            "kind": "text",
+            "at": [
+              150,
+              22
+            ],
+            "text": "midline",
+            "fontSize": 9,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "line",
+            "from": [
+              150,
+              74
+            ],
+            "to": [
+              150,
+              158
+            ],
+            "stroke": "accent",
+            "strokeWidth": 2.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              96,
+              96
+            ],
+            "text": "vertical",
+            "fontSize": 10,
+            "anchor": "end",
+            "weight": "bold",
+            "fill": "accent"
+          },
+          {
+            "kind": "text",
+            "at": [
+              96,
+              108
+            ],
+            "text": "skin incision",
+            "fontSize": 10,
+            "anchor": "end",
+            "fill": "accent"
+          },
+          {
+            "kind": "arrow",
+            "from": [
+              98,
+              100
+            ],
+            "to": [
+              144,
+              110
+            ],
+            "stroke": "accent",
+            "strokeWidth": 1.6
+          },
+          {
+            "kind": "line",
+            "from": [
+              122,
+              128
+            ],
+            "to": [
+              178,
+              128
+            ],
+            "stroke": "surface",
+            "strokeWidth": 2.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              96,
+              140
+            ],
+            "text": "horizontal stab",
+            "fontSize": 10,
+            "anchor": "end",
+            "weight": "bold",
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              96,
+              152
+            ],
+            "text": "through membrane",
+            "fontSize": 10,
+            "anchor": "end",
+            "fill": "danger"
+          },
+          {
+            "kind": "arrow",
+            "from": [
+              98,
+              144
+            ],
+            "to": [
+              126,
+              131
+            ],
+            "stroke": "danger",
+            "strokeWidth": 1.6
+          }
+        ]
+      }
     },
     {
       "id": "incise",
@@ -74,6 +375,9 @@
     "Bougie railroaded through the finger-held tract, then a 6.0 cuffed ETT railroaded over the bougie",
     "Placement confirmed with quantitative waveform capnography, tube secured, and further airway/ENT evaluation arranged once stabilized"
   ],
-  "crossLinks": ["airway-management-flow", "physiologically-difficult-airway"],
+  "crossLinks": [
+    "airway-management-flow",
+    "physiologically-difficult-airway"
+  ],
   "buildNote": "workflow outputType. Scalpel-finger-bougie sequence and the 6.0 cuffed ETT railroad target WebSearch-verified against Walls Manual/EMCrit/First10EM procedural teaching, which converged consistently on this technique as the current emergency-medicine standard over older tracheal-hook or dedicated-cric-kit approaches. crossLinks id physiologically-difficult-airway assumed from prior batch naming — verify actual id at build time."
 }

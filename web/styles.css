@@ -45,6 +45,22 @@
   --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
   font-family: var(--font-sans);
   color-scheme: light;
+
+  /* diagram tokens — semantic palette for declarative vector figures
+     (common.schema.json#/$defs/diagramColor). Mirrored in DiagramView.swift. */
+  --dg-outline: #3a3742;
+  --dg-surface: #fbfaf8;
+  --dg-tissue: #f0ddd2;
+  --dg-bone: #eae6dc;
+  --dg-lumen: #dfe6ea;
+  --dg-muscle: #cf9384;
+  --dg-vessel: #8c5a86;
+  --dg-accent: var(--accent);
+  --dg-danger: var(--sev-high);
+  --dg-warning: var(--sev-moderate);
+  --dg-good: var(--sev-low);
+  --dg-muted: var(--muted);
+  --dg-text: var(--text);
 }
 /* one place to recolour a section: --tint is set per-section on .tile / .content */
 [data-section="procedures"] { --tint: var(--sec-procedures); }
@@ -72,6 +88,20 @@
     --sec-reference-library: #9a9578;
     --sec-peds-module: #b27e90;
     color-scheme: dark;
+    /* diagram tokens — dark variants (fills desaturated so strokes stay readable) */
+    --dg-outline: #c9c5d0;
+    --dg-surface: #242329;
+    --dg-tissue: #4a3b36;
+    --dg-bone: #4a473f;
+    --dg-lumen: #33404a;
+    --dg-muscle: #8a5145;
+    --dg-vessel: #9d6b96;
+    --dg-accent: var(--accent);
+    --dg-danger: var(--sev-high);
+    --dg-warning: var(--sev-moderate);
+    --dg-good: var(--sev-low);
+    --dg-muted: var(--muted);
+    --dg-text: var(--text);
   }
 }
 /* explicit override wins in both directions, regardless of OS scheme */
@@ -94,6 +124,21 @@
   --sec-reference-library: #9a9578;
   --sec-peds-module: #b27e90;
   color-scheme: dark;
+
+  /* diagram tokens — dark variants (fills desaturated so strokes stay readable) */
+  --dg-outline: #c9c5d0;
+  --dg-surface: #242329;
+  --dg-tissue: #4a3b36;
+  --dg-bone: #4a473f;
+  --dg-lumen: #33404a;
+  --dg-muscle: #8a5145;
+  --dg-vessel: #9d6b96;
+  --dg-accent: var(--accent);
+  --dg-danger: var(--sev-high);
+  --dg-warning: var(--sev-moderate);
+  --dg-good: var(--sev-low);
+  --dg-muted: var(--muted);
+  --dg-text: var(--text);
 }
 :root[data-theme="light"] { color-scheme: light; }
 * { box-sizing: border-box; }
@@ -509,3 +554,10 @@ h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
   .home, .content, #app > .detail { animation: kairos-rise .19s ease-out both; }
   .result-group { animation: kairos-rise .16s ease-out both; }
 }
+
+/* --- diagrams (declarative vector figures) ------------------------------- */
+figure.diagram { margin: 16px 0; padding: 12px; background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; }
+figure.diagram .diagram-title { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
+figure.diagram .diagram-svg { display: block; width: 100%; height: auto; max-height: 60vh; overflow: visible; }
+figure.diagram .diagram-caption { margin: 10px 0 0; font-size: 0.86rem; line-height: 1.45; color: var(--muted); }
+@media (prefers-reduced-motion: no-preference) { figure.diagram .diagram-svg { transition: opacity 0.2s ease; } }

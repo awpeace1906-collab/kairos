@@ -479,6 +479,7 @@ struct ReferenceDoc: Codable {
         let columns: [String]?
         let rows: [[String]]?
         let tone: String?
+        let diagram: Diagram?
     }
 
     init(from decoder: Decoder) throws {
@@ -514,9 +515,10 @@ struct Procedure: Codable {
         let prompt: String?
         let body: String?
         let choices: [Choice]?
+        let diagram: Diagram?
         enum CodingKeys: String, CodingKey {
             case nodeID = "id"
-            case type, prompt, body, choices
+            case type, prompt, body, choices, diagram
         }
     }
     struct Choice: Codable, Hashable {
@@ -611,5 +613,41 @@ struct WeightZonesConfig: Codable {
             let defibPads: String?
             let bpCuff: String?
         }
+    }
+}
+
+// MARK: - Diagram
+
+/// An original declarative vector figure (common.schema.json#/$defs/diagram).
+/// Deliberately not raster/video: renders natively on both clients, ships inside
+/// the offline content bundle, themes itself through semantic colour tokens, and
+/// carries no third-party licensing. Web mirror: renderDiagram() in content.js.
+struct Diagram: Codable, Hashable {
+    let title: String?
+    let caption: String?
+    /// [minX, minY, width, height]
+    let viewBox: [Double]
+    let shapes: [Shape]
+
+    struct Shape: Codable, Hashable {
+        let kind: String
+        let d: String?
+        let points: [[Double]]?
+        let from: [Double]?
+        let to: [Double]?
+        let at: [Double]?
+        let size: [Double]?
+        let r: Double?
+        let rx: Double?
+        let ry: Double?
+        let text: String?
+        let fontSize: Double?
+        let anchor: String?
+        let weight: String?
+        let fill: String?
+        let stroke: String?
+        let strokeWidth: Double?
+        let dash: Bool?
+        let opacity: Double?
     }
 }

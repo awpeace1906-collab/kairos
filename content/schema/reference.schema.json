@@ -35,13 +35,14 @@
         "additionalProperties": false,
         "required": ["type"],
         "properties": {
-          "type": { "type": "string", "enum": ["heading", "text", "list", "table", "callout"] },
+          "type": { "type": "string", "enum": ["heading", "text", "list", "table", "callout", "diagram"] },
           "level": { "type": "integer", "minimum": 2, "maximum": 4 },
           "text": { "type": "string" },
           "items": { "type": "array", "items": { "type": "string" } },
           "columns": { "type": "array", "items": { "type": "string" } },
           "rows": { "type": "array", "items": { "type": "array", "items": { "type": "string" } } },
-          "tone": { "type": "string", "enum": ["info", "warning", "danger"] }
+          "tone": { "type": "string", "enum": ["info", "warning", "danger"] },
+          "diagram": { "$ref": "common.schema.json#/$defs/diagram" }
         }
       }
     },

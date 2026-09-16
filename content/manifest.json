@@ -2238,8 +2238,8 @@
       "next_review_due": "2026-12-13"
     },
     "procedures/cricothyroidotomy": {
-      "content_version": 1,
-      "hash": "c4a0d27b1e14dad5",
+      "content_version": 2,
+      "hash": "478b2f9fa0a5ba6d",
       "path": "modules/procedures/cricothyroidotomy.json",
       "contentType": "procedure",
       "section": "Procedures",
