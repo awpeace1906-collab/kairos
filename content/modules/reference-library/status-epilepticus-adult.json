@@ -59,7 +59,7 @@
     {
       "version": 1,
       "date": "2026-09-02",
-      "change": "Initial entry — the time-anchored ladder: benzodiazepine → second-line ASM (ESETT: LEV / fosphenytoin / valproate all equivalent) → anaesthetic infusion → super-refractory options. Doses inline."
+      "change": "Initial entry — the time-anchored ladder: benzodiazepine → second-line ASM (ESETT: LEV / fosphenytoin / valproate all equivalent) → anesthetic infusion → super-refractory options. Doses inline."
     }
   ],
   "summary": "SE = a seizure lasting > 5 min, or ≥ 2 seizures without recovery of consciousness between. Treat immediately — neuronal injury accrues after ~30 min, and benzodiazepines get less effective the longer you wait (GABA-A receptors internalise). Give a FULL benzodiazepine dose, then a full second-line agent, then intubate for an infusion.",
@@ -94,7 +94,7 @@
         ],
         [
           "Refractory SE (> 20–30 min, failed 2 agents)",
-          "Intubate + anaesthetic infusion",
+          "Intubate + anesthetic infusion",
           "Propofol 1–2 mg/kg bolus → 1–15 mg/kg/hr, OR midazolam 0.2 mg/kg bolus → 0.05–2 mg/kg/hr",
           "Titrate to seizure cessation, then to burst-suppression on continuous EEG. Watch for PRIS with prolonged high-dose propofol"
         ],
@@ -114,7 +114,7 @@
     {
       "type": "list",
       "items": [
-        "Check glucose immediately — give D50 (+ thiamine 100 mg IV if malnourished / alcohol) for hypoglycaemia.",
+        "Check glucose immediately — give D50 (+ thiamine 100 mg IV if malnourished / alcohol) for hypoglycemia.",
         "Basic labs incl. sodium, calcium, magnesium; antiseizure-drug levels if on maintenance therapy; toxicology screen.",
         "For a refractory or first unprovoked seizure: CT head, then LP if meningitis / encephalitis is possible; start empiric aciclovir ± antibiotics if febrile.",
         "In an eclamptic / peripartum patient: magnesium sulfate is first-line (see the pregnancy emergency-drugs module), not a benzodiazepine.",

@@ -30,7 +30,7 @@
     "active phase arrest 4 h adequate contractions 6 h inadequate",
     "second stage 3 h nullip 4 h with epidural",
     "latent phase arrest is not an indication for cesarean",
-    "Bishop >= 8 favourable",
+    "Bishop >= 8 favorable",
     "Bishop < 6 ripen first"
   ],
   "contentType": "reference",
@@ -55,8 +55,8 @@
     }
   ],
   "summary": "Contemporary labor is slower than the old Friedman curves — the active phase is now defined from 6 cm, not 4 cm. Latent-phase arrest is NOT an indication for cesarean. Meet the explicit active-phase and second-stage arrest thresholds before calling dystocia.",
-  "whyThisMatters": "The old Friedman curves overcall dystocia — labour is genuinely slower than they assumed — and calling 'failure to progress' before the contemporary thresholds are met is a leading driver of the primary caesarean.",
-  "clinicalTakeaway": "Define the active phase from 6 cm, not 4. Latent-phase arrest is not an indication for caesarean. Only call arrest once the explicit active-phase and second-stage thresholds are met, and apply the ACOG/SMFM measures to prevent the primary caesarean.",
+  "whyThisMatters": "The old Friedman curves overcall dystocia — labor is genuinely slower than they assumed — and calling 'failure to progress' before the contemporary thresholds are met is a leading driver of the primary cesarean.",
+  "clinicalTakeaway": "Define the active phase from 6 cm, not 4. Latent-phase arrest is not an indication for cesarean. Only call arrest once the explicit active-phase and second-stage thresholds are met, and apply the ACOG/SMFM measures to prevent the primary cesarean.",
   "body": [
     {
       "type": "heading",
@@ -169,8 +169,8 @@
     {
       "type": "list",
       "items": [
-        "Score ≥ 8 — favourable; induction likely to succeed without a ripening agent.",
-        "Score < 6 — unfavourable; use a cervical-ripening agent first (see the induction reference)."
+        "Score ≥ 8 — favorable; induction likely to succeed without a ripening agent.",
+        "Score < 6 — unfavorable; use a cervical-ripening agent first (see the induction reference)."
       ]
     }
   ]

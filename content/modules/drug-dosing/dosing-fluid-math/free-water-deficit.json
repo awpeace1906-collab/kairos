@@ -16,7 +16,7 @@
     "Adrogué HJ, Madias NE. N Engl J Med 2000;342:1493-9 (rate-of-correction guidance)"
   ],
   "changelog": [
-    { "version": 2, "date": "2026-09-01", "change": "Tier 1 verification: TBW-fraction map and deficit formula confirmed. Primary citation changed to the standard textbook form (the deficit equation is not the headline equation of the Adrogué-Madias paper, which gives Δ[Na] per litre of infusate)." },
+    { "version": 2, "date": "2026-09-01", "change": "Tier 1 verification: TBW-fraction map and deficit formula confirmed. Primary citation changed to the standard textbook form (the deficit equation is not the headline equation of the Adrogué-Madias paper, which gives Δ[Na] per liter of infusate)." },
     { "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3." }
   ],
   "engine": "formula",

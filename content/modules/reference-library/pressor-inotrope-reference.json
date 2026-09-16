@@ -71,7 +71,7 @@
     }
   ],
   "summary": "The exact prep, dose range, and rate math for the drugs reached for first in shock, plus the receptor-level map and the rescue tier for refractory vasoplegia. Norepinephrine is first-line for septic/distributive shock (SSC 2021, Grade 1B); start it peripherally rather than delaying for a central line.",
-  "whyThisMatters": "Under-dosing from concentration/rate confusion, and choosing an agent by habit rather than by the haemodynamic hole you are filling, are the two ways vasopressor therapy fails — and both are avoidable with the mixing math and the receptor map in front of you.",
+  "whyThisMatters": "Under-dosing from concentration/rate confusion, and choosing an agent by habit rather than by the hemodynamic hole you are filling, are the two ways vasopressor therapy fails — and both are avoidable with the mixing math and the receptor map in front of you.",
   "clinicalTakeaway": "Norepinephrine is first-line for septic/distributive shock — start it peripherally rather than waiting for a central line. Pick the agent by the missing element: pure vasopressor for low SVR, inodilator for low CO with high filling pressures, inopressor for both. Get the two infusion formulas right, and reach for the vasoplegia rescue tier when refractory.",
   "body": [
     {

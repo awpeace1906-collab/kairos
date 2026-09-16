@@ -32,7 +32,7 @@
     "lung point 100% specific for pneumothorax",
     "barcode sign M-mode",
     "RUSH pump tank pipes",
-    "IVC < 1.5 cm collapsing hypovolaemia",
+    "IVC < 1.5 cm collapsing hypovolemia",
     "negative eFAST does not exclude solid organ injury"
   ],
   "contentType": "reference",
@@ -78,7 +78,7 @@
           "1",
           "RUQ — Morrison's pouch (hepatorenal)",
           "Right mid-axillary line, ~10th ICS; also fan above the diaphragm",
-          "Free fluid; haemothorax"
+          "Free fluid; hemothorax"
         ],
         [
           "2",
@@ -90,7 +90,7 @@
           "3",
           "LUQ — splenorenal (Koller's pouch)",
           "Posterior mid-axillary line, 8th–9th ICS; fan above the diaphragm",
-          "Free fluid; haemothorax (harder view than RUQ)"
+          "Free fluid; hemothorax (harder view than RUQ)"
         ],
         [
           "4",
@@ -129,12 +129,12 @@
       ],
       "rows": [
         [
-          "Free fluid + haemodynamically unstable",
+          "Free fluid + hemodynamically unstable",
           "Emergent laparotomy — do not delay for CT; activate trauma surgery"
         ],
         [
           "Free fluid + stable",
-          "CT abdomen/pelvis with contrast to characterise the injury"
+          "CT abdomen/pelvis with contrast to characterize the injury"
         ],
         [
           "Pericardial effusion + tamponade physiology",
@@ -155,7 +155,7 @@
       "type": "list",
       "items": [
         "PUMP: parasternal/subxiphoid — eyeball LVEF, RV:LV ratio (> 1 = strain), pericardial effusion.",
-        "TANK: IVC + lungs — collapsed IVC = empty tank (hypovolaemia); plethoric IVC = full (cardiogenic / obstructive); bilateral B-lines = wet.",
+        "TANK: IVC + lungs — collapsed IVC = empty tank (hypovolemia); plethoric IVC = full (cardiogenic / obstructive); bilateral B-lines = wet.",
         "PIPES: aorta (measure for AAA) + femoral/popliteal compression for DVT."
       ]
     },
@@ -170,7 +170,7 @@
       ],
       "rows": [
         [
-          "Hypovolaemic / haemorrhagic",
+          "Hypovolemic / hemorrhagic",
           "Hyperdynamic, kissing walls",
           "Flat, collapsing",
           "A-lines",
@@ -217,7 +217,7 @@
         [
           "< 1.5 cm",
           "> 50%",
-          "Hypovolaemia — volume responsive"
+          "Hypovolemia — volume responsive"
         ],
         [
           "1.5–2.5 cm",
@@ -227,12 +227,12 @@
         [
           "1.5–2.5 cm",
           "< 50%",
-          "Euvolaemic — less predictable"
+          "Euvolemic — less predictable"
         ],
         [
           "> 2.5 cm",
           "< 50%",
-          "Elevated RAP / hypervolaemia — unlikely to respond"
+          "Elevated RAP / hypervolemia — unlikely to respond"
         ]
       ]
     },

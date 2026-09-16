@@ -36,8 +36,82 @@ Still open from the prior cycle:
    build/install actually works. This is now the blocking step for getting
    the ContentStore fix below (and everything else built this session) onto
    the user's phone at all — see that progress log entry for why.
+4. ~~American English normalization pass~~ — **DONE 2026-09-16**, see the
+   progress log entry below (1,025 word edits across 179 files).
+5. **Depth/media/sources expansion — requested 2026-09-16, NOT started,
+   needs scoping decisions first.** User asked to "dive into greater detail
+   on ALL subjects" with "complete, DETAILED procedure instructions with
+   instructional images or videos" and "even better sources researched."
+   Current corpus baseline for scoping: **431 modules / 273,708 prose words /
+   median 543 words per module** (references ~160k words are the meatiest;
+   calculators are thinnest, with the 12 thinnest all 93-127 words —
+   `shock-index`, `apfel-ponv`, `killip-classification`, `aims65`, `gcs`,
+   `bisap`, `hunt-hess`, `abcd2`, `qsofa`, `nexus-cspine`, `curb-65`,
+   `sirs`). Meaningfully deepening all 431 is roughly several times the
+   total content volume produced across Batches 1-8 combined — it is a
+   multi-session program, not a batch. **Two blockers to settle before any
+   building starts:**
+   - **Media has no schema or client support.** `body[]` block types are
+     only `heading|text|list|table|callout` — there is no image, video, or
+     diagram type, and neither client can render one. The one existing
+     visual precedent is the calculator `plot` field (semilogy nomogram →
+     web SVG in `calculator.js` `nomogram()`, iOS `Canvas` in
+     `NomogramView.swift`), used by exactly one module
+     (`apap-nac-dosing`). That precedent is the cheapest credible path: a
+     new `diagram` body block carrying original inline SVG would render
+     natively on both platforms, stay offline-first, stay tiny, and be
+     theme-aware and license-clean.
+   - **Licensed raster/video media is an external dependency, not a build
+     task.** Procedure photos and instructional video cannot be lawfully
+     copied from textbooks, journals, or YouTube, and bundling video fights
+     the offline-first architecture and both clients' size limits. Options
+     are (a) original SVG/vector diagrams authored in-repo, (b) outbound
+     deep links to open-access resources — breaks offline use, (c)
+     user-supplied or properly licensed assets. This is the same
+     dependency already logged for the POCUS/ECG/nerve-block media
+     libraries.
 
 ## Progress log
+- 2026-09-16 — **American English normalization complete: 1,025 word edits
+  across 179 of 431 modules.** Done as a scripted single pass
+  (`scratchpad/americanize.py`, line-based raw-text editing so original file
+  formatting survives byte-for-byte — re-serializing through `json.dumps`
+  would have reformatted every compact array and buried the real changes).
+  Families converted: `-aemia/-aemic` (the largest by far, ~280
+  occurrences — hyperkalaemia, hypoglycaemia, hypovolaemia, hypoxaemia,
+  ischaemic, anaemia, leukaemia …), `haemo-/haemat-/haemorrh-/haemost-`,
+  `oedema`, `anaesthe-`, `paediatr-`, the `-oea` respiratory set
+  (apnoea/dyspnoea/tachypnoea — heavily used in a critical-care corpus),
+  `oesophag-`, `caesarean`, `orthopaedic`, `gynaecolog-`, `paraesthesi-`,
+  `manoeuvre`, `-our` (colour/behaviour/labour/favour/vapour/tumour),
+  `-re` (fibre/centre/litre), plus `grey`, `programme`, `aluminium`,
+  `paralysed/analysed/emphasised`, and an explicit `-ise/-isation` stem
+  allowlist.
+  **Three traps found and handled, each of which would have introduced a
+  real error under a naive global find-and-replace:**
+  1. **`Haemophilus` is the correct genus name** — a blanket `haem→hem`
+     would have produced "Hemophilus influenzae". Sentinel-shielded.
+  2. **Citations must quote journal names and article titles verbatim.**
+     `sources[]` is skipped wholesale, and inline citations appearing in
+     prose/`buildNote`/table rows are separately shielded — `Thromb
+     Haemost`, `Br J Anaesth`, `Paediatr Anaesth`, `Lancet Haematol`,
+     `Acta Anaesthesiol Scand`, `J Anaesthesiol Clin Pharmacol`, `Royal
+     College of Anaesthetists`, and the article titles containing
+     "caesarean section" / "central venous catheterisation". 21 British
+     spellings survive on purpose, all inside citations; a verification
+     pass confirmed exactly one outside `sources[]` and it is the protected
+     `Paediatr Anaesth 2019` reference inside a buildNote.
+  3. **A blanket `-ise→-ize` rule is wrong** — `otherwise`, `compromise`,
+     `precise`, `stepwise`, `expertise`, `immunocompromised`, `analysis`,
+     `emphasis` are all correct American English. Used an explicit stem
+     allowlist instead, and restricted `analys-/emphasis-/paralys-` to the
+     verb inflections so the nouns survive.
+  Also caught a self-introduced bug in dry-run review before applying:
+  a stem-only `manoeuvr→maneuver` rule produced "maneuver**e**" /
+  "maneuver**es**" because the trailing vowel survived — fixed by
+  enumerating the inflections. Verified post-apply: 7 `maneuver`, 0
+  `maneuvere`. Pipeline: validate 431/0, build/sync/test 281/0.
+
 - 2026-09-15 — **Real bug found and fixed: the iOS app's OTA content sync
   could never make brand-new modules or categories discoverable, no matter
   how many deploys succeeded.** User reported "it's not automatically

@@ -66,10 +66,10 @@
     {
       "version": 1,
       "date": "2026-09-02",
-      "change": "Initial entry — converted from the CV Emergency Drugs in Pregnancy reference. Organized by what you're treating; the governing principle is that maternal stabilisation IS fetal stabilisation."
+      "change": "Initial entry — converted from the CV Emergency Drugs in Pregnancy reference. Organized by what you're treating; the governing principle is that maternal stabilization IS fetal stabilization."
     }
   ],
-  "summary": "Maternal haemodynamic stability is fetal stability — don't undertreat a genuine maternal emergency out of fetal-risk hesitancy. Every 'avoid' tier here still carries an 'unless life-threatening' escape clause. Position matters: manual left uterine displacement / left lateral tilt at ≥ 20 weeks during any resuscitation.",
+  "summary": "Maternal hemodynamic stability is fetal stability — don't undertreat a genuine maternal emergency out of fetal-risk hesitancy. Every 'avoid' tier here still carries an 'unless life-threatening' escape clause. Position matters: manual left uterine displacement / left lateral tilt at ≥ 20 weeks during any resuscitation.",
   "whyThisMatters": "The recurring error in the pregnant emergency is under-treating the mother out of fetal-risk hesitancy — but maternal stability IS fetal stability, and almost every drug 'avoid' has a life-threatening-emergency exception. Positioning is a drug in itself here.",
   "clinicalTakeaway": "Treat the maternal emergency as you would in any adult — every 'avoid' tier carries an 'unless life-threatening' escape. From 20 weeks, apply continuous manual left uterine displacement (or left lateral tilt) during any resuscitation. Treat severe-range BP within 30–60 minutes.",
   "body": [
@@ -137,12 +137,12 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Postpartum haemorrhage"
+      "text": "Postpartum hemorrhage"
     },
     {
       "type": "list",
       "items": [
-        "First-line: oxytocin continuous IV infusion (half-life < 10 min — needs an infusion, not a single bolus; watch for hyponatraemia with high-dose prolonged infusions) + tranexamic acid 1 g IV when blood loss > 500 mL (vaginal) / > 1,000 mL (caesarean) and bleeding persists — reduces PPH mortality.",
+        "First-line: oxytocin continuous IV infusion (half-life < 10 min — needs an infusion, not a single bolus; watch for hyponatremia with high-dose prolonged infusions) + tranexamic acid 1 g IV when blood loss > 500 mL (vaginal) / > 1,000 mL (cesarean) and bleeding persists — reduces PPH mortality.",
         "Second-line — ASK 'asthma or hypertension?' BEFORE reaching: methylergonovine 0.2 mg IM (contraindicated in hypertension / preeclampsia — hypertensive/stroke risk; avoid IV) OR carboprost (15-methyl PGF2α) 0.25 mg IM (contraindicated in asthma — bronchospasm).",
         "Misoprostol as a caution-tier adjunct."
       ]
@@ -155,9 +155,9 @@
     {
       "type": "list",
       "items": [
-        "Succinylcholine 1–1.5 mg/kg (still ~86–90% of obstetric RSI; decreased plasma cholinesterase in pregnancy can prolong it somewhat) OR rocuronium 0.6–1.2 mg/kg (favoured generally, sugammadex for rescue — though sugammadex pregnancy data is limited).",
+        "Succinylcholine 1–1.5 mg/kg (still ~86–90% of obstetric RSI; decreased plasma cholinesterase in pregnancy can prolong it somewhat) OR rocuronium 0.6–1.2 mg/kg (favored generally, sugammadex for rescue — though sugammadex pregnancy data is limited).",
         "Propofol ~1–2 mg/kg standard induction. Fentanyl standard dose but opioid clearance rises 60–70% in pregnancy, so the effect may be shorter than expected.",
-        "Ketamine: can increase uterine tone at higher doses — reasonable when haemodynamically unstable (haemorrhage, sepsis); discuss timing with obstetrics if delivery isn't imminent.",
+        "Ketamine: can increase uterine tone at higher doses — reasonable when hemodynamically unstable (hemorrhage, sepsis); discuss timing with obstetrics if delivery isn't imminent.",
         "Left uterine displacement during and after induction prevents the aortocaval hypotension that gets blamed on the drug."
       ]
     },
@@ -184,7 +184,7 @@
       "items": [
         "LMWH — weight-based therapeutic dosing; does not cross the placenta — first-line for treatment and prophylaxis throughout pregnancy.",
         "Unfractionated heparin — preferred when rapid reversibility matters (peripartum, planned delivery, urgent procedure); frequent aPTT monitoring.",
-        "Warfarin — AVOID for routine VTE/PE (embryopathy, esp. first trimester). Remains preferred for MECHANICAL HEART VALVES (lowest maternal valve-thrombosis risk) — often first-trimester LMWH then back to warfarin, individualised.",
+        "Warfarin — AVOID for routine VTE/PE (embryopathy, esp. first trimester). Remains preferred for MECHANICAL HEART VALVES (lowest maternal valve-thrombosis risk) — often first-trimester LMWH then back to warfarin, individualized.",
         "DOACs — NOT recommended (placental transfer, insufficient data). A patient on a DOAC who turns out to be pregnant is a bridge-to-LMWH conversation, not 'continue and monitor'."
       ]
     },
@@ -195,7 +195,7 @@
     },
     {
       "type": "text",
-      "text": "Governing principle: treat the mother as you would any patient — maternal stabilisation is fetal stabilisation. Give without hesitation: naloxone (titrate to respiration; may precipitate maternal ± neonatal withdrawal, but untreated hypoxia is worse), N-acetylcysteine (protective for the fetus too — fetal hepatotoxicity mirrors maternal), activated charcoal, 100% O2 for CO. Fomepizole preferred over ethanol for toxic alcohols. Physostigmine / flumazenil — the usual (non-pregnancy) contraindications apply; pregnancy adds none. See the Antidotes & Reversal Agents module for full dosing."
+      "text": "Governing principle: treat the mother as you would any patient — maternal stabilization is fetal stabilization. Give without hesitation: naloxone (titrate to respiration; may precipitate maternal ± neonatal withdrawal, but untreated hypoxia is worse), N-acetylcysteine (protective for the fetus too — fetal hepatotoxicity mirrors maternal), activated charcoal, 100% O2 for CO. Fomepizole preferred over ethanol for toxic alcohols. Physostigmine / flumazenil — the usual (non-pregnancy) contraindications apply; pregnancy adds none. See the Antidotes & Reversal Agents module for full dosing."
     },
     {
       "type": "heading",
@@ -222,7 +222,7 @@
         ],
         [
           "Nitrofurantoin",
-          "Safe 2nd/3rd trimester — AVOID 1st tri (cleft-lip signal) and at term (neonatal haemolysis)",
+          "Safe 2nd/3rd trimester — AVOID 1st tri (cleft-lip signal) and at term (neonatal hemolysis)",
           "Check gestational age before reflex prescribing"
         ],
         [

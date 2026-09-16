@@ -121,6 +121,6 @@
       "severity": "high"
     }
   ],
-  "notes": "ABC ≥ 2 is a trigger, not a ceiling — clinical gestalt, ongoing haemorrhage, or a rising shock index should activate MTP even at a score of 0–1. Recheck as data change (a delayed positive FAST or a falling BP moves the score). Alternatives / adjuncts: shock index > 0.9–1.0, the Revised Assessment of Bleeding and Transfusion (RABT) score which adds pelvic fracture, and lactate / base deficit once available.",
+  "notes": "ABC ≥ 2 is a trigger, not a ceiling — clinical gestalt, ongoing hemorrhage, or a rising shock index should activate MTP even at a score of 0–1. Recheck as data change (a delayed positive FAST or a falling BP moves the score). Alternatives / adjuncts: shock index > 0.9–1.0, the Revised Assessment of Bleeding and Transfusion (RABT) score which adds pelvic fracture, and lactate / base deficit once available.",
   "buildNote": "Additive, 4 items × 1 point. Threshold ≥ 2 activates MTP."
 }

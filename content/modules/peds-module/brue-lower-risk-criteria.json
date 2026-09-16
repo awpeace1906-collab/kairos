@@ -27,7 +27,7 @@
     { "version": 1, "date": "2026-09-08", "change": "Initial entry — interactive all-must-be-true checklist for the AAP 2016 lower-risk BRUE definition; complements the brue-pathway reference (which carries the full lower- and higher-risk management detail). Follow-on named in the brue-pathway build note." }
   ],
   "kind": "decision-tree",
-  "purpose": "Applies the AAP 2016 definition of a LOWER-RISK Brief Resolved Unexplained Event. A BRUE is a sudden, brief, now-resolved episode in an infant < 1 year of a colour change, absent/decreased/irregular breathing, marked tone change, or altered responsiveness, with no explanation after a full history and exam. Every criterion below must be met to call it lower-risk; if any is not met, use the higher-risk framework.",
+  "purpose": "Applies the AAP 2016 definition of a LOWER-RISK Brief Resolved Unexplained Event. A BRUE is a sudden, brief, now-resolved episode in an infant < 1 year of a color change, absent/decreased/irregular breathing, marked tone change, or altered responsiveness, with no explanation after a full history and exam. Every criterion below must be met to call it lower-risk; if any is not met, use the higher-risk framework.",
   "ageRange": "Infants < 1 year (BRUE is not defined outside this age)",
   "sourceOfTruth": ["brue-pathway"],
   "embeddedCalculator": {

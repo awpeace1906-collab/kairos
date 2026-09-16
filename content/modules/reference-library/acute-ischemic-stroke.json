@@ -68,8 +68,8 @@
       "change": "Initial entry — the time-anchored workup, IV thrombolysis dosing + BP targets + contraindications, the thrombectomy window, and ICH management targets."
     }
   ],
-  "summary": "Time = brain (~1.9 million neurons/min in a large-vessel occlusion). Non-contrast CT first to exclude haemorrhage. IV thrombolysis within 4.5 h if eligible (BP must be < 185/110 first). CT angiography for LVO → thrombectomy, up to 24 h with perfusion-imaging selection.",
-  "whyThisMatters": "Large-vessel occlusion destroys around 1.9 million neurons a minute, so every step of the workup is a race — and the two irreversible errors are giving thrombolysis into an unrecognised haemorrhage, or missing an LVO that a thrombectomy could still reopen up to 24 hours out.",
+  "summary": "Time = brain (~1.9 million neurons/min in a large-vessel occlusion). Non-contrast CT first to exclude hemorrhage. IV thrombolysis within 4.5 h if eligible (BP must be < 185/110 first). CT angiography for LVO → thrombectomy, up to 24 h with perfusion-imaging selection.",
+  "whyThisMatters": "Large-vessel occlusion destroys around 1.9 million neurons a minute, so every step of the workup is a race — and the two irreversible errors are giving thrombolysis into an unrecognized hemorrhage, or missing an LVO that a thrombectomy could still reopen up to 24 hours out.",
   "clinicalTakeaway": "Non-contrast CT first to exclude blood. If eligible, give IV thrombolysis within 4.5 hours — but get the BP below 185/110 first. Get CT angiography on anyone with a plausible LVO and move them toward thrombectomy, using perfusion imaging to select out to 24 hours.",
   "body": [
     {
@@ -107,7 +107,7 @@
     {
       "type": "list",
       "items": [
-        "Absolute: haemorrhage on CT; prior ICH; serious head trauma / intracranial surgery / ischemic stroke within 3 months; active internal bleeding; platelets < 100k; INR > 1.7 or elevated PT; therapeutic LMWH within 24 h; a direct thrombin or factor-Xa inhibitor within 48 h (unless coagulation tests are normal); BP that stays > 185 / 110 despite treatment; blood glucose < 50 not corrected; suspected infective endocarditis / aortic dissection.",
+        "Absolute: hemorrhage on CT; prior ICH; serious head trauma / intracranial surgery / ischemic stroke within 3 months; active internal bleeding; platelets < 100k; INR > 1.7 or elevated PT; therapeutic LMWH within 24 h; a direct thrombin or factor-Xa inhibitor within 48 h (unless coagulation tests are normal); BP that stays > 185 / 110 despite treatment; blood glucose < 50 not corrected; suspected infective endocarditis / aortic dissection.",
         "Extended-window (3–4.5 h) additional relative contraindications: age > 80, NIHSS > 25, any anticoagulant use (any dose / INR), a history of BOTH prior stroke AND diabetes.",
         "The list is guideline-specific and evolving — check the current AHA/ASA table and involve the stroke team; many former absolute contraindications are now relative."
       ]
@@ -115,7 +115,7 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Intracerebral haemorrhage (if the CT shows blood)"
+      "text": "Intracerebral hemorrhage (if the CT shows blood)"
     },
     {
       "type": "table",

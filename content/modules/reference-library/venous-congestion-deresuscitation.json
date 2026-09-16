@@ -126,13 +126,13 @@
         "Grade 1 — mild: IVC ≥ 2 cm plus only mild abnormalities in any vein.",
         "Grade 2 — moderate: IVC ≥ 2 cm plus exactly one severe waveform abnormality.",
         "Grade 3 — severe: IVC ≥ 2 cm plus two or three severe waveform abnormalities.",
-        "In the original post-cardiac-surgery cohort, Grade 3 predicted subsequent AKI (hazard ratio ≈ 3.7); Grades 0-1 were reassuring. Serial VExUS can be used to track decongestion — the waveforms normalise as venous pressure falls."
+        "In the original post-cardiac-surgery cohort, Grade 3 predicted subsequent AKI (hazard ratio ≈ 3.7); Grades 0-1 were reassuring. Serial VExUS can be used to track decongestion — the waveforms normalize as venous pressure falls."
       ]
     },
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Confounders that break the waveforms: portal vein pulsatility is a false positive in thin, young, or high-output patients; hepatic vein tracings are distorted by isolated RV dysfunction, severe tricuspid regurgitation, arrhythmia and positive-pressure ventilation; intrarenal Doppler needs a usable kidney window and is unreliable in advanced CKD. VExUS is not validated in cirrhosis (portal hypertension), isolated right heart failure, or atrial fibrillation. Treat it as one input alongside the CVP trend, exam, cardiac POCUS and fluid balance — not a standalone trigger, and not yet shown in a randomised trial to improve patient outcomes."
+      "text": "Confounders that break the waveforms: portal vein pulsatility is a false positive in thin, young, or high-output patients; hepatic vein tracings are distorted by isolated RV dysfunction, severe tricuspid regurgitation, arrhythmia and positive-pressure ventilation; intrarenal Doppler needs a usable kidney window and is unreliable in advanced CKD. VExUS is not validated in cirrhosis (portal hypertension), isolated right heart failure, or atrial fibrillation. Treat it as one input alongside the CVP trend, exam, cardiac POCUS and fluid balance — not a standalone trigger, and not yet shown in a randomized trial to improve patient outcomes."
     },
     {
       "type": "heading",
@@ -160,12 +160,12 @@
         [
           "Stabilization",
           "Days: stable, no shock",
-          "Maintenance and replacement only; aim for neutral or slightly negative daily balance; minimise creep"
+          "Maintenance and replacement only; aim for neutral or slightly negative daily balance; minimize creep"
         ],
         [
           "Evacuation / de-escalation",
           "Days-weeks: recovering, fluid-overloaded",
-          "Active removal of accumulated fluid — protocolised diuresis ± ultrafiltration; target a negative balance"
+          "Active removal of accumulated fluid — protocolized diuresis ± ultrafiltration; target a negative balance"
         ]
       ]
     },
@@ -184,15 +184,15 @@
         "Gate check first: only de-resuscitate once shock has resolved — vasopressors off or clearly weaning, lactate cleared, extremities warm, urine output and mentation adequate. A patient still in the resuscitation or optimization phase should not be diuresed.",
         "Own the balance: chart a running cumulative balance, weigh daily, and set an explicit target (e.g. −0.5 to −2 L/day, or a weight target).",
         "Cut the inputs: stop maintenance fluids, switch to enteral free water, concentrate vasoactive and antibiotic infusions, review diluent volumes and blood-product load.",
-        "Diurese: loop diuretic by intermittent bolus or continuous infusion (DOSE trial: no outcome difference between the two, so choose by practicality). For diuretic resistance, add sequential nephron blockade — a thiazide (metolazone or IV chlorothiazide), acetazolamide (ADVOR: improved decongestion in acute HF), or hypertonic saline plus high-dose furosemide in selected patients. Add albumin only if hypoalbuminaemic and diuretic-resistant.",
-        "Ultrafiltration is for true diuretic failure or refractory oliguria, not first-line (CARRESS-HF favoured stepped pharmacologic care).",
-        "Reassess against a stop rule: rising lactate, falling cardiac output or stroke-volume variation climbing, new hypotension, acute rise in creatinine, hypernatraemia or a worsening metabolic alkalosis all mean back off."
+        "Diurese: loop diuretic by intermittent bolus or continuous infusion (DOSE trial: no outcome difference between the two, so choose by practicality). For diuretic resistance, add sequential nephron blockade — a thiazide (metolazone or IV chlorothiazide), acetazolamide (ADVOR: improved decongestion in acute HF), or hypertonic saline plus high-dose furosemide in selected patients. Add albumin only if hypoalbuminemic and diuretic-resistant.",
+        "Ultrafiltration is for true diuretic failure or refractory oliguria, not first-line (CARRESS-HF favored stepped pharmacologic care).",
+        "Reassess against a stop rule: rising lactate, falling cardiac output or stroke-volume variation climbing, new hypotension, acute rise in creatinine, hypernatremia or a worsening metabolic alkalosis all mean back off."
       ]
     },
     {
       "type": "callout",
       "tone": "danger",
-      "text": "Over-diuresis causes intravascular depletion, low output, prerenal AKI and hypoperfusion — you can convert a congested-but-perfusing patient into a dry, shocked one. The goal is euvolaemia, not the most negative balance achievable. Congestion and hypoperfusion can coexist; decongest the venous side while defending MAP and perfusion, and stop when either endpoint is met."
+      "text": "Over-diuresis causes intravascular depletion, low output, prerenal AKI and hypoperfusion — you can convert a congested-but-perfusing patient into a dry, shocked one. The goal is euvolemia, not the most negative balance achievable. Congestion and hypoperfusion can coexist; decongest the venous side while defending MAP and perfusion, and stop when either endpoint is met."
     },
     {
       "type": "heading",
@@ -204,8 +204,8 @@
       "items": [
         "As a trigger: a plethoric IVC with VExUS Grade 2-3 in a patient with AKI or a stalled wean supports that congestion is contributing and that decongestion is reasonable to attempt.",
         "As a monitor: repeat VExUS every 12-24 h through active diuresis — improving grade (portal pulsatility falling, hepatic S wave recovering, renal Doppler becoming continuous) is objective evidence the strategy is working.",
-        "As a brake interpretation aid: if the VExUS grade has normalised but the patient is still oliguric, the problem is no longer venous congestion — reassess for hypoperfusion, intrinsic AKI or obstruction rather than pushing more diuretic.",
-        "Caveat: VExUS-guided management has not yet been shown in a randomised trial to change mortality or renal recovery. It refines the assessment; it does not replace the fluid-balance chart, the perfusion exam, or clinical judgement about the phase the patient is in."
+        "As a brake interpretation aid: if the VExUS grade has normalized but the patient is still oliguric, the problem is no longer venous congestion — reassess for hypoperfusion, intrinsic AKI or obstruction rather than pushing more diuretic.",
+        "Caveat: VExUS-guided management has not yet been shown in a randomized trial to change mortality or renal recovery. It refines the assessment; it does not replace the fluid-balance chart, the perfusion exam, or clinical judgement about the phase the patient is in."
       ]
     },
     {
@@ -218,7 +218,7 @@
       "items": [
         "FACTT (NEJM 2006, ARDS): a conservative fluid strategy gave more ventilator-free and ICU-free days than a liberal strategy, with no increase in shock or dialysis and no mortality difference — the foundational trial for keeping recovering patients dry.",
         "CLASSIC (NEJM 2022) and CLOVERS (NEJM 2023): in septic shock, a restrictive IV-fluid strategy did not reduce mortality versus liberal fluids, but did not harm — restriction is safe, benefit is on secondary endpoints.",
-        "Protocolised de-resuscitation cohorts (e.g. Bissell 2020, RADAR-2): associated with more ventilator-free days and faster fluid-balance correction; a mortality benefit is not established.",
+        "Protocolized de-resuscitation cohorts (e.g. Bissell 2020, RADAR-2): associated with more ventilator-free days and faster fluid-balance correction; a mortality benefit is not established.",
         "VExUS: Beaubien-Souligny 2020 derived the score and linked Grade 3 to post-cardiac-surgery AKI; subsequent case series and small studies support it as a congestion measure, with mixed performance outside cardiac surgery and RCTs of VExUS-guided care still pending.",
         "ADVOR (NEJM 2022) and DOSE (NEJM 2011): acetazolamide add-on improves decongestion in acute HF; bolus vs infusion furosemide is a wash — informs the diuretic tactics above."
       ]

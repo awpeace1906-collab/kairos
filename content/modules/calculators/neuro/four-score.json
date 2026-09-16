@@ -87,7 +87,7 @@
           "points": 4
         },
         {
-          "label": "3 — localising to pain",
+          "label": "3 — localizing to pain",
           "points": 3
         },
         {
@@ -99,7 +99,7 @@
           "points": 1
         },
         {
-          "label": "0 — no response to pain, or generalised myoclonus status",
+          "label": "0 — no response to pain, or generalized myoclonus status",
           "points": 0
         }
       ]
@@ -151,7 +151,7 @@
           "points": 1
         },
         {
-          "label": "0 — breathes at ventilator rate or apnoea",
+          "label": "0 — breathes at ventilator rate or apnea",
           "points": 0
         }
       ]

@@ -55,12 +55,12 @@
     {
       "version": 1,
       "date": "2026-09-02",
-      "change": "Initial entry — the ECG-progression table, the stabilise → shift → eliminate ladder with doses and onset times, BRASH syndrome, and the bicarbonate / calcium-salt caveats."
+      "change": "Initial entry — the ECG-progression table, the stabilize → shift → eliminate ladder with doses and onset times, BRASH syndrome, and the bicarbonate / calcium-salt caveats."
     }
   ],
-  "summary": "Treat empirically the moment there are ECG changes — do NOT wait for the repeat lab. K⁺ > 6.5 with ECG changes is immediately life-threatening. The sequence is STABILISE the membrane (calcium — buys 30–60 min, does NOT lower K⁺) → SHIFT K⁺ intracellularly (insulin + dextrose, albuterol) → ELIMINATE it (GI binder, diuresis, dialysis).",
-  "whyThisMatters": "Hyperkalaemia can go from an abnormal lab to a sine-wave arrest in minutes, and the ECG — not the number — is the trigger to act. Waiting for a repeat potassium before treating a patient who already has ECG changes is a recognised, avoidable death.",
-  "clinicalTakeaway": "At the first ECG change, give calcium immediately to stabilise the membrane (it buys 30–60 min and does not lower K⁺). Then shift K⁺ with insulin plus dextrose and nebulised albuterol, and eliminate it with a GI binder, diuresis, or dialysis. Recheck glucose after the insulin.",
+  "summary": "Treat empirically the moment there are ECG changes — do NOT wait for the repeat lab. K⁺ > 6.5 with ECG changes is immediately life-threatening. The sequence is STABILIZE the membrane (calcium — buys 30–60 min, does NOT lower K⁺) → SHIFT K⁺ intracellularly (insulin + dextrose, albuterol) → ELIMINATE it (GI binder, diuresis, dialysis).",
+  "whyThisMatters": "Hyperkalemia can go from an abnormal lab to a sine-wave arrest in minutes, and the ECG — not the number — is the trigger to act. Waiting for a repeat potassium before treating a patient who already has ECG changes is a recognized, avoidable death.",
+  "clinicalTakeaway": "At the first ECG change, give calcium immediately to stabilize the membrane (it buys 30–60 min and does not lower K⁺). Then shift K⁺ with insulin plus dextrose and nebulized albuterol, and eliminate it with a GI binder, diuresis, or dialysis. Recheck glucose after the insulin.",
   "body": [
     {
       "type": "heading",
@@ -95,12 +95,12 @@
     {
       "type": "callout",
       "tone": "danger",
-      "text": "ECG changes correlate poorly with the absolute number — a normal ECG does not exclude dangerous hyperkalaemia, and any ECG change is an indication to give calcium NOW."
+      "text": "ECG changes correlate poorly with the absolute number — a normal ECG does not exclude dangerous hyperkalemia, and any ECG change is an indication to give calcium NOW."
     },
     {
       "type": "heading",
       "level": 2,
-      "text": "1 — Stabilise the membrane"
+      "text": "1 — Stabilize the membrane"
     },
     {
       "type": "list",
@@ -125,17 +125,17 @@
         [
           "Regular insulin + dextrose",
           "10 units IV + D50W 50 mL (25 g dextrose). If BG > 250: omit the dextrose",
-          "Onset 15–30 min; lowers K⁺ 0.5–1.5 for 4–6 h. Monitor BG hourly — delayed hypoglycaemia is common (consider a D10 infusion)"
+          "Onset 15–30 min; lowers K⁺ 0.5–1.5 for 4–6 h. Monitor BG hourly — delayed hypoglycemia is common (consider a D10 infusion)"
         ],
         [
-          "Albuterol nebulised",
+          "Albuterol nebulized",
           "10–20 mg (10–20× a standard 2.5 mg vial, stacked)",
           "Onset ~30 min; lowers K⁺ 0.5–1.5; additive to insulin. Causes tachycardia — cautious use if arrhythmia-prone"
         ],
         [
           "Sodium bicarbonate",
           "50–100 mEq IV",
-          "ONLY effective in a metabolic acidosis — multiple RCTs / meta-analyses (incl. NEJM 2018) show minimal effect in non-acidotic patients. Not a routine agent"
+          "ONLY effective in a metabolic acidosis — multiple RCTs / meta-analyzes (incl. NEJM 2018) show minimal effect in non-acidotic patients. Not a routine agent"
         ]
       ]
     },
@@ -161,14 +161,14 @@
         ],
         [
           "Dialysis",
-          "Emergent haemodialysis — definitive removal. Indicated for oliguric AKI, CKD stage 4–5, or K⁺ > 6.5 refractory to the above. Call nephrology immediately"
+          "Emergent hemodialysis — definitive removal. Indicated for oliguric AKI, CKD stage 4–5, or K⁺ > 6.5 refractory to the above. Call nephrology immediately"
         ]
       ]
     },
     {
       "type": "callout",
       "tone": "warning",
-      "text": "BRASH syndrome: Bradycardia + Renal failure + AV block + Shock + Hyperkalaemia — bradycardia disproportionate to the K⁺ level and resistant to atropine, from synergy between AV-nodal agents (beta-blockers, diltiazem, verapamil) and hyperkalaemia. Treat the hyperkalaemia aggressively (calcium, insulin/dextrose, fluids ± dialysis) and treat the offending drug as a cofactor — this is not primary conduction disease."
+      "text": "BRASH syndrome: Bradycardia + Renal failure + AV block + Shock + Hyperkalemia — bradycardia disproportionate to the K⁺ level and resistant to atropine, from synergy between AV-nodal agents (beta-blockers, diltiazem, verapamil) and hyperkalemia. Treat the hyperkalemia aggressively (calcium, insulin/dextrose, fluids ± dialysis) and treat the offending drug as a cofactor — this is not primary conduction disease."
     }
   ],
   "related": [

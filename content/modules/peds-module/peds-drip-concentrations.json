@@ -22,7 +22,7 @@
     { "type": "heading", "level": 2, "text": "Two approaches" },
     { "type": "list", "items": [
       "Standard concentration (preferred, safest): every patient gets the same bag concentration for a given drug; the pump rate varies. Fewer compounding errors, supports smart-pump limits. Use the S4S concentrations.",
-      "Rule of 6 (legacy, for improvised situations): to get 1 mL/hr = 0.1 mcg/kg/min, put (0.6 × weight in kg) mg of drug into a total of 100 mL. For 1 mL/hr = 1 mcg/kg/min, use (6 × weight) mg in 100 mL. Requires an individualised bag per patient — error-prone; avoid where standard concentrations exist."
+      "Rule of 6 (legacy, for improvised situations): to get 1 mL/hr = 0.1 mcg/kg/min, put (0.6 × weight in kg) mg of drug into a total of 100 mL. For 1 mL/hr = 1 mcg/kg/min, use (6 × weight) mg in 100 mL. Requires an individualized bag per patient — error-prone; avoid where standard concentrations exist."
     ] },
     { "type": "heading", "level": 2, "text": "Common infusions" },
     { "type": "table",
@@ -47,7 +47,7 @@
     },
     { "type": "heading", "level": 2, "text": "Rate conversion" },
     { "type": "text", "text": "Rate (mL/hr) = dose (mcg/kg/min) × weight (kg) × 60 ÷ concentration (mcg/mL). For a dose in mcg/kg/hr, drop the × 60. The Weight-Based Infusion Rate calculator does this — pick a concentration above, enter the target dose and weight." },
-    { "type": "callout", "tone": "warning", "text": "Concentrations vary by institution and by fluid-restriction needs (a neonate or a cardiac patient may need a 2–4× concentrated bag). Always confirm against your unit's standard-concentration list and the smart-pump library. Prostaglandin E1 causes apnoea — have airway support ready when starting it." }
+    { "type": "callout", "tone": "warning", "text": "Concentrations vary by institution and by fluid-restriction needs (a neonate or a cardiac patient may need a 2–4× concentrated bag). Always confirm against your unit's standard-concentration list and the smart-pump library. Prostaglandin E1 causes apnea — have airway support ready when starting it." }
   ],
   "buildNote": "Companion to the peds-drip-rate formula calculator. Standard concentrations per Standardize 4 Safety; ranges are usual starting/PICU ranges, not caps."
 }

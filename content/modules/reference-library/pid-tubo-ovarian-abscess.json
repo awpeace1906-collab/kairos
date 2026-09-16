@@ -51,7 +51,7 @@
     {
       "version": 1,
       "date": "2026-09-03",
-      "change": "Initial entry — minimum diagnostic criteria, hospitalisation indications, inpatient/outpatient regimens, and TOA drainage indications."
+      "change": "Initial entry — minimum diagnostic criteria, hospitalization indications, inpatient/outpatient regimens, and TOA drainage indications."
     }
   ],
   "summary": "Treat empirically at a low threshold: uterine OR adnexal OR cervical motion tenderness in a sexually active patient at risk is enough to start antibiotics — the cost of a missed PID is infertility and chronic pain. All regimens now include metronidazole for anaerobic coverage.",
@@ -67,7 +67,7 @@
       "type": "list",
       "items": [
         "Uterine tenderness, OR adnexal tenderness, OR cervical motion tenderness — in a sexually active patient at risk.",
-        "Supportive (not required): oral temp > 38.3 °C, mucopurulent cervical discharge, elevated CRP/ESR, WBC > 10k, positive gonorrhoea/chlamydia NAAT."
+        "Supportive (not required): oral temp > 38.3 °C, mucopurulent cervical discharge, elevated CRP/ESR, WBC > 10k, positive gonorrhea/chlamydia NAAT."
       ]
     },
     {
@@ -80,7 +80,7 @@
       "items": [
         "PID clinical picture PLUS a pelvic mass on exam or imaging (TVUS or CT).",
         "CT is preferred when the diagnosis is uncertain — shows abscess walls, septations, and complexity.",
-        "Hospitalise for: TOA, inability to exclude a surgical emergency, pregnancy, severe illness, failure of outpatient therapy, or adherence concerns."
+        "Hospitalize for: TOA, inability to exclude a surgical emergency, pregnancy, severe illness, failure of outpatient therapy, or adherence concerns."
       ]
     },
     {

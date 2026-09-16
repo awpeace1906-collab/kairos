@@ -35,7 +35,7 @@
         ["2 yr", "Runs, jumps, kicks a ball, up steps", "2-word phrases", "Parallel play"],
         ["3 yr", "Pedals a tricycle", "3-word sentences, ~ 75% intelligible to a stranger", "Toilet trained"],
         ["4 yr", "Hops on one foot", "Speaks clearly, tells stories", "Cooperative, imaginative play"],
-        ["5 yr", "Skips, balances well", "Counts, knows colours", "Follows rules in games"]
+        ["5 yr", "Skips, balances well", "Counts, knows colors", "Follows rules in games"]
       ]
     },
     { "type": "heading", "level": 2, "text": "Milestones — CDC/AAP 2022 (75th %ile, current screening)" },

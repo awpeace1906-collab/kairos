@@ -57,7 +57,7 @@
   "settings": [
     "ED"
   ],
-  "purpose": "Frames an acute salicylate level against management thresholds. NOTE: the Done nomogram is unreliable (invalid with chronic use, enteric-coated or sustained-release product, ongoing absorption, acidaemia, or renal failure) and is NOT recommended — decisions rest on the clinical picture, acid–base status, and SERIAL levels every 2 h until clearly falling.",
+  "purpose": "Frames an acute salicylate level against management thresholds. NOTE: the Done nomogram is unreliable (invalid with chronic use, enteric-coated or sustained-release product, ongoing absorption, acidemia, or renal failure) and is NOT recommended — decisions rest on the clinical picture, acid–base status, and SERIAL levels every 2 h until clearly falling.",
   "inputs": [
     {
       "key": "level",
@@ -104,14 +104,14 @@
       "forKey": "level",
       "min": 30,
       "max": 49.9,
-      "label": "30–50 mg/dL — mild toxicity (tinnitus, nausea, tachypnoea, primary respiratory alkalosis with a metabolic acidosis). Start IV fluids for volume/losses, give glucose-containing fluid (neuroglycopenia occurs with normal serum glucose), begin serum + urine alkalinisation (sodium bicarbonate infusion, target urine pH 7.5–8), replace potassium (alkalinisation fails if hypokalaemic), repeat level q2h",
+      "label": "30–50 mg/dL — mild toxicity (tinnitus, nausea, tachypnea, primary respiratory alkalosis with a metabolic acidosis). Start IV fluids for volume/losses, give glucose-containing fluid (neuroglycopenia occurs with normal serum glucose), begin serum + urine alkalinization (sodium bicarbonate infusion, target urine pH 7.5–8), replace potassium (alkalinization fails if hypokalemic), repeat level q2h",
       "severity": "moderate"
     },
     {
       "forKey": "level",
       "min": 50,
       "max": 79.9,
-      "label": "50–80 mg/dL — moderate to severe toxicity. Aggressive alkalinisation and K repletion; treat hyperthermia; get a blood gas and lactate. Consult toxicology and nephrology early. Haemodialysis if: altered mental status, cerebral or pulmonary oedema, renal failure, level rising despite alkalinisation, or pH ≤ 7.20",
+      "label": "50–80 mg/dL — moderate to severe toxicity. Aggressive alkalinization and K repletion; treat hyperthermia; get a blood gas and lactate. Consult toxicology and nephrology early. Hemodialysis if: altered mental status, cerebral or pulmonary edema, renal failure, level rising despite alkalinization, or pH ≤ 7.20",
       "disposition": "Toxicology + nephrology; prepare for HD",
       "severity": "high"
     },
@@ -119,8 +119,8 @@
       "forKey": "level",
       "min": 80,
       "max": 200,
-      "label": "≥ 80 mg/dL (acute) — HAEMODIALYSIS indicated regardless of symptoms (EXTRIP: ≥ 90 mg/dL, or ≥ 80 with impaired kidney function). Also dialyse for any altered mental status, ARDS/pulmonary oedema needing oxygen, or a pH ≤ 7.20. Continue alkalinisation and never allow the pH to fall — if intubation is unavoidable, match the pre-intubation minute ventilation and give bicarbonate, or sudden death can follow",
-      "disposition": "Haemodialysis",
+      "label": "≥ 80 mg/dL (acute) — HEMODIALYSIS indicated regardless of symptoms (EXTRIP: ≥ 90 mg/dL, or ≥ 80 with impaired kidney function). Also dialyse for any altered mental status, ARDS/pulmonary edema needing oxygen, or a pH ≤ 7.20. Continue alkalinization and never allow the pH to fall — if intubation is unavoidable, match the pre-intubation minute ventilation and give bicarbonate, or sudden death can follow",
+      "disposition": "Hemodialysis",
       "severity": "high"
     }
   ],

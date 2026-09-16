@@ -61,7 +61,7 @@
   ],
   "summary": "Two patients — manage the MOTHER first; do not monitor or resuscitate the fetus during the arrest, and remove the fetal monitors. From 20 weeks (fundus at/above the umbilicus): continuous manual left uterine displacement, IV/IO access ABOVE the diaphragm, and prepare for a resuscitative cesarean delivery to be done AT the arrest site within 4–5 minutes.",
   "whyThisMatters": "Maternal arrest is two patients, and the fatal instinct is to split attention onto the fetus during the arrest. From 20 weeks the aortocaval compression and the resuscitative-hysterotomy window make this a distinct algorithm with a hard clock.",
-  "clinicalTakeaway": "Resuscitate the mother — remove the fetal monitors, don't monitor the fetus during the arrest. From 20 weeks (fundus at/above the umbilicus): continuous manual left uterine displacement, IV/IO access above the diaphragm, and start a resuscitative caesarean AT the bedside by 4–5 minutes if there is no ROSC. Work BAACC TO LIFE for the cause.",
+  "clinicalTakeaway": "Resuscitate the mother — remove the fetal monitors, don't monitor the fetus during the arrest. From 20 weeks (fundus at/above the umbilicus): continuous manual left uterine displacement, IV/IO access above the diaphragm, and start a resuscitative cesarean AT the bedside by 4–5 minutes if there is no ROSC. Work BAACC TO LIFE for the cause.",
   "body": [
     {
       "type": "heading",
@@ -71,15 +71,15 @@
     {
       "type": "list",
       "items": [
-        "B — Bleeding / haemorrhage (PPH, abruption, uterine rupture)",
-        "A — Anaesthesia complications (high spinal, local-anaesthetic systemic toxicity)",
+        "B — Bleeding / hemorrhage (PPH, abruption, uterine rupture)",
+        "A — Anesthesia complications (high spinal, local-anesthetic systemic toxicity)",
         "A — Acute cardiopulmonary (PE, MI, cardiomyopathy, ARDS, amniotic fluid embolism)",
-        "C — Cardiac arrhythmia / electrolyte (hyperkalaemia, DKA, hypokalaemia)",
+        "C — Cardiac arrhythmia / electrolyte (hyperkalemia, DKA, hypokalemia)",
         "C — Cerebrovascular / CNS (stroke, eclampsia, seizure)",
         "T — Trauma / toxins / overdose (magnesium toxicity, opioids)",
         "O — Other obstetric (amniotic fluid embolism, uterine inversion, sepsis)",
         "L — Labelling (check every reproductive-age female for pregnancy)",
-        "I — Ions / glucose (DKA, hypo-/hyperglycaemia)",
+        "I — Ions / glucose (DKA, hypo-/hyperglycemia)",
         "F — Fever / sepsis (Group A Strep — can kill in 2–8 h)",
         "E — Emergency hypertension / eclampsia"
       ]
@@ -130,11 +130,11 @@
     {
       "type": "callout",
       "tone": "danger",
-      "text": "If there is no ROSC by ~4 minutes of a witnessed maternal arrest with a fundus at/above the umbilicus, START the RCD so delivery is complete by ~5 minutes. Do it AT the arrest site — do NOT transport to an OR. RCD relieves aortocaval compression → autotransfusion of ~500 mL → > 50% chance of maternal ROSC; it is a maternal resuscitation manoeuvre first, a fetal one second. Continue CPR throughout. Vertical skin + uterine incision is fastest; minimal instruments; skip prep."
+      "text": "If there is no ROSC by ~4 minutes of a witnessed maternal arrest with a fundus at/above the umbilicus, START the RCD so delivery is complete by ~5 minutes. Do it AT the arrest site — do NOT transport to an OR. RCD relieves aortocaval compression → autotransfusion of ~500 mL → > 50% chance of maternal ROSC; it is a maternal resuscitation maneuver first, a fetal one second. Continue CPR throughout. Vertical skin + uterine incision is fastest; minimal instruments; skip prep."
     },
     {
       "type": "text",
-      "text": "Postpartum arrest and amniotic fluid embolism: consider AFE with sudden cardiovascular collapse + hypoxia + DIC in labour or immediately postpartum — supportive resuscitation, aggressive DIC correction (the 'A-OK' regimen — atropine, ondansetron, ketorolac — is described but unproven), early ECMO. Group A Strep sepsis in the peripartum period is fulminant — broad-spectrum antibiotics + clindamycin within the hour."
+      "text": "Postpartum arrest and amniotic fluid embolism: consider AFE with sudden cardiovascular collapse + hypoxia + DIC in labor or immediately postpartum — supportive resuscitation, aggressive DIC correction (the 'A-OK' regimen — atropine, ondansetron, ketorolac — is described but unproven), early ECMO. Group A Strep sepsis in the peripartum period is fulminant — broad-spectrum antibiotics + clindamycin within the hour."
     }
   ],
   "related": [

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T00:00:00Z",
+  "generatedAt": "2026-09-16T00:00:00Z",
   "entries": [
     {
       "id": "apfel-ponv",
@@ -188,7 +188,7 @@
         "premature 95 term 85 infant 80 child 75 adult male 70 female 65",
         "ABL = EBV x (Hi - Hf) / Hi",
         "maximum allowable blood loss before transfusion",
-        "haematocrit target",
+        "hematocrit target",
         "MABL",
         "ABL",
         "allowable blood loss",
@@ -251,8 +251,8 @@
         "reduced cervical spine mobility",
         "mouth opening under 3 cm",
         "coma GCS under 8",
-        "hypoxaemia SpO2 under 80",
-        "non-anaesthesiologist operator",
+        "hypoxemia SpO2 under 80",
+        "non-anesthesiologist operator",
         "score 3 or more predicts difficult intubation",
         "De Jong 2013",
         "MACOCHA",
@@ -6301,7 +6301,7 @@
         "peds CICO",
         "pediatric needle cricothyrotomy",
         "peds surgical airway",
-        "DAS paediatric guidelines"
+        "DAS pediatric guidelines"
       ],
       "contentType": "peds-tool",
       "route": "/peds-module/peds-resuscitation-decision-support/peds-difficult-airway",
@@ -6713,7 +6713,7 @@
         "awake intubation",
         "difficult airway",
         "physiologically difficult airway",
-        "topicalisation",
+        "topicalization",
         "dexmedetomidine",
         "ICU",
         "anesthesia"
@@ -6725,10 +6725,10 @@
         "glycopyrrolate",
         "HFNC",
         "DAS",
-        "awake fibreoptic intubation",
+        "awake fiberoptic intubation",
         "AFOI",
         "awake videolaryngoscopy",
-        "topicalisation airway",
+        "topicalization airway",
         "tube before sleep"
       ],
       "contentType": "procedure",
@@ -9764,7 +9764,7 @@
       "keywords": [
         "daily readiness screen PaO2 FiO2 150 PEEP 5 to 8 pH 7.25 minimal pressors cough mentation",
         "spontaneous breathing trial pressure support 5 to 8 or T-piece 30 to 120 minutes pass fail",
-        "rapid shallow breathing index RSBI respiratory rate over tidal volume litres under 105",
+        "rapid shallow breathing index RSBI respiratory rate over tidal volume liters under 105",
         "paired spontaneous awakening trial and spontaneous breathing trial ABC trial Girard",
         "cuff leak test under 110 mL or under 10 to 15 percent methylprednisolone 20 mg q4h four doses",
         "high risk extubation prophylactic HFNC or non-invasive ventilation not rescue NIV",
@@ -10580,7 +10580,7 @@
         "active phase arrest 4 h adequate contractions 6 h inadequate",
         "second stage 3 h nullip 4 h with epidural",
         "latent phase arrest is not an indication for cesarean",
-        "Bishop >= 8 favourable",
+        "Bishop >= 8 favorable",
         "Bishop < 6 ripen first",
         "labor curve",
         "Zhang curve",
@@ -10658,7 +10658,7 @@
         "string of pearls",
         "absent doppler flow sensitivity 60-74%",
         "normal doppler does not exclude",
-        "detorsion even if discoloured",
+        "detorsion even if discolored",
         "oophoropexy",
         "6-8 hour window",
         "adnexal torsion",
@@ -10743,12 +10743,12 @@
     },
     {
       "id": "csection-analgesia-prospect",
-      "title": "Post-Caesarean Analgesia (PROSPECT 2026)",
+      "title": "Post-Cesarean Analgesia (PROSPECT 2026)",
       "section": "Reference Library",
       "category": "Obstetric & Gynecologic",
       "tags": [
         "obstetric anesthesia",
-        "caesarean",
+        "cesarean",
         "post-operative analgesia",
         "intrathecal morphine",
         "fascial plane block",
@@ -10769,7 +10769,7 @@
         "PROSPECT c-section",
         "intrathecal morphine dose",
         "TAP block cesarean",
-        "post-caesarean multimodal analgesia"
+        "post-cesarean multimodal analgesia"
       ],
       "contentType": "reference",
       "route": "/reference-library/obstetric-gynecologic/csection-analgesia-prospect",
@@ -11026,7 +11026,7 @@
         "Donaldson grade 1 SpO2 under 94 or SBP fall over 20 percent grade 2 SpO2 under 88 or SBP fall over 40 or LOC grade 3 collapse CPR",
         "embolic shower fat marrow cement air bone debris pulmonary vascular obstruction right heart strain",
         "cemented femoral stem hip fracture hemiarthroplasty elderly pulmonary hypertension highest risk",
-        "prevention canal lavage retrograde cement gun distal vent minimise pressurisation FiO2 100 euvolaemia vasopressor ready",
+        "prevention canal lavage retrograde cement gun distal vent minimize pressurization FiO2 100 euvolemia vasopressor ready",
         "BCIS",
         "cement reaction",
         "PMMA reaction",
@@ -12235,7 +12235,7 @@
         "lung point 100% specific for pneumothorax",
         "barcode sign M-mode",
         "RUSH pump tank pipes",
-        "IVC < 1.5 cm collapsing hypovolaemia",
+        "IVC < 1.5 cm collapsing hypovolemia",
         "negative eFAST does not exclude solid organ injury",
         "eFAST",
         "FAST exam",
@@ -12422,7 +12422,7 @@
         "match extrinsic PEEP to 70-85% of intrinsic auto-PEEP",
         "eases triggering work",
         "avoid post-hypercapnic alkalosis",
-        "prioritise expiratory time",
+        "prioritize expiratory time",
         "watch flow-volume waveform return to baseline",
         "COPD ventilator settings",
         "AECOPD intubated",
@@ -12700,7 +12700,7 @@
         "waveform capnography gold standard",
         "tube tip 3-5 cm above carina",
         "propofol dexmedetomidine fentanyl",
-        "post-intubation hypotension reduce PEEP exclude tension PTX treat hypovolaemia mainstem",
+        "post-intubation hypotension reduce PEEP exclude tension PTX treat hypovolemia mainstem",
         "after RSI",
         "initial ventilator settings ED",
         "post-intubation hypotension",
@@ -12998,7 +12998,7 @@
       "keywords": [
         "DAS 2025 four plans",
         "SGA is now Plan B ahead of face mask",
-        "maximise first attempt success",
+        "maximize first attempt success",
         "DEVICE trial 85.1 vs 70.8 first pass",
         "MACOCHA score",
         "CAFG 3-attempt rule",
@@ -13253,7 +13253,7 @@
         "ED"
       ],
       "keywords": [
-        "minimise minute ventilation not airway pressure",
+        "minimize minute ventilation not airway pressure",
         "VT 5-8 mL/kg RR 10-14",
         "high inspiratory flow 60-100 L/min",
         "tolerate pH > 7.2",

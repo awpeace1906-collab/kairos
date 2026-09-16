@@ -50,7 +50,7 @@
     {
       "version": 1,
       "date": "2026-09-03",
-      "change": "Initial entry — 3-tier activation framework, CDC high/moderate-risk field triage, geriatric and paediatric adjustments, undertriage/overtriage targets."
+      "change": "Initial entry — 3-tier activation framework, CDC high/moderate-risk field triage, geriatric and pediatric adjustments, undertriage/overtriage targets."
     }
   ],
   "summary": "Undertriage is the dangerous error — when in doubt, activate up. In the patient ≥ 65, an SBP < 110 (not 90) already signals physiologic instability, and anticoagulation makes a minor mechanism dangerous. Children compensate until they crash — treat the mechanism and anatomy as the primary drivers.",
@@ -65,7 +65,7 @@
     {
       "type": "list",
       "items": [
-        "Physiologic: SBP < 90 at any point; shock index > 1; absent radial/femoral/carotid pulse; GCS < 9 without sedation; airway compromise or a field intubation; paediatric SBP < 70 + (2 × age).",
+        "Physiologic: SBP < 90 at any point; shock index > 1; absent radial/femoral/carotid pulse; GCS < 9 without sedation; airway compromise or a field intubation; pediatric SBP < 70 + (2 × age).",
         "Anatomic: penetrating injury to neck/chest/abdomen/proximal extremity; open or unstable pelvic fracture; amputation proximal to wrist/ankle; suspected spinal cord injury; a prehospital tourniquet; major vascular injury.",
         "Transfer: receiving blood products or > 1 L crystalloid for shock; intubated in transfer; acute decompensation en route."
       ]
@@ -100,14 +100,14 @@
     {
       "type": "list",
       "items": [
-        "HIGH-RISK (transport to the highest-level trauma centre): GCS ≤ 13; SBP < 90; RR < 10 or > 29; shock index > 1; any penetrating injury to head/neck/torso/proximal extremity; flail chest; ≥ 2 proximal long-bone fractures; crushed / degloved / mangled or amputated extremity proximal to wrist/ankle; pelvic fracture; open/depressed skull fracture; paralysis.",
-        "MODERATE-RISK (consider a trauma centre): falls > 20 ft (adult) or > 10 ft / 2–3× height (child); high-risk MVC (intrusion, ejection, death of an occupant, dashboard deformity); pedestrian/cyclist thrown or run over; motorcycle crash > 20 mph; plus age ≥ 65, anticoagulation/bleeding disorder, dialysis, pregnancy > 20 weeks, or EMS judgement."
+        "HIGH-RISK (transport to the highest-level trauma center): GCS ≤ 13; SBP < 90; RR < 10 or > 29; shock index > 1; any penetrating injury to head/neck/torso/proximal extremity; flail chest; ≥ 2 proximal long-bone fractures; crushed / degloved / mangled or amputated extremity proximal to wrist/ankle; pelvic fracture; open/depressed skull fracture; paralysis.",
+        "MODERATE-RISK (consider a trauma center): falls > 20 ft (adult) or > 10 ft / 2–3× height (child); high-risk MVC (intrusion, ejection, death of an occupant, dashboard deformity); pedestrian/cyclist thrown or run over; motorcycle crash > 20 mph; plus age ≥ 65, anticoagulation/bleeding disorder, dialysis, pregnancy > 20 weeks, or EMS judgement."
       ]
     },
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Targets: undertriage < 5% (sensitivity ≥ 95%), overtriage < 50%. Geriatric pitfalls — normal vitals masking major injury (beta-blockers blunt the HR), baseline cognitive impairment masking a GCS change, low-energy falls causing intracranial haemorrhage on anticoagulation, and rib fractures causing respiratory failure over 24–48 h. Paediatric — age-adjusted SBP = 70 + (2 × age); vitals stay normal until decompensation."
+      "text": "Targets: undertriage < 5% (sensitivity ≥ 95%), overtriage < 50%. Geriatric pitfalls — normal vitals masking major injury (beta-blockers blunt the HR), baseline cognitive impairment masking a GCS change, low-energy falls causing intracranial hemorrhage on anticoagulation, and rib fractures causing respiratory failure over 24–48 h. Pediatric — age-adjusted SBP = 70 + (2 × age); vitals stay normal until decompensation."
     }
   ]
 }

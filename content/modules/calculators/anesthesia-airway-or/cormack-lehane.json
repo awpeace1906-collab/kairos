@@ -15,7 +15,7 @@
   "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry — the modified 5-grade scheme. Cross-linked from the Airway Management Flow." }],
   "engine": "classification",
   "settings": ["OR", "Anesthesia"],
-  "purpose": "Standardised language for the laryngoscopic view actually obtained — for documentation and handoff, not prediction.",
+  "purpose": "Standardized language for the laryngoscopic view actually obtained — for documentation and handoff, not prediction.",
   "tiers": [
     { "label": "Grade 1", "description": "Full view of the glottis" },
     { "label": "Grade 2a", "description": "Partial view of the glottis" },

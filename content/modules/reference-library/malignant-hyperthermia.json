@@ -58,9 +58,9 @@
       "change": "Initial entry — trigger agents, early signs, and the MHAUS crisis sequence: dantrolene, stop triggers / switch to TIVA, active cooling, treat the metabolic consequences, 24-h ICU for recrudescence."
     }
   ],
-  "summary": "A hypermetabolic crisis of skeletal muscle triggered by volatile anaesthetics and succinylcholine in a susceptible patient (RYR1 / CACNA1S). A rising EtCO₂ despite adequate ventilation is the earliest reliable sign. Call the MHAUS hotline (US): 1-800-644-9737. Give dantrolene immediately and do not stop looking for it.",
-  "whyThisMatters": "MH is rare, fast, and lethal if the trigger is not recognised — and the earliest reliable sign, a rising EtCO₂ despite adequate ventilation, is easy to attribute to something else. Delay to dantrolene is the modifiable determinant of death.",
-  "clinicalTakeaway": "Stop all volatile agent and succinylcholine, hyperventilate with 100% O₂ on a clean circuit, and give dantrolene 2.5 mg/kg IV immediately, repeating until the hypermetabolism breaks. Call the MHAUS hotline (US 1-800-644-9737), treat hyperkalaemia and acidosis, and cool actively. Keep looking for it even if the picture is atypical.",
+  "summary": "A hypermetabolic crisis of skeletal muscle triggered by volatile anesthetics and succinylcholine in a susceptible patient (RYR1 / CACNA1S). A rising EtCO₂ despite adequate ventilation is the earliest reliable sign. Call the MHAUS hotline (US): 1-800-644-9737. Give dantrolene immediately and do not stop looking for it.",
+  "whyThisMatters": "MH is rare, fast, and lethal if the trigger is not recognized — and the earliest reliable sign, a rising EtCO₂ despite adequate ventilation, is easy to attribute to something else. Delay to dantrolene is the modifiable determinant of death.",
+  "clinicalTakeaway": "Stop all volatile agent and succinylcholine, hyperventilate with 100% O₂ on a clean circuit, and give dantrolene 2.5 mg/kg IV immediately, repeating until the hypermetabolism breaks. Call the MHAUS hotline (US 1-800-644-9737), treat hyperkalemia and acidosis, and cool actively. Keep looking for it even if the picture is atypical.",
   "body": [
     {
       "type": "heading",
@@ -71,7 +71,7 @@
       "type": "list",
       "items": [
         "TRIGGER: all volatile agents (sevoflurane, isoflurane, desflurane, halothane) and succinylcholine.",
-        "SAFE: propofol, ketamine, etomidate, opioids, benzodiazepines, non-depolarising NMBs, nitrous oxide, local anaesthetics, dexmedetomidine."
+        "SAFE: propofol, ketamine, etomidate, opioids, benzodiazepines, non-depolarising NMBs, nitrous oxide, local anesthetics, dexmedetomidine."
       ]
     },
     {
@@ -83,9 +83,9 @@
       "type": "list",
       "items": [
         "Unexplained rising EtCO₂ despite increasing minute ventilation — the first reliable sign.",
-        "Masseter spasm after succinylcholine, then generalised rigidity.",
-        "Tachycardia, tachypnoea, then a rapid temperature rise (> 1 °C per 5 min) — fever is often LATE.",
-        "Mixed metabolic + respiratory acidosis, hyperkalaemia, myoglobinuria, later rhabdomyolysis and DIC."
+        "Masseter spasm after succinylcholine, then generalized rigidity.",
+        "Tachycardia, tachypnea, then a rapid temperature rise (> 1 °C per 5 min) — fever is often LATE.",
+        "Mixed metabolic + respiratory acidosis, hyperkalemia, myoglobinuria, later rhabdomyolysis and DIC."
       ]
     },
     {
@@ -114,7 +114,7 @@
         ],
         [
           "4 — Treat the metabolic consequences",
-          "Bicarbonate for acidosis (guided by ABG). Hyperkalaemia: calcium, insulin + dextrose, albuterol (see the hyperkalaemia module). Amiodarone for ventricular arrhythmias — AVOID calcium-channel blockers with dantrolene (hyperkalaemia, cardiovascular collapse). Maintain urine output > 1–2 mL/kg/hr; alkalinise the urine for rhabdomyolysis."
+          "Bicarbonate for acidosis (guided by ABG). Hyperkalemia: calcium, insulin + dextrose, albuterol (see the hyperkalemia module). Amiodarone for ventricular arrhythmias — AVOID calcium-channel blockers with dantrolene (hyperkalemia, cardiovascular collapse). Maintain urine output > 1–2 mL/kg/hr; alkalinize the urine for rhabdomyolysis."
         ],
         [
           "5 — ICU ≥ 24 h",
@@ -125,7 +125,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "text": "Masseter spasm alone after succinylcholine, with no other signs, is not automatically MH — but it warrants stopping triggers, watching EtCO₂ / CK closely, and a low threshold to treat. A known-susceptible patient for elective surgery: use a vapour-free (flushed / activated-charcoal-filtered) machine and TIVA — dantrolene prophylaxis is NOT recommended, just immediately available."
+      "text": "Masseter spasm alone after succinylcholine, with no other signs, is not automatically MH — but it warrants stopping triggers, watching EtCO₂ / CK closely, and a low threshold to treat. A known-susceptible patient for elective surgery: use a vapor-free (flushed / activated-charcoal-filtered) machine and TIVA — dantrolene prophylaxis is NOT recommended, just immediately available."
     }
   ],
   "related": [

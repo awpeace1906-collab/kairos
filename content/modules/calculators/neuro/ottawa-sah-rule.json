@@ -45,7 +45,7 @@
   "settings": [
     "ED"
   ],
-  "purpose": "Rules OUT subarachnoid haemorrhage in alert (GCS 15) patients ≥ 15 years with a new, non-traumatic headache that reached maximum intensity within 1 hour. Highly sensitive (≈ 100%), low specificity — a screening rule, not a diagnostic one.",
+  "purpose": "Rules OUT subarachnoid hemorrhage in alert (GCS 15) patients ≥ 15 years with a new, non-traumatic headache that reached maximum intensity within 1 hour. Highly sensitive (≈ 100%), low specificity — a screening rule, not a diagnostic one.",
   "items": [
     {
       "key": "age40",
@@ -148,6 +148,6 @@
       "severity": "moderate"
     }
   ],
-  "notes": "Apply ONLY to: age ≥ 15, GCS 15, new severe atraumatic headache peaking within 1 h. EXCLUDES patients with new neuro deficit, prior aneurysm / SAH / brain tumour, or ≥ 3 similar headaches over > 6 months (established recurrent headache disorder). A non-contrast CT within 6 h of onset, read by a qualified radiologist, is itself ~ 100% sensitive for SAH and may stand alone.",
+  "notes": "Apply ONLY to: age ≥ 15, GCS 15, new severe atraumatic headache peaking within 1 h. EXCLUDES patients with new neuro deficit, prior aneurysm / SAH / brain tumor, or ≥ 3 similar headaches over > 6 months (established recurrent headache disorder). A non-contrast CT within 6 h of onset, read by a qualified radiologist, is itself ~ 100% sensitive for SAH and may stand alone.",
   "buildNote": "Rule — any positive criterion mandates workup; the count is not a graded risk."
 }

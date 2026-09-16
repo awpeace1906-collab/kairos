@@ -15,7 +15,7 @@
   "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md" }],
   "engine": "formula",
   "settings": ["ED", "ICU"],
-  "purpose": "Early, simple flag for occult hemorrhage / haemodynamic compromise before overt hypotension.",
+  "purpose": "Early, simple flag for occult hemorrhage / hemodynamic compromise before overt hypotension.",
   "inputs": [
     { "key": "hr", "label": "Heart rate", "type": "number", "unit": "bpm", "min": 20, "max": 250 },
     { "key": "sbp", "label": "Systolic BP", "type": "number", "unit": "mmHg", "min": 40, "max": 260 }

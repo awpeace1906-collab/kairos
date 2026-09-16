@@ -27,8 +27,8 @@
     { "key": "limbIschemia", "label": "Limb ischemia (double the points if ischemia time > 6 hours — options below already reflect this)", "options": [
       { "label": "Reduced pulse but normal perfusion — ≤ 6 h", "points": 1 },
       { "label": "Reduced pulse but normal perfusion — > 6 h", "points": 2 },
-      { "label": "Pulseless, paraesthesias, diminished capillary refill — ≤ 6 h", "points": 2 },
-      { "label": "Pulseless, paraesthesias, diminished capillary refill — > 6 h", "points": 4 },
+      { "label": "Pulseless, paresthesias, diminished capillary refill — ≤ 6 h", "points": 2 },
+      { "label": "Pulseless, paresthesias, diminished capillary refill — > 6 h", "points": 4 },
       { "label": "Cool, paralyzed, insensate, numb — ≤ 6 h", "points": 3 },
       { "label": "Cool, paralyzed, insensate, numb — > 6 h", "points": 6 }
     ] },
@@ -44,7 +44,7 @@
     ] }
   ],
   "interpretation": [
-    { "min": 0, "max": 6, "label": "MESS < 7 — historically associated with a salvageable limb. Low scores are the more reliable end of the score; proceed with limb-salvage assessment (vascular, orthopaedic, plastics) and revascularization if indicated", "disposition": "Salvage pathway", "severity": "low" },
+    { "min": 0, "max": 6, "label": "MESS < 7 — historically associated with a salvageable limb. Low scores are the more reliable end of the score; proceed with limb-salvage assessment (vascular, orthopedic, plastics) and revascularization if indicated", "disposition": "Salvage pathway", "severity": "low" },
     { "min": 7, "max": 14, "label": "MESS ≥ 7 — the commonly cited amputation-associated threshold, but multiple validation studies (including LEAP and combat-casualty data) show only modest sensitivity and specificity here. Do NOT use as an automatic indication for amputation — weigh mechanism, ischemia time, associated injuries, contamination, patient factors, and reconstructive resources with the surgical team", "disposition": "Individualized surgical decision", "severity": "high" }
   ],
   "notes": "Original derivation was retrospective in lower-extremity trauma (Johansen 1990). The prospective LEAP study found MESS (and the other limb-injury scores) did not reliably predict which limbs were ultimately amputated or which salvaged limbs did well functionally — a low score predicting salvage held up better than a high score predicting amputation. Blast, crush, and ballistic mechanisms, polytrauma, and massive-transfusion requirement independently raise amputation rates regardless of the MESS. Warm ischemia beyond ~6 h markedly worsens salvage odds — the ischemia component is doubled for that reason (already built into the options here). Not validated in children.",

@@ -58,7 +58,7 @@
     }
   ],
   "summary": "Five focused domains that change the anesthetic plan at the bedside: cardiac (induction agent choice, the intraoperative hypotension differential), gastric (aspiration risk before induction), airway (mark the cricothyroid membrane before a predicted difficult airway), lung (mainstem vs pneumothorax), and neuraxial (pre-scan the difficult back).",
-  "whyThisMatters": "A 60-second focused scan before induction changes the anaesthetic more often than any lab: it picks the induction agent, flags the full stomach, marks the cricothyroid membrane while there is still time, and pre-reads the difficult back — each a decision that is much worse to make after induction.",
+  "whyThisMatters": "A 60-second focused scan before induction changes the anesthetic more often than any lab: it picks the induction agent, flags the full stomach, marks the cricothyroid membrane while there is still time, and pre-reads the difficult back — each a decision that is much worse to make after induction.",
   "clinicalTakeaway": "Scan the five domains that change the plan: cardiac (agent choice, the hypotension differential), gastric (aspiration risk), airway (mark the cricothyroid membrane in a predicted difficult airway), lung (mainstem vs pneumothorax), and neuraxial (pre-scan the difficult back). Do it before you push drugs.",
   "body": [
     {
@@ -103,7 +103,7 @@
           "5",
           "IVC / fluid status",
           "Rotate 90° from view 4, sagittal",
-          "< 1.5 cm and collapsing = hypovolaemia"
+          "< 1.5 cm and collapsing = hypovolemia"
         ]
       ]
     },
@@ -117,7 +117,7 @@
       "items": [
         "LVEF by eyeball: good > 55% / moderate 30–55% / poor < 30% (EPSS > 8 mm suggests reduced EF) — guides induction agent and dose.",
         "Regional wall motion abnormality: document pre-op; may change the plan.",
-        "Pericardial effusion with RV diastolic + RA systolic collapse + IVC plethora = tamponade physiology — a strong caution against neuraxial if haemodynamically significant."
+        "Pericardial effusion with RV diastolic + RA systolic collapse + IVC plethora = tamponade physiology — a strong caution against neuraxial if hemodynamically significant."
       ]
     },
     {
@@ -134,7 +134,7 @@
       ],
       "rows": [
         [
-          "Hypovolaemia",
+          "Hypovolemia",
           "Hyperdynamic LV, walls kissing in systole, flat/collapsing IVC < 1.5 cm",
           "Volume"
         ],
@@ -166,7 +166,7 @@
         [
           "< 1.5 cm",
           "> 50%",
-          "Hypovolaemia — volume responsive"
+          "Hypovolemia — volume responsive"
         ],
         [
           "1.5–2.5 cm",
@@ -176,7 +176,7 @@
         [
           "1.5–2.5 cm",
           "< 50%",
-          "Euvolaemic"
+          "Euvolemic"
         ],
         [
           "> 2.5 cm",
@@ -194,7 +194,7 @@
       "type": "list",
       "items": [
         "Cricothyroid membrane: linear probe transverse, midline; slide caudally from the thyroid cartilage — the CTM is a hyperechoic flat line between thyroid and cricoid. Skin-mark it before induction in any predicted or known difficult airway (critical for scalpel-bougie FONA).",
-        "ETT confirmation — tracheal ring sign: transverse at the suprasternal notch, a single ring = tracheal, two rings ('snow globe') = oesophageal. More sensitive than capnography in low-flow states.",
+        "ETT confirmation — tracheal ring sign: transverse at the suprasternal notch, a single ring = tracheal, two rings ('snow globe') = esophageal. More sensitive than capnography in low-flow states.",
         "Post-intubation: bilateral anterior lung sliding = bilateral ventilation; unilateral = mainstem → withdraw 1–2 cm."
       ]
     },
@@ -237,18 +237,18 @@
         ],
         [
           "Bilateral B-lines",
-          "Pulmonary oedema",
+          "Pulmonary edema",
           "Diuresis, reduce fluids, increase PEEP"
         ],
         [
           "Barcode / stratosphere sign (M-mode)",
           "Pneumothorax confirmed",
-          "Decompress; find the lung point to localise"
+          "Decompress; find the lung point to localize"
         ],
         [
           "Absent sliding after CVC",
           "Iatrogenic pneumothorax",
-          "Chest tube vs needle per haemodynamics"
+          "Chest tube vs needle per hemodynamics"
         ],
         [
           "One-lung ventilation check",

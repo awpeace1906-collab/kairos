@@ -2,7 +2,7 @@
   "id": "csection-analgesia-prospect",
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
-  "title": "Post-Caesarean Analgesia (PROSPECT 2026)",
+  "title": "Post-Cesarean Analgesia (PROSPECT 2026)",
   "settingEmphasis": [
     "or"
   ],
@@ -11,11 +11,11 @@
     "PROSPECT c-section",
     "intrathecal morphine dose",
     "TAP block cesarean",
-    "post-caesarean multimodal analgesia"
+    "post-cesarean multimodal analgesia"
   ],
   "tags": [
     "obstetric anesthesia",
-    "caesarean",
+    "cesarean",
     "post-operative analgesia",
     "intrathecal morphine",
     "fascial plane block",
@@ -51,17 +51,17 @@
     {
       "version": 1,
       "date": "2026-09-02",
-      "change": "Initial entry — the 2026 PROSPECT six-domain recommendation for post-caesarean analgesia under neuraxial anaesthesia."
+      "change": "Initial entry — the 2026 PROSPECT six-domain recommendation for post-cesarean analgesia under neuraxial anesthesia."
     }
   ],
   "summary": "Three load-bearing pillars: (1) a single neuraxial long-acting opioid, (2) scheduled — not as-needed — paracetamol + NSAID, (3) a single IV dexamethasone dose after delivery. Everything else is an addition. Oral opioids are the rescue backstop, not a routine component.",
-  "whyThisMatters": "Post-caesarean analgesia fails when it is built on as-needed opioids instead of a scheduled multimodal base — the PROSPECT framework is three load-bearing pillars, and dropping any one of them is where the pain scores climb.",
+  "whyThisMatters": "Post-cesarean analgesia fails when it is built on as-needed opioids instead of a scheduled multimodal base — the PROSPECT framework is three load-bearing pillars, and dropping any one of them is where the pain scores climb.",
   "clinicalTakeaway": "Give a single neuraxial long-acting opioid, scheduled (not PRN) paracetamol plus an NSAID, and one IV dexamethasone dose after delivery. Oral opioids are the rescue backstop, not a routine component.",
   "body": [
     {
       "type": "heading",
       "level": 2,
-      "text": "Six-domain recommendation (elective caesarean under neuraxial anaesthesia)"
+      "text": "Six-domain recommendation (elective cesarean under neuraxial anesthesia)"
     },
     {
       "type": "table",
@@ -99,7 +99,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "text": "Operating principles: default to intrathecal morphine/diamorphine whenever neuraxial anaesthesia is the primary technique; schedule paracetamol + NSAID from the start (don't wait for the patient to ask); give the single dexamethasone dose after delivery; if intrathecal morphine isn't in the plan, default to a fascial plane block or wound infiltration rather than leaning harder on systemic opioids; treat surgical technique as part of the analgesic plan."
+      "text": "Operating principles: default to intrathecal morphine/diamorphine whenever neuraxial anesthesia is the primary technique; schedule paracetamol + NSAID from the start (don't wait for the patient to ask); give the single dexamethasone dose after delivery; if intrathecal morphine isn't in the plan, default to a fascial plane block or wound infiltration rather than leaning harder on systemic opioids; treat surgical technique as part of the analgesic plan."
     }
   ],
   "related": [
@@ -108,5 +108,5 @@
     "nerve-block-guide",
     "last-lipid-rescue"
   ],
-  "buildNote": "Tier 3, ~6-month review. Elective-caesarean-specific; emergency caesarean under GA and the failed-block scenario are separate."
+  "buildNote": "Tier 3, ~6-month review. Elective-cesarean-specific; emergency cesarean under GA and the failed-block scenario are separate."
 }

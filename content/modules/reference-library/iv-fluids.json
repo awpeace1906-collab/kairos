@@ -77,7 +77,7 @@
   ],
   "summary": "Match the fluid to the patient AND the setting. Balanced crystalloid is a sepsis-shaped default that does NOT transfer to TBI (saline wins there). D5W and half-normal are not resuscitation fluids. HES is avoided. Permissive hypotension outside TBI until hemorrhage is controlled.",
   "whyThisMatters": "Fluid choice is population-specific, and the biggest error is transferring a rule across settings — the balanced-crystalloid default from sepsis does not hold in TBI (saline wins there), and D5W or half-normal saline given as 'resuscitation' does nothing useful.",
-  "clinicalTakeaway": "Match the fluid to the patient and the setting: balanced crystalloid for sepsis, isotonic saline for TBI, blood products for haemorrhage. D5W and half-normal are maintenance/free-water fluids, not resuscitation. Avoid HES. Permissive hypotension until haemorrhage control, except in TBI.",
+  "clinicalTakeaway": "Match the fluid to the patient and the setting: balanced crystalloid for sepsis, isotonic saline for TBI, blood products for hemorrhage. D5W and half-normal are maintenance/free-water fluids, not resuscitation. Avoid HES. Permissive hypotension until hemorrhage control, except in TBI.",
   "body": [
     {
       "type": "heading",

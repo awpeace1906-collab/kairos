@@ -25,7 +25,7 @@
     "ED"
   ],
   "keywords": [
-    "minimise minute ventilation not airway pressure",
+    "minimize minute ventilation not airway pressure",
     "VT 5-8 mL/kg RR 10-14",
     "high inspiratory flow 60-100 L/min",
     "tolerate pH > 7.2",
@@ -55,9 +55,9 @@
       "change": "Initial entry — the controlled-hypoventilation strategy, initial settings, the monitoring triad, and the sedation/paralysis point."
     }
   ],
-  "summary": "This is NOT ARDS ventilation. The lung is not stiff — it is obstructed. The goal is to MINIMISE minute ventilation so an obstructed lung has time to fully exhale, accepting a high PaCO2 and a low pH. High peak pressures from airway resistance are tolerable; the plateau pressure is what matters.",
+  "summary": "This is NOT ARDS ventilation. The lung is not stiff — it is obstructed. The goal is to MINIMIZE minute ventilation so an obstructed lung has time to fully exhale, accepting a high PaCO2 and a low pH. High peak pressures from airway resistance are tolerable; the plateau pressure is what matters.",
   "whyThisMatters": "Ventilating severe asthma with ARDS logic — normal minute ventilation, low tolerated pressures — causes breath-stacking, dynamic hyperinflation, and PEA arrest. The obstructed lung needs time to exhale, not a normal PaCO₂.",
-  "clinicalTakeaway": "Deliberately minimise minute ventilation: low rate, long expiratory time, and accept a high PaCO₂ and low pH (permissive hypercapnia). Watch the plateau pressure, not the peak — high peak from airway resistance is fine. If the patient decompensates, disconnect and allow a full passive exhalation.",
+  "clinicalTakeaway": "Deliberately minimize minute ventilation: low rate, long expiratory time, and accept a high PaCO₂ and low pH (permissive hypercapnia). Watch the plateau pressure, not the peak — high peak from airway resistance is fine. If the patient decompensates, disconnect and allow a full passive exhalation.",
   "body": [
     {
       "type": "callout",
@@ -74,7 +74,7 @@
       "items": [
         "Tidal volume 5–8 mL/kg predicted body weight (deliberately on the low side).",
         "Respiratory rate 10–14/min — deliberately low, to lengthen expiratory time.",
-        "High inspiratory flow 60–100 L/min (shortens inspiratory time, maximises expiratory time). A square/constant flow pattern.",
+        "High inspiratory flow 60–100 L/min (shortens inspiratory time, maximizes expiratory time). A square/constant flow pattern.",
         "PEEP low (0–5). Extrinsic PEEP does not help the deeply obstructed asthmatic and can worsen hyperinflation.",
         "FiO2 to SpO2 ≥ 92%.",
         "Tolerate pH > 7.20; extreme cases have been managed to pH < 7.0 without apparent harm. Sodium bicarbonate is not routinely needed and can worsen intracellular acidosis."
@@ -108,7 +108,7 @@
     },
     {
       "type": "text",
-      "text": "Deep sedation, and usually a short course of neuromuscular blockade, are needed to stop the patient from fighting a strategy that deliberately hypoventilates them. Continue aggressive bronchodilators (continuous nebulised salbutamol, ipratropium), IV/IM magnesium, systemic steroids, and consider IV/IM adrenaline or an inhalational anaesthetic / ECMO in the refractory patient."
+      "text": "Deep sedation, and usually a short course of neuromuscular blockade, are needed to stop the patient from fighting a strategy that deliberately hypoventilates them. Continue aggressive bronchodilators (continuous nebulized salbutamol, ipratropium), IV/IM magnesium, systemic steroids, and consider IV/IM adrenaline or an inhalational anesthetic / ECMO in the refractory patient."
     }
   ]
 }

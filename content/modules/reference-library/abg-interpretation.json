@@ -88,7 +88,7 @@
     },
     {
       "type": "text",
-      "text": "P50 = the PaO₂ at which haemoglobin is 50% saturated — the single-number summary of where the whole curve sits. Normal adult P50 ≈ 26.6 mmHg (37 °C, pH 7.4). Lower P50 = left shift, higher O₂ affinity (fetal Hb ≈ 18–19; also alkalosis, hypothermia, low 2,3-DPG, carboxyhaemoglobin, methaemoglobin) — holds O₂ tighter, unloads less at the tissue. Higher P50 = right shift, lower affinity (acidosis, hypercapnia, fever, high 2,3-DPG) — favours tissue unloading."
+      "text": "P50 = the PaO₂ at which hemoglobin is 50% saturated — the single-number summary of where the whole curve sits. Normal adult P50 ≈ 26.6 mmHg (37 °C, pH 7.4). Lower P50 = left shift, higher O₂ affinity (fetal Hb ≈ 18–19; also alkalosis, hypothermia, low 2,3-DPG, carboxyhemoglobin, methemoglobin) — holds O₂ tighter, unloads less at the tissue. Higher P50 = right shift, lower affinity (acidosis, hypercapnia, fever, high 2,3-DPG) — favors tissue unloading."
     }
   ]
 }

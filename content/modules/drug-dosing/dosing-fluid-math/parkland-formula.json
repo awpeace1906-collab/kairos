@@ -29,5 +29,5 @@
   "interpretation": [
     { "forKey": "total24", "label": "This is a starting estimate only — titrate to a urine output of 0.5 mL/kg/h (adults) or 1 mL/kg/h (children < 30 kg).", "severity": "info" }
   ],
-  "notes": "Clock starts at the time of the burn, not arrival — subtract elapsed time when setting the first-8-hour rate. Modified Brooke (2 mL/kg/%TBSA) is an alternative lower-volume strategy some centres prefer."
+  "notes": "Clock starts at the time of the burn, not arrival — subtract elapsed time when setting the first-8-hour rate. Modified Brooke (2 mL/kg/%TBSA) is an alternative lower-volume strategy some centers prefer."
 }

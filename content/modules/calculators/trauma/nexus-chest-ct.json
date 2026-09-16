@@ -163,6 +163,6 @@
       "severity": "moderate"
     }
   ],
-  "notes": "Two versions exist: NEXUS Chest (CXR decision, uses a similar list) and NEXUS Chest CT (this one). 'Major' injury = aortic/great-vessel injury, rupture of a bronchus/diaphragm/oesophagus, haemopneumothorax needing a tube, ≥ 3 rib fractures, pulmonary contusion, sternal fracture with associated injury. The rule reduces CT use by ~ 25–37% depending on setting.",
+  "notes": "Two versions exist: NEXUS Chest (CXR decision, uses a similar list) and NEXUS Chest CT (this one). 'Major' injury = aortic/great-vessel injury, rupture of a bronchus/diaphragm/esophagus, hemopneumothorax needing a tube, ≥ 3 rib fractures, pulmonary contusion, sternal fracture with associated injury. The rule reduces CT use by ~ 25–37% depending on setting.",
   "buildNote": "Rule — any positive criterion → not low-risk."
 }

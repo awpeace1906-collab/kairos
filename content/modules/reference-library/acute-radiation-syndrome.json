@@ -112,7 +112,7 @@
     {
       "type": "list",
       "items": [
-        "Time from exposure to first vomiting is the single most useful early triage sign: onset within 10-30 min points to a potentially lethal dose (> 4 Gy), 1-2 h to a moderate dose (2-4 Gy), > 4 h or no vomiting to a mild dose (< 2 Gy). Diarrhoea, fever, hypotension, and early erythema within hours all mark a high dose.",
+        "Time from exposure to first vomiting is the single most useful early triage sign: onset within 10-30 min points to a potentially lethal dose (> 4 Gy), 1-2 h to a moderate dose (2-4 Gy), > 4 h or no vomiting to a mild dose (< 2 Gy). Diarrhea, fever, hypotension, and early erythema within hours all mark a high dose.",
         "Absolute lymphocyte count: draw a baseline and repeat every 6-12 h. Lymphocytes fall fastest and earliest of all lineages; the rate of decline over the first 24-48 h maps to dose (the Andrews nomogram) — a count still > 1.5 ×10⁹/L at 48 h is reassuring; < 0.5 predicts severe marrow injury.",
         "Cytogenetic biodosimetry (dicentric chromosome assay on peripheral lymphocytes) is the gold-standard dose estimate but takes days and specialised labs — send it, but triage on the prodrome and counts.",
         "There is no useful role for a whole-body survey meter reading as a dose estimate; it detects contamination, not absorbed dose."
@@ -135,19 +135,19 @@
         [
           "Hematopoietic",
           "~1-6 Gy",
-          "Prodrome (hours) → latent period (days to ~3 weeks, shorter at higher dose) → pancytopenia with nadir ~day 20-30; infection and haemorrhage are the threats",
+          "Prodrome (hours) → latent period (days to ~3 weeks, shorter at higher dose) → pancytopenia with nadir ~day 20-30; infection and hemorrhage are the threats",
           "Survivable with aggressive support + cytokines; LD50/60 without support ~3.5-4.5 Gy, higher with modern ICU care"
         ],
         [
           "Gastrointestinal",
           "~6-10 Gy",
-          "Prodrome within 1-2 h, short or absent latent period, then intractable vomiting and diarrhoea, mucosal denudation, fluid and electrolyte loss, bacterial translocation and sepsis over 1-2 weeks — overlaps with marrow failure",
+          "Prodrome within 1-2 h, short or absent latent period, then intractable vomiting and diarrhea, mucosal denudation, fluid and electrolyte loss, bacterial translocation and sepsis over 1-2 weeks — overlaps with marrow failure",
           "High mortality even with maximal support"
         ],
         [
           "Neurovascular (cardiovascular / CNS)",
           "> ~10 Gy (some sources > 20-30 Gy)",
-          "Vomiting within minutes, prostration, refractory hypotension, cerebral oedema, ataxia, seizures, coma; death in 24-72 h",
+          "Vomiting within minutes, prostration, refractory hypotension, cerebral edema, ataxia, seizures, coma; death in 24-72 h",
           "Uniformly fatal — comfort-focused care"
         ]
       ]
@@ -164,7 +164,7 @@
     {
       "type": "list",
       "items": [
-        "Priority order: address airway, breathing, circulation, and life-threatening haemorrhage FIRST. External contamination is not an emergency for the care team under standard PPE (gown, gloves, mask, eye protection) plus a dosimeter.",
+        "Priority order: address airway, breathing, circulation, and life-threatening hemorrhage FIRST. External contamination is not an emergency for the care team under standard PPE (gown, gloves, mask, eye protection) plus a dosimeter.",
         "Remove all clothing — this removes roughly 90% of external contamination — and bag it (labelled) for dosimetry. Then wash contaminated skin and hair with soap and lukewarm water; do not abrade the skin or use hot water (increases absorption). Cover wounds before washing surrounding skin, and irrigate contaminated wounds and eyes.",
         "Survey with a Geiger-Müller or scintillation probe before and after decon to document and target it; aim to reduce counts to about twice background or a level that will not decrease further.",
         "Collect nasal swabs, wound swabs, and the first 24 h of urine and faeces if internal contamination is suspected — these drive the decorporation decision and dose estimate.",
@@ -179,11 +179,11 @@
     {
       "type": "list",
       "items": [
-        "Start a myeloid cytokine early (within ~24-72 h) when a significant marrow dose is likely — roughly > 2-3 Gy, or a lymphocyte count falling steeply: filgrastim, pegfilgrastim, or sargramostim (all FDA-approved for haematopoietic ARS). Continue until neutrophil recovery.",
-        "Thrombocytopenia: platelet transfusion for bleeding or a very low count; romiplostim is FDA-approved for haematopoietic ARS to support platelet recovery.",
+        "Start a myeloid cytokine early (within ~24-72 h) when a significant marrow dose is likely — roughly > 2-3 Gy, or a lymphocyte count falling steeply: filgrastim, pegfilgrastim, or sargramostim (all FDA-approved for hematopoietic ARS). Continue until neutrophil recovery.",
+        "Thrombocytopenia: platelet transfusion for bleeding or a very low count; romiplostim is FDA-approved for hematopoietic ARS to support platelet recovery.",
         "Transfuse leukoreduced, irradiated blood products (irradiation prevents transfusion-associated GVHD in an immunosuppressed host).",
         "Antimicrobial prophylaxis (fluoroquinolone ± antiviral/antifungal per local protocol) during expected neutropenia; treat neutropenic fever aggressively and empirically. Reverse (protective) isolation.",
-        "Allogeneic haematopoietic stem-cell transplant has a narrow role — a estimated dose roughly 7-10 Gy with survivable other-organ injury, no significant burns or trauma, and a donor available; outcomes historically poor."
+        "Allogeneic hematopoietic stem-cell transplant has a narrow role — a estimated dose roughly 7-10 Gy with survivable other-organ injury, no significant burns or trauma, and a donor available; outcomes historically poor."
       ]
     },
     {
@@ -212,12 +212,12 @@
         [
           "Plutonium, americium, curium, and other transuranics — weapons material, some industrial",
           "Ca-DTPA then Zn-DTPA (pentetate calcium/zinc trisodium)",
-          "Chelation; Ca-DTPA is more effective initially, switch to Zn-DTPA for prolonged courses (less trace-metal depletion). IV or nebulised for inhalation"
+          "Chelation; Ca-DTPA is more effective initially, switch to Zn-DTPA for prolonged courses (less trace-metal depletion). IV or nebulized for inhalation"
         ],
         [
           "Uranium",
           "Sodium bicarbonate",
-          "Alkalinises the urine to reduce uranyl-ion nephrotoxicity; maintain urine output. Uranium's chemical (renal) toxicity often outweighs its radiological hazard"
+          "Alkalinizes the urine to reduce uranyl-ion nephrotoxicity; maintain urine output. Uranium's chemical (renal) toxicity often outweighs its radiological hazard"
         ],
         [
           "Tritium (tritiated water)",
@@ -229,7 +229,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Combined injury — radiation plus trauma or burns — carries synergistic mortality: radiation impairs wound and fracture healing and the marrow dose blunts the response to infection. If surgery is needed, do the definitive procedure within the first ~48 hours (before the marrow nadir), or else delay it until haematologic recovery (around day 45 or later). Close wounds primarily when possible and minimise staged returns."
+      "text": "Combined injury — radiation plus trauma or burns — carries synergistic mortality: radiation impairs wound and fracture healing and the marrow dose blunts the response to infection. If surgery is needed, do the definitive procedure within the first ~48 hours (before the marrow nadir), or else delay it until hematologic recovery (around day 45 or later). Close wounds primarily when possible and minimize staged returns."
     },
     {
       "type": "callout",
@@ -244,5 +244,5 @@
     "crush-syndrome",
     "hemorrhagic-shock-mtp"
   ],
-  "buildNote": "Tier 2 (ARS management doctrine is stable; the cytokine approvals — filgrastim, sargramostim, pegfilgrastim, romiplostim for haematopoietic ARS — and decorporation availability shift, recheck against REMM). Completes the CBRN reference set (hazmat-scene-toxidromes, incendiary-chemical-burns, nerve-agent-toxicity, vesicant-toxicity, this). Dose figures are order-of-magnitude triage aids, not a substitute for formal biodosimetry. Countermeasure dosing (KI age table, Ca-/Zn-DTPA, Prussian blue, bicarbonate for uranium) is in `radiation-decorporation-dosing`."
+  "buildNote": "Tier 2 (ARS management doctrine is stable; the cytokine approvals — filgrastim, sargramostim, pegfilgrastim, romiplostim for hematopoietic ARS — and decorporation availability shift, recheck against REMM). Completes the CBRN reference set (hazmat-scene-toxidromes, incendiary-chemical-burns, nerve-agent-toxicity, vesicant-toxicity, this). Dose figures are order-of-magnitude triage aids, not a substitute for formal biodosimetry. Countermeasure dosing (KI age table, Ca-/Zn-DTPA, Prussian blue, bicarbonate for uranium) is in `radiation-decorporation-dosing`."
 }

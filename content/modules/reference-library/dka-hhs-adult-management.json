@@ -59,8 +59,8 @@
     }
   ],
   "summary": "Fluids first, then potassium, then insulin — in that order. DKA is an insulin-deficiency + ketoacid problem (fix the gap); HHS is a profound free-water deficit with little ketosis (fluid does most of the work, insulin is gentler). The number that kills is potassium: check it before the first unit of insulin, and never run insulin with a K < 3.3 mEq/L.",
-  "whyThisMatters": "Both present as sick, dry, hyperglycaemic patients, and the reflex — a big insulin bolus — is exactly wrong until you have a potassium and a litre of saline running. Insulin drives K intracellularly; a normal or low serum K at presentation is already a large total-body deficit, and pushing insulin into it causes the arrhythmia that turns a treatable metabolic emergency into an arrest. The other trap is stopping too early: normalising the glucose is not the endpoint — the anion gap (DKA) or the osmolality and mental status (HHS) are.",
-  "clinicalTakeaway": "Start 0.9% saline ~15-20 mL/kg (about 1 L) in the first hour while the labs run. Check potassium immediately: K < 3.3 → hold insulin and replace K 10-20 mEq/h until ≥ 3.3; K 3.3-5.2 → add 20-30 mEq K to each litre and keep it 4-5; K > 5.2 → insulin without added K, recheck in 2 h. Then regular insulin 0.1 unit/kg/h IV (a 0.1 unit/kg bolus is optional; skip it and use 0.14 unit/kg/h if you prefer). Add dextrose to the fluids once glucose falls below ~200 mg/dL (DKA) or ~250-300 (HHS) and keep the insulin running until the anion gap has closed / β-hydroxybutyrate < 0.6 mmol/L — then overlap subcutaneous insulin by 1-2 h before stopping the drip. Give bicarbonate only for a pH < 6.9. Always look for and treat the precipitant.",
+  "whyThisMatters": "Both present as sick, dry, hyperglycemic patients, and the reflex — a big insulin bolus — is exactly wrong until you have a potassium and a liter of saline running. Insulin drives K intracellularly; a normal or low serum K at presentation is already a large total-body deficit, and pushing insulin into it causes the arrhythmia that turns a treatable metabolic emergency into an arrest. The other trap is stopping too early: normalizing the glucose is not the endpoint — the anion gap (DKA) or the osmolality and mental status (HHS) are.",
+  "clinicalTakeaway": "Start 0.9% saline ~15-20 mL/kg (about 1 L) in the first hour while the labs run. Check potassium immediately: K < 3.3 → hold insulin and replace K 10-20 mEq/h until ≥ 3.3; K 3.3-5.2 → add 20-30 mEq K to each liter and keep it 4-5; K > 5.2 → insulin without added K, recheck in 2 h. Then regular insulin 0.1 unit/kg/h IV (a 0.1 unit/kg bolus is optional; skip it and use 0.14 unit/kg/h if you prefer). Add dextrose to the fluids once glucose falls below ~200 mg/dL (DKA) or ~250-300 (HHS) and keep the insulin running until the anion gap has closed / β-hydroxybutyrate < 0.6 mmol/L — then overlap subcutaneous insulin by 1-2 h before stopping the drip. Give bicarbonate only for a pH < 6.9. Always look for and treat the precipitant.",
   "body": [
     {
       "type": "heading",
@@ -115,7 +115,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "text": "Overlap is common — up to a third of hyperglycaemic crises are mixed DKA + HHS. Treat the acidosis as DKA and the osmolar/volume deficit as HHS. Use a POC β-hydroxybutyrate if available; urine ketones (acetoacetate) lag and can paradoxically rise as the patient improves."
+      "text": "Overlap is common — up to a third of hyperglycemic crises are mixed DKA + HHS. Treat the acidosis as DKA and the osmolar/volume deficit as HHS. Use a POC β-hydroxybutyrate if available; urine ketones (acetoacetate) lag and can paradoxically rise as the patient improves."
     },
     {
       "type": "heading",
@@ -153,7 +153,7 @@
     },
     {
       "type": "text",
-      "text": "Severe DKA, HHS, haemodynamic instability, a depressed conscious level, or a difficult airway → ICU / high-dependency care. JBDS markers of severity also include β-hydroxybutyrate > 6 mmol/L, GCS < 12, SpO₂ < 92%, SBP < 90, pulse > 100 or < 60, and a potassium < 3.5 on admission."
+      "text": "Severe DKA, HHS, hemodynamic instability, a depressed conscious level, or a difficult airway → ICU / high-dependency care. JBDS markers of severity also include β-hydroxybutyrate > 6 mmol/L, GCS < 12, SpO₂ < 92%, SBP < 90, pulse > 100 or < 60, and a potassium < 3.5 on admission."
     },
     {
       "type": "heading",
@@ -163,11 +163,11 @@
     {
       "type": "list",
       "items": [
-        "Isotonic crystalloid: 0.9% sodium chloride (balanced solutions such as Plasma-Lyte / Ringer's lactate are a reasonable alternative and may close the gap slightly faster with less hyperchloraemia).",
+        "Isotonic crystalloid: 0.9% sodium chloride (balanced solutions such as Plasma-Lyte / Ringer's lactate are a reasonable alternative and may close the gap slightly faster with less hyperchloremia).",
         "First hour: ~15-20 mL/kg (roughly 1 L in an average adult), faster and repeated for shock.",
         "Then ~250-500 mL/h, titrated to volume status, urine output, and the corrected sodium. Switch to 0.45% NaCl if the corrected Na is normal or high; stay on 0.9% if it is low.",
         "Total deficit is large — DKA ~100 mL/kg (~6 L), HHS ~100-220 mL/kg (~8-10 L). Replace over ~24 h in DKA and more slowly in HHS to avoid dropping the osmolality faster than ~3 mOsm/kg/h.",
-        "Add dextrose (D5W, or D10W if the glucose is falling fast) to the running fluid once glucose < ~200 mg/dL in DKA or < ~250-300 mg/dL in HHS, so the insulin can keep clearing ketones without hypoglycaemia."
+        "Add dextrose (D5W, or D10W if the glucose is falling fast) to the running fluid once glucose < ~200 mg/dL in DKA or < ~250-300 mg/dL in HHS, so the insulin can keep clearing ketones without hypoglycemia."
       ]
     },
     {
@@ -188,7 +188,7 @@
         ],
         [
           "3.3 - 5.2",
-          "Start insulin AND add 20-30 mEq K⁺ to each litre of fluid; target serum K⁺ 4-5. Recheck every 2-4 h."
+          "Start insulin AND add 20-30 mEq K⁺ to each liter of fluid; target serum K⁺ 4-5. Recheck every 2-4 h."
         ],
         [
           "> 5.2 (and adequate urine output)",
@@ -198,7 +198,7 @@
     },
     {
       "type": "text",
-      "text": "Every DKA/HHS patient has a whole-body potassium deficit (typically 3-5 mEq/kg) even when the serum level is normal or high — insulin, fluids, and correction of acidosis all drive K⁺ back into cells. Anticipate the fall. Replace phosphate only if PO₄ < 1 mg/dL with cardiac dysfunction, respiratory depression, or haemolytic anaemia (then some of the K⁺ can be given as potassium phosphate); routine phosphate repletion has no benefit and risks hypocalcaemia."
+      "text": "Every DKA/HHS patient has a whole-body potassium deficit (typically 3-5 mEq/kg) even when the serum level is normal or high — insulin, fluids, and correction of acidosis all drive K⁺ back into cells. Anticipate the fall. Replace phosphate only if PO₄ < 1 mg/dL with cardiac dysfunction, respiratory depression, or hemolytic anemia (then some of the K⁺ can be given as potassium phosphate); routine phosphate repletion has no benefit and risks hypocalcemia."
     },
     {
       "type": "heading",
@@ -213,7 +213,7 @@
         "Once dextrose is added, keep the insulin at ~0.05-0.1 unit/kg/h and titrate the dextrose (and rate) to hold glucose ~150-200 mg/dL (DKA) / ~250-300 (HHS) while the gap closes.",
         "HHS: insulin is an adjunct — start lower (~0.05 unit/kg/h) or even fluid-only initially; the glucose falls with rehydration alone and an aggressive drip drops the osmolality too fast.",
         "Subcutaneous rapid-acting insulin every 1-2 h is an option for MILD, uncomplicated DKA on a ward with close monitoring — not for moderate/severe DKA or HHS.",
-        "Do NOT stop the infusion when the glucose normalises. Continue until DKA has resolved, then overlap a long-acting SC insulin dose and wait 1-2 h before discontinuing the drip (no overlap = rebound ketoacidosis). Continue the patient's usual basal insulin throughout if they were already on it."
+        "Do NOT stop the infusion when the glucose normalizes. Continue until DKA has resolved, then overlap a long-acting SC insulin dose and wait 1-2 h before discontinuing the drip (no overlap = rebound ketoacidosis). Continue the patient's usual basal insulin throughout if they were already on it."
       ]
     },
     {
@@ -224,7 +224,7 @@
     {
       "type": "list",
       "items": [
-        "Bicarbonate: only for pH < 6.9 — 100 mmol NaHCO₃ in 400 mL water with 20 mEq KCl over 2 h, repeat until pH ≥ 7.0. No proven benefit at pH ≥ 6.9 and it worsens hypokalaemia and CSF acidosis.",
+        "Bicarbonate: only for pH < 6.9 — 100 mmol NaHCO₃ in 400 mL water with 20 mEq KCl over 2 h, repeat until pH ≥ 7.0. No proven benefit at pH ≥ 6.9 and it worsens hypokalemia and CSF acidosis.",
         "VTE prophylaxis: pharmacologic unless contraindicated (HHS in particular is highly prothrombotic).",
         "Identify and treat the precipitant: infection (the commonest — culture and consider empiric antibiotics if febrile/toxic), missed insulin or pump failure, new-onset diabetes, acute MI or stroke, pancreatitis, pregnancy, and drugs — corticosteroids, SGLT2 inhibitors (euglycemic DKA), atypical antipsychotics, sympathomimetics, high-dose thiazides.",
         "Hold SGLT2 inhibitors; they can sustain ketogenesis for days after the last dose, so continue the insulin + dextrose infusion longer and confirm ketone clearance by β-hydroxybutyrate, not glucose."
@@ -241,7 +241,7 @@
         "Bedside glucose hourly.",
         "Venous blood gas / electrolytes / anion gap (and β-hydroxybutyrate if available) at 2 h, then every 2-4 h until the gap has closed.",
         "Continuous cardiac monitoring while replacing potassium.",
-        "Hourly fluid balance; watch for fluid overload (elderly, cardiac/renal disease) and, in the young, for cerebral oedema (headache, falling GCS, bradycardia + hypertension — far more common in children; see peds-dka-management)."
+        "Hourly fluid balance; watch for fluid overload (elderly, cardiac/renal disease) and, in the young, for cerebral edema (headache, falling GCS, bradycardia + hypertension — far more common in children; see peds-dka-management)."
       ]
     },
     {
@@ -253,7 +253,7 @@
       "type": "list",
       "items": [
         "DKA resolved: glucose < 200 mg/dL AND two of — bicarbonate ≥ 15 mEq/L, venous pH > 7.3, anion gap ≤ 12 mEq/L. (β-hydroxybutyrate < 0.6 mmol/L is the cleanest single marker where available.)",
-        "HHS resolved: effective osmolality normalising, normal mental status, and adequate urine output — this takes longer, often 24-48 h.",
+        "HHS resolved: effective osmolality normalizing, normal mental status, and adequate urine output — this takes longer, often 24-48 h.",
         "Transition: when the patient is eating and DKA has resolved, give the first SC dose (their home regimen, or ~0.5-0.6 unit/kg/day insulin-naïve, split basal/bolus) and continue the IV infusion for another 1-2 h. An endocrine / diabetes team review before discharge reduces readmission."
       ]
     }

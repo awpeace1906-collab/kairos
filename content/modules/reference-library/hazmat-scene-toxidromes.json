@@ -164,7 +164,7 @@
       "type": "table",
       "columns": [
         "Agent",
-        "Behaviour",
+        "Behavior",
         "Clinical signature"
       ],
       "rows": [

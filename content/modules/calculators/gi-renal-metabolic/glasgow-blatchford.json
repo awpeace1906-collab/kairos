@@ -25,7 +25,7 @@
       { "label": "28.1–70", "points": 4 },
       { "label": "> 70", "points": 6 }
     ] },
-    { "key": "hgb", "label": "Haemoglobin (g/dL)", "options": [
+    { "key": "hgb", "label": "Hemoglobin (g/dL)", "options": [
       { "label": "Man ≥ 13 / Woman ≥ 12", "points": 0 },
       { "label": "Man 12–12.9 / Woman 10–11.9", "points": 1 },
       { "label": "Man 10–11.9", "points": 3 },
@@ -48,6 +48,6 @@
     { "min": 2, "max": 5, "label": "Intermediate risk — admit, resuscitate, endoscopy within 24 h", "severity": "moderate" },
     { "min": 6, "max": 23, "label": "High risk — active resuscitation, blood products as needed, urgent endoscopy; a score ≥ 12 predicts the highest need for intervention", "severity": "high" }
   ],
-  "notes": "GBS 0 (or ≤ 1 in some protocols) is the threshold for considering discharge without inpatient endoscopy in a haemodynamically stable patient with no other reason to admit. The score does not incorporate anticoagulant use — factor that in separately.",
+  "notes": "GBS 0 (or ≤ 1 in some protocols) is the threshold for considering discharge without inpatient endoscopy in a hemodynamically stable patient with no other reason to admit. The score does not incorporate anticoagulant use — factor that in separately.",
   "buildNote": "Additive with graded lab bands. Score range 0–23."
 }

@@ -46,7 +46,7 @@
   "settings": [
     "ED"
   ],
-  "purpose": "Physiologic trauma severity score from three coded parameters (GCS, systolic BP, respiratory rate), each 0–4. This is the Triage-RTS (T-RTS) — the simple unweighted sum used at the bedside / in the field. A T-RTS ≤ 11 identifies a patient who should be taken to a trauma centre.",
+  "purpose": "Physiologic trauma severity score from three coded parameters (GCS, systolic BP, respiratory rate), each 0–4. This is the Triage-RTS (T-RTS) — the simple unweighted sum used at the bedside / in the field. A T-RTS ≤ 11 identifies a patient who should be taken to a trauma center.",
   "items": [
     {
       "key": "gcs",
@@ -121,7 +121,7 @@
           "points": 1
         },
         {
-          "label": "0 (apnoea)",
+          "label": "0 (apnea)",
           "points": 0
         }
       ]
@@ -137,13 +137,13 @@
     {
       "min": 4,
       "max": 10,
-      "label": "Severe — trauma-centre care, trauma team activation, early imaging and definitive haemorrhage control",
+      "label": "Severe — trauma-center care, trauma team activation, early imaging and definitive hemorrhage control",
       "severity": "high"
     },
     {
       "min": 11,
       "max": 11,
-      "label": "T-RTS 11 — triage threshold. Transport to / manage at a trauma centre; do not undertriage",
+      "label": "T-RTS 11 — triage threshold. Transport to / manage at a trauma center; do not undertriage",
       "severity": "moderate"
     },
     {

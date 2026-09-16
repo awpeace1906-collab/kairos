@@ -75,7 +75,7 @@
         ],
         [
           "A — Adenomyosis (diffusely enlarged, boggy uterus)",
-          "O — Ovulatory dysfunction (PCOS, thyroid, hyperprolactinaemia)"
+          "O — Ovulatory dysfunction (PCOS, thyroid, hyperprolactinemia)"
         ],
         [
           "L — Leiomyoma (submucosal most symptomatic)",
@@ -124,7 +124,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Haemodynamically unstable bleeding: resuscitate, correct coagulopathy, and involve GYN — options include IV oestrogen, intrauterine tamponade (balloon), uterine artery embolisation, or D&C. Always check a β-hCG first."
+      "text": "Hemodynamically unstable bleeding: resuscitate, correct coagulopathy, and involve GYN — options include IV oestrogen, intrauterine tamponade (balloon), uterine artery embolisation, or D&C. Always check a β-hCG first."
     }
   ]
 }

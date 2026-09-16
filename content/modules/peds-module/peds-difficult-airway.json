@@ -5,7 +5,7 @@
   "title": "Pediatric Difficult Airway Approach",
   "settingEmphasis": ["ed", "icu", "or"],
   "audience": ["peds"],
-  "aliases": ["peds CICO", "pediatric needle cricothyrotomy", "peds surgical airway", "DAS paediatric guidelines"],
+  "aliases": ["peds CICO", "pediatric needle cricothyrotomy", "peds surgical airway", "DAS pediatric guidelines"],
   "tags": ["difficult airway", "CICO", "cricothyrotomy", "peds", "ED", "ICU", "OR"],
   "keywords": ["under 8 needle cric first line per DAS 2015, scalpel only if needle fails", "over 8 scalpel technique for all front-of-neck access", "size matters more than exact age at the transition", "large occiput floppy epiglottis cephalad larynx obligate nose breathers under 6 months"],
   "contentType": "peds-tool",
@@ -62,7 +62,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "The DAS 2015 paediatric guideline (covering ages 1-8) recommends needle cricothyroidotomy as first-line for CICO in this age group, with a scalpel technique reserved for when needle access fails or isn't achievable — the reverse of the adult algorithm, where scalpel cricothyrotomy is first-line. The cricothyroid membrane in a young child is too small and the surrounding anatomy too fragile for a reliably safe scalpel-first approach at this size."
+      "text": "The DAS 2015 pediatric guideline (covering ages 1-8) recommends needle cricothyroidotomy as first-line for CICO in this age group, with a scalpel technique reserved for when needle access fails or isn't achievable — the reverse of the adult algorithm, where scalpel cricothyrotomy is first-line. The cricothyroid membrane in a young child is too small and the surrounding anatomy too fragile for a reliably safe scalpel-first approach at this size."
     },
     {
       "type": "text",

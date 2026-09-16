@@ -56,9 +56,9 @@
       "change": "Initial entry — KDIGO staging, the nephrotoxin list, the AEIOU emergent-RRT indications, and default CRRT settings."
     }
   ],
-  "summary": "Stage AKI on whichever is worse — creatinine or urine output. Stop nephrotoxins, optimise volume and perfusion, and dose-adjust drugs. Start RRT emergently for the AEIOU indications; timing of RRT for AKI without an emergent indication is not improved by starting early (STARRT-AKI, AKIKI).",
+  "summary": "Stage AKI on whichever is worse — creatinine or urine output. Stop nephrotoxins, optimize volume and perfusion, and dose-adjust drugs. Start RRT emergently for the AEIOU indications; timing of RRT for AKI without an emergent indication is not improved by starting early (STARRT-AKI, AKIKI).",
   "whyThisMatters": "AKI staging drives nothing if you only look at creatinine — urine output often stages higher and earlier — and the timing of non-emergent RRT has been settled: starting early does not help (STARRT-AKI), so the decision hinges on whether an emergent indication is present.",
-  "clinicalTakeaway": "Stage on the worse of creatinine or urine output. Stop nephrotoxins, fix volume and perfusion, and renally dose-adjust every drug. Start RRT now for an AEIOU indication (refractory acidosis, electrolytes, intoxication, overload, uraemia); otherwise there is no benefit to starting before one appears.",
+  "clinicalTakeaway": "Stage on the worse of creatinine or urine output. Stop nephrotoxins, fix volume and perfusion, and renally dose-adjust every drug. Start RRT now for an AEIOU indication (refractory acidosis, electrolytes, intoxication, overload, uremia); otherwise there is no benefit to starting before one appears.",
   "body": [
     {
       "type": "heading",
@@ -121,11 +121,11 @@
         ],
         [
           "O — Overload",
-          "Fluid overload (≈ ≥ 10% body weight) refractory to diuretics, causing hypoxaemia"
+          "Fluid overload (≈ ≥ 10% body weight) refractory to diuretics, causing hypoxemia"
         ],
         [
           "U — Uremia",
-          "BUN > 100 with uraemic symptoms — pericarditis / rub, encephalopathy / asterixis, uraemic bleeding"
+          "BUN > 100 with uremic symptoms — pericarditis / rub, encephalopathy / asterixis, uremic bleeding"
         ]
       ]
     },
@@ -144,7 +144,7 @@
         "Mode: CVVHDF (convection + diffusion) is the common default; CVVH or CVVHD are equivalent for solute clearance.",
         "Dose: effluent 20–25 mL/kg/h prescribed (prescribe ~25–30 to allow for downtime and achieve the delivered target). Higher-intensity dosing has no outcome benefit and worsens micronutrient / antibiotic clearance.",
         "Anticoagulation: regional citrate is first-line (longer filter life, less bleeding) — contraindicated / cautious in severe liver failure or shock with lactic acidosis (citrate accumulation → rising total:ionised calcium ratio). Systemic UFH is the alternative; no anticoagulation if actively bleeding.",
-        "Protein: 2.0–2.5 g/kg/day on CRRT (amino acid losses across the filter). Watch for hypophosphataemia and hypokalaemia — often need to add phosphate / potassium to the replacement fluid.",
+        "Protein: 2.0–2.5 g/kg/day on CRRT (amino acid losses across the filter). Watch for hypophosphatemia and hypokalemia — often need to add phosphate / potassium to the replacement fluid.",
         "Re-dose antibiotics for CRRT clearance (e.g. higher β-lactam doses, vancomycin by levels) — under-dosing is common."
       ]
     }

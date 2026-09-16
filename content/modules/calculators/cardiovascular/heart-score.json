@@ -75,6 +75,6 @@
     { "min": 4, "max": 6, "label": "Moderate risk", "risk": "~12-17% 6-week MACE", "disposition": "Observation / serial troponin / further testing", "severity": "moderate" },
     { "min": 7, "max": 10, "label": "High risk", "risk": "~50-65% 6-week MACE", "disposition": "Early invasive management", "severity": "high" }
   ],
-  "notes": "The troponin 'normal limit' is the assay's SEX-SPECIFIC 99th-percentile upper reference limit (Fifth Universal Definition of MI, 2026) — a single uniform cutoff under-recognises myocardial injury in women.",
+  "notes": "The troponin 'normal limit' is the assay's SEX-SPECIFIC 99th-percentile upper reference limit (Fifth Universal Definition of MI, 2026) — a single uniform cutoff under-recognizes myocardial injury in women.",
   "buildNote": "Standard, stable score. Second-source check against MDCalc before go-live per Calculator_Logic_Build_Spec.md."
 }

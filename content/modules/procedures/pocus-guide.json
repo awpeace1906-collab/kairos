@@ -174,7 +174,7 @@
     },
     {
       "type": "text",
-      "text": "Linear probe, transverse. Compress the common femoral vein (at and just below the saphenofemoral junction) and the popliteal vein (popliteal fossa); some protocols add the femoral vein along the adductor canal. Full coaptation of the vein walls = no DVT at that level. Non-compressible = acute DVT. Do not use colour/spectral Doppler as the primary test — compression is the standard."
+      "text": "Linear probe, transverse. Compress the common femoral vein (at and just below the saphenofemoral junction) and the popliteal vein (popliteal fossa); some protocols add the femoral vein along the adductor canal. Full coaptation of the vein walls = no DVT at that level. Non-compressible = acute DVT. Do not use color/spectral Doppler as the primary test — compression is the standard."
     },
     {
       "type": "heading",
@@ -199,13 +199,13 @@
     },
     {
       "type": "text",
-      "text": "An unvalidated conceptual framework (Jain) for using POCUS in undifferentiated sepsis — not as a yes/no test but to localise the problem before defaulting to broad empiric cover:"
+      "text": "An unvalidated conceptual framework (Jain) for using POCUS in undifferentiated sepsis — not as a yes/no test but to localize the problem before defaulting to broad empiric cover:"
     },
     {
       "type": "list",
       "items": [
         "FIND a probable anatomic source — lung (consolidation, air bronchograms, focal B-lines, effusion — the best-evidenced pillar), biliary, urinary/renal, skin/soft-tissue collection, endocarditis vegetation, joint effusion.",
-        "DE-SELECT non-infectious mimics that give the same phenotype — cardiogenic pulmonary oedema, PE, pericardial tamponade, hypovolaemia/haemorrhage, DKA, adrenal crisis.",
+        "DE-SELECT non-infectious mimics that give the same phenotype — cardiogenic pulmonary edema, PE, pericardial tamponade, hypovolemia/hemorrhage, DKA, adrenal crisis.",
         "CONTROL — flag pathology that needs a procedure, not just antibiotics: abscess drainage, empyema/effusion, obstructed infected system (hydronephrosis, cholangitis), necrotising soft-tissue infection, device removal.",
         "It is a bedside reasoning aid layered on the history/exam and cultures — no trial has tested this integrated approach; the individual accuracy data (especially lung US) support the parts."
       ]

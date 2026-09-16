@@ -46,12 +46,12 @@
     { "type": "table",
       "columns": ["System", "Problems"],
       "rows": [
-        ["Respiratory", "RDS (surfactant deficiency), apnoea of prematurity, bronchopulmonary dysplasia"],
-        ["Neurologic", "Intraventricular haemorrhage, HIE, sepsis/meningitis; long-term cerebral palsy, hydrocephalus"],
+        ["Respiratory", "RDS (surfactant deficiency), apnea of prematurity, bronchopulmonary dysplasia"],
+        ["Neurologic", "Intraventricular hemorrhage, HIE, sepsis/meningitis; long-term cerebral palsy, hydrocephalus"],
         ["Cardiovascular", "Hypotension, patent ductus arteriosus, early heart failure"],
-        ["Haematologic", "Anaemia of prematurity, bleeding tendency, DIC"],
+        ["Hematologic", "Anemia of prematurity, bleeding tendency, DIC"],
         ["GI", "Necrotising enterocolitis, feeding intolerance, exaggerated jaundice"],
-        ["Metabolic", "Hypoglycaemia, hypocalcaemia"],
+        ["Metabolic", "Hypoglycemia, hypocalcemia"],
         ["Renal / thermal", "Poor water and solute handling; hypothermia (high surface-area-to-volume ratio, minimal subcutaneous fat)"],
         ["Immune / eye", "Relative immunodeficiency → infection risk; retinopathy of prematurity (screen and treat — can cause blindness)"]
       ]
@@ -61,7 +61,7 @@
       "Consistent weight gain over several days.",
       "Full oral feeding, tolerating volumes (suck–swallow–breathe coordination is usually adequate ≥ 34 weeks postmenstrual age; NG/OG feeds until then).",
       "Stable temperature in an open cot.",
-      "No apnoea/bradycardia events for a defined observation window (commonly 5–7 days).",
+      "No apnea/bradycardia events for a defined observation window (commonly 5–7 days).",
       "Newborn hearing screen done; retinopathy-of-prematurity eye exam completed / follow-up arranged; car-seat tolerance test if indicated."
     ] }
   ],

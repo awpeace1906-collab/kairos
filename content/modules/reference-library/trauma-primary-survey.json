@@ -59,9 +59,9 @@
       "change": "Initial entry — ABCDE with the immediate life-threats, hemorrhagic shock classification, the MTP (ratio, TXA, calcium, targets), TBI initial targets, and eFAST windows."
     }
   ],
-  "summary": "ABCDE, addressing each life-threat as it's found. Control external haemorrhage first (direct pressure → tourniquet → wound packing). Permissive hypotension (SBP 80–90) until surgical control — EXCEPT in TBI, where you protect cerebral perfusion (MAP ≥ 80). Give blood in a 1:1:1 ratio and TXA within 3 hours.",
+  "summary": "ABCDE, addressing each life-threat as it's found. Control external hemorrhage first (direct pressure → tourniquet → wound packing). Permissive hypotension (SBP 80–90) until surgical control — EXCEPT in TBI, where you protect cerebral perfusion (MAP ≥ 80). Give blood in a 1:1:1 ratio and TXA within 3 hours.",
   "whyThisMatters": "The primary survey exists so that no life-threat is missed while attention narrows onto the obvious injury — and the resuscitation choices (permissive hypotension, balanced product, TXA, the TBI exception) all have to be made in the first minutes, before the picture is complete.",
-  "clinicalTakeaway": "Work ABCDE, fixing each life-threat as you find it, and control external haemorrhage first (pressure → tourniquet → packing). Hold to permissive hypotension (SBP 80–90) until surgical control, except in TBI where MAP stays ≥ 80. Transfuse 1:1:1 and give TXA within 3 hours.",
+  "clinicalTakeaway": "Work ABCDE, fixing each life-threat as you find it, and control external hemorrhage first (pressure → tourniquet → packing). Hold to permissive hypotension (SBP 80–90) until surgical control, except in TBI where MAP stays ≥ 80. Transfuse 1:1:1 and give TXA within 3 hours.",
   "body": [
     {
       "type": "heading",
@@ -78,23 +78,23 @@
       "rows": [
         [
           "A — Airway + C-spine",
-          "Jaw-thrust, suction, in-line stabilisation. Intubate if GCS ≤ 8 or the airway is threatened (burns, expanding neck haematoma). LEMON assessment.",
+          "Jaw-thrust, suction, in-line stabilization. Intubate if GCS ≤ 8 or the airway is threatened (burns, expanding neck hematoma). LEMON assessment.",
           "Airway obstruction; unstable mid-face / laryngeal injury"
         ],
         [
           "B — Breathing",
           "Rate, SpO2, bilateral auscultation, tracheal position, chest wall.",
-          "Tension pneumothorax → needle decompression (2nd ICS MCL or 4th–5th ICS AAL) then finger/chest tube. Open pneumothorax → 3-sided occlusive dressing. Massive haemothorax. Flail chest."
+          "Tension pneumothorax → needle decompression (2nd ICS MCL or 4th–5th ICS AAL) then finger/chest tube. Open pneumothorax → 3-sided occlusive dressing. Massive hemothorax. Flail chest."
         ],
         [
           "C — Circulation",
           "2 large-bore IVs. Tourniquet + wound packing for extremity / junctional bleeding. eFAST. Pelvic binder for an unstable pelvis. Activate MTP for Class III–IV. Permissive hypotension (SBP 80–90) until surgical control — except TBI.",
-          "Uncontrolled haemorrhage (chest, abdomen, pelvis, long bones, 'floor and 4 more'); cardiac tamponade"
+          "Uncontrolled hemorrhage (chest, abdomen, pelvis, long bones, 'floor and 4 more'); cardiac tamponade"
         ],
         [
           "D — Disability",
           "GCS, pupils, gross motor; blood glucose. C-spine imaging per NEXUS / Canadian criteria.",
-          "Expanding intracranial haematoma with herniation"
+          "Expanding intracranial hematoma with herniation"
         ],
         [
           "E — Exposure",
@@ -165,7 +165,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Activate for uncontrolled haemorrhage needing ≥ 3 units RBC in 1 h, an ABC score ≥ 2, or anticipated ≥ 10 units / 24 h. Transfuse RBC : FFP : platelets in a 1:1:1 ratio (PROPPR). Whole blood if available. TXA 1 g IV over 10 min within 3 h of injury (CRASH-2), then 1 g over 8 h — giving TXA after 3 h is associated with harm. Calcium: 1 g CaCl₂ (or 3 g gluconate) after every ~4 units of RBC (citrate chelation → ionised hypocalcaemia worsens coagulopathy and cardiac function). Targets: fibrinogen > 150–200 mg/dL (cryoprecipitate / concentrate if low), platelets ≥ 50k (≥ 100k if TBI or ongoing bleeding), ionised calcium > 1.1, temperature > 36 °C, pH > 7.2."
+      "text": "Activate for uncontrolled hemorrhage needing ≥ 3 units RBC in 1 h, an ABC score ≥ 2, or anticipated ≥ 10 units / 24 h. Transfuse RBC : FFP : platelets in a 1:1:1 ratio (PROPPR). Whole blood if available. TXA 1 g IV over 10 min within 3 h of injury (CRASH-2), then 1 g over 8 h — giving TXA after 3 h is associated with harm. Calcium: 1 g CaCl₂ (or 3 g gluconate) after every ~4 units of RBC (citrate chelation → ionised hypocalcemia worsens coagulopathy and cardiac function). Targets: fibrinogen > 150–200 mg/dL (cryoprecipitate / concentrate if low), platelets ≥ 50k (≥ 100k if TBI or ongoing bleeding), ionised calcium > 1.1, temperature > 36 °C, pH > 7.2."
     },
     {
       "type": "heading",
@@ -200,7 +200,7 @@
     },
     {
       "type": "text",
-      "text": "Trauma team activation (CDC/ACS-COT field triage): highest-tier / trauma-centre transport for GCS ≤ 13, SBP < 90 (or < 110 if ≥ 65), RR < 10 or > 29, shock index > 1.0, any penetrating injury to head/neck/torso/proximal extremity, flail chest, ≥ 2 proximal long-bone fractures, crushed/degloved/mangled or amputated-proximal-to-wrist/ankle extremity, pelvic fracture, open/depressed skull fracture, or paralysis."
+      "text": "Trauma team activation (CDC/ACS-COT field triage): highest-tier / trauma-center transport for GCS ≤ 13, SBP < 90 (or < 110 if ≥ 65), RR < 10 or > 29, shock index > 1.0, any penetrating injury to head/neck/torso/proximal extremity, flail chest, ≥ 2 proximal long-bone fractures, crushed/degloved/mangled or amputated-proximal-to-wrist/ankle extremity, pelvic fracture, open/depressed skull fracture, or paralysis."
     }
   ],
   "related": [

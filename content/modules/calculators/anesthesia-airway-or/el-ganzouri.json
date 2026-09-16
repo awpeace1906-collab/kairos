@@ -28,8 +28,8 @@
   ],
   "interpretation": [
     { "min": 0, "max": 3, "label": "Lower predicted risk of difficult laryngoscopy — proceed with a standard induction plan, but keep a rescue strategy and videolaryngoscope available (no score rules out difficulty)", "severity": "low" },
-    { "min": 4, "max": 12, "label": "Predicted difficult airway — formulate an explicit plan: consider an awake / videolaryngoscopy-first approach, ensure a skilled assistant and difficult-airway cart, optimise position and preoxygenation, and have a surgical-airway plan (front-of-neck access) briefed", "disposition": "Difficult-airway plan", "severity": "high" }
+    { "min": 4, "max": 12, "label": "Predicted difficult airway — formulate an explicit plan: consider an awake / videolaryngoscopy-first approach, ensure a skilled assistant and difficult-airway cart, optimize position and preoxygenation, and have a surgical-airway plan (front-of-neck access) briefed", "disposition": "Difficult-airway plan", "severity": "high" }
   ],
-  "notes": "The index misses several important predictors — limited neck extension from a collar/fixed flexion deformity, airway masses/radiation, beard, oedema, blood/secretions, and the physiologically difficult airway (hypoxaemia, hypotension, acidosis). Bedside gestalt plus this score, not the score alone. Videolaryngoscopy reduces but does not eliminate the failure rate in high scorers.",
+  "notes": "The index misses several important predictors — limited neck extension from a collar/fixed flexion deformity, airway masses/radiation, beard, edema, blood/secretions, and the physiologically difficult airway (hypoxemia, hypotension, acidosis). Bedside gestalt plus this score, not the score alone. Videolaryngoscopy reduces but does not eliminate the failure rate in high scorers.",
   "buildNote": "Additive, 7 weighted items. Threshold ≥ 4 predicts difficulty."
 }

@@ -61,8 +61,8 @@
     }
   ],
   "summary": "Spinal hypotension: CO-load (not pre-load) 500–1000 mL at block placement and start a prophylactic vasopressor infusion — norepinephrine 0.05–0.1 mcg/kg/min is now first-line for obstetric spinal (better HR maintenance than phenylephrine). Anticoagulant hold times before a neuraxial or deep block live in the neuraxial-anticoagulation module.",
-  "whyThisMatters": "Spinal hypotension is predictable and preventable, and the prevention has shifted — a co-load plus a prophylactic norepinephrine infusion, not a pre-load plus reactive phenylephrine boluses — while the rare catastrophes (high/total spinal, epidural haematoma on an anticoagulated patient) turn on timing and recognition.",
-  "clinicalTakeaway": "Co-load 500–1000 mL at block placement and start a prophylactic vasopressor infusion — norepinephrine 0.05–0.1 mcg/kg/min is first-line for obstetric spinal. Screen for the contraindications, check anticoagulant hold times (see the neuraxial-anticoagulation module), and recognise a rising block early.",
+  "whyThisMatters": "Spinal hypotension is predictable and preventable, and the prevention has shifted — a co-load plus a prophylactic norepinephrine infusion, not a pre-load plus reactive phenylephrine boluses — while the rare catastrophes (high/total spinal, epidural hematoma on an anticoagulated patient) turn on timing and recognition.",
+  "clinicalTakeaway": "Co-load 500–1000 mL at block placement and start a prophylactic vasopressor infusion — norepinephrine 0.05–0.1 mcg/kg/min is first-line for obstetric spinal. Screen for the contraindications, check anticoagulant hold times (see the neuraxial-anticoagulation module), and recognize a rising block early.",
   "body": [
     {
       "type": "heading",
@@ -73,7 +73,7 @@
       "type": "list",
       "items": [
         "Absolute: patient refusal; coagulopathy (INR > 1.5, platelets < 80 ×10⁹/L per ASRA 2023) or active therapeutic anticoagulation within the ASRA hold window; infection at the puncture site; raised ICP / an intracranial mass (herniation risk); no resuscitation equipment / monitoring.",
-        "Relative: hypovolaemia (stabilise first); severe fixed-output lesions (severe AS or MS — a fall in SVR drops CO); systemic sepsis / bacteraemia (individualise); pre-existing neurological disease (document the baseline); indeterminate surgical duration."
+        "Relative: hypovolemia (stabilize first); severe fixed-output lesions (severe AS or MS — a fall in SVR drops CO); systemic sepsis / bacteremia (individualize); pre-existing neurological disease (document the baseline); indeterminate surgical duration."
       ]
     },
     {
@@ -141,7 +141,7 @@
       "type": "list",
       "items": [
         "Prevention: CO-load 500–1000 mL crystalloid AT block placement (not before — a pre-load redistributes). Start a prophylactic phenylephrine 25–50 mcg/min or norepinephrine 0.05–0.1 mcg/kg/min infusion with the block. Ondansetron 4 mg IV blunts the vasovagal (Bezold-Jarisch) component.",
-        "Treatment: phenylephrine 50–200 mcg IV bolus → 25–100 mcg/min infusion. Norepinephrine 5–10 mcg IV bolus → 0.05–0.1 mcg/kg/min — OB-preferred (less reflex bradycardia). Ephedrine 5–10 mg IV if bradycardia coexists. Atropine 0.5 mg for isolated bradycardia — low threshold for epinephrine if it doesn't respond. Fluid bolus if hypovolaemic. Left uterine displacement in the parturient.",
+        "Treatment: phenylephrine 50–200 mcg IV bolus → 25–100 mcg/min infusion. Norepinephrine 5–10 mcg IV bolus → 0.05–0.1 mcg/kg/min — OB-preferred (less reflex bradycardia). Ephedrine 5–10 mg IV if bradycardia coexists. Atropine 0.5 mg for isolated bradycardia — low threshold for epinephrine if it doesn't respond. Fluid bolus if hypovolemic. Left uterine displacement in the parturient.",
         "2024 OB update: norepinephrine is equivalent or superior to phenylephrine for obstetric spinal hypotension (better HR maintenance, similar neonatal outcomes) — consider it first-line where available."
       ]
     },
@@ -171,10 +171,10 @@
         [
           "Lower abdominal / C/S / lower limb",
           "T10–L2",
-          "Programmed intermittent bolus 0.0625–0.1% bupivacaine 5–10 mL / 30 min, or PCEA"
+          "Programd intermittent bolus 0.0625–0.1% bupivacaine 5–10 mL / 30 min, or PCEA"
         ],
         [
-          "Labour analgesia",
+          "Labor analgesia",
           "T10–L1",
           "PCEA 0.0625% bupivacaine + fentanyl 2 mcg/mL; 5–8 mL bolus / 15 min lockout / 6–10 mL/hr basal"
         ]
@@ -183,7 +183,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "text": "Urgent C/S top-up from a working labour epidural: 2% lidocaine + epinephrine 1:200,000, 15–20 mL in 5 mL increments q3–5 min; add sodium bicarbonate 1 mEq per 10 mL to speed onset (~10–15 min). Alternative: 0.5% bupivacaine 15–20 mL (slower). Always aspirate and give a test dose; watch for LAST and for a high block."
+      "text": "Urgent C/S top-up from a working labor epidural: 2% lidocaine + epinephrine 1:200,000, 15–20 mL in 5 mL increments q3–5 min; add sodium bicarbonate 1 mEq per 10 mL to speed onset (~10–15 min). Alternative: 0.5% bupivacaine 15–20 mL (slower). Always aspirate and give a test dose; watch for LAST and for a high block."
     },
     {
       "type": "heading",
@@ -193,7 +193,7 @@
     {
       "type": "callout",
       "tone": "danger",
-      "text": "Rapid unexpected cephalad spread: upper-limb numbness / weakness → dyspnoea, dysphonia, apnoea → bradycardia + hypotension → loss of consciousness / arrest (total spinal). Call for help + the code cart, tell the surgeons. Support ventilation, intubate if apnoeic. Epinephrine 10 mcg IV boluses titrated up for bradycardia / hypotension; atropine 0.5 mg for mild bradycardia (low threshold for epinephrine); fluids wide open. Parturient: immediate LUD, alert OB, prepare for a perimortem C/S, and run the maternal-cardiac-arrest protocol if she arrests."
+      "text": "Rapid unexpected cephalad spread: upper-limb numbness / weakness → dyspnea, dysphonia, apnea → bradycardia + hypotension → loss of consciousness / arrest (total spinal). Call for help + the code cart, tell the surgeons. Support ventilation, intubate if apnoeic. Epinephrine 10 mcg IV boluses titrated up for bradycardia / hypotension; atropine 0.5 mg for mild bradycardia (low threshold for epinephrine); fluids wide open. Parturient: immediate LUD, alert OB, prepare for a perimortem C/S, and run the maternal-cardiac-arrest protocol if she arrests."
     },
     {
       "type": "heading",
@@ -206,7 +206,7 @@
         "Positional (worse upright, better supine) frontal / occipital headache ± neck stiffness, photophobia, tinnitus, diplopia — onset within 5 days of a dural puncture.",
         "Conservative for 24–48 h: bed rest as tolerated, hydration, analgesia, caffeine 300 mg PO; a bilateral sphenopalatine ganglion block is a reasonable low-risk step.",
         "Epidural blood patch is the definitive treatment: 15–20 mL of autologous blood, then lie flat for 1–2 h. ~ 70–90% relief; repeat once if it recurs.",
-        "Always consider the sinister differential for a NEW postpartum / post-procedure headache that loses its postural character — cerebral venous sinus thrombosis, subdural haematoma, PRES, pre-eclampsia."
+        "Always consider the sinister differential for a NEW postpartum / post-procedure headache that loses its postural character — cerebral venous sinus thrombosis, subdural hematoma, PRES, pre-eclampsia."
       ]
     }
   ],

@@ -55,7 +55,7 @@
       "change": "Initial entry — MAC of the volatile agents (adult and > 60 y), MAC-awake / MAC-BAR, age adjustment, additivity, and the desflurane phase-out."
     }
   ],
-  "summary": "1 MAC = the alveolar concentration that prevents movement to a surgical incision in 50% of patients. MAC is additive (0.5 MAC sevoflurane + 0.5 MAC N₂O ≈ 1 MAC). It falls ~6% per decade of age and with opioids, benzodiazepines, alpha-2 agonists, hypothermia, hyponatraemia, pregnancy, and acute alcohol; it rises with chronic alcohol, stimulants, and hyperthermia.",
+  "summary": "1 MAC = the alveolar concentration that prevents movement to a surgical incision in 50% of patients. MAC is additive (0.5 MAC sevoflurane + 0.5 MAC N₂O ≈ 1 MAC). It falls ~6% per decade of age and with opioids, benzodiazepines, alpha-2 agonists, hypothermia, hyponatremia, pregnancy, and acute alcohol; it rises with chronic alcohol, stimulants, and hyperthermia.",
   "whyThisMatters": "MAC is additive and shifts with age and co-administered drugs by amounts large enough to cause awareness or over-dose if you dial in a fixed number — a 6%-per-decade fall, plus opioids, benzodiazepines, and hypothermia all pulling it down.",
   "clinicalTakeaway": "1 MAC prevents movement in 50%; aim for about 1.2–1.3 MAC of the combined agents (they add). Reduce the target ~6% per decade over 40, and further for opioids, benzodiazepines, alpha-2 agonists, hypothermia, and pregnancy. Confirm with an end-tidal agent monitor, not the vaporiser dial.",
   "body": [
@@ -108,7 +108,7 @@
       "type": "list",
       "items": [
         "MAC-awake ≈ 0.3–0.4 MAC — the concentration at which 50% respond to command / open their eyes (roughly the threshold for recall on emergence).",
-        "MAC ≈ 1.0 — no movement to incision in 50%; aim for ~1.2–1.3 MAC (ED95) for surgical anaesthesia without opioid, less with opioid.",
+        "MAC ≈ 1.0 — no movement to incision in 50%; aim for ~1.2–1.3 MAC (ED95) for surgical anesthesia without opioid, less with opioid.",
         "MAC-BAR ≈ 1.3–1.5 MAC — Blocks the Adrenergic Response (catecholamine surge) to incision in 50%.",
         "N₂O contributes ~0.5 MAC-equivalent at ~50% inspired."
       ]
@@ -125,7 +125,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "text": "Lowers MAC: increasing age, opioids, benzodiazepines, alpha-2 agonists (dexmedetomidine, clonidine), IV anaesthetics, lithium, acute alcohol / other CNS depressants, hypothermia, hyponatraemia, hypotension / anaemia (severe), pregnancy (~30% by term), and hypoxia / hypercapnia. Raises MAC: chronic alcohol use, chronic amphetamine / cocaine / MAOIs, acute cocaine, hyperthermia, hypernatraemia, and red hair (modestly). Duration of anaesthesia, sex, and PaCO₂ within the normal range do NOT change MAC."
+      "text": "Lowers MAC: increasing age, opioids, benzodiazepines, alpha-2 agonists (dexmedetomidine, clonidine), IV anesthetics, lithium, acute alcohol / other CNS depressants, hypothermia, hyponatremia, hypotension / anemia (severe), pregnancy (~30% by term), and hypoxia / hypercapnia. Raises MAC: chronic alcohol use, chronic amphetamine / cocaine / MAOIs, acute cocaine, hyperthermia, hypernatremia, and red hair (modestly). Duration of anesthesia, sex, and PaCO₂ within the normal range do NOT change MAC."
     }
   ],
   "related": [

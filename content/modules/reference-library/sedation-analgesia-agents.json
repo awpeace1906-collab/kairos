@@ -112,11 +112,11 @@
     {
       "type": "list",
       "items": [
-        "Hemodynamics: indirect sympathomimetic (↑ BP, HR, CO) with a direct myocardial depressant effect UNMASKED in catecholamine-depleted shock. RSI trial: CV collapse 22% (ketamine) vs 17% (etomidate); sepsis subgroup 31% vs 21%; no mortality difference — optimise vasopressors before pushing it.",
-        "Respiratory drive largely preserved (apnoea only with large rapid boluses); bronchodilator — dual benefit in bronchospasm. Hypersalivation → glycopyrrolate 0.005 mg/kg or atropine 0.01 mg/kg.",
+        "Hemodynamics: indirect sympathomimetic (↑ BP, HR, CO) with a direct myocardial depressant effect UNMASKED in catecholamine-depleted shock. RSI trial: CV collapse 22% (ketamine) vs 17% (etomidate); sepsis subgroup 31% vs 21%; no mortality difference — optimize vasopressors before pushing it.",
+        "Respiratory drive largely preserved (apnea only with large rapid boluses); bronchodilator — dual benefit in bronchospasm. Hypersalivation → glycopyrrolate 0.005 mg/kg or atropine 0.01 mg/kg.",
         "Cataleptic state does NOT reliably protect the airway against aspiration.",
         "Myths corrected: ketamine does NOT raise ICP in sedated/ventilated patients (the old contraindication traces to 1970s obstructive-hydrocephalus case series — obstructive hydrocephalus is the only surviving CNS contraindication). Open-globe injury is NOT a contraindication (no meaningful IOP rise at clinical doses).",
-        "Real contraindications: conditions where a BP surge is hazardous (aortic dissection, uncontrolled hypertension, acute MI as sole agent, aneurysm); prior hypersensitivity. Cautions: thyrotoxicosis, ischaemic heart disease as sole agent, active psychosis / prior severe emergence reaction.",
+        "Real contraindications: conditions where a BP surge is hazardous (aortic dissection, uncontrolled hypertension, acute MI as sole agent, aneurysm); prior hypersensitivity. Cautions: thyrotoxicosis, ischemic heart disease as sole agent, active psychosis / prior severe emergence reaction.",
         "Chronic recreational use: ketamine uropathy (bladder fibrosis, hydronephrosis) in ~25% of long-term users after > 1 year — only intervention is cessation. Not on a standard UDS."
       ]
     },
@@ -153,10 +153,10 @@
     {
       "type": "list",
       "items": [
-        "Hemodynamics: arterial BP falls 25–40% on induction (mostly vasodilation + some myocardial depression); HR largely unchanged (baroreflex blunted). Effect-site lag ~7 min — hypotension DEEPENS after loss of consciousness. Worse in elderly, ASA III–IV, hypovolaemia, and with opioids.",
-        "Respiratory: apnoea in 25–30% after an induction dose. Bronchodilator. Reduce ICP 30–50% but also drops CPP — in head injury keep to mild–moderate sedation (~25–75 mcg/kg/min).",
+        "Hemodynamics: arterial BP falls 25–40% on induction (mostly vasodilation + some myocardial depression); HR largely unchanged (baroreflex blunted). Effect-site lag ~7 min — hypotension DEEPENS after loss of consciousness. Worse in elderly, ASA III–IV, hypovolemia, and with opioids.",
+        "Respiratory: apnea in 25–30% after an induction dose. Bronchodilator. Reduce ICP 30–50% but also drops CPP — in head injury keep to mild–moderate sedation (~25–75 mcg/kg/min).",
         "Reach for it: rapid clear-headed induction with antiemetic recovery, TIVA / TCI, ICU sedation with fast wake-up for neuro checks, status epilepticus (potent anticonvulsant), raised ICP.",
-        "Caution / avoid: hemodynamically fragile / critically ill (independent risk factor for peri-intubation collapse — prefer ketamine or etomidate); pain on injection (large vein, add lidocaine); prolonged/high-dose infusion (hypertriglyceridaemia, pancreatitis, PRIS)."
+        "Caution / avoid: hemodynamically fragile / critically ill (independent risk factor for peri-intubation collapse — prefer ketamine or etomidate); pain on injection (large vein, add lidocaine); prolonged/high-dose infusion (hypertriglyceridemia, pancreatitis, PRIS)."
       ]
     },
     {
@@ -167,7 +167,7 @@
     {
       "type": "callout",
       "tone": "danger",
-      "text": "PRIS = metabolic acidosis + cardiac dysfunction PLUS at least one of rhabdomyolysis, hypertriglyceridaemia, or renal failure. Mortality > 30–50% once established. Can occur BELOW the quoted dose thresholds. Risk: infusion > 48 h (median onset ~125 h), dose > 4–5 mg/kg/hr (> 83 mcg/kg/min), critical illness, concurrent vasopressors / corticosteroids, children, low-carbohydrate states. First and most reliable signal: unexplained worsening metabolic acidosis. Also: new dysrhythmia, RBBB, Brugada-like ST elevation V1–V3, bradycardia → AV block; rhabdomyolysis, tea-coloured urine. Management: (1) STOP propofol — the only definitive step; switch to midazolam / dexmedetomidine / ketamine / volatile. (2) Supportive — fluids, pressors/inotropes, RRT for AKI, treat hyperkalaemia, continuous cardiac monitoring. (3) Bicarbonate for severe acidosis; early ECMO for refractory cardiogenic collapse."
+      "text": "PRIS = metabolic acidosis + cardiac dysfunction PLUS at least one of rhabdomyolysis, hypertriglyceridemia, or renal failure. Mortality > 30–50% once established. Can occur BELOW the quoted dose thresholds. Risk: infusion > 48 h (median onset ~125 h), dose > 4–5 mg/kg/hr (> 83 mcg/kg/min), critical illness, concurrent vasopressors / corticosteroids, children, low-carbohydrate states. First and most reliable signal: unexplained worsening metabolic acidosis. Also: new dysrhythmia, RBBB, Brugada-like ST elevation V1–V3, bradycardia → AV block; rhabdomyolysis, tea-colored urine. Management: (1) STOP propofol — the only definitive step; switch to midazolam / dexmedetomidine / ketamine / volatile. (2) Supportive — fluids, pressors/inotropes, RRT for AKI, treat hyperkalemia, continuous cardiac monitoring. (3) Bicarbonate for severe acidosis; early ECMO for refractory cardiogenic collapse."
     },
     {
       "type": "text",

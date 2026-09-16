@@ -32,7 +32,7 @@
     "waveform capnography gold standard",
     "tube tip 3-5 cm above carina",
     "propofol dexmedetomidine fentanyl",
-    "post-intubation hypotension reduce PEEP exclude tension PTX treat hypovolaemia mainstem"
+    "post-intubation hypotension reduce PEEP exclude tension PTX treat hypovolemia mainstem"
   ],
   "contentType": "reference",
   "content_version": 2,
@@ -51,12 +51,12 @@
     {
       "version": 1,
       "date": "2026-09-03",
-      "change": "Initial entry — initial vent settings, confirm/secure/stabilise checklist, analgosedation, and the post-intubation hypotension differential."
+      "change": "Initial entry — initial vent settings, confirm/secure/stabilize checklist, analgosedation, and the post-intubation hypotension differential."
     }
   ],
-  "summary": "The five minutes after the tube goes in kill people. Set lung-protective ventilation, confirm placement with waveform capnography and a film, start analgesia-first sedation, and immediately work the post-intubation hypotension differential (PEEP, tension pneumothorax, hypovolaemia, mainstem, the induction agent).",
+  "summary": "The five minutes after the tube goes in kill people. Set lung-protective ventilation, confirm placement with waveform capnography and a film, start analgesia-first sedation, and immediately work the post-intubation hypotension differential (PEEP, tension pneumothorax, hypovolemia, mainstem, the induction agent).",
   "whyThisMatters": "The tube going in is not the end of the airway emergency — the first five minutes after are when lung-protective settings get skipped, sedation gets stacked before analgesia, and post-intubation hypotension gets treated with fluid instead of its actual cause.",
-  "clinicalTakeaway": "Set lung-protective ventilation immediately, confirm with waveform capnography and a film, and start analgesia-first sedation. If the BP drops, run the differential fast — PEEP, tension pneumothorax, hypovolaemia, mainstem intubation, the induction agent — and treat the one you find.",
+  "clinicalTakeaway": "Set lung-protective ventilation immediately, confirm with waveform capnography and a film, and start analgesia-first sedation. If the BP drops, run the differential fast — PEEP, tension pneumothorax, hypovolemia, mainstem intubation, the induction agent — and treat the one you find.",
   "body": [
     {
       "type": "heading",
@@ -99,22 +99,22 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Confirm, secure, stabilise"
+      "text": "Confirm, secure, stabilize"
     },
     {
       "type": "list",
       "items": [
-        "Waveform capnography — the gold standard; a flat capnogram = oesophageal (or arrest).",
+        "Waveform capnography — the gold standard; a flat capnogram = esophageal (or arrest).",
         "Bilateral breath sounds, no epigastric gurgling.",
         "Portable chest X-ray: tube tip 3–5 cm above the carina.",
         "Secure the tube; document the cm marking at the lips/teeth.",
-        "Analgesia-first sedation: a fentanyl infusion + propofol 5–50 mcg/kg/min OR dexmedetomidine 0.2–1.5 mcg/kg/h. Target a light level (RASS 0 to −2) unless deep sedation is indicated. Do NOT leave a paralysed patient under-sedated."
+        "Analgesia-first sedation: a fentanyl infusion + propofol 5–50 mcg/kg/min OR dexmedetomidine 0.2–1.5 mcg/kg/h. Target a light level (RASS 0 to −2) unless deep sedation is indicated. Do NOT leave a paralyzed patient under-sedated."
       ]
     },
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Post-intubation hypotension — work it fast: (1) high PEEP / breath stacking → reduce PEEP, disconnect and let an obstructive patient exhale; (2) tension pneumothorax → decompress; (3) hypovolaemia unmasked by the loss of sympathetic drive and positive pressure → fluid bolus, push-dose vasopressor; (4) right mainstem intubation → pull the tube back; (5) the induction agent (propofol) → support and switch. Also give analgesia and check a glucose/K+ if the arrest risk is rising."
+      "text": "Post-intubation hypotension — work it fast: (1) high PEEP / breath stacking → reduce PEEP, disconnect and let an obstructive patient exhale; (2) tension pneumothorax → decompress; (3) hypovolemia unmasked by the loss of sympathetic drive and positive pressure → fluid bolus, push-dose vasopressor; (4) right mainstem intubation → pull the tube back; (5) the induction agent (propofol) → support and switch. Also give analgesia and check a glucose/K+ if the arrest risk is rising."
     }
   ]
 }

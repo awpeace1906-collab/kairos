@@ -31,7 +31,7 @@
     { "key": "malignancy", "label": "Malignancy (present or previous)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
     { "key": "cvc", "label": "Central venous access", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
     { "key": "bedConfined72", "label": "Patient confined to bed ≥ 72 hours", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
-    { "key": "plasterCast", "label": "Immobilising plaster cast within the last month", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "plasterCast", "label": "Immobilizing plaster cast within the last month", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
     { "key": "medicalBedRest", "label": "Medical patient currently at bed rest", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "varicoseVeins", "label": "Varicose veins", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "swollenLegs", "label": "Swollen legs (current)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
@@ -44,13 +44,13 @@
     { "key": "abnormalPFT", "label": "Abnormal pulmonary function (e.g. COPD)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "hormones", "label": "Oral contraceptives or hormone replacement therapy", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "pregnancyPostpartum", "label": "Pregnancy or postpartum < 1 month", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
-    { "key": "pregnancyHistory", "label": "History of unexplained stillbirth, recurrent (≥ 3) spontaneous abortion, premature birth with toxaemia, or growth-restricted infant", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
+    { "key": "pregnancyHistory", "label": "History of unexplained stillbirth, recurrent (≥ 3) spontaneous abortion, premature birth with toxemia, or growth-restricted infant", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
   ],
   "interpretation": [
     { "min": 0, "max": 1, "label": "Low risk — early ambulation is generally sufficient; pharmacologic or mechanical prophylaxis not routinely required", "severity": "low" },
     { "min": 2, "max": 2, "label": "Moderate risk — mechanical prophylaxis (intermittent pneumatic compression); pharmacologic prophylaxis may be considered based on clinical context and bleeding risk", "severity": "moderate" },
-    { "min": 3, "max": 4, "label": "High risk — pharmacologic prophylaxis (LMWH / low-dose UFH) recommended during hospitalisation, with mechanical methods added if appropriate", "severity": "high" },
-    { "min": 5, "max": 60, "label": "Highest (very high) risk — combined pharmacologic AND mechanical prophylaxis, often with extended pharmacologic prophylaxis after discharge (7–10 days); a score > 8, or major cancer / orthopaedic surgery, may warrant up to ~30 days", "disposition": "Pharmacologic + mechanical; consider extended prophylaxis", "severity": "high" }
+    { "min": 3, "max": 4, "label": "High risk — pharmacologic prophylaxis (LMWH / low-dose UFH) recommended during hospitalization, with mechanical methods added if appropriate", "severity": "high" },
+    { "min": 5, "max": 60, "label": "Highest (very high) risk — combined pharmacologic AND mechanical prophylaxis, often with extended pharmacologic prophylaxis after discharge (7–10 days); a score > 8, or major cancer / orthopedic surgery, may warrant up to ~30 days", "disposition": "Pharmacologic + mechanical; consider extended prophylaxis", "severity": "high" }
   ],
   "notes": "This is the 2005 checklist. The 2013 revision adds further items (smoking, insulin-dependent diabetes, chemotherapy, blood transfusion, surgery > 2 h, additional female-specific factors) — not included here. Always weigh the score against the surgical bleeding risk (and, in medical inpatients, the IMPROVE bleeding score) before committing to pharmacologic prophylaxis.",
   "buildNote": "Full 2005 Caprini checklist, additive. 4-tier scheme 0–1 / 2 / 3–4 / ≥5 per Lobastov 2022; prophylaxis text per the 2013 StatPearls mapping. 5-point and multi-thrombophilia rows use count-each option groups."

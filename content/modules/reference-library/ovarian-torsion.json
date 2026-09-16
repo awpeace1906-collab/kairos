@@ -27,7 +27,7 @@
     "string of pearls",
     "absent doppler flow sensitivity 60-74%",
     "normal doppler does not exclude",
-    "detorsion even if discoloured",
+    "detorsion even if discolored",
     "oophoropexy",
     "6-8 hour window"
   ],
@@ -85,7 +85,7 @@
       "type": "list",
       "items": [
         "Enlarged ovary (> 4 cm) with follicles displaced to the periphery — the 'string of pearls' sign.",
-        "Ovarian stromal oedema / heterogeneity on grayscale.",
+        "Ovarian stromal edema / heterogeneity on grayscale.",
         "Absent or diminished Doppler flow — sensitivity only 60–74%; a normal Doppler does NOT exclude torsion.",
         "Free fluid in the cul-de-sac; an associated cyst or mass."
       ]
@@ -110,13 +110,13 @@
         ],
         [
           "Labs",
-          "CBC, BMP, β-hCG, LDH; tumour markers (CA-125, AFP, β-hCG) if a mass",
-          "Rule out ruptured ectopic; characterise a mass preoperatively"
+          "CBC, BMP, β-hCG, LDH; tumor markers (CA-125, AFP, β-hCG) if a mass",
+          "Rule out ruptured ectopic; characterize a mass preoperatively"
         ],
         [
           "Surgery",
           "Diagnostic laparoscopy → detorsion",
-          "Detorse first even if discoloured — a black/blue ovary may recover. Oophorectomy only for confirmed necrosis"
+          "Detorse first even if discolored — a black/blue ovary may recover. Oophorectomy only for confirmed necrosis"
         ],
         [
           "Cystectomy",

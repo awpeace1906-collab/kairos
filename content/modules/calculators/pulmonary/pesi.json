@@ -40,6 +40,6 @@
     { "forKey": "pesi", "min": 106, "max": 125, "label": "Class IV (106–125) — high risk, 30-day mortality 4.0–11.4%. Admit to a monitored bed", "severity": "high" },
     { "forKey": "pesi", "min": 126, "max": 400, "label": "Class V (> 125) — very high risk, 30-day mortality 10.0–24.5%. Monitored / ICU bed; watch for deterioration requiring rescue reperfusion", "severity": "high" }
   ],
-  "notes": "Classes I–II ≈ sPESI 0. PESI does not by itself indicate thrombolysis — a normotensive PE with RV dysfunction plus a positive troponin is 'intermediate-high' and needs monitoring for haemodynamic decompensation, not upfront lysis. A haemodynamically unstable PE is high-risk regardless of PESI.",
+  "notes": "Classes I–II ≈ sPESI 0. PESI does not by itself indicate thrombolysis — a normotensive PE with RV dysfunction plus a positive troponin is 'intermediate-high' and needs monitoring for hemodynamic decompensation, not upfront lysis. A hemodynamically unstable PE is high-risk regardless of PESI.",
   "buildNote": "Formula engine — total = age (years) + weighted select points. Five prognostic classes."
 }

@@ -48,10 +48,10 @@
     ] }
   ],
   "interpretation": [
-    { "min": 0, "max": 5, "label": "Low risk — ~7.5% CI-AKI", "detail": "Standard periprocedural hydration is reasonable. Still minimise contrast volume and check the contrast-to-MACD ratio.", "severity": "low" },
-    { "min": 6, "max": 10, "label": "Moderate risk — ~14.0% CI-AKI", "detail": "Prioritise IV isotonic saline hydration (LVEDP-guided where available), minimise contrast, and consider a high-dose statin if not already on one.", "severity": "moderate" },
+    { "min": 0, "max": 5, "label": "Low risk — ~7.5% CI-AKI", "detail": "Standard periprocedural hydration is reasonable. Still minimize contrast volume and check the contrast-to-MACD ratio.", "severity": "low" },
+    { "min": 6, "max": 10, "label": "Moderate risk — ~14.0% CI-AKI", "detail": "Prioritize IV isotonic saline hydration (LVEDP-guided where available), minimize contrast, and consider a high-dose statin if not already on one.", "severity": "moderate" },
     { "min": 11, "max": 15, "label": "High risk — ~26.1% CI-AKI", "detail": "LVEDP-guided hydration protocol, IVUS-first to cut contrast volume, keep the contrast/MACD ratio under 1.0, hold metformin after the case if eGFR < 30–45.", "severity": "high" },
-    { "min": 16, "max": 100, "label": "Very high risk — ~57.3% CI-AKI", "detail": "Maximal contrast minimisation, LVEDP-guided hydration, nephrology involvement, and an explicit conversation about deferring the procedure or staging it if clinically possible.", "severity": "critical" }
+    { "min": 16, "max": 100, "label": "Very high risk — ~57.3% CI-AKI", "detail": "Maximal contrast minimization, LVEDP-guided hydration, nephrology involvement, and an explicit conversation about deferring the procedure or staging it if clinically possible.", "severity": "critical" }
   ],
   "notes": "Renal function is scored one way, not added twice — use the creatinine option only if eGFR isn't available. Derived and validated in PCI patients; applies less cleanly to non-PCI contrast studies (e.g. a straightforward CT), where the underlying risk factors still matter but the point weights weren't derived for that setting. Related: Contrast-Associated AKI — Prevention (hydration protocol, MACD, drug evidence), AKI Staging & Renal Replacement Therapy.",
   "buildNote": "Additive engine. Contrast volume (continuous, +1/100 mL) modelled as a bucketed select since the engine scores discrete options — matches the source's own point table exactly at each 100 mL boundary. Companion to the contrast-associated-aki reference module, which already carries the full prevention protocol (hydration, MACD, drug evidence)."

@@ -66,7 +66,7 @@
   ],
   "summary": "Shock is tissue hypoperfusion, not hypotension. Identify the broken part fast — tank (hypovolemic), pump (cardiogenic), blocked flow (obstructive), or wide pipes (distributive) — then fix it specifically. The first three are low-CO / high-SVR states; distributive is the low-SVR state.",
   "whyThisMatters": "Shock is tissue hypoperfusion, not a blood-pressure number — patients are in shock with a normal BP and out of it with a low one — and treating before naming which of the four mechanisms is broken means giving fluid to a failing pump or a pressor to an empty tank.",
-  "clinicalTakeaway": "Run the 60-second bedside algorithm to place the patient: tank (hypovolaemic), pump (cardiogenic), blocked flow (obstructive), or wide pipes (distributive). The first three are low-CO/high-SVR; distributive is low-SVR. Fix the specific mechanism, and remember shock is often mixed.",
+  "clinicalTakeaway": "Run the 60-second bedside algorithm to place the patient: tank (hypovolemic), pump (cardiogenic), blocked flow (obstructive), or wide pipes (distributive). The first three are low-CO/high-SVR; distributive is low-SVR. Fix the specific mechanism, and remember shock is often mixed.",
   "body": [
     {
       "type": "text",

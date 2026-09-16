@@ -16,7 +16,7 @@
   "changelog": [{ "version": 1, "date": "2026-09-02", "change": "Initial entry — from ED_ICU_OR_Calculators.xlsx." }],
   "engine": "additive",
   "settings": ["OR", "Anesthesia"],
-  "purpose": "A 10-point score calculated from three intraoperative parameters at the end of general / abdominal surgery, predicting 30-day major complications and death. Uses data the anaesthetic record already contains.",
+  "purpose": "A 10-point score calculated from three intraoperative parameters at the end of general / abdominal surgery, predicting 30-day major complications and death. Uses data the anesthetic record already contains.",
   "items": [
     { "key": "ebl", "label": "Estimated blood loss (mL)", "options": [{ "label": "> 1000", "points": 0 }, { "label": "601–1000", "points": 1 }, { "label": "101–600", "points": 2 }, { "label": "≤ 100", "points": 3 }] },
     { "key": "lowestMap", "label": "Lowest mean arterial pressure (mmHg)", "options": [{ "label": "< 40", "points": 0 }, { "label": "40–54", "points": 1 }, { "label": "55–69", "points": 2 }, { "label": "≥ 70", "points": 3 }] },

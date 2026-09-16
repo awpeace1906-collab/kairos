@@ -62,7 +62,7 @@
   ],
   "summary": "Which receptors each beta-blocker actually hits, why each blockade produces its effect, and the three places a one-grid chart oversimplifies (selectivity is dose-dependent; the Na⁺ and K⁺ columns are the overdose / arrhythmia stories).",
   "whyThisMatters": "The one-page beta-blocker selectivity grid oversimplifies in ways that matter at the bedside: β1-selectivity is dose-dependent and disappears at high dose, and the sodium- and potassium-channel columns are really the overdose and arrhythmia stories, not routine pharmacology.",
-  "clinicalTakeaway": "Use β1-selective agents in reactive airway disease and diabetes — but remember selectivity is lost at high dose. In beta-blocker overdose, the membrane-stabilising (Na⁺-channel) agents like propranolol widen the QRS, and sotalol prolongs the QT — treat those as their own toxidromes.",
+  "clinicalTakeaway": "Use β1-selective agents in reactive airway disease and diabetes — but remember selectivity is lost at high dose. In beta-blocker overdose, the membrane-stabilizing (Na⁺-channel) agents like propranolol widen the QRS, and sotalol prolongs the QT — treat those as their own toxidromes.",
   "body": [
     {
       "type": "heading",

@@ -67,7 +67,7 @@
   ],
   "summary": "Indication, constituents, effect, and the clock on each of the six core products, plus the fibrinogen-concentrate-vs-cryoprecipitate decision. AABB restrictive RBC thresholds: 7 g/dL general, 7.5 cardiac surgery, 8 orthopedic surgery / known CVD. Platelet thresholds (2025 AABB/ICTMG): 10 prophylaxis, 50 major surgery, 100 neuro/posterior-eye.",
   "whyThisMatters": "Product transfusion errors come from not knowing the clock (thawed plasma, platelet shelf-life), from transfusing above the restrictive threshold out of habit, and from reaching for cryoprecipitate when fibrinogen concentrate is the faster, more predictable fix.",
-  "clinicalTakeaway": "Transfuse red cells to a restrictive threshold (7 g/dL general, 7.5 cardiac surgery, 8 orthopaedic / known CVD). Know each product's time-and-temperature window. For hypofibrinogenaemia, fibrinogen concentrate is faster and dose-predictable; use cryoprecipitate when that is what is available.",
+  "clinicalTakeaway": "Transfuse red cells to a restrictive threshold (7 g/dL general, 7.5 cardiac surgery, 8 orthopedic / known CVD). Know each product's time-and-temperature window. For hypofibrinogenemia, fibrinogen concentrate is faster and dose-predictable; use cryoprecipitate when that is what is available.",
   "body": [
     {
       "type": "heading",

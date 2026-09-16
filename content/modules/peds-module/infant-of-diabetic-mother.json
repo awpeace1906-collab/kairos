@@ -38,17 +38,17 @@
     {
       "version": 1,
       "date": "2026-09-02",
-      "change": "Initial entry — the hyperinsulinaemia mechanism, the complications by system, the two competing glucose thresholds (AAP vs PES), and the treatment of symptomatic hypoglycaemia / hypocalcaemia / polycythaemia."
+      "change": "Initial entry — the hyperinsulinemia mechanism, the complications by system, the two competing glucose thresholds (AAP vs PES), and the treatment of symptomatic hypoglycemia / hypocalcemia / polycythemia."
     }
   ],
   "kind": "reference",
-  "purpose": "Maternal hyperglycaemia → fetal hyperinsulinaemia → macrosomia + delayed lung maturation, and after birth the hallmark risk: neonatal hypoglycaemia. Feed early, screen glucose, and know which threshold your unit uses.",
+  "purpose": "Maternal hyperglycemia → fetal hyperinsulinemia → macrosomia + delayed lung maturation, and after birth the hallmark risk: neonatal hypoglycemia. Feed early, screen glucose, and know which threshold your unit uses.",
   "ageRange": "Newborn",
   "sourceOfTruth": [],
   "body": [
     {
       "type": "text",
-      "text": "Maternal hyperglycaemia crosses the placenta → fetal hyperglycaemia → pancreatic β-cell hyperplasia and hyperinsulinaemia → fat / glycogen deposition (macrosomia), organomegaly, delayed surfactant maturation. At birth the maternal glucose supply stops while fetal insulin is still transiently high → hypoglycaemia."
+      "text": "Maternal hyperglycemia crosses the placenta → fetal hyperglycemia → pancreatic β-cell hyperplasia and hyperinsulinemia → fat / glycogen deposition (macrosomia), organomegaly, delayed surfactant maturation. At birth the maternal glucose supply stops while fetal insulin is still transiently high → hypoglycemia."
     },
     {
       "type": "heading",
@@ -68,19 +68,19 @@
         ],
         [
           "Metabolic",
-          "Hypoglycaemia (most common complication), hypocalcaemia, hypomagnesaemia"
+          "Hypoglycemia (most common complication), hypocalcemia, hypomagnesemia"
         ],
         [
           "Cardio/pulm/CNS",
-          "RDS (hyperinsulinaemia delays surfactant), perinatal asphyxia, hypertrophic cardiomyopathy (usually transient, septal-predominant)"
+          "RDS (hyperinsulinemia delays surfactant), perinatal asphyxia, hypertrophic cardiomyopathy (usually transient, septal-predominant)"
         ],
         [
-          "Haematologic",
-          "Polycythaemia (relative fetal hypoxia drives EPO), hyperbilirubinaemia"
+          "Hematologic",
+          "Polycythemia (relative fetal hypoxia drives EPO), hyperbilirubinemia"
         ],
         [
           "Congenital anomalies",
-          "Risk tied to first-trimester glycaemic control (HbA1c) — cardiac (VSD, transposition), neural tube defects, caudal regression, renal"
+          "Risk tied to first-trimester glycemic control (HbA1c) — cardiac (VSD, transposition), neural tube defects, caudal regression, renal"
         ]
       ]
     },
@@ -105,13 +105,13 @@
         [
           "PES 2015 (persistent)",
           "50 mg/dL through 48 h; 60 mg/dL thereafter",
-          "Persistent / recurrent hypoglycaemia beyond 48 h — evaluate for an underlying disorder"
+          "Persistent / recurrent hypoglycemia beyond 48 h — evaluate for an underlying disorder"
         ]
       ]
     },
     {
       "type": "text",
-      "text": "Symptoms of neonatal hypoglycaemia: jitteriness, irritability, high-pitched cry; lethargy, hypotonia, poor feeding; apnoea, cyanosis; seizures (severe / prolonged)."
+      "text": "Symptoms of neonatal hypoglycemia: jitteriness, irritability, high-pitched cry; lethargy, hypotonia, poor feeding; apnea, cyanosis; seizures (severe / prolonged)."
     },
     {
       "type": "heading",
@@ -126,7 +126,7 @@
       ],
       "rows": [
         [
-          "Symptomatic hypoglycaemia",
+          "Symptomatic hypoglycemia",
           "D10W 2 mL/kg IV bolus, then a continuous infusion at a glucose infusion rate (GIR) of 6–8 mg/kg/min; recheck and titrate"
         ],
         [
@@ -134,12 +134,12 @@
           "Trial oral feeding first if feasible, recheck within ~1 h; if still low or symptomatic, treat as above"
         ],
         [
-          "Hypocalcaemia",
+          "Hypocalcemia",
           "10% calcium gluconate 1–2 mL/kg (100–200 mg/kg) IV slowly over 10 min with cardiac monitoring; may repeat"
         ],
         [
-          "Polycythaemia",
-          "Monitor haematocrit; partial exchange transfusion if symptomatic and Hct markedly elevated"
+          "Polycythemia",
+          "Monitor hematocrit; partial exchange transfusion if symptomatic and Hct markedly elevated"
         ]
       ]
     },
@@ -149,5 +149,5 @@
       "text": "GIR (mg/kg/min) = (IV rate mL/hr × dextrose % × 0.167) ÷ weight kg. Start at 6–8; escalate the concentration (needs central access above ~12.5%) or rate if glucose stays low — persistent need for GIR > 8–10 raises concern for hyperinsulinism."
     }
   ],
-  "buildNote": "Tier 1. A GIR calculator is a natural companion (formula engine). Antenatal glycaemic control (target HbA1c) is the upstream prevention.  Related: nrp-algorithm, neonatal-seizures, neonatal-jaundice, perioperative-glycemic-management."
+  "buildNote": "Tier 1. A GIR calculator is a natural companion (formula engine). Antenatal glycemic control (target HbA1c) is the upstream prevention.  Related: nrp-algorithm, neonatal-seizures, neonatal-jaundice, perioperative-glycemic-management."
 }

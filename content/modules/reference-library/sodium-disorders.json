@@ -60,9 +60,9 @@
       "change": "Initial entry — hyponatremia severity-based management with 3% NaCl dosing, ODS-prevention correction limits + the DDAVP/D5W rescue, SIADH criteria, hypernatremia classification, the free-water-deficit formula, and ICU sodium drift."
     }
   ],
-  "summary": "In symptomatic hyponatraemia give 3% NaCl 100–150 mL IV over ~20 min (repeat ×2), targeting +4–6 mEq/L in the first hour to stop the emergency — then STOP and go slow. Overcorrection is the dangerous complication: re-lower with DDAVP + D5W if you exceed 8–10 mEq/L in 24 h.",
-  "whyThisMatters": "In sodium disorders the treatment is more dangerous than the derangement: too-fast correction of chronic hyponatraemia causes osmotic demyelination, an often-irreversible catastrophe, while under-treating a seizing patient wastes the window when hypertonic saline works.",
-  "clinicalTakeaway": "For symptomatic hyponatraemia, give 3% NaCl 100–150 mL over ~20 min (repeat up to ×2) to raise Na⁺ 4–6 mEq/L and stop the emergency — then STOP. Cap correction at 8 mEq/L in 24 h; if you overshoot, re-lower with DDAVP + D5W. For hypernatraemia, replace the free-water deficit slowly (≤ 10–12 mEq/L/day).",
+  "summary": "In symptomatic hyponatremia give 3% NaCl 100–150 mL IV over ~20 min (repeat ×2), targeting +4–6 mEq/L in the first hour to stop the emergency — then STOP and go slow. Overcorrection is the dangerous complication: re-lower with DDAVP + D5W if you exceed 8–10 mEq/L in 24 h.",
+  "whyThisMatters": "In sodium disorders the treatment is more dangerous than the derangement: too-fast correction of chronic hyponatremia causes osmotic demyelination, an often-irreversible catastrophe, while under-treating a seizing patient wastes the window when hypertonic saline works.",
+  "clinicalTakeaway": "For symptomatic hyponatremia, give 3% NaCl 100–150 mL over ~20 min (repeat up to ×2) to raise Na⁺ 4–6 mEq/L and stop the emergency — then STOP. Cap correction at 8 mEq/L in 24 h; if you overshoot, re-lower with DDAVP + D5W. For hypernatremia, replace the free-water deficit slowly (≤ 10–12 mEq/L/day).",
   "body": [
     {
       "type": "heading",
@@ -97,7 +97,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Seizure in hyponatraemia: give 3% NaCl 150 mL IV bolus immediately regardless of the baseline Na⁺ — correct until the seizure stops, then slow down aggressively."
+      "text": "Seizure in hyponatremia: give 3% NaCl 150 mL IV bolus immediately regardless of the baseline Na⁺ — correct until the seizure stops, then slow down aggressively."
     },
     {
       "type": "heading",
@@ -108,7 +108,7 @@
       "type": "list",
       "items": [
         "≤ 8 mEq/L in any 24 h (some sources allow 10–12 in average-risk patients; 8 is the safer default). ≤ 18 mEq/L cumulative over 48 h.",
-        "Lower ceiling — ≤ 8 mEq/L/24 h — in high ODS risk: chronic hyponatraemia, alcohol use, malnutrition, hypokalaemia, advanced liver disease, hypokalaemic states.",
+        "Lower ceiling — ≤ 8 mEq/L/24 h — in high ODS risk: chronic hyponatremia, alcohol use, malnutrition, hypokalemia, advanced liver disease, hypokalemic states.",
         "Overcorrected (> 8–10 mEq/L in 24 h): re-lower with DDAVP 1–2 mcg IV + D5W IV. Relowering is SAFE if done promptly.",
         "Osmotic demyelination (ODS / central pontine myelinolysis) manifests 2–6 days AFTER the overcorrection — dysarthria, dysphagia, flaccid then spastic quadriparesis, 'locked-in'. Prevention is the only effective strategy."
       ]
@@ -121,16 +121,16 @@
     {
       "type": "list",
       "items": [
-        "True hypotonic hyponatraemia (serum osmolality low).",
+        "True hypotonic hyponatremia (serum osmolality low).",
         "Urine osmolality > 100 mOsm/kg (inappropriately concentrated).",
         "Urine Na⁺ > 40 mEq/L (renal salt wasting) on a normal salt/water intake.",
-        "Clinically euvolaemic (no oedema, no orthostasis).",
+        "Clinically euvolemic (no edema, no orthostasis).",
         "Normal thyroid, adrenal, and renal function; no recent diuretic."
       ]
     },
     {
       "type": "text",
-      "text": "Beer potomania / 'tea-and-toast' hyponatraemia: severe hyponatraemia with a VERY LOW urine osmolality (< 100) — low solute intake limits free-water excretion. It corrects fast once solute is given, so it's a high ODS-risk scenario — anticipate autocorrection and be ready with DDAVP."
+      "text": "Beer potomania / 'tea-and-toast' hyponatremia: severe hyponatremia with a VERY LOW urine osmolality (< 100) — low solute intake limits free-water excretion. It corrects fast once solute is given, so it's a high ODS-risk scenario — anticipate autocorrection and be ready with DDAVP."
     },
     {
       "type": "heading",
@@ -145,27 +145,27 @@
       ],
       "rows": [
         [
-          "Hypovolaemic",
-          "GI losses, diuretics, insensible losses — ISOTONIC saline first to restore perfusion, then switch to D5W or 0.45% NaCl once haemodynamically stable"
+          "Hypovolemic",
+          "GI losses, diuretics, insensible losses — ISOTONIC saline first to restore perfusion, then switch to D5W or 0.45% NaCl once hemodynamically stable"
         ],
         [
-          "Euvolaemic",
+          "Euvolemic",
           "Central DI (lack of ADH) or nephrogenic DI (ADH resistance) — D5W or 0.45% NaCl; DDAVP 1–4 mcg IV/SC q12–24 h for central DI"
         ],
         [
-          "Hypervolaemic",
+          "Hypervolemic",
           "Iatrogenic (NaHCO₃ infusion, hypertonic-saline overuse) — D5W + furosemide to excrete the free-water-poor volume"
         ]
       ]
     },
     {
       "type": "text",
-      "text": "Free water deficit (L) = 0.6 × TBW(kg) × [(Na⁺ / 140) − 1] (use 0.5 for women/elderly). Replace over 48–72 h; maximum rate of Na⁺ decline 0.5 mEq/L/hr (≤ 10–12/24 h) — faster risks cerebral oedema. Add ongoing and insensible losses to the deficit."
+      "text": "Free water deficit (L) = 0.6 × TBW(kg) × [(Na⁺ / 140) − 1] (use 0.5 for women/elderly). Replace over 48–72 h; maximum rate of Na⁺ decline 0.5 mEq/L/hr (≤ 10–12/24 h) — faster risks cerebral edema. Add ongoing and insensible losses to the deficit."
     },
     {
       "type": "callout",
       "tone": "info",
-      "text": "'ICU sodium drift': hypernatraemia develops insidiously in intubated patients from inadequate free water in tube feeds, hyperosmolar IV fluids, or excess insensible losses. A daily free-water balance review prevents it."
+      "text": "'ICU sodium drift': hypernatremia develops insidiously in intubated patients from inadequate free water in tube feeds, hyperosmolar IV fluids, or excess insensible losses. A daily free-water balance review prevents it."
     }
   ],
   "related": [

@@ -55,7 +55,7 @@
     {
       "version": 3,
       "date": "2026-09-02",
-      "change": "v3 from the CV Ventilator Pocket Guide: added waveform/loop interpretation, patient-ventilator asynchrony, VIDD + tracheostomy timing (TracMan), the alarm patient-side-vs-vent-side table + the Pplat branch-point manoeuvre; expanded DOPE → DOPES/DOTTS and the post-extubation support bullet (Hernandez 2016 HFNC-default) + SBT screening / RSBI detail."
+      "change": "v3 from the CV Ventilator Pocket Guide: added waveform/loop interpretation, patient-ventilator asynchrony, VIDD + tracheostomy timing (TracMan), the alarm patient-side-vs-vent-side table + the Pplat branch-point maneuver; expanded DOPE → DOPES/DOTTS and the post-extubation support bullet (Hernandez 2016 HFNC-default) + SBT screening / RSBI detail."
     },
     {
       "version": 2,
@@ -208,7 +208,7 @@
     },
     {
       "type": "text",
-      "text": "The goal is NOT low-pressure protection of a stiff lung — it is deliberately minimising minute ventilation so an obstructed lung has time to fully exhale. VT 5-8 mL/kg, RR 10-14/min (deliberately low), high inspiratory flow 60-100 L/min (shortens Ti, maximises expiratory time), permissive hypercapnia tolerated while pH > 7.2 (case reports to PaCO₂ > 200 / pH < 7.0 without apparent harm when oxygenation is maintained). Watch the flow-time waveform (expiratory flow not reaching zero = incomplete exhalation), Pplat, and auto-PEEP via expiratory hold. Sedation ± NMB is often needed to stop the patient fighting a hypoventilating strategy."
+      "text": "The goal is NOT low-pressure protection of a stiff lung — it is deliberately minimizing minute ventilation so an obstructed lung has time to fully exhale. VT 5-8 mL/kg, RR 10-14/min (deliberately low), high inspiratory flow 60-100 L/min (shortens Ti, maximizes expiratory time), permissive hypercapnia tolerated while pH > 7.2 (case reports to PaCO₂ > 200 / pH < 7.0 without apparent harm when oxygenation is maintained). Watch the flow-time waveform (expiratory flow not reaching zero = incomplete exhalation), Pplat, and auto-PEEP via expiratory hold. Sedation ± NMB is often needed to stop the patient fighting a hypoventilating strategy."
     },
     {
       "type": "heading",
@@ -220,10 +220,10 @@
       "items": [
         "Boles / ERS-ATS 2007 classification: SIMPLE = extubated after the first SBT; DIFFICULT = up to 3 SBTs or up to 7 days; PROLONGED = > 3 SBTs or > 7 days.",
         "Assess readiness DAILY with objective criteria; the SBT itself is the primary test of extubation readiness — do not rely on RSBI in isolation (RSBI < 105 supports, but doesn't replace, a passed SBT).",
-        "SBT screening: P/F > 150–200, FiO2 ≤ 0.4–0.5, PEEP ≤ 5–8, minimal / no pressors, no active ischaemia, arousable and initiating breaths, afebrile, and the cause of respiratory failure improving. SBT = T-piece / CPAP 5 / PS 5–8 for 30–120 min. RSBI (Tobin index) = RR ÷ VT(L); ≥ 105 → substantially higher weaning-failure risk — one data point, integrated with secretion burden, cough strength, and trajectory.",
-        "Standardised, RT-/RN-driven protocols shorten ventilator duration vs. ad hoc physician judgement.",
+        "SBT screening: P/F > 150–200, FiO2 ≤ 0.4–0.5, PEEP ≤ 5–8, minimal / no pressors, no active ischemia, arousable and initiating breaths, afebrile, and the cause of respiratory failure improving. SBT = T-piece / CPAP 5 / PS 5–8 for 30–120 min. RSBI (Tobin index) = RR ÷ VT(L); ≥ 105 → substantially higher weaning-failure risk — one data point, integrated with secretion burden, cough strength, and trajectory.",
+        "Standardized, RT-/RN-driven protocols shorten ventilator duration vs. ad hoc physician judgement.",
         "Reintubation is independently associated with worse outcomes — a failed extubation is not a neutral 'try again'.",
-        "Cuff-leak test before extubating a patient at risk of laryngeal oedema (traumatic / prolonged intubation, large tube, prone). A reduced / absent leak flags post-extubation stridor and reintubation risk → IV corticosteroids ≥ 4 h before a re-attempt (benefit confined to the failed-leak subgroup).",
+        "Cuff-leak test before extubating a patient at risk of laryngeal edema (traumatic / prolonged intubation, large tube, prone). A reduced / absent leak flags post-extubation stridor and reintubation risk → IV corticosteroids ≥ 4 h before a re-attempt (benefit confined to the failed-leak subgroup).",
         "Post-extubation support (Hernandez 2016): extubate HIGH-RISK patients directly onto prophylactic HFNC as the default (non-inferior to NIV, better tolerated); in low-risk patients HFNC beat conventional O2. Reserve NIV for hypercapnic / COPD / heart-failure phenotypes, or the highest risk-factor burden (post hoc: NIV beat HFNC at ≥ 4 risk factors, 23.9% vs 45.7% reintubation). High-risk = any of: age > 65 · HF as the vent indication · moderate–severe COPD · APACHE II > 12 · BMI > 30 · difficult / prolonged weaning · ≥ 2 comorbidities · MV > 7 days.",
         "Full liberation pathway — the readiness screen detail, SBT technique, cuff-leak test + prophylactic steroids, high-risk extubation to HFNC/NIV, and the failure-to-wean work-up — is in `ventilator-liberation-weaning`."
       ]
@@ -269,11 +269,11 @@
         [
           "Pressure–volume loop",
           "Narrow, upright loop",
-          "Decreased compliance — ARDS, fibrosis, oedema"
+          "Decreased compliance — ARDS, fibrosis, edema"
         ],
         [
           "Pressure–volume loop",
-          "Loop shifts LEFT after a recruitment manoeuvre",
+          "Loop shifts LEFT after a recruitment maneuver",
           "Recruitment effective, atelectasis reversed (RIGHT shift = dynamic hyperinflation / auto-PEEP developing)"
         ],
         [
@@ -300,7 +300,7 @@
     },
     {
       "type": "text",
-      "text": "A mistimed breath can deliver an effectively much larger tidal volume than the number on the screen — common, under-recognised, and directly relevant to lung protection. Most asynchrony is a waveform-recognition problem before it is agitation or a rising sedation requirement."
+      "text": "A mistimed breath can deliver an effectively much larger tidal volume than the number on the screen — common, under-recognized, and directly relevant to lung protection. Most asynchrony is a waveform-recognition problem before it is agitation or a rising sedation requirement."
     },
     {
       "type": "table",
@@ -351,7 +351,7 @@
       "type": "list",
       "items": [
         "Ventilator-induced diaphragm dysfunction: controlled mechanical ventilation causes diaphragm atrophy at roughly 6% per day of FULL support. Preserving partial spontaneous effort (pressure support rather than full control once the acute phase passes) mitigates it. Serial diaphragm ultrasound (thickening fraction, excursion) can flag it before a failed SBT.",
-        "Tracheostomy timing: TracMan (JAMA 2013, n=909) — early (≤ 4 d) vs late (≥ 10 d) showed no difference in 30-day mortality, ICU, or hospital stay. Later meta-analyses suggest a modest early mortality / VAP benefit on weak evidence. No mandate to rush; reasonable once prolonged ventilation is genuinely anticipated (commonly 7–10 days)."
+        "Tracheostomy timing: TracMan (JAMA 2013, n=909) — early (≤ 4 d) vs late (≥ 10 d) showed no difference in 30-day mortality, ICU, or hospital stay. Later meta-analyzes suggest a modest early mortality / VAP benefit on weak evidence. No mandate to rush; reasonable once prolonged ventilation is genuinely anticipated (commonly 7–10 days)."
       ]
     },
     {
@@ -362,7 +362,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "text": "The differentiating manoeuvre for a HIGH-pressure alarm: an inspiratory pause hold to check Pplat. High PIP + NORMAL Pplat = airway resistance (secretions, bronchospasm, tube kink / bite). High PIP + HIGH Pplat = a compliance problem (consolidation, collapse, oedema, pneumothorax, auto-PEEP, abdominal distension). This single manoeuvre is the fastest branch point in the whole tree."
+      "text": "The differentiating maneuver for a HIGH-pressure alarm: an inspiratory pause hold to check Pplat. High PIP + NORMAL Pplat = airway resistance (secretions, bronchospasm, tube kink / bite). High PIP + HIGH Pplat = a compliance problem (consolidation, collapse, edema, pneumothorax, auto-PEEP, abdominal distension). This single maneuver is the fastest branch point in the whole tree."
     },
     {
       "type": "table",

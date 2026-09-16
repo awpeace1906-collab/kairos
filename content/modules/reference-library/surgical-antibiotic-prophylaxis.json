@@ -145,7 +145,7 @@
         ],
         [
           "Azithromycin",
-          "Caesarean add-on for high-risk endometritis",
+          "Cesarean add-on for high-risk endometritis",
           "500 mg IV ×1 over 60 min",
           "—",
           "single dose, no redose"
@@ -171,7 +171,7 @@
           "Vancomycin + gentamicin"
         ],
         [
-          "Orthopaedic (implant)",
+          "Orthopedic (implant)",
           "Cefazolin 2 g",
           "Vancomycin ± gentamicin (MRSA risk)"
         ],
@@ -186,12 +186,12 @@
           "Clindamycin + gentamicin"
         ],
         [
-          "Gynaecologic",
+          "Gynecologic",
           "Cefazolin 2 g",
           "Clindamycin + gentamicin"
         ],
         [
-          "Caesarean section",
+          "Cesarean section",
           "Cefazolin 2–3 g ± azithromycin 500 mg",
           "Clindamycin 900 mg + gentamicin 5 mg/kg"
         ],
@@ -215,7 +215,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "text": "For Caesarean section, give the prophylactic dose BEFORE incision (not after cord clamp) — this halves endometritis and wound infection without harming the neonate. Redose cefazolin q4h if the operation is prolonged or blood loss exceeds 1500 mL."
+      "text": "For Cesarean section, give the prophylactic dose BEFORE incision (not after cord clamp) — this halves endometritis and wound infection without harming the neonate. Redose cefazolin q4h if the operation is prolonged or blood loss exceeds 1500 mL."
     },
     {
       "type": "callout",

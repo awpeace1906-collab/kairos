@@ -58,7 +58,7 @@
         ["Plutonium, americium, curium, californium, other transuranics; some rare earths (Y, Sc, lanthanides)", "Ca-DTPA then Zn-DTPA", "IV (or nebulized for pure inhalation)"],
         ["Uranium", "Sodium bicarbonate", "Alkalinize urine to pH 8-9; uranium is chemically nephrotoxic"],
         ["Tritium (H-3)", "Forced oral fluids / hydration", "Dilution and diuresis; halves the biological half-life"],
-        ["Strontium-90", "Oral calcium / phosphate, consider stable strontium; ± aluminium hydroxide to reduce gut uptake", "Supportive; discuss with REAC/TS"]
+        ["Strontium-90", "Oral calcium / phosphate, consider stable strontium; ± aluminum hydroxide to reduce gut uptake", "Supportive; discuss with REAC/TS"]
       ]
     },
     { "type": "heading", "level": 2, "text": "Potassium iodide (KI) — radioiodine thyroid blocking" },

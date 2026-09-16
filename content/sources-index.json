@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T00:00:00Z",
+  "generatedAt": "2026-09-16T00:00:00Z",
   "groupOrder": [
     "Guidelines & consensus statements",
     "Randomized trials & major studies",
@@ -6567,7 +6567,7 @@
       "usedBy": [
         {
           "id": "csection-analgesia-prospect",
-          "title": "Post-Caesarean Analgesia (PROSPECT 2026)",
+          "title": "Post-Cesarean Analgesia (PROSPECT 2026)",
           "section": "Reference Library",
           "route": "/reference-library/obstetric-gynecologic/csection-analgesia-prospect"
         }
@@ -7035,7 +7035,7 @@
       "usedBy": [
         {
           "id": "csection-analgesia-prospect",
-          "title": "Post-Caesarean Analgesia (PROSPECT 2026)",
+          "title": "Post-Cesarean Analgesia (PROSPECT 2026)",
           "section": "Reference Library",
           "route": "/reference-library/obstetric-gynecologic/csection-analgesia-prospect"
         }

@@ -40,12 +40,12 @@
     {
       "version": 3,
       "date": "2026-09-09",
-      "change": "Plan A now specifies VL > DL and hyperangulated > Macintosh (COVALENT 2026); post-intubation note on alkalinised-lidocaine cuff filling for longer cases (sore-throat / cough reduction)."
+      "change": "Plan A now specifies VL > DL and hyperangulated > Macintosh (COVALENT 2026); post-intubation note on alkalinized-lidocaine cuff filling for longer cases (sore-throat / cough reduction)."
     },
     {
       "version": 2,
       "date": "2026-09-02",
-      "change": "Added a physiologic-optimisation step (four deadly profiles) and NIV/PEEP preoxygenation per PREOXI; cross-linked the new physiologically-difficult-airway reference + modified-shock-index + capnography."
+      "change": "Added a physiologic-optimization step (four deadly profiles) and NIV/PEEP preoxygenation per PREOXI; cross-linked the new physiologically-difficult-airway reference + modified-shock-index + capnography."
     },
     {
       "version": 1,
@@ -77,7 +77,7 @@
     {
       "id": "s1b",
       "type": "step",
-      "prompt": "1b. Physiologic optimisation",
+      "prompt": "1b. Physiologic optimization",
       "body": "Anatomy predicts the view; physiology decides survival. Screen for the four deadly profiles — hypoxemia (shunt), hypotension (SI > 0.8 / MSI ≥ 1.3), metabolic acidosis (compensating minute ventilation), RV failure — and resuscitate them BEFORE induction. Pressor on the pole, not a reflex fluid bolus. See the Physiologically Difficult Airway reference."
     },
     {
@@ -90,13 +90,13 @@
       "id": "s3",
       "type": "step",
       "prompt": "3. Plan A — first attempt",
-      "body": "Direct or video laryngoscopy with your standard induction agent + paralytic (see the Drug & Dosing cards). Optimise position (ear-to-sternal-notch), external laryngeal manipulation, bougie ready. Device: video laryngoscopy beats direct on first-pass success and complications, and a HYPERANGULATED VL blade beats a Macintosh-shaped one (COVALENT 2026: first-pass 87.6% VLH vs 82.9% VLM vs 78.2% DL; complications ~11% VLH vs ~24% for DL/VLM) — default to VL, reach for the hyperangulated blade + a rigid stylet when the view is likely hard. Site-to-site variability was wide, so local skill still matters; keep a DL option ready."
+      "body": "Direct or video laryngoscopy with your standard induction agent + paralytic (see the Drug & Dosing cards). Optimize position (ear-to-sternal-notch), external laryngeal manipulation, bougie ready. Device: video laryngoscopy beats direct on first-pass success and complications, and a HYPERANGULATED VL blade beats a Macintosh-shaped one (COVALENT 2026: first-pass 87.6% VLH vs 82.9% VLM vs 78.2% DL; complications ~11% VLH vs ~24% for DL/VLM) — default to VL, reach for the hyperangulated blade + a rigid stylet when the view is likely hard. Site-to-site variability was wide, so local skill still matters; keep a DL option ready."
     },
     {
       "id": "s4",
       "type": "step",
       "prompt": "4. Plan B — failed first attempt",
-      "body": "Change one thing: alternate blade or a video device, add a bougie, reposition, second operator. Limit to a small number of attempts — each attempt worsens oedema and desaturation."
+      "body": "Change one thing: alternate blade or a video device, add a bougie, reposition, second operator. Limit to a small number of attempts — each attempt worsens edema and desaturation."
     },
     {
       "id": "s5",
@@ -114,7 +114,7 @@
       "id": "s7",
       "type": "step",
       "prompt": "7. Post-intubation confirmation",
-      "body": "Waveform capnography (gold standard) + bilateral breath sounds + no epigastric sounds. CXR for depth. Secure the tube, set the ventilator, start post-intubation sedation/analgesia. For an anticipated longer intubation, filling the cuff with alkalinised lidocaine (2% lidocaine + 8.4% bicarbonate ~19:1) instead of air gives continuous trans-cuff tracheal anaesthesia and cuts post-extubation sore throat (RR ~0.46) and cough at extubation (RR ~0.3–0.4); allow a lag for diffusion and keep monitoring cuff pressure."
+      "body": "Waveform capnography (gold standard) + bilateral breath sounds + no epigastric sounds. CXR for depth. Secure the tube, set the ventilator, start post-intubation sedation/analgesia. For an anticipated longer intubation, filling the cuff with alkalinized lidocaine (2% lidocaine + 8.4% bicarbonate ~19:1) instead of air gives continuous trans-cuff tracheal anesthesia and cuts post-extubation sore throat (RR ~0.46) and cough at extubation (RR ~0.3–0.4); allow a lag for diffusion and keep monitoring cuff pressure."
     },
     {
       "id": "s8",

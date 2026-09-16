@@ -97,7 +97,7 @@
         ],
         [
           "HR < 60 despite 60 s of coordinated compressions + PPV",
-          "Epinephrine (see below) + a volume expander if blood loss / hypovolaemia is suspected. Give epinephrine while continuing compressions and ventilation."
+          "Epinephrine (see below) + a volume expander if blood loss / hypovolemia is suspected. Give epinephrine while continuing compressions and ventilation."
         ]
       ]
     },
@@ -122,19 +122,19 @@
         [
           "Volume expander",
           "10 mL/kg NS or O-negative PRBC IV over 5–10 min",
-          "For suspected blood loss / hypovolaemia with a poor response to resuscitation. Can repeat."
+          "For suspected blood loss / hypovolemia with a poor response to resuscitation. Can repeat."
         ],
         [
           "Dextrose 10%",
-          "2 mL/kg IV if hypoglycaemic post-resuscitation",
-          "Check glucose once stabilised — especially IDM / preterm / SGA."
+          "2 mL/kg IV if hypoglycemic post-resuscitation",
+          "Check glucose once stabilized — especially IDM / preterm / SGA."
         ]
       ]
     },
     {
       "type": "callout",
       "tone": "warning",
-      "text": "If there's no improvement despite adequate ventilation AND compressions, actively look for: hypovolaemia, pneumothorax, a congenital anomaly (e.g. diaphragmatic hernia — do not bag-mask, intubate + place an OG tube), and correctable technical problems (mask seal, tube position/patency, equipment) BEFORE escalating drug doses. Acrocyanosis with a pink trunk is normal."
+      "text": "If there's no improvement despite adequate ventilation AND compressions, actively look for: hypovolemia, pneumothorax, a congenital anomaly (e.g. diaphragmatic hernia — do not bag-mask, intubate + place an OG tube), and correctable technical problems (mask seal, tube position/patency, equipment) BEFORE escalating drug doses. Acrocyanosis with a pink trunk is normal."
     },
     {
       "type": "heading",

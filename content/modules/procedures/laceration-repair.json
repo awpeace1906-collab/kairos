@@ -120,7 +120,7 @@
     {
       "id": "scalp",
       "type": "recommendation",
-      "body": "3-0 / 4-0 non-absorbable (or staples; 3-0/4-0 absorbable for galea). Simple interrupted, staples, or hair-apposition. Blue-coloured suture recommended for visibility against hair. Removal 7-10 days. Primary-closure window < 12-24 h (well-vascularised)."
+      "body": "3-0 / 4-0 non-absorbable (or staples; 3-0/4-0 absorbable for galea). Simple interrupted, staples, or hair-apposition. Blue-colored suture recommended for visibility against hair. Removal 7-10 days. Primary-closure window < 12-24 h (well-vascularised)."
     },
     {
       "id": "face",
@@ -197,7 +197,7 @@
     {
       "id": "f-contam",
       "type": "step",
-      "body": "Irrigate with 50–100 mL of normal saline (or potable tap water) per cm of wound under pressure until visibly clean; explore for and remove foreign material (imaging — plain film or US — for glass, metal, gravel). Debride devitalised tissue. If it cannot be adequately cleaned, delay closure (pack, review at 72–96 h for delayed primary closure). Consider prophylactic antibiotics for a heavily contaminated wound. Tetanus per status; for a tetanus-prone wound in an under-immunised patient, add tetanus immunoglobulin."
+      "body": "Irrigate with 50–100 mL of normal saline (or potable tap water) per cm of wound under pressure until visibly clean; explore for and remove foreign material (imaging — plain film or US — for glass, metal, gravel). Debride devitalised tissue. If it cannot be adequately cleaned, delay closure (pack, review at 72–96 h for delayed primary closure). Consider prophylactic antibiotics for a heavily contaminated wound. Tetanus per status; for a tetanus-prone wound in an under-immunized patient, add tetanus immunoglobulin."
     },
     {
       "id": "f-delayed",
@@ -212,7 +212,7 @@
     {
       "id": "q-structures",
       "type": "question",
-      "prompt": "What is involved? (examine and DOCUMENT before anaesthesia)",
+      "prompt": "What is involved? (examine and DOCUMENT before anesthesia)",
       "choices": [
         {
           "label": "Possible tendon injury (weakness, altered resting posture, pain on resisted movement, visible tendon)",
@@ -227,7 +227,7 @@
           "next": "s-joint"
         },
         {
-          "label": "Arterial bleeding / expanding haematoma / distal ischaemia",
+          "label": "Arterial bleeding / expanding hematoma / distal ischemia",
           "next": "s-arterial"
         },
         {
@@ -239,12 +239,12 @@
     {
       "id": "s-tendon",
       "type": "warning",
-      "body": "Examine through the full range of motion (a partial laceration can be missed at rest) and against resistance; inspect the wound base with the joint moved through its arc. A confirmed or suspected tendon laceration → refer to hand / orthopaedics / plastics. Extensor tendon injuries in zones amenable to it may be repaired in the ED by a trained operator; flexor tendon injuries go to the OR. Splint in the position that offloads the tendon, close the skin, antibiotics if grossly contaminated, and arrange prompt follow-up."
+      "body": "Examine through the full range of motion (a partial laceration can be missed at rest) and against resistance; inspect the wound base with the joint moved through its arc. A confirmed or suspected tendon laceration → refer to hand / orthopedics / plastics. Extensor tendon injuries in zones amenable to it may be repaired in the ED by a trained operator; flexor tendon injuries go to the OR. Splint in the position that offloads the tendon, close the skin, antibiotics if grossly contaminated, and arrange prompt follow-up."
     },
     {
       "id": "s-nerve",
       "type": "warning",
-      "body": "Test two-point discrimination and sensation in the specific nerve's territory BEFORE local anaesthetic. A digital-nerve or named-nerve deficit → refer for microsurgical repair (ideally within days). Close the skin, document the exact deficit, and do not obscure the injury with a buried suture near the nerve. A pure neurapraxia from stretch may recover — but that is a diagnosis of exclusion after specialist review."
+      "body": "Test two-point discrimination and sensation in the specific nerve's territory BEFORE local anesthetic. A digital-nerve or named-nerve deficit → refer for microsurgical repair (ideally within days). Close the skin, document the exact deficit, and do not obscure the injury with a buried suture near the nerve. A pure neurapraxia from stretch may recover — but that is a diagnosis of exclusion after specialist review."
     },
     {
       "id": "s-joint",
@@ -254,7 +254,7 @@
     {
       "id": "s-arterial",
       "type": "warning",
-      "body": "Direct pressure first; a tourniquet proximally if pressure fails. Do NOT blindly clamp in the depths of a wound (nerve injury). A named-vessel laceration, an expanding haematoma, a bruit, or any hard sign of vascular injury → vascular / hand surgery and imaging. Small distal bleeders in a well-perfused hand can be controlled with pressure, elevation, and a figure-of-eight or horizontal mattress suture — confirm the digit stays perfused."
+      "body": "Direct pressure first; a tourniquet proximally if pressure fails. Do NOT blindly clamp in the depths of a wound (nerve injury). A named-vessel laceration, an expanding hematoma, a bruit, or any hard sign of vascular injury → vascular / hand surgery and imaging. Small distal bleeders in a well-perfused hand can be controlled with pressure, elevation, and a figure-of-eight or horizontal mattress suture — confirm the digit stays perfused."
     }
   ],
   "checklist": [

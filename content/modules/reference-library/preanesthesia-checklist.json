@@ -58,7 +58,7 @@
     }
   ],
   "summary": "MSMAID before every induction: Machine · Suction · Monitors · Airway · IV · Drugs. ASA 2023 fasting: clear liquids 2 h, breast milk 4 h, formula 6 h, light meal 6 h, fatty/full meal 8 h. GI symptoms on a GLP-1 agonist → treat as a full stomach regardless of the fast.",
-  "whyThisMatters": "The pre-induction misses that cause harm are the mundane ones — no working suction, no backup airway, an unrecognised full stomach — and MSMAID plus the current fasting rules exist so none of them depend on memory under time pressure.",
+  "whyThisMatters": "The pre-induction misses that cause harm are the mundane ones — no working suction, no backup airway, an unrecognized full stomach — and MSMAID plus the current fasting rules exist so none of them depend on memory under time pressure.",
   "clinicalTakeaway": "Run MSMAID before every induction: Machine, Suction, Monitors, Airway, IV, Drugs. Apply the ASA 2023 fasting intervals (clear liquids 2 h, breast milk 4 h, formula 6 h, light meal 6 h, fatty/full meal 8 h). Treat a patient with GI symptoms on a GLP-1 agonist as a full stomach regardless of the fast.",
   "body": [
     {
@@ -75,7 +75,7 @@
       "rows": [
         [
           "M — Machine",
-          "Full anaesthesia-machine check (APSF protocol). Backup ventilation (self-inflating bag) + an O₂ source confirmed accessible."
+          "Full anesthesia-machine check (APSF protocol). Backup ventilation (self-inflating bag) + an O₂ source confirmed accessible."
         ],
         [
           "S — Suction",
@@ -87,7 +87,7 @@
         ],
         [
           "A — Airway",
-          "Primary AND backup plan confirmed. Mask, ETT / LMA, video + direct laryngoscope, bougie, stylet, tape. Optimise position (sniffing / ramp)."
+          "Primary AND backup plan confirmed. Mask, ETT / LMA, video + direct laryngoscope, bougie, stylet, tape. Optimize position (sniffing / ramp)."
         ],
         [
           "I — IV access",
@@ -95,7 +95,7 @@
         ],
         [
           "D — Drugs",
-          "Induction agents drawn and labelled (ASTM colour code). Emergency drugs accessible: epinephrine, atropine, succinylcholine, a vasopressor (phenylephrine / ephedrine), and lipid emulsion if a block is planned. Know who to call for help."
+          "Induction agents drawn and labelled (ASTM color code). Emergency drugs accessible: epinephrine, atropine, succinylcholine, a vasopressor (phenylephrine / ephedrine), and lipid emulsion if a block is planned. Know who to call for help."
         ]
       ]
     },
@@ -147,7 +147,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "GLP-1 receptor agonists (semaglutide, tirzepatide, liraglutide) slow gastric emptying. ASA 2023: hold a daily agent for 1 day, a weekly agent for 1 week, before an elective procedure, plus standard fasting. SPAQI 2025 update: if the patient has ANY GI symptoms (nausea, vomiting, bloating, abdominal distension), treat as a full stomach regardless of the hold or fast — consider gastric POCUS pre-op, and use RSI / awake technique / regional as appropriate. Holding the drug does not by itself remove the aspiration risk, and stopping it can worsen glycaemic control — individualise with endocrinology."
+      "text": "GLP-1 receptor agonists (semaglutide, tirzepatide, liraglutide) slow gastric emptying. ASA 2023: hold a daily agent for 1 day, a weekly agent for 1 week, before an elective procedure, plus standard fasting. SPAQI 2025 update: if the patient has ANY GI symptoms (nausea, vomiting, bloating, abdominal distension), treat as a full stomach regardless of the hold or fast — consider gastric POCUS pre-op, and use RSI / awake technique / regional as appropriate. Holding the drug does not by itself remove the aspiration risk, and stopping it can worsen glycemic control — individualize with endocrinology."
     },
     {
       "type": "text",

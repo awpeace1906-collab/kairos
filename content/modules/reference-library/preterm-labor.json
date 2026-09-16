@@ -58,9 +58,9 @@
       "change": "Initial entry — diagnosis, the intervention-by-gestational-age table (steroids, magnesium neuroprotection, tocolysis, GBS, progesterone)."
     }
   ],
-  "summary": "The tocolytic buys 48 hours — its only job is to let a course of antenatal steroids take effect and allow transfer to a centre with a NICU. Give magnesium for fetal neuroprotection below 32 weeks. There is no role for maintenance tocolysis.",
+  "summary": "The tocolytic buys 48 hours — its only job is to let a course of antenatal steroids take effect and allow transfer to a center with a NICU. Give magnesium for fetal neuroprotection below 32 weeks. There is no role for maintenance tocolysis.",
   "whyThisMatters": "Tocolysis gets over-asked to do too much — its only job is to buy about 48 hours for steroids and transfer; there is no benefit to maintenance tocolysis, and the neuroprotection window for magnesium is easy to miss.",
-  "clinicalTakeaway": "Use a tocolytic only to gain 48 hours for a course of antenatal corticosteroids and transfer to a NICU centre — no maintenance tocolysis. Give magnesium sulfate for fetal neuroprotection below 32 weeks. Add group B strep prophylaxis if delivery looks imminent.",
+  "clinicalTakeaway": "Use a tocolytic only to gain 48 hours for a course of antenatal corticosteroids and transfer to a NICU center — no maintenance tocolysis. Give magnesium sulfate for fetal neuroprotection below 32 weeks. Add group B strep prophylaxis if delivery looks imminent.",
   "body": [
     {
       "type": "heading",
@@ -118,7 +118,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Rule out and treat the drivers: intra-amniotic infection (fever, uterine tenderness, fetal tachycardia → deliver, do not tocolyse), abruption, and preterm prelabour rupture of membranes. Do not tocolyse against non-reassuring fetal status, significant bleeding, severe preeclampsia, or chorioamnionitis."
+      "text": "Rule out and treat the drivers: intra-amniotic infection (fever, uterine tenderness, fetal tachycardia → deliver, do not tocolyse), abruption, and preterm prelabor rupture of membranes. Do not tocolyse against non-reassuring fetal status, significant bleeding, severe preeclampsia, or chorioamnionitis."
     }
   ]
 }

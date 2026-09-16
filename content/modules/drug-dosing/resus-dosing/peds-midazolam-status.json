@@ -45,7 +45,7 @@
     {
       "version": 3,
       "date": "2026-09-02",
-      "change": "Added a note on the Ket-Mid RCT (ketamine 2 mg/kg + midazolam 0.2 mg/kg as first-line for pediatric GCSE) — single-centre, 'promising not practice-changing'."
+      "change": "Added a note on the Ket-Mid RCT (ketamine 2 mg/kg + midazolam 0.2 mg/kg as first-line for pediatric GCSE) — single-center, 'promising not practice-changing'."
     },
     {
       "version": 2,
@@ -88,5 +88,5 @@
     }
   ],
   "reversal": "Flumazenil is NOT used in the seizure setting (lowers the seizure threshold).",
-  "buildNote": "Institution-specific caps flagged for reconciliation. Investigational — the Ket-Mid RCT (Othman 2025, single-centre, n=144) gave ketamine 2 mg/kg + midazolam 0.2 mg/kg IV as the FIRST dose for generalized convulsive status epilepticus: 76% vs 21% cessation at 5 min, ~5x fewer intubations, effect largest when the seizure had run > 30 min (synaptic GABA-A internalises / NMDA up-regulates over time). Authors' own framing: 'promising, not practice-changing' — no confirmatory second-site data, ketamine not stocked as a first-line seizure agent in most formularies. Do not change the first-line benzodiazepine recommendation on one trial."
+  "buildNote": "Institution-specific caps flagged for reconciliation. Investigational — the Ket-Mid RCT (Othman 2025, single-center, n=144) gave ketamine 2 mg/kg + midazolam 0.2 mg/kg IV as the FIRST dose for generalized convulsive status epilepticus: 76% vs 21% cessation at 5 min, ~5x fewer intubations, effect largest when the seizure had run > 30 min (synaptic GABA-A internalises / NMDA up-regulates over time). Authors' own framing: 'promising, not practice-changing' — no confirmatory second-site data, ketamine not stocked as a first-line seizure agent in most formularies. Do not change the first-line benzodiazepine recommendation on one trial."
 }

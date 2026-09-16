@@ -42,7 +42,7 @@
     }
   ],
   "kind": "reference",
-  "purpose": "Most neonatal seizures are subtle or focal (generalised tonic-clonic is rare — immature cortex). Correct glucose, calcium, and magnesium first, in parallel with an antiseizure drug if seizures are ongoing. Confirm with EEG / aEEG where available — clinical suspicion is unreliable in both directions.",
+  "purpose": "Most neonatal seizures are subtle or focal (generalized tonic-clonic is rare — immature cortex). Correct glucose, calcium, and magnesium first, in parallel with an antiseizure drug if seizures are ongoing. Confirm with EEG / aEEG where available — clinical suspicion is unreliable in both directions.",
   "ageRange": "Newborn",
   "sourceOfTruth": [],
   "body": [
@@ -72,7 +72,7 @@
         [
           "Movement quality",
           "Fine, rhythmic tremor",
-          "Coarser; may have autonomic change (apnoea, tachycardia, BP swings)"
+          "Coarser; may have autonomic change (apnea, tachycardia, BP swings)"
         ]
       ]
     },
@@ -84,10 +84,10 @@
     {
       "type": "list",
       "items": [
-        "Subtle — most common overall: ocular movements, oral-buccal-lingual (chewing / sucking), cycling limb movements, apnoea with tachycardia. Often NOT time-locked to EEG.",
+        "Subtle — most common overall: ocular movements, oral-buccal-lingual (chewing / sucking), cycling limb movements, apnea with tachycardia. Often NOT time-locked to EEG.",
         "Clonic (focal / multifocal) — rhythmic jerking of one limb or one side; more often EEG-correlated than subtle.",
-        "Tonic (focal / generalised) — sustained posturing; focal tonic more often EEG-correlated.",
-        "Myoclonic — brief jerks; generalised myoclonus can be a poor prognostic sign and overlaps with severe encephalopathy."
+        "Tonic (focal / generalized) — sustained posturing; focal tonic more often EEG-correlated.",
+        "Myoclonic — brief jerks; generalized myoclonus can be a poor prognostic sign and overlaps with severe encephalopathy."
       ]
     },
     {
@@ -108,12 +108,12 @@
       ],
       "rows": [
         [
-          "Hypoxic-ischaemic encephalopathy",
+          "Hypoxic-ischemic encephalopathy",
           "Most common overall; onset in the first 24 h after a perinatal hypoxic event; frequent but brief seizures"
         ],
         [
-          "Intracranial haemorrhage",
-          "Term: subarachnoid after traumatic / macrosomic delivery, usually good prognosis. Preterm: IVH after day 3, generalised tonic, worse prognosis"
+          "Intracranial hemorrhage",
+          "Term: subarachnoid after traumatic / macrosomic delivery, usually good prognosis. Preterm: IVH after day 3, generalized tonic, worse prognosis"
         ],
         [
           "CNS infection",
@@ -121,7 +121,7 @@
         ],
         [
           "Acute metabolic",
-          "Hypoglycaemia, hypocalcaemia, hypomagnesaemia — CHECK AND CORRECT THESE FIRST in any neonatal seizure"
+          "Hypoglycemia, hypocalcemia, hypomagnesemia — CHECK AND CORRECT THESE FIRST in any neonatal seizure"
         ],
         [
           "Inborn error of metabolism",
@@ -172,7 +172,7 @@
         [
           "Increasingly used earlier",
           "Levetiracetam: load 20–40 mg/kg IV; maintenance 10–80 mg/kg/day",
-          "Favourable safety profile — moving earlier in some protocols; practice varies by institution"
+          "Favorable safety profile — moving earlier in some protocols; practice varies by institution"
         ],
         [
           "Refractory / diagnostic trial",

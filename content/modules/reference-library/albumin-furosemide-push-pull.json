@@ -57,9 +57,9 @@
       "change": "Initial entry — converted from the CV push/pull deep dive. When it works, which bottle, dose, timing, and when it's a waste."
     }
   ],
-  "summary": "A rescue for the congested, diuretic-resistant, hypoalbuminaemic patient — NOT a license to over-resuscitate and clean up later. It works by turning down capillary filtration (raised plasma oncotic pressure) while the lymphatics keep draining — not by 'sucking' fluid back. Effect is modest, real, and concentrated in a narrow population.",
-  "whyThisMatters": "Push/pull gets over-used as a way to over-resuscitate and 'clean up later', and it gets pitched with a mechanism ('sucking fluid back') that is wrong. It is a narrow rescue for one phenotype — congested, diuretic-resistant, hypoalbuminaemic — not a routine diuresis strategy.",
-  "clinicalTakeaway": "Reserve it for the congested, truly diuretic-resistant, hypoalbuminaemic patient. Give albumin then furosemide together; the benefit is reduced capillary filtration while the lymphatics keep draining, not suction. If serum albumin is normal, it is a waste.",
+  "summary": "A rescue for the congested, diuretic-resistant, hypoalbuminemic patient — NOT a license to over-resuscitate and clean up later. It works by turning down capillary filtration (raised plasma oncotic pressure) while the lymphatics keep draining — not by 'sucking' fluid back. Effect is modest, real, and concentrated in a narrow population.",
+  "whyThisMatters": "Push/pull gets over-used as a way to over-resuscitate and 'clean up later', and it gets pitched with a mechanism ('sucking fluid back') that is wrong. It is a narrow rescue for one phenotype — congested, diuretic-resistant, hypoalbuminemic — not a routine diuresis strategy.",
+  "clinicalTakeaway": "Reserve it for the congested, truly diuretic-resistant, hypoalbuminemic patient. Give albumin then furosemide together; the benefit is reduced capillary filtration while the lymphatics keep draining, not suction. If serum albumin is normal, it is a waste.",
   "body": [
     {
       "type": "heading",
@@ -72,7 +72,7 @@
         "Serum albumin < 2.5 g/dL — the subgroup that shows benefit in every positive meta-analysis.",
         "ADHF with hepatic dysfunction, or significant cardiorenal congestion (the population of the 2026 Chalikias RCT).",
         "Diuretic resistance after maxing the loop dose and adding a thiazide.",
-        "Ventilated hypoalbuminaemic patient where improving the P/F ratio is the immediate target (Itagaki 2022: ~3× more likely to improve oxygenation, fewer hypotensive episodes — no mortality benefit)."
+        "Ventilated hypoalbuminemic patient where improving the P/F ratio is the immediate target (Itagaki 2022: ~3× more likely to improve oxygenation, fewer hypotensive episodes — no mortality benefit)."
       ]
     },
     {
@@ -144,7 +144,7 @@
       "items": [
         "Lee 2021 meta-analysis (13 studies, 422 pts): albumin + furosemide beat furosemide alone by +31 mL/hr urine and +1.8 mEq/hr sodium — effect concentrated where albumin < 2.5 g/dL, cumulative furosemide > 30 g, renal impairment present, measured within 12 h.",
         "Chalikias 2026 (RCT, ADHF + hepatic dysfunction, n = 241): furosemide + albumin — better symptom relief (P < .001), less worsening renal function (25% vs 38%), smaller creatinine rise (0.07 vs 0.18 mg/dL), ~1 day shorter stay.",
-        "MIMIC-IV septic-hypoalbuminaemia cohort: lower in-hospital mortality with albumin + loop diuretic (25.5% vs 36.5%) — hypothesis-generating observational data, not proof."
+        "MIMIC-IV septic-hypoalbuminemia cohort: lower in-hospital mortality with albumin + loop diuretic (25.5% vs 36.5%) — hypothesis-generating observational data, not proof."
       ]
     },
     {

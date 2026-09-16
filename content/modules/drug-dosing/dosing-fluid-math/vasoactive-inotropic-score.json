@@ -15,7 +15,7 @@
   "changelog": [{ "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3." }],
   "engine": "formula",
   "settings": ["ICU"],
-  "purpose": "Single number summarising total vasoactive/inotrope support — for shift-to-shift comparison. Trend it; a single value is not diagnostic.",
+  "purpose": "Single number summarizing total vasoactive/inotrope support — for shift-to-shift comparison. Trend it; a single value is not diagnostic.",
   "inputs": [
     { "key": "dopamine", "label": "Dopamine", "type": "number", "unit": "mcg/kg/min", "min": 0, "max": 50 },
     { "key": "dobutamine", "label": "Dobutamine", "type": "number", "unit": "mcg/kg/min", "min": 0, "max": 50 },

@@ -25,7 +25,7 @@
     { "key": "rsbi", "label": "RSBI (f / Vt)", "expression": "rr / (vt / 1000)", "unit": "breaths/min/L", "precision": 0 }
   ],
   "interpretation": [
-    { "forKey": "rsbi", "min": 0, "max": 104.9, "label": "< 105 — favourable; supports proceeding to a spontaneous breathing trial / extubation if the other criteria are met", "severity": "low" },
+    { "forKey": "rsbi", "min": 0, "max": 104.9, "label": "< 105 — favorable; supports proceeding to a spontaneous breathing trial / extubation if the other criteria are met", "severity": "low" },
     { "forKey": "rsbi", "min": 105, "max": 9999, "label": "≥ 105 — substantially higher weaning-failure risk. Reassess the cause of respiratory failure, sedation, secretions, fluid balance, and cardiac function before another attempt", "severity": "moderate" }
   ],
   "notes": "Measure after ~1 min of spontaneous breathing on minimal support. Integrate with: a passed SBT (the primary test), secretion burden, cough strength, cuff-leak, mental status, and overall trajectory. RSBI performs less well in women, small patients, and with a small ETT (resistance inflates the rate).",

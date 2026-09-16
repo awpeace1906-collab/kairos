@@ -74,5 +74,5 @@
     }
   ],
   "related": ["cam-icu", "padis-bundle", "neuromuscular-blockade-reversal", "modified-aldrete"],
-  "buildNote": "Perioperative & Anesthesia category. ED vs POD risk-factor patterns and dexmedetomidine's evidence base across both entities WebSearch-verified against Vlajkovic & Sindjelic (Anesth Analg 2007) and current PACU/delirium risk-factor meta-analyses. Deliberately structured around the distinction between the two entities and the shared 'rule out reversible cause first' principle, since conflating them or skipping the physiologic check are the two most common practical errors."
+  "buildNote": "Perioperative & Anesthesia category. ED vs POD risk-factor patterns and dexmedetomidine's evidence base across both entities WebSearch-verified against Vlajkovic & Sindjelic (Anesth Analg 2007) and current PACU/delirium risk-factor meta-analyzes. Deliberately structured around the distinction between the two entities and the shared 'rule out reversible cause first' principle, since conflating them or skipping the physiologic check are the two most common practical errors."
 }

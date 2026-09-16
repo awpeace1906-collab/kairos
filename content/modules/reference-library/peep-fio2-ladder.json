@@ -153,7 +153,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "text": "The higher-PEEP strategy has a mortality signal in the subgroup with moderate–severe ARDS (P/F ≤ 200) and in meta-analysis, but not in mild ARDS, where it adds haemodynamic cost. Reasonable to start higher-PEEP for P/F ≤ 150–200; verify recruitability (oxygenation and compliance improve, not just pressure rises) and do a decremental PEEP trial to find the working PEEP. Keep plateau pressure ≤ 30 and driving pressure < 15 cmH₂O."
+      "text": "The higher-PEEP strategy has a mortality signal in the subgroup with moderate–severe ARDS (P/F ≤ 200) and in meta-analysis, but not in mild ARDS, where it adds hemodynamic cost. Reasonable to start higher-PEEP for P/F ≤ 150–200; verify recruitability (oxygenation and compliance improve, not just pressure rises) and do a decremental PEEP trial to find the working PEEP. Keep plateau pressure ≤ 30 and driving pressure < 15 cmH₂O."
     }
   ]
 }

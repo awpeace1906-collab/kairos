@@ -60,7 +60,7 @@
     {
       "version": 2,
       "date": "2026-09-04",
-      "change": "Added a 'when blood isn't available / austere settings' section — freeze-dried plasma (room-temperature, plasma-only, not a red-cell substitute) and crystalloid choice by population (balanced for sepsis; saline favoured in isolated TBI)."
+      "change": "Added a 'when blood isn't available / austere settings' section — freeze-dried plasma (room-temperature, plasma-only, not a red-cell substitute) and crystalloid choice by population (balanced for sepsis; saline favored in isolated TBI)."
     },
     {
       "version": 1,
@@ -68,8 +68,8 @@
       "change": "Initial entry — ATLS hemorrhage class table, MTP activation + ratio + adjuncts + targets, permissive hypotension."
     }
   ],
-  "summary": "Give balanced product early (1:1:1), tranexamic acid within 3 hours of injury, and calcium after every few units — citrate chelates calcium and hypocalcaemia is a killer. Permissive hypotension (SBP 80–90) until surgical control, EXCEPT in TBI where you keep MAP ≥ 80.",
-  "whyThisMatters": "Trauma haemorrhage kills fast and kills through the lethal triad — hypothermia, acidosis, coagulopathy — which crystalloid resuscitation actively worsens. The interventions that change survival (balanced product, early TXA, calcium) all have narrow windows measured from injury, not from arrival.",
+  "summary": "Give balanced product early (1:1:1), tranexamic acid within 3 hours of injury, and calcium after every few units — citrate chelates calcium and hypocalcemia is a killer. Permissive hypotension (SBP 80–90) until surgical control, EXCEPT in TBI where you keep MAP ≥ 80.",
+  "whyThisMatters": "Trauma hemorrhage kills fast and kills through the lethal triad — hypothermia, acidosis, coagulopathy — which crystalloid resuscitation actively worsens. The interventions that change survival (balanced product, early TXA, calcium) all have narrow windows measured from injury, not from arrival.",
   "clinicalTakeaway": "Activate the MTP early and transfuse 1:1:1; give tranexamic acid within 3 hours of injury; replace calcium after every few units. Hold to permissive hypotension (SBP 80–90) until surgical control — except in TBI, where MAP stays ≥ 80. Keep the patient warm.",
   "body": [
     {
@@ -134,7 +134,7 @@
     {
       "type": "callout",
       "tone": "danger",
-      "text": "Activate for uncontrolled haemorrhage needing ≥ 3 units of red cells in 1 hour, an anticipated ≥ 10 units in 24 hours, or an ABC score ≥ 2."
+      "text": "Activate for uncontrolled hemorrhage needing ≥ 3 units of red cells in 1 hour, an anticipated ≥ 10 units in 24 hours, or an ABC score ≥ 2."
     },
     {
       "type": "table",
@@ -187,7 +187,7 @@
       "items": [
         "Freeze-dried (lyophilised) plasma — room-temperature stable, no cold chain or thaw, reconstitutes in ~1 min; supplied as group AB or group A low-titre anti-B so it can be given before the recipient's type is known. First US-licensed product (Ezplaz) July 2026; long-standing NATO/French-military use. It is plasma ONLY — it restores clotting factors and volume but NOT oxygen-carrying capacity, so it complements red cells / whole blood, it does not replace them.",
         "Crystalloid choice is population-specific, not universal: balanced solutions (Hartmann's, Plasma-Lyte) are the sepsis-driven default and reduce mortality vs saline there; in isolated traumatic brain injury, saline (and starch) outperformed balanced fluids and albumin — the opposite direction — so reach for 0.9% saline when TBI dominates. Albumin is specifically avoided in TBI (SAFE).",
-        "Whichever fluid: small aliquots titrated to a radial pulse / mentation (or SBP > 90 with TBI), warmed, and only as a bridge to blood products and haemorrhage control — crystalloid-heavy resuscitation drives dilutional coagulopathy, hypothermia and acidosis."
+        "Whichever fluid: small aliquots titrated to a radial pulse / mentation (or SBP > 90 with TBI), warmed, and only as a bridge to blood products and hemorrhage control — crystalloid-heavy resuscitation drives dilutional coagulopathy, hypothermia and acidosis."
       ]
     },
     {

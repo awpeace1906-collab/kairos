@@ -27,7 +27,7 @@
     "match extrinsic PEEP to 70-85% of intrinsic auto-PEEP",
     "eases triggering work",
     "avoid post-hypercapnic alkalosis",
-    "prioritise expiratory time",
+    "prioritize expiratory time",
     "watch flow-volume waveform return to baseline"
   ],
   "contentType": "reference",
@@ -83,7 +83,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "text": "Monitoring is the same as status asthmaticus — watch the flow–volume waveform for failure to return to baseline before the next breath, and prioritise expiratory time over chasing a normal blood gas. A hypotensive, hyperinflated COPD patient is managed the same way: disconnect, let them exhale, fluid, lower the rate."
+      "text": "Monitoring is the same as status asthmaticus — watch the flow–volume waveform for failure to return to baseline before the next breath, and prioritize expiratory time over chasing a normal blood gas. A hypotensive, hyperinflated COPD patient is managed the same way: disconnect, let them exhale, fluid, lower the rate."
     }
   ]
 }

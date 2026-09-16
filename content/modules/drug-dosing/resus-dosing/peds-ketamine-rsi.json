@@ -50,7 +50,7 @@
       "change": "Initial entry."
     }
   ],
-  "purpose": "RSI induction agent. Preferred in shock and reactive airway disease (bronchodilator, haemodynamically supportive). Specifically preferred over etomidate in septic shock — etomidate causes adrenal suppression.",
+  "purpose": "RSI induction agent. Preferred in shock and reactive airway disease (bronchodilator, hemodynamically supportive). Specifically preferred over etomidate in septic shock — etomidate causes adrenal suppression.",
   "population": "peds",
   "weightBasis": "actual",
   "doses": [

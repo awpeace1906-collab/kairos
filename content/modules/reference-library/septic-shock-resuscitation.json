@@ -70,9 +70,9 @@
       "change": "Initial entry — bedside resuscitation targets and titration sequence for septic shock, distilled from SSC 2021 + the ANDROMEDA-SHOCK line + the 25-year conceptual review. Management-oriented (what to titrate to what), not a trial summary."
     }
   ],
-  "summary": "Antibiotics + source control within the hour. Resuscitate to perfusion, not to a single number: MAP ≥ 65, CRT normalising, lactate clearing, mentation and urine output improving, falling pressor requirement. After the initial bolus, test fluid responsiveness before every further bolus.",
-  "whyThisMatters": "Septic shock kills through time and under-resuscitation: every hour antibiotics are delayed raises mortality, and the commonest bedside error is chasing one number — a MAP, a CVP, a lactate — instead of the patient's actual perfusion. The opposite error is just as lethal: pouring fluid into a patient who has stopped responding to it. Recognition and antibiotics belong to the ED; haemodynamic titration and de-resuscitation continue in the ICU.",
-  "clinicalTakeaway": "Antibiotics and source control within the first hour. Then resuscitate to perfusion, not to one dial — MAP ≥ 65 with a normalising capillary refill, clearing lactate, improving mentation and urine output, and a falling pressor requirement. After the first bolus, prove fluid responsiveness before every further bolus, and stop when the patient stops responding.",
+  "summary": "Antibiotics + source control within the hour. Resuscitate to perfusion, not to a single number: MAP ≥ 65, CRT normalizing, lactate clearing, mentation and urine output improving, falling pressor requirement. After the initial bolus, test fluid responsiveness before every further bolus.",
+  "whyThisMatters": "Septic shock kills through time and under-resuscitation: every hour antibiotics are delayed raises mortality, and the commonest bedside error is chasing one number — a MAP, a CVP, a lactate — instead of the patient's actual perfusion. The opposite error is just as lethal: pouring fluid into a patient who has stopped responding to it. Recognition and antibiotics belong to the ED; hemodynamic titration and de-resuscitation continue in the ICU.",
+  "clinicalTakeaway": "Antibiotics and source control within the first hour. Then resuscitate to perfusion, not to one dial — MAP ≥ 65 with a normalizing capillary refill, clearing lactate, improving mentation and urine output, and a falling pressor requirement. After the first bolus, prove fluid responsiveness before every further bolus, and stop when the patient stops responding.",
   "body": [
     {
       "type": "heading",
@@ -152,7 +152,7 @@
         "Do NOT give reflexive repeat boluses. Before each additional bolus, demonstrate fluid responsiveness: passive leg raise with a real-time cardiac-output monitor, a 4-mL/kg fluid challenge, or pulse-pressure / stroke-volume variation ≥ 12% in a passive, ventilated, sinus-rhythm patient.",
         "Systematic fluid-responsiveness testing before any bolus avoided fluid entirely in ~25% of patients in ANDROMEDA-SHOCK.",
         "A restrictive strategy is safe (CLASSIC). Also weigh fluid TOLERANCE — rising CVP, IVC plethora, B-lines, portal-vein pulsatility (VExUS) — not just responsiveness. A responsive but congested patient does not need more fluid.",
-        "Once stabilised, shift to de-resuscitation: aim for a neutral-to-negative fluid balance, remove accumulated fluid, and watch for venous congestion / organ oedema — SSC 2026 formalizes active fluid removal after the initial resuscitation phase as its own step, not just an afterthought once the patient looks overloaded. See venous-congestion-deresuscitation for the VExUS grading and the full bedside de-resuscitation protocol."
+        "Once stabilized, shift to de-resuscitation: aim for a neutral-to-negative fluid balance, remove accumulated fluid, and watch for venous congestion / organ edema — SSC 2026 formalizes active fluid removal after the initial resuscitation phase as its own step, not just an afterthought once the patient looks overloaded. See venous-congestion-deresuscitation for the VExUS grading and the full bedside de-resuscitation protocol."
       ]
     },
     {
@@ -163,8 +163,8 @@
     {
       "type": "list",
       "items": [
-        "Capillary refill time: normalise it (≤ 3 s). Reassess every ~30 min in the first 8 h. CRT-targeted resuscitation performed at least as well as lactate-targeted with less fluid and organ dysfunction (ANDROMEDA-SHOCK) and shortened the duration of vital support in the phenotype-driven version (ANDROMEDA-SHOCK-2).",
-        "Lactate: a trajectory marker and a refractory-shock criterion, most informative in the first 6–12 h. Kinetics are biphasic — after the early window, persistent hyperlactataemia is increasingly driven by non-hypoxic causes (adrenergic aerobic glycolysis, impaired hepatic clearance, mitochondrial dysfunction). Do NOT keep escalating fluid and pressors to chase a lactate that stays high once CRT, mentation, urine output, and the pressor requirement have improved.",
+        "Capillary refill time: normalize it (≤ 3 s). Reassess every ~30 min in the first 8 h. CRT-targeted resuscitation performed at least as well as lactate-targeted with less fluid and organ dysfunction (ANDROMEDA-SHOCK) and shortened the duration of vital support in the phenotype-driven version (ANDROMEDA-SHOCK-2).",
+        "Lactate: a trajectory marker and a refractory-shock criterion, most informative in the first 6–12 h. Kinetics are biphasic — after the early window, persistent hyperlactatemia is increasingly driven by non-hypoxic causes (adrenergic aerobic glycolysis, impaired hepatic clearance, mitochondrial dysfunction). Do NOT keep escalating fluid and pressors to chase a lactate that stays high once CRT, mentation, urine output, and the pressor requirement have improved.",
         "Also track: mental status, urine output, skin mottling, and the direction of the vasopressor requirement."
       ]
     },
@@ -186,7 +186,7 @@
       ],
       "rows": [
         [
-          "Hypovolaemic",
+          "Hypovolemic",
           "Fluid-responsive (PLR / PPV positive), small hyperdynamic LV, collapsing IVC",
           "A titrated fluid challenge, then re-test"
         ],
@@ -212,10 +212,10 @@
       "items": [
         "ScvO2 as a resuscitation target — dropped from SSC guidance (both low and supranormal values associate with worse outcomes).",
         "A fixed elevated CVP target and liberal transfusion thresholds (the old EGDT algorithm) — contradicted by later fluid-overload and transfusion data.",
-        "A persistently high lactate after the early window, once other perfusion markers have normalised.",
+        "A persistently high lactate after the early window, once other perfusion markers have normalized.",
         "A single MAP number for every patient regardless of premorbid blood pressure.",
         "A normal glucose. Intensive control (80–110) increases mortality (NICE-SUGAR) — target ≤ 180 mg/dL.",
-        "A high-normal haemoglobin. Transfuse at a threshold of 7 g/dL in septic shock (TRISS); a liberal Hgb-9 trigger gave no benefit."
+        "A high-normal hemoglobin. Transfuse at a threshold of 7 g/dL in septic shock (TRISS); a liberal Hgb-9 trigger gave no benefit."
       ]
     },
     {
@@ -232,7 +232,7 @@
       ],
       "rows": [
         [
-          "Protocolised EGDT bundle?",
+          "Protocolized EGDT bundle?",
           "No benefit over good usual care — the bundle is not the mechanism",
           "ARISE / ProCESS / ProMISe"
         ],
@@ -243,7 +243,7 @@
         ],
         [
           "Fluid strategy after the initial bolus",
-          "Restrictive is safe — favour testing responsiveness over volume",
+          "Restrictive is safe — favor testing responsiveness over volume",
           "CLASSIC"
         ],
         [
@@ -263,7 +263,7 @@
         ],
         [
           "Perfusion target",
-          "Normalise CRT; equal-or-better outcomes vs lactate-guided with less fluid",
+          "Normalize CRT; equal-or-better outcomes vs lactate-guided with less fluid",
           "ANDROMEDA-SHOCK / -2"
         ]
       ]

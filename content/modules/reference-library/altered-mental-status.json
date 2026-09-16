@@ -57,7 +57,7 @@
     }
   ],
   "summary": "First move is always a fingerstick glucose. In anyone malnourished, alcohol-dependent, or where there is any doubt, give thiamine 100 mg IV BEFORE glucose. Never assume 'psychiatric' or 'baseline' — organic causes are missed daily in patients labelled frequent fliers.",
-  "whyThisMatters": "AMS gets anchored on 'psychiatric' or 'baseline' more than almost any other presentation, and organic causes — hypoglycaemia, hypoxia, sepsis, non-convulsive status, a bleed — are missed daily in patients labelled frequent fliers. The reversible ones are time-critical.",
+  "whyThisMatters": "AMS gets anchored on 'psychiatric' or 'baseline' more than almost any other presentation, and organic causes — hypoglycemia, hypoxia, sepsis, non-convulsive status, a bleed — are missed daily in patients labelled frequent fliers. The reversible ones are time-critical.",
   "clinicalTakeaway": "Fingerstick glucose first, every time. Give thiamine 100 mg IV before glucose in anyone malnourished or alcohol-dependent, or where there is doubt. Then work AEIOU-TIPS deliberately, and image or get an EEG rather than assuming a known baseline.",
   "body": [
     {
@@ -85,13 +85,13 @@
         ],
         [
           "E — Epilepsy / Endocrine",
-          "Postictal; non-convulsive SE; glucose extremes; thyroid storm; myxoedema; Addisonian crisis",
+          "Postictal; non-convulsive SE; glucose extremes; thyroid storm; myxedema; Addisonian crisis",
           "Glucose; TSH/T4; cortisol; EEG if postictal not clearing by 30 min"
         ],
         [
           "I — Insulin / Ingestion",
-          "Hypoglycaemia; benzos, opioids, TCAs, salicylates; toxidromes",
-          "Glucose; paracetamol + salicylate levels; carboxyhaemoglobin"
+          "Hypoglycemia; benzos, opioids, TCAs, salicylates; toxidromes",
+          "Glucose; paracetamol + salicylate levels; carboxyhemoglobin"
         ],
         [
           "O — Oxygen",
@@ -99,7 +99,7 @@
           "ABG + CO-oximetry; SpO2 unreliable with CO; high-flow O2 now"
         ],
         [
-          "U — Uraemia",
+          "U — Uremia",
           "Renal failure; hepatic encephalopathy (asterixis, ↑ NH3)",
           "BMP; ammonia; LFTs; lactulose"
         ],
@@ -111,7 +111,7 @@
         [
           "I — Infection",
           "Meningitis; encephalitis; septic encephalopathy; abscess; UTI in the elderly",
-          "LP if no focal deficit / papilloedema; empiric antibiotics BEFORE CT if bacterial meningitis is likely"
+          "LP if no focal deficit / papilledema; empiric antibiotics BEFORE CT if bacterial meningitis is likely"
         ],
         [
           "P — Psychiatric",
@@ -120,7 +120,7 @@
         ],
         [
           "S — Stroke / Structural",
-          "Ischaemic stroke (esp. posterior); ICH; SAH (thunderclap); CNS mass",
+          "Ischemic stroke (esp. posterior); ICH; SAH (thunderclap); CNS mass",
           "Head CT; CTA if LVO concern; LP if CT negative + thunderclap headache"
         ]
       ]
@@ -151,7 +151,7 @@
         [
           "Hypertensive encephalopathy",
           "SBP usually > 220; headache + confusion + visual change; PRES on MRI",
-          "Labetalol or nicardipine IV; lower MAP by 20–25% over the first hour — avoid rapid normalisation"
+          "Labetalol or nicardipine IV; lower MAP by 20–25% over the first hour — avoid rapid normalization"
         ],
         [
           "Non-convulsive status epilepticus",
@@ -163,7 +163,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Minimum workup for undifferentiated AMS: glucose + BMP + CBC + UA + tox screen + non-contrast head CT. Elderly: subdural from a forgotten fall, UTI-triggered delirium, polypharmacy (anticholinergics, benzos, opioids, digoxin). SAH: CT sensitivity falls from ~98% within 6 h to ~85% at 24 h — LP any thunderclap headache with a negative CT. Meningitis: do not delay antibiotics for a CT unless there is a focal deficit, papilloedema, seizure, or immunocompromise."
+      "text": "Minimum workup for undifferentiated AMS: glucose + BMP + CBC + UA + tox screen + non-contrast head CT. Elderly: subdural from a forgotten fall, UTI-triggered delirium, polypharmacy (anticholinergics, benzos, opioids, digoxin). SAH: CT sensitivity falls from ~98% within 6 h to ~85% at 24 h — LP any thunderclap headache with a negative CT. Meningitis: do not delay antibiotics for a CT unless there is a focal deficit, papilledema, seizure, or immunocompromise."
     }
   ]
 }

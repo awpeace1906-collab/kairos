@@ -20,12 +20,12 @@
   "items": [
     { "key": "age65", "label": "Age > 65", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "priorVte", "label": "Previous DVT or PE", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 3 }] },
-    { "key": "surgeryFracture", "label": "Surgery (general anaesthesia) or lower-limb fracture within 1 month", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
-    { "key": "malignancy", "label": "Active malignancy (solid or haematologic, current or cured < 1 year)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "surgeryFracture", "label": "Surgery (general anesthesia) or lower-limb fracture within 1 month", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "malignancy", "label": "Active malignancy (solid or hematologic, current or cured < 1 year)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
     { "key": "unilatLimbPain", "label": "Unilateral lower-limb pain", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 3 }] },
-    { "key": "hemoptysis", "label": "Haemoptysis", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
+    { "key": "hemoptysis", "label": "Hemoptysis", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 2 }] },
     { "key": "hr", "label": "Heart rate", "options": [{ "label": "< 75", "points": 0 }, { "label": "75–94", "points": 3 }, { "label": "≥ 95", "points": 5 }] },
-    { "key": "legTenderness", "label": "Pain on lower-limb deep venous palpation AND unilateral oedema", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 4 }] }
+    { "key": "legTenderness", "label": "Pain on lower-limb deep venous palpation AND unilateral edema", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 4 }] }
   ],
   "interpretation": [
     { "min": 0, "max": 3, "label": "Low probability (~ 8% PE prevalence) — proceed to D-dimer (age-adjusted); a negative D-dimer rules out PE", "severity": "low" },

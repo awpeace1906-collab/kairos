@@ -177,7 +177,7 @@
       "type": "list",
       "items": [
         "Calcium: CaCl₂ 1 g IV q10 min ×3 via central line (or calcium gluconate 3 g peripherally) — best for CCB.",
-        "High-dose insulin euglycaemia (HIE): regular insulin ~1 U/kg bolus → 1–10 U/kg/hr, with a concentrated dextrose infusion and frequent glucose / K⁺ checks. Increasingly first-line, not a last resort.",
+        "High-dose insulin euglycemia (HIE): regular insulin ~1 U/kg bolus → 1–10 U/kg/hr, with a concentrated dextrose infusion and frequent glucose / K⁺ checks. Increasingly first-line, not a last resort.",
         "Glucagon 2–5 mg IV bolus → 1–10 mg/hr infusion — beta-blocker-specific (bypasses the blocked receptor). Often under-dosed.",
         "Lipid emulsion 20% 1.5 mL/kg bolus for a lipophilic agent (e.g. verapamil, propranolol) refractory to the above. Atropine, pressors, transvenous pacing, and VA-ECMO for refractory shock. Full detail in the antidotes module."
       ]
@@ -189,7 +189,7 @@
     },
     {
       "type": "text",
-      "text": "Tinnitus, tachypnoea, a MIXED respiratory alkalosis + high-anion-gap metabolic acidosis, hyperthermia. Serum salicylate level + serial ABG/VBG. Sodium bicarbonate infusion to alkalinise the urine (target urine pH 7.5–8) and keep serum pH ~ 7.45–7.55 — this traps salicylate out of the CNS. Glucose even if serum glucose is normal (CNS neuroglycopenia). Haemodialysis for a level > 90–100 mg/dL (acute), altered mentation, pulmonary/cerebral oedema, renal failure, or refractory acidosis. NEVER intubate casually — apnoea during the procedure drops the pH and can precipitate arrest; if you must, match the pre-intubation minute ventilation and pre-treat with bicarbonate."
+      "text": "Tinnitus, tachypnea, a MIXED respiratory alkalosis + high-anion-gap metabolic acidosis, hyperthermia. Serum salicylate level + serial ABG/VBG. Sodium bicarbonate infusion to alkalinize the urine (target urine pH 7.5–8) and keep serum pH ~ 7.45–7.55 — this traps salicylate out of the CNS. Glucose even if serum glucose is normal (CNS neuroglycopenia). Hemodialysis for a level > 90–100 mg/dL (acute), altered mentation, pulmonary/cerebral edema, renal failure, or refractory acidosis. NEVER intubate casually — apnea during the procedure drops the pH and can precipitate arrest; if you must, match the pre-intubation minute ventilation and pre-treat with bicarbonate."
     }
   ],
   "related": [

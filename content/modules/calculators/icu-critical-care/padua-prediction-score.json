@@ -15,7 +15,7 @@
   "changelog": [{ "version": 1, "date": "2026-09-01", "change": "Initial entry from Calculator_Logic_Build_Spec.md." }],
   "engine": "additive",
   "settings": ["ICU"],
-  "purpose": "VTE risk in hospitalised medical (non-surgical) patients — the medical counterpart to Caprini. Weigh against IMPROVE bleeding risk before starting pharmacologic prophylaxis.",
+  "purpose": "VTE risk in hospitalized medical (non-surgical) patients — the medical counterpart to Caprini. Weigh against IMPROVE bleeding risk before starting pharmacologic prophylaxis.",
   "items": [
     { "key": "cancer", "label": "Active cancer", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 3 }] },
     { "key": "priorVte", "label": "Previous VTE (excluding superficial vein thrombosis)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 3 }] },
@@ -30,7 +30,7 @@
     { "key": "hormonal", "label": "Ongoing hormonal treatment", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] }
   ],
   "interpretation": [
-    { "min": 0, "max": 3, "label": "Low risk", "disposition": "Pharmacologic prophylaxis generally not indicated; mobilise", "severity": "low" },
+    { "min": 0, "max": 3, "label": "Low risk", "disposition": "Pharmacologic prophylaxis generally not indicated; mobilize", "severity": "low" },
     { "min": 4, "max": 20, "label": "High risk", "disposition": "Pharmacologic thromboprophylaxis unless contraindicated (check IMPROVE bleeding risk)", "severity": "high" }
   ]
 }

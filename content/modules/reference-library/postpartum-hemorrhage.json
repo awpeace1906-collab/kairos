@@ -61,9 +61,9 @@
       "change": "Initial entry — the staged response, the 4 Ts, the uterotonic ladder with doses and contraindications, TXA, and balloon tamponade."
     }
   ],
-  "summary": "PPH = cumulative blood loss ≥ 1000 mL, OR any blood loss with signs of hypovolaemia, within 24 h of delivery. Leading cause of maternal mortality worldwide. Work the 4 Ts — Tone (80%), Trauma, Tissue, Thrombin — while escalating the staged response.",
+  "summary": "PPH = cumulative blood loss ≥ 1000 mL, OR any blood loss with signs of hypovolemia, within 24 h of delivery. Leading cause of maternal mortality worldwide. Work the 4 Ts — Tone (80%), Trauma, Tissue, Thrombin — while escalating the staged response.",
   "whyThisMatters": "PPH is the leading cause of maternal death worldwide and it kills fast — the failure mode is a slow, unstaged response to blood loss that is underestimated because it is cumulative and partly concealed. Uterine atony causes 80%.",
-  "clinicalTakeaway": "Recognise PPH at ≥ 1000 mL cumulative loss, or any loss with hypovolaemia signs. Run the staged response and work the 4 Ts — Tone, Trauma, Tissue, Thrombin — in parallel: fundal massage and the uterotonic ladder first, TXA within 3 hours, and escalate to tamponade, embolisation, or laparotomy without waiting.",
+  "clinicalTakeaway": "Recognize PPH at ≥ 1000 mL cumulative loss, or any loss with hypovolemia signs. Run the staged response and work the 4 Ts — Tone, Trauma, Tissue, Thrombin — in parallel: fundal massage and the uterotonic ladder first, TXA within 3 hours, and escalate to tamponade, embolisation, or laparotomy without waiting.",
   "body": [
     {
       "type": "heading",
@@ -86,7 +86,7 @@
         [
           "2",
           "≥ 1000 mL or unstable",
-          "Add a SECOND uterotonic + TXA 1 g IV; 2× large-bore IV; STAT CBC / coags / fibrinogen / cross-match; consider transfusion; escalate to OB / anaesthesia; tranexamic acid within 3 h"
+          "Add a SECOND uterotonic + TXA 1 g IV; 2× large-bore IV; STAT CBC / coags / fibrinogen / cross-match; consider transfusion; escalate to OB / anesthesia; tranexamic acid within 3 h"
         ],
         [
           "3",
@@ -104,7 +104,7 @@
       "type": "list",
       "items": [
         "Tone (80%) — uterine atony: fundal massage, bimanual compression, empty the bladder, uterotonics.",
-        "Trauma (10%) — cervical / vaginal / perineal lacerations, haematoma, uterine rupture or inversion: inspect and repair; reduce an inversion immediately (uterine relaxant then replace).",
+        "Trauma (10%) — cervical / vaginal / perineal lacerations, hematoma, uterine rupture or inversion: inspect and repair; reduce an inversion immediately (uterine relaxant then replace).",
         "Tissue (9%) — retained placenta or products: manual removal, curettage; check the placenta is complete.",
         "Thrombin (1%) — coagulopathy (DIC, dilutional, inherited, anticoagulant): FFP, cryoprecipitate / fibrinogen, platelets, TXA; treat the underlying trigger (abruption, AFE, sepsis, prolonged PPH)."
       ]
@@ -124,7 +124,7 @@
       "rows": [
         [
           "Oxytocin (1st-line)",
-          "20–40 units per litre at 250–500 mL/hr, OR 10 units IM",
+          "20–40 units per liter at 250–500 mL/hr, OR 10 units IM",
           "NEVER a rapid IV bolus (hypotension, arrhythmia, arrest). Infusion is standard."
         ],
         [
@@ -140,7 +140,7 @@
         [
           "Carboprost (15-methyl PGF2α, Hemabate)",
           "0.25 mg IM q15 min, max 8 doses",
-          "CONTRAINDICATED in asthma (bronchospasm). Also causes vomiting / diarrhoea / fever."
+          "CONTRAINDICATED in asthma (bronchospasm). Also causes vomiting / diarrhea / fever."
         ],
         [
           "Misoprostol (2nd-line)",

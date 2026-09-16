@@ -59,8 +59,8 @@
       "change": "Initial entry — diagnostic criteria + severe features, the severe-hypertension treatment table, the full magnesium protocol (loading / maintenance / monitoring / antidote), and HELLP with delivery timing."
     }
   ],
-  "summary": "Severe-range BP (SBP ≥ 160 or DBP ≥ 110, sustained) must be treated within 15–60 minutes to prevent haemorrhagic stroke — target 140–155 / 90–105. Magnesium sulfate is for seizure prophylaxis and treatment, NOT for blood pressure. Definitive treatment is delivery.",
-  "whyThisMatters": "Two separate emergencies get conflated: the severe-range blood pressure that causes maternal stroke within the hour if untreated, and the seizure risk that magnesium — not antihypertensives — prevents. Using one drug for the other job is a recognised error.",
+  "summary": "Severe-range BP (SBP ≥ 160 or DBP ≥ 110, sustained) must be treated within 15–60 minutes to prevent hemorrhagic stroke — target 140–155 / 90–105. Magnesium sulfate is for seizure prophylaxis and treatment, NOT for blood pressure. Definitive treatment is delivery.",
+  "whyThisMatters": "Two separate emergencies get conflated: the severe-range blood pressure that causes maternal stroke within the hour if untreated, and the seizure risk that magnesium — not antihypertensives — prevents. Using one drug for the other job is a recognized error.",
   "clinicalTakeaway": "Treat sustained SBP ≥ 160 or DBP ≥ 110 within 15–60 minutes (labetalol, hydralazine, or oral nifedipine) to a target of 140–155 / 90–105. Give magnesium sulfate for seizure prophylaxis and treatment — it is not a blood-pressure drug. Definitive treatment is delivery.",
   "body": [
     {
@@ -72,7 +72,7 @@
       "type": "list",
       "items": [
         "SBP ≥ 140 OR DBP ≥ 90 on two occasions ≥ 4 h apart, PLUS proteinuria (≥ 300 mg/24 h, P:Cr ≥ 0.3, or dipstick ≥ 2+),",
-        "OR — without proteinuria — any of: thrombocytopenia, renal insufficiency, transaminitis, pulmonary oedema, new headache, or visual disturbance."
+        "OR — without proteinuria — any of: thrombocytopenia, renal insufficiency, transaminitis, pulmonary edema, new headache, or visual disturbance."
       ]
     },
     {
@@ -87,7 +87,7 @@
         "Platelets < 100,000.",
         "Creatinine > 1.1 mg/dL or doubling of baseline.",
         "AST/ALT > 2× ULN, ± RUQ / epigastric pain (suggests HELLP).",
-        "Pulmonary oedema.",
+        "Pulmonary edema.",
         "New headache unresponsive to medication, or visual disturbance."
       ]
     },
@@ -174,7 +174,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Eclamptic seizure: most are self-limited — protect the airway, left lateral, O2, and give / continue magnesium (a bolus of 2–4 g IV over 5 min for a breakthrough seizure on the infusion). Magnesium is superior to phenytoin AND benzodiazepines for eclampsia. Persistent seizures despite magnesium → a benzodiazepine, then levetiracetam / fosphenytoin, and reconsider the differential (intracranial haemorrhage, PRES, other)."
+      "text": "Eclamptic seizure: most are self-limited — protect the airway, left lateral, O2, and give / continue magnesium (a bolus of 2–4 g IV over 5 min for a breakthrough seizure on the infusion). Magnesium is superior to phenytoin AND benzodiazepines for eclampsia. Persistent seizures despite magnesium → a benzodiazepine, then levetiracetam / fosphenytoin, and reconsider the differential (intracranial hemorrhage, PRES, other)."
     },
     {
       "type": "heading",
@@ -184,11 +184,11 @@
     {
       "type": "list",
       "items": [
-        "Tennessee criteria — Haemolysis (LDH > 600 U/L, schistocytes, bilirubin > 1.2 mg/dL) + Elevated Liver enzymes (AST/ALT > 2× ULN) + Low Platelets (< 100,000). 'Partial' HELLP has one or two of the three.",
-        "Can occur with only mildly elevated BP or none. RUQ / epigastric pain, nausea, malaise. Watch for hepatic haematoma / rupture, abruption, DIC, AKI.",
-        "Delivery: promptly after maternal stabilisation if ≥ 34 weeks, or at any gestation if maternal or fetal condition is deteriorating (DIC, hepatic infarct/haematoma, abruption, non-reassuring fetal status, uncontrollable severe hypertension).",
+        "Tennessee criteria — Hemolysis (LDH > 600 U/L, schistocytes, bilirubin > 1.2 mg/dL) + Elevated Liver enzymes (AST/ALT > 2× ULN) + Low Platelets (< 100,000). 'Partial' HELLP has one or two of the three.",
+        "Can occur with only mildly elevated BP or none. RUQ / epigastric pain, nausea, malaise. Watch for hepatic hematoma / rupture, abruption, DIC, AKI.",
+        "Delivery: promptly after maternal stabilization if ≥ 34 weeks, or at any gestation if maternal or fetal condition is deteriorating (DIC, hepatic infarct/hematoma, abruption, non-reassuring fetal status, uncontrollable severe hypertension).",
         "< 34 weeks and stable: a short course of antenatal corticosteroids + magnesium, then deliver. Steroids improve fetal lung maturity — the transient platelet bump is not a reason to delay delivery when indicated.",
-        "Platelet transfusion: for platelets < 20,000, or < 50,000 with active bleeding or before a caesarean."
+        "Platelet transfusion: for platelets < 20,000, or < 50,000 with active bleeding or before a cesarean."
       ]
     }
   ],

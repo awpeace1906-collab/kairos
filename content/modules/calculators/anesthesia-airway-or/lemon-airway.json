@@ -30,7 +30,7 @@
   ],
   "interpretation": [
     { "min": 0, "max": 0, "label": "No LEMON features flagged", "detail": "Still apply clinical gestalt and have a backup plan ready.", "severity": "low" },
-    { "min": 1, "max": 2, "label": "Some difficult-airway features present", "detail": "Optimise positioning and pre-oxygenation; have video laryngoscopy, bougie, and a supraglottic rescue ready.", "severity": "moderate" },
+    { "min": 1, "max": 2, "label": "Some difficult-airway features present", "detail": "Optimize positioning and pre-oxygenation; have video laryngoscopy, bougie, and a supraglottic rescue ready.", "severity": "moderate" },
     { "min": 3, "max": 7, "label": "Multiple difficult-airway features", "detail": "Strongly consider the most experienced operator, video laryngoscopy first pass, a double set-up for a surgical airway, and a delayed-sequence or awake approach if the situation allows.", "severity": "high" }
   ],
   "buildNote": "Orchestrated by the Airway Management Flow procedure. There is no validated numeric threshold — the bands here are pragmatic UI guidance, not a published cutoff."

@@ -21,7 +21,7 @@
   ],
   "summary": "The one shared LAST reference, callable from every nerve-block entry. Recognition + the 20% lipid emulsion protocol.",
   "body": [
-    { "type": "heading", "level": 2, "text": "Recognise it" },
+    { "type": "heading", "level": 2, "text": "Recognize it" },
     { "type": "list", "items": [
       "CNS first: perioral numbness, metallic taste, tinnitus, agitation, confusion → seizure → coma",
       "Then cardiovascular: hypertension/tachycardia → bradycardia, conduction block, ventricular arrhythmia, asystole",
@@ -32,7 +32,7 @@
     { "type": "list", "items": [
       "Stop injecting. Call for help and the LAST rescue kit.",
       "Airway: 100% oxygen, ventilate — hypoxia and acidosis worsen toxicity",
-      "Seizures: benzodiazepine first-line; avoid large doses of propofol in a haemodynamically unstable patient",
+      "Seizures: benzodiazepine first-line; avoid large doses of propofol in a hemodynamically unstable patient",
       "ACLS with modifications: REDUCE the epinephrine dose to ≤ 1 mcg/kg boluses; AVOID vasopressin, calcium-channel blockers, beta-blockers, and local anesthetics (lidocaine, procainamide)"
     ] },
     { "type": "heading", "level": 2, "text": "20% lipid emulsion (Intralipid)" },
@@ -43,7 +43,7 @@
         ["Infusion", "0.25 mL/kg/min (≈ 18 mL/min / ~1000 mL/h in a 70 kg adult)"],
         ["Persistent instability", "Re-bolus once or twice and double the infusion to 0.5 mL/kg/min"],
         ["Upper limit", "≈ 12 mL/kg total"],
-        ["Continue", "For at least 10-15 min after haemodynamic stability is restored"]
+        ["Continue", "For at least 10-15 min after hemodynamic stability is restored"]
       ]
     },
     { "type": "callout", "tone": "warning", "text": "Propofol is NOT a substitute for lipid emulsion — its lipid content is far too low and its cardiodepressant effect is harmful here. Consider early cardiopulmonary bypass / ECMO for refractory arrest." }

@@ -48,7 +48,7 @@
   ],
   "summary": "\"Central line first, pressors second\" is built largely on 1950s-onward case reports. This meta-analysis (49 studies, 33,060 catheters, agent-by-agent) measures the actual risk: for a short PIV in a proximal vein, used short-term with monitoring, it is low.",
   "whyThisMatters": "'Central line first, pressors second' is built on decades-old case reports, and the delay it causes — hunting for central access while the MAP falls — has a real cost. The actual extravasation risk of a short-term peripheral pressor in a proximal vein, monitored, is low.",
-  "clinicalTakeaway": "Start norepinephrine peripherally rather than delaying resuscitation for a central line — use a proximal, well-sited large-bore PIV, cap the duration (hours, not days), monitor the site, and have phentolamine available. Convert to central access once the patient is stabilised or the pressor need is prolonged.",
+  "clinicalTakeaway": "Start norepinephrine peripherally rather than delaying resuscitation for a central line — use a proximal, well-sited large-bore PIV, cap the duration (hours, not days), monitor the site, and have phentolamine available. Convert to central access once the patient is stabilized or the pressor need is prolonged.",
   "body": [
     {
       "type": "callout",
@@ -161,8 +161,8 @@
       "items": [
         "Short PIV in a PROXIMAL vein, short-term, monitored: negligible major-complication rate, low (mostly self-limited) minor rate. Reasonable to start norepinephrine peripherally rather than delay for a line.",
         "The real caution flag is the MIDLINE — deliberate duration limits + monitoring if that's your institution's route.",
-        "Still favour central access for: prolonged infusion, other central-line-dependent therapies, or difficult/failed peripheral access.",
-        "Caveat: no high-quality RCT has directly compared PIV vs CVC for AE outcomes; 61% of pooled studies were unclear/high risk of bias; dose/concentration data could not be analysed."
+        "Still favor central access for: prolonged infusion, other central-line-dependent therapies, or difficult/failed peripheral access.",
+        "Caveat: no high-quality RCT has directly compared PIV vs CVC for AE outcomes; 61% of pooled studies were unclear/high risk of bias; dose/concentration data could not be analyzed."
       ]
     }
   ],

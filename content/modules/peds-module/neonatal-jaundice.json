@@ -111,12 +111,12 @@
       "items": [
         "Phototherapy: infant undressed, eyes and gonads shielded, light source per device instructions, turn periodically, monitor temperature and hydration. Start per the AAP 2022 GA/risk threshold graph.",
         "Exchange transfusion (double-volume, via umbilical vessels): reserved for TSB reaching the higher exchange threshold, or any sign of acute bilirubin encephalopathy.",
-        "IVIG: consider in isoimmune haemolytic disease (Rh / ABO) if TSB keeps rising despite intensive phototherapy — reduces the need for exchange transfusion."
+        "IVIG: consider in isoimmune hemolytic disease (Rh / ABO) if TSB keeps rising despite intensive phototherapy — reduces the need for exchange transfusion."
       ]
     },
     {
       "type": "text",
-      "text": "Kernicterus = deposition of unbound unconjugated bilirubin in the basal ganglia and brainstem. Acute bilirubin encephalopathy progresses: lethargy / poor feeding / hypotonia → irritability / hypertonia / opisthotonos / fever → opisthotonos, apnoea, coma. Chronic sequelae: choreoathetoid CP, upward-gaze palsy, sensorineural hearing loss, dental enamel dysplasia. Timely screening and treatment prevents it; established encephalopathy is hard to treat."
+      "text": "Kernicterus = deposition of unbound unconjugated bilirubin in the basal ganglia and brainstem. Acute bilirubin encephalopathy progresses: lethargy / poor feeding / hypotonia → irritability / hypertonia / opisthotonos / fever → opisthotonos, apnea, coma. Chronic sequelae: choreoathetoid CP, upward-gaze palsy, sensorineural hearing loss, dental enamel dysplasia. Timely screening and treatment prevents it; established encephalopathy is hard to treat."
     }
   ],
   "buildNote": "Tier 1 (currency — AAP 2022, valid through Aug 2027). The actual hour-specific Bhutani nomogram and the GA/risk threshold graphs are media the app still needs; this module carries the decision logic and the escalation triggers.  Related: nrp-algorithm, infant-of-diabetic-mother, neonatal-seizures."

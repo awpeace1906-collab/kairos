@@ -54,7 +54,7 @@
     {
       "version": 3,
       "date": "2026-09-09",
-      "change": "Added an 'EtCO2–PaCO2 gradient' section (normal 2–5 mmHg; abrupt drop = PE / low output / hypovolaemia; wide = COPD / high dead space) — from the CV EtCO2-vs-PaCO2 audit."
+      "change": "Added an 'EtCO2–PaCO2 gradient' section (normal 2–5 mmHg; abrupt drop = PE / low output / hypovolemia; wide = COPD / high dead space) — from the CV EtCO2-vs-PaCO2 audit."
     },
     {
       "version": 2,
@@ -69,7 +69,7 @@
   ],
   "summary": "The waveform, not just the number. EtCO2 is a ventilation, perfusion, and metabolism monitor at once — a sudden change can mean any of the three shifted, which is why the shape matters as much as the value. Normal adult EtCO2 35–45 mmHg; PaCO2 exceeds EtCO2 by 2–5 mmHg (the a-ET gradient), widening with dead space (PE, severe COPD).",
   "whyThisMatters": "EtCO₂ is a ventilation, perfusion and metabolism monitor at once, so a sudden change can be any of the three — and reading only the number, not the waveform shape, is how a disconnection, an obstruction, or a falling cardiac output gets missed.",
-  "clinicalTakeaway": "Read the shape, not just the value. A sudden drop to near-zero means disconnection, oesophageal tube, or arrest; a shark-fin means obstruction; a slow steady fall means falling cardiac output or hyperventilation. In arrest, a rising EtCO₂ is ROSC and a persistently low value predicts failure.",
+  "clinicalTakeaway": "Read the shape, not just the value. A sudden drop to near-zero means disconnection, esophageal tube, or arrest; a shark-fin means obstruction; a slow steady fall means falling cardiac output or hyperventilation. In arrest, a rising EtCO₂ is ROSC and a persistently low value predicts failure.",
   "body": [
     {
       "type": "heading",
@@ -168,7 +168,7 @@
     {
       "type": "list",
       "items": [
-        "Sudden EtCO2 fall: pulmonary embolism (ventilated, non-perfused alveoli), a fall in cardiac output or cardiac arrest, acute hypovolaemia/haemorrhage — EtCO2 can flag these before the blood pressure moves.",
+        "Sudden EtCO2 fall: pulmonary embolism (ventilated, non-perfused alveoli), a fall in cardiac output or cardiac arrest, acute hypovolemia/hemorrhage — EtCO2 can flag these before the blood pressure moves.",
         "Chronically wide gradient: COPD / severe parenchymal lung disease (V/Q mismatch, destroyed units), high-dead-space or high-frequency ventilation strategies.",
         "Use EtCO2 as a continuous trend and screening tool — for a precise PaCO2 (permissive hypercapnia targets, raised-ICP CO2 control, severe metabolic acidosis) get a blood gas and re-measure the gradient."
       ]

@@ -27,7 +27,7 @@
       "Defibrillation 2 J/kg first shock, 4 J/kg subsequent, up to the adult max"
     ] },
     { "type": "heading", "level": 2, "text": "New in 2025 — physiology-directed target" },
-    { "type": "callout", "tone": "info", "text": "When invasive arterial monitoring is available, target a diastolic BP ≥ 25 mmHg in infants and ≥ 30 mmHg in older children during CPR. Advanced/optional field for arterial-line-capable centres — not a universal requirement." },
+    { "type": "callout", "tone": "info", "text": "When invasive arterial monitoring is available, target a diastolic BP ≥ 25 mmHg in infants and ≥ 30 mmHg in older children during CPR. Advanced/optional field for arterial-line-capable centers — not a universal requirement." },
     { "type": "heading", "level": 2, "text": "Bradycardia with poor perfusion" },
     { "type": "text", "text": "Despite adequate oxygenation and ventilation: start chest compressions if HR < 60 → epinephrine → atropine ONLY for suspected increased vagal tone or primary AV block." },
     { "type": "heading", "level": 2, "text": "Choking / FBAO" },

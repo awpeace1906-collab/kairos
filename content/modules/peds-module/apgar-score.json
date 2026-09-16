@@ -23,7 +23,7 @@
   "ageRange": "Newborn (1 and 5 minutes of life)",
   "sourceOfTruth": [],
   "body": [
-    { "type": "callout", "tone": "info", "text": "Resuscitation is driven by heart rate, respiratory effort, and tone — start it (see NRP) without waiting for the 1-minute Apgar. A 5-minute Apgar ≤ 5 is associated with higher risk of an adverse outcome at a population level, but is not diagnostic for an individual and does not by itself establish a hypoxic-ischaemic cause." }
+    { "type": "callout", "tone": "info", "text": "Resuscitation is driven by heart rate, respiratory effort, and tone — start it (see NRP) without waiting for the 1-minute Apgar. A 5-minute Apgar ≤ 5 is associated with higher risk of an adverse outcome at a population level, but is not diagnostic for an individual and does not by itself establish a hypoxic-ischemic cause." }
   ],
   "embeddedCalculator": {
     "id": "apgar-score-calc",
@@ -39,7 +39,7 @@
     "engine": "additive",
     "purpose": "5-sign newborn score, 0–10.",
     "items": [
-      { "key": "appearance", "label": "Appearance (colour)", "options": [{ "label": "Blue / pale all over", "points": 0 }, { "label": "Acrocyanosis (pink body, blue extremities)", "points": 1 }, { "label": "Pink all over", "points": 2 }] },
+      { "key": "appearance", "label": "Appearance (color)", "options": [{ "label": "Blue / pale all over", "points": 0 }, { "label": "Acrocyanosis (pink body, blue extremities)", "points": 1 }, { "label": "Pink all over", "points": 2 }] },
       { "key": "pulse", "label": "Pulse (heart rate)", "options": [{ "label": "Absent", "points": 0 }, { "label": "< 100/min", "points": 1 }, { "label": "≥ 100/min", "points": 2 }] },
       { "key": "grimace", "label": "Grimace (reflex irritability)", "options": [{ "label": "No response", "points": 0 }, { "label": "Grimace", "points": 1 }, { "label": "Cry / cough / sneeze", "points": 2 }] },
       { "key": "activity", "label": "Activity (tone)", "options": [{ "label": "Limp", "points": 0 }, { "label": "Some flexion", "points": 1 }, { "label": "Active motion", "points": 2 }] },

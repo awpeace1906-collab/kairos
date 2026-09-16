@@ -68,7 +68,7 @@
     }
   ],
   "summary": "Syndrome-level empiric coverage for the infections that generate the 2am page. Coverage CLASS is shown; specific agents and doses must come from your institution's current antibiogram and the live guideline. De-escalate on culture data within 48–72 h.",
-  "whyThisMatters": "For the 2am sepsis page, the rate-limiting step is recognising the syndrome and the rare-but-time-critical mimics — the specific agent and dose have to come from the local antibiogram, so committing a fixed regimen to memory is the wrong thing to carry.",
+  "whyThisMatters": "For the 2am sepsis page, the rate-limiting step is recognizing the syndrome and the rare-but-time-critical mimics — the specific agent and dose have to come from the local antibiogram, so committing a fixed regimen to memory is the wrong thing to carry.",
   "clinicalTakeaway": "Match empiric coverage to the syndrome and the coverage CLASS shown, then fill in the agents and doses from your institution's current antibiogram and the live guideline. Give the first dose fast, and de-escalate on culture data at 48–72 hours.",
   "body": [
     {

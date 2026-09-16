@@ -80,7 +80,7 @@
   ],
   "summary": "Anatomy predicts whether you see the cords. Physiology decides whether the patient survives the apneic pause and the drugs. Four physiologic states kill patients with grade-1 views: hypoxemia, hypotension, metabolic acidosis, and RV failure. Resuscitate before you intubate.",
   "whyThisMatters": "A grade-1 view is no protection: patients with perfect anatomy still arrest during intubation because the apnoeic pause and the induction drugs unmask a circulation, an oxygen reserve, or a compensating minute ventilation that was only just holding. INTUBE put numbers on it — cardiovascular collapse in roughly 43% of emergency intubations, arrest in about 3%.",
-  "clinicalTakeaway": "Before you push drugs, name which of the four states you're in — hypoxaemic, hypotensive, acidotic, or RV-failure — and fix it: NIV/PEEP preoxygenation, a pressor running, a ventilator set to the patient's own minute ventilation, or afterload-sparing support. Reduce the induction dose and keep a pressor in hand regardless of agent; none is haemodynamically free in true shock.",
+  "clinicalTakeaway": "Before you push drugs, name which of the four states you're in — hypoxemic, hypotensive, acidotic, or RV-failure — and fix it: NIV/PEEP preoxygenation, a pressor running, a ventilator set to the patient's own minute ventilation, or afterload-sparing support. Reduce the induction dose and keep a pressor in hand regardless of agent; none is hemodynamically free in true shock.",
   "body": [
     {
       "type": "heading",
@@ -89,7 +89,7 @@
     },
     {
       "type": "text",
-      "text": "INTUBE (n=2,964, 197 sites, 29 countries) put numbers on emergency ICU intubation: cardiovascular instability in 42.6%, severe hypoxaemia (SpO2 < 80%) in 9.3%, and cardiac arrest within 30 min in 3.1%. Peri-intubation cardiovascular collapse carried an adjusted OR of 2.47 (95% CI 1.72-3.55) for ICU death. Emergency intubation is a haemodynamic intervention, not just a mechanical one — prepare the physiology before you prepare the airway."
+      "text": "INTUBE (n=2,964, 197 sites, 29 countries) put numbers on emergency ICU intubation: cardiovascular instability in 42.6%, severe hypoxemia (SpO2 < 80%) in 9.3%, and cardiac arrest within 30 min in 3.1%. Peri-intubation cardiovascular collapse carried an adjusted OR of 2.47 (95% CI 1.72-3.55) for ICU death. Emergency intubation is a hemodynamic intervention, not just a mechanical one — prepare the physiology before you prepare the airway."
     },
     {
       "type": "heading",
@@ -98,7 +98,7 @@
     },
     {
       "type": "text",
-      "text": "Critically ill patients hold apparent stability through an endogenous sympathetic surge (tachycardia, vasoconstriction, raised myocardial O2 demand). That is compensation, not reserve. Induction agents abolish the drive within seconds — abrupt SVR loss, falling CO, organ hypoperfusion: \"adrenergic collapse\". A high HR or elevated BP in a sick patient signals fragility that needs optimisation, not stability that permits immediate intubation. Vasopressors first, induction second."
+      "text": "Critically ill patients hold apparent stability through an endogenous sympathetic surge (tachycardia, vasoconstriction, raised myocardial O2 demand). That is compensation, not reserve. Induction agents abolish the drive within seconds — abrupt SVR loss, falling CO, organ hypoperfusion: \"adrenergic collapse\". A high HR or elevated BP in a sick patient signals fragility that needs optimization, not stability that permits immediate intubation. Vasopressors first, induction second."
     },
     {
       "type": "heading",
@@ -110,7 +110,7 @@
       "items": [
         "Pre-induction adrenergic dependence — sympathetic surge is the only thing holding up BP and CO; remove it and collapse follows.",
         "Induction-agent sympatholysis — SVR drops and CO falls within seconds of the drug.",
-        "Apnoea and desaturation — hypoxaemia → myocardial ischaemia → reduced contractility, arrhythmia.",
+        "Apnea and desaturation — hypoxemia → myocardial ischemia → reduced contractility, arrhythmia.",
         "Transition to positive-pressure ventilation — raised intrathoracic pressure cuts venous return, preload and CO.",
         "Post-intubation sedation — ongoing vasodilation and sympatholysis, cumulative on all of the above."
       ]
@@ -118,7 +118,7 @@
     {
       "type": "heading",
       "level": 3,
-      "text": "Induction agents — haemodynamic profile"
+      "text": "Induction agents — hemodynamic profile"
     },
     {
       "type": "table",
@@ -137,7 +137,7 @@
           "↓↓",
           "↓↓",
           "↓ / →",
-          "Direct vasodilation + myocardial depression — avoid in haemodynamic compromise"
+          "Direct vasodilation + myocardial depression — avoid in hemodynamic compromise"
         ],
         [
           "Ketamine",
@@ -153,7 +153,7 @@
           "→",
           "→",
           "→",
-          "Most haemodynamically neutral; transient (~24 h) adrenal suppression; preferred when collapse risk is highest"
+          "Most hemodynamically neutral; transient (~24 h) adrenal suppression; preferred when collapse risk is highest"
         ],
         [
           "Midazolam",
@@ -296,5 +296,5 @@
     "pressor-inotrope-reference",
     "ventilator-management"
   ],
-  "buildNote": "Tier 1 (currency — RSI trial Dec 2025, PREOXI/PREPARE II, INTUBE). Cross-linked from airway-management-flow. v3 folded in CV_Difficult_Airway_Physiology.html (INTUBE figures, five stacking phases, agent haemodynamic table); the anatomic/procedural failed-airway drill lives in the sibling anatomically-difficult-airway module."
+  "buildNote": "Tier 1 (currency — RSI trial Dec 2025, PREOXI/PREPARE II, INTUBE). Cross-linked from airway-management-flow. v3 folded in CV_Difficult_Airway_Physiology.html (INTUBE figures, five stacking phases, agent hemodynamic table); the anatomic/procedural failed-airway drill lives in the sibling anatomically-difficult-airway module."
 }

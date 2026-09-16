@@ -115,7 +115,7 @@
       "forKey": "tee",
       "min": 0,
       "max": 100000,
-      "label": "Use as a STARTING target only. ASPEN/SCCM: 25–30 kcal/kg/day and 1.2–2.0 g/kg/day protein for most critically ill adults; consider trophic feeding early in ARDS. Avoid overfeeding (hyperglycaemia, hepatic steatosis, raised CO2, refeeding). Titrate to calorimetry, weight, and metabolic tolerance",
+      "label": "Use as a STARTING target only. ASPEN/SCCM: 25–30 kcal/kg/day and 1.2–2.0 g/kg/day protein for most critically ill adults; consider trophic feeding early in ARDS. Avoid overfeeding (hyperglycemia, hepatic steatosis, raised CO2, refeeding). Titrate to calorimetry, weight, and metabolic tolerance",
       "severity": "low"
     }
   ],

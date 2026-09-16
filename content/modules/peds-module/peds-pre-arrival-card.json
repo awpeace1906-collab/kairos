@@ -68,7 +68,7 @@
       { "forKey": "epiArrestMg", "label": "Single-dose ceilings: epinephrine 1 mg, atropine 0.5 mg (child) / 1 mg (adolescent), adenosine 6 then 12 mg, amiodarone 300 mg, magnesium 2 g, naloxone 2 mg. Epinephrine repeats q3-5 min in arrest.", "severity": "high" },
       { "forKey": "defibFirst", "label": "Cap subsequent defibrillation at 10 J/kg or the adult dose, whichever is lower. Cardioversion: PALS first-attempt range is 0.5-1 J/kg — the figure shown is the 1 J/kg end; drop to 0.5 J/kg for a first attempt in a stable-ish rhythm, then double.", "severity": "moderate" }
     ],
-    "notes": "This is the weight-derived arithmetic only. It is not a resuscitation algorithm — see `peds-cardiac-arrest` for the scenario cards (bradycardia, SVT, shockable/non-shockable arrest, torsades, hyperkalaemia) and the CPR mechanics, and the individual resus drug cards for infusions and full detail. Weigh the child if at all possible; use an age estimate only when a weight is genuinely unmeasurable.",
+    "notes": "This is the weight-derived arithmetic only. It is not a resuscitation algorithm — see `peds-cardiac-arrest` for the scenario cards (bradycardia, SVT, shockable/non-shockable arrest, torsades, hyperkalemia) and the CPR mechanics, and the individual resus drug cards for infusions and full detail. Weigh the child if at all possible; use an age estimate only when a weight is genuinely unmeasurable.",
     "buildNote": "Formula engine, min()/max() caps. Holliday-Segar rate is expressed with piecewise min/max since the engine has no conditional. Cardioversion 1st-dose shown at the 1 J/kg end of the PALS 0.5-1 range (stated in interpretation)."
   },
   "body": [
@@ -84,7 +84,7 @@
     { "type": "callout", "tone": "warning", "text": "An age-estimated weight must be treated as approximate — re-dose off a measured weight as soon as one is available, and flag the estimate to the team." },
     { "type": "heading", "level": 2, "text": "Equipment by weight zone" },
     { "type": "table",
-      "columns": ["Zone · colour", "Weight", "ETT (uncuffed)", "LMA", "Blade", "Defib pads", "BP cuff"],
+      "columns": ["Zone · color", "Weight", "ETT (uncuffed)", "LMA", "Blade", "Defib pads", "BP cuff"],
       "rows": [
         ["1 · Dove", "3-5 kg", "3.0-3.5", "1", "Miller 0-1", "Pediatric", "Neonatal"],
         ["2 · Rose", "6-8 kg", "3.5-4.0", "1", "Miller 1", "Pediatric", "Infant"],

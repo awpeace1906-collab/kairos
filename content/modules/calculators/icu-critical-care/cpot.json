@@ -126,16 +126,16 @@
     {
       "min": 0,
       "max": 2,
-      "label": "Acceptable — minimal or no pain behaviours. Maintain current analgesia; reassess per protocol and before/after procedures",
+      "label": "Acceptable — minimal or no pain behaviors. Maintain current analgesia; reassess per protocol and before/after procedures",
       "severity": "low"
     },
     {
       "min": 3,
       "max": 8,
-      "label": "Significant pain — give an analgesic bolus and up-titrate the infusion; treat procedural pain pre-emptively. Reassess in 15–30 min. Rule out a new surgical / ischaemic / compartment cause if the score jumps",
+      "label": "Significant pain — give an analgesic bolus and up-titrate the infusion; treat procedural pain pre-emptively. Reassess in 15–30 min. Rule out a new surgical / ischemic / compartment cause if the score jumps",
       "severity": "high"
     }
   ],
-  "notes": "Analgesia-first / analgosedation: treat pain before deepening sedation. Validated in medical, surgical, and trauma ICU patients; less reliable in brain injury and deep neuromuscular blockade (behaviours are abolished — use physiologic trend and assume pain during noxious care). Pair with a daily target, RASS, and a delirium screen (CAM-ICU / ICDSC).",
+  "notes": "Analgesia-first / analgosedation: treat pain before deepening sedation. Validated in medical, surgical, and trauma ICU patients; less reliable in brain injury and deep neuromuscular blockade (behaviors are abolished — use physiologic trend and assume pain during noxious care). Pair with a daily target, RASS, and a delirium screen (CAM-ICU / ICDSC).",
   "buildNote": "Additive, 4 domains × 0–2. Range 0–8. Threshold > 2."
 }

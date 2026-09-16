@@ -23,7 +23,7 @@
     { "version": 1, "date": "2026-09-04", "change": "Initial entry — the PALS 'numbers to remember' card: 1-2-4 rule, metabolic-emergency doses, CPR mechanics, and the bradycardia/SVT/shockable/unstable-tachycardia quick card. Converted from the CV Pediatric Code Blue guide." }
   ],
   "kind": "reference",
-  "purpose": "The recall-level numbers for a paediatric resuscitation — arrest and peri-arrest drug doses, defibrillation and cardioversion energies, and CPR mechanics — in one card. Every dose is weight-based; compute from the measured or length-tape weight and respect the adult-equivalent single-dose caps. Full per-drug detail and infusions are on the linked drug cards.",
+  "purpose": "The recall-level numbers for a pediatric resuscitation — arrest and peri-arrest drug doses, defibrillation and cardioversion energies, and CPR mechanics — in one card. Every dose is weight-based; compute from the measured or length-tape weight and respect the adult-equivalent single-dose caps. Full per-drug detail and infusions are on the linked drug cards.",
   "ageRange": "Term neonate (post-resuscitation) to adolescent",
   "sourceOfTruth": ["peds-epinephrine-arrest", "peds-amiodarone-arrest", "pedi-tape-weight-zones", "infant-cpr-parameters"],
   "body": [
@@ -45,10 +45,10 @@
     { "type": "table",
       "columns": ["Dose", "Drug", "Indication"],
       "rows": [
-        ["0.5 g/kg", "Dextrose (5 mL/kg D10, or 2 mL/kg D25)", "documented hypoglycaemia"],
+        ["0.5 g/kg", "Dextrose (5 mL/kg D10, or 2 mL/kg D25)", "documented hypoglycemia"],
         ["5 mg/kg", "Amiodarone IV/IO", "VF / pulseless VT (may repeat up to 15 mg/kg, max 300 mg per dose)"],
         ["25–50 mg/kg", "Magnesium sulfate IV/IO", "Torsades or severe bronchospasm; over 15–30 min; max 2 g"],
-        ["20 mg/kg", "Calcium chloride 10% IV/IO", "hyperkalaemia, hypocalcaemia, hypermagnesaemia, CCB overdose — central line preferred"],
+        ["20 mg/kg", "Calcium chloride 10% IV/IO", "hyperkalemia, hypocalcemia, hypermagnesemia, CCB overdose — central line preferred"],
         ["60 mg/kg", "Calcium gluconate 10% IV/IO", "same indications; safer peripherally (max ~3 g)"]
       ]
     },
@@ -65,12 +65,12 @@
       "columns": ["Scenario", "Numbers"],
       "rows": [
         ["Bradycardia with poor perfusion", "CPR if HR < 60 despite oxygenation/ventilation → epinephrine 0.01 mg/kg; atropine 0.02 mg/kg for vagal / AV block"],
-        ["SVT, stable", "Vagal manoeuvres → adenosine 0.1 then 0.2 mg/kg rapid push"],
+        ["SVT, stable", "Vagal maneuvers → adenosine 0.1 then 0.2 mg/kg rapid push"],
         ["SVT / VT, unstable (poor perfusion)", "Synchronized cardioversion 0.5–1 J/kg, double if repeated"],
         ["Shockable arrest (VF / pVT)", "Defib 2 → 4 J/kg; epinephrine 0.01 mg/kg q3–5 min; amiodarone 5 mg/kg or lidocaine 1 mg/kg after the 3rd shock"],
-        ["Non-shockable arrest (PEA / asystole)", "CPR + epinephrine 0.01 mg/kg early, q3–5 min; hunt the Hs & Ts (add Hypoglycaemia for children)"],
+        ["Non-shockable arrest (PEA / asystole)", "CPR + epinephrine 0.01 mg/kg early, q3–5 min; hunt the Hs & Ts (add Hypoglycemia for children)"],
         ["Torsades / severe bronchospasm", "Magnesium sulfate 25–50 mg/kg (max 2 g)"],
-        ["Hyperkalaemia", "Calcium chloride 20 mg/kg or calcium gluconate 60 mg/kg; then shift (insulin/dextrose, salbutamol, bicarbonate)"]
+        ["Hyperkalemia", "Calcium chloride 20 mg/kg or calcium gluconate 60 mg/kg; then shift (insulin/dextrose, salbutamol, bicarbonate)"]
       ]
     },
     { "type": "callout", "tone": "warning", "text": "Every number here is per-kg — get a weight before the arithmetic (measured, parent-reported, or the length tape / weight zone). Watch the single-dose ceilings: epinephrine 1 mg, atropine 0.5 mg, adenosine 6 then 12 mg, amiodarone 300 mg, magnesium 2 g." }

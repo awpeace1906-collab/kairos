@@ -15,7 +15,7 @@
   "sources": ["Critical Vector — Neonatology Pocket Guide: Growth Parameters", "WHO growth standards (0–2 y); CDC growth charts (> 2 y)"],
   "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — expected trajectories for weight / length / head circumference, the growth-disorder differential by parameter, and the red flags." }],
   "kind": "reference",
-  "purpose": "Expected growth trajectories and the thresholds that should prompt evaluation. Plot on a standardised chart and judge the TREND over time, not a single point — use the same chart consistently for a given child.",
+  "purpose": "Expected growth trajectories and the thresholds that should prompt evaluation. Plot on a standardized chart and judge the TREND over time, not a single point — use the same chart consistently for a given child.",
   "ageRange": "Birth to ~2 years (WHO); older children use CDC charts",
   "sourceOfTruth": ["pedi-tape-weight-zones"],
   "body": [
@@ -56,10 +56,10 @@
         ["Excess weight gain", "Overnutrition; Cushing; hypothyroidism; Prader-Willi"],
         ["Short stature", "Familial; constitutional delay; Turner, achondroplasia; GH deficiency, hypothyroidism; chronic disease"],
         ["Microcephaly", "Genetic; congenital (TORCH) infection; perinatal hypoxic injury; malnutrition; craniosynostosis"],
-        ["Macrocephaly", "Hydrocephalus; benign familial macrocephaly; tumour; metabolic storage disease; subdural collection"]
+        ["Macrocephaly", "Hydrocephalus; benign familial macrocephaly; tumor; metabolic storage disease; subdural collection"]
       ]
     },
     { "type": "callout", "tone": "warning", "text": "Red flags: crossing down ≥ 2 major percentile lines; height < 3rd or > 97th percentile; no weight gain (or weight loss) over an interval where gain is expected; falling growth velocity; growth failure with developmental delay or signs of systemic disease." }
   ],
-  "buildNote": "Trajectories per classical paediatric teaching; plotting standard is WHO 0–2 y / CDC > 2 y."
+  "buildNote": "Trajectories per classical pediatric teaching; plotting standard is WHO 0–2 y / CDC > 2 y."
 }

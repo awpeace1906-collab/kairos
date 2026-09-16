@@ -126,7 +126,7 @@
         ],
         [
           "Delivery timing",
-          "Diet-controlled (A1): 40–41 wk. Medication-requiring, well controlled (A2): 39–40 wk. Poor control: individualise, earlier"
+          "Diet-controlled (A1): 40–41 wk. Medication-requiring, well controlled (A2): 39–40 wk. Poor control: individualize, earlier"
         ],
         [
           "Postpartum",
@@ -137,7 +137,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "In labor with pregestational or insulin-requiring GDM, run an insulin/dextrose protocol to keep maternal glucose ~ 70–110 mg/dL — maternal hyperglycaemia drives neonatal hypoglycaemia. Anticipate shoulder dystocia with an estimated fetal weight ≥ 4500 g (offer cesarean) and ≥ 4000 g with GDM."
+      "text": "In labor with pregestational or insulin-requiring GDM, run an insulin/dextrose protocol to keep maternal glucose ~ 70–110 mg/dL — maternal hyperglycemia drives neonatal hypoglycemia. Anticipate shoulder dystocia with an estimated fetal weight ≥ 4500 g (offer cesarean) and ≥ 4000 g with GDM."
     }
   ]
 }

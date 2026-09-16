@@ -20,7 +20,7 @@
   "items": [
     { "key": "gcs2h", "label": "HIGH RISK — GCS < 15 at 2 hours after injury", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "openDepressed", "label": "HIGH RISK — Suspected open or depressed skull fracture", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
-    { "key": "basalFx", "label": "HIGH RISK — Any sign of basal skull fracture (haemotympanum, raccoon eyes, CSF oto/rhinorrhoea, Battle's sign)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "basalFx", "label": "HIGH RISK — Any sign of basal skull fracture (hemotympanum, raccoon eyes, CSF oto/rhinorrhoea, Battle's sign)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "vomiting", "label": "HIGH RISK — Vomiting ≥ 2 episodes", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "age65", "label": "HIGH RISK — Age ≥ 65 years", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "amnesia", "label": "MEDIUM RISK — Retrograde amnesia to the event ≥ 30 minutes", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },

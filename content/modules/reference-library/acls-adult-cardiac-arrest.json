@@ -67,7 +67,7 @@
   ],
   "summary": "Original algorithm card describing the same clinical steps as AHA ACLS (2025 refresh). Not AHA's copyrighted expression — see build note.",
   "whyThisMatters": "Arrest survival is decided by the quality and continuity of chest compressions and by whether someone finds the reversible cause — not by which drug goes in when. Under pressure, teams drift into long pulse checks, interrupted compressions, and reflex calcium or bicarbonate that the trials have not supported.",
-  "clinicalTakeaway": "Push hard and fast, minimise every interruption, and rotate compressors every 2 minutes. Shock VF/pVT immediately and give epinephrine early in non-shockable rhythms. Work the H's and T's every cycle — the save is usually in the diagnosis, not the drug box.",
+  "clinicalTakeaway": "Push hard and fast, minimize every interruption, and rotate compressors every 2 minutes. Shock VF/pVT immediately and give epinephrine early in non-shockable rhythms. Work the H's and T's every cycle — the save is usually in the diagnosis, not the drug box.",
   "body": [
     {
       "type": "heading",
@@ -98,7 +98,7 @@
     },
     {
       "type": "text",
-      "text": "About a quarter of VF arrests are still in VF after three standard shocks. Survival falls with each additional shock (registry: ~29% at 1–3 shocks → ~12% at 4–10 → ~5% beyond 10). First: optimise the basics — compression quality, pad placement and skin contact, maximal energy, and treat reversible causes (much 'refractory' VF is actually RECURRENT VF re-fibrillating after transient termination). Two escalation options:"
+      "text": "About a quarter of VF arrests are still in VF after three standard shocks. Survival falls with each additional shock (registry: ~29% at 1–3 shocks → ~12% at 4–10 → ~5% beyond 10). First: optimize the basics — compression quality, pad placement and skin contact, maximal energy, and treat reversible causes (much 'refractory' VF is actually RECURRENT VF re-fibrillating after transient termination). Two escalation options:"
     },
     {
       "type": "list",
@@ -109,7 +109,7 @@
     },
     {
       "type": "text",
-      "text": "DOSE-VF (NEJM 2022, cluster-randomised crossover, Ontario): survival to discharge 13.3% standard vs 21.7% vector change vs 30.4% DSED; DSED was the only strategy to also significantly improve good neurologic outcome (27.4% vs 11.2%). Caveats: a single trial, stopped early at 405 of a planned 930 patients (early stopping overestimates effect), the vector-change survival finding has a fragility index of 1, and the per-protocol analysis lost significance. ILCOR / AHA / ANZCOR grade the evidence low-to-very-low certainty and do NOT recommend DSED or vector change for routine use — treat them as a reasonable option for genuine refractory VF when standard shocks have failed, not as standard care."
+      "text": "DOSE-VF (NEJM 2022, cluster-randomized crossover, Ontario): survival to discharge 13.3% standard vs 21.7% vector change vs 30.4% DSED; DSED was the only strategy to also significantly improve good neurologic outcome (27.4% vs 11.2%). Caveats: a single trial, stopped early at 405 of a planned 930 patients (early stopping overestimates effect), the vector-change survival finding has a fragility index of 1, and the per-protocol analysis lost significance. ILCOR / AHA / ANZCOR grade the evidence low-to-very-low certainty and do NOT recommend DSED or vector change for routine use — treat them as a reasonable option for genuine refractory VF when standard shocks have failed, not as standard care."
     },
     {
       "type": "heading",
@@ -128,10 +128,10 @@
     {
       "type": "list",
       "items": [
-        "Calcium — COCA (JAMA 2021) was stopped early for a signal of harm (ROSC 19% vs 27% placebo). Not recommended routinely; reserve for confirmed hyperkalaemia, hypocalcaemia, or calcium-channel-blocker overdose.",
-        "Sodium bicarbonate — BIHCA (JAMA 2026), the first purpose-built RCT in in-hospital arrest (779 patients, given after each epinephrine dose), found no significant difference in sustained ROSC (39% vs 37%) or survival. Reserve for hyperkalaemia, tricyclic overdose, or known severe metabolic acidosis.",
+        "Calcium — COCA (JAMA 2021) was stopped early for a signal of harm (ROSC 19% vs 27% placebo). Not recommended routinely; reserve for confirmed hyperkalemia, hypocalcemia, or calcium-channel-blocker overdose.",
+        "Sodium bicarbonate — BIHCA (JAMA 2026), the first purpose-built RCT in in-hospital arrest (779 patients, given after each epinephrine dose), found no significant difference in sustained ROSC (39% vs 37%) or survival. Reserve for hyperkalemia, tricyclic overdose, or known severe metabolic acidosis.",
         "Vasopressin — removed from the standard 2025 drug sequence; pull it from code carts.",
-        "High-dose epinephrine — no survival benefit in randomised trials."
+        "High-dose epinephrine — no survival benefit in randomized trials."
       ]
     },
     {

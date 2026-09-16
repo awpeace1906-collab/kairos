@@ -51,12 +51,12 @@
     {
       "version": 1,
       "date": "2026-09-03",
-      "change": "Initial entry — Bartholin abscess (Word catheter vs marsupialisation, biopsy indication), postpartum vulvar haematoma, and layered laceration repair including the fourth-degree sequence."
+      "change": "Initial entry — Bartholin abscess (Word catheter vs marsupialisation, biopsy indication), postpartum vulvar hematoma, and layered laceration repair including the fourth-degree sequence."
     }
   ],
-  "summary": "Drain a Bartholin abscess AND place a Word catheter — simple incision and drainage alone recurs. Send the cyst wall for pathology in any patient ≥ 40 (Bartholin gland carcinoma). An expanding postpartum vulvar haematoma goes to the operating room.",
-  "whyThisMatters": "A Bartholin abscess drained by simple incision alone recurs; a gland cyst in an older patient can be carcinoma; and a postpartum vulvar haematoma can expand silently into litres of concealed loss. Each has a small step that is easy to skip.",
-  "clinicalTakeaway": "Drain a Bartholin abscess AND place a Word catheter. Send the cyst wall for pathology in any patient ≥ 40. Take an expanding postpartum vulvar or vaginal haematoma to the operating room.",
+  "summary": "Drain a Bartholin abscess AND place a Word catheter — simple incision and drainage alone recurs. Send the cyst wall for pathology in any patient ≥ 40 (Bartholin gland carcinoma). An expanding postpartum vulvar hematoma goes to the operating room.",
+  "whyThisMatters": "A Bartholin abscess drained by simple incision alone recurs; a gland cyst in an older patient can be carcinoma; and a postpartum vulvar hematoma can expand silently into liters of concealed loss. Each has a small step that is easy to skip.",
+  "clinicalTakeaway": "Drain a Bartholin abscess AND place a Word catheter. Send the cyst wall for pathology in any patient ≥ 40. Take an expanding postpartum vulvar or vaginal hematoma to the operating room.",
   "body": [
     {
       "type": "heading",
@@ -91,7 +91,7 @@
         ],
         [
           "Antibiotics",
-          "Not needed for an uncomplicated drained abscess. Add for cellulitis, immunocompromise, pregnancy, or SSTI risk; cover gonorrhoea/chlamydia + anaerobes if an STI is likely"
+          "Not needed for an uncomplicated drained abscess. Add for cellulitis, immunocompromise, pregnancy, or SSTI risk; cover gonorrhea/chlamydia + anaerobes if an STI is likely"
         ],
         [
           "Biopsy",
@@ -102,7 +102,7 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Postpartum vulvar / vaginal haematoma"
+      "text": "Postpartum vulvar / vaginal hematoma"
     },
     {
       "type": "list",
@@ -110,8 +110,8 @@
         "A rapidly expanding, exquisitely painful perineal or vulvar mass after delivery.",
         "Infralevator (vulvar) — most common; supralevator — extends into the broad ligament, harder to detect, larger blood loss.",
         "Small (< 5 cm), stable: ice, analgesia, close observation.",
-        "Expanding, or > 5 cm: operating room for evacuation, haemostasis (figure-of-eight sutures), and a drain. Interventional radiology for a supralevator haematoma or ongoing arterial bleeding.",
-        "Resuscitate and transfuse to the clinical picture — the visible haematoma underestimates the loss."
+        "Expanding, or > 5 cm: operating room for evacuation, hemostasis (figure-of-eight sutures), and a drain. Interventional radiology for a supralevator hematoma or ongoing arterial bleeding.",
+        "Resuscitate and transfuse to the clinical picture — the visible hematoma underestimates the loss."
       ]
     },
     {
@@ -122,8 +122,8 @@
     {
       "type": "list",
       "items": [
-        "Identify the APEX of the laceration before starting — it may require examination under anaesthesia; a suture placed below the true apex leaves a bleeding vessel.",
-        "Repair in layers with a delayed-absorbable suture; ensure haemostasis.",
+        "Identify the APEX of the laceration before starting — it may require examination under anesthesia; a suture placed below the true apex leaves a bleeding vessel.",
+        "Repair in layers with a delayed-absorbable suture; ensure hemostasis.",
         "Fourth-degree sequence: rectal mucosa (fine absorbable, submucosal) → internal anal sphincter → external anal sphincter (end-to-end or overlapping) → anal-sphincter-complex fascia → vaginal mucosa → perineal muscle → perineal skin.",
         "Perform a rectal exam after the repair to confirm no suture has passed through the rectal mucosa. Single-dose antibiotics (e.g. a second-generation cephalosporin) reduce wound complications after a third/fourth-degree tear."
       ]

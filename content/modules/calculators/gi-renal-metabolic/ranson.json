@@ -23,7 +23,7 @@
     { "key": "glucoseAdm", "label": "ADMISSION — Glucose > 200 mg/dL (11.1 mmol/L)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "astAdm", "label": "ADMISSION — AST > 250 U/L", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "ldhAdm", "label": "ADMISSION — LDH > 350 U/L", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
-    { "key": "hctDrop", "label": "48 HOURS — Haematocrit fall > 10 percentage points", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
+    { "key": "hctDrop", "label": "48 HOURS — Hematocrit fall > 10 percentage points", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "bunRise", "label": "48 HOURS — BUN rise > 5 mg/dL (1.8 mmol/L) despite fluids", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "calcium", "label": "48 HOURS — Serum calcium < 8 mg/dL (2.0 mmol/L)", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },
     { "key": "pao2", "label": "48 HOURS — PaO2 < 60 mmHg", "options": [{ "label": "No", "points": 0 }, { "label": "Yes", "points": 1 }] },

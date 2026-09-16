@@ -61,7 +61,7 @@
     }
   ],
   "summary": "Confirm a TOF ratio ≥ 0.9 on a QUANTITATIVE monitor before extubation — visual / tactile assessment cannot detect residual fade above a TOF count of 4. Sugammadex reverses aminosteroids (rocuronium, vecuronium) at any depth; neostigmine only works from a shallow / minimal block and never on a deep one.",
-  "whyThisMatters": "Residual paralysis after anaesthesia is common, invisible to eye and hand above a train-of-four count of 4, and a real cause of post-operative hypoxaemia and aspiration — and the reversal agent that works depends entirely on the depth of block.",
+  "whyThisMatters": "Residual paralysis after anesthesia is common, invisible to eye and hand above a train-of-four count of 4, and a real cause of post-operative hypoxemia and aspiration — and the reversal agent that works depends entirely on the depth of block.",
   "clinicalTakeaway": "Confirm a TOF ratio ≥ 0.9 on a QUANTITATIVE monitor before extubation. Sugammadex reverses rocuronium/vecuronium at any depth; neostigmine only works from a shallow block and never a deep one. If the block is deep and time is short, sugammadex is the answer.",
   "body": [
     {
@@ -203,7 +203,7 @@
     },
     {
       "type": "text",
-      "text": "Prolongs the block: hypothermia, hypermagnesaemia (obstetrics!), acidosis, aminoglycoside antibiotics, volatile anaesthetics (potentiate), hepatic failure (aminosteroids), renal failure (vecuronium, pancuronium), and pseudocholinesterase deficiency (succinylcholine → phase-II / prolonged apnoea → support ventilation until spontaneous recovery; sugammadex does not help)."
+      "text": "Prolongs the block: hypothermia, hypermagnesemia (obstetrics!), acidosis, aminoglycoside antibiotics, volatile anesthetics (potentiate), hepatic failure (aminosteroids), renal failure (vecuronium, pancuronium), and pseudocholinesterase deficiency (succinylcholine → phase-II / prolonged apnea → support ventilation until spontaneous recovery; sugammadex does not help)."
     },
     {
       "type": "callout",

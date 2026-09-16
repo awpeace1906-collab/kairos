@@ -66,8 +66,8 @@
     }
   ],
   "summary": "Crush syndrome is won or lost before the limb is ever freed. A trapped limb sequesters liters of volume and a lethal potassium load behind an intact barrier; releasing the crushing force without preparation can convert a stable entrapped patient into a cardiac arrest within minutes. Resuscitate before you decompress, isolate when you cannot resuscitate, and treat the potassium as already lethal.",
-  "whyThisMatters": "The danger in crush injury is not the crushed limb — it is the moment of release, when litres of sequestered volume and a lethal potassium load hit the central circulation at once and can arrest a patient who looked stable while trapped. This is a prehospital decision that determines whether the patient survives the transport.",
-  "clinicalTakeaway": "Start IV crystalloid before the crushing force is released — the single highest-yield intervention. Treat the ECG as hyperkalaemia at extrication (calcium first, even pre-emptively for a long entrapment). Target a urine output of 200–300 mL/hr to flush myoglobin; consider a proximal tourniquet if entrapment exceeds 2 hours and you cannot resuscitate and monitor.",
+  "whyThisMatters": "The danger in crush injury is not the crushed limb — it is the moment of release, when liters of sequestered volume and a lethal potassium load hit the central circulation at once and can arrest a patient who looked stable while trapped. This is a prehospital decision that determines whether the patient survives the transport.",
+  "clinicalTakeaway": "Start IV crystalloid before the crushing force is released — the single highest-yield intervention. Treat the ECG as hyperkalemia at extrication (calcium first, even pre-emptively for a long entrapment). Target a urine output of 200–300 mL/hr to flush myoglobin; consider a proximal tourniquet if entrapment exceeds 2 hours and you cannot resuscitate and monitor.",
   "body": [
     {
       "type": "heading",
@@ -95,10 +95,10 @@
     {
       "type": "list",
       "items": [
-        "Third-spacing: up to several litres can sequester into a single severely crushed extremity — injured muscle takes up fluid like a sponge.",
+        "Third-spacing: up to several liters can sequester into a single severely crushed extremity — injured muscle takes up fluid like a sponge.",
         "The patient can look reasonably stable while entrapped, then crash within minutes of release — that blood volume was never available to the central circulation.",
-        "Reperfusion unmasks the hypovolaemia while simultaneously releasing vasodilatory and toxic mediators — a sudden combined distributive-and-hypovolaemic collapse.",
-        "Hyperkalaemia-induced arrhythmia is the second most common cause of death immediately after extrication or reperfusion, after haemorrhage."
+        "Reperfusion unmasks the hypovolemia while simultaneously releasing vasodilatory and toxic mediators — a sudden combined distributive-and-hypovolemic collapse.",
+        "Hyperkalemia-induced arrhythmia is the second most common cause of death immediately after extrication or reperfusion, after hemorrhage."
       ]
     },
     {
@@ -126,11 +126,11 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Hyperkalaemia — the immediate killer"
+      "text": "Hyperkalemia — the immediate killer"
     },
     {
       "type": "text",
-      "text": "Potassium release from ischaemic muscle can push serum levels into cardiac-arrest territory within minutes of reperfusion, often before any lab can be drawn. Treat the ECG, not the number you don't have yet."
+      "text": "Potassium release from ischemic muscle can push serum levels into cardiac-arrest territory within minutes of reperfusion, often before any lab can be drawn. Treat the ECG, not the number you don't have yet."
     },
     {
       "type": "table",
@@ -140,16 +140,16 @@
       ],
       "rows": [
         [
-          "Recognise",
-          "Peaked T waves → widened QRS → loss of P waves → sine wave → arrest. Any of these in a crush patient at or near extrication = treat as hyperkalaemia until proven otherwise."
+          "Recognize",
+          "Peaked T waves → widened QRS → loss of P waves → sine wave → arrest. Any of these in a crush patient at or near extrication = treat as hyperkalemia until proven otherwise."
         ],
         [
-          "Stabilise the membrane",
+          "Stabilize the membrane",
           "Calcium chloride 1 g IV (preferred centrally) or calcium gluconate 2-3 g IV peripherally — first and fastest if ECG changes are present. Antagonises the cardiac membrane effect; does NOT lower serum potassium."
         ],
         [
           "Shift potassium intracellularly",
-          "Regular insulin 10 units IV with dextrose (D50 25 g) to prevent hypoglycaemia; nebulised or IV albuterol as an adjunct; sodium bicarbonate 1 mEq/kg IV if acidotic. None of these remove potassium from the body — they buy time."
+          "Regular insulin 10 units IV with dextrose (D50 25 g) to prevent hypoglycemia; nebulized or IV albuterol as an adjunct; sodium bicarbonate 1 mEq/kg IV if acidotic. None of these remove potassium from the body — they buy time."
         ],
         [
           "Eliminate potassium",
@@ -175,9 +175,9 @@
       "type": "list",
       "items": [
         "Start before extrication: IV crystalloid as soon as access is obtained, ideally before the crushing force is released — the single highest-yield intervention in the whole algorithm.",
-        "Fluid choice: large-volume normal saline risks hyperchloraemic acidosis on top of the metabolic acidosis already present; many protocols favour a balanced or low-potassium crystalloid and avoid potassium-containing fluids entirely until the rhythm and labs clear.",
+        "Fluid choice: large-volume normal saline risks hyperchloremic acidosis on top of the metabolic acidosis already present; many protocols favor a balanced or low-potassium crystalloid and avoid potassium-containing fluids entirely until the rhythm and labs clear.",
         "Target: urine output ~200-300 mL/hr — well above the 0.5 mL/kg/hr trauma standard. The volume does mechanical work (flushing the tubules), not just supporting blood pressure.",
-        "Adjuncts: mannitol and urinary alkalinisation with sodium bicarbonate have been used to reduce myoglobin's nephrotoxic tubular precipitation, though supporting evidence is mixed — neither should delay volume administration.",
+        "Adjuncts: mannitol and urinary alkalinization with sodium bicarbonate have been used to reduce myoglobin's nephrotoxic tubular precipitation, though supporting evidence is mixed — neither should delay volume administration.",
         "Austere adjunct: when IV access or fluid supply is the limiting factor, enteral resuscitation with WHO oral rehydration solution has been described as a bridge (adapted from burn-shock literature) — it extends capability, it does not replace IV resuscitation where IV access exists."
       ]
     },
@@ -190,15 +190,15 @@
       "type": "list",
       "items": [
         "Definitive renal replacement requires evacuation to a dialysis-capable facility. Field/austere management exists to keep the patient alive long enough to get there.",
-        "Medical bridge: repeat the hyperkalaemia cascade (calcium → insulin/glucose + bicarbonate) on a scheduled basis if evacuation is delayed, rather than waiting for the rhythm to change again.",
-        "Improvised peritoneal dialysis has been deployed historically in mass-casualty/disaster settings when formal haemodialysis capacity was overwhelmed — requires a trained provider, sterile technique, and a peritoneal catheter; buys clearance time in hours to days, not the rapid correction haemodialysis gives.",
-        "Fluid restriction once anuric: if urine output hasn't responded to goal-directed resuscitation and the patient is now anuric, shift from aggressive volume loading to careful fluid restriction to avoid iatrogenic pulmonary oedema while awaiting transfer."
+        "Medical bridge: repeat the hyperkalemia cascade (calcium → insulin/glucose + bicarbonate) on a scheduled basis if evacuation is delayed, rather than waiting for the rhythm to change again.",
+        "Improvised peritoneal dialysis has been deployed historically in mass-casualty/disaster settings when formal hemodialysis capacity was overwhelmed — requires a trained provider, sterile technique, and a peritoneal catheter; buys clearance time in hours to days, not the rapid correction hemodialysis gives.",
+        "Fluid restriction once anuric: if urine output hasn't responded to goal-directed resuscitation and the patient is now anuric, shift from aggressive volume loading to careful fluid restriction to avoid iatrogenic pulmonary edema while awaiting transfer."
       ]
     },
     {
       "type": "callout",
       "tone": "info",
-      "text": "The decision point isn't whether the patient needs dialysis — in established crush-related AKI with refractory hyperkalaemia, they do. The decision point is how long you can keep them alive with medical management while evacuation is arranged."
+      "text": "The decision point isn't whether the patient needs dialysis — in established crush-related AKI with refractory hyperkalemia, they do. The decision point is how long you can keep them alive with medical management while evacuation is arranged."
     },
     {
       "type": "heading",
@@ -207,7 +207,7 @@
     },
     {
       "type": "text",
-      "text": "Before crush syndrome can be managed, the casualty has to survive the primary survey. MARCH reorders ABC around the actual order of preventable traumatic death: Massive haemorrhage (direct pressure, packing, tourniquets — treated before airway; a patent airway is useless if the patient exsanguinates first) → Airway → Respiration (tension pneumothorax, open chest wounds) → Circulation (shock recognition, IV/IO, blood products, TXA per protocol) → Hypothermia/Head injury (active warming, TBI assessment — hypothermia + acidosis + coagulopathy is the lethal triad). The extended MARCH PAWS variant adds Pain, Antibiotics, Wounds, and Splinting for prolonged field care."
+      "text": "Before crush syndrome can be managed, the casualty has to survive the primary survey. MARCH reorders ABC around the actual order of preventable traumatic death: Massive hemorrhage (direct pressure, packing, tourniquets — treated before airway; a patent airway is useless if the patient exsanguinates first) → Airway → Respiration (tension pneumothorax, open chest wounds) → Circulation (shock recognition, IV/IO, blood products, TXA per protocol) → Hypothermia/Head injury (active warming, TBI assessment — hypothermia + acidosis + coagulopathy is the lethal triad). The extended MARCH PAWS variant adds Pain, Antibiotics, Wounds, and Splinting for prolonged field care."
     }
   ],
   "related": [
