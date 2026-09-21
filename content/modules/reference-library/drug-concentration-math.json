@@ -55,7 +55,7 @@
     }
   ],
   "summary": "Percent concentration × 10 = mg/mL (1% = 10 mg/mL). Ratio strength is grams per total mL: 1:1000 = 1 g in 1000 mL = 1 mg/mL; each further 10-fold dilution divides the concentration by 10.",
-  "whyThisMatters": "Concentration errors are dosing errors: mixing up percent, ratio strength, and mg/mL is a recognized route to a 10-fold overdose, and it happens under time pressure with adrenaline, lidocaine, and infusions.",
+  "whyThisMatters": "Concentration errors are dosing errors: mixing up percent, ratio strength, and mg/mL is a recognized route to a 10-fold overdose, and it happens under time pressure with epinephrine, lidocaine, and infusions.",
   "clinicalTakeaway": "Percent × 10 = mg/mL (1% = 10 mg/mL). Ratio strength is grams per total mL: 1:1000 = 1 mg/mL, and each further 10-fold dilution divides the concentration by 10 (1:10,000 = 0.1 mg/mL). Convert to mg/mL before you calculate a dose.",
   "body": [
     {

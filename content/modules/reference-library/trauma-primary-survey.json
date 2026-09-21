@@ -165,7 +165,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Activate for uncontrolled hemorrhage needing ≥ 3 units RBC in 1 h, an ABC score ≥ 2, or anticipated ≥ 10 units / 24 h. Transfuse RBC : FFP : platelets in a 1:1:1 ratio (PROPPR). Whole blood if available. TXA 1 g IV over 10 min within 3 h of injury (CRASH-2), then 1 g over 8 h — giving TXA after 3 h is associated with harm. Calcium: 1 g CaCl₂ (or 3 g gluconate) after every ~4 units of RBC (citrate chelation → ionised hypocalcemia worsens coagulopathy and cardiac function). Targets: fibrinogen > 150–200 mg/dL (cryoprecipitate / concentrate if low), platelets ≥ 50k (≥ 100k if TBI or ongoing bleeding), ionised calcium > 1.1, temperature > 36 °C, pH > 7.2."
+      "text": "Activate for uncontrolled hemorrhage needing ≥ 3 units RBC in 1 h, an ABC score ≥ 2, or anticipated ≥ 10 units / 24 h. Transfuse RBC : FFP : platelets in a 1:1:1 ratio (PROPPR). Whole blood if available. TXA 1 g IV over 10 min within 3 h of injury (CRASH-2), then 1 g over 8 h — giving TXA after 3 h is associated with harm. Calcium: 1 g CaCl₂ (or 3 g gluconate) after every ~4 units of RBC (citrate chelation → ionized hypocalcemia worsens coagulopathy and cardiac function). Targets: fibrinogen > 150–200 mg/dL (cryoprecipitate / concentrate if low), platelets ≥ 50k (≥ 100k if TBI or ongoing bleeding), ionized calcium > 1.1, temperature > 36 °C, pH > 7.2."
     },
     {
       "type": "heading",

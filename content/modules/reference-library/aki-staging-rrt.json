@@ -143,7 +143,7 @@
       "items": [
         "Mode: CVVHDF (convection + diffusion) is the common default; CVVH or CVVHD are equivalent for solute clearance.",
         "Dose: effluent 20–25 mL/kg/h prescribed (prescribe ~25–30 to allow for downtime and achieve the delivered target). Higher-intensity dosing has no outcome benefit and worsens micronutrient / antibiotic clearance.",
-        "Anticoagulation: regional citrate is first-line (longer filter life, less bleeding) — contraindicated / cautious in severe liver failure or shock with lactic acidosis (citrate accumulation → rising total:ionised calcium ratio). Systemic UFH is the alternative; no anticoagulation if actively bleeding.",
+        "Anticoagulation: regional citrate is first-line (longer filter life, less bleeding) — contraindicated / cautious in severe liver failure or shock with lactic acidosis (citrate accumulation → rising total:ionized calcium ratio). Systemic UFH is the alternative; no anticoagulation if actively bleeding.",
         "Protein: 2.0–2.5 g/kg/day on CRRT (amino acid losses across the filter). Watch for hypophosphatemia and hypokalemia — often need to add phosphate / potassium to the replacement fluid.",
         "Re-dose antibiotics for CRRT clearance (e.g. higher β-lactam doses, vancomycin by levels) — under-dosing is common."
       ]

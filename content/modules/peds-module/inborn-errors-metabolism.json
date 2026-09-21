@@ -27,7 +27,7 @@
       "Hepatocellular dysfunction or unexplained hepatomegaly.",
       "Cardiomyopathy with no other cause.",
       "Recurrent unexplained neonatal/infant deaths in the family; consanguinity.",
-      "An unusual odour, or hair/skin findings (sparse or brittle hair, eczema)."
+      "An unusual odor, or hair/skin findings (sparse or brittle hair, eczema)."
     ] },
     { "type": "heading", "level": 2, "text": "Selected disorders by category" },
     { "type": "table",
@@ -35,8 +35,8 @@
       "rows": [
         ["Galactosemia", "GALT deficiency", "Vomiting, liver failure, cataracts, E. coli sepsis after milk feeds → lactose/galactose-free formula"],
         ["Hereditary fructose intolerance", "Aldolase B", "Vomiting, hypoglycemia, liver dysfunction after fructose/sucrose → avoid fructose, sucrose, sorbitol"],
-        ["Phenylketonuria", "Phenylalanine hydroxylase", "Normal at birth → intellectual disability if untreated; musty odour, fair hair/skin, eczema → lifelong low-phenylalanine diet; strict maternal control in pregnancy"],
-        ["Maple syrup urine disease", "Branched-chain α-ketoacid dehydrogenase", "Poor feeding, lethargy, maple-syrup odour, encephalopathy → BCAA-restricted diet; dialysis in acute crisis"],
+        ["Phenylketonuria", "Phenylalanine hydroxylase", "Normal at birth → intellectual disability if untreated; musty odor, fair hair/skin, eczema → lifelong low-phenylalanine diet; strict maternal control in pregnancy"],
+        ["Maple syrup urine disease", "Branched-chain α-ketoacid dehydrogenase", "Poor feeding, lethargy, maple-syrup odor, encephalopathy → BCAA-restricted diet; dialysis in acute crisis"],
         ["Urea cycle disorders (e.g. OTC deficiency)", "Any urea-cycle enzyme", "Hyperammonemia, vomiting, lethargy → coma, RESPIRATORY ALKALOSIS (early) → protein restriction, nitrogen scavengers (sodium benzoate/phenylacetate), dialysis if ammonia very high"],
         ["Organic acidemias (propionic, methylmalonic)", "Propionyl-CoA carboxylase / methylmalonyl-CoA mutase", "Vomiting, lethargy, high-anion-gap acidosis with ketosis and hyperammonemia → protein restriction, carnitine, B12 (in B12-responsive MMA)"],
         ["Mitochondrial disorders", "Nuclear or mtDNA (maternal inheritance if mtDNA)", "Multisystem: hypotonia, seizures, lactic acidosis, myopathy → supportive care, cofactor cocktails; avoid propofol infusions and valproate"],

@@ -105,7 +105,7 @@
     },
     {
       "key": "ventOrVoice",
-      "label": "Compliance with the ventilator (intubated) OR vocalisation (extubated)",
+      "label": "Compliance with the ventilator (intubated) OR vocalization (extubated)",
       "options": [
         {
           "label": "Tolerating ventilator / speaking in a normal tone or silent (0)",

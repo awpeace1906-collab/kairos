@@ -77,8 +77,8 @@ Still open from the prior cycle:
    *Cross-cutting formatting/QA passes (affect many modules):*
    - **Eliminate British English** — a re-sweep. The 2026-09-16 scripted pass
      covered `content/`, but (a) newly authored modules can reintroduce
-     spellings (the thoracentesis v2 draft did: `favour`, `colour`, `litre`,
-     `millilitres`, `centimetres`, `analysed` — all caught and fixed before
+     spellings (the thoracentesis v2 draft did: `favor`, `color`, `liter`,
+     `milliliters`, `centimeters`, `analyzed` — all caught and fixed before
      commit), and (b) the pass never covered `web/src/`, `ios/Sources/`, or
      `docs/`. Needs: a re-run over `content/`, an extension to UI strings,
      and ideally a CI guard so it cannot regress.
@@ -220,8 +220,8 @@ Still open from the prior cycle:
     error. Structural checks (`getBBox` overflow/collision sweeps) still
     work, and for an actual look, serialize the live SVG with computed
     colors inlined, rasterize via canvas, and read the PNG back.
-  - Newly authored prose reintroduced British spellings (`favour`, `colour`,
-    `litre`, `millilitres`, `centimetres`, `analysed`) despite the
+  - Newly authored prose reintroduced British spellings (`favor`, `color`,
+    `liter`, `milliliters`, `centimeters`, `analyzed`) despite the
     2026-09-16 normalization pass — caught and fixed pre-commit. Logged as
     item 6 above: the normalizer needs a re-run and a CI guard.
 - 2026-09-16 — **American English normalization complete: 1,025 word edits
@@ -229,19 +229,19 @@ Still open from the prior cycle:
   (`scratchpad/americanize.py`, line-based raw-text editing so original file
   formatting survives byte-for-byte — re-serializing through `json.dumps`
   would have reformatted every compact array and buried the real changes).
-  Families converted: `-aemia/-aemic` (the largest by far, ~280
-  occurrences — hyperkalaemia, hypoglycaemia, hypovolaemia, hypoxaemia,
-  ischaemic, anaemia, leukaemia …), `haemo-/haemat-/haemorrh-/haemost-`,
-  `oedema`, `anaesthe-`, `paediatr-`, the `-oea` respiratory set
-  (apnoea/dyspnoea/tachypnoea — heavily used in a critical-care corpus),
-  `oesophag-`, `caesarean`, `orthopaedic`, `gynaecolog-`, `paraesthesi-`,
-  `manoeuvre`, `-our` (colour/behaviour/labour/favour/vapour/tumour),
-  `-re` (fibre/centre/litre), plus `grey`, `programme`, `aluminium`,
-  `paralysed/analysed/emphasised`, and an explicit `-ise/-isation` stem
+  Families converted: `-emia/-emic` (the largest by far, ~280
+  occurrences — hyperkalemia, hypoglycemia, hypovolemia, hypoxemia,
+  ischemic, anemia, leukemia …), `hemo-/hemat-/hemorrh-/hemost-`,
+  `edema`, `anesthe-`, `pediatr-`, the `-oea` respiratory set
+  (apnea/dyspnea/tachypnea — heavily used in a critical-care corpus),
+  `esophag-`, `cesarean`, `orthopedic`, `gynecolog-`, `paresthesi-`,
+  `maneuver`, `-our` (color/behavior/labor/favor/vapor/tumor),
+  `-re` (fiber/center/liter), plus `gray`, `program`, `aluminum`,
+  `paralyzed/analyzed/emphasized`, and an explicit `-ise/-isation` stem
   allowlist.
   **Three traps found and handled, each of which would have introduced a
   real error under a naive global find-and-replace:**
-  1. **`Haemophilus` is the correct genus name** — a blanket `haem→hem`
+  1. **`Haemophilus` is the correct genus name** — a blanket `hem→hem`
      would have produced "Hemophilus influenzae". Sentinel-shielded.
   2. **Citations must quote journal names and article titles verbatim.**
      `sources[]` is skipped wholesale, and inline citations appearing in
@@ -249,7 +249,7 @@ Still open from the prior cycle:
      Haemost`, `Br J Anaesth`, `Paediatr Anaesth`, `Lancet Haematol`,
      `Acta Anaesthesiol Scand`, `J Anaesthesiol Clin Pharmacol`, `Royal
      College of Anaesthetists`, and the article titles containing
-     "caesarean section" / "central venous catheterisation". 21 British
+     "cesarean section" / "central venous catheterization". 21 British
      spellings survive on purpose, all inside citations; a verification
      pass confirmed exactly one outside `sources[]` and it is the protected
      `Paediatr Anaesth 2019` reference inside a buildNote.
@@ -978,7 +978,7 @@ Still open from the prior cycle:
   dropdown. iOS `ContentDetailView`'s table renderer: tables with ≤3 columns
   now lay out full-width with flexible wrapping columns (no forced horizontal
   scroll); only genuinely dense 4+-column tables (e.g. an induction-agent
-  haemodynamic table) keep the fixed-width horizontal-scroll behavior — fixes
+  hemodynamic table) keep the fixed-width horizontal-scroll behavior — fixes
   the "lateral scrolling on some screens" complaint. Peds lens visibility: the
   lens now visibly tags floated items with a "peds" badge (reusing the
   existing cross-list badge styling) instead of only silently reordering,
@@ -1068,7 +1068,7 @@ Still open from the prior cycle:
 - 2026-09-09 — **Guide fold-ins (6, no new modules).** From the deferred list in
   the CV Guides review: `capnography` v3 (new EtCO2–PaCO2 gradient section);
   `airway-management-flow` v3 (Plan A → VL > DL / hyperangulated > Macintosh per
-  COVALENT 2026; post-intubation alkalinised-lidocaine-cuff pearl);
+  COVALENT 2026; post-intubation alkalinized-lidocaine-cuff pearl);
   `pocus-guide` v3 (FIND / DE-SELECT / CONTROL antibiotic framework);
   `ecg-library` v4 (antidromic Mahaim + Bardy 6-point criteria);
   `ventilator-liberation-weaning` v2 (avoid 100% FiO2 washout at extubation —
@@ -1084,13 +1084,13 @@ Still open from the prior cycle:
   rule, reintubation, failure-to-wean work-up table, tracheostomy timing; 2017
   ACCP/ATS + Boles 2007 + Subirà 2019 + Thille/Hernández + François 2007 +
   TracMan). `ventilator-management` → v5 (weaning section points to it).
-  **`bone-cement-implantation-syndrome`** (Peri-op / Anaesthesia — Donaldson
+  **`bone-cement-implantation-syndrome`** (Peri-op / Anesthesia — Donaldson
   grading, mechanism, prevention checklist, grade-by-grade RV-failure
   management). **`alcoholic-ketoacidosis`** (Critical Care — NADH/NAD⁺ mechanism,
   the β-OHB-under-reads point, work-up + mimics, dextrose/thiamine/electrolytes,
   no-insulin/no-bicarb; companion to `dka-hhs-adult-management`). **`icp-tbi-management`
   → v3** — folded in the 2025 ICM review (Robba et al.): ICP-monitoring camps,
-  PaO2 80–120 + hyperoxaemia caution, no TXA benefit in isolated TBI, CPPopt,
+  PaO2 80–120 + hyperoxemia caution, no TXA benefit in isolated TBI, CPPopt,
   elderly SBP ≥ 110, PbtO2 trial status. validate 316/0, test 252/0.
 - 2026-09-08 — **Pin/unpin UI · adult DKA module · deploy wired for real (+1 → 313).**
   *Pins:* `prefs.js` `PINS_KEY` (id array; `null` = use curated) + `pinnedIds` /
@@ -1110,7 +1110,7 @@ Still open from the prior cycle:
   `content-deploy.yml` → `deploy.yml`, triggers on any push to main.
   `ContentStore.remoteBase` (iOS) set to
   `https://awpeace1906-collab.github.io/kairos/content/`; web `REMOTE_BASE` stays
-  `null` (same-origin, SW stale-while-revalidate). manifest.webmanifest colours
+  `null` (same-origin, SW stale-while-revalidate). manifest.webmanifest colors
   updated off the old `#0F0B16`. Verified `dist/` renders standalone at `/` and
   at a `/kairos/` subpath. validate 313/0, test 252/0, iOS BUILD SUCCEEDED.
   Remaining: repo owner flips Pages Source → "GitHub Actions" + adds the
@@ -1141,7 +1141,7 @@ Still open from the prior cycle:
 - 2026-09-08 — **Loose ends + backlog (+3 → 312 total).** *iOS nomogram:* added
   the `plot` field to the iOS `Calculator` model and a SwiftUI `Canvas`
   `NomogramView` (semi-log-Y, 1-2-5 decade grid, curve sampled from
-  `Expression.evaluate` with the free variable `x`, marker + above/below colour
+  `Expression.evaluate` with the free variable `x`, marker + above/below color
   + caption) — parity with the web renderer; verified the acetaminophen curve
   renders on device. *iOS IBM Plex sweep:* nav-bar title font set to
   IBMPlexSans-SmBld via `UINavigationBarAppearance` in `KairosApp.init`; every
@@ -1183,7 +1183,7 @@ Still open from the prior cycle:
   `:focus-visible` ember ring, 0.12 s hover transitions — all under
   `prefers-reduced-motion: no-preference`. Shell cache → v7. iOS mirror: section
   eyebrow + tint bar, `<h2>` tick + `Divider` rule, WHY-THIS-MATTERS (quiet
-  grey) vs CLINICAL-TAKEAWAY (ember) split, mono table headers, load fade.
+  gray) vs CLINICAL-TAKEAWAY (ember) split, mono table headers, load fade.
 - 2026-09-08 — **Nomogram + web UI polish.** Added a declarative `plot` block to
   `calculator.schema.json` (semilogy, x/y axes, curve expressions in `x`) and a
   web SVG renderer; `apap-nac-dosing` → v2 renders the Rumack-Matthew 150 line +
@@ -1466,7 +1466,7 @@ Still open from the prior cycle:
   evidence-corrected induction matrix, folding in PREOXI (NIV preox), FELLOW
   (ApOx adds little), PrePARE/PREPARE II (no fluid-bolus benefit), and the RSI
   trial (NEJM Dec 2025 — ketamine ≠ safer than etomidate, more collapse).
-  **`airway-management-flow` v2** — added a physiologic-optimisation step,
+  **`airway-management-flow` v2** — added a physiologic-optimization step,
   NIV/PEEP preox per PREOXI, and cross-links to the new ref + modified-shock-index
   + capnography. **154 modules.**
 - 2026-09-02 — New **`iv-fluids`** reference (from `iv_fluids_guide.html`):
@@ -1544,7 +1544,7 @@ Still open from the prior cycle:
   IVIG), `neonatal-hie-cooling` (Sarnat staging, cooling eligibility + 33.5–34.5 °C
   ×72 h, multiorgan involvement), `neonatal-seizures` (jitteriness vs seizure,
   Volpe types, correct-glucose/Ca/Mg-first, phenobarb→fosphenytoin/LEV→pyridoxine),
-  `infant-of-diabetic-mother` (hyperinsulinaemia, AAP vs PES glucose thresholds,
+  `infant-of-diabetic-mother` (hyperinsulinemia, AAP vs PES glucose thresholds,
   D10W 2 mL/kg + GIR 6–8), plus `apgar-score` (peds-tool + embedded additive
   calc), `neonatal-rds` (surfactant deficiency, antenatal steroids, CPAP-first),
   `newborn-routine-care` (normal vitals, vit K, eye prophylaxis, 3 exams, normal
@@ -1615,7 +1615,7 @@ Still open from the prior cycle:
   - **`fracture-splinting-guide` v2** — 11 flat nodes → 60. Per region a
     displacement/pattern triage (splint as-is / reduce / emergent ortho), named
     fractures (scaphoid, boxer's, Jones, Lisfranc, Monteggia/Galeazzi,
-    supracondylar, knee dislocation), a paediatric branch (buckle / greenstick /
+    supracondylar, knee dislocation), a pediatric branch (buckle / greenstick /
     plastic / Salter-Harris / toddler's / NAT), and shared `gate-emergent` /
     `compartment` / `emergent` / `reduce-generic` nodes.
   - **`laceration-repair` v3** — added an upstream triage layer: a special-features
@@ -1672,12 +1672,12 @@ Still open from the prior cycle:
   (flipped to light-first; added `--accent-deep`, 5 `--sec-*` section tints,
   `--font-sans`/`--font-mono`), `web/src/views/home.js` (tiles emit `data-section`
   → tint left-border), `web/index.html` (theme-aware `theme-color`),
-  `ios/Sources/App/Theme.swift` (section + severity colours to the Option A
+  `ios/Sources/App/Theme.swift` (section + severity colors to the Option A
   hexes; added `Theme.accent`). Full token table + swatch-artifact link in
   `docs/PALETTES.md`; the old cobalt-indigo proposal there is marked superseded.
   Follow-ups: self-host **IBM Plex Sans/Mono** woff2 (stack falls back to system
   until then); wire `--sec-*` tints into section headers / detail views beyond
-  the home tiles; iOS dark-mode colour set via asset catalog; recolour
+  the home tiles; iOS dark-mode color set via asset catalog; recolour
   `weight-zones.json` off the old Teal→Charcoal scheme.
   **Not verified live** — the same disk I/O failure blocked `tools/build.mjs`
   (2-min timeout on a ~2s script) and the dev server's `predev` sync. Static
@@ -1705,7 +1705,7 @@ Still open from the prior cycle:
   predictor, ≥3 threshold). Bumped `physiologically-difficult-airway` → v3:
   folded in `CV_Difficult_Airway_Physiology.html` (INTUBE scale figures 42.6% CV
   instability / 3.1% arrest / adjusted OR 2.47 for ICU death; the five stacking
-  phases; the induction-agent haemodynamic-profile table). `validate.mjs` on the
+  phases; the induction-agent hemodynamic-profile table). `validate.mjs` on the
   degraded VM took ~7 min/run — first run flagged one stray `related` key on the
   calculator (calculator schema is `unevaluatedProperties:false`); removed it,
   folded that context into `notes`. Re-validate + build + test pending (bg run
@@ -1795,8 +1795,8 @@ Still open from the prior cycle:
     (fluoroquinolone tendinopathy, linezolid neuropathy, daptomycin
     myopathy) + a QT-prolonging drug-class quick list.
   - New `crush-syndrome` reference (Resuscitation & Airway) — entrapment
-    ischaemia/reperfusion physiology, the 2-hour tourniquet/isolation
-    threshold, the hyperkalaemia treatment ladder, goal-directed fluid
+    ischemia/reperfusion physiology, the 2-hour tourniquet/isolation
+    threshold, the hyperkalemia treatment ladder, goal-directed fluid
     resuscitation (200–300 mL/hr UOP target), austere renal-replacement
     bridging. Converted from Part Three of `CV_Austere_Disaster_Medicine.html`
     — Parts One/Two (hazmat scene management, incendiary/white-phosphorus
@@ -1848,7 +1848,7 @@ Still open from the prior cycle:
     icon's own "coral spike" language) → **Dove-Umber** (Dove, Rose, Plum,
     Denim, Olive, Rust, Pine, Scarlet, Umber). Added a real `colorHex` per
     zone (schema updated to allow it) so the zone chip now renders an actual
-    colour swatch dot, not just a text label — web (`.zone-dot`) and iOS
+    color swatch dot, not just a text label — web (`.zone-dot`) and iOS
     (`Color(hex:)` init added to Theme.swift). Pine/Scarlet deliberately reuse
     the severity-low/high hexes (green zone = "good", red zone = "urgent").
   - **Section tints wired beyond the home tiles**: every content page and the
@@ -1857,13 +1857,13 @@ Still open from the prior cycle:
     `components.js`). iOS: a matching `Rectangle` accent in
     `ContentDetailView`, `.tint(Theme.sectionColor(...))` on `SectionView`'s
     list.
-  - **iOS dark-mode colour set via asset catalog** (the last Tier-5
+  - **iOS dark-mode color set via asset catalog** (the last Tier-5
     follow-up): 9 Color Sets added to `Assets.xcassets`
     (AccentEmber, Section×5, Severity×3 — moderate reuses AccentEmber),
     each with a light + dark appearance. `Theme.swift` now resolves through
     `Color("Name")` instead of hardcoded RGB literals, so dark mode picks up
     the lifted tones automatically. All verified live in the web app
-    (zone dot colour, tint borders, category list) via the dev server.
+    (zone dot color, tint borders, category list) via the dev server.
   - **ios-ci actually ran for the first time** (previous runs never got past
     the Xcode-project-format error before today's Xcode-16 fix). It built
     successfully but 3 of 4 UI tests failed for real, diagnosable reasons —
@@ -2159,7 +2159,7 @@ concentrations` would naturally fit there but is filed elsewhere.
   (backgrounding, app switch, force-quit). Low priority.
 
 ### Design decisions open
-- [x] **Tier 5 — colour/font scheme — fully done.** "Ink & Ember on Parchment"
+- [x] **Tier 5 — color/font scheme — fully done.** "Ink & Ember on Parchment"
   is shipped everywhere (`docs/PALETTES.md` has the token table); IBM Plex
   Sans/Mono are self-hosted on both clients (the "still falls back to system
   fonts" note that used to live here is stale — the actual TTFs were sourced
@@ -2184,7 +2184,7 @@ concentrations` would naturally fit there but is filed elsewhere.
   screen; functionally the same ask.
 - [ ] **`external`-engine calculators** (GRACE, and any future proprietary
   score) still render structure + cutoffs only — needs licensed logic or a
-  labelled nomogram approximation before it computes. Tracked with the GRACE
+  labeled nomogram approximation before it computes. Tracked with the GRACE
   2.0 sourcing item below.
 - [ ] **Search `tags` / `keywords`** are populated only on a handful of
   modules — ongoing per-item content work, not a discrete task.
@@ -2240,7 +2240,7 @@ concentrations` would naturally fit there but is filed elsewhere.
   during Tier-1 verification).
 - [ ] **GRACE 2.0** — proprietary coefficients are still unpublished; the
   module ships inputs + verified cutoffs only. Needs a licensed source or a
-  labelled nomogram approximation before it can compute a score.
+  labeled nomogram approximation before it can compute a score.
 - [ ] **`peds-midazolam-status`** IV/intranasal per-dose caps — intentionally
   flagged `institution-specific` (5 vs 10 mg varies by local status-epilepticus
   protocol), not a gap to close so much as a place for you to set your own
@@ -2260,7 +2260,7 @@ concentrations` would naturally fit there but is filed elsewhere.
   ultrasound images) — text criteria are complete, image libraries are not.
 - [x] **AHA ACLS/PALS algorithm cards** — converted (`acls-adult-cardiac-arrest`,
   `peds-cardiac-arrest`) from your supplied public-domain-science originals.
-- [x] **Pedi Tape / weight-zone colour sign-off** — done; recoloured
+- [x] **Pedi Tape / weight-zone color sign-off** — done; recoloured
   Dove-Umber to stop colliding with AnesCalc's teal, with real rendered
   swatches per zone.
 

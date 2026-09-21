@@ -79,7 +79,7 @@
     }
   ],
   "summary": "Anatomy predicts whether you see the cords. Physiology decides whether the patient survives the apneic pause and the drugs. Four physiologic states kill patients with grade-1 views: hypoxemia, hypotension, metabolic acidosis, and RV failure. Resuscitate before you intubate.",
-  "whyThisMatters": "A grade-1 view is no protection: patients with perfect anatomy still arrest during intubation because the apnoeic pause and the induction drugs unmask a circulation, an oxygen reserve, or a compensating minute ventilation that was only just holding. INTUBE put numbers on it — cardiovascular collapse in roughly 43% of emergency intubations, arrest in about 3%.",
+  "whyThisMatters": "A grade-1 view is no protection: patients with perfect anatomy still arrest during intubation because the apneic pause and the induction drugs unmask a circulation, an oxygen reserve, or a compensating minute ventilation that was only just holding. INTUBE put numbers on it — cardiovascular collapse in roughly 43% of emergency intubations, arrest in about 3%.",
   "clinicalTakeaway": "Before you push drugs, name which of the four states you're in — hypoxemic, hypotensive, acidotic, or RV-failure — and fix it: NIV/PEEP preoxygenation, a pressor running, a ventilator set to the patient's own minute ventilation, or afterload-sparing support. Reduce the induction dose and keep a pressor in hand regardless of agent; none is hemodynamically free in true shock.",
   "body": [
     {

@@ -33,7 +33,7 @@ function matchRank(e, q) {
 }
 
 /** Section -> Category -> Item tree for the empty-state TOC. When a care-setting
-    is active, emphasised items sort to the top of their category. */
+    is active, emphasized items sort to the top of their category. */
 export function buildTOC(entries, sectionsConfig, setting = null) {
   return sectionsConfig.sections.map((section) => {
     const inSection = entries.filter((e) => e.section === section.title);

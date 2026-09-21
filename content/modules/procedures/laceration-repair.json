@@ -120,7 +120,7 @@
     {
       "id": "scalp",
       "type": "recommendation",
-      "body": "3-0 / 4-0 non-absorbable (or staples; 3-0/4-0 absorbable for galea). Simple interrupted, staples, or hair-apposition. Blue-colored suture recommended for visibility against hair. Removal 7-10 days. Primary-closure window < 12-24 h (well-vascularised)."
+      "body": "3-0 / 4-0 non-absorbable (or staples; 3-0/4-0 absorbable for galea). Simple interrupted, staples, or hair-apposition. Blue-colored suture recommended for visibility against hair. Removal 7-10 days. Primary-closure window < 12-24 h (well-vascularized)."
     },
     {
       "id": "face",
@@ -202,7 +202,7 @@
     {
       "id": "f-delayed",
       "type": "recommendation",
-      "body": "Primary-closure windows: ~6–8 h for trunk/extremity, up to ~12–24 h for the well-vascularised face and scalp; a clean wound in a healthy patient can sometimes be closed a little later with informed consent. Beyond the window: cleanse, debride, and either leave to heal by secondary intention (small wounds) or pack and arrange DELAYED PRIMARY CLOSURE at 72–96 h. Do not primarily close an old, contaminated, or bite wound to 'tidy it up'."
+      "body": "Primary-closure windows: ~6–8 h for trunk/extremity, up to ~12–24 h for the well-vascularized face and scalp; a clean wound in a healthy patient can sometimes be closed a little later with informed consent. Beyond the window: cleanse, debride, and either leave to heal by secondary intention (small wounds) or pack and arrange DELAYED PRIMARY CLOSURE at 72–96 h. Do not primarily close an old, contaminated, or bite wound to 'tidy it up'."
     },
     {
       "id": "f-crush",

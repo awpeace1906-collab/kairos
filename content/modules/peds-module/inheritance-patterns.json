@@ -15,7 +15,7 @@
   "sources": ["Critical Vector — Neonatology Pocket Guide: Modes of Inheritance", "Standard clinical genetics teaching"],
   "changelog": [{ "version": 1, "date": "2026-09-03", "change": "Initial entry — Mendelian pattern table with recurrence risk and examples, plus selected imprinting / microdeletion syndromes." }],
   "kind": "reference",
-  "purpose": "Quick reference for counselling recurrence risk by inheritance pattern, and for the imprinting and microdeletion syndromes whose parent-of-origin matters (Prader-Willi vs Angelman are the same 15q region, opposite parent).",
+  "purpose": "Quick reference for counseling recurrence risk by inheritance pattern, and for the imprinting and microdeletion syndromes whose parent-of-origin matters (Prader-Willi vs Angelman are the same 15q region, opposite parent).",
   "ageRange": "Any",
   "sourceOfTruth": ["chromosomal-disorders", "inborn-errors-metabolism"],
   "body": [

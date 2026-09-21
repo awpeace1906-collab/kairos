@@ -1,6 +1,6 @@
 // Care-setting lens (DIRECTIONS_FORWARD.md §1). A LENS, not a fork: given the
 // active setting id, reorder a list of search-index entries so the ones this
-// setting emphasises float up. Never filters anything out.
+// setting emphasizes float up. Never filters anything out.
 
 /**
  * Emphasis rank for an entry under a setting. Lower = more relevant.
@@ -15,7 +15,7 @@ export function emphasisRank(entry, settingId) {
   return i === -1 ? Infinity : i;
 }
 
-/** Stable reorder: emphasised entries first (by their emphasis position), the
+/** Stable reorder: emphasized entries first (by their emphasis position), the
     rest keep their original relative order. */
 export function applyLens(entries, settingId) {
   if (!settingId) return entries;
@@ -25,7 +25,7 @@ export function applyLens(entries, settingId) {
     .map((x) => x.e);
 }
 
-/** True when an entry is for the paediatric / neonatal population. */
+/** True when an entry is for the pediatric / neonatal population. */
 export function isPeds(entry) {
   const a = entry.audience;
   return (Array.isArray(a) && (a.includes("peds") || a.includes("neonate"))) || entry.section === "Peds Module";

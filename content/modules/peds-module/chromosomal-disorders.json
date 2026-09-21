@@ -40,7 +40,7 @@
       "columns": ["Karyotype", "~ Incidence", "Key features"],
       "rows": [
         ["Turner (45,X)", "1:2000–2500 female births", "Short stature, webbed neck, low posterior hairline, broad chest / widely spaced nipples, coarctation of the aorta, bicuspid aortic valve, horseshoe kidney, ovarian dysgenesis → infertility, lymphedema of the hands/feet in the newborn"],
-        ["Klinefelter (47,XXY)", "1:500–1000 male births", "Tall stature, small firm testes, infertility, gynaecomastia, learning difficulties — often diagnosed late"],
+        ["Klinefelter (47,XXY)", "1:500–1000 male births", "Tall stature, small firm testes, infertility, gynecomastia, learning difficulties — often diagnosed late"],
         ["Fragile X (FMR1 CGG expansion)", "~ 1:4000 males, ~ 1:8000 females", "The commonest inherited cause of intellectual disability; long narrow face, large ears, macro-orchidism after puberty, autism features"],
         ["XYY (Jacobs)", "~ 1:1000 male births", "Tall stature, usually normal IQ, a mild increase in learning/behavioral difficulty in some"]
       ]

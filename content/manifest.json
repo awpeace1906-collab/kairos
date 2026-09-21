@@ -131,7 +131,7 @@
     },
     "calculators/cardiovascular/brugada-vt": {
       "content_version": 1,
-      "hash": "ed58344c981e0ff0",
+      "hash": "98c7563cbb722127",
       "path": "modules/calculators/cardiovascular/brugada-vt.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -140,7 +140,7 @@
     },
     "calculators/cardiovascular/canadian-syncope-risk-score": {
       "content_version": 1,
-      "hash": "bd74d35730f1ad64",
+      "hash": "dd53d9274f542c74",
       "path": "modules/calculators/cardiovascular/canadian-syncope-risk-score.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -434,7 +434,7 @@
     },
     "calculators/icu-critical-care/cpot": {
       "content_version": 1,
-      "hash": "f8062f411d5ee34d",
+      "hash": "21d24d3d5d1dbf45",
       "path": "modules/calculators/icu-critical-care/cpot.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -542,7 +542,7 @@
     },
     "calculators/neuro/canadian-ct-head": {
       "content_version": 1,
-      "hash": "1e4bc0389539c63a",
+      "hash": "bc9146f7f1b0dcb1",
       "path": "modules/calculators/neuro/canadian-ct-head.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -794,7 +794,7 @@
     },
     "calculators/sepsis-id/psi-port": {
       "content_version": 2,
-      "hash": "cb53244f3c5a479b",
+      "hash": "e14dc4507c144731",
       "path": "modules/calculators/sepsis-id/psi-port.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -937,7 +937,7 @@
     },
     "calculators/trauma/mangled-extremity-severity-score": {
       "content_version": 1,
-      "hash": "922bc67d15bede8d",
+      "hash": "89c1ad856f403c65",
       "path": "modules/calculators/trauma/mangled-extremity-severity-score.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -955,7 +955,7 @@
     },
     "calculators/trauma/nexus-chest-ct": {
       "content_version": 1,
-      "hash": "59b19f194f8b72b4",
+      "hash": "885721a814588798",
       "path": "modules/calculators/trauma/nexus-chest-ct.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -991,7 +991,7 @@
     },
     "calculators/trauma/pecarn-head": {
       "content_version": 1,
-      "hash": "354858495d4859e3",
+      "hash": "37dc0e58d9f1d7f1",
       "path": "modules/calculators/trauma/pecarn-head.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -1549,7 +1549,7 @@
     },
     "drug-dosing/dosing-fluid-math/adjusted-body-weight": {
       "content_version": 2,
-      "hash": "d843d74a72c16504",
+      "hash": "94bf235ea5355f50",
       "path": "modules/drug-dosing/dosing-fluid-math/adjusted-body-weight.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
@@ -1807,7 +1807,7 @@
     },
     "peds-module/bronchiolitis-management": {
       "content_version": 1,
-      "hash": "66cec4714e60a5a4",
+      "hash": "a99e9737719a6f5b",
       "path": "modules/peds-module/bronchiolitis-management.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1834,7 +1834,7 @@
     },
     "peds-module/chromosomal-disorders": {
       "content_version": 1,
-      "hash": "e85317c447d88762",
+      "hash": "d3e1d411985f5741",
       "path": "modules/peds-module/chromosomal-disorders.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1870,7 +1870,7 @@
     },
     "peds-module/inborn-errors-metabolism": {
       "content_version": 1,
-      "hash": "33116db1e187fe0c",
+      "hash": "45b6fea188c6ce31",
       "path": "modules/peds-module/inborn-errors-metabolism.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1906,7 +1906,7 @@
     },
     "peds-module/inheritance-patterns": {
       "content_version": 1,
-      "hash": "e22d18c870763dfa",
+      "hash": "fcc386358b2e036c",
       "path": "modules/peds-module/inheritance-patterns.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1996,7 +1996,7 @@
     },
     "peds-module/newborn-routine-care": {
       "content_version": 1,
-      "hash": "b0a35db39da7534c",
+      "hash": "db8eee88f0f2917a",
       "path": "modules/peds-module/newborn-routine-care.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2005,7 +2005,7 @@
     },
     "peds-module/nrp-algorithm": {
       "content_version": 1,
-      "hash": "5be4628298d49d50",
+      "hash": "ca9b57d62fca3c6d",
       "path": "modules/peds-module/nrp-algorithm.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2014,7 +2014,7 @@
     },
     "peds-module/pedi-tape-weight-zones": {
       "content_version": 2,
-      "hash": "cd4fb9460282f5c3",
+      "hash": "56e218b741ffbc80",
       "path": "modules/peds-module/pedi-tape-weight-zones.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2059,7 +2059,7 @@
     },
     "peds-module/peds-cardiac-arrest": {
       "content_version": 1,
-      "hash": "512910eeaeee35e5",
+      "hash": "235dc66d43fc4b56",
       "path": "modules/peds-module/peds-cardiac-arrest.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2131,7 +2131,7 @@
     },
     "peds-module/peds-rsi-decision-card": {
       "content_version": 1,
-      "hash": "7769f44c477d5ae9",
+      "hash": "7978f094af97bdfe",
       "path": "modules/peds-module/peds-rsi-decision-card.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2284,7 +2284,7 @@
     },
     "procedures/fracture-splinting-guide": {
       "content_version": 2,
-      "hash": "3040f65f8e7c86f8",
+      "hash": "962c5c34b3c2a3ee",
       "path": "modules/procedures/fracture-splinting-guide.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2293,7 +2293,7 @@
     },
     "procedures/laceration-repair": {
       "content_version": 3,
-      "hash": "24075db726b48973",
+      "hash": "254937fe22452241",
       "path": "modules/procedures/laceration-repair.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2365,7 +2365,7 @@
     },
     "procedures/peds-nonsedation-procedural-pain": {
       "content_version": 1,
-      "hash": "dd5fcfdbf0e7e745",
+      "hash": "983530800715cfdb",
       "path": "modules/procedures/peds-nonsedation-procedural-pain.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2401,7 +2401,7 @@
     },
     "procedures/pocus-nerve-block-checklist": {
       "content_version": 1,
-      "hash": "0da4e33fb60ef4fb",
+      "hash": "30facdcaa0af3f55",
       "path": "modules/procedures/pocus-nerve-block-checklist.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2428,7 +2428,7 @@
     },
     "procedures/thoracentesis": {
       "content_version": 2,
-      "hash": "6eb05e5710390f3e",
+      "hash": "d092ea9f64db6e18",
       "path": "modules/procedures/thoracentesis.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2472,7 +2472,7 @@
     },
     "reference-library/abnormal-uterine-bleeding": {
       "content_version": 2,
-      "hash": "6bea222fe3f47811",
+      "hash": "a678842f4c32e00b",
       "path": "modules/reference-library/abnormal-uterine-bleeding.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2499,7 +2499,7 @@
     },
     "reference-library/acute-dyspnea-niv": {
       "content_version": 3,
-      "hash": "7f6fb4e1769efc95",
+      "hash": "f3af64a6fd5543b4",
       "path": "modules/reference-library/acute-dyspnea-niv.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2553,7 +2553,7 @@
     },
     "reference-library/acute-radiation-syndrome": {
       "content_version": 1,
-      "hash": "1c31c6865c4ee2c4",
+      "hash": "2300192809f6590b",
       "path": "modules/reference-library/acute-radiation-syndrome.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2589,7 +2589,7 @@
     },
     "reference-library/aki-staging-rrt": {
       "content_version": 2,
-      "hash": "859a19b9e102a5c5",
+      "hash": "b083072e6838d511",
       "path": "modules/reference-library/aki-staging-rrt.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2616,7 +2616,7 @@
     },
     "reference-library/altered-mental-status": {
       "content_version": 2,
-      "hash": "91aae21eb8d7d7d3",
+      "hash": "fa01865a7976c21f",
       "path": "modules/reference-library/altered-mental-status.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2634,7 +2634,7 @@
     },
     "reference-library/anaphylaxis": {
       "content_version": 3,
-      "hash": "f421af3820e2f708",
+      "hash": "5ff4c63001a97bbf",
       "path": "modules/reference-library/anaphylaxis.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2643,7 +2643,7 @@
     },
     "reference-library/anatomically-difficult-airway": {
       "content_version": 2,
-      "hash": "03d502135940129d",
+      "hash": "3b242661fe26505d",
       "path": "modules/reference-library/anatomically-difficult-airway.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2751,7 +2751,7 @@
     },
     "reference-library/bone-cement-implantation-syndrome": {
       "content_version": 1,
-      "hash": "b17ebd53d3f39e81",
+      "hash": "188ac286d699d519",
       "path": "modules/reference-library/bone-cement-implantation-syndrome.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2814,7 +2814,7 @@
     },
     "reference-library/contraception-methods": {
       "content_version": 2,
-      "hash": "2d038f36491b7bcb",
+      "hash": "875b0e56525e5923",
       "path": "modules/reference-library/contraception-methods.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2823,7 +2823,7 @@
     },
     "reference-library/contrast-associated-aki": {
       "content_version": 3,
-      "hash": "c9da6e9c52dcb738",
+      "hash": "b984fc4477c3ac86",
       "path": "modules/reference-library/contrast-associated-aki.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2850,7 +2850,7 @@
     },
     "reference-library/csection-analgesia-prospect": {
       "content_version": 2,
-      "hash": "f2611eb5ede28347",
+      "hash": "e293eae56ad12e6e",
       "path": "modules/reference-library/csection-analgesia-prospect.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2895,7 +2895,7 @@
     },
     "reference-library/drug-concentration-math": {
       "content_version": 2,
-      "hash": "20a2d486445230cb",
+      "hash": "bd966026ed0e429a",
       "path": "modules/reference-library/drug-concentration-math.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2904,7 +2904,7 @@
     },
     "reference-library/drug-interactions-high-yield": {
       "content_version": 2,
-      "hash": "abe163bf995b8ec9",
+      "hash": "25d0abe456a4a217",
       "path": "modules/reference-library/drug-interactions-high-yield.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2913,7 +2913,7 @@
     },
     "reference-library/ecg-library": {
       "content_version": 4,
-      "hash": "e68d11b683656500",
+      "hash": "5d62dcd671d1c7db",
       "path": "modules/reference-library/ecg-library.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2931,7 +2931,7 @@
     },
     "reference-library/ectopic-pregnancy": {
       "content_version": 2,
-      "hash": "db380e90f52f9a28",
+      "hash": "6a599e4c22bf5e90",
       "path": "modules/reference-library/ectopic-pregnancy.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2985,7 +2985,7 @@
     },
     "reference-library/empiric-antibiotics-cap": {
       "content_version": 2,
-      "hash": "32e6bde471306095",
+      "hash": "01f811ace53a83ed",
       "path": "modules/reference-library/empiric-antibiotics-cap.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3012,7 +3012,7 @@
     },
     "reference-library/erc-2025-pediatric-life-support": {
       "content_version": 2,
-      "hash": "2bc46881b17af772",
+      "hash": "4cf89987a72bbdac",
       "path": "modules/reference-library/erc-2025-pediatric-life-support.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3066,7 +3066,7 @@
     },
     "reference-library/hemorrhagic-shock-mtp": {
       "content_version": 3,
-      "hash": "eec70b8f02e0597a",
+      "hash": "10cada954bfc2337",
       "path": "modules/reference-library/hemorrhagic-shock-mtp.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3120,7 +3120,7 @@
     },
     "reference-library/icp-tbi-management": {
       "content_version": 3,
-      "hash": "e940c5f7f8403540",
+      "hash": "7a4103308443cbbf",
       "path": "modules/reference-library/icp-tbi-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3228,7 +3228,7 @@
     },
     "reference-library/maternal-cardiac-arrest": {
       "content_version": 2,
-      "hash": "5b6da5fa5cce032e",
+      "hash": "68eb6c6470d2444e",
       "path": "modules/reference-library/maternal-cardiac-arrest.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3282,7 +3282,7 @@
     },
     "reference-library/neuraxial-anesthesia": {
       "content_version": 2,
-      "hash": "0d97fced6954df40",
+      "hash": "e6c88642dab55764",
       "path": "modules/reference-library/neuraxial-anesthesia.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3435,7 +3435,7 @@
     },
     "reference-library/physiologically-difficult-airway": {
       "content_version": 4,
-      "hash": "747aa2e75042c2d3",
+      "hash": "252bf4d73c9e6093",
       "path": "modules/reference-library/physiologically-difficult-airway.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3444,7 +3444,7 @@
     },
     "reference-library/pid-tubo-ovarian-abscess": {
       "content_version": 2,
-      "hash": "05a3985716ef802b",
+      "hash": "d67cfd7d6e0df840",
       "path": "modules/reference-library/pid-tubo-ovarian-abscess.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3507,7 +3507,7 @@
     },
     "reference-library/preanesthesia-checklist": {
       "content_version": 2,
-      "hash": "100a49aa80ee8e30",
+      "hash": "76c0b78148936765",
       "path": "modules/reference-library/preanesthesia-checklist.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3534,7 +3534,7 @@
     },
     "reference-library/pressor-inotrope-reference": {
       "content_version": 2,
-      "hash": "cf8596b9102e0f50",
+      "hash": "3f8b909154d12f19",
       "path": "modules/reference-library/pressor-inotrope-reference.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3579,7 +3579,7 @@
     },
     "reference-library/rsi-seven-ps": {
       "content_version": 2,
-      "hash": "2310e65bb9536b8e",
+      "hash": "ba2fe3a3a3eb8fb2",
       "path": "modules/reference-library/rsi-seven-ps.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3597,7 +3597,7 @@
     },
     "reference-library/sedation-analgesia-agents": {
       "content_version": 2,
-      "hash": "cd495ca315156761",
+      "hash": "5de133c35adb2184",
       "path": "modules/reference-library/sedation-analgesia-agents.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3651,7 +3651,7 @@
     },
     "reference-library/status-asthmaticus-ventilation": {
       "content_version": 2,
-      "hash": "0c76ab6cfeb30dc3",
+      "hash": "314f86ef6ff66dee",
       "path": "modules/reference-library/status-asthmaticus-ventilation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3669,7 +3669,7 @@
     },
     "reference-library/surgical-antibiotic-prophylaxis": {
       "content_version": 2,
-      "hash": "db332f0bb1be07f3",
+      "hash": "0af5e69487f96326",
       "path": "modules/reference-library/surgical-antibiotic-prophylaxis.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3786,7 +3786,7 @@
     },
     "reference-library/trauma-primary-survey": {
       "content_version": 2,
-      "hash": "af82f3add96a413a",
+      "hash": "52fd72f2c45fdb40",
       "path": "modules/reference-library/trauma-primary-survey.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3795,7 +3795,7 @@
     },
     "reference-library/trauma-team-activation": {
       "content_version": 2,
-      "hash": "e12738d318c05ce9",
+      "hash": "03b73d4ecbeda42a",
       "path": "modules/reference-library/trauma-team-activation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3813,7 +3813,7 @@
     },
     "reference-library/twelve-lead-stemi-criteria": {
       "content_version": 3,
-      "hash": "bdbbb6d5388f6712",
+      "hash": "0d54a9887351b99d",
       "path": "modules/reference-library/twelve-lead-stemi-criteria.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3822,7 +3822,7 @@
     },
     "reference-library/venous-congestion-deresuscitation": {
       "content_version": 1,
-      "hash": "dffa7064d75bbe04",
+      "hash": "5b16aab3349abd1f",
       "path": "modules/reference-library/venous-congestion-deresuscitation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3831,7 +3831,7 @@
     },
     "reference-library/ventilator-liberation-weaning": {
       "content_version": 3,
-      "hash": "8b3de6f762b05e5f",
+      "hash": "e2efbecead4429fb",
       "path": "modules/reference-library/ventilator-liberation-weaning.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3840,7 +3840,7 @@
     },
     "reference-library/ventilator-management": {
       "content_version": 5,
-      "hash": "67e97066e7036f25",
+      "hash": "77c64392a5d87764",
       "path": "modules/reference-library/ventilator-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3849,7 +3849,7 @@
     },
     "reference-library/ventilator-modes": {
       "content_version": 2,
-      "hash": "2e9f04c41455bc25",
+      "hash": "c80eb722eed66102",
       "path": "modules/reference-library/ventilator-modes.json",
       "contentType": "reference",
       "section": "Reference Library",

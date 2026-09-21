@@ -70,7 +70,7 @@
         ["Shockable arrest (VF / pVT)", "Defib 2 → 4 J/kg; epinephrine 0.01 mg/kg q3–5 min; amiodarone 5 mg/kg or lidocaine 1 mg/kg after the 3rd shock"],
         ["Non-shockable arrest (PEA / asystole)", "CPR + epinephrine 0.01 mg/kg early, q3–5 min; hunt the Hs & Ts (add Hypoglycemia for children)"],
         ["Torsades / severe bronchospasm", "Magnesium sulfate 25–50 mg/kg (max 2 g)"],
-        ["Hyperkalemia", "Calcium chloride 20 mg/kg or calcium gluconate 60 mg/kg; then shift (insulin/dextrose, salbutamol, bicarbonate)"]
+        ["Hyperkalemia", "Calcium chloride 20 mg/kg or calcium gluconate 60 mg/kg; then shift (insulin/dextrose, albuterol, bicarbonate)"]
       ]
     },
     { "type": "callout", "tone": "warning", "text": "Every number here is per-kg — get a weight before the arithmetic (measured, parent-reported, or the length tape / weight zone). Watch the single-dose ceilings: epinephrine 1 mg, atropine 0.5 mg, adenosine 6 then 12 mg, amiodarone 300 mg, magnesium 2 g." }

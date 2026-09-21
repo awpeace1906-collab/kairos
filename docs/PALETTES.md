@@ -1,4 +1,4 @@
-# Palettes — for the Tier 5 colour-scheme decision
+# Palettes — for the Tier 5 color-scheme decision
 
 Kairos must read as visually distinct from **AnesCalc** and **CRISIS** (its two
 companion apps). This file captures the reference palettes so a Kairos scheme can
@@ -30,14 +30,14 @@ dark)`, `web/index.html` theme-color, and `ios/Sources/App/Theme.swift`.
 | `--sev-high` | `#B4322A` | `#D9564A` | severity: high |
 | `--sev-critical` | `#8A2020` | `#C24438` | severity: critical |
 
-Section tints (muted, low-chroma — distinguishable without a colour wheel):
+Section tints (muted, low-chroma — distinguishable without a color wheel):
 `procedures #5B6B7A` slate · `calculators #4A4754` graphite · `drug-dosing
 #B5602E` terracotta · `reference-library #6E6A4E` drab · `peds-module #8A5A6B`
 plum-rose. (Dark: lift each ~15% L.)
 
 Type: `--font-sans` prefers **IBM Plex Sans**, `--font-mono` prefers **IBM Plex
 Mono**, both falling back to the system stack until self-hosted woff2 files land
-(follow-up). No serif (that's CRISIS); no per-section colour theming beyond the
+(follow-up). No serif (that's CRISIS); no per-section color theming beyond the
 tint above.
 
 Fallback if the ink-forward build feels austere: deep indigo `#3D3A9E` accent,
@@ -50,7 +50,7 @@ Swatch comparison artifact: <https://claude.ai/code/artifact/fff174d0-6d38-40cd-
 ## AnesCalc v2 (from `AnesthesiaCalc/Utilities/ThemeManager.swift`)
 
 7 selectable themes; **default is `astmColors`**. System accent asset = `#1B3A6B`
-(navy). Core theme colours:
+(navy). Core theme colors:
 
 | Theme | primary | secondary | accent | cardBg |
 |---|---|---|---|---|
@@ -63,8 +63,8 @@ Swatch comparison artifact: <https://claude.ai/code/artifact/fff174d0-6d38-40cd-
 | Purple Gray | `#4A3060` | `#7B5EA7` | `#F39C12` orange | `#F0EAF8` |
 
 **Takeaway:** AnesCalc owns *dark navy / teal / charcoal / maroon grounds with
-gold–amber–orange accents*, plus ASTM drug-class colours (yellow induction, red
-NMB, sky-blue opioid, violet pressor, grey local…). The current Kairos placeholder
+gold–amber–orange accents*, plus ASTM drug-class colors (yellow induction, red
+NMB, sky-blue opioid, violet pressor, gray local…). The current Kairos placeholder
 accent `#4bb3a7` sits right on AnesCalc's "Deep Teal" — **change it.**
 
 Avoid for Kairos: teal grounds, gold/amber/orange accents, navy+gold.
@@ -98,7 +98,7 @@ purple semantic accent set, serif body + Syne display.
   collides with both. **Drop teal entirely.**
 - **Gold / amber as the accent** — AnesCalc's signature.
 - **Near-black `#0a0e14` ground + serif body** — CRISIS's signature.
-- **Navy `#1B3A6B`/`#1C2B3A` ground + system sans + ASTM drug colours** — AnesCalc.
+- **Navy `#1B3A6B`/`#1C2B3A` ground + system sans + ASTM drug colors** — AnesCalc.
 
 ## Proposed Kairos direction (SUPERSEDED by the 2026-09-03 decision above)
 
@@ -121,15 +121,15 @@ The niche left open: **light-first, geometric-sans, single cool non-teal accent.
     reads "alert".
   - **C. Plum / byzantium** `#7A2E6B` — sober, distinctive, no collision.
   Recommend **A (cobalt-indigo)** as primary with a warm neutral everything-else.
-- **Severity colours** (bands): keep functional — green `#2E7D32` / amber
+- **Severity colors** (bands): keep functional — green `#2E7D32` / amber
   `#B26A00` / red `#C62828` / (critical) `#8E1D2D`. These are semantic, not brand,
   so overlap with CRISIS is fine.
 - **Type:** a single geometric sans throughout (e.g. **Inter** or **IBM Plex
   Sans**) — NOT serif (CRISIS), with a tighter display weight for headers. No
-  per-section colour theming beyond a small section icon tint.
+  per-section color theming beyond a small section icon tint.
 - **Section tokens:** replace the current `.teal/.indigo/.orange/.brown/.pink`
   map with muted, low-chroma tints of the neutral + accent so sections are
-  distinguishable but the app doesn't look like a colour wheel.
+  distinguishable but the app doesn't look like a color wheel.
 
 Next: build a one-page swatch comparison (Kairos option A/B/C beside AnesCalc +
 CRISIS) as an artifact for the call.

@@ -51,6 +51,6 @@
     { "forKey": "psi", "min": 91, "max": 130, "label": "Class IV (91–130) — 30-day mortality ~ 6.0–11.4%. Inpatient admission", "severity": "high" },
     { "forKey": "psi", "min": 131, "max": 500, "label": "Class V (> 130) — 30-day mortality ~ 16.8–38.3%. Inpatient admission; assess for ICU (ATS/IDSA minor criteria, or a major criterion — septic shock on pressors, or respiratory failure needing ventilation)", "severity": "high" }
   ],
-  "notes": "The score is age (−10 if female) plus the weighted points. PSI can under-triage a young patient with few comorbidities but real physiologic derangement — always overlay clinical judgement, hypoxemia, ability to take oral medication, and social factors. CURB-65 is the quicker bedside alternative (no labs). Neither score decides ICU admission — that is the ATS/IDSA criteria.",
+  "notes": "The score is age (−10 if female) plus the weighted points. PSI can under-triage a young patient with few comorbidities but real physiologic derangement — always overlay clinical judgment, hypoxemia, ability to take oral medication, and social factors. CURB-65 is the quicker bedside alternative (no labs). Neither score decides ICU admission — that is the ATS/IDSA criteria.",
   "buildNote": "Formula engine — total = age (−10 if female) + weighted select points. Five risk classes per Fine 1997; mortality ranges per the derivation cohort."
 }

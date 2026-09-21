@@ -62,7 +62,7 @@
     }
   ],
   "summary": "Pediatric BLS technique is UNCHANGED from 2021. The changes are in advanced care: hard numeric airway limits, a raised adolescent fluid-bolus cap, ideal-body-weight drug dosing in high-BMI children, a new defibrillation energy ceiling, and adult-level specificity for septic shock and massive hemorrhage.",
-  "whyThisMatters": "Pediatric BLS is unchanged, so the trap is assuming nothing changed — the 2025 ERC updates are all in advanced care, and they replace clinical judgement with hard numbers (airway limits, fluid-bolus cap, a defibrillation energy ceiling) and add IBW dosing for the high-BMI child.",
+  "whyThisMatters": "Pediatric BLS is unchanged, so the trap is assuming nothing changed — the 2025 ERC updates are all in advanced care, and they replace clinical judgment with hard numbers (airway limits, fluid-bolus cap, a defibrillation energy ceiling) and add IBW dosing for the high-BMI child.",
   "clinicalTakeaway": "Keep 2021 BLS technique. Apply the new advanced-care specifics: numeric airway limits, the raised adolescent fluid-bolus cap, ideal-body-weight drug dosing in obese children, the defibrillation energy ceiling, and the now-explicit pediatric sepsis and massive-hemorrhage guidance.",
   "body": [
     {
@@ -73,12 +73,12 @@
     {
       "type": "heading",
       "level": 2,
-      "text": "Airway — numbers where there used to be judgement"
+      "text": "Airway — numbers where there used to be judgment"
     },
     {
       "type": "list",
       "items": [
-        "Consider apnoeic oxygenation or HFNC to avoid hypoxia during intubation.",
+        "Consider apneic oxygenation or HFNC to avoid hypoxia during intubation.",
         "Limit each intubation attempt to 30–60 s; re-ventilate immediately for desaturation or bradycardia.",
         "Maximum of 4 intubation attempts, then pivot to oxygenation (face mask or SGA) and call anesthetics / PICU."
       ]
@@ -94,7 +94,7 @@
         "Fluid bolus 10 mL/kg — now up to 500 mL in adolescents (≥ 14 y), in line with adult practice (raised from the previous 250 mL cap). Balanced crystalloid preferred (Plasma-Lyte 148 or Hartmann's / LR).",
         "IV access: no more than 5 minutes attempting IV before placing an IO; give analgesia for IO placement unless comatose.",
         "Competent providers should use POCUS to guide difficult IV placement — an explicit recommendation now.",
-        "Vasoactive first-line agents specified: noradrenaline first-line vasopressor; adrenaline first-line inotrope; milrinone first-line inodilator. Vasopressor vs inotrope choice is left to clinical judgement.",
+        "Vasoactive first-line agents specified: norepinephrine first-line vasopressor; epinephrine first-line inotrope; milrinone first-line inodilator. Vasopressor vs inotrope choice is left to clinical judgment.",
         "TBI: titrate fluids and vasoactives to MAP ≥ the 50th centile for age; 0.9% saline may be preferred over balanced crystalloid HERE to drive mild hypernatremia for neuroprotection — a deliberate exception to the balanced-by-default rule."
       ]
     },
@@ -137,7 +137,7 @@
         ],
         [
           "Monitored shockable arrest",
-          "Up to 3 stacked shocks at 4 J/kg with rhythm/pulse checks between; if refractory, adrenaline + amiodarone AFTER 5 shocks, further amiodarone after 7"
+          "Up to 3 stacked shocks at 4 J/kg with rhythm/pulse checks between; if refractory, epinephrine + amiodarone AFTER 5 shocks, further amiodarone after 7"
         ]
       ]
     },

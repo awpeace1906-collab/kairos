@@ -69,7 +69,7 @@
     }
   ],
   "summary": "The occlusion-MI (OMI) paradigm: only ~60% of true coronary occlusions meet classic STEMI criteria. These 8 patterns identify the rest — fully occluded arteries with little or no ST elevation on the standard 12-lead. Plus other high-yield ECGs.",
-  "whyThisMatters": "Only about 60% of true coronary occlusions meet classic STEMI criteria — so a reader who waits for millimetres of ST elevation will send home occlusions that these eight patterns would have caught, and will over-call the Brugada and other mimics that are not occlusions.",
+  "whyThisMatters": "Only about 60% of true coronary occlusions meet classic STEMI criteria — so a reader who waits for millimeters of ST elevation will send home occlusions that these eight patterns would have caught, and will over-call the Brugada and other mimics that are not occlusions.",
   "clinicalTakeaway": "Learn the eight OMI patterns — occluded arteries with little or no ST elevation (hyperacute T waves, de Winter, posterior, Sgarbossa, aVR elevation, and the rest) — and activate on them. For Brugada, only Type 1 is diagnostic; the rest need provocation or context.",
   "body": [
     {

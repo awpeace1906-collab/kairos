@@ -47,7 +47,7 @@ export function renderAbout() {
         "li",
         {},
         el("strong", {}, "The ring"),
-        " is the passage of ordinary time — the routine of a shift: steady, circular, mostly unremarkable. It’s amber rather than a cooler colour because this is lived, active time, not a countdown."
+        " is the passage of ordinary time — the routine of a shift: steady, circular, mostly unremarkable. It’s amber rather than a cooler color because this is lived, active time, not a countdown."
       ),
       el(
         "li",

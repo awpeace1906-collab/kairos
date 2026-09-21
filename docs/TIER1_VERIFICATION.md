@@ -210,7 +210,7 @@ file. Numeric spot-claims are listed; unremarkable descriptive text is not.
 ### ✅ lemon-airway
 - L 0–1, E (3-3-2) 0–3, M (Mallampati ≥3) 0–1, O 0–1, N 0–1 → max 7: matches the
   Reed 2005 LEMON score construction. No validated numeric cutoff exists; the module's
-  bands are explicitly labelled pragmatic UI guidance — acceptable.
+  bands are explicitly labeled pragmatic UI guidance — acceptable.
 - Source(s): Reed MJ et al. Emerg Med J 2005;22:99–102 (PMID 15662058).
 
 ## Classification scales (no arithmetic)
@@ -235,7 +235,7 @@ file. Numeric spot-claims are listed; unremarkable descriptive text is not.
 ### ✅ modified-aldrete
 - 5 categories × 0–2 (Activity, Respiration, Circulation ±20/±20–50/±50 mmHg,
   Consciousness, SpO2 >92% RA / needs O2 / <90% on O2), max 10; discharge ≥9
-  (some centres ≥8): confirmed vs Aldrete 1995.
+  (some centers ≥8): confirmed vs Aldrete 1995.
 - Source(s): Aldrete JA. J Clin Anesth 1995;7:89–91 (PMID 7772368).
 
 ### ✅ killip-classification
@@ -339,7 +339,7 @@ file. Numeric spot-claims are listed; unremarkable descriptive text is not.
   checks out.
 - Deficit = TBW × ((currentNa/140) − 1): the standard free-water-deficit formula.
 - Correction rate ≤8–10 mEq/L/24 h: correct.
-- Note: the cited Adrogué–Madias 2000 paper's headline equation is the "Δ[Na] per litre
+- Note: the cited Adrogué–Madias 2000 paper's headline equation is the "Δ[Na] per liter
   of infusate" formula; the deficit formula used here is the conventional one and is
   fine, but a more exact citation (e.g. Rose/Adrogué textbook) would be tidier.
 - Source(s): Adrogué HJ, Madias NE. N Engl J Med 2000;342:1493–9 (PMID 10816188).
@@ -355,7 +355,7 @@ file. Numeric spot-claims are listed; unremarkable descriptive text is not.
 - VIS = dopamine + dobutamine + 100·epi + 100·norepi + 10·milrinone + 10000·vasopressin:
   matches the original Gaies 2010 formula (norepinephrine ×100 IS part of the original;
   phenylephrine ×100 is an optional later add-on, correctly noted as omitted).
-- Bands 0–15 / 15–30 / >30 are explicitly labelled approximate/cohort-dependent —
+- Bands 0–15 / 15–30 / >30 are explicitly labeled approximate/cohort-dependent —
   acceptable (no canonical cutoffs exist).
 - Source(s): Gaies MG et al. Pediatr Crit Care Med 2010;11:234–8 (PMID 19794327);
   Koponen T et al. Br J Anaesth 2019;122:428–36.
@@ -406,7 +406,7 @@ file. Numeric spot-claims are listed; unremarkable descriptive text is not.
   invasive at GRACE >140".
 - Cannot verify the proprietary GRACE 2.0 non-linear coefficients — none are published;
   the module correctly does not attempt them. Maintainer must license gracescore.org
-  logic or ship a labelled nomogram approximation.
+  logic or ship a labeled nomogram approximation.
 - Source(s): Fox KAA et al. BMJ 2006;333:1091 (PMID 17032691); Byrne RA et al. (ESC
   2023 ACS) Eur Heart J 2023;44:3720–3826.
 
@@ -440,14 +440,14 @@ file. Numeric spot-claims are listed; unremarkable descriptive text is not.
 - 1–2 mg/kg IV/IO induction: confirmed (common EM/anesthesia range; 1.5–2 mg/kg also
   cited). IM 3–4 mg/kg when no IV: acceptable — some sources use 4–5 mg/kg IM for a
   dissociative dose; consider widening the note to "3–5 mg/kg IM".
-- Age <3 months laryngospasm caution: recognised relative contraindication.
+- Age <3 months laryngospasm caution: recognized relative contraindication.
 - Source(s): Green SM et al. Ann Emerg Med 2011;57:449–61; ATOTW / peds RSI references.
 
 ### ✅ peds-rocuronium-rsi
 - 1–1.2 mg/kg IV/IO for RSI: confirmed. Onset ~45–60 s, duration 30–60 min: correct.
 - Sugammadex 16 mg/kg for immediate reversal of an RSI dose: confirmed.
 - Succinylcholine alternative 1–2 mg/kg IV, max 150 mg: correct.
-- Source(s): rocuronium/sugammadex labelling; Lexicomp Pediatric.
+- Source(s): rocuronium/sugammadex labeling; Lexicomp Pediatric.
 
 ### ✅ peds-lorazepam-status
 - 0.1 mg/kg IV, max 4 mg/dose, may repeat once after 5 min: confirmed vs AES 2016
@@ -491,7 +491,7 @@ file. Numeric spot-claims are listed; unremarkable descriptive text is not.
 
 - **adjusted-body-weight**: Janmahasatian coefficients now verified twice — clear the
   `verify-coefficients` flag and the buildNote.
-- **aims65**: original wording is "age >65"; module uses "≥65" (matches MDCalc). Harmonise
+- **aims65**: original wording is "age >65"; module uses "≥65" (matches MDCalc). Harmonize
   if desired.
 - **qtc**: consider starting the borderline band at 450 ms (men) to match AHA/ACCF/HRS
   2009; add an interpretation band set for the Fridericia output.
@@ -583,7 +583,7 @@ legend at the top of this file.
 
 ### ✏️ caprini-vte — checklist + tiers
 - Was an abbreviated ~12-item set with non-standard "count each" groupings and a
-  0–1 / 2 / 3–4 / ≥5 scheme labelled very-low/low/moderate/high.
+  0–1 / 2 / 3–4 / ≥5 scheme labeled very-low/low/moderate/high.
 - Rebuilt to the **full 2005 checklist** (24 item rows incl. all 1/2/3/5-point
   factors) and the spec's **0–1 low / 2 moderate / 3–4 high / ≥5 highest** tier
   labels with the 2013-model prophylaxis text. v2.
@@ -635,7 +635,7 @@ legend at the top of this file.
   (CCR), PECARN, Glasgow-Blatchford, ISS, RSBI, P/F ratio, salicylate-toxicity**
   — point values / formulas / bands all match the spec and cited sources.
 
-## ⚠️ Known modelling limitations (not defects)
+## ⚠️ Known modeling limitations (not defects)
 
 - **Ottawa Ankle Rules** — the rule is conjunctive (zone pain AND a bony-tenderness
   or weight-bearing finding). The additive engine flags any single positive input

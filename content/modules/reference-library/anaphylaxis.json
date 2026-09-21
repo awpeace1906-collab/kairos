@@ -101,7 +101,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Refractory hypotension or stridor despite IM epinephrine → start the infusion early and prepare for a difficult airway (angiedema). Persistent bronchospasm: nebulized salbutamol. Persistent upper-airway edema: nebulized epinephrine and early intubation by the most experienced operator."
+      "text": "Refractory hypotension or stridor despite IM epinephrine → start the infusion early and prepare for a difficult airway (angiedema). Persistent bronchospasm: nebulized albuterol. Persistent upper-airway edema: nebulized epinephrine and early intubation by the most experienced operator."
     }
   ],
   "related": ["perioperative-anaphylaxis", "anesthesia-pocus"]

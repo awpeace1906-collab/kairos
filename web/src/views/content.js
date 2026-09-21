@@ -95,7 +95,7 @@ function diagramShape(s) {
     case "ellipse":
       return svgEl("ellipse", { ...common, cx: s.at?.[0], cy: s.at?.[1], rx: s.rx, ry: s.ry });
     case "arrow": {
-      // Head drawn as a filled triangle rather than a <marker>, so its colour
+      // Head drawn as a filled triangle rather than a <marker>, so its color
       // follows the same token and no shared <defs> id can collide.
       const [x1, y1] = s.from || [0, 0], [x2, y2] = s.to || [0, 0];
       const a = Math.atan2(y2 - y1, x2 - x1), h = 7, w = 3.6;
@@ -434,7 +434,7 @@ function renderPedsTool(mod, route, store) {
     const intro = mount(el("div"), el("p", { class: "purpose" }, mod.purpose), mod.ageRange ? el("p", { class: "muted" }, mod.ageRange) : null);
     node.prepend(...intro.childNodes);
     // A peds-tool may carry an explanatory body alongside its calculator
-    // (matches the iOS PedsToolBody behaviour).
+    // (matches the iOS PedsToolBody behavior).
     if (mod.body?.length) node.append(el("div", { class: "prose" }, ...renderBlocks(mod.body)));
     return node;
   }

@@ -39,6 +39,6 @@
   "interpretation": [
     { "forKey": "adjbw", "label": "Adjusted BW = IBW + 0.4 × (actual − IBW). Use for routine drug dosing in obesity.", "severity": "info" }
   ],
-  "notes": "Enter height twice (inches for Devine IBW, metres for BMI). Read the Janmahasatian LBW row matching the patient's sex.",
+  "notes": "Enter height twice (inches for Devine IBW, meters for BMI). Read the Janmahasatian LBW row matching the patient's sex.",
   "buildNote": "Coefficients verified 2026-09-01 (Janmahasatian 2005, Evidencio, MDCalc). A production build should collapse the two LBW rows into one using the sex select rather than showing both."
 }

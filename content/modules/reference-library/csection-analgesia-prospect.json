@@ -54,9 +54,9 @@
       "change": "Initial entry — the 2026 PROSPECT six-domain recommendation for post-cesarean analgesia under neuraxial anesthesia."
     }
   ],
-  "summary": "Three load-bearing pillars: (1) a single neuraxial long-acting opioid, (2) scheduled — not as-needed — paracetamol + NSAID, (3) a single IV dexamethasone dose after delivery. Everything else is an addition. Oral opioids are the rescue backstop, not a routine component.",
+  "summary": "Three load-bearing pillars: (1) a single neuraxial long-acting opioid, (2) scheduled — not as-needed — acetaminophen + NSAID, (3) a single IV dexamethasone dose after delivery. Everything else is an addition. Oral opioids are the rescue backstop, not a routine component.",
   "whyThisMatters": "Post-cesarean analgesia fails when it is built on as-needed opioids instead of a scheduled multimodal base — the PROSPECT framework is three load-bearing pillars, and dropping any one of them is where the pain scores climb.",
-  "clinicalTakeaway": "Give a single neuraxial long-acting opioid, scheduled (not PRN) paracetamol plus an NSAID, and one IV dexamethasone dose after delivery. Oral opioids are the rescue backstop, not a routine component.",
+  "clinicalTakeaway": "Give a single neuraxial long-acting opioid, scheduled (not PRN) acetaminophen plus an NSAID, and one IV dexamethasone dose after delivery. Oral opioids are the rescue backstop, not a routine component.",
   "body": [
     {
       "type": "heading",
@@ -80,7 +80,7 @@
         ],
         [
           "Systemic analgesia",
-          "Scheduled paracetamol AND NSAIDs, started peri- or intraoperatively, continued postoperatively — not rescue dosing. Two non-opioid mechanisms established before the neuraxial opioid wears off."
+          "Scheduled acetaminophen AND NSAIDs, started peri- or intraoperatively, continued postoperatively — not rescue dosing. Two non-opioid mechanisms established before the neuraxial opioid wears off."
         ],
         [
           "IV dexamethasone",
@@ -99,7 +99,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "text": "Operating principles: default to intrathecal morphine/diamorphine whenever neuraxial anesthesia is the primary technique; schedule paracetamol + NSAID from the start (don't wait for the patient to ask); give the single dexamethasone dose after delivery; if intrathecal morphine isn't in the plan, default to a fascial plane block or wound infiltration rather than leaning harder on systemic opioids; treat surgical technique as part of the analgesic plan."
+      "text": "Operating principles: default to intrathecal morphine/diamorphine whenever neuraxial anesthesia is the primary technique; schedule acetaminophen + NSAID from the start (don't wait for the patient to ask); give the single dexamethasone dose after delivery; if intrathecal morphine isn't in the plan, default to a fascial plane block or wound infiltration rather than leaning harder on systemic opioids; treat surgical technique as part of the analgesic plan."
     }
   ],
   "related": [

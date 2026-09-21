@@ -135,7 +135,7 @@ struct DiagramView: View {
         }
     }
 
-    /// Semantic token -> palette colour. Mirrors DIAGRAM_TOKENS in content.js and
+    /// Semantic token -> palette color. Mirrors DIAGRAM_TOKENS in content.js and
     /// the --dg-* custom properties in styles.css.
     private func color(_ token: String?) -> Color? {
         guard let token else { return nil }

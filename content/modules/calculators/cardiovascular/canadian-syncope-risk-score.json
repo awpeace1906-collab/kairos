@@ -33,6 +33,6 @@
     { "min": 1, "max": 3, "label": "Medium risk — ~ 8.1% (score 1) rising to ~ 12–20%", "disposition": "15-day outpatient cardiac monitoring; shared decision on brief admission", "severity": "moderate" },
     { "min": 4, "max": 11, "label": "High / very high risk — ~ 25% (score 4) to > 50% (score ≥ 6)", "disposition": "Admit / prolonged monitoring; cardiology involvement", "severity": "high" }
   ],
-  "notes": "Serious adverse events tracked: death, arrhythmia, MI, structural heart disease, aortic dissection, PE, severe hemorrhage, subarachnoid hemorrhage, and any procedural intervention for the cause. The score does not replace judgement for a clearly high-risk presentation.",
+  "notes": "Serious adverse events tracked: death, arrhythmia, MI, structural heart disease, aortic dissection, PE, severe hemorrhage, subarachnoid hemorrhage, and any procedural intervention for the cause. The score does not replace judgment for a clearly high-risk presentation.",
   "buildNote": "Score range −3 to +11. The ED-diagnosis item is mutually exclusive (a select input)."
 }

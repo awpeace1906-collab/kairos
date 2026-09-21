@@ -53,9 +53,9 @@
       "change": "Initial entry — PALM-COEIN classification, acute and maintenance medical treatment, and endometrial-biopsy indications."
     }
   ],
-  "summary": "First rule out pregnancy. Classify by PALM-COEIN (structural vs non-structural). Acute heavy bleeding is managed medically first — high-dose oestrogen or progestin, or IV conjugated oestrogen if the endometrium is atrophic — then transitioned to maintenance, with the LNG-IUD the best-evidence long-term option.",
+  "summary": "First rule out pregnancy. Classify by PALM-COEIN (structural vs non-structural). Acute heavy bleeding is managed medically first — high-dose estrogen or progestin, or IV conjugated estrogen if the endometrium is atrophic — then transitioned to maintenance, with the LNG-IUD the best-evidence long-term option.",
   "whyThisMatters": "AUB is common and usually benign, but two things get missed: an undiagnosed pregnancy behind the bleeding, and — in the acute heavy bleeder — the instinct to reach for a D&C or hysterectomy before trying the medical options that stop most bleeds in hours.",
-  "clinicalTakeaway": "Rule out pregnancy first, then classify with PALM-COEIN. Manage acute heavy bleeding medically first — high-dose oestrogen or progestin, or IV conjugated oestrogen for an atrophic endometrium — then transition to maintenance, with the LNG-IUD the best long-term option. Biopsy the endometrium in anyone at cancer risk.",
+  "clinicalTakeaway": "Rule out pregnancy first, then classify with PALM-COEIN. Manage acute heavy bleeding medically first — high-dose estrogen or progestin, or IV conjugated estrogen for an atrophic endometrium — then transition to maintenance, with the LNG-IUD the best long-term option. Biopsy the endometrium in anyone at cancer risk.",
   "body": [
     {
       "type": "heading",
@@ -106,7 +106,7 @@
       "rows": [
         [
           "Acute heavy menstrual bleeding (medical)",
-          "Combined OCP 3×/day ×7 days; OR high-dose progestin; OR conjugated oestrogen 25 mg IV q4–6h (if atrophic)",
+          "Combined OCP 3×/day ×7 days; OR high-dose progestin; OR conjugated estrogen 25 mg IV q4–6h (if atrophic)",
           "Then transition to maintenance. Tranexamic acid is a useful adjunct"
         ],
         [
@@ -124,7 +124,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Hemodynamically unstable bleeding: resuscitate, correct coagulopathy, and involve GYN — options include IV oestrogen, intrauterine tamponade (balloon), uterine artery embolisation, or D&C. Always check a β-hCG first."
+      "text": "Hemodynamically unstable bleeding: resuscitate, correct coagulopathy, and involve GYN — options include IV estrogen, intrauterine tamponade (balloon), uterine artery embolisation, or D&C. Always check a β-hCG first."
     }
   ]
 }

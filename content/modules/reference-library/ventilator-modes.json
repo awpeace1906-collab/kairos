@@ -216,7 +216,7 @@
       "items": [
         "Hypoxemia → ↑ Phigh and/or ↑ Thigh (and FiO2).",
         "Hypercapnia → shorten Thigh (more releases), or lighten sedation to allow more spontaneous breathing (central to how APRV works). The brief Tlow release is the only point CO2 clears in bulk — very stiff lungs / high CO2 production make short release times hard to manage.",
-        "2026 meta-analysis (9 studies, 1,921 pts): APRV/BiVent improved oxygenation and increased ventilator-free days vs conventional ventilation — no mortality benefit. Treat any one center's protocol as one implementation among several (TCAV personalises Tlow to the patient's flow curve — promising, unproven in large RCTs)."
+        "2026 meta-analysis (9 studies, 1,921 pts): APRV/BiVent improved oxygenation and increased ventilator-free days vs conventional ventilation — no mortality benefit. Treat any one center's protocol as one implementation among several (TCAV personalizes Tlow to the patient's flow curve — promising, unproven in large RCTs)."
       ]
     },
     {
@@ -239,7 +239,7 @@
         ],
         [
           "NAVA (Edi catheter, Maquet/Getinge)",
-          "A specialised NG catheter senses diaphragm electrical activity (Edi); the vent delivers pressure proportional to it. PIP = NAVA level × (Edi max − Edi min) + PEEP",
+          "A specialized NG catheter senses diaphragm electrical activity (Edi); the vent delivers pressure proportional to it. PIP = NAVA level × (Edi max − Edi min) + PEEP",
           "Best patient-ventilator synchrony of any mode (triggers off neural effort). Meta-analysis (7 RCTs, 693 pts): weaning success OR 1.93, MV duration −2.63 days, mortality OR 0.58. Needs the expensive proprietary catheter. Watch the Edi trend: falling as you raise the NAVA level = appropriate unloading."
         ],
         [

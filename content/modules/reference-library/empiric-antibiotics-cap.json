@@ -46,7 +46,7 @@
     }
   ],
   "summary": "Syndrome-level structure for CAP. Drug and dose choices are intentionally NOT hardcoded — they must reflect your institution's current antibiogram and IDSA updates.",
-  "whyThisMatters": "Empiric CAP coverage is deliberately not a fixed drug list here — the right agents depend on your institution's antibiogram and the current IDSA update — so the value is the syndrome structure and the severity split, not a memorised regimen.",
+  "whyThisMatters": "Empiric CAP coverage is deliberately not a fixed drug list here — the right agents depend on your institution's antibiogram and the current IDSA update — so the value is the syndrome structure and the severity split, not a memorized regimen.",
   "clinicalTakeaway": "Classify severity first (the major / minor criteria), treat severe CAP promptly with broad coverage, and pick the specific agents from your local antibiogram and the live guideline. De-escalate on cultures and stop at the shortest evidence-based duration (often 5 days if improving).",
   "body": [
     {

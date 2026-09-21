@@ -32,7 +32,7 @@
         ["3 · Plum", "9–11 kg", "4.0–4.5", "1.5", "Miller 1", "Pediatric", "Infant"],
         ["4 · Denim", "12–14 kg", "4.5–5.0", "2", "Miller 1–2", "Pediatric", "Child (small)"],
         ["5 · Olive", "15–18 kg", "5.0–5.5", "2", "Macintosh 2", "Pediatric", "Child"],
-        ["6 · Rust", "19–23 kg", "5.5–6.0", "2.5", "Macintosh 2", "Paed/adult transition", "Child"],
+        ["6 · Rust", "19–23 kg", "5.5–6.0", "2.5", "Macintosh 2", "Ped/adult transition", "Child"],
         ["7 · Pine", "24–29 kg", "6.0 (consider cuffed)", "2.5", "Macintosh 2", "Adult", "Child (large)"],
         ["8 · Scarlet", "30–36 kg", "6.0–6.5 cuffed", "3", "Macintosh 2–3", "Adult", "Adult (small)"],
         ["9 · Umber", "37–50 kg", "6.5–7.0 cuffed", "3", "Macintosh 3", "Adult", "Adult"]
@@ -52,7 +52,7 @@
       "Uncuffed ETT size = (age/4) + 4; cuffed = (age/4) + 3.5. Depth (cm at lip) ≈ ETT size × 3, or (age/2) + 12.",
       "Cuffed tubes are now preferred beyond the neonatal period (keep cuff pressure < 20–25 cmH2O).",
       "Lowest acceptable SBP ≈ 70 + (2 × age in years) for ages 1–10; < 70 in neonates/infants is hypotension.",
-      "Defibrillation 2 J/kg first shock, 4 J/kg subsequent (up to the adult dose). Synchronised cardioversion 0.5–1 J/kg, then 2 J/kg.",
+      "Defibrillation 2 J/kg first shock, 4 J/kg subsequent (up to the adult dose). Synchronized cardioversion 0.5–1 J/kg, then 2 J/kg.",
       "Fluid bolus 10–20 mL/kg isotonic crystalloid, reassess after each; 10 mL/kg in DKA, cardiogenic, or neonates."
     ] }
   ],

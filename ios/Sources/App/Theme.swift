@@ -3,7 +3,7 @@ import SwiftUI
 // Kairos Tier 5 palette — "Ink & Ember on Parchment" (decided 2026-09-03).
 // Light-first warm-neutral ground with an ember accent, distinct from AnesCalc
 // (navy + gold) and CRISIS (near-black + teal + serif). Values mirror
-// web/styles.css. Colours resolve through Assets.xcassets colour sets
+// web/styles.css. Colors resolve through Assets.xcassets color sets
 // (AccentEmber, Section*, Severity*) so dark mode picks up the lifted dark
 // variant automatically — no manual colorScheme branching needed here.
 

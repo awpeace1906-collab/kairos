@@ -139,7 +139,7 @@ struct SearchEntry: Codable, Identifiable, Hashable {
         let category: String
     }
 
-    /// True when this module is for the paediatric / neonatal population.
+    /// True when this module is for the pediatric / neonatal population.
     var isPeds: Bool {
         (audience?.contains("peds") ?? false) || (audience?.contains("neonate") ?? false) || section == "Peds Module"
     }
@@ -620,7 +620,7 @@ struct WeightZonesConfig: Codable {
 
 /// An original declarative vector figure (common.schema.json#/$defs/diagram).
 /// Deliberately not raster/video: renders natively on both clients, ships inside
-/// the offline content bundle, themes itself through semantic colour tokens, and
+/// the offline content bundle, themes itself through semantic color tokens, and
 /// carries no third-party licensing. Web mirror: renderDiagram() in content.js.
 struct Diagram: Codable, Hashable {
     let title: String?

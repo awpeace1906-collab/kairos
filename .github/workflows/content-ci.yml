@@ -2,9 +2,25 @@ name: content-ci
 
 on:
   push:
-    paths: ["content/**", "tools/**", ".github/workflows/content-ci.yml"]
+    # web/, ios/Sources/ and docs/ are here for the American-English guard,
+    # which covers UI copy and docs as well as content — otherwise a British
+    # spelling in a Swift or JS string would never trip CI.
+    paths:
+      - "content/**"
+      - "tools/**"
+      - "web/**"
+      - "ios/Sources/**"
+      - "docs/**"
+      - "README.md"
+      - ".github/workflows/content-ci.yml"
   pull_request:
-    paths: ["content/**", "tools/**"]
+    paths:
+      - "content/**"
+      - "tools/**"
+      - "web/**"
+      - "ios/Sources/**"
+      - "docs/**"
+      - "README.md"
   schedule:
     # Weekly staleness sweep even with no content changes — the tripwire only
     # helps if it runs on a clock, not just on commits.
@@ -23,6 +39,9 @@ jobs:
       - name: Validate schemas + invariants
         working-directory: tools
         run: npm run validate
+      - name: American English guard
+        working-directory: tools
+        run: npm run check-spelling
       - name: Engine + content regression tests
         working-directory: tools
         run: npm test

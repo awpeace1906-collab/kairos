@@ -114,7 +114,7 @@
       "items": [
         "Time from exposure to first vomiting is the single most useful early triage sign: onset within 10-30 min points to a potentially lethal dose (> 4 Gy), 1-2 h to a moderate dose (2-4 Gy), > 4 h or no vomiting to a mild dose (< 2 Gy). Diarrhea, fever, hypotension, and early erythema within hours all mark a high dose.",
         "Absolute lymphocyte count: draw a baseline and repeat every 6-12 h. Lymphocytes fall fastest and earliest of all lineages; the rate of decline over the first 24-48 h maps to dose (the Andrews nomogram) — a count still > 1.5 ×10⁹/L at 48 h is reassuring; < 0.5 predicts severe marrow injury.",
-        "Cytogenetic biodosimetry (dicentric chromosome assay on peripheral lymphocytes) is the gold-standard dose estimate but takes days and specialised labs — send it, but triage on the prodrome and counts.",
+        "Cytogenetic biodosimetry (dicentric chromosome assay on peripheral lymphocytes) is the gold-standard dose estimate but takes days and specialized labs — send it, but triage on the prodrome and counts.",
         "There is no useful role for a whole-body survey meter reading as a dose estimate; it detects contamination, not absorbed dose."
       ]
     },
@@ -165,9 +165,9 @@
       "type": "list",
       "items": [
         "Priority order: address airway, breathing, circulation, and life-threatening hemorrhage FIRST. External contamination is not an emergency for the care team under standard PPE (gown, gloves, mask, eye protection) plus a dosimeter.",
-        "Remove all clothing — this removes roughly 90% of external contamination — and bag it (labelled) for dosimetry. Then wash contaminated skin and hair with soap and lukewarm water; do not abrade the skin or use hot water (increases absorption). Cover wounds before washing surrounding skin, and irrigate contaminated wounds and eyes.",
+        "Remove all clothing — this removes roughly 90% of external contamination — and bag it (labeled) for dosimetry. Then wash contaminated skin and hair with soap and lukewarm water; do not abrade the skin or use hot water (increases absorption). Cover wounds before washing surrounding skin, and irrigate contaminated wounds and eyes.",
         "Survey with a Geiger-Müller or scintillation probe before and after decon to document and target it; aim to reduce counts to about twice background or a level that will not decrease further.",
-        "Collect nasal swabs, wound swabs, and the first 24 h of urine and faeces if internal contamination is suspected — these drive the decorporation decision and dose estimate.",
+        "Collect nasal swabs, wound swabs, and the first 24 h of urine and feces if internal contamination is suspected — these drive the decorporation decision and dose estimate.",
         "Give antiemetics (5-HT3 antagonists) for the prodrome; start IV fluids and electrolyte replacement for the GI syndrome; provide analgesia for cutaneous injury."
       ]
     },

@@ -203,7 +203,7 @@ struct BlockList: View {
     /// Tables with a few columns lay out full-width with flexible, wrapping
     /// columns — no scroll needed, and no fixed width guessing at the screen
     /// size. Only genuinely dense tables (4+ columns, e.g. an induction-agent
-    /// haemodynamic table) fall back to a fixed-column-width horizontal scroll,
+    /// hemodynamic table) fall back to a fixed-column-width horizontal scroll,
     /// since flexible columns would squeeze those illegibly on a phone.
     @ViewBuilder private func tableView(columns: [String], rows: [[String]]) -> some View {
         let colCount = max(columns.count, rows.map(\.count).max() ?? 1)

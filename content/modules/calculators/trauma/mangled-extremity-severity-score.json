@@ -19,7 +19,7 @@
   "purpose": "Scores a severely injured lower (or upper) extremity across four axes to inform the salvage-versus-amputation discussion. Its predictive value is stronger for identifying salvageable limbs (a low score) than for mandating amputation (a high score) — treat it as one input, not a decision.",
   "items": [
     { "key": "skeletalSoftTissue", "label": "Skeletal / soft-tissue injury", "options": [
-      { "label": "Low energy — stab, simple closed fracture, small-calibre GSW", "points": 1 },
+      { "label": "Low energy — stab, simple closed fracture, small-caliber GSW", "points": 1 },
       { "label": "Medium energy — open or multiple fractures, dislocation", "points": 2 },
       { "label": "High energy — shotgun (close range), high-velocity GSW, crush", "points": 3 },
       { "label": "Very high energy — the above plus gross contamination, soft-tissue avulsion", "points": 4 }
