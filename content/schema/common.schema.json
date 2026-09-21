@@ -10,11 +10,24 @@
     },
     "section": {
       "type": "string",
-      "enum": ["Procedures", "Calculators", "Drug & Dosing Cards", "Reference Library", "Peds Module"]
+      "enum": [
+        "Procedures",
+        "Calculators",
+        "Drug & Dosing Cards",
+        "Reference Library",
+        "Peds Module"
+      ]
     },
     "contentType": {
       "type": "string",
-      "enum": ["calculator", "procedure", "drug-card", "anesthesia-drug-card", "reference", "peds-tool"]
+      "enum": [
+        "calculator",
+        "procedure",
+        "drug-card",
+        "anesthesia-drug-card",
+        "reference",
+        "peds-tool"
+      ]
     },
     "isoDate": {
       "type": "string",
@@ -23,8 +36,20 @@
     "reviewTier": {
       "description": "Review cadence bucket. See content/config/tiers.json.",
       "oneOf": [
-        { "type": "integer", "enum": [1, 2, 3] },
-        { "type": "string", "enum": ["stable"] }
+        {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "type": "string",
+          "enum": [
+            "stable"
+          ]
+        }
       ]
     },
     "source": {
@@ -35,11 +60,23 @@
     "changelogEntry": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["version", "date", "change"],
+      "required": [
+        "version",
+        "date",
+        "change"
+      ],
       "properties": {
-        "version": { "type": "integer", "minimum": 1 },
-        "date": { "$ref": "common.schema.json#/$defs/isoDate" },
-        "change": { "type": "string", "minLength": 3 }
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "date": {
+          "$ref": "common.schema.json#/$defs/isoDate"
+        },
+        "change": {
+          "type": "string",
+          "minLength": 3
+        }
       }
     },
     "flag": {
@@ -56,15 +93,25 @@
     "diagram": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["viewBox", "shapes"],
+      "required": [
+        "viewBox",
+        "shapes"
+      ],
       "description": "An original, declarative vector illustration. Deliberately NOT raster/video: it renders natively on both clients (web SVG, iOS SwiftUI Canvas), stays offline-first and tiny, themes itself via semantic color tokens, and carries no third-party licensing. Same architectural pattern as the calculator `plot` field.",
       "properties": {
-        "title": { "type": "string" },
-        "caption": { "type": "string", "description": "Rendered under the figure. Carries the teaching point, not a restatement of the labels." },
+        "title": {
+          "type": "string"
+        },
+        "caption": {
+          "type": "string",
+          "description": "Rendered under the figure. Carries the teaching point, not a restatement of the labels."
+        },
         "viewBox": {
           "type": "array",
           "description": "[minX, minY, width, height] — the drawing's own coordinate space; both renderers scale to fit.",
-          "items": { "type": "number" },
+          "items": {
+            "type": "number"
+          },
           "minItems": 4,
           "maxItems": 4
         },
@@ -74,34 +121,124 @@
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["kind"],
+            "required": [
+              "kind"
+            ],
             "properties": {
               "kind": {
                 "type": "string",
-                "enum": ["path", "line", "polyline", "rect", "circle", "ellipse", "arrow", "text"]
+                "enum": [
+                  "path",
+                  "line",
+                  "polyline",
+                  "rect",
+                  "circle",
+                  "ellipse",
+                  "arrow",
+                  "text"
+                ]
               },
-              "d": { "type": "string", "description": "kind=path: SVG path data. Supported commands: M/m L/l H/h V/v C/c Q/q Z/z (no arcs — approximate with curves)." },
+              "d": {
+                "type": "string",
+                "description": "kind=path: SVG path data. Supported commands: M/m L/l H/h V/v C/c Q/q Z/z (no arcs — approximate with curves)."
+              },
               "points": {
                 "type": "array",
                 "description": "kind=polyline: [[x,y], ...]",
-                "items": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 }
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                }
               },
-              "from": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 },
-              "to": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 },
-              "at": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 },
-              "size": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 },
-              "r": { "type": "number" },
-              "rx": { "type": "number" },
-              "ry": { "type": "number" },
-              "text": { "type": "string" },
-              "fontSize": { "type": "number", "default": 11 },
-              "anchor": { "type": "string", "enum": ["start", "middle", "end"], "default": "start" },
-              "weight": { "type": "string", "enum": ["regular", "bold"], "default": "regular" },
-              "fill": { "$ref": "common.schema.json#/$defs/diagramColor" },
-              "stroke": { "$ref": "common.schema.json#/$defs/diagramColor" },
-              "strokeWidth": { "type": "number", "default": 1.5 },
-              "dash": { "type": "boolean", "default": false, "description": "Dashed stroke — conventionally 'a plane/landmark you infer rather than see'." },
-              "opacity": { "type": "number", "minimum": 0, "maximum": 1 }
+              "from": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "to": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "at": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "size": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "r": {
+                "type": "number"
+              },
+              "rx": {
+                "type": "number"
+              },
+              "ry": {
+                "type": "number"
+              },
+              "text": {
+                "type": "string"
+              },
+              "fontSize": {
+                "type": "number",
+                "default": 11
+              },
+              "anchor": {
+                "type": "string",
+                "enum": [
+                  "start",
+                  "middle",
+                  "end"
+                ],
+                "default": "start"
+              },
+              "weight": {
+                "type": "string",
+                "enum": [
+                  "regular",
+                  "bold"
+                ],
+                "default": "regular"
+              },
+              "fill": {
+                "$ref": "common.schema.json#/$defs/diagramColor"
+              },
+              "stroke": {
+                "$ref": "common.schema.json#/$defs/diagramColor"
+              },
+              "strokeWidth": {
+                "type": "number",
+                "default": 1.5
+              },
+              "dash": {
+                "type": "boolean",
+                "default": false,
+                "description": "Dashed stroke — conventionally 'a plane/landmark you infer rather than see'."
+              },
+              "opacity": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
             }
           }
         }
@@ -110,36 +247,142 @@
     "diagramColor": {
       "type": "string",
       "description": "Semantic token, never a literal hex — each client maps these to its own light/dark palette so a diagram is legible in both themes.",
-      "enum": ["outline", "surface", "tissue", "bone", "lumen", "muscle", "vessel", "accent", "danger", "warning", "good", "muted", "text"]
+      "enum": [
+        "outline",
+        "surface",
+        "tissue",
+        "bone",
+        "lumen",
+        "muscle",
+        "vessel",
+        "accent",
+        "danger",
+        "warning",
+        "good",
+        "muted",
+        "text"
+      ]
+    },
+    "listItem": {
+      "description": "One entry in a list. A plain string is a leaf. The object form adds children, so a numbered step can carry its own sub-steps instead of flattening them into a paragraph. Strings and objects may be mixed in the same list, and every existing flat list stays valid. Nesting is capped at 3 levels by a validate.mjs invariant — deeper than that the content wants a table or its own section, not more indentation.",
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "text"
+          ],
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1
+            },
+            "ordered": {
+              "type": "boolean",
+              "default": false,
+              "description": "Number this item's CHILDREN. Independent of the parent list's own numbering, so an unordered list can hold an ordered sub-list and vice versa."
+            },
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "common.schema.json#/$defs/listItem"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "nestedList": {
+      "description": "A list plus its own numbering flag, for places that hold exactly one list (a procedure step's sub-steps).",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "items"
+      ],
+      "properties": {
+        "ordered": {
+          "type": "boolean",
+          "default": false,
+          "description": "Render as a numbered list. Sub-steps of a numbered procedure step usually want this."
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "common.schema.json#/$defs/listItem"
+          }
+        }
+      }
     },
     "recordMeta": {
       "type": "object",
       "description": "Fields every content module carries.",
-      "required": ["id", "section", "category", "title", "content_version", "contentType"],
+      "required": [
+        "id",
+        "section",
+        "category",
+        "title",
+        "content_version",
+        "contentType"
+      ],
       "properties": {
-        "id": { "$ref": "common.schema.json#/$defs/id" },
-        "section": { "$ref": "common.schema.json#/$defs/section" },
-        "category": { "type": "string", "minLength": 2 },
-        "title": { "type": "string", "minLength": 2 },
-        "aliases": { "type": "array", "items": { "type": "string" } },
+        "id": {
+          "$ref": "common.schema.json#/$defs/id"
+        },
+        "section": {
+          "$ref": "common.schema.json#/$defs/section"
+        },
+        "category": {
+          "type": "string",
+          "minLength": 2
+        },
+        "title": {
+          "type": "string",
+          "minLength": 2
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
         "tags": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string"
+          },
           "description": "Clinician-facing synonyms / concepts — what someone types under pressure ('chest pain', not 'HEART Score'). Ranked below title, above keywords."
         },
         "keywords": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": {
+            "type": "string"
+          },
           "description": "Abbreviations, alternate names, common misspellings ('GBS' for Glasgow-Blatchford)."
         },
         "settingEmphasis": {
           "type": "array",
-          "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
           "description": "Care-setting ids (from config/settings.json) this module is most relevant to, most-relevant first. Drives render-time reordering when a setting lens is active. Absent = neutral (never reordered). A LENS, not a fork — never duplicate a module per setting."
         },
         "audience": {
           "type": "array",
-          "items": { "type": "string", "enum": ["adult", "peds", "neonate"] },
+          "items": {
+            "type": "string",
+            "enum": [
+              "adult",
+              "peds",
+              "neonate"
+            ]
+          },
           "uniqueItems": true,
           "description": "Patient population(s) this module is for. Absent = adult (the default clinical context). The peds lens floats modules whose audience includes 'peds' or 'neonate' to the top of any list; it never hides anything."
         },
@@ -149,21 +392,55 @@
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["section", "category"],
+            "required": [
+              "section",
+              "category"
+            ],
             "properties": {
-              "section": { "$ref": "common.schema.json#/$defs/section" },
-              "category": { "type": "string", "minLength": 2 }
+              "section": {
+                "$ref": "common.schema.json#/$defs/section"
+              },
+              "category": {
+                "type": "string",
+                "minLength": 2
+              }
             }
           }
         },
-        "contentType": { "$ref": "common.schema.json#/$defs/contentType" },
-        "content_version": { "type": "integer", "minimum": 1 },
-        "last_reviewed": { "$ref": "common.schema.json#/$defs/isoDate" },
-        "next_review_due": { "$ref": "common.schema.json#/$defs/isoDate" },
-        "review_tier": { "$ref": "common.schema.json#/$defs/reviewTier" },
-        "sources": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/source" } },
-        "changelog": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/changelogEntry" } },
-        "flags": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/flag" } },
+        "contentType": {
+          "$ref": "common.schema.json#/$defs/contentType"
+        },
+        "content_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "last_reviewed": {
+          "$ref": "common.schema.json#/$defs/isoDate"
+        },
+        "next_review_due": {
+          "$ref": "common.schema.json#/$defs/isoDate"
+        },
+        "review_tier": {
+          "$ref": "common.schema.json#/$defs/reviewTier"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/source"
+          }
+        },
+        "changelog": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/changelogEntry"
+          }
+        },
+        "flags": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/flag"
+          }
+        },
         "route": {
           "type": "string",
           "pattern": "^/[a-z0-9/_-]*$",
@@ -174,11 +451,22 @@
     "tieredReviewRequired": {
       "description": "If review_tier is 1, 2, or 3, the review dates and sources are mandatory.",
       "if": {
-        "properties": { "review_tier": { "type": "integer" } },
-        "required": ["review_tier"]
+        "properties": {
+          "review_tier": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "review_tier"
+        ]
       },
       "then": {
-        "required": ["last_reviewed", "next_review_due", "sources", "review_tier"]
+        "required": [
+          "last_reviewed",
+          "next_review_due",
+          "sources",
+          "review_tier"
+        ]
       }
     }
   }

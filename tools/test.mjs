@@ -166,6 +166,73 @@ for (const m of mods) {
   }
 }
 
+// ------------------------------------------------- nested lists (listItem)
+// The structure is backward-compatible by design: a plain string is a leaf,
+// so every list authored before nesting existed must still be valid. These
+// assertions guard both halves of that promise.
+{
+  const listDepth = (items) =>
+    1 +
+    Math.max(
+      0,
+      ...items.map((it) =>
+        it && typeof it === "object" && Array.isArray(it.items)
+          ? listDepth(it.items)
+          : 0,
+      ),
+    );
+
+  let flatLists = 0;
+  let nestedLists = 0;
+  let deepest = 0;
+  let badItem = null;
+  let badSubsteps = null;
+
+  const visitItems = (items, id) => {
+    const depth = listDepth(items);
+    deepest = Math.max(deepest, depth);
+    if (depth > 1) nestedLists += 1;
+    else flatLists += 1;
+    for (const it of items) {
+      if (typeof it === "string") continue;
+      if (!it || typeof it !== "object" || typeof it.text !== "string" || !it.text) {
+        badItem = `${id}: list entry is neither a string nor { text }`;
+      } else if (it.items !== undefined) {
+        if (!Array.isArray(it.items) || it.items.length === 0) {
+          badItem = `${id}: "${it.text.slice(0, 30)}" has an empty items[]`;
+        } else {
+          visitItems(it.items, id);
+        }
+      }
+    }
+  };
+
+  for (const m of mods) {
+    const j = m.json;
+    for (const b of j.body || []) {
+      if (b.type === "list") visitItems(b.items || [], j.id);
+    }
+    for (const n of j.nodes || []) {
+      if (!n.substeps) continue;
+      if (!Array.isArray(n.substeps.items) || n.substeps.items.length === 0) {
+        badSubsteps = `${j.id}/${n.id}`;
+      } else {
+        visitItems(n.substeps.items, `${j.id}/${n.id}`);
+      }
+    }
+  }
+
+  ok("lists: every entry is a string or { text }", !badItem, badItem ?? "");
+  ok("lists: no substeps with an empty items[]", !badSubsteps, badSubsteps ?? "");
+  ok("lists: flat string lists still present (backward compatible)", flatLists > 0, `${flatLists} flat`);
+  ok("lists: nesting is in use", nestedLists > 0, `${nestedLists} nested`);
+  ok(
+    `lists: nesting stays within the 3-level cap (deepest ${deepest})`,
+    deepest <= 3,
+    `deepest ${deepest}`,
+  );
+}
+
 // ---------------------------------------------------------------- report
 console.log(failures.join("\n"));
 console.log(`\ntest: ${pass} passed, ${fail} failed`);

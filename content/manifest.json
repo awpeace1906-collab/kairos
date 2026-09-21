@@ -2427,8 +2427,8 @@
       "next_review_due": "2026-12-01"
     },
     "procedures/thoracentesis": {
-      "content_version": 2,
-      "hash": "d092ea9f64db6e18",
+      "content_version": 3,
+      "hash": "f33118acc8cd9998",
       "path": "modules/procedures/thoracentesis.json",
       "contentType": "procedure",
       "section": "Procedures",

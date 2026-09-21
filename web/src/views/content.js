@@ -40,12 +40,32 @@ function shell(mod, ...body) {
     purely presentational (never changes the text), and degrades to plain text
     for any item that isn't shaped that way. Short lead-in only (<=7 words) so
     a colon appearing mid-sentence in ordinary prose doesn't get misread as a label. */
-function listItem(text) {
+function listItem(item) {
+  // An item is either a plain string (leaf) or { text, items?, ordered? }.
+  const text = typeof item === "string" ? item : item?.text ?? "";
+  const children = typeof item === "string" ? null : item?.items;
+
   const m = /^([^:]{2,50}):\s(.+)$/s.exec(text);
-  if (m && m[1].trim().split(/\s+/).length <= 7) {
-    return el("li", {}, el("strong", {}, m[1] + ":"), " " + m[2]);
-  }
-  return el("li", {}, text);
+  const lead =
+    m && m[1].trim().split(/\s+/).length <= 7
+      ? [el("strong", {}, m[1] + ":"), " " + m[2]]
+      : [text];
+
+  return el(
+    "li",
+    {},
+    ...lead,
+    children?.length ? renderList(children, item.ordered) : null,
+  );
+}
+
+/** A list at any nesting level. `ordered` numbers this level only. */
+function renderList(items, ordered) {
+  return el(
+    ordered ? "ol" : "ul",
+    ordered ? { class: "numbered" } : {},
+    (items || []).map(listItem),
+  );
 }
 
 /** Semantic diagram tokens -> CSS custom properties, so a figure stays legible
@@ -161,7 +181,7 @@ export function renderBlocks(body) {
       case "text":
         return el("p", {}, b.text);
       case "list":
-        return el("ul", {}, (b.items || []).map(listItem));
+        return renderList(b.items, b.ordered);
       case "callout":
         return el("div", { class: `callout ${b.tone || "info"}` }, b.text);
       case "diagram":
@@ -266,6 +286,7 @@ function workflowList(mod) {
         { class: "node-body" },
         n.prompt ? el("strong", {}, n.prompt) : null,
         n.body ? el("p", {}, n.body) : null,
+        n.substeps ? renderList(n.substeps.items, n.substeps.ordered) : null,
         n.diagram ? renderDiagram(n.diagram) : null
       )
     );
@@ -291,6 +312,7 @@ function treeWalker(mod) {
     const bodyEls = [
       node.prompt ? el("h3", {}, node.prompt) : null,
       node.body ? el("p", { class: `node ${node.type}` }, node.body) : null,
+      node.substeps ? renderList(node.substeps.items, node.substeps.ordered) : null,
       node.diagram ? renderDiagram(node.diagram) : null,
     ];
     if (node.choices?.length) {

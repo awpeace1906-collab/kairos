@@ -180,3 +180,67 @@ final class EngineTests: XCTestCase {
         XCTAssertEqual(idx.search("chest pain", section: "Calculators").count, 2)
     }
 }
+
+// MARK: - Nested lists (common.schema.json#/$defs/listItem)
+
+/// `ListItem` decodes a heterogeneous JSON array — a plain string is a leaf,
+/// an object carries children — so the decoding itself is the risky part and
+/// the engine tests would never have caught a break in it.
+final class ListItemTests: XCTestCase {
+    private func decode(_ json: String) throws -> NestedList {
+        try JSONDecoder().decode(NestedList.self, from: Data(json.utf8))
+    }
+
+    func testFlatStringListStillDecodes() throws {
+        let list = try decode(#"{"items": ["one", "two"]}"#)
+        XCTAssertFalse(list.ordered)
+        XCTAssertEqual(list.items.map(\.text), ["one", "two"])
+        XCTAssertNil(list.items[0].items)
+    }
+
+    func testMixedStringsAndObjects() throws {
+        let list = try decode(#"""
+        {"ordered": true, "items": [
+          "a leaf",
+          {"text": "a parent", "ordered": true, "items": ["child one", "child two"]}
+        ]}
+        """#)
+        XCTAssertTrue(list.ordered)
+        XCTAssertEqual(list.items.count, 2)
+        XCTAssertNil(list.items[0].items)
+        XCTAssertEqual(list.items[1].text, "a parent")
+        XCTAssertTrue(list.items[1].ordered)
+        XCTAssertEqual(list.items[1].items?.map(\.text), ["child one", "child two"])
+    }
+
+    func testThreeLevelsDecode() throws {
+        let list = try decode(#"""
+        {"items": [{"text": "L1", "items": [{"text": "L2", "items": ["L3"]}]}]}
+        """#)
+        XCTAssertEqual(list.items[0].items?[0].items?[0].text, "L3")
+    }
+
+    func testObjectWithoutTextIsRejected() {
+        XCTAssertThrowsError(try decode(#"{"items": [{"ordered": true}]}"#))
+    }
+
+    /// A procedure step carrying real sub-steps, in the shape the content
+    /// pipeline actually emits.
+    func testProcedureNodeSubsteps() throws {
+        let json = #"""
+        {"id": "stop", "type": "warning", "prompt": "Stop if…",
+         "body": "lead-in",
+         "substeps": {"items": ["air returns", {"text": "frank blood", "items": ["apply pressure", "escalate"]}]}}
+        """#
+        let node = try JSONDecoder().decode(Procedure.Node.self, from: Data(json.utf8))
+        XCTAssertEqual(node.id, "stop")
+        XCTAssertEqual(node.substeps?.items.count, 2)
+        XCTAssertEqual(node.substeps?.items[1].items?.count, 2)
+    }
+
+    func testNodeWithoutSubstepsDecodes() throws {
+        let json = #"{"id": "a", "type": "step", "body": "just prose"}"#
+        let node = try JSONDecoder().decode(Procedure.Node.self, from: Data(json.utf8))
+        XCTAssertNil(node.substeps)
+    }
+}

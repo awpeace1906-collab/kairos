@@ -151,16 +151,11 @@ struct BlockList: View {
         }
     }
 
-    /// A "Term: the rest of the sentence" list item gets its lead term bolded —
-    /// purely presentational, degrades to a plain bullet for anything else.
+    /// Single-level bullet for plain `[String]` fields (checklists, notes).
+    /// Nested lists go through `ContentListView`, which shares the same
+    /// lead-term bolding.
     private func listItemText(_ s: String) -> Text {
-        guard let colonRange = s.range(of: ": ") else { return Text("• \(s)") }
-        let leadLen = s.distance(from: s.startIndex, to: colonRange.lowerBound)
-        guard leadLen >= 2, leadLen <= 50 else { return Text("• \(s)") }
-        let lead = String(s[s.startIndex..<colonRange.lowerBound])
-        let rest = String(s[colonRange.upperBound...])
-        guard lead.split(separator: " ").count <= 7 else { return Text("• \(s)") }
-        return Text("• ") + Text("\(lead):").fontWeight(.semibold) + Text(" \(rest)")
+        ContentListView.line(marker: "\u{2022}", text: s)
     }
 
     @ViewBuilder private func block(_ b: ReferenceDoc.Block, isFirst: Bool) -> some View {
@@ -182,9 +177,7 @@ struct BlockList: View {
         case "text":
             Text(b.text ?? "")
         case "list":
-            VStack(alignment: .leading, spacing: 4) {
-                ForEach(b.items ?? [], id: \.self) { listItemText($0) }
-            }
+            ContentListView(items: b.items ?? [], ordered: b.ordered ?? false)
         case "callout":
             Text(b.text ?? "")
                 .padding(10)
@@ -344,6 +337,10 @@ struct WorkflowNodeCard: View {
             VStack(alignment: .leading, spacing: 4) {
                 if let p = node.prompt { Text(p).font(Theme.subheadline).fontWeight(.semibold) }
                 if let b = node.body { Text(b).font(Theme.callout) }
+                if let sub = node.substeps {
+                    ContentListView(items: sub.items, ordered: sub.ordered)
+                        .font(Theme.callout)
+                }
                 if let d = node.diagram { DiagramView(diagram: d) }
             }
         }
@@ -382,6 +379,10 @@ struct ProcedureWalker: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .background((node.type == "warning" ? Color.red : Color.green).opacity(0.12), in: RoundedRectangle(cornerRadius: 8))
                         .overlay(alignment: .leading) { Rectangle().fill(node.type == "warning" ? Color.red : Color.green).frame(width: 3) }
+                }
+                if let sub = node.substeps {
+                    ContentListView(items: sub.items, ordered: sub.ordered)
+                        .font(Theme.callout)
                 }
                 if let choices = node.choices, !choices.isEmpty {
                     ForEach(choices, id: \.label) { c in

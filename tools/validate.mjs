@@ -15,6 +15,45 @@ for (const [, schema] of await loadAllSchemas()) ajv.addSchema(schema);
 
 const errors = [];
 const warnings = [];
+const MAX_LIST_DEPTH = 3;
+
+/**
+ * Deepest list nesting reachable from each list in `node`, with a path to it.
+ * Walks the whole module rather than only known list fields, so it covers
+ * reference/peds `body[].items`, procedure `nodes[].substeps.items`, and
+ * anything later that reuses `$defs/listItem`.
+ */
+function listDepths(node, path = "") {
+  const out = [];
+  const measure = (items) =>
+    1 +
+    Math.max(
+      0,
+      ...items.map((it) =>
+        it && typeof it === "object" && Array.isArray(it.items)
+          ? measure(it.items)
+          : 0,
+      ),
+    );
+
+  const walk = (value, at) => {
+    if (Array.isArray(value)) {
+      value.forEach((v, i) => walk(v, `${at}[${i}]`));
+      return;
+    }
+    if (!value || typeof value !== "object") return;
+    for (const [k, v] of Object.entries(value)) {
+      if (k === "items" && Array.isArray(v)) {
+        out.push({ path: `${at}/items`, depth: measure(v) });
+      }
+      walk(v, `${at}/${k}`);
+    }
+  };
+
+  walk(node, path);
+  return out;
+}
+
 const fail = (where, msg) => errors.push(`✗ ${where}: ${msg}`);
 const warn = (where, msg) => warnings.push(`! ${where}: ${msg}`);
 
@@ -119,6 +158,16 @@ for (const mod of mods) {
   }
   if (json.review_tier === undefined) {
     warn(where, "no review_tier — set one (1/2/3 or \"stable\") so the staleness tripwire knows what to do");
+  }
+
+  // List nesting depth. JSON Schema can express the recursion but not a cap on
+  // it, so the cap lives here. Three levels is the readability ceiling on a
+  // phone at arm's length; past that the content wants a table or its own
+  // section, not more indentation.
+  for (const { path, depth } of listDepths(json)) {
+    if (depth > MAX_LIST_DEPTH) {
+      fail(where, `${path} nests lists ${depth} deep (max ${MAX_LIST_DEPTH}) — use a table or a separate step instead of deeper indentation`);
+    }
   }
 }
 

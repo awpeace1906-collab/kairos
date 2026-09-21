@@ -461,8 +461,30 @@ h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
 .prose h3 { font-size: 1.02rem; font-weight: 600; margin: 18px 0 4px; }
 .prose > *:first-child { margin-top: 0; }
 .prose > h2:first-child { border-top: none; padding-top: 0; margin-top: 0; }
-.prose ul { padding-left: 18px; }
+.prose ul, .prose ol { padding-left: 18px; }
 .prose li { margin: 3px 0; }
+/* Nested lists (common.schema.json#/$defs/listItem). A sub-list is a
+   continuation of its parent item, so it sits tighter than a sibling gap
+   would suggest, and each level changes marker so depth reads at a glance
+   without extra indentation — screen width is the scarce resource here. */
+.prose li > ul, .prose li > ol,
+.node-body li > ul, .node-body li > ol,
+.tree-walker li > ul, .tree-walker li > ol { margin: 4px 0 6px; padding-left: 17px; }
+/* Markers are set explicitly at every level, not inherited from the UA
+   sheet: a step's substeps list lives inside `ol.nodes`, and the UA rule
+   `ol ul` would silently start it at `circle` — so level 1 and level 2 would
+   look identical. */
+.prose > ul, .node-body > ul, .tree-walker > ul { list-style-type: disc; }
+.prose li > ul, .node-body li > ul, .tree-walker li > ul { list-style-type: circle; }
+.prose li > ul ul, .node-body li > ul ul, .tree-walker li > ul ul { list-style-type: square; }
+.prose ol.numbered, .node-body ol.numbered, .tree-walker ol.numbered { list-style-type: decimal; }
+.prose li > ol.numbered, .node-body li > ol.numbered,
+.tree-walker li > ol.numbered { list-style-type: lower-alpha; }
+/* A procedure step's sub-steps hang off its prose rather than starting a
+   fresh visual block. */
+.node-body > ul, .node-body > ol,
+.tree-walker > ul, .tree-walker > ol { margin: 6px 0 0; padding-left: 18px; }
+.node-body li, .tree-walker li { margin: 3px 0; }
 .callout { padding: 11px 13px; border-radius: 10px; margin: 12px 0; border-left: 4px solid var(--sev-moderate); background: var(--surface-2); }
 .callout.danger { border-color: var(--sev-high); background: color-mix(in srgb, var(--sev-high) 7%, var(--surface-2)); }
 .callout.warning { border-color: var(--sev-moderate); }

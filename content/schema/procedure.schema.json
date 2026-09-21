@@ -4,58 +4,132 @@
   "title": "Kairos procedure guide module",
   "type": "object",
   "allOf": [
-    { "$ref": "common.schema.json#/$defs/recordMeta" },
-    { "$ref": "common.schema.json#/$defs/tieredReviewRequired" }
+    {
+      "$ref": "common.schema.json#/$defs/recordMeta"
+    },
+    {
+      "$ref": "common.schema.json#/$defs/tieredReviewRequired"
+    }
   ],
   "unevaluatedProperties": false,
-  "required": ["outputType", "purpose"],
+  "required": [
+    "outputType",
+    "purpose"
+  ],
   "properties": {
-    "id": true, "section": true, "category": true, "title": true, "aliases": true, "tags": true, "keywords": true, "settingEmphasis": true, "audience": true, "crossListIn": true,
-    "contentType": { "const": "procedure" },
-    "content_version": true, "last_reviewed": true, "next_review_due": true,
-    "review_tier": true, "sources": true, "changelog": true, "flags": true, "route": true,
-
-    "purpose": { "type": "string", "minLength": 10 },
+    "id": true,
+    "section": true,
+    "category": true,
+    "title": true,
+    "aliases": true,
+    "tags": true,
+    "keywords": true,
+    "settingEmphasis": true,
+    "audience": true,
+    "crossListIn": true,
+    "contentType": {
+      "const": "procedure"
+    },
+    "content_version": true,
+    "last_reviewed": true,
+    "next_review_due": true,
+    "review_tier": true,
+    "sources": true,
+    "changelog": true,
+    "flags": true,
+    "route": true,
+    "purpose": {
+      "type": "string",
+      "minLength": 10
+    },
     "outputType": {
       "type": "string",
-      "enum": ["decision-tree", "reference-checklist", "workflow"]
+      "enum": [
+        "decision-tree",
+        "reference-checklist",
+        "workflow"
+      ]
     },
     "crossLinks": {
       "description": "IDs of other modules this guide pulls from rather than duplicating (e.g. LA max dosing).",
       "type": "array",
-      "items": { "$ref": "common.schema.json#/$defs/id" }
+      "items": {
+        "$ref": "common.schema.json#/$defs/id"
+      }
     },
-    "entryPrompt": { "type": "string" },
+    "entryPrompt": {
+      "type": "string"
+    },
     "nodes": {
       "description": "Decision-tree nodes. Storyboarding the full branch logic is a spec-package TODO; this holds what exists.",
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "type"],
+        "required": [
+          "id",
+          "type"
+        ],
         "properties": {
-          "id": { "type": "string" },
-          "type": { "type": "string", "enum": ["question", "step", "recommendation", "warning"] },
-          "prompt": { "type": "string" },
-          "body": { "type": "string" },
-          "diagram": { "$ref": "common.schema.json#/$defs/diagram" },
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "question",
+              "step",
+              "recommendation",
+              "warning"
+            ]
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          },
+          "substeps": {
+            "description": "Sub-steps belonging to THIS step, rendered under `body`. The thing `body` alone could not express: a numbered step whose content is itself an ordered sequence.",
+            "$ref": "common.schema.json#/$defs/nestedList"
+          },
+          "diagram": {
+            "$ref": "common.schema.json#/$defs/diagram"
+          },
           "choices": {
             "type": "array",
             "items": {
               "type": "object",
               "additionalProperties": false,
-              "required": ["label", "next"],
-              "properties": { "label": { "type": "string" }, "next": { "type": "string" } }
+              "required": [
+                "label",
+                "next"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "next": {
+                  "type": "string"
+                }
+              }
             }
           }
         }
       }
     },
-    "checklist": { "type": "array", "items": { "type": "string" } },
+    "checklist": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "noteTemplate": {
       "type": "string",
       "description": "Procedure-note template with {{placeholders}} filled from the tree walk."
     },
-    "buildNote": { "type": "string" }
+    "buildNote": {
+      "type": "string"
+    }
   }
 }

@@ -32,7 +32,7 @@
     "send fluid for Light's Criteria same visit"
   ],
   "contentType": "procedure",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-16",
   "next_review_due": "2026-12-16",
   "review_tier": 1,
@@ -58,6 +58,11 @@
       "version": 2,
       "date": "2026-09-16",
       "change": "Depth pass. Rewritten from 5 outline steps to 10 fully-specified steps with an intercostal-anatomy diagram, a procedure-note template, and a primary-source evidence base (BTS 2023, Boccatonda 2024, Feller-Kopman 2007, Ault 2015, Helm 2013). Three substantive clinical corrections: (1) the 1-1.5 L volume cap is retired in favor of symptom-limited drainage; (2) routine coagulopathy correction before an ultrasound-guided tap is no longer supported; (3) added the lateral-6 cm intercostal-artery rule and explicit depth limits, which v1 omitted entirely."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-21",
+      "change": "Converted the three steps that were faking lists in prose (stop-warning, post-procedure imaging indications, fluid studies) to the new nested `substeps` structure. The fluid step in particular becomes a real two-level hierarchy — four labeled branches, each carrying its own criteria — which is what it always was on the page and never was in the data."
     }
   ],
   "outputType": "workflow",
@@ -507,19 +512,81 @@
       "id": "stop-warning",
       "type": "warning",
       "prompt": "Stop the procedure NOW if…",
-      "body": "· Air returns instead of fluid, or you get a sudden loss of resistance — suspect lung puncture or pneumothorax. Stop, remove, scan for lung sliding.\n· Frank blood that does not clear and keeps coming — suspect intercostal artery or lung laceration. Stop, do NOT re-advance, apply pressure, scan for a growing effusion, and escalate immediately: intercostal arterial bleeding is systemic-pressure bleeding and is the complication most likely to kill.\n· New chest tightness, intractable cough, or dyspnea — stop draining regardless of volume.\n· Hypotension, bradycardia, or presyncope — vasovagal is common and usually benign; hypotension with a rising oxygen requirement is not. Lie the patient down, stop, reassess.\n· The patient cannot hold still or the pocket has disappeared on re-scan — abandon and reconsider."
+      "body": "Any one of these ends the procedure. None of them is a reason to take one more look first.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Air returns instead of fluid, or you get a sudden loss of resistance — suspect lung puncture or pneumothorax. Stop, remove, scan for lung sliding.",
+          {
+            "text": "Frank blood that does not clear and keeps coming — suspect intercostal artery or lung laceration.",
+            "items": [
+              "Stop, do NOT re-advance, and apply pressure.",
+              "Scan for a growing effusion and escalate immediately — intercostal arterial bleeding is systemic-pressure bleeding and will not tamponade itself. This is the complication most likely to kill."
+            ]
+          },
+          "New chest tightness, intractable cough, or dyspnea — stop draining regardless of volume.",
+          "Hypotension, bradycardia, or presyncope — vasovagal is common and usually benign; hypotension with a rising oxygen requirement is not. Lie the patient down, stop, reassess.",
+          "The patient cannot hold still, or the pocket has disappeared on re-scan — abandon and reconsider."
+        ]
+      }
     },
     {
       "id": "postproc",
       "type": "step",
       "prompt": "7 · Immediately after — ultrasound first, chest X-ray selectively",
-      "body": "Remove the catheter at end-expiration or during a gentle Valsalva, occlude the site, and apply a simple dressing.\n\nSCAN BEFORE YOU ORDER ANYTHING. Put the probe on the anterior chest at the 2nd interspace in the mid-clavicular line: PRESENT lung sliding (or lung pulse, or B-lines) effectively excludes a pneumothorax at that point, and a LUNG POINT — the exact location where normal sliding gives way to the pneumothorax pattern — is 100% specific if one is present. This is faster, more sensitive, and cheaper than a film, and it can be repeated.\n\nROUTINE POST-PROCEDURE CHEST X-RAY IS NOT REQUIRED after an uncomplicated, ultrasound-guided, single-pass tap in an asymptomatic patient with normal lung sliding. Obtain imaging when any of the following apply:\n· multiple needle passes, or a difficult/prolonged procedure\n· air aspirated at any point\n· new or persistent symptoms — pain, cough, dyspnea, desaturation\n· absent lung sliding, or you could not get a satisfactory post-procedure view\n· the patient is ventilated or is about to be, or has limited respiratory reserve\n· you want a baseline for how much effusion remains before deciding on a tube or a repeat tap\n\nPNEUMOTHORAX EX VACUO: if a post-procedure film shows air but the patient is well and the lung sliding survey was reassuring, consider ex vacuo physiology — a trapped, non-expandable lung leaves a space that fills with gas without any pleural breach. It looks alarming and usually needs observation, not a chest tube. The distinguishing features are a clinically well patient, a lung that was already known or suspected to be trapped (often malignant or post-infective), and no progression. Get help before putting a tube in one.\n\nDocument the volume removed, its appearance, the patient's symptomatic response, and the post-procedure lung-sliding finding. Reassess dyspnea explicitly — a therapeutic tap that drained 1.8 L and did not help the breathlessness is a diagnostic result about the cause of the breathlessness."
+      "body": "Remove the catheter at end-expiration or during a gentle Valsalva, occlude the site, and apply a simple dressing.\n\nSCAN BEFORE YOU ORDER ANYTHING. Put the probe on the anterior chest at the 2nd interspace in the mid-clavicular line: PRESENT lung sliding (or lung pulse, or B-lines) effectively excludes a pneumothorax at that point, and a LUNG POINT — the exact location where normal sliding gives way to the pneumothorax pattern — is 100% specific if one is present. This is faster, more sensitive, and cheaper than a film, and it can be repeated.\n\nPNEUMOTHORAX EX VACUO: if a post-procedure film shows air but the patient is well and the lung-sliding survey was reassuring, consider ex vacuo physiology — a trapped, non-expandable lung leaves a space that fills with gas without any pleural breach. It looks alarming and usually needs observation, not a chest tube. The distinguishing features are a clinically well patient, a lung already known or suspected to be trapped (often malignant or post-infective), and no progression. Get help before putting a tube in one.\n\nDocument the volume removed, its appearance, the patient's symptomatic response, and the post-procedure lung-sliding finding. Reassess dyspnea explicitly — a therapeutic tap that drained 1.8 L and did not help the breathlessness is a diagnostic result about the cause of the breathlessness.\n\nROUTINE POST-PROCEDURE CHEST X-RAY IS NOT REQUIRED after an uncomplicated, ultrasound-guided, single-pass tap in an asymptomatic patient with normal lung sliding. Obtain imaging when any of these apply:",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Multiple needle passes, or a difficult / prolonged procedure.",
+          "Air aspirated at any point.",
+          "New or persistent symptoms — pain, cough, dyspnea, desaturation.",
+          "Absent lung sliding, or you could not get a satisfactory post-procedure view.",
+          "The patient is ventilated, is about to be, or has limited respiratory reserve.",
+          "You want a baseline for how much effusion remains before deciding on a tube or a repeat tap."
+        ]
+      }
     },
     {
       "id": "fluid",
       "type": "step",
       "prompt": "8 · What to send, and in what",
-      "body": "ALWAYS, on any diagnostic tap — pleural protein and LDH, WITH simultaneous serum protein and LDH drawn the same visit. Without the paired serum values you cannot apply Light's Criteria and you will need a second blood draw or, worse, a second tap. Also note the fluid's gross appearance: straw-colored, turbid, frankly purulent, milky (chylous), blood-stained, or food-particulate.\n\nIF THE EFFUSION IS EXUDATIVE, or the cause is unclear — cell count and differential, glucose, cytology (a generous volume, and accept that a repeat sample raises yield), Gram stain and culture including anaerobic and mycobacterial when relevant, and adenosine deaminase where tuberculosis is plausible. Note that ADA also rises in empyema, malignancy, and rheumatoid effusion; it is a prompt, not a diagnosis.\n\nIF INFECTION IS SUSPECTED — pH is the decision-maker, and it must go in a BLOOD GAS SYRINGE, on ice, analyzed promptly. Do not put it in a tube with lidocaine or heparin excess, and do not let it sit. Simple parapneumonic effusion: pH >7.20, LDH <1,000 IU/L, glucose >40 mg/dL. Complicated effusion or empyema: pH <7.20, LDH >1,000 IU/L, glucose <40 mg/dL — these need drainage, not just antibiotics. Frank pus needs a tube without waiting for chemistry.\n\nIF LIGHT'S CRITERIA CALL IT AN EXUDATE BUT THE PATIENT LOOKS LIKE HEART FAILURE — Light's misclassifies roughly a quarter to a third of transudates as exudates, especially after diuresis. A serum-to-pleural albumin gradient above 1.2 g/dL, or an elevated pleural NT-proBNP, reclassifies these correctly. Ask for one before launching a malignancy workup on a diuresed heart-failure patient.\n\nIF THE FLUID IS MILKY — triglycerides and cholesterol to separate chylothorax from a pseudochylothorax.\n\nRun the numbers in the Light's Criteria calculator rather than from memory; this card deliberately does not restate the ratios."
+      "body": "Send everything off the fluid you already have. A second tap to add a test you could have sent the first time is a complication you gave the patient. Run the ratios in the Light's Criteria calculator rather than from memory — this card deliberately does not restate them.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          {
+            "text": "ALWAYS, on any diagnostic tap: pleural protein and LDH, with SIMULTANEOUS serum protein and LDH drawn the same visit.",
+            "items": [
+              "Without the paired serum values you cannot apply Light's Criteria — you will need a second blood draw or, worse, a second tap.",
+              "Note the gross appearance too: straw-colored, turbid, frankly purulent, milky (chylous), blood-stained, or food-particulate."
+            ]
+          },
+          {
+            "text": "IF EXUDATIVE, or the cause is unclear: cell count and differential, glucose, cytology, Gram stain and culture (anaerobic and mycobacterial where relevant), and adenosine deaminase where tuberculosis is plausible.",
+            "items": [
+              "Cytology yield rises with a generous volume and with a repeat sample, not with one heroic aspiration.",
+              "ADA also rises in empyema, malignancy, and rheumatoid effusion — it is a prompt, not a diagnosis."
+            ]
+          },
+          {
+            "text": "IF INFECTION IS SUSPECTED: pH is the decision-maker, and it must go in a BLOOD GAS SYRINGE, on ice, analyzed promptly — not a tube with excess heparin, and not left to sit.",
+            "items": [
+              "Simple parapneumonic effusion: pH >7.20, LDH <1,000 IU/L, glucose >40 mg/dL.",
+              "Complicated effusion or empyema: pH <7.20, LDH >1,000 IU/L, glucose <40 mg/dL — these need drainage, not just antibiotics.",
+              "Frank pus needs a tube without waiting for chemistry."
+            ]
+          },
+          {
+            "text": "IF LIGHT'S SAYS EXUDATE BUT THE PATIENT LOOKS LIKE HEART FAILURE: ask for a serum-to-pleural albumin gradient or a pleural NT-proBNP.",
+            "items": [
+              "Light's misclassifies roughly a quarter to a third of transudates as exudates, especially after diuresis. A gradient above 1.2 g/dL reclassifies them correctly.",
+              "Get one before launching a malignancy workup on a diuresed heart-failure patient."
+            ]
+          },
+          "IF THE FLUID IS MILKY: triglycerides and cholesterol, to separate chylothorax from pseudochylothorax."
+        ]
+      }
     },
     {
       "id": "complications",
@@ -550,5 +617,5 @@
     "decaf-score",
     "local-anesthetic-dosing"
   ],
-  "buildNote": "v2 depth pass (2026-09-16). workflow outputType. Deliberate clinical positions taken, each sourced: (1) symptom-limited drainage replaces the 1-1.5 L cap (Feller-Kopman 2007 + Ault 2015 + Mohammed 2024) — v1 taught the cap, which is now the most common outdated teaching point in this procedure; (2) no routine correction of coagulopathy before an ultrasound-guided tap (Hibbert 2013, BTS 2023); (3) the lateral-6 cm intercostal-artery rule (Helm 2013), absent from v1 and the mechanism behind the fatal complication; (4) post-procedure ultrasound for lung sliding BEFORE any film (Boccatonda 2024). Diagram is cross-sectional intercostal anatomy carrying both the level rule and the depth rule in one figure — the depth rule is the half that text-only teaching usually drops. noteTemplate follows the laceration-repair precedent. Light's ratios stay in the calculator, not restated here. local-anesthetic-dosing cross-link added because a therapeutic tap can approach max volumes in a small patient."
+  "buildNote": "v2 depth pass (2026-09-16). workflow outputType. Deliberate clinical positions taken, each sourced: (1) symptom-limited drainage replaces the 1-1.5 L cap (Feller-Kopman 2007 + Ault 2015 + Mohammed 2024) — v1 taught the cap, which is now the most common outdated teaching point in this procedure; (2) no routine correction of coagulopathy before an ultrasound-guided tap (Hibbert 2013, BTS 2023); (3) the lateral-6 cm intercostal-artery rule (Helm 2013), absent from v1 and the mechanism behind the fatal complication; (4) post-procedure ultrasound for lung sliding BEFORE any film (Boccatonda 2024). Diagram is cross-sectional intercostal anatomy carrying both the level rule and the depth rule in one figure — the depth rule is the half that text-only teaching usually drops. noteTemplate follows the laceration-repair precedent. Light's ratios stay in the calculator, not restated here. local-anesthetic-dosing cross-link added because a therapeutic tap can approach max volumes in a small patient. v3: first content use of `substeps` (common.schema.json#/$defs/nestedList). The three converted steps were the ones using '·' characters to fake a list inside a paragraph — exactly the defect the structure exists to remove."
 }

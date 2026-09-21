@@ -475,7 +475,10 @@ struct ReferenceDoc: Codable {
         let type: String
         let level: Int?
         let text: String?
-        let items: [String]?
+        /// `type == "list"`: entries, possibly nested.
+        let items: [ListItem]?
+        /// `type == "list"`: number this level instead of bulleting it.
+        let ordered: Bool?
         let columns: [String]?
         let rows: [[String]]?
         let tone: String?
@@ -515,10 +518,12 @@ struct Procedure: Codable {
         let prompt: String?
         let body: String?
         let choices: [Choice]?
+        /// Sub-steps belonging to this step, rendered under `body`.
+        let substeps: NestedList?
         let diagram: Diagram?
         enum CodingKeys: String, CodingKey {
             case nodeID = "id"
-            case type, prompt, body, choices, diagram
+            case type, prompt, body, choices, substeps, diagram
         }
     }
     struct Choice: Codable, Hashable {
@@ -622,6 +627,53 @@ struct WeightZonesConfig: Codable {
 /// Deliberately not raster/video: renders natively on both clients, ships inside
 /// the offline content bundle, themes itself through semantic color tokens, and
 /// carries no third-party licensing. Web mirror: renderDiagram() in content.js.
+/// One entry in a content list.
+///
+/// The JSON is heterogeneous by design — a plain string is a leaf, and the
+/// object form carries children so a numbered step can hold its own
+/// sub-steps. Mixing the two in one array is allowed, and every flat list
+/// authored before nesting existed still decodes. See
+/// common.schema.json#/$defs/listItem.
+struct ListItem: Codable, Hashable, Identifiable {
+    let text: String
+    /// Number THIS item's children. Independent of the parent's own numbering.
+    let ordered: Bool
+    let items: [ListItem]?
+
+    /// Stable within a single render — list entries have no ids in the data,
+    /// and the text is what distinguishes them on screen.
+    var id: String { "\(text)|\(items?.count ?? 0)" }
+
+    init(from decoder: Decoder) throws {
+        if let flat = try? decoder.singleValueContainer().decode(String.self) {
+            text = flat
+            ordered = false
+            items = nil
+            return
+        }
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        text = try c.decode(String.self, forKey: .text)
+        ordered = try c.decodeIfPresent(Bool.self, forKey: .ordered) ?? false
+        items = try c.decodeIfPresent([ListItem].self, forKey: .items)
+    }
+    func encode(to encoder: Encoder) throws {}
+    private enum CodingKeys: String, CodingKey { case text, ordered, items }
+}
+
+/// A list plus its own numbering flag, for fields that hold exactly one list.
+struct NestedList: Codable, Hashable {
+    let ordered: Bool
+    let items: [ListItem]
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        ordered = try c.decodeIfPresent(Bool.self, forKey: .ordered) ?? false
+        items = try c.decode([ListItem].self, forKey: .items)
+    }
+    func encode(to encoder: Encoder) throws {}
+    private enum CodingKeys: String, CodingKey { case ordered, items }
+}
+
 struct Diagram: Codable, Hashable {
     let title: String?
     let caption: String?
