@@ -110,6 +110,52 @@ Still open from the prior cycle:
      infection-timeline figure (post-transplant timeline by period; another
      `diagram` candidate).
 
+   *Reference photos supplied 2026-09-21 — transcribed here because the
+   photos themselves live only in the chat transcript.* Four phone photos of
+   a lecture deck. Treat as a POINTER to the underlying clinical content,
+   not as material to reproduce: build original modules and verify every
+   item against a primary source before shipping (the deck is someone
+   else's work, and at least one slide looks garbled — see the note below).
+
+   1. **Biologic/immunotherapy nomenclature** — the decoder the user wants
+      as a figure. Suffix: `-mab` = monoclonal antibody; `-cept` = protein
+      that mimics an immunoglobulin. Middle syllable (source species):
+      `-u-` human derived, `-o-` mouse derived, `-zu-` mouse derived and
+      humanized, `-xi-` part human / part non-human (chimeric). Middle
+      bridging syllable (target): `-t-` tumor, `-ba-` bacterium, `-so-`
+      bone, `-ci-` circulation, `-fu-` fungus, `-gro-` growth factor,
+      `-ki-`/`-li-` interleukin or immune. NOTE: the WHO retired the
+      species/target infix scheme for newly coined INNs in 2017 (new
+      suffixes `-tug`/`-bart`/`-mig`/`-ment`), so the module must say this
+      decodes the LEGACY names still in daily use rather than presenting it
+      as a live naming rule. Natural home is a reference module that the
+      irAE content cross-links to.
+   2. **Febrile transplant recipient — timing table.** As photographed:
+      Week 1 → most likely surgical site infection / catheter / aspiration;
+      high suspicion donor-derived infection. Month 1-3 → opportunistic
+      (CMV), UTI, community; high suspicion BK virus, Listeria. Month 3-6 →
+      opportunistic, community-acquired; high suspicion Aspergillus,
+      Nocardia. >6 months → community-acquired; high suspicion
+      chronic/recurrent CMV. **Resolve against Fishman NEJM 2007 (and its
+      updates) before building** — the canonical periods are <1 month
+      (nosocomial / surgical / donor-derived), 1-6 months (opportunistic,
+      with PJP and CMV prophylaxis shifting the curve), and >6 months
+      (community-acquired) — the slide's 1-3 / 3-6 split and its
+      "Opportunistic (CMV) UTI, Community" row read as compressed lecture
+      shorthand, not as the source of truth. This timeline is the
+      `diagram` candidate the user asked for.
+   3. **Stem cell transplant (HSCT) complications by day 100.** <100 days:
+      acute GVHD, CMV reactivation, engraftment syndrome. >100 days:
+      chronic GVHD, bronchiolitis obliterans, cardiovascular disease,
+      secondary malignancies, endocrinopathies, autoimmune cytopenias,
+      iron overload, VTE.
+   4. **GVHD.** Acute vs chronic split at day 100; rare in solid organ
+      transplant, common in HSCT; occurs when immune cells transplanted
+      from a non-identical donor recognize the recipient as foreign and
+      attack. Needs the bedside half the slide does not have: what it looks
+      like (skin / gut / liver), grading, and what the ED/ICU actually does
+      about it.
+
 ## Progress log
 - 2026-09-21 — **Depth expansion begun: `thoracentesis` v1 → v2, the first
   module rebuilt under the "greater detail + better sources" directive.**
