@@ -117,19 +117,58 @@ Still open from the prior cycle:
    item against a primary source before shipping (the deck is someone
    else's work, and at least one slide looks garbled — see the note below).
 
-   1. **Biologic/immunotherapy nomenclature** — the decoder the user wants
-      as a figure. Suffix: `-mab` = monoclonal antibody; `-cept` = protein
-      that mimics an immunoglobulin. Middle syllable (source species):
-      `-u-` human derived, `-o-` mouse derived, `-zu-` mouse derived and
-      humanized, `-xi-` part human / part non-human (chimeric). Middle
-      bridging syllable (target): `-t-` tumor, `-ba-` bacterium, `-so-`
-      bone, `-ci-` circulation, `-fu-` fungus, `-gro-` growth factor,
-      `-ki-`/`-li-` interleukin or immune. NOTE: the WHO retired the
-      species/target infix scheme for newly coined INNs in 2017 (new
-      suffixes `-tug`/`-bart`/`-mig`/`-ment`), so the module must say this
-      decodes the LEGACY names still in daily use rather than presenting it
-      as a live naming rule. Natural home is a reference module that the
-      irAE content cross-links to.
+   1. **Biologic/immunotherapy nomenclature.** RESEARCHED 2026-09-21
+      against the primary WHO INN documents (INN Working Doc. 17.416,
+      26 May 2017, Tables 1 and 2; INN Working Doc. 21.531 / 22.542 for the
+      2021-22 revision). DECISION, per the user: **keep the legacy
+      species/target scheme — it decodes the several hundred drugs actually
+      in use, and rough day-to-day identification is the whole point.**
+      Frame it as a decoder for existing names, with the current scheme
+      noted so nobody applies it to a drug approved last year.
+
+      LEGACY scheme (WHO Table 1 = prefix + substem A + substem B +
+      `-mab`). Substem A, TARGET CLASS: `-b(a)-` bacterial · `-am(i)-`
+      serum amyloid protein (SAP)/amyloidosis · `-c(i)-` cardiovascular ·
+      `-f(u)-` fungal · `-gr(o)-` skeletal-muscle-mass-related growth
+      factors and receptors · `-k(i)-` interleukin · `-l(i)-`
+      immunomodulating · `-n(e)-` neural · `-s(o)-` bone · `-tox(a)-`
+      toxin · `-t(u)-` tumor · `-v(i)-` viral. Substem B, SOURCE SPECIES:
+      `-a-` rat · `-axo-` rat/mouse · `-e-` hamster · `-i-` primate ·
+      `-o-` mouse · `-u-` human · `-xi-` chimeric · `-xizu-`
+      chimeric-humanized · `-zu-` humanized · `-vet-` veterinary.
+
+      Four corrections to the photographed slide, each checked against the
+      WHO table: `-ci-` is CARDIOVASCULAR, not "circulation"; `-gro-` is
+      specifically skeletal-muscle-mass-related growth factors, not growth
+      factors generally; `-ki-` (interleukin) and `-li-`
+      (immunomodulating) are two DIFFERENT targets, not one "interleukin
+      or immune" bucket; and the slide omits `-am(i)-`, `-tox(a)-`,
+      `-n(e)-` and `-v(i)-` entirely. The slide's `-cept` (a receptor-Fc
+      fusion protein — etanercept, aflibercept) is correct but belongs to
+      a different stem family from `-mab`, not a variant of it. Worth
+      keeping, worth labeling as such.
+
+      WHAT CHANGED, and why the card has to say so. At the 64th INN
+      Consultation (2017) the Expert Group DISCONTINUED substem B, the
+      source infix, except `-vet-`. Two stated reasons: unique
+      pronounceable names were getting hard to find, and the species infix
+      was being used as a marketing tool — particular infixes treated as
+      "better" with no supporting data. Target substems were respelled at
+      the same time: `-ba-`, `-ami-`, `-ci-`, `-fung-`, `-gros-`, `-ki-`,
+      `-li-`, `-ne-`, `-os-`, `-toxa-`, `-ta-` (tumor, replacing `-t(u)-`),
+      `-vet-`, `-vi-`. Then at the 73rd INN Consultation (October 2021)
+      `-mab` itself was retired for NEW names and split four ways by
+      molecular form: `-tug` full-length unmodified immunoglobulin ·
+      `-bart` full-length artificial, one or more engineered regions ·
+      `-ment` monospecific fragment derived from a variable domain ·
+      `-mig` bi- or multi-specific immunoglobulin of any format. Existing
+      names were not renamed, which is precisely why the legacy decoder
+      stays useful.
+
+      Build shape: a reference module with a `diagram` (name anatomy —
+      prefix / target / species / stem as labeled segments of a real
+      example) plus a table per substem list, cross-linked to the irAE
+      content rather than restating it.
    2. **Febrile transplant recipient — timing table.** As photographed:
       Week 1 → most likely surgical site infection / catheter / aspiration;
       high suspicion donor-derived infection. Month 1-3 → opportunistic
@@ -144,6 +183,49 @@ Still open from the prior cycle:
       "Opportunistic (CMV) UTI, Community" row read as compressed lecture
       shorthand, not as the source of truth. This timeline is the
       `diagram` candidate the user asked for.
+
+      NEWER SOURCES, FOUND 2026-09-21 because the user asked (the lecture
+      was given Friday). Three things supersede or qualify the 2007 figure,
+      and the second changes what the card should actually say:
+
+      - **Fishman JA. Infection in organ transplantation. Am J Transplant.
+        2017;17(4):856-879.** The author's own update and the direct
+        successor to the 2007 NEJM piece — same three-period framework, but
+        the emphasis moves to prophylaxis DELAYING rather than preventing
+        disease, so late CMV appears after prophylaxis stops rather than
+        inside the 1-6 month window. Cite this for the structure, not the
+        2007 figure. Also the source for "net state of immunosuppression"
+        as the risk determinant that interacts with epidemiologic exposure.
+      - **van Delden C, et al. Burden and timeline of infectious diseases
+        in the first year after solid organ transplantation in the Swiss
+        Transplant Cohort Study. Clin Infect Dis. 2020;71(7):e159-e169.**
+        The modern empirical challenge, and the most useful finding for a
+        bedside card: of 2,761 recipients with 12 months of follow-up, 55%
+        had an infection (3,520 events), and **bacteria caused 63% and
+        predominated THROUGHOUT the year** (Enterobacteriaceae 54%), while
+        the classic opportunists were rare — CMV 6%, Aspergillus fumigatus
+        1.4%. Herpesviruses were 51% of 1,039 viral infections; Candida 60%
+        of 263 fungal ones, mostly digestive-tract in liver recipients.
+        Implication: in the current prophylaxis era the honest first move
+        on a febrile transplant recipient at almost any timepoint is a
+        bacterial workup. The timeline tells you what ELSE to think about,
+        not what is most likely.
+      - **AST Infectious Diseases Community of Practice guidelines, 4th
+        edition. Clin Transplant. 2019;33(9)** (special issue) for
+        operational specifics — donor-derived infection, surgical site
+        infection, safe living. Newer companion: van Delden C, et al. The
+        Swiss Transplant Cohort Study: implications for transplant
+        infectious diseases research. Transpl Infect Dis. 2025 (PMID
+        40127403). NOTE: the AST 2024 "Post-transplant Infectious Diseases
+        Considerations" PDF on myast.org turned out to be an annotated
+        bibliography, not a timeline chapter — do not cite it for the
+        periods.
+
+      So the diagram carries the three periods AS A DIFFERENTIAL PROMPT,
+      with a standing caveat that bacteria dominate at every point in year
+      one. The slide's "Most Likely / High-Suspicion" column split is a
+      good format worth keeping; its contents need reconciling against the
+      above.
    3. **Stem cell transplant (HSCT) complications by day 100.** <100 days:
       acute GVHD, CMV reactivation, engraftment syndrome. >100 days:
       chronic GVHD, bronchiolitis obliterans, cardiovascular disease,
@@ -157,6 +239,62 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-09-21 — **American English became a pipeline rule; nested lists
+  shipped; two research questions answered.** Four commits, all pushed.
+  - **Spelling guard.** `tools/spelling.mjs` (rule table) +
+    `tools/check-spelling.mjs` (sweep / `--fix`), wired into `npm run ci`
+    and into `content-ci`, whose path filters now include `web/`,
+    `ios/Sources/` and `docs/` so a British spelling in a Swift or JS
+    string actually trips the build. **233 findings across 80 files** — the
+    user was right that there were "multiples"; the 2026-09-16 pass only
+    ever looked at `content/`. Fixed 221 automatically plus two by hand:
+    "goes urgently to theatre" became "to the OR" (the mechanical fix gives <!-- spelling-ok -->
+    "theater", British idiom in American spelling — worse), and
+    "Amethocaine (tetracaine) gel" became "Tetracaine gel (AMETOP)" with <!-- spelling-ok -->
+    the British name moved to `keywords`. Design points worth remembering:
+    `-ise`/`-yse` use an explicit stem allowlist (a blanket rule mangles
+    advertise/comprise/exercise/expertise/franchise/premise/promise/
+    supervise/surprise); the `-yse` suffix set omits `-es` because
+    "analyses"/"dialyses"/"paralyses" are correct American noun plurals;
+    `sources`/`changelog`/`buildNote` are skipped; and `aliases`/`keywords`/
+    `tags` are REPORTED BUT NEVER REWRITTEN, because a British spelling or
+    INN name there is what makes the module findable. Caught one real
+    compounding bug pre-commit: rules whose British form is a prefix of the
+    American one re-fire every pass (enrollment -> enrolllment ->
+    enrollllment) and now carry a negative lookahead.
+  - **Nested lists.** `common.schema.json#/$defs/listItem` is recursive and
+    backward-compatible — a plain string is still a leaf, so no existing
+    list needed migrating. `$defs/nestedList` wraps items with an `ordered`
+    flag; the reference `list` block gained `ordered`; procedure nodes
+    gained `substeps`, which is the thing that did not exist before (a
+    numbered step whose content is itself a sequence). Depth capped at 3 by
+    a `validate.mjs` invariant rather than in the schema, since JSON Schema
+    can express recursion but not a bound on it — guard verified by feeding
+    it a 4-deep list. Both renderers recurse (`renderList` in content.js,
+    `ContentListView.swift`) with markers changing per level
+    (disc/circle/square, 1./a./i.) because screen width is the scarce
+    resource, not indentation. Web markers are set explicitly at every
+    level: a step's substeps list lives inside `ol.nodes`, where the UA
+    rule `ol ul` silently starts level 1 at `circle` and makes it
+    indistinguishable from level 2 — found by reading computed styles, not
+    by looking. Thoracentesis v3 is the first use; its three prose-faked
+    lists are converted and the fluid-studies step is now the two-level
+    hierarchy it always was on the page.
+  - **Nomenclature research.** Answered against the primary WHO INN
+    documents rather than the slide. Kept the legacy species/target scheme
+    per the user's call, with four corrections to the photographed slide
+    and the 2017 and 2021 revisions documented. Detail in item 6 above.
+  - **Newer than Fishman 2007.** Found: Fishman's own 2017 AJT review is
+    the direct successor, and the Swiss Transplant Cohort Study (CID 2020)
+    is the modern empirical challenge — bacteria caused 63% of infections
+    and predominated throughout year one, while CMV was 6% and Aspergillus
+    1.4%. That changes the card's lead: the timeline is a differential
+    prompt, not a probability ranking. Detail in item 6 above.
+  - Verified: validate 431/0, check-spelling clean, tools tests **286/0**
+    (5 new list tests), iOS **16/16** (6 new `ListItem` decode tests — the
+    engine tests would never have exercised the heterogeneous string/object
+    array), staleness 0 overdue, and the rendered page at 375px with no
+    horizontal scroll.
 - 2026-09-21 — **Depth expansion begun: `thoracentesis` v1 → v2, the first
   module rebuilt under the "greater detail + better sources" directive.**
   Sequencing follows the user's own call ("Build the diagram first. Then the

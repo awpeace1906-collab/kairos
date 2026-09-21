@@ -25,6 +25,11 @@
  *     expected citation.
  *   - Citation-shaped lines anywhere (an "et al", a "doi:", or a
  *     "2019;140(2):" style locator).
+ *   - Any line carrying the pragma `spelling-ok`. Documentation and
+ *     changelogs legitimately have to QUOTE a British spelling in order to
+ *     record having fixed it, and there is no way to tell that from a
+ *     defect by pattern alone. Keep the pragma rare and on the same line
+ *     as the quotation.
  */
 
 import { readFileSync, writeFileSync, readdirSync, statSync } from "node:fs";
@@ -74,6 +79,9 @@ const SKIP_KEYS = ["sources", "changelog", "buildNote"];
  * deletes the synonym that makes the module findable.
  */
 const SYNONYM_KEYS = ["aliases", "keywords", "tags"];
+
+/** Opt-out pragma for prose that must quote a British spelling verbatim. */
+const SPELLING_OK = /spelling-ok/;
 
 /** A line that is plainly a bibliographic reference. */
 const CITATION_LINE =
@@ -181,7 +189,7 @@ for (const file of collectFiles()) {
   for (let i = 0; i < lines.length; i += 1) {
     if (skip.has(i)) continue;
     const line = lines[i];
-    if (CITATION_LINE.test(line)) continue;
+    if (CITATION_LINE.test(line) || SPELLING_OK.test(line)) continue;
     const issues = findIssues(line, { categories: CATEGORIES });
     if (!issues.length) continue;
     const target = synonym.has(i) ? synonymHits : hits;
