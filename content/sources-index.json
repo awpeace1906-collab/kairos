@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T00:00:00Z",
+  "generatedAt": "2026-09-21T00:00:00Z",
   "groupOrder": [
     "Guidelines & consensus statements",
     "Randomized trials & major studies",
@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 909,
+  "count": 917,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -2062,6 +2062,18 @@
       ]
     },
     {
+      "text": "Roberts ME, Rahman NM, Maskell NA, et al. British Thoracic Society Guideline for pleural disease. Thorax. 2023;78(Suppl 4):s1-s42.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "thoracentesis",
+          "title": "Thoracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/thoracentesis"
+        }
+      ]
+    },
+    {
       "text": "Rockall TA et al. Gut 1996; NICE NG12 acute UGIB guidance",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -3916,7 +3928,7 @@
       ]
     },
     {
-      "text": "Gordon CE, et al. Pneumothorax following thoracentesis: a systematic review and meta-analysis. Arch Intern Med. 2010;170(4):332-339 (ultrasound-guidance benefit).",
+      "text": "Gordon CE, Feller-Kopman D, Balk EM, Smetana GW. Pneumothorax following thoracentesis: a systematic review and meta-analysis. Arch Intern Med. 2010;170(4):332-339 (pooled pneumothorax ~4%; OR 0.3 with ultrasound guidance).",
       "group": "Cohort, registry & systematic reviews",
       "usedBy": [
         {
@@ -5584,6 +5596,18 @@
       ]
     },
     {
+      "text": "Asciak R, Bedawi EO, Bhatnagar R, et al. British Thoracic Society Clinical Statement on pleural procedures. Thorax. 2023;78(Suppl 4):s43-s68.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "thoracentesis",
+          "title": "Thoracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/thoracentesis"
+        }
+      ]
+    },
+    {
       "text": "Ash-Bernal R, Wise R, Wright SM. Acquired methemoglobinemia: a retrospective series of 138 cases at 2 teaching hospitals. Medicine (Baltimore). 2004;83(5):265-273",
       "group": "Other primary sources",
       "usedBy": [
@@ -5628,6 +5652,18 @@
           "title": "POCUS Nerve Block — Sequential Checklist",
           "section": "Procedures",
           "route": "/procedures/regional-anesthesia-ultrasound/pocus-nerve-block-checklist"
+        }
+      ]
+    },
+    {
+      "text": "Ault MJ, Rosen BT, Scher J, Feinglass J, Barsuk JH. Thoracentesis outcomes: a 12-year experience. Thorax. 2015;70(2):127-132 (9,320 procedures: pneumothorax 0.6%, REPE 0.01%, bleeding 0.2%).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "thoracentesis",
+          "title": "Thoracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/thoracentesis"
         }
       ]
     },
@@ -5868,6 +5904,18 @@
           "title": "Croup — Westley Score & Management",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/croup-management"
+        }
+      ]
+    },
+    {
+      "text": "Boccatonda A, Baldini C, Rampoldi D, et al. Ultrasound-assisted and ultrasound-guided thoracentesis: an educational review. Diagnostics (Basel). 2024;14(11):1124 (15 mm minimum effusion, depth measurement, in-plane technique, post-procedure lung sliding).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "thoracentesis",
+          "title": "Thoracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/thoracentesis"
         }
       ]
     },
@@ -7606,6 +7654,18 @@
       ]
     },
     {
+      "text": "Feller-Kopman D, Berkowitz D, Boiselle P, Ernst A. Large-volume thoracentesis and the risk of reexpansion pulmonary edema. Ann Thorac Surg. 2007;84(5):1656-1661 (2.2% radiographic REPE, independent of volume; basis for symptom-limited drainage).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "thoracentesis",
+          "title": "Thoracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/thoracentesis"
+        }
+      ]
+    },
+    {
       "text": "Fifth Universal Definition of MI (2026) — sex-specific troponin URL",
       "group": "Other primary sources",
       "usedBy": [
@@ -7990,6 +8050,18 @@
       ]
     },
     {
+      "text": "Helm EJ, Rahman NM, Talakoub O, Fox DL, Gleeson FV. Course and variation of the intercostal artery by CT scan. Chest. 2013;143(3):634-639 (17% of arteries shielded by the rib at 3 cm from the spine vs 97% at 6 cm).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "thoracentesis",
+          "title": "Thoracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/thoracentesis"
+        }
+      ]
+    },
+    {
       "text": "Hemphill JC et al. Stroke 2001",
       "group": "Other primary sources",
       "usedBy": [
@@ -8022,6 +8094,18 @@
           "title": "Septic Shock — Resuscitation Targets",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/septic-shock-resuscitation"
+        }
+      ]
+    },
+    {
+      "text": "Hibbert RM, Atwell TD, Lekah A, et al. Safety of ultrasound-guided thoracentesis in patients with abnormal preprocedural coagulation parameters. Chest. 2013;144(2):456-463.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "thoracentesis",
+          "title": "Thoracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/thoracentesis"
         }
       ]
     },
@@ -9180,6 +9264,18 @@
           "title": "12-Lead: STEMI Criteria & Localization",
           "section": "Reference Library",
           "route": "/reference-library/cardiac-ecg/twelve-lead-stemi-criteria"
+        }
+      ]
+    },
+    {
+      "text": "Mohammed A, Hochfeld U, Hong S, et al. Thoracentesis techniques: a literature review. Medicine (Baltimore). 2024;103(1):e36850 (20,815 procedures across 4 drainage methods; 4.4% overall complication rate).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "thoracentesis",
+          "title": "Thoracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/thoracentesis"
         }
       ]
     },
@@ -10852,6 +10948,18 @@
       ]
     },
     {
+      "text": "Thomsen TW, DeLaPena J, Setnik GS. Videos in clinical medicine. Thoracentesis. N Engl J Med. 2006;355(15):e16.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "thoracentesis",
+          "title": "Thoracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/thoracentesis"
+        }
+      ]
+    },
+    {
       "text": "Thomsen TW, et al. Videos in clinical medicine. Paracentesis. N Engl J Med. 2006;355(19):e21.",
       "group": "Other primary sources",
       "usedBy": [
@@ -10860,18 +10968,6 @@
           "title": "Paracentesis",
           "section": "Procedures",
           "route": "/procedures/aspiration-drainage-procedures/paracentesis"
-        }
-      ]
-    },
-    {
-      "text": "Thomsen TW, et al. Videos in clinical medicine. Thoracentesis. N Engl J Med. 2006;355(15):e16.",
-      "group": "Other primary sources",
-      "usedBy": [
-        {
-          "id": "thoracentesis",
-          "title": "Thoracentesis",
-          "section": "Procedures",
-          "route": "/procedures/aspiration-drainage-procedures/thoracentesis"
         }
       ]
     },

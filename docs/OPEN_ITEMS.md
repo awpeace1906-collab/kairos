@@ -6,12 +6,12 @@ Living tracker. Two lists:
    or original content, existing Critical Vector / AnesCalc assets) before the
    affected content can be finalized.
 
-Last updated: 2026-09-15 — see the fresh-look audit entries in the Progress
+Last updated: 2026-09-21 — see the fresh-look audit entries in the Progress
 log below for current state. The **Progress log** further down is an
 append-only chronological record; trust it over any summary above it for
 "what happened when."
 
-## ▶ NEXT SESSION — start here (2026-09-15)
+## ▶ NEXT SESSION — start here (2026-09-21)
 State: **431 modules**, pipeline green (validate 431/0, build/sync/test
 281/0), iOS `TEST SUCCEEDED` (10/10 EngineTests). The original 2026-09-14
 content audit closed at Batch 5 (384 modules). The **fresh follow-up gap
@@ -70,8 +70,114 @@ Still open from the prior cycle:
      user-supplied or properly licensed assets. This is the same
      dependency already logged for the POCUS/ECG/nerve-block media
      libraries.
+6. **User notes captured 2026-09-21 — verbatim backlog, not yet scoped.**
+   Sent mid-session while the thoracentesis depth pass was in flight. Split
+   into the two kinds of work they actually are:
+
+   *Cross-cutting formatting/QA passes (affect many modules):*
+   - **Eliminate British English** — a re-sweep. The 2026-09-16 scripted pass
+     covered `content/`, but (a) newly authored modules can reintroduce
+     spellings (the thoracentesis v2 draft did: `favour`, `colour`, `litre`,
+     `millilitres`, `centimetres`, `analysed` — all caught and fixed before
+     commit), and (b) the pass never covered `web/src/`, `ios/Sources/`, or
+     `docs/`. Needs: a re-run over `content/`, an extension to UI strings,
+     and ideally a CI guard so it cannot regress.
+   - **Nested lists / sub-steps.** Many numbered steps contain a paragraph
+     that is really a list of sub-steps. The `list` block type is flat, and
+     procedure `nodes[].body` is a plain string — so there is currently no
+     way to express a sub-list at all. This is a **schema + both-clients
+     change**, the same shape of work as the `diagram` block: either a
+     nested `items[]` (items that may themselves be lists) or a
+     `sub-list`/`steps` block type. Should be settled BEFORE the bulk of the
+     depth expansion, because every deepened module will want it.
+
+   *Content restructuring:*
+   - **CICO — subdivide.** Front-of-neck access and each individual
+     procedure should each be its own subsection within CICO rather than one
+     flat run.
+
+   *New content to add:*
+   - **IBW & adjusted body weight** — calculator/reference (check against
+     AnesCalc first; must not duplicate).
+   - **McConnell's sign** — ensure it is present and correctly described
+     (RV free-wall akinesis with apical sparing, acute PE).
+   - **TAPSE** — measurement technique: apical 4-chamber as the ideal view,
+     M-mode through the lateral tricuspid annulus.
+   - **Hyperviscosity syndrome.**
+   - **irAE (immune-related adverse events)** — wants a nomenclature
+     image/diagram (candidate for the new `diagram` block).
+   - **Transplant-related emergencies** — rejection, plus an
+     infection-timeline figure (post-transplant timeline by period; another
+     `diagram` candidate).
 
 ## Progress log
+- 2026-09-21 — **Depth expansion begun: `thoracentesis` v1 → v2, the first
+  module rebuilt under the "greater detail + better sources" directive.**
+  Sequencing follows the user's own call ("Build the diagram first. Then the
+  deep dive") — the `diagram` block shipped 2026-09-16, so this is the first
+  content to use it in anger. Target chosen because geometry is the crux of
+  the procedure (so a diagram earns its place) AND the text was thin (479
+  words, 5 outline steps).
+  - **Now 10 fully-specified steps, ~3,200 prose words**, a 13-item
+    checklist (was 5), and a `noteTemplate` (following the
+    `laceration-repair` precedent). Validate 431/0, build/sync green, test
+    281/0.
+  - **Ten primary sources replace two**, all WebSearch/WebFetch-verified
+    against the originals rather than recalled: BTS 2023 guideline + BTS
+    2023 pleural procedures clinical statement, Boccatonda 2024 (Diagnostics
+    14(11):1124), Gordon 2010 (Arch Intern Med 170(4):332-9), Feller-Kopman
+    2007 (Ann Thorac Surg 84(5):1656-61), Ault 2015 (Thorax 70(2):127-32),
+    Hibbert 2013 (Chest 144(2):456-63), Helm 2013 (Chest 143(3):634-9),
+    Mohammed 2024 (Medicine 103(1):e36850), Thomsen 2006 (NEJM).
+  - **Three substantive clinical corrections to v1**, each a live
+    teaching-point error rather than a gap:
+    1. **The 1-1.5 L volume cap is retired** in favor of symptom-limited
+       drainage. v1 taught the cap as a hard limit. Feller-Kopman 2007: in
+       185 large-volume taps, radiographic REPE was 2.2%, clinically silent
+       in every case, and NOT associated with volume, pleural pressure, or
+       elastance; Ault 2015 puts REPE at 0.01% across 9,320 procedures.
+       Stop on symptoms (chest tightness / cough / dyspnea) or pleural
+       pressure below about -20 cm H2O, not on a number.
+    2. **Routine coagulopathy correction before an ultrasound-guided tap is
+       no longer supported** (Hibbert 2013, BTS 2023). Bleeding was 0.2% in
+       9,320 procedures. v1 was silent; the card now says explicitly that
+       transfusing to "cover" a tap trades real transfusion risk for a risk
+       that is not measurably there.
+    3. **The lateral-6 cm intercostal-artery rule was missing entirely.**
+       Helm 2013 (CT, 298 arteries): only 17% of intercostal arteries are
+       shielded by the rib above at 3 cm from the spine, versus 97% at 6 cm.
+       This is the mechanism behind the one complication most likely to
+       kill, and "above the rib" alone does not prevent it.
+  - Also added that v1 lacked: explicit DEPTH discipline (measure and state
+    skin-to-pleura AND skin-to-lung; never exceed the latter), the 15 mm
+    minimum pocket with one interspace of margin above and below, marking
+    the diaphragm apex at end-expiration, ultrasound-ASSISTED vs -GUIDED
+    (and in-plane needle visualization), catheter-over-needle before
+    draining volume, post-procedure lung-sliding check BEFORE ordering any
+    film, pneumothorax ex vacuo, and a real pleural-fluid send list
+    (including pH in a gas syringe on ice, and the albumin gradient /
+    NT-proBNP rescue for Light's-misclassified heart failure).
+  - **Diagram: intercostal anatomy at the insertion site**, 34 shapes.
+    Carries BOTH rules in one figure — level (bundle in the groove under the
+    rib above → hug the top of the rib below) and depth (corridor ends at
+    the lung surface), the second of which text-only teaching usually drops.
+    **First draft had a real defect**, caught by rasterizing the rendered
+    SVG to PNG and actually looking at it: with the chest wall drawn as a
+    horizontal band, the needle visually crossed straight THROUGH both rib
+    cross-sections — the exact opposite of the teaching point. Re-laid out
+    as a proper cross-section (skin left, lung right, ribs stacked
+    cranial/caudal, needle passing through the interspace hugging the lower
+    rib's superior border). Verified: zero labels overflow the viewBox, no
+    label collisions beyond same-paragraph line spacing.
+  - **Verification note worth keeping:** the browser pane can be *hidden*,
+    in which case `computer{screenshot}` returns an all-black image with no
+    error. Structural checks (`getBBox` overflow/collision sweeps) still
+    work, and for an actual look, serialize the live SVG with computed
+    colors inlined, rasterize via canvas, and read the PNG back.
+  - Newly authored prose reintroduced British spellings (`favour`, `colour`,
+    `litre`, `millilitres`, `centimetres`, `analysed`) despite the
+    2026-09-16 normalization pass — caught and fixed pre-commit. Logged as
+    item 6 above: the normalizer needs a re-run and a CI guard.
 - 2026-09-16 — **American English normalization complete: 1,025 word edits
   across 179 of 431 modules.** Done as a scripted single pass
   (`scratchpad/americanize.py`, line-based raw-text editing so original file

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T00:00:00Z",
+  "generatedAt": "2026-09-21T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
@@ -892,7 +892,7 @@
     },
     "calculators/tox-withdrawal/salicylate-toxicity": {
       "content_version": 2,
-      "hash": "2668fb3e253a72c5",
+      "hash": "f8f7554148ee5fdf",
       "path": "modules/calculators/tox-withdrawal/salicylate-toxicity.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -2427,13 +2427,13 @@
       "next_review_due": "2026-12-01"
     },
     "procedures/thoracentesis": {
-      "content_version": 1,
-      "hash": "fe174fd7ca6a9666",
+      "content_version": 2,
+      "hash": "6eb05e5710390f3e",
       "path": "modules/procedures/thoracentesis.json",
       "contentType": "procedure",
       "section": "Procedures",
       "review_tier": 1,
-      "next_review_due": "2026-12-15"
+      "next_review_due": "2026-12-16"
     },
     "procedures/tube-thoracostomy": {
       "content_version": 1,

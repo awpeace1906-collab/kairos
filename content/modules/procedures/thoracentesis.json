@@ -3,64 +3,552 @@
   "section": "Procedures",
   "category": "Aspiration & Drainage Procedures",
   "title": "Thoracentesis",
-  "settingEmphasis": ["ed", "icu"],
-  "aliases": ["pleural tap", "diagnostic thoracentesis", "therapeutic thoracentesis"],
-  "tags": ["thoracentesis", "pleural effusion", "pneumothorax", "ultrasound-guided", "ED", "ICU", "procedure"],
-  "keywords": ["ultrasound-guided reduces pneumothorax risk compared to blind landmark technique", "above the rib not below — avoid the neurovascular bundle running along the rib's inferior margin", "re-expansion pulmonary edema risk with large-volume rapid drainage, limit to roughly 1.5L or stop if symptoms develop", "send fluid for Light's Criteria same visit"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "pleural tap",
+    "pleural aspiration",
+    "diagnostic thoracentesis",
+    "therapeutic thoracentesis"
+  ],
+  "tags": [
+    "thoracentesis",
+    "pleural effusion",
+    "pneumothorax",
+    "ultrasound-guided",
+    "ED",
+    "ICU",
+    "procedure"
+  ],
+  "keywords": [
+    "ultrasound guidance drops the pneumothorax rate roughly threefold versus blind landmark technique",
+    "above the rib, not below — the neurovascular bundle rides in the groove of the rib ABOVE the interspace",
+    "depth matters as much as level: measure skin-to-fluid and skin-to-lung, never advance past the lung",
+    "the 1 to 1.5 L cap is outdated — drain to symptoms or to a pleural pressure below -20 cm H2O",
+    "stay lateral: the intercostal artery is unshielded by the rib in the first 6 cm from the spine",
+    "never below the 8th intercostal space",
+    "send fluid for Light's Criteria same visit"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
-  "last_reviewed": "2026-09-15",
-  "next_review_due": "2026-12-15",
+  "content_version": 2,
+  "last_reviewed": "2026-09-16",
+  "next_review_due": "2026-12-16",
   "review_tier": 1,
   "sources": [
-    "Thomsen TW, et al. Videos in clinical medicine. Thoracentesis. N Engl J Med. 2006;355(15):e16.",
-    "Gordon CE, et al. Pneumothorax following thoracentesis: a systematic review and meta-analysis. Arch Intern Med. 2010;170(4):332-339 (ultrasound-guidance benefit)."
+    "Roberts ME, Rahman NM, Maskell NA, et al. British Thoracic Society Guideline for pleural disease. Thorax. 2023;78(Suppl 4):s1-s42.",
+    "Asciak R, Bedawi EO, Bhatnagar R, et al. British Thoracic Society Clinical Statement on pleural procedures. Thorax. 2023;78(Suppl 4):s43-s68.",
+    "Boccatonda A, Baldini C, Rampoldi D, et al. Ultrasound-assisted and ultrasound-guided thoracentesis: an educational review. Diagnostics (Basel). 2024;14(11):1124 (15 mm minimum effusion, depth measurement, in-plane technique, post-procedure lung sliding).",
+    "Gordon CE, Feller-Kopman D, Balk EM, Smetana GW. Pneumothorax following thoracentesis: a systematic review and meta-analysis. Arch Intern Med. 2010;170(4):332-339 (pooled pneumothorax ~4%; OR 0.3 with ultrasound guidance).",
+    "Feller-Kopman D, Berkowitz D, Boiselle P, Ernst A. Large-volume thoracentesis and the risk of reexpansion pulmonary edema. Ann Thorac Surg. 2007;84(5):1656-1661 (2.2% radiographic REPE, independent of volume; basis for symptom-limited drainage).",
+    "Ault MJ, Rosen BT, Scher J, Feinglass J, Barsuk JH. Thoracentesis outcomes: a 12-year experience. Thorax. 2015;70(2):127-132 (9,320 procedures: pneumothorax 0.6%, REPE 0.01%, bleeding 0.2%).",
+    "Hibbert RM, Atwell TD, Lekah A, et al. Safety of ultrasound-guided thoracentesis in patients with abnormal preprocedural coagulation parameters. Chest. 2013;144(2):456-463.",
+    "Helm EJ, Rahman NM, Talakoub O, Fox DL, Gleeson FV. Course and variation of the intercostal artery by CT scan. Chest. 2013;143(3):634-639 (17% of arteries shielded by the rib at 3 cm from the spine vs 97% at 6 cm).",
+    "Mohammed A, Hochfeld U, Hong S, et al. Thoracentesis techniques: a literature review. Medicine (Baltimore). 2024;103(1):e36850 (20,815 procedures across 4 drainage methods; 4.4% overall complication rate).",
+    "Thomsen TW, DeLaPena J, Setnik GS. Videos in clinical medicine. Thoracentesis. N Engl J Med. 2006;355(15):e16."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3). Cross-linked to the new lights-criteria calculator (Batch 3) for the fluid-interpretation step this procedure exists to feed." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3). Cross-linked to the new lights-criteria calculator (Batch 3) for the fluid-interpretation step this procedure exists to feed."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-16",
+      "change": "Depth pass. Rewritten from 5 outline steps to 10 fully-specified steps with an intercostal-anatomy diagram, a procedure-note template, and a primary-source evidence base (BTS 2023, Boccatonda 2024, Feller-Kopman 2007, Ault 2015, Helm 2013). Three substantive clinical corrections: (1) the 1-1.5 L volume cap is retired in favor of symptom-limited drainage; (2) routine coagulopathy correction before an ultrasound-guided tap is no longer supported; (3) added the lateral-6 cm intercostal-artery rule and explicit depth limits, which v1 omitted entirely."
+    }
   ],
   "outputType": "workflow",
-  "purpose": "Ultrasound-guided pleural fluid drainage — site selection, needle technique staying above the rib, and the re-expansion pulmonary edema risk with large-volume drainage.",
-  "entryPrompt": "Ultrasound guidance is standard of care wherever available — it meaningfully lowers the pneumothorax rate compared to the blind landmark technique.",
+  "purpose": "Ultrasound-guided pleural drainage, start to finish: who needs one, the pre-procedure ultrasound survey and the two depths you must measure, safe-zone site selection, needle technique above the rib, how much to drain by modern evidence, and what to do when it goes wrong.",
+  "entryPrompt": "Two things carry almost all of the safety margin: ultrasound before the needle (pneumothorax OR 0.3 versus blind landmarks) and respecting depth as strictly as level — you can be in a perfect interspace and still be in the lung.",
   "nodes": [
     {
       "id": "indication",
       "type": "step",
-      "prompt": "1. Confirm indication and site",
-      "body": "Diagnostic: a new or unexplained pleural effusion, to send fluid for Light's Criteria and further studies. Therapeutic: symptomatic relief of dyspnea from a large effusion. Use ultrasound to confirm a fluid pocket large enough and accessible enough to tap safely, and to identify the diaphragm/liver/spleen position — ultrasound guidance meaningfully lowers the pneumothorax rate compared to the classic blind landmark technique and is the standard of care wherever available."
+      "prompt": "1 · Indication, and the contraindications that are actually real",
+      "body": "DIAGNOSTIC: any new or unexplained pleural effusion, and any effusion where the cause may have changed (a known heart-failure effusion that is now febrile or unilateral). A parapneumonic effusion needs a tap to decide simple versus complicated, which decides drainage. THERAPEUTIC: symptomatic dyspnea from a large effusion — the intent is relief, and the honest test is whether the patient feels better afterward. Both at once is normal and preferred: send fluid from the therapeutic tap rather than doing two procedures.\n\nThere are very few absolute contraindications. An uncooperative or unable-to-hold-still patient is the practical one; so is the absence of a safe pocket on ultrasound, which is a reason to stop rather than to push. COAGULOPATHY IS NOT THE BARRIER IT WAS TAUGHT TO BE: ultrasound-guided thoracentesis with an uncorrected INR or a low platelet count has repeatedly failed to show excess bleeding, and BTS 2023 does not require routine correction. In a 12-year series of 9,320 procedures, bleeding occurred in 0.2%. Transfusing plasma or platelets purely to 'cover' a tap exposes the patient to real transfusion risk to reduce a risk that is not measurably there — decide on the patient in front of you, not on the number. Reasonable caution still applies to a patient on therapeutic-dose anticoagulation with an uncorrectable bleeding diathesis, a very small pocket, or an operator early in the learning curve: those are reasons to get help, not reasons to transfuse.\n\nRelative cautions worth naming out loud: mechanical ventilation (a pneumothorax matters far more under positive pressure — not a contraindication, but lower your threshold for post-procedure imaging), a single functioning lung, a hemidiaphragm you cannot confidently identify, and known dense adhesions or prior pleurodesis."
     },
     {
-      "id": "position",
+      "id": "ultrasound",
       "type": "step",
-      "prompt": "2. Position",
-      "body": "Patient sitting upright, leaning forward over a bedside table if tolerated — this pools the effusion posteroinferiorly. Typical entry site is the posterior axillary line, one or two interspaces below the top of the effusion as marked by ultrasound, generally not below the 8th-9th intercostal space to avoid the diaphragm/abdominal organs."
+      "prompt": "2 · Ultrasound survey — before the kit is even open",
+      "body": "Do this yourself, at the bedside, with the patient in the position they will actually be in for the procedure. A scan done supine and then acted on sitting up is a scan of a different chest.\n\nPROBE: a curvilinear (3.5-5 MHz) probe for the survey — it reaches the diaphragm and the far pleural surface. Switch to a high-frequency linear probe (7.5-12 MHz) when you want a precise skin-to-pleura depth or to look for an intercostal artery with color Doppler. Keep the probe PERPENDICULAR to the chest wall; an oblique scan over- or under-estimates fluid depth.\n\nFIND THE DIAPHRAGM FIRST. Start low, identify the kidney, then sweep cranially over liver or spleen until the diaphragm appears as a bright curved line. Watch it through a full breath and mark the skin at its APEX AT END-EXPIRATION — that mark is a floor you do not cross. This single step is what prevents the liver and splenic punctures.\n\nCONFIRM THE FLUID IS FLUID. An effusion is anechoic or hypoechoic, bounded by diaphragm below and atelectatic lung within, and it abolishes the CURTAIN SIGN (normally, aerated lung sweeps down over the abdominal organs on inspiration and hides them; with fluid in the way, that curtain does not close). Swirling internal echoes suggest cellular or exudative fluid; septations and honeycombing mean a complicated or loculated collection where a simple needle may fail and which often needs a tube and a chest-consult conversation.\n\nMEASURE TWO DEPTHS AND SAY THEM OUT LOUD:\n· Skin to parietal pleura — this tells you how far to advance before you expect fluid, and which needle length you need.\n· Skin to the underlying lung — this is the depth you must NEVER exceed. Write it down.\n\nSIZE THRESHOLD: do not tap an effusion under about 15 mm of pleural separation, and require that the pocket persist for at least one interspace above and one below your chosen site. A pocket that only exists in a single rib space is a pocket you will lose when the patient breathes.\n\nMark the site with a skin marker at the centre of the best pocket. Then have the patient hold that position — if they shift materially, re-scan. Do not carry a mark across a repositioning."
     },
     {
-      "id": "technique",
+      "id": "position-site",
       "type": "step",
-      "prompt": "3. Needle technique — above the rib, not below",
-      "body": "Enter just ABOVE the superior border of the rib below the chosen interspace — the neurovascular bundle (intercostal artery, vein, nerve) runs along the INFERIOR margin of each rib, so walking the needle onto the top of the lower rib and then just over it avoids it. Infiltrate local anesthetic down to and including the pleura (this is often the most painful step if under-anesthetized). Advance under continuous aspiration or continuous ultrasound visualization until fluid returns; many kits use a catheter-over-needle technique to reduce lung-puncture risk once fluid is reached."
+      "prompt": "3 · Position and the safe zone",
+      "body": "POSITION, best to worst tolerated: sitting on the edge of the bed, leaning forward, arms resting on a bedside table or hugging a pillow — this pools the effusion posteroinferiorly and opens the intercostal spaces. If the patient cannot sit: lateral decubitus with the effusion side DOWN (dependent, so the fluid pools laterally) or supine-to-30-45° with a lateral mid-axillary approach. A supine ICU patient with an anterior-loculated collection is a different, harder procedure — use real-time guidance or get help.\n\nLEVEL: posterior axillary to mid-scapular line, one or two interspaces below the top of the effusion, and NEVER BELOW THE 8TH INTERCOSTAL SPACE regardless of what the fluid looks like. Below that, the diaphragm's excursion and the abdominal organs make the margin unacceptably thin.\n\nSTAY LATERAL — this is the rule most often missed. The intercostal artery does not hug the rib groove near the spine; it wanders freely in the interspace. On CT, only 17% of intercostal arteries were shielded by the rib above at 3 cm from the spine, versus 97% at 6 cm. Practically: do not insert medial to roughly 6-8 cm from the midline, which is what 'posterior axillary line, not paravertebral' means in centimeters. In an elderly, hypertensive, or otherwise arteriopathic patient — where tortuosity is greatest — consider a color-Doppler sweep of the intended interspace before you commit.\n\nAvoid: skin infection or cellulitis over the site, the scapula (it moves and it is in the way), the breast, and any prior surgical or radiotherapy field where the pleura may be tethered."
+    },
+    {
+      "id": "prep",
+      "type": "step",
+      "prompt": "4 · Setup, consent, and anesthesia done properly",
+      "body": "Consent covering pneumothorax, bleeding, infection, pain, and the possibility of a dry tap. Monitoring appropriate to setting — at minimum pulse oximetry, and for a therapeutic tap in a fragile patient, continuous monitoring plus a plan for who is watching the patient while you watch the needle. Have oxygen, suction, and a plan for a chest tube available; do not start a therapeutic tap on a patient whose pneumothorax you could not manage.\n\nSterile technique: chlorhexidine, dry, drape, sterile gloves. Full barrier precautions are not required for a simple tap but skin antisepsis is not optional.\n\nANESTHESIA IS THE STEP MOST OFTEN DONE BADLY, and under-anesthetized parietal pleura is the most painful part of a thoracentesis. Raise a skin wheal with a 25-gauge needle. Then change to a 20- or 22-gauge, longer needle and infiltrate in a continuous, deliberate track: subcutaneous tissue, then down onto the SUPERIOR SURFACE OF THE RIB BELOW the interspace (touching bone is a landmark, not a mistake — it tells you exactly where you are), then walk just over the top of that rib, aspirating as you go, and infiltrate generously as you pass through the intercostal muscle and, critically, the parietal pleura itself. Fluid returning into the anesthetic syringe is your confirmation of both depth and location; note the depth at which it appeared and compare it with the ultrasound number.\n\nIf you get air instead of fluid, stop — you are in lung or in a pneumothorax, and the procedure changes. If you get nothing at the predicted depth, withdraw and re-scan rather than advancing on hope.\n\nSee the local-anesthetic dosing module for maximum safe volumes; a therapeutic tap in a small patient can approach them if you are liberal."
+    },
+    {
+      "id": "needle",
+      "type": "step",
+      "prompt": "5 · Needle technique — above the rib, and no deeper than the fluid",
+      "body": "THE LEVEL RULE: enter just ABOVE the superior border of the rib BELOW your chosen interspace. The neurovascular bundle — intercostal vein, artery, and nerve, in that order from top down — runs in the subcostal groove on the INFERIOR margin of each rib. So the danger lives at the bottom of the rib ABOVE you, and the top of the rib BELOW you is the safe landmark. Walk the needle onto that lower rib, then step just over its upper edge and advance.\n\nTHE DEPTH RULE, which matters just as much and is taught half as often: advance under continuous gentle aspiration and stop the instant fluid returns. Never exceed the skin-to-lung depth you measured in step 2. A perfect interspace at the wrong depth is still a lacerated lung.\n\nAngle the needle slightly cephalad once you are through the pleura in a sitting patient — it keeps the tip away from the diaphragm as the effusion drains and the lung descends.\n\nCATHETER OVER NEEDLE: once fluid returns, advance the catheter and withdraw the needle before draining any volume. This is the single biggest protection against lacerating lung as the effusion empties and the lung re-expands toward your tip. A rigid needle left in place for a liter of drainage is a needle waiting to meet lung. A small skin nick eases catheter passage in most kits.\n\nREAL-TIME (ultrasound-GUIDED) versus MARK-AND-STICK (ultrasound-ASSISTED): assisted — scan, mark, then insert without the probe in the field — is entirely acceptable and is what most operators do, because holding a probe sterile in one hand while manipulating a needle in the other costs dexterity. Use real-time guidance when the pocket is small, loculated, unusually deep, atypically positioned, or when the first attempt failed. If you do go real-time, use an IN-PLANE approach with the probe along the intercostal space so the whole needle shaft is visible; out-of-plane hides the shaft's angle, which is exactly the information that keeps you off the artery.\n\nHave the patient avoid deep breaths and coughing while the needle is through the pleura; a cough at the wrong moment drives the lung onto the tip.",
+      "diagram": {
+        "title": "Intercostal anatomy at the insertion site",
+        "caption": "Cross-section through one interspace: skin on the left, lung on the right. LEVEL — the artery, vein and nerve ride in the groove beneath the rib ABOVE, so the needle hugs the superior border of the rib BELOW. DEPTH — the safe corridor ends at the lung surface, at the skin-to-lung distance you measured on ultrasound.",
+        "viewBox": [
+          0,
+          0,
+          420,
+          250
+        ],
+        "shapes": [
+          {
+            "kind": "rect",
+            "at": [
+              48,
+              24
+            ],
+            "size": [
+              92,
+              212
+            ],
+            "fill": "muscle",
+            "opacity": 0.22
+          },
+          {
+            "kind": "line",
+            "from": [
+              48,
+              24
+            ],
+            "to": [
+              48,
+              236
+            ],
+            "stroke": "outline",
+            "strokeWidth": 2
+          },
+          {
+            "kind": "line",
+            "from": [
+              140,
+              24
+            ],
+            "to": [
+              140,
+              236
+            ],
+            "stroke": "outline",
+            "strokeWidth": 2
+          },
+          {
+            "kind": "rect",
+            "at": [
+              142,
+              24
+            ],
+            "size": [
+              54,
+              212
+            ],
+            "fill": "lumen",
+            "opacity": 0.5
+          },
+          {
+            "kind": "line",
+            "from": [
+              196,
+              24
+            ],
+            "to": [
+              196,
+              236
+            ],
+            "stroke": "danger",
+            "strokeWidth": 2,
+            "dash": true
+          },
+          {
+            "kind": "rect",
+            "at": [
+              198,
+              24
+            ],
+            "size": [
+              40,
+              212
+            ],
+            "fill": "tissue",
+            "opacity": 0.45
+          },
+          {
+            "kind": "ellipse",
+            "at": [
+              96,
+              78
+            ],
+            "rx": 28,
+            "ry": 19,
+            "fill": "bone",
+            "stroke": "outline",
+            "strokeWidth": 1.5
+          },
+          {
+            "kind": "text",
+            "at": [
+              96,
+              82
+            ],
+            "text": "RIB",
+            "fontSize": 10,
+            "anchor": "middle",
+            "fill": "text"
+          },
+          {
+            "kind": "ellipse",
+            "at": [
+              96,
+              176
+            ],
+            "rx": 28,
+            "ry": 19,
+            "fill": "bone",
+            "stroke": "outline",
+            "strokeWidth": 1.5
+          },
+          {
+            "kind": "text",
+            "at": [
+              96,
+              180
+            ],
+            "text": "RIB",
+            "fontSize": 10,
+            "anchor": "middle",
+            "fill": "text"
+          },
+          {
+            "kind": "ellipse",
+            "at": [
+              96,
+              105
+            ],
+            "rx": 23,
+            "ry": 8.5,
+            "fill": "danger",
+            "opacity": 0.2
+          },
+          {
+            "kind": "circle",
+            "at": [
+              85,
+              105
+            ],
+            "r": 4,
+            "fill": "vessel",
+            "stroke": "outline",
+            "strokeWidth": 0.8
+          },
+          {
+            "kind": "circle",
+            "at": [
+              97,
+              106
+            ],
+            "r": 4,
+            "fill": "danger",
+            "stroke": "outline",
+            "strokeWidth": 0.8
+          },
+          {
+            "kind": "circle",
+            "at": [
+              108,
+              105
+            ],
+            "r": 3.5,
+            "fill": "muted",
+            "stroke": "outline",
+            "strokeWidth": 0.8
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                10,
+                144
+              ],
+              [
+                136,
+                150
+              ]
+            ],
+            "stroke": "accent",
+            "strokeWidth": 2.5
+          },
+          {
+            "kind": "arrow",
+            "from": [
+              136,
+              150
+            ],
+            "to": [
+              182,
+              160
+            ],
+            "stroke": "accent",
+            "strokeWidth": 2.5
+          },
+          {
+            "kind": "text",
+            "at": [
+              14,
+              133
+            ],
+            "text": "needle",
+            "fontSize": 9,
+            "fill": "accent"
+          },
+          {
+            "kind": "text",
+            "at": [
+              44,
+              18
+            ],
+            "text": "Skin",
+            "fontSize": 9,
+            "anchor": "end",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              52,
+              42
+            ],
+            "text": "chest wall",
+            "fontSize": 9,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              137,
+              18
+            ],
+            "text": "pleura",
+            "fontSize": 8,
+            "fill": "muted",
+            "anchor": "end"
+          },
+          {
+            "kind": "text",
+            "at": [
+              169,
+              18
+            ],
+            "text": "fluid",
+            "fontSize": 8,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              218,
+              18
+            ],
+            "text": "lung",
+            "fontSize": 8,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "line",
+            "from": [
+              120,
+              100
+            ],
+            "to": [
+              242,
+              72
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "text",
+            "at": [
+              246,
+              62
+            ],
+            "text": "Artery · vein · nerve",
+            "fontSize": 10,
+            "weight": "bold",
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              246,
+              75
+            ],
+            "text": "in the groove under",
+            "fontSize": 9,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              246,
+              86
+            ],
+            "text": "the rib ABOVE",
+            "fontSize": 9,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              246,
+              124
+            ],
+            "text": "Stop in the fluid",
+            "fontSize": 10,
+            "weight": "bold",
+            "fill": "accent"
+          },
+          {
+            "kind": "text",
+            "at": [
+              246,
+              137
+            ],
+            "text": "as soon as it returns",
+            "fontSize": 9,
+            "fill": "muted"
+          },
+          {
+            "kind": "line",
+            "from": [
+              122,
+              168
+            ],
+            "to": [
+              242,
+              180
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "text",
+            "at": [
+              246,
+              177
+            ],
+            "text": "Aim just OVER the top",
+            "fontSize": 10,
+            "weight": "bold",
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              246,
+              190
+            ],
+            "text": "of the rib BELOW",
+            "fontSize": 9,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              246,
+              214
+            ],
+            "text": "Atelectatic lung",
+            "fontSize": 10,
+            "weight": "bold",
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              246,
+              227
+            ],
+            "text": "never pass the measured",
+            "fontSize": 9,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              246,
+              238
+            ],
+            "text": "skin-to-lung depth",
+            "fontSize": 9,
+            "fill": "muted"
+          }
+        ]
+      }
     },
     {
       "id": "drainage",
       "type": "step",
-      "prompt": "4. Drainage volume",
-      "body": "For therapeutic drainage, a common practice limit is roughly 1.5 L in one sitting — beyond this, the risk of re-expansion pulmonary edema rises, particularly with rapid drainage of a large, long-standing effusion. Stop drainage (regardless of volume) if the patient develops chest pain, cough, or dyspnea during the procedure — these can signal the lung re-expanding faster than it tolerates, or an evolving pneumothorax."
+      "prompt": "6 · Drainage — method, and how much (the 1.5 L rule is outdated)",
+      "body": "DIAGNOSTIC ONLY: 30-60 mL is plenty for the standard panel; send more if cytology is the question, since malignant cytology yield rises with volume and with a repeat sample rather than with one heroic aspiration.\n\nTHERAPEUTIC VOLUME — the modern position: the old teaching to stop at 1-1.5 L does not hold up. In 185 large-volume (≥1 L) taps, radiographic re-expansion pulmonary edema occurred in 2.2%, was clinically silent in every case, and was NOT associated with the volume removed, the pleural pressure, or the pleural elastance. In the 9,320-procedure series, REPE occurred in 0.01%. Large effusions can and generally should be drained completely, provided you drain to SYMPTOMS, not to a number.\n\nSTOP when any of these appear, at any volume: chest discomfort or tightness, intractable cough, new dyspnea, hemodynamic change, or — if you are using manometry — an end-expiratory pleural pressure more negative than about -20 cm H2O. Chest tightness during drainage is the bedside surrogate for a steeply falling pleural pressure and is the signal the pleural space is emptying faster than the lung can follow. Take it seriously the first time it is mentioned.\n\nMETHOD: gravity, manual syringe aspiration, vacuum bottle, or wall suction. Across 20,815 procedures the overall complication rate was 4.4%, and manual aspiration carried the lowest complication rate of the four methods, while vacuum-bottle and wall-suction drainage produced markedly more cough and chest pain — particularly with large volumes. Suction is faster (GRAVITAS found roughly 7 minutes saved) and is a reasonable choice for a large effusion in a patient who needs the procedure over quickly. Manual aspiration gives you the finest control and the most tactile feedback, and is the default for a diagnostic tap or a fragile patient. Whatever you use, drain at a rate the patient can talk through.\n\nDo not chase the last few milliliters. A residual rim is normal, and the lung finding you are about to create by hunting for it is not."
+    },
+    {
+      "id": "stop-warning",
+      "type": "warning",
+      "prompt": "Stop the procedure NOW if…",
+      "body": "· Air returns instead of fluid, or you get a sudden loss of resistance — suspect lung puncture or pneumothorax. Stop, remove, scan for lung sliding.\n· Frank blood that does not clear and keeps coming — suspect intercostal artery or lung laceration. Stop, do NOT re-advance, apply pressure, scan for a growing effusion, and escalate immediately: intercostal arterial bleeding is systemic-pressure bleeding and is the complication most likely to kill.\n· New chest tightness, intractable cough, or dyspnea — stop draining regardless of volume.\n· Hypotension, bradycardia, or presyncope — vasovagal is common and usually benign; hypotension with a rising oxygen requirement is not. Lie the patient down, stop, reassess.\n· The patient cannot hold still or the pocket has disappeared on re-scan — abandon and reconsider."
     },
     {
       "id": "postproc",
       "type": "step",
-      "prompt": "5. Post-procedure",
-      "body": "A post-procedure chest X-ray to assess for pneumothorax is traditional but not mandatory in a low-risk, asymptomatic, ultrasound-guided tap with a single easy pass — reserve it for multiple needle passes, air aspirated during the procedure, new symptoms, or a patient who will need mechanical ventilation shortly after (where even a small pneumothorax matters more). Send pleural fluid promptly for Light's Criteria plus any further studies (cell count/differential, glucose, pH, cytology, culture) indicated by the clinical question."
+      "prompt": "7 · Immediately after — ultrasound first, chest X-ray selectively",
+      "body": "Remove the catheter at end-expiration or during a gentle Valsalva, occlude the site, and apply a simple dressing.\n\nSCAN BEFORE YOU ORDER ANYTHING. Put the probe on the anterior chest at the 2nd interspace in the mid-clavicular line: PRESENT lung sliding (or lung pulse, or B-lines) effectively excludes a pneumothorax at that point, and a LUNG POINT — the exact location where normal sliding gives way to the pneumothorax pattern — is 100% specific if one is present. This is faster, more sensitive, and cheaper than a film, and it can be repeated.\n\nROUTINE POST-PROCEDURE CHEST X-RAY IS NOT REQUIRED after an uncomplicated, ultrasound-guided, single-pass tap in an asymptomatic patient with normal lung sliding. Obtain imaging when any of the following apply:\n· multiple needle passes, or a difficult/prolonged procedure\n· air aspirated at any point\n· new or persistent symptoms — pain, cough, dyspnea, desaturation\n· absent lung sliding, or you could not get a satisfactory post-procedure view\n· the patient is ventilated or is about to be, or has limited respiratory reserve\n· you want a baseline for how much effusion remains before deciding on a tube or a repeat tap\n\nPNEUMOTHORAX EX VACUO: if a post-procedure film shows air but the patient is well and the lung sliding survey was reassuring, consider ex vacuo physiology — a trapped, non-expandable lung leaves a space that fills with gas without any pleural breach. It looks alarming and usually needs observation, not a chest tube. The distinguishing features are a clinically well patient, a lung that was already known or suspected to be trapped (often malignant or post-infective), and no progression. Get help before putting a tube in one.\n\nDocument the volume removed, its appearance, the patient's symptomatic response, and the post-procedure lung-sliding finding. Reassess dyspnea explicitly — a therapeutic tap that drained 1.8 L and did not help the breathlessness is a diagnostic result about the cause of the breathlessness."
+    },
+    {
+      "id": "fluid",
+      "type": "step",
+      "prompt": "8 · What to send, and in what",
+      "body": "ALWAYS, on any diagnostic tap — pleural protein and LDH, WITH simultaneous serum protein and LDH drawn the same visit. Without the paired serum values you cannot apply Light's Criteria and you will need a second blood draw or, worse, a second tap. Also note the fluid's gross appearance: straw-colored, turbid, frankly purulent, milky (chylous), blood-stained, or food-particulate.\n\nIF THE EFFUSION IS EXUDATIVE, or the cause is unclear — cell count and differential, glucose, cytology (a generous volume, and accept that a repeat sample raises yield), Gram stain and culture including anaerobic and mycobacterial when relevant, and adenosine deaminase where tuberculosis is plausible. Note that ADA also rises in empyema, malignancy, and rheumatoid effusion; it is a prompt, not a diagnosis.\n\nIF INFECTION IS SUSPECTED — pH is the decision-maker, and it must go in a BLOOD GAS SYRINGE, on ice, analyzed promptly. Do not put it in a tube with lidocaine or heparin excess, and do not let it sit. Simple parapneumonic effusion: pH >7.20, LDH <1,000 IU/L, glucose >40 mg/dL. Complicated effusion or empyema: pH <7.20, LDH >1,000 IU/L, glucose <40 mg/dL — these need drainage, not just antibiotics. Frank pus needs a tube without waiting for chemistry.\n\nIF LIGHT'S CRITERIA CALL IT AN EXUDATE BUT THE PATIENT LOOKS LIKE HEART FAILURE — Light's misclassifies roughly a quarter to a third of transudates as exudates, especially after diuresis. A serum-to-pleural albumin gradient above 1.2 g/dL, or an elevated pleural NT-proBNP, reclassifies these correctly. Ask for one before launching a malignancy workup on a diuresed heart-failure patient.\n\nIF THE FLUID IS MILKY — triglycerides and cholesterol to separate chylothorax from a pseudochylothorax.\n\nRun the numbers in the Light's Criteria calculator rather than from memory; this card deliberately does not restate the ratios."
+    },
+    {
+      "id": "complications",
+      "type": "step",
+      "prompt": "9 · Complications, with honest numbers, and how to handle them",
+      "body": "PNEUMOTHORAX — the common one. Pooled rate around 4%, dropping roughly threefold with ultrasound guidance (OR 0.3); one series reported 18% blind versus 3% guided, and in a large modern ultrasound-guided practice the rate was 0.6%. Independent risk factors are multiple needle passes, drainage of large volumes, and low BMI (underweight patients roughly tripled their risk). Most are small and managed with observation and a repeat film; a symptomatic, enlarging, or ventilated-patient pneumothorax needs a tube. Do not reflexively tube a small asymptomatic one — see ex vacuo above.\n\nBLEEDING / HEMOTHORAX — uncommon (0.2% in 9,320 procedures) but the most dangerous. Almost always intercostal artery, and almost always preventable by staying lateral and above the rib below. Presents as blood that keeps coming, a falling hematocrit, or a new and growing effusion on ultrasound. Management is resuscitation, reversal if applicable, and urgent interventional radiology or thoracic surgery — an arterial bleed into the pleural space will not tamponade itself.\n\nRE-EXPANSION PULMONARY EDEMA — rare (0.01-2.2% depending on whether you count radiographic-only cases), usually unilateral, typically within hours. Supportive care and oxygen; most are self-limited, a minority need ventilatory support. Prevention is symptom-limited drainage, not an arbitrary volume cap.\n\nPAIN, COUGH, AND VASOVAGAL REACTIONS — the most frequent complaints by far, and the most method-dependent: cough in over half and chest or throat pain in around half of vacuum-assisted cases, concentrated in large-volume drainage. Slow down; that is usually the whole treatment.\n\nDRY TAP OR FAILED ASPIRATION — ultrasound guidance cuts dry taps dramatically (33% to near-zero in one comparison). If you get nothing: re-scan before re-sticking. The usual causes are a pocket that was too small, a needle too short for the measured depth, a loculated collection, a pleural thickening rather than fluid, or the patient having shifted since you marked. Two failed passes by a competent operator on a marked pocket is a reason to escalate, not to make a third.\n\nINFECTION and SPLENIC or HEPATIC INJURY are both rare and both largely a function of the two steps above: antisepsis, and marking the diaphragm at end-expiration."
     }
   ],
   "checklist": [
-    "Ultrasound used to confirm the fluid pocket and mark site/depth immediately before prepping",
-    "Entry above the rib, not below — neurovascular bundle avoided",
-    "Local anesthetic carried down to the pleura, not just the skin",
-    "Volume drained monitored, generally capped near 1.5 L, stopped early for new symptoms",
-    "Fluid sent for Light's Criteria plus further studies as indicated"
+    "Ultrasound performed by me, in the patient's procedural position, immediately before prepping",
+    "Diaphragm apex marked at end-expiration — I am above it",
+    "Pocket ≥15 mm and present one interspace above and below the site",
+    "Skin-to-pleura and skin-to-LUNG depths measured and stated aloud",
+    "Site posterior axillary to mid-scapular, lateral to ~6 cm from midline, not below the 8th intercostal space",
+    "No routine coagulopathy correction ordered without a patient-specific reason",
+    "Anesthetic carried down onto the rib below and through the parietal pleura, not just the skin",
+    "Entry just above the superior border of the rib below",
+    "Catheter advanced and needle withdrawn before draining volume",
+    "Drained to symptoms (chest tightness / cough / dyspnea), not to a fixed volume",
+    "Post-procedure lung sliding checked with ultrasound; chest X-ray only if indicated",
+    "Pleural protein + LDH sent WITH simultaneous serum protein + LDH; pH in a gas syringe on ice if infection suspected",
+    "Symptomatic response to drainage documented"
   ],
-  "crossLinks": ["lights-criteria", "acute-dyspnea-niv", "decaf-score"],
-  "buildNote": "workflow outputType. Cross-links to the new lights-criteria calculator (Batch 3) since that's the natural next step after fluid is obtained — this procedure card deliberately doesn't restate the exudate/transudate criteria themselves."
+  "noteTemplate": "PROCEDURE: Ultrasound-{{guidanceMode}} thoracentesis, {{side}} chest. Indication: {{indication}}. Consent obtained; risks including pneumothorax, bleeding, infection and pain discussed. Pre-procedure ultrasound: {{effusionDepth}} mm pleural separation at the {{interspace}} intercostal space, {{siteLine}} line; diaphragm apex marked at end-expiration; skin-to-pleura {{skinToPleura}} cm, skin-to-lung {{skinToLung}} cm. Sterile prep and drape. Local anesthesia: {{anesthetic}} {{anestheticVolume}} mL infiltrated to and including the parietal pleura. Entry above the superior border of the rib below the chosen interspace; {{passes}} pass(es). Catheter advanced, needle withdrawn. {{volume}} mL of {{fluidAppearance}} fluid removed; drainage terminated for {{stopReason}}. Patient {{tolerance}} throughout. Post-procedure ultrasound: lung sliding {{lungSliding}} at the right and left 2nd interspace. Post-procedure chest X-ray {{cxr}}. Estimated blood loss minimal. Specimens sent: {{studies}}. Symptomatic response: {{response}}.",
+  "crossLinks": [
+    "lights-criteria",
+    "acute-dyspnea-niv",
+    "decaf-score",
+    "local-anesthetic-dosing"
+  ],
+  "buildNote": "v2 depth pass (2026-09-16). workflow outputType. Deliberate clinical positions taken, each sourced: (1) symptom-limited drainage replaces the 1-1.5 L cap (Feller-Kopman 2007 + Ault 2015 + Mohammed 2024) — v1 taught the cap, which is now the most common outdated teaching point in this procedure; (2) no routine correction of coagulopathy before an ultrasound-guided tap (Hibbert 2013, BTS 2023); (3) the lateral-6 cm intercostal-artery rule (Helm 2013), absent from v1 and the mechanism behind the fatal complication; (4) post-procedure ultrasound for lung sliding BEFORE any film (Boccatonda 2024). Diagram is cross-sectional intercostal anatomy carrying both the level rule and the depth rule in one figure — the depth rule is the half that text-only teaching usually drops. noteTemplate follows the laceration-repair precedent. Light's ratios stay in the calculator, not restated here. local-anesthetic-dosing cross-link added because a therapeutic tap can approach max volumes in a small patient."
 }

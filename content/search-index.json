@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T00:00:00Z",
+  "generatedAt": "2026-09-21T00:00:00Z",
   "entries": [
     {
       "id": "apfel-ponv",
@@ -6965,11 +6965,15 @@
         "procedure"
       ],
       "keywords": [
-        "ultrasound-guided reduces pneumothorax risk compared to blind landmark technique",
-        "above the rib not below — avoid the neurovascular bundle running along the rib's inferior margin",
-        "re-expansion pulmonary edema risk with large-volume rapid drainage, limit to roughly 1.5L or stop if symptoms develop",
+        "ultrasound guidance drops the pneumothorax rate roughly threefold versus blind landmark technique",
+        "above the rib, not below — the neurovascular bundle rides in the groove of the rib ABOVE the interspace",
+        "depth matters as much as level: measure skin-to-fluid and skin-to-lung, never advance past the lung",
+        "the 1 to 1.5 L cap is outdated — drain to symptoms or to a pleural pressure below -20 cm H2O",
+        "stay lateral: the intercostal artery is unshielded by the rib in the first 6 cm from the spine",
+        "never below the 8th intercostal space",
         "send fluid for Light's Criteria same visit",
         "pleural tap",
+        "pleural aspiration",
         "diagnostic thoracentesis",
         "therapeutic thoracentesis"
       ],

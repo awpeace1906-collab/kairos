@@ -57,7 +57,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["viewBox", "shapes"],
-      "description": "An original, declarative vector illustration. Deliberately NOT raster/video: it renders natively on both clients (web SVG, iOS SwiftUI Canvas), stays offline-first and tiny, themes itself via semantic colour tokens, and carries no third-party licensing. Same architectural pattern as the calculator `plot` field.",
+      "description": "An original, declarative vector illustration. Deliberately NOT raster/video: it renders natively on both clients (web SVG, iOS SwiftUI Canvas), stays offline-first and tiny, themes itself via semantic color tokens, and carries no third-party licensing. Same architectural pattern as the calculator `plot` field.",
       "properties": {
         "title": { "type": "string" },
         "caption": { "type": "string", "description": "Rendered under the figure. Carries the teaching point, not a restatement of the labels." },

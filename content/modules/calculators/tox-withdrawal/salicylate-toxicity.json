@@ -119,7 +119,7 @@
       "forKey": "level",
       "min": 80,
       "max": 200,
-      "label": "≥ 80 mg/dL (acute) — HEMODIALYSIS indicated regardless of symptoms (EXTRIP: ≥ 90 mg/dL, or ≥ 80 with impaired kidney function). Also dialyse for any altered mental status, ARDS/pulmonary edema needing oxygen, or a pH ≤ 7.20. Continue alkalinization and never allow the pH to fall — if intubation is unavoidable, match the pre-intubation minute ventilation and give bicarbonate, or sudden death can follow",
+      "label": "≥ 80 mg/dL (acute) — HEMODIALYSIS indicated regardless of symptoms (EXTRIP: ≥ 90 mg/dL, or ≥ 80 with impaired kidney function). Also dialyze for any altered mental status, ARDS/pulmonary edema needing oxygen, or a pH ≤ 7.20. Continue alkalinization and never allow the pH to fall — if intubation is unavoidable, match the pre-intubation minute ventilation and give bicarbonate, or sudden death can follow",
       "disposition": "Hemodialysis",
       "severity": "high"
     }

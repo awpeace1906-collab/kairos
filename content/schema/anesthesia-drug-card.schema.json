@@ -23,7 +23,7 @@
     },
     "drugClass": {
       "type": "string",
-      "description": "AnesCalc DrugCategory. Drives grouping and colour.",
+      "description": "AnesCalc DrugCategory. Drives grouping and color.",
       "enum": [
         "induction", "benzodiazepine", "volatile", "nmb", "opioid", "local",
         "vasopressor", "reversal", "anticholinergic", "antiemetic", "gi",
