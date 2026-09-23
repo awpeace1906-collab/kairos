@@ -44,16 +44,28 @@ struct DiagramView: View {
     // MARK: - drawing
 
     private func draw(_ ctx: inout GraphicsContext, size: CGSize) {
+        // Every quantity below is explicitly CGFloat, and every content number
+        // is converted at the boundary by `c`.
+        //
+        // This is not stylistic. Content coordinates arrive from JSON as Double
+        // while CGSize/CGPoint are CGFloat, and Swift's implicit CGFloat<->Double
+        // bridging resolves the mixed expressions on recent compilers but is
+        // reported as "ambiguous use of operator '/'" by the Xcode 16 frontend
+        // that CI builds with. Converting once at the boundary satisfies both
+        // and costs nothing at runtime.
+        func c(_ d: Double) -> CGFloat { CGFloat(d) }
+        let vx = c(vb.x), vy = c(vb.y), vw = c(vb.w), vh = c(vb.h)
+
         // uniform scale + centering, equivalent to SVG preserveAspectRatio="xMidYMid meet"
-        let s = min(size.width / vb.w, size.height / vb.h)
-        let ox = (size.width - vb.w * s) / 2 - vb.x * s
-        let oy = (size.height - vb.h * s) / 2 - vb.y * s
+        let s: CGFloat = min(size.width / vw, size.height / vh)
+        let ox: CGFloat = (size.width - vw * s) / 2 - vx * s
+        let oy: CGFloat = (size.height - vh * s) / 2 - vy * s
         func pt(_ x: Double, _ y: Double) -> CGPoint {
-            CGPoint(x: ox + x * s, y: oy + y * s)
+            CGPoint(x: ox + c(x) * s, y: oy + c(y) * s)
         }
 
         for shape in diagram.shapes {
-            let lw = (shape.strokeWidth ?? 1.5) * s
+            let lw: CGFloat = c(shape.strokeWidth ?? 1.5) * s
             var style = StrokeStyle(lineWidth: lw, lineCap: .round, lineJoin: .round)
             if shape.dash == true { style.dash = [5 * s, 4 * s] }
             let fillColor = color(shape.fill)
@@ -81,22 +93,27 @@ struct DiagramView: View {
 
             case "rect":
                 guard let a = shape.at, let sz = shape.size, a.count == 2, sz.count == 2 else { break }
-                let rect = CGRect(origin: pt(a[0], a[1]), size: CGSize(width: sz[0] * s, height: sz[1] * s))
-                let p = Path(roundedRect: rect, cornerRadius: (shape.rx ?? 0) * s)
+                let rect = CGRect(origin: pt(a[0], a[1]),
+                                  size: CGSize(width: c(sz[0]) * s, height: c(sz[1]) * s))
+                let p = Path(roundedRect: rect, cornerRadius: c(shape.rx ?? 0) * s)
                 if let f = fillColor { ctx.fill(p, with: .color(f.opacity(opacity))) }
                 if let st = strokeColor { ctx.stroke(p, with: .color(st.opacity(opacity)), style: style) }
 
             case "circle":
                 guard let a = shape.at, a.count == 2, let r = shape.r else { break }
-                let c = pt(a[0], a[1]), rr = r * s
-                let p = Path(ellipseIn: CGRect(x: c.x - rr, y: c.y - rr, width: rr * 2, height: rr * 2))
+                let center = pt(a[0], a[1])
+                let rr: CGFloat = c(r) * s
+                let p = Path(ellipseIn: CGRect(x: center.x - rr, y: center.y - rr,
+                                               width: rr * 2, height: rr * 2))
                 if let f = fillColor { ctx.fill(p, with: .color(f.opacity(opacity))) }
                 if let st = strokeColor { ctx.stroke(p, with: .color(st.opacity(opacity)), style: style) }
 
             case "ellipse":
                 guard let a = shape.at, a.count == 2, let rx = shape.rx, let ry = shape.ry else { break }
-                let c = pt(a[0], a[1])
-                let p = Path(ellipseIn: CGRect(x: c.x - rx * s, y: c.y - ry * s, width: rx * 2 * s, height: ry * 2 * s))
+                let center = pt(a[0], a[1])
+                let hx: CGFloat = c(rx) * s, hy: CGFloat = c(ry) * s
+                let p = Path(ellipseIn: CGRect(x: center.x - hx, y: center.y - hy,
+                                               width: hx * 2, height: hy * 2))
                 if let f = fillColor { ctx.fill(p, with: .color(f.opacity(opacity))) }
                 if let st = strokeColor { ctx.stroke(p, with: .color(st.opacity(opacity)), style: style) }
 
@@ -104,8 +121,8 @@ struct DiagramView: View {
                 guard let a = shape.from, let b = shape.to, a.count == 2, b.count == 2,
                       let st = strokeColor else { break }
                 let p1 = pt(a[0], a[1]), p2 = pt(b[0], b[1])
-                let ang = atan2(p2.y - p1.y, p2.x - p1.x)
-                let head = 7 * s, halfW = 3.6 * s
+                let ang: CGFloat = atan2(p2.y - p1.y, p2.x - p1.x)
+                let head: CGFloat = 7 * s, halfW: CGFloat = 3.6 * s
                 let back = CGPoint(x: p2.x - head * cos(ang), y: p2.y - head * sin(ang))
                 var shaft = Path(); shaft.move(to: p1); shaft.addLine(to: back)
                 ctx.stroke(shaft, with: .color(st.opacity(opacity)), style: style)
@@ -118,7 +135,7 @@ struct DiagramView: View {
 
             case "text":
                 guard let a = shape.at, a.count == 2, let str = shape.text else { break }
-                let fs = (shape.fontSize ?? 11) * s
+                let fs: CGFloat = c(shape.fontSize ?? 11) * s
                 var t = Text(str).font(.system(size: fs, weight: shape.weight == "bold" ? .semibold : .regular))
                 t = t.foregroundColor((color(shape.fill) ?? color("text")!).opacity(opacity))
                 let anchor: UnitPoint = switch shape.anchor {
@@ -176,8 +193,14 @@ private extension Color {
 enum SVGPath {
     static func parse(_ d: String, transform: (Double, Double) -> CGPoint) -> Path? {
         var path = Path()
-        var cur = CGPoint.zero          // current point, in the diagram's own coords
-        var start = CGPoint.zero
+        // The parser works entirely in Double — the diagram's own coordinate
+        // space — and converts only at the `transform` call. Using CGPoint here
+        // would mix CGFloat with the Doubles coming out of `nextNumber`, which is
+        // the same implicit-bridging pattern the Xcode 16 frontend rejects in
+        // `draw` above.
+        struct P { var x: Double; var y: Double }
+        var cur = P(x: 0, y: 0)         // current point, in the diagram's own coords
+        var start = P(x: 0, y: 0)
         var i = d.startIndex
         var cmd: Character = " "
         var any = false
@@ -209,7 +232,7 @@ enum SVGPath {
             switch Character(cmd.uppercased()) {
             case "M":
                 guard let x = nextNumber(), let y = nextNumber() else { return any ? path : nil }
-                cur = rel ? CGPoint(x: cur.x + x, y: cur.y + y) : CGPoint(x: x, y: y)
+                cur = rel ? P(x: cur.x + x, y: cur.y + y) : P(x: x, y: y)
                 start = cur
                 path.move(to: transform(cur.x, cur.y))
                 any = true
@@ -217,23 +240,23 @@ enum SVGPath {
                 cmd = rel ? "l" : "L"
             case "L":
                 guard let x = nextNumber(), let y = nextNumber() else { return any ? path : nil }
-                cur = rel ? CGPoint(x: cur.x + x, y: cur.y + y) : CGPoint(x: x, y: y)
+                cur = rel ? P(x: cur.x + x, y: cur.y + y) : P(x: x, y: y)
                 path.addLine(to: transform(cur.x, cur.y))
             case "H":
                 guard let x = nextNumber() else { return any ? path : nil }
-                cur = CGPoint(x: rel ? cur.x + x : x, y: cur.y)
+                cur = P(x: rel ? cur.x + x : x, y: cur.y)
                 path.addLine(to: transform(cur.x, cur.y))
             case "V":
                 guard let y = nextNumber() else { return any ? path : nil }
-                cur = CGPoint(x: cur.x, y: rel ? cur.y + y : y)
+                cur = P(x: cur.x, y: rel ? cur.y + y : y)
                 path.addLine(to: transform(cur.x, cur.y))
             case "C":
                 guard let x1 = nextNumber(), let y1 = nextNumber(),
                       let x2 = nextNumber(), let y2 = nextNumber(),
                       let x = nextNumber(), let y = nextNumber() else { return any ? path : nil }
-                let c1 = rel ? CGPoint(x: cur.x + x1, y: cur.y + y1) : CGPoint(x: x1, y: y1)
-                let c2 = rel ? CGPoint(x: cur.x + x2, y: cur.y + y2) : CGPoint(x: x2, y: y2)
-                let end = rel ? CGPoint(x: cur.x + x, y: cur.y + y) : CGPoint(x: x, y: y)
+                let c1 = rel ? P(x: cur.x + x1, y: cur.y + y1) : P(x: x1, y: y1)
+                let c2 = rel ? P(x: cur.x + x2, y: cur.y + y2) : P(x: x2, y: y2)
+                let end = rel ? P(x: cur.x + x, y: cur.y + y) : P(x: x, y: y)
                 path.addCurve(to: transform(end.x, end.y),
                               control1: transform(c1.x, c1.y),
                               control2: transform(c2.x, c2.y))
@@ -241,8 +264,8 @@ enum SVGPath {
             case "Q":
                 guard let x1 = nextNumber(), let y1 = nextNumber(),
                       let x = nextNumber(), let y = nextNumber() else { return any ? path : nil }
-                let c = rel ? CGPoint(x: cur.x + x1, y: cur.y + y1) : CGPoint(x: x1, y: y1)
-                let end = rel ? CGPoint(x: cur.x + x, y: cur.y + y) : CGPoint(x: x, y: y)
+                let c = rel ? P(x: cur.x + x1, y: cur.y + y1) : P(x: x1, y: y1)
+                let end = rel ? P(x: cur.x + x, y: cur.y + y) : P(x: x, y: y)
                 path.addQuadCurve(to: transform(end.x, end.y), control: transform(c.x, c.y))
                 cur = end
             case "Z":

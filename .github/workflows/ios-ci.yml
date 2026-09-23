@@ -10,6 +10,14 @@ jobs:
   build-and-test:
     # macos-15 ships Xcode 16, which XcodeGen (latest, via brew) now targets —
     # it emits objectVersion 77, unreadable by the Xcode 15.4 on macos-14.
+    #
+    # DELIBERATELY NOT PINNED TO A NEWER XCODE. This runner's toolchain is
+    # older than a current local install (Xcode 16.4 here vs 27 locally), and
+    # that gap is the point: it catches portability bugs a newer compiler
+    # silently accepts. It has already caught one — implicit CGFloat/Double
+    # bridging in DiagramView that Xcode 27 resolved and Xcode 16 reported as
+    # "ambiguous use of operator '/'". The consequence to remember is that a
+    # green LOCAL xcodebuild is not evidence that this job will pass.
     runs-on: macos-15
     steps:
       - uses: actions/checkout@v5
