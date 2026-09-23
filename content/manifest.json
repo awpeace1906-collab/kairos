@@ -1548,8 +1548,8 @@
       "next_review_due": "2026-12-14"
     },
     "drug-dosing/dosing-fluid-math/adjusted-body-weight": {
-      "content_version": 2,
-      "hash": "94bf235ea5355f50",
+      "content_version": 3,
+      "hash": "7278ec1850d4e2d0",
       "path": "modules/drug-dosing/dosing-fluid-math/adjusted-body-weight.json",
       "contentType": "calculator",
       "section": "Drug & Dosing Cards",
@@ -2418,8 +2418,8 @@
       "next_review_due": "2026-12-14"
     },
     "procedures/pocus-guide": {
-      "content_version": 3,
-      "hash": "5e13f879ca75a92b",
+      "content_version": 4,
+      "hash": "5a93a1915f977894",
       "path": "modules/procedures/pocus-guide.json",
       "contentType": "reference",
       "section": "Procedures",
@@ -3172,6 +3172,15 @@
       "review_tier": 3,
       "next_review_due": "2027-03-02"
     },
+    "reference-library/hyperviscosity-leukostasis": {
+      "content_version": 1,
+      "hash": "cc2723968a572c8a",
+      "path": "modules/reference-library/hyperviscosity-leukostasis.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-23"
+    },
     "reference-library/icp-tbi-management": {
       "content_version": 3,
       "hash": "7a4103308443cbbf",
@@ -3198,6 +3207,15 @@
       "section": "Reference Library",
       "review_tier": 3,
       "next_review_due": "2026-12-02"
+    },
+    "reference-library/immune-related-adverse-events": {
+      "content_version": 1,
+      "hash": "35f7bcda0d44a8bb",
+      "path": "modules/reference-library/immune-related-adverse-events.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-23"
     },
     "reference-library/incendiary-chemical-burns": {
       "content_version": 1,
@@ -3837,6 +3855,15 @@
       "section": "Reference Library",
       "review_tier": 1,
       "next_review_due": "2027-03-14"
+    },
+    "reference-library/transplant-rejection-graft-dysfunction": {
+      "content_version": 1,
+      "hash": "e7bc68ffbfba4535",
+      "path": "modules/reference-library/transplant-rejection-graft-dysfunction.json",
+      "contentType": "reference",
+      "section": "Reference Library",
+      "review_tier": 2,
+      "next_review_due": "2027-03-23"
     },
     "reference-library/trauma-primary-survey": {
       "content_version": 2,

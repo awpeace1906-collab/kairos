@@ -1,0 +1,217 @@
+{
+  "id": "transplant-rejection-graft-dysfunction",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Transplant Rejection & Graft Dysfunction",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "acute rejection",
+    "graft dysfunction",
+    "transplant rejection",
+    "allograft rejection",
+    "antibody-mediated rejection",
+    "transplant emergency"
+  ],
+  "tags": [
+    "transplant",
+    "rejection",
+    "graft dysfunction",
+    "immunosuppression",
+    "tacrolimus",
+    "kidney transplant",
+    "liver transplant",
+    "heart transplant",
+    "lung transplant",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "rejection, infection and drug toxicity all present as a sick transplant patient with a failing graft",
+    "get a calcineurin inhibitor trough on every transplant patient who is unwell",
+    "a transplanted heart is denervated — no angina, and atropine will not work",
+    "lung has the highest rejection rate; a fall in home spirometry is the earliest sign",
+    "non-adherence and a new interacting drug are the two commonest precipitants",
+    "never adjust immunosuppression without the transplant team"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-23",
+  "next_review_due": "2027-03-23",
+  "review_tier": 2,
+  "sources": [
+    "Justiz Vaillant AA, Mohseni M. Acute transplantation rejection. StatPearls. 2024.",
+    "American Society of Transplantation. Types of rejection. 2024.",
+    "Fishman JA. Infection in organ transplantation. Am J Transplant. 2017;17(4):856-879.",
+    "Martinu T, Chen DF, Palmer SM. Acute rejection and humoral sensitization in lung transplant recipients. Proc Am Thorac Soc. 2009;6(1):54-65.",
+    "Velleca A, Shullo MA, Dhital K, et al. The International Society for Heart and Lung Transplantation guidelines for the care of heart transplant recipients. J Heart Lung Transplant. 2023;42(5):e1-e141.",
+    "Kidney Disease: Improving Global Outcomes (KDIGO) Transplant Recipient Work Group. Clinical practice guideline for the care of kidney transplant recipients."
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-23",
+      "change": "New — the second half of the transplant-emergencies gap. The infection half shipped as febrile-transplant-recipient on the same day; this card covers rejection, drug toxicity, and the fact that a sick transplant patient is usually one of those three and you cannot tell which from the bedside."
+    }
+  ],
+  "summary": "The sick transplant patient who is not obviously infected: rejection, drug toxicity, and how to tell them apart without wrecking the graft.",
+  "whyThisMatters": "A transplant recipient with a failing graft has three candidate problems — rejection, infection, and drug toxicity — and they present the same way, coexist freely, and pull treatment in opposite directions. Treating rejection means more immunosuppression; treating infection often means less. Guessing wrong in either direction costs the graft or the patient. What makes this an emergency-medicine problem rather than a transplant-clinic problem is that the two commonest precipitants are things you can find in ten minutes at the bedside: the patient stopped taking their drugs, or someone started a new one that tanked their levels.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Three things look identical. Work all three."
+    },
+    {
+      "type": "text",
+      "text": "Resist the urge to pick one early. The same patient — febrile, creatinine up, feeling awful — fits all three, and roughly a third of the time more than one is true."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "",
+        "Rejection",
+        "Infection",
+        "Drug toxicity"
+      ],
+      "rows": [
+        [
+          "Typical timing",
+          "Highest risk in the first 3-6 months, but possible at any time — and immediately after a missed-dose period",
+          "Any time; the timeline shifts what organism (see the febrile transplant recipient card)",
+          "Any time, but classically after a new interacting drug"
+        ],
+        [
+          "Clues",
+          "Graft-specific dysfunction, tenderness over the graft, a recent reduction in immunosuppression, documented non-adherence",
+          "Fever, localizing signs, a portal of entry, an exposure history",
+          "High or low calcineurin inhibitor trough, tremor, new drug in the last 2 weeks"
+        ],
+        [
+          "Key test",
+          "Graft function, donor-specific antibodies, and ultimately BIOPSY",
+          "Cultures from everywhere, cross-sectional imaging, CMV PCR",
+          "Trough level, and a careful medication reconciliation"
+        ],
+        [
+          "Direction of treatment",
+          "MORE immunosuppression",
+          "Often LESS immunosuppression",
+          "Adjust the dose or remove the offending drug"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "Get a calcineurin inhibitor trough (tacrolimus or cyclosporine) on every transplant patient who is unwell, at the same time as the rest of the bloods. It is the cheapest test on the list and it resolves a third of the differential. A subtherapeutic level points at non-adherence and rejection; a supratherapeutic one points at toxicity and at whatever drug caused it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Organ-specific: what rejection actually looks like"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "KIDNEY — usually silent until the creatinine moves.",
+          "items": [
+            "Rising creatinine, reduced urine output, new or worsening hypertension, proteinuria. Graft tenderness and fever are classic but often absent on modern regimens.",
+            "Get a renal ultrasound with Dopplers to exclude the mechanical causes that mimic rejection — obstruction, a collection, and renal artery or vein thrombosis.",
+            "Exclude the ordinary things first: dehydration, a new ACE inhibitor or NSAID, and urinary tract infection."
+          ]
+        },
+        {
+          "text": "LIVER — a transaminitis with a story.",
+          "items": [
+            "Rising transaminases and bilirubin, fever, right upper quadrant pain, and sometimes a change in bile output where a drain is present.",
+            "Doppler ultrasound to exclude hepatic artery thrombosis and biliary obstruction, both of which are surgical emergencies that look like rejection."
+          ]
+        },
+        {
+          "text": "HEART — the graft is denervated, which changes everything about the presentation.",
+          "items": [
+            "NO ANGINA. Ischemia and rejection both present as heart failure, arrhythmia, fatigue, or simply feeling unwell — not as chest pain.",
+            "Atropine does not work on a denervated heart. For symptomatic bradycardia reach for isoproterenol, epinephrine, or pacing.",
+            "New heart failure, a fall in ejection fraction, a new arrhythmia, or a pericardial effusion in a heart recipient is rejection until proven otherwise.",
+            "Endomyocardial biopsy is how it is confirmed, and surveillance biopsy schedules mean the transplant team often already knows the trend."
+          ]
+        },
+        {
+          "text": "LUNG — the highest rejection rate of any solid organ, and the earliest warning is a number the patient already has.",
+          "items": [
+            "As many as half of lung recipients are treated for rejection in the first year.",
+            "ASK FOR THE HOME SPIROMETRY. A sustained fall in FEV1, often 10% or more, precedes symptoms and is the single most useful piece of history.",
+            "Cough, dyspnea, low-grade fever, hypoxia, new infiltrates — identical to infection, which is why bronchoscopy with lavage and transbronchial biopsy is usually needed.",
+            "Chronic rejection presents as bronchiolitis obliterans syndrome: progressive, largely irreversible airflow obstruction."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The two things to find before you order anything clever"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "NON-ADHERENCE. Ask directly, without judgment, and ask about cost.",
+          "items": [
+            "\"When did you last take your tacrolimus?\" and \"have you been able to fill it?\" find more rejection than any imaging.",
+            "Insurance lapses, a change of pharmacy, and a hospital admission where the home regimen was not continued are all common and all fixable."
+          ]
+        },
+        {
+          "text": "A NEW DRUG. Calcineurin inhibitors are metabolized by CYP3A4 and interact with a long list of ordinary prescriptions.",
+          "items": [
+            "RAISE levels, risking toxicity: azole antifungals (fluconazole, voriconazole, posaconazole), macrolides (clarithromycin, erythromycin), diltiazem and verapamil, protease inhibitors, and grapefruit.",
+            "LOWER levels, risking rejection: rifampin, phenytoin, carbamazepine, phenobarbital, and St John's wort.",
+            "Check before YOU add anything. Starting clarithromycin for a chest infection in a transplant patient is a classic and avoidable harm."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Treatment, and the limits of your authority"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Call the transplant center. Not the local specialty team — the center that did the transplant, which holds the biopsy history, the donor-specific antibody results, and the regimen.",
+        "Acute cellular rejection is usually treated with high-dose methylprednisolone, commonly 500-1,000 mg IV daily for three days, but the decision to give it belongs to the transplant team because it is the wrong treatment if this is infection.",
+        "Roughly 10% are steroid-resistant and need thymoglobulin or a change of maintenance agent. Antibody-mediated rejection is a different disease and is treated differently — plasma exchange, IVIG, rituximab.",
+        "Biopsy is what distinguishes rejection from everything else, and in most organs it is the necessary step rather than an optional one.",
+        "Continue the existing immunosuppression while you work the patient up unless the transplant team tells you otherwise. Stopping it because the patient looks septic is a decision with a graft attached to it."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "Do not start, stop, or adjust immunosuppression on your own, and do not let a well-meaning admission order set do it either. Holding a dose 'until we know' is exactly how a rejection episode starts. If the patient is too unstable to take oral medication, ask the transplant team for the intravenous equivalent rather than omitting it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Things that are neither rejection nor infection"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Post-transplant lymphoproliferative disorder — EBV-driven, presents as lymphadenopathy, B symptoms, or a mass, and is treated by REDUCING immunosuppression.",
+        "Recurrence of the original disease in the graft, which is common in some kidney and liver indications.",
+        "Surgical and vascular complications: anastomotic stricture, hepatic artery thrombosis, renal artery stenosis, ureteric obstruction, lymphocele. Imaging finds these; immunosuppression does not fix them.",
+        "Drug toxicity beyond the calcineurin inhibitors — mycophenolate causing diarrhea and cytopenias, sirolimus causing pneumonitis and poor wound healing.",
+        "Ordinary illness. Transplant recipients also get appendicitis, and anchoring on the transplant is its own failure mode."
+      ]
+    }
+  ],
+  "clinicalTakeaway": "Work rejection, infection and drug toxicity together rather than choosing between them — send a calcineurin inhibitor trough with the first set of bloods and take a careful medication and adherence history, because those two find most of it. Remember the organ-specific traps: the transplanted heart has no angina and does not answer to atropine, and the lung recipient's home spirometry is the earliest sign you will get. Call the transplant center early, image for the mechanical causes that mimic rejection, and do not touch the immunosuppression yourself.",
+  "buildNote": "New 2026-09-23, the companion to febrile-transplant-recipient built the same day — that card answers 'which organism, and when', this one answers 'what if it is not infection'. The framing is deliberately a three-way differential rather than a rejection monograph, because the bedside problem is that rejection, infection and drug toxicity are indistinguishable and pull treatment in opposite directions. The trough-level callout is placed early because it is the single cheapest discriminator and is routinely not sent. Organ-specific sections lead with the trap rather than the pathophysiology: denervation in heart, home spirometry in lung, mechanical mimics in kidney and liver. Does not restate the infection timeline or empiric antibiotic selection, which live in their own modules."
+}

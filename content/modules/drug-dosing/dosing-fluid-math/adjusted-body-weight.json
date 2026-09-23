@@ -3,11 +3,28 @@
   "section": "Drug & Dosing Cards",
   "category": "Dosing & Fluid Math",
   "title": "Adjusted / Lean Body Weight",
-  "settingEmphasis": ["icu", "ed", "or"],
-  "aliases": ["AdjBW", "adjusted body weight", "lean body weight", "Janmahasatian", "obesity dosing"],
-  "tags": ["obesity", "drug dosing", "induction agents", "paralytics", "OR", "ICU"],
+  "settingEmphasis": [
+    "icu",
+    "ed",
+    "or"
+  ],
+  "aliases": [
+    "AdjBW",
+    "adjusted body weight",
+    "lean body weight",
+    "Janmahasatian",
+    "obesity dosing"
+  ],
+  "tags": [
+    "obesity",
+    "drug dosing",
+    "induction agents",
+    "paralytics",
+    "OR",
+    "ICU"
+  ],
   "contentType": "calculator",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-01",
   "next_review_due": "2026-12-01",
   "review_tier": 1,
@@ -17,28 +34,148 @@
     "MDCalc — Ideal Body Weight / Adjusted Body Weight"
   ],
   "changelog": [
-    { "version": 2, "date": "2026-09-01", "change": "Tier 1 verification: Janmahasatian LBW coefficients (6680/216 male, 8780/244 female) confirmed against the 2005 primary paper, Evidencio, and MDCalc. Removed the verify-coefficients flag." },
-    { "version": 1, "date": "2026-08-31", "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3." }
+    {
+      "version": 2,
+      "date": "2026-09-01",
+      "change": "Tier 1 verification: Janmahasatian LBW coefficients (6680/216 male, 8780/244 female) confirmed against the 2005 primary paper, Evidencio, and MDCalc. Removed the verify-coefficients flag."
+    },
+    {
+      "version": 1,
+      "date": "2026-08-31",
+      "change": "Initial entry from Calculator_Logic_Build_Spec.md Section 3."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-23",
+      "change": "Answered the question the calculator was being opened to answer. It computed four weights correctly and said almost nothing about which one to use, which is the actual bedside decision. Added per-formula guidance to the interpretation rows, a which-weight-for-what summary in the notes (including that tidal volume uses IDEAL and resuscitation uses ACTUAL), a BMI >= 40 flag to prompt checking drug-specific dosing, and search keywords — there were none, so the module was hard to find by the phrase anyone would actually type."
+    }
   ],
   "engine": "formula",
-  "settings": ["OR", "ICU", "Anesthesia"],
+  "settings": [
+    "OR",
+    "ICU",
+    "Anesthesia"
+  ],
   "purpose": "Drug dosing in obesity. Recommendation: use Adjusted Body Weight for routine dosing; reserve the Janmahasatian lean body weight for edge cases (very short or very obese patients).",
   "inputs": [
-    { "key": "heightIn", "label": "Height", "type": "number", "unit": "inches", "min": 48, "max": 84 },
-    { "key": "actualWeight", "label": "Actual weight", "type": "number", "unit": "kg", "min": 20, "max": 300 },
-    { "key": "heightM", "label": "Height", "type": "number", "unit": "m", "min": 1.2, "max": 2.2 },
-    { "key": "sex", "label": "Sex", "type": "select", "options": [{ "label": "Male", "value": 0 }, { "label": "Female", "value": 1 }] }
+    {
+      "key": "heightIn",
+      "label": "Height",
+      "type": "number",
+      "unit": "inches",
+      "min": 48,
+      "max": 84
+    },
+    {
+      "key": "actualWeight",
+      "label": "Actual weight",
+      "type": "number",
+      "unit": "kg",
+      "min": 20,
+      "max": 300
+    },
+    {
+      "key": "heightM",
+      "label": "Height",
+      "type": "number",
+      "unit": "m",
+      "min": 1.2,
+      "max": 2.2
+    },
+    {
+      "key": "sex",
+      "label": "Sex",
+      "type": "select",
+      "options": [
+        {
+          "label": "Male",
+          "value": 0
+        },
+        {
+          "label": "Female",
+          "value": 1
+        }
+      ]
+    }
   ],
   "formulas": [
-    { "key": "ibw", "label": "Ideal body weight (Devine)", "expression": "50 - 4.5 * sex + 2.3 * (heightIn - 60)", "unit": "kg", "precision": 1 },
-    { "key": "adjbw", "label": "Adjusted body weight", "expression": "(50 - 4.5 * sex + 2.3 * (heightIn - 60)) + 0.4 * (actualWeight - (50 - 4.5 * sex + 2.3 * (heightIn - 60)))", "unit": "kg", "precision": 1 },
-    { "key": "bmi", "label": "BMI", "expression": "actualWeight / (heightM ^ 2)", "unit": "kg/m²", "precision": 1 },
-    { "key": "lbwMale", "label": "Lean body weight — male (Janmahasatian)", "expression": "(9270 * actualWeight) / (6680 + 216 * (actualWeight / (heightM ^ 2)))", "unit": "kg", "precision": 1 },
-    { "key": "lbwFemale", "label": "Lean body weight — female (Janmahasatian)", "expression": "(9270 * actualWeight) / (8780 + 244 * (actualWeight / (heightM ^ 2)))", "unit": "kg", "precision": 1 }
+    {
+      "key": "ibw",
+      "label": "Ideal body weight (Devine)",
+      "expression": "50 - 4.5 * sex + 2.3 * (heightIn - 60)",
+      "unit": "kg",
+      "precision": 1
+    },
+    {
+      "key": "adjbw",
+      "label": "Adjusted body weight",
+      "expression": "(50 - 4.5 * sex + 2.3 * (heightIn - 60)) + 0.4 * (actualWeight - (50 - 4.5 * sex + 2.3 * (heightIn - 60)))",
+      "unit": "kg",
+      "precision": 1
+    },
+    {
+      "key": "bmi",
+      "label": "BMI",
+      "expression": "actualWeight / (heightM ^ 2)",
+      "unit": "kg/m²",
+      "precision": 1
+    },
+    {
+      "key": "lbwMale",
+      "label": "Lean body weight — male (Janmahasatian)",
+      "expression": "(9270 * actualWeight) / (6680 + 216 * (actualWeight / (heightM ^ 2)))",
+      "unit": "kg",
+      "precision": 1
+    },
+    {
+      "key": "lbwFemale",
+      "label": "Lean body weight — female (Janmahasatian)",
+      "expression": "(9270 * actualWeight) / (8780 + 244 * (actualWeight / (heightM ^ 2)))",
+      "unit": "kg",
+      "precision": 1
+    }
   ],
   "interpretation": [
-    { "forKey": "adjbw", "label": "Adjusted BW = IBW + 0.4 × (actual − IBW). Use for routine drug dosing in obesity.", "severity": "info" }
+    {
+      "forKey": "ibw",
+      "label": "Ideal body weight (Devine). Use for tidal volume in lung-protective ventilation — 6 mL/kg IBW, never actual weight.",
+      "detail": "Also the basis for aminoglycoside and vancomycin dosing decisions, and for most pediatric-to-adult transition weights. IBW is a height-derived construct, not a measurement: it does not change when the patient gains or loses weight.",
+      "severity": "info"
+    },
+    {
+      "forKey": "adjbw",
+      "label": "Adjusted body weight = IBW + 0.4 x (actual - IBW). The default for routine drug dosing in obesity.",
+      "detail": "Use for aminoglycosides, and for most hydrophilic drugs where actual weight over-doses and IBW under-doses. The 0.4 factor is an empiric correction for the fraction of excess mass that is metabolically active, not a measured volume of distribution.",
+      "severity": "info"
+    },
+    {
+      "forKey": "lbwMale",
+      "label": "Lean body weight (Janmahasatian), male. Reserve for the edge cases adjusted BW handles poorly.",
+      "detail": "Preferred for propofol induction, and for drugs where lean mass drives clearance. More accurate than older LBW equations at the extremes of height and BMI, which is where Devine-based adjusted weight starts to fail.",
+      "severity": "info"
+    },
+    {
+      "forKey": "lbwFemale",
+      "label": "Lean body weight (Janmahasatian), female. Reserve for the edge cases adjusted BW handles poorly.",
+      "detail": "Same use as the male equation — read the row matching the patient's sex.",
+      "severity": "info"
+    },
+    {
+      "forKey": "bmi",
+      "min": 40,
+      "label": "BMI 40 or above — check the specific drug rather than defaulting to a rule.",
+      "detail": "Above roughly this point the standard weight corrections diverge from measured pharmacokinetics for several drug classes, and published obesity-specific dosing exists for many of them. Ask pharmacy.",
+      "severity": "moderate"
+    }
   ],
-  "notes": "Enter height twice (inches for Devine IBW, meters for BMI). Read the Janmahasatian LBW row matching the patient's sex.",
-  "buildNote": "Coefficients verified 2026-09-01 (Janmahasatian 2005, Evidencio, MDCalc). A production build should collapse the two LBW rows into one using the sex select rather than showing both."
+  "notes": "Enter height twice: inches for the Devine IBW, meters for BMI. Read the Janmahasatian lean body weight row matching the patient's sex.\n\nWHICH WEIGHT FOR WHAT — the question this calculator exists to answer. IDEAL: tidal volume (6 mL/kg IBW — this one is a patient-safety issue, not a rounding preference). ADJUSTED: the routine default for drug dosing in obesity, including aminoglycosides. LEAN: propofol induction and drugs cleared in proportion to lean mass. ACTUAL (total body weight): succinylcholine, most emergency resuscitation drugs, heparin for venous thromboembolism treatment, and defibrillation energy. Reaching for adjusted weight in a code is a slow way to under-dose someone.\n\nNone of these is a measurement. They are population corrections, and for a specific drug in a specific patient the drug's own label or a pharmacist beats any of them.",
+  "buildNote": "Coefficients verified 2026-09-01 (Janmahasatian 2005, Evidencio, MDCalc). A production build should collapse the two LBW rows into one using the sex select rather than showing both. v3 added the which-weight-for-what guidance; the arithmetic is unchanged and the coefficients remain as verified 2026-09-01.",
+  "keywords": [
+    "which weight do I use for which drug",
+    "tidal volume is 6 mL/kg IDEAL body weight, never actual",
+    "succinylcholine, resuscitation drugs and defibrillation use ACTUAL body weight",
+    "propofol induction uses lean body weight",
+    "adjusted body weight is the routine default for drug dosing in obesity",
+    "IBW ABW LBW Devine Janmahasatian"
+  ]
 }

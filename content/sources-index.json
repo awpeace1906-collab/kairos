@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 947,
+  "count": 965,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -828,6 +828,18 @@
           "title": "Glasgow-Blatchford Bleeding Score",
           "section": "Calculators",
           "route": "/calculators/gi-renal-metabolic/glasgow-blatchford"
+        }
+      ]
+    },
+    {
+      "text": "Brahmer JR, Abu-Sbeih H, Ascierto PA, et al. Society for Immunotherapy of Cancer (SITC) clinical practice guideline on immune checkpoint inhibitor-related adverse events. J Immunother Cancer. 2021;9(6):e002435.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "immune-related-adverse-events",
+          "title": "Immune-Related Adverse Events (irAE)",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/immune-related-adverse-events"
         }
       ]
     },
@@ -1816,6 +1828,18 @@
       ]
     },
     {
+      "text": "Kidney Disease: Improving Global Outcomes (KDIGO) Transplant Recipient Work Group. Clinical practice guideline for the care of kidney transplant recipients.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "transplant-rejection-graft-dysfunction",
+          "title": "Transplant Rejection & Graft Dysfunction",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/transplant-rejection-graft-dysfunction"
+        }
+      ]
+    },
+    {
       "text": "Kirkpatrick AW, et al. Intra-abdominal hypertension and the abdominal compartment syndrome: updated consensus definitions and clinical practice guidelines from the World Society of the Abdominal Compartment Syndrome. Intensive Care Med. 2013;39(7):1190-1206.",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -2056,6 +2080,18 @@
       ]
     },
     {
+      "text": "Padmanabhan A, Connelly-Smith L, Aqui N, et al. Guidelines on the use of therapeutic apheresis in clinical practice — evidence-based approach from the Writing Committee of the American Society for Apheresis: the eighth special issue. J Clin Apher. 2019;34(3):171-354.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "hyperviscosity-leukostasis",
+          "title": "Hyperviscosity & Leukostasis",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/hyperviscosity-leukostasis"
+        }
+      ]
+    },
+    {
       "text": "Pantell RH, Roberts KB, Adams WG, et al. Clinical Practice Guideline: Evaluation and Management of Well-Appearing Febrile Infants 8 to 60 Days Old. Pediatrics. 2021;148(2):e2021052228.",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -2212,6 +2248,18 @@
       ]
     },
     {
+      "text": "Rudski LG, Lai WW, Afilalo J, et al. Guidelines for the echocardiographic assessment of the right heart in adults: a report from the American Society of Echocardiography. J Am Soc Echocardiogr. 2010;23(7):685-713 (TAPSE technique and the 17 mm threshold).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "pocus-guide",
+          "title": "POCUS Guide",
+          "section": "Procedures",
+          "route": "/procedures/regional-anesthesia-ultrasound/pocus-guide"
+        }
+      ]
+    },
+    {
       "text": "Runyon BA. Management of adult patients with ascites due to cirrhosis: update 2012. AASLD Practice Guideline.",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -2268,6 +2316,18 @@
           "title": "Drowning",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/drowning"
+        }
+      ]
+    },
+    {
+      "text": "Schneider BJ, Naidoo J, Santomasso BD, et al. Management of immune-related adverse events in patients treated with immune checkpoint inhibitor therapy: ASCO guideline update. J Clin Oncol. 2021;39(36):4073-4126.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "immune-related-adverse-events",
+          "title": "Immune-Related Adverse Events (irAE)",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/immune-related-adverse-events"
         }
       ]
     },
@@ -2416,6 +2476,18 @@
       ]
     },
     {
+      "text": "Thompson JA, Schneider BJ, Brahmer J, et al. NCCN Guidelines Insights: Management of Immunotherapy-Related Toxicities, Version 2.2024. J Natl Compr Canc Netw. 2024;22(9):582-592.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "immune-related-adverse-events",
+          "title": "Immune-Related Adverse Events (irAE)",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/immune-related-adverse-events"
+        }
+      ]
+    },
+    {
       "text": "Tita AT et al. NEJM 2022 (CHAP); ACOG Practice Bulletins on chronic hypertension and gestational diabetes",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -2460,6 +2532,18 @@
           "title": "DKA & HHS — Adult Management",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/dka-hhs-adult-management"
+        }
+      ]
+    },
+    {
+      "text": "Velleca A, Shullo MA, Dhital K, et al. The International Society for Heart and Lung Transplantation guidelines for the care of heart transplant recipients. J Heart Lung Transplant. 2023;42(5):e1-e141.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "transplant-rejection-graft-dysfunction",
+          "title": "Transplant Rejection & Graft Dysfunction",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/transplant-rejection-graft-dysfunction"
         }
       ]
     },
@@ -3450,6 +3534,18 @@
           "title": "Awake Intubation (ICU)",
           "section": "Procedures",
           "route": "/procedures/airway-sedation-workflows/awake-intubation"
+        }
+      ]
+    },
+    {
+      "text": "Salem JE, Manouchehri A, Moey M, et al. Cardiovascular toxicities associated with immune checkpoint inhibitors: an observational, retrospective, pharmacovigilance study. Lancet Oncol. 2018;19(12):1579-1589 (myocarditis mortality approaching 50%; onset around 30 days).",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "immune-related-adverse-events",
+          "title": "Immune-Related Adverse Events (irAE)",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/immune-related-adverse-events"
         }
       ]
     },
@@ -5536,6 +5632,30 @@
       ]
     },
     {
+      "text": "American College of Emergency Physicians, Critical Care Medicine Section. Hyperleukocytosis and leukostasis. January 2025.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "hyperviscosity-leukostasis",
+          "title": "Hyperviscosity & Leukostasis",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/hyperviscosity-leukostasis"
+        }
+      ]
+    },
+    {
+      "text": "American College of Emergency Physicians, Critical Care Medicine Section. Hyperviscosity syndrome. January 2025 (viscosity thresholds, fundoscopic findings, mortality 10-20% treated vs >50% untreated).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "hyperviscosity-leukostasis",
+          "title": "Hyperviscosity & Leukostasis",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/hyperviscosity-leukostasis"
+        }
+      ]
+    },
+    {
       "text": "American College of Medical Toxicology position statement on the use of intravenous lipid emulsion (ILE)",
       "group": "Other primary sources",
       "usedBy": [
@@ -5640,6 +5760,18 @@
           "title": "Sickle Cell Crisis",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/sickle-cell-crisis"
+        }
+      ]
+    },
+    {
+      "text": "American Society of Transplantation. Types of rejection. 2024.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "transplant-rejection-graft-dysfunction",
+          "title": "Transplant Rejection & Graft Dysfunction",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/transplant-rejection-graft-dysfunction"
         }
       ]
     },
@@ -7876,6 +8008,18 @@
       ]
     },
     {
+      "text": "Fishman JA. Infection in organ transplantation. Am J Transplant. 2017;17(4):856-879.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "transplant-rejection-graft-dysfunction",
+          "title": "Transplant Rejection & Graft Dysfunction",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/transplant-rejection-graft-dysfunction"
+        }
+      ]
+    },
+    {
       "text": "Fishman JA. Introduction: infection in solid organ transplant recipients. Am J Transplant. 2009;9(Suppl 4):S3-S6.",
       "group": "Other primary sources",
       "usedBy": [
@@ -8040,6 +8184,18 @@
           "title": "Ophthalmologic Emergencies",
           "section": "Reference Library",
           "route": "/reference-library/ent-ophtho-dental-gu/ophthalmologic-emergencies"
+        }
+      ]
+    },
+    {
+      "text": "Gertz MA. Acute hyperviscosity: syndromes and management. Blood. 2018;132(13):1379-1385.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "hyperviscosity-leukostasis",
+          "title": "Hyperviscosity & Leukostasis",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/hyperviscosity-leukostasis"
         }
       ]
     },
@@ -8640,6 +8796,18 @@
           "title": "Reading a Biologic's Name",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/biologic-drug-nomenclature"
+        }
+      ]
+    },
+    {
+      "text": "Justiz Vaillant AA, Mohseni M. Acute transplantation rejection. StatPearls. 2024.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "transplant-rejection-graft-dysfunction",
+          "title": "Transplant Rejection & Graft Dysfunction",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/transplant-rejection-graft-dysfunction"
         }
       ]
     },
@@ -9280,6 +9448,18 @@
       ]
     },
     {
+      "text": "Mahmood SS, Fradley MG, Cohen JV, et al. Myocarditis in patients treated with immune checkpoint inhibitors. J Am Coll Cardiol. 2018;71(16):1755-1764.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "immune-related-adverse-events",
+          "title": "Immune-Related Adverse Events (irAE)",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/immune-related-adverse-events"
+        }
+      ]
+    },
+    {
       "text": "Malbrain MLNG, et al. Principles of fluid management and stewardship in septic shock: it is time to consider the four D's and the four phases of fluid therapy. Ann Intensive Care. 2018;8:66",
       "group": "Other primary sources",
       "usedBy": [
@@ -9348,6 +9528,18 @@
           "title": "Preeclampsia — Severe Features / HELLP",
           "section": "Calculators",
           "route": "/calculators/obstetric-newborn-ed-or-crossover/preeclampsia-severe-features"
+        }
+      ]
+    },
+    {
+      "text": "Martinu T, Chen DF, Palmer SM. Acute rejection and humoral sensitization in lung transplant recipients. Proc Am Thorac Soc. 2009;6(1):54-65.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "transplant-rejection-graft-dysfunction",
+          "title": "Transplant Rejection & Graft Dysfunction",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/transplant-rejection-graft-dysfunction"
         }
       ]
     },
@@ -10582,6 +10774,18 @@
       ]
     },
     {
+      "text": "Rollig C, Ehninger G. How I treat hyperleukocytosis in acute myeloid leukemia. Blood. 2015;125(21):3246-3252.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "hyperviscosity-leukostasis",
+          "title": "Hyperviscosity & Leukostasis",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/hyperviscosity-leukostasis"
+        }
+      ]
+    },
+    {
       "text": "Rose BD, Post TW. Clinical Physiology of Acid-Base and Electrolyte Disorders, 5th ed.",
       "group": "Other primary sources",
       "usedBy": [
@@ -11166,6 +11370,18 @@
           "title": "Pediatric Procedural Pain Management — Non-Sedation Techniques",
           "section": "Procedures",
           "route": "/procedures/airway-sedation-workflows/peds-nonsedation-procedural-pain"
+        }
+      ]
+    },
+    {
+      "text": "Stone MJ, Bogen SA. Evidence-based focused review of management of hyperviscosity syndrome. Blood. 2012;119(10):2205-2208.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "hyperviscosity-leukostasis",
+          "title": "Hyperviscosity & Leukostasis",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/hyperviscosity-leukostasis"
         }
       ]
     },

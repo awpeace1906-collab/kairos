@@ -239,6 +239,64 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-09-23 (later) — **User notes backlog closed: 437 -> 440 modules.**
+  Every item from the 2026-09-21 list is now either built or verified as
+  already present.
+  - **TAPSE added, McConnell's corrected** (`pocus-guide` v4). TAPSE was
+    absent from the entire corpus; it now carries its acquisition technique
+    as a 3-level nested sub-list — apical 4-chamber, M-mode through the
+    LATERAL tricuspid annulus as parallel to its motion as possible (it is
+    angle-dependent), total excursion end-diastole to end-systole, <17 mm
+    means RV systolic dysfunction, with the caveat that it reads one wall in
+    one direction. **McConnell's was already present and was overstated:**
+    v3 called it "specific for acute PE", and it is specific but not
+    pathognomonic — RV infarction and other acute RV pressure loads produce
+    the same free-wall akinesis with apical sparing. Corrected.
+  - **`hyperviscosity-leukostasis`** (NEW). One card covering three
+    mechanisms, because the bedside problem is undifferentiated: paraprotein
+    (IgM in Waldenström, up to 30%; myeloma 2-6%; uncommon below ~4 g/dL),
+    leukostasis (an AML problem — rare in ALL/CLL at the same counts, and
+    possible at WBC as low as 50,000), and symptomatic polycythemia. Normal
+    viscosity ~1.5 cP, symptoms usually above 4, most symptomatic above 6.
+    Mortality >50% untreated, 10-20% with prompt apheresis plus
+    cytoreduction. The two danger callouts are the reflexes rather than the
+    knowledge: **do not transfuse red cells before apheresis**, and do not
+    diurese. Also covers the lab artifacts (pseudohyponatremia, spurious
+    hyperkalemia) that have caused real treatment errors.
+  - **`immune-related-adverse-events`** (NEW). Written for the
+    non-oncologist, ordered by LETHALITY rather than frequency, because the
+    card's job is to make the reader send a troponin: ICI myocarditis is
+    ~1% but kills 40-50%, typically around 30 days in, with a normal
+    ejection fraction not excluding it. Three documented misses are called
+    out explicitly — the myocarditis/myositis/myasthenia overlap, the fact
+    that toxicity can appear months after the last dose, and endocrine irAEs
+    being the exception to the steroid reflex (replace the hormone, do not
+    immunosuppress). Cross-links to `biologic-drug-nomenclature`, which is
+    what lets a reader identify an unfamiliar -mab as an immunotherapy at
+    all.
+  - **`transplant-rejection-graft-dysfunction`** (NEW), the companion to
+    `febrile-transplant-recipient`. Framed as a three-way differential —
+    rejection, infection, drug toxicity — because they are indistinguishable
+    at the bedside and pull treatment in opposite directions. Leads with the
+    cheapest discriminator (send a calcineurin inhibitor trough on every
+    unwell transplant patient) and the two commonest precipitants
+    (non-adherence, a new CYP3A4-interacting drug). Organ sections lead with
+    the trap: the denervated heart has no angina and does not answer to
+    atropine; the lung recipient's home spirometry is the earliest sign and
+    lung has the highest rejection rate of any organ.
+  - **IBW/adjusted body weight was already built** (`adjusted-body-weight`)
+    and computed four weights correctly — but said almost nothing about
+    WHICH one to use, which is the actual bedside question. v3 adds
+    per-formula guidance, a which-weight-for-what summary (tidal volume uses
+    IDEAL at 6 mL/kg; succinylcholine, resuscitation drugs and defibrillation
+    use ACTUAL; propofol induction uses LEAN; adjusted is the routine
+    default), a BMI >= 40 prompt to check drug-specific dosing, and search
+    keywords — it had none, so it was hard to find by the phrase anyone
+    would type.
+  - Verified: validate 440/0, check-spelling clean, tools 286/0, and all
+    four new/edited pages rendered — including the TAPSE sub-list resolving
+    to three levels with lower-alpha markers, which is the nested-list
+    structure doing real work in real content rather than in a test.
 - 2026-09-23 — **CICO subdivided into a category of five, and both requested
   diagrams built.** 431 -> 437 modules.
   - **New category: Procedures / CICO & Front-of-Neck Access.** CICO

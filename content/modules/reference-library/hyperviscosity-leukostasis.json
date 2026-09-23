@@ -1,0 +1,230 @@
+{
+  "id": "hyperviscosity-leukostasis",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Hyperviscosity & Leukostasis",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "hyperviscosity syndrome",
+    "HVS",
+    "leukostasis",
+    "hyperleukocytosis",
+    "Waldenstrom hyperviscosity",
+    "symptomatic polycythemia"
+  ],
+  "tags": [
+    "hyperviscosity",
+    "leukostasis",
+    "hyperleukocytosis",
+    "oncologic emergency",
+    "plasma exchange",
+    "leukapheresis",
+    "Waldenstrom",
+    "myeloma",
+    "AML",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "classic triad: mucosal bleeding, visual change, neurologic deficit",
+    "normal serum viscosity about 1.5 cP; symptoms usually above 4 cP, most patients symptomatic above 6 cP",
+    "do NOT transfuse red cells before apheresis — it raises viscosity and can precipitate the arrest you were trying to prevent",
+    "sausage-link retinal veins on fundoscopy",
+    "leukostasis is an AML problem, not an ALL or CLL problem, and can occur at WBC as low as 50,000",
+    "treat on clinical suspicion; do not wait for the viscosity result"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-23",
+  "next_review_due": "2027-03-23",
+  "review_tier": 2,
+  "sources": [
+    "Gertz MA. Acute hyperviscosity: syndromes and management. Blood. 2018;132(13):1379-1385.",
+    "American College of Emergency Physicians, Critical Care Medicine Section. Hyperviscosity syndrome. January 2025 (viscosity thresholds, fundoscopic findings, mortality 10-20% treated vs >50% untreated).",
+    "American College of Emergency Physicians, Critical Care Medicine Section. Hyperleukocytosis and leukostasis. January 2025.",
+    "Rollig C, Ehninger G. How I treat hyperleukocytosis in acute myeloid leukemia. Blood. 2015;125(21):3246-3252.",
+    "Stone MJ, Bogen SA. Evidence-based focused review of management of hyperviscosity syndrome. Blood. 2012;119(10):2205-2208.",
+    "Padmanabhan A, Connelly-Smith L, Aqui N, et al. Guidelines on the use of therapeutic apheresis in clinical practice — evidence-based approach from the Writing Committee of the American Society for Apheresis: the eighth special issue. J Clin Apher. 2019;34(3):171-354."
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-23",
+      "change": "New — a genuine gap. Hyperviscosity and leukostasis appeared nowhere in the guide, despite being oncologic emergencies where the first ED decision (whether to transfuse) can make the patient worse."
+    }
+  ],
+  "summary": "Three different diseases that all present as sludged blood: paraprotein hyperviscosity, leukostasis, and symptomatic polycythemia. What separates them, and why the reflex to transfuse is the trap.",
+  "whyThisMatters": "These patients arrive looking like a stroke, a bleed, a hypoxic respiratory failure, or simply confused — and the unifying problem is that blood has stopped flowing properly through small vessels. The reason it earns its own card is that the standard reflexes actively harm: transfusing red cells into leukostasis or paraprotein hyperviscosity raises viscosity further, and diuresing a patient who looks fluid-overloaded concentrates the blood that is already too thick. Untreated paraprotein hyperviscosity carries mortality above 50%; with prompt apheresis and cytoreduction that falls to roughly 10-20%. The intervention that matters is available in most hospitals, and the delay is almost always diagnostic rather than logistic.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recognize it"
+    },
+    {
+      "type": "text",
+      "text": "The classic triad is mucosal or skin bleeding, visual disturbance, and neurologic deficit. Any two should put hyperviscosity on the list in a patient with a known or suspected hematologic malignancy — and in a surprising number of cases, the hyperviscosity is how the malignancy announces itself."
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Bleeding that does not fit — oozing gums, epistaxis that will not settle, bruising, GI bleeding.",
+          "items": [
+            "Paraproteins coat platelets and interfere with fibrin polymerization, so the patient bleeds with a normal platelet count and near-normal screening coagulation tests."
+          ]
+        },
+        {
+          "text": "Visual change — blurring, field loss, or simply 'things look wrong'.",
+          "items": [
+            "LOOK AT THE FUNDI. Dilated, segmented retinal veins with a sausage-link appearance are close to diagnostic, alongside retinal hemorrhages, exudates, microaneurysms and papilledema.",
+            "This is the single highest-yield bedside test and it is the one most often skipped. Get ophthalmology if you are not confident, but look first."
+          ]
+        },
+        {
+          "text": "Neurologic — headache, vertigo, tinnitus, confusion, ataxia, somnolence, seizure, or focal deficit that does not respect a vascular territory.",
+          "items": [
+            "Easily mistaken for stroke. A patient with a normal CT, a global picture, and a wildly abnormal protein gap is not having a stroke."
+          ]
+        },
+        "Dyspnea and hypoxia out of proportion to the chest film — in leukostasis especially, where the infiltrate is leukocyte plugging rather than pneumonia.",
+        "Heart failure and volume overload from expanded plasma volume, which is exactly the presentation that tempts a diuretic."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Three mechanisms, three different treatments"
+    },
+    {
+      "type": "text",
+      "text": "They look alike at the bedside and diverge completely in management. Deciding which one you are treating is the whole job."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "",
+        "Paraprotein hyperviscosity",
+        "Leukostasis",
+        "Symptomatic polycythemia"
+      ],
+      "rows": [
+        [
+          "Cause",
+          "IgM in Waldenström macroglobulinemia (up to 30%); IgA or IgG myeloma (2-6%)",
+          "Blast crisis — AML, or CML in blast phase",
+          "Polycythemia vera, or severe secondary erythrocytosis"
+        ],
+        [
+          "Threshold",
+          "Uncommon below a paraprotein of about 4 g/dL",
+          "WBC >100,000/µL is the usual definition, but AML blasts can cause leukostasis as low as 50,000/µL",
+          "Hematocrit typically well above 60%"
+        ],
+        [
+          "Key point",
+          "IgM is pentameric and stays intravascular, which is why Waldenström dominates despite being rarer",
+          "An AML problem. Exceedingly rare in ALL and CLL even at the same counts, because lymphoblasts are smaller and less adhesive",
+          "Whole-blood viscosity rises steeply and non-linearly with hematocrit"
+        ],
+        [
+          "Definitive treatment",
+          "Therapeutic plasma exchange",
+          "Cytoreduction — hydroxyurea and prompt induction chemotherapy",
+          "Therapeutic phlebotomy"
+        ],
+        [
+          "Apheresis role",
+          "First-line, and it works within hours",
+          "Leukapheresis for SYMPTOMATIC leukostasis; it does not replace chemotherapy and has not clearly improved survival",
+          "Not applicable"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Workup — send these, but do not wait for them"
+    },
+    {
+      "type": "list",
+      "items": [
+        "SERUM VISCOSITY. Normal is about 1.5 cP. Symptoms usually begin above 4 cP and most patients are symptomatic above 6 cP. The result often takes hours and the correlation between level and symptoms is loose between patients, so send it to confirm and document — not to decide.",
+        "PROTEIN GAP (total protein minus albumin). A gap above about 4 g/dL points hard at a paraprotein and comes back with the basic chemistry.",
+        "Peripheral smear — rouleaux in paraproteinemia, blasts in leukostasis. Ask the lab to look; do not rely on the automated differential.",
+        "CBC with differential, comprehensive metabolic panel, LDH, uric acid, phosphate, calcium, coagulation studies, fibrinogen, and type and screen.",
+        "Serum protein electrophoresis with immunofixation, and serum free light chains.",
+        "Fundoscopy, documented."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Beware the laboratory artifacts. A high paraprotein produces pseudohyponatremia on older indirect-ISE analyzers — the sodium is not really low and treating it is a mistake. Very high WBC counts can produce spurious hyperkalemia and a falsely low measured PaO2 from ongoing leukocyte metabolism in the sample tube, and can also make the platelet count look higher than it is."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Treatment"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "PARAPROTEIN HYPERVISCOSITY — therapeutic plasma exchange, urgently.",
+          "items": [
+            "A single exchange of roughly one plasma volume removes most of the intravascular paraprotein and typically brings viscosity down substantially within hours, because IgM is largely intravascular.",
+            "Symptoms usually improve after one to two sessions. Repeat until symptoms resolve, then hand over to cytoreduction.",
+            "Apheresis controls the symptom; it does not treat the disease. Hematology must start definitive therapy in parallel or the paraprotein simply reaccumulates.",
+            "In Waldenström specifically, plasma exchange is also used BEFORE rituximab when IgM is high (commonly cited at ≥4,000 mg/dL), because rituximab can provoke an IgM flare."
+          ]
+        },
+        {
+          "text": "LEUKOSTASIS — cytoreduction first, apheresis as an adjunct.",
+          "items": [
+            "Hydroxyurea to start bringing the count down, and urgent hematology involvement for induction chemotherapy. Chemotherapy is the treatment; everything else is a holding measure.",
+            "Leukapheresis for symptomatic leukostasis is a reasonable and guideline-supported adjunct, but the evidence that it improves survival is weak and it should never delay chemotherapy.",
+            "Aggressive hydration and tumor lysis prophylaxis from the outset — rasburicase or allopurinol per your protocol, with close electrolyte monitoring. Tumor lysis and DIC are what follow, and they arrive fast.",
+            "Check coagulation and fibrinogen. Concurrent DIC is common, particularly in acute promyelocytic leukemia, where the coagulopathy rather than the leukostasis is what kills."
+          ]
+        },
+        {
+          "text": "SYMPTOMATIC POLYCYTHEMIA — therapeutic phlebotomy.",
+          "items": [
+            "Remove blood in aliquots with crystalloid replacement, guided by symptoms rather than by a target number in the acute setting.",
+            "Then treat the cause; in polycythemia vera that means hematology, cytoreduction, and aspirin."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "DO NOT TRANSFUSE RED CELLS BEFORE APHERESIS in paraprotein hyperviscosity or leukostasis unless the patient is exsanguinating. Adding red cells to blood that is already too viscous is the one intervention that can turn a salvageable presentation into an arrest. If the hemoglobin is genuinely dangerous, exchange or cytoreduce first, transfuse after — and say so explicitly in the handover, because a transfusion order is exactly what the next team will reach for."
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Avoid diuretics. These patients often look volume-overloaded because plasma volume is expanded, and removing plasma water concentrates the very thing that is causing the problem."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Disposition and the conversation to have"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Hematology or oncology now, not in the morning. The intervention is time-critical and apheresis needs a line, a machine, and a team.",
+        "ICU for anyone with neurologic or respiratory involvement — deterioration is quick and intubating a leukostatic patient later is harder than admitting them earlier.",
+        "A dialysis-capable central line is usually needed for apheresis. Involving whoever places them early saves an hour that matters.",
+        "If this is a new presentation, someone has to tell the patient they probably have a hematologic malignancy. Do not leave that to be discovered from a consent form for apheresis."
+      ]
+    }
+  ],
+  "clinicalTakeaway": "Triad plus a malignancy history, or triad plus an unexplained protein gap, is enough to act on — send the viscosity but treat before it returns. Decide which of the three mechanisms you are dealing with, because the treatments do not overlap: plasma exchange for paraprotein, cytoreduction for leukostasis, phlebotomy for polycythemia. And hold the red cells and the furosemide until someone has thought about viscosity.",
+  "buildNote": "New 2026-09-23. Built as one card covering three mechanisms rather than three cards, because the bedside problem is undifferentiated — the patient presents as sludged blood and the work is telling them apart. The two danger callouts (transfusion before apheresis, diuretics) are placed after the treatment section rather than buried in it, because they are reflexes rather than knowledge gaps. The laboratory-artifact callout is included because pseudohyponatremia and spurious hyperkalemia here have both generated real treatment errors. Deliberately does not restate tumor lysis management, which belongs with the oncologic emergencies content it cross-links to."
+}

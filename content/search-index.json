@@ -3654,6 +3654,12 @@
         "ICU"
       ],
       "keywords": [
+        "which weight do I use for which drug",
+        "tidal volume is 6 mL/kg IDEAL body weight, never actual",
+        "succinylcholine, resuscitation drugs and defibrillation use ACTUAL body weight",
+        "propofol induction uses lean body weight",
+        "adjusted body weight is the routine default for drug dosing in obesity",
+        "IBW ABW LBW Devine Janmahasatian",
         "AdjBW",
         "adjusted body weight",
         "lean body weight",
@@ -9027,6 +9033,45 @@
       ]
     },
     {
+      "id": "hyperviscosity-leukostasis",
+      "title": "Hyperviscosity & Leukostasis",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "hyperviscosity",
+        "leukostasis",
+        "hyperleukocytosis",
+        "oncologic emergency",
+        "plasma exchange",
+        "leukapheresis",
+        "Waldenstrom",
+        "myeloma",
+        "AML",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "classic triad: mucosal bleeding, visual change, neurologic deficit",
+        "normal serum viscosity about 1.5 cP; symptoms usually above 4 cP, most patients symptomatic above 6 cP",
+        "do NOT transfuse red cells before apheresis — it raises viscosity and can precipitate the arrest you were trying to prevent",
+        "sausage-link retinal veins on fundoscopy",
+        "leukostasis is an AML problem, not an ALL or CLL problem, and can occur at WBC as low as 50,000",
+        "treat on clinical suspicion; do not wait for the viscosity result",
+        "hyperviscosity syndrome",
+        "HVS",
+        "leukostasis",
+        "hyperleukocytosis",
+        "Waldenstrom hyperviscosity",
+        "symptomatic polycythemia"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/hyperviscosity-leukostasis",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
       "id": "icu-nutrition",
       "title": "ICU Nutrition — Enteral & Parenteral Initiation",
       "section": "Reference Library",
@@ -9090,6 +9135,45 @@
       "contentType": "reference",
       "route": "/reference-library/critical-care/icu-workflow",
       "settingEmphasis": [
+        "icu"
+      ]
+    },
+    {
+      "id": "immune-related-adverse-events",
+      "title": "Immune-Related Adverse Events (irAE)",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "irAE",
+        "checkpoint inhibitor",
+        "immunotherapy",
+        "myocarditis",
+        "colitis",
+        "hypophysitis",
+        "pneumonitis",
+        "steroids",
+        "oncologic emergency",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "any new symptom in a patient on a checkpoint inhibitor is an irAE until proven otherwise",
+        "ICI myocarditis is about 1% but kills 40-50% — send a troponin on anyone with chest symptoms",
+        "hypophysitis presents as fatigue and hyponatremia, and the adrenal insufficiency is the part that kills",
+        "grade 2 usually means hold the drug and start steroids; grade 3-4 means admit and 1-2 mg/kg methylprednisolone",
+        "a toxicity can appear weeks to months after the last dose — 'off treatment' does not mean off the hook",
+        "do not treat ICI colitis as infectious gastroenteritis and send them home",
+        "irAE",
+        "immune related adverse events",
+        "checkpoint inhibitor toxicity",
+        "immunotherapy toxicity",
+        "ICI toxicity",
+        "pembrolizumab nivolumab ipilimumab toxicity"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/immune-related-adverse-events",
+      "settingEmphasis": [
+        "ed",
         "icu"
       ]
     },
@@ -9891,6 +9975,45 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/critical-care/toxidromes-and-overdoses",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "transplant-rejection-graft-dysfunction",
+      "title": "Transplant Rejection & Graft Dysfunction",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "transplant",
+        "rejection",
+        "graft dysfunction",
+        "immunosuppression",
+        "tacrolimus",
+        "kidney transplant",
+        "liver transplant",
+        "heart transplant",
+        "lung transplant",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "rejection, infection and drug toxicity all present as a sick transplant patient with a failing graft",
+        "get a calcineurin inhibitor trough on every transplant patient who is unwell",
+        "a transplanted heart is denervated — no angina, and atropine will not work",
+        "lung has the highest rejection rate; a fall in home spirometry is the earliest sign",
+        "non-adherence and a new interacting drug are the two commonest precipitants",
+        "never adjust immunosuppression without the transplant team",
+        "acute rejection",
+        "graft dysfunction",
+        "transplant rejection",
+        "allograft rejection",
+        "antibody-mediated rejection",
+        "transplant emergency"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/transplant-rejection-graft-dysfunction",
       "settingEmphasis": [
         "ed",
         "icu"

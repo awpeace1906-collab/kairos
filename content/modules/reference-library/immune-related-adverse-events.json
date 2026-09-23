@@ -1,0 +1,197 @@
+{
+  "id": "immune-related-adverse-events",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Immune-Related Adverse Events (irAE)",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "irAE",
+    "immune related adverse events",
+    "checkpoint inhibitor toxicity",
+    "immunotherapy toxicity",
+    "ICI toxicity",
+    "pembrolizumab nivolumab ipilimumab toxicity"
+  ],
+  "tags": [
+    "irAE",
+    "checkpoint inhibitor",
+    "immunotherapy",
+    "myocarditis",
+    "colitis",
+    "hypophysitis",
+    "pneumonitis",
+    "steroids",
+    "oncologic emergency",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "any new symptom in a patient on a checkpoint inhibitor is an irAE until proven otherwise",
+    "ICI myocarditis is about 1% but kills 40-50% — send a troponin on anyone with chest symptoms",
+    "hypophysitis presents as fatigue and hyponatremia, and the adrenal insufficiency is the part that kills",
+    "grade 2 usually means hold the drug and start steroids; grade 3-4 means admit and 1-2 mg/kg methylprednisolone",
+    "a toxicity can appear weeks to months after the last dose — 'off treatment' does not mean off the hook",
+    "do not treat ICI colitis as infectious gastroenteritis and send them home"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-23",
+  "next_review_due": "2027-03-23",
+  "review_tier": 2,
+  "sources": [
+    "Schneider BJ, Naidoo J, Santomasso BD, et al. Management of immune-related adverse events in patients treated with immune checkpoint inhibitor therapy: ASCO guideline update. J Clin Oncol. 2021;39(36):4073-4126.",
+    "Thompson JA, Schneider BJ, Brahmer J, et al. NCCN Guidelines Insights: Management of Immunotherapy-Related Toxicities, Version 2.2024. J Natl Compr Canc Netw. 2024;22(9):582-592.",
+    "Salem JE, Manouchehri A, Moey M, et al. Cardiovascular toxicities associated with immune checkpoint inhibitors: an observational, retrospective, pharmacovigilance study. Lancet Oncol. 2018;19(12):1579-1589 (myocarditis mortality approaching 50%; onset around 30 days).",
+    "Mahmood SS, Fradley MG, Cohen JV, et al. Myocarditis in patients treated with immune checkpoint inhibitors. J Am Coll Cardiol. 2018;71(16):1755-1764.",
+    "Brahmer JR, Abu-Sbeih H, Ascierto PA, et al. Society for Immunotherapy of Cancer (SITC) clinical practice guideline on immune checkpoint inhibitor-related adverse events. J Immunother Cancer. 2021;9(6):e002435."
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-23",
+      "change": "New. Checkpoint inhibitors are common enough that their toxicities now present to general ED and ICU teams rather than to oncology, and the guide had nothing on them. Cross-linked to the biologic-drug-nomenclature card built in the same batch, which is what lets a reader work out that the unfamiliar drug on the list is an immunotherapy at all."
+    }
+  ],
+  "summary": "Checkpoint inhibitor toxicity for the non-oncologist: how to recognize it, which ones kill, and what to do before the oncologist calls back.",
+  "whyThisMatters": "Checkpoint inhibitors are now used across most solid tumors, and their toxicities arrive in the ED and the ICU rather than in the infusion suite. They are autoimmune inflammation of any organ, they do not respect the timeline of chemotherapy toxicity, and they are routinely misread as the ordinary thing they resemble — colitis as gastroenteritis, myocarditis as an NSTEMI, hypophysitis as deconditioning. Two facts should change your threshold: myocarditis occurs in roughly 1% but kills 40-50%, and adrenal crisis from hypophysitis is a same-visit death that a dose of hydrocortisone prevents. The treatment is usually steroids, which is the opposite of what you would do for the infection these presentations mimic — so getting the direction right matters more than getting the grade exactly right.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "First: is this patient on one?"
+    },
+    {
+      "type": "text",
+      "text": "The drug list is the diagnosis. Checkpoint inhibitors are antibodies and mostly end in -mab; if the name is unfamiliar, the name itself will usually tell you it is an antibody and often that it is an oncology one."
+    },
+    {
+      "type": "list",
+      "items": [
+        "PD-1: pembrolizumab, nivolumab, cemiplimab, dostarlimab.",
+        "PD-L1: atezolizumab, durvalumab, avelumab.",
+        "CTLA-4: ipilimumab, tremelimumab. Higher toxicity rates, and combination CTLA-4 plus PD-1 is the highest of all.",
+        "LAG-3: relatlimab, usually combined with nivolumab.",
+        "Also worth recognizing as a different problem with overlapping presentations: CAR-T and bispecific engagers cause cytokine release syndrome and neurotoxicity rather than classic irAEs, and are managed differently."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Timing does not exclude it. Most irAEs appear within weeks to a few months of starting, but they can begin after a single dose and can present MONTHS after the last one — the drug's effect on the immune system outlasts the drug. \"They stopped immunotherapy in March\" is not reassurance."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The ones that kill, in the order you should think of them"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Toxicity",
+        "What it looks like",
+        "The move"
+      ],
+      "rows": [
+        [
+          "MYOCARDITIS",
+          "Chest pain, dyspnea, palpitations, syncope, arrhythmia, or just a troponin someone sent. Typically around a month in. ECG abnormal in most — conduction block is characteristic and can progress to complete heart block.",
+          "Troponin and ECG on ANY cardiac symptom. Roughly 1% incidence but 40-50% mortality. Admit, telemetry, cardiology and oncology now, high-dose methylprednisolone (commonly 1,000 mg daily) without waiting for biopsy. Normal ejection fraction does NOT exclude it."
+        ],
+        [
+          "ADRENAL CRISIS from hypophysitis or adrenalitis",
+          "Fatigue, headache, nausea, hypotension, hyponatremia, hypoglycemia. Easily read as progression of cancer or as deconditioning.",
+          "Hydrocortisone before the cortisol result if the patient is unwell — a stress dose costs nothing and the alternative is a preventable death. Send a morning cortisol, ACTH, TSH with free T4. CTLA-4 agents cause hypophysitis more than PD-1 agents."
+        ],
+        [
+          "PNEUMONITIS",
+          "Dry cough, dyspnea, hypoxia, new infiltrates. Indistinguishable from infection on presentation, and the two coexist.",
+          "CT chest. Cover for infection AND start steroids for anything beyond mild; do not make the patient wait for a negative workup. Grade 2 or worse is an admission."
+        ],
+        [
+          "COLITIS",
+          "Diarrhea, cramping, blood or mucus. The most common serious irAE, especially with CTLA-4.",
+          "Count the stools above baseline — that is the grading. Rule out C. difficile and infection, but do not treat as gastroenteritis and discharge. Perforation is the feared endpoint."
+        ],
+        [
+          "HEPATITIS",
+          "Transaminitis, usually asymptomatic and found on labs.",
+          "LFTs. Exclude viral, biliary and drug causes, then steroids by grade. Infliximab is NOT used here (hepatotoxicity) — mycophenolate is the usual second line."
+        ],
+        [
+          "NEUROLOGIC — myasthenia-like syndrome, Guillain-Barré, encephalitis",
+          "Weakness, ptosis, diplopia, dysphagia, ascending weakness, confusion.",
+          "Myasthenia-like irAE overlaps with myocarditis and myositis as a lethal triad — if you find one, look for the other two. Respiratory monitoring, neurology, admit."
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "The myocarditis-myositis-myasthenia overlap is the pattern most often missed. A patient with new weakness and a raised CK who also has a raised troponin is not having two problems — send troponin, CK and an ECG together, and treat as high risk."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Grading, roughly, because it drives the decision"
+    },
+    {
+      "type": "text",
+      "text": "Formal grading is CTCAE and organ-specific, but the shape is consistent enough to act on before anyone opens the guideline."
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Grade 1 — mild, asymptomatic or minimal symptoms.",
+          "items": [
+            "Usually continue the drug with closer monitoring. Not an ED problem, but document and tell the oncology team."
+          ]
+        },
+        {
+          "text": "Grade 2 — moderate, limiting instrumental activities.",
+          "items": [
+            "Hold the checkpoint inhibitor.",
+            "Prednisone 0.5-1 mg/kg/day, or the equivalent, for most organ systems.",
+            "Usually outpatient with oncology follow-up arranged within days — but endocrine and cardiac toxicity are exceptions and get admitted."
+          ]
+        },
+        {
+          "text": "Grade 3-4 — severe or life-threatening.",
+          "items": [
+            "Hold the drug; for most grade 4 toxicity it is stopped permanently.",
+            "Methylprednisolone 1-2 mg/kg/day IV, and 1,000 mg daily for myocarditis or other fulminant presentations.",
+            "Admit. Specialty consult for the affected organ plus oncology.",
+            "If no response in 48-72 hours, second-line immunosuppression — infliximab for colitis, mycophenolate for hepatitis, and organ-specific agents elsewhere. That decision belongs to oncology, but knowing the clock is 48-72 hours tells you when to escalate."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "Endocrine irAEs are the exception to the whole framework. Hypothyroidism, type 1 diabetes and adrenal insufficiency are usually permanent, are treated with hormone replacement rather than immunosuppression, and generally do NOT require stopping the checkpoint inhibitor. Do not start high-dose steroids for a TSH."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What to do in the ED before anyone calls back"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Ask what they are on and when the last dose was — then believe the drug list over the timeline.",
+        "Troponin and ECG for any cardiac, respiratory or neuromuscular symptom. This is the single highest-yield reflex on this card.",
+        "Basic labs including sodium, glucose, LFTs, TSH and a cortisol if there is any suggestion of endocrine involvement.",
+        "Work up infection in parallel, always. irAE and infection present identically, the patient may already be on steroids, and the answer is often both.",
+        "Start steroids when the presentation is serious rather than waiting for confirmation — but send the cultures first.",
+        "Call oncology. If the patient is in a trial, the trial team needs to know today.",
+        "Prophylaxis if steroids will run beyond about four weeks: PJP prophylaxis, and consider gastric and bone protection."
+      ]
+    }
+  ],
+  "clinicalTakeaway": "In any patient on a checkpoint inhibitor, treat a new symptom as an irAE until proven otherwise, and send a troponin with an ECG if there is anything cardiac, respiratory or neuromuscular about it — myocarditis is uncommon and lethal, and the test is cheap. Hold the drug and start steroids for grade 2 and above, admit grade 3-4 on methylprednisolone 1-2 mg/kg, work up infection in parallel rather than instead, and give stress-dose hydrocortisone to anyone unwell enough that adrenal insufficiency is on the list. Endocrine toxicity is the exception: replace the hormone, do not immunosuppress.",
+  "buildNote": "New 2026-09-23. Written for the non-oncologist, since that is who actually receives these patients. Ordered by lethality rather than by frequency or by organ system, because the card's job is to make the reader send a troponin. Deliberately gives approximate grading rather than reproducing CTCAE tables — the ED decision is hold/steroid/admit, and a reader who needs the exact grade has time to open NCCN. Three things are called out because they are the documented misses: the myocarditis-myositis-myasthenia overlap, the months-after-the-last-dose timing, and endocrine toxicity being the exception to the steroid reflex. Cross-links to biologic-drug-nomenclature, which is what lets a reader identify an unfamiliar -mab as an immunotherapy in the first place."
+}

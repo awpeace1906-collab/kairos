@@ -31,7 +31,7 @@
     "ICU"
   ],
   "contentType": "reference",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-01",
   "next_review_due": "2026-12-01",
   "review_tier": 2,
@@ -39,7 +39,8 @@
     "Critical Vector — POCUS Master Guide (original content, 18 sections)",
     "SCCM 2024 critical-care ultrasound recommendations",
     "2025 lung-ultrasound pneumothorax algorithm",
-    "Jain A. FIND / DE-SELECT / CONTROL — a conceptual POCUS framework for antibiotic decisions (Life on the Frontline); reviewed in The Critical Vector (unvalidated framework)"
+    "Jain A. FIND / DE-SELECT / CONTROL — a conceptual POCUS framework for antibiotic decisions (Life on the Frontline); reviewed in The Critical Vector (unvalidated framework)",
+    "Rudski LG, Lai WW, Afilalo J, et al. Guidelines for the echocardiographic assessment of the right heart in adults: a report from the American Society of Echocardiography. J Am Soc Echocardiogr. 2010;23(7):685-713 (TAPSE technique and the 17 mm threshold)."
   ],
   "changelog": [
     {
@@ -56,6 +57,11 @@
       "version": 1,
       "date": "2026-09-01",
       "change": "Initial stub — probe/exam table only."
+    },
+    {
+      "version": 4,
+      "date": "2026-09-23",
+      "change": "Added TAPSE with its acquisition technique (apical 4-chamber, M-mode through the lateral tricuspid annulus, <17 mm cutoff, angle dependence) as a nested sub-list under RV assessment, and qualified McConnell's sign — v3 called it 'specific for acute PE', which overstates it, since RV infarction and other acute RV pressure loads produce the same pattern."
     }
   ],
   "summary": "Probe and view selection by clinical question, with the diagnostic anchors for each focused exam. Answers focused binary questions — not a substitute for a comprehensive study.",
@@ -84,7 +90,23 @@
       "items": [
         "Views: parasternal long (PLAX), parasternal short, apical 4-chamber (A4C), subcostal 4-chamber (SC4C) + IVC.",
         "EF gestalt — visual: normal / mildly reduced / moderately reduced / severely reduced. EPSS (E-point septal separation) > 7 mm suggests a reduced EF; > 13 mm is markedly reduced.",
-        "RV assessment — RV:LV end-diastolic diameter > 1 (apical) or a D-shaped septum = RV pressure/volume overload; with hypotension + this pattern, think acute PE. McConnell's sign (RV free-wall akinesis with apical sparing) is specific for acute PE.",
+        {
+          "text": "RV assessment — RV:LV end-diastolic diameter > 1 (apical 4-chamber) or a D-shaped septum means RV pressure/volume overload; with hypotension and this pattern, think acute PE.",
+          "items": [
+            "McConnell's sign — RV free-wall akinesis with preserved apical contraction. Specific for acute PE but NOT pathognomonic: it also appears in RV infarction and other acute RV pressure loads, so read it with the clinical picture rather than as a diagnosis on its own.",
+            {
+              "text": "TAPSE — the quantitative companion to the eyeball assessment, and the one RV number a non-cardiologist can reliably obtain.",
+              "ordered": true,
+              "items": [
+                "Apical 4-chamber view. Sweep until the RV free wall is open and the apex is not foreshortened.",
+                "Put the M-mode cursor through the LATERAL tricuspid annulus, as parallel to its motion as you can get it — TAPSE is angle-dependent and an off-axis cursor under-reads it.",
+                "Measure the total vertical excursion of the annulus from end-diastole to end-systole.",
+                "Under 17 mm suggests RV systolic dysfunction. It measures one wall in one direction, so it can read normal in regional dysfunction and falls after cardiac surgery without the RV actually failing."
+              ]
+            },
+            "Both are single findings, not a workup. An RV that looks bad on POCUS tells you where to go next; it does not tell you whether to thrombolyse."
+          ]
+        },
         "Pericardial effusion — anechoic stripe that tracks circumferentially and moves with the heart (vs. pleural effusion, which sits posterior to the descending aorta on PLAX).",
         "Tamponade — physiology, not size: diastolic RV collapse, systolic RA collapse, a plethoric non-collapsing IVC, and respirophasic mitral/tricuspid inflow variation."
       ]
