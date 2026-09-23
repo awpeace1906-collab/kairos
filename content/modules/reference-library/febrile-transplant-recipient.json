@@ -1,0 +1,553 @@
+{
+  "id": "febrile-transplant-recipient",
+  "section": "Reference Library",
+  "category": "Infectious Disease & Immunization",
+  "title": "The Febrile Transplant Recipient",
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "fever in transplant patient",
+    "post-transplant infection",
+    "transplant infection timeline",
+    "immunocompromised fever",
+    "solid organ transplant fever"
+  ],
+  "tags": [
+    "transplant",
+    "fever",
+    "infection",
+    "immunosuppression",
+    "CMV",
+    "opportunistic infection",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "infection timeline after solid organ transplant",
+    "bacteria caused 63% of first-year infections and predominated throughout — CMV 6%, Aspergillus 1.4%",
+    "the timeline is a differential prompt, not a probability ranking",
+    "prophylaxis delays rather than prevents — late CMV appears when prophylaxis stops",
+    "net state of immunosuppression",
+    "fever may be blunted or absent on steroids and mTOR inhibitors"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-23",
+  "next_review_due": "2027-03-23",
+  "review_tier": 2,
+  "sources": [
+    "Fishman JA. Infection in organ transplantation. Am J Transplant. 2017;17(4):856-879 (the updated successor to the 2007 NEJM timeline; net state of immunosuppression; prophylaxis delays rather than prevents disease).",
+    "van Delden C, Stampf S, Hirsch HH, et al. Burden and timeline of infectious diseases in the first year after solid organ transplantation in the Swiss Transplant Cohort Study. Clin Infect Dis. 2020;71(7):e159-e169 (2,761 recipients: 55% infected, bacteria 63% and predominant throughout, CMV 6%, Aspergillus fumigatus 1.4%).",
+    "Fishman JA. Introduction: infection in solid organ transplant recipients. Am J Transplant. 2009;9(Suppl 4):S3-S6.",
+    "American Society of Transplantation Infectious Diseases Community of Practice. Guidelines, 4th edition. Clin Transplant. 2019;33(9) (special issue: donor-derived infection, surgical site infection, safe living).",
+    "van Delden C, et al. The Swiss Transplant Cohort Study: implications for transplant infectious diseases research. Transpl Infect Dis. 2025."
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-23",
+      "change": "New. Built around the classic three-period timeline but deliberately reframed after checking it against current data: the Swiss Transplant Cohort Study shows bacteria predominating throughout the first year in the prophylaxis era, with the classic opportunists now rare. A card that presented the periods as a probability ranking would send readers hunting CMV while the patient has a line infection."
+    }
+  ],
+  "summary": "Fever in a solid organ transplant recipient: what the time since transplant does and does not tell you, and what to do in the first hour.",
+  "whyThisMatters": "Transplant recipients present to the ED and ICU like anyone else, and the reflex is to reach for the timeline learned in training and start thinking about opportunistic infection. In the current prophylaxis era that reflex is roughly backwards: the classic opportunists have become rare and ordinary bacteria have not. The timeline is still worth knowing — it is the best tool for deciding what ELSE to consider — but treating it as a ranking of likelihood delays the bacterial workup that will actually find the problem. The other thing that kills here is the blunted presentation: immunosuppression removes the signs you are used to using, so a transplant recipient who looks only mildly unwell can be septic.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The timeline"
+    },
+    {
+      "type": "text",
+      "text": "Three periods, defined by what the immune system is doing and what the patient has been exposed to. Read the bar running underneath them before you read the bands."
+    },
+    {
+      "type": "diagram",
+      "diagram": {
+        "title": "Infection after solid organ transplant, by time since surgery",
+        "caption": "The periods are a differential prompt, not a probability ranking. In the Swiss Transplant Cohort Study, bacteria caused 63% of first-year infections and predominated throughout, while CMV was 6% and Aspergillus 1.4% — so the first move on a febrile recipient at almost any timepoint is a bacterial workup.",
+        "viewBox": [
+          0,
+          0,
+          420,
+          252
+        ],
+        "shapes": [
+          {
+            "kind": "rect",
+            "at": [
+              40,
+              46
+            ],
+            "size": [
+              100,
+              96
+            ],
+            "fill": "muscle",
+            "opacity": 0.18,
+            "stroke": "outline",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "rect",
+            "at": [
+              142,
+              46
+            ],
+            "size": [
+              123,
+              96
+            ],
+            "fill": "vessel",
+            "opacity": 0.18,
+            "stroke": "outline",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "rect",
+            "at": [
+              267,
+              46
+            ],
+            "size": [
+              123,
+              96
+            ],
+            "fill": "good",
+            "opacity": 0.15,
+            "stroke": "outline",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "text",
+            "at": [
+              90,
+              62
+            ],
+            "text": "< 1 month",
+            "fontSize": 11,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              203,
+              62
+            ],
+            "text": "1 – 6 months",
+            "fontSize": 11,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              328,
+              62
+            ],
+            "text": "> 6 months",
+            "fontSize": 11,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              90,
+              82
+            ],
+            "text": "surgical site",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              90,
+              95
+            ],
+            "text": "catheter / line",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              90,
+              108
+            ],
+            "text": "aspiration",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              90,
+              121
+            ],
+            "text": "donor-derived",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              203,
+              82
+            ],
+            "text": "CMV, herpesviruses",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              203,
+              95
+            ],
+            "text": "BK virus, Listeria",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              203,
+              108
+            ],
+            "text": "PJP, Nocardia",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              203,
+              121
+            ],
+            "text": "Aspergillus, Candida",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              328,
+              82
+            ],
+            "text": "community-acquired",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              328,
+              95
+            ],
+            "text": "pneumonia, UTI",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              328,
+              108
+            ],
+            "text": "chronic / recurrent CMV",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              328,
+              121
+            ],
+            "text": "late Aspergillus",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              40,
+              152
+            ],
+            "size": [
+              350,
+              22
+            ],
+            "fill": "danger",
+            "opacity": 0.18,
+            "stroke": "danger",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "text",
+            "at": [
+              215,
+              167
+            ],
+            "text": "BACTERIA — 63%, at every point in year one",
+            "fontSize": 9.5,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "danger"
+          },
+          {
+            "kind": "line",
+            "from": [
+              40,
+              190
+            ],
+            "to": [
+              390,
+              190
+            ],
+            "stroke": "outline",
+            "strokeWidth": 1.5
+          },
+          {
+            "kind": "line",
+            "from": [
+              40,
+              186
+            ],
+            "to": [
+              40,
+              194
+            ],
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "line",
+            "from": [
+              141,
+              186
+            ],
+            "to": [
+              141,
+              194
+            ],
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "line",
+            "from": [
+              266,
+              186
+            ],
+            "to": [
+              266,
+              194
+            ],
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "line",
+            "from": [
+              390,
+              186
+            ],
+            "to": [
+              390,
+              194
+            ],
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "text",
+            "at": [
+              40,
+              206
+            ],
+            "text": "transplant",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              141,
+              206
+            ],
+            "text": "1 mo",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              266,
+              206
+            ],
+            "text": "6 mo",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              390,
+              206
+            ],
+            "text": "1 yr",
+            "fontSize": 8.5,
+            "anchor": "end",
+            "fill": "muted"
+          },
+          {
+            "kind": "arrow",
+            "from": [
+              40,
+              226
+            ],
+            "to": [
+              300,
+              226
+            ],
+            "stroke": "accent",
+            "strokeWidth": 1.5,
+            "dash": true
+          },
+          {
+            "kind": "text",
+            "at": [
+              40,
+              240
+            ],
+            "text": "prophylaxis delays disease — late CMV appears when it stops",
+            "fontSize": 8.5,
+            "fill": "accent"
+          }
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "The single most useful correction to the classic teaching: in the Swiss Transplant Cohort Study, 55% of 2,761 recipients had an infection in the first year, bacteria caused 63% of the 3,520 events and predominated at every point, and Enterobacteriaceae alone were 54% of those. CMV was 6%. Aspergillus fumigatus was 1.4%. Work up the bacteria first, at any timepoint."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What each period actually means"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Under 1 month — this is a surgical and hospital problem, not an immunologic one. The graft is new but the immunosuppression has not yet had time to produce opportunistic disease.",
+          "items": [
+            "Surgical site and deep space infection at the operative bed — which organ was transplanted tells you where to look.",
+            "Line and catheter infection, aspiration pneumonia, Clostridioides difficile, urinary tract infection.",
+            "Donor-derived infection — uncommon but this is when it appears, and it is the one that will not be on anyone's list unless you say it out loud.",
+            "Anything the recipient was already carrying before surgery, now unmasked."
+          ]
+        },
+        {
+          "text": "1 to 6 months — the classic opportunistic window, and the one prophylaxis has most changed.",
+          "items": [
+            "CMV is the headline, along with the other herpesviruses; EBV and post-transplant lymphoproliferative disorder belong here too.",
+            "BK virus, Listeria, Nocardia, Pneumocystis jirovecii, Toxoplasma, and the endemic fungi.",
+            "Aspergillus and Candida — Candida especially in liver recipients, where it comes from the gut.",
+            "But note what prophylaxis has done: with valganciclovir and trimethoprim-sulfamethoxazole in place, much of this is suppressed rather than prevented, and reappears at the end of the course."
+          ]
+        },
+        {
+          "text": "Beyond 6 months — mostly community-acquired, with two tails.",
+          "items": [
+            "Community-acquired pneumonia, urinary tract infection, respiratory viruses — the same things as everyone else, with less reserve.",
+            "Chronic or recurrent CMV, and late CMV disease appearing after prophylaxis stops.",
+            "Late invasive fungal disease, particularly in patients who needed augmented immunosuppression for rejection."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The thing the timeline does not capture: net state of immunosuppression"
+    },
+    {
+      "type": "text",
+      "text": "Two patients at the same timepoint can be in completely different risk states. The timeline is the x-axis; this is the y-axis, and it is the one that actually moves."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Recent treatment for rejection — pulse steroids, thymoglobulin, rituximab — resets the clock. A patient 3 years out who was treated for rejection last month is epidemiologically back in the early opportunistic window.",
+        "Neutropenia, lymphopenia, and hypogammaglobulinemia from the regimen itself.",
+        "Uncontrolled diabetes, uremia, malnutrition, and graft dysfunction.",
+        "Immunomodulating viruses in their own right — CMV, EBV, HHV-6 — which deepen the immunosuppression they complicate.",
+        "Epidemiologic exposure: travel, occupation, pets, gardening, construction near the hospital, a sick household contact. Ask, because the risk is exposure multiplied by suppression, not suppression alone.",
+        "Breaches of anatomic barriers: lines, stents, drains, and the anastomosis itself."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "First hour in the ED or ICU"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "Assume the presentation is blunted.",
+          "items": [
+            "Steroids and mTOR inhibitors suppress fever, and a transplant recipient with a low-grade temperature and mild tachycardia may be profoundly septic.",
+            "Absent peritonism does not exclude an intra-abdominal catastrophe in a patient on steroids.",
+            "Conversely, fever is not always infection — rejection, drug fever, and PTLD all present this way."
+          ]
+        },
+        {
+          "text": "Cultures before antibiotics, but antibiotics without delay.",
+          "items": [
+            "Blood cultures from a peripheral site AND from every lumen of any indwelling line.",
+            "Urine, sputum, and anything from the operative bed or a drain.",
+            "Broad-spectrum empiric cover per your local antibiogram, weighted to the period and the organ transplanted — then narrow."
+          ]
+        },
+        "Imaging early and with a low threshold: chest CT rather than plain film where there is any respiratory symptom, because the immunosuppressed chest radiograph is unreliable and often lags.",
+        "CMV PCR, and a review of what prophylaxis the patient is on, has finished, or has quietly stopped taking. When prophylaxis ended is a date worth chasing.",
+        "Review the immunosuppressive regimen, recent levels, and any recent rejection treatment — and check for interactions before you add anything, since azoles and macrolides will send calcineurin inhibitor levels through the roof.",
+        "Call the transplant team early. Not for permission — for the history that is not in your chart: induction agent, rejection episodes, donor serostatus, prior colonization, and what happened last time."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "danger",
+      "text": "Do not reduce or stop immunosuppression on your own. It is sometimes the right move in overwhelming infection, and it is always a transplant-team decision — getting it wrong costs the graft."
+    }
+  ],
+  "clinicalTakeaway": "Work up bacteria first, whatever the timepoint — they cause the majority of infections throughout the first year and the classic opportunists no longer do. Use the timeline to decide what else belongs on the differential, and adjust it for the net state of immunosuppression rather than the calendar: recent rejection treatment resets the clock. Cultures from every lumen, early cross-sectional imaging, and a call to the transplant team before you change any immunosuppression.",
+  "buildNote": "Built 2026-09-23. The structure is the classic Fishman three-period timeline, but the framing is deliberately changed on the strength of the Swiss Transplant Cohort Study: the diagram carries a full-width 'bacteria, 63%, at every point' bar underneath the period bands so the caveat is read before the bands are, and the first callout states the numbers. A lecture-slide version of this table used a 1-3 / 3-6 month split and put opportunistic infection as 'most likely' in the early window; that is reconciled here to the canonical <1 / 1-6 / >6 month periods with the prophylaxis effect shown as an arrow rather than described. Deliberately does not duplicate empiric-antibiotics-ed-icu — this card says which organisms to think about and when, and hands off for agent selection."
+}

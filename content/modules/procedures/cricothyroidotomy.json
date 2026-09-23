@@ -1,19 +1,22 @@
 {
   "id": "cricothyroidotomy",
   "section": "Procedures",
-  "category": "Airway & Sedation Workflows",
-  "title": "Emergency Cricothyroidotomy (Surgical Airway)",
+  "category": "CICO & Front-of-Neck Access",
+  "title": "Scalpel–Finger–Bougie Cricothyroidotomy",
   "settingEmphasis": [
     "ed",
     "or",
     "icu"
   ],
   "aliases": [
+    "cricothyroidotomy",
+    "cricothyrotomy",
     "surgical airway",
-    "cric",
-    "front-of-neck access",
-    "FONA",
-    "scalpel-finger-bougie"
+    "scalpel bougie",
+    "scalpel-finger-bougie",
+    "eFONA",
+    "front of neck access",
+    "FONA"
   ],
   "tags": [
     "cricothyroidotomy",
@@ -33,14 +36,17 @@
     "confirm with quantitative waveform capnography like any other airway"
   ],
   "contentType": "procedure",
-  "content_version": 2,
-  "last_reviewed": "2026-09-15",
-  "next_review_due": "2026-12-15",
+  "content_version": 3,
+  "last_reviewed": "2026-09-21",
+  "next_review_due": "2026-12-21",
   "review_tier": 1,
   "sources": [
+    "Ahmad I, El-Boghdadly K, Bhagrath R, et al. Difficult Airway Society 2025 guidelines for management of unanticipated difficult tracheal intubation in adults. Br J Anaesth. 2026;136(2):283-307 (vertical incision standardized for all necks; scalpel-bougie-tube; 3+1 / 3 / 2-person attempt ladder).",
+    "Frerk C, Mitchell VS, McNarry AF, et al. Difficult Airway Society 2015 guidelines for management of unanticipated difficult intubation in adults. Br J Anaesth. 2015;115(6):827-848 (the superseded palpable/impalpable fork).",
+    "Cook TM, Woodall N, Frerk C. Major complications of airway management in the UK: 4th National Audit Project (NAP4). Br J Anaesth. 2011;106(5):617-631 (cannula cricothyroidotomy failed in roughly 60% of cases; surgical technique was near-uniformly successful).",
+    "Whatling J, et al. Adult front of neck airway: a narrative review. J Oral Maxillofac Anesth. 2024 (equipment rationale, complication profile, eFONA incidence ~1 in 50,000 UK general anesthetics).",
     "Hill C, et al. Emergency surgical cricothyroidotomy: 24 case series and analysis of technique. J Emerg Med. 2018.",
-    "Brown CA, et al. Cricothyrotomy. In: The Walls Manual of Emergency Airway Management, 6th ed.",
-    "Difficult Airway Society (DAS) 2015 Guidelines for management of unanticipated difficult intubation."
+    "Brown CA, et al. Cricothyrotomy. In: The Walls Manual of Emergency Airway Management, 6th ed."
   ],
   "changelog": [
     {
@@ -52,23 +58,43 @@
       "version": 1,
       "date": "2026-09-15",
       "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). Previously only referenced as the terminal endpoint within the difficult-airway algorithm module without its own step-by-step procedure card, unlike other Procedures-section content of comparable acuity (central line, tube thoracostomy)."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-21",
+      "change": "Rebuilt against DAS 2025 (Br J Anaesth 2026;136:283-307) and moved into the new CICO & Front-of-Neck Access category as the default adult technique. One substantive correction: v2 taught the DAS 2015 fork — stab incision if the membrane is palpable, vertical incision only if it is not. DAS 2025 deletes that fork and standardizes the midline vertical skin incision in EVERY neck, because palpation is unreliable even in good conditions and a decision point mid-crisis costs time. Equipment is now stated as a fixed set (size 10 blade, bougie, 6.0 cuffed tube) for the same reason. Added the attempt ladder that precedes the declaration, the laryngeal handshake, the ultrasound caveat, a dedicated impalpable-neck step, and an aftercare step."
     }
   ],
   "outputType": "workflow",
-  "purpose": "Step-by-step surgical airway technique (scalpel-finger-bougie) for the can't-intubate-can't-ventilate emergency, when the difficult airway algorithm has reached its terminal step.",
-  "entryPrompt": "This is the last step of the difficult airway algorithm — a genuine can't-intubate, can't-ventilate (CICO) emergency. Declare it early and commit to the technique fully rather than treating it as a last desperate improvisation.",
+  "purpose": "The default adult emergency front-of-neck airway: scalpel, finger, bougie, tube. Updated to DAS 2025, which standardizes a midline VERTICAL skin incision in every neck and removes the palpable-versus-impalpable decision that used to sit in the middle of the procedure.",
+  "entryPrompt": "The last step of the airway algorithm, and the one where hesitation is the main cause of death. Equipment is fixed so there is nothing to choose under pressure: a size 10 blade, a bougie, a 6.0 cuffed tube.",
   "nodes": [
     {
       "id": "declare",
       "type": "step",
-      "prompt": "1. Declare CICO and commit",
-      "body": "State out loud that this is a can't-intubate-can't-ventilate emergency and that you are proceeding to a surgical airway — this is a decision point the whole team needs to hear, not a private judgment call. Hesitation costs time the patient doesn't have; once declared, commit fully to the technique rather than oscillating back to repeated intubation attempts."
+      "prompt": "1 · Declare it out loud, and commit",
+      "body": "Say the words: \"This is CICO. I am doing a front-of-neck airway.\" It is a decision the whole team has to hear, not a private judgment — someone has to get the kit, someone has to stop the clock, and someone has to stop offering you another look with the laryngoscope.\n\nDAS 2025 puts a hard ceiling on what comes before this moment, and the ceiling is a limit, not a quota — if an attempt is not obviously going to work, move on early rather than using up the allowance.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Plan A — tracheal intubation, videolaryngoscope first-line, a maximum of 3 + 1 attempts (the +1 being a more experienced operator).",
+          "Plan B — second-generation supraglottic airway, up to 3 attempts.",
+          "Plan C — two-person face-mask ventilation with adjuncts and optimal positioning. Treat failure here as the trigger for Plan D, not as something to persist with.",
+          "Plan D — declare CICO and go to the neck."
+        ]
+      }
     },
     {
-      "id": "position-identify",
+      "id": "prepare",
       "type": "step",
-      "prompt": "2. Position and identify landmarks",
-      "body": "Extend the neck if there's no cervical spine concern (a pillow/roll under the shoulders helps). Stabilize the larynx with your non-dominant hand and identify the cricothyroid membrane by palpation — the depression between the thyroid cartilage (superior) and cricoid cartilage (inferior). If landmarks are difficult to palpate (obesity, edema, prior neck surgery), a generous vertical incision helps you find them by direct exposure rather than relying on palpation alone.",
+      "prompt": "2 · Fixed kit, fixed positions",
+      "body": "The equipment is deliberately not a choice. DAS 2025 standardizes it because choosing under pressure makes people slower and worse: a scalpel with a SIZE 10 BLADE, a bougie, and a SIZE 6.0 cuffed tracheal tube. Nothing else is required, and a dedicated cricothyroidotomy kit is not needed.\n\nExtend the neck unless the cervical spine forbids it — a roll or pillow under the shoulders drops the larynx into a usable position and, in women, measurably increases the height of the cricothyroid membrane. Keep oxygen flowing by whatever route is still working; a supraglottic airway left in place also improves membrane identification.\n\nStand on the patient's right if you are right-handed (left if left-handed), with the scalpel, bougie and tube laid out in the order you will pick them up."
+    },
+    {
+      "id": "identify",
+      "type": "step",
+      "prompt": "3 · Laryngeal handshake, then commit to the midline",
+      "body": "Stabilize the larynx with the non-dominant hand and use the LARYNGEAL HANDSHAKE: thumb and middle finger on the upper laryngeal cartilage, slide caudally to feel the thyroid laminae, then the cricoid ring, and identify the cricothyroid membrane as the soft depression between them.\n\nBe honest about how often this fails. Misidentification is common — most of all in women and in patients with obesity — and the handshake is no more successful than plain palpation in pooled data, only slower. THAT IS WHY DAS 2025 NO LONGER ASKS YOU TO DECIDE based on what you can feel. Palpate to orient yourself, then cut regardless.\n\nULTRASOUND: only if a machine is already at the bedside and someone present can use it. It is better than palpation for finding the membrane in difficult anatomy, and it is the right tool BEFORE induction in a patient whose neck you cannot read. It is not something to send for during a CICO.",
       "diagram": {
         "title": "Cricothyroid membrane — surface landmarks",
         "viewBox": [
@@ -340,44 +366,89 @@
     {
       "id": "incise",
       "type": "step",
-      "prompt": "3. Incise — vertical skin, horizontal membrane",
-      "body": "Make a vertical midline skin incision roughly 3-4 cm over the cricothyroid membrane (a vertical incision avoids major vessels better than a horizontal one and keeps your options open if landmarks shift). Then make a HORIZONTAL stab incision directly through the cricothyroid membrane itself, entering the airway."
+      "prompt": "4 · Vertical skin incision — in every neck",
+      "body": "Make a MIDLINE VERTICAL skin incision up to 8 cm long, cutting from caudad to cephalad (bottom to top). Go deep — through skin and subcutaneous tissue in one confident pass. Blood will obscure the field; that is expected and is not a reason to stop.\n\nTHIS IS THE CHANGE FROM DAS 2015, and it is worth knowing why you are doing it differently from how you may have been taught. The 2015 guideline asked you to choose: a transverse stab if you could feel the membrane, a vertical incision if you could not. DAS 2025 deletes the choice and makes vertical the standard for palpable and impalpable necks alike, for three reasons — palpation is unreliable even in controlled conditions, a decision point in the middle of a crisis slows you down, and a vertical incision exposes more of the airway either way. It also runs with the midline vessels rather than across them.\n\nThen make a TRANSVERSE stab through the cricothyroid membrane itself, rotate the blade so the sharp edge faces caudally, and hold it there. The size 10 blade is chosen to limit damage to the posterior tracheal wall."
+    },
+    {
+      "id": "impalpable",
+      "type": "step",
+      "prompt": "5 · If you still cannot find the membrane",
+      "body": "Obesity, hematoma, radiotherapy change, prior surgery, subcutaneous emphysema — these are the necks where people die, and the technique does not change, only the amount of work between skin and airway.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Extend the vertical incision to 8-10 cm. You are trading a scar for an airway.",
+          {
+            "text": "Put a finger in and dissect bluntly down the midline until you feel cartilage.",
+            "items": [
+              "Sweep laterally with the finger to retract tissue, not to explore — the airway is in the midline and staying in the midline is the whole discipline.",
+              "Identify a firm ring. If you cannot tell membrane from cartilage, a stab through the ring below is survivable; a stab lateral to the midline is not."
+            ]
+          },
+          "If the anatomy is truly unrecognizable and ENT or surgery is physically present, a surgical tracheotomy is the better operation — but only if they are in the room now."
+        ]
+      }
     },
     {
       "id": "finger",
       "type": "step",
-      "prompt": "4. Finger — hold the tract open and confirm placement",
-      "body": "Immediately after incising the membrane, insert the index finger of your non-dominant hand into the incision to hold the tract open, confirm you are in the trachea (not a false passage), and maintain your orientation while you set down the scalpel and pick up the bougie."
+      "prompt": "6 · Finger — hold the tract, keep your place",
+      "body": "The moment the membrane is open, put the index finger of the non-dominant hand into the incision. It does three jobs at once: it holds the tract open through tissue that wants to close, it confirms you are in the airway rather than a false passage, and it keeps your orientation while you put the scalpel down and pick up the bougie. Do not take it out until the bougie is in."
     },
     {
       "id": "bougie",
       "type": "step",
-      "prompt": "5. Bougie — railroad along your finger into the trachea",
-      "body": "Slide a bougie (ideally coude/angled-tip) along your finger, through the incision, and into the trachea, directing it caudally. Advance it roughly 10-15 cm — you may feel tracheal ring 'clicks' or hold-up at the carina/mainstem bronchus as confirmation of correct tracheal placement, though absence of this sensation doesn't necessarily mean failure."
+      "prompt": "7 · Bougie — railroad along your finger",
+      "body": "Slide the bougie along your finger, through the membrane, and into the trachea, angling caudally. A coudé (angled) tip helps it turn down rather than back. Advance roughly 10-15 cm.\n\nTracheal clicks over the rings, or hold-up at a distal bronchus, confirm you are in the airway. Their absence does not mean you have failed — in a bloody field with a short tract you often feel neither. Do not withdraw and start again on the strength of a missing click."
     },
     {
       "id": "tube",
       "type": "step",
-      "prompt": "6. Tube — railroad a 6.0 cuffed ETT over the bougie",
-      "body": "Thread a well-lubricated size 6.0 cuffed endotracheal tube over the bougie and advance it through the incision into the trachea (a standard adult cuffed ETT is the typical railroad target in this emergency technique — not a dedicated small-bore cricothyroidotomy-specific tube). Remove the bougie, inflate the cuff."
+      "prompt": "8 · Tube — a 6.0 cuffed tracheal tube",
+      "body": "Railroad a well-lubricated size 6.0 cuffed tracheal tube over the bougie, rotating it if it catches at the skin. It is a standard tracheal tube, not a dedicated small-bore cricothyroidotomy tube — a 6.0 has an external diameter around 8.8 mm, which sits snugly with the cuff up in both male and female tracheas.\n\nAdvance only far enough to get the cuff past the membrane. This is a short airway and a right mainstem intubation is easy. Remove the bougie, inflate the cuff, ventilate."
     },
     {
-      "id": "confirm-secure",
+      "id": "confirm",
       "type": "step",
-      "prompt": "7. Confirm and secure",
-      "body": "Confirm placement with quantitative waveform capnography — the same standard as any other airway, a surgical airway is not exempt from confirmation. Secure the tube well (this site is more prone to dislodgement than an oral ETT), and reassess ventilation/oxygenation. Obtain imaging and further airway/ENT evaluation once the patient is stabilized — this is an emergency bridge, and definitive airway management (including possible conversion to a formal tracheostomy) is a subsequent decision made once the immediate crisis has passed."
+      "prompt": "9 · Confirm the same way you would confirm any airway",
+      "body": "Quantitative waveform capnography. A surgical airway is not exempt from confirmation, and the most common reason an eFONA fails is that the device is in the wrong place rather than that the incision was wrong.\n\nSecure it deliberately — this site dislodges far more easily than an oral tube, and it is held by tissue that is now bleeding and swelling. Recheck after every move of the patient."
+    },
+    {
+      "id": "after",
+      "type": "step",
+      "prompt": "10 · Afterwards — it is a bridge, not a destination",
+      "body": "Nothing about the next few hours is optional.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Get ENT or surgery involved for definitive airway planning — conversion to a formal tracheostomy or a controlled oral tube is a decision for after the crisis, not during it.",
+          "Imaging for the complications this procedure causes: pneumothorax, subcutaneous emphysema, and esophageal or pharyngeal injury that can seed a mediastinal infection.",
+          "Document the attempt count at each plan, the time CICO was declared, the time the airway was secured, and what was found. This is how the next team knows what they are dealing with, and it is also how the unit learns.",
+          "Tell the patient and the family. Counsel about the longer-term risks — subglottic stenosis, tracheomalacia, tracheocutaneous fistula — and arrange follow-up.",
+          "Debrief the team. eFONA runs at roughly 1 in 50,000 general anesthetics; almost nobody gets a second one to learn from."
+        ]
+      }
     }
   ],
   "checklist": [
-    "CICO declared explicitly and the team committed to a surgical airway rather than repeated failed intubation attempts",
-    "Vertical skin incision, horizontal incision through the cricothyroid membrane itself",
-    "Finger used to hold the tract open and confirm tracheal placement before the scalpel is set down",
-    "Bougie railroaded through the finger-held tract, then a 6.0 cuffed ETT railroaded over the bougie",
-    "Placement confirmed with quantitative waveform capnography, tube secured, and further airway/ENT evaluation arranged once stabilized"
+    "CICO declared out loud, and the team told that repeated intubation attempts have stopped",
+    "Size 10 blade, bougie, 6.0 cuffed tube — the fixed set, nothing to choose",
+    "Neck extended if the cervical spine allows; oxygen still flowing by some route",
+    "Midline VERTICAL skin incision up to 8 cm, in this neck regardless of what you could palpate",
+    "Transverse stab through the membrane, blade rotated sharp-edge-caudally",
+    "Finger in the tract before the scalpel goes down, and kept there until the bougie is in",
+    "Bougie railroaded along the finger, tube railroaded over the bougie, advanced only past the cuff",
+    "Quantitative waveform capnography before anyone relaxes",
+    "Tube secured hard, and rechecked after every patient move",
+    "ENT/surgery engaged, imaging obtained, times and attempt counts documented, team debriefed"
   ],
   "crossLinks": [
+    "cico-declare-and-choose",
+    "cannula-cricothyroidotomy",
+    "seldinger-cricothyroidotomy",
+    "peds-front-of-neck-access",
     "airway-management-flow",
-    "physiologically-difficult-airway"
+    "anatomically-difficult-airway"
   ],
-  "buildNote": "workflow outputType. Scalpel-finger-bougie sequence and the 6.0 cuffed ETT railroad target WebSearch-verified against Walls Manual/EMCrit/First10EM procedural teaching, which converged consistently on this technique as the current emergency-medicine standard over older tracheal-hook or dedicated-cric-kit approaches. crossLinks id physiologically-difficult-airway assumed from prior batch naming — verify actual id at build time."
+  "buildNote": "v3, DAS 2025 rebuild, and the anchor module of the new CICO & Front-of-Neck Access category. The substantive correction is the incision: v2 taught the DAS 2015 palpable/impalpable fork, which DAS 2025 deletes in favor of a vertical incision in every neck. The card says so explicitly rather than quietly changing, because most readers were trained on the old fork and need to know they are not misremembering. Sub-steps use the `substeps` structure rather than prose bullets. The intercostal-style diagram is carried over from v2 unchanged — the anatomy did not change, only the incision doctrine."
 }

@@ -6,12 +6,12 @@ Living tracker. Two lists:
    or original content, existing Critical Vector / AnesCalc assets) before the
    affected content can be finalized.
 
-Last updated: 2026-09-21 — see the fresh-look audit entries in the Progress
+Last updated: 2026-09-23 — see the fresh-look audit entries in the Progress
 log below for current state. The **Progress log** further down is an
 append-only chronological record; trust it over any summary above it for
 "what happened when."
 
-## ▶ NEXT SESSION — start here (2026-09-21)
+## ▶ NEXT SESSION — start here (2026-09-23)
 State: **431 modules**, pipeline green (validate 431/0, build/sync/test
 281/0), iOS `TEST SUCCEEDED` (10/10 EngineTests). The original 2026-09-14
 content audit closed at Batch 5 (384 modules). The **fresh follow-up gap
@@ -239,6 +239,65 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-09-23 — **CICO subdivided into a category of five, and both requested
+  diagrams built.** 431 -> 437 modules.
+  - **New category: Procedures / CICO & Front-of-Neck Access.** CICO
+    previously existed only as one node inside `airway-management-flow` and
+    as the opening step of the cricothyroidotomy card; there was no place
+    that answered "which technique, for this patient", and three of the four
+    techniques had no coverage at all. Now five subsections:
+    `cico-declare-and-choose` (entry/decision — recognition, the attempt
+    ladder, role assignment, technique choice), `cricothyroidotomy`
+    (scalpel-finger-bougie, the adult default), `cannula-cricothyroidotomy`,
+    `seldinger-cricothyroidotomy`, and `peds-front-of-neck-access`
+    (cross-listed into Peds Resuscitation & Decision Support).
+  - **Two clinical corrections came out of the research, both against
+    current guidelines rather than the previous content.**
+    1. **DAS 2025 deletes the palpable/impalpable incision fork.**
+       `cricothyroidotomy` v2 taught DAS 2015: transverse stab if you can
+       feel the membrane, vertical incision only if you cannot. DAS 2025
+       (Br J Anaesth 2026;136:283-307) standardizes a midline VERTICAL skin
+       incision in EVERY neck, up to 8 cm, caudad to cephalad — because
+       palpation is unreliable even in controlled conditions, a decision
+       point mid-crisis costs time, and vertical exposes more either way.
+       Equipment is likewise fixed (size 10 blade, bougie, 6.0 cuffed tube)
+       on the explicit rationale that choice under pressure degrades
+       performance. The card states the change rather than quietly making
+       it, since most readers were trained on the old fork.
+    2. **Needle cricothyroidotomy is no longer acceptable in infants.** The
+       2024 ESAIC/BJA joint guidelines state that surgical cricothyroidotomy
+       AND percutaneous needle cricothyroidotomy are not suitable options in
+       neonates and infants — surgical tracheotomy is first-line. Roughly
+       1-8 years: surgical tracheotomy preferred where a trained operator is
+       present. 8 years and up: the adult technique. This contradicts the
+       needle-first teaching most clinicians received, so the peds card
+       leads with it.
+  - The cannula card is written as an honest appraisal rather than a neutral
+    how-to, with NAP4's roughly 60% failure rate and the 18% vs 83% porcine
+    rescue-oxygenation figures in a warning node up front — the technique's
+    main danger is being chosen for the wrong reason. Its exhalation /
+    barotrauma physiology gets a step of its own.
+  - **Diagram 1 — "Anatomy of a biologic's name"** in the new
+    `biologic-drug-nomenclature` reference module. Four labeled segments of
+    a real legacy name (tras + tu + zu + mab) over a second row showing the
+    species slot struck out, so the 2017 change is seen rather than read
+    about. Built from the primary WHO documents; the four slide errors
+    recorded in item 6 are corrected, and the card is framed as a legacy
+    decoder with a stated expiry date, per the user's call to keep it for
+    rough day-to-day identification.
+  - **Diagram 2 — post-transplant infection timeline** in the new
+    `febrile-transplant-recipient` reference module. Three period bands over
+    a full-width "BACTERIA — 63%, at every point in year one" bar, with a
+    dashed arrow for prophylaxis pushing disease later. The bar is the whole
+    point: the Swiss Transplant Cohort Study finding is what stops a reader
+    treating the periods as a probability ranking and hunting CMV while the
+    patient has a line infection.
+  - The new spelling guard earned itself: it caught four British spellings
+    in this batch's own freshly written prose (millilitres, centre, <!-- spelling-ok -->
+    millimetres, centimetres) before commit. <!-- spelling-ok -->
+  - Verified: validate 437/0, check-spelling clean, tools tests 286/0, and
+    both diagrams rasterized and inspected — no viewBox overflow, no label
+    collisions beyond same-paragraph line spacing.
 - 2026-09-21 — **American English became a pipeline rule; nested lists
   shipped; two research questions answered.** Four commits, all pushed.
   - **Spelling guard.** `tools/spelling.mjs` (rule table) +

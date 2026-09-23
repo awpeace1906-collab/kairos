@@ -1,0 +1,195 @@
+{
+  "id": "peds-front-of-neck-access",
+  "section": "Procedures",
+  "category": "CICO & Front-of-Neck Access",
+  "title": "Pediatric Front-of-Neck Access",
+  "settingEmphasis": [
+    "ed",
+    "or",
+    "icu"
+  ],
+  "audience": [
+    "peds",
+    "neonate"
+  ],
+  "aliases": [
+    "pediatric CICO",
+    "pediatric cricothyroidotomy",
+    "pediatric eFONA",
+    "child front of neck access",
+    "infant surgical airway",
+    "pediatric tracheotomy emergency"
+  ],
+  "tags": [
+    "pediatric CICO",
+    "pediatric front of neck access",
+    "needle cricothyroidotomy",
+    "surgical tracheotomy",
+    "difficult airway",
+    "ED",
+    "OR",
+    "ICU",
+    "peds"
+  ],
+  "keywords": [
+    "age changes the operation — this is not the adult card scaled down",
+    "neonates and infants: surgical tracheotomy is first-line; cricothyroidotomy and needle cricothyroidotomy are not suitable",
+    "roughly 1-8 years: surgical tracheotomy preferred where a trained operator is present",
+    "8 years and older: adult scalpel-bougie-tube with a vertical incision",
+    "children desaturate in seconds, not minutes — call for surgical help at the first failed plan, not at CICO"
+  ],
+  "crossListIn": [
+    {
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support"
+    }
+  ],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-23",
+  "next_review_due": "2026-12-23",
+  "review_tier": 1,
+  "sources": [
+    "Disma N, Asai T, Cools E, et al. Airway management in neonates and infants: European Society of Anaesthesiology and Intensive Care and British Journal of Anaesthesia joint guidelines. Br J Anaesth. 2024;132(1):124-144 (surgical tracheotomy first-line eFONA; surgical and needle cricothyroidotomy are not suitable options in neonates and infants).",
+    "Haag B, Lee JW, Kovatsis PG, et al. Emergency front-of-neck access in pediatric anesthesia: a narrative review. Paediatr Anaesth. 2024;34(10) (age-stratified technique choice).",
+    "Ahmad I, El-Boghdadly K, Bhagrath R, et al. Difficult Airway Society 2025 guidelines for management of unanticipated difficult tracheal intubation in adults. Br J Anaesth. 2026;136(2):283-307 (scalpel-bougie-tube with a vertical skin incision, applicable from roughly 8 years).",
+    "Stein ML, et al. A primer for pediatric emergency front-of-the-neck access. A A Pract. 2021;15(4):e01444.",
+    "Cook TM, Woodall N, Frerk C. Major complications of airway management in the UK: 4th National Audit Project (NAP4). Br J Anaesth. 2011;106(5):617-631."
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-23",
+      "change": "New — the pediatric subsection of the CICO & Front-of-Neck Access category. The guide previously handled pediatric CICO only as a section inside the peds-difficult-airway tool, which covers the wider algorithm but does not give the operator a procedure to follow. Built against the 2024 ESAIC/BJA neonatal-infant joint guidelines and the 2024 Paediatric Anaesthesia narrative review, both of which are more restrictive than the needle-cricothyroidotomy teaching most clinicians received."
+    }
+  ],
+  "outputType": "workflow",
+  "purpose": "Front-of-neck access in a child, where age — not operator preference — decides the operation. Includes what the 2024 guidelines now say about needle cricothyroidotomy in infants, which is not what most of us were taught.",
+  "entryPrompt": "This is not the adult card scaled down. Under roughly 8 years the cricothyroid membrane will not accept a tube, and in infants it is barely identifiable — so the operation itself changes, not just the equipment size.",
+  "nodes": [
+    {
+      "id": "age",
+      "type": "step",
+      "prompt": "1 · Age decides the operation",
+      "body": "Pick the row before you pick up anything. Getting this wrong wastes the only minutes you have on an operation the anatomy will not permit.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          {
+            "text": "NEONATES AND INFANTS (roughly under 1 year) — SURGICAL TRACHEOTOMY is first-line.",
+            "items": [
+              "The 2024 ESAIC/BJA joint guidelines state plainly that surgical cricothyroidotomy and percutaneous needle cricothyroidotomy are NOT suitable options in this group.",
+              "The cricothyroid membrane is a few millimeters tall and sits under a larynx that is high, soft, and mobile. There is no target.",
+              "If no surgical operator is available, a cannula is a desperate bridge for oxygenation only — see the cannula step below — while you get one."
+            ]
+          },
+          {
+            "text": "ROUGHLY 1 TO 8 YEARS — SURGICAL TRACHEOTOMY preferred where a trained operator (usually ENT) is present; percutaneous cricothyroidotomy if not.",
+            "items": [
+              "The membrane is still too small to take a tube reliably, and the larynx is still mobile and cartilaginous — it deforms under the scalpel rather than holding still.",
+              "This is the band where the answer genuinely depends on who is in the building, which is why the call for surgical help goes out early rather than at the moment of declaration."
+            ]
+          },
+          {
+            "text": "ROUGHLY 8 YEARS AND OLDER — the ADULT technique: scalpel, finger, bougie, tube.",
+            "items": [
+              "By this age the cricothyroid membrane will accept a small tracheal tube and the anatomy is close enough to adult to use the adult card.",
+              "DAS 2025's midline vertical skin incision applies. Consider a smaller tube than 6.0 in a small 8-year-old, sized to the child rather than the guideline."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "clock",
+      "type": "warning",
+      "prompt": "The clock is the real difference",
+      "body": "A child with a closed airway desaturates in seconds. The adult luxury of working through a ladder while the saturation drifts does not exist here, and every decision has to be made one step earlier than instinct suggests.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Call for ENT or surgical help at the FIRST failed plan, not at CICO. In a child they are part of Plan B, not a consequence of Plan D.",
+          "Bradycardia is the pre-arrest sign, not a late one. In a hypoxic child, a falling heart rate means you are out of time now.",
+          "Keep apneic oxygenation running throughout — nasal cannula flow does more in a small child than in an adult because the functional residual capacity it is topping up is proportionally smaller.",
+          "Say the age out loud when you declare. It is what tells the room which operation is coming."
+        ]
+      }
+    },
+    {
+      "id": "surgical",
+      "type": "step",
+      "prompt": "2 · Surgical tracheotomy — what the team around you is doing",
+      "body": "This is an ENT or surgical operation and this card does not teach you to do it. What it does is tell you what to set up so it happens fast, because the anesthetist or emergency physician usually controls everything except the incision.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Position: shoulder roll, neck extended, head stabilized in the midline. This matters more in a child than an adult — a rotated neck moves the trachea out of the midline by a proportionally larger distance.",
+          "Get the operating light, suction, and a small cuffed tracheal tube (as well as a tracheostomy tube) onto the field. A tracheal tube passed into the trachea is a perfectly good rescue if the tracheostomy tube does not fit.",
+          "Maintain whatever oxygenation is possible from above throughout — a supraglottic airway that partially works, or mask ventilation that partially works, is still buying time and also splints the airway open.",
+          "Keep a hand on the trachea. Whoever is not operating should be stabilizing the larynx in the midline."
+        ]
+      }
+    },
+    {
+      "id": "cannula",
+      "type": "step",
+      "prompt": "3 · Cannula, if it is the only thing available",
+      "body": "In the infant and young child where surgical help has not arrived, a cannula is a bridge for oxygenation and nothing more. It carries the same barotrauma physiology as in adults, amplified by a smaller airway.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Small cannula (22G to 24G in an infant; 18G to 20G in a young child) on a saline-filled syringe, midline, angled caudally, aspirating continuously.",
+          "Free aspiration of air confirms position. Re-aspirate through the cannula alone after withdrawing the needle, and hold the cannula manually for its entire life.",
+          {
+            "text": "Oxygenate with a LOW-pressure source and long expiratory pauses.",
+            "items": [
+              "High-pressure jet devices into a small obstructed airway cause barotrauma quickly — this is not a scaled-down adult decision, it is a different risk.",
+              "Watch the chest fall before each subsequent breath. If it is not falling, stop and open the upper airway as an exhalation route."
+            ]
+          },
+          "Expect this to fail. Needle cricothyroidotomy in children is technically difficult, vanishingly rare, and almost impossible to stay competent at — which is exactly why the 2024 guidance moved away from it. Escalate to a surgical airway in parallel, not afterwards."
+        ]
+      }
+    },
+    {
+      "id": "confirm",
+      "type": "step",
+      "prompt": "4 · Confirm and stabilize",
+      "body": "Quantitative waveform capnography, the same standard as any airway.\n\nThen the things that are specific to a small child: the tube is short and the trachea is shorter, so mainstem intubation and accidental decannulation are both easy. Secure it deliberately, mark the depth, and re-check after every single move of the patient. Keep the head midline and consider sedation and paralysis to stop the child dislodging it."
+    },
+    {
+      "id": "after",
+      "type": "step",
+      "prompt": "5 · Afterwards",
+      "body": "Everything that follows an adult front-of-neck airway, with a shorter fuse.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "PICU and ENT involvement is not optional — a pediatric emergency surgical airway is a PICU admission.",
+          "Imaging for pneumothorax and surgical emphysema. A small child's chest tolerates a pneumothorax badly.",
+          "Document age, weight, which operation was performed, the attempt counts at each plan, and the times.",
+          "Debrief the team, and flag it for departmental review. Pediatric CICO is rare enough that a single case is a training opportunity for everyone who was not in the room."
+        ]
+      }
+    }
+  ],
+  "checklist": [
+    "Age stated out loud at declaration — it decides the operation",
+    "ENT / surgical help called at the FIRST failed plan, not at CICO",
+    "Under 1 year: surgical tracheotomy, not cricothyroidotomy and not a needle, unless a cannula is the only bridge available",
+    "1-8 years: surgical tracheotomy if a trained operator is present; percutaneous cricothyroidotomy if not",
+    "8 years and older: adult scalpel-finger-bougie with a midline vertical incision, tube sized to the child",
+    "Shoulder roll, neck extended, head held midline, someone stabilizing the larynx",
+    "Apneic oxygenation running throughout; bradycardia treated as the pre-arrest sign it is",
+    "Waveform capnography, depth marked, and re-checked after every patient move",
+    "PICU and ENT engaged, imaging obtained, times and ages documented, team debriefed"
+  ],
+  "crossLinks": [
+    "cico-declare-and-choose",
+    "cricothyroidotomy",
+    "cannula-cricothyroidotomy",
+    "peds-difficult-airway",
+    "peds-cardiac-arrest"
+  ],
+  "buildNote": "New in the CICO batch, cross-listed into Peds Resuscitation & Decision Support so it surfaces from either direction. The reason this module exists separately rather than as a size note on the adult card is that the OPERATION changes with age, not just the equipment: the 2024 ESAIC/BJA joint guidelines state that surgical cricothyroidotomy and needle cricothyroidotomy are not suitable in neonates and infants, which contradicts the needle-first teaching most clinicians received. The card says that explicitly. It deliberately does not teach surgical tracheotomy — it teaches what the non-surgeon in the room should be doing so the surgeon can work. Does not duplicate peds-difficult-airway, which carries the wider algorithm; that module answers 'what now', this one answers 'how'."
+}

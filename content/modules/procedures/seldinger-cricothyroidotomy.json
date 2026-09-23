@@ -1,0 +1,166 @@
+{
+  "id": "seldinger-cricothyroidotomy",
+  "section": "Procedures",
+  "category": "CICO & Front-of-Neck Access",
+  "title": "Seldinger (Wire-Guided) Cricothyroidotomy",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "or"
+  ],
+  "aliases": [
+    "Melker",
+    "wire-guided cricothyroidotomy",
+    "percutaneous cricothyroidotomy",
+    "Seldinger cricothyrotomy",
+    "cricothyroidotomy kit"
+  ],
+  "tags": [
+    "Seldinger cricothyroidotomy",
+    "Melker kit",
+    "percutaneous cricothyroidotomy",
+    "CICO",
+    "front of neck access",
+    "ED",
+    "ICU",
+    "OR"
+  ],
+  "keywords": [
+    "only reasonable if your department stocks the kit AND trains on it — kit familiarity is the whole argument",
+    "slower than scalpel-bougie in comparative work; guidewire kinking and false passage are the failure modes",
+    "the cuffed version is a real airway: it takes PEEP and protects against aspiration, unlike a narrow cannula",
+    "never let go of the wire"
+  ],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-23",
+  "next_review_due": "2026-12-23",
+  "review_tier": 1,
+  "sources": [
+    "Ahmad I, El-Boghdadly K, Bhagrath R, et al. Difficult Airway Society 2025 guidelines for management of unanticipated difficult tracheal intubation in adults. Br J Anaesth. 2026;136(2):283-307 (scalpel-bougie-tube is the recommended technique).",
+    "Cook TM, Woodall N, Frerk C. Major complications of airway management in the UK: 4th National Audit Project (NAP4). Br J Anaesth. 2011;106(5):617-631.",
+    "Whatling J, et al. Adult front of neck airway: a narrative review. J Oral Maxillofac Anesth. 2024 (Seldinger kits: familiar technique, can apply PEEP; risks of guidewire kinking and device misplacement).",
+    "Schaumann N, Lorenz V, Schellongowski P, et al. Evaluation of Seldinger technique emergency cricothyroidotomy versus standard surgical cricothyroidotomy in 200 cadavers. Anesthesiology. 2005;102(1):7-11.",
+    "Heard AMB, et al. Rescue oxygenation success by cannula or scalpel-bougie emergency front-of-neck access in an anaesthetised porcine model. Br J Anaesth. 2020;124(3):293-300."
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-23",
+      "change": "New — the third of the four technique subsections in the CICO & Front-of-Neck Access category. Kit-based cricothyroidotomy is stocked in many EDs and ORs and had no coverage in the guide at all, which left readers with a kit in the trolley and no guidance on it."
+    }
+  ],
+  "outputType": "workflow",
+  "purpose": "The wire-guided kit technique — the honest case for and against it, and how to run it without losing the wire or making a false passage.",
+  "entryPrompt": "The argument for this technique is familiarity, not superiority. If your team does Seldinger lines every shift and has never cut a neck, that argument is real — but only if the kit is somewhere you can reach it in seconds.",
+  "nodes": [
+    {
+      "id": "case",
+      "type": "step",
+      "prompt": "1 · When this is the right kit — and when it is not",
+      "body": "DAS 2025 recommends scalpel-bougie-tube, and a Seldinger kit is not a substitute for knowing how to cut. But there is a narrow, honest case for it.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          {
+            "text": "It is defensible when all three are true:",
+            "items": [
+              "Your department stocks the kit and it is physically in the airway trolley, not in a store cupboard.",
+              "Your team trains on it — on the actual kit, not a different one.",
+              "The operator is genuinely more fluent in Seldinger technique than in open dissection."
+            ]
+          },
+          {
+            "text": "It is a poor choice when:",
+            "items": [
+              "Nobody has opened the box in a year. Under pressure an unfamiliar kit is slower than a scalpel.",
+              "The neck is distorted, obese, or bleeding — wire-guided technique depends on staying in a lumen you cannot see, and a false passage is easy and silent.",
+              "You have already made a skin incision and can feel the airway. Finish with the bougie."
+            ]
+          },
+          "Choose the CUFFED version if the kit offers both. An uncuffed airway cannot take positive pressure reliably and does not protect against aspiration — which gives away the main advantage this technique has over a cannula."
+        ]
+      }
+    },
+    {
+      "id": "setup",
+      "type": "step",
+      "prompt": "2 · Lay the kit out in order before you start",
+      "body": "The kit's advantage is a familiar sequence, and that advantage is lost if you are hunting for the dilator mid-procedure. Open it fully and lay the pieces out in the order they are used: introducer needle with syringe, guidewire, scalpel, dilator-and-airway assembly.\n\nExtend the neck if the cervical spine allows, keep oxygen flowing by whatever route still partly works, and identify the cricothyroid membrane with the laryngeal handshake."
+    },
+    {
+      "id": "puncture",
+      "type": "step",
+      "prompt": "3 · Puncture and wire",
+      "body": "This is ordinary Seldinger technique in an extraordinary place. The discipline is the same discipline.",
+      "substeps": {
+        "ordered": true,
+        "items": [
+          "Puncture the cricothyroid membrane in the midline with the introducer needle, angled roughly 45 degrees CAUDALLY, aspirating continuously — saline in the syringe makes the air return easier to read in a bloody field.",
+          {
+            "text": "Free aspiration of air confirms you are in the lumen. Stop advancing at that moment.",
+            "items": [
+              "No aspiration means you are not in the airway. Withdraw, re-identify, and puncture again rather than exploring with the needle in tissue."
+            ]
+          },
+          "Pass the guidewire through the needle, directed caudally, and advance it a few centimeters. It should pass with no resistance at all. Resistance means a false passage — stop, do not push.",
+          "Remove the needle over the wire. HOLD THE WIRE. From this point until the airway is in, one hand is doing nothing but holding the wire, and that hand does not get reassigned.",
+          "Make a small skin incision alongside the wire so the dilator has somewhere to go. Skipping this is the usual reason the dilator will not pass."
+        ]
+      }
+    },
+    {
+      "id": "dilate",
+      "type": "step",
+      "prompt": "4 · Dilate and place",
+      "body": "Advance the dilator-and-airway assembly over the wire as a single unit, with a firm rotating motion, until the airway flange sits against the skin.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Keep the assembly in line with the wire. Levering it changes the angle and is how the wire kinks — once kinked, the dilator stops tracking and you are making a false passage rather than following one.",
+          "If it will not pass, the skin incision is almost always too small. Enlarge it rather than pushing harder.",
+          "Hold the wire until the assembly is fully seated. Then remove the dilator and the wire together, leaving the airway in place.",
+          "Inflate the cuff if the airway is cuffed, connect, and ventilate."
+        ]
+      }
+    },
+    {
+      "id": "confirm",
+      "type": "step",
+      "prompt": "5 · Confirm, and be honest if it failed",
+      "body": "Quantitative waveform capnography, the same as any other airway. Device misplacement is the commonest reason front-of-neck access fails, and a wire-guided airway placed into the pretracheal tissues looks entirely convincing from the outside.\n\nIF IT IS NOT WORKING, DO NOT RE-WIRE. Convert to a scalpel technique. Repeated attempts with the same failing method are the pattern that runs the clock out — and by this point you have a skin incision, which is the hardest part of the scalpel technique already done.\n\nSecure it hard; this site dislodges easily."
+    },
+    {
+      "id": "after",
+      "type": "step",
+      "prompt": "6 · Afterwards",
+      "body": "Same as any front-of-neck airway: it is a bridge.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "ENT or surgery for definitive airway planning — a Seldinger cricothyroidotomy still needs revision to a definitive airway.",
+          "Imaging for pneumothorax, surgical emphysema, and posterior wall injury.",
+          "Document the time of declaration, the time of the airway, aspiration confirmation, and whether the wire passed freely.",
+          "Debrief, and check the kit is restocked and in the trolley — the argument for this technique collapses if the box is missing next time."
+        ]
+      }
+    }
+  ],
+  "checklist": [
+    "Kit chosen because it is stocked, trained on, and in reach — not as an avoidance of cutting",
+    "Cuffed version used if the kit offers one",
+    "Kit laid out in order of use before the needle went in",
+    "Free aspiration of air confirmed before the wire",
+    "Wire passed with NO resistance, and held continuously until the airway was seated",
+    "Skin incision made alongside the wire before dilating",
+    "Waveform capnography before anyone relaxes",
+    "Converted to a scalpel technique rather than re-wiring if it failed"
+  ],
+  "crossLinks": [
+    "cico-declare-and-choose",
+    "cricothyroidotomy",
+    "cannula-cricothyroidotomy",
+    "peds-front-of-neck-access"
+  ],
+  "buildNote": "New in the CICO batch. Written to be usable without pretending the technique is first-line: DAS 2025 recommends scalpel-bougie-tube, and this card says so in its first step. The inclusion criteria are deliberately restrictive (stocked + trained + operator fluency) because 'we have a kit somewhere' is how this technique fails. The two failure modes that matter — losing the wire and kinking it into a false passage — each get their own explicit instruction, and step 5 tells the reader to convert rather than re-wire."
+}

@@ -22,6 +22,10 @@
           "title": "Airway & Sedation Workflows"
         },
         {
+          "id": "cico-fona",
+          "title": "CICO & Front-of-Neck Access"
+        },
+        {
           "id": "vascular-thoracic-access",
           "title": "Vascular & Thoracic Access"
         },

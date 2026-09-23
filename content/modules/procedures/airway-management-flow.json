@@ -65,7 +65,9 @@
     "capnography",
     "peds-ketamine-rsi",
     "peds-rocuronium-rsi",
-    "peds-atropine-bradycardia"
+    "peds-atropine-bradycardia",
+    "cico-declare-and-choose",
+    "cricothyroidotomy"
   ],
   "nodes": [
     {

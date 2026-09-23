@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T00:00:00Z",
+  "generatedAt": "2026-09-23T00:00:00Z",
   "groupOrder": [
     "Guidelines & consensus statements",
     "Randomized trials & major studies",
@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 917,
+  "count": 947,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -502,6 +502,60 @@
       ]
     },
     {
+      "text": "Ahmad I, El-Boghdadly K, Bhagrath R, et al. Difficult Airway Society 2025 guidelines for management of unanticipated difficult tracheal intubation in adults. Br J Anaesth. 2026;136(2):283-307 (scalpel-bougie-tube is the recommended technique).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "seldinger-cricothyroidotomy",
+          "title": "Seldinger (Wire-Guided) Cricothyroidotomy",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/seldinger-cricothyroidotomy"
+        }
+      ]
+    },
+    {
+      "text": "Ahmad I, El-Boghdadly K, Bhagrath R, et al. Difficult Airway Society 2025 guidelines for management of unanticipated difficult tracheal intubation in adults. Br J Anaesth. 2026;136(2):283-307 (scalpel-bougie-tube with a vertical skin incision, applicable from roughly 8 years).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "peds-front-of-neck-access",
+          "title": "Pediatric Front-of-Neck Access",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/peds-front-of-neck-access"
+        }
+      ]
+    },
+    {
+      "text": "Ahmad I, El-Boghdadly K, Bhagrath R, et al. Difficult Airway Society 2025 guidelines for management of unanticipated difficult tracheal intubation in adults. Br J Anaesth. 2026;136(2):283-307 (vertical incision standardized for all necks; scalpel-bougie-tube; 3+1 / 3 / 2-person attempt ladder).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "cricothyroidotomy",
+          "title": "Scalpel–Finger–Bougie Cricothyroidotomy",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cricothyroidotomy"
+        }
+      ]
+    },
+    {
+      "text": "Ahmad I, El-Boghdadly K, Bhagrath R, et al. Difficult Airway Society 2025 guidelines for management of unanticipated difficult tracheal intubation in adults. Br J Anaesth. 2026;136(2):283-307.",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "cannula-cricothyroidotomy",
+          "title": "Cannula (Needle) Cricothyroidotomy & Rescue Oxygenation",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cannula-cricothyroidotomy"
+        },
+        {
+          "id": "cico-declare-and-choose",
+          "title": "CICO — Declare, and Choose the Technique",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cico-declare-and-choose"
+        }
+      ]
+    },
+    {
       "text": "American Burn Association. Guidelines for Burn Patient Referral (2018 update).",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -558,6 +612,18 @@
           "title": "Perioperative Home Medication Management",
           "section": "Reference Library",
           "route": "/reference-library/perioperative-anesthesia/perioperative-home-medication-management"
+        }
+      ]
+    },
+    {
+      "text": "American Society of Transplantation Infectious Diseases Community of Practice. Guidelines, 4th edition. Clin Transplant. 2019;33(9) (special issue: donor-derived infection, surgical site infection, safe living).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "febrile-transplant-recipient",
+          "title": "The Febrile Transplant Recipient",
+          "section": "Reference Library",
+          "route": "/reference-library/infectious-disease-immunization/febrile-transplant-recipient"
         }
       ]
     },
@@ -1174,18 +1240,6 @@
       ]
     },
     {
-      "text": "Difficult Airway Society (DAS) 2015 Guidelines for management of unanticipated difficult intubation.",
-      "group": "Guidelines & consensus statements",
-      "usedBy": [
-        {
-          "id": "cricothyroidotomy",
-          "title": "Emergency Cricothyroidotomy (Surgical Airway)",
-          "section": "Procedures",
-          "route": "/procedures/airway-sedation-workflows/cricothyroidotomy"
-        }
-      ]
-    },
-    {
       "text": "Difficult Airway Society (DAS) 2025 guidelines for unanticipated difficult intubation in adults",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1206,6 +1260,30 @@
           "title": "Pediatric Difficult Airway Approach",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/peds-difficult-airway"
+        }
+      ]
+    },
+    {
+      "text": "Disma N, Asai T, Cools E, et al. Airway management in neonates and infants: European Society of Anaesthesiology and Intensive Care and British Journal of Anaesthesia joint guidelines. Br J Anaesth. 2024;132(1):124-144 (surgical tracheotomy first-line eFONA; surgical and needle cricothyroidotomy are not suitable options in neonates and infants).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "peds-front-of-neck-access",
+          "title": "Pediatric Front-of-Neck Access",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/peds-front-of-neck-access"
+        }
+      ]
+    },
+    {
+      "text": "Disma N, Asai T, Cools E, et al. Airway management in neonates and infants: European Society of Anaesthesiology and Intensive Care and British Journal of Anaesthesia joint guidelines. Br J Anaesth. 2024;132(1):124-144 (surgical tracheotomy first-line under 1 year).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "cico-declare-and-choose",
+          "title": "CICO — Declare, and Choose the Technique",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cico-declare-and-choose"
         }
       ]
     },
@@ -1350,6 +1428,18 @@
           "title": "Pediatric Difficult Airway Approach",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/peds-difficult-airway"
+        }
+      ]
+    },
+    {
+      "text": "Frerk C, Mitchell VS, McNarry AF, et al. Difficult Airway Society 2015 guidelines for management of unanticipated difficult intubation in adults. Br J Anaesth. 2015;115(6):827-848 (the superseded palpable/impalpable fork).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "cricothyroidotomy",
+          "title": "Scalpel–Finger–Bougie Cricothyroidotomy",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cricothyroidotomy"
         }
       ]
     },
@@ -2836,6 +2926,18 @@
       ]
     },
     {
+      "text": "Fishman JA. Infection in organ transplantation. Am J Transplant. 2017;17(4):856-879 (the updated successor to the 2007 NEJM timeline; net state of immunosuppression; prophylaxis delays rather than prevents disease).",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "febrile-transplant-recipient",
+          "title": "The Febrile Transplant Recipient",
+          "section": "Reference Library",
+          "route": "/reference-library/infectious-disease-immunization/febrile-transplant-recipient"
+        }
+      ]
+    },
+    {
       "text": "François B, Bellissant E, Gissot V, et al. 12-h pretreatment with methylprednisolone versus placebo for prevention of postextubation laryngeal oedema. Lancet. 2007;369(9567):1083-1089",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -3096,6 +3198,18 @@
           "title": "Arthrocentesis (Joint Aspiration)",
           "section": "Procedures",
           "route": "/procedures/aspiration-drainage-procedures/arthrocentesis"
+        }
+      ]
+    },
+    {
+      "text": "New INN nomenclature for monoclonal antibodies. Lancet. 2022;399(10319):24.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "biologic-drug-nomenclature",
+          "title": "Reading a Biologic's Name",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/biologic-drug-nomenclature"
         }
       ]
     },
@@ -4140,6 +4254,30 @@
           "title": "Renal Dose Adjustment — Critical-Illness Antibiotics",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/renal-dose-adjustment-critical-illness-antibiotics"
+        }
+      ]
+    },
+    {
+      "text": "van Delden C, et al. The Swiss Transplant Cohort Study: implications for transplant infectious diseases research. Transpl Infect Dis. 2025.",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "febrile-transplant-recipient",
+          "title": "The Febrile Transplant Recipient",
+          "section": "Reference Library",
+          "route": "/reference-library/infectious-disease-immunization/febrile-transplant-recipient"
+        }
+      ]
+    },
+    {
+      "text": "van Delden C, Stampf S, Hirsch HH, et al. Burden and timeline of infectious diseases in the first year after solid organ transplantation in the Swiss Transplant Cohort Study. Clin Infect Dis. 2020;71(7):e159-e169 (2,761 recipients: 55% infected, bacteria 63% and predominant throughout, CMV 6%, Aspergillus fumigatus 1.4%).",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "febrile-transplant-recipient",
+          "title": "The Febrile Transplant Recipient",
+          "section": "Reference Library",
+          "route": "/reference-library/infectious-disease-immunization/febrile-transplant-recipient"
         }
       ]
     },
@@ -6021,9 +6159,9 @@
       "usedBy": [
         {
           "id": "cricothyroidotomy",
-          "title": "Emergency Cricothyroidotomy (Surgical Airway)",
+          "title": "Scalpel–Finger–Bougie Cricothyroidotomy",
           "section": "Procedures",
-          "route": "/procedures/airway-sedation-workflows/cricothyroidotomy"
+          "route": "/procedures/cico-front-of-neck-access/cricothyroidotomy"
         }
       ]
     },
@@ -6298,6 +6436,18 @@
       ]
     },
     {
+      "text": "Chrimes N. The Vortex: a universal 'high-acuity implementation tool' for emergency airway management. Br J Anaesth. 2016;117(Suppl 1):i20-i27.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "cico-declare-and-choose",
+          "title": "CICO — Declare, and Choose the Technique",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cico-declare-and-choose"
+        }
+      ]
+    },
+    {
       "text": "Chrimes N. The Vortex: a universal 'high-acuity implementation' tool for emergency airway management. Br J Anaesth 2016;117 Suppl 1:i20-i27",
       "group": "Other primary sources",
       "usedBy": [
@@ -6426,6 +6576,54 @@
           "title": "Antidotes & Reversal Agents",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/antidotes-reversal-agents"
+        }
+      ]
+    },
+    {
+      "text": "Cook TM, Woodall N, Frerk C. Major complications of airway management in the UK: 4th National Audit Project (NAP4). Br J Anaesth. 2011;106(5):617-631 (cannula cricothyroidotomy failed in roughly 60% of cases; surgical technique was near-uniformly successful).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "cricothyroidotomy",
+          "title": "Scalpel–Finger–Bougie Cricothyroidotomy",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cricothyroidotomy"
+        }
+      ]
+    },
+    {
+      "text": "Cook TM, Woodall N, Frerk C. Major complications of airway management in the UK: 4th National Audit Project (NAP4). Br J Anaesth. 2011;106(5):617-631 (cannula cricothyroidotomy failed in roughly 60% of cases).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "cannula-cricothyroidotomy",
+          "title": "Cannula (Needle) Cricothyroidotomy & Rescue Oxygenation",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cannula-cricothyroidotomy"
+        }
+      ]
+    },
+    {
+      "text": "Cook TM, Woodall N, Frerk C. Major complications of airway management in the UK: 4th National Audit Project (NAP4). Br J Anaesth. 2011;106(5):617-631.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "cico-declare-and-choose",
+          "title": "CICO — Declare, and Choose the Technique",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cico-declare-and-choose"
+        },
+        {
+          "id": "peds-front-of-neck-access",
+          "title": "Pediatric Front-of-Neck Access",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/peds-front-of-neck-access"
+        },
+        {
+          "id": "seldinger-cricothyroidotomy",
+          "title": "Seldinger (Wire-Guided) Cricothyroidotomy",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/seldinger-cricothyroidotomy"
         }
       ]
     },
@@ -7678,6 +7876,18 @@
       ]
     },
     {
+      "text": "Fishman JA. Introduction: infection in solid organ transplant recipients. Am J Transplant. 2009;9(Suppl 4):S3-S6.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "febrile-transplant-recipient",
+          "title": "The Febrile Transplant Recipient",
+          "section": "Reference Library",
+          "route": "/reference-library/infectious-disease-immunization/febrile-transplant-recipient"
+        }
+      ]
+    },
+    {
       "text": "Fitch MT, et al. Videos in clinical medicine. Abscess incision and drainage. N Engl J Med. 2007;357(19):e20.",
       "group": "Other primary sources",
       "usedBy": [
@@ -8026,6 +8236,42 @@
       ]
     },
     {
+      "text": "Haag B, et al. Emergency front-of-neck access in pediatric anesthesia: a narrative review. Paediatr Anaesth. 2024;34(10) (age-stratified technique choice).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "cico-declare-and-choose",
+          "title": "CICO — Declare, and Choose the Technique",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cico-declare-and-choose"
+        }
+      ]
+    },
+    {
+      "text": "Haag B, et al. Emergency front-of-neck access in pediatric anesthesia: a narrative review. Paediatr Anaesth. 2024;34(10).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "cannula-cricothyroidotomy",
+          "title": "Cannula (Needle) Cricothyroidotomy & Rescue Oxygenation",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cannula-cricothyroidotomy"
+        }
+      ]
+    },
+    {
+      "text": "Haag B, Lee JW, Kovatsis PG, et al. Emergency front-of-neck access in pediatric anesthesia: a narrative review. Paediatr Anaesth. 2024;34(10) (age-stratified technique choice).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-front-of-neck-access",
+          "title": "Pediatric Front-of-Neck Access",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/peds-front-of-neck-access"
+        }
+      ]
+    },
+    {
       "text": "Harjola VP, et al. Contemporary management of acute right ventricular failure: a statement from the Heart Failure Association and the Working Group on Pulmonary Circulation and Right Ventricular Function of the European Society of Cardiology. Eur J Heart Fail. 2016;18(3):226-241.",
       "group": "Other primary sources",
       "usedBy": [
@@ -8046,6 +8292,30 @@
           "title": "New Orleans Criteria (CT Head)",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/new-orleans-criteria"
+        }
+      ]
+    },
+    {
+      "text": "Heard AMB, et al. Rescue oxygenation success by cannula or scalpel-bougie emergency front-of-neck access in an anaesthetised porcine model. Br J Anaesth. 2020;124(3):293-300 (rescue oxygenation succeeded in 18% after cannula vs 83% after scalpel-bougie; device placement 73% vs 92%).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "cannula-cricothyroidotomy",
+          "title": "Cannula (Needle) Cricothyroidotomy & Rescue Oxygenation",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cannula-cricothyroidotomy"
+        }
+      ]
+    },
+    {
+      "text": "Heard AMB, et al. Rescue oxygenation success by cannula or scalpel-bougie emergency front-of-neck access in an anaesthetised porcine model. Br J Anaesth. 2020;124(3):293-300.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "seldinger-cricothyroidotomy",
+          "title": "Seldinger (Wire-Guided) Cricothyroidotomy",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/seldinger-cricothyroidotomy"
         }
       ]
     },
@@ -8115,9 +8385,9 @@
       "usedBy": [
         {
           "id": "cricothyroidotomy",
-          "title": "Emergency Cricothyroidotomy (Surgical Airway)",
+          "title": "Scalpel–Finger–Bougie Cricothyroidotomy",
           "section": "Procedures",
-          "route": "/procedures/airway-sedation-workflows/cricothyroidotomy"
+          "route": "/procedures/cico-front-of-neck-access/cricothyroidotomy"
         }
       ]
     },
@@ -8214,6 +8484,18 @@
           "title": "CKD-EPI 2021 eGFR",
           "section": "Calculators",
           "route": "/calculators/gi-renal-metabolic/ckd-epi-egfr"
+        }
+      ]
+    },
+    {
+      "text": "International nonproprietary names for monoclonal antibodies: an evolving nomenclature system. MAbs. 2022;14(1):2075078.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "biologic-drug-nomenclature",
+          "title": "Reading a Biologic's Name",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/biologic-drug-nomenclature"
         }
       ]
     },
@@ -8346,6 +8628,18 @@
           "title": "Crush Syndrome — Entrapment, Extrication & Hyperkalemia",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/crush-syndrome"
+        }
+      ]
+    },
+    {
+      "text": "Jones TD, Carter PJ, Plückthun A, et al. The INNs and outs of antibody nonproprietary names. MAbs. 2016;8(1):1-9.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "biologic-drug-nomenclature",
+          "title": "Reading a Biologic's Name",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/biologic-drug-nomenclature"
         }
       ]
     },
@@ -10432,6 +10726,18 @@
       ]
     },
     {
+      "text": "Schaumann N, Lorenz V, Schellongowski P, et al. Evaluation of Seldinger technique emergency cricothyroidotomy versus standard surgical cricothyroidotomy in 200 cadavers. Anesthesiology. 2005;102(1):7-11.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "seldinger-cricothyroidotomy",
+          "title": "Seldinger (Wire-Guided) Cricothyroidotomy",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/seldinger-cricothyroidotomy"
+        }
+      ]
+    },
+    {
       "text": "Schmidt M et al. SAVE score. Eur Heart J 2015;36:2246-2256",
       "group": "Other primary sources",
       "usedBy": [
@@ -10836,6 +11142,18 @@
           "title": "DECAF Score",
           "section": "Calculators",
           "route": "/calculators/pulmonary-pe-dvt-resp-failure/decaf-score"
+        }
+      ]
+    },
+    {
+      "text": "Stein ML, et al. A primer for pediatric emergency front-of-the-neck access. A A Pract. 2021;15(4):e01444.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "peds-front-of-neck-access",
+          "title": "Pediatric Front-of-Neck Access",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/peds-front-of-neck-access"
         }
       ]
     },
@@ -11320,6 +11638,42 @@
       ]
     },
     {
+      "text": "Whatling J, et al. Adult front of neck airway: a narrative review. J Oral Maxillofac Anesth. 2024 (equipment rationale, complication profile, eFONA incidence ~1 in 50,000 UK general anesthetics).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "cricothyroidotomy",
+          "title": "Scalpel–Finger–Bougie Cricothyroidotomy",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cricothyroidotomy"
+        }
+      ]
+    },
+    {
+      "text": "Whatling J, et al. Adult front of neck airway: a narrative review. J Oral Maxillofac Anesth. 2024 (narrow-bore limitations, Ventrain, hypercarbia limiting use to roughly 30-40 minutes).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "cannula-cricothyroidotomy",
+          "title": "Cannula (Needle) Cricothyroidotomy & Rescue Oxygenation",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/cannula-cricothyroidotomy"
+        }
+      ]
+    },
+    {
+      "text": "Whatling J, et al. Adult front of neck airway: a narrative review. J Oral Maxillofac Anesth. 2024 (Seldinger kits: familiar technique, can apply PEEP; risks of guidewire kinking and device misplacement).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "seldinger-cricothyroidotomy",
+          "title": "Seldinger (Wire-Guided) Cricothyroidotomy",
+          "section": "Procedures",
+          "route": "/procedures/cico-front-of-neck-access/seldinger-cricothyroidotomy"
+        }
+      ]
+    },
+    {
       "text": "Whiting D, DiNardo JA. TEG and ROTEM: technology and clinical applications. Am J Hematol 2014;89(2):228-232",
       "group": "Other primary sources",
       "usedBy": [
@@ -11412,6 +11766,30 @@
           "title": "Epinephrine — Pediatric Anaphylaxis (IM)",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-epinephrine-anaphylaxis"
+        }
+      ]
+    },
+    {
+      "text": "World Health Organization. New mAb nomenclature. INN Working Doc. 21.531 (November 2021) and 22.542 (May 2022) (73rd INN Consultation: -mab retired for new names, replaced by -tug, -bart, -ment and -mig).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "biologic-drug-nomenclature",
+          "title": "Reading a Biologic's Name",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/biologic-drug-nomenclature"
+        }
+      ]
+    },
+    {
+      "text": "World Health Organization. Revised monoclonal antibody (mAb) nomenclature scheme. INN Working Doc. 17.416, Geneva, 26 May 2017 (Tables 1 and 2: the previous and new substem lists; discontinuation of the source substem at the 64th INN Consultation).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "biologic-drug-nomenclature",
+          "title": "Reading a Biologic's Name",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/biologic-drug-nomenclature"
         }
       ]
     },

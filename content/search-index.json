@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T00:00:00Z",
+  "generatedAt": "2026-09-23T00:00:00Z",
   "entries": [
     {
       "id": "apfel-ponv",
@@ -6740,41 +6740,6 @@
       ]
     },
     {
-      "id": "cricothyroidotomy",
-      "title": "Emergency Cricothyroidotomy (Surgical Airway)",
-      "section": "Procedures",
-      "category": "Airway & Sedation Workflows",
-      "tags": [
-        "cricothyroidotomy",
-        "surgical airway",
-        "can't intubate can't ventilate",
-        "CICO",
-        "emergency airway",
-        "ED",
-        "OR",
-        "ICU"
-      ],
-      "keywords": [
-        "scalpel-finger-bougie technique — scalpel to make the hole, finger to keep it open and confirm you're in the trachea, bougie to railroad the tube over, no second-guessing the sequence",
-        "this is the last step of the difficult airway algorithm, decide early rather than as a final desperate move after everything else has failed",
-        "a 6.0 cuffed endotracheal tube is the standard railroad target, not a dedicated small cricothyroidotomy tube in the adult emergency scenario",
-        "vertical skin incision but a horizontal stab through the cricothyroid membrane itself",
-        "confirm with quantitative waveform capnography like any other airway",
-        "surgical airway",
-        "cric",
-        "front-of-neck access",
-        "FONA",
-        "scalpel-finger-bougie"
-      ],
-      "contentType": "procedure",
-      "route": "/procedures/airway-sedation-workflows/cricothyroidotomy",
-      "settingEmphasis": [
-        "ed",
-        "or",
-        "icu"
-      ]
-    },
-    {
       "id": "peds-nonsedation-procedural-pain",
       "title": "Pediatric Procedural Pain Management — Non-Sedation Techniques",
       "section": "Procedures",
@@ -7045,6 +7010,199 @@
       "settingEmphasis": [
         "ed",
         "icu"
+      ]
+    },
+    {
+      "id": "cannula-cricothyroidotomy",
+      "title": "Cannula (Needle) Cricothyroidotomy & Rescue Oxygenation",
+      "section": "Procedures",
+      "category": "CICO & Front-of-Neck Access",
+      "tags": [
+        "cannula cricothyroidotomy",
+        "needle cricothyroidotomy",
+        "jet ventilation",
+        "CICO",
+        "front of neck access",
+        "barotrauma",
+        "ED",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "it oxygenates at best — it does not ventilate, protect the airway, or take PEEP",
+        "failed in roughly 60% of NAP4 cannula attempts; 18% vs 83% rescue oxygenation success against scalpel-bougie in a porcine model",
+        "expiration is the problem, not inspiration — an obstructed upper airway plus jet insufflation is how barotrauma happens",
+        "a bridge with a clock on it: CO2 climbs and it needs converting",
+        "needle cricothyroidotomy",
+        "cannula cricothyrotomy",
+        "needle cric",
+        "jet ventilation",
+        "transtracheal jet ventilation",
+        "rescue oxygenation"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/cico-front-of-neck-access/cannula-cricothyroidotomy",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or"
+      ]
+    },
+    {
+      "id": "cico-declare-and-choose",
+      "title": "CICO — Declare, and Choose the Technique",
+      "section": "Procedures",
+      "category": "CICO & Front-of-Neck Access",
+      "tags": [
+        "CICO",
+        "difficult airway",
+        "surgical airway",
+        "front of neck access",
+        "Plan D",
+        "airway emergency",
+        "ED",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "declare it out loud — the commonest cause of death in CICO is delay, not technique",
+        "DAS 2025: 3+1 intubation attempts, up to 3 supraglottic, then two-person mask, then the neck",
+        "scalpel-bougie-tube is the default adult technique; cannula failed in roughly 60% of NAP4 cases",
+        "under 8 years the anatomy changes the answer — surgical tracheotomy, not cricothyroidotomy",
+        "CICO",
+        "CICV",
+        "can't intubate can't oxygenate",
+        "can't intubate can't ventilate",
+        "Plan D",
+        "front of neck access",
+        "eFONA",
+        "FONA"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/cico-front-of-neck-access/cico-declare-and-choose",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or"
+      ]
+    },
+    {
+      "id": "peds-front-of-neck-access",
+      "title": "Pediatric Front-of-Neck Access",
+      "section": "Procedures",
+      "category": "CICO & Front-of-Neck Access",
+      "tags": [
+        "pediatric CICO",
+        "pediatric front of neck access",
+        "needle cricothyroidotomy",
+        "surgical tracheotomy",
+        "difficult airway",
+        "ED",
+        "OR",
+        "ICU",
+        "peds"
+      ],
+      "keywords": [
+        "age changes the operation — this is not the adult card scaled down",
+        "neonates and infants: surgical tracheotomy is first-line; cricothyroidotomy and needle cricothyroidotomy are not suitable",
+        "roughly 1-8 years: surgical tracheotomy preferred where a trained operator is present",
+        "8 years and older: adult scalpel-bougie-tube with a vertical incision",
+        "children desaturate in seconds, not minutes — call for surgical help at the first failed plan, not at CICO",
+        "pediatric CICO",
+        "pediatric cricothyroidotomy",
+        "pediatric eFONA",
+        "child front of neck access",
+        "infant surgical airway",
+        "pediatric tracheotomy emergency"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/cico-front-of-neck-access/peds-front-of-neck-access",
+      "settingEmphasis": [
+        "ed",
+        "or",
+        "icu"
+      ],
+      "audience": [
+        "peds",
+        "neonate"
+      ],
+      "crossListIn": [
+        {
+          "section": "Peds Module",
+          "category": "Peds Resuscitation & Decision Support"
+        }
+      ]
+    },
+    {
+      "id": "cricothyroidotomy",
+      "title": "Scalpel–Finger–Bougie Cricothyroidotomy",
+      "section": "Procedures",
+      "category": "CICO & Front-of-Neck Access",
+      "tags": [
+        "cricothyroidotomy",
+        "surgical airway",
+        "can't intubate can't ventilate",
+        "CICO",
+        "emergency airway",
+        "ED",
+        "OR",
+        "ICU"
+      ],
+      "keywords": [
+        "scalpel-finger-bougie technique — scalpel to make the hole, finger to keep it open and confirm you're in the trachea, bougie to railroad the tube over, no second-guessing the sequence",
+        "this is the last step of the difficult airway algorithm, decide early rather than as a final desperate move after everything else has failed",
+        "a 6.0 cuffed endotracheal tube is the standard railroad target, not a dedicated small cricothyroidotomy tube in the adult emergency scenario",
+        "vertical skin incision but a horizontal stab through the cricothyroid membrane itself",
+        "confirm with quantitative waveform capnography like any other airway",
+        "cricothyroidotomy",
+        "cricothyrotomy",
+        "surgical airway",
+        "scalpel bougie",
+        "scalpel-finger-bougie",
+        "eFONA",
+        "front of neck access",
+        "FONA"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/cico-front-of-neck-access/cricothyroidotomy",
+      "settingEmphasis": [
+        "ed",
+        "or",
+        "icu"
+      ]
+    },
+    {
+      "id": "seldinger-cricothyroidotomy",
+      "title": "Seldinger (Wire-Guided) Cricothyroidotomy",
+      "section": "Procedures",
+      "category": "CICO & Front-of-Neck Access",
+      "tags": [
+        "Seldinger cricothyroidotomy",
+        "Melker kit",
+        "percutaneous cricothyroidotomy",
+        "CICO",
+        "front of neck access",
+        "ED",
+        "ICU",
+        "OR"
+      ],
+      "keywords": [
+        "only reasonable if your department stocks the kit AND trains on it — kit familiarity is the whole argument",
+        "slower than scalpel-bougie in comparative work; guidewire kinking and false passage are the failure modes",
+        "the cuffed version is a real airway: it takes PEEP and protects against aspiration, unlike a narrow cannula",
+        "never let go of the wire",
+        "Melker",
+        "wire-guided cricothyroidotomy",
+        "percutaneous cricothyroidotomy",
+        "Seldinger cricothyrotomy",
+        "cricothyroidotomy kit"
+      ],
+      "contentType": "procedure",
+      "route": "/procedures/cico-front-of-neck-access/seldinger-cricothyroidotomy",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or"
       ]
     },
     {
@@ -9309,6 +9467,42 @@
       ]
     },
     {
+      "id": "biologic-drug-nomenclature",
+      "title": "Reading a Biologic's Name",
+      "section": "Reference Library",
+      "category": "Critical Care",
+      "tags": [
+        "biologic",
+        "monoclonal antibody",
+        "immunotherapy",
+        "drug names",
+        "nomenclature",
+        "checkpoint inhibitor",
+        "ICU",
+        "ED"
+      ],
+      "keywords": [
+        "what does -mab mean",
+        "-zu- -xi- -u- -o- species infix",
+        "-tu- -ki- -li- target infix",
+        "the species slot was dropped in 2017 and -mab retired for new names in 2021",
+        "decodes existing drug names, does not predict new ones",
+        "-cept is a receptor-Fc fusion protein, a different family from -mab",
+        "monoclonal antibody naming",
+        "mab suffix",
+        "biologic nomenclature",
+        "INN naming",
+        "drug name decoder",
+        "-mab -cept -tug -bart -mig -ment"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/critical-care/biologic-drug-nomenclature",
+      "settingEmphasis": [
+        "icu",
+        "ed"
+      ]
+    },
+    {
       "id": "renal-dose-adjustment-critical-illness-antibiotics",
       "title": "Renal Dose Adjustment — Critical-Illness Antibiotics",
       "section": "Reference Library",
@@ -10139,6 +10333,41 @@
       ],
       "contentType": "reference",
       "route": "/reference-library/infectious-disease-immunization/necrotizing-soft-tissue-infection",
+      "settingEmphasis": [
+        "ed",
+        "icu"
+      ]
+    },
+    {
+      "id": "febrile-transplant-recipient",
+      "title": "The Febrile Transplant Recipient",
+      "section": "Reference Library",
+      "category": "Infectious Disease & Immunization",
+      "tags": [
+        "transplant",
+        "fever",
+        "infection",
+        "immunosuppression",
+        "CMV",
+        "opportunistic infection",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "infection timeline after solid organ transplant",
+        "bacteria caused 63% of first-year infections and predominated throughout — CMV 6%, Aspergillus 1.4%",
+        "the timeline is a differential prompt, not a probability ranking",
+        "prophylaxis delays rather than prevents — late CMV appears when prophylaxis stops",
+        "net state of immunosuppression",
+        "fever may be blunted or absent on steroids and mTOR inhibitors",
+        "fever in transplant patient",
+        "post-transplant infection",
+        "transplant infection timeline",
+        "immunocompromised fever",
+        "solid organ transplant fever"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/infectious-disease-immunization/febrile-transplant-recipient",
       "settingEmphasis": [
         "ed",
         "icu"

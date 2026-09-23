@@ -1,0 +1,174 @@
+{
+  "id": "cico-declare-and-choose",
+  "section": "Procedures",
+  "category": "CICO & Front-of-Neck Access",
+  "title": "CICO — Declare, and Choose the Technique",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "or"
+  ],
+  "aliases": [
+    "CICO",
+    "CICV",
+    "can't intubate can't oxygenate",
+    "can't intubate can't ventilate",
+    "Plan D",
+    "front of neck access",
+    "eFONA",
+    "FONA"
+  ],
+  "tags": [
+    "CICO",
+    "difficult airway",
+    "surgical airway",
+    "front of neck access",
+    "Plan D",
+    "airway emergency",
+    "ED",
+    "ICU",
+    "OR"
+  ],
+  "keywords": [
+    "declare it out loud — the commonest cause of death in CICO is delay, not technique",
+    "DAS 2025: 3+1 intubation attempts, up to 3 supraglottic, then two-person mask, then the neck",
+    "scalpel-bougie-tube is the default adult technique; cannula failed in roughly 60% of NAP4 cases",
+    "under 8 years the anatomy changes the answer — surgical tracheotomy, not cricothyroidotomy"
+  ],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-21",
+  "next_review_due": "2026-12-21",
+  "review_tier": 1,
+  "sources": [
+    "Ahmad I, El-Boghdadly K, Bhagrath R, et al. Difficult Airway Society 2025 guidelines for management of unanticipated difficult tracheal intubation in adults. Br J Anaesth. 2026;136(2):283-307.",
+    "Cook TM, Woodall N, Frerk C. Major complications of airway management in the UK: 4th National Audit Project (NAP4). Br J Anaesth. 2011;106(5):617-631.",
+    "Chrimes N. The Vortex: a universal 'high-acuity implementation tool' for emergency airway management. Br J Anaesth. 2016;117(Suppl 1):i20-i27.",
+    "Haag B, et al. Emergency front-of-neck access in pediatric anesthesia: a narrative review. Paediatr Anaesth. 2024;34(10) (age-stratified technique choice).",
+    "Disma N, Asai T, Cools E, et al. Airway management in neonates and infants: European Society of Anaesthesiology and Intensive Care and British Journal of Anaesthesia joint guidelines. Br J Anaesth. 2024;132(1):124-144 (surgical tracheotomy first-line under 1 year)."
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-21",
+      "change": "New — the entry point for the CICO & Front-of-Neck Access category created in this batch. Previously CICO existed only as a node inside airway-management-flow and as the opening step of the cricothyroidotomy card, with no place that answered 'which technique, for this patient'. Built against DAS 2025, NAP4, and the 2024 pediatric/neonatal guidance."
+    }
+  ],
+  "outputType": "workflow",
+  "purpose": "The entry point to front-of-neck access: recognizing and declaring CICO, the attempt ladder that precedes it, and which of the four techniques fits this patient.",
+  "entryPrompt": "You do not choose a technique in a CICO. You choose it now, before one happens — this card exists so the decision is already made when the alarm goes off.",
+  "nodes": [
+    {
+      "id": "recognize",
+      "type": "step",
+      "prompt": "1 · Recognize it before you can name it",
+      "body": "CICO is not a moment; it is a trajectory you should see coming. The three failures that define it — intubation, supraglottic airway, face mask — usually declare themselves one after the other over a few minutes, while saturation falls and the room gets quieter.\n\nThe practical trigger is simpler than the definition: you cannot get oxygen into the patient by any route above the neck, and the saturation is falling. That is enough. Waiting for a number, or for someone senior to say it first, is how the time gets spent.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Rising urgency with falling options is the signal. If each thing you try is buying less time than the last, you are in it.",
+          "Do not wait for a specific saturation. By the time the number is unequivocal the desaturation is already steep, and in a child it is vertical.",
+          "The Vortex framing is useful here: three lifelines — face mask, supraglottic airway, tracheal tube. Each gets a best-effort attempt. When all three have had their best effort, you are at the center of the funnel and the neck is the only way out."
+        ]
+      }
+    },
+    {
+      "id": "ladder",
+      "type": "step",
+      "prompt": "2 · The ladder that precedes the declaration (DAS 2025)",
+      "body": "Attempt limits are ceilings, not allowances. If an attempt is not obviously going to work, abandon it early — the counts below are the most you may take, not the number you should.",
+      "substeps": {
+        "ordered": true,
+        "items": [
+          {
+            "text": "Plan A — tracheal intubation. Videolaryngoscope first-line. Maximum 3 + 1 attempts.",
+            "items": [
+              "The +1 is a more experienced operator, not a fourth go by the same person with the same blade.",
+              "Change something between attempts — operator, device, position, adjunct — or it is not a new attempt."
+            ]
+          },
+          {
+            "text": "Plan B — second-generation supraglottic airway. Up to 3 attempts.",
+            "items": [
+              "DAS 2025 reframes this as ongoing oxygenation rather than an admission of failure. If it oxygenates, you have time, and time changes everything.",
+              "Leaving a supraglottic airway in place also makes the cricothyroid membrane easier to identify."
+            ]
+          },
+          "Plan C — two-person face-mask ventilation, adjuncts in, optimally positioned. Treat failure here as the trigger for Plan D rather than something to persist with; sustained mask ventilation is unlikely once intubation and a supraglottic airway have both failed.",
+          "Plan D — declare CICO. Go to the neck."
+        ]
+      }
+    },
+    {
+      "id": "declare",
+      "type": "step",
+      "prompt": "3 · Declare it, and assign the room",
+      "body": "Say it in words the room cannot misread: \"This is CICO. I am doing a front-of-neck airway.\" Then hand out the jobs, because the operator should be doing one thing only.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Someone brings the kit — scalpel with a size 10 blade, bougie, 6.0 cuffed tube.",
+          "Someone calls for help: ENT, surgery, or the most experienced airway operator in the building. They may not arrive in time, and you start anyway.",
+          "Someone keeps oxygen flowing by whatever route still partly works, and someone calls the time out loud.",
+          "Someone stops offering the laryngoscope. Once CICO is declared, oscillating back to another look is the failure mode that kills."
+        ]
+      }
+    },
+    {
+      "id": "choose",
+      "type": "step",
+      "prompt": "4 · Which technique — decided by the patient, not by preference",
+      "body": "For an adult, this is not really a choice: scalpel-bougie-tube is the default and the evidence is one-sided. The genuine branch points are age and, to a lesser extent, what is physically in your hand.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          {
+            "text": "ADULT, and children roughly 8 years and older — SCALPEL-FINGER-BOUGIE. The default.",
+            "items": [
+              "Midline vertical skin incision in every neck under DAS 2025, palpable membrane or not.",
+              "In NAP4, cannula cricothyroidotomy failed in roughly 60% of cases while surgical technique was near-uniformly successful. That gap is why there is a default at all."
+            ]
+          },
+          {
+            "text": "UNDER ROUGHLY 8 YEARS — the anatomy changes the answer. See the pediatric card.",
+            "items": [
+              "Neonates and infants: surgical tracheotomy is first-line per the 2024 ESAIC/BJA joint guidelines, which state that surgical cricothyroidotomy and needle cricothyroidotomy are not suitable in this group.",
+              "Roughly 1-8 years: surgical tracheotomy preferred where a trained operator is present; percutaneous cricothyroidotomy otherwise."
+            ]
+          },
+          {
+            "text": "CANNULA / NEEDLE — a bridge, not a plan, in adults.",
+            "items": [
+              "Reasonable when it is genuinely the only kit available, when the operator has no surgical training at all, or as a first move in a child while surgical help is coming.",
+              "It buys oxygenation at best. It does not protect the airway, cannot take PEEP, and accumulates CO2."
+            ]
+          },
+          "SELDINGER / WIRE-GUIDED KIT — reasonable if your department stocks it and trains on it, and the operator is more fluent in Seldinger technique than in open dissection. Slower than scalpel-bougie in comparative work, and it still needs revision to a definitive airway."
+        ]
+      }
+    },
+    {
+      "id": "afterwards",
+      "type": "step",
+      "prompt": "5 · Whatever you did, the next hour is the same",
+      "body": "The airway is a bridge. Definitive management, imaging for the complications the procedure causes, documentation of times and attempt counts, and a debrief are all part of the procedure rather than sequelae of it. Each technique card carries its own version of this."
+    }
+  ],
+  "checklist": [
+    "CICO declared out loud, in words, with the technique named",
+    "Jobs assigned: kit, help, oxygen, timekeeper — and someone told to stop offering the laryngoscope",
+    "Technique chosen by patient age and anatomy, not by operator preference",
+    "Under 8 years: pediatric card opened rather than the adult one",
+    "Time of declaration and time of airway noted for the record"
+  ],
+  "crossLinks": [
+    "cricothyroidotomy",
+    "cannula-cricothyroidotomy",
+    "seldinger-cricothyroidotomy",
+    "peds-front-of-neck-access",
+    "airway-management-flow",
+    "anatomically-difficult-airway",
+    "rsi-seven-ps"
+  ],
+  "buildNote": "Entry/decision module for the new CICO & Front-of-Neck Access category. Deliberately does NOT restate any technique — it declares, times, and routes. Each technique lives in its own sibling module so the one you need is one tap away rather than buried in a long page. The attempt ladder is DAS 2025's; the Vortex is included because it is the mental model most ED/ICU teams actually train on and it answers a different question (when have I run out of options?) than the linear algorithm does."
+}

@@ -1,0 +1,174 @@
+{
+  "id": "cannula-cricothyroidotomy",
+  "section": "Procedures",
+  "category": "CICO & Front-of-Neck Access",
+  "title": "Cannula (Needle) Cricothyroidotomy & Rescue Oxygenation",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "or"
+  ],
+  "aliases": [
+    "needle cricothyroidotomy",
+    "cannula cricothyrotomy",
+    "needle cric",
+    "jet ventilation",
+    "transtracheal jet ventilation",
+    "rescue oxygenation"
+  ],
+  "tags": [
+    "cannula cricothyroidotomy",
+    "needle cricothyroidotomy",
+    "jet ventilation",
+    "CICO",
+    "front of neck access",
+    "barotrauma",
+    "ED",
+    "ICU",
+    "OR"
+  ],
+  "keywords": [
+    "it oxygenates at best — it does not ventilate, protect the airway, or take PEEP",
+    "failed in roughly 60% of NAP4 cannula attempts; 18% vs 83% rescue oxygenation success against scalpel-bougie in a porcine model",
+    "expiration is the problem, not inspiration — an obstructed upper airway plus jet insufflation is how barotrauma happens",
+    "a bridge with a clock on it: CO2 climbs and it needs converting"
+  ],
+  "contentType": "procedure",
+  "content_version": 1,
+  "last_reviewed": "2026-09-21",
+  "next_review_due": "2026-12-21",
+  "review_tier": 1,
+  "sources": [
+    "Cook TM, Woodall N, Frerk C. Major complications of airway management in the UK: 4th National Audit Project (NAP4). Br J Anaesth. 2011;106(5):617-631 (cannula cricothyroidotomy failed in roughly 60% of cases).",
+    "Heard AMB, et al. Rescue oxygenation success by cannula or scalpel-bougie emergency front-of-neck access in an anaesthetised porcine model. Br J Anaesth. 2020;124(3):293-300 (rescue oxygenation succeeded in 18% after cannula vs 83% after scalpel-bougie; device placement 73% vs 92%).",
+    "Ahmad I, El-Boghdadly K, Bhagrath R, et al. Difficult Airway Society 2025 guidelines for management of unanticipated difficult tracheal intubation in adults. Br J Anaesth. 2026;136(2):283-307.",
+    "Whatling J, et al. Adult front of neck airway: a narrative review. J Oral Maxillofac Anesth. 2024 (narrow-bore limitations, Ventrain, hypercarbia limiting use to roughly 30-40 minutes).",
+    "Haag B, et al. Emergency front-of-neck access in pediatric anesthesia: a narrative review. Paediatr Anaesth. 2024;34(10)."
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-21",
+      "change": "New — one of the four technique subsections in the CICO & Front-of-Neck Access category. No cannula technique existed anywhere in the guide; CICO content went straight to the scalpel, which left the pediatric bridge and the no-kit scenario unaddressed."
+    }
+  ],
+  "outputType": "workflow",
+  "purpose": "The cannula technique and the rescue-oxygenation devices that follow it — how to do it, when it is still the right call, and an honest account of why it is no longer the adult default.",
+  "entryPrompt": "Read the failure data before you plan to rely on this. It remains worth knowing: it is sometimes the only kit in the room, and in small children it is sometimes the only anatomy you have.",
+  "nodes": [
+    {
+      "id": "honest",
+      "type": "warning",
+      "prompt": "Read this before you choose it",
+      "body": "The evidence against cannula cricothyroidotomy as an adult default is not marginal.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "NAP4: cannula cricothyroidotomy failed in roughly 60% of the cases audited, while surgical technique was near-uniformly successful.",
+          "In an anesthetized porcine CICO model, rescue oxygenation succeeded in 18% after cannula versus 83% after scalpel-bougie; even device placement was 73% versus 92%.",
+          "The failure is rarely the puncture. It is kinking, displacement into the pretracheal tissues, and an inability to confirm you are where you think you are before you insufflate.",
+          {
+            "text": "It is not an airway. It is an oxygen line.",
+            "items": [
+              "No protection from gastric contents.",
+              "No PEEP.",
+              "CO2 accumulates — a narrow-bore cannula is generally a 30-40 minute proposition before respiratory acidosis becomes the problem you are treating."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "indications",
+      "type": "step",
+      "prompt": "1 · When it is still the right call",
+      "body": "Three situations, and none of them is 'because it feels less drastic'.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "It is genuinely the only kit in the room and nobody can improvise a scalpel technique.",
+          "The operator has no surgical airway training at all and a cannula is what they have actually practised.",
+          "A small child, where the cricothyroid membrane will not take a tube — as a bridge while a surgical tracheotomy is being set up. See the pediatric card.",
+          "As a deliberate first move that does not preclude escalation: a cannula in the neck does not stop you cutting, and the skin mark it leaves tells the next operator where the midline is."
+        ]
+      }
+    },
+    {
+      "id": "technique",
+      "type": "step",
+      "prompt": "2 · Technique",
+      "body": "Extend the neck if the cervical spine allows. Stabilize the larynx with the non-dominant hand and identify the cricothyroid membrane with the laryngeal handshake.",
+      "substeps": {
+        "ordered": true,
+        "items": [
+          "Attach a cannula-over-needle (a purpose-made kink-resistant airway cannula if you have one; a 14G IV cannula is the improvised fallback and kinks readily) to a syringe containing a few milliliters of saline or air.",
+          "Puncture in the midline through the cricothyroid membrane, angled 45 degrees CAUDALLY, aspirating continuously.",
+          {
+            "text": "Free aspiration of air is your confirmation. Stop advancing the needle the moment you get it.",
+            "items": [
+              "Bubbles through saline are easier to read than an air-filled syringe in a bloody field.",
+              "No aspiration means you are not in the airway. Do not insufflate on hope — insufflating into tissue destroys the anatomy for everyone who follows."
+            ]
+          },
+          "Advance the cannula off the needle, hold it at the skin, and withdraw the needle.",
+          "RE-ASPIRATE through the cannula alone to confirm it is still intraluminal. This step is skipped constantly and is where the technique is lost.",
+          "Hold the cannula manually for its entire life. It is not secure, it will kink, and letting go of it is how it ends up in the pretracheal tissue."
+        ]
+      }
+    },
+    {
+      "id": "oxygenate",
+      "type": "step",
+      "prompt": "3 · Rescue oxygenation — and the exhalation problem",
+      "body": "This is where cannula technique is genuinely dangerous, and the danger is not getting oxygen in. It is getting it out.\n\nA narrow cannula plus a completely obstructed upper airway means gas enters under pressure and has nowhere to leave. Stacked breaths become barotrauma, pneumothorax, and cardiovascular collapse — sometimes within a few insufflations.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          {
+            "text": "Whatever device you use, the rule is the same: insufflate briefly, then WATCH AND WAIT for the chest to fall before the next breath.",
+            "items": [
+              "Inspiratory times of about 1 second with expiratory pauses several times longer.",
+              "If the chest is not falling, stop. Open the upper airway — reposition, jaw thrust, adjuncts, or a supraglottic airway left in place as an exhalation route."
+            ]
+          },
+          "A high-pressure jet source (Manujet or similar) delivers volume through a narrow lumen but is exactly the device that causes barotrauma when exhalation is obstructed. It requires a deliberate operator, not a hopeful one.",
+          "The Ventrain and similar flow-controlled devices assist EXPIRATION as well as inspiration and can achieve close to a normal minute volume through a 2 mm internal-diameter catheter. If your department stocks one, it is the device this technique was waiting for.",
+          "Low-pressure sources — a bag-valve via a 3.0 tube connector, or wall oxygen with a Y-piece — will oxygenate poorly and ventilate essentially not at all. They are better than nothing and should not be mistaken for more than that.",
+          "Monitor for surgical emphysema continuously. A neck that is visibly swelling means gas is going somewhere other than the trachea, and the cannula has failed."
+        ]
+      }
+    },
+    {
+      "id": "convert",
+      "type": "step",
+      "prompt": "4 · Convert it, and start the clock when you site it",
+      "body": "A cannula is a bridge with a time limit. Plan the definitive airway from the moment it starts working, not from the moment it stops.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Escalate to a definitive airway — scalpel-bougie, a formal tracheostomy, or a controlled oral intubation once oxygenation has bought conditions for one.",
+          "If oxygenation is not restored promptly, do not keep adjusting the cannula. Move to a scalpel technique. Repeated cannula attempts are the documented failure pattern.",
+          "Imaging for pneumothorax and surgical emphysema once stable, and a low threshold for a chest drain if positive-pressure ventilation is continuing.",
+          "Document the time sited, the time converted, and whether aspiration was confirmed before insufflation."
+        ]
+      }
+    }
+  ],
+  "checklist": [
+    "Chose cannula for a stated reason — kit, training, or pediatric anatomy — not by default",
+    "Free aspiration confirmed BEFORE the needle was advanced and again through the cannula alone",
+    "Cannula held manually at all times",
+    "Insufflation brief, with the chest watched for fall before the next breath",
+    "Upper airway kept as open as possible as an exhalation route",
+    "Neck watched for surgical emphysema",
+    "Definitive airway planned from the moment the cannula started working"
+  ],
+  "crossLinks": [
+    "cico-declare-and-choose",
+    "cricothyroidotomy",
+    "seldinger-cricothyroidotomy",
+    "peds-front-of-neck-access",
+    "tube-thoracostomy"
+  ],
+  "buildNote": "New in the CICO batch. Written as an honest appraisal rather than a neutral how-to: NAP4's roughly 60% failure and the 18% vs 83% porcine rescue-oxygenation figures are stated up front, in a warning node, because the technique's main danger is being chosen for the wrong reason. The exhalation/barotrauma physiology gets its own step — it is the part that kills and the part most commonly taught as an afterthought. Ventrain is named because flow-controlled expiration is the one thing that changes the risk calculus."
+}

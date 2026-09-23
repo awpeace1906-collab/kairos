@@ -1,0 +1,670 @@
+{
+  "id": "biologic-drug-nomenclature",
+  "section": "Reference Library",
+  "category": "Critical Care",
+  "title": "Reading a Biologic's Name",
+  "settingEmphasis": [
+    "icu",
+    "ed"
+  ],
+  "aliases": [
+    "monoclonal antibody naming",
+    "mab suffix",
+    "biologic nomenclature",
+    "INN naming",
+    "drug name decoder",
+    "-mab -cept -tug -bart -mig -ment"
+  ],
+  "tags": [
+    "biologic",
+    "monoclonal antibody",
+    "immunotherapy",
+    "drug names",
+    "nomenclature",
+    "checkpoint inhibitor",
+    "ICU",
+    "ED"
+  ],
+  "keywords": [
+    "what does -mab mean",
+    "-zu- -xi- -u- -o- species infix",
+    "-tu- -ki- -li- target infix",
+    "the species slot was dropped in 2017 and -mab retired for new names in 2021",
+    "decodes existing drug names, does not predict new ones",
+    "-cept is a receptor-Fc fusion protein, a different family from -mab"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-09-23",
+  "next_review_due": "2027-03-23",
+  "review_tier": 3,
+  "sources": [
+    "World Health Organization. Revised monoclonal antibody (mAb) nomenclature scheme. INN Working Doc. 17.416, Geneva, 26 May 2017 (Tables 1 and 2: the previous and new substem lists; discontinuation of the source substem at the 64th INN Consultation).",
+    "World Health Organization. New mAb nomenclature. INN Working Doc. 21.531 (November 2021) and 22.542 (May 2022) (73rd INN Consultation: -mab retired for new names, replaced by -tug, -bart, -ment and -mig).",
+    "New INN nomenclature for monoclonal antibodies. Lancet. 2022;399(10319):24.",
+    "Jones TD, Carter PJ, Plückthun A, et al. The INNs and outs of antibody nonproprietary names. MAbs. 2016;8(1):1-9.",
+    "International nonproprietary names for monoclonal antibodies: an evolving nomenclature system. MAbs. 2022;14(1):2075078."
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-23",
+      "change": "New — built from the primary WHO INN documents rather than from secondary teaching material, after a lecture-slide version was found to contain four errors (see the build note). Exists because the decoder is genuinely useful at the bedside and the published versions of it are mostly wrong or mostly out of date."
+    }
+  ],
+  "summary": "A decoder for biologic drug names: what the syllables meant, what the WHO changed in 2017 and 2021, and how far you can actually trust the reading.",
+  "whyThisMatters": "A patient arrives on a drug nobody in the room has heard of. The name itself carries real information — enough to tell you, in a few seconds, that you are probably looking at an oncology antibody rather than an antifungal. That is often all you need to decide what to worry about and who to call. But the scheme was dismantled in two stages, and reading a 2024 drug with a 2010 decoder produces confident nonsense. This card gives you the decoder and its expiry date at the same time.",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What you can read off the name"
+    },
+    {
+      "type": "text",
+      "text": "A legacy biologic name is four parts, read left to right: an invented prefix, a target substem, a species substem, and the stem -mab. The middle two are the useful ones."
+    },
+    {
+      "type": "diagram",
+      "diagram": {
+        "title": "Anatomy of a biologic's name",
+        "caption": "Trastuzumab reads tras + tu (tumor) + zu (humanized) + mab. The WHO dropped the species slot in 2017 and retired -mab itself for newly coined names in 2021 — so this decodes the drugs already in use, not the ones being named now.",
+        "viewBox": [
+          0,
+          0,
+          420,
+          240
+        ],
+        "shapes": [
+          {
+            "kind": "text",
+            "at": [
+              30,
+              22
+            ],
+            "text": "LEGACY NAME — still almost every biologic you will meet",
+            "fontSize": 10,
+            "weight": "bold",
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              30,
+              32
+            ],
+            "size": [
+              96,
+              46
+            ],
+            "fill": "muted",
+            "opacity": 0.18,
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "rect",
+            "at": [
+              126,
+              32
+            ],
+            "size": [
+              70,
+              46
+            ],
+            "fill": "accent",
+            "opacity": 0.22,
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "rect",
+            "at": [
+              196,
+              32
+            ],
+            "size": [
+              70,
+              46
+            ],
+            "fill": "vessel",
+            "opacity": 0.22,
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "rect",
+            "at": [
+              266,
+              32
+            ],
+            "size": [
+              96,
+              46
+            ],
+            "fill": "good",
+            "opacity": 0.22,
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "text",
+            "at": [
+              78,
+              64
+            ],
+            "text": "tras",
+            "fontSize": 18,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              161,
+              64
+            ],
+            "text": "tu",
+            "fontSize": 18,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              231,
+              64
+            ],
+            "text": "zu",
+            "fontSize": 18,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              314,
+              64
+            ],
+            "text": "mab",
+            "fontSize": 18,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "text"
+          },
+          {
+            "kind": "line",
+            "from": [
+              78,
+              80
+            ],
+            "to": [
+              78,
+              90
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "text",
+            "at": [
+              78,
+              101
+            ],
+            "text": "prefix",
+            "fontSize": 10,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              78,
+              112
+            ],
+            "text": "invented, for sound",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "line",
+            "from": [
+              231,
+              80
+            ],
+            "to": [
+              231,
+              90
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "text",
+            "at": [
+              231,
+              101
+            ],
+            "text": "species",
+            "fontSize": 10,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "vessel"
+          },
+          {
+            "kind": "text",
+            "at": [
+              231,
+              112
+            ],
+            "text": "-zu- = humanized",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "line",
+            "from": [
+              161,
+              80
+            ],
+            "to": [
+              161,
+              126
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "text",
+            "at": [
+              161,
+              137
+            ],
+            "text": "target",
+            "fontSize": 10,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "accent"
+          },
+          {
+            "kind": "text",
+            "at": [
+              161,
+              148
+            ],
+            "text": "-tu- = tumor",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "line",
+            "from": [
+              314,
+              80
+            ],
+            "to": [
+              314,
+              126
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "text",
+            "at": [
+              314,
+              137
+            ],
+            "text": "stem",
+            "fontSize": 10,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              314,
+              148
+            ],
+            "text": "-mab = monoclonal antibody",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "line",
+            "from": [
+              30,
+              168
+            ],
+            "to": [
+              390,
+              168
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1,
+            "dash": true
+          },
+          {
+            "kind": "text",
+            "at": [
+              30,
+              186
+            ],
+            "text": "SINCE 2017 — the species slot is gone",
+            "fontSize": 10,
+            "weight": "bold",
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              30,
+              194
+            ],
+            "size": [
+              96,
+              32
+            ],
+            "fill": "muted",
+            "opacity": 0.18,
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "rect",
+            "at": [
+              126,
+              194
+            ],
+            "size": [
+              70,
+              32
+            ],
+            "fill": "accent",
+            "opacity": 0.22,
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "rect",
+            "at": [
+              196,
+              194
+            ],
+            "size": [
+              70,
+              32
+            ],
+            "fill": "danger",
+            "opacity": 0.1,
+            "stroke": "danger",
+            "strokeWidth": 1.2,
+            "dash": true
+          },
+          {
+            "kind": "rect",
+            "at": [
+              266,
+              194
+            ],
+            "size": [
+              96,
+              32
+            ],
+            "fill": "good",
+            "opacity": 0.22,
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "text",
+            "at": [
+              78,
+              215
+            ],
+            "text": "prefix",
+            "fontSize": 11,
+            "anchor": "middle",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              161,
+              215
+            ],
+            "text": "target",
+            "fontSize": 11,
+            "anchor": "middle",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              231,
+              215
+            ],
+            "text": "removed",
+            "fontSize": 9,
+            "anchor": "middle",
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              314,
+              215
+            ],
+            "text": "stem",
+            "fontSize": 11,
+            "anchor": "middle",
+            "fill": "text"
+          }
+        ]
+      }
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "Use this for orientation, not identification. It tells you the class of thing you are looking at, which is usually the question at 3 a.m. It does not tell you the dose, the toxicity profile, or whether the patient's fever is drug-related — and a prefix can be misleading enough that the name should never be the last check before you act."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Target — the substem that tells you what the drug goes after"
+    },
+    {
+      "type": "text",
+      "text": "From WHO Table 1, the scheme that named the drugs currently in use. The letter in brackets appears or drops depending on what sounds right in the finished name."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Substem",
+        "Target class",
+        "Reading it at the bedside"
+      ],
+      "rows": [
+        [
+          "-t(u)-",
+          "tumor",
+          "Oncology. Expect an immunotherapy or a targeted antibody, and expect immune-related adverse events to be on the differential."
+        ],
+        [
+          "-k(i)-",
+          "interleukin",
+          "Interleukin-directed. Chronic inflammatory or autoimmune disease; think infection risk."
+        ],
+        [
+          "-l(i)-",
+          "immunomodulating",
+          "Broader immune modulation. Not the same as -ki-, though the two are often conflated."
+        ],
+        [
+          "-c(i)-",
+          "cardiovascular",
+          "Cardiovascular target — NOT \"circulation\" in the loose sense."
+        ],
+        [
+          "-v(i)-",
+          "viral",
+          "Antiviral antibody."
+        ],
+        [
+          "-b(a)-",
+          "bacterial",
+          "Antibacterial antibody."
+        ],
+        [
+          "-f(u)-",
+          "fungal",
+          "Antifungal antibody."
+        ],
+        [
+          "-n(e)-",
+          "neural",
+          "Neurology target."
+        ],
+        [
+          "-s(o)-",
+          "bone",
+          "Bone — denosumab is the one you already know."
+        ],
+        [
+          "-gr(o)-",
+          "skeletal-muscle-mass-related growth factors and receptors",
+          "Narrower than \"growth factor\" generally."
+        ],
+        [
+          "-tox(a)-",
+          "toxin",
+          "Toxin-directed."
+        ],
+        [
+          "-am(i)-",
+          "serum amyloid protein / amyloidosis",
+          "Amyloid."
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Species — the substem that was dropped"
+    },
+    {
+      "type": "text",
+      "text": "This is the part that tells you where the immunoglobulin sequence came from, and therefore roughly how immunogenic the molecule was expected to be. It was discontinued for new names in 2017 but is still sitting in the names of hundreds of drugs in use."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Substem",
+        "Source"
+      ],
+      "rows": [
+        [
+          "-u-",
+          "human"
+        ],
+        [
+          "-zu-",
+          "humanized"
+        ],
+        [
+          "-xi-",
+          "chimeric"
+        ],
+        [
+          "-xizu-",
+          "chimeric-humanized"
+        ],
+        [
+          "-o-",
+          "mouse"
+        ],
+        [
+          "-a-",
+          "rat"
+        ],
+        [
+          "-axo-",
+          "rat/mouse"
+        ],
+        [
+          "-e-",
+          "hamster"
+        ],
+        [
+          "-i-",
+          "primate"
+        ],
+        [
+          "-vet-",
+          "veterinary"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Rough clinical intuition, and it is only rough: the further from -u-, the more foreign the molecule and the more infusion reactions and anti-drug antibodies were historically expected. Do not use this to predict tolerability in an individual patient."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "What changed, and why your decoder has an expiry date"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "text": "2017 — the source substem was discontinued (64th INN Consultation), keeping only -vet- for veterinary use.",
+          "items": [
+            "Two reasons were given: unique pronounceable names were becoming hard to find, and the species infix was being used as a marketing tool, with particular infixes treated as \"better\" despite no supporting data.",
+            "Target substems were respelled at the same time: -ba-, -ami-, -ci-, -fung-, -gros-, -ki-, -li-, -ne-, -os-, -toxa-, -ta- (replacing -t(u)-), -vi-."
+          ]
+        },
+        {
+          "text": "2021 — -mab itself was retired for new names (73rd INN Consultation), split four ways by molecular form.",
+          "items": [
+            "-tug — a full-length unmodified immunoglobulin, the kind that could occur in the immune system as it is.",
+            "-bart — a full-length artificial antibody, containing one or more engineered regions.",
+            "-ment — a monospecific fragment derived from an immunoglobulin variable domain.",
+            "-mig — a bispecific or multispecific immunoglobulin, whatever its format."
+          ]
+        },
+        "Nothing was renamed. Every drug named under the old scheme kept its name, which is exactly why the legacy decoder is still worth carrying."
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "The practical rule: if the name ends in -mab, the syllables mean what this card says. If it ends in -tug, -bart, -ment or -mig, the drug was named after 2021 — read the stem for the molecular form, read the target substem, and do not look for a species."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Related stems that are not -mab"
+    },
+    {
+      "type": "list",
+      "items": [
+        "-cept — a receptor-Fc fusion protein, not an antibody: etanercept, aflibercept, abatacept. Same therapeutic neighborhood, different molecule, different family of names.",
+        "-tinib — a small-molecule kinase inhibitor. Oral, small, and nothing to do with the antibody scheme, but often sitting on the same medication list.",
+        "-ximab, -zumab, -umab — not separate stems. These are the species substem plus -mab run together, which is why they look like units and are not.",
+        "-vedotin, -deruxtecan, -emtansine — a payload appended to an antibody name, marking an antibody-drug conjugate. The toxicity you need to worry about is usually the payload's, not the antibody's."
+      ]
+    }
+  ],
+  "clinicalTakeaway": "Read the name for orientation in the first ten seconds — target substem, then stem — and then stop and look the drug up. If it ends in -mab the decoder holds; if it ends in -tug, -bart, -ment or -mig the drug is post-2021 and there is no species to read. And whatever the name says, an antibody-conjugate payload or an immune-related adverse event is far more likely to be what brought the patient in than anything the syllables can tell you.",
+  "buildNote": "Built 2026-09-23 from the primary WHO INN documents (Working Doc. 17.416 Tables 1 and 2; 21.531 / 22.542) rather than from secondary material. A widely-taught lecture-slide version of this decoder was checked against the WHO tables and had four errors: -ci- given as \"circulation\" rather than cardiovascular; -gro- given as \"growth factor\" generally rather than skeletal-muscle-mass-related growth factors; -ki- and -li- merged into one \"interleukin or immune\" bucket when they are two different targets; and -am(i)-, -tox(a)-, -n(e)- and -v(i)- omitted entirely. The card is deliberately framed as a legacy decoder with a stated expiry date, which was the user's call — the scheme is still the fastest way to place an unfamiliar drug, but a reader applying it to a 2024 approval would get a confident wrong answer. The diagram carries the two-stage change in one figure so the reader sees the removal rather than reading about it."
+}
