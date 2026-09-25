@@ -8,7 +8,11 @@ ios/Generated/
 tools/dist/
 
 # Xcode
-ios/Kairos.xcodeproj/
+# Glob rather than the exact name: this repo lives in iCloud-synced
+# ~/Documents, and when xcodegen rewrites the project mid-sync iCloud leaves a
+# conflict copy named "Kairos 2.xcodeproj". The exact-name rule let that copy
+# show as untracked, one `git add -A` away from being committed.
+ios/*.xcodeproj/
 ios/*.xcworkspace/
 ios/DerivedData/
 ios/build/
