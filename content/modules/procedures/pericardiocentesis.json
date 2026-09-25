@@ -3,12 +3,33 @@
   "section": "Procedures",
   "category": "Vascular & Thoracic Access",
   "title": "Pericardiocentesis",
-  "settingEmphasis": ["ed", "icu"],
-  "aliases": ["pericardial tap", "cardiac tamponade drainage", "subxiphoid pericardiocentesis"],
-  "tags": ["pericardiocentesis", "cardiac tamponade", "pericardial effusion", "ultrasound-guided", "ED", "ICU", "procedure"],
-  "keywords": ["ultrasound-guided is standard of care over blind landmark technique", "even a small volume drained can dramatically improve tamponade physiology", "subxiphoid classic landmark aim toward left shoulder", "traumatic hemopericardium is often only a bridge to thoracotomy not definitive", "thread a pigtail catheter rather than removing the needle immediately"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "pericardial tap",
+    "cardiac tamponade drainage",
+    "subxiphoid pericardiocentesis"
+  ],
+  "tags": [
+    "pericardiocentesis",
+    "cardiac tamponade",
+    "pericardial effusion",
+    "ultrasound-guided",
+    "ED",
+    "ICU",
+    "procedure"
+  ],
+  "keywords": [
+    "ultrasound-guided is standard of care over blind landmark technique",
+    "even a small volume drained can dramatically improve tamponade physiology",
+    "subxiphoid classic landmark aim toward left shoulder",
+    "traumatic hemopericardium is often only a bridge to thoracotomy not definitive",
+    "thread a pigtail catheter rather than removing the needle immediately"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-14",
   "next_review_due": "2026-12-14",
   "review_tier": 1,
@@ -18,7 +39,16 @@
     "Loukas M, et al. A review of the anatomy of the pericardium and pericardiocentesis technique. Clin Anat. 2012."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap. Pericardiocentesis was referenced from shock-classification, trauma-primary-survey, traumatic-cardiac-arrest, efast-exam, and anesthesia-pocus as if it existed as its own procedure, but no walkthrough existed. Sequential workflow: recognition, site selection, ultrasound-guided technique, confirmation, and the traumatic-vs-medical nuance (temporizing bridge vs. potentially definitive)." }
+    {
+      "version": 1,
+      "date": "2026-09-14",
+      "change": "Initial entry — a genuine content gap. Pericardiocentesis was referenced from shock-classification, trauma-primary-survey, traumatic-cardiac-arrest, efast-exam, and anesthesia-pocus as if it existed as its own procedure, but no walkthrough existed. Sequential workflow: recognition, site selection, ultrasound-guided technique, confirmation, and the traumatic-vs-medical nuance (temporizing bridge vs. potentially definitive)."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-24",
+      "change": "Added a landmark figure on the classic-landmark step: the subxiphoid entry point, needle path toward the left shoulder, and the apical window overlaid on Gray's Anatomy plate 1218 (public domain). The needle path is drawn in green so it stands out against the red heart."
+    }
   ],
   "outputType": "workflow",
   "purpose": "Needle decompression of a pericardial effusion causing tamponade physiology — site selection, ultrasound-guided technique, and the distinction between a temporizing bridge (traumatic hemopericardium) and a potentially definitive drainage (medical effusion).",
@@ -40,7 +70,328 @@
       "id": "classic-landmark",
       "type": "step",
       "prompt": "3. Classic subxiphoid landmark (if ultrasound genuinely isn't available)",
-      "body": "Patient supine, head of bed 30-45° to pool the effusion inferiorly. Entry point 1-2 cm left and inferior to the xiphoid process. Advance the needle at a shallow 15-30° angle to the skin, aiming toward the left shoulder, under continuous gentle aspiration. If an ECG lead is clipped to the needle hub, ST-segment elevation or ectopy means the needle tip is touching ventricular myocardium — withdraw slightly."
+      "body": "Patient supine, head of bed 30-45° to pool the effusion inferiorly. Entry point 1-2 cm left and inferior to the xiphoid process. Advance the needle at a shallow 15-30° angle to the skin, aiming toward the left shoulder, under continuous gentle aspiration. If an ECG lead is clipped to the needle hub, ST-segment elevation or ectopy means the needle tip is touching ventricular myocardium — withdraw slightly.",
+      "diagram": {
+        "title": "Subxiphoid approach, on the heart's surface projection",
+        "caption": "Front view: the patient's left is on the right of the picture, where the left ventricle and apex sit. From the entry point just below and to the left of the xiphoid, the needle passes under the costal margin at a shallow 15-30 degrees to the skin, aimed at the left shoulder, to meet the inferior (diaphragmatic) surface of the heart — mostly right ventricle, which is why ECG ST elevation or ectopy from a needle-clipped lead means myocardium. The left lobe of the liver lies just deep to the entry point. Where ultrasound is available it chooses the window instead, often the apex, where the fluid is deepest and closest. The overlay is placed by hand on an engraving; on the patient the landmark is the xiphoid tip you palpate.",
+        "viewBox": [
+          60,
+          130,
+          349,
+          300
+        ],
+        "image": {
+          "src": "assets/figures/gray1218.png",
+          "width": 409,
+          "height": 500,
+          "credit": "Plate: Henry Vandyke Carter, Gray's Anatomy of the Human Body, 20th ed. (1918), fig. 1218 — public domain. Overlay: Kairos.",
+          "license": "public-domain",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray1218.png",
+          "sha1": "a9c762fa8e42b75b633151ec940124c66c1033f5"
+        },
+        "shapes": [
+          {
+            "kind": "circle",
+            "at": [
+              205,
+              376
+            ],
+            "r": 4,
+            "stroke": "outline",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "line",
+            "from": [
+              242.6,
+              305.1
+            ],
+            "to": [
+              271.0,
+              203.0
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4,
+            "dash": true
+          },
+          {
+            "kind": "arrow",
+            "from": [
+              220,
+              386
+            ],
+            "to": [
+              242.6,
+              305.1
+            ],
+            "stroke": "good",
+            "strokeWidth": 3
+          },
+          {
+            "kind": "circle",
+            "at": [
+              220,
+              386
+            ],
+            "r": 5.5,
+            "fill": "good",
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "circle",
+            "at": [
+              320,
+              318
+            ],
+            "r": 9,
+            "stroke": "vessel",
+            "strokeWidth": 2
+          },
+          {
+            "kind": "rect",
+            "at": [
+              84,
+              334
+            ],
+            "size": [
+              104,
+              30
+            ],
+            "rx": 3,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              89,
+              346
+            ],
+            "text": "Xiphoid process",
+            "fontSize": 10,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              89,
+              358
+            ],
+            "text": "tip at the circle",
+            "fontSize": 9,
+            "fill": "muted"
+          },
+          {
+            "kind": "line",
+            "from": [
+              188,
+              348
+            ],
+            "to": [
+              201,
+              373
+            ],
+            "stroke": "outline",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "rect",
+            "at": [
+              236,
+              380
+            ],
+            "size": [
+              170,
+              42
+            ],
+            "rx": 3,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              241,
+              393
+            ],
+            "text": "ENTRY: 1-2 cm below and",
+            "fontSize": 10,
+            "weight": "bold",
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              241,
+              405
+            ],
+            "text": "left of the xiphoid",
+            "fontSize": 10,
+            "weight": "bold",
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              241,
+              417
+            ],
+            "text": "(the patient's left)",
+            "fontSize": 9,
+            "fill": "muted"
+          },
+          {
+            "kind": "line",
+            "from": [
+              226,
+              387
+            ],
+            "to": [
+              236,
+              392
+            ],
+            "stroke": "outline",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "rect",
+            "at": [
+              262,
+              196
+            ],
+            "size": [
+              146,
+              42
+            ],
+            "rx": 3,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              267,
+              209
+            ],
+            "text": "AIM: left shoulder,",
+            "fontSize": 10,
+            "weight": "bold",
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              267,
+              221
+            ],
+            "text": "15-30 degrees to skin,",
+            "fontSize": 9,
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              267,
+              233
+            ],
+            "text": "aspirating the whole way",
+            "fontSize": 9,
+            "fill": "text"
+          },
+          {
+            "kind": "line",
+            "from": [
+              262,
+              222
+            ],
+            "to": [
+              262,
+              247
+            ],
+            "stroke": "outline",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "rect",
+            "at": [
+              300,
+              334
+            ],
+            "size": [
+              108,
+              30
+            ],
+            "rx": 3,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              305,
+              346
+            ],
+            "text": "Apical window",
+            "fontSize": 10,
+            "weight": "bold",
+            "fill": "vessel"
+          },
+          {
+            "kind": "text",
+            "at": [
+              305,
+              358
+            ],
+            "text": "ultrasound-guided",
+            "fontSize": 9,
+            "fill": "muted"
+          },
+          {
+            "kind": "line",
+            "from": [
+              322,
+              327
+            ],
+            "to": [
+              330,
+              334
+            ],
+            "stroke": "outline",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "text",
+            "at": [
+              66,
+              142
+            ],
+            "text": "patient's right",
+            "fontSize": 9,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              405,
+              142
+            ],
+            "text": "patient's left",
+            "fontSize": 9,
+            "anchor": "end",
+            "fill": "muted"
+          }
+        ]
+      }
     },
     {
       "id": "technique",
@@ -68,6 +419,12 @@
     "A pigtail catheter left in place rather than a single needle aspiration, when feasible",
     "For trauma: surgery involved early — pericardiocentesis is a bridge, not the definitive answer, for hemopericardium"
   ],
-  "crossLinks": ["shock-classification", "trauma-primary-survey", "traumatic-cardiac-arrest", "efast-exam", "anesthesia-pocus"],
+  "crossLinks": [
+    "shock-classification",
+    "trauma-primary-survey",
+    "traumatic-cardiac-arrest",
+    "efast-exam",
+    "anesthesia-pocus"
+  ],
   "buildNote": "workflow outputType, sequential with one warning node for the traumatic-hemopericardium caveat. Deliberately doesn't restate tamponade pathophysiology or the broader shock-classification framework — this is the hands-on technique sequence, cross-linked to the modules that already cover recognition and the broader trauma-arrest algorithm."
 }

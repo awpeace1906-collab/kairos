@@ -2409,8 +2409,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/pericardiocentesis": {
-      "content_version": 1,
-      "hash": "38f931d1400d6652",
+      "content_version": 2,
+      "hash": "8e821741148c6b8e",
       "path": "modules/procedures/pericardiocentesis.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -3957,14 +3957,6 @@
     }
   },
   "assets": {
-    "assets/figures/gray1195.png": {
-      "sha1": "3a7149ddd2a1123123a09d56135cd3dca8e15507",
-      "bytes": 122629
-    },
-    "assets/figures/gray1211.png": {
-      "sha1": "5d7cd957f68e122238d355eb10cc7f0b12ea9e18",
-      "bytes": 139491
-    },
     "assets/figures/gray1215.png": {
       "sha1": "539890420519d1a54975ccc2363ae7b66d193dea",
       "bytes": 87700
@@ -3976,10 +3968,6 @@
     "assets/figures/gray1218.png": {
       "sha1": "a9c762fa8e42b75b633151ec940124c66c1033f5",
       "bytes": 37698
-    },
-    "assets/figures/gray1220.png": {
-      "sha1": "6972393faf89d509405e7992b06025e14ae88b07",
-      "bytes": 38453
     }
   }
 }
