@@ -644,6 +644,13 @@ struct ListItem: Codable, Hashable, Identifiable {
     /// and the text is what distinguishes them on screen.
     var id: String { "\(text)|\(items?.count ?? 0)" }
 
+    /// Built in code by RichText, for list lines inside a prose field.
+    init(text: String, ordered: Bool = false, items: [ListItem]? = nil) {
+        self.text = text
+        self.ordered = ordered
+        self.items = items
+    }
+
     init(from decoder: Decoder) throws {
         if let flat = try? decoder.singleValueContainer().decode(String.self) {
             text = flat

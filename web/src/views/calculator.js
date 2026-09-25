@@ -2,6 +2,7 @@ import { el, mount, clearableField, clearFieldsButton, lastVerified, severityCla
 import { runCalculator } from "../lib/calcEngine.js";
 import { evaluate } from "../lib/expr.js";
 import { session } from "../lib/session.js";
+import { richText } from "./prose.js";
 
 export function renderCalculator(mod, route) {
   const saved = session.get(route);
@@ -21,7 +22,7 @@ export function renderCalculator(mod, route) {
     container,
     el("h1", {}, mod.title),
     mod.settings?.length ? el("p", { class: "settings" }, mod.settings.join(" · ")) : null,
-    el("p", { class: "purpose" }, mod.purpose),
+    richText(mod.purpose, "purpose"),
     flagsBanner(mod)
   );
 
@@ -98,7 +99,7 @@ export function renderCalculator(mod, route) {
     })),
     resultBox,
     mod.plot ? plotBox : null,
-    mod.notes ? el("p", { class: "notes" }, mod.notes) : null,
+    richText(mod.notes, "notes"),
     mod.buildNote ? el("details", { class: "build-note" }, el("summary", {}, "Build note"), el("p", {}, mod.buildNote)) : null,
     sourcesBlock(mod),
     lastVerified(mod)
@@ -154,7 +155,7 @@ function resultView(mod, r) {
             { class: `band ${severityClass(band.severity)}` },
             el("strong", {}, band.label),
             band.risk ? el("p", {}, band.risk) : null,
-            band.disposition ? el("p", { class: "dispo" }, band.disposition) : null
+            richText(band.disposition, "dispo")
           )
         : null,
     ];

@@ -36,7 +36,7 @@ struct CalculatorView: View {
             }
 
             if let notes = calc.notes {
-                Text(notes).font(Theme.footnote).foregroundStyle(.secondary)
+                RichText(notes).font(Theme.footnote).foregroundStyle(.secondary)
             }
             BuildNote(text: calc.buildNote)
             SourcesBlock(meta: calc.meta)
@@ -54,7 +54,7 @@ struct CalculatorView: View {
             if let s = calc.settings, !s.isEmpty {
                 Text(s.joined(separator: " · ")).font(Theme.caption).foregroundStyle(.secondary)
             }
-            Text(calc.purpose).foregroundStyle(.secondary)
+            RichText(calc.purpose).foregroundStyle(.secondary)
             if let flags = calc.meta.flags, !flags.isEmpty {
                 HStack { ForEach(flags, id: \.self) { flag in
                     Text(flag).font(Theme.caption2).padding(.horizontal, 6).padding(.vertical, 2)
@@ -180,7 +180,7 @@ struct CalculatorView: View {
         VStack(alignment: .leading, spacing: 2) {
             Text(b.label).bold()
             if let r = b.risk { Text(r).font(Theme.callout) }
-            if let d = b.disposition { Text(d).font(Theme.callout).foregroundStyle(.secondary) }
+            if let d = b.disposition { RichText(d).font(Theme.callout).foregroundStyle(.secondary) }
             if let d = b.detail { Text(d).font(Theme.callout).foregroundStyle(.secondary) }
         }
         .padding(10)

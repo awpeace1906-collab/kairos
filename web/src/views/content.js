@@ -3,6 +3,7 @@ import { renderCalculator } from "./calculator.js";
 import { zoneForWeight, doseFromRule, estimateWeight, obesityCheck } from "../lib/weightZones.js";
 import { session } from "../lib/session.js";
 import { assetUrl } from "../lib/contentStore.js";
+import { renderList, renderTable, richText } from "./prose.js";
 
 export function renderContent(mod, route, store) {
   switch (mod.contentType) {
@@ -28,44 +29,12 @@ function shell(mod, ...body) {
     "section",
     { class: `content ${mod.contentType}`, style: tintStyle(mod) },
     el("h1", {}, mod.title),
-    mod.summary ? el("p", { class: "purpose" }, mod.summary) : null,
-    mod.purpose ? el("p", { class: "purpose" }, mod.purpose) : null,
+    richText(mod.summary, "purpose"),
+    richText(mod.purpose, "purpose"),
     ...body,
     mod.buildNote ? el("details", { class: "build-note" }, el("summary", {}, "Build note"), el("p", {}, mod.buildNote)) : null,
     sourcesBlock(mod),
     lastVerified(mod)
-  );
-}
-
-/** A "Term: the rest of the sentence" list item gets its lead term bolded —
-    purely presentational (never changes the text), and degrades to plain text
-    for any item that isn't shaped that way. Short lead-in only (<=7 words) so
-    a colon appearing mid-sentence in ordinary prose doesn't get misread as a label. */
-function listItem(item) {
-  // An item is either a plain string (leaf) or { text, items?, ordered? }.
-  const text = typeof item === "string" ? item : item?.text ?? "";
-  const children = typeof item === "string" ? null : item?.items;
-
-  const m = /^([^:]{2,50}):\s(.+)$/s.exec(text);
-  const lead =
-    m && m[1].trim().split(/\s+/).length <= 7
-      ? [el("strong", {}, m[1] + ":"), " " + m[2]]
-      : [text];
-
-  return el(
-    "li",
-    {},
-    ...lead,
-    children?.length ? renderList(children, item.ordered) : null,
-  );
-}
-
-/** A list at any nesting level. `ordered` numbers this level only. */
-function renderList(items, ordered) {
-  return el(
-    ordered ? "ol" : "ul",
-    ordered ? { class: "numbered" } : {},
-    (items || []).map(listItem),
   );
 }
 
@@ -195,24 +164,15 @@ export function renderBlocks(body) {
       case "heading":
         return el(`h${b.level || 2}`, {}, b.text);
       case "text":
-        return el("p", {}, b.text);
+        return richText(b.text);
       case "list":
         return renderList(b.items, b.ordered);
       case "callout":
-        return el("div", { class: `callout ${b.tone || "info"}` }, b.text);
+        return el("div", { class: `callout ${b.tone || "info"}` }, richText(b.text));
       case "diagram":
         return renderDiagram(b.diagram);
       case "table":
-        return el(
-          "div",
-          { class: "table-wrap" },
-          el(
-            "table",
-            {},
-            el("thead", {}, el("tr", {}, (b.columns || []).map((c) => el("th", {}, c)))),
-            el("tbody", {}, (b.rows || []).map((row) => el("tr", {}, row.map((cell) => el("td", {}, cell)))))
-          )
-        );
+        return renderTable(b.columns, b.rows);
       default:
         return null;
     }
@@ -222,9 +182,9 @@ export function renderBlocks(body) {
 function renderReference(mod) {
   return shell(
     mod,
-    mod.whyThisMatters ? el("div", { class: "why-matters" }, el("h4", {}, "Why this matters"), el("p", {}, mod.whyThisMatters)) : null,
+    mod.whyThisMatters ? el("div", { class: "why-matters" }, el("h4", {}, "Why this matters"), richText(mod.whyThisMatters)) : null,
     el("div", { class: "prose" }, ...renderBlocks(mod.body)),
-    mod.clinicalTakeaway ? el("div", { class: "takeaway" }, el("h4", {}, "Clinical takeaway"), el("p", {}, mod.clinicalTakeaway)) : null
+    mod.clinicalTakeaway ? el("div", { class: "takeaway" }, el("h4", {}, "Clinical takeaway"), richText(mod.clinicalTakeaway)) : null
   );
 }
 
@@ -261,7 +221,7 @@ function renderAnesthesiaDrugCard(mod) {
       mod.tallManLetters ? el("strong", { class: "tall-man" }, mod.tallManLetters) : mod.title,
       mod.brandName ? el("span", { class: "muted" }, ` · ${mod.brandName}`) : null,
       el("span", { class: "muted" }, ` · ${mod.drugClassLabel}`)),
-    el("p", { class: "purpose" }, mod.mechanism),
+    richText(mod.mechanism, "purpose"),
     el("div", { class: "adc-grid" },
       field("Onset", mod.onset),
       field("Duration", mod.duration),
@@ -301,7 +261,7 @@ function workflowList(mod) {
         "div",
         { class: "node-body" },
         n.prompt ? el("strong", {}, n.prompt) : null,
-        n.body ? el("p", {}, n.body) : null,
+        richText(n.body),
         n.substeps ? renderList(n.substeps.items, n.substeps.ordered) : null,
         n.diagram ? renderDiagram(n.diagram) : null
       )
@@ -327,7 +287,7 @@ function treeWalker(mod) {
     }));
     const bodyEls = [
       node.prompt ? el("h3", {}, node.prompt) : null,
-      node.body ? el("p", { class: `node ${node.type}` }, node.body) : null,
+      richText(node.body, `node ${node.type}`),
       node.substeps ? renderList(node.substeps.items, node.substeps.ordered) : null,
       node.diagram ? renderDiagram(node.diagram) : null,
     ];
@@ -441,7 +401,7 @@ function renderDrugCard(mod, route, store) {
             dose.capped ? el("span", { class: "flag" }, " max-dose cap") : null,
             dose.floored ? el("span", { class: "flag" }, " min-dose floor") : null),
           dose.repeat ? el("div", { class: "muted" }, dose.repeat) : null,
-          d.notes ? el("div", { class: "muted" }, d.notes) : null
+          richText(d.notes, "muted")
         );
       }),
       el("p", { class: "disclaimer" }, cfg.disclaimer)
@@ -469,7 +429,7 @@ function renderDrugCard(mod, route, store) {
 function renderPedsTool(mod, route, store) {
   if (mod.embeddedCalculator) {
     const node = renderCalculator({ ...mod.embeddedCalculator, title: mod.title }, route);
-    const intro = mount(el("div"), el("p", { class: "purpose" }, mod.purpose), mod.ageRange ? el("p", { class: "muted" }, mod.ageRange) : null);
+    const intro = mount(el("div"), richText(mod.purpose, "purpose"), mod.ageRange ? el("p", { class: "muted" }, mod.ageRange) : null);
     node.prepend(...intro.childNodes);
     // A peds-tool may carry an explanatory body alongside its calculator
     // (matches the iOS PedsToolBody behavior).

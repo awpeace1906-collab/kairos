@@ -106,7 +106,7 @@ struct ReferenceBody: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             if let summary = doc.summary {
-                Text(summary).foregroundStyle(.secondary)
+                RichText(summary).foregroundStyle(.secondary)
             }
             if let why = doc.whyThisMatters {
                 framedNote("WHY THIS MATTERS", why)
@@ -126,7 +126,7 @@ struct ReferenceBody: View {
         VStack(alignment: .leading, spacing: 4) {
             Text(label).font(Theme.mono(11)).tracking(0.8)
                 .foregroundStyle(emphasized ? Theme.accent : Color.secondary)
-            Text(text).font(Theme.callout).fontWeight(emphasized ? .medium : .regular)
+            RichText(text).font(Theme.callout).fontWeight(emphasized ? .medium : .regular)
         }
         .padding(10)
         .frame(maxWidth: .infinity, alignment: .leading)
@@ -175,94 +175,21 @@ struct BlockList: View {
                 Text(b.text ?? "").font(Theme.display(16))
             }
         case "text":
-            Text(b.text ?? "")
+            RichText(b.text ?? "")
         case "list":
             ContentListView(items: b.items ?? [], ordered: b.ordered ?? false)
         case "callout":
-            Text(b.text ?? "")
+            RichText(b.text ?? "")
                 .padding(10)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .background(calloutColor(b.tone).opacity(0.15), in: RoundedRectangle(cornerRadius: 10))
                 .overlay(alignment: .leading) { Rectangle().fill(calloutColor(b.tone)).frame(width: 4) }
         case "table":
-            tableView(columns: b.columns ?? [], rows: b.rows ?? [])
+            TableBlock(columns: b.columns ?? [], rows: b.rows ?? [])
         case "diagram":
             if let d = b.diagram { DiagramView(diagram: d) }
         default:
             EmptyView()
-        }
-    }
-
-    /// Tables with a few columns lay out full-width with flexible, wrapping
-    /// columns — no scroll needed, and no fixed width guessing at the screen
-    /// size. Only genuinely dense tables (4+ columns, e.g. an induction-agent
-    /// hemodynamic table) fall back to a fixed-column-width horizontal scroll,
-    /// since flexible columns would squeeze those illegibly on a phone.
-    @ViewBuilder private func tableView(columns: [String], rows: [[String]]) -> some View {
-        let colCount = max(columns.count, rows.map(\.count).max() ?? 1)
-        if colCount <= 3 {
-            flexibleTable(columns: columns, rows: rows, colCount: colCount)
-        } else {
-            let colWidth: CGFloat = max(116, min(210, 640 / CGFloat(max(colCount, 1))))
-            ScrollView(.horizontal, showsIndicators: true) {
-                fixedWidthTable(columns: columns, rows: rows, colWidth: colWidth)
-            }
-        }
-    }
-
-    @ViewBuilder private func flexibleTable(columns: [String], rows: [[String]], colCount: Int) -> some View {
-        VStack(alignment: .leading, spacing: 0) {
-            if !columns.isEmpty {
-                HStack(alignment: .top, spacing: 12) {
-                    ForEach(Array(columns.enumerated()), id: \.offset) { _, c in
-                        Text(c.uppercased()).font(Theme.mono(11)).tracking(0.4)
-                            .foregroundStyle(.secondary)
-                            .frame(maxWidth: .infinity, alignment: .topLeading)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
-                }
-                .padding(.vertical, 6)
-                Divider()
-            }
-            ForEach(Array(rows.enumerated()), id: \.offset) { idx, row in
-                HStack(alignment: .top, spacing: 12) {
-                    ForEach(Array(row.enumerated()), id: \.offset) { _, cell in
-                        Text(cell).font(Theme.callout)
-                            .frame(maxWidth: .infinity, alignment: .topLeading)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
-                }
-                .padding(.vertical, 6)
-                if idx < rows.count - 1 { Divider().opacity(0.4) }
-            }
-        }
-    }
-
-    @ViewBuilder private func fixedWidthTable(columns: [String], rows: [[String]], colWidth: CGFloat) -> some View {
-        VStack(alignment: .leading, spacing: 0) {
-            if !columns.isEmpty {
-                HStack(alignment: .top, spacing: 12) {
-                    ForEach(Array(columns.enumerated()), id: \.offset) { _, c in
-                        Text(c.uppercased()).font(Theme.mono(11)).tracking(0.4)
-                            .foregroundStyle(.secondary)
-                            .frame(width: colWidth, alignment: .topLeading)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
-                }
-                .padding(.vertical, 6)
-                Divider()
-            }
-            ForEach(Array(rows.enumerated()), id: \.offset) { idx, row in
-                HStack(alignment: .top, spacing: 12) {
-                    ForEach(Array(row.enumerated()), id: \.offset) { _, cell in
-                        Text(cell).font(Theme.callout)
-                            .frame(width: colWidth, alignment: .topLeading)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
-                }
-                .padding(.vertical, 6)
-                if idx < rows.count - 1 { Divider().opacity(0.4) }
-            }
         }
     }
 
@@ -287,7 +214,7 @@ struct ProcedureBody: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(proc.purpose).foregroundStyle(.secondary)
+            RichText(proc.purpose).foregroundStyle(.secondary)
             Text(proc.outputType.uppercased() + (proc.meta.flags?.contains("stub") == true ? " · STUB" : ""))
                 .font(Theme.caption).foregroundStyle(.secondary)
             if let prompt = proc.entryPrompt { Text(prompt).font(Theme.headline) }
@@ -336,7 +263,7 @@ struct WorkflowNodeCard: View {
                 .background(isWarning ? Theme.severityColor("high") : Theme.accent, in: Circle())
             VStack(alignment: .leading, spacing: 4) {
                 if let p = node.prompt { Text(p).font(Theme.subheadline).fontWeight(.semibold) }
-                if let b = node.body { Text(b).font(Theme.callout) }
+                if let b = node.body { RichText(b).font(Theme.callout) }
                 if let sub = node.substeps {
                     ContentListView(items: sub.items, ordered: sub.ordered)
                         .font(Theme.callout)
@@ -374,7 +301,7 @@ struct ProcedureWalker: View {
             if let node = current {
                 if let p = node.prompt { Text(p).font(Theme.headline) }
                 if let b = node.body {
-                    Text(b)
+                    RichText(b)
                         .padding(10)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .background((node.type == "warning" ? Color.red : Color.green).opacity(0.12), in: RoundedRectangle(cornerRadius: 8))
@@ -421,7 +348,7 @@ struct PedsToolBody: View {
     let route: String
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
-            Text(tool.purpose).foregroundStyle(.secondary)
+            RichText(tool.purpose).foregroundStyle(.secondary)
             if let age = tool.ageRange { Text(age).font(Theme.caption).foregroundStyle(.secondary) }
             if let embedded = tool.embeddedCalculator {
                 CalculatorView(calc: embedded, route: route)
@@ -448,7 +375,7 @@ struct AnesthesiaDrugCardBody: View {
                 if let b = card.brandName { Text("· \(b)").foregroundStyle(.secondary) }
             }
             Text(card.drugClassLabel).font(Theme.caption).foregroundStyle(.secondary)
-            Text(card.mechanism).foregroundStyle(.secondary)
+            RichText(card.mechanism).foregroundStyle(.secondary)
 
             HStack(spacing: 20) {
                 labeled("Onset", card.onset)

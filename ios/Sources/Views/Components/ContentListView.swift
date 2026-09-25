@@ -18,7 +18,14 @@ struct ContentListView: View {
         VStack(alignment: .leading, spacing: 4) {
             ForEach(Array(items.enumerated()), id: \.offset) { index, item in
                 VStack(alignment: .leading, spacing: 4) {
-                    Self.line(marker: marker(index), text: item.text)
+                    // Marker in its own column, so a wrapped line hangs under
+                    // the text rather than running back under the bullet.
+                    HStack(alignment: .firstTextBaseline, spacing: 5) {
+                        Text(marker(index))
+                            .frame(minWidth: ordered ? 16 : 8, alignment: .leading)
+                        Self.leadText(item.text)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
                     if let children = item.items, !children.isEmpty {
                         ContentListView(
                             items: children,
@@ -75,13 +82,16 @@ struct ContentListView: View {
     /// isn't shaped that way. Short lead-in only (<= 7 words) so a colon
     /// appearing mid-sentence in ordinary prose isn't misread as a label.
     static func line(marker: String, text: String) -> Text {
-        let prefix = Text("\(marker) ")
-        guard let colonRange = text.range(of: ": ") else { return prefix + Text(text) }
+        Text("\(marker) ") + leadText(text)
+    }
+
+    static func leadText(_ text: String) -> Text {
+        guard let colonRange = text.range(of: ": ") else { return Text(text) }
         let leadLength = text.distance(from: text.startIndex, to: colonRange.lowerBound)
-        guard leadLength >= 2, leadLength <= 50 else { return prefix + Text(text) }
+        guard leadLength >= 2, leadLength <= 50 else { return Text(text) }
         let lead = String(text[text.startIndex..<colonRange.lowerBound])
-        guard lead.split(separator: " ").count <= 7 else { return prefix + Text(text) }
+        guard lead.split(separator: " ").count <= 7 else { return Text(text) }
         let rest = String(text[colonRange.upperBound...])
-        return prefix + Text("\(lead):").fontWeight(.semibold) + Text(" \(rest)")
+        return Text("\(lead):").fontWeight(.semibold) + Text(" \(rest)")
     }
 }

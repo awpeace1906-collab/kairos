@@ -282,3 +282,50 @@ final class DiagramPlateTests: XCTestCase {
         XCTAssertNil(d.image)
     }
 }
+
+/// The Swift port of the Kairos text format must read content exactly as
+/// web/src/lib/richText.js does — these mirror the cases in tools/test.mjs.
+final class RichTextFormatTests: XCTestCase {
+    typealias F = RichTextFormat
+
+    func testPlainTextIsOneParagraph() {
+        XCTAssertEqual(F.parse("One plain sentence."), [.paragraph(["One plain sentence."])])
+    }
+
+    func testParagraphsBreaksAndLists() {
+        let b = F.parse("Intro line.\n\nSecond para\nwith a break.\n- first\n- second\n  - nested\n\n1. step one\n2. step two")
+        XCTAssertEqual(b.count, 4)
+        XCTAssertEqual(b[1], .paragraph(["Second para", "with a break."]))
+        guard case .list(let ordered, let items) = b[2] else { return XCTFail("expected a list") }
+        XCTAssertFalse(ordered)
+        XCTAssertEqual(items.count, 2)
+        XCTAssertEqual(items[1].items.first?.text, "nested")
+        guard case .list(let o2, let steps) = b[3] else { return XCTFail("expected a list") }
+        XCTAssertTrue(o2)
+        XCTAssertEqual(steps[1].text, "step two")
+    }
+
+    func testContinuationAndDecimals() {
+        guard case .list(_, let items)? = F.parse("- a long item\n  that wraps on\n- next").first else { return XCTFail() }
+        XCTAssertEqual(items[0].text, "a long item that wraps on")
+        XCTAssertEqual(F.parse("2.5 mg/kg IV"), [.paragraph(["2.5 mg/kg IV"])])
+        XCTAssertEqual(F.parse("a\r\n\r\nb").count, 2)
+    }
+
+    func testLeadLabel() {
+        XCTAssertEqual(F.leadLabel("LEVEL: posterior axillary line")?.0, "LEVEL:")
+        XCTAssertNil(F.leadLabel("Note the ratio: 2 to 1"))
+        XCTAssertNil(F.leadLabel("A: something"))
+    }
+
+    func testTableWeightsAlignWithWeb() {
+        let w = TableBlock.weights(columns: ["Agent", "Dose", "Notes"],
+                                   rows: [["Ketamine", "1-2 mg/kg", "Maintains airway reflexes and respiratory drive in most patients"]])
+        XCTAssertEqual(w.reduce(0, +), 1, accuracy: 1e-9)
+        XCTAssertGreaterThan(w[2], w[1])
+        XCTAssertGreaterThanOrEqual(w.min()!, 0.55 / 3)
+        let t = TableBlock.weights(columns: ["Etiology", "Recognition and treatment"],
+                                   rows: [["Tension pneumothorax", "Mediastinal shift impairs venous return. Absent breath sounds, tracheal deviation, distended neck veins."]])
+        XCTAssertGreaterThanOrEqual(t[0], 0.4)
+    }
+}

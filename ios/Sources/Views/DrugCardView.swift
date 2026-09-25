@@ -35,7 +35,7 @@ struct DrugCardView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text(card.purpose).foregroundStyle(.secondary)
+            RichText(card.purpose).foregroundStyle(.secondary)
             Text("\(card.population ?? "both") · weight basis: \(card.weightBasis ?? "actual")")
                 .font(Theme.caption).foregroundStyle(.secondary)
 
@@ -161,7 +161,7 @@ struct DrugCardView: View {
                 }
                 if let rep = d.repeatText { Text(rep).font(Theme.caption).foregroundStyle(.secondary) }
             }
-            if let n = dose.notes { Text(n).font(Theme.caption).foregroundStyle(.secondary) }
+            if let n = dose.notes { RichText(n).font(Theme.caption).foregroundStyle(.secondary) }
             Divider()
         }
     }

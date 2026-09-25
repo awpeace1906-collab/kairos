@@ -7,6 +7,7 @@ import { evaluate } from "../web/src/lib/expr.js";
 import { runCalculator } from "../web/src/lib/calcEngine.js";
 import { zoneForWeight, estimateWeight, doseFromRule } from "../web/src/lib/weightZones.js";
 import { makeSearch } from "../web/src/lib/search.js";
+import { parseRichText, isStructured, leadLabel, tableColumnWeights, shouldStackTable } from "../web/src/lib/richText.js";
 import { loadModules, loadConfig } from "./lib/content.mjs";
 
 let pass = 0;
@@ -231,6 +232,41 @@ for (const m of mods) {
     deepest <= 3,
     `deepest ${deepest}`,
   );
+}
+
+// ------------------------------------------------- text format (richText.js)
+{
+  const plain = parseRichText("One plain sentence.");
+  eq("rich: plain text is one paragraph", plain.length, 1);
+  eq("rich: plain text is not structured", isStructured("One plain sentence."), false);
+
+  const b = parseRichText("Intro line.\n\nSecond para\nwith a break.\n- first\n- second\n  - nested\n\n1. step one\n2. step two");
+  eq("rich: block count", b.length, 4);
+  eq("rich: paragraph 2 keeps its line break", b[1].lines.length, 2);
+  eq("rich: bullets are unordered", b[2].ordered, false);
+  eq("rich: bullet count", b[2].items.length, 2);
+  eq("rich: two-space indent nests", b[2].items[1].items[0].text, "nested");
+  eq("rich: numbered list is ordered", b[3].ordered, true);
+  eq("rich: numbered text drops its number", b[3].items[1].text, "step two");
+
+  const cont = parseRichText("- a long item\n  that wraps on\n- next");
+  eq("rich: indented plain line continues the item", cont[0].items[0].text, "a long item that wraps on");
+  eq("rich: decimals are not list markers", parseRichText("2.5 mg/kg IV").length === 1 && parseRichText("2.5 mg/kg IV")[0].type, "p");
+  eq("rich: CRLF normalized", parseRichText("a\r\n\r\nb").length, 2);
+
+  eq("rich: ALL-CAPS lead label", JSON.stringify(leadLabel("LEVEL: posterior axillary line")), JSON.stringify(["LEVEL:", "posterior axillary line"]));
+  eq("rich: sentence colon is not a label", leadLabel("Note the ratio: 2 to 1"), null);
+  eq("rich: single capital is not a label", leadLabel("A: something"), null);
+
+  const w = tableColumnWeights(["Agent", "Dose", "Notes"], [["Ketamine", "1-2 mg/kg", "Maintains airway reflexes and respiratory drive in most patients"]]);
+  near("table: weights sum to 1", w.reduce((a, x) => a + x, 0), 1);
+  ok("table: wordier column is wider", w[2] > w[1] && w[2] > w[0]);
+  ok("table: no column far below an even share", Math.min(...w) >= 0.55 / 3);
+  const t = tableColumnWeights(["Etiology", "Recognition and treatment"], [["Tension pneumothorax", "Mediastinal shift impairs venous return. Absent breath sounds, tracheal deviation, distended neck veins."]]);
+  eq("table: three columns stack on a phone", shouldStackTable(["a", "b", "c"], [["1", "2", "3"]]), true);
+  eq("table: short two-column table stays a table", shouldStackTable(["Drug", "Dose"], [["Ketamine", "1-2 mg/kg"]]), false);
+  eq("table: label + paragraph table stacks", shouldStackTable(["Etiology", "Recognition"], [["Tension pneumothorax", "Mediastinal shift impairs venous return. Absent breath sounds, tracheal deviation."]]), true);
+  ok("table: a column is at least as wide as its longest word", t[0] >= 0.4, `got ${t[0].toFixed(3)}`);
 }
 
 // ---------------------------------------------------------------- report
