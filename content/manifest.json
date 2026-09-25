@@ -2472,8 +2472,8 @@
       "next_review_due": "2026-12-16"
     },
     "procedures/tube-thoracostomy": {
-      "content_version": 3,
-      "hash": "6a2f19db7cdf2578",
+      "content_version": 4,
+      "hash": "b88285802a3107dd",
       "path": "modules/procedures/tube-thoracostomy.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -3957,9 +3957,29 @@
     }
   },
   "assets": {
+    "assets/figures/gray1195.png": {
+      "sha1": "3a7149ddd2a1123123a09d56135cd3dca8e15507",
+      "bytes": 122629
+    },
+    "assets/figures/gray1211.png": {
+      "sha1": "5d7cd957f68e122238d355eb10cc7f0b12ea9e18",
+      "bytes": 139491
+    },
     "assets/figures/gray1215.png": {
       "sha1": "539890420519d1a54975ccc2363ae7b66d193dea",
       "bytes": 87700
+    },
+    "assets/figures/gray1217.png": {
+      "sha1": "62b948741b90021b077f1e503d05a4944da25788",
+      "bytes": 84861
+    },
+    "assets/figures/gray1218.png": {
+      "sha1": "a9c762fa8e42b75b633151ec940124c66c1033f5",
+      "bytes": 37698
+    },
+    "assets/figures/gray1220.png": {
+      "sha1": "6972393faf89d509405e7992b06025e14ae88b07",
+      "bytes": 38453
     }
   }
 }

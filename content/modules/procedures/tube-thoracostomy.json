@@ -32,7 +32,7 @@
     "pigtail catheter versus large-bore tube"
   ],
   "contentType": "procedure",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-24",
   "next_review_due": "2026-12-24",
   "review_tier": 1,
@@ -63,6 +63,11 @@
       "version": 3,
       "date": "2026-09-24",
       "change": "Replaced the schematic safe-triangle diagram with the triangle overlaid semi-translucently on real anatomy: Henry Vandyke Carter's lateral-thorax plate from Gray's Anatomy (1918, fig. 1215, public domain), which shows the arm raised in the insertion position with pectoralis major, serratus anterior and latissimus dorsi all visible. The triangle, nipple line, insertion point and sub-diaphragmatic zone are registered by hand to the plate's surface landmarks — anchored on the nipple, the axillary vault and the latissimus groove — and the caption says so. First module to use the diagram `image` field."
+    },
+    {
+      "version": 4,
+      "date": "2026-09-24",
+      "change": "Corrected the safe triangle's inferior edge, caught by the user: v3 drew it as a horizontal line at the nipple labeled '5th ICS', but the ribs on the lateral wall rise toward the back, so a horizontal line lies over a progressively lower interspace posteriorly — about one space low at the latissimus edge, in the direction of the diaphragm. The edge now follows the rib at the angle measured from Gray's fig. 1217 (about 24 degrees, fitted against several ribs), the BTS horizontal line is kept as a faint reference so the difference is visible, and the insertion point moved up to stay inside the space. Added fig. 1217 itself to the finger-sweep step, showing the rib slope, the costodiaphragmatic recess and the spleen."
     }
   ],
   "outputType": "workflow",
@@ -109,7 +114,7 @@
       "body": "Supine or 30-45 degrees head-up, ipsilateral arm abducted and ideally behind the head — this pulls the pectoralis and latissimus apart and opens the triangle. Confirm the side against the imaging and say it out loud before anyone preps; a wrong-side chest tube is a never event that still happens.\n\nThe safe triangle is bounded by the lateral edge of pectoralis major, the anterior edge of latissimus dorsi, and a horizontal line at the level of the nipple (about the 5th intercostal space), with its apex below the axilla. It is safe because it keeps you clear of the long thoracic nerve and lateral thoracic artery and avoids breast and muscle bulk.\n\nENTER IN THE 4TH OR 5TH INTERCOSTAL SPACE, AT THE MID-AXILLARY LINE. The single most important rule is to stay at or above the nipple line: the diaphragm rises to the 4th-5th space in full expiration, and in the supine trauma patient the liver and spleen are closer than the landmarks suggest. In a woman, the nipple is a poor landmark — use the 5th intercostal space counted from the sternal angle, or the inframammary fold as the lower limit.",
       "diagram": {
         "title": "The safe triangle, on real anatomy",
-        "caption": "Left side of the chest, arm raised — the insertion position. The triangle's front edge is the lateral border of pectoralis major, its back edge the anterior border of latissimus dorsi, and its base the nipple line (about the 5th intercostal space), with the apex in the axilla; serratus anterior forms its floor. Enter in the 4th-5th space on the vertical dropped from the axilla, over the top of the rib. For the right side, mirror it. The overlay is registered by hand to the surface landmarks of an engraving: it shows where the triangle lies, but on the patient you find it by palpation.",
+        "caption": "Left side of the chest, arm raised — the insertion position. The front edge is the lateral border of pectoralis major, the back edge the anterior border of latissimus dorsi, and the apex the axilla; serratus anterior forms the floor. The inferior edge follows the RIB, not the floor. BTS describes it as a horizontal line at the nipple, but the ribs on the lateral wall rise toward the back at about 20-25 degrees, so a horizontal line drawn back from the nipple lies over a progressively lower interspace — by the latissimus edge, about one space low, toward the diaphragm. Enter in the 4th-5th space on the vertical dropped from the axilla, over the top of the rib. For the right side, mirror it. The overlay is hand-registered to an engraving, with the rib angle measured from Gray's fig. 1217; on the patient you count the interspace by palpation.",
         "viewBox": [
           0,
           110,
@@ -127,31 +132,25 @@
         },
         "shapes": [
           {
-            "kind": "rect",
-            "at": [
-              112,
-              291
-            ],
-            "size": [
-              238,
-              89
-            ],
+            "kind": "path",
+            "d": "M 165.7 278.6 L 213.1 257.4 L 265.3 380 L 133.0 380 Z",
             "fill": "danger",
-            "opacity": 0.14
+            "opacity": 0.16
           },
           {
             "kind": "line",
             "from": [
-              112,
+              140,
               290
             ],
             "to": [
-              345,
+              262,
               290
             ],
             "stroke": "warning",
-            "strokeWidth": 2,
-            "dash": true
+            "strokeWidth": 1.4,
+            "dash": true,
+            "opacity": 0.8
           },
           {
             "kind": "circle",
@@ -165,21 +164,34 @@
           },
           {
             "kind": "path",
-            "d": "M 190 203 L 162 290 L 227 290 Z",
+            "d": "M 190 203 L 165.7 278.6 L 213.1 257.4 Z",
             "fill": "good",
             "opacity": 0.32
           },
           {
             "kind": "path",
-            "d": "M 162 290 L 190 203 L 227 290",
+            "d": "M 165.7 278.6 L 190 203 L 213.1 257.4",
             "stroke": "good",
             "strokeWidth": 2.6
           },
           {
+            "kind": "line",
+            "from": [
+              140,
+              290
+            ],
+            "to": [
+              227,
+              251.3
+            ],
+            "stroke": "good",
+            "strokeWidth": 3
+          },
+          {
             "kind": "circle",
             "at": [
-              192,
-              268
+              190,
+              250.7
             ],
             "r": 5.5,
             "fill": "accent",
@@ -230,12 +242,12 @@
           {
             "kind": "line",
             "from": [
-              198,
-              266
+              196,
+              250.7
             ],
             "to": [
-              234,
-              262
+              236,
+              236
             ],
             "stroke": "outline",
             "strokeWidth": 1
@@ -243,11 +255,11 @@
           {
             "kind": "rect",
             "at": [
-              234,
-              241
+              236,
+              222
             ],
             "size": [
-              144,
+              142,
               42
             ],
             "rx": 3,
@@ -259,8 +271,8 @@
           {
             "kind": "text",
             "at": [
-              239,
-              254
+              241,
+              235
             ],
             "text": "INSERT: 4th-5th ICS",
             "fontSize": 11,
@@ -270,8 +282,8 @@
           {
             "kind": "text",
             "at": [
-              239,
-              266
+              241,
+              247
             ],
             "text": "mid-axillary line,",
             "fontSize": 10,
@@ -280,40 +292,103 @@
           {
             "kind": "text",
             "at": [
-              239,
-              278
+              241,
+              259
             ],
             "text": "over the TOP of the rib",
             "fontSize": 10,
             "fill": "text"
           },
           {
-            "kind": "text",
-            "at": [
-              106,
-              283
+            "kind": "line",
+            "from": [
+              228,
+              289
             ],
-            "text": "nipple line",
-            "fontSize": 11,
-            "weight": "bold",
-            "anchor": "end",
-            "fill": "warning"
-          },
-          {
-            "kind": "text",
-            "at": [
-              106,
-              295
+            "to": [
+              240,
+              296
             ],
-            "text": "≈ 5th ICS",
-            "fontSize": 10,
-            "anchor": "end",
-            "fill": "warning"
+            "stroke": "outline",
+            "strokeWidth": 1
           },
           {
             "kind": "rect",
             "at": [
-              160,
+              236,
+              289
+            ],
+            "size": [
+              168,
+              30
+            ],
+            "rx": 3,
+            "fill": "surface",
+            "opacity": 0.9,
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              241,
+              301
+            ],
+            "text": "Horizontal line sits ~1 space low",
+            "fontSize": 9.5,
+            "weight": "bold",
+            "fill": "warning"
+          },
+          {
+            "kind": "text",
+            "at": [
+              241,
+              313
+            ],
+            "text": "here: the ribs rise toward the back",
+            "fontSize": 9.5,
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              106,
+              277
+            ],
+            "text": "base follows",
+            "fontSize": 10.5,
+            "weight": "bold",
+            "anchor": "end",
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              106,
+              289
+            ],
+            "text": "the rib, not",
+            "fontSize": 10.5,
+            "weight": "bold",
+            "anchor": "end",
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              106,
+              301
+            ],
+            "text": "the floor",
+            "fontSize": 10.5,
+            "weight": "bold",
+            "anchor": "end",
+            "fill": "good"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              150,
               350
             ],
             "size": [
@@ -329,10 +404,10 @@
           {
             "kind": "text",
             "at": [
-              243,
+              233,
               362
             ],
-            "text": "Below this line:",
+            "text": "Below the triangle:",
             "fontSize": 10.5,
             "weight": "bold",
             "anchor": "middle",
@@ -341,7 +416,7 @@
           {
             "kind": "text",
             "at": [
-              243,
+              233,
               374
             ],
             "text": "diaphragm, liver, spleen",
@@ -420,6 +495,254 @@
           "Confirm you are NOT feeling the diaphragm, liver, spleen, or bowel. If you feel something solid and smooth that moves with respiration below you, you are too low.",
           "Clear adhesions immediately around the tract, gently.",
           "In the ventilated trauma patient, this finger sweep IS a finger thoracostomy — for a tension pneumothorax, the decompression happens now, before a tube is in. The tube can follow."
+        ]
+      },
+      "diagram": {
+        "title": "Why the lower edge matters",
+        "caption": "Same view, same side, with the ribs drawn in (dashed), the lung in purple, the pleura in blue and the spleen in green. The ribs climb toward the back, which is why the safe triangle's lower edge has to follow a rib rather than the horizontal. Below the lung, the pleura continues for a further band of ribs as the costodiaphragmatic recess — space with no lung in it, and the spleen (and on the right, the liver) tucked beneath the diaphragm just deep to it. That band is what a low tube enters, and what the finger sweep is checking for.",
+        "viewBox": [
+          40,
+          60,
+          240,
+          320
+        ],
+        "image": {
+          "src": "assets/figures/gray1217.png",
+          "width": 280,
+          "height": 400,
+          "credit": "Plate: Henry Vandyke Carter, Gray's Anatomy of the Human Body, 20th ed. (1918), fig. 1217 — public domain. Overlay: Kairos.",
+          "license": "public-domain",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray1217.png",
+          "sha1": "62b948741b90021b077f1e503d05a4944da25788"
+        },
+        "shapes": [
+          {
+            "kind": "line",
+            "from": [
+              108,
+              280.7
+            ],
+            "to": [
+              238,
+              222.8
+            ],
+            "stroke": "accent",
+            "strokeWidth": 2.6
+          },
+          {
+            "kind": "line",
+            "from": [
+              108,
+              280.7
+            ],
+            "to": [
+              238,
+              280.7
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.2,
+            "dash": true
+          },
+          {
+            "kind": "rect",
+            "at": [
+              198,
+              265
+            ],
+            "size": [
+              78,
+              12
+            ],
+            "rx": 2.5,
+            "fill": "surface",
+            "opacity": 0.9,
+            "stroke": "outline",
+            "strokeWidth": 0.5
+          },
+          {
+            "kind": "text",
+            "at": [
+              237,
+              274
+            ],
+            "text": "true horizontal",
+            "fontSize": 8.5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              154,
+              196
+            ],
+            "size": [
+              112,
+              24
+            ],
+            "rx": 2.5,
+            "fill": "surface",
+            "opacity": 0.9,
+            "stroke": "outline",
+            "strokeWidth": 0.5
+          },
+          {
+            "kind": "text",
+            "at": [
+              160,
+              206
+            ],
+            "text": "Ribs rise toward",
+            "fontSize": 9,
+            "weight": "bold",
+            "fill": "accent"
+          },
+          {
+            "kind": "text",
+            "at": [
+              160,
+              217
+            ],
+            "text": "the back, ~24 degrees",
+            "fontSize": 9,
+            "fill": "text"
+          },
+          {
+            "kind": "line",
+            "from": [
+              196,
+              221
+            ],
+            "to": [
+              200,
+              235
+            ],
+            "stroke": "outline",
+            "strokeWidth": 0.9
+          },
+          {
+            "kind": "rect",
+            "at": [
+              44,
+              296
+            ],
+            "size": [
+              86,
+              24
+            ],
+            "rx": 2.5,
+            "fill": "surface",
+            "opacity": 0.9,
+            "stroke": "outline",
+            "strokeWidth": 0.5
+          },
+          {
+            "kind": "text",
+            "at": [
+              48,
+              306
+            ],
+            "text": "Recess: pleura,",
+            "fontSize": 9,
+            "weight": "bold",
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              48,
+              317
+            ],
+            "text": "no lung beneath",
+            "fontSize": 9,
+            "fill": "text"
+          },
+          {
+            "kind": "line",
+            "from": [
+              130,
+              305
+            ],
+            "to": [
+              150,
+              300
+            ],
+            "stroke": "outline",
+            "strokeWidth": 0.9
+          },
+          {
+            "kind": "circle",
+            "at": [
+              113,
+              197
+            ],
+            "r": 5,
+            "stroke": "warning",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "rect",
+            "at": [
+              62,
+              183
+            ],
+            "size": [
+              44,
+              13
+            ],
+            "rx": 2.5,
+            "fill": "surface",
+            "opacity": 0.9,
+            "stroke": "outline",
+            "strokeWidth": 0.5
+          },
+          {
+            "kind": "text",
+            "at": [
+              66,
+              193
+            ],
+            "text": "nipple",
+            "fontSize": 8.5,
+            "fill": "warning"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              62,
+              344
+            ],
+            "size": [
+              150,
+              24
+            ],
+            "rx": 2.5,
+            "fill": "surface",
+            "opacity": 0.9,
+            "stroke": "outline",
+            "strokeWidth": 0.5
+          },
+          {
+            "kind": "text",
+            "at": [
+              66,
+              354
+            ],
+            "text": "A finger that feels smooth,",
+            "fontSize": 9,
+            "weight": "bold",
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              66,
+              365
+            ],
+            "text": "moving and solid is too low",
+            "fontSize": 9,
+            "fill": "text"
+          }
         ]
       }
     },
