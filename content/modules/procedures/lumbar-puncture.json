@@ -3,21 +3,50 @@
   "section": "Procedures",
   "category": "Aspiration & Drainage Procedures",
   "title": "Lumbar Puncture",
-  "settingEmphasis": ["ed", "icu"],
-  "aliases": ["LP", "spinal tap", "CSF sampling"],
-  "tags": ["lumbar puncture", "CSF", "meningitis", "opening pressure", "ED", "ICU", "procedure"],
-  "keywords": ["intercristal line marks L4 or the L4-5 interspace, use L3-4 or L4-5, stays below the conus at any age", "opening pressure normal 10-20 cmH2O adults, lateral decubitus with legs extended", "traumatic tap versus true xanthochromia distinguish by tube 1 vs tube 4 RBC count"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "LP",
+    "spinal tap",
+    "CSF sampling"
+  ],
+  "tags": [
+    "lumbar puncture",
+    "CSF",
+    "meningitis",
+    "opening pressure",
+    "ED",
+    "ICU",
+    "procedure"
+  ],
+  "keywords": [
+    "intercristal line marks L4 or the L4-5 interspace, use L3-4 or L4-5, stays below the conus at any age",
+    "opening pressure normal 10-20 cmH2O adults, lateral decubitus with legs extended",
+    "traumatic tap versus true xanthochromia distinguish by tube 1 vs tube 4 RBC count"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
   "sources": [
     "Straus SE, et al. How do I perform a lumbar puncture and analyze the results to diagnose bacterial meningitis? JAMA. 2006;296(16):2012-2022.",
-    "MR imaging determination of the location of the normal conus medullaris throughout childhood — confirms L3-4/L4-5 needle placement stays below the conus at any age, verified via WebSearch given the peds-relevant anatomy claim."
+    "Wilson DA, Prince JR. MR imaging determination of the location of the normal conus medullaris throughout childhood. AJR Am J Roentgenol. 1989;152(5):1029-1032.",
+    "Broadbent CR, Maxwell WB, Ferrie R, et al. Ability of anaesthetists to identify a marked lumbar interspace. Anaesthesia. 2000;55(11):1122-1126."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3), alongside paracentesis/thoracentesis/arthrocentesis in the new Aspiration & Drainage Procedures category." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3), alongside paracentesis/thoracentesis/arthrocentesis in the new Aspiration & Drainage Procedures category."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-24",
+      "change": "Added a Tuffier's-line figure to step 1 on Gray's Anatomy plate 1211 (public domain), with the L3-4 and L4-5 interspaces and the evidence that palpated levels are often one space too high (Broadbent 2000). Replaced a malformed source entry with the full Wilson & Prince 1989 citation for the conus level in children."
+    }
   ],
   "outputType": "workflow",
   "purpose": "Landmark and ultrasound-assisted technique for diagnostic/therapeutic lumbar puncture, opening-pressure measurement, and how to interpret a traumatic tap.",
@@ -33,7 +62,242 @@
       "id": "position",
       "type": "step",
       "prompt": "1. Position and landmark",
-      "body": "Lateral decubitus with knees drawn toward the chest (best for accurate opening pressure — the patient must be relaxed and NOT tightly flexed/held by an assistant, which falsely elevates pressure), or sitting-forward if opening pressure isn't needed or positioning is difficult. The intercristal line (a line connecting the top of both iliac crests) crosses the spine at approximately L4 or the L4-5 interspace — use this landmark, and aim for the L3-4 or L4-5 interspace, which stays below the conus medullaris at any age including infants (the conus is usually higher, around L1-2, but with real individual variability into early childhood — L3-4/L4-5 is deliberately conservative)."
+      "body": "Lateral decubitus with knees drawn toward the chest (best for accurate opening pressure — the patient must be relaxed and NOT tightly flexed/held by an assistant, which falsely elevates pressure), or sitting-forward if opening pressure isn't needed or positioning is difficult. The intercristal line (a line connecting the top of both iliac crests) crosses the spine at approximately L4 or the L4-5 interspace — use this landmark, and aim for the L3-4 or L4-5 interspace, which stays below the conus medullaris at any age including infants (the conus is usually higher, around L1-2, but with real individual variability into early childhood — L3-4/L4-5 is deliberately conservative).",
+      "diagram": {
+        "title": "Tuffier's line and the two safe interspaces",
+        "caption": "Back view, so the patient's left is on the left of the picture. The line joining the tops of the iliac crests crosses the spine at about L4 or the L4-5 interspace: the space just above it is L3-4, the one just below is L4-5, and both lie below the conus medullaris. Palpated levels are often wrong, and usually wrong in the risky direction. In one MRI study, anesthesiologists identified a marked interspace correctly only 29% of the time, and it was one space higher than they believed in 51% — which is why the card aims low. The interspace marks are placed by hand at typical spacing; on the patient, count from the crests you feel.",
+        "viewBox": [
+          120,
+          339,
+          352,
+          153
+        ],
+        "image": {
+          "src": "assets/figures/gray1211.png",
+          "width": 504,
+          "height": 700,
+          "credit": "Plate: Henry Vandyke Carter, Gray's Anatomy of the Human Body, 20th ed. (1918), fig. 1211 — public domain. Overlay: Kairos.",
+          "license": "public-domain",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray1211.png",
+          "sha1": "5d7cd957f68e122238d355eb10cc7f0b12ea9e18"
+        },
+        "shapes": [
+          {
+            "kind": "line",
+            "from": [
+              138,
+              417
+            ],
+            "to": [
+              346,
+              417
+            ],
+            "stroke": "accent",
+            "strokeWidth": 2.2,
+            "dash": true
+          },
+          {
+            "kind": "circle",
+            "at": [
+              300,
+              418
+            ],
+            "r": 4.5,
+            "stroke": "accent",
+            "strokeWidth": 1.8
+          },
+          {
+            "kind": "circle",
+            "at": [
+              172,
+              418
+            ],
+            "r": 4.5,
+            "stroke": "accent",
+            "strokeWidth": 1.8
+          },
+          {
+            "kind": "line",
+            "from": [
+              227,
+              405
+            ],
+            "to": [
+              245,
+              405
+            ],
+            "stroke": "good",
+            "strokeWidth": 3.2
+          },
+          {
+            "kind": "line",
+            "from": [
+              227,
+              429
+            ],
+            "to": [
+              245,
+              429
+            ],
+            "stroke": "good",
+            "strokeWidth": 3.2
+          },
+          {
+            "kind": "rect",
+            "at": [
+              124,
+              343
+            ],
+            "size": [
+              100,
+              36
+            ],
+            "rx": 2.5,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              129,
+              355
+            ],
+            "text": "TUFFIER'S LINE",
+            "fontSize": 9.5,
+            "weight": "bold",
+            "fill": "accent"
+          },
+          {
+            "kind": "text",
+            "at": [
+              129,
+              366
+            ],
+            "text": "tops of the iliac crests,",
+            "fontSize": 8.5,
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              129,
+              376
+            ],
+            "text": "at about L4 or L4-5",
+            "fontSize": 8.5,
+            "fill": "text"
+          },
+          {
+            "kind": "line",
+            "from": [
+              168,
+              376
+            ],
+            "to": [
+              170,
+              412
+            ],
+            "stroke": "outline",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "rect",
+            "at": [
+              124,
+              440
+            ],
+            "size": [
+              96,
+              36
+            ],
+            "rx": 2.5,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              129,
+              452
+            ],
+            "text": "L3-4 or L4-5",
+            "fontSize": 9.5,
+            "weight": "bold",
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              129,
+              463
+            ],
+            "text": "both below the conus,",
+            "fontSize": 8.5,
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              129,
+              473
+            ],
+            "text": "at any age",
+            "fontSize": 8.5,
+            "fill": "text"
+          },
+          {
+            "kind": "line",
+            "from": [
+              220,
+              447
+            ],
+            "to": [
+              226,
+              431
+            ],
+            "stroke": "good",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "line",
+            "from": [
+              220,
+              443
+            ],
+            "to": [
+              226,
+              407
+            ],
+            "stroke": "good",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "text",
+            "at": [
+              124,
+              488
+            ],
+            "text": "patient's left",
+            "fontSize": 8.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              468,
+              488
+            ],
+            "text": "patient's right",
+            "fontSize": 8.5,
+            "anchor": "end",
+            "fill": "muted"
+          }
+        ]
+      }
     },
     {
       "id": "ultrasound",
@@ -73,6 +337,10 @@
     "CSF collected in sequential numbered tubes with tube 4 sent for a repeat cell count if a traumatic tap vs. SAH distinction matters",
     "Ultrasound landmark-marking considered for a difficult body habitus or after a failed attempt"
   ],
-  "crossLinks": ["altered-mental-status", "febrile-infant-risk-stratification", "acute-ischemic-stroke"],
+  "crossLinks": [
+    "altered-mental-status",
+    "febrile-infant-risk-stratification",
+    "acute-ischemic-stroke"
+  ],
   "buildNote": "workflow outputType, sequential with one warning node for pre-procedure contraindications. Peds-relevant conus-medullaris anatomy claim WebSearch-verified rather than assumed, since it's exactly the kind of number a rushed build could get subtly wrong at pediatric ages."
 }

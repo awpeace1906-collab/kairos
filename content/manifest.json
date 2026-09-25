@@ -2337,8 +2337,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/lumbar-puncture": {
-      "content_version": 1,
-      "hash": "9cf41acd05d338d9",
+      "content_version": 2,
+      "hash": "236d93d3a0548761",
       "path": "modules/procedures/lumbar-puncture.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2373,8 +2373,8 @@
       "next_review_due": "2026-12-01"
     },
     "procedures/paracentesis": {
-      "content_version": 1,
-      "hash": "05390d708a7ad7d3",
+      "content_version": 2,
+      "hash": "15476b35436bf5d5",
       "path": "modules/procedures/paracentesis.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2463,8 +2463,8 @@
       "next_review_due": "2026-12-23"
     },
     "procedures/thoracentesis": {
-      "content_version": 3,
-      "hash": "f33118acc8cd9998",
+      "content_version": 4,
+      "hash": "1942b7fc9a227fe6",
       "path": "modules/procedures/thoracentesis.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -3961,6 +3961,10 @@
       "sha1": "3a7149ddd2a1123123a09d56135cd3dca8e15507",
       "bytes": 122629
     },
+    "assets/figures/gray1211.png": {
+      "sha1": "5d7cd957f68e122238d355eb10cc7f0b12ea9e18",
+      "bytes": 139491
+    },
     "assets/figures/gray1215.png": {
       "sha1": "539890420519d1a54975ccc2363ae7b66d193dea",
       "bytes": 87700
@@ -3972,6 +3976,10 @@
     "assets/figures/gray1218.png": {
       "sha1": "a9c762fa8e42b75b633151ec940124c66c1033f5",
       "bytes": 37698
+    },
+    "assets/figures/gray1220.png": {
+      "sha1": "6972393faf89d509405e7992b06025e14ae88b07",
+      "bytes": 38453
     }
   }
 }

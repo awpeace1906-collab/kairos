@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 972,
+  "count": 974,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -6340,6 +6340,18 @@
       ]
     },
     {
+      "text": "Broadbent CR, Maxwell WB, Ferrie R, et al. Ability of anaesthetists to identify a marked lumbar interspace. Anaesthesia. 2000;55(11):1122-1126.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "lumbar-puncture",
+          "title": "Lumbar Puncture",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/lumbar-puncture"
+        }
+      ]
+    },
+    {
       "text": "Brott T, Adams HP Jr, Olinger CP, et al. Measurements of acute cerebral infarction: a clinical examination scale. Stroke. 1989;20(7):864-870",
       "group": "Other primary sources",
       "usedBy": [
@@ -9880,18 +9892,6 @@
       ]
     },
     {
-      "text": "MR imaging determination of the location of the normal conus medullaris throughout childhood — confirms L3-4/L4-5 needle placement stays below the conus at any age, verified via WebSearch given the peds-relevant anatomy claim.",
-      "group": "Other primary sources",
-      "usedBy": [
-        {
-          "id": "lumbar-puncture",
-          "title": "Lumbar Puncture",
-          "section": "Procedures",
-          "route": "/procedures/aspiration-drainage-procedures/lumbar-puncture"
-        }
-      ]
-    },
-    {
       "text": "Multisociety Clinical Practice Guidance for Safe Use of GLP-1 RAs in the Perioperative Period. Clin Gastroenterol Hepatol 2024",
       "group": "Other primary sources",
       "usedBy": [
@@ -10956,6 +10956,18 @@
           "title": "Acute Limb Ischemia",
           "section": "Reference Library",
           "route": "/reference-library/vascular-emergencies/acute-limb-ischemia"
+        }
+      ]
+    },
+    {
+      "text": "Sakai H, Sheer TA, Mendler MH, Runyon BA. Choosing the location for non-image guided abdominal paracentesis. Liver Int. 2005;25:984-986.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "paracentesis",
+          "title": "Paracentesis",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/paracentesis"
         }
       ]
     },
@@ -12036,6 +12048,18 @@
           "title": "Drug Interactions — Nine High-Yield Pairs",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/drug-interactions-high-yield"
+        }
+      ]
+    },
+    {
+      "text": "Wilson DA, Prince JR. MR imaging determination of the location of the normal conus medullaris throughout childhood. AJR Am J Roentgenol. 1989;152(5):1029-1032.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "lumbar-puncture",
+          "title": "Lumbar Puncture",
+          "section": "Procedures",
+          "route": "/procedures/aspiration-drainage-procedures/lumbar-puncture"
         }
       ]
     },

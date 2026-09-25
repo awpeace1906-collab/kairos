@@ -32,7 +32,7 @@
     "send fluid for Light's Criteria same visit"
   ],
   "contentType": "procedure",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-16",
   "next_review_due": "2026-12-16",
   "review_tier": 1,
@@ -63,6 +63,11 @@
       "version": 3,
       "date": "2026-09-21",
       "change": "Converted the three steps that were faking lists in prose (stop-warning, post-procedure imaging indications, fluid studies) to the new nested `substeps` structure. The fluid step in particular becomes a real two-level hierarchy — four labeled branches, each carrying its own criteria — which is what it always was on the page and never was in the data."
+    },
+    {
+      "version": 4,
+      "date": "2026-09-25",
+      "change": "Step 3 now shows the safe zone on Gray's Anatomy plate 1211 (public domain): between the mid-scapular and posterior axillary lines, below the scapula tip and above the 8th intercostal space, with the paravertebral strip where the intercostal artery is unshielded (Helm 2013) shaded as the place not to go."
     }
   ],
   "outputType": "workflow",
@@ -85,7 +90,343 @@
       "id": "position-site",
       "type": "step",
       "prompt": "3 · Position and the safe zone",
-      "body": "POSITION, best to worst tolerated: sitting on the edge of the bed, leaning forward, arms resting on a bedside table or hugging a pillow — this pools the effusion posteroinferiorly and opens the intercostal spaces. If the patient cannot sit: lateral decubitus with the effusion side DOWN (dependent, so the fluid pools laterally) or supine-to-30-45° with a lateral mid-axillary approach. A supine ICU patient with an anterior-loculated collection is a different, harder procedure — use real-time guidance or get help.\n\nLEVEL: posterior axillary to mid-scapular line, one or two interspaces below the top of the effusion, and NEVER BELOW THE 8TH INTERCOSTAL SPACE regardless of what the fluid looks like. Below that, the diaphragm's excursion and the abdominal organs make the margin unacceptably thin.\n\nSTAY LATERAL — this is the rule most often missed. The intercostal artery does not hug the rib groove near the spine; it wanders freely in the interspace. On CT, only 17% of intercostal arteries were shielded by the rib above at 3 cm from the spine, versus 97% at 6 cm. Practically: do not insert medial to roughly 6-8 cm from the midline, which is what 'posterior axillary line, not paravertebral' means in centimeters. In an elderly, hypertensive, or otherwise arteriopathic patient — where tortuosity is greatest — consider a color-Doppler sweep of the intended interspace before you commit.\n\nAvoid: skin infection or cellulitis over the site, the scapula (it moves and it is in the way), the breast, and any prior surgical or radiotherapy field where the pleura may be tethered."
+      "body": "POSITION, best to worst tolerated: sitting on the edge of the bed, leaning forward, arms resting on a bedside table or hugging a pillow — this pools the effusion posteroinferiorly and opens the intercostal spaces. If the patient cannot sit: lateral decubitus with the effusion side DOWN (dependent, so the fluid pools laterally) or supine-to-30-45° with a lateral mid-axillary approach. A supine ICU patient with an anterior-loculated collection is a different, harder procedure — use real-time guidance or get help.\n\nLEVEL: posterior axillary to mid-scapular line, one or two interspaces below the top of the effusion, and NEVER BELOW THE 8TH INTERCOSTAL SPACE regardless of what the fluid looks like. Below that, the diaphragm's excursion and the abdominal organs make the margin unacceptably thin.\n\nSTAY LATERAL — this is the rule most often missed. The intercostal artery does not hug the rib groove near the spine; it wanders freely in the interspace. On CT, only 17% of intercostal arteries were shielded by the rib above at 3 cm from the spine, versus 97% at 6 cm. Practically: do not insert medial to roughly 6-8 cm from the midline, which is what 'posterior axillary line, not paravertebral' means in centimeters. In an elderly, hypertensive, or otherwise arteriopathic patient — where tortuosity is greatest — consider a color-Doppler sweep of the intended interspace before you commit.\n\nAvoid: skin infection or cellulitis over the site, the scapula (it moves and it is in the way), the breast, and any prior surgical or radiotherapy field where the pleura may be tethered.",
+      "diagram": {
+        "title": "The safe zone, seen from behind",
+        "caption": "Back of the left chest, so the patient's left is on the left of the picture. The needle zone lies between the mid-scapular line, which drops through the inferior angle of the scapula, and the posterior axillary line: below the scapula tip, one or two interspaces below the top of the effusion, and never below the 8th intercostal space. Medially, within 6-8 cm of the spine, the intercostal artery leaves the shelter of the rib groove; on CT only 17% were covered by the rib at 3 cm from the spine, against 97% at 6 cm. Distances and rib levels are estimated on an engraving with the arms at the sides. Leaning forward on a table swings the scapula up and out, and ultrasound, not this picture, chooses the interspace.",
+        "viewBox": [
+          62,
+          212,
+          198,
+          150
+        ],
+        "image": {
+          "src": "assets/figures/gray1211.png",
+          "width": 504,
+          "height": 700,
+          "credit": "Plate: Henry Vandyke Carter, Gray's Anatomy of the Human Body, 20th ed. (1918), fig. 1211 — public domain. Overlay: Kairos.",
+          "license": "public-domain",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray1211.png",
+          "sha1": "5d7cd957f68e122238d355eb10cc7f0b12ea9e18"
+        },
+        "shapes": [
+          {
+            "kind": "rect",
+            "at": [
+              190,
+              272
+            ],
+            "size": [
+              45,
+              90
+            ],
+            "fill": "danger",
+            "opacity": 0.2
+          },
+          {
+            "kind": "rect",
+            "at": [
+              175,
+              272
+            ],
+            "size": [
+              15,
+              90
+            ],
+            "fill": "danger",
+            "opacity": 0.1
+          },
+          {
+            "kind": "line",
+            "from": [
+              151.3,
+              238
+            ],
+            "to": [
+              151.3,
+              362
+            ],
+            "stroke": "muted",
+            "strokeWidth": 0.9,
+            "dash": true
+          },
+          {
+            "kind": "line",
+            "from": [
+              112,
+              253
+            ],
+            "to": [
+              112,
+              362
+            ],
+            "stroke": "muted",
+            "strokeWidth": 0.9,
+            "dash": true
+          },
+          {
+            "kind": "rect",
+            "at": [
+              112,
+              272
+            ],
+            "size": [
+              39.30000000000001,
+              26
+            ],
+            "fill": "good",
+            "opacity": 0.32
+          },
+          {
+            "kind": "rect",
+            "at": [
+              112,
+              272
+            ],
+            "size": [
+              39.30000000000001,
+              26
+            ],
+            "stroke": "good",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "circle",
+            "at": [
+              151.3,
+              266
+            ],
+            "r": 2.8,
+            "stroke": "outline",
+            "strokeWidth": 0.9
+          },
+          {
+            "kind": "rect",
+            "at": [
+              206,
+              216
+            ],
+            "size": [
+              50,
+              10
+            ],
+            "rx": 1.8,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.45
+          },
+          {
+            "kind": "text",
+            "at": [
+              231,
+              223
+            ],
+            "text": "patient's LEFT",
+            "fontSize": 5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              123,
+              228
+            ],
+            "size": [
+              57,
+              10
+            ],
+            "rx": 1.8,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.45
+          },
+          {
+            "kind": "text",
+            "at": [
+              151.3,
+              235
+            ],
+            "text": "mid-scapular line",
+            "fontSize": 5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              78,
+              243
+            ],
+            "size": [
+              68,
+              10
+            ],
+            "rx": 1.8,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.45
+          },
+          {
+            "kind": "text",
+            "at": [
+              112,
+              250
+            ],
+            "text": "posterior axillary line",
+            "fontSize": 5,
+            "anchor": "middle",
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              161,
+              256
+            ],
+            "size": [
+              64,
+              16
+            ],
+            "rx": 1.8,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.45
+          },
+          {
+            "kind": "text",
+            "at": [
+              164,
+              263
+            ],
+            "text": "Inferior angle",
+            "fontSize": 6,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              164,
+              269.5
+            ],
+            "text": "of scapula ≈ 7th rib",
+            "fontSize": 5.4,
+            "fill": "text"
+          },
+          {
+            "kind": "line",
+            "from": [
+              161,
+              264
+            ],
+            "to": [
+              154.3,
+              265.8
+            ],
+            "stroke": "outline",
+            "strokeWidth": 0.7
+          },
+          {
+            "kind": "rect",
+            "at": [
+              98,
+              302
+            ],
+            "size": [
+              60,
+              24
+            ],
+            "rx": 1.8,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.45
+          },
+          {
+            "kind": "text",
+            "at": [
+              101,
+              309.5
+            ],
+            "text": "NEEDLE ZONE",
+            "fontSize": 6,
+            "weight": "bold",
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              101,
+              316
+            ],
+            "text": "below the tip,",
+            "fontSize": 5.4,
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              101,
+              322.5
+            ],
+            "text": "above the 8th ICS",
+            "fontSize": 5.4,
+            "fill": "text"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              176,
+              318
+            ],
+            "size": [
+              60,
+              24
+            ],
+            "rx": 1.8,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.45
+          },
+          {
+            "kind": "text",
+            "at": [
+              179,
+              325.5
+            ],
+            "text": "NOT HERE",
+            "fontSize": 6,
+            "weight": "bold",
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              179,
+              332
+            ],
+            "text": "6-8 cm of spine:",
+            "fontSize": 5.4,
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              179,
+              338.5
+            ],
+            "text": "artery unshielded",
+            "fontSize": 5.4,
+            "fill": "text"
+          }
+        ]
+      }
     },
     {
       "id": "prep",
