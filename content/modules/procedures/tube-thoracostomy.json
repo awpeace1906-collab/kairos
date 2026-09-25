@@ -3,82 +3,568 @@
   "section": "Procedures",
   "category": "Vascular & Thoracic Access",
   "title": "Tube Thoracostomy (Chest Tube)",
-  "settingEmphasis": ["ed", "icu", "prehospital"],
-  "aliases": ["chest tube placement", "tube thoracostomy", "chest drain insertion", "triangle of safety chest tube"],
-  "tags": ["chest tube", "tube thoracostomy", "pneumothorax", "hemothorax", "triangle of safety", "trauma", "procedure"],
-  "keywords": ["triangle of safety landmarks", "insert above the rib not below", "finger sweep confirms pleural entry", "massive hemothorax 1500 mL initial or 200 mL per hour", "re-expansion pulmonary edema large volume drainage", "pigtail catheter versus large-bore tube"],
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
+  "aliases": [
+    "chest tube placement",
+    "tube thoracostomy",
+    "chest drain insertion",
+    "triangle of safety chest tube"
+  ],
+  "tags": [
+    "chest tube",
+    "tube thoracostomy",
+    "pneumothorax",
+    "hemothorax",
+    "triangle of safety",
+    "trauma",
+    "procedure"
+  ],
+  "keywords": [
+    "triangle of safety landmarks",
+    "insert above the rib not below",
+    "finger sweep confirms pleural entry",
+    "massive hemothorax 1500 mL initial or 200 mL per hour",
+    "re-expansion pulmonary edema large volume drainage",
+    "pigtail catheter versus large-bore tube"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
-  "last_reviewed": "2026-09-13",
-  "next_review_due": "2026-12-13",
+  "content_version": 3,
+  "last_reviewed": "2026-09-24",
+  "next_review_due": "2026-12-24",
   "review_tier": 1,
   "sources": [
-    "ATLS 10th Edition — American College of Surgeons Committee on Trauma (chest tube technique, massive hemothorax criteria).",
+    "American College of Surgeons Committee on Trauma. Advanced Trauma Life Support (ATLS), 10th ed. (massive hemothorax criteria: 1,500 mL initial or 200 mL/h for 2-4 h).",
+    "Kulvatunyou N, Bauman ZM, Zein Edine SB, et al. The small (14 Fr) percutaneous catheter (P-CAT) versus large (28-32 Fr) open chest tube for traumatic hemothorax: a multicenter randomized clinical trial. J Trauma Acute Care Surg. 2021;91(5):809-813.",
+    "Small versus large bore chest tube in traumatic hemothorax, hemopneumothorax, and pneumothorax: a meta-analysis of randomized controlled trials with trial sequential analysis. World J Emerg Surg. 2025;20 (no difference in treatment failure or insertion complications; shorter tube duration with small-bore).",
+    "Freeman JJ, Asfaw SH, Vatsaas CJ, et al. Antibiotic prophylaxis for tube thoracostomy placement in trauma: a practice management guideline from the Eastern Association for the Surgery of Trauma. Trauma Surg Acute Care Open. 2022;7(1):e000886 (conditional recommendation for prophylaxis at insertion to reduce empyema).",
+    "Patel NJ, Dultz L, Ladhani HA, et al. Management of simple and retained hemothorax: a practice management guideline from the Eastern Association for the Surgery of Trauma. Am J Surg. 2021;221(5):873-884 (early VATS, within about 4 days, over thrombolysis for retained hemothorax).",
+    "Roberts ME, Rahman NM, Maskell NA, et al. British Thoracic Society Guideline for pleural disease. Thorax. 2023;78(Suppl 4):s1-s42.",
+    "Asciak R, Bedawi EO, Bhatnagar R, et al. British Thoracic Society Clinical Statement on pleural procedures. Thorax. 2023;78(Suppl 4):s43-s68 (safe triangle; controlled drainage of large effusions).",
+    "Risk factors for re-expansion pulmonary edema following chest tube drainage in patients with spontaneous pneumothorax: a systematic review and meta-analysis. 2024 (large and long-standing pneumothorax, younger age).",
     "Kong VY, et al. A practical approach to tube thoracostomy. S Afr J Surg. 2019.",
-    "Laan DV, et al. Chest wall thickness and decompression failure: a systematic review. Injury. 2016 (landmark/depth considerations).",
-    "British Thoracic Society Pleural Disease Guideline 2010 (re-expansion pulmonary edema, drainage volume limits)."
+    "Laan DV, Vu TD, Thiels CA, et al. Chest wall thickness and decompression failure: a systematic review and meta-analysis comparing anatomic locations in needle thoracostomy. Injury. 2016;47(4):797-804."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-13", "change": "Initial entry — a genuine content gap (chest tube placement had no dedicated module). Sequential workflow: landmarks, blunt dissection technique, tube sizing, confirmation, massive-hemothorax/re-expansion-pulmonary-edema decision points." }
+    {
+      "version": 1,
+      "date": "2026-09-13",
+      "change": "Initial entry — a genuine content gap (chest tube placement had no dedicated module). Sequential workflow: landmarks, blunt dissection technique, tube sizing, confirmation, massive-hemothorax/re-expansion-pulmonary-edema decision points."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-24",
+      "change": "Depth pass: 7 outline steps to 10 fully-specified ones with a safe-triangle diagram, sub-steps in the nested structure, and a current evidence base in place of BTS 2010. Four substantive changes. (1) Tube size: v1 taught 28-32 Fr for hemothorax; the 2021 Kulvatunyou RCT and a 2025 meta-analysis found 14 Fr pigtails non-inferior for stable traumatic hemothorax, so size is now a decision by stability and destination rather than by what is draining. (2) Added antibiotic prophylaxis at insertion per EAST 2022, which v1 omitted entirely. (3) Added the never-use-the-trocar rule. (4) Kept controlled drainage for large effusions — deliberately NOT importing the thoracentesis correction, because a drain removes the clinician-watching feedback loop that makes symptom-limited drainage safe. The card says so and points to thoracentesis so the two do not read as contradictory. Also added massive-hemothorax physiology-over-volume, the retained-hemothorax VATS window, and troubleshooting."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-24",
+      "change": "Replaced the schematic safe-triangle diagram with the triangle overlaid semi-translucently on real anatomy: Henry Vandyke Carter's lateral-thorax plate from Gray's Anatomy (1918, fig. 1215, public domain), which shows the arm raised in the insertion position with pectoralis major, serratus anterior and latissimus dorsi all visible. The triangle, nipple line, insertion point and sub-diaphragmatic zone are registered by hand to the plate's surface landmarks — anchored on the nipple, the axillary vault and the latissimus groove — and the caption says so. First module to use the diagram `image` field."
+    }
   ],
   "outputType": "workflow",
-  "purpose": "A step-through for open (blunt-dissection) tube thoracostomy — landmarks, technique, tube sizing, and the decision points around massive hemothorax and re-expansion pulmonary edema — for bedside reference or pre-procedure rehearsal, not a substitute for supervised training on your first attempts.",
-  "entryPrompt": "Confirm the indication and the landmark before you cut — most avoidable complications come from working outside the triangle of safety.",
+  "purpose": "Open (blunt-dissection) tube thoracostomy from indication to troubleshooting: choosing the tube size — which modern trials have changed — the safe triangle, the over-the-rib tunnel and finger sweep that prevent the catastrophes, how fast to drain and why that differs from a tap, and when the tube is telling you to call the surgeon.",
+  "entryPrompt": "Three rules carry almost all of the safety: stay at or above the nipple line, go over the TOP of the rib, and put a finger in before the tube. Everything else is refinement.",
   "nodes": [
     {
-      "id": "indication-landmark",
+      "id": "indication",
       "type": "step",
-      "prompt": "1. Indication & landmark",
-      "body": "Indications: pneumothorax (after needle/finger decompression of a tension pneumothorax, or any significant/symptomatic simple pneumothorax), hemothorax, traumatic hemopneumothorax, empyema, malignant effusion. Landmark — the triangle of safety: bordered anteriorly by the lateral edge of pectoralis major, posteriorly by the lateral edge of latissimus dorsi, and inferiorly by a horizontal line at the nipple level (4th-5th intercostal space); apex toward the axilla. Position the patient supine or slightly head-up with the ipsilateral arm abducted or placed behind the head to open up the triangle."
+      "prompt": "1 · Indication — and choosing the tube, which is now a real decision",
+      "body": "Indications: pneumothorax that needs drainage (including after needle or finger decompression of a tension pneumothorax), hemothorax and hemopneumothorax, empyema and complicated parapneumonic effusion, and symptomatic malignant or other large effusions that will not be managed by repeated taps.\n\nTube size used to be simple — big for blood, smaller for air. It is not anymore, and the old dogma is worth unlearning.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          {
+            "text": "TRAUMATIC HEMOTHORAX OR HEMOPNEUMOTHORAX, hemodynamically stable — a 14 Fr pigtail is a legitimate first choice.",
+            "items": [
+              "In the 2021 multicenter RCT, 14 Fr pigtails were as effective as 28-32 Fr tubes for traumatic hemothorax, and a 2025 meta-analysis of the RCTs found no difference in treatment failure or insertion complications, with shorter tube duration in the small-bore group.",
+              "The teaching that 'blood needs a big tube or it clots off' did not survive being tested."
+            ]
+          },
+          {
+            "text": "UNSTABLE, OR HEADED TO THE OR, OR SUSPECTED MASSIVE HEMOTHORAX — large-bore open tube.",
+            "items": [
+              "You want the volume measurement to be trustworthy, you want to be able to put a finger in the chest, and the decision that follows is surgical anyway."
+            ]
+          },
+          {
+            "text": "PNEUMOTHORAX needing drainage — small-bore first.",
+            "items": [
+              "A small-bore Seldinger drain is first-line for most pneumothoraces that need a drain at all, and many primary spontaneous pneumothoraces do not.",
+              "Large-bore is for the ventilated patient with a big persistent leak, or where small-bore has already failed."
+            ]
+          },
+          "EMPYEMA — small-bore with intrapleural therapy is standard; the decision is usually made with the chest team.",
+          "This card teaches the OPEN, blunt-dissection technique because it is the one you do in a crisis. The landmarks, the rib, and the finger sweep apply to every size."
+        ]
+      }
+    },
+    {
+      "id": "landmark",
+      "type": "step",
+      "prompt": "2 · Position and the safe triangle",
+      "body": "Supine or 30-45 degrees head-up, ipsilateral arm abducted and ideally behind the head — this pulls the pectoralis and latissimus apart and opens the triangle. Confirm the side against the imaging and say it out loud before anyone preps; a wrong-side chest tube is a never event that still happens.\n\nThe safe triangle is bounded by the lateral edge of pectoralis major, the anterior edge of latissimus dorsi, and a horizontal line at the level of the nipple (about the 5th intercostal space), with its apex below the axilla. It is safe because it keeps you clear of the long thoracic nerve and lateral thoracic artery and avoids breast and muscle bulk.\n\nENTER IN THE 4TH OR 5TH INTERCOSTAL SPACE, AT THE MID-AXILLARY LINE. The single most important rule is to stay at or above the nipple line: the diaphragm rises to the 4th-5th space in full expiration, and in the supine trauma patient the liver and spleen are closer than the landmarks suggest. In a woman, the nipple is a poor landmark — use the 5th intercostal space counted from the sternal angle, or the inframammary fold as the lower limit.",
+      "diagram": {
+        "title": "The safe triangle, on real anatomy",
+        "caption": "Left side of the chest, arm raised — the insertion position. The triangle's front edge is the lateral border of pectoralis major, its back edge the anterior border of latissimus dorsi, and its base the nipple line (about the 5th intercostal space), with the apex in the axilla; serratus anterior forms its floor. Enter in the 4th-5th space on the vertical dropped from the axilla, over the top of the rib. For the right side, mirror it. The overlay is registered by hand to the surface landmarks of an engraving: it shows where the triangle lies, but on the patient you find it by palpation.",
+        "viewBox": [
+          0,
+          110,
+          463,
+          270
+        ],
+        "image": {
+          "src": "assets/figures/gray1215.png",
+          "width": 463,
+          "height": 500,
+          "credit": "Plate: Henry Vandyke Carter, Gray's Anatomy of the Human Body, 20th ed. (1918), fig. 1215 — public domain. Overlay: Kairos.",
+          "license": "public-domain",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray1215.png",
+          "sha1": "539890420519d1a54975ccc2363ae7b66d193dea"
+        },
+        "shapes": [
+          {
+            "kind": "rect",
+            "at": [
+              112,
+              291
+            ],
+            "size": [
+              238,
+              89
+            ],
+            "fill": "danger",
+            "opacity": 0.14
+          },
+          {
+            "kind": "line",
+            "from": [
+              112,
+              290
+            ],
+            "to": [
+              345,
+              290
+            ],
+            "stroke": "warning",
+            "strokeWidth": 2,
+            "dash": true
+          },
+          {
+            "kind": "circle",
+            "at": [
+              140,
+              290
+            ],
+            "r": 6,
+            "stroke": "warning",
+            "strokeWidth": 1.6
+          },
+          {
+            "kind": "path",
+            "d": "M 190 203 L 162 290 L 227 290 Z",
+            "fill": "good",
+            "opacity": 0.32
+          },
+          {
+            "kind": "path",
+            "d": "M 162 290 L 190 203 L 227 290",
+            "stroke": "good",
+            "strokeWidth": 2.6
+          },
+          {
+            "kind": "circle",
+            "at": [
+              192,
+              268
+            ],
+            "r": 5.5,
+            "fill": "accent",
+            "stroke": "outline",
+            "strokeWidth": 1.2
+          },
+          {
+            "kind": "rect",
+            "at": [
+              130,
+              157
+            ],
+            "size": [
+              120,
+              20
+            ],
+            "rx": 3,
+            "fill": "surface",
+            "opacity": 0.9,
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              190,
+              171
+            ],
+            "text": "SAFE TRIANGLE",
+            "fontSize": 12,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "good"
+          },
+          {
+            "kind": "line",
+            "from": [
+              190,
+              177
+            ],
+            "to": [
+              190,
+              199
+            ],
+            "stroke": "good",
+            "strokeWidth": 1.3
+          },
+          {
+            "kind": "line",
+            "from": [
+              198,
+              266
+            ],
+            "to": [
+              234,
+              262
+            ],
+            "stroke": "outline",
+            "strokeWidth": 1
+          },
+          {
+            "kind": "rect",
+            "at": [
+              234,
+              241
+            ],
+            "size": [
+              144,
+              42
+            ],
+            "rx": 3,
+            "fill": "surface",
+            "opacity": 0.9,
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              239,
+              254
+            ],
+            "text": "INSERT: 4th-5th ICS",
+            "fontSize": 11,
+            "weight": "bold",
+            "fill": "accent"
+          },
+          {
+            "kind": "text",
+            "at": [
+              239,
+              266
+            ],
+            "text": "mid-axillary line,",
+            "fontSize": 10,
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              239,
+              278
+            ],
+            "text": "over the TOP of the rib",
+            "fontSize": 10,
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              106,
+              283
+            ],
+            "text": "nipple line",
+            "fontSize": 11,
+            "weight": "bold",
+            "anchor": "end",
+            "fill": "warning"
+          },
+          {
+            "kind": "text",
+            "at": [
+              106,
+              295
+            ],
+            "text": "≈ 5th ICS",
+            "fontSize": 10,
+            "anchor": "end",
+            "fill": "warning"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              160,
+              350
+            ],
+            "size": [
+              166,
+              28
+            ],
+            "rx": 3,
+            "fill": "surface",
+            "opacity": 0.9,
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              243,
+              362
+            ],
+            "text": "Below this line:",
+            "fontSize": 10.5,
+            "weight": "bold",
+            "anchor": "middle",
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              243,
+              374
+            ],
+            "text": "diaphragm, liver, spleen",
+            "fontSize": 10.5,
+            "anchor": "middle",
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              6,
+              376
+            ],
+            "text": "< anterior",
+            "fontSize": 9,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              457,
+              376
+            ],
+            "text": "posterior >",
+            "fontSize": 9,
+            "anchor": "end",
+            "fill": "muted"
+          }
+        ]
+      }
     },
     {
       "id": "prep",
       "type": "step",
-      "prompt": "2. Prep & anesthesia",
-      "body": "Sterile prep and drape the field. Anesthetize generously with local anesthetic — skin, subcutaneous tissue, intercostal muscle, and the rib periosteum and parietal pleura itself (both are pain-sensitive; under-anesthetizing the pleura is the most common reason this procedure is remembered as agonizing). In an awake patient, this is also the moment to give IV analgesia/procedural sedation if the situation allows for it."
+      "prompt": "3 · Prepare: consent, antibiotics, analgesia, and anesthesia done properly",
+      "body": "Consent where the situation allows, covering bleeding, infection, malposition, organ injury and pain.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          {
+            "text": "ANTIBIOTIC PROPHYLAXIS in trauma — give it at the time of insertion.",
+            "items": [
+              "EAST 2022 conditionally recommends prophylaxis at insertion for adults needing a chest tube for traumatic hemothorax or pneumothorax, to reduce empyema.",
+              "A first-generation cephalosporin covers Staphylococcus aureus, the commonest organism in post-traumatic empyema. There is no evidence that continuing beyond 24 hours adds anything."
+            ]
+          },
+          "Full sterile technique: chlorhexidine, allowed to dry, wide drape, gown and gloves. Post-traumatic empyema is a real and common complication, not a theoretical one.",
+          "Systemic analgesia and, if time allows, procedural sedation. An open chest tube in an awake patient is one of the most painful things done in the ED.",
+          {
+            "text": "LOCAL ANESTHESIA IS THE STEP MOST OFTEN DONE BADLY.",
+            "items": [
+              "Wheal, then infiltrate the subcutaneous tissue along the whole tract, then down onto the rib below the chosen space, then over its top edge and into the intercostal muscle.",
+              "Infiltrate the PERIOSTEUM and the PARIETAL PLEURA generously — they are the pain-sensitive structures and they are where under-anesthesia lives.",
+              "Aspirate as you advance. Air or blood in the syringe tells you the depth to the pleural space, which you will want to know in a moment.",
+              "Check the maximum safe dose for the patient's weight; a large-volume chest-wall block in a small adult can approach it."
+            ]
+          }
+        ]
+      }
     },
     {
-      "id": "incision-dissection",
+      "id": "dissect",
       "type": "step",
-      "prompt": "3. Incision & blunt dissection",
-      "body": "Make a 2-3 cm skin incision parallel to the rib, centered over the interspace one rib-space below your intended entry point, then dissect up and over the top of the rib below — this keeps you clear of the intercostal neurovascular bundle, which runs along the INFERIOR margin of each rib. Use a curved clamp (Kelly) for blunt dissection through subcutaneous tissue and intercostal muscle, staying on top of the lower rib the entire way."
+      "prompt": "4 · Incise, then tunnel over the top of the rib",
+      "body": "Make a 2-3 cm incision parallel to the rib, over the rib BELOW the interspace you intend to enter. Then tunnel with a curved clamp through the subcutaneous tissue, up and over the top of that rib, into the space above it.\n\nTHE RULE THAT PROTECTS THE PATIENT: stay on the superior surface of the lower rib the whole way. The intercostal artery, vein and nerve run in the groove on the INFERIOR margin of each rib — so the danger is under the rib above you, and the top of the rib below you is the safe path. The short tunnel also means the tract closes behind the tube when it comes out.\n\nUse blunt dissection only. Spread the clamp, do not cut."
     },
     {
-      "id": "pleural-entry",
+      "id": "enter",
       "type": "step",
-      "prompt": "4. Pleural entry & finger sweep",
-      "body": "Puncture the parietal pleura with the clamp in a controlled, deliberate motion (a rush of air or blood confirms you are in the pleural space), then spread the clamp to open a tract large enough for a finger. Perform a finger sweep: confirm you are in the free pleural space, clear any adhesions immediately around the tract, and confirm you do NOT feel abdominal organs, diaphragm, or a mass where lung should be — this is the single step that prevents the catastrophic misplacement of a chest tube into the abdomen."
+      "prompt": "5 · Enter the pleura, and put a finger in",
+      "body": "Close the clamp, hold it near its tip so it cannot plunge, and push through the parietal pleura with controlled force just over the top of the rib. A rush of air or blood confirms entry. Spread the jaws to open the tract, and withdraw the clamp open.\n\nThen put a finger through the tract and sweep. This is the step that prevents the catastrophe.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Confirm free pleural space — you should feel lung moving freely against your finger, or an empty space.",
+          "Confirm you are NOT feeling the diaphragm, liver, spleen, or bowel. If you feel something solid and smooth that moves with respiration below you, you are too low.",
+          "Clear adhesions immediately around the tract, gently.",
+          "In the ventilated trauma patient, this finger sweep IS a finger thoracostomy — for a tension pneumothorax, the decompression happens now, before a tube is in. The tube can follow."
+        ]
+      }
     },
     {
-      "id": "tube-placement",
+      "id": "place",
       "type": "step",
-      "prompt": "5. Tube placement & direction",
-      "body": "Guide the tube into the pleural space with a clamp, directing it based on indication: posteriorly and superiorly (toward the apex) for a pneumothorax being drained of air; posteriorly and inferiorly (toward the base) for a hemothorax or effusion being drained of fluid. Advance until all drainage-tube side holes are well within the chest — confirmed by the tube's depth marking and by feeling no resistance. Tube size: 28-32 Fr for trauma/hemothorax (large bore needed to evacuate blood and clot without occluding); 20-24 Fr is adequate for a simple pneumothorax; a small-bore Seldinger pigtail catheter is an increasingly used, less painful alternative for a stable simple pneumothorax or effusion."
+      "prompt": "6 · Place the tube — and never use the trocar",
+      "body": "Grasp the tip of the tube with a curved clamp, or guide it alongside your finger, and pass it through the tract into the chest.\n\nNEVER INSERT A TUBE ON ITS TROCAR. The sharp metal introducer that comes in many kits is how chest tubes end up in the lung, the heart, the liver, and the great vessels. Take it out and throw it off the field before you start.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "Aim APICAL AND ANTERIOR for air, POSTERIOR AND BASAL for fluid — but a tube in the pleural space drains well in most positions, and a perfect aim is worth much less than avoiding a misplacement.",
+          "Advance until every side hole is inside the chest. The last side hole sits on the radio-opaque line's gap; if it is outside the chest wall you will get a persistent 'air leak' that is really air being sucked in around the tube.",
+          "If you meet resistance, stop. Pull back and redirect rather than pushing — resistance is lung, fissure, or mediastinum.",
+          "Watch for fogging with respiration and swing in the fluid column. Their absence immediately after insertion is a reason to check position, not a reason to wait."
+        ]
+      }
     },
     {
-      "id": "secure-connect",
+      "id": "secure",
       "type": "step",
-      "prompt": "6. Secure, connect, confirm",
-      "body": "Connect immediately to a chest drainage/water-seal system (with suction only if directed, otherwise water seal alone). Confirm correct placement: fogging/condensation visible in the tube with respiration, respiratory swing at the water seal, immediate clinical improvement, and breath sounds returning. Secure with both a purse-string closure suture around the tube and a separate anchoring stitch, then an occlusive dressing. Obtain a chest X-ray to confirm tube position, resolution of the pneumothorax/hemothorax, and to rule out kinking or a fissure placement."
+      "prompt": "7 · Secure, connect, confirm",
+      "body": "Connect to an underwater seal drain. Start on water seal alone unless there is a reason for suction — see the next step for why suction deserves a thought.\n\nSecure with a heavy anchoring suture tied firmly to the tube, and close the rest of the incision around it. A purse-string is optional and is associated with worse cosmetic results; the anchoring stitch is the one that matters, because dislodgement is common and the patient will be rolled, transported and imaged.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          {
+            "text": "Imaging: chest X-ray to confirm position and re-expansion.",
+            "items": [
+              "A plain film misses a meaningful proportion of malpositions — intra-fissural, intraparenchymal, and extrathoracic tubes can all look acceptable. If a trauma patient is going to CT anyway, look at the tube on it.",
+              "A tube in a fissure often still works. A tube in lung parenchyma does not, and needs replacing."
+            ]
+          },
+          "Document the side, the space, the tube size, the depth marking at the skin, what drained immediately, and the volume."
+        ]
+      }
     },
     {
-      "id": "decision-points",
+      "id": "drainage",
       "type": "warning",
-      "prompt": "Two decision points that change management",
-      "body": "Massive hemothorax → OR, not just a bigger tube: an initial chest-tube output of ≥ 1500 mL, OR ongoing output of ≥ 200 mL/hour for 2-4 consecutive hours, meets criteria for emergent thoracotomy — activate surgery immediately rather than watching the drain. Re-expansion pulmonary edema: rapidly draining a large-volume effusion or long-standing pneumothorax can trigger unilateral pulmonary edema; for a large chronic effusion, limit initial drainage to roughly 1-1.5 L and clamp/slow the rate if the patient develops cough, chest tightness, or hypoxia during drainage, then resume more gradually."
+      "prompt": "8 · How fast to drain — and why this is DIFFERENT from a tap",
+      "body": "Unlike thoracentesis, where you drain to symptoms because you are standing there watching, a chest drain removes the feedback loop: fluid pours out unobserved, overnight, with nobody asking whether the chest feels tight. That changes the answer.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          {
+            "text": "LARGE PLEURAL EFFUSION — controlled drainage.",
+            "items": [
+              "Clamp after about 1-1.5 L, then release in controlled aliquots over the following hours, per BTS guidance.",
+              "The volume-independence of re-expansion edema found for thoracentesis applies to symptom-limited drainage with a clinician present. It is not a licence to leave a drain free-flowing on a large chronic effusion."
+            ]
+          },
+          {
+            "text": "LARGE OR LONG-STANDING PNEUMOTHORAX — no immediate suction.",
+            "items": [
+              "A pneumothorax that has been present for days, a large one, and a younger patient are the risk factors for re-expansion pulmonary edema after drainage. Start on water seal and let the lung come up on its own."
+            ]
+          },
+          {
+            "text": "HEMOTHORAX — drain freely, and measure.",
+            "items": [
+              "Here the drainage volume is diagnostic information you need, and holding back blood is not a safety measure."
+            ]
+          },
+          "If the patient develops cough, chest tightness, or new hypoxia during drainage, clamp and reassess — the same signal as with a tap."
+        ]
+      }
+    },
+    {
+      "id": "massive",
+      "type": "warning",
+      "prompt": "Massive hemothorax — the tube is a measuring device, not the treatment",
+      "body": "Surgery is called, not debated, when the tube shows any of these:",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          "An initial output of 1,500 mL or more.",
+          "Ongoing output of 200 mL/hour or more for 2 to 4 hours.",
+          "Persistent need for transfusion to maintain hemodynamics.",
+          {
+            "text": "But the physiology outranks the number.",
+            "items": [
+              "An unstable patient with 900 mL out is a surgical patient. A stable patient whose 1,600 mL came from a hemothorax several days old may not be — which is why the decision belongs to the surgeon, with the volume as the trigger for the call rather than the decision itself.",
+              "Do not clamp a chest tube to 'tamponade' a hemothorax. It does not work, and it converts a visible bleed into a tension physiology."
+            ]
+          },
+          "Activate massive transfusion early, and make sure the surgeon knows the numbers and the times, not just 'it's draining a lot'."
+        ]
+      }
+    },
+    {
+      "id": "trouble",
+      "type": "step",
+      "prompt": "9 · Troubleshooting and the complications you will actually see",
+      "body": "Most chest-tube problems are mechanical and fixable at the bedside if you look before you reach for another tube.",
+      "substeps": {
+        "ordered": false,
+        "items": [
+          {
+            "text": "NO SWING, NO BUBBLING, NO DRAINAGE.",
+            "items": [
+              "Work outward from the patient: kinked tubing under a dressing or the patient, a clot in the tube, a closed clamp, the tube pulled back, or a fully re-expanded lung with nothing left to drain.",
+              "Do not strip or milk tubes routinely; it generates very high negative pressures. Clear a clot deliberately if it is the problem."
+            ]
+          },
+          {
+            "text": "PERSISTENT AIR LEAK.",
+            "items": [
+              "Check first that a side hole is not outside the chest wall, and that the connections are tight — an external leak looks exactly like an ongoing pneumothorax.",
+              "A true leak lasting several days is a chest-surgery conversation."
+            ]
+          },
+          "SUBCUTANEOUS EMPHYSEMA — usually means a blocked or malpositioned tube, or a side hole in the tissues. Fix the tube; the emphysema resolves when air has a better way out.",
+          {
+            "text": "RETAINED HEMOTHORAX on imaging after drainage.",
+            "items": [
+              "EAST recommends early VATS — within about 4 days — over thrombolysis for retained hemothorax. Waiting lets it organize, and organized clot becomes empyema or a trapped lung that needs a much larger operation."
+            ]
+          },
+          "Re-expansion pulmonary edema, intercostal artery bleeding, and organ injury are the serious complications. Every one of them is reduced by the three rules: stay above the nipple line, go over the top of the rib, and put a finger in first."
+        ]
+      }
     }
   ],
   "checklist": [
-    "Indication and side confirmed before prepping",
-    "Entry point is within the triangle of safety, at or above the 5th intercostal space",
-    "Local anesthetic infiltrated down to and including rib periosteum and pleura",
-    "Dissection stayed on top of the rib below the interspace, never along its inferior margin",
-    "Finger sweep performed and confirmed free pleural space before the tube goes in",
-    "Tube directed apically for air, basally for fluid",
-    "Purse-string AND separate anchoring suture placed",
-    "CXR obtained to confirm position and re-check for pneumothorax/hemothorax resolution",
-    "Massive-hemothorax thresholds (≥1500 mL initial or ≥200 mL/hr) checked against output before assuming the tube alone will fix it"
+    "Side confirmed against imaging and said out loud",
+    "Tube size chosen by stability and destination — 14 Fr pigtail is legitimate for a stable traumatic hemothorax",
+    "Antibiotic prophylaxis given at insertion for trauma",
+    "Entry in the 4th-5th ICS, mid-axillary line, AT OR ABOVE the nipple line",
+    "Anesthetic carried onto the periosteum and through the parietal pleura",
+    "Tunnel over the TOP of the rib below; blunt dissection only",
+    "Finger sweep confirmed free pleural space and NO abdominal organ before the tube went in",
+    "Trocar removed from the field before starting",
+    "All side holes inside the chest; anchoring suture tied firmly",
+    "Large effusion: clamped after 1-1.5 L and drained in a controlled way",
+    "Output checked against 1,500 mL initial / 200 mL/h — and the surgeon called on physiology, not just volume",
+    "Position confirmed on imaging; CT reviewed if one was done anyway"
   ],
-  "crossLinks": ["penetrating-regional-trauma", "trauma-primary-survey", "efast-exam", "hemorrhagic-shock-mtp"],
-  "buildNote": "workflow outputType, sequential. Deliberately does not restate broader trauma resuscitation (trauma-primary-survey, hemorrhagic-shock-mtp) or the eFAST pneumothorax/hemothorax scan itself (efast-exam) — this module is the hands-on tube-placement sequence plus the two decision points (massive hemothorax, re-expansion pulmonary edema) that most directly change management mid-procedure."
+  "crossLinks": [
+    "thoracentesis",
+    "penetrating-regional-trauma",
+    "trauma-primary-survey",
+    "efast-exam",
+    "hemorrhagic-shock-mtp",
+    "local-anesthetic-dosing"
+  ],
+  "buildNote": "v2 depth pass, 2026-09-24. Same pattern as thoracentesis v2: research first, expect v1 to be teaching something now wrong. Two corrections (tube size, missing antibiotics) and one deliberate NON-correction (controlled drainage stays for a drain, unlike a tap) — the non-correction is the more important judgment, because blindly copying the thoracentesis fix would have made this card unsafe. The diagram is a lateral chest-wall view with the triangle apex-up at the axilla and the nipple line as the hard lower limit, with the sub-diaphragmatic danger zone shaded below it — the lower limit is the rule most often broken and the one that produces the organ injuries."
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T00:00:00Z",
+  "generatedAt": "2026-09-25T00:00:00Z",
   "groupOrder": [
     "Guidelines & consensus statements",
     "Randomized trials & major studies",
@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 965,
+  "count": 970,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -856,18 +856,6 @@
       ]
     },
     {
-      "text": "British Thoracic Society Pleural Disease Guideline 2010 (re-expansion pulmonary edema, drainage volume limits).",
-      "group": "Guidelines & consensus statements",
-      "usedBy": [
-        {
-          "id": "tube-thoracostomy",
-          "title": "Tube Thoracostomy (Chest Tube)",
-          "section": "Procedures",
-          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
-        }
-      ]
-    },
-    {
       "text": "BSPED DKA Guideline (ISPAD-aligned)",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1440,6 +1428,18 @@
           "title": "Pediatric Difficult Airway Approach",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/peds-difficult-airway"
+        }
+      ]
+    },
+    {
+      "text": "Freeman JJ, Asfaw SH, Vatsaas CJ, et al. Antibiotic prophylaxis for tube thoracostomy placement in trauma: a practice management guideline from the Eastern Association for the Surgery of Trauma. Trauma Surg Acute Care Open. 2022;7(1):e000886 (conditional recommendation for prophylaxis at insertion to reduce empyema).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "tube-thoracostomy",
+          "title": "Tube Thoracostomy (Chest Tube)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
         }
       ]
     },
@@ -2104,6 +2104,18 @@
       ]
     },
     {
+      "text": "Patel NJ, Dultz L, Ladhani HA, et al. Management of simple and retained hemothorax: a practice management guideline from the Eastern Association for the Surgery of Trauma. Am J Surg. 2021;221(5):873-884 (early VATS, within about 4 days, over thrombolysis for retained hemothorax).",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "tube-thoracostomy",
+          "title": "Tube Thoracostomy (Chest Tube)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
+        }
+      ]
+    },
+    {
       "text": "Ralston SL, et al. Clinical Practice Guideline: The Diagnosis, Management, and Prevention of Bronchiolitis. Pediatrics. 2014;134(5):e1474-e1502 (AAP; reaffirmed, still the foundational CPG).",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -2196,6 +2208,12 @@
           "title": "Thoracentesis",
           "section": "Procedures",
           "route": "/procedures/aspiration-drainage-procedures/thoracentesis"
+        },
+        {
+          "id": "tube-thoracostomy",
+          "title": "Tube Thoracostomy (Chest Tube)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
         }
       ]
     },
@@ -3202,6 +3220,18 @@
       ]
     },
     {
+      "text": "Kulvatunyou N, Bauman ZM, Zein Edine SB, et al. The small (14 Fr) percutaneous catheter (P-CAT) versus large (28-32 Fr) open chest tube for traumatic hemothorax: a multicenter randomized clinical trial. J Trauma Acute Care Surg. 2021;91(5):809-813.",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "tube-thoracostomy",
+          "title": "Tube Thoracostomy (Chest Tube)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
+        }
+      ]
+    },
+    {
       "text": "Kuppermann N et al. Lancet 2009 (PECARN); validated PECARN 2019 (PREDICT/pooled)",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -3618,6 +3648,18 @@
           "title": "Midazolam — Pediatric Status Epilepticus",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-midazolam-status"
+        }
+      ]
+    },
+    {
+      "text": "Small versus large bore chest tube in traumatic hemothorax, hemopneumothorax, and pneumothorax: a meta-analysis of randomized controlled trials with trial sequential analysis. World J Emerg Surg. 2025;20 (no difference in treatment failure or insertion complications; shorter tube duration with small-bore).",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "tube-thoracostomy",
+          "title": "Tube Thoracostomy (Chest Tube)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
         }
       ]
     },
@@ -4222,7 +4264,7 @@
       ]
     },
     {
-      "text": "Laan DV, et al. Chest wall thickness and decompression failure: a systematic review. Injury. 2016 (landmark/depth considerations).",
+      "text": "Laan DV, Vu TD, Thiels CA, et al. Chest wall thickness and decompression failure: a systematic review and meta-analysis comparing anatomic locations in needle thoracostomy. Injury. 2016;47(4):797-804.",
       "group": "Cohort, registry & systematic reviews",
       "usedBy": [
         {
@@ -4302,6 +4344,18 @@
           "title": "Capnography — Waveform Interpretation",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/capnography"
+        }
+      ]
+    },
+    {
+      "text": "Risk factors for re-expansion pulmonary edema following chest tube drainage in patients with spontaneous pneumothorax: a systematic review and meta-analysis. 2024 (large and long-standing pneumothorax, younger age).",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "tube-thoracostomy",
+          "title": "Tube Thoracostomy (Chest Tube)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
         }
       ]
     },
@@ -4386,6 +4440,18 @@
           "title": "PONV Treatment Algorithm",
           "section": "Reference Library",
           "route": "/reference-library/perioperative-anesthesia/ponv-treatment-algorithm"
+        }
+      ]
+    },
+    {
+      "text": "American College of Surgeons Committee on Trauma. Advanced Trauma Life Support (ATLS), 10th ed. (massive hemothorax criteria: 1,500 mL initial or 200 mL/h for 2-4 h).",
+      "group": "Reference texts & drug libraries",
+      "usedBy": [
+        {
+          "id": "tube-thoracostomy",
+          "title": "Tube Thoracostomy (Chest Tube)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
         }
       ]
     },
@@ -4746,18 +4812,6 @@
           "title": "Penetrating Regional Trauma — Neck, Thorax & Mangled Extremity",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/penetrating-regional-trauma"
-        }
-      ]
-    },
-    {
-      "text": "ATLS 10th Edition — American College of Surgeons Committee on Trauma (chest tube technique, massive hemothorax criteria).",
-      "group": "Reference texts & drug libraries",
-      "usedBy": [
-        {
-          "id": "tube-thoracostomy",
-          "title": "Tube Thoracostomy (Chest Tube)",
-          "section": "Procedures",
-          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
         }
       ]
     },
@@ -5862,6 +5916,18 @@
           "title": "Ideal Body Weight (Devine)",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/dosing-fluid-math/ideal-body-weight"
+        }
+      ]
+    },
+    {
+      "text": "Asciak R, Bedawi EO, Bhatnagar R, et al. British Thoracic Society Clinical Statement on pleural procedures. Thorax. 2023;78(Suppl 4):s43-s68 (safe triangle; controlled drainage of large effusions).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "tube-thoracostomy",
+          "title": "Tube Thoracostomy (Chest Tube)",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/tube-thoracostomy"
         }
       ]
     },

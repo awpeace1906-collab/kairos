@@ -124,31 +124,12 @@ final class ContentStore: ObservableObject {
     }
 
     private func bundledData(_ relPath: String) throws -> Data {
-        // The folder reference is copied into the bundle under its on-disk name,
-        // "content" (lowercase — the `name:` in project.yml only renames the Xcode
-        // group, not the copied directory). Bundle.url(...) matching is
-        // case-sensitive even on the simulator's case-insensitive filesystem.
-        let file = (relPath as NSString).lastPathComponent
-        let name = (file as NSString).deletingPathExtension
-        let ext = (file as NSString).pathExtension
-
-        for prefix in ["content", "Content"] {
-            let subdir = prefix + "/" + (relPath as NSString).deletingLastPathComponent
-            if let url = Bundle.main.url(forResource: name, withExtension: ext, subdirectory: subdir) {
-                return try Data(contentsOf: url)
-            }
-            if let resURL = Bundle.main.resourceURL {
-                let direct = resURL.appendingPathComponent(prefix + "/" + relPath)
-                if FileManager.default.fileExists(atPath: direct.path) {
-                    return try Data(contentsOf: direct)
-                }
-            }
+        // Path resolution lives in ContentAssets so diagram plates and modules
+        // share one lookup (see the note there on the lowercase folder name).
+        guard let url = ContentAssets.bundledURL(relPath) else {
+            throw ContentError.missingResource("content/" + relPath)
         }
-        // Last fallback: resources flattened into the bundle root.
-        if let url = Bundle.main.url(forResource: name, withExtension: ext) {
-            return try Data(contentsOf: url)
-        }
-        throw ContentError.missingResource("content/" + relPath)
+        return try Data(contentsOf: url)
     }
 
     // MARK: - OTA update check

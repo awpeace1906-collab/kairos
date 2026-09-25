@@ -6,7 +6,7 @@ Living tracker. Two lists:
    or original content, existing Critical Vector / AnesCalc assets) before the
    affected content can be finalized.
 
-Last updated: 2026-09-23 — see the fresh-look audit entries in the Progress
+Last updated: 2026-09-24 — see the fresh-look audit entries in the Progress
 log below for current state. The **Progress log** further down is an
 append-only chronological record; trust it over any summary above it for
 "what happened when."
@@ -61,8 +61,11 @@ Still open from the prior cycle:
      new `diagram` body block carrying original inline SVG would render
      natively on both platforms, stay offline-first, stay tiny, and be
      theme-aware and license-clean.
-   - **Licensed raster/video media is an external dependency, not a build
-     task.** Procedure photos and instructional video cannot be lawfully
+   - **[UPDATED 2026-09-24: UNBLOCKED for public-domain / permissive
+     plates — see the progress log. The diagram `image` field now carries
+     them. Video, and anything share-alike or all-rights-reserved, is still
+     blocked as below.]** Licensed raster/video media is an external
+     dependency, not a build task. Procedure photos and instructional video cannot be lawfully
      copied from textbooks, journals, or YouTube, and bundling video fights
      the offline-first architecture and both clients' size limits. Options
      are (a) original SVG/vector diagrams authored in-repo, (b) outbound
@@ -239,6 +242,72 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-09-24 — **Tube thoracostomy deepened, and real anatomy under the
+  diagrams — the media blocker is lifted for public-domain plates.**
+  - **`tube-thoracostomy` v1 -> v3.** 587 words / 7 steps / 4 sources (one
+    of them BTS 2010) -> 10 fully-specified steps / 10 verified sources.
+    Two corrections: **tube size** (v1 taught 28-32 Fr for hemothorax; the
+    2021 Kulvatunyou RCT and a 2025 meta-analysis found 14 Fr pigtails
+    non-inferior for stable traumatic hemothorax) and **antibiotics** (v1
+    omitted them; EAST 2022 conditionally recommends prophylaxis at
+    insertion). Added the never-use-the-trocar rule, massive-hemothorax
+    physiology-over-volume, and EAST's early-VATS window for retained
+    hemothorax (within about 4 days).
+  - **One deliberate NON-correction, and it is the more important
+    judgment:** controlled drainage (clamp after 1-1.5 L) STAYS for a drain,
+    even though the same cap was retired from thoracentesis. A tap has a
+    clinician watching for symptoms; a drain left open on a large effusion
+    empties unobserved overnight, which removes the feedback loop that
+    makes symptom-limited drainage safe. BTS still recommends controlled
+    drainage for drains. The two cards say so and cross-link rather than
+    reading as contradictory. Copying the thoracentesis fix mechanically
+    would have made this card unsafe.
+  - **The safe triangle is now drawn on real anatomy.** User asked for an
+    open-source image with the triangle overlaid semi-translucently. Found
+    Henry Vandyke Carter's lateral-thorax plate from Gray's Anatomy (1918,
+    fig. 1215) on Wikimedia Commons: public domain, arm raised in the
+    insertion position, same anterior-left orientation as the schematic, and
+    it already labels pectoralis major, serratus anterior and latissimus
+    dorsi. Downloaded with the user's explicit OK and verified against
+    Commons' published SHA-1. The triangle, nipple line, insertion point and
+    sub-diaphragmatic zone are hand-registered to the plate's surface
+    landmarks (nipple, axillary vault, latissimus groove), fitted against a
+    contrast-enhanced enlargement rather than by eye, and the caption says
+    it is registered to an engraving — on the patient you palpate.
+  - **New infrastructure — diagram `image` (common.schema.json).** A raster
+    background drawn beneath the vector shapes, in the plate's own pixel
+    coordinates, with the viewBox acting as a crop window. Guard rails:
+    license limited to public-domain / CC0 / CC BY — **share-alike
+    deliberately excluded**, since an overlay is a derivative work; `credit`
+    required and rendered even for public-domain material; `sha1` checked
+    by `validate.mjs`, so a swapped or corrupted plate fails CI (proved by
+    feeding it a wrong hash). Assets live in `content/assets/`, are listed
+    with checksums in `manifest.json`, precached by the service worker
+    (otherwise a plate reached the offline cache only after an online view),
+    and added to the sync and deploy allowlists, which were explicit and
+    would have silently dropped them. Plates render in the LIGHT palette in
+    every theme: inverting an engraving is unreadable, and on iOS the
+    environment has to be forced light too, not just the background, or
+    `.primary` draws near-white labels onto white paper.
+  - **iOS:** new `ContentAssets` (plain enum, not `@MainActor`, because
+    actor isolation is exactly where Xcode 16 and 27 disagree);
+    `ContentStore.bundledData` now delegates to it so there is one copy of
+    the path lookup. A missing plate degrades to the overlay alone rather
+    than failing. 4 new tests prove the plate actually ships in the bundle
+    and decodes at 463x500 — iOS now 20/20.
+  - **Verified on both clients, both themes,** by looking: web via a
+    rasterized render with the plate inlined as a data URL, iOS in the
+    simulator in light and dark. That caught two real defects the automated
+    checks passed: the first schematic had a rib running out of frame and
+    invisible triangle borders (opacity applies to stroke and fill alike),
+    and on iOS the "SAFE TRIANGLE" label overflowed its chip because
+    system semibold runs wider than the web font the chips were sized for.
+  - **Found along the way: the repo lives in iCloud-synced `~/Documents`.**
+    iCloud has written conflict copies of the generated Xcode project and
+    inside `.git` (`index 2`, `index 3`, `info/refs 2`). git fsck is clean
+    and local matched GitHub exactly, so nothing was lost. `.gitignore` now
+    globs `ios/*.xcodeproj/` so a conflict copy cannot be committed. **The
+    real fix — moving the repo out of synced storage — is the user's call.**
 - 2026-09-23 (later) — **User notes backlog closed: 437 -> 440 modules.**
   Every item from the 2026-09-21 list is now either built or verified as
   already present.

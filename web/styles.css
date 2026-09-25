@@ -583,3 +583,31 @@ figure.diagram .diagram-title { font-size: 0.78rem; text-transform: uppercase; l
 figure.diagram .diagram-svg { display: block; width: 100%; height: auto; max-height: 60vh; overflow: visible; }
 figure.diagram .diagram-caption { margin: 10px 0 0; font-size: 0.86rem; line-height: 1.45; color: var(--muted); }
 @media (prefers-reduced-motion: no-preference) { figure.diagram .diagram-svg { transition: opacity 0.2s ease; } }
+
+/* A diagram drawn over a raster plate (common.schema.json#/$defs/diagram,
+   `image`). Two deliberate departures from the vector-only figure:
+   - The plate is black ink on white, so the figure stays in the LIGHT palette
+     in every theme. Inverting an engraving for dark mode makes it unreadable,
+     and dark-theme overlay colors on white paper lose their contrast. The
+     tokens are pinned to literal light values — `var(--accent)` etc. would
+     re-resolve to the dark palette and defeat the point.
+   - The viewBox is a crop window onto the plate, so overflow is clipped. The
+     vector-only figure leaves overflow visible for labels that brush the
+     edge; here that would spill the rest of the plate out of the frame. */
+figure.diagram--plate {
+  --dg-outline: #3a3742;
+  --dg-surface: #fbfaf8;
+  --dg-accent: #c6521c;
+  --dg-danger: #b4322a;
+  --dg-warning: #c6521c;
+  --dg-good: #2f6b3f;
+  --dg-muted: #55524c;
+  --dg-text: #1c1a24;
+  background: #f7f5f0;
+  border-color: #d9d5cc;
+}
+figure.diagram--plate .diagram-title,
+figure.diagram--plate .diagram-caption { color: #55524c; }
+figure.diagram--plate .diagram-svg--plate { overflow: hidden; border-radius: 6px; }
+figure.diagram .diagram-credit { margin: 6px 0 0; font-size: 0.74rem; line-height: 1.4; color: var(--muted); font-style: italic; }
+figure.diagram--plate .diagram-credit { color: #6b6862; }

@@ -12,6 +12,12 @@ const BUNDLED_BASE = new URL("../../content/", import.meta.url).href; // shipped
 // separate remote. Only set this to a cross-origin URL if the content moves off
 // the app's own host. (iOS uses ContentStore.remoteBase for exactly this.)
 const REMOTE_BASE = null;
+
+/** URL for a file in the content tree (e.g. a diagram's background plate),
+    resolved by the same rule as modules so the two can never drift apart. */
+export function assetUrl(relPath) {
+  return new URL(relPath, REMOTE_BASE || BUNDLED_BASE).href;
+}
 const LS_MANIFEST = "kairos.manifest.v1";
 const CACHE_NAME = "kairos-content-v1";
 

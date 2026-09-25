@@ -679,7 +679,23 @@ struct Diagram: Codable, Hashable {
     let caption: String?
     /// [minX, minY, width, height]
     let viewBox: [Double]
+    /// Optional raster background (an anatomical plate). Shapes are authored in
+    /// its pixel coordinates; the viewBox is a crop window onto it.
+    let image: Plate?
     let shapes: [Shape]
+
+    struct Plate: Codable, Hashable {
+        /// Relative to the content root, e.g. "assets/figures/gray1215.png".
+        let src: String
+        let width: Double
+        let height: Double
+        /// Top-left in viewBox units; defaults to the origin.
+        let at: [Double]?
+        let credit: String
+        let license: String
+        let sourceUrl: String?
+        let sha1: String?
+    }
 
     struct Shape: Codable, Hashable {
         let kind: String

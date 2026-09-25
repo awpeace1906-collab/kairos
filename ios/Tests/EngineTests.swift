@@ -244,3 +244,41 @@ final class ListItemTests: XCTestCase {
         XCTAssertNil(node.substeps)
     }
 }
+
+// MARK: - Diagram background plates
+
+/// The plate path is new territory for iOS: an image has to survive the
+/// folder-reference bundling, resolve through `ContentAssets`, and decode.
+/// None of the engine or list tests touch any of that.
+final class DiagramPlateTests: XCTestCase {
+    func testPlateShipsInTheBundleAndDecodes() throws {
+        let img = try XCTUnwrap(
+            ContentAssets.image("assets/figures/gray1215.png"),
+            "The plate is not in the app bundle — the content folder reference is not carrying assets/."
+        )
+        XCTAssertEqual(img.size.width * img.scale, 463, accuracy: 0.5)
+        XCTAssertEqual(img.size.height * img.scale, 500, accuracy: 0.5)
+    }
+
+    func testMissingPlateDegradesToNilRatherThanThrowing() {
+        XCTAssertNil(ContentAssets.image("assets/figures/does-not-exist.png"))
+    }
+
+    func testDiagramWithPlateDecodes() throws {
+        let json = #"""
+        {"viewBox": [0, 110, 463, 270],
+         "image": {"src": "assets/figures/gray1215.png", "width": 463, "height": 500,
+                   "credit": "Plate: Carter, Gray's Anatomy (1918)", "license": "public-domain"},
+         "shapes": [{"kind": "circle", "at": [192, 268], "r": 5}]}
+        """#
+        let d = try JSONDecoder().decode(Diagram.self, from: Data(json.utf8))
+        XCTAssertEqual(d.image?.src, "assets/figures/gray1215.png")
+        XCTAssertNil(d.image?.at, "`at` is optional and defaults to the origin")
+    }
+
+    func testDiagramWithoutPlateStillDecodes() throws {
+        let json = #"{"viewBox": [0, 0, 100, 100], "shapes": [{"kind": "line", "from": [0, 0], "to": [1, 1]}]}"#
+        let d = try JSONDecoder().decode(Diagram.self, from: Data(json.utf8))
+        XCTAssertNil(d.image)
+    }
+}

@@ -33,7 +33,9 @@ for (const name of ["index.html", "styles.css", "sw.js", "manifest.webmanifest",
 }
 
 // 2. the served content subset — schemas are NOT shipped (no runtime validation).
-for (const name of ["manifest.json", "search-index.json", "sources-index.json", "config", "modules"]) {
+// `assets` carries diagram background plates; without it the deployed site
+// would render every plate-backed diagram as a bare overlay.
+for (const name of ["manifest.json", "search-index.json", "sources-index.json", "config", "modules", "assets"]) {
   await cp(join(CONTENT_DIR, name), join(DIST, "content", name), { recursive: true });
 }
 

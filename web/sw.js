@@ -3,7 +3,7 @@
 // spec, fallback #4). OTA content updates land in a separate runtime cache managed
 // by ContentStore; this SW just guarantees the shell and the bundled baseline.
 
-const SHELL_CACHE = "kairos-shell-v12";
+const SHELL_CACHE = "kairos-shell-v13";
 const SHELL = [
   "./",
   "./index.html",
@@ -58,7 +58,11 @@ self.addEventListener("install", (e) => {
       try {
         const manifest = await (await fetch("./content/manifest.json", { cache: "no-cache" })).json();
         const paths = Object.values(manifest.modules).map((m) => "./content/" + m.path);
-        await Promise.allSettled(paths.map((p) => cache.add(p)));
+        // Diagram background plates too — otherwise a plate reaches the cache
+        // only after someone views it online, and a first offline visit to
+        // that procedure shows the overlay with nothing under it.
+        const assets = Object.keys(manifest.assets || {}).map((a) => "./content/" + a);
+        await Promise.allSettled([...paths, ...assets].map((p) => cache.add(p)));
       } catch { /* offline at install time — the shell is still cached */ }
       await self.skipWaiting();
     })()

@@ -2,6 +2,7 @@ import { el, mount, clearableField, lastVerified, sourcesBlock, tintStyle } from
 import { renderCalculator } from "./calculator.js";
 import { zoneForWeight, doseFromRule, estimateWeight, obesityCheck } from "../lib/weightZones.js";
 import { session } from "../lib/session.js";
+import { assetUrl } from "../lib/contentStore.js";
 
 export function renderContent(mod, route, store) {
   switch (mod.contentType) {
@@ -152,23 +153,38 @@ function diagramShape(s) {
     DiagramView; see common.schema.json#/$defs/diagram. */
 export function renderDiagram(d) {
   if (!d || !Array.isArray(d.viewBox) || !Array.isArray(d.shapes)) return null;
+  const img = d.image;
+  // A background plate is drawn first so every shape sits on top of it, in
+  // the plate's own pixel coordinates (see common.schema.json#/$defs/diagram).
+  const plate = img
+    ? svgEl("image", {
+        href: assetUrl(img.src),
+        x: img.at?.[0] ?? 0,
+        y: img.at?.[1] ?? 0,
+        width: img.width,
+        height: img.height,
+        preserveAspectRatio: "none",
+      })
+    : null;
   const svg = svgEl(
     "svg",
     {
       viewBox: d.viewBox.join(" "),
-      class: "diagram-svg",
+      class: img ? "diagram-svg diagram-svg--plate" : "diagram-svg",
       role: "img",
       "aria-label": d.title || d.caption || "clinical diagram",
       preserveAspectRatio: "xMidYMid meet",
     },
+    plate,
     d.shapes.map(diagramShape)
   );
   return el(
     "figure",
-    { class: "diagram" },
+    { class: img ? "diagram diagram--plate" : "diagram" },
     d.title ? el("figcaption", { class: "diagram-title" }, d.title) : null,
     svg,
-    d.caption ? el("p", { class: "diagram-caption" }, d.caption) : null
+    d.caption ? el("p", { class: "diagram-caption" }, d.caption) : null,
+    img ? el("p", { class: "diagram-credit" }, img.credit) : null
   );
 }
 

@@ -97,7 +97,7 @@
         "viewBox",
         "shapes"
       ],
-      "description": "An original, declarative vector illustration. Deliberately NOT raster/video: it renders natively on both clients (web SVG, iOS SwiftUI Canvas), stays offline-first and tiny, themes itself via semantic color tokens, and carries no third-party licensing. Same architectural pattern as the calculator `plot` field.",
+      "description": "An original, declarative vector illustration. The shapes are vector so they render natively on both clients (web SVG, iOS SwiftUI Canvas), stay offline-first and tiny, and theme themselves via semantic color tokens — the same architectural pattern as the calculator `plot` field. An optional `image` adds a raster background beneath them for the cases where real anatomy teaches better than a schematic; it is restricted to public-domain and permissive licenses, shipped offline, and checksum-verified, so the no-third-party-licensing-problems property still holds.",
       "properties": {
         "title": {
           "type": "string"
@@ -114,6 +114,66 @@
           },
           "minItems": 4,
           "maxItems": 4
+        },
+        "image": {
+          "description": "Optional raster BACKGROUND beneath the vector shapes — a public-domain or permissively licensed anatomical plate, for example. The image is drawn in viewBox units at `at` with its natural `width` x `height`, so the overlay shapes are authored in the image's own pixel coordinates and stay registered to the anatomy on every screen. The viewBox then acts as a crop window onto it. When an image is present, both clients render the figure in the light palette regardless of theme: plates are ink on white, and inverting an engraving for dark mode makes it unreadable.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "src",
+            "width",
+            "height",
+            "credit",
+            "license"
+          ],
+          "properties": {
+            "src": {
+              "type": "string",
+              "pattern": "^assets/[a-z0-9/_.-]+\\.(png|jpg|jpeg|webp)$",
+              "description": "Path relative to the content root. Must live under assets/ so the manifest lists it and both clients ship it offline."
+            },
+            "width": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "height": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "at": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2,
+              "description": "Top-left placement in viewBox units. Defaults to [0, 0]."
+            },
+            "credit": {
+              "type": "string",
+              "minLength": 5,
+              "description": "Rendered with the figure. Required even for public-domain material: provenance matters in a clinical reference, whatever the license demands."
+            },
+            "license": {
+              "type": "string",
+              "enum": [
+                "public-domain",
+                "CC0-1.0",
+                "CC-BY-4.0",
+                "CC-BY-3.0"
+              ],
+              "description": "Share-alike licenses (CC BY-SA) are deliberately excluded: an overlay is a derivative work, and share-alike would bind the figure — and arguably the module around it — to the same license."
+            },
+            "sourceUrl": {
+              "type": "string",
+              "pattern": "^https://"
+            },
+            "sha1": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{40}$",
+              "description": "SHA-1 of the file as published at sourceUrl. validate.mjs checks the file on disk against it, so a swapped or corrupted plate fails CI."
+            }
+          }
         },
         "shapes": {
           "type": "array",

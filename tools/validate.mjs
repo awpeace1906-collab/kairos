@@ -2,12 +2,15 @@
 // the build package calls out ("did you break the format, did you forget to bump
 // content_version").
 import Ajv from "ajv/dist/2020.js";
-import { basename } from "node:path";
+import { basename, join } from "node:path";
+import { createHash } from "node:crypto";
+import { readFileSync, existsSync } from "node:fs";
 import {
   loadModules,
   loadConfig,
   loadAllSchemas,
   SCHEMA_FOR_TYPE,
+  CONTENT_DIR,
 } from "./lib/content.mjs";
 
 const ajv = new Ajv({ allErrors: true, strict: false });
@@ -50,6 +53,21 @@ function listDepths(node, path = "") {
     }
   };
 
+  walk(node, path);
+  return out;
+}
+
+/** Every `diagram` object anywhere in a module, with a path to it. */
+function findDiagrams(node, path = "") {
+  const out = [];
+  const walk = (v, at) => {
+    if (Array.isArray(v)) return v.forEach((x, i) => walk(x, `${at}[${i}]`));
+    if (!v || typeof v !== "object") return;
+    for (const [k, x] of Object.entries(v)) {
+      if (k === "diagram" && x && typeof x === "object") out.push({ path: `${at}/diagram`, diagram: x });
+      walk(x, `${at}/${k}`);
+    }
+  };
   walk(node, path);
   return out;
 }
@@ -164,6 +182,26 @@ for (const mod of mods) {
   // it, so the cap lives here. Three levels is the readability ceiling on a
   // phone at arm's length; past that the content wants a table or its own
   // section, not more indentation.
+  // Diagram background plates: the file must exist, and must be the file the
+  // credit says it is. A plate swapped for a different image — or corrupted by
+  // a sync client — would still render, just as the wrong anatomy under a
+  // correctly-registered overlay. The checksum is what catches that.
+  for (const { path, diagram } of findDiagrams(json)) {
+    const img = diagram.image;
+    if (!img) continue;
+    const file = join(CONTENT_DIR, img.src);
+    if (!existsSync(file)) {
+      fail(where, `${path}/image: ${img.src} does not exist under content/`);
+      continue;
+    }
+    if (img.sha1) {
+      const actual = createHash("sha1").update(readFileSync(file)).digest("hex");
+      if (actual !== img.sha1) {
+        fail(where, `${path}/image: ${img.src} sha1 is ${actual}, expected ${img.sha1} — the file on disk is not the one credited`);
+      }
+    }
+  }
+
   for (const { path, depth } of listDepths(json)) {
     if (depth > MAX_LIST_DEPTH) {
       fail(where, `${path} nests lists ${depth} deep (max ${MAX_LIST_DEPTH}) — use a table or a separate step instead of deeper indentation`);

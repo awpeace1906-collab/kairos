@@ -11,6 +11,12 @@ struct DiagramView: View {
     let diagram: Diagram
     @Environment(\.colorScheme) private var scheme
 
+    private var hasPlate: Bool { diagram.image != nil }
+
+    private var cardColor: Color {
+        hasPlate ? Color(hex: 0xF7F5F0) : Color(.secondarySystemBackground)
+    }
+
     private var vb: (x: Double, y: Double, w: Double, h: Double) {
         let b = diagram.viewBox
         guard b.count == 4, b[2] > 0, b[3] > 0 else { return (0, 0, 1, 1) }
@@ -29,11 +35,23 @@ struct DiagramView: View {
                 .aspectRatio(vb.w / vb.h, contentMode: .fit)
                 .frame(maxWidth: .infinity)
                 .padding(8)
-                .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 12))
+                .background(cardColor, in: RoundedRectangle(cornerRadius: 12))
+                // A plate is ink on white, so its card stays light in every theme.
+                // Setting the environment (not just the background) is what makes
+                // `.primary` / `.secondary` inside the canvas resolve dark-on-light;
+                // otherwise dark mode draws near-white labels onto white paper.
+                .environment(\.colorScheme, hasPlate ? .light : scheme)
                 .accessibilityLabel(diagram.title ?? diagram.caption ?? "clinical diagram")
             if let caption = diagram.caption {
                 Text(caption)
                     .font(Theme.footnote)
+                    .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            if let plate = diagram.image {
+                Text(plate.credit)
+                    .font(Theme.caption2)
+                    .italic()
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -62,6 +80,19 @@ struct DiagramView: View {
         let oy: CGFloat = (size.height - vh * s) / 2 - vy * s
         func pt(_ x: Double, _ y: Double) -> CGPoint {
             CGPoint(x: ox + c(x) * s, y: oy + c(y) * s)
+        }
+
+        // Background plate first, so every shape draws on top of it — in the
+        // plate's own pixel coordinates, which is what keeps the overlay
+        // registered to the anatomy. Canvas clips to its bounds, so the viewBox
+        // acts as a crop window. A missing plate (an older binary receiving a
+        // newer module over the air) degrades to the overlay alone.
+        if let plate = diagram.image, let ui = ContentAssets.image(plate.src) {
+            let at = (plate.at?.count == 2) ? plate.at! : [0, 0]
+            let origin = pt(at[0], at[1])
+            let rect = CGRect(x: origin.x, y: origin.y,
+                              width: c(plate.width) * s, height: c(plate.height) * s)
+            ctx.draw(Image(uiImage: ui), in: rect)
         }
 
         for shape in diagram.shapes {
@@ -156,7 +187,8 @@ struct DiagramView: View {
     /// the --dg-* custom properties in styles.css.
     private func color(_ token: String?) -> Color? {
         guard let token else { return nil }
-        let dark = scheme == .dark
+        // Plates force the light palette (see `body`).
+        let dark = scheme == .dark && !hasPlate
         switch token {
         case "outline": return dark ? Color(hex: 0xC9C5D0) : Color(hex: 0x3A3742)
         case "surface": return dark ? Color(hex: 0x242329) : Color(hex: 0xFBFAF8)
