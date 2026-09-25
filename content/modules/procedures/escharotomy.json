@@ -3,13 +3,33 @@
   "section": "Procedures",
   "category": "Wound & Fracture Care",
   "title": "Escharotomy",
-  "settingEmphasis": ["ed", "icu"],
-  "aliases": ["burn compartment syndrome", "circumferential burn release", "chest wall escharotomy"],
-  "tags": ["escharotomy", "circumferential burn", "compartment syndrome", "burns", "ED", "ICU", "procedure"],
-  "keywords": ["indicated for a circumferential full-thickness burn causing vascular compromise in a limb or restrictive ventilation on the chest", "clinical diagnosis — diminished or absent distal pulses, worsening capillary refill, paresthesia, or rising peak airway pressures with a chest wall burn", "incise through the eschar only, into the underlying fat, not muscle — that would be a fasciotomy for a different indication", "midaxial line for limbs avoiding named neurovascular structures, bilateral mid-axillary lines connected for chest wall"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "burn compartment syndrome",
+    "circumferential burn release",
+    "chest wall escharotomy"
+  ],
+  "tags": [
+    "escharotomy",
+    "circumferential burn",
+    "compartment syndrome",
+    "burns",
+    "ED",
+    "ICU",
+    "procedure"
+  ],
+  "keywords": [
+    "indicated for a circumferential full-thickness burn causing vascular compromise in a limb or restrictive ventilation on the chest",
+    "clinical diagnosis — diminished or absent distal pulses, worsening capillary refill, paresthesia, or rising peak airway pressures with a chest wall burn",
+    "incise through the eschar only, into the underlying fat, not muscle — that would be a fasciotomy for a different indication",
+    "midaxial line for limbs avoiding named neurovascular structures, bilateral mid-axillary lines connected for chest wall"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
-  "last_reviewed": "2026-09-15",
+  "content_version": 2,
+  "last_reviewed": "2026-09-24",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
   "sources": [
@@ -17,7 +37,16 @@
     "Orgill DP, Piccolo N. Escharotomy and decompressive therapies in burns. J Burn Care Res. 2009."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5) — pediatric-burn-management and parkland-formula both reference this as a consideration for circumferential burns, but no technique card existed until now." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5) — pediatric-burn-management and parkland-formula both reference this as a consideration for circumferential burns, but no technique card existed until now."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-24",
+      "change": "Added the incision map — limbs, chest shield, hands and digits, with the ulnar and common peroneal nerve deviations — ported from the CRISIS escharotomy page and converted to the Kairos diagram format. Agrees with the card's mid-axial incisions and eschar-not-fascia endpoint, and adds the two specific nerve cautions the text covered only generally."
+    }
   ],
   "outputType": "workflow",
   "purpose": "When and how to perform an escharotomy for a circumferential full-thickness burn causing vascular compromise (limb) or restrictive ventilation (chest wall) — a clinical diagnosis and a bedside procedure, distinct from a fasciotomy.",
@@ -33,7 +62,923 @@
       "id": "limb-technique",
       "type": "step",
       "prompt": "2. Limb escharotomy — technique",
-      "body": "Incise along the MID-AXIAL line (the line connecting the midpoints of the flexion creases, roughly the mid-lateral and/or mid-medial aspect of the limb) — this avoids major neurovascular bundles, which typically run more anteriorly/medially. Incise through the ESCHAR ONLY, into the underlying subcutaneous fat — you should feel/see the tissue relax and separate (gaping open) once through the constricting eschar; this is deliberately NOT a fasciotomy (which goes through fascia into muscle compartments for a different indication — traumatic/ischemic compartment syndrome, not burn eschar constriction) and going deeper than needed risks unnecessary injury to underlying structures. Extend the incision the full length of the circumferential burn, and across involved joints if the burn crosses them. For digits, individual digital escharotomies (mid-lateral) may be needed if circumferentially burned and compromised."
+      "body": "Incise along the MID-AXIAL line (the line connecting the midpoints of the flexion creases, roughly the mid-lateral and/or mid-medial aspect of the limb) — this avoids major neurovascular bundles, which typically run more anteriorly/medially. Incise through the ESCHAR ONLY, into the underlying subcutaneous fat — you should feel/see the tissue relax and separate (gaping open) once through the constricting eschar; this is deliberately NOT a fasciotomy (which goes through fascia into muscle compartments for a different indication — traumatic/ischemic compartment syndrome, not burn eschar constriction) and going deeper than needed risks unnecessary injury to underlying structures. Extend the incision the full length of the circumferential burn, and across involved joints if the burn crosses them. For digits, individual digital escharotomies (mid-lateral) may be needed if circumferentially burned and compromised.",
+      "diagram": {
+        "title": "Escharotomy incision map",
+        "caption": "Mid-medial and mid-lateral lines, the full length of the burn and across every joint, ending 1-2 cm into unburned skin; the chest shield joins the anterior axillary lines at the clavicle and the costal margin. Two nerves move the line: at the elbow the medial incision passes anterior to the medial epicondyle to spare the ulnar nerve, and at the knee the lateral incision stays clear of the fibular neck to spare the common peroneal nerve. Stop at the fat — cutting fascia is a fasciotomy, a different procedure.",
+        "viewBox": [
+          0,
+          66,
+          520,
+          486
+        ],
+        "shapes": [
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                142.0,
+                134.0
+              ],
+              [
+                102.0,
+                206.0
+              ],
+              [
+                90.0,
+                278.0
+              ]
+            ],
+            "stroke": "outline",
+            "strokeWidth": 29.0
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                142.0,
+                134.0
+              ],
+              [
+                102.0,
+                206.0
+              ],
+              [
+                90.0,
+                278.0
+              ]
+            ],
+            "stroke": "tissue",
+            "strokeWidth": 26.0
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                218.0,
+                134.0
+              ],
+              [
+                258.0,
+                206.0
+              ],
+              [
+                270.0,
+                278.0
+              ]
+            ],
+            "stroke": "outline",
+            "strokeWidth": 29.0
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                218.0,
+                134.0
+              ],
+              [
+                258.0,
+                206.0
+              ],
+              [
+                270.0,
+                278.0
+              ]
+            ],
+            "stroke": "tissue",
+            "strokeWidth": 26.0
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                160.0,
+                294.0
+              ],
+              [
+                154.0,
+                364.0
+              ],
+              [
+                148.0,
+                492.0
+              ]
+            ],
+            "stroke": "outline",
+            "strokeWidth": 35.0
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                160.0,
+                294.0
+              ],
+              [
+                154.0,
+                364.0
+              ],
+              [
+                148.0,
+                492.0
+              ]
+            ],
+            "stroke": "tissue",
+            "strokeWidth": 32.0
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                200.0,
+                294.0
+              ],
+              [
+                206.0,
+                364.0
+              ],
+              [
+                212.0,
+                492.0
+              ]
+            ],
+            "stroke": "outline",
+            "strokeWidth": 35.0
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                200.0,
+                294.0
+              ],
+              [
+                206.0,
+                364.0
+              ],
+              [
+                212.0,
+                492.0
+              ]
+            ],
+            "stroke": "tissue",
+            "strokeWidth": 32.0
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                142.0,
+                134.0
+              ],
+              [
+                102.0,
+                206.0
+              ],
+              [
+                90.0,
+                278.0
+              ]
+            ],
+            "stroke": "muted",
+            "strokeWidth": 2.0,
+            "opacity": 0.55
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                218.0,
+                134.0
+              ],
+              [
+                258.0,
+                206.0
+              ],
+              [
+                270.0,
+                278.0
+              ]
+            ],
+            "stroke": "muted",
+            "strokeWidth": 2.0,
+            "opacity": 0.55
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                160.0,
+                294.0
+              ],
+              [
+                154.0,
+                364.0
+              ],
+              [
+                148.0,
+                492.0
+              ]
+            ],
+            "stroke": "muted",
+            "strokeWidth": 2.0,
+            "opacity": 0.55
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                200.0,
+                294.0
+              ],
+              [
+                206.0,
+                364.0
+              ],
+              [
+                212.0,
+                492.0
+              ]
+            ],
+            "stroke": "muted",
+            "strokeWidth": 2.0,
+            "opacity": 0.55
+          },
+          {
+            "kind": "circle",
+            "at": [
+              180.0,
+              86.0
+            ],
+            "r": 22.0,
+            "fill": "tissue",
+            "stroke": "outline",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "rect",
+            "at": [
+              170.0,
+              104.0
+            ],
+            "size": [
+              20.0,
+              20.0
+            ],
+            "fill": "tissue",
+            "stroke": "outline",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "rect",
+            "at": [
+              138.0,
+              120.0
+            ],
+            "size": [
+              84.0,
+              152.0
+            ],
+            "rx": 14.0,
+            "fill": "tissue",
+            "stroke": "outline",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "rect",
+            "at": [
+              142.0,
+              264.0
+            ],
+            "size": [
+              76.0,
+              34.0
+            ],
+            "rx": 10.0,
+            "fill": "tissue",
+            "stroke": "outline",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "circle",
+            "at": [
+              86.0,
+              286.0
+            ],
+            "r": 11.0,
+            "fill": "tissue",
+            "stroke": "outline",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "circle",
+            "at": [
+              274.0,
+              286.0
+            ],
+            "r": 11.0,
+            "fill": "tissue",
+            "stroke": "outline",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "ellipse",
+            "at": [
+              144.0,
+              500.0
+            ],
+            "rx": 15.0,
+            "ry": 9.0,
+            "fill": "tissue",
+            "stroke": "outline",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "ellipse",
+            "at": [
+              216.0,
+              500.0
+            ],
+            "rx": 15.0,
+            "ry": 9.0,
+            "fill": "tissue",
+            "stroke": "outline",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                133.0,
+                134.0
+              ],
+              [
+                93.0,
+                206.0
+              ],
+              [
+                81.0,
+                278.0
+              ]
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                151.0,
+                134.0
+              ],
+              [
+                111.0,
+                206.0
+              ],
+              [
+                99.0,
+                278.0
+              ]
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                227.0,
+                134.0
+              ],
+              [
+                267.0,
+                206.0
+              ],
+              [
+                279.0,
+                278.0
+              ]
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                209.0,
+                134.0
+              ],
+              [
+                249.0,
+                206.0
+              ],
+              [
+                261.0,
+                278.0
+              ]
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                148.0,
+                294.0
+              ],
+              [
+                142.0,
+                364.0
+              ],
+              [
+                136.0,
+                492.0
+              ]
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                172.0,
+                294.0
+              ],
+              [
+                166.0,
+                364.0
+              ],
+              [
+                160.0,
+                492.0
+              ]
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                212.0,
+                294.0
+              ],
+              [
+                218.0,
+                364.0
+              ],
+              [
+                224.0,
+                492.0
+              ]
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                188.0,
+                294.0
+              ],
+              [
+                194.0,
+                364.0
+              ],
+              [
+                200.0,
+                492.0
+              ]
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                82.0,
+                277.0
+              ],
+              [
+                80.0,
+                295.0
+              ]
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                91.0,
+                277.0
+              ],
+              [
+                89.0,
+                295.0
+              ]
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                270.0,
+                277.0
+              ],
+              [
+                268.0,
+                295.0
+              ]
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                279.0,
+                277.0
+              ],
+              [
+                277.0,
+                295.0
+              ]
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4
+          },
+          {
+            "kind": "polyline",
+            "points": [
+              [
+                146.0,
+                140.0
+              ],
+              [
+                214.0,
+                140.0
+              ],
+              [
+                214.0,
+                252.0
+              ],
+              [
+                146.0,
+                252.0
+              ],
+              [
+                146.0,
+                140.0
+              ]
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.4
+          },
+          {
+            "kind": "circle",
+            "at": [
+              249.0,
+              206.0
+            ],
+            "r": 6.0,
+            "fill": "warning"
+          },
+          {
+            "kind": "line",
+            "from": [
+              316.0,
+              244.0
+            ],
+            "to": [
+              254.0,
+              210.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.0,
+            "opacity": 0.7
+          },
+          {
+            "kind": "circle",
+            "at": [
+              219.0,
+              378.0
+            ],
+            "r": 6.0,
+            "fill": "warning"
+          },
+          {
+            "kind": "line",
+            "from": [
+              316.0,
+              378.0
+            ],
+            "to": [
+              226.0,
+              378.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.0,
+            "opacity": 0.7
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              84.0
+            ],
+            "text": "MID-MEDIAL + MID-LATERAL",
+            "fontSize": 11.5,
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              100.0
+            ],
+            "text": "Both lines, the full length",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              114.0
+            ],
+            "text": "of the burn, across every",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              128.0
+            ],
+            "text": "joint, ending 1–2 cm into",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              142.0
+            ],
+            "text": "unburned skin.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              172.0
+            ],
+            "text": "CHEST SHIELD",
+            "fontSize": 11.5,
+            "fill": "good"
+          },
+          {
+            "kind": "line",
+            "from": [
+              316.0,
+              168.0
+            ],
+            "to": [
+              220.0,
+              152.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.0
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              188.0
+            ],
+            "text": "Anterior axillary lines,",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              202.0
+            ],
+            "text": "joined at the clavicle",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              216.0
+            ],
+            "text": "and the costal margin.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              250.0
+            ],
+            "text": "ULNAR NERVE",
+            "fontSize": 11.5,
+            "fill": "warning"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              266.0
+            ],
+            "text": "Medial line passes",
+            "fontSize": 10.5,
+            "fill": "warning"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              280.0
+            ],
+            "text": "ANTERIOR to the",
+            "fontSize": 10.5,
+            "fill": "warning"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              294.0
+            ],
+            "text": "medial epicondyle.",
+            "fontSize": 10.5,
+            "fill": "warning"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              330.0
+            ],
+            "text": "COMMON PERONEAL",
+            "fontSize": 11.5,
+            "fill": "warning"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              346.0
+            ],
+            "text": "Lateral line passes clear",
+            "fontSize": 10.5,
+            "fill": "warning"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              360.0
+            ],
+            "text": "of the fibular neck.",
+            "fontSize": 10.5,
+            "fill": "warning"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              374.0
+            ],
+            "text": "Division is a permanent",
+            "fontSize": 10.5,
+            "fill": "warning"
+          },
+          {
+            "kind": "text",
+            "at": [
+              320.0,
+              388.0
+            ],
+            "text": "foot drop.",
+            "fontSize": 10.5,
+            "fill": "warning"
+          },
+          {
+            "kind": "line",
+            "from": [
+              36.0,
+              300.0
+            ],
+            "to": [
+              74.0,
+              292.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.0
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              304.0
+            ],
+            "text": "HAND",
+            "fontSize": 11.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              320.0
+            ],
+            "text": "Dorsal, between",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              334.0
+            ],
+            "text": "the metacarpals.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              364.0
+            ],
+            "text": "DIGITS",
+            "fontSize": 11.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              380.0
+            ],
+            "text": "Mid-axial, off the",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              394.0
+            ],
+            "text": "pinch surface.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              526.0
+            ],
+            "text": "Endpoint: the edges spring apart and fat bulges.",
+            "fontSize": 11.5,
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              544.0
+            ],
+            "text": "Stop at the fat. Cutting fascia is a fasciotomy — a different procedure.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          }
+        ]
+      }
     },
     {
       "id": "chest-technique",
@@ -55,6 +1000,9 @@
     "Full length of the circumferential burn released, across joints if involved",
     "Reassessment performed immediately after to confirm the release was adequate"
   ],
-  "crossLinks": ["pediatric-burn-management", "parkland-formula"],
+  "crossLinks": [
+    "pediatric-burn-management",
+    "parkland-formula"
+  ],
   "buildNote": "workflow outputType. Explicitly distinguishes escharotomy (through eschar/fat, for burn-constriction) from fasciotomy (through fascia into muscle, for traumatic/ischemic compartment syndrome) since conflating the two is a real and consequential error — going too deep on an escharotomy risks unnecessary injury, while a true traumatic compartment syndrome needs the deeper fasciotomy this procedure does NOT describe."
 }

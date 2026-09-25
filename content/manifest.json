@@ -2229,8 +2229,8 @@
       "next_review_due": "2026-12-02"
     },
     "procedures/cannula-cricothyroidotomy": {
-      "content_version": 1,
-      "hash": "2498ffdeefb9e713",
+      "content_version": 2,
+      "hash": "ef3afb2afcefc3f2",
       "path": "modules/procedures/cannula-cricothyroidotomy.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2283,8 +2283,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/escharotomy": {
-      "content_version": 1,
-      "hash": "1f15b664f1559e44",
+      "content_version": 2,
+      "hash": "40d602f1f8972ae9",
       "path": "modules/procedures/escharotomy.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -3371,8 +3371,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/obstetric-delivery-emergencies": {
-      "content_version": 2,
-      "hash": "b6de0e1ca149b1f9",
+      "content_version": 3,
+      "hash": "044457e11686bb3a",
       "path": "modules/reference-library/obstetric-delivery-emergencies.json",
       "contentType": "reference",
       "section": "Reference Library",

@@ -34,8 +34,8 @@
     "a bridge with a clock on it: CO2 climbs and it needs converting"
   ],
   "contentType": "procedure",
-  "content_version": 1,
-  "last_reviewed": "2026-09-21",
+  "content_version": 2,
+  "last_reviewed": "2026-09-24",
   "next_review_due": "2026-12-21",
   "review_tier": 1,
   "sources": [
@@ -50,6 +50,11 @@
       "version": 1,
       "date": "2026-09-21",
       "change": "New — one of the four technique subsections in the CICO & Front-of-Neck Access category. No cannula technique existed anywhere in the guide; CICO content went straight to the scalpel, which left the pediatric bridge and the no-kit scenario unaddressed."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-24",
+      "change": "Added the exhalation figure — partial patency (works) against complete obstruction (kills) — ported from the CRISIS needle-cricothyrotomy page rather than redrawn, converted from raw SVG into the Kairos diagram format so it renders natively on both clients and themes itself."
     }
   ],
   "outputType": "workflow",
@@ -135,6 +140,442 @@
           "The Ventrain and similar flow-controlled devices assist EXPIRATION as well as inspiration and can achieve close to a normal minute volume through a 2 mm internal-diameter catheter. If your department stocks one, it is the device this technique was waiting for.",
           "Low-pressure sources — a bag-valve via a 3.0 tube connector, or wall oxygen with a Y-piece — will oxygenate poorly and ventilate essentially not at all. They are better than nothing and should not be mistaken for more than that.",
           "Monitor for surgical emphysema continuously. A neck that is visibly swelling means gas is going somewhere other than the trachea, and the cannula has failed."
+        ]
+      },
+      "diagram": {
+        "title": "A cannula is not an exhalation route",
+        "caption": "Gas goes in through the cannula; it has to come out through the upper airway. With partial patency it escapes and the chest falls between breaths. With complete obstruction it cannot, pressure climbs with every insufflation, and the result is barotrauma, pneumothorax and circulatory collapse — which is why complete obstruction needs a cuffed surgical airway, not a needle.",
+        "viewBox": [
+          0,
+          50,
+          520,
+          360
+        ],
+        "shapes": [
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              66.0
+            ],
+            "text": "PARTIAL PATENCY — works",
+            "fontSize": 13.0,
+            "weight": "bold",
+            "fill": "good"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              56.0,
+              82.0
+            ],
+            "size": [
+              34.0,
+              86.0
+            ],
+            "rx": 6.0,
+            "fill": "lumen",
+            "stroke": "outline",
+            "strokeWidth": 1.5
+          },
+          {
+            "kind": "path",
+            "d": "M 56 110 L 74 122 L 56 134 Z",
+            "fill": "danger",
+            "opacity": 0.5
+          },
+          {
+            "kind": "path",
+            "d": "M 90 110 L 72 122 L 90 134 Z",
+            "fill": "danger",
+            "opacity": 0.5
+          },
+          {
+            "kind": "text",
+            "at": [
+              98.0,
+              120.0
+            ],
+            "text": "partial",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              98.0,
+              134.0
+            ],
+            "text": "obstruction",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              56.0,
+              168.0
+            ],
+            "size": [
+              34.0,
+              112.0
+            ],
+            "rx": 6.0,
+            "fill": "lumen",
+            "stroke": "outline",
+            "strokeWidth": 1.5
+          },
+          {
+            "kind": "line",
+            "from": [
+              150.0,
+              196.0
+            ],
+            "to": [
+              92.0,
+              184.0
+            ],
+            "stroke": "vessel",
+            "strokeWidth": 3.4
+          },
+          {
+            "kind": "text",
+            "at": [
+              118.0,
+              216.0
+            ],
+            "text": "cannula",
+            "fontSize": 10.5,
+            "fill": "vessel"
+          },
+          {
+            "kind": "arrow",
+            "from": [
+              134.0,
+              190.0
+            ],
+            "to": [
+              94.91,
+              181.95
+            ],
+            "stroke": "vessel",
+            "strokeWidth": 2.6
+          },
+          {
+            "kind": "arrow",
+            "from": [
+              73.0,
+              168.0
+            ],
+            "to": [
+              73.0,
+              70.8
+            ],
+            "stroke": "good",
+            "strokeWidth": 2.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              86.0,
+              100.0
+            ],
+            "text": "gas escapes ↑",
+            "fontSize": 10.5,
+            "fill": "good"
+          },
+          {
+            "kind": "ellipse",
+            "at": [
+              73.0,
+              304.0
+            ],
+            "rx": 42.0,
+            "ry": 24.0,
+            "fill": "lumen",
+            "stroke": "good",
+            "strokeWidth": 1.8
+          },
+          {
+            "kind": "text",
+            "at": [
+              40.0,
+              308.0
+            ],
+            "text": "chest falls",
+            "fontSize": 10.5,
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              34.0,
+              348.0
+            ],
+            "text": "Watch it come",
+            "fontSize": 10.5,
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              34.0,
+              362.0
+            ],
+            "text": "back down.",
+            "fontSize": 10.5,
+            "fill": "good"
+          },
+          {
+            "kind": "line",
+            "from": [
+              258.0,
+              54.0
+            ],
+            "to": [
+              258.0,
+              372.0
+            ],
+            "stroke": "outline",
+            "strokeWidth": 1.0,
+            "opacity": 0.45
+          },
+          {
+            "kind": "text",
+            "at": [
+              288.0,
+              66.0
+            ],
+            "text": "COMPLETE OBSTRUCTION — kills",
+            "fontSize": 13.0,
+            "weight": "bold",
+            "fill": "danger"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              344.0,
+              82.0
+            ],
+            "size": [
+              34.0,
+              86.0
+            ],
+            "rx": 6.0,
+            "fill": "lumen",
+            "stroke": "outline",
+            "strokeWidth": 1.5
+          },
+          {
+            "kind": "rect",
+            "at": [
+              344.0,
+              108.0
+            ],
+            "size": [
+              34.0,
+              28.0
+            ],
+            "fill": "danger",
+            "opacity": 0.75
+          },
+          {
+            "kind": "text",
+            "at": [
+              386.0,
+              120.0
+            ],
+            "text": "no way",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              386.0,
+              134.0
+            ],
+            "text": "out",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              344.0,
+              168.0
+            ],
+            "size": [
+              34.0,
+              112.0
+            ],
+            "rx": 6.0,
+            "fill": "lumen",
+            "stroke": "outline",
+            "strokeWidth": 1.5
+          },
+          {
+            "kind": "line",
+            "from": [
+              438.0,
+              196.0
+            ],
+            "to": [
+              380.0,
+              184.0
+            ],
+            "stroke": "vessel",
+            "strokeWidth": 3.4
+          },
+          {
+            "kind": "arrow",
+            "from": [
+              422.0,
+              190.0
+            ],
+            "to": [
+              382.91,
+              181.95
+            ],
+            "stroke": "vessel",
+            "strokeWidth": 2.6
+          },
+          {
+            "kind": "text",
+            "at": [
+              406.0,
+              216.0
+            ],
+            "text": "cannula",
+            "fontSize": 10.5,
+            "fill": "vessel"
+          },
+          {
+            "kind": "line",
+            "from": [
+              361.0,
+              168.0
+            ],
+            "to": [
+              361.0,
+              142.0
+            ],
+            "stroke": "danger",
+            "strokeWidth": 2.6
+          },
+          {
+            "kind": "line",
+            "from": [
+              350.0,
+              146.0
+            ],
+            "to": [
+              372.0,
+              138.0
+            ],
+            "stroke": "danger",
+            "strokeWidth": 2.6
+          },
+          {
+            "kind": "line",
+            "from": [
+              350.0,
+              138.0
+            ],
+            "to": [
+              372.0,
+              146.0
+            ],
+            "stroke": "danger",
+            "strokeWidth": 2.6
+          },
+          {
+            "kind": "ellipse",
+            "at": [
+              361.0,
+              304.0
+            ],
+            "rx": 54.0,
+            "ry": 32.0,
+            "fill": "danger",
+            "stroke": "danger",
+            "strokeWidth": 2.2,
+            "opacity": 0.16
+          },
+          {
+            "kind": "text",
+            "at": [
+              310.0,
+              300.0
+            ],
+            "text": "pressure climbs",
+            "fontSize": 10.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              310.0,
+              314.0
+            ],
+            "text": "every breath",
+            "fontSize": 10.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              288.0,
+              348.0
+            ],
+            "text": "Barotrauma, pneumothorax,",
+            "fontSize": 10.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              288.0,
+              362.0
+            ],
+            "text": "circulatory collapse.",
+            "fontSize": 10.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "line",
+            "from": [
+              0.0,
+              376.0
+            ],
+            "to": [
+              512.0,
+              376.0
+            ],
+            "stroke": "outline",
+            "strokeWidth": 1.0,
+            "opacity": 0.4
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              388.0
+            ],
+            "text": "In complete obstruction a needle technique is not a rescue.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              402.0
+            ],
+            "text": "You need a cuffed surgical airway.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          }
         ]
       }
     },

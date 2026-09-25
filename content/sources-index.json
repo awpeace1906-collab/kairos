@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 970,
+  "count": 972,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -9286,6 +9286,18 @@
       ]
     },
     {
+      "text": "Leung TY, Stuart O, Sahota D, et al. Head-to-body delivery interval and risk of fetal acidosis and hypoxic ischaemic encephalopathy in shoulder dystocia: a retrospective review. BJOG. 2011;118(4):474-479 (cord arterial pH fell 0.011/min, 95% CI 0.004-0.017; HIE risk low under 5 min).",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "obstetric-delivery-emergencies",
+          "title": "Delivery Emergencies — Shoulder Dystocia, Cord Prolapse, Abruption",
+          "section": "Reference Library",
+          "route": "/reference-library/obstetric-gynecologic/obstetric-delivery-emergencies"
+        }
+      ]
+    },
+    {
       "text": "Levick JR, Michel CC. Microvascular fluid exchange and the revised Starling principle. Cardiovasc Res 2010",
       "group": "Other primary sources",
       "usedBy": [
@@ -10416,6 +10428,18 @@
           "title": "POCUS Nerve Block — Sequential Checklist",
           "section": "Procedures",
           "route": "/procedures/regional-anesthesia-ultrasound/pocus-nerve-block-checklist"
+        }
+      ]
+    },
+    {
+      "text": "Poggi SH, Spong CY, Allen RH. Prioritizing posterior arm delivery during severe shoulder dystocia. Obstet Gynecol. 2003;101(5 Pt 2):1068-1072.",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "obstetric-delivery-emergencies",
+          "title": "Delivery Emergencies — Shoulder Dystocia, Cord Prolapse, Abruption",
+          "section": "Reference Library",
+          "route": "/reference-library/obstetric-gynecologic/obstetric-delivery-emergencies"
         }
       ]
     },

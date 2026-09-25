@@ -38,12 +38,14 @@
     "woody rigid uterus"
   ],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-02",
+  "content_version": 3,
+  "last_reviewed": "2026-09-24",
   "next_review_due": "2027-03-02",
   "review_tier": 1,
   "sources": [
-    "Critical Vector — OB Pocket Guide: Shoulder Dystocia / Cord Prolapse / Placental Abruption (ACOG 2023)"
+    "Critical Vector — OB Pocket Guide: Shoulder Dystocia / Cord Prolapse / Placental Abruption (ACOG 2023)",
+    "Leung TY, Stuart O, Sahota D, et al. Head-to-body delivery interval and risk of fetal acidosis and hypoxic ischaemic encephalopathy in shoulder dystocia: a retrospective review. BJOG. 2011;118(4):474-479 (cord arterial pH fell 0.011/min, 95% CI 0.004-0.017; HIE risk low under 5 min).",
+    "Poggi SH, Spong CY, Allen RH. Prioritizing posterior arm delivery during severe shoulder dystocia. Obstet Gynecol. 2003;101(5 Pt 2):1068-1072."
   ],
   "changelog": [
     {
@@ -55,6 +57,11 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the HELPERR sequence for shoulder dystocia, the cord-prolapse steps, and placental abruption recognition + management."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-24",
+      "change": "Added the shoulder-dystocia sequence-on-a-clock figure, ported from the CRISIS symphysiotomy/dystocia page, following the HELPERR order the card already teaches. Corrected one number while porting: the source figure said cord pH falls 0.04/min, which is Wood's 1973 theoretical estimate; Leung 2011 measured 0.011/min (95% CI 0.004-0.017). Sourced the 5-minute threshold (Leung 2011) and posterior-arm advantage (Poggi 2003)."
     }
   ],
   "summary": "Shoulder dystocia: call for help, McRoberts + suprapubic (NOT fundal) pressure first, then internal rotation / deliver the posterior arm / all-fours. Cord prolapse: elevate the presenting part continuously and go to an emergent cesarean — do not replace the cord. Abruption: painful bleeding + a rigid tender uterus + fetal distress ± DIC.",
@@ -83,6 +90,798 @@
         "R — Roll: the Gaskin all-fours maneuver (mother onto hands and knees), then reattempt delivery of the posterior (now uppermost) shoulder.",
         "Last resort: deliberate clavicle fracture; Zavanelli maneuver (cephalic replacement → cesarean); symphysiotomy."
       ]
+    },
+    {
+      "type": "diagram",
+      "diagram": {
+        "title": "Shoulder dystocia — the sequence, on a clock",
+        "caption": "About 30 seconds per maneuver; move on rather than repeating what has failed, and repeat the whole sequence with fresh hands if the first pass fails. The measured fall in cord arterial pH is about 0.011 per minute (Leung 2011) — roughly a quarter of the 0.04 per minute long taught from an older theoretical estimate — and the risk of hypoxic-ischemic encephalopathy is low with a head-to-body interval under 5 minutes, then rises. The honest reading is urgency without panic: there is time to work the sequence properly, and hard traction is what injures the plexus. Posterior-arm delivery reduces the obstructing shoulder diameter more than any other maneuver (Poggi 2003).",
+        "viewBox": [
+          0,
+          60,
+          520,
+          546
+        ],
+        "shapes": [
+          {
+            "kind": "line",
+            "from": [
+              44.0,
+              70.0
+            ],
+            "to": [
+              44.0,
+              592.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "line",
+            "from": [
+              34.0,
+              76.0
+            ],
+            "to": [
+              44.0,
+              76.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "line",
+            "from": [
+              34.0,
+              126.0
+            ],
+            "to": [
+              44.0,
+              126.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "line",
+            "from": [
+              34.0,
+              176.0
+            ],
+            "to": [
+              44.0,
+              176.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "line",
+            "from": [
+              34.0,
+              226.0
+            ],
+            "to": [
+              44.0,
+              226.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "line",
+            "from": [
+              34.0,
+              276.0
+            ],
+            "to": [
+              44.0,
+              276.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "line",
+            "from": [
+              34.0,
+              326.0
+            ],
+            "to": [
+              44.0,
+              326.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "line",
+            "from": [
+              34.0,
+              376.0
+            ],
+            "to": [
+              44.0,
+              376.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "line",
+            "from": [
+              34.0,
+              426.0
+            ],
+            "to": [
+              44.0,
+              426.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "line",
+            "from": [
+              34.0,
+              476.0
+            ],
+            "to": [
+              44.0,
+              476.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "line",
+            "from": [
+              34.0,
+              526.0
+            ],
+            "to": [
+              44.0,
+              526.0
+            ],
+            "stroke": "muted",
+            "strokeWidth": 1.4
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              80.0
+            ],
+            "text": "0:00",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              130.0
+            ],
+            "text": "0:30",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              180.0
+            ],
+            "text": "1:00",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              230.0
+            ],
+            "text": "1:30",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              280.0
+            ],
+            "text": "2:00",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              330.0
+            ],
+            "text": "2:30",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              380.0
+            ],
+            "text": "3:00",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              430.0
+            ],
+            "text": "3:30",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              480.0
+            ],
+            "text": "4:00",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              530.0
+            ],
+            "text": "4:30",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              40.0,
+              556.0
+            ],
+            "size": [
+              8.0,
+              36.0
+            ],
+            "fill": "danger",
+            "opacity": 0.55
+          },
+          {
+            "kind": "line",
+            "from": [
+              34.0,
+              576.0
+            ],
+            "to": [
+              48.0,
+              576.0
+            ],
+            "stroke": "danger",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "text",
+            "at": [
+              0.0,
+              580.0
+            ],
+            "text": "5:00",
+            "fontSize": 10.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              56.0,
+              76.0
+            ],
+            "size": [
+              264.0,
+              42.0
+            ],
+            "rx": 7.0,
+            "fill": "surface",
+            "stroke": "good",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              95.0
+            ],
+            "text": "CALL FOR HELP · START THE CLOCK",
+            "fontSize": 11.5,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              110.0
+            ],
+            "text": "Say “shoulder dystocia”. Stop pushing.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              56.0,
+              126.0
+            ],
+            "size": [
+              264.0,
+              42.0
+            ],
+            "rx": 7.0,
+            "fill": "surface",
+            "stroke": "good",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              145.0
+            ],
+            "text": "McROBERTS",
+            "fontSize": 11.5,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              160.0
+            ],
+            "text": "Hyperflex hips. Rotates the symphysis.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              56.0,
+              176.0
+            ],
+            "size": [
+              264.0,
+              42.0
+            ],
+            "rx": 7.0,
+            "fill": "surface",
+            "stroke": "good",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              195.0
+            ],
+            "text": "SUPRAPUBIC PRESSURE",
+            "fontSize": 11.5,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              210.0
+            ],
+            "text": "Down and toward the fetal chest.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              56.0,
+              226.0
+            ],
+            "size": [
+              264.0,
+              42.0
+            ],
+            "rx": 7.0,
+            "fill": "surface",
+            "stroke": "vessel",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              245.0
+            ],
+            "text": "EPISIOTOMY — if needed",
+            "fontSize": 11.5,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              260.0
+            ],
+            "text": "Room for your hand, not for the baby.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              56.0,
+              276.0
+            ],
+            "size": [
+              264.0,
+              42.0
+            ],
+            "rx": 7.0,
+            "fill": "surface",
+            "stroke": "vessel",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              295.0
+            ],
+            "text": "INTERNAL ROTATION",
+            "fontSize": 11.5,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              310.0
+            ],
+            "text": "Rubin II + Woods, turned as a screw.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              56.0,
+              326.0
+            ],
+            "size": [
+              264.0,
+              42.0
+            ],
+            "rx": 7.0,
+            "fill": "surface",
+            "stroke": "vessel",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              345.0
+            ],
+            "text": "POSTERIOR ARM",
+            "fontSize": 11.5,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              360.0
+            ],
+            "text": "Flex the elbow, sweep across the chest.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              56.0,
+              376.0
+            ],
+            "size": [
+              264.0,
+              42.0
+            ],
+            "rx": 7.0,
+            "fill": "surface",
+            "stroke": "vessel",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              395.0
+            ],
+            "text": "ALL FOURS (Gaskin)",
+            "fontSize": 11.5,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              410.0
+            ],
+            "text": "Quick, no kit. Maneuvers still work.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              56.0,
+              426.0
+            ],
+            "size": [
+              264.0,
+              42.0
+            ],
+            "rx": 7.0,
+            "fill": "surface",
+            "stroke": "warning",
+            "strokeWidth": 2.0
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              445.0
+            ],
+            "text": "LAST RESORTS",
+            "fontSize": 11.5,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              68.0,
+              460.0
+            ],
+            "text": "Zavanelli · cleidotomy · symphysiotomy",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              56.0,
+              492.0
+            ],
+            "text": "Failing once through is not failure — repeat it, with fresh hands.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              86.0
+            ],
+            "text": "pH FALLS ~0.01/MIN",
+            "fontSize": 11.5,
+            "fill": "warning"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              102.0
+            ],
+            "text": "measured, not 0.04 as once",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              116.0
+            ],
+            "text": "taught. Risk rises past 5 min.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              150.0
+            ],
+            "text": "NEVER FUNDAL",
+            "fontSize": 11.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              166.0
+            ],
+            "text": "It drives the shoulder",
+            "fontSize": 10.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              180.0
+            ],
+            "text": "harder onto the bone,",
+            "fontSize": 10.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              194.0
+            ],
+            "text": "and risks uterine rupture.",
+            "fontSize": 10.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              228.0
+            ],
+            "text": "NEVER PULL HARD",
+            "fontSize": 11.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              244.0
+            ],
+            "text": "Traction stretches the",
+            "fontSize": 10.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              258.0
+            ],
+            "text": "plexus. Axial only —",
+            "fontSize": 10.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              272.0
+            ],
+            "text": "and never twist the head.",
+            "fontSize": 10.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              342.0
+            ],
+            "text": "HIGHEST YIELD",
+            "fontSize": 11.5,
+            "fill": "vessel"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              358.0
+            ],
+            "text": "Removing one arm cuts",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              372.0
+            ],
+            "text": "the shoulder diameter",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              386.0
+            ],
+            "text": "by about 20%.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              404.0
+            ],
+            "text": "A fracture here is an",
+            "fontSize": 10.5,
+            "fill": "vessel"
+          },
+          {
+            "kind": "text",
+            "at": [
+              336.0,
+              418.0
+            ],
+            "text": "acceptable price.",
+            "fontSize": 10.5,
+            "fill": "vessel"
+          },
+          {
+            "kind": "text",
+            "at": [
+              56.0,
+              560.0
+            ],
+            "text": "PAST 5 MINUTES",
+            "fontSize": 11.5,
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              56.0,
+              578.0
+            ],
+            "text": "Risk of hypoxic-ischemic injury climbs steeply.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              56.0,
+              594.0
+            ],
+            "text": "Working the whole sequence once takes about four minutes.",
+            "fontSize": 10.5,
+            "fill": "muted"
+          }
+        ]
+      }
     },
     {
       "type": "heading",
