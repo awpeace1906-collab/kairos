@@ -314,6 +314,8 @@ final class RichTextFormatTests: XCTestCase {
 
     func testLeadLabel() {
         XCTAssertEqual(F.leadLabel("LEVEL: posterior axillary line")?.0, "LEVEL:")
+        XCTAssertEqual(F.leadLabel("POSITION:")?.0, "POSITION:")
+        XCTAssertEqual(F.leadLabel("POSITION:")?.1, "")
         XCTAssertNil(F.leadLabel("Note the ratio: 2 to 1"))
         XCTAssertNil(F.leadLabel("A: something"))
     }

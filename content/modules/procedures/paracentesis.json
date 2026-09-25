@@ -30,7 +30,7 @@
     "albumin 6-8g per liter removed beyond 5L to prevent post-paracentesis circulatory dysfunction"
   ],
   "contentType": "procedure",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -50,6 +50,11 @@
       "version": 2,
       "date": "2026-09-24",
       "change": "Site selection rewritten against Sakai 2005 (the source of the AASLD landmark): left over right because of a gas-dilated cecum or appendectomy scar on the right, and lateral over midline because the midline wall is thicker and the pool shallower. The earlier rationale about cecal mobility, and the falciform-ligament reason for avoiding the midline, were dropped. Added the 3 cm / 3 cm ASIS landmark and a figure on Gray's Anatomy plate 1220 (public domain), whose lateral line marks where the inferior epigastric vessels arise."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "outputType": "workflow",
@@ -60,7 +65,7 @@
       "id": "site",
       "type": "step",
       "prompt": "1. Site selection",
-      "body": "Left lower quadrant, lateral to the rectus sheath, which keeps you clear of the inferior epigastric vessels: they arise halfway between the anterior superior iliac spine (ASIS) and the pubis and climb inside the sheath. The classic spot is two finger-breadths (about 3 cm) cephalad and two finger-breadths medial to the left ASIS. Left is preferred over right because the right lower quadrant may hold a gas-dilated cecum or an appendectomy scar. The midline below the umbilicus is a poorer default: the wall is thicker there and the pool of fluid shallower, which matters most in obesity and with a smaller volume of ascites. Avoid old surgical scars (adhesions tether bowel to the wall), visible collateral veins, and areas of cellulitis. Ultrasound to confirm a fluid pocket and mark the site immediately before the procedure improves safety and success, especially with a smaller volume of ascites.",
+      "body": "Left lower quadrant, lateral to the rectus sheath, which keeps you clear of the inferior epigastric vessels: they arise halfway between the anterior superior iliac spine (ASIS) and the pubis and climb inside the sheath.\n\nThe classic spot is two finger-breadths (about 3 cm) cephalad and two finger-breadths medial to the left ASIS.\n\nWHY LEFT, WHY NOT MIDLINE:\n- Left is preferred over right because the right lower quadrant may hold a gas-dilated cecum or an appendectomy scar.\n- The midline below the umbilicus is a poorer default: the wall is thicker there and the pool of fluid shallower, which matters most in obesity and with a smaller volume of ascites.\n\nAvoid:\n- old surgical scars (adhesions tether bowel to the wall)\n- visible collateral veins\n- areas of cellulitis\n\nUltrasound to confirm a fluid pocket and mark the site immediately before the procedure improves safety and success, especially with a smaller volume of ascites.",
       "diagram": {
         "title": "Left lower quadrant site, from the ASIS",
         "caption": "Gray's regions of the abdomen, with the patient's left on the right of the picture. Gray's lateral line is drawn through the point halfway between the anterior superior iliac spine and the pubis — the same point the inferior epigastric vessels arise from before they climb medially into the rectus sheath. A site 3 cm up and 3 cm in from the left ASIS stays lateral to that line and to the rectus. The vessel course is an approximate projection drawn by hand; with ultrasound, color Doppler can show the vessels before you mark the spot.",
@@ -320,25 +325,25 @@
       "id": "technique",
       "type": "step",
       "prompt": "2. Z-track technique",
-      "body": "After local anesthesia, pull the skin taut and displace it 1-2 cm relative to the deeper tissue before inserting the needle, then advance in stages, releasing the skin traction once through the peritoneum. This creates a zigzag (not straight) tract through the abdominal wall layers that tends to seal itself once the needle is withdrawn and the skin released — reducing the risk of persistent post-procedure ascitic fluid leak, which is a genuine nuisance complication when skipped."
+      "body": "1. After local anesthesia, pull the skin taut and displace it 1-2 cm relative to the deeper tissue before inserting the needle.\n2. Advance in stages, releasing the skin traction once through the peritoneum.\n\nThis creates a zigzag (not straight) tract through the abdominal wall layers that tends to seal itself once the needle is withdrawn and the skin released — reducing the risk of persistent post-procedure ascitic fluid leak, which is a genuine nuisance complication when skipped."
     },
     {
       "id": "drainage",
       "type": "step",
       "prompt": "3. Drainage",
-      "body": "Diagnostic: 30-50 mL is generally sufficient. Large-volume therapeutic paracentesis: several liters can be safely removed in one session using a vacuum-bottle or wall-suction system with a catheter (rather than a rigid needle left in place, which risks bowel injury as the abdomen decompresses and organs shift). There is no universally mandated maximum volume, but very large-volume taps (> 5 L) are where post-paracentesis circulatory dysfunction becomes a real consideration — see below."
+      "body": "DIAGNOSTIC: 30-50 mL is generally sufficient.\n\nLARGE-VOLUME THERAPEUTIC PARACENTESIS: several liters can be safely removed in one session using a vacuum-bottle or wall-suction system with a catheter (rather than a rigid needle left in place, which risks bowel injury as the abdomen decompresses and organs shift).\n\nThere is no universally mandated maximum volume, but very large-volume taps (> 5 L) are where post-paracentesis circulatory dysfunction becomes a real consideration — see below."
     },
     {
       "id": "albumin",
       "type": "step",
       "prompt": "4. Albumin replacement for large-volume taps",
-      "body": "For volumes removed beyond about 5 liters, give IV albumin (commonly cited as roughly 6-8 g per liter removed beyond that threshold) to reduce the risk of post-paracentesis circulatory dysfunction — a drop in effective circulating volume that can precipitate hepatorenal syndrome or worsening renal function. Below ~5 L, albumin is generally not required. This is a real, guideline-supported practice, not a soft suggestion — skipping it on a large-volume tap in a cirrhotic patient is a recognized way to precipitate AKI."
+      "body": "For volumes removed beyond about 5 liters, give IV albumin (commonly cited as roughly 6-8 g per liter removed beyond that threshold) to reduce the risk of post-paracentesis circulatory dysfunction — a drop in effective circulating volume that can precipitate hepatorenal syndrome or worsening renal function.\n\nBelow ~5 L, albumin is generally not required.\n\nThis is a real, guideline-supported practice, not a soft suggestion — skipping it on a large-volume tap in a cirrhotic patient is a recognized way to precipitate AKI."
     },
     {
       "id": "sbp",
       "type": "recommendation",
       "prompt": "Diagnosing spontaneous bacterial peritonitis (SBP)",
-      "body": "SBP is diagnosed by an ascitic fluid polymorphonuclear (PMN, i.e. neutrophil) count ≥ 250 cells/mm³ — this threshold alone is diagnostic and treatment should start empirically once it's met, REGARDLESS of whether culture is positive or what the culture eventually shows (culture-negative neutrocytic ascites is treated the same as culture-positive SBP). Don't wait for culture results to start antibiotics when the PMN count already meets threshold. The serum-ascites albumin gradient (SAAG) — serum albumin minus ascitic fluid albumin — helps distinguish portal-hypertensive ascites (SAAG ≥ 1.1 g/dL, e.g. cirrhosis, heart failure) from non-portal-hypertensive causes (SAAG < 1.1 g/dL, e.g. malignancy, infection, pancreatitis) but is a separate question from the SBP diagnosis itself."
+      "body": "SBP is diagnosed by an ascitic fluid polymorphonuclear (PMN, i.e. neutrophil) count ≥ 250 cells/mm³.\n- This threshold alone is diagnostic, and treatment should start empirically once it's met, REGARDLESS of whether culture is positive or what the culture eventually shows (culture-negative neutrocytic ascites is treated the same as culture-positive SBP).\n- Don't wait for culture results to start antibiotics when the PMN count already meets threshold.\n\nThe serum-ascites albumin gradient (SAAG) — serum albumin minus ascitic fluid albumin — helps distinguish portal-hypertensive ascites from non-portal-hypertensive causes, but is a separate question from the SBP diagnosis itself:\n- SAAG ≥ 1.1 g/dL: e.g. cirrhosis, heart failure\n- SAAG < 1.1 g/dL: e.g. malignancy, infection, pancreatitis"
     }
   ],
   "checklist": [

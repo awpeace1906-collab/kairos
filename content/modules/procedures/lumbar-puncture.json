@@ -27,7 +27,7 @@
     "traumatic tap versus true xanthochromia distinguish by tube 1 vs tube 4 RBC count"
   ],
   "contentType": "procedure",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -46,6 +46,11 @@
       "version": 2,
       "date": "2026-09-24",
       "change": "Added a Tuffier's-line figure to step 1 on Gray's Anatomy plate 1211 (public domain), with the L3-4 and L4-5 interspaces and the evidence that palpated levels are often one space too high (Broadbent 2000). Replaced a malformed source entry with the full Wilson & Prince 1989 citation for the conus level in children."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "outputType": "workflow",
@@ -56,13 +61,13 @@
       "id": "contraindications",
       "type": "warning",
       "prompt": "Before you start: contraindications",
-      "body": "Signs of raised ICP with risk of herniation (papilledema, focal neuro deficit, altered consciousness with concern for a mass lesion) — get imaging first unless the clinical picture makes empiric treatment plus imaging-after the safer path (e.g. suspected bacterial meningitis: don't delay antibiotics for imaging). Coagulopathy or significant thrombocytopenia (platelets typically < 50,000, or on therapeutic anticoagulation) — correct first if possible. Infection overlying the puncture site — choose a different interspace or route. Suspected spinal epidural abscess at the planned level."
+      "body": "- Signs of raised ICP with risk of herniation (papilledema, focal neuro deficit, altered consciousness with concern for a mass lesion): get imaging first unless the clinical picture makes empiric treatment plus imaging-after the safer path (e.g. suspected bacterial meningitis: don't delay antibiotics for imaging).\n- Coagulopathy or significant thrombocytopenia (platelets typically < 50,000, or on therapeutic anticoagulation): correct first if possible.\n- Infection overlying the puncture site: choose a different interspace or route.\n- Suspected spinal epidural abscess at the planned level."
     },
     {
       "id": "position",
       "type": "step",
       "prompt": "1. Position and landmark",
-      "body": "Lateral decubitus with knees drawn toward the chest (best for accurate opening pressure — the patient must be relaxed and NOT tightly flexed/held by an assistant, which falsely elevates pressure), or sitting-forward if opening pressure isn't needed or positioning is difficult. The intercristal line (a line connecting the top of both iliac crests) crosses the spine at approximately L4 or the L4-5 interspace — use this landmark, and aim for the L3-4 or L4-5 interspace, which stays below the conus medullaris at any age including infants (the conus is usually higher, around L1-2, but with real individual variability into early childhood — L3-4/L4-5 is deliberately conservative).",
+      "body": "POSITION:\n- Lateral decubitus with knees drawn toward the chest — best for accurate opening pressure. The patient must be relaxed and NOT tightly flexed/held by an assistant, which falsely elevates pressure.\n- Sitting-forward, if opening pressure isn't needed or positioning is difficult.\n\nLANDMARK: the intercristal line (a line connecting the top of both iliac crests) crosses the spine at approximately L4 or the L4-5 interspace.\n\nUse this landmark, and aim for the L3-4 or L4-5 interspace, which stays below the conus medullaris at any age including infants (the conus is usually higher, around L1-2, but with real individual variability into early childhood — L3-4/L4-5 is deliberately conservative).",
       "diagram": {
         "title": "Tuffier's line and the two safe interspaces",
         "caption": "Back view, so the patient's left is on the left of the picture. The line joining the tops of the iliac crests crosses the spine at about L4 or the L4-5 interspace: the space just above it is L3-4, the one just below is L4-5, and both lie below the conus medullaris. Palpated levels are often wrong, and usually wrong in the risky direction. In one MRI study, anesthesiologists identified a marked interspace correctly only 29% of the time, and it was one space higher than they believed in 51% — which is why the card aims low. The interspace marks are placed by hand at typical spacing; on the patient, count from the crests you feel.",
@@ -309,13 +314,13 @@
       "id": "needle",
       "type": "step",
       "prompt": "3. Needle insertion",
-      "body": "Sterile prep and drape, local anesthetic infiltration at the skin and along the planned tract. Advance the spinal needle (bevel parallel to the long axis of the spine to reduce headache risk with a traditional cutting-tip needle; atraumatic/pencil-point needles are increasingly preferred and reduce post-LP headache regardless of orientation) slightly cephalad, aiming toward the umbilicus. A distinct 'pop' or give is often felt passing through the ligamentum flavum/dura. Remove the stylet periodically to check for CSF return."
+      "body": "1. Sterile prep and drape, local anesthetic infiltration at the skin and along the planned tract.\n2. Advance the spinal needle slightly cephalad, aiming toward the umbilicus.\n3. A distinct 'pop' or give is often felt passing through the ligamentum flavum/dura.\n4. Remove the stylet periodically to check for CSF return.\n\nNEEDLE: bevel parallel to the long axis of the spine to reduce headache risk with a traditional cutting-tip needle; atraumatic/pencil-point needles are increasingly preferred and reduce post-LP headache regardless of orientation."
     },
     {
       "id": "pressure",
       "type": "step",
       "prompt": "4. Opening pressure",
-      "body": "Attach the manometer as soon as CSF flows, with the patient in the LATERAL DECUBITUS position and legs relaxed/extended (not flexed) for an accurate reading — a sitting position or flexed legs will falsely elevate the number. Normal adult opening pressure is roughly 10-20 cmH2O (obese patients can normally run somewhat higher). A markedly elevated pressure changes management (consider idiopathic intracranial hypertension, or reconsider whether imaging should have preceded the tap) — this is a genuinely useful number, don't skip it when clinically relevant."
+      "body": "Attach the manometer as soon as CSF flows, with the patient in the LATERAL DECUBITUS position and legs relaxed/extended (not flexed) for an accurate reading — a sitting position or flexed legs will falsely elevate the number.\n\nNORMAL: adult opening pressure is roughly 10-20 cmH2O (obese patients can normally run somewhat higher).\n\nA markedly elevated pressure changes management (consider idiopathic intracranial hypertension, or reconsider whether imaging should have preceded the tap) — this is a genuinely useful number, don't skip it when clinically relevant."
     },
     {
       "id": "collection",
@@ -327,7 +332,7 @@
       "id": "interpretation",
       "type": "recommendation",
       "prompt": "Traumatic tap vs. true xanthochromia",
-      "body": "A falling RBC count from tube 1 to tube 4 suggests a traumatic tap (blood introduced by the needle itself) rather than true subarachnoid hemorrhage, where the RBC count stays roughly consistent across tubes. Xanthochromia (yellow discoloration from RBC breakdown products) supports true SAH but takes hours to develop and can be falsely negative very early — a negative xanthochromia very soon after headache onset doesn't fully exclude SAH if pretest probability is high; correlate with the clinical picture and consider CT angiography rather than relying on the LP alone in an equivocal case."
+      "body": "TRAUMATIC TAP OR SAH: a falling RBC count from tube 1 to tube 4 suggests a traumatic tap (blood introduced by the needle itself) rather than true subarachnoid hemorrhage, where the RBC count stays roughly consistent across tubes.\n\nXANTHOCHROMIA (yellow discoloration from RBC breakdown products) supports true SAH but takes hours to develop and can be falsely negative very early.\n- A negative xanthochromia very soon after headache onset doesn't fully exclude SAH if pretest probability is high.\n- Correlate with the clinical picture and consider CT angiography rather than relying on the LP alone in an equivocal case."
     }
   ],
   "checklist": [

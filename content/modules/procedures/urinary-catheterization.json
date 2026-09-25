@@ -3,12 +3,33 @@
   "section": "Procedures",
   "category": "Aspiration & Drainage Procedures",
   "title": "Urinary Catheterization",
-  "settingEmphasis": ["ed", "icu"],
-  "aliases": ["Foley catheter", "urethral catheterization", "suprapubic catheter", "blood at the meatus"],
-  "tags": ["urinary catheter", "Foley", "urinary retention", "suprapubic catheterization", "ED", "ICU", "procedure"],
-  "keywords": ["blood at the urethral meatus, a high-riding or non-palpable prostate, or perineal/scrotal hematoma after pelvic trauma means stop and get imaging before a urethral catheter", "coude tip catheter for a male with suspected BPH when a standard catheter won't pass", "do not force a catheter against resistance", "CAUTI is a real and largely preventable complication, use only when genuinely indicated and remove promptly"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "Foley catheter",
+    "urethral catheterization",
+    "suprapubic catheter",
+    "blood at the meatus"
+  ],
+  "tags": [
+    "urinary catheter",
+    "Foley",
+    "urinary retention",
+    "suprapubic catheterization",
+    "ED",
+    "ICU",
+    "procedure"
+  ],
+  "keywords": [
+    "blood at the urethral meatus, a high-riding or non-palpable prostate, or perineal/scrotal hematoma after pelvic trauma means stop and get imaging before a urethral catheter",
+    "coude tip catheter for a male with suspected BPH when a standard catheter won't pass",
+    "do not force a catheter against resistance",
+    "CAUTI is a real and largely preventable complication, use only when genuinely indicated and remove promptly"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -17,7 +38,16 @@
     "CDC guidance on catheter-associated urinary tract infection (CAUTI) prevention."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5)." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5)."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "outputType": "workflow",
   "purpose": "Urethral catheterization technique, the trauma-related red flags that mean stop and image before catheterizing, and the CAUTI-prevention principle of using a catheter only when genuinely indicated.",
@@ -27,19 +57,19 @@
       "id": "trauma-screen",
       "type": "warning",
       "prompt": "Trauma patients — screen for urethral injury first",
-      "body": "STOP and do NOT attempt urethral catheterization — get urologic imaging/consultation first — if ANY of these are present after pelvic/perineal trauma: blood at the urethral meatus, a high-riding or non-palpable prostate on rectal exam, or a perineal/scrotal/labial hematoma. Any of these suggests a urethral injury, and passing a catheter blindly risks converting a partial tear into a complete transection, or creating a false passage. If a urethral injury is suspected, a retrograde urethrogram (or urology-directed alternative) should precede any catheterization attempt."
+      "body": "STOP and do NOT attempt urethral catheterization — get urologic imaging/consultation first — if ANY of these are present after pelvic/perineal trauma:\n- blood at the urethral meatus\n- a high-riding or non-palpable prostate on rectal exam\n- a perineal/scrotal/labial hematoma\n\nAny of these suggests a urethral injury, and passing a catheter blindly risks converting a partial tear into a complete transection, or creating a false passage.\n\nIf a urethral injury is suspected, a retrograde urethrogram (or urology-directed alternative) should precede any catheterization attempt."
     },
     {
       "id": "standard-technique",
       "type": "step",
       "prompt": "1. Standard technique (no trauma red flags)",
-      "body": "Sterile technique: prep the periurethral area, use sterile lubricant (with lidocaine gel if available/tolerated, instilled into the urethra before insertion for a male — this meaningfully reduces discomfort and is underused). Insert the catheter gently and steadily; a normal male urethra has a natural resistance at the external sphincter — steady gentle pressure (not force) with reassurance and having the patient relax/take a breath usually overcomes it. Advance to the hub before inflating the balloon (inflating in the urethra rather than the bladder is a real, avoidable injury) — confirm urine return first."
+      "body": "1. Sterile technique: prep the periurethral area.\n2. Use sterile lubricant (with lidocaine gel if available/tolerated, instilled into the urethra before insertion for a male — this meaningfully reduces discomfort and is underused).\n3. Insert the catheter gently and steadily. A normal male urethra has a natural resistance at the external sphincter — steady gentle pressure (not force) with reassurance and having the patient relax/take a breath usually overcomes it.\n4. Advance to the hub before inflating the balloon (inflating in the urethra rather than the bladder is a real, avoidable injury) — confirm urine return first."
     },
     {
       "id": "resistance",
       "type": "step",
       "prompt": "2. If you meet resistance — do not force it",
-      "body": "Do NOT force a catheter against significant resistance — this risks creating a false passage or worsening an unrecognized stricture/injury. For a male with known or suspected BPH where a standard catheter won't pass, a COUDE-TIP catheter (curved tip, inserted with the tip pointing anteriorly/upward) is designed to navigate around an enlarged prostate more easily. If a coude catheter and gentle technique still fail, stop and involve urology rather than escalating force or repeated attempts."
+      "body": "Do NOT force a catheter against significant resistance — this risks creating a false passage or worsening an unrecognized stricture/injury.\n\nFor a male with known or suspected BPH where a standard catheter won't pass, a COUDE-TIP catheter (curved tip, inserted with the tip pointing anteriorly/upward) is designed to navigate around an enlarged prostate more easily.\n\nIf a coude catheter and gentle technique still fail, stop and involve urology rather than escalating force or repeated attempts."
     },
     {
       "id": "suprapubic",
@@ -51,7 +81,7 @@
       "id": "cauti",
       "type": "recommendation",
       "prompt": "CAUTI prevention — use only when genuinely indicated, remove promptly",
-      "body": "Catheter-associated urinary tract infection is a common, largely preventable hospital-acquired complication. Place a urinary catheter only for a genuine indication (urinary retention, accurate output monitoring in a critically ill patient, specific surgical/wound-healing needs, patient immobility with a stage 3-4 pressure injury where urine contact would worsen it) — NOT routinely 'for convenience' or because a patient is incontinent without another specific indication. Document the indication, and reassess daily whether the catheter is still needed — prompt removal once the indication resolves is one of the most effective, evidence-supported CAUTI-prevention measures available."
+      "body": "Catheter-associated urinary tract infection is a common, largely preventable hospital-acquired complication.\n\nPlace a urinary catheter only for a genuine indication:\n- urinary retention\n- accurate output monitoring in a critically ill patient\n- specific surgical/wound-healing needs\n- patient immobility with a stage 3-4 pressure injury where urine contact would worsen it\n\nNOT routinely 'for convenience' or because a patient is incontinent without another specific indication.\n\nDocument the indication, and reassess daily whether the catheter is still needed — prompt removal once the indication resolves is one of the most effective, evidence-supported CAUTI-prevention measures available."
     }
   ],
   "checklist": [
@@ -61,6 +91,9 @@
     "No forcing against resistance — coude catheter or urology involvement for a difficult male catheterization",
     "A genuine indication documented, with a plan to remove the catheter promptly once it's no longer needed"
   ],
-  "crossLinks": ["trauma-primary-survey", "aki-staging-rrt"],
+  "crossLinks": [
+    "trauma-primary-survey",
+    "aki-staging-rrt"
+  ],
   "buildNote": "workflow outputType. The trauma-red-flags warning node is placed first and deliberately framed as an absolute stop, since this is the single highest-stakes decision point in this otherwise routine procedure."
 }

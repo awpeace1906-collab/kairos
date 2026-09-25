@@ -3,12 +3,31 @@
   "section": "Procedures",
   "category": "ENT / Ophtho / Dental / GU",
   "title": "Lateral Canthotomy & Cantholysis",
-  "settingEmphasis": ["ed"],
-  "aliases": ["orbital decompression", "canthotomy and cantholysis", "retrobulbar hemorrhage decompression"],
-  "tags": ["lateral canthotomy", "cantholysis", "orbital compartment syndrome", "retrobulbar hemorrhage", "procedure", "ED"],
-  "keywords": ["this is a clinical diagnosis and a bedside procedure, do not wait for CT or ophthalmology if vision is threatened", "cut the lateral canthal tendon first, then the inferior crus, then the superior crus only if pressure remains elevated", "strumming the crus with closed scissors to confirm it's fully released, it should feel like a plucked string when intact and go slack once cut", "cut inferoposteriorly toward the orbital rim to avoid the lacrimal gland and levator muscle superiorly", "this buys time, it does not replace definitive ophthalmology management once decompressed"],
+  "settingEmphasis": [
+    "ed"
+  ],
+  "aliases": [
+    "orbital decompression",
+    "canthotomy and cantholysis",
+    "retrobulbar hemorrhage decompression"
+  ],
+  "tags": [
+    "lateral canthotomy",
+    "cantholysis",
+    "orbital compartment syndrome",
+    "retrobulbar hemorrhage",
+    "procedure",
+    "ED"
+  ],
+  "keywords": [
+    "this is a clinical diagnosis and a bedside procedure, do not wait for CT or ophthalmology if vision is threatened",
+    "cut the lateral canthal tendon first, then the inferior crus, then the superior crus only if pressure remains elevated",
+    "strumming the crus with closed scissors to confirm it's fully released, it should feel like a plucked string when intact and go slack once cut",
+    "cut inferoposteriorly toward the orbital rim to avoid the lacrimal gland and levator muscle superiorly",
+    "this buys time, it does not replace definitive ophthalmology management once decompressed"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,7 +37,16 @@
     "LITFL. Procedure: Lateral Canthotomy."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6), built alongside the ophthalmologic-emergencies reference which covers the orbital compartment syndrome indication for this procedure." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6), built alongside the ophthalmologic-emergencies reference which covers the orbital compartment syndrome indication for this procedure."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "outputType": "workflow",
   "purpose": "Emergent bedside decompression of orbital compartment syndrome (retrobulbar hemorrhage) to relieve pressure on the optic nerve and central retinal artery before permanent vision loss occurs.",
@@ -34,7 +62,7 @@
       "id": "prep",
       "type": "step",
       "prompt": "2. Prepare and anesthetize",
-      "body": "Explain the procedure if the patient is able to understand (this is uncomfortable but brief). Inject roughly 2 mL of 1-2% lidocaine WITH epinephrine into the lateral canthus, directing the needle AWAY from the globe — the epinephrine helps with hemostasis in an already-bleeding compartment. Allow a brief moment for anesthesia to take effect if time allows, but do not delay meaningfully if vision is acutely threatened."
+      "body": "Explain the procedure if the patient is able to understand (this is uncomfortable but brief).\n\nInject roughly 2 mL of 1-2% lidocaine WITH epinephrine into the lateral canthus, directing the needle AWAY from the globe — the epinephrine helps with hemostasis in an already-bleeding compartment.\n\nAllow a brief moment for anesthesia to take effect if time allows, but do not delay meaningfully if vision is acutely threatened."
     },
     {
       "id": "canthotomy",
@@ -46,7 +74,7 @@
       "id": "inferior-cantholysis",
       "type": "step",
       "prompt": "4. Inferior cantholysis",
-      "body": "Grasp and lift the lateral lower eyelid away from the globe with forceps. With the scissors angled AWAY from the globe, identify the inferior crus of the lateral canthal tendon — 'strumming' it with closed scissors helps confirm you have it (it feels like plucking a taut string when intact). Cut the inferior crus, directing the cut INFEROPOSTERIORLY toward the orbital rim (this trajectory avoids the lacrimal gland, lacrimal artery, and levator muscle, which sit superiorly). The lower lid should now move freely, separated from the orbital rim."
+      "body": "1. Grasp and lift the lateral lower eyelid away from the globe with forceps.\n2. With the scissors angled AWAY from the globe, identify the inferior crus of the lateral canthal tendon — 'strumming' it with closed scissors helps confirm you have it (it feels like plucking a taut string when intact).\n3. Cut the inferior crus, directing the cut INFEROPOSTERIORLY toward the orbital rim (this trajectory avoids the lacrimal gland, lacrimal artery, and levator muscle, which sit superiorly).\n\nThe lower lid should now move freely, separated from the orbital rim."
     },
     {
       "id": "reassess",
@@ -68,6 +96,8 @@
     "IOP/clinical tension reassessed after inferior cantholysis before deciding whether superior cantholysis is needed",
     "Ophthalmology involved emergently regardless of immediate decompression success — this buys time, it is not definitive treatment"
   ],
-  "crossLinks": ["ophthalmologic-emergencies"],
+  "crossLinks": [
+    "ophthalmologic-emergencies"
+  ],
   "buildNote": "workflow outputType. Technique sequence (canthotomy → inferior crus → reassess → superior crus if needed) and the 'strumming' identification method and inferoposterior cut direction WebSearch-verified against StatPearls, Merck Manual, and LITFL procedural references. Deliberately does not restate the orbital compartment syndrome diagnostic criteria, which live in the paired ophthalmologic-emergencies reference via crossLinks."
 }

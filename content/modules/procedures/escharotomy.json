@@ -28,7 +28,7 @@
     "midaxial line for limbs avoiding named neurovascular structures, bilateral mid-axillary lines connected for chest wall"
   ],
   "contentType": "procedure",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-24",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -46,6 +46,11 @@
       "version": 2,
       "date": "2026-09-24",
       "change": "Added the incision map — limbs, chest shield, hands and digits, with the ulnar and common peroneal nerve deviations — ported from the CRISIS escharotomy page and converted to the Kairos diagram format. Agrees with the card's mid-axial incisions and eschar-not-fascia endpoint, and adds the two specific nerve cautions the text covered only generally."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "outputType": "workflow",
@@ -56,13 +61,13 @@
       "id": "recognition",
       "type": "step",
       "prompt": "1. Recognize the indication",
-      "body": "A CIRCUMFERENTIAL full-thickness (or deep partial-thickness) burn of a LIMB causing vascular compromise: diminished or absent distal pulses (by Doppler if not palpable), progressively worsening capillary refill, increasing pain out of proportion or new paresthesia/paralysis, and a tense, non-compliant limb — the inelastic eschar acts like a tourniquet as underlying tissue edema builds over the first 24-48 hours post-burn, so this can develop or worsen well after the initial burn assessment, not just immediately. A circumferential CHEST WALL burn causing restrictive ventilation: rising peak airway pressures in a ventilated patient, or worsening respiratory distress/declining tidal volumes in a spontaneously breathing patient, from the eschar mechanically restricting chest wall excursion."
+      "body": "LIMB: a CIRCUMFERENTIAL full-thickness (or deep partial-thickness) burn of a LIMB causing vascular compromise:\n- diminished or absent distal pulses (by Doppler if not palpable)\n- progressively worsening capillary refill\n- increasing pain out of proportion or new paresthesia/paralysis\n- a tense, non-compliant limb\n\nThe inelastic eschar acts like a tourniquet as underlying tissue edema builds over the first 24-48 hours post-burn, so this can develop or worsen well after the initial burn assessment, not just immediately.\n\nCHEST: a circumferential CHEST WALL burn causing restrictive ventilation — rising peak airway pressures in a ventilated patient, or worsening respiratory distress/declining tidal volumes in a spontaneously breathing patient, from the eschar mechanically restricting chest wall excursion."
     },
     {
       "id": "limb-technique",
       "type": "step",
       "prompt": "2. Limb escharotomy — technique",
-      "body": "Incise along the MID-AXIAL line (the line connecting the midpoints of the flexion creases, roughly the mid-lateral and/or mid-medial aspect of the limb) — this avoids major neurovascular bundles, which typically run more anteriorly/medially. Incise through the ESCHAR ONLY, into the underlying subcutaneous fat — you should feel/see the tissue relax and separate (gaping open) once through the constricting eschar; this is deliberately NOT a fasciotomy (which goes through fascia into muscle compartments for a different indication — traumatic/ischemic compartment syndrome, not burn eschar constriction) and going deeper than needed risks unnecessary injury to underlying structures. Extend the incision the full length of the circumferential burn, and across involved joints if the burn crosses them. For digits, individual digital escharotomies (mid-lateral) may be needed if circumferentially burned and compromised.",
+      "body": "WHERE: incise along the MID-AXIAL line (the line connecting the midpoints of the flexion creases, roughly the mid-lateral and/or mid-medial aspect of the limb) — this avoids major neurovascular bundles, which typically run more anteriorly/medially.\n\nHOW DEEP: incise through the ESCHAR ONLY, into the underlying subcutaneous fat — you should feel/see the tissue relax and separate (gaping open) once through the constricting eschar.\n- This is deliberately NOT a fasciotomy (which goes through fascia into muscle compartments for a different indication — traumatic/ischemic compartment syndrome, not burn eschar constriction).\n- Going deeper than needed risks unnecessary injury to underlying structures.\n\nHOW LONG: extend the incision the full length of the circumferential burn, and across involved joints if the burn crosses them.\n\nFor digits, individual digital escharotomies (mid-lateral) may be needed if circumferentially burned and compromised.",
       "diagram": {
         "title": "Escharotomy incision map",
         "caption": "Mid-medial and mid-lateral lines, the full length of the burn and across every joint, ending 1-2 cm into unburned skin; the chest shield joins the anterior axillary lines at the clavicle and the costal margin. Two nerves move the line: at the elbow the medial incision passes anterior to the medial epicondyle to spare the ulnar nerve, and at the knee the lateral incision stays clear of the fibular neck to spare the common peroneal nerve. Stop at the fat — cutting fascia is a fasciotomy, a different procedure.",
@@ -984,13 +989,13 @@
       "id": "chest-technique",
       "type": "step",
       "prompt": "3. Chest wall escharotomy — technique",
-      "body": "Bilateral incisions along the anterior axillary lines (or mid-axillary), extended and connected by transverse incisions at the level of the costal margin inferiorly and, if needed, near the clavicles superiorly — creating a rectangular/grid pattern that releases the constricting eschar across the chest wall to restore adequate excursion. Same principle: through eschar into subcutaneous tissue, not into deeper structures."
+      "body": "Bilateral incisions along the anterior axillary lines (or mid-axillary), extended and connected by transverse incisions:\n- at the level of the costal margin inferiorly\n- if needed, near the clavicles superiorly\n\nThis creates a rectangular/grid pattern that releases the constricting eschar across the chest wall to restore adequate excursion.\n\nSame principle: through eschar into subcutaneous tissue, not into deeper structures."
     },
     {
       "id": "reassess",
       "type": "step",
       "prompt": "4. Reassess and manage bleeding",
-      "body": "Reassess pulses/capillary refill (limb) or ventilation parameters (chest) immediately after the incision — improvement should be apparent quickly if the escharotomy adequately released the constriction. Escharotomy through full-thickness burned tissue is typically not very painful (the nerve endings in that tissue are usually already destroyed by the burn itself) and bleeding is often modest since the eschar itself is relatively avascular — but bleeding from the incision edges (viable tissue at the wound margin) can still occur and should be controlled with direct pressure/electrocautery as needed."
+      "body": "Reassess pulses/capillary refill (limb) or ventilation parameters (chest) immediately after the incision — improvement should be apparent quickly if the escharotomy adequately released the constriction.\n\nEscharotomy through full-thickness burned tissue is typically not very painful (the nerve endings in that tissue are usually already destroyed by the burn itself) and bleeding is often modest since the eschar itself is relatively avascular.\n\nBut bleeding from the incision edges (viable tissue at the wound margin) can still occur and should be controlled with direct pressure/electrocautery as needed."
     }
   ],
   "checklist": [

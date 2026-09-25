@@ -2184,8 +2184,8 @@
       "next_review_due": "2027-09-03"
     },
     "procedures/abscess-incision-drainage": {
-      "content_version": 1,
-      "hash": "0ca89ad15a3f78c2",
+      "content_version": 2,
+      "hash": "6d022bc829e1edfc",
       "path": "modules/procedures/abscess-incision-drainage.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2193,8 +2193,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/adult-synchronized-cardioversion": {
-      "content_version": 1,
-      "hash": "12edb3c1f09dac51",
+      "content_version": 2,
+      "hash": "8d28153c83f8b5d7",
       "path": "modules/procedures/adult-synchronized-cardioversion.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2202,8 +2202,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/airway-management-flow": {
-      "content_version": 3,
-      "hash": "457b3fa47edb3a54",
+      "content_version": 4,
+      "hash": "60d7aa6093e060c6",
       "path": "modules/procedures/airway-management-flow.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2211,8 +2211,8 @@
       "next_review_due": "2026-12-02"
     },
     "procedures/arthrocentesis": {
-      "content_version": 1,
-      "hash": "7d1ef2d89587cc20",
+      "content_version": 2,
+      "hash": "62b8a6b17227ae8d",
       "path": "modules/procedures/arthrocentesis.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2220,8 +2220,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/awake-intubation": {
-      "content_version": 1,
-      "hash": "2a5df014c0db3337",
+      "content_version": 2,
+      "hash": "712480ad0b90adc3",
       "path": "modules/procedures/awake-intubation.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2238,8 +2238,8 @@
       "next_review_due": "2026-12-21"
     },
     "procedures/central-line-placement": {
-      "content_version": 2,
-      "hash": "f4b4745134196b5b",
+      "content_version": 3,
+      "hash": "92f5c8f15fa4622b",
       "path": "modules/procedures/central-line-placement.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2265,8 +2265,8 @@
       "next_review_due": "2026-12-21"
     },
     "procedures/ed-joint-reductions": {
-      "content_version": 1,
-      "hash": "9a32236c7552106b",
+      "content_version": 2,
+      "hash": "d6ca6b26aa064b39",
       "path": "modules/procedures/ed-joint-reductions.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2274,8 +2274,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/epistaxis-management": {
-      "content_version": 1,
-      "hash": "53b23cf2ff6ea733",
+      "content_version": 2,
+      "hash": "2d844dd9e985f313",
       "path": "modules/procedures/epistaxis-management.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2283,8 +2283,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/escharotomy": {
-      "content_version": 2,
-      "hash": "40d602f1f8972ae9",
+      "content_version": 3,
+      "hash": "97a7682fc6898813",
       "path": "modules/procedures/escharotomy.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2292,8 +2292,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/foreign-body-removal": {
-      "content_version": 1,
-      "hash": "7d80283695072559",
+      "content_version": 2,
+      "hash": "dc56f37d31e91ffb",
       "path": "modules/procedures/foreign-body-removal.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2301,8 +2301,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/fracture-splinting-guide": {
-      "content_version": 2,
-      "hash": "962c5c34b3c2a3ee",
+      "content_version": 3,
+      "hash": "dcef346bd3b2bb23",
       "path": "modules/procedures/fracture-splinting-guide.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2310,8 +2310,8 @@
       "next_review_due": "2026-12-03"
     },
     "procedures/laceration-repair": {
-      "content_version": 3,
-      "hash": "254937fe22452241",
+      "content_version": 4,
+      "hash": "161df05a2fc6e940",
       "path": "modules/procedures/laceration-repair.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2328,8 +2328,8 @@
       "next_review_due": "2026-12-01"
     },
     "procedures/lateral-canthotomy": {
-      "content_version": 1,
-      "hash": "e5fc22de5946d11f",
+      "content_version": 2,
+      "hash": "9f4e0b81b5a9d24b",
       "path": "modules/procedures/lateral-canthotomy.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2337,8 +2337,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/lumbar-puncture": {
-      "content_version": 2,
-      "hash": "236d93d3a0548761",
+      "content_version": 3,
+      "hash": "5acae23c805597f1",
       "path": "modules/procedures/lumbar-puncture.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2346,8 +2346,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/nasogastric-orogastric-tube-placement": {
-      "content_version": 1,
-      "hash": "95ccdcdee49bb0ab",
+      "content_version": 2,
+      "hash": "7829769296d213e2",
       "path": "modules/procedures/nasogastric-orogastric-tube-placement.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2355,8 +2355,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/nerve-block-guide": {
-      "content_version": 3,
-      "hash": "68b8423195ae9fb2",
+      "content_version": 4,
+      "hash": "af48a88b09df2de6",
       "path": "modules/procedures/nerve-block-guide.json",
       "contentType": "reference",
       "section": "Procedures",
@@ -2373,8 +2373,8 @@
       "next_review_due": "2026-12-01"
     },
     "procedures/paracentesis": {
-      "content_version": 2,
-      "hash": "15476b35436bf5d5",
+      "content_version": 3,
+      "hash": "ee0187e3a3c39bc9",
       "path": "modules/procedures/paracentesis.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2391,8 +2391,8 @@
       "next_review_due": "2026-12-23"
     },
     "procedures/peds-nonsedation-procedural-pain": {
-      "content_version": 1,
-      "hash": "983530800715cfdb",
+      "content_version": 2,
+      "hash": "9e6af33c3c52ffb1",
       "path": "modules/procedures/peds-nonsedation-procedural-pain.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2400,8 +2400,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/pelvic-binder-placement": {
-      "content_version": 1,
-      "hash": "a94a36f395b5efc4",
+      "content_version": 2,
+      "hash": "f61483ed53d0e243",
       "path": "modules/procedures/pelvic-binder-placement.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2409,8 +2409,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/pericardiocentesis": {
-      "content_version": 2,
-      "hash": "8e821741148c6b8e",
+      "content_version": 3,
+      "hash": "3e2ef17db71c5b30",
       "path": "modules/procedures/pericardiocentesis.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2418,8 +2418,8 @@
       "next_review_due": "2026-12-14"
     },
     "procedures/pocus-guide": {
-      "content_version": 4,
-      "hash": "5a93a1915f977894",
+      "content_version": 5,
+      "hash": "d2d14ca6dd276c42",
       "path": "modules/procedures/pocus-guide.json",
       "contentType": "reference",
       "section": "Procedures",
@@ -2427,8 +2427,8 @@
       "next_review_due": "2026-12-01"
     },
     "procedures/pocus-nerve-block-checklist": {
-      "content_version": 1,
-      "hash": "30facdcaa0af3f55",
+      "content_version": 2,
+      "hash": "bc7f2a6232733aab",
       "path": "modules/procedures/pocus-nerve-block-checklist.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2436,8 +2436,8 @@
       "next_review_due": "2026-12-04"
     },
     "procedures/precipitous-vaginal-delivery": {
-      "content_version": 1,
-      "hash": "c6f865ff08114b1a",
+      "content_version": 2,
+      "hash": "a53c1fb9ec1cdca9",
       "path": "modules/procedures/precipitous-vaginal-delivery.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2463,8 +2463,8 @@
       "next_review_due": "2026-12-23"
     },
     "procedures/thoracentesis": {
-      "content_version": 4,
-      "hash": "1942b7fc9a227fe6",
+      "content_version": 5,
+      "hash": "fcad8833205d7424",
       "path": "modules/procedures/thoracentesis.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2472,8 +2472,8 @@
       "next_review_due": "2026-12-16"
     },
     "procedures/tube-thoracostomy": {
-      "content_version": 4,
-      "hash": "b88285802a3107dd",
+      "content_version": 5,
+      "hash": "03395bd41b294a1c",
       "path": "modules/procedures/tube-thoracostomy.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2481,8 +2481,8 @@
       "next_review_due": "2026-12-24"
     },
     "procedures/urinary-catheterization": {
-      "content_version": 1,
-      "hash": "97193bdf8ff082fc",
+      "content_version": 2,
+      "hash": "73f8cfc52604335e",
       "path": "modules/procedures/urinary-catheterization.json",
       "contentType": "procedure",
       "section": "Procedures",

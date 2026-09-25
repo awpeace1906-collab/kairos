@@ -3,12 +3,33 @@
   "section": "Procedures",
   "category": "Cardiac Procedures",
   "title": "Adult Synchronized Cardioversion",
-  "settingEmphasis": ["ed", "icu"],
-  "aliases": ["synchronized cardioversion", "electrical cardioversion", "unstable tachyarrhythmia shock"],
-  "tags": ["cardioversion", "atrial fibrillation", "SVT", "ventricular tachycardia", "unstable tachyarrhythmia", "ED", "ICU", "procedure"],
-  "keywords": ["for an unstable patient with a pulse and a tachyarrhythmia, synchronized not unsynchronized", "2025 AHA algorithm 200J for AFib and AFlutter, 100J for narrow SVT and monomorphic VT", "sync mode resets to off after every shock, re-enable it before each subsequent attempt", "polymorphic VT is treated as unsynchronized defibrillation, not synchronized cardioversion, since sync can't reliably find an R wave"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "synchronized cardioversion",
+    "electrical cardioversion",
+    "unstable tachyarrhythmia shock"
+  ],
+  "tags": [
+    "cardioversion",
+    "atrial fibrillation",
+    "SVT",
+    "ventricular tachycardia",
+    "unstable tachyarrhythmia",
+    "ED",
+    "ICU",
+    "procedure"
+  ],
+  "keywords": [
+    "for an unstable patient with a pulse and a tachyarrhythmia, synchronized not unsynchronized",
+    "2025 AHA algorithm 200J for AFib and AFlutter, 100J for narrow SVT and monomorphic VT",
+    "sync mode resets to off after every shock, re-enable it before each subsequent attempt",
+    "polymorphic VT is treated as unsynchronized defibrillation, not synchronized cardioversion, since sync can't reliably find an R wave"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -17,7 +38,16 @@
     "Neumar RW, et al. Adult Advanced Cardiovascular Life Support: American Heart Association Guidelines."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5) — only peds-specific cardioversion energy dosing existed in Kairos before this. Energy doses reflect the 2025 AHA Electrical Cardioversion Algorithm, WebSearch-verified directly against the current AHA algorithm document rather than older, commonly-recalled lower stepped doses." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5) — only peds-specific cardioversion energy dosing existed in Kairos before this. Energy doses reflect the 2025 AHA Electrical Cardioversion Algorithm, WebSearch-verified directly against the current AHA algorithm document rather than older, commonly-recalled lower stepped doses."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "outputType": "workflow",
   "purpose": "Synchronized cardioversion technique and energy selection for an unstable adult with a tachyarrhythmia and a pulse — distinct from unsynchronized defibrillation, which is for pulseless arrest or polymorphic VT.",
@@ -27,31 +57,31 @@
       "id": "indication",
       "type": "step",
       "prompt": "1. Confirm the indication",
-      "body": "Synchronized cardioversion is for an UNSTABLE patient (hypotension, altered mental status, signs of shock, ischemic chest pain, or acute heart failure) WITH A PULSE and a tachyarrhythmia thought to be the cause of the instability — atrial fibrillation, atrial flutter, other SVT, or monomorphic ventricular tachycardia with a pulse. A stable patient with the same rhythm gets rate/rhythm control medications first, not an immediate shock. A PULSELESS patient, or one in polymorphic VT (irregular, chaotic QRS morphology), needs UNSYNCHRONIZED defibrillation instead — synchronized mode requires the defibrillator to reliably identify a discrete R wave to time the shock against, which isn't reliably possible in polymorphic VT."
+      "body": "Synchronized cardioversion is for an UNSTABLE patient (hypotension, altered mental status, signs of shock, ischemic chest pain, or acute heart failure) WITH A PULSE and a tachyarrhythmia thought to be the cause of the instability:\n- atrial fibrillation\n- atrial flutter\n- other SVT\n- monomorphic ventricular tachycardia with a pulse\n\nA stable patient with the same rhythm gets rate/rhythm control medications first, not an immediate shock.\n\nA PULSELESS patient, or one in polymorphic VT (irregular, chaotic QRS morphology), needs UNSYNCHRONIZED defibrillation instead — synchronized mode requires the defibrillator to reliably identify a discrete R wave to time the shock against, which isn't reliably possible in polymorphic VT."
     },
     {
       "id": "prep",
       "type": "step",
       "prompt": "2. Prepare — sedation, pads, and sync mode",
-      "body": "If time allows and the patient is conscious, give procedural sedation/analgesia (a rapid-onset sedative ± analgesic) before shocking — this is genuinely painful and an awake patient should not be shocked without at least attempting sedation unless truly emergent instability precludes the delay. Apply defibrillator pads in the standard anterior-lateral (or anterior-posterior) position. Turn the SYNC MODE ON — confirm the monitor is marking/flagging each QRS complex correctly before proceeding; if sync markers aren't landing cleanly on the R waves, adjust lead selection or gain until they do, since a poorly-synced shock can inadvertently land on the T wave (R-on-T phenomenon, which can itself trigger VF)."
+      "body": "1. If time allows and the patient is conscious, give procedural sedation/analgesia (a rapid-onset sedative ± analgesic) before shocking — this is genuinely painful and an awake patient should not be shocked without at least attempting sedation unless truly emergent instability precludes the delay.\n2. Apply defibrillator pads in the standard anterior-lateral (or anterior-posterior) position.\n3. Turn the SYNC MODE ON — confirm the monitor is marking/flagging each QRS complex correctly before proceeding.\n\nIf sync markers aren't landing cleanly on the R waves, adjust lead selection or gain until they do, since a poorly-synced shock can inadvertently land on the T wave (R-on-T phenomenon, which can itself trigger VF)."
     },
     {
       "id": "energy",
       "type": "step",
       "prompt": "3. Select energy and deliver the shock",
-      "body": "Per the current (2025) AHA algorithm: atrial fibrillation and atrial flutter — 200 J; narrow-complex SVT and monomorphic VT — 100 J. (Older, still-commonly-taught stepped approaches start atrial flutter/SVT lower, around 50-100 J, and escalate if the first shock fails — either approach is reasonable clinically, but know which convention your device/institution defaults to.) Ensure everyone is clear of the patient and bed before delivering the shock — the same physical clearance discipline as defibrillation applies. Press and HOLD the shock button until the shock delivers — because synchronized mode waits for the next R wave, there's a brief, sometimes noticeable delay between pressing the button and the actual shock, unlike unsynchronized defibrillation's immediate discharge."
+      "body": "Per the current (2025) AHA algorithm:\n- atrial fibrillation and atrial flutter: 200 J\n- narrow-complex SVT and monomorphic VT: 100 J\n\n(Older, still-commonly-taught stepped approaches start atrial flutter/SVT lower, around 50-100 J, and escalate if the first shock fails — either approach is reasonable clinically, but know which convention your device/institution defaults to.)\n\nEnsure everyone is clear of the patient and bed before delivering the shock — the same physical clearance discipline as defibrillation applies.\n\nPress and HOLD the shock button until the shock delivers — because synchronized mode waits for the next R wave, there's a brief, sometimes noticeable delay between pressing the button and the actual shock, unlike unsynchronized defibrillation's immediate discharge."
     },
     {
       "id": "resync",
       "type": "warning",
       "prompt": "4. Reset sync mode before every subsequent shock",
-      "body": "Most defibrillators automatically revert to UNSYNCHRONIZED mode after each shock is delivered — this is a deliberate safety default (so that if the cardioversion attempt causes VF, the device is immediately ready to defibrillate without a mode change delay), but it means you must actively RE-ENABLE sync mode before every subsequent cardioversion attempt if the first shock doesn't work. Forgetting this is a real, described error — the second 'cardioversion' attempt inadvertently becomes an unsynchronized shock."
+      "body": "Most defibrillators automatically revert to UNSYNCHRONIZED mode after each shock is delivered. This is a deliberate safety default (so that if the cardioversion attempt causes VF, the device is immediately ready to defibrillate without a mode change delay).\n\nBut it means you must actively RE-ENABLE sync mode before every subsequent cardioversion attempt if the first shock doesn't work. Forgetting this is a real, described error — the second 'cardioversion' attempt inadvertently becomes an unsynchronized shock."
     },
     {
       "id": "escalate",
       "type": "step",
       "prompt": "5. If cardioversion doesn't restore a stable rhythm",
-      "body": "Escalate energy for a repeat attempt per your device/algorithm. If the rhythm converts but the patient remains unstable, or if cardioversion fails to convert the rhythm at all, reassess for a different or additional cause of instability and involve cardiology — refractory cases may need antiarrhythmic medication, a different approach entirely, or urgent specialist involvement rather than repeated escalating shocks alone."
+      "body": "Escalate energy for a repeat attempt per your device/algorithm.\n\nIf the rhythm converts but the patient remains unstable, or if cardioversion fails to convert the rhythm at all:\n- reassess for a different or additional cause of instability\n- involve cardiology\n\nRefractory cases may need antiarrhythmic medication, a different approach entirely, or urgent specialist involvement rather than repeated escalating shocks alone."
     }
   ],
   "checklist": [
@@ -61,6 +91,10 @@
     "Sync mode confirmed ON with clean R-wave markers before the FIRST shock",
     "Sync mode RE-CONFIRMED before every subsequent shock attempt, not assumed to have stayed on"
   ],
-  "crossLinks": ["shock-classification", "peds-adenosine-svt", "acls-adult-cardiac-arrest"],
+  "crossLinks": [
+    "shock-classification",
+    "peds-adenosine-svt",
+    "acls-adult-cardiac-arrest"
+  ],
   "buildNote": "workflow outputType. The 2025 AHA energy doses (200J AFib/flutter, 100J SVT/monomorphic VT) were WebSearch-verified directly against the current AHA algorithm PDF rather than relying on the older, more commonly-remembered stepped-lower-dose teaching — both are noted since institutional practice genuinely varies and the older approach isn't wrong, just less current. The resync-before-every-shock point is given its own warning node since it's a real, described source of error under pressure."
 }

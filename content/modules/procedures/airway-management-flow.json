@@ -25,7 +25,7 @@
     "OR"
   ],
   "contentType": "procedure",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -51,6 +51,11 @@
       "version": 1,
       "date": "2026-09-01",
       "change": "Initial entry — workflow that orchestrates existing Calculators and Drug & Dosing content."
+    },
+    {
+      "version": 4,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "purpose": "A workflow wrapper that orchestrates existing calculators and drug cards into a pre-intubation → Plan A/B/C/D → confirmation sequence. Not new clinical content.",
@@ -92,7 +97,7 @@
       "id": "s3",
       "type": "step",
       "prompt": "3. Plan A — first attempt",
-      "body": "Direct or video laryngoscopy with your standard induction agent + paralytic (see the Drug & Dosing cards). Optimize position (ear-to-sternal-notch), external laryngeal manipulation, bougie ready. Device: video laryngoscopy beats direct on first-pass success and complications, and a HYPERANGULATED VL blade beats a Macintosh-shaped one (COVALENT 2026: first-pass 87.6% VLH vs 82.9% VLM vs 78.2% DL; complications ~11% VLH vs ~24% for DL/VLM) — default to VL, reach for the hyperangulated blade + a rigid stylet when the view is likely hard. Site-to-site variability was wide, so local skill still matters; keep a DL option ready."
+      "body": "Direct or video laryngoscopy with your standard induction agent + paralytic (see the Drug & Dosing cards). Optimize position (ear-to-sternal-notch), external laryngeal manipulation, bougie ready.\n\nDEVICE: video laryngoscopy beats direct on first-pass success and complications, and a HYPERANGULATED VL blade beats a Macintosh-shaped one.\n- COVALENT 2026: first-pass 87.6% VLH vs 82.9% VLM vs 78.2% DL; complications ~11% VLH vs ~24% for DL/VLM.\n- Default to VL; reach for the hyperangulated blade + a rigid stylet when the view is likely hard.\n- Site-to-site variability was wide, so local skill still matters; keep a DL option ready."
     },
     {
       "id": "s4",
@@ -116,7 +121,7 @@
       "id": "s7",
       "type": "step",
       "prompt": "7. Post-intubation confirmation",
-      "body": "Waveform capnography (gold standard) + bilateral breath sounds + no epigastric sounds. CXR for depth. Secure the tube, set the ventilator, start post-intubation sedation/analgesia. For an anticipated longer intubation, filling the cuff with alkalinized lidocaine (2% lidocaine + 8.4% bicarbonate ~19:1) instead of air gives continuous trans-cuff tracheal anesthesia and cuts post-extubation sore throat (RR ~0.46) and cough at extubation (RR ~0.3–0.4); allow a lag for diffusion and keep monitoring cuff pressure."
+      "body": "CONFIRM: waveform capnography (gold standard) + bilateral breath sounds + no epigastric sounds. CXR for depth.\n\nSecure the tube, set the ventilator, start post-intubation sedation/analgesia.\n\nFor an anticipated longer intubation, filling the cuff with alkalinized lidocaine (2% lidocaine + 8.4% bicarbonate ~19:1) instead of air gives continuous trans-cuff tracheal anesthesia and cuts post-extubation sore throat (RR ~0.46) and cough at extubation (RR ~0.3–0.4); allow a lag for diffusion and keep monitoring cuff pressure."
     },
     {
       "id": "s8",

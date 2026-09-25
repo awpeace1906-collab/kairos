@@ -29,7 +29,7 @@
     "amethocaine is the British name for tetracaine (AMETOP gel)"
   ],
   "contentType": "procedure",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -43,6 +43,11 @@
       "version": 1,
       "date": "2026-09-15",
       "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). Procedural sedation is covered in depth elsewhere (procedural-sedation-workflow, peds-procedural-sedation); this fills the missing space of non-sedation techniques that avoid the need for sedation entirely in most minor pediatric procedures."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "outputType": "reference-checklist",
@@ -61,25 +66,25 @@
       "id": "topical",
       "type": "step",
       "prompt": "Topical anesthetics — know the onset time and plan accordingly",
-      "body": "LMX4 (4% liposomal lidocaine): onset roughly 20-30 minutes, no occlusive dressing required — often the more practical choice in a busy ED if available. EMLA (lidocaine-prilocaine): onset roughly 45-60 minutes, requires an occlusive dressing over the site for the full duration — plan for this longer lead time or the procedure will outpace the analgesia. Tetracaine gel (AMETOP): onset roughly 30-40 minutes, reported as more effective than EMLA for venipuncture/cannulation in some comparative studies where available. The single most common failure mode with any topical agent is TIMING — applying it right before attempting the procedure defeats the purpose. Apply as soon as the need for the procedure is identified (e.g. at triage or on the treatment decision), not when the clinician is finally ready to perform it."
+      "body": "- LMX4 (4% liposomal lidocaine): onset roughly 20-30 minutes, no occlusive dressing required — often the more practical choice in a busy ED if available.\n- EMLA (lidocaine-prilocaine): onset roughly 45-60 minutes, requires an occlusive dressing over the site for the full duration — plan for this longer lead time or the procedure will outpace the analgesia.\n- Tetracaine gel (AMETOP): onset roughly 30-40 minutes, reported as more effective than EMLA for venipuncture/cannulation in some comparative studies where available.\n\nThe single most common failure mode with any topical agent is TIMING — applying it right before attempting the procedure defeats the purpose. Apply as soon as the need for the procedure is identified (e.g. at triage or on the treatment decision), not when the clinician is finally ready to perform it."
     },
     {
       "id": "faster-options",
       "type": "step",
       "prompt": "Faster options when there isn't time to wait",
-      "body": "Buffered lidocaine via a needle-free injector (J-tip/Zingo-style device) delivers analgesic onset within roughly 1-3 minutes — a genuinely useful option when a topical cream's 20-45 minute lead time isn't available. Vapocoolant spray provides immediate (essentially instant) but brief analgesia — its advantage is speed, not depth or duration, making it best suited to a quick, brief procedure rather than one requiring sustained analgesia; it has been shown to reduce IV cannulation pain without increasing procedural difficulty."
+      "body": "- Buffered lidocaine via a needle-free injector (J-tip/Zingo-style device) delivers analgesic onset within roughly 1-3 minutes — a genuinely useful option when a topical cream's 20-45 minute lead time isn't available.\n- Vapocoolant spray provides immediate (essentially instant) but brief analgesia. Its advantage is speed, not depth or duration, making it best suited to a quick, brief procedure rather than one requiring sustained analgesia; it has been shown to reduce IV cannulation pain without increasing procedural difficulty."
     },
     {
       "id": "sucrose",
       "type": "step",
       "prompt": "Sucrose for infants — a real analgesic, not just a distraction",
-      "body": "Oral sucrose given shortly BEFORE a brief painful procedure (heel stick, venipuncture, immunization, IV start) in an infant has genuine, evidence-supported analgesic effect — this is a pharmacologic-adjacent intervention with real data behind it (Cochrane-reviewed), not merely a soothing/distraction technique to make the caregiver feel better. Timing matters — give it shortly before, not well in advance of, the procedure for the effect to be present when needed."
+      "body": "Oral sucrose given shortly BEFORE a brief painful procedure (heel stick, venipuncture, immunization, IV start) in an infant has genuine, evidence-supported analgesic effect.\n\nThis is a pharmacologic-adjacent intervention with real data behind it (Cochrane-reviewed), not merely a soothing/distraction technique to make the caregiver feel better.\n\nTiming matters — give it shortly before, not well in advance of, the procedure for the effect to be present when needed."
     },
     {
       "id": "combine",
       "type": "step",
       "prompt": "Combine with non-pharmacologic measures, not instead of",
-      "body": "Parental presence/holding, age-appropriate distraction, clear explanation matched to developmental stage, and involvement of a child-life specialist where available all genuinely help — but they work best as an ADDITION to an appropriate pharmacologic technique for a truly painful procedure, not as a substitute for one. A well-timed topical agent plus good non-pharmacologic support together is the actual goal, not choosing one approach over the other."
+      "body": "All genuinely help:\n- parental presence/holding\n- age-appropriate distraction\n- clear explanation matched to developmental stage\n- involvement of a child-life specialist where available\n\nBut they work best as an ADDITION to an appropriate pharmacologic technique for a truly painful procedure, not as a substitute for one. A well-timed topical agent plus good non-pharmacologic support together is the actual goal, not choosing one approach over the other."
     }
   ],
   "crossLinks": [

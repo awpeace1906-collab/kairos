@@ -38,7 +38,7 @@ export function renderList(items, ordered) {
 
 function line(text) {
   const lab = leadLabel(text);
-  return lab ? [el("strong", {}, lab[0]), " " + lab[1]] : [text];
+  return lab ? [el("strong", {}, lab[0]), lab[1] ? " " + lab[1] : null] : [text];
 }
 
 /** Render a prose field. A plain one-line string stays a single <p class=cls>,

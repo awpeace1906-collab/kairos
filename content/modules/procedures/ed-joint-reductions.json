@@ -3,12 +3,33 @@
   "section": "Procedures",
   "category": "Wound & Fracture Care",
   "title": "ED Joint Reductions — Shoulder, Elbow, Patella, Digit",
-  "settingEmphasis": ["ed"],
-  "aliases": ["anterior shoulder dislocation reduction", "nursemaid elbow reduction", "patellar dislocation reduction", "finger dislocation reduction"],
-  "tags": ["dislocation", "reduction", "shoulder", "nursemaid elbow", "patella", "digit", "ED", "procedure"],
-  "keywords": ["hyperpronation first-line for nursemaid elbow, about 90 percent first-attempt success versus 74 percent for supination-flexion", "scapular manipulation and external rotation don't need heavy sedation or traction-countertraction force", "patella reduces with knee extension and gentle medial push, most reduce with straightening alone", "always document neurovascular exam before AND after reduction"],
+  "settingEmphasis": [
+    "ed"
+  ],
+  "aliases": [
+    "anterior shoulder dislocation reduction",
+    "nursemaid elbow reduction",
+    "patellar dislocation reduction",
+    "finger dislocation reduction"
+  ],
+  "tags": [
+    "dislocation",
+    "reduction",
+    "shoulder",
+    "nursemaid elbow",
+    "patella",
+    "digit",
+    "ED",
+    "procedure"
+  ],
+  "keywords": [
+    "hyperpronation first-line for nursemaid elbow, about 90 percent first-attempt success versus 74 percent for supination-flexion",
+    "scapular manipulation and external rotation don't need heavy sedation or traction-countertraction force",
+    "patella reduces with knee extension and gentle medial push, most reduce with straightening alone",
+    "always document neurovascular exam before AND after reduction"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,7 +39,16 @@
     "Kuhn JE. Treating the initial anterior shoulder dislocation — an evidence-based medicine approach. Sports Med Arthrosc Rev. 2006 (reduction technique comparisons)."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3), distinct from fracture-splinting-guide's coverage of fracture-associated dislocations and from the anesthesia-airway-or drug-dosing cards for procedural sedation medications, which this module cross-links to rather than restates." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 3), distinct from fracture-splinting-guide's coverage of fracture-associated dislocations and from the anesthesia-airway-or drug-dosing cards for procedural sedation medications, which this module cross-links to rather than restates."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "outputType": "workflow",
   "purpose": "Reduction technique for the four most common isolated ED joint dislocations: anterior shoulder, nursemaid's (radial head subluxation) elbow, patella, and finger — each distinct from a fracture-associated dislocation, which follows a different (often OR-bound) pathway.",
@@ -28,25 +58,25 @@
       "id": "shoulder",
       "type": "step",
       "prompt": "1. Anterior shoulder dislocation",
-      "body": "By far the most common shoulder dislocation direction. Confirm and document the axillary nerve exam (sensation over the deltoid/'sergeant's patch') and distal pulses before attempting reduction. Techniques ranked roughly by how little force/sedation they need: scapular manipulation (prone, arm hanging, gentle rotation and adduction of the inferior scapular tip — often works with minimal or no sedation and is a reasonable first try) and external rotation (elbow at the side flexed 90°, slowly externally rotate the forearm, pausing at any resistance rather than forcing through it — also low-force) before resorting to traction-countertraction (an assistant provides countertraction via a sheet around the torso while steady longitudinal traction is applied to the arm) or the Stimson technique (prone, weighted arm hanging off the table, gravity-assisted traction over several minutes) for a more resistant reduction. Procedural sedation is often needed for traction-countertraction/Stimson but frequently unnecessary for scapular manipulation/external rotation done gently and patiently. Re-examine and re-document the neurovascular exam immediately after reduction, and get a post-reduction X-ray to confirm position and screen for an associated fracture."
+      "body": "By far the most common shoulder dislocation direction.\n\nBEFORE: confirm and document the axillary nerve exam (sensation over the deltoid/'sergeant's patch') and distal pulses before attempting reduction.\n\nTechniques ranked roughly by how little force/sedation they need:\n1. Scapular manipulation (prone, arm hanging, gentle rotation and adduction of the inferior scapular tip) — often works with minimal or no sedation and is a reasonable first try.\n2. External rotation (elbow at the side flexed 90°, slowly externally rotate the forearm, pausing at any resistance rather than forcing through it) — also low-force.\n\nFor a more resistant reduction, try these first before resorting to:\n- traction-countertraction (an assistant provides countertraction via a sheet around the torso while steady longitudinal traction is applied to the arm)\n- the Stimson technique (prone, weighted arm hanging off the table, gravity-assisted traction over several minutes)\n\nProcedural sedation is often needed for traction-countertraction/Stimson but frequently unnecessary for scapular manipulation/external rotation done gently and patiently.\n\nAFTER: re-examine and re-document the neurovascular exam immediately after reduction, and get a post-reduction X-ray to confirm position and screen for an associated fracture."
     },
     {
       "id": "elbow",
       "type": "step",
       "prompt": "2. Nursemaid's elbow (radial head subluxation)",
-      "body": "Classic history: a young child (usually under 5) with a sudden axial traction force on the arm (pulled up by the hand/wrist, swung by the arms), now holding the arm slightly flexed and pronated at the side, refusing to use it, but with no swelling/deformity and no tenderness to palpation anywhere specific. HYPERPRONATION is the preferred first-line technique (roughly 90% first-attempt success vs. roughly 74% for the older supination-flexion technique, and generally described as less painful) — stabilize the elbow at the radial head with one hand (a palpable click/clunk is often felt at the moment of reduction), grasp the wrist/hand with the other, and hyperpronate the forearm. If this fails, supination-flexion (supinate the forearm fully, then flex the elbow) is the fallback, or can be tried first per clinician preference — both are reasonable, hyperpronation just has better first-attempt evidence. Success is usually apparent within 5-15 minutes as the child resumes normal use of the arm; if not, or if there's any swelling/point tenderness/true deformity, reconsider the diagnosis (occult fracture) and get an X-ray rather than repeating reduction attempts blindly."
+      "body": "Classic history: a young child (usually under 5) with a sudden axial traction force on the arm (pulled up by the hand/wrist, swung by the arms), now holding the arm slightly flexed and pronated at the side, refusing to use it, but with no swelling/deformity and no tenderness to palpation anywhere specific.\n\nHYPERPRONATION is the preferred first-line technique (roughly 90% first-attempt success vs. roughly 74% for the older supination-flexion technique, and generally described as less painful):\n1. Stabilize the elbow at the radial head with one hand (a palpable click/clunk is often felt at the moment of reduction).\n2. Grasp the wrist/hand with the other.\n3. Hyperpronate the forearm.\n\nIf this fails, supination-flexion (supinate the forearm fully, then flex the elbow) is the fallback, or can be tried first per clinician preference — both are reasonable, hyperpronation just has better first-attempt evidence.\n\nSuccess is usually apparent within 5-15 minutes as the child resumes normal use of the arm. If not, or if there's any swelling/point tenderness/true deformity, reconsider the diagnosis (occult fracture) and get an X-ray rather than repeating reduction attempts blindly."
     },
     {
       "id": "patella",
       "type": "step",
       "prompt": "3. Patellar dislocation",
-      "body": "Almost always laterally dislocated. Many reduce spontaneously with simple gentle extension of the knee before any active maneuver is needed — try slow, gentle knee extension first with the patient as relaxed as possible (anxiolysis/analgesia helps quadriceps relaxation, which is the main barrier to an easy reduction). If it doesn't reduce with extension alone, apply gentle medially-directed pressure on the lateral edge of the patella while extending the knee. Confirm reduction by palpating the patella back in its normal position and reassess the extensor mechanism (ability to perform a straight-leg raise) and neurovascular exam. Post-reduction X-ray to confirm position and check for an osteochondral fracture, which is common enough with this injury to actively look for."
+      "body": "Almost always laterally dislocated. Many reduce spontaneously with simple gentle extension of the knee before any active maneuver is needed.\n1. Try slow, gentle knee extension first with the patient as relaxed as possible (anxiolysis/analgesia helps quadriceps relaxation, which is the main barrier to an easy reduction).\n2. If it doesn't reduce with extension alone, apply gentle medially-directed pressure on the lateral edge of the patella while extending the knee.\n3. Confirm reduction by palpating the patella back in its normal position and reassess the extensor mechanism (ability to perform a straight-leg raise) and neurovascular exam.\n\nPost-reduction X-ray to confirm position and check for an osteochondral fracture, which is common enough with this injury to actively look for."
     },
     {
       "id": "digit",
       "type": "step",
       "prompt": "4. Finger (interphalangeal or metacarpophalangeal) dislocation",
-      "body": "Digital block for anesthesia first. For a simple dorsal dislocation, apply gentle longitudinal traction with slight hyperextension followed by flexion, pushing the base of the displaced phalanx back into position — avoid excessive traction/dorsal force on an MCP dislocation specifically, since this can convert a simple dislocation into a complex one by trapping the volar plate in the joint (a complex dislocation typically will NOT reduce with closed traction and needs hand-surgery consultation rather than repeated forceful attempts). After reduction, check active range of motion and joint stability (stress the collateral ligaments) before splinting — an unstable joint after reduction, or one that re-dislocates with motion, needs orthopedic follow-up rather than simple buddy-taping."
+      "body": "1. Digital block for anesthesia first.\n2. For a simple dorsal dislocation, apply gentle longitudinal traction with slight hyperextension followed by flexion, pushing the base of the displaced phalanx back into position.\n\nMCP DISLOCATION: avoid excessive traction/dorsal force on an MCP dislocation specifically, since this can convert a simple dislocation into a complex one by trapping the volar plate in the joint. A complex dislocation typically will NOT reduce with closed traction and needs hand-surgery consultation rather than repeated forceful attempts.\n\nAfter reduction, check active range of motion and joint stability (stress the collateral ligaments) before splinting — an unstable joint after reduction, or one that re-dislocates with motion, needs orthopedic follow-up rather than simple buddy-taping."
     }
   ],
   "checklist": [
@@ -55,6 +85,9 @@
     "Post-reduction neurovascular exam and X-ray obtained (X-ray pre-reduction too, for shoulder/patella, if the mechanism or exam raises fracture concern)",
     "A dislocation that resists gentle closed reduction attempts is recognized as possibly needing surgical consultation rather than repeated forceful attempts (complex MCP dislocation, a shoulder that won't reduce, a suspected associated fracture)"
   ],
-  "crossLinks": ["fracture-splinting-guide", "anesthesia-airway-or"],
+  "crossLinks": [
+    "fracture-splinting-guide",
+    "anesthesia-airway-or"
+  ],
   "buildNote": "workflow outputType, one step node per joint rather than a branching decision tree — these are four largely independent procedures grouped by 'isolated ED joint reduction' rather than a single diagnostic pathway. Deliberately distinct from fracture-splinting-guide, which covers fracture-associated dislocations that are often an OR case, not a bedside reduction. Nursemaid's-elbow hyperpronation-vs-supination-flexion success rates WebSearch-verified against a Cochrane meta-analysis rather than asserted from memory alone."
 }

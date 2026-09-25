@@ -3,12 +3,34 @@
   "section": "Procedures",
   "category": "Obstetric Delivery",
   "title": "Precipitous Vaginal Delivery",
-  "settingEmphasis": ["ed", "prehospital"],
-  "aliases": ["emergency delivery", "delivering a baby in the ED", "precipitous labor", "catching a baby"],
-  "tags": ["delivery", "precipitous labor", "obstetric emergency", "newborn", "ED", "prehospital", "procedure"],
-  "keywords": ["support the perineum, guide not pull, let the head deliver between contractions", "check for a nuchal cord and reduce it or clamp-and-cut only if truly required", "suction only if there is visible obstruction, routine suctioning of a vigorous newborn is no longer recommended", "delayed cord clamping for an uncomplicated vigorous newborn, roughly 30-60 seconds", "this covers the mechanics of an otherwise normal delivery — see obstetric-delivery-emergencies for shoulder dystocia, cord prolapse, and abruption"],
+  "settingEmphasis": [
+    "ed",
+    "prehospital"
+  ],
+  "aliases": [
+    "emergency delivery",
+    "delivering a baby in the ED",
+    "precipitous labor",
+    "catching a baby"
+  ],
+  "tags": [
+    "delivery",
+    "precipitous labor",
+    "obstetric emergency",
+    "newborn",
+    "ED",
+    "prehospital",
+    "procedure"
+  ],
+  "keywords": [
+    "support the perineum, guide not pull, let the head deliver between contractions",
+    "check for a nuchal cord and reduce it or clamp-and-cut only if truly required",
+    "suction only if there is visible obstruction, routine suctioning of a vigorous newborn is no longer recommended",
+    "delayed cord clamping for an uncomplicated vigorous newborn, roughly 30-60 seconds",
+    "this covers the mechanics of an otherwise normal delivery — see obstetric-delivery-emergencies for shoulder dystocia, cord prolapse, and abruption"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -17,7 +39,16 @@
     "Standard EMS/emergency medicine field-delivery procedural references."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5). The existing obstetric-delivery-emergencies module covers shoulder dystocia, cord prolapse, and abruption — genuine complications — but assumes the basic mechanics of a normal delivery are already known; this module is specifically that missing mechanics-of-delivery walkthrough for when there's no time to reach labor and delivery." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5). The existing obstetric-delivery-emergencies module covers shoulder dystocia, cord prolapse, and abruption — genuine complications — but assumes the basic mechanics of a normal delivery are already known; this module is specifically that missing mechanics-of-delivery walkthrough for when there's no time to reach labor and delivery."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "outputType": "workflow",
   "purpose": "The mechanics of catching and delivering a baby when labor has progressed too fast to reach obstetric care — supporting (not pulling) the head and shoulders, routine newborn steps, and when to call for the complication-specific guidance this module deliberately doesn't duplicate.",
@@ -27,7 +58,7 @@
       "id": "assess",
       "type": "step",
       "prompt": "1. Quick assessment — is delivery truly imminent, and is it a normal presentation?",
-      "body": "Crowning (the fetal head visible at the introitus, not receding between contractions) means delivery is imminent — there usually isn't time to transport further. Confirm a VERTEX presentation (head first) — if you see a cord presenting ahead of the fetal part, or a limb/buttock/shoulder presenting instead of the head, this is NOT a normal delivery to manage with this workflow — go directly to obstetric-delivery-emergencies (cord prolapse, malpresentation) and get emergent obstetric/surgical support."
+      "body": "Crowning (the fetal head visible at the introitus, not receding between contractions) means delivery is imminent — there usually isn't time to transport further.\n\nConfirm a VERTEX presentation (head first). If you see a cord presenting ahead of the fetal part, or a limb/buttock/shoulder presenting instead of the head, this is NOT a normal delivery to manage with this workflow — go directly to obstetric-delivery-emergencies (cord prolapse, malpresentation) and get emergent obstetric/surgical support."
     },
     {
       "id": "position",
@@ -39,25 +70,25 @@
       "id": "deliver-head",
       "type": "step",
       "prompt": "3. Deliver the head — support, don't pull",
-      "body": "As the head crowns, apply gentle counter-pressure/support to the perineum (reduces the chance of an uncontrolled tear) and gently GUIDE (never forcefully pull) the head as it delivers — let it happen with the mother's own contractions and pushing effort. Once the head is out, check IMMEDIATELY for a nuchal cord (umbilical cord wrapped around the neck) — if present and LOOSE, gently slip it over the head; if TIGHT and cannot be reduced, it may need to be clamped and cut before the rest of the body delivers (a step to use only when truly necessary, not routinely)."
+      "body": "As the head crowns:\n- apply gentle counter-pressure/support to the perineum (reduces the chance of an uncontrolled tear)\n- gently GUIDE (never forcefully pull) the head as it delivers — let it happen with the mother's own contractions and pushing effort\n\nOnce the head is out, check IMMEDIATELY for a nuchal cord (umbilical cord wrapped around the neck):\n- if present and LOOSE, gently slip it over the head\n- if TIGHT and cannot be reduced, it may need to be clamped and cut before the rest of the body delivers (a step to use only when truly necessary, not routinely)"
     },
     {
       "id": "deliver-shoulders",
       "type": "step",
       "prompt": "4. Deliver the shoulders and body",
-      "body": "Gentle downward guidance of the head to deliver the ANTERIOR shoulder first (under the pubic symphysis), then gentle upward guidance to deliver the POSTERIOR shoulder — again, guide with the mother's pushing, don't pull the head/neck forcefully in either direction, which risks brachial plexus injury. Once both shoulders are out, the rest of the body typically follows quickly and easily — be ready to support/catch a slippery newborn."
+      "body": "1. Gentle downward guidance of the head to deliver the ANTERIOR shoulder first (under the pubic symphysis).\n2. Gentle upward guidance to deliver the POSTERIOR shoulder.\n\nAgain, guide with the mother's pushing — don't pull the head/neck forcefully in either direction, which risks brachial plexus injury.\n\nOnce both shoulders are out, the rest of the body typically follows quickly and easily — be ready to support/catch a slippery newborn."
     },
     {
       "id": "newborn-steps",
       "type": "step",
       "prompt": "5. Immediate newborn steps",
-      "body": "Dry the newborn promptly and keep warm (skin-to-skin with the mother if feasible, or wrapped) — hypothermia is a real and often underappreciated risk in a field/ED delivery. Suction the mouth/nose ONLY if there is visible obstruction or the newborn isn't breathing well on its own — routine suctioning of a vigorous newborn is no longer recommended and can trigger a vagal response. Assess and stimulate as needed per standard newborn resuscitation principles (see nrp-algorithm) if the newborn isn't vigorous. For an uncomplicated, vigorous newborn: DELAYED cord clamping (roughly 30-60 seconds, or per current ACOG guidance) rather than immediate clamping, unless the newborn needs immediate resuscitation that requires separation from the cord sooner. Clamp the cord in two places and cut between the clamps once appropriate."
+      "body": "WARM: dry the newborn promptly and keep warm (skin-to-skin with the mother if feasible, or wrapped) — hypothermia is a real and often underappreciated risk in a field/ED delivery.\n\nSUCTION the mouth/nose ONLY if there is visible obstruction or the newborn isn't breathing well on its own — routine suctioning of a vigorous newborn is no longer recommended and can trigger a vagal response.\n\nASSESS and stimulate as needed per standard newborn resuscitation principles (see nrp-algorithm) if the newborn isn't vigorous.\n\nCORD: for an uncomplicated, vigorous newborn, DELAYED cord clamping (roughly 30-60 seconds, or per current ACOG guidance) rather than immediate clamping, unless the newborn needs immediate resuscitation that requires separation from the cord sooner. Clamp the cord in two places and cut between the clamps once appropriate."
     },
     {
       "id": "placenta",
       "type": "step",
       "prompt": "6. Placental delivery and postpartum",
-      "body": "The placenta typically delivers within 5-30 minutes after the baby — do NOT pull on the cord to hasten this (risks uterine inversion or a retained placenta with a torn cord). Gentle controlled cord traction with counter-pressure on the uterine fundus (if trained in this technique) once clear signs of placental separation appear (a gush of blood, cord lengthening, the uterus becoming firmer and rising) is reasonable; otherwise, await spontaneous delivery. Once delivered, examine the placenta for completeness if feasible, and monitor closely for postpartum hemorrhage (uterine massage, and see postpartum-hemorrhage-staging / postpartum-hemorrhage for escalation) — this is a genuine ongoing risk immediately after delivery, not just during it."
+      "body": "The placenta typically delivers within 5-30 minutes after the baby — do NOT pull on the cord to hasten this (risks uterine inversion or a retained placenta with a torn cord).\n\nGentle controlled cord traction with counter-pressure on the uterine fundus (if trained in this technique) is reasonable once clear signs of placental separation appear:\n- a gush of blood\n- cord lengthening\n- the uterus becoming firmer and rising\n\nOtherwise, await spontaneous delivery.\n\nOnce delivered, examine the placenta for completeness if feasible, and monitor closely for postpartum hemorrhage (uterine massage, and see postpartum-hemorrhage-staging / postpartum-hemorrhage for escalation) — this is a genuine ongoing risk immediately after delivery, not just during it."
     }
   ],
   "checklist": [
@@ -68,6 +99,11 @@
     "Delayed cord clamping for a vigorous newborn; placenta not pulled on, delivered spontaneously or with proper controlled traction technique",
     "Postpartum hemorrhage risk actively monitored after placental delivery, not assumed resolved once the baby is out"
   ],
-  "crossLinks": ["obstetric-delivery-emergencies", "nrp-algorithm", "postpartum-hemorrhage-staging", "apgar-score"],
+  "crossLinks": [
+    "obstetric-delivery-emergencies",
+    "nrp-algorithm",
+    "postpartum-hemorrhage-staging",
+    "apgar-score"
+  ],
   "buildNote": "workflow outputType. Deliberately covers ONLY the mechanics of an uncomplicated vertex delivery — every genuine complication (shoulder dystocia, cord prolapse, abruption) is explicitly routed to obstetric-delivery-emergencies rather than restated, matching that module's own framing that it assumes delivery mechanics are already known. This is the missing mechanics piece, not a competing complications module."
 }

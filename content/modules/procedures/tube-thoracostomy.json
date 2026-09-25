@@ -32,7 +32,7 @@
     "pigtail catheter versus large-bore tube"
   ],
   "contentType": "procedure",
-  "content_version": 4,
+  "content_version": 5,
   "last_reviewed": "2026-09-24",
   "next_review_due": "2026-12-24",
   "review_tier": 1,
@@ -68,6 +68,11 @@
       "version": 4,
       "date": "2026-09-24",
       "change": "Corrected the safe triangle's inferior edge, caught by the user: v3 drew it as a horizontal line at the nipple labeled '5th ICS', but the ribs on the lateral wall rise toward the back, so a horizontal line lies over a progressively lower interspace posteriorly — about one space low at the latissimus edge, in the direction of the diaphragm. The edge now follows the rib at the angle measured from Gray's fig. 1217 (about 24 degrees, fitted against several ribs), the BTS horizontal line is kept as a faint reference so the difference is visible, and the insertion point moved up to stay inside the space. Added fig. 1217 itself to the finger-sweep step, showing the rib slope, the costodiaphragmatic recess and the spleen."
+    },
+    {
+      "version": 5,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "outputType": "workflow",
@@ -78,7 +83,7 @@
       "id": "indication",
       "type": "step",
       "prompt": "1 · Indication — and choosing the tube, which is now a real decision",
-      "body": "Indications: pneumothorax that needs drainage (including after needle or finger decompression of a tension pneumothorax), hemothorax and hemopneumothorax, empyema and complicated parapneumonic effusion, and symptomatic malignant or other large effusions that will not be managed by repeated taps.\n\nTube size used to be simple — big for blood, smaller for air. It is not anymore, and the old dogma is worth unlearning.",
+      "body": "Indications:\n- pneumothorax that needs drainage (including after needle or finger decompression of a tension pneumothorax)\n- hemothorax and hemopneumothorax\n- empyema and complicated parapneumonic effusion\n- symptomatic malignant or other large effusions that will not be managed by repeated taps\n\nTube size used to be simple — big for blood, smaller for air. It is not anymore, and the old dogma is worth unlearning.",
       "substeps": {
         "ordered": false,
         "items": [
@@ -111,7 +116,7 @@
       "id": "landmark",
       "type": "step",
       "prompt": "2 · Position and the safe triangle",
-      "body": "Supine or 30-45 degrees head-up, ipsilateral arm abducted and ideally behind the head — this pulls the pectoralis and latissimus apart and opens the triangle. Confirm the side against the imaging and say it out loud before anyone preps; a wrong-side chest tube is a never event that still happens.\n\nThe safe triangle is bounded by the lateral edge of pectoralis major, the anterior edge of latissimus dorsi, and a horizontal line at the level of the nipple (about the 5th intercostal space), with its apex below the axilla. It is safe because it keeps you clear of the long thoracic nerve and lateral thoracic artery and avoids breast and muscle bulk.\n\nENTER IN THE 4TH OR 5TH INTERCOSTAL SPACE, AT THE MID-AXILLARY LINE. The single most important rule is to stay at or above the nipple line: the diaphragm rises to the 4th-5th space in full expiration, and in the supine trauma patient the liver and spleen are closer than the landmarks suggest. In a woman, the nipple is a poor landmark — use the 5th intercostal space counted from the sternal angle, or the inframammary fold as the lower limit.",
+      "body": "Supine or 30-45 degrees head-up, ipsilateral arm abducted and ideally behind the head — this pulls the pectoralis and latissimus apart and opens the triangle. Confirm the side against the imaging and say it out loud before anyone preps; a wrong-side chest tube is a never event that still happens.\n\nThe safe triangle is bounded by:\n- the lateral edge of pectoralis major\n- the anterior edge of latissimus dorsi\n- a horizontal line at the level of the nipple (about the 5th intercostal space)\n- with its apex below the axilla\n\nIt is safe because it keeps you clear of the long thoracic nerve and lateral thoracic artery and avoids breast and muscle bulk.\n\nENTER IN THE 4TH OR 5TH INTERCOSTAL SPACE, AT THE MID-AXILLARY LINE. The single most important rule is to stay at or above the nipple line: the diaphragm rises to the 4th-5th space in full expiration, and in the supine trauma patient the liver and spleen are closer than the landmarks suggest. In a woman, the nipple is a poor landmark — use the 5th intercostal space counted from the sternal angle, or the inframammary fold as the lower limit.",
       "diagram": {
         "title": "The safe triangle, on real anatomy",
         "caption": "Left side of the chest, arm raised — the insertion position. The front edge is the lateral border of pectoralis major, the back edge the anterior border of latissimus dorsi, and the apex the axilla; serratus anterior forms the floor. The inferior edge follows the RIB, not the floor. BTS describes it as a horizontal line at the nipple, but the ribs on the lateral wall rise toward the back at about 20-25 degrees, so a horizontal line drawn back from the nipple lies over a progressively lower interspace — by the latissimus edge, about one space low, toward the diaphragm. Enter in the 4th-5th space on the vertical dropped from the axilla, over the top of the rib. For the right side, mirror it. The overlay is hand-registered to an engraving, with the rib angle measured from Gray's fig. 1217; on the patient you count the interspace by palpation.",

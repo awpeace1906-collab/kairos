@@ -93,8 +93,18 @@ enum RichTextFormat {
     /// "LEVEL: rest" -> ("LEVEL:", "rest") for an ALL-CAPS label of at most six
     /// words; nil otherwise, so an ordinary sentence with a colon stays plain.
     static func leadLabel(_ line: String) -> (String, String)? {
-        guard let r = line.range(of: ": ") else { return nil }
-        let lead = String(line[..<r.lowerBound])
+        // A label alone on its line ("POSITION:") heads the list below it.
+        let lead: String
+        let rest: String
+        if line.hasSuffix(":"), !line.dropLast().contains(":") {
+            lead = String(line.dropLast())
+            rest = ""
+        } else if let r = line.range(of: ": ") {
+            lead = String(line[..<r.lowerBound])
+            rest = String(line[r.upperBound...])
+        } else {
+            return nil
+        }
         let allowed = CharacterSet(charactersIn: "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ,'’()/&+-")
         guard (2...49).contains(lead.count),
               let first = lead.unicodeScalars.first,
@@ -102,7 +112,7 @@ enum RichTextFormat {
               lead.unicodeScalars.allSatisfy({ allowed.contains($0) }),
               lead.range(of: "[A-Z]{2}", options: .regularExpression) != nil,
               lead.split(separator: " ").count <= 6 else { return nil }
-        return (lead + ":", String(line[r.upperBound...]))
+        return (lead + ":", rest)
     }
 }
 
@@ -133,7 +143,8 @@ struct RichText: View {
             let (i, line) = pair
             let piece: Text
             if let (label, rest) = RichTextFormat.leadLabel(line) {
-                piece = Text(label).fontWeight(.semibold) + Text(" " + rest)
+                piece = rest.isEmpty ? Text(label).fontWeight(.semibold)
+                    : Text(label).fontWeight(.semibold) + Text(" " + rest)
             } else {
                 piece = Text(line)
             }

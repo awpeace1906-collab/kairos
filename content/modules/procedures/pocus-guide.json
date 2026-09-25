@@ -31,7 +31,7 @@
     "ICU"
   ],
   "contentType": "reference",
-  "content_version": 4,
+  "content_version": 5,
   "last_reviewed": "2026-09-01",
   "next_review_due": "2026-12-01",
   "review_tier": 2,
@@ -62,6 +62,11 @@
       "version": 4,
       "date": "2026-09-23",
       "change": "Added TAPSE with its acquisition technique (apical 4-chamber, M-mode through the lateral tricuspid annulus, <17 mm cutoff, angle dependence) as a nested sub-list under RV assessment, and qualified McConnell's sign — v3 called it 'specific for acute PE', which overstates it, since RV infarction and other acute RV pressure loads produce the same pattern."
+    },
+    {
+      "version": 5,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Probe and view selection by clinical question, with the diagnostic anchors for each focused exam. Answers focused binary questions — not a substitute for a comprehensive study.",
@@ -118,7 +123,7 @@
     },
     {
       "type": "text",
-      "text": "Subcostal long axis, measure ~2 cm from the RA junction. A small, > 50% collapsing IVC suggests low filling pressure / fluid tolerance; a plethoric, non-collapsing IVC suggests high right-sided pressure (tamponade, RV failure, tension physiology, volume overload). IVC is one data point — integrate with the lung and cardiac exams; it does not predict fluid responsiveness on its own."
+      "text": "Subcostal long axis, measure ~2 cm from the RA junction.\n- A small, > 50% collapsing IVC suggests low filling pressure / fluid tolerance.\n- A plethoric, non-collapsing IVC suggests high right-sided pressure (tamponade, RV failure, tension physiology, volume overload).\n\nIVC is one data point — integrate with the lung and cardiac exams; it does not predict fluid responsiveness on its own."
     },
     {
       "type": "heading",

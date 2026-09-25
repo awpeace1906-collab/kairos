@@ -3,12 +3,35 @@
   "section": "Procedures",
   "category": "Wound & Fracture Care",
   "title": "Foreign Body Removal",
-  "settingEmphasis": ["ed"],
-  "aliases": ["FB removal", "ear foreign body", "nasal foreign body", "button battery", "soft tissue foreign body", "corneal foreign body"],
-  "tags": ["foreign body", "ENT", "ophthalmology", "soft tissue", "button battery", "ED", "procedure"],
-  "keywords": ["button battery in the nose or ear is a true emergency, tissue necrosis starts within hours", "button battery in the esophagus is also emergent, remove within 2 hours if possible", "a stomach button battery in an asymptomatic child over 5 or with a battery under 20mm can often be observed", "irrigation is first-line for many ear/nose foreign bodies before instrumentation", "plain radiography misses organic and most glass-thin material, ultrasound or CT if suspicion remains high after a negative X-ray"],
+  "settingEmphasis": [
+    "ed"
+  ],
+  "aliases": [
+    "FB removal",
+    "ear foreign body",
+    "nasal foreign body",
+    "button battery",
+    "soft tissue foreign body",
+    "corneal foreign body"
+  ],
+  "tags": [
+    "foreign body",
+    "ENT",
+    "ophthalmology",
+    "soft tissue",
+    "button battery",
+    "ED",
+    "procedure"
+  ],
+  "keywords": [
+    "button battery in the nose or ear is a true emergency, tissue necrosis starts within hours",
+    "button battery in the esophagus is also emergent, remove within 2 hours if possible",
+    "a stomach button battery in an asymptomatic child over 5 or with a battery under 20mm can often be observed",
+    "irrigation is first-line for many ear/nose foreign bodies before instrumentation",
+    "plain radiography misses organic and most glass-thin material, ultrasound or CT if suspicion remains high after a negative X-ray"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -17,7 +40,16 @@
     "Davies PH, Benger JR. Foreign bodies in the nose and ear: a review of techniques for removal in the emergency department. J Accid Emerg Med. 2000."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5) — zero existing coverage of any foreign-body removal topic. Button battery content given the most detailed treatment given the genuine time-sensitivity and severity if missed." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5) — zero existing coverage of any foreign-body removal topic. Button battery content given the most detailed treatment given the genuine time-sensitivity and severity if missed."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "outputType": "workflow",
   "purpose": "Common ED foreign body scenarios (ear, nose, soft tissue, cornea) and their removal techniques — and the one true emergency in this category: button battery ingestion or insertion, which needs to be recognized and acted on fast.",
@@ -27,31 +59,31 @@
       "id": "button-battery",
       "type": "warning",
       "prompt": "Button battery — screen for this FIRST, it changes everything",
-      "body": "A button battery lodged in the ESOPHAGUS causes serious tissue burns that can occur within as little as 2 HOURS — this is a true emergency: remove it immediately (endoscopy), do not defer to routine ENT/GI scheduling. Larger (≥ 20mm) and lithium batteries are the most dangerous and are more likely to lodge in the esophagus in the first place, especially in children under 6. A NASAL or AURAL button battery is also emergent for the same reason (local tissue necrosis, septal perforation or tympanic membrane/ossicular damage can occur fast) — remove urgently, don't treat it as a routine foreign body. A button battery that has already passed into the STOMACH is different: most pass on their own and can be managed with observation, with the specific approach depending on the patient's age and the battery's size — call the National Battery Ingestion Hotline (1-800-498-8666, staffed 24 hours) for current specific guidance rather than relying on a fixed rule here, since this guidance is actively maintained. If the child can swallow, honey or sucralfate suspension (10 mL every 10 minutes, up to 6 doses) may slow esophageal injury while arranging removal — this is an adjunct that buys time, NOT a substitute for emergent removal of a battery still lodged in the esophagus."
+      "body": "ESOPHAGUS: a button battery lodged in the ESOPHAGUS causes serious tissue burns that can occur within as little as 2 HOURS — this is a true emergency: remove it immediately (endoscopy), do not defer to routine ENT/GI scheduling.\n- Larger (≥ 20mm) and lithium batteries are the most dangerous and are more likely to lodge in the esophagus in the first place, especially in children under 6.\n\nNOSE OR EAR: a NASAL or AURAL button battery is also emergent for the same reason (local tissue necrosis, septal perforation or tympanic membrane/ossicular damage can occur fast) — remove urgently, don't treat it as a routine foreign body.\n\nSTOMACH: a button battery that has already passed into the STOMACH is different — most pass on their own and can be managed with observation, with the specific approach depending on the patient's age and the battery's size.\n- Call the National Battery Ingestion Hotline (1-800-498-8666, staffed 24 hours) for current specific guidance rather than relying on a fixed rule here, since this guidance is actively maintained.\n\nHONEY OR SUCRALFATE: if the child can swallow, honey or sucralfate suspension (10 mL every 10 minutes, up to 6 doses) may slow esophageal injury while arranging removal — this is an adjunct that buys time, NOT a substitute for emergent removal of a battery still lodged in the esophagus."
     },
     {
       "id": "ear",
       "type": "step",
       "prompt": "Ear canal foreign body",
-      "body": "For most solid objects (beads, small toys): irrigation with warm water (if the object isn't organic/vegetable matter, which can swell with water and become harder to remove, and if the tympanic membrane is confirmed intact) is a reasonable first attempt for many objects. Alligator forceps or a right-angle hook/curette under direct visualization for a graspable object. For a LIVE INSECT: kill it first (mineral oil or lidocaine instilled into the canal) before attempting removal — a struggling insect causes significant pain and can burrow deeper. Avoid multiple blind instrumentation attempts that push the object further in — if an initial reasonable attempt fails, ENT referral is appropriate rather than repeated attempts risking canal trauma or tympanic membrane injury."
+      "body": "For most solid objects (beads, small toys):\n- Irrigation with warm water is a reasonable first attempt for many objects — if the object isn't organic/vegetable matter (which can swell with water and become harder to remove), and if the tympanic membrane is confirmed intact.\n- Alligator forceps or a right-angle hook/curette under direct visualization for a graspable object.\n\nLIVE INSECT: kill it first (mineral oil or lidocaine instilled into the canal) before attempting removal — a struggling insect causes significant pain and can burrow deeper.\n\nAvoid multiple blind instrumentation attempts that push the object further in — if an initial reasonable attempt fails, ENT referral is appropriate rather than repeated attempts risking canal trauma or tympanic membrane injury."
     },
     {
       "id": "nose",
       "type": "step",
       "prompt": "Nasal foreign body",
-      "body": "Position the child sitting up, good lighting, a nasal speculum for visualization. Techniques: direct instrument removal (forceps/hook) for a visible, graspable object; the 'parent's kiss' technique (parent occludes the unaffected nostril and gives a short sharp puff of breath into the child's mouth while the child's mouth is sealed around the parent's, generating positive pressure that can expel the object) works well for a round/smooth object and avoids instrumentation entirely — often a good first attempt in a cooperative-enough child. Positive-pressure techniques (bag-valve-mask over the mouth with the unaffected nostril occluded) are an alternative when the parent's-kiss technique isn't feasible. Screen for button battery FIRST (see above) — do not treat a nasal battery as a routine foreign body."
+      "body": "Position the child sitting up, good lighting, a nasal speculum for visualization.\n\nScreen for button battery FIRST (see above) — do not treat a nasal battery as a routine foreign body.\n\nTechniques:\n- Direct instrument removal (forceps/hook) for a visible, graspable object.\n- The 'parent's kiss' technique: parent occludes the unaffected nostril and gives a short sharp puff of breath into the child's mouth while the child's mouth is sealed around the parent's, generating positive pressure that can expel the object. Works well for a round/smooth object and avoids instrumentation entirely — often a good first attempt in a cooperative-enough child.\n- Positive-pressure techniques (bag-valve-mask over the mouth with the unaffected nostril occluded) are an alternative when the parent's-kiss technique isn't feasible."
     },
     {
       "id": "soft-tissue",
       "type": "step",
       "prompt": "Soft tissue foreign body",
-      "body": "History and mechanism guide suspicion (glass, wood, metal fragments from a laceration or puncture). Plain radiography readily detects metal and glass (even small glass fragments are usually radiopaque, contrary to old teaching) but MISSES organic material (wood, plastic, vegetable matter) reliably — if suspicion remains high after a negative X-ray, especially with a history suggesting organic material, get an ultrasound or CT rather than assuming a negative X-ray excludes a retained foreign body. Local exploration under adequate anesthesia and good lighting/hemostasis (a bloodless field, using a tourniquet on a digit if appropriate) for a foreign body accessible without extensive dissection; refer for a deep, small, or difficult-to-localize object rather than extensive blind ED exploration that risks more tissue damage than the foreign body itself."
+      "body": "History and mechanism guide suspicion (glass, wood, metal fragments from a laceration or puncture).\n\nIMAGING: plain radiography readily detects metal and glass (even small glass fragments are usually radiopaque, contrary to old teaching) but MISSES organic material (wood, plastic, vegetable matter) reliably. If suspicion remains high after a negative X-ray, especially with a history suggesting organic material, get an ultrasound or CT rather than assuming a negative X-ray excludes a retained foreign body.\n\nEXPLORATION: local exploration under adequate anesthesia and good lighting/hemostasis (a bloodless field, using a tourniquet on a digit if appropriate) for a foreign body accessible without extensive dissection.\n\nRefer for a deep, small, or difficult-to-localize object rather than extensive blind ED exploration that risks more tissue damage than the foreign body itself."
     },
     {
       "id": "corneal",
       "type": "step",
       "prompt": "Corneal / conjunctival foreign body",
-      "body": "Fluorescein exam under a Wood's lamp/slit lamp to localize. A superficial foreign body can often be removed with a moistened cotton-tip applicator or, if that fails, an eye spud/needle under slit-lamp magnification by an experienced provider. Screen carefully for an associated open globe injury (mechanism suggesting high-velocity/metal-on-metal — think grinding, hammering) BEFORE attempting removal — an open globe changes management entirely (shield the eye, do not manipulate further, emergent ophthalmology). A rust ring from a metallic foreign body may need a separate removal step (burr) — can often be deferred to ophthalmology follow-up rather than aggressively pursued in the ED if removal isn't straightforward."
+      "body": "Fluorescein exam under a Wood's lamp/slit lamp to localize.\n\nScreen carefully for an associated open globe injury (mechanism suggesting high-velocity/metal-on-metal — think grinding, hammering) BEFORE attempting removal — an open globe changes management entirely (shield the eye, do not manipulate further, emergent ophthalmology).\n\nA superficial foreign body can often be removed with a moistened cotton-tip applicator or, if that fails, an eye spud/needle under slit-lamp magnification by an experienced provider.\n\nA rust ring from a metallic foreign body may need a separate removal step (burr) — can often be deferred to ophthalmology follow-up rather than aggressively pursued in the ED if removal isn't straightforward."
     }
   ],
   "checklist": [
@@ -61,6 +93,9 @@
     "Repeated blind instrumentation avoided — escalate to specialist referral after a reasonable initial attempt fails, rather than risking further tissue trauma",
     "Organic soft-tissue foreign bodies actively considered even after a negative plain X-ray, given plain film's known blind spot for that material"
   ],
-  "crossLinks": ["anesthesia-pocus", "peds-procedural-sedation"],
+  "crossLinks": [
+    "anesthesia-pocus",
+    "peds-procedural-sedation"
+  ],
   "buildNote": "workflow outputType, button-battery given its own warning node ahead of the routine-technique steps given the genuine time-criticality — deliberately hedges the exact stomach-battery observation criteria and honey-mitigation practice as evolving/poison-control-guided rather than stating a fixed protocol the app can't keep current on its own."
 }

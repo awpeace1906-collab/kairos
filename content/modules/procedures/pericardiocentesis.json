@@ -29,7 +29,7 @@
     "thread a pigtail catheter rather than removing the needle immediately"
   ],
   "contentType": "procedure",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-14",
   "next_review_due": "2026-12-14",
   "review_tier": 1,
@@ -48,6 +48,11 @@
       "version": 2,
       "date": "2026-09-24",
       "change": "Added a landmark figure on the classic-landmark step: the subxiphoid entry point, needle path toward the left shoulder, and the apical window overlaid on Gray's Anatomy plate 1218 (public domain). The needle path is drawn in green so it stands out against the red heart."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "outputType": "workflow",
@@ -58,19 +63,19 @@
       "id": "recognition",
       "type": "step",
       "prompt": "1. Confirm tamponade physiology",
-      "body": "Beck's triad (hypotension, elevated JVP, muffled heart sounds) is insensitive — don't wait for all three. Look for pulsus paradoxus > 10 mmHg, tachycardia, and on ultrasound: a pericardial effusion with right ventricular diastolic collapse (most sensitive early sign) or right atrial systolic collapse, plus a plethoric IVC with minimal respiratory variation. A small effusion that accumulated rapidly can tamponade; a large chronic effusion may not. Emergent drainage is for tamponade physiology, not effusion size alone."
+      "body": "Beck's triad (hypotension, elevated JVP, muffled heart sounds) is insensitive — don't wait for all three.\n\nLook for:\n- pulsus paradoxus > 10 mmHg\n- tachycardia\n- on ultrasound: a pericardial effusion with right ventricular diastolic collapse (most sensitive early sign) or right atrial systolic collapse, plus a plethoric IVC with minimal respiratory variation\n\nA small effusion that accumulated rapidly can tamponade; a large chronic effusion may not. Emergent drainage is for tamponade physiology, not effusion size alone."
     },
     {
       "id": "site",
       "type": "step",
       "prompt": "2. Site selection — ultrasound-guided, not blind",
-      "body": "Ultrasound guidance is the standard of care and has replaced the classic 'blind' subxiphoid landmark technique wherever ultrasound and time allow. Identify the largest fluid pocket closest to the skin surface with the most direct needle path that avoids lung, liver, and the internal mammary/coronary vessels — this is often an apical or parasternal window with a large effusion, not necessarily the classic subxiphoid point. Mark the site, needle angle, and depth to the effusion with the probe immediately before prepping, since the patient's position will be fixed once draped."
+      "body": "Ultrasound guidance is the standard of care and has replaced the classic 'blind' subxiphoid landmark technique wherever ultrasound and time allow.\n\nIdentify the largest fluid pocket closest to the skin surface with the most direct needle path that avoids lung, liver, and the internal mammary/coronary vessels — this is often an apical or parasternal window with a large effusion, not necessarily the classic subxiphoid point.\n\nMark the site, needle angle, and depth to the effusion with the probe immediately before prepping, since the patient's position will be fixed once draped."
     },
     {
       "id": "classic-landmark",
       "type": "step",
       "prompt": "3. Classic subxiphoid landmark (if ultrasound genuinely isn't available)",
-      "body": "Patient supine, head of bed 30-45° to pool the effusion inferiorly. Entry point 1-2 cm left and inferior to the xiphoid process. Advance the needle at a shallow 15-30° angle to the skin, aiming toward the left shoulder, under continuous gentle aspiration. If an ECG lead is clipped to the needle hub, ST-segment elevation or ectopy means the needle tip is touching ventricular myocardium — withdraw slightly.",
+      "body": "1. Patient supine, head of bed 30-45° to pool the effusion inferiorly.\n2. Entry point 1-2 cm left and inferior to the xiphoid process.\n3. Advance the needle at a shallow 15-30° angle to the skin, aiming toward the left shoulder, under continuous gentle aspiration.\n\nIf an ECG lead is clipped to the needle hub, ST-segment elevation or ectopy means the needle tip is touching ventricular myocardium — withdraw slightly.",
       "diagram": {
         "title": "Subxiphoid approach, on the heart's surface projection",
         "caption": "Front view: the patient's left is on the right of the picture, where the left ventricle and apex sit. From the entry point just below and to the left of the xiphoid, the needle passes under the costal margin at a shallow 15-30 degrees to the skin, aimed at the left shoulder, to meet the inferior (diaphragmatic) surface of the heart — mostly right ventricle, which is why ECG ST elevation or ectopy from a needle-clipped lead means myocardium. The left lobe of the liver lies just deep to the entry point. Where ultrasound is available it chooses the window instead, often the apex, where the fluid is deepest and closest. The overlay is placed by hand on an engraving; on the patient the landmark is the xiphoid tip you palpate.",
@@ -397,19 +402,19 @@
       "id": "technique",
       "type": "step",
       "prompt": "4. Needle entry and catheter placement",
-      "body": "Advance under continuous aspiration (or continuous ultrasound visualization of the needle tip) until fluid returns. If there's any doubt whether the tip is truly in the pericardial space versus a cardiac chamber, inject a few mL of agitated saline under ultrasound — bubbles appearing in the effusion (not swirling into a chamber) confirm correct position. Once confirmed, thread a guidewire (Seldinger technique) and place a pigtail catheter for continued drainage rather than removing the needle after a single aspiration — tamponade commonly re-accumulates, and a pigtail left in place avoids a second needle pass."
+      "body": "1. Advance under continuous aspiration (or continuous ultrasound visualization of the needle tip) until fluid returns.\n2. If there's any doubt whether the tip is truly in the pericardial space versus a cardiac chamber, inject a few mL of agitated saline under ultrasound — bubbles appearing in the effusion (not swirling into a chamber) confirm correct position.\n3. Once confirmed, thread a guidewire (Seldinger technique) and place a pigtail catheter for continued drainage rather than removing the needle after a single aspiration.\n\nTamponade commonly re-accumulates, and a pigtail left in place avoids a second needle pass."
     },
     {
       "id": "drainage",
       "type": "step",
       "prompt": "5. Drainage volume and reassessment",
-      "body": "Even a small volume drained (50-100 mL) can produce dramatic hemodynamic improvement — the pericardial pressure-volume curve is steep near the tamponade point, so a small volume change makes a large pressure difference. Reassess hemodynamics and repeat ultrasound after initial drainage rather than assuming more is always better; send fluid for cell count, cytology, culture, and other studies as indicated by the suspected etiology."
+      "body": "Even a small volume drained (50-100 mL) can produce dramatic hemodynamic improvement — the pericardial pressure-volume curve is steep near the tamponade point, so a small volume change makes a large pressure difference.\n\nReassess hemodynamics and repeat ultrasound after initial drainage rather than assuming more is always better.\n\nSend fluid for cell count, cytology, culture, and other studies as indicated by the suspected etiology."
     },
     {
       "id": "traumatic-caveat",
       "type": "warning",
       "prompt": "Traumatic hemopericardium — a bridge, not necessarily definitive",
-      "body": "In traumatic tamponade (penetrating chest trauma, hemopericardium), pericardiocentesis is often only temporizing: blood in the pericardial space clots and can re-tamponade despite needle drainage, and ongoing surgical bleeding will not stop with aspiration alone. Use it as a bridge to definitive management (resuscitative thoracotomy or a surgical pericardial window) in the unstable trauma patient, not as the endpoint of care — see traumatic-cardiac-arrest for the broader sequence this fits into."
+      "body": "In traumatic tamponade (penetrating chest trauma, hemopericardium), pericardiocentesis is often only temporizing:\n- blood in the pericardial space clots and can re-tamponade despite needle drainage\n- ongoing surgical bleeding will not stop with aspiration alone\n\nUse it as a bridge to definitive management (resuscitative thoracotomy or a surgical pericardial window) in the unstable trauma patient, not as the endpoint of care — see traumatic-cardiac-arrest for the broader sequence this fits into."
     }
   ],
   "checklist": [

@@ -535,7 +535,7 @@ h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
 /* Kairos text format (lib/richText.js): paragraphs, line breaks and lists
    inside a single prose field. */
 .rich > p { margin: 0; }
-.rich > * + * { margin-top: 8px; }
+.rich.rich > * + * { margin-top: 8px; } /* doubled class beats `.node-body p { margin: 0 }` */
 .rich > ul, .rich > ol { margin-bottom: 0; padding-left: 18px; }
 .rich > ul { list-style-type: disc; }
 .rich > ol.numbered { list-style-type: decimal; }
@@ -600,7 +600,8 @@ h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
 }
 .node.warning .node-badge { background: var(--sev-high); }
 .node-body { flex: 1; min-width: 0; }
-.node-body strong { display: block; margin-bottom: 4px; }
+/* the step title only — bold lead-ins inside the body stay inline */
+.node-body > strong { display: block; margin-bottom: 4px; }
 .node-body p { margin: 0; }
 .tree-walker { border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin: 10px 0; background: var(--surface-2); }
 .tree-crumbs { font-size: .8rem; color: var(--muted); margin-bottom: 8px; }

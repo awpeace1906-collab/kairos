@@ -255,6 +255,7 @@ for (const m of mods) {
   eq("rich: CRLF normalized", parseRichText("a\r\n\r\nb").length, 2);
 
   eq("rich: ALL-CAPS lead label", JSON.stringify(leadLabel("LEVEL: posterior axillary line")), JSON.stringify(["LEVEL:", "posterior axillary line"]));
+  eq("rich: a label alone on its line is a sub-header", JSON.stringify(leadLabel("POSITION:")), JSON.stringify(["POSITION:", ""]));
   eq("rich: sentence colon is not a label", leadLabel("Note the ratio: 2 to 1"), null);
   eq("rich: single capital is not a label", leadLabel("A: something"), null);
 

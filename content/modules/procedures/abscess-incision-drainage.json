@@ -3,12 +3,31 @@
   "section": "Procedures",
   "category": "Wound & Fracture Care",
   "title": "Abscess Incision & Drainage",
-  "settingEmphasis": ["ed"],
-  "aliases": ["I&D", "abscess drainage", "loop drainage technique", "packing vs no packing"],
-  "tags": ["abscess", "incision and drainage", "I&D", "MRSA", "ED", "procedure"],
-  "keywords": ["ultrasound confirms a drainable fluid collection versus cellulitis before cutting", "loop drainage technique has equivalent cure with less pain than packing for many abscesses", "antibiotics are indicated for MRSA-endemic areas, systemic signs, immunocompromise, or a large abscess with surrounding cellulitis, not for a small simple abscess after adequate drainage", "packing is not mandatory for every abscess, evidence increasingly favors selective/no packing for small simple ones"],
+  "settingEmphasis": [
+    "ed"
+  ],
+  "aliases": [
+    "I&D",
+    "abscess drainage",
+    "loop drainage technique",
+    "packing vs no packing"
+  ],
+  "tags": [
+    "abscess",
+    "incision and drainage",
+    "I&D",
+    "MRSA",
+    "ED",
+    "procedure"
+  ],
+  "keywords": [
+    "ultrasound confirms a drainable fluid collection versus cellulitis before cutting",
+    "loop drainage technique has equivalent cure with less pain than packing for many abscesses",
+    "antibiotics are indicated for MRSA-endemic areas, systemic signs, immunocompromise, or a large abscess with surrounding cellulitis, not for a small simple abscess after adequate drainage",
+    "packing is not mandatory for every abscess, evidence increasingly favors selective/no packing for small simple ones"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,7 +37,16 @@
     "Loop-drainage-vs-packing comparative outcome data reflects the growing shift away from routine packing for simple abscesses."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5). Bartholin-specific I&D already exists as its own module (bartholin-vulvar-emergencies) — this is the general skin/soft-tissue abscess technique that was missing." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5). Bartholin-specific I&D already exists as its own module (bartholin-vulvar-emergencies) — this is the general skin/soft-tissue abscess technique that was missing."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "outputType": "workflow",
   "purpose": "General skin/soft-tissue abscess incision and drainage — confirming it's actually a drainable abscess (not cellulitis), the loop-drainage alternative to traditional packing, and when antibiotics actually add value beyond drainage alone.",
@@ -28,37 +56,37 @@
       "id": "confirm",
       "type": "step",
       "prompt": "1. Confirm a drainable abscess, not just cellulitis",
-      "body": "Fluctuance on exam is the classic sign but can be unreliable, especially in a deep or early abscess. Point-of-care ultrasound is a genuinely useful adjunct here — an anechoic or hypoechoic fluid collection with posterior acoustic enhancement confirms a drainable abscess, while a cobblestoned/edematous pattern without a discrete collection suggests cellulitis alone, which doesn't need (and won't improve from) an incision. This distinction matters: incising simple cellulitis adds pain and a wound without therapeutic benefit."
+      "body": "Fluctuance on exam is the classic sign but can be unreliable, especially in a deep or early abscess.\n\nPoint-of-care ultrasound is a genuinely useful adjunct here:\n- an anechoic or hypoechoic fluid collection with posterior acoustic enhancement confirms a drainable abscess\n- a cobblestoned/edematous pattern without a discrete collection suggests cellulitis alone, which doesn't need (and won't improve from) an incision\n\nThis distinction matters: incising simple cellulitis adds pain and a wound without therapeutic benefit."
     },
     {
       "id": "anesthesia",
       "type": "step",
       "prompt": "2. Anesthesia",
-      "body": "Local infiltration anesthesia is often only partially effective in infected/inflamed tissue (the acidic environment reduces local anesthetic efficacy) — set expectations with the patient, consider a field block around the periphery of the planned incision rather than only infiltrating the center, and consider procedural sedation for a large or particularly painful abscess, especially in a child (see peds-procedural-sedation)."
+      "body": "Local infiltration anesthesia is often only partially effective in infected/inflamed tissue (the acidic environment reduces local anesthetic efficacy).\n- Set expectations with the patient.\n- Consider a field block around the periphery of the planned incision rather than only infiltrating the center.\n- Consider procedural sedation for a large or particularly painful abscess, especially in a child (see peds-procedural-sedation)."
     },
     {
       "id": "incision",
       "type": "step",
       "prompt": "3. Incision and initial drainage",
-      "body": "A single incision along skin tension lines, sized to the abscess (large enough for adequate drainage and subsequent packing/loop placement, not minimized for cosmesis at the expense of adequate drainage) — over the point of maximal fluctuance/thinnest overlying skin. Express purulent material, then break up loculations with a hemostat or your finger (blunt digital exploration) to ensure all pockets are opened, not just the initial one encountered. Irrigate the cavity."
+      "body": "1. A single incision along skin tension lines, over the point of maximal fluctuance/thinnest overlying skin — sized to the abscess (large enough for adequate drainage and subsequent packing/loop placement, not minimized for cosmesis at the expense of adequate drainage).\n2. Express purulent material.\n3. Break up loculations with a hemostat or your finger (blunt digital exploration) to ensure all pockets are opened, not just the initial one encountered.\n4. Irrigate the cavity."
     },
     {
       "id": "packing-decision",
       "type": "step",
       "prompt": "4. Packing vs. loop drainage vs. neither",
-      "body": "Traditional teaching packs every abscess cavity with gauze, requiring painful repeat packing changes. Growing evidence supports alternatives for many simple abscesses: LOOP DRAINAGE (a small elastic loop/drain — e.g. a vessel loop or a cut piece of a sterile glove — threaded through two small counter-incisions across the cavity, tied loosely, left in place for continuous drainage) shows equivalent cure rates with meaningfully less pain and fewer return visits compared to packing, for many straightforward abscesses. For a SMALL, simple abscess, NO packing/drain at all (just adequate incision, drainage, and irrigation) is increasingly considered reasonable. Reserve traditional gauze packing for a large cavity, or where loop drainage material/expertise isn't available — packing is not a mandatory universal step."
+      "body": "Traditional teaching packs every abscess cavity with gauze, requiring painful repeat packing changes. Growing evidence supports alternatives for many simple abscesses:\n- LOOP DRAINAGE: a small elastic loop/drain (e.g. a vessel loop or a cut piece of a sterile glove) threaded through two small counter-incisions across the cavity, tied loosely, left in place for continuous drainage. Shows equivalent cure rates with meaningfully less pain and fewer return visits compared to packing, for many straightforward abscesses.\n- NO PACKING/DRAIN at all, for a SMALL, simple abscess (just adequate incision, drainage, and irrigation), is increasingly considered reasonable.\n- Traditional gauze packing: reserve for a large cavity, or where loop drainage material/expertise isn't available.\n\nPacking is not a mandatory universal step."
     },
     {
       "id": "antibiotics",
       "type": "recommendation",
       "prompt": "5. Antibiotics — indicated selectively, not universally",
-      "body": "Adequate drainage is the primary treatment — antibiotics are an ADJUNCT, not a replacement, and are not automatically needed after every drainage. Indications favoring antibiotics: systemic signs of infection (fever, systemic toxicity), significant surrounding cellulitis, immunocompromise, a large or multiple abscesses, a high-risk location (face, hand, genital area), failure of drainage alone, or a high local MRSA prevalence (empiric MRSA coverage — e.g. TMP-SMX or doxycycline — is reasonable in that setting). A small, simple, uncomplicated abscess with adequate drainage and no systemic signs generally does NOT need antibiotics — drainage alone is curative in that scenario."
+      "body": "Adequate drainage is the primary treatment — antibiotics are an ADJUNCT, not a replacement, and are not automatically needed after every drainage.\n\nIndications favoring antibiotics:\n- systemic signs of infection (fever, systemic toxicity)\n- significant surrounding cellulitis\n- immunocompromise\n- a large or multiple abscesses\n- a high-risk location (face, hand, genital area)\n- failure of drainage alone\n- a high local MRSA prevalence (empiric MRSA coverage — e.g. TMP-SMX or doxycycline — is reasonable in that setting)\n\nA small, simple, uncomplicated abscess with adequate drainage and no systemic signs generally does NOT need antibiotics — drainage alone is curative in that scenario."
     },
     {
       "id": "followup",
       "type": "step",
       "prompt": "6. Wound care and follow-up",
-      "body": "Cover the wound, provide clear wound-care instructions (dressing changes, when to remove a loop drain — typically after several days once drainage has substantially decreased), and give explicit return precautions (worsening pain, spreading redness, fever, the abscess reaccumulating). Arrange follow-up for a large abscess, one that was packed (needs a packing check/change), or one in a higher-risk patient."
+      "body": "Cover the wound and provide clear wound-care instructions (dressing changes, when to remove a loop drain — typically after several days once drainage has substantially decreased).\n\nGive explicit return precautions:\n- worsening pain\n- spreading redness\n- fever\n- the abscess reaccumulating\n\nArrange follow-up for a large abscess, one that was packed (needs a packing check/change), or one in a higher-risk patient."
     }
   ],
   "checklist": [
@@ -68,6 +96,10 @@
     "Packing/loop-drainage/no-drain decision made deliberately based on abscess size and complexity, not reflexive packing of everything",
     "Antibiotics decision made on the specific indications above, not given automatically after every drainage"
   ],
-  "crossLinks": ["empiric-antibiotics-ed-icu", "peds-procedural-sedation", "bartholin-vulvar-emergencies"],
+  "crossLinks": [
+    "empiric-antibiotics-ed-icu",
+    "peds-procedural-sedation",
+    "bartholin-vulvar-emergencies"
+  ],
   "buildNote": "workflow outputType. Deliberately distinct from bartholin-vulvar-emergencies (site-specific technique with its own considerations, already built) — this is the general skin/soft-tissue abscess procedure that was the actual audit-flagged gap."
 }

@@ -39,7 +39,7 @@
     "avoid subclavian in dialysis-dependent patients"
   ],
   "contentType": "procedure",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-13",
   "next_review_due": "2026-12-13",
   "review_tier": 1,
@@ -59,6 +59,11 @@
       "version": 2,
       "date": "2026-09-24",
       "change": "Added a landmark figure to the ultrasound step: the triangle between the sternal and clavicular heads of sternocleidomastoid on Gray's Anatomy plate 1195 (public domain), with the IJ running lateral to the carotid beneath it. The figure shows where the probe goes first; the card still requires ultrasound confirmation before the needle."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "outputType": "workflow",
@@ -69,19 +74,19 @@
       "id": "site",
       "type": "step",
       "prompt": "1. Site selection",
-      "body": "Internal jugular (IJ), right side preferred: straightest path to the SVC, lower pneumothorax risk than subclavian, fully ultrasound-visualized start to finish — the default choice when there's time to do it under real-time US guidance. Subclavian: lowest long-term infection/thrombosis risk, but the highest pneumothorax risk and the puncture site is NOT compressible — avoid if coagulopathic, and avoid entirely in dialysis-dependent or likely-future-dialysis patients (subclavian stenosis can wreck a future ipsilateral AV fistula). Femoral: fastest to place, no pneumothorax risk, fully compressible — the default in a cardiac arrest (doesn't interrupt compressions or airway work) or in an uncorrected coagulopathy, but carries the highest infection and DVT risk of the three, so plan to convert to a non-femoral site once the emergency has passed."
+      "body": "Internal jugular (IJ), right side preferred:\n- straightest path to the SVC\n- lower pneumothorax risk than subclavian\n- fully ultrasound-visualized start to finish\n- the default choice when there's time to do it under real-time US guidance\n\nSubclavian:\n- lowest long-term infection/thrombosis risk\n- but the highest pneumothorax risk, and the puncture site is NOT compressible — avoid if coagulopathic\n- avoid entirely in dialysis-dependent or likely-future-dialysis patients (subclavian stenosis can wreck a future ipsilateral AV fistula)\n\nFemoral:\n- fastest to place, no pneumothorax risk, fully compressible\n- the default in a cardiac arrest (doesn't interrupt compressions or airway work) or in an uncorrected coagulopathy\n- but carries the highest infection and DVT risk of the three, so plan to convert to a non-femoral site once the emergency has passed"
     },
     {
       "id": "prep",
       "type": "step",
       "prompt": "2. Maximal sterile barrier prep",
-      "body": "Cap, mask, sterile gown, sterile gloves, and a large full-body sterile drape — the full CLABSI-prevention bundle, for every site, every time, not just IJ/subclavian. Position: Trendelenburg (head-down) for IJ or subclavian to distend the vein and reduce air-embolism risk; head turned slightly away from an IJ site. Chlorhexidine-gluconate skin prep, allowed to fully dry. Local anesthesia at the planned entry point before the needle, even in a sedated or arrested patient if time allows — it also serves as a test dose to confirm you're not about to enter an artery."
+      "body": "BARRIERS: cap, mask, sterile gown, sterile gloves, and a large full-body sterile drape — the full CLABSI-prevention bundle, for every site, every time, not just IJ/subclavian.\n\nPOSITION: Trendelenburg (head-down) for IJ or subclavian to distend the vein and reduce air-embolism risk; head turned slightly away from an IJ site.\n\nPREP: chlorhexidine-gluconate skin prep, allowed to fully dry.\n\nLOCAL: anesthesia at the planned entry point before the needle, even in a sedated or arrested patient if time allows — it also serves as a test dose to confirm you're not about to enter an artery."
     },
     {
       "id": "identify",
       "type": "step",
       "prompt": "3. Ultrasound identification (non-femoral, and preferred for femoral too)",
-      "body": "Identify the target vein in short axis first: compressible with gentle probe pressure, non-pulsatile, thin-walled, and it fills from a distal squeeze — the artery sits nearby, is round, thick-walled, pulsatile, and does NOT compress with gentle pressure. For an IJ: it typically sits anterolateral to the carotid, at the apex of the triangle between the sternal and clavicular heads of sternocleidomastoid. Confirm vein identity in BOTH short and long axis before the needle goes anywhere near the skin — do not rely on landmarks alone.",
+      "body": "Identify the target vein in short axis first:\n- VEIN: compressible with gentle probe pressure, non-pulsatile, thin-walled, and it fills from a distal squeeze.\n- ARTERY: sits nearby, is round, thick-walled, pulsatile, and does NOT compress with gentle pressure.\n\nFor an IJ: it typically sits anterolateral to the carotid, at the apex of the triangle between the sternal and clavicular heads of sternocleidomastoid.\n\nConfirm vein identity in BOTH short and long axis before the needle goes anywhere near the skin — do not rely on landmarks alone.",
       "diagram": {
         "title": "Where the probe goes for an IJ",
         "caption": "The base of the neck on the patient's LEFT side — the only side this plate shows; the preferred right side is its mirror image. Just above the clavicle the sternal and clavicular heads of sternocleidomastoid part, leaving a small triangle. The internal jugular runs beneath it, lateral to the carotid, which lies medially and deep to the sternal head. Put the probe at the apex, transverse, and find the vein in short axis there. The vessel lines are surface projections drawn by hand on an engraving: the ultrasound image, not this picture, tells you where the vein actually is.",
@@ -481,25 +486,25 @@
       "id": "needle-wire",
       "type": "step",
       "prompt": "4. Needle access & guidewire",
-      "body": "Advance the finder/access needle under real-time ultrasound (in-plane or out-of-plane), needle tip visualized continuously, aspirating as you advance. Free-flowing dark, non-pulsatile blood suggests venous placement, but this sign alone is NOT reliable enough on its own — where available, confirm venous (not arterial) placement by pressure transducing the needle/catheter or visualizing the wire coiled within the vein on ultrasound BEFORE you dilate. Once confirmed, thread the guidewire through the needle — it should advance with no resistance. Never force a wire: resistance means withdraw the wire, reassess needle position, and try again. Watch the monitor as the wire advances; ventricular ectopy means the wire is in the right atrium/ventricle — withdraw it 2-3 cm."
+      "body": "1. Advance the finder/access needle under real-time ultrasound (in-plane or out-of-plane), needle tip visualized continuously, aspirating as you advance.\n2. Free-flowing dark, non-pulsatile blood suggests venous placement, but this sign alone is NOT reliable enough on its own — where available, confirm venous (not arterial) placement by pressure transducing the needle/catheter or visualizing the wire coiled within the vein on ultrasound BEFORE you dilate.\n3. Once confirmed, thread the guidewire through the needle — it should advance with no resistance.\n\nNever force a wire: resistance means withdraw the wire, reassess needle position, and try again.\n\nWatch the monitor as the wire advances; ventricular ectopy means the wire is in the right atrium/ventricle — withdraw it 2-3 cm."
     },
     {
       "id": "dilate-catheter",
       "type": "step",
       "prompt": "5. Dilation & catheter placement",
-      "body": "Remove the needle over the wire, keeping the wire's distal end controlled at all times. Make a small skin nick at the wire entry point. Thread the dilator over the wire to dilate the tract, then remove the dilator (hold pressure briefly if there's brisk bleeding). Thread the catheter over the wire until the wire's proximal end emerges from the catheter's distal port, then advance the catheter to its target depth while withdrawing the wire — remove the wire completely once the catheter is seated. Aspirate and flush every lumen before securing."
+      "body": "1. Remove the needle over the wire, keeping the wire's distal end controlled at all times.\n2. Make a small skin nick at the wire entry point.\n3. Thread the dilator over the wire to dilate the tract, then remove the dilator (hold pressure briefly if there's brisk bleeding).\n4. Thread the catheter over the wire until the wire's proximal end emerges from the catheter's distal port.\n5. Advance the catheter to its target depth while withdrawing the wire — remove the wire completely once the catheter is seated.\n6. Aspirate and flush every lumen before securing."
     },
     {
       "id": "secure-confirm",
       "type": "step",
       "prompt": "6. Secure & confirm placement",
-      "body": "Suture or use a securement device at the skin, apply a sterile occlusive dressing, and label the line with date/site/inserter. For IJ or subclavian: obtain a chest X-ray to confirm the catheter tip sits at the cavoatrial junction (not coiled, not too deep into the atrium) AND to rule out a pneumothorax before the line is used for anything beyond emergency access — a bedside lung ultrasound (lung sliding present = no pneumothorax) can rule this out faster than waiting on a film. Femoral lines need no imaging confirmation for placement, but still get documented and dated like any other central line."
+      "body": "Suture or use a securement device at the skin, apply a sterile occlusive dressing, and label the line with date/site/inserter.\n\nIJ OR SUBCLAVIAN: obtain a chest X-ray to confirm the catheter tip sits at the cavoatrial junction (not coiled, not too deep into the atrium) AND to rule out a pneumothorax before the line is used for anything beyond emergency access. A bedside lung ultrasound (lung sliding present = no pneumothorax) can rule this out faster than waiting on a film.\n\nFEMORAL: lines need no imaging confirmation for placement, but still get documented and dated like any other central line."
     },
     {
       "id": "complications",
       "type": "warning",
       "prompt": "Complications to actively watch for",
-      "body": "Pneumothorax (IJ/subclavian) — new dyspnea, decreased breath sounds, desaturation during or after the procedure; confirm with lung US or CXR. Arterial puncture/cannulation — pulsatile bright-red return, or a dilator/catheter that goes in unexpectedly easily into a high-pressure system; if the ARTERY has already been dilated or cannulated with a large-bore catheter, do NOT simply pull it — get vascular surgery involved, since removal can cause uncontrolled bleeding or a pseudoaneurysm. Air embolism — most preventable with Trendelenburg positioning and occluding the hub any time it's open to air; sudden hypotension, arrhythmia, or a 'mill-wheel' murmur during the procedure should trigger placing the patient left-lateral-decubitus/Trendelenburg and giving 100% O2. Arrhythmia from a wire advanced too far. Catheter-related bloodstream infection (CLABSI) — the reason for the sterile-barrier bundle above and for pulling any line that's no longer needed."
+      "body": "- Pneumothorax (IJ/subclavian): new dyspnea, decreased breath sounds, desaturation during or after the procedure; confirm with lung US or CXR.\n- Arterial puncture/cannulation: pulsatile bright-red return, or a dilator/catheter that goes in unexpectedly easily into a high-pressure system. If the ARTERY has already been dilated or cannulated with a large-bore catheter, do NOT simply pull it — get vascular surgery involved, since removal can cause uncontrolled bleeding or a pseudoaneurysm.\n- Air embolism: most preventable with Trendelenburg positioning and occluding the hub any time it's open to air. Sudden hypotension, arrhythmia, or a 'mill-wheel' murmur during the procedure should trigger placing the patient left-lateral-decubitus/Trendelenburg and giving 100% O2.\n- Arrhythmia from a wire advanced too far.\n- Catheter-related bloodstream infection (CLABSI): the reason for the sterile-barrier bundle above and for pulling any line that's no longer needed."
     }
   ],
   "checklist": [

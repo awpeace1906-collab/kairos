@@ -21,7 +21,7 @@
     "ED"
   ],
   "contentType": "procedure",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-01",
   "next_review_due": "2026-12-01",
   "review_tier": 1,
@@ -45,6 +45,11 @@
       "version": 1,
       "date": "2026-08-31",
       "change": "Skeleton only."
+    },
+    {
+      "version": 4,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "purpose": "Special-features + deep-structures triage → body-region wound assessment → suture material/size and technique selection → aftercare + a generated procedure note.",
@@ -192,17 +197,17 @@
     {
       "id": "f-bite",
       "type": "recommendation",
-      "body": "Copious irrigation. Do NOT primarily close a bite on the hand, foot, or a puncture, or one presenting > 12–24 h old, or a cat bite (deep puncture, high infection rate) — leave open or delayed primary closure. A low-tension facial dog bite < 12 h may be closed after thorough irrigation for cosmesis. Antibiotic prophylaxis: amoxicillin-clavulanate 5–7 days (covers Pasteurella and anaerobes) for hand/foot/face bites, deep punctures, cat/human bites, immunocompromise, or asplenia. Tetanus. Rabies risk assessment for wild/unprovoked bites. Human 'fight bite' over the MCP → hand surgery, do not close."
+      "body": "Copious irrigation.\n\nDo NOT primarily close — leave open or delayed primary closure:\n- a bite on the hand, foot, or a puncture\n- one presenting > 12–24 h old\n- a cat bite (deep puncture, high infection rate)\n\nA low-tension facial dog bite < 12 h may be closed after thorough irrigation for cosmesis.\n\nANTIBIOTIC PROPHYLAXIS: amoxicillin-clavulanate 5–7 days (covers Pasteurella and anaerobes) for hand/foot/face bites, deep punctures, cat/human bites, immunocompromise, or asplenia.\n\nTetanus. Rabies risk assessment for wild/unprovoked bites.\n\nHuman 'fight bite' over the MCP → hand surgery, do not close."
     },
     {
       "id": "f-contam",
       "type": "step",
-      "body": "Irrigate with 50–100 mL of normal saline (or potable tap water) per cm of wound under pressure until visibly clean; explore for and remove foreign material (imaging — plain film or US — for glass, metal, gravel). Debride devitalised tissue. If it cannot be adequately cleaned, delay closure (pack, review at 72–96 h for delayed primary closure). Consider prophylactic antibiotics for a heavily contaminated wound. Tetanus per status; for a tetanus-prone wound in an under-immunized patient, add tetanus immunoglobulin."
+      "body": "1. Irrigate with 50–100 mL of normal saline (or potable tap water) per cm of wound under pressure until visibly clean.\n2. Explore for and remove foreign material (imaging — plain film or US — for glass, metal, gravel).\n3. Debride devitalised tissue.\n\nIf it cannot be adequately cleaned, delay closure (pack, review at 72–96 h for delayed primary closure).\n\nConsider prophylactic antibiotics for a heavily contaminated wound.\n\nTetanus per status; for a tetanus-prone wound in an under-immunized patient, add tetanus immunoglobulin."
     },
     {
       "id": "f-delayed",
       "type": "recommendation",
-      "body": "Primary-closure windows: ~6–8 h for trunk/extremity, up to ~12–24 h for the well-vascularized face and scalp; a clean wound in a healthy patient can sometimes be closed a little later with informed consent. Beyond the window: cleanse, debride, and either leave to heal by secondary intention (small wounds) or pack and arrange DELAYED PRIMARY CLOSURE at 72–96 h. Do not primarily close an old, contaminated, or bite wound to 'tidy it up'."
+      "body": "Primary-closure windows:\n- ~6–8 h for trunk/extremity\n- up to ~12–24 h for the well-vascularized face and scalp\n- a clean wound in a healthy patient can sometimes be closed a little later with informed consent\n\nBeyond the window: cleanse, debride, and either leave to heal by secondary intention (small wounds) or pack and arrange DELAYED PRIMARY CLOSURE at 72–96 h.\n\nDo not primarily close an old, contaminated, or bite wound to 'tidy it up'."
     },
     {
       "id": "f-crush",
@@ -239,22 +244,22 @@
     {
       "id": "s-tendon",
       "type": "warning",
-      "body": "Examine through the full range of motion (a partial laceration can be missed at rest) and against resistance; inspect the wound base with the joint moved through its arc. A confirmed or suspected tendon laceration → refer to hand / orthopedics / plastics. Extensor tendon injuries in zones amenable to it may be repaired in the ED by a trained operator; flexor tendon injuries go to the OR. Splint in the position that offloads the tendon, close the skin, antibiotics if grossly contaminated, and arrange prompt follow-up."
+      "body": "Examine through the full range of motion (a partial laceration can be missed at rest) and against resistance; inspect the wound base with the joint moved through its arc.\n\nA confirmed or suspected tendon laceration → refer to hand / orthopedics / plastics.\n- Extensor tendon injuries in zones amenable to it may be repaired in the ED by a trained operator.\n- Flexor tendon injuries go to the OR.\n\nSplint in the position that offloads the tendon, close the skin, antibiotics if grossly contaminated, and arrange prompt follow-up."
     },
     {
       "id": "s-nerve",
       "type": "warning",
-      "body": "Test two-point discrimination and sensation in the specific nerve's territory BEFORE local anesthetic. A digital-nerve or named-nerve deficit → refer for microsurgical repair (ideally within days). Close the skin, document the exact deficit, and do not obscure the injury with a buried suture near the nerve. A pure neurapraxia from stretch may recover — but that is a diagnosis of exclusion after specialist review."
+      "body": "Test two-point discrimination and sensation in the specific nerve's territory BEFORE local anesthetic.\n\nA digital-nerve or named-nerve deficit → refer for microsurgical repair (ideally within days).\n- Close the skin.\n- Document the exact deficit.\n- Do not obscure the injury with a buried suture near the nerve.\n\nA pure neurapraxia from stretch may recover — but that is a diagnosis of exclusion after specialist review."
     },
     {
       "id": "s-joint",
       "type": "step",
-      "body": "Determine whether the joint capsule is breached — the saline load test (inject sterile saline ± fluorescein into the joint away from the wound and watch for extravasation) or CT for larger joints. A traumatic arthrotomy needs OR washout and IV antibiotics. If the capsule is intact: irrigate, close, splint in the position of function, and re-examine. Any laceration over the MCP from a closed-fist injury is a fight bite until proven otherwise."
+      "body": "Determine whether the joint capsule is breached — the saline load test (inject sterile saline ± fluorescein into the joint away from the wound and watch for extravasation) or CT for larger joints.\n- A traumatic arthrotomy needs OR washout and IV antibiotics.\n- If the capsule is intact: irrigate, close, splint in the position of function, and re-examine.\n\nAny laceration over the MCP from a closed-fist injury is a fight bite until proven otherwise."
     },
     {
       "id": "s-arterial",
       "type": "warning",
-      "body": "Direct pressure first; a tourniquet proximally if pressure fails. Do NOT blindly clamp in the depths of a wound (nerve injury). A named-vessel laceration, an expanding hematoma, a bruit, or any hard sign of vascular injury → vascular / hand surgery and imaging. Small distal bleeders in a well-perfused hand can be controlled with pressure, elevation, and a figure-of-eight or horizontal mattress suture — confirm the digit stays perfused."
+      "body": "Direct pressure first; a tourniquet proximally if pressure fails. Do NOT blindly clamp in the depths of a wound (nerve injury).\n\nA named-vessel laceration, an expanding hematoma, a bruit, or any hard sign of vascular injury → vascular / hand surgery and imaging.\n\nSmall distal bleeders in a well-perfused hand can be controlled with pressure, elevation, and a figure-of-eight or horizontal mattress suture — confirm the digit stays perfused."
     }
   ],
   "checklist": [

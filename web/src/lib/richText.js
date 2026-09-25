@@ -67,12 +67,13 @@ export function isStructured(text) {
 }
 
 /** "LEVEL: rest" -> ["LEVEL:", "rest"] when the lead is an ALL-CAPS label of
-    at most six words; otherwise null. All-caps only, so an ordinary sentence
-    containing a colon is never mistaken for a label. */
+    at most six words; a label alone on its line ("POSITION:") -> ["POSITION:",
+    ""], a sub-header for the list below it. Otherwise null. All-caps only, so
+    an ordinary sentence containing a colon is never mistaken for a label. */
 export function leadLabel(line) {
-  const m = /^([A-Z0-9][A-Z0-9 ,'’()/&+-]{1,48}):\s+(.+)$/s.exec(line);
+  const m = /^([A-Z0-9][A-Z0-9 ,'’()/&+-]{1,48}):(?:\s+(.+))?$/s.exec(line);
   if (!m || !/[A-Z]{2}/.test(m[1]) || m[1].trim().split(/\s+/).length > 6) return null;
-  return [m[1] + ":", m[2]];
+  return [m[1] + ":", m[2] ?? ""];
 }
 
 /** Relative column widths for a table, shared by the header and every row so
