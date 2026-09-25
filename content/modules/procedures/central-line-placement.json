@@ -3,12 +3,43 @@
   "section": "Procedures",
   "category": "Vascular & Thoracic Access",
   "title": "Central Line Placement (CVC)",
-  "settingEmphasis": ["icu", "ed", "or"],
-  "aliases": ["central venous catheter", "CVC insertion", "central line", "IJ line", "subclavian line", "femoral line", "Seldinger technique central access"],
-  "tags": ["central line", "CVC", "vascular access", "Seldinger technique", "ultrasound-guided", "ICU", "ED", "OR", "procedure"],
-  "keywords": ["maximal sterile barrier precautions", "ultrasound-guided internal jugular", "guidewire never forced", "confirm venous not arterial before dilating", "CXR confirms tip position and rules out pneumothorax", "femoral preferred in cardiac arrest", "subclavian lowest infection risk highest pneumothorax risk", "avoid subclavian in dialysis-dependent patients"],
+  "settingEmphasis": [
+    "icu",
+    "ed",
+    "or"
+  ],
+  "aliases": [
+    "central venous catheter",
+    "CVC insertion",
+    "central line",
+    "IJ line",
+    "subclavian line",
+    "femoral line",
+    "Seldinger technique central access"
+  ],
+  "tags": [
+    "central line",
+    "CVC",
+    "vascular access",
+    "Seldinger technique",
+    "ultrasound-guided",
+    "ICU",
+    "ED",
+    "OR",
+    "procedure"
+  ],
+  "keywords": [
+    "maximal sterile barrier precautions",
+    "ultrasound-guided internal jugular",
+    "guidewire never forced",
+    "confirm venous not arterial before dilating",
+    "CXR confirms tip position and rules out pneumothorax",
+    "femoral preferred in cardiac arrest",
+    "subclavian lowest infection risk highest pneumothorax risk",
+    "avoid subclavian in dialysis-dependent patients"
+  ],
   "contentType": "procedure",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-13",
   "next_review_due": "2026-12-13",
   "review_tier": 1,
@@ -19,7 +50,16 @@
     "Troianos CA, et al. Guidelines for performing ultrasound-guided vascular cannulation. J Am Soc Echocardiogr. 2011 (ASA/SCA)."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-13", "change": "Initial entry — a genuine content gap (central line placement had no dedicated module; only passing mentions elsewhere). Sequential workflow: site selection, maximal barrier prep, ultrasound-guided Seldinger technique, confirmation, complications." }
+    {
+      "version": 1,
+      "date": "2026-09-13",
+      "change": "Initial entry — a genuine content gap (central line placement had no dedicated module; only passing mentions elsewhere). Sequential workflow: site selection, maximal barrier prep, ultrasound-guided Seldinger technique, confirmation, complications."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-24",
+      "change": "Added a landmark figure to the ultrasound step: the triangle between the sternal and clavicular heads of sternocleidomastoid on Gray's Anatomy plate 1195 (public domain), with the IJ running lateral to the carotid beneath it. The figure shows where the probe goes first; the card still requires ultrasound confirmation before the needle."
+    }
   ],
   "outputType": "workflow",
   "purpose": "A step-through for ultrasound-guided central venous catheter placement — site selection, maximal sterile barrier technique, the Seldinger sequence, and confirmation — for use as a pre-procedure rehearsal or bedside reference, not a substitute for supervised training on your first attempts.",
@@ -41,7 +81,401 @@
       "id": "identify",
       "type": "step",
       "prompt": "3. Ultrasound identification (non-femoral, and preferred for femoral too)",
-      "body": "Identify the target vein in short axis first: compressible with gentle probe pressure, non-pulsatile, thin-walled, and it fills from a distal squeeze — the artery sits nearby, is round, thick-walled, pulsatile, and does NOT compress with gentle pressure. For an IJ: it typically sits anterolateral to the carotid, at the apex of the triangle between the sternal and clavicular heads of sternocleidomastoid. Confirm vein identity in BOTH short and long axis before the needle goes anywhere near the skin — do not rely on landmarks alone."
+      "body": "Identify the target vein in short axis first: compressible with gentle probe pressure, non-pulsatile, thin-walled, and it fills from a distal squeeze — the artery sits nearby, is round, thick-walled, pulsatile, and does NOT compress with gentle pressure. For an IJ: it typically sits anterolateral to the carotid, at the apex of the triangle between the sternal and clavicular heads of sternocleidomastoid. Confirm vein identity in BOTH short and long axis before the needle goes anywhere near the skin — do not rely on landmarks alone.",
+      "diagram": {
+        "title": "Where the probe goes for an IJ",
+        "caption": "The base of the neck on the patient's LEFT side — the only side this plate shows; the preferred right side is its mirror image. Just above the clavicle the sternal and clavicular heads of sternocleidomastoid part, leaving a small triangle. The internal jugular runs beneath it, lateral to the carotid, which lies medially and deep to the sternal head. Put the probe at the apex, transverse, and find the vein in short axis there. The vessel lines are surface projections drawn by hand on an engraving: the ultrasound image, not this picture, tells you where the vein actually is.",
+        "viewBox": [
+          196,
+          296,
+          146,
+          140
+        ],
+        "image": {
+          "src": "assets/figures/gray1195.png",
+          "width": 531,
+          "height": 500,
+          "credit": "Plate: Henry Vandyke Carter, Gray's Anatomy of the Human Body, 20th ed. (1918), fig. 1195 — public domain. Overlay: Kairos.",
+          "license": "public-domain",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray1195.png",
+          "sha1": "3a7149ddd2a1123123a09d56135cd3dca8e15507"
+        },
+        "shapes": [
+          {
+            "kind": "path",
+            "d": "M 283 316 L 261 381 L 293 373 Z",
+            "fill": "good",
+            "opacity": 0.28
+          },
+          {
+            "kind": "path",
+            "d": "M 283 316 L 261 381 L 293 373 Z",
+            "stroke": "good",
+            "strokeWidth": 1.1
+          },
+          {
+            "kind": "path",
+            "d": "M 266 298 Q 262 330 258 384",
+            "stroke": "danger",
+            "strokeWidth": 1.8,
+            "dash": true
+          },
+          {
+            "kind": "path",
+            "d": "M 300 298 Q 288 322 277 384",
+            "stroke": "vessel",
+            "strokeWidth": 2.2,
+            "dash": true
+          },
+          {
+            "kind": "circle",
+            "at": [
+              283,
+              316
+            ],
+            "r": 2.6,
+            "fill": "good",
+            "stroke": "outline",
+            "strokeWidth": 0.5
+          },
+          {
+            "kind": "rect",
+            "at": [
+              198,
+              298
+            ],
+            "size": [
+              41,
+              9
+            ],
+            "rx": 1.4,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.35
+          },
+          {
+            "kind": "text",
+            "at": [
+              201,
+              304.4
+            ],
+            "text": "patient's LEFT",
+            "fontSize": 4.0,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              198,
+              310
+            ],
+            "size": [
+              56,
+              17
+            ],
+            "rx": 1.4,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.35
+          },
+          {
+            "kind": "text",
+            "at": [
+              201,
+              317
+            ],
+            "text": "APEX",
+            "fontSize": 4.6,
+            "weight": "bold",
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              201,
+              323.6
+            ],
+            "text": "probe goes here first",
+            "fontSize": 4.0,
+            "fill": "text"
+          },
+          {
+            "kind": "line",
+            "from": [
+              254,
+              316
+            ],
+            "to": [
+              280,
+              316
+            ],
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "rect",
+            "at": [
+              198,
+              332
+            ],
+            "size": [
+              56,
+              24
+            ],
+            "rx": 1.4,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.35
+          },
+          {
+            "kind": "text",
+            "at": [
+              201,
+              339
+            ],
+            "text": "TRIANGLE",
+            "fontSize": 4.6,
+            "weight": "bold",
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              201,
+              345.6
+            ],
+            "text": "where the two",
+            "fontSize": 4.0,
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              201,
+              351.6
+            ],
+            "text": "heads part",
+            "fontSize": 4.0,
+            "fill": "text"
+          },
+          {
+            "kind": "line",
+            "from": [
+              254,
+              346
+            ],
+            "to": [
+              272,
+              354
+            ],
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "rect",
+            "at": [
+              198,
+              362
+            ],
+            "size": [
+              44,
+              17
+            ],
+            "rx": 1.4,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.35
+          },
+          {
+            "kind": "text",
+            "at": [
+              201,
+              369
+            ],
+            "text": "CAROTID",
+            "fontSize": 4.6,
+            "weight": "bold",
+            "fill": "danger"
+          },
+          {
+            "kind": "text",
+            "at": [
+              201,
+              375.6
+            ],
+            "text": "medial, deep",
+            "fontSize": 4.0,
+            "fill": "text"
+          },
+          {
+            "kind": "line",
+            "from": [
+              242,
+              370
+            ],
+            "to": [
+              258,
+              372
+            ],
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "rect",
+            "at": [
+              302,
+              352
+            ],
+            "size": [
+              40,
+              17
+            ],
+            "rx": 1.4,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.35
+          },
+          {
+            "kind": "text",
+            "at": [
+              305,
+              359
+            ],
+            "text": "IJ",
+            "fontSize": 4.6,
+            "weight": "bold",
+            "fill": "vessel"
+          },
+          {
+            "kind": "text",
+            "at": [
+              305,
+              365.6
+            ],
+            "text": "lateral to it",
+            "fontSize": 4.0,
+            "fill": "text"
+          },
+          {
+            "kind": "line",
+            "from": [
+              302,
+              358
+            ],
+            "to": [
+              285,
+              346
+            ],
+            "stroke": "outline",
+            "strokeWidth": 0.6
+          },
+          {
+            "kind": "rect",
+            "at": [
+              311,
+              299
+            ],
+            "size": [
+              31,
+              21
+            ],
+            "rx": 1.4,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.35
+          },
+          {
+            "kind": "text",
+            "at": [
+              313.5,
+              305.3
+            ],
+            "text": "Supra-",
+            "fontSize": 4.2,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              313.5,
+              310.6
+            ],
+            "text": "clavicular",
+            "fontSize": 4.2,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              313.5,
+              315.9
+            ],
+            "text": "fossa",
+            "fontSize": 4.2,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              222,
+              418
+            ],
+            "size": [
+              52,
+              14
+            ],
+            "rx": 1.4,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.35
+          },
+          {
+            "kind": "text",
+            "at": [
+              225,
+              427
+            ],
+            "text": "Sternal head",
+            "fontSize": 4.6,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              279,
+              418
+            ],
+            "size": [
+              59,
+              14
+            ],
+            "rx": 1.4,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.35
+          },
+          {
+            "kind": "text",
+            "at": [
+              282,
+              427
+            ],
+            "text": "Clavicular head",
+            "fontSize": 4.6,
+            "weight": "bold",
+            "fill": "text"
+          }
+        ]
+      }
     },
     {
       "id": "needle-wire",
@@ -77,6 +511,11 @@
     "Every lumen aspirated and flushed after placement",
     "CXR (or lung US) obtained for any IJ/subclavian line before first use — tip position AND pneumothorax check"
   ],
-  "crossLinks": ["anesthesia-pocus", "peripheral-iv-vasopressors", "pressor-inotrope-reference", "efast-exam"],
+  "crossLinks": [
+    "anesthesia-pocus",
+    "peripheral-iv-vasopressors",
+    "pressor-inotrope-reference",
+    "efast-exam"
+  ],
   "buildNote": "workflow outputType, sequential (no branching) — site selection is presented as guidance within node 1 rather than a true decision-tree fork, matching the pocus-nerve-block-checklist pattern. Deliberately does not restate vasopressor/fluid dosing (peripheral-iv-vasopressors, pressor-inotrope-reference) or POCUS fundamentals (anesthesia-pocus) already covered elsewhere."
 }

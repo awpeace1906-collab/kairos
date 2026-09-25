@@ -36,7 +36,7 @@
     "confirm with quantitative waveform capnography like any other airway"
   ],
   "contentType": "procedure",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-21",
   "next_review_due": "2026-12-21",
   "review_tier": 1,
@@ -63,6 +63,11 @@
       "version": 3,
       "date": "2026-09-21",
       "change": "Rebuilt against DAS 2025 (Br J Anaesth 2026;136:283-307) and moved into the new CICO & Front-of-Neck Access category as the default adult technique. One substantive correction: v2 taught the DAS 2015 fork — stab incision if the membrane is palpable, vertical incision only if it is not. DAS 2025 deletes that fork and standardizes the midline vertical skin incision in EVERY neck, because palpation is unreliable even in good conditions and a decision point mid-crisis costs time. Equipment is now stated as a fixed set (size 10 blade, bougie, 6.0 cuffed tube) for the same reason. Added the attempt ladder that precedes the declaration, the laryngeal handshake, the ultrasound caveat, a dedicated impalpable-neck step, and an aftercare step."
+    },
+    {
+      "version": 4,
+      "date": "2026-09-24",
+      "change": "Step 3 now shows the landmarks on a real neck: Gray's Anatomy plate 1195 (public domain) with the cricothyroid membrane, the midline, and the thyrohyoid-membrane trap called out in the caption. The schematic moved to step 4, where it shows what it was really about — the vertical skin incision and the transverse stab through the membrane."
     }
   ],
   "outputType": "workflow",
@@ -96,14 +101,312 @@
       "prompt": "3 · Laryngeal handshake, then commit to the midline",
       "body": "Stabilize the larynx with the non-dominant hand and use the LARYNGEAL HANDSHAKE: thumb and middle finger on the upper laryngeal cartilage, slide caudally to feel the thyroid laminae, then the cricoid ring, and identify the cricothyroid membrane as the soft depression between them.\n\nBe honest about how often this fails. Misidentification is common — most of all in women and in patients with obesity — and the handshake is no more successful than plain palpation in pooled data, only slower. THAT IS WHY DAS 2025 NO LONGER ASKS YOU TO DECIDE based on what you can feel. Palpate to orient yourself, then cut regardless.\n\nULTRASOUND: only if a machine is already at the bedside and someone present can use it. It is better than palpation for finding the membrane in difficult anatomy, and it is the right tool BEFORE induction in a patient whose neck you cannot read. It is not something to send for during a CICO.",
       "diagram": {
-        "title": "Cricothyroid membrane — surface landmarks",
+        "title": "Cricothyroid membrane on a real neck",
+        "caption": "The neck is extended, as it would be for the procedure. Coming down the midline you meet two soft gaps. The upper one, between the hyoid and the thyroid cartilage, is the thyrohyoid membrane — the wrong one. The target is the lower gap, between the bottom edge of the thyroid cartilage and the firm cricoid ring. This is a thin male neck with a visible prominence; in women and in patients with obesity these landmarks are far harder to feel, which is why the skin incision is vertical whatever you can palpate. Structure pointers are Gray's own leader lines; the target and midline are placed by hand on the engraving.",
+        "viewBox": [
+          104,
+          125,
+          208,
+          205
+        ],
+        "image": {
+          "src": "assets/figures/gray1195.png",
+          "width": 531,
+          "height": 500,
+          "credit": "Plate: Henry Vandyke Carter, Gray's Anatomy of the Human Body, 20th ed. (1918), fig. 1195 — public domain. Overlay: Kairos.",
+          "license": "public-domain",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray1195.png",
+          "sha1": "3a7149ddd2a1123123a09d56135cd3dca8e15507"
+        },
+        "shapes": [
+          {
+            "kind": "line",
+            "from": [
+              236,
+              203
+            ],
+            "to": [
+              229,
+              330
+            ],
+            "stroke": "muted",
+            "strokeWidth": 0.9,
+            "dash": true,
+            "opacity": 0.85
+          },
+          {
+            "kind": "ellipse",
+            "at": [
+              232,
+              278.5
+            ],
+            "rx": 9,
+            "ry": 4.5,
+            "fill": "good",
+            "opacity": 0.35
+          },
+          {
+            "kind": "ellipse",
+            "at": [
+              232,
+              278.5
+            ],
+            "rx": 9,
+            "ry": 4.5,
+            "stroke": "good",
+            "strokeWidth": 1.3
+          },
+          {
+            "kind": "line",
+            "from": [
+              214,
+              279.5
+            ],
+            "to": [
+              223,
+              279
+            ],
+            "stroke": "good",
+            "strokeWidth": 0.9
+          },
+          {
+            "kind": "rect",
+            "at": [
+              152,
+              269
+            ],
+            "size": [
+              62,
+              20
+            ],
+            "rx": 1.6,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.4
+          },
+          {
+            "kind": "text",
+            "at": [
+              155,
+              277
+            ],
+            "text": "TARGET",
+            "fontSize": 6,
+            "weight": "bold",
+            "fill": "good"
+          },
+          {
+            "kind": "text",
+            "at": [
+              155,
+              284.8
+            ],
+            "text": "cricothyroid membrane",
+            "fontSize": 5.2,
+            "fill": "text"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              245,
+              174
+            ],
+            "size": [
+              67,
+              34
+            ],
+            "rx": 1.6,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.4
+          },
+          {
+            "kind": "text",
+            "at": [
+              248.5,
+              188.5
+            ],
+            "text": "floor of mouth",
+            "fontSize": 5.2,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              248.5,
+              196.5
+            ],
+            "text": "digastric, mylohyoid",
+            "fontSize": 5.2,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              250,
+              219
+            ],
+            "size": [
+              62,
+              13
+            ],
+            "rx": 1.6,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.4
+          },
+          {
+            "kind": "text",
+            "at": [
+              253.5,
+              227.8
+            ],
+            "text": "Hyoid bone",
+            "fontSize": 6,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              250,
+              245.5
+            ],
+            "size": [
+              62,
+              21
+            ],
+            "rx": 1.6,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.4
+          },
+          {
+            "kind": "text",
+            "at": [
+              253.5,
+              254
+            ],
+            "text": "Thyroid cartilage",
+            "fontSize": 6,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              253.5,
+              261.8
+            ],
+            "text": "laryngeal prominence",
+            "fontSize": 5.2,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              250,
+              268
+            ],
+            "size": [
+              62,
+              33
+            ],
+            "rx": 1.6,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.4
+          },
+          {
+            "kind": "text",
+            "at": [
+              253.5,
+              276.5
+            ],
+            "text": "Cricoid cartilage",
+            "fontSize": 6,
+            "weight": "bold",
+            "fill": "text"
+          },
+          {
+            "kind": "text",
+            "at": [
+              253.5,
+              284.3
+            ],
+            "text": "the firm, complete",
+            "fontSize": 5.2,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              253.5,
+              290.8
+            ],
+            "text": "ring just below",
+            "fontSize": 5.2,
+            "fill": "muted"
+          },
+          {
+            "kind": "text",
+            "at": [
+              253.5,
+              297.3
+            ],
+            "text": "the target",
+            "fontSize": 5.2,
+            "fill": "muted"
+          },
+          {
+            "kind": "rect",
+            "at": [
+              234,
+              313
+            ],
+            "size": [
+              36,
+              11
+            ],
+            "rx": 1.6,
+            "fill": "surface",
+            "opacity": 0.92,
+            "stroke": "outline",
+            "strokeWidth": 0.4
+          },
+          {
+            "kind": "text",
+            "at": [
+              237,
+              320.8
+            ],
+            "text": "MIDLINE",
+            "fontSize": 5.6,
+            "weight": "bold",
+            "fill": "muted"
+          }
+        ]
+      }
+    },
+    {
+      "id": "incise",
+      "type": "step",
+      "prompt": "4 · Vertical skin incision — in every neck",
+      "body": "Make a MIDLINE VERTICAL skin incision up to 8 cm long, cutting from caudad to cephalad (bottom to top). Go deep — through skin and subcutaneous tissue in one confident pass. Blood will obscure the field; that is expected and is not a reason to stop.\n\nTHIS IS THE CHANGE FROM DAS 2015, and it is worth knowing why you are doing it differently from how you may have been taught. The 2015 guideline asked you to choose: a transverse stab if you could feel the membrane, a vertical incision if you could not. DAS 2025 deletes the choice and makes vertical the standard for palpable and impalpable necks alike, for three reasons — palpation is unreliable even in controlled conditions, a decision point in the middle of a crisis slows you down, and a vertical incision exposes more of the airway either way. It also runs with the midline vessels rather than across them.\n\nThen make a TRANSVERSE stab through the cricothyroid membrane itself, rotate the blade so the sharp edge faces caudally, and hold it there. The size 10 blade is chosen to limit damage to the posterior tracheal wall.",
+      "diagram": {
+        "title": "Vertical through the skin, transverse through the membrane",
         "viewBox": [
           0,
           0,
           336,
           230
         ],
-        "caption": "Palpate down the midline from the laryngeal prominence: the first soft gap below the thyroid cartilage is the cricothyroid membrane, bounded below by the solid cricoid ring. In an obese or edematous neck this gap is not visible — a generous VERTICAL skin incision lets you find it by feel rather than by sight.",
+        "caption": "Two cuts in two directions. The skin incision is vertical, in the midline, cut from bottom to top and long enough to admit a finger — it runs with the midline vessels rather than across them and exposes the airway whether or not you could feel the membrane. The membrane itself takes a transverse stab, then the blade is rotated so its sharp edge faces caudally.",
         "shapes": [
           {
             "kind": "path",
@@ -168,8 +471,8 @@
               20
             ],
             "rx": 3,
-            "fill": "danger",
-            "stroke": "danger",
+            "fill": "good",
+            "stroke": "good",
             "strokeWidth": 1.4,
             "opacity": 0.85
           },
@@ -182,7 +485,7 @@
             "text": "Cricothyroid",
             "fontSize": 10,
             "weight": "bold",
-            "fill": "danger"
+            "fill": "good"
           },
           {
             "kind": "text",
@@ -193,7 +496,7 @@
             "text": "membrane — TARGET",
             "fontSize": 9,
             "weight": "bold",
-            "fill": "danger"
+            "fill": "good"
           },
           {
             "kind": "path",
@@ -330,7 +633,7 @@
               96,
               140
             ],
-            "text": "horizontal stab",
+            "text": "transverse stab",
             "fontSize": 10,
             "anchor": "end",
             "weight": "bold",
@@ -362,12 +665,6 @@
           }
         ]
       }
-    },
-    {
-      "id": "incise",
-      "type": "step",
-      "prompt": "4 · Vertical skin incision — in every neck",
-      "body": "Make a MIDLINE VERTICAL skin incision up to 8 cm long, cutting from caudad to cephalad (bottom to top). Go deep — through skin and subcutaneous tissue in one confident pass. Blood will obscure the field; that is expected and is not a reason to stop.\n\nTHIS IS THE CHANGE FROM DAS 2015, and it is worth knowing why you are doing it differently from how you may have been taught. The 2015 guideline asked you to choose: a transverse stab if you could feel the membrane, a vertical incision if you could not. DAS 2025 deletes the choice and makes vertical the standard for palpable and impalpable necks alike, for three reasons — palpation is unreliable even in controlled conditions, a decision point in the middle of a crisis slows you down, and a vertical incision exposes more of the airway either way. It also runs with the midline vessels rather than across them.\n\nThen make a TRANSVERSE stab through the cricothyroid membrane itself, rotate the blade so the sharp edge faces caudally, and hold it there. The size 10 blade is chosen to limit damage to the posterior tracheal wall."
     },
     {
       "id": "impalpable",

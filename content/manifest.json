@@ -2238,8 +2238,8 @@
       "next_review_due": "2026-12-21"
     },
     "procedures/central-line-placement": {
-      "content_version": 1,
-      "hash": "38187b9bc126d949",
+      "content_version": 2,
+      "hash": "f4b4745134196b5b",
       "path": "modules/procedures/central-line-placement.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2256,8 +2256,8 @@
       "next_review_due": "2026-12-21"
     },
     "procedures/cricothyroidotomy": {
-      "content_version": 3,
-      "hash": "cc3e48d0f1019e8d",
+      "content_version": 4,
+      "hash": "78adc2f92bb57076",
       "path": "modules/procedures/cricothyroidotomy.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -3957,6 +3957,10 @@
     }
   },
   "assets": {
+    "assets/figures/gray1195.png": {
+      "sha1": "3a7149ddd2a1123123a09d56135cd3dca8e15507",
+      "bytes": 122629
+    },
     "assets/figures/gray1215.png": {
       "sha1": "539890420519d1a54975ccc2363ae7b66d193dea",
       "bytes": 87700
