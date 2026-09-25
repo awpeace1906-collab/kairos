@@ -128,6 +128,10 @@ struct AcknowledgmentsView: View {
                 Text("IBM Plex Sans and IBM Plex Mono, © IBM Corporation, licensed under the SIL Open Font License 1.1.")
                     .font(Theme.footnote).foregroundStyle(.secondary)
 
+                Text("Anatomical illustrations").font(Theme.title3).padding(.top, 6)
+                Text("Several procedure figures are drawn over plates from Henry Gray’s *Anatomy of the Human Body* (20th edition, 1918, revised by Warren H. Lewis), illustrated by Henry Vandyke Carter and made freely available through Bartleby.com and Wikimedia Commons. The plates are in the public domain, and we credit them anyway, with gratitude: more than 160 years after Carter first drew them, they are still teaching people where to put the needle.")
+                    .font(Theme.footnote).foregroundStyle(.secondary)
+
                 Text("Companion apps").font(Theme.title3).padding(.top, 6)
                 Text("Kairos is built alongside AnesCalc (anesthesia calculators), CRISIS (crisis protocols & envenomation), and TEE Compass — with a POCUS guide in the works — focused tools rather than one app that tries to do everything.")
                     .font(Theme.footnote).foregroundStyle(.secondary)
