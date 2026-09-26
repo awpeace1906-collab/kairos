@@ -11,8 +11,15 @@ log below for current state. The **Progress log** further down is an
 append-only chronological record; trust it over any summary above it for
 "what happened when."
 
-## ▶ NEXT SESSION — start here (2026-09-23)
-State: **431 modules**, pipeline green (validate 431/0, build/sync/test
+## ▶ NEXT SESSION — start here (updated 2026-09-26)
+State: **441 modules**, pipeline green (validate 441/0, test 355/0), iOS unit
+tests 27/27 and UI tests green, all three CI workflows green. Latest work: EKG
+Axis Interpreter (first `engine: "builtin"` calculator), structured prose and
+phone-safe tables, Gray's plate overlays, pericardiocentesis angle set to
+about 30°. Remaining EKG axis items (peds upper age cutoff, sex-specific
+QRS-T cutoffs, ± on a real iPhone) are under "Design decisions open".
+
+Older state note (2026-09-23), kept for history — **431 modules**, pipeline green (validate 431/0, build/sync/test
 281/0), iOS `TEST SUCCEEDED` (10/10 EngineTests). The original 2026-09-14
 content audit closed at Batch 5 (384 modules). The **fresh follow-up gap
 audit** (4 parallel domain agents, 2026-09-15) that found 49 genuine,
@@ -2531,16 +2538,17 @@ concentrations` would naturally fit there but is filed elsewhere.
     limits are sex-specific. Consider adding a sex input.
   - ~~Verify the Finnish QRS-T cohort citation~~ — done 2026-09-26 (Aro 2012,
     Europace 14(6):872-876).
-  - **LPFB criteria** were transcribed from AHA/ACCF/HRS 2009 Part III —
-    spot-check against the primary document before release.
+  - ~~**LPFB criteria** spot-check~~ — done 2026-09-26 against the
+    Circulation text of AHA/ACCF/HRS 2009 Part III. LAFB matched verbatim.
+    LPFB had a fifth item ("other causes of RAD excluded") that the 2009
+    document does not list; it moved to the caveat, credited to LITFL, and
+    the pediatric caveat now says "up to 16 years" as the source does.
   - **± toggle on a real iPhone** — the handoff's most likely real-world
     failure; verified in the simulator and at phone width on the web, not yet
     on a device.
-  - **3-Lead I+ / II− / aVF− reads as "range crosses a category boundary"**
-    (−89° to −31° spans borderline and marked LAD) rather than "pathological
-    LAD" — correct per the engine, but the teaching point of lead II is that
-    this pattern IS pathological LAD. Consider a content-level note for that
-    case; the engine was deliberately not changed.
+  - ~~**3-Lead I+ / II− / aVF− teaching note**~~ — done 2026-09-26 as a
+    content-level note in the 3-Lead help text (pathological LAD; the range
+    spans the borderline and marked bands, both LAD). Engine unchanged.
 - [x] **Tier 5 — color/font scheme — fully done.** "Ink & Ember on Parchment"
   is shipped everywhere (`docs/PALETTES.md` has the token table); IBM Plex
   Sans/Mono are self-hosted on both clients (the "still falls back to system

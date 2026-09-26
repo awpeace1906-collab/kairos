@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 985,
+  "count": 986,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -9318,6 +9318,18 @@
           "title": "Drug Interactions — Nine High-Yield Pairs",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/drug-interactions-high-yield"
+        }
+      ]
+    },
+    {
+      "text": "Larkin J, Buttner R. Left Posterior Fascicular Block (LPFB). LITFL ECG Library. https://litfl.com/left-posterior-fascicular-block-lpfb-ecg-library/ (exclude other causes of right axis deviation before diagnosing LPFB)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ekg-axis-interpreter",
+          "title": "EKG Axis Interpreter",
+          "section": "Calculators",
+          "route": "/calculators/cardiovascular-chest-pain-arrhythmia/ekg-axis-interpreter"
         }
       ]
     },

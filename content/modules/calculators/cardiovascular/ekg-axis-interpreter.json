@@ -54,7 +54,7 @@
     "dextrocardia"
   ],
   "contentType": "calculator",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-26",
   "next_review_due": "2026-12-26",
   "review_tier": 1,
@@ -64,13 +64,19 @@
     "Surawicz B, et al. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram, Part III: intraventricular conduction disturbances. J Am Coll Cardiol. 2009;53(11):976-981. doi:10.1016/j.jacc.2008.12.013 (LAFB and LPFB criteria)",
     "Aro AL, Huikuri HV, Tikkanen JT, et al. QRS-T angle as a predictor of sudden cardiac death in a middle-aged general population. Europace. 2012;14(6):872-876 (QRS-T angle ≥100° and arrhythmic death, driven mainly by abnormal T axis)",
     "Walsh JA 3rd, et al. Prognostic value of frontal QRS-T angle in patients without clinical evidence of cardiovascular disease (from the Multi-Ethnic Study of Atherosclerosis). Am J Cardiol. 2013;112:1880-1884 (approximate QRS-T angle bands)",
-    "Otake S, et al. Clinical utility of the electrocardiographic P-wave axis in patients with chronic obstructive pulmonary disease. Respiration. 2022;101(4):345-352 (P axis >75° definition and COPD association)"
+    "Otake S, et al. Clinical utility of the electrocardiographic P-wave axis in patients with chronic obstructive pulmonary disease. Respiration. 2022;101(4):345-352 (P axis >75° definition and COPD association)",
+    "Larkin J, Buttner R. Left Posterior Fascicular Block (LPFB). LITFL ECG Library. https://litfl.com/left-posterior-fascicular-block-lpfb-ecg-library/ (exclude other causes of right axis deviation before diagnosing LPFB)"
   ],
   "changelog": [
     {
       "version": 1,
       "date": "2026-09-26",
       "change": "Initial entry. Five input modes — machine P-R-T axes (default), quadrant, 3-lead, isoelectric lead, and precise amplitudes — with adult and age-banded pediatric normals, a QRS-T angle, lead-reversal detection, fascicular-block checklists, and differentials. Engine parity-tested on web and iOS against 46 shared golden vectors."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-26",
+      "change": "LPFB checklist matched to the AHA/ACCF/HRS 2009 Part III text: four criteria, with the children-up-to-16 axis caveat. \"Other causes of RAD excluded\" moved from the criteria to the caveat and credited to LITFL, since the 2009 document does not list it. LAFB checked and unchanged. 3-Lead help now explains that I+, II−, aVF− is pathological left axis deviation even though the result shows a range across the borderline and marked bands."
     }
   ],
   "engine": "builtin",
@@ -99,7 +105,7 @@
         "id": "three_lead",
         "engineMode": "polarity",
         "label": "3-Lead (I, II, aVF)",
-        "help": "Adding lead II separates physiologic from pathologic left axis.",
+        "help": "Adding lead II separates physiologic from pathologic left axis. With I positive and aVF negative, a negative lead II puts the axis beyond −30°: pathological left axis deviation. The result shows that as a range across the borderline (−31° to −44°) and marked (−45° to −90°) bands, and both are left axis deviation.",
         "leads": [
           "I",
           "II",
@@ -311,10 +317,9 @@
           "Frontal axis +90° to +180° (adults)",
           "rS pattern in I and aVL",
           "qR pattern in III and aVF",
-          "QRS duration <120 ms",
-          "Other causes of RAD excluded"
+          "QRS duration <120 ms"
         ],
-        "caveat": "In children, apply only when a distinct rightward shift from a prior ECG is documented."
+        "caveat": "In children up to 16 years, apply the axis criterion only when a distinct rightward shift from a prior ECG is documented. Diagnose LPFB only after excluding other causes of right axis deviation, such as right ventricular hypertrophy (LITFL)."
       }
     },
     "differentials": {
