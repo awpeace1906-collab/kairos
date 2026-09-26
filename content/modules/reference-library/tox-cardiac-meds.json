@@ -39,7 +39,7 @@
     "refractory shock vasopressors pacing ECMO calcium glucagon atropine"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -56,11 +56,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — digoxin / cardiac glycoside, beta-blocker, calcium-channel-blocker, and clonidine / central alpha-2 agonist poisoning, with the antidote decisions (digoxin-Fab, glucagon, high-dose insulin euglycemia, lipid emulsion) and the refractory-shock ladder. Complements the quick recognition table in `toxidromes-and-overdoses`."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Four ways a cardiac drug kills, and the antidote decision for each: digoxin (immune Fab, gated by potassium and dysrhythmia), beta-blocker (glucagon, then high-dose insulin), calcium-channel blocker (high-dose insulin euglycemia is the workhorse; preserved sensorium and hyperglycemia are the tells), and clonidine (largely supportive, opioid-like picture). Lipid emulsion and mechanical support are the shared rescue tier.",
-  "whyThisMatters": "These overdoses present as undifferentiated bradycardia and shock, and the treatments diverge sharply — calcium is antidotal in CCB poisoning but relatively contraindicated in digoxin toxicity; glucagon helps beta-blocker but not CCB much; and the single highest-yield intervention for severe CCB or beta-blocker shock, high-dose insulin euglycemia, is still underused and started too late. Naming which drug you are treating, and reaching for the right antidote early, is the difference between a titratable ICU course and refractory arrest.",
-  "clinicalTakeaway": "For any toxicologic bradycardia + hypotension: atropine, fluids, and calcium as first moves while you identify the agent. Digoxin — give digoxin-specific antibody (Fab) for a potassium > 5 mEq/L, a life-threatening dysrhythmia, or a known massive acute ingestion; avoid IV calcium if you can. Beta-blocker — glucagon bolus + infusion, then high-dose insulin euglycemia therapy (HIET) and vasopressors; consider lipid emulsion for a lipophilic agent (propranolol) with a wide QRS. Calcium-channel blocker — calcium salts plus HIET early (1 unit/kg regular insulin bolus, then 0.5-1 unit/kg/h titrated up, with dextrose and close glucose/potassium monitoring); vasopressors, then transvenous pacing or ECMO for refractory shock. Clonidine — supportive care, atropine for bradycardia, vasopressors for hypotension; a naloxone trial is reasonable but response is inconsistent.",
+  "whyThisMatters": "These overdoses present as undifferentiated bradycardia and shock, and the treatments diverge sharply:\n- calcium is antidotal in CCB poisoning but relatively contraindicated in digoxin toxicity\n- glucagon helps beta-blocker but not CCB much\n- the single highest-yield intervention for severe CCB or beta-blocker shock, high-dose insulin euglycemia, is still underused and started too late\n\nNaming which drug you are treating, and reaching for the right antidote early, is the difference between a titratable ICU course and refractory arrest.",
+  "clinicalTakeaway": "For any toxicologic bradycardia + hypotension: atropine, fluids, and calcium as first moves while you identify the agent.\n\nDIGOXIN: give digoxin-specific antibody (Fab) for a potassium > 5 mEq/L, a life-threatening dysrhythmia, or a known massive acute ingestion; avoid IV calcium if you can.\n\nBETA-BLOCKER: glucagon bolus + infusion, then high-dose insulin euglycemia therapy (HIET) and vasopressors; consider lipid emulsion for a lipophilic agent (propranolol) with a wide QRS.\n\nCALCIUM-CHANNEL BLOCKER: calcium salts plus HIET early (1 unit/kg regular insulin bolus, then 0.5-1 unit/kg/h titrated up, with dextrose and close glucose/potassium monitoring); vasopressors, then transvenous pacing or ECMO for refractory shock.\n\nCLONIDINE: supportive care, atropine for bradycardia, vasopressors for hypotension; a naloxone trial is reasonable but response is inconsistent.",
   "body": [
     {
       "type": "callout",

@@ -40,7 +40,7 @@
     "cyproheptadine serotonin syndrome"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -57,11 +57,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — lithium (acute vs chronic, dialysis criteria, SILENT), antipsychotic toxicity and neuroleptic malignant syndrome (with the NMS-vs-serotonin-syndrome contrast), SSRI/SNRI overdose and serotonin syndrome, and bupropion (delayed seizures, non-sodium-channel QRS widening). Lateral expansion flagged by the CV Intoxicating Substances Reference."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Lithium's danger is its narrow window and that a lower level can be sicker (chronic) than a higher one (acute) — and it is one of the few ingestions where dialysis is genuinely indicated. Antipsychotic toxicity is mostly supportive, but neuroleptic malignant syndrome must be separated from serotonin syndrome. Most SSRI overdoses are benign; the exceptions are QT (citalopram) and bupropion (delayed seizures).",
   "whyThisMatters": "Two look-alike hyperthermic rigidity syndromes — NMS and serotonin syndrome — need opposite mental framing (dopamine blockade building over days vs serotonin excess over hours), and getting the wrong one delays the right treatment. Lithium is repeatedly under-dialyzed because the level looks 'not that high' in a chronically toxic patient who is actually encephalopathic. And bupropion is the antidepressant that still kills, through seizures that can arrive many hours after a reassuring initial presentation, especially with the XL formulation.",
-  "clinicalTakeaway": "Lithium: distinguish acute (GI-predominant, higher level tolerated) from chronic (neurotoxic — tremor, ataxia, clonus, confusion — at a lower level), give aggressive isotonic fluids, stop the lithium and any ACE-I/ARB/NSAID/thiazide, and consult nephrology for hemodialysis if the level is > 4 mEq/L, or > 2.5 with severe symptoms or renal failure, or the patient can't clear it — expect rebound and recheck levels. NMS vs serotonin syndrome: NMS is lead-pipe rigidity with hyporeflexia and bradykinesia evolving over days on a dopamine antagonist; serotonin syndrome is lower-limb-predominant clonus and hyperreflexia over hours on a serotonergic agent. Both: stop the drug, benzodiazepines, aggressive cooling; add cyproheptadine for serotonin syndrome, dantrolene ± bromocriptine for severe NMS. SSRI/SNRI overdose: usually supportive; get an ECG for citalopram/escitalopram (QT) and watch for serotonin syndrome with co-ingestants. Bupropion: cardiac monitoring and an extended observation window (up to 24 h for XL) for delayed seizures — treat seizures with benzodiazepines, a wide QRS with supportive care (bicarbonate is largely ineffective — the mechanism is gap-junction, not sodium-channel).",
+  "clinicalTakeaway": "LITHIUM: distinguish acute (GI-predominant, higher level tolerated) from chronic (neurotoxic — tremor, ataxia, clonus, confusion — at a lower level).\n- Give aggressive isotonic fluids.\n- Stop the lithium and any ACE-I/ARB/NSAID/thiazide.\n- Consult nephrology for hemodialysis if the level is > 4 mEq/L, or > 2.5 with severe symptoms or renal failure, or the patient can't clear it — expect rebound and recheck levels.\n\nNMS VS SEROTONIN SYNDROME:\n- NMS is lead-pipe rigidity with hyporeflexia and bradykinesia evolving over days on a dopamine antagonist.\n- Serotonin syndrome is lower-limb-predominant clonus and hyperreflexia over hours on a serotonergic agent.\n- Both: stop the drug, benzodiazepines, aggressive cooling; add cyproheptadine for serotonin syndrome, dantrolene ± bromocriptine for severe NMS.\n\nSSRI/SNRI OVERDOSE: usually supportive; get an ECG for citalopram/escitalopram (QT) and watch for serotonin syndrome with co-ingestants.\n\nBUPROPION: cardiac monitoring and an extended observation window (up to 24 h for XL) for delayed seizures — treat seizures with benzodiazepines, a wide QRS with supportive care (bicarbonate is largely ineffective — the mechanism is gap-junction, not sodium-channel).",
   "body": [
     {
       "type": "heading",

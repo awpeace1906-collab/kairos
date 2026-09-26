@@ -41,7 +41,7 @@
     "resolution glucose under 200 and two of bicarbonate 15 pH 7.3 anion gap 12 overlap subcutaneous insulin"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-08",
   "next_review_due": "2027-03-08",
   "review_tier": 2,
@@ -56,11 +56,16 @@
       "version": 1,
       "date": "2026-09-08",
       "change": "Initial entry — adult DKA/HHS diagnostic criteria, severity grading, the fluid / potassium / insulin sequence, adjuncts (bicarbonate, phosphate), euglycemic DKA, resolution and IV-to-SC transition. Adult counterpart to peds-dka-management (cross-linked)."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Fluids first, then potassium, then insulin — in that order. DKA is an insulin-deficiency + ketoacid problem (fix the gap); HHS is a profound free-water deficit with little ketosis (fluid does most of the work, insulin is gentler). The number that kills is potassium: check it before the first unit of insulin, and never run insulin with a K < 3.3 mEq/L.",
   "whyThisMatters": "Both present as sick, dry, hyperglycemic patients, and the reflex — a big insulin bolus — is exactly wrong until you have a potassium and a liter of saline running. Insulin drives K intracellularly; a normal or low serum K at presentation is already a large total-body deficit, and pushing insulin into it causes the arrhythmia that turns a treatable metabolic emergency into an arrest. The other trap is stopping too early: normalizing the glucose is not the endpoint — the anion gap (DKA) or the osmolality and mental status (HHS) are.",
-  "clinicalTakeaway": "Start 0.9% saline ~15-20 mL/kg (about 1 L) in the first hour while the labs run. Check potassium immediately: K < 3.3 → hold insulin and replace K 10-20 mEq/h until ≥ 3.3; K 3.3-5.2 → add 20-30 mEq K to each liter and keep it 4-5; K > 5.2 → insulin without added K, recheck in 2 h. Then regular insulin 0.1 unit/kg/h IV (a 0.1 unit/kg bolus is optional; skip it and use 0.14 unit/kg/h if you prefer). Add dextrose to the fluids once glucose falls below ~200 mg/dL (DKA) or ~250-300 (HHS) and keep the insulin running until the anion gap has closed / β-hydroxybutyrate < 0.6 mmol/L — then overlap subcutaneous insulin by 1-2 h before stopping the drip. Give bicarbonate only for a pH < 6.9. Always look for and treat the precipitant.",
+  "clinicalTakeaway": "1. Start 0.9% saline ~15-20 mL/kg (about 1 L) in the first hour while the labs run.\n2. Check potassium immediately:\n  - K < 3.3 → hold insulin and replace K 10-20 mEq/h until ≥ 3.3\n  - K 3.3-5.2 → add 20-30 mEq K to each liter and keep it 4-5\n  - K > 5.2 → insulin without added K, recheck in 2 h\n3. Then regular insulin 0.1 unit/kg/h IV (a 0.1 unit/kg bolus is optional; skip it and use 0.14 unit/kg/h if you prefer).\n4. Add dextrose to the fluids once glucose falls below ~200 mg/dL (DKA) or ~250-300 (HHS) and keep the insulin running until the anion gap has closed / β-hydroxybutyrate < 0.6 mmol/L.\n5. Then overlap subcutaneous insulin by 1-2 h before stopping the drip.\n\nGive bicarbonate only for a pH < 6.9.\n\nAlways look for and treat the precipitant.",
   "body": [
     {
       "type": "heading",

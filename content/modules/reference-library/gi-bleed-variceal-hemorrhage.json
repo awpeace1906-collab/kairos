@@ -3,12 +3,34 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "GI Bleed & Variceal Hemorrhage Management",
-  "settingEmphasis": ["ed", "icu"],
-  "aliases": ["upper GI bleed", "variceal bleeding", "octreotide GI bleed", "balloon tamponade", "TIPS bridge"],
-  "tags": ["GI bleed", "variceal hemorrhage", "cirrhosis", "octreotide", "balloon tamponade", "ED", "ICU"],
-  "keywords": ["restrictive transfusion target hemoglobin 7, do not overtransfuse in variceal bleeding specifically since it can raise portal pressure and worsen bleeding", "variceal bleed gets octreotide plus antibiotics plus endoscopic banding within 12 hours, all three not just one", "antibiotics in cirrhotic GI bleed reduce mortality independent of the bleeding source", "balloon tamponade is a temporizing bridge only, not definitive, for refractory bleeding awaiting TIPS or endoscopy"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "upper GI bleed",
+    "variceal bleeding",
+    "octreotide GI bleed",
+    "balloon tamponade",
+    "TIPS bridge"
+  ],
+  "tags": [
+    "GI bleed",
+    "variceal hemorrhage",
+    "cirrhosis",
+    "octreotide",
+    "balloon tamponade",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "restrictive transfusion target hemoglobin 7, do not overtransfuse in variceal bleeding specifically since it can raise portal pressure and worsen bleeding",
+    "variceal bleed gets octreotide plus antibiotics plus endoscopic banding within 12 hours, all three not just one",
+    "antibiotics in cirrhotic GI bleed reduce mortality independent of the bleeding source",
+    "balloon tamponade is a temporizing bridge only, not definitive, for refractory bleeding awaiting TIPS or endoscopy"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,7 +40,16 @@
     "Restrictive transfusion threshold (Villanueva NEJM 2013) and the antibiotic-mortality-benefit point WebSearch-verified before writing — this module builds on the scoring tools (Glasgow-Blatchford etc.) and blood-products/anticoagulation-reversal content already in Kairos rather than duplicating them."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4). The risk-stratification scores (Glasgow-Blatchford, Rockall, etc.) already exist as calculators in Kairos — this module is the narrative MANAGEMENT companion those calculators lacked, per the audit's own framing of the gap." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4). The risk-stratification scores (Glasgow-Blatchford, Rockall, etc.) already exist as calculators in Kairos — this module is the narrative MANAGEMENT companion those calculators lacked, per the audit's own framing of the gap."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "Non-variceal and variceal upper GI bleeds are managed differently in several important ways — variceal bleeding specifically needs three concurrent therapies (not sequential trial-and-error), a restrictive transfusion target that's easy to over-shoot out of habit, and balloon tamponade is a bridge, never a destination.",
   "whyThisMatters": "In known or suspected variceal hemorrhage, transfusing to a normal hemoglobin can actively worsen bleeding by raising portal pressure — the instinct to 'give more blood to a bleeding patient' is exactly backwards here, and it's one of the more counterintuitive, easy-to-get-wrong management points in emergency/critical care.",
@@ -58,7 +89,7 @@
     },
     {
       "type": "text",
-      "text": "For life-threatening variceal hemorrhage refractory to the above, uncontrolled by endoscopy, or when endoscopy/interventional radiology isn't immediately available, balloon tamponade (e.g. a Sengstaken-Blakemore or Minnesota tube) can temporarily control bleeding by direct compression. This is explicitly temporizing — rebleeding is common once deflated, and prolonged inflation risks esophageal/gastric mucosal ischemia and perforation. Use it as a bridge to definitive therapy (repeat endoscopy, or TIPS — transjugular intrahepatic portosystemic shunt — for genuinely refractory bleeding), with a clear plan for what happens next, not as an endpoint."
+      "text": "Balloon tamponade (e.g. a Sengstaken-Blakemore or Minnesota tube) can temporarily control bleeding by direct compression, for life-threatening variceal hemorrhage:\n- refractory to the above\n- uncontrolled by endoscopy\n- or when endoscopy/interventional radiology isn't immediately available\n\nThis is explicitly temporizing — rebleeding is common once deflated, and prolonged inflation risks esophageal/gastric mucosal ischemia and perforation.\n\nUse it as a bridge to definitive therapy (repeat endoscopy, or TIPS — transjugular intrahepatic portosystemic shunt — for genuinely refractory bleeding), with a clear plan for what happens next, not as an endpoint."
     },
     {
       "type": "heading",
@@ -74,6 +105,11 @@
       ]
     }
   ],
-  "related": ["blood-products", "anticoagulation-reversal", "meld-na", "iv-fluids"],
+  "related": [
+    "blood-products",
+    "anticoagulation-reversal",
+    "meld-na",
+    "iv-fluids"
+  ],
   "buildNote": "Deliberately narrative/management-focused, complementing the existing risk-stratification calculators (Glasgow-Blatchford, Rockall, etc. — check Calculators/GI-Renal-Metabolic) rather than restating their scoring logic. The restrictive-transfusion-worsens-variceal-bleeding mechanism is stated explicitly since it's the single most counterintuitive, most likely-to-be-gotten-wrong point in this content."
 }

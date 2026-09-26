@@ -45,7 +45,7 @@
     "renal perfusion pressure MAP minus CVP"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -62,10 +62,15 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — venous congestion physiology, the VExUS grading system (waveforms + grades + confounders), the ROSE four-phase fluid model, and a bedside de-resuscitation approach with its evidence base."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Once shock has resolved, a large positive fluid balance is its own injury — congestive nephropathy, hepatopathy, gut and lung edema. VExUS grades the congestion with three Doppler waveforms behind a dilated IVC; de-resuscitation (the 'E' of ROSE) is the protocolized removal of that fluid once the patient no longer needs it.",
-  "whyThisMatters": "Fluid given in the first hours of shock saves lives; the same fluid still on board days later, after perfusion has been restored, independently predicts death in sepsis and ARDS. The resuscitation phase and the de-resuscitation phase are opposite tasks, and the transition between them is routinely missed — the patient stays net-positive on maintenance fluids, drug diluents and nutrition while nobody owns the fluid balance. VExUS gives an objective read on whether the venous side is congested; de-resuscitation is the deliberate correction.",
+  "whyThisMatters": "Fluid given in the first hours of shock saves lives; the same fluid still on board days later, after perfusion has been restored, independently predicts death in sepsis and ARDS.\n\nThe resuscitation phase and the de-resuscitation phase are opposite tasks, and the transition between them is routinely missed — the patient stays net-positive on maintenance fluids, drug diluents and nutrition while nobody owns the fluid balance.\n\nVExUS gives an objective read on whether the venous side is congested; de-resuscitation is the deliberate correction.",
   "clinicalTakeaway": "Track a running fluid balance on every ICU patient and name which fluid phase they are in. Once shock has resolved — off or weaning vasopressors, lactate cleared, perfusion adequate — set a negative daily balance target and diurese to it, using VExUS grade 2-3 or a plethoric IVC as supporting evidence of congestion. Stop escalating diuresis the moment perfusion suffers (rising lactate, falling output, hypernatremia): over-diuresis is real harm, not a lesser evil.",
   "body": [
     {
@@ -75,7 +80,7 @@
     },
     {
       "type": "text",
-      "text": "Organs are perfused by a pressure gradient, not by inflow alone. Renal perfusion pressure ≈ MAP − central venous (renal vein) pressure, so a rising CVP lowers perfusion pressure exactly as a falling MAP does. Sustained venous hypertension transmits backward into the renal capsule (a non-distensible envelope), the hepatic sinusoids, the gut wall and the dural sinuses — producing congestive nephropathy (the venous limb of cardiorenal syndrome), congestive hepatopathy, gut edema with impaired absorption, and reduced cerebral venous drainage. In decompensated heart failure, venous congestion tracks with worsening renal function better than cardiac index does."
+      "text": "Organs are perfused by a pressure gradient, not by inflow alone. Renal perfusion pressure ≈ MAP − central venous (renal vein) pressure, so a rising CVP lowers perfusion pressure exactly as a falling MAP does.\n\nSustained venous hypertension transmits backward into the renal capsule (a non-distensible envelope), the hepatic sinusoids, the gut wall and the dural sinuses — producing:\n- congestive nephropathy (the venous limb of cardiorenal syndrome)\n- congestive hepatopathy\n- gut edema with impaired absorption\n- reduced cerebral venous drainage\n\nIn decompensated heart failure, venous congestion tracks with worsening renal function better than cardiac index does."
     },
     {
       "type": "text",
@@ -132,7 +137,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Confounders that break the waveforms: portal vein pulsatility is a false positive in thin, young, or high-output patients; hepatic vein tracings are distorted by isolated RV dysfunction, severe tricuspid regurgitation, arrhythmia and positive-pressure ventilation; intrarenal Doppler needs a usable kidney window and is unreliable in advanced CKD. VExUS is not validated in cirrhosis (portal hypertension), isolated right heart failure, or atrial fibrillation. Treat it as one input alongside the CVP trend, exam, cardiac POCUS and fluid balance — not a standalone trigger, and not yet shown in a randomized trial to improve patient outcomes."
+      "text": "Confounders that break the waveforms:\n- portal vein pulsatility is a false positive in thin, young, or high-output patients\n- hepatic vein tracings are distorted by isolated RV dysfunction, severe tricuspid regurgitation, arrhythmia and positive-pressure ventilation\n- intrarenal Doppler needs a usable kidney window and is unreliable in advanced CKD\n\nVExUS is not validated in cirrhosis (portal hypertension), isolated right heart failure, or atrial fibrillation.\n\nTreat it as one input alongside the CVP trend, exam, cardiac POCUS and fluid balance — not a standalone trigger, and not yet shown in a randomized trial to improve patient outcomes."
     },
     {
       "type": "heading",

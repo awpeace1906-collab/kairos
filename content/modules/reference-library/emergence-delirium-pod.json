@@ -3,12 +3,33 @@
   "section": "Reference Library",
   "category": "Perioperative & Anesthesia",
   "title": "Emergence Delirium & Postoperative Delirium (PACU)",
-  "settingEmphasis": ["or", "icu"],
-  "aliases": ["emergence agitation", "postoperative delirium", "POD", "PACU delirium"],
-  "tags": ["emergence delirium", "postoperative delirium", "PACU", "dexmedetomidine", "perioperative", "OR"],
-  "keywords": ["emergence delirium in PACU minutes and postoperative delirium hours to days later are related but distinct entities, know which one you're actually looking at before reaching for a fix", "preschool-aged children, volatile-agent maintenance, otolaryngology/ophthalmologic procedures, and preoperative anxiety are the classic emergence-delirium risk pattern", "older age, higher ASA class, prolonged surgery/anesthesia, more blood loss, and low preoperative albumin are the classic postoperative-delirium risk pattern, a different population than emergence delirium's", "dexmedetomidine is the most consistently evidence-supported pharmacologic prevention strategy across both entities, intranasal or IV depending on the population and setting", "first rule out a reversible physiologic cause — hypoxia, hypoglycemia, pain, a full bladder, residual neuromuscular blockade — before assuming this is 'just' emergence delirium or POD and reaching straight for a sedative"],
+  "settingEmphasis": [
+    "or",
+    "icu"
+  ],
+  "aliases": [
+    "emergence agitation",
+    "postoperative delirium",
+    "POD",
+    "PACU delirium"
+  ],
+  "tags": [
+    "emergence delirium",
+    "postoperative delirium",
+    "PACU",
+    "dexmedetomidine",
+    "perioperative",
+    "OR"
+  ],
+  "keywords": [
+    "emergence delirium in PACU minutes and postoperative delirium hours to days later are related but distinct entities, know which one you're actually looking at before reaching for a fix",
+    "preschool-aged children, volatile-agent maintenance, otolaryngology/ophthalmologic procedures, and preoperative anxiety are the classic emergence-delirium risk pattern",
+    "older age, higher ASA class, prolonged surgery/anesthesia, more blood loss, and low preoperative albumin are the classic postoperative-delirium risk pattern, a different population than emergence delirium's",
+    "dexmedetomidine is the most consistently evidence-supported pharmacologic prevention strategy across both entities, intranasal or IV depending on the population and setting",
+    "first rule out a reversible physiologic cause — hypoxia, hypoglycemia, pain, a full bladder, residual neuromuscular blockade — before assuming this is 'just' emergence delirium or POD and reaching straight for a sedative"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -17,11 +38,20 @@
     "Marcantonio ER. Postoperative Delirium: A 76-Year-Old Woman With Delirium Following Surgery. JAMA. 2012;308(1):73-81."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). CAM-ICU (ICU delirium) and Modified Aldrete (PACU discharge readiness) already existed, but nothing addressed recognition/management of emergence agitation or postoperative delirium specifically in the perioperative/PACU context." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). CAM-ICU (ICU delirium) and Modified Aldrete (PACU discharge readiness) already existed, but nothing addressed recognition/management of emergence agitation or postoperative delirium specifically in the perioperative/PACU context."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "Emergence delirium (agitation in the minutes right after waking, classically a preschool-aged-child-plus-volatile-agent picture) and postoperative delirium (hours to days later, classically an elderly/ASA-high/prolonged-surgery picture) are related but distinct entities — know which one you're looking at, and always rule out a reversible physiologic cause first before assuming it's either.",
   "whyThisMatters": "These two entities are easy to lump together as 'the patient is confused after anesthesia,' but they have different risk populations, different time courses, and somewhat different management approaches — and both can mask a genuinely reversible physiologic problem (hypoxia, pain, a full bladder, residual paralysis) that gets missed if the agitation is reflexively attributed to 'just' emergence delirium or POD without a basic physiologic check first.",
-  "clinicalTakeaway": "Emergence delirium: agitation/confusion in the minutes immediately after waking, classic risk pattern is preschool-aged children, volatile anesthetic maintenance, otolaryngology/ophthalmologic procedures, and preoperative anxiety — usually self-limited over minutes, but manage safely (prevent self-injury/line removal) and consider dexmedetomidine if prevention/treatment is needed. Postoperative delirium (POD): a fluctuating attention/awareness disturbance emerging hours to days after surgery, classic risk pattern is older age, higher ASA class, prolonged surgery/anesthesia time, greater blood loss, and low postoperative albumin — assess with a validated tool (CAM-ICU in the ICU setting) and address contributing factors (pain, sleep disruption, polypharmacy, sensory deprivation) as first-line management. Before attributing agitation/confusion to either entity, actively rule out a reversible physiologic cause: hypoxia, hypoglycemia, uncontrolled pain, a distended bladder, or residual neuromuscular blockade — these mimic or worsen both pictures and are fixable.",
+  "clinicalTakeaway": "EMERGENCE DELIRIUM: agitation/confusion in the minutes immediately after waking.\n- Classic risk pattern is preschool-aged children, volatile anesthetic maintenance, otolaryngology/ophthalmologic procedures, and preoperative anxiety.\n- Usually self-limited over minutes, but manage safely (prevent self-injury/line removal) and consider dexmedetomidine if prevention/treatment is needed.\n\nPOSTOPERATIVE DELIRIUM (POD): a fluctuating attention/awareness disturbance emerging hours to days after surgery.\n- Classic risk pattern is older age, higher ASA class, prolonged surgery/anesthesia time, greater blood loss, and low postoperative albumin.\n- Assess with a validated tool (CAM-ICU in the ICU setting) and address contributing factors (pain, sleep disruption, polypharmacy, sensory deprivation) as first-line management.\n\nBefore attributing agitation/confusion to either entity, actively rule out a reversible physiologic cause: hypoxia, hypoglycemia, uncontrolled pain, a distended bladder, or residual neuromuscular blockade — these mimic or worsen both pictures and are fixable.",
   "body": [
     {
       "type": "heading",
@@ -30,12 +60,32 @@
     },
     {
       "type": "table",
-      "columns": ["", "Emergence delirium (ED)", "Postoperative delirium (POD)"],
+      "columns": [
+        "",
+        "Emergence delirium (ED)",
+        "Postoperative delirium (POD)"
+      ],
       "rows": [
-        ["Timing", "Minutes — immediately upon emergence, in PACU", "Hours to days after surgery"],
-        ["Classic population", "Preschool-aged children (though can occur in adults too)", "Older adults, especially with higher ASA class"],
-        ["Classic risk factors", "Volatile anesthetic maintenance, otolaryngology/ophthalmologic procedures, preoperative anxiety", "Prolonged surgery/anesthesia time, greater intraoperative blood loss, low postoperative albumin, pre-existing cognitive impairment, polypharmacy"],
-        ["Typical course", "Usually self-limited, resolving over minutes as full alertness returns", "Fluctuating course over hours to days; can persist and is associated with worse longer-term outcomes if unaddressed"]
+        [
+          "Timing",
+          "Minutes — immediately upon emergence, in PACU",
+          "Hours to days after surgery"
+        ],
+        [
+          "Classic population",
+          "Preschool-aged children (though can occur in adults too)",
+          "Older adults, especially with higher ASA class"
+        ],
+        [
+          "Classic risk factors",
+          "Volatile anesthetic maintenance, otolaryngology/ophthalmologic procedures, preoperative anxiety",
+          "Prolonged surgery/anesthesia time, greater intraoperative blood loss, low postoperative albumin, pre-existing cognitive impairment, polypharmacy"
+        ],
+        [
+          "Typical course",
+          "Usually self-limited, resolving over minutes as full alertness returns",
+          "Fluctuating course over hours to days; can persist and is associated with worse longer-term outcomes if unaddressed"
+        ]
       ]
     },
     {
@@ -73,6 +123,11 @@
       ]
     }
   ],
-  "related": ["cam-icu", "padis-bundle", "neuromuscular-blockade-reversal", "modified-aldrete"],
+  "related": [
+    "cam-icu",
+    "padis-bundle",
+    "neuromuscular-blockade-reversal",
+    "modified-aldrete"
+  ],
   "buildNote": "Perioperative & Anesthesia category. ED vs POD risk-factor patterns and dexmedetomidine's evidence base across both entities WebSearch-verified against Vlajkovic & Sindjelic (Anesth Analg 2007) and current PACU/delirium risk-factor meta-analyzes. Deliberately structured around the distinction between the two entities and the shared 'rule out reversible cause first' principle, since conflating them or skipping the physiologic check are the two most common practical errors."
 }

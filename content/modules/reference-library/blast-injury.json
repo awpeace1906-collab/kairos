@@ -44,7 +44,7 @@
     "pediatric blast higher head chest abdomen primary blast rates"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -61,6 +61,11 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — converted from CV Wound Ballistics & Blast Injury Manual: the five-mechanism blast taxonomy, overpressure physics, primary blast pathophysiology (blast lung, air embolism, TM, blast bowel), blast TBI mechanisms, combined injury patterns, underwater blast, and pediatric considerations."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Explosive injury is one casualty with up to five simultaneous mechanisms — primary (overpressure), secondary (fragments, the commonest killer), tertiary (thrown body), quaternary (burns, crush, toxic), quinary (device contaminants). Primary blast targets air-filled organs: lung, ear, bowel. The obvious injury must not close the differential for an occult primary one.",
@@ -123,7 +128,7 @@
     },
     {
       "type": "text",
-      "text": "A high-explosive detonation produces a shock front that outruns local sound speed, a brief negative-pressure phase, then a return to ambient. Peak overpressure falls off steeply, not linearly, with distance — the Hopkinson-Cranz (cube-root) scaling law: scaled distance = standoff ÷ cube root of charge mass. Because it is a cube root, a tenfold increase in charge mass needs only ~2.15× the standoff to reach equivalent overpressure. Clinically: injury severity falls off far faster with distance than expected, modest increases in standoff produce large reductions in primary blast risk, and mass-casualty distribution is not random — patients closest to the seat carry a disproportionate share of primary injury."
+      "text": "A high-explosive detonation produces a shock front that outruns local sound speed, a brief negative-pressure phase, then a return to ambient.\n\nPeak overpressure falls off steeply, not linearly, with distance — the Hopkinson-Cranz (cube-root) scaling law: scaled distance = standoff ÷ cube root of charge mass. Because it is a cube root, a tenfold increase in charge mass needs only ~2.15× the standoff to reach equivalent overpressure.\n\nClinically:\n- injury severity falls off far faster with distance than expected\n- modest increases in standoff produce large reductions in primary blast risk\n- mass-casualty distribution is not random — patients closest to the seat carry a disproportionate share of primary injury"
     },
     {
       "type": "heading",
@@ -171,7 +176,7 @@
     },
     {
       "type": "text",
-      "text": "Blast-induced TBI has been the most common brain injury among survivors of recent conflicts, but the physical mechanism connecting an overpressure wave to neuronal injury is still contested. Three non-exclusive candidates: direct transcranial transmission (the transient crosses the skull and propagates through parenchyma), thoracic/vascular transmission (a transient enters via the great vessels or a vagally mediated thoracic reflex and reaches the brain through the vascular tree — also implicated in BABT), and CSF cavitation (formation and violent collapse of microbubbles in CSF and brain vasculature — a debated hypothesis)."
+      "text": "Blast-induced TBI has been the most common brain injury among survivors of recent conflicts, but the physical mechanism connecting an overpressure wave to neuronal injury is still contested.\n\nThree non-exclusive candidates:\n- Direct transcranial transmission: the transient crosses the skull and propagates through parenchyma.\n- Thoracic/vascular transmission: a transient enters via the great vessels or a vagally mediated thoracic reflex and reaches the brain through the vascular tree — also implicated in BABT.\n- CSF cavitation: formation and violent collapse of microbubbles in CSF and brain vasculature — a debated hypothesis."
     },
     {
       "type": "list",

@@ -44,7 +44,7 @@
     "damage control surgery lethal triad abbreviated laparotomy"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -61,11 +61,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — converted from CV Wound Ballistics & Blast Injury Manual: wounding physics (crush vs stretch, yaw, fragmentation), caliber/construction profiles, tissue-specific patterns, forensic range-of-fire, behind-armor blunt trauma, retained-fragment workup, and antibiotic/damage-control principles."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Wounding reduces to two mechanisms — tissue crush (permanent cavity) and tissue stretch (temporary cavity) — and velocity, bullet construction, and yaw predict severity far better than caliber. Plus what the entrance wound tells you about range of fire, why an intact vest doesn't exclude internal injury, and when a retained fragment actually has to come out.",
   "whyThisMatters": "The visible wound is a floor on the injury present, not a ceiling. Reasoning from mechanism and energy — how fast the round was going, how it was built, where along the track it dumped its energy — is what drives the search for occult injury, the debridement margins the surgeon needs, and the decision to image a normal-looking vessel next to a high-energy track. Getting the mental model right changes the workup before any imaging is back.",
-  "clinicalTakeaway": "Build the differential from mechanism: high-velocity rifle wounds carry temporary-cavity and fragmentation injury well beyond the visible track, especially in dense organs (liver, spleen, brain) and hollow viscera; handgun wounds are mostly permanent-crush. Examine and image for injury outside the obvious track, photograph and diagram discharge findings before cleaning (soot washes off, stippling does not), treat a reported armor hit as blunt trauma of unclear mechanism, and leave most retained fragments in place — remove only for progressive deficit, referable sepsis, lead toxicity, or an intracanal spinal fragment (T12-L4) with incomplete injury.",
+  "clinicalTakeaway": "Build the differential from mechanism: high-velocity rifle wounds carry temporary-cavity and fragmentation injury well beyond the visible track, especially in dense organs (liver, spleen, brain) and hollow viscera; handgun wounds are mostly permanent-crush.\n\n- Examine and image for injury outside the obvious track.\n- Photograph and diagram discharge findings before cleaning (soot washes off, stippling does not).\n- Treat a reported armor hit as blunt trauma of unclear mechanism.\n- Leave most retained fragments in place — remove only for progressive deficit, referable sepsis, lead toxicity, or an intracanal spinal fragment (T12-L4) with incomplete injury.",
   "body": [
     {
       "type": "heading",

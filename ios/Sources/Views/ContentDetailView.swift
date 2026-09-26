@@ -423,7 +423,15 @@ struct AnesthesiaDrugCardBody: View {
     }
     private func bullets(_ items: [String]) -> some View {
         VStack(alignment: .leading, spacing: 6) {
-            ForEach(items, id: \.self) { Text("• \($0)").font(Theme.callout) }
+            // Marker in its own column so a long caution hangs under its text;
+            // each item may carry the Kairos text format (RichText).
+            ForEach(items, id: \.self) { item in
+                HStack(alignment: .firstTextBaseline, spacing: 5) {
+                    Text("•")
+                    RichText(item)
+                }
+                .font(Theme.callout)
+            }
         }
     }
 }

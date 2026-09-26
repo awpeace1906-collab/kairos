@@ -36,7 +36,7 @@
     "elderly SDH from minor fall"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2026-12-03",
   "review_tier": 1,
@@ -54,6 +54,11 @@
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — first moves, the AEIOU-TIPS differential with workup, and the can't-miss conditions table + pearls."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "First move is always a fingerstick glucose. In anyone malnourished, alcohol-dependent, or where there is any doubt, give thiamine 100 mg IV BEFORE glucose. Never assume 'psychiatric' or 'baseline' — organic causes are missed daily in patients labeled frequent fliers.",
@@ -163,7 +168,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Minimum workup for undifferentiated AMS: glucose + BMP + CBC + UA + tox screen + non-contrast head CT. Elderly: subdural from a forgotten fall, UTI-triggered delirium, polypharmacy (anticholinergics, benzos, opioids, digoxin). SAH: CT sensitivity falls from ~98% within 6 h to ~85% at 24 h — LP any thunderclap headache with a negative CT. Meningitis: do not delay antibiotics for a CT unless there is a focal deficit, papilledema, seizure, or immunocompromise."
+      "text": "Minimum workup for undifferentiated AMS: glucose + BMP + CBC + UA + tox screen + non-contrast head CT.\n- Elderly: subdural from a forgotten fall, UTI-triggered delirium, polypharmacy (anticholinergics, benzos, opioids, digoxin).\n- SAH: CT sensitivity falls from ~98% within 6 h to ~85% at 24 h — LP any thunderclap headache with a negative CT.\n- Meningitis: do not delay antibiotics for a CT unless there is a focal deficit, papilledema, seizure, or immunocompromise."
     }
   ]
 }

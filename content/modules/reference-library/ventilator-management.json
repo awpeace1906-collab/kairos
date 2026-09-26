@@ -29,7 +29,7 @@
     "ICU"
   ],
   "contentType": "reference",
-  "content_version": 5,
+  "content_version": 6,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -66,6 +66,11 @@
       "version": 1,
       "date": "2026-08-31",
       "change": "Initial entry from Reference_Library_Content_Spec.md."
+    },
+    {
+      "version": 6,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Initial settings, pressure terms and waveform troubleshooting, the ARDSNet protocol + PEEP/FiO2 ladder, the distinct status-asthmaticus strategy, weaning, and VAP prevention.",
@@ -136,7 +141,7 @@
     {
       "type": "callout",
       "tone": "danger",
-      "text": "Ventilation and oxygenation come before diagnosis — DISCONNECT from the vent and bag first if the patient is deteriorating. DOPES (the problem): Displaced ETT / cuff not inflated · Obstruction of the tube · Pneumothorax · Equipment malfunction · Stacked breaths (auto-PEEP). DOTTS (the response): Disconnect from the ventilator · Oxygenate with a BVM, feel for resistance · Tube position / function (migration, kinking, plugging) · Tweak vent settings once stable · Sono / needle decompression if a pneumothorax is suspected. Disconnecting also diagnoses auto-PEEP — the chest falls and the BP recovers."
+      "text": "Ventilation and oxygenation come before diagnosis — DISCONNECT from the vent and bag first if the patient is deteriorating.\n\nDOPES (the problem):\n- Displaced ETT / cuff not inflated\n- Obstruction of the tube\n- Pneumothorax\n- Equipment malfunction\n- Stacked breaths (auto-PEEP)\n\nDOTTS (the response):\n1. Disconnect from the ventilator.\n2. Oxygenate with a BVM, feel for resistance.\n3. Tube position / function (migration, kinking, plugging).\n4. Tweak vent settings once stable.\n5. Sono / needle decompression if a pneumothorax is suspected.\n\nDisconnecting also diagnoses auto-PEEP — the chest falls and the BP recovers."
     },
     {
       "type": "heading",
@@ -208,7 +213,7 @@
     },
     {
       "type": "text",
-      "text": "The goal is NOT low-pressure protection of a stiff lung — it is deliberately minimizing minute ventilation so an obstructed lung has time to fully exhale. VT 5-8 mL/kg, RR 10-14/min (deliberately low), high inspiratory flow 60-100 L/min (shortens Ti, maximizes expiratory time), permissive hypercapnia tolerated while pH > 7.2 (case reports to PaCO₂ > 200 / pH < 7.0 without apparent harm when oxygenation is maintained). Watch the flow-time waveform (expiratory flow not reaching zero = incomplete exhalation), Pplat, and auto-PEEP via expiratory hold. Sedation ± NMB is often needed to stop the patient fighting a hypoventilating strategy."
+      "text": "The goal is NOT low-pressure protection of a stiff lung — it is deliberately minimizing minute ventilation so an obstructed lung has time to fully exhale.\n- VT 5-8 mL/kg\n- RR 10-14/min (deliberately low)\n- high inspiratory flow 60-100 L/min (shortens Ti, maximizes expiratory time)\n- permissive hypercapnia tolerated while pH > 7.2 (case reports to PaCO₂ > 200 / pH < 7.0 without apparent harm when oxygenation is maintained)\n\nWatch the flow-time waveform (expiratory flow not reaching zero = incomplete exhalation), Pplat, and auto-PEEP via expiratory hold.\n\nSedation ± NMB is often needed to stop the patient fighting a hypoventilating strategy."
     },
     {
       "type": "heading",

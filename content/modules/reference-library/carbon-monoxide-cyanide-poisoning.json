@@ -3,12 +3,37 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "Carbon Monoxide Poisoning & Cyanide Co-Exposure",
-  "settingEmphasis": ["ed", "icu", "prehospital"],
-  "aliases": ["CO poisoning", "carboxyhemoglobin", "smoke inhalation toxicity", "cyanide poisoning"],
-  "tags": ["carbon monoxide", "cyanide", "hyperbaric oxygen", "smoke inhalation", "toxicology", "ED", "ICU", "prehospital"],
-  "keywords": ["COHb level does not reliably predict clinical severity, treat the patient and the exposure history, not just the number", "pulse oximetry reads falsely normal in CO poisoning, it cannot distinguish oxyhemoglobin from carboxyhemoglobin, co-oximetry is required", "100 percent high-flow oxygen for everyone regardless of COHb level, it's the antidote and it's cheap", "hyperbaric oxygen for COHb over 25 percent, any loss of consciousness, cardiac involvement, severe acidosis, neurologic deficit, or pregnancy", "consider concurrent cyanide toxicity in any structure-fire smoke inhalation with altered mental status or lactate over 10, hydroxocobalamin is the antidote of choice", "delayed neurologic sequelae can appear days to weeks after apparent recovery from CO poisoning"],
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
+  "aliases": [
+    "CO poisoning",
+    "carboxyhemoglobin",
+    "smoke inhalation toxicity",
+    "cyanide poisoning"
+  ],
+  "tags": [
+    "carbon monoxide",
+    "cyanide",
+    "hyperbaric oxygen",
+    "smoke inhalation",
+    "toxicology",
+    "ED",
+    "ICU",
+    "prehospital"
+  ],
+  "keywords": [
+    "COHb level does not reliably predict clinical severity, treat the patient and the exposure history, not just the number",
+    "pulse oximetry reads falsely normal in CO poisoning, it cannot distinguish oxyhemoglobin from carboxyhemoglobin, co-oximetry is required",
+    "100 percent high-flow oxygen for everyone regardless of COHb level, it's the antidote and it's cheap",
+    "hyperbaric oxygen for COHb over 25 percent, any loss of consciousness, cardiac involvement, severe acidosis, neurologic deficit, or pregnancy",
+    "consider concurrent cyanide toxicity in any structure-fire smoke inhalation with altered mental status or lactate over 10, hydroxocobalamin is the antidote of choice",
+    "delayed neurologic sequelae can appear days to weeks after apparent recovery from CO poisoning"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,11 +43,20 @@
     "Anseeuw K, et al. Cyanide poisoning by fire smoke inhalation: a European expert consensus. Eur J Emerg Med. 2013;20(1):2-9."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). Previously only a single clause inside the mass-casualty hazmat/toxidrome module; this is the missing standalone bedside management reference for the single-patient ED/ICU presentation." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). Previously only a single clause inside the mass-casualty hazmat/toxidrome module; this is the missing standalone bedside management reference for the single-patient ED/ICU presentation."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "CO poisoning is easy to under-treat because the COHb level doesn't track severity and pulse oximetry lies — treat with high-flow oxygen regardless of the number, and think about concurrent cyanide toxicity in any smoke-inhalation patient who's sicker than the CO level alone would explain.",
   "whyThisMatters": "CO is the leading cause of poisoning death in the US, and a meaningful fraction of survivors go on to develop delayed neurologic sequelae (cognitive, personality, or movement changes appearing days to weeks after apparent recovery) — recognizing and treating early, including deciding on hyperbaric oxygen, is what reduces that risk. In structure-fire smoke inhalation specifically, missed concurrent cyanide toxicity is a real cause of preventable death, because cyanide poisoning is clinically silent on routine monitoring and doesn't announce itself the way hypoxia does.",
-  "clinicalTakeaway": "Give 100% high-flow oxygen (non-rebreather, or intubated FiO2 1.0) to every symptomatic CO-exposed patient immediately, regardless of COHb level or pulse ox reading — pulse oximetry cannot distinguish carboxyhemoglobin from oxyhemoglobin and will read falsely reassuring. Send a co-oximetry level. Consult/arrange hyperbaric oxygen for COHb >25-30%, any loss of consciousness, cardiac ischemia/dysrhythmia, severe metabolic acidosis, focal neurologic deficit, or pregnancy (pregnancy gets HBO at lower COHb thresholds too, given fetal hemoglobin's higher CO affinity). In a structure-fire smoke-inhalation patient with altered mental status, hypotension, or a lactate >10 mmol/L out of proportion to the apparent CO exposure, treat empirically for concurrent cyanide toxicity with hydroxocobalamin — don't wait for a cyanide level, which isn't available in real time anyway.",
+  "clinicalTakeaway": "OXYGEN: give 100% high-flow oxygen (non-rebreather, or intubated FiO2 1.0) to every symptomatic CO-exposed patient immediately, regardless of COHb level or pulse ox reading — pulse oximetry cannot distinguish carboxyhemoglobin from oxyhemoglobin and will read falsely reassuring. Send a co-oximetry level.\n\nHYPERBARIC: consult/arrange hyperbaric oxygen for:\n- COHb >25-30%\n- any loss of consciousness\n- cardiac ischemia/dysrhythmia\n- severe metabolic acidosis\n- focal neurologic deficit\n- pregnancy (pregnancy gets HBO at lower COHb thresholds too, given fetal hemoglobin's higher CO affinity)\n\nCYANIDE: in a structure-fire smoke-inhalation patient with altered mental status, hypotension, or a lactate >10 mmol/L out of proportion to the apparent CO exposure, treat empirically for concurrent cyanide toxicity with hydroxocobalamin — don't wait for a cyanide level, which isn't available in real time anyway.",
   "body": [
     {
       "type": "heading",
@@ -50,14 +84,28 @@
     },
     {
       "type": "table",
-      "columns": ["Consider hyperbaric oxygen (HBO) if"],
+      "columns": [
+        "Consider hyperbaric oxygen (HBO) if"
+      ],
       "rows": [
-        ["COHb level >25-30%"],
-        ["Any loss of consciousness (even transient) at any point during the exposure"],
-        ["Cardiac involvement — ischemic ECG changes, dysrhythmia, elevated troponin"],
-        ["Severe metabolic acidosis"],
-        ["Focal neurologic deficit or abnormal neuropsychiatric testing"],
-        ["Pregnancy — treated at lower COHb thresholds given fetal hemoglobin's higher CO affinity and slower fetal CO clearance"]
+        [
+          "COHb level >25-30%"
+        ],
+        [
+          "Any loss of consciousness (even transient) at any point during the exposure"
+        ],
+        [
+          "Cardiac involvement — ischemic ECG changes, dysrhythmia, elevated troponin"
+        ],
+        [
+          "Severe metabolic acidosis"
+        ],
+        [
+          "Focal neurologic deficit or abnormal neuropsychiatric testing"
+        ],
+        [
+          "Pregnancy — treated at lower COHb thresholds given fetal hemoglobin's higher CO affinity and slower fetal CO clearance"
+        ]
       ]
     },
     {
@@ -92,6 +140,9 @@
       "text": "A meaningful fraction of CO poisoning survivors — even those who seem to recover fully in the ED — develop delayed neurologic sequelae days to weeks later: cognitive deficits, personality/mood changes, parkinsonism-like movement symptoms, or urinary incontinence. Counsel patients and families about this possibility at discharge and arrange follow-up, since it's a genuine and under-recognized risk that isn't predicted reliably by the initial COHb level or symptom severity."
     }
   ],
-  "related": ["heat-stroke", "electrical-injury-lightning"],
+  "related": [
+    "heat-stroke",
+    "electrical-injury-lightning"
+  ],
   "buildNote": "Critical Care category. HBO indication thresholds (COHb >25-30%, LOC, cardiac involvement, severe acidosis, neuro deficit, pregnancy) and the pulse-oximetry-unreliable point WebSearch-verified against CDC clinical guidance and standard toxicology teaching. Cyanide co-treatment section deliberately doesn't restate the general cyanide-as-a-mass-casualty-agent content already in the hazmat/toxidrome module — this is scoped to the specific single-patient smoke-inhalation scenario."
 }

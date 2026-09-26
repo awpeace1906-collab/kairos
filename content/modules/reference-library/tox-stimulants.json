@@ -42,7 +42,7 @@
     "active cooling excited delirium ketamine dexmedetomidine rhabdomyolysis"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -59,11 +59,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — converted from CV Intoxicating Substances Reference: the shared sympathomimetic toxidrome plus per-agent distinguishing features and management for cocaine, amphetamine/dextroamphetamine, methamphetamine, MDMA/MDA, synthetic cathinones, methylphenidate, and caffeine."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "One shared sympathomimetic toxidrome — tachycardia, hypertension, hyperthermia, mydriasis, diaphoresis, agitation — with benzodiazepines and active cooling as the common core of management. What differs by agent: cocaine's sodium-channel cardiotoxicity, methamphetamine's long half-life, MDMA's paired hyperthermia-and-hyponatremia, the cathinones' immunoassay-negative agitated psychosis, and caffeine (the one where beta-blockade is not a trap).",
   "whyThisMatters": "Stimulant toxicity is a large and rising share of ED and prehospital agitation, hyperthermia, and chest pain, and the mistakes are agent-specific: giving an unopposed beta-blocker in cocaine toxicity, over- or under-hydrating an MDMA patient without checking the sodium, discharging a methamphetamine patient expecting a cocaine-length course, or anchoring on a negative tox screen in a floridly psychotic young patient who took a synthetic cathinone the assay cannot see.",
-  "clinicalTakeaway": "Treat the shared adrenergic driver first: benzodiazepines titrated to effect for agitation, hypertension, tachycardia, and seizure prophylaxis, plus active external cooling for hyperthermia (antipyretics do not work). Then apply the agent-specific move — sodium bicarbonate for a wide QRS (cocaine, high-dose stimulants); check serum sodium in any altered or seizing MDMA patient; treat suspected synthetic-cathinone psychosis on clinical grounds with benzodiazepine + antipsychotic; and remember caffeine tachydysrhythmia takes esmolol, not the cocaine 'avoid beta-blockade' rule. Aggressive fluids and early cooling prevent the rhabdomyolysis-DIC-AKI cascade rather than treating it after the fact.",
+  "clinicalTakeaway": "Treat the shared adrenergic driver first: benzodiazepines titrated to effect for agitation, hypertension, tachycardia, and seizure prophylaxis, plus active external cooling for hyperthermia (antipyretics do not work).\n\nThen apply the agent-specific move:\n- sodium bicarbonate for a wide QRS (cocaine, high-dose stimulants)\n- check serum sodium in any altered or seizing MDMA patient\n- treat suspected synthetic-cathinone psychosis on clinical grounds with benzodiazepine + antipsychotic\n- remember caffeine tachydysrhythmia takes esmolol, not the cocaine 'avoid beta-blockade' rule\n\nAggressive fluids and early cooling prevent the rhabdomyolysis-DIC-AKI cascade rather than treating it after the fact.",
   "body": [
     {
       "type": "heading",
@@ -72,7 +77,7 @@
     },
     {
       "type": "text",
-      "text": "Stimulants raise synaptic monoamine tone (dopamine, norepinephrine, ± serotonin) and produce a common picture: tachycardia, hypertension, hyperthermia, mydriasis, diaphoresis, and agitation. Route, transporter pharmacology, and the co-released neurotransmitter burden determine which complications dominate. Common management core: benzodiazepines first-line (addresses the shared adrenergic driver — agitation, hypertension, tachycardia, seizure prophylaxis), active external cooling for hyperthermia (treat as excited-delirium physiology, not infectious fever — antipyretics are not indicated), and aggressive IV fluids with early cooling to pre-empt rhabdomyolysis, DIC, and AKI. Refractory agitation / excited delirium → ketamine with airway readiness, then dexmedetomidine for ICU maintenance. Wide QRS or ventricular dysrhythmia → sodium bicarbonate; avoid lidocaine and class Ia/Ic antiarrhythmics."
+      "text": "Stimulants raise synaptic monoamine tone (dopamine, norepinephrine, ± serotonin) and produce a common picture: tachycardia, hypertension, hyperthermia, mydriasis, diaphoresis, and agitation. Route, transporter pharmacology, and the co-released neurotransmitter burden determine which complications dominate.\n\nCommon management core:\n- benzodiazepines first-line (addresses the shared adrenergic driver — agitation, hypertension, tachycardia, seizure prophylaxis)\n- active external cooling for hyperthermia (treat as excited-delirium physiology, not infectious fever — antipyretics are not indicated)\n- aggressive IV fluids with early cooling to pre-empt rhabdomyolysis, DIC, and AKI\n\nRefractory agitation / excited delirium → ketamine with airway readiness, then dexmedetomidine for ICU maintenance.\n\nWide QRS or ventricular dysrhythmia → sodium bicarbonate; avoid lidocaine and class Ia/Ic antiarrhythmics."
     },
     {
       "type": "heading",

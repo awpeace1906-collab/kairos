@@ -40,7 +40,7 @@
     "epidural blood patch 15-20 mL"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-03-02",
   "review_tier": 1,
@@ -58,6 +58,11 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — contraindications, spinal agent + adjunct doses (incl. the standard C/S mix), spinal-hypotension prevention/treatment (norepinephrine now first-line in OB), epidural levels + the urgent-C/S top-up, high/total spinal management, and PDPH."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Spinal hypotension: CO-load (not pre-load) 500–1000 mL at block placement and start a prophylactic vasopressor infusion — norepinephrine 0.05–0.1 mcg/kg/min is now first-line for obstetric spinal (better HR maintenance than phenylephrine). Anticoagulant hold times before a neuraxial or deep block live in the neuraxial-anticoagulation module.",
@@ -130,7 +135,7 @@
     },
     {
       "type": "text",
-      "text": "Intrathecal adjuncts (preservative-free): fentanyl 10–25 mcg (intra-op analgesia, reduces LA dose); morphine 50–300 mcg (post-op analgesia — DELAYED respiratory depression 6–18 h, monitor 18–24 h); hydromorphone 50–100 mcg (~12 h monitoring); epinephrine 100–200 mcg (+30–50% duration, test-dose component); clonidine 15–75 mcg or dexmedetomidine 3–10 mcg (prolong the block, cause hypotension / bradycardia / sedation). Standard C/S mix: hyperbaric bupivacaine 0.75% 10–12 mg + fentanyl PF 10–15 mcg + morphine PF 100–150 mcg ± epinephrine 100–200 mcg."
+      "text": "Intrathecal adjuncts (preservative-free):\n- fentanyl 10–25 mcg (intra-op analgesia, reduces LA dose)\n- morphine 50–300 mcg (post-op analgesia — DELAYED respiratory depression 6–18 h, monitor 18–24 h)\n- hydromorphone 50–100 mcg (~12 h monitoring)\n- epinephrine 100–200 mcg (+30–50% duration, test-dose component)\n- clonidine 15–75 mcg or dexmedetomidine 3–10 mcg (prolong the block, cause hypotension / bradycardia / sedation)\n\nStandard C/S mix: hyperbaric bupivacaine 0.75% 10–12 mg + fentanyl PF 10–15 mcg + morphine PF 100–150 mcg ± epinephrine 100–200 mcg."
     },
     {
       "type": "heading",
@@ -193,7 +198,7 @@
     {
       "type": "callout",
       "tone": "danger",
-      "text": "Rapid unexpected cephalad spread: upper-limb numbness / weakness → dyspnea, dysphonia, apnea → bradycardia + hypotension → loss of consciousness / arrest (total spinal). Call for help + the code cart, tell the surgeons. Support ventilation, intubate if apneic. Epinephrine 10 mcg IV boluses titrated up for bradycardia / hypotension; atropine 0.5 mg for mild bradycardia (low threshold for epinephrine); fluids wide open. Parturient: immediate LUD, alert OB, prepare for a perimortem C/S, and run the maternal-cardiac-arrest protocol if she arrests."
+      "text": "Rapid unexpected cephalad spread: upper-limb numbness / weakness → dyspnea, dysphonia, apnea → bradycardia + hypotension → loss of consciousness / arrest (total spinal).\n- Call for help + the code cart, tell the surgeons.\n- Support ventilation, intubate if apneic.\n- Epinephrine 10 mcg IV boluses titrated up for bradycardia / hypotension; atropine 0.5 mg for mild bradycardia (low threshold for epinephrine); fluids wide open.\n\nPARTURIENT: immediate LUD, alert OB, prepare for a perimortem C/S, and run the maternal-cardiac-arrest protocol if she arrests."
     },
     {
       "type": "heading",

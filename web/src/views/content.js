@@ -193,7 +193,7 @@ function renderAnesthesiaDrugCard(mod) {
   const field = (label, value) =>
     value ? el("div", { class: "adc-field" }, el("span", { class: "adc-label" }, label), el("span", {}, value)) : null;
   const list = (label, items) =>
-    items?.length ? el("div", {}, el("h3", {}, label), el("ul", {}, items.map((i) => el("li", {}, i)))) : null;
+    items?.length ? el("div", {}, el("h3", {}, label), el("ul", {}, items.map((i) => el("li", {}, richText(i))))) : null;
   const dosingRows = (text) => {
     if (!text) return null;
     return el(

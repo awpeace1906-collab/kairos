@@ -43,7 +43,7 @@
     "improvised peritoneal dialysis"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-04",
   "next_review_due": "2026-12-04",
   "review_tier": 1,
@@ -63,6 +63,11 @@
       "version": 1,
       "date": "2026-09-04",
       "change": "Initial entry — converted from the CV Austere & Disaster Medicine guide's crush-syndrome section: entrapment physiology, the 2-hour tourniquet/isolation threshold, the hyperkalemia treatment ladder, goal-directed fluid resuscitation, and austere renal-replacement bridging."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Crush syndrome is won or lost before the limb is ever freed. A trapped limb sequesters liters of volume and a lethal potassium load behind an intact barrier; releasing the crushing force without preparation can convert a stable entrapped patient into a cardiac arrest within minutes. Resuscitate before you decompress, isolate when you cannot resuscitate, and treat the potassium as already lethal.",
@@ -207,7 +212,7 @@
     },
     {
       "type": "text",
-      "text": "Before crush syndrome can be managed, the casualty has to survive the primary survey. MARCH reorders ABC around the actual order of preventable traumatic death: Massive hemorrhage (direct pressure, packing, tourniquets — treated before airway; a patent airway is useless if the patient exsanguinates first) → Airway → Respiration (tension pneumothorax, open chest wounds) → Circulation (shock recognition, IV/IO, blood products, TXA per protocol) → Hypothermia/Head injury (active warming, TBI assessment — hypothermia + acidosis + coagulopathy is the lethal triad). The extended MARCH PAWS variant adds Pain, Antibiotics, Wounds, and Splinting for prolonged field care."
+      "text": "Before crush syndrome can be managed, the casualty has to survive the primary survey. MARCH reorders ABC around the actual order of preventable traumatic death:\n1. Massive hemorrhage (direct pressure, packing, tourniquets — treated before airway; a patent airway is useless if the patient exsanguinates first)\n2. Airway\n3. Respiration (tension pneumothorax, open chest wounds)\n4. Circulation (shock recognition, IV/IO, blood products, TXA per protocol)\n5. Hypothermia/Head injury (active warming, TBI assessment — hypothermia + acidosis + coagulopathy is the lethal triad)\n\nThe extended MARCH PAWS variant adds Pain, Antibiotics, Wounds, and Splinting for prolonged field care."
     }
   ],
   "related": [

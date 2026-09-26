@@ -45,7 +45,7 @@
     "minute ventilation match"
   ],
   "contentType": "reference",
-  "content_version": 4,
+  "content_version": 5,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2026-12-03",
   "review_tier": 1,
@@ -76,6 +76,11 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — converted from the CV physiologically-difficult-airway deep dive. Four deadly profiles + the evidence-corrected induction matrix (incl. the Dec 2025 RSI trial)."
+    },
+    {
+      "version": 5,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Anatomy predicts whether you see the cords. Physiology decides whether the patient survives the apneic pause and the drugs. Four physiologic states kill patients with grade-1 views: hypoxemia, hypotension, metabolic acidosis, and RV failure. Resuscitate before you intubate.",
@@ -184,7 +189,7 @@
     },
     {
       "type": "text",
-      "text": "At an alveolar O2 fraction of 0.87 (thorough preoxygenation), a healthy 70 kg adult takes ~9.9 min of apnea to fall to 60% SaO2; on room air (FAO2 0.13) the same patient hits 60% at 2.8 min. That gap is the case for full, not partial, preoxygenation. Desaturation speed, fastest to slowest: obese 127 kg adult > 10 kg child > moderately ill adult > healthy adult (children: high metabolic rate relative to FRC; obese: raised O2 consumption + mechanically reduced FRC; illness: reduced FRC and/or increased shunt). Succinylcholine 1 mg/kg paralysis lasts ~6.8 min to 10% twitch recovery, 8.5 min to 50%, 10.2 min to 90% — longer than the safe apnea window in a healthy adult, so 'the patient will just wake up and breathe' is not a valid failed-airway backup plan."
+      "text": "At an alveolar O2 fraction of 0.87 (thorough preoxygenation), a healthy 70 kg adult takes ~9.9 min of apnea to fall to 60% SaO2; on room air (FAO2 0.13) the same patient hits 60% at 2.8 min. That gap is the case for full, not partial, preoxygenation.\n\nDesaturation speed, fastest to slowest: obese 127 kg adult > 10 kg child > moderately ill adult > healthy adult.\n- children: high metabolic rate relative to FRC\n- obese: raised O2 consumption + mechanically reduced FRC\n- illness: reduced FRC and/or increased shunt\n\nSuccinylcholine 1 mg/kg paralysis lasts ~6.8 min to 10% twitch recovery, 8.5 min to 50%, 10.2 min to 90% — longer than the safe apnea window in a healthy adult, so 'the patient will just wake up and breathe' is not a valid failed-airway backup plan."
     },
     {
       "type": "heading",

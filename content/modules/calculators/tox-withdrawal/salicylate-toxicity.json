@@ -34,7 +34,7 @@
     "mixed acid-base"
   ],
   "contentType": "calculator",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-08",
   "next_review_due": "2027-09-02",
   "review_tier": 1,
@@ -51,6 +51,11 @@
       "version": 2,
       "date": "2026-09-08",
       "change": "Added a passthrough level formula so the management bands (keyed to the raw level) actually render — previously only the mg/L conversion showed."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "engine": "formula",
@@ -124,6 +129,6 @@
       "severity": "high"
     }
   ],
-  "notes": "CHRONIC toxicity (elderly, therapeutic-intent overuse) is more dangerous at any given level — significant toxicity and a dialysis indication can occur at 40–60 mg/dL. Do NOT be reassured by a 'normal-range' single level with a suggestive story (metabolic acidosis + respiratory alkalosis, anion gap, tinnitus). Avoid intubation if at all possible; if required, pre-oxygenate, use bicarbonate, and set a high minute ventilation to preserve respiratory compensation. Activated charcoal if within ~1–2 h or an enteric-coated/large ingestion; consider multi-dose charcoal for a rising level.",
+  "notes": "CHRONIC toxicity (elderly, therapeutic-intent overuse) is more dangerous at any given level — significant toxicity and a dialysis indication can occur at 40–60 mg/dL. Do NOT be reassured by a 'normal-range' single level with a suggestive story (metabolic acidosis + respiratory alkalosis, anion gap, tinnitus).\n\n- Avoid intubation if at all possible; if required, pre-oxygenate, use bicarbonate, and set a high minute ventilation to preserve respiratory compensation.\n- Activated charcoal if within ~1–2 h or an enteric-coated/large ingestion; consider multi-dose charcoal for a rising level.",
   "buildNote": "Formula engine — level echoed with a mg/L conversion; Done nomogram deliberately not implemented. Bands reflect EXTRIP 2015 + standard management thresholds for ACUTE ingestion."
 }

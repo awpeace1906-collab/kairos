@@ -3,13 +3,35 @@
   "section": "Peds Module",
   "category": "Peds Resuscitation & Decision Support",
   "title": "Bronchiolitis — Evaluation & Management",
-  "settingEmphasis": ["ed", "icu"],
-  "audience": ["peds"],
-  "aliases": ["RSV bronchiolitis", "bronchiolitis AAP guideline", "high flow nasal cannula bronchiolitis"],
-  "tags": ["bronchiolitis", "RSV", "infant", "respiratory distress", "peds", "ED"],
-  "keywords": ["clinical diagnosis do not order CXR or viral testing routinely", "albuterol and bronchodilators not recommended", "supportive care oxygen suction hydration is the treatment", "reserve HFNC for hypoxemia not responding to low-flow oxygen", "apnea risk in young/ex-premature infants"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "audience": [
+    "peds"
+  ],
+  "aliases": [
+    "RSV bronchiolitis",
+    "bronchiolitis AAP guideline",
+    "high flow nasal cannula bronchiolitis"
+  ],
+  "tags": [
+    "bronchiolitis",
+    "RSV",
+    "infant",
+    "respiratory distress",
+    "peds",
+    "ED"
+  ],
+  "keywords": [
+    "clinical diagnosis do not order CXR or viral testing routinely",
+    "albuterol and bronchodilators not recommended",
+    "supportive care oxygen suction hydration is the treatment",
+    "reserve HFNC for hypoxemia not responding to low-flow oxygen",
+    "apnea risk in young/ex-premature infants"
+  ],
   "contentType": "peds-tool",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-14",
   "next_review_due": "2026-12-14",
   "review_tier": 1,
@@ -18,7 +40,16 @@
     "Appropriate Use of High-Flow Nasal Cannula in Bronchiolitis: A Delphi/RAND-UCLA Appropriateness Method consensus. Hospital Pediatrics. 2026;16(1):12."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap; one of the highest-volume peds ED presentations had no dedicated module. Built on the AAP 2014 CPG (still the standing guideline) plus the 2026 Delphi/RAND-UCLA consensus on appropriate HFNC use, which is a live practice-variation issue, not a settled number — presented qualitatively rather than with a fabricated flow-rate table." }
+    {
+      "version": 1,
+      "date": "2026-09-14",
+      "change": "Initial entry — a genuine content gap; one of the highest-volume peds ED presentations had no dedicated module. Built on the AAP 2014 CPG (still the standing guideline) plus the 2026 Delphi/RAND-UCLA consensus on appropriate HFNC use, which is a live practice-variation issue, not a settled number — presented qualitatively rather than with a fabricated flow-rate table."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "kind": "reference",
   "ageRange": "Typically infants and children < 2 years, peak incidence 2-6 months; classic RSV season but caused by multiple respiratory viruses",
@@ -74,7 +105,7 @@
     },
     {
       "type": "text",
-      "text": "HFNC is effective rescue therapy for an infant failing standard low-flow oxygen, but the evidence does not support routine, early, liberal use as a default first-line therapy for mild-to-moderate distress — starting HFNC too early/too broadly has been associated with longer hospital stays without a clear outcome benefit over standard oxygen in infants who don't need it. Practice variation in exactly when to start, how to titrate, and when to wean HFNC remains substantial enough that a 2026 Delphi/RAND-UCLA appropriateness consensus was published specifically to address it. Follow your institution's protocol for specific flow rates and escalation/weaning criteria rather than a fixed number here."
+      "text": "HFNC is effective rescue therapy for an infant failing standard low-flow oxygen, but the evidence does not support routine, early, liberal use as a default first-line therapy for mild-to-moderate distress — starting HFNC too early/too broadly has been associated with longer hospital stays without a clear outcome benefit over standard oxygen in infants who don't need it.\n\nPractice variation in exactly when to start, how to titrate, and when to wean HFNC remains substantial enough that a 2026 Delphi/RAND-UCLA appropriateness consensus was published specifically to address it.\n\nFollow your institution's protocol for specific flow rates and escalation/weaning criteria rather than a fixed number here."
     },
     {
       "type": "heading",

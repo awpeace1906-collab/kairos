@@ -42,7 +42,7 @@
     "ionized calcium ECG within one hour calcium gluconate"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -59,11 +59,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — converted from CV Austere & Disaster Medicine Part Two: white-phosphorus pathophysiology, comparative incendiary-agent table, prehospital management sequence, and the critical errors to avoid."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "White phosphorus is an incendiary munition, not a classic chemical agent, and its injuries are categorically unlike thermal burns — embedded particles keep burning in tissue, phosphoric acid drives hypocalcemia within the hour, and systemic absorption is fatal under 10% BSA. The management is deny oxygen, remove particles, keep the wound wet, and monitor calcium.",
   "whyThisMatters": "Incendiary agents are encountered in current conflicts regardless of legal status, and the field intervention decides the outcome — recognition of white phosphorus, and not treating it like a thermal or napalm burn, is the single most critical step. The mistakes are lethal and specific: extinguishing WP the way you would smother napalm, letting the wound dry in transport, debriding in bright light, or assuming a small burn is safe when systemic absorption can kill under 10% BSA.",
-  "clinicalTakeaway": "Suspect white phosphorus from a garlic odor, bright yellow-white flame, white smoke, and particles that glow green in a darkened room. Remove all clothing, pick out visible particles with forceps (never bare hands) into water, and irrigate or immerse continuously — you are denying oxygen, not extinguishing a fire. Cover with saline-soaked or hydrogel dressings and keep them wet through transport. Get an ECG and ionized calcium early: hypocalcemia and QT prolongation can appear within one hour; give IV calcium for symptomatic hypocalcemia. Never use copper sulfate, and never apply the napalm smother protocol to WP.",
+  "clinicalTakeaway": "SUSPECT white phosphorus from a garlic odor, bright yellow-white flame, white smoke, and particles that glow green in a darkened room.\n\n1. Remove all clothing, pick out visible particles with forceps (never bare hands) into water, and irrigate or immerse continuously — you are denying oxygen, not extinguishing a fire.\n2. Cover with saline-soaked or hydrogel dressings and keep them wet through transport.\n3. Get an ECG and ionized calcium early: hypocalcemia and QT prolongation can appear within one hour; give IV calcium for symptomatic hypocalcemia.\n\nNever use copper sulfate, and never apply the napalm smother protocol to WP.",
   "body": [
     {
       "type": "heading",

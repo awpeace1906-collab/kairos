@@ -42,7 +42,7 @@
     "SSC 2026"
   ],
   "contentType": "reference",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-14",
   "next_review_due": "2026-12-14",
   "review_tier": 1,
@@ -68,6 +68,11 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — bedside resuscitation targets and titration sequence for septic shock, distilled from SSC 2021 + the ANDROMEDA-SHOCK line + the 25-year conceptual review. Management-oriented (what to titrate to what), not a trial summary."
+    },
+    {
+      "version": 4,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Antibiotics + source control within the hour. Resuscitate to perfusion, not to a single number: MAP ≥ 65, CRT normalizing, lactate clearing, mentation and urine output improving, falling pressor requirement. After the initial bolus, test fluid responsiveness before every further bolus.",
@@ -95,7 +100,7 @@
     },
     {
       "type": "text",
-      "text": "Default MAP ≥ 65 mmHg. SSC 2026 suggests a lower initial target of 60–65 mmHg for patients ≥ 65 years old, to limit cumulative vasopressor exposure in a group where that exposure itself carries risk — this is a floor to start from, not a ceiling; titrate up if perfusion markers don't improve. A higher target (80–85) gave no overall mortality or renal benefit and caused more new-onset atrial fibrillation (SEPSISPAM) — reserve it for chronic hypertensives, where the higher target reduced RRT need without the AF penalty. Titrate to the individual: mentation, urine output, CRT, and lactate trend matter more than the number."
+      "text": "Default MAP ≥ 65 mmHg.\n\nPATIENTS 65 AND OLDER: SSC 2026 suggests a lower initial target of 60–65 mmHg for patients ≥ 65 years old, to limit cumulative vasopressor exposure in a group where that exposure itself carries risk — this is a floor to start from, not a ceiling; titrate up if perfusion markers don't improve.\n\nHIGHER TARGET (80–85): gave no overall mortality or renal benefit and caused more new-onset atrial fibrillation (SEPSISPAM) — reserve it for chronic hypertensives, where the higher target reduced RRT need without the AF penalty.\n\nTitrate to the individual: mentation, urine output, CRT, and lactate trend matter more than the number."
     },
     {
       "type": "heading",

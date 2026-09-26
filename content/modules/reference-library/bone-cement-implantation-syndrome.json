@@ -3,8 +3,13 @@
   "section": "Reference Library",
   "category": "Perioperative & Anesthesia",
   "title": "Bone Cement Implantation Syndrome (BCIS)",
-  "settingEmphasis": ["or", "icu"],
-  "audience": ["adult"],
+  "settingEmphasis": [
+    "or",
+    "icu"
+  ],
+  "audience": [
+    "adult"
+  ],
   "aliases": [
     "BCIS",
     "cement reaction",
@@ -13,7 +18,18 @@
     "Donaldson classification",
     "fat embolism arthroplasty"
   ],
-  "tags": ["BCIS", "bone cement", "PMMA", "hemiarthroplasty", "arthroplasty", "hip fracture", "fat embolism", "RV failure", "OR emergency", "anesthesia"],
+  "tags": [
+    "BCIS",
+    "bone cement",
+    "PMMA",
+    "hemiarthroplasty",
+    "arthroplasty",
+    "hip fracture",
+    "fat embolism",
+    "RV failure",
+    "OR emergency",
+    "anesthesia"
+  ],
   "keywords": [
     "hypoxia hypotension arrhythmia cardiac arrest around cementation prosthesis insertion",
     "Donaldson grade 1 SpO2 under 94 or SBP fall over 20 percent grade 2 SpO2 under 88 or SBP fall over 40 or LOC grade 3 collapse CPR",
@@ -22,7 +38,7 @@
     "prevention canal lavage retrograde cement gun distal vent minimize pressurization FiO2 100 euvolemia vasopressor ready"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-09",
   "next_review_due": "2027-03-09",
   "review_tier": 2,
@@ -32,24 +48,56 @@
     "Olsen F, Kotyra M, Houltz E, Ricksten SE. Bone cement implantation syndrome in cemented hemiarthroplasty for femoral neck fracture: incidence, risk factors, and effect on outcome. Br J Anaesth. 2014;113(5):800-806"
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-09", "change": "Initial entry — Donaldson grading, mechanism, risk factors, the shared surgical/anesthetic prevention checklist, and grade-by-grade management (RV-failure framing). From the CV BCIS audit + the primary Donaldson 2009 review and the 2015 AAGBI hemiarthroplasty safety guideline." }
+    {
+      "version": 1,
+      "date": "2026-09-09",
+      "change": "Initial entry — Donaldson grading, mechanism, risk factors, the shared surgical/anesthetic prevention checklist, and grade-by-grade management (RV-failure framing). From the CV BCIS audit + the primary Donaldson 2009 review and the 2015 AAGBI hemiarthroplasty safety guideline."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "Hypoxia, hypotension, arrhythmia, or arrest occurring around femoral canal pressurization, prosthesis insertion, or joint reduction during a cemented arthroplasty — an embolic shower (fat, marrow, cement, air, debris) causing pulmonary vascular obstruction and acute right-heart strain, with a monomer-mediated vasodilatory component. Grade by the Donaldson scale, treat it as right ventricular failure, and stop cementing.",
-  "whyThisMatters": "The highest-incidence setting is a cemented hemiarthroplasty for a hip fracture in an elderly patient with limited cardiopulmonary reserve — exactly the population least able to tolerate an acute rise in pulmonary vascular resistance — and the deterioration lands in a predictable 30-60 second window that the anesthetist can be ready for. Severe BCIS (grade 2-3) carries real perioperative mortality, and a hypovolemic patient at the moment of cementation is the setup that turns a transient dip into an arrest.",
-  "clinicalTakeaway": "Anticipate it: before cementation, raise FiO2 toward 1.0, confirm euvolemia, have a vasopressor drawn up and running low-dose if needed, and make sure the surgeon announces cementation. If BCIS occurs — 100% oxygen, IV fluids, an alpha-agonist (phenylephrine) first, escalate to norepinephrine then epinephrine for RV failure or refractory hypotension, hold further cementation, and run ACLS for grade 3. Treat it as acute RV failure: support coronary perfusion pressure, avoid fluid overload and further increases in PVR (hypoxia, hypercarbia, acidosis), and consider an inhaled pulmonary vasodilator (epoprostenol / nitric oxide) if there is a pulmonary-hypertensive crisis. Most survivors are transient — but monitor for delayed hypoxia and embolic complications.",
+  "whyThisMatters": "The highest-incidence setting is a cemented hemiarthroplasty for a hip fracture in an elderly patient with limited cardiopulmonary reserve — exactly the population least able to tolerate an acute rise in pulmonary vascular resistance — and the deterioration lands in a predictable 30-60 second window that the anesthetist can be ready for.\n\nSevere BCIS (grade 2-3) carries real perioperative mortality, and a hypovolemic patient at the moment of cementation is the setup that turns a transient dip into an arrest.",
+  "clinicalTakeaway": "ANTICIPATE IT — before cementation:\n- raise FiO2 toward 1.0\n- confirm euvolemia\n- have a vasopressor drawn up and running low-dose if needed\n- make sure the surgeon announces cementation\n\nIF BCIS OCCURS:\n- 100% oxygen, IV fluids\n- an alpha-agonist (phenylephrine) first, escalate to norepinephrine then epinephrine for RV failure or refractory hypotension\n- hold further cementation\n- run ACLS for grade 3\n\nTreat it as acute RV failure: support coronary perfusion pressure, avoid fluid overload and further increases in PVR (hypoxia, hypercarbia, acidosis), and consider an inhaled pulmonary vasodilator (epoprostenol / nitric oxide) if there is a pulmonary-hypertensive crisis.\n\nMost survivors are transient — but monitor for delayed hypoxia and embolic complications.",
   "body": [
-    { "type": "heading", "level": 2, "text": "Grading (Donaldson 2009)" },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Grading (Donaldson 2009)"
+    },
     {
       "type": "table",
-      "columns": ["Grade", "Definition"],
+      "columns": [
+        "Grade",
+        "Definition"
+      ],
       "rows": [
-        ["1", "Moderate hypoxia (SpO2 < 94%) OR hypotension (fall in systolic BP > 20%)"],
-        ["2", "Severe hypoxia (SpO2 < 88%) OR hypotension (fall in systolic BP > 40%) OR unexpected loss of consciousness"],
-        ["3", "Cardiovascular collapse requiring CPR"]
+        [
+          "1",
+          "Moderate hypoxia (SpO2 < 94%) OR hypotension (fall in systolic BP > 20%)"
+        ],
+        [
+          "2",
+          "Severe hypoxia (SpO2 < 88%) OR hypotension (fall in systolic BP > 40%) OR unexpected loss of consciousness"
+        ],
+        [
+          "3",
+          "Cardiovascular collapse requiring CPR"
+        ]
       ]
     },
-    { "type": "text", "text": "Grade 1 is common and usually self-limiting; grades 2-3 are the ones with a mortality signal. The event typically begins within 30-60 seconds of cement or prosthesis insertion (or of reduction / tourniquet release in a cemented knee) and evolves over a few minutes." },
-    { "type": "heading", "level": 2, "text": "Mechanism" },
+    {
+      "type": "text",
+      "text": "Grade 1 is common and usually self-limiting; grades 2-3 are the ones with a mortality signal. The event typically begins within 30-60 seconds of cement or prosthesis insertion (or of reduction / tourniquet release in a cemented knee) and evolves over a few minutes."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Mechanism"
+    },
     {
       "type": "list",
       "items": [
@@ -59,7 +107,11 @@
         "Net picture: acute cor pulmonale — low cardiac output from a pressure-overloaded RV, systemic hypotension, hypoxia from V/Q mismatch and a low mixed-venous saturation."
       ]
     },
-    { "type": "heading", "level": 2, "text": "Risk factors" },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Risk factors"
+    },
     {
       "type": "list",
       "items": [
@@ -68,7 +120,11 @@
         "Setting: cemented hemiarthroplasty for femoral neck fracture has the highest reported incidence; also cemented TKA (at tourniquet release), vertebroplasty / kyphoplasty."
       ]
     },
-    { "type": "heading", "level": 2, "text": "Prevention (shared surgical + anesthetic checklist)" },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Prevention (shared surgical + anesthetic checklist)"
+    },
     {
       "type": "list",
       "items": [
@@ -78,7 +134,11 @@
         "Corticosteroid pre-treatment (e.g. methylprednisolone) has one small positive trial and is reasonable in a very high-risk case, but is not established practice; dexamethasone alone is untested."
       ]
     },
-    { "type": "heading", "level": 2, "text": "Management" },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Management"
+    },
     {
       "type": "list",
       "items": [
@@ -90,6 +150,9 @@
       ]
     }
   ],
-  "related": ["physiologically-difficult-airway", "pressor-inotrope-reference"],
+  "related": [
+    "physiologically-difficult-airway",
+    "pressor-inotrope-reference"
+  ],
   "buildNote": "Tier 2 — the Donaldson grading and the 2015 AAGBI hemiarthroplasty guidance are stable; incidence/mortality figures and the role of modern cementing technique are the parts to re-check. Deliberately an OR/peri-op emergency reference; RV-failure management overlaps `pressor-inotrope-reference` at the pointer level only."
 }

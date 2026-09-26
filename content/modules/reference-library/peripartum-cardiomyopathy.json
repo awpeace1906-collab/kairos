@@ -3,13 +3,35 @@
   "section": "Reference Library",
   "category": "Obstetric & Gynecologic",
   "title": "Peripartum Cardiomyopathy",
-  "settingEmphasis": ["ed", "icu"],
-  "audience": ["adult"],
-  "aliases": ["PPCM", "postpartum cardiomyopathy"],
-  "tags": ["peripartum cardiomyopathy", "PPCM", "heart failure", "pregnancy", "postpartum", "ED", "ICU"],
-  "keywords": ["diagnosis requires heart failure developing in the last month of pregnancy through 5 months postpartum, an ejection fraction under 45 percent, and no other identifiable cause, four criteria not just a low EF found incidentally postpartum", "easy to misattribute dyspnea/edema/fatigue in late pregnancy or early postpartum to normal pregnancy physiology, a real and dangerous diagnostic delay pattern, have a lower threshold for an echo in this population than you would otherwise", "bromocriptine added to standard heart failure therapy improves LV function/remodeling in the current evidence base, mechanism is stopping prolactin, whose cleaved fragment is implicated in the disease process, this is not yet universal standard of care everywhere", "standard heart failure medications need pregnancy/lactation-safe substitutions, ACE inhibitors and ARBs are contraindicated in pregnancy, know which agents are safe to use instead", "anticoagulation is a real consideration given the elevated thromboembolic risk with a severely reduced EF in the peripartum period, not an afterthought"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "audience": [
+    "adult"
+  ],
+  "aliases": [
+    "PPCM",
+    "postpartum cardiomyopathy"
+  ],
+  "tags": [
+    "peripartum cardiomyopathy",
+    "PPCM",
+    "heart failure",
+    "pregnancy",
+    "postpartum",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "diagnosis requires heart failure developing in the last month of pregnancy through 5 months postpartum, an ejection fraction under 45 percent, and no other identifiable cause, four criteria not just a low EF found incidentally postpartum",
+    "easy to misattribute dyspnea/edema/fatigue in late pregnancy or early postpartum to normal pregnancy physiology, a real and dangerous diagnostic delay pattern, have a lower threshold for an echo in this population than you would otherwise",
+    "bromocriptine added to standard heart failure therapy improves LV function/remodeling in the current evidence base, mechanism is stopping prolactin, whose cleaved fragment is implicated in the disease process, this is not yet universal standard of care everywhere",
+    "standard heart failure medications need pregnancy/lactation-safe substitutions, ACE inhibitors and ARBs are contraindicated in pregnancy, know which agents are safe to use instead",
+    "anticoagulation is a real consideration given the elevated thromboembolic risk with a severely reduced EF in the peripartum period, not an afterthought"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -19,11 +41,20 @@
     "Arany Z, Elkayam U. Peripartum Cardiomyopathy. Circulation. 2016;133(14):1397-1409."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). Previously only a bare tag mention inside heart-failure-continuum with no dedicated content — this module supplies the PPCM-specific diagnostic criteria and pregnancy/lactation-safe management nuances that general heart failure content doesn't address." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). Previously only a bare tag mention inside heart-failure-continuum with no dedicated content — this module supplies the PPCM-specific diagnostic criteria and pregnancy/lactation-safe management nuances that general heart failure content doesn't address."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "Peripartum cardiomyopathy is easy to misattribute to normal late-pregnancy physiology — dyspnea, edema, and fatigue overlap heavily with a normal pregnancy — so a lower threshold for an echo in this population matters, and diagnosis requires the specific combination of heart failure timing, EF under 45%, and no other identifiable cause, not just an incidentally low EF found postpartum.",
   "whyThisMatters": "The classic PPCM symptoms overlap so heavily with expected late-pregnancy and early-postpartum physiology that real diagnostic delay is a documented pattern — recognizing when dyspnea/edema/fatigue has crossed from 'normal pregnancy' into 'possible heart failure' territory, and knowing which standard heart failure medications are actually safe in pregnancy/lactation, are the two places this diagnosis most commonly goes wrong.",
-  "clinicalTakeaway": "Diagnostic criteria (all four required): heart failure developing in the last month of pregnancy through 5 months postpartum; LV ejection fraction under 45% (with or without LV dilatation); no other identifiable cause of heart failure; no recognizable heart disease before the last month of pregnancy. Have a genuinely lower threshold for obtaining an echocardiogram in a peripartum patient with dyspnea, edema, or fatigue that seems more than expected for normal pregnancy — diagnostic delay from misattributing these symptoms to pregnancy itself is a real, documented pattern. Use pregnancy/lactation-safe heart failure medications — ACE inhibitors and ARBs are CONTRAINDICATED in pregnancy (teratogenic), substitute hydralazine/nitrates for afterload reduction antepartum, with ACE-I/ARB reintroduction typically reasonable postpartum depending on lactation plans and specific agent. Bromocriptine added to standard heart failure therapy has current evidence (including a 2025 meta-analysis) supporting improved LV function/remodeling, based on stopping prolactin (a cleaved prolactin fragment is implicated in the disease's pathophysiology) — discuss with cardiology/maternal-fetal medicine as this isn't yet universal standard of care everywhere. Consider anticoagulation given elevated thromboembolic risk with a severely reduced EF in the peripartum period.",
+  "clinicalTakeaway": "Diagnostic criteria (all four required):\n1. heart failure developing in the last month of pregnancy through 5 months postpartum\n2. LV ejection fraction under 45% (with or without LV dilatation)\n3. no other identifiable cause of heart failure\n4. no recognizable heart disease before the last month of pregnancy\n\nTHRESHOLD: have a genuinely lower threshold for obtaining an echocardiogram in a peripartum patient with dyspnea, edema, or fatigue that seems more than expected for normal pregnancy — diagnostic delay from misattributing these symptoms to pregnancy itself is a real, documented pattern.\n\nMEDICATIONS: use pregnancy/lactation-safe heart failure medications — ACE inhibitors and ARBs are CONTRAINDICATED in pregnancy (teratogenic); substitute hydralazine/nitrates for afterload reduction antepartum, with ACE-I/ARB reintroduction typically reasonable postpartum depending on lactation plans and specific agent.\n\nBROMOCRIPTINE added to standard heart failure therapy has current evidence (including a 2025 meta-analysis) supporting improved LV function/remodeling, based on stopping prolactin (a cleaved prolactin fragment is implicated in the disease's pathophysiology) — discuss with cardiology/maternal-fetal medicine as this isn't yet universal standard of care everywhere.\n\nConsider anticoagulation given elevated thromboembolic risk with a severely reduced EF in the peripartum period.",
   "body": [
     {
       "type": "heading",
@@ -51,7 +82,7 @@
     },
     {
       "type": "text",
-      "text": "Dyspnea, lower extremity edema, and fatigue are all common in normal late pregnancy and the early postpartum period, which makes PPCM genuinely easy to miss or delay diagnosing — these same symptoms are the presenting complaints of heart failure. Red flags that should lower the threshold for echocardiography: symptoms that are more severe or more rapidly progressive than typical for the patient's gestational stage, orthopnea or paroxysmal nocturnal dyspnea (less typical of normal pregnancy physiology), or new-onset symptoms particularly in the immediate postpartum period (when normal pregnancy-related dyspnea would be expected to be improving, not worsening)."
+      "text": "Dyspnea, lower extremity edema, and fatigue are all common in normal late pregnancy and the early postpartum period, which makes PPCM genuinely easy to miss or delay diagnosing — these same symptoms are the presenting complaints of heart failure.\n\nRed flags that should lower the threshold for echocardiography:\n- symptoms that are more severe or more rapidly progressive than typical for the patient's gestational stage\n- orthopnea or paroxysmal nocturnal dyspnea (less typical of normal pregnancy physiology)\n- new-onset symptoms particularly in the immediate postpartum period (when normal pregnancy-related dyspnea would be expected to be improving, not worsening)"
     },
     {
       "type": "heading",
@@ -78,6 +109,10 @@
       "text": "A substantial proportion of patients recover meaningful LV function, though recovery is not universal and some progress to chronic heart failure. Future pregnancy carries a real risk of PPCM recurrence, particularly in patients whose LV function has not fully recovered — this is an important counseling point for a patient of reproductive age who has had PPCM, best addressed collaboratively with cardiology and maternal-fetal medicine before a subsequent pregnancy is attempted."
     }
   ],
-  "related": ["heart-failure-continuum", "maternal-cardiac-arrest", "preeclampsia-eclampsia-hellp"],
+  "related": [
+    "heart-failure-continuum",
+    "maternal-cardiac-arrest",
+    "preeclampsia-eclampsia-hellp"
+  ],
   "buildNote": "Obstetric & Gynecologic category. Diagnostic criteria and the bromocriptine evidence WebSearch-verified against the ESC 2019 position statement and the 2025 ESC Heart Failure meta-analysis (Adamu et al.) — bromocriptine explicitly framed as evolving/not-yet-universal practice per that source's own trial sequential analysis caveat about needing larger confirmatory trials."
 }

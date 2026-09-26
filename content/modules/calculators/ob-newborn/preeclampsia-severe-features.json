@@ -3,11 +3,28 @@
   "section": "Calculators",
   "category": "Obstetric / Newborn (ED & OR crossover)",
   "title": "Preeclampsia — Severe Features / HELLP",
-  "settingEmphasis": ["ed", "icu", "or"],
-  "aliases": ["preeclampsia severity", "severe preeclampsia criteria", "HELLP syndrome", "Mississippi classification"],
-  "tags": ["obstetrics", "preeclampsia", "HELLP", "hypertension in pregnancy", "OB", "ED", "ICU"],
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "or"
+  ],
+  "aliases": [
+    "preeclampsia severity",
+    "severe preeclampsia criteria",
+    "HELLP syndrome",
+    "Mississippi classification"
+  ],
+  "tags": [
+    "obstetrics",
+    "preeclampsia",
+    "HELLP",
+    "hypertension in pregnancy",
+    "OB",
+    "ED",
+    "ICU"
+  ],
   "contentType": "calculator",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-14",
   "next_review_due": "2027-03-14",
   "review_tier": 1,
@@ -16,73 +33,140 @@
     "Martin JN Jr, et al. The spectrum of severe preeclampsia: comparative analysis by HELLP syndrome classification. Am J Obstet Gynecol. 1999;180(6 Pt 1):1373-1384 (Mississippi Triple-Class System)."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap. Companion to the existing preeclampsia-eclampsia-hellp reference module (which covers management); this is the bedside severe-features checklist itself, cross-linked both directions." }
+    {
+      "version": 1,
+      "date": "2026-09-14",
+      "change": "Initial entry — a genuine content gap. Companion to the existing preeclampsia-eclampsia-hellp reference module (which covers management); this is the bedside severe-features checklist itself, cross-linked both directions."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "engine": "additive",
-  "settings": ["ED", "ICU", "OR"],
+  "settings": [
+    "ED",
+    "ICU",
+    "OR"
+  ],
   "purpose": "Any ONE severe-feature criterion present converts preeclampsia to 'preeclampsia with severe features' — this checklist makes that any-one-positive logic explicit rather than requiring you to hold seven criteria in your head.",
   "items": [
     {
       "key": "bp",
       "label": "Blood pressure",
       "options": [
-        { "label": "SBP < 160 and DBP < 110", "points": 0 },
-        { "label": "SBP ≥ 160 or DBP ≥ 110 (persistent, ≥ 2 readings ≥ 4 h apart, or treated urgently)", "points": 1 }
+        {
+          "label": "SBP < 160 and DBP < 110",
+          "points": 0
+        },
+        {
+          "label": "SBP ≥ 160 or DBP ≥ 110 (persistent, ≥ 2 readings ≥ 4 h apart, or treated urgently)",
+          "points": 1
+        }
       ]
     },
     {
       "key": "platelets",
       "label": "Platelet count",
       "options": [
-        { "label": "≥ 100,000/µL", "points": 0 },
-        { "label": "< 100,000/µL", "points": 1 }
+        {
+          "label": "≥ 100,000/µL",
+          "points": 0
+        },
+        {
+          "label": "< 100,000/µL",
+          "points": 1
+        }
       ]
     },
     {
       "key": "liver",
       "label": "Liver function",
       "options": [
-        { "label": "Normal / mild elevation", "points": 0 },
-        { "label": "Transaminases ≥ 2× upper limit of normal, or severe persistent RUQ/epigastric pain unresponsive to medication and not explained by an alternative diagnosis", "points": 1 }
+        {
+          "label": "Normal / mild elevation",
+          "points": 0
+        },
+        {
+          "label": "Transaminases ≥ 2× upper limit of normal, or severe persistent RUQ/epigastric pain unresponsive to medication and not explained by an alternative diagnosis",
+          "points": 1
+        }
       ]
     },
     {
       "key": "renal",
       "label": "Renal function",
       "options": [
-        { "label": "Creatinine ≤ 1.1 mg/dL and not doubled from baseline", "points": 0 },
-        { "label": "Creatinine > 1.1 mg/dL, or doubled from baseline, without other renal disease", "points": 1 }
+        {
+          "label": "Creatinine ≤ 1.1 mg/dL and not doubled from baseline",
+          "points": 0
+        },
+        {
+          "label": "Creatinine > 1.1 mg/dL, or doubled from baseline, without other renal disease",
+          "points": 1
+        }
       ]
     },
     {
       "key": "pulmEdema",
       "label": "Pulmonary edema",
       "options": [
-        { "label": "Absent", "points": 0 },
-        { "label": "Present", "points": 1 }
+        {
+          "label": "Absent",
+          "points": 0
+        },
+        {
+          "label": "Present",
+          "points": 1
+        }
       ]
     },
     {
       "key": "headache",
       "label": "Headache",
       "options": [
-        { "label": "Absent, or responds to acetaminophen", "points": 0 },
-        { "label": "New-onset, unresponsive to medication, not explained by an alternative diagnosis", "points": 1 }
+        {
+          "label": "Absent, or responds to acetaminophen",
+          "points": 0
+        },
+        {
+          "label": "New-onset, unresponsive to medication, not explained by an alternative diagnosis",
+          "points": 1
+        }
       ]
     },
     {
       "key": "visual",
       "label": "Visual disturbance",
       "options": [
-        { "label": "Absent", "points": 0 },
-        { "label": "Present", "points": 1 }
+        {
+          "label": "Absent",
+          "points": 0
+        },
+        {
+          "label": "Present",
+          "points": 1
+        }
       ]
     }
   ],
   "interpretation": [
-    { "min": 0, "max": 0, "label": "Preeclampsia WITHOUT severe features", "risk": "Management (inpatient vs. expectant outpatient) depends on gestational age and trend — not an emergency by this checklist alone, but reassess frequently since features can develop rapidly", "severity": "low" },
-    { "min": 1, "max": 7, "label": "Preeclampsia WITH severe features", "risk": "Inpatient management, magnesium sulfate for seizure prophylaxis, treat severe-range BP, and involve OB/MFM for delivery-timing decisions by gestational age", "severity": "high" }
+    {
+      "min": 0,
+      "max": 0,
+      "label": "Preeclampsia WITHOUT severe features",
+      "risk": "Management (inpatient vs. expectant outpatient) depends on gestational age and trend — not an emergency by this checklist alone, but reassess frequently since features can develop rapidly",
+      "severity": "low"
+    },
+    {
+      "min": 1,
+      "max": 7,
+      "label": "Preeclampsia WITH severe features",
+      "risk": "Inpatient management, magnesium sulfate for seizure prophylaxis, treat severe-range BP, and involve OB/MFM for delivery-timing decisions by gestational age",
+      "severity": "high"
+    }
   ],
-  "notes": "Only ONE positive criterion is needed to call severe features — this is a checklist, not a point-threshold score; the total shown is really just a count of how many criteria are met. HELLP syndrome (Hemolysis, Elevated Liver enzymes, Low Platelets) is itself a form of severe preeclampsia and automatically satisfies this checklist via the platelet and/or liver criteria. HELLP severity is separately graded by the Mississippi Triple-Class System, based on the platelet nadir: Class 1 ≤ 50,000/µL (most severe), Class 2 50,001-100,000/µL, Class 3 100,001-150,000/µL — all classes also require AST/ALT ≥ 40 U/L and LDH ≥ 600 U/L to meet the HELLP lab definition itself.",
+  "notes": "Only ONE positive criterion is needed to call severe features — this is a checklist, not a point-threshold score; the total shown is really just a count of how many criteria are met.\n\nHELLP syndrome (Hemolysis, Elevated Liver enzymes, Low Platelets) is itself a form of severe preeclampsia and automatically satisfies this checklist via the platelet and/or liver criteria.\n\nHELLP severity is separately graded by the Mississippi Triple-Class System, based on the platelet nadir:\n- Class 1 ≤ 50,000/µL (most severe)\n- Class 2 50,001-100,000/µL\n- Class 3 100,001-150,000/µL\n\nAll classes also require AST/ALT ≥ 40 U/L and LDH ≥ 600 U/L to meet the HELLP lab definition itself.",
   "buildNote": "Additive engine repurposed for any-one-positive logic (each criterion worth 1 point, any total ≥1 = severe features) rather than a summed severity score — matches how ASPECTS and other non-traditional additive uses are handled in this codebase. Cross-references preeclampsia-eclampsia-hellp (management reference) via aliases/keywords since calculators don't carry a `related` field."
 }

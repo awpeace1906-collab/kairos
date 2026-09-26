@@ -43,7 +43,7 @@
     "REMM REAC/TS dicentric assay cytogenetic biodosimetry"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -59,11 +59,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — exposure types, dose units, the time-to-emesis / lymphocyte-kinetics triage, the three ARS subsyndromes, cutaneous radiation injury, external vs internal contamination management with agent-specific decorporation, and combined injury. Completes the CBRN set alongside the hazmat, incendiary, nerve-agent, and vesicant modules."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "A significant whole-body dose of penetrating radiation produces acute radiation syndrome — a prodrome, a latent period, then one of three dose-dependent illnesses: hematopoietic (survivable with cytokines and support), gastrointestinal (high mortality), or neurovascular (fatal). Time to vomiting and the lymphocyte count over the first 48 hours are the bedside dose estimate; contamination is a separate problem managed by removing clothing and, for internal contamination, agent-specific decorporation.",
-  "whyThisMatters": "In a radiological event the immediate instinct — decontaminate before touching the patient — is backwards: life-threatening trauma is treated first, because external contamination is almost never an acute hazard to staff under universal precautions, while a delayed hemorrhage is. The dose that matters cannot be measured at the bedside for hours, so the triage tool is the clock (how fast did they vomit) and the trend (how fast are lymphocytes falling). And the treatments that change survival — early cytokines for the marrow, the right decorporation agent for the isotope, definitive surgery inside the 48-hour window — all have to start before the dose is confirmed.",
-  "clinicalTakeaway": "Treat life-threatening injuries first; decontaminate after (remove all clothing — that alone removes ~90% of external contamination — then wash; save swabs and clothing for dosimetry). Record the time from exposure to first vomiting (< 1 h suggests a severe dose, > 4 h a mild one) and send serial CBC-with-differential every 6-12 h to track the lymphocyte fall. Start G-CSF (filgrastim) early for an expected significant marrow dose (roughly > 2-3 Gy or a rapidly falling count), with transfusion support, antimicrobial prophylaxis, and reverse isolation. For internal contamination, match the decorporation agent to the isotope: potassium iodide for radioiodine (only useful early), Prussian blue for cesium-137 or thallium, Ca-/Zn-DTPA for plutonium/americium/transuranics, sodium bicarbonate for uranium. Use REMM (remm.hhs.gov) and contact REAC/TS.",
+  "whyThisMatters": "In a radiological event the immediate instinct — decontaminate before touching the patient — is backwards: life-threatening trauma is treated first, because external contamination is almost never an acute hazard to staff under universal precautions, while a delayed hemorrhage is.\n\nThe dose that matters cannot be measured at the bedside for hours, so the triage tool is the clock (how fast did they vomit) and the trend (how fast are lymphocytes falling).\n\nAnd the treatments that change survival — early cytokines for the marrow, the right decorporation agent for the isotope, definitive surgery inside the 48-hour window — all have to start before the dose is confirmed.",
+  "clinicalTakeaway": "1. Treat life-threatening injuries first; decontaminate after (remove all clothing — that alone removes ~90% of external contamination — then wash; save swabs and clothing for dosimetry).\n2. Record the time from exposure to first vomiting (< 1 h suggests a severe dose, > 4 h a mild one) and send serial CBC-with-differential every 6-12 h to track the lymphocyte fall.\n3. Start G-CSF (filgrastim) early for an expected significant marrow dose (roughly > 2-3 Gy or a rapidly falling count), with transfusion support, antimicrobial prophylaxis, and reverse isolation.\n\nFor internal contamination, match the decorporation agent to the isotope:\n- potassium iodide for radioiodine (only useful early)\n- Prussian blue for cesium-137 or thallium\n- Ca-/Zn-DTPA for plutonium/americium/transuranics\n- sodium bicarbonate for uranium\n\nUse REMM (remm.hhs.gov) and contact REAC/TS.",
   "body": [
     {
       "type": "heading",

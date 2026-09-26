@@ -42,7 +42,7 @@
     "high-dose insulin euglycemia"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -60,6 +60,11 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the toxidrome recognition table + serotonin-syndrome/NMS, and the highest-yield specific-overdose regimens (APAP, TCA, BB/CCB, sympathomimetic, salicylate). Full antidote dosing lives in the antidotes-reversal-agents module."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Read the vitals + pupils + skin together to name the toxidrome, then treat the mechanism. Anticholinergic = hot/dry/flushed, mydriasis, tachycardia. Cholinergic = wet (SLUDGE), miosis, bradycardia. Sympathomimetic = diaphoretic, mydriasis, tachy-hypertensive. Opioid = pinpoint pupils + hypoventilation.",
@@ -189,7 +194,7 @@
     },
     {
       "type": "text",
-      "text": "Tinnitus, tachypnea, a MIXED respiratory alkalosis + high-anion-gap metabolic acidosis, hyperthermia. Serum salicylate level + serial ABG/VBG. Sodium bicarbonate infusion to alkalinize the urine (target urine pH 7.5–8) and keep serum pH ~ 7.45–7.55 — this traps salicylate out of the CNS. Glucose even if serum glucose is normal (CNS neuroglycopenia). Hemodialysis for a level > 90–100 mg/dL (acute), altered mentation, pulmonary/cerebral edema, renal failure, or refractory acidosis. NEVER intubate casually — apnea during the procedure drops the pH and can precipitate arrest; if you must, match the pre-intubation minute ventilation and pre-treat with bicarbonate."
+      "text": "Tinnitus, tachypnea, a MIXED respiratory alkalosis + high-anion-gap metabolic acidosis, hyperthermia. Serum salicylate level + serial ABG/VBG.\n\n- Sodium bicarbonate infusion to alkalinize the urine (target urine pH 7.5–8) and keep serum pH ~ 7.45–7.55 — this traps salicylate out of the CNS.\n- Glucose even if serum glucose is normal (CNS neuroglycopenia).\n- Hemodialysis for a level > 90–100 mg/dL (acute), altered mentation, pulmonary/cerebral edema, renal failure, or refractory acidosis.\n\nNEVER intubate casually — apnea during the procedure drops the pH and can precipitate arrest; if you must, match the pre-intubation minute ventilation and pre-treat with bicarbonate."
     }
   ],
   "related": [

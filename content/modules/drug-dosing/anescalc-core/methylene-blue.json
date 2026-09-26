@@ -14,7 +14,7 @@
     "blue"
   ],
   "contentType": "anesthesia-drug-card",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-01",
   "next_review_due": "2026-12-01",
   "review_tier": 1,
@@ -26,11 +26,16 @@
       "version": 1,
       "date": "2026-09-01",
       "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "drugClass": "methylene-blue",
   "drugClassLabel": "Methylene Blue",
-  "mechanism": "Phenothiazine dye. Principal anesthesia/critical care mechanisms: (1) Guanylate cyclase inhibitor — blocks NO-mediated vasodilation → reverses distributive shock unresponsive to catecholamines. (2) Electron carrier in methemoglobin reduction — donates electrons via NADPH-methemoglobin reductase, converting met-Hgb Fe³⁺ → Fe²⁺. (3) MAO-A inhibitor at high doses — serotonin syndrome risk. (4) Mitochondrial electron chain support in cyanide/CO poisoning.",
+  "mechanism": "Phenothiazine dye. Principal anesthesia/critical care mechanisms:\n1. Guanylate cyclase inhibitor — blocks NO-mediated vasodilation → reverses distributive shock unresponsive to catecholamines.\n2. Electron carrier in methemoglobin reduction — donates electrons via NADPH-methemoglobin reductase, converting met-Hgb Fe³⁺ → Fe²⁺.\n3. MAO-A inhibitor at high doses — serotonin syndrome risk.\n4. Mitochondrial electron chain support in cyanide/CO poisoning.",
   "onset": "Vasopressor: 1–2 min IV. MetHgb reversal: 15–30 min IV.",
   "duration": "Vasopressor: 30–60 min (may repeat). MetHgb reversal: 60–120 min; repeat if met-Hgb rebounds.",
   "dosing": "VASOPLEGIC SHOCK (cardiac surgery / catecholamine-refractory): 1–2 mg/kg IV over 15–20 min; may repeat q30–60 min (max 7 mg/kg/day). Continuous infusion (off-label): 0.25–2 mg/kg/hr.\n\nMETHEMOGLOBINEMIA (symptomatic >30% or >20% with sx): 1–2 mg/kg IV over 5–15 min. Repeat 1 mg/kg in 30–60 min if met-Hgb persists. Max single course 7 mg/kg. Available as 10 mg/mL (1%) solution.\n\nANAPHYLAXIS (refractory, adjunct to epinephrine): 1–2 mg/kg IV over 20 min.\n\nINTRAOPERATIVE MAPPING / SENTINEL NODE: 1% solution, 5 mL local intradermal injection (subcutaneous, not IV for this indication).\n\nPARATHYROID LOCALIZATION (intraoperative): 5 mg/kg IV over 20 min before incision — tissues stain blue-green; parathyroid remains unstained (differential uptake).\n\nCYANIDE POISONING (adjunct to hydroxocobalamin): 1–2 mg/kg IV; electron donor role in cyanide-impaired mitochondrial chain.\n\nIFOSFAMIDE ENCEPHALOPATHY: 50 mg IV q6h until resolution (weight-independent fixed dosing per published protocols).",

@@ -3,12 +3,32 @@
   "section": "Reference Library",
   "category": "ENT / Ophtho / Dental / GU",
   "title": "Ophthalmologic Emergencies",
-  "settingEmphasis": ["ed"],
-  "aliases": ["eye emergencies", "acute vision loss", "red eye emergency", "ocular trauma"],
-  "tags": ["angle-closure glaucoma", "globe rupture", "CRAO", "chemical eye injury", "ophthalmology", "ED"],
-  "keywords": ["acute angle-closure glaucoma is a painful red eye with a mid-dilated fixed pupil and a rock-hard globe on palpation, treat before ophtho even arrives", "globe rupture — stop the exam, rigid shield, no further manipulation or pressure, nothing by mouth for OR", "CRAO is a stroke of the eye, painless sudden monocular vision loss, treat on the same urgent timeline as an ischemic stroke", "chemical injury to the eye is the one true can't-wait-for-consult ophtho emergency, irrigate first before checking visual acuity or anything else", "alkali burns penetrate deeper and are worse than acid burns"],
+  "settingEmphasis": [
+    "ed"
+  ],
+  "aliases": [
+    "eye emergencies",
+    "acute vision loss",
+    "red eye emergency",
+    "ocular trauma"
+  ],
+  "tags": [
+    "angle-closure glaucoma",
+    "globe rupture",
+    "CRAO",
+    "chemical eye injury",
+    "ophthalmology",
+    "ED"
+  ],
+  "keywords": [
+    "acute angle-closure glaucoma is a painful red eye with a mid-dilated fixed pupil and a rock-hard globe on palpation, treat before ophtho even arrives",
+    "globe rupture — stop the exam, rigid shield, no further manipulation or pressure, nothing by mouth for OR",
+    "CRAO is a stroke of the eye, painless sudden monocular vision loss, treat on the same urgent timeline as an ischemic stroke",
+    "chemical injury to the eye is the one true can't-wait-for-consult ophtho emergency, irrigate first before checking visual acuity or anything else",
+    "alkali burns penetrate deeper and are worse than acid burns"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,11 +38,20 @@
     "Varma DR, et al. A review of central retinal artery occlusion: clinical presentation and management. Eye (Lond). 2013;27(6):688-697."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). No ophthalmologic content existed anywhere in the corpus prior to this; these four diagnoses are the time-critical subset where delay directly costs vision." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). No ophthalmologic content existed anywhere in the corpus prior to this; these four diagnoses are the time-critical subset where delay directly costs vision."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "Four eye emergencies where minutes matter for vision: acute angle-closure glaucoma, globe rupture, central retinal artery occlusion, and chemical injury — each has a distinct first move that shouldn't wait for ophthalmology to arrive.",
   "whyThisMatters": "Unlike most 'red eye' presentations, these four are genuinely time-critical for vision preservation — chemical injury and CRAO in particular are measured in minutes, and globe rupture management is dominated by what you should NOT do (any pressure on the globe can extrude intraocular contents and convert a salvageable eye into a lost one).",
-  "clinicalTakeaway": "Chemical eye injury: irrigate immediately with whatever's available, before checking vision or history — this is the one ophtho complaint that never waits for anything else. Globe rupture: rigid shield (never a pressure patch), no further exam/manipulation, NPO, antiemetics to prevent Valsalva-induced extrusion, emergent ophtho. Acute angle-closure glaucoma: start IOP-lowering treatment in the ED, don't just wait for ophthalmology. CRAO: treat with the same urgency as an acute ischemic stroke — it may share the same underlying thrombotic/embolic workup and time-sensitive reperfusion window.",
+  "clinicalTakeaway": "CHEMICAL EYE INJURY: irrigate immediately with whatever's available, before checking vision or history — this is the one ophtho complaint that never waits for anything else.\n\nGLOBE RUPTURE: rigid shield (never a pressure patch), no further exam/manipulation, NPO, antiemetics to prevent Valsalva-induced extrusion, emergent ophtho.\n\nACUTE ANGLE-CLOSURE GLAUCOMA: start IOP-lowering treatment in the ED, don't just wait for ophthalmology.\n\nCRAO: treat with the same urgency as an acute ischemic stroke — it may share the same underlying thrombotic/embolic workup and time-sensitive reperfusion window.",
   "body": [
     {
       "type": "heading",
@@ -110,6 +139,9 @@
       ]
     }
   ],
-  "related": ["acute-ischemic-stroke", "lateral-canthotomy"],
+  "related": [
+    "acute-ischemic-stroke",
+    "lateral-canthotomy"
+  ],
   "buildNote": "New ENT / Ophtho / Dental / GU category. Deliberately scoped to the four genuinely time-critical eye emergencies rather than a general ophthalmology text; more common but less acute complaints (conjunctivitis, corneal abrasion, subconjunctival hemorrhage) are out of scope for a bedside crisis-reference module. related[] points to the new lateral-canthotomy procedure built alongside this in the same batch."
 }

@@ -3,12 +3,39 @@
   "section": "Reference Library",
   "category": "Anticoagulation & Labs",
   "title": "Transfusion Reactions — Recognition & Management",
-  "settingEmphasis": ["ed", "icu", "or"],
-  "aliases": ["TRALI", "TACO", "acute hemolytic transfusion reaction", "febrile non-hemolytic transfusion reaction", "transfusion anaphylaxis"],
-  "tags": ["transfusion", "TRALI", "TACO", "hemolytic reaction", "anaphylaxis", "blood products", "ED", "ICU", "OR"],
-  "keywords": ["stop the transfusion first, ask questions second", "recheck patient ID against the unit tag before anything else", "TRALI hypotension normal BNP within 6 hours", "TACO hypertension elevated BNP responds to diuretics", "IgA deficiency and severe anaphylaxis", "delayed hemolytic reaction days to weeks later minor antigen"],
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "or"
+  ],
+  "aliases": [
+    "TRALI",
+    "TACO",
+    "acute hemolytic transfusion reaction",
+    "febrile non-hemolytic transfusion reaction",
+    "transfusion anaphylaxis"
+  ],
+  "tags": [
+    "transfusion",
+    "TRALI",
+    "TACO",
+    "hemolytic reaction",
+    "anaphylaxis",
+    "blood products",
+    "ED",
+    "ICU",
+    "OR"
+  ],
+  "keywords": [
+    "stop the transfusion first, ask questions second",
+    "recheck patient ID against the unit tag before anything else",
+    "TRALI hypotension normal BNP within 6 hours",
+    "TACO hypertension elevated BNP responds to diuretics",
+    "IgA deficiency and severe anaphylaxis",
+    "delayed hemolytic reaction days to weeks later minor antigen"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-14",
   "next_review_due": "2027-03-14",
   "review_tier": 1,
@@ -18,9 +45,22 @@
     "Roubinian N. TACO and TRALI: biology, risk factors, and prevention. Hematology Am Soc Hematol Educ Program. 2018;2018(1):585-594."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap; blood-products covered product selection and thresholds only, not what to do when a transfusion goes wrong. Cross-linked both directions." }
+    {
+      "version": 1,
+      "date": "2026-09-14",
+      "change": "Initial entry — a genuine content gap; blood-products covered product selection and thresholds only, not what to do when a transfusion goes wrong. Cross-linked both directions."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
-  "related": ["blood-products", "anaphylaxis", "acute-dyspnea-niv"],
+  "related": [
+    "blood-products",
+    "anaphylaxis",
+    "acute-dyspnea-niv"
+  ],
   "summary": "What to do the moment a transfusion reaction is suspected, and how to tell the five reactions that actually change management apart — especially TRALI vs. TACO, which look similar but are treated almost oppositely.",
   "whyThisMatters": "Every suspected transfusion reaction gets the same first move — stop the transfusion — but what happens next diverges completely by type, and TRALI and TACO in particular are easy to confuse under pressure despite needing near-opposite management (one needs supportive respiratory care, the other needs diuresis).",
   "clinicalTakeaway": "Stop the transfusion, keep the line open with saline (not the blood), and recheck the patient's ID against the unit tag before anything else — a clerical ABO mismatch is the most preventable and most dangerous cause. Then use the distinguishing features below (timing, BP direction, BNP, diuretic response) to tell TRALI from TACO, since guessing wrong means treating a fluid-overloaded heart with more fluid, or under-supporting a capillary-leak lung injury.",
@@ -65,7 +105,7 @@
     },
     {
       "type": "text",
-      "text": "An antibody response to donor plasma proteins. Mild (urticaria, itching, no respiratory or hemodynamic involvement): can often resume the transfusion after an antihistamine once symptoms resolve. Severe/anaphylactic (bronchospasm, hypotension, angiedema): stop permanently, treat as anaphylaxis (epinephrine, antihistamines, steroids — see the anaphylaxis reference), and do not resume that unit. IgA-deficient patients with anti-IgA antibodies are at particular risk for severe reactions and need washed or IgA-deficient products for future transfusions — flag this for the blood bank once identified."
+      "text": "An antibody response to donor plasma proteins.\n\nMILD (urticaria, itching, no respiratory or hemodynamic involvement): can often resume the transfusion after an antihistamine once symptoms resolve.\n\nSEVERE/ANAPHYLACTIC (bronchospasm, hypotension, angiedema): stop permanently, treat as anaphylaxis (epinephrine, antihistamines, steroids — see the anaphylaxis reference), and do not resume that unit.\n\nIgA-deficient patients with anti-IgA antibodies are at particular risk for severe reactions and need washed or IgA-deficient products for future transfusions — flag this for the blood bank once identified."
     },
     {
       "type": "heading",
@@ -74,15 +114,47 @@
     },
     {
       "type": "table",
-      "columns": ["Feature", "TRALI", "TACO"],
+      "columns": [
+        "Feature",
+        "TRALI",
+        "TACO"
+      ],
       "rows": [
-        ["Mechanism", "Donor anti-HLA/anti-neutrophil antibodies attack recipient leukocytes, causing pulmonary capillary leak", "Volume overload from the transfusion itself, in a heart/kidneys that can't handle the load"],
-        ["Timing", "Within 6 hours of transfusion", "During transfusion up to ~12 hours after, often with rapid or large-volume infusion"],
-        ["Blood pressure", "Normal or LOW", "Elevated"],
-        ["BNP", "Normal or only mildly elevated", "Elevated"],
-        ["Volume status exam", "No signs of fluid overload — this is capillary leak, not volume excess", "JVD, peripheral edema, other overload signs"],
-        ["Response to diuretics", "No improvement — it isn't a volume problem", "Improves"],
-        ["Management", "Stop the transfusion, supportive respiratory care (oxygen, possibly mechanical ventilation) — do NOT fluid-restrict/diurese as the primary treatment", "Stop or slow the transfusion, diuresis (e.g. furosemide), oxygen, slow the rate of future units"]
+        [
+          "Mechanism",
+          "Donor anti-HLA/anti-neutrophil antibodies attack recipient leukocytes, causing pulmonary capillary leak",
+          "Volume overload from the transfusion itself, in a heart/kidneys that can't handle the load"
+        ],
+        [
+          "Timing",
+          "Within 6 hours of transfusion",
+          "During transfusion up to ~12 hours after, often with rapid or large-volume infusion"
+        ],
+        [
+          "Blood pressure",
+          "Normal or LOW",
+          "Elevated"
+        ],
+        [
+          "BNP",
+          "Normal or only mildly elevated",
+          "Elevated"
+        ],
+        [
+          "Volume status exam",
+          "No signs of fluid overload — this is capillary leak, not volume excess",
+          "JVD, peripheral edema, other overload signs"
+        ],
+        [
+          "Response to diuretics",
+          "No improvement — it isn't a volume problem",
+          "Improves"
+        ],
+        [
+          "Management",
+          "Stop the transfusion, supportive respiratory care (oxygen, possibly mechanical ventilation) — do NOT fluid-restrict/diurese as the primary treatment",
+          "Stop or slow the transfusion, diuresis (e.g. furosemide), oxygen, slow the rate of future units"
+        ]
       ]
     },
     {

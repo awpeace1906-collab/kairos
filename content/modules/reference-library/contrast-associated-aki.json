@@ -42,7 +42,7 @@
     "RenalGuard"
   ],
   "contentType": "reference",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-04",
   "next_review_due": "2027-03-04",
   "review_tier": 1,
@@ -67,6 +67,11 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — converted from the CV CI-AKI guide. Mehran score, the three trials, standard + LVEDP-guided hydration, drugs that work / don't, and the corrected MACD formula."
+    },
+    {
+      "version": 4,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "IV isotonic saline is the ONLY proven intervention. N-acetylcysteine and bicarbonate-over-saline do not work (PRESERVE). Risk-stratify before the case (Mehran + contrast-volume-to-limit ratio), hydrate, minimize contrast, use iso-osmolar agent, avoid unmatched forced diuresis.",
@@ -80,7 +85,7 @@
     },
     {
       "type": "text",
-      "text": "CI-AKI: serum creatinine rise ≥ 0.3 mg/dL or ≥ 25% within 48–72 h of intravascular contrast, no alternative explanation. Third most common cause of hospital-acquired AKI. Mechanisms: medullary hypoxia (contrast-induced renal vasoconstriction — the primary one) and direct tubular toxicity (worse with high-osmolar agents; iso-osmolar agents are significantly safer). Risk factors: eGFR < 60 (strongest predictor), diabetes, heart failure, high contrast volume, age > 75, anemia, intra-arterial delivery, pre-existing AKI."
+      "text": "CI-AKI: serum creatinine rise ≥ 0.3 mg/dL or ≥ 25% within 48–72 h of intravascular contrast, no alternative explanation. Third most common cause of hospital-acquired AKI.\n\nMechanisms:\n- medullary hypoxia (contrast-induced renal vasoconstriction — the primary one)\n- direct tubular toxicity (worse with high-osmolar agents; iso-osmolar agents are significantly safer)\n\nRisk factors: eGFR < 60 (strongest predictor), diabetes, heart failure, high contrast volume, age > 75, anemia, intra-arterial delivery, pre-existing AKI."
     },
     {
       "type": "heading",

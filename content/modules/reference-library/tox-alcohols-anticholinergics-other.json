@@ -42,7 +42,7 @@
     "anabolic steroid 17-alpha-alkylated hepatotoxicity peliosis hepatis polycythemia LVH sudden cardiac death"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -59,11 +59,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — converted from CV Intoxicating Substances Reference: ethanol (and withdrawal), methanol/ethylene glycol, anticholinergics (diphenhydramine/Datura), nicotine and e-liquid, kratom, and anabolic-androgenic steroids."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
-  "summary": "A grab-bag of high-consequence toxicities that share no receptor. Ethanol's emergency is usually the withdrawal that hasn't started yet; toxic alcohols kill via their metabolites, not the parent, so treat the gap before the level returns. Anticholinergic delirium has a distinctive whole-constellation picture — but diphenhydramine, the commonest cause, is also a sodium-channel blocker. Nicotine e-liquid toxicity is biphasic; kratom is opioid-like but invisible to the opioid screen; anabolic steroids are a chronic-organ-toxicity problem, not an overdose.",
-  "whyThisMatters": "Each of these has a decision that must be made before a confirmatory result exists: start fomepizole on an osmolar-plus-anion-gap picture rather than waiting days for a send-out level; give thiamine before glucose; recognize that the settled-down nicotine patient may be entering the more dangerous depressor phase; and know that physostigmine — the antidote taught for the anticholinergic toxidrome — is often the wrong move for diphenhydramine specifically.",
-  "clinicalTakeaway": "Toxic alcohols: any unexplained high-anion-gap metabolic acidosis with an elevated osmolar gap gets empiric fomepizole now (criteria: osmolar gap > 25, pH < 7.3, or oxalate crystals), plus hemodialysis for severe acidosis, visual symptoms, renal impairment, or very high levels. Ethanol: give thiamine before or with glucose; screen for withdrawal on every alcohol-involved visit (last drink, daily intake) and use CIWA-Ar-guided symptom-triggered benzodiazepines. Anticholinergics: benzodiazepines and evaporative cooling first-line; get an ECG for every diphenhydramine ingestion and treat a wide QRS with bicarbonate — reserve physostigmine for pure antimuscarinic poisoning with toxicology guidance. Nicotine e-liquid: monitor through both phases, do not discharge after the stimulatory phase settles. Kratom: a negative opioid screen does not exclude it. Anabolic steroids: ask directly about supplement/injectable use in any young patient with unexplained cardiomyopathy, hepatic lesions, or polycythemia.",
+  "summary": "A grab-bag of high-consequence toxicities that share no receptor.\n- Ethanol's emergency is usually the withdrawal that hasn't started yet.\n- Toxic alcohols kill via their metabolites, not the parent, so treat the gap before the level returns.\n- Anticholinergic delirium has a distinctive whole-constellation picture — but diphenhydramine, the commonest cause, is also a sodium-channel blocker.\n- Nicotine e-liquid toxicity is biphasic.\n- Kratom is opioid-like but invisible to the opioid screen.\n- Anabolic steroids are a chronic-organ-toxicity problem, not an overdose.",
+  "whyThisMatters": "Each of these has a decision that must be made before a confirmatory result exists:\n- start fomepizole on an osmolar-plus-anion-gap picture rather than waiting days for a send-out level\n- give thiamine before glucose\n- recognize that the settled-down nicotine patient may be entering the more dangerous depressor phase\n- know that physostigmine — the antidote taught for the anticholinergic toxidrome — is often the wrong move for diphenhydramine specifically",
+  "clinicalTakeaway": "TOXIC ALCOHOLS: any unexplained high-anion-gap metabolic acidosis with an elevated osmolar gap gets empiric fomepizole now (criteria: osmolar gap > 25, pH < 7.3, or oxalate crystals), plus hemodialysis for severe acidosis, visual symptoms, renal impairment, or very high levels.\n\nETHANOL: give thiamine before or with glucose; screen for withdrawal on every alcohol-involved visit (last drink, daily intake) and use CIWA-Ar-guided symptom-triggered benzodiazepines.\n\nANTICHOLINERGICS: benzodiazepines and evaporative cooling first-line; get an ECG for every diphenhydramine ingestion and treat a wide QRS with bicarbonate — reserve physostigmine for pure antimuscarinic poisoning with toxicology guidance.\n\nNICOTINE E-LIQUID: monitor through both phases, do not discharge after the stimulatory phase settles.\n\nKRATOM: a negative opioid screen does not exclude it.\n\nANABOLIC STEROIDS: ask directly about supplement/injectable use in any young patient with unexplained cardiomyopathy, hepatic lesions, or polycythemia.",
   "body": [
     {
       "type": "heading",

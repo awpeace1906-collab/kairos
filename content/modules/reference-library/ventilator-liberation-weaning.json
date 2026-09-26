@@ -45,7 +45,7 @@
     "reintubation 10 to 15 percent mortality delayed reintubation worse"
   ],
   "contentType": "reference",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2027-03-09",
   "review_tier": 2,
@@ -77,11 +77,16 @@
       "version": 1,
       "date": "2026-09-09",
       "change": "Initial entry — the daily readiness screen, SBT technique and pass/fail, SAT+SBT pairing, RSBI, cuff-leak test + prophylactic steroids, high-risk extubation to HFNC/NIV, the extubation procedure, post-extubation monitoring and reintubation, failure-to-wean work-up, and tracheostomy timing. Deepens the 'Weaning & extubation' section of ventilator-management."
+    },
+    {
+      "version": 4,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Screen every day, trial early, and separate the two questions: can they breathe (the SBT) and can they protect the airway (secretions, cough, cuff leak). Pass a 30-120 min SBT on low pressure support, extubate high-risk patients straight onto HFNC or NIV (never rescue NIV once failure is established), and watch the first 48-72 h. If a third SBT fails, stop guessing and hunt the reversible cause — cardiac, volume, neuromuscular, electrolyte, sedation, delirium.",
-  "whyThisMatters": "Each extra ventilator day adds VAP, delirium, and ICU-acquired weakness risk, so an unweaned patient who could be liberated is being harmed by the delay — but a premature extubation that fails carries an independent mortality signal, and a *delayed* reintubation is worse still. The job is to extubate at the earliest moment the odds favor it, with the post-extubation support that matches the patient's risk already running, not to wait for certainty.",
-  "clinicalTakeaway": "Run a daily readiness screen; when it passes, do a 30-120 minute SBT on pressure support 5-8 / PEEP 5 (or T-piece) paired with a sedation-interruption trial. Extubate if the SBT passes AND the patient follows commands, has a strong cough, and manageable secretions. For a high-risk patient (age > 65, COPD/CHF, > 7 days ventilated, prior failed SBT, weak cough) extubate directly onto HFNC — add NIV for hypercapnic COPD or cardiogenic pulmonary edema. Do a cuff-leak test only in high-risk airways; a failed test means pretreat with methylprednisolone 20 mg IV q4h x 4 starting = 4 h before, not cancel. If NIV is needed for *established* post-extubation failure, reintubate instead. Three failed SBTs = look for weaning-induced pulmonary edema, fluid overload, weakness, low phosphate/magnesium, oversedation, and delirium.",
+  "whyThisMatters": "Each extra ventilator day adds VAP, delirium, and ICU-acquired weakness risk, so an unweaned patient who could be liberated is being harmed by the delay — but a premature extubation that fails carries an independent mortality signal, and a DELAYED reintubation is worse still. The job is to extubate at the earliest moment the odds favor it, with the post-extubation support that matches the patient's risk already running, not to wait for certainty.",
+  "clinicalTakeaway": "1. Run a daily readiness screen; when it passes, do a 30-120 minute SBT on pressure support 5-8 / PEEP 5 (or T-piece) paired with a sedation-interruption trial.\n2. Extubate if the SBT passes AND the patient follows commands, has a strong cough, and manageable secretions.\n\nHIGH-RISK PATIENT (age > 65, COPD/CHF, > 7 days ventilated, prior failed SBT, weak cough): extubate directly onto HFNC — add NIV for hypercapnic COPD or cardiogenic pulmonary edema.\n\nCUFF-LEAK TEST: do a cuff-leak test only in high-risk airways; a failed test means pretreat with methylprednisolone 20 mg IV q4h x 4 starting = 4 h before, not cancel.\n\nIf NIV is needed for ESTABLISHED post-extubation failure, reintubate instead.\n\nThree failed SBTs = look for weaning-induced pulmonary edema, fluid overload, weakness, low phosphate/magnesium, oversedation, and delirium.",
   "body": [
     {
       "type": "heading",
@@ -117,7 +122,7 @@
     {
       "type": "list",
       "items": [
-        "Technique: pressure support 5-8 cm H2O with PEEP 5 (or CPAP 5, or a T-piece). The 2017 guideline suggests the *first* SBT be done with low pressure support rather than a T-piece, and last 30-120 minutes.",
+        "Technique: pressure support 5-8 cm H2O with PEEP 5 (or CPAP 5, or a T-piece). The 2017 guideline suggests the FIRST SBT be done with low pressure support rather than a T-piece, and last 30-120 minutes.",
         "Duration: 30 minutes is enough for most; extend toward 120 minutes for high-risk or repeatedly failing patients (a 30-min PS trial and a 2-h T-piece trial give similar extubation success — JAMA 2019).",
         "PASS if, for the whole trial: RR < 35 (ideally < 30), SpO2 = 90% (or PaO2 = 60 on FiO2 = 0.5), HR < 140 and no sustained change > 20%, SBP 90-180 with no new vasopressor need, and no distress — accessory muscle use, paradoxical abdominal motion, diaphoresis, agitation.",
         "FAIL for any of the above, or an RSBI that climbs through the trial. A failed SBT → return to a comfortable rest mode (do NOT keep them working), find why (below), and re-screen in 24 h."

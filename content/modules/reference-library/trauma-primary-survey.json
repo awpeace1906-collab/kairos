@@ -39,7 +39,7 @@
     "seashore vs barcode sign"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -57,6 +57,11 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — ABCDE with the immediate life-threats, hemorrhagic shock classification, the MTP (ratio, TXA, calcium, targets), TBI initial targets, and eFAST windows."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "ABCDE, addressing each life-threat as it's found. Control external hemorrhage first (direct pressure → tourniquet → wound packing). Permissive hypotension (SBP 80–90) until surgical control — EXCEPT in TBI, where you protect cerebral perfusion (MAP ≥ 80). Give blood in a 1:1:1 ratio and TXA within 3 hours.",
@@ -165,7 +170,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Activate for uncontrolled hemorrhage needing ≥ 3 units RBC in 1 h, an ABC score ≥ 2, or anticipated ≥ 10 units / 24 h. Transfuse RBC : FFP : platelets in a 1:1:1 ratio (PROPPR). Whole blood if available. TXA 1 g IV over 10 min within 3 h of injury (CRASH-2), then 1 g over 8 h — giving TXA after 3 h is associated with harm. Calcium: 1 g CaCl₂ (or 3 g gluconate) after every ~4 units of RBC (citrate chelation → ionized hypocalcemia worsens coagulopathy and cardiac function). Targets: fibrinogen > 150–200 mg/dL (cryoprecipitate / concentrate if low), platelets ≥ 50k (≥ 100k if TBI or ongoing bleeding), ionized calcium > 1.1, temperature > 36 °C, pH > 7.2."
+      "text": "ACTIVATE for uncontrolled hemorrhage needing ≥ 3 units RBC in 1 h, an ABC score ≥ 2, or anticipated ≥ 10 units / 24 h.\n\n- Transfuse RBC : FFP : platelets in a 1:1:1 ratio (PROPPR). Whole blood if available.\n- TXA 1 g IV over 10 min within 3 h of injury (CRASH-2), then 1 g over 8 h — giving TXA after 3 h is associated with harm.\n- Calcium: 1 g CaCl₂ (or 3 g gluconate) after every ~4 units of RBC (citrate chelation → ionized hypocalcemia worsens coagulopathy and cardiac function).\n\nTargets:\n- fibrinogen > 150–200 mg/dL (cryoprecipitate / concentrate if low)\n- platelets ≥ 50k (≥ 100k if TBI or ongoing bleeding)\n- ionized calcium > 1.1\n- temperature > 36 °C\n- pH > 7.2"
     },
     {
       "type": "heading",

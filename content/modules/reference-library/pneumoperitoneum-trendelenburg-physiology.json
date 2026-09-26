@@ -3,12 +3,31 @@
   "section": "Reference Library",
   "category": "Perioperative & Anesthesia",
   "title": "Pneumoperitoneum & Steep Trendelenburg Physiology",
-  "settingEmphasis": ["or"],
-  "aliases": ["CO2 insufflation physiology", "laparoscopic surgery physiology", "robotic surgery positioning"],
-  "tags": ["pneumoperitoneum", "Trendelenburg", "laparoscopic surgery", "robotic surgery", "CO2 insufflation", "OR"],
-  "keywords": ["raised intra-abdominal pressure from CO2 insufflation pushes the diaphragm up, reduces lung compliance, and raises peak airway pressures, expect to need more pressure/PEEP than you did before insufflation", "systemic vascular resistance typically rises with pneumoperitoneum, which can keep blood pressure looking normal or even elevated even as cardiac output and cerebral blood flow are actually falling, don't be falsely reassured by a normal BP alone", "keeping end-tidal CO2 in a moderate range, roughly 30-35, has been shown to blunt some of the adverse cerebral perfusion pressure effects of combined pneumoperitoneum and steep Trendelenburg", "internal jugular vein compression from prolonged head-down positioning raises intracranial pressure and has been linked to postoperative cognitive changes in some studies, watch the neck/face for progressive venous congestion over a long case", "facial and airway edema from prolonged steep Trendelenburg is a real extubation-timing consideration, don't be surprised by it and have a plan (leak test, cautious extubation) for a long robotic case"],
+  "settingEmphasis": [
+    "or"
+  ],
+  "aliases": [
+    "CO2 insufflation physiology",
+    "laparoscopic surgery physiology",
+    "robotic surgery positioning"
+  ],
+  "tags": [
+    "pneumoperitoneum",
+    "Trendelenburg",
+    "laparoscopic surgery",
+    "robotic surgery",
+    "CO2 insufflation",
+    "OR"
+  ],
+  "keywords": [
+    "raised intra-abdominal pressure from CO2 insufflation pushes the diaphragm up, reduces lung compliance, and raises peak airway pressures, expect to need more pressure/PEEP than you did before insufflation",
+    "systemic vascular resistance typically rises with pneumoperitoneum, which can keep blood pressure looking normal or even elevated even as cardiac output and cerebral blood flow are actually falling, don't be falsely reassured by a normal BP alone",
+    "keeping end-tidal CO2 in a moderate range, roughly 30-35, has been shown to blunt some of the adverse cerebral perfusion pressure effects of combined pneumoperitoneum and steep Trendelenburg",
+    "internal jugular vein compression from prolonged head-down positioning raises intracranial pressure and has been linked to postoperative cognitive changes in some studies, watch the neck/face for progressive venous congestion over a long case",
+    "facial and airway edema from prolonged steep Trendelenburg is a real extubation-timing consideration, don't be surprised by it and have a plan (leak test, cautious extubation) for a long robotic case"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -17,11 +36,20 @@
     "Closhen D, et al. Effects of pneumoperitoneum and Trendelenburg position on intracranial pressure and cerebral blood flow. J Anaesthesiol Clin Pharmacol. 2023."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). No prior module addressed the physiologic effects of CO2 pneumoperitoneum or steep Trendelenburg positioning, despite the ubiquity of laparoscopic/robotic cases using both." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). No prior module addressed the physiologic effects of CO2 pneumoperitoneum or steep Trendelenburg positioning, despite the ubiquity of laparoscopic/robotic cases using both."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "CO2 pneumoperitoneum raises airway pressures and can raise systemic vascular resistance enough to mask a real fall in cardiac output and cerebral perfusion behind a normal-looking blood pressure — combined with steep Trendelenburg, it also raises intracranial pressure, which is why keeping end-tidal CO2 in a moderate range and watching for facial/airway edema over a long case both matter.",
   "whyThisMatters": "A normal or even elevated blood pressure during pneumoperitoneum can create false reassurance while cardiac output and cerebral blood flow are actually falling — because insufflation itself tends to raise systemic vascular resistance, blood pressure alone is a misleading proxy for adequate perfusion in this specific setting, which is exactly the kind of physiology that changes what a vigilant anesthesiologist watches during a long laparoscopic/robotic case.",
-  "clinicalTakeaway": "Expect higher peak airway pressures once pneumoperitoneum is established — the raised intra-abdominal pressure pushes the diaphragm cephalad and reduces lung/chest wall compliance, and this is normal and expected, not itself a sign something is wrong, though it should be monitored and ventilator settings adjusted accordingly. Don't be falsely reassured by a normal or elevated blood pressure during pneumoperitoneum — systemic vascular resistance typically rises, which can mask a real fall in cardiac output and cerebral perfusion. Target end-tidal CO2 in a moderate range (roughly 30-35 mmHg) during combined pneumoperitoneum and steep Trendelenburg, since this has been shown to help blunt some of the adverse cerebral perfusion pressure effects. Watch for progressive facial/airway edema and internal jugular venous congestion over a long steep-Trendelenburg case — both are real considerations for extubation timing and technique (a leak test, cautious extubation) and, in elderly patients particularly, have been linked to postoperative cognitive changes when jugular compression is significant.",
+  "clinicalTakeaway": "AIRWAY PRESSURES: expect higher peak airway pressures once pneumoperitoneum is established — the raised intra-abdominal pressure pushes the diaphragm cephalad and reduces lung/chest wall compliance. This is normal and expected, not itself a sign something is wrong, though it should be monitored and ventilator settings adjusted accordingly.\n\nBLOOD PRESSURE: don't be falsely reassured by a normal or elevated blood pressure during pneumoperitoneum — systemic vascular resistance typically rises, which can mask a real fall in cardiac output and cerebral perfusion.\n\nEND-TIDAL CO2: target a moderate range (roughly 30-35 mmHg) during combined pneumoperitoneum and steep Trendelenburg, since this has been shown to help blunt some of the adverse cerebral perfusion pressure effects.\n\nEDEMA: watch for progressive facial/airway edema and internal jugular venous congestion over a long steep-Trendelenburg case — both are real considerations for extubation timing and technique (a leak test, cautious extubation) and, in elderly patients particularly, have been linked to postoperative cognitive changes when jugular compression is significant.",
   "body": [
     {
       "type": "heading",
@@ -61,9 +89,12 @@
     },
     {
       "type": "text",
-      "text": "Prolonged steep Trendelenburg positioning causes progressive facial, conjunctival, and airway soft-tissue edema from the sustained head-down gravitational fluid shift — this is a real and expected finding after a long robotic/laparoscopic case in this position, not a sign of a complication requiring investigation on its own. It IS, however, a genuine extubation-timing consideration: have a plan for a cautious extubation approach (assessing for a cuff leak, being prepared for the possibility of upper airway swelling affecting the post-extubation airway) after a prolonged steep-Trendelenburg case, rather than treating extubation as routine regardless of case duration/position."
+      "text": "Prolonged steep Trendelenburg positioning causes progressive facial, conjunctival, and airway soft-tissue edema from the sustained head-down gravitational fluid shift — this is a real and expected finding after a long robotic/laparoscopic case in this position, not a sign of a complication requiring investigation on its own.\n\nIt IS, however, a genuine extubation-timing consideration: have a plan for a cautious extubation approach (assessing for a cuff leak, being prepared for the possibility of upper airway swelling affecting the post-extubation airway) after a prolonged steep-Trendelenburg case, rather than treating extubation as routine regardless of case duration/position."
     }
   ],
-  "related": ["preanesthesia-checklist", "physiologically-difficult-airway"],
+  "related": [
+    "preanesthesia-checklist",
+    "physiologically-difficult-airway"
+  ],
   "buildNote": "Perioperative & Anesthesia category. Respiratory mechanics, the SVR-masking-cardiac-output-fall point, the 30-35 mmHg end-tidal CO2 target, and the internal-jugular-compression/cognitive-outcome link WebSearch-verified against Kalmar et al. (Br J Anaesth 2010) and Closhen et al. (2023) transcranial Doppler studies."
 }

@@ -33,7 +33,7 @@
     "fever may be blunted or absent on steroids and mTOR inhibitors"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-23",
   "next_review_due": "2027-03-23",
   "review_tier": 2,
@@ -49,10 +49,15 @@
       "version": 1,
       "date": "2026-09-23",
       "change": "New. Built around the classic three-period timeline but deliberately reframed after checking it against current data: the Swiss Transplant Cohort Study shows bacteria predominating throughout the first year in the prophylaxis era, with the classic opportunists now rare. A card that presented the periods as a probability ranking would send readers hunting CMV while the patient has a line infection."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Fever in a solid organ transplant recipient: what the time since transplant does and does not tell you, and what to do in the first hour.",
-  "whyThisMatters": "Transplant recipients present to the ED and ICU like anyone else, and the reflex is to reach for the timeline learned in training and start thinking about opportunistic infection. In the current prophylaxis era that reflex is roughly backwards: the classic opportunists have become rare and ordinary bacteria have not. The timeline is still worth knowing — it is the best tool for deciding what ELSE to consider — but treating it as a ranking of likelihood delays the bacterial workup that will actually find the problem. The other thing that kills here is the blunted presentation: immunosuppression removes the signs you are used to using, so a transplant recipient who looks only mildly unwell can be septic.",
+  "whyThisMatters": "Transplant recipients present to the ED and ICU like anyone else, and the reflex is to reach for the timeline learned in training and start thinking about opportunistic infection.\n\nIn the current prophylaxis era that reflex is roughly backwards: the classic opportunists have become rare and ordinary bacteria have not. The timeline is still worth knowing — it is the best tool for deciding what ELSE to consider — but treating it as a ranking of likelihood delays the bacterial workup that will actually find the problem.\n\nThe other thing that kills here is the blunted presentation: immunosuppression removes the signs you are used to using, so a transplant recipient who looks only mildly unwell can be septic.",
   "body": [
     {
       "type": "heading",

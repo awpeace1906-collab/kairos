@@ -3,8 +3,13 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "Alcoholic Ketoacidosis (AKA)",
-  "settingEmphasis": ["ed", "icu"],
-  "audience": ["adult"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "audience": [
+    "adult"
+  ],
   "aliases": [
     "AKA",
     "alcoholic ketoacidosis",
@@ -12,7 +17,17 @@
     "beta-hydroxybutyrate alcohol",
     "high anion gap alcohol vomiting"
   ],
-  "tags": ["alcoholic ketoacidosis", "AKA", "anion gap acidosis", "beta-hydroxybutyrate", "thiamine", "dextrose", "electrolytes", "ED", "toxicology"],
+  "tags": [
+    "alcoholic ketoacidosis",
+    "AKA",
+    "anion gap acidosis",
+    "beta-hydroxybutyrate",
+    "thiamine",
+    "dextrose",
+    "electrolytes",
+    "ED",
+    "toxicology"
+  ],
   "keywords": [
     "chronic alcohol starvation vomiting volume depletion high NADH NAD ratio",
     "glucose normal or low high anion gap metabolic acidosis mixed disturbance vomiting alkalosis",
@@ -21,7 +36,7 @@
     "no routine insulin no routine bicarbonate rule out DKA toxic alcohols salicylate sepsis"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-09",
   "next_review_due": "2027-09-09",
   "review_tier": 2,
@@ -31,13 +46,26 @@
     "Long B, Lentz S, Gottlieb M. Alcoholic Ketoacidosis: Etiologies, Evaluation, and Management. J Emerg Med. 2021;61(6):658-665"
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-09", "change": "Initial entry — the NADH/NAD+ mechanism, the mixed acid-base picture and why the urine ketone dipstick under-reads, the work-up (and the mimics to exclude), and dextrose + thiamine + electrolytes management with the no-insulin / no-bicarbonate caveat. Companion to dka-hhs-adult-management." }
+    {
+      "version": 1,
+      "date": "2026-09-09",
+      "change": "Initial entry — the NADH/NAD+ mechanism, the mixed acid-base picture and why the urine ketone dipstick under-reads, the work-up (and the mimics to exclude), and dextrose + thiamine + electrolytes management with the no-insulin / no-bicarbonate caveat. Companion to dka-hhs-adult-management."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "A chronic drinker who binges then stops eating (usually because of vomiting or abdominal pain) presents 1-3 days later with a high anion-gap ketoacidosis and a glucose that is normal or LOW. Ethanol metabolism drives the hepatic NADH/NAD+ ratio up, which shuts down gluconeogenesis and the Krebs cycle and pushes ketogenesis toward β-hydroxybutyrate. Treatment is dextrose-containing saline, thiamine before glucose, and aggressive K/Mg/PO4 repletion — not insulin, not bicarbonate.",
   "whyThisMatters": "AKA is easy to under-call because the glucose is not high and the urine ketone dipstick reads weak — it measures acetoacetate, and the high NADH/NAD+ ratio makes the ketone body here overwhelmingly β-hydroxybutyrate. Meanwhile the differential for a high-gap acidosis in this exact patient — DKA, methanol/ethylene glycol, salicylate, sepsis, a GI bleed, pancreatitis — contains several things that kill quickly and are treated very differently. Naming AKA is as much about excluding those as about the sugar water.",
-  "clinicalTakeaway": "Give D5 in 0.9% saline (or lactated Ringer's) — dextrose triggers endogenous insulin and halts ketogenesis, saline corrects the volume deficit; the ketoacidosis usually clears in 12-24 h. Give thiamine 100 mg IV before or with the glucose. Replace potassium, magnesium, and phosphate early and repeatedly — all fall further with dextrose and refeeding. Do NOT routinely give insulin (glucose is not high — hypoglycemia risk) or bicarbonate (reserve for pH < 7.0). Send a β-hydroxybutyrate, anion gap, lactate, glucose, lipase, and an osmolar gap; exclude DKA, toxic alcohols, and salicylate before settling on AKA. Manage co-existing alcohol withdrawal with benzodiazepines.",
+  "clinicalTakeaway": "1. Give D5 in 0.9% saline (or lactated Ringer's) — dextrose triggers endogenous insulin and halts ketogenesis, saline corrects the volume deficit; the ketoacidosis usually clears in 12-24 h.\n2. Give thiamine 100 mg IV before or with the glucose.\n3. Replace potassium, magnesium, and phosphate early and repeatedly — all fall further with dextrose and refeeding.\n\nDo NOT routinely give insulin (glucose is not high — hypoglycemia risk) or bicarbonate (reserve for pH < 7.0).\n\nSend a β-hydroxybutyrate, anion gap, lactate, glucose, lipase, and an osmolar gap; exclude DKA, toxic alcohols, and salicylate before settling on AKA.\n\nManage co-existing alcohol withdrawal with benzodiazepines.",
   "body": [
-    { "type": "heading", "level": 2, "text": "Mechanism" },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Mechanism"
+    },
     {
       "type": "list",
       "items": [
@@ -47,8 +75,16 @@
         "Volume depletion (poor intake, vomiting, alcohol diuresis) and a raised counter-regulatory drive complete the picture."
       ]
     },
-    { "type": "callout", "tone": "info", "text": "The nitroprusside reaction (urine and most bedside ketone strips) detects acetoacetate and acetone, NOT β-hydroxybutyrate — so it under-reads AKA at presentation and can paradoxically turn MORE positive as the patient improves and β-hydroxybutyrate is reconverted to acetoacetate. Track the anion gap and a quantitative β-hydroxybutyrate, not the dipstick." },
-    { "type": "heading", "level": 2, "text": "Presentation & labs" },
+    {
+      "type": "callout",
+      "tone": "info",
+      "text": "The nitroprusside reaction (urine and most bedside ketone strips) detects acetoacetate and acetone, NOT β-hydroxybutyrate — so it under-reads AKA at presentation and can paradoxically turn MORE positive as the patient improves and β-hydroxybutyrate is reconverted to acetoacetate. Track the anion gap and a quantitative β-hydroxybutyrate, not the dipstick."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Presentation & labs"
+    },
     {
       "type": "list",
       "items": [
@@ -59,9 +95,20 @@
         "Send: BMP (gap, low K/Mg/PO4/Cl common), β-hydroxybutyrate, VBG, lactate (mild rise is typical; a large rise → hunt another cause), glucose, lipase, LFTs, ethanol level, osmolality + calculated osmolar gap, salicylate level, and a pregnancy test. Get lipase / imaging if pancreatitis is plausible."
       ]
     },
-    { "type": "heading", "level": 2, "text": "Exclude the mimics" },
-    { "type": "text", "text": "Before committing to AKA, rule out: diabetic ketoacidosis (glucose), methanol and ethylene glycol (unexplained osmolar gap, visual symptoms, oxalate crystals / renal failure — do not wait for levels if suspected), salicylate toxicity (tinnitus, mixed respiratory alkalosis + AGMA, level), sepsis / occult infection, an acute GI bleed, pancreatitis, and isopropyl alcohol (ketosis WITHOUT acidosis). Starvation ketoacidosis alone rarely drops the bicarbonate below ~18." },
-    { "type": "heading", "level": 2, "text": "Management" },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Exclude the mimics"
+    },
+    {
+      "type": "text",
+      "text": "Before committing to AKA, rule out: diabetic ketoacidosis (glucose), methanol and ethylene glycol (unexplained osmolar gap, visual symptoms, oxalate crystals / renal failure — do not wait for levels if suspected), salicylate toxicity (tinnitus, mixed respiratory alkalosis + AGMA, level), sepsis / occult infection, an acute GI bleed, pancreatitis, and isopropyl alcohol (ketosis WITHOUT acidosis). Starvation ketoacidosis alone rarely drops the bicarbonate below ~18."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Management"
+    },
     {
       "type": "list",
       "items": [
@@ -75,6 +122,9 @@
       ]
     }
   ],
-  "related": ["dka-hhs-adult-management", "iv-fluids"],
+  "related": [
+    "dka-hhs-adult-management",
+    "iv-fluids"
+  ],
   "buildNote": "Tier 2 — the biochemistry and the dextrose/thiamine/electrolyte management are settled (Wrenn 1991, McGuire 2006, Long 2021). From the CV AKA mechanism audit plus primary sources. Companion to `dka-hhs-adult-management`; the two share the mixed-acid-base and electrolyte themes but diverge on insulin (AKA: no)."
 }

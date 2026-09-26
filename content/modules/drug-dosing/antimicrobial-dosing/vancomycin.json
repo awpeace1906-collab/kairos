@@ -3,11 +3,26 @@
   "section": "Drug & Dosing Cards",
   "category": "Antimicrobial Dosing",
   "title": "Vancomycin",
-  "settingEmphasis": ["ed", "icu"],
-  "aliases": ["vancomycin dosing", "AUC-guided vancomycin", "vancomycin loading dose"],
-  "tags": ["vancomycin", "antibiotic", "AUC-guided dosing", "MRSA", "renal dosing", "ED", "ICU"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "vancomycin dosing",
+    "AUC-guided vancomycin",
+    "vancomycin loading dose"
+  ],
+  "tags": [
+    "vancomycin",
+    "antibiotic",
+    "AUC-guided dosing",
+    "MRSA",
+    "renal dosing",
+    "ED",
+    "ICU"
+  ],
   "contentType": "drug-card",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-14",
   "next_review_due": "2026-12-14",
   "review_tier": 1,
@@ -15,7 +30,16 @@
     "Rybak MJ, Le J, Lodise TP, et al. Therapeutic monitoring of vancomycin for serious methicillin-resistant Staphylococcus aureus infections: A revised consensus guideline and review by ASHP, IDSA, PIDS, and SIDP. Am J Health Syst Pharm. 2020;77(11):835-864."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-14", "change": "Initial entry — a genuine content gap (vancomycin appeared only by name inside empiric-antibiotic references, with no dosing card). New 'Antimicrobial Dosing' category added to Drug & Dosing since none previously existed for this drug class." }
+    {
+      "version": 1,
+      "date": "2026-09-14",
+      "change": "Initial entry — a genuine content gap (vancomycin appeared only by name inside empiric-antibiotic references, with no dosing card). New 'Antimicrobial Dosing' category added to Drug & Dosing since none previously existed for this drug class."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "purpose": "Empiric loading and starting maintenance dosing for a glycopeptide antibiotic covering MRSA and other gram-positive organisms — one of the most commonly needed critical-illness antibiotic doses, and one with real nephrotoxicity stakes if monitoring is skipped.",
   "population": "adult",
@@ -24,14 +48,25 @@
     {
       "indication": "Loading dose — serious/critical infection (sepsis, meningitis, endocarditis)",
       "route": "IV",
-      "rule": { "perKg": 25, "perKgHigh": 30, "unit": "mg", "maxDose": 3000, "maxDoseUnit": "mg" },
+      "rule": {
+        "perKg": 25,
+        "perKgHigh": 30,
+        "unit": "mg",
+        "maxDose": 3000,
+        "maxDoseUnit": "mg"
+      },
       "notes": "Infuse over ≥ 1-2 h (rate ≤ 10 mg/min or per your institution's max concentration/rate policy) to reduce infusion-related reactions. Round to a practical dose your pharmacy stocks."
     },
     {
       "indication": "Maintenance dosing — empiric starting point pending levels",
       "route": "IV",
-      "rule": { "perKg": 15, "perKgHigh": 20, "unit": "mg", "repeat": "Every 8-12 h in normal renal function; extend the interval as CrCl falls. This is an empiric STARTING point, not the final dose — actual maintenance dosing should be guided by levels." },
-      "notes": "Renal function drives the interval more than the per-dose amount — a patient with reduced CrCl gets the same per-kg dose less often, not routinely a smaller dose. AUC-guided dosing (target AUC24 400-600 mg·h/L assuming MIC 1) is the preferred monitoring strategy per the 2020 ASHP/IDSA/PIDS/SIDP consensus guideline — via Bayesian dosing software where available, or two-level PK sampling; trough-only monitoring (target 15-20 mg/L) is older and still common without Bayesian access, but tends to overshoot the AUC target and raise nephrotoxicity risk for the same apparent trough. Nephrotoxicity risk rises with AUC24 > 600, concurrent nephrotoxins (piperacillin-tazobactam co-administration specifically flagged across multiple studies), and pre-existing renal impairment — check and trend renal function during therapy. In renal impairment or CRRT/hemodialysis, dosing is highly protocol- and modality-specific — involve pharmacy beyond the empiric first dose."
+      "rule": {
+        "perKg": 15,
+        "perKgHigh": 20,
+        "unit": "mg",
+        "repeat": "Every 8-12 h in normal renal function; extend the interval as CrCl falls. This is an empiric STARTING point, not the final dose — actual maintenance dosing should be guided by levels."
+      },
+      "notes": "Renal function drives the interval more than the per-dose amount — a patient with reduced CrCl gets the same per-kg dose less often, not routinely a smaller dose.\n\nMONITORING: AUC-guided dosing (target AUC24 400-600 mg·h/L assuming MIC 1) is the preferred monitoring strategy per the 2020 ASHP/IDSA/PIDS/SIDP consensus guideline — via Bayesian dosing software where available, or two-level PK sampling. Trough-only monitoring (target 15-20 mg/L) is older and still common without Bayesian access, but tends to overshoot the AUC target and raise nephrotoxicity risk for the same apparent trough.\n\nNEPHROTOXICITY risk rises with:\n- AUC24 > 600\n- concurrent nephrotoxins (piperacillin-tazobactam co-administration specifically flagged across multiple studies)\n- pre-existing renal impairment\n\nCheck and trend renal function during therapy. In renal impairment or CRRT/hemodialysis, dosing is highly protocol- and modality-specific — involve pharmacy beyond the empiric first dose."
     }
   ],
   "contraindications": [

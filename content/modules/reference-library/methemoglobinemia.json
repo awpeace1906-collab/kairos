@@ -38,7 +38,7 @@
     "exchange transfusion hyperbaric oxygen refractory severe"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -54,11 +54,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — the drug/chemical causes, the saturation-gap presentation, co-oximetry diagnosis, and methylene blue dosing with its G6PD and MAOI caveats. Referenced from the nitrites section of `tox-cannabinoids-inhalants` and the asphyxiant section of `hazmat-scene-toxidromes`."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "An oxidizing drug or chemical converts hemoglobin iron from ferrous to ferric, which cannot carry oxygen and left-shifts the remaining hemoglobin — so the patient is cyanotic and hypoxic with a normal PaO2. Pulse oximetry drifts toward ~85% and stops tracking; the diagnosis is co-oximetry and the antidote is methylene blue, unless the patient is G6PD-deficient.",
   "whyThisMatters": "Methemoglobinemia is missed because the numbers do not line up the way hypoxia usually does: the patient looks blue and desaturated, the supplemental oxygen does nothing, the arterial blood is dark brown, and yet the calculated saturation on a standard gas is normal. Recognizing the saturation gap and sending a co-oximetry panel is the whole diagnosis, and methylene blue reverses it in minutes — but given to the wrong patient (G6PD deficiency, or on a serotonergic agent) it does harm.",
-  "clinicalTakeaway": "Suspect methemoglobinemia when cyanosis and low SpO2 do not correct with oxygen, the SpO2 sits near 85% regardless of clinical state (the \"saturation gap\" against a normal PaO2), or the blood is chocolate-brown. Confirm with co-oximetry — a standard ABG's calculated saturation will not show it. Treat symptomatic patients or a methemoglobin level above ~20-30% (lower if anemic, ischemic, or acidotic) with methylene blue 1-2 mg/kg IV over 5 minutes, repeatable once at 1 hour (cumulative max ~7 mg/kg). Do NOT give methylene blue if the patient is G6PD-deficient (ineffective and causes hemolysis) or on a serotonergic drug (MAOI-like, serotonin-syndrome risk) — use ascorbic acid, exchange transfusion, or hyperbaric oxygen instead. For dapsone, expect rebound and plan multidose activated charcoal plus repeat or infused methylene blue.",
+  "clinicalTakeaway": "Suspect methemoglobinemia when:\n- cyanosis and low SpO2 do not correct with oxygen\n- the SpO2 sits near 85% regardless of clinical state (the \"saturation gap\" against a normal PaO2)\n- the blood is chocolate-brown\n\nConfirm with co-oximetry — a standard ABG's calculated saturation will not show it.\n\nTREAT symptomatic patients or a methemoglobin level above ~20-30% (lower if anemic, ischemic, or acidotic) with methylene blue 1-2 mg/kg IV over 5 minutes, repeatable once at 1 hour (cumulative max ~7 mg/kg).\n\nDo NOT give methylene blue if the patient is G6PD-deficient (ineffective and causes hemolysis) or on a serotonergic drug (MAOI-like, serotonin-syndrome risk) — use ascorbic acid, exchange transfusion, or hyperbaric oxygen instead.\n\nFor dapsone, expect rebound and plan multidose activated charcoal plus repeat or infused methylene blue.",
   "body": [
     {
       "type": "heading",
@@ -67,7 +72,7 @@
     },
     {
       "type": "text",
-      "text": "Hemoglobin carries oxygen only with its iron in the ferrous (Fe2+) state. Oxidizing agents push iron to the ferric (Fe3+) state — methemoglobin — which cannot bind oxygen and also raises the oxygen affinity of the remaining ferrous hemes, left-shifting the dissociation curve. The result is a functional anemia plus impaired offloading: tissue hypoxia at a normal PaO2. The red cell normally reduces methemoglobin back via NADH-cytochrome b5 reductase (and a minor NADPH pathway that methylene blue exploits); toxicity occurs when the oxidative load outpaces this, or in congenital enzyme deficiency."
+      "text": "Hemoglobin carries oxygen only with its iron in the ferrous (Fe2+) state.\n\nOxidizing agents push iron to the ferric (Fe3+) state — methemoglobin — which cannot bind oxygen and also raises the oxygen affinity of the remaining ferrous hemes, left-shifting the dissociation curve. The result is a functional anemia plus impaired offloading: tissue hypoxia at a normal PaO2.\n\nThe red cell normally reduces methemoglobin back via NADH-cytochrome b5 reductase (and a minor NADPH pathway that methylene blue exploits); toxicity occurs when the oxidative load outpaces this, or in congenital enzyme deficiency."
     },
     {
       "type": "heading",

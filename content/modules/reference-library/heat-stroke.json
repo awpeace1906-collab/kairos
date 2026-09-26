@@ -3,12 +3,34 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "Heat Stroke",
-  "settingEmphasis": ["ed", "icu", "prehospital"],
-  "aliases": ["exertional heat stroke", "classic heat stroke", "heat illness"],
-  "tags": ["heat stroke", "hyperthermia", "cooling", "rhabdomyolysis", "ED", "ICU", "prehospital"],
-  "keywords": ["cooling speed is the single biggest predictor of survival, target core temp under 39C as fast as possible", "cold water immersion is fastest for exertional heat stroke in a young healthy patient", "evaporative cooling for classic heat stroke in an elderly or comorbid patient", "avoid antipyretics, they don't work on this mechanism and can harm a coagulopathic patient", "check for rhabdomyolysis and DIC"],
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
+  "aliases": [
+    "exertional heat stroke",
+    "classic heat stroke",
+    "heat illness"
+  ],
+  "tags": [
+    "heat stroke",
+    "hyperthermia",
+    "cooling",
+    "rhabdomyolysis",
+    "ED",
+    "ICU",
+    "prehospital"
+  ],
+  "keywords": [
+    "cooling speed is the single biggest predictor of survival, target core temp under 39C as fast as possible",
+    "cold water immersion is fastest for exertional heat stroke in a young healthy patient",
+    "evaporative cooling for classic heat stroke in an elderly or comorbid patient",
+    "avoid antipyretics, they don't work on this mechanism and can harm a coagulopathic patient",
+    "check for rhabdomyolysis and DIC"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -17,11 +39,20 @@
     "Wilderness Medical Society Clinical Practice Guidelines for the Prevention and Treatment of Heat Illness."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4)." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4)."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "Heat stroke is a true emergency where the speed of cooling is the single biggest determinant of survival — the method of cooling matters less than getting core temperature down fast, and antipyretics have no role.",
   "whyThisMatters": "Every minute at a dangerously elevated core temperature drives ongoing cellular injury across every organ system — the difference between a good and bad outcome in heat stroke is measured in minutes of delay before effective cooling starts, which makes 'cool first, workup second' the correct instinct even though it inverts the usual diagnose-then-treat sequence.",
-  "clinicalTakeaway": "Heat stroke = hyperthermia PLUS CNS dysfunction (altered mental status, seizure, coma) in the setting of environmental/exertional heat exposure. Cool aggressively and immediately — cold water immersion is fastest for a young exertional-heat-stroke patient who can tolerate it; evaporative cooling (mist + fans) is the practical choice for an elderly or comorbid patient. Target core temperature under 39°C as fast as possible. Do NOT use antipyretics (acetaminophen/NSAIDs) — the mechanism isn't a hypothalamic-setpoint fever, so they don't work, and they can worsen a coagulopathy/hepatic injury that's often already present.",
+  "clinicalTakeaway": "Heat stroke = hyperthermia PLUS CNS dysfunction (altered mental status, seizure, coma) in the setting of environmental/exertional heat exposure.\n\nCool aggressively and immediately:\n- cold water immersion is fastest for a young exertional-heat-stroke patient who can tolerate it\n- evaporative cooling (mist + fans) is the practical choice for an elderly or comorbid patient\n- target core temperature under 39°C as fast as possible\n\nDo NOT use antipyretics (acetaminophen/NSAIDs) — the mechanism isn't a hypothalamic-setpoint fever, so they don't work, and they can worsen a coagulopathy/hepatic injury that's often already present.",
   "body": [
     {
       "type": "heading",
@@ -30,7 +61,7 @@
     },
     {
       "type": "text",
-      "text": "Heat stroke = significantly elevated core temperature (classically > 40°C, though the exact number matters less than the clinical picture) PLUS CNS dysfunction — confusion, ataxia, seizure, or coma — in the setting of heat exposure/exertion. Two classic patterns: EXERTIONAL heat stroke (young, healthy, often athletes/military/laborers, rapid onset, often still sweating at presentation) and CLASSIC heat stroke (elderly, chronically ill, often on medications that impair thermoregulation — anticholinergics, diuretics, beta-blockers — slower onset over days, often anhidrotic/dry skin by the time of presentation). Sweating status is NOT a reliable rule-out either way — don't exclude heat stroke just because the patient is still sweating."
+      "text": "Heat stroke = significantly elevated core temperature (classically > 40°C, though the exact number matters less than the clinical picture) PLUS CNS dysfunction — confusion, ataxia, seizure, or coma — in the setting of heat exposure/exertion.\n\nTwo classic patterns:\n- EXERTIONAL heat stroke: young, healthy, often athletes/military/laborers, rapid onset, often still sweating at presentation.\n- CLASSIC heat stroke: elderly, chronically ill, often on medications that impair thermoregulation (anticholinergics, diuretics, beta-blockers), slower onset over days, often anhidrotic/dry skin by the time of presentation.\n\nSweating status is NOT a reliable rule-out either way — don't exclude heat stroke just because the patient is still sweating."
     },
     {
       "type": "heading",
@@ -70,6 +101,10 @@
       ]
     }
   ],
-  "related": ["aki-staging-rrt", "altered-mental-status", "acute-liver-failure"],
+  "related": [
+    "aki-staging-rrt",
+    "altered-mental-status",
+    "acute-liver-failure"
+  ],
   "buildNote": "Kept management-focused on the cooling decision (speed and method) and the complications an ED/ICU workup needs to actively screen for, rather than an exhaustive review of thermoregulatory physiology."
 }

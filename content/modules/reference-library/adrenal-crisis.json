@@ -3,12 +3,32 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "Adrenal Crisis",
-  "settingEmphasis": ["ed", "icu"],
-  "aliases": ["acute adrenal insufficiency", "Addisonian crisis", "adrenal insufficiency decompensation"],
-  "tags": ["adrenal crisis", "adrenal insufficiency", "hydrocortisone", "endocrine emergency", "ED", "ICU"],
-  "keywords": ["treat before confirming the diagnosis, do not wait for a cortisol level", "hydrocortisone 100mg IV bolus then 200mg per 24 hours", "1 liter isotonic saline in the first hour then further fluids as needed", "check and correct hypoglycemia hyponatremia hyperkalemia", "any patient on chronic steroids or with known adrenal insufficiency who is acutely unwell needs stress-dose steroids"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "acute adrenal insufficiency",
+    "Addisonian crisis",
+    "adrenal insufficiency decompensation"
+  ],
+  "tags": [
+    "adrenal crisis",
+    "adrenal insufficiency",
+    "hydrocortisone",
+    "endocrine emergency",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "treat before confirming the diagnosis, do not wait for a cortisol level",
+    "hydrocortisone 100mg IV bolus then 200mg per 24 hours",
+    "1 liter isotonic saline in the first hour then further fluids as needed",
+    "check and correct hypoglycemia hyponatremia hyperkalemia",
+    "any patient on chronic steroids or with known adrenal insufficiency who is acutely unwell needs stress-dose steroids"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -17,7 +37,16 @@
     "Hydrocortisone dosing and fluid resuscitation targets WebSearch-verified before writing."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4)." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4)."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "A clinical diagnosis treated on suspicion, not confirmed diagnosis — the single highest-yield action is giving hydrocortisone immediately, before any lab result comes back.",
   "whyThisMatters": "Adrenal crisis is rapidly fatal if untreated, but the presentation (hypotension, vomiting, abdominal pain, altered mental status, hyponatremia) overlaps heavily with sepsis and other causes of shock — the patients most likely to actually have it are exactly the ones at risk of the diagnosis being missed while everyone chases the more common alternative explanation.",
@@ -63,9 +92,13 @@
     },
     {
       "type": "text",
-      "text": "Once stable, hydrocortisone is tapered back down toward the patient's usual maintenance/stress dose over the following days, guided by clinical status and the resolution of the precipitating illness. Endocrinology involvement is appropriate for anyone with a new diagnosis of adrenal insufficiency, or for tailoring the taper/follow-up in a known patient. Before discharge, every patient with adrenal insufficiency should be re-educated (or educated for the first time, if new) on sick-day stress dosing rules and should carry an emergency hydrocortisone injection kit if not already doing so — this crisis is frequently preventable with adequate self-management education."
+      "text": "Once stable, hydrocortisone is tapered back down toward the patient's usual maintenance/stress dose over the following days, guided by clinical status and the resolution of the precipitating illness.\n\nEndocrinology involvement is appropriate for anyone with a new diagnosis of adrenal insufficiency, or for tailoring the taper/follow-up in a known patient.\n\nBefore discharge, every patient with adrenal insufficiency should be re-educated (or educated for the first time, if new):\n- on sick-day stress dosing rules\n- and should carry an emergency hydrocortisone injection kit if not already doing so\n\nThis crisis is frequently preventable with adequate self-management education."
     }
   ],
-  "related": ["thyroid-storm-myxedema-coma", "shock-classification", "septic-shock-resuscitation"],
+  "related": [
+    "thyroid-storm-myxedema-coma",
+    "shock-classification",
+    "septic-shock-resuscitation"
+  ],
   "buildNote": "Kept deliberately focused on the ED/ICU-actionable core (recognize, treat immediately, don't wait for labs) rather than a full endocrinology workup of adrenal insufficiency etiology, which is a separate, non-emergent question."
 }

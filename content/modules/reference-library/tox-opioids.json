@@ -43,7 +43,7 @@
     "heroin noncardiogenic pulmonary edema 6-MAM take-home naloxone buprenorphine pathway"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -60,11 +60,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — converted from CV Intoxicating Substances Reference: the shared mu-opioid toxidrome, naloxone principles, and per-agent features for heroin, fentanyl and analogs, methadone and buprenorphine, and tramadol and loperamide."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "The mu-opioid toxidrome — miosis, respiratory depression, CNS depression — is remarkably consistent across the class; what differs is potency, receptor kinetics, half-life, and the non-opioid mechanisms layered on top (serotonergic for tramadol, hERG/sodium-channel for methadone and loperamide). Support ventilation first, titrate naloxone to breathing not arousal, and plan for re-sedation.",
   "whyThisMatters": "Opioid overdose is the archetypal reversible prehospital and ED death, but the reversal has traps: over-reversal buys vomiting, aspiration, and a combative dependent patient; under-observation misses re-sedation when naloxone's 30-80 minute half-life is outlasted by the opioid; and the atypical agents (methadone QT, loperamide cardiotoxicity, tramadol seizures, fentanyl wooden chest) each need a step naloxone alone does not provide.",
-  "clinicalTakeaway": "Bag-valve-mask ventilate first — do not wait on the antidote. Give naloxone 0.04-0.4 mg IV/IM/IN titrated to adequate respiration, not full arousal, and observe 6-12 hours after reversal. Recurrent re-sedation → naloxone infusion (~two-thirds of the effective bolus per hour). Standard naloxone doses work for fentanyl analogs in the overwhelming majority — plan for repeat dosing and infusions, not bigger single boluses. Get an ECG in any opioid-toxic patient with a plausible methadone or loperamide history (QT/QRS), treat tramadol seizures with benzodiazepines, manage fentanyl wooden-chest with paralysis and intubation, and offer take-home naloxone plus a buprenorphine/OUD pathway to every patient before discharge.",
+  "clinicalTakeaway": "1. Bag-valve-mask ventilate first — do not wait on the antidote.\n2. Give naloxone 0.04-0.4 mg IV/IM/IN titrated to adequate respiration, not full arousal, and observe 6-12 hours after reversal.\n3. Recurrent re-sedation → naloxone infusion (~two-thirds of the effective bolus per hour).\n\nStandard naloxone doses work for fentanyl analogs in the overwhelming majority — plan for repeat dosing and infusions, not bigger single boluses.\n\nAlso:\n- get an ECG in any opioid-toxic patient with a plausible methadone or loperamide history (QT/QRS)\n- treat tramadol seizures with benzodiazepines\n- manage fentanyl wooden-chest with paralysis and intubation\n- offer take-home naloxone plus a buprenorphine/OUD pathway to every patient before discharge",
   "body": [
     {
       "type": "heading",

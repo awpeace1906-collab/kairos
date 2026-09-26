@@ -40,7 +40,7 @@
     "methylene blue 1 2 mg/kg co-oximetry G6PD deficiency hemolysis"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -57,11 +57,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — converted from CV Intoxicating Substances Reference: cannabis/THC (including cannabinoid hyperemesis), synthetic cannabinoids (including brodifacoum contamination), and volatile solvents / alkyl nitrites (sudden sniffing death, methemoglobinemia)."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "A legal low-acute-toxicity plant product and a family of synthetic analogs that are neither. Cannabis's distinctive emergencies are cannabinoid hyperemesis and prolonged pediatric edible ingestions; synthetic cannabinoids add seizures, psychosis, and — from adulteration — a superwarfarin coagulopathy. Inhalants are grouped by route: solvents sensitize the myocardium (\"sudden sniffing death\"), nitrites cause methemoglobinemia.",
   "whyThisMatters": "Each of these has a signature that is missed when the drug isn't asked about directly. Cannabinoid hyperemesis takes years and an expensive workup to diagnose because marijuana is \"an antiemetic.\" Unexplained bleeding in a synthetic-cannabinoid user is a public-health outbreak pattern (brodifacoum), not a coincidence. And a pulse oximeter that reads normal on a visibly cyanotic patient is methemoglobinemia until a co-oximetry gas says otherwise.",
-  "clinicalTakeaway": "Ask specifically about cannabis, \"fake weed,\" and inhalant use — the standard cannabinoid immunoassay misses most synthetic cannabinoids, and none of these agents is volunteered as \"a drug.\" Cyclical vomiting plus compulsive hot showers in a heavy cannabis user is cannabinoid hyperemesis (topical capsaicin, supportive antiemetics, cessation counseling). Check coagulation studies in any synthetic-cannabinoid user with bleeding — brodifacoum coagulopathy needs weeks-to-months of vitamin K1, not a single dose. In solvent abuse, avoid catecholamine stimuli and epinephrine (myocardial sensitization → VF). Trust the cyanotic patient over a normal SpO2 — send a co-oximetry gas and give methylene blue 1-2 mg/kg for symptomatic methemoglobinemia (check G6PD when feasible).",
+  "clinicalTakeaway": "ASK specifically about cannabis, \"fake weed,\" and inhalant use — the standard cannabinoid immunoassay misses most synthetic cannabinoids, and none of these agents is volunteered as \"a drug.\"\n\n- Cyclical vomiting plus compulsive hot showers in a heavy cannabis user is cannabinoid hyperemesis (topical capsaicin, supportive antiemetics, cessation counseling).\n- Check coagulation studies in any synthetic-cannabinoid user with bleeding — brodifacoum coagulopathy needs weeks-to-months of vitamin K1, not a single dose.\n- In solvent abuse, avoid catecholamine stimuli and epinephrine (myocardial sensitization → VF).\n- Trust the cyanotic patient over a normal SpO2 — send a co-oximetry gas and give methylene blue 1-2 mg/kg for symptomatic methemoglobinemia (check G6PD when feasible).",
   "body": [
     {
       "type": "heading",

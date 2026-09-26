@@ -26,7 +26,7 @@
     "ICU"
   ],
   "contentType": "reference",
-  "content_version": 5,
+  "content_version": 6,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -63,6 +63,11 @@
       "version": 1,
       "date": "2026-08-31",
       "change": "Initial entry — original card built from public-domain clinical science, not AHA's diagrams or wording."
+    },
+    {
+      "version": 6,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Original algorithm card describing the same clinical steps as AHA ACLS (2025 refresh). Not AHA's copyrighted expression — see build note.",
@@ -109,7 +114,7 @@
     },
     {
       "type": "text",
-      "text": "DOSE-VF (NEJM 2022, cluster-randomized crossover, Ontario): survival to discharge 13.3% standard vs 21.7% vector change vs 30.4% DSED; DSED was the only strategy to also significantly improve good neurologic outcome (27.4% vs 11.2%). Caveats: a single trial, stopped early at 405 of a planned 930 patients (early stopping overestimates effect), the vector-change survival finding has a fragility index of 1, and the per-protocol analysis lost significance. ILCOR / AHA / ANZCOR grade the evidence low-to-very-low certainty and do NOT recommend DSED or vector change for routine use — treat them as a reasonable option for genuine refractory VF when standard shocks have failed, not as standard care."
+      "text": "DOSE-VF (NEJM 2022, cluster-randomized crossover, Ontario): survival to discharge 13.3% standard vs 21.7% vector change vs 30.4% DSED; DSED was the only strategy to also significantly improve good neurologic outcome (27.4% vs 11.2%).\n\nCaveats:\n- a single trial, stopped early at 405 of a planned 930 patients (early stopping overestimates effect)\n- the vector-change survival finding has a fragility index of 1\n- the per-protocol analysis lost significance\n\nILCOR / AHA / ANZCOR grade the evidence low-to-very-low certainty and do NOT recommend DSED or vector change for routine use — treat them as a reasonable option for genuine refractory VF when standard shocks have failed, not as standard care."
     },
     {
       "type": "heading",

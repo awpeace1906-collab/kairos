@@ -17,7 +17,7 @@
     "sulfate"
   ],
   "contentType": "anesthesia-drug-card",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-01",
   "next_review_due": "2026-12-01",
   "review_tier": 1,
@@ -29,6 +29,11 @@
       "version": 1,
       "date": "2026-09-01",
       "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "brandName": "Protamine Sulfate",
@@ -40,7 +45,7 @@
   "duration": "2h. Heparin rebound may occur at 2–4h post-CPB as tissue-bound heparin is released — re-check ACT and redose if necessary",
   "dosing": "POST-CPB REVERSAL (standard): 1–1.3 mg protamine per 100 units UFH administered during bypass. Administer SLOWLY over 10 min (max 50 mg/min infusion rate).\n\nEXAMPLE: Patient received 30,000 units UFH for CPB → administer 300–390 mg protamine (total dose).\n\nTITRATION BY ACT: Give calculated dose; recheck ACT at 5 min. Residual ACT elevation → supplemental protamine 25–50 mg IV. Target: ACT within 10% of pre-heparin baseline.\n\nEXCESS UFH REVERSAL (non-CPB): 1 mg per 100 units UFH estimated REMAINING (account for heparin already metabolized based on t½ ~90 min). Maximum recommended single dose: 50 mg.\n\nLMWH REVERSAL: 1 mg protamine per 1 mg enoxaparin (or per 100 anti-Xa units) administered within 8h. Repeat 0.5 mg per 1 mg enoxaparin if needed. Expect incomplete anti-Xa reversal (~60%).\n\nINFUSION RATE: Give over 10 min — administer NO FASTER than 5 mg/min (50 mg/10 min). Rapid administration → severe hypotension.",
   "cautions": [
-    "ANAPHYLAXIS / ANAPHYLACTOID REACTIONS (1–2% incidence): Complement activation → pulmonary vasoconstriction, systemic hypotension, bronchoconstriction, cardiovascular collapse. Risk factors: (1) Previous protamine exposure (prior cardiac surgery, catheterization), (2) NPH insulin use (contains protamine — cross-reactive antibodies), (3) Fish/salmon allergy, (4) Vasectomy (anti-protamine antibodies from sperm exposure). Pre-treat high-risk patients: diphenhydramine 25–50 mg + hydrocortisone 100 mg IV before protamine.",
+    "ANAPHYLAXIS / ANAPHYLACTOID REACTIONS (1–2% incidence): Complement activation → pulmonary vasoconstriction, systemic hypotension, bronchoconstriction, cardiovascular collapse.\n\nRisk factors:\n1. Previous protamine exposure (prior cardiac surgery, catheterization)\n2. NPH insulin use (contains protamine — cross-reactive antibodies)\n3. Fish/salmon allergy\n4. Vasectomy (anti-protamine antibodies from sperm exposure)\n\nPre-treat high-risk patients: diphenhydramine 25–50 mg + hydrocortisone 100 mg IV before protamine.",
     "PULMONARY VASOCONSTRICTION (complement-mediated): Seen especially with rapid administration. Manifests as acute ↑PA pressures, ↑RV afterload, RV failure post-CPB. Give SLOWLY and via LEFT atrium (if available) to reduce pulmonary concentration.",
     "RAPID ADMINISTRATION HYPOTENSION: Histamine release + direct vasodilation → severe hypotension. Administer at ≤5 mg/min (10-min infusion). Have vasopressors ready.",
     "PARADOXICAL ANTICOAGULATION (excess protamine): At >5–10 mg/kg or excessive free protamine → inhibits platelet function (GPIIb/IIIa interference) and causes anticoagulant effect. More is NOT better — dose precisely.",

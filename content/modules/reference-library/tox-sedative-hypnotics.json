@@ -39,7 +39,7 @@
     "GHB withdrawal life-threatening high-dose benzodiazepines baclofen barbiturate thiopental"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -56,11 +56,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — converted from CV Intoxicating Substances Reference: benzodiazepines (and the flumazenil caveat), barbiturates and Z-drugs, and GHB/GBL/1,4-butanediol including its distinct withdrawal emergency."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "A shared CNS-depressant toxidrome over agents with sharply different safety margins. Isolated benzodiazepine or Z-drug overdose is one of the safer ingestions in toxicology (a respiratory-depression ceiling); isolated barbiturate overdose is genuinely lethal (no ceiling). GHB is defined by its kinetics — abrupt coma, abrupt awakening — and its withdrawal is a separate, life-threatening emergency.",
   "whyThisMatters": "The mental model that \"sedatives are basically safe\" is true for benzodiazepines and Z-drugs alone and dangerously false for barbiturates and for any sedative co-ingested with alcohol or opioids — which is most real overdoses. Two specific traps: reaching for flumazenil in a mixed or chronic-use overdose (where the antidote causes more harm than the drug), and mistaking GHB withdrawal for a milder cousin of alcohol withdrawal when it is faster in onset and just as lethal.",
-  "clinicalTakeaway": "Supportive care — airway positioning, monitoring, and intubation for genuine airway compromise — covers the large majority. Deep coma, hyperreflexia/clonus, or cardiovascular instability in a supposed isolated benzodiazepine overdose means look for a co-ingestant, not severe benzodiazepine toxicity. Reserve flumazenil for isolated, benzodiazepine-naive, iatrogenic reversal and call poison control first. Treat isolated barbiturate overdose as potentially lethal — ventilatory and vasopressor support, and for phenobarbital urinary alkalinization plus multi-dose activated charcoal (hemodialysis if refractory). Recognize the abrupt-coma / abrupt-awakening GHB pattern, and treat GHB withdrawal aggressively with high-dose benzodiazepines, escalating faster than an alcohol-withdrawal protocol.",
+  "clinicalTakeaway": "Supportive care — airway positioning, monitoring, and intubation for genuine airway compromise — covers the large majority.\n\n- Deep coma, hyperreflexia/clonus, or cardiovascular instability in a supposed isolated benzodiazepine overdose means look for a co-ingestant, not severe benzodiazepine toxicity.\n- Reserve flumazenil for isolated, benzodiazepine-naive, iatrogenic reversal and call poison control first.\n- Treat isolated barbiturate overdose as potentially lethal — ventilatory and vasopressor support, and for phenobarbital urinary alkalinization plus multi-dose activated charcoal (hemodialysis if refractory).\n- Recognize the abrupt-coma / abrupt-awakening GHB pattern, and treat GHB withdrawal aggressively with high-dose benzodiazepines, escalating faster than an alcohol-withdrawal protocol.",
   "body": [
     {
       "type": "table",

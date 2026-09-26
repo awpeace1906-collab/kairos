@@ -48,7 +48,7 @@
     "TCCC 21-01"
   ],
   "contentType": "reference",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-03-02",
   "review_tier": 3,
@@ -73,6 +73,11 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — converted from the CV IV fluids guide: composition table, population-specific fluid choice, permissive hypotension, blood-product ratios, the contradictory prehospital-plasma record, and the traps."
+    },
+    {
+      "version": 4,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Match the fluid to the patient AND the setting. Balanced crystalloid is a sepsis-shaped default that does NOT transfer to TBI (saline wins there). D5W and half-normal are not resuscitation fluids. HES is avoided. Permissive hypotension outside TBI until hemorrhage is controlled.",
@@ -232,7 +237,7 @@
     },
     {
       "type": "text",
-      "text": "Bickell 1994 (n=598, penetrating torso trauma, prehospital SBP ≤ 90): delayed resuscitation (fluid withheld until operative control) had higher survival to discharge (70% vs 62%, p=0.04). Theory: aggressive crystalloid before hemorrhage control 'pops the clot' and drives dilutional coagulopathy, anemia, and hypothermia. Founding-trial limits: single-center, penetrating torso only, crystalloid (pre-dates blood-ratio evidence), and BP was actually similar between groups. Current practice: target SBP ~80–90 or MAP ~50 in pure hemorrhagic shock (EAST) until hemorrhage is controlled — with a carve-out for concurrent TBI, where a higher SBP target is needed."
+      "text": "Bickell 1994 (n=598, penetrating torso trauma, prehospital SBP ≤ 90): delayed resuscitation (fluid withheld until operative control) had higher survival to discharge (70% vs 62%, p=0.04).\n\nTHEORY: aggressive crystalloid before hemorrhage control 'pops the clot' and drives dilutional coagulopathy, anemia, and hypothermia.\n\nFounding-trial limits:\n- single-center\n- penetrating torso only\n- crystalloid (pre-dates blood-ratio evidence)\n- BP was actually similar between groups\n\nCURRENT PRACTICE: target SBP ~80–90 or MAP ~50 in pure hemorrhagic shock (EAST) until hemorrhage is controlled — with a carve-out for concurrent TBI, where a higher SBP target is needed."
     },
     {
       "type": "heading",

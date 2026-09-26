@@ -3,12 +3,34 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "Invasive Hemodynamic Monitoring — Arterial Line, CVP & PA Catheter",
-  "settingEmphasis": ["icu", "or"],
-  "aliases": ["arterial line waveform", "CVP interpretation", "Swan-Ganz catheter", "pulmonary artery catheter"],
-  "tags": ["arterial line", "CVP", "pulmonary artery catheter", "Swan-Ganz", "hemodynamic monitoring", "ICU", "OR"],
-  "keywords": ["the arterial waveform's dicrotic notch marks aortic valve closure, a low or absent notch on a damped trace usually means a circuit problem, not a patient problem, square-wave test it before trusting the number", "CVP is a static pressure number with real limitations as a volume-responsiveness predictor, don't use a single CVP value alone to decide on a fluid bolus, trend and dynamic measures are more useful", "PA catheter derived numbers — PCWP, cardiac output, SVR, mixed venous saturation — are less commonly used now than a decade ago, but you'll still encounter them and need to interpret them when they appear", "PCWP over roughly 18 suggests cardiogenic pulmonary edema, under that with a low cardiac output points toward a different shock etiology, use it alongside the rest of the picture not in isolation", "square wave test the arterial line before trusting a value that looks off, a damped or overdamped waveform will falsely narrow pulse pressure and can mislead you"],
+  "settingEmphasis": [
+    "icu",
+    "or"
+  ],
+  "aliases": [
+    "arterial line waveform",
+    "CVP interpretation",
+    "Swan-Ganz catheter",
+    "pulmonary artery catheter"
+  ],
+  "tags": [
+    "arterial line",
+    "CVP",
+    "pulmonary artery catheter",
+    "Swan-Ganz",
+    "hemodynamic monitoring",
+    "ICU",
+    "OR"
+  ],
+  "keywords": [
+    "the arterial waveform's dicrotic notch marks aortic valve closure, a low or absent notch on a damped trace usually means a circuit problem, not a patient problem, square-wave test it before trusting the number",
+    "CVP is a static pressure number with real limitations as a volume-responsiveness predictor, don't use a single CVP value alone to decide on a fluid bolus, trend and dynamic measures are more useful",
+    "PA catheter derived numbers — PCWP, cardiac output, SVR, mixed venous saturation — are less commonly used now than a decade ago, but you'll still encounter them and need to interpret them when they appear",
+    "PCWP over roughly 18 suggests cardiogenic pulmonary edema, under that with a low cardiac output points toward a different shock etiology, use it alongside the rest of the picture not in isolation",
+    "square wave test the arterial line before trusting a value that looks off, a damped or overdamped waveform will falsely narrow pulse pressure and can mislead you"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -17,11 +39,20 @@
     "Vincent JL, et al. Clinical review: Update on hemodynamic monitoring — a consensus of 16. Crit Care. 2011;15(4):229."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). PA catheter/Swan-Ganz appeared only once in passing (inside shock-classification); no module addressed bedside interpretation of arterial waveform, CVP, or PAC-derived numbers." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). PA catheter/Swan-Ganz appeared only once in passing (inside shock-classification); no module addressed bedside interpretation of arterial waveform, CVP, or PAC-derived numbers."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "An arterial line's waveform quality has to be verified before you trust its number — square-wave test it — and CVP is a weaker predictor of fluid responsiveness than it's often treated as; when a PA catheter is in place, its numbers (PCWP, cardiac output, SVR, mixed venous sat) are genuinely useful but need to be read together, not any single value in isolation.",
   "whyThisMatters": "Invasive lines produce numbers that look precise and can be misread as more reliable than they are — a damped arterial waveform silently narrows the displayed pulse pressure, and a single CVP reading is a much weaker guide to whether a patient will respond to fluid than clinicians often assume — so knowing the specific pitfalls of each device matters as much as knowing what the numbers mean when they're accurate.",
-  "clinicalTakeaway": "Square-wave test an arterial line before trusting a value that looks off (fast flush, then watch for a clean single overshoot-and-settle — a damped or overdamped trace produces an artificially narrow pulse pressure and unreliable systolic/diastolic numbers). Don't use a single static CVP value alone to decide on a fluid bolus — it's a weak fluid-responsiveness predictor on its own; trend it and pair it with dynamic measures (pulse pressure variation, passive leg raise) when possible. If a PA catheter is in place: PCWP above roughly 18 mmHg suggests a cardiogenic component to pulmonary edema, while a low PCWP with low cardiac output points toward hypovolemic/distributive shock instead — read PCWP, cardiac output, SVR, and mixed venous oxygen saturation together as one picture, not any single number in isolation.",
+  "clinicalTakeaway": "ARTERIAL LINE: square-wave test before trusting a value that looks off (fast flush, then watch for a clean single overshoot-and-settle — a damped or overdamped trace produces an artificially narrow pulse pressure and unreliable systolic/diastolic numbers).\n\nCVP: don't use a single static CVP value alone to decide on a fluid bolus — it's a weak fluid-responsiveness predictor on its own; trend it and pair it with dynamic measures (pulse pressure variation, passive leg raise) when possible.\n\nPA CATHETER, if in place:\n- PCWP above roughly 18 mmHg suggests a cardiogenic component to pulmonary edema\n- a low PCWP with low cardiac output points toward hypovolemic/distributive shock instead\n- read PCWP, cardiac output, SVR, and mixed venous oxygen saturation together as one picture, not any single number in isolation",
   "body": [
     {
       "type": "heading",
@@ -65,12 +96,32 @@
     },
     {
       "type": "table",
-      "columns": ["Parameter", "What it estimates", "Practical interpretation"],
+      "columns": [
+        "Parameter",
+        "What it estimates",
+        "Practical interpretation"
+      ],
       "rows": [
-        ["PCWP (pulmonary capillary wedge pressure)", "A surrogate for left atrial pressure / LV preload", "Roughly >18 mmHg suggests a cardiogenic component to pulmonary edema; a low PCWP with a low cardiac output points AWAY from cardiogenic shock toward hypovolemic or distributive causes instead"],
-        ["Cardiac output / cardiac index", "Overall forward flow from the heart", "Read alongside SVR — a low cardiac output with high SVR suggests cardiogenic shock; a low SVR with normal/high cardiac output suggests distributive (septic) shock — this is the same underlying logic as the bedside shock-classification reference, just with directly measured rather than estimated numbers"],
-        ["SVR (systemic vascular resistance)", "Afterload / vasomotor tone", "Calculated from MAP, CVP, and cardiac output — helps distinguish shock etiology as above"],
-        ["Mixed venous oxygen saturation (SvO2)", "Global tissue oxygen extraction/balance between delivery and consumption", "A low SvO2 suggests inadequate oxygen delivery relative to demand (low cardiac output, anemia, hypoxemia, or high metabolic demand); read in the context of the whole picture, not as a single isolated target"]
+        [
+          "PCWP (pulmonary capillary wedge pressure)",
+          "A surrogate for left atrial pressure / LV preload",
+          "Roughly >18 mmHg suggests a cardiogenic component to pulmonary edema; a low PCWP with a low cardiac output points AWAY from cardiogenic shock toward hypovolemic or distributive causes instead"
+        ],
+        [
+          "Cardiac output / cardiac index",
+          "Overall forward flow from the heart",
+          "Read alongside SVR — a low cardiac output with high SVR suggests cardiogenic shock; a low SVR with normal/high cardiac output suggests distributive (septic) shock — this is the same underlying logic as the bedside shock-classification reference, just with directly measured rather than estimated numbers"
+        ],
+        [
+          "SVR (systemic vascular resistance)",
+          "Afterload / vasomotor tone",
+          "Calculated from MAP, CVP, and cardiac output — helps distinguish shock etiology as above"
+        ],
+        [
+          "Mixed venous oxygen saturation (SvO2)",
+          "Global tissue oxygen extraction/balance between delivery and consumption",
+          "A low SvO2 suggests inadequate oxygen delivery relative to demand (low cardiac output, anemia, hypoxemia, or high metabolic demand); read in the context of the whole picture, not as a single isolated target"
+        ]
       ]
     },
     {
@@ -79,6 +130,10 @@
       "text": "No single PA catheter number should drive a major management decision in isolation — read PCWP, cardiac output/index, SVR, and SvO2 together as one coherent hemodynamic picture, the same discipline that applies to any invasive monitoring number."
     }
   ],
-  "related": ["shock-classification", "septic-shock-resuscitation", "venous-congestion-deresuscitation"],
+  "related": [
+    "shock-classification",
+    "septic-shock-resuscitation",
+    "venous-congestion-deresuscitation"
+  ],
   "buildNote": "Critical Care category. Square-wave test technique and CVP's documented limitation as a fluid-responsiveness predictor reflect standard, well-established critical care teaching (Marino's ICU Book, the Vincent et al. Crit Care 2011 consensus review) — deliberately framed around the specific pitfalls (damped waveforms, over-reliance on static CVP) rather than a generic 'how invasive monitoring works' overview, since those pitfalls are the highest-value teaching points for a clinician already generally familiar with these devices."
 }

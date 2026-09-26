@@ -3,13 +3,33 @@
   "section": "Peds Module",
   "category": "Peds Resuscitation & Decision Support",
   "title": "Pediatric Procedural Sedation",
-  "settingEmphasis": ["ed"],
-  "audience": ["peds"],
-  "aliases": ["peds sedation", "ketamine sedation child", "fracture reduction sedation peds", "NPO guidelines sedation"],
-  "tags": ["procedural sedation", "ketamine", "peds", "fracture reduction", "ED"],
-  "keywords": ["ketamine is the peds ED workhorse, different dose and monitoring than RSI ketamine", "NPO status is a risk-modifying factor not an absolute contraindication for urgent sedation", "capnography catches hypoventilation minutes before pulse oximetry does", "recovery agitation is common and usually self-limited, distinct from a true adverse event"],
+  "settingEmphasis": [
+    "ed"
+  ],
+  "audience": [
+    "peds"
+  ],
+  "aliases": [
+    "peds sedation",
+    "ketamine sedation child",
+    "fracture reduction sedation peds",
+    "NPO guidelines sedation"
+  ],
+  "tags": [
+    "procedural sedation",
+    "ketamine",
+    "peds",
+    "fracture reduction",
+    "ED"
+  ],
+  "keywords": [
+    "ketamine is the peds ED workhorse, different dose and monitoring than RSI ketamine",
+    "NPO status is a risk-modifying factor not an absolute contraindication for urgent sedation",
+    "capnography catches hypoventilation minutes before pulse oximetry does",
+    "recovery agitation is common and usually self-limited, distinct from a true adverse event"
+  ],
   "contentType": "peds-tool",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,12 +38,23 @@
     "American College of Emergency Physicians Clinical Policy: Procedural Sedation and Analgesia in the Emergency Department."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5): the existing procedural-sedation-workflow procedure (Procedures/Airway & Sedation Workflows) has zero pediatric-specific content — confirmed by direct search before building this as a distinct peds companion rather than editing that adult-oriented workflow. Distinct from peds-rsi-decision-card and peds-ketamine-rsi, which are for a different indication (securing a definitive airway) with different dosing and monitoring intensity." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5): the existing procedural-sedation-workflow procedure (Procedures/Airway & Sedation Workflows) has zero pediatric-specific content — confirmed by direct search before building this as a distinct peds companion rather than editing that adult-oriented workflow. Distinct from peds-rsi-decision-card and peds-ketamine-rsi, which are for a different indication (securing a definitive airway) with different dosing and monitoring intensity."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "kind": "reference",
   "ageRange": "Any pediatric age, though the approach (drug choice, monitoring, family presence) shifts meaningfully across infant/toddler/school-age/adolescent",
   "purpose": "What's specifically different about sedating a child for a procedure (fracture reduction, laceration repair, imaging, incision and drainage) compared to the adult approach — drug of choice, NPO nuance, and the monitoring/recovery pattern.",
-  "sourceOfTruth": ["procedural-sedation-workflow"],
+  "sourceOfTruth": [
+    "procedural-sedation-workflow"
+  ],
   "body": [
     {
       "type": "heading",
@@ -41,7 +72,7 @@
     },
     {
       "type": "text",
-      "text": "Dissociative sedation with ketamine is the dominant choice for painful pediatric ED procedures (fracture/dislocation reduction, laceration repair, incision and drainage, foreign body removal) — favorable safety profile, preserves airway reflexes and respiratory drive better than most alternatives, and doesn't require IV access if given IM. This is a DIFFERENT dose and monitoring context from RSI-dose ketamine (see peds-ketamine-rsi / peds-rsi-decision-card) — procedural sedation doses are lower and the goal is dissociation with preserved spontaneous ventilation, not induction for paralysis and intubation."
+      "text": "Dissociative sedation with ketamine is the dominant choice for painful pediatric ED procedures (fracture/dislocation reduction, laceration repair, incision and drainage, foreign body removal):\n- favorable safety profile\n- preserves airway reflexes and respiratory drive better than most alternatives\n- doesn't require IV access if given IM\n\nThis is a DIFFERENT dose and monitoring context from RSI-dose ketamine (see peds-ketamine-rsi / peds-rsi-decision-card) — procedural sedation doses are lower and the goal is dissociation with preserved spontaneous ventilation, not induction for paralysis and intubation."
     },
     {
       "type": "list",
@@ -58,7 +89,7 @@
     },
     {
       "type": "text",
-      "text": "Unlike elective anesthesia, ED procedural sedation frequently can't wait for a full NPO interval — the injury/condition needing sedation didn't wait for a convenient fasting window either. Current practice treats recent oral intake as ONE factor in the overall risk-benefit discussion (weighed against procedure urgency, sedation depth needed, and airway-reflex-preserving drug choice like ketamine), not an automatic delay-the-procedure rule. Document the discussion and the reasoning, and favor an airway-reflex-sparing approach (ketamine) over deep sedation with an agent that blunts protective reflexes when NPO status is a genuine concern."
+      "text": "Unlike elective anesthesia, ED procedural sedation frequently can't wait for a full NPO interval — the injury/condition needing sedation didn't wait for a convenient fasting window either.\n\nCurrent practice treats recent oral intake as ONE factor in the overall risk-benefit discussion (weighed against procedure urgency, sedation depth needed, and airway-reflex-preserving drug choice like ketamine), not an automatic delay-the-procedure rule.\n- Document the discussion and the reasoning.\n- Favor an airway-reflex-sparing approach (ketamine) over deep sedation with an agent that blunts protective reflexes when NPO status is a genuine concern."
     },
     {
       "type": "heading",
@@ -81,7 +112,7 @@
     },
     {
       "type": "text",
-      "text": "Emergence/recovery agitation (crying, thrashing, disorientation as the child wakes) is common with ketamine, especially in younger children, and is USUALLY self-limited and benign — it frightens families more than it indicates a real problem. A calm, dim, quiet recovery environment with a parent present when possible reduces it. Reserve treatment (small-dose benzodiazepine) for agitation that's severe, prolonged, or genuinely distressing rather than treating routine emergence reactions reflexively. Counsel families about this possibility BEFORE the sedation, not just when it happens — an informed parent handles it far better than a surprised one."
+      "text": "Emergence/recovery agitation (crying, thrashing, disorientation as the child wakes) is common with ketamine, especially in younger children, and is USUALLY self-limited and benign — it frightens families more than it indicates a real problem.\n- A calm, dim, quiet recovery environment with a parent present when possible reduces it.\n- Reserve treatment (small-dose benzodiazepine) for agitation that's severe, prolonged, or genuinely distressing rather than treating routine emergence reactions reflexively.\n- Counsel families about this possibility BEFORE the sedation, not just when it happens — an informed parent handles it far better than a surprised one."
     }
   ],
   "buildNote": "kind: reference, sourceOfTruth points to procedural-sedation-workflow for the core monitoring/discharge sequence (a real schema field, not prose) rather than restating it — this module supplies only what's genuinely peds-specific: drug choice, the NPO risk calculus, and emergence-phenomenon counseling."

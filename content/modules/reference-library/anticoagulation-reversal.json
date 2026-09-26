@@ -40,7 +40,7 @@
     "DDAVP"
   ],
   "contentType": "reference",
-  "content_version": 6,
+  "content_version": 7,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -79,6 +79,11 @@
       "version": 1,
       "date": "2026-05-01",
       "change": "Initial entry."
+    },
+    {
+      "version": 7,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Reversal once bleeding starts. Andexanet alfa (Andexxa) is no longer available in the US as of 2026-12-22 — 4F-PCC / aPCC is the only US reversal path for apixaban, rivaroxaban, and edoxaban.",
@@ -97,7 +102,7 @@
     },
     {
       "type": "text",
-      "text": "Major bleeding = fatal; OR a critical site (intracranial, intraspinal, pericardial, retroperitoneal, intra-articular, intramuscular with compartment syndrome); OR a Hgb drop ≥ 2 g/dL; OR ≥ 2 units transfused. It's this threshold, not the visible volume, that triggers reversal. Then ask: (1) hemodynamically unstable? (2) cause — drug, dilution, consumption, or structural? (3) specific antidote available, or only supportive / nonspecific reversal?"
+      "text": "Major bleeding =\n- fatal\n- OR a critical site (intracranial, intraspinal, pericardial, retroperitoneal, intra-articular, intramuscular with compartment syndrome)\n- OR a Hgb drop ≥ 2 g/dL\n- OR ≥ 2 units transfused\n\nIt's this threshold, not the visible volume, that triggers reversal. Then ask:\n1. Hemodynamically unstable?\n2. Cause — drug, dilution, consumption, or structural?\n3. Specific antidote available, or only supportive / nonspecific reversal?"
     },
     {
       "type": "table",

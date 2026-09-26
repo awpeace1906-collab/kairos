@@ -3,12 +3,32 @@
   "section": "Reference Library",
   "category": "Perioperative & Anesthesia",
   "title": "Perioperative Anaphylaxis",
-  "settingEmphasis": ["or"],
-  "aliases": ["intraoperative anaphylaxis", "anesthesia anaphylaxis", "NMBA allergy", "chlorhexidine allergy"],
-  "tags": ["anaphylaxis", "perioperative", "NMBA", "chlorhexidine", "tryptase", "OR", "anesthesia"],
-  "keywords": ["NMBA is the single leading cause, roughly 38 percent, followed by antibiotics, patent blue dye, chlorhexidine", "sugammadex is an increasingly recognized cause in its own right, not just a rocuronium-allergy issue", "draw acute tryptase 30 minutes to 2 hours after onset, draw a baseline at least 24 hours after full resolution", "a draped, sedated, paralyzed patient can't report itching or throat tightness — hypotension and bronchospasm are often the first and only clues"],
+  "settingEmphasis": [
+    "or"
+  ],
+  "aliases": [
+    "intraoperative anaphylaxis",
+    "anesthesia anaphylaxis",
+    "NMBA allergy",
+    "chlorhexidine allergy"
+  ],
+  "tags": [
+    "anaphylaxis",
+    "perioperative",
+    "NMBA",
+    "chlorhexidine",
+    "tryptase",
+    "OR",
+    "anesthesia"
+  ],
+  "keywords": [
+    "NMBA is the single leading cause, roughly 38 percent, followed by antibiotics, patent blue dye, chlorhexidine",
+    "sugammadex is an increasingly recognized cause in its own right, not just a rocuronium-allergy issue",
+    "draw acute tryptase 30 minutes to 2 hours after onset, draw a baseline at least 24 hours after full resolution",
+    "a draped, sedated, paralyzed patient can't report itching or throat tightness — hypotension and bronchospasm are often the first and only clues"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,11 +38,20 @@
     "Cause distribution and tryptase timing/interpretation WebSearch-verified before writing."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4). The existing anaphylaxis module is confirmed ED/prehospital-only (settingEmphasis has no 'or'); this module covers what's specifically different about the OR presentation and workup rather than duplicating the core anaphylaxis treatment algorithm, which is identical." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4). The existing anaphylaxis module is confirmed ED/prehospital-only (settingEmphasis has no 'or'); this module covers what's specifically different about the OR presentation and workup rather than duplicating the core anaphylaxis treatment algorithm, which is identical."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "Anaphylaxis under general anesthesia looks different from the ED presentation — the classic symptoms (itching, throat tightness, a sense of doom) are invisible in a sedated, paralyzed, draped patient, so hypotension and bronchospasm are often the ONLY clues. The cause distribution is also different from the general population (NMBAs lead, not food/insect stings), and the diagnostic workup afterward (tryptase timing, allergy referral) is genuinely OR-specific.",
   "whyThisMatters": "A patient under general anesthesia cannot tell you they're itchy or that their throat feels tight — the usual first symptoms of anaphylaxis that prompt recognition everywhere else are simply unavailable, so unexplained hypotension or a sudden rise in airway pressure/bronchospasm after a new drug exposure has to BE the trigger for considering anaphylaxis, not a late confirmatory finding.",
-  "clinicalTakeaway": "In the OR, treat unexplained hypotension and/or bronchospasm shortly after a new drug/agent exposure as anaphylaxis until proven otherwise — epinephrine is still first-line treatment, same as anywhere else. Think NMBAs, antibiotics, chlorhexidine, and sugammadex first when reviewing what the patient was exposed to (not the food/insect-sting causes that dominate outside the OR). After stabilization, draw an acute tryptase within 30 minutes-2 hours of onset AND a baseline tryptase at least 24 hours after full resolution — a single tryptase level without a baseline for comparison is much less useful, since baseline levels vary between individuals.",
+  "clinicalTakeaway": "In the OR, treat unexplained hypotension and/or bronchospasm shortly after a new drug/agent exposure as anaphylaxis until proven otherwise — epinephrine is still first-line treatment, same as anywhere else.\n\nThink NMBAs, antibiotics, chlorhexidine, and sugammadex first when reviewing what the patient was exposed to (not the food/insect-sting causes that dominate outside the OR).\n\nAfter stabilization, draw:\n- an acute tryptase within 30 minutes-2 hours of onset\n- AND a baseline tryptase at least 24 hours after full resolution\n\nA single tryptase level without a baseline for comparison is much less useful, since baseline levels vary between individuals.",
   "body": [
     {
       "type": "heading",
@@ -31,7 +60,7 @@
     },
     {
       "type": "text",
-      "text": "The patient is sedated (can't report itching, throat tightness, or a sense of impending doom), paralyzed (can't develop visible stridor/respiratory distress the way an awake patient would), and draped (skin flushing/urticaria may not be visible or may be the LAST thing noticed rather than the first). This means the presentation is dominated by objective hemodynamic and respiratory findings: sudden, otherwise-unexplained hypotension (sometimes severe/refractory) and/or a sudden rise in peak airway pressure or new bronchospasm. Either — or both — after a new drug exposure should trigger consideration of anaphylaxis."
+      "text": "The patient is:\n- sedated (can't report itching, throat tightness, or a sense of impending doom)\n- paralyzed (can't develop visible stridor/respiratory distress the way an awake patient would)\n- draped (skin flushing/urticaria may not be visible or may be the LAST thing noticed rather than the first)\n\nThis means the presentation is dominated by objective hemodynamic and respiratory findings: sudden, otherwise-unexplained hypotension (sometimes severe/refractory) and/or a sudden rise in peak airway pressure or new bronchospasm.\n\nEither — or both — after a new drug exposure should trigger consideration of anaphylaxis."
     },
     {
       "type": "heading",
@@ -40,13 +69,31 @@
     },
     {
       "type": "table",
-      "columns": ["Cause", "Approximate share of IgE-mediated perioperative anaphylaxis"],
+      "columns": [
+        "Cause",
+        "Approximate share of IgE-mediated perioperative anaphylaxis"
+      ],
       "rows": [
-        ["Neuromuscular blocking agents (NMBAs)", "~38% — the single leading cause"],
-        ["Antibiotics", "~8%"],
-        ["Patent blue dye (sentinel lymph node mapping)", "~6%"],
-        ["Chlorhexidine", "~5%"],
-        ["Other (latex, sugammadex, opioids, colloids, protamine, and others)", "remainder"]
+        [
+          "Neuromuscular blocking agents (NMBAs)",
+          "~38% — the single leading cause"
+        ],
+        [
+          "Antibiotics",
+          "~8%"
+        ],
+        [
+          "Patent blue dye (sentinel lymph node mapping)",
+          "~6%"
+        ],
+        [
+          "Chlorhexidine",
+          "~5%"
+        ],
+        [
+          "Other (latex, sugammadex, opioids, colloids, protamine, and others)",
+          "remainder"
+        ]
       ]
     },
     {
@@ -86,6 +133,10 @@
       ]
     }
   ],
-  "related": ["anaphylaxis", "anesthesia-pocus", "surgical-antibiotic-prophylaxis"],
+  "related": [
+    "anaphylaxis",
+    "anesthesia-pocus",
+    "surgical-antibiotic-prophylaxis"
+  ],
   "buildNote": "Deliberately does not restate the core epinephrine-dosing/anaphylaxis-treatment algorithm, which is identical to the existing anaphylaxis module — this module's value is entirely in what's DIFFERENT about the OR context: presentation, cause distribution, and the tryptase-timing workup."
 }

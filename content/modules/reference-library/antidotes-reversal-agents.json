@@ -52,7 +52,7 @@
     "BabyBIG"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 3,
@@ -72,9 +72,14 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — converted from the CV antidotes pocket reference: anaphylaxis/shock, sedation/opioid/NMB reversal, poison-induced cardiogenic shock ladder, toxidrome rescue, anesthesia emergencies, antidote-by-substance, chelation & metabolic rescue, envenomation. Adult doses in-line; selected peds doses called out."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
-  "summary": "Every antidote that changes an outcome — indication, adult dose, one pearl. An antidote reverses a mechanism, not a patient: ask (1) is reversal actually indicated or is supportive care enough, (2) does reversing create a new problem, (3) how long does the antidote last vs the drug it reverses. That third question causes the 3am bounce-back. Anticoagulant reversal lives in the separate anticoagulation-reversal module.",
+  "summary": "Every antidote that changes an outcome — indication, adult dose, one pearl.\n\nAn antidote reverses a mechanism, not a patient. Ask:\n1. Is reversal actually indicated, or is supportive care enough?\n2. Does reversing create a new problem?\n3. How long does the antidote last vs the drug it reverses? That third question causes the 3am bounce-back.\n\nAnticoagulant reversal lives in the separate anticoagulation-reversal module.",
   "whyThisMatters": "An antidote reverses a mechanism, not a patient — and the three questions that decide whether to give one (is reversal actually needed, does reversing create a new problem, does the antidote outlast the drug) get skipped under pressure, leading to under- or over-reversal.",
   "clinicalTakeaway": "Before any antidote, ask: is supportive care enough; will reversal unmask a new problem (withdrawal, rebound, thrombosis); and will the antidote's duration outlast the offending drug's? Then dose to effect and plan for re-dosing or an infusion.",
   "body": [

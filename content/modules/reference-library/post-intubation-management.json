@@ -35,7 +35,7 @@
     "post-intubation hypotension reduce PEEP exclude tension PTX treat hypovolemia mainstem"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2027-03-03",
   "review_tier": 1,
@@ -52,6 +52,11 @@
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — initial vent settings, confirm/secure/stabilize checklist, analgosedation, and the post-intubation hypotension differential."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "The five minutes after the tube goes in kill people. Set lung-protective ventilation, confirm placement with waveform capnography and a film, start analgesia-first sedation, and immediately work the post-intubation hypotension differential (PEEP, tension pneumothorax, hypovolemia, mainstem, the induction agent).",
@@ -114,7 +119,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Post-intubation hypotension — work it fast: (1) high PEEP / breath stacking → reduce PEEP, disconnect and let an obstructive patient exhale; (2) tension pneumothorax → decompress; (3) hypovolemia unmasked by the loss of sympathetic drive and positive pressure → fluid bolus, push-dose vasopressor; (4) right mainstem intubation → pull the tube back; (5) the induction agent (propofol) → support and switch. Also give analgesia and check a glucose/K+ if the arrest risk is rising."
+      "text": "Post-intubation hypotension — work it fast:\n1. High PEEP / breath stacking → reduce PEEP, disconnect and let an obstructive patient exhale.\n2. Tension pneumothorax → decompress.\n3. Hypovolemia unmasked by the loss of sympathetic drive and positive pressure → fluid bolus, push-dose vasopressor.\n4. Right mainstem intubation → pull the tube back.\n5. The induction agent (propofol) → support and switch.\n\nAlso give analgesia and check a glucose/K+ if the arrest risk is rising."
     }
   ]
 }

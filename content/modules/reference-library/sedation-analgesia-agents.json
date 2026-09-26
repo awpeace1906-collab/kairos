@@ -45,7 +45,7 @@
     "ciprofol"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -65,11 +65,16 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — management-oriented agent reference: ketamine, propofol (+ PRIS + ciprofol), dexmedetomidine (SPICE III), remimazolam. Dose ranges, hemodynamics, indication/caution, reversal."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Dose, hemodynamic profile, and the one decision that matters for each agent. Ketamine preserves drive and (indirectly) BP but is not hemodynamically free in true shock. Propofol drops BP 25–40% on induction and carries PRIS risk on prolonged infusion. Dexmedetomidine can't sedate an agitated patient alone. Remimazolam is US-labeled for short procedural sedation only — and is reversible.",
   "whyThisMatters": "Each sedation agent has one property that decides whether it helps or harms in a given patient — ketamine's preserved drive but real collapse risk in true shock, propofol's 25–40% BP drop and PRIS risk on long infusions, dexmedetomidine's inability to control agitation alone — and picking by habit instead of by that property is where sedation goes wrong.",
-  "clinicalTakeaway": "Pick the agent by the one decision that matters: ketamine when you need preserved respiratory drive (still reduce the dose and have a pressor in true shock); propofol for a stable patient and short procedures (watch for PRIS on prolonged high-dose infusion); dexmedetomidine only when the patient is not acutely agitated; remimazolam for short procedural sedation, and it is reversible.",
+  "clinicalTakeaway": "Pick the agent by the one decision that matters:\n- KETAMINE when you need preserved respiratory drive (still reduce the dose and have a pressor in true shock)\n- PROPOFOL for a stable patient and short procedures (watch for PRIS on prolonged high-dose infusion)\n- DEXMEDETOMIDINE only when the patient is not acutely agitated\n- REMIMAZOLAM for short procedural sedation, and it is reversible",
   "body": [
     {
       "type": "heading",
@@ -167,7 +172,7 @@
     {
       "type": "callout",
       "tone": "danger",
-      "text": "PRIS = metabolic acidosis + cardiac dysfunction PLUS at least one of rhabdomyolysis, hypertriglyceridemia, or renal failure. Mortality > 30–50% once established. Can occur BELOW the quoted dose thresholds. Risk: infusion > 48 h (median onset ~125 h), dose > 4–5 mg/kg/hr (> 83 mcg/kg/min), critical illness, concurrent vasopressors / corticosteroids, children, low-carbohydrate states. First and most reliable signal: unexplained worsening metabolic acidosis. Also: new dysrhythmia, RBBB, Brugada-like ST elevation V1–V3, bradycardia → AV block; rhabdomyolysis, tea-colored urine. Management: (1) STOP propofol — the only definitive step; switch to midazolam / dexmedetomidine / ketamine / volatile. (2) Supportive — fluids, pressors/inotropes, RRT for AKI, treat hyperkalemia, continuous cardiac monitoring. (3) Bicarbonate for severe acidosis; early ECMO for refractory cardiogenic collapse."
+      "text": "PRIS = metabolic acidosis + cardiac dysfunction PLUS at least one of rhabdomyolysis, hypertriglyceridemia, or renal failure. Mortality > 30–50% once established. Can occur BELOW the quoted dose thresholds.\n\nRISK: infusion > 48 h (median onset ~125 h), dose > 4–5 mg/kg/hr (> 83 mcg/kg/min), critical illness, concurrent vasopressors / corticosteroids, children, low-carbohydrate states.\n\nFirst and most reliable signal: unexplained worsening metabolic acidosis. Also: new dysrhythmia, RBBB, Brugada-like ST elevation V1–V3, bradycardia → AV block; rhabdomyolysis, tea-colored urine.\n\nManagement:\n1. STOP propofol — the only definitive step; switch to midazolam / dexmedetomidine / ketamine / volatile.\n2. Supportive — fluids, pressors/inotropes, RRT for AKI, treat hyperkalemia, continuous cardiac monitoring.\n3. Bicarbonate for severe acidosis; early ECMO for refractory cardiogenic collapse."
     },
     {
       "type": "text",

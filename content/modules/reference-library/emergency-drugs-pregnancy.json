@@ -47,7 +47,7 @@
     "PLLR"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -67,6 +67,11 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — converted from the CV Emergency Drugs in Pregnancy reference. Organized by what you're treating; the governing principle is that maternal stabilization IS fetal stabilization."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Maternal hemodynamic stability is fetal stability — don't undertreat a genuine maternal emergency out of fetal-risk hesitancy. Every 'avoid' tier here still carries an 'unless life-threatening' escape clause. Position matters: manual left uterine displacement / left lateral tilt at ≥ 20 weeks during any resuscitation.",
@@ -195,7 +200,7 @@
     },
     {
       "type": "text",
-      "text": "Governing principle: treat the mother as you would any patient — maternal stabilization is fetal stabilization. Give without hesitation: naloxone (titrate to respiration; may precipitate maternal ± neonatal withdrawal, but untreated hypoxia is worse), N-acetylcysteine (protective for the fetus too — fetal hepatotoxicity mirrors maternal), activated charcoal, 100% O2 for CO. Fomepizole preferred over ethanol for toxic alcohols. Physostigmine / flumazenil — the usual (non-pregnancy) contraindications apply; pregnancy adds none. See the Antidotes & Reversal Agents module for full dosing."
+      "text": "Governing principle: treat the mother as you would any patient — maternal stabilization is fetal stabilization.\n\nGive without hesitation:\n- naloxone (titrate to respiration; may precipitate maternal ± neonatal withdrawal, but untreated hypoxia is worse)\n- N-acetylcysteine (protective for the fetus too — fetal hepatotoxicity mirrors maternal)\n- activated charcoal\n- 100% O2 for CO\n\nFomepizole preferred over ethanol for toxic alcohols.\n\nPhysostigmine / flumazenil — the usual (non-pregnancy) contraindications apply; pregnancy adds none.\n\nSee the Antidotes & Reversal Agents module for full dosing."
     },
     {
       "type": "heading",

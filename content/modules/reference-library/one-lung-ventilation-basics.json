@@ -3,12 +3,30 @@
   "section": "Reference Library",
   "category": "Perioperative & Anesthesia",
   "title": "One-Lung Ventilation Basics",
-  "settingEmphasis": ["or"],
-  "aliases": ["lung isolation", "double lumen tube", "bronchial blocker"],
-  "tags": ["one-lung ventilation", "double lumen tube", "bronchial blocker", "thoracic anesthesia", "OR"],
-  "keywords": ["fiberoptic bronchoscopy is the gold standard for confirming double lumen tube position, not clinical exam alone, malposition rates by clinical exam alone are reported as high as half of cases, don't trust auscultation to confirm placement", "position can and does shift with surgical manipulation and patient repositioning during the case, re-confirm with a repeat bronchoscopy look if hypoxemia develops rather than assuming your initial placement is still correct", "hypoxemia troubleshooting follows a logical sequence, check tube position first, suction secretions, then increase FiO2 and consider CPAP to the non-ventilated lung, don't jump straight to increasing FiO2 without checking position first", "a double lumen tube allows selective lung isolation and independent suctioning of either lung, a bronchial blocker works through a single-lumen tube and is often easier in a difficult airway or pre-existing tracheostomy but can't independently suction/ventilate the non-blocked side as flexibly", "hypoxic pulmonary vasoconstriction in the non-ventilated lung is actually helpful here, it redirects blood flow toward the ventilated lung and volatile anesthetics can blunt this response at high concentrations, worth knowing when troubleshooting oxygenation"],
+  "settingEmphasis": [
+    "or"
+  ],
+  "aliases": [
+    "lung isolation",
+    "double lumen tube",
+    "bronchial blocker"
+  ],
+  "tags": [
+    "one-lung ventilation",
+    "double lumen tube",
+    "bronchial blocker",
+    "thoracic anesthesia",
+    "OR"
+  ],
+  "keywords": [
+    "fiberoptic bronchoscopy is the gold standard for confirming double lumen tube position, not clinical exam alone, malposition rates by clinical exam alone are reported as high as half of cases, don't trust auscultation to confirm placement",
+    "position can and does shift with surgical manipulation and patient repositioning during the case, re-confirm with a repeat bronchoscopy look if hypoxemia develops rather than assuming your initial placement is still correct",
+    "hypoxemia troubleshooting follows a logical sequence, check tube position first, suction secretions, then increase FiO2 and consider CPAP to the non-ventilated lung, don't jump straight to increasing FiO2 without checking position first",
+    "a double lumen tube allows selective lung isolation and independent suctioning of either lung, a bronchial blocker works through a single-lumen tube and is often easier in a difficult airway or pre-existing tracheostomy but can't independently suction/ventilate the non-blocked side as flexibly",
+    "hypoxic pulmonary vasoconstriction in the non-ventilated lung is actually helpful here, it redirects blood flow toward the ventilated lung and volatile anesthetics can blunt this response at high concentrations, worth knowing when troubleshooting oxygenation"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -17,11 +35,20 @@
     "Klein U, et al. Lung Isolation Anesthesia. StatPearls."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). No prior module addressed lung isolation device selection, position confirmation, or hypoxemia troubleshooting during one-lung ventilation." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). No prior module addressed lung isolation device selection, position confirmation, or hypoxemia troubleshooting during one-lung ventilation."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "Fiberoptic bronchoscopy — not auscultation — is the gold standard for confirming lung isolation device position, since clinical exam alone has been shown to miss malposition in a substantial fraction of cases, and hypoxemia troubleshooting follows a logical sequence: check position first, suction, then escalate FiO2/CPAP rather than jumping straight to increasing oxygen.",
   "whyThisMatters": "A malpositioned double-lumen tube or bronchial blocker is common enough, and consequential enough for oxygenation, that clinical exam alone is genuinely inadequate for confirming placement — this is one of those areas where the 'obvious' bedside check (listening for breath sounds) has been directly shown to underperform a specific alternative (bronchoscopy), which is worth knowing explicitly rather than assuming auscultation is good enough.",
-  "clinicalTakeaway": "Confirm double-lumen tube or bronchial blocker position with fiberoptic bronchoscopy, not clinical exam alone — malposition by clinical assessment alone has been reported in as many as half of cases in some series. Position can shift during the case from surgical manipulation or patient repositioning — if hypoxemia develops intraoperatively, re-confirm position with a repeat bronchoscopic look rather than assuming your initial placement is still correct. When hypoxemia occurs: check/correct tube position FIRST, then suction secretions from both lumens, THEN escalate — increase FiO2, apply CPAP to the non-ventilated lung, or use lung recruitment maneuvers on the ventilated lung — rather than jumping straight to increasing FiO2 without checking position first.",
+  "clinicalTakeaway": "Confirm double-lumen tube or bronchial blocker position with fiberoptic bronchoscopy, not clinical exam alone — malposition by clinical assessment alone has been reported in as many as half of cases in some series.\n\nPosition can shift during the case from surgical manipulation or patient repositioning — if hypoxemia develops intraoperatively, re-confirm position with a repeat bronchoscopic look rather than assuming your initial placement is still correct.\n\nWhen hypoxemia occurs:\n1. Check/correct tube position FIRST.\n2. Then suction secretions from both lumens.\n3. THEN escalate — increase FiO2, apply CPAP to the non-ventilated lung, or use lung recruitment maneuvers on the ventilated lung.\n\nRather than jumping straight to increasing FiO2 without checking position first.",
   "body": [
     {
       "type": "heading",
@@ -30,10 +57,22 @@
     },
     {
       "type": "table",
-      "columns": ["Device", "How it works", "Practical notes"],
+      "columns": [
+        "Device",
+        "How it works",
+        "Practical notes"
+      ],
       "rows": [
-        ["Double-lumen tube (DLT)", "A tube with two separate lumens, one extending into a mainstem bronchus (isolating that lung) and one ending in the trachea (ventilating the other lung)", "Allows fully independent lung isolation AND independent suctioning/CPAP application to either lung — the more versatile option for most routine thoracic cases"],
-        ["Bronchial blocker", "A balloon-tipped catheter passed through (or alongside) a standard single-lumen ETT and advanced into the target mainstem bronchus to occlude it", "Often easier to place in a difficult airway, a patient with an existing tracheostomy, or when postoperative ventilation with a standard single-lumen tube is anticipated — but doesn't allow the same independent suctioning/CPAP flexibility on the blocked side, and can be more prone to displacement during surgical manipulation"]
+        [
+          "Double-lumen tube (DLT)",
+          "A tube with two separate lumens, one extending into a mainstem bronchus (isolating that lung) and one ending in the trachea (ventilating the other lung)",
+          "Allows fully independent lung isolation AND independent suctioning/CPAP application to either lung — the more versatile option for most routine thoracic cases"
+        ],
+        [
+          "Bronchial blocker",
+          "A balloon-tipped catheter passed through (or alongside) a standard single-lumen ETT and advanced into the target mainstem bronchus to occlude it",
+          "Often easier to place in a difficult airway, a patient with an existing tracheostomy, or when postoperative ventilation with a standard single-lumen tube is anticipated — but doesn't allow the same independent suctioning/CPAP flexibility on the blocked side, and can be more prone to displacement during surgical manipulation"
+        ]
       ]
     },
     {
@@ -69,6 +108,9 @@
       ]
     }
   ],
-  "related": ["advanced-ards-ventilation", "physiologically-difficult-airway"],
+  "related": [
+    "advanced-ards-ventilation",
+    "physiologically-difficult-airway"
+  ],
   "buildNote": "Perioperative & Anesthesia category. Malposition-by-clinical-exam-alone rates and the position-check-then-suction-then-escalate hypoxemia troubleshooting sequence WebSearch-verified against Campos & Feider (J Cardiothorac Vasc Anesth 2018) and StatPearls lung isolation content. Deliberately scoped to bedside technique/troubleshooting rather than restating general lung-protective ventilation principles, which live in advanced-ards-ventilation."
 }

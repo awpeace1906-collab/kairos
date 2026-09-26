@@ -34,7 +34,7 @@
     "PROSPECT Working Group"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-03-02",
   "review_tier": 3,
@@ -52,6 +52,11 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the 2026 PROSPECT six-domain recommendation for post-cesarean analgesia under neuraxial anesthesia."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Three load-bearing pillars: (1) a single neuraxial long-acting opioid, (2) scheduled — not as-needed — acetaminophen + NSAID, (3) a single IV dexamethasone dose after delivery. Everything else is an addition. Oral opioids are the rescue backstop, not a routine component.",
@@ -99,7 +104,7 @@
     {
       "type": "callout",
       "tone": "info",
-      "text": "Operating principles: default to intrathecal morphine/diamorphine whenever neuraxial anesthesia is the primary technique; schedule acetaminophen + NSAID from the start (don't wait for the patient to ask); give the single dexamethasone dose after delivery; if intrathecal morphine isn't in the plan, default to a fascial plane block or wound infiltration rather than leaning harder on systemic opioids; treat surgical technique as part of the analgesic plan."
+      "text": "Operating principles:\n- default to intrathecal morphine/diamorphine whenever neuraxial anesthesia is the primary technique\n- schedule acetaminophen + NSAID from the start (don't wait for the patient to ask)\n- give the single dexamethasone dose after delivery\n- if intrathecal morphine isn't in the plan, default to a fascial plane block or wound infiltration rather than leaning harder on systemic opioids\n- treat surgical technique as part of the analgesic plan"
     }
   ],
   "related": [

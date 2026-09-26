@@ -3,12 +3,30 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "ICU Nutrition — Enteral & Parenteral Initiation",
-  "settingEmphasis": ["icu"],
-  "aliases": ["enteral nutrition timing", "parenteral nutrition ICU", "tube feeding critically ill"],
-  "tags": ["enteral nutrition", "parenteral nutrition", "ICU nutrition", "refeeding syndrome", "ICU"],
-  "keywords": ["early enteral nutrition, generally within 24-48 hours, for a patient who cannot maintain adequate oral intake, the gut is the preferred route when it's usable, this is the icu-workflow one-liner expanded into an actual protocol", "hemodynamic instability on escalating vasopressors is a reason to hold or delay enteral feeding, not a reason to switch straight to parenteral, wait for the patient to stabilize first", "parenteral nutrition is reserved for a gut that genuinely can't be used, or enteral intake that's inadequate after a real trial, not a default first choice just because it's easier to start", "postpyloric feeding for a patient at high aspiration risk, gastric feeding is fine for most others, this is a risk-stratified decision not a blanket rule", "refeeding syndrome risk is highest in a chronically malnourished or prolonged-NPO patient, start nutrition slowly and correct electrolytes proactively in that population rather than feeding at a full target rate from hour one"],
+  "settingEmphasis": [
+    "icu"
+  ],
+  "aliases": [
+    "enteral nutrition timing",
+    "parenteral nutrition ICU",
+    "tube feeding critically ill"
+  ],
+  "tags": [
+    "enteral nutrition",
+    "parenteral nutrition",
+    "ICU nutrition",
+    "refeeding syndrome",
+    "ICU"
+  ],
+  "keywords": [
+    "early enteral nutrition, generally within 24-48 hours, for a patient who cannot maintain adequate oral intake, the gut is the preferred route when it's usable, this is the icu-workflow one-liner expanded into an actual protocol",
+    "hemodynamic instability on escalating vasopressors is a reason to hold or delay enteral feeding, not a reason to switch straight to parenteral, wait for the patient to stabilize first",
+    "parenteral nutrition is reserved for a gut that genuinely can't be used, or enteral intake that's inadequate after a real trial, not a default first choice just because it's easier to start",
+    "postpyloric feeding for a patient at high aspiration risk, gastric feeding is fine for most others, this is a risk-stratified decision not a blanket rule",
+    "refeeding syndrome risk is highest in a chronically malnourished or prolonged-NPO patient, start nutrition slowly and correct electrolytes proactively in that population rather than feeding at a full target rate from hour one"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -17,11 +35,20 @@
     "McClave SA, et al. Guidelines for the Provision and Assessment of Nutrition Support Therapy in the Adult Critically Ill Patient: SCCM and ASPEN. JPEN J Parenter Enteral Nutr. 2016;40(2):159-211."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). icu-workflow.json's existing coverage was a single line ('enteral within 24-48h, trophic feeds ok'); this is the expanded protocol-level module that already has supporting tools (harris-benedict, refeeding-risk calculators) but no unifying reference." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). icu-workflow.json's existing coverage was a single line ('enteral within 24-48h, trophic feeds ok'); this is the expanded protocol-level module that already has supporting tools (harris-benedict, refeeding-risk calculators) but no unifying reference."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "Start enteral nutrition early (within 24-48 hours) in a patient who can't maintain adequate oral intake and whose gut is usable — parenteral nutrition is reserved for when the gut genuinely can't be used or enteral feeding proves inadequate, not chosen as a default first option.",
   "whyThisMatters": "The gut being the 'preferred route when usable' isn't just a convenience preference — early enteral feeding is associated with better outcomes than delayed feeding or unnecessary parenteral nutrition in most critically ill patients, and getting the initiation timing, route, and pace right (especially in a malnourished patient at refeeding risk) is a genuine, protocolizable piece of ICU care that's easy to under-prioritize amid more dramatic resuscitation tasks.",
-  "clinicalTakeaway": "Initiate enteral nutrition within 24-48 hours in a hemodynamically stable patient unable to maintain adequate oral intake — the gut is the preferred route whenever it's usable. Hold/delay enteral feeding (rather than switching straight to parenteral) during active hemodynamic instability or escalating vasopressor requirements — wait for reasonable stability first. Reserve parenteral nutrition for a gut that genuinely can't be used, or for enteral intake that remains inadequate after a real trial — it is not a default first choice. Use postpyloric (rather than gastric) feeding for a patient at high aspiration risk. In a chronically malnourished or prolonged-NPO patient, start nutrition SLOWLY and correct electrolytes proactively given elevated refeeding syndrome risk (see the refeeding-risk calculator), rather than feeding at a full target rate from the outset.",
+  "clinicalTakeaway": "- Initiate enteral nutrition within 24-48 hours in a hemodynamically stable patient unable to maintain adequate oral intake — the gut is the preferred route whenever it's usable.\n- Hold/delay enteral feeding (rather than switching straight to parenteral) during active hemodynamic instability or escalating vasopressor requirements — wait for reasonable stability first.\n- Reserve parenteral nutrition for a gut that genuinely can't be used, or for enteral intake that remains inadequate after a real trial — it is not a default first choice.\n- Use postpyloric (rather than gastric) feeding for a patient at high aspiration risk.\n- In a chronically malnourished or prolonged-NPO patient, start nutrition SLOWLY and correct electrolytes proactively given elevated refeeding syndrome risk (see the refeeding-risk calculator), rather than feeding at a full target rate from the outset.",
   "body": [
     {
       "type": "heading",
@@ -75,9 +102,13 @@
     },
     {
       "type": "text",
-      "text": "A patient with significant chronic malnutrition or a prolonged period of minimal/no intake before ICU admission carries elevated refeeding syndrome risk — reintroducing nutrition (particularly carbohydrate) triggers an insulin surge that drives potassium, magnesium, and phosphate intracellularly, and can precipitate dangerous hypophosphatemia, arrhythmia, and cardiac/respiratory compromise if not anticipated. Use the refeeding-risk calculator to identify this population, start nutrition at a reduced rate and advance gradually rather than targeting full caloric goals from hour one, and proactively check and correct electrolytes (especially phosphate) ahead of and during the early feeding period rather than reactively after a derangement is already found."
+      "text": "A patient with significant chronic malnutrition or a prolonged period of minimal/no intake before ICU admission carries elevated refeeding syndrome risk. Reintroducing nutrition (particularly carbohydrate) triggers an insulin surge that drives potassium, magnesium, and phosphate intracellularly, and can precipitate dangerous hypophosphatemia, arrhythmia, and cardiac/respiratory compromise if not anticipated.\n- Use the refeeding-risk calculator to identify this population.\n- Start nutrition at a reduced rate and advance gradually rather than targeting full caloric goals from hour one.\n- Proactively check and correct electrolytes (especially phosphate) ahead of and during the early feeding period rather than reactively after a derangement is already found."
     }
   ],
-  "related": ["refeeding-risk", "harris-benedict", "icu-workflow"],
+  "related": [
+    "refeeding-risk",
+    "harris-benedict",
+    "icu-workflow"
+  ],
   "buildNote": "Critical Care category, the expanded companion to icu-workflow's brief existing nutrition line. Early-enteral-preferred and instability-holds-don't-switch-to-parenteral principles WebSearch-verified against the ESPEN 2023 and SCCM/ASPEN 2016 critical care nutrition guidelines. related[] ids for refeeding-risk and harris-benedict assumed from prior batch naming — verify actual ids exist at build/validate time."
 }

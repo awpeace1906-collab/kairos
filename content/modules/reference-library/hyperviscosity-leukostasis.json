@@ -37,7 +37,7 @@
     "treat on clinical suspicion; do not wait for the viscosity result"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-23",
   "next_review_due": "2027-03-23",
   "review_tier": 2,
@@ -54,10 +54,15 @@
       "version": 1,
       "date": "2026-09-23",
       "change": "New — a genuine gap. Hyperviscosity and leukostasis appeared nowhere in the guide, despite being oncologic emergencies where the first ED decision (whether to transfuse) can make the patient worse."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Three different diseases that all present as sludged blood: paraprotein hyperviscosity, leukostasis, and symptomatic polycythemia. What separates them, and why the reflex to transfuse is the trap.",
-  "whyThisMatters": "These patients arrive looking like a stroke, a bleed, a hypoxic respiratory failure, or simply confused — and the unifying problem is that blood has stopped flowing properly through small vessels. The reason it earns its own card is that the standard reflexes actively harm: transfusing red cells into leukostasis or paraprotein hyperviscosity raises viscosity further, and diuresing a patient who looks fluid-overloaded concentrates the blood that is already too thick. Untreated paraprotein hyperviscosity carries mortality above 50%; with prompt apheresis and cytoreduction that falls to roughly 10-20%. The intervention that matters is available in most hospitals, and the delay is almost always diagnostic rather than logistic.",
+  "whyThisMatters": "These patients arrive looking like a stroke, a bleed, a hypoxic respiratory failure, or simply confused — and the unifying problem is that blood has stopped flowing properly through small vessels.\n\nThe reason it earns its own card is that the standard reflexes actively harm:\n- transfusing red cells into leukostasis or paraprotein hyperviscosity raises viscosity further\n- diuresing a patient who looks fluid-overloaded concentrates the blood that is already too thick\n\nUntreated paraprotein hyperviscosity carries mortality above 50%; with prompt apheresis and cytoreduction that falls to roughly 10-20%. The intervention that matters is available in most hospitals, and the delay is almost always diagnostic rather than logistic.",
   "body": [
     {
       "type": "heading",

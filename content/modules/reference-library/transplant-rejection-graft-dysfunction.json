@@ -37,7 +37,7 @@
     "never adjust immunosuppression without the transplant team"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-23",
   "next_review_due": "2027-03-23",
   "review_tier": 2,
@@ -54,10 +54,15 @@
       "version": 1,
       "date": "2026-09-23",
       "change": "New — the second half of the transplant-emergencies gap. The infection half shipped as febrile-transplant-recipient on the same day; this card covers rejection, drug toxicity, and the fact that a sick transplant patient is usually one of those three and you cannot tell which from the bedside."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "The sick transplant patient who is not obviously infected: rejection, drug toxicity, and how to tell them apart without wrecking the graft.",
-  "whyThisMatters": "A transplant recipient with a failing graft has three candidate problems — rejection, infection, and drug toxicity — and they present the same way, coexist freely, and pull treatment in opposite directions. Treating rejection means more immunosuppression; treating infection often means less. Guessing wrong in either direction costs the graft or the patient. What makes this an emergency-medicine problem rather than a transplant-clinic problem is that the two commonest precipitants are things you can find in ten minutes at the bedside: the patient stopped taking their drugs, or someone started a new one that tanked their levels.",
+  "whyThisMatters": "A transplant recipient with a failing graft has three candidate problems — rejection, infection, and drug toxicity — and they present the same way, coexist freely, and pull treatment in opposite directions.\n\nTreating rejection means more immunosuppression; treating infection often means less. Guessing wrong in either direction costs the graft or the patient.\n\nWhat makes this an emergency-medicine problem rather than a transplant-clinic problem is that the two commonest precipitants are things you can find in ten minutes at the bedside: the patient stopped taking their drugs, or someone started a new one that tanked their levels.",
   "body": [
     {
       "type": "heading",

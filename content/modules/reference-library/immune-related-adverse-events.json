@@ -37,7 +37,7 @@
     "do not treat ICI colitis as infectious gastroenteritis and send them home"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-23",
   "next_review_due": "2027-03-23",
   "review_tier": 2,
@@ -53,10 +53,15 @@
       "version": 1,
       "date": "2026-09-23",
       "change": "New. Checkpoint inhibitors are common enough that their toxicities now present to general ED and ICU teams rather than to oncology, and the guide had nothing on them. Cross-linked to the biologic-drug-nomenclature card built in the same batch, which is what lets a reader work out that the unfamiliar drug on the list is an immunotherapy at all."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Checkpoint inhibitor toxicity for the non-oncologist: how to recognize it, which ones kill, and what to do before the oncologist calls back.",
-  "whyThisMatters": "Checkpoint inhibitors are now used across most solid tumors, and their toxicities arrive in the ED and the ICU rather than in the infusion suite. They are autoimmune inflammation of any organ, they do not respect the timeline of chemotherapy toxicity, and they are routinely misread as the ordinary thing they resemble — colitis as gastroenteritis, myocarditis as an NSTEMI, hypophysitis as deconditioning. Two facts should change your threshold: myocarditis occurs in roughly 1% but kills 40-50%, and adrenal crisis from hypophysitis is a same-visit death that a dose of hydrocortisone prevents. The treatment is usually steroids, which is the opposite of what you would do for the infection these presentations mimic — so getting the direction right matters more than getting the grade exactly right.",
+  "whyThisMatters": "Checkpoint inhibitors are now used across most solid tumors, and their toxicities arrive in the ED and the ICU rather than in the infusion suite. They are autoimmune inflammation of any organ, they do not respect the timeline of chemotherapy toxicity, and they are routinely misread as the ordinary thing they resemble — colitis as gastroenteritis, myocarditis as an NSTEMI, hypophysitis as deconditioning.\n\nTwo facts should change your threshold:\n- myocarditis occurs in roughly 1% but kills 40-50%\n- adrenal crisis from hypophysitis is a same-visit death that a dose of hydrocortisone prevents\n\nThe treatment is usually steroids, which is the opposite of what you would do for the infection these presentations mimic — so getting the direction right matters more than getting the grade exactly right.",
   "body": [
     {
       "type": "heading",
@@ -192,6 +197,6 @@
       ]
     }
   ],
-  "clinicalTakeaway": "In any patient on a checkpoint inhibitor, treat a new symptom as an irAE until proven otherwise, and send a troponin with an ECG if there is anything cardiac, respiratory or neuromuscular about it — myocarditis is uncommon and lethal, and the test is cheap. Hold the drug and start steroids for grade 2 and above, admit grade 3-4 on methylprednisolone 1-2 mg/kg, work up infection in parallel rather than instead, and give stress-dose hydrocortisone to anyone unwell enough that adrenal insufficiency is on the list. Endocrine toxicity is the exception: replace the hormone, do not immunosuppress.",
+  "clinicalTakeaway": "In any patient on a checkpoint inhibitor, treat a new symptom as an irAE until proven otherwise, and send a troponin with an ECG if there is anything cardiac, respiratory or neuromuscular about it — myocarditis is uncommon and lethal, and the test is cheap.\n- Hold the drug and start steroids for grade 2 and above.\n- Admit grade 3-4 on methylprednisolone 1-2 mg/kg.\n- Work up infection in parallel rather than instead.\n- Give stress-dose hydrocortisone to anyone unwell enough that adrenal insufficiency is on the list.\n\nEndocrine toxicity is the exception: replace the hormone, do not immunosuppress.",
   "buildNote": "New 2026-09-23. Written for the non-oncologist, since that is who actually receives these patients. Ordered by lethality rather than by frequency or by organ system, because the card's job is to make the reader send a troponin. Deliberately gives approximate grading rather than reproducing CTCAE tables — the ED decision is hold/steroid/admit, and a reader who needs the exact grade has time to open NCCN. Three things are called out because they are the documented misses: the myocarditis-myositis-myasthenia overlap, the months-after-the-last-dose timing, and endocrine toxicity being the exception to the steroid reflex. Cross-links to biologic-drug-nomenclature, which is what lets a reader identify an unfamiliar -mab as an immunotherapy in the first place."
 }

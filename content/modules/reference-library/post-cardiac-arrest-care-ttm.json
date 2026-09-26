@@ -3,12 +3,34 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "Post-Cardiac Arrest Care & Targeted Temperature Management",
-  "settingEmphasis": ["icu", "ed"],
-  "aliases": ["post-ROSC care", "targeted temperature management", "TTM", "therapeutic hypothermia", "post-arrest bundle"],
-  "tags": ["post-cardiac arrest", "TTM", "targeted temperature management", "neuroprognostication", "ROSC", "ICU"],
-  "keywords": ["the evidence has shifted away from mandatory hypothermia toward active fever prevention, TTM2 showed no benefit of 33C over controlled normothermia with fever avoidance", "target normothermia under 37.5C for at least 24-72 hours, avoid fever which is clearly harmful even if deep hypothermia isn't clearly beneficial", "avoid hypotension, target a MAP that supports cerebral perfusion, don't chase a fixed number blindly", "continuous EEG from day 1 to catch subclinical seizures, myoclonus after cardiac arrest can look like seizure but isn't always", "multimodal neuroprognostication waits until at least 72 hours AFTER the patient is back to normothermia, not 72 hours after ROSC, and no single test is used in isolation"],
+  "settingEmphasis": [
+    "icu",
+    "ed"
+  ],
+  "aliases": [
+    "post-ROSC care",
+    "targeted temperature management",
+    "TTM",
+    "therapeutic hypothermia",
+    "post-arrest bundle"
+  ],
+  "tags": [
+    "post-cardiac arrest",
+    "TTM",
+    "targeted temperature management",
+    "neuroprognostication",
+    "ROSC",
+    "ICU"
+  ],
+  "keywords": [
+    "the evidence has shifted away from mandatory hypothermia toward active fever prevention, TTM2 showed no benefit of 33C over controlled normothermia with fever avoidance",
+    "target normothermia under 37.5C for at least 24-72 hours, avoid fever which is clearly harmful even if deep hypothermia isn't clearly beneficial",
+    "avoid hypotension, target a MAP that supports cerebral perfusion, don't chase a fixed number blindly",
+    "continuous EEG from day 1 to catch subclinical seizures, myoclonus after cardiac arrest can look like seizure but isn't always",
+    "multimodal neuroprognostication waits until at least 72 hours AFTER the patient is back to normothermia, not 72 hours after ROSC, and no single test is used in isolation"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,11 +40,20 @@
     "European Resuscitation Council / European Society of Intensive Care Medicine. Guidelines 2025: Post-Resuscitation Care."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). acls-adult-cardiac-arrest.json previously gave post-ROSC care only a couple of lines; this is the missing depth on TTM target selection, hemodynamic/glucose/seizure management, and neuroprognostication timing, cross-linked back from that module." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). acls-adult-cardiac-arrest.json previously gave post-ROSC care only a couple of lines; this is the missing depth on TTM target selection, hemodynamic/glucose/seizure management, and neuroprognostication timing, cross-linked back from that module."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "The evidence has moved away from mandatory deep hypothermia toward active fever prevention (normothermia, <37.5°C) as the primary post-arrest temperature strategy — pair that with avoiding hypotension, treating seizures aggressively, and waiting the full ≥72 hours after normothermia (not after ROSC) before committing to a neuroprognosis.",
   "whyThisMatters": "Two large trials (TTM, then TTM2) progressively dismantled the assumption that cooling to 33°C is necessary — TTM2 showed no mortality or functional-outcome benefit of hypothermia over controlled normothermia with fever prevention, while fever itself remains clearly associated with worse outcomes. Premature neuroprognostication is a distinct, serious risk in the other direction — withdrawing care too early based on an incomplete picture can produce a self-fulfilling prophecy in a patient who might otherwise have recovered.",
-  "clinicalTakeaway": "Target active fever prevention — core temperature <37.5°C — for at least 24-72 hours post-ROSC; routine cooling to 33°C is no longer the default recommendation given TTM2, though it remains a reasonable option per some protocols/patient factors. Avoid hypotension (support MAP adequately, don't tolerate low pressures 'because the patient is post-arrest'). Treat glucose to avoid both hyperglycemia and hypoglycemia rather than tight control. Start continuous EEG on day 1 to catch subclinical/nonconvulsive seizures, which are common and often missed without it. Do NOT finalize a neuroprognosis before at least 72 hours have passed since the patient became normothermic (not simply 72 hours since ROSC) — and never on a single test or exam finding in isolation.",
+  "clinicalTakeaway": "- TEMPERATURE: target active fever prevention — core temperature <37.5°C — for at least 24-72 hours post-ROSC; routine cooling to 33°C is no longer the default recommendation given TTM2, though it remains a reasonable option per some protocols/patient factors.\n- BLOOD PRESSURE: avoid hypotension (support MAP adequately, don't tolerate low pressures 'because the patient is post-arrest').\n- GLUCOSE: treat to avoid both hyperglycemia and hypoglycemia rather than tight control.\n- EEG: start continuous EEG on day 1 to catch subclinical/nonconvulsive seizures, which are common and often missed without it.\n\nDo NOT finalize a neuroprognosis before at least 72 hours have passed since the patient became normothermic (not simply 72 hours since ROSC) — and never on a single test or exam finding in isolation.",
   "body": [
     {
       "type": "heading",
@@ -31,7 +62,7 @@
     },
     {
       "type": "text",
-      "text": "The original TTM trial (33°C vs 36°C) found no mortality difference between the two targets. TTM2 went further, comparing 33°C hypothermia against controlled NORMOTHERMIA with active fever prevention (target <37.5°C) — and again found no benefit of hypothermia, while hypothermia carried more adverse effects (arrhythmia, hemodynamic instability). Current guidance has shifted accordingly: active fever prevention targeting a core temperature below 37.5°C, sustained for at least 24-72 hours, is now the primary recommended strategy for most patients, with deliberate deeper cooling (33°C) considered an option per local protocol/patient factors rather than a universal mandate."
+      "text": "The original TTM trial (33°C vs 36°C) found no mortality difference between the two targets.\n\nTTM2 went further, comparing 33°C hypothermia against controlled NORMOTHERMIA with active fever prevention (target <37.5°C) — and again found no benefit of hypothermia, while hypothermia carried more adverse effects (arrhythmia, hemodynamic instability).\n\nCurrent guidance has shifted accordingly: active fever prevention targeting a core temperature below 37.5°C, sustained for at least 24-72 hours, is now the primary recommended strategy for most patients, with deliberate deeper cooling (33°C) considered an option per local protocol/patient factors rather than a universal mandate."
     },
     {
       "type": "callout",
@@ -85,6 +116,10 @@
       ]
     }
   ],
-  "related": ["acls-adult-cardiac-arrest", "status-epilepticus-adult", "brain-death-determination"],
+  "related": [
+    "acls-adult-cardiac-arrest",
+    "status-epilepticus-adult",
+    "brain-death-determination"
+  ],
   "buildNote": "Critical Care category. TTM/TTM2 findings and the shift to fever-prevention-as-primary-strategy, EEG-from-day-1, and the '≥72h post-normothermia' neuroprognostication timing rule WebSearch-verified against the 2025 AHA Part 11 guideline and TTM2 (NEJM 2021). acls-adult-cardiac-arrest.json's related[] updated in the same batch to include this id so the thin post-ROSC section there links forward to this depth."
 }

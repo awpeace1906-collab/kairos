@@ -3,12 +3,34 @@
   "section": "Reference Library",
   "category": "ENT / Ophtho / Dental / GU",
   "title": "Deep Neck Space Infections — PTA, Epiglottitis & Ludwig's Angina",
-  "settingEmphasis": ["ed", "icu"],
-  "aliases": ["peritonsillar abscess", "adult epiglottitis", "Ludwig angina", "deep space neck infection"],
-  "tags": ["peritonsillar abscess", "epiglottitis", "Ludwig's angina", "airway emergency", "ENT", "ED", "ICU"],
-  "keywords": ["hot potato voice, trismus, and uvular deviation point to peritonsillar abscess", "adult epiglottitis is not just a peds disease, think of it in an adult with a sore throat worse than the exam looks, muffled voice, drooling, tripod positioning", "Ludwig's angina is bilateral submandibular space cellulitis that pushes the tongue up and back, it's a floor-of-mouth process not a tonsil process", "the shared theme across all three is airway-first thinking, get anesthesia/ENT to the bedside early before the airway closes rather than after", "avoid agitating a child or adult with a tenuous airway from one of these, keep them upright and calm, don't force a lateral neck film or exam that provokes crying/struggling"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "peritonsillar abscess",
+    "adult epiglottitis",
+    "Ludwig angina",
+    "deep space neck infection"
+  ],
+  "tags": [
+    "peritonsillar abscess",
+    "epiglottitis",
+    "Ludwig's angina",
+    "airway emergency",
+    "ENT",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "hot potato voice, trismus, and uvular deviation point to peritonsillar abscess",
+    "adult epiglottitis is not just a peds disease, think of it in an adult with a sore throat worse than the exam looks, muffled voice, drooling, tripod positioning",
+    "Ludwig's angina is bilateral submandibular space cellulitis that pushes the tongue up and back, it's a floor-of-mouth process not a tonsil process",
+    "the shared theme across all three is airway-first thinking, get anesthesia/ENT to the bedside early before the airway closes rather than after",
+    "avoid agitating a child or adult with a tenuous airway from one of these, keep them upright and calm, don't force a lateral neck film or exam that provokes crying/struggling"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,11 +40,20 @@
     "Costain N, Marrie TJ. Ludwig's angina. Am J Med. 2011;124(2):115-117."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). No prior module addressed any of these three airway-risk oropharyngeal/neck infections." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). No prior module addressed any of these three airway-risk oropharyngeal/neck infections."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "Three deep neck space infections — peritonsillar abscess, adult epiglottitis, and Ludwig's angina — share one organizing principle: think about the airway before anything else, and get airway-capable help to the bedside early rather than after things decompensate.",
   "whyThisMatters": "All three can progress from 'sore throat' to airway obstruction, and the exam finding that distinguishes them (trismus/uvular deviation vs. drooling/tripod positioning vs. a woody bilateral submandibular swelling pushing the tongue up) tells you which structure is actually at risk and how urgently. Adult epiglottitis in particular is under-recognized because clinicians associate it with pediatrics — it still occurs in adults and the airway can close fast.",
-  "clinicalTakeaway": "Peritonsillar abscess: trismus, muffled 'hot potato' voice, and uvular deviation away from the abscess side — needle aspiration or I&D once confirmed, most can be managed without emergent airway intervention. Adult epiglottitis: think of it in an adult with a sore throat that looks worse than the oropharyngeal exam, muffled voice, drooling, and tripod/sniffing positioning — keep the patient calm and upright, get anesthesia/ENT to the bedside for a controlled airway BEFORE attempting anything that could provoke laryngospasm or complete obstruction (including forcing a supine position or aggressive oropharyngeal exam). Ludwig's angina: bilateral, rapidly progressive submandibular/sublingual space cellulitis that elevates and pushes the tongue posteriorly — early airway evaluation is critical since it can obstruct even before frank abscess formation, and it needs broad-spectrum antibiotics plus surgical involvement, not just antibiotics alone.",
+  "clinicalTakeaway": "PERITONSILLAR ABSCESS: trismus, muffled 'hot potato' voice, and uvular deviation away from the abscess side — needle aspiration or I&D once confirmed, most can be managed without emergent airway intervention.\n\nADULT EPIGLOTTITIS: think of it in an adult with a sore throat that looks worse than the oropharyngeal exam, muffled voice, drooling, and tripod/sniffing positioning.\n- Keep the patient calm and upright.\n- Get anesthesia/ENT to the bedside for a controlled airway BEFORE attempting anything that could provoke laryngospasm or complete obstruction (including forcing a supine position or aggressive oropharyngeal exam).\n\nLUDWIG'S ANGINA: bilateral, rapidly progressive submandibular/sublingual space cellulitis that elevates and pushes the tongue posteriorly — early airway evaluation is critical since it can obstruct even before frank abscess formation, and it needs broad-spectrum antibiotics plus surgical involvement, not just antibiotics alone.",
   "body": [
     {
       "type": "heading",
@@ -84,6 +115,9 @@
       ]
     }
   ],
-  "related": ["airway-management-flow", "ophthalmologic-emergencies"],
+  "related": [
+    "airway-management-flow",
+    "ophthalmologic-emergencies"
+  ],
   "buildNote": "New ENT / Ophtho / Dental / GU category (shared with ophthalmologic-emergencies and lateral-canthotomy). related[] references airway-management-flow defensively — verify the actual id at validate time. Deliberately organized around the shared 'airway-first' theme across all three diagnoses rather than three disconnected entries, matching how these are taught together clinically."
 }

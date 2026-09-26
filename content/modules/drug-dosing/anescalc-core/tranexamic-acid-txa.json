@@ -18,7 +18,7 @@
     "txa"
   ],
   "contentType": "anesthesia-drug-card",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-01",
   "next_review_due": "2026-12-01",
   "review_tier": 1,
@@ -30,6 +30,11 @@
       "version": 1,
       "date": "2026-09-01",
       "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "brandName": "Cyklokapron / Lysteda",
@@ -41,8 +46,8 @@
   "duration": "t½ ~3h. Active drug excreted renally; duration of antifibrinolytic effect outlasts serum concentration",
   "dosing": "CARDIAC SURGERY (on-pump CPB): 10–30 mg/kg IV load before incision (or before sternotomy), then 1–2 mg/kg/hr infusion throughout CPB. Some protocols add 1–2 mg/kg into pump prime. (High-dose: 30/16/2 mg/kg load/infusion/prime has strongest evidence for blood conservation.)\n\nMAJOR ORTHOPEDIC (hip/knee arthroplasty): 1–2 g IV before tourniquet inflation (or incision). Topical: 1.5–3 g in 100 mL NS applied to wound cavity before closure; may combine IV + topical.\n\nTRAUMA / MASSIVE HEMORRHAGE: CRASH-2 protocol — 1 g IV over 10 min within 3h of injury, then 1 g IV over 8h. Benefit attenuated after 3h; harmful if given >3h post-injury.\n\nOBSTETRICS (PPH prevention/treatment): 1 g IV over 10 min after delivery (WHO 2017 recommendation). Repeat 1 g if bleeding continues after 30 min or restarts within 24h.\n\nNEUROSURGERY / SPINE: 1 g IV load, 100–200 mg/hr infusion intraoperatively.\n\nPEDIATRIC: 10–50 mg/kg IV over 15 min (dose varies widely by center/protocol; cardiac surgery typically 50–100 mg/kg load).\n\nRENAL DOSING:\nCrCl 10–50 mL/min → reduce to 50% of dose\nCrCl <10 mL/min → reduce to 25% of dose or avoid",
   "cautions": [
-    "SEIZURES: Dose-dependent neurotoxicity — TXA crosses blood-brain barrier and acts as GABA-A and glycine receptor antagonist. Risk highest with high doses (cardiac surgery), direct intrathecal/intracerebroventricular exposure, renal failure (accumulation), and in neonates. Seizures typically occur within hours of cardiac surgery. Use seizure precautions with high-dose protocols.",
-    "THROMBOEMBOLIC EVENTS: TXA is PRO-thrombotic in the right context. Contraindicated in: active intravascular clotting (DIC with clotting phase), subarachnoid hemorrhage from ruptured aneurysm (unless awaiting surgery), and in patients with history of VTE without adequate anticoagulation. Not independently associated with MI/PE at clinical doses based on large RCTs (ATACAS, CRASH-2).",
+    "SEIZURES: Dose-dependent neurotoxicity — TXA crosses blood-brain barrier and acts as GABA-A and glycine receptor antagonist.\n\nRisk highest with:\n- high doses (cardiac surgery)\n- direct intrathecal/intracerebroventricular exposure\n- renal failure (accumulation)\n- neonates\n\nSeizures typically occur within hours of cardiac surgery. Use seizure precautions with high-dose protocols.",
+    "THROMBOEMBOLIC EVENTS: TXA is PRO-thrombotic in the right context.\n\nContraindicated in:\n- active intravascular clotting (DIC with clotting phase)\n- subarachnoid hemorrhage from ruptured aneurysm (unless awaiting surgery)\n- patients with history of VTE without adequate anticoagulation\n\nNot independently associated with MI/PE at clinical doses based on large RCTs (ATACAS, CRASH-2).",
     "RENAL ACCUMULATION: Renally excreted; dose-reduce in renal impairment. Accumulation → elevated drug levels → seizure risk.",
     "CI: Active thromboembolic disease; DIC with clotting predominance; hypersensitivity; ureteral bleeding from upper tract lesions (may cause ureteral obstruction from clot).",
     "INTRATHECAL EXPOSURE (inadvertent): Extremely seizurogenic — TXA must NEVER be placed in syringes alongside neuraxial drugs. Label clearly; use in separate syringes/IV lines only. Multiple reported catastrophic errors."

@@ -41,7 +41,7 @@
     "toxic leukoencephalopathy NBOMe status epilepticus"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -58,11 +58,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — converted from CV Intoxicating Substances Reference: NMDA-antagonist dissociatives (ketamine/PCP, DXM, nitrous oxide) and serotonergic hallucinogens (classic psychedelics vs NBOMe designer analogs)."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Two families that overlap in street use but not in danger. NMDA-antagonist dissociatives produce vertical/rotary nystagmus, dissociation, and (PCP especially) violent agitation; nitrous oxide's real hazard is a functional B12 deficiency causing subacute combined degeneration. Classic psychedelics (LSD, psilocybin, mescaline) have a near-zero direct-toxicity record — but NBOMe compounds sold as \"acid\" are a genuine toxicologic emergency.",
   "whyThisMatters": "The clinical failure modes are opposite ends of a spectrum: treating a self-limited classic-psychedelic panic reaction as a medical emergency, versus treating an NBOMe or synthetic-cathinone presentation as \"just a bad trip\" when it is a stimulant-hallucinogen hybrid that has killed patients despite aggressive care. And nitrous-oxide myelopathy is missed for weeks because the serum B12 is often normal and the drug is invisible to tox screens.",
-  "clinicalTakeaway": "Check for vertical or rotary nystagmus — it is the fastest bedside clue to the dissociative class. Manage dissociative agitation and emergence reactions with a quiet low-stimulation environment plus benzodiazepines. For classic psychedelics, a calm room and reassurance (\"talk-down\") outperforms medication for most presentations; escalate to benzodiazepines only for agitation that does not settle, and reconsider the substance (NBOMe, adulterant) or an unmasked psychiatric illness if the course is severe or prolonged. Treat a \"bad acid trip\" with seizures, hyperthermia, severe hypertension, and rhabdomyolysis as NBOMe until proven otherwise — aggressive benzodiazepines, cooling, IV fluids. Start empiric high-dose IV B12 for suspected nitrous-oxide subacute combined degeneration without waiting for a level or MRI.",
+  "clinicalTakeaway": "- Check for vertical or rotary nystagmus — it is the fastest bedside clue to the dissociative class.\n- Manage dissociative agitation and emergence reactions with a quiet low-stimulation environment plus benzodiazepines.\n- For classic psychedelics, a calm room and reassurance (\"talk-down\") outperforms medication for most presentations; escalate to benzodiazepines only for agitation that does not settle, and reconsider the substance (NBOMe, adulterant) or an unmasked psychiatric illness if the course is severe or prolonged.\n- Treat a \"bad acid trip\" with seizures, hyperthermia, severe hypertension, and rhabdomyolysis as NBOMe until proven otherwise — aggressive benzodiazepines, cooling, IV fluids.\n- Start empiric high-dose IV B12 for suspected nitrous-oxide subacute combined degeneration without waiting for a level or MRI.",
   "body": [
     {
       "type": "heading",

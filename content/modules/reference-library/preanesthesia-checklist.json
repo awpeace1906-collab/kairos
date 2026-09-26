@@ -37,7 +37,7 @@
     "carb drink up to 2 h"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2027-03-02",
   "review_tier": 3,
@@ -55,6 +55,11 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the MSMAID pre-induction check and the ASA 2023 fasting intervals, including the GLP-1 agonist and carbohydrate-loading guidance."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "MSMAID before every induction: Machine · Suction · Monitors · Airway · IV · Drugs. ASA 2023 fasting: clear liquids 2 h, breast milk 4 h, formula 6 h, light meal 6 h, fatty/full meal 8 h. GI symptoms on a GLP-1 agonist → treat as a full stomach regardless of the fast.",
@@ -147,7 +152,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "GLP-1 receptor agonists (semaglutide, tirzepatide, liraglutide) slow gastric emptying. ASA 2023: hold a daily agent for 1 day, a weekly agent for 1 week, before an elective procedure, plus standard fasting. SPAQI 2025 update: if the patient has ANY GI symptoms (nausea, vomiting, bloating, abdominal distension), treat as a full stomach regardless of the hold or fast — consider gastric POCUS pre-op, and use RSI / awake technique / regional as appropriate. Holding the drug does not by itself remove the aspiration risk, and stopping it can worsen glycemic control — individualize with endocrinology."
+      "text": "GLP-1 receptor agonists (semaglutide, tirzepatide, liraglutide) slow gastric emptying.\n\nASA 2023: hold a daily agent for 1 day, a weekly agent for 1 week, before an elective procedure, plus standard fasting.\n\nSPAQI 2025 UPDATE: if the patient has ANY GI symptoms (nausea, vomiting, bloating, abdominal distension), treat as a full stomach regardless of the hold or fast — consider gastric POCUS pre-op, and use RSI / awake technique / regional as appropriate.\n\nHolding the drug does not by itself remove the aspiration risk, and stopping it can worsen glycemic control — individualize with endocrinology."
     },
     {
       "type": "text",

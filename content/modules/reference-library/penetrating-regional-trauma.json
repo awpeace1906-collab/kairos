@@ -41,7 +41,7 @@
     "blast crush polytrauma massive transfusion higher amputation"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -58,11 +58,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — converted from CV Wound Ballistics & Blast Injury Manual: penetrating neck zones + hard/soft signs, thoracic obstructive-shock lesions + REBOA zone selection, and the mangled-extremity / MESS decision."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Region decides the differential. The neck packs airway, vascular, and aerodigestive structures into a small space — hard signs go straight to the OR, soft signs get CT angiography. The chest has two immediately treatable causes of obstructive shock that should not wait for imaging. The mangled extremity forces the salvage-versus-amputation question before full imaging, and MESS is better at identifying salvageable limbs than at mandating amputation.",
   "whyThisMatters": "A small entry wound over the neck or chest can carry a large, time-critical differential, and the decisions that matter — operate now versus image, decompress versus wait, salvage versus amputate — are made in the first minutes on physical findings, before CT. Knowing which findings force which action is what keeps a survivable injury survivable.",
-  "clinicalTakeaway": "Neck: hard signs (shock, pulsatile bleeding or expanding hematoma, bruit/thrill, pulse deficit with neuro change) mandate immediate operative exploration — do not delay for imaging; soft signs or platysma violation in a stable patient get CT angiography, with a low threshold for esophagoscopy/bronchoscopy since CTA is less reliable for aerodigestive injury. Chest: treat tension pneumothorax and tamponade as clinical diagnoses in the unstable patient — needle/finger decompression, and for a cardiac-box wound with shock, resuscitative thoracotomy. Extremity: use MESS to support salvage in a low-scoring limb rather than to mandate amputation on a high score; blast/crush mechanism, polytrauma, and massive transfusion independently raise amputation rates.",
+  "clinicalTakeaway": "NECK:\n- Hard signs (shock, pulsatile bleeding or expanding hematoma, bruit/thrill, pulse deficit with neuro change) mandate immediate operative exploration — do not delay for imaging.\n- Soft signs or platysma violation in a stable patient get CT angiography, with a low threshold for esophagoscopy/bronchoscopy since CTA is less reliable for aerodigestive injury.\n\nCHEST: treat tension pneumothorax and tamponade as clinical diagnoses in the unstable patient — needle/finger decompression, and for a cardiac-box wound with shock, resuscitative thoracotomy.\n\nEXTREMITY: use MESS to support salvage in a low-scoring limb rather than to mandate amputation on a high score; blast/crush mechanism, polytrauma, and massive transfusion independently raise amputation rates.",
   "body": [
     {
       "type": "heading",

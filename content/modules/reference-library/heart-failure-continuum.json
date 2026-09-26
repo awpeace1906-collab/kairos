@@ -51,7 +51,7 @@
     "H2FPEF"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -72,6 +72,11 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — converted from the CV three-part HF continuum: the six cardiomyopathy phenotypes, the HFpEF evidence scorecard + phenotype-driven treatment, and cardiogenic shock in the DanGer Shock era."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "One disease spectrum, three flashpoints: the cardiomyopathy phenotype underneath, the HFpEF syndrome that two unexpected drug classes finally cracked (SGLT2i, finerenone), and the cardiogenic shock event that still kills ~46% even with the device (Impella CP) proven to help.",
@@ -277,7 +282,7 @@
     },
     {
       "type": "text",
-      "text": "Weaning: cardiac index > 2.2, lactate normalized/clearing, vasopressors weaned or minimal; reduce device flow stepwise reassessing q30–60 min; echo for LVEF improvement and no worsening MR/AR before removal. Survivor outcomes: 7.0% 30-day, 24.5% 1-year, 38.9% 3-year mortality; 22% rehospitalized within 30 days, 58% within a year — structured HF follow-up for CS survivors is not optional."
+      "text": "WEANING:\n- cardiac index > 2.2, lactate normalized/clearing, vasopressors weaned or minimal\n- reduce device flow stepwise reassessing q30–60 min\n- echo for LVEF improvement and no worsening MR/AR before removal\n\nSURVIVOR OUTCOMES: 7.0% 30-day, 24.5% 1-year, 38.9% 3-year mortality; 22% rehospitalized within 30 days, 58% within a year — structured HF follow-up for CS survivors is not optional."
     }
   ],
   "related": [

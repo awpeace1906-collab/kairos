@@ -3,12 +3,32 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "Opioid Withdrawal — Inpatient Buprenorphine Induction Principles",
-  "settingEmphasis": ["icu", "ed"],
-  "aliases": ["buprenorphine induction", "opioid use disorder inpatient", "microdosing buprenorphine"],
-  "tags": ["opioid withdrawal", "buprenorphine", "opioid use disorder", "COWS", "ICU", "ED"],
-  "keywords": ["this is principles and when-to-call-for-help, not a fixed dosing ladder, actual induction protocols vary genuinely across institutions and involve addiction medicine input, know the concepts well enough to start the conversation and recognize a reasonable plan", "traditional induction waits for the patient to be in mild-moderate withdrawal, measured with COWS, before the first dose, giving buprenorphine too early into a still-opioid-occupied system can precipitate a sudden, severe withdrawal", "low-dose or microdosing induction gets around the precipitated-withdrawal risk by starting with very small doses while the patient continues their usual opioid, then gradually up-titrating buprenorphine while tapering the other opioid off, no withdrawal period required first", "fentanyl's high lipophilicity and tissue accumulation is a real, described complication for buprenorphine induction, precipitated withdrawal can occur even when the timing looks textbook-correct, know this population needs extra caution and likely addiction medicine involvement", "involve addiction medicine / a consult service early rather than improvising a full induction protocol de novo, this is exactly the kind of care that benefits from a team that does it routinely"],
+  "settingEmphasis": [
+    "icu",
+    "ed"
+  ],
+  "aliases": [
+    "buprenorphine induction",
+    "opioid use disorder inpatient",
+    "microdosing buprenorphine"
+  ],
+  "tags": [
+    "opioid withdrawal",
+    "buprenorphine",
+    "opioid use disorder",
+    "COWS",
+    "ICU",
+    "ED"
+  ],
+  "keywords": [
+    "this is principles and when-to-call-for-help, not a fixed dosing ladder, actual induction protocols vary genuinely across institutions and involve addiction medicine input, know the concepts well enough to start the conversation and recognize a reasonable plan",
+    "traditional induction waits for the patient to be in mild-moderate withdrawal, measured with COWS, before the first dose, giving buprenorphine too early into a still-opioid-occupied system can precipitate a sudden, severe withdrawal",
+    "low-dose or microdosing induction gets around the precipitated-withdrawal risk by starting with very small doses while the patient continues their usual opioid, then gradually up-titrating buprenorphine while tapering the other opioid off, no withdrawal period required first",
+    "fentanyl's high lipophilicity and tissue accumulation is a real, described complication for buprenorphine induction, precipitated withdrawal can occur even when the timing looks textbook-correct, know this population needs extra caution and likely addiction medicine involvement",
+    "involve addiction medicine / a consult service early rather than improvising a full induction protocol de novo, this is exactly the kind of care that benefits from a team that does it routinely"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,11 +38,20 @@
     "Ahmed S, et al. Low-dose buprenorphine initiation in the era of fentanyl and fentanyl analogs: A case series. J Opioid Manag. 2023."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). Deliberately written as principles and when-to-involve-addiction-medicine rather than a fixed dosing ladder, per explicit user direction when this item was scoped, since actual induction protocols genuinely vary across institutions. The existing COWS calculator handles withdrawal severity scoring; this addresses the induction decision itself." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). Deliberately written as principles and when-to-involve-addiction-medicine rather than a fixed dosing ladder, per explicit user direction when this item was scoped, since actual induction protocols genuinely vary across institutions. The existing COWS calculator handles withdrawal severity scoring; this addresses the induction decision itself."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "There are two genuinely different approaches to starting buprenorphine in an opioid-dependent hospitalized patient — traditional induction waits for the patient to be in withdrawal first, while low-dose/microdosing induction starts tiny doses while the patient continues their usual opioid — and knowing which conversation to have with addiction medicine matters more here than memorizing a specific dosing table, since actual protocols genuinely vary by institution.",
   "whyThisMatters": "Giving buprenorphine to a patient who still has full opioid agonist occupying their receptors can precipitate a sudden, severe withdrawal reaction — buprenorphine's partial-agonist, high-receptor-affinity properties mean it can displace a fuller agonist and drop the net effect abruptly — which is exactly why induction TIMING and STRATEGY matter clinically, and why this is genuinely a two-approach decision rather than a single fixed protocol.",
-  "clinicalTakeaway": "Traditional induction: hold the patient's usual opioid and wait until they're in mild-to-moderate withdrawal (typically assessed with COWS — see the cows calculator) before giving the first buprenorphine dose — giving it too early, while still opioid-occupied, risks precipitated withdrawal. Low-dose (microdosing) induction: start with very small buprenorphine doses WHILE the patient continues their usual opioid, then gradually up-titrate buprenorphine while tapering the other opioid off — this approach doesn't require the patient to go through a withdrawal period first, which can improve tolerability and engagement, though evidence comparing the two approaches head-to-head is still developing and outcomes have been broadly similar between them in available comparisons. Be extra cautious in a patient using fentanyl or fentanyl analogs — their high lipophilicity and tissue accumulation is a real, described cause of precipitated withdrawal even when induction timing looks textbook-correct by COWS score. Involve addiction medicine / your consult service EARLY rather than improvising a full induction protocol from scratch — this is exactly the kind of care that benefits from a team that does it routinely and knows your institution's specific protocol.",
+  "clinicalTakeaway": "TRADITIONAL INDUCTION: hold the patient's usual opioid and wait until they're in mild-to-moderate withdrawal (typically assessed with COWS — see the cows calculator) before giving the first buprenorphine dose — giving it too early, while still opioid-occupied, risks precipitated withdrawal.\n\nLOW-DOSE (MICRODOSING) INDUCTION: start with very small buprenorphine doses WHILE the patient continues their usual opioid, then gradually up-titrate buprenorphine while tapering the other opioid off.\n- This approach doesn't require the patient to go through a withdrawal period first, which can improve tolerability and engagement.\n- Though evidence comparing the two approaches head-to-head is still developing, and outcomes have been broadly similar between them in available comparisons.\n\nFENTANYL: be extra cautious in a patient using fentanyl or fentanyl analogs — their high lipophilicity and tissue accumulation is a real, described cause of precipitated withdrawal even when induction timing looks textbook-correct by COWS score.\n\nInvolve addiction medicine / your consult service EARLY rather than improvising a full induction protocol from scratch — this is exactly the kind of care that benefits from a team that does it routinely and knows your institution's specific protocol.",
   "body": [
     {
       "type": "heading",
@@ -40,10 +69,22 @@
     },
     {
       "type": "table",
-      "columns": ["Approach", "How it works", "Tradeoff"],
+      "columns": [
+        "Approach",
+        "How it works",
+        "Tradeoff"
+      ],
       "rows": [
-        ["Traditional induction", "Hold the patient's usual opioid; wait until they're in mild-to-moderate withdrawal (assessed with COWS) before giving the first buprenorphine dose", "Requires the patient to tolerate a withdrawal period first, which can be genuinely uncomfortable and is a real barrier to engagement/retention — but is a well-established, widely-used approach with a long track record"],
-        ["Low-dose (microdosing) induction", "Start very small buprenorphine doses WHILE the patient continues their usual opioid at its current dose, then gradually up-titrate buprenorphine while tapering the other opioid down over days", "Avoids requiring an upfront withdrawal period, which can improve comfort/tolerability and engagement — but takes longer to reach a full buprenorphine dose, requires more careful staged dosing, and head-to-head outcome data versus traditional induction remains limited (recent comparisons have shown broadly similar overall outcomes with some signal toward reduced readmission with low-dose approaches)"]
+        [
+          "Traditional induction",
+          "Hold the patient's usual opioid; wait until they're in mild-to-moderate withdrawal (assessed with COWS) before giving the first buprenorphine dose",
+          "Requires the patient to tolerate a withdrawal period first, which can be genuinely uncomfortable and is a real barrier to engagement/retention — but is a well-established, widely-used approach with a long track record"
+        ],
+        [
+          "Low-dose (microdosing) induction",
+          "Start very small buprenorphine doses WHILE the patient continues their usual opioid at its current dose, then gradually up-titrate buprenorphine while tapering the other opioid down over days",
+          "Avoids requiring an upfront withdrawal period, which can improve comfort/tolerability and engagement — but takes longer to reach a full buprenorphine dose, requires more careful staged dosing, and head-to-head outcome data versus traditional induction remains limited (recent comparisons have shown broadly similar overall outcomes with some signal toward reduced readmission with low-dose approaches)"
+        ]
       ]
     },
     {
@@ -54,7 +95,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "Patients using fentanyl or fentanyl analogs are a genuinely higher-risk population for precipitated withdrawal during buprenorphine induction, even when the timing looks textbook-correct by COWS score — fentanyl's high lipophilicity means it accumulates in tissue and can be released back into circulation over a longer, less predictable timeframe than the COWS score at any single moment might suggest. This population increasingly favors low-dose/microdosing approaches specifically to reduce this risk, and warrants a lower threshold for addiction medicine involvement given how commonly fentanyl is now the actual opioid involved."
+      "text": "Patients using fentanyl or fentanyl analogs are a genuinely higher-risk population for precipitated withdrawal during buprenorphine induction, even when the timing looks textbook-correct by COWS score.\n\nFentanyl's high lipophilicity means it accumulates in tissue and can be released back into circulation over a longer, less predictable timeframe than the COWS score at any single moment might suggest.\n\nThis population:\n- increasingly favors low-dose/microdosing approaches specifically to reduce this risk\n- warrants a lower threshold for addiction medicine involvement, given how commonly fentanyl is now the actual opioid involved"
     },
     {
       "type": "heading",
@@ -63,9 +104,13 @@
     },
     {
       "type": "text",
-      "text": "This module deliberately doesn't provide a single fixed dosing table — actual induction protocols (specific starting doses, titration schedules, and choice between traditional and low-dose approaches) genuinely vary across institutions and are best driven by a team/service that does this routinely. The clinical skill this module supports is recognizing the opioid withdrawal presentation, understanding why timing/approach matters, and knowing to involve addiction medicine (or your institution's equivalent consult service) early — rather than either avoiding buprenorphine induction altogether or improvising a full protocol without that support."
+      "text": "This module deliberately doesn't provide a single fixed dosing table — actual induction protocols (specific starting doses, titration schedules, and choice between traditional and low-dose approaches) genuinely vary across institutions and are best driven by a team/service that does this routinely.\n\nThe clinical skill this module supports is:\n- recognizing the opioid withdrawal presentation\n- understanding why timing/approach matters\n- knowing to involve addiction medicine (or your institution's equivalent consult service) early\n\nRather than either avoiding buprenorphine induction altogether or improvising a full protocol without that support."
     }
   ],
-  "related": ["cows", "high-dose-naloxone-nalmefene", "tox-opioids"],
+  "related": [
+    "cows",
+    "high-dose-naloxone-nalmefene",
+    "tox-opioids"
+  ],
   "buildNote": "Critical Care category. Deliberately written as principles and when-to-involve-addiction-medicine, explicitly NOT a fixed dosing ladder, per the user's explicit scoping direction for this item when the fresh-look audit was first reviewed — actual induction protocols genuinely vary by institution, confirmed via WebSearch across SAMHSA guidance, CAMP clinical guidance, and recent comparative literature. The traditional-vs-low-dose comparison and the fentanyl-specific caution WebSearch-verified against Ahmed et al. (J Opioid Manag 2023) and subsequent 2025 comparative studies."
 }

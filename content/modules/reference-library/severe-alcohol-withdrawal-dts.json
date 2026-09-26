@@ -3,12 +3,31 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "Severe Alcohol Withdrawal / Delirium Tremens — ICU Escalation",
-  "settingEmphasis": ["icu"],
-  "aliases": ["delirium tremens", "DTs", "benzodiazepine-refractory alcohol withdrawal", "phenobarbital alcohol withdrawal"],
-  "tags": ["delirium tremens", "alcohol withdrawal", "phenobarbital", "benzodiazepine-refractory", "ICU"],
-  "keywords": ["this is the ICU escalation companion to the CIWA-Ar calculator, for when symptom-triggered benzodiazepine dosing isn't controlling the picture and the patient is heading toward true refractory withdrawal", "phenobarbital has real mechanistic appeal over more benzodiazepine — it works on GABA and NMDA receptors both, not GABA alone, and there's genuine clinical data supporting it in benzo-refractory cases", "there is no single universally agreed phenobarbital loading protocol, published regimens range from roughly 10 to 20 mg/kg loading with variation in how it's dosed and followed, know your institution's chosen protocol", "escalating benzodiazepine doses with no ceiling in mind is a real failure mode, recognize when you've crossed from standard symptom-triggered dosing into genuinely refractory territory that needs a different drug class", "consider adjuncts like dexmedetomidine or propofol infusion alongside a benzodiazepine/phenobarbital-based strategy in refractory cases requiring ventilator support, but these do not treat the withdrawal seizure risk on their own"],
+  "settingEmphasis": [
+    "icu"
+  ],
+  "aliases": [
+    "delirium tremens",
+    "DTs",
+    "benzodiazepine-refractory alcohol withdrawal",
+    "phenobarbital alcohol withdrawal"
+  ],
+  "tags": [
+    "delirium tremens",
+    "alcohol withdrawal",
+    "phenobarbital",
+    "benzodiazepine-refractory",
+    "ICU"
+  ],
+  "keywords": [
+    "this is the ICU escalation companion to the CIWA-Ar calculator, for when symptom-triggered benzodiazepine dosing isn't controlling the picture and the patient is heading toward true refractory withdrawal",
+    "phenobarbital has real mechanistic appeal over more benzodiazepine — it works on GABA and NMDA receptors both, not GABA alone, and there's genuine clinical data supporting it in benzo-refractory cases",
+    "there is no single universally agreed phenobarbital loading protocol, published regimens range from roughly 10 to 20 mg/kg loading with variation in how it's dosed and followed, know your institution's chosen protocol",
+    "escalating benzodiazepine doses with no ceiling in mind is a real failure mode, recognize when you've crossed from standard symptom-triggered dosing into genuinely refractory territory that needs a different drug class",
+    "consider adjuncts like dexmedetomidine or propofol infusion alongside a benzodiazepine/phenobarbital-based strategy in refractory cases requiring ventilator support, but these do not treat the withdrawal seizure risk on their own"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,11 +37,20 @@
     "Kessel KM, et al. Phenobarbital Versus Benzodiazepines for the Treatment of Severe Alcohol Withdrawal. J Pharm Pract. 2024."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). The existing CIWA-Ar calculator handles symptom-triggered scoring, and tox-alcohols-anticholinergics-other gives DTs one paragraph; this is the missing ICU-level escalation module for benzodiazepine-refractory withdrawal, distinct from and complementary to both." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). The existing CIWA-Ar calculator handles symptom-triggered scoring, and tox-alcohols-anticholinergics-other gives DTs one paragraph; this is the missing ICU-level escalation module for benzodiazepine-refractory withdrawal, distinct from and complementary to both."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "This is the escalation companion to the CIWA-Ar calculator — for when symptom-triggered benzodiazepine dosing isn't controlling severe withdrawal or true delirium tremens, phenobarbital is a genuine, evidence-supported next step, not a last-resort measure to be avoided.",
   "whyThisMatters": "A real failure mode in alcohol withdrawal management is escalating benzodiazepine doses indefinitely without recognizing the point at which the picture has become genuinely refractory — phenobarbital's dual GABA/NMDA mechanism gives it real advantages in this specific scenario, and knowing when and how to reach for it (rather than just giving more of the same drug class) is the actual clinical skill this module addresses.",
-  "clinicalTakeaway": "Recognize when a patient has crossed from standard symptom-triggered benzodiazepine dosing (per CIWA-Ar) into genuinely refractory territory — persistent severe symptoms/delirium despite escalating, adequately-dosed benzodiazepine treatment. At that point, phenobarbital is a real, evidence-supported option, not a last resort — its dual GABA-A and NMDA receptor activity gives it mechanistic advantages over benzodiazepines alone in this population, and clinical data (including head-to-head comparisons) support its use, including shorter hospital length of stay in some series. There is no single universally agreed loading protocol — published regimens range roughly from 10 to 20 mg/kg, so know and follow your institution's chosen approach. In a ventilated, refractory patient, adjuncts like dexmedetomidine or a propofol infusion can help with the autonomic/agitation picture, but they do NOT address the underlying withdrawal seizure risk the way a GABAergic agent does — use them alongside, not instead of, adequate benzodiazepine/phenobarbital-based withdrawal treatment.",
+  "clinicalTakeaway": "RECOGNIZE when a patient has crossed from standard symptom-triggered benzodiazepine dosing (per CIWA-Ar) into genuinely refractory territory — persistent severe symptoms/delirium despite escalating, adequately-dosed benzodiazepine treatment.\n\nAt that point, PHENOBARBITAL is a real, evidence-supported option, not a last resort — its dual GABA-A and NMDA receptor activity gives it mechanistic advantages over benzodiazepines alone in this population, and clinical data (including head-to-head comparisons) support its use, including shorter hospital length of stay in some series.\n- There is no single universally agreed loading protocol — published regimens range roughly from 10 to 20 mg/kg, so know and follow your institution's chosen approach.\n\nIn a ventilated, refractory patient, adjuncts like dexmedetomidine or a propofol infusion can help with the autonomic/agitation picture, but they do NOT address the underlying withdrawal seizure risk the way a GABAergic agent does — use them alongside, not instead of, adequate benzodiazepine/phenobarbital-based withdrawal treatment.",
   "body": [
     {
       "type": "heading",
@@ -65,6 +93,10 @@
       ]
     }
   ],
-  "related": ["ciwa-ar", "tox-alcohols-anticholinergics-other", "alcoholic-ketoacidosis"],
+  "related": [
+    "ciwa-ar",
+    "tox-alcohols-anticholinergics-other",
+    "alcoholic-ketoacidosis"
+  ],
   "buildNote": "Critical Care category, companion to the existing CIWA-Ar calculator (Calculators/Toxicology-Withdrawal) and complementary to tox-alcohols-anticholinergics-other's brief existing DTs paragraph. Phenobarbital loading dose ranges and the dual GABA/NMDA mechanism WebSearch-verified against Rosenson et al. (J Emerg Med 2013), Hendey et al., and Kessel et al. (J Pharm Pract 2024) — deliberately presented as a range given WebSearch confirmed genuine lack of a single agreed protocol."
 }

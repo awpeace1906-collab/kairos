@@ -3,13 +3,38 @@
   "section": "Peds Module",
   "category": "Neonatology",
   "title": "Neonatal Early-Onset Sepsis Risk (Kaiser EOS Model)",
-  "settingEmphasis": ["ed", "icu"],
-  "audience": ["neonate"],
-  "aliases": ["Kaiser EOS calculator", "early-onset sepsis calculator", "Escobar model", "neonatal sepsis risk"],
-  "tags": ["early-onset sepsis", "neonatal sepsis", "Kaiser calculator", "GBS", "chorioamnionitis", "neonatology", "ED", "ICU"],
-  "keywords": ["this is NOT a simple point-based score you can hand-calculate, it's a multivariable regression model that also needs your own institution's baseline EOS incidence as an input, use the actual online tool", "inputs are gestational age, maternal highest antepartum temperature, maternal GBS status, duration of rupture of membranes, type and timing of intrapartum antibiotics, then the infant's clinical exam in the first 12 hours modifies the estimate further", "reduces unnecessary antibiotic exposure in well-appearing newborns while maintaining safety, that's the entire point of using it over a fixed rule-based checklist", "incidence of EOS overall is roughly 0.5-1.2 per 1000 live births, most exposed newborns do not develop sepsis", "a sick-appearing or clinically abnormal infant is managed on clinical grounds, the calculator is for risk-stratifying the well-appearing exposed newborn, not overriding clinical concern"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "audience": [
+    "neonate"
+  ],
+  "aliases": [
+    "Kaiser EOS calculator",
+    "early-onset sepsis calculator",
+    "Escobar model",
+    "neonatal sepsis risk"
+  ],
+  "tags": [
+    "early-onset sepsis",
+    "neonatal sepsis",
+    "Kaiser calculator",
+    "GBS",
+    "chorioamnionitis",
+    "neonatology",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "this is NOT a simple point-based score you can hand-calculate, it's a multivariable regression model that also needs your own institution's baseline EOS incidence as an input, use the actual online tool",
+    "inputs are gestational age, maternal highest antepartum temperature, maternal GBS status, duration of rupture of membranes, type and timing of intrapartum antibiotics, then the infant's clinical exam in the first 12 hours modifies the estimate further",
+    "reduces unnecessary antibiotic exposure in well-appearing newborns while maintaining safety, that's the entire point of using it over a fixed rule-based checklist",
+    "incidence of EOS overall is roughly 0.5-1.2 per 1000 live births, most exposed newborns do not develop sepsis",
+    "a sick-appearing or clinically abnormal infant is managed on clinical grounds, the calculator is for risk-stratifying the well-appearing exposed newborn, not overriding clinical concern"
+  ],
   "contentType": "peds-tool",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -19,7 +44,16 @@
     "Kaiser Permanente Division of Research. Neonatal Early-Onset Sepsis Calculator — neonatalsepsiscalculator.kaiserpermanente.org."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). Built as a reference/orientation module rather than a reproduced calculator engine — WebSearch confirmed the underlying model is a multivariable Bayesian regression that also requires the user's OWN institution's baseline EOS incidence as an input, which makes faithfully reproducing it as a static point-based tool here both infeasible and risky (a wrong or stale coefficient could misinform a decision about antibiotics in a newborn). This follows the same no-fabrication discipline used for GRACE ACS (flagged external/incomplete rather than reproduced)." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). Built as a reference/orientation module rather than a reproduced calculator engine — WebSearch confirmed the underlying model is a multivariable Bayesian regression that also requires the user's OWN institution's baseline EOS incidence as an input, which makes faithfully reproducing it as a static point-based tool here both infeasible and risky (a wrong or stale coefficient could misinform a decision about antibiotics in a newborn). This follows the same no-fabrication discipline used for GRACE ACS (flagged external/incomplete rather than reproduced)."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "kind": "reference",
   "purpose": "Orient the bedside clinician to what the Kaiser Permanente neonatal early-onset sepsis (EOS) risk calculator does, what it needs as inputs, and when to use the real tool — this module intentionally does not attempt to reproduce its regression math.",
@@ -37,7 +71,7 @@
     },
     {
       "type": "text",
-      "text": "The Kaiser Permanente EOS calculator estimates an individual newborn's risk of early-onset sepsis using a two-stage approach: first, it establishes a PRIOR probability of EOS based on maternal/perinatal risk factors present at birth — gestational age, highest maternal antepartum temperature, maternal Group B Strep (GBS) status, duration of rupture of membranes, and the type/timing of intrapartum antibiotics given. Second, it MODIFIES that prior estimate using the infant's own clinical status/exam findings observed over the first 12 hours of life, producing a final individualized risk estimate that guides whether to draw blood cultures, start empiric antibiotics, or simply observe with serial exams."
+      "text": "The Kaiser Permanente EOS calculator estimates an individual newborn's risk of early-onset sepsis using a two-stage approach:\n1. First, it establishes a PRIOR probability of EOS based on maternal/perinatal risk factors present at birth — gestational age, highest maternal antepartum temperature, maternal Group B Strep (GBS) status, duration of rupture of membranes, and the type/timing of intrapartum antibiotics given.\n2. Second, it MODIFIES that prior estimate using the infant's own clinical status/exam findings observed over the first 12 hours of life, producing a final individualized risk estimate that guides whether to draw blood cultures, start empiric antibiotics, or simply observe with serial exams."
     },
     {
       "type": "heading",

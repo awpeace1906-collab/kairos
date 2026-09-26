@@ -3,12 +3,30 @@
   "section": "Reference Library",
   "category": "Resuscitation & Airway",
   "title": "HINTS Exam — Central vs Peripheral Vertigo",
-  "settingEmphasis": ["ed"],
-  "aliases": ["HINTS exam", "acute vestibular syndrome", "central vs peripheral vertigo"],
-  "tags": ["vertigo", "HINTS exam", "posterior stroke", "acute vestibular syndrome", "ED"],
-  "keywords": ["HINTS only applies to acute vestibular syndrome, continuous vertigo/nausea/unsteadiness lasting more than 24 hours, do NOT use it on episodic vertigo (BPPV-type spells lasting seconds to minutes) which needs a different exam (Dix-Hallpike) entirely", "a NORMAL head impulse test in a patient with acute vestibular syndrome is actually the worrisome finding, it suggests the vestibular pathway isn't the problem, meaning a central cause", "the mnemonic INFARCT — Impulse Normal, Fast-phase Alternating, Refixation on Cover Test (skew) — flags the pattern that points to a central/stroke cause", "outperforms early MRI for detecting posterior circulation stroke in this population, roughly 100 percent sensitivity and 90-94 percent specificity in skilled hands, but this is genuinely operator-dependent", "this is a skill that requires real training and practice to perform reliably, know your own comfort level and don't over-trust a HINTS exam you're not confident in"],
+  "settingEmphasis": [
+    "ed"
+  ],
+  "aliases": [
+    "HINTS exam",
+    "acute vestibular syndrome",
+    "central vs peripheral vertigo"
+  ],
+  "tags": [
+    "vertigo",
+    "HINTS exam",
+    "posterior stroke",
+    "acute vestibular syndrome",
+    "ED"
+  ],
+  "keywords": [
+    "HINTS only applies to acute vestibular syndrome, continuous vertigo/nausea/unsteadiness lasting more than 24 hours, do NOT use it on episodic vertigo (BPPV-type spells lasting seconds to minutes) which needs a different exam (Dix-Hallpike) entirely",
+    "a NORMAL head impulse test in a patient with acute vestibular syndrome is actually the worrisome finding, it suggests the vestibular pathway isn't the problem, meaning a central cause",
+    "the mnemonic INFARCT — Impulse Normal, Fast-phase Alternating, Refixation on Cover Test (skew) — flags the pattern that points to a central/stroke cause",
+    "outperforms early MRI for detecting posterior circulation stroke in this population, roughly 100 percent sensitivity and 90-94 percent specificity in skilled hands, but this is genuinely operator-dependent",
+    "this is a skill that requires real training and practice to perform reliably, know your own comfort level and don't over-trust a HINTS exam you're not confident in"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -17,11 +35,20 @@
     "Newman-Toker DE, et al. HINTS outperforms ABCD2 to screen for stroke in acute continuous vertigo and dizziness. Acad Emerg Med. 2013;20(10):986-996."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). No prior module addressed vertigo differentiation despite the app already covering acute-ischemic-stroke in depth." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 8). No prior module addressed vertigo differentiation despite the app already covering acute-ischemic-stroke in depth."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "HINTS is a three-part bedside exam that, in skilled hands, outperforms early MRI for catching a posterior circulation stroke masquerading as vertigo — but it only applies to continuous acute vestibular syndrome, and a NORMAL head impulse test is the worrisome finding, the opposite of what intuition suggests.",
   "whyThisMatters": "Posterior circulation strokes can present as isolated vertigo with a benign-looking general neuro exam, and this is one of the classic 'stroke masquerading as something benign' presentations — HINTS exists specifically to catch this subset before a normal CT or even a falsely-negative early MRI provides false reassurance, but only when applied to the right patient population and performed with genuine skill.",
-  "clinicalTakeaway": "Apply HINTS only to ACUTE VESTIBULAR SYNDROME — continuous vertigo/nausea/unsteadiness lasting more than 24 hours with nystagmus, NOT episodic positional vertigo (which needs Dix-Hallpike instead). The three components: Head Impulse (a NORMAL result — no catch-up saccade — is the WORRISOME finding suggesting a central cause, since an abnormal/positive result with a catch-up saccade actually suggests a peripheral cause), Nystagmus direction (unidirectional nystagmus suggests peripheral, direction-changing suggests central), Test of Skew (any vertical misalignment on alternate cover testing is always suspicious for a central cause). Remember this by INFARCT: Impulse Normal, Fast-phase Alternating, Refixation on Cover Test — that pattern flags a likely central/stroke cause. This is a genuinely skill-dependent exam — know your own comfort level and don't over-trust a HINTS exam performed without real training, and maintain a lower threshold for imaging/neurology involvement if you're not confident in your own findings.",
+  "clinicalTakeaway": "Apply HINTS only to ACUTE VESTIBULAR SYNDROME — continuous vertigo/nausea/unsteadiness lasting more than 24 hours with nystagmus, NOT episodic positional vertigo (which needs Dix-Hallpike instead).\n\nThe three components:\n- Head Impulse: a NORMAL result — no catch-up saccade — is the WORRISOME finding suggesting a central cause, since an abnormal/positive result with a catch-up saccade actually suggests a peripheral cause.\n- Nystagmus direction: unidirectional nystagmus suggests peripheral, direction-changing suggests central.\n- Test of Skew: any vertical misalignment on alternate cover testing is always suspicious for a central cause.\n\nRemember this by INFARCT: Impulse Normal, Fast-phase Alternating, Refixation on Cover Test — that pattern flags a likely central/stroke cause.\n\nThis is a genuinely skill-dependent exam — know your own comfort level and don't over-trust a HINTS exam performed without real training, and maintain a lower threshold for imaging/neurology involvement if you're not confident in your own findings.",
   "body": [
     {
       "type": "heading",
@@ -40,11 +67,27 @@
     },
     {
       "type": "table",
-      "columns": ["Component", "How it's performed", "What suggests CENTRAL (worrisome) vs PERIPHERAL (reassuring)"],
+      "columns": [
+        "Component",
+        "How it's performed",
+        "What suggests CENTRAL (worrisome) vs PERIPHERAL (reassuring)"
+      ],
       "rows": [
-        ["Head Impulse Test", "Rapidly rotate the patient's head a small amount to one side while they fixate on your nose/a target; watch for a corrective 'catch-up' saccade after the movement", "A NORMAL result (NO catch-up saccade — eyes stay locked on target) is the WORRISOME finding, suggesting the vestibulo-ocular reflex pathway isn't the problem, which points toward a CENTRAL cause. An ABNORMAL result (a visible catch-up saccade) actually suggests a PERIPHERAL cause (the reflex itself is impaired, as expected with a peripheral vestibular lesion)"],
-        ["Nystagmus", "Observe the direction/pattern of spontaneous nystagmus in different gaze positions", "UNIDIRECTIONAL nystagmus (same direction regardless of gaze direction) suggests PERIPHERAL. Direction-CHANGING nystagmus (different direction on different gaze positions) suggests CENTRAL"],
-        ["Test of Skew", "Alternate cover-uncover test between the two eyes, watching for a vertical corrective refixation movement", "ANY vertical misalignment/skew deviation is ALWAYS suspicious for a CENTRAL cause — this is a specific, high-value sign"]
+        [
+          "Head Impulse Test",
+          "Rapidly rotate the patient's head a small amount to one side while they fixate on your nose/a target; watch for a corrective 'catch-up' saccade after the movement",
+          "A NORMAL result (NO catch-up saccade — eyes stay locked on target) is the WORRISOME finding, suggesting the vestibulo-ocular reflex pathway isn't the problem, which points toward a CENTRAL cause. An ABNORMAL result (a visible catch-up saccade) actually suggests a PERIPHERAL cause (the reflex itself is impaired, as expected with a peripheral vestibular lesion)"
+        ],
+        [
+          "Nystagmus",
+          "Observe the direction/pattern of spontaneous nystagmus in different gaze positions",
+          "UNIDIRECTIONAL nystagmus (same direction regardless of gaze direction) suggests PERIPHERAL. Direction-CHANGING nystagmus (different direction on different gaze positions) suggests CENTRAL"
+        ],
+        [
+          "Test of Skew",
+          "Alternate cover-uncover test between the two eyes, watching for a vertical corrective refixation movement",
+          "ANY vertical misalignment/skew deviation is ALWAYS suspicious for a CENTRAL cause — this is a specific, high-value sign"
+        ]
       ]
     },
     {
@@ -59,7 +102,7 @@
     },
     {
       "type": "text",
-      "text": "In the hands of a trained examiner, HINTS has been reported with sensitivity approaching 100% and specificity around 90-94% for detecting a central (stroke) cause in acute vestibular syndrome — genuinely outperforming early MRI (which can be falsely negative for a small posterior fossa stroke in the first 24-48 hours). This is a real and clinically important finding, but it comes with an important caveat: this level of accuracy was demonstrated by examiners with specific neuro-otologic training and experience. The exam is genuinely operator-dependent, and a HINTS exam performed by someone without real training/practice in the technique should not be trusted with the same confidence as the literature's reported performance."
+      "text": "In the hands of a trained examiner, HINTS has been reported with sensitivity approaching 100% and specificity around 90-94% for detecting a central (stroke) cause in acute vestibular syndrome — genuinely outperforming early MRI (which can be falsely negative for a small posterior fossa stroke in the first 24-48 hours).\n\nThis is a real and clinically important finding, but it comes with an important caveat: this level of accuracy was demonstrated by examiners with specific neuro-otologic training and experience.\n\nThe exam is genuinely operator-dependent, and a HINTS exam performed by someone without real training/practice in the technique should not be trusted with the same confidence as the literature's reported performance."
     },
     {
       "type": "callout",
@@ -67,6 +110,9 @@
       "text": "Know your own comfort level with this exam. If you're not confident in your HINTS findings, or the overall clinical picture still concerns you despite a reassuring exam, maintain a lower threshold for neuroimaging and neurology involvement — HINTS is a powerful tool in skilled hands, not a substitute for clinical judgment when your own skill/confidence with the technique is limited."
     }
   ],
-  "related": ["acute-ischemic-stroke", "altered-mental-status"],
+  "related": [
+    "acute-ischemic-stroke",
+    "altered-mental-status"
+  ],
   "buildNote": "Resuscitation & Airway category, matching altered-mental-status's placement as a general acute-neuro reference. HINTS component performance and the INFARCT mnemonic WebSearch-verified against Kattah et al. (Stroke 2009) and Newman-Toker et al. (Acad Emerg Med 2013) — deliberately emphasized the acute-vestibular-syndrome-only scope and operator-dependence caveat since both are common, clinically important sources of exam misapplication."
 }

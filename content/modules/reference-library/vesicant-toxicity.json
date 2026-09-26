@@ -40,7 +40,7 @@
     "no eye patching topical antibiotic mydriatic vaseline lids"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -56,11 +56,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — sulfur/nitrogen mustard (delayed alkylating injury, marrow suppression), lewisite (immediate pain, systemic arsenic, dimercaprol), and phosgene oxime (immediate urticant necrosis). Expands the vesicant line in `incendiary-chemical-burns` and the preview in `hazmat-scene-toxidromes`."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Blister agents that injure skin, eyes, and airway. Sulfur mustard is a delayed alkylating injury with no antidote — decontamination within the first 2 minutes is the only thing that changes outcome, and the late killer is bone-marrow suppression. Lewisite hurts immediately, causes systemic arsenic toxicity, and has an antidote (dimercaprol). Phosgene oxime causes immediate, intense pain and rapid tissue necrosis.",
   "whyThisMatters": "With mustard, the injury is set in the first minutes but does not show for hours, so a casualty who feels well is triaged low and decontaminated late — after the alkylation is already done. The management errors that follow are treating it like a thermal burn (over-resuscitating with fluid), patching the eyes (promotes adhesions), and missing the marrow nadir a week later when neutropenic sepsis is what actually kills. Lewisite is the opposite trap — immediate pain that is easy to recognize but easy to under-treat systemically.",
-  "clinicalTakeaway": "Decontamination is the treatment for all three — remove clothing and use RSDL or soap and water; for mustard it must be within ~2 minutes to limit injury, but decontaminate regardless of delay to protect staff. Sulfur mustard: no antidote — supportive burn care with LESS fluid than a thermal burn of the same size, meticulous wound and ocular care (irrigate, topical antibiotic and mydriatic, petrolatum to lid margins, do NOT patch), airway management for laryngeal/tracheobronchial injury, and CBC monitoring with G-CSF and reverse isolation for the day 7-14 leukopenic nadir. Lewisite: same decon plus dimercaprol (BAL) IM for systemic toxicity or large exposure, and treat the capillary-leak \"lewisite shock\" with fluids. Phosgene oxime: decon, aggressive analgesia, and supportive wound/airway care — no antidote.",
+  "clinicalTakeaway": "Decontamination is the treatment for all three — remove clothing and use RSDL or soap and water; for mustard it must be within ~2 minutes to limit injury, but decontaminate regardless of delay to protect staff.\n\nSULFUR MUSTARD: no antidote.\n- Supportive burn care with LESS fluid than a thermal burn of the same size.\n- Meticulous wound and ocular care (irrigate, topical antibiotic and mydriatic, petrolatum to lid margins, do NOT patch).\n- Airway management for laryngeal/tracheobronchial injury.\n- CBC monitoring with G-CSF and reverse isolation for the day 7-14 leukopenic nadir.\n\nLEWISITE: same decon plus dimercaprol (BAL) IM for systemic toxicity or large exposure, and treat the capillary-leak \"lewisite shock\" with fluids.\n\nPHOSGENE OXIME: decon, aggressive analgesia, and supportive wound/airway care — no antidote.",
   "body": [
     {
       "type": "heading",

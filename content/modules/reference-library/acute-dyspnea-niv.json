@@ -40,7 +40,7 @@
     "P-SILI tidal volume 9 mL/kg"
   ],
   "contentType": "reference",
-  "content_version": 3,
+  "content_version": 4,
   "last_reviewed": "2026-09-13",
   "next_review_due": "2026-12-03",
   "review_tier": 1,
@@ -64,6 +64,11 @@
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — POCUS pattern → diagnosis → first move table, NIV/HFNC start settings, COPD bundle, and the NIV-failure / early-intubation pearls."
+    },
+    {
+      "version": 4,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Lung POCUS at the bedside, done alongside O2 and IV access, sorts undifferentiated dyspnea faster than a chest X-ray (~94% sensitive for cardiogenic edema). NIV failure that then needs emergent RSI carries higher mortality than an elective early intubation — reassess at 1 hour and do not 'NIV and wait'.",
@@ -188,7 +193,7 @@
     {
       "type": "callout",
       "tone": "warning",
-      "text": "NIV failure signs — worsening RR, SpO2, or mentation after 1 h; spontaneous tidal volume > 9 mL/kg IBW (P-SILI risk); inability to protect the airway; hemodynamic deterioration → intubate early, not late. In a COPD patient: pH < 7.30 and not improving at 1 h = intubate. Consider CO poisoning (SpO2 falsely normal), and tension pneumothorax in a ventilated patient with sudden desaturation + collapse (decompress before the CXR)."
+      "text": "NIV failure signs → intubate early, not late:\n- worsening RR, SpO2, or mentation after 1 h\n- spontaneous tidal volume > 9 mL/kg IBW (P-SILI risk)\n- inability to protect the airway\n- hemodynamic deterioration\n\nIn a COPD patient: pH < 7.30 and not improving at 1 h = intubate.\n\nConsider CO poisoning (SpO2 falsely normal), and tension pneumothorax in a ventilated patient with sudden desaturation + collapse (decompress before the CXR)."
     },
     {
       "type": "heading",
@@ -197,7 +202,7 @@
     },
     {
       "type": "text",
-      "text": "\"Supplemental O2 will knock out their hypoxic drive\" overstates a minor contributor. The dominant mechanism of CO2 rise with O2 in COPD is reversal of hypoxic pulmonary vasoconstriction — V/Q-mismatched, poorly-ventilated units get reperfused, worsening dead-space ventilation (Robinson 2000; Aubier 1980). Blunted respiratory drive plays a small supporting role at most. The practical takeaway is the same either way: titrate to SpO2 88–92%, don't chase 100%, but never withhold or remove O2 from a hypoxic COPD patient out of drive-suppression fear — permissive hypercapnia with airway support (NIV, or intubation) is the answer to a rising CO2, not less oxygen."
+      "text": "\"Supplemental O2 will knock out their hypoxic drive\" overstates a minor contributor.\n\nThe dominant mechanism of CO2 rise with O2 in COPD is reversal of hypoxic pulmonary vasoconstriction — V/Q-mismatched, poorly-ventilated units get reperfused, worsening dead-space ventilation (Robinson 2000; Aubier 1980). Blunted respiratory drive plays a small supporting role at most.\n\nThe practical takeaway is the same either way:\n- titrate to SpO2 88–92%, don't chase 100%\n- but never withhold or remove O2 from a hypoxic COPD patient out of drive-suppression fear — permissive hypercapnia with airway support (NIV, or intubation) is the answer to a rising CO2, not less oxygen"
     }
   ]
 }

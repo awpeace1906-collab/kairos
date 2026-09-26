@@ -3,12 +3,33 @@
   "section": "Reference Library",
   "category": "Infectious Disease & Immunization",
   "title": "Necrotizing Soft Tissue Infection — Recognition & Surgical Urgency",
-  "settingEmphasis": ["ed", "icu"],
-  "aliases": ["necrotizing fasciitis", "nec fasc", "gas gangrene", "flesh-eating infection"],
-  "tags": ["necrotizing fasciitis", "necrotizing soft tissue infection", "surgical emergency", "sepsis", "ED", "ICU"],
-  "keywords": ["pain out of proportion to the visible skin findings is the single most important early clue, the skin can look deceptively mild while the fascia underneath is being destroyed", "time to the OR is the outcome-determining variable, every hour of delay to surgical debridement measurably increases mortality", "a low LRINEC score does NOT rule it out, the score was derived and validated to flag high-risk patients, not to safely exclude the diagnosis in someone you're genuinely worried about", "crepitus, skin bullae, and skin necrosis are late findings, waiting for them means you've waited too long", "broad-spectrum antibiotics plus clindamycin or linezolid for antitoxin effect against toxin-producing strains, but antibiotics alone never substitute for surgical source control"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "necrotizing fasciitis",
+    "nec fasc",
+    "gas gangrene",
+    "flesh-eating infection"
+  ],
+  "tags": [
+    "necrotizing fasciitis",
+    "necrotizing soft tissue infection",
+    "surgical emergency",
+    "sepsis",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "pain out of proportion to the visible skin findings is the single most important early clue, the skin can look deceptively mild while the fascia underneath is being destroyed",
+    "time to the OR is the outcome-determining variable, every hour of delay to surgical debridement measurably increases mortality",
+    "a low LRINEC score does NOT rule it out, the score was derived and validated to flag high-risk patients, not to safely exclude the diagnosis in someone you're genuinely worried about",
+    "crepitus, skin bullae, and skin necrosis are late findings, waiting for them means you've waited too long",
+    "broad-spectrum antibiotics plus clindamycin or linezolid for antitoxin effect against toxin-producing strains, but antibiotics alone never substitute for surgical source control"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,11 +39,20 @@
     "Bonne SL, Kadri SS. Evaluation and Management of Necrotizing Soft Tissue Infections. Infect Dis Clin North Am. 2017;31(3):497-511."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). The LRINEC calculator already existed under Calculators/Sepsis-ID, but no reference module addressed clinical recognition, the time-to-OR imperative, or antibiotic/management principles once suspected — this is that missing companion." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). The LRINEC calculator already existed under Calculators/Sepsis-ID, but no reference module addressed clinical recognition, the time-to-OR imperative, or antibiotic/management principles once suspected — this is that missing companion."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "Necrotizing soft tissue infection is a surgical emergency where pain out of proportion to the skin findings is the earliest clue and time to the OR is the single variable that determines outcome — a reassuring exam or a low LRINEC score does not safely exclude it if your clinical gestalt says otherwise.",
   "whyThisMatters": "This is a diagnosis where the visible skin can look almost normal while the fascia beneath is already being destroyed, and every hour of delay to surgical debridement is associated with rising mortality — the entire clinical discipline here is refusing to be reassured by a benign-looking exam and moving fast on suspicion alone rather than waiting for confirmatory findings that only appear once the disease is already advanced.",
-  "clinicalTakeaway": "Pain out of proportion to visible exam findings is the single most important early clue — trust it even when the skin looks unremarkable. Do NOT use a low LRINEC score to exclude the diagnosis in a patient you're genuinely worried about; it was derived to flag high-risk patients, not to safely rule the diagnosis out. Crepitus, bullae, and skin necrosis are LATE findings — waiting for them means the window for the best outcome has already narrowed. Get surgical consultation immediately on clinical suspicion, start broad-spectrum antibiotics plus an antitoxin agent (clindamycin or linezolid) right away, but remember antibiotics never substitute for surgical source control — time to the OR is the variable that actually determines survival.",
+  "clinicalTakeaway": "- Pain out of proportion to visible exam findings is the single most important early clue — trust it even when the skin looks unremarkable.\n- Do NOT use a low LRINEC score to exclude the diagnosis in a patient you're genuinely worried about; it was derived to flag high-risk patients, not to safely rule the diagnosis out.\n- Crepitus, bullae, and skin necrosis are LATE findings — waiting for them means the window for the best outcome has already narrowed.\n\nGet surgical consultation immediately on clinical suspicion, and start broad-spectrum antibiotics plus an antitoxin agent (clindamycin or linezolid) right away — but remember antibiotics never substitute for surgical source control. Time to the OR is the variable that actually determines survival.",
   "body": [
     {
       "type": "heading",
@@ -31,7 +61,7 @@
     },
     {
       "type": "text",
-      "text": "The classic and most reliable early clue is pain that is severe and out of proportion to how mild or unremarkable the overlying skin looks. Early necrotizing soft tissue infection can present with skin that appears like ordinary cellulitis — mild erythema, minimal swelling — while the fascia underneath is already being destroyed. Other early-to-intermediate clues: rapid progression despite what looks like appropriate treatment for simple cellulitis, systemic toxicity (fever, tachycardia, hypotension) that seems disproportionate to the visible skin findings, and woody/firm induration extending beyond the visible erythema on palpation."
+      "text": "The classic and most reliable early clue is pain that is severe and out of proportion to how mild or unremarkable the overlying skin looks.\n\nEarly necrotizing soft tissue infection can present with skin that appears like ordinary cellulitis — mild erythema, minimal swelling — while the fascia underneath is already being destroyed.\n\nOther early-to-intermediate clues:\n- rapid progression despite what looks like appropriate treatment for simple cellulitis\n- systemic toxicity (fever, tachycardia, hypotension) that seems disproportionate to the visible skin findings\n- woody/firm induration extending beyond the visible erythema on palpation"
     },
     {
       "type": "callout",
@@ -75,6 +105,9 @@
       ]
     }
   ],
-  "related": ["lrinec", "septic-shock-resuscitation"],
+  "related": [
+    "lrinec",
+    "septic-shock-resuscitation"
+  ],
   "buildNote": "Infectious Disease & Immunization category, pairing with the existing LRINEC calculator (Calculators/Sepsis-ID) which this module explicitly cross-links and frames as risk-flagging rather than rule-out, per the score's own original validation intent. Time-to-debridement outcome relationship WebSearch-verified against Bonne & Kadri (Infect Dis Clin North Am 2017) and the IDSA 2014 SSTI guideline."
 }

@@ -42,7 +42,7 @@
     "intermediate syndrome OPIDN carbamate reversible"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -58,11 +58,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — the cholinergic crisis (muscarinic + nicotinic + CNS), decontamination, and the atropine / pralidoxime / benzodiazepine regimen. Expands the nerve-agent preview in `hazmat-scene-toxidromes`."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Organophosphate pesticides and military nerve agents (sarin, VX, Novichok) all inhibit acetylcholinesterase, flooding synapses with acetylcholine — a cholinergic crisis with muscarinic secretions and bradycardia, nicotinic weakness and paralysis, and CNS seizures. The antidote pair is atropine (titrated to drying of secretions, not to pupils or heart rate) plus pralidoxime, given before the enzyme \"ages,\" with a benzodiazepine for seizures.",
   "whyThisMatters": "Death is from airway secretions, bronchospasm, and respiratory-muscle paralysis, and the single most important intervention — atropine — is chronically under-dosed because clinicians titrate to the pupils or heart rate instead of to the airway. Nerve agents also age fast (soman in minutes), which changes whether pralidoxime is still worth giving, and a contaminated casualty who reaches the resus bay undecontaminated poisons the team.",
-  "clinicalTakeaway": "Decontaminate first (remove all clothing, copious water or RSDL) — providers work in PPE. Then: atropine 2 mg IV/IM (0.05 mg/kg in children), doubling the dose every 3-5 minutes until secretions dry and ventilation is easy — the endpoint is a clear chest and dry airway, NOT mydriasis or tachycardia, and the total can reach tens to hundreds of milligrams. Give pralidoxime 1-2 g IV over 15-30 minutes (or the autoinjector), then an infusion (~500 mg/h, or 8 mg/kg/h) — it reverses the nicotinic weakness atropine cannot touch, but only before aging (often futile for soman). Treat or pre-empt seizures with a benzodiazepine — midazolam IM is first-line and is in the military autoinjector. Support the airway aggressively; avoid succinylcholine (prolonged block). Watch survivors for the intermediate syndrome (proximal/respiratory weakness 24-96 h later) and, weeks out, OP-induced delayed neuropathy.",
+  "clinicalTakeaway": "1. Decontaminate first (remove all clothing, copious water or RSDL) — providers work in PPE.\n2. Atropine 2 mg IV/IM (0.05 mg/kg in children), doubling the dose every 3-5 minutes until secretions dry and ventilation is easy — the endpoint is a clear chest and dry airway, NOT mydriasis or tachycardia, and the total can reach tens to hundreds of milligrams.\n3. Give pralidoxime 1-2 g IV over 15-30 minutes (or the autoinjector), then an infusion (~500 mg/h, or 8 mg/kg/h) — it reverses the nicotinic weakness atropine cannot touch, but only before aging (often futile for soman).\n4. Treat or pre-empt seizures with a benzodiazepine — midazolam IM is first-line and is in the military autoinjector.\n5. Support the airway aggressively; avoid succinylcholine (prolonged block).\n\nWatch survivors for the intermediate syndrome (proximal/respiratory weakness 24-96 h later) and, weeks out, OP-induced delayed neuropathy.",
   "body": [
     {
       "type": "heading",

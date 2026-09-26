@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T00:00:00Z",
+  "generatedAt": "2026-09-26T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
@@ -388,8 +388,8 @@
       "next_review_due": "2027-09-02"
     },
     "calculators/gi-renal-metabolic/winters-formula": {
-      "content_version": 1,
-      "hash": "adfe850eeb3f5e8f",
+      "content_version": 2,
+      "hash": "608c63cf322256f9",
       "path": "modules/calculators/gi-renal-metabolic/winters-formula.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -397,8 +397,8 @@
       "next_review_due": "2026-12-15"
     },
     "calculators/icu-critical-care/apache-ii": {
-      "content_version": 2,
-      "hash": "487ec0c4a3c1909e",
+      "content_version": 3,
+      "hash": "1165c051436fe83d",
       "path": "modules/calculators/icu-critical-care/apache-ii.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -532,8 +532,8 @@
       "next_review_due": "2026-11-30"
     },
     "calculators/neuro/aspects": {
-      "content_version": 1,
-      "hash": "eb5b85656e4fa50b",
+      "content_version": 2,
+      "hash": "6782903a96b32bb8",
       "path": "modules/calculators/neuro/aspects.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -604,8 +604,8 @@
       "next_review_due": "2027-09-07"
     },
     "calculators/neuro/nihss": {
-      "content_version": 3,
-      "hash": "2802e59f3d75d409",
+      "content_version": 4,
+      "hash": "049d1fcf26c1be53",
       "path": "modules/calculators/neuro/nihss.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -640,8 +640,8 @@
       "next_review_due": "2027-03-14"
     },
     "calculators/ob-newborn/preeclampsia-severe-features": {
-      "content_version": 1,
-      "hash": "cff46a9c1ac6ac2d",
+      "content_version": 2,
+      "hash": "f84b0131fe94c7ca",
       "path": "modules/calculators/ob-newborn/preeclampsia-severe-features.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -676,8 +676,8 @@
       "next_review_due": "2026-12-15"
     },
     "calculators/pulmonary/lights-criteria": {
-      "content_version": 1,
-      "hash": "c9739eb43e3aa00a",
+      "content_version": 2,
+      "hash": "e116e3ca557510b1",
       "path": "modules/calculators/pulmonary/lights-criteria.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -847,8 +847,8 @@
       "next_review_due": "2027-03-02"
     },
     "calculators/tox-withdrawal/digoxin-immune-fab-dosing": {
-      "content_version": 1,
-      "hash": "15623e14ec97d21c",
+      "content_version": 2,
+      "hash": "fcbeb79eb780d439",
       "path": "modules/calculators/tox-withdrawal/digoxin-immune-fab-dosing.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -856,8 +856,8 @@
       "next_review_due": "2027-03-07"
     },
     "calculators/tox-withdrawal/high-dose-insulin-euglycemia-dosing": {
-      "content_version": 1,
-      "hash": "24ec126bc9223695",
+      "content_version": 2,
+      "hash": "9e920a482702af56",
       "path": "modules/calculators/tox-withdrawal/high-dose-insulin-euglycemia-dosing.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -874,8 +874,8 @@
       "next_review_due": "2027-09-02"
     },
     "calculators/tox-withdrawal/nerve-agent-antidote-dosing": {
-      "content_version": 1,
-      "hash": "9963ec714629c0d5",
+      "content_version": 2,
+      "hash": "3df76011de1fdc15",
       "path": "modules/calculators/tox-withdrawal/nerve-agent-antidote-dosing.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -891,8 +891,8 @@
       "review_tier": "stable"
     },
     "calculators/tox-withdrawal/salicylate-toxicity": {
-      "content_version": 2,
-      "hash": "f8f7554148ee5fdf",
+      "content_version": 3,
+      "hash": "a3b619b5efaaa7b1",
       "path": "modules/calculators/tox-withdrawal/salicylate-toxicity.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -936,8 +936,8 @@
       "next_review_due": "2027-09-02"
     },
     "calculators/trauma/mangled-extremity-severity-score": {
-      "content_version": 1,
-      "hash": "89c1ad856f403c65",
+      "content_version": 2,
+      "hash": "e0fc1a4a5a0350a8",
       "path": "modules/calculators/trauma/mangled-extremity-severity-score.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -945,8 +945,8 @@
       "next_review_due": "2027-09-07"
     },
     "calculators/trauma/modified-shock-index": {
-      "content_version": 1,
-      "hash": "88411774c9686fd9",
+      "content_version": 2,
+      "hash": "fa691fd7b10ae83f",
       "path": "modules/calculators/trauma/modified-shock-index.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -1125,8 +1125,8 @@
       "next_review_due": "2026-12-01"
     },
     "drug-dosing/anescalc-core/dexmedetomidine": {
-      "content_version": 2,
-      "hash": "6ec0f987ebdff9a3",
+      "content_version": 3,
+      "hash": "cfc4fd8dc00bbc23",
       "path": "modules/drug-dosing/anescalc-core/dexmedetomidine.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1314,8 +1314,8 @@
       "next_review_due": "2026-12-01"
     },
     "drug-dosing/anescalc-core/methylene-blue": {
-      "content_version": 1,
-      "hash": "74be305bd6021012",
+      "content_version": 2,
+      "hash": "bfa3a6fbbc9e8278",
       "path": "modules/drug-dosing/anescalc-core/methylene-blue.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1404,8 +1404,8 @@
       "next_review_due": "2026-12-01"
     },
     "drug-dosing/anescalc-core/protamine-sulfate": {
-      "content_version": 1,
-      "hash": "f0ad2825ce72c4fb",
+      "content_version": 2,
+      "hash": "01b9986cf6df8b39",
       "path": "modules/drug-dosing/anescalc-core/protamine-sulfate.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1485,8 +1485,8 @@
       "next_review_due": "2026-12-01"
     },
     "drug-dosing/anescalc-core/tranexamic-acid-txa": {
-      "content_version": 1,
-      "hash": "3dd37c5f7e0b2b02",
+      "content_version": 2,
+      "hash": "cb56e2b873b0bc93",
       "path": "modules/drug-dosing/anescalc-core/tranexamic-acid-txa.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1539,8 +1539,8 @@
       "next_review_due": "2026-12-14"
     },
     "drug-dosing/antimicrobial-dosing/vancomycin": {
-      "content_version": 1,
-      "hash": "cb92d9e9834c29fe",
+      "content_version": 2,
+      "hash": "140206f56c8647d2",
       "path": "modules/drug-dosing/antimicrobial-dosing/vancomycin.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1698,8 +1698,8 @@
       "next_review_due": "2026-11-30"
     },
     "drug-dosing/resus-dosing/peds-epinephrine-anaphylaxis": {
-      "content_version": 1,
-      "hash": "3959e052c48b06d9",
+      "content_version": 2,
+      "hash": "e124073d448668ca",
       "path": "modules/drug-dosing/resus-dosing/peds-epinephrine-anaphylaxis.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -1806,8 +1806,8 @@
       "next_review_due": "2026-12-02"
     },
     "peds-module/bronchiolitis-management": {
-      "content_version": 1,
-      "hash": "a99e9737719a6f5b",
+      "content_version": 2,
+      "hash": "87529cc4b04bd653",
       "path": "modules/peds-module/bronchiolitis-management.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1815,8 +1815,8 @@
       "next_review_due": "2026-12-14"
     },
     "peds-module/brue-lower-risk-criteria": {
-      "content_version": 1,
-      "hash": "0a2d1ba3773de22f",
+      "content_version": 2,
+      "hash": "6e8ccb466dc75aaa",
       "path": "modules/peds-module/brue-lower-risk-criteria.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1824,8 +1824,8 @@
       "next_review_due": "2027-09-08"
     },
     "peds-module/brue-pathway": {
-      "content_version": 2,
-      "hash": "38d6e527f9124c7c",
+      "content_version": 3,
+      "hash": "918b1be547583fbc",
       "path": "modules/peds-module/brue-pathway.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1914,8 +1914,8 @@
       "next_review_due": "2027-09-03"
     },
     "peds-module/kawasaki-disease": {
-      "content_version": 1,
-      "hash": "e5e952447b0c5d8a",
+      "content_version": 2,
+      "hash": "425500e8dce59d13",
       "path": "modules/peds-module/kawasaki-disease.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1932,8 +1932,8 @@
       "next_review_due": "2026-12-15"
     },
     "peds-module/neonatal-early-onset-sepsis-risk": {
-      "content_version": 1,
-      "hash": "e94a710eb4e578c3",
+      "content_version": 2,
+      "hash": "cc4d43a50f512bc4",
       "path": "modules/peds-module/neonatal-early-onset-sepsis-risk.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -1959,8 +1959,8 @@
       "next_review_due": "2026-12-02"
     },
     "peds-module/neonatal-hypoglycemia": {
-      "content_version": 1,
-      "hash": "8a8a339ebb0001ea",
+      "content_version": 2,
+      "hash": "58bb36e6527ebbe3",
       "path": "modules/peds-module/neonatal-hypoglycemia.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2022,8 +2022,8 @@
       "next_review_due": "2027-03-07"
     },
     "peds-module/pediatric-appendicitis-risk-calculator": {
-      "content_version": 1,
-      "hash": "41e536f938598f26",
+      "content_version": 2,
+      "hash": "8be91926a3c52b0b",
       "path": "modules/peds-module/pediatric-appendicitis-risk-calculator.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2049,8 +2049,8 @@
       "next_review_due": "2026-12-15"
     },
     "peds-module/peds-asthma-exacerbation-management": {
-      "content_version": 1,
-      "hash": "7dba84860b51e5c5",
+      "content_version": 2,
+      "hash": "80546d6b69d8b490",
       "path": "modules/peds-module/peds-asthma-exacerbation-management.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2067,8 +2067,8 @@
       "next_review_due": "2027-03-04"
     },
     "peds-module/peds-dehydration-ort": {
-      "content_version": 1,
-      "hash": "7b476bad81e6e81b",
+      "content_version": 2,
+      "hash": "711120fead7fc063",
       "path": "modules/peds-module/peds-dehydration-ort.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2121,8 +2121,8 @@
       "next_review_due": "2027-03-07"
     },
     "peds-module/peds-procedural-sedation": {
-      "content_version": 1,
-      "hash": "415a43134d0acc7d",
+      "content_version": 2,
+      "hash": "9b71ccae9bf7aa3c",
       "path": "modules/peds-module/peds-procedural-sedation.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2148,8 +2148,8 @@
       "next_review_due": "2026-12-15"
     },
     "peds-module/peds-toxic-ingestion-one-pill-can-kill": {
-      "content_version": 1,
-      "hash": "ef83f2f213a8dfd4",
+      "content_version": 2,
+      "hash": "2e594922744eb433",
       "path": "modules/peds-module/peds-toxic-ingestion-one-pill-can-kill.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2157,8 +2157,8 @@
       "next_review_due": "2026-12-15"
     },
     "peds-module/peds-trauma-resuscitation": {
-      "content_version": 1,
-      "hash": "bcbdb1db78320e6a",
+      "content_version": 2,
+      "hash": "2f874d700301d4c1",
       "path": "modules/peds-module/peds-trauma-resuscitation.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2490,8 +2490,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/abdominal-compartment-syndrome": {
-      "content_version": 1,
-      "hash": "cdfc500c3605ebb2",
+      "content_version": 2,
+      "hash": "add3e964530c4cef",
       "path": "modules/reference-library/abdominal-compartment-syndrome.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2516,8 +2516,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/accidental-hypothermia-staging": {
-      "content_version": 1,
-      "hash": "351e84a75c93d662",
+      "content_version": 2,
+      "hash": "45a52849e89cdb33",
       "path": "modules/reference-library/accidental-hypothermia-staging.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2525,8 +2525,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/acls-adult-cardiac-arrest": {
-      "content_version": 5,
-      "hash": "be2cf952dadcc070",
+      "content_version": 6,
+      "hash": "95d79c6855e9614b",
       "path": "modules/reference-library/acls-adult-cardiac-arrest.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2534,8 +2534,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/acute-dyspnea-niv": {
-      "content_version": 3,
-      "hash": "f3af64a6fd5543b4",
+      "content_version": 4,
+      "hash": "74a827d4c45238a1",
       "path": "modules/reference-library/acute-dyspnea-niv.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2552,8 +2552,8 @@
       "next_review_due": "2026-12-14"
     },
     "reference-library/acute-limb-ischemia": {
-      "content_version": 1,
-      "hash": "fecfa8d719ff7a71",
+      "content_version": 2,
+      "hash": "a8eb14eab8e834f6",
       "path": "modules/reference-library/acute-limb-ischemia.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2561,8 +2561,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/acute-liver-failure": {
-      "content_version": 1,
-      "hash": "59e82f4129cbd272",
+      "content_version": 2,
+      "hash": "0e4d643e391f255a",
       "path": "modules/reference-library/acute-liver-failure.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2588,8 +2588,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/acute-radiation-syndrome": {
-      "content_version": 1,
-      "hash": "2300192809f6590b",
+      "content_version": 2,
+      "hash": "5ac28f67a951385e",
       "path": "modules/reference-library/acute-radiation-syndrome.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2597,8 +2597,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/acute-scrotum": {
-      "content_version": 1,
-      "hash": "b8c4342c3bcc3a9a",
+      "content_version": 2,
+      "hash": "281156f4e8d1c986",
       "path": "modules/reference-library/acute-scrotum.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2606,8 +2606,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/adrenal-crisis": {
-      "content_version": 1,
-      "hash": "a84c4c4fd5d333b2",
+      "content_version": 2,
+      "hash": "38b445b47498c9b9",
       "path": "modules/reference-library/adrenal-crisis.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2615,8 +2615,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/advanced-ards-ventilation": {
-      "content_version": 4,
-      "hash": "5c5a6b4ff62e8e06",
+      "content_version": 5,
+      "hash": "55d67e221dc880a6",
       "path": "modules/reference-library/advanced-ards-ventilation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2642,8 +2642,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/alcoholic-ketoacidosis": {
-      "content_version": 1,
-      "hash": "5759d2d94d8e13cc",
+      "content_version": 2,
+      "hash": "3ca1ec9d11ca4242",
       "path": "modules/reference-library/alcoholic-ketoacidosis.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2651,8 +2651,8 @@
       "next_review_due": "2027-09-09"
     },
     "reference-library/altered-mental-status": {
-      "content_version": 2,
-      "hash": "fa01865a7976c21f",
+      "content_version": 3,
+      "hash": "1205af34477ae022",
       "path": "modules/reference-library/altered-mental-status.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2660,8 +2660,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/amniotic-fluid-embolism": {
-      "content_version": 1,
-      "hash": "3579510df84169c8",
+      "content_version": 2,
+      "hash": "b9c1ecae5749ec6b",
       "path": "modules/reference-library/amniotic-fluid-embolism.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2678,8 +2678,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/anatomically-difficult-airway": {
-      "content_version": 2,
-      "hash": "3b242661fe26505d",
+      "content_version": 3,
+      "hash": "c71a90b24a283891",
       "path": "modules/reference-library/anatomically-difficult-airway.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2687,8 +2687,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/anesthesia-machine-checkout": {
-      "content_version": 1,
-      "hash": "771bde83d0402618",
+      "content_version": 2,
+      "hash": "5948fb192f78a75e",
       "path": "modules/reference-library/anesthesia-machine-checkout.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2705,8 +2705,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/anticoagulation-reversal": {
-      "content_version": 6,
-      "hash": "2b103509f9513464",
+      "content_version": 7,
+      "hash": "513d85cef5f0cd0e",
       "path": "modules/reference-library/anticoagulation-reversal.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2714,8 +2714,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/antidotes-reversal-agents": {
-      "content_version": 2,
-      "hash": "526163a2592fab16",
+      "content_version": 3,
+      "hash": "b5d00f0e0682db00",
       "path": "modules/reference-library/antidotes-reversal-agents.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2723,8 +2723,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/aortic-dissection-ruptured-aaa": {
-      "content_version": 1,
-      "hash": "7b758a94ddc346bc",
+      "content_version": 2,
+      "hash": "bda72839ba862775",
       "path": "modules/reference-library/aortic-dissection-ruptured-aaa.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2759,8 +2759,8 @@
       "next_review_due": "2027-03-23"
     },
     "reference-library/blast-injury": {
-      "content_version": 1,
-      "hash": "21da3bbd1fc4c3da",
+      "content_version": 2,
+      "hash": "9a57fe8c52ea836c",
       "path": "modules/reference-library/blast-injury.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2777,8 +2777,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/blunt-cerebrovascular-injury-screening": {
-      "content_version": 1,
-      "hash": "71481938655491cd",
+      "content_version": 2,
+      "hash": "cf1d8136ef281a8f",
       "path": "modules/reference-library/blunt-cerebrovascular-injury-screening.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2786,8 +2786,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/blunt-chest-trauma": {
-      "content_version": 1,
-      "hash": "eb86682abf159bce",
+      "content_version": 2,
+      "hash": "08954a4d3fcf9593",
       "path": "modules/reference-library/blunt-chest-trauma.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2795,8 +2795,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/bone-cement-implantation-syndrome": {
-      "content_version": 1,
-      "hash": "188ac286d699d519",
+      "content_version": 2,
+      "hash": "f795b892fb721347",
       "path": "modules/reference-library/bone-cement-implantation-syndrome.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2804,8 +2804,8 @@
       "next_review_due": "2027-03-09"
     },
     "reference-library/brain-death-determination": {
-      "content_version": 1,
-      "hash": "9b05cdbc2f5e9f21",
+      "content_version": 2,
+      "hash": "821ffbbe1b9ab92f",
       "path": "modules/reference-library/brain-death-determination.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2822,8 +2822,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/carbon-monoxide-cyanide-poisoning": {
-      "content_version": 1,
-      "hash": "4ee85ad243b91fc6",
+      "content_version": 2,
+      "hash": "ac7d4d33cbcf6753",
       "path": "modules/reference-library/carbon-monoxide-cyanide-poisoning.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2867,8 +2867,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/contrast-associated-aki": {
-      "content_version": 3,
-      "hash": "b984fc4477c3ac86",
+      "content_version": 4,
+      "hash": "bedc3131e99fada9",
       "path": "modules/reference-library/contrast-associated-aki.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2885,8 +2885,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/crush-syndrome": {
-      "content_version": 2,
-      "hash": "7e682b47e8f758db",
+      "content_version": 3,
+      "hash": "d8b2bfef48f898a9",
       "path": "modules/reference-library/crush-syndrome.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2894,8 +2894,8 @@
       "next_review_due": "2026-12-04"
     },
     "reference-library/csection-analgesia-prospect": {
-      "content_version": 2,
-      "hash": "e293eae56ad12e6e",
+      "content_version": 3,
+      "hash": "5779993b1e6576e3",
       "path": "modules/reference-library/csection-analgesia-prospect.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2912,8 +2912,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/deep-neck-space-infections": {
-      "content_version": 1,
-      "hash": "540b058d4de8f384",
+      "content_version": 2,
+      "hash": "931641543acc950f",
       "path": "modules/reference-library/deep-neck-space-infections.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2921,8 +2921,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/dka-hhs-adult-management": {
-      "content_version": 1,
-      "hash": "bd8e20d37cc238d5",
+      "content_version": 2,
+      "hash": "ed03416551827702",
       "path": "modules/reference-library/dka-hhs-adult-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2930,8 +2930,8 @@
       "next_review_due": "2027-03-08"
     },
     "reference-library/drowning": {
-      "content_version": 1,
-      "hash": "f46129edbb2fed37",
+      "content_version": 2,
+      "hash": "0cb946d87dce9ac8",
       "path": "modules/reference-library/drowning.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3002,8 +3002,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/electrical-injury-lightning": {
-      "content_version": 1,
-      "hash": "00f108a3aea295bb",
+      "content_version": 2,
+      "hash": "3e9922e651ffb9a9",
       "path": "modules/reference-library/electrical-injury-lightning.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3011,8 +3011,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/emergence-delirium-pod": {
-      "content_version": 1,
-      "hash": "8884fff455cb8eef",
+      "content_version": 2,
+      "hash": "4fd1719963737b85",
       "path": "modules/reference-library/emergence-delirium-pod.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3020,8 +3020,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/emergency-drugs-pregnancy": {
-      "content_version": 2,
-      "hash": "61375434f1079371",
+      "content_version": 3,
+      "hash": "4b61c75751fa980d",
       "path": "modules/reference-library/emergency-drugs-pregnancy.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3065,8 +3065,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/febrile-transplant-recipient": {
-      "content_version": 1,
-      "hash": "7b1e5157245d6d29",
+      "content_version": 2,
+      "hash": "2858263e22bb1961",
       "path": "modules/reference-library/febrile-transplant-recipient.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3083,8 +3083,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/gi-bleed-variceal-hemorrhage": {
-      "content_version": 1,
-      "hash": "71b0a4604f94b131",
+      "content_version": 2,
+      "hash": "2562164b7530b01f",
       "path": "modules/reference-library/gi-bleed-variceal-hemorrhage.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3092,8 +3092,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/hazmat-scene-toxidromes": {
-      "content_version": 1,
-      "hash": "fd8c223220524ebd",
+      "content_version": 2,
+      "hash": "415205bfb683b0ef",
       "path": "modules/reference-library/hazmat-scene-toxidromes.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3101,8 +3101,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/heart-failure-continuum": {
-      "content_version": 2,
-      "hash": "5f2ccc9c96a7bfdf",
+      "content_version": 3,
+      "hash": "c07f8fab06a59e64",
       "path": "modules/reference-library/heart-failure-continuum.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3110,8 +3110,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/heat-stroke": {
-      "content_version": 1,
-      "hash": "a344453235cb0d84",
+      "content_version": 2,
+      "hash": "0c3260348d74d295",
       "path": "modules/reference-library/heat-stroke.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3128,8 +3128,8 @@
       "next_review_due": "2027-03-04"
     },
     "reference-library/hints-vertigo": {
-      "content_version": 1,
-      "hash": "2cae1ebdf26a187f",
+      "content_version": 2,
+      "hash": "15dfa7ae54b38e5f",
       "path": "modules/reference-library/hints-vertigo.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3173,8 +3173,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/hyperviscosity-leukostasis": {
-      "content_version": 1,
-      "hash": "cc2723968a572c8a",
+      "content_version": 2,
+      "hash": "36636cd44fb4f782",
       "path": "modules/reference-library/hyperviscosity-leukostasis.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3191,8 +3191,8 @@
       "next_review_due": "2027-03-09"
     },
     "reference-library/icu-nutrition": {
-      "content_version": 1,
-      "hash": "bcc330aa6857e0c7",
+      "content_version": 2,
+      "hash": "07ffc8361c5726f6",
       "path": "modules/reference-library/icu-nutrition.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3209,8 +3209,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/immune-related-adverse-events": {
-      "content_version": 1,
-      "hash": "35f7bcda0d44a8bb",
+      "content_version": 2,
+      "hash": "0eafc782d0727420",
       "path": "modules/reference-library/immune-related-adverse-events.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3218,8 +3218,8 @@
       "next_review_due": "2027-03-23"
     },
     "reference-library/incendiary-chemical-burns": {
-      "content_version": 1,
-      "hash": "7d04cfa53733dfcc",
+      "content_version": 2,
+      "hash": "700b3bfed1278a18",
       "path": "modules/reference-library/incendiary-chemical-burns.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3236,8 +3236,8 @@
       "next_review_due": "2027-03-03"
     },
     "reference-library/intraoperative-awareness": {
-      "content_version": 1,
-      "hash": "a697d9435cdf0727",
+      "content_version": 2,
+      "hash": "1da95c0618404414",
       "path": "modules/reference-library/intraoperative-awareness.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3245,8 +3245,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/invasive-hemodynamic-monitoring": {
-      "content_version": 1,
-      "hash": "512bb1da4f447207",
+      "content_version": 2,
+      "hash": "c3ecf85c8197f389",
       "path": "modules/reference-library/invasive-hemodynamic-monitoring.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3254,8 +3254,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/iv-fluids": {
-      "content_version": 3,
-      "hash": "072197c63e0b504f",
+      "content_version": 4,
+      "hash": "e3661e67d0bdaa4a",
       "path": "modules/reference-library/iv-fluids.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3299,8 +3299,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/maternal-cardiac-arrest": {
-      "content_version": 2,
-      "hash": "68eb6c6470d2444e",
+      "content_version": 3,
+      "hash": "79a884ce0e6f7565",
       "path": "modules/reference-library/maternal-cardiac-arrest.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3308,8 +3308,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/mcs-device-selection": {
-      "content_version": 1,
-      "hash": "e1a62d9b2ecd8410",
+      "content_version": 2,
+      "hash": "f739fb9ae7a4e7f7",
       "path": "modules/reference-library/mcs-device-selection.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3317,8 +3317,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/methemoglobinemia": {
-      "content_version": 1,
-      "hash": "37c7c7ab64ecf0fb",
+      "content_version": 2,
+      "hash": "42795a3f76f31d94",
       "path": "modules/reference-library/methemoglobinemia.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3335,8 +3335,8 @@
       "next_review_due": "2027-03-14"
     },
     "reference-library/necrotizing-soft-tissue-infection": {
-      "content_version": 1,
-      "hash": "d7f98475e2f29091",
+      "content_version": 2,
+      "hash": "94fe32de43dcc930",
       "path": "modules/reference-library/necrotizing-soft-tissue-infection.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3344,8 +3344,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/nerve-agent-toxicity": {
-      "content_version": 1,
-      "hash": "3c808f6b19b10faf",
+      "content_version": 2,
+      "hash": "8afd6283eb66f12c",
       "path": "modules/reference-library/nerve-agent-toxicity.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3353,8 +3353,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/neuraxial-anesthesia": {
-      "content_version": 2,
-      "hash": "e6c88642dab55764",
+      "content_version": 3,
+      "hash": "baa47616e7d962ee",
       "path": "modules/reference-library/neuraxial-anesthesia.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3380,8 +3380,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/one-lung-ventilation-basics": {
-      "content_version": 1,
-      "hash": "7565ed90358613a8",
+      "content_version": 2,
+      "hash": "9010d2ec6b6b2318",
       "path": "modules/reference-library/one-lung-ventilation-basics.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3389,8 +3389,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/ophthalmologic-emergencies": {
-      "content_version": 1,
-      "hash": "3108eed341b38b22",
+      "content_version": 2,
+      "hash": "710fc6707da08941",
       "path": "modules/reference-library/ophthalmologic-emergencies.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3398,8 +3398,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/opioid-withdrawal-induction": {
-      "content_version": 1,
-      "hash": "0b3fbabc9772d8a8",
+      "content_version": 2,
+      "hash": "f423dfd5f318a3d6",
       "path": "modules/reference-library/opioid-withdrawal-induction.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3407,8 +3407,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/or-fire-safety": {
-      "content_version": 1,
-      "hash": "bdc66eb8e80eab2e",
+      "content_version": 2,
+      "hash": "b7be42abae4bf995",
       "path": "modules/reference-library/or-fire-safety.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3443,8 +3443,8 @@
       "next_review_due": "2027-09-03"
     },
     "reference-library/penetrating-regional-trauma": {
-      "content_version": 1,
-      "hash": "de3e24f99b7df0f3",
+      "content_version": 2,
+      "hash": "3cf514588fdfe817",
       "path": "modules/reference-library/penetrating-regional-trauma.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3452,8 +3452,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/perioperative-anaphylaxis": {
-      "content_version": 1,
-      "hash": "d5802d75436ae39f",
+      "content_version": 2,
+      "hash": "4a09ba71c873beea",
       "path": "modules/reference-library/perioperative-anaphylaxis.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3470,8 +3470,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/perioperative-home-medication-management": {
-      "content_version": 1,
-      "hash": "aeeb4201d7528ce7",
+      "content_version": 2,
+      "hash": "5a4a22e7875b7493",
       "path": "modules/reference-library/perioperative-home-medication-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3479,8 +3479,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/perioperative-positioning-nerve-injury": {
-      "content_version": 1,
-      "hash": "9b619f7585f3a2e1",
+      "content_version": 2,
+      "hash": "d801390b790e7409",
       "path": "modules/reference-library/perioperative-positioning-nerve-injury.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3488,8 +3488,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/peripartum-cardiomyopathy": {
-      "content_version": 1,
-      "hash": "34563cd5ef663efe",
+      "content_version": 2,
+      "hash": "035deb297241346a",
       "path": "modules/reference-library/peripartum-cardiomyopathy.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3506,8 +3506,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/physiologically-difficult-airway": {
-      "content_version": 4,
-      "hash": "252bf4d73c9e6093",
+      "content_version": 5,
+      "hash": "261bf1cca3691452",
       "path": "modules/reference-library/physiologically-difficult-airway.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3524,8 +3524,8 @@
       "next_review_due": "2026-12-03"
     },
     "reference-library/pneumoperitoneum-trendelenburg-physiology": {
-      "content_version": 1,
-      "hash": "f5764608980b5362",
+      "content_version": 2,
+      "hash": "8f89eb2df035d559",
       "path": "modules/reference-library/pneumoperitoneum-trendelenburg-physiology.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3533,8 +3533,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/ponv-treatment-algorithm": {
-      "content_version": 1,
-      "hash": "48d5305e77157a0f",
+      "content_version": 2,
+      "hash": "d11859bace980f35",
       "path": "modules/reference-library/ponv-treatment-algorithm.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3542,8 +3542,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/post-cardiac-arrest-care-ttm": {
-      "content_version": 1,
-      "hash": "8e1f3ca93404e8dc",
+      "content_version": 2,
+      "hash": "df0712a4aa6b4cbc",
       "path": "modules/reference-library/post-cardiac-arrest-care-ttm.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3551,8 +3551,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/post-cardiac-surgery-vasoplegia": {
-      "content_version": 1,
-      "hash": "93f96f9687213d3a",
+      "content_version": 2,
+      "hash": "199da56dea333ea8",
       "path": "modules/reference-library/post-cardiac-surgery-vasoplegia.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3560,8 +3560,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/post-intubation-management": {
-      "content_version": 2,
-      "hash": "f2e86aaa3ec609ab",
+      "content_version": 3,
+      "hash": "06ae9cd0d4addfea",
       "path": "modules/reference-library/post-intubation-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3578,8 +3578,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/preanesthesia-checklist": {
-      "content_version": 2,
-      "hash": "76c0b78148936765",
+      "content_version": 3,
+      "hash": "07c1e879d3445ad8",
       "path": "modules/reference-library/preanesthesia-checklist.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3632,8 +3632,8 @@
       "next_review_due": "2027-03-14"
     },
     "reference-library/radiation-decorporation-dosing": {
-      "content_version": 1,
-      "hash": "88348e9cc899a496",
+      "content_version": 2,
+      "hash": "d5176398f3b71a8e",
       "path": "modules/reference-library/radiation-decorporation-dosing.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3641,8 +3641,8 @@
       "next_review_due": "2027-03-08"
     },
     "reference-library/renal-dose-adjustment-critical-illness-antibiotics": {
-      "content_version": 1,
-      "hash": "efd2e6728e0284f0",
+      "content_version": 2,
+      "hash": "ab6a78adf84e7085",
       "path": "modules/reference-library/renal-dose-adjustment-critical-illness-antibiotics.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3659,8 +3659,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/rv-failure-pulmonary-hypertensive-crisis": {
-      "content_version": 1,
-      "hash": "85534451c9a1384a",
+      "content_version": 2,
+      "hash": "e749d632158ae403",
       "path": "modules/reference-library/rv-failure-pulmonary-hypertensive-crisis.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3668,8 +3668,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/sedation-analgesia-agents": {
-      "content_version": 2,
-      "hash": "5de133c35adb2184",
+      "content_version": 3,
+      "hash": "e0812e6dcf175a37",
       "path": "modules/reference-library/sedation-analgesia-agents.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3677,8 +3677,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/septic-shock-resuscitation": {
-      "content_version": 3,
-      "hash": "3cab9c012c5da786",
+      "content_version": 4,
+      "hash": "c3f503e5ab23be42",
       "path": "modules/reference-library/septic-shock-resuscitation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3686,8 +3686,8 @@
       "next_review_due": "2026-12-14"
     },
     "reference-library/severe-alcohol-withdrawal-dts": {
-      "content_version": 1,
-      "hash": "7836bf3ae5871de6",
+      "content_version": 2,
+      "hash": "792c62efd5a42568",
       "path": "modules/reference-library/severe-alcohol-withdrawal-dts.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3695,8 +3695,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/shock-classification": {
-      "content_version": 2,
-      "hash": "8957fd80cb399da2",
+      "content_version": 3,
+      "hash": "8f3aa39490454210",
       "path": "modules/reference-library/shock-classification.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3704,8 +3704,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/sickle-cell-crisis": {
-      "content_version": 1,
-      "hash": "3bf5dcc3e96e61a0",
+      "content_version": 2,
+      "hash": "41d96bbd199309cf",
       "path": "modules/reference-library/sickle-cell-crisis.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3767,8 +3767,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/tox-alcohols-anticholinergics-other": {
-      "content_version": 1,
-      "hash": "88ad98d2f1475f29",
+      "content_version": 2,
+      "hash": "591af71868fbcc57",
       "path": "modules/reference-library/tox-alcohols-anticholinergics-other.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3776,8 +3776,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/tox-cannabinoids-inhalants": {
-      "content_version": 1,
-      "hash": "a056a6eaa8a5edd4",
+      "content_version": 2,
+      "hash": "9ddcfb3c88976dff",
       "path": "modules/reference-library/tox-cannabinoids-inhalants.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3785,8 +3785,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/tox-cardiac-meds": {
-      "content_version": 1,
-      "hash": "f41630d3869b0355",
+      "content_version": 2,
+      "hash": "3884fe769a3d46ab",
       "path": "modules/reference-library/tox-cardiac-meds.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3794,8 +3794,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/tox-dissociatives-hallucinogens": {
-      "content_version": 1,
-      "hash": "072785674b6da9c1",
+      "content_version": 2,
+      "hash": "31b46b80308c9239",
       "path": "modules/reference-library/tox-dissociatives-hallucinogens.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3803,8 +3803,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/tox-opioids": {
-      "content_version": 1,
-      "hash": "8ef3db196c21f76f",
+      "content_version": 2,
+      "hash": "0da0da2b3ec8ccce",
       "path": "modules/reference-library/tox-opioids.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3812,8 +3812,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/tox-psych-meds": {
-      "content_version": 1,
-      "hash": "38ac84cf102ac7a1",
+      "content_version": 2,
+      "hash": "b0be54b7aebb7935",
       "path": "modules/reference-library/tox-psych-meds.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3821,8 +3821,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/tox-sedative-hypnotics": {
-      "content_version": 1,
-      "hash": "f9423b1db733573a",
+      "content_version": 2,
+      "hash": "1dacb380fde39fcb",
       "path": "modules/reference-library/tox-sedative-hypnotics.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3830,8 +3830,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/tox-stimulants": {
-      "content_version": 1,
-      "hash": "24766cacaf4eaf98",
+      "content_version": 2,
+      "hash": "d7899a54db04398c",
       "path": "modules/reference-library/tox-stimulants.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3839,8 +3839,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/toxidromes-and-overdoses": {
-      "content_version": 2,
-      "hash": "54edfd20c4104994",
+      "content_version": 3,
+      "hash": "44be93263be3b3de",
       "path": "modules/reference-library/toxidromes-and-overdoses.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3848,8 +3848,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/transfusion-reactions": {
-      "content_version": 1,
-      "hash": "1c8d0bbf83ba0b19",
+      "content_version": 2,
+      "hash": "ad065c9632dc0a80",
       "path": "modules/reference-library/transfusion-reactions.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3857,8 +3857,8 @@
       "next_review_due": "2027-03-14"
     },
     "reference-library/transplant-rejection-graft-dysfunction": {
-      "content_version": 1,
-      "hash": "e7bc68ffbfba4535",
+      "content_version": 2,
+      "hash": "f8e8451ab2c9809f",
       "path": "modules/reference-library/transplant-rejection-graft-dysfunction.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3866,8 +3866,8 @@
       "next_review_due": "2027-03-23"
     },
     "reference-library/trauma-primary-survey": {
-      "content_version": 2,
-      "hash": "52fd72f2c45fdb40",
+      "content_version": 3,
+      "hash": "f954beb696d605c6",
       "path": "modules/reference-library/trauma-primary-survey.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3902,8 +3902,8 @@
       "next_review_due": "2026-12-01"
     },
     "reference-library/venous-congestion-deresuscitation": {
-      "content_version": 1,
-      "hash": "5b16aab3349abd1f",
+      "content_version": 2,
+      "hash": "802e5f6a122b7e26",
       "path": "modules/reference-library/venous-congestion-deresuscitation.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3911,8 +3911,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/ventilator-liberation-weaning": {
-      "content_version": 3,
-      "hash": "e2efbecead4429fb",
+      "content_version": 4,
+      "hash": "a7bfc115ecc6d218",
       "path": "modules/reference-library/ventilator-liberation-weaning.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3920,8 +3920,8 @@
       "next_review_due": "2027-03-09"
     },
     "reference-library/ventilator-management": {
-      "content_version": 5,
-      "hash": "77c64392a5d87764",
+      "content_version": 6,
+      "hash": "6d5667e4a49c75fc",
       "path": "modules/reference-library/ventilator-management.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3938,8 +3938,8 @@
       "next_review_due": "2027-03-02"
     },
     "reference-library/vesicant-toxicity": {
-      "content_version": 1,
-      "hash": "718f9e26c5ff384a",
+      "content_version": 2,
+      "hash": "5c7f6c2981dff2dd",
       "path": "modules/reference-library/vesicant-toxicity.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3947,8 +3947,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/wound-ballistics": {
-      "content_version": 1,
-      "hash": "1770dc0f31def19b",
+      "content_version": 2,
+      "hash": "c129013749dcf4b7",
       "path": "modules/reference-library/wound-ballistics.json",
       "contentType": "reference",
       "section": "Reference Library",

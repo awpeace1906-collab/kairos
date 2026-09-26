@@ -3,13 +3,34 @@
   "section": "Peds Module",
   "category": "Peds Resuscitation & Decision Support",
   "title": "Kawasaki Disease",
-  "settingEmphasis": ["ed"],
-  "audience": ["peds"],
-  "aliases": ["mucocutaneous lymph node syndrome", "KD"],
-  "tags": ["Kawasaki disease", "fever 5 days", "coronary artery aneurysm", "IVIG", "vasculitis", "peds", "ED"],
-  "keywords": ["fever for 5 or more days plus 4 of 5 — mucosal changes, conjunctivitis, rash, extremity changes, cervical lymphadenopathy — but incomplete Kawasaki with fewer criteria is real and still needs treatment, especially under 1 year old", "IVIG 2 g/kg single infusion, ideally within the first 10 days of illness, this is what actually prevents coronary aneurysms", "high-dose aspirin 80-100 mg/kg/day during the acute febrile phase, then a low antiplatelet dose after fever resolves", "the whole point of early treatment is preventing coronary artery aneurysms, echo is part of the workup not an afterthought", "high-risk features that predict aneurysm risk — age under 6 months, Asian ethnicity, CRP 13 or higher, baseline coronary z-score 2 or higher"],
+  "settingEmphasis": [
+    "ed"
+  ],
+  "audience": [
+    "peds"
+  ],
+  "aliases": [
+    "mucocutaneous lymph node syndrome",
+    "KD"
+  ],
+  "tags": [
+    "Kawasaki disease",
+    "fever 5 days",
+    "coronary artery aneurysm",
+    "IVIG",
+    "vasculitis",
+    "peds",
+    "ED"
+  ],
+  "keywords": [
+    "fever for 5 or more days plus 4 of 5 — mucosal changes, conjunctivitis, rash, extremity changes, cervical lymphadenopathy — but incomplete Kawasaki with fewer criteria is real and still needs treatment, especially under 1 year old",
+    "IVIG 2 g/kg single infusion, ideally within the first 10 days of illness, this is what actually prevents coronary aneurysms",
+    "high-dose aspirin 80-100 mg/kg/day during the acute febrile phase, then a low antiplatelet dose after fever resolves",
+    "the whole point of early treatment is preventing coronary artery aneurysms, echo is part of the workup not an afterthought",
+    "high-risk features that predict aneurysm risk — age under 6 months, Asian ethnicity, CRP 13 or higher, baseline coronary z-score 2 or higher"
+  ],
   "contentType": "peds-tool",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,7 +39,16 @@
     "American Heart Association. Update on Diagnosis and Management of Kawasaki Disease: Identifying and Managing Patients at High Risk. Circulation. 2025."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). No prior mention anywhere in the corpus despite being a classic high-stakes pediatric diagnostic miss." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). No prior mention anywhere in the corpus despite being a classic high-stakes pediatric diagnostic miss."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "kind": "reference",
   "purpose": "Recognition of classic and incomplete Kawasaki disease, and the IVIG/aspirin treatment that actually prevents its main long-term threat — coronary artery aneurysm.",
@@ -31,7 +61,7 @@
     },
     {
       "type": "text",
-      "text": "Classic (complete) Kawasaki disease: fever for 5 or more days PLUS at least 4 of the following 5 criteria: (1) bilateral non-purulent conjunctival injection, (2) oral/mucosal changes (strawberry tongue, red/cracked/fissured lips, diffuse oropharyngeal erythema), (3) polymorphous rash, (4) extremity changes (erythema/edema of hands/feet acutely, periungual desquamation in the subacute phase, roughly 2-3 weeks in), (5) cervical lymphadenopathy (at least one node ≥1.5 cm, usually unilateral)."
+      "text": "Classic (complete) Kawasaki disease: fever for 5 or more days PLUS at least 4 of the following 5 criteria:\n1. bilateral non-purulent conjunctival injection\n2. oral/mucosal changes (strawberry tongue, red/cracked/fissured lips, diffuse oropharyngeal erythema)\n3. polymorphous rash\n4. extremity changes (erythema/edema of hands/feet acutely, periungual desquamation in the subacute phase, roughly 2-3 weeks in)\n5. cervical lymphadenopathy (at least one node ≥1.5 cm, usually unilateral)"
     },
     {
       "type": "callout",

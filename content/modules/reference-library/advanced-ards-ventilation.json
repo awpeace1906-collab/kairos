@@ -43,7 +43,7 @@
     "inhaled nitric oxide improves oxygenation transiently but has never shown a mortality benefit, use it as a bridge/rescue not a routine therapy"
   ],
   "contentType": "reference",
-  "content_version": 4,
+  "content_version": 5,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2027-09-03",
   "review_tier": 1,
@@ -74,11 +74,16 @@
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — APRV four-parameter setup + titration, judicious recruitment technique + decremental PEEP trial, and the OR protective-ventilation evidence."
+    },
+    {
+      "version": 5,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Three related topics past the standard lung-protective bundle. APRV setup varies more across centers than any other mode. Aggressive maximal recruitment (ART: PEEP 45, peak 60) caused harm — a moderate staircase maneuver plus a decremental PEEP trial is a different thing. In the routine surgical patient, low tidal volume does the work; added PEEP/recruitment mostly adds hemodynamic cost.",
   "whyThisMatters": "The interventions past the lung-protective bundle are where enthusiasm outran evidence: maximal recruitment (ART) killed patients, APRV is set up differently at every center, and routine intraoperative PEEP mostly buys hemodynamic cost for no benefit. Knowing where the line is matters more than knowing the maneuvers.",
-  "clinicalTakeaway": "In established ARDS, low tidal volume and a titrated PEEP do the work; reserve a moderate staircase recruitment plus a decremental PEEP trial for refractory hypoxemia, and avoid the ART-style maximal maneuver. Use APRV only if the team runs it routinely. In the routine surgical patient, low tidal volume is enough — don't add PEEP or recruitment reflexively. For refractory hypoxemia despite all of this: prone EARLY in moderate-severe ARDS (P/F ≤150) rather than as a last resort, reserve neuromuscular blockade for dyssynchrony/proning rather than a routine continuous infusion, and treat inhaled nitric oxide as a temporizing bridge, not a therapy with a mortality benefit.",
+  "clinicalTakeaway": "In established ARDS, low tidal volume and a titrated PEEP do the work; reserve a moderate staircase recruitment plus a decremental PEEP trial for refractory hypoxemia, and avoid the ART-style maximal maneuver. Use APRV only if the team runs it routinely.\n\nIn the routine surgical patient, low tidal volume is enough — don't add PEEP or recruitment reflexively.\n\nFor refractory hypoxemia despite all of this:\n- prone EARLY in moderate-severe ARDS (P/F ≤150) rather than as a last resort\n- reserve neuromuscular blockade for dyssynchrony/proning rather than a routine continuous infusion\n- treat inhaled nitric oxide as a temporizing bridge, not a therapy with a mortality benefit",
   "body": [
     {
       "type": "heading",
@@ -182,7 +187,11 @@
     },
     {
       "type": "table",
-      "columns": ["Intervention", "Evidence", "Practical takeaway"],
+      "columns": [
+        "Intervention",
+        "Evidence",
+        "Practical takeaway"
+      ],
       "rows": [
         [
           "Prone positioning",

@@ -3,13 +3,36 @@
   "section": "Peds Module",
   "category": "Peds Resuscitation & Decision Support",
   "title": "Pediatric Trauma Resuscitation",
-  "settingEmphasis": ["ed", "icu"],
-  "audience": ["peds"],
-  "aliases": ["peds trauma", "pediatric massive transfusion", "peds TXA dosing", "compensated shock child"],
-  "tags": ["trauma", "hemorrhagic shock", "TXA", "massive transfusion", "peds", "ED", "ICU"],
-  "keywords": ["a normal blood pressure does NOT rule out significant shock in a child, hypotension is a late finding", "tachycardia and narrowed pulse pressure are the earlier warning signs", "TXA 15mg/kg load max 1g then 2mg/kg/h for at least 8 hours", "PRBC bolus 10mL/kg, weight-based massive transfusion ratios mirror the adult 1:1:1 concept"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "audience": [
+    "peds"
+  ],
+  "aliases": [
+    "peds trauma",
+    "pediatric massive transfusion",
+    "peds TXA dosing",
+    "compensated shock child"
+  ],
+  "tags": [
+    "trauma",
+    "hemorrhagic shock",
+    "TXA",
+    "massive transfusion",
+    "peds",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "a normal blood pressure does NOT rule out significant shock in a child, hypotension is a late finding",
+    "tachycardia and narrowed pulse pressure are the earlier warning signs",
+    "TXA 15mg/kg load max 1g then 2mg/kg/h for at least 8 hours",
+    "PRBC bolus 10mL/kg, weight-based massive transfusion ratios mirror the adult 1:1:1 concept"
+  ],
   "contentType": "peds-tool",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,12 +41,24 @@
     "TXA pediatric dosing (15 mg/kg load, max 1 g, then 2 mg/kg/h infusion for at least 8h) WebSearch-verified before writing."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5). Deliberately doesn't restate the general primary-survey framework (see trauma-primary-survey) — this module is specifically what's DIFFERENT about applying it to a child." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 5). Deliberately doesn't restate the general primary-survey framework (see trauma-primary-survey) — this module is specifically what's DIFFERENT about applying it to a child."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "kind": "reference",
   "ageRange": "Pediatric trauma, all ages — the compensated-shock physiology point applies most dramatically in younger children with more robust compensatory reserve",
   "purpose": "What's specifically different about pediatric trauma resuscitation: a child's ability to mask significant blood loss with a normal blood pressure until very late, and the weight-based blood product/TXA dosing that follows from using weight rather than fixed adult doses.",
-  "sourceOfTruth": ["trauma-primary-survey", "pedi-tape-weight-zones"],
+  "sourceOfTruth": [
+    "trauma-primary-survey",
+    "pedi-tape-weight-zones"
+  ],
   "body": [
     {
       "type": "heading",
@@ -63,7 +98,7 @@
     },
     {
       "type": "text",
-      "text": "Loading dose 15 mg/kg IV (maximum 1 g) over roughly 10-20 minutes, followed by a maintenance infusion of 2 mg/kg/h for at least 8 hours or until bleeding has stopped. Registry and combat-trauma data support a mortality benefit in severely injured, significantly hemorrhaging children, similar in direction to the adult CRASH-2 evidence base, though the pediatric trial evidence base is smaller. As in adults, earlier administration (within the first few hours of injury) is the generally accepted principle — don't delay TXA while sorting out other resuscitation priorities in a child who clearly needs it."
+      "text": "DOSE: loading dose 15 mg/kg IV (maximum 1 g) over roughly 10-20 minutes, followed by a maintenance infusion of 2 mg/kg/h for at least 8 hours or until bleeding has stopped.\n\nEVIDENCE: registry and combat-trauma data support a mortality benefit in severely injured, significantly hemorrhaging children, similar in direction to the adult CRASH-2 evidence base, though the pediatric trial evidence base is smaller.\n\nTIMING: as in adults, earlier administration (within the first few hours of injury) is the generally accepted principle — don't delay TXA while sorting out other resuscitation priorities in a child who clearly needs it."
     },
     {
       "type": "heading",
@@ -72,7 +107,7 @@
     },
     {
       "type": "text",
-      "text": "Airway, breathing, circulation, disability, exposure — the sequence and priorities are the same as adult trauma (see trauma-primary-survey), with pediatric-specific anatomic/physiologic adjustments already covered elsewhere in this app (airway anatomy differences — see peds-difficult-airway; weight-based drug/fluid dosing generally — see pedi-tape-weight-zones and the weight-zone-tagged drug cards). This module intentionally covers only the two points above (compensated shock, and weight-based blood/TXA dosing) that are both genuinely distinct AND not already addressed by those other modules."
+      "text": "Airway, breathing, circulation, disability, exposure — the sequence and priorities are the same as adult trauma (see trauma-primary-survey).\n\nPediatric-specific anatomic/physiologic adjustments are already covered elsewhere in this app:\n- airway anatomy differences — see peds-difficult-airway\n- weight-based drug/fluid dosing generally — see pedi-tape-weight-zones and the weight-zone-tagged drug cards\n\nThis module intentionally covers only the two points above (compensated shock, and weight-based blood/TXA dosing) that are both genuinely distinct AND not already addressed by those other modules."
     }
   ],
   "buildNote": "kind: reference. sourceOfTruth points to trauma-primary-survey (general framework) and pedi-tape-weight-zones (weight-based dosing infrastructure) rather than restating either — this module's actual content is narrowly the compensated-shock physiology point and the TXA/blood-product weight-based numbers, which is genuinely all that's distinctly missing."

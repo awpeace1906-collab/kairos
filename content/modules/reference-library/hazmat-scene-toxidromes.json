@@ -42,7 +42,7 @@
     "atropine pralidoxime aging miosis secretions seizures"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
@@ -58,11 +58,16 @@
       "version": 1,
       "date": "2026-09-07",
       "change": "Initial entry — converted from CV Austere & Disaster Medicine Part One: scene zones, identification tools, responder training tiers, decontamination flow, and the pulmonary-irritant / asphyxiant / nerve-agent toxidromes."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "The operating picture for a chemical release: three zones, four responder tiers, a decontamination corridor that protects everyone downstream of it, and the three toxidrome families a medical provider actually has to tell apart — irritant gas, asphyxiant, and cholinergic.",
   "whyThisMatters": "A contaminated patient who reaches your resus bay undecontaminated turns one casualty into a contaminated department. The scene structure and decon corridor exist to stop that, and they only work if the medical team understands where its boundary is. On the clinical side, the agent that kills late — phosgene, with pulmonary edema up to 48 hours out — looks tolerable at first contact, so recognition and a disposition rule matter more than any antidote.",
-  "clinicalTakeaway": "Medical providers work in the cold zone, upwind and uphill; only decontaminated patients cross into it, and clothing removal alone clears most contamination. Sort the exposure into one of three toxidromes: water-soluble irritants (chlorine, ammonia) announce themselves and are supportive-care only; phosgene is deceptively mild early — observe any exposure for the full 48-hour delayed-edema window; chemical asphyxiants (cyanide, CO, H2S) impair oxygen use at the cell and cyanide has a specific antidote (hydroxocobalamin ± sodium thiosulfate). Copious secretions, miosis, and seizures mark a cholinergic/nerve-agent exposure — atropine plus pralidoxime.",
+  "clinicalTakeaway": "Medical providers work in the cold zone, upwind and uphill; only decontaminated patients cross into it, and clothing removal alone clears most contamination.\n\nSort the exposure into one of three toxidromes:\n- Water-soluble irritants (chlorine, ammonia) announce themselves and are supportive-care only.\n- Phosgene is deceptively mild early — observe any exposure for the full 48-hour delayed-edema window.\n- Chemical asphyxiants (cyanide, CO, H2S) impair oxygen use at the cell, and cyanide has a specific antidote (hydroxocobalamin ± sodium thiosulfate).\n\nCopious secretions, miosis, and seizures mark a cholinergic/nerve-agent exposure — atropine plus pralidoxime.",
   "body": [
     {
       "type": "callout",

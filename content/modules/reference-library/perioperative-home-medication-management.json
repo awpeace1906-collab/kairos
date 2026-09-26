@@ -3,12 +3,31 @@
   "section": "Reference Library",
   "category": "Perioperative & Anesthesia",
   "title": "Perioperative Home Medication Management",
-  "settingEmphasis": ["or"],
-  "aliases": ["hold vs continue home meds surgery", "preoperative medication reconciliation", "GLP-1 perioperative guidance"],
-  "tags": ["perioperative medications", "GLP-1 agonists", "anticoagulants", "ACE inhibitors", "preoperative", "OR"],
-  "keywords": ["this is general medication-class guidance, not neuraxial-anticoagulation timing, that specific question is answered by the ASRA guideline reference instead", "the 2024 ASA GLP-1 guidance reversed the original 2023 hold-it recommendation, most patients now continue their GLP-1 through surgery, know which version of the guidance you're following", "ACE inhibitors and ARBs held the morning of surgery reduces intraoperative hypotension, but the evidence on whether that actually changes outcomes is mixed", "diuretics generally held the morning of surgery to avoid volume depletion and electrolyte issues going into a case", "metformin held for GI/contrast cases over lactic acidosis concerns, but this is being reconsidered for routine low-risk surgery, know your institution's current stance"],
+  "settingEmphasis": [
+    "or"
+  ],
+  "aliases": [
+    "hold vs continue home meds surgery",
+    "preoperative medication reconciliation",
+    "GLP-1 perioperative guidance"
+  ],
+  "tags": [
+    "perioperative medications",
+    "GLP-1 agonists",
+    "anticoagulants",
+    "ACE inhibitors",
+    "preoperative",
+    "OR"
+  ],
+  "keywords": [
+    "this is general medication-class guidance, not neuraxial-anticoagulation timing, that specific question is answered by the ASRA guideline reference instead",
+    "the 2024 ASA GLP-1 guidance reversed the original 2023 hold-it recommendation, most patients now continue their GLP-1 through surgery, know which version of the guidance you're following",
+    "ACE inhibitors and ARBs held the morning of surgery reduces intraoperative hypotension, but the evidence on whether that actually changes outcomes is mixed",
+    "diuretics generally held the morning of surgery to avoid volume depletion and electrolyte issues going into a case",
+    "metformin held for GI/contrast cases over lactic acidosis concerns, but this is being reconsidered for routine low-risk surgery, know your institution's current stance"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,11 +37,20 @@
     "Society for Perioperative Assessment and Quality Improvement (SPAQI) multidisciplinary consensus statement on GLP-1 receptor agonist perioperative management."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). Distinct from the existing ASRA neuraxial-anticoagulation-timing content (which only covers the specific window around neuraxial block placement) and from RCRI (which scores cardiac risk, not medication management) — this is the missing general hold-vs-continue guidance for common chronic medication classes." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). Distinct from the existing ASRA neuraxial-anticoagulation-timing content (which only covers the specific window around neuraxial block placement) and from RCRI (which scores cardiac risk, not medication management) — this is the missing general hold-vs-continue guidance for common chronic medication classes."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "GLP-1 receptor agonist guidance genuinely reversed in late 2024 — most patients now continue rather than hold — and that's the highest-yield, most current thing to know here; the rest of the common medication classes (anticoagulants, antiplatelets, ACE-I/ARB, diuretics, metformin) each have their own hold/continue logic worth knowing before a preoperative visit.",
   "whyThisMatters": "GLP-1 perioperative guidance changed direction within about 18 months (hold → continue for most patients), which means a clinician relying on older training or an outdated institutional protocol may be giving advice that's now actively superseded — knowing the CURRENT recommendation, and why it changed, matters more than memorizing a static rule that may already be stale.",
-  "clinicalTakeaway": "GLP-1 receptor agonists: as of the October 2024 ASA guidance update, MOST patients should CONTINUE their GLP-1 through elective surgery — this reversed the original June 2023 guidance to hold (daily dosing held day-of, weekly dosing held one week prior). Assess every patient on the day of the procedure for symptoms suggestive of delayed gastric emptying (nausea, vomiting, early satiety, abdominal distension) regardless of the hold/continue decision, and individualize when there's genuine concern. For other classes: anticoagulants/antiplatelets are managed per a bleeding-risk-vs-thrombosis-risk assessment specific to the procedure and the patient's indication (this is a case-by-case decision, not a blanket rule); ACE inhibitors/ARBs are commonly held the morning of surgery to reduce intraoperative hypotension, though outcome evidence is mixed; diuretics are commonly held the morning of surgery; beta-blockers and most other chronic cardiac medications are generally CONTINUED through the perioperative period to avoid rebound effects; metformin is held before procedures with significant lactic acidosis risk (IV contrast, major surgery) per institutional protocol, an area of evolving practice for routine low-risk cases.",
+  "clinicalTakeaway": "GLP-1 RECEPTOR AGONISTS: as of the October 2024 ASA guidance update, MOST patients should CONTINUE their GLP-1 through elective surgery — this reversed the original June 2023 guidance to hold (daily dosing held day-of, weekly dosing held one week prior).\n- Assess every patient on the day of the procedure for symptoms suggestive of delayed gastric emptying (nausea, vomiting, early satiety, abdominal distension) regardless of the hold/continue decision.\n- Individualize when there's genuine concern.\n\nFor other classes:\n- Anticoagulants/antiplatelets are managed per a bleeding-risk-vs-thrombosis-risk assessment specific to the procedure and the patient's indication (this is a case-by-case decision, not a blanket rule).\n- ACE inhibitors/ARBs are commonly held the morning of surgery to reduce intraoperative hypotension, though outcome evidence is mixed.\n- Diuretics are commonly held the morning of surgery.\n- Beta-blockers and most other chronic cardiac medications are generally CONTINUED through the perioperative period to avoid rebound effects.\n- Metformin is held before procedures with significant lactic acidosis risk (IV contrast, major surgery) per institutional protocol, an area of evolving practice for routine low-risk cases.",
   "body": [
     {
       "type": "heading",
@@ -50,14 +78,42 @@
     },
     {
       "type": "table",
-      "columns": ["Class", "Typical approach", "Rationale"],
+      "columns": [
+        "Class",
+        "Typical approach",
+        "Rationale"
+      ],
       "rows": [
-        ["ACE inhibitors / ARBs", "Commonly HELD the morning of surgery", "Reduces intraoperative hypotension risk under anesthesia (these agents blunt the renin-angiotensin compensatory response); evidence on whether this changes hard outcomes is mixed, so this varies somewhat by institution/anesthesiologist preference"],
-        ["Diuretics", "Commonly HELD the morning of surgery", "Avoids unnecessary volume depletion and electrolyte derangement heading into a case with its own fluid shifts"],
-        ["Beta-blockers", "Generally CONTINUED through the perioperative period, including the morning of surgery", "Abrupt discontinuation risks rebound tachycardia/hypertension and myocardial ischemia — this is a 'don't stop' medication in most cases"],
-        ["Other chronic cardiac medications (statins, most antihypertensives not listed above)", "Generally CONTINUED", "Discontinuation risk (rebound effects, loss of a stabilizing chronic therapy) usually outweighs any perioperative benefit of holding"],
-        ["Anticoagulants (warfarin, DOACs) and antiplatelets", "Individualized — a bleeding-risk-vs-thrombosis-risk decision specific to the procedure and the patient's indication for the medication", "This is not a blanket rule; see the anticoagulation reversal/anticoag-labs reference content and involve the prescribing service (cardiology for a recent stent, neurology for AFib stroke prevention, etc.) for anything beyond a straightforward low-risk case"],
-        ["Metformin", "Held before procedures with significant IV contrast exposure or major surgery, per institutional protocol", "Historical concern for lactic acidosis in the setting of contrast-induced or perioperative renal impairment — practice is evolving toward a more nuanced, risk-stratified approach for routine low-risk surgery rather than a blanket hold, so check current local protocol"]
+        [
+          "ACE inhibitors / ARBs",
+          "Commonly HELD the morning of surgery",
+          "Reduces intraoperative hypotension risk under anesthesia (these agents blunt the renin-angiotensin compensatory response); evidence on whether this changes hard outcomes is mixed, so this varies somewhat by institution/anesthesiologist preference"
+        ],
+        [
+          "Diuretics",
+          "Commonly HELD the morning of surgery",
+          "Avoids unnecessary volume depletion and electrolyte derangement heading into a case with its own fluid shifts"
+        ],
+        [
+          "Beta-blockers",
+          "Generally CONTINUED through the perioperative period, including the morning of surgery",
+          "Abrupt discontinuation risks rebound tachycardia/hypertension and myocardial ischemia — this is a 'don't stop' medication in most cases"
+        ],
+        [
+          "Other chronic cardiac medications (statins, most antihypertensives not listed above)",
+          "Generally CONTINUED",
+          "Discontinuation risk (rebound effects, loss of a stabilizing chronic therapy) usually outweighs any perioperative benefit of holding"
+        ],
+        [
+          "Anticoagulants (warfarin, DOACs) and antiplatelets",
+          "Individualized — a bleeding-risk-vs-thrombosis-risk decision specific to the procedure and the patient's indication for the medication",
+          "This is not a blanket rule; see the anticoagulation reversal/anticoag-labs reference content and involve the prescribing service (cardiology for a recent stent, neurology for AFib stroke prevention, etc.) for anything beyond a straightforward low-risk case"
+        ],
+        [
+          "Metformin",
+          "Held before procedures with significant IV contrast exposure or major surgery, per institutional protocol",
+          "Historical concern for lactic acidosis in the setting of contrast-induced or perioperative renal impairment — practice is evolving toward a more nuanced, risk-stratified approach for routine low-risk surgery rather than a blanket hold, so check current local protocol"
+        ]
       ]
     },
     {
@@ -66,6 +122,9 @@
       "text": "This module covers general medication-CLASS guidance for the preoperative visit. For the specific timing windows around NEURAXIAL block placement relative to anticoagulant/antiplatelet dosing, see the dedicated ASRA neuraxial-anticoagulation-timing reference — that's a distinct, more granular question than the general hold-vs-continue decision covered here."
     }
   ],
-  "related": ["preanesthesia-checklist", "rcri"],
+  "related": [
+    "preanesthesia-checklist",
+    "rcri"
+  ],
   "buildNote": "Perioperative & Anesthesia category. GLP-1 guidance timeline (June 2023 hold → October 2024 reversal to continue-for-most) WebSearch-verified against the ASA's own published guidance updates and the SPAQI consensus statement — this is the single most time-sensitive fact in the module and is flagged as such. Other medication-class guidance reflects standard, stable perioperative medicine teaching. Deliberately does not restate the ASRA neuraxial-anticoagulation-timing content, which answers a narrower, different question."
 }

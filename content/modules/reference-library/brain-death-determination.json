@@ -32,7 +32,7 @@
     "high cervical injury needs ancillary test"
   ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-14",
   "next_review_due": "2027-03-14",
   "review_tier": 1,
@@ -45,6 +45,11 @@
       "version": 1,
       "date": "2026-09-14",
       "change": "Initial entry — a genuine content gap (Kairos had no module on brain death / DNC determination). Built from the 2023 AAN/AAP/CNS/SCCM consensus guideline: prerequisites, clinical exam, apnea test, ancillary testing, and the pediatric/adult harmonization."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "related": [
@@ -133,7 +138,7 @@
     },
     {
       "type": "text",
-      "text": "The 2023 consensus guideline harmonized pediatric and adult practice: from term newborn (≥ 37 weeks corrected gestational age) through age 18, two independent examinations plus apnea tests are required, each performed by a different attending physician, separated by an observation period — check your institutional policy for the exact interval, since it is age-dependent and was shortened from older separate pediatric guidelines. For adults, a single examination plus apnea test (or exam plus ancillary test if apnea testing isn't feasible) by one qualified attending is generally sufficient, though many institutions still require or prefer two."
+      "text": "The 2023 consensus guideline harmonized pediatric and adult practice.\n\nTERM NEWBORN TO 18: from term newborn (≥ 37 weeks corrected gestational age) through age 18, two independent examinations plus apnea tests are required, each performed by a different attending physician, separated by an observation period — check your institutional policy for the exact interval, since it is age-dependent and was shortened from older separate pediatric guidelines.\n\nADULTS: a single examination plus apnea test (or exam plus ancillary test if apnea testing isn't feasible) by one qualified attending is generally sufficient, though many institutions still require or prefer two."
     },
     {
       "type": "callout",

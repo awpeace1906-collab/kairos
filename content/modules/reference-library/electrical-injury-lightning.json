@@ -3,12 +3,35 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "Electrical Injury & Lightning Strike",
-  "settingEmphasis": ["ed", "icu", "prehospital"],
-  "aliases": ["electrocution", "high voltage injury", "low voltage injury", "lightning injury", "reverse triage"],
-  "tags": ["electrical injury", "lightning", "rhabdomyolysis", "compartment syndrome", "arrhythmia", "ED", "ICU"],
-  "keywords": ["high voltage over 1000V, low voltage under 1000V, household 110-240V is low voltage", "assume rhabdomyolysis if CK in the thousands", "cardiac monitoring roughly 12 hours for high voltage even if asymptomatic, 24h if loss of consciousness occurred", "lightning uses reverse triage — resuscitate the apparently dead first, since lightning arrest is often reversible"],
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "prehospital"
+  ],
+  "aliases": [
+    "electrocution",
+    "high voltage injury",
+    "low voltage injury",
+    "lightning injury",
+    "reverse triage"
+  ],
+  "tags": [
+    "electrical injury",
+    "lightning",
+    "rhabdomyolysis",
+    "compartment syndrome",
+    "arrhythmia",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "high voltage over 1000V, low voltage under 1000V, household 110-240V is low voltage",
+    "assume rhabdomyolysis if CK in the thousands",
+    "cardiac monitoring roughly 12 hours for high voltage even if asymptomatic, 24h if loss of consciousness occurred",
+    "lightning uses reverse triage — resuscitate the apparently dead first, since lightning arrest is often reversible"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -17,7 +40,16 @@
     "Voltage classification, rhabdomyolysis/compartment syndrome risk, and cardiac-monitoring duration WebSearch-verified before writing."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4)." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4)."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "High-voltage and low-voltage electrical injury are managed differently, and lightning is different again — its 'reverse triage' rule inverts the usual mass-casualty approach.",
   "whyThisMatters": "The internal damage from a high-voltage injury is frequently far worse than the visible entry/exit burns suggest — current follows the path of least resistance through deep tissue, causing rhabdomyolysis, compartment syndrome, and organ injury that a skin exam alone will underestimate; meanwhile lightning causes a very specific, often-reversible cardiorespiratory arrest pattern that changes who gets resuscitated first in a multi-victim strike.",
@@ -30,12 +62,32 @@
     },
     {
       "type": "table",
-      "columns": ["", "Low voltage", "High voltage"],
+      "columns": [
+        "",
+        "Low voltage",
+        "High voltage"
+      ],
       "rows": [
-        ["Threshold", "< 1,000 V", "≥ 1,000 V"],
-        ["Typical source", "Household current (110-120V North America, 220-240V elsewhere)", "Power lines, industrial equipment"],
-        ["Mortality", "Low (roughly < 1-3%)", "Substantially higher (cited as roughly 5-30%)"],
-        ["Deep tissue injury risk", "Low", "High — internal damage often exceeds what the skin burns suggest"]
+        [
+          "Threshold",
+          "< 1,000 V",
+          "≥ 1,000 V"
+        ],
+        [
+          "Typical source",
+          "Household current (110-120V North America, 220-240V elsewhere)",
+          "Power lines, industrial equipment"
+        ],
+        [
+          "Mortality",
+          "Low (roughly < 1-3%)",
+          "Substantially higher (cited as roughly 5-30%)"
+        ],
+        [
+          "Deep tissue injury risk",
+          "Low",
+          "High — internal damage often exceeds what the skin burns suggest"
+        ]
       ]
     },
     {
@@ -73,7 +125,7 @@
     },
     {
       "type": "text",
-      "text": "Lightning delivers an extremely brief, extremely high-voltage direct-current-like discharge that tends to flash over the body surface rather than passing deeply through it the way a sustained electrical-line contact does — internal organ/deep-tissue injury is often less severe than high-voltage industrial injury despite the enormous energy involved. The characteristic and most dangerous effect is cardiorespiratory: lightning can cause immediate cardiac asystole (which often self-converts back to a perfusing rhythm due to the heart's inherent automaticity) AND a separate, longer-lasting respiratory arrest from brainstem/medullary stunning — if the respiratory arrest isn't supported with ventilation during that window, the patient develops a SECONDARY hypoxic cardiac arrest that is much less likely to be reversible."
+      "text": "Lightning delivers an extremely brief, extremely high-voltage direct-current-like discharge that tends to flash over the body surface rather than passing deeply through it the way a sustained electrical-line contact does — internal organ/deep-tissue injury is often less severe than high-voltage industrial injury despite the enormous energy involved.\n\nThe characteristic and most dangerous effect is cardiorespiratory — lightning can cause:\n- immediate cardiac asystole (which often self-converts back to a perfusing rhythm due to the heart's inherent automaticity)\n- AND a separate, longer-lasting respiratory arrest from brainstem/medullary stunning\n\nIf the respiratory arrest isn't supported with ventilation during that window, the patient develops a SECONDARY hypoxic cardiac arrest that is much less likely to be reversible."
     },
     {
       "type": "callout",
@@ -88,6 +140,10 @@
       ]
     }
   ],
-  "related": ["traumatic-cardiac-arrest", "shock-classification", "aki-staging-rrt"],
+  "related": [
+    "traumatic-cardiac-arrest",
+    "shock-classification",
+    "aki-staging-rrt"
+  ],
   "buildNote": "Reverse-triage framing for lightning is standard wilderness/disaster-medicine teaching, presented here with the mechanistic reasoning (respiratory arrest outlasting cardiac arrest) rather than as a bare rule, so it's understood rather than just memorized."
 }

@@ -3,12 +3,33 @@
   "section": "Reference Library",
   "category": "Critical Care",
   "title": "Acute Liver Failure",
-  "settingEmphasis": ["ed", "icu"],
-  "aliases": ["fulminant hepatic failure", "King's College Criteria", "acetaminophen liver failure"],
-  "tags": ["acute liver failure", "King's College Criteria", "hepatic encephalopathy", "cerebral edema", "coagulopathy", "ED", "ICU"],
-  "keywords": ["acetaminophen King's College pH under 7.3 alone is sufficient, OR the triad of INR over 6.5 creatinine over 3.4 grade III-IV encephalopathy", "non-acetaminophen INR over 6.5 alone OR 3 of 5 minor criteria", "N-acetylcysteine even for non-acetaminophen causes", "do not prophylactically correct coagulopathy, it's a prognostic marker not a bleeding-risk number to chase", "cerebral edema is the feared complication of high-grade encephalopathy"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "aliases": [
+    "fulminant hepatic failure",
+    "King's College Criteria",
+    "acetaminophen liver failure"
+  ],
+  "tags": [
+    "acute liver failure",
+    "King's College Criteria",
+    "hepatic encephalopathy",
+    "cerebral edema",
+    "coagulopathy",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "acetaminophen King's College pH under 7.3 alone is sufficient, OR the triad of INR over 6.5 creatinine over 3.4 grade III-IV encephalopathy",
+    "non-acetaminophen INR over 6.5 alone OR 3 of 5 minor criteria",
+    "N-acetylcysteine even for non-acetaminophen causes",
+    "do not prophylactically correct coagulopathy, it's a prognostic marker not a bleeding-risk number to chase",
+    "cerebral edema is the feared complication of high-grade encephalopathy"
+  ],
   "contentType": "reference",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -18,11 +39,20 @@
     "Exact criteria thresholds WebSearch-verified against multiple contemporary sources before writing."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4)." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-14, Batch 4)."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "summary": "Acute liver failure is coagulopathy plus encephalopathy in a patient with no prior liver disease and a short illness course — the King's College Criteria (different thresholds for acetaminophen vs. other causes) drive transplant-center referral timing, and a few genuine counterintuitive management points (NAC beyond acetaminophen, not correcting coagulopathy prophylactically) matter.",
   "whyThisMatters": "Acute liver failure can deteriorate from 'sick but talking' to cerebral edema and herniation within hours to days, and the decision to transfer to a transplant center needs to happen BEFORE that deterioration — not after, when transport itself becomes dangerous — so recognizing King's-College-positive criteria early, and referring on that basis rather than waiting for the patient to look sicker, is the actionable point.",
-  "clinicalTakeaway": "Any patient with new coagulopathy (INR ≥ 1.5) AND any degree of encephalopathy, with no prior liver disease and illness onset within the past 26 weeks, has acute liver failure until proven otherwise — call your transplant center early. For acetaminophen-induced ALF, arterial pH < 7.3 (after adequate fluid resuscitation) ALONE is sufficient to trigger transplant-center referral, without needing to wait for the full triad. Give N-acetylcysteine regardless of etiology — it has a mortality benefit even in non-acetaminophen ALF, not just the classic overdose indication.",
+  "clinicalTakeaway": "Any patient with new coagulopathy (INR ≥ 1.5) AND any degree of encephalopathy, with no prior liver disease and illness onset within the past 26 weeks, has acute liver failure until proven otherwise — call your transplant center early.\n\nFor acetaminophen-induced ALF, arterial pH < 7.3 (after adequate fluid resuscitation) ALONE is sufficient to trigger transplant-center referral, without needing to wait for the full triad.\n\nGive N-acetylcysteine regardless of etiology — it has a mortality benefit even in non-acetaminophen ALF, not just the classic overdose indication.",
   "body": [
     {
       "type": "heading",
@@ -44,7 +74,10 @@
     },
     {
       "type": "table",
-      "columns": ["Etiology", "Criteria (meeting EITHER pathway is sufficient)"],
+      "columns": [
+        "Etiology",
+        "Criteria (meeting EITHER pathway is sufficient)"
+      ],
       "rows": [
         [
           "Acetaminophen",
@@ -78,6 +111,11 @@
       ]
     }
   ],
-  "related": ["apap-nac-dosing", "meld-na", "aki-staging-rrt", "altered-mental-status"],
+  "related": [
+    "apap-nac-dosing",
+    "meld-na",
+    "aki-staging-rrt",
+    "altered-mental-status"
+  ],
   "buildNote": "Cross-links to apap-nac-dosing for the actual NAC dosing regimen (this module deliberately doesn't restate per-kg dosing, just the 'give it regardless of etiology' management point) and meld-na for the chronic-liver-disease-adjacent scoring tool this module is explicitly NOT about."
 }

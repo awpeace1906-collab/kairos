@@ -39,7 +39,7 @@
     "fundus at or above umbilicus"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-02",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
@@ -57,6 +57,11 @@
       "version": 1,
       "date": "2026-09-02",
       "change": "Initial entry — the BAACC TO LIFE differential, CPR modifications for pregnancy (manual LUD, IV above the diaphragm, remove fetal monitors), and resuscitative cesarean delivery timing."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Two patients — manage the MOTHER first; do not monitor or resuscitate the fetus during the arrest, and remove the fetal monitors. From 20 weeks (fundus at/above the umbilicus): continuous manual left uterine displacement, IV/IO access ABOVE the diaphragm, and prepare for a resuscitative cesarean delivery to be done AT the arrest site within 4–5 minutes.",
@@ -130,7 +135,7 @@
     {
       "type": "callout",
       "tone": "danger",
-      "text": "If there is no ROSC by ~4 minutes of a witnessed maternal arrest with a fundus at/above the umbilicus, START the RCD so delivery is complete by ~5 minutes. Do it AT the arrest site — do NOT transport to an OR. RCD relieves aortocaval compression → autotransfusion of ~500 mL → > 50% chance of maternal ROSC; it is a maternal resuscitation maneuver first, a fetal one second. Continue CPR throughout. Vertical skin + uterine incision is fastest; minimal instruments; skip prep."
+      "text": "If there is no ROSC by ~4 minutes of a witnessed maternal arrest with a fundus at/above the umbilicus, START the RCD so delivery is complete by ~5 minutes.\n- Do it AT the arrest site — do NOT transport to an OR.\n- Continue CPR throughout.\n- Vertical skin + uterine incision is fastest; minimal instruments; skip prep.\n\nRCD relieves aortocaval compression → autotransfusion of ~500 mL → > 50% chance of maternal ROSC; it is a maternal resuscitation maneuver first, a fetal one second."
     },
     {
       "type": "text",

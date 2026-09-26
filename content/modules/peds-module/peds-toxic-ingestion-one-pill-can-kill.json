@@ -3,13 +3,33 @@
   "section": "Peds Module",
   "category": "Peds Resuscitation & Decision Support",
   "title": "Pediatric Toxic Ingestion — \"One Pill Can Kill\"",
-  "settingEmphasis": ["ed"],
-  "audience": ["peds"],
-  "aliases": ["toxic toddler", "single dose lethal ingestion", "deadly pediatric poisons"],
-  "tags": ["toxic ingestion", "one pill can kill", "toddler poisoning", "peds toxicology", "ED"],
-  "keywords": ["a history of a single missing pill or a small unknown taste is enough to trigger a real workup in a toddler for this specific list of agents, do not wait for symptoms to develop before taking it seriously", "sulfonylureas, calcium channel blockers, beta-blockers, opioids, TCAs, and clonidine already have their own management references in this app, this module is the peds-specific triage layer that routes to them", "camphor causes seizures fast, often within 5-90 minutes, and there is no antidote, management is supportive and seizure control", "methyl salicylate — oil of wintergreen — is concentrated enough that under a teaspoon has killed a toddler, treat it as aspirin overdose but with a much smaller lethal volume", "chloroquine and other antimalarials cause rapid cardiac dysfunction and seizures, a single adult tablet can be lethal to a small child"],
+  "settingEmphasis": [
+    "ed"
+  ],
+  "audience": [
+    "peds"
+  ],
+  "aliases": [
+    "toxic toddler",
+    "single dose lethal ingestion",
+    "deadly pediatric poisons"
+  ],
+  "tags": [
+    "toxic ingestion",
+    "one pill can kill",
+    "toddler poisoning",
+    "peds toxicology",
+    "ED"
+  ],
+  "keywords": [
+    "a history of a single missing pill or a small unknown taste is enough to trigger a real workup in a toddler for this specific list of agents, do not wait for symptoms to develop before taking it seriously",
+    "sulfonylureas, calcium channel blockers, beta-blockers, opioids, TCAs, and clonidine already have their own management references in this app, this module is the peds-specific triage layer that routes to them",
+    "camphor causes seizures fast, often within 5-90 minutes, and there is no antidote, management is supportive and seizure control",
+    "methyl salicylate — oil of wintergreen — is concentrated enough that under a teaspoon has killed a toddler, treat it as aspirin overdose but with a much smaller lethal volume",
+    "chloroquine and other antimalarials cause rapid cardiac dysfunction and seizures, a single adult tablet can be lethal to a small child"
+  ],
   "contentType": "peds-tool",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -19,12 +39,24 @@
     "Bar-Oz B, et al. Medications that can be fatal for a toddler with one tablet or teaspoonful ingestion. Drug Saf. 2004;27(14):1057-1082."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). Deliberately scoped to avoid duplicating existing adult toxicology reference content — cardiovascular agents (CCB, beta-blocker, clonidine), TCAs, opioids, and sulfonylureas already have management detail elsewhere in the corpus; this module supplies the missing pediatric-specific triage framing plus standalone content for the genuinely uncovered agents (camphor, methyl salicylate, chloroquine/antimalarials)." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 6). Deliberately scoped to avoid duplicating existing adult toxicology reference content — cardiovascular agents (CCB, beta-blocker, clonidine), TCAs, opioids, and sulfonylureas already have management detail elsewhere in the corpus; this module supplies the missing pediatric-specific triage framing plus standalone content for the genuinely uncovered agents (camphor, methyl salicylate, chloroquine/antimalarials)."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "kind": "reference",
   "purpose": "Recognize which common household medications are potentially lethal to a toddler from a single dose, and route to the right management reference — the exposure history alone (even 'just one pill, found the bottle open') should trigger a real workup for this specific list.",
   "ageRange": "Toddlers/young children, roughly under 6 years old and under ~10 kg is the classic highest-risk weight range — the same absolute dose is proportionally far more dangerous than in an older child or adult.",
-  "sourceOfTruth": ["tox-cardiac-meds", "tox-psych-meds"],
+  "sourceOfTruth": [
+    "tox-cardiac-meds",
+    "tox-psych-meds"
+  ],
   "body": [
     {
       "type": "callout",
@@ -52,7 +84,7 @@
     },
     {
       "type": "text",
-      "text": "Found in some topical liniments/vapor rubs and Campho-Phenique-type products at higher concentrations than commonly assumed. As little as roughly 1 gram (well under two teaspoons of some concentrated products) has caused fatality in a toddler. Onset is FAST — seizures can occur within 5-90 minutes of ingestion, sometimes with minimal warning symptoms beforehand. There is no antidote — management is supportive: seizure control with benzodiazepines, airway protection, and close monitoring. Activated charcoal is of limited value given how rapidly camphor is absorbed and how quickly seizures can occur."
+      "text": "Found in some topical liniments/vapor rubs and Campho-Phenique-type products at higher concentrations than commonly assumed. As little as roughly 1 gram (well under two teaspoons of some concentrated products) has caused fatality in a toddler.\n\nOnset is FAST — seizures can occur within 5-90 minutes of ingestion, sometimes with minimal warning symptoms beforehand.\n\nThere is no antidote — management is supportive:\n- seizure control with benzodiazepines\n- airway protection\n- close monitoring\n\nActivated charcoal is of limited value given how rapidly camphor is absorbed and how quickly seizures can occur."
     },
     {
       "type": "heading",
@@ -61,7 +93,7 @@
     },
     {
       "type": "text",
-      "text": "Oil of wintergreen and similar concentrated topical liniments/muscle rubs contain methyl salicylate at a concentration far higher than aspirin tablets — under a teaspoon (roughly 4-5 mL) has been fatal in a toddler, an amount that looks trivial to a caregiver. Treat clinically as a severe salicylate/aspirin overdose (tachypnea, metabolic acidosis with respiratory alkalosis, tinnitus in an older child, altered mental status) but recognize the MUCH smaller volume required to reach a lethal dose compared to swallowed aspirin tablets. Management follows standard salicylate toxicity principles — alkalinization, correcting volume/electrolyte status, and involving toxicology/nephrology early for possible hemodialysis in severe cases."
+      "text": "Oil of wintergreen and similar concentrated topical liniments/muscle rubs contain methyl salicylate at a concentration far higher than aspirin tablets — under a teaspoon (roughly 4-5 mL) has been fatal in a toddler, an amount that looks trivial to a caregiver.\n\nTreat clinically as a severe salicylate/aspirin overdose (tachypnea, metabolic acidosis with respiratory alkalosis, tinnitus in an older child, altered mental status) but recognize the MUCH smaller volume required to reach a lethal dose compared to swallowed aspirin tablets.\n\nManagement follows standard salicylate toxicity principles — alkalinization, correcting volume/electrolyte status, and involving toxicology/nephrology early for possible hemodialysis in severe cases."
     },
     {
       "type": "heading",
@@ -70,7 +102,7 @@
     },
     {
       "type": "text",
-      "text": "A single adult tablet of chloroquine (or related antimalarials) can produce lethal cardiac dysfunction (QRS widening, ventricular dysrhythmia, hypotension) and seizures in a small child — onset can be rapid, sometimes within an hour. This is one of the more dramatic examples of how a routine adult prescription medication can be catastrophic in toddler-sized doses. Management is largely supportive and follows sodium-channel-blocker-toxicity principles (sodium bicarbonate for QRS widening, benzodiazepines for seizures, aggressive hemodynamic support) — involve toxicology/poison control early given how rapidly deterioration can occur and the relative rarity of this specific exposure."
+      "text": "A single adult tablet of chloroquine (or related antimalarials) can produce lethal cardiac dysfunction (QRS widening, ventricular dysrhythmia, hypotension) and seizures in a small child — onset can be rapid, sometimes within an hour.\n\nThis is one of the more dramatic examples of how a routine adult prescription medication can be catastrophic in toddler-sized doses.\n\nManagement is largely supportive and follows sodium-channel-blocker-toxicity principles:\n- sodium bicarbonate for QRS widening\n- benzodiazepines for seizures\n- aggressive hemodynamic support\n\nInvolve toxicology/poison control early given how rapidly deterioration can occur and the relative rarity of this specific exposure."
     },
     {
       "type": "heading",

@@ -3,13 +3,36 @@
   "section": "Peds Module",
   "category": "Neonatology",
   "title": "Neonatal Hypoglycemia — Screening & Management",
-  "settingEmphasis": ["ed", "icu"],
-  "audience": ["neonate"],
-  "aliases": ["newborn low blood sugar", "neonatal glucose screening", "dextrose gel newborn"],
-  "tags": ["neonatal hypoglycemia", "dextrose gel", "newborn glucose", "at-risk newborn", "neonatology", "ED", "ICU"],
-  "keywords": ["screening thresholds and timing genuinely vary across major guidelines, AAP/BAPM/PES don't all agree on the exact number, know your institution's chosen threshold rather than assuming one universal cutoff", "targeted screening of at-risk newborns, not every newborn, the at-risk groups are infant of a diabetic mother, large or small for gestational age, late preterm, and perinatally stressed", "40 percent oral dextrose gel is now first-line for an asymptomatic or mildly symptomatic at-risk newborn with a low glucose, it reduces the need for IV dextrose and NICU admission in selected cases", "a SYMPTOMATIC hypoglycemic newborn — jitteriness, poor feeding, lethargy, seizure, apnea — gets treated immediately and more aggressively regardless of the exact number, symptoms change the calculus", "this is the general newborn screening and management protocol, for the infant-of-a-diabetic-mother-specific mechanism and macrosomia/lung-maturation context, see that dedicated module"],
+  "settingEmphasis": [
+    "ed",
+    "icu"
+  ],
+  "audience": [
+    "neonate"
+  ],
+  "aliases": [
+    "newborn low blood sugar",
+    "neonatal glucose screening",
+    "dextrose gel newborn"
+  ],
+  "tags": [
+    "neonatal hypoglycemia",
+    "dextrose gel",
+    "newborn glucose",
+    "at-risk newborn",
+    "neonatology",
+    "ED",
+    "ICU"
+  ],
+  "keywords": [
+    "screening thresholds and timing genuinely vary across major guidelines, AAP/BAPM/PES don't all agree on the exact number, know your institution's chosen threshold rather than assuming one universal cutoff",
+    "targeted screening of at-risk newborns, not every newborn, the at-risk groups are infant of a diabetic mother, large or small for gestational age, late preterm, and perinatally stressed",
+    "40 percent oral dextrose gel is now first-line for an asymptomatic or mildly symptomatic at-risk newborn with a low glucose, it reduces the need for IV dextrose and NICU admission in selected cases",
+    "a SYMPTOMATIC hypoglycemic newborn — jitteriness, poor feeding, lethargy, seizure, apnea — gets treated immediately and more aggressively regardless of the exact number, symptoms change the calculus",
+    "this is the general newborn screening and management protocol, for the infant-of-a-diabetic-mother-specific mechanism and macrosomia/lung-maturation context, see that dedicated module"
+  ],
   "contentType": "peds-tool",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": 1,
@@ -19,12 +42,23 @@
     "Harris DL, et al. Dextrose Gel for Neonatal Hypoglycaemia (the Sugar Babies Study): a randomised, double-blind, placebo-controlled trial. Lancet. 2013;382(9910):2077-2083."
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-15", "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). The existing infant-of-diabetic-mother module covers neonatal hypoglycemia specifically in that IDM context; this is the general at-risk-newborn screening/management protocol applicable to every risk category, cross-referenced rather than duplicated." }
+    {
+      "version": 1,
+      "date": "2026-09-15",
+      "change": "Initial entry — a genuine content gap (Content audit 2026-09-15, fresh-look Batch 7). The existing infant-of-diabetic-mother module covers neonatal hypoglycemia specifically in that IDM context; this is the general at-risk-newborn screening/management protocol applicable to every risk category, cross-referenced rather than duplicated."
+    },
+    {
+      "version": 2,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    }
   ],
   "kind": "reference",
   "purpose": "General screening and stepwise management of neonatal hypoglycemia in at-risk newborns — targeted screening, symptom-driven urgency, and dextrose gel as first-line for the asymptomatic/mildly symptomatic case.",
   "ageRange": "Newborns, primarily the first 24-48 hours of life (the period of physiologic glucose nadir/transition).",
-  "sourceOfTruth": ["infant-of-diabetic-mother"],
+  "sourceOfTruth": [
+    "infant-of-diabetic-mother"
+  ],
   "body": [
     {
       "type": "callout",
@@ -81,7 +115,7 @@
     },
     {
       "type": "text",
-      "text": "The physiologic glucose nadir in the first hours of life, the balance between avoiding unnecessary intervention in a normal transitional process versus avoiding missed treatment of clinically significant hypoglycemia, and differing evidence interpretations across guideline bodies all contribute to the lack of a single universal number. What IS consistent across guidelines: targeted screening of at-risk infants, immediate treatment of symptomatic hypoglycemia regardless of the exact number, and dextrose gel as a now widely-endorsed first-line therapy for the well-appearing at-risk infant with a low but asymptomatic reading."
+      "text": "- the physiologic glucose nadir in the first hours of life\n- the balance between avoiding unnecessary intervention in a normal transitional process versus avoiding missed treatment of clinically significant hypoglycemia\n- differing evidence interpretations across guideline bodies\n\nAll contribute to the lack of a single universal number.\n\nWhat IS consistent across guidelines:\n- targeted screening of at-risk infants\n- immediate treatment of symptomatic hypoglycemia regardless of the exact number\n- dextrose gel as a now widely-endorsed first-line therapy for the well-appearing at-risk infant with a low but asymptomatic reading"
     }
   ],
   "buildNote": "peds-tool with kind=reference and sourceOfTruth pointing to infant-of-diabetic-mother for that specific mechanism/context, avoiding duplication — this module is the general at-risk-newborn protocol applicable across all risk categories (IDM, LGA/SGA, late preterm, perinatal stress). Deliberately avoided stating a single numeric glucose threshold, since WebSearch confirmed genuine, persistent disagreement across AAP/BAPM/PES and other major guideline bodies on the exact number and screening timing — presenting a fabricated single 'correct' threshold would be worse than presenting the shared principles and directing to institutional protocol. Dextrose-gel-as-first-line and the targeted-screening approach WebSearch-verified against the 2026 J Clin Med systematic review and the original Sugar Babies trial (Lancet 2013). peds-tool schema has no related[] field."

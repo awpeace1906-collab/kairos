@@ -53,7 +53,7 @@
     "team brief before intubation"
   ],
   "contentType": "reference",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-03",
   "next_review_due": "2026-12-03",
   "review_tier": 1,
@@ -77,6 +77,11 @@
       "version": 1,
       "date": "2026-09-03",
       "change": "Initial entry — converted from the CV Difficult Airway guide. The anatomically/procedurally difficult airway and the failed-airway algorithm (DAS 2025 Plans A-D, the Vortex, eFONA technique, human factors). Companion to the physiologically-difficult-airway module."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-25",
+      "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
     }
   ],
   "summary": "Once Plan A fails, the outcome depends on which of three states you are in — tube in, or failed-but-oxygenating, or can't-intubate-can't-oxygenate — not on trying the same thing harder. DAS 2025 keeps a linear A→B→C→D structure and, new for 2025, puts the supraglottic airway ahead of face mask as Plan B. The lethal errors are behavioral: perseveration on a failed technique, not saying the words 'this is a CICO emergency', and reluctance to cut.",
@@ -132,7 +137,7 @@
     },
     {
       "type": "text",
-      "text": "The best time to identify a difficult airway is before induction. The MACOCHA score (0-12) was built for the ICU: Mallampati III/IV (5), OSA (2), reduced cervical-spine mobility (1), mouth opening < 3 cm (1), coma/GCS < 8 (1), SpO₂ < 80% (1), non-anesthesiologist operator (1). A score ≥ 3 predicts a difficult intubation — verbalise it and prepare for it. But anticipation is imperfect: in the ID-ACCT cohort 16% of ICU patients had a known difficult airway and only 29% of those were clearly identifiable at the bedside. If MACOCHA is high and CICO risk is high, consider an awake technique."
+      "text": "The best time to identify a difficult airway is before induction.\n\nThe MACOCHA score (0-12) was built for the ICU:\n- Mallampati III/IV (5)\n- OSA (2)\n- reduced cervical-spine mobility (1)\n- mouth opening < 3 cm (1)\n- coma/GCS < 8 (1)\n- SpO₂ < 80% (1)\n- non-anesthesiologist operator (1)\n\nA score ≥ 3 predicts a difficult intubation — verbalise it and prepare for it.\n\nBut anticipation is imperfect: in the ID-ACCT cohort 16% of ICU patients had a known difficult airway and only 29% of those were clearly identifiable at the bedside. If MACOCHA is high and CICO risk is high, consider an awake technique."
     },
     {
       "type": "heading",
@@ -161,7 +166,7 @@
     },
     {
       "type": "text",
-      "text": "First attempt failed, SpO₂ is holding. Before touching the blade again, answer three questions: (1) Can I oxygenate? BVM or SGA — if yes, you have time. (2) Why did it fail? View, tube delivery, secretions? (3) What will I change? Different blade, a bougie, or a different operator."
+      "text": "First attempt failed, SpO₂ is holding. Before touching the blade again, answer three questions:\n1. Can I oxygenate? BVM or SGA — if yes, you have time.\n2. Why did it fail? View, tube delivery, secretions?\n3. What will I change? Different blade, a bougie, or a different operator."
     },
     {
       "type": "callout",
@@ -203,12 +208,12 @@
     },
     {
       "type": "text",
-      "text": "Cannot intubate, cannot oxygenate. Three things happen simultaneously: (1) declare CICO out loud so everyone in the room hears it; (2) confirm or establish full neuromuscular blockade — give rocuronium if not already paralyzed; (3) one final attempt at any untried technique, only if it genuinely has not been tried. If that fails: scalpel to neck, immediately, no more delays."
+      "text": "Cannot intubate, cannot oxygenate. Three things happen simultaneously:\n1. Declare CICO out loud so everyone in the room hears it.\n2. Confirm or establish full neuromuscular blockade — give rocuronium if not already paralyzed.\n3. One final attempt at any untried technique, only if it genuinely has not been tried.\n\nIf that fails: scalpel to neck, immediately, no more delays."
     },
     {
       "type": "callout",
       "tone": "danger",
-      "text": "eFONA — scalpel, bougie, tube (DAS 2025 / CAFG / ASA):\n1. Stabilize the larynx with the non-dominant hand.\n2. Vertical skin incision ~4 cm over the cricothyroid membrane.\n3. Horizontal stab through the cricothyroid membrane.\n4. Turn the scalpel 90°, sharp edge caudal, maintain traction.\n5. Slide the bougie through the incision, feeling for tracheal-ring clicks.\n6. Railroad a 6.0 cuffed ETT over the bougie.\n7. Inflate the cuff, confirm with EtCO₂, secure.\nEquipment: #20 scalpel, bougie, 6.0 cuffed ETT, 10 mL syringe. Scalpel-bougie-tube beats a cannula technique under stress (83% vs 18% rescue oxygenation through thick pretracheal tissue in a porcine model) — it is a definitive airway immediately with fewer failure points."
+      "text": "eFONA — scalpel, bougie, tube (DAS 2025 / CAFG / ASA):\n1. Stabilize the larynx with the non-dominant hand.\n2. Vertical skin incision ~4 cm over the cricothyroid membrane.\n3. Horizontal stab through the cricothyroid membrane.\n4. Turn the scalpel 90°, sharp edge caudal, maintain traction.\n5. Slide the bougie through the incision, feeling for tracheal-ring clicks.\n6. Railroad a 6.0 cuffed ETT over the bougie.\n7. Inflate the cuff, confirm with EtCO₂, secure.\n\nEquipment: #20 scalpel, bougie, 6.0 cuffed ETT, 10 mL syringe.\n\nScalpel-bougie-tube beats a cannula technique under stress (83% vs 18% rescue oxygenation through thick pretracheal tissue in a porcine model) — it is a definitive airway immediately with fewer failure points."
     },
     {
       "type": "heading",
