@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "note": "Shared parity vectors. JS and Swift engines must both pass every case. 'expect' fields are checked only when present.",
+  "version": 2,
+  "note": "Shared parity vectors. JS and Swift engines must both pass every case. 'expect' fields are checked only when present. v2 (2026-09-26): pediatric bands switched to the AHA/ACCF/HRS 2009 Part III table with adult limits from 16 years; eight age-band cases added.",
   "cases": [
     { "name": "PRT: standard printout, borderline LAD, borderline QRS-T",
       "input": { "mode": "prt", "prt": { "text": "P-R-T axes 54 -42 38" } },
@@ -79,6 +79,30 @@
     { "name": "Precise: all six leads => -120", "input": { "mode": "amplitudes", "amplitudes": { "I": -5, "II": -10, "III": -5, "aVR": 7.5, "aVL": 0, "aVF": -7.5 } }, "expect": { "qrsAxis": -120, "qrsKey": "extreme", "warningsExclude": ["einthoven_mismatch", "goldberger_mismatch"] } },
     { "name": "Precise: Einthoven mismatch warns", "input": { "mode": "amplitudes", "amplitudes": { "I": 5, "II": 8, "III": 6 } }, "expect": { "status": "ok", "warningsInclude": ["einthoven_mismatch"] } },
     { "name": "Precise: all zero => indeterminate", "input": { "mode": "amplitudes", "amplitudes": { "I": 0, "aVF": 0 } }, "expect": { "status": "indeterminate" } },
-    { "name": "Precise: one lead only", "input": { "mode": "amplitudes", "amplitudes": { "I": 5 } }, "expect": { "status": "need_two_leads" } }
+    { "name": "Precise: one lead only", "input": { "mode": "amplitudes", "amplitudes": { "I": 5 } }, "expect": { "status": "need_two_leads" } },
+    { "name": "Peds: 20 days, +185 normal for age (AHA neonate +30 to +190)",
+      "input": { "mode": "prt", "prt": { "qrs": 185 }, "ageDays": 20 },
+      "expect": { "qrsKey": "normal_for_age" } },
+    { "name": "Peds: 4 years, +110 rightward for age (AHA 1-5 y +5 to +100)",
+      "input": { "mode": "prt", "prt": { "qrs": 110 }, "ageDays": 1460 },
+      "expect": { "qrsKey": "rightward_for_age" } },
+    { "name": "Peds: 6 years, +130 normal for age (AHA 5-8 y 0 to +140)",
+      "input": { "mode": "prt", "prt": { "qrs": 130 }, "ageDays": 2190 },
+      "expect": { "qrsKey": "normal_for_age" } },
+    { "name": "Peds: 10 years, +10 normal for age (AHA 8-16 y lower limit 0)",
+      "input": { "mode": "prt", "prt": { "qrs": 10 }, "ageDays": 3650 },
+      "expect": { "qrsKey": "normal_for_age" } },
+    { "name": "Peds: 10 years, -10 leftward for age",
+      "input": { "mode": "prt", "prt": { "qrs": -10 }, "ageDays": 3650 },
+      "expect": { "qrsKey": "leftward_for_age" } },
+    { "name": "Peds: 15 years, +110 normal for age",
+      "input": { "mode": "prt", "prt": { "qrs": 110 }, "ageDays": 5475 },
+      "expect": { "qrsKey": "normal_for_age" } },
+    { "name": "Age 16 years uses adult limits: +110 is RAD",
+      "input": { "mode": "prt", "prt": { "qrs": 110 }, "ageDays": 5840 },
+      "expect": { "qrsKey": "rad" } },
+    { "name": "Age 17 years uses adult limits: +100 is RAD",
+      "input": { "mode": "prt", "prt": { "qrs": 100 }, "ageDays": 6205 },
+      "expect": { "qrsKey": "rad" } }
   ]
 }

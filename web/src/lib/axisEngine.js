@@ -56,14 +56,16 @@ function classifyQrsAdult(q) {
   return { key: 'extreme', severity: 'abnormal' };
 }
 
-// Pediatric normal ranges by age (LITFL pediatric stepwise approach;
-// birth value from LITFL axis page). Upper age cutoff is an OPEN ITEM.
+// Pediatric normal ranges by age: AHA/ACCF/HRS 2009 Part III, Table (Mean
+// Frontal Plane Axis). Adult limits apply from 16 years, matching the same
+// document's 16-year cutoff for LPFB and QRS duration. The document's text
+// gives 10-110 for ages 1-5; the table (used here) gives 5-100.
 const PEDS_BANDS = [
-  { id: 'birth_1w',  maxDays: 7,        lo: 30, hi: 190 },
-  { id: '1w_1m',     maxDays: 30,       lo: 30, hi: 180 },
-  { id: '1m_3m',     maxDays: 91,       lo: 10, hi: 125 },
-  { id: '3m_3y',     maxDays: 1095,     lo: 10, hi: 110 },
-  { id: '3y_18y',    maxDays: 18 * 365, lo: 20, hi: 120 },
+  { id: 'neonate',  maxDays: 30,       lo: 30, hi: 190 },
+  { id: '1m_1y',    maxDays: 365,      lo: 10, hi: 120 },
+  { id: '1y_5y',    maxDays: 5 * 365,  lo: 5,  hi: 100 },
+  { id: '5y_8y',    maxDays: 8 * 365,  lo: 0,  hi: 140 },
+  { id: '8y_16y',   maxDays: 16 * 365, lo: 0,  hi: 120 },
 ];
 
 function pedsBand(ageDays) {

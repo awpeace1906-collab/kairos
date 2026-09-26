@@ -12,12 +12,12 @@ append-only chronological record; trust it over any summary above it for
 "what happened when."
 
 ## ▶ NEXT SESSION — start here (updated 2026-09-26)
-State: **441 modules**, pipeline green (validate 441/0, test 355/0), iOS unit
+State: **441 modules**, pipeline green (validate 441/0, test 363/0), iOS unit
 tests 27/27 and UI tests green, all three CI workflows green. Latest work: EKG
 Axis Interpreter (first `engine: "builtin"` calculator), structured prose and
 phone-safe tables, Gray's plate overlays, pericardiocentesis angle set to
-about 30°. Remaining EKG axis items (peds upper age cutoff, sex-specific
-QRS-T cutoffs, ± on a real iPhone) are under "Design decisions open".
+about 30°. Remaining EKG axis items (sex-specific QRS-T cutoffs, ± on a
+real iPhone) are under "Design decisions open".
 
 Older state note (2026-09-23), kept for history — **431 modules**, pipeline green (validate 431/0, build/sync/test
 281/0), iOS `TEST SUCCEEDED` (10/10 EngineTests). The original 2026-09-14
@@ -2531,9 +2531,13 @@ concentrations` would naturally fit there but is filed elsewhere.
 
 ### Design decisions open
 - [ ] **EKG Axis Interpreter — open items from the handoff (not blockers):**
-  - **Peds upper age cutoff:** the engine uses the >3 years band (+20° to
-    +120°) until age 18; ECGpedia uses different bands (e.g. 8–16 y: 0° to
-    +120°). Pick one source.
+  - ~~**Peds upper age cutoff**~~ — done 2026-09-26. User chose the
+    AHA/ACCF/HRS 2009 Part III table (neonate +30–190, 1 mo–1 y +10–120,
+    1–5 y +5–100, 5–8 y 0–140, 8–16 y 0–120) with adult limits from 16 y;
+    ECGpedia's bands turned out to be this same table. Both engines and the
+    golden vectors (now 54) updated. The Rijnbeek 2001 primary data could not
+    be read (publisher bot wall). Note the AHA text says 10–110 for 1–5 y
+    while its table says 5–100; the table is used.
   - **QRS-T cutoffs** (<45 / 45–90 / >90) are approximate; the true NHANES
     limits are sex-specific. Consider adding a sex input.
   - ~~Verify the Finnish QRS-T cohort citation~~ — done 2026-09-26 (Aro 2012,

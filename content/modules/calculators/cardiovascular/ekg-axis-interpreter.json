@@ -54,14 +54,14 @@
     "dextrocardia"
   ],
   "contentType": "calculator",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-26",
   "next_review_due": "2026-12-26",
   "review_tier": 1,
   "sources": [
     "Cadogan M, Buttner R. ECG Axis Interpretation. Life in the Fast Lane (LITFL), updated Nov 2024. https://litfl.com/ecg-axis-interpretation/ (adult bands, methods, differentials, birth axis range)",
-    "LITFL. Paediatric ECG: stepwise approach. https://litfl.com/paediatric-ecg-stepwise-approach/ (pediatric normal ranges by age; northwest axis at birth)",
-    "Surawicz B, et al. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram, Part III: intraventricular conduction disturbances. J Am Coll Cardiol. 2009;53(11):976-981. doi:10.1016/j.jacc.2008.12.013 (LAFB and LPFB criteria)",
+    "LITFL. Paediatric ECG: stepwise approach. https://litfl.com/paediatric-ecg-stepwise-approach/ (northwest axis at birth)",
+    "Surawicz B, et al. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram, Part III: intraventricular conduction disturbances. J Am Coll Cardiol. 2009;53(11):976-981. doi:10.1016/j.jacc.2008.12.013 (LAFB and LPFB criteria; pediatric QRS axis ranges by age, adult limits from 16 years)",
     "Aro AL, Huikuri HV, Tikkanen JT, et al. QRS-T angle as a predictor of sudden cardiac death in a middle-aged general population. Europace. 2012;14(6):872-876 (QRS-T angle ≥100° and arrhythmic death, driven mainly by abnormal T axis)",
     "Walsh JA 3rd, et al. Prognostic value of frontal QRS-T angle in patients without clinical evidence of cardiovascular disease (from the Multi-Ethnic Study of Atherosclerosis). Am J Cardiol. 2013;112:1880-1884 (approximate QRS-T angle bands)",
     "Otake S, et al. Clinical utility of the electrocardiographic P-wave axis in patients with chronic obstructive pulmonary disease. Respiration. 2022;101(4):345-352 (P axis >75° definition and COPD association)",
@@ -77,6 +77,11 @@
       "version": 2,
       "date": "2026-09-26",
       "change": "LPFB checklist matched to the AHA/ACCF/HRS 2009 Part III text: four criteria, with the children-up-to-16 axis caveat. \"Other causes of RAD excluded\" moved from the criteria to the caveat and credited to LITFL, since the 2009 document does not list it. LAFB checked and unchanged. 3-Lead help now explains that I+, II−, aVF− is pathological left axis deviation even though the result shows a range across the borderline and marked bands."
+    },
+    {
+      "version": 3,
+      "date": "2026-09-26",
+      "change": "Pediatric QRS axis ranges switched from the LITFL bands to the AHA/ACCF/HRS 2009 Part III table (neonate +30° to +190°, 1 month–1 year +10° to +120°, 1–5 years +5° to +100°, 5–8 years 0° to +140°, 8–16 years 0° to +120°), with adult limits from 16 years instead of 18. Resolves the open upper-age-cutoff item. The document's text gives +10° to +110° for ages 1–5; the table value is used. Eight golden vectors added; both engines pass."
     }
   ],
   "engine": "builtin",
@@ -359,27 +364,27 @@
     "peds": {
       "bands": [
         {
-          "age": "Birth–1 week",
+          "age": "Birth–1 month",
           "range": "+30° to +190°"
         },
         {
-          "age": "1 week–1 month",
-          "range": "+30° to +180°"
+          "age": "1 month–1 year",
+          "range": "+10° to +120°"
         },
         {
-          "age": "1–3 months",
-          "range": "+10° to +125°"
+          "age": "1–5 years",
+          "range": "+5° to +100°"
         },
         {
-          "age": "3 months–3 years",
-          "range": "+10° to +110°"
+          "age": "5–8 years",
+          "range": "0° to +140°"
         },
         {
-          "age": "3–18 years",
-          "range": "+20° to +120°"
+          "age": "8–16 years",
+          "range": "0° to +120°"
         }
       ],
-      "note": "Rightward axis is normal at birth (RV dominance) and moves leftward with age."
+      "note": "Rightward axis is normal at birth (RV dominance) and moves leftward with age. Ranges are from the AHA/ACCF/HRS 2009 table; adult limits apply from 16 years."
     },
     "clinicalTakeaway": "Axis is a clue, not a diagnosis. A new shift compared with a prior ECG matters more than the absolute number. Before acting on right or extreme axis, rule out limb lead reversal. A wide QRS-T angle in a narrow-complex, unpaced ECG is a risk marker worth noting.",
     "whyThisMatters": "Axis deviation narrows the differential fast: fascicular blocks, RV strain, hyperkalemia, sodium-channel toxicity, and ventricular rhythms all declare themselves here. The P and T axes the machine already prints add lead-reversal detection and repolarization risk for free."

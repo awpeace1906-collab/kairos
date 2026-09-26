@@ -166,8 +166,8 @@
       "next_review_due": "2026-12-15"
     },
     "calculators/cardiovascular/ekg-axis-interpreter": {
-      "content_version": 2,
-      "hash": "d3ede3c5dcf3191c",
+      "content_version": 3,
+      "hash": "bf47f83e79ffed8b",
       "path": "modules/calculators/cardiovascular/ekg-axis-interpreter.json",
       "contentType": "calculator",
       "section": "Calculators",

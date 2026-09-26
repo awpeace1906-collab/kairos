@@ -43,12 +43,13 @@ public enum AxisEngine {
     // MARK: Classification
 
     public struct PedsBand: Equatable { public let id: String; public let maxDays: Double; public let lo: Double; public let hi: Double }
+    // AHA/ACCF/HRS 2009 Part III table; adult limits from 16 years (see axisEngine.js).
     public static let pedsBands: [PedsBand] = [
-        PedsBand(id: "birth_1w", maxDays: 7,        lo: 30, hi: 190),
-        PedsBand(id: "1w_1m",    maxDays: 30,       lo: 30, hi: 180),
-        PedsBand(id: "1m_3m",    maxDays: 91,       lo: 10, hi: 125),
-        PedsBand(id: "3m_3y",    maxDays: 1095,     lo: 10, hi: 110),
-        PedsBand(id: "3y_18y",   maxDays: 18 * 365, lo: 20, hi: 120),
+        PedsBand(id: "neonate",  maxDays: 30,       lo: 30, hi: 190),
+        PedsBand(id: "1m_1y",    maxDays: 365,      lo: 10, hi: 120),
+        PedsBand(id: "1y_5y",    maxDays: 5 * 365,  lo: 5,  hi: 100),
+        PedsBand(id: "5y_8y",    maxDays: 8 * 365,  lo: 0,  hi: 140),
+        PedsBand(id: "8y_16y",   maxDays: 16 * 365, lo: 0,  hi: 120),
     ]
 
     public struct Classification: Equatable {
