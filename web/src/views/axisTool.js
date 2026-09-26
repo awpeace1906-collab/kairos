@@ -70,7 +70,7 @@ export function renderAxisTool(mod, route) {
     // iPhone decimal keypads have no minus key, so this button is the only way
     // to go negative. While the field has focus, handle the tap at touchend and
     // cancel it: that keeps focus in the field (no keypad drop and bounce) and
-    // suppresses the follow-up click. Pointerdown is cancelled for mouse and
+    // suppresses the follow-up click. Pointerdown is canceled for mouse and
     // Android, which blur on the compatibility mousedown instead.
     const flip = el("button", {
       type: "button", class: "axis-sign", "aria-label": `Toggle sign of ${label}`,
