@@ -165,6 +165,15 @@
       "review_tier": 1,
       "next_review_due": "2026-12-15"
     },
+    "calculators/cardiovascular/ekg-axis-interpreter": {
+      "content_version": 1,
+      "hash": "2fabad5782440060",
+      "path": "modules/calculators/cardiovascular/ekg-axis-interpreter.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-26"
+    },
     "calculators/cardiovascular/grace-acs": {
       "content_version": 2,
       "hash": "9938663da2ea5d3d",

@@ -9,6 +9,8 @@ import { zoneForWeight, estimateWeight, doseFromRule } from "../web/src/lib/weig
 import { makeSearch } from "../web/src/lib/search.js";
 import { parseRichText, isStructured, leadLabel, tableColumnWeights, shouldStackTable } from "../web/src/lib/richText.js";
 import { loadModules, loadConfig } from "./lib/content.mjs";
+import { interpret as axisInterpret } from "../web/src/lib/axisEngine.js";
+import { readFileSync } from "node:fs";
 
 let pass = 0;
 let fail = 0;
@@ -268,6 +270,37 @@ for (const m of mods) {
   eq("table: short two-column table stays a table", shouldStackTable(["Drug", "Dose"], [["Ketamine", "1-2 mg/kg"]]), false);
   eq("table: label + paragraph table stacks", shouldStackTable(["Etiology", "Recognition"], [["Tension pneumothorax", "Mediastinal shift impairs venous return. Absent breath sounds, tracheal deviation."]]), true);
   ok("table: a column is at least as wide as its longest word", t[0] >= 0.4, `got ${t[0].toFixed(3)}`);
+}
+
+// ------------------------------------------ EKG axis engine (golden vectors)
+// The same file ios/Tests (AxisEngineParityTests) runs against the Swift port.
+{
+  const { cases } = JSON.parse(readFileSync(new URL("./fixtures/axis-golden-vectors.json", import.meta.url)));
+  const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+  for (const c of cases) {
+    const r = axisInterpret(c.input);
+    const e = c.expect;
+    const errs = [];
+    const chk = (k, got, want) => { if (!same(got, want)) errs.push(`${k}: got ${JSON.stringify(got)}, want ${JSON.stringify(want)}`); };
+    if ("status" in e) chk("status", r.status, e.status);
+    if ("error" in e) chk("error", r.error, e.error);
+    if ("qrsAxis" in e) chk("qrsAxis", r.qrs?.axis, e.qrsAxis);
+    if ("qrsKey" in e) chk("qrsKey", r.qrs?.class?.key, e.qrsKey);
+    if ("pAxis" in e) chk("pAxis", r.p?.axis, e.pAxis);
+    if ("pKey" in e) chk("pKey", r.p?.class?.key, e.pKey);
+    if ("tAxis" in e) chk("tAxis", r.t?.axis, e.tAxis);
+    if ("tKey" in e) chk("tKey", r.t?.class?.key, e.tKey);
+    if ("qrsTAngle" in e) chk("qrsTAngle", r.qrsT?.angle, e.qrsTAngle);
+    if ("qrsTKey" in e) chk("qrsTKey", r.qrsT?.key, e.qrsTKey);
+    if ("range" in e) chk("range", r.qrs?.range, e.range);
+    if ("differential" in e) chk("differential", r.differential ?? null, e.differential);
+    if ("flagsExact" in e) chk("flagsExact", [...r.flags].sort(), [...e.flagsExact].sort());
+    for (const f of e.flagsInclude || []) if (!r.flags.includes(f)) errs.push(`missing flag ${f}`);
+    for (const f of e.flagsExclude || []) if (r.flags.includes(f)) errs.push(`unexpected flag ${f}`);
+    for (const w of e.warningsInclude || []) if (!r.warnings.includes(w)) errs.push(`missing warning ${w}`);
+    for (const w of e.warningsExclude || []) if (r.warnings.includes(w)) errs.push(`unexpected warning ${w}`);
+    ok(`axis: ${c.name}`, !errs.length, errs.join("; "));
+  }
 }
 
 // ---------------------------------------------------------------- report

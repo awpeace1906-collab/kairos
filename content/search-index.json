@@ -530,6 +530,61 @@
       ]
     },
     {
+      "id": "ekg-axis-interpreter",
+      "title": "EKG Axis Interpreter",
+      "section": "Calculators",
+      "category": "Cardiovascular / Chest Pain / Arrhythmia",
+      "tags": [
+        "axis deviation",
+        "left axis deviation",
+        "right axis deviation",
+        "QRS-T angle",
+        "fascicular block",
+        "lead reversal",
+        "ECG",
+        "arrhythmia"
+      ],
+      "keywords": [
+        "axis",
+        "ekg axis",
+        "ecg axis",
+        "qrs axis",
+        "axis deviation",
+        "left axis deviation",
+        "right axis deviation",
+        "LAD",
+        "RAD",
+        "northwest axis",
+        "extreme axis",
+        "P-R-T",
+        "PRT axes",
+        "P axis",
+        "T axis",
+        "QRS-T angle",
+        "hexaxial",
+        "LAFB",
+        "LPFB",
+        "fascicular block",
+        "lead reversal",
+        "dextrocardia",
+        "ECG axis",
+        "EKG axis",
+        "QRS axis",
+        "P-R-T axes"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/cardiovascular-chest-pain-arrhythmia/ekg-axis-interpreter",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or"
+      ],
+      "audience": [
+        "adult",
+        "peds"
+      ]
+    },
+    {
       "id": "grace-acs",
       "title": "GRACE ACS Risk / Mortality Calculator",
       "section": "Calculators",

@@ -270,8 +270,12 @@ struct Calculator: Codable {
     let interpretation: [Band]
     let plot: Plot?
     let buildNote: String?
+    /// engine == .builtin only: which code-backed tool renders this module.
+    let tool: String?
+    /// engine == .builtin, tool == "ekg-axis": every string the axis tool shows.
+    let axisContent: AxisToolContent?
 
-    enum Engine: String, Codable { case additive, formula, classification, external }
+    enum Engine: String, Codable { case additive, formula, classification, external, builtin }
 
     /// Optional 2-D plot (e.g. a treatment nomogram) rendered next to the result.
     /// Curve expressions use the free variable `x`; the marker is read from the
@@ -362,12 +366,73 @@ struct Calculator: Codable {
         interpretation = try c.decode([Band].self, forKey: .interpretation)
         plot = try c.decodeIfPresent(Plot.self, forKey: .plot)
         buildNote = try c.decodeIfPresent(String.self, forKey: .buildNote)
+        tool = try c.decodeIfPresent(String.self, forKey: .tool)
+        axisContent = tool == "ekg-axis" ? try c.decodeIfPresent(AxisToolContent.self, forKey: .toolContent) : nil
     }
     func encode(to encoder: Encoder) throws { /* read-only in the app */ }
 
     private enum CodingKeys: String, CodingKey {
-        case engine, settings, purpose, notes, inputs, items, formulas, tiers, interpretation, plot, buildNote
+        case engine, settings, purpose, notes, inputs, items, formulas, tiers, interpretation, plot, buildNote, tool, toolContent
     }
+}
+
+/// Copy for the EKG axis tool (calculator.schema.json#/$defs/ekgAxisContent).
+/// The engine (Calc/AxisEngine.swift) returns keys; these maps turn them into text.
+struct AxisToolContent: Codable, Hashable {
+    struct Mode: Codable, Hashable, Identifiable {
+        let id: String
+        let engineMode: String?
+        let `default`: Bool?
+        let label: String
+        let help: String
+        let leads: [String]?
+    }
+    struct Modifier: Codable, Hashable, Identifiable { let id: String; let label: String }
+    struct Category: Codable, Hashable { let label: String; let range: String?; let detail: String? }
+    struct Flag: Codable, Hashable { let level: String; let text: String; let checklist: String? }
+    struct Checklist: Codable, Hashable { let title: String; let items: [String]; let caveat: String? }
+    struct Status: Codable, Hashable {
+        let inconsistent: String?
+        let ambiguous: String?
+        let indeterminate: String?
+        let needTwoLeads: String?
+        let noInput: String?
+        let errors: [String: String]
+        enum CodingKeys: String, CodingKey {
+            case inconsistent, ambiguous, indeterminate, errors
+            case needTwoLeads = "need_two_leads", noInput = "no_input"
+        }
+        func message(_ status: String) -> String? {
+            switch status {
+            case "inconsistent": return inconsistent
+            case "ambiguous": return ambiguous
+            case "indeterminate": return indeterminate
+            case "need_two_leads": return needTwoLeads
+            case "no_input": return noInput
+            default: return errors[status]
+            }
+        }
+    }
+    struct Peds: Codable, Hashable {
+        struct Band: Codable, Hashable { let age: String; let range: String }
+        let bands: [Band]
+        let note: String
+    }
+
+    let modes: [Mode]
+    let modifiers: [Modifier]
+    let qrsCategories: [String: Category]
+    let pCategories: [String: Category]
+    let tCategories: [String: Category]
+    let qrsTCategories: [String: Category]
+    let flags: [String: Flag]
+    let warnings: [String: String]
+    let statusMessages: Status
+    let checklists: [String: Checklist]
+    let differentials: [String: [String]]
+    let peds: Peds
+    let clinicalTakeaway: String
+    let whyThisMatters: String
 }
 
 // MARK: - Drug card

@@ -657,3 +657,85 @@ figure.diagram--plate .diagram-caption { color: #55524c; }
 figure.diagram--plate .diagram-svg--plate { overflow: hidden; border-radius: 6px; }
 figure.diagram .diagram-credit { margin: 6px 0 0; font-size: 0.74rem; line-height: 1.4; color: var(--muted); font-style: italic; }
 figure.diagram--plate .diagram-credit { color: #6b6862; }
+
+/* ---- EKG axis interpreter (views/axisTool.js) ------------------------------ */
+.band.sev-info { border-color: var(--line); }
+.axis-modes { display: flex; gap: 6px; overflow-x: auto; padding: 2px 0 8px; margin: 6px 0 4px; scrollbar-width: none; }
+.axis-modes::-webkit-scrollbar { display: none; }
+.axis-mode, .axis-seg-btn, .axis-chip, .axis-sign, .axis-jump {
+  font: inherit; color: var(--text); background: var(--surface-2);
+  border: 1px solid var(--line); border-radius: 999px; cursor: pointer;
+}
+.axis-mode { flex: none; padding: 7px 12px; font-size: .88rem; white-space: nowrap; }
+.axis-mode.selected, .axis-seg-btn.selected, .axis-chip.selected {
+  background: var(--accent); border-color: var(--accent); color: #fff;
+}
+.axis-mode:focus-visible, .axis-seg-btn:focus-visible, .axis-chip:focus-visible, .axis-sign:focus-visible, .axis-jump:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px;
+}
+.axis-panel .help { margin: 4px 0 10px; color: var(--muted); font-size: .9rem; }
+.axis-paste { width: 100%; box-sizing: border-box; font: inherit; font-family: var(--font-mono); font-size: .95rem;
+  padding: 11px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--text); margin-bottom: 10px; }
+.axis-prt-fields, .axis-amps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.axis-amps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.axis-field { display: flex; flex-direction: column; gap: 4px; }
+.axis-field-row { display: flex; align-items: center; gap: 4px; min-width: 0; }
+.axis-field-row input { flex: 1; min-width: 0; width: 100%; font: inherit; font-family: var(--font-mono); font-size: 1rem;
+  padding: 9px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--text); }
+.axis-field .unit { color: var(--muted); font-size: .85rem; }
+.axis-sign { flex: none; width: 34px; height: 38px; border-radius: 8px; font-size: 1.05rem; padding: 0; }
+.axis-leads { display: grid; gap: 8px; }
+.axis-lead { display: flex; align-items: center; gap: 10px; }
+.axis-lead-name { width: 36px; font-family: var(--font-mono); font-weight: 600; }
+.axis-seg { display: inline-flex; gap: 4px; flex-wrap: wrap; }
+.axis-seg-btn { padding: 7px 12px; font-size: .88rem; min-width: 44px; }
+.axis-shared { display: grid; gap: 10px; margin: 14px 0 12px; padding-top: 12px; border-top: 1px solid var(--line); }
+.axis-age { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.axis-age-input { display: inline-flex; gap: 6px; align-items: center; }
+.axis-age-input input { width: 64px; font: inherit; padding: 7px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--text); }
+.axis-age-input select { font: inherit; padding: 7px 6px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--text); }
+.axis-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.axis-chip { padding: 5px 11px; font-size: .82rem; }
+.axis-out { display: grid; gap: 8px; }
+.axis-headline { display: grid; gap: 2px; }
+.axis-kicker { font-family: var(--font-mono); font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.axis-value { font-size: 1.9rem; font-variant-numeric: tabular-nums; line-height: 1.1; }
+.axis-cat { font-weight: 600; }
+.axis-sub { font-size: .85rem; }
+.axis-line { display: grid; grid-template-columns: auto auto 1fr; column-gap: 10px; row-gap: 2px; align-items: baseline; }
+.axis-line-label { font-family: var(--font-mono); font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.axis-line strong { font-variant-numeric: tabular-nums; }
+.axis-line-detail { grid-column: 1 / -1; font-size: .86rem; }
+.axis-msg { margin: 0; }
+.axis-flag summary, .axis-diff summary, .axis-why summary { cursor: pointer; }
+.axis-flag ul, .axis-diff ul { margin: 6px 0 4px; padding-left: 18px; }
+.axis-cl-title { margin: 8px 0 0; font-weight: 600; font-size: .9rem; }
+.axis-diff, .axis-why { padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.axis-why { margin-top: 12px; }
+.axis-why .rich, .axis-why > p { margin-top: 6px; }
+.axis-jump { padding: 4px 10px; margin-left: 4px; font-size: .85rem; }
+.axis-wheel { margin: 2px auto; max-width: 300px; width: 100%; }
+.axis-wheel svg { width: 100%; height: auto; display: block; }
+.axis-wheel figcaption { text-align: center; font-size: .78rem; color: var(--muted); display: flex; gap: 10px; justify-content: center; align-items: center; flex-wrap: wrap; }
+.ax-sec { stroke: none; }
+.ax-sec-low { fill: color-mix(in srgb, var(--sev-low) 22%, transparent); }
+.ax-sec-moderate { fill: color-mix(in srgb, var(--sev-moderate) 22%, transparent); }
+.ax-sec-high { fill: color-mix(in srgb, var(--sev-high) 16%, transparent); }
+.ax-sec-critical { fill: color-mix(in srgb, var(--sev-critical) 26%, transparent); }
+.ax-sec-bg { fill: color-mix(in srgb, var(--muted) 8%, transparent); }
+.ax-range { fill: color-mix(in srgb, var(--accent) 22%, transparent); stroke: var(--accent); stroke-width: 1.2; stroke-dasharray: 3 3; }
+.ax-rim { fill: none; stroke: var(--line); stroke-width: 1.5; }
+.ax-spoke { stroke: var(--muted); stroke-width: 1; opacity: .7; }
+.ax-spoke-neg { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 2 3; opacity: .45; }
+.ax-lead { font-family: var(--font-mono); font-size: 11px; font-weight: 600; fill: var(--text); }
+.ax-tick { font-family: var(--font-mono); font-size: 9px; fill: var(--muted); }
+.ax-needle-qrs { stroke: var(--text); stroke-width: 3.5; stroke-linecap: round; }
+.ax-needle-est { stroke-dasharray: 6 4; }
+.ax-needle-head { fill: var(--text); }
+.ax-needle-p { stroke: var(--sev-low); stroke-width: 1.6; stroke-linecap: round; }
+.ax-needle-t { stroke: var(--accent); stroke-width: 2; stroke-dasharray: 5 4; stroke-linecap: round; }
+.ax-hub { fill: var(--text); }
+.ax-key { display: inline-block; width: 18px; height: 0; vertical-align: middle; margin-right: 4px; border-top: 3px solid var(--text); }
+.ax-key-p { border-top: 2px solid var(--sev-low); }
+.ax-key-t { border-top: 2px dashed var(--accent); }
+.ax-key-range { height: 8px; border: 1px dashed var(--accent); background: color-mix(in srgb, var(--accent) 22%, transparent); }

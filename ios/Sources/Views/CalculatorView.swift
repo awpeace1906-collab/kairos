@@ -13,6 +13,15 @@ struct CalculatorView: View {
     }
 
     var body: some View {
+        // Code-backed tools (engine: builtin) have their own view.
+        if calc.engine == .builtin, calc.tool == "ekg-axis", let content = calc.axisContent {
+            AxisToolView(calc: calc, content: content, route: route)
+        } else {
+            standard
+        }
+    }
+
+    private var standard: some View {
         VStack(alignment: .leading, spacing: 16) {
             header
 
@@ -20,6 +29,7 @@ struct CalculatorView: View {
             case .additive:                 additiveItems
             case .formula, .external:       formulaInputs
             case .classification:           classificationTiers
+            case .builtin:                  EmptyView()
             }
 
             ClearFieldsButton {
@@ -173,6 +183,8 @@ struct CalculatorView: View {
             bandCardText("This score has no open formula — structure and cutoff shown above. See build note.", severity: "moderate")
         case .classification:
             Text("Pick the class that matches the exam.").foregroundStyle(.secondary)
+        case .builtin:
+            EmptyView()
         }
     }
 

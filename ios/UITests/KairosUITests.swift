@@ -128,4 +128,41 @@ final class KairosUITests: XCTestCase {
         app.buttons["‹ Back"].firstMatch.tap()
         XCTAssertTrue(app.buttons["tree-choice-hand"].waitForExistence(timeout: 5))
     }
+
+    /// Home → Calculators → EKG Axis Interpreter: Machine (P-R-T) opens by
+    /// default; a pasted machine header fills the fields and reads marked LAD;
+    /// Quadrant I+ / aVF− offers the one-tap jump to 3-Lead.
+    func testAxisToolFlow() {
+        openSection("calculators")
+        let row = app.buttons["row-ekg-axis-interpreter"].firstMatch
+        var tries = 0
+        while !row.exists && tries < 12 { app.swipeUp(); tries += 1 }
+        XCTAssertTrue(row.waitForExistence(timeout: 5))
+        row.tap()
+
+        let machine = app.buttons["axis-mode-prt"].firstMatch
+        XCTAssertTrue(machine.waitForExistence(timeout: 5))
+        XCTAssertTrue(machine.isSelected, "Machine (P-R-T) must be the default mode")
+
+        let paste = app.textFields["axis-paste"].firstMatch
+        paste.tap()
+        paste.typeText("QRS duration 88 ms P-R-T axes 54 -60 40")
+        XCTAssertTrue(text(containing: "Left axis deviation").waitForExistence(timeout: 5))
+        XCTAssertTrue(text(containing: "−60°").exists)
+        let shot1 = XCTAttachment(screenshot: app.screenshot()); shot1.name = "axis-machine"; shot1.lifetime = .keepAlways; add(shot1)
+        app.swipeUp()
+        let shot2 = XCTAttachment(screenshot: app.screenshot()); shot2.name = "axis-machine-lower"; shot2.lifetime = .keepAlways; add(shot2)
+        app.swipeDown(); app.swipeDown()
+
+        app.buttons["axis-mode-quadrant"].firstMatch.tap()
+        app.buttons["Lead I +"].firstMatch.tap()
+        app.buttons["Lead aVF −"].firstMatch.tap()
+        let jump = app.buttons["axis-add-lead-ii"].firstMatch
+        XCTAssertTrue(jump.waitForExistence(timeout: 5))
+        let shot3 = XCTAttachment(screenshot: app.screenshot()); shot3.name = "axis-quadrant"; shot3.lifetime = .keepAlways; add(shot3)
+        jump.tap()
+        XCTAssertTrue(app.buttons["axis-mode-three_lead"].firstMatch.isSelected)
+        app.buttons["Lead II −"].firstMatch.tap()
+        XCTAssertTrue(text(containing: "−89°").waitForExistence(timeout: 5))
+    }
 }

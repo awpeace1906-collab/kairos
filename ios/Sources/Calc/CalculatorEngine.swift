@@ -26,6 +26,8 @@ enum CalculatorEngine {
         case .formula:        return formula(calc, inputs)
         case .classification: return CalcResult(engine: .classification, incomplete: false, bands: calc.interpretation)
         case .external:       return CalcResult(engine: .external, incomplete: true, bands: calc.interpretation, buildNote: calc.buildNote)
+        // Code-backed tools compute in their own view (Views/AxisToolView.swift).
+        case .builtin:        return CalcResult(engine: .builtin, incomplete: true, bands: calc.interpretation)
         }
     }
 

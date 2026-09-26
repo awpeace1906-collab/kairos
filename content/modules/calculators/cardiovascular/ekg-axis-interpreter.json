@@ -1,0 +1,415 @@
+{
+  "id": "ekg-axis-interpreter",
+  "section": "Calculators",
+  "category": "Cardiovascular / Chest Pain / Arrhythmia",
+  "title": "EKG Axis Interpreter",
+  "settingEmphasis": [
+    "ed",
+    "icu",
+    "or"
+  ],
+  "audience": [
+    "adult",
+    "peds"
+  ],
+  "aliases": [
+    "ECG axis",
+    "EKG axis",
+    "QRS axis",
+    "hexaxial",
+    "P-R-T axes"
+  ],
+  "tags": [
+    "axis deviation",
+    "left axis deviation",
+    "right axis deviation",
+    "QRS-T angle",
+    "fascicular block",
+    "lead reversal",
+    "ECG",
+    "arrhythmia"
+  ],
+  "keywords": [
+    "axis",
+    "ekg axis",
+    "ecg axis",
+    "qrs axis",
+    "axis deviation",
+    "left axis deviation",
+    "right axis deviation",
+    "LAD",
+    "RAD",
+    "northwest axis",
+    "extreme axis",
+    "P-R-T",
+    "PRT axes",
+    "P axis",
+    "T axis",
+    "QRS-T angle",
+    "hexaxial",
+    "LAFB",
+    "LPFB",
+    "fascicular block",
+    "lead reversal",
+    "dextrocardia"
+  ],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-26",
+  "next_review_due": "2026-12-26",
+  "review_tier": 1,
+  "sources": [
+    "Cadogan M, Buttner R. ECG Axis Interpretation. Life in the Fast Lane (LITFL), updated Nov 2024. https://litfl.com/ecg-axis-interpretation/ (adult bands, methods, differentials, birth axis range)",
+    "LITFL. Paediatric ECG: stepwise approach. https://litfl.com/paediatric-ecg-stepwise-approach/ (pediatric normal ranges by age; northwest axis at birth)",
+    "Surawicz B, et al. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram, Part III: intraventricular conduction disturbances. J Am Coll Cardiol. 2009;53(11):976-981. doi:10.1016/j.jacc.2008.12.013 (LAFB and LPFB criteria)",
+    "Aro AL, Huikuri HV, Tikkanen JT, et al. QRS-T angle as a predictor of sudden cardiac death in a middle-aged general population. Europace. 2012;14(6):872-876 (QRS-T angle ≥100° and arrhythmic death, driven mainly by abnormal T axis)",
+    "Walsh JA 3rd, et al. Prognostic value of frontal QRS-T angle in patients without clinical evidence of cardiovascular disease (from the Multi-Ethnic Study of Atherosclerosis). Am J Cardiol. 2013;112:1880-1884 (approximate QRS-T angle bands)",
+    "Otake S, et al. Clinical utility of the electrocardiographic P-wave axis in patients with chronic obstructive pulmonary disease. Respiration. 2022;101(4):345-352 (P axis >75° definition and COPD association)"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-09-26",
+      "change": "Initial entry. Five input modes — machine P-R-T axes (default), quadrant, 3-lead, isoelectric lead, and precise amplitudes — with adult and age-banded pediatric normals, a QRS-T angle, lead-reversal detection, fascicular-block checklists, and differentials. Engine parity-tested on web and iOS against 46 shared golden vectors."
+    }
+  ],
+  "engine": "builtin",
+  "tool": "ekg-axis",
+  "purpose": "P-R-T axes, QRS axis deviation, QRS-T angle. Paste the machine's P-R-T axes, or work the axis out from lead polarities or amplitudes.",
+  "toolContent": {
+    "modes": [
+      {
+        "id": "prt",
+        "engineMode": "prt",
+        "default": true,
+        "label": "Machine (P-R-T)",
+        "help": "Enter the axes from the machine read in the order printed: P, QRS, T. Paste the whole header line if easier. Leave P blank if the machine printed *** or nothing (AF, flutter, junctional)."
+      },
+      {
+        "id": "quadrant",
+        "engineMode": "polarity",
+        "label": "Quadrant (I, aVF)",
+        "help": "Is the QRS mostly positive, negative, or equiphasic in each lead? Fastest estimate; I+/aVF− needs lead II to separate normal from LAD.",
+        "leads": [
+          "I",
+          "aVF"
+        ]
+      },
+      {
+        "id": "three_lead",
+        "engineMode": "polarity",
+        "label": "3-Lead (I, II, aVF)",
+        "help": "Adding lead II separates physiologic from pathologic left axis.",
+        "leads": [
+          "I",
+          "II",
+          "aVF"
+        ]
+      },
+      {
+        "id": "isoelectric",
+        "engineMode": "polarity",
+        "label": "Isoelectric lead",
+        "help": "Tap the most equiphasic limb lead, then mark at least one other lead positive or negative. Axis is 90° from the isoelectric lead, toward the positive leads.",
+        "leads": [
+          "I",
+          "II",
+          "III",
+          "aVR",
+          "aVL",
+          "aVF"
+        ]
+      },
+      {
+        "id": "precise",
+        "engineMode": "amplitudes",
+        "label": "Precise (amplitudes)",
+        "help": "Enter net QRS amplitude (R minus the larger of Q or S, in mm) for any two or more limb leads. Leads I and II are the most reliable pair.",
+        "leads": [
+          "I",
+          "II",
+          "III",
+          "aVR",
+          "aVL",
+          "aVF"
+        ]
+      }
+    ],
+    "modifiers": [
+      {
+        "id": "lbbb",
+        "label": "LBBB"
+      },
+      {
+        "id": "rbbb",
+        "label": "RBBB"
+      },
+      {
+        "id": "paced",
+        "label": "Paced"
+      },
+      {
+        "id": "lvh",
+        "label": "LVH"
+      },
+      {
+        "id": "wpw",
+        "label": "WPW"
+      },
+      {
+        "id": "wideQrs",
+        "label": "QRS ≥120 ms"
+      }
+    ],
+    "qrsCategories": {
+      "normal": {
+        "label": "Normal axis",
+        "range": "−30° to +90°"
+      },
+      "lad_borderline": {
+        "label": "Left axis deviation (borderline)",
+        "range": "−31° to −44°"
+      },
+      "lad_marked": {
+        "label": "Left axis deviation",
+        "range": "−45° to −90°"
+      },
+      "rad": {
+        "label": "Right axis deviation",
+        "range": "+91° to +180°"
+      },
+      "extreme": {
+        "label": "Extreme (northwest) axis",
+        "range": "−91° to −179°"
+      },
+      "normal_for_age": {
+        "label": "Normal for age"
+      },
+      "rightward_for_age": {
+        "label": "Rightward for age"
+      },
+      "leftward_for_age": {
+        "label": "Leftward for age"
+      },
+      "spans": {
+        "label": "Range crosses a category boundary"
+      }
+    },
+    "pCategories": {
+      "normal": {
+        "label": "Normal P axis (0° to +75°)",
+        "detail": "Consistent with a sinus origin."
+      },
+      "vertical": {
+        "label": "Vertical P axis (>+75°)",
+        "detail": "Associated with emphysema/COPD, and with more severe airflow limitation in COPD."
+      },
+      "superior": {
+        "label": "Superior P axis (<0°)",
+        "detail": "P negative in the inferior leads: low/ectopic atrial rhythm or retrograde P (junctional)."
+      },
+      "negative_lead_I": {
+        "label": "P negative in lead I (beyond ±90°)",
+        "detail": "Consider LA/RA limb lead reversal, dextrocardia, or a left atrial ectopic rhythm."
+      },
+      "absent": {
+        "label": "No P axis reported",
+        "detail": "Check the rhythm: AF, flutter, junctional, or artifact."
+      }
+    },
+    "tCategories": {
+      "normal": {
+        "label": "T axis 0° to +90°"
+      },
+      "outside_reference": {
+        "label": "T axis outside 0° to +90°",
+        "detail": "Interpret through the QRS-T angle below."
+      }
+    },
+    "qrsTCategories": {
+      "normal": {
+        "label": "QRS-T angle normal (<45°)"
+      },
+      "borderline": {
+        "label": "QRS-T angle borderline (45–90°)"
+      },
+      "abnormal": {
+        "label": "QRS-T angle wide (>90°)",
+        "detail": "Wide frontal QRS-T angle is associated with higher cardiac and all-cause mortality. Cutoffs are approximate; true normal limits differ by sex."
+      },
+      "secondary_repolarization": {
+        "label": "QRS-T angle not interpretable",
+        "detail": "BBB, pacing, LVH, WPW, or wide QRS produce secondary repolarization changes; prognostic cutoffs were not validated in these patients."
+      }
+    },
+    "flags": {
+      "limb_lead_reversal_vs_dextrocardia": {
+        "level": "warning",
+        "text": "P and QRS both negative in lead I. Rule out LA/RA limb lead reversal before calling RAD. Check precordial R-wave progression: normal suggests lead reversal; reversed progression suggests dextrocardia."
+      },
+      "qrs_t_angle_high_risk": {
+        "level": "warning",
+        "text": "QRS-T angle ≥100° has been associated with arrhythmic death in a general-population cohort, driven mainly by an abnormal T axis. Correlate with prior ECGs and clinical context."
+      },
+      "lafb_checklist": {
+        "level": "info",
+        "text": "Axis −45° to −90°: check for left anterior fascicular block.",
+        "checklist": "lafb"
+      },
+      "lpfb_checklist": {
+        "level": "info",
+        "text": "Right axis deviation: LPFB is a diagnosis of exclusion. Rule out RVH, lateral MI, PE, and lead reversal first.",
+        "checklist": "lpfb"
+      },
+      "infant_superior_axis": {
+        "level": "warning",
+        "text": "Superior (northwest) axis in an infant suggests AV canal defect or ostium primum ASD."
+      },
+      "paced_axis_caveat": {
+        "level": "info",
+        "text": "Paced QRS axis reflects the pacing site, not native conduction. Axis categories apply loosely."
+      },
+      "check_rhythm_no_p": {
+        "level": "info",
+        "text": "No P axis: confirm the rhythm before interpreting anything else."
+      }
+    },
+    "warnings": {
+      "p_assumed_absent": "Only two values found after “axes”; read as QRS and T with no P axis. Confirm against the printout.",
+      "add_lead_II": "Lead I positive with aVF negative can be normal or LAD. Add lead II: positive = normal, negative = LAD.",
+      "add_leads_or_use_precise": "The possible range crosses a category boundary. Add another lead or switch to Precise.",
+      "einthoven_mismatch": "Lead I + lead III should equal lead II. These values are off by more than 1 mm; recheck measurements or lead placement.",
+      "goldberger_mismatch": "aVR + aVL + aVF should sum to zero. These values are off by more than 1 mm; recheck measurements."
+    },
+    "statusMessages": {
+      "inconsistent": "No axis fits these polarities. Recheck each lead, or suspect lead misplacement.",
+      "ambiguous": "Two possible axes. Mark at least one more lead positive or negative.",
+      "indeterminate": "Net amplitudes are near zero in every lead: indeterminate axis.",
+      "need_two_leads": "Enter amplitudes for at least two limb leads.",
+      "no_input": "Mark at least one lead.",
+      "errors": {
+        "empty": "Enter or paste the axis values.",
+        "unparseable": "Couldn’t find three axis values. Try the format “54 −42 38”.",
+        "qrs_missing": "QRS axis is required.",
+        "out_of_range": "Axis values must be between −360° and +360°."
+      }
+    },
+    "checklists": {
+      "lafb": {
+        "title": "Left anterior fascicular block (AHA/ACCF/HRS 2009)",
+        "items": [
+          "Frontal axis −45° to −90°",
+          "qR pattern in aVL",
+          "R-peak time in aVL ≥45 ms",
+          "QRS duration <120 ms"
+        ],
+        "caveat": "Does not apply to congenital heart disease with left axis present from infancy."
+      },
+      "lpfb": {
+        "title": "Left posterior fascicular block (AHA/ACCF/HRS 2009)",
+        "items": [
+          "Frontal axis +90° to +180° (adults)",
+          "rS pattern in I and aVL",
+          "qR pattern in III and aVF",
+          "QRS duration <120 ms",
+          "Other causes of RAD excluded"
+        ],
+        "caveat": "In children, apply only when a distinct rightward shift from a prior ECG is documented."
+      }
+    },
+    "differentials": {
+      "lad": [
+        "Left anterior fascicular block (diagnosis of exclusion)",
+        "Left bundle branch block",
+        "Left ventricular hypertrophy",
+        "Inferior MI",
+        "Ventricular pacing or ectopy",
+        "WPW",
+        "Ostium primum ASD (rSR′ pattern)",
+        "Horizontal heart (short, broad habitus)"
+      ],
+      "rad": [
+        "Right ventricular hypertrophy",
+        "Acute RV strain, e.g. PE",
+        "Lateral STEMI",
+        "Chronic lung disease/COPD",
+        "Hyperkalemia",
+        "Sodium-channel blockade, e.g. TCA toxicity",
+        "WPW",
+        "Dextrocardia",
+        "Ventricular ectopy",
+        "Secundum ASD (rSR′ pattern)",
+        "Normal in children",
+        "Left posterior fascicular block (diagnosis of exclusion)",
+        "Vertical heart (tall, thin habitus)",
+        "Limb lead reversal"
+      ],
+      "extreme": [
+        "Ventricular rhythm: VT, AIVR, ventricular ectopy",
+        "Hyperkalemia",
+        "Severe right ventricular hypertrophy",
+        "Limb lead reversal"
+      ]
+    },
+    "peds": {
+      "bands": [
+        {
+          "age": "Birth–1 week",
+          "range": "+30° to +190°"
+        },
+        {
+          "age": "1 week–1 month",
+          "range": "+30° to +180°"
+        },
+        {
+          "age": "1–3 months",
+          "range": "+10° to +125°"
+        },
+        {
+          "age": "3 months–3 years",
+          "range": "+10° to +110°"
+        },
+        {
+          "age": "3–18 years",
+          "range": "+20° to +120°"
+        }
+      ],
+      "note": "Rightward axis is normal at birth (RV dominance) and moves leftward with age."
+    },
+    "clinicalTakeaway": "Axis is a clue, not a diagnosis. A new shift compared with a prior ECG matters more than the absolute number. Before acting on right or extreme axis, rule out limb lead reversal. A wide QRS-T angle in a narrow-complex, unpaced ECG is a risk marker worth noting.",
+    "whyThisMatters": "Axis deviation narrows the differential fast: fascicular blocks, RV strain, hyperkalemia, sodium-channel toxicity, and ventricular rhythms all declare themselves here. The P and T axes the machine already prints add lead-reversal detection and repolarization risk for free."
+  },
+  "interpretation": [
+    {
+      "min": -30,
+      "max": 90,
+      "label": "Normal axis (−30° to +90°)",
+      "severity": "low"
+    },
+    {
+      "min": -44,
+      "max": -31,
+      "label": "Left axis deviation, borderline (−31° to −44°)",
+      "severity": "moderate"
+    },
+    {
+      "min": -90,
+      "max": -45,
+      "label": "Left axis deviation (−45° to −90°)",
+      "severity": "high"
+    },
+    {
+      "min": 91,
+      "max": 180,
+      "label": "Right axis deviation (+91° to +180°)",
+      "severity": "high"
+    },
+    {
+      "min": -179,
+      "max": -91,
+      "label": "Extreme (northwest) axis (−91° to −179°)",
+      "severity": "high"
+    }
+  ],
+  "buildNote": "Code-backed tool (engine: builtin, tool: ekg-axis). The axis math lives in web/src/lib/axisEngine.js and ios/Sources/Calc/AxisEngine.swift; both run tools/fixtures/axis-golden-vectors.json. Never compute the axis as atan2(aVF, I): augmented leads read √3/2 of the true projection, so the engine solves by least squares. The hexaxial wheel is an original drawing; LITFL figures are CC BY-NC-SA and are not reproduced. The interpretation bands above are the adult reference, shown for completeness — the tool applies age-banded normals when Peds is selected."
+}

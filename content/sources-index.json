@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 974,
+  "count": 980,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -2454,6 +2454,18 @@
           "title": "CIWA-Ar (Alcohol Withdrawal)",
           "section": "Calculators",
           "route": "/calculators/toxicology-withdrawal/ciwa-ar"
+        }
+      ]
+    },
+    {
+      "text": "Surawicz B, et al. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram, Part III: intraventricular conduction disturbances. J Am Coll Cardiol. 2009;53(11):976-981. doi:10.1016/j.jacc.2008.12.013 (LAFB and LPFB criteria)",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "ekg-axis-interpreter",
+          "title": "EKG Axis Interpreter",
+          "section": "Calculators",
+          "route": "/calculators/cardiovascular-chest-pain-arrhythmia/ekg-axis-interpreter"
         }
       ]
     },
@@ -5920,6 +5932,18 @@
       ]
     },
     {
+      "text": "Aro AL, Huikuri HV, Tikkanen JT, et al. QRS-T angle as a predictor of sudden cardiac death in a middle-aged general population. Europace. 2012;14(6):872-876 (QRS-T angle ≥100° and arrhythmic death, driven mainly by abnormal T axis)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ekg-axis-interpreter",
+          "title": "EKG Axis Interpreter",
+          "section": "Calculators",
+          "route": "/calculators/cardiovascular-chest-pain-arrhythmia/ekg-axis-interpreter"
+        }
+      ]
+    },
+    {
       "text": "Asciak R, Bedawi EO, Bhatnagar R, et al. British Thoracic Society Clinical Statement on pleural procedures. Thorax. 2023;78(Suppl 4):s43-s68 (safe triangle; controlled drainage of large effusions).",
       "group": "Other primary sources",
       "usedBy": [
@@ -6420,6 +6444,18 @@
           "title": "Crush Syndrome — Entrapment, Extrication & Hyperkalemia",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/crush-syndrome"
+        }
+      ]
+    },
+    {
+      "text": "Cadogan M, Buttner R. ECG Axis Interpretation. Life in the Fast Lane (LITFL), updated Nov 2024. https://litfl.com/ecg-axis-interpretation/ (adult bands, methods, differentials, birth axis range)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ekg-axis-interpreter",
+          "title": "EKG Axis Interpreter",
+          "section": "Calculators",
+          "route": "/calculators/cardiovascular-chest-pain-arrhythmia/ekg-axis-interpreter"
         }
       ]
     },
@@ -9406,6 +9442,18 @@
       ]
     },
     {
+      "text": "LITFL. Paediatric ECG: stepwise approach. https://litfl.com/paediatric-ecg-stepwise-approach/ (pediatric normal ranges by age; northwest axis at birth)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ekg-axis-interpreter",
+          "title": "EKG Axis Interpreter",
+          "section": "Calculators",
+          "route": "/calculators/cardiovascular-chest-pain-arrhythmia/ekg-axis-interpreter"
+        }
+      ]
+    },
+    {
       "text": "LITFL. Pelvic Binders — Emergency Procedures.",
       "group": "Other primary sources",
       "usedBy": [
@@ -10230,6 +10278,18 @@
           "title": "Revised Baux Score (Burn Mortality)",
           "section": "Calculators",
           "route": "/calculators/trauma/baux-score"
+        }
+      ]
+    },
+    {
+      "text": "Otake S, et al. Clinical utility of the electrocardiographic P-wave axis in patients with chronic obstructive pulmonary disease. Respiration. 2022;101(4):345-352 (P axis >75° definition and COPD association)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ekg-axis-interpreter",
+          "title": "EKG Axis Interpreter",
+          "section": "Calculators",
+          "route": "/calculators/cardiovascular-chest-pain-arrhythmia/ekg-axis-interpreter"
         }
       ]
     },
@@ -11832,6 +11892,18 @@
           "title": "Sedative-Hypnotic Toxicity — Benzodiazepines, Barbiturates, GHB",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-sedative-hypnotics"
+        }
+      ]
+    },
+    {
+      "text": "Walsh JA 3rd, et al. Prognostic value of frontal QRS-T angle in patients without clinical evidence of cardiovascular disease (from the Multi-Ethnic Study of Atherosclerosis). Am J Cardiol. 2013;112:1880-1884 (approximate QRS-T angle bands)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ekg-axis-interpreter",
+          "title": "EKG Axis Interpreter",
+          "section": "Calculators",
+          "route": "/calculators/cardiovascular-chest-pain-arrhythmia/ekg-axis-interpreter"
         }
       ]
     },

@@ -51,6 +51,10 @@ targets:
     platform: iOS
     sources:
       - path: Tests
+      # Shared JS/Swift parity fixtures (e.g. axis-golden-vectors.json) —
+      # tools/test.mjs runs the same files against the web engines.
+      - path: ../tools/fixtures
+        buildPhase: resources
     dependencies:
       - target: Kairos
     settings:

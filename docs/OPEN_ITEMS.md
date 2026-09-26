@@ -242,6 +242,46 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-09-26 — **EKG Axis Interpreter shipped** (`calculators/cardiovascular/ekg-axis-interpreter`,
+  from a handoff package framed in Claude chat). First code-backed calculator:
+  new `engine: "builtin"` + `tool: "ekg-axis"` + a schema-validated
+  `toolContent` block that holds every string the tool shows; the engine only
+  returns keys.
+  - **Engine:** `web/src/lib/axisEngine.js` (the package's reference engine,
+    math untouched) and `ios/Sources/Calc/AxisEngine.swift` (the package's
+    port, written without a toolchain — it compiled clean and matched on the
+    first run). Both run the same 46 golden vectors from
+    `tools/fixtures/axis-golden-vectors.json` (JS in `tools/test.mjs`, Swift in
+    `AxisEngineParityTests`, bundled into the test target via project.yml),
+    including the naive-`atan2(aVF, I)` trap. `AxisToolContentTests` decodes the
+    shipped module and checks every engine key has copy.
+  - **UI (both clients):** Machine (P-R-T) first and default every time;
+    Quadrant → 3-Lead → Isoelectric → Precise. Paste field parses a full header,
+    `54/-42/38`, named tokens, unicode minus, `***`. **± button on every numeric
+    field** (iPhone decimal pads have no minus key). Adult/Peds age, modifier
+    chips, live results: headline, original hexaxial wheel (sectors in palette
+    tokens, QRS bold / P thin / T dashed, peds age arc, polarity range shading),
+    P and T/QRS-T lines, flags warning-first with expandable LAFB/LPFB
+    checklists, collapsed differential, takeaway, sources, Last verified.
+    Quadrant I+/aVF− offers a one-tap jump to 3-Lead with I and aVF pre-filled.
+  - **Citations checked:** the `[VERIFY]` Finnish cohort is Aro AL et al.,
+    Europace 2012;14(6):872-876 (QRS-T ≥100° → RR 2.26 for sudden arrhythmic
+    death, mainly via abnormal T axis — matches the flag text); Walsh (MESA)
+    Am J Cardiol 2013;112:1880-1884; the P-axis/COPD paper is Otake S et al.,
+    Respiration 2022;101(4):345-352 (>75° definition confirmed). The package's
+    aggregator link was replaced with the journal citation.
+- 2026-09-25 — **Gray's overlays finished; structured prose + phone-safe
+  tables; formatting pass over 149 modules.**
+  - All six Gray's plates now in use: cricothyroid membrane + IJ probe site
+    (1195), paracentesis (1220, with the site rationale rewritten against
+    Sakai 2005), Tuffier's line (1211, + Broadbent 2000), thoracentesis safe
+    zone (1211).
+  - Text format for prose fields (paragraphs, `- ` bullets, `1. ` steps,
+    ALL-CAPS labels) on both clients (`web/src/lib/richText.js`,
+    `RichText.swift`); tables share one set of column widths across rows and
+    stack into cards on phones (`TableBlock.swift`).
+  - 301 run-on strings restructured, audited word-for-word against 2fe3a31
+    (0 failures; only topic labels added).
 - 2026-09-24 — **Tube thoracostomy deepened, and real anatomy under the
   diagrams — the media blocker is lifted for public-domain plates.**
   - **`tube-thoracostomy` v1 -> v3.** 587 words / 7 steps / 4 sources (one
@@ -2483,6 +2523,24 @@ concentrations` would naturally fit there but is filed elsewhere.
   (backgrounding, app switch, force-quit). Low priority.
 
 ### Design decisions open
+- [ ] **EKG Axis Interpreter — open items from the handoff (not blockers):**
+  - **Peds upper age cutoff:** the engine uses the >3 years band (+20° to
+    +120°) until age 18; ECGpedia uses different bands (e.g. 8–16 y: 0° to
+    +120°). Pick one source.
+  - **QRS-T cutoffs** (<45 / 45–90 / >90) are approximate; the true NHANES
+    limits are sex-specific. Consider adding a sex input.
+  - ~~Verify the Finnish QRS-T cohort citation~~ — done 2026-09-26 (Aro 2012,
+    Europace 14(6):872-876).
+  - **LPFB criteria** were transcribed from AHA/ACCF/HRS 2009 Part III —
+    spot-check against the primary document before release.
+  - **± toggle on a real iPhone** — the handoff's most likely real-world
+    failure; verified in the simulator and at phone width on the web, not yet
+    on a device.
+  - **3-Lead I+ / II− / aVF− reads as "range crosses a category boundary"**
+    (−89° to −31° spans borderline and marked LAD) rather than "pathological
+    LAD" — correct per the engine, but the teaching point of lead II is that
+    this pattern IS pathological LAD. Consider a content-level note for that
+    case; the engine was deliberately not changed.
 - [x] **Tier 5 — color/font scheme — fully done.** "Ink & Ember on Parchment"
   is shipped everywhere (`docs/PALETTES.md` has the token table); IBM Plex
   Sans/Mono are self-hosted on both clients (the "still falls back to system

@@ -3,8 +3,11 @@ import { runCalculator } from "../lib/calcEngine.js";
 import { evaluate } from "../lib/expr.js";
 import { session } from "../lib/session.js";
 import { richText } from "./prose.js";
+import { renderAxisTool } from "./axisTool.js";
 
 export function renderCalculator(mod, route) {
+  // Code-backed tools (engine: "builtin") have their own view.
+  if (mod.engine === "builtin" && mod.tool === "ekg-axis") return renderAxisTool(mod, route);
   const saved = session.get(route);
   const state = { items: saved.items || {}, inputs: saved.inputs || {} };
 
