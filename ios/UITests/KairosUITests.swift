@@ -132,7 +132,7 @@ final class KairosUITests: XCTestCase {
     /// Home → Calculators → EKG Axis Interpreter: Machine (P-R-T) opens by
     /// default; a pasted machine header fills the fields and reads marked LAD;
     /// Quadrant I+ / aVF− offers the one-tap jump to 3-Lead.
-    func testAxisToolFlow() {
+    private func openAxisTool() {
         openSection("calculators")
         let row = app.buttons["row-ekg-axis-interpreter"].firstMatch
         // Give the list a moment to render before swiping: the row sits near
@@ -141,6 +141,10 @@ final class KairosUITests: XCTestCase {
         while !row.waitForExistence(timeout: 2) && tries < 12 { app.swipeUp(velocity: .slow); tries += 1 }
         XCTAssertTrue(row.exists)
         row.tap()
+    }
+
+    func testAxisToolFlow() {
+        openAxisTool()
 
         let machine = app.buttons["axis-mode-prt"].firstMatch
         XCTAssertTrue(machine.waitForExistence(timeout: 5))
@@ -166,5 +170,33 @@ final class KairosUITests: XCTestCase {
         XCTAssertTrue(app.buttons["axis-mode-three_lead"].firstMatch.isSelected)
         app.buttons["Lead II −"].firstMatch.tap()
         XCTAssertTrue(text(containing: "−89°").waitForExistence(timeout: 5))
+    }
+
+    /// The iPhone decimal pad has no minus key. Type on the real keypad, then
+    /// use the keyboard bar's ± to go negative and its checkmark to dismiss.
+    func testAxisSignKeyOnKeypad() {
+        openAxisTool()
+        let field = app.textFields["QRS"].firstMatch
+        XCTAssertTrue(field.waitForExistence(timeout: 5))
+        field.tap()
+        let old = (field.value as? String) ?? ""
+        if !old.isEmpty { field.typeText(String(repeating: XCUIKeyboardKey.delete.rawValue, count: old.count)) }
+
+        XCTAssertTrue(app.keys["6"].waitForExistence(timeout: 5), "decimal keypad not shown")
+        XCTAssertFalse(app.keys["-"].exists, "decimal keypad unexpectedly has a minus key")
+        field.typeText("60")
+
+        let sign = app.buttons["axis-kb-sign"].firstMatch
+        XCTAssertTrue(sign.waitForExistence(timeout: 3), "keyboard bar ± missing")
+        sign.tap()
+        XCTAssertEqual(field.value as? String, "-60")
+        XCTAssertTrue(text(containing: "−60°").waitForExistence(timeout: 5))
+        let shot = XCTAttachment(screenshot: app.screenshot()); shot.name = "axis-keypad-sign"; shot.lifetime = .keepAlways; add(shot)
+
+        sign.tap()
+        XCTAssertEqual(field.value as? String, "60")
+
+        app.buttons["axis-kb-done"].firstMatch.tap()
+        XCTAssertTrue(app.keyboards.firstMatch.waitForNonExistence(timeout: 3), "keyboard did not dismiss")
     }
 }

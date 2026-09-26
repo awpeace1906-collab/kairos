@@ -21,6 +21,9 @@ struct AxisToolView: View {
     @State private var ageVal = ""
     @State private var ageUnit = "y"
     @State private var mods: Set<String> = []
+    /// Which entry field has the keyboard: "p", "qrs", "t", "amp.<lead>",
+    /// "age", or "paste". Drives the keyboard bar's ± and Done keys.
+    @FocusState private var focus: String?
 
     private static let leadAngles: [(String, Double)] = [("I", 0), ("II", 60), ("III", 120), ("aVR", -150), ("aVL", -30), ("aVF", 90)]
 
@@ -45,6 +48,45 @@ struct AxisToolView: View {
             SourcesBlock(meta: calc.meta)
         }
         .onAppear(perform: restore)
+        // The decimal pad has no minus key and no Done key. One bar for the
+        // whole screen (per-field toolbars stack up duplicates): ± flips the
+        // focused signed field, the yellow checkmark collapses the keyboard,
+        // matching ClearableField elsewhere in the app.
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                if let key = focus, let b = signedBinding(key) {
+                    Button { b.wrappedValue = Self.flipSign(b.wrappedValue) } label: {
+                        Text("±").font(.system(size: 22, weight: .semibold)).frame(minWidth: 44)
+                    }
+                    .accessibilityLabel("Toggle sign")
+                    .accessibilityIdentifier("axis-kb-sign")
+                }
+                Spacer()
+                Button { focus = nil } label: {
+                    Image(systemName: "checkmark.circle.fill").foregroundStyle(.yellow)
+                }
+                .accessibilityLabel("Done")
+                .accessibilityIdentifier("axis-kb-done")
+            }
+        }
+    }
+
+    /// Binding for a signed entry field by focus key; nil for unsigned fields.
+    private func signedBinding(_ key: String) -> Binding<String>? {
+        switch key {
+        case "p":   return Binding(get: { p }, set: { p = $0; persist() })
+        case "qrs": return Binding(get: { qrs }, set: { qrs = $0; persist() })
+        case "t":   return Binding(get: { t }, set: { t = $0; persist() })
+        default:
+            guard key.hasPrefix("amp.") else { return nil }
+            let lead = String(key.dropFirst(4))
+            return Binding(get: { amps[lead] ?? "" }, set: { amps[lead] = $0; persist() })
+        }
+    }
+
+    static func flipSign(_ s: String) -> String {
+        let t = s.replacingOccurrences(of: "\u{2212}", with: "-")
+        return t.hasPrefix("-") ? String(t.dropFirst()) : "-" + t
     }
 
     // MARK: - Inputs
@@ -97,9 +139,8 @@ struct AxisToolView: View {
         case "amplitudes":
             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 8) {
                 ForEach(modeDef.leads ?? [], id: \.self) { lead in
-                    SignedField(label: lead, unit: "mm", text: Binding(
-                        get: { amps[lead] ?? "" },
-                        set: { amps[lead] = $0; persist() }))
+                    SignedField(label: lead, unit: "mm", key: "amp.\(lead)", focus: $focus,
+                                text: signedBinding("amp.\(lead)")!)
                 }
             }
         default:
@@ -110,11 +151,12 @@ struct AxisToolView: View {
                     .autocorrectionDisabled()
                     .padding(10)
                     .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 10))
+                    .focused($focus, equals: "paste")
                     .accessibilityIdentifier("axis-paste")
                 HStack(spacing: 8) {
-                    SignedField(label: "P", unit: "°", text: Binding(get: { p }, set: { p = $0; persist() }))
-                    SignedField(label: "QRS", unit: "°", text: Binding(get: { qrs }, set: { qrs = $0; persist() }))
-                    SignedField(label: "T", unit: "°", text: Binding(get: { t }, set: { t = $0; persist() }))
+                    SignedField(label: "P", unit: "°", key: "p", focus: $focus, text: signedBinding("p")!)
+                    SignedField(label: "QRS", unit: "°", key: "qrs", focus: $focus, text: signedBinding("qrs")!)
+                    SignedField(label: "T", unit: "°", key: "t", focus: $focus, text: signedBinding("t")!)
                 }
             }
         }
@@ -132,6 +174,7 @@ struct AxisToolView: View {
                 if peds {
                     TextField("age", text: Binding(get: { ageVal }, set: { ageVal = $0; persist() }))
                         .keyboardType(.decimalPad)
+                        .focused($focus, equals: "age")
                         .frame(width: 54)
                         .padding(6)
                         .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 8))
@@ -166,6 +209,7 @@ struct AxisToolView: View {
         let t = s.trimmingCharacters(in: .whitespaces)
             .replacingOccurrences(of: "\u{2212}", with: "-")
             .replacingOccurrences(of: "\u{2013}", with: "-")
+            .replacingOccurrences(of: ",", with: ".")   // comma-decimal locales' keypad
         return t.isEmpty || t == "-" ? nil : Double(t)
     }
 
@@ -426,16 +470,15 @@ struct AxisToolView: View {
 private struct SignedField: View {
     let label: String
     let unit: String
+    let key: String
+    var focus: FocusState<String?>.Binding
     @Binding var text: String
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             Text(label).font(Theme.caption).foregroundStyle(.secondary)
             HStack(spacing: 4) {
-                Button {
-                    let t = text.replacingOccurrences(of: "\u{2212}", with: "-")
-                    text = t.hasPrefix("-") ? String(t.dropFirst()) : "-" + t
-                } label: {
+                Button { text = AxisToolView.flipSign(text) } label: {
                     Text("±").font(.system(size: 17, weight: .medium)).frame(width: 30, height: 34)
                         .background(Color(.tertiarySystemFill), in: RoundedRectangle(cornerRadius: 8))
                 }
@@ -443,6 +486,7 @@ private struct SignedField: View {
                 .accessibilityLabel("Toggle sign of \(label)")
                 TextField("", text: $text)
                     .keyboardType(.decimalPad)
+                    .focused(focus, equals: key)
                     .font(Theme.mono(15))
                     .padding(.horizontal, 6).padding(.vertical, 7)
                     .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 8))

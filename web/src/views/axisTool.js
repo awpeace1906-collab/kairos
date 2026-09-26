@@ -10,9 +10,9 @@ import { richText } from "./prose.js";
 const LEADS = ["I", "II", "III", "aVR", "aVL", "aVF"];
 const SEV = { normal: "low", borderline: "moderate", abnormal: "high" };
 const deg = (v) => `${v > 0 ? "+" : v < 0 ? "−" : ""}${Math.abs(Math.round(v))}°`;
-/** Accepts "-42", "−42", "42.5"; blank → null. */
+/** Accepts "-42", "−42", "42.5", "42,5"; blank → null. */
 const num = (s) => {
-  const t = String(s ?? "").trim().replace(/[−–—]/g, "-");
+  const t = String(s ?? "").trim().replace(/[−–—]/g, "-").replace(",", ".");
   if (t === "" || t === "-") return null;
   const n = Number(t);
   return Number.isFinite(n) ? n : null;
@@ -52,25 +52,36 @@ export function renderAxisTool(mod, route) {
   }
 
   // ---------------------------------------------------------------- inputs
+  let fieldSeq = 0;
   function signedField({ label, unit, value, placeholder, onChange }) {
+    const id = `axis-f-${label.replace(/\W/g, "")}-${++fieldSeq}`;
     const input = el("input", {
-      type: "text", inputmode: "decimal", autocomplete: "off", spellcheck: "false",
+      id, type: "text", inputmode: "decimal", autocomplete: "off", spellcheck: "false",
       value: value ?? "", placeholder: placeholder || "",
       "aria-label": label,
       onInput: (e) => onChange(e.target.value),
     });
+    const toggle = () => {
+      const n = num(input.value);
+      if (n == null || n === 0) { input.value = input.value.startsWith("-") ? input.value.slice(1) : "-" + input.value; }
+      else input.value = String(-n);
+      onChange(input.value);
+    };
+    // iPhone decimal keypads have no minus key, so this button is the only way
+    // to go negative. While the field has focus, handle the tap at touchend and
+    // cancel it: that keeps focus in the field (no keypad drop and bounce) and
+    // suppresses the follow-up click. Pointerdown is cancelled for mouse and
+    // Android, which blur on the compatibility mousedown instead.
     const flip = el("button", {
       type: "button", class: "axis-sign", "aria-label": `Toggle sign of ${label}`,
-      onClick: () => {
-        const n = num(input.value);
-        if (n == null || n === 0) { input.value = input.value.startsWith("-") ? input.value.slice(1) : "-" + input.value; }
-        else input.value = String(-n);
-        onChange(input.value);
-        input.focus();
-      },
+      onPointerdown: (e) => { if (document.activeElement === input) e.preventDefault(); },
+      onTouchend: (e) => { if (document.activeElement === input) { e.preventDefault(); toggle(); } },
+      onClick: () => { toggle(); input.focus(); },
     }, "±");
-    return el("label", { class: "axis-field" },
-      el("span", { class: "field-label" }, label),
+    // A wrapping <label> would bind to the ± button (the first labelable
+    // child), so tapping the caption flipped the sign. Point it at the input.
+    return el("div", { class: "axis-field" },
+      el("label", { class: "field-label", for: id }, label),
       el("span", { class: "axis-field-row" }, flip, input, unit ? el("span", { class: "unit" }, unit) : null));
   }
 

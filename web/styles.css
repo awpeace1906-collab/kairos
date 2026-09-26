@@ -678,12 +678,15 @@ figure.diagram--plate .diagram-credit { color: #6b6862; }
   padding: 11px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--text); margin-bottom: 10px; }
 .axis-prt-fields, .axis-amps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
 .axis-amps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+/* 320px phones: three signed fields side by side can't show "-135". */
+@media (max-width: 359px) { .axis-prt-fields { grid-template-columns: minmax(0, 1fr); } }
 .axis-field { display: flex; flex-direction: column; gap: 4px; }
-.axis-field-row { display: flex; align-items: center; gap: 4px; min-width: 0; }
+.axis-field-row { display: flex; align-items: center; gap: 3px; min-width: 0; }
 .axis-field-row input { flex: 1; min-width: 0; width: 100%; font: inherit; font-family: var(--font-mono); font-size: 1rem;
-  padding: 9px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--text); }
+  padding: 9px 5px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--text); }
+/* 16px stays: iOS Safari zooms the page into any input set smaller. */
 .axis-field .unit { color: var(--muted); font-size: .85rem; }
-.axis-sign { flex: none; width: 34px; height: 38px; border-radius: 8px; font-size: 1.05rem; padding: 0; }
+.axis-sign { flex: none; width: 30px; height: 38px; border-radius: 8px; font-size: 1.05rem; padding: 0; }
 .axis-leads { display: grid; gap: 8px; }
 .axis-lead { display: flex; align-items: center; gap: 10px; }
 .axis-lead-name { width: 36px; font-family: var(--font-mono); font-weight: 600; }

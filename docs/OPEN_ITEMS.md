@@ -16,8 +16,8 @@ State: **441 modules**, pipeline green (validate 441/0, test 363/0), iOS unit
 tests 27/27 and UI tests green, all three CI workflows green. Latest work: EKG
 Axis Interpreter (first `engine: "builtin"` calculator), structured prose and
 phone-safe tables, Gray's plate overlays, pericardiocentesis angle set to
-about 30°. Remaining EKG axis items (sex-specific QRS-T cutoffs, ± on a
-real iPhone) are under "Design decisions open".
+about 30°. The one remaining EKG axis item (sex-specific QRS-T cutoffs) is
+under "Design decisions open".
 
 Older state note (2026-09-23), kept for history — **431 modules**, pipeline green (validate 431/0, build/sync/test
 281/0), iOS `TEST SUCCEEDED` (10/10 EngineTests). The original 2026-09-14
@@ -2547,9 +2547,18 @@ concentrations` would naturally fit there but is filed elsewhere.
     LPFB had a fifth item ("other causes of RAD excluded") that the 2009
     document does not list; it moved to the caveat, credited to LITFL, and
     the pediatric caveat now says "up to 16 years" as the source does.
-  - **± toggle on a real iPhone** — the handoff's most likely real-world
-    failure; verified in the simulator and at phone width on the web, not yet
-    on a device.
+  - ~~**± toggle on a real iPhone**~~ — reworked and verified 2026-09-26 on
+    the real iOS decimal pad (software keyboard in the simulator, both the
+    native app and Mobile Safari). The decimal pad has no minus key and no
+    Done key. iOS app: one keyboard bar for the screen with ± (flips the
+    focused signed field) and the app's yellow-checkmark Done; the inline ±
+    stays. Web: ± handles the tap at touchend while the field is focused, so
+    the keypad no longer drops and bounces. Also fixed: the wrapping <label>
+    bound to the ± button, so tapping the "P/QRS/T" caption flipped the sign;
+    "-135" clipped at 375px (fields tightened, 16px font kept to avoid iOS
+    zoom; single column under 360px); comma decimals now parse on both.
+    UI test `testAxisSignKeyOnKeypad` covers the native keypad path. A
+    physical-device pass still waits on the DEVELOPMENT_TEAM setup.
   - ~~**3-Lead I+ / II− / aVF− teaching note**~~ — done 2026-09-26 as a
     content-level note in the 3-Lead help text (pathological LAD; the range
     spans the borderline and marked bands, both LAD). Engine unchanged.
