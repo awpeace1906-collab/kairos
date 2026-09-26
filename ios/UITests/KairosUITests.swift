@@ -135,9 +135,11 @@ final class KairosUITests: XCTestCase {
     func testAxisToolFlow() {
         openSection("calculators")
         let row = app.buttons["row-ekg-axis-interpreter"].firstMatch
+        // Give the list a moment to render before swiping: the row sits near
+        // the top (Cardiovascular), and an immediate fling scrolls past it.
         var tries = 0
-        while !row.exists && tries < 12 { app.swipeUp(); tries += 1 }
-        XCTAssertTrue(row.waitForExistence(timeout: 5))
+        while !row.waitForExistence(timeout: 2) && tries < 12 { app.swipeUp(velocity: .slow); tries += 1 }
+        XCTAssertTrue(row.exists)
         row.tap()
 
         let machine = app.buttons["axis-mode-prt"].firstMatch

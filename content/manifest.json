@@ -2418,13 +2418,13 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/pericardiocentesis": {
-      "content_version": 3,
-      "hash": "3e2ef17db71c5b30",
+      "content_version": 4,
+      "hash": "2c8d36d808ab5f45",
       "path": "modules/procedures/pericardiocentesis.json",
       "contentType": "procedure",
       "section": "Procedures",
       "review_tier": 1,
-      "next_review_due": "2026-12-14"
+      "next_review_due": "2026-12-26"
     },
     "procedures/pocus-guide": {
       "content_version": 5,

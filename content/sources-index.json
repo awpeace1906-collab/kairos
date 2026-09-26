@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 980,
+  "count": 985,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -8158,6 +8158,18 @@
       ]
     },
     {
+      "text": "Fitch MT, Nicks BA, Pariyadath M, et al. Emergency pericardiocentesis. N Engl J Med. 2012;366(12):e17. doi:10.1056/NEJMvcm0907841",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pericardiocentesis",
+          "title": "Pericardiocentesis",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/pericardiocentesis"
+        }
+      ]
+    },
+    {
       "text": "Fluid Resuscitation of Severely Burned Children (Galveston formula, maintenance-fluid literature).",
       "group": "Other primary sources",
       "usedBy": [
@@ -9880,6 +9892,18 @@
       ]
     },
     {
+      "text": "Miers J, Mackenzie J. Procedure: Pericardiocentesis. LITFL. https://litfl.com/procedure-pericardiocentesis-instructions/",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pericardiocentesis",
+          "title": "Pericardiocentesis",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/pericardiocentesis"
+        }
+      ]
+    },
+    {
       "text": "Mills NL et al. Fifth Universal Definition of Myocardial Infarction (2026). Eur Heart J 2026;ehag101 / J Am Coll Cardiol 2026",
       "group": "Other primary sources",
       "usedBy": [
@@ -10390,6 +10414,18 @@
       ]
     },
     {
+      "text": "PCR. How to perform a pericardial effusion puncture. PCRonline, 2022. https://www.pcronline.com/Cases-resources-images/Tools-and-Practice/My-Toolkit/2022/How-to-perform-a-pericardial-effusion-puncture",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pericardiocentesis",
+          "title": "Pericardiocentesis",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/pericardiocentesis"
+        }
+      ]
+    },
+    {
       "text": "Pediatric Drug Dose Chart, Queen's University Department of Anesthesiology, 2021 (dextrose, magnesium, lidocaine cross-reference)",
       "group": "Other primary sources",
       "usedBy": [
@@ -10428,6 +10464,30 @@
           "title": "Radiation — Thyroid Blocking & Decorporation Dosing",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/radiation-decorporation-dosing"
+        }
+      ]
+    },
+    {
+      "text": "Pericardiocentesis in cardiac tamponade: indications and practical aspects. E-Journal of Cardiology Practice (ESC). 2017;15(19). https://www.escardio.org/communities/councils/cardiology-practice/scientific-documents-and-publications/ejournal/volume-15/Pericardiocentesis-in-cardiac-tamponade-indications-and-practical-aspects/",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pericardiocentesis",
+          "title": "Pericardiocentesis",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/pericardiocentesis"
+        }
+      ]
+    },
+    {
+      "text": "Petri N, Ertel B, Gassenmaier T, et al. \"Blind\" pericardiocentesis: a comparison of different puncture directions. Catheter Cardiovasc Interv. 2018;92(5). doi:10.1002/ccd.27601",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "pericardiocentesis",
+          "title": "Pericardiocentesis",
+          "section": "Procedures",
+          "route": "/procedures/vascular-thoracic-access/pericardiocentesis"
         }
       ]
     },

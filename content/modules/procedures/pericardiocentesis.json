@@ -29,14 +29,19 @@
     "thread a pigtail catheter rather than removing the needle immediately"
   ],
   "contentType": "procedure",
-  "content_version": 3,
-  "last_reviewed": "2026-09-14",
-  "next_review_due": "2026-12-14",
+  "content_version": 4,
+  "last_reviewed": "2026-09-26",
+  "next_review_due": "2026-12-26",
   "review_tier": 1,
   "sources": [
     "Synovitz CK, Brown EJ. Pericardiocentesis. In: Roberts and Hedges' Clinical Procedures in Emergency Medicine, 7th ed.",
     "Adler Y, Charron P, Imazio M, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J. 2015;36(42):2921-2964.",
-    "Loukas M, et al. A review of the anatomy of the pericardium and pericardiocentesis technique. Clin Anat. 2012."
+    "Loukas M, et al. A review of the anatomy of the pericardium and pericardiocentesis technique. Clin Anat. 2012.",
+    "Petri N, Ertel B, Gassenmaier T, et al. \"Blind\" pericardiocentesis: a comparison of different puncture directions. Catheter Cardiovasc Interv. 2018;92(5). doi:10.1002/ccd.27601",
+    "Pericardiocentesis in cardiac tamponade: indications and practical aspects. E-Journal of Cardiology Practice (ESC). 2017;15(19). https://www.escardio.org/communities/councils/cardiology-practice/scientific-documents-and-publications/ejournal/volume-15/Pericardiocentesis-in-cardiac-tamponade-indications-and-practical-aspects/",
+    "Fitch MT, Nicks BA, Pariyadath M, et al. Emergency pericardiocentesis. N Engl J Med. 2012;366(12):e17. doi:10.1056/NEJMvcm0907841",
+    "Miers J, Mackenzie J. Procedure: Pericardiocentesis. LITFL. https://litfl.com/procedure-pericardiocentesis-instructions/",
+    "PCR. How to perform a pericardial effusion puncture. PCRonline, 2022. https://www.pcronline.com/Cases-resources-images/Tools-and-Practice/My-Toolkit/2022/How-to-perform-a-pericardial-effusion-puncture"
   ],
   "changelog": [
     {
@@ -53,6 +58,11 @@
       "version": 3,
       "date": "2026-09-25",
       "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    },
+    {
+      "version": 4,
+      "date": "2026-09-26",
+      "change": "Landmark needle angle changed from 15-30° to about 30° to the skin (steepen only if the first pass gets no fluid) in the step, figure caption and overlay label, matching CRISIS. Basis: Petri 2018 CT simulation of 13 blind puncture directions in 150 patients, where subxiphoid toward the left midclavicular point at 30° had the highest effusion hit rate (87%) and fewest adjacent-structure punctures (5%). Consistent with ESC Cardiology Practice, LITFL and PCRonline technique descriptions."
     }
   ],
   "outputType": "workflow",
@@ -75,10 +85,10 @@
       "id": "classic-landmark",
       "type": "step",
       "prompt": "3. Classic subxiphoid landmark (if ultrasound genuinely isn't available)",
-      "body": "1. Patient supine, head of bed 30-45° to pool the effusion inferiorly.\n2. Entry point 1-2 cm left and inferior to the xiphoid process.\n3. Advance the needle at a shallow 15-30° angle to the skin, aiming toward the left shoulder, under continuous gentle aspiration.\n\nIf an ECG lead is clipped to the needle hub, ST-segment elevation or ectopy means the needle tip is touching ventricular myocardium — withdraw slightly.",
+      "body": "1. Patient supine, head of bed 30-45° to pool the effusion inferiorly.\n2. Entry point 1-2 cm left and inferior to the xiphoid process.\n3. Advance the needle at about 30° to the skin, aiming toward the left shoulder, under continuous gentle aspiration. Steepen the angle only if the first pass gets no fluid.\n\nIf an ECG lead is clipped to the needle hub, ST-segment elevation or ectopy means the needle tip is touching ventricular myocardium — withdraw slightly.",
       "diagram": {
         "title": "Subxiphoid approach, on the heart's surface projection",
-        "caption": "Front view: the patient's left is on the right of the picture, where the left ventricle and apex sit. From the entry point just below and to the left of the xiphoid, the needle passes under the costal margin at a shallow 15-30 degrees to the skin, aimed at the left shoulder, to meet the inferior (diaphragmatic) surface of the heart — mostly right ventricle, which is why ECG ST elevation or ectopy from a needle-clipped lead means myocardium. The left lobe of the liver lies just deep to the entry point. Where ultrasound is available it chooses the window instead, often the apex, where the fluid is deepest and closest. The overlay is placed by hand on an engraving; on the patient the landmark is the xiphoid tip you palpate.",
+        "caption": "Front view: the patient's left is on the right of the picture, where the left ventricle and apex sit. From the entry point just below and to the left of the xiphoid, the needle passes under the costal margin at about 30 degrees to the skin, aimed at the left shoulder, to meet the inferior (diaphragmatic) surface of the heart — mostly right ventricle, which is why ECG ST elevation or ectopy from a needle-clipped lead means myocardium. The left lobe of the liver lies just deep to the entry point. Where ultrasound is available it chooses the window instead, often the apex, where the fluid is deepest and closest. The overlay is placed by hand on an engraving; on the patient the landmark is the xiphoid tip you palpate.",
         "viewBox": [
           60,
           130,
@@ -297,7 +307,7 @@
               267,
               221
             ],
-            "text": "15-30 degrees to skin,",
+            "text": "about 30 degrees to skin,",
             "fontSize": 9,
             "fill": "text"
           },
