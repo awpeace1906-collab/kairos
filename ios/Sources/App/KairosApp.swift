@@ -62,7 +62,7 @@ struct KairosApp: App {
                     content.load()
                     showOnboarding = !onboardingSeen
                 }
-                .onChange(of: scenePhase) { sessionStore.scenePhaseChanged($0) }
+                .onValueChange(of: scenePhase) { sessionStore.scenePhaseChanged($0) }
                 .sheet(isPresented: $showOnboarding) {
                     OnboardingView {
                         onboardingSeen = true
@@ -70,6 +70,26 @@ struct KairosApp: App {
                     }
                 }
         }
+    }
+}
+
+/// `onChange(of:perform:)` is deprecated in iOS 17, but the app still deploys
+/// back to iOS 16 — so take the two-parameter closure where it exists and keep
+/// the old single-parameter call fenced off in a deprecated wrapper (Swift
+/// doesn't re-warn for deprecated uses inside a deprecated declaration).
+private extension View {
+    @ViewBuilder
+    func onValueChange<V: Equatable>(of value: V, perform action: @escaping (V) -> Void) -> some View {
+        if #available(iOS 17, *) {
+            onChange(of: value) { _, newValue in action(newValue) }
+        } else {
+            legacyOnChange(of: value, perform: action)
+        }
+    }
+
+    @available(iOS, introduced: 16.0, deprecated: 17.0, message: "Superseded by onChange(of:initial:_:)")
+    func legacyOnChange<V: Equatable>(of value: V, perform action: @escaping (V) -> Void) -> some View {
+        onChange(of: value, perform: action)
     }
 }
 
