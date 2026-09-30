@@ -106,3 +106,19 @@ export function routeFor(mod) {
 }
 
 export const iso = (d = new Date()) => d.toISOString().slice(0, 10);
+
+/**
+ * Deterministic "generated at" stamp for the built indexes: the newest date
+ * found in the content itself (last_reviewed or a changelog entry), never the
+ * wall clock. Stamping today's date made the committed indexes go stale at
+ * midnight, so content-ci's staleness check failed on any later push or
+ * scheduled run even when nothing had changed.
+ */
+export function contentStamp(mods) {
+  let latest = "";
+  for (const m of mods) {
+    const dates = [m.json.last_reviewed, ...(m.json.changelog || []).map((c) => c.date)];
+    for (const d of dates) if (typeof d === "string" && /^\d{4}-\d{2}-\d{2}$/.test(d) && d > latest) latest = d;
+  }
+  return (latest || "1970-01-01") + "T00:00:00Z";
+}

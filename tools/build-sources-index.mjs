@@ -4,7 +4,7 @@
 // registry (content/config/citations.json) will replace the free text later.
 import { writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { loadModules, routeFor, iso, CONTENT_DIR } from "./lib/content.mjs";
+import { loadModules, routeFor, contentStamp, CONTENT_DIR } from "./lib/content.mjs";
 
 const mods = await loadModules();
 
@@ -63,7 +63,7 @@ items.sort((a, b) => {
 });
 
 const out = {
-  generatedAt: iso() + "T00:00:00Z",
+  generatedAt: contentStamp(mods),
   groupOrder: BUCKET_ORDER,
   count: items.length,
   items,

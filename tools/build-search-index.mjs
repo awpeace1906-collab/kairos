@@ -2,7 +2,7 @@
 // never hand-maintained (Search_TOC_Design_Spec.md).
 import { writeFile } from "node:fs/promises";
 import { join } from "node:path";
-import { loadModules, routeFor, iso, CONTENT_DIR } from "./lib/content.mjs";
+import { loadModules, routeFor, contentStamp, CONTENT_DIR } from "./lib/content.mjs";
 
 const mods = await loadModules();
 
@@ -25,7 +25,7 @@ const entries = mods.map((mod) => {
 
 entries.sort((a, b) => (a.section + a.category + a.title).localeCompare(b.section + b.category + b.title));
 
-const out = { generatedAt: iso() + "T00:00:00Z", entries };
+const out = { generatedAt: contentStamp(mods), entries };
 await writeFile(join(CONTENT_DIR, "search-index.json"), JSON.stringify(out, null, 2) + "\n");
 console.log(`✓ search-index.json — ${entries.length} entries`);
 

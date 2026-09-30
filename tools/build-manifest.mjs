@@ -3,7 +3,7 @@
 import { writeFile, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { createHash } from "node:crypto";
-import { loadModules, contentHash, iso, CONTENT_DIR } from "./lib/content.mjs";
+import { loadModules, contentHash, contentStamp, CONTENT_DIR } from "./lib/content.mjs";
 
 const mods = await loadModules();
 const modules = {};
@@ -57,7 +57,7 @@ async function listAssets(modules) {
 const assets = await listAssets(mods);
 
 const out = {
-  generatedAt: iso() + "T00:00:00Z",
+  generatedAt: contentStamp(mods),
   schemaVersion: 1,
   contentBaseHint: process.env.CONTENT_BASE_URL || "https://content.kairos.example/v1/",
   modules: Object.fromEntries(Object.keys(modules).sort().map((k) => [k, modules[k]])),
