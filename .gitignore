@@ -21,3 +21,6 @@ ios/build/
 # Editor
 .vscode/
 *.swp
+
+# Local archives of the project (never commit)
+*.zip
