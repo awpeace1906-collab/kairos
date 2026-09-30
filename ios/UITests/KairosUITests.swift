@@ -199,4 +199,37 @@ final class KairosUITests: XCTestCase {
         app.buttons["axis-kb-done"].firstMatch.tap()
         XCTAssertTrue(app.keyboards.firstMatch.waitForNonExistence(timeout: 3), "keyboard did not dismiss")
     }
+
+    /// Calculators → search → Age-Adjusted D-Dimer: age 78, 650 ng/mL FEU →
+    /// cutoff 780 and a negative result. Guards the module a 404 page once
+    /// replaced on a device.
+    func testAgeAdjustedDDimerFlow() {
+        openSection("calculators")
+        // .searchable hides the field until the list is pulled down.
+        let search = app.searchFields.firstMatch
+        if !search.waitForExistence(timeout: 3) { app.swipeDown() }
+        XCTAssertTrue(search.waitForExistence(timeout: 5), "search field never appeared")
+        search.tap(); search.typeText("D-dimer")
+        let row = app.buttons["row-age-adjusted-d-dimer"].firstMatch
+        XCTAssertTrue(row.waitForExistence(timeout: 5), "D-dimer row missing")
+        row.tap()
+
+        let age = app.textFields["field-Age"].firstMatch
+        XCTAssertTrue(age.waitForExistence(timeout: 5), "calculator did not open")
+        age.tap(); age.typeText("78")
+        let dd = app.textFields["field-Measured D-dimer"].firstMatch
+        dd.tap(); dd.typeText("650")
+        let done = app.buttons["Done entering Measured D-dimer"].firstMatch
+        if done.exists { done.tap() }
+        XCTAssertTrue(text(containing: "780").waitForExistence(timeout: 5), "cutoff not shown")
+
+        let picker = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "D-dimer units")).firstMatch
+        XCTAssertTrue(picker.waitForExistence(timeout: 5))
+        picker.tap()
+        let option = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "ng/mL")).firstMatch
+        XCTAssertTrue(option.waitForExistence(timeout: 5), "units menu did not open")
+        option.tap()
+        XCTAssertTrue(text(containing: "D-dimer negative").waitForExistence(timeout: 5))
+        let shot = XCTAttachment(screenshot: app.screenshot()); shot.name = "d-dimer"; shot.lifetime = .keepAlways; add(shot)
+    }
 }

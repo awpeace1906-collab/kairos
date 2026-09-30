@@ -114,6 +114,16 @@ final class EngineTests: XCTestCase {
         XCTAssertTrue(ContentStore.shouldDownload(remoteHash: "b", remoteVersion: 1, currentHash: nil, currentVersion: 0))
     }
 
+    /// A download must be JSON, the requested module, at the promised version —
+    /// a GitHub Pages 404 page (HTML) was once saved as a module.
+    func testDownloadedModuleCheck() {
+        let good = Data(#"{"id":"age-adjusted-d-dimer","content_version":1}"#.utf8)
+        XCTAssertNoThrow(try ContentStore.checkModule(good, id: "age-adjusted-d-dimer", version: 1))
+        XCTAssertThrowsError(try ContentStore.checkModule(Data("<!DOCTYPE html>\n<html>404</html>".utf8), id: "age-adjusted-d-dimer", version: 1))
+        XCTAssertThrowsError(try ContentStore.checkModule(good, id: "wells-pe", version: 1))
+        XCTAssertThrowsError(try ContentStore.checkModule(good, id: "age-adjusted-d-dimer", version: 2))
+    }
+
     /// The bundle fingerprint is stable for the same bytes and changes with them,
     /// and the bundled manifest decodes with a hash for every module.
     func testBundleFingerprintAndManifestHashes() throws {

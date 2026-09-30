@@ -155,7 +155,9 @@ final class ContentStore: ObservableObject {
         // An OTA copy downloaded under this bundle wins; anything else in
         // Caches/ (no record) is ignored in favor of the bundled baseline.
         if otaHashes[key] != nil, let data = try? Data(contentsOf: cachesDir.appendingPathComponent(relPath)) {
-            return (entry, data)
+            if (try? JSONSerialization.jsonObject(with: data)) != nil { return (entry, data) }
+            // Unreadable copy: forget it so the next launch re-downloads it.
+            var h = otaHashes; h[key] = nil; otaHashes = h
         }
         return (entry, try bundledData(relPath))
     }
@@ -229,8 +231,18 @@ final class ContentStore: ObservableObject {
                 guard Self.shouldDownload(remoteHash: m.hash, remoteVersion: m.contentVersion,
                                           currentHash: current?.0, currentVersion: current?.1 ?? 0)
                 else { continue }
-                let src = URLRequest(url: remoteBase.appendingPathComponent(m.path), cachePolicy: .reloadRevalidatingCacheData)
-                let (moduleData, _) = try await URLSession.shared.data(for: src)
+                // One bad module (a 404 page mid-deploy, a dropped connection)
+                // is skipped and retried next launch; it must not stop the rest
+                // or be recorded as installed.
+                let moduleData: Data
+                do {
+                    moduleData = try await fetchValidated(remoteBase.appendingPathComponent(m.path))
+                    try Self.checkModule(moduleData, id: (m.path as NSString).lastPathComponent.replacingOccurrences(of: ".json", with: ""),
+                                         version: m.contentVersion)
+                } catch {
+                    print("[content] skipped \(key): \(error)")
+                    continue
+                }
                 let dest = cachesDir.appendingPathComponent(m.path)
                 try FileManager.default.createDirectory(at: dest.deletingLastPathComponent(), withIntermediateDirectories: true)
                 try moduleData.write(to: dest, options: .atomic)
@@ -254,14 +266,35 @@ final class ContentStore: ObservableObject {
         }
     }
 
+    enum FetchError: Error { case http(Int), notJSON, wrongModule(String) }
+
+    /// GET that only returns a clean HTTP 200 JSON body. GitHub Pages answers a
+    /// missing file (e.g. mid-deploy) with a 404 HTML page, which the old code
+    /// saved as the module — "Unexpected character '<'" — and never retried.
+    /// Revalidates rather than trusting URLSession's cache: Pages sends
+    /// max-age=600, which could hide a fresh deploy for ten minutes.
+    private func fetchValidated(_ url: URL) async throws -> Data {
+        let req = URLRequest(url: url, cachePolicy: .reloadRevalidatingCacheData)
+        let (data, response) = try await URLSession.shared.data(for: req)
+        let status = (response as? HTTPURLResponse)?.statusCode ?? 0
+        guard status == 200 else { throw FetchError.http(status) }
+        guard (try? JSONSerialization.jsonObject(with: data)) != nil else { throw FetchError.notJSON }
+        return data
+    }
+
+    /// A downloaded module must be the one asked for, at the promised version.
+    nonisolated static func checkModule(_ data: Data, id: String, version: Int) throws {
+        guard let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any] else { throw FetchError.notJSON }
+        guard obj["id"] as? String == id, obj["content_version"] as? Int == version else {
+            throw FetchError.wrongModule("expected \(id) v\(version)")
+        }
+    }
+
     /// Fetch `relPath` from `remoteBase` and persist it into Caches/ under the same
     /// relative path, returning the raw bytes for the caller to decode.
     @discardableResult
     private func fetchAndCache(_ remoteBase: URL, _ relPath: String) async throws -> Data {
-        // Revalidate rather than trust URLSession's cache: GitHub Pages sends
-        // max-age=600, which could hide a fresh deploy for ten minutes.
-        let req = URLRequest(url: remoteBase.appendingPathComponent(relPath), cachePolicy: .reloadRevalidatingCacheData)
-        let (data, _) = try await URLSession.shared.data(for: req)
+        let data = try await fetchValidated(remoteBase.appendingPathComponent(relPath))
         let dest = cachesDir.appendingPathComponent(relPath)
         try FileManager.default.createDirectory(at: dest.deletingLastPathComponent(), withIntermediateDirectories: true)
         try data.write(to: dest, options: .atomic)
