@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T00:00:00Z",
+  "generatedAt": "2026-09-30T00:00:00Z",
   "entries": [
     {
       "id": "apfel-ponv",
@@ -2058,6 +2058,37 @@
         "ed",
         "icu",
         "or"
+      ]
+    },
+    {
+      "id": "age-adjusted-d-dimer",
+      "title": "Age-Adjusted D-Dimer",
+      "section": "Calculators",
+      "category": "Pulmonary / PE / DVT / Resp Failure",
+      "tags": [
+        "pulmonary embolism",
+        "d-dimer",
+        "venous thromboembolism",
+        "elderly",
+        "ED"
+      ],
+      "keywords": [
+        "age times 10",
+        "age × 10 ng/mL",
+        "D-dimer over 50",
+        "rule out PE",
+        "avoid CTPA",
+        "FEU",
+        "age adjusted D-dimer",
+        "age-adjusted D-dimer cutoff",
+        "ADJUST-PE",
+        "D-dimer age x 10",
+        "age x 10 D-dimer"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/pulmonary-pe-dvt-resp-failure/age-adjusted-d-dimer",
+      "settingEmphasis": [
+        "ed"
       ]
     },
     {

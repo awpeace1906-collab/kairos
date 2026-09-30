@@ -99,6 +99,30 @@ final class EngineTests: XCTestCase {
         XCTAssertTrue(empty.formulaValues.isEmpty)
     }
 
+    /// Bundled module: max(500, age × 10) floor, the select's unit factor, and
+    /// the ratio bands — same cases as tools/test.mjs.
+    func testAgeAdjustedDDimer() throws {
+        let url = try XCTUnwrap(ContentAssets.bundledURL("modules/calculators/pulmonary/age-adjusted-d-dimer.json"))
+        let calc = try decode(Calculator.self, String(decoding: try Data(contentsOf: url), as: UTF8.self))
+        func run(_ i: [String: String]) -> CalcResult { CalculatorEngine.run(calc, itemChoices: [:], inputs: i) }
+        func val(_ r: CalcResult, _ k: String) -> Double? { r.formulaValues.first { $0.key == k }?.value }
+
+        let young = run(["age": "45", "ddimer": "480", "unit": "1"])
+        XCTAssertEqual(val(young, "cutoff"), 500)
+        XCTAssertEqual(young.bandsByKey["ratio"]?.first?.severity, "low")
+
+        let old = run(["age": "78", "ddimer": "650", "unit": "1"])
+        XCTAssertEqual(val(old, "cutoff"), 780)
+        XCTAssertEqual(val(old, "ratio"), 0.83)
+        XCTAssertEqual(old.bandsByKey["ratio"]?.first?.severity, "low")
+
+        let mg = run(["age": "78", "ddimer": "0.9", "unit": "1000"])
+        XCTAssertEqual(mg.bandsByKey["ratio"]?.first?.severity, "moderate")
+
+        let edge = run(["age": "70", "ddimer": "700", "unit": "1"])
+        XCTAssertEqual(edge.bandsByKey["ratio"]?.first?.severity, "moderate")
+    }
+
     func testExternalEngineIsIncomplete() throws {
         let json = """
         {"id":"t-ext","section":"Calculators","category":"Test","title":"T","contentType":"calculator",

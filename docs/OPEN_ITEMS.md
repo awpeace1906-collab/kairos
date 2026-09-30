@@ -12,8 +12,8 @@ append-only chronological record; trust it over any summary above it for
 "what happened when."
 
 ## ▶ NEXT SESSION — start here (updated 2026-09-26)
-State: **441 modules**, pipeline green (validate 441/0, test 363/0), iOS unit
-tests 27/27 and UI tests green, all three CI workflows green. Latest work: EKG
+State: **442 modules**, pipeline green (validate 442/0, test 376/0), iOS unit
+tests 28/28 and UI tests green, all three CI workflows green. Latest work: EKG
 Axis Interpreter (first `engine: "builtin"` calculator), structured prose and
 phone-safe tables, Gray's plate overlays, pericardiocentesis angle set to
 about 30°. The one remaining EKG axis item (sex-specific QRS-T cutoffs) is
@@ -249,6 +249,21 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-09-30 — **Age-adjusted D-dimer calculator added** (`calculators/pulmonary/age-adjusted-d-dimer`,
+  → 442 modules). Wells PE already said it "pairs with PERC and age-adjusted
+  D-dimer" but no such calculator existed. Formula engine: cutoff
+  max(500, age × 10) ng/mL FEU (also shown in mg/L), and measured ÷ cutoff
+  with a negative band (< 1: no CTPA in non-high / PE-unlikely patients) and
+  a positive band. Units select (ng/mL or mg/L FEU); DDU assays and
+  non-500 conventional cutoffs are told to use the lab's own guidance rather
+  than a guessed conversion. Six sources verified on PubMed: ADJUST-PE
+  (JAMA 2014), Douma (BMJ 2010), Schouten meta-analysis (BMJ 2013), ACP best
+  practice advice (Ann Intern Med 2015), 2019 ESC PE guideline, ACEP 2018
+  clinical policy. Tests: 11 JS assertions, 1 Swift test (bundled module).
+  **Fixed along the way:** the web formula view printed only each band's
+  label, while iOS also showed risk / disposition / detail, so salicylate,
+  CKD-EPI, Winters, Maddrey and Baux had been silently dropping text on the
+  web. The web now renders the same fields as iOS. SW cache v17.
 - 2026-09-26 — **EKG Axis Interpreter shipped** (`calculators/cardiovascular/ekg-axis-interpreter`,
   from a handoff package framed in Claude chat). First code-backed calculator:
   new `engine: "builtin"` + `tool: "ekg-axis"` + a schema-validated

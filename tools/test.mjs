@@ -120,6 +120,27 @@ if (msi) {
     (r.bandsByKey["msi"] || []).some((b) => b.min === 1.7 && /high risk/i.test(b.label)));
 }
 
+const aadd = byId["age-adjusted-d-dimer"];
+if (aadd) {
+  const val = (r, k) => r.results.find((x) => x.key === k)?.value;
+  const band = (r, k) => (r.bandsByKey[k] || [])[0]?.severity;
+  const young = runCalculator(aadd, { inputs: { age: "45", ddimer: "480", unit: "1" } });
+  eq("Age-adj D-dimer: age 45 keeps the 500 floor", val(young, "cutoff"), 500);
+  eq("Age-adj D-dimer: 480 at age 45 is negative", band(young, "ratio"), "low");
+  const old = runCalculator(aadd, { inputs: { age: "78", ddimer: "650", unit: "1" } });
+  eq("Age-adj D-dimer: age 78 → cutoff 780 ng/mL", val(old, "cutoff"), 780);
+  eq("Age-adj D-dimer: 780 ng/mL = 0.78 mg/L", val(old, "cutoffMg"), 0.78);
+  eq("Age-adj D-dimer: 650 at age 78 is negative (0.83×)", val(old, "ratio"), 0.83);
+  eq("Age-adj D-dimer: 0.83× lands in the negative band", band(old, "ratio"), "low");
+  const mg = runCalculator(aadd, { inputs: { age: "78", ddimer: "0.9", unit: "1000" } });
+  eq("Age-adj D-dimer: 0.9 mg/L at age 78 is positive", band(mg, "ratio"), "moderate");
+  const edge = runCalculator(aadd, { inputs: { age: "70", ddimer: "700", unit: "1" } });
+  eq("Age-adj D-dimer: exactly at cutoff is positive", band(edge, "ratio"), "moderate");
+  const noUnit = runCalculator(aadd, { inputs: { age: "70", ddimer: "700" } });
+  eq("Age-adj D-dimer: cutoff shows before units are picked", val(noUnit, "cutoff"), 700);
+  eq("Age-adj D-dimer: no ratio until units are picked", val(noUnit, "ratio"), undefined);
+}
+
 const hs = byId["holliday-segar-maintenance-fluids"];
 if (hs) {
   const r8 = runCalculator(hs, { inputs: { weight: "8" } });

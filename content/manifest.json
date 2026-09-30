@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T00:00:00Z",
+  "generatedAt": "2026-09-30T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
@@ -656,6 +656,15 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2027-03-14"
+    },
+    "calculators/pulmonary/age-adjusted-d-dimer": {
+      "content_version": 1,
+      "hash": "d458efc861d6e0f5",
+      "path": "modules/calculators/pulmonary/age-adjusted-d-dimer.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2026-12-30"
     },
     "calculators/pulmonary/bode-index": {
       "content_version": 1,

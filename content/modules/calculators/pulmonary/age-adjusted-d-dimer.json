@@ -1,0 +1,55 @@
+{
+  "id": "age-adjusted-d-dimer",
+  "section": "Calculators",
+  "category": "Pulmonary / PE / DVT / Resp Failure",
+  "title": "Age-Adjusted D-Dimer",
+  "settingEmphasis": ["ed"],
+  "aliases": ["age adjusted D-dimer", "age-adjusted D-dimer cutoff", "ADJUST-PE", "D-dimer age x 10", "age x 10 D-dimer"],
+  "tags": ["pulmonary embolism", "d-dimer", "venous thromboembolism", "elderly", "ED"],
+  "keywords": ["age times 10", "age × 10 ng/mL", "D-dimer over 50", "rule out PE", "avoid CTPA", "FEU"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-09-30",
+  "next_review_due": "2026-12-30",
+  "review_tier": 1,
+  "sources": [
+    "Righini M, Van Es J, Den Exter PL, et al. Age-adjusted D-dimer cutoff levels to rule out pulmonary embolism: the ADJUST-PE study. JAMA. 2014;311(11):1117-1124. doi:10.1001/jama.2014.2135",
+    "Douma RA, le Gal G, Söhne M, et al. Potential of an age adjusted D-dimer cut-off value to improve the exclusion of pulmonary embolism in older patients: a retrospective analysis of three large cohorts. BMJ. 2010;340:c1475. doi:10.1136/bmj.c1475",
+    "Schouten HJ, Geersing GJ, Koek HL, et al. Diagnostic accuracy of conventional or age adjusted D-dimer cut-off values in older patients with suspected venous thromboembolism: systematic review and meta-analysis. BMJ. 2013;346:f2492. doi:10.1136/bmj.f2492",
+    "Raja AS, Greenberg JO, Qaseem A, et al. Evaluation of patients with suspected acute pulmonary embolism: best practice advice from the Clinical Guidelines Committee of the American College of Physicians. Ann Intern Med. 2015;163(9):701-711. doi:10.7326/M14-1772",
+    "Konstantinides SV, Meyer G, Becattini C, et al. 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism. Eur Heart J. 2020;41(4):543-603. doi:10.1093/eurheartj/ehz405",
+    "American College of Emergency Physicians Clinical Policies Subcommittee on Thromboembolic Disease (Wolf SJ, Hahn SA, Nentwich LM, et al.). Clinical policy: critical issues in the evaluation and management of adult patients presenting to the emergency department with suspected acute venous thromboembolic disease. Ann Emerg Med. 2018;71(5):e59-e109. doi:10.1016/j.annemergmed.2018.03.006"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-09-30", "change": "Initial entry — a gap: Wells PE already pointed to an age-adjusted D-dimer that did not exist. Cutoff max(500, age × 10) ng/mL FEU, with the measured value compared against it. All six sources verified against PubMed." }
+  ],
+  "engine": "formula",
+  "settings": ["ED"],
+  "purpose": "Raises the D-dimer cutoff for patients over 50 (age × 10 ng/mL instead of 500), so fewer older patients with a non-high pretest probability of PE go to CT. Use only after Wells, revised Geneva, or PERC has placed the patient in the non-high / PE-unlikely group.",
+  "inputs": [
+    { "key": "age", "label": "Age", "type": "number", "unit": "years", "min": 18, "max": 120 },
+    { "key": "ddimer", "label": "Measured D-dimer", "type": "number", "min": 0, "max": 100000 },
+    {
+      "key": "unit",
+      "label": "D-dimer units (as your lab reports it)",
+      "type": "select",
+      "options": [
+        { "label": "ng/mL FEU (= µg/L)", "value": 1 },
+        { "label": "mg/L FEU (= µg/mL)", "value": 1000 }
+      ]
+    }
+  ],
+  "formulas": [
+    { "key": "cutoff", "label": "Age-adjusted cutoff", "expression": "max(500, age * 10)", "unit": "ng/mL FEU", "precision": 0 },
+    { "key": "cutoffMg", "label": "Same cutoff in mg/L", "expression": "max(500, age * 10) / 1000", "unit": "mg/L FEU", "precision": 2 },
+    { "key": "ratio", "label": "Measured D-dimer ÷ cutoff", "expression": "(ddimer * unit) / max(500, age * 10)", "unit": "×", "precision": 2 }
+  ],
+  "interpretation": [
+    { "forKey": "cutoff", "min": 0, "max": 500, "label": "Age 50 or under: the standard 500 ng/mL cutoff applies", "severity": "info" },
+    { "forKey": "cutoff", "min": 501, "max": 99999, "label": "Over 50: cutoff = age × 10 ng/mL", "severity": "info" },
+    { "forKey": "ratio", "min": 0, "max": 0.99, "label": "Below the age-adjusted cutoff: D-dimer negative", "disposition": "With a non-high or PE-unlikely pretest probability, PE is excluded: no CT pulmonary angiography. ADJUST-PE 3-month failure rate 0.3% in patients between 500 and their age-adjusted cutoff.", "severity": "low" },
+    { "forKey": "ratio", "min": 1, "max": 99999, "label": "At or above the cutoff: D-dimer positive", "disposition": "PE is not excluded. Image with CT pulmonary angiography, or V/Q scan if CTPA is contraindicated or unavailable.", "severity": "moderate" }
+  ],
+  "notes": "WHO IT IS FOR: patients over 50 with a non-high (revised Geneva) or PE-unlikely (Wells ≤ 4) pretest probability, or low probability that fails PERC. High pretest probability goes straight to imaging; do not order a D-dimer.\n\nUNITS: the studies used the conventional 500 µg/L cutoff, and µg/L equals ng/mL. If your lab reports D-dimer units (DDU) or uses a conventional cutoff other than 500 ng/mL FEU, do not apply this formula; use your laboratory's own age-adjusted guidance.\n\nDO NOT STACK: YEARS was validated without age adjustment, so use one strategy or the other, not both.\n\nEVIDENCE: ADJUST-PE was a prospective management study in emergency department outpatients with suspected PE. In patients 75 and older with a non-high probability, the age-adjusted cutoff raised the share in whom PE could be excluded from 6.4% to 29.7%, with no additional false negatives. For suspected DVT, the support is the Schouten meta-analysis of suspected VTE (sensitivity above 97% in every age group); there is no DVT management study of the same size.",
+  "buildNote": "Formula engine. max() keeps the 500 floor, so one expression covers every age; the ratio is compared with 1, and rounding to 2 decimals puts 0.995 and above in the positive band."
+}

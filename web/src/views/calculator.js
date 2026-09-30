@@ -171,7 +171,20 @@ function resultView(mod, r) {
         { class: "formula-result" },
         el("span", { class: "flabel" }, res.label),
         el("strong", {}, `${res.value}${res.unit ? " " + res.unit : ""}`),
-        (r.bandsByKey[res.key] || []).map((b) => el("p", { class: `band ${severityClass(b.severity)}` }, b.label))
+        // Same fields as iOS bandCard: label, then risk / disposition / detail
+        // when present (salicylate, CKD-EPI, Maddrey, Baux, Winters and
+        // age-adjusted D-dimer carry them).
+        (r.bandsByKey[res.key] || []).map((b) =>
+          b.risk || b.disposition || b.detail
+            ? el(
+                "div",
+                { class: `band ${severityClass(b.severity)}` },
+                el("strong", {}, b.label),
+                b.risk ? el("p", {}, b.risk) : null,
+                richText(b.disposition, "dispo"),
+                b.detail ? el("p", { class: "muted" }, b.detail) : null
+              )
+            : el("p", { class: `band ${severityClass(b.severity)}` }, b.label))
       )
     );
   }
