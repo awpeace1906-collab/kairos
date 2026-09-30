@@ -33,6 +33,9 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v5
+        with:
+          # Full history so the version-bump guard can read the base commit.
+          fetch-depth: 0
       - uses: actions/setup-node@v5
         with:
           node-version: "22"
@@ -41,6 +44,14 @@ jobs:
       - name: Validate schemas + invariants
         working-directory: tools
         run: npm run validate
+      - name: Content changes carry a content_version bump
+        # Installed iOS apps only re-download a module when content_version
+        # goes up, so an edit without a bump never reaches them. Compares with
+        # the push's previous head or the PR base; skipped on the schedule.
+        working-directory: tools
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: node check-version-bumps.mjs "$BASE_SHA"
       - name: American English guard
         working-directory: tools
         run: npm run check-spelling

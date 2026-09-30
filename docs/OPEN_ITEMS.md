@@ -249,6 +249,23 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-09-30 — **content-ci guard: content edits must bump content_version**
+  (`tools/check-version-bumps.mjs`, `npm run check-version-bumps` for
+  uncommitted edits). Installed iOS apps only re-download a module when its
+  manifest content_version rises, so an edit without a bump never reaches
+  them. CI compares every changed module with the push's previous head (or
+  PR base) as parsed JSON and fails on a change with no bump. A history scan
+  found the misses were the bulk passes (settingEmphasis tagging, category
+  cleanup, verification tails): 236 modules today differ from what was
+  first published at their current version. Also: index builds are now
+  date-independent (generatedAt from content dates), and CI runners are
+  pinned to ubuntu-24.04.
+  **Open:** the iOS app prefers a cached OTA copy over the bundle whenever
+  the version is equal, so a device that cached one of those 236 before its
+  latest Xcode install can still show the older text. Proposed fix
+  (needs a rebuild): compare the manifest's per-module hash instead of
+  content_version, and let a cached copy win only when it is newer than the
+  bundle.
 - 2026-09-30 — **Age-adjusted D-dimer calculator added** (`calculators/pulmonary/age-adjusted-d-dimer`,
   → 442 modules). Wells PE already said it "pairs with PERC and age-adjusted
   D-dimer" but no such calculator existed. Formula engine: cutoff
