@@ -24,3 +24,6 @@ ios/build/
 
 # Local archives of the project (never commit)
 *.zip
+
+# Per-developer signing team (see ios/Config/Signing.xcconfig)
+ios/Config/Local.xcconfig

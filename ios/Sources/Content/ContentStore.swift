@@ -1,3 +1,4 @@
+import CryptoKit
 import Foundation
 
 // The delivery state machine from Content_Update_Architecture_Spec.md, iOS side.
@@ -14,8 +15,9 @@ final class ContentStore: ObservableObject {
 
     /// The static host that serves the versioned content/ tree (deploy.yml →
     /// GitHub Pages). The app renders from its bundled copy first, then polls
-    /// this for modules whose content_version increased and swaps them in — no
-    /// App Store submission. Set to nil to pin to the bundled content only.
+    /// this for modules whose content hash differs from the copy it shows (and
+    /// whose version is not lower) and swaps them in — no App Store submission.
+    /// Set to nil to pin to the bundled content only.
     static let remoteBase: URL? = URL(string: "https://awpeace1906-collab.github.io/kairos/content/")
 
     @Published private(set) var sections: [AppSection] = []
@@ -27,6 +29,8 @@ final class ContentStore: ObservableObject {
     @Published private(set) var weightZones: WeightZonesConfig?
     @Published private(set) var tiers: [TiersConfig.Tier] = []
     @Published private(set) var manifest: Manifest?
+    /// The manifest shipped inside this build — the baseline OTA compares against.
+    private var bundledManifest: Manifest?
     @Published private(set) var lastUpdatedModules: [String] = []
     @Published private(set) var loadError: String?
 
@@ -40,7 +44,57 @@ final class ContentStore: ObservableObject {
             .appendingPathComponent("KairosContent", isDirectory: true)
     }
 
+    // OTA bookkeeping. `otaHashes` / `otaVersions` record every module copy
+    // downloaded into Caches/ under the CURRENT bundle; a cached file with no
+    // record is ignored. `bundleKey` fingerprints the bundled manifest so a new
+    // install (Xcode, TestFlight, App Store) starts clean from its own bundle
+    // instead of from copies downloaded under an older one.
+    private static let otaHashesKey = "kairos.ota.hashes.v2"
+    private static let otaVersionsKey = "kairos.ota.versions.v2"
+    private static let bundleKey = "kairos.ota.bundle.v2"
+    private static let legacyVersionsKey = "kairos.manifest.v1"
+    private var otaHashes: [String: String] {
+        get { UserDefaults.standard.dictionary(forKey: Self.otaHashesKey) as? [String: String] ?? [:] }
+        set { UserDefaults.standard.set(newValue, forKey: Self.otaHashesKey) }
+    }
+    private var otaVersions: [String: Int] {
+        get { UserDefaults.standard.dictionary(forKey: Self.otaVersionsKey) as? [String: Int] ?? [:] }
+        set { UserDefaults.standard.set(newValue, forKey: Self.otaVersionsKey) }
+    }
+
+    /// SHA-256 of the bundled manifest.json bytes. Changes whenever the bundled
+    /// content does, so it identifies "which content this build shipped with".
+    nonisolated static func bundleFingerprint(_ manifestData: Data) -> String {
+        SHA256.hash(data: manifestData).map { String(format: "%02x", $0) }.joined()
+    }
+
+    /// Download a module when the published copy differs from the one the app
+    /// shows (by content hash, so an edit that skipped a content_version bump
+    /// still arrives), but never when the published copy has a LOWER version —
+    /// that protects a build whose bundle is ahead of the CDN (unpushed content).
+    nonisolated static func shouldDownload(remoteHash: String, remoteVersion: Int,
+                                           currentHash: String?, currentVersion: Int) -> Bool {
+        remoteHash != currentHash && remoteVersion >= currentVersion
+    }
+
+    /// A different bundle than last launch means a new install: drop every OTA
+    /// copy and record so the new bundle is the baseline. Before this, a copy
+    /// cached under an older build won over the newer bundle whenever the two
+    /// shared a content_version, and could show stale text indefinitely.
+    private func resetOTAIfBundleChanged(_ manifestData: Data) {
+        let fp = Self.bundleFingerprint(manifestData)
+        let d = UserDefaults.standard
+        guard d.string(forKey: Self.bundleKey) != fp else { return }
+        try? FileManager.default.removeItem(at: cachesDir)
+        d.removeObject(forKey: Self.otaHashesKey)
+        d.removeObject(forKey: Self.otaVersionsKey)
+        d.removeObject(forKey: Self.legacyVersionsKey)
+        d.set(fp, forKey: Self.bundleKey)
+    }
+
     func load() {
+        // Must run before anything reads Caches/ (cachedOrBundled below).
+        if let data = try? bundledData("manifest.json") { resetOTAIfBundleChanged(data) }
         do {
             // A prior successful checkForUpdates() run persists a fresher copy of
             // these two into Caches/ — prefer that over the build-time bundle so a
@@ -50,12 +104,16 @@ final class ContentStore: ObservableObject {
             let idx: SearchIndexFile = try cachedOrBundled("search-index.json")
             let zones: WeightZonesConfig = try bundled("config/weight-zones.json")
             let t: TiersConfig = try bundled("config/tiers.json")
-            let m: Manifest = try bundled("manifest.json")
+            let bundledM: Manifest = try bundled("manifest.json")
+            // The last synced manifest (if any, from under this bundle) knows the
+            // paths of modules that exist only OTA; the bundled one does not.
+            let m: Manifest = try cachedOrBundled("manifest.json")
             sections = s.sections.sorted { $0.order < $1.order }
             searchIndex = SearchIndex(entries: idx.entries)
             weightZones = zones
             tiers = t.tiers
             manifest = m
+            bundledManifest = bundledM
         } catch {
             loadError = "Bundled content failed to load: \(error)"
             print("[content] \(loadError!)")
@@ -94,9 +152,11 @@ final class ContentStore: ObservableObject {
         else { throw ContentError.notFound(route) }
         let relPath = manifest.modules[key]!.path        // e.g. "modules/calculators/.../x.json"
 
-        // OTA copy in Caches wins over the bundled baseline.
-        let cached = cachesDir.appendingPathComponent(relPath)
-        if let data = try? Data(contentsOf: cached) { return (entry, data) }
+        // An OTA copy downloaded under this bundle wins; anything else in
+        // Caches/ (no record) is ignored in favor of the bundled baseline.
+        if otaHashes[key] != nil, let data = try? Data(contentsOf: cachesDir.appendingPathComponent(relPath)) {
+            return (entry, data)
+        }
         return (entry, try bundledData(relPath))
     }
 
@@ -154,30 +214,38 @@ final class ContentStore: ObservableObject {
                 sections = s.sections.sorted { $0.order < $1.order }
             }
 
-            let (data, _) = try await URLSession.shared.data(from: remoteBase.appendingPathComponent("manifest.json"))
-            let remote = try decoder.decode(Manifest.self, from: data)
-            var cachedVersions = UserDefaults.standard.dictionary(forKey: "kairos.manifest.v1") as? [String: Int] ?? [:]
-            try FileManager.default.createDirectory(at: cachesDir, withIntermediateDirectories: true)
+            // Persisted so the next launch (even offline) can still find the
+            // paths of modules that exist only OTA — see load().
+            let remote = try decoder.decode(Manifest.self, from: try await fetchAndCache(remoteBase, "manifest.json"))
 
-            // First launch has no UserDefaults record yet — treat the BUNDLED
-            // version as the baseline (not 0), or a fresh install on a device
-            // with network would immediately overwrite newly-bundled content
-            // with whatever is still live on the CDN, even if that's older.
+            // Compare against what the app shows now: the OTA copy if one was
+            // downloaded under this bundle, else the bundled copy (else nothing,
+            // for a module newer than the bundle).
+            var hashes = otaHashes, versions = otaVersions
             var changed: [String] = []
             for (key, m) in remote.modules {
-                let baseline = cachedVersions[key] ?? manifest?.modules[key]?.contentVersion ?? 0
-                guard baseline < m.contentVersion else { continue }
-                let src = remoteBase.appendingPathComponent(m.path)
-                let (moduleData, _) = try await URLSession.shared.data(from: src)
+                let current = hashes[key].map { ($0, versions[key] ?? 0) }
+                    ?? bundledManifest?.modules[key].map { ($0.hash, $0.contentVersion) }
+                guard Self.shouldDownload(remoteHash: m.hash, remoteVersion: m.contentVersion,
+                                          currentHash: current?.0, currentVersion: current?.1 ?? 0)
+                else { continue }
+                let src = URLRequest(url: remoteBase.appendingPathComponent(m.path), cachePolicy: .reloadRevalidatingCacheData)
+                let (moduleData, _) = try await URLSession.shared.data(for: src)
                 let dest = cachesDir.appendingPathComponent(m.path)
                 try FileManager.default.createDirectory(at: dest.deletingLastPathComponent(), withIntermediateDirectories: true)
                 try moduleData.write(to: dest, options: .atomic)
-                cachedVersions[key] = m.contentVersion
+                hashes[key] = m.hash
+                versions[key] = m.contentVersion
                 changed.append(key)
             }
+            // Always adopt the published manifest, not only when something was
+            // downloaded: otherwise a launch with nothing new fell back to the
+            // bundled manifest and an OTA-only module (e.g. one added after this
+            // build) could no longer be opened.
+            manifest = remote
             if !changed.isEmpty {
-                UserDefaults.standard.set(cachedVersions, forKey: "kairos.manifest.v1")
-                manifest = remote
+                otaHashes = hashes
+                otaVersions = versions
                 lastUpdatedModules = changed
             }
         } catch {
@@ -190,7 +258,10 @@ final class ContentStore: ObservableObject {
     /// relative path, returning the raw bytes for the caller to decode.
     @discardableResult
     private func fetchAndCache(_ remoteBase: URL, _ relPath: String) async throws -> Data {
-        let (data, _) = try await URLSession.shared.data(from: remoteBase.appendingPathComponent(relPath))
+        // Revalidate rather than trust URLSession's cache: GitHub Pages sends
+        // max-age=600, which could hide a fresh deploy for ten minutes.
+        let req = URLRequest(url: remoteBase.appendingPathComponent(relPath), cachePolicy: .reloadRevalidatingCacheData)
+        let (data, _) = try await URLSession.shared.data(for: req)
         let dest = cachesDir.appendingPathComponent(relPath)
         try FileManager.default.createDirectory(at: dest.deletingLastPathComponent(), withIntermediateDirectories: true)
         try data.write(to: dest, options: .atomic)

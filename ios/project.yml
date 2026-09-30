@@ -5,6 +5,12 @@ options:
     iOS: "16.0"
   createIntermediateGroups: true
 
+# Signing team comes from Config/Local.xcconfig (git-ignored) via
+# Config/Signing.xcconfig, so regenerating never wipes it. See those files.
+configFiles:
+  Debug: Config/Signing.xcconfig
+  Release: Config/Signing.xcconfig
+
 settings:
   base:
     # The Settings/About screen reads this automatically (AppConfig.appVersion ->

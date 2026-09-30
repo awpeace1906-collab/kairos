@@ -260,12 +260,20 @@ Still open from the prior cycle:
   first published at their current version. Also: index builds are now
   date-independent (generatedAt from content dates), and CI runners are
   pinned to ubuntu-24.04.
-  **Open:** the iOS app prefers a cached OTA copy over the bundle whenever
-  the version is equal, so a device that cached one of those 236 before its
-  latest Xcode install can still show the older text. Proposed fix
-  (needs a rebuild): compare the manifest's per-module hash instead of
-  content_version, and let a cached copy win only when it is newer than the
-  bundle.
+  **Fixed the same day (iOS, needs a rebuild to reach a device):** OTA now
+  compares the manifest's per-module content hash (a missed bump still
+  arrives; a LOWER published version still never overwrites a newer
+  bundle), a new install wipes OTA copies cached under an older bundle
+  (fingerprint of the bundled manifest), and the published manifest is
+  always adopted and persisted, so OTA-only modules stay openable on later
+  launches (before, a launch with nothing new fell back to the bundled
+  manifest and "not found"). Fetches revalidate instead of trusting the
+  10-minute Pages cache. Verified in the simulator: stale copy from an
+  older bundle removed; same-version hash change re-downloaded.
+  **Signing:** the Team ID now lives in git-ignored ios/Config/Local.xcconfig,
+  pulled in by committed Config/Signing.xcconfig via project.yml
+  configFiles, so `xcodegen generate` no longer wipes it (verified: signed
+  generic-iOS build after a regenerate).
 - 2026-09-30 — **Age-adjusted D-dimer calculator added** (`calculators/pulmonary/age-adjusted-d-dimer`,
   → 442 modules). Wells PE already said it "pairs with PERC and age-adjusted
   D-dimer" but no such calculator existed. Formula engine: cutoff

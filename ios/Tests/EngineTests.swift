@@ -99,6 +99,35 @@ final class EngineTests: XCTestCase {
         XCTAssertTrue(empty.formulaValues.isEmpty)
     }
 
+    /// OTA decision: hash decides, but a lower published version never
+    /// overwrites a newer bundle.
+    func testOTAShouldDownload() {
+        // Edit that skipped a version bump: same version, new hash → fetch.
+        XCTAssertTrue(ContentStore.shouldDownload(remoteHash: "b", remoteVersion: 2, currentHash: "a", currentVersion: 2))
+        // Proper bump → fetch.
+        XCTAssertTrue(ContentStore.shouldDownload(remoteHash: "b", remoteVersion: 3, currentHash: "a", currentVersion: 2))
+        // Identical → skip.
+        XCTAssertFalse(ContentStore.shouldDownload(remoteHash: "a", remoteVersion: 2, currentHash: "a", currentVersion: 2))
+        // CDN behind the bundle (unpushed content) → skip.
+        XCTAssertFalse(ContentStore.shouldDownload(remoteHash: "b", remoteVersion: 1, currentHash: "a", currentVersion: 2))
+        // Module newer than the bundle (not in it at all) → fetch.
+        XCTAssertTrue(ContentStore.shouldDownload(remoteHash: "b", remoteVersion: 1, currentHash: nil, currentVersion: 0))
+    }
+
+    /// The bundle fingerprint is stable for the same bytes and changes with them,
+    /// and the bundled manifest decodes with a hash for every module.
+    func testBundleFingerprintAndManifestHashes() throws {
+        let url = try XCTUnwrap(ContentAssets.bundledURL("manifest.json"))
+        let data = try Data(contentsOf: url)
+        let fp = ContentStore.bundleFingerprint(data)
+        XCTAssertEqual(fp.count, 64)
+        XCTAssertEqual(fp, ContentStore.bundleFingerprint(data))
+        XCTAssertNotEqual(fp, ContentStore.bundleFingerprint(data + Data([0x20])))
+        let m = try JSONDecoder().decode(Manifest.self, from: data)
+        XCTAssertFalse(m.modules.isEmpty)
+        XCTAssertTrue(m.modules.values.allSatisfy { !$0.hash.isEmpty })
+    }
+
     /// Bundled module: max(500, age × 10) floor, the select's unit factor, and
     /// the ratio bands — same cases as tools/test.mjs.
     func testAgeAdjustedDDimer() throws {

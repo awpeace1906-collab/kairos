@@ -13,6 +13,21 @@ xcodegen generate
 open Kairos.xcodeproj         # ⌘R, iOS 16+ simulator or device
 ```
 
+### Signing for a real iPhone
+
+Don't pick the team in Xcode's Signing & Capabilities tab — `xcodegen generate`
+rewrites the project and drops it. Put it in a local file instead, once per
+machine:
+
+```bash
+cp Config/Local.xcconfig.example Config/Local.xcconfig   # git-ignored
+# edit it: DEVELOPMENT_TEAM = <your 10-character Team ID>
+```
+
+`Config/Signing.xcconfig` (committed, wired in `project.yml`) includes it, so
+the team survives every regenerate and never lands in this public repo.
+Simulator and CI builds don't need it.
+
 Or headless:
 
 ```bash

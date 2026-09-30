@@ -1,0 +1,13 @@
+// Signing for device builds. Committed; the Team ID is not.
+//
+// `xcodegen generate` rewrites Kairos.xcodeproj from project.yml, so a team
+// picked in Xcode's Signing & Capabilities tab is lost on every regenerate.
+// Instead the team lives in Local.xcconfig (git-ignored, one per machine) and
+// comes in through this file. `#include?` makes it optional: CI builds for the
+// simulator with signing off and has no Local.xcconfig.
+//
+// Setup on a new machine: copy Local.xcconfig.example to Local.xcconfig and
+// put your 10-character Team ID in it (developer.apple.com → Membership).
+#include? "Local.xcconfig"
+
+CODE_SIGN_STYLE = Automatic
