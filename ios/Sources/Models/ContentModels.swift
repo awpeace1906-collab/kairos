@@ -389,6 +389,10 @@ struct AcidBaseContent: Codable, Hashable {
         let label: String; let help: String; let options: Options
     }
     struct PhStatus: Codable, Hashable { let acidemia, alkalemia, normal: String }
+    struct Sample: Codable, Hashable {
+        struct Options: Codable, Hashable { let arterial, venous: String }
+        let label: String; let help: String; let options: Options; let venousPco2Label: String; let estimatedLabel: String
+    }
     struct Primary: Codable, Hashable { let label: String; let detail: String }
     struct Rule: Codable, Hashable { let label: String; let formula: String }
     struct AnionGap: Codable, Hashable { let label, normal, high, correctedNote: String }
@@ -398,6 +402,7 @@ struct AcidBaseContent: Codable, Hashable {
     struct Differential: Codable, Hashable { let title: String; let items: [String]; let note: String? }
 
     let fields: Fields
+    let sample: Sample
     let chronicity: Chronicity
     let phStatus: PhStatus
     let primary: [String: Primary]

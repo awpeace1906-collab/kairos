@@ -20,7 +20,7 @@ const fmt = (v) => (v == null ? "—" : String(v));
 export function renderAcidBaseTool(mod, route) {
   const C = mod.toolContent;
   const saved = session.get(route).abg || {};
-  const st = { chronicity: saved.chronicity || "unknown" };
+  const st = { chronicity: saved.chronicity || "unknown", sample: saved.sample === "venous" ? "venous" : "arterial" };
   for (const k of FIELDS) st[k] = saved[k] ?? "";
   const save = () => session.patch(route, { abg: { ...st } });
 
@@ -30,7 +30,7 @@ export function renderAcidBaseTool(mod, route) {
 
   // ---------------------------------------------------------------- inputs
   function field(key) {
-    const def = C.fields[key];
+    const def = key === "paco2" && st.sample === "venous" ? { ...C.fields.paco2, label: C.sample.venousPco2Label } : C.fields[key];
     const id = `abg-${key}`;
     return el("div", { class: "axis-field" },
       el("label", { class: "field-label", for: id }, def.label, def.unit ? el("span", { class: "unit" }, ` ${def.unit}`) : null),
@@ -41,16 +41,25 @@ export function renderAcidBaseTool(mod, route) {
       def.help ? el("span", { class: "muted abg-help", id: `${id}-help` }, def.help) : null);
   }
 
+  function seg(label, value, options, onPick) {
+    return el("div", { class: "axis-seg", role: "group", "aria-label": label },
+      Object.entries(options).map(([v, text]) => el("button", {
+        type: "button", class: "axis-seg-btn" + (value === v ? " selected" : ""), "aria-pressed": String(value === v),
+        onClick: () => onPick(v),
+      }, text)));
+  }
+
   function renderFields() {
+    const sample = el("div", { class: "abg-chron abg-sample" },
+      el("span", { class: "field-label" }, C.sample.label),
+      seg(C.sample.label, st.sample, C.sample.options, (v) => { st.sample = v; renderFields(); compute(); }),
+      st.sample === "venous" ? el("span", { class: "muted abg-help" }, C.sample.help) : null);
     const chron = el("div", { class: "abg-chron" },
       el("span", { class: "field-label" }, C.chronicity.label),
-      el("div", { class: "axis-seg", role: "group", "aria-label": C.chronicity.label },
-        ["unknown", "acute", "chronic"].map((v) => el("button", {
-          type: "button", class: "axis-seg-btn" + (st.chronicity === v ? " selected" : ""), "aria-pressed": String(st.chronicity === v),
-          onClick: () => { st.chronicity = v; renderFields(); compute(); },
-        }, C.chronicity.options[v]))),
+      seg(C.chronicity.label, st.chronicity, C.chronicity.options, (v) => { st.chronicity = v; renderFields(); compute(); }),
       el("span", { class: "muted abg-help" }, C.chronicity.help));
     fields.replaceChildren(
+      sample,
       el("div", { class: "axis-prt-fields" }, field("ph"), field("paco2"), field("hco3")),
       el("div", { class: "axis-prt-fields abg-lytes" }, field("na"), field("cl"), field("albumin")),
       chron);
@@ -59,7 +68,7 @@ export function renderAcidBaseTool(mod, route) {
   // ---------------------------------------------------------------- compute
   function compute() {
     save();
-    const input = { chronicity: st.chronicity };
+    const input = { chronicity: st.chronicity, sample: st.sample };
     for (const k of FIELDS) input[k] = num(st[k]);
     const r = interpret(input);
     if (r.status === "incomplete") return out.replaceChildren(msg(C.statusMessages.incomplete, "muted"));
@@ -76,10 +85,16 @@ export function renderAcidBaseTool(mod, route) {
     const sev = r.phStatus !== "normal" ? "high" : r.disorders.length ? "moderate" : "low";
     // 1. Headline: primary disorder + pH status
     kids.push(el("div", { class: `axis-headline band sev-${sev}` },
-      el("span", { class: "axis-kicker" }, `pH ${fmt(num(st.ph))}`),
+      el("span", { class: "axis-kicker" }, `pH ${fmt(num(st.ph))}${r.sample === "venous" ? " (venous)" : ""}`),
       el("strong", { class: "axis-cat abg-primary" }, p.label),
       el("span", { class: "axis-sub" }, C.phStatus[r.phStatus]),
       el("span", { class: "muted axis-sub" }, p.detail)));
+    if (r.estimatedArterial) {
+      const e = r.estimatedArterial;
+      kids.push(el("div", { class: "axis-line band sev-info" },
+        el("span", { class: "axis-line-label" }, C.sample.estimatedLabel),
+        el("strong", {}, `pH ${e.ph} · PaCO₂ ${e.paco2} · HCO₃⁻ ${e.hco3}`)));
+    }
     if (r.disorders.length > 1) {
       kids.push(el("div", { class: "axis-line band sev-high" },
         el("span", { class: "axis-line-label" }, "Disorders present"),
@@ -129,7 +144,7 @@ export function renderAcidBaseTool(mod, route) {
     const good = c.key === "appropriate" || c.key.startsWith("fits") || c.key === "acute_or_chronic";
     return el("div", { class: `axis-line band sev-${good ? "low" : "moderate"}` },
       el("span", { class: "axis-line-label" }, rule?.label || c.rule),
-      el("strong", {}, `Expected ${target} ${exp} · measured ${c.actual}`),
+      el("strong", {}, `Expected ${target} ${exp} · ${st.sample === "venous" ? "estimated" : "measured"} ${Math.round(c.actual * 10) / 10}`),
       el("span", {}, C.compensation[c.key] || c.key),
       rule ? el("span", { class: "muted axis-line-detail" }, rule.formula) : null);
   }

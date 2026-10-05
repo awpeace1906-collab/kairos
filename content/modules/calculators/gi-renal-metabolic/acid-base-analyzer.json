@@ -8,7 +8,7 @@
   "tags": ["acid-base", "ABG", "metabolic acidosis", "metabolic alkalosis", "respiratory acidosis", "respiratory alkalosis", "anion gap", "delta ratio", "ED", "ICU"],
   "keywords": ["blood gas", "pH PaCO2 HCO3", "expected compensation", "Winter's formula", "delta delta", "delta gap", "albumin corrected anion gap", "HAGMA", "NAGMA", "GOLD MARK", "acute vs chronic respiratory acidosis", "1 for 10", "4 for 10", "2 for 10", "5 for 10"],
   "contentType": "calculator",
-  "content_version": 1,
+  "content_version": 2,
   "last_reviewed": "2026-10-05",
   "next_review_due": "2027-01-05",
   "review_tier": 1,
@@ -18,15 +18,18 @@
     "Berend K, de Vries APJ, Gans ROB. Physiological approach to assessment of acid-base disturbances. N Engl J Med. 2014;371(15):1434-1445. doi:10.1056/NEJMra1003327 (stepwise approach)",
     "Figge J, Jabor A, Kazda A, Fencl V. Anion gap and hypoalbuminemia. Crit Care Med. 1998;26(11):1807-1810. doi:10.1097/00003246-199811000-00019 (albumin correction, 2.5 per g/dL)",
     "Mehta AN, Emmett JB, Emmett M. GOLD MARK: an anion gap mnemonic for the 21st century. Lancet. 2008;372(9642):892. doi:10.1016/S0140-6736(08)61398-7",
-    "Seifter JL. Integration of acid-base and electrolyte disorders. N Engl J Med. 2014;371(19):1821-1831. doi:10.1056/NEJMra1215672"
+    "Seifter JL. Integration of acid-base and electrolyte disorders. N Engl J Med. 2014;371(19):1821-1831. doi:10.1056/NEJMra1215672",
+    "Bloom BM, Grundlingh J, Bestwick JP, Harris T. The role of venous blood gas in the emergency department: a systematic review and meta-analysis. Eur J Emerg Med. 2014;21(2):81-88. doi:10.1097/MEJ.0b013e32836437cf (pooled venous-arterial differences: pH −0.033, PCO2 +4.41 mmHg, HCO3 +1.03 mmol/L; PCO2 limits of agreement −20.4 to +25.8)",
+    "Byrne AL, Pace NL, Thomas PS, et al. Peripheral venous blood gas analysis for the diagnosis of respiratory failure, hypercarbia and metabolic disturbance in adults. Cochrane Database Syst Rev. 2025;6(6):CD010841. doi:10.1002/14651858.CD010841.pub2 (hypercarbia: sensitivity 97.1%, specificity 53.9%; low-certainty evidence)"
   ],
   "changelog": [
+    { "version": 2, "date": "2026-10-05", "change": "Venous gas mode: a Sample toggle (arterial / venous). Venous values are converted to estimated arterial values with the Bloom 2014 pooled differences, then read with the same rules; flags mark the estimate, any read that leans on PCO2, and a normal venous PCO2 that makes hypercapnia unlikely (Cochrane 2025). Four venous golden vectors added (36 total)." },
     { "version": 1, "date": "2026-10-05", "change": "Initial entry. One read-out from pH, PaCO2 and HCO3 (plus optional Na, Cl, albumin): pH status, primary disorder, expected compensation for all four primary disorders (acute and chronic for respiratory), second-disorder detection, albumin-corrected anion gap, delta ratio, hidden-acidosis check, and differentials. Engine parity-tested on web and iOS against 32 hand-worked golden vectors. Rules verified against Brandis §9.2, 9.3 and 3.3; citations verified on PubMed." }
   ],
   "engine": "builtin",
   "tool": "acid-base",
   "settings": ["ED", "ICU", "OR"],
-  "purpose": "Reads a blood gas the way the stepwise method does: pH, primary disorder, expected compensation, a second disorder if compensation is off, then the anion gap and delta ratio. Enter arterial pH, PaCO₂ and HCO₃; add Na, Cl and albumin for the gap.",
+  "purpose": "Reads a blood gas the way the stepwise method does: pH, primary disorder, expected compensation, a second disorder if compensation is off, then the anion gap and delta ratio. Enter pH, PCO₂ and HCO₃ from an arterial gas, or from a venous gas with the Venous toggle; add Na, Cl and albumin for the gap.",
   "toolContent": {
     "fields": {
       "ph": { "label": "pH" },
@@ -35,6 +38,13 @@
       "na": { "label": "Na⁺", "unit": "mmol/L", "help": "Optional — needed for the anion gap" },
       "cl": { "label": "Cl⁻", "unit": "mmol/L", "help": "Optional — needed for the anion gap" },
       "albumin": { "label": "Albumin", "unit": "g/dL", "help": "Optional — corrects the gap; low albumin hides a gap acidosis" }
+    },
+    "sample": {
+      "label": "Sample",
+      "help": "Venous: arterial values are estimated (pH + 0.033, PCO₂ − 4.4, HCO₃⁻ − 1.0, pooled means). pH and HCO₃⁻ track arterial well; PCO₂ does not for an individual patient. Peripheral venous only — don't use for oxygenation.",
+      "options": { "arterial": "Arterial (ABG)", "venous": "Venous (VBG)" },
+      "venousPco2Label": "PvCO₂",
+      "estimatedLabel": "Estimated arterial values"
     },
     "chronicity": {
       "label": "Respiratory process",
@@ -99,7 +109,10 @@
       "albumin_not_entered": { "level": "info", "text": "No albumin entered, so the gap is uncorrected. Low albumin lowers the gap and can hide a gap acidosis — common in critical illness." },
       "hidden_acidosis_likely": { "level": "warning", "text": "Anion gap 20 to 30 without a metabolic acidosis on the gas — a gap acidosis is likely (about two-thirds of cases) and may be masked by a metabolic alkalosis." },
       "hidden_acidosis_definite": { "level": "warning", "text": "Anion gap above 30 — a metabolic acidosis is present even though the gas doesn't show it. Look for an offsetting metabolic alkalosis." },
-      "enter_electrolytes_for_gap": { "level": "info", "text": "Add Na⁺ and Cl⁻ (and albumin) to calculate the anion gap and delta ratio." }
+      "enter_electrolytes_for_gap": { "level": "info", "text": "Add Na⁺ and Cl⁻ (and albumin) to calculate the anion gap and delta ratio." },
+      "venous_estimate": { "level": "info", "text": "Read from a venous gas: the analysis uses estimated arterial values (pH + 0.033, PCO₂ − 4.4 mmHg, HCO₃⁻ − 1.0 mmol/L, the pooled venous–arterial differences). The anion gap uses the measured HCO₃⁻, as serum chemistry would." },
+      "venous_pco2_unreliable": { "level": "warning", "text": "This read leans on PCO₂, which a venous gas can't pin down: individual venous–arterial differences run from about −20 to +26 mmHg. Treat the respiratory part (or the compensation check) as provisional, and get an arterial gas if it would change management." },
+      "venous_hypercapnia_unlikely": { "level": "info", "text": "Venous PCO₂ is 45 mmHg or less, which makes arterial hypercapnia unlikely (sensitivity about 97% in the Cochrane review). A high venous PCO₂ is less useful: specificity is only about 54%." }
     },
     "statusMessages": {
       "incomplete": "Enter pH, PaCO₂ and HCO₃⁻.",
@@ -144,5 +157,5 @@
     { "label": "Alkalemia", "severity": "high" },
     { "label": "pH in range", "severity": "low" }
   ],
-  "buildNote": "Code-backed tool (engine: builtin, tool: acid-base). Math in web/src/lib/acidBaseEngine.js and ios/Sources/Calc/AcidBaseEngine.swift; both run tools/fixtures/acid-base-golden-vectors.json. Design choices beyond the sources: the ± 2 band Brandis gives for chronic respiratory alkalosis is applied to all four respiratory rules; a Henderson-Hasselbalch mismatch above 0.05 pH units is flagged; when pH is out of range but PaCO₂ and HCO₃⁻ are both within their reference ranges, the component with the larger deviation (scaled to each half-range) is called primary; at normal pH with both values shifted the same way, the chronic respiratory rule is tested before calling the disorder mixed."
+  "buildNote": "Code-backed tool (engine: builtin, tool: acid-base). Math in web/src/lib/acidBaseEngine.js and ios/Sources/Calc/AcidBaseEngine.swift; both run tools/fixtures/acid-base-golden-vectors.json. Design choices beyond the sources: the ± 2 band Brandis gives for chronic respiratory alkalosis is applied to all four respiratory rules; a Henderson-Hasselbalch mismatch above 0.05 pH units is flagged; when pH is out of range but PaCO₂ and HCO₃⁻ are both within their reference ranges, the component with the larger deviation (scaled to each half-range) is called primary; at normal pH with both values shifted the same way, the chronic respiratory rule is tested before calling the disorder mixed. Venous mode: 'normal' venous PCO2 for the rule-out flag is taken as ≤ 45 mmHg (conservative); the anion gap and delta ratio use the measured venous HCO3 because gap normals come from serum (venous) chemistry."
 }

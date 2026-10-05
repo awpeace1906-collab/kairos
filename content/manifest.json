@@ -265,8 +265,8 @@
       "next_review_due": "2027-03-02"
     },
     "calculators/gi-renal-metabolic/acid-base-analyzer": {
-      "content_version": 1,
-      "hash": "bf3a602a46a047b2",
+      "content_version": 2,
+      "hash": "2c5a24d31c155ea6",
       "path": "modules/calculators/gi-renal-metabolic/acid-base-analyzer.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -2526,8 +2526,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/abg-interpretation": {
-      "content_version": 4,
-      "hash": "ab589adf3776b3eb",
+      "content_version": 5,
+      "hash": "47392dd5c1cc933c",
       "path": "modules/reference-library/abg-interpretation.json",
       "contentType": "reference",
       "section": "Reference Library",

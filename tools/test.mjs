@@ -340,6 +340,10 @@ for (const m of mods) {
     if ("status" in e) chk("status", r.status, e.status);
     if ("error" in e) chk("error", r.error, e.error);
     if ("phStatus" in e) chk("phStatus", r.phStatus, e.phStatus);
+    if ("sample" in e) chk("sample", r.sample, e.sample);
+    if ("estPh" in e) chk("estPh", r.estimatedArterial?.ph, e.estPh);
+    if ("estPaco2" in e) chk("estPaco2", r.estimatedArterial?.paco2, e.estPaco2);
+    if ("estHco3" in e) chk("estHco3", r.estimatedArterial?.hco3, e.estHco3);
     if ("primary" in e) chk("primary", r.primary, e.primary);
     if ("compensation" in e) chk("compensation", comp ?? null, e.compensation);
     if ("compRule" in e) chk("compRule", comp?.rule, e.compRule);

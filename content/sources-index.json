@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 1002,
+  "count": 1006,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -4072,6 +4072,30 @@
       ]
     },
     {
+      "text": "Bloom BM, Grundlingh J, Bestwick JP, Harris T. The role of venous blood gas in the emergency department: a systematic review and meta-analysis. Eur J Emerg Med. 2014;21(2):81-88. doi:10.1097/MEJ.0b013e32836437cf",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "abg-interpretation",
+          "title": "ABG Interpretation",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/abg-interpretation"
+        }
+      ]
+    },
+    {
+      "text": "Bloom BM, Grundlingh J, Bestwick JP, Harris T. The role of venous blood gas in the emergency department: a systematic review and meta-analysis. Eur J Emerg Med. 2014;21(2):81-88. doi:10.1097/MEJ.0b013e32836437cf (pooled venous-arterial differences: pH −0.033, PCO2 +4.41 mmHg, HCO3 +1.03 mmol/L; PCO2 limits of agreement −20.4 to +25.8)",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "acid-base-analyzer",
+          "title": "Acid-Base Analyzer",
+          "section": "Calculators",
+          "route": "/calculators/gi-renal-metabolic/acid-base-analyzer"
+        }
+      ]
+    },
+    {
       "text": "Boschung-Pasquier L, et al. Cefepime neurotoxicity: thresholds and risk factors — a retrospective cohort study. Clin Microbiol Infect. 2020;26(3):333-339.",
       "group": "Cohort, registry & systematic reviews",
       "usedBy": [
@@ -6552,6 +6576,30 @@
           "title": "Opioid Toxicity — Heroin, Fentanyl, Methadone, Buprenorphine",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-opioids"
+        }
+      ]
+    },
+    {
+      "text": "Byrne AL, Pace NL, Thomas PS, et al. Peripheral venous blood gas analysis for the diagnosis of respiratory failure, hypercarbia and metabolic disturbance in adults. Cochrane Database Syst Rev. 2025;6(6):CD010841. doi:10.1002/14651858.CD010841.pub2",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "abg-interpretation",
+          "title": "ABG Interpretation",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/abg-interpretation"
+        }
+      ]
+    },
+    {
+      "text": "Byrne AL, Pace NL, Thomas PS, et al. Peripheral venous blood gas analysis for the diagnosis of respiratory failure, hypercarbia and metabolic disturbance in adults. Cochrane Database Syst Rev. 2025;6(6):CD010841. doi:10.1002/14651858.CD010841.pub2 (hypercarbia: sensitivity 97.1%, specificity 53.9%; low-certainty evidence)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acid-base-analyzer",
+          "title": "Acid-Base Analyzer",
+          "section": "Calculators",
+          "route": "/calculators/gi-renal-metabolic/acid-base-analyzer"
         }
       ]
     },

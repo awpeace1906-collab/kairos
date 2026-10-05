@@ -12,6 +12,7 @@ struct AcidBaseToolView: View {
 
     @State private var values: [String: String] = [:]
     @State private var chronicity = "unknown"
+    @State private var sample = "arterial"
     @FocusState private var focus: String?
 
     private static let keys = ["ph", "paco2", "hco3", "na", "cl", "albumin"]
@@ -51,9 +52,10 @@ struct AcidBaseToolView: View {
 
     private func field(_ k: String) -> some View {
         let d = def(k)
+        let label = k == "paco2" && sample == "venous" ? content.sample.venousPco2Label : d.label
         return VStack(alignment: .leading, spacing: 4) {
             HStack(spacing: 3) {
-                Text(d.label).font(Theme.caption).foregroundStyle(.secondary)
+                Text(label).font(Theme.caption).foregroundStyle(.secondary)
                 if let u = d.unit { Text(u).font(Theme.caption2).foregroundStyle(.tertiary) }
             }
             TextField("", text: Binding(get: { values[k] ?? "" }, set: { values[k] = $0; persist() }))
@@ -62,7 +64,7 @@ struct AcidBaseToolView: View {
                 .font(Theme.mono(16))
                 .padding(.horizontal, 8).padding(.vertical, 8)
                 .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 8))
-                .accessibilityLabel(d.label)
+                .accessibilityLabel(label)
                 .accessibilityIdentifier("abg-\(k)")
         }
     }
@@ -70,6 +72,16 @@ struct AcidBaseToolView: View {
     private var inputs: some View {
         let cols = Array(repeating: GridItem(.flexible(), spacing: 8, alignment: .top), count: 3)
         return VStack(alignment: .leading, spacing: 10) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text(content.sample.label).font(Theme.caption).foregroundStyle(.secondary)
+                Picker(content.sample.label, selection: Binding(get: { sample }, set: { sample = $0; persist() })) {
+                    Text(content.sample.options.arterial).tag("arterial")
+                    Text(content.sample.options.venous).tag("venous")
+                }
+                .pickerStyle(.segmented)
+                .accessibilityIdentifier("abg-sample")
+                if sample == "venous" { Text(content.sample.help).font(Theme.caption).foregroundStyle(.secondary) }
+            }
             LazyVGrid(columns: cols, alignment: .leading, spacing: 10) {
                 ForEach(Self.keys, id: \.self) { field($0) }
             }
@@ -99,7 +111,8 @@ struct AcidBaseToolView: View {
     private var result: AcidBaseEngine.Result {
         AcidBaseEngine.interpret(.init(ph: num("ph"), paco2: num("paco2"), hco3: num("hco3"),
                                        na: num("na"), cl: num("cl"), albumin: num("albumin"),
-                                       chronicity: AcidBaseEngine.Chronicity(rawValue: chronicity) ?? .unknown))
+                                       chronicity: AcidBaseEngine.Chronicity(rawValue: chronicity) ?? .unknown,
+                                       sample: AcidBaseEngine.Sample(rawValue: sample) ?? .arterial))
     }
 
     // MARK: - Output
@@ -121,12 +134,17 @@ struct AcidBaseToolView: View {
         let p = content.primary[r.primary ?? ""]
         let sev = r.phStatus != "normal" ? "high" : (r.disorders.isEmpty ? "low" : "moderate")
         VStack(alignment: .leading, spacing: 3) {
-            Text("pH \(values["ph"] ?? "")").font(Theme.mono(11)).tracking(0.6).foregroundStyle(.secondary)
+            Text("pH \(values["ph"] ?? "")\(r.sample == "venous" ? " (venous)" : "")").font(Theme.mono(11)).tracking(0.6).foregroundStyle(.secondary)
             Text(p?.label ?? (r.primary ?? "")).font(Theme.semibold(20, relativeTo: .title3))
             Text(content.phText(r.phStatus)).font(Theme.callout)
             if let d = p?.detail { Text(d).font(Theme.caption).foregroundStyle(.secondary) }
         }
         .modifier(BandStyle(severity: sev))
+
+        if let e = r.estimatedArterial {
+            line(content.sample.estimatedLabel.uppercased(),
+                 "pH \(Self.plain(e.ph)) · PaCO₂ \(Self.plain(e.paco2)) · HCO₃⁻ \(Self.plain(e.hco3))", nil, nil, nil)
+        }
 
         if r.disorders.count > 1 {
             line("DISORDERS PRESENT", r.disorders.map { content.primary[$0]?.label ?? $0 }.joined(separator: " + "), nil, nil, "high")
@@ -138,7 +156,7 @@ struct AcidBaseToolView: View {
             let exp = c.expected.map(range) ?? "acute \(c.acute.map(range) ?? "—"), chronic \(c.chronic.map(range) ?? "—")"
             let good = c.key == "appropriate" || c.key.hasPrefix("fits") || c.key == "acute_or_chronic"
             line((content.compensationRules[c.rule]?.label ?? c.rule).uppercased(),
-                 "Expected \(target) \(exp) · measured \(Self.plain(c.actual))",
+                 "Expected \(target) \(exp) · \(r.sample == "venous" ? "estimated" : "measured") \(Self.plain(AcidBaseEngine.round(c.actual)))",
                  content.compensation[c.key] ?? c.key, content.compensationRules[c.rule]?.formula, good ? "low" : "moderate")
         }
 
@@ -213,11 +231,13 @@ struct AcidBaseToolView: View {
     private func persist() {
         for k in Self.keys { session.set(route, "abg.\(k)", values[k] ?? "") }
         session.set(route, "abg.chronicity", chronicity)
+        session.set(route, "abg.sample", sample)
     }
 
     private func restore() {
         let s = session.fields(route)
         for k in Self.keys { values[k] = s["abg.\(k)"] ?? "" }
         chronicity = s["abg.chronicity"].flatMap { $0.isEmpty ? nil : $0 } ?? "unknown"
+        sample = s["abg.sample"] == "venous" ? "venous" : "arterial"
     }
 }

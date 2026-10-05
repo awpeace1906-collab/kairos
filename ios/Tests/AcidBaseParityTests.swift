@@ -19,13 +19,18 @@ final class AcidBaseParityTests: XCTestCase {
             let input = AcidBaseEngine.Input(
                 ph: num(i["ph"]), paco2: num(i["paco2"]), hco3: num(i["hco3"]),
                 na: num(i["na"]), cl: num(i["cl"]), albumin: num(i["albumin"]),
-                chronicity: AcidBaseEngine.Chronicity(rawValue: i["chronicity"] as? String ?? "") ?? .unknown)
+                chronicity: AcidBaseEngine.Chronicity(rawValue: i["chronicity"] as? String ?? "") ?? .unknown,
+                sample: AcidBaseEngine.Sample(rawValue: i["sample"] as? String ?? "") ?? .arterial)
             let r = AcidBaseEngine.interpret(input)
             let comp = r.compensation
 
             if let v = e["status"] as? String { XCTAssertEqual(r.status, v, name) }
             if let v = e["error"] as? String { XCTAssertEqual(r.error, v, name) }
             if let v = e["phStatus"] as? String { XCTAssertEqual(r.phStatus, v, name) }
+            if let v = e["sample"] as? String { XCTAssertEqual(r.sample, v, name) }
+            if let v = num(e["estPh"]) { XCTAssertEqual(r.estimatedArterial?.ph, v, name) }
+            if let v = num(e["estPaco2"]) { XCTAssertEqual(r.estimatedArterial?.paco2, v, name) }
+            if let v = num(e["estHco3"]) { XCTAssertEqual(r.estimatedArterial?.hco3, v, name) }
             if let v = e["primary"] as? String { XCTAssertEqual(r.primary, v, name) }
             if e["compensation"] is NSNull { XCTAssertNil(comp, name) }
             if let v = e["compRule"] as? String { XCTAssertEqual(comp?.rule, v, name) }
@@ -65,7 +70,8 @@ final class AcidBaseParityTests: XCTestCase {
             let i = v["input"] as? [String: Any] ?? [:]
             let r = AcidBaseEngine.interpret(.init(ph: num(i["ph"]), paco2: num(i["paco2"]), hco3: num(i["hco3"]),
                                                    na: num(i["na"]), cl: num(i["cl"]), albumin: num(i["albumin"]),
-                                                   chronicity: .init(rawValue: i["chronicity"] as? String ?? "") ?? .unknown))
+                                                   chronicity: .init(rawValue: i["chronicity"] as? String ?? "") ?? .unknown,
+                                                   sample: .init(rawValue: i["sample"] as? String ?? "") ?? .arterial))
             if let e = r.error { XCTAssertNotNil(c.statusMessages.errors[e], e) }
             guard r.status == "ok" else { continue }
             XCTAssertNotNil(c.primary[r.primary ?? ""], "primary \(r.primary ?? "")")

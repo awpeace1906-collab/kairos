@@ -249,6 +249,17 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-10-05 (later) — **Acid-Base Analyzer v2: venous gas toggle; ABG Interpretation v5.**
+  Sample toggle (arterial / venous). Venous values → estimated arterial with the
+  Bloom 2014 pooled venous−arterial differences (pH −0.033, PCO₂ +4.41,
+  HCO₃⁻ +1.03), then the same rules. Flags: venous_estimate; venous_pco2_unreliable
+  when a read leans on PCO₂ (individual LOA −20 to +26 mmHg);
+  venous_hypercapnia_unlikely when PvCO₂ ≤ 45 (Cochrane 2025 CD010841: Sn 97%,
+  Sp 54%). HH check runs on measured values; the gap uses measured venous HCO₃⁻.
+  4 venous golden vectors (36 total), both engines pass; UI tests for both modes.
+  ABG Interpretation gains a VBG section with the same sources.
+  **Seen twice:** xcodebuild sometimes hangs after UI tests finish (results
+  written, process never exits) — kill it rather than waiting out the timeout.
 - 2026-10-05 — **Acid-Base Analyzer added; ABG Interpretation upgraded** (→ 443 modules).
   New code-backed calculator `calculators/gi-renal-metabolic/acid-base-analyzer`
   (engine builtin, tool `acid-base`; second tool after the EKG axis). From pH,

@@ -23,7 +23,7 @@
     "ICU"
   ],
   "contentType": "reference",
-  "content_version": 4,
+  "content_version": 5,
   "last_reviewed": "2026-10-05",
   "review_tier": "stable",
   "sources": [
@@ -31,9 +31,16 @@
     "Narins RG, Emmett M. Simple and mixed acid-base disorders: a practical approach. Medicine (Baltimore). 1980;59(3):161-187. doi:10.1097/00005792-198005000-00001",
     "Berend K, de Vries APJ, Gans ROB. Physiological approach to assessment of acid-base disturbances. N Engl J Med. 2014;371(15):1434-1445. doi:10.1056/NEJMra1003327",
     "Figge J, Jabor A, Kazda A, Fencl V. Anion gap and hypoalbuminemia. Crit Care Med. 1998;26(11):1807-1810. doi:10.1097/00003246-199811000-00019 (albumin correction)",
+    "Bloom BM, Grundlingh J, Bestwick JP, Harris T. The role of venous blood gas in the emergency department: a systematic review and meta-analysis. Eur J Emerg Med. 2014;21(2):81-88. doi:10.1097/MEJ.0b013e32836437cf",
+    "Byrne AL, Pace NL, Thomas PS, et al. Peripheral venous blood gas analysis for the diagnosis of respiratory failure, hypercarbia and metabolic disturbance in adults. Cochrane Database Syst Rev. 2025;6(6):CD010841. doi:10.1002/14651858.CD010841.pub2",
     "Standard respiratory physiology; Critical (consolidated) — A-a gradient and oxyhemoglobin dissociation curve sections"
   ],
   "changelog": [
+    {
+      "version": 5,
+      "date": "2026-10-05",
+      "change": "Added a Venous gas (VBG) section: pooled venous-arterial differences (Bloom 2014), poor PCO2 agreement, normal venous PCO2 as a hypercapnia rule-out (Cochrane 2025). Matches the analyzer's new Venous toggle."
+    },
     {
       "version": 4,
       "date": "2026-10-05",
@@ -174,6 +181,20 @@
       "type": "callout",
       "tone": "warning",
       "text": "The ratio rests on four measured electrolytes and 'standard' normals, and low albumin lowers the normal gap. Don't over-interpret an unexpected value without supporting evidence."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Venous gas (VBG)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "**pH and HCO₃⁻ track arterial well.** Pooled venous − arterial differences: pH −0.033, HCO₃⁻ +1.0 mmol/L. Agreement is best near normal values.",
+        "**PCO₂ does not.** Venous runs about 4.4 mmHg higher on average, but individual differences range from about −20 to +26 mmHg — a venous PCO₂ can't stand in for the arterial value.",
+        "**A normal venous PCO₂ rules out hypercapnia** (sensitivity about 97%). A high one doesn't confirm it (specificity about 54%) — get an arterial gas if it changes management.",
+        "Peripheral venous samples only, and never for oxygenation. The **Acid-Base Analyzer** has a Venous toggle that applies these differences and flags any read that leans on PCO₂."
+      ]
     },
     {
       "type": "heading",

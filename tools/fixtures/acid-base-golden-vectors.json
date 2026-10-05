@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "note": "Shared parity vectors for the acid-base analyzer. JS (web/src/lib/acidBaseEngine.js) and Swift (ios/Sources/Calc/AcidBaseEngine.swift) must both pass every case. Expected values were worked by hand from the rules (Brandis 9.3 bedside rules, delta ratio 3.3), not captured from the engine. 'expect' fields are checked only when present; flagsInclude/flagsExclude and disordersExact are set comparisons.",
   "cases": [
     { "name": "Normal gas",
@@ -97,6 +97,18 @@
       "expect": { "status": "incomplete" } },
     { "name": "pH out of range → error",
       "input": { "ph": 9.0, "paco2": 40, "hco3": 24 },
-      "expect": { "status": "error", "error": "out_of_range_ph" } }
+      "expect": { "status": "error", "error": "out_of_range_ph" } },
+    { "name": "Venous: the DKA gas as a VBG (7.087 / 49.41 / 15.03) → estimates 7.12 / 45 / 14, same read, PCO2 flagged",
+      "input": { "ph": 7.087, "paco2": 49.41, "hco3": 15.03, "na": 140, "cl": 104, "albumin": 4, "sample": "venous" },
+      "expect": { "sample": "venous", "estPh": 7.12, "estPaco2": 45, "estHco3": 14, "primary": "metabolic_acidosis", "compKey": "plus_respiratory_acidosis", "expectedCenter": 29, "agUsed": 21, "deltaRatio": 1.0, "deltaKey": "hagma", "flagsExact": ["venous_estimate", "venous_pco2_unreliable"] } },
+    { "name": "Venous: normal VBG (7.37 / 44 / 25) → normal; PvCO2 ≤ 45 makes hypercapnia unlikely",
+      "input": { "ph": 7.37, "paco2": 44, "hco3": 25, "sample": "venous" },
+      "expect": { "estPh": 7.4, "estPaco2": 39.6, "estHco3": 24, "primary": "normal", "flagsExact": ["venous_estimate", "venous_hypercapnia_unlikely"] } },
+    { "name": "Venous: PvCO2 60 → estimated respiratory acidosis that fits chronic; PCO2 flagged",
+      "input": { "ph": 7.30, "paco2": 60, "hco3": 29.5, "sample": "venous" },
+      "expect": { "estPaco2": 55.6, "estHco3": 28.5, "primary": "respiratory_acidosis", "compKey": "fits_chronic", "acuteCenter": 25.6, "chronicCenter": 30.2, "flagsExact": ["venous_estimate", "venous_pco2_unreliable"] } },
+    { "name": "Arterial is the default sample",
+      "input": { "ph": 7.40, "paco2": 40, "hco3": 24 },
+      "expect": { "sample": "arterial", "flagsExact": [] } }
   ]
 }

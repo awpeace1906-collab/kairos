@@ -750,3 +750,4 @@ figure.diagram--plate .diagram-credit { color: #6b6862; }
 .abg-tool .abg-primary { font-size: 1.15rem; }
 /* Acid-base lines carry sentences, not short values: stack label → value → text. */
 .abg-tool .axis-line { grid-template-columns: minmax(0, 1fr); }
+.abg-tool .abg-sample { margin: 0 0 12px; }

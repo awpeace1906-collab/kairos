@@ -9,15 +9,17 @@ import Foundation
 public enum AcidBaseEngine {
 
     public enum Chronicity: String { case acute, chronic, unknown }
+    public enum Sample: String { case arterial, venous }
 
     public struct Input {
         public var ph: Double?, paco2: Double?, hco3: Double?
         public var na: Double?, cl: Double?, albumin: Double?
         public var chronicity: Chronicity = .unknown
+        public var sample: Sample = .arterial
         public init(ph: Double?, paco2: Double?, hco3: Double?, na: Double? = nil, cl: Double? = nil,
-                    albumin: Double? = nil, chronicity: Chronicity = .unknown) {
+                    albumin: Double? = nil, chronicity: Chronicity = .unknown, sample: Sample = .arterial) {
             self.ph = ph; self.paco2 = paco2; self.hco3 = hco3; self.na = na; self.cl = cl
-            self.albumin = albumin; self.chronicity = chronicity
+            self.albumin = albumin; self.chronicity = chronicity; self.sample = sample
         }
     }
 
@@ -37,8 +39,12 @@ public enum AcidBaseEngine {
     public struct AnionGap { public let value: Double; public let corrected: Double?; public let used: Double; public let key: String }
     public struct DeltaRatio { public let value: Double; public let key: String }
 
+    public struct Estimate { public let ph: Double; public let paco2: Double; public let hco3: Double }
+
     public struct Result {
         public var status = "ok"
+        public var sample = "arterial"
+        public var estimatedArterial: Estimate?
         public var error: String?
         public var phStatus: String?
         public var primary: String?
@@ -56,6 +62,8 @@ public enum AcidBaseEngine {
     static let phLo = 7.35, phHi = 7.45, co2Lo = 35.0, co2Hi = 45.0, co2N = 40.0
     static let hco3Lo = 22.0, hco3Hi = 26.0, hco3N = 24.0, agN = 12.0, albN = 4.0
     static let hhTolerance = 0.05
+    // Venous − arterial pooled mean differences (Bloom 2014); see the JS header.
+    static let venousPh = -0.033, venousPco2 = 4.41, venousHco3 = 1.03, venousPco2Normal = 45.0
     static let limits: [(String, ClosedRange<Double>)] = [
         ("ph", 6.5...8.0), ("paco2", 5...150), ("hco3", 2...60), ("na", 100...180), ("cl", 60...140), ("albumin", 0.5...6),
     ]
@@ -105,14 +113,25 @@ public enum AcidBaseEngine {
 
     public static func interpret(_ input: Input) -> Result {
         var res = Result()
-        guard let ph = input.ph, let paco2 = input.paco2, let hco3 = input.hco3 else { res.status = "incomplete"; return res }
-        let values: [String: Double?] = ["ph": ph, "paco2": paco2, "hco3": hco3, "na": input.na, "cl": input.cl, "albumin": input.albumin]
+        guard let mPh = input.ph, let mCo2 = input.paco2, let mHco3 = input.hco3 else { res.status = "incomplete"; return res }
+        let values: [String: Double?] = ["ph": mPh, "paco2": mCo2, "hco3": mHco3, "na": input.na, "cl": input.cl, "albumin": input.albumin]
         for (k, r) in limits { if let v = values[k] ?? nil, !r.contains(v) { res.status = "error"; res.error = "out_of_range_\(k)"; return res } }
+        let venous = input.sample == .venous
+        res.sample = venous ? "venous" : "arterial"
 
-        // Step 0 — Henderson-Hasselbalch consistency.
-        let calc = hhPh(paco2: paco2, hco3: hco3)
-        res.calculatedPh = round(calc, 2); res.phDifference = round(ph - calc, 2)
-        if abs(ph - calc) > hhTolerance { res.flags.append("hh_inconsistent") }
+        // Step 0 — Henderson-Hasselbalch consistency, on the values as measured.
+        let calc = hhPh(paco2: mCo2, hco3: mHco3)
+        res.calculatedPh = round(calc, 2); res.phDifference = round(mPh - calc, 2)
+        if abs(mPh - calc) > hhTolerance { res.flags.append("hh_inconsistent") }
+
+        // Venous → estimated arterial; everything below runs on the estimates.
+        var ph = mPh, paco2 = mCo2, hco3 = mHco3
+        if venous {
+            ph = mPh - venousPh; paco2 = mCo2 - venousPco2; hco3 = mHco3 - venousHco3
+            res.estimatedArterial = Estimate(ph: round(ph, 2), paco2: round(paco2), hco3: round(hco3))
+            res.flags.append("venous_estimate")
+            if mCo2 <= venousPco2Normal { res.flags.append("venous_hypercapnia_unlikely") }
+        }
 
         // Step 1 — pH.
         let phStatus = ph < phLo ? "acidemia" : ph > phHi ? "alkalemia" : "normal"
@@ -188,9 +207,10 @@ public enum AcidBaseEngine {
             if let s = second[comp.key] { add(s) }
         }
 
-        // Step 3 — anion gap and delta ratio.
+        // Step 3 — anion gap and delta ratio (a venous gas uses its measured HCO3).
+        let gapHco3 = venous ? mHco3 : hco3
         if let na = input.na, let cl = input.cl {
-            let ag = na - cl - hco3
+            let ag = na - cl - gapHco3
             let corrected = input.albumin.map { ag + 2.5 * (albN - $0) }
             let used = corrected ?? ag
             res.ag = AnionGap(value: round(ag), corrected: corrected.map { round($0) }, used: round(used), key: used >= 12 ? "high" : "normal")
@@ -198,13 +218,17 @@ public enum AcidBaseEngine {
             if !res.disorders.contains("metabolic_acidosis") {
                 if used > 30 { res.flags.append("hidden_acidosis_definite") }
                 else if used >= 20 { res.flags.append("hidden_acidosis_likely") }
-            } else if hco3 < hco3N {
-                let dr = (used - agN) / (hco3N - hco3)
+            } else if gapHco3 < hco3N {
+                let dr = (used - agN) / (hco3N - gapHco3)
                 let key = dr < 0.4 ? "nagma" : dr < 0.8 ? "hagma_plus_nagma" : dr <= 2 ? "hagma" : "hagma_plus_high_hco3"
                 res.deltaRatio = DeltaRatio(value: round(dr, 2), key: key)
             }
         } else if res.disorders.contains("metabolic_acidosis") {
             res.flags.append("enter_electrolytes_for_gap")
+        }
+
+        if venous && (res.disorders.contains { $0.hasPrefix("respiratory") } || res.compensation?.measured == "paco2") {
+            res.flags.append("venous_pco2_unreliable")
         }
 
         var diffs: [String] = []

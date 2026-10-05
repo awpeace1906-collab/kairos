@@ -236,7 +236,7 @@ final class KairosUITests: XCTestCase {
     /// Calculators → search → Acid-Base Analyzer: DKA with a tiring patient
     /// (pH 7.12, PaCO2 45, HCO3 14, Na 140, Cl 104, albumin 4) must read as a
     /// metabolic acidosis with a concurrent respiratory acidosis, gap 22.
-    func testAcidBaseAnalyzerFlow() {
+    private func openAcidBaseAnalyzer() {
         openSection("calculators")
         let search = app.searchFields.firstMatch
         if !search.waitForExistence(timeout: 3) { app.swipeDown() }
@@ -245,18 +245,50 @@ final class KairosUITests: XCTestCase {
         let row = app.buttons["row-acid-base-analyzer"].firstMatch
         XCTAssertTrue(row.waitForExistence(timeout: 5), "analyzer row missing")
         row.tap()
+    }
 
-        for (key, value) in [("ph", "7.12"), ("paco2", "45"), ("hco3", "14"), ("na", "140"), ("cl", "104"), ("albumin", "4")] {
+    /// Fields are remembered per screen, so clear before typing.
+    private func fillAcidBase(_ entries: [(String, String)]) {
+        for (key, value) in entries {
             let f = app.textFields["abg-\(key)"].firstMatch
             XCTAssertTrue(f.waitForExistence(timeout: 5), "field \(key) missing")
-            f.tap(); f.typeText(value)
+            // The keyboard can cover the lower fields; close it so the tap lands.
+            let done = app.buttons["abg-kb-done"].firstMatch
+            if done.exists { done.tap() }
+            f.tap()
+            let old = (f.value as? String) ?? ""
+            if !old.isEmpty { f.typeText(String(repeating: XCUIKeyboardKey.delete.rawValue, count: old.count)) }
+            f.typeText(value)
         }
         app.buttons["abg-kb-done"].firstMatch.tap()
+    }
+
+    private func pickSample(_ label: String) {
+        let b = app.segmentedControls["abg-sample"].buttons[label].firstMatch
+        XCTAssertTrue(b.waitForExistence(timeout: 5), "sample toggle missing")
+        b.tap()
+    }
+
+    func testAcidBaseAnalyzerFlow() {
+        openAcidBaseAnalyzer()
+        pickSample("Arterial (ABG)")
+        fillAcidBase([("ph", "7.12"), ("paco2", "45"), ("hco3", "14"), ("na", "140"), ("cl", "104"), ("albumin", "4")])
 
         XCTAssertTrue(text(containing: "Metabolic acidosis").waitForExistence(timeout: 5))
         XCTAssertTrue(text(containing: "a respiratory acidosis is also present").waitForExistence(timeout: 5),
                       "second disorder not flagged")
         XCTAssertTrue(text(containing: "Expected PaCO₂ 27–31").exists)
         let shot = XCTAttachment(screenshot: app.screenshot()); shot.name = "acid-base"; shot.lifetime = .keepAlways; add(shot)
+    }
+
+    /// Venous toggle: the same DKA gas entered as a VBG estimates the arterial
+    /// values and flags that the respiratory call leans on an unreliable PvCO2.
+    func testAcidBaseVenousToggle() {
+        openAcidBaseAnalyzer()
+        pickSample("Venous (VBG)")
+        fillAcidBase([("ph", "7.087"), ("paco2", "49.41"), ("hco3", "15.03"), ("na", "140"), ("cl", "104"), ("albumin", "4")])
+        XCTAssertTrue(text(containing: "pH 7.12 · PaCO₂ 45 · HCO₃⁻ 14").waitForExistence(timeout: 5), "estimated arterial values missing")
+        XCTAssertTrue(text(containing: "a venous gas can't pin down").exists, "PvCO2 warning missing")
+        let shot = XCTAttachment(screenshot: app.screenshot()); shot.name = "acid-base-venous"; shot.lifetime = .keepAlways; add(shot)
     }
 }

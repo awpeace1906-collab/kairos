@@ -12,10 +12,19 @@
 // Brandis gives ± 2 for the chronic respiratory alkalosis rule; the same ± 2
 // band is applied to the other respiratory rules here (design choice).
 // Albumin-corrected AG = AG + 2.5 × (4 − albumin g/dL) (Figge 1998).
+//
+// Venous sample: peripheral venous values are converted to estimated arterial
+// values with the pooled venous − arterial mean differences of Bloom 2014
+// (Eur J Emerg Med 21:81): pH −0.033, PCO2 +4.41 mmHg, HCO3 +1.03 mmol/L. pH
+// and HCO3 agree well; PCO2 does not (95% LOA −20.4 to +25.8 mmHg), so any
+// call that leans on PCO2 is flagged. A normal venous PCO2 rules out arterial
+// hypercapnia (Cochrane 2025, CD010841: sensitivity 97%, specificity 54%);
+// "normal" is taken as ≤ 45 mmHg here (design choice, conservative).
 
 const N = { phLo: 7.35, phHi: 7.45, co2Lo: 35, co2Hi: 45, co2: 40, hco3Lo: 22, hco3Hi: 26, hco3: 24, ag: 12, alb: 4 };
 const LIMITS = { ph: [6.5, 8.0], paco2: [5, 150], hco3: [2, 60], na: [100, 180], cl: [60, 140], albumin: [0.5, 6] };
 const HH_TOLERANCE = 0.05;   // pH units; design choice, see buildNote
+const VENOUS = { ph: -0.033, pco2: 4.41, hco3: 1.03, pco2Normal: 45 };   // venous − arterial (Bloom 2014)
 
 const round = (x, d = 1) => Math.round(x * 10 ** d) / 10 ** d;
 const band = (center, tol) => ({ center: round(center), lo: round(center - tol), hi: round(center + tol) });
@@ -89,22 +98,33 @@ export function validate(input) {
 }
 
 /**
- * input: { ph, paco2 (mmHg), hco3 (mmol/L), na?, cl?, albumin? (g/dL),
- *          chronicity?: 'acute' | 'chronic' | 'unknown' }
+ * input: { ph, paco2 (mmHg; venous PCO2 when sample is venous), hco3 (mmol/L),
+ *          na?, cl?, albumin? (g/dL), chronicity?: 'acute' | 'chronic' | 'unknown',
+ *          sample?: 'arterial' | 'venous' }
  */
 export function interpret(input) {
   const err = validate(input);
   if (err === 'incomplete') return { status: 'incomplete' };
   if (err) return { status: 'error', error: err };
 
-  const { ph, paco2, hco3 } = input;
   const chronicity = input.chronicity === 'acute' || input.chronicity === 'chronic' ? input.chronicity : 'unknown';
-  const res = { status: 'ok', flags: [], disorders: [], differentials: [] };
+  const venous = input.sample === 'venous';
+  const res = { status: 'ok', sample: venous ? 'venous' : 'arterial', flags: [], disorders: [], differentials: [] };
 
-  // Step 0 — internal consistency (Henderson-Hasselbalch).
-  const calc = hhPh(paco2, hco3);
-  res.hh = { calculatedPh: round(calc, 2), difference: round(ph - calc, 2) };
-  if (Math.abs(ph - calc) > HH_TOLERANCE) res.flags.push('hh_inconsistent');
+  // Step 0 — internal consistency (Henderson-Hasselbalch) on the values as
+  // measured; the relationship holds for venous blood too.
+  const calc = hhPh(input.paco2, input.hco3);
+  res.hh = { calculatedPh: round(calc, 2), difference: round(input.ph - calc, 2) };
+  if (Math.abs(input.ph - calc) > HH_TOLERANCE) res.flags.push('hh_inconsistent');
+
+  // Venous → estimated arterial; everything below runs on the estimates.
+  let { ph, paco2, hco3 } = input;
+  if (venous) {
+    ph = input.ph - VENOUS.ph; paco2 = input.paco2 - VENOUS.pco2; hco3 = input.hco3 - VENOUS.hco3;
+    res.estimatedArterial = { ph: round(ph, 2), paco2: round(paco2), hco3: round(hco3) };
+    res.flags.push('venous_estimate');
+    if (input.paco2 <= VENOUS.pco2Normal) res.flags.push('venous_hypercapnia_unlikely');
+  }
 
   // Step 1 — pH.
   res.phStatus = ph < N.phLo ? 'acidemia' : ph > N.phHi ? 'alkalemia' : 'normal';
@@ -167,10 +187,12 @@ export function interpret(input) {
     if (second) add(second);
   }
 
-  // Step 3 — anion gap and delta ratio.
+  // Step 3 — anion gap and delta ratio. Gap normals come from serum (venous)
+  // chemistry, so a venous gas uses its measured HCO3 here, not the estimate.
   const { na, cl, albumin } = input;
+  const gapHco3 = venous ? input.hco3 : hco3;
   if (na != null && cl != null && !Number.isNaN(na) && !Number.isNaN(cl)) {
-    const ag = na - cl - hco3;
+    const ag = na - cl - gapHco3;
     const hasAlb = albumin != null && !Number.isNaN(albumin);
     const corrected = hasAlb ? ag + 2.5 * (N.alb - albumin) : null;
     const used = corrected ?? ag;
@@ -179,13 +201,18 @@ export function interpret(input) {
     if (!res.disorders.includes('metabolic_acidosis')) {
       if (used > 30) res.flags.push('hidden_acidosis_definite');
       else if (used >= 20) res.flags.push('hidden_acidosis_likely');
-    } else if (hco3 < N.hco3) {
-      const dr = (used - N.ag) / (N.hco3 - hco3);
+    } else if (gapHco3 < N.hco3) {
+      const dr = (used - N.ag) / (N.hco3 - gapHco3);
       const key = dr < 0.4 ? 'nagma' : dr < 0.8 ? 'hagma_plus_nagma' : dr <= 2 ? 'hagma' : 'hagma_plus_high_hco3';
       res.deltaRatio = { value: round(dr, 2), key };
     }
   } else if (res.disorders.includes('metabolic_acidosis')) {
     res.flags.push('enter_electrolytes_for_gap');
+  }
+
+  // A venous PCO2 can't carry a respiratory call or a Winter's-type check.
+  if (venous && (res.disorders.some((d) => d.startsWith('respiratory')) || res.compensation?.measured === 'paco2')) {
+    res.flags.push('venous_pco2_unreliable');
   }
 
   // Differentials, one list per disorder; metabolic acidosis split by gap type.
@@ -203,4 +230,4 @@ export function interpret(input) {
   return res;
 }
 
-export { N as NORMALS, hhPh, respExpected };
+export { N as NORMALS, VENOUS, hhPh, respExpected };
