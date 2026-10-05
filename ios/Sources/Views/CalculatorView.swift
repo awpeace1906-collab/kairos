@@ -31,12 +31,18 @@ struct CalculatorView: View {
             case .additive:                 additiveItems
             case .formula, .external:       formulaInputs
             case .classification:           classificationTiers
-            case .builtin:                  EmptyView()
+            case .builtin:
+                // A code-backed tool this build doesn't know (content arrived
+                // over the air before the app update that renders it).
+                bandCardText("This tool needs a newer version of Kairos. Update the app to use it — everything else keeps working.", severity: "moderate")
+                    .accessibilityIdentifier("builtin-needs-update")
             }
 
-            ClearFieldsButton {
-                choices = [:]; inputs = [:]
-                session.clearScreen(route)
+            if calc.engine != .builtin {
+                ClearFieldsButton {
+                    choices = [:]; inputs = [:]
+                    session.clearScreen(route)
+                }
             }
 
             resultView
