@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T00:00:00Z",
+  "generatedAt": "2026-10-05T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
@@ -264,6 +264,15 @@
       "review_tier": 1,
       "next_review_due": "2027-03-02"
     },
+    "calculators/gi-renal-metabolic/acid-base-analyzer": {
+      "content_version": 1,
+      "hash": "bf3a602a46a047b2",
+      "path": "modules/calculators/gi-renal-metabolic/acid-base-analyzer.json",
+      "contentType": "calculator",
+      "section": "Calculators",
+      "review_tier": 1,
+      "next_review_due": "2027-01-05"
+    },
     "calculators/gi-renal-metabolic/aims65": {
       "content_version": 1,
       "hash": "cb0c7436ae73097b",
@@ -283,8 +292,8 @@
       "next_review_due": "2027-03-07"
     },
     "calculators/gi-renal-metabolic/anion-gap": {
-      "content_version": 2,
-      "hash": "0455a04dd540be86",
+      "content_version": 3,
+      "hash": "9b57378dd2a04147",
       "path": "modules/calculators/gi-renal-metabolic/anion-gap.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -397,8 +406,8 @@
       "next_review_due": "2027-09-02"
     },
     "calculators/gi-renal-metabolic/winters-formula": {
-      "content_version": 2,
-      "hash": "608c63cf322256f9",
+      "content_version": 3,
+      "hash": "405ef58f5138ac68",
       "path": "modules/calculators/gi-renal-metabolic/winters-formula.json",
       "contentType": "calculator",
       "section": "Calculators",
@@ -2517,8 +2526,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/abg-interpretation": {
-      "content_version": 3,
-      "hash": "074acb4d6dd9aabf",
+      "content_version": 4,
+      "hash": "ab589adf3776b3eb",
       "path": "modules/reference-library/abg-interpretation.json",
       "contentType": "reference",
       "section": "Reference Library",

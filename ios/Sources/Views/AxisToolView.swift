@@ -497,7 +497,8 @@ private struct SignedField: View {
     }
 }
 
-private struct BandStyle: ViewModifier {
+/// Severity-tinted card used by the code-backed tools (axis, acid-base).
+struct BandStyle: ViewModifier {
     let severity: String?
     func body(content: Content) -> some View {
         content

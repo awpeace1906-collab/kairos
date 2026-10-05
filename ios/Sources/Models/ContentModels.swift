@@ -274,6 +274,8 @@ struct Calculator: Codable {
     let tool: String?
     /// engine == .builtin, tool == "ekg-axis": every string the axis tool shows.
     let axisContent: AxisToolContent?
+    /// engine == .builtin, tool == "acid-base": every string the analyzer shows.
+    let acidBaseContent: AcidBaseContent?
 
     enum Engine: String, Codable { case additive, formula, classification, external, builtin }
 
@@ -368,11 +370,49 @@ struct Calculator: Codable {
         buildNote = try c.decodeIfPresent(String.self, forKey: .buildNote)
         tool = try c.decodeIfPresent(String.self, forKey: .tool)
         axisContent = tool == "ekg-axis" ? try c.decodeIfPresent(AxisToolContent.self, forKey: .toolContent) : nil
+        acidBaseContent = tool == "acid-base" ? try c.decodeIfPresent(AcidBaseContent.self, forKey: .toolContent) : nil
     }
     func encode(to encoder: Encoder) throws { /* read-only in the app */ }
 
     private enum CodingKeys: String, CodingKey {
         case engine, settings, purpose, notes, inputs, items, formulas, tiers, interpretation, plot, buildNote, tool, toolContent
+    }
+}
+
+/// Copy for the acid-base analyzer (calculator.schema.json#/$defs/acidBaseContent).
+/// The engine (Calc/AcidBaseEngine.swift) returns keys; these maps turn them into text.
+struct AcidBaseContent: Codable, Hashable {
+    struct Field: Codable, Hashable { let label: String; let unit: String?; let help: String? }
+    struct Fields: Codable, Hashable { let ph, paco2, hco3, na, cl, albumin: Field }
+    struct Chronicity: Codable, Hashable {
+        struct Options: Codable, Hashable { let unknown, acute, chronic: String }
+        let label: String; let help: String; let options: Options
+    }
+    struct PhStatus: Codable, Hashable { let acidemia, alkalemia, normal: String }
+    struct Primary: Codable, Hashable { let label: String; let detail: String }
+    struct Rule: Codable, Hashable { let label: String; let formula: String }
+    struct AnionGap: Codable, Hashable { let label, normal, high, correctedNote: String }
+    struct DeltaRatio: Codable, Hashable { let label: String; let caution: String; let bands: [String: String] }
+    struct Flag: Codable, Hashable { let level: String; let text: String }
+    struct Status: Codable, Hashable { let incomplete: String; let errors: [String: String] }
+    struct Differential: Codable, Hashable { let title: String; let items: [String]; let note: String? }
+
+    let fields: Fields
+    let chronicity: Chronicity
+    let phStatus: PhStatus
+    let primary: [String: Primary]
+    let compensation: [String: String]
+    let compensationRules: [String: Rule]
+    let anionGap: AnionGap
+    let deltaRatio: DeltaRatio
+    let flags: [String: Flag]
+    let statusMessages: Status
+    let differentials: [String: Differential]
+    let clinicalTakeaway: String
+    let whyThisMatters: String
+
+    func phText(_ k: String?) -> String {
+        switch k { case "acidemia": return phStatus.acidemia; case "alkalemia": return phStatus.alkalemia; default: return phStatus.normal }
     }
 }
 

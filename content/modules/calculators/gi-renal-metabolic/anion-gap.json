@@ -7,11 +7,12 @@
   "aliases": ["AG", "serum anion gap", "delta gap"],
   "tags": ["metabolic acidosis", "anion gap", "electrolytes", "ED", "ICU"],
   "contentType": "calculator",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-15",
   "review_tier": "stable",
   "sources": ["Standard clinical chemistry; Emmett M, Narins RG. Medicine (Baltimore) 1977"],
   "changelog": [
+    { "version": 3, "date": "2026-10-05", "change": "Pointed to the new Acid-Base Analyzer for the full stepwise read. Formula and bands unchanged." },
     { "version": 2, "date": "2026-09-15", "change": "Content audit Batch 4 housekeeping: added missing tags[] field. No scoring content changed." },
     { "version": 1, "date": "2026-08-31", "change": "Initial entry. Stable formula — no scheduled review." }
   ],
@@ -32,6 +33,6 @@
     { "forKey": "ag", "min": -20, "max": 11, "label": "Normal anion gap (≈ 6-11 mmol/L, K+ not included)", "severity": "info" },
     { "forKey": "ag", "min": 12, "max": 200, "label": "High anion gap metabolic acidosis — pursue GOLD-MARK / MUDPILES differential", "severity": "moderate" }
   ],
-  "notes": "Reference range assumes K+ is not included in the calculation. Correction adds ~2.5 mmol/L per 1 g/dL the albumin is below 4.",
+  "notes": "Reference range assumes K+ is not included in the calculation. Correction adds ~2.5 mmol/L per 1 g/dL the albumin is below 4.\n\nFor the full read — primary disorder, compensation, and the delta ratio for a hidden second process — use the Acid-Base Analyzer.",
   "buildNote": "Stable math — review_tier 'stable', so the staleness tripwire ignores it. Leave albumin blank to suppress the corrected result in the UI."
 }

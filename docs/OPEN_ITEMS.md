@@ -12,8 +12,8 @@ append-only chronological record; trust it over any summary above it for
 "what happened when."
 
 ## ▶ NEXT SESSION — start here (updated 2026-09-26)
-State: **442 modules**, pipeline green (validate 442/0, test 376/0), iOS unit
-tests 28/28 and UI tests green, all three CI workflows green. Latest work: EKG
+State: **443 modules**, pipeline green (validate 443/0, test 409/0), iOS unit
+tests 33/33 and UI tests green, all three CI workflows green. Latest work: EKG
 Axis Interpreter (first `engine: "builtin"` calculator), structured prose and
 phone-safe tables, Gray's plate overlays, pericardiocentesis angle set to
 about 30°. The one remaining EKG axis item (sex-specific QRS-T cutoffs) is
@@ -249,6 +249,31 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-10-05 — **Acid-Base Analyzer added; ABG Interpretation upgraded** (→ 443 modules).
+  New code-backed calculator `calculators/gi-renal-metabolic/acid-base-analyzer`
+  (engine builtin, tool `acid-base`; second tool after the EKG axis). From pH,
+  PaCO₂, HCO₃⁻ (+ optional Na, Cl, albumin, acute/chronic): Henderson-Hasselbalch
+  check, pH status, primary disorder, expected compensation for all four primary
+  disorders, second-disorder detection, albumin-corrected AG, delta ratio,
+  hidden-acidosis flags (AG 20–30 / > 30), differentials (GOLD MARK, NAGMA,
+  metabolic alkalosis by chloride vs potassium depletion, respiratory causes).
+  Engines: web/src/lib/acidBaseEngine.js + ios/Sources/Calc/AcidBaseEngine.swift,
+  both passing tools/fixtures/acid-base-golden-vectors.json (32 hand-worked cases,
+  3 straight from Brandis's worked examples). Rules verified against Brandis
+  §9.2/9.3/3.3 (read directly); citations verified on PubMed (Narins & Emmett
+  1980, Berend 2014, Figge 1998, Mehta 2008 GOLD MARK, Seifter 2014). Design
+  choices beyond the sources are listed in the module buildNote (± 2 applied to
+  all respiratory rules, HH tolerance 0.05, tie-break when both values are in
+  range, chronic-rule test at normal pH).
+  ABG Interpretation v4: stepwise method rewritten to the same rules (all four
+  compensation rules, delta-ratio table, AG thresholds) with real sources; A-a
+  gradient and O₂-curve sections unchanged. Anion Gap and Winter's now point to
+  the analyzer.
+  Also: source lists wrap long URLs on phones (was overflowing the card).
+  **Note:** the iOS app adopts the live site's search index whole, so a build
+  whose bundle is ahead of the deployed site hides newly bundled modules from
+  search until the deploy lands (seen with the D-dimer and analyzer UI tests).
+  Consider merging bundled and live entries.
 - 2026-09-30 — **content-ci guard: content edits must bump content_version**
   (`tools/check-version-bumps.mjs`, `npm run check-version-bumps` for
   uncommitted edits). Installed iOS apps only re-download a module when its

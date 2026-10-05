@@ -16,6 +16,8 @@ struct CalculatorView: View {
         // Code-backed tools (engine: builtin) have their own view.
         if calc.engine == .builtin, calc.tool == "ekg-axis", let content = calc.axisContent {
             AxisToolView(calc: calc, content: content, route: route)
+        } else if calc.engine == .builtin, calc.tool == "acid-base", let content = calc.acidBaseContent {
+            AcidBaseToolView(calc: calc, content: content, route: route)
         } else {
             standard
         }

@@ -1,0 +1,148 @@
+{
+  "id": "acid-base-analyzer",
+  "section": "Calculators",
+  "category": "GI / Renal / Metabolic",
+  "title": "Acid-Base Analyzer",
+  "settingEmphasis": ["ed", "icu", "or"],
+  "aliases": ["ABG analyzer", "blood gas analyzer", "acid base calculator", "acidosis alkalosis calculator", "ABG calculator", "mixed acid-base disorder"],
+  "tags": ["acid-base", "ABG", "metabolic acidosis", "metabolic alkalosis", "respiratory acidosis", "respiratory alkalosis", "anion gap", "delta ratio", "ED", "ICU"],
+  "keywords": ["blood gas", "pH PaCO2 HCO3", "expected compensation", "Winter's formula", "delta delta", "delta gap", "albumin corrected anion gap", "HAGMA", "NAGMA", "GOLD MARK", "acute vs chronic respiratory acidosis", "1 for 10", "4 for 10", "2 for 10", "5 for 10"],
+  "contentType": "calculator",
+  "content_version": 1,
+  "last_reviewed": "2026-10-05",
+  "next_review_due": "2027-01-05",
+  "review_tier": 1,
+  "sources": [
+    "Brandis K. Acid-Base Physiology. AnaesthesiaMCQ.com: §9.2 Systematic evaluation of acid-base status; §9.3 Bedside rules for assessment of compensation; §3.3 The delta ratio; §4.2, 5.2, 6.2, 7.2 Causes. https://www.anaesthesiamcq.com/AcidBaseBook/ab9_3.php (compensation rules and ranges, delta-ratio bands, anion-gap thresholds, differentials)",
+    "Narins RG, Emmett M. Simple and mixed acid-base disorders: a practical approach. Medicine (Baltimore). 1980;59(3):161-187. doi:10.1097/00005792-198005000-00001 (compensation formulas for each primary disorder)",
+    "Berend K, de Vries APJ, Gans ROB. Physiological approach to assessment of acid-base disturbances. N Engl J Med. 2014;371(15):1434-1445. doi:10.1056/NEJMra1003327 (stepwise approach)",
+    "Figge J, Jabor A, Kazda A, Fencl V. Anion gap and hypoalbuminemia. Crit Care Med. 1998;26(11):1807-1810. doi:10.1097/00003246-199811000-00019 (albumin correction, 2.5 per g/dL)",
+    "Mehta AN, Emmett JB, Emmett M. GOLD MARK: an anion gap mnemonic for the 21st century. Lancet. 2008;372(9642):892. doi:10.1016/S0140-6736(08)61398-7",
+    "Seifter JL. Integration of acid-base and electrolyte disorders. N Engl J Med. 2014;371(19):1821-1831. doi:10.1056/NEJMra1215672"
+  ],
+  "changelog": [
+    { "version": 1, "date": "2026-10-05", "change": "Initial entry. One read-out from pH, PaCO2 and HCO3 (plus optional Na, Cl, albumin): pH status, primary disorder, expected compensation for all four primary disorders (acute and chronic for respiratory), second-disorder detection, albumin-corrected anion gap, delta ratio, hidden-acidosis check, and differentials. Engine parity-tested on web and iOS against 32 hand-worked golden vectors. Rules verified against Brandis §9.2, 9.3 and 3.3; citations verified on PubMed." }
+  ],
+  "engine": "builtin",
+  "tool": "acid-base",
+  "settings": ["ED", "ICU", "OR"],
+  "purpose": "Reads a blood gas the way the stepwise method does: pH, primary disorder, expected compensation, a second disorder if compensation is off, then the anion gap and delta ratio. Enter arterial pH, PaCO₂ and HCO₃; add Na, Cl and albumin for the gap.",
+  "toolContent": {
+    "fields": {
+      "ph": { "label": "pH" },
+      "paco2": { "label": "PaCO₂", "unit": "mmHg" },
+      "hco3": { "label": "HCO₃⁻", "unit": "mmol/L" },
+      "na": { "label": "Na⁺", "unit": "mmol/L", "help": "Optional — needed for the anion gap" },
+      "cl": { "label": "Cl⁻", "unit": "mmol/L", "help": "Optional — needed for the anion gap" },
+      "albumin": { "label": "Albumin", "unit": "g/dL", "help": "Optional — corrects the gap; low albumin hides a gap acidosis" }
+    },
+    "chronicity": {
+      "label": "Respiratory process",
+      "help": "Only used when the primary disorder is respiratory. Renal compensation takes 2 to 3 days, so 'acute' and 'chronic' expect different HCO₃⁻ values.",
+      "options": { "unknown": "Not sure", "acute": "Acute", "chronic": "Chronic" }
+    },
+    "phStatus": {
+      "acidemia": "Acidemia — an acidosis must be present",
+      "alkalemia": "Alkalemia — an alkalosis must be present",
+      "normal": "pH in range — either no disorder or an acidosis and an alkalosis offsetting each other"
+    },
+    "primary": {
+      "normal": { "label": "No acid-base disorder on the gas", "detail": "pH, PaCO₂ and HCO₃⁻ are all in range. Still check the anion gap: a gap acidosis and a metabolic alkalosis can cancel out." },
+      "metabolic_acidosis": { "label": "Metabolic acidosis", "detail": "Low HCO₃⁻ drives the low pH. Check respiratory compensation with Winter's formula, then the anion gap." },
+      "metabolic_alkalosis": { "label": "Metabolic alkalosis", "detail": "High HCO₃⁻ drives the high pH. Gastric acid loss and diuretics cause about 90% of cases." },
+      "respiratory_acidosis": { "label": "Respiratory acidosis", "detail": "High PaCO₂ drives the low pH. Nearly all cases are inadequate alveolar ventilation." },
+      "respiratory_alkalosis": { "label": "Respiratory alkalosis", "detail": "Low PaCO₂ drives the high pH. Hyperventilation is the mechanism in every case." },
+      "combined_acidosis": { "label": "Combined respiratory and metabolic acidosis", "detail": "PaCO₂ is high and HCO₃⁻ is low: both processes push pH down, so a mixed disorder must be present. Typical of cardiac arrest or a tiring patient with a metabolic acidosis." },
+      "combined_alkalosis": { "label": "Combined respiratory and metabolic alkalosis", "detail": "PaCO₂ is low and HCO₃⁻ is high: both push pH up, so a mixed disorder must be present." },
+      "compensated_chronic_respiratory_acidosis": { "label": "Compensated chronic respiratory acidosis", "detail": "PaCO₂ and HCO₃⁻ are both high with pH in range, and HCO₃⁻ matches the chronic 4-for-10 rule. A respiratory acidosis plus a metabolic alkalosis can look the same; the history decides." },
+      "compensated_chronic_respiratory_alkalosis": { "label": "Compensated chronic respiratory alkalosis", "detail": "PaCO₂ and HCO₃⁻ are both low with pH in range, and HCO₃⁻ matches the chronic 5-for-10 rule (the usual finding in pregnancy). A metabolic acidosis plus a respiratory alkalosis can look the same; the history decides." },
+      "respiratory_acidosis_with_metabolic_alkalosis": { "label": "Respiratory acidosis with metabolic alkalosis", "detail": "Both PaCO₂ and HCO₃⁻ are high with pH in range, and HCO₃⁻ is above even the chronic expectation, so an extra metabolic alkalosis is present." },
+      "metabolic_acidosis_with_respiratory_alkalosis": { "label": "Metabolic acidosis with respiratory alkalosis", "detail": "Both PaCO₂ and HCO₃⁻ are low with pH in range, and HCO₃⁻ is below the chronic respiratory expectation. Classic for salicylate toxicity, sepsis, and liver failure." },
+      "normal_ph_single_abnormal": { "label": "pH in range with only one abnormal value", "detail": "Only PaCO₂ or only HCO₃⁻ is outside its range. Recheck the entry or the sample before interpreting." },
+      "unclassified": { "label": "Pattern not classifiable", "detail": "The values do not fit a recognizable pattern. Recheck the entry or the sample." }
+    },
+    "compensation": {
+      "appropriate": "Compensation is as expected — no evidence of a second primary disorder.",
+      "plus_respiratory_acidosis": "PaCO₂ is higher than expected — a respiratory acidosis is also present (fatigue, sedation, lung disease).",
+      "plus_respiratory_alkalosis": "PaCO₂ is lower than expected — a respiratory alkalosis is also present.",
+      "plus_metabolic_alkalosis": "HCO₃⁻ is higher than expected — a metabolic alkalosis is also present.",
+      "plus_metabolic_acidosis": "HCO₃⁻ is lower than expected — a metabolic acidosis is also present.",
+      "fits_acute": "HCO₃⁻ fits an acute process.",
+      "fits_chronic": "HCO₃⁻ fits a chronic (renally compensated) process.",
+      "acute_or_chronic": "With this small PaCO₂ change, acute and chronic expectations overlap — the history decides.",
+      "between_acute_and_chronic": "HCO₃⁻ sits between the acute and chronic expectations: acute-on-chronic, or renal compensation still developing. It can also be a mixed disorder; the history decides."
+    },
+    "compensationRules": {
+      "winters": { "label": "Winter's formula (metabolic acidosis)", "formula": "Expected PaCO₂ = 1.5 × HCO₃⁻ + 8 (± 2)" },
+      "met_alk": { "label": "Metabolic alkalosis", "formula": "Expected PaCO₂ = 0.7 × HCO₃⁻ + 20 (± 5)" },
+      "resp_acid": { "label": "Respiratory acidosis", "formula": "HCO₃⁻ rises 1 (acute) or 4 (chronic) per 10 mmHg PaCO₂ above 40 (± 2)" },
+      "resp_alk": { "label": "Respiratory alkalosis", "formula": "HCO₃⁻ falls 2 (acute) or 5 (chronic) per 10 mmHg PaCO₂ below 40 (± 2)" }
+    },
+    "anionGap": {
+      "label": "Anion gap",
+      "normal": "Normal gap (below 12, K⁺ not included)",
+      "high": "High gap (12 or more)",
+      "correctedNote": "Albumin-corrected: + 2.5 for each 1 g/dL albumin below 4."
+    },
+    "deltaRatio": {
+      "label": "Delta ratio = (AG − 12) ÷ (24 − HCO₃⁻)",
+      "caution": "Built on four measured electrolytes and 'standard' normals — don't over-interpret; look for supporting evidence before acting on an unexpected value.",
+      "bands": {
+        "nagma": "Below 0.4 — normal anion gap (hyperchloremic) acidosis.",
+        "hagma_plus_nagma": "0.4 to 0.8 — combined high-gap and normal-gap acidosis (note: often below 1 in renal failure).",
+        "hagma": "0.8 to 2 — consistent with an uncomplicated high-gap acidosis (lactic acidosis averages about 1.6; DKA runs closer to 1).",
+        "hagma_plus_high_hco3": "Above 2 — HCO₃⁻ was high before the acidosis: a concurrent metabolic alkalosis, or a pre-existing compensated respiratory acidosis."
+      }
+    },
+    "flags": {
+      "hh_inconsistent": { "level": "warning", "text": "pH, PaCO₂ and HCO₃⁻ don't agree with Henderson-Hasselbalch (more than 0.05 apart). Recheck the entry — a transcription error, or a serum total CO₂ entered in place of the gas HCO₃⁻." },
+      "albumin_not_entered": { "level": "info", "text": "No albumin entered, so the gap is uncorrected. Low albumin lowers the gap and can hide a gap acidosis — common in critical illness." },
+      "hidden_acidosis_likely": { "level": "warning", "text": "Anion gap 20 to 30 without a metabolic acidosis on the gas — a gap acidosis is likely (about two-thirds of cases) and may be masked by a metabolic alkalosis." },
+      "hidden_acidosis_definite": { "level": "warning", "text": "Anion gap above 30 — a metabolic acidosis is present even though the gas doesn't show it. Look for an offsetting metabolic alkalosis." },
+      "enter_electrolytes_for_gap": { "level": "info", "text": "Add Na⁺ and Cl⁻ (and albumin) to calculate the anion gap and delta ratio." }
+    },
+    "statusMessages": {
+      "incomplete": "Enter pH, PaCO₂ and HCO₃⁻.",
+      "errors": {
+        "out_of_range_ph": "pH must be between 6.5 and 8.0.",
+        "out_of_range_paco2": "PaCO₂ must be between 5 and 150 mmHg.",
+        "out_of_range_hco3": "HCO₃⁻ must be between 2 and 60 mmol/L.",
+        "out_of_range_na": "Na⁺ must be between 100 and 180 mmol/L.",
+        "out_of_range_cl": "Cl⁻ must be between 60 and 140 mmol/L.",
+        "out_of_range_albumin": "Albumin must be between 0.5 and 6 g/dL."
+      }
+    },
+    "differentials": {
+      "hagma": {
+        "title": "High anion gap metabolic acidosis — GOLD MARK",
+        "items": ["Glycols (ethylene and propylene glycol)", "Oxoproline (pyroglutamic acid; chronic acetaminophen)", "L-lactate (shock, sepsis, ischemia, seizures)", "D-lactate (short bowel)", "Methanol", "Aspirin (salicylates)", "Renal failure (uremia)", "Ketoacidosis (diabetic, alcoholic, starvation)"],
+        "note": "Check lactate, ketones, creatinine, a salicylate level, and the osmolar gap when toxic alcohols are possible."
+      },
+      "nagma": {
+        "title": "Normal anion gap (hyperchloremic) metabolic acidosis",
+        "items": ["GI bicarbonate loss: severe diarrhea, small-bowel or pancreatic fistula, biliary drainage", "Uretero-enterostomy or obstructed ileal conduit", "Renal tubular acidosis", "Carbonic anhydrase inhibitors (acetazolamide)", "Large-volume normal saline (chloride load)", "Recovery phase of ketoacidosis", "HCl or NH₄Cl administration"]
+      },
+      "metabolic_alkalosis": {
+        "title": "Metabolic alkalosis",
+        "items": ["Chloride depletion: vomiting or NG suction, diuretics, post-hypercapnia, chloride-losing villous adenoma", "Potassium depletion / mineralocorticoid excess: primary or secondary hyperaldosteronism, Cushing's, licorice, Bartter's, severe hypokalemia", "Added base: bicarbonate, milk-alkali syndrome, citrate from massive transfusion, recovery from organic acidosis"],
+        "note": "Urine chloride helps once diuretics have worn off: low in chloride depletion, high (> 20 mmol/L) in mineralocorticoid excess, severe potassium depletion, or active diuretic effect."
+      },
+      "respiratory_acidosis": {
+        "title": "Respiratory acidosis",
+        "items": ["Central depression: opioids, sedatives, anesthetics, CNS injury, obesity hypoventilation, high cord lesion (C4 or above)", "Nerve or muscle: Guillain-Barré, myasthenia, neuromuscular blockers, organophosphates", "Lung or chest wall: COPD exacerbation, severe asthma, flail chest, pneumothorax, ARDS, pulmonary edema", "Airway obstruction or laryngospasm", "Inadequate mechanical ventilation", "CO₂ production with fixed ventilation (malignant hyperthermia) or rebreathing / laparoscopic CO₂"]
+      },
+      "respiratory_alkalosis": {
+        "title": "Respiratory alkalosis",
+        "items": ["Central: pain, anxiety, head injury, stroke, salicylates, pregnancy (progesterone), sepsis, liver disease", "Hypoxemia (peripheral chemoreceptors)", "Pulmonary: pulmonary embolism, pneumonia, asthma, pulmonary edema", "Excessive mechanical ventilation"]
+      }
+    },
+    "clinicalTakeaway": "Name the cause, not just the disorder: 'metabolic acidosis' is only useful once it becomes DKA, lactic acidosis or a toxic alcohol. A gas is a snapshot — recheck after treatment.",
+    "whyThisMatters": "Most missed acid-base diagnoses are the second disorder: a respiratory acidosis in a tiring patient with DKA, a metabolic alkalosis hiding a gap acidosis, a salicylate patient whose pH looks reassuring. Checking compensation and the delta ratio on every gas catches them."
+  },
+  "interpretation": [
+    { "label": "Acidemia", "severity": "high" },
+    { "label": "Alkalemia", "severity": "high" },
+    { "label": "pH in range", "severity": "low" }
+  ],
+  "buildNote": "Code-backed tool (engine: builtin, tool: acid-base). Math in web/src/lib/acidBaseEngine.js and ios/Sources/Calc/AcidBaseEngine.swift; both run tools/fixtures/acid-base-golden-vectors.json. Design choices beyond the sources: the ± 2 band Brandis gives for chronic respiratory alkalosis is applied to all four respiratory rules; a Henderson-Hasselbalch mismatch above 0.05 pH units is flagged; when pH is out of range but PaCO₂ and HCO₃⁻ are both within their reference ranges, the component with the larger deviation (scaled to each half-range) is called primary; at normal pH with both values shifted the same way, the chronic respiratory rule is tested before calling the disorder mixed."
+}

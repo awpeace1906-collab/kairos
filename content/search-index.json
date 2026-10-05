@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T00:00:00Z",
+  "generatedAt": "2026-10-05T00:00:00Z",
   "entries": [
     {
       "id": "apfel-ponv",
@@ -828,6 +828,54 @@
         "ed",
         "icu",
         "prehospital"
+      ]
+    },
+    {
+      "id": "acid-base-analyzer",
+      "title": "Acid-Base Analyzer",
+      "section": "Calculators",
+      "category": "GI / Renal / Metabolic",
+      "tags": [
+        "acid-base",
+        "ABG",
+        "metabolic acidosis",
+        "metabolic alkalosis",
+        "respiratory acidosis",
+        "respiratory alkalosis",
+        "anion gap",
+        "delta ratio",
+        "ED",
+        "ICU"
+      ],
+      "keywords": [
+        "blood gas",
+        "pH PaCO2 HCO3",
+        "expected compensation",
+        "Winter's formula",
+        "delta delta",
+        "delta gap",
+        "albumin corrected anion gap",
+        "HAGMA",
+        "NAGMA",
+        "GOLD MARK",
+        "acute vs chronic respiratory acidosis",
+        "1 for 10",
+        "4 for 10",
+        "2 for 10",
+        "5 for 10",
+        "ABG analyzer",
+        "blood gas analyzer",
+        "acid base calculator",
+        "acidosis alkalosis calculator",
+        "ABG calculator",
+        "mixed acid-base disorder"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/gi-renal-metabolic/acid-base-analyzer",
+      "settingEmphasis": [
+        "ed",
+        "icu",
+        "or"
       ]
     },
     {

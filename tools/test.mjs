@@ -10,6 +10,7 @@ import { makeSearch } from "../web/src/lib/search.js";
 import { parseRichText, isStructured, leadLabel, tableColumnWeights, shouldStackTable } from "../web/src/lib/richText.js";
 import { loadModules, loadConfig } from "./lib/content.mjs";
 import { interpret as axisInterpret } from "../web/src/lib/axisEngine.js";
+import { interpret as abgInterpret } from "../web/src/lib/acidBaseEngine.js";
 import { readFileSync } from "node:fs";
 
 let pass = 0;
@@ -321,6 +322,66 @@ for (const m of mods) {
     for (const w of e.warningsInclude || []) if (!r.warnings.includes(w)) errs.push(`missing warning ${w}`);
     for (const w of e.warningsExclude || []) if (r.warnings.includes(w)) errs.push(`unexpected warning ${w}`);
     ok(`axis: ${c.name}`, !errs.length, errs.join("; "));
+  }
+}
+
+// ------------------------------------- acid-base analyzer (golden vectors)
+// The same file ios/Tests (AcidBaseParityTests) runs against the Swift port.
+{
+  const { cases } = JSON.parse(readFileSync(new URL("./fixtures/acid-base-golden-vectors.json", import.meta.url)));
+  const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+  const sorted = (a) => [...(a || [])].sort();
+  for (const c of cases) {
+    const r = abgInterpret(c.input);
+    const e = c.expect;
+    const errs = [];
+    const chk = (k, got, want) => { if (!same(got, want)) errs.push(`${k}: got ${JSON.stringify(got)}, want ${JSON.stringify(want)}`); };
+    const comp = r.compensation;
+    if ("status" in e) chk("status", r.status, e.status);
+    if ("error" in e) chk("error", r.error, e.error);
+    if ("phStatus" in e) chk("phStatus", r.phStatus, e.phStatus);
+    if ("primary" in e) chk("primary", r.primary, e.primary);
+    if ("compensation" in e) chk("compensation", comp ?? null, e.compensation);
+    if ("compRule" in e) chk("compRule", comp?.rule, e.compRule);
+    if ("compKey" in e) chk("compKey", comp?.key, e.compKey);
+    if ("expectedCenter" in e) chk("expectedCenter", comp?.expected?.center, e.expectedCenter);
+    if ("expectedLo" in e) chk("expectedLo", comp?.expected?.lo, e.expectedLo);
+    if ("expectedHi" in e) chk("expectedHi", comp?.expected?.hi, e.expectedHi);
+    if ("acuteCenter" in e) chk("acuteCenter", comp?.expected?.acute?.center, e.acuteCenter);
+    if ("chronicCenter" in e) chk("chronicCenter", comp?.expected?.chronic?.center, e.chronicCenter);
+    if ("hhCalculated" in e) chk("hhCalculated", r.hh?.calculatedPh, e.hhCalculated);
+    if ("agValue" in e) chk("agValue", r.ag?.value, e.agValue);
+    if ("agCorrected" in e) chk("agCorrected", r.ag?.corrected, e.agCorrected);
+    if ("agUsed" in e) chk("agUsed", r.ag?.used, e.agUsed);
+    if ("agKey" in e) chk("agKey", r.ag?.key, e.agKey);
+    if ("deltaRatio" in e) chk("deltaRatio", r.deltaRatio?.value, e.deltaRatio);
+    if ("deltaKey" in e) chk("deltaKey", r.deltaRatio?.key, e.deltaKey);
+    if ("disordersExact" in e) chk("disordersExact", sorted(r.disorders), sorted(e.disordersExact));
+    if ("differentialsExact" in e) chk("differentialsExact", sorted(r.differentials), sorted(e.differentialsExact));
+    if ("flagsExact" in e) chk("flagsExact", sorted(r.flags), sorted(e.flagsExact));
+    for (const f of e.flagsInclude || []) if (!(r.flags || []).includes(f)) errs.push(`missing flag ${f}`);
+    for (const f of e.flagsExclude || []) if ((r.flags || []).includes(f)) errs.push(`unexpected flag ${f}`);
+    ok(`acid-base: ${c.name}`, !errs.length, errs.join("; "));
+  }
+  // Every key the engine emits for these cases must have copy in the module.
+  const abg = byId["acid-base-analyzer"];
+  if (abg) {
+    const C = abg.toolContent;
+    const missing = [];
+    for (const c of cases) {
+      const r = abgInterpret(c.input);
+      if (r.status === "incomplete" && !C.statusMessages.incomplete) missing.push("incomplete");
+      if (r.error && !C.statusMessages.errors[r.error]) missing.push(r.error);
+      if (r.status !== "ok") continue;
+      if (!C.phStatus[r.phStatus]) missing.push(`phStatus.${r.phStatus}`);
+      if (!C.primary[r.primary]) missing.push(`primary.${r.primary}`);
+      if (r.compensation && !C.compensation[r.compensation.key]) missing.push(`compensation.${r.compensation.key}`);
+      if (r.compensation && !C.compensationRules[r.compensation.rule]) missing.push(`rule.${r.compensation.rule}`);
+      if (r.deltaRatio && !C.deltaRatio.bands[r.deltaRatio.key]) missing.push(`delta.${r.deltaRatio.key}`);
+      for (const f of r.flags) if (!C.flags[f]) missing.push(`flag.${f}`);
+      for (const d of r.differentials) if (!C.differentials[d]) missing.push(`differential.${d}`);
+    }
+    ok("acid-base: module has copy for every engine key", !missing.length, [...new Set(missing)].join(", "));
   }
 }
 

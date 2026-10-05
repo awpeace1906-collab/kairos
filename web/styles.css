@@ -435,13 +435,13 @@ h3 { margin: 18px 0 6px; letter-spacing: -0.01em; }
 .sources-block { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); }
 .sources-block h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 6px; }
 .sources-block ol { margin: 0; padding-left: 20px; font-size: .85rem; color: var(--text); }
-.sources-block li { margin: 3px 0; }
+.sources-block li { margin: 3px 0; overflow-wrap: anywhere; } /* long URLs and DOIs wrap on phones */
 .sources-all { margin: 6px 0 0; font-size: .8rem; }
 
 /* global Sources page (Settings -> Sources) */
 .sources-page h2 { font-size: .95rem; margin: 20px 0 8px; }
 .sources-ol { margin: 0; padding-left: 20px; }
-.sources-ol li { margin: 0 0 10px; }
+.sources-ol li { margin: 0 0 10px; overflow-wrap: anywhere; }
 .src-text { font-size: .92rem; }
 .src-usedby { font-size: .78rem; color: var(--muted); margin-top: 2px; }
 .src-usedby a { color: var(--accent); }
@@ -742,3 +742,11 @@ figure.diagram--plate .diagram-credit { color: #6b6862; }
 .ax-key-p { border-top: 2px solid var(--sev-low); }
 .ax-key-t { border-top: 2px dashed var(--accent); }
 .ax-key-range { height: 8px; border: 1px dashed var(--accent); background: color-mix(in srgb, var(--accent) 22%, transparent); }
+
+/* Acid-base analyzer — reuses the axis tool's field/band/flag styles. */
+.abg-tool .abg-lytes { margin-top: 10px; }
+.abg-help { font-size: .78rem; line-height: 1.3; }
+.abg-chron { display: grid; gap: 6px; margin-top: 12px; }
+.abg-tool .abg-primary { font-size: 1.15rem; }
+/* Acid-base lines carry sentences, not short values: stack label → value → text. */
+.abg-tool .axis-line { grid-template-columns: minmax(0, 1fr); }

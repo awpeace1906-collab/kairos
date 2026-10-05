@@ -26,7 +26,7 @@
     "measured PaCO2 below expected means concurrent respiratory alkalosis, overcompensation or a separate primary process"
   ],
   "contentType": "calculator",
-  "content_version": 2,
+  "content_version": 3,
   "last_reviewed": "2026-09-15",
   "next_review_due": "2026-12-15",
   "review_tier": "stable",
@@ -43,11 +43,16 @@
       "version": 2,
       "date": "2026-09-25",
       "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    },
+    {
+      "version": 3,
+      "date": "2026-10-05",
+      "change": "Pointed to the new Acid-Base Analyzer for the full stepwise read. Formula and bands unchanged."
     }
   ],
   "engine": "formula",
   "purpose": "Check whether a patient's respiratory compensation for a metabolic acidosis is appropriate — the formula predicts the PaCO2 that FULLY-compensated pure metabolic acidosis should produce, so you can tell whether a second, independent acid-base process is also present.",
-  "notes": "This formula only applies to a PRIMARY metabolic acidosis. Compare the patient's MEASURED PaCO2 to the formula's expected range:\n- If measured PaCO2 is HIGHER than expected: a concurrent respiratory acidosis is also present (compensation is inadequate — consider a superimposed respiratory problem, e.g. sedation, fatigue, primary lung disease).\n- If measured PaCO2 is LOWER than expected: a concurrent respiratory alkalosis is present (overcompensation, or an independent process driving hyperventilation — e.g. sepsis, salicylate toxicity, pain, anxiety).\n- If measured PaCO2 falls within the expected ± 2 range: the picture is consistent with a SIMPLE (uncomplicated) metabolic acidosis.",
+  "notes": "This formula only applies to a PRIMARY metabolic acidosis. Compare the patient's MEASURED PaCO2 to the formula's expected range:\n- If measured PaCO2 is HIGHER than expected: a concurrent respiratory acidosis is also present (compensation is inadequate — consider a superimposed respiratory problem, e.g. sedation, fatigue, primary lung disease).\n- If measured PaCO2 is LOWER than expected: a concurrent respiratory alkalosis is present (overcompensation, or an independent process driving hyperventilation — e.g. sepsis, salicylate toxicity, pain, anxiety).\n- If measured PaCO2 falls within the expected ± 2 range: the picture is consistent with a SIMPLE (uncomplicated) metabolic acidosis.\n\nFor the full read — all four primary disorders, acute and chronic respiratory rules, the anion gap and delta ratio — use the Acid-Base Analyzer.",
   "inputs": [
     {
       "key": "hco3",

@@ -23,13 +23,22 @@
     "ICU"
   ],
   "contentType": "reference",
-  "content_version": 3,
-  "last_reviewed": "2026-08-31",
+  "content_version": 4,
+  "last_reviewed": "2026-10-05",
   "review_tier": "stable",
   "sources": [
-    "Standard acid-base physiology; Critical (consolidated)"
+    "Brandis K. Acid-Base Physiology. AnaesthesiaMCQ.com: §9.2 Systematic evaluation; §9.3 Bedside rules for assessment of compensation; §3.3 The delta ratio. https://www.anaesthesiamcq.com/AcidBaseBook/ab9_3.php (stepwise method, compensation rules and ranges, delta-ratio bands)",
+    "Narins RG, Emmett M. Simple and mixed acid-base disorders: a practical approach. Medicine (Baltimore). 1980;59(3):161-187. doi:10.1097/00005792-198005000-00001",
+    "Berend K, de Vries APJ, Gans ROB. Physiological approach to assessment of acid-base disturbances. N Engl J Med. 2014;371(15):1434-1445. doi:10.1056/NEJMra1003327",
+    "Figge J, Jabor A, Kazda A, Fencl V. Anion gap and hypoalbuminemia. Crit Care Med. 1998;26(11):1807-1810. doi:10.1097/00003246-199811000-00019 (albumin correction)",
+    "Standard respiratory physiology; Critical (consolidated) — A-a gradient and oxyhemoglobin dissociation curve sections"
   ],
   "changelog": [
+    {
+      "version": 4,
+      "date": "2026-10-05",
+      "change": "Acid-base half rewritten to match the new Acid-Base Analyzer calculator: Henderson-Hasselbalch consistency check, the pattern rule (opposite directions = mixed), compensation rules for all four primary disorders (previously Winter's only), the albumin-corrected anion gap with the 20/30 thresholds, and delta-ratio interpretation (previously named but not explained). Replaced the uncitable 'standard physiology' source with Brandis, Narins & Emmett, Berend and Figge for these sections. A-a gradient and dissociation-curve sections unchanged."
+    },
     {
       "version": 3,
       "date": "2026-09-07",
@@ -46,9 +55,9 @@
       "change": "Initial entry. Stable methodology — no scheduled review."
     }
   ],
-  "summary": "A stepwise method with the compensation formulas and two oxygenation tools.",
+  "summary": "A stepwise method with the compensation rules for all four primary disorders, the anion gap and delta ratio, and two oxygenation tools.",
   "whyThisMatters": "ABG misreads happen when the reader jumps to the obvious abnormality and skips the compensation check — missing a second, hidden acid–base disorder — or treats the PaO₂ without computing the A-a gradient that says whether the lung or the ventilation is the problem.",
-  "clinicalTakeaway": "Work the steps in order: pH, then the primary disorder, then the expected compensation (does the measured value match the formula? if not, there is a second disorder), then the anion gap and delta-delta, then the A-a gradient for the oxygenation problem.",
+  "clinicalTakeaway": "Work the steps in order: check the numbers agree, then pH, the primary disorder, the expected compensation (if the measured value misses the rule, there is a second disorder), the anion gap and delta ratio, and finally the A-a gradient for the oxygenation problem.",
   "body": [
     {
       "type": "heading",
@@ -56,16 +65,115 @@
       "text": "Stepwise method"
     },
     {
+      "type": "callout",
+      "tone": "info",
+      "text": "The **Acid-Base Analyzer** calculator runs these steps on your patient's numbers, using the same rules."
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "**Check the numbers agree.** pH ≈ 6.1 + log₁₀(HCO₃⁻ ÷ (0.03 × PaCO₂)). A large mismatch is usually a transcription error, or a serum total CO₂ entered in place of the gas HCO₃⁻.",
+        "**pH.** Acidemia (< 7.35) means an acidosis is present; alkalemia (> 7.45) means an alkalosis is present. A normal pH means no disorder, or an acidosis and an alkalosis offsetting each other.",
+        "**Pattern.** HCO₃⁻ and PaCO₂ both low: metabolic acidosis or respiratory alkalosis. Both high: metabolic alkalosis or respiratory acidosis. Moving in opposite directions: a mixed disorder must be present.",
+        "**Name the primary disorder** from the pH and the pattern, with the history.",
+        "**Check compensation** with the rule for that disorder (table below). A measured value outside the expected range means a second primary disorder.",
+        "**Anion gap** = Na⁺ − (Cl⁻ + HCO₃⁻); add 2.5 for each 1 g/dL albumin below 4. A gap of 20 to 30 suggests a metabolic acidosis (about two-thirds of cases); above 30, one is present even if the gas doesn't show it.",
+        "**Delta ratio** if a metabolic acidosis is present (table below).",
+        "**Name the cause**, not just the disorder — then confirm with lactate, ketones, creatinine, salicylate level or osmolar gap as needed."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Expected compensation"
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Primary disorder",
+        "Rule",
+        "Expected value"
+      ],
+      "rows": [
+        [
+          "Metabolic acidosis",
+          "Winter's formula",
+          "PaCO₂ = 1.5 × HCO₃⁻ + 8 (± 2)"
+        ],
+        [
+          "Metabolic alkalosis",
+          "0.7 + 20",
+          "PaCO₂ = 0.7 × HCO₃⁻ + 20 (± 5)"
+        ],
+        [
+          "Respiratory acidosis, acute",
+          "1 for 10",
+          "HCO₃⁻ rises 1 per 10 mmHg PaCO₂ above 40"
+        ],
+        [
+          "Respiratory acidosis, chronic",
+          "4 for 10",
+          "HCO₃⁻ rises 4 per 10 mmHg PaCO₂ above 40"
+        ],
+        [
+          "Respiratory alkalosis, acute",
+          "2 for 10",
+          "HCO₃⁻ falls 2 per 10 mmHg PaCO₂ below 40 (rarely below about 18)"
+        ],
+        [
+          "Respiratory alkalosis, chronic",
+          "5 for 10",
+          "HCO₃⁻ falls 5 per 10 mmHg PaCO₂ below 40 (± 2; floor about 12 to 15)"
+        ]
+      ]
+    },
+    {
       "type": "list",
       "items": [
-        "1. pH — acidemia < 7.35, alkalemia > 7.45",
-        "2. PaCO₂ — high = respiratory acidosis component; low = respiratory alkalosis component",
-        "3. HCO₃⁻ — assess the metabolic component",
-        "4. Name the primary disorder",
-        "5. Expected compensation — Winter's formula for a metabolic acidosis: expected PaCO₂ = (1.5 × HCO₃⁻) + 8 ± 2. Actual PaCO₂ outside this range → a mixed disorder.",
-        "6. If a metabolic acidosis is present, calculate the anion gap (see the calculator).",
-        "7. If the AG is elevated, calculate the delta-delta to look for a concurrent non-gap process."
+        "Measured PaCO₂ above expected: a respiratory acidosis is also present; below expected: a respiratory alkalosis.",
+        "Measured HCO₃⁻ above expected: a metabolic alkalosis is also present; below expected: a metabolic acidosis.",
+        "Respiratory compensation for a metabolic acidosis takes 12 to 24 hours; renal compensation takes 2 to 3 days. Only primary processes are called acidosis or alkalosis — compensation is never a 'secondary' disorder."
       ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Delta ratio"
+    },
+    {
+      "type": "text",
+      "text": "Delta ratio = (AG − 12) ÷ (24 − HCO₃⁻): the rise in the gap against the fall in bicarbonate."
+    },
+    {
+      "type": "table",
+      "columns": [
+        "Delta ratio",
+        "Interpretation"
+      ],
+      "rows": [
+        [
+          "< 0.4",
+          "Normal anion gap (hyperchloremic) acidosis"
+        ],
+        [
+          "0.4 to 0.8",
+          "Combined high-gap and normal-gap acidosis (often below 1 in renal failure)"
+        ],
+        [
+          "1 to 2",
+          "Uncomplicated high-gap acidosis; lactic acidosis averages about 1.6; DKA runs closer to 1 from urinary ketone loss"
+        ],
+        [
+          "> 2",
+          "HCO₃⁻ was high before the acidosis: a concurrent metabolic alkalosis, or a pre-existing compensated respiratory acidosis"
+        ]
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "text": "The ratio rests on four measured electrolytes and 'standard' normals, and low albumin lowers the normal gap. Don't over-interpret an unexpected value without supporting evidence."
     },
     {
       "type": "heading",

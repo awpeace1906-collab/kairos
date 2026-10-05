@@ -27,6 +27,44 @@
           "toolContent"
         ]
       }
+    },
+    {
+      "if": {
+        "properties": {
+          "tool": {
+            "const": "ekg-axis"
+          }
+        },
+        "required": [
+          "tool"
+        ]
+      },
+      "then": {
+        "properties": {
+          "toolContent": {
+            "$ref": "#/$defs/ekgAxisContent"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "tool": {
+            "const": "acid-base"
+          }
+        },
+        "required": [
+          "tool"
+        ]
+      },
+      "then": {
+        "properties": {
+          "toolContent": {
+            "$ref": "#/$defs/acidBaseContent"
+          }
+        }
+      }
     }
   ],
   "unevaluatedProperties": false,
@@ -71,13 +109,14 @@
     "tool": {
       "type": "string",
       "enum": [
-        "ekg-axis"
+        "ekg-axis",
+        "acid-base"
       ],
-      "description": "engine=builtin only: which code-backed tool renders this module. ekg-axis → web/src/lib/axisEngine.js + ios/Sources/Calc/AxisEngine.swift, parity-tested against tools/fixtures/axis-golden-vectors.json."
+      "description": "engine=builtin only: which code-backed tool renders this module. ekg-axis → web/src/lib/axisEngine.js + ios/Sources/Calc/AxisEngine.swift (tools/fixtures/axis-golden-vectors.json); acid-base → web/src/lib/acidBaseEngine.js + ios/Sources/Calc/AcidBaseEngine.swift (tools/fixtures/acid-base-golden-vectors.json)."
     },
     "toolContent": {
-      "$ref": "#/$defs/ekgAxisContent",
-      "description": "engine=builtin only: all copy the tool displays. The engine returns keys (category, flag, warning, status); this object maps each key to text."
+      "type": "object",
+      "description": "engine=builtin only: all copy the tool displays. The engine returns keys; this object maps each key to text. Its shape depends on `tool` (see allOf)."
     },
     "settings": {
       "type": "array",
@@ -712,6 +751,417 @@
         },
         "whyThisMatters": {
           "type": "string"
+        }
+      }
+    },
+    "acidBaseContent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fields",
+        "chronicity",
+        "phStatus",
+        "primary",
+        "compensation",
+        "compensationRules",
+        "anionGap",
+        "deltaRatio",
+        "flags",
+        "statusMessages",
+        "differentials",
+        "clinicalTakeaway",
+        "whyThisMatters"
+      ],
+      "properties": {
+        "fields": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ph",
+            "paco2",
+            "hco3",
+            "na",
+            "cl",
+            "albumin"
+          ],
+          "properties": {
+            "ph": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "unit": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "help": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "paco2": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "unit": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "help": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "hco3": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "unit": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "help": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "na": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "unit": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "help": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "cl": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "unit": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "help": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "albumin": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "label"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "unit": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "help": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        },
+        "chronicity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "options",
+            "help"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1
+            },
+            "help": {
+              "type": "string",
+              "minLength": 1
+            },
+            "options": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "unknown",
+                "acute",
+                "chronic"
+              ],
+              "properties": {
+                "unknown": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "acute": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "chronic": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        },
+        "phStatus": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "acidemia",
+            "alkalemia",
+            "normal"
+          ],
+          "properties": {
+            "acidemia": {
+              "type": "string",
+              "minLength": 1
+            },
+            "alkalemia": {
+              "type": "string",
+              "minLength": 1
+            },
+            "normal": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "primary": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "label",
+              "detail"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "detail": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "compensation": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "compensationRules": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "label",
+              "formula"
+            ],
+            "properties": {
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "formula": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "anionGap": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "normal",
+            "high",
+            "correctedNote"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1
+            },
+            "normal": {
+              "type": "string",
+              "minLength": 1
+            },
+            "high": {
+              "type": "string",
+              "minLength": 1
+            },
+            "correctedNote": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "deltaRatio": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "bands",
+            "caution"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1
+            },
+            "caution": {
+              "type": "string",
+              "minLength": 1
+            },
+            "bands": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "flags": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "level",
+              "text"
+            ],
+            "properties": {
+              "level": {
+                "type": "string",
+                "enum": [
+                  "warning",
+                  "info"
+                ]
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "statusMessages": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "incomplete",
+            "errors"
+          ],
+          "properties": {
+            "incomplete": {
+              "type": "string",
+              "minLength": 1
+            },
+            "errors": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "differentials": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "title",
+              "items"
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "clinicalTakeaway": {
+          "type": "string",
+          "minLength": 1
+        },
+        "whyThisMatters": {
+          "type": "string",
+          "minLength": 1
         }
       }
     }

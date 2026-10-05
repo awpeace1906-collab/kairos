@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T00:00:00Z",
+  "generatedAt": "2026-10-05T00:00:00Z",
   "groupOrder": [
     "Guidelines & consensus statements",
     "Randomized trials & major studies",
@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 992,
+  "count": 1002,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -1944,6 +1944,18 @@
           "title": "Kawasaki Disease",
           "section": "Peds Module",
           "route": "/peds-module/peds-resuscitation-decision-support/kawasaki-disease"
+        }
+      ]
+    },
+    {
+      "text": "Mehta AN, Emmett JB, Emmett M. GOLD MARK: an anion gap mnemonic for the 21st century. Lancet. 2008;372(9642):892. doi:10.1016/S0140-6736(08)61398-7",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "acid-base-analyzer",
+          "title": "Acid-Base Analyzer",
+          "section": "Calculators",
+          "route": "/calculators/gi-renal-metabolic/acid-base-analyzer"
         }
       ]
     },
@@ -6256,6 +6268,30 @@
       ]
     },
     {
+      "text": "Berend K, de Vries APJ, Gans ROB. Physiological approach to assessment of acid-base disturbances. N Engl J Med. 2014;371(15):1434-1445. doi:10.1056/NEJMra1003327",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "abg-interpretation",
+          "title": "ABG Interpretation",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/abg-interpretation"
+        }
+      ]
+    },
+    {
+      "text": "Berend K, de Vries APJ, Gans ROB. Physiological approach to assessment of acid-base disturbances. N Engl J Med. 2014;371(15):1434-1445. doi:10.1056/NEJMra1003327 (stepwise approach)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acid-base-analyzer",
+          "title": "Acid-Base Analyzer",
+          "section": "Calculators",
+          "route": "/calculators/gi-renal-metabolic/acid-base-analyzer"
+        }
+      ]
+    },
+    {
       "text": "Bergstrom N, Braden BJ, Laguzza A, Holman V. The Braden Scale for Predicting Pressure Sore Risk. Nurs Res. 1987;36(4):205-210.",
       "group": "Other primary sources",
       "usedBy": [
@@ -6420,6 +6456,30 @@
           "title": "Psychiatric Drug Toxicity — Lithium, Antipsychotics/NMS, SSRIs, Bupropion",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-psych-meds"
+        }
+      ]
+    },
+    {
+      "text": "Brandis K. Acid-Base Physiology. AnaesthesiaMCQ.com: §9.2 Systematic evaluation of acid-base status; §9.3 Bedside rules for assessment of compensation; §3.3 The delta ratio; §4.2, 5.2, 6.2, 7.2 Causes. https://www.anaesthesiamcq.com/AcidBaseBook/ab9_3.php (compensation rules and ranges, delta-ratio bands, anion-gap thresholds, differentials)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acid-base-analyzer",
+          "title": "Acid-Base Analyzer",
+          "section": "Calculators",
+          "route": "/calculators/gi-renal-metabolic/acid-base-analyzer"
+        }
+      ]
+    },
+    {
+      "text": "Brandis K. Acid-Base Physiology. AnaesthesiaMCQ.com: §9.2 Systematic evaluation; §9.3 Bedside rules for assessment of compensation; §3.3 The delta ratio. https://www.anaesthesiamcq.com/AcidBaseBook/ab9_3.php (stepwise method, compensation rules and ranges, delta-ratio bands)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "abg-interpretation",
+          "title": "ABG Interpretation",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/abg-interpretation"
         }
       ]
     },
@@ -8190,6 +8250,30 @@
           "title": "HEART Score for Major Cardiac Events",
           "section": "Calculators",
           "route": "/calculators/cardiovascular-chest-pain-arrhythmia/heart-score"
+        }
+      ]
+    },
+    {
+      "text": "Figge J, Jabor A, Kazda A, Fencl V. Anion gap and hypoalbuminemia. Crit Care Med. 1998;26(11):1807-1810. doi:10.1097/00003246-199811000-00019 (albumin correction, 2.5 per g/dL)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acid-base-analyzer",
+          "title": "Acid-Base Analyzer",
+          "section": "Calculators",
+          "route": "/calculators/gi-renal-metabolic/acid-base-analyzer"
+        }
+      ]
+    },
+    {
+      "text": "Figge J, Jabor A, Kazda A, Fencl V. Anion gap and hypoalbuminemia. Crit Care Med. 1998;26(11):1807-1810. doi:10.1097/00003246-199811000-00019 (albumin correction)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "abg-interpretation",
+          "title": "ABG Interpretation",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/abg-interpretation"
         }
       ]
     },
@@ -10108,6 +10192,30 @@
       ]
     },
     {
+      "text": "Narins RG, Emmett M. Simple and mixed acid-base disorders: a practical approach. Medicine (Baltimore). 1980;59(3):161-187. doi:10.1097/00005792-198005000-00001",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "abg-interpretation",
+          "title": "ABG Interpretation",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/abg-interpretation"
+        }
+      ]
+    },
+    {
+      "text": "Narins RG, Emmett M. Simple and mixed acid-base disorders: a practical approach. Medicine (Baltimore). 1980;59(3):161-187. doi:10.1097/00005792-198005000-00001 (compensation formulas for each primary disorder)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acid-base-analyzer",
+          "title": "Acid-Base Analyzer",
+          "section": "Calculators",
+          "route": "/calculators/gi-renal-metabolic/acid-base-analyzer"
+        }
+      ]
+    },
+    {
       "text": "National Battery Ingestion Hotline / Poison Control button-battery management guidance.",
       "group": "Other primary sources",
       "usedBy": [
@@ -11272,6 +11380,18 @@
       ]
     },
     {
+      "text": "Seifter JL. Integration of acid-base and electrolyte disorders. N Engl J Med. 2014;371(19):1821-1831. doi:10.1056/NEJMra1215672",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "acid-base-analyzer",
+          "title": "Acid-Base Analyzer",
+          "section": "Calculators",
+          "route": "/calculators/gi-renal-metabolic/acid-base-analyzer"
+        }
+      ]
+    },
+    {
       "text": "Serotonergic Psychedelics: A Comparative Review. ScienceDirect, 2024",
       "group": "Other primary sources",
       "usedBy": [
@@ -11400,18 +11520,6 @@
           "title": "Beta-Blocker Receptor Selectivity",
           "section": "Reference Library",
           "route": "/reference-library/cardiac-ecg/beta-blocker-selectivity"
-        }
-      ]
-    },
-    {
-      "text": "Standard acid-base physiology; Critical (consolidated)",
-      "group": "Other primary sources",
-      "usedBy": [
-        {
-          "id": "abg-interpretation",
-          "title": "ABG Interpretation",
-          "section": "Reference Library",
-          "route": "/reference-library/resuscitation-airway/abg-interpretation"
         }
       ]
     },
@@ -11568,6 +11676,18 @@
           "title": "Meropenem",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/antimicrobial-dosing/meropenem"
+        }
+      ]
+    },
+    {
+      "text": "Standard respiratory physiology; Critical (consolidated) — A-a gradient and oxyhemoglobin dissociation curve sections",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "abg-interpretation",
+          "title": "ABG Interpretation",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/abg-interpretation"
         }
       ]
     },
