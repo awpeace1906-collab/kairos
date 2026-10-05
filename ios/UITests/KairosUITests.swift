@@ -232,4 +232,31 @@ final class KairosUITests: XCTestCase {
         XCTAssertTrue(text(containing: "D-dimer negative").waitForExistence(timeout: 5))
         let shot = XCTAttachment(screenshot: app.screenshot()); shot.name = "d-dimer"; shot.lifetime = .keepAlways; add(shot)
     }
+
+    /// Calculators → search → Acid-Base Analyzer: DKA with a tiring patient
+    /// (pH 7.12, PaCO2 45, HCO3 14, Na 140, Cl 104, albumin 4) must read as a
+    /// metabolic acidosis with a concurrent respiratory acidosis, gap 22.
+    func testAcidBaseAnalyzerFlow() {
+        openSection("calculators")
+        let search = app.searchFields.firstMatch
+        if !search.waitForExistence(timeout: 3) { app.swipeDown() }
+        XCTAssertTrue(search.waitForExistence(timeout: 5), "search field never appeared")
+        search.tap(); search.typeText("acid-base")
+        let row = app.buttons["row-acid-base-analyzer"].firstMatch
+        XCTAssertTrue(row.waitForExistence(timeout: 5), "analyzer row missing")
+        row.tap()
+
+        for (key, value) in [("ph", "7.12"), ("paco2", "45"), ("hco3", "14"), ("na", "140"), ("cl", "104"), ("albumin", "4")] {
+            let f = app.textFields["abg-\(key)"].firstMatch
+            XCTAssertTrue(f.waitForExistence(timeout: 5), "field \(key) missing")
+            f.tap(); f.typeText(value)
+        }
+        app.buttons["abg-kb-done"].firstMatch.tap()
+
+        XCTAssertTrue(text(containing: "Metabolic acidosis").waitForExistence(timeout: 5))
+        XCTAssertTrue(text(containing: "a respiratory acidosis is also present").waitForExistence(timeout: 5),
+                      "second disorder not flagged")
+        XCTAssertTrue(text(containing: "Expected PaCO₂ 27–31").exists)
+        let shot = XCTAttachment(screenshot: app.screenshot()); shot.name = "acid-base"; shot.lifetime = .keepAlways; add(shot)
+    }
 }
