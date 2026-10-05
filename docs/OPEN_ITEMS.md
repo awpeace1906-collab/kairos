@@ -19,6 +19,13 @@ phone-safe tables, Gray's plate overlays, pericardiocentesis angle set to
 about 30°. The one remaining EKG axis item (sex-specific QRS-T cutoffs) is
 under "Design decisions open".
 
+**Deferred by the user (2026-10-05): TestFlight.** Content updates reach the
+phone on a fresh launch; new app code (new screens, new builtin tools) needs a
+new build, currently installed from Xcode. When ready: user creates the App
+Store Connect app record + API key and adds it as a GitHub secret; then add a
+workflow that builds, signs and uploads to TestFlight on ios/** changes, with
+an auto-incremented build number.
+
 Older state note (2026-09-23), kept for history — **431 modules**, pipeline green (validate 431/0, build/sync/test
 281/0), iOS `TEST SUCCEEDED` (10/10 EngineTests). The original 2026-09-14
 content audit closed at Batch 5 (384 modules). The **fresh follow-up gap
