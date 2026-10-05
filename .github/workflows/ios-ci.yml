@@ -26,6 +26,35 @@ jobs:
       - name: Generate the Xcode project
         working-directory: ios
         run: xcodegen generate
+      - name: Pick an iPhone simulator
+        # Don't hard-code a device name: runner images sometimes ship without
+        # the one named (twice the job failed with "Unable to find a device").
+        # Use any available iPhone; create one if a runtime exists but no device.
+        id: sim
+        run: |
+          pick() {
+            xcrun simctl list devices available -j | python3 -c "
+          import json, sys
+          d = json.load(sys.stdin)['devices']
+          ids = [x['udid'] for k, v in d.items() if 'iOS' in k for x in v if x['name'].startswith('iPhone')]
+          print(ids[-1] if ids else '')"
+          }
+          UDID=$(pick)
+          if [ -z "$UDID" ]; then
+            # Newest iOS runtime, and an iPhone type that runtime supports.
+            read -r RT DT < <(xcrun simctl list runtimes available -j | python3 -c "
+          import json, sys
+          rs = [x for x in json.load(sys.stdin)['runtimes'] if x.get('platform') == 'iOS']
+          r = rs[-1] if rs else None
+          t = [d['identifier'] for d in (r or {}).get('supportedDeviceTypes', []) if d['name'].startswith('iPhone')]
+          print(r['identifier'] if r else '', t[-1] if t else '')")
+            if [ -n "$RT" ] && [ -n "$DT" ]; then UDID=$(xcrun simctl create ci-iphone "$DT" "$RT"); fi
+          fi
+          if [ -z "$UDID" ]; then
+            xcrun simctl list runtimes; echo "::error::No iOS simulator runtime on this runner image"; exit 1
+          fi
+          echo "Using simulator $UDID"
+          echo "udid=$UDID" >> "$GITHUB_OUTPUT"
       - name: Build + run engine tests
         working-directory: ios
         # KairosUITests (XCUITest) is skipped in CI: it drives the simulator UI
@@ -37,7 +66,7 @@ jobs:
           xcodebuild test \
             -project Kairos.xcodeproj -scheme Kairos \
             -sdk iphonesimulator \
-            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -destination "platform=iOS Simulator,id=${{ steps.sim.outputs.udid }}" \
             -skip-testing:KairosUITests \
             -resultBundlePath TestResults.xcresult \
             CODE_SIGNING_ALLOWED=NO
