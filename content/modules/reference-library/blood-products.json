@@ -43,8 +43,8 @@
     "1:1:1"
   ],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-02",
+  "content_version": 3,
+  "last_reviewed": "2026-10-07",
   "next_review_due": "2026-12-02",
   "review_tier": 3,
   "sources": [
@@ -54,6 +54,7 @@
     "Critical Vector — Fibrinogen Concentrate vs Cryoprecipitate; CRYOSTAT-2, JAMA 2023 (n=1,604)"
   ],
   "changelog": [
+    {"version": 3, "date": "2026-10-07", "change": "3F-PCC wording corrected: it contains low, non-therapeutic factor VII (FDA Profilnine label), not none."},
     {
       "version": 2,
       "date": "2026-09-07",
@@ -117,7 +118,7 @@
           "Prothrombin complex concentrate (4F-PCC)",
           "Urgent warfarin reversal with major bleeding, or before emergency surgery",
           "Factors II, VII, IX, X + proteins C and S. Dose 25–50 IU/kg, INR-based; ALWAYS co-give IV vitamin K. Corrects INR within ~ 10–30 min",
-          "Plasma-derived factor concentrate, not a cellular component — low volume, minimal TACO risk vs FFP. Main risk is thrombosis. 3-factor PCC lacks factor VII and is not equivalent for warfarin reversal."
+          "Plasma-derived factor concentrate, not a cellular component — low volume, minimal TACO risk vs FFP. Main risk is thrombosis. 3-factor PCC contains only low, non-therapeutic levels of factor VII (Profilnine label) and is not equivalent for warfarin reversal."
         ]
       ]
     },

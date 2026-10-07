@@ -24,15 +24,16 @@
     "PALS"
   ],
   "contentType": "drug-card",
-  "content_version": 3,
-  "last_reviewed": "2026-09-15",
+  "content_version": 4,
+  "last_reviewed": "2026-10-07",
   "next_review_due": "2026-11-30",
   "review_tier": 1,
   "sources": [
-    "AHA 2025 PALS",
+    "AHA/AAP 2025 Pediatric Bradycardia With a Pulse Algorithm (atropine 0.02 mg/kg IV/IO, may repeat once; minimum 0.1 mg, maximum single dose 0.5 mg)",
     "Drug_Dosing_Peds_Weight_Based_Spec.md"
   ],
   "changelog": [
+    {"version": 4, "date": "2026-10-07", "change": "Removed the '1 mg (adolescent)' cap: the AHA/AAP 2025 algorithm gives a single 0.5 mg maximum; source made specific."},
     {
       "version": 3,
       "date": "2026-09-15",
@@ -63,10 +64,10 @@
         "minDose": 0.1,
         "maxDose": 0.5,
         "maxDoseUnit": "mg",
-        "repeat": "May repeat once. Max single dose 0.5 mg (child) / 1 mg (adolescent)."
+        "repeat": "May repeat once. Maximum single dose 0.5 mg (AHA/AAP 2025)."
       },
       "notes": "Minimum single dose 0.1 mg — smaller doses can cause paradoxical bradycardia. Not indicated for PEA/asystole."
     }
   ],
-  "buildNote": "Demonstrates minDose flooring. Adolescent single-dose cap (1 mg) differs from the child cap (0.5 mg) — the rule uses the child cap; note the adolescent value in copy."
+  "buildNote": "Demonstrates minDose flooring. Floor 0.1 mg and cap 0.5 mg per the AHA/AAP 2025 Pediatric Bradycardia With a Pulse algorithm, which gives no separate adolescent cap."
 }

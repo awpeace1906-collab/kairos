@@ -48,15 +48,16 @@
     "TCCC 21-01"
   ],
   "contentType": "reference",
-  "content_version": 4,
-  "last_reviewed": "2026-09-02",
+  "content_version": 5,
+  "last_reviewed": "2026-10-07",
   "next_review_due": "2027-03-02",
   "review_tier": 3,
   "sources": [
     "Critical Vector — IV Fluids & Volume Resuscitation (verified vs fluid-composition references, CHEST/6S, PROPPR, Bickell, PAMPer/COMBAT/RePHILL, TCCC)",
     "CHEST (Myburgh JA et al. NEJM 2012;367:1901-1911); 6S (Perner A et al. NEJM 2012;367:124-134)",
     "Bickell WH et al. NEJM 1994;331:1105-1109; PROPPR (Holcomb JB et al. JAMA 2015;313:471-482)",
-    "PAMPer (NEJM 2018); COMBAT (2018); RePHILL (Lancet Haematol 2022); sequential network meta-analysis of resuscitation fluids, Crit Care 2020"
+    "PAMPer (NEJM 2018); COMBAT (2018); RePHILL (Lancet Haematol 2022); sequential network meta-analysis of resuscitation fluids, Crit Care 2020",
+    "Jost D, Lemoine S, Lemoine F, et al. Prehospital lyophilized plasma transfusion for trauma-induced coagulopathy in patients at risk for hemorrhagic shock: a randomized clinical trial (PREHO-PLYO). JAMA Netw Open. 2022;5(7):e2223619. doi:10.1001/jamanetworkopen.2022.23619"
   ],
   "changelog": [
     {
@@ -78,7 +79,8 @@
       "version": 4,
       "date": "2026-09-25",
       "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
-    }
+    },
+    {"version": 5, "date": "2026-10-07", "change": "Added PREHO-PLYO (JAMA Netw Open 2022; lyophilized plasma vs saline, negative on arrival INR 1.21 vs 1.20) to the prehospital plasma table; RePHILL is no longer described as the only lyophilized-plasma trial."}
   ],
   "summary": "Match the fluid to the patient AND the setting. Balanced crystalloid is a sepsis-shaped default that does NOT transfer to TBI (saline wins there). D5W and half-normal are not resuscitation fluids. HES is avoided. Permissive hypotension outside TBI until hemorrhage is controlled.",
   "whyThisMatters": "Fluid choice is population-specific, and the biggest error is transferring a rule across settings — the balanced-crystalloid default from sepsis does not hold in TBI (saline wins there), and D5W or half-normal saline given as 'resuscitation' does nothing useful.",
@@ -275,12 +277,17 @@
           "RePHILL (Lancet Haematol 2022)",
           "UK phase 3, PRBC + lyophilized plasma vs saline",
           "Negative on both primary outcomes (survival, lactate clearance); stopped early (COVID)"
+        ],
+        [
+          "PREHO-PLYO (JAMA Netw Open 2022)",
+          "French RCT, lyophilized plasma vs saline, 134 analyzed",
+          "Negative — arrival INR 1.21 vs 1.20; no difference in massive transfusion or 30-day survival"
         ]
       ]
     },
     {
       "type": "text",
-      "text": "RePHILL is the trial that actually tested LYOPHILIZED plasma prehospital and was negative on both primary outcomes. A post hoc PAMPer+COMBAT pooling found the benefit concentrated in transport times > 20 min — the effect, where real, may be time/distance-dependent rather than universal. TCCC 21-01 (2021) designates cold-stored low-titer group O whole blood as the preferred resuscitation fluid for hemorrhagic shock and removed crystalloids from the recommended options; freeze-dried plasma is the room-temperature-stable fallback where the cold chain can't be maintained."
+      "text": "Both trials that tested LYOPHILIZED plasma prehospital were negative: RePHILL on both primary outcomes, PREHO-PLYO on arrival INR. A post hoc PAMPer+COMBAT pooling found the benefit concentrated in transport times > 20 min — the effect, where real, may be time/distance-dependent rather than universal. TCCC 21-01 (2021) designates cold-stored low-titer group O whole blood as the preferred resuscitation fluid for hemorrhagic shock and removed crystalloids from the recommended options; freeze-dried plasma is the room-temperature-stable fallback where the cold chain can't be maintained."
     },
     {
       "type": "callout",

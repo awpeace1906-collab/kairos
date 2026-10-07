@@ -41,17 +41,19 @@
     "balanced crystalloid sepsis vs saline TBI"
   ],
   "contentType": "reference",
-  "content_version": 3,
-  "last_reviewed": "2026-09-04",
+  "content_version": 4,
+  "last_reviewed": "2026-10-07",
   "next_review_due": "2027-03-04",
   "review_tier": 1,
   "sources": [
     "Critical Vector — EM Pocket Guide: Hemorrhagic Shock / MTP (ATLS 11th 2024)",
     "Critical Vector — Maintaining Volemic Status in Hemorrhagic Shock (permissive hypotension, ratios, crystalloid choice, freeze-dried plasma; verified vs FDA.gov + primary trials, July 2026)",
     "PROPPR (JAMA 2015); CRASH-2 (Lancet 2010); Bickell NEJM 1994; ATLS 11th edition",
-    "FDA — first freeze-dried plasma product licensed in the U.S. (Ezplaz), July 29 2026"
+    "FDA — first freeze-dried plasma product licensed in the U.S. (Ezplaz), July 29 2026",
+    "Jost D, Lemoine S, Lemoine F, et al. Prehospital lyophilized plasma transfusion for trauma-induced coagulopathy in patients at risk for hemorrhagic shock: a randomized clinical trial (PREHO-PLYO). JAMA Netw Open. 2022;5(7):e2223619. doi:10.1001/jamanetworkopen.2022.23619"
   ],
   "changelog": [
+    {"version": 4, "date": "2026-10-07", "change": "Prehospital plasma sentence now includes PREHO-PLYO (JAMA Netw Open 2022, negative)."},
     {
       "version": 3,
       "date": "2026-09-07",
@@ -192,7 +194,7 @@
     },
     {
       "type": "text",
-      "text": "Whether prehospital plasma of any kind improves survival is genuinely contested (PAMPer positive; COMBAT and RePHILL negative) — the benefit, where real, concentrates in transport times over ~20 minutes. Treat it as reasonable in long-transport / resource-limited settings, not as established for every profile."
+      "text": "Whether prehospital plasma of any kind improves survival is genuinely contested (PAMPer positive; COMBAT, RePHILL and PREHO-PLYO negative) — the benefit, where real, concentrates in transport times over ~20 minutes. Treat it as reasonable in long-transport / resource-limited settings, not as established for every profile."
     }
   ],
   "related": [

@@ -34,7 +34,7 @@
     "ethanol GABA-A NMDA withdrawal tremulousness seizure hallucinosis delirium tremens timeline",
     "thiamine before glucose Wernicke 500 mg q8h CIWA-Ar phenobarbital",
     "methanol formic acid optic neurotoxicity snowstorm vision ethylene glycol calcium oxalate AKI",
-    "fomepizole empiric osmolar gap 25 pH 7.3 oxalate crystals hemodialysis EXTRIP",
+    "fomepizole AACT criteria osmolar gap 10 pH 7.3 bicarbonate 20 oxalate crystals hemodialysis EXTRIP",
     "anticholinergic hot blind mad red dry full mnemonic mumbling picking delirium",
     "diphenhydramine sodium channel blockade wide QRS bicarbonate physostigmine contraindicated mixed",
     "nicotine e-liquid biphasic stimulatory then depressor phase atropine observe both phases",
@@ -42,8 +42,8 @@
     "anabolic steroid 17-alpha-alkylated hepatotoxicity peliosis hepatis polycythemia LVH sudden cardiac death"
   ],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-07",
+  "content_version": 3,
+  "last_reviewed": "2026-10-07",
   "next_review_due": "2027-03-07",
   "review_tier": 2,
   "sources": [
@@ -52,7 +52,9 @@
     "Ethylene Glycol Toxicity. StatPearls NBK537009, 2022; Diagnostics — Toxic Alcohols. Taming the SRU, 2019",
     "Anticholinergic Intoxication. EMCrit/IBCC, 2025; Physostigmine in Anticholinergic Poisoning: An Old Antidote with Resurgence. PMC, 2020",
     "Managing Intoxications with Nicotine-Containing E-Liquids. Taylor & Francis, 2022",
-    "Kratom (Mitragyna speciosa): Friend or Foe? Psychiatrist.com, 2023; Kratom Toxicity. WikEM, 2026; Anabolic Androgenic Steroid-Induced Hepatotoxicity. ScienceDirect, 2016"
+    "Kratom (Mitragyna speciosa): Friend or Foe? Psychiatrist.com, 2023; Kratom Toxicity. WikEM, 2026; Anabolic Androgenic Steroid-Induced Hepatotoxicity. ScienceDirect, 2016",
+    "Barceloux DG, Krenzelok EP, Olson K, Watson W. American Academy of Clinical Toxicology practice guidelines on the treatment of ethylene glycol poisoning. J Toxicol Clin Toxicol. 1999;37(5):537-560. doi:10.1081/clt-100102445",
+    "Barceloux DG, Bond GR, Krenzelok EP, Cooper H, Vale JA. American Academy of Clinical Toxicology practice guidelines on the treatment of methanol poisoning. J Toxicol Clin Toxicol. 2002;40(4):415-446. doi:10.1081/clt-120006745"
   ],
   "changelog": [
     {
@@ -64,11 +66,12 @@
       "version": 2,
       "date": "2026-09-25",
       "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
-    }
+    },
+    {"version": 3, "date": "2026-10-07", "change": "Fomepizole criteria corrected to the AACT practice guidelines (Barceloux 1999 ethylene glycol; 2002 methanol): level > 20 mg/dL, or recent ingestion with osmolar gap > 10, or strong suspicion with ≥ 2 of pH < 7.3, HCO3 < 20, osmolar gap > 10, oxalate crystalluria. The old text used a gap of 25 and let any single finding qualify."}
   ],
   "summary": "A grab-bag of high-consequence toxicities that share no receptor.\n- Ethanol's emergency is usually the withdrawal that hasn't started yet.\n- Toxic alcohols kill via their metabolites, not the parent, so treat the gap before the level returns.\n- Anticholinergic delirium has a distinctive whole-constellation picture — but diphenhydramine, the commonest cause, is also a sodium-channel blocker.\n- Nicotine e-liquid toxicity is biphasic.\n- Kratom is opioid-like but invisible to the opioid screen.\n- Anabolic steroids are a chronic-organ-toxicity problem, not an overdose.",
   "whyThisMatters": "Each of these has a decision that must be made before a confirmatory result exists:\n- start fomepizole on an osmolar-plus-anion-gap picture rather than waiting days for a send-out level\n- give thiamine before glucose\n- recognize that the settled-down nicotine patient may be entering the more dangerous depressor phase\n- know that physostigmine — the antidote taught for the anticholinergic toxidrome — is often the wrong move for diphenhydramine specifically",
-  "clinicalTakeaway": "TOXIC ALCOHOLS: any unexplained high-anion-gap metabolic acidosis with an elevated osmolar gap gets empiric fomepizole now (criteria: osmolar gap > 25, pH < 7.3, or oxalate crystals), plus hemodialysis for severe acidosis, visual symptoms, renal impairment, or very high levels.\n\nETHANOL: give thiamine before or with glucose; screen for withdrawal on every alcohol-involved visit (last drink, daily intake) and use CIWA-Ar-guided symptom-triggered benzodiazepines.\n\nANTICHOLINERGICS: benzodiazepines and evaporative cooling first-line; get an ECG for every diphenhydramine ingestion and treat a wide QRS with bicarbonate — reserve physostigmine for pure antimuscarinic poisoning with toxicology guidance.\n\nNICOTINE E-LIQUID: monitor through both phases, do not discharge after the stimulatory phase settles.\n\nKRATOM: a negative opioid screen does not exclude it.\n\nANABOLIC STEROIDS: ask directly about supplement/injectable use in any young patient with unexplained cardiomyopathy, hepatic lesions, or polycythemia.",
+  "clinicalTakeaway": "TOXIC ALCOHOLS: any unexplained high-anion-gap metabolic acidosis with an elevated osmolar gap gets empiric fomepizole now (AACT criteria: level > 20 mg/dL; or documented recent ingestion with osmolar gap > 10; or strong suspicion with at least two of pH < 7.3, HCO₃⁻ < 20, osmolar gap > 10, oxalate crystalluria (ethylene glycol)), plus hemodialysis for severe acidosis, visual symptoms, renal impairment, or very high levels.\n\nETHANOL: give thiamine before or with glucose; screen for withdrawal on every alcohol-involved visit (last drink, daily intake) and use CIWA-Ar-guided symptom-triggered benzodiazepines.\n\nANTICHOLINERGICS: benzodiazepines and evaporative cooling first-line; get an ECG for every diphenhydramine ingestion and treat a wide QRS with bicarbonate — reserve physostigmine for pure antimuscarinic poisoning with toxicology guidance.\n\nNICOTINE E-LIQUID: monitor through both phases, do not discharge after the stimulatory phase settles.\n\nKRATOM: a negative opioid screen does not exclude it.\n\nANABOLIC STEROIDS: ask directly about supplement/injectable use in any young patient with unexplained cardiomyopathy, hepatic lesions, or polycythemia.",
   "body": [
     {
       "type": "heading",
@@ -91,7 +94,7 @@
         [
           "Methanol",
           "Nontoxic parent; alcohol dehydrogenase → formaldehyde → formic acid, directly toxic to the optic nerve/retina. Ethanol-like inebriation, then a latent period, then severe high-anion-gap acidosis. Distinguishing late feature: \"snowstorm\"/blurred vision progressing to blindness; fundoscopy shows optic disc hyperemia/edema",
-          "Empiric fomepizole (competitive ADH inhibitor) for suspected ingestion meeting criteria (osmolar gap > 25, pH < 7.3, or oxalate crystals) — do not wait for the send-out level. Hemodialysis for severe acidosis, visual symptoms, or very high levels (EXTRIP standard). If no fomepizole: IV ethanol as a bridge, serum-level-guided"
+          "Empiric fomepizole (competitive ADH inhibitor) for suspected ingestion meeting criteria (AACT criteria: level > 20 mg/dL; or documented recent ingestion with osmolar gap > 10; or strong suspicion with at least two of pH < 7.3, HCO₃⁻ < 20, osmolar gap > 10, oxalate crystalluria (ethylene glycol)) — do not wait for the send-out level. Hemodialysis for severe acidosis, visual symptoms, or very high levels (EXTRIP standard). If no fomepizole: IV ethanol as a bridge, serum-level-guided"
         ],
         [
           "Ethylene glycol",

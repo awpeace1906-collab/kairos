@@ -18,19 +18,22 @@
     "ondexxya"
   ],
   "contentType": "anesthesia-drug-card",
-  "content_version": 1,
-  "last_reviewed": "2026-09-01",
+  "content_version": 2,
+  "last_reviewed": "2026-10-07",
   "next_review_due": "2026-12-01",
   "review_tier": 1,
   "sources": [
-    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01"
+    "AnesCalc v2 drug library (DrugCard.swift), imported 2026-09-01",
+    "FDA. Update on the Safety of Andexxa — FDA Safety Communication, December 18, 2025. https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa",
+    "Connolly SJ, Sharma M, Cohen AT, et al. Andexanet for factor Xa inhibitor-associated acute intracerebral hemorrhage (ANNEXA-I). N Engl J Med. 2024;390(19):1745-1755. doi:10.1056/NEJMoa2313040"
   ],
   "changelog": [
     {
       "version": 1,
       "date": "2026-09-01",
       "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
-    }
+    },
+    {"version": 2, "date": "2026-10-07", "change": "US withdrawal added (FDA safety communication Dec 18, 2025; sales ended Dec 22, 2025). Corrected the edoxaban/betrixaban line: not an FDA-labeled indication (label covered rivaroxaban and apixaban). Thrombosis caution now cites ANNEXA-I (NEJM 10.3% vs 5.6%; FDA review 14.6% vs 6.9%)."}
   ],
   "brandName": "Ondexxya",
   "drugClass": "anticoagulant",
@@ -38,9 +41,10 @@
   "mechanism": "Recombinant modified human Factor Xa decoy molecule — lacks catalytic activity. Binds Factor Xa inhibitors (apixaban, rivaroxaban, enoxaparin) with high affinity, sequestering them and preventing binding to native FXa. Does NOT directly promote clotting; restores endogenous FXa activity by removing inhibitor. Rapidly reduces anti-Xa activity by 80–90% within minutes of administration.",
   "onset": "Anti-Xa activity reduction within 2 min of IV administration",
   "duration": "Reversal maintained during infusion; anti-Xa activity may re-elevate within 2h after completion (drug redistribution from tissue). Bleeding control typically maintained beyond plasma anti-Xa re-elevation.",
-  "dosing": "APIXABAN or RIVAROXABAN REVERSAL (life-threatening or uncontrolled bleeding):\n\nLOW-DOSE REGIMEN (apixaban ≤5 mg within 8h; rivaroxaban ≤10 mg within 8h):\n400 mg IV bolus (30 mg/min) THEN 480 mg IV infusion over 2h (4 mg/min)\n\nHIGH-DOSE REGIMEN (apixaban >5 mg or timing unknown; rivaroxaban >10 mg or timing unknown):\n800 mg IV bolus (30 mg/min) THEN 960 mg IV infusion over 2h (8 mg/min)\n\nENOXAPARIN (off-label — FDA-approved for FXa inhibitors only; used off-label for LMWH):\nSame dosing regimens used off-label; evidence extrapolated from anti-Xa activity reduction studies\n\nBETRIXABAN/EDOXABAN: FDA-approved indication — use high-dose regimen.\n\nADMINISTRATION NOTES: Must be reconstituted; administer with dedicated IV line. Do NOT administer other drugs in same line.",
+  "dosing": "APIXABAN or RIVAROXABAN REVERSAL (life-threatening or uncontrolled bleeding):\n\nLOW-DOSE REGIMEN (apixaban ≤5 mg within 8h; rivaroxaban ≤10 mg within 8h):\n400 mg IV bolus (30 mg/min) THEN 480 mg IV infusion over 2h (4 mg/min)\n\nHIGH-DOSE REGIMEN (apixaban >5 mg or timing unknown; rivaroxaban >10 mg or timing unknown):\n800 mg IV bolus (30 mg/min) THEN 960 mg IV infusion over 2h (8 mg/min)\n\nENOXAPARIN (off-label — FDA-approved for FXa inhibitors only; used off-label for LMWH):\nSame dosing regimens used off-label; evidence extrapolated from anti-Xa activity reduction studies\n\nEDOXABAN/BETRIXABAN: NOT an FDA-labeled indication (the US label covered rivaroxaban and apixaban only); any use is off-label.\n\nADMINISTRATION NOTES: Must be reconstituted; administer with dedicated IV line. Do NOT administer other drugs in same line.",
   "cautions": [
-    "THROMBOEMBOLIC EVENTS: 10–15% rate of thrombosis (DVT, PE, MI, stroke) in ANNEXA-4 trial — driven largely by underlying patient comorbidities and reversal of anticoagulation in high-risk population. Resume anticoagulation as soon as safely feasible after hemostasis.",
+    "US AVAILABILITY: withdrawn. FDA safety communication Dec 18, 2025 — FDA judged the risks to outweigh the benefits; AstraZeneca ended US commercial sales Dec 22, 2025 (US brand Andexxa; Ondexxya is the EU brand). In the US, reverse factor Xa inhibitors with 4F-PCC per local protocol.",
+    "THROMBOEMBOLIC EVENTS: ANNEXA-I (Connolly, NEJM 2024; ICH) — thrombotic events 10.3% vs 5.6% with usual care, ischemic stroke 6.5% vs 1.5%; FDA's ANNEXA-I review reported 14.6% vs 6.9% at day 30, with thrombosis-related deaths 2.5% vs 0.9%. ANNEXA-4 (single-arm) reported ~10% thrombosis — driven largely by underlying patient comorbidities and reversal of anticoagulation in high-risk population. Resume anticoagulation as soon as safely feasible after hemostasis.",
     "ANTI-Xa REBOUND: Anti-FXa activity may re-elevate 2–18h post-infusion as andexanet alfa is cleared faster than apixaban/rivaroxaban. Monitor anti-Xa levels; resuming anticoagulation is typically more effective than re-dosing andexanet alfa.",
     "COST: One of the most expensive drugs in hospital formulary (~$25,000–50,000 per course). Most institutions have restricted use criteria requiring clinical pharmacy/hematology approval.",
     "DOES NOT REVERSE: Dabigatran (DTI — use idarucizumab), warfarin (use 4F-PCC + VitK), or UFH/LMWH heparin (use protamine; LMWH partially reversed by protamine — andexanet off-label for LMWH).",

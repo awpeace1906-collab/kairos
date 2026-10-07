@@ -121,6 +121,18 @@ if (msi) {
     (r.bandsByKey["msi"] || []).some((b) => b.min === 1.7 && /high risk/i.test(b.label)));
 }
 
+// Peds pre-arrival card: atropine follows the AHA/AAP 2025 bradycardia algorithm
+// (0.02 mg/kg, floor 0.1 mg, max single dose 0.5 mg) — it once capped at 1 mg.
+{
+  const pre = byId["peds-pre-arrival-card"];
+  const f = pre?.embeddedCalculator?.formulas?.find((x) => x.key === "atropine");
+  if (f) {
+    near("pre-arrival: atropine 3 kg → 0.1 mg floor", evaluate(f.expression, { weight: 3 }), 0.1);
+    near("pre-arrival: atropine 15 kg → 0.3 mg", evaluate(f.expression, { weight: 15 }), 0.3);
+    near("pre-arrival: atropine 40 kg → 0.5 mg cap", evaluate(f.expression, { weight: 40 }), 0.5);
+  } else ok("pre-arrival: atropine formula present", false);
+}
+
 const aadd = byId["age-adjusted-d-dimer"];
 if (aadd) {
   const val = (r, k) => r.results.find((x) => x.key === k)?.value;

@@ -18,8 +18,8 @@
     "kcentra"
   ],
   "contentType": "anesthesia-drug-card",
-  "content_version": 1,
-  "last_reviewed": "2026-09-01",
+  "content_version": 2,
+  "last_reviewed": "2026-10-07",
   "next_review_due": "2026-12-01",
   "review_tier": 1,
   "sources": [
@@ -30,7 +30,8 @@
       "version": 1,
       "date": "2026-09-01",
       "change": "Imported from AnesCalc v2 DrugCard.swift via tools/import-anescalc.mjs."
-    }
+    },
+    {"version": 2, "date": "2026-10-07", "change": "3F-PCC wording corrected: low, non-therapeutic factor VII (FDA Profilnine label), not 'no FVII'."}
   ],
   "brandName": "Kcentra / Beriplex / Octaplex",
   "drugClass": "anticoagulant",
@@ -38,7 +39,7 @@
   "mechanism": "Prothrombin Complex Concentrate (4-Factor): pooled human plasma-derived concentrate of clotting factors II, VII, IX, and X (vitamin K-dependent factors), plus Proteins C and S. Directly replaces vitamin K-dependent factors depleted by warfarin or factor Xa inhibitors. Provides immediate coagulation factor restoration without large volume load. Activated 4F-PCC (FEIBA) contains activated Factor VII and is used specifically for inhibitor bypassing in hemophilia.",
   "onset": "5–15 min (INR reversal begins within minutes)",
   "duration": "Factor half-lives vary: FIX ~24h, FX ~40h, FII ~60h, FVII ~4–6h (FVII is shortest — may need repeat dosing for warfarin)",
-  "dosing": "WARFARIN REVERSAL (urgent/emergent — e.g., life-threatening bleeding, urgent surgery):\nINR 2–3.9 → 25 units/kg (max 2,500 units)\nINR 4–6 → 35 units/kg (max 3,500 units)\nINR >6 → 50 units/kg (max 5,000 units)\nALWAYS give with Vitamin K 10 mg IV concurrently (PCC effect lasts only hours; VitK replenishes endogenous production). Target: INR <1.5 within 30 min.\n\nFACTOR Xa INHIBITOR REVERSAL (apixaban, rivaroxaban — off-label use):\n25–50 units/kg IV (literature supports; andexanet alfa is FDA-approved alternative)\nMost institutions use 25–50 units/kg for urgent reversal when andexanet alfa unavailable\n\nPEDIATRIC: Same weight-based dosing; unit doses vary by product\n\nADMINISTRATION: Max infusion rate 8–12 mL/min. Typically administered over 15–30 min. Do NOT mix with other IV medications.\n\n3-FACTOR PCC (factors II, IX, X only — no FVII; e.g., Profilnine):\nLess preferred for warfarin reversal due to FVII omission — FVII deficiency is primary driver of warfarin-related INR elevation.",
+  "dosing": "WARFARIN REVERSAL (urgent/emergent — e.g., life-threatening bleeding, urgent surgery):\nINR 2–3.9 → 25 units/kg (max 2,500 units)\nINR 4–6 → 35 units/kg (max 3,500 units)\nINR >6 → 50 units/kg (max 5,000 units)\nALWAYS give with Vitamin K 10 mg IV concurrently (PCC effect lasts only hours; VitK replenishes endogenous production). Target: INR <1.5 within 30 min.\n\nFACTOR Xa INHIBITOR REVERSAL (apixaban, rivaroxaban — off-label use):\n25–50 units/kg IV (literature supports; andexanet alfa is FDA-approved alternative)\nMost institutions use 25–50 units/kg for urgent reversal when andexanet alfa unavailable\n\nPEDIATRIC: Same weight-based dosing; unit doses vary by product\n\nADMINISTRATION: Max infusion rate 8–12 mL/min. Typically administered over 15–30 min. Do NOT mix with other IV medications.\n\n3-FACTOR PCC (factors II, IX, X with only non-therapeutic levels of FVII; e.g., Profilnine):\nLess preferred for warfarin reversal because its FVII content is too low — FVII deficiency is primary driver of warfarin-related INR elevation.",
   "cautions": [
     "THROMBOEMBOLISM: Contains concentrated procoagulant factors — risk of DVT, PE, MI, stroke (particularly in patients with pre-existing thrombotic risk or DIC). Use lowest effective dose. Avoid in active thrombosis unless life-threatening bleeding.",
     "HEPARIN-INDUCED THROMBOCYTOPENIA: Some 4F-PCC formulations contain heparin as stabilizer — contraindicated in HIT. Check product insert (Kcentra does contain heparin).",

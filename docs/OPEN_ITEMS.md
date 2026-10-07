@@ -256,6 +256,33 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-10-07 — **CV Guides cross-check brief applied to Kairos (11 modules).**
+  Many Kairos modules were converted from CV Guides, so the brief's corrections
+  were checked against Kairos. Each claim was re-verified against a primary
+  source before editing. Fixed:
+  - blood-products, 4F-PCC card: 3F-PCC has low, non-therapeutic factor VII
+    (FDA Profilnine label), not none.
+  - Andexanet card: US withdrawal (FDA safety communication Dec 18, 2025; sales
+    ended Dec 22, 2025); the card wrongly called edoxaban/betrixaban an FDA
+    indication (label: rivaroxaban and apixaban only); ANNEXA-I thrombosis now
+    cited (NEJM 2024: 10.3% vs 5.6%; FDA review: 14.6% vs 6.9%).
+  - Peds atropine (pre-arrival card cap 1 mg → 0.5 mg; arrest card "min none"
+    → 0.1 mg; drug card dropped the "1 mg adolescent" cap) per the AHA/AAP 2025
+    Pediatric Bradycardia With a Pulse algorithm. JS test added.
+  - tox-alcohols: fomepizole criteria corrected to AACT (gap > 10, ≥ 2 findings;
+    Kairos had gap > 25 with any single finding).
+  - airway-management-flow: plan letters aligned with DAS 2015 (SGA = Plan B).
+  - iv-fluids, hemorrhagic-shock-mtp: PREHO-PLYO (JAMA Netw Open 2022) added.
+  - antidotes-reversal: Sakkas 1991 cited for the NMS mortality figures.
+  Already correct in Kairos: DSED/vector-change framing, calcium and
+  bicarbonate not routine (COCA, BIHCA), capnography "not a hard cutoff",
+  rocuronium doses, ticagrelor as P2Y12 with a 5-day hold, SGA as DAS Plan B in
+  the CICO modules.
+  **Brief items not applied:** the AAP 2017 epinephrine auto-injector tiers
+  (10–25 / ≥ 25 kg) — full text behind a bot wall, so Kairos keeps the FDA-label
+  tiers (15–30 / > 30 kg) with "manual dose under 15 kg"; adult glucagon
+  50 mcg/kg — no primary source read. Note for CV Guides: the brief's ANNEXA-I
+  14.6% vs 6.9% is FDA's review figure; the NEJM paper reports 10.3% vs 5.6%.
 - 2026-10-05 (later) — **Acid-Base Analyzer v2: venous gas toggle; ABG Interpretation v5.**
   Sample toggle (arterial / venous). Venous values → estimated arterial with the
   Bloom 2014 pooled venous−arterial differences (pH −0.033, PCO₂ +4.41,

@@ -25,12 +25,12 @@
     "OR"
   ],
   "contentType": "procedure",
-  "content_version": 4,
-  "last_reviewed": "2026-09-02",
+  "content_version": 5,
+  "last_reviewed": "2026-10-07",
   "next_review_due": "2026-12-02",
   "review_tier": 1,
   "sources": [
-    "DAS / Vortex approach (conceptual)",
+    "Frerk C, Mitchell VS, McNarry AF, et al. Difficult Airway Society 2015 guidelines for management of unanticipated difficult intubation in adults. Br J Anaesth. 2015;115(6):827-848. doi:10.1093/bja/aev371 (Plans A–D)", "Vortex approach (conceptual)",
     "Procedures_Content_Spec.md",
     "Critical Vector — Physiologically Difficult Airway (PREOXI, PREPARE II, RSI trial 2025)",
     "Schmid B, et al. (GSAIC COVALENT). Conventional vs Video-Assisted Laryngoscopy for Perioperative Endotracheal Intubation. JAMA Netw Open. 2026;9(8):e2625965",
@@ -56,7 +56,8 @@
       "version": 4,
       "date": "2026-09-25",
       "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
-    }
+    },
+    {"version": 5, "date": "2026-10-07", "change": "Plan letters aligned with DAS 2015: repeated laryngoscopy is still Plan A (max 3 + 1 attempts), the supraglottic airway is Plan B, a final face-mask attempt is Plan C, and front-of-neck access is Plan D. Previously the flow called 'change one thing' Plan B and the SGA Plan C."}
   ],
   "purpose": "A workflow wrapper that orchestrates existing calculators and drug cards into a pre-intubation → Plan A/B/C/D → confirmation sequence. Not new clinical content.",
   "outputType": "workflow",
@@ -102,20 +103,20 @@
     {
       "id": "s4",
       "type": "step",
-      "prompt": "4. Plan B — failed first attempt",
-      "body": "Change one thing: alternate blade or a video device, add a bougie, reposition, second operator. Limit to a small number of attempts — each attempt worsens edema and desaturation."
+      "prompt": "4. Plan A, continued — first attempt failed",
+      "body": "Change one thing: alternate blade or a video device, add a bougie, reposition, second operator. DAS 2015: no more than 3 attempts, plus 1 by a more experienced operator — each attempt worsens edema and desaturation."
     },
     {
       "id": "s5",
       "type": "step",
-      "prompt": "5. Plan C — can't intubate, can oxygenate",
-      "body": "Insert a supraglottic airway (LMA) as rescue oxygenation. Reassess: wake the patient if feasible, or proceed to a definitive airway with the most experienced operator."
+      "prompt": "5. Plan B — failed intubation: supraglottic airway",
+      "body": "Insert a second-generation supraglottic airway as rescue oxygenation (DAS 2015 Plan B; up to 3 attempts). Reassess: wake the patient if feasible, or proceed to a definitive airway with the most experienced operator."
     },
     {
       "id": "s6",
       "type": "warning",
-      "prompt": "6. Plan D — can't intubate, CAN'T oxygenate (CICO)",
-      "body": "Declare it out loud. Proceed immediately to a surgical airway / scalpel-bougie cricothyrotomy. Do not keep re-attempting laryngoscopy."
+      "prompt": "6. Plans C–D — can't intubate, CAN'T oxygenate (CICO)",
+      "body": "Plan C: one final attempt at face-mask ventilation (two-person, adjuncts, full paralysis). If that fails, declare CICO out loud. Proceed immediately to a surgical airway / scalpel-bougie cricothyrotomy. Do not keep re-attempting laryngoscopy."
     },
     {
       "id": "s7",

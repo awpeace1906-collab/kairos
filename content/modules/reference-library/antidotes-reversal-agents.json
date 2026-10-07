@@ -52,15 +52,16 @@
     "BabyBIG"
   ],
   "contentType": "reference",
-  "content_version": 3,
-  "last_reviewed": "2026-09-02",
+  "content_version": 4,
+  "last_reviewed": "2026-10-07",
   "next_review_due": "2026-12-02",
   "review_tier": 3,
   "sources": [
     "Critical Vector — Antidotes & Reversal Agents pocket reference (v7, verified against FDA / NEJM / MHAUS / ASRA / ACEP / AAP / poison-center references, July 2026)",
     "ASRA 2020 LAST checklist",
     "MHAUS malignant hyperthermia protocol",
-    "Consult a medical toxicologist / regional poison center for any real poisoning"
+    "Consult a medical toxicologist / regional poison center for any real poisoning",
+    "Sakkas P, Davis JM, Janicak PG, Wang ZY. Drug treatment of the neuroleptic malignant syndrome. Psychopharmacol Bull. 1991;27(3):381-384 (NMS mortality 21% untreated; 8.6% dantrolene, 7.8% bromocriptine, 5.9% amantadine)"
   ],
   "changelog": [
     {
@@ -77,7 +78,8 @@
       "version": 3,
       "date": "2026-09-25",
       "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
-    }
+    },
+    {"version": 4, "date": "2026-10-07", "change": "Cited Sakkas 1991 for the NMS mortality figures (21% untreated vs ~8% with dantrolene or bromocriptine); numbers unchanged."}
   ],
   "summary": "Every antidote that changes an outcome — indication, adult dose, one pearl.\n\nAn antidote reverses a mechanism, not a patient. Ask:\n1. Is reversal actually indicated, or is supportive care enough?\n2. Does reversing create a new problem?\n3. How long does the antidote last vs the drug it reverses? That third question causes the 3am bounce-back.\n\nAnticoagulant reversal lives in the separate anticoagulation-reversal module.",
   "whyThisMatters": "An antidote reverses a mechanism, not a patient — and the three questions that decide whether to give one (is reversal actually needed, does reversing create a new problem, does the antidote outlast the drug) get skipped under pressure, leading to under- or over-reversal.",

@@ -9,8 +9,8 @@
   "tags": ["PALS", "pediatric resuscitation", "pre-arrival", "weight-based dosing", "defibrillation", "cardioversion", "epinephrine", "fluid bolus", "prehospital", "ED"],
   "keywords": ["enter weight once get epinephrine adenosine amiodarone atropine calcium dextrose", "defibrillation 2 J/kg cardioversion 1 J/kg fluid bolus 20 mL/kg", "age to weight estimate APLS", "ETT size age over 4 plus 4"],
   "contentType": "peds-tool",
-  "content_version": 1,
-  "last_reviewed": "2026-09-07",
+  "content_version": 2,
+  "last_reviewed": "2026-10-07",
   "next_review_due": "2027-03-07",
   "review_tier": 1,
   "sources": [
@@ -20,7 +20,8 @@
     "Kairos peds-cardiac-arrest numbers card (every dose cross-checked vs current PALS)"
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-07", "change": "Initial entry — an interactive companion to peds-cardiac-arrest and pedi-tape-weight-zones: enter one weight (or an age estimate) and every weight-based resus number is pre-computed for the pre-arrival window. Equipment sizing and age-based rules (ETT, SBP floor) stay in the body." }
+    { "version": 1, "date": "2026-09-07", "change": "Initial entry — an interactive companion to peds-cardiac-arrest and pedi-tape-weight-zones: enter one weight (or an age estimate) and every weight-based resus number is pre-computed for the pre-arrival window. Equipment sizing and age-based rules (ETT, SBP floor) stay in the body." },
+    {"version": 2, "date": "2026-10-07", "change": "Atropine cap corrected from 1 mg to 0.5 mg per the AHA/AAP 2025 Pediatric Bradycardia With a Pulse algorithm (0.02 mg/kg, may repeat once, minimum 0.1 mg, maximum single dose 0.5 mg)."}
   ],
   "kind": "calculator",
   "purpose": "Enter the child's weight ONCE, before they arrive, and read every weight-based resuscitation number pre-computed — so there is no arithmetic during the resuscitation. Doses are live from the exact weight; the caps and the equipment/age rules are below.",
@@ -56,7 +57,7 @@
       { "key": "adenosine1", "label": "Adenosine — 1st dose IV/IO rapid push (0.1 mg/kg)", "expression": "min(0.1 * weight, 6)", "unit": "mg", "precision": 2 },
       { "key": "adenosine2", "label": "Adenosine — 2nd dose (0.2 mg/kg)", "expression": "min(0.2 * weight, 12)", "unit": "mg", "precision": 2 },
       { "key": "amiodarone", "label": "Amiodarone — VF / pulseless VT (5 mg/kg IV/IO bolus)", "expression": "min(5 * weight, 300)", "unit": "mg", "precision": 0 },
-      { "key": "atropine", "label": "Atropine — bradycardia / RSI (0.02 mg/kg)", "expression": "max(min(0.02 * weight, 1), 0.1)", "unit": "mg", "precision": 2 },
+      { "key": "atropine", "label": "Atropine — bradycardia / RSI (0.02 mg/kg)", "expression": "max(min(0.02 * weight, 0.5), 0.1)", "unit": "mg", "precision": 2 },
       { "key": "dextroseD10", "label": "Dextrose — hypoglycemia, D10 at 5 mL/kg (= 0.5 g/kg)", "expression": "5 * weight", "unit": "mL", "precision": 0 },
       { "key": "calciumChloride", "label": "Calcium chloride 10% — 20 mg/kg (0.2 mL/kg), central line preferred", "expression": "min(0.2 * weight, 10)", "unit": "mL", "precision": 2 },
       { "key": "calciumGluconate", "label": "Calcium gluconate 10% — 60 mg/kg (0.6 mL/kg), peripheral-safe", "expression": "min(0.6 * weight, 30)", "unit": "mL", "precision": 2 },
@@ -65,7 +66,7 @@
       { "key": "maintenanceRate", "label": "Maintenance fluid rate (Holliday-Segar \"4-2-1\", mL/h)", "expression": "min(weight, 10) * 4 + min(max(weight - 10, 0), 10) * 2 + max(weight - 20, 0) * 1", "unit": "mL/h", "precision": 0 }
     ],
     "interpretation": [
-      { "forKey": "epiArrestMg", "label": "Single-dose ceilings: epinephrine 1 mg, atropine 0.5 mg (child) / 1 mg (adolescent), adenosine 6 then 12 mg, amiodarone 300 mg, magnesium 2 g, naloxone 2 mg. Epinephrine repeats q3-5 min in arrest.", "severity": "high" },
+      { "forKey": "epiArrestMg", "label": "Single-dose ceilings: epinephrine 1 mg, atropine 0.5 mg (minimum 0.1 mg), adenosine 6 then 12 mg, amiodarone 300 mg, magnesium 2 g, naloxone 2 mg. Epinephrine repeats q3-5 min in arrest.", "severity": "high" },
       { "forKey": "defibFirst", "label": "Cap subsequent defibrillation at 10 J/kg or the adult dose, whichever is lower. Cardioversion: PALS first-attempt range is 0.5-1 J/kg — the figure shown is the 1 J/kg end; drop to 0.5 J/kg for a first attempt in a stable-ish rhythm, then double.", "severity": "moderate" }
     ],
     "notes": "This is the weight-derived arithmetic only. It is not a resuscitation algorithm — see `peds-cardiac-arrest` for the scenario cards (bradycardia, SVT, shockable/non-shockable arrest, torsades, hyperkalemia) and the CPR mechanics, and the individual resus drug cards for infusions and full detail. Weigh the child if at all possible; use an age estimate only when a weight is genuinely unmeasurable.",

@@ -9,8 +9,8 @@
   "aliases": ["PALS arrest doses", "pediatric code blue", "peds ACLS numbers", "1-2-4 rule", "peds defibrillation energy", "peds epinephrine arrest dose", "peds cardioversion", "peds adenosine dose"],
   "tags": ["PALS", "pediatric cardiac arrest", "code blue", "defibrillation", "cardioversion", "epinephrine", "amiodarone", "adenosine", "CPR", "ED", "ICU"],
   "contentType": "peds-tool",
-  "content_version": 1,
-  "last_reviewed": "2026-09-04",
+  "content_version": 2,
+  "last_reviewed": "2026-10-07",
   "next_review_due": "2027-03-04",
   "review_tier": 1,
   "sources": [
@@ -20,7 +20,8 @@
     "AHA / American Red Cross CPR tempo guidance (100–120/min)"
   ],
   "changelog": [
-    { "version": 1, "date": "2026-09-04", "change": "Initial entry — the PALS 'numbers to remember' card: 1-2-4 rule, metabolic-emergency doses, CPR mechanics, and the bradycardia/SVT/shockable/unstable-tachycardia quick card. Converted from the CV Pediatric Code Blue guide." }
+    { "version": 1, "date": "2026-09-04", "change": "Initial entry — the PALS 'numbers to remember' card: 1-2-4 rule, metabolic-emergency doses, CPR mechanics, and the bradycardia/SVT/shockable/unstable-tachycardia quick card. Converted from the CV Pediatric Code Blue guide." },
+    {"version": 2, "date": "2026-10-07", "change": "Atropine row corrected: AHA/AAP 2025 keeps a 0.1 mg minimum (the row said 'min none'); maximum single dose 0.5 mg."}
   ],
   "kind": "reference",
   "purpose": "The recall-level numbers for a pediatric resuscitation — arrest and peri-arrest drug doses, defibrillation and cardioversion energies, and CPR mechanics — in one card. Every dose is weight-based; compute from the measured or length-tape weight and respect the adult-equivalent single-dose caps. Full per-drug detail and infusions are on the linked drug cards.",
@@ -32,7 +33,7 @@
       "columns": ["Dose", "Drug / therapy", "Cap / note"],
       "rows": [
         ["0.01 mg/kg", "Epinephrine IV/IO (0.1 mL/kg of 1:10,000)", "max 1 mg per dose; repeat q3–5 min"],
-        ["0.02 mg/kg", "Atropine IV/IO", "min none in current PALS; 0.1–0.5 mg per dose; may repeat once"],
+        ["0.02 mg/kg", "Atropine IV/IO", "minimum 0.1 mg, maximum single dose 0.5 mg; may repeat once (AHA/AAP 2025)"],
         ["0.1 mg/kg", "Adenosine IV/IO — 1st dose", "max 6 mg; rapid push + flush"],
         ["0.2 mg/kg", "Adenosine IV/IO — 2nd dose", "max 12 mg"],
         ["1 mg/kg", "Lidocaine IV/IO", "alternative to amiodarone for VF/pVT"],

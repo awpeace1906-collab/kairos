@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T00:00:00Z",
+  "generatedAt": "2026-10-07T00:00:00Z",
   "groupOrder": [
     "Guidelines & consensus statements",
     "Randomized trials & major studies",
@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 1006,
+  "count": 1014,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -420,12 +420,6 @@
           "title": "Adenosine — Pediatric Stable SVT",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-adenosine-svt"
-        },
-        {
-          "id": "peds-atropine-bradycardia",
-          "title": "Atropine — Pediatric (bradycardia / RSI premedication)",
-          "section": "Drug & Dosing Cards",
-          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-atropine-bradycardia"
         }
       ]
     },
@@ -474,6 +468,18 @@
           "title": "Amiodarone — Pediatric VF / Pulseless VT",
           "section": "Drug & Dosing Cards",
           "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-amiodarone-arrest"
+        }
+      ]
+    },
+    {
+      "text": "AHA/AAP 2025 Pediatric Bradycardia With a Pulse Algorithm (atropine 0.02 mg/kg IV/IO, may repeat once; minimum 0.1 mg, maximum single dose 0.5 mg)",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "peds-atropine-bradycardia",
+          "title": "Atropine — Pediatric (bradycardia / RSI premedication)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/weight-age-based-pediatric-resuscitation-dosing/peds-atropine-bradycardia"
         }
       ]
     },
@@ -804,6 +810,30 @@
           "title": "SCAI Cardiogenic Shock Staging",
           "section": "Calculators",
           "route": "/calculators/icu-critical-care/scai-cardiogenic-shock-staging"
+        }
+      ]
+    },
+    {
+      "text": "Barceloux DG, Bond GR, Krenzelok EP, Cooper H, Vale JA. American Academy of Clinical Toxicology practice guidelines on the treatment of methanol poisoning. J Toxicol Clin Toxicol. 2002;40(4):415-446. doi:10.1081/clt-120006745",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "tox-alcohols-anticholinergics-other",
+          "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-alcohols-anticholinergics-other"
+        }
+      ]
+    },
+    {
+      "text": "Barceloux DG, Krenzelok EP, Olson K, Watson W. American Academy of Clinical Toxicology practice guidelines on the treatment of ethylene glycol poisoning. J Toxicol Clin Toxicol. 1999;37(5):537-560. doi:10.1081/clt-100102445",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "tox-alcohols-anticholinergics-other",
+          "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
+          "section": "Reference Library",
+          "route": "/reference-library/critical-care/tox-alcohols-anticholinergics-other"
         }
       ]
     },
@@ -1204,18 +1234,6 @@
       ]
     },
     {
-      "text": "DAS / Vortex approach (conceptual)",
-      "group": "Guidelines & consensus statements",
-      "usedBy": [
-        {
-          "id": "airway-management-flow",
-          "title": "Airway Management Flow",
-          "section": "Procedures",
-          "route": "/procedures/airway-sedation-workflows/airway-management-flow"
-        }
-      ]
-    },
-    {
       "text": "de Franchis R, et al. Baveno VII consensus workshop on portal hypertension.",
       "group": "Guidelines & consensus statements",
       "usedBy": [
@@ -1452,6 +1470,18 @@
           "title": "Scalpel–Finger–Bougie Cricothyroidotomy",
           "section": "Procedures",
           "route": "/procedures/cico-front-of-neck-access/cricothyroidotomy"
+        }
+      ]
+    },
+    {
+      "text": "Frerk C, Mitchell VS, McNarry AF, et al. Difficult Airway Society 2015 guidelines for management of unanticipated difficult intubation in adults. Br J Anaesth. 2015;115(6):827-848. doi:10.1093/bja/aev371 (Plans A–D)",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "airway-management-flow",
+          "title": "Airway Management Flow",
+          "section": "Procedures",
+          "route": "/procedures/airway-sedation-workflows/airway-management-flow"
         }
       ]
     },
@@ -3216,6 +3246,24 @@
           "title": "ABCD² Score for TIA",
           "section": "Calculators",
           "route": "/calculators/neuro-stroke-head-injury/abcd2"
+        }
+      ]
+    },
+    {
+      "text": "Jost D, Lemoine S, Lemoine F, et al. Prehospital lyophilized plasma transfusion for trauma-induced coagulopathy in patients at risk for hemorrhagic shock: a randomized clinical trial (PREHO-PLYO). JAMA Netw Open. 2022;5(7):e2223619. doi:10.1001/jamanetworkopen.2022.23619",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "hemorrhagic-shock-mtp",
+          "title": "Hemorrhagic Shock & Massive Transfusion",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/hemorrhagic-shock-mtp"
+        },
+        {
+          "id": "iv-fluids",
+          "title": "IV Fluids & Volume Resuscitation",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/iv-fluids"
         }
       ]
     },
@@ -6982,6 +7030,18 @@
       ]
     },
     {
+      "text": "Connolly SJ, Sharma M, Cohen AT, et al. Andexanet for factor Xa inhibitor-associated acute intracerebral hemorrhage (ANNEXA-I). N Engl J Med. 2024;390(19):1745-1755. doi:10.1056/NEJMoa2313040",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "andexanet-alfa-ondexxya",
+          "title": "Andexanet Alfa (Ondexxya)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/anticoagulants-hemostatics/andexanet-alfa-ondexxya"
+        }
+      ]
+    },
+    {
       "text": "Consult a medical toxicologist / regional poison center for any real poisoning",
       "group": "Other primary sources",
       "usedBy": [
@@ -8274,6 +8334,18 @@
           "title": "Radiation — Thyroid Blocking & Decorporation Dosing",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/radiation-decorporation-dosing"
+        }
+      ]
+    },
+    {
+      "text": "FDA. Update on the Safety of Andexxa — FDA Safety Communication, December 18, 2025. https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "andexanet-alfa-ondexxya",
+          "title": "Andexanet Alfa (Ondexxya)",
+          "section": "Drug & Dosing Cards",
+          "route": "/drug-dosing/anticoagulants-hemostatics/andexanet-alfa-ondexxya"
         }
       ]
     },
@@ -11332,6 +11404,18 @@
       ]
     },
     {
+      "text": "Sakkas P, Davis JM, Janicak PG, Wang ZY. Drug treatment of the neuroleptic malignant syndrome. Psychopharmacol Bull. 1991;27(3):381-384 (NMS mortality 21% untreated; 8.6% dantrolene, 7.8% bromocriptine, 5.9% amantadine)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "antidotes-reversal-agents",
+          "title": "Antidotes & Reversal Agents",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/antidotes-reversal-agents"
+        }
+      ]
+    },
+    {
       "text": "Saltzman JR et al. Gastrointest Endosc 2011",
       "group": "Other primary sources",
       "usedBy": [
@@ -12192,6 +12276,18 @@
           "title": "Electrical Injury & Lightning Strike",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/electrical-injury-lightning"
+        }
+      ]
+    },
+    {
+      "text": "Vortex approach (conceptual)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "airway-management-flow",
+          "title": "Airway Management Flow",
+          "section": "Procedures",
+          "route": "/procedures/airway-sedation-workflows/airway-management-flow"
         }
       ]
     },

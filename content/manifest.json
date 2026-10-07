@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T00:00:00Z",
+  "generatedAt": "2026-10-07T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
@@ -1044,8 +1044,8 @@
       "next_review_due": "2026-11-30"
     },
     "drug-dosing/anescalc-core/4-factor-pcc-kcentra": {
-      "content_version": 1,
-      "hash": "989cb0aa5b66015b",
+      "content_version": 2,
+      "hash": "bf1bd15146cfcf42",
       "path": "modules/drug-dosing/anescalc-core/4-factor-pcc-kcentra.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1062,8 +1062,8 @@
       "next_review_due": "2026-12-01"
     },
     "drug-dosing/anescalc-core/andexanet-alfa-ondexxya": {
-      "content_version": 1,
-      "hash": "1b5cf59a16cd48a8",
+      "content_version": 2,
+      "hash": "663ff8469e3203de",
       "path": "modules/drug-dosing/anescalc-core/andexanet-alfa-ondexxya.json",
       "contentType": "anesthesia-drug-card",
       "section": "Drug & Dosing Cards",
@@ -1716,8 +1716,8 @@
       "next_review_due": "2026-12-01"
     },
     "drug-dosing/resus-dosing/peds-atropine-bradycardia": {
-      "content_version": 3,
-      "hash": "409e267a89b5c53f",
+      "content_version": 4,
+      "hash": "7b626ac7a9642222",
       "path": "modules/drug-dosing/resus-dosing/peds-atropine-bradycardia.json",
       "contentType": "drug-card",
       "section": "Drug & Dosing Cards",
@@ -2085,8 +2085,8 @@
       "next_review_due": "2026-12-15"
     },
     "peds-module/peds-cardiac-arrest": {
-      "content_version": 1,
-      "hash": "235dc66d43fc4b56",
+      "content_version": 2,
+      "hash": "4f67553290f125b7",
       "path": "modules/peds-module/peds-cardiac-arrest.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2139,8 +2139,8 @@
       "next_review_due": "2026-11-30"
     },
     "peds-module/peds-pre-arrival-card": {
-      "content_version": 1,
-      "hash": "cccbaa0dcc67682b",
+      "content_version": 2,
+      "hash": "d4efcb7bceaf8db1",
       "path": "modules/peds-module/peds-pre-arrival-card.json",
       "contentType": "peds-tool",
       "section": "Peds Module",
@@ -2229,8 +2229,8 @@
       "next_review_due": "2026-12-15"
     },
     "procedures/airway-management-flow": {
-      "content_version": 4,
-      "hash": "60d7aa6093e060c6",
+      "content_version": 5,
+      "hash": "1691ede699e8e5eb",
       "path": "modules/procedures/airway-management-flow.json",
       "contentType": "procedure",
       "section": "Procedures",
@@ -2741,8 +2741,8 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/antidotes-reversal-agents": {
-      "content_version": 3,
-      "hash": "b5d00f0e0682db00",
+      "content_version": 4,
+      "hash": "77710e7e643ed8a9",
       "path": "modules/reference-library/antidotes-reversal-agents.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -2795,8 +2795,8 @@
       "next_review_due": "2027-03-07"
     },
     "reference-library/blood-products": {
-      "content_version": 2,
-      "hash": "955051820a44b4fa",
+      "content_version": 3,
+      "hash": "988394b058e7f817",
       "path": "modules/reference-library/blood-products.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3146,8 +3146,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/hemorrhagic-shock-mtp": {
-      "content_version": 3,
-      "hash": "10cada954bfc2337",
+      "content_version": 4,
+      "hash": "a82212d31e63781f",
       "path": "modules/reference-library/hemorrhagic-shock-mtp.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3281,8 +3281,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/iv-fluids": {
-      "content_version": 4,
-      "hash": "e3661e67d0bdaa4a",
+      "content_version": 5,
+      "hash": "fa48feb19f5b976e",
       "path": "modules/reference-library/iv-fluids.json",
       "contentType": "reference",
       "section": "Reference Library",
@@ -3794,8 +3794,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/tox-alcohols-anticholinergics-other": {
-      "content_version": 2,
-      "hash": "591af71868fbcc57",
+      "content_version": 3,
+      "hash": "a732ae0be76710f3",
       "path": "modules/reference-library/tox-alcohols-anticholinergics-other.json",
       "contentType": "reference",
       "section": "Reference Library",
