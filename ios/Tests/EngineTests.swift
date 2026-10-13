@@ -138,6 +138,36 @@ final class EngineTests: XCTestCase {
         XCTAssertTrue(m.modules.values.allSatisfy { !$0.hash.isEmpty })
     }
 
+    /// A bundle ahead of (or level with) the deployed site keeps its bundled-only
+    /// modules; an older bundle defers to the published index so removals apply.
+    func testBundledOnlyEntriesSurviveRemoteIndex() {
+        func e(_ id: String) -> SearchEntry {
+            SearchEntry(itemID: id, title: id, section: "Calculators", category: "X", contentType: .calculator, route: "/\(id)")
+        }
+        func entry(_ v: Int) -> Manifest.Entry {
+            Manifest.Entry(contentVersion: v, hash: "h\(v)", path: "modules/x/\(v).json", contentType: .calculator,
+                           section: "Calculators", reviewTier: nil, nextReviewDue: nil)
+        }
+        let remote = SearchIndexFile(generatedAt: "2026-10-07T00:00:00Z", entries: [e("a"), e("b")])
+        let ahead = SearchIndexFile(generatedAt: "2026-10-13T00:00:00Z", entries: [e("a"), e("new")])
+        let level = SearchIndexFile(generatedAt: "2026-10-07T00:00:00Z", entries: [e("a"), e("new")])
+        let behind = SearchIndexFile(generatedAt: "2026-10-01T00:00:00Z", entries: [e("a"), e("gone")])
+
+        XCTAssertEqual(ContentStore.mergedEntries(remote: remote, bundled: ahead).map(\.itemID), ["a", "b", "new"])
+        XCTAssertEqual(ContentStore.mergedEntries(remote: remote, bundled: level).map(\.itemID), ["a", "b", "new"])
+        XCTAssertEqual(ContentStore.mergedEntries(remote: remote, bundled: behind).map(\.itemID), ["a", "b"])
+        XCTAssertEqual(ContentStore.mergedEntries(remote: remote, bundled: nil).map(\.itemID), ["a", "b"])
+
+        let rm = Manifest(generatedAt: "2026-10-07T00:00:00Z", schemaVersion: 1, modules: ["a": entry(2)])
+        let bm = Manifest(generatedAt: "2026-10-13T00:00:00Z", schemaVersion: 1, modules: ["a": entry(1), "new": entry(3)])
+        let merged = ContentStore.mergedManifest(remote: rm, bundled: bm)
+        XCTAssertEqual(Set(merged.modules.keys), ["a", "new"])
+        XCTAssertEqual(merged.modules["a"]?.contentVersion, 2, "shared modules keep the published entry")
+        XCTAssertEqual(merged.generatedAt, rm.generatedAt)
+        let old = Manifest(generatedAt: "2026-10-01T00:00:00Z", schemaVersion: 1, modules: ["new": entry(3)])
+        XCTAssertEqual(Set(ContentStore.mergedManifest(remote: rm, bundled: old).modules.keys), ["a"])
+    }
+
     /// Bundled module: max(500, age × 10) floor, the select's unit factor, and
     /// the ratio bands — same cases as tools/test.mjs.
     func testAgeAdjustedDDimer() throws {

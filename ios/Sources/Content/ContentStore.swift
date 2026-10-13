@@ -31,6 +31,8 @@ final class ContentStore: ObservableObject {
     @Published private(set) var manifest: Manifest?
     /// The manifest shipped inside this build — the baseline OTA compares against.
     private var bundledManifest: Manifest?
+    /// The search index shipped inside this build — see mergedEntries.
+    private var bundledIndex: SearchIndexFile?
     @Published private(set) var lastUpdatedModules: [String] = []
     @Published private(set) var loadError: String?
 
@@ -77,6 +79,29 @@ final class ContentStore: ObservableObject {
         remoteHash != currentHash && remoteVersion >= currentVersion
     }
 
+    /// A build made from content newer than the deployed site (modules added
+    /// but not yet pushed) must not lose them when the published index or
+    /// manifest replaces its own. When the bundle's content stamp is at least
+    /// the published one's, bundled-only entries are kept alongside the
+    /// published ones; when the bundle is older, the published copy is
+    /// authoritative, so removals still take effect. Stamps are ISO-8601 UTC
+    /// strings of one fixed format (build.mjs contentStamp), so they compare
+    /// as strings.
+    nonisolated static func mergedEntries(remote: SearchIndexFile, bundled: SearchIndexFile?) -> [SearchEntry] {
+        guard let bundled, bundled.generatedAt >= remote.generatedAt else { return remote.entries }
+        let ids = Set(remote.entries.map(\.itemID))
+        return remote.entries + bundled.entries.filter { !ids.contains($0.itemID) }
+    }
+
+    /// Same rule for the manifest, so a bundled-only module's path still resolves.
+    nonisolated static func mergedManifest(remote: Manifest, bundled: Manifest?) -> Manifest {
+        guard let bundled, bundled.generatedAt >= remote.generatedAt else { return remote }
+        let extra = bundled.modules.filter { remote.modules[$0.key] == nil }
+        guard !extra.isEmpty else { return remote }
+        return Manifest(generatedAt: remote.generatedAt, schemaVersion: remote.schemaVersion,
+                        modules: remote.modules.merging(extra) { r, _ in r })
+    }
+
     /// A different bundle than last launch means a new install: drop every OTA
     /// copy and record so the new bundle is the baseline. Before this, a copy
     /// cached under an older build won over the newer bundle whenever the two
@@ -102,6 +127,7 @@ final class ContentStore: ObservableObject {
             // this session's own checkForUpdates() call below even completes.
             let s: SectionsConfig = try cachedOrBundled("config/sections.json")
             let idx: SearchIndexFile = try cachedOrBundled("search-index.json")
+            let bundledIdx: SearchIndexFile = try bundled("search-index.json")
             let zones: WeightZonesConfig = try bundled("config/weight-zones.json")
             let t: TiersConfig = try bundled("config/tiers.json")
             let bundledM: Manifest = try bundled("manifest.json")
@@ -109,11 +135,12 @@ final class ContentStore: ObservableObject {
             // paths of modules that exist only OTA; the bundled one does not.
             let m: Manifest = try cachedOrBundled("manifest.json")
             sections = s.sections.sorted { $0.order < $1.order }
-            searchIndex = SearchIndex(entries: idx.entries)
+            searchIndex = SearchIndex(entries: Self.mergedEntries(remote: idx, bundled: bundledIdx))
             weightZones = zones
             tiers = t.tiers
-            manifest = m
+            manifest = Self.mergedManifest(remote: m, bundled: bundledM)
             bundledManifest = bundledM
+            bundledIndex = bundledIdx
         } catch {
             loadError = "Bundled content failed to load: \(error)"
             print("[content] \(loadError!)")
@@ -209,7 +236,7 @@ final class ContentStore: ObservableObject {
             // syncing its own JSON and still never appear anywhere in the app.
             if let idxData = try? await fetchAndCache(remoteBase, "search-index.json"),
                let idx = try? decoder.decode(SearchIndexFile.self, from: idxData) {
-                searchIndex = SearchIndex(entries: idx.entries)
+                searchIndex = SearchIndex(entries: Self.mergedEntries(remote: idx, bundled: bundledIndex))
             }
             if let secData = try? await fetchAndCache(remoteBase, "config/sections.json"),
                let s = try? decoder.decode(SectionsConfig.self, from: secData) {
@@ -254,7 +281,7 @@ final class ContentStore: ObservableObject {
             // downloaded: otherwise a launch with nothing new fell back to the
             // bundled manifest and an OTA-only module (e.g. one added after this
             // build) could no longer be opened.
-            manifest = remote
+            manifest = Self.mergedManifest(remote: remote, bundled: bundledManifest)
             if !changed.isEmpty {
                 otaHashes = hashes
                 otaVersions = versions

@@ -256,6 +256,13 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-10-13 — **iOS: bundled-only modules survive the live index.** When the
+  bundled content stamp (`generatedAt`) is at least the deployed one, the app
+  now keeps bundled-only search entries and manifest paths alongside the live
+  ones (`ContentStore.mergedEntries` / `mergedManifest`, applied at launch and
+  after each update check). An older bundle still defers to the live copy, so
+  removals take effect. Resolves the 2026-10-05 note below. Unit test added
+  (34/34).
 - 2026-10-07 — **CV Guides cross-check brief applied to Kairos (11 modules).**
   Many Kairos modules were converted from CV Guides, so the brief's corrections
   were checked against Kairos. Each claim was re-verified against a primary
@@ -318,7 +325,7 @@ Still open from the prior cycle:
   **Note:** the iOS app adopts the live site's search index whole, so a build
   whose bundle is ahead of the deployed site hides newly bundled modules from
   search until the deploy lands (seen with the D-dimer and analyzer UI tests).
-  Consider merging bundled and live entries.
+  Consider merging bundled and live entries. *(Done 2026-10-13.)*
 - 2026-09-30 — **content-ci guard: content edits must bump content_version**
   (`tools/check-version-bumps.mjs`, `npm run check-version-bumps` for
   uncommitted edits). Installed iOS apps only re-download a module when its
