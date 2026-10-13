@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 1020,
+  "count": 1021,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -12040,7 +12040,19 @@
       ]
     },
     {
-      "text": "Tamirisa KP, Oliveros E, Paulraj S, Mares AC, Volgman AS. An Overview of Arrhythmias in Pregnancy. Methodist DeBakey Cardiovasc J. 2024;20(2):36-50. doi:10.14797/mdcvj.1325 (Table 2: antiarrhythmic safety tier labels and drug list; the published table marks tiers only by color, so per-drug tiers were not verified)",
+      "text": "Tamirisa KP, Elkayam U, Briller JE, et al. Arrhythmias in Pregnancy. JACC Clin Electrophysiol. 2022;8(1):120-135. doi:10.1016/j.jacep.2021.10.004 (antiarrhythmic safety-tier figure; every tier checked against it 2026-10-13)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "emergency-drugs-pregnancy",
+          "title": "Emergency Drugs in Pregnancy",
+          "section": "Reference Library",
+          "route": "/reference-library/obstetric-gynecologic/emergency-drugs-pregnancy"
+        }
+      ]
+    },
+    {
+      "text": "Tamirisa KP, Oliveros E, Paulraj S, Mares AC, Volgman AS. An Overview of Arrhythmias in Pregnancy. Methodist DeBakey Cardiovasc J. 2024;20(2):36-50. doi:10.14797/mdcvj.1325 (same tiers, with FDA category and lactation data, Table 2)",
       "group": "Other primary sources",
       "usedBy": [
         {

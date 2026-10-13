@@ -260,9 +260,9 @@ Still open from the prior cycle:
   "Enriquez … JACC-EP consensus tiers, 2021" conflated two papers. Now credited
   to Tamirisa et al., Methodist DeBakey Cardiovasc J 2024, Table 2 (labels and
   drug list match), plus Enriquez 2014 (Circ Arrhythm Electrophysiol) as
-  background. Open: per-drug tiers are unverified (the published table encodes
-  them only by row color); check against Tamirisa, JACC Clin Electrophysiol
-  2022, via institutional access.
+  background. v5 (same day): all 24 tiers checked against the tier figure in
+  Tamirisa, JACC Clin Electrophysiol 2022 (supplied by the owner); all match,
+  and that paper is now the cited source.
 - 2026-10-13 — **hyperosmolar-therapy v3: retracted meta-analysis removed.**
   The "18-trial synthesis" (treatment failure OR 0.38) traces to Han et al.,
   Front Surg 2021, retracted 2023; it had been credited to Mangat 2020.

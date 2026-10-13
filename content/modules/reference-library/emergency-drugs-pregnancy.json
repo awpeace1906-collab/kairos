@@ -47,14 +47,15 @@
     "PLLR"
   ],
   "contentType": "reference",
-  "content_version": 4,
+  "content_version": 5,
   "last_reviewed": "2026-10-13",
   "next_review_due": "2027-04-13",
   "review_tier": 1,
   "sources": [
     "Critical Vector — Emergency Drugs in Pregnancy (10 scenarios; legacy FDA letters reproduced for cross-reference against Micromedex / Lexicomp / Briggs)",
     "ACOG Committee Opinion 692 — acute-onset severe hypertension in pregnancy/postpartum",
-    "Tamirisa KP, Oliveros E, Paulraj S, Mares AC, Volgman AS. An Overview of Arrhythmias in Pregnancy. Methodist DeBakey Cardiovasc J. 2024;20(2):36-50. doi:10.14797/mdcvj.1325 (Table 2: antiarrhythmic safety tier labels and drug list; the published table marks tiers only by color, so per-drug tiers were not verified)",
+    "Tamirisa KP, Elkayam U, Briller JE, et al. Arrhythmias in Pregnancy. JACC Clin Electrophysiol. 2022;8(1):120-135. doi:10.1016/j.jacep.2021.10.004 (antiarrhythmic safety-tier figure; every tier checked against it 2026-10-13)",
+    "Tamirisa KP, Oliveros E, Paulraj S, Mares AC, Volgman AS. An Overview of Arrhythmias in Pregnancy. Methodist DeBakey Cardiovasc J. 2024;20(2):36-50. doi:10.14797/mdcvj.1325 (same tiers, with FDA category and lactation data, Table 2)",
     "Enriquez AD, Economy KE, Tedrow UB. Contemporary management of arrhythmias during pregnancy. Circ Arrhythm Electrophysiol. 2014;7(5):961-967. doi:10.1161/CIRCEP.114.001517 (background review)",
     "PROSPECT c-section analgesia (see the separate module); WHO PPH uterotonics + TXA; ASCIA anaphylaxis-in-pregnancy"
   ],
@@ -78,6 +79,11 @@
       "version": 4,
       "date": "2026-10-13",
       "change": "Arrhythmia safety-tier citation corrected. The \"Enriquez … JACC-EP consensus tiers, 2021\" source conflated two papers: Enriquez is a 2014 Circ Arrhythm Electrophysiol review, and the tier labels and drug list match Table 2 of Tamirisa et al., Methodist DeBakey Cardiovasc J 2024. That table marks tiers only by row color, which the published versions don't carry, so per-drug tiers remain unverified. No clinical content changed."
+    },
+    {
+      "version": 5,
+      "date": "2026-10-13",
+      "change": "Antiarrhythmic safety tiers verified drug by drug against the tier figure in Tamirisa et al., JACC Clin Electrophysiol 2022 (all 24 match); that paper is now cited as the source. The v4 \"per-drug tiers unverified\" note is resolved."
     }
   ],
   "summary": "Maternal hemodynamic stability is fetal stability — don't undertreat a genuine maternal emergency out of fetal-risk hesitancy. Every 'avoid' tier here still carries an 'unless life-threatening' escape clause. Position matters: manual left uterine displacement / left lateral tilt at ≥ 20 weeks during any resuscitation.",

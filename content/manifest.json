@@ -3047,8 +3047,8 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/emergency-drugs-pregnancy": {
-      "content_version": 4,
-      "hash": "b5f2cc977e196378",
+      "content_version": 5,
+      "hash": "2f5953debb4c175a",
       "path": "modules/reference-library/emergency-drugs-pregnancy.json",
       "contentType": "reference",
       "section": "Reference Library",
