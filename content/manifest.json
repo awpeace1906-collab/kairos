@@ -3191,13 +3191,13 @@
       "next_review_due": "2026-12-02"
     },
     "reference-library/hyperosmolar-therapy": {
-      "content_version": 2,
-      "hash": "b8dde46236293087",
+      "content_version": 3,
+      "hash": "915e77b7187ee322",
       "path": "modules/reference-library/hyperosmolar-therapy.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": 3,
-      "next_review_due": "2027-03-02"
+      "next_review_due": "2027-04-13"
     },
     "reference-library/hyperviscosity-leukostasis": {
       "content_version": 2,

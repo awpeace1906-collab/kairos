@@ -35,17 +35,23 @@
     "CPP"
   ],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-02",
-  "next_review_due": "2027-03-02",
+  "content_version": 3,
+  "last_reviewed": "2026-10-13",
+  "next_review_due": "2027-04-13",
   "review_tier": 3,
   "sources": [
     "Critical Vector — Hypertonic Saline vs Mannitol pocket reference (v1, verified vs Crit Care Med / Neurosurgery / Neurosurg Rev, July 2026)",
     "Kamel H et al. Crit Care Med 2011 (equiosmolar RCT meta-analysis)",
     "Gu J et al. Neurosurg Rev 2019 (12 RCTs, 438 pts)",
-    "Mangat HS et al. Neurosurgery 2020; pooled 18-trial synthesis 2020–2023 (1,828 pts)"
+    "Mangat HS, et al. Hypertonic saline is superior to mannitol for the combined effect on intracranial pressure and cerebral perfusion pressure burdens in patients with severe traumatic brain injury. Neurosurgery. 2020;86(2):221-230. doi:10.1093/neuros/nyz046 (matched case-control)",
+    "Cai L, He W. Effectiveness of hypertonic saline infusion in management of traumatic brain injury: an updated systematic review and meta-analysis of randomized controlled trials. Brain Inj. 2024;38(12):977-984. doi:10.1080/02699052.2024.2363340 (15 RCTs, 624 patients)"
   ],
   "changelog": [
+    {
+      "version": 3,
+      "date": "2026-10-13",
+      "change": "Removed the \"pooled 18-trial synthesis\" result (treatment failure OR 0.38): it traces to Han et al., Front Surg 2021, retracted in 2023 (doi:10.3389/fsurg.2023.1220316), and was miscredited to Mangat 2020. Replaced with Cai & He 2024 (15 RCTs), which found only an early CPP advantage. Mangat 2020 citation completed and labeled case-control."
+    },
     {
       "version": 2,
       "date": "2026-09-07",
@@ -111,7 +117,7 @@
       "items": [
         "Gu 2019 (12 RCTs): HS and mannitol close on functional outcome (RR 1.17, 95% CI 0.89–1.54) and ICP reduction — no significant difference.",
         "Mangat 2020: HS showed a superior combined ICP + CPP effect, with a significant CPP rise from baseline (63 → 76 mmHg at 120 min) not seen with mannitol — consistent with HS's volume-expansion mechanism.",
-        "Pooled 18-trial synthesis (1,828 pts): in the acute 30–60 min window HS showed a 62% reduction in treatment failure (OR 0.38, 95% CI 0.15–0.98), higher CPP, modestly lower ICP. By 90–120 min the effects attenuated and no consistent between-group difference remained (mortality, function, CPP, ICP).",
+        "Cai 2024 (15 RCTs, 624 pts): HS raised CPP more at 30–60 min (MD 5.54 mmHg, 95% CI 3.04–8.03); no significant difference in mortality, functional outcome, ICP control at 30–60 or 90–120 min, CPP at 90–120 min, or treatment failure.",
         "Bottom line: HS's advantage is most consistent in the acute, early post-infusion window — not a durable sustained superiority. Whether HS confers a lasting outcome benefit is unresolved."
       ]
     },

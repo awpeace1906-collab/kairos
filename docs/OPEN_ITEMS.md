@@ -256,6 +256,12 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-10-13 — **hyperosmolar-therapy v3: retracted meta-analysis removed.**
+  The "18-trial synthesis" (treatment failure OR 0.38) traces to Han et al.,
+  Front Surg 2021, retracted 2023; it had been credited to Mangat 2020.
+  Replaced with Cai & He, Brain Inj 2024 (15 RCTs: early CPP advantage only).
+  Still open from the same CV review: wound-ballistics' fragmentation
+  threshold (~2,000–2,200 fps) is unverified (see the CV Guides recommendations).
 - 2026-10-13 — **EKG Axis Interpreter v4: QRS-T note corrected, no sex input.**
   The 45°/90° bands are now labeled a clinical convention (they had been
   credited to MESA, which used cohort percentiles). Published sex-specific

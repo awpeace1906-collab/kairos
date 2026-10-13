@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 1016,
+  "count": 1017,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -2872,6 +2872,18 @@
       ]
     },
     {
+      "text": "Cai L, He W. Effectiveness of hypertonic saline infusion in management of traumatic brain injury: an updated systematic review and meta-analysis of randomized controlled trials. Brain Inj. 2024;38(12):977-984. doi:10.1080/02699052.2024.2363340 (15 RCTs, 624 patients)",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "hyperosmolar-therapy",
+          "title": "Hyperosmolar Therapy — HTS vs Mannitol",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/hyperosmolar-therapy"
+        }
+      ]
+    },
+    {
       "text": "Celli BR et al. NEJM 2004",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -3372,18 +3384,6 @@
           "title": "HEART Score for Major Cardiac Events",
           "section": "Calculators",
           "route": "/calculators/cardiovascular-chest-pain-arrhythmia/heart-score"
-        }
-      ]
-    },
-    {
-      "text": "Mangat HS et al. Neurosurgery 2020; pooled 18-trial synthesis 2020–2023 (1,828 pts)",
-      "group": "Randomized trials & major studies",
-      "usedBy": [
-        {
-          "id": "hyperosmolar-therapy",
-          "title": "Hyperosmolar Therapy — HTS vs Mannitol",
-          "section": "Reference Library",
-          "route": "/reference-library/resuscitation-airway/hyperosmolar-therapy"
         }
       ]
     },
@@ -9942,6 +9942,18 @@
           "title": "Toxic Alcohols, Anticholinergics, Nicotine, Kratom & Anabolic Steroids",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-alcohols-anticholinergics-other"
+        }
+      ]
+    },
+    {
+      "text": "Mangat HS, et al. Hypertonic saline is superior to mannitol for the combined effect on intracranial pressure and cerebral perfusion pressure burdens in patients with severe traumatic brain injury. Neurosurgery. 2020;86(2):221-230. doi:10.1093/neuros/nyz046 (matched case-control)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "hyperosmolar-therapy",
+          "title": "Hyperosmolar Therapy — HTS vs Mannitol",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/hyperosmolar-therapy"
         }
       ]
     },
