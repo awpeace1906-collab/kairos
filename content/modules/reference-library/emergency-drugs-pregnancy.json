@@ -47,14 +47,14 @@
     "PLLR"
   ],
   "contentType": "reference",
-  "content_version": 5,
+  "content_version": 6,
   "last_reviewed": "2026-10-13",
   "next_review_due": "2027-04-13",
   "review_tier": 1,
   "sources": [
     "Critical Vector — Emergency Drugs in Pregnancy (10 scenarios; legacy FDA letters reproduced for cross-reference against Micromedex / Lexicomp / Briggs)",
     "ACOG Committee Opinion 692 — acute-onset severe hypertension in pregnancy/postpartum",
-    "Tamirisa KP, Elkayam U, Briller JE, et al. Arrhythmias in Pregnancy. JACC Clin Electrophysiol. 2022;8(1):120-135. doi:10.1016/j.jacep.2021.10.004 (antiarrhythmic safety-tier figure; every tier checked against it 2026-10-13)",
+    "Tamirisa KP, Elkayam U, Briller JE, et al. Arrhythmias in Pregnancy. JACC Clin Electrophysiol. 2022;8(1):120-135. doi:10.1016/j.jacep.2021.10.004 (Figure 2: antiarrhythmic safety tiers; Table 2: fetal adverse effects and prior FDA categories; read in full 2026-10-13)",
     "Tamirisa KP, Oliveros E, Paulraj S, Mares AC, Volgman AS. An Overview of Arrhythmias in Pregnancy. Methodist DeBakey Cardiovasc J. 2024;20(2):36-50. doi:10.14797/mdcvj.1325 (same tiers, with FDA category and lactation data, Table 2)",
     "Enriquez AD, Economy KE, Tedrow UB. Contemporary management of arrhythmias during pregnancy. Circ Arrhythm Electrophysiol. 2014;7(5):961-967. doi:10.1161/CIRCEP.114.001517 (background review)",
     "PROSPECT c-section analgesia (see the separate module); WHO PPH uterotonics + TXA; ASCIA anaphylaxis-in-pregnancy"
@@ -84,6 +84,11 @@
       "version": 5,
       "date": "2026-10-13",
       "change": "Antiarrhythmic safety tiers verified drug by drug against the tier figure in Tamirisa et al., JACC Clin Electrophysiol 2022 (all 24 match); that paper is now cited as the source. The v4 \"per-drug tiers unverified\" note is resolved."
+    },
+    {
+      "version": 6,
+      "date": "2026-10-13",
+      "change": "Arrhythmia paragraph completed against Figure 2 of Tamirisa 2022 (full article read): added quinidine to moderately safe, the use-with-caution tier (nadolol, atenolol, diltiazem, disopyramide, mexiletine, ibutilide, propafenone), ivabradine to avoid, and carvedilol/atropine as data lacking. Added the paper's preference for propranolol or metoprolol. Source now names Figure 2 and Table 2."
     }
   ],
   "summary": "Maternal hemodynamic stability is fetal stability — don't undertreat a genuine maternal emergency out of fetal-risk hesitancy. Every 'avoid' tier here still carries an 'unless life-threatening' escape clause. Position matters: manual left uterine displacement / left lateral tilt at ≥ 20 weeks during any resuscitation.",
@@ -266,7 +271,7 @@
     },
     {
       "type": "text",
-      "text": "Safe: adenosine (6 mg → 12 mg, identical to non-pregnant; negligible fetal exposure), digoxin (levels run falsely high late in pregnancy — treat the rhythm), lidocaine, sotalol. Moderately safe: propranolol, metoprolol, labetalol, verapamil, procainamide, flecainide. AVOID (unless maternal life-threatening and refractory to everything else): amiodarone (fetal hypothyroidism, growth restriction, prematurity), dronedarone, dofetilide. Don't undertreat a genuine maternal arrhythmia — every 'avoid' still has the life-threatening escape clause."
+      "text": "Safe: adenosine (6 mg → 12 mg, identical to non-pregnant; negligible fetal exposure), digoxin (levels run falsely high late in pregnancy — treat the rhythm), lidocaine, sotalol. Moderately safe: propranolol, metoprolol, labetalol, verapamil, quinidine, flecainide, procainamide. Use with caution: nadolol, atenolol (more fetal growth restriction than other beta-blockers), diltiazem, disopyramide, mexiletine, ibutilide, propafenone. AVOID (unless maternal life-threatening and refractory to everything else): amiodarone (fetal hypothyroidism, growth restriction, prematurity), dronedarone, dofetilide, ivabradine. Safety data lacking: carvedilol, atropine. For beta-blocker rate control, propranolol or metoprolol is preferred. Don't undertreat a genuine maternal arrhythmia — every 'avoid' still has the life-threatening escape clause."
     }
   ],
   "related": [
