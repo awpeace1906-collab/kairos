@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T00:00:00Z",
+  "generatedAt": "2026-10-13T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
@@ -166,13 +166,13 @@
       "next_review_due": "2026-12-15"
     },
     "calculators/cardiovascular/ekg-axis-interpreter": {
-      "content_version": 3,
-      "hash": "bf47f83e79ffed8b",
+      "content_version": 4,
+      "hash": "29ceb3294ecc8064",
       "path": "modules/calculators/cardiovascular/ekg-axis-interpreter.json",
       "contentType": "calculator",
       "section": "Calculators",
       "review_tier": 1,
-      "next_review_due": "2026-12-26"
+      "next_review_due": "2027-01-13"
     },
     "calculators/cardiovascular/grace-acs": {
       "content_version": 2,

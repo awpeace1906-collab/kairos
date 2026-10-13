@@ -54,16 +54,18 @@
     "dextrocardia"
   ],
   "contentType": "calculator",
-  "content_version": 3,
-  "last_reviewed": "2026-09-26",
-  "next_review_due": "2026-12-26",
+  "content_version": 4,
+  "last_reviewed": "2026-10-13",
+  "next_review_due": "2027-01-13",
   "review_tier": 1,
   "sources": [
     "Cadogan M, Buttner R. ECG Axis Interpretation. Life in the Fast Lane (LITFL), updated Nov 2024. https://litfl.com/ecg-axis-interpretation/ (adult bands, methods, differentials, birth axis range)",
     "LITFL. Paediatric ECG: stepwise approach. https://litfl.com/paediatric-ecg-stepwise-approach/ (northwest axis at birth)",
     "Surawicz B, et al. AHA/ACCF/HRS recommendations for the standardization and interpretation of the electrocardiogram, Part III: intraventricular conduction disturbances. J Am Coll Cardiol. 2009;53(11):976-981. doi:10.1016/j.jacc.2008.12.013 (LAFB and LPFB criteria; pediatric QRS axis ranges by age, adult limits from 16 years)",
     "Aro AL, Huikuri HV, Tikkanen JT, et al. QRS-T angle as a predictor of sudden cardiac death in a middle-aged general population. Europace. 2012;14(6):872-876 (QRS-T angle ≥100° and arrhythmic death, driven mainly by abnormal T axis)",
-    "Walsh JA 3rd, et al. Prognostic value of frontal QRS-T angle in patients without clinical evidence of cardiovascular disease (from the Multi-Ethnic Study of Atherosclerosis). Am J Cardiol. 2013;112:1880-1884 (approximate QRS-T angle bands)",
+    "Walsh JA 3rd, et al. Prognostic value of frontal QRS-T angle in patients without clinical evidence of cardiovascular disease (from the Multi-Ethnic Study of Atherosclerosis). Am J Cardiol. 2013;112(12):1880-1884. doi:10.1016/j.amjcard.2013.08.017 (wide frontal QRS-T angle predicts incident cardiovascular events across ethnic groups; the risk is largely carried by T-wave abnormalities)",
+    "Zhang ZM, Prineas RJ, Case D, Soliman EZ, Rautaharju PM. Comparison of the prognostic significance of the electrocardiographic QRS/T angles in predicting incident coronary heart disease and total mortality (from the Atherosclerosis Risk in Communities Study). Am J Cardiol. 2007;100(5):844-849. doi:10.1016/j.amjcard.2007.03.104 (sex-specific frontal QRS-T 95th percentiles, ages 45–64: 73° men, 67° women)",
+    "Jogu HR, O'Neal WT, Broughton ST, et al. Frontal QRS-T angle and the risk of atrial fibrillation in the elderly. Ann Noninvasive Electrocardiol. 2017;22(2):e12388. doi:10.1111/anec.12388 (Cardiovascular Health Study, ages 65 and older: sex-specific 95th percentiles 131° men, 104° women)",
     "Otake S, et al. Clinical utility of the electrocardiographic P-wave axis in patients with chronic obstructive pulmonary disease. Respiration. 2022;101(4):345-352 (P axis >75° definition and COPD association)",
     "Larkin J, Buttner R. Left Posterior Fascicular Block (LPFB). LITFL ECG Library. https://litfl.com/left-posterior-fascicular-block-lpfb-ecg-library/ (exclude other causes of right axis deviation before diagnosing LPFB)"
   ],
@@ -82,6 +84,11 @@
       "version": 3,
       "date": "2026-09-26",
       "change": "Pediatric QRS axis ranges switched from the LITFL bands to the AHA/ACCF/HRS 2009 Part III table (neonate +30° to +190°, 1 month–1 year +10° to +120°, 1–5 years +5° to +100°, 5–8 years 0° to +140°, 8–16 years 0° to +120°), with adult limits from 16 years instead of 18. Resolves the open upper-age-cutoff item. The document's text gives +10° to +110° for ages 1–5; the table value is used. Eight golden vectors added; both engines pass."
+    },
+    {
+      "version": 4,
+      "date": "2026-10-13",
+      "change": "QRS-T angle note corrected. The 45°/90° bands are labeled as a clinical convention; they were attributed to MESA, which used cohort percentiles instead. \"True normal limits differ by sex\" replaced with the published sex-specific frontal cutoffs, which differ by only about 6° in middle age (ARIC, Zhang 2007) and more in the elderly (CHS, Jogu 2017). No sex input added: for the frontal angle, age matters more than sex, and the large sex difference reported for the spatial angle does not apply. Engine unchanged."
     }
   ],
   "engine": "builtin",
@@ -246,7 +253,7 @@
       },
       "abnormal": {
         "label": "QRS-T angle wide (>90°)",
-        "detail": "Wide frontal QRS-T angle is associated with higher cardiac and all-cause mortality. Cutoffs are approximate; true normal limits differ by sex."
+        "detail": "A wide frontal QRS-T angle is associated with higher cardiac and all-cause mortality. The 45° and 90° cutoffs are a clinical convention, not population normal limits. Population cutoffs shift more with age than with sex: the widest 5% began at 73° in men and 67° in women aged 45–64 (ARIC), and at 131° in men and 104° in women aged 65 and older (CHS)."
       },
       "secondary_repolarization": {
         "label": "QRS-T angle not interpretable",

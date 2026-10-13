@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T00:00:00Z",
+  "generatedAt": "2026-10-13T00:00:00Z",
   "groupOrder": [
     "Guidelines & consensus statements",
     "Randomized trials & major studies",
@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 1014,
+  "count": 1016,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -9142,6 +9142,18 @@
       ]
     },
     {
+      "text": "Jogu HR, O'Neal WT, Broughton ST, et al. Frontal QRS-T angle and the risk of atrial fibrillation in the elderly. Ann Noninvasive Electrocardiol. 2017;22(2):e12388. doi:10.1111/anec.12388 (Cardiovascular Health Study, ages 65 and older: sex-specific 95th percentiles 131° men, 104° women)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ekg-axis-interpreter",
+          "title": "EKG Axis Interpreter",
+          "section": "Calculators",
+          "route": "/calculators/cardiovascular-chest-pain-arrhythmia/ekg-axis-interpreter"
+        }
+      ]
+    },
+    {
       "text": "Johansen K, et al. Objective criteria accurately predict amputation following lower extremity trauma. J Trauma. 1990;30(5):568-572",
       "group": "Other primary sources",
       "usedBy": [
@@ -12304,7 +12316,7 @@
       ]
     },
     {
-      "text": "Walsh JA 3rd, et al. Prognostic value of frontal QRS-T angle in patients without clinical evidence of cardiovascular disease (from the Multi-Ethnic Study of Atherosclerosis). Am J Cardiol. 2013;112:1880-1884 (approximate QRS-T angle bands)",
+      "text": "Walsh JA 3rd, et al. Prognostic value of frontal QRS-T angle in patients without clinical evidence of cardiovascular disease (from the Multi-Ethnic Study of Atherosclerosis). Am J Cardiol. 2013;112(12):1880-1884. doi:10.1016/j.amjcard.2013.08.017 (wide frontal QRS-T angle predicts incident cardiovascular events across ethnic groups; the risk is largely carried by T-wave abnormalities)",
       "group": "Other primary sources",
       "usedBy": [
         {
@@ -12660,6 +12672,18 @@
           "title": "Epistaxis Management",
           "section": "Procedures",
           "route": "/procedures/ent-ophtho-dental-gu/epistaxis-management"
+        }
+      ]
+    },
+    {
+      "text": "Zhang ZM, Prineas RJ, Case D, Soliman EZ, Rautaharju PM. Comparison of the prognostic significance of the electrocardiographic QRS/T angles in predicting incident coronary heart disease and total mortality (from the Atherosclerosis Risk in Communities Study). Am J Cardiol. 2007;100(5):844-849. doi:10.1016/j.amjcard.2007.03.104 (sex-specific frontal QRS-T 95th percentiles, ages 45–64: 73° men, 67° women)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "ekg-axis-interpreter",
+          "title": "EKG Axis Interpreter",
+          "section": "Calculators",
+          "route": "/calculators/cardiovascular-chest-pain-arrhythmia/ekg-axis-interpreter"
         }
       ]
     },

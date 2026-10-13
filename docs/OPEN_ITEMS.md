@@ -256,6 +256,11 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-10-13 — **EKG Axis Interpreter v4: QRS-T note corrected, no sex input.**
+  The 45°/90° bands are now labeled a clinical convention (they had been
+  credited to MESA, which used cohort percentiles). Published sex-specific
+  frontal cutoffs added to the note: ARIC (Zhang, Am J Cardiol 2007) and CHS
+  (Jogu, ANE 2017), both checked in the papers. Engine and vectors unchanged.
 - 2026-10-13 — **iOS: bundled-only modules survive the live index.** When the
   bundled content stamp (`generatedAt`) is at least the deployed one, the app
   now keeps bundled-only search entries and manifest paths alongside the live
@@ -2655,8 +2660,13 @@ concentrations` would naturally fit there but is filed elsewhere.
     golden vectors (now 54) updated. The Rijnbeek 2001 primary data could not
     be read (publisher bot wall). Note the AHA text says 10–110 for 1–5 y
     while its table says 5–100; the table is used.
-  - **QRS-T cutoffs** (<45 / 45–90 / >90) are approximate; the true NHANES
-    limits are sex-specific. Consider adding a sex input.
+  - ~~**QRS-T cutoffs** (<45 / 45–90 / >90) are approximate; the true NHANES
+    limits are sex-specific. Consider adding a sex input.~~ — decided
+    2026-10-13: no sex input. For the frontal angle the published sex
+    difference is small (ARIC 95th percentile 73° men / 67° women, ages
+    45–64) and age moves it more (CHS ≥65: 131° / 104°). The large sex
+    difference is in the spatial angle, which the tool doesn't compute.
+    Content v4 says so and cites both cohorts.
   - ~~Verify the Finnish QRS-T cohort citation~~ — done 2026-09-26 (Aro 2012,
     Europace 14(6):872-876).
   - ~~**LPFB criteria** spot-check~~ — done 2026-09-26 against the
