@@ -3047,13 +3047,13 @@
       "next_review_due": "2026-12-15"
     },
     "reference-library/emergency-drugs-pregnancy": {
-      "content_version": 3,
-      "hash": "4b61c75751fa980d",
+      "content_version": 4,
+      "hash": "b5f2cc977e196378",
       "path": "modules/reference-library/emergency-drugs-pregnancy.json",
       "contentType": "reference",
       "section": "Reference Library",
       "review_tier": 1,
-      "next_review_due": "2026-12-02"
+      "next_review_due": "2027-04-13"
     },
     "reference-library/empiric-antibiotics-cap": {
       "content_version": 2,

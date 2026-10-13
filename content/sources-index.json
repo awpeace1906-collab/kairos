@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 1019,
+  "count": 1020,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -1338,18 +1338,6 @@
           "title": "The Difficult Airway — DAS 2025 & the Failed-Airway Drill",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/anatomically-difficult-airway"
-        }
-      ]
-    },
-    {
-      "text": "Enriquez AD et al. Arrhythmias during pregnancy (JACC-EP consensus tiers, 2021)",
-      "group": "Guidelines & consensus statements",
-      "usedBy": [
-        {
-          "id": "emergency-drugs-pregnancy",
-          "title": "Emergency Drugs in Pregnancy",
-          "section": "Reference Library",
-          "route": "/reference-library/obstetric-gynecologic/emergency-drugs-pregnancy"
         }
       ]
     },
@@ -8170,6 +8158,18 @@
       ]
     },
     {
+      "text": "Enriquez AD, Economy KE, Tedrow UB. Contemporary management of arrhythmias during pregnancy. Circ Arrhythm Electrophysiol. 2014;7(5):961-967. doi:10.1161/CIRCEP.114.001517 (background review)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "emergency-drugs-pregnancy",
+          "title": "Emergency Drugs in Pregnancy",
+          "section": "Reference Library",
+          "route": "/reference-library/obstetric-gynecologic/emergency-drugs-pregnancy"
+        }
+      ]
+    },
+    {
       "text": "ESC/ESE/ERBP hyponatremia guidance (2014, 2023 update); standard ICU electrolyte management",
       "group": "Other primary sources",
       "usedBy": [
@@ -12036,6 +12036,18 @@
           "title": "Drowning",
           "section": "Reference Library",
           "route": "/reference-library/resuscitation-airway/drowning"
+        }
+      ]
+    },
+    {
+      "text": "Tamirisa KP, Oliveros E, Paulraj S, Mares AC, Volgman AS. An Overview of Arrhythmias in Pregnancy. Methodist DeBakey Cardiovasc J. 2024;20(2):36-50. doi:10.14797/mdcvj.1325 (Table 2: antiarrhythmic safety tier labels and drug list; the published table marks tiers only by color, so per-drug tiers were not verified)",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "emergency-drugs-pregnancy",
+          "title": "Emergency Drugs in Pregnancy",
+          "section": "Reference Library",
+          "route": "/reference-library/obstetric-gynecologic/emergency-drugs-pregnancy"
         }
       ]
     },

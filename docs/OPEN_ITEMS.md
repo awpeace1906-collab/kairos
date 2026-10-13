@@ -256,6 +256,13 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-10-13 — **emergency-drugs-pregnancy v4: arrhythmia tier citation corrected.**
+  "Enriquez … JACC-EP consensus tiers, 2021" conflated two papers. Now credited
+  to Tamirisa et al., Methodist DeBakey Cardiovasc J 2024, Table 2 (labels and
+  drug list match), plus Enriquez 2014 (Circ Arrhythm Electrophysiol) as
+  background. Open: per-drug tiers are unverified (the published table encodes
+  them only by row color); check against Tamirisa, JACC Clin Electrophysiol
+  2022, via institutional access.
 - 2026-10-13 — **hyperosmolar-therapy v3: retracted meta-analysis removed.**
   The "18-trial synthesis" (treatment failure OR 0.38) traces to Han et al.,
   Front Surg 2021, retracted 2023; it had been credited to Mangat 2020.
