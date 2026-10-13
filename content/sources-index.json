@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 1017,
+  "count": 1019,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -3106,7 +3106,7 @@
       ]
     },
     {
-      "text": "Fackler ML. Wound ballistics: a review of common misconceptions. JAMA. 1988; and US Army Wound Ballistics Laboratory gelatin / live-tissue testing",
+      "text": "Fackler ML. Wound ballistics: a review of common misconceptions. JAMA. 1988;259(18):2730-2736. doi:10.1001/jama.259.18.2730",
       "group": "Randomized trials & major studies",
       "usedBy": [
         {
@@ -8250,6 +8250,30 @@
           "title": "Cardiovascular Drug Toxicity — Digoxin, Beta-Blocker, CCB, Clonidine",
           "section": "Reference Library",
           "route": "/reference-library/critical-care/tox-cardiac-meds"
+        }
+      ]
+    },
+    {
+      "text": "Fackler ML, Bellamy RF, Malinowski JA. The wound profile: illustration of the missile-tissue interaction. J Trauma. 1988;28(1 Suppl):S21-29",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "wound-ballistics",
+          "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/wound-ballistics"
+        }
+      ]
+    },
+    {
+      "text": "Fackler ML, Surinchak JS, Malinowski JA, Bowen RE. Bullet fragmentation: a major cause of tissue disruption. J Trauma. 1984;24(1):35-39",
+      "group": "Other primary sources",
+      "usedBy": [
+        {
+          "id": "wound-ballistics",
+          "title": "Wound Ballistics — Mechanism, Caliber & Wound Characterization",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/wound-ballistics"
         }
       ]
     },

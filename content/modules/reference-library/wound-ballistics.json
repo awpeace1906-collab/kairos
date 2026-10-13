@@ -33,7 +33,7 @@
     "kinetic energy half m v squared velocity dominates",
     "crush permanent cavity stretch temporary cavity",
     "yaw tumble point of maximum yaw energy transfer",
-    "fragmentation velocity threshold 2000 2200 fps cannelure",
+    "fragmentation velocity dependent cannelure",
     "ballistic gelatin 10 percent FBI protocol calibration",
     "hydrostatic shock Fackler Courtney debate",
     "sectional density penetration ballistic coefficient drag",
@@ -44,13 +44,15 @@
     "damage control surgery lethal triad abbreviated laparotomy"
   ],
   "contentType": "reference",
-  "content_version": 2,
-  "last_reviewed": "2026-09-07",
-  "next_review_due": "2027-03-07",
+  "content_version": 3,
+  "last_reviewed": "2026-10-13",
+  "next_review_due": "2027-04-13",
   "review_tier": 2,
   "sources": [
     "Critical Vector — Wound Ballistics & Blast Injury Manual v6, Sections 1-6, 15-16",
-    "Fackler ML. Wound ballistics: a review of common misconceptions. JAMA. 1988; and US Army Wound Ballistics Laboratory gelatin / live-tissue testing",
+    "Fackler ML. Wound ballistics: a review of common misconceptions. JAMA. 1988;259(18):2730-2736. doi:10.1001/jama.259.18.2730",
+    "Fackler ML, Surinchak JS, Malinowski JA, Bowen RE. Bullet fragmentation: a major cause of tissue disruption. J Trauma. 1984;24(1):35-39",
+    "Fackler ML, Bellamy RF, Malinowski JA. The wound profile: illustration of the missile-tissue interaction. J Trauma. 1988;28(1 Suppl):S21-29",
     "Rotman et al. Ballistic Injury Imaging: The Basics. (retained fragment + trajectory reconstruction)",
     "WikEM — Wound Ballistics; Denver Health / Denver Health trauma conference terminal ballistics course material",
     "AAST Critical Care Committee. Antibiotic prophylaxis in injury: clinical consensus document. PMC11149135",
@@ -66,6 +68,11 @@
       "version": 2,
       "date": "2026-09-25",
       "change": "Reformatted for reading on a phone: long paragraphs broken into short paragraphs and lists. Wording and clinical content unchanged."
+    },
+    {
+      "version": 3,
+      "date": "2026-10-13",
+      "change": "Removed the ~2,000-2,200 fps fragmentation threshold: no primary source could be confirmed, and figures attributed to Fackler elsewhere are higher. Fragmentation is now described as velocity-dependent without a single cutoff. Fackler's primary papers added to sources (matches the CV manual correction)."
     }
   ],
   "summary": "Wounding reduces to two mechanisms — tissue crush (permanent cavity) and tissue stretch (temporary cavity) — and velocity, bullet construction, and yaw predict severity far better than caliber. Plus what the entrance wound tells you about range of fire, why an intact vest doesn't exclude internal injury, and when a retained fragment actually has to come out.",
@@ -85,7 +92,7 @@
       "type": "list",
       "items": [
         "Yaw / tumble: tissue is ~800× denser than air; gyroscopic stability is overwhelmed on impact. Most rifle bullets yaw within the first few centimeters; the point of maximum yaw — not the entry point — is usually where the temporary cavity peaks.",
-        "Fragmentation multiplies the permanent cavity — multiple divergent tracks from one entry, the most tissue destruction per unit of retained energy. It needs a velocity threshold (~2,000-2,200 fps); the same round can fragment at close range and produce a simple through-and-through at distance.",
+        "Fragmentation multiplies the permanent cavity — multiple divergent tracks from one entry, the most tissue destruction per unit of retained energy. It depends on impact velocity (the cutoff varies with bullet construction); the same round can fragment at close range and produce a simple through-and-through at distance.",
         "Deformation (hollow/soft point expansion) increases the permanent cavity 4-6× over a non-deforming bullet of the same caliber.",
         "Stretch injures only tissue whose elastic limit it exceeds: elastic low-density tissue (lung, skeletal muscle) recoils with little lasting injury; dense encapsulated organs (liver, spleen, kidney, brain) fracture or burst; fluid/gas-distended hollow viscera can rupture at a distance like a hydraulic ram."
       ]
