@@ -1,6 +1,6 @@
 {
  "schema": "cv-extubation-logic",
- "version": "1.3",
+ "version": "1.4",
  "updated": "2026-10-14",
  "ui": {
   "disclaimer": "Decision aid for education and team discussion. It is not an order. Clinical judgment and local protocol take priority.",
@@ -207,6 +207,10 @@
    "infoSources": [
     "ats2017",
     "subira2019"
+   ],
+   "note": "A rapid shallow breathing index (RSBI) is not needed before the trial. In a randomized trial, requiring an RSBI below 105 breaths/min/L before the trial lengthened weaning (median 3 vs 2 days) without reducing extubation failure.",
+   "noteSources": [
+    "tanios2006"
    ],
    "required": true
   },
@@ -735,6 +739,10 @@
   "esteban2004": {
    "short": "Esteban 2004",
    "full": "Esteban A, et al. Noninvasive positive-pressure ventilation for respiratory failure after extubation. N Engl J Med. 2004;350(24):2452-2460."
+  },
+  "tanios2006": {
+   "short": "Tanios 2006",
+   "full": "Tanios MA, et al. A randomized, controlled trial of the role of weaning predictors in clinical decision making. Crit Care Med. 2006;34(10):2530-2535."
   }
  }
 }

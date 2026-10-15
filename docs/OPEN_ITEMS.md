@@ -256,6 +256,10 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-10-14 (later) — **Extubation kit v1.4: RSBI information line** on the
+  ICU breathing-trial screen (`note` + new `noteSources`, source Tanios 2006,
+  Crit Care Med, verified on PubMed). No rule, outcome or vignette changed.
+  Web and iOS show noteSources short labels; SW cache bumped to v21.
 - 2026-10-14 — **Extubation Decision Tool added** (Calculators → Anesthesia /
   Airway / OR; cross-listed in Reference Library → Critical Care) (→ 444 modules).
   Built from the shared kit in `Resources/Extubation/` (cv-extubation-logic

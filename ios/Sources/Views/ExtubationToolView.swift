@@ -195,7 +195,15 @@ struct ExtubationToolView: View {
             .modifier(BandStyle(severity: nil))
         }
         control(logic, sc)
-        if let note = sc.note { Text(note).font(Theme.footnote).foregroundStyle(.secondary) }
+        if let note = sc.note {
+            VStack(alignment: .leading, spacing: 2) {
+                Text(note).font(Theme.footnote).foregroundStyle(.secondary)
+                if let keys = sc.noteSources, !keys.isEmpty {
+                    Text(keys.compactMap { logic.sources[$0]?.short }.joined(separator: " · "))
+                        .font(Theme.caption2).foregroundStyle(.secondary)
+                }
+            }
+        }
         ForEach(screenAlerts(logic, sc.id), id: \.id) { alertBox(logic, $0, informational: false) }
         if sc.id == Self.setting { Text(logic.ui.disclaimer).font(Theme.footnote).foregroundStyle(.secondary) }
         HStack {

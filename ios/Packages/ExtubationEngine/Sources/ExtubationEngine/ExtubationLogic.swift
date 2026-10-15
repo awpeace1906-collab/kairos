@@ -1,6 +1,6 @@
 import Foundation
 
-// Codable model of extubation-logic.json (cv-extubation-logic v1.3). Adapted
+// Codable model of extubation-logic.json (cv-extubation-logic v1.4). Adapted
 // from AnesCalc's ExtubationLogic.swift: public API for use from an app
 // target, the v1.3 ui keys, and alert order taken from the JSON text (see
 // ExtubationLogic.load). Holds structure only; every word shown to the user
@@ -91,6 +91,7 @@ public struct ExtubationScreen: Decodable, Identifiable {
     public let info: String?
     public let infoSources: [String]?
     public let note: String?
+    public let noteSources: [String]?
     public let showIf: Condition?
     public let required: Bool?
 }

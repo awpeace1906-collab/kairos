@@ -816,3 +816,4 @@ figure.diagram--plate .diagram-credit { color: #6b6862; }
   .ext-card-cites { font-size: 9pt; }
   .ext-card-disclaimer { font-size: 9pt; border-top: 1px solid #000; padding-top: 6px; }
 }
+.ext-note-src { font-family: var(--font-mono); font-size: .74rem; }

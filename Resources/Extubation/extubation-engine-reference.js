@@ -1,4 +1,4 @@
-// Reference engine for cv-extubation-logic v1.3. Pure function, no UI.
+// Reference engine for cv-extubation-logic v1.4. Pure function, no UI.
 // Ports (Swift, etc.) must produce identical results for every vignette.
 "use strict";
 function evaluate(logic, answers) {
