@@ -359,13 +359,15 @@ struct Calculator: Codable {
         let c = try decoder.container(keyedBy: CodingKeys.self)
         engine = try c.decode(Engine.self, forKey: .engine)
         settings = try c.decodeIfPresent([String].self, forKey: .settings)
-        purpose = try c.decode(String.self, forKey: .purpose)
+        // tool "extubation" modules are navigation stubs with no purpose/interpretation
+        // (calculator.schema.json); every other calculator carries both.
+        purpose = try c.decodeIfPresent(String.self, forKey: .purpose) ?? ""
         notes = try c.decodeIfPresent(String.self, forKey: .notes)
         inputs = try c.decodeIfPresent([Input].self, forKey: .inputs)
         items = try c.decodeIfPresent([Item].self, forKey: .items)
         formulas = try c.decodeIfPresent([Formula].self, forKey: .formulas)
         tiers = try c.decodeIfPresent([Tier].self, forKey: .tiers)
-        interpretation = try c.decode([Band].self, forKey: .interpretation)
+        interpretation = try c.decodeIfPresent([Band].self, forKey: .interpretation) ?? []
         plot = try c.decodeIfPresent(Plot.self, forKey: .plot)
         buildNote = try c.decodeIfPresent(String.self, forKey: .buildNote)
         tool = try c.decodeIfPresent(String.self, forKey: .tool)

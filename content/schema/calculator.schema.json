@@ -23,7 +23,69 @@
       },
       "then": {
         "required": [
-          "tool",
+          "tool"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "tool": {
+            "const": "extubation"
+          }
+        },
+        "required": [
+          "tool"
+        ]
+      },
+      "then": {
+        "not": {
+          "anyOf": [
+            {
+              "required": [
+                "toolContent"
+              ]
+            },
+            {
+              "required": [
+                "purpose"
+              ]
+            },
+            {
+              "required": [
+                "interpretation"
+              ]
+            }
+          ]
+        }
+      },
+      "else": {
+        "required": [
+          "purpose",
+          "interpretation"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "engine": {
+            "const": "builtin"
+          },
+          "tool": {
+            "enum": [
+              "ekg-axis",
+              "acid-base"
+            ]
+          }
+        },
+        "required": [
+          "engine",
+          "tool"
+        ]
+      },
+      "then": {
+        "required": [
           "toolContent"
         ]
       }
@@ -69,9 +131,7 @@
   ],
   "unevaluatedProperties": false,
   "required": [
-    "engine",
-    "purpose",
-    "interpretation"
+    "engine"
   ],
   "properties": {
     "id": true,
@@ -110,9 +170,10 @@
       "type": "string",
       "enum": [
         "ekg-axis",
-        "acid-base"
+        "acid-base",
+        "extubation"
       ],
-      "description": "engine=builtin only: which code-backed tool renders this module. ekg-axis → web/src/lib/axisEngine.js + ios/Sources/Calc/AxisEngine.swift (tools/fixtures/axis-golden-vectors.json); acid-base → web/src/lib/acidBaseEngine.js + ios/Sources/Calc/AcidBaseEngine.swift (tools/fixtures/acid-base-golden-vectors.json)."
+      "description": "engine=builtin only: which code-backed tool renders this module. ekg-axis → web/src/lib/axisEngine.js + ios/Sources/Calc/AxisEngine.swift (tools/fixtures/axis-golden-vectors.json); acid-base → web/src/lib/acidBaseEngine.js + ios/Sources/Calc/AcidBaseEngine.swift (tools/fixtures/acid-base-golden-vectors.json); extubation → web/src/lib/extubationEngine.js + ios/Packages/ExtubationEngine, driven entirely by Resources/Extubation/extubation-logic.json (tested against that kit's vignettes), so its module carries navigation fields only — no toolContent, purpose or interpretation."
     },
     "toolContent": {
       "type": "object",

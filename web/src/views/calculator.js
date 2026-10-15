@@ -5,11 +5,13 @@ import { session } from "../lib/session.js";
 import { richText } from "./prose.js";
 import { renderAxisTool } from "./axisTool.js";
 import { renderAcidBaseTool } from "./acidBaseTool.js";
+import { renderExtubationTool } from "./extubationTool.js";
 
 export function renderCalculator(mod, route) {
   // Code-backed tools (engine: "builtin") have their own view.
   if (mod.engine === "builtin" && mod.tool === "ekg-axis") return renderAxisTool(mod, route);
   if (mod.engine === "builtin" && mod.tool === "acid-base") return renderAcidBaseTool(mod, route);
+  if (mod.engine === "builtin" && mod.tool === "extubation") return renderExtubationTool(mod);
   const saved = session.get(route);
   const state = { items: saved.items || {}, inputs: saved.inputs || {} };
 

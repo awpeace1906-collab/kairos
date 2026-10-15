@@ -12,7 +12,7 @@
 //   CONTENT_BASE_URL=https://… node deploy.mjs   # stamp the manifest hint
 import { cp, rm, mkdir, writeFile, readdir, stat } from "node:fs/promises";
 import { join } from "node:path";
-import { ROOT, CONTENT_DIR } from "./lib/content.mjs";
+import { ROOT, CONTENT_DIR, TOOL_FILES } from "./lib/content.mjs";
 
 const REPO_ROOT = join(ROOT, "..");
 const WEB_DIR = join(REPO_ROOT, "web");
@@ -38,6 +38,10 @@ for (const name of ["index.html", "styles.css", "sw.js", "manifest.webmanifest",
 for (const name of ["manifest.json", "search-index.json", "sources-index.json", "config", "modules", "assets"]) {
   await cp(join(CONTENT_DIR, name), join(DIST, "content", name), { recursive: true });
 }
+
+// 3. kit logic files for code-backed tools (extubation), byte-for-byte copies.
+await mkdir(join(DIST, "content", "tools"), { recursive: true });
+for (const [src, rel] of TOOL_FILES) await cp(join(REPO_ROOT, src), join(DIST, "content", rel));
 
 // Serve the tree verbatim — no Jekyll (it would drop src/ and _-prefixed paths).
 await writeFile(join(DIST, ".nojekyll"), "");

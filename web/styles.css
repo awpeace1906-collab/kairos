@@ -751,3 +751,68 @@ figure.diagram--plate .diagram-credit { color: #6b6862; }
 /* Acid-base lines carry sentences, not short values: stack label → value → text. */
 .abg-tool .axis-line { grid-template-columns: minmax(0, 1fr); }
 .abg-tool .abg-sample { margin: 0 0 12px; }
+
+/* ---- Extubation decision tool (views/extubationTool.js) --------------------
+   Skin only: layout and words come from the kit's extubation-logic.json. */
+.ext-body { display: grid; gap: 12px; }
+.ext-topbar { display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 8px 0 10px; border-bottom: 1px solid var(--line); }
+.ext-topbar-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ext-track { font-weight: 600; }
+.ext-step { font-family: var(--font-mono); font-size: .78rem; letter-spacing: .04em; color: var(--muted); }
+.ext-title { margin: 4px 0 0; font-size: 1.25rem; letter-spacing: -0.01em; text-wrap: balance; }
+.ext-prompt { margin: 0; color: var(--text); }
+.ext-info p { margin: 0; }
+.ext-info-src, .ext-note { font-size: .82rem; }
+.ext-choices { display: grid; gap: 8px; }
+.ext-choice { font: inherit; text-align: left; padding: 14px 16px; border-radius: var(--radius); cursor: pointer;
+  background: var(--surface); color: var(--text); border: 1px solid var(--line); min-height: 52px; }
+.ext-choice.selected { background: var(--accent); border-color: var(--accent); color: #fff; }
+.ext-checklist { display: grid; gap: 6px; }
+.ext-check, .ext-ack { display: flex; align-items: flex-start; gap: 10px; padding: 10px 12px; border-radius: 10px;
+  background: var(--surface); border: 1px solid var(--line); cursor: pointer; }
+.ext-ack { margin-top: 8px; background: transparent; border-color: currentColor; }
+.ext-check input, .ext-ack input { width: 20px; height: 20px; margin: 1px 0 0; accent-color: var(--accent); flex: none; }
+.ext-fields { display: grid; gap: 12px; }
+.ext-field { display: grid; gap: 6px; }
+.ext-field input { font: inherit; font-size: 1rem; padding: 11px 12px; border: 1px solid var(--line);
+  border-radius: 10px; background: var(--surface); color: var(--text); }
+.ext-alert p { margin: 0; }
+.ext-disclaimer { font-size: .82rem; margin: 4px 0 0; }
+.ext-bottombar { display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  padding-top: 12px; border-top: 1px solid var(--line); }
+.ext-result-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.ext-btn { font: inherit; padding: 10px 16px; border-radius: 999px; cursor: pointer; min-height: 44px;
+  background: var(--surface-2); color: var(--text); border: 1px solid var(--line); }
+.ext-btn-primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.ext-btn-quiet { padding: 6px 12px; min-height: 36px; font-size: .88rem; }
+.ext-btn:disabled { opacity: .45; cursor: not-allowed; }
+.ext-chip { justify-self: start; font-family: var(--font-mono); font-size: .78rem; letter-spacing: .04em;
+  padding: 4px 10px; border-radius: 999px; border: 1px solid currentColor; }
+.ext-chip.sev-low { color: var(--sev-low); }
+.ext-chip.sev-moderate { color: var(--sev-moderate); }
+.ext-chip.sev-high { color: var(--sev-high); }
+.ext-rec { margin: 0; font-weight: 500; }
+.ext-why { margin: 0; padding-left: 20px; }
+.ext-rescue { display: grid; gap: 2px 0; margin: 0; padding: 10px 12px; border-radius: 10px; background: var(--surface-2); }
+.ext-rescue dt { font-size: .82rem; color: var(--muted); }
+.ext-rescue dd { margin: 0 0 8px; }
+.ext-evidence summary { cursor: pointer; font-weight: 600; }
+.ext-evidence ol { margin: 8px 0 0; padding-left: 20px; font-size: .86rem; }
+.ext-dialog { border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); color: var(--text);
+  max-width: min(420px, calc(100vw - 32px)); padding: 18px; }
+.ext-dialog::backdrop { background: rgb(0 0 0 / .35); }
+.ext-dialog-actions { display: flex; justify-content: flex-end; gap: 8px; }
+.ext-print-root { display: none; }
+@media print {
+  body.ext-printing > *:not(.ext-print-root) { display: none !important; }
+  body.ext-printing .ext-print-root { display: block; color: #000; background: #fff; }
+  .ext-card { font: 11pt/1.4 var(--font-sans); }
+  .ext-card-head { display: flex; flex-wrap: wrap; gap: 4px 14px; border-bottom: 1px solid #000; padding-bottom: 6px; }
+  .ext-card-label { border: 1.5px solid #000; height: 1.2in; margin: 10px 0; padding: 6px; font-size: 9pt; }
+  .ext-card-chip { font-family: var(--font-mono); font-weight: 600; margin: 6px 0 0; }
+  .ext-card-alert { border-left: 3px solid #000; padding-left: 8px; }
+  .ext-card-refs { font-weight: 600; margin-bottom: 2px; }
+  .ext-card-cites { font-size: 9pt; }
+  .ext-card-disclaimer { font-size: 9pt; border-top: 1px solid #000; padding-top: 6px; }
+}

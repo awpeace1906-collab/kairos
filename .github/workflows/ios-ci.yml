@@ -2,9 +2,9 @@ name: ios-ci
 
 on:
   push:
-    paths: ["ios/**", "content/**", ".github/workflows/ios-ci.yml"]
+    paths: ["ios/**", "content/**", "Resources/**", ".github/workflows/ios-ci.yml"]
   pull_request:
-    paths: ["ios/**", "content/**"]
+    paths: ["ios/**", "content/**", "Resources/**"]
 
 jobs:
   build-and-test:

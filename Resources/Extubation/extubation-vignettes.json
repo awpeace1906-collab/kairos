@@ -1,0 +1,330 @@
+{
+ "schema": "cv-extubation-vignettes",
+ "logicVersion": "1.3",
+ "note": "Every engine must reproduce each 'expect' field exactly. 'alerts' lists alert ids in display order. Fields absent from 'expect' are not tested.",
+ "vignettes": [
+  {
+   "id": "V1",
+   "name": "OR, TOF ratio 0.7",
+   "answers": {
+    "setting": "or",
+    "or_gate": [
+     "spont",
+     "hemo",
+     "temp",
+     "analg"
+    ]
+   },
+   "expect": {
+    "outcome": "OR_STOP_GATE",
+    "chip": "Not ready",
+    "why": [
+     "Not met: Quantitative train-of-four ratio is 0.9 or higher (adductor pollicis)"
+    ],
+    "alerts": [],
+    "screensShown": [
+     "or_gate"
+    ]
+   }
+  },
+  {
+   "id": "V2",
+   "name": "OR, known difficult intubation",
+   "answers": {
+    "setting": "or",
+    "or_gate": [
+     "tofr",
+     "spont",
+     "hemo",
+     "temp",
+     "analg"
+    ],
+    "or_risk": [
+     "diffint"
+    ],
+    "or_rescue": {
+     "who": "Attending",
+     "device": "VL + bougie",
+     "fona": "Airway cart",
+     "where": "PACU"
+    }
+   },
+   "expect": {
+    "outcome": "OR_AT_RISK",
+    "chip": "At risk",
+    "why": [
+     "Known or suspected difficult intubation or mask ventilation"
+    ],
+    "alerts": [],
+    "screensShown": [
+     "or_gate",
+     "or_risk",
+     "or_rescue"
+    ]
+   }
+  },
+  {
+   "id": "V3",
+   "name": "OR, craniotomy, no risk factors",
+   "answers": {
+    "setting": "or",
+    "or_gate": [
+     "tofr",
+     "spont",
+     "hemo",
+     "temp",
+     "analg"
+    ],
+    "or_risk": [],
+    "or_cough": "yes",
+    "or_rescue": {
+     "who": "a",
+     "device": "b",
+     "fona": "c",
+     "where": "d"
+    }
+   },
+   "expect": {
+    "outcome": "OR_LOW_DEEP_OPTION",
+    "chip": "Low risk",
+    "alerts": [],
+    "screensShown": [
+     "or_gate",
+     "or_risk",
+     "or_cough",
+     "or_rescue"
+    ]
+   }
+  },
+  {
+   "id": "V3b",
+   "name": "OR, no risk, hypothermic",
+   "answers": {
+    "setting": "or",
+    "or_gate": [
+     "tofr",
+     "spont",
+     "hemo",
+     "analg"
+    ],
+    "or_risk": [],
+    "or_cough": "no",
+    "or_rescue": {
+     "who": "a",
+     "device": "b",
+     "fona": "c",
+     "where": "d"
+    }
+   },
+   "expect": {
+    "outcome": "OR_LOW_AWAKE",
+    "chip": "Low risk",
+    "alerts": [
+     "ALERT_OR_SOFT_GATE"
+    ],
+    "screensShown": [
+     "or_gate",
+     "or_risk",
+     "or_cough",
+     "or_rescue"
+    ]
+   }
+  },
+  {
+   "id": "V4",
+   "name": "ICU, FiO2 0.6",
+   "answers": {
+    "setting": "icu",
+    "icu_ready": [
+     "cause",
+     "hemo",
+     "drive"
+    ]
+   },
+   "expect": {
+    "outcome": "ICU_STOP_NOT_READY",
+    "chip": "Not ready",
+    "why": [
+     "Not met: PaO2/FiO2 is 150 or higher on PEEP of 8 or less and FiO2 of 0.5 or less"
+    ],
+    "alerts": [],
+    "screensShown": [
+     "icu_ready"
+    ]
+   }
+  },
+  {
+   "id": "V5",
+   "name": "ICU, low risk",
+   "answers": {
+    "setting": "icu",
+    "icu_ready": [
+     "cause",
+     "oxy",
+     "hemo",
+     "drive"
+    ],
+    "icu_sbt": "yes",
+    "icu_airway": [
+     "cough",
+     "secr",
+     "mental"
+    ],
+    "icu_stridor": [],
+    "icu_reint": [],
+    "icu_rescue": {
+     "who": "a",
+     "device": "b",
+     "fona": "c",
+     "where": "d"
+    }
+   },
+   "expect": {
+    "outcome": "ICU_LOW_RISK",
+    "chip": "Low risk · 0 of 10 factors",
+    "riskCount": 0,
+    "alerts": [
+     "ALERT_POSTEXT_FAILURE"
+    ],
+    "screensShown": [
+     "icu_ready",
+     "icu_sbt",
+     "icu_airway",
+     "icu_stridor",
+     "icu_reint",
+     "icu_rescue"
+    ]
+   }
+  },
+  {
+   "id": "V6",
+   "name": "ICU, age 72 + COPD + 9 days ventilated, failed cuff leak",
+   "answers": {
+    "setting": "icu",
+    "icu_ready": [
+     "cause",
+     "oxy",
+     "hemo",
+     "drive"
+    ],
+    "icu_sbt": "yes",
+    "icu_airway": [
+     "cough",
+     "secr",
+     "mental"
+    ],
+    "icu_stridor": [
+     "long"
+    ],
+    "icu_cuff": "fail",
+    "icu_reint": [
+     "age",
+     "copd",
+     "mv7"
+    ],
+    "icu_rescue": {
+     "who": "a",
+     "device": "b",
+     "fona": "c",
+     "where": "d"
+    }
+   },
+   "expect": {
+    "outcome": "ICU_HIGH_RISK",
+    "chip": "High risk · 3 of 10 factors",
+    "riskCount": 3,
+    "why": [
+     "Age over 65",
+     "Moderate to severe COPD",
+     "Ventilated for more than 7 days"
+    ],
+    "alerts": [
+     "ALERT_POSTEXT_FAILURE",
+     "ALERT_CUFF_FAILED"
+    ],
+    "screensShown": [
+     "icu_ready",
+     "icu_sbt",
+     "icu_airway",
+     "icu_stridor",
+     "icu_cuff",
+     "icu_reint",
+     "icu_rescue"
+    ]
+   }
+  },
+  {
+   "id": "V7",
+   "name": "ICU, failed SBT",
+   "answers": {
+    "setting": "icu",
+    "icu_ready": [
+     "cause",
+     "oxy",
+     "hemo",
+     "drive"
+    ],
+    "icu_sbt": "no"
+   },
+   "expect": {
+    "outcome": "ICU_STOP_SBT_FAILED",
+    "chip": "Trial failed",
+    "alerts": [],
+    "screensShown": [
+     "icu_ready",
+     "icu_sbt"
+    ]
+   }
+  },
+  {
+   "id": "V8",
+   "name": "ICU, weak cough, stridor risk, cuff leak not done",
+   "answers": {
+    "setting": "icu",
+    "icu_ready": [
+     "cause",
+     "oxy",
+     "hemo",
+     "drive"
+    ],
+    "icu_sbt": "yes",
+    "icu_airway": [
+     "secr",
+     "mental"
+    ],
+    "icu_stridor": [
+     "female"
+    ],
+    "icu_cuff": "not_done",
+    "icu_reint": [
+     "bmi"
+    ],
+    "icu_rescue": {
+     "who": "a",
+     "device": "b",
+     "fona": "c",
+     "where": "d"
+    }
+   },
+   "expect": {
+    "outcome": "ICU_HIGH_RISK",
+    "chip": "High risk · 1 of 10 factors",
+    "riskCount": 1,
+    "alerts": [
+     "ALERT_POSTEXT_FAILURE",
+     "ALERT_ICU_AIRWAY",
+     "ALERT_CUFF_NOT_DONE"
+    ],
+    "screensShown": [
+     "icu_ready",
+     "icu_sbt",
+     "icu_airway",
+     "icu_stridor",
+     "icu_cuff",
+     "icu_reint",
+     "icu_rescue"
+    ]
+   }
+  }
+ ]
+}

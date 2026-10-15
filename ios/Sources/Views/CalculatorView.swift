@@ -18,6 +18,8 @@ struct CalculatorView: View {
             AxisToolView(calc: calc, content: content, route: route)
         } else if calc.engine == .builtin, calc.tool == "acid-base", let content = calc.acidBaseContent {
             AcidBaseToolView(calc: calc, content: content, route: route)
+        } else if calc.engine == .builtin, calc.tool == "extubation" {
+            ExtubationToolView()
         } else {
             standard
         }

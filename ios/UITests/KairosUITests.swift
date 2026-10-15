@@ -291,4 +291,75 @@ final class KairosUITests: XCTestCase {
         XCTAssertTrue(text(containing: "a venous gas can't pin down").exists, "PvCO2 warning missing")
         let shot = XCTAttachment(screenshot: app.screenshot()); shot.name = "acid-base-venous"; shot.lifetime = .keepAlways; add(shot)
     }
+
+    // MARK: - Extubation decision tool
+
+    /// Swipe until the element is on screen, then tap it.
+    private func tapScrolling(_ el: XCUIElement, _ what: String) {
+        XCTAssertTrue(el.waitForExistence(timeout: 5), "\(what) missing")
+        var tries = 0
+        while !el.isHittable && tries < 8 { app.swipeUp(); tries += 1 }
+        el.tap()
+    }
+    private func extButton(_ id: String) -> XCUIElement { app.buttons[id].firstMatch }
+
+    /// Vignette V8 through the real UI: the airway alert blocks Next until it is
+    /// acknowledged, the result matches the vignette, Back returns to the last
+    /// screen, and Start over asks before clearing.
+    func testExtubationV8Flow() {
+        openSection("calculators")
+        let search = app.searchFields.firstMatch
+        if !search.waitForExistence(timeout: 3) { app.swipeDown() }
+        XCTAssertTrue(search.waitForExistence(timeout: 5), "search field never appeared")
+        search.tap(); search.typeText("extubation")
+        let row = app.buttons["row-extubation-decision-tool"].firstMatch
+        XCTAssertTrue(row.waitForExistence(timeout: 5), "extubation row missing")
+        row.tap()
+
+        tapScrolling(extButton("ext-choice-setting-icu"), "ICU option")
+        tapScrolling(extButton("ext-next"), "Next")
+        for item in ["cause", "oxy", "hemo", "drive"] { tapScrolling(extButton("ext-check-icu_ready-\(item)"), item) }
+        tapScrolling(extButton("ext-next"), "Next")
+        tapScrolling(extButton("ext-choice-icu_sbt-yes"), "Yes")
+        tapScrolling(extButton("ext-next"), "Next")
+        for item in ["secr", "mental"] { tapScrolling(extButton("ext-check-icu_airway-\(item)"), item) }
+        XCTAssertFalse(extButton("ext-next").isEnabled, "Next should wait for the acknowledgment")
+        tapScrolling(extButton("ext-ack-ALERT_ICU_AIRWAY"), "acknowledge")
+        XCTAssertTrue(extButton("ext-next").isEnabled, "Next should unlock after the acknowledgment")
+        tapScrolling(extButton("ext-next"), "Next")
+        tapScrolling(extButton("ext-check-icu_stridor-female"), "female")
+        tapScrolling(extButton("ext-next"), "Next")
+        tapScrolling(extButton("ext-choice-icu_cuff-not_done"), "Not done")
+        tapScrolling(extButton("ext-next"), "Next")
+        tapScrolling(extButton("ext-check-icu_reint-bmi"), "BMI")
+        tapScrolling(extButton("ext-next"), "Next")
+        for (i, f) in ["who", "device", "fona", "where"].enumerated() {
+            // The keyboard can cover the lower fields; close it so the tap lands.
+            let done = app.buttons["Done"].firstMatch
+            if done.exists { done.tap() }
+            let field = app.textFields["ext-field-icu_rescue-\(f)"].firstMatch
+            tapScrolling(field, f)
+            field.typeText(["a", "b", "c", "d"][i])
+        }
+        if app.buttons["Done"].firstMatch.exists { app.buttons["Done"].firstMatch.tap() }
+        tapScrolling(extButton("ext-next"), "Next")
+
+        let chip = app.staticTexts["ext-chip"].firstMatch
+        XCTAssertTrue(chip.waitForExistence(timeout: 5), "result chip missing")
+        XCTAssertEqual(chip.label, "High risk · 1 of 10 factors")
+        for id in ["ALERT_POSTEXT_FAILURE", "ALERT_ICU_AIRWAY", "ALERT_CUFF_NOT_DONE"] {
+            XCTAssertTrue(app.otherElements["ext-alert-\(id)"].firstMatch.exists || app.descendants(matching: .any)["ext-alert-\(id)"].firstMatch.exists, "\(id) missing on result")
+        }
+        let shot = XCTAttachment(screenshot: app.screenshot()); shot.name = "extubation-v8-result"; shot.lifetime = .keepAlways; add(shot)
+
+        tapScrolling(extButton("ext-back"), "Back")
+        XCTAssertTrue(app.textFields["ext-field-icu_rescue-who"].firstMatch.waitForExistence(timeout: 3), "Back should return to the rescue plan")
+        app.swipeDown(); app.swipeDown()
+        tapScrolling(extButton("ext-reset"), "Start over")
+        let confirm = app.alerts.buttons.element(boundBy: 1)
+        XCTAssertTrue(confirm.waitForExistence(timeout: 3), "Start over should ask first")
+        confirm.tap()
+        XCTAssertTrue(extButton("ext-choice-setting-icu").waitForExistence(timeout: 3), "Start over should return to the setting screen")
+        XCTAssertFalse(extButton("ext-reset").exists, "the setting screen has no top bar")
+    }
 }

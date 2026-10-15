@@ -77,6 +77,7 @@ final class AxisToolContentTests: XCTestCase {
         for k in ["lad", "rad", "extreme"] { XCTAssertNotNil(c.differentials[k], k) }
         for k in ["empty", "unparseable", "qrs_missing", "out_of_range"] { XCTAssertNotNil(c.statusMessages.errors[k], k) }
         XCTAssertNotNil(c.checklists["lafb"]); XCTAssertNotNil(c.checklists["lpfb"])
-        XCTAssertEqual(calc.meta.lastReviewed, "2026-09-26")
+        // Review metadata decodes (the date itself moves with each content review).
+        XCTAssertNotNil(calc.meta.lastReviewed)
     }
 }

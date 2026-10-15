@@ -3,7 +3,7 @@
 // spec, fallback #4). OTA content updates land in a separate runtime cache managed
 // by ContentStore; this SW just guarantees the shell and the bundled baseline.
 
-const SHELL_CACHE = "kairos-shell-v19";
+const SHELL_CACHE = "kairos-shell-v20";
 const SHELL = [
   "./",
   "./index.html",
@@ -39,6 +39,8 @@ const SHELL = [
   "./src/views/axisTool.js",
   "./src/lib/acidBaseEngine.js",
   "./src/views/acidBaseTool.js",
+  "./src/lib/extubationEngine.js",
+  "./src/views/extubationTool.js",
   "./src/views/settings.js",
   "./src/views/about.js",
   "./src/views/disclaimer.js",
@@ -52,6 +54,7 @@ const SHELL = [
   "./content/config/tiers.json",
   "./content/config/settings.json",
   "./content/config/pinned.json",
+  "./content/tools/extubation-logic.json",
 ];
 
 self.addEventListener("install", (e) => {

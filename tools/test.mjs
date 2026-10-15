@@ -11,7 +11,8 @@ import { parseRichText, isStructured, leadLabel, tableColumnWeights, shouldStack
 import { loadModules, loadConfig } from "./lib/content.mjs";
 import { interpret as axisInterpret } from "../web/src/lib/axisEngine.js";
 import { interpret as abgInterpret } from "../web/src/lib/acidBaseEngine.js";
-import { readFileSync } from "node:fs";
+import { evaluate as extubationEvaluate, alertItemIds as extubationAlertItemIds, alertScreenId as extubationAlertScreenId } from "../web/src/lib/extubationEngine.js";
+import { readFileSync, existsSync } from "node:fs";
 
 let pass = 0;
 let fail = 0;
@@ -398,6 +399,66 @@ for (const m of mods) {
       for (const d of r.differentials) if (!C.differentials[d]) missing.push(`differential.${d}`);
     }
     ok("acid-base: module has copy for every engine key", !missing.length, [...new Set(missing)].join(", "));
+  }
+}
+
+// ------------------------------- extubation decision tool (kit vignettes)
+// The kit in Resources/Extubation/ is the only source of truth: every vignette
+// must pass, served copies must be byte-identical, and no JSON text or
+// clinical number may appear in the tool's code.
+{
+  const KIT = new URL("../Resources/Extubation/", import.meta.url);
+  const logicBytes = readFileSync(new URL("extubation-logic.json", KIT));
+  const logic = JSON.parse(logicBytes.toString("utf8"));
+  const vig = JSON.parse(readFileSync(new URL("extubation-vignettes.json", KIT), "utf8"));
+  eq("extubation: vignettes are for this logic version", vig.logicVersion, logic.version);
+  for (const v of vig.vignettes) {
+    const r = extubationEvaluate(logic, v.answers);
+    const got = { ...r, alerts: r.alerts.map((a) => a.id) };
+    for (const [k, want] of Object.entries(v.expect)) {
+      eq(`extubation ${v.id} ${k}`, JSON.stringify(got[k]), JSON.stringify(want));
+    }
+  }
+  eq("extubation: alertScreenId(ALERT_ICU_AIRWAY)", extubationAlertScreenId(logic, "ALERT_ICU_AIRWAY"), "icu_airway");
+  eq("extubation: alertItemIds after checking secretions", JSON.stringify(extubationAlertItemIds(logic, { icu_airway: ["secr"] }, "ALERT_ICU_AIRWAY")), JSON.stringify(["cough", "mental"]));
+
+  // Served copies (web/content after sync; tools/dist after deploy) match the kit byte for byte.
+  for (const rel of ["../web/content/tools/extubation-logic.json", "dist/content/tools/extubation-logic.json"]) {
+    const u = new URL(rel, import.meta.url);
+    if (existsSync(u)) ok(`extubation: ${rel} is byte-identical to the kit`, readFileSync(u).equals(logicBytes));
+  }
+  // Local only: the repo kit matches the owner's kit folder beside the repo.
+  const ownerKit = new URL("../../Resources/Extubation/", import.meta.url);
+  if (existsSync(ownerKit)) {
+    for (const f of ["extubation-logic.json", "extubation-vignettes.json", "extubation-engine-reference.js", "extubation-decision-protocol.html"]) {
+      ok(`extubation: repo kit ${f} matches the owner kit`, readFileSync(new URL(f, ownerKit)).equals(readFileSync(new URL(f, KIT))));
+    }
+  }
+
+  // No JSON text and no clinical numbers in the tool's code.
+  const strings = [];
+  (function walk(o) {
+    if (typeof o === "string") { if (/\s/.test(o.trim()) && o.length >= 8) strings.push(o); }
+    else if (Array.isArray(o)) o.forEach(walk);
+    else if (o && typeof o === "object") Object.values(o).forEach(walk);
+  })(logic);
+  const codeFiles = [
+    "../web/src/lib/extubationEngine.js",
+    "../web/src/views/extubationTool.js",
+    "../ios/Packages/ExtubationEngine/Sources/ExtubationEngine/ExtubationEngine.swift",
+    "../ios/Packages/ExtubationEngine/Sources/ExtubationEngine/ExtubationLogic.swift",
+    "../ios/Sources/Views/ExtubationToolView.swift",
+    "../ios/Sources/Views/ExtubationCardView.swift",
+  ];
+  const clinicalNumber = /\b\d+(\.\d+)?\s?(%|mL|mg|cmH2O|mmHg|hours?|days?)\b|\b(19|20)\d\d;\d+/;
+  for (const rel of codeFiles) {
+    const u = new URL(rel, import.meta.url);
+    if (!existsSync(u)) { ok(`extubation: ${rel} exists`, false); continue; }
+    const src = readFileSync(u, "utf8");
+    const leaked = strings.filter((s) => src.includes(s));
+    ok(`extubation: no JSON text in ${rel}`, leaked.length === 0, leaked.slice(0, 3).join(" | "));
+    const m = clinicalNumber.exec(src);
+    ok(`extubation: no clinical number in ${rel}`, !m, m?.[0]);
   }
 }
 

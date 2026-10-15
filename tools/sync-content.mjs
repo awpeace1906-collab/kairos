@@ -3,7 +3,7 @@
 // The iOS client bundles ../content directly via project.yml, so it needs no copy.
 import { cp, rm, mkdir } from "node:fs/promises";
 import { join } from "node:path";
-import { ROOT, CONTENT_DIR } from "./lib/content.mjs";
+import { ROOT, CONTENT_DIR, TOOL_FILES } from "./lib/content.mjs";
 
 const dest = join(ROOT, "..", "web", "content");
 await rm(dest, { recursive: true, force: true });
@@ -13,5 +13,10 @@ for (const name of ["schema", "config", "modules", "assets", "manifest.json", "s
     if (e.code !== "ENOENT") throw e;
     console.warn(`! skipped ${name} (not found — run 'npm run build' first)`);
   });
+}
+// Tools whose logic ships as a kit file outside content/ (served, not OTA-tracked).
+for (const [src, rel] of TOOL_FILES) {
+  await mkdir(join(dest, "tools"), { recursive: true });
+  await cp(join(ROOT, "..", src), join(dest, rel));
 }
 console.log(`✓ synced content -> web/content/`);

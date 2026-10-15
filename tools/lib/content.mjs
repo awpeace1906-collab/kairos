@@ -6,6 +6,9 @@ import { fileURLToPath } from "node:url";
 
 export const ROOT = fileURLToPath(new URL("..", import.meta.url));
 export const CONTENT_DIR = join(ROOT, "..", "content");
+/** Kit logic files served beside content/ (repo-relative source, path under content/).
+    Copied byte for byte; not in the manifest, so the iOS app never updates them OTA. */
+export const TOOL_FILES = [["Resources/Extubation/extubation-logic.json", "tools/extubation-logic.json"]];
 export const MODULES_DIR = join(CONTENT_DIR, "modules");
 export const SCHEMA_DIR = join(CONTENT_DIR, "schema");
 export const CONFIG_DIR = join(CONTENT_DIR, "config");

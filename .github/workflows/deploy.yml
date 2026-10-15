@@ -8,7 +8,7 @@ name: deploy
 on:
   push:
     branches: [main]
-    paths: ["content/**", "web/**", "tools/**", ".github/workflows/deploy.yml"]
+    paths: ["content/**", "web/**", "tools/**", "Resources/**", ".github/workflows/deploy.yml"]
   workflow_dispatch:
 
 permissions:

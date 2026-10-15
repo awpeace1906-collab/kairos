@@ -27,3 +27,7 @@ ios/build/
 
 # Per-developer signing team (see ios/Config/Signing.xcconfig)
 ios/Config/Local.xcconfig
+
+# Swift package build output
+ios/Packages/*/.build/
+ios/Packages/*/.swiftpm/

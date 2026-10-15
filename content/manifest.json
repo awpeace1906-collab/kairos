@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T00:00:00Z",
+  "generatedAt": "2026-10-14T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
@@ -65,6 +65,13 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2027-09-02"
+    },
+    "calculators/anesthesia-airway-or/extubation-decision-tool": {
+      "content_version": 1,
+      "hash": "de85369b4da13b61",
+      "path": "modules/calculators/anesthesia-airway-or/extubation-decision-tool.json",
+      "contentType": "calculator",
+      "section": "Calculators"
     },
     "calculators/anesthesia-airway-or/lemon-airway": {
       "content_version": 1,

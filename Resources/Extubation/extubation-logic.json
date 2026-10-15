@@ -1,0 +1,740 @@
+{
+ "schema": "cv-extubation-logic",
+ "version": "1.3",
+ "updated": "2026-10-14",
+ "ui": {
+  "disclaimer": "Decision aid for education and team discussion. It is not an order. Clinical judgment and local protocol take priority.",
+  "recommendationPrefix": "Protocol suggests:",
+  "buttons": {
+   "next": "Next",
+   "back": "Back",
+   "reset": "Start over",
+   "print": "Share handoff card",
+   "evidence": "Evidence",
+   "resetConfirm": "Changing the setting clears all answers. Continue?",
+   "startOverConfirm": "Confirm reset: clear all answers and start over?",
+   "confirm": "Confirm",
+   "cancel": "Cancel",
+   "yes": "Yes",
+   "no": "No"
+  },
+  "stepLabel": "Step {current} of {total}",
+  "acknowledge": "I have read this warning",
+  "card": {
+   "header": "Extubation handoff",
+   "patientLabel": "Patient label (write by hand)"
+  }
+ },
+ "tracks": {
+  "or": {
+   "title": "OR emergence",
+   "subtitle": "End of an anesthetic",
+   "totalSteps": 4
+  },
+  "icu": {
+   "title": "ICU liberation",
+   "subtitle": "Ventilated patient",
+   "totalSteps": 7
+  }
+ },
+ "screens": [
+  {
+   "id": "setting",
+   "track": null,
+   "step": 0,
+   "type": "single_choice",
+   "title": "Choose the setting",
+   "prompt": "Where is this extubation happening?",
+   "options": [
+    {
+     "id": "or",
+     "label": "OR emergence"
+    },
+    {
+     "id": "icu",
+     "label": "ICU liberation"
+    }
+   ],
+   "required": true
+  },
+  {
+   "id": "or_gate",
+   "track": "or",
+   "step": 1,
+   "type": "checklist",
+   "title": "The gate",
+   "prompt": "Check each item that is true right now.",
+   "items": [
+    {
+     "id": "tofr",
+     "label": "Quantitative train-of-four ratio is 0.9 or higher (adductor pollicis)",
+     "hard": true
+    },
+    {
+     "id": "spont",
+     "label": "Adequate spontaneous ventilation and oxygenation",
+     "hard": true
+    },
+    {
+     "id": "hemo",
+     "label": "Hemodynamically stable",
+     "hard": true
+    },
+    {
+     "id": "temp",
+     "label": "Normothermic, with metabolic problems corrected",
+     "hard": false
+    },
+    {
+     "id": "analg",
+     "label": "Pain is adequately controlled",
+     "hard": false
+    }
+   ]
+  },
+  {
+   "id": "or_risk",
+   "track": "or",
+   "step": 2,
+   "type": "checklist",
+   "title": "Airway risk",
+   "prompt": "Check every item that applies. Leave all unchecked if none apply.",
+   "items": [
+    {
+     "id": "diffint",
+     "label": "Known or suspected difficult intubation or mask ventilation"
+    },
+    {
+     "id": "access",
+     "label": "Restricted airway access (head or neck surgery, halo, wired jaw, cervical fixation)"
+    },
+    {
+     "id": "edema",
+     "label": "Airway edema, hematoma, or changed anatomy"
+    },
+    {
+     "id": "aspir",
+     "label": "Aspiration risk (full stomach, delayed gastric emptying)"
+    },
+    {
+     "id": "obos",
+     "label": "Obesity or obstructive sleep apnea"
+    },
+    {
+     "id": "reserve",
+     "label": "Limited respiratory or cardiovascular reserve"
+    }
+   ]
+  },
+  {
+   "id": "or_cough",
+   "track": "or",
+   "step": 3,
+   "type": "yes_no",
+   "title": "Surgical priority",
+   "prompt": "Would coughing at extubation harm the surgical repair (for example intracranial, eye, some ENT or plastic surgery)?",
+   "showIf": {
+    "count": "or_risk",
+    "eq": 0
+   },
+   "required": true
+  },
+  {
+   "id": "or_rescue",
+   "track": "or",
+   "step": 4,
+   "type": "text_fields",
+   "title": "Rescue plan",
+   "prompt": "Answer all four before extubation.",
+   "fields": [
+    {
+     "id": "who",
+     "label": "Who will reintubate?"
+    },
+    {
+     "id": "device",
+     "label": "Which device and plan (videolaryngoscope, bougie, supraglottic airway)?"
+    },
+    {
+     "id": "fona",
+     "label": "Where is the front-of-neck access kit?"
+    },
+    {
+     "id": "where",
+     "label": "Where will the patient go, and who will watch them?"
+    }
+   ],
+   "required": true
+  },
+  {
+   "id": "icu_ready",
+   "track": "icu",
+   "step": 1,
+   "type": "checklist",
+   "title": "Readiness screen",
+   "prompt": "Check each item that is true today.",
+   "items": [
+    {
+     "id": "cause",
+     "label": "The cause of respiratory failure is improving",
+     "hard": true
+    },
+    {
+     "id": "oxy",
+     "label": "PaO2/FiO2 is 150 or higher on PEEP of 8 or less and FiO2 of 0.5 or less",
+     "hard": true
+    },
+    {
+     "id": "hemo",
+     "label": "Hemodynamically stable (no vasopressor or a low dose)",
+     "hard": true
+    },
+    {
+     "id": "drive",
+     "label": "Breathing on their own with sedation minimized",
+     "hard": true
+    }
+   ]
+  },
+  {
+   "id": "icu_sbt",
+   "track": "icu",
+   "step": 2,
+   "type": "yes_no",
+   "title": "Spontaneous breathing trial",
+   "prompt": "Did the patient pass a 30 to 120 minute trial on pressure support of 5 to 8 cmH2O (or T-piece)?",
+   "info": "Stop the trial for any of: respiratory rate above 35; SpO2 below 90%; heart rate above 140 or a sustained change of more than 20%; systolic pressure above 180 or below 90; agitation, sweating, or rising work of breathing.",
+   "infoSources": [
+    "ats2017",
+    "subira2019"
+   ],
+   "required": true
+  },
+  {
+   "id": "icu_airway",
+   "track": "icu",
+   "step": 3,
+   "type": "checklist",
+   "title": "Airway protection",
+   "prompt": "Check each item that is true.",
+   "items": [
+    {
+     "id": "cough",
+     "label": "Effective cough"
+    },
+    {
+     "id": "secr",
+     "label": "Secretions manageable (suctioned 2 times or fewer in the last 8 hours)"
+    },
+    {
+     "id": "mental",
+     "label": "Follows commands or protects their airway"
+    }
+   ]
+  },
+  {
+   "id": "icu_stridor",
+   "track": "icu",
+   "step": 4,
+   "type": "checklist",
+   "title": "Stridor risk",
+   "prompt": "Check every item that applies. Leave all unchecked if none apply.",
+   "items": [
+    {
+     "id": "trauma",
+     "label": "Traumatic or difficult intubation"
+    },
+    {
+     "id": "long",
+     "label": "Intubated for more than 6 days"
+    },
+    {
+     "id": "large",
+     "label": "Large endotracheal tube for the airway"
+    },
+    {
+     "id": "female",
+     "label": "Female"
+    },
+    {
+     "id": "reint",
+     "label": "Reintubated after an unplanned extubation"
+    }
+   ]
+  },
+  {
+   "id": "icu_cuff",
+   "track": "icu",
+   "step": 5,
+   "type": "single_choice",
+   "title": "Cuff-leak test",
+   "prompt": "Result of the cuff-leak test. A failed test is a leak below 110 mL or below 12 to 24% of the delivered tidal volume.",
+   "showIf": {
+    "count": "icu_stridor",
+    "gte": 1
+   },
+   "options": [
+    {
+     "id": "pass",
+     "label": "Passed"
+    },
+    {
+     "id": "fail",
+     "label": "Failed"
+    },
+    {
+     "id": "not_done",
+     "label": "Not done"
+    }
+   ],
+   "required": true
+  },
+  {
+   "id": "icu_reint",
+   "track": "icu",
+   "step": 6,
+   "type": "checklist",
+   "title": "Reintubation risk",
+   "prompt": "Check every item that applies. Leave all unchecked if none apply.",
+   "items": [
+    {
+     "id": "age",
+     "label": "Age over 65"
+    },
+    {
+     "id": "apache",
+     "label": "APACHE II above 12 today"
+    },
+    {
+     "id": "bmi",
+     "label": "BMI above 30"
+    },
+    {
+     "id": "secr",
+     "label": "Poor secretion management"
+    },
+    {
+     "id": "wean",
+     "label": "Difficult or prolonged weaning (failed the first trial)"
+    },
+    {
+     "id": "comorb",
+     "label": "Two or more comorbidities"
+    },
+    {
+     "id": "hf",
+     "label": "Heart failure was the main reason for ventilation"
+    },
+    {
+     "id": "copd",
+     "label": "Moderate to severe COPD"
+    },
+    {
+     "id": "patency",
+     "label": "Airway patency problems (high risk of laryngeal edema)"
+    },
+    {
+     "id": "mv7",
+     "label": "Ventilated for more than 7 days"
+    }
+   ],
+   "note": "Any one factor counts as high risk in the Hernández 2016 trials. Most ICU patients qualify, so the count is shown with the result."
+  },
+  {
+   "id": "icu_rescue",
+   "track": "icu",
+   "step": 7,
+   "type": "text_fields",
+   "title": "Rescue plan",
+   "prompt": "Answer all four before extubation.",
+   "fields": [
+    {
+     "id": "who",
+     "label": "Who will reintubate?"
+    },
+    {
+     "id": "device",
+     "label": "Which device and plan (videolaryngoscope, bougie, supraglottic airway)?"
+    },
+    {
+     "id": "fona",
+     "label": "Where is the front-of-neck access kit?"
+    },
+    {
+     "id": "where",
+     "label": "Where will the patient go, and who will watch them?"
+    }
+   ],
+   "required": true
+  }
+ ],
+ "flow": {
+  "or": [
+   {
+    "at": "or_gate",
+    "stopIf": {
+     "anyUnchecked": "or_gate",
+     "hardOnly": true
+    },
+    "outcome": "OR_STOP_GATE"
+   },
+   {
+    "at": "or_risk"
+   },
+   {
+    "at": "or_cough"
+   },
+   {
+    "at": "or_rescue"
+   }
+  ],
+  "icu": [
+   {
+    "at": "icu_ready",
+    "stopIf": {
+     "anyUnchecked": "icu_ready",
+     "hardOnly": true
+    },
+    "outcome": "ICU_STOP_NOT_READY"
+   },
+   {
+    "at": "icu_sbt",
+    "stopIf": {
+     "answer": "icu_sbt",
+     "eq": "no"
+    },
+    "outcome": "ICU_STOP_SBT_FAILED"
+   },
+   {
+    "at": "icu_airway"
+   },
+   {
+    "at": "icu_stridor"
+   },
+   {
+    "at": "icu_cuff"
+   },
+   {
+    "at": "icu_reint"
+   },
+   {
+    "at": "icu_rescue"
+   }
+  ]
+ },
+ "flowRules": [
+  "Screens run in the order listed in flow for the chosen track.",
+  "A screen with showIf is skipped when its condition is false. Skipped screens still count toward the step number.",
+  "After a screen with stopIf, if the condition is true, go straight to the result with that outcome. Later screens are not shown.",
+  "checklist screens never require a box to be checked. yes_no, single_choice, and text_fields screens marked required cannot advance until answered (text fields: non-empty after trimming).",
+  "Back returns to the previous shown screen and keeps its answers. Back on the result returns to the last screen shown; after a stop outcome, that is the screen whose stopIf fired. Choosing a different setting asks resetConfirm (buttons confirm and cancel) and then clears every answer.",
+  "The setting screen (step 0) has no top bar: no track title, no step label, and no reset button.",
+  "Start over (buttons.reset) asks startOverConfirm (buttons confirm and cancel); on confirm, it clears every answer and returns to the setting screen."
+ ],
+ "outcomes": {
+  "OR_STOP_GATE": {
+   "class": "stop",
+   "chip": "Not ready",
+   "title": "Do not extubate yet",
+   "text": "Correct each unmet hard item, then reassess.",
+   "why": {
+    "uncheckedHard": "or_gate",
+    "prefix": "Not met: "
+   },
+   "sources": [
+    "thilen2023",
+    "das2012"
+   ]
+  },
+  "OR_AT_RISK": {
+   "class": "high",
+   "chip": "At risk",
+   "title": "Awake extubation only",
+   "text": "Extubate awake. Consider an airway exchange catheter, exchange to a supraglottic airway, a remifentanil infusion, or postponing extubation.",
+   "why": {
+    "checked": "or_risk"
+   },
+   "sources": [
+    "das2012"
+   ]
+  },
+  "OR_LOW_DEEP_OPTION": {
+   "class": "low",
+   "chip": "Low risk",
+   "title": "Awake by default; deep is an option",
+   "text": "Extubate awake by default. Deep extubation is acceptable here only with an easy airway, no aspiration risk, and a clinician ready to rescue the airway.",
+   "why": {
+    "fixed": [
+     "No airway risk factors",
+     "Coughing would harm the surgical repair"
+    ]
+   },
+   "sources": [
+    "das2012"
+   ]
+  },
+  "OR_LOW_AWAKE": {
+   "class": "low",
+   "chip": "Low risk",
+   "title": "Awake extubation",
+   "text": "Extubate awake.",
+   "why": {
+    "fixed": [
+     "No airway risk factors"
+    ]
+   },
+   "sources": [
+    "das2012"
+   ]
+  },
+  "ICU_STOP_NOT_READY": {
+   "class": "stop",
+   "chip": "Not ready",
+   "title": "Not ready for a breathing trial",
+   "text": "Do not start a spontaneous breathing trial today. Continue daily sedation interruption and reassess tomorrow.",
+   "why": {
+    "uncheckedHard": "icu_ready",
+    "prefix": "Not met: "
+   },
+   "sources": [
+    "ats2017"
+   ]
+  },
+  "ICU_STOP_SBT_FAILED": {
+   "class": "stop",
+   "chip": "Trial failed",
+   "title": "Do not extubate",
+   "text": "Return to rest ventilator settings, look for the reversible cause, and reassess in 24 hours.",
+   "why": {
+    "fixed": [
+     "Failed the spontaneous breathing trial"
+    ]
+   },
+   "sources": [
+    "ats2017"
+   ]
+  },
+  "ICU_LOW_RISK": {
+   "class": "low",
+   "chip": "Low risk · 0 of 10 factors",
+   "title": "Extubate to high-flow nasal cannula",
+   "text": "Extubate to high-flow nasal cannula for 24 hours. In low-risk patients it reduced reintubation compared with conventional oxygen (4.9% vs 12.2%).",
+   "why": {
+    "fixed": [
+     "Passed readiness screen and breathing trial",
+     "No reintubation risk factors"
+    ]
+   },
+   "sources": [
+    "hernandez2016a"
+   ]
+  },
+  "ICU_HIGH_RISK": {
+   "class": "high",
+   "chip": "High risk · {count} of 10 factors",
+   "title": "Extubate to preventive support",
+   "text": "Extubate to preventive noninvasive ventilation (ATS/ACCP 2017) or high-flow nasal cannula (noninferior to NIV for reintubation, 22.8% vs 19.1%). If the patient tolerates it, high-flow alternating with NIV reduced day-7 reintubation compared with high-flow alone (11.8% vs 18.2%).",
+   "why": {
+    "checked": "icu_reint"
+   },
+   "sources": [
+    "ats2017",
+    "hernandez2016b",
+    "thille2019"
+   ]
+  }
+ },
+ "outcomeRules": [
+  {
+   "track": "or",
+   "when": {
+    "count": "or_risk",
+    "gte": 1
+   },
+   "outcome": "OR_AT_RISK"
+  },
+  {
+   "track": "or",
+   "when": {
+    "answer": "or_cough",
+    "eq": "yes"
+   },
+   "outcome": "OR_LOW_DEEP_OPTION"
+  },
+  {
+   "track": "or",
+   "when": {
+    "always": true
+   },
+   "outcome": "OR_LOW_AWAKE"
+  },
+  {
+   "track": "icu",
+   "when": {
+    "count": "icu_reint",
+    "eq": 0
+   },
+   "outcome": "ICU_LOW_RISK"
+  },
+  {
+   "track": "icu",
+   "when": {
+    "always": true
+   },
+   "outcome": "ICU_HIGH_RISK"
+  }
+ ],
+ "outcomeRulesNote": "Evaluated top to bottom for the track; the first match wins. Only used when no stopIf fired.",
+ "alerts": {
+  "ALERT_OR_SOFT_GATE": {
+   "level": "amber",
+   "text": "Not yet optimized: {items}. Correct if possible before extubation.",
+   "when": {
+    "anyUnchecked": "or_gate",
+    "softOnly": true
+   },
+   "items": {
+    "uncheckedSoft": "or_gate"
+   },
+   "sources": [
+    "das2012"
+   ],
+   "tracks": [
+    "or"
+   ],
+   "onStop": false
+  },
+  "ALERT_ICU_AIRWAY": {
+   "level": "amber",
+   "text": "Passed the trial, but airway protection is uncertain: {items}. Discuss before extubation.",
+   "when": {
+    "anyUnchecked": "icu_airway"
+   },
+   "items": {
+    "unchecked": "icu_airway"
+   },
+   "requiresAck": true,
+   "sources": [
+    "ats2017"
+   ],
+   "tracks": [
+    "icu"
+   ],
+   "onStop": false
+  },
+  "ALERT_CUFF_FAILED": {
+   "level": "amber",
+   "text": "Cuff-leak test failed. Give systemic steroids at least 4 hours before extubation (for example methylprednisolone 20 mg IV 12 hours before, then every 4 hours). A repeat leak test is not required.",
+   "when": {
+    "answer": "icu_cuff",
+    "eq": "fail"
+   },
+   "sources": [
+    "ats2017",
+    "francois2007"
+   ],
+   "tracks": [
+    "icu"
+   ],
+   "onStop": false
+  },
+  "ALERT_CUFF_NOT_DONE": {
+   "level": "amber",
+   "text": "This patient has stridor risk factors. A cuff-leak test is recommended before extubation.",
+   "when": {
+    "answer": "icu_cuff",
+    "eq": "not_done"
+   },
+   "sources": [
+    "ats2017"
+   ],
+   "tracks": [
+    "icu"
+   ],
+   "onStop": false
+  },
+  "ALERT_POSTEXT_FAILURE": {
+   "level": "red",
+   "text": "If respiratory failure develops after extubation, do not use NIV as rescue. Reintubate without delay.",
+   "when": {
+    "always": true
+   },
+   "sources": [
+    "esteban2004"
+   ],
+   "tracks": [
+    "icu"
+   ],
+   "onStop": false
+  }
+ },
+ "alertRules": [
+  "Show alerts only when the result is not a stop outcome (onStop false).",
+  "Order on screen and card: red alerts first, then amber, each group in the order listed here.",
+  "An alert with requiresAck is shown on its screen when its condition becomes true; Next stays disabled until the acknowledge checkbox is checked. The acknowledgment stays while the alert's item list stays the same or gets shorter; if a new item appears, the checkbox clears and Next is disabled again. On the result, the alert appears with its acknowledge checkbox, which is informational and blocks nothing."
+ ],
+ "resultLayout": [
+  "chip",
+  "title",
+  "recommendation (recommendationPrefix + text)",
+  "alerts",
+  "why",
+  "rescuePlan (if answered; each answer under its field label)",
+  "evidence (collapsed; full citations for outcome and alert sources, deduplicated, in order of first appearance)",
+  "disclaimer",
+  "buttons: print, reset"
+ ],
+ "cardLayout": [
+  "header: app name, ui.card.header, track title, local date and time",
+  "blank box labeled ui.card.patientLabel",
+  "chip",
+  "title",
+  "recommendation",
+  "alerts",
+  "why",
+  "rescuePlan (each answer under its field label)",
+  "references: short source labels, then full citations",
+  "disclaimer"
+ ],
+ "layoutRules": [
+  "Result and card sections have no headings. The only section label is buttons.evidence, on the collapsed evidence section of the result."
+ ],
+ "sources": {
+  "das2012": {
+   "short": "DAS 2012",
+   "full": "Popat M, et al. Difficult Airway Society guidelines for the management of tracheal extubation. Anaesthesia. 2012;67(3):318-340."
+  },
+  "thilen2023": {
+   "short": "ASA 2023",
+   "full": "Thilen SR, et al. 2023 American Society of Anesthesiologists practice guidelines for monitoring and antagonism of neuromuscular blockade. Anesthesiology. 2023;138(1):13-41."
+  },
+  "ats2017": {
+   "short": "ATS/ACCP 2017",
+   "full": "Schmidt GA, Girard TD, Kress JP, et al. Official executive summary of an ATS/ACCP clinical practice guideline: liberation from mechanical ventilation in critically ill adults. Am J Respir Crit Care Med. 2017;195(1):115-119."
+  },
+  "subira2019": {
+   "short": "Subirà 2019",
+   "full": "Subirà C, et al. Effect of pressure support vs T-piece ventilation strategies during spontaneous breathing trials on successful extubation among patients receiving mechanical ventilation. JAMA. 2019;321(22):2175-2182."
+  },
+  "francois2007": {
+   "short": "François 2007",
+   "full": "François B, et al. 12-h pretreatment with methylprednisolone versus placebo for prevention of postextubation laryngeal oedema. Lancet. 2007;369(9567):1083-1089."
+  },
+  "hernandez2016a": {
+   "short": "Hernández 2016 (low risk)",
+   "full": "Hernández G, et al. Effect of postextubation high-flow nasal cannula vs conventional oxygen therapy on reintubation in low-risk patients. JAMA. 2016;315(13):1354-1361."
+  },
+  "hernandez2016b": {
+   "short": "Hernández 2016 (high risk)",
+   "full": "Hernández G, et al. Effect of postextubation high-flow nasal cannula vs noninvasive ventilation on reintubation and postextubation respiratory failure in high-risk patients. JAMA. 2016;316(15):1565-1574."
+  },
+  "thille2019": {
+   "short": "HIGH-WEAN 2019",
+   "full": "Thille AW, et al. Effect of postextubation high-flow nasal oxygen with noninvasive ventilation vs high-flow nasal oxygen alone on reintubation among patients at high risk of extubation failure. JAMA. 2019;322(15):1465-1475."
+  },
+  "esteban2004": {
+   "short": "Esteban 2004",
+   "full": "Esteban A, et al. Noninvasive positive-pressure ventilation for respiratory failure after extubation. N Engl J Med. 2004;350(24):2452-2460."
+  }
+ }
+}

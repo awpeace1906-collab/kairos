@@ -8,6 +8,9 @@ on:
     paths:
       - "content/**"
       - "tools/**"
+      - "Resources/**"
+      - "web/src/lib/extubationEngine.js"
+      - "web/src/views/extubationTool.js"
       - "web/**"
       - "ios/Sources/**"
       - "docs/**"
@@ -17,6 +20,9 @@ on:
     paths:
       - "content/**"
       - "tools/**"
+      - "Resources/**"
+      - "web/src/lib/extubationEngine.js"
+      - "web/src/views/extubationTool.js"
       - "web/**"
       - "ios/Sources/**"
       - "docs/**"

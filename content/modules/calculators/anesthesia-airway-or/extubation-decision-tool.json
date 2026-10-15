@@ -1,0 +1,31 @@
+{
+  "id": "extubation-decision-tool",
+  "section": "Calculators",
+  "category": "Anesthesia / Airway / OR",
+  "crossListIn": [
+    { "section": "Reference Library", "category": "Critical Care" }
+  ],
+  "title": "Extubation Decision Tool",
+  "settingEmphasis": ["or", "icu"],
+  "audience": ["adult"],
+  "keywords": [
+    "extubation",
+    "OR emergence",
+    "ICU liberation",
+    "spontaneous breathing trial",
+    "cuff-leak test",
+    "reintubation risk",
+    "rescue plan"
+  ],
+  "contentType": "calculator",
+  "content_version": 1,
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-10-14",
+      "change": "Initial entry. Navigation stub only: every screen, word, rule and citation comes from Resources/Extubation/extubation-logic.json (cv-extubation-logic v1.3) at runtime. Keywords use only words from that file."
+    }
+  ],
+  "engine": "builtin",
+  "tool": "extubation"
+}

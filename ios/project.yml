@@ -7,6 +7,11 @@ options:
 
 # Signing team comes from Config/Local.xcconfig (git-ignored) via
 # Config/Signing.xcconfig, so regenerating never wipes it. See those files.
+# Shared extubation engine (also usable by AnesCalc): a local Swift package.
+packages:
+  ExtubationEngine:
+    path: Packages/ExtubationEngine
+
 configFiles:
   Debug: Config/Signing.xcconfig
   Release: Config/Signing.xcconfig
@@ -41,6 +46,12 @@ targets:
         name: Content
         type: folder
         buildPhase: resources
+      # Extubation tool logic: the kit file, bundled byte for byte. Not part of
+      # the content manifest, so it changes only with an app release.
+      - path: ../Resources/Extubation/extubation-logic.json
+        buildPhase: resources
+    dependencies:
+      - package: ExtubationEngine
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: app.kairos.Kairos
@@ -63,6 +74,7 @@ targets:
         buildPhase: resources
     dependencies:
       - target: Kairos
+      - package: ExtubationEngine
     settings:
       base:
         GENERATE_INFOPLIST_FILE: YES

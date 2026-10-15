@@ -256,6 +256,25 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-10-14 — **Extubation Decision Tool added** (Calculators → Anesthesia /
+  Airway / OR; cross-listed in Reference Library → Critical Care) (→ 444 modules).
+  Built from the shared kit in `Resources/Extubation/` (cv-extubation-logic
+  v1.3, kept byte-identical to the owner's kit folder; same kit as AnesCalc).
+  Every screen, word, rule and citation is read from `extubation-logic.json` at
+  runtime; the module JSON is a navigation stub (schema relaxed for
+  `tool: extubation`: no purpose/interpretation/toolContent, no review tier).
+  Engines: `web/src/lib/extubationEngine.js` (line-for-line port of the kit
+  reference) and the local Swift package `ios/Packages/ExtubationEngine`
+  (from AnesCalc's port, made public, with alert order read from the JSON text
+  because JSONDecoder doesn't keep key order). Navigation is derived from
+  evaluate().screensShown. Answers are in memory only (not SessionStore).
+  Handoff card: print on web, in-memory PDF via ShareLink on iOS. The logic
+  file is bundled, not OTA. Tests: 9 vignettes in node, the Swift package and
+  the app; byte-identity of bundled/served copies; a code scan for JSON text and
+  clinical numbers; UI test of vignette V8. Kit decisions (v1.2/v1.3) and the
+  AnesCalc exchange are in the kit folder's HANDOFF/RECS files. Note: run the
+  package tests with `swift test --scratch-path <outside iCloud>` — codesigning
+  fails on iCloud file attributes inside ~/Documents.
 - 2026-10-13 — **emergency-drugs-pregnancy v4: arrhythmia tier citation corrected.**
   "Enriquez … JACC-EP consensus tiers, 2021" conflated two papers. Now credited
   to Tamirisa et al., Methodist DeBakey Cardiovasc J 2024, Table 2 (labels and
