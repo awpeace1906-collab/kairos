@@ -1,0 +1,564 @@
+{
+  "schema_version": "1.0",
+  "logic_version": "1.1.0",
+  "id": "nee",
+  "title": "Norepinephrine Equivalents (NEE)",
+  "last_verified": "2026-11-19",
+  "output": {
+    "primary_unit": "mcg/kg/min",
+    "secondary_unit": "mcg/min",
+    "secondary_requires_weight": true,
+    "display_decimals": {
+      "nee_mcg_kg_min": 2,
+      "contribution_mcg_kg_min": 3,
+      "nee_mcg_min": 1,
+      "adjunct_mcg_kg_min": 3
+    },
+    "adjunct_unit": "mcg/kg/min"
+  },
+  "weight": {
+    "unit": "kg",
+    "min_inclusive": 1,
+    "max_inclusive": 350,
+    "required_when": "any infusion is entered in a unit whose conversion has per_weight = true"
+  },
+  "norepinephrine_salt": {
+    "applies_to_agent": "norepinephrine",
+    "default": "base",
+    "options": [
+      {
+        "id": "base",
+        "label": "Base (US labeling)",
+        "factor_to_base": {
+          "num": 1,
+          "den": 1
+        }
+      },
+      {
+        "id": "tartrate_bitartrate",
+        "label": "Tartrate / bitartrate salt",
+        "factor_to_base": {
+          "num": 1,
+          "den": 2
+        }
+      }
+    ],
+    "note_id": "salt_note"
+  },
+  "agents": [
+    {
+      "id": "norepinephrine",
+      "label": "Norepinephrine",
+      "canonical_unit": "mcg/kg/min",
+      "input_units": [
+        {
+          "unit": "mcg/kg/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": false,
+          "default": true
+        },
+        {
+          "unit": "mcg/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": true
+        }
+      ],
+      "role": "vasopressor"
+    },
+    {
+      "id": "epinephrine",
+      "label": "Epinephrine",
+      "canonical_unit": "mcg/kg/min",
+      "input_units": [
+        {
+          "unit": "mcg/kg/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": false,
+          "default": true
+        },
+        {
+          "unit": "mcg/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": true
+        }
+      ],
+      "role": "vasopressor"
+    },
+    {
+      "id": "vasopressin",
+      "label": "Vasopressin",
+      "canonical_unit": "U/min",
+      "input_units": [
+        {
+          "unit": "U/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": false,
+          "default": true
+        },
+        {
+          "unit": "U/h",
+          "multiply": {
+            "num": 1,
+            "den": 60
+          },
+          "per_weight": false
+        }
+      ],
+      "role": "vasopressor"
+    },
+    {
+      "id": "phenylephrine",
+      "label": "Phenylephrine",
+      "canonical_unit": "mcg/kg/min",
+      "input_units": [
+        {
+          "unit": "mcg/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": true,
+          "default": true
+        },
+        {
+          "unit": "mcg/kg/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": false
+        }
+      ],
+      "role": "vasopressor"
+    },
+    {
+      "id": "dopamine",
+      "label": "Dopamine",
+      "canonical_unit": "mcg/kg/min",
+      "input_units": [
+        {
+          "unit": "mcg/kg/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": false,
+          "default": true
+        },
+        {
+          "unit": "mcg/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": true
+        }
+      ],
+      "role": "vasopressor"
+    },
+    {
+      "id": "angiotensin_ii",
+      "label": "Angiotensin II",
+      "canonical_unit": "ng/kg/min",
+      "input_units": [
+        {
+          "unit": "ng/kg/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": false,
+          "default": true
+        }
+      ],
+      "role": "vasopressor"
+    },
+    {
+      "id": "methylene_blue",
+      "label": "Methylene blue (infusion)",
+      "canonical_unit": "mg/kg/h",
+      "input_units": [
+        {
+          "unit": "mg/kg/h",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": false,
+          "default": true
+        }
+      ],
+      "role": "vasopressor"
+    },
+    {
+      "id": "terlipressin",
+      "label": "Terlipressin (infusion)",
+      "canonical_unit": "mcg/kg/min",
+      "input_units": [
+        {
+          "unit": "mcg/kg/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": false,
+          "default": true
+        }
+      ],
+      "role": "vasopressor"
+    },
+    {
+      "id": "metaraminol",
+      "label": "Metaraminol",
+      "canonical_unit": "mcg/kg/min",
+      "input_units": [
+        {
+          "unit": "mcg/kg/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": false,
+          "default": true
+        },
+        {
+          "unit": "mcg/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": true
+        },
+        {
+          "unit": "mg/h",
+          "multiply": {
+            "num": 1000,
+            "den": 60
+          },
+          "per_weight": true
+        }
+      ],
+      "role": "vasopressor"
+    },
+    {
+      "id": "hydroxocobalamin",
+      "label": "Hydroxocobalamin (single dose)",
+      "role": "adjunct",
+      "canonical_unit": "g",
+      "input_units": [
+        {
+          "unit": "g",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": false,
+          "default": true
+        }
+      ]
+    },
+    {
+      "id": "midodrine",
+      "label": "Midodrine (oral)",
+      "role": "adjunct",
+      "canonical_unit": "mcg/kg/min",
+      "input_units": [
+        {
+          "unit": "mg/day",
+          "multiply": {
+            "num": 1000,
+            "den": 1440
+          },
+          "per_weight": true,
+          "default": true
+        },
+        {
+          "unit": "mcg/kg/min",
+          "multiply": {
+            "num": 1,
+            "den": 1
+          },
+          "per_weight": false
+        }
+      ]
+    }
+  ],
+  "formulas": [
+    {
+      "id": "kotani_2023",
+      "label": "Kotani 2023 (updated NEE)",
+      "default": true,
+      "citation_id": "kotani_2023",
+      "description": "Most inclusive published formula. Hydroxocobalamin and midodrine are shown as adjunct estimates and not added to the total. Metaraminol factor is 1/8 per the 2025 correction.",
+      "factors": {
+        "norepinephrine": {
+          "factor": {
+            "num": 1,
+            "den": 1
+          },
+          "published_as": "norepinephrine (mcg/kg/min) x 1"
+        },
+        "epinephrine": {
+          "factor": {
+            "num": 1,
+            "den": 1
+          },
+          "published_as": "epinephrine (mcg/kg/min) x 1"
+        },
+        "dopamine": {
+          "factor": {
+            "num": 1,
+            "den": 100
+          },
+          "published_as": "dopamine (mcg/kg/min) x 1/100"
+        },
+        "phenylephrine": {
+          "factor": {
+            "num": 6,
+            "den": 100
+          },
+          "published_as": "phenylephrine (mcg/kg/min) x 0.06"
+        },
+        "vasopressin": {
+          "factor": {
+            "num": 5,
+            "den": 2
+          },
+          "published_as": "vasopressin (U/min) x 2.5"
+        },
+        "angiotensin_ii": {
+          "factor": {
+            "num": 25,
+            "den": 10000
+          },
+          "published_as": "angiotensin II (ng/kg/min) x 0.0025"
+        },
+        "terlipressin": {
+          "factor": {
+            "num": 10,
+            "den": 1
+          },
+          "published_as": "terlipressin (mcg/kg/min) x 10"
+        },
+        "methylene_blue": {
+          "factor": {
+            "num": 2,
+            "den": 10
+          },
+          "published_as": "methylene blue (mg/kg/h) x 0.2"
+        },
+        "metaraminol": {
+          "factor": {
+            "num": 1,
+            "den": 8
+          },
+          "published_as": "metaraminol (mcg/kg/min) x 1/8 (corrected 2025; original article misprinted x 8)"
+        },
+        "hydroxocobalamin": {
+          "factor": {
+            "num": 2,
+            "den": 100
+          },
+          "published_as": "hydroxocobalamin (g) x 0.02"
+        },
+        "midodrine": {
+          "factor": {
+            "num": 4,
+            "den": 10
+          },
+          "published_as": "midodrine (mcg/kg/min) x 0.4"
+        }
+      }
+    },
+    {
+      "id": "goradia_2021",
+      "label": "Goradia 2021 (scoping review)",
+      "default": false,
+      "citation_id": "goradia_2021",
+      "description": "Widely used in research datasets. Angiotensin II was published in mcg/kg/min x 10; stored here per ng/kg/min.",
+      "factors": {
+        "norepinephrine": {
+          "factor": {
+            "num": 1,
+            "den": 1
+          },
+          "published_as": "norepinephrine (mcg/kg/min) x 1"
+        },
+        "epinephrine": {
+          "factor": {
+            "num": 1,
+            "den": 1
+          },
+          "published_as": "epinephrine (mcg/kg/min) x 1"
+        },
+        "phenylephrine": {
+          "factor": {
+            "num": 1,
+            "den": 10
+          },
+          "published_as": "phenylephrine (mcg/kg/min) / 10"
+        },
+        "dopamine": {
+          "factor": {
+            "num": 1,
+            "den": 100
+          },
+          "published_as": "dopamine (mcg/kg/min) / 100"
+        },
+        "metaraminol": {
+          "factor": {
+            "num": 1,
+            "den": 8
+          },
+          "published_as": "metaraminol (mcg/kg/min) / 8"
+        },
+        "vasopressin": {
+          "factor": {
+            "num": 5,
+            "den": 2
+          },
+          "published_as": "vasopressin (U/min) x 2.5"
+        },
+        "angiotensin_ii": {
+          "factor": {
+            "num": 1,
+            "den": 100
+          },
+          "published_as": "angiotensin II (mcg/kg/min) x 10, i.e. ng/kg/min x 0.01"
+        }
+      }
+    },
+    {
+      "id": "athos3_2017",
+      "label": "ATHOS-3 (trial eligibility)",
+      "default": false,
+      "citation_id": "athos3_2017",
+      "description": "Formula used for ATHOS-3 enrollment. ATHOS-3 required NEE > 0.2 mcg/kg/min by this formula.",
+      "factors": {
+        "norepinephrine": {
+          "factor": {
+            "num": 1,
+            "den": 1
+          },
+          "published_as": "norepinephrine (mcg/kg/min) x 1"
+        },
+        "epinephrine": {
+          "factor": {
+            "num": 1,
+            "den": 1
+          },
+          "published_as": "epinephrine (mcg/kg/min) x 1"
+        },
+        "dopamine": {
+          "factor": {
+            "num": 1,
+            "den": 150
+          },
+          "published_as": "dopamine (mcg/kg/min) x 1/150"
+        },
+        "phenylephrine": {
+          "factor": {
+            "num": 1,
+            "den": 10
+          },
+          "published_as": "phenylephrine (mcg/kg/min) x 1/10"
+        },
+        "vasopressin": {
+          "factor": {
+            "num": 5,
+            "den": 2
+          },
+          "published_as": "vasopressin (U/min) x 2.5"
+        }
+      }
+    }
+  ],
+  "rules": {
+    "negative_dose": "error",
+    "non_numeric_dose": "error",
+    "zero_dose": "ignore_row",
+    "duplicate_agent": "error",
+    "unknown_unit": "error",
+    "agent_not_in_formula": "warning_and_exclude",
+    "weight_missing_when_required": "error",
+    "weight_out_of_range": "error",
+    "no_positive_doses": "info",
+    "adjunct_role": "compute_with_formula_factor_show_separately_never_add_to_total"
+  },
+  "messages": {
+    "error_negative_dose": "{agent}: dose cannot be negative.",
+    "error_non_numeric_dose": "{agent}: dose must be a number.",
+    "error_duplicate_agent": "{agent} was entered more than once. Combine into one row.",
+    "error_unknown_unit": "{agent}: unit {unit} is not supported.",
+    "error_weight_required": "Weight is required to convert {agent} from {unit}.",
+    "error_weight_out_of_range": "Weight must be between 1 and 350 kg.",
+    "warning_agent_not_in_formula": "{agent} is not part of {formula} and was not counted.",
+    "info_no_inputs": "Enter at least one infusion."
+  },
+  "context_notes": [
+    {
+      "id": "ssc_vasopressin",
+      "type": "info",
+      "show_when_all": [
+        {
+          "agent": "norepinephrine",
+          "canonical_dose_gte": {
+            "num": 1,
+            "den": 4
+          }
+        },
+        {
+          "agent": "vasopressin",
+          "absent": true
+        }
+      ],
+      "text": "SSC 2021: in septic shock with inadequate MAP on norepinephrine, adding vasopressin is suggested rather than escalating norepinephrine, typically at norepinephrine 0.25-0.5 mcg/kg/min. This threshold refers to norepinephrine base alone, not total NEE.",
+      "citation_id": "ssc_2021"
+    },
+    {
+      "id": "adjunct_note",
+      "type": "info",
+      "show_when_all": [
+        {
+          "adjunct_estimate_present": true
+        }
+      ],
+      "text": "Adjunct estimates use Kotani 2023 factors, each derived from a single trial (hydroxocobalamin: 5 g lowered norepinephrine by 0.08 mcg/kg/min; midodrine: 30 mg/day lowered norepinephrine use by 73 mg over 6 days). Hydroxocobalamin is a one-time dose and midodrine is oral, so these estimates are shown for reference and are not added to NEE.",
+      "citation_id": "kotani_2023"
+    },
+    {
+      "id": "salt_note",
+      "type": "static",
+      "text": "Norepinephrine is sold as a salt. US labels state base-equivalent content (e.g., 16 mcg/mL base supplied as 31.9 mcg/mL bitartrate). Some countries label by salt weight, which doubles the apparent dose. Doses here are counted as base.",
+      "citation_id": "salt_sources"
+    },
+    {
+      "id": "disclaimer",
+      "type": "static",
+      "text": "NEE describes total vasopressor load for severity grading and research comparison. Conversion factors come from limited, heterogeneous data, and published formulas disagree. Do not use NEE to convert one vasopressor dose into another or to titrate therapy. Formulas were derived in adults.",
+      "citation_id": "kotani_2023"
+    }
+  ],
+  "citations": {
+    "kotani_2023": "Kotani Y, Di Gioia A, Landoni G, Belletti A, Khanna AK. An updated 'norepinephrine equivalent' score in intensive care as a marker of shock severity. Crit Care. 2023;27:29. doi:10.1186/s13054-023-04322-y. Correction: Crit Care. 2025;29:104. doi:10.1186/s13054-025-05250-9.",
+    "goradia_2021": "Goradia S, Sardaneh AA, Narayan SW, Penm J, Patanwala AE. Vasopressor dose equivalence: a scoping review and suggested formula. J Crit Care. 2021;61:233-240.",
+    "athos3_2017": "Khanna A, et al. Angiotensin II for the treatment of vasodilatory shock (ATHOS-3). N Engl J Med. 2017. Formula as tabulated in Kotani 2023, Table 1.",
+    "ssc_2021": "Evans L, et al. Surviving Sepsis Campaign: international guidelines for management of sepsis and septic shock 2021. Threshold as cited in Mongardon N, et al. Crit Care. 2023;27:62. doi:10.1186/s13054-023-04354-4.",
+    "salt_sources": "Mongardon N, et al. Norepinephrine formulation for equivalent vasopressive score. Crit Care. 2023;27:62. SCCM/ESICM Joint Task Force. Position paper on the reporting of norepinephrine formulations in critical care. Crit Care Med. 2024;52(4):521-530. US norepinephrine bitartrate premix label (DailyMed/DrugCentral)."
+  }
+}
