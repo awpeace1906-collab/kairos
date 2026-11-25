@@ -28,7 +28,8 @@ function shell(mod, ...body) {
   return el(
     "section",
     { class: `content ${mod.contentType}`, style: tintStyle(mod) },
-    el("h1", {}, mod.title),
+    el("h1", {}, mod.title, mod.badge ? el("span", { class: "card-badge" }, mod.badge) : null),
+    mod.subtitle ? el("p", { class: "card-subtitle" }, mod.subtitle) : null,
     richText(mod.summary, "purpose"),
     richText(mod.purpose, "purpose"),
     ...body,
@@ -184,8 +185,24 @@ function renderReference(mod) {
     mod,
     mod.whyThisMatters ? el("div", { class: "why-matters" }, el("h4", {}, "Why this matters"), richText(mod.whyThisMatters)) : null,
     el("div", { class: "prose" }, ...renderBlocks(mod.body)),
-    mod.clinicalTakeaway ? el("div", { class: "takeaway" }, el("h4", {}, "Clinical takeaway"), richText(mod.clinicalTakeaway)) : null
+    mod.link ? externalLink(mod.link) : null,
+    mod.clinicalTakeaway ? el("div", { class: "takeaway" }, el("h4", {}, "Clinical takeaway"), richText(mod.clinicalTakeaway)) : null,
+    mod.attribution ? el("p", { class: "card-attribution" }, mod.attribution) : null
   );
+}
+
+/** External-tool button (link cards): opens in a new browser tab, never
+    embedded. Offline, the card's offlineText replaces the button. */
+function externalLink(link) {
+  const box = el("div", { class: "external-link" });
+  const draw = () => box.replaceChildren(navigator.onLine
+    ? el("a", { class: "external-link-btn", href: link.url, target: "_blank", rel: "noopener noreferrer" }, link.label, " ↗")
+    : el("p", { class: "band sev-info external-link-offline" }, link.offlineText));
+  draw();
+  const onChange = () => { if (box.isConnected) draw(); else { window.removeEventListener("online", onChange); window.removeEventListener("offline", onChange); } };
+  window.addEventListener("online", onChange);
+  window.addEventListener("offline", onChange);
+  return box;
 }
 
 /** AnesCalc-origin anesthesia drug card — prose reference, no live math. */

@@ -1,0 +1,26 @@
+{
+  "id": "nee-calculator",
+  "section": "Calculators",
+  "category": "ICU / Critical Care",
+  "title": "Norepinephrine Equivalents (NEE)",
+  "audience": [
+    "adult"
+  ],
+  "keywords": [
+    "NEE",
+    "norepinephrine equivalent",
+    "vasopressor dose",
+    "pressor load"
+  ],
+  "contentType": "calculator",
+  "content_version": 1,
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-11-25",
+      "change": "Initial entry. Navigation stub only: every agent, unit, factor, rule, message, note and citation comes from Resources/NEE/nee-logic.json (logic v1.2.0) at runtime. Title and search keywords from the kit."
+    }
+  ],
+  "engine": "builtin",
+  "tool": "nee"
+}

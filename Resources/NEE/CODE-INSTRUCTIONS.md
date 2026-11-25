@@ -1,4 +1,4 @@
-# NEE Calculator — Build Instructions for Kairos (logic v1.1.0)
+# NEE Calculator — Build Instructions for Kairos (logic v1.2.0)
 
 ## What this is
 A norepinephrine equivalents (NEE) calculator for the Kairos **Calculators** section. The user enters the vasopressor infusions currently running and gets one number: total vasopressor load in mcg/kg/min of norepinephrine, with a per-drug breakdown.
@@ -37,6 +37,7 @@ A norepinephrine equivalents (NEE) calculator for the Kairos **Calculators** sec
 9. `nee_mcg_min = total × weight` when weight is given, else `null`. `adjunct_mcg_kg_min` is `null` when no adjunct was computed.
 
 ## Screen (one screen, top to bottom)
+All on-screen wording not listed below as JSON content comes from `ui` in `nee-logic.json` (added in v1.2.0): formula and weight labels, the required marker, the salt control label, "not in this formula", the Adjuncts heading, the NEE label, the adjunct line, the Breakdown and Sources headings, and Clear all. Canonical doses in the breakdown use `output.display_decimals.dose_canonical`. Sources follow `ui.sources_rule`.
 1. **Title** from `title`. Search keywords for the home TOC/search index: "NEE", "norepinephrine equivalent", "vasopressor dose", "pressor load".
 2. **Formula picker**, default from JSON. Under it, the selected formula's `description`.
 3. **Weight (kg)** field, optional. Show it as required (inline, not modal) only when a row uses a per-weight unit.

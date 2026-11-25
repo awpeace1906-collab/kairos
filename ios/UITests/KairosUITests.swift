@@ -362,4 +362,63 @@ final class KairosUITests: XCTestCase {
         XCTAssertTrue(extButton("ext-choice-setting-icu").waitForExistence(timeout: 3), "Start over should return to the setting screen")
         XCTAssertFalse(extButton("ext-reset").exists, "the setting screen has no top bar")
     }
+
+    // MARK: - NEE calculator and UTICalc link card
+
+    private func openFromSectionSearch(_ section: String, _ query: String, row: String) {
+        openSection(section)
+        let search = app.searchFields.firstMatch
+        if !search.waitForExistence(timeout: 3) { app.swipeDown() }
+        XCTAssertTrue(search.waitForExistence(timeout: 5), "search field never appeared")
+        search.tap(); search.typeText(query)
+        let r = app.buttons[row].firstMatch
+        XCTAssertTrue(r.waitForExistence(timeout: 5), "\(row) missing")
+        r.tap()
+    }
+
+    private func typeInto(_ id: String, _ value: String) {
+        let done = app.buttons["Done"].firstMatch
+        if done.exists { done.tap() }
+        let f = app.textFields[id].firstMatch
+        XCTAssertTrue(f.waitForExistence(timeout: 5), "\(id) missing")
+        // Keep the field in the upper half so the keyboard can't cover it.
+        var tries = 0
+        while (!f.isHittable || f.frame.midY > app.frame.height * 0.5) && tries < 8 {
+            app.swipeUp(velocity: .slow); tries += 1
+        }
+        f.tap()
+        f.typeText(value)
+    }
+
+    /// Vignette V26 through the UI: norepinephrine 0.2 + hydroxocobalamin 5 g at
+    /// 80 kg gives NEE 0.20 with the adjunct estimate shown separately.
+    func testNEEAdjunctFlow() {
+        openFromSectionSearch("calculators", "pressor load", row: "row-nee-calculator")
+        typeInto("nee-field-weight", "80")
+        typeInto("nee-field-norepinephrine", "0.2")
+        typeInto("nee-field-hydroxocobalamin", "5")
+        if app.buttons["Done"].firstMatch.exists { app.buttons["Done"].firstMatch.tap() }
+        let result = app.descendants(matching: .any)["nee-result"].firstMatch
+        var tries = 0
+        while !result.exists && tries < 6 { app.swipeUp(); tries += 1 }
+        XCTAssertTrue(result.waitForExistence(timeout: 5), "result missing")
+        XCTAssertTrue(result.label.contains("0.20"), "NEE should read 0.20, got \(result.label)")
+        XCTAssertTrue(result.label.contains("16.0"), "mcg/min should read 16.0, got \(result.label)")
+        let adjunct = app.staticTexts["nee-adjunct"].firstMatch
+        XCTAssertTrue(adjunct.exists && adjunct.label.contains("0.100"), "adjunct estimate missing")
+        let shot = XCTAttachment(screenshot: app.screenshot()); shot.name = "nee-v26"; shot.lifetime = .keepAlways; add(shot)
+    }
+
+    /// The UTICalc card opens from Peds search, shows the external-link button
+    /// (online) and the attribution, and has no inputs.
+    func testUTICalcLinkCard() {
+        openFromSectionSearch("peds-module", "febrile infant", row: "row-peds-uticalc-link")
+        let button = app.buttons["external-link"].firstMatch
+        var tries = 0
+        while !button.exists && tries < 6 { app.swipeUp(); tries += 1 }
+        XCTAssertTrue(button.waitForExistence(timeout: 5), "Open UTICalc button missing")
+        XCTAssertTrue(app.staticTexts["card-attribution"].firstMatch.exists, "attribution missing")
+        XCTAssertEqual(app.textFields.count, 0, "a link card must have no inputs")
+        let shot = XCTAttachment(screenshot: app.screenshot()); shot.name = "uticalc-card"; shot.lifetime = .keepAlways; add(shot)
+    }
 }

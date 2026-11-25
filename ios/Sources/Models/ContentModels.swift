@@ -578,6 +578,18 @@ struct AnesthesiaDrugCard: Codable {
 struct ReferenceDoc: Codable {
     let meta: RecordMeta
     let summary: String?
+    /// External-tool link cards (reference.schema.json): optional header extras,
+    /// the outbound link, and the ownership line shown after the takeaway.
+    let subtitle: String?
+    let badge: String?
+    let link: ExternalLink?
+    let attribution: String?
+
+    struct ExternalLink: Codable, Hashable {
+        let label: String
+        let url: String
+        let offlineText: String
+    }
     let whyThisMatters: String?
     let clinicalTakeaway: String?
     let body: [Block]
@@ -601,13 +613,17 @@ struct ReferenceDoc: Codable {
         meta = try RecordMeta(from: decoder)
         let c = try decoder.container(keyedBy: CodingKeys.self)
         summary = try c.decodeIfPresent(String.self, forKey: .summary)
+        subtitle = try c.decodeIfPresent(String.self, forKey: .subtitle)
+        badge = try c.decodeIfPresent(String.self, forKey: .badge)
+        link = try c.decodeIfPresent(ExternalLink.self, forKey: .link)
+        attribution = try c.decodeIfPresent(String.self, forKey: .attribution)
         whyThisMatters = try c.decodeIfPresent(String.self, forKey: .whyThisMatters)
         clinicalTakeaway = try c.decodeIfPresent(String.self, forKey: .clinicalTakeaway)
         body = try c.decode([Block].self, forKey: .body)
         buildNote = try c.decodeIfPresent(String.self, forKey: .buildNote)
     }
     func encode(to encoder: Encoder) throws {}
-    private enum CodingKeys: String, CodingKey { case summary, whyThisMatters, clinicalTakeaway, body, buildNote }
+    private enum CodingKeys: String, CodingKey { case summary, subtitle, badge, link, attribution, whyThisMatters, clinicalTakeaway, body, buildNote }
 }
 
 // MARK: - Procedure

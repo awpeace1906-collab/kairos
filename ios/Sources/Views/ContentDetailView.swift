@@ -105,6 +105,18 @@ struct ReferenceBody: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
+            if doc.subtitle != nil || doc.badge != nil {
+                VStack(alignment: .leading, spacing: 6) {
+                    if let badge = doc.badge {
+                        Text(badge.uppercased())
+                            .font(Theme.mono(11)).tracking(0.8).foregroundStyle(.secondary)
+                            .padding(.horizontal, 8).padding(.vertical, 3)
+                            .overlay(Capsule().stroke(Color(.separator)))
+                            .accessibilityIdentifier("card-badge")
+                    }
+                    if let subtitle = doc.subtitle { Text(subtitle).font(Theme.callout).foregroundStyle(.secondary) }
+                }
+            }
             if let summary = doc.summary {
                 RichText(summary).foregroundStyle(.secondary)
             }
@@ -112,8 +124,15 @@ struct ReferenceBody: View {
                 framedNote("WHY THIS MATTERS", why)
             }
             BlockList(blocks: doc.body, sectionTint: tint)
+            if let link = doc.link {
+                ExternalLinkButton(link: link)
+            }
             if let take = doc.clinicalTakeaway {
                 framedNote("CLINICAL TAKEAWAY", take, emphasized: true)
+            }
+            if let attribution = doc.attribution {
+                Text(attribution).font(Theme.footnote).foregroundStyle(.secondary)
+                    .accessibilityIdentifier("card-attribution")
             }
             BuildNote(text: doc.buildNote)
             SourcesBlock(meta: doc.meta)

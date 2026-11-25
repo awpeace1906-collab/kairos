@@ -12,7 +12,10 @@ import { loadModules, loadConfig } from "./lib/content.mjs";
 import { interpret as axisInterpret } from "../web/src/lib/axisEngine.js";
 import { interpret as abgInterpret } from "../web/src/lib/acidBaseEngine.js";
 import { evaluate as extubationEvaluate, alertItemIds as extubationAlertItemIds, alertScreenId as extubationAlertScreenId } from "../web/src/lib/extubationEngine.js";
-import { readFileSync, existsSync } from "node:fs";
+import { computeNEE } from "../web/src/lib/neeEngine.js";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
+import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 
 let pass = 0;
 let fail = 0;
@@ -460,6 +463,110 @@ for (const m of mods) {
     const m = clinicalNumber.exec(src);
     ok(`extubation: no clinical number in ${rel}`, !m, m?.[0]);
   }
+}
+
+// ------------------------------------------ NEE calculator (kit vignettes)
+// Same comparison rules as Resources/NEE/run-vignettes.js: absolute tolerance
+// from the file; warning/info/error codes compared as sets.
+{
+  const KIT = new URL("../Resources/NEE/", import.meta.url);
+  const logicBytes = readFileSync(new URL("nee-logic.json", KIT));
+  const logic = JSON.parse(logicBytes.toString("utf8"));
+  const suite = JSON.parse(readFileSync(new URL("nee-vignettes.json", KIT), "utf8"));
+  eq("nee: vignettes are for this logic version", suite.logic_version, logic.logic_version);
+  const tol = suite.tolerance;
+  const sameCodes = (a, b) => JSON.stringify([...a].sort()) === JSON.stringify([...b].sort());
+  const close = (a, b) => (a === null || b === null ? a === b : Math.abs(a - b) <= tol);
+  for (const v of suite.vignettes) {
+    const r = computeNEE(logic, v.input);
+    const e = v.expect;
+    const fails = [];
+    if (r.status !== e.status) fails.push("status");
+    if (e.status === "ok") {
+      if (!close(r.nee_mcg_kg_min, e.nee_mcg_kg_min)) fails.push("nee_mcg_kg_min");
+      if (!close(r.nee_mcg_min, e.nee_mcg_min)) fails.push("nee_mcg_min");
+      if (!close(r.adjunct_mcg_kg_min, e.adjunct_mcg_kg_min)) fails.push("adjunct_mcg_kg_min");
+      if (!sameCodes(r.warnings.map((w) => w.code), e.warnings)) fails.push("warnings");
+      if (!sameCodes(r.info.map((i) => i.code), e.info)) fails.push("info");
+      if (e.formula && r.formula !== e.formula) fails.push("formula");
+    } else if (!sameCodes(r.errors.map((x) => x.code), e.errors)) fails.push("errors");
+    ok(`nee ${v.id} ${v.title}`, fails.length === 0, fails.join(", "));
+  }
+  for (const rel of ["../web/content/tools/nee-logic.json", "dist/content/tools/nee-logic.json"]) {
+    const u = new URL(rel, import.meta.url);
+    if (existsSync(u)) ok(`nee: ${rel} is byte-identical to the kit`, readFileSync(u).equals(logicBytes));
+  }
+  const ownerKit = new URL("../../Resources/NEE/", import.meta.url);
+  if (existsSync(ownerKit)) {
+    for (const f of ["nee-logic.json", "nee-vignettes.json", "nee-engine-reference.js", "run-vignettes.js", "CODE-INSTRUCTIONS.md", "SOURCES-AND-VERIFICATION.md"]) {
+      ok(`nee: repo kit ${f} matches the owner kit`, readFileSync(new URL(f, ownerKit)).equals(readFileSync(new URL(f, KIT))));
+    }
+  }
+  // Kit acceptance grep: no factor, threshold or message text in engine/screen code.
+  const strings = [];
+  (function walk(o) {
+    if (typeof o === "string") { if (/\s/.test(o.trim()) && o.length >= 8) strings.push(o); }
+    else if (Array.isArray(o)) o.forEach(walk);
+    else if (o && typeof o === "object") Object.values(o).forEach(walk);
+  })(logic);
+  const numbers = /(?<![\w.])(0\.06|0\.0025|2\.5|150|0\.125|0\.25|0\.02|0\.4|1440)(?![\w.])/;
+  for (const rel of [
+    "../web/src/lib/neeEngine.js", "../web/src/views/neeTool.js",
+    "../ios/Packages/NEECore/Sources/NEECore/NEEEngine.swift", "../ios/Packages/NEECore/Sources/NEECore/NEELogic.swift",
+    "../ios/Sources/Views/NEEToolView.swift",
+  ]) {
+    const u = new URL(rel, import.meta.url);
+    if (!existsSync(u)) { ok(`nee: ${rel} exists`, false); continue; }
+    const src = readFileSync(u, "utf8");
+    const leaked = strings.filter((s) => src.includes(s));
+    ok(`nee: no JSON text in ${rel}`, leaked.length === 0, leaked.slice(0, 3).join(" | "));
+    const m = numbers.exec(src);
+    ok(`nee: no factor/threshold number in ${rel}`, !m, m?.[0]);
+  }
+}
+
+// --------------------------------------------- UTICalc link card (kit text)
+// The card is text copied from Resources/Peds/UTICalc/uticalc-card.json; it
+// must match word for word, and no UTICalc logic may exist in the codebase.
+{
+  const kit = JSON.parse(readFileSync(new URL("../Resources/Peds/UTICalc/uticalc-card.json", import.meta.url), "utf8"));
+  const card = mods.find((m) => m.json.id === kit.id)?.json;
+  ok("uticalc: card module exists", !!card);
+  if (card) {
+    eq("uticalc: title", card.title, kit.header.title);
+    eq("uticalc: subtitle", card.subtitle, kit.header.subtitle);
+    eq("uticalc: badge", card.badge, kit.header.badge);
+    eq("uticalc: why this matters", card.whyThisMatters, kit.why_this_matters);
+    eq("uticalc: takeaway", card.clinicalTakeaway, kit.clinical_takeaway);
+    eq("uticalc: attribution", card.attribution, kit.attribution);
+    eq("uticalc: link", JSON.stringify(card.link), JSON.stringify({ label: kit.link.label, url: kit.link.url, offlineText: kit.link.offline_text }));
+    eq("uticalc: sources", JSON.stringify(card.sources), JSON.stringify(kit.citations));
+    eq("uticalc: keywords", JSON.stringify(card.keywords), JSON.stringify(kit.search_keywords));
+    const sections = kit.sections.flatMap((s) => [{ type: "heading", level: 2, text: s.heading }, { type: "list", items: s.bullets }]);
+    eq("uticalc: sections in order", JSON.stringify(card.body), JSON.stringify(sections));
+    const index = JSON.parse(readFileSync(new URL("../content/search-index.json", import.meta.url), "utf8"));
+    const find = makeSearch(index.entries);
+    for (const q of ["UTI", "UTICalc", "febrile infant"]) {
+      ok(`uticalc: search "${q}" finds the card`, find(q).some((e) => e.id === kit.id));
+    }
+  }
+  // No UTICalc model, inputs or scoring in the app code.
+  const hits = [];
+  (function scan(dir) {
+    for (const e of readdirSync(dir, { withFileTypes: true })) {
+      const p = join(dir, e.name);
+      if (e.isDirectory()) scan(p);
+      else if (/\.(js|swift)$/.test(e.name) && /uticalc/i.test(readFileSync(p, "utf8"))) hits.push(p);
+    }
+  })(fileURLToPath(new URL("../web/src", import.meta.url)));
+  (function scan(dir) {
+    for (const e of readdirSync(dir, { withFileTypes: true })) {
+      const p = join(dir, e.name);
+      if (e.isDirectory()) scan(p);
+      else if (/\.swift$/.test(e.name) && /uticalc/i.test(readFileSync(p, "utf8"))) hits.push(p);
+    }
+  })(fileURLToPath(new URL("../ios/Sources", import.meta.url)));
+  ok("uticalc: no UTICalc code in web/src or ios/Sources", hits.length === 0, hits.join(", "));
 }
 
 // ---------------------------------------------------------------- report

@@ -11,6 +11,8 @@ options:
 packages:
   ExtubationEngine:
     path: Packages/ExtubationEngine
+  NEECore:
+    path: Packages/NEECore
 
 configFiles:
   Debug: Config/Signing.xcconfig
@@ -50,8 +52,12 @@ targets:
       # the content manifest, so it changes only with an app release.
       - path: ../Resources/Extubation/extubation-logic.json
         buildPhase: resources
+      # NEE calculator logic: the kit file, bundled byte for byte (not OTA).
+      - path: ../Resources/NEE/nee-logic.json
+        buildPhase: resources
     dependencies:
       - package: ExtubationEngine
+      - package: NEECore
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: app.kairos.Kairos
@@ -75,6 +81,7 @@ targets:
     dependencies:
       - target: Kairos
       - package: ExtubationEngine
+      - package: NEECore
     settings:
       base:
         GENERATE_INFOPLIST_FILE: YES

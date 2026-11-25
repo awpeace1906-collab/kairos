@@ -1,9 +1,23 @@
 {
   "schema_version": "1.0",
-  "logic_version": "1.1.0",
+  "logic_version": "1.2.0",
   "id": "nee",
   "title": "Norepinephrine Equivalents (NEE)",
   "last_verified": "2026-11-19",
+  "ui": {
+    "formula_label": "Formula",
+    "weight_label": "Weight (kg)",
+    "weight_required_marker": "Required",
+    "salt_label": "Norepinephrine labeling",
+    "not_in_formula_marker": "Not in this formula",
+    "adjuncts_heading": "Adjuncts",
+    "result_label": "NEE",
+    "adjunct_line": "Adjunct estimate (not included): {value} {unit}",
+    "breakdown_heading": "Breakdown",
+    "sources_heading": "Sources",
+    "clear_all": "Clear all",
+    "sources_rule": "Sources lists the selected formula's citation, then the citation of every note shown (static notes always count), each once, in that order."
+  },
   "output": {
     "primary_unit": "mcg/kg/min",
     "secondary_unit": "mcg/min",
@@ -12,7 +26,8 @@
       "nee_mcg_kg_min": 2,
       "contribution_mcg_kg_min": 3,
       "nee_mcg_min": 1,
-      "adjunct_mcg_kg_min": 3
+      "adjunct_mcg_kg_min": 3,
+      "dose_canonical": 3
     },
     "adjunct_unit": "mcg/kg/min"
   },

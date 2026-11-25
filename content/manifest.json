@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T00:00:00Z",
+  "generatedAt": "2026-11-25T00:00:00Z",
   "schemaVersion": 1,
   "contentBaseHint": "https://content.kairos.example/v1/",
   "modules": {
@@ -501,6 +501,13 @@
       "section": "Calculators",
       "review_tier": 1,
       "next_review_due": "2026-12-15"
+    },
+    "calculators/icu-critical-care/nee-calculator": {
+      "content_version": 1,
+      "hash": "48562243509d0675",
+      "path": "modules/calculators/icu-critical-care/nee-calculator.json",
+      "contentType": "calculator",
+      "section": "Calculators"
     },
     "calculators/icu-critical-care/padua-prediction-score": {
       "content_version": 1,
@@ -2198,6 +2205,13 @@
       "section": "Peds Module",
       "review_tier": 1,
       "next_review_due": "2026-12-15"
+    },
+    "peds-module/peds-uticalc-link": {
+      "content_version": 1,
+      "hash": "40efecd32cac5763",
+      "path": "modules/peds-module/peds-uticalc-link.json",
+      "contentType": "reference",
+      "section": "Peds Module"
     },
     "peds-module/prematurity-complications": {
       "content_version": 1,

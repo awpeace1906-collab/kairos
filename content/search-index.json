@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T00:00:00Z",
+  "generatedAt": "2026-11-25T00:00:00Z",
   "entries": [
     {
       "id": "apfel-ponv",
@@ -1614,6 +1614,24 @@
       "settingEmphasis": [
         "icu",
         "ed"
+      ]
+    },
+    {
+      "id": "nee-calculator",
+      "title": "Norepinephrine Equivalents (NEE)",
+      "section": "Calculators",
+      "category": "ICU / Critical Care",
+      "tags": [],
+      "keywords": [
+        "NEE",
+        "norepinephrine equivalent",
+        "vasopressor dose",
+        "pressor load"
+      ],
+      "contentType": "calculator",
+      "route": "/calculators/icu-critical-care/nee-calculator",
+      "audience": [
+        "adult"
       ]
     },
     {
@@ -6806,6 +6824,31 @@
       ],
       "contentType": "peds-tool",
       "route": "/peds-module/peds-resuscitation-decision-support/nat-ten4-facesp-screening",
+      "settingEmphasis": [
+        "ed"
+      ],
+      "audience": [
+        "peds"
+      ]
+    },
+    {
+      "id": "peds-uticalc-link",
+      "title": "UTICalc (Pittsburgh)",
+      "section": "Peds Module",
+      "category": "Peds Resuscitation & Decision Support",
+      "tags": [],
+      "keywords": [
+        "UTICalc",
+        "UTI",
+        "urinary tract infection",
+        "febrile infant",
+        "fever without source",
+        "Pittsburgh",
+        "catheterization",
+        "urinalysis"
+      ],
+      "contentType": "reference",
+      "route": "/peds-module/peds-resuscitation-decision-support/peds-uticalc-link",
       "settingEmphasis": [
         "ed"
       ],

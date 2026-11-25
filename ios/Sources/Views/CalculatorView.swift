@@ -20,6 +20,8 @@ struct CalculatorView: View {
             AcidBaseToolView(calc: calc, content: content, route: route)
         } else if calc.engine == .builtin, calc.tool == "extubation" {
             ExtubationToolView()
+        } else if calc.engine == .builtin, calc.tool == "nee" {
+            NEEToolView()
         } else {
             standard
         }

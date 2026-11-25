@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T00:00:00Z",
+  "generatedAt": "2026-11-25T00:00:00Z",
   "groupOrder": [
     "Guidelines & consensus statements",
     "Randomized trials & major studies",
@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 1021,
+  "count": 1024,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -3736,6 +3736,30 @@
       ]
     },
     {
+      "text": "Shaikh N, Hoberman A, Hum SW, et al. Development and validation of a calculator for estimating the probability of urinary tract infection in young febrile children. JAMA Pediatr. 2018;172(6):550-556. doi:10.1001/jamapediatrics.2018.0217",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "peds-uticalc-link",
+          "title": "UTICalc (Pittsburgh)",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-uticalc-link"
+        }
+      ]
+    },
+    {
+      "text": "Shaikh N, Lee MC, Stokes LR, et al. Reassessment of the role of race in calculating the risk for urinary tract infection. JAMA Pediatr. 2022;176(6):569. doi:10.1001/jamapediatrics.2022.0700",
+      "group": "Randomized trials & major studies",
+      "usedBy": [
+        {
+          "id": "peds-uticalc-link",
+          "title": "UTICalc (Pittsburgh)",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-uticalc-link"
+        }
+      ]
+    },
+    {
       "text": "Silbergleit R et al. RAMPART. NEJM 2012;366:591-600",
       "group": "Randomized trials & major studies",
       "usedBy": [
@@ -4500,6 +4524,18 @@
           "title": "HEART Score for Major Cardiac Events",
           "section": "Calculators",
           "route": "/calculators/cardiovascular-chest-pain-arrhythmia/heart-score"
+        }
+      ]
+    },
+    {
+      "text": "Smith AG, Kshetrapal A, Boles L, et al. External validation of the UTICalc with and without race for pediatric urinary tract infection. J Pediatr. 2023. doi:10.1016/j.jpeds.2023.113681",
+      "group": "Cohort, registry & systematic reviews",
+      "usedBy": [
+        {
+          "id": "peds-uticalc-link",
+          "title": "UTICalc (Pittsburgh)",
+          "section": "Peds Module",
+          "route": "/peds-module/peds-resuscitation-decision-support/peds-uticalc-link"
         }
       ]
     },

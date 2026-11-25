@@ -256,6 +256,25 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-11-25 — **NEE calculator + UTICalc link card added** (→ 446 modules).
+  *NEE* (Calculators → ICU / Critical Care): built from the kit in
+  `Resources/NEE/` (logic v1.2.0 — v1.1.0 plus a `ui` label block,
+  `display_decimals.dose_canonical` and `ui.sources_rule`, added at the owner's
+  OK; kit copy in CV Resources/Resources/NEE, v1.1.0 archived there). Engines:
+  `web/src/lib/neeEngine.js` (line-for-line port) and local Swift package
+  `ios/Packages/NEECore`. 30/30 vignettes in node, `swift test` and the app;
+  bundled/served logic byte-identical; kit grep (factors, thresholds, message
+  text) clean in engine and screen code; factor-change-in-JSON test. Navigation
+  stub module (no purpose/interpretation, no review tier).
+  *UTICalc* (Peds Module → Peds Resuscitation & Decision Support, ED lens):
+  link card only, text copied verbatim from
+  `Resources/Peds/UTICalc/uticalc-card.json` (node test enforces it). Reference
+  schema gained optional `subtitle`, `badge`, `link` {label,url,offlineText},
+  `attribution`; web opens the link in a new tab, iOS via openURL (system
+  browser), both swap in offlineText when offline. No UTICalc code anywhere
+  (test-enforced). content_version stored as 1 (kit says "1.0.0").
+  Open: NEE kit's "Decisions for Andrew" (plausibility warnings, US availability
+  notes, setting lenses, pump-rate input, AnesCalc adoption) not implemented.
 - 2026-10-14 (later) — **Extubation kit v1.4: RSBI information line** on the
   ICU breathing-trial screen (`note` + new `noteSources`, source Tanios 2006,
   Crit Care Med, verified on PubMed). No rule, outcome or vignette changed.

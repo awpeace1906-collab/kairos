@@ -817,3 +817,44 @@ figure.diagram--plate .diagram-credit { color: #6b6862; }
   .ext-card-disclaimer { font-size: 9pt; border-top: 1px solid #000; padding-top: 6px; }
 }
 .ext-note-src { font-family: var(--font-mono); font-size: .74rem; }
+
+/* ---- External-tool link cards (reference: subtitle / badge / link / attribution) */
+.card-badge { display: inline-block; margin-left: 10px; vertical-align: middle; font-family: var(--font-mono);
+  font-size: .7rem; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; padding: 3px 8px;
+  border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.card-subtitle { margin: -6px 0 12px; color: var(--muted); }
+.external-link { margin: 14px 0 4px; }
+.external-link-btn { display: inline-flex; align-items: center; gap: 6px; padding: 11px 18px; border-radius: 999px;
+  background: var(--accent); color: #fff; font-weight: 600; text-decoration: none; min-height: 44px; box-sizing: border-box; }
+.external-link-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.external-link-offline { margin: 0; }
+.card-attribution { font-size: .82rem; color: var(--muted); margin: 10px 0 0; }
+
+/* ---- NEE calculator (views/neeTool.js) — skin only; content from nee-logic.json */
+.nee-body, .nee-inputs { display: grid; gap: 14px; }
+.nee-formula, .nee-weight, .nee-salt { display: grid; gap: 6px; }
+.nee-formula-desc { margin: 0; font-size: .86rem; }
+.nee-weight input, .nee-row-controls input { font: inherit; font-family: var(--font-mono); font-size: 1rem; padding: 9px 10px;
+  border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--text); width: 9em; max-width: 100%; }
+.nee-required { margin-left: 6px; font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em; color: var(--sev-high); }
+.nee-rows { display: grid; gap: 8px; }
+.nee-row { display: grid; gap: 6px; padding: 10px 12px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); }
+.nee-row-out { opacity: .62; border-style: dashed; }
+.nee-row-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.nee-agent { font-weight: 600; }
+.nee-out-marker { font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em; color: var(--muted); text-transform: uppercase; }
+.nee-row-controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.nee-unit { font-family: var(--font-mono); font-size: .88rem; color: var(--muted); }
+.nee-heading { margin: 6px 0 0; font-size: 1rem; }
+.nee-result { display: grid; gap: 8px; padding: 14px; border-radius: var(--radius); background: var(--surface-2); border-left: 4px solid var(--accent); }
+.nee-number { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.nee-label { font-family: var(--font-mono); font-size: .78rem; letter-spacing: .06em; color: var(--muted); }
+.nee-value { font-size: 2.1rem; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.nee-unit-big { font-family: var(--font-mono); font-size: .9rem; }
+.nee-secondary { flex-basis: 100%; font-family: var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.nee-adjunct { padding: 8px 10px; border-radius: 8px; border: 1px dashed var(--line); font-size: .88rem; }
+.nee-adjunct p { margin: 0 0 4px; }
+.nee-result .band p, .nee-result p.band { margin: 0; }
+.nee-breakdown { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: .88rem; font-variant-numeric: tabular-nums; }
+.nee-breakdown-out { color: var(--muted); }
+.nee-static { font-size: .82rem; }

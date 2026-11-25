@@ -1,0 +1,86 @@
+{
+  "id": "peds-uticalc-link",
+  "section": "Peds Module",
+  "category": "Peds Resuscitation & Decision Support",
+  "title": "UTICalc (Pittsburgh)",
+  "subtitle": "UTI probability in febrile children 2–23 months",
+  "badge": "External tool",
+  "settingEmphasis": [
+    "ed"
+  ],
+  "audience": [
+    "peds"
+  ],
+  "keywords": [
+    "UTICalc",
+    "UTI",
+    "urinary tract infection",
+    "febrile infant",
+    "fever without source",
+    "Pittsburgh",
+    "catheterization",
+    "urinalysis"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-11-24",
+  "sources": [
+    "Shaikh N, Hoberman A, Hum SW, et al. Development and validation of a calculator for estimating the probability of urinary tract infection in young febrile children. JAMA Pediatr. 2018;172(6):550-556. doi:10.1001/jamapediatrics.2018.0217",
+    "Shaikh N, Lee MC, Stokes LR, et al. Reassessment of the role of race in calculating the risk for urinary tract infection. JAMA Pediatr. 2022;176(6):569. doi:10.1001/jamapediatrics.2022.0700",
+    "Smith AG, Kshetrapal A, Boles L, et al. External validation of the UTICalc with and without race for pediatric urinary tract infection. J Pediatr. 2023. doi:10.1016/j.jpeds.2023.113681"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-11-25",
+      "change": "Initial entry from the UTICalc link-card kit (Resources/Peds/UTICalc/uticalc-card.json, content 1.0.0), text copied verbatim. A link card only: no UTICalc inputs, scoring or model."
+    }
+  ],
+  "whyThisMatters": "Close to 7% of children under 2 presenting to an emergency department with fever have a UTI, and urine collection in this age group usually means catheterization. UTICalc estimates each child's risk so testing and empiric treatment can be targeted. In its 2018 validation, the clinical model reduced testing by 8.1% compared with the AAP algorithm and missed no UTIs (vs 3 missed).",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Who it's for"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Febrile children 2 to 23 months old (derived in children with documented temperature ≥ 38 °C).",
+        "Not for infants under 2 months or children 24 months and older."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How it works"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Step 1, clinical model: six yes/no questions (age < 12 months, Tmax ≥ 39 °C, prior UTI, female or uncircumcised male, other fever source, fever ≥ 48 h) give a pretest probability to decide whether to get urine.",
+        "Step 2, lab model: enter whatever is available (nitrite, leukocyte esterase, WBC/mm³, Gram stain bacteria) to update to a posttest probability that informs empiric treatment while awaiting culture."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Input pearls"
+    },
+    {
+      "type": "list",
+      "items": [
+        "WBC must be per mm³ (counting chamber); do not enter WBC/hpf.",
+        "Bacteria means Gram stain; do not substitute urinalysis bacteria.",
+        "Version 3.0 does not use race."
+      ]
+    }
+  ],
+  "link": {
+    "label": "Open UTICalc",
+    "url": "https://uticalc.pitt.edu/",
+    "offlineText": "UTICalc runs on the University of Pittsburgh website and needs an internet connection."
+  },
+  "clinicalTakeaway": "Calculate pretest probability before deciding on urine collection, then update it with urinalysis results before deciding on empiric antibiotics. The tool supports judgment; culture confirms the diagnosis.",
+  "attribution": "UTICalc © University of Pittsburgh. Kairos links to the tool and does not reproduce or modify its model."
+}

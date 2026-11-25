@@ -31,7 +31,10 @@
       "if": {
         "properties": {
           "tool": {
-            "const": "extubation"
+            "enum": [
+              "extubation",
+              "nee"
+            ]
           }
         },
         "required": [
@@ -171,9 +174,10 @@
       "enum": [
         "ekg-axis",
         "acid-base",
-        "extubation"
+        "extubation",
+        "nee"
       ],
-      "description": "engine=builtin only: which code-backed tool renders this module. ekg-axis → web/src/lib/axisEngine.js + ios/Sources/Calc/AxisEngine.swift (tools/fixtures/axis-golden-vectors.json); acid-base → web/src/lib/acidBaseEngine.js + ios/Sources/Calc/AcidBaseEngine.swift (tools/fixtures/acid-base-golden-vectors.json); extubation → web/src/lib/extubationEngine.js + ios/Packages/ExtubationEngine, driven entirely by Resources/Extubation/extubation-logic.json (tested against that kit's vignettes), so its module carries navigation fields only — no toolContent, purpose or interpretation."
+      "description": "engine=builtin only: which code-backed tool renders this module. ekg-axis → web/src/lib/axisEngine.js + ios/Sources/Calc/AxisEngine.swift (tools/fixtures/axis-golden-vectors.json); acid-base → web/src/lib/acidBaseEngine.js + ios/Sources/Calc/AcidBaseEngine.swift (tools/fixtures/acid-base-golden-vectors.json); extubation → web/src/lib/extubationEngine.js + ios/Packages/ExtubationEngine, driven entirely by Resources/Extubation/extubation-logic.json (tested against that kit's vignettes), so its module carries navigation fields only — no toolContent, purpose or interpretation; nee → web/src/lib/neeEngine.js + ios/Packages/NEECore, driven entirely by Resources/NEE/nee-logic.json (kit vignettes), likewise a navigation stub."
     },
     "toolContent": {
       "type": "object",

@@ -40,6 +40,16 @@
     "summary": {
       "type": "string"
     },
+    "subtitle": {
+      "type": "string",
+      "minLength": 2,
+      "description": "Optional line under the title (external-tool link cards)."
+    },
+    "badge": {
+      "type": "string",
+      "minLength": 2,
+      "description": "Optional short label beside the title, e.g. \"External tool\"."
+    },
     "whyThisMatters": {
       "type": "string",
       "minLength": 20,
@@ -49,6 +59,11 @@
       "type": "string",
       "minLength": 20,
       "description": "Action-oriented close — 2-3 sentences, the one thing to do. Standard Reference Library template, DIRECTIONS_FORWARD.md §1."
+    },
+    "attribution": {
+      "type": "string",
+      "minLength": 10,
+      "description": "Ownership/licensing line shown after the clinical takeaway (external-tool link cards)."
     },
     "body": {
       "type": "array",
@@ -119,6 +134,30 @@
           "diagram": {
             "$ref": "common.schema.json#/$defs/diagram"
           }
+        }
+      }
+    },
+    "link": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "url",
+        "offlineText"
+      ],
+      "description": "External-tool link card: a button placed after the body that opens url in the system browser (never embedded). offlineText replaces the button when the device is offline.",
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 2
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://"
+        },
+        "offlineText": {
+          "type": "string",
+          "minLength": 10
         }
       }
     },
