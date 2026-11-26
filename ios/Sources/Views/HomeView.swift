@@ -44,7 +44,9 @@ struct HomeView: View {
             if query.isEmpty {
                 if !pins.isEmpty { pinnedShortcuts }
                 sectionTiles
+                localProtocolsTile
             } else {
+                if matchesLocalProtocols { localProtocolsTile }
                 searchResults
             }
         }
@@ -147,6 +149,30 @@ struct HomeView: View {
             }
         } header: {
             Text("Browse").font(Theme.mono(11)).tracking(1).textCase(.uppercase)
+        }
+    }
+
+    // MARK: Local Protocols (the user's own facility protocols; iOS only)
+
+    private static let localProtocolTerms = ["local protocol", "trauma activation", "activation criteria", "trauma team", "facility protocol", "local"]
+    private var matchesLocalProtocols: Bool {
+        let q = query.trimmingCharacters(in: .whitespaces).lowercased()
+        return q.count >= 3 && Self.localProtocolTerms.contains { $0.contains(q) || q.contains($0) }
+    }
+
+    private var localProtocolsTile: some View {
+        Section {
+            NavigationLink(value: Route.localProtocols) {
+                HStack(spacing: 13) {
+                    Image(systemName: "building.2").foregroundStyle(Theme.accent).frame(width: 20)
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Local Protocols").font(Theme.semibold(16, relativeTo: .body))
+                        Text("My facilities' trauma activation criteria, on this device.").font(Theme.caption).foregroundStyle(.secondary)
+                    }
+                }
+                .padding(.vertical, 4)
+            }
+            .accessibilityIdentifier("local-protocols-tile")
         }
     }
 

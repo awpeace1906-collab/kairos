@@ -7,7 +7,7 @@
     "Reference texts & drug libraries",
     "Other primary sources"
   ],
-  "count": 1024,
+  "count": 1025,
   "items": [
     {
       "text": "2025 PALS — Pediatric Cardiac Arrest Algorithm; Pediatric Bradycardia with a Pulse; Pediatric Tachycardia with a Pulse (AHA-aligned)",
@@ -2046,6 +2046,18 @@
           "title": "Adult Synchronized Cardioversion",
           "section": "Procedures",
           "route": "/procedures/cardiac-procedures/adult-synchronized-cardioversion"
+        }
+      ]
+    },
+    {
+      "text": "Newgard CD, Fischer PE, Gestring M, et al. National guideline for the field triage of injured patients: recommendations of the National Expert Panel on Field Triage, 2021. J Trauma Acute Care Surg. 2022;93(2):e49-e60. doi:10.1097/TA.0000000000003627",
+      "group": "Guidelines & consensus statements",
+      "usedBy": [
+        {
+          "id": "acs-field-triage-link",
+          "title": "National Field Triage Guideline (ACS)",
+          "section": "Reference Library",
+          "route": "/reference-library/resuscitation-airway/acs-field-triage-link"
         }
       ]
     },

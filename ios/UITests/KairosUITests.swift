@@ -421,4 +421,31 @@ final class KairosUITests: XCTestCase {
         XCTAssertEqual(app.textFields.count, 0, "a link card must have no inputs")
         let shot = XCTAttachment(screenshot: app.screenshot()); shot.name = "uticalc-card"; shot.lifetime = .keepAlways; add(shot)
     }
+
+    // MARK: - Local Protocols (needs a profile already in the simulator's app storage)
+
+    /// Opens the default local protocol, enters RR 35 and expects an
+    /// auto-met criterion and a tier result. Skips if no profile is on the device.
+    func testLocalProtocolChecklist() throws {
+        let tile = app.buttons["local-protocols-tile"].firstMatch
+        var tries = 0
+        while !tile.exists && tries < 8 { app.swipeUp(); tries += 1 }
+        XCTAssertTrue(tile.waitForExistence(timeout: 5), "Local Protocols tile missing")
+        tile.tap()
+        let open = app.buttons["local-open-default"].firstMatch
+        guard open.waitForExistence(timeout: 5) else { throw XCTSkip("no local protocol on this device") }
+        open.tap()
+        let rr = app.textFields["trauma-vital-rr"].firstMatch
+        XCTAssertTrue(rr.waitForExistence(timeout: 5), "RR field missing")
+        rr.tap(); rr.typeText("35")
+        if app.buttons["Done"].firstMatch.exists { app.buttons["Done"].firstMatch.tap() }
+        let result = app.descendants(matching: .any)["trauma-result"].firstMatch
+        XCTAssertTrue(result.waitForExistence(timeout: 5), "result bar missing")
+        XCTAssertFalse(result.label.isEmpty)
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label BEGINSWITH 'auto: '")).firstMatch.waitForExistence(timeout: 3),
+                      "auto-met row should show its rule")
+        result.tap()
+        sleep(1) // let the result bar finish expanding
+        let shot = XCTAttachment(screenshot: app.screenshot()); shot.name = "local-protocol-checklist"; shot.lifetime = .keepAlways; add(shot)
+    }
 }

@@ -13053,6 +13053,28 @@
       ]
     },
     {
+      "id": "acs-field-triage-link",
+      "title": "National Field Triage Guideline (ACS)",
+      "section": "Reference Library",
+      "category": "Resuscitation & Airway",
+      "tags": [],
+      "keywords": [
+        "field triage",
+        "trauma triage",
+        "ACS",
+        "red criteria",
+        "yellow criteria",
+        "trauma center destination",
+        "trauma activation"
+      ],
+      "contentType": "reference",
+      "route": "/reference-library/resuscitation-airway/acs-field-triage-link",
+      "settingEmphasis": [
+        "prehospital",
+        "ed"
+      ]
+    },
+    {
       "id": "nerve-agent-toxicity",
       "title": "Nerve Agents & Organophosphates — Cholinergic Crisis",
       "section": "Reference Library",

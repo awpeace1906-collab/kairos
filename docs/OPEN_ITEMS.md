@@ -256,6 +256,28 @@ Still open from the prior cycle:
       about it.
 
 ## Progress log
+- 2026-11-25 (later) — **Local Protocols: trauma activation (kit v1.2.0), iOS only.**
+  The user's own facility cards: multi-facility library (all revisions kept,
+  newest current, default profile, rename/export/delete), bedside checklist
+  (auto-met rows, compound hints, tier-colored result bar), JSON import/export,
+  photo/PDF import (camera, photo library, Files; PDF text layer vs 300-dpi
+  Vision OCR per page; column-ordered lines; one-line review with zoom; kinds
+  and template-only auto-rules; double-check; save gate; draft autosave).
+  Engine: local package `ios/Packages/TraumaCore` (port of the kit reference
+  JS: evaluator, template expansion, validation, save gate, library). Storage:
+  Application Support/LocalProtocols, FileProtectionType.complete, excluded from
+  backup unless Settings → "Back up local protocols to iCloud". No profile ships:
+  a post-build script fails the build if one is bundled (demonstrated), plus an
+  XCTest. Tests: kit 27/14/3 in `swift test` and the app; text PDF → text layer
+  (55/55 criteria found), scanned PDF → OCR (52/55), photo OCR (53/55); scripted
+  answer-key review of all three evaluates T01–T27 like the fixture. ACS field
+  triage link card added (Reference Library → Resuscitation & Airway). The BUMCT
+  fixture (`Resources/TraumaActivation/profiles/`) is git-ignored: personal_only,
+  public repo; fixture tests skip on CI. Choices made (owner OK'd defaults):
+  photo-import vitals are user-entered when a rule needs them; section = group
+  (one header level); banner text optional, typed by the user; compound hint
+  typed by the user. Still manual on device: camera, airplane mode, a full
+  hand review of the card.
 - 2026-11-25 — **NEE calculator + UTICalc link card added** (→ 446 modules).
   *NEE* (Calculators → ICU / Critical Care): built from the kit in
   `Resources/NEE/` (logic v1.2.0 — v1.1.0 plus a `ui` label block,

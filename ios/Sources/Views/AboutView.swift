@@ -11,6 +11,7 @@ struct AboutView: View {
     @AppStorage("kairos.pedsLens") private var pedsLens = false
     @AppStorage("kairos.appearance") private var appearance = "system"
     @AppStorage(Pins.key) private var pinsRaw = ""
+    @AppStorage(LocalProtocolStore.backupKey) private var localBackup = false
 
     var body: some View {
         List {
@@ -31,6 +32,15 @@ struct AboutView: View {
                 Text("Preferences")
             } footer: {
                 Text("Care setting and Peds lens reorder and emphasize content for where you're working now — neither ever hides content or changes a dose.")
+            }
+
+            Section {
+                Toggle("Back up local protocols to iCloud", isOn: $localBackup)
+                    .onChange(of: localBackup) { _ in try? LocalProtocolStore.shared.applyBackupSetting() }
+            } header: {
+                Text("Local Protocols")
+            } footer: {
+                Text("Off: your facility protocols stay only on this device and are left out of iCloud and computer backups.")
             }
 
             Section {

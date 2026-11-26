@@ -569,6 +569,23 @@ for (const m of mods) {
   ok("uticalc: no UTICalc code in web/src or ios/Sources", hits.length === 0, hits.join(", "));
 }
 
+// ------------------------------------ ACS field-triage link card (kit text)
+{
+  const kit = JSON.parse(readFileSync(new URL("../Resources/TraumaActivation/acs-field-triage-link-card.json", import.meta.url), "utf8"));
+  const card = mods.find((m) => m.json.id === kit.id)?.json;
+  ok("acs: card module exists", !!card);
+  if (card) {
+    for (const [field, want] of [["title", kit.header.title], ["subtitle", kit.header.subtitle], ["badge", kit.header.badge],
+      ["whyThisMatters", kit.why_this_matters], ["clinicalTakeaway", kit.clinical_takeaway], ["attribution", kit.attribution]]) {
+      eq(`acs: ${field}`, card[field], want);
+    }
+    eq("acs: link", JSON.stringify(card.link), JSON.stringify({ label: kit.link.label, url: kit.link.url, offlineText: kit.link.offline_text }));
+    eq("acs: sources", JSON.stringify(card.sources), JSON.stringify(kit.citations));
+    eq("acs: keywords", JSON.stringify(card.keywords), JSON.stringify(kit.search_keywords));
+    eq("acs: no body (the criteria are not reproduced)", card.body.length, 0);
+  }
+}
+
 // ---------------------------------------------------------------- report
 console.log(failures.join("\n"));
 console.log(`\ntest: ${pass} passed, ${fail} failed`);

@@ -96,6 +96,7 @@ private extension View {
 enum Route: Hashable {
     case section(String)   // section id
     case content(String)   // search-index route
+    case localProtocols    // the user's own facility protocols (on-device only)
     case sources           // also a bottom-tab root; pushable here too since
                             // a content page's "All sources ›" link lives inside
                             // the Home tab's own stack (SourcesBlock).
@@ -139,6 +140,7 @@ struct MainTabView: View {
                         case .section(let id): SectionView(sectionID: id)
                         case .content(let r):  ContentDetailView(route: r)
                         case .sources:         SourcesView()
+                        case .localProtocols:  LocalProtocolsView()
                         }
                     }
             }

@@ -1,0 +1,43 @@
+{
+  "id": "acs-field-triage-link",
+  "section": "Reference Library",
+  "category": "Resuscitation & Airway",
+  "title": "National Field Triage Guideline (ACS)",
+  "subtitle": "2021 national guideline for injured patients",
+  "badge": "External resource",
+  "settingEmphasis": [
+    "prehospital",
+    "ed"
+  ],
+  "keywords": [
+    "field triage",
+    "trauma triage",
+    "ACS",
+    "red criteria",
+    "yellow criteria",
+    "trauma center destination",
+    "trauma activation"
+  ],
+  "contentType": "reference",
+  "content_version": 1,
+  "last_reviewed": "2026-11-25",
+  "sources": [
+    "Newgard CD, Fischer PE, Gestring M, et al. National guideline for the field triage of injured patients: recommendations of the National Expert Panel on Field Triage, 2021. J Trauma Acute Care Surg. 2022;93(2):e49-e60. doi:10.1097/TA.0000000000003627"
+  ],
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-11-25",
+      "change": "Initial entry from the TraumaActivation kit (Resources/TraumaActivation/acs-field-triage-link-card.json, content 1.0.0), text copied verbatim. A link card only: the ACS criteria are not reproduced."
+    }
+  ],
+  "whyThisMatters": "Most trauma center activation criteria, including local hospital cards, are built on the national field triage guideline. It sorts injured patients into two groups: RED (high risk for serious injury, highest-level trauma center) and YELLOW (moderate risk, trauma center as available within the regional system). ACS asks that the criteria not be altered, so Kairos links to the official version.",
+  "body": [],
+  "link": {
+    "label": "Open ACS field triage guideline",
+    "url": "https://www.facs.org/quality-programs/trauma/systems/field-triage-guidelines/",
+    "offlineText": "The guideline is hosted by the American College of Surgeons and needs an internet connection."
+  },
+  "clinicalTakeaway": "Use the national guideline for destination decisions in the field; use your hospital's own activation criteria (Local Protocols) for who responds and how fast once the patient arrives.",
+  "attribution": "National Guideline for the Field Triage of Injured Patients © American College of Surgeons. Kairos links to it and does not reproduce its criteria."
+}

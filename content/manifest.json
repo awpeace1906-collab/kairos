@@ -2581,6 +2581,13 @@
       "review_tier": 1,
       "next_review_due": "2026-12-15"
     },
+    "reference-library/acs-field-triage-link": {
+      "content_version": 1,
+      "hash": "d54069a1d8206139",
+      "path": "modules/reference-library/acs-field-triage-link.json",
+      "contentType": "reference",
+      "section": "Reference Library"
+    },
     "reference-library/acute-dyspnea-niv": {
       "content_version": 4,
       "hash": "74a827d4c45238a1",

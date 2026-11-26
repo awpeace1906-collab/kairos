@@ -13,6 +13,8 @@ packages:
     path: Packages/ExtubationEngine
   NEECore:
     path: Packages/NEECore
+  TraumaCore:
+    path: Packages/TraumaCore
 
 configFiles:
   Debug: Config/Signing.xcconfig
@@ -55,9 +57,26 @@ targets:
       # NEE calculator logic: the kit file, bundled byte for byte (not OTA).
       - path: ../Resources/NEE/nee-logic.json
         buildPhase: resources
+      # Local Protocols: only the auto-rule templates are bundled. Profiles
+      # (Resources/TraumaActivation/profiles/) never are; see the check below.
+      - path: ../Resources/TraumaActivation/rule-templates.json
+        buildPhase: resources
     dependencies:
       - package: ExtubationEngine
       - package: NEECore
+      - package: TraumaCore
+    postBuildScripts:
+      - name: "Fail if a Local Protocols profile is bundled"
+        basedOnDependencyAnalysis: false
+        script: |
+          APP="${TARGET_BUILD_DIR}/${CONTENTS_FOLDER_PATH}"
+          hits=$(find "$APP" \( -path "*TraumaActivation/profiles*" -o -iname "*TEST-FIXTURE*" -o -iname "bumct*" \) -print)
+          prof=$(grep -rlE '"distribution"[[:space:]]*:[[:space:]]*"personal_only"' "$APP" 2>/dev/null || true)
+          if [ -n "$hits$prof" ]; then
+            echo "error: Local Protocols profiles must never ship in the app bundle:"
+            echo "$hits"; echo "$prof"
+            exit 1
+          fi
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: app.kairos.Kairos
@@ -67,6 +86,7 @@ targets:
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_NSCameraUsageDescription: "Kairos uses the camera to photograph your facility's protocol card. The photo is read on this device and is not uploaded."
         TARGETED_DEVICE_FAMILY: "1,2"
 
   KairosTests:
@@ -82,6 +102,7 @@ targets:
       - target: Kairos
       - package: ExtubationEngine
       - package: NEECore
+      - package: TraumaCore
     settings:
       base:
         GENERATE_INFOPLIST_FILE: YES
