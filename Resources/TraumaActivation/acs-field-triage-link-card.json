@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "content_version": "1.0.0",
+  "id": "acs-field-triage-link",
+  "type": "external_tool_link",
+  "last_verified": "2026-11-25",
+  "lenses": ["Prehospital/Flight", "ED"],
+  "search_keywords": ["field triage", "trauma triage", "ACS", "red criteria", "yellow criteria", "trauma center destination", "trauma activation"],
+  "header": { "title": "National Field Triage Guideline (ACS)", "subtitle": "2021 national guideline for injured patients", "badge": "External resource" },
+  "why_this_matters": "Most trauma center activation criteria, including local hospital cards, are built on the national field triage guideline. It sorts injured patients into two groups: RED (high risk for serious injury, highest-level trauma center) and YELLOW (moderate risk, trauma center as available within the regional system). ACS asks that the criteria not be altered, so Kairos links to the official version.",
+  "link": { "label": "Open ACS field triage guideline", "url": "https://www.facs.org/quality-programs/trauma/systems/field-triage-guidelines/", "opens": "external_browser", "requires_internet": true, "offline_text": "The guideline is hosted by the American College of Surgeons and needs an internet connection." },
+  "clinical_takeaway": "Use the national guideline for destination decisions in the field; use your hospital's own activation criteria (Local Protocols) for who responds and how fast once the patient arrives.",
+  "attribution": "National Guideline for the Field Triage of Injured Patients © American College of Surgeons. Kairos links to it and does not reproduce its criteria.",
+  "citations": [ "Newgard CD, Fischer PE, Gestring M, et al. National guideline for the field triage of injured patients: recommendations of the National Expert Panel on Field Triage, 2021. J Trauma Acute Care Surg. 2022;93(2):e49-e60. doi:10.1097/TA.0000000000003627" ]
+}

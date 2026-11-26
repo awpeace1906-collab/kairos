@@ -1,0 +1,397 @@
+{
+  "base_profile": "bumct-2026-02-23.json",
+  "validation": [
+    {
+      "id": "P01",
+      "title": "BUMCT profile is valid; every template expands to the stored rule",
+      "mutations": [],
+      "expect": []
+    },
+    {
+      "id": "P02",
+      "title": "Criterion with unknown tier",
+      "mutations": [
+        {
+          "set": [
+            "criteria",
+            2,
+            "tier"
+          ],
+          "value": "blue"
+        }
+      ],
+      "expect": [
+        "unknown_tier"
+      ]
+    },
+    {
+      "id": "P03",
+      "title": "Duplicate criterion id",
+      "mutations": [
+        {
+          "set": [
+            "criteria",
+            2,
+            "id"
+          ],
+          "value": "red.airway"
+        }
+      ],
+      "expect": [
+        "duplicate_criterion_id"
+      ]
+    },
+    {
+      "id": "P04",
+      "title": "Template param edited but rule not regenerated",
+      "mutations": [
+        {
+          "set": [
+            "criteria",
+            1,
+            "auto",
+            "template",
+            "params",
+            "high"
+          ],
+          "value": 30
+        }
+      ],
+      "expect": [
+        "template_mismatch"
+      ]
+    },
+    {
+      "id": "P05",
+      "title": "Rule references a vital the profile doesn't define",
+      "mutations": [
+        {
+          "set": [
+            "criteria",
+            6,
+            "auto",
+            "rule"
+          ],
+          "value": {
+            "gt": [
+              {
+                "var": "map"
+              },
+              1
+            ]
+          }
+        },
+        {
+          "set": [
+            "criteria",
+            6,
+            "auto",
+            "template"
+          ],
+          "value": null
+        }
+      ],
+      "expect": [
+        "rule_unknown_vital"
+      ]
+    },
+    {
+      "id": "P06",
+      "title": "Missing revision date",
+      "mutations": [
+        {
+          "set": [
+            "source_revision_date"
+          ],
+          "value": ""
+        }
+      ],
+      "expect": [
+        "missing_metadata"
+      ]
+    },
+    {
+      "id": "P07",
+      "title": "Profile marked for distribution",
+      "mutations": [
+        {
+          "set": [
+            "distribution"
+          ],
+          "value": "public"
+        }
+      ],
+      "expect": [
+        "distribution_not_personal"
+      ]
+    },
+    {
+      "id": "P08",
+      "title": "Compound requires a tier that doesn't exist",
+      "mutations": [
+        {
+          "set": [
+            "criteria",
+            26,
+            "compound",
+            "requires_any_criterion_of_tier"
+          ],
+          "value": "purple"
+        }
+      ],
+      "expect": [
+        "compound_unknown_tier"
+      ]
+    },
+    {
+      "id": "P09",
+      "title": "Two tiers with the same rank",
+      "mutations": [
+        {
+          "set": [
+            "tiers",
+            1,
+            "rank"
+          ],
+          "value": 3
+        }
+      ],
+      "expect": [
+        "duplicate_tier_rank"
+      ]
+    },
+    {
+      "id": "P10",
+      "title": "Unknown template id",
+      "mutations": [
+        {
+          "set": [
+            "criteria",
+            7,
+            "auto",
+            "template",
+            "id"
+          ],
+          "value": "gcs_magic"
+        }
+      ],
+      "expect": [
+        "template_unknown"
+      ]
+    }
+  ],
+  "drafts": [
+    {
+      "id": "D01",
+      "title": "All lines confirmed, numeric lines double-checked: can save",
+      "draft": {
+        "institution": "X",
+        "source_revision_date": "2026-02-23",
+        "lines": [
+          {
+            "id": "L1",
+            "text": "Traumatic arrest",
+            "role": "criterion",
+            "confirmed": true
+          },
+          {
+            "id": "L2",
+            "text": "SBP < 90 in adults",
+            "role": "criterion",
+            "confirmed": true,
+            "double_checked": true
+          },
+          {
+            "id": "L3",
+            "text": "smudge",
+            "role": "ignore"
+          }
+        ]
+      },
+      "expect_ok": true,
+      "expect": []
+    },
+    {
+      "id": "D02",
+      "title": "Numeric line confirmed once only: blocked",
+      "draft": {
+        "institution": "X",
+        "source_revision_date": "2026-02-23",
+        "lines": [
+          {
+            "id": "L1",
+            "text": "Rate <10 or > 29 per minute",
+            "role": "criterion",
+            "confirmed": true
+          }
+        ]
+      },
+      "expect_ok": false,
+      "expect": [
+        "needs_double_check"
+      ]
+    },
+    {
+      "id": "D03",
+      "title": "Unconfirmed and unassigned lines block save",
+      "draft": {
+        "institution": "X",
+        "source_revision_date": "2026-02-23",
+        "lines": [
+          {
+            "id": "L1",
+            "text": "Pelvic fractures",
+            "role": "criterion",
+            "confirmed": false
+          },
+          {
+            "id": "L2",
+            "text": "Rollover"
+          }
+        ]
+      },
+      "expect_ok": false,
+      "expect": [
+        "unconfirmed_line",
+        "unassigned_line"
+      ]
+    },
+    {
+      "id": "D04",
+      "title": "Missing institution and revision date block save",
+      "draft": {
+        "institution": "",
+        "source_revision_date": "",
+        "lines": []
+      },
+      "expect_ok": false,
+      "expect": [
+        "missing_institution",
+        "missing_revision_date"
+      ]
+    }
+  ],
+  "library": [
+    {
+      "id": "B01",
+      "title": "Two facilities plus a newer BUMCT revision: all kept, grouped, newest is current, default stays the first added",
+      "steps": [
+        {
+          "add": {
+            "profile_id": "bumct",
+            "institution": "Banner University Medical Center Tucson (BUMCT)",
+            "source_revision_date": "2026-02-23"
+          },
+          "at": "2026-11-25T10:00"
+        },
+        {
+          "add": {
+            "profile_id": "uwhealth",
+            "institution": "UW Health University Hospital",
+            "source_revision_date": "2025-07-01"
+          },
+          "at": "2026-11-25T10:05"
+        },
+        {
+          "add": {
+            "profile_id": "bumct",
+            "institution": "  banner university medical center tucson (BUMCT) ",
+            "source_revision_date": "2027-01-15"
+          },
+          "at": "2026-12-01T09:00"
+        }
+      ],
+      "expect": {
+        "count": 3,
+        "default": "bumct",
+        "groups": [
+          {
+            "current": "bumct-2",
+            "versions": [
+              "bumct-2",
+              "bumct"
+            ]
+          },
+          {
+            "current": "uwhealth",
+            "versions": [
+              "uwhealth"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "B02",
+      "title": "Same revision date imported twice: both kept, later import is current",
+      "steps": [
+        {
+          "add": {
+            "profile_id": "x",
+            "institution": "Hosp A",
+            "source_revision_date": "2026-01-01"
+          },
+          "at": "2026-11-01T00:00"
+        },
+        {
+          "add": {
+            "profile_id": "x",
+            "institution": "Hosp A",
+            "source_revision_date": "2026-01-01"
+          },
+          "at": "2026-11-02T00:00"
+        }
+      ],
+      "expect": {
+        "count": 2,
+        "default": "x",
+        "groups": [
+          {
+            "current": "x-2",
+            "versions": [
+              "x-2",
+              "x"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "B03",
+      "title": "Removing the default reassigns it; nothing else is touched",
+      "steps": [
+        {
+          "add": {
+            "profile_id": "a",
+            "institution": "Hosp A",
+            "source_revision_date": "2026-01-01"
+          },
+          "at": "2026-11-01T00:00"
+        },
+        {
+          "add": {
+            "profile_id": "b",
+            "institution": "Hosp B",
+            "source_revision_date": "2026-01-01"
+          },
+          "at": "2026-11-02T00:00"
+        },
+        {
+          "remove": "a"
+        }
+      ],
+      "expect": {
+        "count": 1,
+        "default": "b",
+        "groups": [
+          {
+            "current": "b",
+            "versions": [
+              "b"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

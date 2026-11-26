@@ -1,0 +1,581 @@
+{
+  "profile_version": "1.1.0",
+  "notes": "Expected results reasoned by hand from the card. met_ids compared as a set; hints, advisories, notes compared as sets of ids.",
+  "vignettes": [
+    {
+      "id": "T01",
+      "title": "Nothing entered: no tier",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {}
+      },
+      "expect": {
+        "status": "ok",
+        "tier": null,
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": []
+      }
+    },
+    {
+      "id": "T02",
+      "title": "RR 8 auto-triggers RED breathing",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "rr": 8
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "red",
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": [
+          "red.breathing"
+        ]
+      }
+    },
+    {
+      "id": "T03",
+      "title": "RR 30 triggers; RR 29 does not",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "rr": 30
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "red",
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": [
+          "red.breathing"
+        ]
+      }
+    },
+    {
+      "id": "T04",
+      "title": "RR 29 alone: nothing",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "rr": 29
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": null,
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": []
+      }
+    },
+    {
+      "id": "T05",
+      "title": "Age 5, SBP 78 (< 70 + 2x5 = 80): RED",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "age_years": 5,
+          "sbp": 78
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "red",
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": [
+          "red.cap_refill_or_sbp_age"
+        ]
+      }
+    },
+    {
+      "id": "T06",
+      "title": "Age 5, SBP 82: nothing",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "age_years": 5,
+          "sbp": 82
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": null,
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": []
+      }
+    },
+    {
+      "id": "T07",
+      "title": "Infant 0.5 y, SBP 58: RED",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "age_years": 0.5,
+          "sbp": 58
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "red",
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": [
+          "red.cap_refill_or_sbp_age"
+        ]
+      }
+    },
+    {
+      "id": "T08",
+      "title": "Infant 0.5 y, SBP 62: nothing",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "age_years": 0.5,
+          "sbp": 62
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": null,
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": []
+      }
+    },
+    {
+      "id": "T09",
+      "title": "Age 10, SBP 89 (< 90): RED",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "age_years": 10,
+          "sbp": 89
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "red",
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": [
+          "red.cap_refill_or_sbp_age"
+        ]
+      }
+    },
+    {
+      "id": "T10",
+      "title": "Age 11, SBP 90: nothing",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "age_years": 11,
+          "sbp": 90
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": null,
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": []
+      }
+    },
+    {
+      "id": "T11",
+      "title": "HR 120 / SBP 110 = 1.09: RED shock index",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "age_years": 30,
+          "hr": 120,
+          "sbp": 110
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "red",
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": [
+          "red.shock_index"
+        ]
+      }
+    },
+    {
+      "id": "T12",
+      "title": "HR 100 / SBP 100 = 1.0 is not > 1: nothing",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "age_years": 30,
+          "hr": 100,
+          "sbp": 100
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": null,
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": []
+      }
+    },
+    {
+      "id": "T13",
+      "title": "GCS 14 with motor 5: RED",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "gcs_total": 14,
+          "gcs_motor": 5
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "red",
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": [
+          "red.gcs"
+        ]
+      }
+    },
+    {
+      "id": "T14",
+      "title": "GCS 14 motor 6: nothing",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "gcs_total": 14,
+          "gcs_motor": 6
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": null,
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": []
+      }
+    },
+    {
+      "id": "T15",
+      "title": "Rollover alone: GREEN with upgrade advisory",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [
+          "green.mech.rollover"
+        ],
+        "vitals": {}
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "green",
+        "compound_hints": [],
+        "advisories": [
+          "green.advisory.upgrade"
+        ],
+        "notes": [],
+        "met_ids": [
+          "green.mech.rollover"
+        ]
+      }
+    },
+    {
+      "id": "T16",
+      "title": "Age 70 + rollover: YELLOW via compound",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [
+          "green.mech.rollover"
+        ],
+        "vitals": {
+          "age_years": 70
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "yellow",
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": [
+          "green.mech.rollover",
+          "yellow.age65_plus_green"
+        ]
+      }
+    },
+    {
+      "id": "T17",
+      "title": "Age 70 alone: no tier, compound hint",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "age_years": 70
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": null,
+        "compound_hints": [
+          "yellow.age65_plus_green"
+        ],
+        "advisories": [],
+        "notes": [],
+        "met_ids": []
+      }
+    },
+    {
+      "id": "T18",
+      "title": "Age 70 + GREEN discretion only: stays GREEN (discretion doesn't satisfy 'any other GREEN criterion')",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [
+          "green.discretion"
+        ],
+        "vitals": {
+          "age_years": 70
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "green",
+        "compound_hints": [
+          "yellow.age65_plus_green"
+        ],
+        "advisories": [
+          "green.advisory.upgrade"
+        ],
+        "notes": [],
+        "met_ids": [
+          "green.discretion"
+        ]
+      }
+    },
+    {
+      "id": "T19",
+      "title": "LOC with head injury, no GREEN: hint only",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [
+          "yellow.loc_head_plus_green"
+        ],
+        "vitals": {}
+      },
+      "expect": {
+        "status": "ok",
+        "tier": null,
+        "compound_hints": [
+          "yellow.loc_head_plus_green"
+        ],
+        "advisories": [],
+        "notes": [],
+        "met_ids": []
+      }
+    },
+    {
+      "id": "T20",
+      "title": "LOC with head injury + speed > 35 mph: YELLOW",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [
+          "yellow.loc_head_plus_green",
+          "green.mech.speed"
+        ],
+        "vitals": {}
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "yellow",
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": [
+          "green.mech.speed",
+          "yellow.loc_head_plus_green"
+        ]
+      }
+    },
+    {
+      "id": "T21",
+      "title": "YELLOW + RED checked: RED wins",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [
+          "yellow.anat.03",
+          "red.ss.06"
+        ],
+        "vitals": {}
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "red",
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": [
+          "red.ss.06",
+          "yellow.anat.03"
+        ]
+      }
+    },
+    {
+      "id": "T22",
+      "title": "YELLOW discretion: YELLOW",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [
+          "yellow.discretion"
+        ],
+        "vitals": {}
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "yellow",
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": [
+          "yellow.discretion"
+        ]
+      }
+    },
+    {
+      "id": "T23",
+      "title": "GREEN burns shows burn-consult note",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [
+          "green.mech.burns"
+        ],
+        "vitals": {}
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "green",
+        "compound_hints": [],
+        "advisories": [
+          "green.advisory.upgrade"
+        ],
+        "notes": [
+          "green.mech.burns"
+        ],
+        "met_ids": [
+          "green.mech.burns"
+        ]
+      }
+    },
+    {
+      "id": "T24",
+      "title": "Missing SBP: shock index and SBP-for-age not evaluated",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "age_years": 0.5,
+          "hr": 150
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": null,
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": []
+      }
+    },
+    {
+      "id": "T25",
+      "title": "GCS 2 is out of range: error",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "gcs_total": 2
+        }
+      },
+      "expect": {
+        "status": "error",
+        "errors": [
+          "vital_out_of_range"
+        ]
+      }
+    },
+    {
+      "id": "T26",
+      "title": "Unknown criterion id: error",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [
+          "red.nope"
+        ],
+        "vitals": {}
+      },
+      "expect": {
+        "status": "error",
+        "errors": [
+          "unknown_criterion"
+        ]
+      }
+    },
+    {
+      "id": "T27",
+      "title": "SBP 0 (arrest physiology): SBP-for-age triggers; shock index undefined, not an error",
+      "profile": "bumct-2026-02-23.json",
+      "input": {
+        "checked": [],
+        "vitals": {
+          "age_years": 40,
+          "hr": 0,
+          "sbp": 0
+        }
+      },
+      "expect": {
+        "status": "ok",
+        "tier": "red",
+        "compound_hints": [],
+        "advisories": [],
+        "notes": [],
+        "met_ids": [
+          "red.cap_refill_or_sbp_age"
+        ]
+      }
+    }
+  ]
+}

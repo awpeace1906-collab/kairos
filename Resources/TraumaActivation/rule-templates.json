@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "notes": "Auto-rule templates a user can attach to a criterion during import/editing. The user enters the parameter values from their own card; nothing is pre-filled. {param} placeholders are replaced by numbers, then the result is a standard rule expression.",
+  "templates": [
+    {
+      "id": "vital_lt",
+      "label": "Vital below a value",
+      "plain": "{vital} < {value}",
+      "params": [ { "id": "vital", "type": "vital_id" }, { "id": "value", "type": "number" } ],
+      "rule": { "lt": [ { "var": "{vital}" }, "{value}" ] }
+    },
+    {
+      "id": "vital_gt",
+      "label": "Vital above a value",
+      "plain": "{vital} > {value}",
+      "params": [ { "id": "vital", "type": "vital_id" }, { "id": "value", "type": "number" } ],
+      "rule": { "gt": [ { "var": "{vital}" }, "{value}" ] }
+    },
+    {
+      "id": "vital_lte",
+      "label": "Vital at or below a value",
+      "plain": "{vital} ≤ {value}",
+      "params": [ { "id": "vital", "type": "vital_id" }, { "id": "value", "type": "number" } ],
+      "rule": { "lte": [ { "var": "{vital}" }, "{value}" ] }
+    },
+    {
+      "id": "vital_gte",
+      "label": "Vital at or above a value",
+      "plain": "{vital} ≥ {value}",
+      "params": [ { "id": "vital", "type": "vital_id" }, { "id": "value", "type": "number" } ],
+      "rule": { "gte": [ { "var": "{vital}" }, "{value}" ] }
+    },
+    {
+      "id": "vital_outside",
+      "label": "Vital below a low value or above a high value",
+      "plain": "{vital} < {low} or > {high}",
+      "params": [ { "id": "vital", "type": "vital_id" }, { "id": "low", "type": "number" }, { "id": "high", "type": "number" } ],
+      "rule": { "or": [ { "lt": [ { "var": "{vital}" }, "{low}" ] }, { "gt": [ { "var": "{vital}" }, "{high}" ] } ] }
+    },
+    {
+      "id": "shock_index_gt",
+      "label": "Shock index (HR/SBP) above a value",
+      "plain": "HR/SBP > {value}",
+      "params": [ { "id": "value", "type": "number" } ],
+      "rule": { "gt": [ { "div": [ { "var": "hr" }, { "var": "sbp" } ] }, "{value}" ] }
+    },
+    {
+      "id": "gcs_motor_or_total_lte",
+      "label": "GCS motor at or below a value, or total GCS at or below a value",
+      "plain": "GCS motor ≤ {motor} or GCS ≤ {total}",
+      "params": [ { "id": "motor", "type": "number" }, { "id": "total", "type": "number" } ],
+      "rule": { "or": [ { "lte": [ { "var": "gcs_motor" }, "{motor}" ] }, { "lte": [ { "var": "gcs_total" }, "{total}" ] } ] }
+    },
+    {
+      "id": "sbp_low_for_age_3band",
+      "label": "SBP low for age (infant / child formula / older)",
+      "plain": "Age < {infant_age_max} y: SBP < {infant_sbp}; {infant_age_max}–{child_age_max} y: SBP < {child_base} + {child_mult}×age; > {child_age_max} y: SBP < {older_sbp}",
+      "params": [
+        { "id": "infant_age_max", "type": "number" }, { "id": "infant_sbp", "type": "number" },
+        { "id": "child_age_max", "type": "number" }, { "id": "child_base", "type": "number" }, { "id": "child_mult", "type": "number" },
+        { "id": "older_sbp", "type": "number" }
+      ],
+      "rule": { "or": [
+        { "and": [ { "lt": [ { "var": "age_years" }, "{infant_age_max}" ] }, { "lt": [ { "var": "sbp" }, "{infant_sbp}" ] } ] },
+        { "and": [ { "gte": [ { "var": "age_years" }, "{infant_age_max}" ] }, { "lte": [ { "var": "age_years" }, "{child_age_max}" ] },
+                   { "lt": [ { "var": "sbp" }, { "add": [ "{child_base}", { "mul": [ "{child_mult}", { "var": "age_years" } ] } ] } ] } ] },
+        { "and": [ { "gt": [ { "var": "age_years" }, "{child_age_max}" ] }, { "lt": [ { "var": "sbp" }, "{older_sbp}" ] } ] }
+      ] }
+    }
+  ]
+}
