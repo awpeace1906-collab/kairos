@@ -47,8 +47,9 @@ final class LocalProtocolsTests: XCTestCase {
     // MARK: - Storage
 
     func testStorageProtectionAndBackupExclusion() throws {
+        let profile = try Self.fixtureProfile() // skips (not fails) when absent
         let store = tempStore()
-        XCTAssertEqual(try? store.add(Self.fixtureProfile()).get().isEmpty, false)
+        XCTAssertEqual(try? store.add(profile).get().isEmpty, false)
         let lib = store.root.appendingPathComponent("library.json")
         XCTAssertTrue(FileManager.default.fileExists(atPath: lib.path))
         let attrs = try FileManager.default.attributesOfItem(atPath: lib.path)
@@ -144,7 +145,8 @@ final class LocalProtocolsTests: XCTestCase {
     }
 
     func testPhotoOCRRecall() async throws {
-        let img = try XCTUnwrap(UIImage(contentsOfFile: Self.fixtureURL("bumct-card-photo-TEST-FIXTURE.jpg").path))
+        let photo = try Self.fixtureURL("bumct-card-photo-TEST-FIXTURE.jpg") // skips (not fails) when absent
+        let img = try XCTUnwrap(UIImage(contentsOfFile: photo.path))
         let r = try await ImportPipeline.recognize(image: img, sourceIndex: 0)
         let recall = Self.recall(r.lines.map(\.text), against: try Self.fixtureProfile())
         print("photo OCR: \(r.lines.count) lines, recall \(recall.found)/\(recall.total); missed: \(recall.missed)")
@@ -160,7 +162,8 @@ final class LocalProtocolsTests: XCTestCase {
     /// save gate, assembly and validation as the app. The resulting profile
     /// must evaluate T01–T27 the same as the fixture.
     func testPhotoImportMatchesFixtureAfterReview() async throws {
-        let img = try XCTUnwrap(UIImage(contentsOfFile: Self.fixtureURL("bumct-card-photo-TEST-FIXTURE.jpg").path))
+        let photo = try Self.fixtureURL("bumct-card-photo-TEST-FIXTURE.jpg") // skips (not fails) when absent
+        let img = try XCTUnwrap(UIImage(contentsOfFile: photo.path))
         let ocr = try await ImportPipeline.recognize(image: img, sourceIndex: 0)
         try await assertReviewedImportMatches(ocrLines: ocr.lines, createdVia: "photo_import")
     }
